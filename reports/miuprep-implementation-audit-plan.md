@@ -1171,3 +1171,46 @@ Residual risk:
 
 - Student overview is live-first only for flows that have valid attempt events. Non-SAT practice/course surfaces still need tracked answer submission before they affect live mastery.
 - Browser visual QA was not run for this small overview data-source change; run a fresh browser session before release sign-off.
+
+### 2026-06-04 Batch 13 - Parent live evidence summaries
+
+Scope completed:
+
+- Parent role now loads stored learning events from the shared local event store.
+- Parent Action Summary now builds each child signal from live learning events first, falling back to the existing synthetic snapshot when a child has no valid attempts.
+- Parent Learning Overview now uses the same live-first learner snapshot for mastery, evidence count, weakest focus, and next action.
+
+Changed files:
+
+- `apps/miuprep-portal/src/App.tsx`
+- `apps/miuprep-portal/src/components/ParentActionSummary.tsx`
+- `apps/miuprep-portal/src/components/ParentLearningOverview.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Browser QA:
+
+- Started portal dev server at `http://127.0.0.1:5181`; the in-app Browser loaded the unauthenticated portal successfully with title `MiuPrep Portal - Hệ Sinh Thế Học Tập Thích Ứng`.
+- Browser console error log was empty on initial load.
+- Authenticated login QA was not counted as passed because the in-app Browser hit the same virtual-clipboard input limitation while filling the login form.
+
+Proof captured:
+
+- Portal lint/build prove parent views compile with live event inputs and shared learner snapshot logic.
+- Learning and beta tests confirm the event-derived importer/reroute readiness logic remains stable after parent surfaces started consuming live event evidence.
+
+Residual risk:
+
+- Parent live evidence depends on linked child accounts sharing the same local event store in this portal prototype. Server-backed multi-account sync remains a later Phase C/product integration step.
+- Authenticated browser visual QA for student/parent/admin surfaces still needs a clean browser session or a runtime without the current input limitation.

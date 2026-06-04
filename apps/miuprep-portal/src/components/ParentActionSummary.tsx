@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
 import type { LocalUser } from '@miuprep/db';
+import type { LearningEventRecord } from '@miuprep/learning';
 import { loadStudentProgressSnapshot } from '../lib/studentProgress';
 import {
-  buildLearnerSnapshot,
+  buildLearnerSnapshotFromLiveEvents,
   normalizeAssignedTracks,
   type PortalTrackInfo,
 } from './UnifiedLearnerDashboard';
@@ -10,6 +11,7 @@ import {
 interface ParentActionSummaryProps {
   linkedStudents: LocalUser[];
   tracks: PortalTrackInfo[];
+  learningEvents?: LearningEventRecord[];
   rewardsAllocated: number;
 }
 
@@ -23,10 +25,10 @@ interface ParentChildSignal {
   status: 'stable' | 'watch' | 'support';
 }
 
-export default function ParentActionSummary({ linkedStudents, tracks, rewardsAllocated }: ParentActionSummaryProps) {
+export default function ParentActionSummary({ linkedStudents, tracks, learningEvents = [], rewardsAllocated }: ParentActionSummaryProps) {
   const signals = useMemo(
-    () => linkedStudents.map((student) => buildParentChildSignal(student, tracks)),
-    [linkedStudents, tracks],
+    () => linkedStudents.map((student) => buildParentChildSignal(student, tracks, learningEvents)),
+    [learningEvents, linkedStudents, tracks],
   );
   const focusChild = signals.slice().sort((a, b) => riskRank(b.status) - riskRank(a.status))[0];
   const headline = buildHeadline(focusChild);
@@ -78,11 +80,11 @@ export default function ParentActionSummary({ linkedStudents, tracks, rewardsAll
   );
 }
 
-function buildParentChildSignal(student: LocalUser, tracks: PortalTrackInfo[]): ParentChildSignal {
+function buildParentChildSignal(student: LocalUser, tracks: PortalTrackInfo[], learningEvents: LearningEventRecord[]): ParentChildSignal {
   const assignedTracks = normalizeAssignedTracks(student);
   const activeTracks = tracks.filter((track) => assignedTracks.includes(track.id));
   const progress = readProgress(student.username);
-  const snapshot = buildLearnerSnapshot(student, activeTracks, progress.coins, progress.traps);
+  const snapshot = buildLearnerSnapshotFromLiveEvents(student, activeTracks, learningEvents, progress.coins, progress.traps);
   const weakestProgram = snapshot.programSummaries.slice().sort((a, b) => a.score - b.score)[0];
   const status = progress.traps >= 6 || snapshot.averageMastery < 55 ? 'support' : progress.traps >= 3 ? 'watch' : 'stable';
 

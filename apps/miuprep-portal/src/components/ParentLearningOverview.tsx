@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 import type { LocalUser } from '@miuprep/db';
+import type { LearningEventRecord } from '@miuprep/learning';
 import {
-  buildLearnerSnapshot,
+  buildLearnerSnapshotFromLiveEvents,
   normalizeAssignedTracks,
   type PortalTrackInfo,
 } from './UnifiedLearnerDashboard';
@@ -9,6 +10,7 @@ import {
 interface ParentLearningOverviewProps {
   linkedStudents: LocalUser[];
   tracks: PortalTrackInfo[];
+  learningEvents?: LearningEventRecord[];
 }
 
 interface ChildProgressRow {
@@ -21,10 +23,10 @@ interface ChildProgressRow {
   errorNotebookCount: number;
 }
 
-export default function ParentLearningOverview({ linkedStudents, tracks }: ParentLearningOverviewProps) {
+export default function ParentLearningOverview({ linkedStudents, tracks, learningEvents = [] }: ParentLearningOverviewProps) {
   const rows = useMemo(
-    () => linkedStudents.map((student) => buildChildProgressRow(student, tracks)),
-    [linkedStudents, tracks],
+    () => linkedStudents.map((student) => buildChildProgressRow(student, tracks, learningEvents)),
+    [learningEvents, linkedStudents, tracks],
   );
 
   return (
@@ -96,12 +98,12 @@ function InfoTile({ label, value }: { label: string; value: string }) {
   );
 }
 
-function buildChildProgressRow(student: LocalUser, tracks: PortalTrackInfo[]): ChildProgressRow {
+function buildChildProgressRow(student: LocalUser, tracks: PortalTrackInfo[], learningEvents: LearningEventRecord[]): ChildProgressRow {
   const assigned = normalizeAssignedTracks(student);
   const activeTracks = tracks.filter((track) => assigned.includes(track.id));
   const coins = readNumber(`miu_math_fish_coins_${student.username}`, 150);
   const errorNotebookCount = readTrapCount(student.username);
-  const snapshot = buildLearnerSnapshot(student, activeTracks, coins, errorNotebookCount || 4);
+  const snapshot = buildLearnerSnapshotFromLiveEvents(student, activeTracks, learningEvents, coins, errorNotebookCount || 4);
   const weakestProgram = snapshot.programSummaries.slice().sort((a, b) => a.score - b.score)[0];
 
   return {

@@ -1107,6 +1107,7 @@ export default function App() {
       } else if (currentUser.role === 'parent') {
         // Fetch linked students profile and target settings
         await refreshParentData();
+        setStudentLearningEvents(await db.listLearningEvents(undefined, 500));
       } else if (currentUser.role === 'admin') {
         // Fetch users lists & logs
         await refreshAdminData();
@@ -2716,6 +2717,7 @@ export default function App() {
             <ParentActionSummary
               linkedStudents={linkedStudentsList}
               tracks={TRACKS}
+              learningEvents={studentLearningEvents}
               rewardsAllocated={currentUser.rewardsAllocated || 0}
             />
             
@@ -2740,6 +2742,7 @@ export default function App() {
             <ParentLearningOverview
               linkedStudents={linkedStudentsList}
               tracks={TRACKS}
+              learningEvents={studentLearningEvents}
             />
 
             {/* Core Monitoring Block */}
