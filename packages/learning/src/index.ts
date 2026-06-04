@@ -132,6 +132,25 @@ export interface LearningEventSyncAuditOptions {
   conflicts?: LearningEventMergeConflict[];
 }
 
+export interface StudentModelFromEventsReport {
+  schemaVersion: "student_model_from_events_v1";
+  generatedAt: string;
+  learnerId: string;
+  targetProgramIds: string[];
+  state: StudentModel;
+  acceptedAttempts: number;
+  feedbackOnlyEvents: number;
+  skippedEvents: number;
+  skippedEventIds: string[];
+  detail: string;
+}
+
+export interface StudentModelFromEventsOptions {
+  learnerId?: string;
+  targetProgramIds?: string[];
+  generatedAt?: string;
+}
+
 export interface LearningEventStorageLike {
   getItem(key: string): string | null;
   setItem(key: string, value: string): void;
@@ -953,6 +972,7 @@ export function buildAttemptLearningEvent(attempt: AttemptRecord, source = "miup
     score: attempt.score,
     maxScore: attempt.maxScore,
     difficulty: attempt.difficulty || "",
+    mode: attempt.mode,
     errorCategories: attempt.errorCategories || [],
     misconceptionIds: attempt.misconceptionIds || [],
     hintUsed: Boolean(attempt.hintUsed),
@@ -1123,6 +1143,62 @@ export function buildLearningEventSyncAuditReport(
         : status === "watch"
           ? "Sync audit found duplicate idempotency keys, but no destructive conflict."
           : "Sync audit passed: events are normalized, unique, timestamped, and conflict-free.",
+  };
+}
+
+export function buildStudentModelFromLearningEvents(
+  events: unknown[] = [],
+  options: StudentModelFromEventsOptions = {},
+): StudentModelFromEventsReport {
+  const generatedAt = options.generatedAt || new Date().toISOString();
+  const normalized = normalizeLearningEvents(events);
+  const learnerId = options.learnerId || normalized.find((event) => event.learnerId)?.learnerId || "unknown_learner";
+  const scopedEvents = learnerId === "unknown_learner"
+    ? normalized
+    : normalized.filter((event) => event.learnerId === learnerId);
+  const skippedEventIds: string[] = [];
+  const attempts: AttemptRecord[] = [];
+
+  for (const event of scopedEvents) {
+    if (!isAttemptEventType(event.type)) continue;
+    const attempt = attemptFromLearningEvent(event);
+    if (!attempt) {
+      skippedEventIds.push(event.id || event.eventId || event.idempotencyKey || "unknown_event");
+      continue;
+    }
+    attempts.push(attempt);
+  }
+
+  const targetProgramIds = uniqueStrings([
+    ...(options.targetProgramIds || []),
+    ...attempts.map((attempt) => attempt.programId || ""),
+    ...scopedEvents.map((event) => readString(event.payload?.programId)),
+  ].filter(Boolean));
+  const feedbackOnlyEvents = scopedEvents.filter((event) => event.type === "feedback_only" || event.payload?.masteryPolicy === "feedback_only").length;
+  const updatedAt = attempts[attempts.length - 1]?.answeredAt || scopedEvents[scopedEvents.length - 1]?.occurredAt || generatedAt;
+  const state: StudentModel = {
+    schemaVersion: "student_model_v1",
+    learnerId,
+    targetProgramIds,
+    attempts,
+    learningEvents: scopedEvents,
+    updatedAt,
+  };
+
+  return {
+    schemaVersion: "student_model_from_events_v1",
+    generatedAt,
+    learnerId,
+    targetProgramIds,
+    state,
+    acceptedAttempts: attempts.length,
+    feedbackOnlyEvents,
+    skippedEvents: skippedEventIds.length,
+    skippedEventIds,
+    detail:
+      skippedEventIds.length
+        ? "StudentModel import kept the normalized event log but skipped attempt events missing item, domain, or correctness evidence."
+        : "StudentModel import reconstructed tracked attempts from normalized learning events; feedback-only events stayed protected from mastery.",
   };
 }
 
@@ -1492,6 +1568,83 @@ function trimLearningPathSteps(steps: LearningPathStep[], maxSteps: number): Lea
   if (nextIndex < 0) return steps.slice(Math.max(0, steps.length - maxSteps));
   const start = Math.max(0, Math.min(nextIndex - 2, steps.length - maxSteps));
   return steps.slice(start, start + maxSteps);
+}
+
+function isAttemptEventType(type: string): boolean {
+  const normalized = String(type || "").toLowerCase();
+  return normalized === "question_attempt" || normalized.endsWith("_attempt");
+}
+
+function attemptFromLearningEvent(event: LearningEventRecord): AttemptRecord | null {
+  const payload = event.payload || {};
+  const itemId = readString(payload.itemId) || event.entityId;
+  const domainId = readString(payload.domainId);
+  const correct = readBoolean(payload.correct ?? payload.isCorrect);
+  if (!itemId || !domainId || correct === null) return null;
+
+  const errorCategories = readStringArray(payload.errorCategories) as ErrorCategory[];
+  const misconceptionIds = readStringArray(payload.misconceptionIds);
+  return makeAttempt({
+    id: readString(payload.attemptId) || `${event.id || event.eventId || event.idempotencyKey}-attempt`,
+    learnerId: event.learnerId,
+    itemId,
+    domainId,
+    programId: readString(payload.programId) || undefined,
+    conceptIds: readStringArray(payload.conceptIds),
+    skillIds: readStringArray(payload.skillIds),
+    correct,
+    score: readOptionalNumber(payload.score),
+    maxScore: readOptionalNumber(payload.maxScore),
+    difficulty: readString(payload.difficulty) || undefined,
+    mode: readString(payload.mode) || modeFromAttemptEventType(event.type),
+    answeredAt: event.occurredAt,
+    timeSpentSeconds: readOptionalNumber(payload.timeSpentSeconds),
+    errorCategories: errorCategories.length ? errorCategories : undefined,
+    misconceptionIds: misconceptionIds.length ? misconceptionIds : undefined,
+    hintUsed: readBoolean(payload.hintUsed) || undefined,
+    payload: {
+      ...payload,
+      sourceEventId: event.id,
+      sourceEventType: event.type,
+    },
+  });
+}
+
+function modeFromAttemptEventType(type: string): LearningMode {
+  const normalized = String(type || "").toLowerCase().replace(/_attempt$/, "");
+  if (normalized === "question") return "practice";
+  if (normalized === "diagnostic" || normalized === "practice" || normalized === "review" || normalized === "mock_test" || normalized === "lesson") return normalized;
+  return normalized || "practice";
+}
+
+function readString(value: unknown): string {
+  if (value === null || value === undefined) return "";
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") return String(value).trim();
+  return "";
+}
+
+function readStringArray(value: unknown): string[] {
+  if (Array.isArray(value)) return uniqueStrings(value.map(readString).filter(Boolean));
+  const scalar = readString(value);
+  if (!scalar) return [];
+  return uniqueStrings(scalar.split(",").map((part) => part.trim()).filter(Boolean));
+}
+
+function readBoolean(value: unknown): boolean | null {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "number") {
+    if (value === 1) return true;
+    if (value === 0) return false;
+  }
+  const normalized = readString(value).toLowerCase();
+  if (normalized === "true" || normalized === "correct" || normalized === "yes") return true;
+  if (normalized === "false" || normalized === "incorrect" || normalized === "wrong" || normalized === "no") return false;
+  return null;
+}
+
+function readOptionalNumber(value: unknown): number | undefined {
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? numeric : undefined;
 }
 
 export function stableChecksum(value = ""): string {

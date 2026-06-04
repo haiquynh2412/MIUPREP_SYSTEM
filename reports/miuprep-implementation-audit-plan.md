@@ -966,3 +966,38 @@ Proof captured:
 Residual risk:
 
 - This is a seeded repeatable governance artifact, not a broad expert benchmark. A larger human-scored sample set is still required before changing productive-skill mastery policy.
+
+### 2026-06-04 Batch 8 - Event-derived StudentModel import guard
+
+Scope completed:
+
+- Added `buildStudentModelFromLearningEvents` in `@miuprep/learning` to reconstruct a scoped `StudentModel` from normalized append-only learning events.
+- Complete attempt events now become `AttemptRecord`s while incomplete attempt events remain in the event log and are surfaced through `skippedEventIds`.
+- Feedback-only Writing/Speaking events are counted and preserved in `learningEvents`, but they do not create attempts or mastery rows.
+- Attempt learning events now persist the source `mode` in payload so future event-derived imports do not lose practice/review/diagnostic context.
+
+Changed files:
+
+- `packages/learning/src/index.ts`
+- `packages/learning/src/index.test.ts`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Verification passed, round 2:
+
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Proof captured:
+
+- The new test reconstructs a live learner model from mixed event input: one valid attempt, one protected feedback-only Writing event, one incomplete attempt, and one other-learner attempt.
+- The report returns 1 accepted attempt, 1 skipped event, 1 feedback-only event, and excludes the other learner.
+- Mastery is computed from the tracked math attempt, while `eng.academic_writing` remains absent from mastery despite the feedback-only event being preserved in the log.
+
+Residual risk:
+
+- This batch provides the core importer only. Portal/admin reroute panels still need to consume live stored learning events instead of synthetic snapshots before reroutes can be treated as live beta evidence.

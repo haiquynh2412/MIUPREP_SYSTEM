@@ -5,6 +5,7 @@ import {
   buildLearningEventSyncAuditReport,
   buildEmpiricalDifficultyShadowReport,
   buildLearningPath,
+  buildStudentModelFromLearningEvents,
   computeMastery,
   computeMasteryV2ShadowReport,
   emptyStudentModel,
@@ -350,3 +351,107 @@ assert(blockedSyncAudit.status === "blocked", "Sync audit should block conflicts
 assert(blockedSyncAudit.conflicts.length === 1, "Sync audit should surface merge conflicts.");
 assert(blockedSyncAudit.missingLearnerIds === 1, "Sync audit should count missing learner IDs.");
 assert(blockedSyncAudit.invalidTimestamps === 1, "Sync audit should count invalid timestamps.");
+
+const liveTrackedAttemptEvent = buildLearningEvent(
+  "practice_attempt",
+  {
+    attemptId: "live-attempt-1",
+    itemId: "live-q1",
+    domainId: "mathematics",
+    programId: "vn_math_6_9",
+    conceptIds: ["math.quadratic_equation"],
+    skillIds: ["math.solve_quadratic_by_factor"],
+    correct: "wrong",
+    difficulty: "hard",
+    mode: "practice",
+    timeSpentSeconds: 121,
+    hintUsed: true,
+    errorCategories: ["algebra_transform"],
+    misconceptionIds: ["mis.math.factor_vs_expand"],
+  },
+  {
+    learnerId: "live-learner-1",
+    entityType: "learning_item",
+    entityId: "live-q1",
+    occurredAt: "2026-01-11T00:00:00.000Z",
+    source: "live_unit_test",
+  },
+);
+const liveFeedbackOnlyEvent = buildLearningEvent(
+  "feedback_only",
+  {
+    masteryPolicy: "feedback_only",
+    itemId: "live-writing-feedback-1",
+    domainId: "english_core",
+    programId: "ielts",
+    conceptIds: ["eng.academic_writing"],
+    skillIds: ["eng.develop_academic_argument"],
+  },
+  {
+    learnerId: "live-learner-1",
+    entityType: "learning_item",
+    entityId: "live-writing-feedback-1",
+    occurredAt: "2026-01-11T00:10:00.000Z",
+    source: "live_unit_test",
+  },
+);
+const liveSkippedAttemptEvent = buildLearningEvent(
+  "review_attempt",
+  {
+    itemId: "live-skipped-q1",
+    domainId: "mathematics",
+    programId: "vn_math_6_9",
+  },
+  {
+    learnerId: "live-learner-1",
+    entityType: "learning_item",
+    entityId: "live-skipped-q1",
+    occurredAt: "2026-01-11T00:20:00.000Z",
+    source: "live_unit_test",
+  },
+);
+const otherLearnerAttemptEvent = buildLearningEvent(
+  "practice_attempt",
+  {
+    attemptId: "other-attempt-1",
+    itemId: "other-q1",
+    domainId: "mathematics",
+    programId: "vn_math_6_9",
+    correct: true,
+  },
+  {
+    learnerId: "other-live-learner",
+    entityType: "learning_item",
+    entityId: "other-q1",
+    occurredAt: "2026-01-11T00:30:00.000Z",
+    source: "live_unit_test",
+  },
+);
+const eventDerivedStudentModel = buildStudentModelFromLearningEvents(
+  [liveSkippedAttemptEvent, liveFeedbackOnlyEvent, otherLearnerAttemptEvent, liveTrackedAttemptEvent],
+  {
+    learnerId: "live-learner-1",
+    targetProgramIds: ["vn_math_6_9"],
+    generatedAt: "2026-01-12T00:00:00.000Z",
+  },
+);
+assert(eventDerivedStudentModel.schemaVersion === "student_model_from_events_v1", "Event-derived StudentModel report should be versioned.");
+assert(eventDerivedStudentModel.learnerId === "live-learner-1", "Event-derived StudentModel should scope by learner.");
+assert(eventDerivedStudentModel.acceptedAttempts === 1, "Event-derived StudentModel should accept complete attempt events.");
+assert(eventDerivedStudentModel.skippedEvents === 1, "Event-derived StudentModel should skip incomplete attempt events.");
+assert(eventDerivedStudentModel.skippedEventIds.includes(liveSkippedAttemptEvent.id), "Event-derived StudentModel should expose skipped event ids.");
+assert(eventDerivedStudentModel.feedbackOnlyEvents === 1, "Event-derived StudentModel should count protected feedback-only events.");
+assert(eventDerivedStudentModel.state.learningEvents.length === 3, "Event-derived StudentModel should keep the scoped normalized event log.");
+assert(eventDerivedStudentModel.state.attempts[0].id === "live-attempt-1", "Event-derived StudentModel should preserve source attempt ids.");
+assert(eventDerivedStudentModel.state.attempts[0].correct === false, "Event-derived StudentModel should parse string correctness evidence.");
+assert(eventDerivedStudentModel.state.attempts[0].hintUsed === true, "Event-derived StudentModel should preserve hint evidence.");
+assert(eventDerivedStudentModel.targetProgramIds.includes("ielts"), "Event-derived StudentModel should preserve target programs from protected feedback events.");
+assert(!eventDerivedStudentModel.state.attempts.some((attempt) => attempt.learnerId === "other-live-learner"), "Event-derived StudentModel should exclude other learners.");
+const inferredLearnerStudentModel = buildStudentModelFromLearningEvents([otherLearnerAttemptEvent, liveTrackedAttemptEvent], {
+  generatedAt: "2026-01-12T00:01:00.000Z",
+});
+assert(inferredLearnerStudentModel.learnerId === "live-learner-1", "Event-derived StudentModel should infer the first chronological learner when no learnerId is provided.");
+assert(!inferredLearnerStudentModel.state.attempts.some((attempt) => attempt.learnerId === "other-live-learner"), "Event-derived StudentModel should not mix learners when inferring learner scope.");
+const eventDerivedMastery = computeMastery(eventDerivedStudentModel.state);
+assert(eventDerivedMastery.some((row) => row.id === "math.solve_quadratic_by_factor"), "Event-derived attempts should feed tracked mastery.");
+assert(!eventDerivedMastery.some((row) => row.id === "eng.academic_writing"), "Feedback-only events should not become mastery rows when importing from event logs.");
