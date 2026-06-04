@@ -145,13 +145,55 @@ function inferSatLearningDomain(question: SatQuestion, state: SatPracticeState):
 }
 
 function inferSatLearningConceptIds(question: SatQuestion, state: SatPracticeState, domainId: string): string[] {
-  const domain = question.domain || state.domain || (domainId === 'mathematics' ? 'math' : 'reading');
-  return [`sat.${slugLearningId(domain)}`];
+  const value = satTopicValue(question, state);
+  if (domainId === 'mathematics') {
+    if (value.includes('advanced') || value.includes('quadratic') || value.includes('function')) {
+      return ['math.quadratic_equation', 'math.functions_graphs', 'math.algebraic_expression'];
+    }
+    if (value.includes('geometry') || value.includes('trigonometry')) {
+      return ['math.plane_geometry', 'math.trigonometry', 'math.spatial_geometry'];
+    }
+    if (value.includes('data') || value.includes('probability') || value.includes('statistics')) {
+      return ['math.statistics', 'math.probability', 'math.word_problem_modeling'];
+    }
+    return ['math.linear_equation', 'math.algebraic_expression'];
+  }
+  if (value.includes('standard') || value.includes('grammar') || value.includes('convention')) {
+    return ['eng.grammar_accuracy', 'eng.sentence_structure', 'eng.verb_tense_aspect'];
+  }
+  if (value.includes('craft') || value.includes('structure') || value.includes('vocab')) {
+    return ['eng.vocabulary_range', 'eng.reading_argument_structure', 'eng.reading_inference'];
+  }
+  if (value.includes('expression') || value.includes('ideas')) {
+    return ['eng.cohesion_reference', 'eng.reading_argument_structure', 'eng.academic_register'];
+  }
+  return ['eng.reading_main_idea', 'eng.reading_detail', 'eng.reading_inference'];
 }
 
 function inferSatLearningSkillIds(question: SatQuestion, state: SatPracticeState, domainId: string): string[] {
-  const skill = question.canonicalSkill || question.skill || state.skill || (domainId === 'mathematics' ? 'math_problem_solving' : 'reading_inference');
-  return [`sat.${slugLearningId(skill)}`];
+  const value = satTopicValue(question, state);
+  if (domainId === 'mathematics') {
+    if (value.includes('advanced') || value.includes('quadratic') || value.includes('function')) {
+      return ['math.solve_quadratic_by_factor', 'math.analyze_function_graph', 'math.simplify_expression'];
+    }
+    if (value.includes('geometry') || value.includes('trigonometry')) {
+      return ['math.prove_circle_geometry', 'math.use_trig_ratios', 'math.compute_solid_measure'];
+    }
+    if (value.includes('data') || value.includes('probability') || value.includes('statistics')) {
+      return ['math.interpret_statistics', 'math.compute_probability', 'math.model_word_problem'];
+    }
+    return ['math.solve_linear_equation', 'math.solve_system', 'math.simplify_expression'];
+  }
+  if (value.includes('standard') || value.includes('grammar') || value.includes('convention')) {
+    return ['eng.control_clause_structure', 'eng.edit_sentence_errors', 'eng.control_tense_aspect'];
+  }
+  if (value.includes('craft') || value.includes('structure') || value.includes('vocab')) {
+    return ['eng.use_collocation', 'eng.evaluate_argument_flow', 'eng.infer_implicit_meaning'];
+  }
+  if (value.includes('expression') || value.includes('ideas')) {
+    return ['eng.track_cohesive_reference', 'eng.evaluate_argument_flow', 'eng.choose_register'];
+  }
+  return ['eng.identify_main_idea', 'eng.identify_specific_detail', 'eng.infer_implicit_meaning'];
 }
 
 function inferSatErrorCategory(question: SatQuestion, domainId: string): string {
@@ -173,13 +215,8 @@ function inferSatMisconceptionIds(question: SatQuestion, domainId: string): stri
   return [];
 }
 
-function slugLearningId(value: string): string {
-  return String(value || '')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_+|_+$/g, '') || 'mixed';
+function satTopicValue(question: SatQuestion, state: SatPracticeState): string {
+  return `${question.domain || ''} ${question.skill || ''} ${question.canonicalSkill || ''} ${state.domain || ''} ${state.skill || ''}`.toLowerCase();
 }
 
 interface TrackInfo {
@@ -2351,6 +2388,7 @@ export default function App() {
               fishCoins={fishCoins}
               mouseTrapsCount={mouseTrapsCount}
               errorQuestionCount={activeErrorQuestionCount}
+              learningEvents={studentLearningEvents}
             />
               </>
             )}

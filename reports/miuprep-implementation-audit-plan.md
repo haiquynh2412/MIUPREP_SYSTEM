@@ -1133,3 +1133,41 @@ Residual risk:
 - Daily step completion events are workflow evidence, not scored mastery attempts; only SAT answers and Error Notebook retries are imported as tracked attempts.
 - Other non-SAT course/practice surfaces still need real question-answer flows before they can emit tracked attempts.
 - Browser visual QA was not run for this batch because the changes are data-capture wiring with no intended layout change; use a fresh browser session before product sign-off.
+
+### 2026-06-04 Batch 12 - Live-first student overview model
+
+Scope completed:
+
+- Student overview now uses stored learning events first when valid tracked attempts exist, via `buildStudentModelFromLearningEvents`.
+- Dashboard falls back to the existing synthetic learner snapshot when no valid attempt events exist, preserving current empty-state behavior.
+- Dashboard now labels whether it is showing `Live events` or `Synthetic preview`.
+- SAT practice event metadata now maps to graph-compatible `math.*` and `eng.*` concept/skill IDs instead of ad-hoc `sat.*` IDs, so mastery summaries, learning path, and reroute analysis can connect to the seed graph.
+
+Changed files:
+
+- `apps/miuprep-portal/src/App.tsx`
+- `apps/miuprep-portal/src/components/UnifiedLearnerDashboard.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Proof captured:
+
+- Portal lint/build prove the student overview compiles with live event import and evidence-source labeling.
+- Learning tests continue to prove event-derived student model reconstruction is deterministic and protects feedback-only events.
+- Beta tests continue to prove live event evidence can feed readiness/reroute logic without enabling student-facing Mastery V2 or graph auto-changes.
+
+Residual risk:
+
+- Student overview is live-first only for flows that have valid attempt events. Non-SAT practice/course surfaces still need tracked answer submission before they affect live mastery.
+- Browser visual QA was not run for this small overview data-source change; run a fresh browser session before release sign-off.

@@ -3,11 +3,13 @@ import type { LocalUser } from '@miuprep/db';
 import { createSeedKnowledgeGraph, type KnowledgeGraph } from '@miuprep/knowledge';
 import {
   buildLearningPath,
+  buildStudentModelFromLearningEvents,
   computeMastery,
   emptyStudentModel,
   recordAttempt,
   recommendNextAction,
   type ErrorCategory,
+  type LearningEventRecord,
   type LearningPathEdge,
   type LearningPathNode,
   type LearningPathResult,
@@ -32,6 +34,7 @@ interface UnifiedLearnerDashboardProps {
   fishCoins: number;
   mouseTrapsCount: number;
   errorQuestionCount: number;
+  learningEvents?: LearningEventRecord[];
 }
 
 export interface ProgramSummary {
@@ -50,6 +53,7 @@ export interface LearnerSnapshot {
   learningPath: LearningPathResult;
   programSummaries: ProgramSummary[];
   averageMastery: number;
+  evidenceSource: 'live' | 'synthetic';
 }
 
 const TRACK_TO_PROGRAM: Record<PortalTrackId, ProgramId> = {
@@ -66,12 +70,13 @@ export default function UnifiedLearnerDashboard({
   fishCoins,
   mouseTrapsCount,
   errorQuestionCount,
+  learningEvents = [],
 }: UnifiedLearnerDashboardProps) {
   const assignedTrackIds = useMemo(() => normalizeAssignedTracks(currentUser), [currentUser]);
   const activeTracks = tracks.filter((track) => assignedTrackIds.includes(track.id));
   const snapshot = useMemo(
-    () => buildLearnerSnapshot(currentUser, activeTracks, fishCoins, mouseTrapsCount),
-    [activeTracks, currentUser, fishCoins, mouseTrapsCount],
+    () => buildLearnerSnapshotFromLiveEvents(currentUser, activeTracks, learningEvents, fishCoins, mouseTrapsCount),
+    [activeTracks, currentUser, fishCoins, learningEvents, mouseTrapsCount],
   );
   const graph = useMemo(() => createSeedKnowledgeGraph(), []);
   const nextStep = snapshot.learningPath.nextStep;
@@ -86,6 +91,9 @@ export default function UnifiedLearnerDashboard({
             </span>
             <span className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-400 bg-slate-950 border border-slate-850 px-2 py-1 rounded">
               Knowledge Graph
+            </span>
+            <span className="text-[10px] font-black uppercase tracking-[0.16em] text-sky-300 bg-sky-950/40 border border-sky-900/50 px-2 py-1 rounded">
+              {snapshot.evidenceSource === 'live' ? 'Live events' : 'Synthetic preview'}
             </span>
           </div>
           <h2 className="text-xl font-black text-slate-100 m-0 mt-3">Dashboard hoc tap chung</h2>
@@ -192,7 +200,6 @@ export function buildLearnerSnapshot(
   fishCoins: number,
   mouseTrapsCount: number,
 ): LearnerSnapshot {
-  const graph = createSeedKnowledgeGraph();
   const targetProgramIds = tracks.map((track) => TRACK_TO_PROGRAM[track.id]);
   let state = emptyStudentModel(currentUser.id || currentUser.username, targetProgramIds);
   const correctnessBias = clamp(0.52 + fishCoins / 900 - mouseTrapsCount * 0.035, 0.35, 0.92);
@@ -222,6 +229,40 @@ export function buildLearnerSnapshot(
     });
   });
 
+  return buildLearnerSnapshotFromState(state, tracks, targetProgramIds, 'synthetic');
+}
+
+export function buildLearnerSnapshotFromLiveEvents(
+  currentUser: LocalUser,
+  tracks: PortalTrackInfo[],
+  learningEvents: LearningEventRecord[] = [],
+  fishCoins: number,
+  mouseTrapsCount: number,
+): LearnerSnapshot {
+  const fallback = buildLearnerSnapshot(currentUser, tracks, fishCoins, mouseTrapsCount);
+  const targetProgramIds = tracks.map((track) => TRACK_TO_PROGRAM[track.id]);
+  const canonicalLearnerId = currentUser.username || currentUser.id;
+  const learnerEvents = learningEvents
+    .filter((event) => eventBelongsToUser(event, currentUser))
+    .map((event) => ({ ...event, learnerId: canonicalLearnerId }));
+  if (!learnerEvents.length) return fallback;
+
+  const report = buildStudentModelFromLearningEvents(learnerEvents, {
+    learnerId: canonicalLearnerId,
+    targetProgramIds,
+  });
+  return report.acceptedAttempts > 0
+    ? buildLearnerSnapshotFromState(report.state, tracks, targetProgramIds, 'live')
+    : fallback;
+}
+
+function buildLearnerSnapshotFromState(
+  state: StudentModel,
+  tracks: PortalTrackInfo[],
+  targetProgramIds: ProgramId[],
+  evidenceSource: LearnerSnapshot['evidenceSource'],
+): LearnerSnapshot {
+  const graph = createSeedKnowledgeGraph();
   const mastery = computeMastery(state);
   const recommendation = recommendNextAction(state, { diagnosticMinAttempts: 8 });
   const learningPath = buildLearningPath(mastery, graphNodes(graph), graphEdges(graph), {
@@ -241,6 +282,7 @@ export function buildLearnerSnapshot(
     learningPath,
     programSummaries,
     averageMastery,
+    evidenceSource,
   };
 }
 
@@ -249,6 +291,14 @@ export function normalizeAssignedTracks(user: LocalUser): PortalTrackId[] {
   const allowed = new Set<PortalTrackId>(['math', 'sat', 'ielts', 'cpe', 'cae']);
   const normalized = source.filter((track): track is PortalTrackId => allowed.has(track as PortalTrackId));
   return normalized.length ? normalized : ['math'];
+}
+
+function eventBelongsToUser(event: LearningEventRecord, user: LocalUser): boolean {
+  const learnerId = String(event.learnerId || '').toLowerCase();
+  const candidates = [user.username, user.id]
+    .map((value) => String(value || '').toLowerCase())
+    .filter(Boolean);
+  return candidates.some((candidate) => learnerId === candidate || learnerId === `user-${candidate}` || learnerId.endsWith(`-${candidate}`));
 }
 
 function programTargets(graph: KnowledgeGraph, programId: ProgramId): string[] {
