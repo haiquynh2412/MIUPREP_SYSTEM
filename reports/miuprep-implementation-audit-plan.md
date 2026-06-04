@@ -1036,3 +1036,60 @@ Residual risk:
 
 - Browser visual QA was not repeated for this small data-source change because the previous in-app browser session hit a runtime clipboard/navigation limitation. A fresh browser session should still be used before product sign-off.
 - Live reroute usefulness still depends on student flows writing enough diagnostic/practice/review attempt events, not just daily-plan completion events.
+
+### 2026-06-04 Batch 10 - Math 6 content display guard
+
+Scope completed:
+
+- Added Math 6 geometry SVG generation for text-described geometry prompts and flags for prompts that still need original images.
+- Added a Math 6 content guard report that combines importer issues, standard adapter validation, formula/OLE risk, image dependency risk, and legacy font/encoding risk.
+- Added `guard:math6`, `export:audit:math6`, and `audit:math6-display` commands.
+- Updated Math 6 import normalization to remove control characters from prompts while preserving report evidence for Word/OLE formula loss.
+- Generated Math 6 content/display audit artifacts under `reports/content-quality`.
+
+Changed files:
+
+- `MIUPREP_IMPLEMENTATION_PLAN.md`
+- `packages/content/package.json`
+- `packages/content/src/index.ts`
+- `packages/content/src/math6-import.ts`
+- `packages/content/src/standard.test.ts`
+- `packages/content/src/guard-math6-content.ts`
+- `packages/content/src/math6-content-guard-report.ts`
+- `packages/content/src/math6-geometry-figures.ts`
+- `reports/content-quality/math6-content-audit.md`
+- `reports/content-quality/math6-content-guard.json`
+- `reports/content-quality/math6-content-issues.csv`
+- `reports/content-quality/math6-display-audit.json`
+- `reports/content-quality/math6-display-audit.md`
+- `reports/content-quality/math6-display-ready-preview.json`
+- `reports/content-quality/math6-question-bank-audit.md`
+- `reports/content-quality/math6-question-bank-preview.json`
+- `scripts/audit-math6-display.js`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run guard:math6 -w @miuprep/content`
+- `npm.cmd run export:audit:math6 -w @miuprep/content`
+- `npm.cmd run audit:math6-display -w @miuprep/content`
+
+Verification passed, round 2:
+
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+- `npm.cmd run export:audit:math6 -w @miuprep/content`
+- `npm.cmd run audit:math6-display -w @miuprep/content`
+
+Proof captured:
+
+- Math 6 adapter still converts 1,270 items with `adapter.pass: true`.
+- Display audit reports 766/1,270 items ready for display, 465 generated SVG geometry figures, 0 prompt control/replacement characters, 477 formula-review blockers, 2 original-image blockers, and 79 text-encoding blockers.
+- Content guard reports 558 blockers and 20 warnings while preserving the pass/fail distinction: adapter errors fail the guard, display blockers remain visible triage items.
+
+Residual risk:
+
+- Math 6 is not fully display-ready. The 477 Word/OLE formula-review blockers require recovering equations from original files or a better Word formula extraction path.
+- The 79 legacy font/encoding blockers need source-specific Vietnamese/font conversion review before student-facing release.
+- The 2 original-image blockers still need original diagrams captured or manually recreated.

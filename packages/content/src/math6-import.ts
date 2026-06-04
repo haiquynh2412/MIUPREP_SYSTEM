@@ -3,6 +3,7 @@ import {
   type Math6Pattern,
   type Math6TopicPlan,
 } from './math6-plan';
+import { generateMath6GeometryFigure, needsOriginalGeometryImage } from './math6-geometry-figures';
 import type { MathLearningLevel, QuestionItem } from './standard';
 
 export interface Math6RawSource {
@@ -128,6 +129,8 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
   const items = blocks.map((block): QuestionItem => {
     const topic = MATH6_LEARNING_MATRIX.find((candidate) => candidate.id === block.topicId);
     const pattern = topic?.patterns.find((candidate) => candidate.id === block.patternId);
+    const generatedFigure = generateMath6GeometryFigure(block.prompt, block.topicId);
+    const needsOriginalImage = needsOriginalGeometryImage(block.prompt);
     return {
       id: `math6.${block.id}`,
       sourceId: block.id,
@@ -150,6 +153,8 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
         block.patternId,
         `level:${block.level}`,
         `source:${block.sourceFile}`,
+        generatedFigure ? 'figure:generated' : '',
+        needsOriginalImage && !generatedFigure ? 'figure:needs_original' : '',
       ]),
       metadata: {
         grade: 6,
@@ -162,6 +167,8 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
         sourceFile: block.sourceFile,
         sourcePath: block.sourcePath || '',
         importConfidence: block.confidence,
+        generatedFigure,
+        figureStatus: generatedFigure ? 'generated_svg' : needsOriginalImage ? 'needs_original_image' : 'none',
       },
     };
   });
@@ -332,6 +339,7 @@ function normalizeExtractedText(text: string): string {
     .replace(/\u0007/g, '\n')
     .replace(/\f/g, '\n')
     .replace(/\r/g, '\n')
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '')
     .replace(/\n{3,}/g, '\n\n');
 }
 

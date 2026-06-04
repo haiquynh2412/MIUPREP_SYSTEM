@@ -19,6 +19,7 @@ Muc tieu: bien cac ung dung hien co cua MiuPrep thanh mot nen tang hoc thich ung
 - [x] 2026-06-04: Mo rong Knowledge Graph thanh ban do Toan THCS/On vao 10 voi program `vn_math_thcs`, `vn_math_6/7/8/9`, `vn_math_vao_10`; adapter MiuMath gan 485/485 cau vao grade/topic/pattern/level moi va export audit coverage theo program/grade/topic/level.
 - [x] 2026-06-04: Tao ma tran hoc Toan 6 tu thu muc `SACH VIET/TOAN/TAI LIEU TOAN 6`: 15 topic, 5 checkpoint, truy cap theo grade/semester/strand/unit/topic/level/examTarget trong `@miuprep/content`.
 - [x] 2026-06-04: Trich xuat 75 file Word Toan 6 va tao importer bai tap theo ma tran: 1,270 `QuestionItem`, 65 source co mapping, adapter pass; xuat preview/audit/coverage tai `reports/content-quality/math6-question-bank-*`.
+- [x] 2026-06-04: Them audit hien thi Toan 6 `audit:math6-display` va guard `guard:math6`: 766/1,270 cau san sang hien thi, 477 cau can khoi phuc cong thuc Word/OLE, 2 cau can hinh goc, 79 cau can sua font/encoding, 465 cau co SVG hinh hoc duoc sinh tu dong; da loai sach control chars khoi prompt.
 - [x] 2026-06-02: Import MiuMath tu `ON THi/miumath-app` vao `apps/miumath-app`, them dependency `dompurify`, build `miumath-app` pass.
 - [x] 2026-06-02: Import IELTS/CPE/content tu `IELT/apps/desktop`, `IELT/apps/cpe-desktop`, `IELT/packages/content` vao monorepo.
 - [x] 2026-06-02: Import `IELT/packages/core` vao `packages/core` de dong bo API moi cho IELTS/CPE.

@@ -14,6 +14,8 @@ import {
   getMath6TopicsByAxis,
 } from "./math6-plan";
 import { buildMath6QuestionItemsFromRawSources, extractMath6ExerciseBlocks, matchMath6TopicForSource } from "./math6-import";
+import { buildMath6ContentGuardReport } from "./math6-content-guard-report";
+import { generateMath6GeometryFigure, needsOriginalGeometryImage } from "./math6-geometry-figures";
 import {
   buildSatLearningCatalog,
   buildSatContentReadinessSnapshot,
@@ -119,6 +121,27 @@ assert(math6MixedReview.items.some((question) => question.metadata?.topicId === 
 assert(math6MixedReview.items.some((question) => question.metadata?.topicId === "math6.number.prime_factor_gcd_lcm"), "Mixed review UCLN blocks should map to GCD/LCM.");
 assert(math6MixedReview.items.some((question) => question.metadata?.topicId === "math6.geometry.angles"), "Mixed review angle blocks should map to angles.");
 assert(validateStandardContentBundle({ questions: math6MixedReview.items }).length === 0, "Math 6 mixed review QuestionItems should validate cleanly.");
+
+const math6GeneratedFigure = generateMath6GeometryFigure(
+  "Cau 1: Cho duong thang xy, diem O nam tren xy. Tren tia Ox lay diem N, tren tia Oy lay diem M.",
+  "math6.geometry.points_lines_segments",
+);
+assert(math6GeneratedFigure?.kind === "opposite_rays", "Math 6 geometry generator should draw opposite-ray prompts.");
+assert(math6GeneratedFigure.svg.includes("<svg"), "Generated Math 6 figures should be SVG payloads.");
+assert(needsOriginalGeometryImage("Cau 1: Cho hinh ve ben. Tinh do dai AB."), "Image-dependent geometry prompts should be gated for original-image review.");
+assert(!needsOriginalGeometryImage("Cau 1: Ve hinh theo cach dien dat: cho duong thang xy."), "Construct-from-text prompts should not be gated as missing original images.");
+
+const math6GeometryGuard = buildMath6ContentGuardReport([
+  {
+    fileName: "Chuyen de diem duong thang tia.doc",
+    relativePath: "Chuyen de diem duong thang tia.doc",
+    extension: "doc",
+    text: "Cau 1: Cho duong thang xy, diem O nam tren xy. Tren tia Ox lay diem N, tren tia Oy lay diem M.",
+  },
+], { generatedAt: "2026-06-04T00:00:00.000Z" });
+assert(math6GeometryGuard.report.stats.generatedFigures === 1, "Math 6 guard should count generated SVG figures.");
+assert(math6GeometryGuard.report.display.needsOriginalImage === 0, "Generated geometry figures should satisfy the image display gate.");
+assert(math6GeometryGuard.report.adapter.pass, "Math 6 guard output should validate as standard QuestionItems.");
 
 const baseQuestion: MiuMathQuestion = {
   id: "Q001",
