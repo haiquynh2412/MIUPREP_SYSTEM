@@ -49,13 +49,6 @@ await page.getByTestId('template-practice-panel').waitFor({ state: 'visible', ti
 await page.getByTestId('template-practice-choice-A').click();
 await page.getByTestId('template-practice-next').waitFor({ state: 'visible', timeout: 15000 });
 
-await page.getByRole('button', { name: 'Courses 5 tracks', exact: true }).click();
-await page.getByText('English Core', { exact: true }).waitFor({ state: 'visible', timeout: 15000 });
-await openPracticeButtons.nth(1).click();
-await page.getByTestId('template-practice-panel').waitFor({ state: 'visible', timeout: 15000 });
-await page.getByTestId('template-practice-choice-A').click();
-await page.getByTestId('template-practice-next').waitFor({ state: 'visible', timeout: 15000 });
-
 const proof = await page.evaluate((qaUsername) => {
   const ids = JSON.parse(localStorage.getItem('ielts_app_learning_events_list') || '[]');
   const events = ids
@@ -89,15 +82,15 @@ const proof = await page.evaluate((qaUsername) => {
 await browser.close();
 
 const ok =
-  proof.actionEventCount === 2 &&
-  proof.practiceEventCount === 2 &&
+  proof.actionEventCount === 1 &&
+  proof.practiceEventCount === 1 &&
   proof.practiceEvents.every((event) =>
     event.type === 'practice_attempt' &&
     event.entityType === 'learning_item' &&
     event.correct === true &&
     event.score === 1 &&
     event.maxScore === 1 &&
-    ['mathematics', 'english_core'].includes(event.domainId) &&
+    event.domainId === 'mathematics' &&
     Boolean(event.itemId) &&
     Boolean(event.templateId)
   ) &&

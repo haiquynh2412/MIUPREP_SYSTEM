@@ -1654,3 +1654,59 @@ Residual risk:
 - This closes the immediate non-SAT "button-only telemetry" gap for course template practice, but it is still a template-derived micro-practice engine. Full item-bank practice for IELTS/CAE/CPE and non-Math6 math content should use guarded `QuestionItem` catalogs in a later batch.
 - Knowledge Graph updates remain review-gated until real beta data is available.
 - Math 6 content recovery remains intentionally deferred to the next Math 6-focused session.
+
+### 2026-06-05 Batch 23 - IELTS/CAE/CPE scored item-bank practice
+
+Scope completed:
+
+- Replaced English Core `Open practice` behavior for IELTS, CAE, and CPE with a scored item-bank session built from real `EnglishLearningCatalog` `QuestionItem`s.
+- Kept SAT and Math template-practice routes intact; Math 6 content recovery remains outside this batch by request.
+- Added a dedicated English item-bank practice state builder that selects learner-ready, scorable items, prefers lesson-template concept/skill matches, skips previously attempted items, and falls back to program-level questions when needed.
+- Added a student-facing `Scored item-bank practice` panel that shows the program bank, item source test/section/group, catalog guard counts, choices, selected answer review, and item metadata.
+- Added `practice_attempt` telemetry for item-bank answers with `entityType: learning_item`, real `itemId`, source test/section ids, concept/skill ids, answer values, score, and `sourceSurface: english_item_bank_practice`.
+- Wrong item-bank answers now create Error Notebook entries and increment trap count; correct answers award coins.
+- Updated the older template-practice QA so it now verifies Math template-practice remains active while English has moved to item-bank practice.
+
+Changed files:
+
+- `apps/miuprep-portal/src/App.tsx`
+- `apps/miuprep-portal/src/components/EnglishItemBankPracticePanel.tsx`
+- `apps/miuprep-portal/src/lib/englishItemBankPractice.ts`
+- `apps/miuprep-portal/src/lib/studentProgress.ts`
+- `scripts/qa-portal-english-item-bank-practice.mjs`
+- `scripts/qa-portal-template-practice.mjs`
+- `package.json`
+- `MIUPREP_IMPLEMENTATION_PLAN.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed:
+
+- `git diff --check`
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w @miuprep/content`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run qa:portal-english-item-bank-practice`
+- `npm.cmd run qa:portal-template-practice`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd run build`
+
+Browser proof captured:
+
+- In-app browser on `http://127.0.0.1:5181` opened Courses and clicked the real English `Open practice` action.
+- The UI rendered `english-item-bank-practice-panel` and did not render the template-practice panel.
+- The visible panel showed `Scored item-bank practice`, `IELTS question bank`, `Vocabulary and Collocation Precision - question 1/6`, source `Library Membership Application`, and catalog guard counts.
+- The first loaded item was a real catalog item: `english.ielts.listening-sample-1.l-sec-1.lg-1.q-l1`.
+
+QA proof captured:
+
+- IELTS QA event used item `english.ielts.listening-sample-1.l-sec-1.lg-1.q-l1`, question type `gap_fill`, and source test `listening-sample-1`.
+- CAE QA event used item `english.cae.cae-error-correction-bank.cae-ec-sec-1.cae-ec-rg-1.q-cae-ec-1-1`, question type `gap_fill`, and source test `cae-error-correction-bank`.
+- CPE QA event used item `english.cpe.cam-cpe1-test1.cam-cpe1-t1-sec-2.cam-cpe1-t1-rg-2.q-cpe1-t1-10`, question type `gap_fill`, and source test `cam-cpe1-test1`.
+- QA confirmed each answer wrote exactly one `lesson_template_action` and one item-bank `practice_attempt` with `source: miuprep_portal_english_item_bank_practice`, `entityType: learning_item`, `domainId: english_core`, `correct: true`, `score: 1`, and `maxScore: 1`.
+
+Residual risk:
+
+- Portal build still reports the existing Vite chunk-size warning. The new item-bank helper uses a dynamic import, but Vite reports it is ineffective because `@miuprep/content` is still statically imported by other portal/database paths. This is a performance follow-up, not a functional blocker.
+- The next performance pass should split or lazy-load `@miuprep/content` usage in `adminContent.ts` and shared database adapters before expecting English item-bank code to move into a separate chunk.
+- Non-Math6 math item-bank practice remains a later batch. Math 6 rich formula/image/encoding recovery remains intentionally deferred.

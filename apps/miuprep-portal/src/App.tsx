@@ -13,6 +13,7 @@ import StudentTodaySprint from './components/StudentTodaySprint';
 import MathLessonTemplatePanel from './components/MathLessonTemplatePanel';
 import EnglishCoreLessonTemplatePanel from './components/EnglishCoreLessonTemplatePanel';
 import TemplatePracticeSessionPanel from './components/TemplatePracticeSessionPanel';
+import EnglishItemBankPracticePanel from './components/EnglishItemBankPracticePanel';
 import ErrorNotebookV2Panel from './components/ErrorNotebookV2Panel';
 import AdminInterventionQueue from './components/AdminInterventionQueue';
 import AdminContentRepairQueue from './components/AdminContentRepairQueue';
@@ -32,6 +33,7 @@ import {
   MASCOT_STORE_ITEMS,
   STUDENT_DIARY_MOODS,
   buildDailyLoopStepLearningEvent,
+  buildEnglishItemBankPracticeAttemptLearningEvent,
   buildErrorRetryLearningEvent,
   buildLessonTemplateActionLearningEvent,
   buildTemplatePracticeAttemptLearningEvent,
@@ -63,6 +65,15 @@ import {
   type TemplatePracticeState,
   type TemplatePracticeTemplate,
 } from './lib/templatePractice';
+import {
+  advanceEnglishItemBankPractice,
+  answerEnglishItemBankPracticeQuestion,
+  createEnglishItemBankPracticeState,
+  isEnglishItemBankProgramId,
+  type EnglishItemBankPracticeChoiceKey,
+  type EnglishItemBankPracticeQuestion,
+  type EnglishItemBankPracticeState,
+} from './lib/englishItemBankPractice';
 import {
   buildContentExamChangeSet,
   buildContentReviewChangeSetExport,
@@ -501,6 +512,7 @@ export default function App() {
   const [satTargetScore, setSatTargetScore] = useState<number>(1450);
   const [activePracticeState, setActivePracticeState] = useState<SatPracticeState | null>(null);
   const [templatePracticeState, setTemplatePracticeState] = useState<TemplatePracticeState | null>(null);
+  const [englishItemBankPracticeState, setEnglishItemBankPracticeState] = useState<EnglishItemBankPracticeState | null>(null);
 
   // Admin SAT Explorer States
   const [adminSatSubTab, setAdminSatSubTab] = useState<'explorer' | 'integrity' | 'calibration'>('explorer');
@@ -554,6 +566,7 @@ export default function App() {
 
   const handleStartPractice = (domain: string, skill: string) => {
     setTemplatePracticeState(null);
+    setEnglishItemBankPracticeState(null);
     const nextPracticeState = createSatPracticeState(loadedQuestions, domain, skill, selectedSatBank);
 
     if (!nextPracticeState) {
@@ -617,9 +630,46 @@ export default function App() {
       return;
     }
     setActivePracticeState(null);
+    setEnglishItemBankPracticeState(null);
     setTemplatePracticeState(nextState);
     setShowErrorNotebook(false);
     showNotif(`Bat dau scored practice: ${nextState.questions.length} cau tu ${template.title}.`, "success");
+  };
+
+  const startEnglishItemBankPractice = async (
+    template: LessonTemplateActionTemplate,
+    programId: 'ielts' | 'cae' | 'cpe',
+  ): Promise<boolean> => {
+    const attemptedItemIds = getAttemptedEnglishItemIds(programId);
+    const nextState = await createEnglishItemBankPracticeState({
+      template,
+      programId,
+      attemptedItemIds,
+      limit: 6,
+    });
+
+    if (!nextState) {
+      showNotif(`Chua co item-bank practice learning-ready cho ${programId.toUpperCase()}.`, "info");
+      return false;
+    }
+
+    setActivePracticeState(null);
+    setTemplatePracticeState(null);
+    setEnglishItemBankPracticeState(nextState);
+    setShowErrorNotebook(false);
+    showNotif(`Bat dau ${programId.toUpperCase()} item-bank practice: ${nextState.questions.length} cau.`, "success");
+    return true;
+  };
+
+  const getAttemptedEnglishItemIds = (programId: string): string[] => {
+    if (!currentUser?.username) return [];
+    const username = currentUser.username.toLowerCase();
+    return studentLearningEvents
+      .filter((event) => String(event.learnerId || '').toLowerCase() === username)
+      .filter((event) => event.type === 'practice_attempt')
+      .filter((event) => String(event.payload?.programId || '').toLowerCase() === programId)
+      .map((event) => String(event.payload?.itemId || ''))
+      .filter(Boolean);
   };
 
   const handleNextSatQuestion = () => {
@@ -713,6 +763,95 @@ export default function App() {
     errorType: state.domainId === 'english_core' ? 'knowledge' : 'calculation',
     rootCause: 'Template practice move was selected incorrectly.',
     missedStep: question.expectedMove,
+    repairLessonId: state.templateId,
+    repairLessonTitle: state.templateTitle,
+    retryAttempts: 0,
+    correctRetryCount: 0,
+  });
+
+  const handleAnswerEnglishItemBankPractice = (choice: EnglishItemBankPracticeChoiceKey) => {
+    if (!englishItemBankPracticeState) return;
+    const { currentQuestion, isCorrect, nextState } = answerEnglishItemBankPracticeQuestion(englishItemBankPracticeState, choice);
+    const selectedChoice = currentQuestion.choices.find((item) => item.key === choice);
+
+    if (currentUser?.role === 'student') {
+      void saveStudentLearningEvent(buildEnglishItemBankPracticeAttemptLearningEvent({
+        username: currentUser.username,
+        programId: englishItemBankPracticeState.programId,
+        itemId: currentQuestion.id,
+        sourceId: currentQuestion.sourceId,
+        source: currentQuestion.source,
+        itemPrompt: currentQuestion.prompt,
+        conceptIds: currentQuestion.conceptIds,
+        skillIds: currentQuestion.skillIds,
+        misconceptionIds: currentQuestion.misconceptionIds,
+        selectedAnswer: choice,
+        selectedValue: selectedChoice?.sourceValue || selectedChoice?.text || '',
+        correctAnswer: currentQuestion.correctAnswer,
+        correctValue: currentQuestion.correctValue,
+        correct: isCorrect,
+        difficulty: currentQuestion.difficulty,
+        cognitiveLevel: currentQuestion.cognitiveLevel,
+        questionType: currentQuestion.type,
+        questionIndex: englishItemBankPracticeState.currentIndex,
+        templateId: englishItemBankPracticeState.templateId,
+        templateTitle: englishItemBankPracticeState.templateTitle,
+        metadata: currentQuestion.metadata,
+      }));
+    }
+
+    if (isCorrect) {
+      setFishCoins(prev => {
+        const nextCoins = prev + 8;
+        if (currentUser?.username) {
+          persistCoinBalance(localStorage, currentUser.username, nextCoins);
+        }
+        return nextCoins;
+      });
+      showNotif("Dung cau item-bank. Ban nhan +8 Xu Ca Hoi.", "success");
+    } else {
+      const newErr = createEnglishItemBankPracticeErrorQuestion(currentQuestion, englishItemBankPracticeState);
+      setErrorQuestions(prev => {
+        if (prev.some(q => q.id === newErr.id || q.text === newErr.text)) return prev;
+        return [newErr, ...prev];
+      });
+      const nextTraps = mouseTrapsCount + 1;
+      setMouseTrapsCount(nextTraps);
+      if (currentUser?.username) {
+        persistTrapCount(localStorage, currentUser.username, nextTraps);
+      }
+      showNotif("Chua dung. Cau nay da vao Error Notebook de on lai.", "error");
+    }
+
+    setEnglishItemBankPracticeState(nextState);
+  };
+
+  const handleNextEnglishItemBankPractice = () => {
+    if (!englishItemBankPracticeState) return;
+    const { completed, finalScore, totalQuestions, nextState } = advanceEnglishItemBankPractice(englishItemBankPracticeState);
+    if (completed) {
+      showNotif(`Hoan thanh item-bank practice: ${finalScore}/${totalQuestions} cau dung.`, "success");
+    }
+    setEnglishItemBankPracticeState(nextState);
+  };
+
+  const createEnglishItemBankPracticeErrorQuestion = (
+    question: EnglishItemBankPracticeQuestion,
+    state: EnglishItemBankPracticeState,
+  ): ErrorNotebookQuestion => ({
+    id: `err-english-bank-${question.id}-${Date.now()}`,
+    text: `${state.programId.toUpperCase()} item-bank: ${question.prompt}`,
+    stage: 1,
+    answer: question.correctAnswer,
+    options: question.choices.map((item) => item.key),
+    answerExpl: `Correct value: ${question.correctValue}. ${question.explanation}`,
+    domainId: 'english_core',
+    programId: state.programId,
+    conceptIds: question.conceptIds,
+    skillIds: question.skillIds,
+    errorType: question.type.includes('listening') ? 'time_strategy' : 'reading_prompt',
+    rootCause: 'Item-bank answer did not match the source-keyed answer.',
+    missedStep: `Review ${question.type} evidence and source answer ${question.correctValue}.`,
     repairLessonId: state.templateId,
     repairLessonTitle: state.templateTitle,
     retryAttempts: 0,
@@ -1549,7 +1688,7 @@ export default function App() {
     }
   };
 
-  const handleEnglishLessonTemplateAction = (template: LessonTemplateActionTemplate, action: LessonTemplateAction) => {
+  const handleEnglishLessonTemplateAction = async (template: LessonTemplateActionTemplate, action: LessonTemplateAction) => {
     if (!currentUser || currentUser.role !== 'student') return;
     const programId = resolvePrimaryEnglishProgramId(currentUser);
     void saveStudentLearningEvent(buildLessonTemplateActionLearningEvent({
@@ -1566,6 +1705,10 @@ export default function App() {
       sourceSurface: 'english_core_lesson_template_panel',
     }));
     if (action === 'open_practice') {
+      if (isEnglishItemBankProgramId(programId)) {
+        const started = await startEnglishItemBankPractice(template, programId);
+        if (started) return;
+      }
       startLessonTemplatePractice(template, 'english_core', programId, 'english_core_lesson_template_panel');
     }
   };
@@ -2127,6 +2270,7 @@ export default function App() {
                     onClick={() => {
                       setActiveStudentTab('dashboard');
                       setActivePracticeState(null);
+                      setEnglishItemBankPracticeState(null);
                     }}
                     className="px-4 py-2 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-300 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer"
                   >
@@ -2198,6 +2342,7 @@ export default function App() {
                     setSelectedSatBank(e.target.value);
                     setActivePracticeState(null);
                     setTemplatePracticeState(null);
+                    setEnglishItemBankPracticeState(null);
                   }}
                   className="bg-slate-955 border border-slate-850 text-slate-200 rounded-xl px-4 py-2.5 text-xs font-bold outline-none cursor-pointer focus:border-rose-500 min-w-[240px]"
                 >
@@ -2613,7 +2758,16 @@ export default function App() {
             />
             )}
 
-            {studentWorkspaceTab === 'practice' && templatePracticeState && (
+            {studentWorkspaceTab === 'practice' && englishItemBankPracticeState && (
+              <EnglishItemBankPracticePanel
+                state={englishItemBankPracticeState}
+                onAnswer={handleAnswerEnglishItemBankPractice}
+                onNext={handleNextEnglishItemBankPractice}
+                onClose={() => setEnglishItemBankPracticeState(null)}
+              />
+            )}
+
+            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && templatePracticeState && (
               <TemplatePracticeSessionPanel
                 state={templatePracticeState}
                 onAnswer={handleAnswerTemplatePractice}
@@ -2623,7 +2777,7 @@ export default function App() {
             )}
 
             {/* 1.3. LEITNER ERROR NOTEBOOK (Collapsible) */}
-            {studentWorkspaceTab === 'practice' && !templatePracticeState && !showErrorNotebook && (
+            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && !templatePracticeState && !showErrorNotebook && (
               <section className="bg-slate-900/60 border border-rose-500/20 rounded-3xl p-6 max-w-4xl mx-auto shadow-xl text-left">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
@@ -2642,7 +2796,7 @@ export default function App() {
               </section>
             )}
 
-            {studentWorkspaceTab === 'practice' && !templatePracticeState && showErrorNotebook && (
+            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && !templatePracticeState && showErrorNotebook && (
               <ErrorNotebookV2Panel
                 errorQuestions={errorQuestions}
                 onClose={() => setShowErrorNotebook(false)}
@@ -2654,7 +2808,7 @@ export default function App() {
               />
             )}
 
-            {studentWorkspaceTab === 'practice' && !templatePracticeState && showErrorNotebook && Boolean(localStorage.getItem('miuprep_show_legacy_error_notebook')) && (
+            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && !templatePracticeState && showErrorNotebook && Boolean(localStorage.getItem('miuprep_show_legacy_error_notebook')) && (
               <section className="bg-slate-900/60 border-2 border-rose-500/30 rounded-3xl p-6 max-w-4xl mx-auto shadow-2xl relative overflow-hidden bg-gradient-to-r from-slate-900 to-rose-950/20 text-left transition-all duration-300">
                 <div className="absolute top-0 left-0 w-full h-[3px] bg-rose-500" />
                 <div className="flex justify-between items-center mb-4">

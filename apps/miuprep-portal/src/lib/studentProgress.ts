@@ -169,6 +169,31 @@ export interface TemplatePracticeAttemptLearningEventInput {
   occurredAt?: string;
 }
 
+export interface EnglishItemBankPracticeAttemptLearningEventInput {
+  username: string;
+  programId: string;
+  itemId: string;
+  sourceId?: string;
+  source?: string;
+  itemPrompt: string;
+  conceptIds?: string[];
+  skillIds?: string[];
+  misconceptionIds?: string[];
+  selectedAnswer: string;
+  selectedValue: string;
+  correctAnswer: string;
+  correctValue: string;
+  correct: boolean;
+  difficulty?: string;
+  cognitiveLevel?: string;
+  questionType: string;
+  questionIndex: number;
+  templateId: string;
+  templateTitle: string;
+  metadata?: Record<string, unknown>;
+  occurredAt?: string;
+}
+
 export type ErrorNotebookRetryStatusCode = 'new' | 'repairing' | 'prerequisite' | 'stable';
 export type ErrorNotebookV2Type = 'knowledge' | 'reading_prompt' | 'calculation' | 'time_strategy';
 
@@ -526,6 +551,59 @@ export function buildTemplatePracticeAttemptLearningEvent(input: TemplatePractic
       entityId: input.itemId,
       occurredAt,
       source: 'miuprep_portal_template_practice',
+    },
+  );
+}
+
+export function buildEnglishItemBankPracticeAttemptLearningEvent(input: EnglishItemBankPracticeAttemptLearningEventInput): LearningEventRecord {
+  const occurredAt = input.occurredAt || new Date().toISOString();
+  const conceptIds = normalizeLearningIds(input.conceptIds, 'eng.core_skill');
+  const skillIds = normalizeLearningIds(input.skillIds, 'eng.academic_reading');
+  const misconceptionIds = input.correct ? [] : normalizeLearningIds(input.misconceptionIds, 'mis.eng.item_bank_practice_gap');
+
+  return buildLearningEvent(
+    'practice_attempt',
+    {
+      attemptId: `english-bank-${input.username}-${input.itemId}-${stableEventPart(occurredAt)}`,
+      itemId: input.itemId,
+      sourceId: input.sourceId || '',
+      source: input.source || '',
+      domainId: 'english_core',
+      programId: input.programId,
+      conceptIds,
+      skillIds,
+      misconceptionIds,
+      correct: input.correct,
+      score: input.correct ? 1 : 0,
+      maxScore: 1,
+      difficulty: input.difficulty || 'medium',
+      cognitiveLevel: input.cognitiveLevel || 'apply',
+      mode: 'practice',
+      selectedAnswer: input.selectedAnswer,
+      selectedValue: input.selectedValue,
+      correctAnswer: input.correctAnswer,
+      correctValue: input.correctValue,
+      itemPrompt: input.itemPrompt,
+      questionType: input.questionType,
+      questionIndex: input.questionIndex,
+      templateId: input.templateId,
+      templateTitle: input.templateTitle,
+      testId: String(input.metadata?.testId || ''),
+      testTitle: String(input.metadata?.testTitle || ''),
+      sectionId: String(input.metadata?.sectionId || ''),
+      sectionTitle: String(input.metadata?.sectionTitle || ''),
+      groupId: String(input.metadata?.groupId || ''),
+      errorCategories: input.correct ? [] : [englishItemBankErrorCategory(input.questionType, input.metadata)],
+      timeSpentSeconds: 0,
+      sourceSurface: 'english_item_bank_practice',
+      itemBankSource: 'english_learning_catalog',
+    },
+    {
+      learnerId: input.username,
+      entityType: 'learning_item',
+      entityId: input.itemId,
+      occurredAt,
+      source: 'miuprep_portal_english_item_bank_practice',
     },
   );
 }
@@ -1161,6 +1239,23 @@ function errorCategoryFromQuestion(question: ErrorNotebookQuestion, domainId: st
   if (text.includes('dieu kien') || text.includes('domain')) return 'missing_condition';
   if (text.includes('sqrt') || text.includes('rut gon')) return 'algebra_transform';
   return 'calculation';
+}
+
+function englishItemBankErrorCategory(questionType: string, metadata: Record<string, unknown> | undefined): string {
+  const text = normalizePlainText([
+    questionType,
+    String(metadata?.testSkill || ''),
+    String(metadata?.skillArea || ''),
+    String(metadata?.sectionTitle || ''),
+    String(metadata?.category || ''),
+  ].join(' '));
+
+  if (text.includes('listening')) return 'listening_detail';
+  if (text.includes('true_false') || text.includes('not_given')) return 'reading_evidence';
+  if (text.includes('matching') || text.includes('gapped')) return 'reading_structure';
+  if (text.includes('gap') || text.includes('cloze') || text.includes('word') || text.includes('grammar')) return 'use_of_english';
+  if (text.includes('reading')) return 'reading_prompt';
+  return 'english_item_bank_practice';
 }
 
 function misconceptionIdsFromQuestion(question: ErrorNotebookQuestion, domainId: string): string[] {

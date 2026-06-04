@@ -4,6 +4,8 @@ Muc tieu: bien cac ung dung hien co cua MiuPrep thanh mot nen tang hoc thich ung
 
 ## Integration Log
 
+- [x] 2026-06-05: Mo rong portal `Open practice` cho IELTS/CAE/CPE tu template micro-practice sang scored item-bank practice dung `EnglishLearningCatalog`/`QuestionItem` that; moi attempt ghi `practice_attempt` co itemId/source/test/section, concept/skill, correct, score va Error Notebook khi sai.
+- [x] 2026-06-05: Test item-bank IELTS/CAE/CPE pass tren UI that: `npm run qa:portal-english-item-bank-practice`, `npm run qa:portal-template-practice`, `npm run lint -w miuprep-portal`, `npm test -w @miuprep/learning`, `npm test -w @miuprep/content`, `npm run build -w miuprep-portal`, `npm run build`; in-app browser xac nhan panel `Scored item-bank practice` thay template panel cho English.
 - [x] 2026-06-04: Doi chieu PDF goc `Cambridge Certificate in Advanced English 6.pdf` va sua sach 23 OCR warnings cua `cam-cae6-test4` Reading Part 2/Part 4: cap nhat `passageHtml` o ca section/question, sua answer evidence va explanation theo answer key Test 4.
 - [x] 2026-06-04: Test vong 1 + vong 2 sau sua CAE Test 4 pass: CAE deep audit 36 tests/3,829 questions = 0 issue/0 blocker/0 warning; `npm test -w @miuprep/content`, English guard, sync portal quality snapshot deu pass.
 - [x] 2026-06-04: On dinh root build monorepo bang `scripts/build-workspaces.cjs` de build workspace tuan tu theo dependency; sua helper AI productive-skill provenance/deviation (`inferProvider`, `averageNumber`); `npm run build` root pass.
