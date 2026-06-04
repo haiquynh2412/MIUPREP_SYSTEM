@@ -146,6 +146,29 @@ export interface LessonTemplateActionLearningEventInput {
   occurredAt?: string;
 }
 
+export interface TemplatePracticeAttemptLearningEventInput {
+  username: string;
+  programId: string;
+  domainId: string;
+  itemId: string;
+  itemPrompt: string;
+  templateId: string;
+  templateTitle: string;
+  stageId: string;
+  stageTitle: string;
+  conceptIds?: string[];
+  skillIds?: string[];
+  selectedAnswer: string;
+  selectedMove: string;
+  correctAnswer: string;
+  correctMove: string;
+  correct: boolean;
+  difficulty?: string;
+  questionIndex: number;
+  sourceSurface: 'math_lesson_template_panel' | 'english_core_lesson_template_panel';
+  occurredAt?: string;
+}
+
 export type ErrorNotebookRetryStatusCode = 'new' | 'repairing' | 'prerequisite' | 'stable';
 export type ErrorNotebookV2Type = 'knowledge' | 'reading_prompt' | 'calculation' | 'time_strategy';
 
@@ -459,6 +482,50 @@ export function buildLessonTemplateActionLearningEvent(input: LessonTemplateActi
       entityId: input.templateId,
       occurredAt,
       source: 'miuprep_portal_lesson_template',
+    },
+  );
+}
+
+export function buildTemplatePracticeAttemptLearningEvent(input: TemplatePracticeAttemptLearningEventInput): LearningEventRecord {
+  const occurredAt = input.occurredAt || new Date().toISOString();
+  const conceptIds = normalizeLearningIds(input.conceptIds, fallbackLessonConceptId(input.domainId));
+  const skillIds = normalizeLearningIds(input.skillIds, fallbackLessonSkillId(input.domainId));
+
+  return buildLearningEvent(
+    'practice_attempt',
+    {
+      attemptId: `template-practice-${input.username}-${input.itemId}-${stableEventPart(occurredAt)}`,
+      itemId: input.itemId,
+      domainId: input.domainId,
+      programId: input.programId,
+      conceptIds,
+      skillIds,
+      correct: input.correct,
+      score: input.correct ? 1 : 0,
+      maxScore: 1,
+      difficulty: input.difficulty || 'Medium',
+      mode: 'practice',
+      selectedAnswer: input.selectedAnswer,
+      selectedMove: input.selectedMove,
+      correctAnswer: input.correctAnswer,
+      correctMove: input.correctMove,
+      itemPrompt: input.itemPrompt,
+      templateId: input.templateId,
+      templateTitle: input.templateTitle,
+      stageId: input.stageId,
+      stageTitle: input.stageTitle,
+      questionIndex: input.questionIndex,
+      errorCategories: input.correct ? [] : [input.domainId === 'english_core' ? 'strategy' : 'calculation'],
+      misconceptionIds: input.correct ? [] : [input.domainId === 'english_core' ? 'mis.eng.strategy_gap' : 'mis.math.method_gap'],
+      timeSpentSeconds: 0,
+      sourceSurface: input.sourceSurface,
+    },
+    {
+      learnerId: input.username,
+      entityType: 'learning_item',
+      entityId: input.itemId,
+      occurredAt,
+      source: 'miuprep_portal_template_practice',
     },
   );
 }

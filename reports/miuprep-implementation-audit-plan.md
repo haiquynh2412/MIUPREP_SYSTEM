@@ -1609,3 +1609,48 @@ Residual risk:
 - Word/OLE formula recovery is not complete. A limited rich-extraction run produced only a partial one-source rich extract before timeout; that artifact was removed from the production path, so formula recovery remains a separate content-data task.
 - Non-SAT course-template actions are now captured as workflow telemetry only. Full non-SAT mastery still needs scored answer-submission events in the real practice engine.
 - Knowledge Graph update from real beta evidence remains intentionally pending until real learner data is available.
+
+### 2026-06-04 Batch 22 - Non-Math6 scored template practice
+
+Scope completed:
+
+- Left Math 6 formula/image/encoding recovery out of this batch by request; this batch does not depend on Math 6 rich extraction or Math 6 learner-facing expansion.
+- Added a reusable template-practice state builder for Math and English Core lesson templates.
+- Added a student-facing scored practice panel in the portal Practice tab.
+- `Open practice` from Math/English Courses now starts a real session built from guided, independent, mixed, transfer, and quick-check items in the selected lesson template.
+- Student answers now create `practice_attempt` learning events with `correct`, `score`, `maxScore`, `itemId`, `programId`, `domainId`, concept/skill ids, template id, stage id, and source surface.
+- Wrong template-practice answers add an Error Notebook item and increment the trap counter; correct answers award a small coin reward.
+- Added reusable root QA command `npm.cmd run qa:portal-template-practice`.
+
+Changed files:
+
+- `apps/miuprep-portal/src/App.tsx`
+- `apps/miuprep-portal/src/components/TemplatePracticeSessionPanel.tsx`
+- `apps/miuprep-portal/src/lib/studentProgress.ts`
+- `apps/miuprep-portal/src/lib/templatePractice.ts`
+- `scripts/qa-portal-template-practice.mjs`
+- `package.json`
+- `MIUPREP_IMPLEMENTATION_PLAN.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed:
+
+- `npm.cmd run qa:portal-template-practice`
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd run build -w miuprep-portal`
+
+Browser proof captured:
+
+- QA seeded an approved Math+IELTS student on `http://127.0.0.1:5181`.
+- QA clicked Math `Open practice`, answered the first template-practice question, then clicked English Core `Open practice` and answered the first template-practice question.
+- Event proof captured 2 `lesson_template_action` events and 2 `practice_attempt` events.
+- Math practice event proof: `source: miuprep_portal_template_practice`, `entityType: learning_item`, `programId: vn_math_6_9`, `domainId: mathematics`, `correct: true`, `score: 1`, `maxScore: 1`, and a Math lesson-template item id.
+- English practice event proof: `source: miuprep_portal_template_practice`, `entityType: learning_item`, `programId: ielts`, `domainId: english_core`, `correct: true`, `score: 1`, `maxScore: 1`, and an English Core lesson-template item id.
+- Browser QA reported 0 page errors and 0 console errors.
+
+Residual risk:
+
+- This closes the immediate non-SAT "button-only telemetry" gap for course template practice, but it is still a template-derived micro-practice engine. Full item-bank practice for IELTS/CAE/CPE and non-Math6 math content should use guarded `QuestionItem` catalogs in a later batch.
+- Knowledge Graph updates remain review-gated until real beta data is available.
+- Math 6 content recovery remains intentionally deferred to the next Math 6-focused session.

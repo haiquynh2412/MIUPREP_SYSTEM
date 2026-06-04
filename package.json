@@ -13,6 +13,7 @@
     "dev:ielts": "npm run dev -w @miuprep/desktop",
     "dev:cpe": "npm run dev -w @miuprep/cpe-desktop",
     "dev:sat": "npm run dev:vite -w sat-studio",
+    "qa:portal-template-practice": "node scripts/qa-portal-template-practice.mjs",
     "build": "node scripts/build-workspaces.cjs"
   },
   "devDependencies": {

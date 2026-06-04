@@ -12,6 +12,7 @@ import SystemSurfacePreview from './components/SystemSurfacePreview';
 import StudentTodaySprint from './components/StudentTodaySprint';
 import MathLessonTemplatePanel from './components/MathLessonTemplatePanel';
 import EnglishCoreLessonTemplatePanel from './components/EnglishCoreLessonTemplatePanel';
+import TemplatePracticeSessionPanel from './components/TemplatePracticeSessionPanel';
 import ErrorNotebookV2Panel from './components/ErrorNotebookV2Panel';
 import AdminInterventionQueue from './components/AdminInterventionQueue';
 import AdminContentRepairQueue from './components/AdminContentRepairQueue';
@@ -33,6 +34,7 @@ import {
   buildDailyLoopStepLearningEvent,
   buildErrorRetryLearningEvent,
   buildLessonTemplateActionLearningEvent,
+  buildTemplatePracticeAttemptLearningEvent,
   buildStudentWorkspaceTabs,
   countActiveErrorQuestions,
   getActiveErrorQuestions,
@@ -52,6 +54,15 @@ import {
   type LessonTemplateAction,
   type StudentWorkspaceTabId,
 } from './lib/studentProgress';
+import {
+  advanceTemplatePractice,
+  answerTemplatePracticeQuestion,
+  createTemplatePracticeState,
+  type TemplatePracticeChoiceKey,
+  type TemplatePracticeQuestion,
+  type TemplatePracticeState,
+  type TemplatePracticeTemplate,
+} from './lib/templatePractice';
 import {
   buildContentExamChangeSet,
   buildContentReviewChangeSetExport,
@@ -137,14 +148,7 @@ function PromptWithAssets({ text, className }: { text: string; className?: strin
   return <div className={className}>{nodes.length ? nodes : promptText}</div>;
 }
 
-type LessonTemplateActionTemplate = {
-  id: string;
-  title: string;
-  conceptIds?: string[];
-  skillIds?: string[];
-  estimatedMinutes?: number;
-  masteryTarget?: number;
-};
+type LessonTemplateActionTemplate = TemplatePracticeTemplate;
 
 const ENGLISH_PROGRAM_ORDER = ['ielts', 'cae', 'cpe', 'sat'] as const;
 
@@ -496,6 +500,7 @@ export default function App() {
   const [satEstimatedScore, setSatEstimatedScore] = useState<number>(1280);
   const [satTargetScore, setSatTargetScore] = useState<number>(1450);
   const [activePracticeState, setActivePracticeState] = useState<SatPracticeState | null>(null);
+  const [templatePracticeState, setTemplatePracticeState] = useState<TemplatePracticeState | null>(null);
 
   // Admin SAT Explorer States
   const [adminSatSubTab, setAdminSatSubTab] = useState<'explorer' | 'integrity' | 'calibration'>('explorer');
@@ -548,6 +553,7 @@ export default function App() {
   };
 
   const handleStartPractice = (domain: string, skill: string) => {
+    setTemplatePracticeState(null);
     const nextPracticeState = createSatPracticeState(loadedQuestions, domain, skill, selectedSatBank);
 
     if (!nextPracticeState) {
@@ -599,6 +605,23 @@ export default function App() {
     setActivePracticeState(nextState);
   };
 
+  const startLessonTemplatePractice = (
+    template: LessonTemplateActionTemplate,
+    domainId: 'mathematics' | 'english_core',
+    programId: string,
+    sourceSurface: 'math_lesson_template_panel' | 'english_core_lesson_template_panel',
+  ) => {
+    const nextState = createTemplatePracticeState({ template, domainId, programId, sourceSurface });
+    if (!nextState) {
+      showNotif("Template nay chua co practice item de cham diem.", "info");
+      return;
+    }
+    setActivePracticeState(null);
+    setTemplatePracticeState(nextState);
+    setShowErrorNotebook(false);
+    showNotif(`Bat dau scored practice: ${nextState.questions.length} cau tu ${template.title}.`, "success");
+  };
+
   const handleNextSatQuestion = () => {
     if (!activePracticeState) return;
     const { completed, finalScore, totalQuestions, nextState } = advanceSatPractice(activePracticeState);
@@ -609,6 +632,92 @@ export default function App() {
 
     setActivePracticeState(nextState);
   };
+
+  const handleAnswerTemplatePractice = (choice: TemplatePracticeChoiceKey) => {
+    if (!templatePracticeState) return;
+    const { currentQuestion, isCorrect, nextState } = answerTemplatePracticeQuestion(templatePracticeState, choice);
+    if (currentUser?.role === 'student') {
+      const selectedMove = currentQuestion.choices.find((item) => item.key === choice)?.text || '';
+      void saveStudentLearningEvent(buildTemplatePracticeAttemptLearningEvent({
+        username: currentUser.username,
+        programId: templatePracticeState.programId,
+        domainId: templatePracticeState.domainId,
+        itemId: currentQuestion.id,
+        itemPrompt: currentQuestion.prompt,
+        templateId: templatePracticeState.templateId,
+        templateTitle: templatePracticeState.templateTitle,
+        stageId: currentQuestion.stageId,
+        stageTitle: currentQuestion.stageTitle,
+        conceptIds: templatePracticeState.conceptIds,
+        skillIds: templatePracticeState.skillIds,
+        selectedAnswer: choice,
+        selectedMove,
+        correctAnswer: currentQuestion.correctAnswer,
+        correctMove: currentQuestion.expectedMove,
+        correct: isCorrect,
+        difficulty: currentQuestion.difficulty,
+        questionIndex: templatePracticeState.currentIndex,
+        sourceSurface: templatePracticeState.sourceSurface,
+      }));
+    }
+
+    if (isCorrect) {
+      setFishCoins(prev => {
+        const nextCoins = prev + 5;
+        if (currentUser?.username) {
+          persistCoinBalance(localStorage, currentUser.username, nextCoins);
+        }
+        return nextCoins;
+      });
+      showNotif("Dung learning move. Ban nhan +5 Xu Ca Hoi.", "success");
+    } else {
+      const newErr = createTemplatePracticeErrorQuestion(currentQuestion, templatePracticeState);
+      setErrorQuestions(prev => {
+        if (prev.some(q => q.id === newErr.id || q.text === newErr.text)) return prev;
+        return [newErr, ...prev];
+      });
+      const nextTraps = mouseTrapsCount + 1;
+      setMouseTrapsCount(nextTraps);
+      if (currentUser?.username) {
+        persistTrapCount(localStorage, currentUser.username, nextTraps);
+      }
+      showNotif("Chua dung learning move. Minh da them vao so loi de review.", "error");
+    }
+
+    setTemplatePracticeState(nextState);
+  };
+
+  const handleNextTemplatePractice = () => {
+    if (!templatePracticeState) return;
+    const { completed, finalScore, totalQuestions, nextState } = advanceTemplatePractice(templatePracticeState);
+    if (completed) {
+      showNotif(`Hoan thanh scored practice: ${finalScore}/${totalQuestions} cau dung.`, "success");
+    }
+    setTemplatePracticeState(nextState);
+  };
+
+  const createTemplatePracticeErrorQuestion = (
+    question: TemplatePracticeQuestion,
+    state: TemplatePracticeState,
+  ): ErrorNotebookQuestion => ({
+    id: `err-template-${state.templateId}-${state.currentIndex}-${Date.now()}`,
+    text: `${state.templateTitle}: ${question.prompt}`,
+    stage: 1,
+    answer: question.correctAnswer,
+    options: question.choices.map((choice) => choice.key),
+    answerExpl: `Expected move: ${question.expectedMove}`,
+    domainId: state.domainId,
+    programId: state.programId,
+    conceptIds: state.conceptIds,
+    skillIds: state.skillIds,
+    errorType: state.domainId === 'english_core' ? 'knowledge' : 'calculation',
+    rootCause: 'Template practice move was selected incorrectly.',
+    missedStep: question.expectedMove,
+    repairLessonId: state.templateId,
+    repairLessonTitle: state.templateTitle,
+    retryAttempts: 0,
+    correctRetryCount: 0,
+  });
 
 
   // New Admin Course & Exam Handlers
@@ -1435,13 +1544,17 @@ export default function App() {
       action,
       sourceSurface: 'math_lesson_template_panel',
     }));
+    if (action === 'open_practice') {
+      startLessonTemplatePractice(template, 'mathematics', 'vn_math_6_9', 'math_lesson_template_panel');
+    }
   };
 
   const handleEnglishLessonTemplateAction = (template: LessonTemplateActionTemplate, action: LessonTemplateAction) => {
     if (!currentUser || currentUser.role !== 'student') return;
+    const programId = resolvePrimaryEnglishProgramId(currentUser);
     void saveStudentLearningEvent(buildLessonTemplateActionLearningEvent({
       username: currentUser.username,
-      programId: resolvePrimaryEnglishProgramId(currentUser),
+      programId,
       domainId: 'english_core',
       templateId: template.id,
       templateTitle: template.title,
@@ -1452,6 +1565,9 @@ export default function App() {
       action,
       sourceSurface: 'english_core_lesson_template_panel',
     }));
+    if (action === 'open_practice') {
+      startLessonTemplatePractice(template, 'english_core', programId, 'english_core_lesson_template_panel');
+    }
   };
 
   // ==========================================
@@ -2081,6 +2197,7 @@ export default function App() {
                   onChange={e => {
                     setSelectedSatBank(e.target.value);
                     setActivePracticeState(null);
+                    setTemplatePracticeState(null);
                   }}
                   className="bg-slate-955 border border-slate-850 text-slate-200 rounded-xl px-4 py-2.5 text-xs font-bold outline-none cursor-pointer focus:border-rose-500 min-w-[240px]"
                 >
@@ -2496,8 +2613,17 @@ export default function App() {
             />
             )}
 
+            {studentWorkspaceTab === 'practice' && templatePracticeState && (
+              <TemplatePracticeSessionPanel
+                state={templatePracticeState}
+                onAnswer={handleAnswerTemplatePractice}
+                onNext={handleNextTemplatePractice}
+                onClose={() => setTemplatePracticeState(null)}
+              />
+            )}
+
             {/* 1.3. LEITNER ERROR NOTEBOOK (Collapsible) */}
-            {studentWorkspaceTab === 'practice' && !showErrorNotebook && (
+            {studentWorkspaceTab === 'practice' && !templatePracticeState && !showErrorNotebook && (
               <section className="bg-slate-900/60 border border-rose-500/20 rounded-3xl p-6 max-w-4xl mx-auto shadow-xl text-left">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
@@ -2516,7 +2642,7 @@ export default function App() {
               </section>
             )}
 
-            {studentWorkspaceTab === 'practice' && showErrorNotebook && (
+            {studentWorkspaceTab === 'practice' && !templatePracticeState && showErrorNotebook && (
               <ErrorNotebookV2Panel
                 errorQuestions={errorQuestions}
                 onClose={() => setShowErrorNotebook(false)}
@@ -2528,7 +2654,7 @@ export default function App() {
               />
             )}
 
-            {studentWorkspaceTab === 'practice' && showErrorNotebook && Boolean(localStorage.getItem('miuprep_show_legacy_error_notebook')) && (
+            {studentWorkspaceTab === 'practice' && !templatePracticeState && showErrorNotebook && Boolean(localStorage.getItem('miuprep_show_legacy_error_notebook')) && (
               <section className="bg-slate-900/60 border-2 border-rose-500/30 rounded-3xl p-6 max-w-4xl mx-auto shadow-2xl relative overflow-hidden bg-gradient-to-r from-slate-900 to-rose-950/20 text-left transition-all duration-300">
                 <div className="absolute top-0 left-0 w-full h-[3px] bg-rose-500" />
                 <div className="flex justify-between items-center mb-4">
