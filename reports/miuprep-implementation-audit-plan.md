@@ -1325,3 +1325,48 @@ Residual risk:
 
 - Admin/beta live state still depends on available scored attempt events. Workflow-only events remain telemetry and do not become mastery attempts.
 - Authenticated browser visual QA remains outstanding because the in-app Browser login form still hits the virtual-clipboard input limitation.
+
+### 2026-06-04 Batch 17 - Learner snapshot runtime QA fix
+
+Scope completed:
+
+- Fixed a runtime crash in the shared learner snapshot fallback by creating the seed Knowledge Graph inside `buildLearnerSnapshot`.
+- Adjusted `buildLearnerSnapshotFromLiveEvents` so synthetic fallback is built only when no valid live attempts are available.
+- Authenticated Playwright QA now verifies student, parent, and admin live-evidence surfaces without relying on the in-app Browser login form.
+
+Changed files:
+
+- `apps/miuprep-portal/src/components/UnifiedLearnerDashboard.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Authenticated browser QA:
+
+- Started portal dev server at `http://127.0.0.1:5182`.
+- Seeded three authenticated QA users and four live learning events in browser localStorage through Playwright.
+- Verified student Overview: `Daily Learning Loop V2` and `Live events`.
+- Verified student Courses: `LessonTemplate core` and `English Core`.
+- Verified parent view: `Parent Next Action` and `Parent Learning Overview`.
+- Verified admin Analytics: `Intervention Queue`, `Teacher queue`, `Beta Readiness`, and `Learning event capture`.
+- Verified no page/console errors and no horizontal overflow on student, parent, or admin views.
+- Stopped the dev server after QA.
+
+Proof captured:
+
+- Playwright reported `ok: true`, 10 passed surface checks, 4 seeded learning events, 0 errors.
+- The browser QA found and then verified the fix for the `graph is not defined` runtime error that lint/build did not catch.
+
+Residual risk:
+
+- The only open Phase 11 item remains Knowledge Graph update from real beta data. It is intentionally not implemented until real beta evidence is collected and reviewed.

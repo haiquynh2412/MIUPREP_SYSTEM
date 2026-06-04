@@ -200,6 +200,7 @@ export function buildLearnerSnapshot(
   fishCoins: number,
   mouseTrapsCount: number,
 ): LearnerSnapshot {
+  const graph = createSeedKnowledgeGraph();
   const targetProgramIds = tracks.map((track) => TRACK_TO_PROGRAM[track.id]);
   let state = emptyStudentModel(currentUser.id || currentUser.username, targetProgramIds);
   const correctnessBias = clamp(0.52 + fishCoins / 900 - mouseTrapsCount * 0.035, 0.35, 0.92);
@@ -239,13 +240,12 @@ export function buildLearnerSnapshotFromLiveEvents(
   fishCoins: number,
   mouseTrapsCount: number,
 ): LearnerSnapshot {
-  const fallback = buildLearnerSnapshot(currentUser, tracks, fishCoins, mouseTrapsCount);
   const targetProgramIds = tracks.map((track) => TRACK_TO_PROGRAM[track.id]);
   const canonicalLearnerId = currentUser.username || currentUser.id;
   const learnerEvents = learningEvents
     .filter((event) => eventBelongsToUser(event, currentUser))
     .map((event) => ({ ...event, learnerId: canonicalLearnerId }));
-  if (!learnerEvents.length) return fallback;
+  if (!learnerEvents.length) return buildLearnerSnapshot(currentUser, tracks, fishCoins, mouseTrapsCount);
 
   const report = buildStudentModelFromLearningEvents(learnerEvents, {
     learnerId: canonicalLearnerId,
@@ -253,7 +253,7 @@ export function buildLearnerSnapshotFromLiveEvents(
   });
   return report.acceptedAttempts > 0
     ? buildLearnerSnapshotFromState(report.state, tracks, targetProgramIds, 'live')
-    : fallback;
+    : buildLearnerSnapshot(currentUser, tracks, fishCoins, mouseTrapsCount);
 }
 
 function buildLearnerSnapshotFromState(
