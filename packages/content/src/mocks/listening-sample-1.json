@@ -1,0 +1,740 @@
+{
+  "id": "listening-sample-1",
+  "title": "Library Membership Application",
+  "type": "general",
+  "skill": "listening",
+  "sections": [
+    {
+      "id": "l-sec-1",
+      "title": "Library Application Form",
+      "instructions": "Complete the form below. Choose ONE WORD AND/OR A NUMBER for each answer.",
+      "audioPath": "/listening-sample-1.wav",
+      "audioChecksum": "4709f6f75f178eedeb66e247140630e65e56635d104665393447800113a03c2d",
+      "transcript": "<div class=\"space-y-3 text-slate-800 text-sm leading-relaxed\"><p><b>Staff:</b> Good morning! Welcome to the City Library. How can I help you today?</p><p><b>Applicant:</b> Good morning. I would like to apply for a library membership, please.</p><p><b>Staff:</b> Certainly. Let me get the application form. First, could you tell me your first name?</p><p><b>Applicant:</b> Yes, my <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">first name is John</mark>, spelled J-O-H-N.</p><p><b>Staff:</b> Great. And what is your surname?</p><p><b>Applicant:</b> And my <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">last name is Smith</mark>, S-M-I-T-H.</p><p><b>Staff:</b> Perfect. We have three types of membership: Individual at thirty dollars a year, Family at fifty dollars, and Student at fifteen dollars. Which one would you prefer?</p><p><b>Applicant:</b> Since I'm only using it for myself, I will <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">go with the Individual Membership</mark>, which is thirty dollars a year.</p><p><b>Staff:</b> Excellent. Let me complete the application for you...</p></div>",
+      "questionGroups": [
+        {
+          "id": "lg-1",
+          "instruction": "Complete the form detail fields.",
+          "questions": [
+            {
+              "id": "q-l1",
+              "type": "gap_fill",
+              "instruction": "First Name: ______",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "john"
+                ]
+              ],
+              "correctAnswer": "John",
+              "explanation": "Khi nhân viên thư viện hỏi tên, ứng viên trả lời rõ ràng: 'my first name is John, spelled J-O-H-N'. Do đó đáp án là John.",
+              "answerLocation": "first name is John"
+            },
+            {
+              "id": "q-l2",
+              "type": "gap_fill",
+              "instruction": "Surname: ______",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "smith"
+                ]
+              ],
+              "correctAnswer": "Smith",
+              "explanation": "Ứng viên đánh vần họ của mình là Smith: 'my last name is Smith, S-M-I-T-H'. Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "last name is Smith"
+            }
+          ]
+        },
+        {
+          "id": "lg-2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-l3",
+              "type": "multiple_choice",
+              "instruction": "What type of membership does the applicant select?",
+              "options": [
+                "A. Individual ($30/year)",
+                "B. Family ($50/year)",
+                "C. Student ($15/year)"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Ứng viên chọn đăng ký gói cá nhân (Individual Membership) giá 30 đô la/năm: 'I will go with the Individual Membership, which is thirty dollars a year.' Nên phương án A là đáp án đúng.",
+              "answerLocation": "go with the Individual Membership"
+            }
+          ]
+        },
+        {
+          "id": "lg-3",
+          "instruction": "Label the library floor plan. Select the correct room label from the options list.",
+          "questions": [
+            {
+              "id": "q-l4",
+              "type": "map_labeling",
+              "instruction": "Location A (Main Entrance Hallway)",
+              "options": [
+                "reception desk",
+                "multimedia center",
+                "children's corner",
+                "silent study lounge"
+              ],
+              "acceptedAnswers": [
+                [
+                  "reception desk"
+                ]
+              ],
+              "correctAnswer": "reception desk",
+              "explanation": "Ngay tại lối vào thư viện là quầy lễ tân đón tiếp độc giả: 'Welcome to the City Library. How can I help you today?' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Welcome to the City Library"
+            },
+            {
+              "id": "q-l5",
+              "type": "map_labeling",
+              "instruction": "Location B (Quiet Corner)",
+              "options": [
+                "reception desk",
+                "multimedia center",
+                "children's corner",
+                "silent study lounge"
+              ],
+              "acceptedAnswers": [
+                [
+                  "silent study lounge"
+                ]
+              ],
+              "correctAnswer": "silent study lounge",
+              "explanation": "Nơi đọc sách cá nhân yên tĩnh phục vụ độc giả cá nhân đăng ký gói Individual. Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Individual at thirty dollars a year"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l-sec-2",
+      "title": "New Employee Orientation",
+      "instructions": "Answer the questions below based on Part 2 of the listening recording.",
+      "audioPath": "/listening-sample-2.wav",
+      "audioChecksum": "1f620f35c8e08719cb36bada09a767aea099260f7cecebad03898ebebd4785a7",
+      "transcript": "<div class=\"space-y-3 text-slate-800 text-sm leading-relaxed\"><p><b>Manager:</b> Good morning everyone and welcome to your orientation week here at GlobalTech. I want to walk you through a few essential house rules and admin requirements.</p><p>First, our daily training sessions will <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">kick off at exactly 9:30</mark> AM, so please arrive by 9:20 to settle in.</p><p>Second, regarding paperwork: your signed employment <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">contract must be submitted</mark> to HR by Friday afternoon at the latest.</p><p>Third, parking: the main employee parking lot is <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">located in Sector D</mark> of the building complex. You will need a parking permit which you can get today.</p><p>To enter the building after today, you must collect your official security <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">badge from the main reception</mark> desk in the lobby.</p><p>For lunch, you are welcome to visit our great <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">onsite cafeteria</mark>, which offers hot meals daily at a discount.</p><p>Let's talk about dress code: regular weekdays require a <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">smart casual</mark> standard, except for Fridays which are casual.</p><p>Performance reviews are carried out <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">semi-annually</mark> by your department supervisor.</p><p>If you experience any IT access issues today, please call the IT <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">helpdesk team</mark> at extension 404.</p><p>Regarding mobile phones: you are permitted to make personal calls <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">only during official breaks</mark>.</p><p>Finally, for safety: evacuation maps are posted <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">near all elevators</mark> in the building. Familiarize yourself with them today.</p></div>",
+      "questionGroups": [
+        {
+          "id": "lg-4",
+          "instruction": "Complete the orientation notes. Choose ONE WORD AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "id": "q-l6",
+              "type": "gap_fill",
+              "instruction": "Daily training sessions will start at ______ AM.",
+              "blankIndex": 6,
+              "acceptedAnswers": [
+                [
+                  "9:30"
+                ]
+              ],
+              "correctAnswer": "9:30",
+              "explanation": "Quản lý thông báo: 'daily training sessions will kick off at exactly 9:30 AM.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "kick off at exactly 9:30"
+            },
+            {
+              "id": "q-l7",
+              "type": "gap_fill",
+              "instruction": "New employees are required to submit their signed ______ to HR by Friday.",
+              "blankIndex": 7,
+              "acceptedAnswers": [
+                [
+                  "contract"
+                ]
+              ],
+              "correctAnswer": "contract",
+              "explanation": "Quản lý nhắc nhở về hợp đồng lao động: 'your signed employment contract must be submitted...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "contract must be submitted"
+            },
+            {
+              "id": "q-l8",
+              "type": "gap_fill",
+              "instruction": "The designated employee car park is situated in Sector ______.",
+              "blankIndex": 8,
+              "acceptedAnswers": [
+                [
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Khu vực gửi xe nhân viên nằm ở Sector D: 'parking lot is located in Sector D...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "located in Sector D"
+            },
+            {
+              "id": "q-l9",
+              "type": "gap_fill",
+              "instruction": "New hires must collect their security badge from the main ______ desk.",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "reception"
+                ]
+              ],
+              "correctAnswer": "reception",
+              "explanation": "Nhân viên nhận thẻ tại quầy lễ tân: 'collect your official security badge from the main reception...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "badge from the main reception"
+            },
+            {
+              "id": "q-l10",
+              "type": "gap_fill",
+              "instruction": "Discounted hot meals are served daily in the onsite ______.",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "cafeteria"
+                ]
+              ],
+              "correctAnswer": "cafeteria",
+              "explanation": "Nhà ăn của công ty: 'visit our great onsite cafeteria, which offers...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "onsite cafeteria"
+            }
+          ]
+        },
+        {
+          "id": "lg-5",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-l11",
+              "type": "multiple_choice",
+              "instruction": "What is the default weekday dress code at GlobalTech?",
+              "options": [
+                "A. Smart casual",
+                "B. Formal suits and ties",
+                "C. Casual clothing"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đoạn ghi âm nêu rõ trang phục ngày thường: 'regular weekdays require a smart casual standard...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "smart casual"
+            },
+            {
+              "id": "q-l12",
+              "type": "multiple_choice",
+              "instruction": "How frequently are employee performance reviews conducted?",
+              "options": [
+                "A. Monthly",
+                "B. Annually",
+                "C. Semi-annually"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đánh giá hiệu suất định kỳ 6 tháng một lần: 'reviews are carried out semi-annually...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "semi-annually"
+            },
+            {
+              "id": "q-l13",
+              "type": "multiple_choice",
+              "instruction": "Who should be contacted in case of IT configuration issues?",
+              "options": [
+                "A. Office administrative secretary",
+                "B. Helpdesk team",
+                "C. Direct team leader"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Liên hệ hỗ trợ kỹ thuật: 'please call the IT helpdesk team at extension 404.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "helpdesk team"
+            },
+            {
+              "id": "q-l14",
+              "type": "multiple_choice",
+              "instruction": "What is the company policy regarding personal phone calls?",
+              "options": [
+                "A. Permitted only during official breaks",
+                "B. Completely banned inside the building",
+                "C. Allowed freely during active work hours"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Quy định gọi điện thoại cá nhân: 'permitted to make personal calls only during official breaks.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "only during official breaks"
+            },
+            {
+              "id": "q-l15",
+              "type": "multiple_choice",
+              "instruction": "Where are the official building safety evacuation maps displayed?",
+              "options": [
+                "A. Inside the cafeteria hall",
+                "B. Near all elevators",
+                "C. Behind the main entrance doors"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Sơ đồ thoát hiểm đặt cạnh thang máy: 'evacuation maps are posted near all elevators...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "near all elevators"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l-sec-3",
+      "title": "Academic Climate Change Seminar",
+      "instructions": "Answer the questions below based on Part 3 of the listening recording.",
+      "audioPath": "/listening-sample-3.wav",
+      "audioChecksum": "faf36519ab367c6448e353ab34d6ed9a90011fa9b881beb9bd7cf05bca47895a",
+      "transcript": "<div class=\"space-y-3 text-slate-800 text-sm leading-relaxed\"><p><b>Professor:</b> Good afternoon. Let's begin our seminar on modern climate issues. Today, we're reviewing Dr. Green's latest research paper.</p><p><b>Student A:</b> Yes, professor. Dr. Green's study focuses primarily on the <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">melting rate of polar ice caps</mark>.</p><p><b>Professor:</b> Indeed. And which area did he find was warming most dramatically?</p><p><b>Student A:</b> According to the charts, the <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">Arctic circle</mark> is warming at more than twice the global average.</p><p><b>Professor:</b> Correct. We also want to examine greenhouse gas footprints. While carbon dioxide is widely discussed, today we're analyzing <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">methane emissions</mark> in detail.</p><p><b>Student B:</b> Dr. Green's model suggests that emissions originating from <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">agricultural soils</mark> have been severely underestimated in past carbon balance models.</p><p><b>Professor:</b> Excellent point. Now, what policy solutions did the student panel advocate during the climate congress?</p><p><b>Student B:</b> The majority strongly favored <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">implementing carbon taxation</mark> as the single most effective tool to curb industrial output.</p><p><b>Professor:</b> Interesting. Some countries are leading the way. For instance, <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">Denmark has successfully reduced</mark> its industrial emissions by a full twenty percent over the past decade.</p><p><b>Student A:</b> However, transitioning to renewables is hard. A key limitation of solar energy is the <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">low storage capacity</mark> of modern batteries during peak winter nights.</p><p><b>Professor:</b> Exactly. In addition, ocean warming has dramatic effects. Increased acidity is actively <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">weakening the calcium shells</mark> of critical marine shellfish species.</p><p>We must remember that global oceans absorb a staggering <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">ninety percent of excess heat</mark> generated by human industrial activities.</p><p>For your seminar essay due next week, please research the concrete ecological benefits of <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">urban reforestation</mark> programs.</p></div>",
+      "questionGroups": [
+        {
+          "id": "lg-6",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-l16",
+              "type": "multiple_choice",
+              "instruction": "What is the primary subject of Dr. Green's newly published research paper?",
+              "options": [
+                "A. The melting rate of polar ice caps",
+                "B. Solar panel efficiency in rainy regions",
+                "C. Deforestation rates in the Amazon basin"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đoạn ghi âm cho biết: 'Dr. Green's study focuses primarily on the melting rate of polar ice caps.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "melting rate of polar ice caps"
+            },
+            {
+              "id": "q-l17",
+              "type": "multiple_choice",
+              "instruction": "Which geographical region is experiencing the most rapid warming trend?",
+              "options": [
+                "A. The Sahara desert",
+                "B. Amazonian rainforests",
+                "C. The Arctic circle"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Vùng nóng lên nhanh nhất là vòng Cực Bắc: 'the Arctic circle is warming at more than twice the global average.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Arctic circle"
+            },
+            {
+              "id": "q-l18",
+              "type": "multiple_choice",
+              "instruction": "Which greenhouse gas is the seminar reviewing in detail today?",
+              "options": [
+                "A. Carbon dioxide",
+                "B. Methane",
+                "C. Nitrous oxide"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Khí nhà kính được phân tích hôm nay: 'today we're analyzing methane emissions in detail.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "methane emissions"
+            },
+            {
+              "id": "q-l19",
+              "type": "multiple_choice",
+              "instruction": "What source of emissions did Dr. Green's model find was previously underestimated?",
+              "options": [
+                "A. Agricultural soils",
+                "B. Deep sea volcanoes",
+                "C. Commercial aircraft"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đất nông nghiệp bị đánh giá thấp lượng phát thải: 'emissions originating from agricultural soils have been severely underestimated...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "agricultural soils"
+            },
+            {
+              "id": "q-l20",
+              "type": "multiple_choice",
+              "instruction": "What policy tool did the student panel advocate to curb emissions?",
+              "options": [
+                "A. Voluntarily planting garden trees",
+                "B. Banning all heavy industrial manufacturing",
+                "C. Implementing carbon taxation"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Giải pháp thuế carbon được đa số sinh viên ủng hộ: 'strongly favored implementing carbon taxation...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "implementing carbon taxation"
+            },
+            {
+              "id": "q-l21",
+              "type": "multiple_choice",
+              "instruction": "Which European nation has achieved a 20% industrial emissions reduction?",
+              "options": [
+                "A. Germany",
+                "B. Denmark",
+                "C. Norway"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đan Mạch giảm 20% khí thải: 'Denmark has successfully reduced its industrial emissions by a full twenty percent...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Denmark has successfully reduced"
+            },
+            {
+              "id": "q-l22",
+              "type": "multiple_choice",
+              "instruction": "What is identified as a major challenge for solar power grids in winter?",
+              "options": [
+                "A. Low storage capacity of modern batteries",
+                "B. Extreme damage caused by frost and snow",
+                "C. High costs of silicon panels"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Hạn chế của pin mặt trời vào mùa đông: 'low storage capacity of modern batteries during peak winter nights.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "low storage capacity"
+            },
+            {
+              "id": "q-l23",
+              "type": "multiple_choice",
+              "instruction": "How does increasing ocean acidity impact shellfish?",
+              "options": [
+                "A. It forces them to migrate deeper",
+                "B. It increases their breeding rate",
+                "C. It weakens their calcium shells"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Axit hóa đại dương làm yếu vỏ: 'increased acidity is actively weakening the calcium shells...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "weakening the calcium shells"
+            },
+            {
+              "id": "q-l24",
+              "type": "multiple_choice",
+              "instruction": "What proportion of excess human industrial heat is absorbed by global oceans?",
+              "options": [
+                "A. 50%",
+                "B. 90%",
+                "C. 75%"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đại dương hấp thụ 90% nhiệt thừa: 'absorb a staggering ninety percent of excess heat...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "ninety percent of excess heat"
+            },
+            {
+              "id": "q-l25",
+              "type": "multiple_choice",
+              "instruction": "What is the mandatory research topic for next week's seminar essay?",
+              "options": [
+                "A. Urban reforestation benefits",
+                "B. Wind turbine engineering physics",
+                "C. Tidal energy grid deployment"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chủ đề viết bài luận tiếp theo: 'research the concrete ecological benefits of urban reforestation programs.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "urban reforestation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l-sec-4",
+      "title": "Monarch Butterfly Migration Lecture",
+      "instructions": "Answer the questions below based on Part 4 of the listening recording.",
+      "audioPath": "/listening-sample-4.wav",
+      "audioChecksum": "f71f21dd1667b5f50a0e205f7dd15cc8a9ce386e5c01cdfa84678c1d4fc61276",
+      "transcript": "<div class=\"space-y-3 text-slate-800 text-sm leading-relaxed\"><p><b>Lecturer:</b> Welcome back everyone. Today we are exploring one of nature's most incredible wonders: the epic migration of the Monarch butterfly. This tiny insect, weighing less than a gram, undertakes a journey spanning the entire North American <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">continent</mark>.</p><p>As autumn approaches, millions of monarchs fly south to escape freezing winter <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">temperatures</mark>. Their destination is a specific forest region in the high mountains of central <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">Mexico</mark>.</p><p>Once they arrive, the butterflies cluster tightly together on the trunks and branches of oyamel <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">trees</mark>. By packing together so densely, they preserve vital body <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">heat</mark> and survive the cold winter nights.</p><p>When spring arrives, they wake up and begin their long return journey north towards the US and <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">Canada</mark>.</p><p>Along the way, the female butterflies must search for a specific plant, the <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">milkweed</mark>, which is the only plant they will lay their eggs on.</p><p>This is crucial because milkweed leaves contain mild toxins that make the caterpillars highly <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">poisonous</mark> to birds and other predators. The distinctive orange and black warning <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">colors</mark> of the monarch tell predators to stay away.</p><p>Interestingly, no single butterfly lives to complete the entire round trip. The journey requires up to four generations. This indicates that their path is determined entirely by genetic <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">programming</mark>.</p><p>They navigate across thousands of miles using an internal solar compass combined with the Earth's magnetic <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">fields</mark>.</p><p>Tragically, monarch numbers have plummeted. A major factor is habitat <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">loss</mark> caused by expanding urban developments and logging.</p><p>Furthermore, widespread herbicide use on farms has wiped out vast amounts of wild <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">milkweed</mark> plants.</p><p>To combat this, conservationists are asking communities to plant milkweed gardens to create supportive local <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">habitats</mark>.</p><p>Finally, scientists track this migration by attaching extremely light, small sticky paper <mark class=\"bg-emerald-100 text-emerald-900 font-medium px-1 rounded\">tags</mark> to the wings of individual butterflies.</p></div>",
+      "questionGroups": [
+        {
+          "id": "lg-7",
+          "instruction": "Complete the summary notes below. Choose ONE WORD ONLY from the lecture for each answer.",
+          "questions": [
+            {
+              "id": "q-l26",
+              "type": "gap_fill",
+              "instruction": "The Monarch migration covers thousands of miles across the North American ______.",
+              "blankIndex": 26,
+              "acceptedAnswers": [
+                [
+                  "continent"
+                ]
+              ],
+              "correctAnswer": "continent",
+              "explanation": "Giảng viên giới thiệu hành trình xuyên lục địa: 'journey spanning the entire North American continent.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "continent"
+            },
+            {
+              "id": "q-l27",
+              "type": "gap_fill",
+              "instruction": "Butterflies fly south during autumn to escape freezing winter ______.",
+              "blankIndex": 27,
+              "acceptedAnswers": [
+                [
+                  "temperatures"
+                ]
+              ],
+              "correctAnswer": "temperatures",
+              "explanation": "Tránh nhiệt độ đóng băng: 'fly south to escape freezing winter temperatures.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "temperatures"
+            },
+            {
+              "id": "q-l28",
+              "type": "gap_fill",
+              "instruction": "They spend the cold season in high mountain forests located in central ______.",
+              "blankIndex": 28,
+              "acceptedAnswers": [
+                [
+                  "mexico"
+                ]
+              ],
+              "correctAnswer": "Mexico",
+              "explanation": "Điểm đến tránh rét là miền trung Mexico: 'specific forest region in the high mountains of central Mexico.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Their destination is a specific forest region in the high mountains of central Mexico ."
+            },
+            {
+              "id": "q-l29",
+              "type": "gap_fill",
+              "instruction": "The insects form massive groups on the trunks and branches of oyamel ______.",
+              "blankIndex": 29,
+              "acceptedAnswers": [
+                [
+                  "trees"
+                ]
+              ],
+              "correctAnswer": "trees",
+              "explanation": "Bướm bám đầy trên cây oyamel: 'cluster tightly together on the trunks and branches of oyamel trees.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Once they arrive, the butterflies cluster tightly together on the trunks and branches of oyamel trees ."
+            },
+            {
+              "id": "q-l30",
+              "type": "gap_fill",
+              "instruction": "This clustering behavior allows the monarchs to preserve vital body ______.",
+              "blankIndex": 30,
+              "acceptedAnswers": [
+                [
+                  "heat"
+                ]
+              ],
+              "correctAnswer": "heat",
+              "explanation": "Hành vi bám đàn giúp giữ nhiệt: 'preserve vital body heat and survive...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "By packing together so densely, they preserve vital body heat and survive the cold winter nights."
+            },
+            {
+              "id": "q-l31",
+              "type": "gap_fill",
+              "instruction": "In spring, they return northward towards the United States and ______.",
+              "blankIndex": 31,
+              "acceptedAnswers": [
+                [
+                  "canada"
+                ]
+              ],
+              "correctAnswer": "Canada",
+              "explanation": "Bướm bay về phía bắc tới Canada: 'begin their long return journey north towards the US and Canada.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "When spring arrives, they wake up and begin their long return journey north towards the US and Canada ."
+            },
+            {
+              "id": "q-l32",
+              "type": "gap_fill",
+              "instruction": "Eggs are strictly laid only on the leaves of the ______ plant.",
+              "blankIndex": 32,
+              "acceptedAnswers": [
+                [
+                  "milkweed"
+                ]
+              ],
+              "correctAnswer": "milkweed",
+              "explanation": "Trứng được đẻ duy nhất trên cây bông tai (milkweed): 'search for a specific plant, the milkweed...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "milkweed"
+            },
+            {
+              "id": "q-l33",
+              "type": "gap_fill",
+              "instruction": "Milkweed toxins make the young caterpillars highly ______ to birds.",
+              "blankIndex": 33,
+              "acceptedAnswers": [
+                [
+                  "poisonous"
+                ]
+              ],
+              "correctAnswer": "poisonous",
+              "explanation": "Sâu bướm tích độc tố khiến chúng độc hại với chim: 'toxins that make the caterpillars highly poisonous to birds...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "poisonous"
+            },
+            {
+              "id": "q-l34",
+              "type": "gap_fill",
+              "instruction": "Predators are deterred by the orange and black warning ______ on the wings.",
+              "blankIndex": 34,
+              "acceptedAnswers": [
+                [
+                  "colors"
+                ]
+              ],
+              "correctAnswer": "colors",
+              "explanation": "Màu sắc cánh bướm cảnh báo kẻ thù: 'distinctive orange and black warning colors...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "The distinctive orange and black warning colors of the monarch tell predators to stay away."
+            },
+            {
+              "id": "q-l35",
+              "type": "gap_fill",
+              "instruction": "Because no single butterfly survives the full trip, the journey is driven by genetic ______.",
+              "blankIndex": 35,
+              "acceptedAnswers": [
+                [
+                  "programming"
+                ]
+              ],
+              "correctAnswer": "programming",
+              "explanation": "Hành trình định đoạt bằng lập trình di truyền: 'determined entirely by genetic programming.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "programming"
+            },
+            {
+              "id": "q-l36",
+              "type": "gap_fill",
+              "instruction": "Navigation is guided by an internal sun compass and Earth's magnetic ______.",
+              "blankIndex": 36,
+              "acceptedAnswers": [
+                [
+                  "fields"
+                ]
+              ],
+              "correctAnswer": "fields",
+              "explanation": "Điều hướng nhờ từ trường trái đất: 'combined with the Earth's magnetic fields.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "They navigate across thousands of miles using an internal solar compass combined with the Earth's magnetic fields ."
+            },
+            {
+              "id": "q-l37",
+              "type": "gap_fill",
+              "instruction": "Urban expansions and logging have caused a dramatic habitat ______.",
+              "blankIndex": 37,
+              "acceptedAnswers": [
+                [
+                  "loss"
+                ]
+              ],
+              "correctAnswer": "loss",
+              "explanation": "Suy giảm số lượng do mất môi trường sống: 'habitat loss caused by expanding...'",
+              "answerLocation": "A major factor is habitat loss caused by expanding urban developments and logging."
+            },
+            {
+              "id": "q-l38",
+              "type": "gap_fill",
+              "instruction": "Agricultural chemical use has unfortunately destroyed wild ______ plants.",
+              "blankIndex": 38,
+              "acceptedAnswers": [
+                [
+                  "milkweed"
+                ]
+              ],
+              "correctAnswer": "milkweed",
+              "explanation": "Thuốc diệt cỏ quét sạch cây bông tai: 'widespread herbicide use... has wiped out vast amounts of wild milkweed...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "milkweed"
+            },
+            {
+              "id": "q-l39",
+              "type": "gap_fill",
+              "instruction": "Citizens are encouraged to create gardens to offer supportive local ______.",
+              "blankIndex": 39,
+              "acceptedAnswers": [
+                [
+                  "habitats"
+                ]
+              ],
+              "correctAnswer": "habitats",
+              "explanation": "Khuyên trồng vườn bông tai tạo sinh cảnh: 'create supportive local habitats.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "habitats"
+            },
+            {
+              "id": "q-l40",
+              "type": "gap_fill",
+              "instruction": "Researchers trace the migration by sticking lightweight ______ on wings.",
+              "blankIndex": 40,
+              "acceptedAnswers": [
+                [
+                  "tags"
+                ]
+              ],
+              "correctAnswer": "tags",
+              "explanation": "Theo dõi di cư bằng nhãn dán nhẹ: 'attaching extremely light, small sticky paper tags...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Finally, scientists track this migration by attaching extremely light, small sticky paper tags to the wings of individual butterflies."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

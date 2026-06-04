@@ -1,0 +1,3244 @@
+[
+  {
+    "id": "antigravity-ph2e1-b717adc1",
+    "prompt": "The heavy rainfall lasted for several consecutive days, flooding many low-lying neighborhoods. _______ , hundreds of residents were forced to evacuate their homes.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "Consequently",
+      "C": "Meanwhile",
+      "D": "Instead"
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "'Consequently' signals a cause-and-effect relationship. The heavy rainfall and flooding (cause) directly led to residents being forced to evacuate (effect). 'Consequently' correctly connects the cause to its result.",
+      "distractors": {
+        "A": "'Nevertheless' signals contrast or concession, but the evacuation is a direct result of the flooding, not a contrasting point.",
+        "C": "'Meanwhile' indicates events happening at the same time in different places. The evacuation is a result, not a simultaneous separate event.",
+        "D": "'Instead' suggests a replacement or alternative. The evacuation is a consequence, not an alternative to the flooding."
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Expression of Ideas",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-phase2-rw-easy-1",
+    "generationEngine": "antigravity-master-prompt-hybrid",
+    "licenseNote": "Antigravity-generated elite draft.",
+    "visibility": "private_family",
+    "reviewStatus": "needs_review",
+    "targetBand": "SAT-1600",
+    "metadata": {
+      "cognitiveMove": "Recognizing the cause-effect relationship between flooding and evacuation.",
+      "trapTypes": [
+        "Wrong Relationship",
+        "Partial Fit"
+      ],
+      "sourceType": "antigravity",
+      "sourceName": "Antigravity Vault",
+      "sourceReference": "data/antigravity-bank.json",
+      "sourceSignalId": "antigravity-phase2-rw-easy-1",
+      "generationEngine": "antigravity-master-prompt-hybrid",
+      "licenseNote": "Antigravity-generated elite draft.",
+      "visibility": "private_family",
+      "reviewStatus": "needs_review",
+      "targetBand": "SAT-1600"
+    }
+  },
+  {
+    "prompt": "A table shows vaccine efficacy by age:\n|Age|Efficacy|\n|---|---|\n|18-39|96%|\n|40-59|91%|\n|60-74|85%|\n|75+|72%|\n\nA public health official says the vaccine 'works equally well for all age groups.' Is this accurate?",
+    "choices": {
+      "A": "No, because the vaccine doesn't work.",
+      "B": "No. While efficacy is high across all groups, it declines meaningfully with age—from 96% for the youngest to 72% for the oldest—a 24-percentage-point difference that contradicts 'equally well.'",
+      "C": "Yes, because the vaccine works for everyone.",
+      "D": "Yes, because all groups are above 50%."
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: 24pp range contradicts 'equally.'. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "Choice A adds, overstates, or misses information not supported by the text.",
+        "C": "Choice C adds, overstates, or misses information not supported by the text.",
+        "D": "Choice D adds, overstates, or misses information not supported by the text."
+      }
+    },
+    "id": "antigravity-46da2ce6",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p15c",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Command of Evidence: Quantitative",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Command of Evidence",
+    "microSkill": "quantitative evidence",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ],
+      "C": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ],
+      "D": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A passage examines how the printing press not only made books cheaper but also standardized spelling, enabled the Protestant Reformation by making the Bible widely accessible, and accelerated the Scientific Revolution. The central idea is:",
+    "choices": {
+      "A": "Spelling is important.",
+      "B": "The printing press was invented by Gutenberg.",
+      "C": "Books became cheaper after the printing press.",
+      "D": "The printing press's impact extended far beyond publishing: by democratizing information, it catalyzed religious, scientific, and linguistic transformations that fundamentally reshaped Western civilization."
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To arrive at the correct answer, we must analyze the context provided in the prompt. The key reasoning is: Publishing → religious, scientific, linguistic transformation. This directly supports the correct choice.",
+      "distractors": {
+        "A": "Choice A adds, overstates, or misses information not supported by the text.",
+        "B": "Choice B adds, overstates, or misses information not supported by the text.",
+        "C": "Choice C adds, overstates, or misses information not supported by the text."
+      }
+    },
+    "id": "antigravity-c924e4ff",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p15c",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Central Ideas and Details",
+    "microSkill": "central ideas and details",
+    "targetBand": "G10-Bridge",
+    "modulePlacement": "module2_lower",
+    "estimatedTimeSeconds": 55,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "main_idea_scope_error",
+        "unsupported_claim"
+      ],
+      "B": [
+        "main_idea_scope_error",
+        "unsupported_claim"
+      ],
+      "C": [
+        "main_idea_scope_error",
+        "unsupported_claim"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Researchers found that students who took handwritten notes remembered conceptual information better than those who typed notes, even though typists recorded more words. The researchers hypothesize that handwriting forces students to process and rephrase information rather than transcribing verbatim.\n\nWhat can be inferred?",
+    "choices": {
+      "A": "Students should never use laptops in class.",
+      "B": "Typing notes is always inferior to handwriting.",
+      "C": "Handwritten notes contain more information than typed notes.",
+      "D": "The cognitive effort required by handwriting may enhance understanding more than the speed advantage of typing."
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: Handwriting = fewer words but better conceptual recall. Cognitive effort > volume. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "Policy recommendation, not inference.",
+        "B": "'Always' too absolute.",
+        "C": "Passage says typists recorded MORE words."
+      }
+    },
+    "id": "antigravity-b69ce3e5",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Inferences",
+    "microSkill": "inferences",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "unsupported_inference"
+      ],
+      "B": [
+        "unsupported_inference"
+      ],
+      "C": [
+        "unsupported_inference"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "id": "antigravity-ph2e1-abd99eac",
+    "prompt": "Sign language is a fully developed language with its own grammar, syntax, and vocabulary—it is not simply a translation of spoken language into hand gestures. American Sign Language (ASL), for example, has grammatical structures that differ significantly from English. Linguists recognize sign languages as natural languages that develop within deaf communities and evolve over time just like spoken languages.\n\nWhich choice best states the main idea of the text?",
+    "choices": {
+      "A": "Sign languages are complete, independent languages with their own grammar, not mere translations of spoken languages.",
+      "B": "ASL is the most widely used sign language in the world.",
+      "C": "Deaf communities are unable to communicate without learning sign language.",
+      "D": "Sign language and spoken English share identical grammatical structures."
+    },
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "The passage argues that sign language has its own grammar, syntax, and vocabulary and is not just a gesture version of spoken language. Choice A captures this central argument about sign languages' independence and completeness.",
+      "distractors": {
+        "B": "The passage mentions ASL as an example but does not claim it is the most widely used sign language globally.",
+        "C": "The passage does not make this claim. It discusses sign language as a linguistic system, not as the only communication method for deaf people.",
+        "D": "The passage explicitly states ASL's grammatical structures 'differ significantly from English,' directly contradicting this choice."
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-phase2-rw-easy-1",
+    "generationEngine": "antigravity-master-prompt-hybrid",
+    "licenseNote": "Antigravity-generated elite draft.",
+    "visibility": "private_family",
+    "reviewStatus": "needs_review",
+    "targetBand": "SAT-1600",
+    "metadata": {
+      "cognitiveMove": "Identifying the passage's main argument (sign language is a complete language) against a common misconception.",
+      "trapTypes": [
+        "Contradiction",
+        "Out of Scope"
+      ],
+      "sourceType": "antigravity",
+      "sourceName": "Antigravity Vault",
+      "sourceReference": "data/antigravity-bank.json",
+      "sourceSignalId": "antigravity-phase2-rw-easy-1",
+      "generationEngine": "antigravity-master-prompt-hybrid",
+      "licenseNote": "Antigravity-generated elite draft.",
+      "visibility": "private_family",
+      "reviewStatus": "needs_review",
+      "targetBand": "SAT-1600"
+    }
+  },
+  {
+    "prompt": "The study found that moderate coffee consumption was associated with a 20% lower risk of Type 2 diabetes. _______ excessive consumption—more than six cups daily—was linked to increased anxiety and insomnia.\n\nWhich transition is most logical?",
+    "choices": {
+      "A": "Therefore,",
+      "B": "For instance,",
+      "C": "In addition,",
+      "D": "However,"
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: Moderate (beneficial) vs. excessive (harmful) = contrast. 'However' signals this. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "Choice A does not best preserve the logical flow or rhetorical purpose.",
+        "B": "Choice B does not best preserve the logical flow or rhetorical purpose.",
+        "C": "Choice C does not best preserve the logical flow or rhetorical purpose."
+      }
+    },
+    "id": "antigravity-a022b53d",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p9b1",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Expression of Ideas",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Transitions",
+    "microSkill": "logical relationship",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "wrong_logical_transition"
+      ],
+      "B": [
+        "wrong_logical_transition"
+      ],
+      "C": [
+        "wrong_logical_transition"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Ecologist Dr. Wen argues that urban green roofs significantly reduce city temperatures. Which finding most directly supports this claim?",
+    "choices": {
+      "A": "Green roofs are aesthetically pleasing to most city residents.",
+      "B": "Plants in general require water and sunlight to grow.",
+      "C": "Some cities have passed ordinances requiring new buildings to include green spaces.",
+      "D": "A study of 50 buildings with green roofs showed an average 3.5C reduction in surrounding air temperature compared to buildings with conventional roofs during summer months."
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: Direct temperature measurement comparing green vs conventional roofs = strongest empirical support. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "Aesthetics irrelevant to temperature.",
+        "B": "Basic biology irrelevant to cooling claim.",
+        "C": "Policy doesn't prove temperature reduction."
+      }
+    },
+    "id": "antigravity-67bd04b8",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Command of Evidence: Textual",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Command of Evidence",
+    "microSkill": "textual support",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 55,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "evidence_mismatch"
+      ],
+      "B": [
+        "evidence_mismatch"
+      ],
+      "C": [
+        "evidence_mismatch"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "id": "antigravity-ph2e2-f046e302",
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Inferences",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "prompt": "Dr. Smith's latest experiment involved growing tomato plants under two different lighting conditions. Group A received natural sunlight, while Group B was exposed exclusively to artificial LED light. After four weeks, the plants in Group A had grown an average of 15 centimeters, whereas those in Group B had grown an average of 8 centimeters.\n\nWhich choice is most strongly supported by the text?",
+    "choices": {
+      "A": "The tomato plants grew more when exposed to natural sunlight than when exposed to artificial LED light.",
+      "B": "Natural sunlight provides essential nutrients that artificial LED light lacks.",
+      "C": "Dr. Smith expected the plants in Group B to grow taller than those in Group A.",
+      "D": "Artificial LED light is harmful and causes tomato plants to wither over time."
+    },
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "The passage provides specific measurements showing that Group A (natural sunlight) grew 15cm, which is taller than Group B (LED light) at 8cm, directly supporting this conclusion.",
+      "distractors": {
+        "B": "The student assumed the biological cause (nutrients) of the growth difference, which is beyond the provided text.",
+        "C": "The student made an assumption about the researcher's expectations, which are not stated.",
+        "D": "The student inferred harm and withering, but the text only indicates slower growth."
+      }
+    },
+    "metadata": {
+      "sourceType": "antigravity",
+      "sourceName": "Antigravity Vault",
+      "sourceReference": "data/antigravity-bank.json",
+      "sourceSignalId": "antigravity-phase2-rw-easy-2",
+      "generationEngine": "antigravity-master-prompt-hybrid",
+      "licenseNote": "Antigravity-generated elite draft.",
+      "visibility": "private_family",
+      "reviewStatus": "needs_review",
+      "targetBand": "SAT-1600",
+      "cognitiveMove": "Synthesize information from the text to draw a logical conclusion.",
+      "trapTypes": [
+        "Beyond the Text",
+        "Contradicts Text",
+        "Unwarranted Assumption"
+      ]
+    },
+    "sourceSignalId": "antigravity-phase2-rw-easy-2"
+  },
+  {
+    "prompt": "A marine biologist studied coral bleaching events across four ocean regions:\n\n| Region | Water Temp Increase (°C) | % Coral Bleached | Recovery Rate (%) |\n|---|---|---|---|\n| Caribbean | +1.2 | 48% | 22% |\n| Southeast Asia | +0.8 | 31% | 45% |\n| Great Barrier Reef | +1.5 | 62% | 15% |\n| Red Sea | +1.0 | 18% | 68% |\n\nWhich conclusion is best supported by the data?",
+    "choices": {
+      "A": "Temperature increases have no effect on coral bleaching, since the Red Sea shows low bleaching despite a 1.0°C increase.",
+      "B": "Recovery rates are determined solely by water temperature.",
+      "C": "Higher temperature increases are generally associated with more severe bleaching and lower recovery rates, though the Red Sea appears more resilient than the pattern would predict.",
+      "D": "The Great Barrier Reef will lose all its coral within the next decade."
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "The general trend: higher temp → more bleaching → lower recovery (Caribbean and GBR fit this). But the Red Sea (+1.0°C, only 18% bleached, 68% recovery) is an outlier — more resilient than expected. Choice A captures both the trend and the exception accurately.",
+      "distractors": {
+        "A": "The overall data DOES show a relationship; one exception doesn't negate a general pattern.",
+        "B": "'Solely' is too absolute. The Red Sea's resilience despite moderate temperature increase suggests other factors (e.g., heat-adapted coral species) play a role.",
+        "D": "The data shows current bleaching, not future projections. This extrapolation is unsupported."
+      }
+    },
+    "id": "antigravity-adddf77f",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Command of Evidence: Quantitative",
+    "difficulty": "Hard",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Command of Evidence",
+    "microSkill": "quantitative evidence",
+    "targetBand": "SAT-Elite",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "evidence_mismatch",
+        "wrong_statistic_or_denominator"
+      ],
+      "B": [
+        "evidence_mismatch",
+        "rhetorical_function_misread"
+      ],
+      "D": [
+        "evidence_mismatch",
+        "unsupported_claim",
+        "wrong_statistic_or_denominator"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "metadata": {
+      "cognitiveMove": "Analyzing data trends to confirm or undermine a researcher's specific hypothesis.",
+      "trapTypes": [
+        "Extreme Language",
+        "Out of Scope",
+        "Misinterpretation of Constants"
+      ]
+    },
+    "type": "MCQ"
+  },
+  {
+    "prompt": "While researching a topic, a student has taken the following notes:\n• The Great Wall of China was built over approximately 2,000 years by multiple dynasties.\n• The wall stretches over 13,000 miles across northern China.\n• Its primary purpose was to protect Chinese states from nomadic invasions.\n• Contrary to popular belief, the Great Wall is not visible from space with the naked eye.\n\nThe student wants to correct a common misconception about the Great Wall. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "choices": {
+      "A": "The Great Wall of China is one of the most impressive architectural achievements in human history.",
+      "B": "Although the Great Wall of China stretches over 13,000 miles, it is not, contrary to popular belief, visible from space with the naked eye.",
+      "C": "The Great Wall of China was built over 2,000 years by multiple dynasties to protect against nomadic invasions.",
+      "D": "At over 13,000 miles long, the Great Wall of China is the longest structure ever built."
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "The goal is to correct a misconception. Choice A directly addresses the myth ('contrary to popular belief') while providing context (13,000 miles) that makes the misconception understandable yet clearly refutes it.",
+      "distractors": {
+        "A": "This is an evaluative claim not found in the notes and doesn't correct a misconception.",
+        "C": "This provides accurate historical context but doesn't address any misconception.",
+        "D": "This focuses on length and makes a claim ('longest structure') not stated in the notes."
+      }
+    },
+    "id": "antigravity-7d082f7c",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Reading and Writing",
+    "domain": "Expression of Ideas",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Rhetorical Synthesis",
+    "microSkill": "goal-specific selection",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 55,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "goal_or_note_selection_error"
+      ],
+      "C": [
+        "goal_or_note_selection_error"
+      ],
+      "D": [
+        "goal_or_note_selection_error"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "An ecologist argues that urban green spaces improve mental health. Which evidence is most relevant?",
+    "choices": {
+      "A": "Green spaces improve property values.",
+      "B": "Cities have limited nature.",
+      "C": "Parks are nice to visit.",
+      "D": "A study using GPS data from 20,000 people found that spending just 120 minutes per week in green spaces was associated with 20% higher self-reported well-being, regardless of income, age, or exercise level."
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: 20K people + 120 min threshold + controlled variables = strong evidence. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "Choice A adds, overstates, or misses information not supported by the text.",
+        "B": "Choice B adds, overstates, or misses information not supported by the text.",
+        "C": "Choice C adds, overstates, or misses information not supported by the text."
+      }
+    },
+    "id": "antigravity-31abeac2",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p16a",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Command of Evidence: Textual",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Command of Evidence",
+    "microSkill": "textual support",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 55,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ],
+      "B": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ],
+      "C": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Recent research on coral reef ecosystems reveals that bleaching events—during which corals expel their symbiotic zooxanthellae algae under thermal stress—have increased in frequency from roughly once every 25 years in the early 1980s to nearly once every 6 years by 2020. While some coral species can associate with more heat-tolerant algal strains after repeated thermal events, this \"shuffling\" mechanism requires multiple recovery cycles spanning several years and appears insufficient to keep pace with the accelerating rate of ocean warming.\n\nWhich choice is most strongly supported by the text?",
+    "choices": {
+      "A": "Coral reefs in cooler waters are more vulnerable to bleaching than tropical reefs because they lack prior exposure to thermal stress.",
+      "B": "The chemical composition of warming ocean water, rather than the temperature increase itself, is the primary driver of coral bleaching.",
+      "C": "Coral species that experience moderate, non-lethal bleaching events at regular intervals may develop greater thermal resilience than those in consistently stable thermal environments.",
+      "D": "All coral species will eventually develop sufficient heat tolerance through algal shuffling to survive projected warming scenarios."
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "The text states that some corals can associate with more heat-tolerant algal strains 'after repeated thermal events,' implying that experiencing (and surviving) bleaching can confer resilience. However, the text also notes this requires 'multiple recovery cycles,' meaning the events must be moderate enough to allow recovery. This supports the inference that moderate, spaced bleaching could build resilience, while stable environments would not trigger the shuffling mechanism.",
+      "distractors": {
+        "A": "The text does not compare vulnerability between cooler-water and tropical reefs. This introduces information not supported by the passage.",
+        "B": "The text explicitly attributes bleaching to 'thermal stress,' not to chemical toxicity. This choice contradicts the passage.",
+        "D": "The text states the shuffling mechanism 'appears insufficient to keep pace with the current rate of ocean warming,' directly contradicting the claim that all species will develop sufficient tolerance."
+      }
+    },
+    "id": "antigravity-a0473ecd",
+    "difficulty": "Hard",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft. Needs SAT Studio review.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Inferences",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Inferences",
+    "microSkill": "inferences",
+    "targetBand": "SAT-Advanced",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "unsupported_inference"
+      ],
+      "B": [
+        "unsupported_inference"
+      ],
+      "D": [
+        "unsupported_inference"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "metadata": {
+      "cognitiveMove": "Extrapolating the logically necessary conclusion that must follow from a complex set of textual premises.",
+      "trapTypes": [
+        "Extreme Language",
+        "Misinterpretation of Constants",
+        "Opposite Direction"
+      ]
+    },
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Archaeologists studying the transition from hunter-gatherer to agricultural societies have noted that early farming communities in the Fertile Crescent show evidence of significantly poorer dental health, shorter average stature, and higher rates of nutritional deficiencies compared to their foraging predecessors. Despite these apparent health costs, agricultural populations expanded rapidly, displacing hunter-gatherer groups across most of Eurasia within a few thousand years. Researchers attribute this expansion not to individual health advantages but to the dramatically higher population densities that sedentary agriculture could support.\n\nWhich choice is most strongly supported by the text?",
+    "choices": {
+      "A": "The health costs of early agriculture were limited to dental problems and did not affect overall physical development.",
+      "B": "Hunter-gatherer societies voluntarily adopted agriculture because they recognized its long-term health benefits.",
+      "C": "Agricultural populations expanded primarily because their diet provided superior nutrition compared to foraging.",
+      "D": "A subsistence strategy that is less beneficial for individual health can still confer a competitive advantage to a population if it supports substantially greater numbers of people."
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "The text presents a paradox: agriculture made individuals less healthy but populations expanded rapidly. The explanation given is higher population density. This directly supports the inference that population-level advantages (more people) can override individual-level disadvantages (worse health).",
+      "distractors": {
+        "A": "The text lists 'shorter average stature and higher rates of nutritional deficiencies' in addition to dental problems, showing broader effects on physical development.",
+        "B": "The text says early farmers had 'poorer dental health, shorter stature, and higher rates of nutritional deficiencies'—there were no 'long-term health benefits' to recognize.",
+        "C": "The text explicitly states the opposite: early farmers showed 'nutritional deficiencies' compared to foragers. Agriculture did NOT provide superior nutrition."
+      }
+    },
+    "id": "antigravity-a10314db",
+    "difficulty": "Hard",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft. Needs SAT Studio review.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Inferences",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Inferences",
+    "microSkill": "inferences",
+    "targetBand": "SAT-Advanced",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "unsupported_inference"
+      ],
+      "B": [
+        "unsupported_inference"
+      ],
+      "C": [
+        "unsupported_inference"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "metadata": {
+      "cognitiveMove": "Extrapolating the logically necessary conclusion that must follow from a complex set of textual premises.",
+      "trapTypes": [
+        "Sign Error",
+        "Misinterpretation of Constants",
+        "Opposite Direction"
+      ]
+    },
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A scatter plot: $r=0.92$ between ice cream sales and drowning deaths. A politician proposes banning ice cream to save lives. The flaw:",
+    "choices": {
+      "A": "The correlation is too weak.",
+      "B": "The data is fabricated.",
+      "C": "Both variables are driven by a confounding variable (temperature/season), so the correlation is spurious and the policy would have no effect on drowning.",
+      "D": "Ice cream is unrelated to water."
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "The credited choice is correct because it directly bears on the claim in the prompt. It supplies the most relevant evidence, limitation, or inference rather than offering background information that is merely related.",
+      "distractors": {
+        "A": "Choice A is related to the topic but does not directly support, weaken, or explain the claim in the way the prompt asks.",
+        "B": "Choice B is related to the topic but does not directly support, weaken, or explain the claim in the way the prompt asks.",
+        "D": "Choice D is related to the topic but does not directly support, weaken, or explain the claim in the way the prompt asks."
+      }
+    },
+    "id": "antigravity-4ed74a07",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "antigravity-remaining-quality-upgrade-2026-05-20",
+      "verdict": "pass",
+      "reviewer": "Codex SAT expert spot-check",
+      "checkedAt": "2026-05-20",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "answer_key_and_choice_integrity",
+        "no_blocking_structural_issues",
+        "specific_wrong-answer_or_common-error_trap_notes",
+        "usable_in_private_unified_sat_progression"
+      ],
+      "previousContentAudit": {
+        "version": "p18b",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Command of Evidence: Quantitative",
+    "difficulty": "Hard",
+    "questionType": "multiple_choice",
+    "expertRepairNotes": {
+      "remainingQualityUpgradeVersion": "antigravity-remaining-quality-upgrade-2026-05-20"
+    },
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "strict1600Review": {
+      "version": "antigravity-remaining-quality-upgrade-2026-05-20",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "current Digital SAT domain/skill fit",
+        "specific explanation and trap notes",
+        "no active structural blocker"
+      ]
+    },
+    "canonicalSkill": "Command of Evidence",
+    "microSkill": "quantitative evidence",
+    "targetBand": "SAT-Elite",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "evidence_mismatch"
+      ],
+      "B": [
+        "evidence_mismatch",
+        "wrong_statistic_or_denominator"
+      ],
+      "D": [
+        "evidence_mismatch"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "metadata": {
+      "cognitiveMove": "Analyzing data trends to confirm or undermine a researcher's specific hypothesis.",
+      "trapTypes": [
+        "Procedural Error / Misinterpretation"
+      ]
+    },
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A passage describes how coral reefs, which cover less than 1% of the ocean floor, support 25% of all marine species. The author compares their loss to 'burning a library before reading the books,' emphasizing undiscovered medicinal compounds. The central idea is:",
+    "choices": {
+      "A": "The ocean floor is mostly empty.",
+      "B": "Coral reefs are beautiful.",
+      "C": "Libraries should not be burned.",
+      "D": "Coral reefs are disproportionately important to both biodiversity and potential human benefit, making their destruction a loss of irreplaceable scientific and medical knowledge."
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To arrive at the correct answer, we must analyze the context provided in the prompt. The key reasoning is: Disproportionate importance + irreplaceable knowledge. This directly supports the correct choice.",
+      "distractors": {
+        "A": "Choice A adds, overstates, or misses information not supported by the text.",
+        "B": "Choice B adds, overstates, or misses information not supported by the text.",
+        "C": "Choice C adds, overstates, or misses information not supported by the text."
+      }
+    },
+    "id": "antigravity-ea830c52",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p15c",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Central Ideas and Details",
+    "microSkill": "central ideas and details",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "main_idea_scope_error",
+        "unsupported_claim"
+      ],
+      "B": [
+        "main_idea_scope_error",
+        "unsupported_claim"
+      ],
+      "C": [
+        "main_idea_scope_error",
+        "unsupported_claim"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "During the Renaissance, wealthy patrons frequently commissioned portraits to display their status and power. To ensure they appeared appropriately majestic, patrons often demanded that painters ignore physical flaws and instead paint them with highly idealized features. _______ some rebellious artists, like Caravaggio, pioneered 'chiaroscuro' and hyper-realism, choosing to paint their subjects warts, wrinkles, and all.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "Furthermore,",
+      "B": "Consequently,",
+      "C": "However,",
+      "D": "For example,"
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "The first two sentences describe the tradition of 'idealized features' and ignoring flaws. The final sentence describes rebellious artists doing the exact opposite ('warts, wrinkles, and all'). This is a strong contrast, requiring 'However.'",
+      "distractors": {
+        "A": "Choice A does not best preserve the logical flow or rhetorical purpose.",
+        "B": "Choice B does not best preserve the logical flow or rhetorical purpose.",
+        "D": "Choice D does not best preserve the logical flow or rhetorical purpose."
+      }
+    },
+    "id": "antigravity-d29c95fd",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "b38",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Expression of Ideas",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Transitions",
+    "microSkill": "logical relationship",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 55,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "wrong_logical_transition"
+      ],
+      "B": [
+        "wrong_logical_transition"
+      ],
+      "D": [
+        "wrong_logical_transition"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "To ensure the structural integrity of the bridge during hurricane-force winds, the engineering team incorporated flexible joints that allow the roadbed to sway gently. _______ rigid bridges are prone to snapping under extreme lateral pressure, this flexibility actually prevents catastrophic failure.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "Because",
+      "B": "Similarly,",
+      "C": "Therefore,",
+      "D": "Although"
+    },
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "The second sentence explains *why* the flexibility prevents failure: because rigid bridges snap. 'Because' sets up this causal explanation.",
+      "distractors": {
+        "B": "Choice B does not best preserve the logical flow or rhetorical purpose.",
+        "C": "Choice C does not best preserve the logical flow or rhetorical purpose.",
+        "D": "Choice D does not best preserve the logical flow or rhetorical purpose."
+      }
+    },
+    "id": "antigravity-5af0a0c4",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "b35",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Expression of Ideas",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Transitions",
+    "microSkill": "logical relationship",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "B": [
+        "wrong_logical_transition"
+      ],
+      "C": [
+        "wrong_logical_transition"
+      ],
+      "D": [
+        "wrong_logical_transition"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "The study identified four risk _______ smoking, obesity, sedentary lifestyle, and excessive alcohol consumption.\n\nWhich choice conforms to Standard English?",
+    "choices": {
+      "A": "factors;",
+      "B": "factors:",
+      "C": "factors",
+      "D": "factors,"
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Choice B is correct: factors:. This is a punctuation-boundary question, so the controlling issue is the structure around the blank. A colon is used after a complete setup when the following words explain, identify, or list what the setup has announced. The credited punctuation fits the sentence's clause relationship; choosing a mark only because it looks emphatic would change the grammar.",
+      "distractors": {
+        "A": "Choice A (factors;) uses a punctuation pattern that does not fit the sentence boundary. Compared with factors:, it either separates material too strongly, too weakly, or in a way the clause structure does not license.",
+        "C": "Choice C (factors) uses a punctuation pattern that does not fit the sentence boundary. Compared with factors:, it either separates material too strongly, too weakly, or in a way the clause structure does not license.",
+        "D": "Choice D (factors,) uses a punctuation pattern that does not fit the sentence boundary. Compared with factors:, it either separates material too strongly, too weakly, or in a way the clause structure does not license."
+      }
+    },
+    "id": "antigravity-a64779c0",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p15b",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Standard English Conventions",
+    "skill": "Boundaries",
+    "difficulty": "Hard",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Boundaries",
+    "microSkill": "sentence boundary",
+    "targetBand": "SAT-Advanced",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "expertRepairNotes": {
+      "antigravityP0ExplanationUpgradeVersion": "antigravity-p0-explanation-upgrade-2026-05-20"
+    },
+    "trapTypes": {
+      "A": [
+        "punctuation_boundary_error"
+      ],
+      "C": [
+        "punctuation_boundary_error"
+      ],
+      "D": [
+        "punctuation_boundary_error"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "metadata": {
+      "cognitiveMove": "Applying advanced punctuation rules (colons, semicolons, dashes) to demarcate complex independent and dependent clauses.",
+      "trapTypes": [
+        "Misinterpretation of Constants"
+      ]
+    },
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Despite the overwhelming data supporting climate change, a vocal minority continues to _______ the scientific consensus.\nWhich best fits?",
+    "choices": {
+      "A": "celebrate",
+      "B": "confirm",
+      "C": "dispute",
+      "D": "ignore"
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: 'Despite overwhelming data' = opposition = dispute. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "Choice A misreads the word, phrase, structure, or rhetorical function being tested.",
+        "B": "Choice B misreads the word, phrase, structure, or rhetorical function being tested.",
+        "D": "Choice D misreads the word, phrase, structure, or rhetorical function being tested."
+      }
+    },
+    "id": "antigravity-886dcf42",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p14b",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Craft and Structure",
+    "skill": "Words in Context",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Words in Context",
+    "microSkill": "words in context",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 55,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "context_meaning_error",
+        "rhetorical_function_misread"
+      ],
+      "B": [
+        "context_meaning_error",
+        "rhetorical_function_misread"
+      ],
+      "D": [
+        "context_meaning_error",
+        "rhetorical_function_misread"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "id": "antigravity-ph2e2-1f1fe514",
+    "section": "Reading and Writing",
+    "domain": "Standard English Conventions",
+    "skill": "Form, Structure, and Sense",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "prompt": "Yesterday, the talented scientist _____ a new element that amazed all the critics in attendance.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "is creating",
+      "B": "created",
+      "C": "creates",
+      "D": "will create"
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "distractors": {
+        "A": "The student chose a present continuous verb, mismatching the past context of the sentence.",
+        "C": "The student chose a present tense verb, contradicting the past time marker 'Yesterday'.",
+        "D": "The student selected a future tense verb, which makes no sense for an event that happened yesterday."
+      },
+      "correct": "The sentence begins with the time marker 'Yesterday', which requires the past tense verb 'created' to maintain consistent and logical tense."
+    },
+    "metadata": {
+      "sourceType": "antigravity",
+      "sourceName": "Antigravity Vault",
+      "sourceReference": "data/antigravity-bank.json",
+      "sourceSignalId": "antigravity-phase2-rw-easy-2",
+      "generationEngine": "antigravity-master-prompt-hybrid",
+      "licenseNote": "Antigravity-generated elite draft.",
+      "visibility": "private_family",
+      "reviewStatus": "needs_review",
+      "targetBand": "SAT-1600",
+      "cognitiveMove": "Identify and apply the correct grammatical rule to ensure sentence coherence.",
+      "trapTypes": [
+        "Plural/Singular Confusion",
+        "Tense Mismatch",
+        "Dangling Modifier"
+      ]
+    },
+    "sourceSignalId": "antigravity-phase2-rw-easy-2"
+  },
+  {
+    "prompt": "A nutritionist claims that intermittent fasting reduces chronic inflammation more effectively than a standard calorie-restricted diet. Which finding, if true, would most directly support this claim?",
+    "choices": {
+      "A": "A calorie-restricted diet is generally easier for patients to maintain over long periods than intermittent fasting.",
+      "B": "Both intermittent fasting and calorie restriction have been shown to promote weight loss.",
+      "C": "Intermittent fasting has become increasingly popular among celebrities and social media influencers.",
+      "D": "Blood samples from subjects on an intermittent fasting regimen showed a 35% reduction in inflammatory biomarkers, compared to only a 10% reduction in the calorie-restricted group."
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "The claim compares the anti-inflammatory effects of the two diets. Finding A provides direct comparative biomarker data showing fasting is more effective (35% vs 10%).",
+      "distractors": {
+        "A": "Choice A adds, overstates, or misses information not supported by the text.",
+        "B": "Choice B adds, overstates, or misses information not supported by the text.",
+        "C": "Choice C adds, overstates, or misses information not supported by the text."
+      }
+    },
+    "id": "antigravity-0b94f113",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "b40",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Command of Evidence: Textual",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Command of Evidence",
+    "microSkill": "textual support",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ],
+      "B": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ],
+      "C": [
+        "evidence_mismatch",
+        "unsupported_claim"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "id": "antigravity-ph2e3-bfaebe63",
+    "section": "Reading and Writing",
+    "domain": "Information and Ideas",
+    "skill": "Command of Evidence: Quantitative",
+    "difficulty": "Easy",
+    "prompt": "A city planner surveyed residents about their preferred new public amenity. The options were a Park, a Library, or a Pool. The survey results showed a clear favorite among the residents.\n\n| Amenity | Votes |\n|---|---|\n| Park | 480 |\n| Library | 220 |\n| Pool | 190 |\n\nWhich choice best uses data from the table to complete the statement that the Park was the most popular option?",
+    "type": "MCQ",
+    "choices": {
+      "A": "The Park received 480 votes, which was higher than the 220 votes for the Library and the 190 votes for the Pool.",
+      "B": "The Library received 220 votes, which was the highest number of votes.",
+      "C": "The Pool received 190 votes, proving it was the most popular choice.",
+      "D": "The Park received 190 votes, making it the clear favorite among the options."
+    },
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "This choice correctly uses the highest value from the table to directly support the claim that it was the clear favorite. The student successfully reads the table and extracts the precise values needed to back the stated claim.",
+      "distractors": {
+        "B": "This choice is incorrect because it either misreads the data from the table or directly contradicts the conclusion stated in the passage. The student's error is failing to accurately map the table's values to the entities discussed.",
+        "C": "This choice is incorrect because it either misreads the data from the table or directly contradicts the conclusion stated in the passage. The student's error is failing to accurately map the table's values to the entities discussed.",
+        "D": "This choice is incorrect because it either misreads the data from the table or directly contradicts the conclusion stated in the passage. The student's error is failing to accurately map the table's values to the entities discussed."
+      }
+    },
+    "metadata": {
+      "sourceType": "antigravity",
+      "sourceName": "Antigravity Vault",
+      "sourceReference": "data/antigravity-bank.json",
+      "sourceSignalId": "antigravity-phase2-rw-easy-3",
+      "generationEngine": "antigravity-master-prompt-hybrid",
+      "licenseNote": "Antigravity-generated elite draft.",
+      "visibility": "private_family",
+      "reviewStatus": "needs_review",
+      "targetBand": "SAT-1600",
+      "cognitiveMove": "Interpret simple tabular data to find the value that proves the explicitly stated conclusion.",
+      "trapTypes": [
+        "Data misinterpretation",
+        "Contradicts passage claim"
+      ]
+    },
+    "sourceSignalId": "antigravity-phase2-rw-easy-3"
+  },
+  {
+    "prompt": "What is the GCF of 12 and 18?",
+    "choices": {
+      "A": "36",
+      "B": "12",
+      "C": "3",
+      "D": "6"
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: Factors of 12: 1,2,3,4,6,12. Factors of 18: 1,2,3,6,9,18. GCF=6. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "LCM.",
+        "B": "Not a factor of 18.",
+        "C": "A common factor but not greatest."
+      }
+    },
+    "id": "antigravity-f25248b1",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Equivalent expressions",
+    "microSkill": "equivalent expressions",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 65,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "invalid_algebraic_manipulation"
+      ],
+      "B": [
+        "invalid_algebraic_manipulation",
+        "factoring_or_cancellation_error"
+      ],
+      "C": [
+        "invalid_algebraic_manipulation",
+        "factoring_or_cancellation_error"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Parallel lines have _______ slopes.",
+    "choices": {
+      "A": "opposite",
+      "B": "zero",
+      "C": "equal",
+      "D": "perpendicular"
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "To arrive at the correct answer, we must analyze the context provided in the prompt. The key reasoning is: Parallel lines have equal slopes. This directly supports the correct choice.",
+      "distractors": {
+        "A": "Not opposite.",
+        "B": "Only horizontal lines.",
+        "D": "Perpendicular = neg reciprocal."
+      }
+    },
+    "id": "antigravity-fc78320c",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Linear functions",
+    "microSkill": "rate of change",
+    "targetBand": "G10-Bridge",
+    "modulePlacement": "module2_lower",
+    "estimatedTimeSeconds": 65,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "linear_feature_confusion"
+      ],
+      "B": [
+        "linear_feature_confusion"
+      ],
+      "D": [
+        "linear_feature_confusion"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Two numbers sum to 47. One is 13 more than the other. What is the larger number?",
+    "correctAnswer": "30",
+    "id": "antigravity-ca344a86",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p13a",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Easy",
+    "type": "SPR",
+    "acceptableAnswers": [
+      "30"
+    ],
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "student_produced_response",
+    "explanation": {
+      "correct": "The credited answer follows from the tested SAT skill and the information given in the prompt. Final answer = 30.",
+      "distractors": {
+        "common_error_1": "A common error is stopping at an intermediate value instead of answering the requested quantity.",
+        "common_error_2": "A common error is applying the right operation to the wrong value from the prompt."
+      }
+    },
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Linear equations in one variable",
+    "microSkill": "linear equations in one variable",
+    "targetBand": "G10-Bridge",
+    "modulePlacement": "module2_lower",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20"
+  },
+  {
+    "prompt": "A researcher surveys 200 college students about their study habits and grades. She presents a scatter plot showing a positive correlation ($r = 0.72$) between hours spent studying and GPA. A skeptic argues that the correlation is misleading. Which of the following, if true, would most support the skeptic's concern?",
+    "choices": {
+      "A": "Students who study more also tend to attend class more regularly, and class attendance alone has a stronger correlation with GPA than study hours.",
+      "B": "The sample size of 200 is larger than most published studies on the topic.",
+      "C": "The scatter plot uses color-coded dots for each academic major.",
+      "D": "The researcher used GPA on a 4.0 scale rather than a 100-point scale."
+    },
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Choice A is correct: Students who study more also tend to attend class more regularly, and class attendance alone has a stronger correlation with GPA than study hours.. This introduces a confounding variable (class attendance). If attendance is driving both study hours and GPA, the observed study-GPA correlation could be spurious or inflated, supporting the skeptic's concern. Thus, the correct answer is Students who study more also tend to attend class more regularly, and class attendance alone has a stronger correlation with GPA than study hours.. The SAT skill is to finish the requested calculation, not just recognize a related intermediate value. Use the statistic or probability model named in the prompt, not a nearby count or percentage from the same context.",
+      "distractors": {
+        "B": "Choice B (The sample size of 200 is larger than most published studies on the topic.) reads the data or probability model incorrectly; it is not the statistic requested by the question.",
+        "C": "Choice C (The scatter plot uses color-coded dots for each academic major.) reads the data or probability model incorrectly; it is not the statistic requested by the question.",
+        "D": "Choice D (The researcher used GPA on a 4.0 scale rather than a 100-point scale.) reads the data or probability model incorrectly; it is not the statistic requested by the question."
+      }
+    },
+    "id": "antigravity-2f7447b9",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p2b4",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Two-variable data: models and scatterplots",
+    "difficulty": "Hard",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Two-variable data: models and scatterplots",
+    "microSkill": "two-variable data: models and scatterplots",
+    "targetBand": "SAT-Advanced",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 125,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "expertRepairNotes": {
+      "antigravityP0ExplanationUpgradeVersion": "antigravity-p0-explanation-upgrade-2026-05-20"
+    },
+    "trapTypes": {
+      "B": [
+        "wrong_statistic_or_denominator"
+      ],
+      "C": [
+        "wrong_statistic_or_denominator"
+      ],
+      "D": [
+        "wrong_statistic_or_denominator"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "metadata": {
+      "cognitiveMove": "Interpreting slope and intercepts in context, distinguishing between correlation and causation.",
+      "trapTypes": [
+        "Procedural Error / Misinterpretation"
+      ]
+    },
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A store sells an item for $63 after a 30% discount. What was the original price?",
+    "correctAnswer": "90",
+    "id": "antigravity-2b38db28",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p12c",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Percentages",
+    "difficulty": "Medium",
+    "type": "SPR",
+    "acceptableAnswers": [
+      "90"
+    ],
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "student_produced_response",
+    "explanation": {
+      "correct": "The credited answer follows from the tested SAT skill and the information given in the prompt. Final answer = 90.",
+      "distractors": {
+        "common_error_1": "A common error is stopping at an intermediate value instead of answering the requested quantity.",
+        "common_error_2": "A common error is applying the right operation to the wrong value from the prompt."
+      }
+    },
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Percentages",
+    "microSkill": "percentages",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 105,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20"
+  },
+  {
+    "id": "antigravity-ph1im-71ebd002",
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Inference from sample statistics and margin of error",
+    "difficulty": "Hard",
+    "prompt": "A pharmaceutical company tests a new blood pressure medication. In a randomized controlled trial with 600 patients, the treatment group (n=300) shows a mean systolic blood pressure reduction of 11.2 mmHg, and the control group (n=300) shows a reduction of 7.8 mmHg. The 95% confidence interval for the difference (treatment − control) is (1.1, 5.7) mmHg. The company must decide whether to proceed to Phase III trials, which requires the drug to show at least a 1 mmHg advantage over placebo. What does the confidence interval suggest?",
+    "type": "MCQ",
+    "choices": {
+      "A": "The drug should not proceed because the advantage could be as small as 1.1 mmHg.",
+      "B": "The drug should proceed because the entire confidence interval for the difference exceeds the 1 mmHg threshold, indicating the drug is both statistically and clinically effective.",
+      "C": "The drug should not proceed because individual patients may not all benefit.",
+      "D": "More research is needed because the confidence interval is too wide."
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "The 95% confidence interval for the difference is (1.1, 5.7) mmHg. This means we are 95% confident the true treatment advantage over placebo is between 1.1 and 5.7 mmHg. Since even the lower bound (1.1 mmHg) exceeds the 1 mmHg threshold for clinical significance, the evidence supports both statistical significance (the interval doesn't include 0) and clinical significance (the interval is entirely above 1 mmHg). This provides a strong basis for proceeding to Phase III trials.",
+      "distractors": {
+        "A": "While the advantage could be as small as 1.1 mmHg, this still exceeds the 1 mmHg threshold. The lower bound being close to but above the threshold actually supports proceeding, not halting.",
+        "C": "Clinical trials evaluate average effects, not whether every individual benefits. The confidence interval addresses the population-level treatment effect, which is the relevant criterion for Phase III decisions.",
+        "D": "The confidence interval width of 4.6 mmHg is reasonable for a study of this size. More importantly, the entire interval exceeds the threshold, making the decision clear despite the remaining uncertainty in the exact effect size."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Using a confidence interval for a treatment difference to make a clinical decision by comparing the lower bound to a meaningful threshold",
+      "trapTypes": [
+        "Threshold Proximity Hesitation",
+        "Individual vs Parameter Confusion",
+        "Width Fixation"
+      ],
+      "sourceType": "antigravity",
+      "sourceName": "Antigravity Vault",
+      "sourceReference": "data/antigravity-bank.json",
+      "sourceSignalId": "antigravity-phase1-inference-margin",
+      "generationEngine": "antigravity-master-prompt-hybrid",
+      "licenseNote": "Antigravity-generated elite draft.",
+      "visibility": "private_family",
+      "reviewStatus": "needs_review",
+      "targetBand": "SAT-1600"
+    }
+  },
+  {
+    "prompt": "A scatterplot shows the relationship between the number of hours studied and exam scores. The line of best fit is given by $y = 6.5x + 40$. What does the $6.5$ represent in this context?",
+    "choices": {
+      "A": "The expected exam score if a student studies for 0 hours.",
+      "B": "The expected increase in the exam score for each additional hour studied.",
+      "C": "The average exam score for all students in the class.",
+      "D": "The total number of hours a student needs to study to score 100."
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "In $y = mx + b$, the slope $m$ (6.5) represents the rate of change: the predicted increase in score ($y$) per unit increase in hours studied ($x$).",
+      "distractors": {
+        "A": "This describes the y-intercept (40).",
+        "C": "This misinterprets the slope as an overall average.",
+        "D": "This misinterprets the slope as a target value."
+      }
+    },
+    "id": "antigravity-95babc42",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the current Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Two-variable data: models and scatterplots",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Two-variable data: models and scatterplots",
+    "microSkill": "two-variable data: models and scatterplots",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 65,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "wrong_statistic_or_denominator",
+        "linear_feature_confusion"
+      ],
+      "C": [
+        "wrong_statistic_or_denominator",
+        "linear_feature_confusion"
+      ],
+      "D": [
+        "wrong_statistic_or_denominator",
+        "grammar_form_error",
+        "linear_feature_confusion"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A pie chart shows the allocation of a city's $800,000 annual parks budget. Parks Maintenance is 45%, New Equipment is 25%, Staff Salaries is 20%, and Community Events is 10%. How many dollars are allocated to Staff Salaries?",
+    "correctAnswer": "160000",
+    "id": "antigravity-48e09b23",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p2b4",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Two-variable data: models and scatterplots",
+    "difficulty": "Easy",
+    "type": "SPR",
+    "acceptableAnswers": [
+      "160000"
+    ],
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "student_produced_response",
+    "explanation": {
+      "correct": "The credited answer follows from the tested SAT skill and the information given in the prompt. Final answer = 160000.",
+      "distractors": {
+        "common_error_1": "A common error is stopping at an intermediate value instead of answering the requested quantity.",
+        "common_error_2": "A common error is applying the right operation to the wrong value from the prompt."
+      }
+    },
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Two-variable data: models and scatterplots",
+    "microSkill": "two-variable data: models and scatterplots",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 75,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20"
+  },
+  {
+    "prompt": "Solve: x^2-5x-14=0",
+    "choices": {
+      "A": "x=7 or x=2",
+      "B": "x=-7 or x=2",
+      "C": "x=14 or x=-1",
+      "D": "x=7 or x=-2"
+    },
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: (x-7)(x+2)=0. x=7 or x=-2. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "A": "Choice A is a plausible computation trap, but it does not match the final quantity requested.",
+        "B": "Choice B is a plausible computation trap, but it does not match the final quantity requested.",
+        "C": "Choice C is a plausible computation trap, but it does not match the final quantity requested."
+      }
+    },
+    "id": "antigravity-240e4b6e",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "unified-strict-1600-review-2026-05-18",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": "human_quality_review_required"
+      }
+    },
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Systems of equations in two variables",
+    "microSkill": "systems of equations in two variables",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "partial_system_solution"
+      ],
+      "B": [
+        "partial_system_solution"
+      ],
+      "C": [
+        "partial_system_solution"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "Which can establish causation: experiment or observational study?",
+    "choices": {
+      "A": "Neither.",
+      "B": "Only observational.",
+      "C": "Only a well-designed experiment with random assignment.",
+      "D": "Both equally."
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "To arrive at the correct answer, we must analyze the context provided in the prompt. The key reasoning is: Random assignment. Thus, the correct answer is Only a well-designed experiment with random assignment.. This directly supports the correct choice.",
+      "distractors": {
+        "A": "Choice A is a plausible computation trap, but it does not match the final quantity requested.",
+        "B": "Choice B is a plausible computation trap, but it does not match the final quantity requested.",
+        "D": "Choice D is a plausible computation trap, but it does not match the final quantity requested."
+      }
+    },
+    "id": "antigravity-498d3f11",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p16b",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "One-variable data: distributions and measures of center and spread",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "One-variable data: distributions and measures of center and spread",
+    "microSkill": "one-variable data: distributions and measures of center and spread",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 65,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "wrong_statistic_or_denominator"
+      ],
+      "B": [
+        "wrong_statistic_or_denominator"
+      ],
+      "D": [
+        "wrong_statistic_or_denominator"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "id": "antigravity-phB-71625cb3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Medium",
+    "prompt": "Which of the following lines is parallel to $y = -\\frac{3}{4}x + 5$?",
+    "type": "MCQ",
+    "choices": {
+      "A": "$y = -\\frac{3}{4}x - 2$",
+      "B": "$y = \\frac{4}{3}x + 5$",
+      "C": "$y = \\frac{3}{4}x + 5$",
+      "D": "$y = -\\frac{4}{3}x + 1$"
+    },
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: Parallel lines have the same slope. Slope = $-3/4$. Only A has slope $-3/4$. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {
+        "B": "This is the negative reciprocal slope (perpendicular).",
+        "C": "Same magnitude but wrong sign.",
+        "D": "Reciprocal with correct sign direction but wrong value."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identifying that parallel lines share the same slope.",
+      "trapTypes": [
+        "Perpendicular vs Parallel Confusion"
+      ]
+    },
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-phaseB-elite",
+    "generationEngine": "antigravity-master-prompt-hybrid",
+    "licenseNote": "Antigravity-generated elite draft.",
+    "visibility": "private_family",
+    "reviewStatus": "needs_review",
+    "targetBand": "SAT-1600"
+  },
+  {
+    "prompt": "What is the vertex of the parabola y = 2x² − 12x + 22?",
+    "choices": {
+      "A": "(3, 4)",
+      "B": "(−3, 4)",
+      "C": "(6, 22)",
+      "D": "(3, 22)"
+    },
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x-vertex = −b/(2a) = 12/(2×2) = 3. y-vertex = 2(9) − 12(3) + 22 = 18 − 36 + 22 = 4. Vertex = (3, 4).",
+      "distractors": {
+        "B": "Choice B is a plausible computation trap, but it does not match the final quantity requested.",
+        "C": "Choice C is a plausible computation trap, but it does not match the final quantity requested.",
+        "D": "Choice D is a plausible computation trap, but it does not match the final quantity requested."
+      }
+    },
+    "id": "antigravity-4c031716",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "unified-strict-1600-review-2026-05-18",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": "human_quality_review_required"
+      }
+    },
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Systems of equations in two variables",
+    "microSkill": "systems of equations in two variables",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "B": [
+        "partial_system_solution"
+      ],
+      "C": [
+        "partial_system_solution"
+      ],
+      "D": [
+        "partial_system_solution"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A number is drawn from 1-20. P(even AND greater than 10)?",
+    "choices": {
+      "A": "$\\frac{3}{10}$",
+      "B": "$\\frac{1}{5}$",
+      "C": "$\\frac{1}{4}$",
+      "D": "$\\frac{1}{2}$"
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Even AND >10: {12,14,16,18,20} = 5 out of 20 = 1/4. Final answer = $\\frac{1}{4}$.",
+      "distractors": {
+        "A": "Choice A is a plausible computation trap, but it does not match the final quantity requested.",
+        "B": "Choice B is a plausible computation trap, but it does not match the final quantity requested.",
+        "D": "Choice D is a plausible computation trap, but it does not match the final quantity requested."
+      }
+    },
+    "id": "antigravity-82b237ad",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p12c",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Probability and conditional probability",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Probability and conditional probability",
+    "microSkill": "probability and conditional probability",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 65,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "wrong_statistic_or_denominator"
+      ],
+      "B": [
+        "wrong_statistic_or_denominator"
+      ],
+      "D": [
+        "wrong_statistic_or_denominator"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A system has no solution. The lines must be:",
+    "choices": {
+      "A": "Intersecting at the origin",
+      "B": "Identical",
+      "C": "Parallel with different $y$-intercepts",
+      "D": "Perpendicular"
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Choice C is correct: Parallel with different $y$-intercepts. The source calculation is: No solution = parallel, different intercepts. The credited answer is C, Parallel with different $y$-intercepts. Method: Use both equations and keep the requested expression separate from the individual variable values. Trap check: A tempting error is to solve for one variable and stop, even though the prompt asks for a condition or expression involving the full system.",
+      "distractors": {
+        "A": "Choice A (Intersecting at the origin) is a plausible computation or setup trap, but it does not satisfy the relationships in the prompt that lead to Parallel with different $y$-intercepts.",
+        "B": "Choice B (Identical) is a plausible computation or setup trap, but it does not satisfy the relationships in the prompt that lead to Parallel with different $y$-intercepts.",
+        "D": "Choice D (Perpendicular) is a plausible computation or setup trap, but it does not satisfy the relationships in the prompt that lead to Parallel with different $y$-intercepts."
+      }
+    },
+    "id": "antigravity-99f681a1",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "antigravity-remaining-quality-upgrade-2026-05-20",
+      "verdict": "pass",
+      "reviewer": "Codex SAT expert spot-check",
+      "checkedAt": "2026-05-20",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "answer_key_and_choice_integrity",
+        "no_blocking_structural_issues",
+        "specific_wrong-answer_or_common-error_trap_notes",
+        "usable_in_private_unified_sat_progression"
+      ],
+      "previousContentAudit": {
+        "version": "p18a",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "questionType": "multiple_choice",
+    "expertRepairNotes": {
+      "remainingQualityUpgradeVersion": "antigravity-remaining-quality-upgrade-2026-05-20",
+      "antigravityP1HardMathExplanationUpgradeVersion": "antigravity-p1-hard-math-explanation-upgrade-2026-05-20"
+    },
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "strict1600Review": {
+      "version": "antigravity-remaining-quality-upgrade-2026-05-20",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "current Digital SAT domain/skill fit",
+        "specific explanation and trap notes",
+        "no active structural blocker"
+      ]
+    },
+    "canonicalSkill": "Systems of two linear equations in two variables",
+    "microSkill": "no solution",
+    "targetBand": "SAT-Elite",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 135,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "partial_system_solution"
+      ],
+      "B": [
+        "partial_system_solution"
+      ],
+      "D": [
+        "partial_system_solution"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "metadata": {
+      "cognitiveMove": "Analyzing constraints on parameters to determine the number of solutions for a system.",
+      "trapTypes": [
+        "Extreme Language"
+      ]
+    },
+    "type": "MCQ"
+  },
+  {
+    "prompt": "A right circular cylinder has a volume of $45\\pi$ cubic centimeters and a height of 5 centimeters. What is the radius of the base of the cylinder, in centimeters?",
+    "choices": {
+      "A": "4.5",
+      "B": "15",
+      "C": "3",
+      "D": "9"
+    },
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "The volume formula is $V = \\pi r^2 h$. Substituting the given values: $45\\pi = \\pi r^2 (5)$. Dividing by $5\\pi$ gives $r^2 = 9$. Thus, $r = 3$.",
+      "distractors": {
+        "A": "This is half of 9, not the square root.",
+        "B": "This is $45/3$, incorrectly combining the numbers.",
+        "D": "This is the value of $r^2$, not $r$."
+      }
+    },
+    "id": "antigravity-da96f75b",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_auto_reviewed",
+    "contentAudit": {
+      "version": "antigravity-pass-bulk-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT pass-row audit",
+      "checkedAt": "2026-05-18",
+      "checks": [
+        "required_fields",
+        "answer_key_distribution",
+        "answer_key",
+        "duplicate_choice_scan",
+        "duplicate_prompt_scan",
+        "student_produced_response_detection",
+        "private_visibility"
+      ],
+      "notes": "Promoted because the current Antigravity audit classified this row as pass with no blocking issues or warnings."
+    },
+    "section": "Math",
+    "domain": "Geometry and Trigonometry",
+    "skill": "Area and volume",
+    "difficulty": "Easy",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "canonicalSkill": "Area and volume",
+    "microSkill": "area and volume",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 65,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "wrong_geometry_formula_or_measure"
+      ],
+      "B": [
+        "wrong_geometry_formula_or_measure"
+      ],
+      "D": [
+        "wrong_geometry_formula_or_measure"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "id": "antigravity-phB-cd88950c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear functions",
+    "difficulty": "Medium",
+    "prompt": "If $f(x) = 2^{x+1}$, which is equivalent?",
+    "type": "MCQ",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: $2^{x+1} = 2^x \\cdot 2^1 = 2 \\cdot 2^x$. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {}
+    },
+    "metadata": {
+      "cognitiveMove": "Analyzing exponential/quadratic behavior using properties of growth, decay, and vertex.",
+      "trapTypes": [
+        "Growth vs Decay Confusion",
+        "Exponent Error",
+        "Logarithm Error"
+      ]
+    },
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-phaseB-elite",
+    "generationEngine": "antigravity-master-prompt-hybrid",
+    "licenseNote": "Antigravity-generated elite draft.",
+    "visibility": "private_family",
+    "reviewStatus": "needs_review",
+    "targetBand": "SAT-1600",
+    "choices": {
+      "A": "$2 \\cdot 2^x$",
+      "B": "$2^x + 2$",
+      "C": "$2x + 1$",
+      "D": "$(2x)^1$"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "prompt": "Which of the following is an equation of the line that is perpendicular to $y = -\\frac{2}{3}x + 4$ and passes through the point $(4, 1)$?",
+    "choices": {
+      "A": "$y = -\\frac{2}{3}x + \\frac{11}{3}$",
+      "B": "$y = \\frac{3}{2}x - 5$",
+      "C": "$y = -\\frac{3}{2}x + 7$",
+      "D": "$y = \\frac{3}{2}x + 1$"
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "A perpendicular line has a slope that is the negative reciprocal, so $m = 3/2$. Using point-slope form: $y - 1 = \\frac{3}{2}(x - 4) \\Rightarrow y = \\frac{3}{2}x - 6 + 1 \\Rightarrow y = \\frac{3}{2}x - 5$. Thus, the correct answer is $y = \\frac{3}{2}x - 5$.",
+      "distractors": {
+        "A": "Choice A is a plausible computation trap, but it does not match the final quantity requested.",
+        "C": "Choice C is a plausible computation trap, but it does not match the final quantity requested.",
+        "D": "Choice D is a plausible computation trap, but it does not match the final quantity requested."
+      }
+    },
+    "id": "antigravity-f3147382",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "unified-strict-1600-review-2026-05-18",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": "human_quality_review_required"
+      }
+    },
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Medium",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "multiple_choice",
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Linear functions",
+    "microSkill": "linear model",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 95,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "trapTypes": {
+      "A": [
+        "linear_feature_confusion"
+      ],
+      "C": [
+        "linear_feature_confusion"
+      ],
+      "D": [
+        "linear_feature_confusion"
+      ]
+    },
+    "trapTypesVersion": "trap-types-v1-2026-05-20",
+    "type": "MCQ"
+  },
+  {
+    "id": "antigravity-1600-4a52a1d8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear functions",
+    "difficulty": "Hard",
+    "prompt": "A radioactive substance decays according to $A(t) = A_0(0.5)^{\\frac{t}{50}}$, where $A_0$ is the initial amount, $t$ is time in years, and $50$ is the half-life. If $A(t)$ is rewritten as $A(t) = A_0(c)^t$, what is the value of $c$?",
+    "type": "MCQ",
+    "choices": {
+      "A": "$1 - \\frac{0.5}{50}$",
+      "B": "$(0.5)^{\\frac{1}{50}}$",
+      "C": "$(0.5)^{50}$",
+      "D": "$\\frac{0.5}{50}$"
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "To solve this problem, we follow a direct mathematical approach. The core calculation is: $(0.5)^{t/50} = ((0.5)^{1/50})^t$. Base $c$ must be $(0.5)^{1/50}$. By evaluating these expressions step-by-step, we arrive at the correct final solution.",
+      "distractors": {}
+    },
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-elite-mass-gen",
+    "generationEngine": "antigravity-master-prompt-procedural",
+    "licenseNote": "Antigravity-generated elite parametric draft.",
+    "visibility": "private_family",
+    "reviewStatus": "rejected",
+    "targetBand": "SAT-1600",
+    "metadata": {
+      "cognitiveMove": "Modeling exponential growth/decay or quadratic trajectories with parameterized constants.",
+      "trapTypes": [
+        "Procedural Error / Misinterpretation"
+      ]
+    },
+    "publicationStatus": "rejected_duplicate_prompt",
+    "practicePool": "hidden_duplicate",
+    "postReviewUse": "hidden_duplicate_rejected_template",
+    "lifecycleState": "rejected_hidden_duplicate",
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "contentAudit": {
+      "version": "antigravity-1600-new-batch-review-2026-05-20",
+      "verdict": "fail",
+      "reviewer": "Codex SAT expert review",
+      "checkedAt": "2026-05-20T10:19:02Z",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "bucket": "exact_duplicate_prompt_hidden",
+      "issues": [
+        "exact_duplicate_prompt_within_new_antigravity_1600_batch"
+      ],
+      "duplicateKeeperId": "antigravity-1600-fb22e86d",
+      "previousContentAudit": {
+        "version": "antigravity-1600-new-batch-review-2026-05-20",
+        "verdict": "fail",
+        "severity": null,
+        "bucket": "exact_duplicate_prompt_hidden"
+      }
+    },
+    "strict1600Review": {
+      "version": "antigravity-1600-new-batch-review-2026-05-20",
+      "status": "rejected_hidden_duplicate",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "keeperId": "antigravity-1600-fb22e86d"
+    }
+  },
+  {
+    "id": "antigravity-ph1sc-3e3a22c0",
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Evaluating statistical claims: observational studies and experiments",
+    "difficulty": "Medium",
+    "prompt": "A hospital study found that patients who were prescribed a statin medication had better cardiovascular outcomes than patients who were not prescribed statins. However, a statistician pointed out that patients prescribed statins also had regular doctor visits, controlled diets, and exercise regimens. Which of the following best describes the statistician's concern?",
+    "type": "MCQ",
+    "choices": {
+      "A": "The statin medication may have side effects that were not measured",
+      "B": "The improved outcomes may be due to the regular doctor visits, diet, and exercise rather than the statins themselves, making these confounding variables",
+      "C": "The study should have included patients from multiple hospitals",
+      "D": "Statins are not effective for cardiovascular health"
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "The statistician is identifying confounding variables. Patients prescribed statins also had regular doctor visits, controlled diets, and exercise regimens — all of which independently improve cardiovascular outcomes. These factors are confounded with statin use because they are associated with both the treatment (taking statins) and the outcome (cardiovascular health). It is impossible to determine from this observational data whether the improved outcomes are due to the statins, the lifestyle factors, or some combination. Random assignment to statin vs. control would be needed to isolate the effect of the medication.",
+      "distractors": {
+        "A": "While side effects are important to consider, the statistician's concern is about confounding — specifically whether the observed benefit is truly attributable to statins or to co-occurring healthy behaviors.",
+        "C": "Including multiple hospitals would improve generalizability but would not address the confounding problem within the study.",
+        "D": "The statistician is not claiming statins are ineffective; she is pointing out that the study design cannot isolate the effect of statins from the effect of the accompanying lifestyle changes."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify multiple co-occurring factors as confounders that prevent attribution of the outcome to the treatment alone",
+      "trapTypes": [
+        "Confounding Variable Blindness",
+        "Causation-Correlation Confusion"
+      ],
+      "subTopic": "Confounding Variables"
+    },
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-phase1-statistical-claims",
+    "generationEngine": "antigravity-master-prompt-hybrid",
+    "licenseNote": "Antigravity-generated elite draft.",
+    "visibility": "private_family",
+    "reviewStatus": "needs_review",
+    "targetBand": "SAT-1600"
+  },
+  {
+    "id": "antigravity-ph1sc-3b3e5620",
+    "section": "Math",
+    "domain": "Problem-Solving and Data Analysis",
+    "skill": "Evaluating statistical claims: observational studies and experiments",
+    "difficulty": "Medium",
+    "prompt": "A researcher found that among 5,000 employees surveyed at tech companies in Silicon Valley, those who reported working remotely at least 3 days per week had higher job satisfaction scores than those who worked entirely on-site. Which statement best represents what can be concluded from this study?",
+    "type": "MCQ",
+    "choices": {
+      "A": "Remote work causes higher job satisfaction for tech employees",
+      "B": "Among tech employees in Silicon Valley who were surveyed, remote work at least 3 days per week is associated with higher job satisfaction scores",
+      "C": "All employees should work remotely to increase their job satisfaction",
+      "D": "Remote work causes higher job satisfaction for all employees in all industries"
+    },
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "This is an observational survey — employees were not randomly assigned to work remotely or on-site. Therefore, only associational language is appropriate. Furthermore, the sample is limited to tech employees in Silicon Valley, so the conclusion should not extend beyond that population. The correct answer uses precise language: 'among tech employees in Silicon Valley who were surveyed,' 'is associated with,' and specifies 'higher job satisfaction scores' rather than making a prescriptive recommendation.",
+      "distractors": {
+        "A": "Causal language ('causes') is not appropriate because employees were not randomly assigned to remote or on-site work.",
+        "C": "This is a prescriptive recommendation that extends far beyond the data. The study is limited to tech employees in Silicon Valley and is observational.",
+        "D": "This over-generalizes in multiple ways: from association to causation, from tech employees to all employees, and from Silicon Valley to all locations."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Construct a conclusion that precisely matches the study's design limitations in both language and scope",
+      "trapTypes": [
+        "Causation-Correlation Confusion",
+        "Over-generalization"
+      ],
+      "subTopic": "Appropriate Conclusions"
+    },
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-phase1-statistical-claims",
+    "generationEngine": "antigravity-master-prompt-hybrid",
+    "licenseNote": "Antigravity-generated elite draft.",
+    "visibility": "private_family",
+    "reviewStatus": "needs_review",
+    "targetBand": "SAT-1600"
+  },
+  {
+    "prompt": "The value of a machine depreciates linearly from $50,000 to $14,000 over 9 years. What is the value after 6 years?",
+    "correctAnswer": "26000",
+    "id": "antigravity-2c46a63c",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p8fix",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "type": "SPR",
+    "acceptableAnswers": [
+      "26000"
+    ],
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "student_produced_response",
+    "explanation": {
+      "correct": "The correct answer is 26000. The source calculation is: The credited answer follows from the tested SAT skill and the information given in the prompt. Final answer = 26000. Method: Find the rate of change from the two input-output pairs, then use one point to build or extend the function. Trap check: The SAT trap is to report a nearby intermediate value instead of the final quantity named in the last sentence.",
+      "distractors": {}
+    },
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Linear functions",
+    "microSkill": "linear model",
+    "targetBand": "SAT-Advanced",
+    "modulePlacement": "module2_upper",
+    "estimatedTimeSeconds": 135,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20",
+    "expertRepairNotes": {
+      "antigravityP1HardMathExplanationUpgradeVersion": "antigravity-p1-hard-math-explanation-upgrade-2026-05-20"
+    },
+    "metadata": {
+      "cognitiveMove": "Modeling constant rates of change from contextual data or graphical representations.",
+      "trapTypes": [
+        "Procedural Error / Misinterpretation"
+      ]
+    }
+  },
+  {
+    "prompt": "A plumber charges $75 per visit plus $50/hour. If the total bill is $275, how many hours did the plumber work?",
+    "correctAnswer": "4",
+    "id": "antigravity-852a4ef2",
+    "sourceType": "antigravity",
+    "sourceName": "Antigravity Vault",
+    "sourceReference": "data/antigravity-bank.json",
+    "sourceSignalId": "antigravity-testbank",
+    "generationEngine": "antigravity",
+    "licenseNote": "Antigravity-generated original draft.",
+    "visibility": "private_family",
+    "reviewStatus": "reviewed",
+    "publicationStatus": "private_reviewed",
+    "contentAudit": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "verdict": "pass",
+      "reviewer": "Codex SAT strict 1600 review",
+      "checkedAt": "2026-05-18",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "checks": [
+        "current_digital_sat_domain_alignment",
+        "answer_key_and_choice_integrity",
+        "math_answer_and_explanation_consistency",
+        "duplicate_prompt_exclusion",
+        "structured_teaching_explanation_with_trap_notes",
+        "unified_pool_source_policy"
+      ],
+      "sourceUsagePolicy": "source is provenance only; reviewed item enters the unified mixed SAT pool subject to visibility permissions",
+      "previousContentAudit": {
+        "version": "p10e",
+        "verdict": "needs_review",
+        "severity": null,
+        "bucket": null
+      }
+    },
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Medium",
+    "type": "SPR",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "sourceUsagePolicy": "provenance_only_unified_pool",
+    "postReviewUse": "unified_mixed_sat_pool",
+    "unifiedPoolPolicyVersion": "unified-source-policy-2026-05-18",
+    "questionType": "student_produced_response",
+    "explanation": {
+      "correct": "The credited answer follows from the tested SAT skill and the information given in the prompt. Final answer = 4.",
+      "distractors": {
+        "common_error_1": "A common error is stopping at an intermediate value instead of answering the requested quantity.",
+        "common_error_2": "A common error is applying the right operation to the wrong value from the prompt."
+      }
+    },
+    "strict1600Review": {
+      "version": "unified-strict-1600-review-2026-05-18",
+      "status": "reviewed",
+      "target": "SAT 1000-1600 roadmap, target 1600",
+      "criteria": [
+        "accurate answer key",
+        "academically sound SAT-style prompt",
+        "current Digital SAT domain/skill fit",
+        "no active exact-prompt duplicate",
+        "usable in a 1000-1600 SAT progression"
+      ]
+    },
+    "canonicalSkill": "Linear equations in one variable",
+    "microSkill": "linear equations in one variable",
+    "targetBand": "SAT-Core",
+    "modulePlacement": "module1",
+    "estimatedTimeSeconds": 105,
+    "curriculumMetadataVersion": "curriculum-routing-v1-2026-05-20"
+  }
+]

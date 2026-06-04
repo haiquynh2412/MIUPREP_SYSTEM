@@ -1,0 +1,1143 @@
+{
+  "generatedAt": "2026-06-03T09:51:58.640Z",
+  "summary": {
+    "tests": 57,
+    "questions": 3364,
+    "blockers": 0,
+    "warnings": 155,
+    "byCode": {
+      "schema.sections[3].passageHtml": 3,
+      "schema.sections[1].questionGroups[0].questions[0].blankIndex": 4,
+      "schema.sections[1].questionGroups[0].questions[1].blankIndex": 4,
+      "schema.sections[1].questionGroups[0].questions[2].blankIndex": 4,
+      "schema.sections[1].questionGroups[0].questions[3].blankIndex": 4,
+      "schema.sections[1].questionGroups[0].questions[4].blankIndex": 4,
+      "schema.sections[1].questionGroups[0].questions[5].blankIndex": 4,
+      "schema.sections[1].questionGroups[0].questions[6].blankIndex": 4,
+      "schema.sections[1].questionGroups[0].questions[7].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[0].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[1].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[2].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[3].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[4].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[5].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[6].blankIndex": 4,
+      "schema.sections[2].questionGroups[0].questions[7].blankIndex": 4,
+      "schema.sections[3].questionGroups[0].questions[0].blankIndex": 4,
+      "schema.sections[3].questionGroups[0].questions[1].blankIndex": 4,
+      "schema.sections[3].questionGroups[0].questions[2].blankIndex": 4,
+      "schema.sections[3].questionGroups[0].questions[3].blankIndex": 4,
+      "schema.sections[3].questionGroups[0].questions[4].blankIndex": 4,
+      "schema.sections[3].questionGroups[0].questions[5].blankIndex": 4,
+      "schema.sections[0].transcript": 4,
+      "schema.sections[1].transcript": 4,
+      "schema.sections[2].transcript": 4,
+      "schema.sections[3].transcript": 4,
+      "schema.sections[4].transcript": 4,
+      "schema.sections[5].transcript": 4,
+      "schema.sections[6].transcript": 4,
+      "schema.sections[7].transcript": 4,
+      "schema.sections[8].transcript": 4,
+      "schema.sections[9].transcript": 4,
+      "schema.sections[10].transcript": 4,
+      "schema.sections[11].transcript": 4,
+      "schema.sections[12].transcript": 4,
+      "schema.sections[13].transcript": 4,
+      "schema.sections[14].transcript": 4,
+      "schema.sections[15].transcript": 4
+    },
+    "byProgram": {
+      "ielts": 6,
+      "cpe": 47,
+      "cae": 4
+    }
+  },
+  "issues": [
+    {
+      "code": "schema.sections[3].passageHtml",
+      "path": "tests.cpe-practice-test2-book3.sections[3].passageHtml",
+      "message": "Warning: Reading section is missing passageHtml.",
+      "severity": "warning",
+      "testId": "cpe-practice-test2-book3"
+    },
+    {
+      "code": "schema.sections[3].passageHtml",
+      "path": "tests.cpe-practice-test3-book3.sections[3].passageHtml",
+      "message": "Warning: Reading section is missing passageHtml.",
+      "severity": "warning",
+      "testId": "cpe-practice-test3-book3"
+    },
+    {
+      "code": "schema.sections[3].passageHtml",
+      "path": "tests.cpe-practice-test4-book3.sections[3].passageHtml",
+      "message": "Warning: Reading section is missing passageHtml.",
+      "severity": "warning",
+      "testId": "cpe-practice-test4-book3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[1].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[2].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[3].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[3].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[3].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[3].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[3].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test1.sections[3].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test1"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[1].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[2].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[3].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[3].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[3].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[3].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[3].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test2.sections[3].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test2"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[1].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[2].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[3].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[3].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[3].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[3].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[3].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test3.sections[3].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test3"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[1].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[1].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[6].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[6].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[2].questionGroups[0].questions[7].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[2].questionGroups[0].questions[7].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[0].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[3].questionGroups[0].questions[0].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[1].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[3].questionGroups[0].questions[1].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[2].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[3].questionGroups[0].questions[2].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[3].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[3].questionGroups[0].questions[3].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[4].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[3].questionGroups[0].questions[4].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[3].questionGroups[0].questions[5].blankIndex",
+      "path": "tests.cam-cpe1-test4.sections[3].questionGroups[0].questions[5].blankIndex",
+      "message": "Warning: Cambridge gap fill question is missing blankIndex.",
+      "severity": "warning",
+      "testId": "cam-cpe1-test4"
+    },
+    {
+      "code": "schema.sections[0].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[0].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[1].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[1].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[2].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[2].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[3].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[3].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[4].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[4].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[5].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[5].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[6].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[6].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[7].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[7].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[8].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[8].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[9].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[9].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[10].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[10].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[11].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[11].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[12].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[12].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[13].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[13].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[14].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[14].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[15].transcript",
+      "path": "tests.camcp2-listening-topic-bank.sections[15].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp2-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[0].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[0].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[1].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[1].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[2].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[2].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[3].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[3].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[4].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[4].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[5].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[5].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[6].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[6].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[7].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[7].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[8].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[8].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[9].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[9].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[10].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[10].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[11].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[11].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[12].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[12].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[13].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[13].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[14].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[14].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[15].transcript",
+      "path": "tests.camcp3-listening-topic-bank.sections[15].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp3-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[0].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[0].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[1].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[1].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[2].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[2].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[3].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[3].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[4].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[4].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[5].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[5].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[6].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[6].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[7].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[7].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[8].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[8].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[9].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[9].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[10].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[10].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[11].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[11].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[12].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[12].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[13].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[13].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[14].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[14].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[15].transcript",
+      "path": "tests.camcp4-listening-topic-bank.sections[15].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp4-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[0].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[0].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[1].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[1].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[2].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[2].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[3].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[3].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[4].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[4].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[5].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[5].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[6].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[6].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[7].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[7].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[8].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[8].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[9].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[9].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[10].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[10].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[11].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[11].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[12].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[12].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[13].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[13].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[14].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[14].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    },
+    {
+      "code": "schema.sections[15].transcript",
+      "path": "tests.camcp5-listening-topic-bank.sections[15].transcript",
+      "message": "Warning: Educational tapescript/transcript is missing for listening review.",
+      "severity": "warning",
+      "testId": "camcp5-listening-topic-bank"
+    }
+  ],
+  "affectedQuestions": []
+}

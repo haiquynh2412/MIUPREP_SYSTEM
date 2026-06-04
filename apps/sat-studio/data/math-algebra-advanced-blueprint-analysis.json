@@ -1,0 +1,550 @@
+{
+  "generatedAt": "2026-05-26",
+  "basis": "Math questions with reviewStatus=reviewed, not rejected/blocked, not hidden_duplicate, not remedial_pool.",
+  "summary": {
+    "coreReadyMathTotal": 5543,
+    "algebraCount": 1840,
+    "algebraPct": 33.2,
+    "algebraAdditionalIfOnlyAddingThisDomain": 154,
+    "advancedMathCount": 1885,
+    "advancedMathPct": 34.0,
+    "advancedMathAdditionalIfOnlyAddingThisDomain": 85,
+    "dualTarget": {
+      "totalAdditionsIfOnlyAddingAlgebraAndAdvanced": 517,
+      "algebraAdditionsAtDualTarget": 281,
+      "advancedMathAdditionsAtDualTarget": 236,
+      "projectedMathTotal": 6060
+    }
+  },
+  "domainDistribution": [
+    {
+      "domain": "Algebra",
+      "count": 1840,
+      "actualPct": 33.2,
+      "officialPct": 35,
+      "deltaPctPoints": -1.8,
+      "targetCountAtCurrentTotal": 1940,
+      "deltaCountAtCurrentTotal": -100,
+      "additionalNeededIfOnlyAddingThisDomain": 154
+    },
+    {
+      "domain": "Advanced Math",
+      "count": 1885,
+      "actualPct": 34.0,
+      "officialPct": 35,
+      "deltaPctPoints": -1.0,
+      "targetCountAtCurrentTotal": 1940,
+      "deltaCountAtCurrentTotal": -55,
+      "additionalNeededIfOnlyAddingThisDomain": 85
+    },
+    {
+      "domain": "Problem-Solving and Data Analysis",
+      "count": 945,
+      "actualPct": 17.0,
+      "officialPct": 15,
+      "deltaPctPoints": 2.0,
+      "targetCountAtCurrentTotal": 831,
+      "deltaCountAtCurrentTotal": 114,
+      "additionalNeededIfOnlyAddingThisDomain": 0
+    },
+    {
+      "domain": "Geometry and Trigonometry",
+      "count": 873,
+      "actualPct": 15.7,
+      "officialPct": 15,
+      "deltaPctPoints": 0.7,
+      "targetCountAtCurrentTotal": 831,
+      "deltaCountAtCurrentTotal": 42,
+      "additionalNeededIfOnlyAddingThisDomain": 0
+    }
+  ],
+  "families": {
+    "Algebra": [
+      {
+        "family": "Linear equations in one variable",
+        "count": 350,
+        "targetSharePct": 18,
+        "targetCountWithinCurrentDomain": 331,
+        "deltaToWithinDomainTarget": 19,
+        "floorFor1600Track": 70,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 173,
+          "Medium": 92,
+          "Easy": 85
+        },
+        "hardPct": 49.4,
+        "targetBand": {
+          "SAT-1600": 96,
+          "SAT-Core": 92,
+          "G10-Bridge": 85,
+          "SAT-Advanced": 58,
+          "SAT-Elite": 19
+        },
+        "format": {
+          "MC": 244,
+          "SPR": 106
+        },
+        "sourceType": {
+          "antigravity": 200,
+          "opensat": 60,
+          "sat_studio_original": 46,
+          "sat_1590": 18,
+          "foundation": 11,
+          "sat_king": 10,
+          "ai_generated": 5
+        },
+        "sampleIds": [
+          "antigravity-4dae7f79",
+          "antigravity-d68c6946",
+          "antigravity-2ac371c5",
+          "antigravity-6cc76c78",
+          "antigravity-ca118f7b",
+          "antigravity-f80937a3"
+        ]
+      },
+      {
+        "family": "Linear equations in two variables",
+        "count": 291,
+        "targetSharePct": 20,
+        "targetCountWithinCurrentDomain": 368,
+        "deltaToWithinDomainTarget": -77,
+        "floorFor1600Track": 70,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 169,
+          "Easy": 72,
+          "Medium": 50
+        },
+        "hardPct": 58.1,
+        "targetBand": {
+          "SAT-Advanced": 74,
+          "G10-Bridge": 72,
+          "SAT-1600": 51,
+          "SAT-Core": 50,
+          "SAT-Elite": 44
+        },
+        "format": {
+          "MC": 196,
+          "SPR": 95
+        },
+        "sourceType": {
+          "antigravity": 129,
+          "sat_studio_original": 88,
+          "sat_1590": 40,
+          "sat_king": 24,
+          "foundation": 10
+        },
+        "sampleIds": [
+          "antigravity-48d10a05",
+          "antigravity-cdca92c4",
+          "antigravity-b35fd608",
+          "antigravity-8ab7504a",
+          "antigravity-c7c58a6d",
+          "antigravity-2ffd0936"
+        ]
+      },
+      {
+        "family": "Linear functions",
+        "count": 463,
+        "targetSharePct": 22,
+        "targetCountWithinCurrentDomain": 405,
+        "deltaToWithinDomainTarget": 58,
+        "floorFor1600Track": 70,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 227,
+          "Easy": 120,
+          "Medium": 116
+        },
+        "hardPct": 49.0,
+        "targetBand": {
+          "G10-Bridge": 120,
+          "SAT-Core": 116,
+          "SAT-1600": 101,
+          "SAT-Advanced": 95,
+          "SAT-Elite": 31
+        },
+        "format": {
+          "MC": 349,
+          "SPR": 114
+        },
+        "sourceType": {
+          "antigravity": 213,
+          "sat_studio_original": 99,
+          "private_vault": 57,
+          "sat_1590": 30,
+          "ai_generated": 29,
+          "foundation": 18,
+          "sat_king": 12,
+          "opensat": 5
+        },
+        "sampleIds": [
+          "antigravity-8b669912",
+          "antigravity-e178d465",
+          "antigravity-ae2b8c98",
+          "antigravity-1ca5e800",
+          "antigravity-a2fdcd1b",
+          "antigravity-4863a6c0"
+        ]
+      },
+      {
+        "family": "Linear inequalities in one or two variables",
+        "count": 288,
+        "targetSharePct": 15,
+        "targetCountWithinCurrentDomain": 276,
+        "deltaToWithinDomainTarget": 12,
+        "floorFor1600Track": 70,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 190,
+          "Medium": 57,
+          "Easy": 41
+        },
+        "hardPct": 66.0,
+        "targetBand": {
+          "SAT-1600": 103,
+          "SAT-Advanced": 69,
+          "SAT-Core": 57,
+          "G10-Bridge": 41,
+          "SAT-Elite": 18
+        },
+        "format": {
+          "MC": 213,
+          "SPR": 75
+        },
+        "sourceType": {
+          "antigravity": 183,
+          "sat_studio_original": 53,
+          "sat_1590": 18,
+          "foundation": 14,
+          "ai_generated": 10,
+          "sat_king": 8,
+          "private_vault": 2
+        },
+        "sampleIds": [
+          "antigravity-0cf84657",
+          "antigravity-cd14aa84",
+          "antigravity-936b31e3",
+          "antigravity-097cd8d6",
+          "antigravity-a040f9be",
+          "antigravity-63cfb350"
+        ]
+      },
+      {
+        "family": "Systems of two linear equations in two variables",
+        "count": 448,
+        "targetSharePct": 25,
+        "targetCountWithinCurrentDomain": 460,
+        "deltaToWithinDomainTarget": -12,
+        "floorFor1600Track": 70,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 287,
+          "Medium": 116,
+          "Easy": 45
+        },
+        "hardPct": 64.1,
+        "targetBand": {
+          "SAT-1600": 159,
+          "SAT-Core": 147,
+          "SAT-Advanced": 100,
+          "SAT-Elite": 40,
+          "G10-Bridge": 2
+        },
+        "format": {
+          "MC": 343,
+          "SPR": 105
+        },
+        "sourceType": {
+          "antigravity": 209,
+          "sat_studio_original": 125,
+          "ai_generated": 52,
+          "sat_1590": 28,
+          "foundation": 26,
+          "sat_king": 7,
+          "opensat": 1
+        },
+        "sampleIds": [
+          "antigravity-cd0acd86",
+          "antigravity-ce1603d9",
+          "antigravity-5f9873e4",
+          "antigravity-6bf3356f",
+          "antigravity-0b4d90c3",
+          "antigravity-487d436e"
+        ]
+      }
+    ],
+    "Advanced Math": [
+      {
+        "family": "Equivalent expressions",
+        "count": 416,
+        "targetSharePct": 22,
+        "targetCountWithinCurrentDomain": 415,
+        "deltaToWithinDomainTarget": 1,
+        "floorFor1600Track": 80,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 238,
+          "Easy": 89,
+          "Medium": 89
+        },
+        "hardPct": 57.2,
+        "targetBand": {
+          "SAT-Core": 165,
+          "SAT-1600": 121,
+          "SAT-Elite": 117,
+          "SAT-Advanced": 11,
+          "G10-Bridge": 2
+        },
+        "format": {
+          "MC": 319,
+          "SPR": 97
+        },
+        "sourceType": {
+          "antigravity": 287,
+          "sat_studio_original": 54,
+          "sat_1590": 22,
+          "foundation": 20,
+          "ai_generated": 17,
+          "sat_king": 12,
+          "opensat": 4
+        },
+        "sampleIds": [
+          "antigravity-015344eb",
+          "antigravity-427519d7",
+          "antigravity-566f2dac",
+          "antigravity-daff5b51",
+          "antigravity-a5575754",
+          "antigravity-aaec5daa"
+        ]
+      },
+      {
+        "family": "Nonlinear equations in one variable",
+        "count": 557,
+        "targetSharePct": 30,
+        "targetCountWithinCurrentDomain": 566,
+        "deltaToWithinDomainTarget": -9,
+        "floorFor1600Track": 80,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 429,
+          "Medium": 81,
+          "Easy": 47
+        },
+        "hardPct": 77.0,
+        "targetBand": {
+          "SAT-Elite": 244,
+          "SAT-1600": 185,
+          "SAT-Core": 125,
+          "G10-Bridge": 3
+        },
+        "format": {
+          "MC": 457,
+          "SPR": 100
+        },
+        "sourceType": {
+          "antigravity": 278,
+          "sat_studio_original": 246,
+          "foundation": 32,
+          "opensat": 1
+        },
+        "sampleIds": [
+          "antigravity-5b1506e5",
+          "antigravity-7131af52",
+          "antigravity-b2f0c5ed",
+          "antigravity-5740b20a",
+          "antigravity-d90a3412",
+          "antigravity-f21b65cf"
+        ]
+      },
+      {
+        "family": "Nonlinear functions",
+        "count": 538,
+        "targetSharePct": 28,
+        "targetCountWithinCurrentDomain": 528,
+        "deltaToWithinDomainTarget": 10,
+        "floorFor1600Track": 80,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 365,
+          "Medium": 96,
+          "Easy": 77
+        },
+        "hardPct": 67.8,
+        "targetBand": {
+          "SAT-1600": 226,
+          "SAT-Core": 160,
+          "SAT-Elite": 139,
+          "SAT-Advanced": 11,
+          "G10-Bridge": 2
+        },
+        "format": {
+          "MC": 382,
+          "SPR": 156
+        },
+        "sourceType": {
+          "antigravity": 342,
+          "sat_studio_original": 124,
+          "sat_1590": 24,
+          "foundation": 19,
+          "ai_generated": 18,
+          "sat_king": 11
+        },
+        "sampleIds": [
+          "antigravity-63ffd90b",
+          "antigravity-b6aabba6",
+          "antigravity-828ea96c",
+          "antigravity-3711193b",
+          "antigravity-ec56dd48",
+          "antigravity-564aef99"
+        ]
+      },
+      {
+        "family": "Systems of equations in two variables",
+        "count": 374,
+        "targetSharePct": 20,
+        "targetCountWithinCurrentDomain": 377,
+        "deltaToWithinDomainTarget": -3,
+        "floorFor1600Track": 80,
+        "shortfallToFloor": 0,
+        "difficulty": {
+          "Hard": 149,
+          "Medium": 149,
+          "Easy": 76
+        },
+        "hardPct": 39.8,
+        "targetBand": {
+          "SAT-Core": 191,
+          "SAT-Elite": 95,
+          "SAT-1600": 54,
+          "SAT-Advanced": 34
+        },
+        "format": {
+          "MC": 252,
+          "SPR": 122
+        },
+        "sourceType": {
+          "opensat": 109,
+          "antigravity": 86,
+          "sat_1590": 74,
+          "ai_generated": 41,
+          "sat_king": 36,
+          "private_vault": 10,
+          "foundation": 9,
+          "sat_studio_original": 9
+        },
+        "sampleIds": [
+          "antigravity-fc5c61b1",
+          "antigravity-f04dd3c9",
+          "antigravity-72ca498e",
+          "antigravity-566556f8",
+          "antigravity-278fb6bc",
+          "antigravity-13c0ecc5"
+        ]
+      }
+    ]
+  },
+  "phaseA": {
+    "Algebra": {
+      "total": 28,
+      "familyAllocation": {
+        "Linear equations in one variable": 5,
+        "Linear equations in two variables": 6,
+        "Linear functions": 6,
+        "Systems of two linear equations in two variables": 7,
+        "Linear inequalities in one or two variables": 4
+      },
+      "difficultyAllocation": {
+        "Easy": 3,
+        "Medium": 13,
+        "Hard": 12
+      },
+      "targetBandAllocation": {
+        "G10-Bridge": 5,
+        "SAT-Core": 9,
+        "SAT-Advanced": 8,
+        "SAT-Elite": 6
+      },
+      "formatAllocation": {
+        "MC": 22,
+        "SPR": 6
+      }
+    },
+    "Advanced Math": {
+      "total": 36,
+      "familyAllocation": {
+        "Equivalent expressions": 8,
+        "Nonlinear equations in one variable": 11,
+        "Systems of equations in two variables": 7,
+        "Nonlinear functions": 10
+      },
+      "difficultyAllocation": {
+        "Easy": 2,
+        "Medium": 11,
+        "Hard": 23
+      },
+      "targetBandAllocation": {
+        "G10-Bridge": 6,
+        "SAT-Core": 12,
+        "SAT-Advanced": 11,
+        "SAT-Elite": 7
+      },
+      "formatAllocation": {
+        "MC": 28,
+        "SPR": 8
+      }
+    }
+  },
+  "phaseB": {
+    "Algebra": {
+      "total": 70,
+      "familyAllocation": {
+        "Linear equations in one variable": 13,
+        "Linear equations in two variables": 14,
+        "Linear functions": 15,
+        "Systems of two linear equations in two variables": 18,
+        "Linear inequalities in one or two variables": 10
+      },
+      "difficultyAllocation": {
+        "Easy": 7,
+        "Medium": 32,
+        "Hard": 31
+      },
+      "targetBandAllocation": {
+        "G10-Bridge": 13,
+        "SAT-Core": 22,
+        "SAT-Advanced": 21,
+        "SAT-Elite": 14
+      },
+      "formatAllocation": {
+        "MC": 55,
+        "SPR": 15
+      }
+    },
+    "Advanced Math": {
+      "total": 90,
+      "familyAllocation": {
+        "Equivalent expressions": 20,
+        "Nonlinear equations in one variable": 27,
+        "Systems of equations in two variables": 18,
+        "Nonlinear functions": 25
+      },
+      "difficultyAllocation": {
+        "Easy": 6,
+        "Medium": 27,
+        "Hard": 57
+      },
+      "targetBandAllocation": {
+        "G10-Bridge": 16,
+        "SAT-Core": 29,
+        "SAT-Advanced": 27,
+        "SAT-Elite": 18
+      },
+      "formatAllocation": {
+        "MC": 70,
+        "SPR": 20
+      }
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-05-16",
+  "totalQuestions": 2260,
+  "sourceCounts": {
+    "foundation": 219,
+    "opensat": 1026,
+    "sat_1590": 661,
+    "sat_king": 354
+  },
+  "sectionCounts": {
+    "Math": 1064,
+    "Reading and Writing": 1196
+  },
+  "domainCounts": [
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "count": 387
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "count": 357
+    },
+    {
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "count": 163
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "count": 157
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "count": 378
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Expression of Ideas",
+      "count": 142
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "count": 293
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "count": 383
+    }
+  ],
+  "skillCounts": [
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Equivalent expressions",
+      "count": 62
+    },
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable",
+      "count": 22
+    },
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "count": 239
+    },
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions",
+      "count": 61
+    },
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Systems of equations in two variables",
+      "count": 3
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "count": 99
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in two variables",
+      "count": 83
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions",
+      "count": 70
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear inequalities in one or two variables",
+      "count": 40
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of equations in two variables",
+      "count": 3
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of two linear equations in two variables",
+      "count": 62
+    },
+    {
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Area and volume",
+      "count": 32
+    },
+    {
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "count": 68
+    },
+    {
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Lines, angles, and triangles",
+      "count": 28
+    },
+    {
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Right triangles and trigonometry",
+      "count": 35
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Evaluating statistical claims: observational studies and experiments",
+      "count": 3
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Inference from sample statistics and margin of error",
+      "count": 3
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "One-variable data: distributions and measures of center and spread",
+      "count": 49
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Percentages",
+      "count": 25
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Probability and conditional probability",
+      "count": 14
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Ratios, rates, proportional relationships, and units",
+      "count": 42
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Two-variable data: models and scatterplots",
+      "count": 21
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Cross-Text Connections",
+      "count": 48
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Text Structure and Purpose",
+      "count": 200
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Words in Context",
+      "count": 130
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Expression of Ideas",
+      "skill": "Rhetorical Synthesis",
+      "count": 88
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Expression of Ideas",
+      "skill": "Transitions",
+      "count": 54
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "count": 143
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Command of Evidence: Quantitative",
+      "count": 24
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Command of Evidence: Textual",
+      "count": 17
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Inferences",
+      "count": 109
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "count": 326
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Form, Structure, and Sense",
+      "count": 57
+    }
+  ],
+  "thinSkillsUnder10": [
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Systems of equations in two variables",
+      "count": 3
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of equations in two variables",
+      "count": 3
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Evaluating statistical claims: observational studies and experiments",
+      "count": 3
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Inference from sample statistics and margin of error",
+      "count": 3
+    }
+  ],
+  "notes": [
+    "OpenSAT/PineSAT had broad domain labels only; SAT Studio infers sub-skills heuristically for topic navigation.",
+    "Foundation items are original SAT Studio draft questions and should remain needs_review until checked."
+  ]
+}

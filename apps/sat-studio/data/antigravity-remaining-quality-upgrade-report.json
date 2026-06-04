@@ -1,0 +1,618 @@
+{
+  "apply": true,
+  "version": "antigravity-remaining-quality-upgrade-2026-05-20",
+  "targetCount": 76,
+  "upgraded": [
+    {
+      "id": "antigravity-ff6fdda6",
+      "sourceIndex": 2993
+    },
+    {
+      "id": "antigravity-2fd20f28",
+      "sourceIndex": 2994
+    },
+    {
+      "id": "antigravity-9eedca1a",
+      "sourceIndex": 2995
+    },
+    {
+      "id": "antigravity-15d43d0d",
+      "sourceIndex": 2996
+    },
+    {
+      "id": "antigravity-99f681a1",
+      "sourceIndex": 2997
+    },
+    {
+      "id": "antigravity-efcc7ef4",
+      "sourceIndex": 2998
+    },
+    {
+      "id": "antigravity-3e2870c3",
+      "sourceIndex": 2999
+    },
+    {
+      "id": "antigravity-8b6f2285",
+      "sourceIndex": 3001
+    },
+    {
+      "id": "antigravity-aabfea1e",
+      "sourceIndex": 3002
+    },
+    {
+      "id": "antigravity-dce52fe6",
+      "sourceIndex": 3005
+    },
+    {
+      "id": "antigravity-793e32ee",
+      "sourceIndex": 3007
+    },
+    {
+      "id": "antigravity-b36e3ab4",
+      "sourceIndex": 3008
+    },
+    {
+      "id": "antigravity-57ab199d",
+      "sourceIndex": 3009
+    },
+    {
+      "id": "antigravity-d0e07586",
+      "sourceIndex": 3010
+    },
+    {
+      "id": "antigravity-acfa9703",
+      "sourceIndex": 3011
+    },
+    {
+      "id": "antigravity-5abf57e7",
+      "sourceIndex": 3013
+    },
+    {
+      "id": "antigravity-bd8de68b",
+      "sourceIndex": 3015
+    },
+    {
+      "id": "antigravity-657f3c05",
+      "sourceIndex": 3016
+    },
+    {
+      "id": "antigravity-c596188c",
+      "sourceIndex": 3017
+    },
+    {
+      "id": "antigravity-17f38f8f",
+      "sourceIndex": 3018
+    },
+    {
+      "id": "antigravity-d49bfd0a",
+      "sourceIndex": 3023
+    },
+    {
+      "id": "antigravity-70a15311",
+      "sourceIndex": 3024
+    },
+    {
+      "id": "antigravity-f9838d5d",
+      "sourceIndex": 3025
+    },
+    {
+      "id": "antigravity-321273ec",
+      "sourceIndex": 3026
+    },
+    {
+      "id": "antigravity-d912ce6e",
+      "sourceIndex": 3027
+    },
+    {
+      "id": "antigravity-a1c6ee45",
+      "sourceIndex": 3028
+    },
+    {
+      "id": "antigravity-aeb119ea",
+      "sourceIndex": 3029
+    },
+    {
+      "id": "antigravity-2c41ec52",
+      "sourceIndex": 3030
+    },
+    {
+      "id": "antigravity-facd2f6d",
+      "sourceIndex": 3031
+    },
+    {
+      "id": "antigravity-ad952a80",
+      "sourceIndex": 3032
+    },
+    {
+      "id": "antigravity-e6a559ec",
+      "sourceIndex": 3033
+    },
+    {
+      "id": "antigravity-fac814ec",
+      "sourceIndex": 3034
+    },
+    {
+      "id": "antigravity-9f9d5a09",
+      "sourceIndex": 3035
+    },
+    {
+      "id": "antigravity-a17125c6",
+      "sourceIndex": 3036
+    },
+    {
+      "id": "antigravity-38b2fea8",
+      "sourceIndex": 3037
+    },
+    {
+      "id": "antigravity-08ff2e74",
+      "sourceIndex": 3038
+    },
+    {
+      "id": "antigravity-b71d3495",
+      "sourceIndex": 3039
+    },
+    {
+      "id": "antigravity-c3462613",
+      "sourceIndex": 3040
+    },
+    {
+      "id": "antigravity-72403f6e",
+      "sourceIndex": 3041
+    },
+    {
+      "id": "antigravity-502ecbdc",
+      "sourceIndex": 3042
+    },
+    {
+      "id": "antigravity-29524493",
+      "sourceIndex": 3043
+    },
+    {
+      "id": "antigravity-27b143e3",
+      "sourceIndex": 3044
+    },
+    {
+      "id": "antigravity-941d0b9a",
+      "sourceIndex": 3045
+    },
+    {
+      "id": "antigravity-126343cd",
+      "sourceIndex": 3046
+    },
+    {
+      "id": "antigravity-2eaf9a86",
+      "sourceIndex": 3047
+    },
+    {
+      "id": "antigravity-1fa99583",
+      "sourceIndex": 3048
+    },
+    {
+      "id": "antigravity-046e066a",
+      "sourceIndex": 3051
+    },
+    {
+      "id": "antigravity-fb27bbf2",
+      "sourceIndex": 3052
+    },
+    {
+      "id": "antigravity-2ecd91ac",
+      "sourceIndex": 3053
+    },
+    {
+      "id": "antigravity-d5d5611d",
+      "sourceIndex": 3054
+    },
+    {
+      "id": "antigravity-c8ef0e50",
+      "sourceIndex": 3055
+    },
+    {
+      "id": "antigravity-e79c7f5f",
+      "sourceIndex": 3056
+    },
+    {
+      "id": "antigravity-92678e03",
+      "sourceIndex": 3057
+    },
+    {
+      "id": "antigravity-1fc21f1b",
+      "sourceIndex": 3059
+    },
+    {
+      "id": "antigravity-a02a1390",
+      "sourceIndex": 3060
+    },
+    {
+      "id": "antigravity-ea0c1d75",
+      "sourceIndex": 3062
+    },
+    {
+      "id": "antigravity-7305bb16",
+      "sourceIndex": 3063
+    },
+    {
+      "id": "antigravity-09ea19eb",
+      "sourceIndex": 3064
+    },
+    {
+      "id": "antigravity-d2ef2266",
+      "sourceIndex": 3065
+    },
+    {
+      "id": "antigravity-01bcf303",
+      "sourceIndex": 3066
+    },
+    {
+      "id": "antigravity-12e0b725",
+      "sourceIndex": 3067
+    },
+    {
+      "id": "antigravity-a262cb23",
+      "sourceIndex": 3068
+    },
+    {
+      "id": "antigravity-7fc1cfcd",
+      "sourceIndex": 3069
+    },
+    {
+      "id": "antigravity-068bc1c6",
+      "sourceIndex": 3070
+    },
+    {
+      "id": "antigravity-aa543aa1",
+      "sourceIndex": 3071
+    },
+    {
+      "id": "antigravity-852d344d",
+      "sourceIndex": 3072
+    },
+    {
+      "id": "antigravity-4ed74a07",
+      "sourceIndex": 3073
+    },
+    {
+      "id": "antigravity-d5311291",
+      "sourceIndex": 3074
+    },
+    {
+      "id": "antigravity-e3a3da8e",
+      "sourceIndex": 3075
+    },
+    {
+      "id": "antigravity-52344719",
+      "sourceIndex": 3076
+    },
+    {
+      "id": "antigravity-448902a1",
+      "sourceIndex": 3077
+    },
+    {
+      "id": "antigravity-c1337b26",
+      "sourceIndex": 3078
+    },
+    {
+      "id": "antigravity-9ed2d897",
+      "sourceIndex": 3079
+    },
+    {
+      "id": "antigravity-4e7a0993",
+      "sourceIndex": 3080
+    },
+    {
+      "id": "antigravity-1bca7134",
+      "sourceIndex": 3081
+    },
+    {
+      "id": "antigravity-1d5fe4ba",
+      "sourceIndex": 3082
+    }
+  ],
+  "promoted": [
+    {
+      "id": "antigravity-ff6fdda6",
+      "sourceIndex": 2993
+    },
+    {
+      "id": "antigravity-2fd20f28",
+      "sourceIndex": 2994
+    },
+    {
+      "id": "antigravity-9eedca1a",
+      "sourceIndex": 2995
+    },
+    {
+      "id": "antigravity-15d43d0d",
+      "sourceIndex": 2996
+    },
+    {
+      "id": "antigravity-99f681a1",
+      "sourceIndex": 2997
+    },
+    {
+      "id": "antigravity-efcc7ef4",
+      "sourceIndex": 2998
+    },
+    {
+      "id": "antigravity-3e2870c3",
+      "sourceIndex": 2999
+    },
+    {
+      "id": "antigravity-8b6f2285",
+      "sourceIndex": 3001
+    },
+    {
+      "id": "antigravity-aabfea1e",
+      "sourceIndex": 3002
+    },
+    {
+      "id": "antigravity-dce52fe6",
+      "sourceIndex": 3005
+    },
+    {
+      "id": "antigravity-793e32ee",
+      "sourceIndex": 3007
+    },
+    {
+      "id": "antigravity-b36e3ab4",
+      "sourceIndex": 3008
+    },
+    {
+      "id": "antigravity-57ab199d",
+      "sourceIndex": 3009
+    },
+    {
+      "id": "antigravity-d0e07586",
+      "sourceIndex": 3010
+    },
+    {
+      "id": "antigravity-acfa9703",
+      "sourceIndex": 3011
+    },
+    {
+      "id": "antigravity-5abf57e7",
+      "sourceIndex": 3013
+    },
+    {
+      "id": "antigravity-bd8de68b",
+      "sourceIndex": 3015
+    },
+    {
+      "id": "antigravity-657f3c05",
+      "sourceIndex": 3016
+    },
+    {
+      "id": "antigravity-c596188c",
+      "sourceIndex": 3017
+    },
+    {
+      "id": "antigravity-17f38f8f",
+      "sourceIndex": 3018
+    },
+    {
+      "id": "antigravity-d49bfd0a",
+      "sourceIndex": 3023
+    },
+    {
+      "id": "antigravity-70a15311",
+      "sourceIndex": 3024
+    },
+    {
+      "id": "antigravity-f9838d5d",
+      "sourceIndex": 3025
+    },
+    {
+      "id": "antigravity-321273ec",
+      "sourceIndex": 3026
+    },
+    {
+      "id": "antigravity-d912ce6e",
+      "sourceIndex": 3027
+    },
+    {
+      "id": "antigravity-a1c6ee45",
+      "sourceIndex": 3028
+    },
+    {
+      "id": "antigravity-aeb119ea",
+      "sourceIndex": 3029
+    },
+    {
+      "id": "antigravity-2c41ec52",
+      "sourceIndex": 3030
+    },
+    {
+      "id": "antigravity-facd2f6d",
+      "sourceIndex": 3031
+    },
+    {
+      "id": "antigravity-ad952a80",
+      "sourceIndex": 3032
+    },
+    {
+      "id": "antigravity-e6a559ec",
+      "sourceIndex": 3033
+    },
+    {
+      "id": "antigravity-fac814ec",
+      "sourceIndex": 3034
+    },
+    {
+      "id": "antigravity-9f9d5a09",
+      "sourceIndex": 3035
+    },
+    {
+      "id": "antigravity-a17125c6",
+      "sourceIndex": 3036
+    },
+    {
+      "id": "antigravity-38b2fea8",
+      "sourceIndex": 3037
+    },
+    {
+      "id": "antigravity-08ff2e74",
+      "sourceIndex": 3038
+    },
+    {
+      "id": "antigravity-b71d3495",
+      "sourceIndex": 3039
+    },
+    {
+      "id": "antigravity-c3462613",
+      "sourceIndex": 3040
+    },
+    {
+      "id": "antigravity-72403f6e",
+      "sourceIndex": 3041
+    },
+    {
+      "id": "antigravity-502ecbdc",
+      "sourceIndex": 3042
+    },
+    {
+      "id": "antigravity-29524493",
+      "sourceIndex": 3043
+    },
+    {
+      "id": "antigravity-27b143e3",
+      "sourceIndex": 3044
+    },
+    {
+      "id": "antigravity-941d0b9a",
+      "sourceIndex": 3045
+    },
+    {
+      "id": "antigravity-126343cd",
+      "sourceIndex": 3046
+    },
+    {
+      "id": "antigravity-2eaf9a86",
+      "sourceIndex": 3047
+    },
+    {
+      "id": "antigravity-1fa99583",
+      "sourceIndex": 3048
+    },
+    {
+      "id": "antigravity-046e066a",
+      "sourceIndex": 3051
+    },
+    {
+      "id": "antigravity-fb27bbf2",
+      "sourceIndex": 3052
+    },
+    {
+      "id": "antigravity-2ecd91ac",
+      "sourceIndex": 3053
+    },
+    {
+      "id": "antigravity-d5d5611d",
+      "sourceIndex": 3054
+    },
+    {
+      "id": "antigravity-c8ef0e50",
+      "sourceIndex": 3055
+    },
+    {
+      "id": "antigravity-e79c7f5f",
+      "sourceIndex": 3056
+    },
+    {
+      "id": "antigravity-92678e03",
+      "sourceIndex": 3057
+    },
+    {
+      "id": "antigravity-1fc21f1b",
+      "sourceIndex": 3059
+    },
+    {
+      "id": "antigravity-a02a1390",
+      "sourceIndex": 3060
+    },
+    {
+      "id": "antigravity-ea0c1d75",
+      "sourceIndex": 3062
+    },
+    {
+      "id": "antigravity-7305bb16",
+      "sourceIndex": 3063
+    },
+    {
+      "id": "antigravity-09ea19eb",
+      "sourceIndex": 3064
+    },
+    {
+      "id": "antigravity-d2ef2266",
+      "sourceIndex": 3065
+    },
+    {
+      "id": "antigravity-01bcf303",
+      "sourceIndex": 3066
+    },
+    {
+      "id": "antigravity-12e0b725",
+      "sourceIndex": 3067
+    },
+    {
+      "id": "antigravity-a262cb23",
+      "sourceIndex": 3068
+    },
+    {
+      "id": "antigravity-7fc1cfcd",
+      "sourceIndex": 3069
+    },
+    {
+      "id": "antigravity-068bc1c6",
+      "sourceIndex": 3070
+    },
+    {
+      "id": "antigravity-aa543aa1",
+      "sourceIndex": 3071
+    },
+    {
+      "id": "antigravity-852d344d",
+      "sourceIndex": 3072
+    },
+    {
+      "id": "antigravity-4ed74a07",
+      "sourceIndex": 3073
+    },
+    {
+      "id": "antigravity-d5311291",
+      "sourceIndex": 3074
+    },
+    {
+      "id": "antigravity-e3a3da8e",
+      "sourceIndex": 3075
+    },
+    {
+      "id": "antigravity-52344719",
+      "sourceIndex": 3076
+    },
+    {
+      "id": "antigravity-448902a1",
+      "sourceIndex": 3077
+    },
+    {
+      "id": "antigravity-c1337b26",
+      "sourceIndex": 3078
+    },
+    {
+      "id": "antigravity-9ed2d897",
+      "sourceIndex": 3079
+    },
+    {
+      "id": "antigravity-4e7a0993",
+      "sourceIndex": 3080
+    },
+    {
+      "id": "antigravity-1bca7134",
+      "sourceIndex": 3081
+    },
+    {
+      "id": "antigravity-1d5fe4ba",
+      "sourceIndex": 3082
+    }
+  ],
+  "blocked": []
+}

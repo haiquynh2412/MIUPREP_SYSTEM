@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAT Studio Parent</title>
+  </head>
+  <body>
+    <p>Opening SAT Studio Parent...</p>
+    <p><a href="dist/vite/vite-parent.html">Open SAT Studio Parent</a></p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const legacyUrl = "index.html?entry=parent";
+      const viteUrl = "dist/vite/vite-parent.html";
+      window.location.replace(params.get("legacy") === "1" ? legacyUrl : viteUrl);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1783 @@
+{
+  "id": "cpe2-test2",
+  "title": "CPE C2 Proficiency Reading & Use of English - Test 2 (Book 2)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Practice Tests CPE 2, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-b2t2-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: New Developments</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>After the war designers could experiment more (1) ______ with materials once regarded as substitutes - in particular plastics, acrylics and nylon. In 1948, American architect Charles Eames (2) ______ knowledge gained during the war to design the now ubiquitous Dar chair - a one-piece moulded plastic seat, (3) ______ by wire legs. However, in this era of optimism there were a few casualties. The BBC had extended its service with outside broadcasts of major sporting events, plays, gardening and children's programmes. With such delights on (4) ______ in their homes, people were increasingly (5) ______ to visit the cinema and as a result the film industry was struggling. By contrast, the music industry was on the up. 'Micro-groove' seven-inch records, made of unbreakable vinylite, had begun to be produced and for the first time, consumers could choose from a (6) ______ range of equipment on which to play them.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Seven Samurai</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Kurosawa's 1954 classic Seven Samurai is about a bunch of down-on-their luck warriors who agree to defend a small village from a band of thieves in (7) ______ for three meals a day and much honour. Since Kurosawa's (8) ______ influence was the epic Westerns of John Ford, it is ironic that in 1959 Hollywood thought Samurai would make a good cowboy film - and The Magnificent Seven appeared on the screen. Originally, Yul Brynner was to direct the remake but after much (9) ______, director John Sturges took the helm. Aside from Broadway actor, Eli Wallach, Brynner was the only famous name in the movie; Charles Bronson, Robert Vaughan and James Coburn got their career changing roles by (10) ______ of mouth. Now, in this digitally rejigged (11) ______, you can find out what happened on the action - filled set via an exclusive new documentary and see how the film nearly did not become the (12) ______ classic it is today.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 3: Unusual Inspiration</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>When I was a teenager studying literature, I used to be annoyed by the way my father, a doctor, would (13) ______ the inspiration for great literature to various illnesses. Leontes in Shakespeare's The Winter's Tale was a 'case study' in pathological jealousy. Monet and Turner achieved their great work because of (14) ______ eyesight, making things (15) ______ blurred, and so on. I realise now that such thinking is characteristic of the (16) ______ that doctors have for their subject. Thomas Dormandy, a consultant pathologist is no exception to the (17) ______. He argues in his very (18) ______ book that during the 19th and much of the 20th century, tuberculosis was a formative influence on art, music and literature.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t2-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-b2t2-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. copiously",
+                "B. freely",
+                "C. loosely",
+                "D. wildly"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'experiment freely' là collocation chuẩn nghĩa là 'thực nghiệm/thử nghiệm một cách tự do'. Bẫy: 'copiously' (phong phú/dồi dào) dùng cho lượng chất lỏng hoặc thông tin. 'loosely' (lỏng lẻo) dùng cho cấu trúc hoặc liên kết. 'wildly' (hoang dã/điên cuồng) không phù hợp về sắc thái khoa học kỹ thuật. Chuyên đề: Collocations — experiment + adverb.",
+              "answerLocation": "experiment more freely with materials",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. exerted",
+                "B. allotted",
+                "C. applied",
+                "D. practised"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'applied knowledge' = áp dụng kiến thức. Eames đã áp dụng những kiến thức thu được trong thế chiến để thiết kế ghế Dar. Bẫy: 'exerted' (nỗ lực/áp dụng sức ép) đi với 'effort/pressure'. 'allotted' (phân bổ) dùng cho thời gian/nguồn lực. 'practised' (thực hành) dùng cho nghề nghiệp/kỹ năng. Chuyên đề: Collocations — apply + knowledge.",
+              "answerLocation": "applied knowledge gained during the war",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. held",
+                "B. shouldered",
+                "C. supported",
+                "D. sustained"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'supported by' = được nâng đỡ/chống đỡ bởi cái gì (đặc điểm cơ học/kiến trúc). Ở đây là mặt ghế nhựa được chống đỡ bởi chân kim loại. Bẫy: 'held by' (được giữ) quá chung chung. 'shouldered' (gánh vác) dùng ẩn dụ cho trách nhiệm. 'sustained' (duy trì/chịu đựng tổn thất). Chuyên đề: Vocabulary — architectural/design verbs. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "supported by wire legs",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. offer",
+                "B. show",
+                "C. sale",
+                "D. approval"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'on offer' là idiom cố định mang nghĩa 'có sẵn để thưởng thức/mua sắm'. Ngữ cảnh: với những chương trình giải trí hấp dẫn có sẵn ngay tại nhà. Bẫy: 'on show' (đang được triển lãm). 'on sale' (đang được bán giảm giá). 'on approval' (để xem thử trước khi mua). Chuyên đề: Fixed expressions — preposition + noun.",
+              "answerLocation": "With such delights on offer in their homes",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. disappointed",
+                "B. displeased",
+                "C. disconnected",
+                "D. disinclined"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'disinclined to do something' là tính từ cố định nghĩa là 'không có xu hướng/không muốn làm gì' (= reluctant). Bẫy: 'disappointed' (thất vọng). 'displeased' (không hài lòng). 'disconnected' (bị ngắt kết nối). Chỉ 'disinclined' đi kèm cấu trúc 'to + verb' biểu thị ý chí không sẵn lòng. Chuyên đề: Verb patterns — adjective + to-infinitive.",
+              "answerLocation": "people were increasingly disinclined to visit",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. wide",
+                "B. lavish",
+                "C. plentiful",
+                "D. excessive"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'wide range of' là collocation cực kỳ phổ biến nghĩa là 'hàng loạt/đa dạng các loại'. Bẫy: 'lavish' (hoang phí/xa hoa). 'plentiful' (dồi dào — không đi với range). 'excessive' (quá mức tiêu cực). Chuyên đề: Collocations — range + modifiers.",
+              "answerLocation": "choose from a wide range of equipment",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. reciprocity",
+                "B. trade",
+                "C. exchange",
+                "D. substitute"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'in exchange for' là cụm idiom cố định nghĩa là 'để đổi lấy cái gì'. Ở đây các võ sĩ nhận bảo vệ ngôi làng để đổi lấy ba bữa ăn một ngày. Bẫy: 'reciprocity' (sự có qua có lại — tính từ/danh từ triết học). 'in trade for' không tự nhiên bằng 'in exchange for'. 'substitute' (vật thay thế). Chuyên đề: Idioms — in exchange for.",
+              "answerLocation": "defend a small village from a band of thieves in exchange for",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. deep",
+                "B. major",
+                "C. large",
+                "D. most"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'major influence' là collocation thông dụng nghĩa là 'ảnh hưởng lớn/chủ đạo'. Bẫy: 'deep' đi với 'impact/impression'. 'large' không đi với 'influence'. 'most' cần mạo từ 'the'. Chuyên đề: Collocations — influence + adjectives.",
+              "answerLocation": "Since Kurosawa's major influence was",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-9",
+              "type": "multiple_choice",
+              "instruction": "Gap (9):",
+              "options": [
+                "A. argument",
+                "B. combat",
+                "C. brawling",
+                "D. jostling"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'after much argument' = sau nhiều tranh cãi/thảo luận gay gắt (về mặt ý kiến/hợp đồng). Bẫy: 'combat' (chiến đấu thực thể). 'brawling' (ẩu đả đường phố). 'jostling' (chen lấn xô đẩy trong đám đông). Bối cảnh làm phim chỉ có sự bất đồng quan điểm nghệ thuật/hợp đồng. Chuyên đề: Vocabulary — abstract vs physical conflict. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "after much argument , director John Sturges took",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-10",
+              "type": "multiple_choice",
+              "instruction": "Gap (10):",
+              "options": [
+                "A. talk",
+                "B. speech",
+                "C. word",
+                "D. claim"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'by word of mouth' là thành ngữ cố định nghĩa là 'bằng truyền miệng'. Các diễn viên có được vai diễn đổi đời nhờ người này giới thiệu cho người kia. Bẫy: 'talk', 'speech', 'claim' đều không thể thay thế trong thành ngữ này. Chuyên đề: Idioms — word of mouth.",
+              "answerLocation": "roles by word of mouth",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-11",
+              "type": "multiple_choice",
+              "instruction": "Gap (11):",
+              "options": [
+                "A. edition",
+                "B. recital",
+                "C. variety",
+                "D. version"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'version' = phiên bản (dành cho phim ảnh, sản phẩm kỹ thuật số). 'digitally rejigged version' = phiên bản được chỉnh sửa kỹ thuật số. Bẫy: 'edition' dùng cho sách/ấn bản báo chí. 'recital' (sự ngâm thơ/biểu diễn âm nhạc). 'variety' (sự đa dạng/chủng loại). Chuyên đề: Vocabulary — media terms. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "in this digitally rejigged version",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-12",
+              "type": "multiple_choice",
+              "instruction": "Gap (12):",
+              "options": [
+                "A. idolised",
+                "B. revered",
+                "C. sacred",
+                "D. worshipped"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'revered classic' là collocation cố định = 'tác phẩm kinh điển được tôn sùng/kính trọng'. Bẫy: 'idolised' (bị thần tượng hóa quá đà). 'sacred' (linh thiêng về tôn giáo). 'worshipped' (được thờ phụng). 'Revered' mang sắc thái kính trọng sâu sắc về mặt nghệ thuật và thời gian. Chuyên đề: Collocations — revered + art/classic.",
+              "answerLocation": "did not become the revered classic it is today",
+              "category": "cpe_part_1",
+              "source": "Page 30, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-13",
+              "type": "multiple_choice",
+              "instruction": "Gap (13):",
+              "options": [
+                "A. credit",
+                "B. ascribe",
+                "C. account",
+                "D. suggest"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'ascribe something to something' là cấu trúc động từ đi với giới từ 'to' nghĩa là 'quy cái gì cho cái gì / đổ tại'. Người cha là bác sĩ thường quy nguồn cảm hứng văn học cho các loại bệnh lý. Bẫy: 'credit something to someone' (ghi nhận công lao cho ai). 'account for' (giải thích). 'suggest' không đi với cấu trúc 'something to something'. Chuyên đề: Dependent prepositions — ascribe to.",
+              "answerLocation": "ascribe the inspiration for great literature to various illnesses",
+              "category": "cpe_part_1",
+              "source": "Page 31, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-14",
+              "type": "multiple_choice",
+              "instruction": "Gap (14):",
+              "options": [
+                "A. contracting",
+                "B. failing",
+                "C. deficient",
+                "D. short"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'failing eyesight' là collocation y học cố định nghĩa là 'thị lực đang giảm sút/suy giảm'. Bẫy: 'contracting' (đang co lại). 'deficient' (thiếu hụt dinh dưỡng/vitamin). 'short' (ngắn). Chỉ 'failing' đi với 'eyesight' để chỉ sự suy sụp của thị lực tuổi già. Chuyên đề: Collocations — failing + physical capacity.",
+              "answerLocation": "because of failing eyesight",
+              "category": "cpe_part_1",
+              "source": "Page 31, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-15",
+              "type": "multiple_choice",
+              "instruction": "Gap (15):",
+              "options": [
+                "A. hardly",
+                "B. slightly",
+                "C. barely",
+                "D. narrowly"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'slightly blurred' = hơi mờ ảo/nhòe. 'Slightly' là trạng từ giảm nhẹ phù hợp nhất với tính từ miêu tả trạng thái thị giác 'blurred'. Bẫy: 'hardly' (hầu như không). 'barely' (vừa vặn/hầu như không). 'narrowly' (suýt soát). Chuyên đề: Adverb-adjective collocations.",
+              "answerLocation": "making things slightly blurred",
+              "category": "cpe_part_1",
+              "source": "Page 31, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-16",
+              "type": "multiple_choice",
+              "instruction": "Gap (16):",
+              "options": [
+                "A. passion",
+                "B. vigour",
+                "C. fury",
+                "D. emotion"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'passion for their subject' = niềm đam mê nhiệt huyết dành cho chuyên môn của họ. Bẫy: 'vigour' (sức mạnh thể chất). 'fury' (sự giận dữ cuồng nộ). 'emotion' (cảm xúc nói chung). Bác sĩ luôn say mê tìm kiếm góc nhìn y học trong mọi khía cạnh cuộc sống. Chuyên đề: Collocations — passion + for.",
+              "answerLocation": "characteristic of the passion that doctors have for their subject",
+              "category": "cpe_part_1",
+              "source": "Page 31, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-17",
+              "type": "multiple_choice",
+              "instruction": "Gap (17):",
+              "options": [
+                "A. law",
+                "B. principle",
+                "C. ethic",
+                "D. rule"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'no exception to the rule' là cụm thành ngữ cố định phổ biến nghĩa là 'không phải là ngoại lệ đối với quy luật chung'. Bẫy: 'law', 'principle', 'ethic' đều có nghĩa tương tự nhưng không tạo thành idiom cố định này. Chuyên đề: Fixed expressions — exception to the rule.",
+              "answerLocation": "is no exception to the rule",
+              "category": "cpe_part_1",
+              "source": "Page 31, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-18",
+              "type": "multiple_choice",
+              "instruction": "Gap (18):",
+              "options": [
+                "A. informative",
+                "B. knowledgeable",
+                "C. informed",
+                "D. instructed"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'informative book' = cuốn sách chứa nhiều thông tin bổ ích. Bẫy: 'knowledgeable' (có kiến thức sâu rộng — chỉ dùng cho NGƯỜI). 'informed' (có hiểu biết/thông thái — dùng cho ý kiến, lựa chọn). 'instructed' (được hướng dẫn). Chỉ 'informative' dùng để chỉ tính chất giàu thông tin của vật thể như sách, báo. Chuyên đề: Word Formation — Adjectives (-ive vs -able).",
+              "answerLocation": "argues in his very informative book",
+              "category": "cpe_part_1",
+              "source": "Page 31, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t2-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 19-33, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>IQ Tests</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Psychologists have <b>long</b> been interested in (19) ______ we judge intelligence in strangers. Now scientists have designed tests (20) ______ try to discover which cues help people to judge IQ accurately, and which cause them to get (21) ______ wrong. High school pupils were videotaped answering thought-provoking questions and the videos were (22) ______ shown to groups of 'judges' who were asked to assess the students' physical type and monitor a variety of behavioural cues. Next the judges were asked to rate the students' intelligence. At the (23) ______ time, each student was (24) ______ required to sit a standard IQ test. Certain cues matched the (25) ______ of the IQ tests more closely than others. (26) ______ speaking quickly, using a lot of words or displaying ease (27) ______ understanding caused the judges to rate the students' intelligence highly, (28) ______ was reflected in the IQ tests, (29) ______ cues seemed to give the judges an entirely false impression of intelligence (30) ______ measured by the IQ test. (31) ______ the cues that led judges to assess students as dull were factors (32) ______ as using halting speech or slang. Cues that led judges to view students as bright included talking loudly and using proper English. (33) ______ of these traits correlated with measured IQ, however.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t2-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-b2t2-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19):",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "how",
+                  "HOW"
+                ]
+              ],
+              "correctAnswer": "how",
+              "explanation": "Đáp án: HOW. 'how we judge intelligence' = cách thức chúng ta đánh giá trí thông minh ở người lạ. Cần trạng từ chỉ cách thức để mở đầu mệnh đề danh ngữ làm tân ngữ cho giới từ 'in'. Chuyên đề: Nominal clauses — Wh-adverbs.",
+              "answerLocation": "interested in how we judge intelligence",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20):",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "that",
+                  "THAT"
+                ],
+                [
+                  "which",
+                  "WHICH"
+                ]
+              ],
+              "correctAnswer": "that",
+              "explanation": "Đáp án: THAT (hoặc WHICH). Cần đại từ quan hệ chỉ vật thay thế cho danh từ 'tests' làm chủ ngữ trong mệnh đề quan hệ xác định. Bẫy: 'who' chỉ dùng cho người. Chuyên đề: Relative clauses — subject relative pronouns.",
+              "answerLocation": "designed tests that try to discover",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21):",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "it",
+                  "IT"
+                ],
+                [
+                  "things",
+                  "THINGS"
+                ]
+              ],
+              "correctAnswer": "it",
+              "explanation": "Đáp án: IT (hoặc THINGS). Idiom 'get it wrong' hoặc 'get things wrong' nghĩa là 'hiểu sai/đánh giá sai'. Bẫy: 'them' sai vì cấu trúc cố định là số ít 'it' trong cụm từ này. Chuyên đề: Idioms — get it wrong.",
+              "answerLocation": "cause them to get it wrong",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22):",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "then",
+                  "THEN"
+                ],
+                [
+                  "later",
+                  "LATER"
+                ],
+                [
+                  "subsequently",
+                  "SUBSEQUENTLY"
+                ]
+              ],
+              "correctAnswer": "then",
+              "explanation": "Đáp án: THEN (hoặc LATER/SUBSEQUENTLY). Trạng từ chỉ trình tự thời gian hợp lý sau khi quay phim học sinh ('were videotaped... and the videos were then shown...'). Chuyên đề: Adverbs — sequencing. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "videos were then shown to groups",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23):",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "same",
+                  "SAME"
+                ]
+              ],
+              "correctAnswer": "same",
+              "explanation": "Đáp án: SAME. Cụm giới từ cố định 'at the same time' nghĩa là 'đồng thời / cùng lúc đó'. Bẫy: 'similar' không đi kèm mạo từ 'the' trong cụm giới từ thời gian này. Chuyên đề: Fixed expressions — at the same time.",
+              "answerLocation": "At the same time, each student was",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24):",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "also",
+                  "ALSO"
+                ],
+                [
+                  "even",
+                  "EVEN"
+                ]
+              ],
+              "correctAnswer": "also",
+              "explanation": "Đáp án: ALSO (hoặc EVEN). Trạng từ bổ sung thông tin: mỗi học sinh đồng thời cũng được yêu cầu làm một bài test IQ chuẩn hóa. Chuyên đề: Adverbs — addition. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "each student was also required to sit",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25):",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "results",
+                  "RESULTS"
+                ],
+                [
+                  "scores",
+                  "SCORES"
+                ],
+                [
+                  "outcomes",
+                  "OUTCOMES"
+                ]
+              ],
+              "correctAnswer": "results",
+              "explanation": "Đáp án: RESULTS (hoặc SCORES/OUTCOMES). Danh từ số nhiều chỉ kết quả của bài kiểm tra IQ ('matched the results of the IQ tests'). Chuyên đề: Vocabulary — test outcomes. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "matched the results of the IQ tests",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-26",
+              "type": "gap_fill",
+              "instruction": "Gap (26):",
+              "blankIndex": 26,
+              "acceptedAnswers": [
+                [
+                  "while",
+                  "WHILE"
+                ],
+                [
+                  "although",
+                  "ALTHOUGH"
+                ],
+                [
+                  "whereas",
+                  "WHEREAS"
+                ],
+                [
+                  "though",
+                  "THOUGH"
+                ]
+              ],
+              "correctAnswer": "While",
+              "explanation": "Đáp án: WHILE (hoặc ALTHOUGH/WHEREAS). Từ nối biểu thị sự nhượng bộ/đối lập ở đầu câu ghép cực kỳ phức tạp: 'Trong khi việc nói nhanh... khiến giám khảo đánh giá thông minh cao, thì những cues khác lại tạo ấn tượng sai lệch'. Bẫy: Phải viết hoa chữ cái đầu vì đứng đầu câu. Chuyên đề: Conjunctions — concession/contrast.",
+              "answerLocation": "While speaking quickly... caused the judges to rate",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-27",
+              "type": "gap_fill",
+              "instruction": "Gap (27):",
+              "blankIndex": 27,
+              "acceptedAnswers": [
+                [
+                  "of",
+                  "OF"
+                ],
+                [
+                  "in",
+                  "IN"
+                ]
+              ],
+              "correctAnswer": "of",
+              "explanation": "Đáp án: OF (hoặc IN). Giới từ đi sau danh từ 'ease': 'ease of understanding' = sự dễ dàng trong việc thấu hiểu / mức độ hiểu nhanh. Cụm 'ease of + V-ing' là rất phổ biến. Chuyên đề: Prepositions — noun + preposition.",
+              "answerLocation": "displaying ease of understanding",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-28",
+              "type": "gap_fill",
+              "instruction": "Gap (28):",
+              "blankIndex": 28,
+              "acceptedAnswers": [
+                [
+                  "which",
+                  "WHICH"
+                ]
+              ],
+              "correctAnswer": "which",
+              "explanation": "Đáp án: WHICH. Đại từ quan hệ không giới hạn thay thế cho cả mệnh đề phía trước ('khiến ban giám khảo đánh giá cao học sinh, điều này đã được phản ánh trong bài test IQ'). Bẫy: 'that' không bao giờ đứng sau dấu phẩy trong mệnh đề quan hệ không giới hạn. Chuyên đề: Relative clauses — sentential relative which.",
+              "answerLocation": "intelligence highly, which was reflected in",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-29",
+              "type": "gap_fill",
+              "instruction": "Gap (29):",
+              "blankIndex": 29,
+              "acceptedAnswers": [
+                [
+                  "other",
+                  "OTHER"
+                ],
+                [
+                  "some",
+                  "SOME"
+                ]
+              ],
+              "correctAnswer": "other",
+              "explanation": "Đáp án: OTHER (hoặc SOME). Từ định lượng đi với danh từ số nhiều để tạo sự đối lập với nhóm trước đó ('trong khi các cue A... thì các cue KHÁC lại tạo ấn tượng sai lệch'). Chuyên đề: Determiners — other vs another.",
+              "answerLocation": "other cues seemed to give the judges",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-30",
+              "type": "gap_fill",
+              "instruction": "Gap (30):",
+              "blankIndex": 30,
+              "acceptedAnswers": [
+                [
+                  "as",
+                  "AS"
+                ]
+              ],
+              "correctAnswer": "as",
+              "explanation": "Đáp án: AS. Trạng từ so sánh/chỉ cách thức trong cấu trúc rút gọn: 'intelligence as measured by...' = trí thông minh khi được đo lường bởi bài test IQ. Cụm 'as measured/defined/described' là cực kỳ thông dụng. Chuyên đề: Conjunctions — comparative as.",
+              "answerLocation": "impression of intelligence as measured by the IQ test",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-31",
+              "type": "gap_fill",
+              "instruction": "Gap (31):",
+              "blankIndex": 31,
+              "acceptedAnswers": [
+                [
+                  "among",
+                  "AMONG"
+                ],
+                [
+                  "of",
+                  "OF"
+                ]
+              ],
+              "correctAnswer": "Among",
+              "explanation": "Đáp án: AMONG (hoặc OF). Giới từ chỉ tập hợp đứng đầu câu đảo ngữ: 'Trong số những cue khiến... là các yếu tố như...'. Bẫy: Cần viết hoa chữ cái đầu. 'Between' chỉ dùng cho hai đối tượng, ở đây là số nhiều danh sách các cues. Chuyên đề: Prepositions — among/of (selection/set).",
+              "answerLocation": "Among the cues that led judges to assess",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-32",
+              "type": "gap_fill",
+              "instruction": "Gap (32):",
+              "blankIndex": 32,
+              "acceptedAnswers": [
+                [
+                  "such",
+                  "SUCH"
+                ]
+              ],
+              "correctAnswer": "such",
+              "explanation": "Đáp án: SUCH. Cụm từ chỉ ví dụ 'such as' đi kèm giới từ 'as' ở phía sau. 'factors such as using...' = các yếu tố ví dụ như sử dụng giọng nói ngập ngừng. Chuyên đề: Fixed expressions — such as.",
+              "answerLocation": "were factors such as using halting speech",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-33",
+              "type": "gap_fill",
+              "instruction": "Gap (33):",
+              "blankIndex": 33,
+              "acceptedAnswers": [
+                [
+                  "none",
+                  "NONE"
+                ],
+                [
+                  "neither",
+                  "NEITHER"
+                ],
+                [
+                  "few",
+                  "FEW"
+                ]
+              ],
+              "correctAnswer": "None",
+              "explanation": "Đáp án: NONE. Đại từ phủ định tổng quát làm chủ ngữ: 'Tuy nhiên, không có đặc điểm nào trong số này thực sự tương quan với chỉ số IQ thực tế'. Trạng từ chỉ sự đối lập 'however' ở cuối câu khẳng định ý phủ định tuyệt đối của mệnh đề. Bẫy: Phải viết hoa chữ cái đầu. Chuyên đề: Pronouns — negative pronouns.",
+              "answerLocation": "None of these traits correlated with",
+              "category": "cpe_part_2",
+              "source": "Page 42, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t2-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 34-42, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>El Nino</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Over the years the <b>appearance</b> (APPEAR) of La Nina has been more (34) ______ (PREDICT) than that of El Nino; its patterns are not yet fully understood. El Nino is (35) ______ (HISTORY) remembered for more than just a litany of disasters. The 1997-98 El Nino marked a (36) ______ (NORMAL) breakthrough in that for the first time scientists were able to predict (37) ______ (THREAT) flooding and droughts months in advance, allowing time for (38) ______ (POOR) populations to prepare. At the very least, preparation can save lives. Even in regions affected by (39) ______ (DRAIN) problems, constructing (40) ______ (TIME) defensive systems and stockpiling emergency supplies saved hundreds of lives. Forewarning brought (41) ______ (STARVE) relief to such places as Papua New Guinea, where highland populations were faced with (42) ______ (SUBSIST) crises after frost and drought combined to destroy crops.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t2-rg-3",
+          "instruction": "Fill in the gaps with the correct word form.",
+          "questions": [
+            {
+              "id": "q-b2t2-34",
+              "type": "gap_fill",
+              "instruction": "Gap (34): more ______ (PREDICT) than...",
+              "blankIndex": 34,
+              "acceptedAnswers": [
+                [
+                  "unpredictable",
+                  "UNPREDICTABLE"
+                ]
+              ],
+              "correctAnswer": "unpredictable",
+              "explanation": "Đáp án: UNPREDICTABLE. Thêm tiền tố phủ định 'un-' và hậu tố tính từ '-able'. Ngữ cảnh: 'its patterns are not yet fully understood' (các quy luật của nó vẫn chưa được hiểu rõ hoàn toàn) nên nó phải mang tính 'khó dự đoán' (unpredictable). Bẫy: 'predictable' (có thể dự đoán) ngược nghĩa bối cảnh. Chuyên đề: Word Formation — Negative adjectives (un- -able).",
+              "answerLocation": "more unpredictable than that of El Nino",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-35",
+              "type": "gap_fill",
+              "instruction": "Gap (35): is ______ (HISTORY) remembered...",
+              "blankIndex": 35,
+              "acceptedAnswers": [
+                [
+                  "historically",
+                  "HISTORICALLY"
+                ]
+              ],
+              "correctAnswer": "historically",
+              "explanation": "Đáp án: HISTORICALLY. Biến đổi danh từ 'HISTORY' thành trạng từ 'historically' để bổ nghĩa cho động từ/phân từ 'remembered'. Cấu trúc: 'be + adverb + past participle'. Chuyên đề: Word Formation — Adverbs (-ically from -y nouns).",
+              "answerLocation": "El Nino is historically remembered for",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-36",
+              "type": "gap_fill",
+              "instruction": "Gap (36): marked a ______ (NORMAL) breakthrough...",
+              "blankIndex": 36,
+              "acceptedAnswers": [
+                [
+                  "abnormal",
+                  "ABNORMAL"
+                ]
+              ],
+              "correctAnswer": "abnormal",
+              "explanation": "Đáp án: ABNORMAL (hoặc NORMALISING). Thêm tiền tố phủ định 'ab-' để tạo tính từ 'abnormal' (bất thường/khác biệt hoàn toàn so với thông thường). Đợt El Nino này đánh dấu một bước ngoặt phá vỡ mọi quy chuẩn thông thường giúp khoa học dự đoán được tương lai. Chuyên đề: Word Formation — Prefixation (ab-).",
+              "answerLocation": "marked a abnormal breakthrough in that",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-37",
+              "type": "gap_fill",
+              "instruction": "Gap (37): predict ______ (THREAT) flooding...",
+              "blankIndex": 37,
+              "acceptedAnswers": [
+                [
+                  "threatening",
+                  "THREATENING"
+                ],
+                [
+                  "life-threatening",
+                  "LIFE-THREATENING"
+                ]
+              ],
+              "correctAnswer": "threatening",
+              "explanation": "Đáp án: THREATENING. Thêm hậu tố '-ing' vào động từ 'threat' (hoặc danh từ) để tạo phân từ/tính từ 'threatening' mang nghĩa 'đe dọa/có tính đe dọa'. 'Threatening flooding' = lũ lụt có tính đe dọa. Bẫy: 'threatened' dùng để miêu tả nạn nhân bị đe dọa, còn tính chất nguy hại của lũ lụt phải là 'threatening'. Chuyên đề: Word Formation — Participles as adjectives (-ing vs -ed).",
+              "answerLocation": "were able to predict threatening flooding",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-38",
+              "type": "gap_fill",
+              "instruction": "Gap (38): allowing time for ______ (POOR) populations...",
+              "blankIndex": 38,
+              "acceptedAnswers": [
+                [
+                  "impoverished",
+                  "IMPOVERISHED"
+                ],
+                [
+                  "poorer",
+                  "POORER"
+                ]
+              ],
+              "correctAnswer": "impoverished",
+              "explanation": "Đáp án: IMPOVERISHED (hoặc POORER). Biến đổi tính từ/danh từ 'POOR' thành động từ 'impoverish' rồi chuyển sang phân từ 'impoverished' nghĩa là 'bị bần cùng hóa / nghèo khổ hóa'. Đây là từ vựng trình độ C2 mô tả các quần thể dân cư nghèo khổ do thiên tai. Chuyên đề: Word Formation — Verbs to adjectives (-ish -> -ished).",
+              "answerLocation": "allowing time for impoverished populations to prepare",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-39",
+              "type": "gap_fill",
+              "instruction": "Gap (39): affected by ______ (DRAIN) problems...",
+              "blankIndex": 39,
+              "acceptedAnswers": [
+                [
+                  "drainage",
+                  "DRAINAGE"
+                ]
+              ],
+              "correctAnswer": "drainage",
+              "explanation": "Đáp án: DRAINAGE. Thêm hậu tố '-age' vào động từ 'DRAIN' để tạo danh từ 'drainage' chỉ 'hệ thống thoát nước / việc thoát nước'. 'Drainage problems' = các vấn đề về thoát nước. Chuyên đề: Word Formation — Nouns from verbs (-age).",
+              "answerLocation": "regions affected by drainage problems",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-40",
+              "type": "gap_fill",
+              "instruction": "Gap (40): constructing ______ (TIME) defensive...",
+              "blankIndex": 40,
+              "acceptedAnswers": [
+                [
+                  "timely",
+                  "TIMELY"
+                ]
+              ],
+              "correctAnswer": "timely",
+              "explanation": "Đáp án: TIMELY. Thêm hậu tố '-ly' vào danh từ 'TIME' để tạo tính từ 'timely' mang nghĩa 'kịp thời / đúng lúc'. Cấu trúc: 'timely + noun' = biện pháp phòng thủ kịp thời. Bẫy: 'timeless' nghĩa là 'vô tận / không chịu ảnh hưởng của thời gian' — sai nghĩa bối cảnh khẩn cấp. Chuyên đề: Word Formation — Adjectives from nouns (-ly).",
+              "answerLocation": "constructing timely defensive systems",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-41",
+              "type": "gap_fill",
+              "instruction": "Gap (41): brought ______ (STARVE) relief...",
+              "blankIndex": 41,
+              "acceptedAnswers": [
+                [
+                  "starvation",
+                  "STARVATION"
+                ]
+              ],
+              "correctAnswer": "starvation",
+              "explanation": "Đáp án: STARVATION. Biến đổi động từ 'STARVE' thành danh từ 'starvation' (nạn đói/sự chết đói) bằng cách thêm hậu tố '-ation'. 'Starvation relief' = sự cứu trợ nạn đói. Bẫy: 'starving' (đang đói) làm tính từ bổ nghĩa cho người, còn danh từ ghép cứu trợ phải đi kèm danh từ trừu tượng chỉ hiện tượng 'starvation'. Chuyên đề: Word Formation — Nouns from verbs (-ation).",
+              "answerLocation": "highland populations were faced with starvation",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-42",
+              "type": "gap_fill",
+              "instruction": "Gap (42): faced with ______ (SUBSIST) crises...",
+              "blankIndex": 42,
+              "acceptedAnswers": [
+                [
+                  "subsistence",
+                  "SUBSISTENCE"
+                ]
+              ],
+              "correctAnswer": "subsistence",
+              "explanation": "Đáp án: SUBSISTENCE. Biến đổi động từ 'SUBSIST' thành danh từ 'subsistence' (sự tự cung tự cấp / sinh kế tối thiểu) bằng cách thêm hậu tố '-ence'. 'Subsistence crops' = các loại cây trồng sinh kế (trồng để ăn tự cung tự cấp chứ không phải thương mại). Chuyên đề: Word Formation — Nouns from verbs (-ence).",
+              "answerLocation": "Frost and drought combined to destroy subsistence crops",
+              "category": "cpe_part_3",
+              "source": "Page 43, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t2-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 43-50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Key Word Transformation</h2><div class='mb-4 text-slate-800 text-base leading-relaxed'><p class='mb-2'><b>43.</b> I doubt if we will go fishing this weekend. (LIKELIHOOD)</p><p class='mb-2'>There is ______ fishing this weekend.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>44.</b> Dawn’s boss is constantly criticising her work. (FAULT)</p><p class='mb-2'>Dawn’s boss ______ her work.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>45.</b> Peter is really looking forward to starting his sky-diving course. (HARDLY)</p><p class='mb-2'>Peter ______ his sky-diving course.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>46.</b> For the contract to be a valid legal document, both parties must sign it. (BINDING)</p><p class='mb-2'>For the contract ______ both parties.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>47.</b> My neighbour assumes that he can use my lawnmower whenever he likes. (GRANTED)</p><p class='mb-2'>My neighbour ______ him to use my lawnmower whenever he likes.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>48.</b> If he hadn’t encouraged me, I would never have entered the competition. (THANKS)</p><p class='mb-2'>It was ______ entered the competition.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>49.</b> Accepting retirement is often difficult. (TERMS)</p><p class='mb-2'>It is often difficult ______ retirement.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>50.</b> Michael has made the decision not to move again. (INTENTION)</p><p class='mb-2'>Michael ______ again.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t2-rg-4",
+          "instruction": "Fill in the gap for each sentence below using 3 to 8 words.",
+          "questions": [
+            {
+              "id": "q-b2t2-43",
+              "type": "gap_fill",
+              "instruction": "Sentence 43: There is ______ fishing this weekend. (Key word: LIKELIHOOD)",
+              "blankIndex": 43,
+              "acceptedAnswers": [
+                [
+                  "little likelihood of our going",
+                  "LITTLE LIKELIHOOD OF OUR GOING"
+                ],
+                [
+                  "little likelihood of us going",
+                  "LITTLE LIKELIHOOD OF US GOING"
+                ],
+                [
+                  "little likelihood that we will go",
+                  "LITTLE LIKELIHOOD THAT WE WILL GO"
+                ],
+                [
+                  "no likelihood of us going",
+                  "NO LIKELIHOOD OF US GOING"
+                ],
+                [
+                  "no likelihood of our going",
+                  "NO LIKELIHOOD OF OUR GOING"
+                ]
+              ],
+              "correctAnswer": "little likelihood of our going",
+              "explanation": "Đáp án: 'little likelihood of our going' (hoặc 'little likelihood that we will go'). Cấu trúc 'There is little likelihood of + V-ing' hoặc 'There is little likelihood that + clause' dùng để diễn tả khả năng xảy ra rất thấp. Bẫy: Phải đổi 'I doubt' thành thể phủ định nhẹ 'little likelihood' chứ không dùng 'much' hay 'every'. Chuyên đề: Grammar — Probability structures.",
+              "answerLocation": "There is little likelihood of our going",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-44",
+              "type": "gap_fill",
+              "instruction": "Sentence 44: Dawn’s boss ______ her work. (Key word: FAULT)",
+              "blankIndex": 44,
+              "acceptedAnswers": [
+                [
+                  "is constantly finding fault with",
+                  "IS CONSTANTLY FINDING FAULT WITH"
+                ],
+                [
+                  "is always finding fault with",
+                  "IS ALWAYS FINDING FAULT WITH"
+                ]
+              ],
+              "correctAnswer": "is constantly finding fault with",
+              "explanation": "Đáp án: 'is constantly finding fault with'. Cấu trúc 'find fault with something/someone' = chỉ trích/bới lông tìm vết. Để giữ nguyên thì hiện tại tiếp diễn chỉ sự phàn nàn dai dẳng trong câu gốc ('is constantly criticising'), ta kết hợp: 'is constantly finding fault with'. Chuyên đề: Idioms — find fault with.",
+              "answerLocation": "Dawn’s boss is constantly finding fault with",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-45",
+              "type": "gap_fill",
+              "instruction": "Sentence 45: Peter ______ his sky-diving course. (Key word: HARDLY)",
+              "blankIndex": 45,
+              "acceptedAnswers": [
+                [
+                  "can hardly wait to start",
+                  "CAN HARDLY WAIT TO START"
+                ],
+                [
+                  "can hardly wait to begin",
+                  "CAN HARDLY WAIT TO BEGIN"
+                ]
+              ],
+              "correctAnswer": "can hardly wait to start",
+              "explanation": "Đáp án: 'can hardly wait to start' (hoặc 'can hardly wait to begin'). Thành ngữ 'can hardly wait to do something' = cực kỳ hào hứng mong đợi làm gì, tương đương hoàn toàn với 'really looking forward to'. Bẫy: Tránh nhầm cấu trúc 'hardly... when' đảo ngữ không liên quan ở đây. Chuyên đề: Idioms — can hardly wait.",
+              "answerLocation": "Peter can hardly wait to start",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-46",
+              "type": "gap_fill",
+              "instruction": "Sentence 46: For the contract ______ both parties. (Key word: BINDING)",
+              "blankIndex": 46,
+              "acceptedAnswers": [
+                [
+                  "to be legally binding on",
+                  "TO BE LEGALLY BINDING ON"
+                ],
+                [
+                  "to be binding on",
+                  "TO BE BINDING ON"
+                ],
+                [
+                  "to be legally binding upon",
+                  "TO BE LEGALLY BINDING UPON"
+                ],
+                [
+                  "to be binding upon",
+                  "TO BE BINDING UPON"
+                ]
+              ],
+              "correctAnswer": "to be legally binding on",
+              "explanation": "Đáp án: 'to be legally binding on' (hoặc 'to be binding on'). Cụm pháp lý 'binding on someone' = có tính ràng buộc pháp lý đối với ai. Động từ khuyết thiếu 'must' trong câu gốc được chuyển thành cấu trúc mục đích 'for the contract to be...'. Chuyên đề: Vocabulary — legal collocations.",
+              "answerLocation": "For the contract to be legally binding on",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-47",
+              "type": "gap_fill",
+              "instruction": "Sentence 47: My neighbour ______ him to use my lawnmower whenever he likes. (Key word: GRANTED)",
+              "blankIndex": 47,
+              "acceptedAnswers": [
+                [
+                  "takes it for granted that I will allow",
+                  "TAKES IT FOR GRANTED THAT I WILL ALLOW"
+                ],
+                [
+                  "takes it for granted that I'll allow",
+                  "TAKES IT FOR GRANTED THAT I'LL ALLOW"
+                ],
+                [
+                  "takes it for granted that I will let",
+                  "TAKES IT FOR GRANTED THAT I WILL LET"
+                ],
+                [
+                  "takes it for granted that I'll let",
+                  "TAKES IT FOR GRANTED THAT I'LL LET"
+                ]
+              ],
+              "correctAnswer": "takes it for granted that I will allow",
+              "explanation": "Đáp án: 'takes it for granted that I will allow' (hoặc các biến thể viết tắt). Cụm động từ 'take something for granted' = coi điều gì là hiển nhiên. Câu gốc 'assumes that he can use...' được viết lại thành 'coi là hiển nhiên rằng tôi sẽ cho phép anh ta sử dụng...'. Chuyên đề: Idioms — take for granted.",
+              "answerLocation": "takes it for granted that I will allow",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-48",
+              "type": "gap_fill",
+              "instruction": "Sentence 48: It was ______ entered the competition. (Key word: THANKS)",
+              "blankIndex": 48,
+              "acceptedAnswers": [
+                [
+                  "thanks to his encouragement that I ever",
+                  "THANKS TO HIS ENCOURAGEMENT THAT I EVER"
+                ],
+                [
+                  "thanks to his encouragement that I",
+                  "THANKS TO HIS ENCOURAGEMENT THAT I"
+                ],
+                [
+                  "thanks to his encouragement I",
+                  "THANKS TO HIS ENCOURAGEMENT I"
+                ]
+              ],
+              "correctAnswer": "thanks to his encouragement that I ever",
+              "explanation": "Đáp án: 'thanks to his encouragement that I ever' (hoặc 'thanks to his encouragement that I'). Cấu trúc câu chẻ nhấn mạnh nguyên nhân: 'It was thanks to + noun + that + clause' = Chính nhờ vào sự khuyến khích của anh ấy mà tôi đã tham gia cuộc thi. Bẫy: Từ 'thanks' bắt buộc phải đi với 'to'. Chuyên đề: Cleft sentences — It was thanks to.",
+              "answerLocation": "thanks to his encouragement that I ever",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-49",
+              "type": "gap_fill",
+              "instruction": "Sentence 49: It is often difficult ______ retirement. (Key word: TERMS)",
+              "blankIndex": 49,
+              "acceptedAnswers": [
+                [
+                  "to come to terms with",
+                  "TO COME TO TERMS WITH"
+                ]
+              ],
+              "correctAnswer": "to come to terms with",
+              "explanation": "Đáp án: 'to come to terms with'. Thành ngữ 'come to terms with something' = chấp nhận thực tế/thỏa hiệp với hoàn cảnh khó khăn nào đó. Câu gốc: 'Accepting retirement is often difficult' chuyển đổi hoàn hảo thành cụm từ này. Chuyên đề: Idioms — come to terms with.",
+              "answerLocation": "to come to terms with",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-50",
+              "type": "gap_fill",
+              "instruction": "Sentence 50: Michael ______ again. (Key word: INTENTION)",
+              "blankIndex": 50,
+              "acceptedAnswers": [
+                [
+                  "has no intention of moving",
+                  "HAS NO INTENTION OF MOVING"
+                ],
+                [
+                  "has no intention to move",
+                  "HAS NO INTENTION TO MOVE"
+                ],
+                [
+                  "has the intention of not moving",
+                  "HAS THE INTENTION OF NOT MOVING"
+                ]
+              ],
+              "correctAnswer": "has no intention of moving",
+              "explanation": "Đáp án: 'has no intention of moving' (hoặc 'has no intention to move'). Cấu trúc 'have no intention of doing something' = không có ý định làm gì, viết lại cho quyết định phủ định 'Michael has made the decision not to move again'. Bẫy: Phải dùng giới từ 'of' đi với danh động từ 'moving' là tự nhiên nhất. Chuyên đề: Grammar — intention structures.",
+              "answerLocation": "has no intention of moving",
+              "category": "cpe_part_4",
+              "source": "Pages 46-47, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t2-sec-5",
+      "title": "Part 5: Multiple Choice Reading",
+      "instructions": "For questions 51-65, read the following texts and choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Wedding Arrangements</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Royal Lily Weddings exists to provide you and your dear ones with a professional wedding co-ordination service. We can attend to all aspects of the event. Rest assured no detail will be disregarded by us. Not everyone gets married in church these days. Even the traditional sometimes choose other venues they consider more romantic or fitting - a beautiful garden for instance, or a beach, or a mountain top - even a bus shelter. Choice regarding the dress too, has become far wider. If you don't want to be married in white, dare to be bold. We offer advice and access to select couturiers and fashion designers.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The traditional Christian vow made by a wife to her husband has largely been abandoned, and in its wake, personalised vows have come to the fore. Seating at the reception, as at the church, can be a problem. We will liaise between you and any unintentionally difficult family members or friends using tact and discretion to preserve the harmony on the day as well as in the years to follow. Whatever format you choose, do come to Royal Lily Weddings to make sure it all adds up to a day you will remember for the rest of your lives.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: The Archbishop's Speech & Response</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>An important role of the church is to remind us of the moral concerns confronting society. Recently we have been reminded of that role in a speech given by the archbishop, who lamented the high rate of divorce and linked falling fertility rates to the collapse of traditional family life. He predicted that the lower birth rate would have serious social consequences in the future and suggested that the tax system be used to reward couples who stay together and have children.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>It is unlikely, however, that imposing a 'divorce tax' on separating couples, or reintroducing fault as an element in determining custody and property settlements, as he suggested, will do much to keep families together. Using the tax system or custody laws to discipline couples whose marriages fail, will only add to the stress and hardship of those contemplating divorce. Marriage is not 'the only contract that people can walk away from without a penalty' as he suggested, because divorce itself can be a great penalty for those affected by it. Keeping couples together by duress is not the best way to strengthen marriage. How to nurture the individual desire for growth and fulfilment, while strengthening family life is a great challenge for all of society. The archbishop is to be congratulated for re-opening the debate.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 3: Mehndi</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Mehndi is deeply ingrained in the Indian tradition. Although applied on other occasions as well, it is an integral part of the wedding ceremony and is almost synonymous with marriage. A special time is set aside for the application of mehndi to the hands and feet of the bride-to-be, and the ceremony generally takes place on the night before the actual wedding. In the past, when almost all the women in any given household were proficient in this art, the most talented relative or friend was usually designated to perform this duty. Now that this art is getting lost in the race for urbanisation, special beauticians or artists have to be hired for the purpose and mehndi parlours are springing up in large cities.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The mehndi ceremony is a special one for the bride. She is surrounded by all the female members of the household, as well as the friends she has grown up with and close relatives who have come to attend the wedding. There will be much singing and dancing interspersed with bouts of teasing the bride. They have a captive audience in her, since she has to sit still for at least five to six hours while the mehndi is being applied. Like most customs and traditions that surround a wedding, there is an atmosphere of joviality and nostalgia, with a tinge of sadness.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 4: Outside the Registry Office</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>And then she saw the Registry Office and a small crowd chatting on the pavement in front of the entrance. Like a visitor from another planet, she saw her publisher and her agent and her poor father's crazy vegetarian cousin and several of her friends and quite a few neighbours. And she saw Penelope, animated, her red hat attracting the attention of one or two of the photographers, conversing with the best man and Geoffrey.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>And then she saw, in a flash, but for all time, the totality of his mouse-like seemliness. Leaning forward, in a condition of extreme calm, she said to the driver, 'Would you take me on a little further please? I've changed my mind.' 'Certainly, Madam,' he replied, thinking she was one of the guests. 'Where would you like to go?' 'Perhaps round the park?' she suggested. As the car proceeded smoothly past the Registry Office, Edith saw, as if in a still photograph, Penelope and Geoffrey, staring, their mouths open in horror. Then the scene became slightly more animated, as the crowd began to straggle down the steps, reminding her of a sequence in some early masterpiece of the cinema, now preserved as archive material.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 5: The Storied Venetian (Marco Polo)</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>'Here begins the introduction of this book, which is called The Description of the World. Lords, Emperors, and Kings, Dukes, and Marquesses, Counts, Knights, and Burgesses, and all people who wish to know the different generations of men and the diversities of the different regions of the world, then take this book and have it read and here you will find all the greatest marvels and the great diversities...'</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>So begins Marco Polo's book, The Description of the World, as presented in Arthur Christopher Moule's masterful English translation of a version of Marco Polo's book known to scholars as the 'F' text. The storied Venetian trader escaped bandits, pirates, rampaging rivers and sandstorms on his epic eastbound journey. Sailing the treacherous coasts of Southeast Asia and India, Marco Polo returned to Venice in 1295, after 24 years, rich in gems, and wild tales of unimagined lands. Shortly after his return to Venice, Marco Polo was captured at sea, possibly by pirates. One tradition suggests he was imprisoned in Genoa's Palazzo and that he devoted his prison time to composing his book. On his deathbed in 1324, the legendary adventurer reflected that he had many more stories to tell.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Description of the World, the original product of Marco Polo's collaboration with a romance writer named Rustichello has been lost, and so scholars are left to sift through the some 150 versions known to exist, no two exactly alike. Scholars divide the 150 versions into two groups, labeled 'A' and 'B'. The 'F' text, which falls into the 'A' group, is housed in the Bibliotheque Nationale in Paris. Considered one of the best and very close to the original, it is written in a Franco-Italian language described by one scholar as 'uncouth French much mingled with Italian.'</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Some of these 'A' texts are notorious for variations that show the biases, mistakes and editorial judgments of their copiers. For example, when some translators were presented with the news that the three Magi were buried at Saveh in Persia rather than in Cologne, they inserted that the people of Saveh tell many lies. As these books were translated from language to language, the opportunities for error multiplied; one text from the early 16th century is a Tuscan translation of a Latin translation of an earlier Tuscan translation of the original Franco-Italian language. Although we have no confirmation of the Marco-Rustichello collaboration other than the book itself, Marco Polo seems to have approved of at least some of its versions, for in 1307 he presented a French translation of it to an envoy of Charles of Valois.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The second group of manuscripts, known as the 'B' group, provides some provocative material not found in the 'A' texts. From this 'B' group, for example, we learn that the people around Yarkand in western China suffer from goitre - a problem for them even today. Until the 1930s the only examples of 'B' texts were a few odd bits of manuscript and a printed text by Giambattista Ramusio that appeared in 1559, two years after his death. Ramusio tells his readers that his Italian version was produced 'with the help of different copies.' The foundation of his work appears to be a Latin text dating from before 1320, with influences from other identifiable versions. What is distinctive about Ramusio's work is that about twenty per cent of it was, until 1932, considered unique. That twenty per cent is thought to have come from another early Latin text, which may have been destroyed in a 1557 fire. In any event, the source has never been found.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>A second version containing much of Ramusio's original material surfaced in Toledo, Spain in 1932. Most of this Latin manuscript agrees with the 'F' manuscript, but it also contains some 200 passages not found in 'F'. About 120 of those, however, are found in Ramusio's book. Because the remaining 80 offer valuable historical and geographical material and even help to clarify some obscure passages of 'F', this manuscript is thought to be a copy of something that was very close to an original. In sorting this out, scholars have come to conclude that Marco Polo probably wrote two versions of his book. The second version, represented by the 'B' texts, may have been a revision and expansion done for a select group of readers who had already made their way through the first book. It is unlikely that we will ever know exactly what form the first book took, but the versions we have still make for a very good read.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t2-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-b2t2-51",
+              "type": "multiple_choice",
+              "instruction": "Question 51: People who use Royal Lily Weddings are described in the text as those who ______",
+              "options": [
+                "A. wish to preserve customary styles.",
+                "B. lack knowledge of wedding procedures.",
+                "C. only want something different.",
+                "D. want their wedding day to be perfect."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn văn nhấn mạnh dịch vụ này nhằm đảm bảo 'make sure it all adds up to a day you will remember for the rest of your lives' (một ngày hoàn hảo để nhớ suốt đời). Bẫy: 'only want something different' (C) sai vì có cả những người truyền thống ('traditional') cũng sử dụng dịch vụ này. Chuyên đề: Reading comprehension — detail questions.",
+              "answerLocation": "to make sure it all adds up to a day you will remember",
+              "category": "cpe_part_5",
+              "source": "Page 32, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-52",
+              "type": "multiple_choice",
+              "instruction": "Question 52: The agency's handling of difficult family members or guests is characterized as ______",
+              "options": [
+                "A. accommodating.",
+                "B. forbearing.",
+                "C. patronising.",
+                "D. demanding."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'Accommodating' = mang tính hợp tác, đáp ứng linh hoạt và giải quyết êm thấm. Tác giả nói họ 'liaise using tact and discretion to preserve the harmony' (giữ hòa khí bằng sự khôn khéo). Bẫy: 'forbearing' (nhẫn nhịn chịu đựng) không thể hiện tính chủ động giải quyết chuyên nghiệp của công ty. Chuyên đề: Reading comprehension — tone/attitude.",
+              "answerLocation": "using tact and discretion to preserve the harmony",
+              "category": "cpe_part_5",
+              "source": "Page 32, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-53",
+              "type": "multiple_choice",
+              "instruction": "Question 53: The archbishop's proposal to use tax benefits or penalties to keep couples together is described by the writer of the second text as ______",
+              "options": [
+                "A. contractual.",
+                "B. punitive.",
+                "C. rewarding.",
+                "D. understanding."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'Punitive' = mang tính trừng phạt. Phản hồi lập luận rằng 'imposing a divorce tax... using laws to discipline couples... keeping couples together by duress' (ép buộc bằng luật pháp) thực chất là trừng phạt và gây thêm áp lực. Bẫy: 'rewarding' (C) là từ đức cha dùng, nhưng người viết bài phản đối và gọi đó là sự ép buộc/trừng phạt. Chuyên đề: Reading comprehension — opinion extraction.",
+              "answerLocation": "discipline couples whose marriages fail... Keeping couples together by duress",
+              "category": "cpe_part_5",
+              "source": "Page 33, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-54",
+              "type": "multiple_choice",
+              "instruction": "Question 54: The writer of the second text believes that in re-opening the debate the archbishop ______",
+              "options": [
+                "A. exceeded his role.",
+                "B. overemphasised the individual.",
+                "C. acted in accordance with his position.",
+                "D. paid too much attention to divorce."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'acted in accordance with his position' = hành động hoàn toàn đúng với cương vị của mình. Câu đầu khẳng định: 'An important role of the church is to remind us of the moral concerns...'. Do đó, việc mở lại tranh luận của tổng giám mục là phù hợp với trách nhiệm giáo hội. Chuyên đề: Reading comprehension — author's opinion.",
+              "answerLocation": "An important role of the church is to remind us... The archbishop is to be congratulated",
+              "category": "cpe_part_5",
+              "source": "Page 33, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-55",
+              "type": "multiple_choice",
+              "instruction": "Question 55: The emergence of mehndi parlours in large Indian cities shows that ______",
+              "options": [
+                "A. the mehndi ceremony may replace the marriage ceremony.",
+                "B. the growth of big cities is causing all traditional practices to disappear.",
+                "C. changes in living patterns have caused new types of businesses to appear.",
+                "D. the art of applying mehndi is learnt by the majority of women."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'changes in living patterns...' = thay thế mô hình sinh hoạt gia đình truyền thống bằng dịch vụ thương mại hóa. Do đô thị hóa ('urbanisation'), phụ nữ không còn thời gian học nghệ thuật này tại nhà như trước, dẫn đến việc phải thuê ngoài và các tiệm dịch vụ (parlours) bùng nổ. Bẫy: 'all traditional practices to disappear' (B) là quá cực đoan. Chuyên đề: Reading comprehension — cause and effect.",
+              "answerLocation": "getting lost in the race for urbanisation, special beauticians... hired",
+              "category": "cpe_part_5",
+              "source": "Page 34, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-56",
+              "type": "multiple_choice",
+              "instruction": "Question 56: The writer gives the impression that, on the whole, the mehndi ceremony is ______",
+              "options": [
+                "A. a chance to review the past.",
+                "B. a time of regret.",
+                "C. a time for celebration.",
+                "D. a daunting experience."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'a time for celebration' = thời gian lễ hội vui vẻ. Văn cảnh mô tả không khí 'singing and dancing', 'joviality' (vui tươi náo nhiệt). Bẫy: 'tinge of sadness' (chút đượm buồn của hoài niệm) chỉ là một nét điểm xuyết, không đại diện cho toàn bộ buổi lễ. Chuyên đề: Reading comprehension — main impression.",
+              "answerLocation": "atmosphere of joviality and nostalgia",
+              "category": "cpe_part_5",
+              "source": "Page 34, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-57",
+              "type": "multiple_choice",
+              "instruction": "Question 57: The crowd at the Registry Office described in Text 4 is waiting for ______",
+              "options": [
+                "A. the wedding of a friend.",
+                "B. a relative's house.",
+                "C. her own wedding.",
+                "D. an official reception."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'her own wedding' = đám cưới của chính nhân vật tôi (Edith). Bối cảnh: Edith đi taxi đến, nhìn thấy Penelope, Geoffrey (chú rể) và gia đình đang đứng chờ trước cửa. Cô đột ngột đổi ý 'I've changed my mind' và bảo tài xế đi tiếp, khiến chú rể và mọi người há hốc mồm kinh ngạc. Chuyên đề: Reading comprehension — inferential comprehension.",
+              "answerLocation": "Would you take me on a little further please? I've changed my mind.",
+              "category": "cpe_part_5",
+              "source": "Page 35, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-58",
+              "type": "multiple_choice",
+              "instruction": "Question 58: Edith's reaction to the scene is that of someone who feels ______",
+              "options": [
+                "A. cut off from the scene.",
+                "B. disturbed by what she sees.",
+                "C. impressed by the immobility of the people.",
+                "D. the onset of old age."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'cut off from the scene' = cảm thấy tách biệt, đứng ngoài lề. Edith mô tả mình 'Like a visitor from another planet' (như vị khách từ hành tinh khác), nhìn mọi người 'as if in a still photograph' (như trong một bức ảnh tĩnh). Chuyên đề: Reading comprehension — tone/feeling interpretation.",
+              "answerLocation": "Like a visitor from another planet... saw, as if in a still photograph",
+              "category": "cpe_part_5",
+              "source": "Page 35, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-59",
+              "type": "multiple_choice",
+              "instruction": "Question 59: According to the introduction of 'The Description of the World', readers can expect to ______",
+              "options": [
+                "A. learn about Marco Polo's life.",
+                "B. learn about differences among generations.",
+                "C. travel to far regions of the world.",
+                "D. read descriptions of places."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'read descriptions of places' = đọc mô tả về các địa danh trên thế giới. Lời mở đầu tuyên bố cuốn sách dành cho những ai muốn biết về 'diversities of the different regions of the world' (sự đa dạng của các vùng miền). Bẫy: 'learn about Marco Polo's life' (A) không được nhắc tới như mục đích chính của lời mở đầu này. Chuyên đề: Reading comprehension — detail questions.",
+              "answerLocation": "wish to know... the diversities of the different regions of the world",
+              "category": "cpe_part_5",
+              "source": "Page 38, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-60",
+              "type": "multiple_choice",
+              "instruction": "Question 60: According to the second paragraph, stories about Marco Polo's life are ______",
+              "options": [
+                "A. well-supported.",
+                "B. all imaginary.",
+                "C. take place at sea.",
+                "D. are sometimes unreliable."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'are sometimes unreliable' = đôi khi không đáng tin cậy/chưa được kiểm chứng rõ ràng. Đoạn văn dùng các cụm từ 'One tradition suggests...' (Một truyền thuyết kể rằng...), cho thấy các câu chuyện về việc ông ngồi tù viết sách chỉ là truyền khẩu chưa có bằng chứng xác đáng. Chuyên đề: Reading comprehension — factual vs traditional claims.",
+              "answerLocation": "One tradition suggests he was imprisoned",
+              "category": "cpe_part_5",
+              "source": "Page 38, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-61",
+              "type": "multiple_choice",
+              "instruction": "Question 61: What is the 'F' text of Marco Polo's book?",
+              "options": [
+                "A. The authentic text written by Marco Polo and Rustichello.",
+                "B. The script with the greatest affinity to the original source.",
+                "C. Not one of the 150 versions of Marco's original book.",
+                "D. A good version of the 'B' texts written in Franco-Italian."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'The script with the greatest affinity...' = bản thảo có độ tương đồng/gần gũi nhất với bản gốc ban đầu đã mất. Văn bản ghi nhận nó là 'Considered one of the best and very close to the original'. Bẫy: 'authentic text' (A) sai vì bản gốc thực sự đã thất lạc hoàn toàn ('has been lost'). Chuyên đề: Reading comprehension — paraphrasing.",
+              "answerLocation": "Considered one of the best and very close to the original",
+              "category": "cpe_part_5",
+              "source": "Page 38, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-62",
+              "type": "multiple_choice",
+              "instruction": "Question 62: What is one of the main problems with the 'A' texts?",
+              "options": [
+                "A. All translators manipulated the truth.",
+                "B. Editing is now difficult and unreliable.",
+                "C. The early versions were remote from the original text.",
+                "D. Later translations distorted the original."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'Later translations distorted the original' = các bản dịch sau này làm bóp méo/sai lệch bản gốc. Đoạn văn viết: 'notorious for variations that show the biases, mistakes and editorial judgments of their copiers... opportunities for error multiplied'. Chuyên đề: Reading comprehension — problem identification.",
+              "answerLocation": "variations that show the biases, mistakes and editorial judgments of their copiers",
+              "category": "cpe_part_5",
+              "source": "Page 38, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-63",
+              "type": "multiple_choice",
+              "instruction": "Question 63: The 'B' group of manuscripts ______",
+              "options": [
+                "A. contained previously undocumented information.",
+                "B. were compilations of manuscripts printed by Ramusio.",
+                "C. dealt with health and culture in China.",
+                "D. were published two years after Ramusio's death."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'contained previously undocumented information' = chứa thông tin trước đây chưa từng được chép lại trong các bản thuộc nhóm 'A'. Văn bản nói: 'provides some provocative material not found in the 'A' texts'. Bẫy: 'printed by Ramusio' (B) sai vì Ramusio chỉ in một ấn bản dựa trên chúng. Chuyên đề: Reading comprehension — comparative details.",
+              "answerLocation": "provides some provocative material not found in the 'A' texts",
+              "category": "cpe_part_5",
+              "source": "Page 38, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-64",
+              "type": "multiple_choice",
+              "instruction": "Question 64: What was found in Toledo, Spain in 1932?",
+              "options": [
+                "A. A Latin version containing valuable information about Ramusio.",
+                "B. A text which was very close to the 'F' manuscript.",
+                "C. A manuscript of 200 passages that do not appear in the 'F' text.",
+                "D. The original book written by Marco Polo."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'A manuscript of 200 passages...' = một bản thảo chứa khoảng 200 phân đoạn không xuất hiện trong bản thảo 'F'. Đoạn cuối viết: 'contains some 200 passages not found in F'. Bẫy: Đây không phải bản gốc viết tay của Marco Polo (D) vì bản gốc đã mất. Chuyên đề: Reading comprehension — detail questions.",
+              "answerLocation": "surfaced in Toledo... contains some 200 passages not found in F",
+              "category": "cpe_part_5",
+              "source": "Page 38, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-65",
+              "type": "multiple_choice",
+              "instruction": "Question 65: In relation to 'The Description of the World', what does the author suggest in the end?",
+              "options": [
+                "A. Despite its uncertain origins, it is a fascinating piece of literature.",
+                "B. Scholars should discover who the true author was.",
+                "C. Marco Polo wrote many versions of the same book.",
+                "D. Marco Polo intended his original book for an elite readership."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'Despite its uncertain origins...' = bất chấp nguồn gốc bất định, đây vẫn là một kiệt tác hấp dẫn độc giả. Câu cuối kết luận: 'It is unlikely that we will ever know exactly what form the first book took, but the versions we have still make for a very good read.' Chuyên đề: Reading comprehension — global/concluding opinion.",
+              "answerLocation": "but the versions we have still make for a very good read",
+              "category": "cpe_part_5",
+              "source": "Page 38, Test 2, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t2-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "For questions 66-72, read the following text about Rajasthan. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Rajasthan</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>One evening, by the light of an electric bulb we sat out with the villagers in the main street of a 'model village' of the command area. The street was unpaved, and the villagers, welcoming us, had quickly spread cotton rugs on the ground that had been softened by the morning's rain, half hardened by the afternoon's heat, and then trampled and manured by the village cattle returning at dusk. The women had withdrawn, we were left with the men and, until the rain came roaring in again, we talked.</p><div class='my-4 p-3 bg-emerald-50 border-l-4 border-emerald-500 font-semibold'>[ Gap 66 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The problems of the irrigation project the commissioner was directing were not only those of salinity or the ravines or land levelling. The problem as he saw it, was the remaking of men. And this was not simply making men want something; it meant in the first place, bringing them back from the self-wounding and the special waste that come with an established destitution.</p><div class='my-4 p-3 bg-emerald-50 border-l-4 border-emerald-500 font-semibold'>[ Gap 67 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>But if in this model village - near Kotah Town, which was fast industrialising - there had been some movement, Bundi, the next day, seemed to take us backward. Bundi and Kotah; to me, until this trip, they had only been beautiful names, the names of related but distinct schools of Rajasthan painting. The artistic glory of Bundi had come first in the late seventeenth century.</p><div class='my-4 p-3 bg-emerald-50 border-l-4 border-emerald-500 font-semibold'>[ Gap 68 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Old wars; bravely fought but usually little more had been at stake other than the honour and local glory of one particular prince. The fortifications were now useless, the palace was empty. One dark, dusty room had old photographs and remnants of Victorian bric-a-brac. The small formal garden in the courtyard was in decay; and the mechanical, decorative nineteenth-century Bundi murals around the courtyard had faded to blues and yellows and greens. In the inner rooms, hidden from the sun, brighter colours survived, and some panels were exquisite. But it all awaited ruin.</p><div class='my-4 p-3 bg-emerald-50 border-l-4 border-emerald-500 font-semibold'>[ Gap 69 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Their mock aggressiveness and mock exasperation held little of real despair or rebellion. It was a ritual show of deference to authority, a demonstration of their complete dependence on authority. The commissioner smiled and listened and heard them all; and their passion faded.</p><div class='my-4 p-3 bg-emerald-50 border-l-4 border-emerald-500 font-semibold'>[ Gap 70 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>They were far removed from the commissioner's anxieties, from his vision of what could be done with their land. They were, really, at peace with the world they knew. Like the woman in whose yard we sat. She was friendly, she had dragged out string beds for us from her little brick hut; but her manner was slightly supercilious. There was a reason. She was happy, she considered herself blessed. She had had three sons, and she glowed with that achievement.</p><div class='my-4 p-3 bg-emerald-50 border-l-4 border-emerald-500 font-semibold'>[ Gap 71 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Men had retreated to their last, impregnable defences: their knowledge of who they were, their unshakeable place in the scheme of things; and this knowledge was like their knowledge of the seasons. Rituals marked the passage of each day, rituals marked every stage of a man's life. Life itself had been turned to ritual; and everything beyond this complete and sanctified world was vain and phantasmal.</p><div class='my-4 p-3 bg-emerald-50 border-l-4 border-emerald-500 font-semibold'>[ Gap 72 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>But to those who embraced its philosophy of distress, India also offered an enduring security, its equilibrium. Only India with its great past, its civilisation, its philosophy, and its almost holy poverty, offered this truth; India was the truth. And India, for all its surface terrors, could be proclaimed, without disingenuousness or cruelty, as perfect. Not only by pauper but by prince.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t2-rg-6",
+          "instruction": "Choose the correct letter, A-H, for each gap. There is one extra paragraph.",
+          "questions": [
+            {
+              "id": "q-b2t2-66",
+              "type": "gapped_text",
+              "instruction": "Gap (66):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn văn A giới thiệu ý kiến của 'the commissioner' về nông nghiệp và việc chuyển biến tư duy từ cắt ngọn mía sang quan tâm phân bón. Câu tiếp theo sau khoảng trống lập tức liên kết: 'The problems of the irrigation project the commissioner was directing...' (Các vấn đề của dự án thủy lợi mà ủy viên đang điều hành...). Đây là sự phát triển logic trực tiếp giới thiệu nhân vật và bối cảnh. Chuyên đề: Gapped Text — coherence and cohesive devices.",
+              "answerLocation": "We were, as the commissioner said... So the present concern, here in the model village",
+              "category": "cpe_part_6",
+              "source": "Pages 36-37, Test 2, Practice Tests CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-67",
+              "type": "gapped_text",
+              "instruction": "Gap (67):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Đoạn văn C tiếp tục mạch suy nghĩ về 'men of Rajasthan' (những người đàn ông Rajasthan) có mục tiêu cuộc sống rất hạn chế chỉ quanh quẩn đồng ruộng, trâu bò và tác giả nhận ra ý tưởng cải tạo nông thôn của mình chỉ là ảo tưởng. Câu tiếp theo nối tiếp: 'But if in this model village... there had been some movement, Bundi, the next day, seemed to take us backward.' (Nhưng nếu ở ngôi làng kiểu mẫu này có chút chuyển biến, thì Bundi ngày hôm sau lại kéo chúng tôi lùi lại). Từ tương phản 'But' chỉ ra sự đối lập giữa 'movement' (chuyển biến nhỏ) với 'fantasies' (sự ảo tưởng cải tạo) ở đoạn C. Chuyên đề: Gapped Text — logical progression.",
+              "answerLocation": "So handsome, these men of Rajasthan... I began to see my own ideas of village improvement as fantasies.",
+              "category": "cpe_part_6",
+              "source": "Pages 36-37, Test 2, Practice Tests CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-68",
+              "type": "gapped_text",
+              "instruction": "Gap (68):",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn văn H mô tả hành trình di chuyển ngày hôm sau: 'And after the flat waterlogged fields... road from Kotah... Bundi Castle on its hill was startling...' (Và sau những cánh đồng ngập nước phẳng lặng... lâu đài Bundi Castle trên đồi hiện ra kinh ngạc). Câu tiếp nối sau khoảng trống bàn về lịch sử: 'Old wars; bravely fought... The fortifications were now useless...' (Những cuộc chiến tranh cổ xưa; chiến đấu dũng cảm... Các công sự giờ đây vô dụng...). 'fortifications' (công sự) liên kết ngữ nghĩa trực tiếp với 'Bundi Castle' (lâu đài Bundi). Chuyên đề: Gapped Text — vocabulary links.",
+              "answerLocation": "Bundi Castle on its hill was startling... Old wars; bravely fought",
+              "category": "cpe_part_6",
+              "source": "Pages 36-37, Test 2, Practice Tests CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-69",
+              "type": "gapped_text",
+              "instruction": "Gap (69):",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Đoạn văn E miêu tả sự kiệt quệ sức sống của Bundi: 'All vitality had gone out of Bundi. It showed in the rundown town... in the people... full of complaints.' (Mọi sức sống đã rời bỏ Bundi... thể hiện ở những con người đầy lời phàn nàn oán thán). Câu tiếp theo nối tiếp phản ứng của họ: 'Their mock aggressiveness and mock exasperation held little of real despair...' (Sự gây hấn giả vờ và nỗi bực dọc giả vờ của họ chứa đựng rất ít sự tuyệt vọng thực sự...). 'Their mock aggressiveness' liên kết trực tiếp với mô tả phàn nàn 'complaints' ở đoạn E. Chuyên đề: Gapped Text — cause and effect / explanation.",
+              "answerLocation": "and more full of complaints... Their mock aggressiveness and mock exasperation",
+              "category": "cpe_part_6",
+              "source": "Pages 36-37, Test 2, Practice Tests CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-70",
+              "type": "gapped_text",
+              "instruction": "Gap (70):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn văn D cực kỳ ngắn gọn nhưng đắt giá: 'Nothing beyond food - and survival - had, as yet, become an object of ambition.' (Chưa có điều gì vượt quá thức ăn và sự sinh tồn trở thành mục tiêu tham vọng của họ). Câu tiếp theo giải thích: 'They were far removed from the commissioner's anxieties... They were, really, at peace with the world they knew.' (Họ nằm ngoài mối lo âu của ủy viên... Họ thực sự bình yên với thế giới họ biết). Sự thiếu thốn tham vọng giải thích lý do họ dửng dưng với các dự án lớn của ủy viên. Chuyên đề: Gapped Text — logical flow.",
+              "answerLocation": "Nothing beyond food - and survival - had... They were far removed from",
+              "category": "cpe_part_6",
+              "source": "Pages 36-37, Test 2, Practice Tests CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-71",
+              "type": "gapped_text",
+              "instruction": "Gap (71):",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn văn G miêu tả hiện trạng tồi tàn của bang ông hoàng ('Prince's state was wretched... child labourers using their hands to shovel gravel... children were stunted'). Câu tiếp theo nối tiếp suy nghĩ chiêm nghiệm yếm thế: 'Men had retreated to their last, impregnable defences... place in the scheme of things...' (Con người đã rút lui về những tuyến phòng thủ kiên cố cuối cùng: nhận thức về bản thân họ trong trật tự vạn vật...). Hiện trạng tồi tệ thể xác khiến họ chỉ còn biết nương tựa vào tâm linh/trật tự tinh thần kiên định. Chuyên đề: Gapped Text — philosophical transition.",
+              "answerLocation": "peasants preferred to sell their crop, and the children were stunted... Men had retreated",
+              "category": "cpe_part_6",
+              "source": "Pages 36-37, Test 2, Practice Tests CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t2-72",
+              "type": "gapped_text",
+              "instruction": "Gap (72):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn văn B suy ngẫm về sự vô thường của vương quốc và dự án: 'Kingdoms, empires, projects... they had come and gone... India taught the vanity of all action...' (Các vương quốc, đế chế, dự án... đều đến rồi đi... Ấn Độ dạy ta về tính hư vô của mọi hành động...). Câu tiếp theo kết luận hoàn hảo: 'But to those who embraced its philosophy of distress, India also offered an enduring security, its equilibrium.' (Nhưng với những ai chấp nhận triết lý đau khổ đó, Ấn Độ cũng mang lại một sự an toàn trường cửu, sự cân bằng của nó). 'philosophy of distress' (triết lý đau khổ) ở câu sau chính là sự đúc kết từ 'vanity of all action' (sự hư vô của hành động) ở đoạn B. Chuyên đề: Gapped Text — conceptual linking.",
+              "answerLocation": "India taught the vanity of all action... But to those who embraced its philosophy of distress",
+              "category": "cpe_part_6",
+              "source": "Pages 36-37, Test 2, Practice Tests CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "We were, as the commissioner said, among men who until recently, cut only the very tops of sugar cane and left the rest of the plant, the substance of the crop, to rot. So the present concern, here in the model village, about fertilisers and yields was an immeasurable advance."
+            },
+            {
+              "label": "B",
+              "text": "Kingdoms, empires, projects like the commissioner's; they had come and gone. The monuments of ambition and restlessness littered the land, so many of them abandoned or destroyed, so many unfinished, the work of dynasties suddenly supplanted. India taught the vanity of all action; and the visitor could be appalled by the waste, and by all that now appeared to threaten the commissioner's enterprise."
+            },
+            {
+              "label": "C",
+              "text": "So handsome, these men of Rajasthan, so self-possessed; it took time to understand that their concerns were limited. The fields, water, crops, cattle: that was where concern began and ended. They were a model village, and so they considered themselves. There was little more that they needed, and I began to see my own ideas of village improvement as fantasies."
+            },
+            {
+              "label": "D",
+              "text": "Nothing beyond food - and survival - had, as yet, become an object of ambition."
+            },
+            {
+              "label": "E",
+              "text": "All vitality had been sucked up into that palace on the hill; and now vitality had gone out of Bundi. It showed in the rundown town on the hillside below the palace; it showed in the fields; it showed in the people, more beaten down than at Kotah Town just sixty miles away, less amenable to the commissioner's ideas, and more full of complaints. They complained even when they had no cause; and it seemed that they complained because they felt it was expected of them."
+            },
+            {
+              "label": "F",
+              "text": "All the chivalry of Rajasthan had been reduced here to nothing. The palace was empty; the petty wars of princes had been absorbed into legend and could no longer be dated. All that remained was what the visitor could see: small poor fields, ragged men, huts, monsoon mud. But in that very abjectness lay security. Where the world had shrunk, and ideas of human possibility had become extinct, the world could be seen as complete."
+            },
+            {
+              "label": "G",
+              "text": "The Prince's state, or what had been his state, was wretched; just the palace and the peasants. The developments in which he had invested hadn't yet begun to show. In the morning, in the rain, I saw young child labourers using their hands alone to shovel gravel onto a waterlogged path. Groundnuts were the only source of protein here; but the peasants preferred to sell their crop, and the children were stunted."
+            },
+            {
+              "label": "H",
+              "text": "And after the flat waterlogged fields, pallid paddy thinning out at times to marshland, after the desolation of the road from Kotah, the flooded ditches, the occasional cycle-rickshaw, the damp groups of bright-turbaned peasants waiting for the bus, Bundi Castle on its hill was startling, its great walls like the work of giants, the extravagant creation of men who had once had much to defend."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

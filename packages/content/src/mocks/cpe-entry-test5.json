@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test5",
+  "title": "CPE Entry Test 5 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test5-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Deadly Feasts</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>What could (0) be more wholesome than feeding the birds (1) __________ your garden? The bird-loving British feed (2) __________ than 15,000 tonnes of peanuts to wild birds (3) __________ year. Yet bird tables provide a mixing bowl for droppings and food, and encourage birds to congregate (4) __________ numbers, and a mix of species that would (5) __________ occur in the wild. Those picturesque bird tables (6) __________ be behind the worsening epidemics of salmonella and E.coli that have killed thousands of songbirds, especially finches, in Europe and North America in recent years. In one survey, it (7) __________ found that people who put out more than half a litre of food a day attracted significantly (8) __________ birds and saw a (9) __________ greater percentage die from what appeared to be infectious diseases (10) __________ people who put out less food. But (11) __________ dramatic local die-offs, so (12) __________ no bird species have been threatened. (13) __________, there may be other reasons to be concerned. In Quebec, for example, cats have caught salmonella from sick birds, (14) __________ fears that it could be passed on (15) __________ pet owners.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test5-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test5-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "IN",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "IN",
+              "explanation": "Đáp án đề xuất: IN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IN",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "MORE",
+                  "more"
+                ]
+              ],
+              "correctAnswer": "MORE",
+              "explanation": "Đáp án đề xuất: MORE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "MORE",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án đề xuất: A. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "Answer: A. Grammar cue: use the indefinite article required by the noun phrase around the gap.",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "IN",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "IN",
+              "explanation": "Đáp án đề xuất: IN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IN",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "NOT",
+                  "not"
+                ]
+              ],
+              "correctAnswer": "NOT",
+              "explanation": "Đáp án đề xuất: NOT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "NOT",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "MAY",
+                  "may"
+                ]
+              ],
+              "correctAnswer": "MAY",
+              "explanation": "Đáp án đề xuất: MAY. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "MAY",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "WAS",
+                  "was"
+                ]
+              ],
+              "correctAnswer": "WAS",
+              "explanation": "Đáp án đề xuất: WAS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WAS",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "MORE",
+                  "more"
+                ]
+              ],
+              "correctAnswer": "MORE",
+              "explanation": "Đáp án đề xuất: MORE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "MORE",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "SIGNIFICANTLY",
+                  "significantly"
+                ]
+              ],
+              "correctAnswer": "SIGNIFICANTLY",
+              "explanation": "Đáp án đề xuất: SIGNIFICANTLY. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "SIGNIFICANTLY",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "THAN",
+                  "than"
+                ]
+              ],
+              "correctAnswer": "THAN",
+              "explanation": "Đáp án đề xuất: THAN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THAN",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "DESPITE",
+                  "despite"
+                ]
+              ],
+              "correctAnswer": "DESPITE",
+              "explanation": "Đáp án đề xuất: DESPITE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "DESPITE",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "FAR",
+                  "far"
+                ]
+              ],
+              "correctAnswer": "FAR",
+              "explanation": "Đáp án đề xuất: FAR. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "FAR",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "HOWEVER",
+                  "however"
+                ]
+              ],
+              "correctAnswer": "HOWEVER",
+              "explanation": "Đáp án đề xuất: HOWEVER. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "HOWEVER",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "RAISING",
+                  "raising"
+                ]
+              ],
+              "correctAnswer": "RAISING",
+              "explanation": "Đáp án đề xuất: RAISING. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "RAISING",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "TO",
+                  "to"
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Đáp án đề xuất: TO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TO",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test5-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Head Start</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>It is a well-known, although (0) regrettable, fact that, throughout the countries of the western world, (16) __________ is on the increase, and that the marginalisation which results from this lack of opportunity to share in the West's affluence causes unemployment, crime and social (17) __________ amongst a large section of the less (18) __________ citizens. However, as far back as 1965, in the United States of America, a summer project designed to help children of poor families was launched during the War on Poverty of Lyndon B. Johnson's (19) __________.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Such was the success of Head Start that it expanded from the (20) __________ project that it had begun as, to a year-round scheme catering for a multitude of children and their families (21) __________ the country. Organised and managed by the Administration for Children and Families subdivision of the US Department of Health and Human services, Head Start centres operate today in nearly every county in all fifty states. The largest group that Head Start is (22) __________ to reach out to is pre-schoolers, aged between three and five, from a (23) __________ of backgrounds, some of the children being (24) __________. Given the racial and cultural diversity of the USA, each centre's programme is tailor-made to suit the ethnic and cultural (25) __________ of a particular community.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test5-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test5-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: POOR]:",
+              "acceptedAnswers": [
+                [
+                  "POVERTY",
+                  "poverty"
+                ]
+              ],
+              "correctAnswer": "POVERTY",
+              "explanation": "Đáp án đề xuất: POVERTY. Từ gốc 'POOR' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "POVERTY",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "POOR",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: EXCLUDE]:",
+              "acceptedAnswers": [
+                [
+                  "EXCLUSION",
+                  "exclusion"
+                ]
+              ],
+              "correctAnswer": "EXCLUSION",
+              "explanation": "Đáp án đề xuất: EXCLUSION. Từ gốc 'EXCLUDE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EXCLUSION",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "EXCLUDE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: FORTUNE]:",
+              "acceptedAnswers": [
+                [
+                  "FORTUNATE",
+                  "fortunate"
+                ]
+              ],
+              "correctAnswer": "FORTUNATE",
+              "explanation": "Đáp án đề xuất: FORTUNATE. Từ gốc 'FORTUNE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "FORTUNATE",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "FORTUNE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: PRESIDENT]:",
+              "acceptedAnswers": [
+                [
+                  "PRESIDENCY",
+                  "presidency"
+                ]
+              ],
+              "correctAnswer": "PRESIDENCY",
+              "explanation": "Đáp án đề xuất: PRESIDENCY. Từ gốc 'PRESIDENT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "PRESIDENCY",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "PRESIDENT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: SEASON]:",
+              "acceptedAnswers": [
+                [
+                  "SEASONAL",
+                  "seasonal"
+                ]
+              ],
+              "correctAnswer": "SEASONAL",
+              "explanation": "Đáp án đề xuất: SEASONAL. Từ gốc 'SEASON' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "SEASONAL",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "SEASON",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: THROUGH]:",
+              "acceptedAnswers": [
+                [
+                  "THROUGHOUT",
+                  "throughout"
+                ]
+              ],
+              "correctAnswer": "THROUGHOUT",
+              "explanation": "Đáp án đề xuất: THROUGHOUT. Từ gốc 'THROUGH' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "THROUGHOUT",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "THROUGH",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: INTENTION]:",
+              "acceptedAnswers": [
+                [
+                  "INTENDED",
+                  "intended"
+                ]
+              ],
+              "correctAnswer": "INTENDED",
+              "explanation": "Đáp án đề xuất: INTENDED. Từ gốc 'INTENTION' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "INTENDED",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "INTENTION",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: VARY]:",
+              "acceptedAnswers": [
+                [
+                  "VARIETY",
+                  "variety"
+                ]
+              ],
+              "correctAnswer": "VARIETY",
+              "explanation": "Đáp án đề xuất: VARIETY. Từ gốc 'VARY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "VARIETY",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "VARY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: ABLE]:",
+              "acceptedAnswers": [
+                [
+                  "DISABLED",
+                  "disabled"
+                ]
+              ],
+              "correctAnswer": "DISABLED",
+              "explanation": "Đáp án đề xuất: DISABLED. Từ gốc 'ABLE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DISABLED",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "ABLE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: COMPOSE]:",
+              "acceptedAnswers": [
+                [
+                  "COMPOSITION",
+                  "composition"
+                ]
+              ],
+              "correctAnswer": "COMPOSITION",
+              "explanation": "Đáp án đề xuất: COMPOSITION. Từ gốc 'COMPOSE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "COMPOSITION",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "COMPOSE",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test5-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>DIGITAL INDIA</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>By the end of the 1980s, India had one of the lowest growth (26) __________ of all developing countries, and for each head of population the country took in just £200. Huge public-sector projects had taken their (27) __________ on any foreign aid. But in 1991, the Prime Minister of India decided to (28) __________ the situation. Alighting on the burgeoning computer industry elsewhere in the world, he decided to (29) __________ the country into a software superpower. A later administration's decision to develop a nuclear arms programme in the late 1990s led to sanctions being (30) __________ on India. However, many countries have turned a blind eye to these ambitions and let their multinationals (31) __________ money into software-related projects. This has helped to build India's formidable reputation as a base for software development.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test5-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test5-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - rates. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "rates",
+              "category": "cpe_part_1",
+              "options": [
+                "A. measures",
+                "B. standards",
+                "C. rates",
+                "D. amounts"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - toll. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "toll",
+              "category": "cpe_part_1",
+              "options": [
+                "A. toll",
+                "B. cost",
+                "C. loss",
+                "D. penalty"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - reverse. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "reverse",
+              "category": "cpe_part_1",
+              "options": [
+                "A. repeal",
+                "B. undo",
+                "C. reverse",
+                "D. halt"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - turn. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "turn",
+              "category": "cpe_part_1",
+              "options": [
+                "A. move",
+                "B. turn",
+                "C. put",
+                "D. set"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - imposed. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "imposed",
+              "category": "cpe_part_1",
+              "options": [
+                "A. imposed",
+                "B. introduced",
+                "C. initiated",
+                "D. instituted"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - pour. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "pour",
+              "category": "cpe_part_1",
+              "options": [
+                "A. drop",
+                "B. spill",
+                "C. flow",
+                "D. pour"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - portrays. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "portrays",
+              "category": "cpe_part_1",
+              "options": [
+                "A. establishes",
+                "B. portrays",
+                "C. implies",
+                "D. illustrates"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - lot. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "lot",
+              "category": "cpe_part_1",
+              "options": [
+                "A. plot",
+                "B. load",
+                "C. lot",
+                "D. haul"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - focus. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "focus",
+              "category": "cpe_part_1",
+              "options": [
+                "A. point",
+                "B. idea",
+                "C. focus",
+                "D. reason"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - direct. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "direct",
+              "category": "cpe_part_1",
+              "options": [
+                "A. direct",
+                "B. main",
+                "C. foremost",
+                "D. primary"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - centre. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "centre",
+              "category": "cpe_part_1",
+              "options": [
+                "A. base",
+                "B. centre",
+                "C. stand",
+                "D. set"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - prevalent. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "prevalent",
+              "category": "cpe_part_1",
+              "options": [
+                "A. contemporary",
+                "B. prevailing",
+                "C. prevalent",
+                "D. obvious"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test5-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an extract from a novel. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap (38-44). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Making a collection of two hundred birds, mammals and reptiles is rather like having two hundred delicate babies to look after. It needs a lot of hard work and patience. You have to make sure their diet suits them, that their cages are big enough, that they get neither too hot in the tropics nor too cold when you get near England. You have to de-worm, detick and de-flea them; you have to keep their cages and feeding-pots spotlessly clean.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>This can sometimes make life rather difficult. There have been periods when I have played the adopted parent to as many as six baby animals at once, and this is no joke. Quite apart from anything else, imagine rising at three o’clock in the morning, stumbling about, half-asleep, in an effort to prepare six different bottles of milk, trying to keep your eyes open enough to put the right amount of vitamin drops and sugar in, knowing all the time that you will have to be up again in three hours to repeat the performance.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Just before our retreat, an Indian had wandered into our camp carrying a sack from which had come the most extraordinary noises. It sounded like a cross between a cello in pain and a donkey with laryngitis. Opening the sack, the Indian tipped out one of the most delightful baby animals I had ever seen. She was a young giant anteater, and she could not have been more than a week old. She was about the size of a corgi, with black, ash-grey and white fur, a long slender snout and a pair of tiny, rather bleary eyes. The Indian said he had found her wandering about in the forest, honking forlornly. He thought her mother might have been killed by a jaguar.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Young anteaters, at that age, cling to their mother’s back, and, since we had, so to speak, become her parents, she insisted on climbing on to one or the other of us nearly the whole time. Her claws were about three inches long, and she had a prodigious grip with them. During meals she clasped your leg affectionately with three paws, while with her remaining paw she held your finger and squeezed it hard at intervals, for she was convinced that this would increase the flow of milk from the bottle. At the end of each feed you felt as though you had been mauled by a grizzly bear, while your fingers had been jammed in a door.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Sarah was a model baby. Between feeds she lay quietly on her sack, occasionally yawning and showing a sticky, pinky-grey tongue about twelve inches long. When feeding-time came round, she would suck the teat on her bottle so vigorously that it had soon changed from red to pale pink, the hole at the end of it had become about the size of a matchstick, and the whole thing drooped dismally from the neck of the bottle. When we had to leave Paraguay in our extremely unsafe-looking four-seater plane, Sarah slept peacefully throughout the flight, lying on my wife’s lap and snoring gently, occasionally blowing a few bubbles of sticky saliva out of her nose.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>In Buenos Aires we housed our animals in an empty house on the outskirts of the city. From the centre, where we stayed, it took us half an hour in a taxi to reach it, and this journey we had to do twice and sometimes three times a day. We soon found that having a baby anteater made our social life difficult in the extreme. Have you ever tried to explain to a hostess that you must suddenly leave in the middle of dinner because you have to give a bottle to an anteater? In the end our friends gave up in despair. They used to telephone and ascertain the times of Sarah’s feeds before inviting us.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>When this had been repeated twenty or thirty times she felt satisfied, and then you had to lay her on her back and tickle her tummy for ten minutes or so while she closed her eyes and blew bubbles of ecstasy at you. After this she would go to bed without any fuss. But try to put her to bed without giving her a game and she would kick and struggle and honk, and generally behave in a thoroughly spoilt manner.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>I must say we felt very proud of Sarah when we arrived at London Docks and she posed for the Press photographers with all the unselfconscious ease of a born celebrity. She even went so far as to lick one of the reporters — a great honour. I hastily tried to point this out to him, while helping to remove a large patch of sticky saliva from his coat. It was not everyone she would lick, I told him. His expression told me that he did not appreciate the point.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test5-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test5-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Chọn đoạn E. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "But, above all, you have to make sure that your animals are happy. However well looked after, a wild animal will not live in captivity unless it is happy. I am talking, of course, of the adult, wild-caught creature, But occasionally you get a baby wild animal whose mother has perhaps met with an accident, and who has been found wandering in the forest. When you capture one of these, you must be prepared for a good deal of hard work and worry, and above all you must be ready to give the animal the affection and confidence it requires; for after a day or two you will have become the parent, and the baby will trust you and depend on you completely.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Some time ago my wife and I were on a collecting trip in Paraguay, that country shaped like a boot-box which lies almost in the exact centre of South America. Here, in a remote part of Chaco, we assembled a lovely collection of animals. Many things quite unconnected with animals happen on a collecting trip, things that frustrate your plans or irritate you in other ways. But politics, mercifully, had never before been among them. On this occasion, however, the Paraguayans decided to have a revolution, and as a direct result we had to release nearly the whole of our collection and escape to Argentin a in a tiny four-seater plane.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The arrival of this baby put me in a predicament. I knew that we would be leaving soon and that the plane was so tiny that most of our equipment would have to be left behind to make room for the five or six creatures we were determined to take with us. To accept, at that stage, a baby anteater who weighed a considerable amount and who would have to be fussed over and bottle-fed, would be lunatic. Quite apart from anything else, no one, as far as I knew, had ever tried to rear a baby anteater on a bottle. The whole thing was obviously out of the question. Just as I had made up my mind the baby, still blaring pathetically, suddenly discovered my leg, and with a honk of joy shinned up it, settled herself in my lap and went to sleep. Silently I paid the Indian the price he demanded, and thus became a father to one of the most charming children I have ever met.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "For the first days I carried her about with me to give her confidence. She liked to lie across the back of my neck, her long nose hanging down one side of me and her long tail down the other, like a fur collar. Every time I moved she would tighten her grip in a panic, and this was painful. After the fourth shirt had been ruined I decided that she would have to cling to something else, so I filled a sack full of straw and introduced her to that. She accepted it without any fuss, and so between meals she would lie in her cage, clutching this substitute happily. We had already christened her ‘Sarah’, and now that she developed this habit of sack-clutching we gave her a surname, and so she became known as ‘Sarah Huggersack.’",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "On arriving in Buenos Aires our first thought was to give Sarah a treat. We would buy her a nice new shiny teat. We went to endless trouble selecting one exactly the right size, shape and colour, put it on the bottle and presented it to Sarah. She was scandalized. She honked wildly at the mere thought of a new teat, and sent the bottle flying with a well- directed clout from her paw. Nor did she calm down and start to feed until we had replaced the old withered teat on the bottle. She clung to it ever after; months after her arrival in England she still refused to be parted from it.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Chọn đoạn F. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "By this time Sarah had become much more grown up and independent. After her evening feed she would go for a walk round the room by herself. This was a great advance, for up till then she had screamed blue murder if you moved more than a foot or so away from her. After her tour of inspection she liked to have a game. This consisted in walking past us, her nose in the air, her tail trailing temptingly. You were then supposed to grab the end of her tail and pull, whereupon she would swing round on three legs and give you a gentle clout with her paw.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "When we eventually got on board ship, Sarah was not at all sure that she approved of sea-voyages. To begin with, the ship smelt queer; then there was a strong wind which nearly blew her over every time she went for a walk on deck; and lastly, which she hated most of all, the deck would not keep still. First it tilted one way, then it tilted another, and Sarah would go staggering about, honking plaintively, banging her nose on bulkheads and hatch-covers. When the weather improved, however, she seemed to enjoy the trip.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "On arriving in Buenos Aires our first thought was to give Sarah a treat. We would buy her a nice new shiny teat. We went to endless trouble selecting one exactly the right size, shape and colour, put it on the bottle and presented it to Sarah. She was scandalized. She honked wildly at the mere thought of a new teat, and sent the bottle flying with a well- directed clout from her paw. Nor did she calm down and start to feed until we had replaced the old withered teat on the bottle. She clung to it ever after; months after her arrival in England she still refused to be parted from it."
+            },
+            {
+              "label": "B",
+              "text": "The arrival of this baby put me in a predicament. I knew that we would be leaving soon and that the plane was so tiny that most of our equipment would have to be left behind to make room for the five or six creatures we were determined to take with us. To accept, at that stage, a baby anteater who weighed a considerable amount and who would have to be fussed over and bottle-fed, would be lunatic. Quite apart from anything else, no one, as far as I knew, had ever tried to rear a baby anteater on a bottle. The whole thing was obviously out of the question. Just as I had made up my mind the baby, still blaring pathetically, suddenly discovered my leg, and with a honk of joy shinned up it, settled herself in my lap and went to sleep. Silently I paid the Indian the price he demanded, and thus became a father to one of the most charming children I have ever met."
+            },
+            {
+              "label": "C",
+              "text": "I met Sarah and her keeper at Paddington Station. Sarah was in a huge crate, for she had grown as big as a red setter, and she created quite a sensation on the platform. As soon as she heard my voice she flung herself at the bars of her cage and protruded twelve inches of sticky tongue in a moist and affectionate greeting. People standing near the cage leapt back hurriedly, thinking some curious form of snake was escaping and it took a lot of persuasion before we could find a porter brave enough to wheel the cage on a truck."
+            },
+            {
+              "label": "D",
+              "text": "When we eventually got on board ship, Sarah was not at all sure that she approved of sea-voyages. To begin with, the ship smelt queer; then there was a strong wind which nearly blew her over every time she went for a walk on deck; and lastly, which she hated most of all, the deck would not keep still. First it tilted one way, then it tilted another, and Sarah would go staggering about, honking plaintively, banging her nose on bulkheads and hatch-covers. When the weather improved, however, she seemed to enjoy the trip."
+            },
+            {
+              "label": "E",
+              "text": "But, above all, you have to make sure that your animals are happy. However well looked after, a wild animal will not live in captivity unless it is happy. I am talking, of course, of the adult, wild-caught creature, But occasionally you get a baby wild animal whose mother has perhaps met with an accident, and who has been found wandering in the forest. When you capture one of these, you must be prepared for a good deal of hard work and worry, and above all you must be ready to give the animal the affection and confidence it requires; for after a day or two you will have become the parent, and the baby will trust you and depend on you completely."
+            },
+            {
+              "label": "F",
+              "text": "By this time Sarah had become much more grown up and independent. After her evening feed she would go for a walk round the room by herself. This was a great advance, for up till then she had screamed blue murder if you moved more than a foot or so away from her. After her tour of inspection she liked to have a game. This consisted in walking past us, her nose in the air, her tail trailing temptingly. You were then supposed to grab the end of her tail and pull, whereupon she would swing round on three legs and give you a gentle clout with her paw."
+            },
+            {
+              "label": "G",
+              "text": "Some time ago my wife and I were on a collecting trip in Paraguay, that country shaped like a boot-box which lies almost in the exact centre of South America. Here, in a remote part of Chaco, we assembled a lovely collection of animals. Many things quite unconnected with animals happen on a collecting trip, things that frustrate your plans or irritate you in other ways. But politics, mercifully, had never before been among them. On this occasion, however, the Paraguayans decided to have a revolution, and as a direct result we had to release nearly the whole of our collection and escape to Argentin a in a tiny four-seater plane."
+            },
+            {
+              "label": "H",
+              "text": "For the first days I carried her about with me to give her confidence. She liked to lie across the back of my neck, her long nose hanging down one side of me and her long tail down the other, like a fur collar. Every time I moved she would tighten her grip in a panic, and this was painful. After the fourth shirt had been ruined I decided that she would have to cling to something else, so I filled a sack full of straw and introduced her to that. She accepted it without any fuss, and so between meals she would lie in her cage, clutching this substitute happily. We had already christened her ‘Sarah’, and now that she developed this habit of sack-clutching we gave her a surname, and so she became known as ‘Sarah Huggersack.’"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test5-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an extract from a book on the Renaissance. For questions 45-50, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>“What a piece of work is man!” exclaimed Hamlet, Prince of Denmark. Shakespeare could hardly have written those words if he had lived before the time of the Renaissance, when a man-centred universe replaced the God-centred thought of the Middle Ages. The word “Renaissance” is particularly appropriate, coming as it does from the Italian “rinascere”, meaning to be reborn, as the 1400s and early 1500s marked the revival of studies of ancient Greece and Rome. Scholars in medieval times believed that prayer and concentration on salvation were mankind’s chief responsibilities, beset as they were with the evil temptations of society. Renaissance thinkers, on the other hand, followed the classical Greek and Roman models of individual responsibilities and duties to a society that was a civilising rather than a corrupting influence. Theology, the study of God, was replaced by the study of humanity, humanism, laying the foundations for modern history.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The birthplace of the Renaissance - the first safe haven of Byzantine scholars fleeing the sack of Constantinople in 1453 who brought Greek language and thought with them — was Italy, a country divided into about 250 small states, the majority of which were ruled by a city. The population of these states ranged from as little as 5,000 to 10,000 people, up to as many as 100,000 people in cities such as Florence, Milan and Venice. Although, at the dawn of the Renaissance, much of Italy was nominally under the jurisdiction of the Holy Roman Empire, the emperors themselves lived in Germany and largely left the Italians to their own devices. The popes ruled over the city of Rome and central Italy but were unable to extend their hegemony beyond that, with the result that no central authority existed to unify all the Italian states. Into this power vacuum stepped, during the early 1300s, a number of leading families.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Such states had a form of government known as the signoria, in which the chief official, in whom all power was vested, was the signore. Nepotism being as rife then as in other ages, his relatives and friends helped him, an elaborate court growing up in each signoria, and artists and intellectuals gathering there under government patronage.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Other states opted for a republican government, ruling class, rather like the ancient Roman patricians. Florence and Venice were prime examples of this kind. of organization with, in Florence, about eight hundred of the city's wealthiest families making up the ruling class. They intermarried with each other, lived in luxury and financed the construction of great civic and religious buildings and monuments, maintaining artists and intellectuals and fostering the study of the classics (Latin and Greek). By the 1430s, the Medici family, who ran the largest bank in Europe and had at its head a series of brilliant, ambitious individuals, were in control of Florence. The city state of Venice, on the other hand, had about 180 ruling families, with all governmen officials being drawn from this oligarchy. In 1297 a law % was passed limiting membership of the Great Council, } the principal Venetian governing body, to descendant: of families that had already served on the Council, so no - broadening of the base was possible.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Renaissance humanism concerned itself with history and with the actions of human beings, as well as with religion. The humanists were artists and scholars who believed that the subjects they studied would be — instrumental in understanding human problems. They read Greek and Latin literature and philosophy as well as history, which for Renaissance thinkers meant the study of great and courageous actions performed by the. noble or wise man of classical antiquity. These were supposed to provide people with instances of virtuou: behaviour for them to emulate. Monastery libraries were combed for rare manuscripts and critical editions and translations of them were prepared, to aid in the spread of learning. The most important of these manuscripts: ‘Letters to Atticus’, a collection of letters on the subject of Roman political life by Marcus Tulius Cicero, was © found by Petrarch, the eminent poet of the mid fourteenth century.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test5-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test5-45",
+              "type": "multiple_choice",
+              "instruction": "During medieval times, scholars believed that:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - society could entice men to do evil.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "society could entice men to do evil.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. humanism was important.",
+                "B. society had civilising effects on people.",
+                "C. society could entice men to do evil.",
+                "D. the individual’s first responsibility was towards society."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-46",
+              "type": "multiple_choice",
+              "instruction": "During the Renaissance, Italy was",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - fragmented into self-governing areas.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "fragmented into self-governing areas.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. ruled by a powerful Holy Roman Emperor.",
+                "B. fragmented into self-governing areas.",
+                "C. governed by Milan, Venice and Florence.",
+                "D. a unified country under the popes."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-47",
+              "type": "multiple_choice",
+              "instruction": "The signoria",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - was run according to the self-interest of the signore.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "was run according to the self-interest of the signore.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. was a democratic form of government.",
+                "B. had limited powers because of the court.",
+                "C. considered artists and intellectuals to be subversive.",
+                "D. was run according to the self-interest of the signore."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-48",
+              "type": "multiple_choice",
+              "instruction": "The passage implies that the Medicis",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - became the leading patrons of Florence.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "became the leading patrons of Florence.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. threatened stability through their marriage practices.",
+                "B. were weakened by other families in the ruling class.",
+                "C. prospered because of corrupt financial practices.",
+                "D. became the leading patrons of Florence."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-49",
+              "type": "multiple_choice",
+              "instruction": "Venice was governed by",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - an oligarchy.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "an oligarchy.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. a signore.",
+                "B. an oligarchy.",
+                "C. city officials.",
+                "D. the Medicis."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test5-50",
+              "type": "multiple_choice",
+              "instruction": "Renaissance humanists were concerned with the study of",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - mankind.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "mankind.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. instruments.",
+                "B. morality.",
+                "C. holy scriptures.",
+                "D. mankind."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "version": "curriculum-routing-v1-2026-05-20",
+  "apply": true,
+  "updatedByFile": {
+    "antigravity-bank.json": {
+      "eligibleReviewed": 3081,
+      "changed": 0
+    },
+    "archive-source-ai-bank.json": {
+      "eligibleReviewed": 1179,
+      "changed": 0
+    },
+    "kaplan-sat-math-ai-bank.json": {
+      "eligibleReviewed": 284,
+      "changed": 0
+    },
+    "opensat-pinesat.json": {
+      "eligibleReviewed": 2096,
+      "changed": 0
+    },
+    "private-vault-archive-bank.json": {
+      "eligibleReviewed": 219,
+      "changed": 0
+    },
+    "sat-1590-elite-ai-bank.json": {
+      "eligibleReviewed": 700,
+      "changed": 0
+    },
+    "sat-king-supplemental-ai-bank.json": {
+      "eligibleReviewed": 354,
+      "changed": 0
+    },
+    "sat-studio-foundation-bank.json": {
+      "eligibleReviewed": 160,
+      "changed": 32
+    }
+  },
+  "taggedByBand": {
+    "SAT-Core": 5132,
+    "SAT-Advanced": 1077,
+    "SAT-Elite": 999,
+    "G10-Bridge": 630,
+    "SAT-1600": 235
+  },
+  "taggedByModulePlacement": {
+    "module1": 5248,
+    "module2_upper": 1960,
+    "module2_lower": 630,
+    "elite_drill": 235
+  },
+  "taggedByCanonicalSkill": {
+    "Boundaries": 1071,
+    "Systems of equations in two variables": 636,
+    "Central Ideas and Details": 584,
+    "Text Structure and Purpose": 429,
+    "Linear equations in one variable": 348,
+    "Words in Context": 346,
+    "Command of Evidence": 314,
+    "Rhetorical Synthesis": 312,
+    "Transitions": 304,
+    "Linear functions": 290,
+    "Inferences": 275,
+    "Circles": 272,
+    "Form, Structure, and Sense": 259,
+    "One-variable data: distributions and measures of center and spread": 237,
+    "Ratios, rates, proportional relationships, and units": 234,
+    "Right triangles and trigonometry": 224,
+    "Equivalent expressions": 207,
+    "Lines, angles, and triangles": 206,
+    "Nonlinear functions": 201,
+    "Cross-Text Connections": 197,
+    "Systems of two linear equations in two variables": 197,
+    "Percentages": 169,
+    "Two-variable data: models and scatterplots": 166,
+    "Area and volume": 162,
+    "Linear equations in two variables": 157,
+    "Linear inequalities in one or two variables": 152,
+    "Probability and conditional probability": 108,
+    "Nonlinear equations in one variable": 10,
+    "Inference from sample statistics and margin of error": 3,
+    "Evaluating statistical claims: observational studies and experiments": 3
+  },
+  "skippedNeedsReviewOrRejected": 373
+}

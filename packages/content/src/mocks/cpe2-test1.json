@@ -1,0 +1,1547 @@
+{
+  "id": "cpe2-test1",
+  "title": "CPE C2 Proficiency Reading & Use of English - Test 1 (Book 2)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Practice Tests CPE 2, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-b2t1-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Australian Cinema</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Thirty years ago, the New Australian cinema (1) ______ the attention of the world with heroic stories set in the late-nineteenth and early-twentieth centuries. They were tales of the formation of a national identity, of the recent European settlers' transactions with their strange new world and its frighteningly mystical inhabitants. When this vein was (2) ______, local film makers left home or turned to the problematic present of people living lives of noisy desperation in the (3) ______ suburbs of the big coastal cities, home to most Australians. As television series, these cosy, unheroic stories (4) ______ worldwide popularity, but relatively few films of this sort have found success elsewhere, except for a small handful, among which are these, (5) ______ accomplished and calculatedly theatrical films. They are loving assemblages of conventions and clichés from musicals of the past, produced with an exuberance that (6) ______ the audience up in uncritical enjoyment.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Archaeological Discovery</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Recent archeological studies of the isolated region have (7) ______ astounding evidence of Mesolithic hunter-gatherers, Neolithic farmers and even an aristocratic dynasty which populated the area during the late Bronze (8) ______. The few centuries before the time of Christ saw the area at its most remarkable. Artefacts, relics and the remains of dwellings, bear (9) ______ to its importance. An extraordinary sequence of buildings (10) ______ in the erection of a gigantic wooden structure, at least 40 metres in diameter, which was probably used for ceremonial (11) ______ before it was eventually burnt to the (12) ______ and subsequently covered over with turf to create the huge mound which is still visible today.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 3: Limited Risk</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>We believe that there are two types of people who will take the time and (13) ______ to read this advertisement. In the first category are those unbelievers who, in all likelihood, will think to themselves, 'sounds good, but I don't think this is for me. I could never manage to do that.' They then go back to doing the same (14) ______ job that they have (15) ______ been doing for the past decade or so. Then, there is the second category. This group is made up of those people who believe in taking (16) ______ but not at the expense of peace of mind. These individuals carefully (17) ______ the advantages against the disadvantages. You know, those people who look before making the proverbial (18) ______.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t1-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-b2t1-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. appropriated",
+                "B. captured",
+                "C. annexed",
+                "D. mastered"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'captured the attention' là collocation cố định nghĩa là 'thu hút sự chú ý'. Bẫy: 'appropriated' (A) nghĩa là 'chiếm đoạt' — dùng cho tài sản/văn hóa. 'annexed' (C) nghĩa là 'sáp nhập lãnh thổ'. 'mastered' (D) nghĩa là 'thành thạo'. Không từ nào đi tự nhiên với 'the attention of the world'. Chuyên đề: Collocations — capture + attention.",
+              "answerLocation": "captured the attention of the world",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. exhausted",
+                "B. drained",
+                "C. emptied",
+                "D. squandered"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'this vein was exhausted' — khi một chủ đề/nguồn cảm hứng bị khai thác hết, ta dùng 'exhaust'. 'Vein' ẩn dụ cho 'mạch quặng' — khi mạch quặng hết, ta nói 'exhausted'. Bẫy: 'drained' (B) dùng cho chất lỏng/năng lượng. 'emptied' (C) quá đơn giản, không tạo collocation chuẩn với 'vein'. 'squandered' (D) = phung phí — sai nghĩa. Chuyên đề: Collocations — exhaust a vein/source.",
+              "answerLocation": "this vein was exhausted",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. lounging",
+                "B. stooping",
+                "C. stretching",
+                "D. sprawling"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'sprawling suburbs' là collocation chuẩn — 'sprawling' miêu tả vùng ngoại ô trải rộng, lan tràn thiếu quy hoạch, rất đặc trưng cho các thành phố lớn ven biển Úc. Bẫy: 'lounging' (A) = nằm dài thư giãn, miêu tả tư thế người. 'stooping' (B) = cúi xuống. 'stretching' (C) = kéo dài, nhưng không phải collocation chuẩn với 'suburbs'. Chuyên đề: Collocations — sprawling + urban areas.",
+              "answerLocation": "sprawling suburbs",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. reached",
+                "B. achieved",
+                "C. fulfilled",
+                "D. managed"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'achieved worldwide popularity' là collocation chuẩn. 'Achieve + popularity/success/fame' = đạt được. Bẫy: 'reached' (A) thường đi với 'a level/point', ít đi với 'popularity'. 'fulfilled' (C) đi với 'dream/promise/potential'. 'managed' (D) cần 'to + verb'. Chuyên đề: Collocations — achieve + abstract nouns.",
+              "answerLocation": "achieved worldwide popularity",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. deeply",
+                "B. heavily",
+                "C. highly",
+                "D. widely"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'highly accomplished' là collocation cố định = 'rất tài năng'. 'Highly' dùng nhấn mạnh tính từ tích cực về năng lực: highly skilled, highly qualified. Bẫy: 'deeply' (A) đi với cảm xúc. 'heavily' (B) đi với tính từ tiêu cực (heavily criticized). 'widely' (D) đi với 'known/recognized'. Chuyên đề: Adverb-adjective collocations.",
+              "answerLocation": "highly accomplished",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. sweeps",
+                "B. lifts",
+                "C. brushes",
+                "D. carries"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'sweeps the audience up (in)' = cuốn hút khán giả vào. Phim cuốn hút khán giả vào niềm vui không phê phán. Bẫy: 'lifts up' (B) = nâng lên, không có nghĩa 'cuốn hút'. 'brushes up' (C) = ôn lại kiến thức. 'carries' (D) cần 'carries away' để có nghĩa tương tự. Chuyên đề: Phrasal verbs — sweep up. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "sweeps the audience up in uncritical enjoyment",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. unburied",
+                "B. uncovered",
+                "C. unfolded",
+                "D. unmasked"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'uncovered evidence' = phát hiện/khai quật bằng chứng. 'Uncover' dùng trong khảo cổ cho bằng chứng, bí mật, sự thật. Bẫy: 'unburied' (A) rất hiếm dùng. 'unfolded' (C) = mở ra/diễn ra — dùng cho câu chuyện. 'unmasked' (D) = vạch mặt — dùng cho tội phạm. Chuyên đề: Collocations — uncover + evidence.",
+              "answerLocation": "uncovered astounding evidence",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. Years",
+                "B. Period",
+                "C. Era",
+                "D. Age"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'Bronze Age' là thuật ngữ lịch sử cố định = 'Thời đại Đồ đồng'. Đây là proper noun. Bẫy: 'Bronze Years/Period/Era' không phải thuật ngữ chuẩn. Các thời kỳ chuẩn: Stone Age, Bronze Age, Iron Age, Ice Age. Chuyên đề: Fixed expressions — historical periods. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "late Bronze Age",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-9",
+              "type": "multiple_choice",
+              "instruction": "Gap (9):",
+              "options": [
+                "A. testimony",
+                "B. evidence",
+                "C. witness",
+                "D. proof"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'bear witness to' là idiom cố định = 'làm chứng cho/chứng minh'. Bẫy: 'bear testimony to' (A) tồn tại nhưng ít phổ biến. 'bear evidence to' (B) và 'bear proof to' (D) không phải collocation chuẩn. Chuyên đề: Idioms — bear witness to.",
+              "answerLocation": "bear witness to its importance",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-10",
+              "type": "multiple_choice",
+              "instruction": "Gap (10):",
+              "options": [
+                "A. terminated",
+                "B. culminated",
+                "C. finalised",
+                "D. ceased"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'culminated in' = đạt đỉnh điểm bằng/kết thúc bằng. 'An extraordinary sequence of buildings culminated in the erection of a gigantic wooden structure' = chuỗi công trình đạt đỉnh cao bằng việc xây dựng cấu trúc gỗ khổng lồ. Bẫy: 'terminated in' (A) ít tự nhiên. 'finalised' (C) = hoàn tất, dùng cho kế hoạch. 'ceased' (D) = ngừng lại, không đi với 'in'. Chuyên đề: Collocations — culminate in.",
+              "answerLocation": "culminated in the erection of a gigantic wooden structure",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-11",
+              "type": "multiple_choice",
+              "instruction": "Gap (11):",
+              "options": [
+                "A. aims",
+                "B. intentions",
+                "C. purposes",
+                "D. targets"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'ceremonial purposes' = mục đích nghi lễ. 'For ceremonial purposes' là collocation chuẩn. Bẫy: 'ceremonial aims/intentions/targets' đều không phải collocation tự nhiên. 'Purposes' là từ phù hợp nhất khi nói về chức năng/công dụng. Chuyên đề: Collocations — for ... purposes.",
+              "answerLocation": "used for ceremonial purposes",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-12",
+              "type": "multiple_choice",
+              "instruction": "Gap (12):",
+              "options": [
+                "A. surface",
+                "B. ground",
+                "C. earth",
+                "D. field"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'burnt to the ground' là idiom cố định = 'cháy rụi hoàn toàn'. Chỉ 'burn to the ground' là thành ngữ chuẩn. Bẫy: 'burnt to the surface/earth/field' đều không phải idiom chuẩn. Chuyên đề: Idioms — burn to the ground.",
+              "answerLocation": "burnt to the ground",
+              "category": "cpe_part_1",
+              "source": "Page 4, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-13",
+              "type": "multiple_choice",
+              "instruction": "Gap (13):",
+              "options": [
+                "A. exertion",
+                "B. effort",
+                "C. struggle",
+                "D. stress"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'time and effort' là binomial cố định thường xuất hiện cùng nhau. 'Take the time and effort to' = dành thời gian và công sức để. Bẫy: 'time and exertion' (A) không phải binomial chuẩn. 'time and struggle' (C) không tự nhiên. 'time and stress' (D) sai nghĩa. Chuyên đề: Binomials — time and effort. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "take the time and effort",
+              "category": "cpe_part_1",
+              "source": "Page 5, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-14",
+              "type": "multiple_choice",
+              "instruction": "Gap (14):",
+              "options": [
+                "A. substandard",
+                "B. unreliable",
+                "C. insufficient",
+                "D. unfulfilling"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'unfulfilling job' = công việc không mang lại sự thỏa mãn. Ngữ cảnh: họ quay lại 'doing the same job for the past decade' — công việc không đem lại niềm vui. Bẫy: 'substandard' (A) = dưới tiêu chuẩn (chất lượng). 'unreliable' (B) = không đáng tin. 'insufficient' (C) = không đủ. Chuyên đề: Vocabulary — fulfilling/unfulfilling.",
+              "answerLocation": "the same unfulfilling job",
+              "category": "cpe_part_1",
+              "source": "Page 5, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-15",
+              "type": "multiple_choice",
+              "instruction": "Gap (15):",
+              "options": [
+                "A. distastefully",
+                "B. reluctantly",
+                "C. hesitantly",
+                "D. adversely"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'reluctantly been doing' = miễn cưỡng làm. Họ miễn cưỡng làm công việc đó suốt cả thập kỷ. Bẫy: 'distastefully' (A) = một cách ghê tởm — quá mạnh. 'hesitantly' (C) = do dự — miêu tả hành động ngắn hạn. 'adversely' (D) = bất lợi — thường dùng với 'affect'. Chuyên đề: Adverbs — reluctantly. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "reluctantly been doing for the past decade",
+              "category": "cpe_part_1",
+              "source": "Page 5, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-16",
+              "type": "multiple_choice",
+              "instruction": "Gap (16):",
+              "options": [
+                "A. risks",
+                "B. dangers",
+                "C. hazards",
+                "D. stakes"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'taking risks' là collocation cố định = 'chấp nhận rủi ro'. Bẫy: 'taking dangers/hazards/stakes' đều không phải collocation. 'Dangers' đi với 'face/pose'. 'Hazards' đi với 'pose/present'. 'Stakes' đi với 'raise/high'. Chuyên đề: Collocations — take risks.",
+              "answerLocation": "believe in taking risks",
+              "category": "cpe_part_1",
+              "source": "Page 5, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-17",
+              "type": "multiple_choice",
+              "instruction": "Gap (17):",
+              "options": [
+                "A. measure",
+                "B. weigh",
+                "C. compare",
+                "D. count"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'weigh the advantages against the disadvantages' = cân nhắc ưu điểm so với nhược điểm. 'Weigh X against Y' là collocation chuẩn. Bẫy: 'measure against' (A) dùng cho đo lường cụ thể. 'compare against' (C) ít chuẩn — thường 'compare with/to'. 'count against' (D) = bất lợi cho — sai nghĩa. Chuyên đề: Collocations — weigh against.",
+              "answerLocation": "weigh the advantages against the disadvantages",
+              "category": "cpe_part_1",
+              "source": "Page 5, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-18",
+              "type": "multiple_choice",
+              "instruction": "Gap (18):",
+              "options": [
+                "A. jump",
+                "B. vault",
+                "C. leap",
+                "D. spring"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'look before you leap' là tục ngữ cố định = 'nhìn trước khi nhảy' / 'suy nghĩ kỹ trước khi hành động'. Bài viết nói 'look before making the proverbial (18)' → 'proverbial leap'. Bẫy: 'jump/vault/spring' đều không có trong tục ngữ này. Chuyên đề: Proverbs — look before you leap. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "the proverbial leap",
+              "category": "cpe_part_1",
+              "source": "Page 5, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t1-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 19-33, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>An Influential Man</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Born <b>in</b> Switzerland in 1875, Karl Gustav Jung's early life was (19) ______ from conventional. The (20) ______ child of a country pastor with waning religious convictions and a spiritualist mother (21) ______ conversed with ghosts, Jung felt alienated and lonely (22) ______ a child. He spent his life trying to understand (23) ______ nature of the human psyche, to probe the human mind to see what lurked beneath. (24) ______ he found helped form the foundations of modern psychology, identifying such familiar concepts as introversion and extroversion, as (25) ______ as complexes. Jung went (26) ______ than the mainstream of science. (27) ______ of accepted scientific opinion, he delved into ancient myths and religions and the esoteric literature of alchemy and astrology. (28) ______ his research, he discovered recurrent images that he argued revealed the existence of a 'collective unconscious', which we (29) ______ share. Such findings have made Jung's work influential in fields well (30) ______ psychology, permeating literature, religion and culture. Jung completed his final work just months before his death in 1961. Today, Jungian analysis thrives (31) ______ psychological circles, attracting a steady stream of patients seeking solace from the personal difficulties in their lives. With more people than (32) ______ before discovering that 'success' often (33) ______ to bring happiness, the importance of Jung's efforts to find contentment have never been clearer.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t1-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-b2t1-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19): Jung's early life was ______ from conventional",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "far",
+                  "anything"
+                ]
+              ],
+              "correctAnswer": "far",
+              "explanation": "Đáp án: FAR (hoặc ANYTHING). 'far from conventional' = hoàn toàn không bình thường. 'Anything from conventional' cũng có nghĩa tương tự. Đây là cấu trúc nhấn mạnh 'không hề' — 'far from + adjective' diễn tả ý hoàn toàn ngược lại. Chuyên đề: Fixed expressions — far from.",
+              "answerLocation": "early life was far from conventional",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20): The ______ child of a country pastor",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "only",
+                  "sole"
+                ]
+              ],
+              "correctAnswer": "only",
+              "explanation": "Đáp án: ONLY (hoặc SOLE). 'The only child' = đứa con duy nhất. Jung là con duy nhất của một mục sư thôn quê. Ngữ cảnh nói về sự cô đơn của Jung ('felt alienated and lonely'), phù hợp với việc là con một. Chuyên đề: Determiners — only/sole.",
+              "answerLocation": "The only child of a country pastor",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21): a spiritualist mother ______ conversed with ghosts",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "who"
+                ]
+              ],
+              "correctAnswer": "who",
+              "explanation": "Đáp án: WHO. Đại từ quan hệ thay thế cho 'mother' (người). 'A mother who conversed with ghosts' = một người mẹ trò chuyện với hồn ma. Cần đại từ quan hệ chủ ngữ cho mệnh đề quan hệ defining. Chuyên đề: Relative pronouns — who.",
+              "answerLocation": "a spiritualist mother who conversed with ghosts",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22): felt alienated and lonely ______ a child",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "as"
+                ]
+              ],
+              "correctAnswer": "as",
+              "explanation": "Đáp án: AS. 'as a child' = khi còn là một đứa trẻ. Giới từ 'as' dùng để chỉ vai trò/giai đoạn: 'as a child/student/adult'. Bẫy: 'like' có thể gây nhầm nhưng 'like a child' nghĩa là 'giống trẻ con', còn 'as a child' = 'khi là trẻ con'. Chuyên đề: Prepositions — as (role/capacity).",
+              "answerLocation": "felt alienated and lonely as a child",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23): trying to understand ______ nature of the human psyche",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "the"
+                ]
+              ],
+              "correctAnswer": "the",
+              "explanation": "Đáp án: THE. 'the nature of' = bản chất của. Mạo từ xác định 'the' cần thiết trước 'nature' khi nói về bản chất cụ thể của một thứ. 'The nature of the human psyche' = bản chất của tâm lý con người. Chuyên đề: Articles — the + abstract noun + of. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "understand the nature of the human psyche",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24): ______ he found helped form the foundations",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "what"
+                ]
+              ],
+              "correctAnswer": "what",
+              "explanation": "Đáp án: WHAT. 'What he found' = những gì ông tìm thấy. 'What' ở đây là đại từ quan hệ dùng trong nominal relative clause, đóng vai trò chủ ngữ của 'helped form'. 'What he found helped form the foundations of modern psychology' = Những gì ông phát hiện đã giúp hình thành nền tảng tâm lý học hiện đại. Chuyên đề: Nominal relative clauses — what.",
+              "answerLocation": "What he found helped form the foundations",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25): introversion and extroversion, as ______ as complexes",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "well"
+                ]
+              ],
+              "correctAnswer": "well",
+              "explanation": "Đáp án: WELL. 'as well as' = cũng như, ngoài ra. 'Introversion and extroversion, as well as complexes' = hướng nội và hướng ngoại, cũng như các phức cảm. Đây là cấu trúc bổ sung thông tin cố định. Chuyên đề: Fixed expressions — as well as.",
+              "answerLocation": "as well as complexes",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-26",
+              "type": "gap_fill",
+              "instruction": "Gap (26): Jung went ______ than the mainstream of science",
+              "blankIndex": 26,
+              "acceptedAnswers": [
+                [
+                  "further",
+                  "farther"
+                ]
+              ],
+              "correctAnswer": "further",
+              "explanation": "Đáp án: FURTHER. 'went further than' = đi xa hơn. Jung đi xa hơn dòng chính của khoa học. 'Further' dùng theo nghĩa ẩn dụ (vượt xa về phạm vi trí tuệ). Chuyên đề: Comparatives — further than. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "went further than the mainstream",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-27",
+              "type": "gap_fill",
+              "instruction": "Gap (27): ______ of accepted scientific opinion",
+              "blankIndex": 27,
+              "acceptedAnswers": [
+                [
+                  "regardless",
+                  "irrespective"
+                ]
+              ],
+              "correctAnswer": "regardless",
+              "explanation": "Đáp án: REGARDLESS (hoặc IRRESPECTIVE). 'Regardless of' = bất chấp. 'Regardless of accepted scientific opinion' = bất chấp quan điểm khoa học được chấp nhận. Cả hai đều là prepositional phrase cố định + 'of'. Chuyên đề: Prepositional phrases — regardless/irrespective of.",
+              "answerLocation": "Regardless of accepted scientific opinion",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-28",
+              "type": "gap_fill",
+              "instruction": "Gap (28): ______ his research, he discovered recurrent images",
+              "blankIndex": 28,
+              "acceptedAnswers": [
+                [
+                  "through",
+                  "in",
+                  "from"
+                ]
+              ],
+              "correctAnswer": "through",
+              "explanation": "Đáp án: THROUGH (hoặc IN/FROM). 'Through his research' = thông qua nghiên cứu của ông. 'Through' diễn tả phương tiện/cách thức tìm ra phát hiện. 'In his research' = trong nghiên cứu cũng chấp nhận được. Chuyên đề: Prepositions — through/in (means).",
+              "answerLocation": "Through his research, he discovered",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-29",
+              "type": "gap_fill",
+              "instruction": "Gap (29): a 'collective unconscious', which we ______ share",
+              "blankIndex": 29,
+              "acceptedAnswers": [
+                [
+                  "all"
+                ]
+              ],
+              "correctAnswer": "all",
+              "explanation": "Đáp án: ALL. 'which we all share' = mà tất cả chúng ta cùng chia sẻ. 'All' ở đây là pronoun/determiner nhấn mạnh tính phổ quát — vô thức tập thể được chia sẻ bởi TẤT CẢ loài người. Chuyên đề: Quantifiers — all. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "which we all share",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-30",
+              "type": "gap_fill",
+              "instruction": "Gap (30): influential in fields well ______ psychology",
+              "blankIndex": 30,
+              "acceptedAnswers": [
+                [
+                  "beyond"
+                ]
+              ],
+              "correctAnswer": "beyond",
+              "explanation": "Đáp án: BEYOND. 'well beyond' = vượt xa. 'Influential in fields well beyond psychology' = có ảnh hưởng trong các lĩnh vực vượt xa tâm lý học. 'Well' nhấn mạnh mức độ 'beyond'. Chuyên đề: Prepositions — beyond.",
+              "answerLocation": "fields well beyond psychology",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-31",
+              "type": "gap_fill",
+              "instruction": "Gap (31): Jungian analysis thrives ______ psychological circles",
+              "blankIndex": 31,
+              "acceptedAnswers": [
+                [
+                  "in"
+                ]
+              ],
+              "correctAnswer": "in",
+              "explanation": "Đáp án: IN. 'thrives in' = phát triển mạnh trong. 'In circles' = trong giới — collocation chuẩn. 'Thrives in psychological circles' = phát triển mạnh trong giới tâm lý học. Chuyên đề: Prepositions — in circles.",
+              "answerLocation": "thrives in psychological circles",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-32",
+              "type": "gap_fill",
+              "instruction": "Gap (32): more people than ______ before",
+              "blankIndex": 32,
+              "acceptedAnswers": [
+                [
+                  "ever"
+                ]
+              ],
+              "correctAnswer": "ever",
+              "explanation": "Đáp án: EVER. 'more... than ever before' = nhiều hơn bao giờ hết. Đây là cấu trúc so sánh hơn cố định. 'More people than ever before' = nhiều người hơn bao giờ hết. Chuyên đề: Comparatives — more than ever.",
+              "answerLocation": "more people than ever before",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-33",
+              "type": "gap_fill",
+              "instruction": "Gap (33): 'success' often ______ to bring happiness",
+              "blankIndex": 33,
+              "acceptedAnswers": [
+                [
+                  "fails"
+                ]
+              ],
+              "correctAnswer": "fails",
+              "explanation": "Đáp án: FAILS. 'fails to bring happiness' = không mang lại hạnh phúc. 'Fail to + verb' = không thể/không làm được. Jung tin rằng 'thành công' thường không mang lại hạnh phúc thực sự. Chuyên đề: Verb patterns — fail to do.",
+              "answerLocation": "success often fails to bring happiness",
+              "category": "cpe_part_2",
+              "source": "Page 16, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t1-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 34-43, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Coffee Houses</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Historically a coffee house which served only coffee. The English term café, borrowed from the French, is ultimately a (34) ______ (DERIVE) of the Turkish kahve, meaning coffee. The (35) ______ (INTRODUCE) of coffee and coffee drinking to Europe provided a much-needed focus for the social (36) ______ (ACT) of the middle classes. The first café is said to have opened in 1550 in Constantinople; during the 17th century, cafés opened throughout Europe. During the 200 years after the mid-17th century, the most (37) ______ (PROSPER) coffee houses of Europe flourished in London as meeting points for (38) ______ (END) discussion about the latest news and for bitter (39) ______ (AGREE). During this time, the lucrative business of buying and selling insurance, ships, stock and commodities was disposed of in coffee houses. They became informal stations for the collection and distribution of packets and letters. By the 19th century, the (40) ______ (DAY) newspaper and the postal service had displaced these functions. About the same time, the French café and restaurant were at their zenith as (41) ______ (GATHER) places for artists and (42) ______ (INTELLECT). The café continued to be an important social institution in France throughout the 20th century.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t1-rg-3",
+          "instruction": "Fill in the gaps with the correct word form.",
+          "questions": [
+            {
+              "id": "q-b2t1-34",
+              "type": "gap_fill",
+              "instruction": "Gap (34): ultimately a ______ (DERIVE) of the Turkish kahve",
+              "blankIndex": 34,
+              "acceptedAnswers": [
+                [
+                  "derivative",
+                  "derivation"
+                ]
+              ],
+              "correctAnswer": "derivative",
+              "explanation": "Đáp án: DERIVATIVE (hoặc DERIVATION). Cần danh từ sau mạo từ 'a'. 'A derivative of' = một từ phái sinh từ. Bẫy: 'derived' không phù hợp vì cần danh từ. Chuyên đề: Word Formation — Nouns (-ive/-ation).",
+              "answerLocation": "a derivative of the Turkish kahve",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-35",
+              "type": "gap_fill",
+              "instruction": "Gap (35): The ______ (INTRODUCE) of coffee and coffee drinking",
+              "blankIndex": 35,
+              "acceptedAnswers": [
+                [
+                  "introduction"
+                ]
+              ],
+              "correctAnswer": "introduction",
+              "explanation": "Đáp án: INTRODUCTION. Thêm hậu tố '-tion'. 'The introduction of coffee to Europe' = sự du nhập cà phê vào châu Âu. Cần danh từ sau mạo từ 'The'. Chuyên đề: Word Formation — Nouns (-tion).",
+              "answerLocation": "The introduction of coffee",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-36",
+              "type": "gap_fill",
+              "instruction": "Gap (36): social ______ (ACT) of the middle classes",
+              "blankIndex": 36,
+              "acceptedAnswers": [
+                [
+                  "activities",
+                  "activity"
+                ]
+              ],
+              "correctAnswer": "activities",
+              "explanation": "Đáp án: ACTIVITIES (hoặc ACTIVITY). Thêm hậu tố '-ivity'. 'Social activities' = hoạt động xã hội. Cần danh từ sau tính từ 'social'. Bẫy: 'action' không đi tự nhiên với 'social'. Chuyên đề: Word Formation — Nouns (-ity).",
+              "answerLocation": "social activities of the middle classes",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-37",
+              "type": "gap_fill",
+              "instruction": "Gap (37): the most ______ (PROSPER) coffee houses",
+              "blankIndex": 37,
+              "acceptedAnswers": [
+                [
+                  "prosperous"
+                ]
+              ],
+              "correctAnswer": "prosperous",
+              "explanation": "Đáp án: PROSPEROUS. Thêm hậu tố '-ous'. 'The most prosperous coffee houses' = quán cà phê thịnh vượng nhất. Cần tính từ sau 'most' trong cấu trúc so sánh nhất. Bẫy: 'prosperity' (danh từ) không phù hợp. Chuyên đề: Word Formation — Adjectives (-ous).",
+              "answerLocation": "the most prosperous coffee houses",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-38",
+              "type": "gap_fill",
+              "instruction": "Gap (38): meeting points for ______ (END) discussion",
+              "blankIndex": 38,
+              "acceptedAnswers": [
+                [
+                  "endless",
+                  "unending"
+                ]
+              ],
+              "correctAnswer": "endless",
+              "explanation": "Đáp án: ENDLESS (hoặc UNENDING). Thêm hậu tố '-less' hoặc tiền tố 'un-' + '-ing'. 'Endless discussion' = cuộc thảo luận bất tận. Cần tính từ trước danh từ 'discussion'. Chuyên đề: Word Formation — Adjectives (-less).",
+              "answerLocation": "endless discussion about the latest news",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-39",
+              "type": "gap_fill",
+              "instruction": "Gap (39): for bitter ______ (AGREE)",
+              "blankIndex": 39,
+              "acceptedAnswers": [
+                [
+                  "disagreement",
+                  "disagreements"
+                ]
+              ],
+              "correctAnswer": "disagreement",
+              "explanation": "Đáp án: DISAGREEMENT. Thêm tiền tố 'dis-' và hậu tố '-ment'. 'Bitter disagreement' = bất đồng gay gắt. Ngữ cảnh: quán cà phê nơi tranh luận — 'bitter' + discussion/debate → cần 'disagreement' (không phải 'agreement'). Bẫy QUAN TRỌNG: ngữ cảnh 'bitter' yêu cầu nghĩa phủ định. Chuyên đề: Word Formation — Negative nouns (dis-).",
+              "answerLocation": "for bitter disagreement",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-40",
+              "type": "gap_fill",
+              "instruction": "Gap (40): the ______ (DAY) newspaper",
+              "blankIndex": 40,
+              "acceptedAnswers": [
+                [
+                  "daily"
+                ]
+              ],
+              "correctAnswer": "daily",
+              "explanation": "Đáp án: DAILY. Thêm hậu tố '-ly'. 'The daily newspaper' = báo hàng ngày. Cần tính từ trước danh từ 'newspaper'. Lưu ý: day → daily (không phải dayly). Chuyên đề: Word Formation — Adjectives (-ly from nouns).",
+              "answerLocation": "the daily newspaper",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-41",
+              "type": "gap_fill",
+              "instruction": "Gap (41): at their zenith as ______ (GATHER) places",
+              "blankIndex": 41,
+              "acceptedAnswers": [
+                [
+                  "gathering"
+                ]
+              ],
+              "correctAnswer": "gathering",
+              "explanation": "Đáp án: GATHERING. Thêm hậu tố '-ing' để tạo tính từ/danh từ compound. 'Gathering places' = nơi tụ họp. 'Gathering' ở đây dùng làm modifier cho 'places'. Chuyên đề: Word Formation — compound nouns (-ing + noun).",
+              "answerLocation": "gathering places for artists",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-42",
+              "type": "gap_fill",
+              "instruction": "Gap (42): for artists and ______ (INTELLECT)",
+              "blankIndex": 42,
+              "acceptedAnswers": [
+                [
+                  "intellectuals"
+                ]
+              ],
+              "correctAnswer": "intellectuals",
+              "explanation": "Đáp án: INTELLECTUALS. Thêm hậu tố '-ual' + '-s' (số nhiều). 'Intellectuals' = trí thức (danh từ chỉ người). Cần danh từ số nhiều song song với 'artists'. Chuyên đề: Word Formation — Person nouns (-ual).",
+              "answerLocation": "artists and intellectuals",
+              "category": "cpe_part_3",
+              "source": "Page 17, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t1-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 43-50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Key Word Transformation</h2><div class='mb-4 text-slate-800 text-base leading-relaxed'><p class='mb-2'><b>43.</b> We must consider our other expenses before we decide to buy a new car. (TAKE)</p><p class='mb-2'>We must ______ before we decide to buy a new car.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>44.</b> Heavy rain prevented them from having their picnic. (NOT)</p><p class='mb-2'>Had it ______ have had their picnic.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>45.</b> The government should do something to help the homeless. (HIGH)</p><p class='mb-2'>It is ______ the government did something to help the homeless.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>46.</b> Her brightly coloured  hat attracted everyone's attention at the party. (CONSPICUOUS)</p><p class='mb-2'>She ______ at the party because of her brightly coloured hat.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>47.</b> They are demolishing the old cinema at the moment. (COURSE)</p><p class='mb-2'>The old cinema ______ demolished.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>48.</b> The chairman doesn't tolerate lateness at meetings. (DIM)</p><p class='mb-2'>The chairman ______ being late for meetings.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>49.</b> He would prefer not to have received the award publicly. (RATHER)</p><p class='mb-2'>He ______ the award publicly.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>50.</b> Despite the hardship, the people managed to survive. (THROUGH)</p><p class='mb-2'>Despite the hardship, the people managed ______ .</p></div>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t1-rg-4",
+          "instruction": "Fill in the gap for each sentence below using 3 to 8 words.",
+          "questions": [
+            {
+              "id": "q-b2t1-43",
+              "type": "gap_fill",
+              "instruction": "Sentence 43: We must ______ before we decide to buy a new car. (Key word: TAKE)",
+              "blankIndex": 43,
+              "acceptedAnswers": [
+                [
+                  "take our other expenses into account",
+                  "take into account our other expenses"
+                ]
+              ],
+              "correctAnswer": "take our other expenses into account",
+              "explanation": "Đáp án: 'take our other expenses into account'. 'Take something into account' = cân nhắc/xem xét. Câu gốc: 'We must consider our other expenses' → 'We must take our other expenses into account'. Đây là phrasal verb cố định: 'take into account' = consider. Bẫy: 'take into consideration' cũng đúng nghĩa nhưng key word là TAKE, không phải CONSIDERATION. Chuyên đề: Phrasal verbs — take into account. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "take our other expenses into account",
+              "category": "cpe_part_4",
+              "source": "Page 20, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-44",
+              "type": "gap_fill",
+              "instruction": "Sentence 44: Had it ______ have had their picnic. (Key word: NOT)",
+              "blankIndex": 44,
+              "acceptedAnswers": [
+                [
+                  "not rained heavily they would",
+                  "not been for the heavy rain they would",
+                  "not rained so heavily they could"
+                ]
+              ],
+              "correctAnswer": "not rained heavily they would",
+              "explanation": "Đáp án: 'not rained heavily they would'. Đảo ngữ câu điều kiện loại 3: 'Had it not rained heavily, they would have had their picnic.' Câu gốc: 'Heavy rain prevented them from having their picnic.' 'Had + S + not + V3' = 'If + S + had not + V3' (đảo ngữ, bỏ 'if'). Bẫy: quên đảo ngữ hoặc sai thì. Chuyên đề: Inversion — conditional type 3.",
+              "answerLocation": "Had it not rained heavily they would have had their picnic",
+              "category": "cpe_part_4",
+              "source": "Page 20, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-45",
+              "type": "gap_fill",
+              "instruction": "Sentence 45: It is ______ the government did something to help the homeless. (Key word: HIGH)",
+              "blankIndex": 45,
+              "acceptedAnswers": [
+                [
+                  "high time",
+                  "high time that"
+                ]
+              ],
+              "correctAnswer": "high time",
+              "explanation": "Đáp án: 'high time'. 'It is high time + S + past simple' = đã đến lúc phải làm gì rồi. Đây là cấu trúc cố định diễn tả sự cấp bách: 'It is high time the government did something.' Lưu ý: sau 'it's high time' dùng quá khứ đơn (subjunctive). Bẫy: viết 'does' thay vì 'did'. Chuyên đề: Fixed expressions — it's high time.",
+              "answerLocation": "It is high time the government did something",
+              "category": "cpe_part_4",
+              "source": "Page 20, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-46",
+              "type": "gap_fill",
+              "instruction": "Sentence 46: She ______ at the party because of her brightly coloured hat. (Key word: CONSPICUOUS)",
+              "blankIndex": 46,
+              "acceptedAnswers": [
+                [
+                  "was made conspicuous",
+                  "was conspicuous",
+                  "made herself conspicuous"
+                ]
+              ],
+              "correctAnswer": "made herself conspicuous",
+              "explanation": "Đáp án: 'made herself conspicuous'. 'Make oneself conspicuous' = làm cho mình nổi bật. 'She made herself conspicuous at the party because of her brightly coloured hat' = Cô ấy khiến mình nổi bật tại bữa tiệc vì chiếc mũ sặc sỡ. Bẫy: 'conspicuous' là tính từ = dễ thấy/nổi bật. Chuyên đề: Vocabulary — conspicuous. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "made herself conspicuous at the party",
+              "category": "cpe_part_4",
+              "source": "Page 20, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-47",
+              "type": "gap_fill",
+              "instruction": "Sentence 47: The old cinema ______ demolished. (Key word: COURSE)",
+              "blankIndex": 47,
+              "acceptedAnswers": [
+                [
+                  "is in the course of being"
+                ]
+              ],
+              "correctAnswer": "is in the course of being",
+              "explanation": "Đáp án: 'is in the course of being'. 'In the course of' = đang trong quá trình. 'The old cinema is in the course of being demolished' = Rạp chiếu phim cũ đang trong quá trình bị phá dỡ. Câu gốc: 'They are demolishing' (present continuous) → 'in the course of being + V3' (passive). Chuyên đề: Fixed expressions — in the course of. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "is in the course of being demolished",
+              "category": "cpe_part_4",
+              "source": "Page 20, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-48",
+              "type": "gap_fill",
+              "instruction": "Sentence 48: The chairman ______ being late for meetings. (Key word: DIM)",
+              "blankIndex": 48,
+              "acceptedAnswers": [
+                [
+                  "takes a dim view of",
+                  "takes a very dim view of"
+                ]
+              ],
+              "correctAnswer": "takes a dim view of",
+              "explanation": "Đáp án: 'takes a dim view of'. 'Take a dim view of' = không tán thành/không chấp nhận. Câu gốc: 'doesn't tolerate lateness' → 'takes a dim view of being late'. Đây là idiom cố định: 'dim view' = cái nhìn tiêu cực. Bẫy: nhiều thí sinh không biết idiom này ở cấp C2. Chuyên đề: Idioms — take a dim view of.",
+              "answerLocation": "takes a dim view of being late for meetings",
+              "category": "cpe_part_4",
+              "source": "Page 20, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-49",
+              "type": "gap_fill",
+              "instruction": "Sentence 49: He ______ the award publicly. (Key word: RATHER)",
+              "blankIndex": 49,
+              "acceptedAnswers": [
+                [
+                  "would rather not have received",
+                  "would rather he had not received"
+                ]
+              ],
+              "correctAnswer": "would rather not have received",
+              "explanation": "Đáp án: 'would rather not have received'. 'Would rather not have + V3' = thà đã không... (hối tiếc về quá khứ). Câu gốc: 'He would prefer not to have received the award publicly' → sự hối tiếc/mong muốn khác đi về quá khứ. Bẫy: 'would rather not receive' (thiếu 'have' — sai thì quá khứ). Chuyên đề: Would rather — past reference.",
+              "answerLocation": "would rather not have received the award publicly",
+              "category": "cpe_part_4",
+              "source": "Page 21, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-50",
+              "type": "gap_fill",
+              "instruction": "Sentence 50: Despite the hardship, the people managed ______ . (Key word: THROUGH)",
+              "blankIndex": 50,
+              "acceptedAnswers": [
+                [
+                  "to pull through",
+                  "to come through",
+                  "to get through"
+                ]
+              ],
+              "correctAnswer": "to pull through",
+              "explanation": "Đáp án: 'to pull through'. 'Pull through' = vượt qua (khó khăn)/sống sót. Câu gốc: 'the people managed to survive' → 'the people managed to pull through'. 'Manage to + verb' + phrasal verb 'pull through' = vượt qua thử thách. Bẫy: 'get through' cũng chấp nhận được nhưng 'pull through' mạnh hơn về nghĩa 'survive hardship'. Chuyên đề: Phrasal verbs — pull through. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "managed to pull through",
+              "category": "cpe_part_4",
+              "source": "Page 21, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t1-sec-5",
+      "title": "Part 5: Multiple Choice Reading",
+      "instructions": "You are going to read extracts from articles. For questions 51-64, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Travelling Across the Desert (Questions 51-52)</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Crossing the Sahara is a dangerous business. George-Marie Haardt needed no reminder of this. During the desert leg of his 1924 expedition's 15,000 mile trip, the expedition's eight trucks travelled for 330 miles without finding a drop of water. 'Any breeze there is, becomes a torment,' the team reported. 'We are suffocated, saturated with dust; we could almost believe ourselves to be like men turned into red brick.' Writer Donovan Webster confirms this. 'People die all the time,' he says. 'That's why you go with someone you trust.' Don reckoned a little technology wouldn't hurt, though. 'When I mentioned to my guide, a Tuareg tribesman from Niger, that I had a GPS receiver to help us navigate, he said he didn't need it,' says Don. 'I've got TPS,' he told me — 'Tuareg positioning system.' And he did! He could find his way anywhere just by seeing ripples in the sand. He was as interested in my world as I was in his,' Don recalls. 'When I showed him a photo of my kids at Niagara Falls, he wanted to keep it. He thought the kids were sweet — but couldn't imagine that much water in the world.'</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Maria Reiche and the Nazca Lines (Questions 53-54)</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Maria Reiche, a German mathematician, devoted fifty years of her life to protecting and studying the Nazca lines of the Inca. Born in Dresden in 1903, she arrived in Peru, became fascinated by the Inca culture and initially found archaeological work. It was when, however, she overheard someone discussing giant figures carved into the ground, south of Lima that she found what was to become her life's work. Instantly mesmerised by these strange objects, she began to study them alone. 'I walked along them to understand their meaning,' she said. 'I noticed that they formed figures, a spider, a monkey, a bird.' After surveying around 1,000 lines, she wrote her book <i>Mystery of the Desert</i>. In order to spend more time with the geoglyphs, she set up home on the edge of the desert, living off fruit and nuts and sleeping under the stars. If vandals dared to set foot near the lines, she shooed them away, so determined that the lines should be preserved that when plans were made to flood the area for agricultural use, she successfully blocked the move. Her tireless work has now resulted in the Nazca lines having been declared a World Heritage Site. When she died in 1998, the question arose of who would now protect the lines, which were becoming increasingly threatened by vandals, looters, irresponsible tourists and changing weather patterns.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 3: Richard Leakey — Wildlife Wars (Questions 55-61)</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Although he made his name with his archeological finds of early humans, Richard Leakey became famous as the conservationist who turned the tide against elephant poaching. Bringing the slaughter of Kenya's elephants under control required a military solution, and Leakey was not afraid to apply it. Many poachers were killed, giving Leakey a reputation for being a cold-blooded obsessive who put animals before people. Moreover, his efforts to eradicate corruption in Kenya's wildlife management system won him many enemies.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>But the birth of the Kenya Wildlife Service (KWS), the eradication of elephant poaching and the ban on the international trade in ivory are his legacy, and they form the basis of <i>Wildlife Wars</i>. This surprisingly personal memoir has much to tell about the fragile relationships between conservationists and governments. It is a story not only of Kenya, but of the continuing cost of trying to save the world's wildlife from extinction.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Life for the average person in Africa is tough, and basic needs are far from being met. This is the background against which Leakey fought his war, and he constantly refers to the threat poverty poses to the preservation of Africa's spectacular wildlife. Leakey's argument is that national parks managed exclusively for biodiversity protection must be created, and that this protection should be funded by international sources. However, in the early 1990s the development agencies favoured 'community-based' conservation. Recently donors and conservationists have come to recognise the limitations of purely local conservation programmes; there is a growing consensus that the poor are unlikely to manage wildlife resources wisely for the long term because their needs are immediate.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'><i>Wildlife Wars</i> spans a 13-year period, beginning in 1989 when Leakey became head of the KWS. Then the elephant slaughter was at its height across Africa; it is estimated that between 1975 and 1989 the international markets for ivory led to the death of 1.2 million elephants. Kenya's herds were reduced by more than 85% by armed poachers. With both humour and seriousness, Leakey explains the sacrifices he had to make. Despite the gravity of the situation, Leakey makes light of the sometimes comical circumstances, although it is clear that his life was at risk many times. The real question is why this paleoanthropologist should risk his life for wildlife. The answer may lie in Leakey's own depiction of himself as essentially reflective. An international awareness campaign centred on an ivory bonfire led to the ban on ivory trade and the collapse of ivory prices. As the elephant population began to recover, Kenya's tourist industry revived to become the country's main source of revenue.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t1-rg-5",
+          "instruction": "Choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "questions": [
+            {
+              "id": "q-b2t1-51",
+              "type": "multiple_choice",
+              "instruction": "51. According to the first paragraph of the desert text, Haardt's team:",
+              "options": [
+                "A. could not find water.",
+                "B. were not to be trusted.",
+                "C. didn't need technological aids.",
+                "D. were affected by the climate."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'Were affected by the climate' — bài nói: 'Any breeze becomes a torment', 'We are suffocated, saturated with dust', 'men turned into red brick.' Tất cả miêu tả tác động của khí hậu sa mạc lên đội. Bẫy: A hấp dẫn vì đề cập '330 miles without finding a drop of water' nhưng đây nói về hành trình, không phải vấn đề chính. C sai — Tuareg guide không cần GPS nhưng đó là guide, không phải đội Haardt. Chuyên đề: Reading — main idea vs detail.",
+              "answerLocation": "suffocated, saturated with dust; men turned into red brick",
+              "category": "cpe_part_5",
+              "source": "Page 6, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-52",
+              "type": "multiple_choice",
+              "instruction": "52. The Tuareg guide:",
+              "options": [
+                "A. was indifferent to other cultures.",
+                "B. wanted to visit Niagara Falls.",
+                "C. was fascinated by the immense waterfall.",
+                "D. wanted to keep a souvenir of his children."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Hướng dẫn viên Tuareg 'couldn't imagine that much water in the world' — ông ta bị mê hoặc bởi lượng nước khổng lồ của thác Niagara vì sống ở sa mạc. Bẫy: D hấp dẫn — ông 'wanted to keep it' nhưng 'it' là bức ẢNH, không phải kỷ niệm về CON của Don. Ông thích ảnh vì THÁC NƯỚC, không phải trẻ con (dù cũng khen chúng cute). A sai — ông 'was as interested in my world as I was in his'. Chuyên đề: Reading — inference & pronoun reference.",
+              "answerLocation": "couldn't imagine that much water in the world",
+              "category": "cpe_part_5",
+              "source": "Page 6, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-53",
+              "type": "multiple_choice",
+              "instruction": "53. What are the 'strange objects' that Maria Reiche studied?",
+              "options": [
+                "A. immense shapes cut into the earth.",
+                "B. a form of rock art found in the desert.",
+                "C. vast and mysterious Peruvian statues.",
+                "D. paths left by the Incas."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Bài viết nói: 'giant figures carved into the ground' — hình khổng lồ khắc vào mặt đất. Đây là geoglyphs (đường vẽ trên mặt đất) chứ không phải tượng (C) hay rock art (B). 'Immense shapes cut into the earth' = hình khổng lồ cắt vào mặt đất — paraphrase chính xác nhất. Bẫy: D sai vì đây không phải 'paths' thông thường mà là hình vẽ (spider, monkey, bird). Chuyên đề: Reading — vocabulary in context.",
+              "answerLocation": "giant figures carved into the ground",
+              "category": "cpe_part_5",
+              "source": "Page 7, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-54",
+              "type": "multiple_choice",
+              "instruction": "54. The text implies that:",
+              "options": [
+                "A. the Nazca lines are uninteresting.",
+                "B. Maria Reiche belonged to a religious order.",
+                "C. in the past the lines were not valued.",
+                "D. Maria Reiche's work was not continued."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết ám chỉ rằng trước Reiche, đường Nazca không được coi trọng: có kế hoạch 'flood the area for agricultural use' (ngập vùng để canh tác) — cho thấy chính quyền không đánh giá cao chúng. Vandals cũng phá hoại chúng. Reiche phải tự mình bảo vệ. Chỉ SAU nỗ lực của bà, chúng mới được công nhận là World Heritage Site. Bẫy: D hấp dẫn — câu hỏi 'who would protect the lines' sau khi bà chết, nhưng UN đã quyên góp tiền. Chuyên đề: Reading — implication.",
+              "answerLocation": "plans were made to flood the area for agricultural use",
+              "category": "cpe_part_5",
+              "source": "Page 7, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-55",
+              "type": "multiple_choice",
+              "instruction": "55. Richard Leakey is most well-known for:",
+              "options": [
+                "A. increasing wildlife budgets.",
+                "B. successfully stopping illegal hunting.",
+                "C. removing the ban on the ivory trade.",
+                "D. helping to identify man's origins."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Câu đầu: 'Although he made his name with his archeological finds of early humans' — ông nổi tiếng nhất với phát hiện khảo cổ về con người nguyên thủy = 'helping to identify man's origins'. Bẫy: B rất hấp dẫn vì bài nói nhiều về bảo tồn, nhưng câu hỏi hỏi 'most well-known for' — và câu dùng 'although' cho thấy bảo tồn là điều ĐẾN SAU. Chuyên đề: Reading — distinguishing main claim.",
+              "answerLocation": "he made his name with his archeological finds of early humans",
+              "category": "cpe_part_5",
+              "source": "Page 12, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-56",
+              "type": "multiple_choice",
+              "instruction": "56. In paragraph 3, Leakey makes the point that:",
+              "options": [
+                "A. conservation should be a global responsibility.",
+                "B. a war must be fought against poverty.",
+                "C. Africa's wildlife is an international attraction.",
+                "D. there is insufficient money to establish parks."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Câu then chốt: 'this protection of our wildlife heritage should be funded by international sources' = bảo tồn nên được tài trợ quốc tế → conservation = global responsibility. Bẫy: B sai — Leakey nói về mối đe dọa của nghèo đói nhưng không kêu gọi 'chiến tranh chống nghèo'. D sai — ông không nói thiếu tiền mà nói tiền phải đến từ nguồn quốc tế. Chuyên đề: Reading — stated opinion.",
+              "answerLocation": "protection should be funded by international sources",
+              "category": "cpe_part_5",
+              "source": "Page 12, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-57",
+              "type": "multiple_choice",
+              "instruction": "57. It is now becoming accepted that:",
+              "options": [
+                "A. Leakey had no regard for local communities.",
+                "B. conservation programmes should be under local control.",
+                "C. donors have not yet received sufficient recognition.",
+                "D. poverty makes regional conservation programmes unreliable."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Câu then chốt: 'there is a growing consensus that the poor are unlikely to manage wildlife resources wisely for the long term because their needs are immediate' = nghèo đói khiến quản lý tài nguyên địa phương không đáng tin cậy. 'Growing consensus' = đang được chấp nhận rộng rãi. Bẫy: B là NGƯỢC — bài nói 'limitations of purely local conservation programmes'. Chuyên đề: Reading — developing argument.",
+              "answerLocation": "the poor are unlikely to manage wildlife resources wisely",
+              "category": "cpe_part_5",
+              "source": "Page 12, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-58",
+              "type": "multiple_choice",
+              "instruction": "58. The writer says that between 1975 and 1989:",
+              "options": [
+                "A. the perceptions of the use of ivory changed.",
+                "B. elephants were used to make piano keys.",
+                "C. the elephant population was decimated.",
+                "D. demand for ivory began to decrease."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết: '1.2 million elephants' bị giết, 'Kenya's herds were reduced by more than 85%' = quần thể voi bị tàn phá (decimated). Bẫy: B sai — piano keys được làm từ NGÀ VOI, không phải từ voi. A sai — nhận thức chưa thay đổi trong giai đoạn này. D sai — nhu cầu vẫn cao ('international markets for ivory'). Chuyên đề: Reading — specific detail.",
+              "answerLocation": "Kenya's herds were reduced by more than 85%",
+              "category": "cpe_part_5",
+              "source": "Page 12, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-59",
+              "type": "multiple_choice",
+              "instruction": "59. Leakey considers himself:",
+              "options": [
+                "A. amusing.",
+                "B. sentimental.",
+                "C. contemplative.",
+                "D. obsessive."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết: 'Leakey's own depiction of himself as essentially reflective' = ông tự miêu tả bản thân là người 'reflective' (suy ngẫm). 'Contemplative' = 'reflective' — đồng nghĩa. Bẫy: A sai — ông viết 'with humour' nhưng không tự coi mình là hài hước. B sai — 'bunny-hugging' là lời chỉ trích từ NGƯỜI KHÁC. D sai — 'obsessive' là nhận xét tiêu cực từ đối thủ. Chuyên đề: Reading — synonyms & self-description.",
+              "answerLocation": "depiction of himself as essentially reflective",
+              "category": "cpe_part_5",
+              "source": "Page 12, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-60",
+              "type": "multiple_choice",
+              "instruction": "60. What does the writer imply in the last paragraph?",
+              "options": [
+                "A. A disease had affected elephants.",
+                "B. Leakey's views are overly sentimental.",
+                "C. Leakey's success is in doubt.",
+                "D. Leakey's work had wide-ranging effects."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn cuối nêu chuỗi hiệu ứng rộng lớn: ivory bonfire → ban on ivory trade → collapse of ivory prices → elephant population recovered → tourist industry revived → country's main source of revenue. Đây là 'wide-ranging effects' = tác động rộng lớn. Bẫy: C sai — bài cho thấy thành công, không nghi ngờ. B sai — 'sentimental' chỉ là lời chỉ trích của đối thủ. Chuyên đề: Reading — inference & cause-effect.",
+              "answerLocation": "elephant population began to recover, Kenya's tourist industry revived",
+              "category": "cpe_part_5",
+              "source": "Page 13, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-61",
+              "type": "multiple_choice",
+              "instruction": "61. This passage is taken from:",
+              "options": [
+                "A. an article about endangered species.",
+                "B. a book about Richard Leakey.",
+                "C. an article about Kenya.",
+                "D. a book review."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Bài viết đang nhận xét cuốn sách 'Wildlife Wars': mô tả nội dung, đánh giá giọng điệu ('surprisingly personal memoir'), và phân tích ý nghĩa. Đây là đặc điểm của book review. Bẫy: B hấp dẫn nhưng bài không phải TRÍCH TỪ sách về Leakey — nó ĐÁNH GIÁ sách CỦA Leakey. A và C quá hẹp. Chuyên đề: Reading — text type identification.",
+              "answerLocation": "Wildlife Wars... this surprisingly personal memoir",
+              "category": "cpe_part_5",
+              "source": "Page 13, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b2t1-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "You are going to read an extract from a novel. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap (62-68). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Age of Innocence</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The small, bright lawn stretched away smoothly to the big, bright sea. The turf was hemmed with an edge of scarlet geranium and coleus, and cast-iron vases painted in a chocolate colour, standing at intervals along the winding path that led to the sea, looped their garlands of petunia and ivy geranium above the neatly raked gravel.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 62]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>A number of ladies in summer dresses and gentlemen in grey frock-coats and tall hats stood on the lawn or sat upon the benches. Every now and then, a slender girl in starched muslin would step from the tent, bow in hand, and speed her shaft at one of the targets, while the spectators interrupted their talk to watch the result.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 63]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Newbury Archery Club always held its August meeting at the Beauforts'. The sport, which had hitherto known no rival but croquet, was beginning to be discarded in favour of lawn-tennis. However, the latter game was still considered too rough and inelegant for social occasions, and as an opportunity to show off pretty dresses and graceful attitudes, the bow and arrow held their own.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 64]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In New York, during the previous winter, after he and May had settled down in the new, greenish-yellow house with the bow-window and the Pompeian vestibule, he had dropped back with relief into the old routine of the office. The renewal of his daily activities had served as a link with his former self.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 65]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>At the Century, he had found Winsett again, and at the Knickerbocker, the fashionable young men of his own set. And what with hours dedicated to the law and those given to dining out or entertaining friends at home, the life he was living had still seemed a fairly real and inevitable sort of business.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 66]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>But the Wellands always went to Newport, where they owned one of the square boxes on the cliffs, and their son-in-law could adduce no good reason why he and May should not join them there.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 67]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>It was not May's fault, poor dear. If, now and then, during their travels, they had fallen slightly out of step, harmony had been restored by their return to conditions she was used to. He had always foreseen that she would not disappoint him; and he had been right.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 68]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>He could not say that he had been mistaken in his choice, for she fulfilled all that he had expected. It was undoubtedly gratifying to be the husband of one of the handsomest and most popular young married women in New York, especially when she was also one of the sweetest-tempered and most reasonable of wives.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b2t1-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph you do not need to use.",
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "In addition, there had been the pleasurable excitement of choosing a showy grey horse for May's brougham (the Wellands had given the carriage). Then, there was the abiding occupation and interest of arranging his new library, which, in spite of family doubts and disapproval, had been carried out as he had dreamed, with a dark-embossed paper, an Eastlake book-case and 'sincere' armchairs and tables."
+            },
+            {
+              "label": "B",
+              "text": "The next morning Archer scoured the town in vain for more yellow roses. In consequence of this search, he arrived late at the office, perceived that his doing so made no difference whatever to anyone, and was filled with sudden exasperation at the elaborate futility of his life. Why should he not be, at that moment, on the sands of St. Augustine with May Weiland?"
+            },
+            {
+              "label": "C",
+              "text": "Newland Archer, standing on the verandah of the Beaufort house, looked curiously down upon this scene. On each side of the shiny painted steps, was a large, blue china flowerpot on a bright yellow china stand. A spiky, green plant filled each pot, and below the verandah ran a wide border of blue hydrangeas edged with more red geraniums. Behind him, the French windows of the drawing rooms gave glimpses, between swaying lace curtains, of glassy parquet floors islanded with chintz pouffes, dwarf armchairs, and velvet tables covered with trifles of silver."
+            },
+            {
+              "label": "D",
+              "text": "Archer looked down with wonder at the familiar spectacle. It surprised him that life should be going on in the old way when his own reactions to it had so completely changed. It was Newport that had first brought home to him the extent of the change."
+            },
+            {
+              "label": "E",
+              "text": "Archer had married (as most young men did) because he had met a perfectly charming girl at the moment when a series of rather aimless sentimental adventures were ending in a premature disgust; and she had represented peace, stability, comradeship, and the steadying sense of an inescapable duty."
+            },
+            {
+              "label": "F",
+              "text": "Half-way between the edge of the cliff and the square wooden house (which was also chocolate-coloured, but with the tin roof of the verandah striped in yellow and brown to represent an awning), two large targets had been placed against a background of shrubbery. On the other side of the lawn, facing the targets, was pitched a real tent, with benches and garden-seats about it."
+            },
+            {
+              "label": "G",
+              "text": "Newport, on the other hand, represented the escape from duty into an atmosphere of unmitigated holiday-making. Archer had tried to persuade May to spend the summer on a remote island off the coast of Maine (called, appropriately enough, Mount Desert) where a few hardy Bostonians and Philadelphians were camping in native cottages, and whence came reports of enchanting scenery and a wild, almost trapper-like existence amid woods and waters."
+            },
+            {
+              "label": "H",
+              "text": "May herself could not understand his obscure reluctance to fall in with so reasonable and pleasant a way of spending the summer. She reminded him that he had always liked Newport in his bachelor days, and as this was indisputable, he could only profess that he was sure he was going to like it better than ever now that they were to be there together. But as he stood on the Beaufort verandah and looked out on the brightly peopled lawn, it came home to him with a shiver that he was not going to like it at all."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q-b2t1-62",
+              "type": "gapped_text",
+              "instruction": "Gap 62:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án F. Đoạn F miêu tả bối cảnh vật lý: hai tấm bia bắn cung, lều, ghế. Nó tiếp nối đoạn trước (miêu tả bãi cỏ, lối đi) và dẫn đến đoạn sau (ladies, gentlemen đứng trên cỏ, cô gái bắn cung vào targets). 'Two large targets' → 'speed her shaft at one of the targets'. Chuyên đề: Text coherence — spatial description continuity.",
+              "answerLocation": "Gap 62 — after lawn description, before archery scene",
+              "category": "cpe_part_6",
+              "source": "Page 10, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-63",
+              "type": "gapped_text",
+              "instruction": "Gap 63:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Đoạn C giới thiệu Newland Archer nhìn xuống cảnh vật từ verandah — 'Newland Archer, standing on the verandah... looked curiously down upon this scene.' 'This scene' chỉ cảnh bắn cung vừa miêu tả. Đoạn sau nói về Archery Club — cung cấp bối cảnh xã hội cho cảnh Archer đang quan sát. Chuyên đề: Text coherence — introducing the protagonist.",
+              "answerLocation": "Gap 63 — after archery scene, before Archery Club context",
+              "category": "cpe_part_6",
+              "source": "Page 10, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-64",
+              "type": "gapped_text",
+              "instruction": "Gap 64:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn D nối tiếp ý từ đoạn Archery Club (bối cảnh xã hội cũ) sang suy nghĩ nội tâm của Archer: 'surprised him that life should be going on in the old way when his own reactions had so completely changed'. 'Newport had first brought home to him the extent of the change' → đoạn sau nói về cuộc sống ở New York trước đó. Chuyên đề: Text coherence — internal reflection.",
+              "answerLocation": "Gap 64 — after archery context, before New York flashback",
+              "category": "cpe_part_6",
+              "source": "Page 10, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-65",
+              "type": "gapped_text",
+              "instruction": "Gap 65:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn A tiếp tục liệt kê các hoạt động ở New York: chọn ngựa cho xe May, sắp xếp thư viện mới. 'In addition' nối với đoạn trước (routine of the office, link with former self). Đoạn sau nói về tìm thấy bạn bè ở clubs — tiếp tục chủ đề hoạt động thường ngày. Chuyên đề: Text coherence — listing/addition.",
+              "answerLocation": "Gap 65 — after office routine, before social clubs",
+              "category": "cpe_part_6",
+              "source": "Page 11, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-66",
+              "type": "gapped_text",
+              "instruction": "Gap 66:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn G miêu tả Newport như 'escape from duty' và nỗ lực của Archer thuyết phục May đi Mount Desert thay vì Newport. 'Newport, on the other hand' tạo đối lập với cuộc sống bận rộn ở New York ('fairly real and inevitable business'). Đoạn sau: 'But the Wellands always went to Newport' — giải thích tại sao Archer không thoát được Newport. Chuyên đề: Text coherence — contrast.",
+              "answerLocation": "Gap 66 — after New York life, before Wellands at Newport",
+              "category": "cpe_part_6",
+              "source": "Page 11, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-67",
+              "type": "gapped_text",
+              "instruction": "Gap 67:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn H nói May không hiểu sự miễn cưỡng của Archer ('could not understand his obscure reluctance'). 'She reminded him that he had always liked Newport' → đoạn trước nói Wellands luôn đến Newport. 'He was not going to like it at all' → đoạn sau: 'It was not May's fault, poor dear' — Archer thừa nhận lỗi không phải ở May. Chuyên đề: Text coherence — character perspective.",
+              "answerLocation": "Gap 67 — after Wellands going to Newport, before 'not May's fault'",
+              "category": "cpe_part_6",
+              "source": "Page 11, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b2t1-68",
+              "type": "gapped_text",
+              "instruction": "Gap 68:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Đoạn E giải thích tại sao Archer kết hôn: 'because he had met a perfectly charming girl... she had represented peace, stability'. Nó nối tiếp đoạn trước ('He had always foreseen that she would not disappoint him') và dẫn đến đoạn sau ('He could not say that he had been mistaken in his choice, for she fulfilled all that he had expected'). Logic: tại sao kết hôn → cô ấy đáp ứng kỳ vọng. Chuyên đề: Text coherence — motivation & consequence.",
+              "answerLocation": "Gap 68 — after 'time and place perfect for marriage', before 'not mistaken in his choice'",
+              "category": "cpe_part_6",
+              "source": "Page 11, Test 1, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3439 @@
+{
+  "summary": {
+    "totalQuestions": 10523,
+    "activeQuestions": 10523,
+    "bySeverity": {
+      "pass": 8540,
+      "warning": 1983
+    },
+    "activeBySeverity": {
+      "pass": 8540,
+      "warning": 1983
+    },
+    "byReviewStatus": {
+      "reviewed": 10523
+    },
+    "bySourceFile": {
+      "antigravity-bank.json": 7158,
+      "archive-source-ai-bank.json": 792,
+      "kaplan-sat-math-ai-bank.json": 148,
+      "opensat-pinesat.json": 1026,
+      "private-vault-archive-bank.json": 165,
+      "sat-1590-elite-ai-bank.json": 661,
+      "sat-king-supplemental-ai-bank.json": 354,
+      "sat-studio-foundation-bank.json": 219
+    },
+    "bySection": {
+      "Reading and Writing": 4439,
+      "Math": 6084
+    },
+    "byDifficulty": {
+      "Hard": 4661,
+      "Medium": 3222,
+      "Easy": 2640
+    },
+    "topIssues": {},
+    "activeTopIssues": {},
+    "topWarnings": {
+      "weak_or_missing_distractor_explanations": 1983
+    },
+    "passNeedsReviewCount": 0,
+    "passNeedsReviewByBank": {},
+    "failReviewedCount": 0,
+    "failReviewedByBank": {},
+    "answerChoiceDistribution": {
+      "totalMc": 8866,
+      "byChoice": {
+        "A": {
+          "count": 2979,
+          "pct": 33.6
+        },
+        "B": {
+          "count": 2160,
+          "pct": 24.4
+        },
+        "C": {
+          "count": 1971,
+          "pct": 22.2
+        },
+        "D": {
+          "count": 1756,
+          "pct": 19.8
+        }
+      },
+      "maxChoice": "A",
+      "maxChoicePct": 33.6,
+      "answerLeakageRisk": false
+    },
+    "studentProducedResponseDistribution": {
+      "mathTotal": 6084,
+      "sprTotal": 1657,
+      "sprPctOfMath": 27.2,
+      "satExpectedApproxPct": 25.0,
+      "deltaPctPoints": 2.2
+    },
+    "domainAlignment": {
+      "Reading and Writing": [
+        {
+          "domain": "Information and Ideas",
+          "count": 1234,
+          "actualPct": 27.8,
+          "satTargetPct": 26.0,
+          "deltaPctPoints": 1.8
+        },
+        {
+          "domain": "Craft and Structure",
+          "count": 1163,
+          "actualPct": 26.2,
+          "satTargetPct": 28.0,
+          "deltaPctPoints": -1.8
+        },
+        {
+          "domain": "Expression of Ideas",
+          "count": 830,
+          "actualPct": 18.7,
+          "satTargetPct": 20.0,
+          "deltaPctPoints": -1.3
+        },
+        {
+          "domain": "Standard English Conventions",
+          "count": 1212,
+          "actualPct": 27.3,
+          "satTargetPct": 26.0,
+          "deltaPctPoints": 1.3
+        }
+      ],
+      "Math": [
+        {
+          "domain": "Algebra",
+          "count": 1976,
+          "actualPct": 32.5,
+          "satTargetPct": 35.0,
+          "deltaPctPoints": -2.5
+        },
+        {
+          "domain": "Advanced Math",
+          "count": 2054,
+          "actualPct": 33.8,
+          "satTargetPct": 35.0,
+          "deltaPctPoints": -1.2
+        },
+        {
+          "domain": "Problem-Solving and Data Analysis",
+          "count": 1043,
+          "actualPct": 17.1,
+          "satTargetPct": 15.0,
+          "deltaPctPoints": 2.1
+        },
+        {
+          "domain": "Geometry and Trigonometry",
+          "count": 1011,
+          "actualPct": 16.6,
+          "satTargetPct": 15.0,
+          "deltaPctPoints": 1.6
+        }
+      ]
+    }
+  },
+  "byBank": {
+    "antigravity-bank.json": {
+      "total": 7158,
+      "activeTotal": 7158,
+      "bySeverity": {
+        "pass": 5283,
+        "warning": 1875
+      },
+      "activeBySeverity": {
+        "pass": 5283,
+        "warning": 1875
+      },
+      "byReviewStatus": {
+        "reviewed": 7158
+      },
+      "byPublicationStatus": {
+        "public_candidate_reviewed": 7131,
+        "private_reviewed": 1,
+        "reviewed": 26
+      },
+      "bySection": {
+        "Reading and Writing": 2766,
+        "Math": 4392
+      },
+      "byDifficulty": {
+        "Hard": 3663,
+        "Medium": 1257,
+        "Easy": 2238
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {
+        "weak_or_missing_distractor_explanations": 1875
+      },
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 5845,
+        "byChoice": {
+          "A": {
+            "count": 2210,
+            "pct": 37.8
+          },
+          "B": {
+            "count": 1315,
+            "pct": 22.5
+          },
+          "C": {
+            "count": 1215,
+            "pct": 20.8
+          },
+          "D": {
+            "count": 1105,
+            "pct": 18.9
+          }
+        },
+        "maxChoice": "A",
+        "maxChoicePct": 37.8,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 4392,
+        "sprTotal": 1313,
+        "sprPctOfMath": 29.9,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": 4.9
+      }
+    },
+    "archive-source-ai-bank.json": {
+      "total": 792,
+      "activeTotal": 792,
+      "bySeverity": {
+        "pass": 792
+      },
+      "activeBySeverity": {
+        "pass": 792
+      },
+      "byReviewStatus": {
+        "reviewed": 792
+      },
+      "byPublicationStatus": {
+        "public_candidate_reviewed": 792
+      },
+      "bySection": {
+        "Reading and Writing": 477,
+        "Math": 315
+      },
+      "byDifficulty": {
+        "Medium": 727,
+        "Easy": 65
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {},
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 792,
+        "byChoice": {
+          "A": {
+            "count": 185,
+            "pct": 23.4
+          },
+          "B": {
+            "count": 205,
+            "pct": 25.9
+          },
+          "C": {
+            "count": 198,
+            "pct": 25.0
+          },
+          "D": {
+            "count": 204,
+            "pct": 25.8
+          }
+        },
+        "maxChoice": "B",
+        "maxChoicePct": 25.9,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 315,
+        "sprTotal": 0,
+        "sprPctOfMath": 0.0,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": -25.0
+      }
+    },
+    "kaplan-sat-math-ai-bank.json": {
+      "total": 148,
+      "activeTotal": 148,
+      "bySeverity": {
+        "pass": 148
+      },
+      "activeBySeverity": {
+        "pass": 148
+      },
+      "byReviewStatus": {
+        "reviewed": 148
+      },
+      "byPublicationStatus": {
+        "public_candidate_reviewed": 148
+      },
+      "bySection": {
+        "Math": 148
+      },
+      "byDifficulty": {
+        "Easy": 11,
+        "Medium": 137
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {},
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 148,
+        "byChoice": {
+          "A": {
+            "count": 36,
+            "pct": 24.3
+          },
+          "B": {
+            "count": 37,
+            "pct": 25.0
+          },
+          "C": {
+            "count": 35,
+            "pct": 23.6
+          },
+          "D": {
+            "count": 40,
+            "pct": 27.0
+          }
+        },
+        "maxChoice": "D",
+        "maxChoicePct": 27.0,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 148,
+        "sprTotal": 0,
+        "sprPctOfMath": 0.0,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": -25.0
+      }
+    },
+    "opensat-pinesat.json": {
+      "total": 1026,
+      "activeTotal": 1026,
+      "bySeverity": {
+        "pass": 1026
+      },
+      "activeBySeverity": {
+        "pass": 1026
+      },
+      "byReviewStatus": {
+        "reviewed": 1026
+      },
+      "byPublicationStatus": {
+        "reviewed": 1026
+      },
+      "bySection": {
+        "Reading and Writing": 750,
+        "Math": 276
+      },
+      "byDifficulty": {
+        "Medium": 613,
+        "Hard": 233,
+        "Easy": 180
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {},
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 1026,
+        "byChoice": {
+          "A": {
+            "count": 320,
+            "pct": 31.2
+          },
+          "B": {
+            "count": 305,
+            "pct": 29.7
+          },
+          "C": {
+            "count": 244,
+            "pct": 23.8
+          },
+          "D": {
+            "count": 157,
+            "pct": 15.3
+          }
+        },
+        "maxChoice": "A",
+        "maxChoicePct": 31.2,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 276,
+        "sprTotal": 0,
+        "sprPctOfMath": 0.0,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": -25.0
+      }
+    },
+    "private-vault-archive-bank.json": {
+      "total": 165,
+      "activeTotal": 165,
+      "bySeverity": {
+        "pass": 165
+      },
+      "activeBySeverity": {
+        "pass": 165
+      },
+      "byReviewStatus": {
+        "reviewed": 165
+      },
+      "byPublicationStatus": {
+        "private_reviewed": 165
+      },
+      "bySection": {
+        "Math": 165
+      },
+      "byDifficulty": {
+        "Easy": 53,
+        "Medium": 77,
+        "Hard": 35
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {},
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 165,
+        "byChoice": {
+          "A": {
+            "count": 36,
+            "pct": 21.8
+          },
+          "B": {
+            "count": 46,
+            "pct": 27.9
+          },
+          "C": {
+            "count": 45,
+            "pct": 27.3
+          },
+          "D": {
+            "count": 38,
+            "pct": 23.0
+          }
+        },
+        "maxChoice": "B",
+        "maxChoicePct": 27.9,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 165,
+        "sprTotal": 0,
+        "sprPctOfMath": 0.0,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": -25.0
+      }
+    },
+    "sat-1590-elite-ai-bank.json": {
+      "total": 661,
+      "activeTotal": 661,
+      "bySeverity": {
+        "pass": 607,
+        "warning": 54
+      },
+      "activeBySeverity": {
+        "pass": 607,
+        "warning": 54
+      },
+      "byReviewStatus": {
+        "reviewed": 661
+      },
+      "byPublicationStatus": {
+        "public_candidate_reviewed": 661
+      },
+      "bySection": {
+        "Reading and Writing": 240,
+        "Math": 421
+      },
+      "byDifficulty": {
+        "Hard": 521,
+        "Medium": 140
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {
+        "weak_or_missing_distractor_explanations": 54
+      },
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 410,
+        "byChoice": {
+          "A": {
+            "count": 68,
+            "pct": 16.6
+          },
+          "B": {
+            "count": 113,
+            "pct": 27.6
+          },
+          "C": {
+            "count": 116,
+            "pct": 28.3
+          },
+          "D": {
+            "count": 113,
+            "pct": 27.6
+          }
+        },
+        "maxChoice": "C",
+        "maxChoicePct": 28.3,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 421,
+        "sprTotal": 251,
+        "sprPctOfMath": 59.6,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": 34.6
+      }
+    },
+    "sat-king-supplemental-ai-bank.json": {
+      "total": 354,
+      "activeTotal": 354,
+      "bySeverity": {
+        "pass": 309,
+        "warning": 45
+      },
+      "activeBySeverity": {
+        "pass": 309,
+        "warning": 45
+      },
+      "byReviewStatus": {
+        "reviewed": 354
+      },
+      "byPublicationStatus": {
+        "public_candidate_reviewed": 354
+      },
+      "bySection": {
+        "Reading and Writing": 180,
+        "Math": 174
+      },
+      "byDifficulty": {
+        "Medium": 154,
+        "Hard": 139,
+        "Easy": 61
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {
+        "weak_or_missing_distractor_explanations": 45
+      },
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 309,
+        "byChoice": {
+          "A": {
+            "count": 78,
+            "pct": 25.2
+          },
+          "B": {
+            "count": 77,
+            "pct": 24.9
+          },
+          "C": {
+            "count": 77,
+            "pct": 24.9
+          },
+          "D": {
+            "count": 77,
+            "pct": 24.9
+          }
+        },
+        "maxChoice": "A",
+        "maxChoicePct": 25.2,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 174,
+        "sprTotal": 45,
+        "sprPctOfMath": 25.9,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": 0.9
+      }
+    },
+    "sat-studio-foundation-bank.json": {
+      "total": 219,
+      "activeTotal": 219,
+      "bySeverity": {
+        "pass": 210,
+        "warning": 9
+      },
+      "activeBySeverity": {
+        "pass": 210,
+        "warning": 9
+      },
+      "byReviewStatus": {
+        "reviewed": 219
+      },
+      "byPublicationStatus": {
+        "public_candidate_reviewed": 219
+      },
+      "bySection": {
+        "Math": 193,
+        "Reading and Writing": 26
+      },
+      "byDifficulty": {
+        "Easy": 32,
+        "Medium": 117,
+        "Hard": 70
+      },
+      "topIssues": {},
+      "activeTopIssues": {},
+      "topWarnings": {
+        "weak_or_missing_distractor_explanations": 9
+      },
+      "passNeedsReviewCount": 0,
+      "passNeedsReviewSample": [],
+      "failReviewedCount": 0,
+      "failReviewedSample": [],
+      "answerChoiceDistribution": {
+        "totalMc": 171,
+        "byChoice": {
+          "A": {
+            "count": 46,
+            "pct": 26.9
+          },
+          "B": {
+            "count": 62,
+            "pct": 36.3
+          },
+          "C": {
+            "count": 41,
+            "pct": 24.0
+          },
+          "D": {
+            "count": 22,
+            "pct": 12.9
+          }
+        },
+        "maxChoice": "B",
+        "maxChoicePct": 36.3,
+        "answerLeakageRisk": false
+      },
+      "studentProducedResponseDistribution": {
+        "mathTotal": 193,
+        "sprTotal": 48,
+        "sprPctOfMath": 24.9,
+        "satExpectedApproxPct": 25.0,
+        "deltaPctPoints": -0.1
+      }
+    }
+  },
+  "duplicatesAndDiversity": {
+    "duplicateIdCount": 0,
+    "duplicateIds": [],
+    "exactDuplicatePromptCount": 0,
+    "exactDuplicatePrompts": [],
+    "repeatedSkeletonCountOver5": 158,
+    "repeatedSkeletonsOver5": [
+      {
+        "skeletonKey": "the value of an investment increases by # every # years which of the following functions models the value of the investment v v in dollars v years after an initial investment of #",
+        "count": 45,
+        "ids": [
+          "antigravity-1600-c55bd9f2",
+          "antigravity-1600-9b7febc5",
+          "antigravity-1600-69964d0d",
+          "antigravity-1600-627a546f",
+          "antigravity-1600-e08db4ce",
+          "antigravity-1600-9608facb",
+          "antigravity-1600-2c4f2419",
+          "antigravity-1600-73a77f03",
+          "antigravity-1600-7746d79c",
+          "antigravity-1600-6c54fc2b",
+          "antigravity-1600-7a03915c",
+          "antigravity-1600-17d0c6e8",
+          "antigravity-1600-6a973e85",
+          "antigravity-1600-6feaffaa",
+          "antigravity-1600-e959419b",
+          "antigravity-1600-462c0201",
+          "antigravity-1600-9ba9e867",
+          "antigravity-1600-5a3bbc92",
+          "antigravity-1600-87ff261a",
+          "antigravity-1600-03d30177"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "for v v # v # # # what is v #",
+        "count": 44,
+        "ids": [
+          "sat1590-math-113",
+          "sat1590-math-114",
+          "sat1590-math-115",
+          "sat1590-math-116",
+          "sat1590-math-117",
+          "sat1590-math-118",
+          "sat1590-math-119",
+          "sat1590-math-120",
+          "sat1590-math-121",
+          "sat1590-math-122",
+          "sat1590-math-123",
+          "sat1590-math-124",
+          "sat1590-math-125",
+          "sat1590-math-126",
+          "sat1590-math-127",
+          "sat1590-math-128",
+          "sat1590-math-129",
+          "sat1590-math-130",
+          "sat1590-math-131",
+          "sat1590-math-132"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "if #v # # what is the value of v",
+        "count": 42,
+        "ids": [
+          "antigravity-easy-5cb20285",
+          "antigravity-easy-4a2b2eff",
+          "antigravity-easy-25920ee9",
+          "antigravity-easy-5918b5d9",
+          "antigravity-easy-be0cca2b",
+          "antigravity-hard-e0221f0e",
+          "archive-ai-archive-signal-ivy-global-sat-2016-019",
+          "archive-ai-archive-signal-ivy-global-sat-2016-043",
+          "archive-ai-archive-signal-kaplan5-011",
+          "archive-ai-archive-signal-kaplan5-023",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-029",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-041",
+          "archive-ai-archive-signal-kaplan3-004",
+          "archive-ai-archive-signal-kaplan3-016",
+          "archive-ai-archive-signal-kaplan3-028",
+          "archive-ai-archive-signal-kaplan3-040",
+          "archive-ai-archive-signal-2019-october-us-012",
+          "archive-ai-archive-signal-2019-october-us-036",
+          "archive-ai-archive-signal-2017-05-vn-009",
+          "archive-ai-archive-signal-2017-05-vn-021"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "opensat-pinesat.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v line passes through # # and # # what is the slope of the line",
+        "count": 39,
+        "ids": [
+          "kaplan-ai-math-073",
+          "kaplan-ai-math-074",
+          "kaplan-ai-math-075",
+          "kaplan-ai-math-076",
+          "kaplan-ai-math-077",
+          "kaplan-ai-math-078",
+          "kaplan-ai-math-079",
+          "kaplan-ai-math-080",
+          "kaplan-ai-math-081",
+          "kaplan-ai-math-082",
+          "kaplan-ai-math-083",
+          "kaplan-ai-math-084",
+          "kaplan-ai-math-085",
+          "kaplan-ai-math-086",
+          "kaplan-ai-math-087",
+          "kaplan-ai-math-088",
+          "kaplan-ai-math-089",
+          "kaplan-ai-math-090",
+          "kaplan-ai-math-091",
+          "kaplan-ai-math-092"
+        ],
+        "sourceFiles": [
+          "kaplan-sat-math-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "in v coordinate geometry drill using calibration set v the line v #v # contains v point whose v coordinate is # what is the v coordinate of that point",
+        "count": 25,
+        "ids": [
+          "sat1590-math-241",
+          "sat1590-math-242",
+          "sat1590-math-243",
+          "sat1590-math-244",
+          "sat1590-math-245",
+          "sat1590-math-246",
+          "sat1590-math-247",
+          "sat1590-math-248",
+          "sat1590-math-249",
+          "sat1590-math-250",
+          "sat1590-math-251",
+          "sat1590-math-252",
+          "sat1590-math-253",
+          "sat1590-math-254",
+          "sat1590-math-255",
+          "sat1590-math-256",
+          "sat1590-math-257",
+          "sat1590-math-258",
+          "sat1590-math-259",
+          "sat1590-math-260"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v line in the xy plane has equation v #v # and passes through point v the v coordinate of v is # what is the v coordinate of v",
+        "count": 24,
+        "ids": [
+          "sat1590-math-019",
+          "sat1590-math-020",
+          "sat1590-math-021",
+          "sat1590-math-022",
+          "sat1590-math-023",
+          "sat1590-math-024",
+          "sat1590-math-025",
+          "sat1590-math-026",
+          "sat1590-math-027",
+          "sat1590-math-028",
+          "sat1590-math-029",
+          "sat1590-math-030",
+          "sat1590-math-031",
+          "sat1590-math-032",
+          "sat1590-math-033",
+          "sat1590-math-034",
+          "sat1590-math-035",
+          "sat1590-math-036",
+          "sat1590-math-037",
+          "sat1590-math-038"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "in coordinate setup v the graph of the line v #v # passes through the point v # what is the value of v",
+        "count": 24,
+        "ids": [
+          "satking-math-001",
+          "satking-math-002",
+          "satking-math-003",
+          "satking-math-004",
+          "satking-math-005",
+          "satking-math-006",
+          "satking-math-007",
+          "satking-math-008",
+          "satking-math-009",
+          "satking-math-010",
+          "satking-math-011",
+          "satking-math-012",
+          "satking-math-013",
+          "satking-math-014",
+          "satking-math-015",
+          "satking-math-016",
+          "satking-math-017",
+          "satking-math-018",
+          "satking-math-019",
+          "satking-math-020"
+        ],
+        "sourceFiles": [
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "which expression is equivalent to v # v # v v #",
+        "count": 22,
+        "ids": [
+          "strategy-math-224-20260525-099",
+          "strategy-math-224-20260525-100",
+          "strategy-math-224-20260525-101",
+          "strategy-math-224-20260525-103",
+          "strategy-math-224-20260525-104",
+          "strategy-math-224-20260525-105",
+          "strategy-math-224-20260525-107",
+          "strategy-math-224-20260525-108",
+          "strategy-math-224-20260525-109",
+          "strategy-math-224-20260525-111",
+          "strategy-math-224-20260525-112",
+          "strategy-math-224-20260525-113",
+          "strategy-math-224-20260525-115",
+          "strategy-math-224-20260525-116",
+          "strategy-math-224-20260525-117",
+          "strategy-math-224-20260525-119",
+          "strategy-math-224-20260525-120",
+          "strategy-math-224-20260525-121",
+          "strategy-math-224-20260525-123",
+          "strategy-math-224-20260525-124"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the equation v # #v # # has two solutions what is the positive difference between the two solutions",
+        "count": 22,
+        "ids": [
+          "sat1590-math-085",
+          "sat1590-math-086",
+          "sat1590-math-087",
+          "sat1590-math-088",
+          "sat1590-math-089",
+          "sat1590-math-090",
+          "sat1590-math-091",
+          "sat1590-math-092",
+          "sat1590-math-093",
+          "sat1590-math-094",
+          "sat1590-math-095",
+          "sat1590-math-096",
+          "sat1590-math-097",
+          "sat1590-math-098",
+          "sat1590-math-099",
+          "sat1590-math-100",
+          "sat1590-math-101",
+          "sat1590-math-104",
+          "sat1590-math-105",
+          "sat1590-math-108"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "for the function v v v # #v # what is v #",
+        "count": 22,
+        "ids": [
+          "satking-math-064",
+          "satking-math-065",
+          "satking-math-066",
+          "satking-math-067",
+          "satking-math-068",
+          "satking-math-069",
+          "satking-math-070",
+          "satking-math-071",
+          "satking-math-072",
+          "satking-math-073",
+          "satking-math-074",
+          "satking-math-075",
+          "satking-math-076",
+          "satking-math-077",
+          "satking-math-078",
+          "satking-math-079",
+          "satking-math-080",
+          "satking-math-081",
+          "satking-math-082",
+          "satking-math-083"
+        ],
+        "sourceFiles": [
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "in the xy plane the region defined by v ax # and v bx # contains # # if v and v are positive constants which must be true",
+        "count": 20,
+        "ids": [
+          "antigravity-1600-bc26ec4f",
+          "antigravity-1600-e840d425",
+          "antigravity-1600-664f616a",
+          "antigravity-1600-19e35964",
+          "antigravity-1600-18d0dc6c",
+          "antigravity-1600-8c47015f",
+          "antigravity-1600-d2183c0e",
+          "antigravity-1600-43d4166a",
+          "antigravity-1600-12af3a92",
+          "antigravity-1600-58989ad6",
+          "antigravity-1600-2fe14a97",
+          "antigravity-1600-84838ba4",
+          "antigravity-1600-5f0421e1",
+          "antigravity-1600-cdcb8a96",
+          "antigravity-1600-dcdadefb",
+          "antigravity-1600-3ca15b3f",
+          "antigravity-1600-2ebc5a69",
+          "antigravity-1600-926630dd",
+          "antigravity-1600-cd84899e",
+          "antigravity-1600-9c846be1"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "which inequality represents the solution to #v # #",
+        "count": 20,
+        "ids": [
+          "archive-ai-archive-signal-p-n-ies-sat-math-007",
+          "archive-ai-archive-signal-p-n-ies-sat-math-021",
+          "archive-ai-archive-signal-p-n-ies-sat-math-035",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-004",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-018",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-032",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-046",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-060",
+          "kaplan-ai-math-053",
+          "kaplan-ai-math-054",
+          "kaplan-ai-math-055",
+          "kaplan-ai-math-057",
+          "kaplan-ai-math-059",
+          "kaplan-ai-math-061",
+          "kaplan-ai-math-065",
+          "kaplan-ai-math-066",
+          "kaplan-ai-math-068",
+          "kaplan-ai-math-069",
+          "kaplan-ai-math-071",
+          "kaplan-ai-math-072"
+        ],
+        "sourceFiles": [
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v system of equations is shown v v # v v # what is the value of v",
+        "count": 20,
+        "ids": [
+          "kaplan-ai-math-029",
+          "kaplan-ai-math-030",
+          "kaplan-ai-math-031",
+          "kaplan-ai-math-032",
+          "kaplan-ai-math-033",
+          "kaplan-ai-math-034",
+          "kaplan-ai-math-035",
+          "kaplan-ai-math-036",
+          "kaplan-ai-math-037",
+          "kaplan-ai-math-038",
+          "kaplan-ai-math-039",
+          "kaplan-ai-math-040",
+          "kaplan-ai-math-043",
+          "kaplan-ai-math-049",
+          "foundation-math-systems-001",
+          "foundation-math-systems-002",
+          "foundation-math-systems-003",
+          "foundation-math-systems-004",
+          "foundation-math-systems-005",
+          "foundation-math-systems-006"
+        ],
+        "sourceFiles": [
+          "kaplan-sat-math-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "in the xy plane v circle has equation v # v # #v #v # # what is the radius of the circle",
+        "count": 18,
+        "ids": [
+          "strategy-geometry-exp-rw-stamina-20260526-001",
+          "strategy-geometry-exp-rw-stamina-20260526-005",
+          "strategy-geometry-exp-rw-stamina-20260526-009",
+          "strategy-geometry-exp-rw-stamina-20260526-013",
+          "strategy-geometry-exp-rw-stamina-20260526-017",
+          "strategy-geometry-exp-rw-stamina-20260526-021",
+          "strategy-geometry-exp-rw-stamina-20260526-025",
+          "strategy-geometry-exp-rw-stamina-20260526-029",
+          "strategy-geometry-exp-rw-stamina-20260526-033",
+          "strategy-geometry-exp-rw-stamina-20260526-037",
+          "strategy-geometry-exp-rw-stamina-20260526-041",
+          "strategy-geometry-exp-rw-stamina-20260526-045",
+          "strategy-geometry-exp-rw-stamina-20260526-049",
+          "strategy-geometry-exp-rw-stamina-20260526-053",
+          "strategy-geometry-exp-rw-stamina-20260526-057",
+          "strategy-geometry-exp-rw-stamina-20260526-061",
+          "strategy-geometry-exp-rw-stamina-20260526-065",
+          "strategy-geometry-exp-rw-stamina-20260526-069"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the mean of five numbers is # four of the numbers are # # # and # what is the fifth number",
+        "count": 18,
+        "ids": [
+          "kaplan-ai-math-211",
+          "kaplan-ai-math-212",
+          "kaplan-ai-math-213",
+          "kaplan-ai-math-214",
+          "kaplan-ai-math-215",
+          "kaplan-ai-math-216",
+          "kaplan-ai-math-217",
+          "kaplan-ai-math-218",
+          "sat1590-math-185",
+          "sat1590-math-186",
+          "sat1590-math-187",
+          "sat1590-math-188",
+          "sat1590-math-189",
+          "sat1590-math-190",
+          "sat1590-math-191",
+          "sat1590-math-192",
+          "sat1590-math-193",
+          "sat1590-math-194"
+        ],
+        "sourceFiles": [
+          "kaplan-sat-math-ai-bank.json",
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "in the equation # v # #v # what is the value of v",
+        "count": 18,
+        "ids": [
+          "sat1590-math-001",
+          "sat1590-math-002",
+          "sat1590-math-003",
+          "sat1590-math-004",
+          "sat1590-math-005",
+          "sat1590-math-006",
+          "sat1590-math-007",
+          "sat1590-math-008",
+          "sat1590-math-009",
+          "sat1590-math-010",
+          "sat1590-math-011",
+          "sat1590-math-012",
+          "sat1590-math-013",
+          "sat1590-math-014",
+          "sat1590-math-015",
+          "sat1590-math-016",
+          "sat1590-math-017",
+          "sat1590-math-018"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "function v is linear the table gives two values v # # and v # # what is the slope of the graph of v v v",
+        "count": 18,
+        "ids": [
+          "sat1590-math-043",
+          "sat1590-math-044",
+          "sat1590-math-045",
+          "sat1590-math-046",
+          "sat1590-math-047",
+          "sat1590-math-048",
+          "sat1590-math-049",
+          "sat1590-math-050",
+          "sat1590-math-051",
+          "sat1590-math-052",
+          "sat1590-math-053",
+          "sat1590-math-054",
+          "sat1590-math-055",
+          "sat1590-math-056",
+          "sat1590-math-057",
+          "sat1590-math-058",
+          "sat1590-math-059",
+          "sat1590-math-060"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v linear function v satisfies v # # and v # # what is the slope of the graph of v v v",
+        "count": 17,
+        "ids": [
+          "sat1590-math-291",
+          "sat1590-math-292",
+          "sat1590-math-293",
+          "sat1590-math-294",
+          "sat1590-math-295",
+          "sat1590-math-296",
+          "sat1590-math-297",
+          "sat1590-math-298",
+          "sat1590-math-299",
+          "sat1590-math-300",
+          "sat1590-math-301",
+          "sat1590-math-302",
+          "sat1590-math-303",
+          "sat1590-math-304",
+          "sat1590-math-305",
+          "sat1590-math-306",
+          "sat1590-math-307"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the system v #v # and #v v # has solution v v what is the value of v v",
+        "count": 16,
+        "ids": [
+          "sat1590-math-061",
+          "sat1590-math-062",
+          "sat1590-math-063",
+          "sat1590-math-064",
+          "sat1590-math-065",
+          "sat1590-math-066",
+          "sat1590-math-067",
+          "sat1590-math-068",
+          "sat1590-math-069",
+          "sat1590-math-070",
+          "sat1590-math-071",
+          "sat1590-math-072",
+          "sat1590-math-073",
+          "sat1590-math-074",
+          "sat1590-math-075",
+          "sat1590-math-076"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the equation v # #v # # has solutions v and v where v v what is v v",
+        "count": 16,
+        "ids": [
+          "sat1590-math-318",
+          "sat1590-math-319",
+          "sat1590-math-320",
+          "sat1590-math-321",
+          "sat1590-math-322",
+          "sat1590-math-323",
+          "sat1590-math-324",
+          "sat1590-math-325",
+          "sat1590-math-326",
+          "sat1590-math-327",
+          "sat1590-math-328",
+          "sat1590-math-329",
+          "sat1590-math-330",
+          "sat1590-math-335",
+          "sat1590-math-340",
+          "sat1590-math-345"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the equation v # #v # # has two positive solutions what is the greater solution",
+        "count": 16,
+        "ids": [
+          "satking-math-086",
+          "satking-math-087",
+          "satking-math-088",
+          "satking-math-089",
+          "satking-math-090",
+          "satking-math-091",
+          "satking-math-092",
+          "satking-math-093",
+          "satking-math-094",
+          "satking-math-095",
+          "satking-math-096",
+          "satking-math-097",
+          "satking-math-098",
+          "satking-math-099",
+          "satking-math-100",
+          "satking-math-101"
+        ],
+        "sourceFiles": [
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "if v # v # v v # v and v v which is equivalent to v",
+        "count": 15,
+        "ids": [
+          "antigravity-1600-a74beddd",
+          "antigravity-1600-cd35df6e",
+          "antigravity-1600-2854210a",
+          "antigravity-1600-20e2386a",
+          "antigravity-1600-706ee1a4",
+          "antigravity-1600-58752b90",
+          "antigravity-1600-19ce7ba6",
+          "antigravity-1600-045c7c62",
+          "antigravity-1600-e5be4bfb",
+          "antigravity-1600-264a0ea9",
+          "antigravity-1600-43333c26",
+          "antigravity-1600-263010fe",
+          "antigravity-1600-33616075",
+          "antigravity-1600-bc4578cb",
+          "antigravity-1600-ff287b63"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the system #v #v # and v v # has solution v v what is the value of v",
+        "count": 15,
+        "ids": [
+          "sat1590-math-266",
+          "sat1590-math-267",
+          "sat1590-math-268",
+          "sat1590-math-269",
+          "sat1590-math-270",
+          "sat1590-math-271",
+          "sat1590-math-272",
+          "sat1590-math-273",
+          "sat1590-math-274",
+          "sat1590-math-275",
+          "sat1590-math-276",
+          "sat1590-math-277",
+          "sat1590-math-280",
+          "sat1590-math-285",
+          "sat1590-math-290"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "if #v # # # what is the value of v",
+        "count": 14,
+        "ids": [
+          "antigravity-2b34afae",
+          "sat1590-math-380",
+          "sat1590-math-381",
+          "sat1590-math-382",
+          "sat1590-math-383",
+          "sat1590-math-384",
+          "sat1590-math-385",
+          "sat1590-math-386",
+          "sat1590-math-387",
+          "sat1590-math-388",
+          "sat1590-math-390",
+          "sat1590-math-391",
+          "sat1590-math-392",
+          "sat1590-math-393"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the function v is defined by v v # # v what is the value of v #",
+        "count": 14,
+        "ids": [
+          "antigravity-easy-b902d38e",
+          "antigravity-easy-f2d5c4dd",
+          "antigravity-easy-e8fb7814",
+          "antigravity-easy-da823eaa",
+          "antigravity-easy-8827b63b",
+          "antigravity-easy-ffeebdfb",
+          "antigravity-easy-4a9e1643",
+          "antigravity-easy-556f1a9c",
+          "antigravity-easy-1e96bf96",
+          "antigravity-easy-1915c63f",
+          "antigravity-easy-88e11138",
+          "antigravity-easy-f5a396bb",
+          "antigravity-easy-bc500f2a",
+          "antigravity-easy-008d630e"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v sequence starts at # each term after the first is # times the previous term what is the #st term",
+        "count": 14,
+        "ids": [
+          "sat1590-math-155",
+          "sat1590-math-156",
+          "sat1590-math-157",
+          "sat1590-math-158",
+          "sat1590-math-159",
+          "sat1590-math-160",
+          "sat1590-math-161",
+          "sat1590-math-162",
+          "sat1590-math-163",
+          "sat1590-math-164",
+          "sat1590-math-165",
+          "sat1590-math-166",
+          "sat1590-math-167",
+          "sat1590-math-168"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the system #v #v # and kx #v # has infinitely many solutions what is v",
+        "count": 13,
+        "ids": [
+          "strategy-math-224-20260525-072",
+          "strategy-math-224-20260525-073",
+          "strategy-math-224-20260525-074",
+          "strategy-math-224-20260525-075",
+          "strategy-math-224-20260525-076",
+          "strategy-math-224-20260525-077",
+          "strategy-math-224-20260525-078",
+          "strategy-math-224-20260525-079",
+          "strategy-math-224-20260525-080",
+          "strategy-math-224-20260525-081",
+          "strategy-math-224-20260525-082",
+          "strategy-math-224-20260525-083",
+          "strategy-math-224-20260525-084"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "which expression is equivalent to #v # # # v #",
+        "count": 13,
+        "ids": [
+          "sat1590-math-137",
+          "sat1590-math-138",
+          "sat1590-math-139",
+          "sat1590-math-140",
+          "sat1590-math-141",
+          "sat1590-math-142",
+          "sat1590-math-143",
+          "sat1590-math-144",
+          "sat1590-math-145",
+          "sat1590-math-146",
+          "sat1590-math-147",
+          "sat1590-math-148",
+          "sat1590-math-150"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "what is the solution to the given equation v # #",
+        "count": 12,
+        "ids": [
+          "antigravity-easy-55ae2a33",
+          "antigravity-easy-7fb56da0",
+          "antigravity-easy-59805d28",
+          "antigravity-easy-ed1b99f2",
+          "antigravity-easy-10747019",
+          "antigravity-easy-602aef6d",
+          "antigravity-easy-fca3dfbf",
+          "antigravity-easy-727ad1a1",
+          "antigravity-easy-6b0d87b3",
+          "antigravity-easy-3170f90f",
+          "antigravity-easy-ffc350d2",
+          "antigravity-easy-8eb04f2e"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the function v v # v # # # has v minimum value what is the minimum value of v",
+        "count": 12,
+        "ids": [
+          "strategy-math-224-20260525-168",
+          "strategy-math-224-20260525-169",
+          "strategy-math-224-20260525-170",
+          "strategy-math-224-20260525-171",
+          "strategy-math-224-20260525-172",
+          "strategy-math-224-20260525-173",
+          "strategy-math-224-20260525-174",
+          "strategy-math-224-20260525-175",
+          "strategy-math-224-20260525-176",
+          "strategy-math-224-20260525-177",
+          "strategy-math-224-20260525-178",
+          "strategy-math-224-20260525-179"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "four values in v data set are # # # and # if the mean of the five value data set is # what is the fifth value",
+        "count": 12,
+        "ids": [
+          "sat1590-math-395",
+          "sat1590-math-396",
+          "sat1590-math-397",
+          "sat1590-math-398",
+          "sat1590-math-399",
+          "sat1590-math-400",
+          "sat1590-math-401",
+          "sat1590-math-402",
+          "sat1590-math-403",
+          "sat1590-math-404",
+          "sat1590-math-405",
+          "sat1590-math-406"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v circle used in v geometry model has diameter # what is its radius",
+        "count": 12,
+        "ids": [
+          "sat1590-math-428",
+          "sat1590-math-429",
+          "sat1590-math-430",
+          "sat1590-math-431",
+          "sat1590-math-432",
+          "sat1590-math-433",
+          "sat1590-math-434",
+          "sat1590-math-435",
+          "sat1590-math-436",
+          "sat1590-math-437",
+          "sat1590-math-438",
+          "sat1590-math-439"
+        ],
+        "sourceFiles": [
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "which expression is equivalent to # v # #v",
+        "count": 12,
+        "ids": [
+          "satking-math-102",
+          "satking-math-103",
+          "satking-math-104",
+          "satking-math-105",
+          "satking-math-106",
+          "satking-math-107",
+          "satking-math-108",
+          "satking-math-109",
+          "satking-math-110",
+          "satking-math-111",
+          "satking-math-112",
+          "satking-math-113"
+        ],
+        "sourceFiles": [
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "what is # of #",
+        "count": 11,
+        "ids": [
+          "antigravity-200a068c",
+          "antigravity-9a30dad0",
+          "antigravity-7e148c66",
+          "antigravity-b75a9d8b",
+          "antigravity-easy-b57bef0c",
+          "antigravity-easy-8e4cab8e",
+          "antigravity-easy-c87d22d5",
+          "antigravity-easy-9d8e81cc",
+          "antigravity-easy-2db8e807",
+          "antigravity-easy-3681d63c",
+          "antigravity-easy-a705246e"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v rectangular prism has length # width # and height # what is its volume",
+        "count": 11,
+        "ids": [
+          "antigravity-8f288538",
+          "kaplan-ai-math-279",
+          "kaplan-ai-math-280",
+          "kaplan-ai-math-281",
+          "kaplan-ai-math-282",
+          "kaplan-ai-math-283",
+          "kaplan-ai-math-284",
+          "kaplan-ai-math-285",
+          "kaplan-ai-math-286",
+          "kaplan-ai-math-287",
+          "kaplan-ai-math-288"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "kaplan-sat-math-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the function v is defined by v v v # v # what is the v intercept of the graph of v v v in the xy plane",
+        "count": 11,
+        "ids": [
+          "antigravity-easy-9e7d5714",
+          "antigravity-easy-0f5a9076",
+          "antigravity-easy-4c673c59",
+          "antigravity-easy-c1908948",
+          "antigravity-easy-d2c65f41",
+          "antigravity-easy-226479ef",
+          "antigravity-easy-f6a5a7b8",
+          "antigravity-easy-9a94bcd8",
+          "antigravity-easy-cceae3fc",
+          "antigravity-easy-51309c57",
+          "antigravity-easy-57cb0a5d"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "v population starts at # hundred and doubles each year after # years how many hundreds are in the population",
+        "count": 11,
+        "ids": [
+          "satking-math-114",
+          "satking-math-115",
+          "satking-math-116",
+          "satking-math-118",
+          "satking-math-119",
+          "satking-math-120",
+          "satking-math-121",
+          "satking-math-123",
+          "satking-math-124",
+          "satking-math-125",
+          "satking-math-126"
+        ],
+        "sourceFiles": [
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the equation #v v # is graphed in the xy plane what is the slope of the line",
+        "count": 10,
+        "ids": [
+          "antigravity-easy-b9bf0201",
+          "antigravity-easy-2412aa95",
+          "antigravity-easy-e25ebbf7",
+          "antigravity-easy-c284f808",
+          "antigravity-easy-375ef3a3",
+          "antigravity-easy-df94ad70",
+          "antigravity-easy-2121a3b3",
+          "antigravity-easy-af57ffcf",
+          "antigravity-easy-2d4e0cec",
+          "antigravity-easy-e9f9d1d1"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "which of the following expressions is equivalent to #v # #v #",
+        "count": 10,
+        "ids": [
+          "antigravity-easy-eca54d7a",
+          "antigravity-easy-ba829949",
+          "antigravity-easy-2922c217",
+          "antigravity-easy-7da74596",
+          "antigravity-easy-ee4634c5",
+          "antigravity-easy-6f47d338",
+          "antigravity-easy-72de2ded",
+          "antigravity-easy-4dd3acbf",
+          "antigravity-easy-6682ba6f",
+          "antigravity-easy-7a0620c8"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the function v is linear v # # and v # # what is v #",
+        "count": 10,
+        "ids": [
+          "strategy-math-224-20260525-041",
+          "strategy-math-224-20260525-042",
+          "strategy-math-224-20260525-043",
+          "strategy-math-224-20260525-044",
+          "strategy-math-224-20260525-045",
+          "strategy-math-224-20260525-046",
+          "strategy-math-224-20260525-047",
+          "strategy-math-224-20260525-048",
+          "strategy-math-224-20260525-049",
+          "strategy-math-224-20260525-050"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "at v school event adult tickets cost # dollars and student tickets cost # dollars v total of # tickets were sold for # dollars how many adult tickets were sold",
+        "count": 10,
+        "ids": [
+          "strategy-math-224-20260525-062",
+          "strategy-math-224-20260525-063",
+          "strategy-math-224-20260525-064",
+          "strategy-math-224-20260525-065",
+          "strategy-math-224-20260525-066",
+          "strategy-math-224-20260525-067",
+          "strategy-math-224-20260525-068",
+          "strategy-math-224-20260525-069",
+          "strategy-math-224-20260525-070",
+          "strategy-math-224-20260525-071"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "for v # v # # v # # what is v",
+        "count": 10,
+        "ids": [
+          "strategy-math-224-20260525-137",
+          "strategy-math-224-20260525-140",
+          "strategy-math-224-20260525-143",
+          "strategy-math-224-20260525-146",
+          "strategy-math-224-20260525-149",
+          "strategy-math-224-20260525-152",
+          "strategy-math-224-20260525-155",
+          "strategy-math-224-20260525-158",
+          "strategy-math-224-20260525-161",
+          "strategy-math-224-20260525-164"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the quadratic function v v v v # # # has v # # what is v",
+        "count": 10,
+        "ids": [
+          "strategy-math-224-20260525-180",
+          "strategy-math-224-20260525-182",
+          "strategy-math-224-20260525-184",
+          "strategy-math-224-20260525-186",
+          "strategy-math-224-20260525-188",
+          "strategy-math-224-20260525-190",
+          "strategy-math-224-20260525-192",
+          "strategy-math-224-20260525-194",
+          "strategy-math-224-20260525-196",
+          "strategy-math-224-20260525-198"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "an exponential function v has v # # and v # # if the growth factor is constant for each increase of # in v what is v #",
+        "count": 10,
+        "ids": [
+          "strategy-math-224-20260525-181",
+          "strategy-math-224-20260525-183",
+          "strategy-math-224-20260525-185",
+          "strategy-math-224-20260525-187",
+          "strategy-math-224-20260525-189",
+          "strategy-math-224-20260525-191",
+          "strategy-math-224-20260525-193",
+          "strategy-math-224-20260525-195",
+          "strategy-math-224-20260525-197",
+          "strategy-math-224-20260525-199"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "in v calibration model v must satisfy sqrt v # v # the right side represents v measured length so it must be nonnegative what is the solution v",
+        "count": 10,
+        "ids": [
+          "strategy-math-200-20260525-152",
+          "strategy-math-200-20260525-156",
+          "strategy-math-200-20260525-160",
+          "strategy-math-200-20260525-164",
+          "strategy-math-200-20260525-168",
+          "strategy-math-200-20260525-172",
+          "strategy-math-200-20260525-176",
+          "strategy-math-200-20260525-180",
+          "strategy-math-200-20260525-184",
+          "strategy-math-200-20260525-188"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the student editor needed two items for the grant draft presentation in room # after reviewing # records v clear diagram and v short summary which choice completes the text so that",
+        "count": 10,
+        "ids": [
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-001",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-005",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-009",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-013",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-004",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-008",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-012",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-016",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-020",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-024"
+        ],
+        "sourceFiles": [
+          "archive-source-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the debate coach needed two items for the field report presentation in room # after reviewing # records v clear diagram and v short summary which choice completes the text so that ",
+        "count": 10,
+        "ids": [
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-002",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-006",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-010",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-001",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-005",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-009",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-013",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-017",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-021",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-025"
+        ],
+        "sourceFiles": [
+          "archive-source-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "the robotics team needed two items for the survey presentation in room # after reviewing # records v clear diagram and v short summary which choice completes the text so that it co",
+        "count": 10,
+        "ids": [
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-003",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-007",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-011",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-015",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-002",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-006",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-010",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-014",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-018",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-022"
+        ],
+        "sourceFiles": [
+          "archive-source-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "by june the astronomy club had finished week # of the exhibit plan after reviewing # records by september the data team had begun testing the results which choice completes the tex",
+        "count": 10,
+        "ids": [
+          "archive-ai-archive-signal-2018-oct-answers-001",
+          "archive-ai-archive-signal-2018-oct-answers-005",
+          "archive-ai-archive-signal-2018-oct-answers-009",
+          "archive-ai-archive-signal-2018-oct-answers-013",
+          "archive-ai-archive-signal-2018-oct-answers-017",
+          "archive-ai-archive-signal-2018-oct-answers-021",
+          "archive-ai-archive-signal-2018-oct-answers-025",
+          "archive-ai-archive-signal-answers-test-9-001",
+          "archive-ai-archive-signal-answers-test-9-005",
+          "archive-ai-archive-signal-answers-test-9-009"
+        ],
+        "sourceFiles": [
+          "archive-source-ai-bank.json"
+        ]
+      },
+      {
+        "skeletonKey": "by june the garden volunteers had finished week # of the prototype after reviewing # records by september the neighborhood association had begun testing the results which choice co",
+        "count": 10,
+        "ids": [
+          "archive-ai-archive-signal-2018-oct-answers-002",
+          "archive-ai-archive-signal-2018-oct-answers-006",
+          "archive-ai-archive-signal-2018-oct-answers-010",
+          "archive-ai-archive-signal-2018-oct-answers-014",
+          "archive-ai-archive-signal-2018-oct-answers-018",
+          "archive-ai-archive-signal-2018-oct-answers-022",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-004",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-016",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-028",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-040"
+        ],
+        "sourceFiles": [
+          "archive-source-ai-bank.json"
+        ]
+      }
+    ],
+    "topTopics": [
+      {
+        "topicKey": "conventions",
+        "count": 256,
+        "ids": [
+          "antigravity-d590a429",
+          "antigravity-895f51db",
+          "antigravity-ebe528ea",
+          "antigravity-7744f11b",
+          "antigravity-87675e85",
+          "antigravity-325dd96c",
+          "antigravity-c7ccd8b7",
+          "antigravity-e8f394dd",
+          "antigravity-4c4180df",
+          "antigravity-1079d8b3",
+          "antigravity-05e6f075",
+          "antigravity-fba29894",
+          "antigravity-462cdb31",
+          "antigravity-b93993c9",
+          "antigravity-ph2e2-b6e040ee",
+          "antigravity-ph2e2-7a07a629",
+          "antigravity-ph2e2-ef859316",
+          "antigravity-ph2e2-a8680369",
+          "antigravity-ph2e2-f93ad97b",
+          "antigravity-ph2e2-88bc3abd"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "opensat-pinesat.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "function",
+        "count": 223,
+        "ids": [
+          "antigravity-72ca498e",
+          "antigravity-2f88ed51",
+          "antigravity-562303b0",
+          "antigravity-378285f4",
+          "antigravity-add1c15a",
+          "antigravity-ea2e4335",
+          "antigravity-3d6d1612",
+          "antigravity-e92ef6a4",
+          "antigravity-43cf58d3",
+          "antigravity-830e47b0",
+          "antigravity-fc577741",
+          "antigravity-5b70a3c2",
+          "antigravity-bc77e090",
+          "antigravity-3e2870c3",
+          "antigravity-eb7e77db",
+          "antigravity-phA-db0b9acd",
+          "antigravity-phA-23300790",
+          "antigravity-phA-231d429e",
+          "antigravity-phB-c7ce5fd9",
+          "antigravity-phB-021480e1"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "solutions",
+        "count": 218,
+        "ids": [
+          "antigravity-5b1506e5",
+          "antigravity-5740b20a",
+          "antigravity-35b78ba5",
+          "antigravity-278fb6bc",
+          "antigravity-9320c2a5",
+          "antigravity-cb43239e",
+          "antigravity-4416f848",
+          "antigravity-97350f73",
+          "antigravity-fb77a227",
+          "antigravity-3c0ce4be",
+          "antigravity-3042ea4e",
+          "antigravity-17ffb764",
+          "antigravity-155fce59",
+          "antigravity-e2c857d8",
+          "antigravity-phA-9017964f",
+          "antigravity-phA-6e3caaab",
+          "antigravity-phA-65357c62",
+          "antigravity-phA-52ba65b8",
+          "antigravity-phB-a92a2493",
+          "antigravity-phB-6c39cc57"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "solution",
+        "count": 205,
+        "ids": [
+          "antigravity-cd14aa84",
+          "antigravity-4dae7f79",
+          "antigravity-566556f8",
+          "antigravity-2c459b6c",
+          "antigravity-f068765b",
+          "antigravity-de3056aa",
+          "antigravity-8f08b752",
+          "antigravity-df697f04",
+          "antigravity-dba83194",
+          "antigravity-57b030fc",
+          "antigravity-3dcf7a06",
+          "antigravity-5b464587",
+          "antigravity-6ca779b6",
+          "antigravity-f7b41c64",
+          "antigravity-c3b118ce",
+          "antigravity-119aee18",
+          "antigravity-8a4de933",
+          "antigravity-b2c9d797",
+          "antigravity-7f1f0464",
+          "antigravity-cd9252d4"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "equation",
+        "count": 195,
+        "ids": [
+          "antigravity-b35fd608",
+          "antigravity-8ab7504a",
+          "antigravity-a6c3c8b4",
+          "antigravity-4863a6c0",
+          "antigravity-802db9c8",
+          "antigravity-f24c68f5",
+          "antigravity-9c38ad17",
+          "antigravity-01524404",
+          "antigravity-02e9ee6f",
+          "antigravity-8e76c04b",
+          "antigravity-6776d91c",
+          "antigravity-0cfaae18",
+          "antigravity-a261fb2b",
+          "antigravity-53a08b80",
+          "antigravity-0b544859",
+          "antigravity-d5eaaae0",
+          "antigravity-8a22dc22",
+          "antigravity-7359f2dc",
+          "antigravity-d032f24f",
+          "antigravity-87286445"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "expression",
+        "count": 158,
+        "ids": [
+          "antigravity-015344eb",
+          "antigravity-427519d7",
+          "antigravity-daff5b51",
+          "antigravity-a5575754",
+          "antigravity-4e785243",
+          "antigravity-34df10e7",
+          "antigravity-7ab69342",
+          "antigravity-77e71768",
+          "antigravity-2374e88c",
+          "antigravity-7dbd9792",
+          "antigravity-4e22e809",
+          "antigravity-c7cd43c6",
+          "antigravity-97604f92",
+          "antigravity-a707a659",
+          "antigravity-1600-34bfc8a9",
+          "antigravity-1600-f31b0b58",
+          "antigravity-1600-a9278a81",
+          "antigravity-1600-29afe3f4",
+          "antigravity-1600-fbbb3433",
+          "antigravity-1600-5bb9b043"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "circle",
+        "count": 143,
+        "ids": [
+          "antigravity-dbca9175",
+          "antigravity-135acdbf",
+          "antigravity-c4440294",
+          "antigravity-537b195f",
+          "antigravity-ccdf9f3c",
+          "antigravity-6290845b",
+          "antigravity-54f8b77b",
+          "antigravity-3bbe1afe",
+          "antigravity-b54bf3f7",
+          "antigravity-be016907",
+          "antigravity-f7f1cba4",
+          "antigravity-fcbc9029",
+          "antigravity-0892364a",
+          "antigravity-94bc4c8e",
+          "antigravity-bad4efb7",
+          "antigravity-ceac9c48",
+          "antigravity-1600-6045820d",
+          "antigravity-1600-5183958c",
+          "antigravity-1600-0ce5ad96",
+          "antigravity-1600-80c50d0a"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "equivalent",
+        "count": 123,
+        "ids": [
+          "antigravity-b423a9bd",
+          "antigravity-64dfeb2d",
+          "antigravity-05f33eda",
+          "antigravity-b427957b",
+          "antigravity-9fa4b7dc",
+          "antigravity-643efe32",
+          "antigravity-32694f6a",
+          "antigravity-1cb78701",
+          "antigravity-0f9b2782",
+          "antigravity-adfb4afa",
+          "antigravity-14b0de2f",
+          "antigravity-1600-0e6d4824",
+          "antigravity-1600-b275eda3",
+          "antigravity-1600-a74beddd",
+          "antigravity-1600-cd35df6e",
+          "antigravity-1600-2854210a",
+          "antigravity-1600-20e2386a",
+          "antigravity-1600-706ee1a4",
+          "antigravity-1600-58752b90",
+          "antigravity-1600-19ce7ba6"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json"
+        ]
+      },
+      {
+        "topicKey": "triangle",
+        "count": 109,
+        "ids": [
+          "antigravity-f20770ab",
+          "antigravity-e03276c9",
+          "antigravity-c9028cc0",
+          "antigravity-1fa23db1",
+          "antigravity-e274fedc",
+          "antigravity-83f0863f",
+          "antigravity-00732161",
+          "antigravity-2f6d472e",
+          "antigravity-123c27f0",
+          "antigravity-f6ec3dba",
+          "antigravity-67d8a96d",
+          "antigravity-138b95e9",
+          "antigravity-2b647e32",
+          "antigravity-7f79e16f",
+          "antigravity-289f60ff",
+          "antigravity-a975e204",
+          "antigravity-167d5852",
+          "antigravity-203e7051",
+          "antigravity-3953ad56",
+          "antigravity-a4648457"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json"
+        ]
+      },
+      {
+        "topicKey": "participants",
+        "count": 104,
+        "ids": [
+          "antigravity-ed99934f",
+          "antigravity-1c8c189e",
+          "antigravity-40b24381",
+          "antigravity-f822491f",
+          "antigravity-ef1ac0f4",
+          "antigravity-9db2ea9b",
+          "antigravity-ph1sc-e086848e",
+          "antigravity-ph1qe-baca021d",
+          "antigravity-easy-5af92a6d",
+          "archive-ai-archive-signal-ivy-global-sat-2016-002",
+          "archive-ai-archive-signal-ivy-global-sat-2016-014",
+          "archive-ai-archive-signal-ivy-global-sat-2016-026",
+          "archive-ai-archive-signal-ivy-global-sat-2016-038",
+          "archive-ai-archive-signal-ivy-global-sat-2016-050",
+          "archive-ai-archive-signal-kaplan4-011",
+          "archive-ai-archive-signal-kaplan4-023",
+          "archive-ai-archive-signal-kaplan4-035",
+          "archive-ai-archive-signal-kaplan4-047",
+          "archive-ai-archive-signal-kaplan5-006",
+          "archive-ai-archive-signal-kaplan5-018"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "opensat-pinesat.json"
+        ]
+      },
+      {
+        "topicKey": "author",
+        "count": 103,
+        "ids": [
+          "random_id_e2",
+          "22f23d12",
+          "98765432",
+          "f8d2c3b7",
+          "34f7d4e9",
+          "564f68a7",
+          "random_id_c4",
+          "99ab9469",
+          "random_id_c8",
+          "89ad213c",
+          "random_id_e8",
+          "56a4794c",
+          "random_id_d9",
+          "7844609b",
+          "random_id_english_1",
+          "82a9c55a",
+          "84a521ab",
+          "f7a8174c",
+          "8494737c",
+          "389581ab"
+        ],
+        "sourceFiles": [
+          "opensat-pinesat.json"
+        ]
+      },
+      {
+        "topicKey": "dollars",
+        "count": 98,
+        "ids": [
+          "antigravity-24f94d54",
+          "antigravity-ffb84838",
+          "antigravity-easy-b7eada37",
+          "antigravity-easy-27838e4d",
+          "antigravity-easy-64815d33",
+          "antigravity-easy-22516314",
+          "strategy-math-224-20260525-087",
+          "strategy-math-224-20260525-088",
+          "strategy-math-224-20260525-089",
+          "strategy-math-224-20260525-090",
+          "strategy-math-224-20260525-091",
+          "strategy-math-224-20260525-092",
+          "strategy-math-224-20260525-093",
+          "strategy-math-224-20260525-094",
+          "strategy-math-200-20260525-001",
+          "strategy-math-200-20260525-002",
+          "strategy-math-200-20260525-003",
+          "strategy-math-200-20260525-004",
+          "strategy-math-200-20260525-005",
+          "strategy-math-200-20260525-006"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "describes",
+        "count": 93,
+        "ids": [
+          "antigravity-ce4faf8f",
+          "antigravity-87e8b5fe",
+          "antigravity-1600-beb87174",
+          "antigravity-hard-7d84759b",
+          "antigravity-hard-aee117e7",
+          "antigravity-hard-4835ce7f",
+          "antigravity-hard-ee8a37e1",
+          "antigravity-hard-fa11f576",
+          "archive-ai-archive-signal-ivy-global-sat-2016-004",
+          "archive-ai-archive-signal-ivy-global-sat-2016-016",
+          "archive-ai-archive-signal-ivy-global-sat-2016-028",
+          "archive-ai-archive-signal-ivy-global-sat-2016-040",
+          "archive-ai-archive-signal-kaplan4-001",
+          "archive-ai-archive-signal-kaplan4-013",
+          "archive-ai-archive-signal-kaplan4-025",
+          "archive-ai-archive-signal-kaplan4-037",
+          "archive-ai-archive-signal-kaplan4-049",
+          "archive-ai-archive-signal-kaplan5-008",
+          "archive-ai-archive-signal-kaplan5-020",
+          "archive-ai-archive-signal-kaplan5-032"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "opensat-pinesat.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "through",
+        "count": 85,
+        "ids": [
+          "antigravity-f828a8db",
+          "antigravity-8b669912",
+          "antigravity-e15dfb68",
+          "antigravity-86acd6e8",
+          "antigravity-b6eea15a",
+          "antigravity-14589133",
+          "antigravity-2238a60b",
+          "antigravity-7d43ecb4",
+          "antigravity-fe45c178",
+          "antigravity-eced14e0",
+          "antigravity-645acb9c",
+          "antigravity-a7146400",
+          "antigravity-7ff69cdf",
+          "antigravity-b6735396",
+          "antigravity-f4d410aa",
+          "antigravity-57fba752",
+          "antigravity-99796bff",
+          "antigravity-639ba694",
+          "antigravity-941d0b9a",
+          "antigravity-phB-55f79576"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "opensat-pinesat.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "hypotenuse",
+        "count": 81,
+        "ids": [
+          "antigravity-f81b706d",
+          "antigravity-bf8e8f5e",
+          "antigravity-cc4d88ae",
+          "antigravity-e8135ee6",
+          "antigravity-4824662a",
+          "antigravity-a552ca9a",
+          "antigravity-4865aa14",
+          "antigravity-8a80c142",
+          "antigravity-dd3b1d3f",
+          "antigravity-1aa10986",
+          "antigravity-bcfb2862",
+          "antigravity-f085c19c",
+          "antigravity-5e334e73",
+          "antigravity-ab6cde7c",
+          "antigravity-45ef40ee",
+          "antigravity-8a931032",
+          "antigravity-c4c78ea4",
+          "antigravity-2c0cdd7d",
+          "antigravity-7942908c",
+          "antigravity-a1560e7c"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "presentation",
+        "count": 80,
+        "ids": [
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-001",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-002",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-003",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-005",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-006",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-007",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-009",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-010",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-011",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-013",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-8-answers-015",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-001",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-002",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-003",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-004",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-005",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-006",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-007",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-008",
+          "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-009"
+        ],
+        "sourceFiles": [
+          "archive-source-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "rectangular",
+        "count": 71,
+        "ids": [
+          "antigravity-56b3240f",
+          "antigravity-6a574ade",
+          "antigravity-733738b5",
+          "antigravity-080d3b8c",
+          "antigravity-8f288538",
+          "antigravity-69e9b105",
+          "antigravity-ae3898a3",
+          "antigravity-508328d7",
+          "antigravity-1600-1f2dd060",
+          "antigravity-1600-322cf9bd",
+          "antigravity-1600-bab21efe",
+          "antigravity-1600-fa5d2f62",
+          "antigravity-1600-26e77eb2",
+          "antigravity-easy-f0df3164",
+          "antigravity-easy-20ef2e3c",
+          "antigravity-easy-8fa02d4b",
+          "antigravity-easy-07dcbf18",
+          "antigravity-easy-3155ed46",
+          "antigravity-easy-65de4332",
+          "antigravity-easy-18e3165b"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "researcher",
+        "count": 71,
+        "ids": [
+          "antigravity-f5a85539",
+          "antigravity-32b08306",
+          "antigravity-d9bbf7f2",
+          "antigravity-91dd3f66",
+          "antigravity-10bb0f3d",
+          "antigravity-6d668d7c",
+          "antigravity-ph1im-45954c2f",
+          "antigravity-ph1im-92b0c458",
+          "antigravity-ph1im-ff7d545c",
+          "antigravity-1600-f54985f5",
+          "antigravity-1600-9980dad8",
+          "antigravity-1600-d455c62a",
+          "antigravity-1600-2a0fc5a6",
+          "antigravity-1600-38732773",
+          "antigravity-1600-ec52cbe7",
+          "antigravity-1600-a599eb90",
+          "antigravity-1600-730b5369",
+          "antigravity-1600-66e40ef5",
+          "antigravity-easy-5a3e815c",
+          "antigravity-easy-4ee0586c"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "population",
+        "count": 69,
+        "ids": [
+          "antigravity-bb4ae4bd",
+          "antigravity-828ea96c",
+          "antigravity-564aef99",
+          "antigravity-15d05a7b",
+          "antigravity-b5631e5f",
+          "antigravity-17b7a01e",
+          "antigravity-01646445",
+          "antigravity-fa0a3a69",
+          "antigravity-5b0e5963",
+          "antigravity-d527b798",
+          "antigravity-cdb7fc7b",
+          "antigravity-aa9f4b3e",
+          "antigravity-08e2e58e",
+          "antigravity-d64776e0",
+          "antigravity-89d414d5",
+          "antigravity-d01d5fd1",
+          "antigravity-2b08909d",
+          "antigravity-e2cefd41",
+          "antigravity-be2cef81",
+          "antigravity-611545ec"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "private-vault-archive-bank.json",
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "circular",
+        "count": 64,
+        "ids": [
+          "antigravity-1600-111c2426",
+          "antigravity-1600-4e6474cc",
+          "antigravity-easy-2e6366ca",
+          "antigravity-easy-69ecadfb",
+          "antigravity-easy-a84330c0",
+          "antigravity-easy-f134d39d",
+          "antigravity-easy-c630d371",
+          "strategy-geometry-exp-rw-stamina-20260526-070",
+          "archive-ai-archive-signal-ivy-global-sat-2016-011",
+          "archive-ai-archive-signal-ivy-global-sat-2016-023",
+          "archive-ai-archive-signal-ivy-global-sat-2016-035",
+          "archive-ai-archive-signal-ivy-global-sat-2016-047",
+          "archive-ai-archive-signal-kaplan4-008",
+          "archive-ai-archive-signal-kaplan4-020",
+          "archive-ai-archive-signal-kaplan4-032",
+          "archive-ai-archive-signal-kaplan4-044",
+          "archive-ai-archive-signal-panda-sat-math-006",
+          "archive-ai-archive-signal-panda-sat-math-020",
+          "archive-ai-archive-signal-panda-sat-math-034",
+          "archive-ai-archive-signal-panda-sat-math-048"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "transition",
+        "count": 62,
+        "ids": [
+          "antigravity-3944fd59",
+          "antigravity-4a53c8bc",
+          "antigravity-2139b2e1",
+          "antigravity-bf5b2c7a",
+          "antigravity-b68d7493",
+          "antigravity-de7359b0",
+          "antigravity-a0714961",
+          "antigravity-803e1694",
+          "antigravity-1467ddb8",
+          "antigravity-0409b733",
+          "antigravity-d183432e",
+          "antigravity-62cd82c6",
+          "antigravity-6d98c07e",
+          "antigravity-d58dc9df",
+          "antigravity-731d8623",
+          "antigravity-f8b04bd7",
+          "antigravity-1600-11c03025",
+          "antigravity-easy-669aa807",
+          "antigravity-easy-b016d301",
+          "antigravity-easy-59fb6977"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "opensat-pinesat.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "inequality",
+        "count": 61,
+        "ids": [
+          "antigravity-0cf84657",
+          "antigravity-ae3da765",
+          "antigravity-9f599b8b",
+          "antigravity-b0fa7e14",
+          "antigravity-92297714",
+          "antigravity-e01ec006",
+          "antigravity-phB-f62df26d",
+          "antigravity-1600-bea45e6c",
+          "antigravity-easy-72c0c346",
+          "antigravity-easy-026c2226",
+          "antigravity-easy-e44dc5f2",
+          "antigravity-easy-b22d0a77",
+          "antigravity-easy-a4006b57",
+          "antigravity-easy-b578b2a4",
+          "antigravity-easy-108cc274",
+          "antigravity-easy-4cc825c6",
+          "antigravity-easy-1ff00ccd",
+          "antigravity-hard-e87647ae",
+          "antigravity-hard-d14dadc3",
+          "antigravity-hard-d6f36df7"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "observations",
+        "count": 60,
+        "ids": [
+          "antigravity-dc09a4ee",
+          "antigravity-3b653d8e",
+          "antigravity-ph2e3-57e5591f",
+          "antigravity-ph2e3-b5dd51ff",
+          "antigravity-ph2e3-9ca30fe2",
+          "strategy-geometry-exp-rw-stamina-20260526-298",
+          "strategy-geometry-exp-rw-stamina-20260526-299",
+          "strategy-geometry-exp-rw-stamina-20260526-300",
+          "strategy-geometry-exp-rw-stamina-20260526-301",
+          "strategy-geometry-exp-rw-stamina-20260526-302",
+          "strategy-geometry-exp-rw-stamina-20260526-303",
+          "strategy-geometry-exp-rw-stamina-20260526-304",
+          "strategy-geometry-exp-rw-stamina-20260526-305",
+          "archive-ai-archive-signal-ivy-global-sat-2016-001",
+          "archive-ai-archive-signal-ivy-global-sat-2016-003",
+          "archive-ai-archive-signal-ivy-global-sat-2016-013",
+          "archive-ai-archive-signal-ivy-global-sat-2016-015",
+          "archive-ai-archive-signal-ivy-global-sat-2016-025",
+          "archive-ai-archive-signal-ivy-global-sat-2016-027",
+          "archive-ai-archive-signal-ivy-global-sat-2016-029"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "equations",
+        "count": 59,
+        "ids": [
+          "antigravity-cd0acd86",
+          "antigravity-5f9873e4",
+          "antigravity-8e9bd475",
+          "antigravity-f0cd8341",
+          "antigravity-1600-cc81c1ab",
+          "antigravity-1600-cc4cfd44",
+          "antigravity-1600-6f2545a6",
+          "antigravity-1600-2948a20c",
+          "antigravity-1600-35f158ba",
+          "antigravity-1600-1d5290fd",
+          "antigravity-easy-a1771f57",
+          "antigravity-easy-4d79fc2d",
+          "antigravity-easy-d2d38d5e",
+          "antigravity-easy-8144060e",
+          "antigravity-easy-a671cd2f",
+          "antigravity-easy-aa49effd",
+          "antigravity-easy-f920ecb8",
+          "antigravity-easy-50deecb9",
+          "antigravity-easy-269ac61e",
+          "antigravity-easy-cb221045"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "investment",
+        "count": 58,
+        "ids": [
+          "antigravity-512ddf30",
+          "antigravity-c0c3d276",
+          "antigravity-eaa41e60",
+          "antigravity-40bbed5b",
+          "antigravity-a34b8a15",
+          "antigravity-1600-301418e0",
+          "antigravity-1600-c55bd9f2",
+          "antigravity-1600-9b7febc5",
+          "antigravity-1600-69964d0d",
+          "antigravity-1600-627a546f",
+          "antigravity-1600-e08db4ce",
+          "antigravity-1600-9608facb",
+          "antigravity-1600-2c4f2419",
+          "antigravity-1600-73a77f03",
+          "antigravity-1600-7746d79c",
+          "antigravity-1600-6c54fc2b",
+          "antigravity-1600-7a03915c",
+          "antigravity-1600-17d0c6e8",
+          "antigravity-1600-6a973e85",
+          "antigravity-1600-6feaffaa"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "topicKey": "y-intercept",
+        "count": 55,
+        "ids": [
+          "antigravity-6c3b9d7c",
+          "antigravity-d355762e",
+          "antigravity-20ca4174",
+          "antigravity-69926ae8",
+          "antigravity-0db1034f",
+          "antigravity-0b4f364f",
+          "antigravity-4b2c097e",
+          "antigravity-20575ffc",
+          "antigravity-4c10afff",
+          "antigravity-d81c58b7",
+          "antigravity-85e494f8",
+          "antigravity-d270089e",
+          "antigravity-f4293cd6",
+          "antigravity-phA-bd68222d",
+          "antigravity-1600-f1cf75ba",
+          "antigravity-easy-9e7d5714",
+          "antigravity-easy-0f5a9076",
+          "antigravity-easy-4c673c59",
+          "antigravity-easy-c1908948",
+          "antigravity-easy-d2c65f41"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "y-coordinate",
+        "count": 54,
+        "ids": [
+          "antigravity-27dea49f",
+          "antigravity-hard-d3d5120b",
+          "antigravity-hard-73f6f3b2",
+          "a987f231",
+          "sat1590-math-019",
+          "sat1590-math-020",
+          "sat1590-math-021",
+          "sat1590-math-022",
+          "sat1590-math-023",
+          "sat1590-math-024",
+          "sat1590-math-025",
+          "sat1590-math-026",
+          "sat1590-math-027",
+          "sat1590-math-028",
+          "sat1590-math-029",
+          "sat1590-math-030",
+          "sat1590-math-031",
+          "sat1590-math-032",
+          "sat1590-math-033",
+          "sat1590-math-034"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "infinitely",
+        "count": 52,
+        "ids": [
+          "antigravity-0b4d90c3",
+          "antigravity-87e56577",
+          "antigravity-ae1af08e",
+          "antigravity-792511b7",
+          "antigravity-58393631",
+          "antigravity-bda7c22a",
+          "antigravity-ff6fdda6",
+          "antigravity-9eedca1a",
+          "antigravity-phA-cde0b9ed",
+          "antigravity-phB-34fe2bc6",
+          "antigravity-1600-49eeebde",
+          "antigravity-1600-171fe3f5",
+          "antigravity-1600-79ffaa11",
+          "antigravity-hard-438ebabd",
+          "antigravity-hard-77578f0e",
+          "antigravity-hard-38df0599",
+          "antigravity-hard-1aff5544",
+          "antigravity-hard-aabe7c01",
+          "antigravity-hard-f8692f40",
+          "antigravity-hard-1fe5d05b"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "numbers",
+        "count": 50,
+        "ids": [
+          "antigravity-2d7f5936",
+          "antigravity-5f2dfc59",
+          "antigravity-ca344a86",
+          "antigravity-0fcaf8c2",
+          "antigravity-easy-4807ebec",
+          "antigravity-easy-064bbd51",
+          "antigravity-easy-4b30933e",
+          "antigravity-easy-85308c5b",
+          "antigravity-easy-6195f776",
+          "antigravity-easy-babe3d57",
+          "antigravity-easy-d4a027f1",
+          "antigravity-easy-4b5a63e2",
+          "antigravity-easy-6ec5534e",
+          "antigravity-easy-532a830a",
+          "antigravity-easy-7837dad3",
+          "antigravity-easy-95885145",
+          "antigravity-easy-0624b3fd",
+          "antigravity-hard-eaea804c",
+          "archive-ai-archive-signal-panda-sat-math-004",
+          "archive-ai-archive-signal-panda-sat-math-018"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "degrees",
+        "count": 48,
+        "ids": [
+          "antigravity-45f1d6dd",
+          "antigravity-b2ce531e",
+          "antigravity-0d7153f6",
+          "antigravity-easy-b0d2a4b1",
+          "antigravity-easy-f0b68535",
+          "antigravity-easy-766d1d14",
+          "antigravity-easy-2c481e7c",
+          "antigravity-easy-ca92d192",
+          "strategy-geometry-exp-rw-stamina-20260526-197",
+          "strategy-geometry-exp-rw-stamina-20260526-200",
+          "strategy-geometry-exp-rw-stamina-20260526-203",
+          "strategy-geometry-exp-rw-stamina-20260526-206",
+          "strategy-geometry-exp-rw-stamina-20260526-209",
+          "strategy-geometry-exp-rw-stamina-20260526-212",
+          "strategy-geometry-exp-rw-stamina-20260526-215",
+          "strategy-geometry-exp-rw-stamina-20260526-218",
+          "kaplan-ai-math-265",
+          "kaplan-ai-math-266",
+          "kaplan-ai-math-267",
+          "kaplan-ai-math-268"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "kaplan-sat-math-ai-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "fundraiser",
+        "count": 48,
+        "ids": [
+          "strategy-math-200-even-hard-20260525-162",
+          "archive-ai-archive-signal-ivy-global-sat-2016-010",
+          "archive-ai-archive-signal-ivy-global-sat-2016-022",
+          "archive-ai-archive-signal-ivy-global-sat-2016-034",
+          "archive-ai-archive-signal-ivy-global-sat-2016-046",
+          "archive-ai-archive-signal-kaplan4-007",
+          "archive-ai-archive-signal-kaplan4-019",
+          "archive-ai-archive-signal-kaplan4-031",
+          "archive-ai-archive-signal-kaplan4-043",
+          "archive-ai-archive-signal-panda-sat-math-002",
+          "archive-ai-archive-signal-panda-sat-math-016",
+          "archive-ai-archive-signal-panda-sat-math-030",
+          "archive-ai-archive-signal-panda-sat-math-044",
+          "archive-ai-archive-signal-panda-sat-math-058",
+          "archive-ai-archive-signal-kaplan5-002",
+          "archive-ai-archive-signal-kaplan5-014",
+          "archive-ai-archive-signal-kaplan5-026",
+          "archive-ai-archive-signal-kaplan5-038",
+          "archive-ai-archive-signal-kaplan5-050",
+          "archive-ai-archive-signal-p-n-ies-sat-math-012"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "satisfies",
+        "count": 46,
+        "ids": [
+          "antigravity-feefb863",
+          "antigravity-17d48a66",
+          "antigravity-9e3296c0",
+          "antigravity-phA-b9e56cfe",
+          "antigravity-phB-3834eb93",
+          "antigravity-1600-15c45251",
+          "antigravity-1600-db4aac39",
+          "antigravity-1600-8c6f6cb5",
+          "antigravity-1600-a4421e02",
+          "antigravity-hard-d6335a32",
+          "antigravity-hard-9ddcbeb9",
+          "antigravity-hard-b7085e4b",
+          "antigravity-hard-f4bff83f",
+          "antigravity-hard-cf9d1308",
+          "antigravity-hard-81690b96",
+          "strategy-math-224-20260525-085",
+          "strategy-math-224-20260525-086",
+          "strategy-math-224-20260525-095",
+          "strategy-math-224-20260525-096",
+          "strategy-math-224-20260525-097"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "expressions",
+        "count": 44,
+        "ids": [
+          "antigravity-8c5518fd",
+          "antigravity-af227a65",
+          "antigravity-1600-d299cdb0",
+          "antigravity-1600-66ec5f21",
+          "antigravity-1600-9897db59",
+          "antigravity-1600-84f70057",
+          "antigravity-1600-6d3915d3",
+          "antigravity-easy-eca54d7a",
+          "antigravity-easy-ba829949",
+          "antigravity-easy-2922c217",
+          "antigravity-easy-7da74596",
+          "antigravity-easy-ee4634c5",
+          "antigravity-easy-6f47d338",
+          "antigravity-easy-72de2ded",
+          "antigravity-easy-4dd3acbf",
+          "antigravity-easy-6682ba6f",
+          "antigravity-easy-7a0620c8",
+          "antigravity-easy-ea58d2d9",
+          "antigravity-easy-31c1182e",
+          "antigravity-easy-98d6277e"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json"
+        ]
+      },
+      {
+        "topicKey": "parallel",
+        "count": 43,
+        "ids": [
+          "antigravity-fc78320c",
+          "antigravity-61b1c778",
+          "antigravity-80d86e15",
+          "antigravity-1600-197bf6f1",
+          "antigravity-1600-8e60dfa9",
+          "antigravity-1600-7ec99412",
+          "antigravity-hard-88b81b3c",
+          "antigravity-hard-c2d021aa",
+          "antigravity-hard-5dbc1e5c",
+          "strategy-math-224-20260525-029",
+          "strategy-math-224-20260525-030",
+          "strategy-math-224-20260525-031",
+          "strategy-math-224-20260525-032",
+          "strategy-math-224-20260525-033",
+          "strategy-math-224-20260525-034",
+          "strategy-math-224-20260525-035",
+          "strategy-math-224-20260525-036",
+          "strategy-math-224-20260525-037",
+          "strategy-math-224-20260525-038",
+          "strategy-math-200-20260525-021"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "coordinate",
+        "count": 39,
+        "ids": [
+          "antigravity-61adea87",
+          "antigravity-cee6acf8",
+          "antigravity-hard-6da6d6e5",
+          "archive-ai-archive-signal-panda-sat-math-012",
+          "archive-ai-archive-signal-panda-sat-math-026",
+          "archive-ai-archive-signal-panda-sat-math-040",
+          "archive-ai-archive-signal-panda-sat-math-054",
+          "archive-ai-archive-signal-p-n-ies-sat-math-008",
+          "archive-ai-archive-signal-p-n-ies-sat-math-022",
+          "archive-ai-archive-signal-p-n-ies-sat-math-036",
+          "archive-ai-archive-signal-p-n-ies-sat-math-050",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-005",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-019",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-033",
+          "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-047",
+          "satking-math-001",
+          "satking-math-002",
+          "satking-math-003",
+          "satking-math-004",
+          "satking-math-005"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "constants",
+        "count": 39,
+        "ids": [
+          "antigravity-ae6b57f9",
+          "antigravity-1600-91d5d996",
+          "antigravity-1600-bc26ec4f",
+          "antigravity-1600-e840d425",
+          "antigravity-1600-664f616a",
+          "antigravity-1600-19e35964",
+          "antigravity-1600-18d0dc6c",
+          "antigravity-1600-8c47015f",
+          "antigravity-1600-d2183c0e",
+          "antigravity-1600-43d4166a",
+          "antigravity-1600-12af3a92",
+          "antigravity-1600-58989ad6",
+          "antigravity-1600-2fe14a97",
+          "antigravity-1600-84838ba4",
+          "antigravity-1600-5f0421e1",
+          "antigravity-1600-cdcb8a96",
+          "antigravity-1600-dcdadefb",
+          "antigravity-1600-3ca15b3f",
+          "antigravity-1600-2ebc5a69",
+          "antigravity-1600-926630dd"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json"
+        ]
+      },
+      {
+        "topicKey": "points",
+        "count": 37,
+        "ids": [
+          "antigravity-cdca92c4",
+          "antigravity-ph1im-396fc1aa",
+          "antigravity-hard-47cde553",
+          "strategy-math-200-20260525-189",
+          "strategy-math-200-20260525-190",
+          "strategy-math-200-20260525-191",
+          "strategy-math-200-20260525-192",
+          "strategy-math-200-even-hard-20260525-081",
+          "strategy-math-200-even-hard-20260525-082",
+          "strategy-math-200-even-hard-20260525-083",
+          "strategy-math-200-even-hard-20260525-084",
+          "strategy-math-200-even-hard-20260525-085",
+          "strategy-math-200-even-hard-20260525-086",
+          "strategy-math-200-even-hard-20260525-087",
+          "strategy-math-200-even-hard-20260525-088",
+          "strategy-math-200-even-hard-20260525-089",
+          "strategy-math-200-even-hard-20260525-090",
+          "strategy-math-200-even-hard-20260525-091",
+          "strategy-math-200-even-hard-20260525-092",
+          "strategy-math-200-even-hard-20260525-093"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "passage",
+        "count": 37,
+        "ids": [
+          "antigravity-d85c59c1",
+          "antigravity-e3ecdbac",
+          "antigravity-4ca11dfa",
+          "antigravity-1fb6fabf",
+          "antigravity-1600-8d009aab",
+          "antigravity-1600-77a275c7",
+          "e5d337a9",
+          "random_id_a3",
+          "random_id_english_a3",
+          "22d4199f",
+          "random_id_d2",
+          "random_id_e5",
+          "random_id_2",
+          "8762c897",
+          "894e121c",
+          "f4b3e546",
+          "e434518e",
+          "a7849c49",
+          "67998ab3",
+          "65482aa8"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json"
+        ]
+      },
+      {
+        "topicKey": "centimeters",
+        "count": 36,
+        "ids": [
+          "antigravity-bd07299d",
+          "antigravity-d1317a0d",
+          "antigravity-916f628c",
+          "antigravity-da96f75b",
+          "antigravity-ph2e2-f046e302",
+          "antigravity-ph2e2-fa70b2aa",
+          "antigravity-ph2e2-f77ce3ac",
+          "antigravity-ph2e2-21cdfd5b",
+          "antigravity-ph2e2-4cbb7806",
+          "antigravity-easy-447a660b",
+          "antigravity-easy-88f37377",
+          "antigravity-easy-a98a2b80",
+          "antigravity-easy-649bdf04",
+          "antigravity-easy-6f1848fa",
+          "antigravity-easy-446ef1cd",
+          "strategy-geometry-exp-rw-stamina-20260526-126",
+          "strategy-geometry-exp-rw-stamina-20260526-131",
+          "strategy-geometry-exp-rw-stamina-20260526-136",
+          "strategy-geometry-exp-rw-stamina-20260526-141",
+          "strategy-geometry-exp-rw-stamina-20260526-146"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json"
+        ]
+      },
+      {
+        "topicKey": "volume",
+        "count": 34,
+        "ids": [
+          "antigravity-902ff596",
+          "antigravity-9f7fe58c",
+          "antigravity-c619826d",
+          "antigravity-ph1im-9a86c271",
+          "antigravity-1600-acf923df",
+          "antigravity-1600-fd895e3f",
+          "antigravity-1600-447930a7",
+          "antigravity-1600-f951f332",
+          "antigravity-1600-20ed4aa6",
+          "antigravity-1600-20e46e78",
+          "antigravity-1600-cea14a4a",
+          "antigravity-hard-advmath-nlfunc-exponential-ord6127",
+          "strategy-geometry-exp-rw-stamina-20260526-129",
+          "strategy-geometry-exp-rw-stamina-20260526-134",
+          "strategy-geometry-exp-rw-stamina-20260526-139",
+          "strategy-geometry-exp-rw-stamina-20260526-144",
+          "strategy-geometry-exp-rw-stamina-20260526-149",
+          "strategy-geometry-exp-rw-stamina-20260526-154",
+          "strategy-geometry-exp-rw-stamina-20260526-159",
+          "strategy-geometry-exp-rw-stamina-20260526-164"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "problem",
+        "count": 34,
+        "ids": [
+          "antigravity-d4d9d5ab",
+          "archive-ai-archive-signal-ivy-global-sat-2016-008",
+          "archive-ai-archive-signal-ivy-global-sat-2016-032",
+          "archive-ai-archive-signal-kaplan4-005",
+          "archive-ai-archive-signal-kaplan4-029",
+          "archive-ai-archive-signal-panda-sat-math-024",
+          "archive-ai-archive-signal-panda-sat-math-038",
+          "archive-ai-archive-signal-panda-sat-math-052",
+          "archive-ai-archive-signal-kaplan5-012",
+          "archive-ai-archive-signal-kaplan5-024",
+          "archive-ai-archive-signal-kaplan5-036",
+          "archive-ai-archive-signal-kaplan5-048",
+          "archive-ai-archive-signal-p-n-ies-sat-math-006",
+          "archive-ai-archive-signal-p-n-ies-sat-math-020",
+          "archive-ai-archive-signal-p-n-ies-sat-math-048",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-006",
+          "archive-ai-archive-signal-2019-may-us-sat-qas-030",
+          "archive-ai-archive-signal-kaplan3-017",
+          "archive-ai-archive-signal-kaplan3-041",
+          "archive-ai-archive-signal-2019-october-us-001"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "opensat-pinesat.json"
+        ]
+      },
+      {
+        "topicKey": "system",
+        "count": 32,
+        "ids": [
+          "antigravity-6285db39",
+          "antigravity-4723ebb7",
+          "antigravity-e43e343e",
+          "antigravity-cf8c191e",
+          "antigravity-e75f7d1e",
+          "antigravity-1600-ae791745",
+          "antigravity-ph2e1-a9f38fab",
+          "antigravity-1600-ad95b18d",
+          "antigravity-easy-b6f48095",
+          "antigravity-hard-1806432c",
+          "antigravity-hard-4b0d194c",
+          "antigravity-hard-5ceb427b",
+          "antigravity-hard-f23c8328",
+          "antigravity-hard-432fbe64",
+          "antigravity-hard-6241c837",
+          "antigravity-hard-algebra-systems-param-1",
+          "antigravity-hard-advmath-systems-nonlinear2-1",
+          "antigravity-hard-algebra-systems-param",
+          "antigravity-hard-advmath-systems-nonlinear2",
+          "antigravity-hard-algebra-systems-param-ord6108"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "private-vault-archive-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "probability",
+        "count": 31,
+        "ids": [
+          "antigravity-00ace311",
+          "antigravity-87156018",
+          "antigravity-a2dbb6a5",
+          "antigravity-01853469",
+          "antigravity-cdc4ba93",
+          "antigravity-d183b566",
+          "antigravity-f5d6ab48",
+          "antigravity-35b8ec91",
+          "antigravity-e6b9d3b3",
+          "antigravity-0de80a0e",
+          "antigravity-e2c77d98",
+          "antigravity-e802ebf6",
+          "antigravity-3baac5a3",
+          "antigravity-424a39b7",
+          "antigravity-11c3d50a",
+          "antigravity-1600-55f5cc11",
+          "antigravity-1600-9246929e",
+          "antigravity-1600-7565eaef",
+          "antigravity-1600-c8667db4",
+          "antigravity-easy-d7a671d8"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "sat-1590-elite-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "x-values",
+        "count": 31,
+        "ids": [
+          "antigravity-hard-200350fb",
+          "strategy-math-200-even-hard-20260525-101",
+          "strategy-math-200-even-hard-20260525-103",
+          "strategy-math-200-even-hard-20260525-104",
+          "strategy-math-200-even-hard-20260525-106",
+          "strategy-math-200-even-hard-20260525-107",
+          "strategy-math-200-even-hard-20260525-109",
+          "strategy-math-200-even-hard-20260525-110",
+          "strategy-math-200-even-hard-20260525-112",
+          "strategy-math-200-even-hard-20260525-113",
+          "strategy-math-200-even-hard-20260525-115",
+          "strategy-math-200-even-hard-20260525-116",
+          "strategy-math-200-even-hard-20260525-118",
+          "strategy-math-200-even-hard-20260525-119",
+          "strategy-math-200-even-hard-20260525-121",
+          "strategy-math-200-even-hard-20260525-122",
+          "strategy-math-200-even-hard-20260525-124",
+          "strategy-math-200-even-hard-20260525-125",
+          "strategy-math-200-even-hard-20260525-127",
+          "strategy-math-200-even-hard-20260525-128"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      },
+      {
+        "topicKey": "neighborhoods",
+        "count": 30,
+        "ids": [
+          "antigravity-36d426f7",
+          "antigravity-a85d86c4",
+          "antigravity-ph1sc-2ec5c5af",
+          "antigravity-ph2e1-b717adc1",
+          "antigravity-ph2e1-f0262daf",
+          "archive-ai-archive-signal-answer-test-10-001",
+          "archive-ai-archive-signal-answer-test-10-005",
+          "archive-ai-archive-signal-answer-test-10-009",
+          "archive-ai-archive-signal-answer-test-10-013",
+          "archive-ai-archive-signal-answer-test-10-017",
+          "archive-ai-archive-signal-answer-test-10-021",
+          "archive-ai-archive-signal-2019-october-us-005",
+          "archive-ai-archive-signal-2019-october-us-017",
+          "archive-ai-archive-signal-2019-october-us-029",
+          "archive-ai-archive-signal-2019-october-us-041",
+          "satking-rw-002",
+          "satking-rw-032",
+          "satking-rw-038",
+          "satking-rw-046",
+          "satking-rw-057"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "archive-source-ai-bank.json",
+          "sat-king-supplemental-ai-bank.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "temperature",
+        "count": 29,
+        "ids": [
+          "antigravity-419b68b2",
+          "antigravity-77618a45",
+          "antigravity-844e3597",
+          "antigravity-dce50f53",
+          "antigravity-ea8b1468",
+          "antigravity-d8e4d8ab",
+          "antigravity-0f43fe20",
+          "antigravity-e9167ebc",
+          "antigravity-easy-f8d30fd2",
+          "antigravity-easy-36faf348",
+          "antigravity-easy-7d8d726f",
+          "antigravity-easy-918d7a6c",
+          "antigravity-hard-d2542a55",
+          "antigravity-hard-1d6dd7e3",
+          "antigravity-hard-054131fd",
+          "antigravity-hard-4e95f53a",
+          "antigravity-hard-b802f89d",
+          "antigravity-hard-62ee67b5",
+          "vault-college-board-9-s4-q06",
+          "vault-college-board-9-s4-q30"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "private-vault-archive-bank.json",
+          "sat-1590-elite-ai-bank.json"
+        ]
+      },
+      {
+        "topicKey": "length",
+        "count": 29,
+        "ids": [
+          "antigravity-70255835",
+          "antigravity-84754620",
+          "antigravity-d07839fc",
+          "antigravity-f3821c67",
+          "antigravity-e7e660c3",
+          "antigravity-62cc989f",
+          "antigravity-1600-aa96e77e",
+          "antigravity-1600-98630055",
+          "antigravity-hard-7686014e",
+          "antigravity-hard-4e12ba6b",
+          "antigravity-hard-5ef8215c",
+          "antigravity-hard-1f21d532",
+          "strategy-geometry-exp-rw-stamina-20260526-072",
+          "strategy-geometry-exp-rw-stamina-20260526-076",
+          "strategy-geometry-exp-rw-stamina-20260526-080",
+          "strategy-geometry-exp-rw-stamina-20260526-084",
+          "strategy-geometry-exp-rw-stamina-20260526-088",
+          "strategy-geometry-exp-rw-stamina-20260526-092",
+          "strategy-geometry-exp-rw-stamina-20260526-096",
+          "strategy-geometry-exp-rw-stamina-20260526-100"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "private-vault-archive-bank.json"
+        ]
+      },
+      {
+        "topicKey": "minimum",
+        "count": 28,
+        "ids": [
+          "antigravity-936b31e3",
+          "antigravity-9c3e78c1",
+          "antigravity-b09faa0b",
+          "antigravity-phB-8c2128cb",
+          "antigravity-phB-cbcccf50",
+          "antigravity-1600-b7e3417d",
+          "antigravity-hard-bce77e20",
+          "antigravity-hard-872449e0",
+          "antigravity-hard-72c6130f",
+          "antigravity-hard-2f7bd173",
+          "antigravity-hard-41a2a9e8",
+          "antigravity-hard-82e825b8",
+          "antigravity-hard-fff14a77",
+          "antigravity-hard-751e73fe",
+          "strategy-math-224-20260525-168",
+          "strategy-math-224-20260525-169",
+          "strategy-math-224-20260525-170",
+          "strategy-math-224-20260525-171",
+          "strategy-math-224-20260525-172",
+          "strategy-math-224-20260525-173"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "private-vault-archive-bank.json"
+        ]
+      },
+      {
+        "topicKey": "tickets",
+        "count": 28,
+        "ids": [
+          "antigravity-ce1603d9",
+          "antigravity-41ef9d10",
+          "antigravity-0025c047",
+          "antigravity-ac2328d0",
+          "antigravity-77b246c6",
+          "antigravity-b00b8d33",
+          "antigravity-b5268942",
+          "antigravity-phA-226d605a",
+          "antigravity-hard-e95c7c52",
+          "antigravity-hard-6f8f5256",
+          "antigravity-hard-5cad0ecf",
+          "antigravity-hard-76d36d57",
+          "antigravity-hard-b2390358",
+          "strategy-math-224-20260525-062",
+          "strategy-math-224-20260525-063",
+          "strategy-math-224-20260525-064",
+          "strategy-math-224-20260525-065",
+          "strategy-math-224-20260525-066",
+          "strategy-math-224-20260525-067",
+          "strategy-math-224-20260525-068"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json",
+          "opensat-pinesat.json",
+          "sat-studio-foundation-bank.json"
+        ]
+      },
+      {
+        "topicKey": "simplify",
+        "count": 28,
+        "ids": [
+          "antigravity-aaec5daa",
+          "antigravity-a89a974d",
+          "antigravity-baa57845",
+          "antigravity-400452a5",
+          "antigravity-1e35829f",
+          "antigravity-b0188ccd",
+          "antigravity-67e132b8",
+          "antigravity-40f7ce9c",
+          "antigravity-08e101fb",
+          "antigravity-78fb23a0",
+          "antigravity-1c9a5003",
+          "antigravity-fef734f5",
+          "antigravity-7c42760e",
+          "antigravity-095fb0bb",
+          "antigravity-phB-3b90d282",
+          "antigravity-phB-37de5b5d",
+          "antigravity-phB-58259afb",
+          "antigravity-phBs-17d24017",
+          "antigravity-hard-012355c1",
+          "antigravity-hard-096fc6de"
+        ],
+        "sourceFiles": [
+          "antigravity-bank.json"
+        ]
+      }
+    ]
+  },
+  "criticalRows": [],
+  "passNeedsReviewRows": [],
+  "failReviewedRows": []
+}

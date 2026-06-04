@@ -1,0 +1,529 @@
+{
+  "schemaVersion": "vite_legacy_parity_audit_v1",
+  "generatedAt": "2026-06-01T00:00:38.034778+00:00",
+  "summary": {
+    "totalFeatures": 17,
+    "requiredFeatures": 12,
+    "viteOwned": 17,
+    "legacyOnly": 0,
+    "missingEvidence": 0,
+    "requiredBlockers": 0
+  },
+  "blockers": [],
+  "remainingLegacyOnly": [],
+  "features": [
+    {
+      "id": "student_dashboard",
+      "area": "student",
+      "requirement": "Vite student dashboard shows the next best action, progress metrics, and public-safe bank count.",
+      "required": true,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte"
+      ],
+      "vite_markers": [
+        "Việc nên làm tiếp theo",
+        "Câu sẵn sàng luyện",
+        "Trọng tâm kỹ năng"
+      ],
+      "legacy_markers": [
+        "flow-start-pretest",
+        "student-pretest-coach"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "Việc nên làm tiếp theo",
+        "Câu sẵn sàng luyện",
+        "Trọng tâm kỹ năng"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "flow-start-pretest",
+        "student-pretest-coach"
+      ]
+    },
+    {
+      "id": "student_diagnostic",
+      "area": "student",
+      "requirement": "Vite student app can run a 20-question diagnostic from the public package.",
+      "required": true,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte",
+        "src/domain/student-learning.ts"
+      ],
+      "vite_markers": [
+        "buildDiagnosticSet",
+        "Bắt đầu chẩn đoán 20 câu",
+        "diagnostic"
+      ],
+      "legacy_markers": [
+        "startPretest",
+        "diagnosticBlueprint"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "buildDiagnosticSet",
+        "Bắt đầu chẩn đoán 20 câu",
+        "diagnostic"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "startPretest",
+        "diagnosticBlueprint"
+      ]
+    },
+    {
+      "id": "student_practice",
+      "area": "student",
+      "requirement": "Vite student app can run focused practice sprints with skill filtering.",
+      "required": true,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte",
+        "src/domain/student-learning.ts"
+      ],
+      "vite_markers": [
+        "buildPracticeSet",
+        "Bắt đầu sprint",
+        "Lọc kỹ năng"
+      ],
+      "legacy_markers": [
+        "start-topic-practice",
+        "practiceSessionMode"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "buildPracticeSet",
+        "Bắt đầu sprint",
+        "Lọc kỹ năng"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "start-topic-practice",
+        "practiceSessionMode"
+      ]
+    },
+    {
+      "id": "student_review",
+      "area": "student",
+      "requirement": "Vite student app can route missed questions into fresh proof review.",
+      "required": true,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte",
+        "src/domain/student-learning.ts"
+      ],
+      "vite_markers": [
+        "buildReviewSet",
+        "Bắt đầu sửa lỗi",
+        "Cần sửa lỗi"
+      ],
+      "legacy_markers": [
+        "review-list",
+        "start-due-review"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "buildReviewSet",
+        "Bắt đầu sửa lỗi",
+        "Cần sửa lỗi"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "review-list",
+        "start-due-review"
+      ]
+    },
+    {
+      "id": "learning_event_logging",
+      "area": "data",
+      "requirement": "Vite attempts write a normalized learning event stream for analytics and later IRT calibration.",
+      "required": true,
+      "vite_files": [
+        "src/domain/learning-events.ts",
+        "src/domain/student-learning.ts",
+        "src/student/SatStudentShell.svelte"
+      ],
+      "vite_markers": [
+        "LEARNING_EVENT_SCHEMA_VERSION",
+        "recordAttempt",
+        "syncAttemptToAccountProfile",
+        "Dữ liệu học tập"
+      ],
+      "legacy_markers": [
+        "sat_learning_event_engine.js",
+        "practiceHelpTelemetryByQuestionId"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "LEARNING_EVENT_SCHEMA_VERSION",
+        "recordAttempt",
+        "syncAttemptToAccountProfile",
+        "Dữ liệu học tập"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "practiceHelpTelemetryByQuestionId"
+      ]
+    },
+    {
+      "id": "parent_coach",
+      "area": "parent",
+      "requirement": "Vite parent route shows learner progress, weak skills, and coaching actions.",
+      "required": true,
+      "vite_files": [
+        "src/parent/SatParentShell.svelte",
+        "src/domain/parent-coach.ts"
+      ],
+      "vite_markers": [
+        "buildParentCoachModel",
+        "Việc nên làm tiếp theo",
+        "Sức khỏe lộ trình"
+      ],
+      "legacy_markers": [
+        "app_parent.js",
+        "parent-approved reward"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "buildParentCoachModel",
+        "Việc nên làm tiếp theo",
+        "Sức khỏe lộ trình"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": []
+    },
+    {
+      "id": "admin_content_review",
+      "area": "admin",
+      "requirement": "Vite admin route can inspect content queue, gates, answers, explanations, and source facts.",
+      "required": true,
+      "vite_files": [
+        "src/admin/SatAdminShell.svelte",
+        "src/domain/admin-content.ts"
+      ],
+      "vite_markers": [
+        "buildAdminContentModel",
+        "publicPromotionGate",
+        "choiceViews",
+        "explanationViews"
+      ],
+      "legacy_markers": [
+        "Question Governance",
+        "metric-needs-review"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "buildAdminContentModel",
+        "publicPromotionGate",
+        "choiceViews",
+        "explanationViews"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "metric-needs-review"
+      ]
+    },
+    {
+      "id": "release_gate",
+      "area": "admin",
+      "requirement": "Vite admin route exposes public package release readiness and internal-field blockers.",
+      "required": true,
+      "vite_files": [
+        "src/admin/SatAdminShell.svelte",
+        "src/domain/admin-content.ts"
+      ],
+      "vite_markers": [
+        "buildReleaseModel",
+        "Public package contract",
+        "internal_fields_in_public_package"
+      ],
+      "legacy_markers": [
+        "exportPublicManifestArtifact",
+        "public manifest"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "buildReleaseModel",
+        "Public package contract",
+        "internal_fields_in_public_package"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "exportPublicManifestArtifact",
+        "public manifest"
+      ]
+    },
+    {
+      "id": "account_operations",
+      "area": "admin",
+      "requirement": "Vite admin route owns local account CRUD, passcode policy, parent links, and profile preservation.",
+      "required": true,
+      "vite_files": [
+        "src/admin/SatAdminShell.svelte",
+        "src/domain/account-ops.ts"
+      ],
+      "vite_markers": [
+        "createAccount",
+        "changeAccountStatus",
+        "deleteAccount",
+        "passcode"
+      ],
+      "legacy_markers": [
+        "sat_account_engine.js",
+        "sat_account_view_renderers.js"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "createAccount",
+        "changeAccountStatus",
+        "deleteAccount",
+        "passcode"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": []
+    },
+    {
+      "id": "reward_operations",
+      "area": "student_admin",
+      "requirement": "Vite student/admin routes own reward browsing, redemption, program status, and claim resolution.",
+      "required": true,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte",
+        "src/admin/SatAdminShell.svelte",
+        "src/domain/rewards.ts"
+      ],
+      "vite_markers": [
+        "Kho phần thưởng",
+        "redeemRewardProgram",
+        "resolveRewardClaim",
+        "RewardOperationsModel"
+      ],
+      "legacy_markers": [
+        "parent-approved reward",
+        "attendance points"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "Kho phần thưởng",
+        "redeemRewardProgram",
+        "resolveRewardClaim",
+        "RewardOperationsModel"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "attendance points"
+      ]
+    },
+    {
+      "id": "backend_sync",
+      "area": "admin",
+      "requirement": "Vite admin route owns backend health, session, monitoring, export, and profile conflict review controls.",
+      "required": true,
+      "vite_files": [
+        "src/admin/SatAdminShell.svelte",
+        "src/domain/public-backend.ts"
+      ],
+      "vite_markers": [
+        "buildBackendSessionModel",
+        "backendHealth",
+        "Profile conflict review",
+        "saveBackendProfile"
+      ],
+      "legacy_markers": [
+        "sat_public_backend.py",
+        "backend"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "buildBackendSessionModel",
+        "backendHealth",
+        "Profile conflict review",
+        "saveBackendProfile"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "backend"
+      ]
+    },
+    {
+      "id": "route_wrappers",
+      "area": "routing",
+      "requirement": "HTML entry points default to Vite and preserve explicit legacy fallback.",
+      "required": true,
+      "vite_files": [
+        "student.html",
+        "admin.html",
+        "parent.html"
+      ],
+      "vite_markers": [
+        "dist/vite/vite-student.html",
+        "dist/vite/vite-admin.html",
+        "dist/vite/vite-parent.html",
+        "legacy"
+      ],
+      "legacy_markers": [
+        "index.html?entry=student",
+        "index.html?entry=admin",
+        "index.html?entry=parent"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "dist/vite/vite-student.html",
+        "dist/vite/vite-admin.html",
+        "dist/vite/vite-parent.html",
+        "legacy"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "index.html?entry=student",
+        "index.html?entry=admin",
+        "index.html?entry=parent"
+      ]
+    },
+    {
+      "id": "lesson_library",
+      "area": "student",
+      "requirement": "Structured lesson library and resource links beyond immediate practice feedback.",
+      "required": false,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte"
+      ],
+      "vite_markers": [
+        "Thư viện bài học",
+        "resource-links"
+      ],
+      "legacy_markers": [
+        "renderLessonList",
+        "practice-resource-links"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "Thư viện bài học",
+        "resource-links"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "renderLessonList",
+        "practice-resource-links"
+      ]
+    },
+    {
+      "id": "vocabulary_trainer",
+      "area": "student",
+      "requirement": "Vocabulary flashcards, quiz, custom word import, and known-word tracking.",
+      "required": false,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte"
+      ],
+      "vite_markers": [
+        "Vocabulary",
+        "flashcard",
+        "vocab"
+      ],
+      "legacy_markers": [
+        "vocab-start-quiz",
+        "vocab-submit-quiz",
+        "vocab-add-word"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "Vocabulary",
+        "flashcard",
+        "vocab"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "vocab-start-quiz",
+        "vocab-submit-quiz",
+        "vocab-add-word"
+      ]
+    },
+    {
+      "id": "official_exam_logs",
+      "area": "student_parent",
+      "requirement": "Official/Bluebook score logs, exam review reports, and score trend evidence.",
+      "required": false,
+      "vite_files": [
+        "src/student/SatStudentShell.svelte",
+        "src/parent/SatParentShell.svelte"
+      ],
+      "vite_markers": [
+        "Nhật ký điểm thi",
+        "Rà soát điểm thi"
+      ],
+      "legacy_markers": [
+        "officialLogs",
+        "renderExamReviewReport",
+        "exam-review-report"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "Nhật ký điểm thi",
+        "Rà soát điểm thi"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "officialLogs",
+        "renderExamReviewReport",
+        "exam-review-report"
+      ]
+    },
+    {
+      "id": "news_feed",
+      "area": "admin_student",
+      "requirement": "Admin-authored news posts and learner-facing announcements.",
+      "required": false,
+      "vite_files": [
+        "src/admin/SatAdminShell.svelte",
+        "src/student/SatStudentShell.svelte"
+      ],
+      "vite_markers": [
+        "Tin báo",
+        "Announcement"
+      ],
+      "legacy_markers": [
+        "news-submit",
+        "news-list",
+        "newsPosts"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "Tin báo",
+        "Announcement"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "news-submit",
+        "news-list",
+        "newsPosts"
+      ]
+    },
+    {
+      "id": "advanced_source_ledger",
+      "area": "admin",
+      "requirement": "Full source ledger/archive registry dashboards beyond the current source governance summary.",
+      "required": false,
+      "vite_files": [
+        "src/admin/SatAdminShell.svelte",
+        "src/domain/admin-content.ts"
+      ],
+      "vite_markers": [
+        "Source governance",
+        "sourceFacts"
+      ],
+      "legacy_markers": [
+        "renderSourceLedger",
+        "archive registry",
+        "source ledger"
+      ],
+      "status": "vite_owned",
+      "viteHits": [
+        "Source governance",
+        "sourceFacts"
+      ],
+      "missingViteMarkers": [],
+      "legacyHits": [
+        "renderSourceLedger",
+        "archive registry"
+      ]
+    }
+  ]
+}

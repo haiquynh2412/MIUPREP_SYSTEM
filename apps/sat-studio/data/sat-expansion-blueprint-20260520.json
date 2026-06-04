@@ -1,0 +1,52 @@
+{
+  "version": "sat-expansion-batch-001-2026-05-20",
+  "basisReports": [
+    "data/sat-2026-readiness-audit.json",
+    "data/reviewed-question-expert-audit.json",
+    "data/topic-governance-report.json",
+    "data/template-diversity-report.json"
+  ],
+  "doNotExpandRoutineTopics": [
+    "hypotenuse",
+    "probability",
+    "circumference",
+    "routine boundaries",
+    "routine one-step percent",
+    "near-clone y-coordinate prompts"
+  ],
+  "batch001Targets": {
+    "Math Algebra": 8,
+    "Math Advanced Math": 8,
+    "Reading and Writing Craft and Structure": 8
+  },
+  "fullRoadmapTargets": {
+    "Math Algebra": 200,
+    "Math Advanced Math": 200,
+    "Reading and Writing Craft and Structure": 150,
+    "Expression of Ideas": "100-150 after Craft and Structure moves closer to target",
+    "Information and Ideas": "80-100 only for specific thin micro-skills"
+  },
+  "rwPassageRules": {
+    "wordRange": "25-150 words for most single-text items; paired cross-text can be longer but must stay concise",
+    "requirements": [
+      "passageType",
+      "discipline",
+      "claim",
+      "evidence",
+      "rhetoricalMove",
+      "lexicalTarget",
+      "crossTextRelation when paired"
+    ]
+  },
+  "mathRules": {
+    "prioritySkills": [
+      "Systems of equations in two variables",
+      "Linear functions",
+      "Linear inequalities in one or two variables",
+      "Nonlinear equations in one variable",
+      "Equivalent expressions",
+      "Nonlinear functions"
+    ],
+    "formatMix": "Prefer multiple choice for trap analytics, with selected SPR for parameter/numeric fluency."
+  }
+}

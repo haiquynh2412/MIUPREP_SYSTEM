@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test8",
+  "title": "CPE Entry Test 8 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test8-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Is it Destiny?</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>One's individual horoscope, otherwise known (0) as one's birthchart, is dependent on and influenced (1) __________ the position of the planets at the exact time of one's emergence (2) __________ the world. An astrologer, aided by mathematical and astrological tables, (3) __________ use personal statistics based on place and exact moment of birth to graphically chart one's horoscope. By carefully studying this chart, (4) __________ the planets' positional relationship at the time of one's birth, an accredited astrologer (5) __________ the ability to interpret one's personality traits and provide pertinent information about one's future.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(6) __________ on a personalised star chart signifies a particular field of energy representative (7) __________ a certain aspect of life. The strength (8) __________ weakness of an energy field is dependent on the inter-planetary positioning. A numerical value (9) __________ assigned to each energy field and (10) __________ sum total, supposedly, represents one's life potential. Based on this theory, astrologers believe that one can chart the course of their life. They also feel that, even (11) __________ everything in life is mapped out, one can still control one's destiny. A good astrologer's job is to assist an individual (12) __________ recognising which aspects of their lives (13) __________ prove troublesome and what action to take in order to avoid problems which could arise (14) __________ a weak energy field. At the same time, they can also give one advice on how to exploit strong energy fields so (15) __________ to achieve happiness and prosperity in life.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test8-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test8-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "BY",
+                  "by"
+                ]
+              ],
+              "correctAnswer": "BY",
+              "explanation": "Đáp án đề xuất: BY. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BY",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "INTO",
+                  "into"
+                ]
+              ],
+              "correctAnswer": "INTO",
+              "explanation": "Đáp án đề xuất: INTO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "INTO",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "CAN",
+                  "can"
+                ]
+              ],
+              "correctAnswer": "CAN",
+              "explanation": "Đáp án đề xuất: CAN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "CAN",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "WHICH",
+                  "which"
+                ]
+              ],
+              "correctAnswer": "WHICH",
+              "explanation": "Đáp án đề xuất: WHICH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHICH",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "HAS",
+                  "has"
+                ]
+              ],
+              "correctAnswer": "HAS",
+              "explanation": "Đáp án đề xuất: HAS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "HAS",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "EACH",
+                  "each"
+                ]
+              ],
+              "correctAnswer": "EACH",
+              "explanation": "Đáp án đề xuất: EACH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "EACH",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "OF",
+                  "of"
+                ]
+              ],
+              "correctAnswer": "OF",
+              "explanation": "Đáp án đề xuất: OF. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "OF",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "OR",
+                  "or"
+                ]
+              ],
+              "correctAnswer": "OR",
+              "explanation": "Đáp án đề xuất: OR. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "OR",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "IS",
+                  "is"
+                ]
+              ],
+              "correctAnswer": "IS",
+              "explanation": "Đáp án đề xuất: IS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IS",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "THE",
+                  "the"
+                ]
+              ],
+              "correctAnswer": "THE",
+              "explanation": "Đáp án đề xuất: THE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THE",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "THOUGH",
+                  "though"
+                ]
+              ],
+              "correctAnswer": "THOUGH",
+              "explanation": "Đáp án đề xuất: THOUGH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THOUGH",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "IN",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "IN",
+              "explanation": "Đáp án đề xuất: IN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IN",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "MAY",
+                  "may"
+                ]
+              ],
+              "correctAnswer": "MAY",
+              "explanation": "Đáp án đề xuất: MAY. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "MAY",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "DUE",
+                  "due"
+                ]
+              ],
+              "correctAnswer": "DUE",
+              "explanation": "Đáp án đề xuất: DUE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "DUE",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "AS",
+                  "as"
+                ]
+              ],
+              "correctAnswer": "AS",
+              "explanation": "Đáp án đề xuất: AS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "AS",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test8-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Horse Power</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>CAPITAL LETTERS on the separate answer sheet. -</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>At the close of the second century AD, (0) Manned | horses used in MAN</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>warfare had become a fighting force to be truly reckoned with. Although the</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Romans themselves showed little prowess as horsemen, cavalry accounted</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>for almost one fifth of the forces that became embroiled in battle.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Due to the Romans’ (16) .........::cssseeeesees in this type of fighting, it was left EXPERIENCE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>to their allies and the civilians of their colonies to form these very</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>lethal (17) ....cccceseecscesrensee forces. Although there were instances of mixed infantry DEFEND</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>and cavalry, most cohorts consisted (18) ......:.ccessceee of mounted archers. SOLE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>These highly skilled bowmen were adept at presenting a deadly screen behind</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>which the infantry could assemble into (19)... in preparation for FORM</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>attack. The most famous of these equestrian (20) .......ssseeenes was the regiment DIVIDE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>of North Africa. Until the end of the fourth century, little (21) ......:ccsseeecereees was EQUIP</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>used by the cavalry. There are historical accounts which write of four-pronged</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>saddles being (22) «0... and the existence of bits and spurs. It was UTILITY</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>at the dawn of the fifth century that, for the first time in history, the saddle was used</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>in combination with stirrups. Some contemporary Military (23) 0... cite TACTIC</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>this innovative Coupling aS ONE SO (24) cesses in regard to warfare that SIGNIFY</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>it WENt (25) o...s eee eeeneeeereeeee until the invention of the modern-day tank. SURPASS</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test8-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test8-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: EXPERIENCE]:",
+              "acceptedAnswers": [
+                [
+                  "INEXPERIENCE",
+                  "inexperience"
+                ]
+              ],
+              "correctAnswer": "INEXPERIENCE",
+              "explanation": "Đáp án đề xuất: INEXPERIENCE. Từ gốc 'EXPERIENCE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "INEXPERIENCE",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "EXPERIENCE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: DEFEND]:",
+              "acceptedAnswers": [
+                [
+                  "DEFENSIVE",
+                  "defensive"
+                ]
+              ],
+              "correctAnswer": "DEFENSIVE",
+              "explanation": "Đáp án đề xuất: DEFENSIVE. Từ gốc 'DEFEND' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DEFENSIVE",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "DEFEND",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: SOLE]:",
+              "acceptedAnswers": [
+                [
+                  "SOLELY",
+                  "solely"
+                ]
+              ],
+              "correctAnswer": "SOLELY",
+              "explanation": "Đáp án đề xuất: SOLELY. Từ gốc 'SOLE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "SOLELY",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "SOLE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: FORM]:",
+              "acceptedAnswers": [
+                [
+                  "FORMATION",
+                  "formation"
+                ]
+              ],
+              "correctAnswer": "FORMATION",
+              "explanation": "Đáp án đề xuất: FORMATION. Từ gốc 'FORM' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "FORMATION",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "FORM",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: DIVIDE]:",
+              "acceptedAnswers": [
+                [
+                  "DIVISIONS",
+                  "divisions"
+                ]
+              ],
+              "correctAnswer": "DIVISIONS",
+              "explanation": "Đáp án đề xuất: DIVISIONS. Từ gốc 'DIVIDE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DIVISIONS",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "DIVIDE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: EQUIP]:",
+              "acceptedAnswers": [
+                [
+                  "EQUIPMENT",
+                  "equipment"
+                ]
+              ],
+              "correctAnswer": "EQUIPMENT",
+              "explanation": "Đáp án đề xuất: EQUIPMENT. Từ gốc 'EQUIP' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EQUIPMENT",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "EQUIP",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: UTILITY]:",
+              "acceptedAnswers": [
+                [
+                  "UTILISED",
+                  "utilised"
+                ]
+              ],
+              "correctAnswer": "UTILISED",
+              "explanation": "Đáp án đề xuất: UTILISED. Từ gốc 'UTILITY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "UTILISED",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "UTILITY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: TACTIC]:",
+              "acceptedAnswers": [
+                [
+                  "TACTICIANS",
+                  "tacticians"
+                ]
+              ],
+              "correctAnswer": "TACTICIANS",
+              "explanation": "Đáp án đề xuất: TACTICIANS. Từ gốc 'TACTIC' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "TACTICIANS",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "TACTIC",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: SIGNIFY]:",
+              "acceptedAnswers": [
+                [
+                  "SIGNIFICANT",
+                  "significant"
+                ]
+              ],
+              "correctAnswer": "SIGNIFICANT",
+              "explanation": "Đáp án đề xuất: SIGNIFICANT. Từ gốc 'SIGNIFY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "SIGNIFICANT",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "SIGNIFY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: SURPASS]:",
+              "acceptedAnswers": [
+                [
+                  "UNSURPASSED",
+                  "unsurpassed"
+                ]
+              ],
+              "correctAnswer": "UNSURPASSED",
+              "explanation": "Đáp án đề xuất: UNSURPASSED. Từ gốc 'SURPASS' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "UNSURPASSED",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "SURPASS",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test8-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Caught Napping</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Part 3</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Entry Tesi 8</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>For questions 26-37, read the two texts below and decide which answer (A, B, C or D) best fits each gap.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Sleep, according to the Bard, “knits up</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the ravelled sleeve of care,” but not, it</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>seems for narcoleptics. Narcolepsy is</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the (26) ws tO fall asleep any time</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>anywhere. First 2D) concn! 120 years</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>ago, it often goes undiagnosed, its</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>26 A trend</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>27 ~=A located</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>28 A sufferers</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>29 A dwellers</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>30 A comprise</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>31 A desist</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(28) senesseseeeee labelled “lazy”. The</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>condition is debilitating and</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>surprisingly | common, affecting</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>approximately one in 1,000</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(29) «nesses Of the western world.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The three main</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>narcolepsy are all expressions of REM</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(rapid eye movement) sleep. They</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(30) ssssssooenee Cateplexy, a sudden loss</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>of voluntary muscle control, common</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>symptoms of</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>B_ propensity C_ inclination</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>B_ invented C notified</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>B_ subjects C practitioners</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>B_ inhabitants C_ residents</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>B compose C_ consist</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>B_ detect C. detract</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>drowsiness.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>narcoleptics are insomniacs and (31)</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>smansese little or no refreshment from</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>sleep.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>to 60% of narcoleptics; sleep paralysis,</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>which generally occurs on waking</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>or falling asleep; and excessive</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>sleepiness throughout the day, with</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>frequent naps and a struggle against</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Paradoxically,</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>vuvuo0o 09g</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>many</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>mode</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>identified</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>patients</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>occupants</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>contain</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>derive</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>32</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>33</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>34</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>35</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>36</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>37</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>>>> DDD</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>ould you relish the opportunity to</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>join a growing company at the</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Cutting (32) ssrccrssee of the</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>pharmaceutical and biotechnology</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>industries Do you already command a</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>high (33) ......0.. Of credibility in the</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>industry Can you proactively use your</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>B49) sctasesvcsney of project management</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>know-how and leadership skills to manage</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>teams and to take (35) cases of a variety</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>of consulting projects Are you ready to</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>build and provide quality thought leadership</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Do you enjoy (36) ssrersoeee out the best in</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>colleagues with well chosen advice and</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>sensitive mentoring Do you have superb</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>presentation and communication skills Are</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>you ready to make a positive (37) s-..esssen on</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the future of our expanding operations</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>throughout the whole industry</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>side B_ edge</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>rate B_ scope</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>hand B grip</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>charge B_ responsibility</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>geiting B finding</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>impression B_ impact</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Cc rim D_ blade</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>C amount D degree</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>C grasp D hold</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Cc lead D credit</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>C_ taking D_ bringing</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>C_ contribution D effort</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>63</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test8-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test8-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - propensity. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "propensity",
+              "category": "cpe_part_1",
+              "options": [
+                "A. trend",
+                "B. propensity",
+                "C. inclination",
+                "D. mode"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - identified. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "identified",
+              "category": "cpe_part_1",
+              "options": [
+                "A. located",
+                "B. invented",
+                "C. notified",
+                "D. identified"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - sufferers. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "sufferers",
+              "category": "cpe_part_1",
+              "options": [
+                "A. sufferers",
+                "B. subjects",
+                "C. practitioners",
+                "D. patients"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - inhabitants. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "inhabitants",
+              "category": "cpe_part_1",
+              "options": [
+                "A. dwellers",
+                "B. inhabitants",
+                "C. residents",
+                "D. occupants"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - comprise. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "comprise",
+              "category": "cpe_part_1",
+              "options": [
+                "A. comprise",
+                "B. compose",
+                "C. consist",
+                "D. contain"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - derive. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "derive",
+              "category": "cpe_part_1",
+              "options": [
+                "A. desist",
+                "B. detect",
+                "C. detract",
+                "D. derive"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - edge. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "edge",
+              "category": "cpe_part_1",
+              "options": [
+                "A. side",
+                "B. edge",
+                "C. rim",
+                "D. blade"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - degree. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "degree",
+              "category": "cpe_part_1",
+              "options": [
+                "A. rate",
+                "B. scope",
+                "C. amount",
+                "D. degree"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - grasp. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "grasp",
+              "category": "cpe_part_1",
+              "options": [
+                "A. hand",
+                "B. grip",
+                "C. grasp",
+                "D. hold"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - charge. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "charge",
+              "category": "cpe_part_1",
+              "options": [
+                "A. charge",
+                "B. responsibility",
+                "C. lead",
+                "D. credit"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - bringing. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "bringing",
+              "category": "cpe_part_1",
+              "options": [
+                "A. getting",
+                "B. finding",
+                "C. taking",
+                "D. bringing"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - impact. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "impact",
+              "category": "cpe_part_1",
+              "options": [
+                "A. impression",
+                "B. impact",
+                "C. contribution",
+                "D. effort"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test8-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Give that Bird a Mouse</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Arthur's workspace is pretty much like the others around him. He has his own computer, his own chair and his own stash of goodies. Still, his behaviour isn't quite what you'd expect in the rarefied intellectual atmosphere of the MIT Media Lab. He has a habit of dropping chunks of chewed vegetable on the floor, and he sometimes attacks visitors. But Arthur has an excuse - he has a mental age of about four. Oh, and he's a parrot.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Arthur's owner, a biologist, is trying to build a Web browser for parrots. She believes that, by teaching Arthur to use the Internet, she could liberate thousands of captured parrots from a life of boredom and loneliness. It could also reveal something about parrot behaviour and cognition. And once the birds are online, the same will be done for dogs.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>It is probable that Alex's skills are proof that African greys are at least as intelligent as chimps and dolphins and may even be able to outwit four-year-old children at certain tasks. This intelligence is one reason they make good pets. The other is their sociability. In the wild, parrots live in flocks and become extremely anxious if they are separated from the rest. Captive birds constantly crave attention.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>These really are intelligent birds. If they are forced to sit in their cages for nine or ten hours a day with the same old toys, they get bored. At best, an under-stimulated parrot will become withdrawn and start plucking out its feathers. At worst, its relationship with its owner can deteriorate to the point of conflict.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>At the moment, Arthur's browser consists of a box with two clickable levers. The left lever picks a set of images, the right lever lets him choose his favourite. The images are displayed on a liquid crystal screen above his perch.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Unfortunately, Arthur doesn't yet seem to be enthusiastic about it. The images were designed to produce instant responses: a woman ought to be a favourite (it's his owner), while the wild cat - a natural enemy - should be an instant dislike. The car is supposed to be neutral, while the pictures should elicit different responses depending on Arthur's mood. The trouble is, the pictures seem to be a failure to Arthur - he's not especially moved by them.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>That's why his owner is planning to install a second one in her parents' home, where her other parrots are living at the moment. The plan is to feed the image to Arthur's browser so he can contact his old friend and even be able to video conference then.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>And what would be on these parrots' mind? Video-on-demand, perhaps. Sound booths, jukeboxes and basic web pages could all appeal. If parrots like it and owners want it, service providers should take note: parrots could be really heavy users.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test8-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test8-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Chọn đoạn F. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "It's not that unusual to see animals in the Media Lab. After all, lots of researchers bring their dogs. But Arthur is there to work. Every day his supervisor gives him a specially designed clicker. One click changes the image on his computer screen from a car to an owl. A second changes it again, to an image of a woman. A third conjures up a picture of an African grey parrot, the same species as Arthur. A fourth brings back the car. And if you think that sounds a bit like browsing, you'd be right. Arthur is learning to surf the Web.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn đoạn C. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The interPet project is a natural extension of existing work with African greys. They are among the most intelligent and communicative members of the parrot family, and one of these birds, Alex, has been taught to communicate using spoken language. Alex is now 23 and can recognise and name around fifty objects, identify seven colours and five shapes, count up to six and understand the concepts \"same\", \"different\", \"bigger\" and \"smaller\".",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "But the very characteristics that make parrots better pets than, say, sparrows, also make them hugely demanding. Brainy, friendly pets need company and stimulation. Take those away - by going to work nine hours a day, for instance - and you get a bored and lonely animal.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "That's why Arthur's owner is so keen to get him online. Although he's her pet, she can't take him home because her flatmate has a cat. Poor Arthur has to spend his nights alone in a cage in the lab, and he needs something to do. The Web would be infinitely more interesting than a ball with a bell in it. Toys are okay, but these birds need to be social.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Chọn đoạn E. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Arthur won't look at a conventional cathode ray tube because to him it looks like a strobe light. Parrots' flicker fusion rate - the frequency at which their eyes convert a series of still images into a continuous motion picture - is much higher than that of humans.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "It is possible that the static images being used at present don't provide enough stimulation. After all, in the wild, parrots would not interact with inert objects such as trees in the same way as they would with other parrots. A great deal more work is being done to discover the types of images which appeal to the average parrot.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "If that works, then it's a short step to setting up chat rooms where parrots can socialise with one another in cyberspace. Eventually, there may be special parrot pages on the Web. They would have to be ring-fenced to keep the birds hooked up to interesting sites, but child-safety software like Net Nanny suggests this would be easy.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "That's why Arthur's owner is so keen to get him online. Although he's her pet, she can't take him home because her flatmate has a cat. Poor Arthur has to spend his nights alone in a cage in the lab, and he needs something to do. The Web would be infinitely more interesting than a ball with a bell in it. Toys are okay, but these birds need to be social."
+            },
+            {
+              "label": "B",
+              "text": "If that works, then it's a short step to setting up chat rooms where parrots can socialise with one another in cyberspace. Eventually, there may be special parrot pages on the Web. They would have to be ring-fenced to keep the birds hooked up to interesting sites, but child-safety software like Net Nanny suggests this would be easy."
+            },
+            {
+              "label": "C",
+              "text": "The interPet project is a natural extension of existing work with African greys. They are among the most intelligent and communicative members of the parrot family, and one of these birds, Alex, has been taught to communicate using spoken language. Alex is now 23 and can recognise and name around fifty objects, identify seven colours and five shapes, count up to six and understand the concepts \"same\", \"different\", \"bigger\" and \"smaller\"."
+            },
+            {
+              "label": "D",
+              "text": "It is possible that the static images being used at present don't provide enough stimulation. After all, in the wild, parrots would not interact with inert objects such as trees in the same way as they would with other parrots. A great deal more work is being done to discover the types of images which appeal to the average parrot."
+            },
+            {
+              "label": "E",
+              "text": "Arthur won't look at a conventional cathode ray tube because to him it looks like a strobe light. Parrots' flicker fusion rate - the frequency at which their eyes convert a series of still images into a continuous motion picture - is much higher than that of humans."
+            },
+            {
+              "label": "F",
+              "text": "It's not that unusual to see animals in the Media Lab. After all, lots of researchers bring their dogs. But Arthur is there to work. Every day his supervisor gives him a specially designed clicker. One click changes the image on his computer screen from a car to an owl. A second changes it again, to an image of a woman. A third conjures up a picture of an African grey parrot, the same species as Arthur. A fourth brings back the car. And if you think that sounds a bit like browsing, you'd be right. Arthur is learning to surf the Web."
+            },
+            {
+              "label": "G",
+              "text": "But some simple modifications will probably win Arthur over. For one thing, at the moment, his gear is right in the middle of a busy, interesting lab. Perhaps his gear should be put into his cage so he could explore it when he's bored and lonely. The system also needs a general upgrade. The software doesn't interest him, and the ergonomics of the clicker are still not right. He should want to play with it more and enjoy it and more images need to be found that he will like."
+            },
+            {
+              "label": "H",
+              "text": "But the very characteristics that make parrots better pets than, say, sparrows, also make them hugely demanding. Brainy, friendly pets need company and stimulation. Take those away - by going to work nine hours a day, for instance - and you get a bored and lonely animal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test8-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an article from a travel magazine. For questions 45-50, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the eighties, the CBC introduced into their children’s lineup of programmes a show entitled “Fraggle Rock.” From among the multitude of muppet-like characters that made up this show, “The Intrepid Traveller’ always seemed the most endearing to my mind. One’s impression of this brave world-wanderer was shaped by details begotten through means of letters that the globe- trotting character sent to his beloved nephew back in the village of Fraggle Rock. These impatiently-waited-for missives, told exciting tales of faraway places and mysterious cultures. As a grown-up, I’ve often pondered the question of how much the format of the show would have had to be altered if his memorable creature had been named the intrepid tourist instead of the aforementioned intrepid traveller.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In my opinion, the name intrepid tourist is actually oxymoronic. It seems difficult, when envisioning a tourist sprawled on a sunlounger, to imagine them having to face anything more dangerous -than the sun’s rays. To further elucidate, one need only consider a visitor to the typical, ephemerally popular tourist spots of the world. The only ‘unknown’ these people might risk encountering would be a new type of cocktail sipped beside a palm-tree-encircled pool. Herein lies the essence of what separates the traveller from the tourist. A traveller goes abroad and deliberately searches out new experiences and cultures. A tourist, on the other hand, leaves home in hopes of not having to deal with anything more foreign than place names in a tour guide or headlines in a local newspaper.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>At this point, allow me to set the record straight by saying that I am not speaking disparagingly about those people who choose to vacation in your ‘Club Med’ type of resort. All I humbly ask is that they openly and honestly admit to themselves and others that they are tourists. What I find truly irksome are those people who frequent these ‘get-away from it all’ type of holiday spots and blithely claim that they are travellers. Only recently, a neighbour armed with his polaroids and still wearing his very loud luau shirt, straight-facedly informed me that he had just returned from Hawaii, where he had had the opportunity to mix and mingle with a totally alien culture. At first sight, his flowery apparel had succeeded in getting my dander up. However, I had bitten my</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>tongue and bore his facetious soliloquy in resigned, silent inattentiveness. Inside, though, I was boiling. I couldn’t help wondering about the question: where in Hawaii or Tenerife, or the Bahamas, or any of the other numerous countries known for their tourist trade, would one have the opportunity to encounter a new culture?</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Such tourist destinations have been set up to screen tourists from both the indigenous peoples and cultures of these locales. Why else would resorts be surrounded by electrified fences but to keep the locals at bay? Of course, these holidaymakers enjoy the false sense of adventure provided by boarding a plane and flying to an unknown destination. In addition, they positively bask in the prestige it brings them from the envious Joneses next door, but they still want to have access to all the comforts and safety of home while they are away.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The tourist industry makes millions every year. A huge percentage of these companies’ profits goes into market research on what holidaymakers want out of their well-deserved two week hiatuses. Out of the way, off the beaten track areas of the world are marketably taboo. Suggestions for visiting such destinations, made by well-meaning, soon-to-be-fired travel agents, are met with borderline shocked exclamations of, “Where\" Nooo! Oh really, how would we manage? Those people don't even speak English.” Or cries of “What ever would we eat?”</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>It is of vested interest to those in the travel industry to establish resort areas which have three essential elements. Firstly, they mustn’t be too far a plane ride from home. Secondly, they must be able to offer the food and entertainments that these people have grown accustomed to in their everyday lives. Lastly, the resort must be in a paradise-like setting which is close enough to the locals for viewing purposes, but not so close as to require having to intermingle with these denizens.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The intrepid traveller of ‘Fraggle Rock’ fame, on the other hand, likes his travel experience to be a bit more enriched. The purpose of his many varied walk-abouts was to sample, enjoy and learn about a place and its people. Perhaps the intrepid traveller is still dear to me because of his ability to face the unknown in such an unbiased, enthusiastic manner, even though he was only four inches tall and stuffed with cotton wool!</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test8-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test8-45",
+              "type": "multiple_choice",
+              "instruction": "For the writer, the series ‘Fraggie Rock’",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - helped shape his feelings about what travelling should be about.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "helped shape his feelings about what travelling should be about.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. foresaw the advent of mass tourism.",
+                "B. did not make enough of the character he most liked.",
+                "C. helped shape his feelings about what travelling should be about.",
+                "D. lacked impact because of the way adventures were related."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-46",
+              "type": "multiple_choice",
+              "instruction": "According to the writer, the biggest challenge for modern tourists is",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - dealing with potential sunburn.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "dealing with potential sunburn.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. mastering foreign languages.",
+                "B. coping with foreign food and drink.",
+                "C. adapting to foreign cultures.",
+                "D. dealing with potential sunburn."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-47",
+              "type": "multiple_choice",
+              "instruction": "The writer’s reaction to his neighbour's description of his holiday was to",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - keep his feelings to himself... Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "keep his feelings to himself..",
+              "category": "cpe_part_5",
+              "options": [
+                "A. show he didn’t believe him.",
+                "B. make it clear he wasn’t listening.",
+                "C. mock his neighbour's naivety.",
+                "D. keep his feelings to himself."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-48",
+              "type": "multiple_choice",
+              "instruction": "According to the passage, what tourists like best about their holidays is",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - doing routine things in a different environment.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "doing routine things in a different environment.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. making their neighbours jealous.",
+                "B. doing something different from normal.",
+                "C. doing routine things in a different environment.",
+                "D. the extra level of comfort they can enjoy."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-49",
+              "type": "multiple_choice",
+              "instruction": "Tourist agencies, in providing holidays, mainly have to consider people's",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - fear of isolated holiday destinations.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "fear of isolated holiday destinations.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. fear of isolated holiday destinations.",
+                "B. anxiety over the financial cost of their holiday.",
+                "C. fear of being unable to make themselves understood.",
+                "D. anxiety over the possibility of getting food poisoning."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test8-50",
+              "type": "multiple_choice",
+              "instruction": "The writer’s main complaint about tourists is",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - that they have no sense of adventure.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "that they have no sense of adventure.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. that they brag about their holidays.",
+                "B. that they ignore the cultural experience being offered to them.",
+                "C. that they are insensitive to locals.",
+                "D. that they have no sense of adventure."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

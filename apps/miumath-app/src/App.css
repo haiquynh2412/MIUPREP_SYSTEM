@@ -1,0 +1,130 @@
+/* Core layout styles */
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Card animations */
+.card {
+  transition: all 0.3s ease;
+}
+
+/* Hover transitions */
+button:hover {
+  filter: brightness(1.05);
+}
+
+textarea:focus, input:focus {
+  border-color: #10b981 !important;
+  background-color: #ffffff !important;
+}
+
+/* Mobile & Tablet Optimizations (Responsive Design) */
+@media (max-width: 900px) {
+  /* Let columns stack naturally on tablets & mobiles */
+  .App main > div {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  /* Place Mascot & Sidebar below the main workspace so it doesn't block the question view */
+  .App main aside {
+    order: 2 !important;
+    position: static !important;
+    min-height: auto !important;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Wrap header container into a beautiful column layout */
+  header .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 14px 10px !important;
+  }
+
+  /* Make header buttons and selector wrap nicely and center aligned */
+  header .container > div {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  /* Compact button padding and typography in header to prevent screen clutter */
+  header .btn, header select {
+    font-size: 0.78rem !important;
+    padding: 6px 12px !important;
+    height: 32px !important;
+    border-radius: 16px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Stack any inline 2-column grids (like the Exam layout: left question, right answer sheets) */
+  .App main div[style*="display: grid"],
+  .App main div[style*="display:grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Adjust exam answers sheet container grid column sizes on smaller mobile screens */
+  .App main div[style*="gridTemplateColumns: 'repeat(5, 1fr)'"],
+  .App main div[style*="grid-template-columns: repeat(5, 1fr)"] {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+  
+  /* Quick statistics board grid column layouts stacking */
+  .App main div[style*="gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))'"],
+  .App main div[style*="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Reduce container padding on small phones to maximize active screen real-estate */
+  .container {
+    padding: 8px !important;
+  }
+
+  /* Make cards padding tighter so formula text has more horizontal room */
+  .card {
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+
+  /* Mobile compact buttons */
+  .btn {
+    padding: 8px 14px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Compact headings sizes on mobile */
+  h1 {
+    font-size: 1.2rem !important;
+  }
+  h2 {
+    font-size: 1.1rem !important;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+  
+  /* Digital Draft Pad compact styling */
+  textarea, input.math-input {
+    font-size: 0.9rem !important;
+    padding: 10px 12px !important;
+  }
+  
+  /* Adjust custom KaTeX inline elements scrollbar */
+  .katex-display {
+    padding: 8px !important;
+    margin: 0.6em 0 !important;
+  }
+}

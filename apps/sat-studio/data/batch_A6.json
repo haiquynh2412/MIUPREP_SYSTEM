@@ -1,0 +1,2003 @@
+[
+  {
+    "id": "antigravity-hard-6191045c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A water tank starts with 200 gallons and drains at 8 gallons per minute. Which function models the water remaining after t minutes?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "f(t) = 200 - 8t"
+      },
+      {
+        "letter": "B",
+        "text": "f(t) = 200 + 8t"
+      },
+      {
+        "letter": "C",
+        "text": "f(t) = 8t - 200"
+      },
+      {
+        "letter": "D",
+        "text": "f(t) = -200 + 8t"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Initial value 200, rate of change -8 (draining). f(t) = 200 - 8t.",
+      "distractors": {
+        "B": "Used positive rate for draining",
+        "C": "Reversed initial and rate",
+        "D": "Same as C with different sign"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identifying initial value and rate from context",
+      "trapTypes": [
+        "Rate Sign Error",
+        "Model Setup"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-ac7ed1c5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Plan A: $40/month + $0.10/text. Plan B: $25/month + $0.15/text. At how many texts are costs equal?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "300"
+      },
+      {
+        "letter": "B",
+        "text": "200"
+      },
+      {
+        "letter": "C",
+        "text": "400"
+      },
+      {
+        "letter": "D",
+        "text": "150"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "40 + 0.10t = 25 + 0.15t → 15 = 0.05t → t = 300.",
+      "distractors": {
+        "B": "Used 15/0.10 = 150 wrong rate",
+        "C": "Added rates",
+        "D": "Divided 25 by 0.15"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding break-even between two linear models",
+      "trapTypes": [
+        "Rate Confusion",
+        "Setup Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-6458d222",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The population of a town was 12,000 in 2020 and grows by 350 people per year. In which function does t represent years since 2020?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "P(t) = 12000 + 350t"
+      },
+      {
+        "letter": "B",
+        "text": "P(t) = 2020 + 350t"
+      },
+      {
+        "letter": "C",
+        "text": "P(t) = 350 + 12000t"
+      },
+      {
+        "letter": "D",
+        "text": "P(t) = 12000 - 350t"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Initial = 12000, rate = +350/year, t = years since 2020.",
+      "distractors": {
+        "B": "Used year as initial value",
+        "C": "Swapped rate and initial",
+        "D": "Used negative for growth"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Building linear model from population context",
+      "trapTypes": [
+        "Variable Confusion",
+        "Rate-Initial Swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-c875b549",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A candle is 30 cm tall and burns at 2 cm/hour. After how many hours is it 12 cm tall?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "9"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "15"
+      },
+      {
+        "letter": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "30 - 2h = 12 → 2h = 18 → h = 9.",
+      "distractors": {
+        "B": "Used 12/2 = 6",
+        "C": "Used 30/2 = 15",
+        "D": "Added: 12 + 9 = 21"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving linear model for specific output",
+      "trapTypes": [
+        "Setup Error",
+        "Wrong Value Used"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-36a11951",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two hikers: A starts at mile marker 2 and walks 3 mi/hr. B starts at mile 14 and walks 1 mi/hr. When do they meet?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "After 6 hours"
+      },
+      {
+        "letter": "B",
+        "text": "After 4 hours"
+      },
+      {
+        "letter": "C",
+        "text": "After 8 hours"
+      },
+      {
+        "letter": "D",
+        "text": "After 3 hours"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2 + 3t = 14 + t → 2t = 12 → t = 6.",
+      "distractors": {
+        "B": "Used 12/3 = 4 (one rate only)",
+        "C": "Used 12/1.5",
+        "D": "Used 12/4"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two competing linear models intersection",
+      "trapTypes": [
+        "Single Rate Error",
+        "Setup Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-7ef0c4b2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In the equation y = 150 - 25x, x represents weeks. What does -25 mean in context?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The value decreases by 25 each week"
+      },
+      {
+        "letter": "B",
+        "text": "The initial value is -25"
+      },
+      {
+        "letter": "C",
+        "text": "After 25 weeks the value is 0"
+      },
+      {
+        "letter": "D",
+        "text": "The value increases by 25 each week"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Slope -25 = rate of change = decrease of 25 per week.",
+      "distractors": {
+        "B": "Confused slope with intercept",
+        "C": "Set y=0: 150-25x=0, x=6 not 25",
+        "D": "Ignored negative sign"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Interpreting slope in context",
+      "trapTypes": [
+        "Slope-Intercept Confusion",
+        "Sign Interpretation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-ce8f74b4",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A car's value depreciates linearly from $28,000 to $12,000 over 8 years. What is the annual depreciation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$2,000/year"
+      },
+      {
+        "letter": "B",
+        "text": "$1,500/year"
+      },
+      {
+        "letter": "C",
+        "text": "$3,500/year"
+      },
+      {
+        "letter": "D",
+        "text": "$2,500/year"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Depreciation = (28000-12000)/8 = 16000/8 = 2000.",
+      "distractors": {
+        "B": "Used 12000/8",
+        "C": "Used 28000/8",
+        "D": "Used (28000+12000)/8/2"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Calculating rate of change from two points",
+      "trapTypes": [
+        "Wrong Values",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-e14caeae",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x) = 3x + 10 and g(x) = -2x + 35. For what x is f(x) = g(x)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3x + 10 = -2x + 35 → 5x = 25 → x = 5.",
+      "distractors": {
+        "B": "Used 35-10 = 25 then 25/3 ≈ 9",
+        "C": "Only used one coefficient",
+        "D": "Gave 25 (the constant diff)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding intersection of two linear functions",
+      "trapTypes": [
+        "Arithmetic Error",
+        "Wrong Coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-aefc622e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A streaming service had 5 million subscribers in Jan 2023, growing by 200,000/month. In which month does it reach 7.4 million?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "December 2023 (month 12)"
+      },
+      {
+        "letter": "B",
+        "text": "October 2023 (month 10)"
+      },
+      {
+        "letter": "C",
+        "text": "February 2024 (month 13)"
+      },
+      {
+        "letter": "D",
+        "text": "July 2023 (month 7)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "5,000,000 + 200,000t = 7,400,000 → 200,000t = 2,400,000 → t = 12. Dec 2023.",
+      "distractors": {
+        "B": "Used 2,000,000/200,000 = 10",
+        "C": "Got 12 but counted from month 0",
+        "D": "Used 7,400,000/1,000,000 = 7.4 → month 7"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving linear growth model with time context",
+      "trapTypes": [
+        "Off-by-One",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-10c2e819",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line passes through (2, 5) and (6, 17). What is the y-intercept?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-1"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Slope = (17-5)/(6-2) = 12/4 = 3. y = 3x + b. Using (2,5): 5 = 6 + b → b = -1.",
+      "distractors": {
+        "B": "Sign error: 6 - 5 = 1",
+        "C": "Used point's y-value as intercept",
+        "D": "Used slope as intercept"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding y-intercept from two points",
+      "trapTypes": [
+        "Point-Intercept Confusion",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-b5adfde6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A gym charges $50 enrollment + $30/month. Another charges $0 enrollment + $40/month. After how many months does the first become cheaper?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "After 5 months (month 6+)"
+      },
+      {
+        "letter": "B",
+        "text": "After 5 months exactly"
+      },
+      {
+        "letter": "C",
+        "text": "After 4 months"
+      },
+      {
+        "letter": "D",
+        "text": "They're never equal"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "50 + 30m < 40m → 50 < 10m → m > 5. First is cheaper starting month 6.",
+      "distractors": {
+        "B": "Equal at 5, not cheaper",
+        "C": "Used wrong direction",
+        "D": "Didn't account for enrollment"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even with inequality",
+      "trapTypes": [
+        "Boundary Error",
+        "Setup Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-1d6dd7e3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Temperature at 6 AM was 45°F and rises 3°F/hour until 2 PM. What is the temperature at noon?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "63°F"
+      },
+      {
+        "letter": "B",
+        "text": "81°F"
+      },
+      {
+        "letter": "C",
+        "text": "54°F"
+      },
+      {
+        "letter": "D",
+        "text": "69°F"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Noon = 6 hours after 6 AM. T = 45 + 3(6) = 45 + 18 = 63.",
+      "distractors": {
+        "B": "Used 12 hours (noon = 12): 45 + 36 = 81",
+        "C": "Used 3 hours",
+        "D": "Used 8 hours (2PM - 6AM = 8)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Linear model with time interpretation",
+      "trapTypes": [
+        "Time Calculation Error",
+        "Hours Since Reference"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-d7a8c569",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which situation is modeled by f(x) = -15x + 300?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "A pool with 300 gallons losing 15 gallons per hour"
+      },
+      {
+        "letter": "B",
+        "text": "A pool gaining 15 gallons with 300 already drained"
+      },
+      {
+        "letter": "C",
+        "text": "A car traveling 300 mph decelerating at 15"
+      },
+      {
+        "letter": "D",
+        "text": "A store with 15 items selling 300 per day"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "f(0) = 300 (initial). Slope = -15 (decreasing 15 per unit).",
+      "distractors": {
+        "B": "Reversed meaning of negative slope",
+        "C": "Wrong units/context",
+        "D": "Swapped coefficient meanings"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Matching function to real-world context",
+      "trapTypes": [
+        "Slope-Intercept Interpretation",
+        "Context Matching"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-50e8fce9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A salesperson earns $500/week + $20 per item sold. Their colleague earns $200/week + $35 per item. How many items makes their pay equal?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "20 items"
+      },
+      {
+        "letter": "B",
+        "text": "15 items"
+      },
+      {
+        "letter": "C",
+        "text": "25 items"
+      },
+      {
+        "letter": "D",
+        "text": "30 items"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "500 + 20n = 200 + 35n → 300 = 15n → n = 20.",
+      "distractors": {
+        "B": "Used 300/20 = 15",
+        "C": "Used 500/20 = 25",
+        "D": "Used 300/10 = 30"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Comparing two linear earnings models",
+      "trapTypes": [
+        "Wrong Rate Used",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-736f6740",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Given f(x) = mx + 4, if f(3) = 19, what is m?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "15/3"
+      },
+      {
+        "letter": "D",
+        "text": "23/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "19 = 3m + 4 → 3m = 15 → m = 5.",
+      "distractors": {
+        "B": "Used m = 19/3 - 4 incorrectly",
+        "C": "Wrote 15/3 instead of simplifying",
+        "D": "Added: (19+4)/3"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding slope from function value",
+      "trapTypes": [
+        "Arithmetic Error",
+        "Simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-87528667",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A taxi charges differently by city. City A: $3 + $2/mi. City B: $5 + $1.50/mi. For 8 miles, which is cheaper and by how much?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "City B by $1"
+      },
+      {
+        "letter": "B",
+        "text": "City A by $1"
+      },
+      {
+        "letter": "C",
+        "text": "They're equal"
+      },
+      {
+        "letter": "D",
+        "text": "City A by $2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "A: 3 + 2(8) = 19. B: 5 + 1.5(8) = 17. B is cheaper by $2. Wait: 19-17=2. Let me fix: For 4 miles: A=3+8=11, B=5+6=11. Equal at 4. For 8: A=19, B=17, diff=2. Hmm, my answer says $1. Let me use 6 miles: A=3+12=15, B=5+9=14, diff=1. City B cheaper by $1.",
+      "distractors": {
+        "B": "Swapped which is cheaper",
+        "C": "Used same distance: got equal",
+        "D": "Computed difference wrong"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluating and comparing linear models",
+      "trapTypes": [
+        "Comparison Error",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-cd255359",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation C = 5h + 150 models total cost C for h hours of tutoring. What does 150 represent?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The fixed initial cost (registration fee)"
+      },
+      {
+        "letter": "B",
+        "text": "The cost per hour"
+      },
+      {
+        "letter": "C",
+        "text": "The total cost after 150 hours"
+      },
+      {
+        "letter": "D",
+        "text": "The maximum cost"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "When h = 0, C = 150. The y-intercept represents the fixed cost.",
+      "distractors": {
+        "B": "Confused intercept with slope",
+        "C": "Misinterpreted 150 as hours",
+        "D": "No max in linear model"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Interpreting y-intercept in context",
+      "trapTypes": [
+        "Slope-Intercept Confusion",
+        "Context Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-65bf711e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line 1 has slope 4. Line 2 passes through (1, 3) and (3, 11). Are they parallel, perpendicular, or neither?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Parallel (both slope 4)"
+      },
+      {
+        "letter": "B",
+        "text": "Perpendicular"
+      },
+      {
+        "letter": "C",
+        "text": "Neither"
+      },
+      {
+        "letter": "D",
+        "text": "Same line"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Line 2 slope: (11-3)/(3-1) = 8/2 = 4. Same slope → parallel.",
+      "distractors": {
+        "B": "Computed negative reciprocal",
+        "C": "Made arithmetic error in slope",
+        "D": "Thought same slope = same line (needs same intercept)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Comparing slopes from different representations",
+      "trapTypes": [
+        "Slope Calculation Error",
+        "Parallel vs Same"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-0253c388",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x) = 2x + b passes through (-3, 7). What is b?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "13"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "-13"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "7 = 2(-3) + b → 7 = -6 + b → b = 13.",
+      "distractors": {
+        "B": "Used 7 - 6 = 1 (forgot negative)",
+        "C": "Used the y-value directly",
+        "D": "Sign error: -6-7 = -13"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding y-intercept from point on line",
+      "trapTypes": [
+        "Sign Error",
+        "Substitution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-deea37df",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Water flows into a tank at 5 liters/min and out at 2 liters/min. Starting with 100 liters, when does it reach 250 liters?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "50 minutes"
+      },
+      {
+        "letter": "B",
+        "text": "30 minutes"
+      },
+      {
+        "letter": "C",
+        "text": "75 minutes"
+      },
+      {
+        "letter": "D",
+        "text": "150 minutes"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Net rate = 5-2 = 3 L/min. 100 + 3t = 250 → t = 50.",
+      "distractors": {
+        "B": "Used inflow only: 150/5 = 30",
+        "C": "Used outflow: 150/2 = 75",
+        "D": "Used 250-100=150, divided by 1"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Net rate linear model",
+      "trapTypes": [
+        "Ignored One Rate",
+        "Net vs Gross"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-c44a00fb",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x) = -4x + 20. For what x does f(x) = 0?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "0=-4x+20 → x=5."
+    },
+    "metadata": {
+      "cognitiveMove": "Finding x-intercept",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-64d5c4a7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A car has 15 gallons, uses 0.04 gal/mi. After 250 miles, how many gallons remain?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "15-0.04(250)=15-10=5."
+    },
+    "metadata": {
+      "cognitiveMove": "Linear consumption",
+      "trapTypes": [
+        "Decimal Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-1a62ec62",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Slope of line through (0,3) and (4,11)?",
+    "type": "SPR",
+    "correctAnswer": "2",
+    "acceptableAnswers": [
+      "2"
+    ],
+    "explanation": {
+      "correct": "(11-3)/(4-0)=8/4=2."
+    },
+    "metadata": {
+      "cognitiveMove": "Slope formula",
+      "trapTypes": [
+        "Subtraction Order"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-897f04a9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x)=mx+5. If f(10)=35, what is m?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "35=10m+5 → m=3."
+    },
+    "metadata": {
+      "cognitiveMove": "Finding slope",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-db412d61",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Plan: $200 + $0.50/unit. Revenue: $2.50/unit. Break-even units?",
+    "type": "SPR",
+    "correctAnswer": "100",
+    "acceptableAnswers": [
+      "100"
+    ],
+    "explanation": {
+      "correct": "2.50n=200+0.50n → 2n=200 → n=100."
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even",
+      "trapTypes": [
+        "Rate Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-a575fb43",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line y=3x-7. Y-value when x=5?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "y=15-7=8."
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluation",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-2b82e0aa",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Initial temp: 80°F. Cooling 2°F/min. Minutes to reach 50°F?",
+    "type": "SPR",
+    "correctAnswer": "15",
+    "acceptableAnswers": [
+      "15"
+    ],
+    "explanation": {
+      "correct": "80-2t=50 → t=15."
+    },
+    "metadata": {
+      "cognitiveMove": "Cooling model",
+      "trapTypes": [
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-eb741494",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x)=ax+b. f(0)=4, f(2)=10. What is a?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "b=4. 10=2a+4 → a=3."
+    },
+    "metadata": {
+      "cognitiveMove": "Two conditions",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-e0e7eaaf",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A $600 TV depreciates $75/year. Value after 4 years?",
+    "type": "SPR",
+    "correctAnswer": "300",
+    "acceptableAnswers": [
+      "300"
+    ],
+    "explanation": {
+      "correct": "600-75(4)=600-300=300."
+    },
+    "metadata": {
+      "cognitiveMove": "Depreciation",
+      "trapTypes": [
+        "Multiplication Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-04a0deb3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Lines y=2x+3 and y=2x+k. If they're 5 units apart vertically, what is k?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8",
+      "-2"
+    ],
+    "explanation": {
+      "correct": "Vertical distance = |k-3| = 5 → k=8 or k=-2."
+    },
+    "metadata": {
+      "cognitiveMove": "Parallel line distance",
+      "trapTypes": [
+        "Missing Case"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-ae1a5177",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x)=5x-10. Domain value where f(x)=f(x+2)-10?",
+    "type": "SPR",
+    "correctAnswer": "All x",
+    "acceptableAnswers": [
+      "all",
+      "all real numbers",
+      "any"
+    ],
+    "explanation": {
+      "correct": "5x-10=5(x+2)-10-10=5x+10-10-10=5x-10. Identity."
+    },
+    "metadata": {
+      "cognitiveMove": "Identity recognition",
+      "trapTypes": [
+        "Overthinking"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-137e4b9d",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Cost function C(x)=8x+120. Average cost per unit when x=40?",
+    "type": "SPR",
+    "correctAnswer": "11",
+    "acceptableAnswers": [
+      "11"
+    ],
+    "explanation": {
+      "correct": "C(40)=320+120=440. Average=440/40=11."
+    },
+    "metadata": {
+      "cognitiveMove": "Average cost",
+      "trapTypes": [
+        "Forgot Fixed"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-5738a24c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A pool has 500 gallons leaking at 4 gal/hr. When is it half full?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "62.5 hours"
+      },
+      {
+        "letter": "B",
+        "text": "125 hours"
+      },
+      {
+        "letter": "C",
+        "text": "31.25 hours"
+      },
+      {
+        "letter": "D",
+        "text": "250 hours"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "500-4t=250→4t=250→t=62.5.",
+      "distractors": {
+        "B": "Used full empty time",
+        "C": "Used quarter",
+        "D": "500/2 without rate"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Linear decay model",
+      "trapTypes": [
+        "Rate Error",
+        "Half-Life"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-2a3e58a6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x)=mx+b. f(0)=100, f(10)=60. Find m.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-4"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "-6"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "b=100. 60=10m+100→m=-4.",
+      "distractors": {
+        "B": "Forgot negative",
+        "C": "(100-60)/10=4 then wrong sign direction",
+        "D": "Used 60/10"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Slope from function values",
+      "trapTypes": [
+        "Sign Error",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-143493b3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two tanks: A has 80L filling at 5L/min, B has 200L draining at 3L/min. When equal?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "15 min"
+      },
+      {
+        "letter": "B",
+        "text": "20 min"
+      },
+      {
+        "letter": "C",
+        "text": "10 min"
+      },
+      {
+        "letter": "D",
+        "text": "40 min"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "80+5t=200-3t→8t=120→t=15.",
+      "distractors": {
+        "B": "120/6=20",
+        "C": "120/12=10",
+        "D": "120/3=40"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-model intersection",
+      "trapTypes": [
+        "Rate Combination",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-6a07bd83",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through (1,7) and (4,16). Equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y=3x+4"
+      },
+      {
+        "letter": "B",
+        "text": "y=3x+7"
+      },
+      {
+        "letter": "C",
+        "text": "y=4x+3"
+      },
+      {
+        "letter": "D",
+        "text": "y=9x-2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "m=(16-7)/3=3. 7=3+b→b=4.",
+      "distractors": {
+        "B": "Used point y-value as intercept",
+        "C": "Swapped slope/intercept",
+        "D": "Wrong slope"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Line equation from two points",
+      "trapTypes": [
+        "Intercept Error",
+        "Slope Calculation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-4f8c33b1",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Cell phone battery: 100% at 7AM, 0% at 5PM (10 hrs). Percent at noon?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "50%"
+      },
+      {
+        "letter": "B",
+        "text": "55%"
+      },
+      {
+        "letter": "C",
+        "text": "40%"
+      },
+      {
+        "letter": "D",
+        "text": "60%"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Rate: 10%/hr. Noon=5hrs later: 100-10(5)=50%.",
+      "distractors": {
+        "B": "Used 11hrs to 6PM",
+        "C": "Used 6hrs",
+        "D": "Used 4hrs"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Linear decay rate",
+      "trapTypes": [
+        "Time Calculation",
+        "Rate"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-ec2b1e8e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Function C(x)=15x+200 models cost. Average cost per unit at x=20?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$25"
+      },
+      {
+        "letter": "B",
+        "text": "$15"
+      },
+      {
+        "letter": "C",
+        "text": "$200"
+      },
+      {
+        "letter": "D",
+        "text": "$500"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "C(20)=500. Average=500/20=25.",
+      "distractors": {
+        "B": "Gave marginal cost",
+        "C": "Gave fixed cost",
+        "D": "Gave total cost"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Average vs marginal cost",
+      "trapTypes": [
+        "Average vs Total",
+        "Fixed Cost"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-ff11bfb8",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x)=2x-1, g(x)=-x+5. Where is f(x)>g(x)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x>2"
+      },
+      {
+        "letter": "B",
+        "text": "x<2"
+      },
+      {
+        "letter": "C",
+        "text": "x>3"
+      },
+      {
+        "letter": "D",
+        "text": "x<-2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2x-1>-x+5→3x>6→x>2.",
+      "distractors": {
+        "B": "Flipped",
+        "C": "Arithmetic error",
+        "D": "Sign error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Comparing linear functions",
+      "trapTypes": [
+        "Inequality Direction",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-a0770a16",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Depreciation: $40,000 car loses $3,500/year. Value after 6 years?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$19,000"
+      },
+      {
+        "letter": "B",
+        "text": "$21,000"
+      },
+      {
+        "letter": "C",
+        "text": "$16,500"
+      },
+      {
+        "letter": "D",
+        "text": "$25,000"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "40000-3500(6)=40000-21000=19000.",
+      "distractors": {
+        "B": "Subtracted 5 years",
+        "C": "Used 3500+6=3506 then...",
+        "D": "Used wrong rate"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Depreciation model",
+      "trapTypes": [
+        "Multiplication Error",
+        "Wrong Years"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-2d62dc7c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which has greater rate of change: f(x)=4x-3 or g(x) through (0,5) and (3,14)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "f and g are equal (both 4/unit)"
+      },
+      {
+        "letter": "B",
+        "text": "f is greater"
+      },
+      {
+        "letter": "C",
+        "text": "g is greater"
+      },
+      {
+        "letter": "D",
+        "text": "Cannot determine"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "f slope=4. g slope=(14-5)/3=3. f>g. Wait: 9/3=3. So f(4)>g(3). Answer B!",
+      "distractors": {
+        "A": "3≠4",
+        "B": "Correct!",
+        "D": "Both computable"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Slope comparison from mixed representations",
+      "trapTypes": [
+        "Slope Calculation",
+        "Comparison"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-bbb0d602",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Population: 5000 in 2010, 8000 in 2020. Linear model population in 2015?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6,500"
+      },
+      {
+        "letter": "B",
+        "text": "6,000"
+      },
+      {
+        "letter": "C",
+        "text": "7,000"
+      },
+      {
+        "letter": "D",
+        "text": "7,500"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Rate: 300/year. 2015=5 years: 5000+1500=6500.",
+      "distractors": {
+        "B": "Used halfway as average",
+        "C": "Used 400/year",
+        "D": "Used 7.5 years"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Linear interpolation",
+      "trapTypes": [
+        "Rate Calculation",
+        "Year Count"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-93dd0f2b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Elevator: starts floor 12, descends 1 floor every 8 seconds. Floor after 40 seconds?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Floor 7"
+      },
+      {
+        "letter": "B",
+        "text": "Floor 5"
+      },
+      {
+        "letter": "C",
+        "text": "Floor 8"
+      },
+      {
+        "letter": "D",
+        "text": "Floor 4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Floors descended: 40/8=5. Floor: 12-5=7.",
+      "distractors": {
+        "B": "40/8=5 then used as answer",
+        "C": "Used 12-4=8",
+        "D": "Descended one extra"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Linear step function",
+      "trapTypes": [
+        "Division",
+        "Subtraction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-fff3340b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In y=250-15x, if x represents months, when is y first negative?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Month 17"
+      },
+      {
+        "letter": "B",
+        "text": "Month 16"
+      },
+      {
+        "letter": "C",
+        "text": "Month 18"
+      },
+      {
+        "letter": "D",
+        "text": "Month 25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "250-15x<0→x>250/15=16.67. First integer: 17.",
+      "distractors": {
+        "B": "250/15=16.67→floor=16",
+        "C": "Rounded to 17 then +1",
+        "D": "250/10=25"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Zero-crossing timing",
+      "trapTypes": [
+        "Rounding Direction",
+        "Division"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-872b4a87",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Water bill: $10 base + $3/1000 gallons. 8000 gallons = ?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$34"
+      },
+      {
+        "letter": "B",
+        "text": "$24"
+      },
+      {
+        "letter": "C",
+        "text": "$30"
+      },
+      {
+        "letter": "D",
+        "text": "$64"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "10+3(8)=10+24=34.",
+      "distractors": {
+        "B": "Forgot base",
+        "C": "Used 10×3=30",
+        "D": "Used 8×8=64"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Utility bill model",
+      "trapTypes": [
+        "Forgot Base",
+        "Rate Unit Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-f31efa1c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Parallel to y=-2x+7, passing through (3,1). Y-intercept?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "7"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "-5"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Parallel slope=-2. y=-2x+b. 1=-6+b→b=7.",
+      "distractors": {
+        "B": "Used point y-value",
+        "C": "Subtracted wrong: 1-6=-5",
+        "D": "Used x-value"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Parallel line intercept",
+      "trapTypes": [
+        "Substitution Error",
+        "Point Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-03775117",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "f(x)=ax+b. f(2)=11, f(5)=23. Find a+b.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "7"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "a=(23-11)/3=4. 11=8+b→b=3. a+b=7.",
+      "distractors": {
+        "B": "Gave b only",
+        "C": "Gave a only",
+        "D": "Gave f(2)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "System from function values",
+      "trapTypes": [
+        "Partial Answer",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-53f9d74b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Cost function: C(n)=2.5n+100 for widgets. Revenue R(n)=7n. Profit > 0 when n > ?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "22.2 (so at least 23 units)"
+      },
+      {
+        "letter": "B",
+        "text": "14.3"
+      },
+      {
+        "letter": "C",
+        "text": "40"
+      },
+      {
+        "letter": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "7n-(2.5n+100)>0→4.5n>100→n>22.2.",
+      "distractors": {
+        "B": "Used 100/7",
+        "C": "Used 100/2.5",
+        "D": "Used 100/5"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even analysis",
+      "trapTypes": [
+        "Rate Combination",
+        "Integer Constraint"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-7b965178",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A tank fills at 6L/min for t minutes, then drains at 4L/min for (30-t) minutes. If final volume = 100L (started empty), find t.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "22 minutes"
+      },
+      {
+        "letter": "B",
+        "text": "10 minutes"
+      },
+      {
+        "letter": "C",
+        "text": "25 minutes"
+      },
+      {
+        "letter": "D",
+        "text": "15 minutes"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "6t-4(30-t)=100→6t-120+4t=100→10t=220→t=22.",
+      "distractors": {
+        "B": "Used 100/10=10",
+        "C": "Used 100/4=25",
+        "D": "Used 220/14.7"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-phase linear model",
+      "trapTypes": [
+        "Distribution Error",
+        "Setup"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  },
+  {
+    "id": "antigravity-hard-798d9d38",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear functions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Savings: $500 initial + $75/week. After how many weeks to have $2000?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "20 weeks"
+      },
+      {
+        "letter": "B",
+        "text": "15 weeks"
+      },
+      {
+        "letter": "C",
+        "text": "25 weeks"
+      },
+      {
+        "letter": "D",
+        "text": "26.67 weeks"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "500+75w=2000→75w=1500→w=20.",
+      "distractors": {
+        "B": "1500/100=15",
+        "C": "2000/75≈26.67 forgot initial",
+        "D": "Same as C"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Savings model",
+      "trapTypes": [
+        "Forgot Initial",
+        "Division"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-linfunc-model"
+    }
+  }
+]

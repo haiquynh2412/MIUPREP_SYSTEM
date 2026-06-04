@@ -1,0 +1,1229 @@
+{
+  "id": "cpe-sample-1",
+  "title": "CPE C2 Proficiency Reading & Use of English",
+  "type": "academic",
+  "skill": "reading",
+  "sections": [
+    {
+      "id": "cpe-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Evolution of Language</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Language is not a static entity; rather, it is a living organism that (1) ______ changes over time. Many linguists argue that language evolution (2) ______ biological evolution in several key ways. Words can be thought of as genes, with new words (3) ______ through mutation—such as slang or typos—and others going extinct. Natural selection also plays a role, as words that are more (4) ______ or easier to pronounce tend to survive. Furthermore, the (5) ______ of technology has accelerated this process, introducing thousands of neologisms into our everyday (6) ______. Despite concerns that these changes (7) ______ the purity of language, most researchers view them as a natural and necessary response to the shifting needs of human (8) ______.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. continually",
+                "B. sporadically",
+                "C. transiently",
+                "D. marginally"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "'Continually' (liên tục) phù hợp với ngữ cảnh 'changes over time' để chỉ sự thay đổi liên tục của ngôn ngữ như một cơ thể sống. 'Sporadically' nghĩa là thất thường, 'transiently' nghĩa là tạm thời, 'marginally' nghĩa là không đáng kể.",
+              "answerLocation": "continually changes over time",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. mirrors",
+                "B. matches",
+                "C. equates",
+                "D. equals"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "'Mirrors' (phản chiếu/tương đồng) thường đi trực tiếp với tân ngữ trong so sánh cấu trúc phát triển (language evolution mirrors biological evolution). 'Matches' thường nói về hai cái khớp nhau, 'equates' cần đi với 'with', 'equals' nói về lượng hoặc số lượng.",
+              "answerLocation": "mirrors biological evolution",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. arising",
+                "B. stemming",
+                "C. executing",
+                "D. performing"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "'Arising' (phát sinh, nảy sinh) diễn tả việc các từ mới xuất hiện thông qua đột biến. 'Stemming' phải đi với giới từ 'from'.",
+              "answerLocation": "arising through mutation",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. versatile",
+                "B. erratic",
+                "C. stagnant",
+                "D. redundant"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "'Versatile' (linh hoạt, đa năng) là tính từ tích cực giải thích lý do tại sao từ đó dễ sống sót hơn. 'Erratic' (thất thường), 'stagnant' (trì trệ) và 'redundant' (dư thừa) mang nghĩa tiêu cực. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "more versatile or easier to pronounce",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. advent",
+                "B. onset",
+                "C. intake",
+                "D. outset"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Cụm từ cố định 'the advent of technology' chỉ sự ra đời hoặc sự xuất hiện của công nghệ mới. 'Onset' thường dùng cho điều tiêu cực như bệnh tật, 'intake' là lượng hấp thụ, 'outset' là sự khởi đầu (thường dùng 'at the outset').",
+              "answerLocation": "advent of technology",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. discourse",
+                "B. chatter",
+                "C. lecture",
+                "D. monologue"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "'Discourse' (ngôn từ, giao tiếp xã hội hoặc học thuật) phù hợp nhất với ngữ cảnh sử dụng ngôn ngữ hàng ngày. 'Chatter' là nói nhảm, 'lecture' là bài giảng, 'monologue' là độc thoại.",
+              "answerLocation": "everyday discourse",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. compromise",
+                "B. damage",
+                "C. degenerate",
+                "D. distort"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "'Compromise' ở đây mang nghĩa làm tổn hại, làm yếu đi giá trị hay 'sự trong sáng' của ngôn ngữ (compromise the purity of language). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "compromise the purity of language",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. interaction",
+                "B. coalition",
+                "C. proximity",
+                "D. alignment"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "'Human interaction' (tương tác của con người) là cụm từ tự nhiên và chính xác nhất phản ánh nhu cầu giao tiếp xã hội thay đổi. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "needs of human interaction",
+              "category": "cpe_part_1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Wonders of Bioluminescence</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Bioluminescence is the production and emission of light by a living organism. It occurs widely (9) ______ ocean vertebrates and invertebrates, as well as in some fungi and insects. (10) ______ most bioluminescent organisms live in the deep sea, where sunlight cannot penetrate, their light serves a variety of crucial purposes. For instance, some species use light as a defense mechanism to startle predators, (11) ______ others use it to attract prey or communicate with potential mates. The chemical reaction that generates this light involves two unique substances: a light-emitting molecule called luciferin and an enzyme called luciferase. Interestingly, (12) ______ heat is produced during this reaction, which is why it is often referred to as 'cold light'. Scientists are currently researching ways to harness this phenomenon, with (13) ______ eye to developing eco-friendly lighting systems. If successful, bioluminescent trees could one day line our streets, replacing conventional streetlights (14) ______ together. (15) ______ far, however, high production costs and genetic limitations have kept these ideas in the realm of laboratory prototypes, waiting for the day they can be fully realized on a commercial (16) ______.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9): It occurs widely ______ ocean vertebrates and invertebrates.",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "among",
+                  "amongst"
+                ]
+              ],
+              "correctAnswer": "among",
+              "explanation": "Từ cần điền là giới từ 'among' hoặc 'amongst' để chỉ sự phân bố rộng rãi trong các nhóm sinh vật có xương sống và không xương sống dưới đại dương. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "occurs widely among ocean",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10): ______ most bioluminescent organisms live in the deep sea...",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "since",
+                  "as",
+                  "because"
+                ]
+              ],
+              "correctAnswer": "since",
+              "explanation": "Từ liên kết chỉ nguyên nhân hoặc trạng thái ở đầu câu. 'Since', 'As' hoặc 'Because' đều phù hợp cấu trúc câu.",
+              "answerLocation": "Since most bioluminescent organisms",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11): ...startle predators, ______ others use it to attract prey...",
+              "blankIndex": 11,
+              "acceptedAnswers": [
+                [
+                  "while",
+                  "whereas",
+                  "whilst"
+                ]
+              ],
+              "correctAnswer": "while",
+              "explanation": "Từ liên kết chỉ sự đối lập giữa hai hoạt động song song: 'while' hoặc 'whereas' (trong khi loài này thế này, loài khác thế kia). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "predators, while others use",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12): Interestingly, ______ heat is produced during this reaction...",
+              "blankIndex": 12,
+              "acceptedAnswers": [
+                [
+                  "no",
+                  "little",
+                  "hardly"
+                ]
+              ],
+              "correctAnswer": "no",
+              "explanation": "Câu nói về 'cold light' (ánh sáng lạnh), nghĩa là không sinh ra nhiệt lượng: 'no heat is produced' hoặc 'little heat is produced'. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Interestingly, no heat is",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13): ...with ______ eye to developing eco-friendly lighting systems.",
+              "blankIndex": 13,
+              "acceptedAnswers": [
+                [
+                  "an"
+                ]
+              ],
+              "correctAnswer": "an",
+              "explanation": "Cụm từ cố định 'with an eye to doing something' có nghĩa là với mục đích làm gì đó. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "with an eye to developing",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14): ...replacing conventional streetlights ______ together.",
+              "blankIndex": 14,
+              "acceptedAnswers": [
+                [
+                  "alogether",
+                  "altogether"
+                ]
+              ],
+              "correctAnswer": "altogether",
+              "explanation": "Trạng từ 'altogether' (hoàn toàn, cả thảy) đi kèm cụm từ phủ định hoặc thay thế để nhấn mạnh việc thay thế hoàn toàn đèn đường truyền thống. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "replacing conventional streetlights altogether",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15): ______ far, however, high production costs...",
+              "blankIndex": 15,
+              "acceptedAnswers": [
+                [
+                  "so",
+                  "thus"
+                ]
+              ],
+              "correctAnswer": "so",
+              "explanation": "Cụm từ chỉ thời gian cho đến nay: 'so far' hoặc 'thus far'. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "So far, however",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16): ...fully realized on a commercial ______.",
+              "blankIndex": 16,
+              "acceptedAnswers": [
+                [
+                  "scale",
+                  "level",
+                  "basis"
+                ]
+              ],
+              "correctAnswer": "scale",
+              "explanation": "Cụm danh từ 'on a commercial scale' (trên quy mô thương mại) hoặc 'on a commercial basis/level'. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "on a commercial scale",
+              "category": "cpe_part_2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Rise of Citizen Science</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Citizen science is the practice of public participation and collaboration in scientific research. It has experienced an (17) (PRECEDENT) ______ surge in popularity in recent years, driven by the widespread availability of smartphones and high-speed internet. This democratization of science allows ordinary individuals to contribute to complex projects, making tasks like tracking bird migrations or classifying distant galaxies (18) (FEASIBLE) ______ easy. Critics initially questioned the (19) (RELY) ______ of data gathered by amateurs, but rigorous statistical checks have largely laid those fears to rest. In fact, many databases now show a high degree of (20) (COMPATIBLE) ______ with professional scientific observations. This collaboration has not only accelerated data collection but has also fostered a deeper public understanding of the scientific method. Furthermore, it has proved (21) (BENEFIT) ______ for conservation projects with limited funding, enabling them to expand their geographic reach. Participants often report feeling a strong sense of (22) (EMPOWER) ______ as their efforts contribute to solving real-world ecological challenges. As citizen science projects continue to proliferate, they are likely to reshape the (23) (RELATION) ______ between academic institutions and the general public, proving that scientific discovery is no longer the exclusive (24) (PROVINCE) ______ of experts.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-rg-3",
+          "instruction": "Fill in the gaps with the correct word form.",
+          "questions": [
+            {
+              "id": "q-cpe-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17): experienced an (PRECEDENT) ______ surge",
+              "blankIndex": 17,
+              "acceptedAnswers": [
+                [
+                  "unprecedented"
+                ]
+              ],
+              "correctAnswer": "unprecedented",
+              "explanation": "Tính từ bổ nghĩa cho 'surge' dựa trên động từ PRECEDENT là 'unprecedented' (chưa từng có tiền lệ). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "unprecedented surge",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18): classifying distant galaxies (FEASIBLE) ______ easy.",
+              "blankIndex": 18,
+              "acceptedAnswers": [
+                [
+                  "feasibly"
+                ]
+              ],
+              "correctAnswer": "feasibly",
+              "explanation": "Trạng từ bổ nghĩa cho tính từ 'easy' xuất phát từ FEASIBLE là 'feasibly' (có thể khả thi). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "feasibly easy",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19): questioned the (RELY) ______ of data",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "reliability"
+                ]
+              ],
+              "correctAnswer": "reliability",
+              "explanation": "Danh từ đứng sau 'the' xuất phát từ động từ RELY là 'reliability' (độ tin cậy). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "reliability of data",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20): high degree of (COMPATIBLE) ______ with",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "compatibility"
+                ]
+              ],
+              "correctAnswer": "compatibility",
+              "explanation": "Danh từ đứng sau giới từ 'of' xuất phát từ tính từ COMPATIBLE là 'compatibility' (tính tương thích/sự phù hợp). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "compatibility with professional",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21): proved (BENEFIT) ______ for conservation",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "beneficial"
+                ]
+              ],
+              "correctAnswer": "beneficial",
+              "explanation": "Tính từ đứng sau động từ liên kết 'proved' xuất phát từ danh từ BENEFIT là 'beneficial' (có lợi, hữu ích). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "proved beneficial for conservation",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22): sense of (EMPOWER) ______ as their efforts",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "empowerment"
+                ]
+              ],
+              "correctAnswer": "empowerment",
+              "explanation": "Danh từ đứng sau cụm 'sense of' xuất phát từ động từ EMPOWER là 'empowerment' (sự trao quyền, cảm giác có năng lực làm gì). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "sense of empowerment",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23): reshape the (RELATION) ______ between",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "relationship",
+                  "relationships"
+                ]
+              ],
+              "correctAnswer": "relationship",
+              "explanation": "Danh từ đứng sau mạo từ 'the' biểu diễn mối liên kết xuất phát từ danh từ/động từ RELATION là 'relationship' (mối quan hệ). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "relationship between academic",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24): exclusive (PROVINCE) ______ of experts.",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "province"
+                ]
+              ],
+              "correctAnswer": "province",
+              "explanation": "Từ PROVINCE giữ nguyên dạng danh từ mang ý nghĩa bóng là 'lĩnh vực độc quyền/thế giới riêng' của các chuyên gia. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "exclusive province of experts",
+              "category": "cpe_part_3",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Key Word Transformation</h2><div class='mb-4 text-slate-800 text-base leading-relaxed'><p class='mb-2'><b>25.</b> It was a mistake for you to buy such an expensive car. (SHOULD)</p><p class='mb-2'>You ______ such an expensive car.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>26.</b> They are going to demolish the old theater next month. (PULLED)</p><p class='mb-2'>The old theater ______ next month.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>27.</b> I find it very difficult to understand his behavior. (LOSS)</p><p class='mb-2'>I am ______ to understand his behavior.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>28.</b> She had never seen such a beautiful painting before. (FIRST)</p><p class='mb-2'>It ______ she had seen such a beautiful painting.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>29.</b> We must decide on a topic for the presentation immediately. (TIME)</p><p class='mb-2'>It is ______ on a topic for the presentation.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>30.</b> Although she was tired, she completed the marathon. (SPITE)</p><p class='mb-2'>In ______ she completed the marathon.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cpe-rg-4",
+          "instruction": "Fill in the gap for each sentence below using 3 to 8 words.",
+          "questions": [
+            {
+              "id": "q-cpe-25",
+              "type": "gap_fill",
+              "instruction": "Sentence 25: You ______ such an expensive car.",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "should not have bought",
+                  "shouldnt have bought",
+                  "should not have purchased",
+                  "shouldnt have purchased"
+                ]
+              ],
+              "correctAnswer": "should not have bought",
+              "explanation": "Cấu trúc diễn tả một việc đáng lẽ không nên làm trong quá khứ: 'should not have + V3' (should not have bought / should not have purchased).",
+              "answerLocation": "should not have bought",
+              "category": "cpe_part_4",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-26",
+              "type": "gap_fill",
+              "instruction": "Sentence 26: The old theater ______ next month.",
+              "blankIndex": 26,
+              "acceptedAnswers": [
+                [
+                  "is going to be pulled down",
+                  "will be pulled down",
+                  "is to be pulled down",
+                  "is being pulled down"
+                ]
+              ],
+              "correctAnswer": "is going to be pulled down",
+              "explanation": "Chuyển từ câu chủ động sang bị động với phrasal verb 'pull down' (phá dỡ): 'is going to be pulled down' hoặc 'will be pulled down'. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "is going to be pulled down",
+              "category": "cpe_part_4",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-27",
+              "type": "gap_fill",
+              "instruction": "Sentence 27: I am ______ to understand his behavior.",
+              "blankIndex": 27,
+              "acceptedAnswers": [
+                [
+                  "at a loss",
+                  "at a complete loss",
+                  "at an absolute loss"
+                ]
+              ],
+              "correctAnswer": "at a loss",
+              "explanation": "Cụm từ cố định 'be at a loss' nghĩa là bối rối, không hiểu nổi hoặc không biết làm gì. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "at a loss",
+              "category": "cpe_part_4",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-28",
+              "type": "gap_fill",
+              "instruction": "Sentence 28: It ______ she had seen such a beautiful painting.",
+              "blankIndex": 28,
+              "acceptedAnswers": [
+                [
+                  "was the first time",
+                  "was the very first time"
+                ]
+              ],
+              "correctAnswer": "was the first time",
+              "explanation": "Sử dụng cấu trúc 'It was the first time + past perfect' để diễn tả một trải nghiệm chưa từng có trước đó.",
+              "answerLocation": "was the first time",
+              "category": "cpe_part_4",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-29",
+              "type": "gap_fill",
+              "instruction": "Sentence 29: It is ______ on a topic for the presentation.",
+              "blankIndex": 29,
+              "acceptedAnswers": [
+                [
+                  "high time we decided",
+                  "about time we decided",
+                  "high time that we decided",
+                  "about time that we decided"
+                ]
+              ],
+              "correctAnswer": "high time we decided",
+              "explanation": "Cấu trúc giả định nhấn mạnh thời điểm cấp bách phải làm gì đó: 'It is high time / about time + S + V2/ed' (It is high time we decided).",
+              "answerLocation": "high time we decided",
+              "category": "cpe_part_4",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-30",
+              "type": "gap_fill",
+              "instruction": "Sentence 30: In ______ she completed the marathon.",
+              "blankIndex": 30,
+              "acceptedAnswers": [
+                [
+                  "spite of being tired",
+                  "spite of her tiredness",
+                  "spite of the fact she was tired",
+                  "spite of the fact that she was tired"
+                ]
+              ],
+              "correctAnswer": "spite of being tired",
+              "explanation": "Sử dụng giới từ 'in spite of' đi kèm với danh động từ hoặc danh từ: 'in spite of being tired' hoặc 'in spite of her tiredness'. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "spite of being tired",
+              "category": "cpe_part_4",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-sec-5",
+      "title": "Part 5: Multiple Choice",
+      "instructions": "You are going to read an article about the cognitive benefits of bilingualism. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Cognitive Benefits of Bilingualism</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>For decades, the prevailing wisdom held that raising children in bilingual households was tantamount to courting cognitive confusion. Educators routinely counselled parents to abandon their heritage languages, warning that the mental juggling act of maintaining two linguistic systems would inevitably impoverish a child's command of both. This orthodoxy, however, has been comprehensively dismantled by a wealth of empirical research that paints an altogether more nuanced—and decidedly more optimistic—picture.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The crux of the matter lies in what cognitive scientists term <em>executive function</em>—the suite of mental processes responsible for attention, inhibition, and task-switching. When a bilingual individual engages in conversation, both languages are simultaneously activated in the brain, necessitating a continuous, largely unconscious arbitration between competing linguistic representations. Far from constituting a handicap, this perpetual mental exercise appears to fortify the very neural circuits that underpin cognitive control. Studies conducted by Ellen Bialystok at York University have demonstrated that bilingual children consistently outperform their monolingual peers on tasks requiring selective attention and the suppression of irrelevant information—skills that extend well beyond the linguistic domain.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Perhaps the most arresting finding, however, concerns the ageing brain. A landmark study published in <em>Neurology</em> reported that lifelong bilingualism delayed the onset of dementia symptoms by an average of four to five years compared with monolingualism—an effect more pronounced than that achieved by any currently available pharmaceutical intervention. The researchers were careful to note that bilingualism does not prevent the underlying neuropathology; rather, it appears to endow the brain with a greater <em>cognitive reserve</em>, enabling it to compensate for neural damage more effectively. This distinction is critical: the bilingual brain is not structurally immune to decline but functionally more resilient.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Critics, naturally, have raised legitimate objections. Some researchers argue that the so-called bilingual advantage is an artefact of publication bias, with studies reporting null results languishing unpublished. Others point out that the benefits observed in laboratory settings may not translate into meaningful real-world advantages. There is also the thorny question of <em>which</em> bilinguals benefit most: individuals who use both languages daily in varied social contexts appear to reap greater cognitive dividends than those who acquired a second language in a classroom but seldom employ it. The degree of proficiency, the age of acquisition, and the sociolinguistic context all modulate the cognitive outcomes in ways that resist easy generalisation.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>What remains beyond reasonable dispute, however, is that the old narrative of bilingualism as a cognitive liability has been irrevocably overturned. The contemporary consensus holds that managing two languages is not merely benign but actively salutary—a form of lifelong mental gymnastics that confers measurable, if sometimes contested, advantages. For the millions of bilingual families worldwide, this represents not just scientific vindication but a powerful reaffirmation of cultural identity.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-rg-5",
+          "instruction": "Choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "questions": [
+            {
+              "id": "q-cpe-31",
+              "type": "multiple_choice",
+              "instruction": "31. What does the writer suggest about the historical attitude towards bilingualism?",
+              "options": [
+                "A. It was based on a fundamental misunderstanding of cognitive development.",
+                "B. It was shared only by educators rather than by researchers.",
+                "C. It accurately reflected the scientific evidence available at the time.",
+                "D. It was primarily motivated by political rather than educational concerns."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đoạn đầu mô tả quan điểm cũ rằng song ngữ gây 'rối loạn nhận thức' (cognitive confusion), và quan điểm này đã bị 'comprehensively dismantled' bởi nghiên cứu thực nghiệm. Điều này cho thấy quan điểm lịch sử dựa trên sự hiểu sai cơ bản về phát triển nhận thức. Đáp án B sai vì bài viết không giới hạn quan điểm này chỉ cho giáo viên. C sai vì bài nói rõ quan điểm đã bị lật đổ. D không được đề cập.",
+              "answerLocation": "This orthodoxy, however, has been comprehensively dismantled by a wealth of empirical research",
+              "category": "cpe_part_5",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-32",
+              "type": "multiple_choice",
+              "instruction": "32. According to the second paragraph, the cognitive advantage of bilingualism stems from",
+              "options": [
+                "A. the superior linguistic knowledge that bilinguals possess.",
+                "B. the constant mental effort of managing two active language systems.",
+                "C. the ability to communicate in a wider range of social situations.",
+                "D. the early exposure to complex grammatical structures."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đoạn 2 giải thích rằng khi người song ngữ nói chuyện, cả hai ngôn ngữ đều được kích hoạt đồng thời, đòi hỏi sự 'phân xử liên tục' (continuous arbitration) giữa các biểu diễn ngôn ngữ cạnh tranh. Bài tập tinh thần liên tục này ('perpetual mental exercise') củng cố mạch thần kinh kiểm soát nhận thức.",
+              "answerLocation": "this perpetual mental exercise appears to fortify the very neural circuits that underpin cognitive control",
+              "category": "cpe_part_5",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-33",
+              "type": "multiple_choice",
+              "instruction": "33. The word 'arresting' in the third paragraph is closest in meaning to",
+              "options": [
+                "A. alarming.",
+                "B. controversial.",
+                "C. striking.",
+                "D. conclusive."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "'Arresting' trong ngữ cảnh này có nghĩa là 'đáng chú ý, gây ấn tượng mạnh' (striking). Nó không mang nghĩa 'đáng lo ngại' (alarming), 'gây tranh cãi' (controversial), hay 'mang tính kết luận' (conclusive). Tác giả dùng từ này để nhấn mạnh phát hiện quan trọng nhất.",
+              "answerLocation": "Perhaps the most arresting finding",
+              "category": "cpe_part_5",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-34",
+              "type": "multiple_choice",
+              "instruction": "34. What distinction does the writer draw about bilingualism and dementia?",
+              "options": [
+                "A. Bilingualism prevents the brain diseases that cause dementia.",
+                "B. Bilingualism is more effective than medication at curing dementia.",
+                "C. Bilingualism helps the brain function better despite underlying damage.",
+                "D. Bilingualism slows the physical deterioration of brain tissue."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Bài viết nói rõ: 'bilingualism does not prevent the underlying neuropathology; rather, it appears to endow the brain with a greater cognitive reserve, enabling it to compensate for neural damage more effectively'. Nghĩa là bệnh lý vẫn xảy ra nhưng não bù đắp chức năng tốt hơn. A sai vì không ngăn bệnh, B sai vì bài so sánh hiệu quả trì hoãn chứ không phải chữa khỏi, D sai vì không làm chậm thoái hóa vật lý.",
+              "answerLocation": "the bilingual brain is not structurally immune to decline but functionally more resilient",
+              "category": "cpe_part_5",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-35",
+              "type": "multiple_choice",
+              "instruction": "35. In the fourth paragraph, the writer's main purpose is to",
+              "options": [
+                "A. argue that the benefits of bilingualism have been greatly exaggerated.",
+                "B. demonstrate that monolingualism is equally advantageous in practice.",
+                "C. acknowledge that the evidence for bilingual benefits is not straightforward.",
+                "D. reject the methodology used in key bilingualism studies."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đoạn 4 trình bày các phản đối hợp lý ('legitimate objections') từ nhiều góc độ: thiên lệch xuất bản, sự khác biệt giữa phòng thí nghiệm và thực tế, và các yếu tố điều chỉnh kết quả. Mục đích chính là thừa nhận bằng chứng không đơn giản (not straightforward), chứ không phải phủ nhận hoàn toàn lợi ích hay từ chối phương pháp nghiên cứu. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "Critics, naturally, have raised legitimate objections... all modulate the cognitive outcomes in ways that resist easy generalisation",
+              "category": "cpe_part_5",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-36",
+              "type": "multiple_choice",
+              "instruction": "36. What is the writer's overall attitude towards the cognitive effects of bilingualism?",
+              "options": [
+                "A. Cautiously dismissive of the claimed advantages.",
+                "B. Broadly positive while recognising areas of debate.",
+                "C. Neutral, presenting both sides without expressing a view.",
+                "D. Enthusiastically supportive without any reservations."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Tác giả kết luận rằng quan điểm cũ đã bị 'lật đổ không thể đảo ngược' (irrevocably overturned) và song ngữ là 'actively salutary'. Tuy nhiên, tác giả cũng sử dụng 'sometimes contested' và dành cả đoạn 4 cho các phản đối. Điều này cho thấy thái độ tích cực nhưng có thừa nhận tranh luận. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "managing two languages is not merely benign but actively salutary—a form of lifelong mental gymnastics that confers measurable, if sometimes contested, advantages",
+              "category": "cpe_part_5",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "You are going to read an article about sustainable architecture. Seven paragraphs have been removed from the article. Choose from the paragraphs A-H the one which fits each gap (37-43). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Future of Sustainable Architecture</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The built environment is responsible for approximately forty per cent of global carbon emissions, a statistic that has galvanised architects, engineers, and urban planners into reimagining how we design, construct, and inhabit our buildings. What was once a niche concern of environmentally minded practitioners has now become an urgent imperative that is reshaping the entire profession.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 37]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Central to this transformation is the concept of <em>embodied carbon</em>—the total greenhouse gas emissions generated during the extraction, manufacture, and transportation of building materials. Traditionally, architects focused almost exclusively on <em>operational carbon</em>, the energy consumed once a building is in use. However, as operational efficiency has improved through better insulation and renewable energy systems, embodied carbon has come to represent a proportionally larger share of a building's total lifetime emissions.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Timber construction, in particular, has experienced a remarkable renaissance. Cross-laminated timber (CLT) panels, engineered for structural strength, now enable the construction of multi-storey buildings that were once the exclusive domain of steel and concrete. Norway's Mjøstårnet, an eighteen-storey timber tower completed in 2019, stands as a testament to what is achievable.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Beyond materials, architects are increasingly turning to biomimicry—the practice of drawing design inspiration from biological systems. The Eastgate Centre in Harare, Zimbabwe, famously modelled its ventilation system on the self-cooling mechanisms of termite mounds, achieving comfortable interior temperatures without conventional air conditioning and reducing energy consumption by ninety per cent compared with similar-sized buildings.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The integration of living systems into buildings represents another frontier. Green roofs and living walls are no longer mere aesthetic embellishments; they provide measurable thermal insulation, absorb stormwater, filter air pollutants, and support urban biodiversity. In Singapore, where government policy mandates the replacement of any greenery displaced by development, vertical gardens have become a defining feature of the cityscape.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Digital technology is also playing an increasingly pivotal role. Building Information Modelling (BIM) allows architects to simulate a structure's environmental performance before a single foundation is laid, optimising orientation, glazing ratios, and material selection to minimise both embodied and operational carbon. Artificial intelligence is now being deployed to generate designs that human architects might never have conceived, exploring vast solution spaces to find configurations that maximise sustainability metrics.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Perhaps the most profound shift, however, is philosophical rather than technological. A growing number of architects are questioning the very premise that sustainability can be achieved through new construction alone, advocating instead for the adaptive reuse of existing structures. Demolition, they argue, is inherently wasteful, regardless of how green the replacement building might be.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Whether through material innovation, digital simulation, biological integration, or a fundamental rethinking of the design brief itself, sustainable architecture is no longer a utopian aspiration. It is an evolving, multifaceted discipline that demands both technical ingenuity and a willingness to challenge long-held assumptions about what buildings are and what they can become.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph you do not need to use.",
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "This recognition has prompted a fundamental reassessment of material choices. Concrete, the most widely used building material on Earth, is also one of the most carbon-intensive, with cement production alone accounting for roughly eight per cent of global CO₂ emissions. Consequently, researchers are investigating alternatives ranging from low-carbon concrete formulations to bio-based materials such as hempcrete, mycelium composites, and bamboo."
+            },
+            {
+              "label": "B",
+              "text": "Yet sceptics caution that timber is not a panacea. Concerns about deforestation, fire safety, and the long-term durability of engineered wood products remain legitimate. Proponents counter that sustainably managed forests can provide a genuinely renewable supply chain, and that modern fire-retardant treatments and structural engineering have largely addressed safety concerns."
+            },
+            {
+              "label": "C",
+              "text": "Such examples, while compelling, remain relatively isolated. Scaling biomimetic design principles requires interdisciplinary collaboration between architects, biologists, and materials scientists—a combination that traditional architectural education has been slow to cultivate. Nevertheless, the potential rewards are substantial enough to justify the institutional restructuring that such collaboration demands."
+            },
+            {
+              "label": "D",
+              "text": "This approach, often termed 'circular architecture', treats buildings not as disposable commodities but as material banks whose components can be disassembled, catalogued, and redeployed at the end of their useful life. The Cradle to Cradle philosophy, pioneered by architect William McDonough and chemist Michael Braungart, has been particularly influential in advancing this agenda."
+            },
+            {
+              "label": "E",
+              "text": "However, such technologies raise their own ethical and practical questions. The energy required to run sophisticated AI design systems is not negligible, and there is a risk that over-reliance on algorithmic optimisation could produce buildings that, while technically efficient, lack the human qualities—warmth, character, a sense of place—that make architecture more than mere engineering."
+            },
+            {
+              "label": "F",
+              "text": "The urgency of this shift cannot be overstated. With the global building stock projected to double by 2060—the equivalent of constructing an entire New York City every month for the next three and a half decades—the decisions made today about materials, methods, and design philosophies will reverberate for generations."
+            },
+            {
+              "label": "G",
+              "text": "Yet for all these advances, the most sustainable building may well be one that already exists. Retrofitting older structures with modern insulation, energy-efficient glazing, and renewable energy systems can achieve dramatic reductions in operational carbon at a fraction of the embodied carbon cost of new construction. Cities such as Amsterdam and Copenhagen have pioneered policies that incentivise renovation over demolition."
+            },
+            {
+              "label": "H",
+              "text": "These interventions, however, demand careful planning. A poorly designed green roof can increase structural loads beyond safe limits, trap moisture, and ultimately cause more damage than it prevents. Successful integration requires close collaboration between architects, structural engineers, and ecologists from the earliest stages of the design process."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q-cpe-37",
+              "type": "gapped_text",
+              "instruction": "Gap 37:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đoạn F nói về tính cấp bách của sự chuyển đổi ('The urgency of this shift cannot be overstated') và dự báo về tương lai xây dựng. Nó nối liền mạch ý từ câu trước về 'urgent imperative reshaping the entire profession' sang đoạn tiếp theo về 'embodied carbon'. Đoạn F cung cấp bối cảnh thống kê về quy mô vấn đề.",
+              "answerLocation": "Gap 37 - after 'urgent imperative' paragraph, before 'embodied carbon' paragraph",
+              "category": "cpe_part_6",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đoạn A bàn về việc đánh giá lại lựa chọn vật liệu ('reassessment of material choices'), nêu vấn đề của bê tông và liệt kê các vật liệu thay thế. Nó nối mạch từ đoạn trước về 'embodied carbon' (sự nhận ra tầm quan trọng của carbon hàm chứa) sang đoạn sau về xây dựng bằng gỗ ('Timber construction').",
+              "answerLocation": "Gap 38 - after 'embodied carbon' paragraph, before 'timber construction' paragraph",
+              "category": "cpe_part_6",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đoạn B nêu các lo ngại về xây dựng bằng gỗ ('sceptics caution that timber is not a panacea') và phản biện của người ủng hộ. Nó nối tiếp tự nhiên từ đoạn trước về thành tựu của xây dựng bằng gỗ (tháp Mjøstårnet) sang đoạn sau về biomimicry, tạo sự chuyển tiếp hợp lý từ vật liệu sang phương pháp thiết kế.",
+              "answerLocation": "Gap 39 - after timber tower paragraph, before biomimicry paragraph",
+              "category": "cpe_part_6",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đoạn C nói về hạn chế của biomimicry ('Such examples, while compelling, remain relatively isolated') và nhu cầu hợp tác liên ngành. Nó phản hồi trực tiếp ví dụ Eastgate Centre ở đoạn trước và chuyển tiếp sang chủ đề tích hợp hệ thống sống (green roofs) ở đoạn sau.",
+              "answerLocation": "Gap 40 - after biomimicry/Eastgate paragraph, before green roofs paragraph",
+              "category": "cpe_part_6",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đoạn H cảnh báo về các rủi ro của việc thiết kế mái xanh kém ('A poorly designed green roof can increase structural loads') và yêu cầu hợp tác chặt chẽ. Nó nối tiếp tự nhiên từ đoạn trước về lợi ích của green roofs và living walls ở Singapore, cung cấp góc nhìn cân bằng trước khi chuyển sang chủ đề công nghệ số.",
+              "answerLocation": "Gap 41 - after green roofs/Singapore paragraph, before digital technology paragraph",
+              "category": "cpe_part_6",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đoạn E nêu các câu hỏi đạo đức và thực tiễn về công nghệ AI trong kiến trúc ('such technologies raise their own ethical and practical questions'). Nó phản hồi trực tiếp đoạn trước về BIM và AI, và chuyển tiếp sang đoạn sau về sự thay đổi triết lý (adaptive reuse).",
+              "answerLocation": "Gap 42 - after BIM/AI paragraph, before philosophical shift paragraph",
+              "category": "cpe_part_6",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đoạn G nói về việc tái sử dụng tòa nhà hiện có ('the most sustainable building may well be one that already exists') và các chính sách khuyến khích cải tạo thay vì phá dỡ ở Amsterdam và Copenhagen. Nó nối tiếp đoạn trước về adaptive reuse và bổ sung bằng chứng cụ thể trước đoạn kết luận tổng hợp.",
+              "answerLocation": "Gap 43 - after adaptive reuse paragraph, before conclusion paragraph",
+              "category": "cpe_part_6",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-sec-7",
+      "title": "Part 7: Multiple Matching",
+      "instructions": "You are going to read four texts about approaches to urban planning, written by four different urban planners. For questions 44-53, choose from the texts (A-D). The texts may be chosen more than once.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Approaches to Urban Planning</h2><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-100'><h3 class='font-bold text-emerald-800 mb-2'>Text A — Dr. Helena Voss: The Compact City Model</h3><p class='text-slate-800 text-base leading-relaxed'>The sprawling, car-dependent suburb is, in my view, the single greatest failure of twentieth-century urban planning. We squandered land, entrenched social segregation, and locked entire populations into a lifestyle predicated on fossil-fuel consumption. The compact city—characterised by high density, mixed-use development, and robust public transport—offers a corrective that is both environmentally sound and socially equitable. Critics protest that density breeds congestion and diminishes quality of life, yet the evidence from cities such as Barcelona and Tokyo suggests precisely the opposite: well-designed density fosters walkability, cultural vibrancy, and the kind of spontaneous social interaction that dispersed suburbs systematically preclude. The key lies in design quality, not in density per se. A compact city need not be a cramped one; it must, however, be a legible one, where public spaces are generous, green infrastructure is interwoven with the built fabric, and services are accessible within a fifteen-minute walk or cycle ride.</p></div><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-100'><h3 class='font-bold text-emerald-800 mb-2'>Text B — Professor James Okoro: Community-Led Regeneration</h3><p class='text-slate-800 text-base leading-relaxed'>Top-down master planning has an inglorious track record of displacing the very communities it purports to serve. From the slum clearances of post-war Britain to the forced relocations accompanying mega-projects in the Global South, the pattern is depressingly consistent: technocratic visions imposed without meaningful consultation, followed by social dislocation and resentment. I advocate a fundamentally different approach—one in which residents are not passive beneficiaries of planning decisions but active co-designers of their neighbourhoods. Participatory budgeting, community land trusts, and co-housing cooperatives are not utopian fantasies; they are proven mechanisms that redistribute agency and ensure that regeneration benefits those who need it most. The planner's role, in this model, shifts from author to facilitator: someone who provides technical expertise while respecting local knowledge. This is not a recipe for chaos; it is a recipe for legitimacy.</p></div><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-100'><h3 class='font-bold text-emerald-800 mb-2'>Text C — Dr. Mei-Ling Chen: Biophilic Urbanism</h3><p class='text-slate-800 text-base leading-relaxed'>We have spent the better part of two centuries engineering nature out of our cities, and we are now paying the price in degraded mental health, urban heat islands, and catastrophic flooding. Biophilic urbanism seeks to reverse this trajectory by reintegrating natural systems into the urban fabric—not as decorative afterthoughts but as essential infrastructure. Green corridors that connect fragmented habitats, permeable surfaces that allow rainwater to infiltrate rather than overwhelm drainage systems, and urban forests that sequester carbon and cool microclimates: these are not luxuries but necessities. The economic case is compelling too. Property values adjacent to well-maintained urban green spaces consistently command premiums of ten to twenty per cent, and healthcare savings attributable to access to nature run into billions annually. The challenge lies in persuading policymakers that green infrastructure deserves the same rigorous cost-benefit analysis routinely applied to roads and bridges.</p></div><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-100'><h3 class='font-bold text-emerald-800 mb-2'>Text D — Dr. Rafael Mendes: Data-Driven Smart Cities</h3><p class='text-slate-800 text-base leading-relaxed'>The cities of the future will be intelligent organisms, continuously sensing, analysing, and adapting to the needs of their inhabitants. Sensor networks embedded in roads, buildings, and utilities can generate real-time data on traffic flow, energy consumption, air quality, and waste generation, enabling planners to make evidence-based decisions with a precision that was inconceivable a generation ago. Predictive modelling can anticipate infrastructure failures before they occur, while dynamic pricing of road usage can smooth congestion peaks more effectively than any physical expansion of capacity. Yet I am under no illusion that technology alone is sufficient. Data without governance is surveillance; efficiency without equity is exclusion. The smart city must be an open city, one in which data is transparent, algorithms are accountable, and digital literacy is universal. Without these safeguards, the smart city risks becoming a tool of control rather than empowerment.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cpe-rg-7",
+          "instruction": "For questions 44-53, choose from the texts A-D. The texts may be chosen more than once.",
+          "questions": [
+            {
+              "id": "q-cpe-44",
+              "type": "multiple_matching",
+              "instruction": "44. Which writer argues that a particular approach to urban planning has historically caused harm to residents?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Professor Okoro (Text B) nói về 'top-down master planning' có 'an inglorious track record of displacing the very communities it purports to serve' và mô tả các ví dụ cụ thể về xóa khu ổ chuột và di dời cưỡng bức gây 'social dislocation and resentment'.",
+              "answerLocation": "Text B: Top-down master planning has an inglorious track record of displacing the very communities",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-45",
+              "type": "multiple_matching",
+              "instruction": "45. Which writer presents financial evidence to support their approach?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Dr. Chen (Text C) trình bày bằng chứng tài chính cụ thể: giá trị bất động sản gần không gian xanh tăng 10-20% ('premiums of ten to twenty per cent') và tiết kiệm chi phí y tế hàng tỷ đồng hàng năm ('healthcare savings... run into billions annually').",
+              "answerLocation": "Text C: Property values adjacent to well-maintained urban green spaces consistently command premiums",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-46",
+              "type": "multiple_matching",
+              "instruction": "46. Which writer acknowledges the limitations of their preferred approach?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Dr. Mendes (Text D) thừa nhận rõ ràng rằng 'I am under no illusion that technology alone is sufficient' và cảnh báo rằng 'Data without governance is surveillance; efficiency without equity is exclusion'. Ông thừa nhận hạn chế của cách tiếp cận dựa trên dữ liệu nếu thiếu quản trị.",
+              "answerLocation": "Text D: I am under no illusion that technology alone is sufficient",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-47",
+              "type": "multiple_matching",
+              "instruction": "47. Which writer criticises a development pattern associated with a specific historical period?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Dr. Voss (Text A) chỉ trích mô hình phát triển ngoại ô của thế kỷ 20 ('the single greatest failure of twentieth-century urban planning'), gắn cụ thể với giai đoạn lịch sử và mô tả hậu quả tiêu cực.",
+              "answerLocation": "Text A: the single greatest failure of twentieth-century urban planning",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-48",
+              "type": "multiple_matching",
+              "instruction": "48. Which writer proposes redefining the professional role of planners?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Professor Okoro (Text B) đề xuất vai trò mới cho nhà quy hoạch: 'The planner's role, in this model, shifts from author to facilitator: someone who provides technical expertise while respecting local knowledge'. Ông muốn thay đổi vai trò từ tác giả sang người hỗ trợ.",
+              "answerLocation": "Text B: The planner's role, in this model, shifts from author to facilitator",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-49",
+              "type": "multiple_matching",
+              "instruction": "49. Which writer uses examples from specific cities to counter a common objection?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Dr. Voss (Text A) dùng Barcelona và Tokyo làm ví dụ để phản bác phản đối phổ biến rằng mật độ cao gây tắc nghẽn và giảm chất lượng sống: 'yet the evidence from cities such as Barcelona and Tokyo suggests precisely the opposite'.",
+              "answerLocation": "Text A: the evidence from cities such as Barcelona and Tokyo suggests precisely the opposite",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-50",
+              "type": "multiple_matching",
+              "instruction": "50. Which writer emphasises the health consequences of current urban design?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Dr. Chen (Text C) nhấn mạnh hậu quả sức khỏe: 'we are now paying the price in degraded mental health, urban heat islands, and catastrophic flooding' và đề cập tiết kiệm chi phí y tế nhờ tiếp cận thiên nhiên.",
+              "answerLocation": "Text C: paying the price in degraded mental health",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-51",
+              "type": "multiple_matching",
+              "instruction": "51. Which writer warns about the potential for their proposed system to be misused?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Dr. Mendes (Text D) cảnh báo rằng smart city có thể bị lạm dụng: 'the smart city risks becoming a tool of control rather than empowerment' nếu không có các biện pháp bảo vệ như minh bạch dữ liệu và giải trình thuật toán.",
+              "answerLocation": "Text D: the smart city risks becoming a tool of control rather than empowerment",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-52",
+              "type": "multiple_matching",
+              "instruction": "52. Which writer calls for natural elements to be treated as fundamental infrastructure?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Dr. Chen (Text C) kêu gọi thiên nhiên được coi là hạ tầng thiết yếu: 'reintegrating natural systems into the urban fabric—not as decorative afterthoughts but as essential infrastructure' và 'these are not luxuries but necessities'.",
+              "answerLocation": "Text C: not as decorative afterthoughts but as essential infrastructure",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-53",
+              "type": "multiple_matching",
+              "instruction": "53. Which writer mentions specific mechanisms that have already been successfully implemented?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Professor Okoro (Text B) liệt kê các cơ chế cụ thể đã được chứng minh: 'Participatory budgeting, community land trusts, and co-housing cooperatives are not utopian fantasies; they are proven mechanisms'. Ông nhấn mạnh chúng đã được thực hiện thành công.",
+              "answerLocation": "Text B: Participatory budgeting, community land trusts, and co-housing cooperatives are not utopian fantasies; they are proven mechanisms",
+              "category": "cpe_part_7",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

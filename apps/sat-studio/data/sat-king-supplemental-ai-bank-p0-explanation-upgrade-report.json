@@ -1,0 +1,568 @@
+{
+  "apply": true,
+  "version": "source-p0-explanation-upgrade-2026-05-20",
+  "sourceFile": "sat-king-supplemental-ai-bank.json",
+  "targetCount": 69,
+  "attempted": [
+    {
+      "id": "satking-math-002",
+      "sourceIndex": 181
+    },
+    {
+      "id": "satking-math-005",
+      "sourceIndex": 184
+    },
+    {
+      "id": "satking-math-007",
+      "sourceIndex": 186
+    },
+    {
+      "id": "satking-math-010",
+      "sourceIndex": 189
+    },
+    {
+      "id": "satking-math-012",
+      "sourceIndex": 191
+    },
+    {
+      "id": "satking-math-015",
+      "sourceIndex": 194
+    },
+    {
+      "id": "satking-math-017",
+      "sourceIndex": 196
+    },
+    {
+      "id": "satking-math-020",
+      "sourceIndex": 199
+    },
+    {
+      "id": "satking-math-022",
+      "sourceIndex": 201
+    },
+    {
+      "id": "satking-math-026",
+      "sourceIndex": 205
+    },
+    {
+      "id": "satking-math-029",
+      "sourceIndex": 208
+    },
+    {
+      "id": "satking-math-031",
+      "sourceIndex": 210
+    },
+    {
+      "id": "satking-math-034",
+      "sourceIndex": 213
+    },
+    {
+      "id": "satking-math-036",
+      "sourceIndex": 215
+    },
+    {
+      "id": "satking-math-039",
+      "sourceIndex": 218
+    },
+    {
+      "id": "satking-math-041",
+      "sourceIndex": 220
+    },
+    {
+      "id": "satking-math-044",
+      "sourceIndex": 223
+    },
+    {
+      "id": "satking-math-046",
+      "sourceIndex": 225
+    },
+    {
+      "id": "satking-math-048",
+      "sourceIndex": 227
+    },
+    {
+      "id": "satking-math-051",
+      "sourceIndex": 230
+    },
+    {
+      "id": "satking-math-053",
+      "sourceIndex": 232
+    },
+    {
+      "id": "satking-math-057",
+      "sourceIndex": 236
+    },
+    {
+      "id": "satking-math-060",
+      "sourceIndex": 239
+    },
+    {
+      "id": "satking-math-062",
+      "sourceIndex": 241
+    },
+    {
+      "id": "satking-math-065",
+      "sourceIndex": 244
+    },
+    {
+      "id": "satking-math-068",
+      "sourceIndex": 247
+    },
+    {
+      "id": "satking-math-070",
+      "sourceIndex": 249
+    },
+    {
+      "id": "satking-math-073",
+      "sourceIndex": 252
+    },
+    {
+      "id": "satking-math-075",
+      "sourceIndex": 254
+    },
+    {
+      "id": "satking-math-078",
+      "sourceIndex": 257
+    },
+    {
+      "id": "satking-math-080",
+      "sourceIndex": 259
+    },
+    {
+      "id": "satking-math-083",
+      "sourceIndex": 262
+    },
+    {
+      "id": "satking-math-085",
+      "sourceIndex": 264
+    },
+    {
+      "id": "satking-math-087",
+      "sourceIndex": 266
+    },
+    {
+      "id": "satking-math-090",
+      "sourceIndex": 269
+    },
+    {
+      "id": "satking-math-092",
+      "sourceIndex": 271
+    },
+    {
+      "id": "satking-math-095",
+      "sourceIndex": 274
+    },
+    {
+      "id": "satking-math-097",
+      "sourceIndex": 276
+    },
+    {
+      "id": "satking-math-100",
+      "sourceIndex": 279
+    },
+    {
+      "id": "satking-math-103",
+      "sourceIndex": 282
+    },
+    {
+      "id": "satking-math-106",
+      "sourceIndex": 285
+    },
+    {
+      "id": "satking-math-108",
+      "sourceIndex": 287
+    },
+    {
+      "id": "satking-math-111",
+      "sourceIndex": 290
+    },
+    {
+      "id": "satking-math-113",
+      "sourceIndex": 292
+    },
+    {
+      "id": "satking-math-115",
+      "sourceIndex": 294
+    },
+    {
+      "id": "satking-math-118",
+      "sourceIndex": 297
+    },
+    {
+      "id": "satking-math-120",
+      "sourceIndex": 299
+    },
+    {
+      "id": "satking-math-123",
+      "sourceIndex": 302
+    },
+    {
+      "id": "satking-math-125",
+      "sourceIndex": 304
+    },
+    {
+      "id": "satking-math-128",
+      "sourceIndex": 307
+    },
+    {
+      "id": "satking-math-131",
+      "sourceIndex": 310
+    },
+    {
+      "id": "satking-math-133",
+      "sourceIndex": 312
+    },
+    {
+      "id": "satking-math-136",
+      "sourceIndex": 315
+    },
+    {
+      "id": "satking-math-138",
+      "sourceIndex": 317
+    },
+    {
+      "id": "satking-math-141",
+      "sourceIndex": 320
+    },
+    {
+      "id": "satking-math-143",
+      "sourceIndex": 322
+    },
+    {
+      "id": "satking-math-146",
+      "sourceIndex": 325
+    },
+    {
+      "id": "satking-math-148",
+      "sourceIndex": 327
+    },
+    {
+      "id": "satking-math-152",
+      "sourceIndex": 331
+    },
+    {
+      "id": "satking-math-155",
+      "sourceIndex": 334
+    },
+    {
+      "id": "satking-math-158",
+      "sourceIndex": 337
+    },
+    {
+      "id": "satking-math-160",
+      "sourceIndex": 339
+    },
+    {
+      "id": "satking-math-163",
+      "sourceIndex": 342
+    },
+    {
+      "id": "satking-math-166",
+      "sourceIndex": 345
+    },
+    {
+      "id": "satking-math-168",
+      "sourceIndex": 347
+    },
+    {
+      "id": "satking-math-170",
+      "sourceIndex": 349
+    },
+    {
+      "id": "satking-math-173",
+      "sourceIndex": 352
+    },
+    {
+      "id": "satking-math-176",
+      "sourceIndex": 355
+    },
+    {
+      "id": "satking-math-179",
+      "sourceIndex": 358
+    }
+  ],
+  "upgraded": [
+    {
+      "id": "satking-math-002",
+      "sourceIndex": 181
+    },
+    {
+      "id": "satking-math-005",
+      "sourceIndex": 184
+    },
+    {
+      "id": "satking-math-007",
+      "sourceIndex": 186
+    },
+    {
+      "id": "satking-math-010",
+      "sourceIndex": 189
+    },
+    {
+      "id": "satking-math-012",
+      "sourceIndex": 191
+    },
+    {
+      "id": "satking-math-015",
+      "sourceIndex": 194
+    },
+    {
+      "id": "satking-math-017",
+      "sourceIndex": 196
+    },
+    {
+      "id": "satking-math-020",
+      "sourceIndex": 199
+    },
+    {
+      "id": "satking-math-022",
+      "sourceIndex": 201
+    },
+    {
+      "id": "satking-math-026",
+      "sourceIndex": 205
+    },
+    {
+      "id": "satking-math-029",
+      "sourceIndex": 208
+    },
+    {
+      "id": "satking-math-031",
+      "sourceIndex": 210
+    },
+    {
+      "id": "satking-math-034",
+      "sourceIndex": 213
+    },
+    {
+      "id": "satking-math-036",
+      "sourceIndex": 215
+    },
+    {
+      "id": "satking-math-039",
+      "sourceIndex": 218
+    },
+    {
+      "id": "satking-math-041",
+      "sourceIndex": 220
+    },
+    {
+      "id": "satking-math-044",
+      "sourceIndex": 223
+    },
+    {
+      "id": "satking-math-046",
+      "sourceIndex": 225
+    },
+    {
+      "id": "satking-math-048",
+      "sourceIndex": 227
+    },
+    {
+      "id": "satking-math-051",
+      "sourceIndex": 230
+    },
+    {
+      "id": "satking-math-053",
+      "sourceIndex": 232
+    },
+    {
+      "id": "satking-math-057",
+      "sourceIndex": 236
+    },
+    {
+      "id": "satking-math-060",
+      "sourceIndex": 239
+    },
+    {
+      "id": "satking-math-062",
+      "sourceIndex": 241
+    },
+    {
+      "id": "satking-math-065",
+      "sourceIndex": 244
+    },
+    {
+      "id": "satking-math-068",
+      "sourceIndex": 247
+    },
+    {
+      "id": "satking-math-070",
+      "sourceIndex": 249
+    },
+    {
+      "id": "satking-math-073",
+      "sourceIndex": 252
+    },
+    {
+      "id": "satking-math-075",
+      "sourceIndex": 254
+    },
+    {
+      "id": "satking-math-078",
+      "sourceIndex": 257
+    },
+    {
+      "id": "satking-math-080",
+      "sourceIndex": 259
+    },
+    {
+      "id": "satking-math-083",
+      "sourceIndex": 262
+    },
+    {
+      "id": "satking-math-085",
+      "sourceIndex": 264
+    },
+    {
+      "id": "satking-math-087",
+      "sourceIndex": 266
+    },
+    {
+      "id": "satking-math-090",
+      "sourceIndex": 269
+    },
+    {
+      "id": "satking-math-092",
+      "sourceIndex": 271
+    },
+    {
+      "id": "satking-math-095",
+      "sourceIndex": 274
+    },
+    {
+      "id": "satking-math-097",
+      "sourceIndex": 276
+    },
+    {
+      "id": "satking-math-100",
+      "sourceIndex": 279
+    },
+    {
+      "id": "satking-math-103",
+      "sourceIndex": 282
+    },
+    {
+      "id": "satking-math-106",
+      "sourceIndex": 285
+    },
+    {
+      "id": "satking-math-108",
+      "sourceIndex": 287
+    },
+    {
+      "id": "satking-math-111",
+      "sourceIndex": 290
+    },
+    {
+      "id": "satking-math-113",
+      "sourceIndex": 292
+    },
+    {
+      "id": "satking-math-115",
+      "sourceIndex": 294
+    },
+    {
+      "id": "satking-math-118",
+      "sourceIndex": 297
+    },
+    {
+      "id": "satking-math-120",
+      "sourceIndex": 299
+    },
+    {
+      "id": "satking-math-123",
+      "sourceIndex": 302
+    },
+    {
+      "id": "satking-math-125",
+      "sourceIndex": 304
+    },
+    {
+      "id": "satking-math-128",
+      "sourceIndex": 307
+    },
+    {
+      "id": "satking-math-131",
+      "sourceIndex": 310
+    },
+    {
+      "id": "satking-math-133",
+      "sourceIndex": 312
+    },
+    {
+      "id": "satking-math-136",
+      "sourceIndex": 315
+    },
+    {
+      "id": "satking-math-138",
+      "sourceIndex": 317
+    },
+    {
+      "id": "satking-math-141",
+      "sourceIndex": 320
+    },
+    {
+      "id": "satking-math-143",
+      "sourceIndex": 322
+    },
+    {
+      "id": "satking-math-146",
+      "sourceIndex": 325
+    },
+    {
+      "id": "satking-math-148",
+      "sourceIndex": 327
+    },
+    {
+      "id": "satking-math-152",
+      "sourceIndex": 331
+    },
+    {
+      "id": "satking-math-155",
+      "sourceIndex": 334
+    },
+    {
+      "id": "satking-math-158",
+      "sourceIndex": 337
+    },
+    {
+      "id": "satking-math-160",
+      "sourceIndex": 339
+    },
+    {
+      "id": "satking-math-163",
+      "sourceIndex": 342
+    },
+    {
+      "id": "satking-math-166",
+      "sourceIndex": 345
+    },
+    {
+      "id": "satking-math-168",
+      "sourceIndex": 347
+    },
+    {
+      "id": "satking-math-170",
+      "sourceIndex": 349
+    },
+    {
+      "id": "satking-math-173",
+      "sourceIndex": 352
+    },
+    {
+      "id": "satking-math-176",
+      "sourceIndex": 355
+    },
+    {
+      "id": "satking-math-179",
+      "sourceIndex": 358
+    }
+  ],
+  "blocked": [],
+  "remainingDepthFlags": [],
+  "attemptedCount": 69,
+  "upgradedCount": 69,
+  "blockedCount": 0,
+  "remainingDepthFlagCount": 0
+}

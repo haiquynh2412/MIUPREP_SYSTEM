@@ -1,0 +1,31 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5174,
+    strictPort: true,
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'vendor-react';
+            }
+            if (id.includes('tauri-apps')) {
+              return 'vendor-tauri';
+            }
+            return 'vendor-others';
+          }
+          if (id.includes('packages/content/src/mocks')) {
+            return 'ielts-mock-exams';
+          }
+        }
+      }
+    }
+  }
+})

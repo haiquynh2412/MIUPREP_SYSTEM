@@ -1,0 +1,473 @@
+{
+  "apply": true,
+  "version": "opensat-p0-math-quality-repair-2026-05-20",
+  "targetCount": 92,
+  "repaired": [
+    {
+      "id": "random_id_c4",
+      "sourceIndex": 1448,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_c3",
+      "sourceIndex": 1470,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_c4",
+      "sourceIndex": 1481,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_c3",
+      "sourceIndex": 1533,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "6b2173d9",
+      "sourceIndex": 1554,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "84fd464d",
+      "sourceIndex": 1559,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "67d896a1",
+      "sourceIndex": 1603,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "92b8c91d",
+      "sourceIndex": 1621,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_b8",
+      "sourceIndex": 1632,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_c3",
+      "sourceIndex": 1653,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_8",
+      "sourceIndex": 1656,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_c8",
+      "sourceIndex": 1683,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_c1",
+      "sourceIndex": 1726,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "78a213bf",
+      "sourceIndex": 1767,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_a1",
+      "sourceIndex": 1775,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_b9",
+      "sourceIndex": 1779,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_e3",
+      "sourceIndex": 1815,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "8976e141",
+      "sourceIndex": 1832,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "97fb89f7",
+      "sourceIndex": 1848,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_c1",
+      "sourceIndex": 1893,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "a3d227c8",
+      "sourceIndex": 1921,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_a8",
+      "sourceIndex": 1941,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "f21b71c2",
+      "sourceIndex": 2010,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "e8a7453f",
+      "sourceIndex": 2020,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_c4",
+      "sourceIndex": 2029,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_d4",
+      "sourceIndex": 2076,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_b6",
+      "sourceIndex": 2101,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "b61e7b1d",
+      "sourceIndex": 2121,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_c5",
+      "sourceIndex": 2141,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_a7",
+      "sourceIndex": 2157,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "4444222",
+      "sourceIndex": 2158,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_d12",
+      "sourceIndex": 2206,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_b9",
+      "sourceIndex": 2226,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_15",
+      "sourceIndex": 2235,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_c1",
+      "sourceIndex": 2239,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_a3",
+      "sourceIndex": 2250,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_b8",
+      "sourceIndex": 2257,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_a4",
+      "sourceIndex": 2285,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "f452410b",
+      "sourceIndex": 2286,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_a9",
+      "sourceIndex": 2294,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_a9",
+      "sourceIndex": 2311,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "b587417a",
+      "sourceIndex": 2325,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_1",
+      "sourceIndex": 2330,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "random_id_c5",
+      "sourceIndex": 2368,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "12d8c11d",
+      "sourceIndex": 2375,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_c7",
+      "sourceIndex": 2385,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_a8",
+      "sourceIndex": 2392,
+      "correctAnswer": "C"
+    },
+    {
+      "id": "random_id_27",
+      "sourceIndex": 2411,
+      "correctAnswer": "D"
+    },
+    {
+      "id": "13b8a32c",
+      "sourceIndex": 2432,
+      "correctAnswer": "B"
+    },
+    {
+      "id": "a22d8ac5",
+      "sourceIndex": 2436,
+      "correctAnswer": "A"
+    },
+    {
+      "id": "random_id_12",
+      "sourceIndex": 2458,
+      "correctAnswer": "C"
+    }
+  ],
+  "demotedNeedsReview": [
+    {
+      "id": "random_id_c5",
+      "sourceIndex": 1471,
+      "reason": "computed answer is -3, but no choice contains -3"
+    },
+    {
+      "id": "a23b7c3e",
+      "sourceIndex": 1477,
+      "reason": "computed answer is 15, but no choice contains 15"
+    },
+    {
+      "id": "74735a92",
+      "sourceIndex": 1497,
+      "reason": "triangle data give AC = 10 sin(80)/sin(60), not any listed choice"
+    },
+    {
+      "id": "random_id_b4",
+      "sourceIndex": 1579,
+      "reason": "computed answer is -5, but no choice contains -5"
+    },
+    {
+      "id": "random_id_c8",
+      "sourceIndex": 1580,
+      "reason": "inverse value is 16, but no choice contains 16"
+    },
+    {
+      "id": "15624ef5",
+      "sourceIndex": 1604,
+      "reason": "equation gives a = 3 or -3/2, but no choice contains either exact value"
+    },
+    {
+      "id": "a9e73934",
+      "sourceIndex": 1616,
+      "reason": "computed answer is 13, but no choice contains 13"
+    },
+    {
+      "id": "random_id_42",
+      "sourceIndex": 1648,
+      "reason": "angle ABC should be 90 degrees from the diameter, but no choice contains 90"
+    },
+    {
+      "id": "random_id_c8",
+      "sourceIndex": 1662,
+      "reason": "radius is 3sqrt(2), but no choice contains 3sqrt(2)"
+    },
+    {
+      "id": "45e13b6a",
+      "sourceIndex": 1675,
+      "reason": "tangent condition gives b = +/-5sqrt(17), but no choice contains that value"
+    },
+    {
+      "id": "random_id_c1",
+      "sourceIndex": 1684,
+      "reason": "computed answer is -1, but no choice contains -1"
+    },
+    {
+      "id": "435b892d",
+      "sourceIndex": 1701,
+      "reason": "computed answer is 15, but no choice contains 15"
+    },
+    {
+      "id": "random_id_a9",
+      "sourceIndex": 1709,
+      "reason": "computed answer is 15, but no choice contains 15"
+    },
+    {
+      "id": "f1326ef1",
+      "sourceIndex": 1730,
+      "reason": "computed answer is 1, but no choice contains 1"
+    },
+    {
+      "id": "random_id_c8",
+      "sourceIndex": 1765,
+      "reason": "radius is 3sqrt(2), but no choice contains 3sqrt(2)"
+    },
+    {
+      "id": "7e3f821b",
+      "sourceIndex": 1773,
+      "reason": "system gives x+y = 27/5, but no choice contains 27/5"
+    },
+    {
+      "id": "random_id_b6",
+      "sourceIndex": 1788,
+      "reason": "distance is 3sqrt(2), but no choice contains 3sqrt(2)"
+    },
+    {
+      "id": "random_id_34",
+      "sourceIndex": 1792,
+      "reason": "computed answer is -5, but no choice contains -5"
+    },
+    {
+      "id": "random_id_c1",
+      "sourceIndex": 1807,
+      "reason": "incircle area is 3pi, but no choice contains 3pi"
+    },
+    {
+      "id": "a23f283c",
+      "sourceIndex": 1823,
+      "reason": "f(2)+f(3) is 13, but no choice contains 13"
+    },
+    {
+      "id": "random_id_c5",
+      "sourceIndex": 1861,
+      "reason": "log equation gives (-1 + 3sqrt(5))/2, not an exact listed choice"
+    },
+    {
+      "id": "a763b7a2",
+      "sourceIndex": 1897,
+      "reason": "parabola has no real x-intercepts, so the requested sum is undefined"
+    },
+    {
+      "id": "a12f3478",
+      "sourceIndex": 1945,
+      "reason": "intersection distance is sqrt(2), but no choice contains sqrt(2)"
+    },
+    {
+      "id": "random_id_a8",
+      "sourceIndex": 1966,
+      "reason": "budget calculation gives 18 tickets, but no choice contains 18"
+    },
+    {
+      "id": "3a6bd3a7",
+      "sourceIndex": 1994,
+      "reason": "x1^2 + x2^2 is 37/4, but no choice contains 37/4"
+    },
+    {
+      "id": "4c90f53e",
+      "sourceIndex": 2004,
+      "reason": "f(2) is 5/3, but no choice contains 5/3"
+    },
+    {
+      "id": "random_id_d9",
+      "sourceIndex": 2005,
+      "reason": "equation gives x = 16, but no choice contains 16"
+    },
+    {
+      "id": "random_id_c4",
+      "sourceIndex": 2009,
+      "reason": "computed answer is 2/3, but no choice contains 2/3"
+    },
+    {
+      "id": "2ac7b45a",
+      "sourceIndex": 2038,
+      "reason": "conditional probability is 20/50 = 2/5, but no choice contains 2/5"
+    },
+    {
+      "id": "4e93f543",
+      "sourceIndex": 2075,
+      "reason": "prompt is missing the garden dimensions needed to verify the keyed area"
+    },
+    {
+      "id": "24d6843a",
+      "sourceIndex": 2125,
+      "reason": "equation gives a = 3 or a = -3; the item is ambiguous as written"
+    },
+    {
+      "id": "random_id_c1",
+      "sourceIndex": 2164,
+      "reason": "system gives x-y = 12/7, but no choice contains 12/7"
+    },
+    {
+      "id": "random_id_c8",
+      "sourceIndex": 2174,
+      "reason": "ratio gives 45 oatmeal cookies, but no choice contains 45"
+    },
+    {
+      "id": "random_id_11",
+      "sourceIndex": 2212,
+      "reason": "computed answer is 9, but no choice contains 9"
+    },
+    {
+      "id": "random_id_a2",
+      "sourceIndex": 2255,
+      "reason": "log equation gives 1 + 2sqrt(3), but no choice contains that value"
+    },
+    {
+      "id": "9284ac76",
+      "sourceIndex": 2266,
+      "reason": "radius is 6sqrt(2), but no choice contains 6sqrt(2)"
+    },
+    {
+      "id": "random_id_a5",
+      "sourceIndex": 2298,
+      "reason": "prompt is missing the expression; explanation gives b = 1, but no choice contains 1"
+    },
+    {
+      "id": "random_id_b2",
+      "sourceIndex": 2299,
+      "reason": "sector area is 5pi, but no choice contains 5pi"
+    },
+    {
+      "id": "random_id_a7",
+      "sourceIndex": 2315,
+      "reason": "computed answer is 13, but no choice contains 13"
+    },
+    {
+      "id": "random_id_a10",
+      "sourceIndex": 2350,
+      "reason": "computed answer is 17, but no choice contains 17"
+    },
+    {
+      "id": "28f140fd",
+      "sourceIndex": 2423,
+      "reason": "strawberry count is 54, but no choice contains 54"
+    }
+  ],
+  "blocked": [],
+  "repairedCount": 51,
+  "demotedNeedsReviewCount": 41,
+  "blockedCount": 0
+}

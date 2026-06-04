@@ -1,0 +1,1292 @@
+{
+  "id": "cam-cpe1-test2",
+  "title": "Cambridge Certificate of Proficiency in English 1 - Test 2",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Cambridge Certificate of Proficiency in English 1, Cambridge University Press",
+  "sections": [
+    {
+      "id": "cam-cpe1-t2-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Language</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You and I belong to a species with a remarkable ability; we can shape events in each other's brains with exquisite precision. Language is so (1) ______ woven into human experience that it is scarcely possible to imagine life without it. (2) ______ are that if you find two or more people together anywhere on earth, they will soon be (3) ______ words. When there is no one to talk with, people talk to themselves, to their dogs, even to their plants. I like to describe the skill of language as an ‘instinct’. This (4) ______ the idea that people know how to talk in more or less the sense that spiders know how to spin webs. Web-spinning was not invented by some unsung spider genius, and does not (5) ______ having had the right education or on having an (6) ______ for architecture or the construction trades.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Climate and Weather</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Climate and weather, which are mainly created by the air around us, profoundly affect the lives and distribution of animals and plants. Climate can be a dominating force on the character of landscapes. For example, warmth and wetness all the year round allow the growth of tropical jungles, which are natural (7) ______ troves, with an incredible diversity of species. (8) ______ cold, windswept areas can muster only a scattered selection of living things.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t2-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t2-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. rigidly",
+                "B. tightly",
+                "C. stiffly",
+                "D. tautly"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Collocation cố định: 'tightly woven' nghĩa là 'được đan kết chặt chẽ / gắn bó khăng khít'. Bẫy: 'rigidly' (A) = cứng nhắc. 'stiffly' (C) = đơ, cứng. 'tautly' (D) = căng thẳng. Không từ nào đi tự nhiên với 'woven' để chỉ sự gắn kết sâu sắc của ngôn ngữ với trải nghiệm con người. Chuyên đề: Collocations — tightly + woven.",
+              "answerLocation": "Language is so tightly woven into human",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. Chances",
+                "B. Probabilities",
+                "C. Reasons",
+                "D. Explanations"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Cấu trúc cố định: 'Chances are that...' nghĩa là 'Khả năng cao là / Rất có thể là...'. Bẫy: 'Probabilities' (B) đòi hỏi cấu trúc 'The probability is that...'. 'Reasons' (C) và 'Explanations' (D) không đi với cấu trúc '... are that' để chỉ khả năng xảy ra của một sự việc. Chuyên đề: Idioms/Grammar structures — chances.",
+              "answerLocation": "Chances are that if you find two or more",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. sharing",
+                "B. reciprocating",
+                "C. exchanging",
+                "D. trading"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Collocation: 'exchanging words' nghĩa là 'trò chuyện / trao đổi lời nói'. Bẫy: 'sharing' (A) = chia sẻ. 'reciprocating' (B) = đáp lại. 'trading' (D) = giao dịch / mua bán. Cụm từ cố định để chỉ việc nói chuyện qua lại tự nhiên giữa người với người là 'exchange words'. Chuyên đề: Collocations — exchange + words.",
+              "answerLocation": "they will soon be exchanging words",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. transmits",
+                "B. disseminates",
+                "C. transfers",
+                "D. conveys"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Động từ 'convey' ở đây mang nghĩa là 'truyền tải / thể hiện (ý tưởng, thông điệp)'. Câu này nghĩa là: Cụm từ này truyền tải ý tưởng rằng mọi người biết nói... Bẫy: 'transmits' (A) = truyền (tín hiệu, bệnh). 'disseminates' (B) = gieo rắc / lan truyền (thông tin rộng rãi). 'transfers' (C) = chuyển giao (tài sản, vị trí). Chuyên đề: Vocabulary — convey. Correct option focus: D - conveys. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "This conveys the idea that people know",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. build on",
+                "B. depend on",
+                "C. count on",
+                "D. bank on"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Phrasal verb: 'depend on' nghĩa là 'phụ thuộc vào'. Dựa trên giới từ 'on' ở ngay phía sau ô trống ('does not depend on having had...'). Bẫy: 'build on' (A) = xây dựng trên nền tảng. 'count on' (C) và 'bank on' (D) = trông cậy vào ai đó, không hợp nghĩa ở đây. Chuyên đề: Phrasal verbs — depend on.",
+              "answerLocation": "does not depend on having had the right",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. aptitude",
+                "B. applicability",
+                "C. intuition",
+                "D. intelligence"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'aptitude for' là cụm cố định nghĩa là 'năng khiếu / năng lực thiên bẩm về việc gì'. Dựa vào giới từ 'for' ngay phía sau ('having an aptitude for architecture'). Bẫy: 'applicability' (B) = tính khả dụng. 'intuition' (C) = trực giác. 'intelligence' (D) = trí thông minh (đi với giới từ 'in' hoặc 'at'). Chuyên đề: Noun + preposition — aptitude for.",
+              "answerLocation": "having an aptitude for architecture",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. prize",
+                "B. treasure",
+                "C. fortune",
+                "D. trophy"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Collocation cố định: 'treasure trove' nghĩa là 'kho tàng / kho báu vô giá'. Rừng nhiệt đới được mô tả như một kho tàng thiên nhiên chứa đựng sự đa dạng loài kỳ diệu. Bẫy: 'prize' (A), 'fortune' (C), và 'trophy' (D) không kết hợp với 'trove'. Chuyên đề: Collocations — treasure + trove.",
+              "answerLocation": "jungles, which are natural treasure troves",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. Subsequently",
+                "B. Conversely",
+                "C. Simultaneously",
+                "D. Eventually"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Trạng từ liên kết 'Conversely' (= on the other hand / in contrast) diễn tả sự đối lập: 'Ngược lại, các khu vực lạnh giá và lộng gió chỉ có một lượng sinh vật ít ỏi'. Bẫy: 'Subsequently' (A) = sau đó. 'Simultaneously' (C) = đồng thời. 'Eventually' (D) = cuối cùng thì. Chuyên đề: Linking adverbs — conversely.",
+              "answerLocation": "Conversely, cold, windswept areas can",
+              "category": "cpe_part_1",
+              "source": "Page 35, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t2-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 9-16, read the text below and think of the word which best fits each space. Use only one word in each space. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Garden Wildlife</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The age of a garden (0) <b>has</b> a great effect on the abundance of its wildlife. Since most animals depend ultimately on plants for their food, animal life cannot easily establish (9) ______ in the absence of plant life. A plot of land behind a newly-built house, even (10) ______ covered with a layer of good soil, will support very (11) ______ resident species other (12) ______ microscopic organisms. (13) ______ from the odd worm or spider, not (14) ______ creatures will be able to (15) ______ a living in the garden (16) ______ this stage.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t2-rg-2",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t2-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "itself"
+                ]
+              ],
+              "correctAnswer": "itself",
+              "explanation": "Đáp án 'itself'. Đại từ phản thân bổ nghĩa cho động từ 'establish': 'establish itself' (tự thiết lập / tự sinh sôi định cư). Động từ phản thân biểu đạt đời sống động vật tự cắm rễ sinh sống. Chuyên đề: Reflexive pronouns. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "animal life cannot easily establish itself",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "though"
+                ],
+                [
+                  "when"
+                ],
+                [
+                  "if"
+                ]
+              ],
+              "correctAnswer": "though",
+              "explanation": "Đáp án 'though', 'when' hoặc 'if'. Đi cùng với 'even' phía trước tạo thành liên từ chỉ sự nhượng bộ hoặc giả thuyết: 'even though / when / if covered with a layer...' (ngay cả khi được phủ bởi một lớp đất tốt...). Chuyên đề: Conjunctions — even though/when. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "newly-built house, even though covered with",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "few"
+                ]
+              ],
+              "correctAnswer": "few",
+              "explanation": "Đáp án 'few'. Từ chỉ lượng bổ nghĩa cho danh từ đếm được số nhiều 'resident species': 'support very few resident species' (nuôi dưỡng rất ít loài cư trú). 'Very few' mang nghĩa phủ định gần như không có loài nào. Chuyên đề: Quantifiers — few vs little. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "will support very few resident species",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "than"
+                ]
+              ],
+              "correctAnswer": "than",
+              "explanation": "Đáp án 'than'. Giới từ cố định đi cùng cụm từ so sánh/loại trừ: 'other than...' nghĩa là 'ngoại trừ / khác ngoài (các sinh vật hiển vi)'. Chuyên đề: Prepositions — other than.",
+              "answerLocation": "resident species other than microscopic",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "apart"
+                ],
+                [
+                  "Apart"
+                ]
+              ],
+              "correctAnswer": "apart",
+              "explanation": "Đáp án 'apart' hoặc 'Apart'. Giới từ kép đứng đầu trạng ngữ loại trừ: 'Apart from the odd worm...' (Ngoại trừ con giun hay con nhện kỳ lạ...). Chuyên đề: Prepositions — apart from.",
+              "answerLocation": "Apart from the odd worm or spider",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "many"
+                ]
+              ],
+              "correctAnswer": "many",
+              "explanation": "Đáp án 'many'. Lượng từ đi kèm phủ định bổ nghĩa danh từ số nhiều: 'not many creatures will be able to...' (không có nhiều sinh vật có khả năng...). Chuyên đề: Quantifiers — many. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "not many creatures will be able to",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "make"
+                ],
+                [
+                  "scrape"
+                ]
+              ],
+              "correctAnswer": "make",
+              "explanation": "Đáp án 'make' hoặc 'scrape'. Collocation/Idiom cố định với 'living': 'make a living' hoặc 'scrape a living' nghĩa là 'kiếm sống / sinh tồn'. Ở đây chỉ việc động vật kiếm sống trong môi trường vườn mới. Chuyên đề: Idioms — make/scrape a living.",
+              "answerLocation": "able to make a living in the garden",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16):",
+              "acceptedAnswers": [
+                [
+                  "at"
+                ]
+              ],
+              "correctAnswer": "at",
+              "explanation": "Đáp án 'at'. Giới từ chỉ thời điểm/giai đoạn cố định: 'at this stage' nghĩa là 'ở giai đoạn này'. Chuyên đề: Prepositional phrases — at this stage.",
+              "answerLocation": "in the garden at this stage",
+              "category": "cpe_part_2",
+              "source": "Page 47, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t2-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Language Change</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The phenomenon of language change (0) <b>probably</b> [PROBABLE] attracts more public notice and more (17) ______ [DISAPPROVE] than any other linguistic issue. There is a widely held belief that change must mean deterioration and decay. Older people observe the casual speech of the young and conclude that standards have fallen (18) ______ [APPRECIATE]. It is understandable that many people dislike change, but it is (19) ______ [WISE] to condemn all linguistic (20) ______ [MODIFY]. It is often felt that contemporary language illustrates the problem at its worst, but this belief is shared by every generation. There are indeed cases where linguistic change can lead to problems of unintelligibility and (21) ______ [AMBIGUOUS], and if change is too rapid there can be major communication problems. But as a rule, the parts of language which are (22) ______ [GO] change at any given time are relatively small in comparison to the vast, unchanging areas of language. It is because change is so (23) ______ [FREQUENT] that it is so distinctive and (24) ______ [NOTICE]. Some degree of caution and concern is therefore always desirable for the maintenance of precision and effective communication.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t2-rg-3",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t2-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17):",
+              "acceptedAnswers": [
+                [
+                  "disapproval"
+                ]
+              ],
+              "correctAnswer": "disapproval",
+              "explanation": "Đáp án 'disapproval'. Cần danh từ song song với 'notice' làm tân ngữ của động từ 'attracts': 'more public notice and more [disapproval]'. Từ gốc DISAPPROVE (không tán thành) -> disapproval (sự phản đối, không tán thành). Chuyên đề: Word formation — nouns.",
+              "answerLocation": "notice and more disapproval than any",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18):",
+              "acceptedAnswers": [
+                [
+                  "appreciably"
+                ]
+              ],
+              "correctAnswer": "appreciably",
+              "explanation": "Đáp án 'appreciably'. Cần trạng từ bổ nghĩa cho động từ quá khứ phân từ/tính từ 'fallen' (đã suy giảm một cách rõ rệt / đáng kể). Từ gốc APPRECIATE (trân trọng/nhận thức rõ) -> appreciable (đáng kể) -> appreciably. Chuyên đề: Word formation — adverbs.",
+              "answerLocation": "conclude that standards have fallen appreciably",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19):",
+              "acceptedAnswers": [
+                [
+                  "unwise"
+                ]
+              ],
+              "correctAnswer": "unwise",
+              "explanation": "Đáp án 'unwise'. Cần tính từ mang ý nghĩa phủ định bổ nghĩa sau cấu trúc chủ ngữ giả 'it is [unwise] to...' (thật không khôn ngoan khi...). Từ gốc WISE (khôn ngoan) -> unwise (không khôn ngoan). Chuyên đề: Word formation — prefixes.",
+              "answerLocation": "but it is unwise to condemn all",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20):",
+              "acceptedAnswers": [
+                [
+                  "modification"
+                ],
+                [
+                  "modifications"
+                ]
+              ],
+              "correctAnswer": "modifications",
+              "explanation": "Đáp án 'modification' hoặc 'modifications'. Cần danh từ sau tính từ 'linguistic' làm tân ngữ cho động từ 'condemn': 'all linguistic modifications' (mọi sự sửa đổi/biến đổi ngôn ngữ). Từ gốc MODIFY (sửa đổi) -> modification / modifications. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "condemn all linguistic modification",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21):",
+              "acceptedAnswers": [
+                [
+                  "ambiguity"
+                ]
+              ],
+              "correctAnswer": "ambiguity",
+              "explanation": "Đáp án 'ambiguity'. Cần danh từ song song với 'unintelligibility' (sự khó hiểu) đứng sau giới từ 'of': 'problems of unintelligibility and [ambiguity]' (những vấn đề về sự khó hiểu và tính mơ hồ nhập nhằng). Từ gốc AMBIGUOUS (mơ hồ) -> ambiguity. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "unintelligibility and ambiguity",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22):",
+              "acceptedAnswers": [
+                [
+                  "undergoing"
+                ]
+              ],
+              "correctAnswer": "undergoing",
+              "explanation": "Đáp án 'undergoing'. Cần phân từ dạng chủ động đứng sau động từ to be làm tính từ bổ nghĩa cho 'parts of language which are [undergoing] change' (những bộ phận của ngôn ngữ đang trải qua sự thay đổi). Từ gốc GO -> undergo (trải qua) -> undergoing. Chuyên đề: Word formation — participles.",
+              "answerLocation": "parts of language which are undergoing change",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23):",
+              "acceptedAnswers": [
+                [
+                  "infrequent"
+                ]
+              ],
+              "correctAnswer": "infrequent",
+              "explanation": "Đáp án 'infrequent'. Cần tính từ mang nghĩa phủ định làm vị ngữ sau động từ to be 'because change is so [infrequent]' (bởi vì sự thay đổi quá thưa thớt/ít khi diễn ra). Từ gốc FREQUENT (thường xuyên) -> infrequent (không thường xuyên/ít khi xảy ra). Chuyên đề: Word formation — prefixes.",
+              "answerLocation": "because change is so infrequent that it is",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24):",
+              "acceptedAnswers": [
+                [
+                  "noticeable"
+                ]
+              ],
+              "correctAnswer": "noticeable",
+              "explanation": "Đáp án 'noticeable'. Cần tính từ làm vị ngữ song song với 'distinctive' đứng sau to be: 'it is so distinctive and [noticeable]' (nó rất khác biệt và dễ nhận thấy). Từ gốc NOTICE (chú ý) -> noticeable (đáng chú ý, dễ nhận thấy). Chuyên đề: Word formation — adjectives.",
+              "answerLocation": "distinctive and noticeable",
+              "category": "cpe_part_3",
+              "source": "Page 48, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t2-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<p class='text-slate-700 italic mb-4'>Ví dụ: Do you mind if I watch you while you paint?<br><b>objection</b><br>Do you <u>have any objection to my watching</u> you while you paint?</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t2-rg-4",
+          "instruction": "Write the missing words only.",
+          "questions": [
+            {
+              "id": "q-cpe1-t2-25",
+              "type": "gap_fill",
+              "blankIndex": 25,
+              "instruction": "Only passengers with Gold Star tickets may use the executive lounge. (RESTRICTED) -> Use of the executive lounge ______ possession of Gold Star tickets.",
+              "acceptedAnswers": [
+                [
+                  "is restricted to those in"
+                ],
+                [
+                  "is restricted to passengers in"
+                ],
+                [
+                  "is restricted to those passengers in"
+                ]
+              ],
+              "correctAnswer": "is restricted to those in",
+              "explanation": "Đáp án 'is restricted to those in' / 'is restricted to passengers in'. Cấu trúc bị động giới hạn: 'be restricted to someone/something' = được giới hạn cho ai/cái gì. Ở đây là giới hạn cho những hành khách sở hữu vé Gold Star. Chuyên đề: Passive structures.",
+              "answerLocation": "is restricted to those in / those passengers in / passengers in",
+              "category": "cpe_part_4",
+              "source": "Page 51, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-26",
+              "type": "gap_fill",
+              "blankIndex": 26,
+              "instruction": "You should not lock this door for any reason when the building is open to the public. (CIRCUMSTANCES) -> Under ______ locked when the building is open to the public.",
+              "acceptedAnswers": [
+                [
+                  "no circumstances should this door be"
+                ],
+                [
+                  "no circumstances must this door be"
+                ],
+                [
+                  "no circumstances is this door to be"
+                ]
+              ],
+              "correctAnswer": "no circumstances should this door be",
+              "explanation": "Đáp án 'no circumstances should/must this door be' / 'no circumstances is this door to be'. Cấu trúc đảo ngữ phủ định bắt đầu bằng cụm giới từ: 'Under no circumstances + trợ động từ/modal verb + chủ ngữ + động từ chính' (Dưới bất kỳ hoàn cảnh nào cũng không được...). Chuyên đề: Inversion — negative phrases.",
+              "answerLocation": "no circumstances should/must this door be",
+              "category": "cpe_part_4",
+              "source": "Page 51, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-27",
+              "type": "gap_fill",
+              "blankIndex": 27,
+              "instruction": "Helen was always embarrassed by her father’s jokes. (SOURCE) -> Helen’s father’s jokes ______ Helen.",
+              "acceptedAnswers": [
+                [
+                  "were a constant source of embarrassment to"
+                ],
+                [
+                  "were a continual source of embarrassment to"
+                ],
+                [
+                  "were always a constant source of embarrassment to"
+                ],
+                [
+                  "were always a continual source of embarrassment to"
+                ]
+              ],
+              "correctAnswer": "were a constant source of embarrassment to",
+              "explanation": "Đáp án 'were a constant/continual source of embarrassment to'. Cấu trúc cụm danh từ: 'be a source of embarrassment to someone' = là nguồn cơn gây xấu hổ cho ai. Phải giữ nguyên danh từ 'source' và dùng giới từ 'to' chỉ đối tượng Helen. Chuyên đề: Noun phrases.",
+              "answerLocation": "were (always) a (constant/continual) source of (continual) embarrassment to",
+              "category": "cpe_part_4",
+              "source": "Page 51, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-28",
+              "type": "gap_fill",
+              "blankIndex": 28,
+              "instruction": "Damien paid little attention to his brother’s warnings. (NOTICE) -> Damien didn't ______ his brother's warnings.",
+              "acceptedAnswers": [
+                [
+                  "take much notice of"
+                ],
+                [
+                  "take a lot of notice of"
+                ]
+              ],
+              "correctAnswer": "take much notice of",
+              "explanation": "Đáp án 'take much notice of' / 'take a lot of notice of'. Cấu trúc cụm động từ phủ định: 'take notice of something' = chú ý đến cái gì. Ở dạng phủ định 'didn't pay attention' đổi thành 'didn't take much notice of'. Chuyên đề: Collocations — notice.",
+              "answerLocation": "take much/ take a lot of notice of",
+              "category": "cpe_part_4",
+              "source": "Page 52, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-29",
+              "type": "gap_fill",
+              "blankIndex": 29,
+              "instruction": "In Colin's opinion, he hasn't done anything he should apologise for. (CONCERNED) -> As ______ , he hasn’t done anything he should apologise for.",
+              "acceptedAnswers": [
+                [
+                  "far as Colin is concerned"
+                ],
+                [
+                  "far as Colin's concerned"
+                ]
+              ],
+              "correctAnswer": "far as Colin is concerned",
+              "explanation": "Đáp án 'far as Colin is/’s concerned'. Cấu trúc bày tỏ quan điểm cá nhân: 'As far as someone is concerned' = Theo như ai đó nghĩ / Về phần của ai đó. Chuyên đề: Conversational patterns.",
+              "answerLocation": "far as Colin is/’s concerned",
+              "category": "cpe_part_4",
+              "source": "Page 52, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-30",
+              "type": "gap_fill",
+              "blankIndex": 30,
+              "instruction": "Dr Potter was offended by some of the remarks that were made about her work. (EXCEPTION) -> Dr Potter ______ some of the remarks that were made about her work.",
+              "acceptedAnswers": [
+                [
+                  "took exception to"
+                ]
+              ],
+              "correctAnswer": "took exception to",
+              "explanation": "Đáp án 'took exception to'. Idiom cố định: 'take exception to something' = cảm thấy bị xúc phạm / phản đối kịch liệt điều gì. Vì câu ở quá khứ nên chia 'took'. Chuyên đề: Idioms — exception.",
+              "answerLocation": "took exception to",
+              "category": "cpe_part_4",
+              "source": "Page 52, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t2-sec-5",
+      "title": "Part 5: Multiple Choice Reading",
+      "instructions": "For questions 31-36, read the text below and choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Razor’s Edge (Extract)</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>I have never begun a novel with more misgiving. If I call it a novel it is only because I don’t know what else to call it. I have little story to tell and I end neither with a death or a marriage. Instead I leave my reader in the air. This book consists of my recollections of a man with whom I was thrown into close contact only at long intervals, and I have little knowledge of what happened to him in between. I suppose that by the exercise of invention I could fill the gaps plausibly enough and so make my narrative more coherent; but I have no wish to do that. I only want to set down what I know.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>To save embarrassment to people still living I have given to the persons who play a part in this story names of my own contriving, and I have in other ways taken pains to make sure that no one should recognise them. The man I am writing about is not famous. It may be that he never will be. It may be that when his life at last comes to an end he will leave no more trace of his sojourn on earth than a stone thrown into a river leaves on the surface of the water. Then my book, if it is read at all, will be read only for what intrinsic interest it may possess. But it may be that the way of life that he has chosen for himself and the peculiar strength and sweetness of his character may have an ever-growing influence over his fellow men so that, long after his death perhaps, it may be realised that there lived in this age a very remarkable creature. Then it will be quite clear of whom I write in this book and those who want to know at least a little about his early life may find in it something to their purpose. I think my book, within its acknowledged limitations, will be a useful source of information to my friend’s biographers.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>I do not pretend that the conversations I have recorded can be regarded as verbatim reports. I never kept notes of what was said on this or the other occasions, but I have a good memory for what concerns me, and though I have put these conversations in my own words they faithfully represent, I believe, what was said. I remarked a little while back that I have invented nothing but I have taken the liberty that historians have taken to put into the mouths of the persons of my narrative speeches that I did not myself hear and could not possibly have heard. I have done this for the same reasons that the historians have, to give liveliness and verisimilitude to scenes that would have been ineffective if they had been merely recounted. I want to be read and I think I am justified in doing what I can to make my book readable. The intelligent reader will easily see for himself where I have used this artifice, and he is at perfect liberty to reject it.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Another reason that has caused me to embark upon this work with apprehension is that the persons I have chiefly to deal with are of another culture. It is very difficult to know people and I don’t think one can ever really know any but one’s own countrymen. For men and women are not only themselves; they are also the region in which they were born, the city apartment or the farm in which they learnt to walk, the games they played as children, the food they ate, the schools they attended, the sports they followed and the poets they read. It is all these things that have made them what they are, and these are the things that you can’t come to know by hearsay, you can only know them if you have lived them. You can only know if you are them. And because you cannot know persons of a nation foreign to you except from observation, it is difficult to give them credibility in the pages of a book. I have never attempted to deal with any but my own countrymen, and if I have ventured to do otherwise in short stories it is because in them you can treat your characters more summarily. You give the reader broad indications and leave him to fill in the details. In this book, I do not pretend that my characters are as they would see themselves; they are seen, as is my main character, through my own eyes.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t2-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t2-31",
+              "type": "multiple_choice",
+              "instruction": "In the first paragraph, the author reveals that he",
+              "options": [
+                "A. is dissatisfied with the conclusion of his novel.",
+                "B. has superficial understanding of his main character.",
+                "C. has resisted employing certain literary techniques.",
+                "D. is disapproving of mainstream fiction writing."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở cuối đoạn 1, tác giả cho biết: 'I suppose that by the exercise of invention I could fill the gaps plausibly enough and so make my narrative more coherent; but I have no wish to do that.' (Tôi cho rằng nhờ sự hư cấu sáng tạo tôi có thể lấp đầy các khoảng trống một cách hợp lý và làm cho truyện mạch lạc hơn; nhưng tôi không muốn làm điều đó). Việc từ chối bịa đặt/hư cấu tình tiết chứng minh tác giả đã kháng cự lại việc sử dụng một số kỹ thuật văn học thông thường. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "I suppose that by the exercise of invention I could fill the gaps... but I have no wish to do that.",
+              "category": "cpe_part_5",
+              "source": "Page 44, Question 34, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-32",
+              "type": "multiple_choice",
+              "instruction": "In discussing the identity of the characters in the novel, the author shows his",
+              "options": [
+                "A. respect for historical fact.",
+                "B. sensitivity towards others.",
+                "C. awareness of stylistic conventions.",
+                "D. understanding of human relationships."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Ở đầu đoạn 2, tác giả giải thích việc đổi tên nhân vật: 'To save embarrassment to people still living I have given to the persons who play a part in this story names of my own contriving...' (Để tránh gây bối rối/khó xử cho những người còn sống, tôi đã đặt cho các nhân vật những cái tên do tôi tự nghĩ ra...). Điều này chứng tỏ sự tinh tế, nhạy cảm của tác giả đối với cảm xúc của người khác. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "To save embarrassment to people still living I have given to the persons",
+              "category": "cpe_part_5",
+              "source": "Page 44, Question 35, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-33",
+              "type": "multiple_choice",
+              "instruction": "What does the author suggest about his main character in paragraph 2?",
+              "options": [
+                "A. His appeal to the reader is difficult to predict.",
+                "B. The role he plays is likely to be controversial.",
+                "C. The choices he makes are rather conventional.",
+                "D. His approach to life reflects the era in which he lived."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Tác giả suy ngẫm về sự tiếp nhận của người đọc đối với nhân vật này: 'Then my book, if it is read at all, will be read only for what intrinsic interest it may possess. But it may be that... it may be realised that there lived in this age a very remarkable creature.' (Khi đó cuốn sách của tôi, nếu có được đọc đi nữa, sẽ chỉ được đọc vì sự thú vị nội tại mà nó sở hữu. Nhưng rất có thể là... người ta sẽ nhận ra có một sinh vật rất đặc biệt từng sống ở thời đại này). Sự nước đôi này cho thấy sức hút của nhân vật đối với người đọc là rất khó dự đoán trước. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "Then my book, if it is read at all, will be read only for what intrinsic interest it may possess. But it may be that",
+              "category": "cpe_part_5",
+              "source": "Page 44, Question 36, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-34",
+              "type": "multiple_choice",
+              "instruction": "In discussing the dialogue in the novel, the author states that it",
+              "options": [
+                "A. involves some distortion of the facts.",
+                "B. contains some obvious literary embellishments.",
+                "C. can be trusted to reflect the spirit of the age.",
+                "D. has been re-worked to fit the style of the novel."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Tác giả thừa nhận ông đã chèn thêm những lời thoại hư cấu mà ông không nghe trực tiếp: 'I have taken the liberty... to put into the mouths of the persons of my narrative speeches that I did not myself hear... to give liveliness and verisimilitude to scenes' (Tôi đã xin phép được... đặt vào miệng các nhân vật những câu nói mà tôi không tự nghe thấy... để mang lại sự sống động và chân thực cho các cảnh quay). Đây chính là sự tô điểm/thêu dệt văn học rõ rệt để tăng tính hấp dẫn. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "taken the liberty... to put into the mouths... speeches that I did not myself hear... to give liveliness",
+              "category": "cpe_part_5",
+              "source": "Page 44, Question 37, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-35",
+              "type": "multiple_choice",
+              "instruction": "In the third paragraph, while expanding on his inventiveness as a writer, the author",
+              "options": [
+                "A. denies an influence on his work.",
+                "B. supports an earlier statement that he made.",
+                "C. corrects a false assumption about his style.",
+                "D. defends the technique he has used in the novel."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Tác giả biện hộ cho việc sử dụng các biện pháp hư cấu lời thoại của mình: 'I want to be read and I think I am justified in doing what I can to make my book readable.' (Tôi muốn được đọc và tôi nghĩ mình có lý do chính đáng khi làm những gì có thể để làm cho cuốn sách dễ đọc hơn). Điều này thể hiện sự bảo vệ kỹ thuật sáng tác mà ông áp dụng. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "I want to be read and I think I am justified in doing what I can",
+              "category": "cpe_part_5",
+              "source": "Page 44, Question 38, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-36",
+              "type": "multiple_choice",
+              "instruction": "The author's tone in discussing culture in the final paragraph is",
+              "options": [
+                "A. accusatory.",
+                "B. embarrassed.",
+                "C. explanatory.",
+                "D. ambivalent."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở đoạn cuối, tác giả dùng giọng điệu giải thích tỉ mỉ về tầm quan trọng của nguồn gốc văn hóa đối với nhân cách một con người: 'For men and women are not only themselves; they are also the region in which they were born... these are the things that you can’t come to know by hearsay, you can only know them if you have lived them.' (Vì đàn ông và đàn bà không chỉ là chính họ; họ còn là vùng đất nơi họ sinh ra... đây là những điều bạn không thể biết qua lời đồn, bạn chỉ có thể biết nếu đã sống cùng chúng). Chuyên đề: Reading Comprehension — tone.",
+              "answerLocation": "For men and women are not only themselves; they are also the region in which they were born",
+              "category": "cpe_part_5",
+              "source": "Page 44, Question 39, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t2-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "For questions 37-43, read the text below. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap (37-43). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>Driving Jaunt</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The two sisters kept Lily's driving a secret from Chen for some time. She would drive around the allotments and the railway line and gasworks, shooting the tiny hump-backed bridge with all four wheels in the air and a tremendous bump (Lily's only misjudgement), before completing the journey by the gasworks in an odour of sulphur and brimstone. Chen, however, was actually amused by what his wife had been doing behind his back. ‘So you can really drive it then, Lily? Well done!’</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 37 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>They fixed on a Monday at the beginning of next month. This was the slackest day of the week; they decided to leave early in the morning and return by midday. That way they need lose no customers. In the meantime Lily would practise around the allotments.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 38 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Within an hour of stepping over the newspapers and out of the front door, they were looking at the English Channel. Lily had driven impeccably. Even Mui, sitting in the back ready to give directions, one hand on the cross-braces of Man Kee’s rompers as he pressed his nose against the window, had to grant this. On the road Lily had actually overtaken a couple of laggard vehicles with immense verve and such timing that Mui had pressed her lips closely together against her own protest. Chen went as far as applauding.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 39 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>She was unclear about the meanings of the various roadmarkings and preferred to pay a fee rather than risk being towed away. Or even being served with a summons. Might this evidence of basic prudence set Mui’s mind at rest? On the way down Lily had several times observed her elder sister's taut face in the driving mirror, which she used with great frequency. Perhaps it would be best not to put worries in Mui’s mind which would not have occurred to her in the first place. Lily personally locked all the van doors and meticulously tested each in turn.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 40 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Taken aback, Chen took Man Kee ahead of the two sisters to look at the grey barbarian sea. He perched Son on the top railing and put his arms around his stomach. Man Kee was a soft, warm, and what was more, these days an increasingly responsive bundle. He reacted by putting his hand, a tiny replica of the shape of Chen's, with its broad palm and stubby fingers, on his father's sleeve.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 41 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>There was a trail of smoke just before the horizon met the sea in a thin line and then, suddenly shimmering in the glitter of the rising morning sun on the metal waves, a hull; and in a small curve of the railings was a grey telescope. The sparkle of the water instantly altered Chen’s mood.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 42 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Chen lifted Man Kee to the eyepiece. ‘Do you see the ship, Son?’ he asked softly. ‘It is a special little ship for people like us, Son. It is very little and very old but that is only what strangers see. We know better, don’t we, Son, because it is the ship that will take us all back home when we are finished here. It will take you to your homeland, Son, which you have never seen.’</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 43 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Man Kee would not be parted from the telescope and when he had been persuaded to relinquish his grip the whirring inside the mounting had stopped and all Lily could see was a quivering opaque circle of white light with a scratched surface. By the time Chen had found a second coin the ship was over the horizon and Lily was left with a view of seagulls scavenging gash in the wake.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t2-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap (37-43).",
+          "questions": [
+            {
+              "id": "q-cpe1-t2-37",
+              "type": "gapped_text",
+              "instruction": "Gap (37):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở đoạn trước Chen khen ngợi tài lái xe bí mật của Lily: 'Well done!'. Đoạn C tiếp nối bằng suy nghĩ của Mui về việc em rể không giận dữ mà còn hào hứng lập kế hoạch đi chơi ('jaunt') cùng Lily. Chuyên đề: Gapped Text.",
+              "answerLocation": "doing behind his back. ‘So you can really drive it then, Lily? Well done!’ Men were strange creatures, Mui thought.",
+              "category": "cpe_part_6",
+              "source": "Page 41, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-38",
+              "type": "gapped_text",
+              "instruction": "Gap (38):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn văn tiếp theo mở đầu bằng việc cả nhà khởi hành chuyến đi biển: 'Within an hour of stepping... out of the front door...'. Đoạn H chuẩn bị cho chuyến đi bằng việc chị cả Mui mua bản đồ lộ trình ('buy a road-map') bất chấp nỗi nghi ngại của mình. Chuyên đề: Gapped Text.",
+              "answerLocation": "In the meantime Lily would practise around the allotments. Resolved to go along with the majority... Mui had been to buy a road-map.",
+              "category": "cpe_part_6",
+              "source": "Page 41, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-39",
+              "type": "gapped_text",
+              "instruction": "Gap (39):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Đoạn văn tiếp theo bắt đầu bằng suy nghĩ của Lily về bãi đỗ xe: 'She was unclear about the meanings of the various roadmarkings...'. Đoạn E diễn tả cảnh xe đi vào thị trấn ven biển và Lily tìm chỗ đỗ: 'Lily parked in a small street off the sea front...'. Chuyên đề: Gapped Text.",
+              "answerLocation": "Chen went as far as applauding. Now, after coming through the gasworks of this seaside town... Lily parked in a small street",
+              "category": "cpe_part_6",
+              "source": "Page 41, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-40",
+              "type": "gapped_text",
+              "instruction": "Gap (40):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn văn tiếp theo ghi nhận: 'Taken aback, Chen took Man Kee...' (Bị ngỡ ngàng/hơi sốc, Chen bế Man Kee đi trước...). Đoạn G miêu tả việc Chen trêu chọc chiếc xe tải cũ của họ là 'heap of tin' (đống thiếc vụn) khiến hai chị em phản ứng dữ dội ('girls bristled'), giải thích vì sao Chen bị ngỡ ngàng bỏ đi trước. Chuyên đề: Gapped Text.",
+              "answerLocation": "Lily personally locked all the van doors and meticulously tested each... ‘Don't worry,’ Chen joked. ‘No one will want that heap of tin.’",
+              "category": "cpe_part_6",
+              "source": "Page 41, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-41",
+              "type": "gapped_text",
+              "instruction": "Gap (41):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn văn tiếp theo ghi nhận: 'There was a trail of smoke just before the horizon...' (Có một vệt khói ngay trước đường chân trời...). Đoạn D diễn tả cảm giác buồn bã dễ chịu của Chen khi nhìn ngắm biển xám và lên kế hoạch sự nghiệp cho con: 'The sombre sea put Chen in a pleasing melancholy as he planned Man Kee's career.' Chuyên đề: Gapped Text.",
+              "answerLocation": "gaining experience in all aspects of the trade on the way. The sombre sea... There was a trail of smoke just before the horizon",
+              "category": "cpe_part_6",
+              "source": "Page 41, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-42",
+              "type": "gapped_text",
+              "instruction": "Gap (42):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn văn tiếp theo ghi nhận: 'Chen lifted Man Kee to the eyepiece. ‘Do you see the ship, Son?’...' (Chen nhấc Man Kee lên ống ngắm...). Đoạn A giải thích ống ngắm đó từ đâu ra: 'He put a coin in the slot and trained the glass on the ship...' (Ông bỏ đồng xu vào khe và hướng ống kính về phía con tàu...). Chuyên đề: Gapped Text.",
+              "answerLocation": "a small curve of the railings was a grey telescope... He put a coin in the slot and trained the glass",
+              "category": "cpe_part_6",
+              "source": "Page 41, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-43",
+              "type": "gapped_text",
+              "instruction": "Gap (43):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án F. Đoạn văn tiếp theo ghi nhận: 'Man Kee would not be parted from the telescope...' (Man Kee không chịu rời khỏi kính viễn vọng...). Đoạn F diễn tả cảnh cả nhà sum vầy bên kính ngắm: 'Chen kissed the top of Man Kee’s head. Behind him now were Lily and Mui...' kết nối hoàn hảo với hành vi lưu luyến của em bé ở đoạn sau. Chuyên đề: Gapped Text.",
+              "answerLocation": "It will take you to your homeland, Son... Chen kissed the top of Man Kee’s head.",
+              "category": "cpe_part_6",
+              "source": "Page 42, Test 2, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "He put a coin in the slot and trained the glass on the ship. He was unable to find it at first, although he had aimed off carefully with the gun-sight on top of the barrel. Chen swung the tube in wide circles. There it was! Gone again. Chen swivelled the instrument more carefully. Now he had it in the centre of the circle, surprisingly large, red, and very rusty with a small bow wave: tramp steamer."
+            },
+            {
+              "label": "B",
+              "text": "They went along the promenade. There was an amusement arcade, built into the cliff. They stared at the rows of fruit machines, the gauntlet of pin-ball tables. Chen was fumbling in his pocket when Lily gave him a coin."
+            },
+            {
+              "label": "C",
+              "text": "Men were strange creatures, Mui thought. Brother-in-law should have been upset about this. Yet he was soon enthusiastically making plans with Lily for a jaunt and obviously revelling in her mastery of this new skill."
+            },
+            {
+              "label": "D",
+              "text": "And it was in that moment that Chen resolved to bring Son up his way. He would have an education in figures (Chen's own weak point) and grow up to own many restaurants, gaining experience in all aspects of the trade on the way. The sombre sea put Chen in a pleasing melancholy as he planned Man Kee's career."
+            },
+            {
+              "label": "E",
+              "text": "Now, after coming through the gasworks of this seaside town (reassuring, familiar sight), past the lagoon and its miniature motor boats, they were moving smoothly along the empty promenade. Lily parked in a small street off the sea front which was full of empty bays."
+            },
+            {
+              "label": "F",
+              "text": "Chen kissed the top of Man Kee’s head. Behind him now were Lily and Mui. Lily put her arm round Husband's shoulders. ‘The little old ship,’ said Chen. ‘Let your mother see, Son.’"
+            },
+            {
+              "label": "G",
+              "text": "‘Don't worry,’ Chen joked. ‘No one will want that heap of tin.’ The girls bristled. Lily accused her husband of ingratitude. Mui rebuked him for being proud and too readily deceived by appearances."
+            },
+            {
+              "label": "H",
+              "text": "Resolved to go along with the majority despite her personal misgivings, Mui had been to buy a road-map. She had been able to get a ten percent discount, which impressed Chen, though Lily felt a bit insulted by Mui’s lack of faith in her navigating abilities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t2-sec-7",
+      "title": "Part 7: Multiple Matching",
+      "instructions": "For questions 44-53, read the five academic perspectives on language and instinct below and choose the correct perspective (A-E) which fits each statement. You may choose a perspective more than once.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Philosophy of Language and the Instinct Debate</h2><div class='mb-6 text-slate-800 text-base leading-relaxed text-left'><p class='mb-4'><b>A. Prof. Evelyn Carter (Evolutionary Biologist)</b><br>To fully grasp the nature of human language, we must treat it not as an ad-hoc cultural invention, but as a specialized biological instinct. Just as spiders possess an innate genetic blueprint that allows them to spin intricate webs, and beavers build complex dams without formal instruction, humans are born with a hardwired capacity for syntactic processing. This biological view is supported by the fact that certain highly specific neurobiological structures must have co-evolved alongside our throat anatomy specifically to support rapid, complex grammar generation. Language is an evolutionary adaptation that develops spontaneously in the child, requiring only exposure to a social environment rather than systematic schooling or a conscious understanding of architectural or logical rules.</p><p class='mb-4'><b>B. Dr. Liam Sterling (Cognitive Anthropologist)</b><br>While the evolutionary instinct model is undeniably elegant, it oversimplifies the profound role of culture in shaping human speech. Drawing direct genetic parallels between human grammar and the instinctive web-spinning of spiders is a category mistake. A spider’s web is a rigid, genetically locked physical structure that cannot evolve within the spider’s lifetime. In stark contrast, human language is an open-ended, highly adaptive cultural technology. It is a tool developed and refined over thousands of years of collective social interaction, passed down through shared learning rather than hardwired genetic coding. By over-biologizing language, we ignore the historical and creative dimensions that allow different cultures to construct fundamentally unique linguistic realities.</p><p class='mb-4'><b>C. Prof. Harrison Vance (Computational Linguist)</b><br>When we analyze linguistic change and evolution, we see that it is not a chaotic decay of standards, but a highly systematic process driven by information-processing constraints. The structural characteristics of human language—such as word order patterns and morphological rules—are continually optimized to ensure efficient communication. Modern languages undergo constant, albeit imperceptible, alterations as speakers naturally seek to compress the maximum amount of meaning into the minimum cognitive and acoustic effort. This computational efficiency explains why certain grammatical structures survive while others are discarded; it is an algorithmic adaptation to the limits of the human brain's working memory.</p><p class='mb-4'><b>D. Dr. Sophia Mercer (Sociolinguist & Historical Archivist)</b><br>Throughout history, language change has been greeted with intense public alarm. Every generation witnesses older citizens observing the casual speech of the young and concluding that linguistic decay is imminent. However, historical archives show that 'linguistic purism' is rarely about language itself; instead, it acts as a social defense mechanism. Public anxiety over declining language standards is actually a manifestation of social exclusion, used by dominant groups to preserve existing social hierarchies and keep minority or newly-arrived cultural groups at a disadvantage. By pathologizing natural linguistic modifications, conservative elites attempt to enforce a rigid social order under the guise of protecting grammar.</p><p class='mb-4'><b>E. Dr. Arthur Pendelton (Philosopher of Mind)</b><br>The debate over whether language is a hardwired instinct or a social tool misses a more fundamental philosophical question: the relationship between thought and symbolic representation. We must question whether pre-linguistic thoughts can genuinely exist independently of language, or if our very capacity for abstract reasoning is constructed by the symbols we use. This is particularly relevant when evaluating animal communication. While species like the grey parrot Alex can master impressive vocabularies, we must caution against attributing complex symbolic understanding or genuine intent to non-human species based on what is ultimately simple associative learning. Without a recursive syntax, animal communication remains fundamentally locked in immediate association, never achieving the open-ended cognitive freedom of human thought.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t2-rg-7",
+          "instruction": "Choose the correct letter, A, B, C, D or E.",
+          "questions": [
+            {
+              "id": "q-cpe1-t2-44",
+              "type": "multiple_matching",
+              "instruction": "Which academic argues that the structural characteristics of human language are shaped by the cognitive need for efficient communication?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Prof. Harrison Vance lập luận rằng các đặc trưng cấu trúc của ngôn ngữ con người liên tục được tối ưu hóa để đảm bảo giao tiếp hiệu quả ('optimized to ensure efficient communication'), nén tối đa ý nghĩa với nỗ lực nhận thức tối thiểu. Chuyên đề: Multiple Matching.",
+              "answerLocation": "structural characteristics of human language... are continually optimized to ensure efficient communication",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-45",
+              "type": "multiple_matching",
+              "instruction": "Which academic asserts that public anxiety over declining language standards is a manifestation of social exclusion?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Dr. Sophia Mercer chỉ ra sự lo lắng của công chúng về tiêu chuẩn ngôn ngữ suy giảm thực chất là biểu hiện của sự kỳ thị/loại trừ xã hội ('manifestation of social exclusion'), được nhóm thống trị dùng để bảo vệ trật tự phân tầng giai cấp. Chuyên đề: Multiple Matching.",
+              "answerLocation": "anxiety over declining language standards is actually a manifestation of social exclusion",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-46",
+              "type": "multiple_matching",
+              "instruction": "Which academic suggests that drawing direct genetic parallels between human speech and animal behavior oversimplifies cultural evolution?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Liam Sterling cho rằng việc so sánh trực tiếp cấu trúc gen giữa ngữ pháp con người với tập tính giăng tơ của nhện là một sai lầm phân loại ('category mistake'), làm đơn giản hóa quá mức vai trò của văn hóa. Chuyên đề: Multiple Matching.",
+              "answerLocation": "genetic parallels between human grammar and the instinctive web-spinning of spiders is a category mistake",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-47",
+              "type": "multiple_matching",
+              "instruction": "Which academic compares the acquisition of language to the instinctive construction of physical structures by animals?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Prof. Evelyn Carter so sánh năng lực ngôn ngữ bẩm sinh của con người với khả năng giăng tơ của nhện ('spin intricate webs') hay xây đập của hải ly ('build complex dams') mà không cần qua trường lớp. Chuyên đề: Multiple Matching.",
+              "answerLocation": "spiders possess an innate genetic blueprint that allows them to spin intricate webs, and beavers build complex dams",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-48",
+              "type": "multiple_matching",
+              "instruction": "Which academic notes that most languages undergo constant, albeit imperceptible, alterations due to information-processing optimization?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Prof. Harrison Vance lưu ý rằng ngôn ngữ trải qua những biến đổi liên tục dù rất khó nhận thấy ('constant, albeit imperceptible, alterations') để thích ứng với giới hạn bộ nhớ làm việc của não bộ. Chuyên đề: Multiple Matching.",
+              "answerLocation": "languages undergo constant, albeit imperceptible, alterations as speakers naturally seek to compress",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-49",
+              "type": "multiple_matching",
+              "instruction": "Which academic points out that historical attempts to arrest linguistic change often stem from a desire to preserve social hierarchies?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Dr. Sophia Mercer chỉ ra các nỗ lực ngăn chặn sự biến đổi ngôn ngữ trong lịch sử bắt nguồn từ ý đồ duy trì hệ thống cấp bậc xã hội ('preserve existing social hierarchies') của giới tinh hoa. Chuyên đề: Multiple Matching.",
+              "answerLocation": "linguistic purism... acts as a social defense mechanism... to preserve existing social hierarchies",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-50",
+              "type": "multiple_matching",
+              "instruction": "Which academic cautions against attributing complex symbolic understanding to non-human species based on simple associative learning?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Arthur Pendelton cảnh báo không nên gán ghép năng lực hiểu biểu tượng phức tạp cho động vật (như vẹt Alex) dựa trên các bài học liên kết đơn giản ('simple associative learning'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "caution against attributing complex symbolic understanding... based on what is ultimately simple associative learning",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-51",
+              "type": "multiple_matching",
+              "instruction": "Which academic believes that language is fundamentally an open-ended cultural technology rather than a rigid biological adaptation?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Liam Sterling lập luận ngôn ngữ là một công nghệ văn hóa mang tính thích ứng cao và mở rộng vô hạn ('open-ended, highly adaptive cultural technology') thay vì là sự thích nghi sinh học cứng nhắc. Chuyên đề: Multiple Matching.",
+              "answerLocation": "human language is an open-ended, highly adaptive cultural technology",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-52",
+              "type": "multiple_matching",
+              "instruction": "Which academic highlights that certain neurobiological structures must have co-evolved specifically to support complex syntactic processing?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Prof. Evelyn Carter nhấn mạnh rằng một số cấu trúc thần kinh sinh học cụ thể đã đồng tiến hóa ('co-evolved') để hỗ trợ quá trình xử lý cú pháp phức tạp của con người. Chuyên đề: Multiple Matching.",
+              "answerLocation": "specific neurobiological structures must have co-evolved... to support rapid, complex grammar",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t2-53",
+              "type": "multiple_matching",
+              "instruction": "Which academic questions whether pre-linguistic thoughts can exist independently of symbolic representation?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Arthur Pendelton đặt câu hỏi triết học cốt lõi xem liệu các suy nghĩ tiền ngôn ngữ có thể tồn tại độc lập với biểu tượng tượng trưng hay không ('whether pre-linguistic thoughts can genuinely exist independently of language'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "question whether pre-linguistic thoughts can genuinely exist independently of language",
+              "category": "cpe_part_7",
+              "source": "Test 2, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

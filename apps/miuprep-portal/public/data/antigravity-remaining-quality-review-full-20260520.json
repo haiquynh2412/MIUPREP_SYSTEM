@@ -1,0 +1,1757 @@
+﻿[
+    {
+        "id":  "antigravity-ff6fdda6",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "24",
+                        "B":  "Cannot determine",
+                        "C":  "6",
+                        "D":  "12"
+                    },
+        "prompt":  "$ax+by=12$ and $2ax+2by=c$ have infinitely many solutions. What is $c$?",
+        "explanation":  {
+                            "correct":  "Second eq is 2Ã— first. $c=24$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-2fd20f28",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "7",
+        "acceptableAnswers":  [
+                                  "7"
+                              ],
+        "choices":  null,
+        "prompt":  "A shop: pencils cost $0.50 each and pens cost $1.00 each. You bought 20 items for $13.50. How many pens?",
+        "explanation":  {
+                            "correct":  "$0.50(20-n)+1.00n=13.50$. $10+0.50n=13.50$. $n=7$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-9eedca1a",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "6",
+                        "B":  "3",
+                        "C":  "4",
+                        "D":  "2"
+                    },
+        "prompt":  "$3x+ky=9$ and $6x+4y=18$. For infinitely many solutions, $k=$?",
+        "explanation":  {
+                            "correct":  "$6x+2ky=18$ must equal $6x+4y=18$. So $2k=4$, $k=2$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-15d43d0d",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "6",
+        "acceptableAnswers":  [
+                                  "6"
+                              ],
+        "choices":  null,
+        "prompt":  "$\\frac{x+y}{2}=5$ and $\\frac{x-y}{2}=1$. What is $x$?",
+        "explanation":  {
+                            "correct":  "$x+y=10$ and $x-y=2$. Add: $2x=12$. $x=6$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-99f681a1",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Intersecting at the origin",
+                        "B":  "Identical",
+                        "C":  "Parallel with different $y$-intercepts",
+                        "D":  "Perpendicular"
+                    },
+        "prompt":  "A system has no solution. The lines must be:",
+        "explanation":  {
+                            "correct":  "No solution = parallel, different intercepts.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-efcc7ef4",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "13",
+                        "B":  "10",
+                        "C":  "$-3$",
+                        "D":  "16"
+                    },
+        "prompt":  "$f(x)=mx+b$ where $f(2)=10$ and $f(5)=1$. What is $f(0)$?",
+        "explanation":  {
+                            "correct":  "$m=(1-10)/(5-2)=-3$. $10=-6+b$, $b=16$. $f(0)=16$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-3e2870c3",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "52",
+        "acceptableAnswers":  [
+                                  "52"
+                              ],
+        "choices":  null,
+        "prompt":  "A linear function: $f(1)=7$, $f(4)=22$. What is $f(10)$?",
+        "explanation":  {
+                            "correct":  "$f(1)=7$, $f(4)=22$. Slope $=(22-7)/(4-1)=5$. $f(x)=5x+2$. $f(10)=52$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-8b6f2285",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "1.5",
+        "acceptableAnswers":  [
+                                  "1.5"
+                              ],
+        "choices":  null,
+        "prompt":  "Car A: 60 mph. Car B starts 30 min later at 80 mph. After how many hours (from B\u0027s start) does B catch A?",
+        "explanation":  {
+                            "correct":  "Car A: 60mph start. Car B: 80mph, 30min later. A\u0027s head start=30mi. $80t=60t+30$. $20t=30$. $t=1.5$ hours.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-aabfea1e",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "6",
+                        "B":  "$-6$",
+                        "C":  "12",
+                        "D":  "0"
+                    },
+        "prompt":  "$f(x)=3x+k$ and $g(x)=-3x+12$. If $f$ and $g$ intersect at $x=2$, what is $k$?",
+        "explanation":  {
+                            "correct":  "$g(2)=-6+12=6$. $f(2)=6+k=6$. $k=0$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-dce52fe6",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear inequalities in one or two variables",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$x\u003e3$",
+                        "B":  "$x\u003c-1$",
+                        "C":  "$-1\u003cx\\leq 3$",
+                        "D":  "$-1\\leq x\u003c3$"
+                    },
+        "prompt":  "$-2\u003c3x+1\\leq 10$. Solution:",
+        "explanation":  {
+                            "correct":  "$-3\u003c3x\\leq 9$. $-1\u003cx\\leq 3$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-793e32ee",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear inequalities in one or two variables",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$y\\geq 0$ and $x\\geq 0$",
+                        "B":  "$y\u003ex+5$ and $y\u003cx+2$",
+                        "C":  "$y\u003ex$ and $y\u003cx+3$",
+                        "D":  "$y\u003e-x$ and $y\u003ex$"
+                    },
+        "prompt":  "Which system of inequalities has NO solution?",
+        "explanation":  {
+                            "correct":  "Parallel bounds with gap: $y\u003ex+5$ AND $y\u003cx+2$ impossible.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-b36e3ab4",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Equivalent expressions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$(x^4-16)$",
+                        "B":  "$(x^2+4)(x+2)(x-2)$",
+                        "C":  "$(x^2-4)^2$",
+                        "D":  "$(x+2)^2(x-2)^2$"
+                    },
+        "prompt":  "Factor: $x^4-16$",
+        "explanation":  {
+                            "correct":  "$x^4-16=(x^2+4)(x^2-4)=(x^2+4)(x+2)(x-2)$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-57ab199d",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Equivalent expressions",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "2",
+        "acceptableAnswers":  [
+                                  "2"
+                              ],
+        "choices":  null,
+        "prompt":  "$\\frac{x^2-9}{x^2-x-6}$ simplifies to $\\frac{x+3}{x+k}$. What is $k$?",
+        "explanation":  {
+                            "correct":  "$\\frac{x^2-9}{x^2-x-6}=\\frac{(x+3)(x-3)}{(x-3)(x+2)}=\\frac{x+3}{x+2}$. So $k=2$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-d0e07586",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Equivalent expressions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$6xy^2$",
+                        "B":  "$6x^2y$",
+                        "C":  "$2y^3$",
+                        "D":  "$2y(3x^2+y^2)$"
+                    },
+        "prompt":  "$(x+y)^3-(x-y)^3$ simplifies to:",
+        "explanation":  {
+                            "correct":  "Difference of cubes: $a^3-b^3=(a-b)(a^2+ab+b^2)$. $a=x+y,b=x-y$. $(2y)(3x^2+y^2)$. Actually let me verify: $=2y((x+y)^2+(x+y)(x-y)+(x-y)^2)=2y(x^2+2xy+y^2+x^2-y^2+x^2-2xy+y^2)=2y(3x^2+y^2)$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-acfa9703",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Equivalent expressions",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "6",
+        "acceptableAnswers":  [
+                                  "6"
+                              ],
+        "choices":  null,
+        "prompt":  "$\\frac{2}{x+1}+\\frac{3}{x-1}=\\frac{ax+b}{x^2-1}$. What is $a+b$?",
+        "explanation":  {
+                            "correct":  "$\\frac{2}{x+1}+\\frac{3}{x-1}=\\frac{2(x-1)+3(x+1)}{x^2-1}=\\frac{5x+1}{x^2-1}$. $a=5,b=1$. $a+b=6$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-5abf57e7",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Nonlinear equations in one variable and systems of equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "9",
+        "acceptableAnswers":  [
+                                  "9"
+                              ],
+        "choices":  null,
+        "prompt":  "$x^2-6x+k=0$ has exactly one solution. $k=$?",
+        "explanation":  {
+                            "correct":  "Discriminant $=0$: $36-4k=0$. $k=9$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-bd8de68b",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Nonlinear equations in one variable and systems of equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "3",
+        "acceptableAnswers":  [
+                                  "3"
+                              ],
+        "choices":  null,
+        "prompt":  "$\\sqrt{3x+7}=x+1$. What is the valid solution?",
+        "explanation":  {
+                            "correct":  "$\\sqrt{3x+7}=x+1$. Square: $3x+7=x^2+2x+1$. $x^2-x-6=0$. $(x-3)(x+2)=0$. Check $x=3$: $\\sqrt{16}=4=3+1$âœ“. $x=-2$: $\\sqrt{1}=1\\neq -1$âœ—. Valid: $x=3$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-657f3c05",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Nonlinear equations in one variable and systems of equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "8",
+        "acceptableAnswers":  [
+                                  "8"
+                              ],
+        "choices":  null,
+        "prompt":  "$f(x)=x^2-8x+12$. Sum of zeros?",
+        "explanation":  {
+                            "correct":  "By Vieta\u0027s: sum of zeros $=-b/a=8$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-c596188c",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Nonlinear equations in one variable and systems of equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$-1$",
+                        "B":  "3",
+                        "C":  "1",
+                        "D":  "2"
+                    },
+        "prompt":  "$2^{2x}=8^{x-1}$. What is $x$?",
+        "explanation":  {
+                            "correct":  "$2^{2x}=2^{3(x-1)}=2^{3x-3}$. $2x=3x-3$. $x=3$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-17f38f8f",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Exponential functions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "5",
+                        "B":  "9",
+                        "C":  "15",
+                        "D":  "3"
+                    },
+        "prompt":  "$f(x)=a\\cdot b^x$. $f(0)=5$, $f(2)=45$. What is $b$?",
+        "explanation":  {
+                            "correct":  "$a=5$. $5b^2=45$. $b^2=9$. $b=3$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-d49bfd0a",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Words in Context",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "skepticism",
+                        "B":  "enthusiasm",
+                        "C":  "indifference",
+                        "D":  "acclaim"
+                    },
+        "prompt":  "The scientist\u0027s claims, though initially met with _______, were eventually vindicated by independent replication.\nBest fit:",
+        "explanation":  {
+                            "correct":  "Initially doubted, later confirmed = skepticism.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-70a15311",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Words in Context",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "robust",
+                        "B":  "permanent",
+                        "C":  "tenuous",
+                        "D":  "equitable"
+                    },
+        "prompt":  "The agreement was _______ at bestâ€”both sides made concessions that left their core supporters deeply dissatisfied.\nBest fit:",
+        "explanation":  {
+                            "correct":  "Both sides dissatisfied = fragile/unstable = tenuous.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-f9838d5d",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Words in Context",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "superficial",
+                        "B":  "hasty",
+                        "C":  "meticulous",
+                        "D":  "careless"
+                    },
+        "prompt":  "The historian\u0027s _______ research uncovered documents that had been overlooked for centuries.\nBest fit:",
+        "explanation":  {
+                            "correct":  "Uncovering overlooked documents = extremely careful = meticulous.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-321273ec",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Words in Context",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "amplified",
+                        "B":  "validated",
+                        "C":  "eclipsed",
+                        "D":  "preserved"
+                    },
+        "prompt":  "The policy\u0027s benefits were _______ by its unintended consequences, which proved far more costly than anticipated.\nBest fit:",
+        "explanation":  {
+                            "correct":  "Benefits overshadowed by costs = eclipsed.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-d912ce6e",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Words in Context",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "prevention",
+                        "B":  "culmination",
+                        "C":  "cause",
+                        "D":  "beginning"
+                    },
+        "prompt":  "The CEO\u0027s resignation was not voluntary but rather the _______ of months of boardroom maneuvering.\nBest fit:",
+        "explanation":  {
+                            "correct":  "Result of months of effort = culmination.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-a1c6ee45",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Text Structure and Purpose",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Invalidates the research.",
+                        "B":  "Shows the researcher was biased.",
+                        "C":  "Transforms apparent failure into intellectual opportunity, demonstrating that negative results can advance understanding more than positive ones.",
+                        "D":  "Proves the hypothesis was wrong."
+                    },
+        "prompt":  "A research paper presents a finding that contradicts its own hypothesis, then explains why this contradiction is actually more interesting than confirmation would have been. This rhetorical move:",
+        "explanation":  {
+                            "correct":  "Reframing failure as opportunity.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-aeb119ea",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Text Structure and Purpose",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Presents two equal positions.",
+                        "B":  "Shows the author is uncertain.",
+                        "C":  "Strengthens the argument by acknowledging its best objection and demonstrating it can withstand scrutiny.",
+                        "D":  "Weakens the argument."
+                    },
+        "prompt":  "An editorial uses the phrase \u0027to be sure\u0027 before presenting a concession, then follows with \u0027but\u0027 to reassert its main argument. This \u0027concede-and-counter\u0027 structure:",
+        "explanation":  {
+                            "correct":  "Concede-and-counter = stronger argument.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-2c41ec52",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Text Structure and Purpose",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Ignore the contradictions.",
+                        "B":  "Accept everything the narrator says.",
+                        "C":  "Actively reconstruct what actually happened by evaluating which statements are trustworthy, making the reader a participant in meaning-making.",
+                        "D":  "Stop reading."
+                    },
+        "prompt":  "A novelist\u0027s use of an unreliable narrator who contradicts earlier claims forces the reader to:",
+        "explanation":  {
+                            "correct":  "Unreliable narrator = reader as active detective.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-facd2f6d",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Text Structure and Purpose",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Confuse the reader.",
+                        "B":  "Delay the main point.",
+                        "C":  "Undermine the recommendation.",
+                        "D":  "Establish the evidentiary basis so the recommendation appears to follow inevitably from the data rather than from ideology."
+                    },
+        "prompt":  "A policy document opens with a cost-benefit analysis before making its recommendation. Placing analysis before recommendation serves to:",
+        "explanation":  {
+                            "correct":  "Evidence-first = recommendation appears data-driven.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-ad952a80",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Text Structure and Purpose",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Distance between the author and their past self, allowing for more objective self-examination and suggesting the author has fundamentally changed.",
+                        "B":  "Making the book less personal.",
+                        "C":  "Confusing readers about who wrote it.",
+                        "D":  "Following standard autobiography conventions."
+                    },
+        "prompt":  "An autobiography written in third person rather than first person creates the effect of:",
+        "explanation":  {
+                            "correct":  "Third-person autobiography = distance + transformation.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-e6a559ec",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Rhetorical Synthesis",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "With antibiotic resistance projected to kill 10 million annually by 2050â€”and new antibiotics requiring a decade to developâ€”phage therapy, which weaponizes bacteria\u0027s own viral predators against them, may be humanity\u0027s best hope for winning an arms race we are currently losing.",
+                        "B":  "Antibiotics are failing.",
+                        "C":  "Phage therapy exists.",
+                        "D":  "Resistance is growing."
+                    },
+        "prompt":  "Notes:\n- Antibiotics lose effectiveness as bacteria evolve resistance.\n- New antibiotics take 10+ years to develop.\n- By 2050, resistant infections may kill 10M/year.\n- Phage therapy (using viruses that attack bacteria) shows promise.\nGoal: present phage therapy as urgent alternative.",
+        "explanation":  {
+                            "correct":  "Urgency + mechanism + hope.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-fac814ec",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Rhetorical Synthesis",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "When the United Nations defines more than 15 days of solitary confinement as tortureâ€”and research shows hallucinations begin within 48 hoursâ€”the daily isolation of 80,000 American prisoners is not a correctional tool but a human rights violation operating at industrial scale, one that Nelson Mandela himself called \u0027the most forbidding aspect of prison life.\u0027",
+                        "B":  "The UN opposes it.",
+                        "C":  "Many prisoners are isolated.",
+                        "D":  "Solitary confinement is harsh."
+                    },
+        "prompt":  "Notes:\n- Solitary confinement causes hallucinations after 48 hours.\n- It\u0027s used on 80,000 US prisoners daily.\n- The UN considers \u003e15 days torture.\n- Mandela called it \u0027the most forbidding aspect of prison life.\u0027\nGoal: argue it violates human rights.",
+        "explanation":  {
+                            "correct":  "Multiple authorities + scale + definition = human rights argument.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-9f9d5a09",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Rhetorical Synthesis",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Lab-grown meat\u0027s plummeting costâ€”from $330,000 per burger in 2013 to $10 todayâ€”and its 96% land reduction make it perhaps the most promising food technology in human history, but with only 35% of consumers willing to try it, the real challenge is no longer scientific but psychological.",
+                        "B":  "Consumers are hesitant.",
+                        "C":  "Lab meat is cheaper now.",
+                        "D":  "It uses less land."
+                    },
+        "prompt":  "Notes:\n- Lab-grown meat uses 96% less land, 45% less energy.\n- It eliminates the need to raise and slaughter animals.\n- Current cost: $10/burger (down from $330K in 2013).\n- Consumer acceptance remains low at 35%.\nGoal: acknowledge both promise and obstacle.",
+        "explanation":  {
+                            "correct":  "Promise + obstacle framing.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-a17125c6",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Rhetorical Synthesis",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Cleanup technology exists.",
+                        "B":  "Cleaning plastic from the ocean is a Sisyphean task when 90% of it flows from just 10 rivers: investing in waste management infrastructure along those riversâ€”100 times cheaper than ocean cleanupâ€”would stop the problem at its source, but requires wealthy nations to fund infrastructure in the developing countries where these rivers flow.",
+                        "C":  "10 rivers are responsible.",
+                        "D":  "Ocean plastic is a problem."
+                    },
+        "prompt":  "Notes:\n- 90% of ocean plastic comes from 10 rivers.\n- River cleanup technology exists (e.g., The Ocean Cleanup).\n- Upstream waste management is 100x cheaper than ocean cleanup.\n- Most polluting rivers are in developing nations lacking waste infrastructure.\nGoal: argue for upstream investment over ocean cleanup.",
+        "explanation":  {
+                            "correct":  "Source vs. symptom + funding reality.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-38b2fea8",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Rhetorical Synthesis",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "AI beat Kasparov.",
+                        "B":  "AI will replace workers.",
+                        "C":  "The most striking finding in competitive chess isn\u0027t that AI beat Kasparovâ€”it\u0027s that mediocre players partnered with AI consistently outperform both grandmasters and supercomputers alone, suggesting the future belongs not to AI or humans but to those who learn to collaborate with machines most effectively.",
+                        "D":  "Centaur teams are strong."
+                    },
+        "prompt":  "Notes:\n- Chess AI (Deep Blue) beat Kasparov in 1997.\n- Human + AI teams (\u0027centaurs\u0027) consistently beat both AI and humans alone.\n- The best centaur teams use mediocre players with superior AI interface skills.\n- This suggests the future of work is human-AI collaboration, not replacement.\nGoal: reframe the AI replacement narrative.",
+        "explanation":  {
+                            "correct":  "Reframe: collaboration \u003e replacement.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-08ff2e74",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Transitions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Moreover,",
+                        "B":  "Similarly,",
+                        "C":  "Therefore,",
+                        "D":  "On closer inspection, however,"
+                    },
+        "prompt":  "The data appeared to support the hypothesis. _______ a closer examination of the methodology revealed a critical sampling error that invalidated the results entirely.",
+        "explanation":  {
+                            "correct":  "Apparent support â†’ methodological flaw = deeper look reveals problem.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-b71d3495",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Transitions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Moreover,",
+                        "B":  "Therefore,",
+                        "C":  "Similarly,",
+                        "D":  "This framing obscures the reality, however:"
+                    },
+        "prompt":  "The refugee crisis is often framed as a burden on host countries. _______ research shows that refugees contribute $4.60 to the economy for every $1 spent on their resettlement.",
+        "explanation":  {
+                            "correct":  "Common frame vs. contradicting evidence.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-c3462613",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Transitions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Consequently,",
+                        "B":  "Nonetheless,",
+                        "C":  "Similarly,",
+                        "D":  "Therefore,"
+                    },
+        "prompt":  "The painting was dismissed by critics as derivative. _______ it sold for $90 million at auction, exposing a familiar gap between critical opinion and market valuation.",
+        "explanation":  {
+                            "correct":  "Dismissed â†’ sold high = despite criticism.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-72403f6e",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Transitions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Moreover,",
+                        "B":  "Paradoxically, however,",
+                        "C":  "Therefore,",
+                        "D":  "Similarly,"
+                    },
+        "prompt":  "The initial trial failed spectacularly. _______ the team\u0027s analysis of WHY it failed led directly to the breakthrough that made their second trial one of the most successful in the program\u0027s history.",
+        "explanation":  {
+                            "correct":  "Failure â†’ analysis â†’ breakthrough = paradox.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-502ecbdc",
+        "section":  "Reading and Writing",
+        "domain":  "Expression of Ideas",
+        "skill":  "Transitions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Similarly,",
+                        "B":  "Then, in 2024,",
+                        "C":  "Therefore,",
+                        "D":  "However,"
+                    },
+        "prompt":  "The volcano had been dormant for 600 years. _______ seismologists detected a swarm of 4,000 micro-earthquakes beneath it, suggesting the magma chamber was recharging.",
+        "explanation":  {
+                            "correct":  "Dormant â†’ sudden activity = temporal shift.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-29524493",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "7",
+        "acceptableAnswers":  [
+                                  "7"
+                              ],
+        "choices":  null,
+        "prompt":  "$y=2x+3$ and $y=-x+9$ intersect at $(x,y)$. What is $y$?",
+        "explanation":  {
+                            "correct":  "$2x+3=-x+9$. $3x=6$. $x=2$. $y=2(2)+3=7$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-27b143e3",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "150",
+        "acceptableAnswers":  [
+                                  "150"
+                              ],
+        "choices":  null,
+        "prompt":  "Theater: adult $12, child $8. 250 tickets, $2,600 total. Adults?",
+        "explanation":  {
+                            "correct":  "$12a+8c=2600$, $a+c=250$. $c=250-a$. $12a+8(250-a)=2600$. $4a=600$. $a=150$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-941d0b9a",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "17",
+        "acceptableAnswers":  [
+                                  "17"
+                              ],
+        "choices":  null,
+        "prompt":  "$f(x)=-4x+b$ passes through $(3,5)$. What is $b$?",
+        "explanation":  {
+                            "correct":  "$f(3)=-4(3)+b=5$. $-12+b=5$. $b=17$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-126343cd",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Medium",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$-2$",
+                        "B":  "$-5$",
+                        "C":  "5",
+                        "D":  "2"
+                    },
+        "prompt":  "$f(x)=ax+10$. If $f(5)=0$, what is $a$?",
+        "explanation":  {
+                            "correct":  "$5a+10=0$. $a=-2$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-2eaf9a86",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear inequalities in one or two variables",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "6",
+        "acceptableAnswers":  [
+                                  "6"
+                              ],
+        "choices":  null,
+        "prompt":  "$4(x+3)\u003e2(3x-1)$. Largest integer $x$?",
+        "explanation":  {
+                            "correct":  "$4x+12\u003e6x-2$. $14\u003e2x$. $x\u003c7$. Largest integer: 7. Wait, strict: $x\u003c7$, so largest integer is 6. Let me recheck: $4(x+3)\u003e2(3x-1)$. $4x+12\u003e6x-2$. $14\u003e2x$. $x\u003c7$. Largest integer $x=6$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-1fa99583",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear inequalities in one or two variables",
+        "difficulty":  "Medium",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$x\\geq -1$",
+                        "B":  "$x\\leq 5$",
+                        "C":  "$-1\\leq x \\leq 5$",
+                        "D":  "$-5\\leq x \\leq 7$"
+                    },
+        "prompt":  "Compound inequality: $-5\\leq 2x-3 \\leq 7$.",
+        "explanation":  {
+                            "correct":  "Add 3: $-2\\leq 2x \\leq 10$. Divide: $-1\\leq x\\leq 5$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-046e066a",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear equations in one variable",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "16",
+        "acceptableAnswers":  [
+                                  "16"
+                              ],
+        "choices":  null,
+        "prompt":  "$0.25x+0.75(40-x)=22$. $x=$?",
+        "explanation":  {
+                            "correct":  "$0.25x+0.75(40-x)=22$. $0.25x+30-0.75x=22$. $-0.5x=-8$. $x=16$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-fb27bbf2",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear equations in one variable",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "200",
+        "acceptableAnswers":  [
+                                  "200"
+                              ],
+        "choices":  null,
+        "prompt":  "A 15% salt solution mixed with pure water. Need 500mL of 6% solution. How much salt solution (mL)?",
+        "explanation":  {
+                            "correct":  "$0.15x=0.06(500)=30$. $x=200$ mL.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-2ecd91ac",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$x=4$",
+                        "B":  "$x=-2$",
+                        "C":  "$x=0$",
+                        "D":  "$x=2$"
+                    },
+        "prompt":  "$f(x)=|2x-6|$. For which $x$ is $f(x)=f(8)$?",
+        "explanation":  {
+                            "correct":  "$f(8)=|16-6|=10$. $|2x-6|=10$: $2x-6=10,x=8$ or $2x-6=-10,x=-2$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-d5d5611d",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "5",
+        "acceptableAnswers":  [
+                                  "5"
+                              ],
+        "choices":  null,
+        "prompt":  "$x+2y=7$ and $x-y=1$. What is $x+y$?",
+        "explanation":  {
+                            "correct":  "Subtract: $3y=6$, $y=2$. $x=3$. $x+y=5$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-c8ef0e50",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Systems of two linear equations in two variables",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "$k=6$",
+                        "B":  "$k=3$",
+                        "C":  "$k=\\pm\\sqrt{6}$",
+                        "D":  "$k=0$"
+                    },
+        "prompt":  "$kx+2y=8$ and $3x+ky=12$. System has unique solution for all $k$ EXCEPT:",
+        "explanation":  {
+                            "correct":  "Unique unless $k/3=2/k$, so $k^2=6$, $k=\\pm\\sqrt{6}$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-e79c7f5f",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear functions",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "6",
+        "acceptableAnswers":  [
+                                  "6"
+                              ],
+        "choices":  null,
+        "prompt":  "Taxi: $3.50 base + $2.25/mile. Fare was $17. How many miles?",
+        "explanation":  {
+                            "correct":  "$3.50+2.25m=17$. $2.25m=13.50$. $m=6$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-92678e03",
+        "section":  "Math",
+        "domain":  "Algebra",
+        "skill":  "Linear equations in one variable",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "2",
+        "acceptableAnswers":  [
+                                  "2"
+                              ],
+        "choices":  null,
+        "prompt":  "$\\frac{x+3}{5}=\\frac{2x-1}{3}$. $x=$?",
+        "explanation":  {
+                            "correct":  "$(x+3)/5=(2x-1)/3$. Cross: $3(x+3)=5(2x-1)$. $3x+9=10x-5$. $14=7x$. $x=2$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-1fc21f1b",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Quadratic equations",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "5",
+                        "B":  "$-4$",
+                        "C":  "9",
+                        "D":  "$-13$"
+                    },
+        "prompt":  "$f(x)=x^2-6x+c$. Vertex at $(3,-4)$. $c=$?",
+        "explanation":  {
+                            "correct":  "$f(3)=9-18+c=-4$. $c=5$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-a02a1390",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Exponential functions",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "3",
+        "acceptableAnswers":  [
+                                  "3"
+                              ],
+        "choices":  null,
+        "prompt":  "$3^{x+1}=81$. $x=$?",
+        "explanation":  {
+                            "correct":  "$3^{x+1}=81=3^4$. $x+1=4$. $x=3$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-ea0c1d75",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Exponential functions",
+        "difficulty":  "Medium",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "2",
+                        "B":  "$3^x$",
+                        "C":  "6",
+                        "D":  "3"
+                    },
+        "prompt":  "$f(x)=2(3)^x$. $f(x+1)/f(x)=$?",
+        "explanation":  {
+                            "correct":  "$f(x+1)=2\\cdot3^{x+1}$. Ratio: $3^{x+1}/3^x=3$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-7305bb16",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Quadratic equations",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "25",
+        "acceptableAnswers":  [
+                                  "25"
+                              ],
+        "choices":  null,
+        "prompt":  "Complete the square: $x^2+10x+?=(x+5)^2$. Blank?",
+        "explanation":  {
+                            "correct":  "$(x+5)^2=x^2+10x+25$. Blank=25.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-09ea19eb",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Nonlinear equations in one variable and systems of equations in two variables",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "-2",
+        "acceptableAnswers":  [
+                                  "-2"
+                              ],
+        "choices":  null,
+        "prompt":  "$y=(x-3)(x+5)$. $x$-intercepts sum?",
+        "explanation":  {
+                            "correct":  "Roots at $x=3$ and $x=-5$. Sum: $3+(-5)=-2$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-d2ef2266",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Equivalent expressions",
+        "difficulty":  "Medium",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "1",
+                        "B":  "$x+1$",
+                        "C":  "$x-1$",
+                        "D":  "$\\frac{x+1}{x-1}$"
+                    },
+        "prompt":  "$\\frac{x^2-1}{x+1}\\cdot\\frac{x+1}{x-1}=$",
+        "explanation":  {
+                            "correct":  "$\\frac{(x-1)(x+1)}{x+1}\\cdot\\frac{x+1}{x-1}=x+1$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-01bcf303",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Exponential functions",
+        "difficulty":  "Hard",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "4",
+        "acceptableAnswers":  [
+                                  "4"
+                              ],
+        "choices":  null,
+        "prompt":  "$f(x)=4(0.5)^x$. For what $x$ is $f(x)=0.25$?",
+        "explanation":  {
+                            "correct":  "$4(0.5)^x=0.25$. $(0.5)^x=0.0625=(0.5)^4$. $x=4$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-12e0b725",
+        "section":  "Math",
+        "domain":  "Advanced Math",
+        "skill":  "Nonlinear equations in one variable and systems of equations in two variables",
+        "difficulty":  "Medium",
+        "questionType":  "student_produced_response",
+        "type":  "SPR",
+        "correctAnswer":  "3",
+        "acceptableAnswers":  [
+                                  "3"
+                              ],
+        "choices":  null,
+        "prompt":  "$x^3-27=0$. Real solution?",
+        "explanation":  {
+                            "correct":  "$x^3=27$. $x=3$.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-a262cb23",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Textual",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Income inequality has increased.",
+                        "B":  "College costs have risen.",
+                        "C":  "Children born in the bottom income quintile in 1980 had a 9% chance of reaching the top quintile, compared to 12% for those born in 1940â€”a 25% decline in upward mobility across two generations.",
+                        "D":  "Many people change jobs frequently."
+                    },
+        "prompt":  "A sociologist argues social mobility has declined. Which evidence MOST DIRECTLY supports this?",
+        "explanation":  {
+                            "correct":  "Direct mobility measurement across generations.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-7fc1cfcd",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Textual",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Children use many screens.",
+                        "B":  "Brain plasticity exists.",
+                        "C":  "Screen time has increased.",
+                        "D":  "A longitudinal study found that children\u0027s attention spans and brain structure showed no significant differences between heavy and light screen users after controlling for sleep quality and physical activity."
+                    },
+        "prompt":  "A neuroscientist argues screen time rewires children\u0027s brains. Which finding WEAKENS this?",
+        "explanation":  {
+                            "correct":  "No difference after controls = confounding, not screens.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-068bc1c6",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Textual",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "A natural experiment comparing counties on either side of a state borderâ€”one raising minimum wage 20%, the other unchangedâ€”found no statistically significant difference in employment over 5 years.",
+                        "B":  "Workers prefer higher pay.",
+                        "C":  "Inflation affects wages.",
+                        "D":  "Some businesses support higher wages."
+                    },
+        "prompt":  "An economist argues minimum wage increases don\u0027t reduce employment. Strongest evidence?",
+        "explanation":  {
+                            "correct":  "Natural experiment + border comparison = quasi-causal.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-aa543aa1",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Textual",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Ice is melting.",
+                        "B":  "Climate is changing.",
+                        "C":  "Models exist.",
+                        "D":  "The Greenland ice sheet lost mass 7x faster between 2010-2020 than models predicted in 2005, suggesting feedback loops are accelerating beyond projected timelines."
+                    },
+        "prompt":  "A climatologist argues tipping points are closer than models predict. Which evidence?",
+        "explanation":  {
+                            "correct":  "7x faster than predicted = models underestimate.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-852d344d",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Textual",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "The brain is complex.",
+                        "B":  "Anesthesia exists.",
+                        "C":  "Philosophy studies consciousness.",
+                        "D":  "Patients under general anesthesia show near-zero brain activity on EEG yet some report vivid, verifiable experiences during surgery, suggesting consciousness may not require detectable neural correlates."
+                    },
+        "prompt":  "A philosopher argues consciousness cannot be reduced to brain activity. Which finding supports this?",
+        "explanation":  {
+                            "correct":  "Experience without detectable brain activity = hard to reduce.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-4ed74a07",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Quantitative",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "The correlation is too weak.",
+                        "B":  "The data is fabricated.",
+                        "C":  "Both variables are driven by a confounding variable (temperature/season), so the correlation is spurious and the policy would have no effect on drowning.",
+                        "D":  "Ice cream is unrelated to water."
+                    },
+        "prompt":  "A scatter plot: $r=0.92$ between ice cream sales and drowning deaths. A politician proposes banning ice cream to save lives. The flaw:",
+        "explanation":  {
+                            "correct":  "Classic confounding variable example.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-d5311291",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Quantitative",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "The correlation is 0.64.",
+                        "B":  "GDP increases 64% with education.",
+                        "C":  "Education spending explains 64% of the variation in GDP across countries, but 36% is explained by other factors not in the model.",
+                        "D":  "64% of countries spend on education."
+                    },
+        "prompt":  "A regression line predicts a country\u0027s GDP based on education spending. $R^2=0.64$. This means:",
+        "explanation":  {
+                            "correct":  "$R^2$ = proportion of variance explained.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-e3a3da8e",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Quantitative",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "D",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Both hospitals are equal.",
+                        "B":  "Hospital A has better doctors.",
+                        "C":  "The data is wrong.",
+                        "D":  "Hospital A treats a much higher proportion of mild cases (which have higher survival regardless), inflating its overall rate despite performing worse within each category."
+                    },
+        "prompt":  "Simpson\u0027s Paradox: Hospital A has higher overall survival but lower survival in BOTH mild and severe cases. How?",
+        "explanation":  {
+                            "correct":  "Composition effect: unequal case mix.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-52344719",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Quantitative",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Teens don\u0027t use phones.",
+                        "B":  "Depression doesn\u0027t exist.",
+                        "C":  "The tiny effect size ($r=0.12$, explaining ~1.4% of variance) doesn\u0027t support \u0027epidemic\u0027 language, and correlation cannot establish causation regardless of direction.",
+                        "D":  "The correlation is negative."
+                    },
+        "prompt":  "A table shows correlation between phone usage and depression ($r=0.12$). Media headline: \u0027Phones cause teen depression epidemic.\u0027 Problem?",
+        "explanation":  {
+                            "correct":  "Tiny $r$ + no causation = irresponsible headline.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-448902a1",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Command of Evidence: Quantitative",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Lead-time bias: earlier detection through screening makes patients APPEAR to survive longer without actually extending life, because the clock starts earlier.",
+                        "B":  "The data is fake.",
+                        "C":  "65% is not much better than 50%.",
+                        "D":  "Screening doesn\u0027t detect cancer."
+                    },
+        "prompt":  "A survival curve shows 5-year cancer survival improved from 50% to 65% after screening was introduced. A skeptic argues this proves nothing. The skeptic\u0027s reasoning:",
+        "explanation":  {
+                            "correct":  "Lead-time bias = classic screening artifact.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-c1337b26",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Cross-Text Connections",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Markets always fail.",
+                        "B":  "Whether individual irrationality cancels out at the systemic level (classical view) or compounds into systematic market failures (behavioral view)â€”a question about whether micro-irrationality produces macro-irrationality.",
+                        "C":  "Both agree people are rational.",
+                        "D":  "Whether economics exists."
+                    },
+        "prompt":  "Text 1: Behavioral economist Dan Ariely showed people make predictably irrational decisionsâ€”choosing options they know are worse because of framing effects.\nText 2: Classical economist argues that while individual decisions may be irrational, markets aggregate information efficiently and correct individual errors.\nCore tension:",
+        "explanation":  {
+                            "correct":  "Micro vs. macro rationality.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-9ed2d897",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Cross-Text Connections",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "B",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Both measure the same thing.",
+                        "B":  "Pinker measures actual violence but ignores latent risk; Gray argues that living under existential threatâ€”even without actualized violenceâ€”is not \u0027peace\u0027 in any meaningful sense.",
+                        "C":  "Nuclear weapons don\u0027t exist.",
+                        "D":  "Violence hasn\u0027t declined."
+                    },
+        "prompt":  "Text 1: Psychologist Steven Pinker argues violence has declined dramatically over centuries, making us the most peaceful era in history.\nText 2: Philosopher John Gray argues Pinker\u0027s data is misleading because nuclear weapons make the POTENTIAL for violence greater than everâ€”we are one decision from extinction.\nWhat does Gray challenge?",
+        "explanation":  {
+                            "correct":  "Actual vs. potential violence: different definitions of peace.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-4e7a0993",
+        "section":  "Reading and Writing",
+        "domain":  "Craft and Structure",
+        "skill":  "Cross-Text Connections",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "A",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "A single counterexample (Piraha lacking recursion) threatens to falsify Chomsky\u0027s strongest claim about universal grammar, illustrating how one data point can challenge decades of theory.",
+                        "B":  "Chomsky never studied languages.",
+                        "C":  "Both agree on universal grammar.",
+                        "D":  "Piraha speakers can\u0027t learn language."
+                    },
+        "prompt":  "Text 1: Linguist Noam Chomsky argues all humans are born with an innate \u0027universal grammar\u0027â€”a biological capacity for language.\nText 2: Linguist Daniel Everett\u0027s study of the Piraha language found no recursion (embedding clauses within clauses), which Chomsky considered a universal feature.\nSignificance:",
+        "explanation":  {
+                            "correct":  "Falsification by counterexample.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-1bca7134",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Inferences",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Universal healthcare is always better.",
+                        "B":  "The countries are identical otherwise.",
+                        "C":  "The higher-spending country\u0027s lack of universal coverage may create systemic inefficiencies (administrative costs, uncompensated emergency care, preventive care gaps) that increase total cost while worsening outcomes.",
+                        "D":  "GDP determines life expectancy."
+                    },
+        "prompt":  "A country with universal healthcare spends 10% of GDP on health with life expectancy 83. A country without it spends 17% of GDP with life expectancy 78. Inference:",
+        "explanation":  {
+                            "correct":  "System design affects both cost and outcomes.",
+                            "distractors":  {
+
+                                            }
+                        }
+    },
+    {
+        "id":  "antigravity-1d5fe4ba",
+        "section":  "Reading and Writing",
+        "domain":  "Information and Ideas",
+        "skill":  "Inferences",
+        "difficulty":  "Hard",
+        "questionType":  null,
+        "type":  null,
+        "correctAnswer":  "C",
+        "acceptableAnswers":  null,
+        "choices":  {
+                        "A":  "Test scores always improve with feedback.",
+                        "B":  "Feedback doesn\u0027t work.",
+                        "C":  "Narrative feedback may provide richer learning information than grades, but if it doesn\u0027t improve measurable outcomes and dramatically increases costs, its value proposition depends on whether we value what standardized tests don\u0027t measure.",
+                        "D":  "Grades are always better."
+                    },
+        "prompt":  "A school eliminates letter grades and switches to narrative feedback. Teacher workload triples but standardized test scores remain unchanged. Inference:",
+        "explanation":  {
+                            "correct":  "Measurable vs. unmeasurable outcomes: value judgment.",
+                            "distractors":  {
+
+                                            }
+                        }
+    }
+]

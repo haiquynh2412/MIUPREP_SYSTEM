@@ -1,0 +1,39 @@
+{
+  "generated": 300,
+  "failures": 0,
+  "byDomain": {
+    "Algebra": 96,
+    "Advanced Math": 72,
+    "Problem-Solving and Data Analysis": 78,
+    "Geometry and Trigonometry": 54
+  },
+  "bySkill": {
+    "Linear equations in one variable": 28,
+    "Systems of linear equations": 24,
+    "Linear inequalities": 20,
+    "Linear functions and slope": 24,
+    "Quadratic equations": 28,
+    "Equivalent expressions": 22,
+    "Exponential functions": 22,
+    "Percentages": 22,
+    "Ratios and rates": 20,
+    "Statistics": 20,
+    "Probability": 16,
+    "Circles": 18,
+    "Lines, angles, and triangles": 14,
+    "Area and volume": 12,
+    "Right triangles and trigonometry": 10
+  },
+  "byDifficulty": {
+    "Easy": 58,
+    "Medium": 242
+  },
+  "visibility": {
+    "private_family": 300
+  },
+  "reviewStatus": {
+    "reviewed": 300
+  },
+  "sourceSignalId": "kaplan-sat-math-prep",
+  "sourceReference": "data/SAT-Kaplan Test Prep.pdf"
+}

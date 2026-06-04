@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test9",
+  "title": "CPE Entry Test 9 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test9-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Clothes Fit for a Queen</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In a world (0) of microwave ovens, e-mail and ephemeral fashion, we maintain our traditional stance (1) __________ quality and value for money. Call us old-fashioned, we see it (2) __________ a compliment, but around here the customer is always right. After nearly half a century in the fashion industry, we feel we have the (3) __________ to boast that we know exactly what the busy, modern woman wants (4) __________ her closet. (5) __________ her role of mum in the kitchen (6) __________ have expanded to mum in the workplace, we still know how to dress women in clothes that look great, but don't cost an arm and a leg. Our motto has always been 'beauty, fit and quality in affordable clothes'. We (7) __________ the opinion that if something isn't broken then it shouldn't be fixed. We keep old favourites and give them a bright new look each season to (8) __________ you looking up-to-date and stylish. (9) __________ you are driving the kids to a ballgame or presiding over a board meeting, our line of women's apparel is styled and sewn with your confidence and comfort in (10) __________. Our clothes are made of the (11) __________ of fabrics and are all easy care, so you'll (12) __________ the extra task of running to the dry cleaners. (13) __________ designing our attractive line of clothing, we are thinking about the mature, 30-something woman that you have (14) __________. Because of this, we add those discreet folds and pleats to enhance the natural beauty of your body. (15) __________ other clothes manufacturers, who attempt to drape the more mature lady in clothes suited for teenagers, we allow you to take pride in the person you are.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test9-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test9-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "ON",
+                  "on"
+                ]
+              ],
+              "correctAnswer": "ON",
+              "explanation": "Đáp án đề xuất: ON. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ON",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "AS",
+                  "as"
+                ]
+              ],
+              "correctAnswer": "AS",
+              "explanation": "Đáp án đề xuất: AS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "AS",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "RIGHT",
+                  "right"
+                ]
+              ],
+              "correctAnswer": "RIGHT",
+              "explanation": "Đáp án đề xuất: RIGHT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "RIGHT",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "IN",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "IN",
+              "explanation": "Đáp án đề xuất: IN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IN",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "THOUGH",
+                  "though"
+                ]
+              ],
+              "correctAnswer": "THOUGH",
+              "explanation": "Đáp án đề xuất: THOUGH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THOUGH",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "MAY",
+                  "may"
+                ]
+              ],
+              "correctAnswer": "MAY",
+              "explanation": "Đáp án đề xuất: MAY. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "MAY",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "HOLD",
+                  "hold"
+                ]
+              ],
+              "correctAnswer": "HOLD",
+              "explanation": "Đáp án đề xuất: HOLD. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "HOLD",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "KEEP",
+                  "keep"
+                ]
+              ],
+              "correctAnswer": "KEEP",
+              "explanation": "Đáp án đề xuất: KEEP. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "KEEP",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "WHETHER",
+                  "whether"
+                ]
+              ],
+              "correctAnswer": "WHETHER",
+              "explanation": "Đáp án đề xuất: WHETHER. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHETHER",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "MIND",
+                  "mind"
+                ]
+              ],
+              "correctAnswer": "MIND",
+              "explanation": "Đáp án đề xuất: MIND. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "MIND",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "FINEST",
+                  "finest"
+                ]
+              ],
+              "correctAnswer": "FINEST",
+              "explanation": "Đáp án đề xuất: FINEST. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "FINEST",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "AVOID",
+                  "avoid"
+                ]
+              ],
+              "correctAnswer": "AVOID",
+              "explanation": "Đáp án đề xuất: AVOID. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "AVOID",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "WHEN",
+                  "when"
+                ]
+              ],
+              "correctAnswer": "WHEN",
+              "explanation": "Đáp án đề xuất: WHEN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHEN",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "BECOME",
+                  "become"
+                ]
+              ],
+              "correctAnswer": "BECOME",
+              "explanation": "Đáp án đề xuất: BECOME. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BECOME",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "UNLIKE",
+                  "unlike"
+                ]
+              ],
+              "correctAnswer": "UNLIKE",
+              "explanation": "Đáp án đề xuất: UNLIKE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "UNLIKE",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test9-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>What's in a name?</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>CAPITAL LETTERS on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>70</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Born Mary Ann Evans in 1819, George Eliot is (0) tightfully considered one of RIGHT</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the more influential writers ever to have come out of England. Despite her strict,</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>very orthodox (16) ..... eee , Eliot matured into a writer who proved herself to be BRING</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>far ahead of her times, Doth (17) oo... cece and in her personal life. The ideas ART</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>reflected (18).......ccscseeeeeee in her novels pertaining to the role of women in THEME</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>society shocked many, even those who were seen as enlightened. Growing up,</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Eliot lived a culturally starved existence. At an early age she fell under</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the dubious tutelage of the very pious Rev John Jones, WhO (19) .....seseeeeerseees ENFORCE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the staunch beliefs that had been instilled in her from birth. Eliot’s relationship</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>With the (20) .....cceeeseeeereees intellectuals, Charles and Caroline Bray, resulted in PROGRESS</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>HOE (24) ce csstasiccsreinsarner: , and caused her to distance herself from the narrow ideas AWAKE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>which she had held up to that point. This intellectual (22) ...........:se opened REBEL</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>a wide rift between herself and her (23) .....sesseseeeeee devout father. Under the RELIGION</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>patronage of the Bray couple, Eliot had the opportunity to compile a</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(24D). sisvcxcccacecannrneres of “Life of Jesus” by Strauss. This commissioned work was to TRANSLATE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>be the only (25) cc secesecseeerees piece that would ever appear bearing Eliot’s real LITERATURE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>name.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test9-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test9-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: BRING]:",
+              "acceptedAnswers": [
+                [
+                  "UPBRINGING",
+                  "upbringing"
+                ]
+              ],
+              "correctAnswer": "UPBRINGING",
+              "explanation": "Đáp án đề xuất: UPBRINGING. Từ gốc 'BRING' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "UPBRINGING",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "BRING",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: ART]:",
+              "acceptedAnswers": [
+                [
+                  "ARTISTICALLY",
+                  "artistically"
+                ]
+              ],
+              "correctAnswer": "ARTISTICALLY",
+              "explanation": "Đáp án đề xuất: ARTISTICALLY. Từ gốc 'ART' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "ARTISTICALLY",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "ART",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: THEME]:",
+              "acceptedAnswers": [
+                [
+                  "THEMATICALLY",
+                  "thematically"
+                ]
+              ],
+              "correctAnswer": "THEMATICALLY",
+              "explanation": "Đáp án đề xuất: THEMATICALLY. Từ gốc 'THEME' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "THEMATICALLY",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "THEME",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: ENFORCE]:",
+              "acceptedAnswers": [
+                [
+                  "ENFORCED",
+                  "enforced"
+                ]
+              ],
+              "correctAnswer": "ENFORCED",
+              "explanation": "Đáp án đề xuất: ENFORCED. Từ gốc 'ENFORCE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "ENFORCED",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "ENFORCE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: PROGRESS]:",
+              "acceptedAnswers": [
+                [
+                  "PROGRESSIVE",
+                  "progressive"
+                ]
+              ],
+              "correctAnswer": "PROGRESSIVE",
+              "explanation": "Đáp án đề xuất: PROGRESSIVE. Từ gốc 'PROGRESS' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "PROGRESSIVE",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "PROGRESS",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: AWAKE]:",
+              "acceptedAnswers": [
+                [
+                  "AWAKENING",
+                  "awakening"
+                ]
+              ],
+              "correctAnswer": "AWAKENING",
+              "explanation": "Đáp án đề xuất: AWAKENING. Từ gốc 'AWAKE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "AWAKENING",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "AWAKE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: REBEL]:",
+              "acceptedAnswers": [
+                [
+                  "REBELLION",
+                  "rebellion"
+                ]
+              ],
+              "correctAnswer": "REBELLION",
+              "explanation": "Đáp án đề xuất: REBELLION. Từ gốc 'REBEL' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "REBELLION",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "REBEL",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: RELIGION]:",
+              "acceptedAnswers": [
+                [
+                  "RELIGIOUSLY",
+                  "religiously"
+                ]
+              ],
+              "correctAnswer": "RELIGIOUSLY",
+              "explanation": "Đáp án đề xuất: RELIGIOUSLY. Từ gốc 'RELIGION' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "RELIGIOUSLY",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "RELIGION",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: TRANSLATE]:",
+              "acceptedAnswers": [
+                [
+                  "TRANSLATION",
+                  "translation"
+                ]
+              ],
+              "correctAnswer": "TRANSLATION",
+              "explanation": "Đáp án đề xuất: TRANSLATION. Từ gốc 'TRANSLATE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "TRANSLATION",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "TRANSLATE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: LITERATURE]:",
+              "acceptedAnswers": [
+                [
+                  "LITERARY",
+                  "literary"
+                ]
+              ],
+              "correctAnswer": "LITERARY",
+              "explanation": "Đáp án đề xuất: LITERARY. Từ gốc 'LITERATURE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "LITERARY",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "LITERATURE",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test9-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Banking Made Easy</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Part 3</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Eniry Tesi 9</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>For questions 26-37, read the two texts below and decide which answer (A, B, C or D) best fits each gap.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>BANKING MADE EASY</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>| If you would prefer your Child Tax</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>| Benefit to De (26) -.rercseseeese directly into</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>| your account, or if you wish to alter</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>| factual information which we already</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>from the relevant bank account. All</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>banking information must be filled in</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>on the cheque. All applicable</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>information can be found on deposit</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(28) sserececsearee , passbooks, personal</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>bank (29) ssscsscrseree OF by contacting</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>your banking facility. Because this</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>cheque will be remitted by post, void’</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>should be inscribed across the front of</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>against forgery or wrongful use. This</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>request for direct deposit will remain</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>valid until we are further notified. If</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the situation arises where a new</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>account is opened at the same financial</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(BL) sssiscassosees , the old account should</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>not be closed as this could lead to</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>delays in payment.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Have (27) cesssvveersere to, you must supply</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>| the payment office with a blank cheque</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>it, in bold print, to (30) csrersecerossoree</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>26 A credited B debited C paid D charged</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>27 =A claim B access Cc view D_ hold</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>28 A _ records B sheets C slips D cards</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>29 A _ statements B reports C balances D_ withdrawals</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>30 A_ ensure B guarantee C prevent D stall</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>31 A institution B practice C company D branch</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>his year, Christmas would not have big screen. This heart-warming story tells the</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>| been complete without a (32) «rss (35) sere Of a character who everyone loves</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>of Ron Howard’s interpretation of the to hate. The Grinch, the paradigm of</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>old classic, ‘The Grinch’. This (33) «ssrssssseve Christmas humbug, attempts to rob the lovable</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>office hit had parents, complete with and loving residents of Whoville of their</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>tOddlers, (34) cosrsserereeee up for hours outside Christmas festivities. With the help of his</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>American cinemas. Based on one of Dr reluctant accomplice, Max the dog, the Grinch</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Seuss’ best-known children’s books, ‘How hatches a plan to (36) s-rrssrssse an end to</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Grinch Stole Christmas’, it had been Christmas spirit forever. However, his evil</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>adapted for TV in animated form, in the scheme is (37) ssssrecessere by a young girl, when</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>early seventies. This year, the Grinch proved she reveals to him the true meaning of</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>himself to be an even bigger success on the Christmas.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>32 A sighting B_ spotting Cc viewing D visiting</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>33 A ticket B sales Cc cinema D box</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>34 =A lined B queued C_ stood D filed</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>35 A pilot B_ scenario Cc iale D script</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>36 A make B put C give D call</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>37 A flawed B foiled C fostered D faked</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>ya</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test9-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test9-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - credited. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "credited",
+              "category": "cpe_part_1",
+              "options": [
+                "A. credited",
+                "B. debited",
+                "C. paid",
+                "D. charged"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - access. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "access",
+              "category": "cpe_part_1",
+              "options": [
+                "A. claim",
+                "B. access",
+                "C. view",
+                "D. hold"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - slips. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "slips",
+              "category": "cpe_part_1",
+              "options": [
+                "A. records",
+                "B. sheets",
+                "C. slips",
+                "D. cards"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - statements. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "statements",
+              "category": "cpe_part_1",
+              "options": [
+                "A. statements",
+                "B. reports",
+                "C. balances",
+                "D. withdrawals"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - prevent. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "prevent",
+              "category": "cpe_part_1",
+              "options": [
+                "A. ensure",
+                "B. guarantee",
+                "C. prevent",
+                "D. stall"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - institution. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "institution",
+              "category": "cpe_part_1",
+              "options": [
+                "A. institution",
+                "B. practice",
+                "C. company",
+                "D. branch"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - viewing. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "viewing",
+              "category": "cpe_part_1",
+              "options": [
+                "A. sighting",
+                "B. spotting",
+                "C. viewing",
+                "D. visiting"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - box. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "box",
+              "category": "cpe_part_1",
+              "options": [
+                "A. ticket",
+                "B. sales",
+                "C. cinema",
+                "D. box"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - queued. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "queued",
+              "category": "cpe_part_1",
+              "options": [
+                "A. lined",
+                "B. queued",
+                "C. stood",
+                "D. filed"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - tale. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "tale",
+              "category": "cpe_part_1",
+              "options": [
+                "A. pilot",
+                "B. scenario",
+                "C. tale",
+                "D. script"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - put. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "put",
+              "category": "cpe_part_1",
+              "options": [
+                "A. make",
+                "B. put",
+                "C. give",
+                "D. call"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - foiled. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "foiled",
+              "category": "cpe_part_1",
+              "options": [
+                "A. flawed",
+                "B. foiled",
+                "C. fostered",
+                "D. faked"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test9-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>People Out of Time</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read a newspaper article. Seven paragraphs have been removed from the article. Choose from the paragraphs A-H the one which fits each gap (38-44). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In a tiny, remote community in Mexico, the Buchert family is just beginning to stir. It is five o'clock in the morning and Pietra Buchert, the mother of the family, lights the kerosene lamp which sits prominently on the handmade wooden table in the middle of the room, which serves as both family room and kitchen. She opens the back door and gathers wood to light the large woodstove that heats the house and cooks all the family meals.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Buchert family is Mennonite. The Mennonites are a religious group which originally emigrated from Holland and Germany. These early Mennonites adhered to an ideology which differed from that which was prevalent in Germany and Holland at that time. These beliefs earned the Mennonites the wrath of both the church and the government in their native homelands. If this small religious minority had insisted on staying in their countries of origin, its members would have been forced to pay monetary restitution, endure prison terms, or, in some instances, face execution.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The latter part of the nineteenth century saw approximately 7,000 Mennonites absconding from the European continent and sailing for the Americas. Like the English Puritans before them, they placed their hopes in these newfound lands, where, if circumstances allowed, they would be free from scrutiny, bigotry and reprimand.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the early 1920s, the beleaguered Mennonites disassembled their households yet again and took to the road. Bringing with them their furniture, personal belongings and livestock, they travelled south by train to Mexico. Because of the sparse population and ample available farmland, it appeared the Mennonites had finally found a haven. Today, one can find a total of approximately 50,000 Mennonites living and farming throughout Mexico in 23 separate communities.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>As a result of their fear of the world's negative influence, the Mennonites insist on educating their children in their own fashion. Johan Buchert and his peers receive a very limited education until they reach their early teens. The schooling of Mennonite girls ceases even sooner, at the age of twelve.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>For this class, the textbooks used include the Bible and a hymnbook. The Mennonites have maintained the language of their forefathers, which is known as Low German. However, this language cannot be represented graphically in a written mode. Consequently, the two textbooks are written in High German which, ironically, is a language virtually unknown to both students and teacher. This means that the majority of Mennonite children will leave school illiterate.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Bucherts, like most Mennonites, are dairy farmers who produce mainly cheese. All aspects of the cheese-making process are done manually without the aid of electrical labour-saving devices. Even the youngest children are expected to pull their weight and spend most of the day engaged in helping with household chores and light farmwork. As the Bucherts have no electric lights in their house, their daily routine and schedule are regulated by the amounts of daylight between sunrise and sunset.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The traditional farms of the Mennonites cannot compete with the more modernised farms. To survive, the Bucherts and other Mennonite families may be compelled to sell their family-run farms and find work on large commercialised farms in Mexico and Canada. This migratory way of life would separate the Bucherts, and other families like them, from their tight-knit Mennonite communities and the internal support it has provided. In the end, a combination of these factors will probably weaken the younger Mennonites' beliefs and, after so many years, the age-old traditions of the Mennonites will gradually die out.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test9-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test9-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The family patriarch, Hans, emerges from one of the two bedrooms in which the family of eight sleeps. Following closely behind his father is Johan, the eldest child of the family. Together, father and son leave the house to go to the barn where their small herd of cows is kept. One by one, the rest of the six Buchert children appear from the bedrooms. The children of the family wear simple, handsewn clothes. Is this the 1800s? No, believe it or not, it is now, at the turn of the new century.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Chọn đoạn F. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The first stopping place after the Mennonite exodus from Germany and Holland was the Ukraine. Contrary to finding asylum there, they again met with a government which would not condone their practices. Mennonites would not obey certain laws so they were not left to practise their religion in peace and solitude.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Canada was chosen as the site for the long-yearned-for Promised Land. Unfortunately, the Mennonites seemed doomed to fail in their quest. The Canadian government's demand that the Mennonites have their children attend state-run schools was met with derision and strong refusal. Adding fuel to the fire, the First World War had created feelings of strong anti-German sentiment in most Canadian citizens and hatred for this peace-loving people was at an all-time high.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The Buchert family, like all Mennonites, tries to live independent of, and separate from, the rest of the world. Both the outside world with its non-Mennonite population and its accompanying drive for progress are seen as threatening by the Mennonites. Worldliness is offensive and abhorrent as it entails elements which are the antithesis of what the Mennonites hold as sacred. Mennonite children must be protected from the outside world at all costs.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Shunning government-sponsored institutes of learning, these children attend small one-room schools, where they are taught by young, unmarried Mennonite women. The subjects in which the children receive instruction have been carefully chosen and approved by the church elders. To illustrate how inadequate and unproductive this system of education is, one need only examine the way language is taught.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn đoạn C. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The Bucherts' lives are further restricted by the fact that the Mennonites show great animosity towards technology as it could adversely affect their traditional way of life. In direct response to this, the Mennonites decry the use of electricity, automobiles and modern farm implements. This refusal to use modern conveniences means that their lives are made much more difficult and most of the Buchert family's day is spent in laborious toil.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The Bucherts and other Mennonites have struggled to maintain a lifestyle which dates back centuries. Even though their everyday lives are tedious and painstaking, they have made a conscious decision to persevere in this manner. Sadly, however, where fines, incarceration and capital punishment have failed to dissuade them from leading their lives in a manner obedient to the edicts of their religious doctrine, progress may force them to do so.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "The Bucherts and other Mennonites have struggled to maintain a lifestyle which dates back centuries. Even though their everyday lives are tedious and painstaking, they have made a conscious decision to persevere in this manner. Sadly, however, where fines, incarceration and capital punishment have failed to dissuade them from leading their lives in a manner obedient to the edicts of their religious doctrine, progress may force them to do so."
+            },
+            {
+              "label": "B",
+              "text": "The Buchert family, like all Mennonites, tries to live independent of, and separate from, the rest of the world. Both the outside world with its non-Mennonite population and its accompanying drive for progress are seen as threatening by the Mennonites. Worldliness is offensive and abhorrent as it entails elements which are the antithesis of what the Mennonites hold as sacred. Mennonite children must be protected from the outside world at all costs."
+            },
+            {
+              "label": "C",
+              "text": "The Bucherts' lives are further restricted by the fact that the Mennonites show great animosity towards technology as it could adversely affect their traditional way of life. In direct response to this, the Mennonites decry the use of electricity, automobiles and modern farm implements. This refusal to use modern conveniences means that their lives are made much more difficult and most of the Buchert family's day is spent in laborious toil."
+            },
+            {
+              "label": "D",
+              "text": "Canada was chosen as the site for the long-yearned-for Promised Land. Unfortunately, the Mennonites seemed doomed to fail in their quest. The Canadian government's demand that the Mennonites have their children attend state-run schools was met with derision and strong refusal. Adding fuel to the fire, the First World War had created feelings of strong anti-German sentiment in most Canadian citizens and hatred for this peace-loving people was at an all-time high."
+            },
+            {
+              "label": "E",
+              "text": "The Mennonites arose as a radical reform group during the Reformation of the 16th century. The founder of this order was a priest from Holland named Menno Simonz. The Mennonites share their roots with a group of similar beliefs known as the Swiss Brethren. Despite the similarity of their origins, these two groups have several fundamental differences."
+            },
+            {
+              "label": "F",
+              "text": "The first stopping place after the Mennonite exodus from Germany and Holland was the Ukraine. Contrary to finding asylum there, they again met with a government which would not condone their practices. Mennonites would not obey certain laws so they were not left to practise their religion in peace and solitude."
+            },
+            {
+              "label": "G",
+              "text": "The family patriarch, Hans, emerges from one of the two bedrooms in which the family of eight sleeps. Following closely behind his father is Johan, the eldest child of the family. Together, father and son leave the house to go to the barn where their small herd of cows is kept. One by one, the rest of the six Buchert children appear from the bedrooms. The children of the family wear simple, handsewn clothes. Is this the 1800s? No, believe it or not, it is now, at the turn of the new century."
+            },
+            {
+              "label": "H",
+              "text": "Shunning government-sponsored institutes of learning, these children attend small one-room schools, where they are taught by young, unmarried Mennonite women. The subjects in which the children receive instruction have been carefully chosen and approved by the church elders. To illustrate how inadequate and unproductive this system of education is, one need only examine the way language is taught."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test9-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read part of the preface from a book. For questions 45-50, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>When Stephen King decided to publish his ghost story Riding the Bullet online, at a cost of $2.50, (although some of the various book-related sites he used did not charge anything), the 66-page book sold more copies than any of his conventional print novels had on their first day. King’s e- book netted 400,000 orders during its first 24 hours of being made available on the Internet. Although the novelty factor cannot be discounted — after all, Stephen King is a world- famous best-selling author - the figures cannot fail to impress, marking the advent of the e-book format as a ‘fait accompli’. Having said that, we should note that King himself, despite embracing new technology, has stated that he does not believe that anything will replace printed books.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>King’s caution is probably not far off the mark. The electronic transfer of print poses a number of problems. Firstly, it takes fifty percent longer to read a page of text on a computer than on paper. In addition, delivery on the Internet is slow, with the lack of bandwidth in the Internet’s structure causing delays in downloading. To use Riding the Bullet as an example, the Associated Press managed to download it only after twenty-five hours and repeated attempts. If graphics are required, these take even more time and are therefore difficult to match with the more readily downloaded text. Lastly, in practical terms, even a miniature computer is less convenient to carry around than a book, magazine or newspaper, and not so easy to use.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Both readers and writers love the printed word, so they cannot be the spur to e-publishing. It is, rather, commercial interests that drive us on, not to improve the contents of what we read but rather in order to sell the computer hardware that makes e-books reality. Although undeniably more expensive than a bookcase or bookshelves (which are all you need for conventional printed books), this is not necessarily a negative development. However, without speed and quality of delivery, e-books are hardly worth the initial investment on hardware. Nevertheless, from the commercial point of view, once the infrastructure for the transmission of information has been set up, the cost of delivery for the provider, is minimal.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There are three main stages to publishing: content, production and delivery. The first of these is the least subject to change, except as shifts in readership tastes and language dictate. Production, on the other hand, is an ever-evolving process, although it goes on behind the scenes, as it were, unseen by the reader, and has been transformed over the past twenty years by the use of computers so that the third stage, delivery, no longer needs to be completed by physical means.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>So what does the future hold for e-publishing? Various recent developments such as the Graphical User Interface (GUI), devised by Xerox, and its feature known for short as Wysiwyg (what you see is what you get) ensures that on-screen and printed page correspond to each other and do what the writer and page designer intended. Additionally, as an article may be simultaneously reproduced on the printed page of a newspaper and on its website (more than fifty percent of all newspapers now having websites), a layout language which obviates the problem and extra work of having to publish two separate versions has now been devised. This layout language utilises structured data to enable publishers to use the same material to publish in both formats, print and electronic, with a minimum of additional work.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>With the availability of WAP displays on our mobile phones, our teletext accompaniment to the TV, and our powered Pocket PC, is our relationship to the printed word going to change? Are we all destined, in the foreseeable future, to become screenagers unable to relate to print and paper, or even, in the worst case scenario, not only unable to read printed books but no longer able to manipulate a pen and write with it? Or will we still be renewing our library books and browsing round bookshops\" I, for one, in common with Stephen King, hope and believe that it will be the latter.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test9-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test9-45",
+              "type": "multiple_choice",
+              "instruction": "Riding the Bullet’s success is thought by the writer to be",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - remarkable.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "remarkable.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. an accomplished fact.",
+                "B. merely a novelty.",
+                "C. remarkable.",
+                "D. distressing."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-46",
+              "type": "multiple_choice",
+              "instruction": "Stephen King himself",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - prefers the printed word.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "prefers the printed word.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. wholeheartedly supports e-publishing.",
+                "B. considers printed books harder to carry than a small computer.",
+                "C. distrusts new technology.",
+                "D. prefers the printed word."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-47",
+              "type": "multiple_choice",
+              "instruction": "The writer implies that",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - reading downloaded text is more tedious.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "reading downloaded text is more tedious.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. e-publishing has solved most of its problems.",
+                "B. the only problem with e-books has to do with graphics.",
+                "C. reading downloaded text is more tedious.",
+                "D. downloading text is unlikely to become an efficient alternative to books."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-48",
+              "type": "multiple_choice",
+              "instruction": "Those who are keen on e-publishing are",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - computer manufacturers.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "computer manufacturers.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. magazine publishers.",
+                "B. the book buying public.",
+                "C. computer manufacturers.",
+                "D. investors."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-49",
+              "type": "multiple_choice",
+              "instruction": "According to the writer, the ‘content stage’ of publishing",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - changes relatively little.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "changes relatively little.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. produces changes in reading habits.",
+                "B. changes relatively little.",
+                "C. has been changed by computerisation.",
+                "D. is driving changes in the production and delivery stages."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test9-50",
+              "type": "multiple_choice",
+              "instruction": "Recent innovations enable:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - publishers to reduce workload.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "publishers to reduce workload.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. people to access identical material in different ways.",
+                "B. writers to act as page designers as well.",
+                "C. newspaper material to be available in different versions.",
+                "D. publishers to reduce workload."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

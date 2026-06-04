@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "totalQuestions": 10523,
+    "sourceFiles": {
+      "antigravity-bank.json": 7158,
+      "archive-source-ai-bank.json": 792,
+      "kaplan-sat-math-ai-bank.json": 148,
+      "opensat-pinesat.json": 1026,
+      "private-vault-archive-bank.json": 165,
+      "sat-1590-elite-ai-bank.json": 661,
+      "sat-king-supplemental-ai-bank.json": 354,
+      "sat-studio-foundation-bank.json": 219
+    },
+    "sectionCounts": {
+      "Reading and Writing": 4439,
+      "Math": 6084
+    },
+    "criticalIssueCount": 0,
+    "criticalQuestionCount": 0,
+    "blockedSourceQuestionCount": 0,
+    "blockedSourceIssueCount": 0,
+    "warningIssueCount": 0,
+    "warningQuestionCount": 0,
+    "overrepresentedTopicCount": 0,
+    "topicGovernancePlanCount": 0,
+    "sectionBalanceIssue": null,
+    "issueBreakdown": {
+      "critical": {},
+      "blocked": {},
+      "warning": {},
+      "repeatedTopics": []
+    }
+  },
+  "issueBreakdown": {
+    "critical": {},
+    "blocked": {},
+    "warning": {},
+    "repeatedTopics": []
+  },
+  "overrepresentedTopics": {},
+  "topicGovernancePlan": {},
+  "studyPolicy": {
+    "schemaVersion": "sat_study_policy_v1",
+    "purpose": "Suppress technically valid but low-priority rows from default learner flows without deleting them from the bank.",
+    "suppressedDefaultStudyIds": [],
+    "topicOverflowCandidateIds": [],
+    "rwLongPromptIds": [],
+    "counts": {
+      "suppressedDefaultStudy": 0,
+      "topicOverflowCandidates": 0,
+      "rwLongPrompts": 0
+    }
+  },
+  "criticalRows": [],
+  "blockedRows": [],
+  "warningRows": []
+}

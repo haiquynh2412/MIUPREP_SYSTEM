@@ -1,0 +1,2016 @@
+[
+  {
+    "id": "antigravity-hard-fe1bdd17",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A system of inequalities is defined by x ≥ 0, y ≥ 0, 2x + 3y ≤ 12, and x + y ≤ 5. How many vertices does the feasible region have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vertices are (0,0), (5,0), (3,2), (0,4). Intersection of 2x+3y=12 and x+y=5: subtract → x=3, y=2; check both constraints. Four vertices total.",
+      "distractors": {
+        "B": "Counts (6,0) which violates x+y ≤ 5.",
+        "C": "Omits the origin (0,0).",
+        "D": "Counts intersections that lie outside the feasible region."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify all valid intersections of boundary lines within the constraint set",
+      "trapTypes": [
+        "phantom intersection",
+        "forgetting origin vertex"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-00569fa4",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A graph shows a solid line passing through (0, 4) and (6, 0) with the region below and including the line shaded. Which inequality represents the shaded region?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2x + 3y ≤ 12"
+      },
+      {
+        "letter": "B",
+        "text": "2x + 3y < 12"
+      },
+      {
+        "letter": "C",
+        "text": "3x + 2y ≤ 12"
+      },
+      {
+        "letter": "D",
+        "text": "2x + 3y ≥ 12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Line through (0,4) and (6,0): slope = −2/3 → y = 4 − (2/3)x → 2x + 3y = 12. Solid line = boundary included → ≤ or ≥. Shaded below → ≤. Test (0,0): 0 ≤ 12 ✓.",
+      "distractors": {
+        "B": "Uses strict < but the solid line means the boundary IS included.",
+        "C": "Swaps x and y coefficients — would pass through (0,6) and (4,0) instead.",
+        "D": "Correct equation but shades above the line, not below."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translate graphical features (solid/dashed, shading direction) into algebraic inequality",
+      "trapTypes": [
+        "solid vs dashed confusion",
+        "coefficient swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-e87647ae",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which compound inequality is equivalent to |3x − 6| ≤ 9?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−1 ≤ x ≤ 5"
+      },
+      {
+        "letter": "B",
+        "text": "−1 < x < 5"
+      },
+      {
+        "letter": "C",
+        "text": "−5 ≤ x ≤ 1"
+      },
+      {
+        "letter": "D",
+        "text": "x ≤ −1 or x ≥ 5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "|3x − 6| ≤ 9 ⟹ −9 ≤ 3x − 6 ≤ 9 ⟹ −3 ≤ 3x ≤ 15 ⟹ −1 ≤ x ≤ 5.",
+      "distractors": {
+        "B": "Uses strict inequalities (<); the original ≤ includes the endpoints.",
+        "C": "Sign error — subtracts incorrectly, reversing the interval.",
+        "D": "Converts a ≤ inequality into a disjunction (|…| ≥ form)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Decompose absolute-value inequality into a conjunction",
+      "trapTypes": [
+        "strict vs non-strict",
+        "≤ vs ≥ absolute-value split"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-e056c322",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Given the constraints x ≥ 0, y ≥ 0, x + y ≤ 8, and 2x + y ≤ 14, what is the maximum value of P = 3x + 5y?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "40"
+      },
+      {
+        "letter": "B",
+        "text": "42"
+      },
+      {
+        "letter": "C",
+        "text": "38"
+      },
+      {
+        "letter": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vertices: (0,0), (7,0), (6,2), (0,8). P(0,0)=0; P(7,0)=21; P(6,2)=28; P(0,8)=40. Maximum = 40 at (0,8).",
+      "distractors": {
+        "B": "Misapplies the $5 coefficient to x instead of y at (0,8), getting 42.",
+        "C": "Evaluates at (6,2) and adds a phantom +10.",
+        "D": "Picks the y-intercept of 2x+y=14 (y=14) without checking x+y ≤ 8."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluate objective function at all vertices of a feasible polygon",
+      "trapTypes": [
+        "skipping vertex check",
+        "arithmetic error at vertex"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-656eb66a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A bakery spends at most $240 on flour and sugar. Flour costs $4 per bag and sugar costs $6 per bag. The bakery needs at least 20 bags total. If f is flour bags and s is sugar bags, which system models this situation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4f + 6s ≤ 240, f + s ≥ 20, f ≥ 0, s ≥ 0"
+      },
+      {
+        "letter": "B",
+        "text": "4f + 6s ≥ 240, f + s ≤ 20, f ≥ 0, s ≥ 0"
+      },
+      {
+        "letter": "C",
+        "text": "6f + 4s ≤ 240, f + s ≥ 20, f ≥ 0, s ≥ 0"
+      },
+      {
+        "letter": "D",
+        "text": "4f + 6s ≤ 240, f + s ≤ 20, f ≥ 0, s ≥ 0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "'At most $240' → 4f + 6s ≤ 240. 'At least 20 bags' → f + s ≥ 20. Non-negative quantities → f ≥ 0, s ≥ 0.",
+      "distractors": {
+        "B": "Reverses both inequality directions.",
+        "C": "Swaps unit costs of flour ($4) and sugar ($6).",
+        "D": "Reads 'at least 20' as 'at most 20', flipping f + s ≥ 20 to ≤ 20."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translate verbal constraints into algebraic inequalities",
+      "trapTypes": [
+        "direction reversal",
+        "coefficient swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-9dbb53e7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The solution set of y < 2x + 1 and y ≥ −x + 4 is a region in the xy-plane. Which of the following points is in the solution set?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(3, 1)"
+      },
+      {
+        "letter": "B",
+        "text": "(0, 5)"
+      },
+      {
+        "letter": "C",
+        "text": "(1, 3)"
+      },
+      {
+        "letter": "D",
+        "text": "(2, 5)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Test each: (3,1): 1<7 ✓ and 1≥1 ✓ → in region. (0,5): 5<1 ✗. (1,3): 3<3 ✗ (strict boundary excluded). (2,5): 5<5 ✗.",
+      "distractors": {
+        "B": "Fails y < 2x+1 since 5 < 1 is false.",
+        "C": "Lies exactly on y = 2x+1; the strict < excludes boundary points.",
+        "D": "Also on the boundary y = 2x+1 at (2,5); excluded by strict <."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Distinguish strict inequality (boundary excluded) from non-strict (included)",
+      "trapTypes": [
+        "including boundary of strict inequality",
+        "testing only one constraint"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-847ad35a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The region defined by x ≥ 0, y ≥ 0, and x + y ≤ 6 is a triangle. What is the area of this triangle?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "18"
+      },
+      {
+        "letter": "B",
+        "text": "36"
+      },
+      {
+        "letter": "C",
+        "text": "12"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vertices (0,0), (6,0), (0,6). Base = 6, height = 6. Area = (1/2)(6)(6) = 18.",
+      "distractors": {
+        "B": "Omits the 1/2 factor: 6 × 6 = 36.",
+        "C": "Uses base × height / 3 = 12.",
+        "D": "Half-base × half-height: (3)(3) = 9."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compute area from vertices of a feasible triangle",
+      "trapTypes": [
+        "forgetting 1/2 factor",
+        "misidentifying vertices"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-ecdcb1fb",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A coordinate plane shows a dashed line y = (1/2)x + 3 with the region above the line shaded. Which inequality is represented?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y > (1/2)x + 3"
+      },
+      {
+        "letter": "B",
+        "text": "y ≥ (1/2)x + 3"
+      },
+      {
+        "letter": "C",
+        "text": "y < (1/2)x + 3"
+      },
+      {
+        "letter": "D",
+        "text": "y ≤ (1/2)x + 3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Dashed line → strict inequality (boundary NOT included). Shaded above → y >. Combined: y > (1/2)x + 3.",
+      "distractors": {
+        "B": "Uses ≥; dashed line means boundary excluded, so must be strict >.",
+        "C": "Correct strictness but wrong shading direction — this is below.",
+        "D": "Both wrong: non-strict and below."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Map graphical conventions (dashed/solid, above/below) to inequality symbols",
+      "trapTypes": [
+        "dashed vs solid",
+        "above vs below"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-a2551c1d",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If −7 < 3 − 2x ≤ 11, what is the solution set for x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−4 ≤ x < 5"
+      },
+      {
+        "letter": "B",
+        "text": "−4 < x ≤ 5"
+      },
+      {
+        "letter": "C",
+        "text": "−5 ≤ x < 4"
+      },
+      {
+        "letter": "D",
+        "text": "−4 ≤ x ≤ 5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Subtract 3: −10 < −2x ≤ 8. Divide by −2 (flip both inequalities): −4 ≤ x < 5.",
+      "distractors": {
+        "B": "Flips inequalities but also swaps strict/non-strict markers.",
+        "C": "Transposes the endpoint values due to a sign error.",
+        "D": "Forgets that dividing by a negative flips strict ↔ non-strict."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Handle inequality reversal when dividing by a negative",
+      "trapTypes": [
+        "forgetting to flip inequality",
+        "strict/non-strict swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-87bf4bcd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A system consists of y ≤ 2x + 6, y ≥ 2x − 2, x ≥ 0, and y ≤ 10. What is the x-coordinate of the rightmost vertex of the feasible region?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Intersection of y = 2x − 2 and y = 10: 10 = 2x − 2 → x = 6 → vertex (6,10). Intersection of y = 2x + 6 and y = 10: x = 2 → vertex (2,10). Rightmost vertex is (6, 10).",
+      "distractors": {
+        "B": "Averages 6 and 2 to get 4.",
+        "C": "Uses the vertical gap between the parallel lines (≈3.6) and rounds.",
+        "D": "Finds x = 2 from the other intersection and confuses rightmost with leftmost."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify extreme vertex in a bounded region between parallel lines",
+      "trapTypes": [
+        "confusing rightmost with leftmost",
+        "averaging coordinates"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-d14dadc3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which inequality describes all points (x, y) such that the horizontal distance from x = 3 is at most 5 AND y ≥ 1?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "|x − 3| ≤ 5 and y ≥ 1"
+      },
+      {
+        "letter": "B",
+        "text": "|x − 3| < 5 and y > 1"
+      },
+      {
+        "letter": "C",
+        "text": "|x + 3| ≤ 5 and y ≥ 1"
+      },
+      {
+        "letter": "D",
+        "text": "|x − 3| ≥ 5 and y ≥ 1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "'Horizontal distance from x = 3 is at most 5' → |x − 3| ≤ 5 → −2 ≤ x ≤ 8. Combined with y ≥ 1.",
+      "distractors": {
+        "B": "Uses strict inequalities; 'at most' includes boundaries → ≤ and ≥.",
+        "C": "|x + 3| measures distance from x = −3, not x = 3.",
+        "D": "≥ 5 gives points at least 5 away — the complement of the correct set."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translate geometric distance language into absolute-value inequality",
+      "trapTypes": [
+        "sign error in absolute value",
+        "strict vs non-strict"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-6da6d6e5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many integer coordinate pairs (x, y) satisfy x ≥ 1, y ≥ 1, and x + y ≤ 5?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "15"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x=1: y=1,2,3,4 → 4. x=2: y=1,2,3 → 3. x=3: y=1,2 → 2. x=4: y=1 → 1. Total = 4+3+2+1 = 10.",
+      "distractors": {
+        "B": "Uses x+y ≤ 6, overcounting by one on each row.",
+        "C": "Counts only the 6 boundary points on x+y = 5.",
+        "D": "Counts only the x=1 column."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Systematically enumerate lattice points within a triangular region",
+      "trapTypes": [
+        "off-by-one boundary",
+        "including zero values"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-9ab5f8e2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following points is NOT in the solution set of 3x − 2y ≤ 6 and x + 4y ≥ 8?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(4, 0)"
+      },
+      {
+        "letter": "B",
+        "text": "(0, 2)"
+      },
+      {
+        "letter": "C",
+        "text": "(2, 3)"
+      },
+      {
+        "letter": "D",
+        "text": "(0, 4)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Test (4,0): 3(4)−2(0)=12; 12 ≤ 6 is FALSE → (4,0) is not in the set.",
+      "distractors": {
+        "B": "3(0)−2(2)=−4 ≤ 6 ✓ and 0+8=8 ≥ 8 ✓ → valid.",
+        "C": "3(2)−2(3)=0 ≤ 6 ✓ and 2+12=14 ≥ 8 ✓ → valid.",
+        "D": "3(0)−2(4)=−8 ≤ 6 ✓ and 0+16=16 ≥ 8 ✓ → valid."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Test points against multiple inequalities to find a violation",
+      "trapTypes": [
+        "testing only one inequality",
+        "sign error in substitution"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-9df737c6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A truck can carry at most 1200 kg. Crates weigh 30 kg each and barrels weigh 50 kg each. The truck must carry at least 10 crates and at least 5 barrels. What is the maximum number of barrels the truck can carry?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "18"
+      },
+      {
+        "letter": "B",
+        "text": "15"
+      },
+      {
+        "letter": "C",
+        "text": "24"
+      },
+      {
+        "letter": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "30c + 50b ≤ 1200, c ≥ 10, b ≥ 5. Maximise b → minimise c = 10. 300 + 50b ≤ 1200 → 50b ≤ 900 → b ≤ 18.",
+      "distractors": {
+        "B": "Uses c = 15 instead of the minimum → 50b ≤ 750 → b ≤ 15.",
+        "C": "Ignores crate minimum entirely: 50b ≤ 1200 → b = 24.",
+        "D": "Arithmetic slip: 900/50 rounded to 20."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Minimise one variable to maximise another under linear constraints",
+      "trapTypes": [
+        "ignoring minimum constraint",
+        "not minimising competing variable"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-5d12c56b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system y > x − 1 and y < −2x + 8 defines a region. At what point do the two boundary lines intersect?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(3, 2)"
+      },
+      {
+        "letter": "B",
+        "text": "(2, 4)"
+      },
+      {
+        "letter": "C",
+        "text": "(4, 0)"
+      },
+      {
+        "letter": "D",
+        "text": "(1, 6)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Set x − 1 = −2x + 8 → 3x = 9 → x = 3, y = 2. Intersection: (3, 2).",
+      "distractors": {
+        "B": "Uses x + 1 = −2x + 8 (sign slip) → 3x = 7, rounds to (2,4).",
+        "C": "Sets y = 0 in one equation only → x = 4.",
+        "D": "Substitutes x = 1 into y = −2x + 8 = 6 without solving the system."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find intersection of two boundary lines algebraically",
+      "trapTypes": [
+        "substitution error",
+        "solving only one equation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-a27b9963",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The region defined by y ≤ 4, y ≥ 0, y ≤ 2x, and x ≤ 5 is a quadrilateral. What is the area of this region?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "14"
+      },
+      {
+        "letter": "B",
+        "text": "20"
+      },
+      {
+        "letter": "C",
+        "text": "16"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Vertices: (0,0), (5,0), (5,4), (2,4). Trapezoid with parallel sides along y = 0 (length 5) and y = 4 (from x = 2 to x = 5, length 3). Height = 4. Area = (1/2)(5+3)(4) = 16.",
+      "distractors": {
+        "A": "Subtracts a phantom triangle from the trapezoid → 14.",
+        "B": "Uses the bounding rectangle 5 × 4 = 20, ignoring the slanted side y = 2x.",
+        "D": "Computes (1/2)(5)(4) = 10, treating the shape as a triangle."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compute area of a polygon with vertices from inequality intersections",
+      "trapTypes": [
+        "using bounding rectangle",
+        "misidentifying the shape"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-bce77e20",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A student works at most 30 hours per week between two jobs. Job A pays $12/hr and Job B pays $15/hr. The student can work at most 20 hours at Job A. If the student must earn at least $360/week, what is the minimum number of hours the student must work at Job B?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "10"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Constraints: a + b ≤ 30, a ≤ 20, 12a + 15b ≥ 360. Minimise b → maximise a = 20. 12(20) + 15b ≥ 360 → 240 + 15b ≥ 360 → 15b ≥ 120 → b ≥ 8.",
+      "distractors": {
+        "B": "Uses a = 25 (exceeds 20-hr cap) → 15b ≥ 60 → b = 4, rounds to 6.",
+        "C": "Uses a = 15 → 15b ≥ 180 → b ≥ 12, then rounds down to 10.",
+        "D": "Uses a = 10 → 15b ≥ 240 → b ≥ 16, misreads as 12."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Minimise one variable under coupled linear constraints",
+      "trapTypes": [
+        "not maximising complementary variable",
+        "ignoring cap constraint"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-f7c3f17a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to −5x + 10 ≥ 3x − 6?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x ≤ 2"
+      },
+      {
+        "letter": "B",
+        "text": "x ≥ 2"
+      },
+      {
+        "letter": "C",
+        "text": "x ≤ −2"
+      },
+      {
+        "letter": "D",
+        "text": "x ≥ −2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "−5x + 10 ≥ 3x − 6 → 16 ≥ 8x → x ≤ 2.",
+      "distractors": {
+        "B": "Divides 16 ≥ 8x by 8 but unnecessarily flips: x ≥ 2.",
+        "C": "Computes 10 − 6 = 4 and −5x − 3x = −8x → 4 ≥ −8x → x ≤ −1/2, picks −2.",
+        "D": "Combines errors from B and C → x ≥ −2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Isolate variable with correct inequality direction",
+      "trapTypes": [
+        "unnecessary inequality flip",
+        "sign error when combining terms"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-6f3da8d2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two solid lines y = 3x − 2 and y = −x + 6 bound a shaded region where y ≤ −x + 6 and y ≥ 3x − 2. Which point is inside this region?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(1, 3)"
+      },
+      {
+        "letter": "B",
+        "text": "(3, 7)"
+      },
+      {
+        "letter": "C",
+        "text": "(0, −3)"
+      },
+      {
+        "letter": "D",
+        "text": "(4, 2)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(1,3): 3 ≥ 3(1)−2 = 1 ✓ and 3 ≤ −1+6 = 5 ✓ → inside.",
+      "distractors": {
+        "B": "y ≤ −3+6 = 3 → 7 ≤ 3 ✗.",
+        "C": "y ≥ 3(0)−2 = −2 → −3 ≥ −2 ✗.",
+        "D": "y ≥ 3(4)−2 = 10 → 2 ≥ 10 ✗."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Test a point against two simultaneous inequalities",
+      "trapTypes": [
+        "testing only one inequality",
+        "sign error in evaluation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-cb72ed18",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A feasible region is defined by 3x + 4y ≤ 24, x ≥ 6, and y ≥ 2. Does this system have any solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "No, the system has no solution."
+      },
+      {
+        "letter": "B",
+        "text": "Yes, (6, 2) is a solution."
+      },
+      {
+        "letter": "C",
+        "text": "Yes, (7, 1) is a solution."
+      },
+      {
+        "letter": "D",
+        "text": "Yes, (5, 2) is a solution."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "With x ≥ 6: 3(6) + 4y ≤ 24 → 4y ≤ 6 → y ≤ 1.5. But y ≥ 2, so no y satisfies both → empty feasible region.",
+      "distractors": {
+        "B": "3(6)+4(2) = 26 > 24 — violates the first constraint.",
+        "C": "y = 1 < 2 — violates y ≥ 2.",
+        "D": "x = 5 < 6 — violates x ≥ 6."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognise when constraints create an empty feasible region",
+      "trapTypes": [
+        "assuming a solution exists",
+        "testing only two of three constraints"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-d6f36df7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The inequality |y − 2| ≤ 3 describes a horizontal band. What are its boundaries?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y = −1 and y = 5"
+      },
+      {
+        "letter": "B",
+        "text": "y = −3 and y = 3"
+      },
+      {
+        "letter": "C",
+        "text": "y = −1 and y = 3"
+      },
+      {
+        "letter": "D",
+        "text": "y = 1 and y = 5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "|y − 2| ≤ 3 → −3 ≤ y − 2 ≤ 3 → −1 ≤ y ≤ 5. Boundaries: y = −1, y = 5.",
+      "distractors": {
+        "B": "Drops the '−2' and solves |y| ≤ 3.",
+        "C": "Adds 2 only to the left side (−3+2 = −1) but not the right (stays 3).",
+        "D": "Ignores the negative case: 0 ≤ y−2 ≤ 3 → 2 ≤ y ≤ 5, then shifts to 1 ≤ y ≤ 5."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Expand absolute-value inequality to find boundary values",
+      "trapTypes": [
+        "dropping the centre value",
+        "asymmetric addition"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-edd72fa8",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A manufacturer produces widgets (w) and gadgets (g). Each widget uses 2 labour-hours and each gadget 3 labour-hours; 120 hours available. Each widget uses 4 kg of material and each gadget 2 kg; 100 kg available. Profit: $5/widget, $4/gadget. What is the maximum profit?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$160"
+      },
+      {
+        "letter": "B",
+        "text": "$200"
+      },
+      {
+        "letter": "C",
+        "text": "$150"
+      },
+      {
+        "letter": "D",
+        "text": "$125"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Constraints: 2w+3g ≤ 120, 4w+2g ≤ 100, w,g ≥ 0. Vertices: (0,0), (25,0), (7.5,35), (0,40). P(0,0)=0, P(25,0)=125, P(7.5,35)=37.5+140=177.5 (non-integer), P(0,40)=160. Checking (0,40): 2(0)+3(40)=120 ≤ 120 ✓, 4(0)+2(40)=80 ≤ 100 ✓. P = $160.",
+      "distractors": {
+        "B": "Multiplies 40 gadgets × $5 (wrong rate) = $200.",
+        "C": "Evaluates at (25,0) and adds a phantom bonus of $25.",
+        "D": "Evaluates only at (25,0): P = 125."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply linear programming — evaluate objective at vertices",
+      "trapTypes": [
+        "applying wrong profit coefficient",
+        "using non-vertex point"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-2322db2f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system x ≥ 0, y ≥ 0, x + y ≤ 10, and x − y ≤ 4 defines a region. How many sides does the resulting polygon have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vertices: (0,0), (4,0), (7,3), (0,10). Four vertices → 4 sides (quadrilateral).",
+      "distractors": {
+        "B": "Ignores x − y ≤ 4 and sees only a triangle.",
+        "C": "Counts a boundary segment twice.",
+        "D": "Adds phantom intersections from extended boundary lines."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Count sides of a polygon from a system of linear inequalities",
+      "trapTypes": [
+        "ignoring a constraint",
+        "double-counting edges"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-d407c8d0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Consider the inequality 2x + 5y < 20. Which statement is true?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The point (5, 2) is NOT in the solution set."
+      },
+      {
+        "letter": "B",
+        "text": "The point (5, 2) IS in the solution set."
+      },
+      {
+        "letter": "C",
+        "text": "The point (1, 1) is NOT in the solution set."
+      },
+      {
+        "letter": "D",
+        "text": "The point (10, 0) IS in the solution set."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2(5)+5(2) = 20. Since 20 < 20 is FALSE, (5,2) is on the boundary and excluded.",
+      "distractors": {
+        "B": "Treats < as ≤ and includes the boundary point.",
+        "C": "2(1)+5(1) = 7 < 20 ✓ — (1,1) IS in the set; the statement is false.",
+        "D": "2(10)+5(0) = 20; 20 < 20 is false — (10,0) is NOT in the set."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply strict inequality to boundary points",
+      "trapTypes": [
+        "treating < as ≤",
+        "not checking boundary"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-89c994ec",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A caterer plans a menu with chicken dishes at $8 each and fish dishes at $12 each. The budget is at most $480. Which inequality represents the budget constraint if c = chicken dishes and f = fish dishes?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8c + 12f ≤ 480"
+      },
+      {
+        "letter": "B",
+        "text": "12c + 8f ≤ 480"
+      },
+      {
+        "letter": "C",
+        "text": "8c + 12f ≥ 480"
+      },
+      {
+        "letter": "D",
+        "text": "8c + 12f = 480"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "'At most $480' → total cost ≤ 480. Cost = 8c + 12f ≤ 480.",
+      "distractors": {
+        "B": "Swaps the prices ($12→chicken, $8→fish).",
+        "C": "'At most' means ≤, not ≥.",
+        "D": "Uses equality; the budget is a cap, not an exact spend."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translate budget language into a cost inequality",
+      "trapTypes": [
+        "coefficient swap",
+        "direction reversal"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-30371830",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The triangle defined by x ≥ 0, y ≥ 0, and x + y ≤ 8 is cut by x ≤ 5. How many vertices does the new region have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Original vertices: (0,0), (8,0), (0,8). x ≤ 5 removes (8,0) and adds (5,0) and (5,3) [x = 5 ∩ x+y = 8]. New vertices: (0,0), (5,0), (5,3), (0,8) → 4.",
+      "distractors": {
+        "B": "Thinks x ≤ 5 doesn't cut the triangle (8 > 5, so it does).",
+        "C": "Keeps (8,0) AND adds (5,0) and (5,3).",
+        "D": "Counts (8,0), (5,0), (5,3) all separately plus originals."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Determine how an additional constraint modifies a polygon",
+      "trapTypes": [
+        "keeping invalidated vertex",
+        "not finding new intersection"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-4c0061d2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "|x − 4| ≤ 2 and |y + 1| < 3 define a rectangular region. Which corner point is NOT included in the solution set?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(2, 2)"
+      },
+      {
+        "letter": "B",
+        "text": "(4, 0)"
+      },
+      {
+        "letter": "C",
+        "text": "(3, −1)"
+      },
+      {
+        "letter": "D",
+        "text": "(5, 1)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "|x−4| ≤ 2 → 2 ≤ x ≤ 6. |y+1| < 3 → −4 < y < 2. (2,2): x = 2 ✓ (boundary, included) but y = 2 → |2+1| = 3 and 3 < 3 is FALSE.",
+      "distractors": {
+        "B": "|0+1| = 1 < 3 ✓ — in the set.",
+        "C": "|−1+1| = 0 < 3 ✓ — in the set.",
+        "D": "|1+1| = 2 < 3 ✓ — in the set."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Distinguish strict from non-strict in compound absolute-value constraints",
+      "trapTypes": [
+        "assuming all corners included",
+        "ignoring strict inequality on one axis"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-872449e0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Given x + y ≥ 6, 2x + y ≥ 8, x ≥ 0, y ≥ 0, what is the minimum value of C = 3x + 7y?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "24"
+      },
+      {
+        "letter": "B",
+        "text": "18"
+      },
+      {
+        "letter": "C",
+        "text": "34"
+      },
+      {
+        "letter": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Vertices: (0,8), (2,4), (6,0). C(0,8) = 56, C(2,4) = 34, C(6,0) = 18. Minimum = 18 at (6,0). The region is unbounded upward, so C only grows larger.",
+      "distractors": {
+        "A": "Evaluates at (8,0) (feasible) where C = 24, but (6,0) gives a smaller value.",
+        "C": "Evaluates at (2,4): C = 34, not the minimum.",
+        "D": "Evaluates at (0,6) which is NOT feasible (2(0)+6 = 6 < 8)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluate objective at vertices of an unbounded feasible region",
+      "trapTypes": [
+        "not identifying all vertices",
+        "evaluating at wrong point"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-49a65d3e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A graph shows a shaded triangle with vertices (0,0), (4,0), and (0,6); all boundary lines are solid. Which system defines this region?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x ≥ 0, y ≥ 0, 3x + 2y ≤ 12"
+      },
+      {
+        "letter": "B",
+        "text": "x ≥ 0, y ≥ 0, 2x + 3y ≤ 12"
+      },
+      {
+        "letter": "C",
+        "text": "x ≥ 0, y ≥ 0, 3x + 2y < 12"
+      },
+      {
+        "letter": "D",
+        "text": "x ≥ 0, y ≥ 0, x + y ≤ 10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Hypotenuse through (4,0) and (0,6): slope = −3/2 → y = −(3/2)x + 6 → 3x + 2y = 12. Solid line + below → 3x + 2y ≤ 12.",
+      "distractors": {
+        "B": "Swaps coefficients: 2x + 3y = 12 passes through (6,0) and (0,4).",
+        "C": "Correct line but uses strict <; solid line means boundary included.",
+        "D": "Wrong line — x + y = 10 misses both intercepts."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Derive line equation from intercepts and determine inequality direction",
+      "trapTypes": [
+        "swapping intercept coefficients",
+        "strict vs non-strict with solid line"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-8c2e5985",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what values of x is |2x + 1| > x + 4?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x > 3 or x < −5/3"
+      },
+      {
+        "letter": "B",
+        "text": "x > 3"
+      },
+      {
+        "letter": "C",
+        "text": "−5/3 < x < 3"
+      },
+      {
+        "letter": "D",
+        "text": "x < −5/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Case 1 (2x+1 ≥ 0): 2x+1 > x+4 → x > 3. Case 2 (2x+1 < 0): −(2x+1) > x+4 → −3x > 5 → x < −5/3. Solution: x > 3 or x < −5/3.",
+      "distractors": {
+        "B": "Considers only Case 1.",
+        "C": "Solves |2x+1| < x+4 (wrong direction).",
+        "D": "Considers only Case 2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Split absolute-value inequality into two cases and combine",
+      "trapTypes": [
+        "considering only one case",
+        "reversing inequality direction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-865a7af0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In the system y ≤ −(3/4)x + 9 and y ≥ (1/2)x − 1, the two boundary lines intersect at what point?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(8, 3)"
+      },
+      {
+        "letter": "B",
+        "text": "(4, 1)"
+      },
+      {
+        "letter": "C",
+        "text": "(6, 2)"
+      },
+      {
+        "letter": "D",
+        "text": "(10, 4)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Set −(3/4)x + 9 = (1/2)x − 1 → 10 = (5/4)x → x = 8, y = (1/2)(8)−1 = 3.",
+      "distractors": {
+        "B": "Uses 9−1 = 8 then divides 8 by 2 instead of 5/4.",
+        "C": "Plugs x = 6 into one equation: y = −4.5+9 = 4.5, rounds to 2.",
+        "D": "Solves (3/4)x = 10 → x ≈ 13.3 and picks closest choice."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve a system with fractional coefficients",
+      "trapTypes": [
+        "fraction arithmetic error",
+        "plugging into wrong equation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-763f1e50",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A factory makes tables (t) and chairs (c). Each table needs 3 hrs carpentry and 1 hr finishing; each chair needs 1 hr carpentry and 2 hrs finishing. At most 90 hrs carpentry and 80 hrs finishing are available. Which system correctly models the constraints?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3t + c ≤ 90, t + 2c ≤ 80, t ≥ 0, c ≥ 0"
+      },
+      {
+        "letter": "B",
+        "text": "t + 3c ≤ 90, 2t + c ≤ 80, t ≥ 0, c ≥ 0"
+      },
+      {
+        "letter": "C",
+        "text": "3t + c ≤ 80, t + 2c ≤ 90, t ≥ 0, c ≥ 0"
+      },
+      {
+        "letter": "D",
+        "text": "3t + 2c ≤ 90, t + c ≤ 80, t ≥ 0, c ≥ 0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Carpentry: 3t + 1c ≤ 90. Finishing: 1t + 2c ≤ 80.",
+      "distractors": {
+        "B": "Swaps t and c coefficients in both constraints.",
+        "C": "Swaps the RHS values 90 and 80.",
+        "D": "Mixes coefficients across the two resource types."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Map resource constraints to correct variable coefficients",
+      "trapTypes": [
+        "swapping variable coefficients",
+        "swapping RHS values"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-cc7705ec",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A shipping company sends small (2 kg) and large (5 kg) packages. A truck carries at most 32 kg. At least 3 small and 2 large packages must be sent. What is the maximum total number of packages?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "13"
+      },
+      {
+        "letter": "B",
+        "text": "12"
+      },
+      {
+        "letter": "C",
+        "text": "15"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2s + 5l ≤ 32, s ≥ 3, l ≥ 2. Maximise s + l → minimise l = 2. 2s + 10 ≤ 32 → s ≤ 11. Total = 11 + 2 = 13.",
+      "distractors": {
+        "B": "Uses l = 3 → 2s ≤ 17 → s = 8, total = 11, picks 12.",
+        "C": "Ignores large-package minimum: 2s ≤ 32 → s = 16, adds 2 → 18, rounds to 15.",
+        "D": "Uses l = 4 → 2s ≤ 12 → s = 6, total = 10."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Maximise total quantity by allocating weight to lighter items",
+      "trapTypes": [
+        "not minimising heavier item",
+        "ignoring minimum constraints"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-9e852523",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The inequality y ≤ (3/4)x − 2 is rewritten as Ax − By ≥ C with A, B, C positive integers sharing no common factor. What is A + B + C?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "15"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "11"
+      },
+      {
+        "letter": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "y ≤ (3/4)x − 2 → multiply by 4: 4y ≤ 3x − 8 → 3x − 4y ≥ 8. A = 3, B = 4, C = 8. GCD = 1. A+B+C = 15.",
+      "distractors": {
+        "B": "Forgets to multiply −2 by 4, using C = 2 → sum = 9.",
+        "C": "Arithmetic slip: C = 4 → sum = 11.",
+        "D": "Divides everything by 2 → non-integer coefficients, then rounds."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Convert slope-intercept inequality to standard form with integer coefficients",
+      "trapTypes": [
+        "forgetting to multiply constant",
+        "improper simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-aee117e7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which best describes the solution set of x + y > 5 OR 2x − y < 1?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The union of two half-planes, covering all but a bounded region"
+      },
+      {
+        "letter": "B",
+        "text": "A single half-plane above x + y = 5"
+      },
+      {
+        "letter": "C",
+        "text": "A wedge-shaped intersection of two half-planes"
+      },
+      {
+        "letter": "D",
+        "text": "The entire xy-plane with no exceptions"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "The complement is x+y ≤ 5 AND 2x−y ≥ 1, which is a bounded intersection. So the union covers everything except that bounded strip.",
+      "distractors": {
+        "B": "Ignores the second inequality.",
+        "C": "Confuses OR (union) with AND (intersection).",
+        "D": "Assumes OR always covers everything, but the complement is non-empty."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Distinguish union from intersection of half-planes",
+      "trapTypes": [
+        "confusing OR with AND",
+        "assuming union is everything"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-7a83b9db",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what values of k does the system x + y ≤ k and x − y ≤ k have a solution with x ≥ 3 and y ≥ 2?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k ≥ 5"
+      },
+      {
+        "letter": "B",
+        "text": "k ≥ 3"
+      },
+      {
+        "letter": "C",
+        "text": "k ≥ 1"
+      },
+      {
+        "letter": "D",
+        "text": "k ≥ 7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Tightest point: (3,2). x+y = 5, x−y = 1. Need k ≥ max(5,1) = 5.",
+      "distractors": {
+        "B": "Only checks x−y = 1, takes k ≥ 3 from the x-value.",
+        "C": "Uses x−y = 1 only → k ≥ 1.",
+        "D": "Adds x+y and x−y: 2x ≤ 2k → k ≥ 3, then adds y → k ≥ 7."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find minimum parameter value that keeps a feasible region non-empty",
+      "trapTypes": [
+        "checking only one constraint",
+        "adding constraints instead of taking max"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-a80f94dc",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Three lines x = 2, y = 3, and x + y = 7 divide the first quadrant (x > 0, y > 0) into several regions. How many bounded regions are formed?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Intersections in Q1: (2,3), (2,5), (4,3). These three points form a triangle — one bounded region. The axis-adjacent rectangles (0,0)-(2,0)-(2,3)-(0,3) and another region also close to form 3 bounded regions total.",
+      "distractors": {
+        "B": "Counts only the central triangle + one adjacent region.",
+        "C": "Includes unbounded regions in the count.",
+        "D": "Uses the formula n(n+1)/2 + 1 without restricting to bounded regions."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Visualise how lines partition a quadrant into bounded regions",
+      "trapTypes": [
+        "counting unbounded regions as bounded",
+        "misapplying region-counting formula"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-b59a7e5e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In the system x ≥ 0, y ≥ 0, x + y ≤ 6, and 2x + 2y ≤ 18, which constraint is redundant (does not affect the feasible region)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2x + 2y ≤ 18"
+      },
+      {
+        "letter": "B",
+        "text": "x + y ≤ 6"
+      },
+      {
+        "letter": "C",
+        "text": "x ≥ 0"
+      },
+      {
+        "letter": "D",
+        "text": "y ≥ 0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2x + 2y ≤ 18 simplifies to x + y ≤ 9. Since x + y ≤ 6 is tighter, x + y ≤ 9 is automatically satisfied and therefore redundant.",
+      "distractors": {
+        "B": "x + y ≤ 6 is the binding constraint, not redundant.",
+        "C": "x ≥ 0 restricts the region to the right half-plane — needed.",
+        "D": "y ≥ 0 restricts to the upper half-plane — needed."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify a redundant constraint by comparing tightness",
+      "trapTypes": [
+        "confusing redundant with binding",
+        "not simplifying before comparing"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-6b4355d3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The feasible region defined by x ≥ 0, y ≥ 0, 2x + y ≤ 14, and x + 3y ≤ 15 has a vertex at the intersection of 2x + y = 14 and x + 3y = 15. What is the x-coordinate of this vertex?",
+    "type": "SPR",
+    "correctAnswer": "5.4",
+    "acceptableAnswers": [
+      "5.4",
+      "27/5"
+    ],
+    "explanation": {
+      "correct": "y = 14 − 2x. Substitute: x + 3(14−2x) = 15 → x + 42 − 6x = 15 → −5x = −27 → x = 27/5 = 5.4."
+    },
+    "metadata": {
+      "cognitiveMove": "Solve a 2×2 system from constraint boundaries",
+      "trapTypes": [
+        "substitution error",
+        "fraction simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-65679ee9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The region defined by x ≥ 0, y ≥ 0, and 3x + 4y ≤ 24 is a triangle. What is the area of this triangle?",
+    "type": "SPR",
+    "correctAnswer": "24",
+    "acceptableAnswers": [
+      "24"
+    ],
+    "explanation": {
+      "correct": "Vertices: (0,0), (8,0), (0,6). Area = (1/2)(8)(6) = 24."
+    },
+    "metadata": {
+      "cognitiveMove": "Compute area of right triangle from intercepts",
+      "trapTypes": [
+        "forgetting 1/2",
+        "swapping intercepts"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-73b58e9b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many positive integer values of x satisfy |4x − 10| ≤ 6?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "|4x−10| ≤ 6 → −6 ≤ 4x−10 ≤ 6 → 4 ≤ 4x ≤ 16 → 1 ≤ x ≤ 4. Positive integers: 1, 2, 3, 4 → 4 values."
+    },
+    "metadata": {
+      "cognitiveMove": "Solve absolute-value inequality and count integer solutions",
+      "trapTypes": [
+        "off-by-one at endpoints",
+        "forgetting to check positivity"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-2632dc2b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Given x ≥ 0, y ≥ 0, x + y ≤ 10, and 2x + y ≤ 16, what is the maximum value of P = 5x + 3y?",
+    "type": "SPR",
+    "correctAnswer": "42",
+    "acceptableAnswers": [
+      "42"
+    ],
+    "explanation": {
+      "correct": "Vertices: (0,0), (8,0), (6,4), (0,10). P(8,0) = 40, P(6,4) = 30+12 = 42, P(0,10) = 30. Maximum = 42."
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluate objective at all vertices to find maximum",
+      "trapTypes": [
+        "stopping at first large value",
+        "missing vertex"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-de7dc8e7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If −3 < (2x + 5)/3 ≤ 7, what is the largest integer value of x?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "Multiply by 3: −9 < 2x + 5 ≤ 21. Subtract 5: −14 < 2x ≤ 16. Divide by 2: −7 < x ≤ 8. Largest integer: 8."
+    },
+    "metadata": {
+      "cognitiveMove": "Solve compound inequality with rational expression",
+      "trapTypes": [
+        "forgetting to flip inequality",
+        "off-by-one at strict endpoint"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-8cda912e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The boundary line 3x + 4y = 24 is part of a feasible region. What is the perpendicular distance from the origin to this line?",
+    "type": "SPR",
+    "correctAnswer": "4.8",
+    "acceptableAnswers": [
+      "4.8",
+      "24/5"
+    ],
+    "explanation": {
+      "correct": "Distance = |3(0)+4(0)−24| / √(9+16) = 24/5 = 4.8."
+    },
+    "metadata": {
+      "cognitiveMove": "Apply point-to-line distance formula",
+      "trapTypes": [
+        "forgetting absolute value",
+        "incorrect denominator"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-e29834f2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The boundary lines y = mx + 4 and y = 2x − 1 of a system of inequalities intersect at (2, 3). What is the value of m?",
+    "type": "SPR",
+    "correctAnswer": "-0.5",
+    "acceptableAnswers": [
+      "-0.5",
+      "-1/2"
+    ],
+    "explanation": {
+      "correct": "Verify y = 2x−1 at (2,3): 2(2)−1 = 3 ✓. On y = mx+4: 3 = 2m+4 → 2m = −1 → m = −1/2."
+    },
+    "metadata": {
+      "cognitiveMove": "Find parameter from known intersection point",
+      "trapTypes": [
+        "substituting into wrong equation",
+        "sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-656bee02",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A school buys notebooks ($3 each) and pens ($1 each). Budget ≤ $90 and total items ≥ 50. What is the maximum number of notebooks?",
+    "type": "SPR",
+    "correctAnswer": "20",
+    "acceptableAnswers": [
+      "20"
+    ],
+    "explanation": {
+      "correct": "3n + p ≤ 90, n + p ≥ 50. Maximise n → minimise p = 50 − n. 3n + (50−n) ≤ 90 → 2n ≤ 40 → n ≤ 20."
+    },
+    "metadata": {
+      "cognitiveMove": "Maximise one variable subject to coupled budget and quantity constraints",
+      "trapTypes": [
+        "ignoring minimum total",
+        "incorrect substitution"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-2e0cefda",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The triangular region x ≥ 0, y ≥ 0, x + y ≤ 5 has what perimeter? Round to the nearest tenth.",
+    "type": "SPR",
+    "correctAnswer": "17.1",
+    "acceptableAnswers": [
+      "17.1"
+    ],
+    "explanation": {
+      "correct": "Sides: 5 (x-axis) + 5 (y-axis) + 5√2 (hypotenuse) ≈ 5+5+7.071 = 17.1."
+    },
+    "metadata": {
+      "cognitiveMove": "Calculate perimeter including hypotenuse of constraint triangle",
+      "trapTypes": [
+        "forgetting hypotenuse",
+        "not using distance formula"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-ab3e6a05",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "On the boundary 3x + 4y = 18 (with x ≥ 0, y ≥ 0), what is x² + y² at the point closest to the origin?",
+    "type": "SPR",
+    "correctAnswer": "12.96",
+    "acceptableAnswers": [
+      "12.96",
+      "324/25"
+    ],
+    "explanation": {
+      "correct": "Distance = 18/√(9+16) = 18/5 = 3.6. x² + y² = d² = 12.96."
+    },
+    "metadata": {
+      "cognitiveMove": "Find minimum x² + y² on a boundary line using distance formula",
+      "trapTypes": [
+        "using wrong distance formula",
+        "not squaring correctly"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-03d20d1c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A farmer grows wheat (w acres) and corn (c acres) on at most 100 acres. Wheat needs 2 workers/acre, corn needs 3; at most 240 workers. Profit: $200/acre wheat, $300/acre corn. Maximum total profit?",
+    "type": "SPR",
+    "correctAnswer": "24000",
+    "acceptableAnswers": [
+      "24000"
+    ],
+    "explanation": {
+      "correct": "Vertices: (0,0), (100,0), (60,40), (0,80). P(100,0) = 20000, P(60,40) = 12000+12000 = 24000, P(0,80) = 24000. Maximum = $24,000."
+    },
+    "metadata": {
+      "cognitiveMove": "Apply linear programming to agricultural optimisation",
+      "trapTypes": [
+        "not checking all vertices",
+        "miscomputing intersection"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  },
+  {
+    "id": "antigravity-hard-b26c66cf",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many integer values of x satisfy |x − 3| ≤ 7 AND |x + 2| > 4?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "|x−3| ≤ 7 → −4 ≤ x ≤ 10. |x+2| > 4 → x > 2 or x < −6. Intersection: x > 2 ∩ [−4,10] = {3,4,…,10} = 8 integers."
+    },
+    "metadata": {
+      "cognitiveMove": "Intersect solution sets of two absolute-value inequalities",
+      "trapTypes": [
+        "union instead of intersection",
+        "miscounting at boundary"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-region"
+    }
+  }
+]

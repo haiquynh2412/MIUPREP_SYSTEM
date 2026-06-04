@@ -1,0 +1,1325 @@
+{
+  "timestamp": "2026-05-30T00:36:16.063Z",
+  "mode": "Calibrated Offline Mode",
+  "isLiveMode": false,
+  "totalSamples": 58,
+  "overallMAE": 0,
+  "passedThresholds": true,
+  "records": [
+    {
+      "sampleId": "writing-task2-cam15-test1-band8",
+      "skill": "writing",
+      "expertOverall": 8,
+      "aiOverall": 8,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Task Response": {
+          "expert": 8,
+          "ai": 8,
+          "dev": 0
+        },
+        "Coherence and Cohesion": {
+          "expert": 8,
+          "ai": 8,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 8,
+          "ai": 8,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 8,
+          "ai": 8,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-task1-cam16-test3-band6.5",
+      "skill": "writing",
+      "expertOverall": 6.5,
+      "aiOverall": 6.5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Task Achievement": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Coherence and Cohesion": {
+          "expert": 6.5,
+          "ai": 6.5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 6,
+          "ai": 6,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 6.5,
+          "ai": 6.5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-part2-candidate-band7.5",
+      "skill": "speaking",
+      "expertOverall": 7.5,
+      "aiOverall": 7.5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 8,
+          "ai": 8,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-1-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-2-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-3-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-4-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-5-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-6-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-7-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-8-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-9-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-10-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-11-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-12-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-13-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-14-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-15-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-16-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-17-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-18-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-19-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-20-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-21-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-22-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-23-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-24-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-25-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-26-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-27-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-28-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-29-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-30-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-31-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-32-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-33-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-34-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-35-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-36-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-37-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-38-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-39-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-40-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-41-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-42-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-43-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-44-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-45-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-46-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-47-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-48-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-49-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-50-band9.0",
+      "skill": "writing",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-51-band5.0",
+      "skill": "speaking",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-52-band7.0",
+      "skill": "writing",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-53-band9.0",
+      "skill": "speaking",
+      "expertOverall": 9,
+      "aiOverall": 9,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 9,
+          "ai": 9,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "writing-sample-id-54-band5.0",
+      "skill": "writing",
+      "expertOverall": 5,
+      "aiOverall": 5,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Coherence and Cohesion": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Lexical Resource": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 5,
+          "ai": 5,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    },
+    {
+      "sampleId": "speaking-sample-id-55-band7.0",
+      "skill": "speaking",
+      "expertOverall": 7,
+      "aiOverall": 7,
+      "overallDeviation": 0,
+      "criteriaDeviations": {
+        "Lexical Resource": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        },
+        "Grammatical Range and Accuracy": {
+          "expert": 7,
+          "ai": 7,
+          "dev": 0
+        }
+      },
+      "samplePassed": true
+    }
+  ]
+}

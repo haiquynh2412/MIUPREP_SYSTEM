@@ -1,0 +1,1125 @@
+{
+  "id": "cae-error-correction-bank",
+  "source": "Cambridge Certificate in Advanced English Error Correction Bank",
+  "title": "CAE Use of English Part 5: Error Correction (Proofreading)",
+  "type": "academic",
+  "skill": "use_of_english",
+  "exam": "cae",
+  "displayMode": "topic",
+  "sections": [
+    {
+      "id": "cae-ec-sec-1",
+      "title": "Proofreading Practice 1 - The History of Chocolate",
+      "instructions": "In most lines of the following text, there is one unnecessary word. It is either grammatically incorrect or does not fit the sense of the text. For each numbered line, find the incorrect word and write it in the space. Some lines are correct. If a line is correct, write 'CORRECT'.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The History of Chocolate</h2><p class='mb-2 font-mono text-slate-700 bg-slate-50 p-3 rounded text-sm leading-relaxed text-left'>0  Chocolate is one of the most popular sweet treats in the entire world, but<br/>00 its origins go back thousands of years to Mesoamerica. The ancient Maya<br/>1  were the first to cultivate the cacao tree, which they believed it was<br/>2  a gift from the gods. They prepared up a bitter, frothy drink from the beans,<br/>3  which was often flavored with chili peppers and vanilla. For the Maya,<br/>4  cacao beans were more valuable that they were used as a form of currency.<br/>5  When the Spanish explorers arrived in the Americas, they were introduced<br/>6  to this exotic beverage. Although they initially found the taste much too bitter,<br/>7  they brought it back to Spain, where they added sugar to make it more<br/>8  palatable to European tastes. For more than a century, the recipe was kept<br/>9  a closely guarded secret, known only to the Spanish royalty and nobility.<br/>10 Eventually, chocolate is spread to other European countries, where it became<br/>11 extremely popular. In the 19th century, the industrial revolution enabled<br/>12 the mass production of solid chocolate, which did became affordable to all.<br/>13 Today, chocolate is a multi-billion dollar industry that it continues to<br/>14 bring joy to millions of people, regardless of their own age or background.<br/>15 It is also believed to have health benefits, such as the improving mood.</p>",
+      "questionGroups": [
+        {
+          "id": "cae-ec-rg-1",
+          "instruction": "Write the extra word in capital letters, or write 'CORRECT' if the line is correct.",
+          "questions": [
+            {
+              "id": "q-cae-ec-1-1",
+              "type": "gap_fill",
+              "instruction": "Line 1:",
+              "acceptedAnswers": [
+                [
+                  "IT"
+                ],
+                [
+                  "which they believed it was"
+                ]
+              ],
+              "correctAnswer": "IT",
+              "explanation": "Từ dư thừa là 'IT'. Trong mệnh đề quan hệ 'which they believed was...', đại từ quan hệ 'which' đóng vai trò làm chủ ngữ bổ nghĩa cho 'the cacao tree'. Việc thêm 'it' vào sau 'they believed' tạo ra sự lặp chủ ngữ dư thừa. Method: complete the gap with \"IT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 1:. Correct completion: IT.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 1,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-2",
+              "type": "gap_fill",
+              "instruction": "Line 2:",
+              "acceptedAnswers": [
+                [
+                  "UP"
+                ],
+                [
+                  "prepared up a bitter"
+                ],
+                [
+                  "Từ dư thừa là 'UP'. Động từ 'prepare' chuẩn bị"
+                ]
+              ],
+              "correctAnswer": "UP",
+              "explanation": "Từ dư thừa là 'UP'. Động từ 'prepare' (chuẩn bị/pha chế) đi kèm trực tiếp với tân ngữ 'a bitter drink', không sử dụng phrasal verb 'prepare up' trong ngữ cảnh này. Method: complete the gap with \"UP\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 2:. Correct completion: UP.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 2,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-3",
+              "type": "gap_fill",
+              "instruction": "Line 3:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "which was often flavored with chili peppers and vanilla. For the Maya,"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 3:. Correct completion: CORRECT.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 3,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-4",
+              "type": "gap_fill",
+              "instruction": "Line 4:",
+              "acceptedAnswers": [
+                [
+                  "MORE"
+                ],
+                [
+                  "cacao beans were more valuable that"
+                ]
+              ],
+              "correctAnswer": "MORE",
+              "explanation": "Từ dư thừa là 'MORE'. Cấu trúc tương quan chỉ kết quả phải là 'so... that' (so valuable that...) chứ không phải 'more... that'. Vì vậy, từ 'more' là sai ngữ pháp. Method: complete the gap with \"MORE\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 4:. Correct completion: MORE.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 4,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-5",
+              "type": "gap_fill",
+              "instruction": "Line 5:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "When the Spanish explorers arrived in the Americas, they were introduced"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về mặt ngữ pháp (cấu trúc bị động quá khứ đơn 'were introduced'). Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "When the Spanish explorers arrived in the Americas, they were introduced",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 5,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-6",
+              "type": "gap_fill",
+              "instruction": "Line 6:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "to this exotic beverage. Although they initially found the taste much too bitter,"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về mặt ngữ pháp ('much too bitter' dùng để nhấn mạnh tính từ). Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 6:. Correct completion: CORRECT.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 6,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-7",
+              "type": "gap_fill",
+              "instruction": "Line 7:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "they brought it back to Spain, where they added sugar to make it more"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "they brought it back to Spain, where they added sugar to make it more",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 7,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-8",
+              "type": "gap_fill",
+              "instruction": "Line 8:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "palatable to European tastes. For more than a century, the recipe was kept"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về mặt ngữ pháp (thì quá khứ đơn thể bị động 'was kept'). Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "palatable to European tastes. For more than a century, the recipe was kept",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 8,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-9",
+              "type": "gap_fill",
+              "instruction": "Line 9:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "a closely guarded secret, known only to the Spanish royalty and nobility."
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "a closely guarded secret, known only to the Spanish royalty and nobility.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 9,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-10",
+              "type": "gap_fill",
+              "instruction": "Line 10:",
+              "acceptedAnswers": [
+                [
+                  "IS"
+                ],
+                [
+                  "Eventually, chocolate is spread to"
+                ]
+              ],
+              "correctAnswer": "IS",
+              "explanation": "Từ dư thừa là 'IS'. Vì đoạn văn đang kể về lịch sử trong quá khứ, động từ chính phải chia ở quá khứ đơn là 'spread' (phát triển/lan rộng). Việc thêm trợ động từ hiện tại 'is' làm câu sai thì và sai cấu trúc. Method: complete the gap with \"IS\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 10:. Correct completion: IS.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 10,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-11",
+              "type": "gap_fill",
+              "instruction": "Line 11:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "extremely popular. In the 19th century, the industrial revolution enabled"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "extremely popular. In the 19th century, the industrial revolution enabled",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 11,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-12",
+              "type": "gap_fill",
+              "instruction": "Line 12:",
+              "acceptedAnswers": [
+                [
+                  "DID"
+                ],
+                [
+                  "which did became affordable to all"
+                ]
+              ],
+              "correctAnswer": "DID",
+              "explanation": "Từ dư thừa là 'DID'. Mệnh đề quan hệ 'which became affordable' đã có động từ chính chia ở quá khứ đơn là 'became'. Trợ động từ 'did' đứng trước 'became' là dư thừa và sai ngữ pháp (nếu muốn nhấn mạnh thì phải dùng 'did become', nhưng ở đây không cần thiết và cấu trúc 'did became' là lỗi double-past). Method: complete the gap with \"DID\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 12:. Correct completion: DID.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 12,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-13",
+              "type": "gap_fill",
+              "instruction": "Line 13:",
+              "acceptedAnswers": [
+                [
+                  "IT"
+                ],
+                [
+                  "industry that it continues to"
+                ]
+              ],
+              "correctAnswer": "IT",
+              "explanation": "Từ dư thừa là 'IT'. Mệnh đề quan hệ 'that continues to...' đã sử dụng đại từ quan hệ 'that' làm chủ ngữ bổ nghĩa cho 'industry'. Do đó, đại từ 'it' là hoàn toàn dư thừa. Method: complete the gap with \"IT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 13:. Correct completion: IT.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 13,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-14",
+              "type": "gap_fill",
+              "instruction": "Line 14:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "bring joy to millions of people, regardless of their own age or background."
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "bring joy to millions of people, regardless of their own age or background.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 14,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            },
+            {
+              "id": "q-cae-ec-1-15",
+              "type": "gap_fill",
+              "instruction": "Line 15:",
+              "acceptedAnswers": [
+                [
+                  "THE"
+                ],
+                [
+                  "such as the improving mood"
+                ]
+              ],
+              "correctAnswer": "THE",
+              "explanation": "Từ dư thừa là 'THE'. Sau 'such as' cần một danh động từ trực tiếp làm tân ngữ là 'improving mood' hoặc cụm danh từ 'the improvement of mood'. Việc viết 'the improving mood' là sai ngữ pháp. Method: complete the gap with \"THE\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 15:. Correct completion: THE.",
+              "category": "cae_use_of_english_part_1",
+              "blankIndex": 15,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_1",
+                "title": "Proofreading Practice 1 - The History of Chocolate",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_1",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-1",
+                "group:cae-ec-rg-1"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 1 - The History of Chocolate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cae-ec-sec-2",
+      "title": "Proofreading Practice 2 - The Invention of the Internet",
+      "instructions": "In most lines of the following text, there is one unnecessary word. It is either grammatically incorrect or does not fit the sense of the text. For each numbered line, find the incorrect word and write it in the space. Some lines are correct. If a line is correct, write 'CORRECT'.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Invention of the Internet</h2><p class='mb-2 font-mono text-slate-700 bg-slate-50 p-3 rounded text-sm leading-relaxed text-left'>0  The internet has revolutionized the way we live, work, and communicate, but<br/>00 its development was a gradual process that spanned several decades.<br/>1  It began in the late 1960s as a research project funded by the US<br/>2  Department of Defense, which it wanted to create a communication network<br/>3  that could survive from a military attack. This early network, ARPANET,<br/>4  connected computers at several universities and research institutions.<br/>5  Over the next two decades, scientists developed the protocols that they would<br/>6  allow different computer networks to communicate with each other.<br/>7  In 1989, Tim Berners-Lee invented the World Wide Web, which it made<br/>8  the internet accessible to the general public. He designed the first<br/>9  web browser and web server, and created the HTML language for to format<br/>10 web pages. By the mid-1990s, the internet was beginning to be grow rapidly,<br/>11 with millions of users online. Today, the internet is an more essential part<br/>12 of daily life, connecting billions of people and devices around the globe.<br/>13 It has transformed industries, enabled instant communication, and made<br/>14 information accessible to anyone with an internet connection. However, that it<br/>15 also poses challenges, such as cyber threats and the digital addiction.</p>",
+      "questionGroups": [
+        {
+          "id": "cae-ec-rg-2",
+          "instruction": "Write the extra word in capital letters, or write 'CORRECT' if the line is correct.",
+          "questions": [
+            {
+              "id": "q-cae-ec-2-1",
+              "type": "gap_fill",
+              "instruction": "Line 1:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "It began in the late 1960s as a research project funded by the US"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "It began in the late 1960s as a research project funded by the US",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 1,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-2",
+              "type": "gap_fill",
+              "instruction": "Line 2:",
+              "acceptedAnswers": [
+                [
+                  "IT"
+                ],
+                [
+                  "which it wanted to create"
+                ]
+              ],
+              "correctAnswer": "IT",
+              "explanation": "Từ dư thừa là 'IT'. Trong mệnh đề quan hệ bổ nghĩa 'which wanted to...', đại từ 'which' làm chủ ngữ thay thế cho 'Department of Defense'. Đại từ 'it' đứng ngay sau đó bị thừa. Method: complete the gap with \"IT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 2:. Correct completion: IT.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 2,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-3",
+              "type": "gap_fill",
+              "instruction": "Line 3:",
+              "acceptedAnswers": [
+                [
+                  "FROM"
+                ],
+                [
+                  "could survive from a military"
+                ]
+              ],
+              "correctAnswer": "FROM",
+              "explanation": "Từ dư thừa là 'FROM'. Động từ ngoại động từ 'survive' đi kèm trực tiếp với tân ngữ danh từ 'survive an attack' (sống sót qua cuộc tấn công), không cần giới từ 'from' trong văn phong chuẩn. Method: complete the gap with \"FROM\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 3:. Correct completion: FROM.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 3,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-4",
+              "type": "gap_fill",
+              "instruction": "Line 4:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "connected computers at several universities and research institutions."
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "connected computers at several universities and research institutions.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 4,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-5",
+              "type": "gap_fill",
+              "instruction": "Line 5:",
+              "acceptedAnswers": [
+                [
+                  "THEY"
+                ],
+                [
+                  "protocols that they would"
+                ]
+              ],
+              "correctAnswer": "THEY",
+              "explanation": "Từ dư thừa là 'THEY'. Mệnh đề quan hệ xác định 'that would allow...' sử dụng 'that' làm chủ ngữ. Thêm 'they' vào sau 'that' tạo lỗi lặp chủ ngữ vô nghĩa. Method: complete the gap with \"THEY\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 5:. Correct completion: THEY.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 5,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-6",
+              "type": "gap_fill",
+              "instruction": "Line 6:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "allow different computer networks to communicate with each other."
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "allow different computer networks to communicate with each other.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 6,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-7",
+              "type": "gap_fill",
+              "instruction": "Line 7:",
+              "acceptedAnswers": [
+                [
+                  "IT"
+                ],
+                [
+                  "World Wide Web, which it made"
+                ]
+              ],
+              "correctAnswer": "IT",
+              "explanation": "Từ dư thừa là 'IT'. 'which' đã là đại từ quan hệ đóng vai trò chủ ngữ của động từ 'made'. Do đó, việc chèn thêm đại từ 'it' là sai ngữ pháp. Method: complete the gap with \"IT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 7:. Correct completion: IT.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 7,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-8",
+              "type": "gap_fill",
+              "instruction": "Line 8:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "the internet accessible to the general public. He designed the first"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "the internet accessible to the general public. He designed the first",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 8,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-9",
+              "type": "gap_fill",
+              "instruction": "Line 9:",
+              "acceptedAnswers": [
+                [
+                  "TO"
+                ],
+                [
+                  "HTML language for to format"
+                ],
+                [
+                  "không chuẩn."
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Từ dư thừa là 'TO'. Để chỉ mục đích ta có thể dùng 'to format' hoặc 'for formatting', chứ không được kết hợp hai giới từ liền nhau thành 'for to format' (đây là lỗi ngữ pháp cổ/không chuẩn). Method: complete the gap with \"TO\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 9:. Correct completion: TO.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 9,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-10",
+              "type": "gap_fill",
+              "instruction": "Line 10:",
+              "acceptedAnswers": [
+                [
+                  "BE"
+                ],
+                [
+                  "was beginning to be grow rapidly"
+                ]
+              ],
+              "correctAnswer": "BE",
+              "explanation": "Từ dư thừa là 'BE'. Động từ ở thể chủ động diễn tiến là 'beginning to grow rapidly', không dùng trợ động từ 'be' làm câu bị chuyển sang dạng lai nửa bị động vô nghĩa 'beginning to be grow'. Method: complete the gap with \"BE\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure. Language rule: open cloze usually tests grammar words such as articles, prepositions, auxiliaries, pronouns, linkers and fixed phrases.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 10:. Correct completion: BE.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 10,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-11",
+              "type": "gap_fill",
+              "instruction": "Line 11:",
+              "acceptedAnswers": [
+                [
+                  "MORE"
+                ],
+                [
+                  "is an more essential part"
+                ]
+              ],
+              "correctAnswer": "MORE",
+              "explanation": "Từ dư thừa là 'MORE'. Bản thân 'essential' mang nghĩa thiết yếu (tính từ tuyệt đối). Trong ngữ cảnh câu trần thuật khẳng định vị thế 'an essential part', việc thêm 'more' làm câu mất tính tự nhiên và sai cấu trúc mạo từ 'an'. Method: complete the gap with \"MORE\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 11:. Correct completion: MORE.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 11,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-12",
+              "type": "gap_fill",
+              "instruction": "Line 12:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "of daily life, connecting billions of people and devices around the globe."
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác về cả cấu trúc ngữ pháp, từ vựng và dấu câu, không chứa bất kỳ lỗi thừa từ hay lỗi chính tả nào. Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "of daily life, connecting billions of people and devices around the globe.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 12,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-13",
+              "type": "gap_fill",
+              "instruction": "Line 13:",
+              "acceptedAnswers": [
+                [
+                  "CORRECT"
+                ],
+                [
+                  "It has transformed industries, enabled instant communication, and made"
+                ]
+              ],
+              "correctAnswer": "CORRECT",
+              "explanation": "Dòng này hoàn toàn chính xác (sự song hành của các động từ hoàn thành: 'transformed', 'enabled', 'made'). Method: complete the gap with \"CORRECT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure. Language rule: open cloze usually tests grammar words such as articles, prepositions, auxiliaries, pronouns, linkers and fixed phrases.",
+              "answerLocation": "It has transformed industries, enabled instant communication, and made",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 13,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-14",
+              "type": "gap_fill",
+              "instruction": "Line 14:",
+              "acceptedAnswers": [
+                [
+                  "THAT"
+                ],
+                [
+                  "internet connection. However, that it"
+                ]
+              ],
+              "correctAnswer": "THAT",
+              "explanation": "Từ dư thừa là 'THAT'. Liên từ 'However' nối tiếp bằng một mệnh đề độc lập bình thường 'it also poses challenges'. Thêm liên từ phụ thuộc 'that' ở giữa làm gián đoạn cấu trúc câu chính. Method: complete the gap with \"THAT\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure.",
+              "answerLocation": "internet connection. However, that it",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 14,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            },
+            {
+              "id": "q-cae-ec-2-15",
+              "type": "gap_fill",
+              "instruction": "Line 15:",
+              "acceptedAnswers": [
+                [
+                  "THE"
+                ],
+                [
+                  "threats and the digital addiction"
+                ]
+              ],
+              "correctAnswer": "THE",
+              "explanation": "Từ dư thừa là 'THE'. 'digital addiction' (sự nghiện kỹ thuật số) là một danh từ trừu tượng dùng chung mang tính khái quát, không cần mạo từ xác định 'the' đứng trước. Method: complete the gap with \"THE\" only after checking the words before and after it. Trap: keep the sentence grammatical and avoid answers that fit the topic but break the structure. Language rule: open cloze usually tests grammar words such as articles, prepositions, auxiliaries, pronouns, linkers and fixed phrases.",
+              "answerLocation": "Source gap: Write the extra word in capital letters, or write 'CORRECT' if the line is correct. Line 15:. Correct completion: THE.",
+              "category": "cae_use_of_english_part_2",
+              "blankIndex": 15,
+              "displayMode": "both",
+              "topic": {
+                "id": "cae_use_of_english_part_2",
+                "title": "Proofreading Practice 2 - The Invention of the Internet",
+                "skill": "use_of_english",
+                "program": "cae"
+              },
+              "tags": [
+                "english_core",
+                "cae",
+                "use_of_english",
+                "cae_use_of_english_part_2",
+                "gap_fill",
+                "both",
+                "section:cae-ec-sec-2",
+                "group:cae-ec-rg-2"
+              ],
+              "source": "Cambridge Certificate in Advanced English Error Correction Bank, Proofreading Practice 2 - The Invention of the Internet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

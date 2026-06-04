@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test2",
+  "title": "CPE Entry Test 2 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test2-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Influence of Sophocles</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Sophocles, (0) were he immortal, would (1) __________ reached the distinguished old age of 2,500 this year. Unfortunately, he, (2) __________ the gods, was mortal and perished in approximately 406 BC. (3) __________ his long and illustrious career, the Greek playwright produced at (4) __________ one hundred and thirty works. From an early age, Sophocles emulated his contemporary, Aeschylus in (5) __________, like his mentor, he preferred tragedies (6) __________ other dramatic genres. At the relatively young age of twenty-eight, Sophocles, (7) __________ defeating Aeschylus, won the first of many accolades for his art. Sadly, (8) __________ Sophocles' written legacy, only seven plays have survived. (9) __________ compensate, however, the changes to theatre which Sophocles wrought are still (10) __________ practice today. One of the innovations introduced by him was to allow more (11) __________ two thespians to appear (12) __________ stage simultaneously. In addition, Sophocles broke with tradition by increasing the number of chorus members from twelve to fifteen. (13) __________ far ahead of his time, both as an artist and a philosopher, Sophocles believed that the gods left man free to create his (14) __________ In so doing, however, man had to (15) __________ the consequences of his choices, which is a central theme of most of Sophocles' works.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test2-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test2-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "HAVE",
+                  "have"
+                ]
+              ],
+              "correctAnswer": "HAVE",
+              "explanation": "Đáp án đề xuất: HAVE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "HAVE",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "UNLIKE",
+                  "unlike"
+                ]
+              ],
+              "correctAnswer": "UNLIKE",
+              "explanation": "Đáp án đề xuất: UNLIKE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "UNLIKE",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "DURING",
+                  "during"
+                ]
+              ],
+              "correctAnswer": "DURING",
+              "explanation": "Đáp án đề xuất: DURING. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "DURING",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "LEAST",
+                  "least"
+                ]
+              ],
+              "correctAnswer": "LEAST",
+              "explanation": "Đáp án đề xuất: LEAST. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "LEAST",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "THAT",
+                  "that"
+                ]
+              ],
+              "correctAnswer": "THAT",
+              "explanation": "Đáp án đề xuất: THAT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THAT",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "TO",
+                  "to"
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Đáp án đề xuất: TO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TO",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "AFTER",
+                  "after"
+                ]
+              ],
+              "correctAnswer": "AFTER",
+              "explanation": "Đáp án đề xuất: AFTER. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "AFTER",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "OF",
+                  "of"
+                ]
+              ],
+              "correctAnswer": "OF",
+              "explanation": "Đáp án đề xuất: OF. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "OF",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "TO",
+                  "to"
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Đáp án đề xuất: TO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TO",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "IN",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "IN",
+              "explanation": "Đáp án đề xuất: IN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IN",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "THAN",
+                  "than"
+                ]
+              ],
+              "correctAnswer": "THAN",
+              "explanation": "Đáp án đề xuất: THAN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THAN",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "ON",
+                  "on"
+                ]
+              ],
+              "correctAnswer": "ON",
+              "explanation": "Đáp án đề xuất: ON. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ON",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "BEING",
+                  "being"
+                ]
+              ],
+              "correctAnswer": "BEING",
+              "explanation": "Đáp án đề xuất: BEING. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BEING",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "OWN",
+                  "own"
+                ]
+              ],
+              "correctAnswer": "OWN",
+              "explanation": "Đáp án đề xuất: OWN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "OWN",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "FACE",
+                  "face"
+                ]
+              ],
+              "correctAnswer": "FACE",
+              "explanation": "Đáp án đề xuất: FACE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "FACE",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test2-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Robots Rule, OK?</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Look out, the (0) transformers are coming! Kids just love those (16) __________ fiends that are alternately monster and vehicle, but now it seems that they have (17) __________ out from the screen to become reality. Dr Mark Yim of Xerox's Palo Alto Research Centre (PARC for short) has developed the Polybot, designed for use in search and rescue operations, deep-sea mining and space (18) __________. Built of about a dozen identical modules, the Polybot changes shape while in motion, re-building itself from these modules. Three different (19) __________ are possible, depending on the terrain. On a level surface, it is a (20) __________ tractor tread. Travelling downstairs or clambering over obstacles, it morphs into a caterpillar, and on rough ground it becomes a four-legged \"spider\". How does it do it? By having the modules talk to each other using infrared transceivers. They locate each other and achieve (21) __________ with the aid of small on-board motors. The segments can both lock and (22) __________ from each other at will, each being controlled by its own processor, with a (23) __________ brain located in one of the modules. Cheap, durable and versatile once put into mass (24) __________, the Polybot will eventually be able to regulate its own (25) __________, just like on TV. Now the kids will really love that!</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test2-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test2-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: FLEX]:",
+              "acceptedAnswers": [
+                [
+                  "FLEXIBLE",
+                  "flexible"
+                ]
+              ],
+              "correctAnswer": "FLEXIBLE",
+              "explanation": "Đáp án đề xuất: FLEXIBLE. Từ gốc 'FLEX' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "FLEXIBLE",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "FLEX",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: LEAP]:",
+              "acceptedAnswers": [
+                [
+                  "LEAPT",
+                  "leapt"
+                ]
+              ],
+              "correctAnswer": "LEAPT",
+              "explanation": "Đáp án đề xuất: LEAPT. Từ gốc 'LEAP' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "LEAPT",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "LEAP",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: EXPLORE]:",
+              "acceptedAnswers": [
+                [
+                  "EXPLORATION",
+                  "exploration"
+                ]
+              ],
+              "correctAnswer": "EXPLORATION",
+              "explanation": "Đáp án đề xuất: EXPLORATION. Từ gốc 'EXPLORE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EXPLORATION",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "EXPLORE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: CONFIGURE]:",
+              "acceptedAnswers": [
+                [
+                  "CONFIGURATIONS",
+                  "configurations"
+                ]
+              ],
+              "correctAnswer": "CONFIGURATIONS",
+              "explanation": "Đáp án đề xuất: CONFIGURATIONS. Từ gốc 'CONFIGURE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "CONFIGURATIONS",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "CONFIGURE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: LOOP]:",
+              "acceptedAnswers": [
+                [
+                  "LOOPED",
+                  "looped"
+                ]
+              ],
+              "correctAnswer": "LOOPED",
+              "explanation": "Đáp án đề xuất: LOOPED. Từ gốc 'LOOP' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "LOOPED",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "LOOP",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: ALIGN]:",
+              "acceptedAnswers": [
+                [
+                  "ALIGNMENT",
+                  "alignment"
+                ]
+              ],
+              "correctAnswer": "ALIGNMENT",
+              "explanation": "Đáp án đề xuất: ALIGNMENT. Từ gốc 'ALIGN' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "ALIGNMENT",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "ALIGN",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: CONNECT]:",
+              "acceptedAnswers": [
+                [
+                  "DISCONNECT",
+                  "disconnect"
+                ]
+              ],
+              "correctAnswer": "DISCONNECT",
+              "explanation": "Đáp án đề xuất: DISCONNECT. Từ gốc 'CONNECT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DISCONNECT",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "CONNECT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: RUDIMENT]:",
+              "acceptedAnswers": [
+                [
+                  "RUDIMENTARY",
+                  "rudimentary"
+                ]
+              ],
+              "correctAnswer": "RUDIMENTARY",
+              "explanation": "Đáp án đề xuất: RUDIMENTARY. Từ gốc 'RUDIMENT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "RUDIMENTARY",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "RUDIMENT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: PRODUCE]:",
+              "acceptedAnswers": [
+                [
+                  "PRODUCTION",
+                  "production"
+                ]
+              ],
+              "correctAnswer": "PRODUCTION",
+              "explanation": "Đáp án đề xuất: PRODUCTION. Từ gốc 'PRODUCE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "PRODUCTION",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "PRODUCE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: BEHAVE]:",
+              "acceptedAnswers": [
+                [
+                  "BEHAVIOUR",
+                  "behaviour"
+                ]
+              ],
+              "correctAnswer": "BEHAVIOUR",
+              "explanation": "Đáp án đề xuất: BEHAVIOUR. Từ gốc 'BEHAVE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "BEHAVIOUR",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "BEHAVE",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test2-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>SUBSCRIBE NOW</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You have been chosen to preview and peruse this extract from The Political Being at your (26) __________. Take a quick (27) __________ at the following for a sampling of what The Political Being can offer you, the (28) __________ reader. If you like what you've read, which we are confident you will, grab this opportunity to subscribe now. Unlike other publications, we are in a position to offer you home delivery at no additional cost. Bear in mind that this is a limited offer. During this introductory (29) __________ trial period you will receive The Political Being for 25% off the newsstand price. This exclusive offer to new subscribers allows you to \"test drive\" the magazine as we (30) __________ you the freedom to cancel your subscription at any time and still receive a full (31) __________ on remaining issues of your subscription.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test2-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test2-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - leisure. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "leisure",
+              "category": "cpe_part_1",
+              "options": [
+                "A. relaxation",
+                "B. leisure",
+                "C. comfort",
+                "D. ease"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - glance. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "glance",
+              "category": "cpe_part_1",
+              "options": [
+                "A. glance",
+                "B. view",
+                "C. read",
+                "D. glimpse"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - discriminating. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "discriminating",
+              "category": "cpe_part_1",
+              "options": [
+                "A. discriminatory",
+                "B. discriminating",
+                "C. disarming",
+                "D. disconcerting"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - sample. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "sample",
+              "category": "cpe_part_1",
+              "options": [
+                "A. mock",
+                "B. sample",
+                "C. trial",
+                "D. prelude"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - grant. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "grant",
+              "category": "cpe_part_1",
+              "options": [
+                "A. let",
+                "B. permit",
+                "C. admit",
+                "D. grant"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - refund. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "refund",
+              "category": "cpe_part_1",
+              "options": [
+                "A. rebate",
+                "B. refund",
+                "C. deposit",
+                "D. discount"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - ushered. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "ushered",
+              "category": "cpe_part_1",
+              "options": [
+                "A. called",
+                "B. ushered",
+                "C. welcomed",
+                "D. fostered"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - wildest. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "wildest",
+              "category": "cpe_part_1",
+              "options": [
+                "A. craziest",
+                "B. wildest",
+                "C. strangest",
+                "D. maddest"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - exceeding. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "exceeding",
+              "category": "cpe_part_1",
+              "options": [
+                "A. exceeding",
+                "B. excelling",
+                "C. extolling",
+                "D. extending"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - boost. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "boost",
+              "category": "cpe_part_1",
+              "options": [
+                "A. elevation",
+                "B. rise",
+                "C. surge",
+                "D. boost"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - glasses. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "glasses",
+              "category": "cpe_part_1",
+              "options": [
+                "A. glasses",
+                "B. lenses",
+                "C. shades",
+                "D. panes"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - rejoice. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "rejoice",
+              "category": "cpe_part_1",
+              "options": [
+                "A. cheer",
+                "B. relish",
+                "C. rejoice",
+                "D. enjoy"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test2-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an extract from a novel. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap (38-44). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>I lived in the Cog D’Or quarter for about a year and a half. One day, in summer, I found that I had just four hundred and fifty francs left, and beyond this nothing but thirty-six francs a week, which I earned by giving English lessons. Hitherto I had not thought about the future, but I now realized that I must do something at once. I decided to start looking for a job and took the precaution of paying two hundred francs for a month’s rent in advance. With the other two hundred and fifty francs, besides the English lessons, I could live a month, and in a month I should probably find work. I aimed at becoming a guide to one of the tourist companies, or perhaps an interpreter. However, a piece of bad luck prevented this.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>This put an end to my plans of looking for work. I had now got to live at the rate of about six francs a day, and from the start it was too difficult to leave much thought for anything else. It was now that my experiences of poverty began — for six francs a day, if not actual poverty, is on the fringe of it. Six francs is a shilling, and you can live on a shilling a day in Paris if you know how. But it is a complicated business.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>You come to realise, for instance, the secrecy attaching to poverty. At a sudden stroke you have been reduced to an income of six francs a day. But of course you dare not admit it — you have got to pretend that you are living quite as usual. From the start it tangles you in a net of lies, and even with the lies you can hardly manage it. You stop sending clothes to the laundry, and the laundress catches you in the street and asks you why; you mumble something, and she, thinking you are sending the clothes elsewhere, is your enemy for life. There are letters you want to answer, and cannot, because stamps are too expensive.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>You discover the extreme precariousness of your six francs a day. Mean disasters happen and rob you of food. You have spent your last eighty centimes on half a litre of milk, and are boiling it over the spirit lamp. While it boils a bug runs down your forearm; you give the bug a flick with your nail, and it falls, plop! straight into the milk. There is nothing for it but to throw the milk away and go foodless.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Then you go to the greengrocer’s to spend a franc on a kilogram of potatoes. But one of the pieces that make up the franc is a Belgian piece, and the shopman refuses it. You slink out of the shop, and can never go there again.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>You discover what it is like to be hungry. With bread and margarine in your belly, you go out and look into the shop windows. Everywhere there is food insulting you in huge, wasteful piles; baskets of hot loaves, great yellow blocks of butter, mountains of potatoes, vast Gruyére cheeses like grindstones. A snivelling self-pity comes over you at the sight of so much food.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>These three weeks were squalid and uncomfortable, and evidently there was worse coming, for my rent would be due before long. Nevertheless, things were not a quarter as bad as I had expected. For, when you are approaching poverty, you make one discovery which outweighs some of the others. You discover boredom and mean complications and the beginnings of hunger, but you also discover the great redeeming feature of poverty: the fact that it annihilates the future.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>And there is another feeling that is a great consolation in poverty. I believe everyone who has been hard up has experienced it. It is a feeling of relief, almost of pleasure, at knowing yourself at last genuinely down and out. You have talked so often of going to the dogs — and well, here are the dogs, and you have reached them, and you can stand it. It takes off a lot of anxiety.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test2-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test2-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn đoạn C. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "One day there turned up at the hotel a young Italian who called himself a compositor. Madame F. did not like the look of him, and made him pay a week’s rent in advance. The Italian paid the rent and stayed six nights at the hotel. During this time he managed to prepare some duplicate keys, and on the last night he robbed a dozen rooms, including mine. Luckily, he did not find the money that was in my pockets, so I was not left penniless. I was left with just forty-seven francs - that is, seven and tenpence.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Chọn đoạn E. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "have to spend sixty centimes on a drink, and go correspondingly short of food. Your linen gets filthy, and you run out of soap and razor-blades. Your hair wants cutting, and you try to cut it yourself, with such fearful results that you have to go to the barber after all, and spend the equivalent of a day’s food. All day you are telling lies, and expensive lies.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "And then there are your meals — meals are the worst difficulty of all. Every day at meal-times you go out, ostensibly to a restaurant, and loaf an hour in the Luxembourg Gardens, watching the pigeons. Afterwards you smuggle your food home in your pockets. Your food is bread and margarine, and even the nature of the food is governed by lies. You have to buy rye bread instead of household bread, because the rye loaves, though dearer, are round and can be smuggled in your pockets. This wastes you a franc a day. Sometimes, to keep up appearances, you",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "You have strayed into a respectable quarter, and you see a prosperous friend coming. To avoid him you dodge into the nearest café. Once in the café you must buy something, so you spend your last fifty centimes on a glass of black coffee with a dead fly in it. One could multiply these disasters by the hundred. They are part of the process of being hard up.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "I spent a day wandering about our quarter, saying good-bye to everyone. It was on this day that Charlie told me about the death of old Roucolle the miser, who had once lived in the quarter. Very likely Charlie was lying as usual, but it was a good story.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "I continued in this style for about three weeks. The forty-seven francs were soon gone, and I had to do what I could on thirty-six francs a week from the English lessons. Being inexperienced, I handled the money badly, and sometimes I was a day without food. When this happened I used to sell a few of my clothes, smuggling them out of the hotel in small packets and taking them to a second-hand shop in the rue de la Montagne St Geneviéve.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Within certain limits, it is actually true that the less money you have, the less you worry. When you have a hundred francs in the world you are liable to the most craven panics. When you have only three francs you are quite indifferent; for three francs will feed you till tomorrow, and you cannot think further than that. You are bored, but you are not afraid. You think vaguely, ‘I shall be starving in a day or two - shocking, isn’t it\"’ And then the mind wanders to other topics. A bread and margarine diet does, to some extent, provide its own anodyne.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "I continued in this style for about three weeks. The forty-seven francs were soon gone, and I had to do what I could on thirty-six francs a week from the English lessons. Being inexperienced, I handled the money badly, and sometimes I was a day without food. When this happened I used to sell a few of my clothes, smuggling them out of the hotel in small packets and taking them to a second-hand shop in the rue de la Montagne St Geneviéve."
+            },
+            {
+              "label": "B",
+              "text": "Within certain limits, it is actually true that the less money you have, the less you worry. When you have a hundred francs in the world you are liable to the most craven panics. When you have only three francs you are quite indifferent; for three francs will feed you till tomorrow, and you cannot think further than that. You are bored, but you are not afraid. You think vaguely, ‘I shall be starving in a day or two - shocking, isn’t it\"’ And then the mind wanders to other topics. A bread and margarine diet does, to some extent, provide its own anodyne."
+            },
+            {
+              "label": "C",
+              "text": "One day there turned up at the hotel a young Italian who called himself a compositor. Madame F. did not like the look of him, and made him pay a week’s rent in advance. The Italian paid the rent and stayed six nights at the hotel. During this time he managed to prepare some duplicate keys, and on the last night he robbed a dozen rooms, including mine. Luckily, he did not find the money that was in my pockets, so I was not left penniless. I was left with just forty-seven francs - that is, seven and tenpence."
+            },
+            {
+              "label": "D",
+              "text": "And then there are your meals — meals are the worst difficulty of all. Every day at meal-times you go out, ostensibly to a restaurant, and loaf an hour in the Luxembourg Gardens, watching the pigeons. Afterwards you smuggle your food home in your pockets. Your food is bread and margarine, and even the nature of the food is governed by lies. You have to buy rye bread instead of household bread, because the rye loaves, though dearer, are round and can be smuggled in your pockets. This wastes you a franc a day. Sometimes, to keep up appearances, you"
+            },
+            {
+              "label": "E",
+              "text": "have to spend sixty centimes on a drink, and go correspondingly short of food. Your linen gets filthy, and you run out of soap and razor-blades. Your hair wants cutting, and you try to cut it yourself, with such fearful results that you have to go to the barber after all, and spend the equivalent of a day’s food. All day you are telling lies, and expensive lies."
+            },
+            {
+              "label": "F",
+              "text": "It is altogether curious, your first contact with poverty. You have thought so much about poverty — it is the thing you have feared all your life, the thing you knew would happen to you sooner or later; and it is all so utterly and prosaically different. You thought it would be quite simple; it is extraordinarily complicated. You thought it would be terrible; it is merely squalid and boring. It is the peculiar lowness of poverty that you discover first; the shifts that it puts you to, the complicated meanness, the crust- wiping."
+            },
+            {
+              "label": "G",
+              "text": "I spent a day wandering about our quarter, saying good-bye to everyone. It was on this day that Charlie told me about the death of old Roucolle the miser, who had once lived in the quarter. Very likely Charlie was lying as usual, but it was a good story."
+            },
+            {
+              "label": "H",
+              "text": "You have strayed into a respectable quarter, and you see a prosperous friend coming. To avoid him you dodge into the nearest café. Once in the café you must buy something, so you spend your last fifty centimes on a glass of black coffee with a dead fly in it. One could multiply these disasters by the hundred. They are part of the process of being hard up."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test2-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Men love women, women love children, children love animals, so they say. Teddy bears to take to bed, animal print clothes and Disney cartoons are always all the rage for the very young. Psychologists call this preoccupation with other species “animal reactivity”, dividing it into two basic phases according to age — four to eight and nine to fourteen. To take phase one first: most four-to-eight-year-olds are attracted to large animals, seeing them as protective “parent” figures. The older, more independent child of phase two, nine to fourteen, prefers smaller creatures he or she can look after as a child substitute, imitating, in doing so, his/her parents.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>One animal, however, scores consistently high marks on the popularity charts, not only with children of all ages but also with adults.. That creature is the giant panda, its appeal so universal and so enduring that it has been the emblem of the World Wildlife Fund, and of the threatened species of our planet, since the WWF’s foundation in 1961.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There are many reasons behind the panda’s appeal, some, connected to its attractive, if rather comical, appearance, some to its apparently anthropomorphic habits, and others to its lifestyle and background. It is some of these that I wish to explore here.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Firstly, there is the panda’s super-teddy-bear appearance. Its size is a plus, as large animals are generally perceived more positively than small ones. Its eye-catching black and white coat could not be bettered, providing as it does a powerful colour contrast. (In other cases, man has had to breed black and white animals, e.g. with cattle or dalmatian dogs). The panda’s face is flattish, like a human face, and without the pronounced animal snout that distinguishes so many other species. Its eyes, although small, appear large because of the characteristic black patches surrounding them, conveying the impression of innocent vulnerability. Its tail is non-existent, making it still more appealing to the equally tail-less mammal, man. A panda’s body is rounded and seems soft and cuddly, giving it the look of a large toy animal. With so many positive physical attributes, how can such a creature be resisted?</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>People also like the way pandas behave. There is the, tendency to sit up on their hindlegs, turning into a biped (like. man) in order to eat, and the ability to manipulate small objects by use of a sixth “claw”, carrying food objects to their, mouths in a humanlike way - not for pandas the doggy bowl. or the feeding trough — as they lean against a tree and dine at their ease. Equally, when in the mood, pandas like to play and will invent any number of tricks when presented with a new toy, ambling along with the clumsy, wobbly, uncoordinated gait of a young child (the panda’s heavy- boned skeleton gives it its characteristic way of moving).</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Diet is also a factor. Big cats may be beautiful and: graceful, but they are also predators, whereas pandas, to the’ especial delight of children, have evolved from their meat-. eating ancestors to herbivores, existing chiefly on bamboo. shoots. Perceived as harmless vegetarians, they score highly as animals that are likely to befriend a human, as opposed to eyeing him up as a possible lunch.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>An aspect of the panda that humans find especially, pleasing, although it is perplexing for zoologists who want to mate these largely solitary animals in captivity, is its apparent, sexlessness. Unlike so many other species which display their gender unashamedly and would have Adam and Eve running for the nearest fig leaves, the panda has no obvious external sexual features and can therefore keep everyone guessing.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>A further attraction is the historical and geographical background of the panda. A solitary animal that is difficult to breed, whether in captivity or in the wild, it is a native of the remote mountain forests of China and has always been rare, valuable and sought after, from the first expeditions by Pére David, Ruth Harkness and Tangier Smith until today. Faced with extinction, despite being a protected species, from man’s encroaching on their habitat, giant pandas, now mostly found in captivity, are stars of the show, their cubs forever in the limelight.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Let us hope that this delightful creature, which wins paws down in the popularity stakes, will also win the race for survival. The world would be so much the poorer without its endearing giant panda.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test2-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test2-45",
+              "type": "multiple_choice",
+              "instruction": "Psychologists use the term ‘animal reactivity’ to describe",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - the characteristics children ascribe to animals.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "the characteristics children ascribe to animals.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. children’s predisposition to copy animal behaviour.",
+                "B. the characteristics children ascribe to animals.",
+                "C. the role of animals in helping children develop independence.",
+                "D. the function animals have in child development."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-46",
+              "type": "multiple_choice",
+              "instruction": "The giant panda has achieved its popularity because it",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - has humanlike mannerisms.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "has humanlike mannerisms.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. is the symbol of the WWF.",
+                "B. represents the plight of all endangered species.",
+                "C. has humanlike mannerisms.",
+                "D. has features people find amusing."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-47",
+              "type": "multiple_choice",
+              "instruction": "What is so appealing about the panda's appearance?",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - It combines the most attractive features of several species.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "It combines the most attractive features of several species.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. The average person does not consider it a bear.",
+                "B. It combines the most attractive features of several species.",
+                "C. It resembles a typical cuddly toy.",
+                "D. Its body is bigger than average for a bear."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-48",
+              "type": "multiple_choice",
+              "instruction": "The writer characterises pandas as",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - placid.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "C. placid.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. energetic.",
+                "B. graceful.",
+                "C. placid.",
+                "D. disinterested."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-49",
+              "type": "multiple_choice",
+              "instruction": "The diet of pandas",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - consists solely of vegetation.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "consists solely of vegetation.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. has been known to include the occasional human.",
+                "B. consists solely of vegetation.",
+                "C. changes as their special ‘claw’ develops. a",
+                "D. can consist of a wide variety of different foods."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test2-50",
+              "type": "multiple_choice",
+              "instruction": "According to the passage, the panda is a rare animal because",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - as a species, it generally favours isolation.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "as a species, it generally favours isolation.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. so many have been removed from their native environment.",
+                "B. the reproductive organs of pandas do not always fully develop.",
+                "C. as a species, it generally favours isolation.",
+                "D. scientists have not yet understood its breeding habits."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

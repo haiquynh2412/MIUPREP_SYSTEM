@@ -1,0 +1,24 @@
+{
+  "version": "sat-expansion-batch-003-2026-05-20",
+  "basisReports": [
+    "data/sat-2026-readiness-audit.json",
+    "data/reviewed-question-expert-audit.json",
+    "data/explanation-upgrade-queue.json",
+    "data/topic-governance-report.json"
+  ],
+  "batch003Targets": {
+    "Math Algebra": 16,
+    "Math Advanced Math": 16
+  },
+  "difficultySkew": {
+    "Medium": 13,
+    "Hard": 19
+  },
+  "avoid": [
+    "routine circumference, hypotenuse, or probability clones",
+    "single-step arithmetic-only prompts",
+    "Geometry and PSDA additions while those domains are overrepresented",
+    "near-duplicate prompts from batches 001 and 002"
+  ],
+  "reason": "The current readiness audit still shows Algebra and Advanced Math as the largest Math domain gaps; batch 003 adds only those domains."
+}

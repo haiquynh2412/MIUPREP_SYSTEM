@@ -1,0 +1,157 @@
+{
+  "id": "reading-sample-2",
+  "title": "The Secrets of Maya Water Management",
+  "type": "academic",
+  "skill": "reading",
+  "sections": [
+    {
+      "id": "r2-sec-1",
+      "title": "Maya Hydraulics",
+      "instructions": "Answer the questions below based on the passage.",
+      "passageHtml": "<h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">A Seasonal Challenge</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">The ancient Maya civilization flourished in the tropical lowlands of Mesoamerica. Despite the lush vegetation, the region faced a severe environmental bottleneck: a prolonged dry season lasting from January to May, during which rain was virtually non-existent. To sustain large urban populations, Maya engineers developed sophisticated water management networks, turning hostile environments into productive agricultural hubs.</p><h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">The Great Reservoirs</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">At the heart of Maya water systems were massive reservoirs, often constructed by plastering limestone quarries to make them watertight. In the city of Tikal, the monumental <i>Temple Reservoir</i> was capable of holding millions of gallons of water. Sand-based filtration chambers were positioned at the entry points of these reservoirs, ensuring a clean supply of drinking water for the citizenry. This sand had to be transported from distant river beds, showcasing the immense social coordination of Maya cities.</p><h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">Agricultural Innovation</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">Beyond drinking water, hydraulic control was vital for agriculture. In wetlands, the Maya built raised fields—elevated soil platforms surrounded by canals. These canals provided irrigation during dry periods and harvested nutrient-rich silt, which was scooped up to fertilize the crops. This intensive farming method, known as <i>chinampas</i>, allowed Maya cities to achieve crop yields that far exceeded conventional slash-and-burn practices.</p>",
+      "questionGroups": [
+        {
+          "id": "r2-rg-1",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.",
+          "questions": [
+            {
+              "id": "q-r2-1",
+              "type": "gap_fill",
+              "instruction": "The lowlands of Mesoamerica experienced a prolonged ______ season.",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "dry",
+                  "dry season"
+                ]
+              ],
+              "correctAnswer": "dry",
+              "explanation": "Đoạn 1 đề cập vùng đất thấp trải qua mùa khô kéo dài: 'a prolonged dry season lasting from January to May...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "prolonged dry season"
+            },
+            {
+              "id": "q-r2-2",
+              "type": "gap_fill",
+              "instruction": "Maya reservoirs were made watertight by plastering limestone ______.",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "quarries"
+                ]
+              ],
+              "correctAnswer": "quarries",
+              "explanation": "Đoạn 2 nêu rõ các bể chứa được chống thấm bằng cách trét vữa lên các mỏ đá vôi: 'constructed by plastering limestone quarries to make them watertight.' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "plastering limestone quarries to make them watertight"
+            },
+            {
+              "id": "q-r2-3",
+              "type": "gap_fill",
+              "instruction": "Filter chambers at the reservoirs used ______ to clean the drinking water.",
+              "blankIndex": 3,
+              "acceptedAnswers": [
+                [
+                  "sand"
+                ]
+              ],
+              "correctAnswer": "sand",
+              "explanation": "Đoạn 2 chỉ ra các buồng lọc sử dụng cát để làm sạch nước: 'Sand-based filtration chambers were positioned at the entry points...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "Sand-based filtration chambers"
+            }
+          ]
+        },
+        {
+          "id": "r2-rg-2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-r2-4",
+              "type": "multiple_choice",
+              "instruction": "Where did Maya cities get the sand used in their filtration chambers?",
+              "options": [
+                "A. They manufactured it from crushed limestone.",
+                "B. It was transported from distant river beds.",
+                "C. It was mined directly beneath the reservoirs."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đoạn 2 đề cập cát lọc được vận chuyển từ các lòng sông xa xôi: 'This sand had to be transported from distant river beds...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "transported from distant river beds"
+            },
+            {
+              "id": "q-r2-5",
+              "type": "multiple_choice",
+              "instruction": "What agricultural benefit did raised field canals provide?",
+              "options": [
+                "A. They acted as defensive moats against invaders.",
+                "B. They were used to breed freshwater fish.",
+                "C. They provided dry-period irrigation and rich silt fertilizer."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đoạn 3 giải thích các kênh cung cấp nước tưới tiêu mùa khô và bùn dinh dưỡng để làm phân bón: 'provided irrigation during dry periods and harvested nutrient-rich silt...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "provided irrigation during dry periods and harvested nutrient-rich silt"
+            }
+          ]
+        },
+        {
+          "id": "r2-rg-3",
+          "instruction": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            {
+              "id": "q-r2-6",
+              "type": "true_false_not_given",
+              "instruction": "The Maya lowlands had constant rainfall throughout the whole year.",
+              "acceptedAnswers": [
+                [
+                  "false",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "FALSE",
+              "explanation": "Đoạn 1 nêu rõ khu vực này có mùa khô khắc nghiệt kéo dài từ tháng 1 đến tháng 5, không có mưa: 'a prolonged dry season lasting from January to May, during which rain was virtually non-existent.'",
+              "answerLocation": "dry season lasting from January to May, during which rain was virtually non-existent"
+            },
+            {
+              "id": "q-r2-7",
+              "type": "true_false_not_given",
+              "instruction": "The chinampas farming method produced higher yields than slash-and-burn farming.",
+              "acceptedAnswers": [
+                [
+                  "true",
+                  "t"
+                ]
+              ],
+              "correctAnswer": "TRUE",
+              "explanation": "Đoạn 3 khẳng định phương pháp chinampas cho năng suất vượt xa phương pháp phát hoang đốt rẫy thông thường: 'allowed Maya cities to achieve crop yields that far exceeded conventional slash-and-burn practices.'",
+              "answerLocation": "allowed Maya cities to achieve crop yields that far exceeded conventional slash-and-burn practices"
+            },
+            {
+              "id": "q-r2-8",
+              "type": "true_false_not_given",
+              "instruction": "Tikal's Temple Reservoir was designed by a famous Maya architect named Jasaw Chan K'awiil.",
+              "acceptedAnswers": [
+                [
+                  "not given",
+                  "ng"
+                ]
+              ],
+              "correctAnswer": "NOT GIVEN",
+              "explanation": "Mặc dù bài đọc có nhắc đến Temple Reservoir ở Tikal, nhưng không có thông tin nào nói về kiến trúc sư thiết kế ra nó. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "In the city of Tikal, the monumental Temple Reservoir"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "sat_content_guard_v1",
+  "generatedAt": "2026-06-04T00:48:23.104Z",
+  "contentVersion": "sat-studio-public:public-manifest-gate-v1-2026-05-20:fnv1a32:3e9e5622",
+  "totalItems": 9305,
+  "uniqueIds": 9305,
+  "duplicateIds": 0,
+  "learningReadyItems": 9305,
+  "blockerItems": 0,
+  "warningItems": 0,
+  "adapter": {
+    "convertedItems": 9305,
+    "validationErrors": 0,
+    "pass": true
+  },
+  "bySection": {
+    "Reading and Writing": 3663,
+    "Math": 5642
+  },
+  "byDomain": {
+    "Information and Ideas": 1052,
+    "Algebra": 1850,
+    "Geometry and Trigonometry": 899,
+    "Craft and Structure": 913,
+    "Problem-Solving and Data Analysis": 963,
+    "Advanced Math": 1930,
+    "Standard English Conventions": 917,
+    "Expression of Ideas": 781
+  },
+  "byDifficulty": {
+    "easy": 2380,
+    "medium": 2532,
+    "hard": 4393
+  },
+  "byQuestionType": {
+    "multiple_choice": 7648,
+    "grid_in": 1274,
+    "student_produced_response": 383
+  },
+  "byPracticePool": {
+    "public_package": 5838,
+    "remedial_pool": 767,
+    "core_pool": 2700
+  },
+  "topIssues": {}
+}

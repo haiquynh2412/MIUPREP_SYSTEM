@@ -1,0 +1,117 @@
+{
+  "version": "sat-studio-p0-p4-governance-2026-05-24",
+  "basis": "active reviewed non-remedial core rows after P0 quality gate",
+  "generatedAt": "2026-05-25T00:09:48+00:00",
+  "domains": [
+    {
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "count": 1165,
+      "sectionTotal": 4169,
+      "actualPct": 27.9,
+      "satTargetPct": 26.0,
+      "deltaPctPoints": 1.9,
+      "action": "maintain",
+      "priority": "P3",
+      "recommendedAdditionalReviewedCore": 0
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "count": 1120,
+      "sectionTotal": 4169,
+      "actualPct": 26.9,
+      "satTargetPct": 28.0,
+      "deltaPctPoints": -1.1,
+      "action": "maintain",
+      "priority": "P3",
+      "recommendedAdditionalReviewedCore": 66
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Expression of Ideas",
+      "count": 787,
+      "sectionTotal": 4169,
+      "actualPct": 18.9,
+      "satTargetPct": 20.0,
+      "deltaPctPoints": -1.1,
+      "action": "maintain",
+      "priority": "P3",
+      "recommendedAdditionalReviewedCore": 59
+    },
+    {
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "count": 1097,
+      "sectionTotal": 4169,
+      "actualPct": 26.3,
+      "satTargetPct": 26.0,
+      "deltaPctPoints": 0.3,
+      "action": "maintain",
+      "priority": "P3",
+      "recommendedAdditionalReviewedCore": 0
+    },
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "count": 1548,
+      "sectionTotal": 4851,
+      "actualPct": 31.9,
+      "satTargetPct": 35.0,
+      "deltaPctPoints": -3.1,
+      "action": "expand",
+      "priority": "P1",
+      "recommendedAdditionalReviewedCore": 231
+    },
+    {
+      "section": "Math",
+      "domain": "Advanced Math",
+      "count": 1605,
+      "sectionTotal": 4851,
+      "actualPct": 33.1,
+      "satTargetPct": 35.0,
+      "deltaPctPoints": -1.9,
+      "action": "maintain",
+      "priority": "P3",
+      "recommendedAdditionalReviewedCore": 143
+    },
+    {
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "count": 989,
+      "sectionTotal": 4851,
+      "actualPct": 20.4,
+      "satTargetPct": 15.0,
+      "deltaPctPoints": 5.4,
+      "action": "deprioritize_surplus",
+      "priority": "P2",
+      "recommendedAdditionalReviewedCore": 0
+    },
+    {
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "count": 709,
+      "sectionTotal": 4851,
+      "actualPct": 14.6,
+      "satTargetPct": 15.0,
+      "deltaPctPoints": -0.4,
+      "action": "maintain",
+      "priority": "P3",
+      "recommendedAdditionalReviewedCore": 22
+    }
+  ],
+  "highestPriority": [
+    {
+      "section": "Math",
+      "domain": "Algebra",
+      "count": 1548,
+      "sectionTotal": 4851,
+      "actualPct": 31.9,
+      "satTargetPct": 35.0,
+      "deltaPctPoints": -3.1,
+      "action": "expand",
+      "priority": "P1",
+      "recommendedAdditionalReviewedCore": 231
+    }
+  ]
+}

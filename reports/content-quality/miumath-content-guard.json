@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "miumath_content_guard_v1",
+  "generatedAt": "2026-06-04T02:41:27.415Z",
+  "input": {
+    "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\apps\\miumath-app\\public\\data\\questions_db.json",
+    "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\ON THi\\miumath-app\\public\\data\\questions_db.json",
+    "currentQuestions": 485,
+    "sourceQuestions": 485
+  },
+  "stats": {
+    "exams": 20,
+    "categories": 11,
+    "subCategories": 28,
+    "difficulty": {
+      "easy": 107,
+      "medium": 225,
+      "hard": 153
+    },
+    "byCategory": {
+      "algebra-simplification": 58,
+      "equations-systems": 63,
+      "viet-applications": 48,
+      "word-problems": 56,
+      "plane-geometry": 101,
+      "spatial-geometry": 20,
+      "trigonometry-practice": 44,
+      "casio-hacks": 2,
+      "functions-graphs": 32,
+      "statistics": 22,
+      "probability": 39
+    },
+    "byProgram": {
+      "vn_math_9": 485,
+      "vn_math_vao_10": 485,
+      "vn_math_6_9": 485,
+      "vn_math_thcs": 485
+    },
+    "byGrade": {
+      "9": 485
+    },
+    "byTopic": {
+      "math.radicals_expression": 41,
+      "math.irrational_equation": 6,
+      "math.vieta": 48,
+      "math.word_problem_modeling": 56,
+      "math.circle_geometry": 39,
+      "math.solid_cylinder_cone_sphere": 20,
+      "math.trigonometry": 18,
+      "math.calculator_strategy": 2,
+      "math.coordinate_geometry": 21,
+      "math.inscribed_quadrilateral": 26,
+      "math.tangent_secant_geometry": 36,
+      "math.statistics": 10,
+      "math.statistics_grouped_data": 12,
+      "math.probability": 35,
+      "math.quadratic_equation": 14,
+      "math.linear_system_two_variables": 43,
+      "math.quadratic_function_graph": 9,
+      "math.advanced_inequality_extrema": 17,
+      "math.right_triangle_metric_relations": 26,
+      "math.experimental_probability": 4,
+      "math.linear_function": 2
+    },
+    "byLevel": {
+      "core": 195,
+      "advanced": 23,
+      "exam10": 121,
+      "application": 146
+    }
+  },
+  "comparison": {
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "changedByField": {}
+  },
+  "qualitySummary": {
+    "questions": 485,
+    "blockers": 0,
+    "warnings": 0,
+    "byCode": {}
+  },
+  "adapter": {
+    "convertedItems": 485,
+    "errors": [],
+    "pass": true
+  },
+  "issues": []
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@miuprep/beta",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node dist/index.test.js",
+    "export:beta-run": "npm run build -w @miuprep/content && npm run build && node dist/export-beta-run.js"
+  },
+  "dependencies": {
+    "@miuprep/content": "*",
+    "@miuprep/knowledge": "*",
+    "@miuprep/learning": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

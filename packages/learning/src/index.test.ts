@@ -1,0 +1,352 @@
+import {
+  buildDiagnosticSet,
+  buildErrorNotebookEntryFromAttempt,
+  buildLearningEvent,
+  buildLearningEventSyncAuditReport,
+  buildEmpiricalDifficultyShadowReport,
+  buildLearningPath,
+  computeMastery,
+  computeMasteryV2ShadowReport,
+  emptyStudentModel,
+  getDueErrorNotebookEntries,
+  inferMisconceptionIds,
+  listLearningEventsFromStorage,
+  makeAttempt,
+  mergeLearningEventLogs,
+  normalizeLearningEvents,
+  recommendNextAction,
+  recordLearningFeedback,
+  recordAttempt,
+  recordLearningItemAttempt,
+  scheduleErrorNotebookReview,
+  saveLearningEventToStorage,
+  saveLearningEventsToStorage,
+  sharedLearningEventStorageKey,
+  SHARED_LEARNING_EVENTS_LIST_KEY,
+  summarizeErrorNotebook,
+} from "./index";
+
+function assert(condition: unknown, message: string): void {
+  if (!condition) throw new Error(message);
+}
+
+let state = emptyStudentModel("learner-1", ["vn_math_6_9"]);
+assert(recommendNextAction(state).kind === "diagnostic", "Empty learner should start with diagnostic.");
+
+const baseAttempt = {
+  learnerId: "learner-1",
+  itemId: "q1",
+  domainId: "mathematics",
+  programId: "vn_math_6_9",
+  conceptIds: ["math.quadratic_equation"],
+  skillIds: ["math.solve_quadratic_by_factor"],
+  difficulty: "hard",
+  mode: "practice",
+  timeSpentSeconds: 90,
+};
+
+state = recordAttempt(state, { ...baseAttempt, itemId: "q1", correct: false, answeredAt: "2026-01-01T00:00:00.000Z" }).state;
+state = recordAttempt(state, { ...baseAttempt, itemId: "q2", correct: true, answeredAt: "2026-01-02T00:00:00.000Z" }).state;
+state = recordAttempt(state, { ...baseAttempt, itemId: "q3", correct: true, answeredAt: "2026-01-03T00:00:00.000Z" }).state;
+
+const mastery = computeMastery(state);
+assert(mastery.some((row) => row.id === "math.solve_quadratic_by_factor"), "Skill mastery row should be created.");
+assert(mastery.every((row) => row.attempts >= 3), "Concept and skill rows should aggregate all attempts.");
+
+const learningPath = buildLearningPath(
+  mastery,
+  [
+    { id: "math.factorization", domainId: "mathematics", scope: "concept", label: "Factorization" },
+    { id: "math.quadratic_equation", domainId: "mathematics", scope: "concept", label: "Quadratic Equation" },
+    { id: "math.vieta", domainId: "mathematics", scope: "concept", label: "Vieta Theorem" },
+    { id: "math.apply_vieta", domainId: "mathematics", scope: "skill", label: "Apply Vieta theorem" },
+  ],
+  [
+    { from: "math.factorization", to: "math.quadratic_equation", type: "prerequisite", weight: 0.9 },
+    { from: "math.quadratic_equation", to: "math.vieta", type: "prerequisite", weight: 0.8 },
+    { from: "math.vieta", to: "math.apply_vieta", type: "supports", weight: 0.8 },
+  ],
+  { domainId: "mathematics", targetIds: ["math.apply_vieta"], maxSteps: 4 },
+);
+assert(learningPath.steps.map((step) => step.id).join(">") === "math.factorization>math.quadratic_equation>math.vieta>math.apply_vieta", "Learning path should order prerequisites before the target skill.");
+assert(learningPath.steps.some((step) => step.id === "math.quadratic_equation" && step.status === "repair"), "Learning path should surface repair status from mastery.");
+assert(learningPath.nextStep?.id === "math.factorization", "Learning path should start at the first unresolved prerequisite.");
+
+const diagnostic = buildDiagnosticSet(
+  [
+    { id: "q1", domainId: "mathematics", programIds: ["vn_math_6_9"], conceptIds: ["math.quadratic_equation"], skillIds: ["math.solve_quadratic_by_factor"], difficulty: "medium" },
+    { id: "q4", domainId: "mathematics", programIds: ["vn_math_6_9"], conceptIds: ["math.linear_equation"], skillIds: ["math.solve_linear_equation"], difficulty: "medium" },
+  ],
+  state.attempts,
+  { limit: 2, programId: "vn_math_6_9" },
+);
+assert(diagnostic.length === 1 && diagnostic[0].id === "q4", "Diagnostic should prefer unattempted items.");
+
+const attempt = makeAttempt({ ...baseAttempt, itemId: "q5", correct: false });
+assert(attempt.id.startsWith("attempt-"), "makeAttempt should create stable attempt ids.");
+const inferredMathMisconceptions = inferMisconceptionIds({
+  domainId: "mathematics",
+  conceptIds: ["math.factorization"],
+  skillIds: ["math.solve_quadratic_by_factor"],
+  errorCategories: ["algebra_transform"],
+});
+assert(inferredMathMisconceptions.includes("mis.math.factor_vs_expand"), "Learning core should infer math misconception ids from error taxonomy and graph-like metadata.");
+
+let englishState = emptyStudentModel("english-learner-1", ["cpe"]);
+const englishItem = {
+  id: "english.cpe.sample.q1",
+  domainId: "english_core",
+  programIds: ["cpe"],
+  conceptIds: ["eng.grammar_accuracy"],
+  skillIds: ["eng.control_clause_structure"],
+  difficulty: "hard",
+  tags: ["cpe", "use_of_english"],
+};
+
+englishState = recordLearningItemAttempt(englishState, englishItem, {
+  correct: false,
+  mode: "diagnostic",
+  answeredAt: "2026-01-04T00:00:00.000Z",
+  errorCategories: ["grammar"],
+}).state;
+
+const englishMastery = computeMastery(englishState);
+assert(englishState.attempts[0].programId === "cpe", "Learning item attempt should infer target program.");
+assert(englishState.attempts[0].misconceptionIds?.includes("mis.eng.grammar_role_mismatch"), "Learning item attempt should infer English grammar misconception ids.");
+assert(englishMastery.some((row) => row.id === "eng.grammar_accuracy"), "English concept mastery should be computed from item attempts.");
+assert(englishMastery.some((row) => row.errorCategories.includes("grammar")), "English mastery should preserve error taxonomy.");
+assert(englishMastery.some((row) => row.misconceptionIds.includes("mis.eng.grammar_role_mismatch")), "English mastery should aggregate inferred misconceptions.");
+
+const feedbackOnlyResult = recordLearningFeedback(englishState, {
+  item: {
+    id: "english.ielts.writing.feedback.q1",
+    domainId: "english_core",
+    programIds: ["ielts"],
+    conceptIds: ["eng.academic_writing"],
+    skillIds: ["eng.develop_academic_argument"],
+    masteryPolicy: "feedback_only",
+    feedbackArea: "writing",
+  },
+  area: "writing",
+  feedback: "Coherence is improving; keep feedback out of mastery until rubric calibration is ready.",
+  rubricScores: { task_response: 6, coherence: 6 },
+  occurredAt: "2026-01-04T01:00:00.000Z",
+});
+assert(feedbackOnlyResult.state.attempts.length === englishState.attempts.length, "Feedback-only events should not create attempts.");
+assert(feedbackOnlyResult.event.payload.masteryPolicy === "feedback_only", "Feedback-only event should declare its mastery policy.");
+assert(!computeMastery(feedbackOnlyResult.state).some((row) => row.id === "eng.academic_writing"), "Feedback-only events should not create writing mastery rows.");
+
+const masteryV2Shadow = computeMasteryV2ShadowReport(feedbackOnlyResult.state, {
+  generatedAt: "2026-01-10T00:00:00.000Z",
+  now: "2026-01-10T00:00:00.000Z",
+});
+assert(masteryV2Shadow.schemaVersion === "mastery_v2_shadow_v1", "Mastery V2 shadow report should be versioned.");
+assert(masteryV2Shadow.studentFacingEnabled === false, "Mastery V2 shadow report should not enable student-facing behavior.");
+assert(masteryV2Shadow.recommendationPolicy === "v1_only", "Mastery V2 shadow report should preserve V1 recommendation policy.");
+assert(masteryV2Shadow.summary.protectedFeedbackOnlyEvents === 1, "Mastery V2 shadow should count protected feedback-only events.");
+assert(!masteryV2Shadow.rows.some((row) => row.id === "eng.academic_writing"), "Mastery V2 shadow should not convert feedback-only writing into mastery rows.");
+assert(masteryV2Shadow.rows.some((row) => row.id === "eng.grammar_accuracy" && row.weakestEvidence.length > 0), "Mastery V2 shadow rows should expose explainability evidence.");
+
+const wrongEnglishAttempt = englishState.attempts[0];
+const notebookEntry = buildErrorNotebookEntryFromAttempt(wrongEnglishAttempt, {
+  questionType: "gap_fill",
+  userAnswer: "has been",
+  correctAnswer: "had been",
+  explanation: "Past perfect is required by the time marker.",
+});
+assert(notebookEntry !== null, "Wrong attempts should create an error notebook entry.");
+assert(notebookEntry?.schemaVersion === "error_notebook_v1", "Error notebook entries should be versioned.");
+assert(notebookEntry?.difficulty === "hard", "Error notebook entry should preserve attempt difficulty for SRS tuning.");
+assert(Boolean(notebookEntry?.srsReason), "Error notebook entry should expose an SRS reason.");
+assert(notebookEntry?.errorCategories?.includes("grammar"), "Error notebook entry should preserve error categories.");
+assert(notebookEntry?.misconceptionIds?.includes("mis.eng.grammar_role_mismatch"), "Error notebook entry should preserve inferred misconception ids.");
+assert(notebookEntry?.skillIds?.includes("eng.control_clause_structure"), "Error notebook entry should preserve skill metadata.");
+
+const correctAttempt = makeAttempt({ ...baseAttempt, itemId: "q6", correct: true, answeredAt: "2026-01-05T00:00:00.000Z" });
+assert(buildErrorNotebookEntryFromAttempt(correctAttempt) === null, "Correct attempts should not create error notebook entries.");
+
+const reviewedOnce = scheduleErrorNotebookReview(notebookEntry!, 4, "2026-01-05T00:00:00.000Z");
+assert(reviewedOnce.repetitions === 1, "Successful review should increment repetitions.");
+assert(reviewedOnce.intervalDays === 1, "First successful review should use a 1-day interval.");
+assert(reviewedOnce.nextReviewAt === "2026-01-06T00:00:00.000Z", "SRS next review date should be deterministic.");
+assert(reviewedOnce.srsReason?.includes("difficulty hard"), "Successful review should explain difficulty-aware SRS tuning.");
+
+const reviewedFailed = scheduleErrorNotebookReview(reviewedOnce, 2, "2026-01-06T00:00:00.000Z");
+assert(reviewedFailed.repetitions === 0, "Failed review should reset repetitions.");
+assert(reviewedFailed.intervalDays === 1, "Failed review should return to a 1-day interval.");
+assert(reviewedFailed.lapseCount === 1, "Failed review should increment lapse count.");
+assert(reviewedFailed.srsReason?.includes("lapse count 0 -> 1"), "Failed review should explain recurrence/lapse tuning.");
+
+const easyRetained = scheduleErrorNotebookReview(
+  { ...notebookEntry!, difficulty: "easy", repetitions: 2, intervalDays: 6, lapseCount: 0 },
+  5,
+  "2026-01-08T00:00:00.000Z",
+);
+const hardLapsedRetained = scheduleErrorNotebookReview(
+  { ...notebookEntry!, difficulty: "hard", repetitions: 2, intervalDays: 6, lapseCount: 2 },
+  5,
+  "2026-01-08T00:00:00.000Z",
+);
+assert(easyRetained.intervalDays > hardLapsedRetained.intervalDays, "SRS tuning should shorten hard/recurrent items relative to easy retained items.");
+assert(hardLapsedRetained.srsReason?.includes("lapse count 2"), "SRS reason should expose recurrence pressure.");
+
+const calibrationAttempts = [
+  ...Array.from({ length: 5 }, (_, index) => makeAttempt({
+    learnerId: index < 3 ? "cal-high" : "cal-low",
+    itemId: "cal-hard-overstated",
+    domainId: "mathematics",
+    programId: "vn_math_6_9",
+    conceptIds: ["math.linear_equation"],
+    skillIds: ["math.solve_linear_equation"],
+    correct: true,
+    difficulty: "hard",
+    mode: "practice",
+    answeredAt: `2026-01-0${index + 1}T00:00:00.000Z`,
+    timeSpentSeconds: 40 + index,
+  })),
+  makeAttempt({
+    learnerId: "cal-low",
+    itemId: "cal-sparse",
+    domainId: "english_core",
+    programId: "ielts",
+    conceptIds: ["eng.reading_inference"],
+    skillIds: ["eng.infer_implicit_meaning"],
+    correct: false,
+    difficulty: "medium",
+    mode: "practice",
+    answeredAt: "2026-01-06T00:00:00.000Z",
+    timeSpentSeconds: 120,
+  }),
+];
+const empiricalDifficulty = buildEmpiricalDifficultyShadowReport(calibrationAttempts, {
+  generatedAt: "2026-01-10T00:00:00.000Z",
+  minAttemptsPerItem: 5,
+});
+const overstatedRow = empiricalDifficulty.rows.find((row) => row.itemId === "cal-hard-overstated");
+const sparseRow = empiricalDifficulty.rows.find((row) => row.itemId === "cal-sparse");
+assert(empiricalDifficulty.schemaVersion === "empirical_difficulty_shadow_v1", "Empirical difficulty shadow report should be versioned.");
+assert(empiricalDifficulty.calibrationPolicy === "shadow_only_prior_preserved", "Empirical difficulty should preserve teacher-authored priors.");
+assert(empiricalDifficulty.highStakesPlacementEnabled === false, "Empirical difficulty should not enable high-stakes placement.");
+assert(overstatedRow?.priorDifficulty === "hard", "Empirical row should preserve prior difficulty.");
+assert(overstatedRow?.empiricalDifficulty === "easy", "Empirical row should expose drift candidates.");
+assert(overstatedRow?.applied === false, "Empirical row should never apply calibration automatically.");
+assert(typeof overstatedRow?.eloDelta === "number", "Empirical row should expose lightweight Elo only as a secondary signal.");
+assert(sparseRow?.sparse === true, "Sparse item should be marked sparse.");
+assert(sparseRow?.empiricalDifficulty === sparseRow?.priorDifficulty, "Sparse item should keep prior difficulty.");
+
+const dueEntries = getDueErrorNotebookEntries([reviewedFailed], "2026-01-07T00:00:00.000Z");
+assert(dueEntries.length === 1, "Due selector should return entries ready for review.");
+
+const notebookSummary = summarizeErrorNotebook([reviewedFailed], "2026-01-07T00:00:00.000Z");
+assert(notebookSummary.total === 1 && notebookSummary.due === 1, "Notebook summary should count due entries.");
+assert(notebookSummary.byErrorCategory.grammar === 1, "Notebook summary should group by error category.");
+
+class MemoryLearningEventStorage {
+  data = new Map<string, string>();
+
+  getItem(key: string): string | null {
+    return this.data.get(key) ?? null;
+  }
+
+  setItem(key: string, value: string): void {
+    this.data.set(key, value);
+  }
+}
+
+const sharedStorage = new MemoryLearningEventStorage();
+const sharedEventA = buildLearningEvent(
+  "practice_attempt",
+  { itemId: "storage-q1", domainId: "mathematics", programId: "vn_math_6_9" },
+  {
+    learnerId: "storage-learner-1",
+    entityType: "learning_item",
+    entityId: "storage-q1",
+    occurredAt: "2026-01-08T00:00:00.000Z",
+    source: "unit_test",
+  },
+);
+const sharedEventB = buildLearningEvent(
+  "review_attempt",
+  { itemId: "storage-q2", domainId: "english_core", programId: "cpe" },
+  {
+    learnerId: "storage-learner-2",
+    entityType: "learning_item",
+    entityId: "storage-q2",
+    occurredAt: "2026-01-09T00:00:00.000Z",
+    source: "unit_test",
+  },
+);
+assert(sharedEventA.eventId === sharedEventA.id, "Learning event should expose eventId for sync logs.");
+assert(sharedEventA.idempotencyKey === sharedEventA.id, "Learning event should expose idempotencyKey for dedupe.");
+assert(Boolean(sharedEventA.receivedAt), "Learning event should capture receivedAt metadata.");
+assert(Boolean(sharedEventA.payloadHash), "Learning event should capture a stable payload hash.");
+
+const normalizedLegacyEvent = normalizeLearningEvents([
+  {
+    id: "legacy-event-1",
+    type: "practice_attempt",
+    learnerId: "legacy-learner",
+    entityType: "learning_item",
+    entityId: "legacy-q1",
+    occurredAt: "2026-01-07T00:00:00.000Z",
+    source: "legacy_import",
+    payload: { itemId: "legacy-q1", correct: true },
+  },
+])[0];
+assert(normalizedLegacyEvent.eventId === "legacy-event-1", "Legacy events should backfill eventId during normalization.");
+assert(Boolean(normalizedLegacyEvent.idempotencyKey), "Legacy events should backfill idempotencyKey during normalization.");
+assert(Boolean(normalizedLegacyEvent.payloadHash), "Legacy events should backfill payloadHash during normalization.");
+assert(normalizedLegacyEvent.receivedAt === normalizedLegacyEvent.occurredAt, "Legacy events should default receivedAt from occurredAt.");
+
+const savedSharedEvents = saveLearningEventsToStorage([sharedEventB, sharedEventA, { ...sharedEventA }], sharedStorage);
+assert(savedSharedEvents.length === 2, "Shared storage should normalize and dedupe saved events.");
+assert(JSON.stringify(JSON.parse(sharedStorage.getItem(SHARED_LEARNING_EVENTS_LIST_KEY) || "[]")) === JSON.stringify([sharedEventA.id, sharedEventB.id]), "Shared storage list should preserve chronological normalized ids.");
+assert(JSON.parse(sharedStorage.getItem(sharedLearningEventStorageKey(sharedEventA.id)) || "{}").learnerId === "storage-learner-1", "Shared storage should save event payload by stable event key.");
+
+const savedSingleEvent = saveLearningEventToStorage(sharedEventB, sharedStorage);
+assert(savedSingleEvent?.id === sharedEventB.id, "Single shared storage save should return the normalized event.");
+assert(JSON.stringify(listLearningEventsFromStorage(sharedStorage).map((event) => event.id)) === JSON.stringify([sharedEventB.id, sharedEventA.id]), "Shared storage listing should default to newest first.");
+assert(JSON.stringify(listLearningEventsFromStorage(sharedStorage, { learnerId: "storage-learner-1", newestFirst: false }).map((event) => event.id)) === JSON.stringify([sharedEventA.id]), "Shared storage listing should filter by learner.");
+assert(listLearningEventsFromStorage(sharedStorage, { limit: 1 }).length === 1, "Shared storage listing should support limits.");
+
+const mergedSharedEvents = mergeLearningEventLogs([sharedEventA], [{ ...sharedEventA }, sharedEventB]);
+assert(mergedSharedEvents.added === 1, "Event merge should add distinct incoming events.");
+assert(mergedSharedEvents.duplicates === 1, "Event merge should count duplicate idempotency keys.");
+assert(mergedSharedEvents.conflicts.length === 0, "Event merge should not flag exact duplicates as conflicts.");
+assert(mergedSharedEvents.events.length === 2, "Event merge should keep current plus distinct incoming events.");
+
+const conflictingSharedEvent = buildLearningEvent(
+  "practice_attempt",
+  { itemId: "storage-q1", domainId: "mathematics", programId: "vn_math_6_9", correctedPayload: true },
+  {
+    id: sharedEventA.id,
+    eventId: sharedEventA.eventId,
+    learnerId: "storage-learner-1",
+    entityType: "learning_item",
+    entityId: "storage-q1",
+    occurredAt: "2026-01-08T00:00:00.000Z",
+    source: "unit_test",
+  },
+);
+const conflictedMerge = mergeLearningEventLogs([sharedEventA], [conflictingSharedEvent]);
+assert(conflictedMerge.added === 0, "Event merge should not silently add same event id with different payload.");
+assert(conflictedMerge.conflicts.some((conflict) => conflict.reason === "same_event_id_different_payload"), "Event merge should flag same-id payload conflicts.");
+
+const duplicateSyncAudit = buildLearningEventSyncAuditReport([sharedEventA, { ...sharedEventA }], {
+  generatedAt: "2026-01-10T00:00:00.000Z",
+});
+assert(duplicateSyncAudit.schemaVersion === "learning_event_sync_audit_v1", "Sync audit report should be versioned.");
+assert(duplicateSyncAudit.status === "watch", "Sync audit should watch duplicate idempotency keys without conflicts.");
+assert(duplicateSyncAudit.duplicateIdempotencyKeys === 1, "Sync audit should count duplicate idempotency keys.");
+
+const blockedSyncAudit = buildLearningEventSyncAuditReport(
+  [{ ...sharedEventA, learnerId: "", entityId: "", occurredAt: "not-a-date" }],
+  {
+    generatedAt: "2026-01-10T00:01:00.000Z",
+    conflicts: conflictedMerge.conflicts,
+  },
+);
+assert(blockedSyncAudit.status === "blocked", "Sync audit should block conflicts and invalid event metadata.");
+assert(blockedSyncAudit.conflicts.length === 1, "Sync audit should surface merge conflicts.");
+assert(blockedSyncAudit.missingLearnerIds === 1, "Sync audit should count missing learner IDs.");
+assert(blockedSyncAudit.invalidTimestamps === 1, "Sync audit should count invalid timestamps.");

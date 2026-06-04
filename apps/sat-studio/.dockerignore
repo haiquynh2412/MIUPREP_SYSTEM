@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+data/*.sqlite3
+data/public-backups/
+data/*.pdf
+data/**/*.pdf
+data/*.zip
+data/**/*.zip
+artifacts/
+node_modules/

@@ -1,0 +1,35 @@
+{
+  "version": "sat-king-strict-1600-review-2026-05-18",
+  "target": "SAT 1000-1600 roadmap, target 1600",
+  "sourceUsagePolicy": "Source labels are retained for provenance and audit only. Reviewed rows are eligible for one unified mixed SAT practice pool.",
+  "total": 360,
+  "reviewed": 354,
+  "needsReview": 0,
+  "rejectedPreserved": 6,
+  "keptNeedsReview": [],
+  "answerChoiceDistribution": {
+    "totalMc": 309,
+    "byChoice": {
+      "A": {
+        "count": 78,
+        "pct": 25.2
+      },
+      "B": {
+        "count": 77,
+        "pct": 24.9
+      },
+      "C": {
+        "count": 77,
+        "pct": 24.9
+      },
+      "D": {
+        "count": 77,
+        "pct": 24.9
+      }
+    }
+  },
+  "fixedMathVerifierWarnings": {
+    "final_equals_value_is_intermediate": 12
+  },
+  "rejectedExplanationsEnriched": 6
+}

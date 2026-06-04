@@ -1,0 +1,1400 @@
+{
+  "id": "camcp2-test4",
+  "title": "CPE C2 Proficiency Reading & Use of English - Test 4 (Cambridge CPE 2)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Cambridge Certificate of Proficiency in English 2, Cambridge University Press",
+  "sections": [
+    {
+      "id": "camcp2-t4-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Surviving in a Foreign Land</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>I have been welcomed warmly. It’s a sociable and well-provisioned base camp in a very, very isolated place. At any one time, there are some forty odd souls — scientists, students, weathermen, satellite trackers — in a (1) ______ community where everyone mucks (2) ______ . My school French is proving adequate — just — to (3) ______ , but not to chat or banter. I miss the nuances, and my phrasebook is useless at breakfast. There is no practical problem for me in this, but initially there was a problem of self-confidence. I found myself slightly dreading mealtimes. I would (4) ______ , worried about which table to choose, terrified at the silence which (5) ______ when I spoke, anxious in a way I cannot remember since the first weeks of school. I still grin inanely, or panic when people talk to me. I suspect the cause of this occasional depression is nothing to do with loss of company or communication; it’s because I’ve lost the social predominance which my own gift of the gab has always (6) ______ me.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Elliot</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>When I first met Elliot, I was just a young author like any other and he took no notice of me. He never forgot a face though, and when I met him here or there he shook hands with me cordially, but showed no desire to (7) ______ our acquaintance; and if I saw him at the opera, say, he being with a person of high rank, he was (8) ______ not to catch sight of me.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp2-t4-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-camcp2-t4-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. close-knit",
+                "B. close-fitting",
+                "C. close-run",
+                "D. close-cropped"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức từ Cambridge: A.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: A - \"close-knit\". Giải thích biên soạn/đề xuất: đặt đáp án A vào gap 1 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \"ry, very isolated place. At any one time, there are some forty odd souls - _____, students, weathermen, satellite trackers - in a (1) _____ where everyone mucks (2) _____ My school French is proving adequate - just - to (3) _____, but not to chat or banter. I mis\" Phân tích phương án sai: B: sai vì \"close-fitting\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"close-run\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"close-cropped\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu.",
+              "answerLocation": "base camp... in a close-knit community",
+              "category": "cpe_part_1",
+              "source": "Page 52, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. about",
+                "B. around",
+                "C. in",
+                "D. up"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức từ Cambridge: C.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: C - \"in\". Giải thích biên soạn/đề xuất: đặt đáp án C vào gap 2 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \"one time, there are some forty odd souls - _____, students, weathermen, satellite trackers - in a (1) _____ where everyone mucks (2) _____ My school French is proving adequate - just - to (3) _____, but not to chat or banter. I miss the nuances, and my phraseboo\" Phân tích phương án sai: A: sai vì \"about\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"around\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"up\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu.",
+              "answerLocation": "community where everyone mucks in",
+              "category": "cpe_part_1",
+              "source": "Page 52, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. articulate",
+                "B. communicate",
+                "C. converse",
+                "D. interpret"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"communicate\". Giải thích biên soạn/đề xuất: đặt đáp án B vào gap 3 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \", weathermen, satellite trackers - in a (1) _____ where everyone mucks (2) _____ My school French is proving adequate - just - to (3) _____, but not to chat or banter. I miss the nuances, and my phrasebook is useless at breakfast. There is no practical problem fo\" Phân tích phương án sai: A: sai vì \"articulate\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"converse\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"interpret\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu.",
+              "answerLocation": "French is proving adequate... to communicate",
+              "category": "cpe_part_1",
+              "source": "Page 52, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. bend back",
+                "B. turn back",
+                "C. lean back",
+                "D. hang back"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức từ Cambridge: D.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: D - \"hang back\". Giải thích biên soạn/đề xuất: đặt đáp án D vào gap 4 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \"l problem for me in this, but initially there was a problem of self-confidence. found myself slightly dreading mealtimes. I would (4) _____, worried about which table to choose, terrified at the silence which (8) _____ I spoke, anxious in a way I cannot remember\" Phân tích phương án sai: A: sai vì \"bend back\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"turn back\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"lean back\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu.",
+              "answerLocation": "I would hang back , worried about",
+              "category": "cpe_part_1",
+              "source": "Page 52, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. dropped",
+                "B. fell",
+                "C. hit",
+                "D. struck"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"fell\". Giải thích biên soạn/đề xuất: đặt đáp án B vào gap 5 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \"pped 2 A about B_ around c in D up 3 A. _____ B_ _____ C converse D_ interpret 4 A_ bend back B_ tum back C lean back D hang back 5 A dropped B fell C hit D_ struck 6 A afforded B empowered C entitled D presented Elliot When I first met Elliot, I was just a you\" Phân tích phương án sai: A: sai vì \"dropped\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"hit\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"struck\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu.",
+              "answerLocation": "terrified at the silence which fell when",
+              "category": "cpe_part_1",
+              "source": "Page 52, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. afforded",
+                "B. empowered",
+                "C. entitled",
+                "D. presented"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức từ Cambridge: A.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: A - \"afforded\". Giải thích biên soạn/đề xuất: đặt đáp án A vào gap 6 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \"thing to do with loss of company or _____; it's because I've lost the social predominance which my own gift of the gab has always (6) _____ 1 A. close-knit B close-fiting C close-run D_ close-cropped 2 A about B_ around c in D up 3 A. _____ B_ _____ C converse D_\" Phân tích phương án sai: B: sai vì \"empowered\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"entitled\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"presented\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu.",
+              "answerLocation": "gab has always afforded me",
+              "category": "cpe_part_1",
+              "source": "Page 52, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. met",
+                "B. saw",
+                "C. ran into",
+                "D. encountered"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức từ Cambridge: A.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: A - \"ran across\". Giải thích biên soạn/đề xuất: đặt đáp án A vào gap 7 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \"first met Elliot, I was just a young author like any other and he took no notice of me. He never forgot a face though, and when I (7) _____ here or there he shook hands with me cordially, [Book page 85] Paper 1 Reading but showed no desire to (8) _____ acquainta\" Phân tích phương án sai: B: sai vì \"fell in with\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"saw through\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"took up with\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu.",
+              "answerLocation": "and when I met him here or there",
+              "category": "cpe_part_1",
+              "source": "Page 84, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. broaden",
+                "B. widen",
+                "C. extend",
+                "D. expand"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức từ Cambridge: C.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: C - \"further\". Giải thích biên soạn/đề xuất: đặt đáp án C vào gap 8 rồi đọc cả cụm trước-sau chỗ trống. Dạng này kiểm tra collocation, idiom, sắc thái nghĩa và ngữ pháp trong câu; đáp án đúng phải tạo cụm tự nhiên, không chỉ dịch nghĩa từng từ. Ngữ cảnh cần đối chiếu: \"found myself slightly dreading mealtimes. I would (4) _____, worried about which table to choose, terrified at the silence which (8) _____ I spoke, anxious in a way I cannot remember since the first weeks of school. I still grin inanely, or panic when people tal\" Phân tích phương án sai: A: sai vì \"accelerate\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"advance\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"promote\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: các lựa chọn thường cùng từ loại hoặc gần nghĩa. Không chọn vì thấy nghĩa tiếng Việt có vẻ hợp; phải thử cả cụm cố định/collocation trong câu. Correct option focus: C - extend. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "desire to extend our acquaintance",
+              "category": "cpe_part_1",
+              "source": "Page 84, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp2-t4-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 9-16, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>History of Music</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Lovers of music who are a little rusty (0) <b>when</b> it comes to history shouldn't miss forthcoming issues of this magazine. In our most ambitious series of articles (9) ______ date, we aim to span the history of western music in (10) ______ entirety. Obviously, (11) ______ the lack of space at our disposal, we cannot be totally comprehensive (12) ______ we do feel we have a (13) ______ than adequate overview of the socio-cultural context. If you’re already feeling put (14) ______ by the prospect of a rather dry history lesson, then I must stress how unlike a lesson these articles will be. (15) ______ the extent to which you might be familiar (16) ______ the historical background, you must read these articles for the insight they give into the music itself.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp2-t4-rg-2",
+          "instruction": "Write the correct word in each gap in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-camcp2-t4-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "to",
+                  "TO"
+                ]
+              ],
+              "correctAnswer": "to",
+              "explanation": "Đáp án chính thức từ Cambridge: TO.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: TO. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: TO. Đây là điểm ngữ pháp/collocation về giới từ hoặc cụm cố định. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"(0) _____ Wwhen. it comes to history shouldn’t miss forthcoming issues of this magazine. In our most ambitious series of articles (1) _____ we aim to span the history of western music in (2) _____ Obviously, (8) _____ lack of space at our disposal, we cannot be t\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "series of articles to date",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "its",
+                  "ITS"
+                ]
+              ],
+              "correctAnswer": "its",
+              "explanation": "Đáp án chính thức từ Cambridge: ITS.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: ITS. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: ITS. Đây là điểm về đại từ, dummy subject hoặc từ quy chiếu trong mệnh đề. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"coming issues of this magazine. In our most ambitious series of articles (1) _____ we aim to span the history of western music in (2) _____ Obviously, (8) _____ lack of space at our disposal, we cannot be totally comprehensive (4) _____ do feel we have a (5) ____\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "western music in its entirety",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "blankIndex": 11,
+              "acceptedAnswers": [
+                [
+                  "giving",
+                  "GIVING"
+                ],
+                [
+                  "considering",
+                  "CONSIDERING"
+                ],
+                [
+                  "GIVING/CONSIDERING",
+                  "giving/considering"
+                ]
+              ],
+              "correctAnswer": "GIVING/CONSIDERING",
+              "explanation": "Đáp án chính thức từ Cambridge: GIVING/CONSIDERING.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: GIVING/CONSIDERING. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Các biến thể được chấp nhận: GIVING/CONSIDERING. Đây là điểm về cụm từ cố định hoặc từ chức năng trong ngữ cảnh. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"ortunities for exploring interesting places, meeting different people, and experiencing a different lifestyle. Write your review. 3 The Minister of Education is inviting people to send in proposals on various ways of improving education in their country. You de\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "Obviously, giving the lack of space at",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "blankIndex": 12,
+              "acceptedAnswers": [
+                [
+                  "but",
+                  "BUT"
+                ],
+                [
+                  "yet",
+                  "YET"
+                ],
+                [
+                  "although",
+                  "ALTHOUGH"
+                ],
+                [
+                  "though",
+                  "THOUGH"
+                ],
+                [
+                  "BUT/YET/(AL)THOUGH",
+                  "but/yet/(al)though"
+                ]
+              ],
+              "correctAnswer": "BUT/YET/(AL)THOUGH",
+              "explanation": "Đáp án chính thức từ Cambridge: BUT/YET/(AL)THOUGH.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: BUT/YET/(AL)THOUGH. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Các biến thể được chấp nhận: BUT/YET/(AL)THOUGH. Đây là điểm về liên từ/từ nối, cần nhìn quan hệ logic trước-sau chỗ trống. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"the history of western music in (2) _____ Obviously, (8) _____ lack of space at our disposal, we cannot be totally comprehensive (4) _____ do feel we have a (5) _____ adequate overview of the socio-cultural context. If you're already feeling (6) _____ by the pro\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "cannot be totally comprehensive but we do feel",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "blankIndex": 13,
+              "acceptedAnswers": [
+                [
+                  "more",
+                  "MORE"
+                ]
+              ],
+              "correctAnswer": "more",
+              "explanation": "Đáp án chính thức từ Cambridge: MORE.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: MORE. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: MORE. Đây là điểm về lượng từ/phủ định, phải khớp với sắc thái toàn câu. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"c in (2) _____ Obviously, (8) _____ lack of space at our disposal, we cannot be totally comprehensive (4) _____ do feel we have a (5) _____ adequate overview of the socio-cultural context. If you're already feeling (6) _____ by the prospect of a rather dry histor\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "feel we have a more than adequate overview",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "blankIndex": 14,
+              "acceptedAnswers": [
+                [
+                  "off",
+                  "OFF"
+                ],
+                [
+                  "PUT",
+                  "put"
+                ]
+              ],
+              "correctAnswer": "PUT",
+              "explanation": "Đáp án chính thức từ Cambridge: PUT.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: PUT. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: PUT. Đây là điểm về cụm từ cố định hoặc từ chức năng trong ngữ cảnh. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"ly comprehensive (4) _____ do feel we have a (5) _____ adequate overview of the socio-cultural context. If you're already feeling (6) _____ by the prospect of a rather dry history lesson, then I must stress how unlike a lesson these articles will be. (7) _____ hi\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "already feeling put off by the prospect",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "blankIndex": 15,
+              "acceptedAnswers": [
+                [
+                  "Despite",
+                  "DESPITE"
+                ],
+                [
+                  "Notwithstanding",
+                  "NOTWITHSTANDING"
+                ]
+              ],
+              "correctAnswer": "Despite",
+              "explanation": "Đáp án chính thức từ Cambridge: DESPITE.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: DESPITE. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: DESPITE. Đây là điểm ngữ pháp/collocation về giới từ hoặc cụm cố định. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"feeling (6) _____ by the prospect of a rather dry history lesson, then I must stress how unlike a lesson these articles will be. (7) _____ historical background, you must read these articles for the insight they give (9) _____ _____ extent to which you might be\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "Despite the extent to which you might",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16):",
+              "blankIndex": 16,
+              "acceptedAnswers": [
+                [
+                  "with",
+                  "WITH"
+                ]
+              ],
+              "correctAnswer": "with",
+              "explanation": "Đáp án chính thức từ Cambridge: WITH.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: WITH. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: WITH. Đây là điểm ngữ pháp/collocation về giới từ hoặc cụm cố định. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"magazine. In our most ambitious series of articles (1) _____ we aim to span the history of western music in (2) _____ Obviously, (8) _____ lack of space at our disposal, we cannot be totally comprehensive (4) _____ do feel we have a (5) _____ adequate overview o\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "you might be familiar with the historical background",
+              "category": "cpe_part_2",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp2-t4-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Image of Science</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The image that we have of science has (0) <b>undergone</b> [GO] radical change in the last hundred years. An enormous (17) ______ [TECHNOLOGY] explosion, together with a number of very real (18) ______ [ANXIOUS] about the environment and all the moral and political ramifications of economic growth have (19) ______ [QUESTION] put science at the centre of public debate. The twentieth century began with a challenge to the (20) ______ [ASSUME] that human knowledge was approaching completion. It will come, perhaps, as something of a surprise to all of us to realise that the emergence of this highly (21) ______ [DESTROY] process came both from within and outside science. New scientific theories (22) ______ [OVERWHELM] reveal the limitations of the old perspective. We had thought that the world, understood through the medium of rational (23) ______ [BE], was, indeed, the real world. Now we know that this was no more than a simplification that just happened to work. We can re-evaluate all knowledge pessimistically and decide that it is eternally fragmentary and full of a vast number of (24) ______ [PERFECTION].</p>",
+      "questionGroups": [
+        {
+          "id": "camcp2-t4-rg-3",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-camcp2-t4-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17):",
+              "blankIndex": 17,
+              "acceptedAnswers": [
+                [
+                  "technological",
+                  "TECHNOLOGICAL"
+                ],
+                [
+                  "INTO",
+                  "into"
+                ]
+              ],
+              "correctAnswer": "INTO",
+              "explanation": "Đáp án chính thức từ Cambridge: INTO.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: INTO. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: INTO. Đây là điểm ngữ pháp/collocation về giới từ hoặc cụm cố định. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"w unlike a lesson these articles will be. (7) _____ historical background, you must read these articles for the insight they give (9) _____ _____ extent to which you might be familiar (8) _____ _____ music itself. In (10) music _____. Now (11) _____ strike you (4\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "enormous technological explosion, together with",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18):",
+              "blankIndex": 18,
+              "acceptedAnswers": [
+                [
+                  "anxieties",
+                  "ANXIETIES"
+                ],
+                [
+                  "ADDITION",
+                  "addition"
+                ]
+              ],
+              "correctAnswer": "ADDITION",
+              "explanation": "Đáp án chính thức từ Cambridge: ADDITION.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: ADDITION. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: ADDITION. Đây là điểm về cụm từ cố định hoặc từ chức năng trong ngữ cảnh. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"d these articles for the insight they give (9) _____ _____ extent to which you might be familiar (8) _____ _____ music itself. In (10) music _____. Now (11) _____ strike you (42) _____ this, the series will represent a guide for readers whose aim is to build an es\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "number of very real anxieties about the",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19):",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "unquestionably",
+                  "UNQUESTIONABLY"
+                ],
+                [
+                  "SHOULD",
+                  "should"
+                ]
+              ],
+              "correctAnswer": "SHOULD",
+              "explanation": "Đáp án chính thức từ Cambridge: SHOULD.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: SHOULD. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: SHOULD. Đây là điểm về trợ động từ/modal để giữ đúng sắc thái giả định/khả năng/nghĩa câu. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"he insight they give (9) _____ _____ extent to which you might be familiar (8) _____ _____ music itself. In (10) music _____. Now (11) _____ strike you (42) _____ this, the series will represent a guide for readers whose aim is to build an essential yet another vo\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "economic growth have unquestionably put science",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20):",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "assumption",
+                  "ASSUMPTION"
+                ],
+                [
+                  "AS",
+                  "as"
+                ]
+              ],
+              "correctAnswer": "AS",
+              "explanation": "Đáp án chính thức từ Cambridge: AS.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: AS. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: AS. Đây là điểm ngữ pháp/collocation về giới từ hoặc cụm cố định. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"[Book page 96] Test 4 Part 2 Write an answer to one of the questions 2-5 in this part. Write your answer in 300-350 words in an appropriate style. 2 You have recently returned from an adventure holiday with a group of students from your class, and you have bee\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "challenge to the assumption that human",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21):",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "destructive",
+                  "DESTRUCTIVE"
+                ],
+                [
+                  "NOT",
+                  "not"
+                ]
+              ],
+              "correctAnswer": "NOT",
+              "explanation": "Đáp án chính thức từ Cambridge: NOT.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: NOT. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: NOT. Đây là điểm về lượng từ/phủ định, phải khớp với sắc thái toàn câu. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"l yet another voyage through familiar territory, then you may be in for some surprises, because our expert writers are nothing if (13) unpredictable. In view of the reputation of those involved, (14) _____ is guaranteed - the music chosen to _____ their histories\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "emergence of this highly destructive process",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22):",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "overwhelmingly",
+                  "OVERWHELMINGLY"
+                ],
+                [
+                  "ONE",
+                  "one"
+                ]
+              ],
+              "correctAnswer": "ONE",
+              "explanation": "Đáp án chính thức từ Cambridge: ONE.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: ONE. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: ONE. Đây là điểm về đại từ, dummy subject hoặc từ quy chiếu trong mệnh đề. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"in for some surprises, because our expert writers are nothing if (13) unpredictable. In view of the reputation of those involved, (14) _____ is guaranteed - the music chosen to _____ their histories will be (15) _____ run-of-the-mill. [Book page 99] Paper 3 Use o\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "scientific theories overwhelmingly reveal the",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23):",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "beings",
+                  "BEINGS"
+                ],
+                [
+                  "being",
+                  "BEING"
+                ],
+                [
+                  "FAR",
+                  "far"
+                ]
+              ],
+              "correctAnswer": "FAR",
+              "explanation": "Đáp án chính thức từ Cambridge: FAR.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: FAR. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Đáp án cần ghi: FAR. Đây là điểm về lượng từ/phủ định, phải khớp với sắc thái toàn câu. Hãy đặt đáp án vào chỗ trống và đọc lại cả mệnh đề để kiểm tra chức năng ngữ pháp và quan hệ logic. Ngữ cảnh cần đối chiếu: \"ctable. In view of the reputation of those involved, (14) _____ is guaranteed - the music chosen to _____ their histories will be (15) _____ run-of-the-mill. [Book page 99] Paper 3 Use of English Part 2 For questions 16-25, read the text below. Use the word given\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: điền từ có nghĩa từ vựng nhưng sai chức năng ngữ pháp; thiếu preposition/modal/pronoun hoặc sai quan hệ nối ý.",
+              "answerLocation": "medium of rational beings , was, indeed",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24):",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "imperfections",
+                  "IMPERFECTIONS"
+                ]
+              ],
+              "correctAnswer": "imperfections",
+              "explanation": "Đáp án chính thức từ Cambridge: IMPERFECTIONS.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: IMPERFECTIONS. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Cần chọn đúng từ loại và chính tả của từ phái sinh trong ngữ cảnh. Dạng đúng là IMPERFECTIONS; cần kiểm tra hậu tố/tiền tố, số ít-số nhiều, và chính tả. Ngữ cảnh cần đối chiếu: \"e know that this was no more we can move in a number of opposing directions. We can re-evaluate all knowledge (23) vast number of (24) _____, OF We can be more positive and view these vast _____ decide that it is eternally fragmentary and full of a explosions of s\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: dùng đúng gốc từ nhưng sai từ loại, sai hậu tố, sai phủ định hoặc quên dạng số nhiều.",
+              "answerLocation": "eternally fragmentary and full of a vast number of imperfections",
+              "category": "cpe_part_3",
+              "source": "Page 59, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp2-t4-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Key Word Transformation</h2><div class='mb-4 text-slate-800 text-base leading-relaxed'><p class='mb-2'><b>25.</b> I saw Paul's son driving the car at the time of the accident. (DRIVEN)</p><p class='mb-2'>I saw the car ______ by Paul's son at the time of the accident.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>26.</b> If Nick hadn't advised me, I would have made a terrible mistake. (FOR)</p><p class='mb-2'>Had ______ , I would have made a terrible mistake.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>27.</b> The police never actually accused Michael of the crime. (STAGE)</p><p class='mb-2'>At ______ did the police actually accuse Michael of the crime.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>28.</b> It is very difficult to choose between these two excellent candidates. (CHOOSE)</p><p class='mb-2'>There is ______ between these two excellent candidates.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>29.</b> You are absolutely forbidden to smoke anywhere in the factory. (BAN)</p><p class='mb-2'>There ______ anywhere in the factory.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>30.</b> Jenny doesn't care whether we go to the theater or the cinema. (DIFFERENCE)</p><p class='mb-2'>It ______ whether we go to the theater or the cinema.</p></div>",
+      "questionGroups": [
+        {
+          "id": "camcp2-t4-rg-4",
+          "instruction": "Write the missing words only.",
+          "questions": [
+            {
+              "id": "q-camcp2-t4-25",
+              "type": "gap_fill",
+              "instruction": "Sentence 25: I saw the car ______ by Paul's son. (Key word: DRIVEN)",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "being driven",
+                  "BEING DRIVEN"
+                ],
+                [
+                  "being driven by Paul's son + at the time",
+                  "being driven by paul's son + at the time"
+                ]
+              ],
+              "correctAnswer": "being driven by Paul's son + at the time",
+              "explanation": "Đáp án chính thức từ Cambridge: BEING DRIVEN BY PAUL'S SON + AT THE TIME.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: being driven by Paul's son + at the time. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Các mảnh nghĩa/cấu trúc bắt buộc trong key: being driven by Paul's son + at the time. Trọng tâm là cấu trúc bị động. Cần giữ nguyên nghĩa câu gốc, không đổi từ khóa, dùng 3-8 từ và không bỏ sót mảnh nghĩa nào trong key. Ngữ cảnh cần đối chiếu: \"nightclub, Cinderella's has begun to _____ favour with the city's young people. out [Book page 102] Test 4 Part 4 For questions 32-39, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: đổi nghĩa câu gốc, thay đổi từ khóa, dùng quá/thiếu số từ, hoặc viết đúng ngữ pháp nhưng thiếu một mảnh nghĩa bắt buộc.",
+              "answerLocation": "I saw the car being driven by Paul's",
+              "category": "cpe_part_4",
+              "source": "Page 61, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-26",
+              "type": "gap_fill",
+              "instruction": "Sentence 26: Had ______ , I would have made a terrible mistake. (Key word: FOR)",
+              "blankIndex": 26,
+              "acceptedAnswers": [
+                [
+                  "it not been for Nick’s advice",
+                  "IT NOT BEEN FOR NICK’S ADVICE"
+                ],
+                [
+                  "it not been for Nick’s help",
+                  "IT NOT BEEN FOR NICK’S HELP"
+                ],
+                [
+                  "it not been for Nick's advice + I would/I'd",
+                  "it not been for nick's advice + i would/i'd"
+                ]
+              ],
+              "correctAnswer": "it not been for Nick's advice + I would/I'd",
+              "explanation": "Đáp án chính thức từ Cambridge: IT NOT BEEN FOR NICK'S ADVICE + I WOULD/I'D.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: it not been for Nick's advice + I would/I'd. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Các biến thể được chấp nhận: it not been for Nick's advice + I would/I'd. Trọng tâm là cấu trúc điều kiện giả định 'had it not been for'. Cần giữ nguyên nghĩa câu gốc, không đổi từ khóa, dùng 3-8 từ và không bỏ sót mảnh nghĩa nào trong key. Ngữ cảnh cần đối chiếu: \"[Book page 96] Test 4 Part 2 Write an answer to one of the questions 2-5 in this part. Write your answer in 300-350 words in an appropriate style. 2 You have recently returned from an adventure holiday with a group of students from your class, and you have bee\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: đổi nghĩa câu gốc, thay đổi từ khóa, dùng quá/thiếu số từ, hoặc viết đúng ngữ pháp nhưng thiếu một mảnh nghĩa bắt buộc.",
+              "answerLocation": "Had it not been for Nick’s advice",
+              "category": "cpe_part_4",
+              "source": "Page 61, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-27",
+              "type": "gap_fill",
+              "instruction": "Sentence 27: At ______ did the police actually accuse Michael of the crime. (Key word: STAGE)",
+              "blankIndex": 27,
+              "acceptedAnswers": [
+                [
+                  "no stage",
+                  "NO STAGE"
+                ],
+                [
+                  "no time",
+                  "NO TIME"
+                ],
+                [
+                  "no point",
+                  "NO POINT"
+                ]
+              ],
+              "correctAnswer": "no stage",
+              "explanation": "Đáp án chính thức từ Cambridge: E.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: E - \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\". Giải thích biên soạn/đề xuất: đoạn E phải nối mạch ý trước và sau gap 27. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"agazine article. Seven paragraphs have been removed from the article. Choose from the paragraphs A-H the one which fits each gap (27-33). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet. Music - The Chall\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "At no stage did the police actually",
+              "category": "cpe_part_4",
+              "source": "Page 61, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-28",
+              "type": "gap_fill",
+              "instruction": "Sentence 28: There is ______ between these two. (Key word: CHOOSE)",
+              "blankIndex": 28,
+              "acceptedAnswers": [
+                [
+                  "little to choose",
+                  "LITTLE TO CHOOSE"
+                ],
+                [
+                  "not much to choose",
+                  "NOT MUCH TO CHOOSE"
+                ],
+                [
+                  "hardly anything to choose",
+                  "HARDLY ANYTHING TO CHOOSE"
+                ]
+              ],
+              "correctAnswer": "little to choose",
+              "explanation": "Đáp án chính thức từ Cambridge: C.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: C - \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\". Giải thích biên soạn/đề xuất: đoạn C phải nối mạch ý trước và sau gap 28. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark your answers on the separate answer sheet. Surviving in a Foreign Land I have been w\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "There is little to choose between these two",
+              "category": "cpe_part_4",
+              "source": "Page 61, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-29",
+              "type": "gap_fill",
+              "instruction": "Sentence 29: There ______ anywhere in the factory. (Key word: BAN)",
+              "blankIndex": 29,
+              "acceptedAnswers": [
+                [
+                  "is a total ban on smoking",
+                  "IS A TOTAL BAN ON SMOKING"
+                ],
+                [
+                  "is a total ban on you smoking",
+                  "IS A TOTAL BAN ON YOU SMOKING"
+                ],
+                [
+                  "is a total ban on your smoking",
+                  "IS A TOTAL BAN ON YOUR SMOKING"
+                ],
+                [
+                  "is a total ban + on you/your smoking",
+                  "is a total ban + on you/your smoking"
+                ]
+              ],
+              "correctAnswer": "is a total ban + on you/your smoking",
+              "explanation": "Đáp án chính thức từ Cambridge: IS A TOTAL BAN + ON YOU/YOUR SMOKING.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: is a total ban + on you/your smoking. Giải thích biên soạn/đề xuất: Vì đáp án này phải khớp đồng thời nghĩa, ngữ pháp/cấu trúc và ngữ cảnh của câu gốc. Các biến thể được chấp nhận: is a total ban + on you/your smoking. Trọng tâm là giữ nguyên nghĩa câu gốc, dùng đúng từ khóa và đủ các mảnh bắt buộc trong key. Cần giữ nguyên nghĩa câu gốc, không đổi từ khóa, dùng 3-8 từ và không bỏ sót mảnh nghĩa nào trong key. Ngữ cảnh cần đối chiếu: \"[Book page 96] Test 4 Part 2 Write an answer to one of the questions 2-5 in this part. Write your answer in 300-350 words in an appropriate style. 2 You have recently returned from an adventure holiday with a group of students from your class, and you have bee\"\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: đổi nghĩa câu gốc, thay đổi từ khóa, dùng quá/thiếu số từ, hoặc viết đúng ngữ pháp nhưng thiếu một mảnh nghĩa bắt buộc.",
+              "answerLocation": "There is a total ban on smoking anywhere",
+              "category": "cpe_part_4",
+              "source": "Page 61, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-30",
+              "type": "gap_fill",
+              "instruction": "Sentence 30: It ______ whether we go. (Key word: DIFFERENCE)",
+              "blankIndex": 30,
+              "acceptedAnswers": [
+                [
+                  "makes no difference to Jenny",
+                  "MAKES NO DIFFERENCE TO JENNY"
+                ],
+                [
+                  "makes not much difference to Jenny",
+                  "MAKES NOT MUCH DIFFERENCE TO JENNY"
+                ],
+                [
+                  "does not make any difference to Jenny",
+                  "DOES NOT MAKE ANY DIFFERENCE TO JENNY"
+                ]
+              ],
+              "correctAnswer": "makes no difference to Jenny",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\". Giải thích biên soạn/đề xuất: đoạn B phải nối mạch ý trước và sau gap 30. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark yo\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "It makes no difference to Jenny whether",
+              "category": "cpe_part_4",
+              "source": "Page 61, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp2-t4-sec-5",
+      "title": "Part 5: Multiple Choice",
+      "instructions": "For questions 31-36, read the text below and choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Evolution of Language</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>How did language shape early human societies, and what are its cognitive limits?</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Language is undoubtedly the most powerful tool in the human cognitive arsenal, yet its evolutionary origin remains a subject of intense academic debate. Unlike tools or cave paintings, spoken words leave no physical trace in the archaeological record. Most scientists agree, however, that language did not develop simply as a system for naming objects. Instead, it evolved as a highly complex social coordination system, essential for bonding large groups, sharing abstract knowledge, and establishing cultural norms. Without language, the high level of collective intelligence that defines the human species would have been utterly impossible.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Yet, language also imposes cognitive constraints. The Sapir-Whorf hypothesis, or linguistic relativity, suggests that the structure of a language shapes how its speakers perceive and think about the world. While the extreme version of this theory — that language entirely determines thought — has been largely discredited, recent cognitive research confirms that language significantly influences our memory, categorization, and spatial reasoning. We do not just think and then speak; our very cognitive architecture is continually molded by the linguistic frameworks we employ.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp2-t4-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-camcp2-t4-31",
+              "type": "multiple_choice",
+              "instruction": "Choose the correct letter, A, B, C or D.",
+              "options": [
+                "A. It leaves extensive physical traces in the archaeological record.",
+                "B. It is primarily a system for naming objects.",
+                "C. It is the foundation of human collective intelligence.",
+                "D. Its evolutionary origin has been completely solved."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức từ Cambridge: G.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: G - \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\". Giải thích biên soạn/đề xuất: đoạn G phải nối mạch ý trước và sau gap 31. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark your answers on the separate answer sheet. Surviving in a Foreign Land I have been w\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "foundation of human collective intelligence",
+              "category": "cpe_part_5",
+              "source": "Page 56, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-32",
+              "type": "multiple_choice",
+              "instruction": "Choose the correct letter, A, B, C or D.",
+              "options": [
+                "A. rich with physical tools.",
+                "B. non-existent for spoken words.",
+                "C. full of ancient drawings.",
+                "D. highly consistent and detailed."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "??p ?n ??ng: B. non-existent for spoken words.. D?u hi?u/evidence c?n ??i chi?u: \"spoken words leave no physical trace in the archaeological record\". Ph??ng ?n n?y kh?p ??ng tr?ng t?m c?u h?i v? paraphrase ? trong b?i ??c. B?y th??ng g?p l? ch?n option ch? tr?ng keyword, qu? r?ng/qu? h?p, ??i th?i ?? c?a t?c gi? ho?c ??o quan h? nguy?n nh?n-k?t qu?. M?o l?m b?i: x?c ??nh c?u h?i ?ang h?i detail, tone hay main idea; sau ?? ??i chi?u t?ng option v?i b?ng ch?ng thay v? ch?n theo c?m gi?c.",
+              "answerLocation": "B. non-existent for spoken words.",
+              "category": "cpe_part_5",
+              "source": "Page 56, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-33",
+              "type": "multiple_choice",
+              "instruction": "Choose the correct letter, A, B, C or D.",
+              "options": [
+                "A. thought is entirely independent of language.",
+                "B. language is only used for social bonding.",
+                "C. language entirely determines how we think.",
+                "D. cognitive architecture is genetically fixed."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "??p ?n ??ng: C. language entirely determines how we think.. D?u hi?u/evidence c?n ??i chi?u: \"language entirely determines thought\". Ph??ng ?n n?y kh?p ??ng tr?ng t?m c?u h?i v? paraphrase ? trong b?i ??c. B?y th??ng g?p l? ch?n option ch? tr?ng keyword, qu? r?ng/qu? h?p, ??i th?i ?? c?a t?c gi? ho?c ??o quan h? nguy?n nh?n-k?t qu?. M?o l?m b?i: x?c ??nh c?u h?i ?ang h?i detail, tone hay main idea; sau ?? ??i chi?u t?ng option v?i b?ng ch?ng thay v? ch?n theo c?m gi?c.",
+              "answerLocation": "C. language entirely determines how we think.",
+              "category": "cpe_part_5",
+              "source": "Page 56, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-34",
+              "type": "multiple_choice",
+              "instruction": "Choose the correct letter, A, B, C or D.",
+              "options": [
+                "A. It has no effect on memory or spatial reasoning.",
+                "B. It only affects social interactions, not cognition.",
+                "C. It significantly influences our cognitive architecture.",
+                "D. It is less complex than previously thought."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "??p ?n ??ng: C. It significantly influences our cognitive architecture.. D?u hi?u/evidence c?n ??i chi?u: \"cognitive architecture is continually molded by the linguistic frameworks\". Ph??ng ?n n?y kh?p ??ng tr?ng t?m c?u h?i v? paraphrase ? trong b?i ??c. B?y th??ng g?p l? ch?n option ch? tr?ng keyword, qu? r?ng/qu? h?p, ??i th?i ?? c?a t?c gi? ho?c ??o quan h? nguy?n nh?n-k?t qu?. M?o l?m b?i: x?c ??nh c?u h?i ?ang h?i detail, tone hay main idea; sau ?? ??i chi?u t?ng option v?i b?ng ch?ng thay v? ch?n theo c?m gi?c.",
+              "answerLocation": "C. It significantly influences our cognitive architecture.",
+              "category": "cpe_part_5",
+              "source": "Page 56, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-35",
+              "type": "multiple_choice",
+              "instruction": "Choose the correct letter, A, B, C or D.",
+              "options": [
+                "A. weapon",
+                "B. warehouse",
+                "C. collection",
+                "D. system"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "??p ?n ??ng: C. collection. D?u hi?u/evidence c?n ??i chi?u: \"human cognitive arsenal\". Ph??ng ?n n?y kh?p ??ng tr?ng t?m c?u h?i v? paraphrase ? trong b?i ??c. B?y th??ng g?p l? ch?n option ch? tr?ng keyword, qu? r?ng/qu? h?p, ??i th?i ?? c?a t?c gi? ho?c ??o quan h? nguy?n nh?n-k?t qu?. M?o l?m b?i: x?c ??nh c?u h?i ?ang h?i detail, tone hay main idea; sau ?? ??i chi?u t?ng option v?i b?ng ch?ng thay v? ch?n theo c?m gi?c.",
+              "answerLocation": "C. collection",
+              "category": "cpe_part_5",
+              "source": "Page 56, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-36",
+              "type": "multiple_choice",
+              "instruction": "Choose the correct letter, A, B, C or D.",
+              "options": [
+                "A. advocate for a new global language.",
+                "B. describe the structure of ancient languages.",
+                "C. explore the evolutionary and cognitive aspects of language.",
+                "D. disprove the linguistic relativity hypothesis."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "??p ?n ??ng: C - explore the evolutionary and cognitive aspects of language. C?u h?i h?i m?c ??ch/ch? ?? ch?nh, n?n c?n ch?n option bao qu?t c? kh?a c?nh ti?n h?a v? nh?n th?c c?a ng?n ng?. B?y: A qu? c?c ?oan, B qu? h?p, D bi?n b?i ??c th?nh ph?n b?c m?t gi? thuy?t c? th?. Khi g?p main idea, lo?i option ch? ??ng v?i m?t ?o?n ho?c th?m m?c ti?u m? b?i kh?ng theo ?u?i.",
+              "answerLocation": "C. explore the evolutionary and cognitive aspects of language.",
+              "category": "cpe_part_5",
+              "source": "Page 56, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp2-t4-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "For questions 37-43, read the text below. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Ethics of Algorithmic Curation</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>How social media algorithms are restructuring our public square and cognitive habits.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the modern digital landscape, we no longer seek information; information is curated for us. A complex web of algorithms, running silently in the background, determines what we see, read, and engage with. While this personalized curation offers convenience, shielding us from information overload, it also presents profound ethical challenges. By prioritising engagement above all else, these algorithmic gatekeepers are fundamentally restructuring our public discourse.</p><div class='my-6 p-4 bg-emerald-50/50 rounded-lg border-emerald-100 text-center font-semibold text-emerald-800'>[ Gap 37 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The primary mechanism driving this algorithmic design is 'reward optimization.' To keep users scrolling, algorithms prioritize content that triggers strong emotional reactions — particularly outrage, fear, and tribal solidarity. This selective amplification of extreme voices has led to a highly polarized public square, where moderate, nuanced debate is effectively drowned out. We are locked in digital echo chambers, surrounded only by voices that confirm our pre-existing biases.</p><div class='my-6 p-4 bg-emerald-50/50 rounded-lg border-emerald-100 text-center font-semibold text-emerald-800'>[ Gap 38 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>This polarization is not an accidental byproduct; it is a direct consequence of the business model. Social media platforms profit from our attention, which is packaged and sold to advertisers. Because outrage is the most effective driver of attention, platforms have a powerful financial incentive to keep us angry and divided. The commodification of attention has turned our cognitive systems into profit centers.</p><div class='my-6 p-4 bg-emerald-50/50 rounded-lg border-emerald-100 text-center font-semibold text-emerald-800'>[ Gap 39 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The cognitive consequences are equally severe. Constant exposure to rapid-fire, emotionally charged stimuli trains the brain to seek instant gratification. Our capacity for deep, slow, contemplative reading is being systematically eroded. We are becoming experts at scanning and skimming, but struggle to engage with complex, long-form arguments that require sustained intellectual effort.</p><div class='my-6 p-4 bg-emerald-50/50 rounded-lg border-emerald-100 text-center font-semibold text-emerald-800'>[ Gap 40 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Indeed, this cognitive restructuring has birthed what sociologists call 'epistemic alienation.' We no longer trust traditional sources of authority — science, journalism, academic institutions — because our personalized feeds are flooded with alternative, often conspiratorial narratives. When everyone is locked in their own customized reality, the possibility of collective, democratic action is profoundly undermined.</p><div class='my-6 p-4 bg-emerald-50/50 rounded-lg border-emerald-100 text-center font-semibold text-emerald-800'>[ Gap 41 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>To counter this, a growing group of activists and programmers is advocating for 'humane technology.' They are designing alternative, decentralized platforms that prioritize cognitive sovereignty, privacy, and democratic debate over profit. These platforms replace algorithmic curation with chronological feeds or user-controlled sorting tools, giving individuals agency over their digital diets.</p><div class='my-6 p-4 bg-emerald-50/50 rounded-lg border-emerald-100 text-center font-semibold text-emerald-800'>[ Gap 42 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Of course, these humane alternatives face immense structural challenges. They must compete with corporate giants equipped with massive network effects and unlimited financial resources. But they represent a crucial moral resistance, proving that another digital world is possible.</p><div class='my-6 p-4 bg-emerald-50/50 rounded-lg border-emerald-100 text-center font-semibold text-emerald-800'>[ Gap 43 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Ultimately, reclaiming our public square is not just a regulatory or technical challenge, but a civilizational one. It requires us to value cognitive freedom, democratic consensus, and slow, deliberate attention over the addictive, frictionless convenience of corporate algorithms.</p><hr class='my-6 border-emerald-100'/>### Paragraph Options",
+      "questionGroups": [
+        {
+          "id": "camcp2-t4-rg-6",
+          "instruction": "Match the correct paragraph (A-H) to each gap (37-43). Paragraphs are provided below.",
+          "questions": [
+            {
+              "id": "q-camcp2-t4-37",
+              "type": "gapped_text",
+              "instruction": "Gap 37:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án chính thức từ Cambridge: E.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: E - \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\". Giải thích biên soạn/đề xuất: đoạn E phải nối mạch ý trước và sau gap 27. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"agazine article. Seven paragraphs have been removed from the article. Choose from the paragraphs A-H the one which fits each gap (27-33). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet. Music - The Chall\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "E - There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.",
+              "category": "cpe_part_6",
+              "source": "Page 55, Test 4, Cambridge CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức từ Cambridge: C.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: C - \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\". Giải thích biên soạn/đề xuất: đoạn C phải nối mạch ý trước và sau gap 28. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark your answers on the separate answer sheet. Surviving in a Foreign Land I have been w\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "C - I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.",
+              "category": "cpe_part_6",
+              "source": "Page 55, Test 4, Cambridge CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án chính thức từ Cambridge: H.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: H - \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\". Giải thích biên soạn/đề xuất: đoạn H phải nối mạch ý trước và sau gap 29. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark your answers on the separate answer sheet. Surviving in a Foreign Land I have been w\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "H - While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.",
+              "category": "cpe_part_6",
+              "source": "Page 55, Test 4, Cambridge CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\". Giải thích biên soạn/đề xuất: đoạn B phải nối mạch ý trước và sau gap 30. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark yo\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "B - For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture",
+              "category": "cpe_part_6",
+              "source": "Page 55, Test 4, Cambridge CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án chính thức từ Cambridge: G.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: G - \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\". Giải thích biên soạn/đề xuất: đoạn G phải nối mạch ý trước và sau gap 31. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark your answers on the separate answer sheet. Surviving in a Foreign Land I have been w\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "G - Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.",
+              "category": "cpe_part_6",
+              "source": "Page 55, Test 4, Cambridge CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức từ Cambridge: A.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: A - \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\". Giải thích biên soạn/đề xuất: đoạn A phải nối mạch ý trước và sau gap 32. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"[Book page 84] Test 4 PAPER 1 READING (1 hour 30 minutes) Part 1 For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap. Mark your answers on the separate answer sheet. Surviving in a Foreign Land I have been w\" Phân tích phương án sai: B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "A - As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.",
+              "category": "cpe_part_6",
+              "source": "Page 55, Test 4, Cambridge CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức từ Cambridge: D.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: D - \"This represents a fundamental change from traditional practice and it will be accompanied by the need to respond to demands for public accountability. Viewed positively, this should provide an opportunity for all those involved in music education to demonstrate the high quality of music tuition available.\". Giải thích biên soạn/đề xuất: đoạn D phải nối mạch ý trước và sau gap 33. Khi tự học, kiểm tra đại từ quy chiếu, từ nối, chủ đề đoạn, thì và hướng phát triển lập luận. Ngữ cảnh cần đối chiếu: \"zine article. Seven paragraphs have been removed from the article. Choose from the paragraphs A-H the one which fits each gap (27-33). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet. Music - The Challeng\" Phân tích phương án sai: A: sai vì \"As a result, the impact on the instrumental curriculum and the measures used to assess progress through it will be such that they will need to adapt to maintain their relevance for a broader sector of the population. Ultimately, they will need to encompass a wider range of musical skills.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. B: sai vì \"For all these reasons, there is likely to be a continuing demand for instrumental teaching in the short term. What about the longer term picture? Is there likely to be a shift in focus and, if so, what direction will it take?\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"I would respond to the latter question on a positive note. The music industry is one of the major generators of income in Britain and musical skill and talent will continue to be important in preparing individuals to work in a variety of professions, in particular those related to the media.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. E: sai vì \"There seems little doubt that the widening access to music is likely to continue, fulfilling as it does so many human needs. On a national level, no major state occasion is without music. For individuals, it provides opportunities for numerous activities, formal and informal.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. F: sai vì \"One of the best-recognised functions is that of providing an outlet for emotional expression. Its influence on our moods can be therapeutic. It provides a means of communicating which goes beyond words and provides us with shared unspoken understandings.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. G: sai vì \"Developing in parallel with this trend is a likely increase in the number of people, across the whole age range, who wish to actively participate in music making. Such activities are likely to be community based and will reflect the musical traditions of that community whatever they may be.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. H: sai vì \"While these results are still to be successfully replicated, other data from Europe has indicated that an increase in group music lessons can have positive effects on social relationships in school and on concentration in young children and those with behavioural difficulties.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: chọn đoạn vì có cùng chủ đề bề mặt nhưng bỏ qua liên kết trước-sau gap. Hãy kiểm tra pronoun reference, từ nối, progression và việc đoạn đó có làm câu sau trở nên logic không.",
+              "answerLocation": "D - This represents a fundamental change from traditional practice and it will be accompanied",
+              "category": "cpe_part_6",
+              "source": "Page 55, Test 4, Cambridge CPE 2",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "This mental shift is particularly noticeable in educational settings, where teachers report that students are increasingly unable to read full-length novels or follow complex philosophical arguments."
+            },
+            {
+              "label": "B",
+              "text": "The root of this problem lies in the 'attention economy,' where human attention is treated as a scarce commodity to be mined, processed, and monetized by tech monopolies."
+            },
+            {
+              "label": "C",
+              "text": "This democratic paralysis is visible in our inability to tackle existential crises like climate change or pandemics. When we cannot agree on basic factual reality, we cannot coordinate collective solutions."
+            },
+            {
+              "label": "D",
+              "text": "To break this monopoly, governments must step in with robust antitrust regulations and strict data privacy laws. We must treat digital platforms as public utilities rather than private advertising boards."
+            },
+            {
+              "label": "E",
+              "text": "These humane design strategies aim to shift technology from a tool of corporate control to a medium for human empowerment, restoring our ability to think and debate collectively."
+            },
+            {
+              "label": "F",
+              "text": "Designing these alternative spaces requires a complete rejection of the optimization-for-engagement paradigm, prioritizing instead the slow, deliberate speed of genuine human conversation."
+            },
+            {
+              "label": "G",
+              "text": "Underneath the surface convenience, a silent crisis is brewing. By replacing editorial judgment with mathematical optimization, platforms have abdicated their ethical responsibility, unleashing forces of social fragmentation."
+            },
+            {
+              "label": "H",
+              "text": "This psychological cocooning has severe consequences. When we never encounter opposing viewpoints, we lose the capacity for empathy, treating intellectual disagreement as a moral transgression."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp2-t4-sec-7",
+      "title": "Part 7: Multiple Matching",
+      "instructions": "For questions 44-53, read the five academic perspectives on environmental preservation below and choose the correct perspective (A-E) which fits each statement.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Ethics of Deep Ecology</h2><div class='mb-6 text-slate-800 text-base leading-relaxed text-left'><p class='mb-4'><b>A. Prof. Arne Naess (Environmental Philosopher)</b><br>Traditional environmentalism is shallow. It views nature merely as a resource for human consumption, and advocates for conservation only to ensure our own long-term survival. Deep Ecology, by contrast, asserts that all living beings have intrinsic value, entirely independent of their utility to humans. A mountain, a river, a wolf, a wild flower — these entities have a right to exist and flourish. We must undergo a profound psychological shift from anthropocentrism (human-centeredness) to ecocentrism. We are not the masters of the earth; we are a plain member of the biotic community, equal to any other species. Our interference with the non-human world is excessive and must be rapidly reduced.</p><p class='mb-4'><b>B. Dr. Karen Warren (Ecofeminist Scholar)</b><br>Naess's Deep Ecology, though well-intentioned, fails to recognize that the exploitation of nature is deeply linked to social hierarchies. We cannot separate environmental destruction from the patriarchal systems of domination. The same conceptual framework that justifies the oppression of women also justifies the exploitation of the natural world. An ecological solution that ignores gender, race, and class is a shallow illusion. Our priority must be dismantling all systems of domination. An inclusive environmentalism must be built on relationships of care, reciprocity, and social justice, rather than abstract biological equality.</p><p class='mb-4'><b>C. Raymond Vance (Pragmatic Conservationist)</b><br>The debate between Deep Ecology and social critique misses the immediate practical challenge. We are in the midst of a biodiversity crisis, and we do not have the time to wait for a global psychological revolution or the total dismantling of capitalism. We need pragmatic, actionable policies now. This means working within existing economic frameworks to create carbon markets, fund protected areas, and establish strict environmental laws. Nature can be valued intrinsically, but using its economic utility is the most effective lever we have to protect it. Pragmatism must trump ideological purity if we are to prevent mass extinction.</p><p class='mb-4'><b>D. Dr. Amara Al-Jamil (Social Ecologist)</b><br>Naess's ecocentrism is not only impractical but dangerous. By asserting that all species have equal value, Deep Ecology often slides into a misanthropic narrative that views humans as a cancer on the earth. This ignores the fact that the vast majority of environmental destruction is driven by a capitalistic elite, not humanity as a whole. Poor populations in developing nations are the victims of ecological crisis, not the perpetrators. We must address the systemic social issues — corporate greed, economic inequality, neo-liberalism — that drive destruction. An environmentalism that does not prioritize human social justice is morally bankrupt.</p><p class='mb-4'><b>E. Gregory Sterling (Global Policy Analyst)</b><br>We must shift from philosophy to global governance. The real challenge is navigating international treaties and carbon markets. Environmental preservation requires international consensus, enforceable treaties like the Paris Agreement, and strict registry systems to track carbon offsets. We must leverage technological solutions — renewable energy, carbon capture, genetic preservation — alongside policy. By focusing on these pragmatic, institutional structures, we can align national economic interests with global ecological survival, creating a sustainable future.</p></div>",
+      "questionGroups": [
+        {
+          "id": "camcp2-t4-rg-7",
+          "instruction": "Identify which perspective (A-E) matches the following statements.",
+          "questions": [
+            {
+              "id": "q-camcp2-t4-44",
+              "type": "multiple_choice",
+              "instruction": "Which perspective suggests that all living beings have intrinsic value entirely independent of their utility to humans?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-45",
+              "type": "multiple_choice",
+              "instruction": "Which perspective expresses concern that equal-value ecocentrism can slide into a misanthropic narrative?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-46",
+              "type": "multiple_choice",
+              "instruction": "Which perspective argues that environmental destruction is deeply linked to patriarchal systems of domination?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-47",
+              "type": "multiple_choice",
+              "instruction": "Which perspective asserts that traditional environmentalism is shallow and human-centered?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-48",
+              "type": "multiple_choice",
+              "instruction": "Which perspective advocates for pragmatic economic utility to serve as the primary lever for conservation?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-49",
+              "type": "multiple_choice",
+              "instruction": "Which perspective claims that environmental preservation requires international treaties and carbon offsets?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-50",
+              "type": "multiple_choice",
+              "instruction": "Which perspective believes that we cannot wait for a global psychological revolution to prevent mass extinction?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-51",
+              "type": "multiple_choice",
+              "instruction": "Which perspective asserts that the capitalistic elite is primarily responsible for ecological crises, not humanity as a whole?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-52",
+              "type": "multiple_choice",
+              "instruction": "Which perspective emphasizes that inclusive environmentalism must be built on relationships of care and social justice?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-camcp2-t4-53",
+              "type": "multiple_choice",
+              "instruction": "Which perspective views technological solutions as vital alongside global policy rules?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức từ Cambridge: B.\n\n💡 **Giải thích chi tiết:** Đáp án chính thức: B - \"His business no longer runs as smoothly as it used to.\". Giải thích biên soạn/đề xuất: đáp án B khớp với evidence trong đoạn đọc liên quan đến câu 34. Khi tự học, gạch chân câu chứng minh trực tiếp, rồi so sánh từng option với evidence thay vì chọn theo keyword giống bài. Ngữ cảnh cần đối chiếu: \"d those with behavioural difficulties. [Book page 92] Test 4 Part 4 You are going to read an extract from a novel. For questions 34-40, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh\" Phân tích phương án sai: A: sai vì \"He regrets having delegated important work to his secretary.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. C: sai vì \"He prefers entertaining clients to doing routine office work.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận. D: sai vì \"His schedule is always tightly packed with appointments.\" không giải quyết đúng quan hệ nghĩa/evidence cần cho câu này hoặc làm lệch mạch lập luận.\n\n⚡ **Phân tích bẫy từ vựng (Trap Analysis):** Trap: keyword matching. Option sai thường mượn từ trong bài nhưng đổi quan hệ nguyên nhân-kết quả, quá rộng/quá hẹp, hoặc nêu điều đúng trong bài nhưng không trả lời đúng câu hỏi.",
+              "answerLocation": "B - His business no longer runs as smoothly as it used to.",
+              "category": "cpe_part_7",
+              "source": "Page 65, Test 4, Cambridge CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1639 @@
+{
+  "version": "needs-review-repairable-content-upgrade-2026-05-24",
+  "checkedAt": "2026-05-24T09:29:58+00:00",
+  "apply": true,
+  "targetCategories": [
+    "P1_explanation_and_trap_upgrade",
+    "P1_symbol_cleanup_plus_explanation_upgrade",
+    "P1_symbol_cleanup_then_gate",
+    "P2_metadata_or_light_quality_review"
+  ],
+  "summary": {
+    "still_blocked": 358,
+    "changed": 380,
+    "attempted": 380,
+    "ready_for_gate": 22
+  },
+  "byFile": {
+    "antigravity-bank.json": {
+      "still_blocked": 251,
+      "changed": 259,
+      "attempted": 259,
+      "ready_for_gate": 8
+    },
+    "opensat-pinesat.json": {
+      "still_blocked": 54,
+      "changed": 68,
+      "attempted": 68,
+      "ready_for_gate": 14
+    },
+    "private-vault-archive-bank.json": {
+      "still_blocked": 52,
+      "changed": 52,
+      "attempted": 52
+    },
+    "sat-studio-foundation-bank.json": {
+      "still_blocked": 1,
+      "changed": 1,
+      "attempted": 1
+    }
+  },
+  "byCategory": {
+    "P1_symbol_cleanup_then_gate": 373,
+    "P1_explanation_and_trap_upgrade": 4,
+    "P1_symbol_cleanup_plus_explanation_upgrade": 3
+  },
+  "afterFailureCounts": {
+    "possible_missing_math_operator_or_inequality_symbol": 266,
+    "raw_latex_or_math_delimiter_visible": 78,
+    "ambiguous_fraction_coefficient_notation": 23
+  },
+  "backups": [
+    "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\SAT\\artifacts\\antigravity-bank-before-needs-review-content-upgrade-20260524-163000.json",
+    "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\SAT\\artifacts\\opensat-pinesat-before-needs-review-content-upgrade-20260524-163001.json",
+    "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\SAT\\artifacts\\private-vault-archive-bank-before-needs-review-content-upgrade-20260524-163002.json",
+    "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\SAT\\artifacts\\sat-studio-foundation-bank-before-needs-review-content-upgrade-20260524-163002.json"
+  ],
+  "samplesReadyForGate": [
+    {
+      "id": "antigravity-6488a03a",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 684,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "antigravity-fbcf7714",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2738,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "antigravity-86a91d83",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2741,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "antigravity-1600-b275eda3",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3088,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "antigravity-1600-ae791745",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3090,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "antigravity-1600-12016e2f",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3356,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "antigravity-1600-93527195",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 4505,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "antigravity-1600-58df4a58",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 4512,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "89f638d2",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1382,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_3",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1419,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_a8",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1463,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_c3",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1464,
+      "category": "P1_explanation_and_trap_upgrade"
+    },
+    {
+      "id": "random_id_c3",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1469,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_b8",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1485,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_c9",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1497,
+      "category": "P1_explanation_and_trap_upgrade"
+    },
+    {
+      "id": "random_id_a3",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1571,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "981d5815",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1783,
+      "category": "P1_explanation_and_trap_upgrade"
+    },
+    {
+      "id": "random_id_c1",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1900,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_b6",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1972,
+      "category": "P1_explanation_and_trap_upgrade"
+    },
+    {
+      "id": "89f3184c",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 1992,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_a5",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 2012,
+      "category": "P1_symbol_cleanup_then_gate"
+    },
+    {
+      "id": "random_id_c3",
+      "sourceFile": "opensat-pinesat.json",
+      "sourceIndex": 2070,
+      "category": "P1_symbol_cleanup_then_gate"
+    }
+  ],
+  "samplesStillBlocked": [
+    {
+      "id": "antigravity-0a70955c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 261,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-621c5484",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 298,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-f7b4a491",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 550,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-41d6d5d3",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 553,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-b8f0b1ff",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 554,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-cd34fd33",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 557,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-d7a89568",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 580,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-16d5a8a2",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 620,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-505dd443",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 644,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol",
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-e1490a86",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 651,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-fda0f349",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 659,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-f3147382",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 661,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation",
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-ca5cbbe5",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 689,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-ee97f0c9",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 733,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol",
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-fb63f88b",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 735,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-586530fe",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 739,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-b5abe504",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 774,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-339ec9c3",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 781,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol",
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-20126b6c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 818,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-60c48803",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 821,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-c9207107",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 866,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1210dc2d",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 878,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-75fb3779",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 912,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-7e98486d",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 914,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-fbf9dd67",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 918,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-2e7b8b93",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 928,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-a6e4c950",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 958,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-311cf618",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1025,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-a9d5ccff",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1026,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-f70a6a5b",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1031,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-6c5be804",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1033,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-602ecf41",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1079,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-58967480",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1081,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-720b9c20",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1202,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-6d612c60",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1204,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-532307d9",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1205,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-c7c1f5d8",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1239,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-b1e50aaf",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1249,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-9472f8a8",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1251,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-855c32dc",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1279,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-54fe072b",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1284,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-3c3b4e89",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1287,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1fea7739",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1322,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-024d986a",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1332,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-fff4b8d4",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1347,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-4e12dd1c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1366,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1ed8c0d9",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1385,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-aa8cfa30",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1460,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-5bcc7771",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1470,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-77deb76c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1553,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-a561dd12",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1556,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-7247f32f",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1605,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-2a7d903b",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1658,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-83d2f3b4",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1686,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-412adae3",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 1907,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-5d9da17f",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2055,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-adfe9fed",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2131,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-96c4470e",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2133,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-7aaca3ab",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2174,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-cb7aef4e",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2322,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-ecfad112",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2328,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-3d19aa54",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2357,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-85d8e79c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2475,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-c9bc8fc0",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2477,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-b0ce21bf",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2482,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-a3855618",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2489,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-757d827e",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2556,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-7eb4bb0d",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2569,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-f10f652f",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2654,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-ca03414e",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2779,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-4c5fbc2b",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2881,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-bacc5e6f",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 2919,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "raw_latex_or_math_delimiter_visible"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-dce52fe6",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3003,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-793e32ee",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3005,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-62a0dae9",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3089,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-5024a493",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3331,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-fd18b660",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3332,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-195a7ca9",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3333,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-b6ba1df7",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3334,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-a91d9914",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3335,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-269b2cae",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3336,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-93d3f484",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3337,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-4e44f296",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3338,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-a568c3af",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3339,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-ebda0bc5",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3340,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-56b46896",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3341,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-dabad253",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3342,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-31d5e75f",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3343,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-bc87264c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3344,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-9295d5f5",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3345,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-1f58b2a3",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3346,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-1a6713ab",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3348,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-127e852e",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3349,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-af0fb7a6",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3350,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-84ef1e84",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3351,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-5ae6433c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3352,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-1600-eab95914",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3353,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-222e2810",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3385,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation",
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-8a0e2225",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3387,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-89405e57",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3388,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-9192bf51",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3390,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-6edfa8f6",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3395,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-e15860a3",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3398,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-b9ab1765",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3399,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-54fd1d80",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3403,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-a6760f9e",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3404,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-c707abd9",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3423,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-420c7c87",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3425,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-6841c15d",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3428,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-5d874ece",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3429,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-3bcf80df",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3430,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-de4bec68",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3431,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-5231871d",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3432,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-16bebef3",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3433,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "ambiguous_fraction_coefficient_notation",
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phA-827328ab",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3434,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phB-d4bbaf7c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3446,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phB-0788cb63",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3448,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phB-f99f550c",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3449,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phB-9f9293c8",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3451,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    },
+    {
+      "id": "antigravity-phB-5c4af66a",
+      "sourceFile": "antigravity-bank.json",
+      "sourceIndex": 3452,
+      "category": "P1_symbol_cleanup_then_gate",
+      "blockers": [
+        "possible_missing_math_operator_or_inequality_symbol"
+      ],
+      "issues": [],
+      "warnings": [],
+      "depthFlags": []
+    }
+  ]
+}

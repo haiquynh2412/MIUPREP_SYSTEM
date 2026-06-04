@@ -1,0 +1,21 @@
+{
+  "name": "miuprep-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Consolidated MiuPrep Adaptive Learning Ecosystem (MiuMath, IELTS, CPE, SAT & CPA)",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:portal": "npm run dev -w miuprep-portal",
+    "dev:miumath": "npm run dev -w miumath-app",
+    "dev:ielts": "npm run dev -w @miuprep/desktop",
+    "dev:cpe": "npm run dev -w @miuprep/cpe-desktop",
+    "dev:sat": "npm run dev:vite -w sat-studio",
+    "build": "node scripts/build-workspaces.cjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

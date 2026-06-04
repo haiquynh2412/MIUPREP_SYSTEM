@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test1",
+  "title": "CPE Entry Test 1 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test1-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>A Modern-Day Problem</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the hustle (0) and bustle of today's hectic world all of us, (1) __________ exception, have to contend with some level of stress. Obviously, the source and amount of stress are relative (2) __________ the individual. Just (3) __________ and quantities of stress are subject to personal factors, (4) __________ the way in which a person deals with it. (5) __________ a well-known fact that some people flourish (6) __________ with a potentially stress-causing task or situation. On the other hand, the majority of people (7) __________ adversely affected when confronted (8) __________ a serious dilemma. Abnormal levels of stress (9) __________ a serious health hazard and may prove detrimental to one's physical health. Stress is said to be the culprit in a high percentage of heart problems and stomach disorders. Even (10) __________ of cancer are, reportedly, linked to stress. Knowing that stress is a modern-day malady which we (11) __________, to a greater or lesser extent, suffer from, (12) __________ prompted many to begin looking seriously at ways of controlling stress. (13) __________ the inevitable fact that stress will always play a part in our lives, it is (14) __________ paramount importance that strategies of stress management (15) __________</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test1-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test1-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "WITHOUT",
+                  "without"
+                ]
+              ],
+              "correctAnswer": "WITHOUT",
+              "explanation": "Đáp án đề xuất: WITHOUT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WITHOUT",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "TO",
+                  "to"
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Đáp án đề xuất: TO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TO",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "CAUSES",
+                  "causes"
+                ]
+              ],
+              "correctAnswer": "CAUSES",
+              "explanation": "Đáp án đề xuất: CAUSES. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "CAUSES",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "SO",
+                  "so"
+                ]
+              ],
+              "correctAnswer": "SO",
+              "explanation": "Đáp án đề xuất: SO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "SO",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "IT",
+                  "it"
+                ]
+              ],
+              "correctAnswer": "IT",
+              "explanation": "Đáp án đề xuất: IT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IT",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "WHEN",
+                  "when"
+                ]
+              ],
+              "correctAnswer": "WHEN",
+              "explanation": "Đáp án đề xuất: WHEN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHEN",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "ARE",
+                  "are"
+                ]
+              ],
+              "correctAnswer": "ARE",
+              "explanation": "Đáp án đề xuất: ARE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ARE",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "WITH",
+                  "with"
+                ]
+              ],
+              "correctAnswer": "WITH",
+              "explanation": "Đáp án đề xuất: WITH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WITH",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "CAN",
+                  "can"
+                ]
+              ],
+              "correctAnswer": "CAN",
+              "explanation": "Đáp án đề xuất: CAN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "CAN",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "TYPES",
+                  "types"
+                ]
+              ],
+              "correctAnswer": "TYPES",
+              "explanation": "Đáp án đề xuất: TYPES. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TYPES",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "ALL",
+                  "all"
+                ]
+              ],
+              "correctAnswer": "ALL",
+              "explanation": "Đáp án đề xuất: ALL. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ALL",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "HAS",
+                  "has"
+                ]
+              ],
+              "correctAnswer": "HAS",
+              "explanation": "Đáp án đề xuất: HAS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "HAS",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "DUE",
+                  "due"
+                ]
+              ],
+              "correctAnswer": "DUE",
+              "explanation": "Đáp án đề xuất: DUE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "DUE",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "OF",
+                  "of"
+                ]
+              ],
+              "correctAnswer": "OF",
+              "explanation": "Đáp án đề xuất: OF. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "OF",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "BE",
+                  "be"
+                ]
+              ],
+              "correctAnswer": "BE",
+              "explanation": "Đáp án đề xuất: BE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BE",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test1-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Donnelly Family</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Lucan, Ontario, (0) commonly regarded as a sleepy rural town was, in fact, the setting for one of the (16) __________ feuds Canada was ever to witness. This feud was to become known as the most horrible and (17) __________ in the modern history of the nation. The setting for this real-life dramatic tragedy was the early part of the 19th century.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The chief players in this (18) __________ conflict were the Donnelly family. The Donnelly clan, who were of Irish (19) __________, first (20) __________ to the Americas in the late 1840s. (21) __________, within moments of descending from the train in Lucan, James Donnelly, the family patriarch, was to become embroiled in a quarrel which would set the stage for the long-lasting blood-letting which was to follow. The feud fought between \"the Black Donnellys\" and the simple town folk of Lucan was to last for the better part of thirty-three years. It entailed murders, barn-burnings, stage coach (22) __________ and train (23) __________. The scale and diverse forms of (24) __________ displayed by the Donnellys in the atrocities committed against their enemies must be considered as horrors (25) __________ since the times of the Medieval Crusades.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test1-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test1-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: BLOOD]:",
+              "acceptedAnswers": [
+                [
+                  "BLOODIEST",
+                  "bloodiest"
+                ]
+              ],
+              "correctAnswer": "BLOODIEST",
+              "explanation": "Đáp án đề xuất: BLOODIEST. Từ gốc 'BLOOD' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "BLOODIEST",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "BLOOD",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: FAME]:",
+              "acceptedAnswers": [
+                [
+                  "INFAMOUS",
+                  "infamous"
+                ]
+              ],
+              "correctAnswer": "INFAMOUS",
+              "explanation": "Đáp án đề xuất: INFAMOUS. Từ gốc 'FAME' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "INFAMOUS",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "FAME",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: NOTORIETY]:",
+              "acceptedAnswers": [
+                [
+                  "NOTORIOUS",
+                  "notorious"
+                ]
+              ],
+              "correctAnswer": "NOTORIOUS",
+              "explanation": "Đáp án đề xuất: NOTORIOUS. Từ gốc 'NOTORIETY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "NOTORIOUS",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "NOTORIETY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: EXTRACT]:",
+              "acceptedAnswers": [
+                [
+                  "EXTRACTION",
+                  "extraction"
+                ]
+              ],
+              "correctAnswer": "EXTRACTION",
+              "explanation": "Đáp án đề xuất: EXTRACTION. Từ gốc 'EXTRACT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EXTRACTION",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "EXTRACT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: MIGRATE]:",
+              "acceptedAnswers": [
+                [
+                  "EMIGRATED",
+                  "emigrated"
+                ]
+              ],
+              "correctAnswer": "EMIGRATED",
+              "explanation": "Đáp án đề xuất: EMIGRATED. Từ gốc 'MIGRATE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EMIGRATED",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "MIGRATE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: REPUTE]:",
+              "acceptedAnswers": [
+                [
+                  "REPUTEDLY",
+                  "reputedly"
+                ]
+              ],
+              "correctAnswer": "REPUTEDLY",
+              "explanation": "Đáp án đề xuất: REPUTEDLY. Từ gốc 'REPUTE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "REPUTEDLY",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "REPUTE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: ROB]:",
+              "acceptedAnswers": [
+                [
+                  "ROBBERIES",
+                  "robberies"
+                ]
+              ],
+              "correctAnswer": "ROBBERIES",
+              "explanation": "Đáp án đề xuất: ROBBERIES. Từ gốc 'ROB' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "ROBBERIES",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "ROB",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: DERAIL]:",
+              "acceptedAnswers": [
+                [
+                  "DERAILMENTS",
+                  "derailments"
+                ]
+              ],
+              "correctAnswer": "DERAILMENTS",
+              "explanation": "Đáp án đề xuất: DERAILMENTS. Từ gốc 'DERAIL' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DERAILMENTS",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "DERAIL",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: BARBARIC]:",
+              "acceptedAnswers": [
+                [
+                  "BARBARISM",
+                  "barbarism"
+                ]
+              ],
+              "correctAnswer": "BARBARISM",
+              "explanation": "Đáp án đề xuất: BARBARISM. Từ gốc 'BARBARIC' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "BARBARISM",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "BARBARIC",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: PARALLEL]:",
+              "acceptedAnswers": [
+                [
+                  "UNPARALLELED",
+                  "unparalleled"
+                ]
+              ],
+              "correctAnswer": "UNPARALLELED",
+              "explanation": "Đáp án đề xuất: UNPARALLELED. Từ gốc 'PARALLEL' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "UNPARALLELED",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "PARALLEL",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test1-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>THE DALES</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>When it rains in Yorkshire, visitors tend to seek out a warm, dry and inviting refuge. Anoraks dripping, they (26) __________ either for a cup of Yorkshire tea in a local cafe, or in search of a dream house at the nearest estate agent. Superb views, rural peace and tranquillity - the dales have it all and there is a huge (27) __________ for holiday cottages. The jewel in the crown for many is the cottage that needs (28) __________ up. However, they tend to be few and far (29) __________. Fortunately, there is a lot of Yorkshire to (30) __________ round. A generous smattering of 'wuthering heights' still remain pac-a-mac (31) __________, despite the scores of tourists escaping the exhaust fumes and stresses of city life.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test1-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test1-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - head. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "head",
+              "category": "cpe_part_1",
+              "options": [
+                "A. head",
+                "B. turn",
+                "C. steer",
+                "D. wander"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - demand. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "demand",
+              "category": "cpe_part_1",
+              "options": [
+                "A. uptake",
+                "B. demand",
+                "C. requirement",
+                "D. claim"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - doing. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "doing",
+              "category": "cpe_part_1",
+              "options": [
+                "A. restoring",
+                "B. making",
+                "C. doing",
+                "D. building"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - between. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "between",
+              "category": "cpe_part_1",
+              "options": [
+                "A. about",
+                "B. around",
+                "C. between",
+                "D. beyond"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - go. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "go",
+              "category": "cpe_part_1",
+              "options": [
+                "A. pass",
+                "B. go",
+                "C. spread",
+                "D. share"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - free. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "free",
+              "category": "cpe_part_1",
+              "options": [
+                "A. clear",
+                "B. empty",
+                "C. void",
+                "D. free"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - above. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "above",
+              "category": "cpe_part_1",
+              "options": [
+                "A. beyond",
+                "B. over",
+                "C. above",
+                "D. away"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - ashore. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "ashore",
+              "category": "cpe_part_1",
+              "options": [
+                "A. aboard",
+                "B. adrift",
+                "C. aground",
+                "D. ashore"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - soothing. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "soothing",
+              "category": "cpe_part_1",
+              "options": [
+                "A. soothing",
+                "B. seething",
+                "C. sustaining",
+                "D. slanting"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - make out. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "make out",
+              "category": "cpe_part_1",
+              "options": [
+                "A. make out",
+                "B. pick up",
+                "C. come upon",
+                "D. set down"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - relatively. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "relatively",
+              "category": "cpe_part_1",
+              "options": [
+                "A. highly",
+                "B. scarcely",
+                "C. roughly",
+                "D. relatively"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - combining. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "combining",
+              "category": "cpe_part_1",
+              "options": [
+                "A. relating",
+                "B. attaching",
+                "C. adding",
+                "D. combining"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test1-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>It’s getting hard to be anonymous. To do anything, you have to prove who you are. Want to buy something or draw some cash\" That’s a wodge of credit cards to lug around, and a plethora of four-digit PINs to remember. Even before stepping out of the front door, you've got to find your driving licence or rail pass, perhaps even your passport.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Inside every digital mobile phone is a SIM card. SIM stands for Subscriber Information Module, and the chip embedded in the SIM card is what makes the mobile yours. For now, the SIM just identifies you to the phone system, and maybe holds details of your favourite phone numbers. In future it could identify you to everyone who needs to know who you are and would enable you to carry out transactions which require a form of identification.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Finnish government is looking at using SIM’s in place of a national identity card - and eventually a passport. Under this plan, the SIM will become a person’s legal proof of identity. And there’s no reason why it couldn’t unlock your health records, social security details and other personal information. One click and a hospital would know exactly who it's dealing with.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>People can lose or mislay their phones, and they are a tempting target for thieves, who can easily dispose of them on the black market. That’s bad enough when there’s only a large phone bill at stake. When your phone becomes the key to your identity, secrets and cash, you’ll want to make sure it stays safely locked up, even if only the gadget itself falls into the wrong hands. “Having something that contains all this information would be extremely rash,” says Roger Needham, managing director of Microsoft’s British research laboratory in Cambridge. “People will simply find it unacceptable.”</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The beauty of this system is that the identifier would act as one half of what’s called a public key encryption system. The identifier, kept safe inside the phone, acts as a key, known to no one else. To read a message locked with this private key requires a second, public key, which can be freely distributed.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>An increasing number of countries are passing laws to give private keys the same legal force as signatures. This has unleashed a flood of encryption systems, and the problem now is to get governments and companies to agree on a standard. “It needs to be simple, secure and transparent,” says Mika Nieminen, head of mobile commerce company More Magic Software, in Helsinki. “We have the maths to show that it is secure. The only problem now is making it global.”</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The private key is protected by a PIN, and the card will shut itself off if wrong numbers are keyed in three times. To switch it back on, the owner must take it to a police station with another form of ID. If a card is stolen, the police will cancel it permanently. Either way, information on the card stays safe.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Pearson thinks consumers, too, will learn to trust a chip © with their identity, not least because it will make life so much easier. A private key will do away with hard-to- remember log-in codes and passwords for websites, as well — as all those credit cards and PINs. “People already give up their privacy quite happily just to get access to a website,”</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>he says. “As long as they get something out of it.”</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test1-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test1-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Chọn đoạn E. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "In a few years, this plastic and paper baggage could be history. A single chip hidden in your cellphone will be all you need —a little treasure that holds your complete identity. But beware! Lose your phone, and your identity and money go with it. The big question is whether people will be willing to trust so much to a sliver of silicon.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "To pay for a meal, say, you will use the phone to transfer money through the phone network to a restaurant’s computer. There will be no payment slip to sign because your SIM will do it for you. Likewise, when you board a plane you won't have to wait in line for a boarding pass and seat number.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Your credit history could be accessed by your bank manager with your agreement, which would negate the need for you to visit the bank. The manager could communicate with you through your mobile phone and either give you advice over the phone or invite you to the bank for a face-to-face consultation. This has already been piloted in Britain and has received a positive reception.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn đoạn C. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The solution, according to experts in the field, is to share precious information on secure servers accessible via a WAP connection on the web. The SIM would only store a personal identifier — a long string of digits that would unlock the servers and give access to the information they hold. To use the identifier, the phone's owner would have to punch in a PIN.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Chọn đoạn F. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "You might use this set-up to send a request toa bank using its public key to see the details of your account, which it would decrypt using its private key. The bank would then send you the requested information encrypted with your public key, which only your private key could decrypt. Thus both messages would be secure.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "“The Finnish government has taken the initiative with a national standard that companies can use free of charge,” says Vesa Vatka of the Finnish Population Register Centre in Helsinki. “At the moment this system — called FINEID - uses a smart card and a card reader attached to a computer, but the plan is to integrate to a SIM,” says Vatka.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "“Even in its embryonic form, FINEID gives people a secure way to access sensitive information,” says Vatka. “And when you get it in a mobile phone you're not even tied to a terminal,” he says. Many believe that identity theft will be inevitable no matter how careful safeguards are. But since it is already taking place and this system is more secure, businesses will probably be keen to adopt it.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "But for these dreams to become reality, there’ll have to be a revolution in public attitudes. People will have to let go of their apprehensions about e- commerce and learn to trust their mobiles; “Cultivating that trust is a very difficult thing to do and takes a lot of time,” says Ian Pearson, resident futurologist at British Telecom."
+            },
+            {
+              "label": "B",
+              "text": "Your credit history could be accessed by your bank manager with your agreement, which would negate the need for you to visit the bank. The manager could communicate with you through your mobile phone and either give you advice over the phone or invite you to the bank for a face-to-face consultation. This has already been piloted in Britain and has received a positive reception."
+            },
+            {
+              "label": "C",
+              "text": "The solution, according to experts in the field, is to share precious information on secure servers accessible via a WAP connection on the web. The SIM would only store a personal identifier — a long string of digits that would unlock the servers and give access to the information they hold. To use the identifier, the phone's owner would have to punch in a PIN."
+            },
+            {
+              "label": "D",
+              "text": "“Even in its embryonic form, FINEID gives people a secure way to access sensitive information,” says Vatka. “And when you get it in a mobile phone you're not even tied to a terminal,” he says. Many believe that identity theft will be inevitable no matter how careful safeguards are. But since it is already taking place and this system is more secure, businesses will probably be keen to adopt it."
+            },
+            {
+              "label": "E",
+              "text": "In a few years, this plastic and paper baggage could be history. A single chip hidden in your cellphone will be all you need —a little treasure that holds your complete identity. But beware! Lose your phone, and your identity and money go with it. The big question is whether people will be willing to trust so much to a sliver of silicon."
+            },
+            {
+              "label": "F",
+              "text": "You might use this set-up to send a request toa bank using its public key to see the details of your account, which it would decrypt using its private key. The bank would then send you the requested information encrypted with your public key, which only your private key could decrypt. Thus both messages would be secure."
+            },
+            {
+              "label": "G",
+              "text": "To pay for a meal, say, you will use the phone to transfer money through the phone network to a restaurant’s computer. There will be no payment slip to sign because your SIM will do it for you. Likewise, when you board a plane you won't have to wait in line for a boarding pass and seat number."
+            },
+            {
+              "label": "H",
+              "text": "“The Finnish government has taken the initiative with a national standard that companies can use free of charge,” says Vesa Vatka of the Finnish Population Register Centre in Helsinki. “At the moment this system — called FINEID - uses a smart card and a card reader attached to a computer, but the plan is to integrate to a SIM,” says Vatka."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test1-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Over the last century the world has become increasingly smaller. Not geographically, of course, but in the sense that media, technology and the opening of borders has enabled the world’s citizens to view, share and gain access to a much wider range of cultures, societies and world views. In this melting pot that the world has become, today's child is privy to facets of the human experience that his immediate predecessors had no inkling even existed. It stands to reason that in order to absorb, configure and finally form opinions about this information- laden planet, children must be supplied with certain tools. Included in this list of ‘tools’ are: education, social skills, cultural awareness and the acquisition of languages, the most important of these being the latter. Until recently, a child who had the ability to speak more than one language would have been considered a very rare entity. This one-language phenomenon could be attributed to a combination of factors. Firstly, the monolingual environment in which a child was raised played a strong role, as did the limited, biased education of the past. With regard to immigrants, the sad fact was that non-native parents tended to withhold the teaching of the mother tongue so that the child would acquire the ‘more prestigious’ language of the adopted country.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Nowadays, the situation has undergone an almost complete reversal. In the majority of North American’ and European countries, most children are given the opportunity to learn a second or even a third language. Children acquire these foreign languages through various and diverse means. In many countries, learning a foreign language is a compulsory subject in the state school curriculum. Other children rely on language schools or private tuition to achieve their goal. In other instances, children are born to bilingual parents, who, if they so desire, may teach the children two languages.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Bringing up one's child bilingually is not a decision to be taken lightly. Both parents must consider long and hard the implications involved in raising a child in a two-language home. This decision is one of those all important choices which will affect not only the parents’ lives but also the life of the child. Raising a child bilingually has a two-fold effect. Firstly, of course, the child learns the two languages of the parents. Secondly, the parents’ decision will influence factors which will have a far-reaching effect on the child’s life. Some of these factors include: style and place of education; diameter of social circle; employment potential and preference; and, most importantly, the way in which the child views himself and his global environment.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>One of the more advantageous by-products of being a member of a bilingual family is the inherent awareness of two different cultures. This bicultural child inherits a wealth of knowledge brought about by an exposure to: historical backgrounds; traditional songs and folklore; rituals of marriage; models of social interaction; and therefore, two varying interpretations of the world. The monolingual child seems to be at a disadvantage in comparison to the bilingual child, who has a set of languages and an accompanying set of abstract cultural ideas. Practically speaking, when a child comes from a two-language family, he must be taught both languages in order to communicate with the extended family members. When, for example, the grandparents speak a language which differs from that of the child’s locale, a monolingual child would be deprived of the interaction which occurs between grandparents and grandchildren. On the other hand, a bilingual child will not only be able to speak to grandparents, but will also comprehend where these people have ‘come from’. There will be a shared cultural empathy within the family. Because all family members can communicate, on both a verbal and cultural level, no one will feel excluded and the child will develop a sense of belonging and rootedness.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>On a more abstract level, it has been said that a bilingual child thinks differently from a monolingual child. Current research in linguistics indicates that there may be a strong correlation between bilingualism and cognitive skills. This new research concerns itself with the fact that a bilingual child has two lexical structures for any given physical or abstract entity. This leads logically to the assumption that the child also has two associations for many words, as a word can mean different things in different languages. For example, the word ‘fire’ in many western hemisphere languages connotes warmth and relaxation. In the Inuit language however, where fire is a necessity of life, it may connote heat and survival. For the bilingual child, then, vocabulary items and the abstract idea behind them are both dual in nature and more elastic. Researchers maintain that this elasticity of ideas may allow the child to think more flexibly and, therefore, more creatively.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test1-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test1-45",
+              "type": "multiple_choice",
+              "instruction": "In the author’s view, the world is becoming a",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - much more integrated place.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "much more integrated place.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. more culturally diverse place.",
+                "B. place where only privileged children will prosper.",
+                "C. less complex place to live in.",
+                "D. much more integrated place."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-46",
+              "type": "multiple_choice",
+              "instruction": "According to the first paragraph, which of the following was true of immigrants?",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - ‘The mother tongue was considered less important.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "‘The mother tongue was considered less important.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. Children were reluctant to use their mother tongue.",
+                "B. The mother tongue was considered less important.",
+                "C. Parents encouraged children to use their mother tongue.",
+                "D. Most parents made it a priority for children to grow up bilingual."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-47",
+              "type": "multiple_choice",
+              "instruction": "According to the writer, second or foreign language learning is something",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - about which general attitudes have evolved considerably.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "about which general attitudes have evolved considerably.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. people are still apathetic towards,",
+                "B. mainly associated with private sector education.",
+                "C. that few people take seriously.",
+                "D. about which general attitudes have evolved considerably."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-48",
+              "type": "multiple_choice",
+              "instruction": "According to the article, the decision to raise bilingual children is difficult because",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - it needs to be considered from many different angles.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "it needs to be considered from many different angles.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. it may limit the child’s choice of friends.",
+                "B. though simple for parents, it can impact negatively on children.",
+                "C. it may cause children to lose their sense of identity.",
+                "D. it needs to be considered from many different angles."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-49",
+              "type": "multiple_choice",
+              "instruction": "With regard to the ‘extended family’ in immigrant situations, the writer feels it is important that",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - children can relate to all aspects of their parents’ native culture.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "children can relate to all aspects of their parents’ native culture.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. adults try to understand the child’s difficult cultural situation.",
+                "B. children are not pressured to speak their parents’ native language.",
+                "C. adults recognise the child’s need to identify more with local culture.",
+                "D. children can relate to all aspects of their parents’ native culture."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test1-50",
+              "type": "multiple_choice",
+              "instruction": "According to current research, the benefit of learning two languages is that",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - it helps to develop different capabilities of the mind.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "it helps to develop different capabilities of the mind.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. different types of knowledge can be accessed in different languages.",
+                "B. bilinguals become more aware the origin of words in languages.",
+                "C. it helps to develop different capabilities of the mind.",
+                "D. bilinguals develop a greater sense of the value of culture."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

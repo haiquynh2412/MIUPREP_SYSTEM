@@ -1,0 +1,40 @@
+{
+  "version": "sat-expansion-batch-005-2026-05-22",
+  "basisReports": [
+    "data/math-algebra-advanced-blueprint-analysis.json",
+    "data/sat-2026-readiness-audit.json",
+    "data/reviewed-question-expert-audit.json"
+  ],
+  "batch005Targets": {
+    "Math Algebra": 12,
+    "Math Advanced Math": 16
+  },
+  "focusFamilies": {
+    "Algebra": [
+      "Linear equations in two variables",
+      "Systems of two linear equations in two variables",
+      "Linear inequalities in one or two variables"
+    ],
+    "Advanced Math": [
+      "Nonlinear equations in one variable",
+      "Nonlinear functions",
+      "Equivalent expressions"
+    ]
+  },
+  "difficultySkew": {
+    "Easy": 3,
+    "Medium": 12,
+    "Hard": 13
+  },
+  "formatSkew": {
+    "multiple_choice": 19,
+    "student_produced_response": 9
+  },
+  "avoid": [
+    "routine circumference, hypotenuse, or probability clones",
+    "Geometry and PSDA hiding/removal work",
+    "single-step arithmetic-only prompts",
+    "near-duplicate prompts from batches 001-004"
+  ],
+  "reason": "P2 request keeps surplus topics in place while adding Algebra/Advanced Math coverage and preserving public-candidate review quality."
+}

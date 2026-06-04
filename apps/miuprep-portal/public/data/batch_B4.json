@@ -1,0 +1,2012 @@
+[
+  {
+    "id": "antigravity-hard-fea4087e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(2x − 1) = x − 2\n\nWhat are all values of x that satisfy the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 5 only"
+      },
+      {
+        "letter": "B",
+        "text": "x = 1 and x = 5"
+      },
+      {
+        "letter": "C",
+        "text": "x = 1 only"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Square both sides: 2x − 1 = (x − 2)² = x² − 4x + 4 → x² − 6x + 5 = 0 → (x − 1)(x − 5) = 0 → x = 1 or x = 5. Check x = 1: √(2·1 − 1) = √1 = 1, but x − 2 = −1. Since 1 ≠ −1, x = 1 is extraneous. Check x = 5: √(2·5 − 1) = √9 = 3, and x − 2 = 3 ✓. Only x = 5 is valid.",
+      "distractors": {
+        "B": "Includes both algebraic solutions without verifying; x = 1 is extraneous because the right side x − 2 is negative but √ is non-negative.",
+        "C": "Selects the extraneous solution, the classic trap — the right side equals −1 when x = 1, but a square root cannot equal a negative number.",
+        "D": "Incorrectly rejects both solutions, perhaps by making an arithmetic error when checking x = 5."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing that squaring can introduce extraneous solutions and verifying each candidate in the original equation",
+      "trapTypes": [
+        "extraneous solution inclusion",
+        "sign error on radical check"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-96c53128",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "3/(x − 2) + 1 = x/(x − 2)\n\nHow many values of x satisfy the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "Infinitely many"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Multiply both sides by (x − 2): 3 + (x − 2) = x → 3 + x − 2 = x → x + 1 = x → 1 = 0, a contradiction. Alternatively, the only candidate x = 2 makes the denominators zero, so it is excluded from the domain. No valid solutions.",
+      "distractors": {
+        "B": "Believes x = 2 is a solution after canceling, without noticing it makes denominators zero.",
+        "C": "Mismanages algebra and finds two spurious candidates.",
+        "D": "Thinks the equation is an identity after simplification."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing domain restrictions in rational equations that lead to no solution",
+      "trapTypes": [
+        "domain restriction oversight",
+        "contradiction misread"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-68fcb9c8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x + 5) + 1 = 0\n\nWhat is the solution set of the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "{−4}"
+      },
+      {
+        "letter": "B",
+        "text": "{−6}"
+      },
+      {
+        "letter": "C",
+        "text": "The empty set (no solution)"
+      },
+      {
+        "letter": "D",
+        "text": "{−5}"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "√(x + 5) = −1. The principal square root always returns a non-negative value, so √(x + 5) ≥ 0 for all x in the domain. It can never equal −1. No solution exists.",
+      "distractors": {
+        "A": "Squares both sides: x + 5 = 1 → x = −4. But checking: √(1) + 1 = 2 ≠ 0. The squaring step is invalid when the right side is negative.",
+        "B": "Algebraic error leading to x + 5 = −1 → x = −6, but x + 5 must be ≥ 0 for the radical to be defined, and −6 + 5 = −1 < 0.",
+        "D": "Sets the radicand to zero (x + 5 = 0 → x = −5) but ignores the +1 outside the radical."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Understanding that a principal square root cannot equal a negative number",
+      "trapTypes": [
+        "squaring a negative right side",
+        "ignoring range of √"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-51ff4e50",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x/(x + 3) − 2/(x − 3) = (x² + 9)/(x² − 9)\n\nWhat is the solution of the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3"
+      },
+      {
+        "letter": "B",
+        "text": "x = −3"
+      },
+      {
+        "letter": "C",
+        "text": "x = 6"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Note x² − 9 = (x + 3)(x − 3). Multiply both sides by (x + 3)(x − 3):\nx(x − 3) − 2(x + 3) = x² + 9\nx² − 3x − 2x − 6 = x² + 9\nx² − 5x − 6 = x² + 9\n−5x − 6 = 9 → −5x = 15 → x = −3.\nBut x = −3 makes the denominator (x + 3) = 0, so it is excluded from the domain. No valid solution.",
+      "distractors": {
+        "A": "Confuses which value is excluded; x = 3 also makes (x − 3) = 0 and is not obtained algebraically.",
+        "B": "Correctly solves the algebra but fails to check domain restrictions; x = −3 makes (x + 3) = 0.",
+        "C": "Arithmetic error in combining like terms."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving a rational equation and recognizing that the algebraic solution falls outside the domain",
+      "trapTypes": [
+        "extraneous solution from domain exclusion",
+        "LCD multiplication pitfall"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-703c80cc",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(3x + 7) = x + 1\n\nIf x is a solution to the equation above, what is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = −2 only"
+      },
+      {
+        "letter": "B",
+        "text": "x = 3 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = −2 and x = 3"
+      },
+      {
+        "letter": "D",
+        "text": "x = −1 only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Square both sides: 3x + 7 = x² + 2x + 1 → x² − x − 6 = 0 → (x − 3)(x + 2) = 0 → x = 3 or x = −2. Check x = 3: √(16) = 4, and 3 + 1 = 4 ✓. Check x = −2: √(1) = 1, but −2 + 1 = −1. Since 1 ≠ −1, x = −2 is extraneous.",
+      "distractors": {
+        "A": "Selects the extraneous solution; √1 = 1 ≠ −1 when x = −2.",
+        "C": "Keeps both algebraic solutions without checking; x = −2 fails verification.",
+        "D": "Mistakes x = −1 for a solution, possibly from setting x + 1 = 0."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Squaring a radical equation and identifying extraneous solutions by back-substitution",
+      "trapTypes": [
+        "extraneous solution selection",
+        "failing to verify"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-13da2f29",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x + 2)/(x − 1) = 3/(x − 1)\n\nWhat is the solution of the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 1"
+      },
+      {
+        "letter": "B",
+        "text": "x = 3"
+      },
+      {
+        "letter": "C",
+        "text": "x = −1"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Multiply both sides by (x − 1): x + 2 = 3 → x = 1. But x = 1 makes the denominator (x − 1) = 0, so x = 1 is excluded from the domain. No valid solution exists.",
+      "distractors": {
+        "A": "Solves algebraically to get x = 1 but fails to check that x = 1 makes denominators zero — the classic extraneous-from-LCD trap.",
+        "B": "Misreads the equation as x + 2 = 3(x − 1) and solves to get x = 5/2, then rounds or miscalculates.",
+        "C": "Substitution or sign error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing that multiplying by an expression that can be zero may introduce extraneous solutions",
+      "trapTypes": [
+        "extraneous solution from zero denominator",
+        "LCD creates false solution"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-7a358527",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(4x + 1) = 2x − 1\n\nWhat are all values of x that satisfy the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 0 and x = 2"
+      },
+      {
+        "letter": "B",
+        "text": "x = 2 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = 0 only"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Square both sides: 4x + 1 = 4x² − 4x + 1 → 0 = 4x² − 8x → 4x(x − 2) = 0 → x = 0 or x = 2. Check x = 0: √1 = 1, but 2(0) − 1 = −1. Since 1 ≠ −1, x = 0 is extraneous. Check x = 2: √9 = 3, and 2(2) − 1 = 3 ✓.",
+      "distractors": {
+        "A": "Keeps both roots without checking; x = 0 gives RHS = −1 but √(1) = 1.",
+        "C": "Selects only the extraneous root — the trap answer.",
+        "D": "Incorrectly rejects x = 2, possibly from an arithmetic error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Squaring introduces a false root; must verify each candidate in the original",
+      "trapTypes": [
+        "extraneous solution trap",
+        "negative RHS from radical equation"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-f614c142",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "1/(x − 4) + 1/(x + 4) = 8/(x² − 16)\n\nWhich of the following is the solution set of the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "{4}"
+      },
+      {
+        "letter": "B",
+        "text": "{−4}"
+      },
+      {
+        "letter": "C",
+        "text": "{0}"
+      },
+      {
+        "letter": "D",
+        "text": "The empty set (no solution)"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x² − 16 = (x − 4)(x + 4). Multiply through:\n(x + 4) + (x − 4) = 8 → 2x = 8 → x = 4.\nBut x = 4 makes (x − 4) = 0, so the original equation is undefined at x = 4. The only algebraic solution is extraneous. No valid solution.",
+      "distractors": {
+        "A": "Solves correctly to x = 4 but doesn't check the domain restriction x ≠ 4.",
+        "B": "Confuses which value is excluded or makes a sign error.",
+        "C": "Computational error in combining the numerators."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving a rational equation whose only algebraic solution is a domain exclusion",
+      "trapTypes": [
+        "extraneous solution at domain boundary",
+        "LCD-induced false root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-c4b10488",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x² − 5x + 6) = x − 3\n\nHow many real solutions does this equation have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "Infinitely many"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Note x² − 5x + 6 = (x − 2)(x − 3). Square both sides: (x − 2)(x − 3) = (x − 3)² → (x − 3)[(x − 2) − (x − 3)] = 0 → (x − 3)(1) = 0 → x = 3. Check x = 3: √(9 − 15 + 6) = √0 = 0, and x − 3 = 0 ✓. Also need x − 3 ≥ 0 → x ≥ 3. Only x = 3 works.",
+      "distractors": {
+        "A": "Thinks x = 3 makes something undefined, but √0 = 0 is fine.",
+        "C": "Includes x = 2 from the factored radicand, but x = 2 gives RHS = −1 < 0.",
+        "D": "Believes the equation is an identity for all x ≥ 3."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factoring inside a radical and carefully checking non-negativity constraints",
+      "trapTypes": [
+        "extra root from factored form",
+        "assuming identity"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-9ddcbeb9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(2x + 5) − √(x + 2) = 1\n\nWhat is the value of x that satisfies the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = −1"
+      },
+      {
+        "letter": "B",
+        "text": "x = 2"
+      },
+      {
+        "letter": "C",
+        "text": "x = 7"
+      },
+      {
+        "letter": "D",
+        "text": "x = −1 and x = 2"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Isolate one radical: √(2x + 5) = 1 + √(x + 2). Square: 2x + 5 = 1 + 2√(x + 2) + x + 2 → x + 2 = 2√(x + 2). Let u = √(x + 2): u² = 2u → u(u − 2) = 0 → u = 0 or u = 2. u = 0: x + 2 = 0 → x = −2. Check: √1 − √0 = 1 ✓. u = 2: x + 2 = 4 → x = 2. Check: √9 − √4 = 3 − 2 = 1 ✓. Both work! But among the choices, x = 2 is offered. x = −2 is not listed. So B.",
+      "distractors": {
+        "A": "x = −1: √3 − √1 = √3 − 1 ≈ 0.73 ≠ 1. Does not satisfy the equation.",
+        "C": "x = 7: √19 − √9 ≈ 4.36 − 3 = 1.36 ≠ 1. Close but not exact.",
+        "D": "x = −1 does not satisfy the equation."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Double-squaring technique for equations with two radicals",
+      "trapTypes": [
+        "intermediate squaring error",
+        "accepting approximate solutions"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-355fc6c5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x/(x − 3) = 3/(x − 3) + 2\n\nWhat is the solution of the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3"
+      },
+      {
+        "letter": "B",
+        "text": "x = 9"
+      },
+      {
+        "letter": "C",
+        "text": "x = −3"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Multiply by (x − 3): x = 3 + 2(x − 3) → x = 3 + 2x − 6 → x = 2x − 3 → −x = −3 → x = 3. But x = 3 makes (x − 3) = 0, so x = 3 is excluded from the domain. No valid solution.",
+      "distractors": {
+        "A": "Algebraic solution x = 3, but it creates a zero denominator — extraneous.",
+        "B": "Distributes incorrectly: 2(x−3) = 2x − 3 instead of 2x − 6, getting x = 9.",
+        "C": "Sign error in the algebra."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "LCD multiplication yielding a domain-excluded solution",
+      "trapTypes": [
+        "extraneous solution from zero denominator",
+        "distribution error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-41586da3",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x + 3) = −5\n\nHow many real solutions does the equation above have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "The equation has infinitely many solutions"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "The principal square root function always returns a non-negative value: √(x + 3) ≥ 0 for all x in its domain. Since −5 < 0, there is no x for which √(x + 3) = −5.",
+      "distractors": {
+        "B": "Squares both sides to get x + 3 = 25 → x = 22, ignoring that √(25) = 5 ≠ −5.",
+        "C": "Considers ±√25, introducing both x = 22 and an additional spurious root.",
+        "D": "Confuses this with an inequality or identity."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing the range of the principal square root function",
+      "trapTypes": [
+        "squaring removes sign information",
+        "ignoring non-negativity of √"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-bd2bbee5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x² − 4)/(x − 2) = x + 3\n\nWhat is the solution set?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "{2}"
+      },
+      {
+        "letter": "B",
+        "text": "{1}"
+      },
+      {
+        "letter": "C",
+        "text": "The empty set (no solution)"
+      },
+      {
+        "letter": "D",
+        "text": "{2, −1}"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Factor: (x−2)(x+2)/(x−2) = x + 2 for x ≠ 2. So the equation becomes x + 2 = x + 3, i.e. 2 = 3, which is a contradiction. Alternatively, cross-multiplying: x² − 4 = (x + 3)(x − 2) = x² + x − 6 → −4 = x − 6 → x = 2, but x = 2 is excluded from the domain. No valid solution.",
+      "distractors": {
+        "A": "Algebraic solution x = 2, but it creates a zero denominator.",
+        "B": "Algebraic error.",
+        "D": "Includes x = 2 and a spurious root from an error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Simplifying a rational expression reveals a contradiction or domain-excluded solution",
+      "trapTypes": [
+        "extraneous from domain exclusion",
+        "failure to simplify before solving"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-8536a3c1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(5 − x) = x + 1\n\nWhich of the following gives all solutions to the equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 1 only"
+      },
+      {
+        "letter": "B",
+        "text": "x = −4 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = 1 and x = −4"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Square both sides: 5 − x = x² + 2x + 1 → x² + 3x − 4 = 0 → (x + 4)(x − 1) = 0 → x = −4 or x = 1. Check x = 1: √(4) = 2, and 1 + 1 = 2 ✓. Check x = −4: √(9) = 3, but −4 + 1 = −3. Since 3 ≠ −3, x = −4 is extraneous.",
+      "distractors": {
+        "B": "Picks the extraneous solution; the right side is −3 when x = −4 but √9 = 3.",
+        "C": "Keeps both algebraic roots without verifying in the original equation.",
+        "D": "Incorrectly rejects x = 1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Standard radical-equation solving with extraneous root identification",
+      "trapTypes": [
+        "extraneous solution from squaring",
+        "choosing the trap answer"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-ac05a1e7",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "2/(x + 1) − 1/(x − 2) = 0\n\nWhat is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 5"
+      },
+      {
+        "letter": "B",
+        "text": "x = 3"
+      },
+      {
+        "letter": "C",
+        "text": "x = −1"
+      },
+      {
+        "letter": "D",
+        "text": "x = 2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Combine fractions: [2(x−2) − (x+1)] / [(x+1)(x−2)] = 0 → 2x − 4 − x − 1 = 0 → x − 5 = 0 → x = 5. Check: x = 5 gives 2/6 − 1/3 = 1/3 − 1/3 = 0 ✓. Domain: x ≠ −1, 2; 5 is valid.",
+      "distractors": {
+        "B": "Combines numerators incorrectly, e.g., 2 − 1 = 1, x + 1 − (x − 2) = 3 → x = 3.",
+        "C": "This is a domain exclusion value (makes denominator zero), not a solution.",
+        "D": "This is the other domain exclusion value."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Combining rational expressions and checking domain restrictions",
+      "trapTypes": [
+        "choosing a domain-excluded value",
+        "numerator combination error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-b7085e4b",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x − 1) + √(2x − 1) = 5\n\nIf x satisfies the equation above, what is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 5"
+      },
+      {
+        "letter": "B",
+        "text": "x = 10"
+      },
+      {
+        "letter": "C",
+        "text": "x = 1"
+      },
+      {
+        "letter": "D",
+        "text": "x = 13"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Isolate: √(2x − 1) = 5 − √(x − 1). Square: 2x − 1 = 25 − 10√(x − 1) + x − 1 → x − 25 = −10√(x − 1) → 10√(x − 1) = 25 − x. Square again: 100(x − 1) = (25 − x)² → 100x − 100 = 625 − 50x + x² → x² − 150x + 725 = 0. Discriminant = 22500 − 2900 = 19600 = 140². x = (150 ± 140)/2 → x = 145 or x = 5. Check x = 5: √4 + √9 = 2 + 3 = 5 ✓. Check x = 145: √144 + √289 = 12 + 17 = 29 ≠ 5. Extraneous.",
+      "distractors": {
+        "B": "Arithmetic error in the double-squaring process.",
+        "C": "x = 1: √0 + √1 = 1 ≠ 5.",
+        "D": "x = 13: √12 + √25 ≈ 3.46 + 5 = 8.46 ≠ 5."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Double-squaring technique with extraneous root elimination",
+      "trapTypes": [
+        "extraneous from double squaring",
+        "arithmetic complexity"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-ef850d7f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "4/(x² − 4) = 1/(x − 2) − 1/(x + 2)\n\nWhat is the solution set of the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "{0}"
+      },
+      {
+        "letter": "B",
+        "text": "{2, −2}"
+      },
+      {
+        "letter": "C",
+        "text": "All real numbers except x = 2 and x = −2"
+      },
+      {
+        "letter": "D",
+        "text": "The empty set (no solution)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "x² − 4 = (x − 2)(x + 2). Multiply through: 4 = (x + 2) − (x − 2) = 4. This is the identity 4 = 4, true for all x in the domain. Domain: x ≠ 2, x ≠ −2. So the solution set is all reals except ±2.",
+      "distractors": {
+        "A": "Thinks only x = 0 satisfies some simplified equation.",
+        "B": "Includes the domain-excluded values.",
+        "D": "Misreads the identity as a contradiction."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing an identity in a rational equation after clearing denominators",
+      "trapTypes": [
+        "mistaking identity for single solution",
+        "including excluded values"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-b9fe5bd3",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x + 1) = √(x + 4) + 1\n\nWhat are all solutions to the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 0"
+      },
+      {
+        "letter": "B",
+        "text": "x = 3"
+      },
+      {
+        "letter": "C",
+        "text": "x = 0 and x = 3"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Rearrange: √(x + 1) − √(x + 4) = 1. Since x + 4 > x + 1 for all x, we have √(x + 4) > √(x + 1), so √(x + 1) − √(x + 4) < 0 < 1. The left side is always negative, so the equation has no solution. Alternatively, squaring leads to candidates that fail verification.",
+      "distractors": {
+        "A": "Squaring produces x = 0 as a candidate, but √1 = 1 and √4 + 1 = 3. Since 1 ≠ 3, extraneous.",
+        "B": "Another algebraic candidate from squaring errors, but checking: √4 = 2 and √7 + 1 ≈ 3.65. Fails.",
+        "C": "Includes both spurious candidates."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing from the structure that no solution is possible because one radical is always larger",
+      "trapTypes": [
+        "squaring hides structural impossibility",
+        "extraneous from double squaring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-9e2757c4",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2/(x − 5) = (x − 3)/(x − 5), what is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 5"
+      },
+      {
+        "letter": "B",
+        "text": "x = 2"
+      },
+      {
+        "letter": "C",
+        "text": "x = 3"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Multiply both sides by (x − 5): 2 = x − 3 → x = 5. But x = 5 makes the denominator zero, so x = 5 is excluded from the domain. The only algebraic solution is extraneous → no valid solution.",
+      "distractors": {
+        "A": "The algebraic result, but it makes denominators zero — extraneous.",
+        "B": "Misreads the equation or makes a sign error.",
+        "C": "Sets x − 3 = 0 instead of solving correctly."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving a rational equation where the only algebraic solution is domain-excluded",
+      "trapTypes": [
+        "extraneous solution at domain boundary",
+        "simple algebra masks the trap"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-9dad1347",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x² + 3x + 9) = x + 3\n\nWhat are all values of x that satisfy the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 0 only"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0 and x = −3"
+      },
+      {
+        "letter": "C",
+        "text": "x = −3 only"
+      },
+      {
+        "letter": "D",
+        "text": "All real numbers x ≥ −3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Square both sides: x² + 3x + 9 = x² + 6x + 9 → 3x = 6x → 0 = 3x → x = 0. Need x + 3 ≥ 0 → x ≥ −3. x = 0 ≥ −3 ✓. Check: √(0 + 0 + 9) = √9 = 3, and 0 + 3 = 3 ✓.",
+      "distractors": {
+        "B": "Includes x = −3, but checking: √(9 − 9 + 9) = √9 = 3, and −3 + 3 = 0. Since 3 ≠ 0, extraneous.",
+        "C": "Selects only x = −3, the extraneous root.",
+        "D": "Thinks the equation is an identity for x ≥ −3, but squaring was lossy."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Single solution from squaring with careful domain/range checking",
+      "trapTypes": [
+        "assuming identity",
+        "extraneous root inclusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-1161c4e5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(2x + 1)/(x − 3) = 7/(x − 3)\n\nWhat is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3"
+      },
+      {
+        "letter": "B",
+        "text": "x = 7"
+      },
+      {
+        "letter": "C",
+        "text": "x = 4"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Multiply both sides by (x − 3): 2x + 1 = 7 → 2x = 6 → x = 3. But x = 3 makes both denominators zero, so x = 3 is excluded. No valid solution.",
+      "distractors": {
+        "A": "The algebraic answer x = 3, but it makes denominators zero — extraneous.",
+        "B": "Misreads the equation as 2x + 1 = 7(x − 3) and solves incorrectly.",
+        "C": "Arithmetic error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Rational equation whose algebraic solution equals a domain exclusion",
+      "trapTypes": [
+        "extraneous from zero denominator",
+        "simple equation masks the trap"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-aa9d62a1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(6x + 7) = 2x + 1\n\nWhat are all solutions to the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3/2 only"
+      },
+      {
+        "letter": "B",
+        "text": "x = −1 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = 3/2 and x = −1"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Square: 6x + 7 = (2x+1)² = 4x² + 4x + 1 → 4x² − 2x − 6 = 0 → 2x² − x − 3 = 0. Factor: (2x − 3)(x + 1) = 0 → x = 3/2 or x = −1. Check x = 3/2: √(9 + 7) = √16 = 4, and 2(3/2) + 1 = 4 ✓. Check x = −1: √(−6 + 7) = √1 = 1, but 2(−1) + 1 = −1. Since 1 ≠ −1, extraneous.",
+      "distractors": {
+        "B": "Selects the extraneous root; RHS = −1 when x = −1, but √1 = 1 ≠ −1.",
+        "C": "Keeps both roots without checking in the original equation.",
+        "D": "Incorrectly rejects x = 3/2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Squaring a radical equation, solving a quadratic, and checking for extraneous solutions",
+      "trapTypes": [
+        "extraneous root from squaring",
+        "trap answer is the extraneous root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-312828d1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x² − 9 = 0 and (x − 3)/(x² − 9) is defined.\n\nWhich values of x satisfy both conditions simultaneously?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3 and x = −3"
+      },
+      {
+        "letter": "B",
+        "text": "x = 3 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = −3 only"
+      },
+      {
+        "letter": "D",
+        "text": "No values of x"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x² − 9 = 0 → x = 3 or x = −3. But (x − 3)/(x² − 9) requires x² − 9 ≠ 0, so x ≠ 3 and x ≠ −3. The solutions of the first equation are exactly the values excluded by the second condition. No value satisfies both.",
+      "distractors": {
+        "A": "Solves x² − 9 = 0 without applying the domain restriction.",
+        "B": "Tries to cancel (x−3) from numerator and denominator, keeping x = 3.",
+        "C": "Keeps x = −3 thinking only x = 3 is excluded."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing a contradiction between an equation's solutions and a domain restriction",
+      "trapTypes": [
+        "ignoring domain restrictions",
+        "partial cancellation error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-1bb143c2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(2x − 3) + 3 = x\n\nWhat are all values of x that satisfy the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 2 and x = 6"
+      },
+      {
+        "letter": "B",
+        "text": "x = 6 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = 2 only"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Isolate: √(2x − 3) = x − 3. Need x ≥ 3. Square: 2x − 3 = x² − 6x + 9 → x² − 8x + 12 = 0 → (x − 6)(x − 2) = 0 → x = 6 or x = 2. Check x = 6: √(9) = 3, and 6 − 3 = 3 ✓. Check x = 2: √(1) = 1, but 2 − 3 = −1. Since 1 ≠ −1, x = 2 is extraneous.",
+      "distractors": {
+        "A": "Includes both roots without checking; x = 2 gives RHS = −1 but √1 = 1.",
+        "C": "Selects the extraneous root — the classic trap.",
+        "D": "Incorrectly rejects x = 6."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Isolating a radical, squaring, and eliminating the extraneous root",
+      "trapTypes": [
+        "extraneous solution from squaring",
+        "trap answer is the extraneous root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-b0be31e4",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x + 6)/(x² + 5x − 6) = 2/(x − 1)\n\nWhat is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = −6"
+      },
+      {
+        "letter": "B",
+        "text": "x = 1"
+      },
+      {
+        "letter": "C",
+        "text": "x = 0"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Factor the denominator: x² + 5x − 6 = (x + 6)(x − 1). So LHS = (x + 6)/[(x + 6)(x − 1)] = 1/(x − 1) for x ≠ −6, x ≠ 1. The equation becomes 1/(x − 1) = 2/(x − 1), which simplifies to 1 = 2, a contradiction. No solution.",
+      "distractors": {
+        "A": "x = −6 is excluded from the domain (makes x + 6 = 0 in the original denominator).",
+        "B": "x = 1 is excluded (makes x − 1 = 0 in both denominators).",
+        "C": "Checking x = 0: 6/(−6) = −1 and 2/(−1) = −2. Since −1 ≠ −2, not a solution."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Simplifying a rational equation to reveal a contradiction",
+      "trapTypes": [
+        "domain exclusion confusion",
+        "failure to simplify before solving"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-51e7cc3c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x + 8) − √(x) = 2\n\nWhat is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 1"
+      },
+      {
+        "letter": "B",
+        "text": "x = 4"
+      },
+      {
+        "letter": "C",
+        "text": "x = 0"
+      },
+      {
+        "letter": "D",
+        "text": "x = 8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Isolate: √(x + 8) = √x + 2. Square: x + 8 = x + 4√x + 4 → 4 = 4√x → √x = 1 → x = 1. Check: √9 − √1 = 3 − 1 = 2 ✓.",
+      "distractors": {
+        "B": "Squares incorrectly, omitting the cross term 4√x, getting x + 8 = x + 4 → 8 = 4, contradiction, then guesses x = 4.",
+        "C": "x = 0: √8 − 0 = 2√2 ≈ 2.83 ≠ 2.",
+        "D": "x = 8: √16 − √8 = 4 − 2√2 ≈ 1.17 ≠ 2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Using the conjugate/squaring method for equations with two radicals",
+      "trapTypes": [
+        "omitting cross term when squaring",
+        "computational error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-5e6627fd",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "3x/(x² − 1) − 2/(x + 1) = 1/(x − 1)\n\nWhat is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 1"
+      },
+      {
+        "letter": "B",
+        "text": "x = −1"
+      },
+      {
+        "letter": "C",
+        "text": "x = −1/3"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x² − 1 = (x−1)(x+1). Multiply through by (x−1)(x+1):\n3x − 2(x−1) = (x+1) → 3x − 2x + 2 = x + 1 → x + 2 = x + 1 → 2 = 1, contradiction. No solution.",
+      "distractors": {
+        "A": "x = 1 is a domain exclusion, not a solution.",
+        "B": "x = −1 is a domain exclusion, not a solution.",
+        "C": "Algebraic error in distribution, e.g., −2(x−1) = −2x−2 instead of −2x+2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Rational equation that reduces to a contradiction after clearing denominators",
+      "trapTypes": [
+        "distribution sign error",
+        "choosing domain-excluded values"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-1d0b649c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If √(4x + 5) = 2√(x) + 1, what is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 4"
+      },
+      {
+        "letter": "B",
+        "text": "x = 1"
+      },
+      {
+        "letter": "C",
+        "text": "x = 1/4"
+      },
+      {
+        "letter": "D",
+        "text": "x = 0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Square both sides: 4x + 5 = 4x + 4√x + 1 → 4 = 4√x → √x = 1 → x = 1. Check: √(9) = 3, and 2(1) + 1 = 3 ✓.",
+      "distractors": {
+        "A": "x = 4: √21 ≈ 4.58, 2(2)+1 = 5. Close but not equal.",
+        "C": "x = 1/4: √6 ≈ 2.45, 2(1/2)+1 = 2. Not equal.",
+        "D": "x = 0: √5 ≈ 2.24, 0+1 = 1. Not equal."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Squaring an equation with two radical terms to isolate and solve",
+      "trapTypes": [
+        "cross-term omission when squaring",
+        "approximate solution trap"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-1e62f6e1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x² − x − 6)/(x − 3) = (x + 4)/(1)\n\nWhat are all values of x that satisfy the equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3"
+      },
+      {
+        "letter": "B",
+        "text": "x = 3 and x = −2"
+      },
+      {
+        "letter": "C",
+        "text": "x = −2 only"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Factor: x² − x − 6 = (x − 3)(x + 2). So LHS = (x−3)(x+2)/(x−3) = x + 2 for x ≠ 3. Equation becomes x + 2 = x + 4 → 2 = 4, contradiction. No solution. Note: x = 3 is excluded, and no other x satisfies 2 = 4.",
+      "distractors": {
+        "A": "x = 3 is excluded from the domain.",
+        "B": "Includes domain-excluded x = 3 and x = −2 from the factor, but x = −2 gives −2+2=0 ≠ −2+4=2.",
+        "C": "x = −2 doesn't satisfy the simplified equation 2 = 4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Simplifying a rational expression to reveal a contradiction",
+      "trapTypes": [
+        "domain exclusion confusion",
+        "extra root from factoring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-44fe6106",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x² − 4x + 4) = x − 2\n\nWhat is the solution set?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All real numbers"
+      },
+      {
+        "letter": "B",
+        "text": "x ≥ 2 (all real numbers greater than or equal to 2)"
+      },
+      {
+        "letter": "C",
+        "text": "x = 2 only"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "x² − 4x + 4 = (x − 2)². So √((x−2)²) = |x − 2|. The equation becomes |x − 2| = x − 2. This holds when x − 2 ≥ 0, i.e., x ≥ 2. For x < 2, |x−2| = 2 − x ≠ x − 2 (unless both are 0). Solution set: x ≥ 2.",
+      "distractors": {
+        "A": "Ignores that √(a²) = |a|, not a; the equation fails for x < 2.",
+        "C": "Only considers the boundary point x = 2.",
+        "D": "Incorrectly thinks the equation is always false."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing √(a²) = |a| and applying absolute value reasoning",
+      "trapTypes": [
+        "confusing √(a²) with a",
+        "missing inequality solution set"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-c5c37b59",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "1/(x − 2) + 1/(x + 2) = 4/(x² − 4)\n\nHow many real solutions does the equation have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "Infinitely many"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x² − 4 = (x−2)(x+2). Multiply: (x+2) + (x−2) = 4 → 2x = 4 → x = 2. But x = 2 makes (x−2) = 0, so x = 2 is excluded. No valid solution.",
+      "distractors": {
+        "B": "Finds x = 2 algebraically but doesn't check the domain restriction.",
+        "C": "Thinks x = −2 is also a solution (it's a domain exclusion, not derived algebraically).",
+        "D": "Confuses with an identity equation."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "LCD multiplication producing a domain-excluded solution",
+      "trapTypes": [
+        "extraneous from zero denominator",
+        "single-solution rational trap"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-85a2d781",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(7 − x) = x − 5\n\nWhat are all values of x that satisfy the equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3 and x = 6"
+      },
+      {
+        "letter": "B",
+        "text": "x = 6 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = 3 only"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Need x − 5 ≥ 0 → x ≥ 5, and 7 − x ≥ 0 → x ≤ 7. So 5 ≤ x ≤ 7. Square: 7 − x = x² − 10x + 25 → x² − 9x + 18 = 0 → (x−3)(x−6) = 0 → x = 3 or x = 6. x = 3 < 5, outside domain. Check x = 6: √1 = 1, 6−5 = 1 ✓.",
+      "distractors": {
+        "A": "Includes x = 3, which is outside the required domain x ≥ 5.",
+        "C": "Selects only x = 3, the extraneous root. Also, √4 = 2 but 3 − 5 = −2.",
+        "D": "Incorrectly rejects x = 6."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Domain analysis before squaring to pre-eliminate extraneous candidates",
+      "trapTypes": [
+        "extraneous root outside domain",
+        "choosing the trap answer"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-9570626c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x/(x + 2) + 2/(x − 2) = 8/(x² − 4)\n\nWhat is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 2"
+      },
+      {
+        "letter": "B",
+        "text": "x = −2"
+      },
+      {
+        "letter": "C",
+        "text": "x = 4"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x² − 4 = (x+2)(x−2). Multiply through: x(x−2) + 2(x+2) = 8 → x² − 2x + 2x + 4 = 8 → x² + 4 = 8 → x² = 4 → x = ±2. But x = 2 and x = −2 are both excluded from the domain. No valid solution.",
+      "distractors": {
+        "A": "x = 2 makes (x − 2) = 0 — excluded from domain.",
+        "B": "x = −2 makes (x + 2) = 0 — excluded from domain.",
+        "C": "Arithmetic error; x = 4: 4/6 + 2/2 = 2/3 + 1 = 5/3 vs 8/12 = 2/3. Not equal."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Both algebraic solutions coincide with domain exclusions",
+      "trapTypes": [
+        "both solutions extraneous",
+        "domain exclusion oversight"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-1528f9cb",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(2x + 3) − √(x − 2) = 2\n\nHow many values of x satisfy the equation above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "Infinitely many"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Isolate: √(2x+3) = 2 + √(x−2). Square: 2x+3 = 4+4√(x−2)+x−2 → x+1 = 4√(x−2). Square again: x²+2x+1 = 16(x−2) = 16x−32 → x²−14x+33 = 0 → (x−3)(x−11) = 0. Check x=3: √9−√1 = 3−1 = 2 ✓. Check x=11: √25−√9 = 5−3 = 2 ✓. Both valid.",
+      "distractors": {
+        "A": "Mistakenly believes both are extraneous.",
+        "B": "Checks only one candidate and stops.",
+        "D": "Misreads the equation as an identity."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Double-squaring technique for two-radical equations and verifying both candidates",
+      "trapTypes": [
+        "premature elimination of valid solution",
+        "assuming only one root survives"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-7ed76756",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x² + 2x)/(x + 2) = (x² − 4)/(x + 2)\n\nWhat is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = −2"
+      },
+      {
+        "letter": "B",
+        "text": "x = 2"
+      },
+      {
+        "letter": "C",
+        "text": "x = 0"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Multiply both sides by (x + 2): x² + 2x = x² − 4 → 2x = −4 → x = −2. But x = −2 makes (x + 2) = 0, so the original equation is undefined there. The only algebraic solution is extraneous. No valid solution.",
+      "distractors": {
+        "A": "The algebraic result x = −2, but it makes the common denominator zero — extraneous.",
+        "B": "Factoring error: x² − 4 = (x−2)(x+2), leading to confusion with x = 2.",
+        "C": "Setting x(x+2) = 0 and choosing x = 0, but that doesn't satisfy the equation."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Rational equation whose only algebraic solution is a domain exclusion",
+      "trapTypes": [
+        "extraneous from zero denominator",
+        "factoring misdirection"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-782c10cb",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x + 3) = −√(x − 1)\n\nWhat is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = −1"
+      },
+      {
+        "letter": "B",
+        "text": "x = 1"
+      },
+      {
+        "letter": "C",
+        "text": "x = −1 and x = 1"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Both √(x+3) ≥ 0 and √(x−1) ≥ 0, so −√(x−1) ≤ 0. The equation requires a non-negative LHS to equal a non-positive RHS, so both must be 0. √(x+3)=0 → x=−3, and √(x−1)=0 → x=1. Since x cannot be both −3 and 1, no solution exists.",
+      "distractors": {
+        "A": "Not in the domain of √(x−1) since −1−1 = −2 < 0.",
+        "B": "x=1: √4 = 2, −√0 = 0. Since 2 ≠ 0, not a solution.",
+        "C": "Neither value satisfies the equation."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Analyzing sign constraints of radicals to prove no solution",
+      "trapTypes": [
+        "squaring eliminates sign constraint",
+        "sign analysis shortcut needed"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-d470972c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x + 1)/(x − 3) + 2 = (3x − 3)/(x − 3)\n\nWhat is the value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3"
+      },
+      {
+        "letter": "B",
+        "text": "x = 1"
+      },
+      {
+        "letter": "C",
+        "text": "x = −1"
+      },
+      {
+        "letter": "D",
+        "text": "There is no solution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Multiply both sides by (x − 3): (x + 1) + 2(x − 3) = 3x − 3 → x + 1 + 2x − 6 = 3x − 3 → 3x − 5 = 3x − 3 → −5 = −3, a contradiction. No solution.",
+      "distractors": {
+        "A": "x = 3 is a domain exclusion (denominator = 0), not a solution.",
+        "B": "Algebraic error in distribution.",
+        "C": "Sign error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Clearing denominators reveals a contradiction",
+      "trapTypes": [
+        "contradiction after LCD clearing",
+        "choosing domain-excluded value"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-34fbc845",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x − 1 = √(13 − x)\n\nWhat are all values of x that satisfy the equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 4 and x = −3"
+      },
+      {
+        "letter": "B",
+        "text": "x = 4 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = −3 only"
+      },
+      {
+        "letter": "D",
+        "text": "There are no solutions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Need x − 1 ≥ 0 → x ≥ 1, and 13 − x ≥ 0 → x ≤ 13. Square: x² − 2x + 1 = 13 − x → x² − x − 12 = 0 → (x − 4)(x + 3) = 0 → x = 4 or x = −3. x = −3 < 1, outside domain (also: −3−1 = −4 but √16 = 4, so −4 ≠ 4). x = 4: 4 − 1 = 3, √(13−4) = √9 = 3 ✓.",
+      "distractors": {
+        "A": "Includes x = −3, which fails both the domain restriction x ≥ 1 and direct substitution.",
+        "C": "Picks the extraneous root — the trap.",
+        "D": "Incorrectly rejects x = 4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Domain analysis and extraneous root detection",
+      "trapTypes": [
+        "extraneous from squaring",
+        "domain restriction violation"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-f4bff83f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(3x + 1) = x − 1\n\nWhat is the value of x that satisfies the equation above?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "Square: 3x + 1 = x² − 2x + 1 → x² − 5x = 0 → x(x − 5) = 0 → x = 0 or x = 5. Check x = 0: √1 = 1, but 0 − 1 = −1. Since 1 ≠ −1, extraneous. Check x = 5: √16 = 4, and 5 − 1 = 4 ✓. Answer: 5."
+    },
+    "metadata": {
+      "cognitiveMove": "Radical equation with one extraneous root; student must verify and reject x = 0",
+      "trapTypes": [
+        "extraneous solution from squaring",
+        "trap answer is 0"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-f9a7328c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "5/(x + 1) − 3/(x − 1) = 2/(x² − 1)\n\nWhat is the value of x?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "x² − 1 = (x+1)(x−1). Multiply through by (x+1)(x−1):\n5(x − 1) − 3(x + 1) = 2 → 5x − 5 − 3x − 3 = 2 → 2x − 8 = 2 → 2x = 10 → x = 5. Check domain: x ≠ ±1. x = 5 is valid ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Clearing LCD in a rational equation and verifying domain",
+      "trapTypes": [
+        "domain restriction check",
+        "distribution sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-cf9d1308",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(2x + 3) = x\n\nWhat is the value of x that satisfies the equation above?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "Square: 2x + 3 = x² → x² − 2x − 3 = 0 → (x − 3)(x + 1) = 0 → x = 3 or x = −1. Check x = 3: √9 = 3 ✓. Check x = −1: √1 = 1 ≠ −1, extraneous. Only x = 3."
+    },
+    "metadata": {
+      "cognitiveMove": "Radical equation where one root is extraneous due to sign mismatch",
+      "trapTypes": [
+        "extraneous solution from squaring",
+        "trap answer is −1"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-3a77bbf5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x + 7) − 1 = √(x)\n\nWhat is the value of x?",
+    "type": "SPR",
+    "correctAnswer": "9",
+    "acceptableAnswers": [
+      "9"
+    ],
+    "explanation": {
+      "correct": "Square: (√(x+7) − 1)² = x → x + 7 − 2√(x+7) + 1 = x → 8 = 2√(x+7) → √(x+7) = 4 → x + 7 = 16 → x = 9. Check: √16 − 1 = 3 = √9 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Isolating and squaring a two-radical equation",
+      "trapTypes": [
+        "cross-term error when squaring",
+        "forgetting to verify"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-fbf96faf",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x/(x − 2) + 2/(x + 2) = 4x/(x² − 4)\n\nIf the equation above has a valid solution, what is it? If there is no valid solution, what is the number of valid solutions?",
+    "type": "SPR",
+    "correctAnswer": "0",
+    "acceptableAnswers": [
+      "0"
+    ],
+    "explanation": {
+      "correct": "x² − 4 = (x−2)(x+2). Multiply through: x(x+2) + 2(x−2) = 4x → x² + 2x + 2x − 4 = 4x → x² + 4x − 4 = 4x → x² = 4 → x = ±2. Both x = 2 and x = −2 make denominators zero and are excluded. No valid solution exists. The number of valid solutions is 0."
+    },
+    "metadata": {
+      "cognitiveMove": "Both algebraic solutions are domain-excluded; recognizing no valid answer",
+      "trapTypes": [
+        "both solutions extraneous",
+        "domain exclusion for ±2"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-44708d90",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x + 12) = x\n\nWhat is the sum of all valid solutions?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "Need x ≥ 0 (since x = √(x+12) ≥ 0). Square: x + 12 = x² → x² − x − 12 = 0 → (x − 4)(x + 3) = 0 → x = 4 or x = −3. Since x must be ≥ 0, x = −3 is extraneous. Check x = 4: √16 = 4 ✓. Sum = 4."
+    },
+    "metadata": {
+      "cognitiveMove": "Radical equation with domain restriction eliminating one root",
+      "trapTypes": [
+        "extraneous solution from squaring",
+        "negative root trap"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-ba986c30",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x + √(x − 3) = 5\n\nWhat is the value of x?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "Isolate: √(x−3) = 5−x. Need x ≤ 5 and x ≥ 3. Square: x−3 = 25−10x+x² → x² − 11x + 28 = 0 → (x−4)(x−7) = 0 → x = 4 or x = 7. x = 7 > 5, so 5−7 = −2 < 0, extraneous. Check x = 4: 4 + √1 = 5 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Isolating a radical, squaring, and using domain constraints to eliminate extraneous root",
+      "trapTypes": [
+        "extraneous from domain violation",
+        "choosing x = 7"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-31575e4e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "2/(x − 1) − 1/(x + 2) = 5/((x − 1)(x + 2))\n\nWhat is the value of x?",
+    "type": "SPR",
+    "correctAnswer": "0",
+    "acceptableAnswers": [
+      "0"
+    ],
+    "explanation": {
+      "correct": "Multiply both sides by (x − 1)(x + 2): 2(x + 2) − (x − 1) = 5 → 2x + 4 − x + 1 = 5 → x + 5 = 5 → x = 0. Check domain: x ≠ 1, x ≠ −2. x = 0 is valid ✓. Verify: 2/(−1) − 1/2 = −2 − 0.5 = −2.5. RHS: 5/((−1)(2)) = 5/(−2) = −2.5 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Clearing LCD in a rational equation with two distinct linear denominators",
+      "trapTypes": [
+        "distribution sign error",
+        "domain restriction check"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-81690b96",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(x² − 9) = x − 1\n\nWhat is the value of x that satisfies the equation?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "Need x − 1 ≥ 0 → x ≥ 1, and x² − 9 ≥ 0 → x ≥ 3 or x ≤ −3. Combined: x ≥ 3. Square: x² − 9 = x² − 2x + 1 → −9 = −2x + 1 → 2x = 10 → x = 5. Check: √(25 − 9) = √16 = 4, and 5 − 1 = 4 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Domain analysis combined with squaring; single candidate survives",
+      "trapTypes": [
+        "domain restriction handling",
+        "sign error in squaring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-72051aab",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(3x − 5) = √(x + 1)\n\nWhat is the value of x?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "Square both sides: 3x − 5 = x + 1 → 2x = 6 → x = 3. Check: √(9 − 5) = √4 = 2, and √(3 + 1) = √4 = 2 ✓. Domain: 3x − 5 ≥ 0 → x ≥ 5/3, and x + 1 ≥ 0 → x ≥ −1. x = 3 satisfies both."
+    },
+    "metadata": {
+      "cognitiveMove": "Squaring two radicals set equal; straightforward with domain check",
+      "trapTypes": [
+        "forgetting domain check",
+        "arithmetic error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-c389b019",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation √(x + k) = x − 3 has exactly one valid solution, x = 7. What is the value of k?",
+    "type": "SPR",
+    "correctAnswer": "9",
+    "acceptableAnswers": [
+      "9"
+    ],
+    "explanation": {
+      "correct": "Substitute x = 7: √(7 + k) = 7 − 3 = 4 → 7 + k = 16 → k = 9. Verify: √(x + 9) = x − 3. Square: x + 9 = x² − 6x + 9 → x² − 7x = 0 → x(x−7) = 0. x = 0: √9 = 3, but 0 − 3 = −3. Since 3 ≠ −3, extraneous. x = 7: √16 = 4, and 7 − 3 = 4 ✓. Exactly one valid solution. k = 9."
+    },
+    "metadata": {
+      "cognitiveMove": "Working backwards from a given solution to find a parameter, then verifying uniqueness",
+      "trapTypes": [
+        "failing to verify the extraneous root is indeed excluded",
+        "parameter determination"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  },
+  {
+    "id": "antigravity-hard-ff71ca61",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "√(2x + 5) = √(x + 7)\n\nWhat is the value of x?",
+    "type": "SPR",
+    "correctAnswer": "2",
+    "acceptableAnswers": [
+      "2"
+    ],
+    "explanation": {
+      "correct": "Square: 2x + 5 = x + 7 → x = 2. Check: √(4 + 5) = √9 = 3, and √(2 + 7) = √9 = 3 ✓. Domain: 2x + 5 ≥ 0 → x ≥ −5/2, and x + 7 ≥ 0 → x ≥ −7. x = 2 valid."
+    },
+    "metadata": {
+      "cognitiveMove": "Setting two radicals equal and squaring to solve a linear equation",
+      "trapTypes": [
+        "forgetting domain verification",
+        "arithmetic error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-extran"
+    }
+  }
+]

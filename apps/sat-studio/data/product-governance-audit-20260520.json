@@ -1,0 +1,372 @@
+{
+  "generatedAt": "2026-05-20",
+  "inventory": {
+    "loadedRows": 8529,
+    "reviewStatus": {
+      "reviewed": 8261,
+      "rejected": 167,
+      "needs_review": 101
+    },
+    "visibility": {
+      "private_family": 5097,
+      "missing": 2262,
+      "public_candidate": 1170
+    },
+    "publicationStatusTop": {
+      "private_reviewed": 4412,
+      "reviewed": 2181,
+      "public_candidate_reviewed": 1170,
+      "private_auto_reviewed": 507,
+      "rejected_duplicate_prompt": 144,
+      "needs_review_1600_gate": 81,
+      "rejected_template_easy": 23,
+      "private_similarity_review": 11
+    },
+    "lifecycleState": {
+      "reviewed_private": 3953,
+      "remedial_only": 469,
+      "rejected": 167,
+      "hidden_duplicate": 562,
+      "reviewed_unclear_publication": 2172,
+      "blocked": 99,
+      "needs_expert_review": 2,
+      "public_candidate_reviewed": 1105
+    }
+  },
+  "publicReleaseGate": {
+    "adminPublicReadyHeuristicCount": 1170,
+    "manifestSafeCount": 1170,
+    "manifestNeedsSourceReviewCount": 1054,
+    "publicCandidateCount": 1170,
+    "publicCandidateBlockedCount": 0,
+    "adminReadyButNotManifestSafeCount": 0,
+    "publicManifestScripts": [
+      "sat_public_manifest_engine.js",
+      "scripts\\public_manifest_engine_unit_tests.js"
+    ],
+    "releaseGateScripts": [],
+    "hasPublicManifestGate": true,
+    "hasPublicManifestArtifactExport": true,
+    "publicCandidateBlockedSamples": [],
+    "adminReadyButNotManifestSafeSamples": [],
+    "sourceTypeManifestSafe": {
+      "sat_1590": 700,
+      "sat_king": 354,
+      "foundation": 116
+    }
+  },
+  "contentLifecycle": {
+    "ambiguousReviewedCount": 2172,
+    "ambiguousReviewedSamples": [
+      {
+        "id": "random_id_a1",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      },
+      {
+        "id": "random_id_d6",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      },
+      {
+        "id": "9955574d",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      },
+      {
+        "id": "99315200",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      },
+      {
+        "id": "random_id_e1",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      },
+      {
+        "id": "e5d337a9",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      },
+      {
+        "id": "random_id_e2",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      },
+      {
+        "id": "5c7213da",
+        "sourceFile": "opensat-pinesat.json",
+        "visibility": null,
+        "publicationStatus": "reviewed",
+        "reviewStatus": "reviewed",
+        "sourceType": null
+      }
+    ],
+    "stateMachineDebt": [
+      "reviewStatus, visibility, publicationStatus, auditStatus, practicePool, and contentAudit can drift independently.",
+      "Several legacy publicationStatus values such as 'reviewed' and 'private_reviewed' are not canonical lifecycle states.",
+      "Admin public-ready counts do not currently share one manifest gate with learner-facing permission checks."
+    ]
+  },
+  "topicOverload": [
+    {
+      "topic": "constants",
+      "coreVisible": 24,
+      "target": 35,
+      "overflow": 47,
+      "difficulty": {
+        "Hard": 22,
+        "Medium": 2
+      },
+      "sourceType": {
+        "antigravity": 21,
+        "missing": 2,
+        "private_vault": 1
+      },
+      "remainingEasyMediumGeneratedCandidates": 0,
+      "sampleIds": [
+        "antigravity-ae6b57f9",
+        "antigravity-1600-91d5d996",
+        "antigravity-1600-62a0dae9",
+        "antigravity-1600-ae791745",
+        "antigravity-1600-bc26ec4f",
+        "antigravity-1600-e840d425",
+        "antigravity-1600-664f616a",
+        "antigravity-1600-19e35964",
+        "antigravity-1600-18d0dc6c",
+        "antigravity-1600-43d4166a"
+      ],
+      "auditAction": "review_context_variety"
+    },
+    {
+      "topic": "hypotenuse",
+      "coreVisible": 78,
+      "target": 35,
+      "overflow": 43,
+      "difficulty": {
+        "Easy": 27,
+        "Medium": 28,
+        "Hard": 23
+      },
+      "sourceType": {
+        "antigravity": 33,
+        "missing": 18,
+        "sat_1590": 18,
+        "sat_king": 5,
+        "foundation": 4
+      },
+      "remainingEasyMediumGeneratedCandidates": 38,
+      "sampleIds": [
+        "antigravity-70255835",
+        "antigravity-84754620",
+        "antigravity-d07839fc",
+        "antigravity-f81b706d",
+        "antigravity-bf8e8f5e",
+        "antigravity-a975e204",
+        "antigravity-cc4d88ae",
+        "antigravity-acd41d26",
+        "antigravity-e8135ee6",
+        "antigravity-f3821c67"
+      ],
+      "auditAction": "review_or_hide_easy_medium_clones"
+    },
+    {
+      "topic": "probability",
+      "coreVisible": 55,
+      "target": 35,
+      "overflow": 20,
+      "difficulty": {
+        "Hard": 17,
+        "Medium": 22,
+        "Easy": 16
+      },
+      "sourceType": {
+        "antigravity": 33,
+        "missing": 7,
+        "private_vault": 2,
+        "sat_1590": 6,
+        "sat_king": 3,
+        "foundation": 4
+      },
+      "remainingEasyMediumGeneratedCandidates": 25,
+      "sampleIds": [
+        "antigravity-0d6d8012",
+        "antigravity-d88da3ef",
+        "antigravity-25ad39d0",
+        "antigravity-00ace311",
+        "antigravity-799e202c",
+        "antigravity-25d46ae6",
+        "antigravity-80c3c414",
+        "antigravity-e1d80ee8",
+        "antigravity-10917fcd",
+        "antigravity-87156018"
+      ],
+      "auditAction": "review_or_hide_easy_medium_clones"
+    },
+    {
+      "topic": "investment",
+      "coreVisible": 16,
+      "target": 35,
+      "overflow": 18,
+      "difficulty": {
+        "Easy": 2,
+        "Hard": 12,
+        "Medium": 2
+      },
+      "sourceType": {
+        "antigravity": 15,
+        "private_vault": 1
+      },
+      "remainingEasyMediumGeneratedCandidates": 4,
+      "sampleIds": [
+        "antigravity-512ddf30",
+        "antigravity-c0c3d276",
+        "antigravity-eaa41e60",
+        "antigravity-40bbed5b",
+        "antigravity-a34b8a15",
+        "antigravity-85d8e79c",
+        "antigravity-1600-301418e0",
+        "antigravity-1600-c55bd9f2",
+        "antigravity-1600-9b7febc5",
+        "antigravity-1600-69964d0d"
+      ],
+      "auditAction": "review_or_hide_easy_medium_clones"
+    },
+    {
+      "topic": "remainder",
+      "coreVisible": 14,
+      "target": 35,
+      "overflow": 17,
+      "difficulty": {
+        "Medium": 1,
+        "Hard": 13
+      },
+      "sourceType": {
+        "antigravity": 14
+      },
+      "remainingEasyMediumGeneratedCandidates": 1,
+      "sampleIds": [
+        "antigravity-f0a1a759",
+        "antigravity-1600-34bfc8a9",
+        "antigravity-1600-f31b0b58",
+        "antigravity-1600-a9278a81",
+        "antigravity-1600-29afe3f4",
+        "antigravity-1600-fbbb3433",
+        "antigravity-1600-5bb9b043",
+        "antigravity-1600-48119467",
+        "antigravity-1600-97134a8a",
+        "antigravity-1600-b117961e"
+      ],
+      "auditAction": "review_or_hide_easy_medium_clones"
+    },
+    {
+      "topic": "circumference",
+      "coreVisible": 50,
+      "target": 35,
+      "overflow": 15,
+      "difficulty": {
+        "Medium": 30,
+        "Easy": 16,
+        "Hard": 4
+      },
+      "sourceType": {
+        "antigravity": 10,
+        "missing": 39,
+        "private_vault": 1
+      },
+      "remainingEasyMediumGeneratedCandidates": 10,
+      "sampleIds": [
+        "antigravity-e004251e",
+        "antigravity-0b643a30",
+        "antigravity-ccdf9f3c",
+        "antigravity-ceac9c48",
+        "antigravity-ae3971b4",
+        "antigravity-f29e5658",
+        "antigravity-6e934791",
+        "antigravity-964cb9b9",
+        "antigravity-e7cd61ad",
+        "antigravity-0208993a"
+      ],
+      "auditAction": "review_or_hide_easy_medium_clones"
+    },
+    {
+      "topic": "radioactive",
+      "coreVisible": 11,
+      "target": 35,
+      "overflow": 15,
+      "difficulty": {
+        "Hard": 8,
+        "Easy": 2,
+        "Medium": 1
+      },
+      "sourceType": {
+        "antigravity": 11
+      },
+      "remainingEasyMediumGeneratedCandidates": 3,
+      "sampleIds": [
+        "antigravity-3711193b",
+        "antigravity-bf7cacce",
+        "antigravity-8c1e88f8",
+        "antigravity-b647654a",
+        "antigravity-1600-06d135e3",
+        "antigravity-1600-4d16c3f2",
+        "antigravity-1600-fb22e86d",
+        "antigravity-1600-01fa9e76",
+        "antigravity-1600-51a1a7ac",
+        "antigravity-1600-60f05399"
+      ],
+      "auditAction": "review_or_hide_easy_medium_clones"
+    }
+  ],
+  "writtenWorkEvidenceCapture": {
+    "appFieldPresence": {},
+    "captureGaps": [
+      "No structured attempt field for Math written work / scratch-work.",
+      "No structured attempt field for R&W evidence citation before answer choice selection.",
+      "Mistake note exists, but it is stored as profile notes rather than attached to the attempt as proof evidence.",
+      "Remediation can prescribe evidence-first or written-work drills, but completion proof is inferred from later attempts, not captured directly."
+    ],
+    "recommendation": "Add attempt-level studentWork/evidenceCitation fields and require them for hard Math proof sets and R&W evidence/misread errors."
+  },
+  "priorityFindings": [
+    {
+      "priority": "P1",
+      "title": "Content lifecycle needs canonical states.",
+      "evidence": "2172 reviewed rows fall into reviewed_unclear_publication under the proposed lifecycle mapping.",
+      "action": "Add a canonical lifecycleState derivation and migrate legacy publicationStatus values gradually."
+    },
+    {
+      "priority": "P1",
+      "title": "Written-work/evidence-citation proof is not captured at attempt level.",
+      "evidence": "The app stores selected answer, timing, error tag, and notes, but no structured proof/evidence field on the attempt.",
+      "action": "Add proof fields to attempt creation and surface them in remediation/parent reports."
+    },
+    {
+      "priority": "P2",
+      "title": "7 repeated topics still need manual keep/remedial decisions.",
+      "evidence": "constants overflow 47, hypotenuse overflow 43, probability overflow 20, investment overflow 18, remainder overflow 17, circumference overflow 15, radioactive overflow 15",
+      "action": "Review hard/immutable variants manually; keep only distinct cognitive moves."
+    }
+  ]
+}

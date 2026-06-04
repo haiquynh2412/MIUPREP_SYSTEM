@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-06-01T00:00:54.214403+00:00",
+  "verdict": "closed_loop_core_ready",
+  "phases": [
+    "Diagnostic",
+    "Remedial Drill",
+    "Standard SAT Build",
+    "Proof Transfer",
+    "1500+ Crucible",
+    "Maintenance"
+  ],
+  "closedLoop": [
+    "diagnostic",
+    "sprint",
+    "review",
+    "lesson",
+    "proof",
+    "spaced_repetition",
+    "refresh"
+  ],
+  "checks": [
+    {
+      "id": "closed_loop_phase_contract",
+      "label": "Roadmap can classify the learner into a closed-loop training phase.",
+      "status": "done",
+      "evidence": "sat_roadmap_engine.js exports buildClosedLoopTrainingPlan and closedLoopPhaseFor."
+    },
+    {
+      "id": "sprint_prescription_contract",
+      "label": "Daily sprint type, count, exit rule, and routing bias are explicit.",
+      "status": "done",
+      "evidence": "sat_practice_engine.js exports buildSprintPrescription."
+    },
+    {
+      "id": "adaptive_crucible_routing",
+      "label": "1500+ mode has same-skill, transfer, mixed, and timed proof buckets.",
+      "status": "done",
+      "evidence": "sat_adaptive_routing_engine.js builds the four Crucible routing buckets."
+    },
+    {
+      "id": "remediation_proof_loop",
+      "label": "Wrong answers route into lesson, proof, proof failure, and due review states.",
+      "status": "done",
+      "evidence": "sat_remediation_engine.js contains proof lifecycle states and review cadence."
+    },
+    {
+      "id": "mastery_requires_hard_fresh_proof",
+      "label": "Mastered status is gated by hard/timed fresh proof, not raw accuracy alone.",
+      "status": "done",
+      "evidence": "sat_mastery_engine.js tracks hard/timed fresh proof forms."
+    },
+    {
+      "id": "bank_quality_blockers",
+      "label": "Reviewed question bank has no critical blockers, rejected rows, or topic overload.",
+      "status": "done",
+      "evidence": {
+        "criticalIssueCount": 0,
+        "blockedSourceQuestionCount": 0,
+        "overrepresentedTopicCount": 0,
+        "warningIssueCount": 0
+      }
+    },
+    {
+      "id": "expert_review_pool_quality",
+      "label": "Reviewed pool remains academically ready for high-quality SAT practice.",
+      "status": "done",
+      "evidence": {
+        "verdict": "reviewed_pool_ready_for_high_quality_practice",
+        "accuracyScore10": 10.0,
+        "depthScore10": 10.0,
+        "breadthScore10": 10.0,
+        "overallExpertScore10": 10.0,
+        "accuracyBlockerCount": 0,
+        "depthGapCount": 0,
+        "coreDomainGapCount": 0,
+        "overloadedTopicCount": 0
+      }
+    },
+    {
+      "id": "all_active_questions_reviewed",
+      "label": "Active study rows are reviewed or content-audit pass.",
+      "status": "done",
+      "evidence": {
+        "loadedTotal": 10523,
+        "coreReadyReviewed": 9750,
+        "needsReviewOrContentAuditNotPass": 0
+      }
+    }
+  ],
+  "remaining": [
+    {
+      "id": "irt_live_calibration",
+      "status": "pending",
+      "reason": "Needs real student logs before difficulty and discrimination parameters are statistically defensible.",
+      "nextStep": "Collect attempt logs, then fit per-item difficulty/discrimination and compare against current heuristic routing."
+    },
+    {
+      "id": "long_rw_prompt_rewrite",
+      "status": "deferred",
+      "reason": "53 technically valid long RW prompts are suppressed from default study by policy, not quality blockers.",
+      "nextStep": "Rewrite or split only if the product wants them in default learner flow."
+    }
+  ]
+}

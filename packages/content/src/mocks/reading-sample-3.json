@@ -1,0 +1,157 @@
+{
+  "id": "reading-sample-3",
+  "title": "The History and Science of Tea",
+  "type": "academic",
+  "skill": "reading",
+  "sections": [
+    {
+      "id": "r3-sec-1",
+      "title": "Tea Cultivation and History",
+      "instructions": "Answer the questions below based on the passage.",
+      "passageHtml": "<h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">Historical Origins</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">The story of tea is rich and ancient. According to Chinese legend, tea was discovered accidentally in 2737 BC by the Emperor Shennong, a skilled scientist and ruler, when wild tea leaves fell into his pot of boiling drinking water. The Emperor found the resulting infusion refreshing and restorative, marking the legendary birth of tea culture. Centuries later, during the Tang Dynasty, the writer Lu Yu penned a seminal treatise titled <i>The Classic of Tea</i> (or <i>Cha Jing</i>), which meticulously detailed the cultivation, processing, and preparation of tea, elevating the simple act of tea drinking into an esteemed spiritual art form.</p><h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">The Chemistry of the Leaf</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">All true tea originates from a single plant species: <i>Camellia sinensis</i>. The vast differences in color, aroma, and flavor between green tea and black tea are entirely due to post-harvest processing methods. Black tea undergoes full oxidation, a biochemical process driven by polyphenol oxidase enzymes, which darkens the leaves and develops rich, malty compounds. Conversely, green tea leaves are steamed or pan-fired shortly after harvesting, which denatures these enzymes and halts oxidation, preserving their natural green color and high concentration of antioxidants. In addition to antioxidants, tea contains L-theanine, an amino acid unique to the plant that is scientifically proven to promote mental focus and physical relaxation by stimulating alpha waves in the brain.</p><h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">Global Expansion</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">Tea expanded beyond Asian borders in the 17th century. It made its grand debut in the English royal court in 1662, popularized by the Portuguese princess Catherine of Braganza upon her marriage to King Charles II. Her fondness for the drink turned tea into a highly fashionable luxury among the British aristocracy. Eager to break the Chinese monopoly on tea, the British East India Company later sent the Scottish botanist Robert Fortune on a covert mission to China in 1848. Disguised as a Chinese merchant, Fortune successfully smuggled tea plants, seeds, and skilled tea makers out of the country, introducing commercial tea cultivation to the hills of Darjeeling in British India.</p>",
+      "questionGroups": [
+        {
+          "id": "r3-rg-1",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage.",
+          "questions": [
+            {
+              "id": "q-r3-1",
+              "type": "gap_fill",
+              "instruction": "According to legend, tea was discovered by Shennong in the year ______ BC.",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "2737"
+                ]
+              ],
+              "correctAnswer": "2737",
+              "explanation": "Đoạn 1 nêu rõ trà được phát hiện tình cờ bởi Hoàng đế Thần Nông vào năm 2737 TCN: 'discovered accidentally in 2737 BC by the Emperor Shennong...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "discovered accidentally in 2737 BC"
+            },
+            {
+              "id": "q-r3-2",
+              "type": "gap_fill",
+              "instruction": "Lu Yu wrote a famous book titled ______ which described tea preparation.",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "The Classic of Tea",
+                  "Cha Jing"
+                ]
+              ],
+              "correctAnswer": "The Classic of Tea",
+              "explanation": "Đoạn 1 đề cập nhà văn Lục Vũ đã viết một tác phẩm kinh điển có tựa đề 'The Classic of Tea' hoặc 'Cha Jing': 'Lu Yu penned a seminal treatise titled The Classic of Tea (or Cha Jing)...'",
+              "answerLocation": "treatise titled The Classic of Tea (or Cha Jing)"
+            },
+            {
+              "id": "q-r3-3",
+              "type": "gap_fill",
+              "instruction": "The chemical changes in tea leaves during processing are driven by ______ enzymes.",
+              "blankIndex": 3,
+              "acceptedAnswers": [
+                [
+                  "polyphenol oxidase"
+                ]
+              ],
+              "correctAnswer": "polyphenol oxidase",
+              "explanation": "Đoạn 2 chỉ ra quá trình oxy hóa ở lá trà được thúc đẩy bởi các enzyme polyphenol oxidase: 'a biochemical process driven by polyphenol oxidase enzymes...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "driven by polyphenol oxidase enzymes"
+            }
+          ]
+        },
+        {
+          "id": "r3-rg-2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-r3-4",
+              "type": "multiple_choice",
+              "instruction": "What role did Catherine of Braganza play in the history of tea?",
+              "options": [
+                "A. She discovered the wild tea plant in India.",
+                "B. She popularized tea drinking among the English royalty.",
+                "C. She wrote the first scientific treatise on tea leaves."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đoạn 3 cho biết Catherine của Braganza đã phổ biến thói quen uống trà trong hoàng gia Anh sau khi kết hôn với Vua Charles II: 'popularized by the Portuguese princess Catherine of Braganza... Her fondness for the drink turned tea into a highly fashionable luxury among the British aristocracy.'",
+              "answerLocation": "popularized by the Portuguese princess Catherine of Braganza upon her marriage to King Charles II"
+            },
+            {
+              "id": "q-r3-5",
+              "type": "multiple_choice",
+              "instruction": "Why did the British East India Company send Robert Fortune to China?",
+              "options": [
+                "A. To establish a diplomatic treaty with the Chinese Emperor.",
+                "B. To smuggle tea plants and secrets of tea production out of the country.",
+                "C. To study the medicinal properties of green tea in monasteries."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đoạn 3 làm rõ Robert Fortune được cử đến Trung Quốc để bí mật buôn lậu cây trà, hạt giống và thợ làm trà lành nghề nhằm phá vỡ thế độc quyền của Trung Quốc: 'Eager to break the Chinese monopoly on tea, the British East India Company later sent the Scottish botanist Robert Fortune... Fortune successfully smuggled tea plants, seeds, and skilled tea makers...'",
+              "answerLocation": "covert mission to China in 1848. Disguised as a Chinese merchant, Fortune successfully smuggled tea plants, seeds, and skilled tea makers"
+            }
+          ]
+        },
+        {
+          "id": "r3-rg-3",
+          "instruction": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            {
+              "id": "q-r3-6",
+              "type": "true_false_not_given",
+              "instruction": "Black tea undergoes a higher level of oxidation than green tea.",
+              "acceptedAnswers": [
+                [
+                  "true",
+                  "t"
+                ]
+              ],
+              "correctAnswer": "TRUE",
+              "explanation": "Đoạn 2 nêu rõ hồng trà trải qua quá trình oxy hóa hoàn toàn, trong khi trà xanh được xử lý nhiệt để dừng quá trình oxy hóa này: 'Black tea undergoes full oxidation... green tea leaves are steamed or pan-fired shortly after harvesting, which denatures these enzymes and halts oxidation...'",
+              "answerLocation": "Black tea undergoes full oxidation... green tea leaves... halts oxidation"
+            },
+            {
+              "id": "q-r3-7",
+              "type": "true_false_not_given",
+              "instruction": "L-theanine has been proven to increase anxiety levels in clinical studies.",
+              "acceptedAnswers": [
+                [
+                  "false",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "FALSE",
+              "explanation": "Đoạn 2 khẳng định L-theanine thúc đẩy sự tập trung tinh thần và thư giãn cơ thể bằng cách kích thích sóng alpha trong não, điều này phủ nhận việc nó tăng mức độ lo âu: 'L-theanine... is scientifically proven to promote mental focus and physical relaxation...'",
+              "answerLocation": "L-theanine, an amino acid unique to the plant that is scientifically proven to promote mental focus and physical relaxation"
+            },
+            {
+              "id": "q-r3-8",
+              "type": "true_false_not_given",
+              "instruction": "Robert Fortune was caught by Chinese authorities during his second expedition.",
+              "acceptedAnswers": [
+                [
+                  "not given",
+                  "ng"
+                ]
+              ],
+              "correctAnswer": "NOT GIVEN",
+              "explanation": "Bài đọc chỉ đề cập đến việc Robert Fortune cải trang thành thương gia Trung Quốc và buôn lậu thành công trà sang Ấn Độ, không hề nói đến việc ông ấy có bị chính quyền bắt giữ trong chuyến thám hiểm thứ hai hay không.",
+              "answerLocation": "Fortune successfully smuggled tea plants, seeds, and skilled tea makers out of the country"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

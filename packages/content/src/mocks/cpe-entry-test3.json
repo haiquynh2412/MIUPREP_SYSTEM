@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test3",
+  "title": "CPE Entry Test 3 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test3-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Benefits of Boredom</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Kids tire of their toys and sooner or (0) later most of us lose interest in our favourite TV shows. The bottom line (1) __________ that humans are easily bored. Why?</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The answer lies buried deep within our nerve cells (2) __________ automatically dampen their initial excited response to stimuli (3) __________ a stimulus occurs. Those neurons also enhance responses to things (4) __________ change - especially (5) __________ which change quickly. We probably evolved this way (6) __________ our ancestors developed the skill of focussing their attention on (7) __________ was moving in the tree above them, a sabre-toothed tiger for instance, (8) __________ on the tree itself.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Therefore, boredom, (9) __________ a reaction to a static environment, turns (10) __________ the level of neural excitation so that a new stimulus, the tiger, stands (11) __________. Sensory boredom has other uses. For example, have you noticed how a foul-smelling room loses its odour after a few minutes of your (12) __________ exposed to it? (13) __________ is because the excitation levels of olfactory neurons, or smell receptors, decrease (14) __________ each successive stimulation, (15) __________ you notice the offensive odour less and less. So, next time you're feeling bored, don't complain!</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test3-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test3-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "IS",
+                  "is"
+                ]
+              ],
+              "correctAnswer": "IS",
+              "explanation": "Đáp án đề xuất: IS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IS",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "WHICH",
+                  "which"
+                ]
+              ],
+              "correctAnswer": "WHICH",
+              "explanation": "Đáp án đề xuất: WHICH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHICH",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "WHEN",
+                  "when"
+                ]
+              ],
+              "correctAnswer": "WHEN",
+              "explanation": "Đáp án đề xuất: WHEN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHEN",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "THAT",
+                  "that"
+                ]
+              ],
+              "correctAnswer": "THAT",
+              "explanation": "Đáp án đề xuất: THAT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THAT",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "THOSE",
+                  "those"
+                ]
+              ],
+              "correctAnswer": "THOSE",
+              "explanation": "Đáp án đề xuất: THOSE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THOSE",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "BECAUSE",
+                  "because"
+                ]
+              ],
+              "correctAnswer": "BECAUSE",
+              "explanation": "Đáp án đề xuất: BECAUSE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BECAUSE",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "WHAT",
+                  "what"
+                ]
+              ],
+              "correctAnswer": "WHAT",
+              "explanation": "Đáp án đề xuất: WHAT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHAT",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "NOT",
+                  "not"
+                ]
+              ],
+              "correctAnswer": "NOT",
+              "explanation": "Đáp án đề xuất: NOT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "NOT",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "AS",
+                  "as"
+                ]
+              ],
+              "correctAnswer": "AS",
+              "explanation": "Đáp án đề xuất: AS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "AS",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "DOWN",
+                  "down"
+                ]
+              ],
+              "correctAnswer": "DOWN",
+              "explanation": "Đáp án đề xuất: DOWN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "DOWN",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "OUT",
+                  "out"
+                ]
+              ],
+              "correctAnswer": "OUT",
+              "explanation": "Đáp án đề xuất: OUT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "OUT",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "BEING",
+                  "being"
+                ]
+              ],
+              "correctAnswer": "BEING",
+              "explanation": "Đáp án đề xuất: BEING. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BEING",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "THIS",
+                  "this"
+                ]
+              ],
+              "correctAnswer": "THIS",
+              "explanation": "Đáp án đề xuất: THIS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THIS",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "WITH",
+                  "with"
+                ]
+              ],
+              "correctAnswer": "WITH",
+              "explanation": "Đáp án đề xuất: WITH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WITH",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "SO",
+                  "so"
+                ]
+              ],
+              "correctAnswer": "SO",
+              "explanation": "Đáp án đề xuất: SO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "SO",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test3-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>El Greco</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Domenikos Theotokopoulos, more easily recognized by his byname El Greco, was born in Crete, Greece in 1641. As Crete was then a (0) colony of Venice, El Greco had been awarded Venetian (16) __________. His byname probably derives from the (17) __________ Venetian custom of the day of identifying an individual by their country of origin. The reasoning behind the article 'El' lends itself to curious speculation, as it sounds Spanish. It is thought that this nickname was a Venetian (18) __________, or of local dialect. El Greco took the decision to take up (19) __________ in Venice when he was approximately nineteen years of age. Leaving his beloved homeland was (20) __________ by the fact that he had been given the honour of being chosen to study under the tutelage of the great contemporary painter, Titian. Although the works produced by El Greco while he was in Italy bore no obvious indication of his Greek heritage and (21) __________, he never forgot his Greek roots and routinely signed his paintings using his full given name in Greek script. During his stint in Italy, El Greco painted in a 16th century Renaissance style. His (22) __________ of subjects in deep space and the (23) __________ he placed on architecture in his settings are (24) __________ of the (25) __________ influence of the times. It was also at this stage in El Greco's career that he began to hint at the extraordinary portraitist he would later become.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test3-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test3-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: CITIZEN]:",
+              "acceptedAnswers": [
+                [
+                  "CITIZENSHIP",
+                  "citizenship"
+                ]
+              ],
+              "correctAnswer": "CITIZENSHIP",
+              "explanation": "Đáp án đề xuất: CITIZENSHIP. Từ gốc 'CITIZEN' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "CITIZENSHIP",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "CITIZEN",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: PREVAIL]:",
+              "acceptedAnswers": [
+                [
+                  "PREVAILING",
+                  "prevailing"
+                ]
+              ],
+              "correctAnswer": "PREVAILING",
+              "explanation": "Đáp án đề xuất: PREVAILING. Từ gốc 'PREVAIL' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "PREVAILING",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "PREVAIL",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: COLLOQUIAL]:",
+              "acceptedAnswers": [
+                [
+                  "COLLOQUIALISM",
+                  "colloquialism"
+                ]
+              ],
+              "correctAnswer": "COLLOQUIALISM",
+              "explanation": "Đáp án đề xuất: COLLOQUIALISM. Từ gốc 'COLLOQUIAL' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "COLLOQUIALISM",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "COLLOQUIAL",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: RESIDE]:",
+              "acceptedAnswers": [
+                [
+                  "RESIDENCE",
+                  "residence"
+                ]
+              ],
+              "correctAnswer": "RESIDENCE",
+              "explanation": "Đáp án đề xuất: RESIDENCE. Từ gốc 'RESIDE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "RESIDENCE",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "RESIDE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: NECESSARY]:",
+              "acceptedAnswers": [
+                [
+                  "NECESSITATED",
+                  "necessitated"
+                ]
+              ],
+              "correctAnswer": "NECESSITATED",
+              "explanation": "Đáp án đề xuất: NECESSITATED. Từ gốc 'NECESSARY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "NECESSITATED",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "NECESSARY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: BRING]:",
+              "acceptedAnswers": [
+                [
+                  "UPBRINGING",
+                  "upbringing"
+                ]
+              ],
+              "correctAnswer": "UPBRINGING",
+              "explanation": "Đáp án đề xuất: UPBRINGING. Từ gốc 'BRING' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "UPBRINGING",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "BRING",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: PLACE]:",
+              "acceptedAnswers": [
+                [
+                  "PLACEMENT",
+                  "placement"
+                ]
+              ],
+              "correctAnswer": "PLACEMENT",
+              "explanation": "Đáp án đề xuất: PLACEMENT. Từ gốc 'PLACE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "PLACEMENT",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "PLACE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: EMPHASISE]:",
+              "acceptedAnswers": [
+                [
+                  "EMPHASIS",
+                  "emphasis"
+                ]
+              ],
+              "correctAnswer": "EMPHASIS",
+              "explanation": "Đáp án đề xuất: EMPHASIS. Từ gốc 'EMPHASISE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EMPHASIS",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "EMPHASISE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: REFLECT]:",
+              "acceptedAnswers": [
+                [
+                  "REFLECTIVE",
+                  "reflective"
+                ]
+              ],
+              "correctAnswer": "REFLECTIVE",
+              "explanation": "Đáp án đề xuất: REFLECTIVE. Từ gốc 'REFLECT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "REFLECTIVE",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "REFLECT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: DOMINATE]:",
+              "acceptedAnswers": [
+                [
+                  "DOMINANT",
+                  "dominant"
+                ]
+              ],
+              "correctAnswer": "DOMINANT",
+              "explanation": "Đáp án đề xuất: DOMINANT. Từ gốc 'DOMINATE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DOMINANT",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "DOMINATE",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test3-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>SHORT STORIES</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In his latest anthology, Clifford Grimes opens with a poignant story of necessary inequality in the relationship between a mother and her eldest daughter. What follows is an eclectic mix of short stories (26) __________ mainly with interpersonal dealings and the diverse forms they can take. Japanese ballet dancers, a carnival ring-master, a crocodile wrestler from Florida; on the (27) __________, there seems to be no (28) __________ denominator in this mixed bag of characters. On closer inspection, however, one can see that all Grimes' protagonists suffer from a (29) __________ of alienation which leaves them feeling incomplete and worthless. Grimes, not known as a writer to (30) __________ words or provide pat story endings, seems to leave his characters hanging. In actual fact, he is inviting his audience to use their imaginations and (31) __________ it upon themselves to resolve the dilemmas.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test3-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test3-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - concerned. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "concerned",
+              "category": "cpe_part_1",
+              "options": [
+                "A. related",
+                "B. concerned",
+                "C. involved",
+                "D. comprised"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - surface. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "surface",
+              "category": "cpe_part_1",
+              "options": [
+                "A. surface",
+                "B. face",
+                "C. outside",
+                "D. front"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - common. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "common",
+              "category": "cpe_part_1",
+              "options": [
+                "A. parallel",
+                "B. common",
+                "C. similar",
+                "D. same"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - sense. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "sense",
+              "category": "cpe_part_1",
+              "options": [
+                "A. sense",
+                "B. touch",
+                "C. hint",
+                "D. sensation"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - mince. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "mince",
+              "category": "cpe_part_1",
+              "options": [
+                "A. dice",
+                "B. blend",
+                "C. mince",
+                "D. chop"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - take. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "take",
+              "category": "cpe_part_1",
+              "options": [
+                "A. put",
+                "B. set",
+                "C. take",
+                "D. place"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - acronym. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "acronym",
+              "category": "cpe_part_1",
+              "options": [
+                "A. acronym",
+                "B. synonym",
+                "C. pseudonym",
+                "D. homonym"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - incurred. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "incurred",
+              "category": "cpe_part_1",
+              "options": [
+                "A. acquired",
+                "B. accrued",
+                "C. incurred",
+                "D. required"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - taking. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "taking",
+              "category": "cpe_part_1",
+              "options": [
+                "A. signing",
+                "B. ending",
+                "C. calling",
+                "D. taking"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - eligible. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "eligible",
+              "category": "cpe_part_1",
+              "options": [
+                "A. viable",
+                "B. eligible",
+                "C. valid",
+                "D. conducive"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - fall. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "fall",
+              "category": "cpe_part_1",
+              "options": [
+                "A. fall",
+                "B. drop",
+                "C. place",
+                "D. suit"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - proof. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "proof",
+              "category": "cpe_part_1",
+              "options": [
+                "A. receipt",
+                "B. statement",
+                "C. testimony",
+                "D. proof"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test3-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>These days you can be sure that, whenever a scientist discovers a new wrinkle in the way the human mind works, some sort of Darwinian exploration will not be far behind. Research has shown that, while people find it easy to remember the direction of objects moving towards them or away from them, they have little recall for the spin direction of rotating objects. The reason for this is that natural selection has never had cause to equip us with such a memory mechanism.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Now don't get me wrong. I’m not ideologically opposed to such pat evolutionary answers, unlike many social scientists who regard culture as all-powerful in determining how we think and behave. I just wonder whether these Darwinian explanations help or hinder further scientific investigation. Indeed, as a practising psychiatrist, I find myself wondering this more and more as I watch evolutionary thinking being repeatedly used to explain the existence of mental illnesses and personality disorders.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Thus, paranoia could be helpful because suspiciousness might be beneficial in environments that are not as safe as they seem. Some forms of depression might exist because withdrawing from the social fray might actually be a good thing when you're competing with people who could injure or kill you if you tried to assert yourself. And even severe postnatal depression could have hidden Darwinian benefits, according to some anthropologists. A [Gap 38]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Are such explanations useful or harmful? Paradoxically, I think they are both, for reasons that can be explained by looking at that other all-embracing approach to understanding behaviour, freudianism. Freud, of course, proposed that sexuality was the driving force of human behaviour. This finds more than an echo in the evolutionary psychologists’ view that we are trapped by sexual strategies to maximise the replication of genes. Freud had us in thrall to repressed sexual memories and psychic energies spilling out of the unconscious; evolutionary psychology has us in thrall to genes and innate neural mechanisms adapted to suit the needs of our hunter-gatherer ancestors. Darwinian attempts to explain depression bear this out. Evolutionary psychology predicts, for example, that older mothers giving birth for the first time should be less prone to postnatal depression than younger first-time mothers, as their current infant could be their only chance to reproduce. In fact, older first-time mothers are even more prone to postnatal depression.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>This suggests that you don't have to be depressed to realise that asserting yourself isn’t worth it: although their depression had apparently lifted, the treated rats still didn’t bother presumably because they thought they would fail. Depressed people give up trying even when victory is clearly possible — that is precisely why depression is so puzzling.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Harmful, because, like theorising about the unconscious, evolutionary psychology might discourage scientists from looking for more productive explanations for mental illnesses. Useful, because we already know that many psychiatric patients can benefit greatly from being given a [Gap 44] comprehensible account of their otherwise frightening and confusing symptoms. For this purpose, why shouldn’t Darwin be at least as effective as Freud? The benefit of evolutionary psychology for patients is that it could help them to stop endlessly asking why. For scientists, that is precisely its danger.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test3-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test3-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Chọn đoạn E. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "woman suffering from postnatal depression might feel hugely relieved to be told that her condition has an evolutionary explanation. Why should we deny her that relief\"",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "‘antidepressants would reverse this. In fact, no",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "And if other forms of depression really are the result of a neural adaptation designed to make some of us keep our heads down when it would be dangerous to assert ourselves, you'd think",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "There is a second echo: Freud produced ingenious explanations for behaviour, but backed away from generating testable predictions that could confirm or falsify his hypotheses. He famously argued that, when a patient vociferously rejected an analyst’s interpretation, this was good evidence that it was right, and if the patient agreed with the doctor’s exposition, this also was evidence it was right. Well, evolutionary psychology suffers from a related, albeit less extreme, form of the problem. It might seem to generate testable predictions, but on close inspection you usually find some sort of circularity in the argument, or that the predictions either offer no more insights than common sense or are plainly wrong. The evolution of the human mind, alas, has left no fossils.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Chọn đoạn F. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Our ancestors would obviously have needed to know whether an animal they were hunting was approaching or retreating, but rotating objects would have been largely absent from the rough and tumble of their lives. Ergo, we don't remember enough about rotation from past experiences to be able to intuitively, say, pull a car out of a spin. We have to learn to do such things by rote.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Despite these shortcomings, evolutionary psychology, like psychoanalysis, is undeniably attractive because of the apparent coherence and simplicity of the explanations it offers. And it's this appeal that I think is both potentially useful and potentially harmful.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Think about it. Since largely abandoning Freud, all therapists have had to offer patients seeking explanations is a hodge-podge of one-off theories and speculations, some based on brain chemistry, some on behaviour, and each specific to just a single condition or even symptom. At a stroke, evolutionary psychology can provide patient and therapist with a unifying framework for thinking about all symptoms and all mental illnesses. A",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Despite these shortcomings, evolutionary psychology, like psychoanalysis, is undeniably attractive because of the apparent coherence and simplicity of the explanations it offers. And it's this appeal that I think is both potentially useful and potentially harmful."
+            },
+            {
+              "label": "B",
+              "text": "There is a second echo: Freud produced ingenious explanations for behaviour, but backed away from generating testable predictions that could confirm or falsify his hypotheses. He famously argued that, when a patient vociferously rejected an analyst’s interpretation, this was good evidence that it was right, and if the patient agreed with the doctor’s exposition, this also was evidence it was right. Well, evolutionary psychology suffers from a related, albeit less extreme, form of the problem. It might seem to generate testable predictions, but on close inspection you usually find some sort of circularity in the argument, or that the predictions either offer no more insights than common sense or are plainly wrong. The evolution of the human mind, alas, has left no fossils."
+            },
+            {
+              "label": "C",
+              "text": "The aggressive personality would have been the ideal choice as protector of the primitive community and not marginalised as he - or indeed she — is at present. Many “unacceptable” behaviours would have been of the utmost value in the evolution of the human psyche. Regardless of how we view acts of aggression today, the fact remains that they once played a vital role in our life-and-death struggle for survival."
+            },
+            {
+              "label": "D",
+              "text": "Think about it. Since largely abandoning Freud, all therapists have had to offer patients seeking explanations is a hodge-podge of one-off theories and speculations, some based on brain chemistry, some on behaviour, and each specific to just a single condition or even symptom. At a stroke, evolutionary psychology can provide patient and therapist with a unifying framework for thinking about all symptoms and all mental illnesses. A"
+            },
+            {
+              "label": "E",
+              "text": "woman suffering from postnatal depression might feel hugely relieved to be told that her condition has an evolutionary explanation. Why should we deny her that relief\""
+            },
+            {
+              "label": "F",
+              "text": "Our ancestors would obviously have needed to know whether an animal they were hunting was approaching or retreating, but rotating objects would have been largely absent from the rough and tumble of their lives. Ergo, we don't remember enough about rotation from past experiences to be able to intuitively, say, pull a car out of a spin. We have to learn to do such things by rote."
+            },
+            {
+              "label": "G",
+              "text": "And if other forms of depression really are the result of a neural adaptation designed to make some of us keep our heads down when it would be dangerous to assert ourselves, you'd think"
+            },
+            {
+              "label": "H",
+              "text": "‘antidepressants would reverse this. In fact, no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test3-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>It is a lamentable truth that women are sometimes presented with impossible choices between career advancement and family commitment. This dilemma is perhaps sharpest for female scientists who leave their profession in order to raise children and then find themselves at a disadvantage compared with men on returning to work years later. Women in science get left behind because scientific developments move so fast and knowledge needs to be continuously updated. In addition to that, working conditions for scientists with unsociable hours, do not favour the family.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>This is where a newly-launched campaign to attract female scientists back into the fold comes in. The campaign aims to emphasise a woman’s academic as opposed to her chronological age so that, after raising a family, she will be compared to men with the same amount of work experience rather than to men of the same age, and encourages women to retrain and upgrade their skills. The Royal Society and the Wellcome Trust, the major funder of Biomedical research in the UK, have lent the campaign their support.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Dr. Nancy Lane, a cell biologist and fellow of Girton College, Cambridge, and director of the Women in SET (Science, Engineering and Technology) Initiative at Cambridge, has dedicated her life to encouraging female scientists. A working party chaired by her produced a report for the government highlighting the low percentage of women in science, particularly at senior levels. The report was given the optimistic title ‘The Rising Tide’, in the hope that this dismal trend could be on the turn.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Despite good intentions, a rising tide of female scientists seems at present to be a distant prospect. The majority of successful women in the field are either unmarried or married but childless. One organisation geared towards changing this is the Athena Project, of which Dr. Lane is deputy chair. The organisation is compiling a register of women in higher education to outline the skill areas of those in the SET fields. Backed by various government and scientific bodies, the project’s goal is to achieve a significant increase of women in top positions in science, engineering and technology by the year 2007.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There is much room for improvement on presen percentages, with women making up no more than 21% of full- time researchers in the physical sciences, a mere 2% at the level; of professor, and with just one female Chemistry professor i the UK. A lack of research grants exacerbates this deplorable: situation, with studies in Sweden pointing to strong evidence that women need to prove themselves two and a half times better than men in order to receive them.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>One eminent scientist with a mission to help other women in the field was Daphne Jackson, Britain’s first Physics professor. After her premature death, aged 54, in 1991, the Daphne Jackson Memorial Trust was established to help retrain highly-qualified female scientists who have taken at least a three-year break from work. The trust pays part-time salaries for two years to women able to find an institution and a supervisor to allow them to pursue a research project. A successful example of somebody on a Daphne Jackson fellowship is Dr. Sue Jackson (no relation), a former welding engineer with a PhD from Cambridge when her first child was born 14 years ago and she gave up work. The fellowship has enabled her to conduct research on laser welding for car bodies and has helped her cope with radical changes such as the move from practical work to computer modelling. Sue Jackson has found the project tremendously stimulating and motivating. Let us hope that, with the help and encouragement of organisations such as the Athena Project and the Daphn Jackson Memorial Trust, more women will follow suit and return to the scientific fields to which they have contributed and will continue to contribute so much. Society as a whole will certainly be the better for it.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test3-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test3-45",
+              "type": "multiple_choice",
+              "instruction": "What does the writer say about women in science?",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Ch?n C - It is difficult for them to get back into the field after a lengthy absence. ? ??ng l? tr? ng?i quay l?i ng?nh sau m?t th?i gian v?ng m?t, kh?ng ph?i thi?u tham v?ng hay n?ng l?c t? nhi?n. B?y: c?c option c?n l?i kh?i qu?t h?a qu? m?c ho?c g?n nguy?n nh?n kh?ng ???c b?i ch?ng minh. H?y ??i chi?u ch?nh x?c nguy?n nh?n ???c n?u trong ?o?n thay v? ch?n nh?n ??nh nghe h?p l?.",
+              "answerLocation": "C. It is difficult for them to get back into the field after a lengthy absence.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. They tend to lack the driving ambition that motivates male scientists.",
+                "B. They are not as well suited to the pace of developments in science as men.",
+                "C. It is difficult for them to get back into the field after a lengthy absence.",
+                "D. The demands of family generally force them to choose other careers."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-46",
+              "type": "multiple_choice",
+              "instruction": "A new campaign has been launched in order to",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - encourage experienced female scientists to return to work.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "encourage experienced female scientists to return to work.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. narrow the age gap between male and female scientists.",
+                "B. attract more female graduates into the field of academic research.",
+                "C. assist female scientists in coping with both children and work.",
+                "D. encourage experienced female scientists to return to work."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-47",
+              "type": "multiple_choice",
+              "instruction": "The report was called The Rising Tide",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - to present a positive image.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "to present a positive image.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. to reflect recent trends.",
+                "B. to present a positive image.",
+                "C. to show the extent of the problem.",
+                "D. to suggest things can't get worse."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-48",
+              "type": "multiple_choice",
+              "instruction": "What does the writer say about the current situation?",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - There is a clear link between family status and attainment.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "There is a clear link between family status and attainment.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. There is a clear link between family status and attainment.",
+                "B. Many women in the field try to be too self-reliant.",
+                "C. Further research is needed to determine the extent of the problem.",
+                "D. Current initiatives have little prospect of success."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-49",
+              "type": "multiple_choice",
+              "instruction": "What is the problem with research grants?",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - They represent another obstacle for women.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "They represent another obstacle for women.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. There is insufficient support for women who apply for them.",
+                "B. They are distributed more fairly in Sweden.",
+                "C. They represent another obstacle for women.",
+                "D. They are not distributed fairly among different fields."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test3-50",
+              "type": "multiple_choice",
+              "instruction": "The Daphne Jackson Memorial Trust",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - provides support for women scientists returning to research.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "provides support for women scientists returning to research.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. puts women scientists in touch with potential research supervisors.",
+                "B. offers further training for women scientists in research fields.",
+                "C. only supports female scientists over a certain age.",
+                "D. provides support for women scientists returning to research."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

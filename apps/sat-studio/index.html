@@ -1,0 +1,1902 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAT Studio</title>
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Explicitly load Inter font with Vietnamese subset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="login-screen" class="login-screen" aria-label="Login">
+      <div class="login-art">
+        <div class="language-switcher login-language" aria-label="Language">
+          <button class="language-option active" data-language="en" type="button">English</button>
+          <button class="language-option" data-language="vi" type="button">Tiếng Việt</button>
+        </div>
+        <p class="eyebrow" data-i18n="loginEyebrow">Private-first, public-ready</p>
+        <h1>SAT Studio</h1>
+        <p data-i18n="loginDescription">
+          A diagnostic SAT learning system: accounts, pretest, skill map,
+          roadmap, source governance, and review loops.
+        </p>
+        <div class="login-principles">
+          <span data-i18n="loginPrinciple1">Bluebook-style testing</span>
+          <span data-i18n="loginPrinciple2">Khan-style skill path</span>
+          <span data-i18n="loginPrinciple3">OpenSAT source review</span>
+          <span data-i18n="loginPrinciple4">Error-log driven study</span>
+        </div>
+      </div>
+
+      <div class="auth-stack">
+        <form id="login-form" class="login-panel" action="javascript:void(0)">
+          <div>
+            <p class="eyebrow" data-i18n="accountAccess">Account access</p>
+            <h2 data-i18n="signIn">Sign in</h2>
+            <p class="muted" data-i18n="loginLocalNote">
+              Local MVP accounts are stored in this browser. Use a backend auth
+              service before publishing publicly.
+            </p>
+          </div>
+          <label for="login-account" data-i18n="account">Account</label>
+          <select id="login-account" aria-describedby="login-account-help">
+            <option value="">Choose an account...</option>
+            <option value="content-admin">Content Admin - admin</option>
+            <option value="parent-admin">Parent Admin - parent</option>
+            <option value="student-demo">Student Demo - student</option>
+          </select>
+          <p id="login-account-help" class="field-help">Pick an account from the list, or use a demo shortcut below.</p>
+          <label for="login-passcode" data-i18n="passcode">Passcode</label>
+          <input id="login-passcode" type="password" autocomplete="current-password" placeholder="Passcode" data-i18n-placeholder="passcode" />
+          <button class="button primary full" type="submit" data-i18n="enterApp">Enter SAT Studio</button>
+          <button id="show-signup" class="button secondary full" type="button" data-i18n="createLearnerAccount">Create learner account</button>
+          <div class="demo-box">
+            <strong data-i18n="demoAccess">Demo access</strong>
+            <button class="demo-login-button" type="button" data-demo-account="content-admin" data-demo-passcode="9999">Content Admin: 9999</button>
+            <button class="demo-login-button" type="button" data-demo-account="parent-admin" data-demo-passcode="1234">Parent Admin: 1234</button>
+            <button class="demo-login-button" type="button" data-demo-account="student-demo" data-demo-passcode="1111">Student Demo: 1111</button>
+          </div>
+        </form>
+
+        <form id="signup-form" class="login-panel signup-panel" hidden>
+          <div>
+            <p class="eyebrow" data-i18n="newLearner">New learner</p>
+            <h2 data-i18n="createAccountTitle">Create account</h2>
+            <p class="muted" data-i18n="signupLocalNote">Create a local student profile on this browser. A real public release should still use backend authentication.</p>
+          </div>
+          <div class="signup-grid">
+            <div class="field">
+              <label for="signup-name" data-i18n="learnerName">Learner name</label>
+              <input id="signup-name" type="text" autocomplete="name" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="signup-email" data-i18n="email">Email</label>
+              <input id="signup-email" type="email" autocomplete="email" placeholder="name@example.com" />
+            </div>
+            <div class="field">
+              <label for="signup-grade" data-i18n="grade">Grade</label>
+              <select id="signup-grade">
+                <option value="">Not set</option>
+                <option value="Grade 8">Grade 8</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12">Grade 12</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="signup-passcode" data-i18n="passcode">Passcode</label>
+              <input id="signup-passcode" type="text" inputmode="numeric" autocomplete="new-password" placeholder="4-8 digits" />
+            </div>
+            <div class="field">
+              <label for="signup-target" data-i18n="targetScore">Target score</label>
+              <input id="signup-target" type="number" min="400" max="1600" step="10" value="1450" />
+            </div>
+            <div class="field">
+              <label for="signup-avatar-initials" data-i18n="avatarInitials">Avatar initials</label>
+              <input id="signup-avatar-initials" type="text" maxlength="2" placeholder="ST" />
+            </div>
+            <div class="field">
+              <label for="signup-avatar-color" data-i18n="avatarColor">Avatar color</label>
+              <select id="signup-avatar-color">
+                <option value="coral">Coral</option>
+                <option value="teal">Teal</option>
+                <option value="blue">Blue</option>
+                <option value="amber">Amber</option>
+                <option value="slate">Slate</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="signup-theme" data-i18n="interfaceTheme">Interface</label>
+              <select id="signup-theme">
+                <option value="teen_quest">Teen Quest</option>
+                <option value="studio">Focus Studio</option>
+              </select>
+            </div>
+          </div>
+          <button class="button primary full" type="submit" data-i18n="createAndEnter">Create and enter</button>
+          <button id="cancel-signup" class="button secondary full" type="button" data-i18n="backToSignIn">Back to sign in</button>
+        </form>
+      </div>
+    </section>
+
+    <div id="app-shell" class="app-shell" hidden>
+      <aside class="sidebar" aria-label="SAT Studio navigation">
+        <div class="brand">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-title">SAT Studio</div>
+            <div class="brand-subtitle">Diagnostic to roadmap</div>
+          </div>
+        </div>
+
+        <div class="account-card">
+          <div id="active-account-avatar" class="account-avatar avatar-teal" aria-hidden="true">S</div>
+          <div>
+            <div id="active-account-name" class="account-name">Account</div>
+            <div id="active-account-role" class="account-role">Role</div>
+          </div>
+          <button id="logout-button" class="icon-button" type="button" title="Sign out" aria-label="Sign out">Exit</button>
+        </div>
+
+        <nav class="nav-tabs" aria-label="Main sections">
+          <button class="nav-tab active" data-view="dashboard" data-i18n="navDashboard" type="button">Dashboard</button>
+          <button class="nav-tab" data-view="admin" data-i18n="navAdmin" type="button">Admin Center</button>
+          <button class="nav-tab" data-view="pretest" data-i18n="navPretest" type="button">Pretest</button>
+          <button class="nav-tab" data-view="roadmap" data-i18n="navRoadmap" type="button">Roadmap</button>
+          <button class="nav-tab" data-view="lessons" data-i18n="navLessons" type="button">Lessons</button>
+          <button class="nav-tab" data-view="topics" data-i18n="navTopics" type="button">Topics</button>
+          <button class="nav-tab" data-view="practice" data-i18n="navPractice" type="button">Practice</button>
+          <button class="nav-tab" data-view="review" data-i18n="navReview" type="button">Review</button>
+          <button class="nav-tab" data-view="notes" data-i18n="navNotes" type="button">Notes</button>
+          <button class="nav-tab" data-view="vocab" data-i18n="navVocab" type="button">Vocab</button>
+          <button class="nav-tab" data-view="bank" data-i18n="navBank" type="button">Bank Manager</button>
+          <button class="nav-tab" data-view="sources" data-i18n="navSources" type="button">Sources</button>
+          <button class="nav-tab" data-view="official" data-i18n="navOfficial" type="button">Official Log</button>
+          <button class="nav-tab" data-view="author" data-i18n="navAuthor" type="button">Authoring</button>
+          <button class="nav-tab" data-view="accounts" data-i18n="navAccounts" type="button">Accounts</button>
+          <button class="nav-tab" data-view="news" data-i18n="navNews" type="button">News</button>
+          <button class="nav-tab" data-view="guide" data-i18n="navGuide" type="button">Guide</button>
+        </nav>
+
+        <div class="sidebar-block">
+          <div class="sidebar-label" data-i18n="currentFocus">Current focus</div>
+          <div id="sidebar-focus" class="focus-chip">Run diagnostic</div>
+          <div class="small-stat">
+            <span id="session-count">0</span>
+            <span data-i18n="matched">matched</span>
+          </div>
+          <div class="small-stat">
+            <span id="accuracy-mini">0%</span>
+            <span data-i18n="accuracyLower">accuracy</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" data-i18n="cockpit">SAT learning cockpit</p>
+            <h1 id="page-title">Dashboard</h1>
+            <p id="page-subtitle" class="muted">
+              Start with a short diagnostic, then study by weak skills and review mistakes.
+            </p>
+          </div>
+          <div class="topbar-actions">
+            <div class="language-switcher" aria-label="Language">
+              <button class="language-option active" data-language="en" type="button">English</button>
+              <button class="language-option" data-language="vi" type="button">Tiếng Việt</button>
+            </div>
+            <button id="quick-pretest" class="button primary" data-i18n="startPretest" type="button">Start Pretest</button>
+            <button id="export-state" class="button secondary" data-i18n="export" type="button">Export</button>
+            <label class="button secondary file-button">
+              <span data-i18n="import">Import</span>
+              <input id="import-state" type="file" accept="application/json" />
+            </label>
+          </div>
+        </header>
+
+        <section class="metrics-grid" aria-label="Progress summary">
+          <div class="metric">
+            <div class="metric-label" data-i18n="baseline">Baseline</div>
+            <div class="metric-value" id="metric-baseline">--</div>
+            <div class="metric-caption" data-i18n="baselineCaption">rough diagnostic estimate</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label" data-i18n="accuracy">Accuracy</div>
+            <div class="metric-value" id="metric-accuracy">0%</div>
+            <div class="metric-caption" data-i18n="practiceAttempts">practice attempts</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label" data-i18n="dueReviews">Due Reviews</div>
+            <div class="metric-value" id="metric-due">0</div>
+            <div class="metric-caption" data-i18n="wrongBookmarked">wrong/bookmarked</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label" data-i18n="questionBank">Question Bank</div>
+            <div class="metric-value" id="metric-questions">0</div>
+            <div class="metric-caption"><span id="metric-needs-review">0</span> <span data-i18n="needReview">need review</span></div>
+          </div>
+        </section>
+
+        <section id="view-dashboard" class="view active" aria-label="Dashboard">
+          <div id="student-home" class="role-home student-home">
+          <article id="student-focus-card" class="student-focus-card" aria-label="Student focus" data-student-dashboard-panel="today"></article>
+          <section class="dashboard-grid">
+            <article class="hero-panel">
+              <div>
+                <p class="eyebrow">Next best action</p>
+                <h2 id="next-action-title">Run the first pretest</h2>
+                <p id="next-action-body">
+                  The app needs a baseline before it can build a serious study path.
+                </p>
+              </div>
+              <div class="hero-actions">
+                <button id="next-action-button" class="button primary" type="button">Start</button>
+                <button id="flow-start-sprint" class="button secondary" type="button">5-Min Sprint</button>
+              </div>
+            </article>
+
+            <article class="reward-panel" data-student-dashboard-panel="rewards" hidden>
+              <div class="reward-header">
+                <div>
+                  <p class="eyebrow" data-i18n="studyEnergy">Study energy</p>
+                  <h2 data-i18n="attendanceRewards">Attendance & rewards</h2>
+                </div>
+                <div class="level-orb" id="reward-level">L1</div>
+              </div>
+              <div class="reward-stats">
+                <div>
+                  <strong id="attendance-points">0</strong>
+                  <span data-i18n="pointsLabel">points</span>
+                </div>
+                <div>
+                  <strong id="attendance-streak">0</strong>
+                  <span data-i18n="dayStreak">day streak</span>
+                </div>
+                <div>
+                  <strong id="today-answers">0</strong>
+                  <span data-i18n="todayLabel">today</span>
+                </div>
+              </div>
+              <div class="progress-track">
+                <div id="level-progress" class="progress-fill"></div>
+              </div>
+              <div id="journey-title" class="journey-title">Pre-SAT Scout</div>
+              <div id="sticker-shelf" class="sticker-shelf"></div>
+            </article>
+          </section>
+
+          <div class="subview-tabs student-dashboard-tabs" role="tablist" aria-label="Student dashboard sections">
+            <button class="subview-tab active" data-student-dashboard-tab="today" type="button" role="tab" aria-selected="true">Today</button>
+            <button class="subview-tab" data-student-dashboard-tab="rewards" type="button" role="tab" aria-selected="false">Rewards</button>
+            <button class="subview-tab" data-student-dashboard-tab="skills" type="button" role="tab" aria-selected="false">Skill focus</button>
+            <button class="subview-tab" data-student-dashboard-tab="tools" type="button" role="tab" aria-selected="false">Tools</button>
+          </div>
+
+          <section class="dashboard-grid secondary-grid">
+            <article class="panel quest-panel" data-student-dashboard-panel="today">
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow" data-i18n="todaysQuests">Today's quests</p>
+                  <h2 data-i18n="attendance">Attendance</h2>
+                </div>
+              </div>
+              <div id="daily-quests" class="quest-list"></div>
+            </article>
+
+            <article class="panel reward-store-panel" data-student-dashboard-panel="rewards" hidden>
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Reward store</p>
+                  <h2>Redeem points</h2>
+                </div>
+              </div>
+              <div id="student-reward-store" class="reward-store"></div>
+            </article>
+
+            <article class="panel" data-student-dashboard-panel="rewards" hidden>
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow" data-i18n="unlockedStickers">Unlocked stickers</p>
+                  <h2 data-i18n="rewardBoard">Reward board</h2>
+                </div>
+              </div>
+              <div id="reward-board" class="reward-board"></div>
+            </article>
+          </section>
+
+          <section class="dashboard-grid secondary-grid">
+            <article class="panel external-learning-panel" data-student-dashboard-panel="tools" hidden>
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">External learning</p>
+                  <h2>Khan & Bluebook links</h2>
+                  <p class="muted">Store only links and study logs. No password or protected content is saved here.</p>
+                </div>
+              </div>
+              <div class="external-link-form">
+                <div class="field">
+                  <label for="khan-profile-link">Khan Academy account or SAT dashboard</label>
+                  <input id="khan-profile-link" type="url" placeholder="https://www.khanacademy.org/..." />
+                </div>
+                <div class="field">
+                  <label for="bluebook-link">Bluebook / College Board practice link</label>
+                  <input id="bluebook-link" type="url" placeholder="https://bluebook.collegeboard.org/students/practice" />
+                </div>
+              </div>
+              <div class="answer-actions">
+                <button id="save-external-links" class="button primary" type="button">Save Links</button>
+                <a id="open-khan-profile" class="button secondary" href="https://www.khanacademy.org/test-prep/digital-sat" target="_blank" rel="noreferrer">Open Khan</a>
+                <a id="open-bluebook-link" class="button secondary" href="https://bluebook.collegeboard.org/students/practice" target="_blank" rel="noreferrer">Open Bluebook</a>
+              </div>
+              <div id="external-link-status" class="import-result"></div>
+            </article>
+
+            <article class="panel external-log-panel" data-student-dashboard-panel="tools" hidden>
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Outside practice</p>
+                  <h2>Log study time</h2>
+                </div>
+              </div>
+              <div class="external-log-grid">
+                <div class="field">
+                  <label for="external-log-source">Source</label>
+                  <select id="external-log-source">
+                    <option>Khan Academy</option>
+                    <option>Bluebook</option>
+                    <option>College Board</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="external-log-minutes">Minutes</label>
+                  <input id="external-log-minutes" type="number" min="1" max="240" value="20" />
+                </div>
+                <div class="field wide">
+                  <label for="external-log-topic">Topic</label>
+                  <input id="external-log-topic" type="text" placeholder="Linear equations, transitions, Bluebook test 4..." />
+                </div>
+                <div class="field wide">
+                  <label for="external-log-note">Note</label>
+                  <textarea id="external-log-note" rows="3" placeholder="What did the student learn or still miss?"></textarea>
+                </div>
+              </div>
+              <button id="log-external-study" class="button primary full" type="button">Log External Study</button>
+              <div id="external-study-list" class="external-study-list"></div>
+            </article>
+          </section>
+
+          <section class="dashboard-grid secondary-grid">
+            <article class="panel tutor-brain-panel" data-student-dashboard-panel="skills" hidden>
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Tutor brain</p>
+                  <h2>Smart study brief</h2>
+                </div>
+              </div>
+              <div id="dashboard-tutor-brain" class="tutor-brain-brief"></div>
+            </article>
+
+            <article class="panel" data-student-dashboard-panel="skills" hidden>
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Weak skills</p>
+                  <h2>Priority list</h2>
+                </div>
+              </div>
+              <div id="dashboard-weak-skills" class="list compact-list"></div>
+            </article>
+
+            <article class="panel" data-student-dashboard-panel="today">
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Today</p>
+                  <h2>Study loop</h2>
+                </div>
+              </div>
+              <div id="dashboard-loop" class="study-loop"></div>
+            </article>
+          </section>
+
+          <section class="flow-grid" aria-label="Study flow choices" data-student-dashboard-panel="tools" hidden>
+            <article class="flow-card">
+              <div class="flow-number">1</div>
+              <div>
+                <p class="eyebrow">System-guided</p>
+                <h2>Test to build roadmap</h2>
+                <p>
+                  Take a balanced diagnostic. SAT Studio reviews wrong answers, estimates weak domains,
+                  and generates a study roadmap.
+                </p>
+              </div>
+              <button id="flow-start-pretest" class="button primary" type="button">Take Diagnostic</button>
+            </article>
+
+            <article class="flow-card">
+              <div class="flow-number">2</div>
+              <div>
+                <p class="eyebrow">Student choice</p>
+                <h2>Study selected topics</h2>
+                <p>
+                  Choose a section, domain, skill, and difficulty. The app builds a focused practice
+                  session from the question bank.
+                </p>
+              </div>
+              <button id="flow-open-topics" class="button secondary" type="button">Choose Topic</button>
+            </article>
+          </section>
+          </div>
+
+          <div id="parent-home" class="role-home parent-home" hidden>
+            <article class="panel parent-home-hero">
+              <div>
+                <p class="eyebrow">Parent Coach Home</p>
+                <h2>Student progress and weekly decisions</h2>
+                <p class="muted">Only linked student progress, remediation due, proof status, and official-practice logs are shown here.</p>
+              </div>
+              <div id="parent-home-summary" class="parent-home-summary" aria-label="Parent account summary"></div>
+              <div class="parent-home-actions">
+                <button id="parent-open-accounts" class="button primary" type="button">Manage Accounts</button>
+                <button id="parent-open-official" class="button secondary" type="button">Log Official Practice</button>
+                <button id="parent-open-guide" class="button secondary" type="button">Open Guide</button>
+              </div>
+            </article>
+
+            <div class="subview-tabs parent-dashboard-tabs" role="tablist" aria-label="Parent dashboard sections">
+              <button class="subview-tab active" data-parent-dashboard-tab="plan" type="button" role="tab" aria-selected="true">Weekly plan</button>
+              <button class="subview-tab" data-parent-dashboard-tab="students" type="button" role="tab" aria-selected="false">Student detail</button>
+            </div>
+
+            <div id="parent-home-plan" class="parent-home-plan" data-parent-dashboard-panel="plan" aria-label="Parent weekly plan"></div>
+
+            <section class="dashboard-grid coach-dashboard-grid" data-parent-dashboard-panel="students" aria-label="Parent coach dashboard" hidden>
+              <article id="coach-dashboard-panel" class="panel coach-dashboard-panel"></article>
+            </section>
+          </div>
+        </section>
+
+        <section id="view-admin" class="view" aria-label="Admin center">
+          <div id="admin-center" class="admin-center-shell"></div>
+        </section>
+
+        <section id="view-news" class="view" aria-label="News">
+          <section id="news-admin-panel" class="news-admin-panel panel" hidden>
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow" data-i18n="newsPublisher">News publisher</p>
+                <h2 data-i18n="newsPublishTitle">Publish member updates</h2>
+                <p class="muted" data-i18n="newsPublishCopy">Admin can publish announcements, weekly priorities, schedule notices, or policy updates for members.</p>
+              </div>
+            </div>
+            <form id="news-form" class="news-form">
+              <input id="news-id" type="hidden" />
+              <div class="field">
+                <label for="news-title" data-i18n="newsTitleLabel">Title</label>
+                <input id="news-title" type="text" maxlength="120" placeholder="SAT Studio update" />
+              </div>
+              <div class="field">
+                <label for="news-audience" data-i18n="newsAudienceLabel">Audience</label>
+                <select id="news-audience">
+                  <option value="all" data-i18n="newsAudienceAll">All members</option>
+                  <option value="student" data-i18n="newsAudienceStudents">Students</option>
+                  <option value="parent" data-i18n="newsAudienceParents">Parents</option>
+                  <option value="admin" data-i18n="newsAudienceAdmins">Admins</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="news-status" data-i18n="newsStatusLabel">Status</label>
+                <select id="news-status">
+                  <option value="published" data-i18n="newsStatusPublished">Published</option>
+                  <option value="draft" data-i18n="newsStatusDraft">Draft</option>
+                  <option value="archived" data-i18n="newsStatusArchived">Archived</option>
+                </select>
+              </div>
+              <label class="checkbox-line news-pin-field">
+                <input id="news-pinned" type="checkbox" />
+                <span data-i18n="newsPinLabel">Pin to top</span>
+              </label>
+              <div class="field wide">
+                <label for="news-body" data-i18n="newsBodyLabel">Message</label>
+                <textarea id="news-body" rows="5" maxlength="1800" placeholder="Write the update members need to see."></textarea>
+              </div>
+              <div class="news-form-actions">
+                <button id="news-submit" class="button primary" type="submit" data-i18n="newsPublishButton">Publish update</button>
+                <button id="news-cancel-edit" class="button secondary" type="button" hidden data-i18n="newsCancelEdit">Cancel edit</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="news-feed panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow" data-i18n="newsMemberEyebrow">Member news</p>
+                <h2 data-i18n="newsMemberTitle">Updates from SAT Studio</h2>
+                <p class="muted" data-i18n="newsMemberCopy">Announcements and guidance shared by the admin team.</p>
+              </div>
+            </div>
+            <div id="news-list" class="news-list"></div>
+          </section>
+        </section>
+
+        <section id="view-guide" class="view" aria-label="User guide">
+          <div class="guide-hero panel">
+            <div>
+              <p class="eyebrow">Operating manual</p>
+              <h2>Hướng dẫn dùng SAT Studio</h2>
+              <p class="muted">
+                App có hai nhóm việc chính: học sinh dùng để học và ôn tập; phụ huynh/admin dùng để quản lý tài khoản, nguồn dữ liệu, và tạo câu hỏi an toàn.
+              </p>
+            </div>
+            <div class="guide-badges">
+              <span class="pill">Student flow</span>
+              <span class="pill">Parent tracking</span>
+              <span class="pill">Content safety</span>
+            </div>
+          </div>
+
+          <section class="guide-layout">
+            <article class="guide-card panel student-guide-card">
+              <p class="eyebrow">Learner</p>
+              <h2>Luồng học cho học sinh</h2>
+              <ol class="guide-steps">
+                <li><strong>Làm Pretest.</strong><span>Chọn Preview để đánh giá nhanh, hoặc Full Length để mô phỏng đủ 98 câu.</span></li>
+                <li><strong>Xem Roadmap.</strong><span>Bấm các nút Practice trong lộ trình để vào đúng chủ đề cần luyện.</span></li>
+                <li><strong>Luyện tập theo chủ đề.</strong><span>Trả lời câu hỏi, xem giải thích, lưu câu khó bằng Star và ghi mistake note.</span></li>
+                <li><strong>Ôn lỗi sai.</strong><span>Vào Review để làm lại câu sai/bookmark theo spaced review.</span></li>
+                <li><strong>Ghi chú.</strong><span>Dùng Notes để lưu quy tắc, công thức, bẫy hay gặp và đánh dấu cần ôn.</span></li>
+                <li><strong>Học ngoài app.</strong><span>Mở Khan/Bluebook từ Related learning, sau đó quay lại Dashboard để log số phút học.</span></li>
+              </ol>
+            </article>
+
+            <article class="guide-card panel parent-guide-card">
+              <p class="eyebrow">Parent</p>
+              <h2>Việc phụ huynh nên theo dõi</h2>
+              <ol class="guide-steps">
+                <li><strong>Dashboard.</strong><span>Xem baseline, accuracy, due reviews, điểm chuyên cần, streak và stickers.</span></li>
+                <li><strong>Roadmap.</strong><span>Kiểm tra học sinh có đi theo skill yếu từ pretest hay không.</span></li>
+                <li><strong>Notes.</strong><span>Xem học sinh có ghi lại lỗi sai, quy tắc và công thức chưa.</span></li>
+                <li><strong>Accounts.</strong><span>Tạo tài khoản local cho từng con. Bản MVP dùng passcode local, chưa phải auth backend thật.</span></li>
+                <li><strong>Official Log.</strong><span>Ghi kết quả Bluebook/Khan/College Board theo metadata, không paste nguyên câu hỏi official.</span></li>
+              </ol>
+            </article>
+
+            <article class="guide-card panel admin-guide-card">
+              <p class="eyebrow">Content Admin</p>
+              <h2>Xử lý tài liệu và tạo câu hỏi</h2>
+              <ol class="guide-steps">
+                <li><strong>Bank Manager.</strong><span>Import JSON câu hỏi an toàn/original. PDF official hoặc sách thương mại chỉ inspect/log metadata.</span></li>
+                <li><strong>Authoring.</strong><span>Tạo câu hỏi tự viết hoặc dùng pipeline source signal → AI draft.</span></li>
+                <li><strong>Load SAT Archive Signals.</strong><span>Nạp metadata từ ZIP tài liệu. Hệ thống không import nguyên văn câu hỏi từ archive.</span></li>
+                <li><strong>Use + Generate.</strong><span>Chọn một signal để tự điền brief và tạo draft mới bằng nội dung không sao chép wording.</span></li>
+                <li><strong>Save AI Draft.</strong><span>Chỉ lưu nếu prompt/choices/explanation nhìn hợp lý. Draft high-risk sẽ ở private_family và needs_review.</span></li>
+                <li><strong>Review trong Practice.</strong><span>Lọc source AI Generated, làm thử, kiểm tra đáp án/giải thích, rồi đánh dấu Reviewed hoặc Reject.</span></li>
+              </ol>
+            </article>
+
+            <article class="guide-card panel warning-guide admin-guide-card">
+              <p class="eyebrow">Copyright safety</p>
+              <h2>Quy tắc nguồn dữ liệu</h2>
+              <div class="guide-rule-grid">
+                <div><strong>Public candidate</strong><span>Câu tự viết hoặc AI-generated từ metadata, đã review và không trùng wording.</span></div>
+                <div><strong>Private family</strong><span>Tài liệu high-risk dùng nội bộ gia đình, không xuất public, không cho public account thấy.</span></div>
+                <div><strong>Metadata only</strong><span>College Board/Bluebook/official PDF: chỉ lưu test, module, skill, kết quả, note lỗi sai.</span></div>
+                <div><strong>Link out</strong><span>Khan/Bluebook nên mở bằng link ngoài, không scrape, không lưu mật khẩu, không copy nội dung.</span></div>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section id="view-pretest" class="view" aria-label="Pretest view">
+          <div id="student-pretest-coach" class="student-pretest-coach" hidden></div>
+          <div class="pretest-layout">
+            <article class="panel pretest-launch-panel">
+              <p class="eyebrow">Diagnostic</p>
+              <h2>Choose test mode</h2>
+              <p class="muted">Pick a quick baseline or a timed SAT simulation. Details stay collapsed after submission.</p>
+              <div class="pretest-specs">
+                <button class="pretest-spec-card is-primary" data-pretest-action="preview" type="button"><strong>20 questions</strong><span>Quick baseline</span></button>
+                <button class="pretest-spec-card" data-pretest-action="full" type="button"><strong>98 questions</strong><span>Full simulation</span></button>
+                <button class="pretest-spec-card" data-pretest-action="adaptive" type="button"><strong>Adaptive v2</strong><span>Module routing</span></button>
+                <button class="pretest-spec-card" data-pretest-action="rw_module" type="button"><strong>RW check</strong><span>Reading/Writing only</span></button>
+                <button class="pretest-spec-card" data-pretest-action="math_module" type="button"><strong>Math check</strong><span>Math only</span></button>
+              </div>
+              <div class="pretest-compact-note">
+                <span>After submission: score, correct/wrong count, weak skills, answer review, and roadmap.</span>
+              </div>
+              <div class="test-mode-actions pretest-hidden-actions" aria-hidden="true">
+                <button id="start-pretest" class="button primary" type="button">Start Preview</button>
+                <button id="start-full-test" class="button secondary" type="button">Start Full Length</button>
+                <button id="start-adaptive-diagnostic" class="button secondary" type="button">Adaptive v2</button>
+                <button id="start-rw-module" class="button secondary" type="button">RW Module Check</button>
+                <button id="start-math-module" class="button secondary" type="button">Math Module Check</button>
+              </div>
+              <div id="diagnostic-readiness" class="diagnostic-readiness"></div>
+              <div class="official-test-note">
+                <strong>Official full-length source</strong>
+                <span>
+                  Use <a href="https://satsuite.collegeboard.org/practice/practice-tests/bluebook" target="_blank" rel="noreferrer">Bluebook official practice tests</a>
+                  for true SAT scoring. Log results here without copying official questions.
+                </span>
+              </div>
+            </article>
+
+            <article id="pretest-card" class="question-panel" hidden>
+              <div class="question-header">
+                <div>
+                  <div id="pretest-counter" class="question-counter">Question 1</div>
+                  <h2 id="pretest-skill">Skill</h2>
+                </div>
+                <div class="pretest-status">
+                  <div class="pretest-clock">
+                    <span>Time remaining</span>
+                    <strong id="pretest-timer">--:--</strong>
+                  </div>
+                  <div id="pretest-badges" class="badge-row"></div>
+                </div>
+              </div>
+              <div id="pretest-time-limit" class="pretest-time-limit">Timed diagnostic</div>
+              <div id="pretest-stem" class="question-stem"></div>
+              <p class="selection-vocab-hint">Select a word or short phrase to save it into SAT Vocab.</p>
+              <div id="pretest-options" class="answer-options"></div>
+              <div class="answer-actions">
+                <button id="pretest-submit" class="button primary" type="button">Save Answer</button>
+                <button id="pretest-cancel" class="button secondary" type="button">Cancel</button>
+              </div>
+            </article>
+          </div>
+
+          <div id="pretest-results" class="list"></div>
+        </section>
+
+        <section id="view-roadmap" class="view" aria-label="Roadmap view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Personal path</p>
+              <h2>Roadmap after diagnostic</h2>
+            </div>
+            <button id="rebuild-roadmap" class="button secondary" type="button">Rebuild From Data</button>
+          </div>
+          <div id="roadmap-evaluation" class="roadmap-evaluation"></div>
+          <div id="elite-readiness-panel" class="elite-readiness-panel"></div>
+          <div id="roadmap-list" class="roadmap-list"></div>
+          <div id="mastery-ladder" class="mastery-ladder"></div>
+          <div id="roadmap-diagnostic-review" class="list"></div>
+          <div id="skill-matrix" class="skill-matrix"></div>
+        </section>
+
+        <section id="view-lessons" class="view" aria-label="Lesson library view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Lesson Library v1</p>
+              <h2>Subskill lessons from Pre-SAT Grade 10 to SAT 1600</h2>
+              <p class="muted">
+                Each lesson starts with concept repair, then moves through SAT core, trap transfer, and 1600 proof work.
+              </p>
+            </div>
+          </div>
+
+          <section class="lesson-layout">
+            <article class="panel lesson-filters">
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Find lesson</p>
+                  <h2>Choose subskill</h2>
+                </div>
+              </div>
+              <div class="topic-controls">
+                <div class="field">
+                  <label for="lesson-section">Section</label>
+                  <select id="lesson-section"></select>
+                </div>
+                <div class="field">
+                  <label for="lesson-domain">Domain</label>
+                  <select id="lesson-domain"></select>
+                </div>
+                <div class="field">
+                  <label for="lesson-stage">Stage</label>
+                  <select id="lesson-stage"></select>
+                </div>
+                <div class="field wide">
+                  <label for="lesson-search">Search</label>
+                  <input id="lesson-search" type="search" placeholder="linear equations, transitions, cross-text..." />
+                </div>
+              </div>
+              <div id="lesson-list" class="lesson-list"></div>
+            </article>
+
+            <article id="lesson-detail" class="panel lesson-detail"></article>
+          </section>
+        </section>
+
+        <section id="view-topics" class="view" aria-label="Topic study view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Student-selected path</p>
+              <h2>Study by topic</h2>
+              <p class="muted">
+                Use this mode when the student already knows what they want to practice, or when a parent/tutor assigns a topic.
+              </p>
+            </div>
+          </div>
+          <div id="student-topic-coach" class="student-topic-coach" hidden></div>
+
+          <section class="topic-layout">
+            <article class="panel">
+              <p class="eyebrow">Build a focused session</p>
+              <h2>Choose scope</h2>
+              <div class="topic-controls">
+                <div class="field">
+                  <label for="topic-section">Section</label>
+                  <select id="topic-section"></select>
+                </div>
+                <div class="field">
+                  <label for="topic-domain">Domain</label>
+                  <select id="topic-domain"></select>
+                </div>
+                <div class="field">
+                  <label for="topic-skill">Skill</label>
+                  <select id="topic-skill"></select>
+                </div>
+                <div class="field">
+                  <label for="topic-difficulty">Difficulty</label>
+                  <select id="topic-difficulty"></select>
+                </div>
+                <div class="field topic-admin-tools">
+                  <label for="topic-source">Source</label>
+                  <select id="topic-source"></select>
+                </div>
+              </div>
+              <div id="topic-session-summary" class="topic-session-summary"></div>
+              <button id="start-topic-practice" class="button primary full" type="button">Start Topic Practice</button>
+            </article>
+
+            <article class="panel">
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Available topics</p>
+                  <h2>Question bank map</h2>
+                </div>
+              </div>
+              <div id="topic-cards" class="topic-card-grid"></div>
+            </article>
+          </section>
+        </section>
+
+        <section id="view-practice" class="view" aria-label="Practice view">
+          <div class="toolbar">
+            <div class="field">
+              <label for="filter-section">Section</label>
+              <select id="filter-section"></select>
+            </div>
+            <div class="field">
+              <label for="filter-domain">Domain</label>
+              <select id="filter-domain"></select>
+            </div>
+            <div class="field">
+              <label for="filter-difficulty">Difficulty</label>
+              <select id="filter-difficulty"></select>
+            </div>
+            <div class="field practice-admin-tools">
+              <label for="filter-status">Review Status</label>
+              <select id="filter-status"></select>
+            </div>
+            <div class="field practice-admin-tools">
+              <label for="filter-source">Source</label>
+              <select id="filter-source"></select>
+            </div>
+          </div>
+          <div id="student-practice-coach" class="student-practice-coach" hidden></div>
+
+          <section class="practice-mode-bar" aria-label="Practice mode tools">
+            <div>
+              <p class="eyebrow">Training mode</p>
+              <h2 id="practice-mode-label">Standard practice</h2>
+              <p id="practice-session-summary" class="muted">Use Sprint for short spaced review, or Exam Drill for timed Bluebook-style practice.</p>
+            </div>
+            <div class="practice-mode-actions">
+              <div id="practice-timer" class="practice-timer">No timer</div>
+              <button id="start-five-minute-sprint" class="button primary" type="button">5-Min Sprint</button>
+              <button id="start-hard-sprint" class="button secondary" type="button">Hard Sprint</button>
+              <button id="start-exam-mode" class="button secondary" type="button">Exam Drill</button>
+              <button id="end-practice-session" class="button secondary" type="button">End</button>
+            </div>
+          </section>
+          <div id="practice-question-nav" class="practice-question-nav"></div>
+
+          <section class="workspace-layout">
+            <article class="question-panel">
+              <div class="question-header">
+                <div>
+                  <div id="question-counter" class="question-counter">Question 0 of 0</div>
+                  <h2 id="question-skill">Skill</h2>
+                </div>
+                <div id="question-badges" class="badge-row"></div>
+              </div>
+
+              <div id="question-stem" class="question-stem"></div>
+              <p class="selection-vocab-hint">Select any word or short phrase in the question, answer choices, or explanation to add it to SAT Vocab.</p>
+              <div class="test-tool-row" aria-label="Question tools">
+                <button id="mark-review" class="button secondary" type="button">Mark Review</button>
+                <button id="highlight-selection" class="button secondary" type="button">Highlight</button>
+                <button id="clear-highlights" class="button secondary" type="button">Clear Highlights</button>
+              </div>
+              <div id="answer-options" class="answer-options"></div>
+              <section id="attempt-evidence-panel" class="attempt-evidence-panel" aria-label="Learning evidence">
+                <details>
+                  <summary id="attempt-evidence-summary">Proof note</summary>
+                  <p id="attempt-evidence-hint" class="muted">Optional: write the first move or evidence you used before checking.</p>
+                  <div class="attempt-evidence-grid">
+                    <label>
+                      <span id="attempt-first-move-label">First move</span>
+                      <input id="attempt-first-move" type="text" autocomplete="off" placeholder="What did you check first?" />
+                    </label>
+                    <label>
+                      <span id="attempt-student-work-label">Work / reasoning</span>
+                      <textarea id="attempt-student-work" rows="2" placeholder="Equation, elimination reason, or short proof"></textarea>
+                    </label>
+                    <label>
+                      <span id="attempt-evidence-citation-label">Evidence / verification</span>
+                      <textarea id="attempt-evidence-citation" rows="2" placeholder="Text clue, graph/table evidence, or Desmos check"></textarea>
+                    </label>
+                  </div>
+                </details>
+              </section>
+
+              <div class="answer-actions">
+                <button id="submit-answer" class="button primary" type="button">Check Answer</button>
+                <button id="next-question" class="button secondary" type="button">Next</button>
+                <button id="bookmark-question" class="icon-button" type="button" title="Bookmark" aria-label="Bookmark">Star</button>
+              </div>
+
+              <div id="feedback" class="feedback" hidden></div>
+
+              <footer class="question-source practice-admin-tools">
+                <div>
+                  <span class="source-label">Source</span>
+                  <span id="question-source"></span>
+                </div>
+                <div>
+                  <span class="source-label">License</span>
+                  <span id="question-license"></span>
+                </div>
+              </footer>
+            </article>
+
+            <aside class="side-panel">
+              <div class="practice-admin-tools">
+                <h2>Question Governance</h2>
+                <div class="status-controls">
+                  <button class="status-button" data-status="needs_review" type="button">Needs Review</button>
+                  <button class="status-button" data-status="reviewed" type="button">Reviewed</button>
+                  <button class="status-button" data-status="rejected" type="button">Reject</button>
+                </div>
+                <div class="publication-controls">
+                  <button id="promote-public" class="button primary full" type="button">Promote to Public Candidate</button>
+                  <p id="publication-status" class="publication-status">Review and source status appear here.</p>
+                </div>
+                <div class="question-audit-panel">
+                  <h2>Quality audit</h2>
+                  <label class="note-label" for="question-audit-issue">Issue type</label>
+                  <select id="question-audit-issue">
+                    <option value="wrong_answer">Wrong answer key</option>
+                    <option value="bad_explanation">Explanation issue</option>
+                    <option value="ambiguous_prompt">Ambiguous prompt</option>
+                    <option value="source_policy">Source or copyright risk</option>
+                    <option value="duplicate_form">Duplicate/repeated form</option>
+                    <option value="difficulty_mismatch">Difficulty mismatch</option>
+                    <option value="typo_layout">Typo or layout issue</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <label class="note-label" for="question-audit-severity">Severity</label>
+                  <select id="question-audit-severity">
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                  </select>
+                  <label class="note-label" for="question-audit-note">Audit note</label>
+                  <textarea id="question-audit-note" rows="4" placeholder="Describe the suspected issue and what should be checked."></textarea>
+                  <button id="submit-audit-report" class="button secondary full" type="button">Report Issue</button>
+                  <div class="audit-admin-actions">
+                    <button id="audit-mark-pass" class="button secondary full" type="button">Mark Audit Pass</button>
+                    <button id="audit-block-question" class="button secondary full danger" type="button">Block From Public</button>
+                  </div>
+                  <div id="question-audit-log" class="question-audit-log empty-state">No audit history yet.</div>
+                </div>
+              </div>
+              <label class="note-label" for="mistake-note">Mistake note</label>
+              <textarea id="mistake-note" rows="5" placeholder="Example: punctuation error, missed condition, rushed answer."></textarea>
+              <button id="save-note" class="button secondary full" type="button">Save Note</button>
+              <div class="error-tag-panel">
+                <h2>Error diagnosis</h2>
+                <label class="note-label" for="error-type-select">Error type</label>
+                <select id="error-type-select">
+                  <option value="unknown">Not tagged yet</option>
+                  <option value="knowledge_gap">Knowledge gap</option>
+                  <option value="misread_prompt">Misread prompt</option>
+                  <option value="trap_answer">Trap answer</option>
+                  <option value="careless">Careless mistake</option>
+                  <option value="calculation">Calculation error</option>
+                  <option value="time_pressure">Time pressure</option>
+                  <option value="vocab">Vocabulary/context</option>
+                  <option value="evidence">Evidence/reasoning</option>
+                  <option value="slow_correct">Correct but slow</option>
+                  <option value="skipped">Skipped/no answer</option>
+                </select>
+                <label class="note-label" for="error-tag-note">Reason note</label>
+                <textarea id="error-tag-note" rows="4" placeholder="Why did this happen, and what should change next time?"></textarea>
+                <button id="save-error-tag" class="button secondary full" type="button">Save Error Tag</button>
+                <p id="error-tag-status" class="error-tag-status">Answer a question to tag the latest attempt.</p>
+              </div>
+              <div class="practice-resources">
+                <h2>Related learning</h2>
+                <div id="practice-resource-links" class="external-resource-list"></div>
+              </div>
+              <div class="practice-resources">
+                <h2>Pacing analytics</h2>
+                <div id="pacing-analytics" class="pacing-analytics"></div>
+              </div>
+              <div class="practice-resources">
+                <h2>Math tools</h2>
+                <a id="open-desmos" class="button secondary full" href="https://www.desmos.com/calculator" target="_blank" rel="noreferrer">Open Desmos Calculator</a>
+                <p class="muted">SAT Studio links out to Desmos rather than storing external calculator data.</p>
+              </div>
+            </aside>
+          </section>
+          <div id="exam-review-report" class="exam-review-report"></div>
+        </section>
+
+        <section id="view-review" class="view" aria-label="Review queue">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Spaced review</p>
+              <h2>Adaptive remediation queue</h2>
+              <p class="muted">Wrong, slow, skipped, and marked attempts become learn-again tasks with due dates and proof questions.</p>
+            </div>
+            <div class="header-actions">
+              <button id="start-remediation-queue" class="button primary" type="button">Start Proof Queue</button>
+              <button id="start-due-review" class="button secondary" type="button">Practice Due</button>
+            </div>
+          </div>
+          <div id="review-list" class="list"></div>
+        </section>
+
+        <section id="view-notes" class="view" aria-label="Study notes">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Study notebook</p>
+              <h2>Notes for review</h2>
+              <p class="muted">Capture rules, mistakes, shortcuts, and reminders while studying.</p>
+            </div>
+            <button id="notes-start-review" class="button primary" type="button">Review Starred</button>
+          </div>
+          <div id="student-notes-coach" class="student-notes-coach" hidden></div>
+
+          <section class="notes-layout">
+            <article class="panel note-editor">
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Quick capture</p>
+                  <h2>Add note</h2>
+                </div>
+              </div>
+              <div class="note-form-grid">
+                <div class="field">
+                  <label for="note-title">Title</label>
+                  <input id="note-title" type="text" placeholder="Comma splice, vertex form, transition trap..." />
+                </div>
+                <div class="field">
+                  <label for="note-section">Section</label>
+                  <select id="note-section">
+                    <option>Reading and Writing</option>
+                    <option>Math</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="note-domain">Domain</label>
+                  <input id="note-domain" type="text" placeholder="Standard English Conventions" />
+                </div>
+                <div class="field">
+                  <label for="note-skill">Skill</label>
+                  <input id="note-skill" type="text" placeholder="Boundaries, Linear equations..." />
+                </div>
+                <div class="field">
+                  <label for="note-type">Type</label>
+                  <select id="note-type">
+                    <option value="concept">Concept</option>
+                    <option value="mistake">Mistake</option>
+                    <option value="strategy">Strategy</option>
+                    <option value="formula">Formula</option>
+                    <option value="vocabulary">Vocabulary</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="note-priority">Priority</label>
+                  <select id="note-priority">
+                    <option value="high">High</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="low">Low</option>
+                  </select>
+                </div>
+                <div class="field wide">
+                  <label for="note-body">Note</label>
+                  <textarea id="note-body" rows="7" placeholder="Write the rule, why it matters, and a quick example in your own words."></textarea>
+                </div>
+                <div class="field">
+                  <label for="note-tags">Tags</label>
+                  <input id="note-tags" type="text" placeholder="grammar, trap, formula" />
+                </div>
+                <label class="checkbox-line">
+                  <input id="note-starred" type="checkbox" />
+                  <span>Star for review</span>
+                </label>
+              </div>
+              <div class="answer-actions">
+                <button id="save-study-note" class="button primary" type="button">Save Note</button>
+                <button id="clear-study-note" class="button secondary" type="button">Clear</button>
+              </div>
+            </article>
+
+            <aside class="panel notes-sidebar">
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Notebook stats</p>
+                  <h2>Review focus</h2>
+                </div>
+              </div>
+              <div class="notes-stats">
+                <div><strong id="notes-total">0</strong><span>Total</span></div>
+                <div><strong id="notes-starred">0</strong><span>Starred</span></div>
+                <div><strong id="notes-due">0</strong><span>Due</span></div>
+              </div>
+              <div class="field">
+                <label for="notes-search">Search</label>
+                <input id="notes-search" type="search" placeholder="Search title, body, tags..." />
+              </div>
+              <div class="field">
+                <label for="notes-filter-type">Type</label>
+                <select id="notes-filter-type">
+                  <option value="All">All</option>
+                  <option value="concept">Concept</option>
+                  <option value="mistake">Mistake</option>
+                  <option value="strategy">Strategy</option>
+                  <option value="formula">Formula</option>
+                  <option value="vocabulary">Vocabulary</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="notes-filter-priority">Priority</label>
+                <select id="notes-filter-priority">
+                  <option value="All">All</option>
+                  <option value="high">High</option>
+                  <option value="medium">Medium</option>
+                  <option value="low">Low</option>
+                </select>
+              </div>
+            </aside>
+          </section>
+
+          <div id="notes-list" class="notes-list"></div>
+        </section>
+
+        <section id="view-vocab" class="view" aria-label="SAT vocabulary">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">SAT vocabulary</p>
+              <h2>Words, flashcards, and quiz</h2>
+              <p class="muted">Study vocabulary by category. Words marked Already know are removed from quiz rotation for this account.</p>
+            </div>
+            <div class="answer-actions">
+              <button id="vocab-start-quiz" class="button primary" type="button">Start Quiz</button>
+              <button id="vocab-next-card" class="button secondary" type="button">Next Card</button>
+            </div>
+          </div>
+          <div id="student-vocab-coach" class="student-vocab-coach" hidden></div>
+
+          <section class="vocab-metrics">
+            <div class="metric"><div class="metric-label">Total words</div><div id="vocab-total" class="metric-value">0</div><div class="metric-caption">in local vocab bank</div></div>
+            <div class="metric"><div class="metric-label">Learning</div><div id="vocab-learning" class="metric-value">0</div><div class="metric-caption">not marked known</div></div>
+            <div class="metric"><div class="metric-label">Already know</div><div id="vocab-known" class="metric-value">0</div><div class="metric-caption">hidden from quiz</div></div>
+            <div class="metric"><div class="metric-label">Quiz accuracy</div><div id="vocab-accuracy" class="metric-value">0%</div><div class="metric-caption">vocab attempts</div></div>
+          </section>
+
+          <section class="vocab-layout">
+            <article class="panel vocab-study-panel">
+              <div class="vocab-toolbar">
+                <div class="field">
+                  <label for="vocab-category">Category</label>
+                  <select id="vocab-category"></select>
+                </div>
+                <div class="field">
+                  <label for="vocab-search">Search</label>
+                  <input id="vocab-search" type="search" placeholder="word, meaning, example..." />
+                </div>
+                <label class="checkbox-line">
+                  <input id="vocab-hide-known" type="checkbox" checked />
+                  <span>Hide already known</span>
+                </label>
+              </div>
+
+              <div class="flashcard-shell">
+                <div id="vocab-flashcard" class="vocab-flashcard" role="button" tabindex="0" aria-label="Flashcard"></div>
+                <div class="answer-actions">
+                  <button id="vocab-prev-card" class="button secondary" type="button">Previous</button>
+                  <button id="vocab-flip-card" class="button primary" type="button">Flip</button>
+                  <button id="vocab-mark-known" class="button secondary" type="button">Already know</button>
+                </div>
+              </div>
+
+              <div id="vocab-word-list" class="vocab-word-list"></div>
+            </article>
+
+            <aside class="panel vocab-quiz-panel">
+              <div class="section-heading compact">
+                <div>
+                  <p class="eyebrow">Quiz mode</p>
+                  <h2>Test unknown words</h2>
+                  <p class="muted">Quiz pulls only from words not marked Already know.</p>
+                </div>
+              </div>
+              <div id="vocab-quiz-card" class="vocab-quiz-card empty-state">Start a quiz to test the current category.</div>
+              <div id="vocab-quiz-feedback" class="feedback" hidden></div>
+              <div class="answer-actions">
+                <button id="vocab-submit-quiz" class="button primary" type="button">Check</button>
+                <button id="vocab-next-quiz" class="button secondary" type="button">Next Quiz</button>
+              </div>
+            </aside>
+          </section>
+
+          <section class="panel vocab-import-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Input vocabulary</p>
+                <h2>Add words and categories</h2>
+                <p class="muted">Use original definitions/examples or sources you can reuse. Imported categories appear in the category selector.</p>
+              </div>
+            </div>
+            <div class="vocab-add-grid">
+              <div class="field">
+                <label for="vocab-add-word">Word</label>
+                <input id="vocab-add-word" type="text" placeholder="mitigate" />
+              </div>
+              <div class="field">
+                <label for="vocab-add-category">Category</label>
+                <input id="vocab-add-category" type="text" placeholder="Argument and logic" />
+              </div>
+              <div class="field">
+                <label for="vocab-add-pos">Part of speech</label>
+                <input id="vocab-add-pos" type="text" placeholder="verb" />
+              </div>
+              <div class="field wide">
+                <label for="vocab-add-definition">Definition</label>
+                <textarea id="vocab-add-definition" rows="2" placeholder="to make something less severe or harmful"></textarea>
+              </div>
+              <div class="field wide">
+                <label for="vocab-add-example">SAT-style example</label>
+                <textarea id="vocab-add-example" rows="2" placeholder="The new policy was intended to mitigate traffic near the school."></textarea>
+              </div>
+            </div>
+            <div class="answer-actions">
+              <button id="vocab-add-word-button" class="button primary" type="button">Add Word</button>
+            </div>
+            <div class="field wide">
+              <label for="vocab-json-import">Paste vocab JSON or lines</label>
+              <textarea id="vocab-json-import" rows="5" placeholder='aberration - noun - Academic Reasoning - sự lệch chuẩn; điều bất thường&#10;or [{"word":"mitigate","category":"Argument and logic","partOfSpeech":"verb","definitionVi":"...","definitionEn":"..."}]'></textarea>
+            </div>
+            <div class="answer-actions">
+              <button id="vocab-import-json-button" class="button secondary" type="button">Import Vocab</button>
+            </div>
+            <div id="vocab-import-result" class="import-result"></div>
+          </section>
+        </section>
+
+        <section id="view-sources" class="view" aria-label="Source ledger">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Needs processing</p>
+              <h2>SAT Archive Registry</h2>
+              <p class="muted">Start here. Archive PDFs are private metadata/source signals; no protected question wording is imported.</p>
+            </div>
+            <div class="answer-actions">
+              <button id="load-archive-registry" class="button secondary" type="button">Load SAT Archive Files</button>
+            </div>
+          </div>
+          <section class="panel archive-registry-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Private archive registry</p>
+                <h2>SAT Archive Files</h2>
+                <p class="muted">Each ZIP file becomes a source record. Use it as a skill signal, then generate original drafts for review.</p>
+              </div>
+            </div>
+            <div id="archive-registry-summary" class="archive-registry-summary empty-state">
+              Load the archive registry to see the 35 source files.
+            </div>
+            <div id="archive-registry-list" class="archive-registry-list empty-state">
+              No archive files loaded yet.
+            </div>
+          </section>
+
+          <section class="panel integrity-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Question integrity</p>
+                <h2>Validator & Duplicate Risk Report</h2>
+                <p class="muted">
+                  Admin view for blocked source rows, math-verification status, repeated topics, and section balance.
+                </p>
+              </div>
+              <div class="answer-actions">
+                <button id="load-integrity-report" class="button secondary" type="button">Load Integrity Report</button>
+              </div>
+            </div>
+            <div id="question-integrity-summary" class="integrity-summary empty-state">
+              Load the integrity report to see data quality status.
+            </div>
+            <div id="question-integrity-blocked" class="integrity-list empty-state">
+              Blocked source rows will appear here.
+            </div>
+            <div id="question-integrity-topics" class="integrity-list empty-state">
+              Overrepresented topics will appear here.
+            </div>
+          </section>
+
+          <section class="panel source-info-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Read-only reference</p>
+                <h2>Source Ledger</h2>
+                <p class="muted">These source groups are listed for count, scope, and risk tracking. They do not need action here.</p>
+              </div>
+            </div>
+            <div id="source-ledger" class="source-ledger"></div>
+          </section>
+
+          <div class="import-box">
+            <label for="json-import">Paste OpenSAT-style JSON</label>
+            <textarea id="json-import" rows="8" placeholder='[{"id":"...","domain":"...","question":{"paragraph":"...","question":"...","choices":{"A":"..."},"correct_answer":"A","explanation":"..."}}]'></textarea>
+            <button id="import-json" class="button primary" type="button">Import Questions</button>
+          </div>
+        </section>
+
+        <section id="view-bank" class="view" aria-label="Bank manager">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Admin data entry</p>
+              <h2>Question bank manager</h2>
+              <p class="muted">
+                Use this for bulk imports. Imported content is marked needs_review until checked by an admin.
+              </p>
+            </div>
+          </div>
+
+          <article class="panel question-admin-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Admin operations</p>
+                <h2>Question management</h2>
+                <p class="muted">
+                  Review individual questions, inspect source policy, and manage groups that need audit, duplicate, or remediation decisions.
+                </p>
+              </div>
+            </div>
+            <div class="bank-tools-row question-admin-filters">
+              <div class="field wide">
+                <label for="question-admin-search">Search</label>
+                <input id="question-admin-search" type="search" placeholder="ID, skill, domain, source, prompt..." />
+              </div>
+              <div class="field">
+                <label for="question-admin-section">Section</label>
+                <select id="question-admin-section"></select>
+              </div>
+              <div class="field">
+                <label for="question-admin-status">Review status</label>
+                <select id="question-admin-status"></select>
+              </div>
+              <div class="field">
+                <label for="question-admin-source">Source</label>
+                <select id="question-admin-source"></select>
+              </div>
+              <div class="field">
+                <label for="question-admin-pool">Practice pool</label>
+                <select id="question-admin-pool"></select>
+              </div>
+            </div>
+            <div id="question-admin-workspace" class="question-admin-workspace empty-state">
+              Loading question management workspace...
+            </div>
+          </article>
+
+          <section class="bank-grid">
+            <article class="panel">
+              <p class="eyebrow">JSON bank import</p>
+              <h2>Upload question file</h2>
+              <p class="muted">
+                Accepts SAT Studio JSON or OpenSAT/PineSAT-style JSON. Keep source and license fields whenever possible.
+              </p>
+              <label class="button secondary file-button full">
+                Choose JSON File
+                <input id="bank-file-import" type="file" accept="application/json,.json" />
+              </label>
+              <label class="checkbox-line vault-import-toggle">
+                <input id="bank-private-vault-mode" type="checkbox" />
+                Import as Private Family Vault
+              </label>
+              <p class="muted">
+                Use Vault mode only for material your family is allowed to use privately. Vault questions stay hidden from public accounts.
+              </p>
+              <div id="bank-import-result" class="import-result empty-state">
+                No bank file imported yet.
+              </div>
+            </article>
+
+            <article class="panel">
+              <p class="eyebrow">PDF workflow</p>
+              <h2>PDF is a source, not a bank yet</h2>
+              <p class="muted">
+                A PDF must be converted into structured questions before the app can use it reliably.
+              </p>
+              <label class="button secondary file-button full">
+                Select PDF For Review
+                <input id="pdf-file-check" type="file" accept="application/pdf,.pdf" />
+              </label>
+              <div id="pdf-import-result" class="pdf-workflow">
+                <strong>Recommended pipeline</strong>
+                <span>Text PDF: extract text, split questions, map choices, answer key, explanations.</span>
+                <span>Scanned PDF: OCR first, then AI/human review before import.</span>
+                <span>Final output should be SAT Studio JSON, not raw PDF text.</span>
+              </div>
+            </article>
+          </section>
+
+          <article class="panel duplicate-audit-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Duplicate control</p>
+                <h2>Skeleton audit by topic</h2>
+                <p class="muted">
+                  Admin can scan generated banks topic by topic, then split repeated skeletons into core, remedial, and hidden duplicate pools.
+                </p>
+              </div>
+            </div>
+            <div class="bank-tools-row">
+              <div class="field">
+                <label for="duplicate-scan-scope">Scope</label>
+                <select id="duplicate-scan-scope">
+                  <option value="generated">AI Generated + SAT King + SAT 1590</option>
+                  <option value="all_visible">All visible question banks</option>
+                </select>
+              </div>
+              <button id="run-duplicate-scan" class="button secondary" type="button">Run Duplicate Scan</button>
+              <button id="apply-duplicate-policy" class="button primary" type="button">Apply Pool Policy</button>
+            </div>
+            <div id="duplicate-scan-result" class="duplicate-scan-result import-result empty-state">
+              Run a scan after importing or generating questions. The scan is grouped by section, domain, skill, difficulty, and answer format.
+            </div>
+          </article>
+
+          <article class="panel vault-mode-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Private family study</p>
+                <h2>Vault Mode</h2>
+                <p class="muted">
+                  Original/private materials imported in Vault mode are available only to family accounts and stay blocked from public accounts.
+                </p>
+              </div>
+              <div class="answer-actions">
+                <button id="start-vault-practice" class="button secondary" type="button">Practice Vault</button>
+              </div>
+            </div>
+            <div id="vault-summary" class="vault-summary empty-state">
+              No Private Family Vault questions imported yet.
+            </div>
+          </article>
+
+          <details class="panel admin-details-panel">
+            <summary>
+              <span>
+                <span class="eyebrow">SAT Studio JSON format</span>
+                <strong>Preferred structure</strong>
+              </span>
+            </summary>
+            <pre class="code-sample"><code>[
+  {
+    "id": "orig-math-algebra-001",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Medium",
+    "sourceType": "original",
+    "sourceName": "SAT Studio Original Bank",
+    "licenseNote": "Original content; safe after review.",
+    "prompt": "If 2x + 5 = 17, what is x?",
+    "choices": { "A": "4", "B": "5", "C": "6", "D": "7" },
+    "correctAnswer": "C",
+    "explanation": "2x + 5 = 17, so 2x = 12 and x = 6."
+  }
+]</code></pre>
+          </details>
+        </section>
+
+        <section id="view-official" class="view" aria-label="Official practice log">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">No copied official content</p>
+              <h2>Official practice log</h2>
+            </div>
+          </div>
+          <div id="student-official-coach" class="student-official-coach" hidden></div>
+          <form id="official-form" class="official-form">
+            <div class="field" id="official-student-field">
+              <label for="official-student">Student</label>
+              <select id="official-student"></select>
+            </div>
+            <div class="field">
+              <label for="official-source">Source</label>
+              <select id="official-source">
+                <option>Bluebook</option>
+                <option>College Board Student Question Bank</option>
+                <option>Khan Academy</option>
+                <option>Other official practice</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="official-section">Section</label>
+              <select id="official-section">
+                <option>Full test</option>
+                <option>Reading and Writing</option>
+                <option>Math</option>
+              </select>
+            </div>
+            <div class="field official-score-field">
+              <label for="official-total-score">Total score</label>
+              <input id="official-total-score" type="number" min="400" max="1600" step="10" placeholder="1320" />
+            </div>
+            <div class="field official-score-field">
+              <label for="official-rw-score">RW score</label>
+              <input id="official-rw-score" type="number" min="200" max="800" step="10" placeholder="650" />
+            </div>
+            <div class="field official-score-field">
+              <label for="official-math-score">Math score</label>
+              <input id="official-math-score" type="number" min="200" max="800" step="10" placeholder="670" />
+            </div>
+            <div class="field">
+              <label for="official-skill">Skill</label>
+              <input id="official-skill" type="text" placeholder="Boundaries, Linear functions..." />
+            </div>
+            <div class="field">
+              <label for="official-ref">Reference</label>
+              <input id="official-ref" type="text" placeholder="Practice Test 8, Module 1, Q12" />
+            </div>
+            <div class="field">
+              <label for="official-result">Result</label>
+              <select id="official-result">
+                <option value="wrong">Wrong</option>
+                <option value="correct">Correct</option>
+                <option value="uncertain">Uncertain</option>
+              </select>
+            </div>
+            <div class="field wide">
+              <label for="official-note">Note</label>
+              <textarea id="official-note" rows="3" placeholder="Do not paste official question text. Record skill, mistake type, and strategy only."></textarea>
+            </div>
+            <button class="button primary" type="submit">Add Log</button>
+          </form>
+          <div id="official-list" class="list"></div>
+        </section>
+
+        <section id="view-author" class="view" aria-label="Question authoring">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Original content pipeline</p>
+              <h2>Add a question draft</h2>
+            </div>
+          </div>
+          <form id="author-form" class="author-form">
+            <div class="field">
+              <label for="author-section">Section</label>
+              <select id="author-section">
+                <option>Reading and Writing</option>
+                <option>Math</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="author-domain">Domain</label>
+              <input id="author-domain" type="text" required />
+            </div>
+            <div class="field">
+              <label for="author-skill">Skill</label>
+              <input id="author-skill" type="text" required />
+            </div>
+            <div class="field">
+              <label for="author-difficulty">Difficulty</label>
+              <select id="author-difficulty">
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+              </select>
+            </div>
+            <div class="field wide">
+              <label for="author-prompt">Prompt</label>
+              <textarea id="author-prompt" rows="5" required></textarea>
+            </div>
+            <div class="choice-grid">
+              <input id="choice-a" type="text" placeholder="Choice A" required />
+              <input id="choice-b" type="text" placeholder="Choice B" required />
+              <input id="choice-c" type="text" placeholder="Choice C" required />
+              <input id="choice-d" type="text" placeholder="Choice D" required />
+            </div>
+            <div class="field">
+              <label for="author-answer">Correct Answer</label>
+              <select id="author-answer">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+              </select>
+            </div>
+            <div class="field wide">
+              <label for="author-explanation">Explanation</label>
+              <textarea id="author-explanation" rows="4" placeholder='Use **keyword**, *short quote*, "quoted evidence", or `x = 6` for formatted review.' required></textarea>
+              <p class="field-hint">Formatting is display-only: bold keywords, italic quotes, and inline math/code stay as plain text in the question bank.</p>
+            </div>
+            <button class="button primary" type="submit">Save Draft</button>
+          </form>
+
+          <article class="panel ai-generator-panel">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">AI-safe generation</p>
+                <h2>Source signal to original draft</h2>
+                <p class="muted">
+                  Record only skill signals, mistake patterns, and difficulty ideas. Do not paste protected prompts or answer choices.
+                </p>
+              </div>
+            </div>
+
+            <div class="ai-generator-grid">
+              <div class="field">
+                <label for="signal-source-kind">Risky source</label>
+                <select id="signal-source-kind">
+                  <option value="cracksat">CrackSAT reference</option>
+                  <option value="college_board">College Board / Bluebook</option>
+                  <option value="private_pdf">Private PDF</option>
+                  <option value="satpanda">SAT Panda</option>
+                  <option value="khan_college_board">Khan / College Board SAT</option>
+                  <option value="commercial_prep">Commercial prep book</option>
+                  <option value="third_party_prep">Third-party prep material</option>
+                  <option value="unknown_archive_doc">Unknown archive document</option>
+                  <option value="other">Other protected source</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="signal-section">Section</label>
+                <select id="signal-section">
+                  <option>Reading and Writing</option>
+                  <option>Math</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="signal-difficulty">Difficulty idea</label>
+                <select id="signal-difficulty">
+                  <option>Easy</option>
+                  <option>Medium</option>
+                  <option>Hard</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="signal-domain">Domain</label>
+                <input id="signal-domain" type="text" placeholder="Information and Ideas, Algebra..." />
+              </div>
+              <div class="field">
+                <label for="signal-skill">Skill signal</label>
+                <input id="signal-skill" type="text" placeholder="Inferences, Quadratics..." />
+              </div>
+              <div class="field">
+                <label for="signal-reference">Reference only</label>
+                <input id="signal-reference" type="text" placeholder="URL, test/module/question number, file name..." />
+              </div>
+              <div class="field wide">
+                <label for="signal-mistake-pattern">Mistake pattern</label>
+                <textarea id="signal-mistake-pattern" rows="3" placeholder="Example: student picked a transition with the wrong contrast relationship."></textarea>
+              </div>
+              <div class="field wide">
+                <label for="signal-learning-goal">Learning goal</label>
+                <textarea id="signal-learning-goal" rows="3" placeholder="What should the new original question test?"></textarea>
+              </div>
+              <label class="checkbox-line wide">
+                <input id="signal-no-protected-text" type="checkbox" />
+                <span>I did not paste protected prompt, passage, answer choices, or official explanation.</span>
+              </label>
+            </div>
+            <div class="answer-actions">
+              <button id="save-source-signal" class="button secondary" type="button">Save Source Signal</button>
+              <button id="use-latest-signal" class="button secondary" type="button">Use Latest + Generate</button>
+              <button id="load-archive-signals" class="button secondary" type="button">Load SAT Archive Signals</button>
+            </div>
+            <div id="archive-signal-import-result" class="import-result"></div>
+            <div id="source-signal-list" class="signal-list empty-state">
+              No source signals saved yet.
+            </div>
+
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Draft builder</p>
+                <h2>Generate safe original question</h2>
+              </div>
+            </div>
+            <div class="ai-generator-grid">
+              <div class="field">
+                <label for="ai-section">Section</label>
+                <select id="ai-section">
+                  <option>Reading and Writing</option>
+                  <option>Math</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="ai-domain">Domain</label>
+                <input id="ai-domain" type="text" placeholder="Algebra, Craft and Structure..." />
+              </div>
+              <div class="field">
+                <label for="ai-skill">Skill</label>
+                <input id="ai-skill" type="text" placeholder="Transitions, Quadratics..." />
+              </div>
+              <div class="field">
+                <label for="ai-difficulty">Difficulty</label>
+                <select id="ai-difficulty">
+                  <option>Easy</option>
+                  <option>Medium</option>
+                  <option>Hard</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="ai-source-risk">Source risk</label>
+                <select id="ai-source-risk">
+                  <option value="high">High risk / private family first</option>
+                  <option value="medium">Medium risk / needs review</option>
+                  <option value="low">Low risk / public candidate</option>
+                </select>
+              </div>
+              <div class="field wide">
+                <label for="ai-source-reference">Source reference</label>
+                <input id="ai-source-reference" type="text" placeholder="CrackSAT link, official test metadata, OpenStax concept..." />
+              </div>
+              <div class="field wide">
+                <label for="ai-generation-brief">Generation brief</label>
+                <textarea id="ai-generation-brief" rows="4" placeholder="Describe the skill and target reasoning. Do not paste protected question text."></textarea>
+              </div>
+            </div>
+            <div class="answer-actions">
+              <button id="generate-ai-draft" class="button primary" type="button">Generate Safe Draft</button>
+              <button id="save-ai-draft" class="button secondary" type="button" disabled>Save AI Draft</button>
+              <label class="batch-count-control">
+                <span>Target drafts</span>
+                <input id="ai-batch-count" type="number" min="1" max="400" value="10" />
+              </label>
+              <button id="generate-ai-batch" class="button secondary" type="button">Generate + Save Batch</button>
+              <button id="open-guide-from-author" class="button secondary" type="button">What next?</button>
+            </div>
+            <div id="ai-draft-output" class="import-result empty-state">
+              No AI draft generated yet.
+            </div>
+            <div class="draft-next-steps">
+              <strong>Sau khi thấy Generated draft thì làm gì?</strong>
+              <span>1. Đọc trực tiếp thẻ câu hỏi: đề bài, 4 lựa chọn, đáp án đúng và giải thích.</span>
+              <span>2. Nếu nội dung ổn, bấm Save AI Draft. Nếu câu quá chung hoặc không đúng skill, generate lại hoặc sửa brief.</span>
+              <span>3. Sau khi save, sang Practice, lọc Source = AI Generated, làm thử câu đó và kiểm tra đáp án.</span>
+              <span>4. Chỉ đánh dấu Reviewed khi câu không copy wording, đáp án đúng, giải thích rõ và phù hợp mục tiêu học.</span>
+            </div>
+          </article>
+        </section>
+
+        <section id="view-accounts" class="view" aria-label="Account management">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Local access control</p>
+              <h2>Family accounts</h2>
+            </div>
+          </div>
+          <div class="subview-tabs account-workspace-tabs" role="tablist" aria-label="Account workspace">
+            <button class="subview-tab active" data-account-tab="overview" type="button" role="tab" aria-controls="account-panel-overview" aria-selected="true">Overview</button>
+            <button class="subview-tab" data-account-tab="list" type="button" role="tab" aria-controls="account-panel-list" aria-selected="false">Account list</button>
+            <button class="subview-tab" data-account-tab="form" type="button" role="tab" aria-controls="account-form" aria-selected="false">Create / edit</button>
+            <button class="subview-tab" data-account-tab="rewards" type="button" role="tab" aria-controls="reward-admin-panel" aria-selected="false">Rewards</button>
+            <button class="subview-tab" data-account-tab="backend" type="button" role="tab" aria-controls="public-backend-panel" aria-selected="false">Backend sync</button>
+          </div>
+          <section id="account-panel-overview" class="account-workspace-panel" data-account-panel="overview" role="tabpanel">
+            <div id="account-overview" class="account-overview"></div>
+          </section>
+          <section id="account-panel-list" class="account-workspace-panel" data-account-panel="list" role="tabpanel" hidden>
+            <div id="account-list" class="account-list"></div>
+          </section>
+          <section id="reward-admin-panel" class="reward-admin-panel panel account-workspace-panel" data-account-panel="rewards" role="tabpanel" aria-label="Reward and promotion management" hidden>
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Motivation programs</p>
+                <h2>Rewards & promotions</h2>
+                <p class="muted">Admin rewards can be global or targeted. Parent rewards are visible only to linked students.</p>
+              </div>
+            </div>
+            <form id="reward-program-form" class="reward-program-form">
+              <div class="field">
+                <label for="reward-title">Reward title</label>
+                <input id="reward-title" type="text" placeholder="Movie night, book credit, practice bonus..." />
+              </div>
+              <div class="field">
+                <label for="reward-cost">Point cost</label>
+                <input id="reward-cost" type="number" min="1" max="10000" step="1" value="60" />
+              </div>
+              <div class="field">
+                <label for="reward-scope">Visibility</label>
+                <select id="reward-scope">
+                  <option value="family">Linked students only</option>
+                  <option value="global">All students</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="reward-target-student">Target student</label>
+                <select id="reward-target-student"></select>
+              </div>
+              <div class="field">
+                <label for="reward-type">Reward type</label>
+                <select id="reward-type">
+                  <option value="privilege">Privilege</option>
+                  <option value="experience">Experience</option>
+                  <option value="gift">Gift</option>
+                  <option value="study_bonus">Study bonus</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="reward-status">Status</label>
+                <select id="reward-status">
+                  <option value="active">Active</option>
+                  <option value="paused">Paused</option>
+                </select>
+              </div>
+              <div class="field wide">
+                <label for="reward-description">Description</label>
+                <textarea id="reward-description" rows="3" placeholder="What the student gets and any condition for fulfillment."></textarea>
+              </div>
+              <button id="reward-program-submit" class="button primary" type="submit">Create reward</button>
+            </form>
+            <div id="reward-admin-list" class="reward-admin-list"></div>
+          </section>
+          <form id="account-form" class="account-form account-workspace-panel" data-account-panel="form" role="tabpanel" hidden>
+            <div class="field">
+              <label for="account-name">Name</label>
+              <input id="account-name" type="text" placeholder="Student name" required />
+            </div>
+            <div class="field">
+              <label for="account-email" data-i18n="email">Email</label>
+              <input id="account-email" type="email" placeholder="student@example.com" />
+            </div>
+            <div class="field">
+              <label for="account-grade" data-i18n="grade">Grade</label>
+              <select id="account-grade">
+                <option value="">Not set</option>
+                <option value="Grade 8">Grade 8</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12">Grade 12</option>
+                <option value="Adult learner">Adult learner</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="account-avatar-initials" data-i18n="avatarInitials">Avatar</label>
+              <input id="account-avatar-initials" type="text" maxlength="2" placeholder="ST" />
+            </div>
+            <div class="field">
+              <label for="account-avatar-color" data-i18n="avatarColor">Avatar color</label>
+              <select id="account-avatar-color">
+                <option value="teal">Teal</option>
+                <option value="blue">Blue</option>
+                <option value="coral">Coral</option>
+                <option value="amber">Amber</option>
+                <option value="slate">Slate</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="account-role">Role</label>
+              <select id="account-role">
+                <option value="student">Student</option>
+                <option value="parent">Parent</option>
+                <option value="admin">Content Admin</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="account-scope">Access scope</label>
+              <select id="account-scope">
+                <option value="family">Family/private</option>
+                <option value="public">Public learner</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="account-passcode">Passcode</label>
+              <input id="account-passcode" type="text" placeholder="4-8 digits" required />
+            </div>
+            <div class="field">
+              <label for="account-target">Target Score</label>
+              <input id="account-target" type="number" min="400" max="1600" step="10" value="1450" />
+            </div>
+            <div class="field">
+              <label for="account-theme">Interface Theme</label>
+              <select id="account-theme">
+                <option value="studio">Focus Studio</option>
+                <option value="teen_quest">Teen Quest</option>
+              </select>
+            </div>
+            <div class="field permission-field">
+              <label>Parent permissions</label>
+              <label class="checkbox-line"><input id="account-permission-rewards" type="checkbox" /> Manage child rewards</label>
+              <label class="checkbox-line"><input id="account-permission-authoring" type="checkbox" /> Contribute questions</label>
+            </div>
+            <div class="field">
+              <label for="account-parent-link">Linked Parent</label>
+              <select id="account-parent-link"></select>
+            </div>
+            <div class="field">
+              <label for="account-weekly-target">Weekly Study Sessions</label>
+              <input id="account-weekly-target" type="number" min="1" max="14" step="1" value="4" />
+            </div>
+            <div class="field">
+              <label for="account-next-session">Next Study Session</label>
+              <input id="account-next-session" type="datetime-local" />
+            </div>
+            <button id="account-submit" class="button primary" type="submit">Create Account</button>
+            <button id="account-cancel-edit" class="button secondary" type="button" hidden>Cancel Edit</button>
+          </form>
+          <section id="public-backend-panel" class="public-backend-panel panel account-workspace-panel" data-account-panel="backend" role="tabpanel" aria-label="Public backend sync" hidden>
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Public backend</p>
+                <h2>Server sync</h2>
+                <p class="muted">Use this when moving from local-family mode toward a public deployment.</p>
+              </div>
+            </div>
+            <div class="public-backend-grid">
+              <div class="field">
+                <label for="public-backend-url">API base URL</label>
+                <input id="public-backend-url" type="text" value="/api/public" />
+              </div>
+              <div class="field">
+                <label for="public-backend-username">Username</label>
+                <input id="public-backend-username" type="text" autocomplete="username" placeholder="admin or student username" />
+              </div>
+              <div class="field">
+                <label for="public-backend-password">Password</label>
+                <input id="public-backend-password" type="password" autocomplete="current-password" placeholder="Backend password" />
+              </div>
+              <label class="checkline">
+                <input id="public-backend-auto-sync" type="checkbox" checked />
+                Auto sync progress after backend login
+              </label>
+            </div>
+            <div class="answer-actions public-backend-actions">
+              <button id="public-backend-health" class="button secondary" type="button">Check Backend</button>
+              <button id="public-backend-bootstrap" class="button secondary" type="button">Bootstrap Admin</button>
+              <button id="public-backend-login" class="button primary" type="button">Backend Login</button>
+              <button id="public-backend-refresh" class="button secondary" type="button">Refresh Session</button>
+              <button id="public-backend-sync-progress" class="button secondary" type="button">Sync Current Progress</button>
+              <button id="public-backend-sync-profile" class="button secondary" type="button">Sync Full Profile</button>
+              <button id="public-backend-load-profile" class="button secondary" type="button">Load Server Profile</button>
+              <button id="public-backend-apply-profile" class="button secondary" type="button">Apply Server Profile</button>
+              <button id="public-backend-export" class="button secondary" type="button">Export Server Snapshot</button>
+              <button id="public-backend-monitoring" class="button secondary" type="button">Server Monitoring</button>
+              <button id="public-backend-logout" class="button secondary" type="button">Logout Backend Session</button>
+            </div>
+            <div id="public-backend-status" class="public-backend-status empty-state">Backend sync has not been checked yet.</div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="sat_bootstrap_loader.js"></script>
+  </body>
+</html>

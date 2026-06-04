@@ -1,0 +1,1295 @@
+{
+  "id": "cam-cpe1-test3",
+  "title": "Cambridge Certificate of Proficiency in English 1 - Test 3",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Cambridge Certificate of Proficiency in English 1, Cambridge University Press",
+  "sections": [
+    {
+      "id": "cam-cpe1-t3-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Othello</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The transfer to London from Stratford of an exceptional production of Shakespeare’s play Othello allows me to make (1) ______ for an unfair review that I wrote when the show opened last spring. Back then I complained that Ray Fearon was too young to play the title role and I was guilty of running down his acting. I still think it's a distortion of the tragedy to remove the age difference between Othello and Desdemona but I eat my (2) ______ about the rest of Mr Fearon’s magnificent performance. Indeed the whole cast is magnificent. Memorable scenes include the one where Cassio’s competitive games with the other young officers get dangerously out of (3) ______, and the moment when Iago begins to lose control and has to struggle to get a (4) ______ on himself. And I challenge anyone not to be (5) ______ to tears during the scene where Emilia prepares Desdemona for bed. The (6) ______ and tension throughout are terrific. Do not miss this production.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Lake Vostok</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the heart of Antarctica, nothing (7) ______ . On the fringes of the continent there are penguins, seals and birds aplenty. But up on the great white plateau in the interior, life has no foothold. Except, (8) ______ , in a vast hidden expanse of freshwater named Lake Vostok which lies beneath nearly 4 kilometres of ice, directly below the coldest spot on earth.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t3-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t3-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. confessions",
+                "B. amends",
+                "C. compensation",
+                "D. recourse"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Cụm từ cố định: 'make amends for something' nghĩa là 'chuộc lỗi / đền bù cho điều gì'. Tác giả muốn chuộc lỗi cho bài phê bình không công bằng trước đó. Bẫy: 'confessions' (A) = sự thú tội. 'compensation' (C) = sự bồi thường (thường là tiền bạc, đi với 'for'). 'recourse' (D) = sự trông cậy vào (thường dùng 'have recourse to'). Chuyên đề: Idioms/Collocations — make amends.",
+              "answerLocation": "allows me to make amends for an unfair review",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. thoughts",
+                "B. words",
+                "C. ideas",
+                "D. comments"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Cụm từ cố định: 'eat one's words' nghĩa là 'thừa nhận mình đã nói sai / rút lại lời nói'. Tác giả thừa nhận mình đã sai khi chê bai diễn xuất của Ray Fearon. Bẫy: Các danh từ khác như 'thoughts', 'ideas', 'comments' không kết hợp với 'eat' để tạo thành thành ngữ này. Chuyên đề: Idioms — eat one's words.",
+              "answerLocation": "but I eat my words about the rest of",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. turn",
+                "B. place",
+                "C. reach",
+                "D. hand"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Cụm từ cố định: 'get out of hand' nghĩa là 'mất kiểm soát / vượt ra ngoài tầm tay'. Trò chơi của Cassio với các sĩ quan trẻ đã vượt khỏi tầm kiểm soát một cách nguy hiểm. Bẫy: 'out of turn' (A) = không đúng lượt. 'out of place' (B) = không đúng chỗ / lạc lõng. 'out of reach' (C) = ngoài tầm với. Chuyên đề: Idioms — get out of hand.",
+              "answerLocation": "officers get dangerously out of hand",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. brake",
+                "B. grasp",
+                "C. rein",
+                "D. grip"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Cụm từ cố định: 'get a grip on oneself' nghĩa là 'trấn tĩnh lại / kiểm soát cảm xúc bản thân'. Iago cố gắng kiềm chế cơn giận và làm chủ bản thân. Bẫy: 'get a grasp of' (B) = hiểu rõ điều gì đó. 'rein' (C) = dây cương. 'brake' (A) = phanh xe. Chuyên đề: Idioms — get a grip on.",
+              "answerLocation": "struggle to get a grip on himself",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. drawn",
+                "B. sent",
+                "C. moved",
+                "D. carried"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Collocation cố định: 'be moved to tears' nghĩa là 'bị cảm động phát khóc / rơi lệ'. Cảnh Emilia chuẩn bị giường cho Desdemona khiến người xem vô cùng cảm động. Bẫy: 'drawn' (A) = bị thu hút. 'carried' (D) đi với 'away' thành 'be carried away' = bị cuốn đi / phấn khích quá đà. Chuyên đề: Collocations — moved to tears.",
+              "answerLocation": "anyone not to be moved to tears during",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. pace",
+                "B. dash",
+                "C. rate",
+                "D. haste"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Từ 'pace' ở đây chỉ 'nhịp điệu / tốc độ diễn tiến' của vở kịch ('The pace and tension throughout are terrific'). Bẫy: 'dash' (B) = sự lao tới / vệt dài. 'rate' (C) = tỉ lệ / mức độ. 'haste' (D) = sự vội vàng, hấp tấp (mang nghĩa tiêu cực). Chuyên đề: Vocabulary — pace. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The pace and tension throughout are terrific",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. stalks",
+                "B. stirs",
+                "C. suits",
+                "D. sounds"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Động từ 'stir' mang nghĩa là 'chuyển động, dịch chuyển / cựa quậy', dùng để chỉ sự sống tồn tại ở Nam Cực: 'nothing stirs' (không một sinh vật nào cựa quậy / chuyển động). Bẫy: 'stalks' (A) = rình rập, săn mồi. 'suits' (C) = phù hợp. 'sounds' (D) = phát ra âm thanh. Chuyên đề: Vocabulary — stir. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "nothing stirs. On the fringes of the",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. that is",
+                "B. for example",
+                "C. in effect",
+                "D. as such"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Cấu trúc chèn ngữ cảnh: '..., that is, ...' dùng để giải thích hoặc làm rõ một ngoại lệ vừa nêu: 'Except, that is, in a vast hidden expanse...' (Ngoại trừ, cụ thể là, trong một hồ nước ngọt khổng lồ ẩn giấu...). Bẫy: 'for example' (B) đòi hỏi danh từ cụ thể phía sau. 'in effect' (C) = trên thực tế / coi như là. 'as such' (D) = như vậy. Chuyên đề: Conversational structures — that is.",
+              "answerLocation": "Except, that is, in a vast hidden expanse",
+              "category": "cpe_part_1",
+              "source": "Page 61, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t3-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 9-16, read the text below and think of the word which best fits each space. Use only one word in each space. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Relaxation</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>True relaxation is most certainly (0) <b>not</b> a matter of flopping down in front of the television with a welcome drink. Nor is it about drifting (9) ______ an exhausted sleep. Useful though these responses to tension and over-tiredness (10) ______ be, we should distinguish between them and conscious relaxation in (11) ______ of quality and effect. (12) ______ of the level of tiredness, real relaxation is a state of alert yet at the same (13) ______ passive awareness, in which our bodies are (14) ______ rest while our minds are awake. Moreover, it is as natural (15) ______ a healthy person to be relaxed when moving as resting. (16) ______ relaxed in action means we bring the appropriate energy to everything we do.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t3-rg-2",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t3-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "into"
+                ]
+              ],
+              "correctAnswer": "into",
+              "explanation": "Đáp án 'into'. Phrasal verb: 'drift into' có nghĩa là 'chìm dần vào (giấc ngủ)'. Ở đây diễn tả hành động vô thức trôi vào giấc ngủ mệt mỏi. Chuyên đề: Phrasal verbs — drift into. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "about drifting into an exhausted sleep",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "may"
+                ],
+                [
+                  "might"
+                ],
+                [
+                  "can"
+                ]
+              ],
+              "correctAnswer": "may",
+              "explanation": "Đáp án 'may', 'might' hoặc 'can'. Cấu trúc đảo ngữ nhượng bộ với tính từ đứng đầu: 'Adj + though + chủ ngữ + may/might/can + be' (Dù những phản ứng này có hữu ích đến đâu...). Chuyên đề: Concessive clauses.",
+              "answerLocation": "tension and over-tiredness may be",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "terms"
+                ]
+              ],
+              "correctAnswer": "terms",
+              "explanation": "Đáp án 'terms'. Cấu trúc cụm giới từ cố định: 'in terms of something' nghĩa là 'về mặt / xét trên phương diện gì'. Xét về chất lượng và hiệu quả. Chuyên đề: Prepositional phrases — in terms of.",
+              "answerLocation": "conscious relaxation in terms of quality",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "regardless"
+                ],
+                [
+                  "Regardless"
+                ],
+                [
+                  "irrespective"
+                ],
+                [
+                  "Irrespective"
+                ]
+              ],
+              "correctAnswer": "regardless",
+              "explanation": "Đáp án 'regardless' hoặc 'irrespective'. Đi cùng giới từ 'of' tạo thành liên từ kép đứng đầu mệnh đề trạng ngữ: 'Regardless of / Irrespective of the level...' (Bất kể mức độ mệt mỏi ra sao...). Chuyên đề: Conjunctions.",
+              "answerLocation": "Regardless of the level of tiredness",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "time"
+                ]
+              ],
+              "correctAnswer": "time",
+              "explanation": "Đáp án 'time'. Cấu trúc cụm giới từ chỉ thời gian: 'at the same time' có nghĩa là 'đồng thời / cùng lúc đó'. Trạng thái tỉnh táo nhưng đồng thời cũng là sự nhận thức thụ động. Chuyên đề: Prepositional phrases — at the same time.",
+              "answerLocation": "yet at the same time passive awareness",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "at"
+                ]
+              ],
+              "correctAnswer": "at",
+              "explanation": "Đáp án 'at'. Cấu trúc giới từ đi với danh từ chỉ trạng thái: 'at rest' nghĩa là 'ở trạng thái nghỉ ngơi / bất động'. Cơ thể chúng ta nghỉ ngơi trong khi tâm trí tỉnh táo. Chuyên đề: Prepositional phrases — at rest.",
+              "answerLocation": "which our bodies are at rest while",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "for"
+                ]
+              ],
+              "correctAnswer": "for",
+              "explanation": "Đáp án 'for'. Cấu trúc tính từ + giới từ chỉ tính chất đối với ai: 'natural for someone to do something' (thật tự nhiên đối với ai đó để làm gì). Chuyên đề: Adjective + preposition.",
+              "answerLocation": "as natural for a healthy person to be",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16):",
+              "acceptedAnswers": [
+                [
+                  "being"
+                ],
+                [
+                  "Being"
+                ]
+              ],
+              "correctAnswer": "being",
+              "explanation": "Đáp án 'being' hoặc 'Being'. Cần phân từ ở dạng Danh động từ (V-ing) đứng đầu câu làm chủ ngữ của động từ 'means': 'Being relaxed in action means...' (Việc thư thái trong hành động có nghĩa là...). Chuyên đề: Gerunds as subjects. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Being relaxed in action means we",
+              "category": "cpe_part_2",
+              "source": "Page 74, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t3-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Continuing Popularity of the Fountain Pen</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The fountain pen is a (0) <b>practical</b> [PRACTICE] object, even in this age of (17) ______ [DISPOSE] ball-point and felt-tip pens. Few owners are (18) ______ [DIFFER] to it. Emotions range from a casual attraction to absolute passion. However, though the reasons for such profound (19) ______ [ATTACH] to the pen are many, the way people feel is universal. How can a simple (20) ______ [CYLINDER] object that provokes such (21) ______ [INTENSE] of feeling? The most likely answer to this question is that (22) ______ [BASE], the fountain pen is far more than a mere writing instrument. It is often seen as an (23) ______ [ASSERT] of the owner's social standing. For some, the ornamentation is where its (24) ______ [DOUBT] attraction lies. It can be adorned with gold, with diamonds or inlaid with floral or geometric designs.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t3-rg-3",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t3-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17):",
+              "acceptedAnswers": [
+                [
+                  "disposable"
+                ]
+              ],
+              "correctAnswer": "disposable",
+              "explanation": "Đáp án 'disposable'. Cần tính từ đứng trước bổ nghĩa cho cụm danh từ 'ball-point and felt-tip pens': 'disposable pens' (bút viết dùng một lần rồi bỏ). Từ gốc DISPOSE (loại bỏ) -> disposable. Chuyên đề: Word formation — adjectives.",
+              "answerLocation": "in this age of disposable ball-point and",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18):",
+              "acceptedAnswers": [
+                [
+                  "indifferent"
+                ]
+              ],
+              "correctAnswer": "indifferent",
+              "explanation": "Đáp án 'indifferent'. Cần tính từ làm vị ngữ sau động từ to be 'are' và đi với giới từ 'to': 'be indifferent to something' (thờ ơ, vô cảm với cái gì). Từ gốc DIFFER (khác biệt) -> indifferent. Chuyên đề: Word formation — adjectives.",
+              "answerLocation": "Few owners are indifferent to it",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19):",
+              "acceptedAnswers": [
+                [
+                  "attachment"
+                ]
+              ],
+              "correctAnswer": "attachment",
+              "explanation": "Đáp án 'attachment'. Cần danh từ sau tính từ chỉ sở hữu/bổ nghĩa 'profound': 'profound attachment to...' (sự gắn bó/yêu quý sâu sắc đối với...). Từ gốc ATTACH (gắn chặt) -> attachment. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "reasons for such profound attachment to the",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20):",
+              "acceptedAnswers": [
+                [
+                  "cylindrical"
+                ]
+              ],
+              "correctAnswer": "cylindrical",
+              "explanation": "Đáp án 'cylindrical'. Cần tính từ bổ nghĩa cho danh từ 'object': 'cylindrical object' (vật thể hình trụ tròn). Từ gốc CYLINDER (hình trụ) -> cylindrical. Chuyên đề: Word formation — adjectives.",
+              "answerLocation": "How can a simple cylindrical object that",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21):",
+              "acceptedAnswers": [
+                [
+                  "intensity"
+                ]
+              ],
+              "correctAnswer": "intensity",
+              "explanation": "Đáp án 'intensity'. Cần danh từ làm tân ngữ đứng sau tính từ bổ nghĩa 'such' và trước giới từ 'of': 'such intensity of feeling' (sự mãnh liệt của cảm xúc như vậy). Từ gốc INTENSE (mãnh liệt) -> intensity. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "provokes such intensity of feeling",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22):",
+              "acceptedAnswers": [
+                [
+                  "basically"
+                ]
+              ],
+              "correctAnswer": "basically",
+              "explanation": "Đáp án 'basically'. Cần trạng từ đứng đầu bổ nghĩa cho cả mệnh đề phía sau dấu phẩy: 'basically, the fountain pen is...' (về cơ bản, bút máy...). Từ gốc BASE (nền tảng) -> basic -> basically. Chuyên đề: Word formation — adverbs.",
+              "answerLocation": "is that basically, the fountain pen is",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23):",
+              "acceptedAnswers": [
+                [
+                  "assertion"
+                ]
+              ],
+              "correctAnswer": "assertion",
+              "explanation": "Đáp án 'assertion'. Cần danh từ đứng sau mạo từ 'an' và trước giới từ 'of' làm bổ ngữ: 'an assertion of the owner's social standing' (sự khẳng định/tuyên bố vị thế xã hội của chủ nhân). Từ gốc ASSERT (khẳng định) -> assertion. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "seen as an assertion of the owner's",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24):",
+              "acceptedAnswers": [
+                [
+                  "undoubted"
+                ]
+              ],
+              "correctAnswer": "undoubted",
+              "explanation": "Đáp án 'undoubted'. Cần tính từ mang nghĩa khẳng định trước danh từ 'attraction': 'its undoubted attraction lies' (sức hút không thể nghi ngờ/chắc chắn của nó nằm ở...). Từ gốc DOUBT (nghi ngờ) -> undoubted (không thể nghi ngờ). Chuyên đề: Word formation — prefixes/adjectives.",
+              "answerLocation": "where its undoubted attraction lies",
+              "category": "cpe_part_3",
+              "source": "Page 75, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t3-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<p class='text-slate-700 italic mb-4'>Ví dụ: Do you mind if I watch you while you paint?<br><b>objection</b><br>Do you <u>have any objection to my watching</u> you while you paint?</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t3-rg-4",
+          "instruction": "Write the missing words only.",
+          "questions": [
+            {
+              "id": "q-cpe1-t3-25",
+              "type": "gap_fill",
+              "blankIndex": 25,
+              "instruction": "‘If only I hadn’t believed his lies!’ (taken) -> I wish I ______ by his lies!",
+              "acceptedAnswers": [
+                [
+                  "hadn't been taken in"
+                ],
+                [
+                  "had not been taken in"
+                ]
+              ],
+              "correctAnswer": "hadn't been taken in",
+              "explanation": "Đáp án 'hadn't been taken in' / 'had not been taken in'. Cấu trúc phrasal verb ở thể bị động trong câu ước trái thực tế ở quá khứ: 'wish + S + had + V3/ed'. Phrasal verb 'take in' = lừa gạt -> 'be taken in' = bị lừa. Chuyên đề: Wish clauses & Phrasal verbs.",
+              "answerLocation": "hadn't been taken in",
+              "category": "cpe_part_4",
+              "source": "Page 78, Question 32, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-26",
+              "type": "gap_fill",
+              "blankIndex": 26,
+              "instruction": "The committee said there was no possibility of discussing the matter any further. (discussion) -> The committee said that further ______ question.",
+              "acceptedAnswers": [
+                [
+                  "discussion of the matter was out of the"
+                ],
+                [
+                  "discussion was out of the"
+                ]
+              ],
+              "correctAnswer": "discussion of the matter was out of the",
+              "explanation": "Đáp án 'discussion of the matter was out of the' / 'discussion was out of the'. Idiom: 'be out of the question' = hoàn toàn không thể / bất khả thi. Vì câu ở quá khứ nên chia 'was'. Chuyên đề: Idioms — question.",
+              "answerLocation": "discussion (of the matter) was out of the",
+              "category": "cpe_part_4",
+              "source": "Page 78, Question 33, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-27",
+              "type": "gap_fill",
+              "blankIndex": 27,
+              "instruction": "The stranded climber would never have been rescued if his brother hadn't had an ingenious plan. (ingenuity) -> But ______ plan, the stranded climber would never have been rescued.",
+              "acceptedAnswers": [
+                [
+                  "for the ingenuity of his brother's"
+                ],
+                [
+                  "for the ingenuity of his brother’s"
+                ]
+              ],
+              "correctAnswer": "for the ingenuity of his brother's",
+              "explanation": "Đáp án 'for the ingenuity of his brother's'. Cấu trúc điều kiện rút gọn trái thực tế quá khứ: 'But for + danh từ/cụm danh từ' = Nếu không vì/Nếu không có... Dùng danh từ 'ingenuity' (sự khéo léo, tài tình). Chuyên đề: Conditionals — but for.",
+              "answerLocation": "for the ingenuity of his brother's / brother’s",
+              "category": "cpe_part_4",
+              "source": "Page 78, Question 34, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-28",
+              "type": "gap_fill",
+              "blankIndex": 28,
+              "instruction": "Alison bought the big house because she wanted to open a hotel. (view) -> Alison bought the big house ______ a hotel.",
+              "acceptedAnswers": [
+                [
+                  "with a view to opening"
+                ]
+              ],
+              "correctAnswer": "with a view to opening",
+              "explanation": "Đáp án 'with a view to opening'. Cấu trúc giới từ kép chỉ mục đích: 'with a view to + V-ing' = với mục đích làm gì / để làm gì. Ở đây V-ing là 'opening'. Chuyên đề: Gerunds & Prepositions.",
+              "answerLocation": "with a view to opening",
+              "category": "cpe_part_4",
+              "source": "Page 79, Question 35, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-29",
+              "type": "gap_fill",
+              "blankIndex": 29,
+              "instruction": "It is not very likely that Angela will be given the leading role. (chance) -> Angela has ______ the leading role.",
+              "acceptedAnswers": [
+                [
+                  "a very slim chance of being given"
+                ],
+                [
+                  "almost no chance of being given"
+                ],
+                [
+                  "little chance of being given"
+                ],
+                [
+                  "a very slim chance of getting"
+                ],
+                [
+                  "almost no chance of getting"
+                ],
+                [
+                  "little chance of getting"
+                ]
+              ],
+              "correctAnswer": "a very slim chance of being given",
+              "explanation": "Đáp án 'a very slim/almost no/little chance of being given' hoặc 'of getting'. Cấu trúc chỉ khả năng xảy ra của hành động: 'have a/any chance of + V-ing'. Do Angela là đối tượng nhận vai diễn nên phải dùng bị động 'being given' hoặc động từ 'getting'. Chuyên đề: Noun + preposition — chance of.",
+              "answerLocation": "a (very) slim / almost no / little chance of being given / of getting",
+              "category": "cpe_part_4",
+              "source": "Page 79, Question 37, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-30",
+              "type": "gap_fill",
+              "blankIndex": 30,
+              "instruction": "It took several months for George to recover completely from his accident. (make) -> Only after several months ______ his accident.",
+              "acceptedAnswers": [
+                [
+                  "did George make a complete recovery from"
+                ],
+                [
+                  "did George make a full recovery from"
+                ]
+              ],
+              "correctAnswer": "did George make a complete recovery from",
+              "explanation": "Đáp án 'did George make a complete/full recovery from'. Cấu trúc đảo ngữ bắt đầu bằng cụm trạng từ thời gian giới hạn: 'Only after + thời gian + trợ động từ + S + V-chính'. Collocation: 'make a complete recovery from' = bình phục hoàn toàn khỏi cái gì. Chuyên đề: Inversion & Collocations.",
+              "answerLocation": "did George make a complete recovery from",
+              "category": "cpe_part_4",
+              "source": "Page 79, Question 39, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t3-sec-5",
+      "title": "Part 5: Multiple Choice Reading",
+      "instructions": "For questions 31-36, read the text below and choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>Photography</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Over the past one and a half centuries, photography has been used to record all aspects of human life and activity. During this relatively short history, the medium has expanded its capabilities in the recording of time and space, thus allowing human vision to be able to view the fleeting moment or to visualise both the vast and the minuscule. It has brought us images from remote areas of the world, distant parts of the solar system, as well as the social complexities and crises of modern life. Indeed, the photographic medium has provided one of the most important and influential means of expressing the human condition.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Nonetheless, the recording of events by means of the visual image has a much longer history. The earliest creations of pictorial recording go as far back as the Upper Palaeolithic period of about 35,000 years ago. And although we cannot be sure of the exact purposes of the early cave paintings - whether they record the ‘actual’ events of hunting, whether they functioned as sympathetic magic to encourage the increase of animals for hunting, whether they had a role as religious icons, or if they were made simply to enliven and brighten domestic activities — pictorial images seem to be inextricably linked to human culture as we understand it.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Throughout the history of visual representation, questions have been raised concerning the supposed accuracy (or otherwise) of the visual image, as well as its status in society. The popular notion that ‘seeing is believing’ had always afforded special status to the visual image. So when the technology was invented, in the form of photography, the social and cultural impact was immense.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the mid-nineteenth century, the invention of photography appeared to offer the promise of ‘automatically’ providing a truthful visual record. It was seen not only as the culmination of Western visual representation but, quite simply, the camera, functioning in much the same way as the human eye, was regarded as a machine which could provide a fixed image. And this image was considered to be a very close approximation to that which we actually see. The chemical fixing of the image enabled the capture of what might be considered a natural phenomenon: the camera image. At the same time, the photographic image was held to be an achievement of sophisticated culture and produced the type of image that artists had struggled throughout the centuries to acquire the manual, visual and conceptual skills to create.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>It may seem a further irony that, because of the camera’s perceived realism in its ability to replicate visual perception, it was assumed that all peoples would ‘naturally’ be able to understand photographs. This gave rise to the question of whether photography constituted a ‘universal language’. For example, in 1933 this view had been expressed in a series of radio broadcasts by photographer August Sander: ‘Even the most isolated Bushman could understand a photograph of the heavens — whether it showed the sun and moon or the constellations.’ However, in the face of the rapid increase in global communications which characterised the latter part of the twentieth century, we do at least need to ask to what extent the photographic image can penetrate through cultural differences in understanding. Or is photography as bound by cultural conventions as any other form of communication, such as language?</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Is it possible that our familiarity with the photographic image has bred our current contempt for the intricacies and subtle methods that characterise the medium’s ability to transmit its vivid impressions of ‘reality’? Photography is regarded quite naturally as offering such convincing forms of pictorial evidence that this process of communication often seems to render the medium totally transparent, blurring the distinction between our perception of the environment and its photographic representations. It is the most natural thing in the world for someone to open their wallet and produce a photograph saying ‘this is my grandson’.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Ever since its invention in 1839, the technology of photography and the attitudes towards the medium by its practitioners have changed radically. This may partly be attributed to photography gradually moving into what might be termed ‘mythic time’ — its initial role as a nineteenth-century record-keeper has now moved beyond the human scale and photographic images, once immediate and close to photographer and subject alike, have now passed out of living memory. The passage of time has transformed the photograph from a memory aid into an historical document, one which often reveals as much (if not more) about the individuals and society which produced the image as it does about its subject.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t3-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t3-31",
+              "type": "multiple_choice",
+              "instruction": "According to the writer, how has photography contributed to our lives?",
+              "options": [
+                "A. It alters the course of significant events.",
+                "B. It enables us to see humanity in a more imaginative way.",
+                "C. It offers us a wide-ranging perspective.",
+                "D. It influences other technological developments."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở đoạn 1, tác giả mô tả sự đóng góp của nhiếp ảnh: 'expanded its capabilities in the recording of time and space, thus allowing human vision... to visualise both the vast and the minuscule. It has brought us images from remote areas...'. Việc ghi lại cả khoảng cách xa xôi và những chi tiết siêu nhỏ mang lại một góc nhìn/tầm nhìn rộng lớn và đa dạng (a wide-ranging perspective). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "expanded its capabilities in the recording of time and space... visualise both the vast and the minuscule.",
+              "category": "cpe_part_5",
+              "source": "Page 70, Question 34, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-32",
+              "type": "multiple_choice",
+              "instruction": "The writer uses the example of the Upper Palaeolithic period to underline",
+              "options": [
+                "A. the durability of pictorial representations.",
+                "B. the continuity of artistic forms.",
+                "C. the original function of decorative art.",
+                "D. the fundamental significance of visual images."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Tác giả dẫn chứng thời kỳ đồ đá cũ (Upper Palaeolithic) để chỉ ra rằng: 'pictorial images seem to be inextricably linked to human culture as we understand it.' (Hình ảnh trực quan dường như gắn kết khăng khít không thể tách rời với nền văn hóa con người). Điều này làm nổi bật tầm quan trọng cơ bản và cốt lõi của hình ảnh trực quan đối với loài người. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "pictorial images seem to be inextricably linked to human culture as we understand it.",
+              "category": "cpe_part_5",
+              "source": "Page 70, Question 35, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-33",
+              "type": "multiple_choice",
+              "instruction": "In the mid-nineteenth century, the camera succeeded in",
+              "options": [
+                "A. acquiring scientific status.",
+                "B. winning over a sceptical public.",
+                "C. showing reality with a new accuracy.",
+                "D. invalidating the work of artists."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở đoạn 4, tác giả cho biết vào thế kỷ 19, máy ảnh được xem như: 'a machine which could provide a fixed image. And this image was considered to be a very close approximation to that which we actually see.' (một cỗ máy cung cấp hình ảnh cố định gần khớp nhất với những gì chúng ta thực sự nhìn thấy). Máy ảnh đã thành công trong việc ghi lại hiện thực với độ chính xác mới cực cao. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "machine which could provide a fixed image. And this image was considered to be a very close approximation",
+              "category": "cpe_part_5",
+              "source": "Page 71, Question 36, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-34",
+              "type": "multiple_choice",
+              "instruction": "What does the writer question in paragraph 5?",
+              "options": [
+                "A. The universal accessibility of photographic images.",
+                "B. The effect of photography on language.",
+                "C. The artistic value of photography in a changing world.",
+                "D. The role of the photographer in interpreting images."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Ở đoạn 5, tác giả đặt nghi vấn về ý kiến cho rằng nhiếp ảnh là ngôn ngữ vạn năng ai cũng hiểu: 'we do at least need to ask to what extent the photographic image can penetrate through cultural differences in understanding.' (chúng ta ít nhất cần tự hỏi hình ảnh nhiếp ảnh có thể vượt qua những khác biệt về văn hóa trong việc thấu hiểu đến mức độ nào). Ông nghi ngờ khả năng tiếp cận toàn cầu không biên giới của nó. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "we do at least need to ask to what extent the photographic image can penetrate through cultural differences in understanding.",
+              "category": "cpe_part_5",
+              "source": "Page 71, Question 37, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-35",
+              "type": "multiple_choice",
+              "instruction": "What point is the writer making about present-day photography in paragraph 6?",
+              "options": [
+                "A. We find it over-complicated.",
+                "B. We are apt to confuse it with reality.",
+                "C. It makes us insensitive to our surroundings.",
+                "D. It is insubstantial compared to other art forms."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Ở đoạn 6, tác giả nhận xét việc coi ảnh chụp hoàn toàn chân thực: 'rendering the medium totally transparent, blurring the distinction between our perception of the environment and its photographic representations.' (làm cho phương tiện này hoàn toàn trong suốt, làm mờ đi ranh giới giữa nhận thức thực tế của chúng ta về môi trường và các biểu đạt nhiếp ảnh của nó). Người ta dễ nhầm lẫn ảnh chụp chính là hiện thực. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "rendering the medium totally transparent, blurring the distinction between our perception of the environment and its photographic representations.",
+              "category": "cpe_part_5",
+              "source": "Page 71, Question 38, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-36",
+              "type": "multiple_choice",
+              "instruction": "In what sense have some photographs moved into ‘mythic time’?",
+              "options": [
+                "A. They have grown indistinct with age.",
+                "B. They lack supporting documentary information.",
+                "C. They no longer serve as an accurate record.",
+                "D. They are obsolete in terms of their original purpose."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Tác giả giải thích ở đoạn cuối: 'its initial role as a nineteenth-century record-keeper has now moved beyond... transformed the photograph from a memory aid into an historical document' (vai trò ban đầu của nó như một người lưu giữ hồ sơ thế kỷ 19 giờ đây đã vượt ra ngoài... biến bức ảnh từ công cụ hỗ trợ trí nhớ thành một tài liệu lịch sử). Tức là mục đích ban đầu của bức ảnh (giúp người đương thời nhớ lại) đã trở nên cũ kỹ, lỗi thời, nhường chỗ cho giá trị lịch sử. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "its initial role as a nineteenth-century record-keeper has now moved beyond the human scale and photographic images... transformed",
+              "category": "cpe_part_5",
+              "source": "Page 71, Question 39, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t3-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "For questions 37-43, read the text below. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap (37-43). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>Online Literary Criticism For All</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>From the outset, the idea of open access to the Internet was one of its guiding principles. In theory, anyone could publish a manifesto or broadcast a music channel on the Internet. In practice, however, a certain amount of technical know-how was required, at least in the early years.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 37 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Amazon’s egalitarian approach to book reviews—namely, that anyone could say what they liked about anything and award it up to five stars — looked, on the face of it, a brilliant idea. Each book had its own page on Amazon's site, and whenever a reader submitted a new review, it appeared automatically.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 38 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Other online bookstores which also operated as large bricks-and-mortar bookshop chains provided similar features. But as the largest player, with over 80% of the online market, Amazon initially had the most customers, attracted by far the greatest number of reviews and, accordingly, encountered the most funny business.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 39 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Single-word reviews, for instance, or personal attacks on the author, were not allowed. Nor were reviews that contained obscenities, gave away the ending, or referred to other reviews. Ultimately, however, the reviewers were anonymous (they were not required to give their real names) and offending reviews were removed only if Amazon checkers noticed them. So there was plenty of scope for mischief.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 40 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Authors were, in fact, provided with their own way to hold forth: by clicking on a link marked ‘I am the Author, and I wish to comment on my book.’ Most authors who used this feature posted jolly messages expressing their desire that browsers would buy, and enjoy, the book in question. A few even gave their email addresses, thus inviting readers to communicate directly. Yet authors who posted messages knew that while Amazon did vet them, it did not check that they really came from the author.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 41 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Still, the fur really began to fly as a result of postings from readers, not writers. When James McElroy’s We've Got Spirit, which documented a year in the life of a small-town cheerleading team, was published, it was well received by the mainstream press. But many of the people mentioned in it felt betrayed, and the book’s page on Amazon was an obvious outlet for their anger. Dozens of highly critical reviews were submitted — only to vanish a few days later.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 42 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>This meant that the best place to post a silly review was on a page devoted to a less well-known book. The Story about Ping, a classic children’s work that tells the story of a duck called Ping, was the inspiration for geek humour, because ‘ping’ also happened to be the name of a software utility used to measure the degree of congestion on the Internet. One lengthy review constructed an elaborate analogy between the book’s plot and the architecture of the Internet, and concluded that the book provided a ‘good high-level overview’ of basic networking concepts.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 43 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The writer George Orwell once complained that ‘reviewing too many books involved constantly inventing reactions towards books about which one has no spontaneous feelings whatever’. All the more reason, then, to regard the democratisation of the process as a good thing.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t3-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap (37-43).",
+          "questions": [
+            {
+              "id": "q-cpe1-t3-37",
+              "type": "gapped_text",
+              "instruction": "Gap (37):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Đoạn văn trước đó đề cập đến kỹ thuật phức tạp thời kỳ đầu của Internet: 'technical know-how was required'. Đoạn C tiếp nối bằng sự đối lập của một lĩnh vực từng giới hạn nay được mở cho công chúng nhờ Amazon: 'However, there was at least one field, previously restricted to the few, that was genuinely opened up to the masses... try their hand at literary criticism.' Chuyên đề: Gapped Text.",
+              "answerLocation": "technical know-how was required, at least in the early years. However, there was at least one field, previously restricted to the few, that was genuinely opened up to the masses.",
+              "category": "cpe_part_6",
+              "source": "Page 67, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-38",
+              "type": "gapped_text",
+              "instruction": "Gap (38):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn văn trước đó nói về hệ thống đánh giá của Amazon hiển thị tự động. Đoạn H tiếp tục làm rõ kết quả của hệ thống đó: 'This meant that Amazon got to fill its pages with free reviews, and potential buyers... could see what other readers thought...' (Điều này có nghĩa là Amazon được lấp đầy trang bằng những bài đánh giá miễn phí, và người mua có thể xem người khác nghĩ gì...). Chuyên đề: Gapped Text.",
+              "answerLocation": "H - This meant that Amazon got to fill its pages with free reviews, and potential buyers... could see what other readers thought...",
+              "category": "cpe_part_6",
+              "source": "Page 67, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-39",
+              "type": "gapped_text",
+              "instruction": "Gap (39):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn trước chỉ ra việc Amazon gặp phải nhiều trò gian lận/mờ ám nhất: 'encountered the most funny business'. Đoạn D mở rộng bằng từ 'subversion' (sự phá hoại/lật đổ) giải thích các trò mờ ám này: 'For this critical free-for-all lent itself to subversion of various subtle and not-so-subtle kinds...'. Chuyên đề: Gapped Text.",
+              "answerLocation": "encountered the most funny business. For this critical free-for-all lent itself to subversion",
+              "category": "cpe_part_6",
+              "source": "Page 67, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-40",
+              "type": "gapped_text",
+              "instruction": "Gap (40):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn văn trước kết luận: 'So there was plenty of scope for mischief.' (Do đó có nhiều cơ hội cho các trò tinh quái). Đoạn G đưa ra ví dụ cụ thể của Lev Grossman viết nhận xét giả cho chính sách mình để chữa ngượng: 'For example, there was nothing to stop writers giving their own books glowing reviews...' kết nối chặt chẽ với từ 'mischief'. Chuyên đề: Gapped Text.",
+              "answerLocation": "So there was plenty of scope for mischief. For example, there was nothing to stop writers giving their own books glowing reviews.",
+              "category": "cpe_part_6",
+              "source": "Page 67, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-41",
+              "type": "gapped_text",
+              "instruction": "Gap (41):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án F. Đoạn văn trước nói về việc bất kỳ ai cũng có thể giả mạo tác giả đăng ý kiến phản hồi vì Amazon không xác thực thực chất: 'did not check that they really came from the author.' Đoạn F tiếp tục bằng ngoại lệ: 'An exception to this was made in the case of big names...' (Ngoại lệ cho việc này được áp dụng đối với các tên tuổi lớn) và dẫn chứng về bài viết giả danh John Updike bị gỡ. Chuyên đề: Gapped Text.",
+              "answerLocation": "did not check that they really came from the author. An exception to this was made in the case of big names.",
+              "category": "cpe_part_6",
+              "source": "Page 67, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-42",
+              "type": "gapped_text",
+              "instruction": "Gap (42):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn văn trước mô tả việc các bài đánh giá giận dữ biến mất sau vài ngày. Đoạn A mở đầu bằng: 'Despite this episode...' (Bất chấp sự cố này...) và chỉ ra rằng việc xóa bình luận chỉ tập trung ở các cuốn sách bán chạy nhất để tuân thủ luật lệ, còn cuốn sách ít nổi tiếng hơn thì ít bị kiểm soát, dẫn đến câu mở đầu của đoạn sau: 'This meant that the best place to post a silly review was on a page devoted to a less well-known book.'. Chuyên đề: Gapped Text.",
+              "answerLocation": "A - This meant that the best place to post a silly review was on a page devoted to a less well-known book.",
+              "category": "cpe_part_6",
+              "source": "Page 67, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-43",
+              "type": "gapped_text",
+              "instruction": "Gap (43):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Đoạn văn trước nói về trò nghịch ngợm của giới CNTT đùa cợt cuốn sách Ping. Đoạn E phản bác lại bằng trạng thái chung: 'Such silliness was, however, the exception rather than the rule. The striking thing... was how seriously their contributors took them.' (Sự ngớ ngẩn đó, tuy nhiên, chỉ là ngoại lệ chứ không phải quy luật. Điểm nổi bật là đa số cộng tác viên viết bài rất nghiêm túc). Chuyên đề: Gapped Text.",
+              "answerLocation": "of basic networking concepts. Such silliness was, however, the exception rather than the rule.",
+              "category": "cpe_part_6",
+              "source": "Page 68, Test 3, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Despite this episode, as far as Amazon was concerned, the fact that so many people were prepared to invest so much time reading and writing reviews was simply good for business. As readers’ reviews were supposed to be a ‘forum to talk about a book’ rather than a chat room, a particularly close eye was kept on bestselling books, to ensure that all reviews played by the rules."
+            },
+            {
+              "label": "B",
+              "text": "One result was that some authors decided in future to extend their communication with their readership, by posting a taster of their next novel — or even serialising it. Though at that point, they realised they wanted to receive something more tangible than a review in return."
+            },
+            {
+              "label": "C",
+              "text": "However, there was at least one field, previously restricted to the few, that was genuinely opened up to the masses. By visiting the pages of Amazon.com, the first popular online bookshop, anyone was able to try their hand at literary criticism."
+            },
+            {
+              "label": "D",
+              "text": "For this critical free-for-all lent itself to subversion of various subtle and not-so-subtle kinds. Thousands of reviews were submitted each day — Amazon would not say exactly how many — so it was impractical to vet them all. Instead, a team of editors scoured the site, checking that reviews conformed to the company’s guidelines."
+            },
+            {
+              "label": "E",
+              "text": "Such silliness was, however, the exception rather than the rule. The striking thing about the vast majority of reader reviews at Amazon.com was how seriously their contributors took them. And overall the reviews collectively provided a remarkably accurate indication of whether or not a particular set of goods was worth buying."
+            },
+            {
+              "label": "F",
+              "text": "An exception to this was made in the case of big names. A little-known writer submitted an author's comment, purporting to be from John Updike, in which he admitted to being a ‘talented but ultimately over-hyped middlebrow author’. Unsurprisingly, it was deemed a fake and was removed."
+            },
+            {
+              "label": "G",
+              "text": "For example, there was nothing to stop writers giving their own books glowing reviews. One writer, Lev Grossman, was so mortified by the bad reviews that readers gave his first novel (‘infantile trash’, ‘puerile pap’) that he submitted several anonymous ones of his own (‘hilarious’, ‘fabulous’) to redress the balance. His ruse succeeded until he wrote an article detailing his deception. The fake reviews were promptly removed."
+            },
+            {
+              "label": "H",
+              "text": "This meant that Amazon got to fill its pages with free reviews, and potential buyers of a book could see what other readers thought of it, for better or worse, rather than reading just the blurb from the publisher and the views of professional critics."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t3-sec-7",
+      "title": "Part 7: Multiple Matching",
+      "instructions": "For questions 44-53, read the five academic perspectives on the paradox of error below and choose the correct perspective (A-E) which fits each statement. You may choose a perspective more than once.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Paradox of Error and the Architecture of Innovation</h2><div class='mb-6 text-slate-800 text-base leading-relaxed text-left'><p class='mb-4'><b>A. Prof. Julian Vance (Organizational Psychologist)</b><br>To fully understand why so many progressive corporations fail to innovate, we must examine the paralyzing effects of a 'blame culture.' In many traditional offices, any professional mistake or operational slip is immediately treated as a personal blunder that requires investigation or punishment. This rigid mindset destroys employee morale. When companies shift their focus from searching for a culprit to building systemic resilience, they actively encourage employees to express creativity and display a sense of humor about operational lapses. True progress occurs only when organizations actively cultivate an environment that tolerates employee blunders and rewards individuals who find creative ways to cope with errors rather than covering them up.</p><p class='mb-4'><b>B. Dr. Clara Dupont (Design Theorist & Creative Director)</b><br>Many corporate training seminars fail because they rely on conventional formats like flashing flip-charts and predictable time-management lectures. When executives arrive expecting to be instructed in a traditional classroom manner, they are often comfortable but passive. By forcing them to engage in unexpected, highly tactile artistic exercises—such as mask-making or physical sculpting—we disrupt their intellectual expectations. These unconventional tasks require participants to use raw artistic talent to produce something unexpected. By nudging them out of their comfort zones into a state of playful uncertainty, we demonstrate that genuine breakthroughs are born when we embrace random, non-linear processes rather than relying on pre-packaged instructions.</p><p class='mb-4'><b>C. Dr. Marcus Sterling (Innovation Historian)</b><br>Throughout the history of science and technology, our greatest leaps forward have been fueled by happy accidents and intelligent mistakes. From the discovery of penicillin to the development of the microwave, accidental slips and lapses in protocol have proven to be the ultimate engines of discovery. When we study these events, we realize that hyper-optimized systems designed to eliminate all errors actually lead to intellectual stagnation. By removing all elements of randomness, we eliminate the very mistakes that force us to look at a problem from a completely new angle. A society that pathologizes mistakes and demands flawless execution at all times ultimately closes the door to revolutionary innovations.</p><p class='mb-4'><b>D. Prof. Evelyn Thorne (Sociologist of Labor)</b><br>The social prestige associated with different professions is closely linked to how mistakes are classified and tolerated. In low-prestige, highly structured occupations, mistakes are regarded as mere slips or blunders, representing a lack of discipline or intellect. Consequently, these jobs are often perceived as relatively uninteresting or unattractive by the public. In stark contrast, elite creative industries often redefine professional failures as 'daring experimental steps' or 'bold artistic risks.' By rebranding their errors as evidence of creative courage, elite professionals maintain their high status and exclude outsiders. This class-based perception of error ensures that the elite status of certain industries is preserved under the guise of intellectual freedom.</p><p class='mb-4'><b>E. Dr. Arthur Pendelton (Systems Engineer)</b><br>In systems engineering, trying to build a machine or a software program that is 100% error-free is a recipe for catastrophic collapse. Truly robust systems are not those that prevent all errors, but those that are designed to accept and tolerate faults without breaking down. This principle of 'fault tolerance' must be applied to our social and corporate institutions. When organizations punish the initial mistake rather than rewarding the individuals who actively cope with and adapt to the error, they create fragile systems. We must design institutions that expect slips, have built-in safety nets to tolerate them, and actively reward employees who successfully manage and resolve the consequences of these inevitable failures.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t3-rg-7",
+          "instruction": "Choose the correct letter, A, B, C, D or E.",
+          "questions": [
+            {
+              "id": "q-cpe1-t3-44",
+              "type": "multiple_matching",
+              "instruction": "Which academic argues that a society focused on eliminating all errors risks intellectual stagnation?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Dr. Marcus Sterling chỉ ra rằng các hệ thống siêu tối ưu hóa được thiết kế để loại bỏ tất cả các lỗi thực chất sẽ dẫn đến sự đình trệ trí tuệ ('hyper-optimized systems designed to eliminate all errors actually lead to intellectual stagnation'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "hyper-optimized systems designed to eliminate all errors actually lead to intellectual stagnation",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-45",
+              "type": "multiple_matching",
+              "instruction": "Which academic notes that corporate training is most effective when it forces participants out of their intellectual comfort zones through unexpected creative tasks?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Clara Dupont lập luận rằng bằng cách ép buộc những người tham gia thực hiện các bài tập nghệ thuật xúc giác không ngờ tới (như làm mặt nạ), ta thúc đẩy họ ra khỏi vùng an toàn trí tuệ ('nudging them out of their comfort zones'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "nudging them out of their comfort zones into a state of playful uncertainty",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-46",
+              "type": "multiple_matching",
+              "instruction": "Which academic asserts that social prestige in different occupations is closely linked to how mistakes are classified and tolerated?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Prof. Evelyn Thorne lập luận danh tiếng xã hội gắn liền với các ngành nghề liên quan mật thiết đến cách phân loại và dung túng cho sai lầm ('social prestige associated with different professions is closely linked to how mistakes are classified and tolerated'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "social prestige associated with different professions is closely linked to how mistakes are classified and tolerated",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-47",
+              "type": "multiple_matching",
+              "instruction": "Which academic draws a parallel between engineering principles of fault tolerance and the design of robust social institutions?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Arthur Pendelton chỉ ra nguyên lý kỹ thuật về dung sai lỗi ('fault tolerance') cần được áp dụng trực tiếp cho việc thiết kế các thiết chế xã hội và doanh nghiệp bền vững. Chuyên đề: Multiple Matching.",
+              "answerLocation": "principle of 'fault tolerance' must be applied to our social and corporate institutions",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-48",
+              "type": "multiple_matching",
+              "instruction": "Which academic suggests that shifting away from a 'blame culture' to systemic resilience encourages greater employee self-expression?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Prof. Julian Vance gợi ý việc dịch chuyển từ văn hóa đổ lỗi sang khả năng phục hồi hệ thống giúp thúc đẩy nhân viên thể hiện bản thân sáng tạo ('actively encourage employees to express creativity'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "shift their focus from searching for a culprit to building systemic resilience, they actively encourage employees to express creativity",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-49",
+              "type": "multiple_matching",
+              "instruction": "Which academic highlights that scientific breakthroughs were frequently born from accidental deviations from protocol?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Dr. Marcus Sterling nhấn mạnh những bước nhảy vọt lịch sử khoa học được tiếp nhiên liệu bởi các sai sót ngẫu nhiên ngoài quy trình ('accidental slips and lapses in protocol have proven to be the ultimate engines of discovery'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "accidental slips and lapses in protocol have proven to be the ultimate engines of discovery",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-50",
+              "type": "multiple_matching",
+              "instruction": "Which academic points out that rigid organizational expectations of conventional instruction can be productively disrupted by tactile artistic exercises?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Clara Dupont chỉ ra sự kỳ vọng khô cứng về cuộc họp truyền thống có thể bị phá vỡ một cách hiệu quả nhờ các bài tập nghệ thuật xúc giác ('engaging in unexpected, highly tactile artistic exercises... disrupt their intellectual expectations'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "tactile artistic exercises—such as mask-making or physical sculpting—we disrupt their intellectual expectations",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-51",
+              "type": "multiple_matching",
+              "instruction": "Which academic claims that elite industries maintain their elite status by redefining failure as creative experimentation?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Prof. Evelyn Thorne chỉ ra các ngành công nghiệp sáng tạo tinh hoa duy trì địa vị cao bằng cách tái định nghĩa thất bại là các bước thử nghiệm táo bạo ('elite creative industries often redefine professional failures as daring experimental steps'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "creative industries often redefine professional failures as 'daring experimental steps'",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-52",
+              "type": "multiple_matching",
+              "instruction": "Which academic argues that punishing mistakes rather than rewarding adaptation leads to fragile systems prone to collapse?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Arthur Pendelton lập luận việc trừng phạt lỗi ban đầu thay vì thưởng cho sự thích ứng sẽ tạo ra hệ thống mong manh dễ sụp đổ ('punish the initial mistake rather than rewarding... create fragile systems'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "punish the initial mistake rather than rewarding the individuals who actively cope... create fragile systems",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t3-53",
+              "type": "multiple_matching",
+              "instruction": "Which academic observes that progressive companies are defined by their active tolerance of employee blunders and slips?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Prof. Julian Vance quan sát thấy các công ty tiến bộ được định nghĩa bởi việc chủ động dung túng cho các sai sót và trượt chân của nhân viên ('cultivate an environment that tolerates employee blunders'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "cultivate an environment that tolerates employee blunders and rewards individuals",
+              "category": "cpe_part_7",
+              "source": "Test 3, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

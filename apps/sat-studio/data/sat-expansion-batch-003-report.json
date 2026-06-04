@@ -1,0 +1,204 @@
+{
+  "apply": true,
+  "version": "sat-expansion-batch-003-2026-05-20",
+  "targetFile": "data\\sat-studio-foundation-bank.json",
+  "plannedCount": 32,
+  "duplicateIds": [],
+  "validationFailures": [],
+  "added": [
+    {
+      "id": "expansion-b003-math-algebra-001",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of two linear equations in two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-002",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions"
+    },
+    {
+      "id": "expansion-b003-math-algebra-003",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear inequalities in one or two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-004",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-algebra-005",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-algebra-006",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of two linear equations in two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-007",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions"
+    },
+    {
+      "id": "expansion-b003-math-algebra-008",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-009",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear inequalities in one or two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-010",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of two linear equations in two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-011",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions"
+    },
+    {
+      "id": "expansion-b003-math-algebra-012",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-algebra-013",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-014",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of two linear equations in two variables"
+    },
+    {
+      "id": "expansion-b003-math-algebra-015",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions"
+    },
+    {
+      "id": "expansion-b003-math-algebra-016",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-advanced-001",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-advanced-002",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Equivalent expressions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-003",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-004",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-005",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-advanced-006",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-advanced-007",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Equivalent expressions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-008",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-advanced-009",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-010",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-advanced-011",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Equivalent expressions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-012",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-013",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b003-math-advanced-014",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Equivalent expressions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-015",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b003-math-advanced-016",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Systems of equations in two variables"
+    }
+  ],
+  "blueprintPath": "data\\sat-expansion-blueprint-20260520-batch003.json",
+  "addedCount": 32
+}

@@ -1,0 +1,400 @@
+{
+  "apply": true,
+  "version": "source-p0-explanation-upgrade-2026-05-20",
+  "sourceFile": "private-vault-archive-bank.json",
+  "targetCount": 48,
+  "attempted": [
+    {
+      "id": "vault-princeton-1-s3-q13",
+      "sourceIndex": 8
+    },
+    {
+      "id": "vault-princeton-1-s3-q14",
+      "sourceIndex": 9
+    },
+    {
+      "id": "vault-princeton-1-s3-q15",
+      "sourceIndex": 10
+    },
+    {
+      "id": "vault-princeton-1-s4-q24",
+      "sourceIndex": 27
+    },
+    {
+      "id": "vault-princeton-1-s4-q26",
+      "sourceIndex": 28
+    },
+    {
+      "id": "vault-princeton-1-s4-q27",
+      "sourceIndex": 29
+    },
+    {
+      "id": "vault-princeton-1-s4-q28",
+      "sourceIndex": 30
+    },
+    {
+      "id": "vault-princeton-2-s3-q13",
+      "sourceIndex": 40
+    },
+    {
+      "id": "vault-princeton-2-s4-q24",
+      "sourceIndex": 57
+    },
+    {
+      "id": "vault-princeton-2-s4-q30",
+      "sourceIndex": 58
+    },
+    {
+      "id": "vault-princeton-2-s4-q26",
+      "sourceIndex": 59
+    },
+    {
+      "id": "vault-princeton-2-s4-q27",
+      "sourceIndex": 60
+    },
+    {
+      "id": "vault-princeton-2-s4-q28",
+      "sourceIndex": 61
+    },
+    {
+      "id": "vault-princeton-2-s4-q29",
+      "sourceIndex": 62
+    },
+    {
+      "id": "vault-princeton-3-s3-q13",
+      "sourceIndex": 73
+    },
+    {
+      "id": "vault-princeton-3-s3-q14",
+      "sourceIndex": 74
+    },
+    {
+      "id": "vault-princeton-3-s4-q24",
+      "sourceIndex": 95
+    },
+    {
+      "id": "vault-princeton-3-s4-q26",
+      "sourceIndex": 96
+    },
+    {
+      "id": "vault-princeton-3-s4-q27",
+      "sourceIndex": 97
+    },
+    {
+      "id": "vault-princeton-3-s4-q28",
+      "sourceIndex": 98
+    },
+    {
+      "id": "vault-princeton-3-s4-q29",
+      "sourceIndex": 99
+    },
+    {
+      "id": "vault-princeton-4-s3-q13",
+      "sourceIndex": 110
+    },
+    {
+      "id": "vault-princeton-4-s3-q14",
+      "sourceIndex": 111
+    },
+    {
+      "id": "vault-princeton-4-s3-q15",
+      "sourceIndex": 112
+    },
+    {
+      "id": "vault-princeton-4-s4-q24",
+      "sourceIndex": 134
+    },
+    {
+      "id": "vault-princeton-4-s4-q25",
+      "sourceIndex": 135
+    },
+    {
+      "id": "vault-princeton-4-s4-q26",
+      "sourceIndex": 136
+    },
+    {
+      "id": "vault-princeton-4-s4-q27",
+      "sourceIndex": 137
+    },
+    {
+      "id": "vault-princeton-4-s4-q28",
+      "sourceIndex": 138
+    },
+    {
+      "id": "vault-princeton-4-s4-q29",
+      "sourceIndex": 139
+    },
+    {
+      "id": "vault-college-board-9-s3-q13",
+      "sourceIndex": 152
+    },
+    {
+      "id": "vault-college-board-9-s3-q15",
+      "sourceIndex": 154
+    },
+    {
+      "id": "vault-college-board-9-s4-q24",
+      "sourceIndex": 178
+    },
+    {
+      "id": "vault-college-board-9-s4-q25",
+      "sourceIndex": 179
+    },
+    {
+      "id": "vault-college-board-9-s4-q26",
+      "sourceIndex": 180
+    },
+    {
+      "id": "vault-college-board-9-s4-q27",
+      "sourceIndex": 181
+    },
+    {
+      "id": "vault-college-board-9-s4-q28",
+      "sourceIndex": 182
+    },
+    {
+      "id": "vault-college-board-9-s4-q29",
+      "sourceIndex": 183
+    },
+    {
+      "id": "vault-college-board-9-s4-q30",
+      "sourceIndex": 184
+    },
+    {
+      "id": "vault-college-board-10-s3-q13",
+      "sourceIndex": 197
+    },
+    {
+      "id": "vault-college-board-10-s3-q14",
+      "sourceIndex": 198
+    },
+    {
+      "id": "vault-college-board-10-s3-q15",
+      "sourceIndex": 199
+    },
+    {
+      "id": "vault-college-board-10-s4-q24",
+      "sourceIndex": 223
+    },
+    {
+      "id": "vault-college-board-10-s4-q25",
+      "sourceIndex": 224
+    },
+    {
+      "id": "vault-college-board-10-s4-q26",
+      "sourceIndex": 225
+    },
+    {
+      "id": "vault-college-board-10-s4-q27",
+      "sourceIndex": 226
+    },
+    {
+      "id": "vault-college-board-10-s4-q29",
+      "sourceIndex": 228
+    },
+    {
+      "id": "vault-college-board-10-s4-q30",
+      "sourceIndex": 229
+    }
+  ],
+  "upgraded": [
+    {
+      "id": "vault-princeton-1-s3-q13",
+      "sourceIndex": 8
+    },
+    {
+      "id": "vault-princeton-1-s3-q14",
+      "sourceIndex": 9
+    },
+    {
+      "id": "vault-princeton-1-s3-q15",
+      "sourceIndex": 10
+    },
+    {
+      "id": "vault-princeton-1-s4-q24",
+      "sourceIndex": 27
+    },
+    {
+      "id": "vault-princeton-1-s4-q26",
+      "sourceIndex": 28
+    },
+    {
+      "id": "vault-princeton-1-s4-q27",
+      "sourceIndex": 29
+    },
+    {
+      "id": "vault-princeton-1-s4-q28",
+      "sourceIndex": 30
+    },
+    {
+      "id": "vault-princeton-2-s3-q13",
+      "sourceIndex": 40
+    },
+    {
+      "id": "vault-princeton-2-s4-q24",
+      "sourceIndex": 57
+    },
+    {
+      "id": "vault-princeton-2-s4-q30",
+      "sourceIndex": 58
+    },
+    {
+      "id": "vault-princeton-2-s4-q26",
+      "sourceIndex": 59
+    },
+    {
+      "id": "vault-princeton-2-s4-q27",
+      "sourceIndex": 60
+    },
+    {
+      "id": "vault-princeton-2-s4-q28",
+      "sourceIndex": 61
+    },
+    {
+      "id": "vault-princeton-2-s4-q29",
+      "sourceIndex": 62
+    },
+    {
+      "id": "vault-princeton-3-s3-q13",
+      "sourceIndex": 73
+    },
+    {
+      "id": "vault-princeton-3-s3-q14",
+      "sourceIndex": 74
+    },
+    {
+      "id": "vault-princeton-3-s4-q24",
+      "sourceIndex": 95
+    },
+    {
+      "id": "vault-princeton-3-s4-q26",
+      "sourceIndex": 96
+    },
+    {
+      "id": "vault-princeton-3-s4-q27",
+      "sourceIndex": 97
+    },
+    {
+      "id": "vault-princeton-3-s4-q28",
+      "sourceIndex": 98
+    },
+    {
+      "id": "vault-princeton-3-s4-q29",
+      "sourceIndex": 99
+    },
+    {
+      "id": "vault-princeton-4-s3-q13",
+      "sourceIndex": 110
+    },
+    {
+      "id": "vault-princeton-4-s3-q14",
+      "sourceIndex": 111
+    },
+    {
+      "id": "vault-princeton-4-s3-q15",
+      "sourceIndex": 112
+    },
+    {
+      "id": "vault-princeton-4-s4-q24",
+      "sourceIndex": 134
+    },
+    {
+      "id": "vault-princeton-4-s4-q25",
+      "sourceIndex": 135
+    },
+    {
+      "id": "vault-princeton-4-s4-q26",
+      "sourceIndex": 136
+    },
+    {
+      "id": "vault-princeton-4-s4-q27",
+      "sourceIndex": 137
+    },
+    {
+      "id": "vault-princeton-4-s4-q28",
+      "sourceIndex": 138
+    },
+    {
+      "id": "vault-princeton-4-s4-q29",
+      "sourceIndex": 139
+    },
+    {
+      "id": "vault-college-board-9-s3-q13",
+      "sourceIndex": 152
+    },
+    {
+      "id": "vault-college-board-9-s3-q15",
+      "sourceIndex": 154
+    },
+    {
+      "id": "vault-college-board-9-s4-q24",
+      "sourceIndex": 178
+    },
+    {
+      "id": "vault-college-board-9-s4-q25",
+      "sourceIndex": 179
+    },
+    {
+      "id": "vault-college-board-9-s4-q26",
+      "sourceIndex": 180
+    },
+    {
+      "id": "vault-college-board-9-s4-q27",
+      "sourceIndex": 181
+    },
+    {
+      "id": "vault-college-board-9-s4-q28",
+      "sourceIndex": 182
+    },
+    {
+      "id": "vault-college-board-9-s4-q29",
+      "sourceIndex": 183
+    },
+    {
+      "id": "vault-college-board-9-s4-q30",
+      "sourceIndex": 184
+    },
+    {
+      "id": "vault-college-board-10-s3-q13",
+      "sourceIndex": 197
+    },
+    {
+      "id": "vault-college-board-10-s3-q14",
+      "sourceIndex": 198
+    },
+    {
+      "id": "vault-college-board-10-s3-q15",
+      "sourceIndex": 199
+    },
+    {
+      "id": "vault-college-board-10-s4-q24",
+      "sourceIndex": 223
+    },
+    {
+      "id": "vault-college-board-10-s4-q25",
+      "sourceIndex": 224
+    },
+    {
+      "id": "vault-college-board-10-s4-q26",
+      "sourceIndex": 225
+    },
+    {
+      "id": "vault-college-board-10-s4-q27",
+      "sourceIndex": 226
+    },
+    {
+      "id": "vault-college-board-10-s4-q29",
+      "sourceIndex": 228
+    },
+    {
+      "id": "vault-college-board-10-s4-q30",
+      "sourceIndex": 229
+    }
+  ],
+  "blocked": [],
+  "remainingDepthFlags": [],
+  "attemptedCount": 48,
+  "upgradedCount": 48,
+  "blockedCount": 0,
+  "remainingDepthFlagCount": 0
+}

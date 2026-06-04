@@ -1,0 +1,426 @@
+{
+  "generatedAt": "2026-05-26",
+  "basis": {
+    "scope": "All active bank questions with reviewStatus == reviewed.",
+    "questionFiles": [
+      "antigravity-bank.json",
+      "archive-source-ai-bank.json",
+      "kaplan-sat-math-ai-bank.json",
+      "opensat-pinesat.json",
+      "private-vault-archive-bank.json",
+      "sat-1590-elite-ai-bank.json",
+      "sat-king-supplemental-ai-bank.json",
+      "sat-studio-foundation-bank.json"
+    ],
+    "officialSourcesChecked": [
+      "College Board Reading and Writing Specifications",
+      "College Board Math Specifications",
+      "College Board SAT Structure",
+      "College Board Math Student-Produced Responses"
+    ],
+    "expertPolicy": [
+      "Accuracy blockers are not acceptable in reviewed rows.",
+      "A high-quality reviewed MC item should teach all three wrong-answer traps, not only name the credited answer.",
+      "Breadth is judged against current Digital SAT content-domain distributions and skill lists.",
+      "Depth is judged by explanation substance, hard-item rigor, distractor specificity, and format fidelity."
+    ]
+  },
+  "inventory": {
+    "reviewedTotal": 10523,
+    "reviewedStudyVisible": 10523,
+    "reviewedCoreVisible": 9750,
+    "reviewedHiddenDuplicate": 0,
+    "reviewedRemedialPool": 773,
+    "reviewedByFile": {
+      "antigravity-bank.json": 7158,
+      "archive-source-ai-bank.json": 792,
+      "kaplan-sat-math-ai-bank.json": 148,
+      "opensat-pinesat.json": 1026,
+      "private-vault-archive-bank.json": 165,
+      "sat-1590-elite-ai-bank.json": 661,
+      "sat-king-supplemental-ai-bank.json": 354,
+      "sat-studio-foundation-bank.json": 219
+    },
+    "reviewedBySourceType": {
+      "Unknown": 26,
+      "ai_generated": 940,
+      "antigravity": 4712,
+      "foundation": 219,
+      "opensat": 1026,
+      "private_vault": 165,
+      "sat_1590": 661,
+      "sat_king": 354,
+      "sat_studio_original": 2420
+    },
+    "reviewedBySection": {
+      "Math": 6084,
+      "Reading and Writing": 4439
+    },
+    "reviewedByDifficulty": {
+      "Easy": 2640,
+      "Hard": 4661,
+      "Medium": 3222
+    }
+  },
+  "accuracy": {
+    "severityCounts": {
+      "pass": 10523
+    },
+    "issueCounts": {},
+    "warningCounts": {},
+    "answerKeyDistribution": {
+      "totalMultipleChoice": 8866,
+      "byChoice": {
+        "A": {
+          "count": 2979,
+          "pct": 33.6
+        },
+        "B": {
+          "count": 2160,
+          "pct": 24.4
+        },
+        "C": {
+          "count": 1971,
+          "pct": 22.2
+        },
+        "D": {
+          "count": 1756,
+          "pct": 19.8
+        }
+      },
+      "maxChoicePct": 33.6
+    },
+    "sampleAccuracyBlockers": []
+  },
+  "breadth": {
+    "allReviewedReadingWritingDomains": [
+      {
+        "domain": "Information and Ideas",
+        "count": 1234,
+        "actualPct": 27.8,
+        "officialPct": 26.0,
+        "deltaPctPoints": 1.8,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 1163,
+        "actualPct": 26.2,
+        "officialPct": 28.0,
+        "deltaPctPoints": -1.8,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 830,
+        "actualPct": 18.7,
+        "officialPct": 20.0,
+        "deltaPctPoints": -1.3,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 1212,
+        "actualPct": 27.3,
+        "officialPct": 26.0,
+        "deltaPctPoints": 1.3,
+        "balance": "near_target"
+      }
+    ],
+    "allReviewedMathDomains": [
+      {
+        "domain": "Algebra",
+        "count": 1976,
+        "actualPct": 32.5,
+        "officialPct": 35.0,
+        "deltaPctPoints": -2.5,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 2054,
+        "actualPct": 33.8,
+        "officialPct": 35.0,
+        "deltaPctPoints": -1.2,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 1043,
+        "actualPct": 17.1,
+        "officialPct": 15.0,
+        "deltaPctPoints": 2.1,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 1011,
+        "actualPct": 16.6,
+        "officialPct": 15.0,
+        "deltaPctPoints": 1.6,
+        "balance": "near_target"
+      }
+    ],
+    "coreReviewedReadingWritingDomains": [
+      {
+        "domain": "Information and Ideas",
+        "count": 1174,
+        "actualPct": 27.9,
+        "officialPct": 26.0,
+        "deltaPctPoints": 1.9,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 1143,
+        "actualPct": 27.2,
+        "officialPct": 28.0,
+        "deltaPctPoints": -0.8,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 806,
+        "actualPct": 19.2,
+        "officialPct": 20.0,
+        "deltaPctPoints": -0.8,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 1084,
+        "actualPct": 25.8,
+        "officialPct": 26.0,
+        "deltaPctPoints": -0.2,
+        "balance": "near_target"
+      }
+    ],
+    "coreReviewedMathDomains": [
+      {
+        "domain": "Algebra",
+        "count": 1840,
+        "actualPct": 33.2,
+        "officialPct": 35.0,
+        "deltaPctPoints": -1.8,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 1885,
+        "actualPct": 34.0,
+        "officialPct": 35.0,
+        "deltaPctPoints": -1.0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 945,
+        "actualPct": 17.0,
+        "officialPct": 15.0,
+        "deltaPctPoints": 2.0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 873,
+        "actualPct": 15.7,
+        "officialPct": 15.0,
+        "deltaPctPoints": 0.7,
+        "balance": "near_target"
+      }
+    ],
+    "coreReviewedReadingWritingSkills": [
+      {
+        "skill": "Central Ideas and Details",
+        "count": 379,
+        "hardCount": 121
+      },
+      {
+        "skill": "Command of Evidence",
+        "count": 488,
+        "hardCount": 208
+      },
+      {
+        "skill": "Inferences",
+        "count": 307,
+        "hardCount": 139
+      },
+      {
+        "skill": "Words in Context",
+        "count": 426,
+        "hardCount": 136
+      },
+      {
+        "skill": "Text Structure and Purpose",
+        "count": 451,
+        "hardCount": 155
+      },
+      {
+        "skill": "Cross-Text Connections",
+        "count": 266,
+        "hardCount": 109
+      },
+      {
+        "skill": "Rhetorical Synthesis",
+        "count": 383,
+        "hardCount": 210
+      },
+      {
+        "skill": "Transitions",
+        "count": 423,
+        "hardCount": 154
+      },
+      {
+        "skill": "Boundaries",
+        "count": 700,
+        "hardCount": 246
+      },
+      {
+        "skill": "Form, Structure, and Sense",
+        "count": 384,
+        "hardCount": 141
+      }
+    ],
+    "coreReviewedMathSkills": [
+      {
+        "skill": "Linear equations in one variable",
+        "count": 350,
+        "hardCount": 173
+      },
+      {
+        "skill": "Linear equations in two variables",
+        "count": 291,
+        "hardCount": 169
+      },
+      {
+        "skill": "Linear functions",
+        "count": 464,
+        "hardCount": 227
+      },
+      {
+        "skill": "Systems of two linear equations in two variables",
+        "count": 448,
+        "hardCount": 287
+      },
+      {
+        "skill": "Linear inequalities in one or two variables",
+        "count": 286,
+        "hardCount": 189
+      },
+      {
+        "skill": "Equivalent expressions",
+        "count": 416,
+        "hardCount": 238
+      },
+      {
+        "skill": "Nonlinear equations in one variable",
+        "count": 324,
+        "hardCount": 233
+      },
+      {
+        "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+        "count": 556,
+        "hardCount": 316
+      },
+      {
+        "skill": "Nonlinear functions",
+        "count": 590,
+        "hardCount": 395
+      },
+      {
+        "skill": "Ratios, rates, proportional relationships, and units",
+        "count": 185,
+        "hardCount": 47
+      },
+      {
+        "skill": "Percentages",
+        "count": 165,
+        "hardCount": 67
+      },
+      {
+        "skill": "One-variable data: distributions and measures of center and spread",
+        "count": 203,
+        "hardCount": 61
+      },
+      {
+        "skill": "Two-variable data: models and scatterplots",
+        "count": 171,
+        "hardCount": 53
+      },
+      {
+        "skill": "Probability and conditional probability",
+        "count": 86,
+        "hardCount": 46
+      },
+      {
+        "skill": "Inference from sample statistics and margin of error",
+        "count": 60,
+        "hardCount": 27
+      },
+      {
+        "skill": "Evaluating statistical claims: observational studies and experiments",
+        "count": 73,
+        "hardCount": 39
+      },
+      {
+        "skill": "Area and volume",
+        "count": 198,
+        "hardCount": 87
+      },
+      {
+        "skill": "Lines, angles, and triangles",
+        "count": 215,
+        "hardCount": 53
+      },
+      {
+        "skill": "Right triangles and trigonometry",
+        "count": 199,
+        "hardCount": 78
+      },
+      {
+        "skill": "Circles",
+        "count": 261,
+        "hardCount": 101
+      }
+    ],
+    "thinCoreReadingWritingSkillsUnder60": [],
+    "thinCoreMathSkillsUnder35": [],
+    "overloadedTopicsCoreVisible": []
+  },
+  "depth": {
+    "explanationWordStats": {
+      "min": 33,
+      "median": 130.0,
+      "mean": 145.3,
+      "max": 2739
+    },
+    "correctExplanationWordStats": {
+      "min": 28,
+      "median": 71.0,
+      "mean": 74.2,
+      "max": 1113
+    },
+    "depthGapQuestionCount": 0,
+    "hardDepthGapQuestionCount": 0,
+    "genericDistractorTeachingCount": 0,
+    "incompleteDistractorTeachingCount": 0,
+    "mathGridInPct": 27.2,
+    "mathGridInOfficialApproxPct": 25.0,
+    "hardMathMultiStepHeuristicCount": 499,
+    "hardMathMultiStepHeuristicPctOfHardMath": 16.4
+  },
+  "scorecard": {
+    "verdict": "reviewed_pool_ready_for_high_quality_practice",
+    "accuracyScore10": 10.0,
+    "depthScore10": 10.0,
+    "breadthScore10": 10.0,
+    "overallExpertScore10": 10.0,
+    "accuracyBlockerCount": 0,
+    "depthGapCount": 0,
+    "coreDomainGapCount": 0,
+    "overloadedTopicCount": 0
+  },
+  "expertFindings": [
+    "No reviewed row has a hard answer-key or math-verification blocker under the automated verifier."
+  ]
+}

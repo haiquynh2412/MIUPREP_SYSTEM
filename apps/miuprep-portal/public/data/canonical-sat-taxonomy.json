@@ -1,0 +1,517 @@
+{
+  "version": "canonical-sat-taxonomy-2026-05-20",
+  "notes": [
+    "Use canonicalSkill for routing, reporting, generation targets, and mastery tracking.",
+    "Keep original skill labels for provenance. Do not overwrite source skill labels until migration is explicitly approved.",
+    "microSkill should be derived after canonicalSkill; examples below are the preferred micro-skill families."
+  ],
+  "sections": {
+    "Reading and Writing": {
+      "domains": {
+        "Information and Ideas": {
+          "targetPct": 26,
+          "canonicalSkills": {
+            "Central Ideas and Details": {
+              "aliases": [
+                "Central Ideas and Details",
+                "Central Ideas",
+                "Central Idea",
+                "Main Idea",
+                "Main Purpose"
+              ],
+              "microSkills": [
+                "main claim",
+                "central summary",
+                "supporting detail",
+                "scope control",
+                "purpose of detail"
+              ]
+            },
+            "Command of Evidence": {
+              "aliases": [
+                "Command of Evidence",
+                "Command of Evidence: Textual",
+                "Command of Evidence: Quantitative",
+                "Evidence",
+                "Textual Evidence",
+                "Quantitative Evidence"
+              ],
+              "microSkills": [
+                "textual support",
+                "graph/table support",
+                "weaken claim",
+                "strengthen claim",
+                "data-to-claim alignment",
+                "correlation versus causation",
+                "statistical claim evaluation"
+              ]
+            },
+            "Inferences": {
+              "aliases": [
+                "Inferences",
+                "Inference",
+                "Implied Meaning"
+              ],
+              "microSkills": [
+                "supported inference",
+                "most likely conclusion",
+                "constraint-based inference",
+                "scope-safe inference",
+                "implicit contrast"
+              ]
+            }
+          }
+        },
+        "Craft and Structure": {
+          "targetPct": 28,
+          "canonicalSkills": {
+            "Words in Context": {
+              "aliases": [
+                "Words in Context",
+                "Vocabulary in Context",
+                "Precise Word Choice"
+              ],
+              "microSkills": [
+                "academic vocabulary",
+                "context clue",
+                "tone/register",
+                "contrast-based meaning",
+                "connotation"
+              ]
+            },
+            "Text Structure and Purpose": {
+              "aliases": [
+                "Text Structure and Purpose",
+                "Text Structure in Purpose",
+                "Text Structure",
+                "Rhetorical Function",
+                "Purpose"
+              ],
+              "microSkills": [
+                "function of sentence",
+                "function of paragraph",
+                "author purpose",
+                "rhetorical move",
+                "method of development",
+                "claim-to-evidence structure"
+              ]
+            },
+            "Cross-Text Connections": {
+              "aliases": [
+                "Cross-Text Connections",
+                "Cross-Text Connection",
+                "Paired Texts"
+              ],
+              "microSkills": [
+                "challenge",
+                "qualify",
+                "extend",
+                "reframe",
+                "narrow",
+                "different evidence",
+                "predicted response"
+              ]
+            }
+          }
+        },
+        "Expression of Ideas": {
+          "targetPct": 20,
+          "canonicalSkills": {
+            "Rhetorical Synthesis": {
+              "aliases": [
+                "Rhetorical Synthesis",
+                "Synthesis",
+                "Student Notes"
+              ],
+              "microSkills": [
+                "goal-specific selection",
+                "compare/contrast synthesis",
+                "definition synthesis",
+                "emphasis on method",
+                "emphasis on result",
+                "audience/purpose fit"
+              ]
+            },
+            "Transitions": {
+              "aliases": [
+                "Transitions",
+                "Transition",
+                "Logical Transitions"
+              ],
+              "microSkills": [
+                "contrast",
+                "cause/effect",
+                "continuation",
+                "example",
+                "concession",
+                "sequence",
+                "emphasis"
+              ]
+            }
+          }
+        },
+        "Standard English Conventions": {
+          "targetPct": 26,
+          "canonicalSkills": {
+            "Boundaries": {
+              "aliases": [
+                "Boundaries",
+                "Sentence Boundaries",
+                "Punctuation",
+                "Commas and Semicolons"
+              ],
+              "microSkills": [
+                "comma splice",
+                "semicolon",
+                "colon",
+                "dash",
+                "coordination",
+                "subordination",
+                "modifier punctuation"
+              ]
+            },
+            "Form, Structure, and Sense": {
+              "aliases": [
+                "Form, Structure, and Sense",
+                "Form, structure, and sense",
+                "Form, Structure, & Sense",
+                "Standard English conventions mixed"
+              ],
+              "microSkills": [
+                "subject-verb agreement",
+                "pronoun agreement",
+                "verb tense",
+                "modifier placement",
+                "possessives",
+                "parallelism",
+                "logical comparison"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Math": {
+      "domains": {
+        "Algebra": {
+          "targetPct": 35,
+          "canonicalSkills": {
+            "Linear equations in one variable": {
+              "aliases": [
+                "Linear equations in one variable"
+              ],
+              "microSkills": [
+                "single-step equation",
+                "multi-step equation",
+                "equation with fractions",
+                "literal equation",
+                "context equation"
+              ]
+            },
+            "Linear equations in two variables": {
+              "aliases": [
+                "Linear equations in two variables"
+              ],
+              "microSkills": [
+                "standard form",
+                "slope-intercept form",
+                "point on line",
+                "x/y intercept",
+                "graph interpretation"
+              ]
+            },
+            "Linear functions": {
+              "aliases": [
+                "Linear functions",
+                "Linear functions and slope"
+              ],
+              "microSkills": [
+                "rate of change",
+                "initial value",
+                "function notation",
+                "linear model",
+                "parallel/perpendicular slope",
+                "table-to-function"
+              ]
+            },
+            "Systems of two linear equations in two variables": {
+              "aliases": [
+                "Systems of two linear equations in two variables",
+                "Systems of linear equations",
+                "Systems"
+              ],
+              "microSkills": [
+                "elimination",
+                "substitution",
+                "graph intersection",
+                "no solution",
+                "infinite solutions",
+                "parameter system",
+                "word system"
+              ]
+            },
+            "Linear inequalities in one or two variables": {
+              "aliases": [
+                "Linear inequalities in one or two variables",
+                "Linear inequalities"
+              ],
+              "microSkills": [
+                "one-variable inequality",
+                "compound inequality",
+                "contextual constraint",
+                "graph of inequality",
+                "system of inequalities"
+              ]
+            }
+          }
+        },
+        "Advanced Math": {
+          "targetPct": 35,
+          "canonicalSkills": {
+            "Equivalent expressions": {
+              "aliases": [
+                "Equivalent expressions"
+              ],
+              "microSkills": [
+                "factoring",
+                "expanding",
+                "rational expressions",
+                "exponent rules",
+                "radical expressions",
+                "structure recognition"
+              ]
+            },
+            "Nonlinear equations in one variable": {
+              "aliases": [
+                "Nonlinear equations in one variable",
+                "Nonlinear equations and functions",
+                "Quadratic equations",
+                "Advanced equations and functions"
+              ],
+              "microSkills": [
+                "quadratic roots",
+                "factoring",
+                "quadratic formula",
+                "discriminant",
+                "radical equation",
+                "rational equation",
+                "extraneous solution",
+                "parameter constraint"
+              ]
+            },
+            "Systems of equations in two variables": {
+              "aliases": [
+                "Systems of equations in two variables",
+                "Nonlinear systems",
+                "Nonlinear equations in one variable and systems of equations in two variables"
+              ],
+              "microSkills": [
+                "line-parabola intersection",
+                "substitution nonlinear system",
+                "number of intersections",
+                "parameter system",
+                "graphical system"
+              ]
+            },
+            "Nonlinear functions": {
+              "aliases": [
+                "Nonlinear functions",
+                "Exponential functions"
+              ],
+              "microSkills": [
+                "quadratic function features",
+                "exponential growth",
+                "exponential decay",
+                "function transformation",
+                "zeros/intercepts",
+                "vertex/maximum/minimum",
+                "model comparison"
+              ]
+            }
+          }
+        },
+        "Problem-Solving and Data Analysis": {
+          "targetPct": 15,
+          "canonicalSkills": {
+            "Ratios, rates, proportional relationships, and units": {
+              "aliases": [
+                "Ratios, rates, proportional relationships, and units",
+                "Ratios and rates",
+                "Rates and units"
+              ],
+              "microSkills": [
+                "unit rate",
+                "unit conversion",
+                "proportional relationship",
+                "density/rate context",
+                "scale"
+              ]
+            },
+            "Percentages": {
+              "aliases": [
+                "Percentages"
+              ],
+              "microSkills": [
+                "percent of",
+                "percent change",
+                "successive percent change",
+                "reverse percent",
+                "percentage points"
+              ]
+            },
+            "One-variable data: distributions and measures of center and spread": {
+              "aliases": [
+                "One-variable data: distributions and measures of center and spread",
+                "Statistics"
+              ],
+              "microSkills": [
+                "mean",
+                "median",
+                "range",
+                "standard deviation",
+                "histogram",
+                "box plot"
+              ]
+            },
+            "Two-variable data: models and scatterplots": {
+              "aliases": [
+                "Two-variable data: models and scatterplots",
+                "Data interpretation"
+              ],
+              "microSkills": [
+                "scatterplot",
+                "line of best fit",
+                "residual",
+                "model prediction",
+                "association",
+                "slope/intercept in context"
+              ]
+            },
+            "Probability and conditional probability": {
+              "aliases": [
+                "Probability and conditional probability",
+                "Probability"
+              ],
+              "microSkills": [
+                "simple probability",
+                "compound probability",
+                "conditional probability",
+                "two-way table",
+                "complement",
+                "independence"
+              ]
+            },
+            "Inference from sample statistics and margin of error": {
+              "aliases": [
+                "Inference from sample statistics and margin of error",
+                "Margin of error",
+                "Sample statistics"
+              ],
+              "microSkills": [
+                "sample vs population",
+                "margin of error",
+                "confidence interval interpretation",
+                "sampling variability"
+              ]
+            },
+            "Evaluating statistical claims: observational studies and experiments": {
+              "aliases": [
+                "Evaluating statistical claims: observational studies and experiments",
+                "Statistical claims",
+                "Experimental design"
+              ],
+              "microSkills": [
+                "observational study",
+                "experiment",
+                "random assignment",
+                "causal claim",
+                "bias",
+                "confounding variable"
+              ]
+            }
+          }
+        },
+        "Geometry and Trigonometry": {
+          "targetPct": 15,
+          "canonicalSkills": {
+            "Area and volume": {
+              "aliases": [
+                "Area and volume"
+              ],
+              "microSkills": [
+                "area",
+                "volume",
+                "surface area",
+                "composite figure",
+                "scale factor"
+              ]
+            },
+            "Lines, angles, and triangles": {
+              "aliases": [
+                "Lines, angles, and triangles"
+              ],
+              "microSkills": [
+                "angle relationships",
+                "parallel lines",
+                "triangle angle sum",
+                "similar triangles",
+                "congruence",
+                "coordinate geometry"
+              ]
+            },
+            "Right triangles and trigonometry": {
+              "aliases": [
+                "Right triangles and trigonometry",
+                "Right triangles"
+              ],
+              "microSkills": [
+                "Pythagorean theorem",
+                "special right triangles",
+                "sine/cosine/tangent",
+                "trig ratio in context",
+                "angle of elevation"
+              ]
+            },
+            "Circles": {
+              "aliases": [
+                "Circles"
+              ],
+              "microSkills": [
+                "circumference",
+                "area",
+                "arc length",
+                "sector area",
+                "chords",
+                "tangents",
+                "circle equation"
+              ]
+            }
+          }
+        },
+        "Calculator Strategy": {
+          "targetPct": 0,
+          "canonicalSkills": {
+            "Desmos Strategy for SAT Math": {
+              "aliases": [
+                "Desmos Strategy for SAT Math",
+                "Desmos",
+                "Graphing calculator",
+                "Calculator strategy"
+              ],
+              "microSkills": [
+                "calculator decision",
+                "equation and system intersections",
+                "roots and intercepts",
+                "quadratic vertex",
+                "inequality and domain checks",
+                "tables and regression",
+                "sliders and parameters",
+                "student-produced response rounding"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

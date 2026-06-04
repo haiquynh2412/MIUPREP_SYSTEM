@@ -1,0 +1,2292 @@
+{
+  "apply": true,
+  "version": "source-p1-generic-explanation-upgrade-2026-05-20",
+  "sourceFile": "kaplan-sat-math-ai-bank.json",
+  "targetPriority": "P1",
+  "targetReason": "generic_distractor_explanation",
+  "targetCount": 284,
+  "attempted": [
+    {
+      "id": "kaplan-ai-math-001",
+      "sourceIndex": 0
+    },
+    {
+      "id": "kaplan-ai-math-002",
+      "sourceIndex": 1
+    },
+    {
+      "id": "kaplan-ai-math-003",
+      "sourceIndex": 2
+    },
+    {
+      "id": "kaplan-ai-math-004",
+      "sourceIndex": 3
+    },
+    {
+      "id": "kaplan-ai-math-005",
+      "sourceIndex": 4
+    },
+    {
+      "id": "kaplan-ai-math-006",
+      "sourceIndex": 5
+    },
+    {
+      "id": "kaplan-ai-math-007",
+      "sourceIndex": 6
+    },
+    {
+      "id": "kaplan-ai-math-008",
+      "sourceIndex": 7
+    },
+    {
+      "id": "kaplan-ai-math-009",
+      "sourceIndex": 8
+    },
+    {
+      "id": "kaplan-ai-math-010",
+      "sourceIndex": 9
+    },
+    {
+      "id": "kaplan-ai-math-011",
+      "sourceIndex": 10
+    },
+    {
+      "id": "kaplan-ai-math-012",
+      "sourceIndex": 11
+    },
+    {
+      "id": "kaplan-ai-math-013",
+      "sourceIndex": 12
+    },
+    {
+      "id": "kaplan-ai-math-014",
+      "sourceIndex": 13
+    },
+    {
+      "id": "kaplan-ai-math-015",
+      "sourceIndex": 14
+    },
+    {
+      "id": "kaplan-ai-math-016",
+      "sourceIndex": 15
+    },
+    {
+      "id": "kaplan-ai-math-017",
+      "sourceIndex": 16
+    },
+    {
+      "id": "kaplan-ai-math-018",
+      "sourceIndex": 17
+    },
+    {
+      "id": "kaplan-ai-math-019",
+      "sourceIndex": 18
+    },
+    {
+      "id": "kaplan-ai-math-020",
+      "sourceIndex": 19
+    },
+    {
+      "id": "kaplan-ai-math-021",
+      "sourceIndex": 20
+    },
+    {
+      "id": "kaplan-ai-math-022",
+      "sourceIndex": 21
+    },
+    {
+      "id": "kaplan-ai-math-023",
+      "sourceIndex": 22
+    },
+    {
+      "id": "kaplan-ai-math-024",
+      "sourceIndex": 23
+    },
+    {
+      "id": "kaplan-ai-math-025",
+      "sourceIndex": 24
+    },
+    {
+      "id": "kaplan-ai-math-026",
+      "sourceIndex": 25
+    },
+    {
+      "id": "kaplan-ai-math-027",
+      "sourceIndex": 26
+    },
+    {
+      "id": "kaplan-ai-math-028",
+      "sourceIndex": 27
+    },
+    {
+      "id": "kaplan-ai-math-029",
+      "sourceIndex": 28
+    },
+    {
+      "id": "kaplan-ai-math-030",
+      "sourceIndex": 29
+    },
+    {
+      "id": "kaplan-ai-math-031",
+      "sourceIndex": 30
+    },
+    {
+      "id": "kaplan-ai-math-032",
+      "sourceIndex": 31
+    },
+    {
+      "id": "kaplan-ai-math-033",
+      "sourceIndex": 32
+    },
+    {
+      "id": "kaplan-ai-math-034",
+      "sourceIndex": 33
+    },
+    {
+      "id": "kaplan-ai-math-035",
+      "sourceIndex": 34
+    },
+    {
+      "id": "kaplan-ai-math-036",
+      "sourceIndex": 35
+    },
+    {
+      "id": "kaplan-ai-math-037",
+      "sourceIndex": 36
+    },
+    {
+      "id": "kaplan-ai-math-038",
+      "sourceIndex": 37
+    },
+    {
+      "id": "kaplan-ai-math-039",
+      "sourceIndex": 38
+    },
+    {
+      "id": "kaplan-ai-math-040",
+      "sourceIndex": 39
+    },
+    {
+      "id": "kaplan-ai-math-041",
+      "sourceIndex": 40
+    },
+    {
+      "id": "kaplan-ai-math-042",
+      "sourceIndex": 41
+    },
+    {
+      "id": "kaplan-ai-math-043",
+      "sourceIndex": 42
+    },
+    {
+      "id": "kaplan-ai-math-044",
+      "sourceIndex": 43
+    },
+    {
+      "id": "kaplan-ai-math-045",
+      "sourceIndex": 44
+    },
+    {
+      "id": "kaplan-ai-math-046",
+      "sourceIndex": 45
+    },
+    {
+      "id": "kaplan-ai-math-047",
+      "sourceIndex": 46
+    },
+    {
+      "id": "kaplan-ai-math-048",
+      "sourceIndex": 47
+    },
+    {
+      "id": "kaplan-ai-math-049",
+      "sourceIndex": 48
+    },
+    {
+      "id": "kaplan-ai-math-050",
+      "sourceIndex": 49
+    },
+    {
+      "id": "kaplan-ai-math-051",
+      "sourceIndex": 50
+    },
+    {
+      "id": "kaplan-ai-math-052",
+      "sourceIndex": 51
+    },
+    {
+      "id": "kaplan-ai-math-053",
+      "sourceIndex": 52
+    },
+    {
+      "id": "kaplan-ai-math-054",
+      "sourceIndex": 53
+    },
+    {
+      "id": "kaplan-ai-math-055",
+      "sourceIndex": 54
+    },
+    {
+      "id": "kaplan-ai-math-056",
+      "sourceIndex": 55
+    },
+    {
+      "id": "kaplan-ai-math-057",
+      "sourceIndex": 56
+    },
+    {
+      "id": "kaplan-ai-math-058",
+      "sourceIndex": 57
+    },
+    {
+      "id": "kaplan-ai-math-059",
+      "sourceIndex": 58
+    },
+    {
+      "id": "kaplan-ai-math-060",
+      "sourceIndex": 59
+    },
+    {
+      "id": "kaplan-ai-math-061",
+      "sourceIndex": 60
+    },
+    {
+      "id": "kaplan-ai-math-062",
+      "sourceIndex": 61
+    },
+    {
+      "id": "kaplan-ai-math-063",
+      "sourceIndex": 62
+    },
+    {
+      "id": "kaplan-ai-math-064",
+      "sourceIndex": 63
+    },
+    {
+      "id": "kaplan-ai-math-065",
+      "sourceIndex": 64
+    },
+    {
+      "id": "kaplan-ai-math-066",
+      "sourceIndex": 65
+    },
+    {
+      "id": "kaplan-ai-math-067",
+      "sourceIndex": 66
+    },
+    {
+      "id": "kaplan-ai-math-068",
+      "sourceIndex": 67
+    },
+    {
+      "id": "kaplan-ai-math-069",
+      "sourceIndex": 68
+    },
+    {
+      "id": "kaplan-ai-math-070",
+      "sourceIndex": 69
+    },
+    {
+      "id": "kaplan-ai-math-071",
+      "sourceIndex": 70
+    },
+    {
+      "id": "kaplan-ai-math-072",
+      "sourceIndex": 71
+    },
+    {
+      "id": "kaplan-ai-math-073",
+      "sourceIndex": 72
+    },
+    {
+      "id": "kaplan-ai-math-074",
+      "sourceIndex": 73
+    },
+    {
+      "id": "kaplan-ai-math-075",
+      "sourceIndex": 74
+    },
+    {
+      "id": "kaplan-ai-math-076",
+      "sourceIndex": 75
+    },
+    {
+      "id": "kaplan-ai-math-077",
+      "sourceIndex": 76
+    },
+    {
+      "id": "kaplan-ai-math-078",
+      "sourceIndex": 77
+    },
+    {
+      "id": "kaplan-ai-math-079",
+      "sourceIndex": 78
+    },
+    {
+      "id": "kaplan-ai-math-080",
+      "sourceIndex": 79
+    },
+    {
+      "id": "kaplan-ai-math-081",
+      "sourceIndex": 80
+    },
+    {
+      "id": "kaplan-ai-math-082",
+      "sourceIndex": 81
+    },
+    {
+      "id": "kaplan-ai-math-083",
+      "sourceIndex": 82
+    },
+    {
+      "id": "kaplan-ai-math-084",
+      "sourceIndex": 83
+    },
+    {
+      "id": "kaplan-ai-math-085",
+      "sourceIndex": 84
+    },
+    {
+      "id": "kaplan-ai-math-086",
+      "sourceIndex": 85
+    },
+    {
+      "id": "kaplan-ai-math-087",
+      "sourceIndex": 86
+    },
+    {
+      "id": "kaplan-ai-math-088",
+      "sourceIndex": 87
+    },
+    {
+      "id": "kaplan-ai-math-089",
+      "sourceIndex": 88
+    },
+    {
+      "id": "kaplan-ai-math-090",
+      "sourceIndex": 89
+    },
+    {
+      "id": "kaplan-ai-math-091",
+      "sourceIndex": 90
+    },
+    {
+      "id": "kaplan-ai-math-092",
+      "sourceIndex": 91
+    },
+    {
+      "id": "kaplan-ai-math-093",
+      "sourceIndex": 92
+    },
+    {
+      "id": "kaplan-ai-math-094",
+      "sourceIndex": 93
+    },
+    {
+      "id": "kaplan-ai-math-095",
+      "sourceIndex": 94
+    },
+    {
+      "id": "kaplan-ai-math-096",
+      "sourceIndex": 95
+    },
+    {
+      "id": "kaplan-ai-math-097",
+      "sourceIndex": 96
+    },
+    {
+      "id": "kaplan-ai-math-098",
+      "sourceIndex": 97
+    },
+    {
+      "id": "kaplan-ai-math-099",
+      "sourceIndex": 98
+    },
+    {
+      "id": "kaplan-ai-math-100",
+      "sourceIndex": 99
+    },
+    {
+      "id": "kaplan-ai-math-101",
+      "sourceIndex": 100
+    },
+    {
+      "id": "kaplan-ai-math-102",
+      "sourceIndex": 101
+    },
+    {
+      "id": "kaplan-ai-math-103",
+      "sourceIndex": 102
+    },
+    {
+      "id": "kaplan-ai-math-104",
+      "sourceIndex": 103
+    },
+    {
+      "id": "kaplan-ai-math-105",
+      "sourceIndex": 104
+    },
+    {
+      "id": "kaplan-ai-math-106",
+      "sourceIndex": 105
+    },
+    {
+      "id": "kaplan-ai-math-107",
+      "sourceIndex": 106
+    },
+    {
+      "id": "kaplan-ai-math-108",
+      "sourceIndex": 107
+    },
+    {
+      "id": "kaplan-ai-math-109",
+      "sourceIndex": 108
+    },
+    {
+      "id": "kaplan-ai-math-110",
+      "sourceIndex": 109
+    },
+    {
+      "id": "kaplan-ai-math-111",
+      "sourceIndex": 110
+    },
+    {
+      "id": "kaplan-ai-math-112",
+      "sourceIndex": 111
+    },
+    {
+      "id": "kaplan-ai-math-113",
+      "sourceIndex": 112
+    },
+    {
+      "id": "kaplan-ai-math-114",
+      "sourceIndex": 113
+    },
+    {
+      "id": "kaplan-ai-math-115",
+      "sourceIndex": 114
+    },
+    {
+      "id": "kaplan-ai-math-116",
+      "sourceIndex": 115
+    },
+    {
+      "id": "kaplan-ai-math-117",
+      "sourceIndex": 116
+    },
+    {
+      "id": "kaplan-ai-math-118",
+      "sourceIndex": 117
+    },
+    {
+      "id": "kaplan-ai-math-119",
+      "sourceIndex": 118
+    },
+    {
+      "id": "kaplan-ai-math-120",
+      "sourceIndex": 119
+    },
+    {
+      "id": "kaplan-ai-math-121",
+      "sourceIndex": 120
+    },
+    {
+      "id": "kaplan-ai-math-122",
+      "sourceIndex": 121
+    },
+    {
+      "id": "kaplan-ai-math-123",
+      "sourceIndex": 122
+    },
+    {
+      "id": "kaplan-ai-math-124",
+      "sourceIndex": 123
+    },
+    {
+      "id": "kaplan-ai-math-125",
+      "sourceIndex": 124
+    },
+    {
+      "id": "kaplan-ai-math-126",
+      "sourceIndex": 125
+    },
+    {
+      "id": "kaplan-ai-math-127",
+      "sourceIndex": 126
+    },
+    {
+      "id": "kaplan-ai-math-128",
+      "sourceIndex": 127
+    },
+    {
+      "id": "kaplan-ai-math-129",
+      "sourceIndex": 128
+    },
+    {
+      "id": "kaplan-ai-math-130",
+      "sourceIndex": 129
+    },
+    {
+      "id": "kaplan-ai-math-131",
+      "sourceIndex": 130
+    },
+    {
+      "id": "kaplan-ai-math-132",
+      "sourceIndex": 131
+    },
+    {
+      "id": "kaplan-ai-math-133",
+      "sourceIndex": 132
+    },
+    {
+      "id": "kaplan-ai-math-134",
+      "sourceIndex": 133
+    },
+    {
+      "id": "kaplan-ai-math-135",
+      "sourceIndex": 134
+    },
+    {
+      "id": "kaplan-ai-math-136",
+      "sourceIndex": 135
+    },
+    {
+      "id": "kaplan-ai-math-137",
+      "sourceIndex": 136
+    },
+    {
+      "id": "kaplan-ai-math-138",
+      "sourceIndex": 137
+    },
+    {
+      "id": "kaplan-ai-math-139",
+      "sourceIndex": 138
+    },
+    {
+      "id": "kaplan-ai-math-140",
+      "sourceIndex": 139
+    },
+    {
+      "id": "kaplan-ai-math-141",
+      "sourceIndex": 140
+    },
+    {
+      "id": "kaplan-ai-math-142",
+      "sourceIndex": 141
+    },
+    {
+      "id": "kaplan-ai-math-143",
+      "sourceIndex": 142
+    },
+    {
+      "id": "kaplan-ai-math-144",
+      "sourceIndex": 143
+    },
+    {
+      "id": "kaplan-ai-math-145",
+      "sourceIndex": 144
+    },
+    {
+      "id": "kaplan-ai-math-146",
+      "sourceIndex": 145
+    },
+    {
+      "id": "kaplan-ai-math-147",
+      "sourceIndex": 146
+    },
+    {
+      "id": "kaplan-ai-math-148",
+      "sourceIndex": 147
+    },
+    {
+      "id": "kaplan-ai-math-149",
+      "sourceIndex": 148
+    },
+    {
+      "id": "kaplan-ai-math-150",
+      "sourceIndex": 149
+    },
+    {
+      "id": "kaplan-ai-math-151",
+      "sourceIndex": 150
+    },
+    {
+      "id": "kaplan-ai-math-152",
+      "sourceIndex": 151
+    },
+    {
+      "id": "kaplan-ai-math-153",
+      "sourceIndex": 152
+    },
+    {
+      "id": "kaplan-ai-math-154",
+      "sourceIndex": 153
+    },
+    {
+      "id": "kaplan-ai-math-155",
+      "sourceIndex": 154
+    },
+    {
+      "id": "kaplan-ai-math-156",
+      "sourceIndex": 155
+    },
+    {
+      "id": "kaplan-ai-math-157",
+      "sourceIndex": 156
+    },
+    {
+      "id": "kaplan-ai-math-158",
+      "sourceIndex": 157
+    },
+    {
+      "id": "kaplan-ai-math-159",
+      "sourceIndex": 158
+    },
+    {
+      "id": "kaplan-ai-math-160",
+      "sourceIndex": 159
+    },
+    {
+      "id": "kaplan-ai-math-161",
+      "sourceIndex": 160
+    },
+    {
+      "id": "kaplan-ai-math-162",
+      "sourceIndex": 161
+    },
+    {
+      "id": "kaplan-ai-math-163",
+      "sourceIndex": 162
+    },
+    {
+      "id": "kaplan-ai-math-164",
+      "sourceIndex": 163
+    },
+    {
+      "id": "kaplan-ai-math-165",
+      "sourceIndex": 164
+    },
+    {
+      "id": "kaplan-ai-math-166",
+      "sourceIndex": 165
+    },
+    {
+      "id": "kaplan-ai-math-167",
+      "sourceIndex": 166
+    },
+    {
+      "id": "kaplan-ai-math-168",
+      "sourceIndex": 167
+    },
+    {
+      "id": "kaplan-ai-math-169",
+      "sourceIndex": 168
+    },
+    {
+      "id": "kaplan-ai-math-170",
+      "sourceIndex": 169
+    },
+    {
+      "id": "kaplan-ai-math-171",
+      "sourceIndex": 170
+    },
+    {
+      "id": "kaplan-ai-math-172",
+      "sourceIndex": 171
+    },
+    {
+      "id": "kaplan-ai-math-173",
+      "sourceIndex": 172
+    },
+    {
+      "id": "kaplan-ai-math-174",
+      "sourceIndex": 173
+    },
+    {
+      "id": "kaplan-ai-math-175",
+      "sourceIndex": 174
+    },
+    {
+      "id": "kaplan-ai-math-176",
+      "sourceIndex": 175
+    },
+    {
+      "id": "kaplan-ai-math-177",
+      "sourceIndex": 176
+    },
+    {
+      "id": "kaplan-ai-math-178",
+      "sourceIndex": 177
+    },
+    {
+      "id": "kaplan-ai-math-179",
+      "sourceIndex": 178
+    },
+    {
+      "id": "kaplan-ai-math-180",
+      "sourceIndex": 179
+    },
+    {
+      "id": "kaplan-ai-math-181",
+      "sourceIndex": 180
+    },
+    {
+      "id": "kaplan-ai-math-182",
+      "sourceIndex": 181
+    },
+    {
+      "id": "kaplan-ai-math-183",
+      "sourceIndex": 182
+    },
+    {
+      "id": "kaplan-ai-math-184",
+      "sourceIndex": 183
+    },
+    {
+      "id": "kaplan-ai-math-185",
+      "sourceIndex": 184
+    },
+    {
+      "id": "kaplan-ai-math-186",
+      "sourceIndex": 185
+    },
+    {
+      "id": "kaplan-ai-math-187",
+      "sourceIndex": 186
+    },
+    {
+      "id": "kaplan-ai-math-188",
+      "sourceIndex": 187
+    },
+    {
+      "id": "kaplan-ai-math-189",
+      "sourceIndex": 188
+    },
+    {
+      "id": "kaplan-ai-math-190",
+      "sourceIndex": 189
+    },
+    {
+      "id": "kaplan-ai-math-191",
+      "sourceIndex": 190
+    },
+    {
+      "id": "kaplan-ai-math-192",
+      "sourceIndex": 191
+    },
+    {
+      "id": "kaplan-ai-math-193",
+      "sourceIndex": 192
+    },
+    {
+      "id": "kaplan-ai-math-194",
+      "sourceIndex": 193
+    },
+    {
+      "id": "kaplan-ai-math-195",
+      "sourceIndex": 194
+    },
+    {
+      "id": "kaplan-ai-math-196",
+      "sourceIndex": 195
+    },
+    {
+      "id": "kaplan-ai-math-197",
+      "sourceIndex": 196
+    },
+    {
+      "id": "kaplan-ai-math-198",
+      "sourceIndex": 197
+    },
+    {
+      "id": "kaplan-ai-math-199",
+      "sourceIndex": 198
+    },
+    {
+      "id": "kaplan-ai-math-200",
+      "sourceIndex": 199
+    },
+    {
+      "id": "kaplan-ai-math-201",
+      "sourceIndex": 200
+    },
+    {
+      "id": "kaplan-ai-math-202",
+      "sourceIndex": 201
+    },
+    {
+      "id": "kaplan-ai-math-203",
+      "sourceIndex": 202
+    },
+    {
+      "id": "kaplan-ai-math-204",
+      "sourceIndex": 203
+    },
+    {
+      "id": "kaplan-ai-math-205",
+      "sourceIndex": 204
+    },
+    {
+      "id": "kaplan-ai-math-206",
+      "sourceIndex": 205
+    },
+    {
+      "id": "kaplan-ai-math-207",
+      "sourceIndex": 206
+    },
+    {
+      "id": "kaplan-ai-math-208",
+      "sourceIndex": 207
+    },
+    {
+      "id": "kaplan-ai-math-209",
+      "sourceIndex": 208
+    },
+    {
+      "id": "kaplan-ai-math-210",
+      "sourceIndex": 209
+    },
+    {
+      "id": "kaplan-ai-math-211",
+      "sourceIndex": 210
+    },
+    {
+      "id": "kaplan-ai-math-212",
+      "sourceIndex": 211
+    },
+    {
+      "id": "kaplan-ai-math-213",
+      "sourceIndex": 212
+    },
+    {
+      "id": "kaplan-ai-math-214",
+      "sourceIndex": 213
+    },
+    {
+      "id": "kaplan-ai-math-215",
+      "sourceIndex": 214
+    },
+    {
+      "id": "kaplan-ai-math-216",
+      "sourceIndex": 215
+    },
+    {
+      "id": "kaplan-ai-math-217",
+      "sourceIndex": 216
+    },
+    {
+      "id": "kaplan-ai-math-218",
+      "sourceIndex": 217
+    },
+    {
+      "id": "kaplan-ai-math-219",
+      "sourceIndex": 218
+    },
+    {
+      "id": "kaplan-ai-math-220",
+      "sourceIndex": 219
+    },
+    {
+      "id": "kaplan-ai-math-221",
+      "sourceIndex": 220
+    },
+    {
+      "id": "kaplan-ai-math-222",
+      "sourceIndex": 221
+    },
+    {
+      "id": "kaplan-ai-math-223",
+      "sourceIndex": 222
+    },
+    {
+      "id": "kaplan-ai-math-224",
+      "sourceIndex": 223
+    },
+    {
+      "id": "kaplan-ai-math-225",
+      "sourceIndex": 224
+    },
+    {
+      "id": "kaplan-ai-math-226",
+      "sourceIndex": 225
+    },
+    {
+      "id": "kaplan-ai-math-227",
+      "sourceIndex": 226
+    },
+    {
+      "id": "kaplan-ai-math-228",
+      "sourceIndex": 227
+    },
+    {
+      "id": "kaplan-ai-math-229",
+      "sourceIndex": 228
+    },
+    {
+      "id": "kaplan-ai-math-230",
+      "sourceIndex": 229
+    },
+    {
+      "id": "kaplan-ai-math-247",
+      "sourceIndex": 246
+    },
+    {
+      "id": "kaplan-ai-math-248",
+      "sourceIndex": 247
+    },
+    {
+      "id": "kaplan-ai-math-249",
+      "sourceIndex": 248
+    },
+    {
+      "id": "kaplan-ai-math-250",
+      "sourceIndex": 249
+    },
+    {
+      "id": "kaplan-ai-math-251",
+      "sourceIndex": 250
+    },
+    {
+      "id": "kaplan-ai-math-252",
+      "sourceIndex": 251
+    },
+    {
+      "id": "kaplan-ai-math-253",
+      "sourceIndex": 252
+    },
+    {
+      "id": "kaplan-ai-math-254",
+      "sourceIndex": 253
+    },
+    {
+      "id": "kaplan-ai-math-255",
+      "sourceIndex": 254
+    },
+    {
+      "id": "kaplan-ai-math-256",
+      "sourceIndex": 255
+    },
+    {
+      "id": "kaplan-ai-math-257",
+      "sourceIndex": 256
+    },
+    {
+      "id": "kaplan-ai-math-258",
+      "sourceIndex": 257
+    },
+    {
+      "id": "kaplan-ai-math-259",
+      "sourceIndex": 258
+    },
+    {
+      "id": "kaplan-ai-math-260",
+      "sourceIndex": 259
+    },
+    {
+      "id": "kaplan-ai-math-261",
+      "sourceIndex": 260
+    },
+    {
+      "id": "kaplan-ai-math-262",
+      "sourceIndex": 261
+    },
+    {
+      "id": "kaplan-ai-math-263",
+      "sourceIndex": 262
+    },
+    {
+      "id": "kaplan-ai-math-264",
+      "sourceIndex": 263
+    },
+    {
+      "id": "kaplan-ai-math-265",
+      "sourceIndex": 264
+    },
+    {
+      "id": "kaplan-ai-math-266",
+      "sourceIndex": 265
+    },
+    {
+      "id": "kaplan-ai-math-267",
+      "sourceIndex": 266
+    },
+    {
+      "id": "kaplan-ai-math-268",
+      "sourceIndex": 267
+    },
+    {
+      "id": "kaplan-ai-math-269",
+      "sourceIndex": 268
+    },
+    {
+      "id": "kaplan-ai-math-270",
+      "sourceIndex": 269
+    },
+    {
+      "id": "kaplan-ai-math-271",
+      "sourceIndex": 270
+    },
+    {
+      "id": "kaplan-ai-math-272",
+      "sourceIndex": 271
+    },
+    {
+      "id": "kaplan-ai-math-273",
+      "sourceIndex": 272
+    },
+    {
+      "id": "kaplan-ai-math-274",
+      "sourceIndex": 273
+    },
+    {
+      "id": "kaplan-ai-math-275",
+      "sourceIndex": 274
+    },
+    {
+      "id": "kaplan-ai-math-276",
+      "sourceIndex": 275
+    },
+    {
+      "id": "kaplan-ai-math-277",
+      "sourceIndex": 276
+    },
+    {
+      "id": "kaplan-ai-math-278",
+      "sourceIndex": 277
+    },
+    {
+      "id": "kaplan-ai-math-279",
+      "sourceIndex": 278
+    },
+    {
+      "id": "kaplan-ai-math-280",
+      "sourceIndex": 279
+    },
+    {
+      "id": "kaplan-ai-math-281",
+      "sourceIndex": 280
+    },
+    {
+      "id": "kaplan-ai-math-282",
+      "sourceIndex": 281
+    },
+    {
+      "id": "kaplan-ai-math-283",
+      "sourceIndex": 282
+    },
+    {
+      "id": "kaplan-ai-math-284",
+      "sourceIndex": 283
+    },
+    {
+      "id": "kaplan-ai-math-285",
+      "sourceIndex": 284
+    },
+    {
+      "id": "kaplan-ai-math-286",
+      "sourceIndex": 285
+    },
+    {
+      "id": "kaplan-ai-math-287",
+      "sourceIndex": 286
+    },
+    {
+      "id": "kaplan-ai-math-288",
+      "sourceIndex": 287
+    },
+    {
+      "id": "kaplan-ai-math-289",
+      "sourceIndex": 288
+    },
+    {
+      "id": "kaplan-ai-math-290",
+      "sourceIndex": 289
+    },
+    {
+      "id": "kaplan-ai-math-291",
+      "sourceIndex": 290
+    },
+    {
+      "id": "kaplan-ai-math-292",
+      "sourceIndex": 291
+    },
+    {
+      "id": "kaplan-ai-math-293",
+      "sourceIndex": 292
+    },
+    {
+      "id": "kaplan-ai-math-294",
+      "sourceIndex": 293
+    },
+    {
+      "id": "kaplan-ai-math-295",
+      "sourceIndex": 294
+    },
+    {
+      "id": "kaplan-ai-math-296",
+      "sourceIndex": 295
+    },
+    {
+      "id": "kaplan-ai-math-297",
+      "sourceIndex": 296
+    },
+    {
+      "id": "kaplan-ai-math-298",
+      "sourceIndex": 297
+    },
+    {
+      "id": "kaplan-ai-math-299",
+      "sourceIndex": 298
+    },
+    {
+      "id": "kaplan-ai-math-300",
+      "sourceIndex": 299
+    }
+  ],
+  "upgraded": [
+    {
+      "id": "kaplan-ai-math-001",
+      "sourceIndex": 0
+    },
+    {
+      "id": "kaplan-ai-math-002",
+      "sourceIndex": 1
+    },
+    {
+      "id": "kaplan-ai-math-003",
+      "sourceIndex": 2
+    },
+    {
+      "id": "kaplan-ai-math-004",
+      "sourceIndex": 3
+    },
+    {
+      "id": "kaplan-ai-math-005",
+      "sourceIndex": 4
+    },
+    {
+      "id": "kaplan-ai-math-006",
+      "sourceIndex": 5
+    },
+    {
+      "id": "kaplan-ai-math-007",
+      "sourceIndex": 6
+    },
+    {
+      "id": "kaplan-ai-math-008",
+      "sourceIndex": 7
+    },
+    {
+      "id": "kaplan-ai-math-009",
+      "sourceIndex": 8
+    },
+    {
+      "id": "kaplan-ai-math-010",
+      "sourceIndex": 9
+    },
+    {
+      "id": "kaplan-ai-math-011",
+      "sourceIndex": 10
+    },
+    {
+      "id": "kaplan-ai-math-012",
+      "sourceIndex": 11
+    },
+    {
+      "id": "kaplan-ai-math-013",
+      "sourceIndex": 12
+    },
+    {
+      "id": "kaplan-ai-math-014",
+      "sourceIndex": 13
+    },
+    {
+      "id": "kaplan-ai-math-015",
+      "sourceIndex": 14
+    },
+    {
+      "id": "kaplan-ai-math-016",
+      "sourceIndex": 15
+    },
+    {
+      "id": "kaplan-ai-math-017",
+      "sourceIndex": 16
+    },
+    {
+      "id": "kaplan-ai-math-018",
+      "sourceIndex": 17
+    },
+    {
+      "id": "kaplan-ai-math-019",
+      "sourceIndex": 18
+    },
+    {
+      "id": "kaplan-ai-math-020",
+      "sourceIndex": 19
+    },
+    {
+      "id": "kaplan-ai-math-021",
+      "sourceIndex": 20
+    },
+    {
+      "id": "kaplan-ai-math-022",
+      "sourceIndex": 21
+    },
+    {
+      "id": "kaplan-ai-math-023",
+      "sourceIndex": 22
+    },
+    {
+      "id": "kaplan-ai-math-024",
+      "sourceIndex": 23
+    },
+    {
+      "id": "kaplan-ai-math-025",
+      "sourceIndex": 24
+    },
+    {
+      "id": "kaplan-ai-math-026",
+      "sourceIndex": 25
+    },
+    {
+      "id": "kaplan-ai-math-027",
+      "sourceIndex": 26
+    },
+    {
+      "id": "kaplan-ai-math-028",
+      "sourceIndex": 27
+    },
+    {
+      "id": "kaplan-ai-math-029",
+      "sourceIndex": 28
+    },
+    {
+      "id": "kaplan-ai-math-030",
+      "sourceIndex": 29
+    },
+    {
+      "id": "kaplan-ai-math-031",
+      "sourceIndex": 30
+    },
+    {
+      "id": "kaplan-ai-math-032",
+      "sourceIndex": 31
+    },
+    {
+      "id": "kaplan-ai-math-033",
+      "sourceIndex": 32
+    },
+    {
+      "id": "kaplan-ai-math-034",
+      "sourceIndex": 33
+    },
+    {
+      "id": "kaplan-ai-math-035",
+      "sourceIndex": 34
+    },
+    {
+      "id": "kaplan-ai-math-036",
+      "sourceIndex": 35
+    },
+    {
+      "id": "kaplan-ai-math-037",
+      "sourceIndex": 36
+    },
+    {
+      "id": "kaplan-ai-math-038",
+      "sourceIndex": 37
+    },
+    {
+      "id": "kaplan-ai-math-039",
+      "sourceIndex": 38
+    },
+    {
+      "id": "kaplan-ai-math-040",
+      "sourceIndex": 39
+    },
+    {
+      "id": "kaplan-ai-math-041",
+      "sourceIndex": 40
+    },
+    {
+      "id": "kaplan-ai-math-042",
+      "sourceIndex": 41
+    },
+    {
+      "id": "kaplan-ai-math-043",
+      "sourceIndex": 42
+    },
+    {
+      "id": "kaplan-ai-math-044",
+      "sourceIndex": 43
+    },
+    {
+      "id": "kaplan-ai-math-045",
+      "sourceIndex": 44
+    },
+    {
+      "id": "kaplan-ai-math-046",
+      "sourceIndex": 45
+    },
+    {
+      "id": "kaplan-ai-math-047",
+      "sourceIndex": 46
+    },
+    {
+      "id": "kaplan-ai-math-048",
+      "sourceIndex": 47
+    },
+    {
+      "id": "kaplan-ai-math-049",
+      "sourceIndex": 48
+    },
+    {
+      "id": "kaplan-ai-math-050",
+      "sourceIndex": 49
+    },
+    {
+      "id": "kaplan-ai-math-051",
+      "sourceIndex": 50
+    },
+    {
+      "id": "kaplan-ai-math-052",
+      "sourceIndex": 51
+    },
+    {
+      "id": "kaplan-ai-math-053",
+      "sourceIndex": 52
+    },
+    {
+      "id": "kaplan-ai-math-054",
+      "sourceIndex": 53
+    },
+    {
+      "id": "kaplan-ai-math-055",
+      "sourceIndex": 54
+    },
+    {
+      "id": "kaplan-ai-math-056",
+      "sourceIndex": 55
+    },
+    {
+      "id": "kaplan-ai-math-057",
+      "sourceIndex": 56
+    },
+    {
+      "id": "kaplan-ai-math-058",
+      "sourceIndex": 57
+    },
+    {
+      "id": "kaplan-ai-math-059",
+      "sourceIndex": 58
+    },
+    {
+      "id": "kaplan-ai-math-060",
+      "sourceIndex": 59
+    },
+    {
+      "id": "kaplan-ai-math-061",
+      "sourceIndex": 60
+    },
+    {
+      "id": "kaplan-ai-math-062",
+      "sourceIndex": 61
+    },
+    {
+      "id": "kaplan-ai-math-063",
+      "sourceIndex": 62
+    },
+    {
+      "id": "kaplan-ai-math-064",
+      "sourceIndex": 63
+    },
+    {
+      "id": "kaplan-ai-math-065",
+      "sourceIndex": 64
+    },
+    {
+      "id": "kaplan-ai-math-066",
+      "sourceIndex": 65
+    },
+    {
+      "id": "kaplan-ai-math-067",
+      "sourceIndex": 66
+    },
+    {
+      "id": "kaplan-ai-math-068",
+      "sourceIndex": 67
+    },
+    {
+      "id": "kaplan-ai-math-069",
+      "sourceIndex": 68
+    },
+    {
+      "id": "kaplan-ai-math-070",
+      "sourceIndex": 69
+    },
+    {
+      "id": "kaplan-ai-math-071",
+      "sourceIndex": 70
+    },
+    {
+      "id": "kaplan-ai-math-072",
+      "sourceIndex": 71
+    },
+    {
+      "id": "kaplan-ai-math-073",
+      "sourceIndex": 72
+    },
+    {
+      "id": "kaplan-ai-math-074",
+      "sourceIndex": 73
+    },
+    {
+      "id": "kaplan-ai-math-075",
+      "sourceIndex": 74
+    },
+    {
+      "id": "kaplan-ai-math-076",
+      "sourceIndex": 75
+    },
+    {
+      "id": "kaplan-ai-math-077",
+      "sourceIndex": 76
+    },
+    {
+      "id": "kaplan-ai-math-078",
+      "sourceIndex": 77
+    },
+    {
+      "id": "kaplan-ai-math-079",
+      "sourceIndex": 78
+    },
+    {
+      "id": "kaplan-ai-math-080",
+      "sourceIndex": 79
+    },
+    {
+      "id": "kaplan-ai-math-081",
+      "sourceIndex": 80
+    },
+    {
+      "id": "kaplan-ai-math-082",
+      "sourceIndex": 81
+    },
+    {
+      "id": "kaplan-ai-math-083",
+      "sourceIndex": 82
+    },
+    {
+      "id": "kaplan-ai-math-084",
+      "sourceIndex": 83
+    },
+    {
+      "id": "kaplan-ai-math-085",
+      "sourceIndex": 84
+    },
+    {
+      "id": "kaplan-ai-math-086",
+      "sourceIndex": 85
+    },
+    {
+      "id": "kaplan-ai-math-087",
+      "sourceIndex": 86
+    },
+    {
+      "id": "kaplan-ai-math-088",
+      "sourceIndex": 87
+    },
+    {
+      "id": "kaplan-ai-math-089",
+      "sourceIndex": 88
+    },
+    {
+      "id": "kaplan-ai-math-090",
+      "sourceIndex": 89
+    },
+    {
+      "id": "kaplan-ai-math-091",
+      "sourceIndex": 90
+    },
+    {
+      "id": "kaplan-ai-math-092",
+      "sourceIndex": 91
+    },
+    {
+      "id": "kaplan-ai-math-093",
+      "sourceIndex": 92
+    },
+    {
+      "id": "kaplan-ai-math-094",
+      "sourceIndex": 93
+    },
+    {
+      "id": "kaplan-ai-math-095",
+      "sourceIndex": 94
+    },
+    {
+      "id": "kaplan-ai-math-096",
+      "sourceIndex": 95
+    },
+    {
+      "id": "kaplan-ai-math-097",
+      "sourceIndex": 96
+    },
+    {
+      "id": "kaplan-ai-math-098",
+      "sourceIndex": 97
+    },
+    {
+      "id": "kaplan-ai-math-099",
+      "sourceIndex": 98
+    },
+    {
+      "id": "kaplan-ai-math-100",
+      "sourceIndex": 99
+    },
+    {
+      "id": "kaplan-ai-math-101",
+      "sourceIndex": 100
+    },
+    {
+      "id": "kaplan-ai-math-102",
+      "sourceIndex": 101
+    },
+    {
+      "id": "kaplan-ai-math-103",
+      "sourceIndex": 102
+    },
+    {
+      "id": "kaplan-ai-math-104",
+      "sourceIndex": 103
+    },
+    {
+      "id": "kaplan-ai-math-105",
+      "sourceIndex": 104
+    },
+    {
+      "id": "kaplan-ai-math-106",
+      "sourceIndex": 105
+    },
+    {
+      "id": "kaplan-ai-math-107",
+      "sourceIndex": 106
+    },
+    {
+      "id": "kaplan-ai-math-108",
+      "sourceIndex": 107
+    },
+    {
+      "id": "kaplan-ai-math-109",
+      "sourceIndex": 108
+    },
+    {
+      "id": "kaplan-ai-math-110",
+      "sourceIndex": 109
+    },
+    {
+      "id": "kaplan-ai-math-111",
+      "sourceIndex": 110
+    },
+    {
+      "id": "kaplan-ai-math-112",
+      "sourceIndex": 111
+    },
+    {
+      "id": "kaplan-ai-math-113",
+      "sourceIndex": 112
+    },
+    {
+      "id": "kaplan-ai-math-114",
+      "sourceIndex": 113
+    },
+    {
+      "id": "kaplan-ai-math-115",
+      "sourceIndex": 114
+    },
+    {
+      "id": "kaplan-ai-math-116",
+      "sourceIndex": 115
+    },
+    {
+      "id": "kaplan-ai-math-117",
+      "sourceIndex": 116
+    },
+    {
+      "id": "kaplan-ai-math-118",
+      "sourceIndex": 117
+    },
+    {
+      "id": "kaplan-ai-math-119",
+      "sourceIndex": 118
+    },
+    {
+      "id": "kaplan-ai-math-120",
+      "sourceIndex": 119
+    },
+    {
+      "id": "kaplan-ai-math-121",
+      "sourceIndex": 120
+    },
+    {
+      "id": "kaplan-ai-math-122",
+      "sourceIndex": 121
+    },
+    {
+      "id": "kaplan-ai-math-123",
+      "sourceIndex": 122
+    },
+    {
+      "id": "kaplan-ai-math-124",
+      "sourceIndex": 123
+    },
+    {
+      "id": "kaplan-ai-math-125",
+      "sourceIndex": 124
+    },
+    {
+      "id": "kaplan-ai-math-126",
+      "sourceIndex": 125
+    },
+    {
+      "id": "kaplan-ai-math-127",
+      "sourceIndex": 126
+    },
+    {
+      "id": "kaplan-ai-math-128",
+      "sourceIndex": 127
+    },
+    {
+      "id": "kaplan-ai-math-129",
+      "sourceIndex": 128
+    },
+    {
+      "id": "kaplan-ai-math-130",
+      "sourceIndex": 129
+    },
+    {
+      "id": "kaplan-ai-math-131",
+      "sourceIndex": 130
+    },
+    {
+      "id": "kaplan-ai-math-132",
+      "sourceIndex": 131
+    },
+    {
+      "id": "kaplan-ai-math-133",
+      "sourceIndex": 132
+    },
+    {
+      "id": "kaplan-ai-math-134",
+      "sourceIndex": 133
+    },
+    {
+      "id": "kaplan-ai-math-135",
+      "sourceIndex": 134
+    },
+    {
+      "id": "kaplan-ai-math-136",
+      "sourceIndex": 135
+    },
+    {
+      "id": "kaplan-ai-math-137",
+      "sourceIndex": 136
+    },
+    {
+      "id": "kaplan-ai-math-138",
+      "sourceIndex": 137
+    },
+    {
+      "id": "kaplan-ai-math-139",
+      "sourceIndex": 138
+    },
+    {
+      "id": "kaplan-ai-math-140",
+      "sourceIndex": 139
+    },
+    {
+      "id": "kaplan-ai-math-141",
+      "sourceIndex": 140
+    },
+    {
+      "id": "kaplan-ai-math-142",
+      "sourceIndex": 141
+    },
+    {
+      "id": "kaplan-ai-math-143",
+      "sourceIndex": 142
+    },
+    {
+      "id": "kaplan-ai-math-144",
+      "sourceIndex": 143
+    },
+    {
+      "id": "kaplan-ai-math-145",
+      "sourceIndex": 144
+    },
+    {
+      "id": "kaplan-ai-math-146",
+      "sourceIndex": 145
+    },
+    {
+      "id": "kaplan-ai-math-147",
+      "sourceIndex": 146
+    },
+    {
+      "id": "kaplan-ai-math-148",
+      "sourceIndex": 147
+    },
+    {
+      "id": "kaplan-ai-math-149",
+      "sourceIndex": 148
+    },
+    {
+      "id": "kaplan-ai-math-150",
+      "sourceIndex": 149
+    },
+    {
+      "id": "kaplan-ai-math-151",
+      "sourceIndex": 150
+    },
+    {
+      "id": "kaplan-ai-math-152",
+      "sourceIndex": 151
+    },
+    {
+      "id": "kaplan-ai-math-153",
+      "sourceIndex": 152
+    },
+    {
+      "id": "kaplan-ai-math-154",
+      "sourceIndex": 153
+    },
+    {
+      "id": "kaplan-ai-math-155",
+      "sourceIndex": 154
+    },
+    {
+      "id": "kaplan-ai-math-156",
+      "sourceIndex": 155
+    },
+    {
+      "id": "kaplan-ai-math-157",
+      "sourceIndex": 156
+    },
+    {
+      "id": "kaplan-ai-math-158",
+      "sourceIndex": 157
+    },
+    {
+      "id": "kaplan-ai-math-159",
+      "sourceIndex": 158
+    },
+    {
+      "id": "kaplan-ai-math-160",
+      "sourceIndex": 159
+    },
+    {
+      "id": "kaplan-ai-math-161",
+      "sourceIndex": 160
+    },
+    {
+      "id": "kaplan-ai-math-162",
+      "sourceIndex": 161
+    },
+    {
+      "id": "kaplan-ai-math-163",
+      "sourceIndex": 162
+    },
+    {
+      "id": "kaplan-ai-math-164",
+      "sourceIndex": 163
+    },
+    {
+      "id": "kaplan-ai-math-165",
+      "sourceIndex": 164
+    },
+    {
+      "id": "kaplan-ai-math-166",
+      "sourceIndex": 165
+    },
+    {
+      "id": "kaplan-ai-math-167",
+      "sourceIndex": 166
+    },
+    {
+      "id": "kaplan-ai-math-168",
+      "sourceIndex": 167
+    },
+    {
+      "id": "kaplan-ai-math-169",
+      "sourceIndex": 168
+    },
+    {
+      "id": "kaplan-ai-math-170",
+      "sourceIndex": 169
+    },
+    {
+      "id": "kaplan-ai-math-171",
+      "sourceIndex": 170
+    },
+    {
+      "id": "kaplan-ai-math-172",
+      "sourceIndex": 171
+    },
+    {
+      "id": "kaplan-ai-math-173",
+      "sourceIndex": 172
+    },
+    {
+      "id": "kaplan-ai-math-174",
+      "sourceIndex": 173
+    },
+    {
+      "id": "kaplan-ai-math-175",
+      "sourceIndex": 174
+    },
+    {
+      "id": "kaplan-ai-math-176",
+      "sourceIndex": 175
+    },
+    {
+      "id": "kaplan-ai-math-177",
+      "sourceIndex": 176
+    },
+    {
+      "id": "kaplan-ai-math-178",
+      "sourceIndex": 177
+    },
+    {
+      "id": "kaplan-ai-math-179",
+      "sourceIndex": 178
+    },
+    {
+      "id": "kaplan-ai-math-180",
+      "sourceIndex": 179
+    },
+    {
+      "id": "kaplan-ai-math-181",
+      "sourceIndex": 180
+    },
+    {
+      "id": "kaplan-ai-math-182",
+      "sourceIndex": 181
+    },
+    {
+      "id": "kaplan-ai-math-183",
+      "sourceIndex": 182
+    },
+    {
+      "id": "kaplan-ai-math-184",
+      "sourceIndex": 183
+    },
+    {
+      "id": "kaplan-ai-math-185",
+      "sourceIndex": 184
+    },
+    {
+      "id": "kaplan-ai-math-186",
+      "sourceIndex": 185
+    },
+    {
+      "id": "kaplan-ai-math-187",
+      "sourceIndex": 186
+    },
+    {
+      "id": "kaplan-ai-math-188",
+      "sourceIndex": 187
+    },
+    {
+      "id": "kaplan-ai-math-189",
+      "sourceIndex": 188
+    },
+    {
+      "id": "kaplan-ai-math-190",
+      "sourceIndex": 189
+    },
+    {
+      "id": "kaplan-ai-math-191",
+      "sourceIndex": 190
+    },
+    {
+      "id": "kaplan-ai-math-192",
+      "sourceIndex": 191
+    },
+    {
+      "id": "kaplan-ai-math-193",
+      "sourceIndex": 192
+    },
+    {
+      "id": "kaplan-ai-math-194",
+      "sourceIndex": 193
+    },
+    {
+      "id": "kaplan-ai-math-195",
+      "sourceIndex": 194
+    },
+    {
+      "id": "kaplan-ai-math-196",
+      "sourceIndex": 195
+    },
+    {
+      "id": "kaplan-ai-math-197",
+      "sourceIndex": 196
+    },
+    {
+      "id": "kaplan-ai-math-198",
+      "sourceIndex": 197
+    },
+    {
+      "id": "kaplan-ai-math-199",
+      "sourceIndex": 198
+    },
+    {
+      "id": "kaplan-ai-math-200",
+      "sourceIndex": 199
+    },
+    {
+      "id": "kaplan-ai-math-201",
+      "sourceIndex": 200
+    },
+    {
+      "id": "kaplan-ai-math-202",
+      "sourceIndex": 201
+    },
+    {
+      "id": "kaplan-ai-math-203",
+      "sourceIndex": 202
+    },
+    {
+      "id": "kaplan-ai-math-204",
+      "sourceIndex": 203
+    },
+    {
+      "id": "kaplan-ai-math-205",
+      "sourceIndex": 204
+    },
+    {
+      "id": "kaplan-ai-math-206",
+      "sourceIndex": 205
+    },
+    {
+      "id": "kaplan-ai-math-207",
+      "sourceIndex": 206
+    },
+    {
+      "id": "kaplan-ai-math-208",
+      "sourceIndex": 207
+    },
+    {
+      "id": "kaplan-ai-math-209",
+      "sourceIndex": 208
+    },
+    {
+      "id": "kaplan-ai-math-210",
+      "sourceIndex": 209
+    },
+    {
+      "id": "kaplan-ai-math-211",
+      "sourceIndex": 210
+    },
+    {
+      "id": "kaplan-ai-math-212",
+      "sourceIndex": 211
+    },
+    {
+      "id": "kaplan-ai-math-213",
+      "sourceIndex": 212
+    },
+    {
+      "id": "kaplan-ai-math-214",
+      "sourceIndex": 213
+    },
+    {
+      "id": "kaplan-ai-math-215",
+      "sourceIndex": 214
+    },
+    {
+      "id": "kaplan-ai-math-216",
+      "sourceIndex": 215
+    },
+    {
+      "id": "kaplan-ai-math-217",
+      "sourceIndex": 216
+    },
+    {
+      "id": "kaplan-ai-math-218",
+      "sourceIndex": 217
+    },
+    {
+      "id": "kaplan-ai-math-219",
+      "sourceIndex": 218
+    },
+    {
+      "id": "kaplan-ai-math-220",
+      "sourceIndex": 219
+    },
+    {
+      "id": "kaplan-ai-math-221",
+      "sourceIndex": 220
+    },
+    {
+      "id": "kaplan-ai-math-222",
+      "sourceIndex": 221
+    },
+    {
+      "id": "kaplan-ai-math-223",
+      "sourceIndex": 222
+    },
+    {
+      "id": "kaplan-ai-math-224",
+      "sourceIndex": 223
+    },
+    {
+      "id": "kaplan-ai-math-225",
+      "sourceIndex": 224
+    },
+    {
+      "id": "kaplan-ai-math-226",
+      "sourceIndex": 225
+    },
+    {
+      "id": "kaplan-ai-math-227",
+      "sourceIndex": 226
+    },
+    {
+      "id": "kaplan-ai-math-228",
+      "sourceIndex": 227
+    },
+    {
+      "id": "kaplan-ai-math-229",
+      "sourceIndex": 228
+    },
+    {
+      "id": "kaplan-ai-math-230",
+      "sourceIndex": 229
+    },
+    {
+      "id": "kaplan-ai-math-247",
+      "sourceIndex": 246
+    },
+    {
+      "id": "kaplan-ai-math-248",
+      "sourceIndex": 247
+    },
+    {
+      "id": "kaplan-ai-math-249",
+      "sourceIndex": 248
+    },
+    {
+      "id": "kaplan-ai-math-250",
+      "sourceIndex": 249
+    },
+    {
+      "id": "kaplan-ai-math-251",
+      "sourceIndex": 250
+    },
+    {
+      "id": "kaplan-ai-math-252",
+      "sourceIndex": 251
+    },
+    {
+      "id": "kaplan-ai-math-253",
+      "sourceIndex": 252
+    },
+    {
+      "id": "kaplan-ai-math-254",
+      "sourceIndex": 253
+    },
+    {
+      "id": "kaplan-ai-math-255",
+      "sourceIndex": 254
+    },
+    {
+      "id": "kaplan-ai-math-256",
+      "sourceIndex": 255
+    },
+    {
+      "id": "kaplan-ai-math-257",
+      "sourceIndex": 256
+    },
+    {
+      "id": "kaplan-ai-math-258",
+      "sourceIndex": 257
+    },
+    {
+      "id": "kaplan-ai-math-259",
+      "sourceIndex": 258
+    },
+    {
+      "id": "kaplan-ai-math-260",
+      "sourceIndex": 259
+    },
+    {
+      "id": "kaplan-ai-math-261",
+      "sourceIndex": 260
+    },
+    {
+      "id": "kaplan-ai-math-262",
+      "sourceIndex": 261
+    },
+    {
+      "id": "kaplan-ai-math-263",
+      "sourceIndex": 262
+    },
+    {
+      "id": "kaplan-ai-math-264",
+      "sourceIndex": 263
+    },
+    {
+      "id": "kaplan-ai-math-265",
+      "sourceIndex": 264
+    },
+    {
+      "id": "kaplan-ai-math-266",
+      "sourceIndex": 265
+    },
+    {
+      "id": "kaplan-ai-math-267",
+      "sourceIndex": 266
+    },
+    {
+      "id": "kaplan-ai-math-268",
+      "sourceIndex": 267
+    },
+    {
+      "id": "kaplan-ai-math-269",
+      "sourceIndex": 268
+    },
+    {
+      "id": "kaplan-ai-math-270",
+      "sourceIndex": 269
+    },
+    {
+      "id": "kaplan-ai-math-271",
+      "sourceIndex": 270
+    },
+    {
+      "id": "kaplan-ai-math-272",
+      "sourceIndex": 271
+    },
+    {
+      "id": "kaplan-ai-math-273",
+      "sourceIndex": 272
+    },
+    {
+      "id": "kaplan-ai-math-274",
+      "sourceIndex": 273
+    },
+    {
+      "id": "kaplan-ai-math-275",
+      "sourceIndex": 274
+    },
+    {
+      "id": "kaplan-ai-math-276",
+      "sourceIndex": 275
+    },
+    {
+      "id": "kaplan-ai-math-277",
+      "sourceIndex": 276
+    },
+    {
+      "id": "kaplan-ai-math-278",
+      "sourceIndex": 277
+    },
+    {
+      "id": "kaplan-ai-math-279",
+      "sourceIndex": 278
+    },
+    {
+      "id": "kaplan-ai-math-280",
+      "sourceIndex": 279
+    },
+    {
+      "id": "kaplan-ai-math-281",
+      "sourceIndex": 280
+    },
+    {
+      "id": "kaplan-ai-math-282",
+      "sourceIndex": 281
+    },
+    {
+      "id": "kaplan-ai-math-283",
+      "sourceIndex": 282
+    },
+    {
+      "id": "kaplan-ai-math-284",
+      "sourceIndex": 283
+    },
+    {
+      "id": "kaplan-ai-math-285",
+      "sourceIndex": 284
+    },
+    {
+      "id": "kaplan-ai-math-286",
+      "sourceIndex": 285
+    },
+    {
+      "id": "kaplan-ai-math-287",
+      "sourceIndex": 286
+    },
+    {
+      "id": "kaplan-ai-math-288",
+      "sourceIndex": 287
+    },
+    {
+      "id": "kaplan-ai-math-289",
+      "sourceIndex": 288
+    },
+    {
+      "id": "kaplan-ai-math-290",
+      "sourceIndex": 289
+    },
+    {
+      "id": "kaplan-ai-math-291",
+      "sourceIndex": 290
+    },
+    {
+      "id": "kaplan-ai-math-292",
+      "sourceIndex": 291
+    },
+    {
+      "id": "kaplan-ai-math-293",
+      "sourceIndex": 292
+    },
+    {
+      "id": "kaplan-ai-math-294",
+      "sourceIndex": 293
+    },
+    {
+      "id": "kaplan-ai-math-295",
+      "sourceIndex": 294
+    },
+    {
+      "id": "kaplan-ai-math-296",
+      "sourceIndex": 295
+    },
+    {
+      "id": "kaplan-ai-math-297",
+      "sourceIndex": 296
+    },
+    {
+      "id": "kaplan-ai-math-298",
+      "sourceIndex": 297
+    },
+    {
+      "id": "kaplan-ai-math-299",
+      "sourceIndex": 298
+    },
+    {
+      "id": "kaplan-ai-math-300",
+      "sourceIndex": 299
+    }
+  ],
+  "skipped": [],
+  "blocked": [],
+  "remainingDepthFlags": [],
+  "attemptedCount": 284,
+  "upgradedCount": 284,
+  "skippedCount": 0,
+  "blockedCount": 0,
+  "remainingDepthFlagCount": 0
+}

@@ -1,0 +1,112 @@
+{
+  "version": "unified-source-policy-2026-05-18",
+  "policy": "Source labels are retained only for provenance, audit, licensing, and review traceability. They must not create independent student practice tracks. Reviewed non-rejected items are eligible for one unified mixed SAT pool.",
+  "files": {
+    "antigravity-bank.json": {
+      "questions": 644,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 589,
+        "needs_review": 55
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 589,
+        "pending_strict_review_for_unified_mixed_sat_pool": 55
+      },
+      "rootSummaryStamped": false
+    },
+    "archive-source-ai-bank.json": {
+      "questions": 1180,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 1179,
+        "rejected": 1
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 1179,
+        "excluded_from_unified_mixed_sat_pool": 1
+      },
+      "rootSummaryStamped": true
+    },
+    "kaplan-sat-math-ai-bank.json": {
+      "questions": 300,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 284,
+        "rejected": 16
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 284,
+        "excluded_from_unified_mixed_sat_pool": 16
+      },
+      "rootSummaryStamped": true
+    },
+    "opensat-pinesat.json": {
+      "questions": 2474,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 1986,
+        "needs_review": 241,
+        "rejected": 247
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 1986,
+        "pending_strict_review_for_unified_mixed_sat_pool": 241,
+        "excluded_from_unified_mixed_sat_pool": 247
+      },
+      "rootSummaryStamped": false
+    },
+    "private-vault-archive-bank.json": {
+      "questions": 230,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 208,
+        "needs_review": 22
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 208,
+        "pending_strict_review_for_unified_mixed_sat_pool": 22
+      },
+      "rootSummaryStamped": true
+    },
+    "sat-1590-elite-ai-bank.json": {
+      "questions": 700,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 700
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 700
+      },
+      "rootSummaryStamped": true
+    },
+    "sat-king-supplemental-ai-bank.json": {
+      "questions": 360,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 354,
+        "rejected": 6
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 354,
+        "excluded_from_unified_mixed_sat_pool": 6
+      },
+      "rootSummaryStamped": true
+    },
+    "sat-studio-foundation-bank.json": {
+      "questions": 76,
+      "changedRows": 0,
+      "byReviewStatus": {
+        "reviewed": 76
+      },
+      "byPostReviewUse": {
+        "unified_mixed_sat_pool": 76
+      },
+      "rootSummaryStamped": false
+    }
+  },
+  "totals": {
+    "questions": 5964,
+    "changed": 0
+  }
+}

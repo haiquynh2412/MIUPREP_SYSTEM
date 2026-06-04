@@ -1,0 +1,94 @@
+{
+  "version": "unified-strict-1600-review-2026-05-18",
+  "target": "SAT 1000-1600 roadmap, target 1600",
+  "updatedByFile": {
+    "antigravity-bank.json": {
+      "reviewed": 2147,
+      "kept_needs_review_issue": 15,
+      "rejected_duplicate": 2
+    },
+    "archive-source-ai-bank.json": {},
+    "kaplan-sat-math-ai-bank.json": {},
+    "opensat-pinesat.json": {
+      "kept_needs_review_issue": 88,
+      "kept_needs_review_warning": 2,
+      "reviewed": 29
+    },
+    "private-vault-archive-bank.json": {
+      "reviewed": 143,
+      "kept_needs_review_issue": 11
+    },
+    "sat-1590-elite-ai-bank.json": {},
+    "sat-king-supplemental-ai-bank.json": {},
+    "sat-studio-foundation-bank.json": {}
+  },
+  "reviewedByFile": {
+    "antigravity-bank.json": 2147,
+    "archive-source-ai-bank.json": 0,
+    "kaplan-sat-math-ai-bank.json": 0,
+    "opensat-pinesat.json": 29,
+    "private-vault-archive-bank.json": 143,
+    "sat-1590-elite-ai-bank.json": 0,
+    "sat-king-supplemental-ai-bank.json": 0,
+    "sat-studio-foundation-bank.json": 0
+  },
+  "rejectedDuplicatesByFile": {
+    "antigravity-bank.json": 2,
+    "archive-source-ai-bank.json": 0,
+    "kaplan-sat-math-ai-bank.json": 0,
+    "opensat-pinesat.json": 0,
+    "private-vault-archive-bank.json": 0,
+    "sat-1590-elite-ai-bank.json": 0,
+    "sat-king-supplemental-ai-bank.json": 0,
+    "sat-studio-foundation-bank.json": 0
+  },
+  "remainingNeedsReviewByFile": {
+    "antigravity-bank.json": 15,
+    "archive-source-ai-bank.json": 0,
+    "kaplan-sat-math-ai-bank.json": 0,
+    "opensat-pinesat.json": 90,
+    "private-vault-archive-bank.json": 11,
+    "sat-1590-elite-ai-bank.json": 0,
+    "sat-king-supplemental-ai-bank.json": 0,
+    "sat-studio-foundation-bank.json": 0
+  },
+  "remainingIssueCounts": {
+    "antigravity-bank.json": {
+      "rw_must_be_multiple_choice": 7,
+      "mc_duplicate_choice_text": 8
+    },
+    "archive-source-ai-bank.json": {},
+    "kaplan-sat-math-ai-bank.json": {},
+    "opensat-pinesat.json": {
+      "mc_duplicate_choice_text": 72,
+      "math:explanation_equation_mismatch": 15,
+      "mc_missing_exact_A_to_D_choices": 1
+    },
+    "private-vault-archive-bank.json": {
+      "mc_duplicate_choice_text": 11
+    },
+    "sat-1590-elite-ai-bank.json": {},
+    "sat-king-supplemental-ai-bank.json": {},
+    "sat-studio-foundation-bank.json": {}
+  },
+  "remainingWarningCounts": {
+    "antigravity-bank.json": {},
+    "archive-source-ai-bank.json": {},
+    "kaplan-sat-math-ai-bank.json": {},
+    "opensat-pinesat.json": {
+      "rw_prompt_possible_length_issue:306_words": 1,
+      "rw_prompt_possible_length_issue:410_words": 1,
+      "rw_prompt_possible_length_issue:375_words": 1,
+      "rw_prompt_possible_length_issue:285_words": 1
+    },
+    "private-vault-archive-bank.json": {},
+    "sat-1590-elite-ai-bank.json": {},
+    "sat-king-supplemental-ai-bank.json": {},
+    "sat-studio-foundation-bank.json": {}
+  },
+  "notes": [
+    "Source fields are treated as provenance only; reviewed items join the unified mixed SAT pool.",
+    "Exact duplicate prompts are excluded except for the selected keeper item.",
+    "Rows with structural, answer-key, math-solution, or unresolved Digital SAT taxonomy issues remain needs_review."
+  ]
+}

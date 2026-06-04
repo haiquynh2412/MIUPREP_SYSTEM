@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.system-surface {
+  --surface-bg: #0f172a;
+  --surface-panel: rgba(15, 23, 42, 0.82);
+  --surface-panel-strong: rgba(2, 6, 23, 0.86);
+  --surface-border: rgba(148, 163, 184, 0.18);
+  --surface-text: #f8fafc;
+  --surface-muted: #94a3b8;
+  --surface-soft: rgba(148, 163, 184, 0.1);
+  --surface-accent: #f97316;
+  --surface-accent-shadow: rgba(249, 115, 22, 0.26);
+  --surface-blue: #38bdf8;
+  --surface-green: #34d399;
+  --surface-shadow: 0 28px 80px rgba(2, 6, 23, 0.36);
+  max-width: 72rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.25rem;
+  color: var(--surface-text);
+  background:
+    linear-gradient(135deg, rgba(249, 115, 22, 0.14), transparent 34%),
+    linear-gradient(145deg, var(--surface-bg), #111827);
+  border: 1px solid var(--surface-border);
+  border-radius: 1.25rem;
+  box-shadow: var(--surface-shadow);
+}
+
+.system-surface--light {
+  --surface-bg: #f0faf5;
+  --surface-panel: rgba(255, 255, 255, 0.88);
+  --surface-panel-strong: rgba(255, 255, 255, 0.96);
+  --surface-border: rgba(16, 185, 129, 0.15);
+  --surface-text: #064e3b;
+  --surface-muted: #15803d;
+  --surface-soft: #e6f7f0;
+  --surface-accent: #10b981;
+  --surface-accent-shadow: rgba(16, 185, 129, 0.32);
+  --surface-blue: #0f766e;
+  --surface-green: #34d399;
+  --surface-shadow: 0 22px 60px rgba(6, 78, 59, 0.14);
+  background:
+    linear-gradient(135deg, rgba(16, 185, 129, 0.16), transparent 34%),
+    linear-gradient(145deg, #ffffff, var(--surface-bg));
+}
+
+.system-surface__toolbar,
+.system-surface__hero,
+.system-surface__panel-head,
+.system-surface__step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.system-surface__toolbar {
+  margin-bottom: 1.25rem;
+}
+
+.system-surface__eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--surface-muted);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.system-surface h2,
+.system-surface h3,
+.system-surface p {
+  margin: 0;
+}
+
+.system-surface h2 {
+  color: var(--surface-text);
+  font-size: clamp(1.15rem, 2.4vw, 1.8rem);
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.system-surface h3 {
+  max-width: 38rem;
+  color: var(--surface-text);
+  font-size: clamp(1.55rem, 3.4vw, 3rem);
+  line-height: 1.02;
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.system-surface__hero p {
+  max-width: 38rem;
+  margin-top: 0.8rem;
+  color: var(--surface-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.system-surface__toggle {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: min(100%, 18rem);
+  padding: 0.25rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.75rem;
+}
+
+.system-surface__toggle button {
+  min-height: 2.35rem;
+  padding: 0 0.85rem;
+  color: var(--surface-muted);
+  background: transparent;
+  border: 0;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.system-surface__toggle button.is-active {
+  color: #ffffff;
+  background: var(--surface-accent);
+  box-shadow: 0 10px 30px var(--surface-accent-shadow);
+}
+
+.system-surface--light .system-surface__toggle button.is-active {
+  color: #ffffff;
+}
+
+.system-surface__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.75fr) minmax(18rem, 0.8fr);
+  gap: 1rem;
+}
+
+.system-surface__main,
+.system-surface__side {
+  min-width: 0;
+}
+
+.system-surface__hero,
+.system-surface__panel,
+.system-surface__metric {
+  background: var(--surface-panel);
+  border: 1px solid var(--surface-border);
+  border-radius: 1rem;
+}
+
+.system-surface__hero {
+  min-height: 15rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.system-surface__score {
+  display: grid;
+  place-items: center;
+  width: clamp(6.5rem, 14vw, 9rem);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  background: var(--surface-panel-strong);
+  border: 1px solid var(--surface-border);
+  border-radius: 999px;
+}
+
+.system-surface__score span {
+  color: var(--surface-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.system-surface__score small,
+.system-surface__metric small,
+.system-surface__step small {
+  color: var(--surface-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.system-surface__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.system-surface__metric {
+  min-height: 7.25rem;
+  padding: 1rem;
+}
+
+.system-surface__metric span,
+.system-surface__panel-head span {
+  color: var(--surface-muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.system-surface__metric strong {
+  display: block;
+  margin: 0.35rem 0;
+  color: var(--surface-text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1;
+}
+
+.system-surface__metric--accent strong {
+  color: var(--surface-accent);
+}
+
+.system-surface__metric--blue strong {
+  color: var(--surface-blue);
+}
+
+.system-surface__metric--green strong {
+  color: var(--surface-green);
+}
+
+.system-surface__panel {
+  padding: 1rem;
+}
+
+.system-surface__panel + .system-surface__panel {
+  margin-top: 1rem;
+}
+
+.system-surface__panel-head {
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.system-surface__panel-head strong {
+  color: var(--surface-accent);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.system-surface__pipeline {
+  display: grid;
+  gap: 0.65rem;
+  padding-top: 0.85rem;
+}
+
+.system-surface__step {
+  min-height: 3.8rem;
+  padding: 0.75rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.75rem;
+}
+
+.system-surface__step > span {
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  color: var(--surface-accent);
+  background: var(--surface-panel-strong);
+  border-radius: 0.65rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 950;
+}
+
+.system-surface__step div {
+  min-width: 0;
+  flex: 1;
+}
+
+.system-surface__step strong {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--surface-text);
+  font-size: 0.86rem;
+}
+
+.system-surface__step em {
+  color: var(--surface-green);
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.system-surface__task-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.95rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.system-surface__task-list li {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  color: var(--surface-text);
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.system-surface__task-list li span {
+  width: 0.62rem;
+  height: 0.62rem;
+  margin-top: 0.3rem;
+  flex: 0 0 auto;
+  background: var(--surface-accent);
+  border-radius: 999px;
+}
+
+.system-surface__panel--compact p {
+  color: var(--surface-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .system-surface__toolbar,
+  .system-surface__hero {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .system-surface__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .system-surface__score {
+    width: 100%;
+    max-width: none;
+    min-height: 5.5rem;
+    aspect-ratio: auto;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .system-surface {
+    padding: 0.85rem;
+    border-radius: 1rem;
+  }
+
+  .system-surface__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .system-surface__toggle {
+    width: 100%;
+  }
+
+  .system-surface__step {
+    align-items: flex-start;
+  }
+}

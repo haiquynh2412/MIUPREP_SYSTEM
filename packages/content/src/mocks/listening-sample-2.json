@@ -1,0 +1,145 @@
+{
+  "id": "listening-sample-2",
+  "title": "Hotel Conference Booking",
+  "type": "academic",
+  "skill": "listening",
+  "sections": [
+    {
+      "id": "l2-sec-1",
+      "title": "Conference Room Registration",
+      "instructions": "Answer the questions below based on the audio script.",
+      "audioPath": "/listening-sample-2-standalone.wav",
+      "audioChecksum": "53408a2add6ced951ae9dd9bd50f8b961429161fc23c8487096782e08d9086d5",
+      "transcript": "Good afternoon. Welcome to the Grand Plaza Hotel booking desk. How can I help you today? Yes, I would like to book a conference room for our company's annual seminar. Excellent! We have several options. For large groups, our primary venue is the Grand Ballroom, which has a seating capacity of 200 people. We also have the Regent Suite, which holds up to 75 attendees. I think the Regent Suite is perfect for us as we expect around 60 participants. Perfect! When is the seminar scheduled? It will take place on Wednesday, October 14th. Great. The booking duration will be from 9:00 AM to 5:00 PM. The daily rental fee for the Regent Suite is £450. However, we have a corporate discount of 10% for return clients, bringing the net price to £405. Excellent! We would also like to arrange catering. We offer a lunch buffet at £15 per head, and refreshments in the morning and afternoon at £5 per head.",
+      "questionGroups": [
+        {
+          "id": "l2-rg-1",
+          "instruction": "Complete the form below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "id": "q-l2-1",
+              "type": "gap_fill",
+              "instruction": "Venue booked: The ______ Suite.",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "regent",
+                  "Regent"
+                ]
+              ],
+              "correctAnswer": "Regent",
+              "explanation": "Đoạn ghi âm nêu rõ căn phòng được chọn là Regent Suite: 'We also have the Regent Suite, which holds up to 75 attendees. I think the Regent Suite is perfect for us...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Regent Suite"
+            },
+            {
+              "id": "q-l2-2",
+              "type": "gap_fill",
+              "instruction": "Date of conference: Wednesday, October ______.",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "14",
+                  "14th",
+                  "fourteenth"
+                ]
+              ],
+              "correctAnswer": "14",
+              "explanation": "Đoạn đối thoại khẳng định ngày tổ chức là ngày 14 tháng 10: 'It will take place on Wednesday, October 14th.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Wednesday, October 14th"
+            },
+            {
+              "id": "q-l2-3",
+              "type": "gap_fill",
+              "instruction": "Rental duration: 9:00 AM to ______ PM.",
+              "blankIndex": 3,
+              "acceptedAnswers": [
+                [
+                  "5:00",
+                  "5",
+                  "five"
+                ]
+              ],
+              "correctAnswer": "5",
+              "explanation": "Đoạn ghi âm đề cập thời gian thuê là từ 9 giờ sáng đến 5 giờ chiều: 'The booking duration will be from 9:00 AM to 5:00 PM.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "9:00 AM to 5:00 PM"
+            },
+            {
+              "id": "q-l2-4",
+              "type": "gap_fill",
+              "instruction": "Daily rental fee: £______ (with corporate discount applied).",
+              "blankIndex": 4,
+              "acceptedAnswers": [
+                [
+                  "405",
+                  "four hundred and five"
+                ]
+              ],
+              "correctAnswer": "405",
+              "explanation": "Đoạn đối thoại làm rõ giá sau chiết khấu doanh nghiệp là 405 bảng: 'bringing the net price to £405.'",
+              "answerLocation": "bringing the net price to £405"
+            },
+            {
+              "id": "q-l2-5",
+              "type": "gap_fill",
+              "instruction": "Price of refreshments per head: £______.",
+              "blankIndex": 5,
+              "acceptedAnswers": [
+                [
+                  "5",
+                  "five"
+                ]
+              ],
+              "correctAnswer": "5",
+              "explanation": "Đoạn hội thoại nêu rõ giá giải khát trên mỗi đầu người là 5 bảng: 'refreshments in the morning and afternoon at £5 per head.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "refreshments in the morning and afternoon at £5 per head"
+            }
+          ]
+        },
+        {
+          "id": "l2-rg-2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-l2-6",
+              "type": "multiple_choice",
+              "instruction": "Why did the client choose the Regent Suite?",
+              "options": [
+                "A. It has a beautiful view of the garden.",
+                "B. Its capacity matches their expected 60 participants.",
+                "C. It is equipped with advanced video conferencing tools."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Khách hàng chọn Regent Suite vì sức chứa (lên đến 75 người) phù hợp với số lượng người tham dự dự kiến là 60: 'I think the Regent Suite is perfect for us as we expect around 60 participants.'",
+              "answerLocation": "I think the Regent Suite is perfect for us as we expect around 60 participants"
+            },
+            {
+              "id": "q-l2-7",
+              "type": "multiple_choice",
+              "instruction": "What discount rate is offered to the corporate return client?",
+              "options": [
+                "A. 10%",
+                "B. 15%",
+                "C. 20%"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đoạn đối thoại khẳng định tỷ lệ giảm giá là 10% cho khách hàng thân thiết: 'we have a corporate discount of 10% for return clients...' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "corporate discount of 10% for return clients"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

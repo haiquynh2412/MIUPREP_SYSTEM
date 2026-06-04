@@ -1,0 +1,620 @@
+{
+  "apply": true,
+  "version": "source-p1-generic-explanation-upgrade-2026-05-20",
+  "sourceFile": "sat-studio-foundation-bank.json",
+  "targetPriority": "P1",
+  "targetReason": "generic_distractor_explanation",
+  "targetCount": 75,
+  "attempted": [
+    {
+      "id": "foundation-math-linear-equation-001",
+      "sourceIndex": 0
+    },
+    {
+      "id": "foundation-math-linear-equation-002",
+      "sourceIndex": 1
+    },
+    {
+      "id": "foundation-math-linear-equation-003",
+      "sourceIndex": 2
+    },
+    {
+      "id": "foundation-math-linear-equation-004",
+      "sourceIndex": 3
+    },
+    {
+      "id": "foundation-math-linear-equation-005",
+      "sourceIndex": 4
+    },
+    {
+      "id": "foundation-math-linear-equation-006",
+      "sourceIndex": 5
+    },
+    {
+      "id": "foundation-math-systems-001",
+      "sourceIndex": 6
+    },
+    {
+      "id": "foundation-math-systems-002",
+      "sourceIndex": 7
+    },
+    {
+      "id": "foundation-math-systems-003",
+      "sourceIndex": 8
+    },
+    {
+      "id": "foundation-math-systems-004",
+      "sourceIndex": 9
+    },
+    {
+      "id": "foundation-math-systems-005",
+      "sourceIndex": 10
+    },
+    {
+      "id": "foundation-math-systems-006",
+      "sourceIndex": 11
+    },
+    {
+      "id": "foundation-math-linear-functions-001",
+      "sourceIndex": 12
+    },
+    {
+      "id": "foundation-math-linear-functions-002",
+      "sourceIndex": 13
+    },
+    {
+      "id": "foundation-math-linear-functions-003",
+      "sourceIndex": 14
+    },
+    {
+      "id": "foundation-math-linear-functions-004",
+      "sourceIndex": 15
+    },
+    {
+      "id": "foundation-math-inequalities-001",
+      "sourceIndex": 16
+    },
+    {
+      "id": "foundation-math-inequalities-002",
+      "sourceIndex": 17
+    },
+    {
+      "id": "foundation-math-inequalities-003",
+      "sourceIndex": 18
+    },
+    {
+      "id": "foundation-math-inequalities-004",
+      "sourceIndex": 19
+    },
+    {
+      "id": "foundation-math-quadratic-001",
+      "sourceIndex": 20
+    },
+    {
+      "id": "foundation-math-quadratic-002",
+      "sourceIndex": 21
+    },
+    {
+      "id": "foundation-math-quadratic-003",
+      "sourceIndex": 22
+    },
+    {
+      "id": "foundation-math-quadratic-004",
+      "sourceIndex": 23
+    },
+    {
+      "id": "foundation-math-quadratic-005",
+      "sourceIndex": 24
+    },
+    {
+      "id": "foundation-math-quadratic-006",
+      "sourceIndex": 25
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-001",
+      "sourceIndex": 26
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-002",
+      "sourceIndex": 27
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-003",
+      "sourceIndex": 28
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-004",
+      "sourceIndex": 29
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-005",
+      "sourceIndex": 30
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-006",
+      "sourceIndex": 31
+    },
+    {
+      "id": "foundation-math-exponential-001",
+      "sourceIndex": 32
+    },
+    {
+      "id": "foundation-math-exponential-002",
+      "sourceIndex": 33
+    },
+    {
+      "id": "foundation-math-exponential-003",
+      "sourceIndex": 34
+    },
+    {
+      "id": "foundation-math-exponential-004",
+      "sourceIndex": 35
+    },
+    {
+      "id": "foundation-math-percent-001",
+      "sourceIndex": 36
+    },
+    {
+      "id": "foundation-math-percent-002",
+      "sourceIndex": 37
+    },
+    {
+      "id": "foundation-math-percent-003",
+      "sourceIndex": 38
+    },
+    {
+      "id": "foundation-math-percent-004",
+      "sourceIndex": 39
+    },
+    {
+      "id": "foundation-math-rates-001",
+      "sourceIndex": 40
+    },
+    {
+      "id": "foundation-math-rates-002",
+      "sourceIndex": 41
+    },
+    {
+      "id": "foundation-math-rates-003",
+      "sourceIndex": 42
+    },
+    {
+      "id": "foundation-math-rates-004",
+      "sourceIndex": 43
+    },
+    {
+      "id": "foundation-math-statistics-001",
+      "sourceIndex": 44
+    },
+    {
+      "id": "foundation-math-statistics-002",
+      "sourceIndex": 45
+    },
+    {
+      "id": "foundation-math-statistics-003",
+      "sourceIndex": 46
+    },
+    {
+      "id": "foundation-math-statistics-004",
+      "sourceIndex": 47
+    },
+    {
+      "id": "foundation-math-probability-001",
+      "sourceIndex": 48
+    },
+    {
+      "id": "foundation-math-probability-002",
+      "sourceIndex": 49
+    },
+    {
+      "id": "foundation-math-probability-003",
+      "sourceIndex": 50
+    },
+    {
+      "id": "foundation-math-probability-004",
+      "sourceIndex": 51
+    },
+    {
+      "id": "foundation-math-area-001",
+      "sourceIndex": 52
+    },
+    {
+      "id": "foundation-math-area-002",
+      "sourceIndex": 53
+    },
+    {
+      "id": "foundation-math-area-003",
+      "sourceIndex": 54
+    },
+    {
+      "id": "foundation-math-area-004",
+      "sourceIndex": 55
+    },
+    {
+      "id": "foundation-math-right-triangle-001",
+      "sourceIndex": 56
+    },
+    {
+      "id": "foundation-math-right-triangle-002",
+      "sourceIndex": 57
+    },
+    {
+      "id": "foundation-math-right-triangle-003",
+      "sourceIndex": 58
+    },
+    {
+      "id": "foundation-math-right-triangle-004",
+      "sourceIndex": 59
+    },
+    {
+      "id": "foundation-math-circles-001",
+      "sourceIndex": 60
+    },
+    {
+      "id": "foundation-math-circles-002",
+      "sourceIndex": 61
+    },
+    {
+      "id": "foundation-math-circles-003",
+      "sourceIndex": 62
+    },
+    {
+      "id": "foundation-math-circles-004",
+      "sourceIndex": 63
+    },
+    {
+      "id": "foundation-rw-transitions-001",
+      "sourceIndex": 64
+    },
+    {
+      "id": "foundation-rw-transitions-002",
+      "sourceIndex": 65
+    },
+    {
+      "id": "foundation-rw-boundaries-001",
+      "sourceIndex": 66
+    },
+    {
+      "id": "foundation-rw-boundaries-002",
+      "sourceIndex": 67
+    },
+    {
+      "id": "foundation-rw-form-structure-001",
+      "sourceIndex": 68
+    },
+    {
+      "id": "foundation-rw-form-structure-002",
+      "sourceIndex": 69
+    },
+    {
+      "id": "foundation-rw-words-context-001",
+      "sourceIndex": 70
+    },
+    {
+      "id": "foundation-rw-words-context-002",
+      "sourceIndex": 71
+    },
+    {
+      "id": "foundation-rw-main-idea-001",
+      "sourceIndex": 72
+    },
+    {
+      "id": "foundation-rw-inference-001",
+      "sourceIndex": 73
+    },
+    {
+      "id": "foundation-rw-rhetorical-synthesis-001",
+      "sourceIndex": 74
+    }
+  ],
+  "upgraded": [
+    {
+      "id": "foundation-math-linear-equation-001",
+      "sourceIndex": 0
+    },
+    {
+      "id": "foundation-math-linear-equation-002",
+      "sourceIndex": 1
+    },
+    {
+      "id": "foundation-math-linear-equation-003",
+      "sourceIndex": 2
+    },
+    {
+      "id": "foundation-math-linear-equation-004",
+      "sourceIndex": 3
+    },
+    {
+      "id": "foundation-math-linear-equation-005",
+      "sourceIndex": 4
+    },
+    {
+      "id": "foundation-math-linear-equation-006",
+      "sourceIndex": 5
+    },
+    {
+      "id": "foundation-math-systems-001",
+      "sourceIndex": 6
+    },
+    {
+      "id": "foundation-math-systems-002",
+      "sourceIndex": 7
+    },
+    {
+      "id": "foundation-math-systems-003",
+      "sourceIndex": 8
+    },
+    {
+      "id": "foundation-math-systems-004",
+      "sourceIndex": 9
+    },
+    {
+      "id": "foundation-math-systems-005",
+      "sourceIndex": 10
+    },
+    {
+      "id": "foundation-math-systems-006",
+      "sourceIndex": 11
+    },
+    {
+      "id": "foundation-math-linear-functions-001",
+      "sourceIndex": 12
+    },
+    {
+      "id": "foundation-math-linear-functions-002",
+      "sourceIndex": 13
+    },
+    {
+      "id": "foundation-math-linear-functions-003",
+      "sourceIndex": 14
+    },
+    {
+      "id": "foundation-math-linear-functions-004",
+      "sourceIndex": 15
+    },
+    {
+      "id": "foundation-math-inequalities-001",
+      "sourceIndex": 16
+    },
+    {
+      "id": "foundation-math-inequalities-002",
+      "sourceIndex": 17
+    },
+    {
+      "id": "foundation-math-inequalities-003",
+      "sourceIndex": 18
+    },
+    {
+      "id": "foundation-math-inequalities-004",
+      "sourceIndex": 19
+    },
+    {
+      "id": "foundation-math-quadratic-001",
+      "sourceIndex": 20
+    },
+    {
+      "id": "foundation-math-quadratic-002",
+      "sourceIndex": 21
+    },
+    {
+      "id": "foundation-math-quadratic-003",
+      "sourceIndex": 22
+    },
+    {
+      "id": "foundation-math-quadratic-004",
+      "sourceIndex": 23
+    },
+    {
+      "id": "foundation-math-quadratic-005",
+      "sourceIndex": 24
+    },
+    {
+      "id": "foundation-math-quadratic-006",
+      "sourceIndex": 25
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-001",
+      "sourceIndex": 26
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-002",
+      "sourceIndex": 27
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-003",
+      "sourceIndex": 28
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-004",
+      "sourceIndex": 29
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-005",
+      "sourceIndex": 30
+    },
+    {
+      "id": "foundation-math-equivalent-expressions-006",
+      "sourceIndex": 31
+    },
+    {
+      "id": "foundation-math-exponential-001",
+      "sourceIndex": 32
+    },
+    {
+      "id": "foundation-math-exponential-002",
+      "sourceIndex": 33
+    },
+    {
+      "id": "foundation-math-exponential-003",
+      "sourceIndex": 34
+    },
+    {
+      "id": "foundation-math-exponential-004",
+      "sourceIndex": 35
+    },
+    {
+      "id": "foundation-math-percent-001",
+      "sourceIndex": 36
+    },
+    {
+      "id": "foundation-math-percent-002",
+      "sourceIndex": 37
+    },
+    {
+      "id": "foundation-math-percent-003",
+      "sourceIndex": 38
+    },
+    {
+      "id": "foundation-math-percent-004",
+      "sourceIndex": 39
+    },
+    {
+      "id": "foundation-math-rates-001",
+      "sourceIndex": 40
+    },
+    {
+      "id": "foundation-math-rates-002",
+      "sourceIndex": 41
+    },
+    {
+      "id": "foundation-math-rates-003",
+      "sourceIndex": 42
+    },
+    {
+      "id": "foundation-math-rates-004",
+      "sourceIndex": 43
+    },
+    {
+      "id": "foundation-math-statistics-001",
+      "sourceIndex": 44
+    },
+    {
+      "id": "foundation-math-statistics-002",
+      "sourceIndex": 45
+    },
+    {
+      "id": "foundation-math-statistics-003",
+      "sourceIndex": 46
+    },
+    {
+      "id": "foundation-math-statistics-004",
+      "sourceIndex": 47
+    },
+    {
+      "id": "foundation-math-probability-001",
+      "sourceIndex": 48
+    },
+    {
+      "id": "foundation-math-probability-002",
+      "sourceIndex": 49
+    },
+    {
+      "id": "foundation-math-probability-003",
+      "sourceIndex": 50
+    },
+    {
+      "id": "foundation-math-probability-004",
+      "sourceIndex": 51
+    },
+    {
+      "id": "foundation-math-area-001",
+      "sourceIndex": 52
+    },
+    {
+      "id": "foundation-math-area-002",
+      "sourceIndex": 53
+    },
+    {
+      "id": "foundation-math-area-003",
+      "sourceIndex": 54
+    },
+    {
+      "id": "foundation-math-area-004",
+      "sourceIndex": 55
+    },
+    {
+      "id": "foundation-math-right-triangle-001",
+      "sourceIndex": 56
+    },
+    {
+      "id": "foundation-math-right-triangle-002",
+      "sourceIndex": 57
+    },
+    {
+      "id": "foundation-math-right-triangle-003",
+      "sourceIndex": 58
+    },
+    {
+      "id": "foundation-math-right-triangle-004",
+      "sourceIndex": 59
+    },
+    {
+      "id": "foundation-math-circles-001",
+      "sourceIndex": 60
+    },
+    {
+      "id": "foundation-math-circles-002",
+      "sourceIndex": 61
+    },
+    {
+      "id": "foundation-math-circles-003",
+      "sourceIndex": 62
+    },
+    {
+      "id": "foundation-math-circles-004",
+      "sourceIndex": 63
+    },
+    {
+      "id": "foundation-rw-transitions-001",
+      "sourceIndex": 64
+    },
+    {
+      "id": "foundation-rw-transitions-002",
+      "sourceIndex": 65
+    },
+    {
+      "id": "foundation-rw-boundaries-001",
+      "sourceIndex": 66
+    },
+    {
+      "id": "foundation-rw-boundaries-002",
+      "sourceIndex": 67
+    },
+    {
+      "id": "foundation-rw-form-structure-001",
+      "sourceIndex": 68
+    },
+    {
+      "id": "foundation-rw-form-structure-002",
+      "sourceIndex": 69
+    },
+    {
+      "id": "foundation-rw-words-context-001",
+      "sourceIndex": 70
+    },
+    {
+      "id": "foundation-rw-words-context-002",
+      "sourceIndex": 71
+    },
+    {
+      "id": "foundation-rw-main-idea-001",
+      "sourceIndex": 72
+    },
+    {
+      "id": "foundation-rw-inference-001",
+      "sourceIndex": 73
+    },
+    {
+      "id": "foundation-rw-rhetorical-synthesis-001",
+      "sourceIndex": 74
+    }
+  ],
+  "skipped": [],
+  "blocked": [],
+  "remainingDepthFlags": [],
+  "attemptedCount": 75,
+  "upgradedCount": 75,
+  "skippedCount": 0,
+  "blockedCount": 0,
+  "remainingDepthFlagCount": 0
+}

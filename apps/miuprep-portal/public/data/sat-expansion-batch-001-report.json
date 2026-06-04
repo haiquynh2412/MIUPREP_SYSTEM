@@ -1,0 +1,156 @@
+{
+  "apply": true,
+  "version": "sat-expansion-batch-001-2026-05-20",
+  "targetFile": "data\\sat-studio-foundation-bank.json",
+  "plannedCount": 24,
+  "duplicateIds": [],
+  "validationFailures": [],
+  "added": [
+    {
+      "id": "expansion-b001-math-algebra-001",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of equations in two variables"
+    },
+    {
+      "id": "expansion-b001-math-algebra-002",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of equations in two variables"
+    },
+    {
+      "id": "expansion-b001-math-algebra-003",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions"
+    },
+    {
+      "id": "expansion-b001-math-algebra-004",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions"
+    },
+    {
+      "id": "expansion-b001-math-algebra-005",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear inequalities in one or two variables"
+    },
+    {
+      "id": "expansion-b001-math-algebra-006",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in two variables"
+    },
+    {
+      "id": "expansion-b001-math-algebra-007",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions"
+    },
+    {
+      "id": "expansion-b001-math-algebra-008",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of equations in two variables"
+    },
+    {
+      "id": "expansion-b001-math-advanced-001",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b001-math-advanced-002",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b001-math-advanced-003",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b001-math-advanced-004",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Equivalent expressions"
+    },
+    {
+      "id": "expansion-b001-math-advanced-005",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b001-math-advanced-006",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable"
+    },
+    {
+      "id": "expansion-b001-math-advanced-007",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b001-math-advanced-008",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear functions"
+    },
+    {
+      "id": "expansion-b001-rw-craft-001",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Words in Context"
+    },
+    {
+      "id": "expansion-b001-rw-craft-002",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Words in Context"
+    },
+    {
+      "id": "expansion-b001-rw-craft-003",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Words in Context"
+    },
+    {
+      "id": "expansion-b001-rw-craft-004",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Text Structure and Purpose"
+    },
+    {
+      "id": "expansion-b001-rw-craft-005",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Text Structure and Purpose"
+    },
+    {
+      "id": "expansion-b001-rw-craft-006",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Text Structure and Purpose"
+    },
+    {
+      "id": "expansion-b001-rw-craft-007",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Cross-Text Connections"
+    },
+    {
+      "id": "expansion-b001-rw-craft-008",
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Cross-Text Connections"
+    }
+  ],
+  "blueprintPath": "data\\sat-expansion-blueprint-20260520.json",
+  "addedCount": 24
+}

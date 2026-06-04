@@ -1,0 +1,84 @@
+{
+  "apply": true,
+  "version": "antigravity-repaired-batch-review-2026-05-20",
+  "repairedSpr": [
+    "antigravity-c5bacb25",
+    "antigravity-cb6080de",
+    "antigravity-8d477694",
+    "antigravity-ae1e4e0f",
+    "antigravity-4731c4d4",
+    "antigravity-16bce91d",
+    "antigravity-c950f88b"
+  ],
+  "repairedText": [
+    "antigravity-f9705de0"
+  ],
+  "promoted": [
+    {
+      "id": "antigravity-05e6f075",
+      "sourceIndex": 1744
+    },
+    {
+      "id": "antigravity-16bce91d",
+      "sourceIndex": 2670
+    },
+    {
+      "id": "antigravity-1c7dc092",
+      "sourceIndex": 1753
+    },
+    {
+      "id": "antigravity-462cdb31",
+      "sourceIndex": 1752
+    },
+    {
+      "id": "antigravity-4731c4d4",
+      "sourceIndex": 2624
+    },
+    {
+      "id": "antigravity-6dc9a21b",
+      "sourceIndex": 1748
+    },
+    {
+      "id": "antigravity-8d477694",
+      "sourceIndex": 2375
+    },
+    {
+      "id": "antigravity-ae1e4e0f",
+      "sourceIndex": 2515
+    },
+    {
+      "id": "antigravity-b8704245",
+      "sourceIndex": 3000
+    },
+    {
+      "id": "antigravity-b93993c9",
+      "sourceIndex": 1755
+    },
+    {
+      "id": "antigravity-c5bacb25",
+      "sourceIndex": 1060
+    },
+    {
+      "id": "antigravity-c950f88b",
+      "sourceIndex": 2719
+    },
+    {
+      "id": "antigravity-cb6080de",
+      "sourceIndex": 2235
+    },
+    {
+      "id": "antigravity-dd71efd7",
+      "sourceIndex": 1754
+    },
+    {
+      "id": "antigravity-f9705de0",
+      "sourceIndex": 1751
+    },
+    {
+      "id": "antigravity-fba29894",
+      "sourceIndex": 1746
+    }
+  ],
+  "blocked": [],
+  "missing": []
+}

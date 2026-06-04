@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAT Studio Student</title>
+  </head>
+  <body>
+    <p>Opening SAT Studio Student...</p>
+    <p><a href="dist/vite/vite-student.html">Open SAT Studio Student</a></p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const legacyUrl = "index.html?entry=student";
+      const viteUrl = "dist/vite/vite-student.html";
+      window.location.replace(params.get("legacy") === "1" ? legacyUrl : viteUrl);
+    </script>
+  </body>
+</html>

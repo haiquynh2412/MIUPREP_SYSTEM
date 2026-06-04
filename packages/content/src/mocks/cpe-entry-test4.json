@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test4",
+  "title": "CPE Entry Test 4 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test4-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Sense of Taste</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>When someone (0) is dieting, they don't often pause to (1) __________ about why that piece of forbidden chocolate cake is going to taste so wonderful. (2) __________ actual fact, the reason things taste the way they (3) __________, inevitably tempting us to break our dieting resolutions, is really quite (4) __________ complex process. Obviously, the sense of taste is based in the mouth. (5) __________ we place something in our mouths, the taste buds come (6) __________ detecting the flavour of the food and the strength of that flavour. Taste buds are situated (7) __________ different parts of our tongues and those in specific locations react (8) __________ four categories of tastes. All (9) __________ the sides and at the front of the tongue, are the taste buds (10) __________ are sensitive to saltiness and sourness. Sweetness (11) __________ detected by those taste buds which are found (12) __________ the tip of the tongue, while bitterness is sensed by those at the very back of the tongue. Food (13) __________ only be tasted if it is combined (14) __________ The job of saliva is to dissolve substances (15) __________ the taste buds can begin deciphering the various taste sensations.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test4-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test4-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "THINK",
+                  "think"
+                ]
+              ],
+              "correctAnswer": "THINK",
+              "explanation": "Đáp án đề xuất: THINK. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THINK",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "IN",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "IN",
+              "explanation": "Đáp án đề xuất: IN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IN",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "DO",
+                  "do"
+                ]
+              ],
+              "correctAnswer": "DO",
+              "explanation": "Đáp án đề xuất: DO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "DO",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án đề xuất: A. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "Answer: A. Grammar cue: use the indefinite article required by the noun phrase around the gap.",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "WHEN",
+                  "when"
+                ]
+              ],
+              "correctAnswer": "WHEN",
+              "explanation": "Đáp án đề xuất: WHEN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHEN",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "ALIVE",
+                  "alive"
+                ]
+              ],
+              "correctAnswer": "ALIVE",
+              "explanation": "Đáp án đề xuất: ALIVE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ALIVE",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "ON",
+                  "on"
+                ]
+              ],
+              "correctAnswer": "ON",
+              "explanation": "Đáp án đề xuất: ON. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ON",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "TO",
+                  "to"
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Đáp án đề xuất: TO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TO",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "ALONG",
+                  "along"
+                ]
+              ],
+              "correctAnswer": "ALONG",
+              "explanation": "Đáp án đề xuất: ALONG. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ALONG",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "WHICH",
+                  "which"
+                ]
+              ],
+              "correctAnswer": "WHICH",
+              "explanation": "Đáp án đề xuất: WHICH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHICH",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "IS",
+                  "is"
+                ]
+              ],
+              "correctAnswer": "IS",
+              "explanation": "Đáp án đề xuất: IS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IS",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "ON",
+                  "on"
+                ]
+              ],
+              "correctAnswer": "ON",
+              "explanation": "Đáp án đề xuất: ON. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ON",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "CAN",
+                  "can"
+                ]
+              ],
+              "correctAnswer": "CAN",
+              "explanation": "Đáp án đề xuất: CAN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "CAN",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "WITH",
+                  "with"
+                ]
+              ],
+              "correctAnswer": "WITH",
+              "explanation": "Đáp án đề xuất: WITH. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WITH",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "BEFORE",
+                  "before"
+                ]
+              ],
+              "correctAnswer": "BEFORE",
+              "explanation": "Đáp án đề xuất: BEFORE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BEFORE",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test4-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Don't Judge a Book by its Cover</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The magical world of (0) literature was first revealed to me when I was still young enough to be held (16) __________ on my father's lap. To my (17) __________ young mind, my father's reading aloud to me could only be bettered by the process of preparation which immediately preceded it. Choosing the book, holding it (18) __________ in one's hands, admiring the jacket, and, finally, opening it to the first page to begin, seemed to me akin to following the rites of some sort of (19) __________ occasion. To the dedicated reader, every book has its own distinct smell. A book just purchased from one's favourite book shop exudes a wonderful bouquet of printer's ink, leather and binding glue. Because of its \"yet to be discovered\" content, I tend to treat a new book as I would a (20) __________ acquired (21) __________. That is, while both new books and new friends have to be treated (22) __________, one still feels comfortable with them due to an (23) __________ sense that whispers that warm, lasting (24) __________ are sure to follow. An old book, on the other hand, is a horse of a different colour. On opening it, one's nostrils are assailed by an odour that a non-book lover would (25) __________ describe as simply 'musty'. To the true book connoisseur, however, this scent elicits enchanting memories of Christmases past, pressed roses, cedar chests and autumn leaves burning in the back yard. To the devout reader, an old book smells of nostalgia.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test4-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test4-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: COMFORT]:",
+              "acceptedAnswers": [
+                [
+                  "COMFORTABLY",
+                  "comfortably"
+                ]
+              ],
+              "correctAnswer": "COMFORTABLY",
+              "explanation": "Đáp án đề xuất: COMFORTABLY. Từ gốc 'COMFORT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "COMFORTABLY",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "COMFORT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: IMPRESS]:",
+              "acceptedAnswers": [
+                [
+                  "IMPRESSIONABLE",
+                  "impressionable"
+                ]
+              ],
+              "correctAnswer": "IMPRESSIONABLE",
+              "explanation": "Đáp án đề xuất: IMPRESSIONABLE. Từ gốc 'IMPRESS' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "IMPRESSIONABLE",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "IMPRESS",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: CARESS]:",
+              "acceptedAnswers": [
+                [
+                  "CARESSINGLY",
+                  "caressingly"
+                ]
+              ],
+              "correctAnswer": "CARESSINGLY",
+              "explanation": "Đáp án đề xuất: CARESSINGLY. Từ gốc 'CARESS' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "CARESSINGLY",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "CARESS",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: CEREMONY]:",
+              "acceptedAnswers": [
+                [
+                  "CEREMONIAL",
+                  "ceremonial"
+                ]
+              ],
+              "correctAnswer": "CEREMONIAL",
+              "explanation": "Đáp án đề xuất: CEREMONIAL. Từ gốc 'CEREMONY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "CEREMONIAL",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "CEREMONY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: NEW]:",
+              "acceptedAnswers": [
+                [
+                  "NEWLY",
+                  "newly"
+                ]
+              ],
+              "correctAnswer": "NEWLY",
+              "explanation": "Đáp án đề xuất: NEWLY. Từ gốc 'NEW' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "NEWLY",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "NEW",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: ACQUAINT]:",
+              "acceptedAnswers": [
+                [
+                  "ACQUAINTANCE",
+                  "acquaintance"
+                ]
+              ],
+              "correctAnswer": "ACQUAINTANCE",
+              "explanation": "Đáp án đề xuất: ACQUAINTANCE. Từ gốc 'ACQUAINT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "ACQUAINTANCE",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "ACQUAINT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: COURTESY]:",
+              "acceptedAnswers": [
+                [
+                  "COURTEOUSLY",
+                  "courteously"
+                ]
+              ],
+              "correctAnswer": "COURTEOUSLY",
+              "explanation": "Đáp án đề xuất: COURTEOUSLY. Từ gốc 'COURTESY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "COURTEOUSLY",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "COURTESY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: INSTINCT]:",
+              "acceptedAnswers": [
+                [
+                  "INSTINCTIVE",
+                  "instinctive"
+                ]
+              ],
+              "correctAnswer": "INSTINCTIVE",
+              "explanation": "Đáp án đề xuất: INSTINCTIVE. Từ gốc 'INSTINCT' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "INSTINCTIVE",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "INSTINCT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: RELATE]:",
+              "acceptedAnswers": [
+                [
+                  "RELATIONSHIPS",
+                  "relationships"
+                ]
+              ],
+              "correctAnswer": "RELATIONSHIPS",
+              "explanation": "Đáp án đề xuất: RELATIONSHIPS. Từ gốc 'RELATE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "RELATIONSHIPS",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "RELATE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: DISDAIN]:",
+              "acceptedAnswers": [
+                [
+                  "DISDAINFULLY",
+                  "disdainfully"
+                ]
+              ],
+              "correctAnswer": "DISDAINFULLY",
+              "explanation": "Đáp án đề xuất: DISDAINFULLY. Từ gốc 'DISDAIN' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DISDAINFULLY",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "DISDAIN",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test4-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>PASSPORT REGULATIONS</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Please find enclosed within this envelope your newly (26) __________ passport. As a privileged passport holder, you are obliged to read the succinct, attached information leaflet carefully and (27) __________ by the rules listed within. Bear in mind that this passport is the property of the issuing office, thus (28) __________ the sale of the passport. Allowing another individual the use of this document is a criminal (29) __________ and punishable by federal law. In the case where one's passport is either lost or stolen, a report to the appropriate authorities must be supplied immediately. Be aware that the passport office will (30) __________ a thorough investigation into the loss or theft. Completion of page four of this document is compulsory and the next of (31) __________ named within should be an individual who does not, as a rule, travel with you.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test4-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test4-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - issued. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "issued",
+              "category": "cpe_part_1",
+              "options": [
+                "A. applied",
+                "B. obtained",
+                "C. required",
+                "D. issued"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - abide. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "abide",
+              "category": "cpe_part_1",
+              "options": [
+                "A. keep",
+                "B. abide",
+                "C. confine",
+                "D. comply"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - prohibiting. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "prohibiting",
+              "category": "cpe_part_1",
+              "options": [
+                "A. forbidding",
+                "B. disabling",
+                "C. banning",
+                "D. prohibiting"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - offence. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "offence",
+              "category": "cpe_part_1",
+              "options": [
+                "A. procedure",
+                "B. offence",
+                "C. perjury",
+                "D. edict"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - carry out. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "carry out",
+              "category": "cpe_part_1",
+              "options": [
+                "A. draw up",
+                "B. set down",
+                "C. carry out",
+                "D. put through"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - kin. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "kin",
+              "category": "cpe_part_1",
+              "options": [
+                "A. family",
+                "B. kin",
+                "C. clan",
+                "D. relation"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - factor. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "factor",
+              "category": "cpe_part_1",
+              "options": [
+                "A. aspect",
+                "B. element",
+                "C. factor",
+                "D. dimension"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - involving. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "involving",
+              "category": "cpe_part_1",
+              "options": [
+                "A. entailing",
+                "B. involving",
+                "C. containing",
+                "D. partaking"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - down. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "down",
+              "category": "cpe_part_1",
+              "options": [
+                "A. down",
+                "B. off",
+                "C. away",
+                "D. out"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - sustaining. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "sustaining",
+              "category": "cpe_part_1",
+              "options": [
+                "A. detaining",
+                "B. maintaining",
+                "C. retaining",
+                "D. sustaining"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - over. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "over",
+              "category": "cpe_part_1",
+              "options": [
+                "A. out",
+                "B. down",
+                "C. over",
+                "D. off"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - warns. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "warns",
+              "category": "cpe_part_1",
+              "options": [
+                "A. suggests",
+                "B. cautions",
+                "C. condones",
+                "D. warns"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test4-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an extract from a novel. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap (38-44). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Dark shadows were already engulfing the bushes and palm trees on the banks of the river. The canoes in the hunt had little difficulty in finding their way over the glassy water. Three canoes travelled side by side, with Hoiri in the middle one. Several yards of water separated one canoe from the other. They were all large canoes capable of carrying a dozen men.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Other weapons included barbed spears and arrows which were strewn all over the floor of the canoe. Many of the arrowheads and spears were made of steel rods. Others were made of black palm and had as many as six barbs on them. A full-length crowbar with three barbs was tied to the end of the longest pole that the men had been able to find.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>“She has not been eaten yet,” said one of the men in a voice that was deep and full of anxiety. “No, there’s no smell in the water. Besides, there is no oily substance in the scum when the tide changes. We should concentrate on the parts of the river and its tributaries that are on the seaward side.” The sky was clear and the stars produced a dim light, as if to help them find the bank.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>With the aid of his spear he located the coconut trunks as he moved further away from the river. Hoiri selected a sizeable trunk and stood with his back to it so he was facing the river. He found that he could see better. Following the line of ripples, Hoiri was able to make out the dark shape of his canoe, which became smaller and smaller until, eventually, it was engulfed by the night.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>In his left hand Hoiri held his bow and arrows. One arrow was in place ready to be set off at a moment’s notice. The spear stood parallel to his right side with the steel point above his head.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>As he stood lost in his ruminations, there was a rustle of coconut strands directly above Hoiri and something swished past his forehead, missed the tip of his nose by a fraction of an inch, and landed with a thud between his feet. Particles of soil splashed over his ankles. To his dismay, Hoiri discovered that his mind had suddenly decided to fly in all four directions without his permission. It left the body, which it was supposed to control, paralysed.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Hoiri was not sorry that the flying fox had dropped the nut. It had come dangerously close to knocking him unconscious, but it had also prevented him from falling asleep standing up. Hoiri studied his surroundings.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>For the time being sleep made no further attempts to cast its spell over Hoiri’s eyelids. Somewhere along the same bank of the river, his cousin Meraveka was also watching the water. It was believed that this was the part of the shore where hunting magicians riding the crocodile would meet their masters, who were waiting to receive the catch.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test4-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test4-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Like everyone else on board, Hoiri wore a sihi, a narrow strip of bark cloth that passed between his thighs and wrapped around his waist and hips. A tomahawk was stuck firmly in the sihi on his left hip.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn đoạn C. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "They were silent. Their eyes scanned the shoreline and the surface of the river for anything that moved. Their ears were on the alert for the sound of the conch-shell which every canoe carried on board.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Chọn đoạn F. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "It was almost pitch dark where the canoe inched its way to a stop, below towering coconut palms. The tide was nearing its highest so Hoiri was able to jump from the bow of the canoe on to the damp but firm soil. While the darkness swallowed him, his canoe noiselessly pulled away.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Across the river, the four-star constellation which the people call Oamalala rose steadily above the darkened greenish mass. Hoiri’s eyes moved from the real star to its reflection in the water. It was not a perfect replica of the real Oamnalala. All the four beams merged into one long one that reached almost to Hoiri’s feet; the tide had almost reached its highest point.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Hoiri pressed his back firmly. against the scale- like rings of the palm tree. Comfort and confidence travelled up his arm and into his body as his fingers meticulously moved from one ring to the next. The tree was a companion, tall, solid and rough-skinned. It did not matter that no conversation passed between them.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "A flutter of wings overhead and Hoiri’s senses began to return. His fingers loosened their grip on the cold metal on his hip. He was embarrassed that a smelly creature no bigger than his fist could easily upset him like that: the flying fox had dropped a smooth young coconut. It certainly was close. “Could it have been purposely aimed at me\"” Hoiri asked himself. It was hardly an accident. “The creature must have been directed by some power,” he concluded.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Chọn đoạn E. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Hoiri thought again about that nut. He was sure now that someone must have protected him from its deadly impact. Then suddenly his blood gathered warmth: why hadn’t he thought of his ancestral namesake Hoiri\" He remembered the time his father had told him about the phenomenal escape of his grandfather, when they were on board the lakatoi sailing to Moresby.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Across the river, the four-star constellation which the people call Oamalala rose steadily above the darkened greenish mass. Hoiri’s eyes moved from the real star to its reflection in the water. It was not a perfect replica of the real Oamnalala. All the four beams merged into one long one that reached almost to Hoiri’s feet; the tide had almost reached its highest point."
+            },
+            {
+              "label": "B",
+              "text": "Hoiri pressed his back firmly. against the scale- like rings of the palm tree. Comfort and confidence travelled up his arm and into his body as his fingers meticulously moved from one ring to the next. The tree was a companion, tall, solid and rough-skinned. It did not matter that no conversation passed between them."
+            },
+            {
+              "label": "C",
+              "text": "They were silent. Their eyes scanned the shoreline and the surface of the river for anything that moved. Their ears were on the alert for the sound of the conch-shell which every canoe carried on board."
+            },
+            {
+              "label": "D",
+              "text": "Like everyone else on board, Hoiri wore a sihi, a narrow strip of bark cloth that passed between his thighs and wrapped around his waist and hips. A tomahawk was stuck firmly in the sihi on his left hip."
+            },
+            {
+              "label": "E",
+              "text": "Hoiri thought again about that nut. He was sure now that someone must have protected him from its deadly impact. Then suddenly his blood gathered warmth: why hadn’t he thought of his ancestral namesake Hoiri\" He remembered the time his father had told him about the phenomenal escape of his grandfather, when they were on board the lakatoi sailing to Moresby."
+            },
+            {
+              "label": "F",
+              "text": "It was almost pitch dark where the canoe inched its way to a stop, below towering coconut palms. The tide was nearing its highest so Hoiri was able to jump from the bow of the canoe on to the damp but firm soil. While the darkness swallowed him, his canoe noiselessly pulled away."
+            },
+            {
+              "label": "G",
+              "text": "A flutter of wings overhead and Hoiri’s senses began to return. His fingers loosened their grip on the cold metal on his hip. He was embarrassed that a smelly creature no bigger than his fist could easily upset him like that: the flying fox had dropped a smooth young coconut. It certainly was close. “Could it have been purposely aimed at me\"” Hoiri asked himself. It was hardly an accident. “The creature must have been directed by some power,” he concluded."
+            },
+            {
+              "label": "H",
+              "text": "“How nice it would be if people co-operated in the affairs of their day-to-day living like the two feet of aman,” Hoiri thought. “One foot does not boast of holding up the rest of the body longer than the other. If one is maimed, then the other accepts the responsibility without a grudge.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test4-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an article on dressing down at work. For questions 45-50, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Dress-down Friday has not worked out. In fact, it is about to be let go. A slew of new surveys from the States shows employers increasingly concerned that staff who turn up in ‘smart casual’ are up to 50 per cent more likely to act rude and silly. Lateness, sluggishness or just not being there at all have all become hallmarks of the last day of the working week, according to a study for American Corporate Trends Magazine. So much so, that many bosses are now returning Friday to its previous strict and sober incarnation. They include George W. Bush, who has decreed that henceforth all White House staff must be formally suited and booted whenever they report for work. And in Britain the Institute of Directors has also detected signs of an end to the recent custom of greeting the weekend one day early with a sludgy medley of soft trousers and endless fleeces. Friday first went casual in Britain in the late 1980s, but the practice didn’t really catch fire until the mid-Nineties. By then, the economy was booming and new sources of income and prestige — IT, biotechnology, dotcom — were emerging. The people who worked for these firms may have been rich (in fact, they were getting richer all the time), but they liked to think that they were sufficiently self-confident not to need to rely on someone else’s idea of a status symbol. Bowler hats and umbrellas represented an older — now ailing - economy, one that had been founded aeons ago in the mid- nineteenth century on a formal distinction between work and home.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The New Economy, by contrast, liked to emphasise the continuity and even overlap between professional and domestic spaces. People brought scented candles to the office before returning home to a converted industrial site. In Frankfurt, workers could pop into ‘nap rooms’ after lunch, while in London the smartest new nightclub was called, quite simply, ‘Home’. At the level of aesthetics, work and play had become infinitely swappable. By the time the Millennium finally arrived, many firms had decided to extend dress-down Friday to the other four days of the week. There were rules, of course — there always are. No jeans, naturally, and some other less obvious demarcations: shirts needed to have collars, and shoes laces.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>What has been a problem, though, for a lot of people is achieving the required look. While American and French men have long had an alternative uniform to the business suit - polo shirt, unstructured jacket, brownish/fawn trousers</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>British men have mostly had to resort to that odd solution of teaming of formal, usually Harris tweed jacket with jeans. Several retailers have taken pity on the hordes of baffled men who arrive for work in the financial institutions of Canary Wharf and have set up branches stuffed full of the kind of touchy-feely clobber that will take them inconspicuously through the day in a symphony of mushroom.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Dressing down has proved to be more of a worry than getting decked out in a uniform ever was. Even in those companies that are casual every day, the understanding is that you wear a suit whenever appropriate — to meet a client make an important presentation. As a result, some employees complain they spend more time matching up their clothes to their schedule than ever before. And, if America is anything to go by, the sartorial week is about to get even more complicated. To counter the negative effects of dress-down Fridays, some firms have instituted the weird corrective of dress-up Thursdays. Soon, it seems, each day of the week could carry its own coercive dress code.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Where dress-down Friday got it wrong was not in overestimating the importance of clothing upon our psyches, but in underplaying it. Employers had the vague hope that allowing people to wear buff-coloured trousers to the office would signal a loosening up of mental boundaries which, in turn, would release a stream of ‘beyond the box’ thinking. But clothing acts like a sharp trigger for sense memory. Wear casual clothes to work, and your brain thinks it's on holiday. It doesn't want to come up with left-field solutions - to the problems in Product Development. Instead, it makes you want to gossip with your friends, drink coffee and send loads of raffish emails. Asking people to pretend that work is fun, and then suggesting that they mark this state of affairs by wearing combat trousers, is the height of patronisation As the economy slows down and recession begins to bite, these kinds of self-deceiving strategies are beginning to fall 4 away. We know what work owes us - money, skills-training a and a certain amount of status. It doesn't own our souls, and we wouldn’t want it to. For that we have home, where we can dress exactly as we please.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test4-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test4-45",
+              "type": "multiple_choice",
+              "instruction": "What does the writer say in the first paragraph about \"dressing down\"?",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - It has become an excuse for staff to be inefficient.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "It has become an excuse for staff to be inefficient.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. It has become an excuse for staff to be inefficient.",
+                "B. It allows people to behave immaturely without censure.",
+                "C. It has caused managers to apply rules more strictly.",
+                "D. It has led to increased absenteeism."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-46",
+              "type": "multiple_choice",
+              "instruction": "What motivated people in the technology industry in the nineties to \"dress down\"?",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - It was part of a general trend towards exhibiting independence.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "It was part of a general trend towards exhibiting independence.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. They didn’t have the confidence to wear smart clothes.",
+                "B. It was an attempt to disguise their new-found wealth.",
+                "C. It was part of a general trend towards exhibiting independence.",
+                "D. They wanted to challenge authority."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-47",
+              "type": "multiple_choice",
+              "instruction": "What was different about the New Economy?",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - There was less distinction between people’s private and working lives.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "There was less distinction between people’s private and working lives.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. There was less distinction between people’s private and working lives.",
+                "B. Working hours became more flexible.",
+                "C. People were required to spend longer in the office.",
+                "D. It became more acceptable to take work home."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-48",
+              "type": "multiple_choice",
+              "instruction": "According to the passage, many British men",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - miss the security of knowing what to wear.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "miss the security of knowing what to wear.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. miss the security of knowing what to wear.",
+                "B. choose more daring casual alternatives than foreign colleagues.",
+                "C. have become more sensitive to colleagues through 'dressing down'.",
+                "D. are now more interested in fashion as a result of 'dressing down'."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-49",
+              "type": "multiple_choice",
+              "instruction": "'Dressing down' on Fridays has made some employees",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - more anxious that they may be inappropriately dressed at times.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "more anxious that they may be inappropriately dressed at times.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. feel that they are required to express themselves through their clothes.",
+                "B. more anxious that they may be inappropriately dressed at times.",
+                "C. dress more conservatively on all other days of the week.",
+                "D. feel pressured into conforming to a dress code they disagree with."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test4-50",
+              "type": "multiple_choice",
+              "instruction": "The basic problem with the dressing down experiment was",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - employers misjudged the effect clothing has on behaviour.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "employers misjudged the effect clothing has on behaviour.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. employees felt they were being patronised.",
+                "B. employers misjudged the effect clothing has on behaviour.",
+                "C. it had no obvious impact on people's work performance.",
+                "D. employers gave their staff too much freedom in choice of clothes."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

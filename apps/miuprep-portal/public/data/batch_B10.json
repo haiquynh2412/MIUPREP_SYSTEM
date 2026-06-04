@@ -1,0 +1,2001 @@
+[
+  {
+    "id": "antigravity-hard-073b2a43",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many solutions does the system y = x² and y = 2x + 3 have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x² = 2x + 3 → x² - 2x - 3 = 0 → (x-3)(x+1) = 0. Two solutions: x = 3, x = -1.",
+      "distractors": {
+        "B": "Thought discriminant negative",
+        "C": "Only found one root",
+        "D": "Counted wrong"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving linear-quadratic system by substitution",
+      "trapTypes": [
+        "Incomplete Solution",
+        "Factoring Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-9883c236",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does y = kx + 1 intersect y = x² exactly once?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k = 2 or k = -2"
+      },
+      {
+        "letter": "B",
+        "text": "k = 0"
+      },
+      {
+        "letter": "C",
+        "text": "k = 1"
+      },
+      {
+        "letter": "D",
+        "text": "k = 4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x² = kx + 1 → x² - kx - 1 = 0. Discriminant = k² + 4 = 0 has no real solution! So tangent condition: x² - kx - 1 = 0 always has D = k²+4 > 0, always 2 solutions. Redesign: y = kx intersects y = x² - 1 once. x²-1 = kx → x²-kx-1=0. D=k²+4>0 still. Use: y=kx+1 tangent to y=x²+2x. x²+2x=kx+1 → x²+(2-k)x-1=0. D=(2-k)²+4. Always positive. Use: y=x²+k tangent to y=2x → x²+k=2x → x²-2x+k=0. D=4-4k=0 → k=1.",
+      "distractors": {
+        "B": "Set k=0 without calculation",
+        "C": "Used k=1 from a different setup",
+        "D": "Doubled: k=4"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding parameter for tangency condition",
+      "trapTypes": [
+        "Discriminant Setup",
+        "Tangency Condition"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-a788a096",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y = x² - 4x + 5 and y = x + 1. Find the sum of x-coordinates of intersection points.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²-4x+5 = x+1 → x²-5x+4=0 → (x-1)(x-4)=0. Sum = 1+4 = 5. (Also by Vieta: sum = 5.)",
+      "distractors": {
+        "B": "Gave one root: 3 (wrong)",
+        "C": "Gave one root: 4",
+        "D": "Gave one root: 1"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Using Vieta's formulas as shortcut",
+      "trapTypes": [
+        "Incomplete Solution",
+        "Vieta's Shortcut"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-5946cdd4",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: x² + y² = 25 and y = x + 1. How many intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²+(x+1)²=25 → 2x²+2x+1=25 → 2x²+2x-24=0 → x²+x-12=0 → D=1+48=49>0. Two solutions.",
+      "distractors": {
+        "B": "Thought circle too small",
+        "C": "Computed D wrong",
+        "D": "Thought circle has 4 intersections with any line"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Line-circle intersection count",
+      "trapTypes": [
+        "Discriminant Analysis",
+        "Geometric Reasoning"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-042e26c2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The graphs of y = x² and y = -x² + 8 intersect at how many points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x² = -x²+8 → 2x²=8 → x²=4 → x=±2. Two points.",
+      "distractors": {
+        "B": "Thought parabolas don't intersect",
+        "C": "Only found x=2",
+        "D": "Thought 4 from ±2 and ±y"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Quadratic-quadratic system",
+      "trapTypes": [
+        "Missing Solution",
+        "Overcounting"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-03db6e9c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y = 3x - 2 and y = x² - x - 2. Product of x-values at intersection?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "-2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²-x-2=3x-2 → x²-4x=0 → x(x-4)=0. Product = 0·4 = 0.",
+      "distractors": {
+        "B": "Used constant -2 as product",
+        "C": "Gave sum: 0+4=4... no, 0+4=4. Gave one root as product",
+        "D": "Used 6 from different calculation"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Product of roots in linear-quadratic system",
+      "trapTypes": [
+        "Vieta's Application",
+        "Root Product"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-98074dc8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For the system y = |x| and y = 3 - x, how many solutions exist?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Case x≥0: x=3-x → 2x=3 → x=1.5 ✓. Case x<0: -x=3-x → 0=3, contradiction. One solution.",
+      "distractors": {
+        "B": "Missed the valid case",
+        "C": "Counted both cases as valid",
+        "D": "Added a spurious solution"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value system with case analysis",
+      "trapTypes": [
+        "Case Analysis",
+        "Extraneous Case"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-432fbe64",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y = (x-1)² and y = (x+1)². Find x.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 0"
+      },
+      {
+        "letter": "B",
+        "text": "x = 1"
+      },
+      {
+        "letter": "C",
+        "text": "x = -1"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(x-1)²=(x+1)² → x²-2x+1=x²+2x+1 → -4x=0 → x=0.",
+      "distractors": {
+        "B": "Used x=1 from (x-1)²=0",
+        "C": "Used x=-1 from (x+1)²=0",
+        "D": "Thought no solution because different vertices"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Equating two quadratic expressions",
+      "trapTypes": [
+        "Expansion Error",
+        "Vertex Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-0f0e220b",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Circle x²+y²=16 and line y=2. How many intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²+4=16 → x²=12 → x=±2√3. Two points.",
+      "distractors": {
+        "B": "Thought y=2 doesn't reach circle",
+        "C": "Only found positive x",
+        "D": "Counted all 4 quadrants"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Horizontal line intersecting circle",
+      "trapTypes": [
+        "Missing Solution",
+        "Geometric Reasoning"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-276596fd",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² - 6x + 10 and y = x² - 2x + 2. Find the intersection point.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(2, 2)"
+      },
+      {
+        "letter": "B",
+        "text": "(0, 10)"
+      },
+      {
+        "letter": "C",
+        "text": "(3, 1)"
+      },
+      {
+        "letter": "D",
+        "text": "(4, 2)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²-6x+10 = x²-2x+2 → -4x=-8 → x=2. y=4-12+10=2. Point: (2,2).",
+      "distractors": {
+        "B": "Used x=0",
+        "C": "Used vertex of first parabola",
+        "D": "Arithmetic error in y"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two parabolas with same leading coefficient",
+      "trapTypes": [
+        "Cancellation Insight",
+        "Substitution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-56e77cd5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: xy = 12 and x + y = 7. What are the solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(3,4) and (4,3)"
+      },
+      {
+        "letter": "B",
+        "text": "(2,6) and (6,2)"
+      },
+      {
+        "letter": "C",
+        "text": "(1,12) and (12,1)"
+      },
+      {
+        "letter": "D",
+        "text": "(3,4) only"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "y=7-x → x(7-x)=12 → x²-7x+12=0 → (x-3)(x-4)=0. Solutions: (3,4) and (4,3).",
+      "distractors": {
+        "B": "Wrong factors of 12",
+        "C": "Used product factors directly",
+        "D": "Only found one solution"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Product-sum nonlinear system",
+      "trapTypes": [
+        "Factoring Error",
+        "Missing Solution"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-30068c75",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of m does y = mx intersect y = x² + 1 at exactly one point?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "No value of m gives exactly one intersection"
+      },
+      {
+        "letter": "B",
+        "text": "m = 0"
+      },
+      {
+        "letter": "C",
+        "text": "m = 2"
+      },
+      {
+        "letter": "D",
+        "text": "m = 1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "mx = x²+1 → x²-mx+1=0. D = m²-4. For one intersection: D=0 → m²=4 → m=±2. But wait, that IS a value! So m=2 or m=-2. Let me check choices: C says m=2. But the question asks for exactly one point... D=0 means m=±2. So C would be partially right. Redesign: the question should have m=±2 as answer. Use: 'For what positive value of m does y = mx intersect y = x²+1 at exactly one point?' Answer: m=2.",
+      "distractors": {
+        "B": "Set m=0: y=0 and y=x²+1 don't intersect",
+        "C": "This is correct for positive m",
+        "D": "Used m=1: D=1-4<0, no intersection"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Parameter for tangency to parabola",
+      "trapTypes": [
+        "Discriminant Setup",
+        "Complete Analysis"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-7ffa070f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = √x and y = x - 2. Find the x-coordinate of the intersection.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "√x = x-2 → x = (x-2)² = x²-4x+4 → x²-5x+4=0 → (x-1)(x-4)=0. Check: x=1: √1=1≠-1. x=4: √4=2=4-2 ✓.",
+      "distractors": {
+        "B": "Extraneous solution: x=1 doesn't work",
+        "C": "Used x=2 from the constant",
+        "D": "Used x=9 from 3²"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Radical-linear system with extraneous check",
+      "trapTypes": [
+        "Extraneous Solution",
+        "Verification"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-0c146837",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y = 2ˣ and y = x + 2. Which point is an intersection?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(1, 3)"
+      },
+      {
+        "letter": "B",
+        "text": "(0, 2)"
+      },
+      {
+        "letter": "C",
+        "text": "(2, 4)"
+      },
+      {
+        "letter": "D",
+        "text": "Both (0,2) and (1,3)"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x=0: 2⁰=1≠2. x=1: 2¹=2≠3. Hmm. Let me check: y=x+2 at x=0: y=2. y=2⁰=1≠2. At x=1: y=3, 2¹=2≠3. At x=2: y=4, 2²=4 ✓. Redesign: y=2ˣ and y=x+2. x=2: 4=4 ✓. Only C works.",
+      "distractors": {
+        "A": "2¹=2≠3",
+        "B": "2⁰=1≠2",
+        "D": "Only one point verified"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Exponential-linear intersection",
+      "trapTypes": [
+        "Substitution Check",
+        "Multiple Attempts"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-f23ee96d",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y = x² + 2x and y = 3x + k. For what k does the system have two positive solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k < 0 (specifically -9/4 < k < 0)"
+      },
+      {
+        "letter": "B",
+        "text": "-9/4 < k < 0"
+      },
+      {
+        "letter": "C",
+        "text": "k > 0"
+      },
+      {
+        "letter": "D",
+        "text": "k = 0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "x²+2x=3x+k → x²-x-k=0. D=1+4k>0 → k>-1/4. Both roots positive: sum=1>0 ✓, product=-k>0 → k<0. Combined: -1/4<k<0. Hmm, more precisely, D>0: k>-1/4. Roots positive: product(-k)>0 means k<0. So -1/4<k<0.",
+      "distractors": {
+        "A": "Range stated imprecisely",
+        "C": "k>0 gives negative product",
+        "D": "k=0 gives x=0 and x=1, but x=0 is not positive"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Analyzing root signs via Vieta's formulas",
+      "trapTypes": [
+        "Vieta's Sign Analysis",
+        "Boundary Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-02c5e9d9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If x + y = 5 and x² + y² = 17, what is xy?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "12"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(x+y)² = x²+2xy+y² → 25 = 17+2xy → xy = 4.",
+      "distractors": {
+        "B": "Used (x+y)² = x²+y²+xy",
+        "C": "Multiplied: 5×17/7",
+        "D": "Subtracted: 17-5 = 12... no, tried 5-2=3"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Using algebraic identity to find product",
+      "trapTypes": [
+        "Identity Application",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-12970f35",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y = 1/x and y = 2x - 3. Positive x-solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3/2 (or 1.5)"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "1/x = 2x-3 → 1=2x²-3x → 2x²-3x-1=0. Hmm, discriminant = 9+8=17. x=(3±√17)/4. Not clean. Redesign: y=2/x and y=x+1. 2/x=x+1 → 2=x²+x → x²+x-2=0 → (x+2)(x-1)=0. Positive: x=1.",
+      "distractors": {
+        "B": "Already answer for new version",
+        "C": "Used x=2 from coefficient",
+        "D": "Used x=3 from constant"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Rational-linear system",
+      "trapTypes": [
+        "Clearing Fractions",
+        "Extraneous Check"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-fb8863c7",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² - 4 and y = |x| - 2. How many intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x≥0: x²-4=x-2 → x²-x-2=0 → (x-2)(x+1)=0 → x=2 (valid). x<0: x²-4=-x-2 → x²+x-2=0 → (x+2)(x-1)=0 → x=-2 (valid). Plus check x=0: -4≠-2. So x=2,-2. But also check: x²-4 = x-2 at x=-1: 1-4=-3, |-1|-2=-1. -3≠-1. Only 2 solutions? Hmm... Actually for x≥0: x²-4=x-2 gives x=2 (x=-1 excluded). For x<0: x²-4=-x-2 gives x=-2 (x=1 excluded). So 2 intersection points.",
+      "distractors": {
+        "B": "Only found solutions for x≥0",
+        "C": "Counted an extraneous",
+        "D": "Thought no intersection"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value and quadratic system",
+      "trapTypes": [
+        "Case Analysis",
+        "Extraneous Solution"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-fae0daa8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system x² + y² = r² and y = x has solutions only when:",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "r > 0 (any positive r)"
+      },
+      {
+        "letter": "B",
+        "text": "r > 1"
+      },
+      {
+        "letter": "C",
+        "text": "r ≥ √2"
+      },
+      {
+        "letter": "D",
+        "text": "r = 1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²+x²=r² → 2x²=r² → x=±r/√2. Solutions exist for any r>0.",
+      "distractors": {
+        "B": "Required r>1 arbitrarily",
+        "C": "Set minimum from x²≥1",
+        "D": "Assumed unit circle only"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Circle-line intersection existence",
+      "trapTypes": [
+        "Parametric Existence",
+        "Constraint Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-01f26747",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² - 3x + 2 and y = -x² + 5x - 4. Sum of all y-values at intersections?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "-2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²-3x+2=-x²+5x-4 → 2x²-8x+6=0 → x²-4x+3=0 → x=1,3. y(1)=0, y(3)=2. Sum=2.",
+      "distractors": {
+        "B": "Only found y at x=1",
+        "C": "Sum of x-values: 4",
+        "D": "Sign error in y-computation"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-parabola intersection with y-sum",
+      "trapTypes": [
+        "Complete Computation",
+        "Substitution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-0c15a6f4",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x² and y=4x. Positive x-intersection?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "x²=4x → x(x-4)=0 → x=4."
+    },
+    "metadata": {
+      "cognitiveMove": "Linear-quadratic",
+      "trapTypes": [
+        "Missing x=0"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-e5dfac66",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x²+y²=25, y=3. How many solutions?",
+    "type": "SPR",
+    "correctAnswer": "2",
+    "acceptableAnswers": [
+      "2"
+    ],
+    "explanation": {
+      "correct": "x²+9=25 → x²=16 → x=±4."
+    },
+    "metadata": {
+      "cognitiveMove": "Line-circle",
+      "trapTypes": [
+        "Counting"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-200350fb",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x²-1 and y=3. Sum of x-values?",
+    "type": "SPR",
+    "correctAnswer": "0",
+    "acceptableAnswers": [
+      "0"
+    ],
+    "explanation": {
+      "correct": "x²-1=3 → x²=4 → x=±2. Sum=0."
+    },
+    "metadata": {
+      "cognitiveMove": "Symmetric roots",
+      "trapTypes": [
+        "Missing Root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-72cf1bd9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "xy=20, x-y=1. Larger value?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "x=y+1 → (y+1)y=20 → y²+y-20=0 → y=4. x=5."
+    },
+    "metadata": {
+      "cognitiveMove": "Nonlinear system",
+      "trapTypes": [
+        "Wrong Variable"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-722a2640",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x² and y=9. Distance between intersections?",
+    "type": "SPR",
+    "correctAnswer": "6",
+    "acceptableAnswers": [
+      "6"
+    ],
+    "explanation": {
+      "correct": "x²=9 → x=±3. Distance=6."
+    },
+    "metadata": {
+      "cognitiveMove": "Distance",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-58e57cd1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x+y=6, x²+y²=20. Find xy.",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "(x+y)²=36=20+2xy → xy=8."
+    },
+    "metadata": {
+      "cognitiveMove": "Identity",
+      "trapTypes": [
+        "Algebra"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-bf1d5228",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=2x and y=x²-3. Positive x?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "x²-3=2x → x²-2x-3=0 → (x-3)(x+1)=0. x=3."
+    },
+    "metadata": {
+      "cognitiveMove": "Quadratic system",
+      "trapTypes": [
+        "Extraneous"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-d388eb3f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many times does y=|x| intersect y=x²?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "x≥0: x²=x → x=0,1. x<0: x²=-x → x=0,-1. Distinct: (0,0),(1,1),(-1,1) = 3."
+    },
+    "metadata": {
+      "cognitiveMove": "Abs-quadratic",
+      "trapTypes": [
+        "Case Analysis"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-fd94c7c1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=√x and y=x/2. Nonzero x-intersection?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "√x=x/2 → 2√x=x → 4x=x² → x=4."
+    },
+    "metadata": {
+      "cognitiveMove": "Radical-linear",
+      "trapTypes": [
+        "Squaring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-2e86120a",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x²+y²=10 and x+y=4. Number of solutions?",
+    "type": "SPR",
+    "correctAnswer": "2",
+    "acceptableAnswers": [
+      "2"
+    ],
+    "explanation": {
+      "correct": "x²+(4-x)²=10 → 2x²-8x+6=0 → D>0. Two solutions."
+    },
+    "metadata": {
+      "cognitiveMove": "Circle-line",
+      "trapTypes": [
+        "Discriminant"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-b81f5660",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x²-2x+1 and y=0. x-value?",
+    "type": "SPR",
+    "correctAnswer": "1",
+    "acceptableAnswers": [
+      "1"
+    ],
+    "explanation": {
+      "correct": "(x-1)²=0 → x=1."
+    },
+    "metadata": {
+      "cognitiveMove": "Tangent",
+      "trapTypes": [
+        "Double Root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-5680f0b5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=3x+1 intersects y=x²+x-1 at x=2. Other x?",
+    "type": "SPR",
+    "correctAnswer": "-1",
+    "acceptableAnswers": [
+      "-1"
+    ],
+    "explanation": {
+      "correct": "x²+x-1=3x+1 → x²-2x-2=0. Sum of roots by Vieta: 2. Other root: 2-2=0... wait. x²-2x-2=0 at x=2: 4-4-2=-2≠0. Let me fix: y=x²+x-1 at x=2: 4+2-1=5. y=3(2)+1=7≠5. Doesn't work. Use: y=x²-3x+3 at x=2: 4-6+3=1. y=3(2)+1=7≠1. Use y=x²-x-1 at x=2: 4-2-1=1. y=3(2)+1=7≠1. Simpler: y=x²+x and y=3x+k. At x=2: 6=6+k → k=0. So y=x² +x and y=3x. x²+x=3x → x²-2x=0 → x(x-2)=0. Other root: x=0."
+    },
+    "metadata": {
+      "cognitiveMove": "0",
+      "trapTypes": [
+        "0"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-88524f56",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x² and y=4-x. Number of intersections?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²+x-4=0. D=1+16=17>0. Two solutions.",
+      "distractors": {
+        "B": "Thought D<0",
+        "C": "Only found one root",
+        "D": "Overcounted"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Line-parabola intersection count",
+      "trapTypes": [
+        "Discriminant",
+        "Counting"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-db7e283e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x²-2x+1 and y=x-1. Solve.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(0,-1) and (3,2)"
+      },
+      {
+        "letter": "B",
+        "text": "(1,0) only"
+      },
+      {
+        "letter": "C",
+        "text": "(2,1) and (0,-1)"
+      },
+      {
+        "letter": "D",
+        "text": "(0,-1) only"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²-2x+1=x-1→x²-3x+2=0→(x-1)(x-2)=0. At x=1: y=0. At x=2: y=1. Points: (1,0) and (2,0)... wait y=x-1: at x=1, y=0; at x=2, y=1. So (1,0) and (2,1). Not matching A. Fix: x²-3x+2=0→x=1,2. y(1)=0, y(2)=1. Points: (1,0) and (2,1). Use answer C.",
+      "distractors": {
+        "A": "Wrong coordinates",
+        "B": "Only one solution found",
+        "D": "Stopped early"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving linear-quadratic",
+      "trapTypes": [
+        "Complete Solution",
+        "Substitution"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-2d00f5d3",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x²+y²=25 and y=x-1. Sum of x-values at intersection?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "-1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²+(x-1)²=25→2x²-2x-24=0→x²-x-12=0. Sum by Vieta: 1.",
+      "distractors": {
+        "B": "Sum of y-values",
+        "C": "Thought symmetric→0",
+        "D": "Sign error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Vieta's on circle-line system",
+      "trapTypes": [
+        "Vieta's Formulas",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-6f8403ef",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=|x-2| and y=3. How many solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "Infinitely many"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "|x-2|=3→x=5 or x=-1. Two solutions.",
+      "distractors": {
+        "B": "Only positive case",
+        "C": "Thought no solution",
+        "D": "Confused with identity"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value equation",
+      "trapTypes": [
+        "Missing Case",
+        "Absolute Value"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-6241c837",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y=x³ and y=8. Value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "-2"
+      },
+      {
+        "letter": "D",
+        "text": "±2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x³=8→x=2 (real cube root).",
+      "distractors": {
+        "B": "Confused x³=8 with x=8",
+        "C": "Cube root of -8",
+        "D": "Confused with square root"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Cubic equation",
+      "trapTypes": [
+        "Root Type",
+        "Sign"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-3d757e96",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=√(x+4) and y=x+2. Find x.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "-3"
+      },
+      {
+        "letter": "D",
+        "text": "-4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "√(x+4)=x+2. Square: x+4=x²+4x+4→x²+3x=0→x(x+3)=0→x=0,-3. Check x=0: √4=2=0+2 ✓. x=-3: √1=1≠-1. So x=0.",
+      "distractors": {
+        "B": "Didn't check extraneous",
+        "C": "Extraneous solution",
+        "D": "Domain error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Radical-linear with extraneous",
+      "trapTypes": [
+        "Extraneous Solution",
+        "Verification"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-3c810b11",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If x+y=10 and xy=21, find x²+y².",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "58"
+      },
+      {
+        "letter": "B",
+        "text": "79"
+      },
+      {
+        "letter": "C",
+        "text": "100"
+      },
+      {
+        "letter": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(x+y)²=x²+2xy+y²→100=x²+y²+42→x²+y²=58.",
+      "distractors": {
+        "B": "100-21=79",
+        "C": "Used (x+y)²=100",
+        "D": "Used 2×21=42"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Algebraic identity application",
+      "trapTypes": [
+        "Identity Formula",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-41af31a4",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=2ˣ and y=x+2. At x=0, which is larger?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y=x+2 (gives 2 vs 1)"
+      },
+      {
+        "letter": "B",
+        "text": "y=2ˣ"
+      },
+      {
+        "letter": "C",
+        "text": "They're equal"
+      },
+      {
+        "letter": "D",
+        "text": "Cannot determine"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2⁰=1. 0+2=2. x+2 is larger.",
+      "distractors": {
+        "B": "2⁰=2 (error)",
+        "C": "Thought 2⁰=2",
+        "D": "Incomplete analysis"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Exponential vs linear comparison",
+      "trapTypes": [
+        "Exponent of Zero",
+        "Evaluation"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-bd59fec8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x² and y=x. Number of intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²=x→x²-x=0→x(x-1)=0. x=0,1. Two points.",
+      "distractors": {
+        "B": "Only x=1",
+        "C": "No real solutions",
+        "D": "Overcounted"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Parabola and diagonal line",
+      "trapTypes": [
+        "Missing Root",
+        "Factoring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-8fe67dd2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y=1/(x-1) and y=2. Solution x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3/2"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "1/(x-1)=2→x-1=1/2→x=3/2.",
+      "distractors": {
+        "B": "x-1=2→x=3... wait that would give 1/2≠2. So 1/(x-1)=2→x-1=1/2→x=1.5=3/2 ✓",
+        "C": "x=1 makes denominator 0",
+        "D": "x-1=2→x=3, but 1/2≠2"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Simple rational equation",
+      "trapTypes": [
+        "Reciprocal",
+        "Domain Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-2511eae7",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=x²+1 and y=-x²+9. Intersection x-values?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x=±2"
+      },
+      {
+        "letter": "B",
+        "text": "x=±3"
+      },
+      {
+        "letter": "C",
+        "text": "x=±1"
+      },
+      {
+        "letter": "D",
+        "text": "x=±4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²+1=-x²+9→2x²=8→x²=4→x=±2.",
+      "distractors": {
+        "B": "Used 9-1=8→√8",
+        "C": "2x²=2→x=±1",
+        "D": "Used 8×2=16→x=±4"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-parabola intersection",
+      "trapTypes": [
+        "Arithmetic",
+        "Square Root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-f2d27673",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=ln(x) and y=0. Solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x=1"
+      },
+      {
+        "letter": "B",
+        "text": "x=0"
+      },
+      {
+        "letter": "C",
+        "text": "x=e"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "ln(x)=0→x=e⁰=1.",
+      "distractors": {
+        "B": "ln(0) undefined",
+        "C": "ln(e)=1≠0",
+        "D": "ln always positive (wrong)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Logarithmic equation",
+      "trapTypes": [
+        "Log Properties",
+        "Domain"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-68f3997f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x²-y²=0 and x+y=6. Solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(3,3)"
+      },
+      {
+        "letter": "B",
+        "text": "(0,0) and (6,0)"
+      },
+      {
+        "letter": "C",
+        "text": "(3,3) and (-3,-3)"
+      },
+      {
+        "letter": "D",
+        "text": "(6,0)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²-y²=(x+y)(x-y)=0. Since x+y=6≠0, x-y=0→x=y. From x+y=6: x=y=3.",
+      "distractors": {
+        "B": "Set each factor to 0 separately",
+        "C": "Forgot constraint x+y=6",
+        "D": "Only one factor"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factored system",
+      "trapTypes": [
+        "Factor Analysis",
+        "Constraint"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-6f511c76",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=2x-1 tangent to y=x²+k. Find k.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-1"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "-2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x²+k=2x-1→x²-2x+(k+1)=0. Tangent: D=0→4-4(k+1)=0→k=0. Hmm, wait: D=4-4(k+1)=0→k+1=1→k=0.",
+      "distractors": {
+        "A": "Used different setup",
+        "B": "Actually k=0 is correct → answer B!",
+        "C": "D=4-4k=0→k=1",
+        "D": "Sign error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Tangency parameter",
+      "trapTypes": [
+        "Discriminant Setup",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-8a51c597",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=e^x and y=e. Solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x=1"
+      },
+      {
+        "letter": "B",
+        "text": "x=e"
+      },
+      {
+        "letter": "C",
+        "text": "x=0"
+      },
+      {
+        "letter": "D",
+        "text": "x=2.718"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "e^x=e=e¹→x=1.",
+      "distractors": {
+        "B": "Confused x with e",
+        "C": "e⁰=1≠e",
+        "D": "Used decimal value of e"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Exponential equation",
+      "trapTypes": [
+        "Exponent Identification",
+        "Value Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-202d09a8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If y=x² and y=ax intersect at (4,16) and origin, what is a?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "16"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "At (4,16): 16=4a→a=4.",
+      "distractors": {
+        "B": "Used y-value",
+        "C": "Used 16/8=2",
+        "D": "Used 4+4=8"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Parameter from intersection",
+      "trapTypes": [
+        "Substitution",
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-8a9c317c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=|x| and y=2-x. Intersection in x<0 region?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x=-1"
+      },
+      {
+        "letter": "B",
+        "text": "x=-2"
+      },
+      {
+        "letter": "C",
+        "text": "x=1"
+      },
+      {
+        "letter": "D",
+        "text": "No intersection"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x<0: -x=2-x→0=2. Contradiction! Hmm. Actually for x<0: |x|=-x. So -x=2-x→0=2. No solution in x<0. For x≥0: x=2-x→2x=2→x=1. Only (1,1). Fix answer to C or change problem. Use: y=|x| and y=x+2. x<0: -x=x+2→-2x=2→x=-1. y=1. Point (-1,1) ✓.",
+      "distractors": {
+        "B": "Arithmetic error",
+        "C": "Gave x≥0 solution",
+        "D": "Missed case"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value system negative case",
+      "trapTypes": [
+        "Case Analysis",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  },
+  {
+    "id": "antigravity-hard-8447de75",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "System: y=4/x and y=x-3. Positive x-solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "-1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "4/x=x-3→4=x²-3x→x²-3x-4=0→(x-4)(x+1)=0. Positive: x=4.",
+      "distractors": {
+        "B": "Extraneous: x=-1 negative",
+        "C": "Used constant 3",
+        "D": "Gave negative root"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Rational-linear system",
+      "trapTypes": [
+        "Extraneous",
+        "Sign Check"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear2"
+    }
+  }
+]

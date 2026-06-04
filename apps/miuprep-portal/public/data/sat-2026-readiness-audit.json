@@ -1,0 +1,1086 @@
+{
+  "generatedAt": "2026-05-30",
+  "basis": {
+    "officialReferences": [
+      {
+        "label": "College Board SAT content domains",
+        "url": "https://satsuite.collegeboard.org/practice/content-domains"
+      },
+      {
+        "label": "College Board SAT structure",
+        "url": "https://satsuite.collegeboard.org/sat/whats-on-the-test/structure"
+      },
+      {
+        "label": "College Board Math student-produced responses",
+        "url": "https://satsuite.collegeboard.org/sat/whats-on-the-test/math/student-produced"
+      },
+      {
+        "label": "College Board Assessment Framework for the Digital SAT Suite",
+        "url": "https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf"
+      }
+    ],
+    "rwOfficialDomainPct": {
+      "Information and Ideas": 26,
+      "Craft and Structure": 28,
+      "Expression of Ideas": 20,
+      "Standard English Conventions": 26
+    },
+    "mathOfficialDomainPct": {
+      "Algebra": 35,
+      "Advanced Math": 35,
+      "Problem-Solving and Data Analysis": 15,
+      "Geometry and Trigonometry": 15
+    },
+    "mathOfficialFormatPct": {
+      "multipleChoice": 75,
+      "studentProducedResponse": 25
+    },
+    "officialStructure": {
+      "readingWriting": "54 questions, 64 minutes, two 32-minute modules",
+      "math": "44 questions, 70 minutes, two 35-minute modules",
+      "total": "98 questions, 134 minutes",
+      "adaptive": "two-stage adaptive; first module routes to easier or harder second module"
+    },
+    "auditPolicy": {
+      "coreReadyReviewed": "reviewStatus reviewed, not blocked/rejected, not hidden_duplicate, not remedial_pool",
+      "publicCandidateReadyReviewed": "core-ready public_candidate rows from public-safe source types with contentAudit pass",
+      "balanceTolerancePctPoints": 3.0
+    }
+  },
+  "inventory": {
+    "questionFiles": [
+      "antigravity-bank.json",
+      "archive-source-ai-bank.json",
+      "kaplan-sat-math-ai-bank.json",
+      "opensat-pinesat.json",
+      "private-vault-archive-bank.json",
+      "sat-1590-elite-ai-bank.json",
+      "sat-king-supplemental-ai-bank.json",
+      "sat-studio-foundation-bank.json"
+    ],
+    "loadedTotal": 10523,
+    "nonBlockedForStudy": 10523,
+    "studyVisibleExcludingHidden": 10523,
+    "coreReadyReviewed": 9750,
+    "publicCandidateReadyReviewed": 8538,
+    "blockedOrRejected": 0,
+    "hiddenDuplicate": 0,
+    "remedialPool": 773,
+    "needsReviewOrContentAuditNotPass": 0,
+    "familyOnlyNonBlocked": 4877,
+    "sat1590NonBlocked": 661,
+    "sat1590CoreReady": 627,
+    "strict1600HardNonBlocked": 4507,
+    "sourceCountsLoaded": {
+      "ai_generated": 940,
+      "antigravity": 4712,
+      "foundation": 219,
+      "opensat": 1026,
+      "private_vault": 165,
+      "sat_1590": 661,
+      "sat_king": 354,
+      "sat_studio_original": 2420,
+      "unknown": 26
+    },
+    "sourceCountsCoreReady": {
+      "ai_generated": 575,
+      "antigravity": 4467,
+      "foundation": 219,
+      "opensat": 1026,
+      "private_vault": 165,
+      "sat_1590": 627,
+      "sat_king": 349,
+      "sat_studio_original": 2302,
+      "unknown": 20
+    },
+    "sectionCountsCoreReady": {
+      "Math": 5543,
+      "Reading and Writing": 4207
+    },
+    "poolCountsLoaded": {
+      "core_pool": 9750,
+      "remedial_pool": 773
+    }
+  },
+  "domainBalance": {
+    "coreReadyReadingWriting": [
+      {
+        "domain": "Information and Ideas",
+        "count": 1174,
+        "totalInSectionBasis": 4207,
+        "actualPct": 27.9,
+        "officialPct": 26,
+        "deltaPctPoints": 1.9,
+        "targetCountAtCurrentTotal": 1094,
+        "deltaCountAtCurrentTotal": 80,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 1143,
+        "totalInSectionBasis": 4207,
+        "actualPct": 27.2,
+        "officialPct": 28,
+        "deltaPctPoints": -0.8,
+        "targetCountAtCurrentTotal": 1178,
+        "deltaCountAtCurrentTotal": -35,
+        "additionalNeededIfOnlyAddingThisDomain": 49,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 806,
+        "totalInSectionBasis": 4207,
+        "actualPct": 19.2,
+        "officialPct": 20,
+        "deltaPctPoints": -0.8,
+        "targetCountAtCurrentTotal": 841,
+        "deltaCountAtCurrentTotal": -35,
+        "additionalNeededIfOnlyAddingThisDomain": 45,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 1084,
+        "totalInSectionBasis": 4207,
+        "actualPct": 25.8,
+        "officialPct": 26,
+        "deltaPctPoints": -0.2,
+        "targetCountAtCurrentTotal": 1094,
+        "deltaCountAtCurrentTotal": -10,
+        "additionalNeededIfOnlyAddingThisDomain": 14,
+        "balance": "near_target"
+      }
+    ],
+    "coreReadyMath": [
+      {
+        "domain": "Algebra",
+        "count": 1840,
+        "totalInSectionBasis": 5543,
+        "actualPct": 33.2,
+        "officialPct": 35,
+        "deltaPctPoints": -1.8,
+        "targetCountAtCurrentTotal": 1940,
+        "deltaCountAtCurrentTotal": -100,
+        "additionalNeededIfOnlyAddingThisDomain": 154,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 1885,
+        "totalInSectionBasis": 5543,
+        "actualPct": 34.0,
+        "officialPct": 35,
+        "deltaPctPoints": -1.0,
+        "targetCountAtCurrentTotal": 1940,
+        "deltaCountAtCurrentTotal": -55,
+        "additionalNeededIfOnlyAddingThisDomain": 85,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 945,
+        "totalInSectionBasis": 5543,
+        "actualPct": 17.0,
+        "officialPct": 15,
+        "deltaPctPoints": 2.0,
+        "targetCountAtCurrentTotal": 831,
+        "deltaCountAtCurrentTotal": 114,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 873,
+        "totalInSectionBasis": 5543,
+        "actualPct": 15.7,
+        "officialPct": 15,
+        "deltaPctPoints": 0.7,
+        "targetCountAtCurrentTotal": 831,
+        "deltaCountAtCurrentTotal": 42,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      }
+    ],
+    "publicReadyReadingWriting": [
+      {
+        "domain": "Information and Ideas",
+        "count": 992,
+        "totalInSectionBasis": 3437,
+        "actualPct": 28.9,
+        "officialPct": 26,
+        "deltaPctPoints": 2.9,
+        "targetCountAtCurrentTotal": 894,
+        "deltaCountAtCurrentTotal": 98,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 893,
+        "totalInSectionBasis": 3437,
+        "actualPct": 26.0,
+        "officialPct": 28,
+        "deltaPctPoints": -2.0,
+        "targetCountAtCurrentTotal": 962,
+        "deltaCountAtCurrentTotal": -69,
+        "additionalNeededIfOnlyAddingThisDomain": 97,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 757,
+        "totalInSectionBasis": 3437,
+        "actualPct": 22.0,
+        "officialPct": 20,
+        "deltaPctPoints": 2.0,
+        "targetCountAtCurrentTotal": 687,
+        "deltaCountAtCurrentTotal": 70,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 795,
+        "totalInSectionBasis": 3437,
+        "actualPct": 23.1,
+        "officialPct": 26,
+        "deltaPctPoints": -2.9,
+        "targetCountAtCurrentTotal": 894,
+        "deltaCountAtCurrentTotal": -99,
+        "additionalNeededIfOnlyAddingThisDomain": 134,
+        "balance": "near_target"
+      }
+    ],
+    "publicReadyMath": [
+      {
+        "domain": "Algebra",
+        "count": 1714,
+        "totalInSectionBasis": 5101,
+        "actualPct": 33.6,
+        "officialPct": 35,
+        "deltaPctPoints": -1.4,
+        "targetCountAtCurrentTotal": 1785,
+        "deltaCountAtCurrentTotal": -71,
+        "additionalNeededIfOnlyAddingThisDomain": 110,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 1761,
+        "totalInSectionBasis": 5101,
+        "actualPct": 34.5,
+        "officialPct": 35,
+        "deltaPctPoints": -0.5,
+        "targetCountAtCurrentTotal": 1785,
+        "deltaCountAtCurrentTotal": -24,
+        "additionalNeededIfOnlyAddingThisDomain": 38,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 865,
+        "totalInSectionBasis": 5101,
+        "actualPct": 17.0,
+        "officialPct": 15,
+        "deltaPctPoints": 2.0,
+        "targetCountAtCurrentTotal": 765,
+        "deltaCountAtCurrentTotal": 100,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 761,
+        "totalInSectionBasis": 5101,
+        "actualPct": 14.9,
+        "officialPct": 15,
+        "deltaPctPoints": -0.1,
+        "targetCountAtCurrentTotal": 765,
+        "deltaCountAtCurrentTotal": -4,
+        "additionalNeededIfOnlyAddingThisDomain": 5,
+        "balance": "near_target"
+      }
+    ],
+    "nonBlockedReadingWriting": [
+      {
+        "domain": "Information and Ideas",
+        "count": 1234,
+        "totalInSectionBasis": 4439,
+        "actualPct": 27.8,
+        "officialPct": 26,
+        "deltaPctPoints": 1.8,
+        "targetCountAtCurrentTotal": 1154,
+        "deltaCountAtCurrentTotal": 80,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 1163,
+        "totalInSectionBasis": 4439,
+        "actualPct": 26.2,
+        "officialPct": 28,
+        "deltaPctPoints": -1.8,
+        "targetCountAtCurrentTotal": 1243,
+        "deltaCountAtCurrentTotal": -80,
+        "additionalNeededIfOnlyAddingThisDomain": 112,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 830,
+        "totalInSectionBasis": 4439,
+        "actualPct": 18.7,
+        "officialPct": 20,
+        "deltaPctPoints": -1.3,
+        "targetCountAtCurrentTotal": 888,
+        "deltaCountAtCurrentTotal": -58,
+        "additionalNeededIfOnlyAddingThisDomain": 73,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 1212,
+        "totalInSectionBasis": 4439,
+        "actualPct": 27.3,
+        "officialPct": 26,
+        "deltaPctPoints": 1.3,
+        "targetCountAtCurrentTotal": 1154,
+        "deltaCountAtCurrentTotal": 58,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      }
+    ],
+    "nonBlockedMath": [
+      {
+        "domain": "Algebra",
+        "count": 1976,
+        "totalInSectionBasis": 6084,
+        "actualPct": 32.5,
+        "officialPct": 35,
+        "deltaPctPoints": -2.5,
+        "targetCountAtCurrentTotal": 2129,
+        "deltaCountAtCurrentTotal": -153,
+        "additionalNeededIfOnlyAddingThisDomain": 237,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 2054,
+        "totalInSectionBasis": 6084,
+        "actualPct": 33.8,
+        "officialPct": 35,
+        "deltaPctPoints": -1.2,
+        "targetCountAtCurrentTotal": 2129,
+        "deltaCountAtCurrentTotal": -75,
+        "additionalNeededIfOnlyAddingThisDomain": 117,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 1043,
+        "totalInSectionBasis": 6084,
+        "actualPct": 17.1,
+        "officialPct": 15,
+        "deltaPctPoints": 2.1,
+        "targetCountAtCurrentTotal": 913,
+        "deltaCountAtCurrentTotal": 130,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 1011,
+        "totalInSectionBasis": 6084,
+        "actualPct": 16.6,
+        "officialPct": 15,
+        "deltaPctPoints": 1.6,
+        "targetCountAtCurrentTotal": 913,
+        "deltaCountAtCurrentTotal": 98,
+        "additionalNeededIfOnlyAddingThisDomain": 0,
+        "balance": "near_target"
+      }
+    ]
+  },
+  "skillCoverage": {
+    "coreReadyReadingWriting": [
+      {
+        "skill": "Central Ideas and Details",
+        "count": 379,
+        "hardCount": 121,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Command of Evidence",
+        "count": 488,
+        "hardCount": 208,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Inferences",
+        "count": 307,
+        "hardCount": 139,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Words in Context",
+        "count": 426,
+        "hardCount": 136,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Text Structure and Purpose",
+        "count": 451,
+        "hardCount": 155,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Cross-Text Connections",
+        "count": 266,
+        "hardCount": 109,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Rhetorical Synthesis",
+        "count": 383,
+        "hardCount": 210,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Transitions",
+        "count": 423,
+        "hardCount": 154,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Boundaries",
+        "count": 700,
+        "hardCount": 246,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Form, Structure, and Sense",
+        "count": 384,
+        "hardCount": 141,
+        "gridInCount": 0
+      }
+    ],
+    "coreReadyMathSubskills": [
+      {
+        "skill": "Linear equations in one variable",
+        "count": 350,
+        "hardCount": 173,
+        "gridInCount": 106
+      },
+      {
+        "skill": "Linear functions",
+        "count": 464,
+        "hardCount": 227,
+        "gridInCount": 114
+      },
+      {
+        "skill": "Linear equations in two variables",
+        "count": 291,
+        "hardCount": 169,
+        "gridInCount": 95
+      },
+      {
+        "skill": "Systems of two linear equations in two variables",
+        "count": 448,
+        "hardCount": 287,
+        "gridInCount": 105
+      },
+      {
+        "skill": "Linear inequalities in one or two variables",
+        "count": 286,
+        "hardCount": 189,
+        "gridInCount": 75
+      },
+      {
+        "skill": "Equivalent expressions",
+        "count": 416,
+        "hardCount": 238,
+        "gridInCount": 97
+      },
+      {
+        "skill": "Nonlinear functions",
+        "count": 590,
+        "hardCount": 395,
+        "gridInCount": 168
+      },
+      {
+        "skill": "Nonlinear equations in one variable",
+        "count": 324,
+        "hardCount": 233,
+        "gridInCount": 119
+      },
+      {
+        "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+        "count": 556,
+        "hardCount": 316,
+        "gridInCount": 91
+      },
+      {
+        "skill": "Ratios, rates, proportional relationships, and units",
+        "count": 185,
+        "hardCount": 47,
+        "gridInCount": 50
+      },
+      {
+        "skill": "Percentages",
+        "count": 165,
+        "hardCount": 67,
+        "gridInCount": 54
+      },
+      {
+        "skill": "One-variable data: distributions and measures of center and spread",
+        "count": 203,
+        "hardCount": 61,
+        "gridInCount": 55
+      },
+      {
+        "skill": "Two-variable data: models and scatterplots",
+        "count": 171,
+        "hardCount": 53,
+        "gridInCount": 70
+      },
+      {
+        "skill": "Probability and conditional probability",
+        "count": 86,
+        "hardCount": 46,
+        "gridInCount": 22
+      },
+      {
+        "skill": "Inference from sample statistics and margin of error",
+        "count": 60,
+        "hardCount": 27,
+        "gridInCount": 1
+      },
+      {
+        "skill": "Evaluating statistical claims: observational studies and experiments",
+        "count": 73,
+        "hardCount": 39,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Area and volume",
+        "count": 198,
+        "hardCount": 87,
+        "gridInCount": 81
+      },
+      {
+        "skill": "Lines, angles, and triangles",
+        "count": 215,
+        "hardCount": 53,
+        "gridInCount": 94
+      },
+      {
+        "skill": "Right triangles and trigonometry",
+        "count": 199,
+        "hardCount": 78,
+        "gridInCount": 56
+      },
+      {
+        "skill": "Circles",
+        "count": 261,
+        "hardCount": 101,
+        "gridInCount": 65
+      }
+    ],
+    "publicReadyReadingWriting": [
+      {
+        "skill": "Central Ideas and Details",
+        "count": 267,
+        "hardCount": 87,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Command of Evidence",
+        "count": 487,
+        "hardCount": 207,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Inferences",
+        "count": 238,
+        "hardCount": 128,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Words in Context",
+        "count": 339,
+        "hardCount": 130,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Text Structure and Purpose",
+        "count": 296,
+        "hardCount": 115,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Cross-Text Connections",
+        "count": 258,
+        "hardCount": 105,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Rhetorical Synthesis",
+        "count": 350,
+        "hardCount": 190,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Transitions",
+        "count": 407,
+        "hardCount": 151,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Boundaries",
+        "count": 415,
+        "hardCount": 208,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Form, Structure, and Sense",
+        "count": 380,
+        "hardCount": 137,
+        "gridInCount": 0
+      }
+    ],
+    "publicReadyMathSubskills": [
+      {
+        "skill": "Linear equations in one variable",
+        "count": 290,
+        "hardCount": 169,
+        "gridInCount": 106
+      },
+      {
+        "skill": "Linear functions",
+        "count": 400,
+        "hardCount": 212,
+        "gridInCount": 114
+      },
+      {
+        "skill": "Linear equations in two variables",
+        "count": 290,
+        "hardCount": 169,
+        "gridInCount": 95
+      },
+      {
+        "skill": "Systems of two linear equations in two variables",
+        "count": 447,
+        "hardCount": 286,
+        "gridInCount": 105
+      },
+      {
+        "skill": "Linear inequalities in one or two variables",
+        "count": 286,
+        "hardCount": 189,
+        "gridInCount": 75
+      },
+      {
+        "skill": "Equivalent expressions",
+        "count": 412,
+        "hardCount": 237,
+        "gridInCount": 97
+      },
+      {
+        "skill": "Nonlinear functions",
+        "count": 590,
+        "hardCount": 395,
+        "gridInCount": 168
+      },
+      {
+        "skill": "Nonlinear equations in one variable",
+        "count": 324,
+        "hardCount": 233,
+        "gridInCount": 119
+      },
+      {
+        "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+        "count": 436,
+        "hardCount": 269,
+        "gridInCount": 91
+      },
+      {
+        "skill": "Ratios, rates, proportional relationships, and units",
+        "count": 125,
+        "hardCount": 36,
+        "gridInCount": 50
+      },
+      {
+        "skill": "Percentages",
+        "count": 165,
+        "hardCount": 67,
+        "gridInCount": 54
+      },
+      {
+        "skill": "One-variable data: distributions and measures of center and spread",
+        "count": 184,
+        "hardCount": 59,
+        "gridInCount": 55
+      },
+      {
+        "skill": "Two-variable data: models and scatterplots",
+        "count": 171,
+        "hardCount": 53,
+        "gridInCount": 70
+      },
+      {
+        "skill": "Probability and conditional probability",
+        "count": 85,
+        "hardCount": 46,
+        "gridInCount": 22
+      },
+      {
+        "skill": "Inference from sample statistics and margin of error",
+        "count": 60,
+        "hardCount": 27,
+        "gridInCount": 1
+      },
+      {
+        "skill": "Evaluating statistical claims: observational studies and experiments",
+        "count": 73,
+        "hardCount": 39,
+        "gridInCount": 0
+      },
+      {
+        "skill": "Area and volume",
+        "count": 191,
+        "hardCount": 86,
+        "gridInCount": 81
+      },
+      {
+        "skill": "Lines, angles, and triangles",
+        "count": 209,
+        "hardCount": 51,
+        "gridInCount": 94
+      },
+      {
+        "skill": "Right triangles and trigonometry",
+        "count": 136,
+        "hardCount": 67,
+        "gridInCount": 56
+      },
+      {
+        "skill": "Circles",
+        "count": 225,
+        "hardCount": 89,
+        "gridInCount": 65
+      }
+    ],
+    "thinCoreReadyReadingWriting": [],
+    "thinCoreReadyMathSubskills": [],
+    "thinPublicReadyReadingWriting": [],
+    "thinPublicReadyMathSubskills": []
+  },
+  "difficulty": {
+    "allLoaded": {
+      "Easy": {
+        "count": 2640,
+        "pct": 25.1
+      },
+      "Medium": {
+        "count": 3222,
+        "pct": 30.6
+      },
+      "Hard": {
+        "count": 4661,
+        "pct": 44.3
+      },
+      "Unknown": {
+        "count": 0,
+        "pct": 0.0
+      }
+    },
+    "nonBlockedForStudy": {
+      "Easy": {
+        "count": 2640,
+        "pct": 25.1
+      },
+      "Medium": {
+        "count": 3222,
+        "pct": 30.6
+      },
+      "Hard": {
+        "count": 4661,
+        "pct": 44.3
+      },
+      "Unknown": {
+        "count": 0,
+        "pct": 0.0
+      }
+    },
+    "coreReadyReviewed": {
+      "Easy": {
+        "count": 2392,
+        "pct": 24.5
+      },
+      "Medium": {
+        "count": 2851,
+        "pct": 29.2
+      },
+      "Hard": {
+        "count": 4507,
+        "pct": 46.2
+      },
+      "Unknown": {
+        "count": 0,
+        "pct": 0.0
+      }
+    },
+    "publicCandidateReadyReviewed": {
+      "Easy": {
+        "count": 2138,
+        "pct": 25.0
+      },
+      "Medium": {
+        "count": 2161,
+        "pct": 25.3
+      },
+      "Hard": {
+        "count": 4239,
+        "pct": 49.6
+      },
+      "Unknown": {
+        "count": 0,
+        "pct": 0.0
+      }
+    },
+    "sat1590CoreReady": {
+      "Easy": {
+        "count": 0,
+        "pct": 0.0
+      },
+      "Medium": {
+        "count": 129,
+        "pct": 20.6
+      },
+      "Hard": {
+        "count": 498,
+        "pct": 79.4
+      },
+      "Unknown": {
+        "count": 0,
+        "pct": 0.0
+      }
+    }
+  },
+  "formatAndFidelity": {
+    "coreReady": {
+      "mathTotal": 5543,
+      "mathGridIn": 1518,
+      "mathGridInPct": 27.4,
+      "mathGridInOfficialPct": 25,
+      "mathGridInDeltaPctPoints": 2.4,
+      "mathGridInAdditionalNeededIfOnlyAddingSPR": 0,
+      "hardMathTotal": 2888,
+      "hardMultiStepMathHeuristic": 525,
+      "hardMultiStepMathPctOfHardMath": 18.2
+    },
+    "publicCandidateReady": {
+      "mathTotal": 5101,
+      "mathGridIn": 1518,
+      "mathGridInPct": 29.8,
+      "mathGridInOfficialPct": 25,
+      "mathGridInDeltaPctPoints": 4.8,
+      "mathGridInAdditionalNeededIfOnlyAddingSPR": 0,
+      "hardMathTotal": 2781,
+      "hardMultiStepMathHeuristic": 512,
+      "hardMultiStepMathPctOfHardMath": 18.4
+    },
+    "sat1590CoreReady": {
+      "mathTotal": 387,
+      "mathGridIn": 225,
+      "mathGridInPct": 58.1,
+      "mathGridInOfficialPct": 25,
+      "mathGridInDeltaPctPoints": 33.1,
+      "mathGridInAdditionalNeededIfOnlyAddingSPR": 0,
+      "hardMathTotal": 306,
+      "hardMultiStepMathHeuristic": 4,
+      "hardMultiStepMathPctOfHardMath": 1.3
+    },
+    "templateRepetitionRiskCoreReady": [
+      {
+        "count": 22,
+        "sampleSkeleton": "which expression is equivalent to (x + #)(x + #) - x(x + #)?"
+      },
+      {
+        "count": 15,
+        "sampleSkeleton": "a line passes through (#, #) and (#, #). what is the slope of the line?"
+      },
+      {
+        "count": 15,
+        "sampleSkeleton": "the system x + 2y = # and 3x - y = # has solution (x, y). what is the value of x + y?"
+      },
+      {
+        "count": 14,
+        "sampleSkeleton": "the function f is defined by f(x) = #(#)x. what is the value of f(#)?"
+      },
+      {
+        "count": 13,
+        "sampleSkeleton": "the mean of five numbers is #. four of the numbers are #, #, #, and #. what is the fifth number?"
+      },
+      {
+        "count": 13,
+        "sampleSkeleton": "function f is linear. the table gives two values: f(#) = -# and f(#) = #. what is the slope of the graph of y = f(x)?"
+      },
+      {
+        "count": 13,
+        "sampleSkeleton": "for g(x) = #(x - #)^# + #, what is g(#)?"
+      },
+      {
+        "count": 11,
+        "sampleSkeleton": "a system of equations is shown: x + y = # x - y = # what is the value of x?"
+      },
+      {
+        "count": 11,
+        "sampleSkeleton": "four values in a data set are #, #, #, and #. if the mean of the five-value data set is #, what is the fifth value?"
+      },
+      {
+        "count": 11,
+        "sampleSkeleton": "a population starts at # hundred and doubles each year. after # years, how many hundreds are in the population?"
+      },
+      {
+        "count": 10,
+        "sampleSkeleton": "what is #% of #?"
+      },
+      {
+        "count": 10,
+        "sampleSkeleton": "what is the solution to the given equation? √(x + #) = #"
+      }
+    ],
+    "sampleHardMultiStepMathIds": [
+      "antigravity-9caa993b",
+      "antigravity-081b5f45",
+      "antigravity-56b3240f",
+      "antigravity-15b60b30",
+      "antigravity-0d6d8012",
+      "antigravity-d88da3ef",
+      "antigravity-72ef374a",
+      "antigravity-82811e06",
+      "antigravity-3c84efe6",
+      "antigravity-dae78e84",
+      "antigravity-4737c75a",
+      "antigravity-4a3198d7",
+      "antigravity-61adea87",
+      "antigravity-10a2ea20",
+      "antigravity-220e2107"
+    ],
+    "samplePublicGridInIds": [
+      "antigravity-9caa993b",
+      "antigravity-081b5f45",
+      "antigravity-56b3240f",
+      "antigravity-15b60b30",
+      "antigravity-25ff60af",
+      "antigravity-82a67a0e",
+      "antigravity-07929b81",
+      "antigravity-24f94d54",
+      "antigravity-13c0ecc5",
+      "antigravity-c16e9417",
+      "antigravity-cf380425",
+      "antigravity-7450f692",
+      "antigravity-dcfec2da",
+      "antigravity-2f88ed51",
+      "antigravity-7f9a7798"
+    ]
+  },
+  "balancePlan": {
+    "domainActions": [],
+    "nextGenerationTargets": [
+      {
+        "section": "Reading and Writing",
+        "domain": "Expression of Ideas",
+        "skills": [
+          "Transitions",
+          "Rhetorical Synthesis"
+        ],
+        "priority": "highest_rw_gap",
+        "guidance": "Add original medium/hard items with varied student-notes contexts and tighter transition traps."
+      },
+      {
+        "section": "Reading and Writing",
+        "domain": "Craft and Structure",
+        "skills": [
+          "Words in Context",
+          "Text Structure and Purpose",
+          "Cross-Text Connections"
+        ],
+        "priority": "rw_gap",
+        "guidance": "Add short-passage hard items with real rhetorical purpose and paired-text reasoning."
+      },
+      {
+        "section": "Math",
+        "domain": "Algebra",
+        "skills": [
+          "Linear equations in two variables",
+          "Linear functions",
+          "Systems of two linear equations in two variables",
+          "Linear inequalities in one or two variables"
+        ],
+        "priority": "highest_math_gap",
+        "guidance": "Prefer hard and SPR forms, especially word problems and graph/table contexts."
+      },
+      {
+        "section": "Math",
+        "domain": "Advanced Math",
+        "skills": [
+          "Equivalent expressions",
+          "Nonlinear functions",
+          "Nonlinear equations in one variable",
+          "Nonlinear equations in one variable and systems of equations in two variables"
+        ],
+        "priority": "math_gap",
+        "guidance": "Prefer 1590-level structure, parameter, discriminant, and equivalent-form items."
+      },
+      {
+        "section": "Math",
+        "domain": "Grid-in/SPR",
+        "skills": [
+          "Algebra",
+          "Advanced Math"
+        ],
+        "priority": "format_gap",
+        "guidance": "Raise core-ready Math SPR toward the official 25% target without adding easy numeric clones."
+      }
+    ],
+    "deprioritizationPolicy": [
+      "Do not delete surplus domains; route surplus easy/medium generated clones to remedial_pool or topic-specific drills.",
+      "Keep hard, high-quality variants when the context, trap, or method differs materially.",
+      "Keep private/vault/archive rows out of public export unless rewritten as original public-safe drafts."
+    ]
+  },
+  "publicSafety": {
+    "publicCandidateReadyDefinition": "visibility public_candidate, publicationStatus public_candidate*, contentAudit pass, sourceType in public-safe list",
+    "publicSafeSourceTypes": [
+      "ai_generated",
+      "antigravity",
+      "foundation",
+      "original",
+      "sat_1590",
+      "sat_king",
+      "sat_studio_original"
+    ],
+    "privateOnlySourceTypes": [
+      "antigravity",
+      "private_vault"
+    ],
+    "notes": [
+      "Official or commercial source text should remain metadata-only/private and should not be exported publicly.",
+      "OpenSAT/foundation rows can support local study, but public release should require source/license and content audit pass.",
+      "SAT 1590 and SAT King rows are the best public-candidate pools, but still need human pedagogical review before broad release."
+    ]
+  },
+  "scorecard": {
+    "domainBalanceCore": 7.0,
+    "skillCoverageCore": 7.5,
+    "hardAnd1590Coverage": 8.0,
+    "mathSprFidelity": 6.0,
+    "publicReleaseReadiness": 6.5,
+    "summary": "Core inventory is large and strong for hard practice, but normal practice overweights Standard English, Geometry, and Data Analysis while underweighting Expression of Ideas, Algebra, Advanced Math, and Math SPR. Public-ready balance is narrower than family/local balance."
+  }
+}

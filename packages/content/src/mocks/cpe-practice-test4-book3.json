@@ -1,0 +1,1280 @@
+{
+  "id": "cpe-practice-test4-book3",
+  "title": "CPE C2 Proficiency Reading & Use of English - Practice Test 4 (Book 3)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Practice Tests 3, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-b3t4-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Part 1: Cloze Texts</h2><h3 class='text-lg font-bold mb-2 text-slate-800'>Faraday and Lighthouses</h3><p class='mb-4 text-slate-800 text-base leading-relaxed'>Faraday was (1) ______ adviser to Trinity House in 1836, a job he held for almost 30 years. By the 1830s, he had already made the greatest (2) ______ of his career, including the principle of the electric motor, the transformer and the dynamo, work that (3) ______ the way for the development of technologies based on electricity. The research he did for Trinity House was far less exciting. Over the years, he experimented with different oils, looking for one that would burn brighter and more (4) ______ . He checked out new designs of lamps and made improvements to the optics. Lighthouse keepers had a lot of problems with water. One which constantly arose was the amount of condensation that ran down the windows of the room at the top of the tower that (5) ______ the oil lamps. Condensation reduced the intensity of the light beam and in cold weather the water froze, (6) ______ the light still more.</p><h3 class='text-lg font-bold mb-2 text-slate-800'>Comet Linear</h3><p class='mb-4 text-slate-800 text-base leading-relaxed'>Astronomers may have taken a step towards understanding the origins of Earth's oceans - thanks to a (7) ______ comet. All the evidence suggests that when the Earth was formed it was too hot to (8) ______ water. So, astronomers proposed that the oceans came from comets bombarding Earth shortly after its formation.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b3t4-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-b3t4-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. applied",
+                "B. positioned",
+                "C. appointed",
+                "D. allotted"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'appointed adviser' là cấu trúc bị động chỉ việc bổ nhiệm chức vụ: 'Faraday was appointed adviser...' (Faraday được bổ nhiệm làm cố vấn...). Bẫy: 'applied' là ứng dụng/nộp đơn, 'positioned' là định vị, 'allotted' là phân bổ/chia phần. Chuyên đề: Từ vựng — Động từ chỉ chức vụ.",
+              "answerLocation": "Faraday was appointed adviser to Trinity House in 1836",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. breakthroughs",
+                "B. breakdowns",
+                "C. breakouts",
+                "D. breakaways"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'breakthroughs' (bước đột phá) là danh từ ghép phù hợp nhất khi nói về thành tựu khoa học lỗi lạc ('greatest breakthroughs of his career'). Bẫy: 'breakdowns' là sự hỏng hóc/suy sụp, 'breakouts' là sự vượt ngục/bùng phát dịch bệnh, 'breakaways' là sự ly khai. Chuyên đề: Word formation — Compound nouns.",
+              "answerLocation": "made the greatest breakthroughs of his career",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. set",
+                "B. established",
+                "C. made",
+                "D. paved"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Cụm từ cố định (collocation) 'pave the way for something' nghĩa là 'mở đường / chuẩn bị nền tảng cho cái gì'. Bẫy: 'set the way' hay 'made the way' không phải collocations chuẩn trong ngữ cảnh này. Chuyên đề: Collocations. Correct option focus: D - paved. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "work that paved the way for the development of technologies",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. efficiently",
+                "B. competently",
+                "C. capably",
+                "D. effectually"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Trạng từ 'efficiently' nghĩa là 'hiệu quả' (tiêu hao ít nhiên liệu hơn nhưng tạo ra năng lượng tối ưu). Phù hợp nhất khi nói về sự cháy của đèn dầu ('burn brighter and more efficiently'). Bẫy: 'competently' và 'capably' dùng cho năng lực của con người, 'effectually' thường dùng cho việc giải quyết vấn đề pháp lý hoặc hành động cưỡng chế. Chuyên đề: Từ vựng — Adverbs.",
+              "answerLocation": "looking for one that would burn brighter and more efficiently.",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. encased",
+                "B. housed",
+                "C. sheltered",
+                "D. accommodated"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Động từ 'house' ở đây dùng với nghĩa bị động/chủ động chỉ việc chứa đựng/lưu trữ đồ vật/thiết bị trong một không gian che chắn: 'the room... that housed the oil lamps'. Bẫy: 'encased' là bao bọc trong vỏ cứng, 'sheltered' là che chở khỏi thời tiết xấu (thường dùng cho người hoặc động vật), 'accommodated' là cung cấp chỗ ở cho người. Chuyên đề: Từ vựng — Động từ chứa đựng.",
+              "answerLocation": "the room at the top of the tower that housed the oil lamps.",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. fading",
+                "B. lessening",
+                "C. dimming",
+                "D. shading"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Động từ 'dimming' (làm mờ đi/làm giảm độ sáng) mô tả chính xác tác động của lớp băng tuyết cản trở luồng sáng từ ngọn hải đăng ('dimming the light still more'). Bẫy: 'fading' là phai màu/yếu đi dần, 'lessening' là giảm thiểu về số lượng/mức độ, 'shading' là che bóng râm. Chuyên đề: Từ vựng — Ánh sáng.",
+              "answerLocation": "and in cold weather the water froze, dimming the light still more.",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. decomposing",
+                "B. disintegrating",
+                "C. dismantling",
+                "D. disentangling"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Tính từ phân từ 'disintegrating' mô tả một vật thể bị phân rã/tan vỡ thành nhiều mảnh nhỏ trong không gian (phù hợp với sự kiện sao chổi Linear tan vỡ 'fell to pieces'). Bẫy: 'decomposing' là phân hủy hữu cơ/thối rữa, 'dismantling' là tháo dỡ máy móc/mô hình, 'disentangling' là gỡ rối. Chuyên đề: Từ vựng — Trạng thái vật lý.",
+              "answerLocation": "thanks to a disintegrating comet.",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. enclose",
+                "B. hold",
+                "C. embody",
+                "D. carry"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Động từ 'hold' nghĩa là giữ chân được nguồn nước/giữ được thể lỏng của nước trên bề mặt Trái Đất sơ khai vốn rất nóng ('too hot to hold water'). Bẫy: 'enclose' là bao vây trong không gian khép kín, 'embody' là hiện thân của, 'carry' là mang theo. Chuyên đề: Từ vựng — Động từ.",
+              "answerLocation": "it was too hot to hold water.",
+              "category": "cpe_part_1",
+              "source": "Practice Test 4, Part 1, CPE Practice Tests 3",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b3t4-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>All Work and No Play</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Universally, work has been a central focus point <b>IN</b> society. As old as the idea of work (9) ______ is the question of what constitutes 'real work'. This is, in fact, a very subjective question indeed. (10) ______ you to ask a miner, or any labourer for that matter, what real work is, he would probably reply that real work entails working (11) ______ your hands and, in the process, getting them dirty.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>To the average blue-collar worker, white-collar workers are those people who sit in their offices day (12) ______ day doing little or (13) ______ in the line of actual work. By (14) ______ , if you approached a white-collar worker or a professional of (15) ______ sort with the same question, you can rest assured that they (16) ______ adamantly maintain that the world would stop revolving without their invaluable intellectual contribution.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b3t4-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-b3t4-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9): As old as the idea of work ______ is the question...",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "itself"
+                ]
+              ],
+              "correctAnswer": "itself",
+              "explanation": "Đáp án: ITSELF. Sử dụng đại từ phản thân 'itself' ngay sau cụm danh từ 'the idea of work' để nhấn mạnh bản thân ý tưởng lao động: 'As old as the idea of work itself...' (Lâu đời như chính ý tưởng lao động...). Chuyên đề: Pronouns. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "As old as the idea of work itself is the question",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10): ______ you to ask a miner...",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "Were"
+                ]
+              ],
+              "correctAnswer": "Were",
+              "explanation": "Đáp án: WERE. Cấu trúc đảo ngữ điều kiện loại 2 (Inversion of Conditional type 2): 'Were you to ask...' tương đương với 'If you asked...'. Viết hoa chữ W đầu câu. Chuyên đề: Inversion.",
+              "answerLocation": "Were you to ask a miner, or any labourer",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11): real work entails working ______ your hands",
+              "blankIndex": 11,
+              "acceptedAnswers": [
+                [
+                  "with"
+                ]
+              ],
+              "correctAnswer": "with",
+              "explanation": "Đáp án: WITH. Cụm từ cố định 'working with your hands' nghĩa là 'lao động tay chân / làm việc bằng đôi tay của mình'. Giới từ 'with' chỉ công cụ. Chuyên đề: Prepositions.",
+              "answerLocation": "real work entails working with your hands",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12): sit in their offices day ______ day",
+              "blankIndex": 12,
+              "acceptedAnswers": [
+                [
+                  "after",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "after",
+              "explanation": "Đáp án: AFTER (hoặc IN). Cấu trúc chỉ thời gian đều đặn hàng ngày: 'day after day' (ngày qua ngày) hoặc cụm từ 'day in day out' (ngày này qua ngày khác). Chuyên đề: Fixed expressions.",
+              "answerLocation": "sit in their offices day after day",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13): doing little or ______ in the line of actual work.",
+              "blankIndex": 13,
+              "acceptedAnswers": [
+                [
+                  "nothing"
+                ]
+              ],
+              "correctAnswer": "nothing",
+              "explanation": "Đáp án: NOTHING. Cấu trúc song hành cố định 'doing little or nothing' nghĩa là 'làm rất ít hoặc không làm gì cả'. Chuyên đề: Fixed expressions.",
+              "answerLocation": "doing little or nothing in the line of actual work.",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14): By ______ , if you approached...",
+              "blankIndex": 14,
+              "acceptedAnswers": [
+                [
+                  "contrast"
+                ]
+              ],
+              "correctAnswer": "contrast",
+              "explanation": "Đáp án: CONTRAST. Cụm trạng từ liên kết 'By contrast' (Ngược lại / Đối lập lại) đứng đầu câu để tạo sự so sánh đối lập giữa hai luồng quan điểm của lao động chân tay và lao động trí óc. Chuyên đề: Discourse markers. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "By contrast, if you approached a white-collar worker",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15): a professional of ______ sort with the same question",
+              "blankIndex": 15,
+              "acceptedAnswers": [
+                [
+                  "any",
+                  "some"
+                ]
+              ],
+              "correctAnswer": "any",
+              "explanation": "Đáp án: ANY (hoặc SOME). Cấu trúc 'of any sort' (thuộc bất kỳ loại nào / thuộc bất cứ chuyên ngành nào) nhấn mạnh tính bao quát: 'bất cứ chuyên gia thuộc lĩnh vực nào'. Chuyên đề: Determiners.",
+              "answerLocation": "professional of any sort with the same question",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16): you can rest assured that they ______ adamantly maintain...",
+              "blankIndex": 16,
+              "acceptedAnswers": [
+                [
+                  "would",
+                  "will"
+                ]
+              ],
+              "correctAnswer": "would",
+              "explanation": "Đáp án: WOULD (hoặc WILL). Động từ khuyết thiếu 'would' (hoặc 'will') đi kèm giả định điều kiện 'Were you to ask... they would maintain' (Nếu bạn hỏi... thì chắc chắn họ sẽ khăng khăng cho rằng...). Đảm bảo tính nhất quán của hệ thống thời động từ giả định. Chuyên đề: Modals.",
+              "answerLocation": "rest assured that they would adamantly maintain",
+              "category": "cpe_part_2",
+              "source": "Practice Test 4, Part 2, CPE Practice Tests 3",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b3t4-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Pop Musicals</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Lord Andrew Lloyd Webber, a man whose eclectic rock-based works helped (17) ______ <b>(VITAL)</b> British and American (18) ______ <b>(MUSIC)</b> theatre in the late 20th century. As a student at Oxford University, a (19) ______ <b>(PARTNER)</b> was founded between Webber and Timothy Rice to put on dramatic productions.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Their first (20) ______ <b>(COMMERCE)</b> successful venture was 'Joseph and The Amazing Technicolor Dreamcoat', a pop oratorio for children that earned world-wide acclaim. This was followed by the rock opera, 'Jesus Christ Superstar', an extremely popular, though (21) ______ <b>(CONTROVERSY)</b> work that blended classical forms. With two (22) ______ <b>(COLLABORATE)</b>, Charles Hart and Richard Stilgoe, he then composed a hugely successful version of 'The Phantom of the Opera'. Lloyd Webber's best works were flashy spectacles that featured vivid melodies and dramatic staging. He was able to blend such varied and (23) ______ <b>(SIMILAR)</b> genres as rock and roll, English music-hall song, and (24) ______ <b>(OPERA)</b> forms into music that had a wide mass appeal.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b3t4-rg-3",
+          "instruction": "Write the correct transformed word in each gap.",
+          "questions": [
+            {
+              "id": "q-b3t4-17",
+              "type": "gap_fill",
+              "instruction": "17. VITAL ->",
+              "blankIndex": 17,
+              "acceptedAnswers": [
+                [
+                  "vitalise",
+                  "revitalise",
+                  "vitalize",
+                  "revitalize"
+                ]
+              ],
+              "correctAnswer": "vitalise",
+              "explanation": "Đáp án: VITALISE (hoặc REVITALISE / VITALIZE / REVITALIZE). Từ gốc tính từ 'VITAL' chuyển đổi thành động từ nguyên mẫu có hậu tố '-ise' ('vitalise' - thổi bùng sinh khí / làm cho sống động), bổ nghĩa sau động từ khuyết thiếu 'helped + V-bare'. Tiền tố 're-' cũng rất phù hợp (revitalise = tái sinh). Chuyên đề: Word formation — Verbs.",
+              "answerLocation": "works helped vitalise British and American",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-18",
+              "type": "gap_fill",
+              "instruction": "18. MUSIC ->",
+              "blankIndex": 18,
+              "acceptedAnswers": [
+                [
+                  "musical"
+                ]
+              ],
+              "correctAnswer": "musical",
+              "explanation": "Đáp án: MUSICAL. Danh từ 'MUSIC' chuyển thành tính từ 'musical' (thuộc về âm nhạc) để bổ nghĩa cho danh từ ghép 'musical theatre' (sân khấu nhạc kịch). Chuyên đề: Word formation — Adjectives.",
+              "answerLocation": "British and American musical theatre",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-19",
+              "type": "gap_fill",
+              "instruction": "19. PARTNER ->",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "partnership"
+                ]
+              ],
+              "correctAnswer": "partnership",
+              "explanation": "Đáp án: PARTNER. Từ gốc danh từ chỉ cá nhân 'PARTNER' chuyển thành danh từ trừu tượng chỉ mối quan hệ 'partnership' (mối quan hệ hợp tác / sự cộng tác) đứng làm chủ ngữ của câu bị động 'a partnership was founded'. Chuyên đề: Word formation — Nouns.",
+              "answerLocation": "a partnership was founded between Webber and",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-20",
+              "type": "gap_fill",
+              "instruction": "20. COMMERCE ->",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "commercially"
+                ]
+              ],
+              "correctAnswer": "commercially",
+              "explanation": "Đáp án: COMMERCIALLY. Danh từ 'COMMERCE' được biến đổi thành tính từ 'commercial', sau đó thêm hậu tố trạng từ '-ly' thành 'commercially' để bổ nghĩa cho tính từ 'successful' đứng sau nó: 'commercially successful venture' (dự án thành công về mặt thương mại). Chuyên đề: Word formation — Adverbs.",
+              "answerLocation": "Their first commercially successful venture was",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-21",
+              "type": "gap_fill",
+              "instruction": "21. CONTROVERSY ->",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "controversial"
+                ]
+              ],
+              "correctAnswer": "controversial",
+              "explanation": "Đáp án: CONTROVERSIAL. Danh từ 'CONTROVERSY' (sự tranh cãi) chuyển đổi thành tính từ 'controversial' (gây tranh cãi nhiều) để bổ nghĩa cho danh từ 'work' (tác phẩm): 'popular, though controversial work'. Chuyên đề: Word formation — Adjectives.",
+              "answerLocation": "popular, though controversial work that blended",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-22",
+              "type": "gap_fill",
+              "instruction": "22. COLLABORATE ->",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "collaborators"
+                ]
+              ],
+              "correctAnswer": "collaborators",
+              "explanation": "Đáp án: COLLABORATORS. Động từ 'COLLABORATE' (hợp tác) biến đổi thành danh từ chỉ người 'collaborator'. Vì đứng sau số từ 'two', danh từ phải ở dạng số nhiều 'collaborators' (những người cộng tác): 'with two collaborators'. Chuyên đề: Word formation — Plural nouns.",
+              "answerLocation": "With two collaborators, Charles Hart and Richard",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-23",
+              "type": "gap_fill",
+              "instruction": "23. SIMILAR ->",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "dissimilar"
+                ]
+              ],
+              "correctAnswer": "dissimilar",
+              "explanation": "Đáp án: DISSIMILAR. Tính từ 'SIMILAR' (tương đồng) được thêm tiền tố phủ định 'dis-' tạo thành 'dissimilar' (khác biệt / không giống nhau) để diễn đạt ý kiến kết hợp các thể loại nhạc cực kỳ khác nhau: 'varied and dissimilar genres'. Chuyên đề: Word formation — Negative prefixes.",
+              "answerLocation": "blend such varied and dissimilar genres as rock and roll",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-24",
+              "type": "gap_fill",
+              "instruction": "24. OPERA ->",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "operatic"
+                ]
+              ],
+              "correctAnswer": "operatic",
+              "explanation": "Đáp án: OPERATIC. Danh từ 'OPERA' được biến đổi thành tính từ 'operatic' (mang phong cách nhạc kịch / thuộc về opera) bổ nghĩa cho danh từ 'forms' đứng sau: 'operatic forms'. Chuyên đề: Word formation — Adjectives.",
+              "answerLocation": "operatic forms into music that had a wide mass appeal.",
+              "category": "cpe_part_3",
+              "source": "Practice Test 4, Part 3, CPE Practice Tests 3",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b3t4-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "questionGroups": [
+        {
+          "id": "cpe-b3t4-rg-4",
+          "instruction": "Complete the second sentence using the key word in bold.",
+          "questions": [
+            {
+              "id": "q-b3t4-25",
+              "type": "gap_fill",
+              "instruction": "She made it perfectly clear to him that she was dissatisfied with his work. (terms) -> She ____________________ that she was dissatisfied with his work.",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "told him in no uncertain terms",
+                  "spoke in no uncertain terms to him"
+                ]
+              ],
+              "correctAnswer": "told him in no uncertain terms",
+              "explanation": "Đáp án: TOLD HIM IN NO UNCERTAIN TERMS (hoặc SPOKE IN NO UNCERTAIN TERMS TO HIM). Sử dụng thành ngữ 'in no uncertain terms' nghĩa là 'nói thẳng thừng / nói rõ ràng dứt khoát không úp mở'. Đi kèm cấu trúc truyền đạt thông tin 'tell someone in no uncertain terms'. Chuyên đề: Idioms & Fixed phrases.",
+              "answerLocation": "told him in no uncertain terms",
+              "category": "cpe_part_4",
+              "source": "Practice Test 4, Part 4, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-26",
+              "type": "gap_fill",
+              "instruction": "The minister is determined not to resign before the next election. (no) -> The minister ____________________ before the next election.",
+              "blankIndex": 26,
+              "acceptedAnswers": [
+                [
+                  "has no intention of resigning",
+                  "has absolutely no intention of resigning",
+                  "has no intention to resign"
+                ]
+              ],
+              "correctAnswer": "has no intention of resigning",
+              "explanation": "Đáp án: HAS NO INTENTION OF RESIGNING. Sử dụng cụm cấu trúc cố định 'have no intention of doing something' để diễn đạt sự quyết tâm không làm gì: 'The minister has no intention of resigning...' (Bộ trưởng không hề có ý định từ chức...). Chuyên đề: Grammar — Gerund structures.",
+              "answerLocation": "has no intention of resigning",
+              "category": "cpe_part_4",
+              "source": "Practice Test 4, Part 4, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-27",
+              "type": "gap_fill",
+              "instruction": "They discussed it for hours, but still had no idea how to solve the problem. (come) -> They discussed it for hours, but were unable ____________________ the problem.",
+              "blankIndex": 27,
+              "acceptedAnswers": [
+                [
+                  "to come up with a solution to",
+                  "to come up with any solution to"
+                ]
+              ],
+              "correctAnswer": "to come up with a solution to",
+              "explanation": "Đáp án: TO COME UP WITH A SOLUTION TO. Kết hợp phrasal verb 'come up with' (nghĩ ra / tìm ra ý tưởng) và danh từ 'solution' đi kèm giới từ cố định 'to' (giải pháp cho vấn đề gì). Đứng sau cấu trúc 'be unable + to-infinitive'. Chuyên đề: Phrasal verbs & Prepositions.",
+              "answerLocation": "to come up with a solution to",
+              "category": "cpe_part_4",
+              "source": "Practice Test 4, Part 4, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-28",
+              "type": "gap_fill",
+              "instruction": "She didn’t realise her mistake until she had put the phone down. (after) -> Only ____________________ realise her mistake.",
+              "blankIndex": 28,
+              "acceptedAnswers": [
+                [
+                  "after putting the phone down did she",
+                  "after she had put the phone down did she"
+                ]
+              ],
+              "correctAnswer": "after putting the phone down did she",
+              "explanation": "Đáp án: AFTER PUTTING THE PHONE DOWN DID SHE (hoặc AFTER SHE HAD PUT THE PHONE DOWN DID SHE). Sử dụng cấu trúc đảo ngữ nhấn mạnh thời gian với 'Only after': 'Only after + V-ing/Clause + Auxiliary Verb + S + V'. Do đó, vế sau đảo ngữ là 'did she realise'. Chuyên đề: Inversion.",
+              "answerLocation": "after putting the phone down did she",
+              "category": "cpe_part_4",
+              "source": "Practice Test 4, Part 4, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-29",
+              "type": "gap_fill",
+              "instruction": "The news came as a complete surprise to us. (unawares) -> We ____________________ the news.",
+              "blankIndex": 29,
+              "acceptedAnswers": [
+                [
+                  "were taken completely unawares by",
+                  "were caught completely unawares by"
+                ]
+              ],
+              "correctAnswer": "were taken completely unawares by",
+              "explanation": "Đáp án: WERE TAKEN COMPLETELY UNAWARES BY. Cụm cấu trúc bị động cố định 'be taken/caught unawares by something' nghĩa là 'bị làm cho kinh ngạc / bị đánh úp bất ngờ bởi cái gì'. Trạng từ 'completely' bổ nghĩa cho tính từ phân từ. Chuyên đề: Idioms & Passives.",
+              "answerLocation": "were taken completely unawares by",
+              "category": "cpe_part_4",
+              "source": "Practice Test 4, Part 4, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-30",
+              "type": "gap_fill",
+              "instruction": "It will almost certainly rain later in the afternoon. (strong) -> There ____________________ later in the afternoon.",
+              "blankIndex": 30,
+              "acceptedAnswers": [
+                [
+                  "is a strong likelihood of rain",
+                  "is a strong likelihood that it will rain",
+                  "is a strong probability of rain"
+                ]
+              ],
+              "correctAnswer": "is a strong likelihood of rain",
+              "explanation": "Đáp án: IS A STRONG LIKELIHOOD OF RAIN (hoặc IS A STRONG LIKELIHOOD THAT IT WILL RAIN). Sử dụng cụm cấu trúc cố định chỉ khả năng xảy ra cao: 'There is a strong/high likelihood of something / that...' (Có khả năng cao là cái gì sẽ xảy ra). Chuyên đề: Collocations & Possibility.",
+              "answerLocation": "is a strong likelihood of rain",
+              "category": "cpe_part_4",
+              "source": "Practice Test 4, Part 4, CPE Practice Tests 3",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ],
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Key Word Transformation</h2><div class='mb-4 text-slate-800 text-base leading-relaxed'><p class='mb-2'><b>25.</b> She made it perfectly clear to him that she was dissatisfied with his work. (terms)</p><p class='mb-2'>She ____________________ that she was dissatisfied with his work.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>26.</b> The minister is determined not to resign before the next election. (no)</p><p class='mb-2'>The minister ____________________ before the next election.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>27.</b> They discussed it for hours, but still had no idea how to solve the problem. (come)</p><p class='mb-2'>They discussed it for hours, but were unable ____________________ the problem.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>28.</b> She didn’t realise her mistake until she had put the phone down. (after)</p><p class='mb-2'>Only ____________________ realise her mistake.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>29.</b> The news came as a complete surprise to us. (unawares)</p><p class='mb-2'>We ____________________ the news.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>30.</b> It will almost certainly rain later in the afternoon. (strong)</p><p class='mb-2'>There ____________________ later in the afternoon.</p></div>"
+    },
+    {
+      "id": "cpe-b3t4-sec-5",
+      "title": "Part 5: Multiple Choice",
+      "instructions": "You are going to read part of an article on advertising. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Infiltrating Minds</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The average citizen is bombarded with TV commercials, posters and newspaper advertisements wherever he goes. Not only this, but promotional material is constantly on view, with every available public space from shop to petrol station covered with advertising of some kind. People who are foolish enough to drive with their windows open are likely to have leaflets advertising everything and anything thrust in at them. The amount of advertising to which we are exposed is phenomenal, yet advertisers are being hurt by their industry's worst recession in a decade and a conviction that is in many respects more frightening than the booms and busts of capitalism: the belief that advertising can go no further. Despite the ingenuity of the advertisers, who, in their need to make their advertisements as visually attractive as possible, often totally obscure the message, the consumer has become increasingly cynical and simply blanks out all but the subtlest messages.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The advertising industry has therefore turned to a more vulnerable target: the young. The messages specifically aimed at children are for toys and games - whose promotional budgets increased fivefold in the 1990s - and fast food, which dominates the children's advertising market. However, the main thrust of advertising in this area is no longer towards traditional children's products. Advertisers acknowledge that the commercial pressures of the 1990s had an extraordinary effect on childhood: it is now generally believed that the cut-off point for buying toys has been falling by one year every five years. Research suggests that while not so many years ago children were happy with Lego or similar construction games at ten or eleven, most of today's children abandon them at six or seven. In effect, the result is the premature ageing of children.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There is nowhere where the advertising industry's latest preoccupation with the young is so evident as in schools. Increasingly low budgets have left schools vulnerable to corporate funding and sponsorship schemes in order to provide much needed equipment, such as computers, or to enable them to run literacy schemes. While on the face of it this would seem to be a purely philanthropic gesture on the part of the companies concerned, the other side of the coin is a pervasive commercial presence in the classroom, where textbooks and resource books are increasingly likely to bear a company logo.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>This marked shift in advertising perceptions also means that a great deal of supposedly adult advertising has an infantile appeal, inasmuch as adult products can be presented within an anecdote or narrative, thus making the message more accessible to young teenagers and smaller children. Children obviously cannot buy these things for themselves; what is behind these advertisements is more subtle. Advertisers have come to recognize that if children can successfully pester their parents to buy them the latest line in trainers, then they can also influence their parent's choice of car or credit card, and so children become an advertising tool in themselves.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There are many, on all sides of the ideological spectrum, who would argue that advertising has little influence on children, who are exposed to such a huge variety of visual images that advertisements simply become lost in the crowd. Rather, they would argue that it is the indulgent parents, who do not wish their children to lack for anything, who boost sales figures. While there may be a great deal of truth in this, it would seem that to deny that advertising influences at all because there is so much of it, while accepting that other aspects of life do have an effect, is a little disingenuous. In fact, the advertising industry itself admits that since peer pressure plays such an important role in children's lives, they are not difficult to persuade. And of course, their minds are not yet subject to the advertising overload their parents suffer from. The question that arises is whether indeed, we as a society can accept that children, far from being in some sense protected from the myriad of pressures, decisions and choices which impinge on an adult's life, should now be exposed to this influence in all aspects of their lives, in ways that we as adults have no control over.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-b3t4-rg-5",
+          "instruction": "For questions 31-36, choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-b3t4-31",
+              "type": "multiple_choice",
+              "instruction": "31. What does the writer say about advertising in the first paragraph?",
+              "options": [
+                "A. Capitalism has led to the demise of advertising.",
+                "B. We should have a cynical view of advertisers.",
+                "C. Advertising is facing new challenges these days.",
+                "D. The industry has run out of new ideas."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở đoạn 1, tác giả mô tả ngành quảng cáo đang hứng chịu đợt suy thoái tồi tệ nhất trong một thập kỷ ('worst recession in a decade') và đối mặt với nỗi sợ rằng ngành này 'không thể đi xa hơn nữa' ('advertising can go no further'). Điều này chỉ ra ngành này đang gặp những thách thức to lớn mới. Bẫy: (A) sai vì chủ nghĩa tư bản biến động chứ không tiêu diệt quảng cáo, (B) sai vì người tiêu dùng hoài nghi chứ tác giả không khuyên chúng ta nên hoài nghi, (D) sai vì ngành này vẫn đầy sự khéo léo sáng tạo ('ingenuity of the advertisers') chứ không phải cạn kiệt ý tưởng. Chuyên đề: Reading — Detailed understanding.",
+              "answerLocation": "advertisers are being hurt by their industry's worst recession in a decade and a conviction... that advertising can go no further.",
+              "category": "cpe_part_5",
+              "source": "Practice Test 4, Part 5, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-32",
+              "type": "multiple_choice",
+              "instruction": "32. The bombardment of advertisements has led to",
+              "options": [
+                "A. children taking more notice of them.",
+                "B. greater difficulty in attracting consumers' attention.",
+                "C. more appealing advertisements.",
+                "D. people being less likely to spend money."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Sự bùng nổ dồn dập của quảng cáo khiến người tiêu dùng trở nên cực kỳ hoài nghi ('increasingly cynical') và 'chặn đứng hoàn toàn mọi thông điệp trừ những thứ tinh tế nhất' ('simply blanks out all but the subtlest messages'). Do đó, việc thu hút sự chú ý của người tiêu dùng ngày càng khó khăn hơn nhiều. Bẫy: (A) sai vì trẻ em là mục tiêu dễ tổn thương chứ không phải do sự dồn dập này tạo ra, (C) và (D) không được đề cập trực tiếp như hệ quả chính của sự dồn dập. Chuyên đề: Reading — Cause and effect.",
+              "answerLocation": "the consumer has become increasingly cynical and simply blanks out all but the subtlest messages.",
+              "category": "cpe_part_5",
+              "source": "Practice Test 4, Part 5, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-33",
+              "type": "multiple_choice",
+              "instruction": "33. How have children changed during the past decade?",
+              "options": [
+                "A. They have become consumers.",
+                "B. They are growing up more quickly.",
+                "C. They are becoming cleverer.",
+                "D. They are not playing as much."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Tác giả chỉ ra rằng độ tuổi trẻ em chơi đồ chơi ngày càng giảm sút (bỏ chơi Lego lúc 6-7 tuổi thay vì 10-11 tuổi như trước). Điều này mang lại kết quả là sự 'lớn sớm/già trước tuổi của trẻ em' ('premature ageing of children'), tức là chúng trưởng thành và lớn nhanh hơn về mặt nhận thức thương mại. Bẫy: (A) sai vì chúng luôn là người tiêu dùng nhưng cách chúng tiêu dùng thay đổi, (C) và (D) không được nói đến như bản chất thay đổi. Chuyên đề: Reading — Inference.",
+              "answerLocation": "In effect, the result is the premature ageing of children.",
+              "category": "cpe_part_5",
+              "source": "Practice Test 4, Part 5, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-34",
+              "type": "multiple_choice",
+              "instruction": "34. What does the writer imply in the third paragraph?",
+              "options": [
+                "A. Advertising agencies need to preserve their reputations.",
+                "B. Schools welcome aid from big business.",
+                "C. There are restrictions on how financial aid may be used.",
+                "D. Companies expect nothing in return for their help."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Trường học có ngân sách ngày càng thấp nên cực kỳ dễ tổn thương ('low budgets have left schools vulnerable') trước nguồn tài trợ của doanh nghiệp để có thể mua máy tính hay vận hành chương trình học tập. Điều này hàm ý các trường học hoàn toàn đón nhận và mong đợi các khoản hỗ trợ từ doanh nghiệp lớn để trang trải. Bẫy: (D) ngược lại hoàn toàn vì các công ty muốn quảng bá logo thương hiệu khắp lớp học ('company logo' trên SGK), (A) và (C) không phải ngụ ý của đoạn. Chuyên đề: Reading — Implication.",
+              "answerLocation": "low budgets have left schools vulnerable to corporate funding and sponsorship schemes in order to provide much needed equipment",
+              "category": "cpe_part_5",
+              "source": "Practice Test 4, Part 5, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-35",
+              "type": "multiple_choice",
+              "instruction": "35. How have children changed the face of advertising?",
+              "options": [
+                "A. Children are influencing the purchases of adult products.",
+                "B. They are now the advertising industry's sole market.",
+                "C. More products have to be sold to children.",
+                "D. Children have become more selective in their choices."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Tác giả lập luận rằng nhà quảng cáo nhận ra trẻ em khi đòi bố mẹ mua giày thể thao mới ('pester their parents') thì đồng thời cũng có thể tác động trực tiếp lên quyết định mua xe hơi hay thẻ tín dụng của bố mẹ ('influence their parent's choice of car or credit card'). Do đó trẻ em tác động đến việc mua sản phẩm của người lớn. Bẫy: (B) sai vì trẻ em không phải thị trường duy nhất, (C) và (D) không được nhắc đến như là nguyên nhân làm thay đổi bộ mặt quảng cáo. Chuyên đề: Reading — Detailed understanding.",
+              "answerLocation": "if children can successfully pester their parents... then they can also influence their parent's choice of car or credit card",
+              "category": "cpe_part_5",
+              "source": "Practice Test 4, Part 5, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-36",
+              "type": "multiple_choice",
+              "instruction": "36. What does the writer suggest in the last paragraph?",
+              "options": [
+                "A. Adults feel increasingly threatened by advertising.",
+                "B. Children are unlikely to be influenced by their friends.",
+                "C. Parents avoid spending too much money on their children.",
+                "D. Children have a less sheltered existence than they used to."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Tác giả đặt ra câu hỏi xã hội đầy trăn trở: liệu chúng ta có chấp nhận được việc trẻ em, thay vì 'được bảo vệ/che chở' khỏi các áp lực và lựa chọn phức tạp của cuộc sống người lớn ('far from being in some sense protected'), nay lại bị phơi bày trước sự thao túng thương mại này ở mọi khía cạnh cuộc sống. Điều này ám chỉ trẻ em ngày nay ít được bảo bọc và che chở hơn trước. Bẫy: (B) sai vì áp lực bạn bè ('peer pressure') rất mạnh mẽ, (C) sai vì cha mẹ rất nuông chiều ('indulgent parents'). Chuyên đề: Reading — Tone & Synthesis.",
+              "answerLocation": "accept that children, far from being in some sense protected from the myriad of pressures... should now be exposed to this influence",
+              "category": "cpe_part_5",
+              "source": "Practice Test 4, Part 5, CPE Practice Tests 3",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b3t4-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "You are going to read an extract from a novel. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap (37-43). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>A Big Adventure</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Had Father, Mother or Uncle Joe realised what I was up to, I was sure they would have dissuaded me from leaving. This was the very reason why I had planned the whole affair quietly and stealthily, like a prison camp inmate carefully preparing a breakout attempt. Short of digging a tunnel, everything was ready down to the last detail. At last the day arrived.</p><div class='my-4 p-4 bg-slate-50 border-slate-200 rounded-lg font-bold text-center text-slate-700'>[ Gap 37 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>I had carefully packed the necessary items which one always takes on a Big Adventure such as the one on which I had decided to embark. With only limited space left in my holdall, the choice between cookies or Ned the Bear was, for a brief moment, rather difficult. But I didn’t ponder for long - after all, we had planned this escapade together so I could hardly leave him behind. Thus equipped with two alphabet books, two small cartons of orange juice and the entire contents of my moneybox, I set off with Ned poking his head out of the top of my bag and stepped into the Unknown.</p><div class='my-4 p-4 bg-slate-50 border-slate-200 rounded-lg font-bold text-center text-slate-700'>[ Gap 38 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Once the chatter of the guests reached a certain level, I knew the coast was clear. On tiptoe I noiselessly crept along the hall and down the stairs. Ned was suffering from a head cold, so was trying his very best not to sneeze. I was much relieved when we reached the kitchen without a hitch and I could safely remove the peg from his nose, which I then duly wiped. With maternal tenderness I then straightened his woolly hat and kissed him on the cheek. He really was an exceptional bear and I loved him dearly — almost as much as I loved Uncle Joe.</p><div class='my-4 p-4 bg-slate-50 border-slate-200 rounded-lg font-bold text-center text-slate-700'>[ Gap 39 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>‘I'll have to ask Ned,’ I replied. I hastily whispered in the Bear’s ear and he squeezed my hand; I took this as an affirmative, and promptly transmitted the decision to Uncle Joe. He then put his hat back on and cautiously opened the back door. Hand in hand we tripped down the path to the garden gate; the Adventure had begun.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>We turned left out of the garden and headed for Priory Hill. It wasn’t exactly a mountain, nor was it new but the climbing part of the plan had been mentioned rather hastily and, not wanting to disappoint Uncle Joe, I felt obliged to fulfil the promise of what my Adventure involved.</p><div class='my-4 p-4 bg-slate-50 border-slate-200 rounded-lg font-bold text-center text-slate-700'>[ Gap 40 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>As we drank, we opened one of my books and learned as far as D, until there was no longer enough light to read by. It was a beautifully clear night and stars began to sparkle, blinking down at us from the heavens. ‘This really is a Big Adventure, Chipmunk,’ said Uncle Joe. ‘You've seen the whole country spread before you, and now the moon and the stars are above you. It seems Thursday is a perfect Big Adventure Day after all. You’ve done everything you wanted to do.’</p><div class='my-4 p-4 bg-slate-50 border-slate-200 rounded-lg font-bold text-center text-slate-700'>[ Gap 41 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>‘What shall we sing?’ I asked. ‘Sing a song of sixpence, I think, because that’s about hard cash,’ winked Uncle Joe. So we sang at the tops of our voices and felt our job was satisfyingly odd, and a ‘decent wage’ was earned by all. I wasn't really sure how much sixpence could be but Uncle Joe assured me it was decent and not to worry.</p><div class='my-4 p-4 bg-slate-50 border-slate-200 rounded-lg font-bold text-center text-slate-700'>[ Gap 42 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Big Adventure had been everything I had anticipated, if not more. It remained a carefully guarded secret between myself, Uncle Joe and Ned and, to this day, I firmly believe that neither of my two beloved companions ever betrayed my confidence.</p><div class='my-4 p-4 bg-slate-50 border-slate-200 rounded-lg font-bold text-center text-slate-700'>[ Gap 43 ]</div>",
+      "questionGroups": [
+        {
+          "id": "cpe-b3t4-rg-6",
+          "instruction": "Select the correct paragraph A-H for each gap.",
+          "questions": [
+            {
+              "id": "q-b3t4-37",
+              "type": "gapped_text",
+              "instruction": "Gap 37:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn văn A giới thiệu về kế hoạch chi tiết chọn ngày Thứ Năm làm thời điểm vượt ngục trốn đi chơi vì đó là hôm bố mẹ tiếp đón cô chú nên lơ là cảnh giác. Nối tiếp xuất sắc câu 'At last the day arrived' (Cuối cùng ngày đó cũng đến) của đoạn trước đó. Bẫy: Các đoạn khác nhảy thẳng vào hành động hoặc mô tả không khớp thời gian. Chuyên đề: Reading — Cohesion & Flow.",
+              "answerLocation": "At last the day arrived. [A] Thursday was the day I had chosen",
+              "category": "cpe_part_6",
+              "source": "Practice Test 4, Part 6, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn B trực tiếp giải thích lý do đứa trẻ chuẩn bị ba món đồ trong balo hành lý (sách bảng chữ cái, sữa cam, tiền xu lẻ trong lợn đất) vốn được kể ở cuối đoạn văn trước đó. Mạch ý logic và vô cùng chặt chẽ. Chuyên đề: Reading — Logical cohesion.",
+              "answerLocation": "entire contents of my moneybox, I set off... stepped into the Unknown. [B] I knew I would need the books",
+              "category": "cpe_part_6",
+              "source": "Practice Test 4, Part 6, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Ở cuối đoạn trước, nhân vật tôi thể hiện tình yêu vô bờ với chú Joe. Ở đầu đoạn tiếp theo, chú Joe bất ngờ xuất hiện ngoài cửa bếp cắt ngang kế hoạch rón rén của đứa trẻ. Sự xuất hiện của chú Joe được nối tiếp bằng cuộc đối thoại đáng yêu. Chuyên đề: Reading — Narrative development.",
+              "answerLocation": "almost as much as I loved Uncle Joe. [D] Speaking of my Uncle, suddenly to my surprise",
+              "category": "cpe_part_6",
+              "source": "Practice Test 4, Part 6, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Đoạn C kể về quá trình hai chú cháu leo lên ngọn đồi Priory Hill vốn được đề cập ở câu trước đó. Cuối đoạn C kể về việc mở hộp nước cam, khớp hoàn hảo với câu mở đầu đoạn sau 'As we drank...' (Khi chúng tôi uống...). Chuyên đề: Reading — Chronological transitions.",
+              "answerLocation": "promise of what my Adventure involved. [C] The climb up the hill was rather tiring... take out two cartons of orange juice. [Next] As we drank",
+              "category": "cpe_part_6",
+              "source": "Practice Test 4, Part 6, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn B miêu tả khoảnh khắc sực nhớ ra 'đồng lương tử tế' (decent wage) và nảy ra ý tưởng độc đáo: hát để kiếm ăn mặc dù không có đồ ăn. Dẫn dắt xuất sắc đến câu hỏi mở đầu ở đoạn sau: 'What shall we sing?'. Chuyên đề: Reading — Dialogic flow.",
+              "answerLocation": "You've done everything you wanted to do. [B] But no! Suddenly I remembered... [Next] 'What shall we sing?' I asked.",
+              "category": "cpe_part_6",
+              "source": "Practice Test 4, Part 6, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn B thuật lại việc hai chú cháu kết thúc bài hát, sực nhớ đến việc trời gần sáng và bố mẹ sẽ lo lắng phát hiện ra nên quyết định quay đầu về nhà. Diềm tĩnh dẫn dắt tới đoạn kết của cuộc phiêu lưu. Bẫy: Đoạn D giới thiệu về họ hàng, hoàn toàn không liên quan gì đến tiến trình đi về nhà lúc bình minh. Chuyên đề: Reading — Narrative resolution.",
+              "answerLocation": "Uncle Joe assured me it was decent and not to worry. [B] After finishing the song... headed homeward. [Next] The Big Adventure had been everything",
+              "category": "cpe_part_6",
+              "source": "Practice Test 4, Part 6, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn B mô tả cụ thể về cặp vợ chồng chú Albert và dì Jean, lý giải nguyên do vì sao cậu bé lại thích ngày thứ Năm khi họ đến chơi và chiếm trọn sự chú ý của bố mẹ. Đây là đoạn bổ sung mảnh ghép cuối cùng làm sáng tỏ động cơ lập kế hoạch trốn đi chơi của đứa bé. Chuyên đề: Reading — Backstory cohesion.",
+              "answerLocation": "neither of my two beloved companions ever betrayed my confidence. [B] Uncle Albert was Father's elder brother",
+              "category": "cpe_part_6",
+              "source": "Practice Test 4, Part 6, CPE Practice Tests 3",
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Thursday was the day I had chosen for the Great Event. This was also part of my detailed plan, as I knew it was the night I would be sent to bed early because Auntie Jean and Uncle Albert always came over for the evening."
+            },
+            {
+              "label": "B",
+              "text": "I knew I would need the books because I had often heard Father say that 'with books and reading a man could get anywhere these days'; the orange juice would ward off any 'wheezes and sneezes'..."
+            },
+            {
+              "label": "C",
+              "text": "Once the chatter of the guests reached a certain level, I knew the coast was clear. On tiptoe I noiselessly crept along the hall and down the stairs..."
+            },
+            {
+              "label": "D",
+              "text": "Speaking of my Uncle, suddenly to my surprise the door handle of the back door turned and there he stood in front of me. Now this was most unexpected..."
+            },
+            {
+              "label": "E",
+              "text": "The climb up the hill was rather tiring but I was determined to reach the top unaided. It was truly worth the effort..."
+            },
+            {
+              "label": "F",
+              "text": "But no! Suddenly I remembered the 'decent wage'. 'Joe, I need an odd job.' We thought for a while, but to no avail..."
+            },
+            {
+              "label": "G",
+              "text": "After finishing the song for the seventh time, I suddenly thought of Father and Mother. I was sure it was very close to morning..."
+            },
+            {
+              "label": "H",
+              "text": "Uncle Albert was Father's elder brother and I found him fascinating. Whenever he spoke his bushy eyebrows would dance up and down..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-b3t4-sec-7",
+      "title": "Part 7: Multiple Matching",
+      "instructions": "You are going to read five perspectives on sustainable urban architecture. For questions 44-53, choose from the perspectives (A-E). The perspectives may be chosen more than once.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Perspectives on Sustainable Urban Architecture</h2><div class='mb-6'><h3 class='text-md font-bold text-slate-800 mb-1'>A. The Biomimetic Approach (Dr. Linda Vance)</h3><p class='text-slate-700 text-sm leading-relaxed mb-3'>Nature has spent 3.8 billion years perfecting systems that consume minimal energy while maintaining maximal structural integrity. By copying the intricate cooling vents of African termite mounds, we can construct commercial skyscrapers that completely bypass the need for conventional HVAC units. These passive ventilation setups rely purely on air pressure differentials and natural thermal convection, slashing operational carbon emissions by up to 75%. Critics claim that such biological blueprints cannot be easily scaled to fit supertall configurations, yet recent projects in sub-tropical climates have thoroughly discredited this skepticism. The key lies in viewing the building not as an inert block of concrete, but as a living, breathing metabolic organ that actively balances its interior climate with its exterior surroundings.</p></div><div class='mb-6'><h3 class='text-md font-bold text-slate-800 mb-1'>B. The Smart Grid Paradigm (Marcus Thorne)</h3><p class='text-slate-700 text-sm leading-relaxed mb-3'>To truly revolutionise urban ecology, we must shift our focus from isolated, self-contained green structures to fully integrated municipal networks. The contemporary sustainable skyscraper is not merely an energy consumer, but a micro-generator, harvesting solar, kinetic, and wind energy to feed back into the municipal smart grid. By utilizing predictive AI algorithms, buildings can actively anticipate regional power surges and dynamically adjust their consumption in real time. This decentralised infrastructure acts as a democratic buffer, buffering the city against devastating grid failures. True sustainability lies in this symbiotic digital interplay, where individual architectural components function like nodes in an expansive, self-healing computer network, rather than mere monuments of aesthetic eco-centric vanity.</p></div><div class='mb-6'><h3 class='text-md font-bold text-slate-800 mb-1'>C. The Social Inclusivity Lens (Elena Rostova)</h3><p class='text-slate-700 text-sm leading-relaxed mb-3'>Architects are currently trapped in a hyper-capitalist echo chamber, designing high-tech eco-skyscrapers that are exclusively accessible to ultra-wealthy elites. True urban sustainability must be measured not by the complexity of a building's solar panels, but by its capacity to foster diverse, low-income community cohesive interactions. By integrating vertical community gardens, communal kitchens, and public cultural spaces directly into high-density social housing projects, we can solve both the housing crisis and carbon offset mandates simultaneously. Sustainability is a hollow marketing gimmick if it fails to address social stratification; high-performance engineering must serve as a democratic public good rather than an expensive badge of corporate greenwashing vanity.</p></div><div class='mb-6'><h3 class='text-md font-bold text-slate-800 mb-1'>D. The Circular Construction Model (Dieter Haas)</h3><p class='text-slate-700 text-sm leading-relaxed mb-3'>Up to 40% of global landfill waste originates directly from construction and demolition activities. The most sustainable building, therefore, is one that never needs to be demolished. By employing high-precision modular design and structural steel connections that can be completely disassembled at the end of a building's life cycle, we can achieve true circularity. Every beam, bolt, and panel is assigned a digital material passport, tracking its composition and making future reuse seamless. This paradigm completely reframes architecture as a temporary assembly of materials, a physical warehouse of components waiting to be reallocated to future structures when the current configuration is no longer required.</p></div><div class='mb-6'><h3 class='text-md font-bold text-slate-800 mb-1'>E. The Historical Preservationist View (Claire Beaumont)</h3><p class='text-slate-700 text-sm leading-relaxed mb-3'>The most carbon-neutral building is the one that is already standing. Modern architects are obsessed with tearing down historic brick and stone structures to replace them with highly publicised, high-emission concrete eco-towers. This is a fundamental thermodynamic mistake. The embodied energy of a century-old building is immense, and demolition permanently releases this locked-up carbon into the biosphere. By prioritizing adaptive reuse - transforming old textile mills and warehouses into modern, energy-efficient offices through internal insulation retrofits - we preserve cultural heritage while avoiding the heavy manufacturing footprint of new steel and glass. True ecological responsibility demands that we work with the historical fabric of our cities, rather than constantly erasing it in the name of progress.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cpe-b3t4-rg-7",
+          "instruction": "Identify which perspective EACH statement refers to.",
+          "questions": [
+            {
+              "id": "q-b3t4-44",
+              "type": "multiple_matching",
+              "instruction": "44. Mentions the idea that true sustainability should focus on community integration rather than engineering vanity.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Tác giả Elena Rostova chỉ trích các dự án sinh thái phục vụ giới siêu giàu ('accessible to ultra-wealthy elites') và tuyên bố bền vững thực sự phải đo lường bằng việc bồi đắp tính gắn kết cộng đồng thu nhập thấp chứ không phải chỉ số kỹ thuật thông thường ('eco-centric vanity'). Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "True urban sustainability must be measured not by the complexity... but by its capacity to foster diverse, low-income community cohesive interactions.",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-45",
+              "type": "multiple_matching",
+              "instruction": "45. Explains how a specific biological model has been successfully replicated to solve airflow requirements.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Tiến sĩ Linda Vance mô tả việc mô phỏng hệ thống thông gió tự nhiên của tổ mối châu Phi (' African termite mounds') giúp tòa nhà thương mại tự điều hòa nhiệt độ mà không cần HVAC truyền thống. Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "By copying the intricate cooling vents of African termite mounds, we can construct commercial skyscrapers that completely bypass the need for conventional HVAC units.",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-46",
+              "type": "multiple_matching",
+              "instruction": "46. Argues that demolition permanently releases stored carbon which is thermodynamically irresponsible.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Claire Beaumont chỉ ra năng lượng ẩn của các tòa nhà lịch sử là vô cùng lớn và việc phá dỡ chúng ('demolition') sẽ giải phóng vĩnh viễn lượng carbon đang bị khóa này vào khí quyển. Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "The embodied energy of a century-old building is immense, and demolition permanently releases this locked-up carbon into the biosphere.",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-47",
+              "type": "multiple_matching",
+              "instruction": "47. Proposes that a building should be treated as a temporary warehouse of reusable physical assets.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Dieter Haas đề xuất mô hình kiến trúc tuần hoàn, xem tòa nhà chỉ là một sự lắp ráp tạm thời của các linh kiện ('temporary assembly of materials'), một nhà kho chứa cấu kiện sẵn sàng tái phân bổ trong tương lai. Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "This paradigm completely reframes architecture as a temporary assembly of materials, a physical warehouse of components waiting to be reallocated",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-48",
+              "type": "multiple_matching",
+              "instruction": "48. Focuses on the role of predictive algorithms to dynamically balance city-wide power demands.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Marcus Thorne nhấn mạnh vai trò của trí tuệ nhân tạo dự đoán ('predictive AI algorithms') để hỗ trợ phân phối và tự điều tiết điện năng truyền tải trong mạng lưới thông minh của toàn thành phố. Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "By utilizing predictive AI algorithms, buildings can actively anticipate regional power surges and dynamically adjust their consumption",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-49",
+              "type": "multiple_matching",
+              "instruction": "49. Discredits the view that natural design systems cannot work in exceptionally tall buildings.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Tiến sĩ Linda Vance bác bỏ luận điểm nghi ngờ của các nhà phê bình cho rằng kiến trúc phỏng sinh học khó áp dụng cho các tòa nhà siêu cao tầng ('cannot be easily scaled to fit supertall configurations') bằng cách trích dẫn các dự án thành công ở vùng cận nhiệt đới. Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "Critics claim that such biological blueprints cannot be easily scaled to fit supertall configurations, yet recent projects... have thoroughly discredited this skepticism.",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-50",
+              "type": "multiple_matching",
+              "instruction": "50. Asserts that a significant percentage of worldwide landfill waste comes from construction sites.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Dieter Haas đưa ra số liệu thực tế chứng minh có tới 40% lượng rác thải chôn lấp toàn cầu ('global landfill waste') bắt nguồn trực tiếp từ các hoạt động xây dựng và phá dỡ công trình. Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "Up to 40% of global landfill waste originates directly from construction and demolition activities.",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-51",
+              "type": "multiple_matching",
+              "instruction": "51. Recommends retrofitting older industrial structures rather than building new glassy towers.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Claire Beaumont đề xuất giải pháp cải tạo thích ứng ('adaptive reuse') biến các nhà máy dệt cổ và kho bãi cũ thành văn phòng hiện đại thay vì xây mới các tháp kính tốn kém tài nguyên carbon. Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "By prioritizing adaptive reuse - transforming old textile mills and warehouses into modern, energy-efficient offices through internal insulation retrofits",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-52",
+              "type": "multiple_matching",
+              "instruction": "52. Suggests that a building should act as a micro-generator feeding energy back to its municipality.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Marcus Thorne phác thảo viễn cảnh tòa nhà thông minh tự thu hoạch quang năng, phong năng và động năng để sạc ngược trở lại lưới điện thành phố ('feed back into the municipal smart grid'). Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "The contemporary sustainable skyscraper is not merely an energy consumer, but a micro-generator, harvesting solar, kinetic, and wind energy to feed back",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-b3t4-53",
+              "type": "multiple_matching",
+              "instruction": "53. Mentions that sustainability is a hollow marketing gimmick if it ignores social stratification.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Elena Rostova gay gắt khẳng định tính bền vững chỉ là chiêu trò marketing sáo rỗng ('hollow marketing gimmick') nếu không giải quyết được vấn đề phân tầng giai cấp xã hội ('social stratification'). Chuyên đề: Reading — Multiple Matching.",
+              "answerLocation": "Sustainability is a hollow marketing gimmick if it fails to address social stratification",
+              "category": "cpe_part_7",
+              "source": "Practice Test 4, Part 7, CPE Practice Tests 3",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

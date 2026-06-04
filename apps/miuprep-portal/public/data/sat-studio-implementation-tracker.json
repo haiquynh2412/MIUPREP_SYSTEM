@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-05-30T07:24:15.998635+00:00",
+  "verdict": "implementation_tracking_ready",
+  "planLoop": "Diagnostic -> Skill Tree -> Lesson -> Scaffold Drill -> Proof -> Timed Sprint -> 1500+ Crucible -> Spaced Retention -> Recalibration",
+  "phases": [
+    {
+      "id": "phase0_data_question_metadata",
+      "title": "Giai đoạn 0: Data & Question Metadata",
+      "status": "done",
+      "evidence": {
+        "totalLoaded": 10523,
+        "activeReviewed": 10523,
+        "coreMetadataPct": 100.0,
+        "skeletonOrTemplatePct": 100.0,
+        "trapTypePct": 99.4,
+        "cognitiveMovePct": 100.0,
+        "rwSemanticFieldPct": 100.0,
+        "mathToolTagPct": 100.0,
+        "multiStepLevelPct": 100.0,
+        "poolCounts": {
+          "core_training_pool": 9750,
+          "remedial_pool": 773,
+          "public_candidate_pool": 9305,
+          "virtual_crucible_pool": 4661,
+          "crucible_pool": 4661
+        }
+      },
+      "remaining": []
+    },
+    {
+      "id": "phase1_diagnostic",
+      "title": "Giai đoạn 1: Diagnostic đa tầng",
+      "status": "done",
+      "remaining": []
+    },
+    {
+      "id": "phase2_skill_tree_mastery",
+      "title": "Giai đoạn 2: Skill Tree & Mastery Model",
+      "status": "done",
+      "remaining": []
+    },
+    {
+      "id": "phase3_remedial_sprint",
+      "title": "Giai đoạn 3: Remedial Sprint",
+      "status": "done",
+      "remaining": []
+    },
+    {
+      "id": "phase4_crucible",
+      "title": "Giai đoạn 4: 1500+ Crucible",
+      "status": "done",
+      "remaining": []
+    },
+    {
+      "id": "phase5_spaced_repetition",
+      "title": "Giai đoạn 5: Spaced Repetition",
+      "status": "done",
+      "remaining": []
+    },
+    {
+      "id": "phase6_explanation_coaching",
+      "title": "Giai đoạn 6: Explanation Coaching & Progressive Hints",
+      "status": "done",
+      "remaining": []
+    },
+    {
+      "id": "phase7_irt_calibration",
+      "title": "Giai đoạn 7: IRT & Calibration",
+      "status": "partial",
+      "remaining": [
+        "Collect enough live attempts before trusting IRT 2PL."
+      ]
+    },
+    {
+      "id": "phase8_dashboard_recommendation",
+      "title": "Giai đoạn 8: Dashboard & Recommendation Engine",
+      "status": "done",
+      "remaining": []
+    }
+  ],
+  "sprints": [
+    {
+      "id": "sprint1_data_sampling",
+      "title": "Sprint 1: Data & Sampling",
+      "status": "done",
+      "phaseIds": [
+        "phase0_data_question_metadata",
+        "phase1_diagnostic"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "sprint2_mastery_proof",
+      "title": "Sprint 2: Mastery & Proof",
+      "status": "done",
+      "phaseIds": [
+        "phase2_skill_tree_mastery"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "sprint3_spaced_repetition",
+      "title": "Sprint 3: Spaced Repetition",
+      "status": "done",
+      "phaseIds": [
+        "phase5_spaced_repetition"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "sprint4_crucible_routing",
+      "title": "Sprint 4: Crucible Routing",
+      "status": "done",
+      "phaseIds": [
+        "phase4_crucible"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "sprint5_hint_coaching",
+      "title": "Sprint 5: Hint & Coaching",
+      "status": "done",
+      "phaseIds": [
+        "phase6_explanation_coaching"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "sprint6_analytics_irt_prep",
+      "title": "Sprint 6: Analytics & IRT Prep",
+      "status": "partial",
+      "phaseIds": [
+        "phase7_irt_calibration",
+        "phase8_dashboard_recommendation"
+      ],
+      "remaining": [
+        "Collect enough live attempts before trusting IRT 2PL."
+      ]
+    },
+    {
+      "id": "sprint7_full_calibration",
+      "title": "Sprint 7: Full Calibration",
+      "status": "pending",
+      "phaseIds": [
+        "phase7_irt_calibration"
+      ],
+      "remaining": [
+        "Collect enough live attempts before trusting IRT 2PL."
+      ]
+    }
+  ],
+  "backlog": []
+}

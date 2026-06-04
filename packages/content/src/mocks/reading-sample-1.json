@@ -1,0 +1,727 @@
+{
+  "id": "reading-sample-1",
+  "title": "The Evolution of Bicycle Design",
+  "type": "academic",
+  "skill": "reading",
+  "sections": [
+    {
+      "id": "r-sec-1",
+      "title": "Bicycle History",
+      "instructions": "Answer the questions below based on the passage.",
+      "passageHtml": "<h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">The Early Pioneers</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">The history of the bicycle is a story of gradual innovation. The earliest iteration, the <i>Draisienne</i> or 'hobby horse', was invented by Baron Karl von Drais in Germany in 1817. It was constructed entirely of wood and lacked pedals; riders propelled themselves forward by pushing their feet directly against the ground. Although popular among wealthy young men, its lack of practical utility meant it was quickly dismissed as a passing fad.</p><h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">The Age of Pedals</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">In the 1860s, French inventors Pierre and Ernest Michaux developed the <i>velocipede</i>, which added pedals directly attached to the axle of the front wheel. This design, often called the 'boneshaker' due to its rough ride over cobblestone streets, was a commercial success but required immense physical exertion. To increase speeds, manufacturers began enlarging the front wheel, leading to the famous 'penny-farthing' or ordinary bicycle. However, its high center of gravity made it extremely dangerous, causing frequent head-first falls.</p><h2 class=\"text-xl font-bold mb-3 text-slate-900 border-b pb-1\">The Safety Revolution</h2><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">The ultimate breakthrough occurred in 1885 when English engineer John Kemp Starley introduced the <i>Rover Safety Bicycle</i>. Featuring equal-sized wheels and a chain drive linked directly to the rear wheel, it established the modern bicycle geometry we recognize today. Combined with John Boyd Dunlop's invention of the pneumatic rubber tire in 1888, cycling transformed from a dangerous athletic daredevil sport into a comfortable, democratic method of mass transport.</p>",
+      "questionGroups": [
+        {
+          "id": "rg-1",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage.",
+          "questions": [
+            {
+              "id": "q-r1",
+              "type": "gap_fill",
+              "instruction": "The earliest bicycle, the Draisienne, was constructed entirely of ______.",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "wood"
+                ]
+              ],
+              "correctAnswer": "wood",
+              "explanation": "Đoạn 1 nêu rõ chiếc xe Draisienne đời đầu được làm hoàn toàn bằng gỗ: 'It was constructed entirely of wood and lacked pedals...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "constructed entirely of wood"
+            },
+            {
+              "id": "q-r2",
+              "type": "gap_fill",
+              "instruction": "The Draisienne was invented in Germany in the year ______.",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "1817"
+                ]
+              ],
+              "correctAnswer": "1817",
+              "explanation": "Đoạn 1 đề cập phát minh được tạo ra vào năm 1817 tại Đức: 'invented by Baron Karl von Drais in Germany in 1817.' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "invented by Baron Karl von Drais in Germany in 1817"
+            }
+          ]
+        },
+        {
+          "id": "rg-2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-r3",
+              "type": "multiple_choice",
+              "instruction": "Why was the velocipede referred to as the \"boneshaker\"?",
+              "options": [
+                "A. It was extremely fast and exhilarating",
+                "B. It was constructed of bones instead of iron",
+                "C. It offered an incredibly rough ride due to wooden wheels and cobblestones"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đoạn 2 nêu rõ chiếc xe 'velocipede' thường được gọi là 'boneshaker' vì sự di chuyển xóc nảy, thô ráp của nó trên đá cuội: 'often called the 'boneshaker' due to its rough ride over cobblestone streets.' Do đó đáp án C là chính xác.",
+              "answerLocation": "often called the 'boneshaker' due to its rough ride over cobblestone streets"
+            }
+          ]
+        },
+        {
+          "id": "rg-3",
+          "instruction": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            {
+              "id": "q-r4",
+              "type": "true_false_not_given",
+              "instruction": "John Kemp Starley's Rover had wheels of equal sizes.",
+              "acceptedAnswers": [
+                [
+                  "true",
+                  "t"
+                ]
+              ],
+              "correctAnswer": "TRUE",
+              "explanation": "Đoạn 3 xác nhận mẫu xe Rover Safety Bicycle có hai bánh kích thước bằng nhau: 'Featuring equal-sized wheels and a chain drive linked directly to the rear wheel...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "Featuring equal-sized wheels"
+            },
+            {
+              "id": "q-r5",
+              "type": "true_false_not_given",
+              "instruction": "Karl von Drais became a wealthy nobleman from his invention.",
+              "acceptedAnswers": [
+                [
+                  "not given",
+                  "ng"
+                ]
+              ],
+              "correctAnswer": "NOT GIVEN",
+              "explanation": "Mặc dù bài viết có đề cập tới Baron Karl von Drais là người phát minh, nhưng hoàn toàn không có thông tin nào liên quan đến việc ông có trở nên giàu có hay nâng cao tước hiệu quý tộc từ phát minh này.",
+              "answerLocation": "Draisienne or 'hobby horse', was invented by Baron Karl von Drais"
+            }
+          ]
+        },
+        {
+          "id": "rg-4",
+          "instruction": "Choose the correct heading for paragraphs A, B and C from the list of headings below.",
+          "questions": [
+            {
+              "id": "q-r6",
+              "type": "matching_headings",
+              "instruction": "Paragraph A (The Early Pioneers)",
+              "options": [
+                "i. The birth of velocipedes",
+                "ii. A breakthrough in safe design",
+                "iii. The wood-constructed prototype",
+                "iv. The commercialization of bicycle racing"
+              ],
+              "acceptedAnswers": [
+                [
+                  "iii"
+                ]
+              ],
+              "correctAnswer": "iii",
+              "explanation": "Đoạn A mô tả mẫu xe đầu tiên được làm hoàn toàn bằng gỗ và không có bàn đạp (wood-constructed prototype). Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "constructed entirely of wood and lacked pedals"
+            },
+            {
+              "id": "q-r7",
+              "type": "matching_headings",
+              "instruction": "Paragraph B (The Age of Pedals)",
+              "options": [
+                "i. The birth of velocipedes",
+                "ii. A breakthrough in safe design",
+                "iii. The wood-constructed prototype",
+                "iv. The commercialization of bicycle racing"
+              ],
+              "acceptedAnswers": [
+                [
+                  "i"
+                ]
+              ],
+              "correctAnswer": "i",
+              "explanation": "Đoạn B mô tả về sự ra đời của velocipede (được bổ sung thêm bàn đạp trực tiếp). Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "French inventors Pierre and Ernest Michaux developed the velocipede"
+            },
+            {
+              "id": "q-r8",
+              "type": "matching_headings",
+              "instruction": "Paragraph C (The Safety Revolution)",
+              "options": [
+                "i. The birth of velocipedes",
+                "ii. A breakthrough in safe design",
+                "iii. The wood-constructed prototype",
+                "iv. The commercialization of bicycle racing"
+              ],
+              "acceptedAnswers": [
+                [
+                  "ii"
+                ]
+              ],
+              "correctAnswer": "ii",
+              "explanation": "Đoạn C nói về bước đột phá lớn với xe đạp an toàn Rover Safety Bicycle. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "established the modern bicycle geometry we recognize today"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r-sec-2",
+      "title": "The Secrets of the Maya",
+      "instructions": "Answer questions 9 to 26 based on the passage below.",
+      "passageHtml": "<p class=\"mb-4 text-slate-800 text-base leading-relaxed\"><b>[Paragraph A]</b> The ancient Maya civilization, renowned for its spectacular art, monumental architecture, and highly sophisticated mathematical and astronomical systems, flourished in the rainforests of Mesoamerica. Its geographical core spanned the Yucatán Peninsula, modern-day Guatemala, Belize, and the western parts of Honduras and El Salvador. Unlike other centralized empires, the Maya were organized into a loose network of independent city-states, sharing trade, culture, and language, but often engaging in fierce military rivalries.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\"><b>[Paragraph B]</b> At the heart of Mayan civilization were its magnificent cities, such as Tikal, Copán, and Palenque. These urban centers featured vast public plazas, grand palaces for royalty, and towering stone pyramid-temples that served as focal points for religious rituals and astronomical observations. The Maya constructed these monumental structures using limestone and mortar, without the aid of metal tools, beasts of burden, or even the wheel, which stands as a testament to their extraordinary engineering capabilities.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\"><b>[Paragraph C]</b> To sustain their dense urban populations, the Maya developed highly advanced agricultural techniques. Rather than relying solely on simple slash-and-burn farming, they engineered sophisticated terraced hillsides, constructed complex drainage networks, and built elevated planting beds in swampy areas. Furthermore, they constructed massive underground stone reservoirs, called <i>chultunes</i>, to capture and store precious rainwater, securing a stable water supply during the prolonged seasonal droughts.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\"><b>[Paragraph D]</b> Intellectual achievements were another hallmark of the Maya. They invented a complex hieroglyphic writing system, containing over 800 detailed glyphs, which they carved into stone monuments and painted on bark-paper books. They also developed a base-20 mathematical system that included the concept of zero, and they designed highly accurate calendars based on the 365-day solar year, allowing them to predict eclipses and plan agricultural cycles with astonishing precision.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\"><b>[Paragraph E]</b> During the ninth century AD, the Mayan civilization suffered a major, mysterious collapse. Across the southern lowlands, great cities were suddenly abandoned, monument construction ceased, and populations dwindled. Modern archaeologists suggest this decline was caused by a combination of severe environmental degradation, prolonged droughts, overpopulation, and intensifying warfare, which disrupted their agricultural trade networks and shook public trust in their royal leaders.</p>",
+      "questionGroups": [
+        {
+          "id": "rg-5",
+          "instruction": "Choose the correct heading for paragraphs A-E from the list of headings below.",
+          "questions": [
+            {
+              "id": "q-r9",
+              "type": "matching_headings",
+              "instruction": "Paragraph A",
+              "options": [
+                "i. Ancient Mayan agriculture",
+                "ii. The mystery of the sudden collapse",
+                "iii. Sophisticated writing and calendar systems",
+                "iv. The geographical range of the Maya",
+                "v. Urban planning and impressive architecture"
+              ],
+              "acceptedAnswers": [
+                [
+                  "iv"
+                ]
+              ],
+              "correctAnswer": "iv",
+              "explanation": "Đoạn A thảo luận về vị trí địa lý cốt lõi của nền văn minh Maya (geographical range). Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "geographical core spanned the Yucatán Peninsula"
+            },
+            {
+              "id": "q-r10",
+              "type": "matching_headings",
+              "instruction": "Paragraph B",
+              "options": [
+                "i. Ancient Mayan agriculture",
+                "ii. The mystery of the sudden collapse",
+                "iii. Sophisticated writing and calendar systems",
+                "iv. The geographical range of the Maya",
+                "v. Urban planning and impressive architecture"
+              ],
+              "acceptedAnswers": [
+                [
+                  "v"
+                ]
+              ],
+              "correctAnswer": "v",
+              "explanation": "Đoạn B mô tả các thành phố của người Maya với các quảng trường lớn, cung điện và đền đài (urban planning and architecture). Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "magnificent cities... public plazas, grand palaces, pyramid-temples"
+            },
+            {
+              "id": "q-r11",
+              "type": "matching_headings",
+              "instruction": "Paragraph C",
+              "options": [
+                "i. Ancient Mayan agriculture",
+                "ii. The mystery of the sudden collapse",
+                "iii. Sophisticated writing and calendar systems",
+                "iv. The geographical range of the Maya",
+                "v. Urban planning and impressive architecture"
+              ],
+              "acceptedAnswers": [
+                [
+                  "i"
+                ]
+              ],
+              "correctAnswer": "i",
+              "explanation": "Đoạn C thảo luận chi tiết về các kỹ thuật canh tác nông nghiệp tiên tiến của người Maya. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "sustain dense populations, Maya developed highly advanced agricultural techniques"
+            },
+            {
+              "id": "q-r12",
+              "type": "matching_headings",
+              "instruction": "Paragraph D",
+              "options": [
+                "i. Ancient Mayan agriculture",
+                "ii. The mystery of the sudden collapse",
+                "iii. Sophisticated writing and calendar systems",
+                "iv. The geographical range of the Maya",
+                "v. Urban planning and impressive architecture"
+              ],
+              "acceptedAnswers": [
+                [
+                  "iii"
+                ]
+              ],
+              "correctAnswer": "iii",
+              "explanation": "Đoạn D tập trung vào chữ viết tượng hình, toán học và các hệ thống lịch cực kỳ chuẩn xác của người Maya. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "hieroglyphic writing system... accurate calendars"
+            },
+            {
+              "id": "q-r13",
+              "type": "matching_headings",
+              "instruction": "Paragraph E",
+              "options": [
+                "i. Ancient Mayan agriculture",
+                "ii. The mystery of the sudden collapse",
+                "iii. Sophisticated writing and calendar systems",
+                "iv. The geographical range of the Maya",
+                "v. Urban planning and impressive architecture"
+              ],
+              "acceptedAnswers": [
+                [
+                  "ii"
+                ]
+              ],
+              "correctAnswer": "ii",
+              "explanation": "Đoạn E giải thích về sự sụp đổ đột ngột và đầy bí ẩn vào thế kỷ thứ 9. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "Mayan civilization suffered a major, mysterious collapse"
+            }
+          ]
+        },
+        {
+          "id": "rg-6",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questions": [
+            {
+              "id": "q-r14",
+              "type": "gap_fill",
+              "instruction": "The Mayan core territory spanned present-day Mexico, Guatemala, Belize, and western areas of ______.",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "honduras"
+                ]
+              ],
+              "correctAnswer": "Honduras",
+              "explanation": "Đoạn A ghi rõ: 'spanned the Yucatán Peninsula, modern-day Guatemala, Belize, and the western parts of Honduras...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "western parts of Honduras"
+            },
+            {
+              "id": "q-r15",
+              "type": "gap_fill",
+              "instruction": "Mayan cities featured central plazas, towering pyramid-temples, and large ______ for their kings.",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "palaces"
+                ]
+              ],
+              "correctAnswer": "palaces",
+              "explanation": "Đoạn B mô tả các thành phố có: 'vast public plazas, grand palaces for royalty, and towering stone pyramid-temples...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "grand palaces for royalty"
+            },
+            {
+              "id": "q-r16",
+              "type": "gap_fill",
+              "instruction": "To grow enough food, they made terraced hillsides and swampy planting beds, and dug ______ systems.",
+              "blankIndex": 11,
+              "acceptedAnswers": [
+                [
+                  "drainage"
+                ]
+              ],
+              "correctAnswer": "drainage",
+              "explanation": "Đoạn C đề cập đến việc xây dựng hệ thống thoát nước: 'constructed complex drainage networks...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "constructed complex drainage networks"
+            },
+            {
+              "id": "q-r17",
+              "type": "gap_fill",
+              "instruction": "During periods of dry weather, they collected and stored rain in deep underground ______.",
+              "blankIndex": 12,
+              "acceptedAnswers": [
+                [
+                  "reservoirs"
+                ]
+              ],
+              "correctAnswer": "reservoirs",
+              "explanation": "Đoạn C nói về việc tích trữ nước: 'constructed massive underground stone reservoirs...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "massive underground stone reservoirs"
+            },
+            {
+              "id": "q-r18",
+              "type": "gap_fill",
+              "instruction": "The highly accurate Mayan calendars were closely linked to the ______.",
+              "blankIndex": 13,
+              "acceptedAnswers": [
+                [
+                  "solar year"
+                ]
+              ],
+              "correctAnswer": "solar year",
+              "explanation": "Đoạn D đề cập lịch của họ: 'highly accurate calendars based on the 365-day solar year...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "calendars based on the 365-day solar year"
+            },
+            {
+              "id": "q-r19",
+              "type": "gap_fill",
+              "instruction": "Their rich written language was recorded on paper books and stone monuments using ______.",
+              "blankIndex": 14,
+              "acceptedAnswers": [
+                [
+                  "glyphs"
+                ]
+              ],
+              "correctAnswer": "glyphs",
+              "explanation": "Đoạn D viết về chữ viết: 'containing over 800 detailed glyphs...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "containing over 800 detailed glyphs"
+            },
+            {
+              "id": "q-r20",
+              "type": "gap_fill",
+              "instruction": "In the ninth century, many grand cities were completely ______ by their inhabitants.",
+              "blankIndex": 15,
+              "acceptedAnswers": [
+                [
+                  "abandoned"
+                ]
+              ],
+              "correctAnswer": "abandoned",
+              "explanation": "Đoạn E mô tả sự sụp đổ: 'great cities were suddenly abandoned...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "great cities were suddenly abandoned"
+            }
+          ]
+        },
+        {
+          "id": "rg-7",
+          "instruction": "Do the following statements agree with the information in the passage? Write TRUE, FALSE or NOT GIVEN.",
+          "questions": [
+            {
+              "id": "q-r21",
+              "type": "true_false_not_given",
+              "instruction": "The Maya civilization operated under a single centralized royal government.",
+              "acceptedAnswers": [
+                [
+                  "false",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "FALSE",
+              "explanation": "Đoạn A ghi rõ họ chia làm các thành bang độc lập, không phải đế chế tập quyền: 'Unlike other centralized empires, the Maya were organized into a loose network of independent city-states...'",
+              "answerLocation": "loose network of independent city-states"
+            },
+            {
+              "id": "q-r22",
+              "type": "true_false_not_given",
+              "instruction": "The stone pyramid-temples were used for both spiritual ceremonies and stargazing.",
+              "acceptedAnswers": [
+                [
+                  "true",
+                  "t"
+                ]
+              ],
+              "correctAnswer": "TRUE",
+              "explanation": "Đoạn B khẳng định: 'served as focal points for religious rituals and astronomical observations.' (Religious rituals = spiritual ceremonies, astronomical observations = stargazing).",
+              "answerLocation": "focal points for religious rituals and astronomical observations"
+            },
+            {
+              "id": "q-r23",
+              "type": "true_false_not_given",
+              "instruction": "Mayan agricultural terracing was copied from neighboring civilizations.",
+              "acceptedAnswers": [
+                [
+                  "not given",
+                  "ng"
+                ]
+              ],
+              "correctAnswer": "NOT GIVEN",
+              "explanation": "Đoạn C nói họ phát triển kỹ thuật terraced hillsides, nhưng không có thông tin nào cho biết họ tự nghĩ ra hay sao chép từ nền văn minh khác. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "developed highly advanced agricultural techniques"
+            },
+            {
+              "id": "q-r24",
+              "type": "true_false_not_given",
+              "instruction": "The Mayan mathematical system used a base-10 calculation standard.",
+              "acceptedAnswers": [
+                [
+                  "false",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "FALSE",
+              "explanation": "Đoạn D khẳng định họ dùng hệ cơ số 20 (base-20): 'developed a base-20 mathematical system that included the concept of zero...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "base-20 mathematical system"
+            },
+            {
+              "id": "q-r25",
+              "type": "true_false_not_given",
+              "instruction": "Environmental factors are believed to have played a role in the abandonment of Mayan cities.",
+              "acceptedAnswers": [
+                [
+                  "true",
+                  "t"
+                ]
+              ],
+              "correctAnswer": "TRUE",
+              "explanation": "Đoạn E khẳng định: 'decline was caused by a combination of severe environmental degradation, prolonged droughts...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "combination of severe environmental degradation"
+            },
+            {
+              "id": "q-r26",
+              "type": "true_false_not_given",
+              "instruction": "The Spanish conquistadors caused the ninth-century collapse of the southern lowlands.",
+              "acceptedAnswers": [
+                [
+                  "false",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "FALSE",
+              "explanation": "Sự sụp đổ diễn ra ở thế kỷ thứ 9, rất lâu trước khi người Tây Ban Nha tới. Đoạn E chỉ ra nguyên nhân là hạn hán, quá tải dân số và nội chiến. Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "decline was caused by a combination of severe environmental degradation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r-sec-3",
+      "title": "Quantum Computing and Future Encryption",
+      "instructions": "Answer questions 27 to 40 based on the passage below.",
+      "passageHtml": "<p class=\"mb-4 text-slate-800 text-base leading-relaxed\">Classical computers, which power our modern digital world, process information using binary bits. Each bit acts as a tiny electronic switch that can represent either a zero (0) or a one (1). Calculations are carried out sequentially, switch by switch. While classical computers have become incredibly fast, they face severe limitations when solving highly complex mathematical problems, such as simulating molecular interactions for drug discovery or factoring massive prime numbers, which would take classical supercomputers thousands of years to compute.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">Quantum computing represents a radical departure from classical computing by utilizing the principles of quantum mechanics. Instead of binary bits, quantum computers use quantum bits, or qubits. Qubits can exist in a state of <i>superposition</i>, meaning they can represent both a zero and a one simultaneously. When multiple qubits are combined, the number of states they can represent grows exponentially. This allows a quantum computer to perform a massive number of calculations in parallel rather than one after another, unlocking unprecedented computational power.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">Another key quantum phenomenon utilized in quantum computing is <i>entanglement</i>. When qubits become entangled, they become deeply linked, meaning the state of one qubit instantaneously determines the state of another, no matter how far apart they are. This allows quantum systems to share information instantly and coordinate calculations with remarkable efficiency. However, maintaining qubits in these delicate states is incredibly difficult. They are highly sensitive to their surrounding environments; even minor temperature fluctuations or electromagnetic noise can cause <i>decoherence</i>, causing the qubits to lose their quantum states and introduce computational errors. Consequently, current quantum processors must be housed in specialized dilution refrigerators cooled to near absolute zero.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">The immense power of quantum computing poses a severe threat to global cybersecurity. Most modern secure communications, online banking, and government networks rely on public-key encryption standards like RSA. The security of RSA relies on the extreme difficulty of factoring the product of two very large prime numbers. While classical supercomputers cannot solve this in any practical timeframe, a mathematical method known as Shor's algorithm, running on a sufficiently large quantum computer, could factor these numbers with ease, instantly shattering current encryption barriers and exposing sensitive worldwide data.</p><p class=\"mb-4 text-slate-800 text-base leading-relaxed\">To preempt this security crisis, researchers and governments are actively developing post-quantum cryptography (PQC). PQC aims to create new encryption algorithms based on complex mathematical problems that are secure against both classical and quantum attacks. Concurrently, scientists are implementing Quantum Key Distribution (QKD). Unlike mathematical encryption, QKD relies on the fundamental laws of physics to secure communications. By transmitting keys using individual light particles (photons), any attempt by an eavesdropper to intercept the key automatically alters its quantum state, immediately alerting the communicating parties of a security breach.</p>",
+      "questionGroups": [
+        {
+          "id": "rg-8",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-r27",
+              "type": "multiple_choice",
+              "instruction": "What is the primary difference between a classical bit and a quantum qubit?",
+              "options": [
+                "A. A qubit can represent both 0 and 1 at the same time due to superposition",
+                "B. A qubit is much larger physically and made of copper",
+                "C. A qubit processes calculations one at a time sequentially"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đoạn 2 nêu rõ: 'Qubits can exist in a state of superposition, meaning they can represent both a zero and a one simultaneously.' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "represent both a zero and a one simultaneously"
+            },
+            {
+              "id": "q-r28",
+              "type": "multiple_choice",
+              "instruction": "Which quantum phenomenon allows qubits to link their states instantly over vast distances?",
+              "options": [
+                "A. Superposition",
+                "B. Entanglement",
+                "C. Decoherence"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đoạn 3 khẳng định: 'entanglement... the state of one qubit instantaneously determines the state of another...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "state of one qubit instantaneously determines the state of another"
+            },
+            {
+              "id": "q-r29",
+              "type": "multiple_choice",
+              "instruction": "Why does Shor's algorithm present a massive threat to current secure networks?",
+              "options": [
+                "A. It physically destroys quantum computer processors",
+                "B. It is a virus that deletes classical hard drives",
+                "C. It can rapidly factor huge prime numbers to break RSA encryption"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đoạn 4 nêu rõ: 'Shor's algorithm... could factor these numbers with ease, instantly shattering current encryption...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "could factor these numbers with ease"
+            },
+            {
+              "id": "q-r30",
+              "type": "multiple_choice",
+              "instruction": "What is the main obstacle to building large-scale, practical quantum computers?",
+              "options": [
+                "A. Qubits losing their quantum states (decoherence) due to environmental noise",
+                "B. The lack of electricity and internet cables",
+                "C. The extreme cheapness and simplicity of classical supercomputers"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đoạn 3 đề cập: 'even minor temperature fluctuations... can cause decoherence, causing the qubits to lose their quantum states...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "cause decoherence, causing the qubits to lose their quantum states"
+            },
+            {
+              "id": "q-r31",
+              "type": "multiple_choice",
+              "instruction": "What is the primary goal of post-quantum cryptography (PQC)?",
+              "options": [
+                "A. To build cheaper classical laptops",
+                "B. To create mathematical algorithms secure against quantum attacks",
+                "C. To replace all digital devices with paper books"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đoạn 5 ghi rõ: 'PQC aims to create new encryption algorithms... secure against both classical and quantum attacks.' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "create new encryption algorithms... secure against both classical and quantum attacks"
+            },
+            {
+              "id": "q-r32",
+              "type": "multiple_choice",
+              "instruction": "How does Quantum Key Distribution (QKD) guarantee secure communications?",
+              "options": [
+                "A. By locking files inside high-security concrete vaults",
+                "B. By making keys incredibly long so they take too long to read",
+                "C. By altering the quantum state of photons if an intercept is attempted"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đoạn 5 chỉ ra: 'any attempt by an eavesdropper to intercept the key automatically alters its quantum state...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "any attempt by an eavesdropper to intercept the key automatically alters its quantum state"
+            }
+          ]
+        },
+        {
+          "id": "rg-9",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questions": [
+            {
+              "id": "q-r33",
+              "type": "gap_fill",
+              "instruction": "Classical switches representing zero or ______ are processed one by one.",
+              "blankIndex": 27,
+              "acceptedAnswers": [
+                [
+                  "one"
+                ]
+              ],
+              "correctAnswer": "one",
+              "explanation": "Đoạn 1 ghi: 'represent either a zero (0) or a one (1).' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "represent either a zero (0) or a one (1)"
+            },
+            {
+              "id": "q-r34",
+              "type": "gap_fill",
+              "instruction": "Qubits allow computers to perform calculations in ______ rather than sequentially.",
+              "blankIndex": 28,
+              "acceptedAnswers": [
+                [
+                  "parallel"
+                ]
+              ],
+              "correctAnswer": "parallel",
+              "explanation": "Đoạn 2 ghi: 'perform a massive number of calculations in parallel...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "perform a massive number of calculations in parallel"
+            },
+            {
+              "id": "q-r35",
+              "type": "gap_fill",
+              "instruction": "Qubits become deeply linked through entanglement, sharing quantum ______ rapidly.",
+              "blankIndex": 29,
+              "acceptedAnswers": [
+                [
+                  "states"
+                ]
+              ],
+              "correctAnswer": "states",
+              "explanation": "Đoạn 3 ghi: 'deeply linked, meaning the state of one qubit instantaneously determines the state...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "meaning the state of one qubit"
+            },
+            {
+              "id": "q-r36",
+              "type": "gap_fill",
+              "instruction": "Shor's algorithm can break RSA by finding the prime ______ of large numbers.",
+              "blankIndex": 30,
+              "acceptedAnswers": [
+                [
+                  "factors"
+                ]
+              ],
+              "correctAnswer": "factors",
+              "explanation": "Đoạn 4 giải thích Shor's algorithm phân tích các thừa số nguyên tố: 'factoring the product of two very large prime numbers.' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "factoring the product of two very large prime numbers"
+            },
+            {
+              "id": "q-r37",
+              "type": "gap_fill",
+              "instruction": "This vulnerability is a major risk to security and financial ______.",
+              "blankIndex": 31,
+              "acceptedAnswers": [
+                [
+                  "networks",
+                  "systems"
+                ]
+              ],
+              "correctAnswer": "networks",
+              "explanation": "Đoạn 4 nói về bảo mật: 'secure communications, online banking, and government networks rely...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "government networks"
+            },
+            {
+              "id": "q-r38",
+              "type": "gap_fill",
+              "instruction": "To prevent decoherence, processors are cooled inside specialized ______.",
+              "blankIndex": 32,
+              "acceptedAnswers": [
+                [
+                  "refrigerators"
+                ]
+              ],
+              "correctAnswer": "refrigerators",
+              "explanation": "Đoạn 3 ghi: 'housed in specialized dilution refrigerators cooled...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "specialized dilution refrigerators"
+            },
+            {
+              "id": "q-r39",
+              "type": "gap_fill",
+              "instruction": "PQC works to design secure mathematical ______ against quantum cracks.",
+              "blankIndex": 33,
+              "acceptedAnswers": [
+                [
+                  "algorithms"
+                ]
+              ],
+              "correctAnswer": "algorithms",
+              "explanation": "Đoạn 5 ghi: 'PQC aims to create new encryption algorithms...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "create new encryption algorithms"
+            },
+            {
+              "id": "q-r40",
+              "type": "gap_fill",
+              "instruction": "QKD secures keys using the fundamental laws of ______.",
+              "blankIndex": 34,
+              "acceptedAnswers": [
+                [
+                  "physics"
+                ]
+              ],
+              "correctAnswer": "physics",
+              "explanation": "Đoạn 5 ghi: 'QKD relies on the fundamental laws of physics...' Meo/Trap: dap an dung thuong la paraphrase cua source, con distractor hay trung keyword nhung sai scope, sai tone, sai doi tuong hoac dao nguoc y. Luon doi chieu answerLocation/evidence truoc khi chon.",
+              "answerLocation": "fundamental laws of physics"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

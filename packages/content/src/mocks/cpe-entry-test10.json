@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test10",
+  "title": "CPE Entry Test 10 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test10-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>An Artful Discovery</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In 19th-century Spain the art world was set (0) on its ear by a Spaniard's chance discovery of what (1) __________ to become known as the Altamira cave. In 1868, a hunter stumbled (2) __________ this cave while hunting. His report to authorities (3) __________ his find failed to arouse much enthusiasm. Luckily, a nobleman by the name of Marcelino de Sautuola was taken to the area, (4) __________ he found prehistoric artefacts in the cave's entrance. (5) __________ the cavern, his daughter noticed pictures painted on the ceiling. Sautuola, being convinced that the paintings (6) __________ of significance, published a book detailing the cave and the artwork contained (7) __________ its shadowy depths. It was not (8) __________ well after his demise, however, that upon further examination, the paintings were given a certificate of authenticity.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Physically, the cave measures approximately 270 metres in length, (9) __________ the vault at its highest point reaches 2.65 metres. It is on (10) __________ that the main body of artistic work is to be found. The paintings are still easily discernable and (11) __________ would be an aesthetic cretin indeed (12) __________ they failed to be impressed by the rainbow of colours depicted. The artists chose to paint their collage (13) __________ bright red, black and violet hues. A pantheon of wild beasts is portrayed, with bison (14) __________ the most prominent of the creation. (15) __________ the archaeological remains found in the main vestibule were tools implemented from flint, and meticulously carved animal bones.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test10-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test10-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "WAS",
+                  "was"
+                ]
+              ],
+              "correctAnswer": "WAS",
+              "explanation": "Đáp án đề xuất: WAS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WAS",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "UPON",
+                  "upon"
+                ]
+              ],
+              "correctAnswer": "UPON",
+              "explanation": "Đáp án đề xuất: UPON. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "UPON",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "ABOUT",
+                  "about"
+                ]
+              ],
+              "correctAnswer": "ABOUT",
+              "explanation": "Đáp án đề xuất: ABOUT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ABOUT",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "WHERE",
+                  "where"
+                ]
+              ],
+              "correctAnswer": "WHERE",
+              "explanation": "Đáp án đề xuất: WHERE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHERE",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "INSIDE",
+                  "inside"
+                ]
+              ],
+              "correctAnswer": "INSIDE",
+              "explanation": "Đáp án đề xuất: INSIDE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "INSIDE",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "WERE",
+                  "were"
+                ]
+              ],
+              "correctAnswer": "WERE",
+              "explanation": "Đáp án đề xuất: WERE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WERE",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "WITHIN",
+                  "within"
+                ]
+              ],
+              "correctAnswer": "WITHIN",
+              "explanation": "Đáp án đề xuất: WITHIN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WITHIN",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "UNTIL",
+                  "until"
+                ]
+              ],
+              "correctAnswer": "UNTIL",
+              "explanation": "Đáp án đề xuất: UNTIL. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "UNTIL",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "WHILE",
+                  "while"
+                ]
+              ],
+              "correctAnswer": "WHILE",
+              "explanation": "Đáp án đề xuất: WHILE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHILE",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "THIS",
+                  "this"
+                ]
+              ],
+              "correctAnswer": "THIS",
+              "explanation": "Đáp án đề xuất: THIS. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "THIS",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "ONE",
+                  "one"
+                ]
+              ],
+              "correctAnswer": "ONE",
+              "explanation": "Đáp án đề xuất: ONE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ONE",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "IF",
+                  "if"
+                ]
+              ],
+              "correctAnswer": "IF",
+              "explanation": "Đáp án đề xuất: IF. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IF",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "IN",
+                  "in"
+                ]
+              ],
+              "correctAnswer": "IN",
+              "explanation": "Đáp án đề xuất: IN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IN",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "BEING",
+                  "being"
+                ]
+              ],
+              "correctAnswer": "BEING",
+              "explanation": "Đáp án đề xuất: BEING. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BEING",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "AMONG",
+                  "among"
+                ]
+              ],
+              "correctAnswer": "AMONG",
+              "explanation": "Đáp án đề xuất: AMONG. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "AMONG",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test10-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>The Greatest Show on Earth</h2><div class='mb-4 p-3 bg-slate-50 border-slate-200 rounded-lg text-sm text-slate-700'><strong>Example:</strong> (0) <strong>famous</strong> (FAME)</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The most (0) <strong>famous</strong> circus in the history of American entertainment has to be the Ringling Brothers Circus. The five brothers, with (16) <strong>__________</strong> aid from another two siblings, were the sons of a German harness-maker who had anglicised his name from Rüngeling. Through sheer hard work, (17) <strong>__________</strong> and organising ability the brothers built up the greatest show on earth.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The circus was born from humble (18) <strong>__________</strong> in 1882, in the Ringlings' home town of Baraboo, Wisconsin, from which they travelled the road, touring the mid-west. Having little cash at their (19) <strong>__________</strong> for equipment and performers, the brothers did the bulk of the work themselves. Together with seventeen (20) <strong>__________</strong>, they sewed and pitched tents, sold tickets, played in the band, turning their hand to anything.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Profits were ploughed back into the business, which grew rapidly after the (21) <strong>__________</strong> of a first elephant in 1888. Initially, the show trundled from town to town in horse-drawn wagons, but, from 1890, railroad travel (22) <strong>__________</strong> the whole process.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Ringlings’ rivals, however, the gigantic Barnum & Bailey’s circus, occupied sixty railroad carriages in travelling to its (23) <strong>__________</strong> destinations. In 1907, one year after Bailey’s death, the Ringlings bought out their enormous (24) <strong>__________</strong>, although the two shows toured separately until their 1919 (25) <strong>__________</strong>. The circus stayed in the family until it was sold in 1967, but the new owners retained the name Ringling Brothers.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test10-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test10-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: OCCASION]:",
+              "acceptedAnswers": [
+                [
+                  "OCCASIONAL",
+                  "occasional"
+                ]
+              ],
+              "correctAnswer": "OCCASIONAL",
+              "explanation": "Đáp án đề xuất: OCCASIONAL. Từ gốc 'OCCASION' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "OCCASIONAL",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "OCCASION",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: DEDICATE]:",
+              "acceptedAnswers": [
+                [
+                  "DEDICATION",
+                  "dedication"
+                ]
+              ],
+              "correctAnswer": "DEDICATION",
+              "explanation": "Đáp án đề xuất: DEDICATION. Từ gốc 'DEDICATE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DEDICATION",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "DEDICATE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: BEGIN]:",
+              "acceptedAnswers": [
+                [
+                  "BEGINNINGS",
+                  "beginnings"
+                ]
+              ],
+              "correctAnswer": "BEGINNINGS",
+              "explanation": "Đáp án đề xuất: BEGINNINGS. Từ gốc 'BEGIN' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "BEGINNINGS",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "BEGIN",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: DISPOSE]:",
+              "acceptedAnswers": [
+                [
+                  "DISPOSAL",
+                  "disposal"
+                ]
+              ],
+              "correctAnswer": "DISPOSAL",
+              "explanation": "Đáp án đề xuất: DISPOSAL. Từ gốc 'DISPOSE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DISPOSAL",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "DISPOSE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: EMPLOY]:",
+              "acceptedAnswers": [
+                [
+                  "EMPLOYEES",
+                  "employees"
+                ]
+              ],
+              "correctAnswer": "EMPLOYEES",
+              "explanation": "Đáp án đề xuất: EMPLOYEES. Từ gốc 'EMPLOY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EMPLOYEES",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "EMPLOY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: ACQUIRE]:",
+              "acceptedAnswers": [
+                [
+                  "ACQUISITION",
+                  "acquisition"
+                ]
+              ],
+              "correctAnswer": "ACQUISITION",
+              "explanation": "Đáp án đề xuất: ACQUISITION. Từ gốc 'ACQUIRE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "ACQUISITION",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "ACQUIRE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: FACILITY]:",
+              "acceptedAnswers": [
+                [
+                  "FACILITATED",
+                  "facilitated"
+                ]
+              ],
+              "correctAnswer": "FACILITATED",
+              "explanation": "Đáp án đề xuất: FACILITATED. Từ gốc 'FACILITY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "FACILITATED",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "FACILITY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: VARY]:",
+              "acceptedAnswers": [
+                [
+                  "VARIOUS",
+                  "various"
+                ]
+              ],
+              "correctAnswer": "VARIOUS",
+              "explanation": "Đáp án đề xuất: VARIOUS. Từ gốc 'VARY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "VARIOUS",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "VARY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: COMPETE]:",
+              "acceptedAnswers": [
+                [
+                  "COMPETITORS",
+                  "competitors"
+                ]
+              ],
+              "correctAnswer": "COMPETITORS",
+              "explanation": "Đáp án đề xuất: COMPETITORS. Từ gốc 'COMPETE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "COMPETITORS",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "COMPETE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: MERGE]:",
+              "acceptedAnswers": [
+                [
+                  "MERGER",
+                  "merger"
+                ]
+              ],
+              "correctAnswer": "MERGER",
+              "explanation": "Đáp án đề xuất: MERGER. Từ gốc 'MERGE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "MERGER",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "MERGE",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test10-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Techno Education</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>With the (26) __________ the Internet, educational opportunities have opened up for a number of people who previously had no chance to earn qualifications in (27) __________ institutes of learning. Nowadays, many college and university catalogues contain a section entitled 'long-distance learning'. Through these on-line courses, the student can attend classes, hand in assignments, take part in tutorials and sit exams. The individuals who take advantage of cyber education (28) __________ many categories: the physically challenged, single parents, the elderly and those who live in (29) __________ areas where there are no further educational facilities available. Participating in long-distance learning courses (30) __________ the same prerequisites as does attending a regular university course. In order to earn a degree, a student must (31) __________ all academic standards set by the institute.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test10-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test10-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - advent. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "advent",
+              "category": "cpe_part_1",
+              "options": [
+                "A. advent",
+                "B. dawn",
+                "C. twilight",
+                "D. dusk"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - higher. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "higher",
+              "category": "cpe_part_1",
+              "options": [
+                "A. superior",
+                "B. further",
+                "C. secondary",
+                "D. higher"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - fall into. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "fall into",
+              "category": "cpe_part_1",
+              "options": [
+                "A. come down to",
+                "B. make up",
+                "C. fall into",
+                "D. go with"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - remote. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "remote",
+              "category": "cpe_part_1",
+              "options": [
+                "A. desolate",
+                "B. arid",
+                "C. remote",
+                "D. sparse"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - requires. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "requires",
+              "category": "cpe_part_1",
+              "options": [
+                "A. requires",
+                "B. necessitates",
+                "C. attains",
+                "D. applies"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - meet. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "meet",
+              "category": "cpe_part_1",
+              "options": [
+                "A. gain",
+                "B. accomplish",
+                "C. meet",
+                "D. succeed"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - cut down. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "cut down",
+              "category": "cpe_part_1",
+              "options": [
+                "A. cut up",
+                "B. cut off",
+                "C. cut out",
+                "D. cut down"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - clear. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "clear",
+              "category": "cpe_part_1",
+              "options": [
+                "A. clear",
+                "B. light",
+                "C. empty",
+                "D. free"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - cost. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "cost",
+              "category": "cpe_part_1",
+              "options": [
+                "A. cost",
+                "B. price",
+                "C. charge",
+                "D. budget"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - artificial. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "artificial",
+              "category": "cpe_part_1",
+              "options": [
+                "A. fake",
+                "B. artificial",
+                "C. synthetic",
+                "D. man-made"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - break down. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "break down",
+              "category": "cpe_part_1",
+              "options": [
+                "A. break apart",
+                "B. break away",
+                "C. break down",
+                "D. break in"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - withstand. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "withstand",
+              "category": "cpe_part_1",
+              "options": [
+                "A. endure",
+                "B. resist",
+                "C. tolerate",
+                "D. withstand"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test10-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an extract from a novel. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap (38-44). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>On my right hand there were lines of fishing stakes resembling a mysterious system of half-submerged, bamboo fences, incomprehensible in its division of the domain of tropical fishes, and crazy of aspect as if abandoned forever by some nomad tribe of fishermen now gone to the other end of the ocean; for there was no sign of human habitation as far as the eye could reach.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>— And when I turned my head to take a parting glance at the tug which had just left us anchored outside the bar, I saw the straight line of the flat shore joined to the stable sea, ’ edge to edge, with a perfect and unmarked closeness, in one levelled floor half brown, half blue under the enormous dome of the sky.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Here and there gleams, as of a few scattered pieces of ) ilver, marked the windings of the great river; and on the.earest of them, just within the bar, the tug steaming right \" into the land, became lost to my sight, hull and funnel and masts, as though the impassive earth had swallowed her up without an effort, without a tremor.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>She floated at the starting point of a long journey, very still in an immense stillness, the shadows of her spars flung far to the eastward by the setting sun. At that moment I was alone on her decks. There was not a sound in her — and around us nothing moved, nothing lived, not a canoe on the water, not a bird in the air, not a cloud in the sky.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There must have been some glare in the air to interfere with one's sight, because it was only just before the sun left us that my roaming eyes made out, beyond the highest ridges of the principal islet of the group, something which did away with the solemnity of perfect solitude. The tide of darkness flowed on swiftly; and with tropical suddenness a swarm of stars came out above the shadowy earth, while I lingered yet, my hand resting lightly on my - ship’s rail as if on the shoulder of a trusted friend.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>We sat down at once, and as I helped the chief mate, I said: “Are you aware that there is a ship anchored inside the islands? I saw her masthead above the ridge as the sun went down.” He raised sharply his simple face,. overcharged by a terrible growth of whisker, and emitted his usual ejaculations: “Bless my soul, sir! You don't say so!”</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>It must be said, too, that I knew very little of my officers. In consequence of certain events of no particular significance, except to myself, I had been appointed to the command only a fortnight before. Neither did I know much of the hands forward.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The youngest man on board (barring the second mate), and untried as yet by a position of the fullest responsibility, I was willing to take the adequacy of the others for granted. They had simply to be equal to their tasks; but I wondered how far I should turn out faithful to that ideal conception of one's own personality every man sets up for himself secretly.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test10-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test10-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "both our existences to be carried out, far from all human eyes, with only sky and sea for spectators and for judges.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn đoạn C. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Corresponding in their insignificance to the islets of the sea, two small clumps of trees, one on each side of the only fault in the impeccable joint, marked the mouth of the river Meinam we had just left on the first preparatory stage of our homeward journey; and, far back on the inland level, a larger and loftier mass, the grove surrounding the great Paknam pagoda was the only thing on which the eye could rest from the vain task of exploring the monotonous sweep of the horizon.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "I detained him as he was making a move. For the last two days the crew had had plenty of hard work, and the night before they had had very little sleep. I felt painfully that I — a stranger — was doing something unusual when I directed him to let all hands turn in without setting an anchor watch. I proposed to keep on deck myself till one o’clock or thereabouts. I would get the second mate to relieve me at that hour.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Chọn đoạn E. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "In this breathless pause at the threshold of a long passage we seemed to be measuring our fitness fora",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "But, with all that multitude of celestial bodies staring down at one, the comfort of quiet communion with her was gone for good. And there were also disturbing sounds by this time - voices, footsteps forward; the steward flitted along the main-deck, a busily ministering spirit; a hand bell tinkled urgently under the poop deck... I found my two officers waiting for me near the supper table, in the lighted cuddy.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "My second mate was a round-cheeked, silent young man, grave beyond his years, I thought; but as our eyes happened to meet I detected a slight quiver on his lips. I looked down at once. It was not my part to encourage sneering on board my ship.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "All these people had been together for eighteen months or so, and my position was that of the only stranger on board. I mention this because it has some bearing on what is to follow. But what I felt most was my being a stranger to the ship; and if all the truth must be told, I was somewhat of a stranger to myself.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "But, with all that multitude of celestial bodies staring down at one, the comfort of quiet communion with her was gone for good. And there were also disturbing sounds by this time - voices, footsteps forward; the steward flitted along the main-deck, a busily ministering spirit; a hand bell tinkled urgently under the poop deck... I found my two officers waiting for me near the supper table, in the lighted cuddy."
+            },
+            {
+              "label": "B",
+              "text": "My second mate was a round-cheeked, silent young man, grave beyond his years, I thought; but as our eyes happened to meet I detected a slight quiver on his lips. I looked down at once. It was not my part to encourage sneering on board my ship."
+            },
+            {
+              "label": "C",
+              "text": "Corresponding in their insignificance to the islets of the sea, two small clumps of trees, one on each side of the only fault in the impeccable joint, marked the mouth of the river Meinam we had just left on the first preparatory stage of our homeward journey; and, far back on the inland level, a larger and loftier mass, the grove surrounding the great Paknam pagoda was the only thing on which the eye could rest from the vain task of exploring the monotonous sweep of the horizon."
+            },
+            {
+              "label": "D",
+              "text": "All these people had been together for eighteen months or so, and my position was that of the only stranger on board. I mention this because it has some bearing on what is to follow. But what I felt most was my being a stranger to the ship; and if all the truth must be told, I was somewhat of a stranger to myself."
+            },
+            {
+              "label": "E",
+              "text": "In this breathless pause at the threshold of a long passage we seemed to be measuring our fitness fora"
+            },
+            {
+              "label": "F",
+              "text": "long and arduous enterprise, the appointed task of _."
+            },
+            {
+              "label": "G",
+              "text": "both our existences to be carried out, far from all human eyes, with only sky and sea for spectators and for judges."
+            },
+            {
+              "label": "H",
+              "text": "I detained him as he was making a move. For the last two days the crew had had plenty of hard work, and the night before they had had very little sleep. I felt painfully that I — a stranger — was doing something unusual when I directed him to let all hands turn in without setting an anchor watch. I proposed to keep on deck myself till one o’clock or thereabouts. I would get the second mate to relieve me at that hour."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test10-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>How aggressive would you say you were? We often hear that people are violent by nature - the frequency of crime and our seeming inability to avoid war would appear to bear this out. Human visual displays of aggression, though, are far more frequent than actual aggressive acts themselves, and are often enough to put the message across. These displays fall into three main categories: Intention Movements, Vacuum Gestures and Redirection Gestures.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Firstly, there are Intention Movements, where the attacker begins but does not complete a movement. Examples of this are the raised arm gesture or the clawed hands posture. Additionally, a foot may be lifted as if to kick. In each case, the action, although incomplete, is unmistakably a threat.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Then there is the action which, although complete, does not make contact with the enemy’s body. This is known as the Vacuum Gesture. When somebody shakes his fist, punching the air, he is performing a Vacuum Gesture. Equally, a raised and wagging forefinger, however mild a reproof it may appear, is a Vacuum Gesture in which the finger is a miniature club symbolically beating your opponent over the head, or a small symbolic sword stabbing him.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Another form of aggressive body language is the Redirection Gesture. Here the attack is carried out and makes contact, but not with the victim. It is instead performed on the attacker's own body, as in the self-bite, the self-choke and the ubiquitous throat slit, where the aggressor draws a finger, representing a knife, across his own throat.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In addition to the movements as detailed above, there will be a characteristic fierce or aggressive facial expression, a tense body posture and exaggerated breathing. The attacker experiences, at the same time, an inner turmoil, a conflict of feelings between the desire to attack and to retreat, which is otherwise known as fight versus flight.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>You will have seen a cat, when angry or threatened, with its fur bristling on end, its tail swishing, and its crablike gait. In common with many animal species, the cat is using a bodily threat display to intimidate an actual or potential foe.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Throughout the animal kingdom, such displays of fur and feathers — or of fins, for fish - are utilised, erecting crests and fluffing out manes in order to make the creature appear more formidable, a “don't you mess with me!” message.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Lacking such physical attributes, man must content himself with looking fierce, although this may be extended, culturally, to devices such as war paint, dancing, chanting, drumming, wearing uniforms and brandishing weapons, according to the society he belongs to. Whether it be via protest marches with banners and slogans, the taunting of the fans of one rival football team by another (all flaunting team colours), or a full military parade which displays a nation’s military hardware, the “don't you mess with me/us!” idea is obvious.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>What if a conflict between, say, two individuals actually takes place but is not in earnest? How do we know that it is only play? There are two metasignals, that is to say signals about signals, which indicate this. One is to check the two individuals’ facial expressions. If they are smiling, the aggression is not serious. The second metasignal, in the case where the participants wear fierce or angry expressions as part of the game, is a lack of action economy. When fights are serious, no energy is wasted on exaggerated movements and every muscular act is intended to contribute to the maximum efficiency of the attack, whereas mock fights include unnecessary, exaggerated, even melodramatic moves, rather like a piece of theatre.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>So there you have it. Aggression may be actual, or it may be only pretence, mere shadow boxing. Alternatively, it may stop at a threatening display and proceed no further. Either way, there is far more huff and puff than real violence in the end product. The little pigs usually escape.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test10-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test10-45",
+              "type": "multiple_choice",
+              "instruction": "According to the first paragraph, violence",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - more often than not, doesn't happen.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "more often than not, doesn't happen.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. is never enough to put the message across.",
+                "B. is rarely a factor in crime.",
+                "C. more often than not, doesn't happen.",
+                "D. is a visual display."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-46",
+              "type": "multiple_choice",
+              "instruction": "An Intention Movement",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - looks more harmful than it actually is.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "looks more harmful than it actually is.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. is often misinterpreted.",
+                "B. avoids actual contact.",
+                "C. is always part of a series of gestures.",
+                "D. looks more harmful than it actually is."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-47",
+              "type": "multiple_choice",
+              "instruction": "Vacuum Gestures are",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - non-violent acts.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "non-violent acts.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. preludes to violence.",
+                "B. aggressive and can cause bodily harm.",
+                "C. non-violent acts.",
+                "D. a form of verbal abuse."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-48",
+              "type": "multiple_choice",
+              "instruction": "In Redirection Gestures, the aggressor",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - performs the gesture on himself.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "performs the gesture on himself.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. performs the gesture on himself.",
+                "B. has a clear sense of purpose.",
+                "C. seeks to harm himself.",
+                "D. is angry with himself."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-49",
+              "type": "multiple_choice",
+              "instruction": "If the conflict is not in earnest, the contenders will always",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - give this fact away by their gestures.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "give this fact away by their gestures.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. smile at some point.",
+                "B. give this fact away by their gestures.",
+                "C. behave more theatrically.",
+                "D. be efficient and economical in their movements."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test10-50",
+              "type": "multiple_choice",
+              "instruction": "The overall impression given by the passage about man’s propensity for violence is",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - optimistic.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "optimistic.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. cynical.",
+                "B. gloomy.",
+                "C. flippant.",
+                "D. optimistic."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "version": "sat-studio-p0-p4-governance-2026-05-24",
+  "generatedAt": "2026-05-25T00:09:48+00:00",
+  "p0QualityGate": {
+    "blockedCount": 0,
+    "byReason": {},
+    "byPreviousReviewStatus": {},
+    "artifact": "data\\content-quality-gate.json"
+  },
+  "p1Blueprint": {
+    "highestPriority": [
+      {
+        "section": "Math",
+        "domain": "Algebra",
+        "count": 1548,
+        "sectionTotal": 4851,
+        "actualPct": 31.9,
+        "satTargetPct": 35.0,
+        "deltaPctPoints": -3.1,
+        "action": "expand",
+        "priority": "P1",
+        "recommendedAdditionalReviewedCore": 231
+      }
+    ],
+    "artifact": "data\\blueprint-expansion-manifest.json",
+    "csv": "data\\blueprint-expansion-manifest.csv"
+  },
+  "p2ExplanationQueue": {
+    "total": 0,
+    "byPriority": {},
+    "artifact": "data\\explanation-coaching-queue-v2.json",
+    "csv": "data\\explanation-coaching-queue-v2.csv"
+  },
+  "p3Pools": {
+    "byPool": {
+      "diagnostic": 8031,
+      "simulation": 9020,
+      "1550_plus": 3865,
+      "mastery_proof": 6871,
+      "remediation": 1427
+    },
+    "artifact": "data\\question-pool-governance.json"
+  },
+  "p4MasteryProof": {
+    "byProofType": {
+      "elite": 3865,
+      "standard": 3602,
+      "timed": 974,
+      "foundation": 1017
+    },
+    "artifact": "data\\mastery-proof-policy.json"
+  }
+}

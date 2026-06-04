@@ -1,0 +1,2000 @@
+[
+  {
+    "id": "antigravity-hard-23673084",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the equation 3(2x - 5) + k = 6x - 10 have infinitely many solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "-5"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "No value of k makes it an identity"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Expand: 6x - 15 + k = 6x - 10. For identity: -15 + k = -10, so k = 5.",
+      "distractors": {
+        "B": "Sign Error: solved -15 + k = -10 incorrectly as k = -5",
+        "C": "Assumed k = 0 without solving",
+        "D": "Confused identity with contradiction"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing identity conditions in parametric equations",
+      "trapTypes": [
+        "Parameter Confusion",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-bb1090fd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A phone plan charges a monthly fee of m dollars plus $0.05 per text. A customer sends 200 texts and pays $25 total. What is m?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$15"
+      },
+      {
+        "letter": "B",
+        "text": "$10"
+      },
+      {
+        "letter": "C",
+        "text": "$20"
+      },
+      {
+        "letter": "D",
+        "text": "$35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "m + 0.05(200) = 25 → m + 10 = 25 → m = 15.",
+      "distractors": {
+        "B": "Divided 200 by 20 instead of multiplying by 0.05",
+        "C": "Subtracted wrong: 25 - 5 = 20",
+        "D": "Added: 25 + 10 = 35"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translating verbal context into a linear equation",
+      "trapTypes": [
+        "Arithmetic Error",
+        "Wrong Operation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-50dcea8a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve for r in the formula A = P(1 + rt).",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "r = (A - P)/(Pt)"
+      },
+      {
+        "letter": "B",
+        "text": "r = (A - P)/t"
+      },
+      {
+        "letter": "C",
+        "text": "r = A/(Pt) - 1"
+      },
+      {
+        "letter": "D",
+        "text": "r = (A + P)/(Pt)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "A - P = Prt → r = (A - P)/(Pt).",
+      "distractors": {
+        "B": "Forgot to divide by P",
+        "C": "Divided A by Pt first, then subtracted 1 — order error",
+        "D": "Added P instead of subtracting"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Isolating a variable in a multi-variable literal equation",
+      "trapTypes": [
+        "Distribution Error",
+        "Order of Operations"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-b0ead8e9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 5(x - 3) - 2(x + 4) = 3x + k has no solution for any x, which values of k work?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Any k ≠ -23"
+      },
+      {
+        "letter": "B",
+        "text": "k = -23"
+      },
+      {
+        "letter": "C",
+        "text": "k = 23"
+      },
+      {
+        "letter": "D",
+        "text": "No values of k"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Expand: 3x - 23 = 3x + k. The x-terms cancel. For no solution: -23 ≠ k, so any k except -23.",
+      "distractors": {
+        "B": "k = -23 gives identity (infinitely many), not no solution",
+        "C": "Sign error on constant",
+        "D": "Thought equation always has a solution"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Understanding contradiction vs identity conditions",
+      "trapTypes": [
+        "Identity vs Contradiction",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-ca7909f4",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: (3x + 2)/4 - (x - 1)/3 = 13/12",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 3/5"
+      },
+      {
+        "letter": "B",
+        "text": "x = 1"
+      },
+      {
+        "letter": "C",
+        "text": "x = 5/3"
+      },
+      {
+        "letter": "D",
+        "text": "x = 7/12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "LCD = 12: 3(3x + 2) - 4(x - 1) = 13 → 9x + 6 - 4x + 4 = 13 → 5x + 10 = 13 → 5x = 3 → x = 3/5.",
+      "distractors": {
+        "B": "Forgot to distribute negative: -(x-1) became -x-1",
+        "C": "Inverted fraction: wrote 5/3 instead of 3/5",
+        "D": "Used wrong LCD"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Multi-step fraction equation with LCD",
+      "trapTypes": [
+        "LCD Error",
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-536f7aba",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 4(2x - a) = 3(x + a) + 5x - 7a, which statement is true?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Identity for all values of a"
+      },
+      {
+        "letter": "B",
+        "text": "No solution for any a"
+      },
+      {
+        "letter": "C",
+        "text": "Exactly one solution when a = 0"
+      },
+      {
+        "letter": "D",
+        "text": "Depends on the value of a"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Left: 8x - 4a. Right: 3x + 3a + 5x - 7a = 8x - 4a. Both sides identical.",
+      "distractors": {
+        "B": "Assumed x-terms cancel to a contradiction",
+        "C": "Restricted to a = 0 unnecessarily",
+        "D": "Did not simplify both sides fully"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing structural identity independent of parameter",
+      "trapTypes": [
+        "Identity Recognition",
+        "Incomplete Simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-ff5b6bf9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A pool fills at 3 gal/min with 47 gal. Another drains at 2 gal/min with 142 gal. When are they equal?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "19 min"
+      },
+      {
+        "letter": "B",
+        "text": "95 min"
+      },
+      {
+        "letter": "C",
+        "text": "17 min"
+      },
+      {
+        "letter": "D",
+        "text": "21 min"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "47 + 3t = 142 - 2t → 5t = 95 → t = 19.",
+      "distractors": {
+        "B": "Used only one rate: 95/1 = 95",
+        "C": "Subtracted rates: t(3-2) = 142-47 but then 95/1",
+        "D": "Added a rounding error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Setting up equations from two competing linear processes",
+      "trapTypes": [
+        "Setup Error",
+        "Rate Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-2b055e24",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of c does 2(3x + c) - 6x = 4c + 2 have no solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Any c ≠ -1"
+      },
+      {
+        "letter": "B",
+        "text": "c = -1"
+      },
+      {
+        "letter": "C",
+        "text": "c = 0"
+      },
+      {
+        "letter": "D",
+        "text": "c = 1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Simplify: 2c = 4c + 2 → -2c = 2 → c = -1 gives identity. For c ≠ -1: contradiction (no solution in x).",
+      "distractors": {
+        "B": "c = -1 gives identity, not no solution",
+        "C": "Plugged in c = 0 without analysis",
+        "D": "Tested c = 1 only"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Analyzing parametric equations for contradiction conditions",
+      "trapTypes": [
+        "Parameter Analysis",
+        "Identity vs Contradiction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-e9c82c77",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A rectangle has perimeter 56 cm. Length is 4 cm more than twice the width. Find the width.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8 cm"
+      },
+      {
+        "letter": "B",
+        "text": "20 cm"
+      },
+      {
+        "letter": "C",
+        "text": "16 cm"
+      },
+      {
+        "letter": "D",
+        "text": "12 cm"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "l = 2w + 4. 2(w + 2w + 4) = 56 → 6w + 8 = 56 → w = 8.",
+      "distractors": {
+        "B": "Found length: l = 2(8)+4 = 20",
+        "C": "Used l = 2w without the +4",
+        "D": "Used perimeter = l + w instead of 2(l+w)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translating geometric relationships into linear equations",
+      "trapTypes": [
+        "Solved Wrong Variable",
+        "Perimeter Formula"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-8e016afc",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 0.3(x - 4) + 0.7x = 0.1(10x - 12)",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All real numbers (identity)"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0"
+      },
+      {
+        "letter": "C",
+        "text": "x = 1.2"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "0.3x - 1.2 + 0.7x = x - 1.2 → x - 1.2 = x - 1.2. Identity.",
+      "distractors": {
+        "B": "Confused x = 0 with 'all reals'",
+        "C": "Decimal multiplication error",
+        "D": "Thought terms cancel to contradiction"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing identity in decimal-coefficient equations",
+      "trapTypes": [
+        "Identity vs No Solution",
+        "Decimal Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-9a43e1ee",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 7x - 3(2x + 5) = x - 12, what is x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "No solution (contradiction)"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0"
+      },
+      {
+        "letter": "C",
+        "text": "x = -3"
+      },
+      {
+        "letter": "D",
+        "text": "x = 3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "7x - 6x - 15 = x - 12 → x - 15 = x - 12 → -15 ≠ -12. Contradiction.",
+      "distractors": {
+        "B": "Set x = 0 and checked one side only",
+        "C": "Arithmetic error: -15 + 12 = -3 → x = -3",
+        "D": "Sign flip error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identifying contradictions after distribution",
+      "trapTypes": [
+        "Contradiction Recognition",
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-d3767a33",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve for C: F = (9/5)C + 32",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "C = (5/9)(F - 32)"
+      },
+      {
+        "letter": "B",
+        "text": "C = (9/5)(F - 32)"
+      },
+      {
+        "letter": "C",
+        "text": "C = 5F/9 - 32"
+      },
+      {
+        "letter": "D",
+        "text": "C = (5F - 32)/9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "F - 32 = (9/5)C → C = (5/9)(F - 32).",
+      "distractors": {
+        "B": "Kept 9/5 instead of reciprocal",
+        "C": "Distributed 5/9 to F but not to -32",
+        "D": "Divided each term separately, incorrect grouping"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Isolating variable with fraction coefficient",
+      "trapTypes": [
+        "Reciprocal Error",
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-7a2f8511",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Maria buys notebooks at $3 and pens at $1.50. She buys twice as many pens as notebooks and spends $24. How many notebooks?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3n + 1.5(2n) = 24 → 6n = 24 → n = 4.",
+      "distractors": {
+        "B": "Found pens: 2(4) = 8",
+        "C": "Used pens = notebooks instead of 2×",
+        "D": "Divided 24 by (3+1.5+1.5) = 6 wrong way"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Setting up substitution equation from context",
+      "trapTypes": [
+        "Solved Wrong Variable",
+        "Setup Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-75ff1890",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If (k+2)x + 5 = kx + 2x + 5 for ALL x, how many values of k work?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All real numbers"
+      },
+      {
+        "letter": "B",
+        "text": "Exactly one: k = 0"
+      },
+      {
+        "letter": "C",
+        "text": "None"
+      },
+      {
+        "letter": "D",
+        "text": "Exactly two"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Right side = (k+2)x + 5 = left side. Identity for all k.",
+      "distractors": {
+        "B": "Thought only k=0 works",
+        "C": "Thought no k works",
+        "D": "Assumed quadratic in k"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing structural identity independent of parameter",
+      "trapTypes": [
+        "Overthinking",
+        "Parameter Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-379ae943",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: |3x - 6| = 12",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 6 or x = -2"
+      },
+      {
+        "letter": "B",
+        "text": "x = 6 only"
+      },
+      {
+        "letter": "C",
+        "text": "x = -6 or x = 2"
+      },
+      {
+        "letter": "D",
+        "text": "x = 6 or x = 2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Case 1: 3x - 6 = 12 → x = 6. Case 2: 3x - 6 = -12 → x = -2.",
+      "distractors": {
+        "B": "Only solved positive case",
+        "C": "Sign errors in both cases",
+        "D": "Added 6 instead of subtracting in Case 2"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving absolute value equations with two cases",
+      "trapTypes": [
+        "Missing Second Case",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-28bce4fb",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Car rental A: $45/day + $0.20/mi. Car rental B: $30/day + $0.35/mi. At how many miles is cost equal (1-day)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "100 miles"
+      },
+      {
+        "letter": "B",
+        "text": "75 miles"
+      },
+      {
+        "letter": "C",
+        "text": "150 miles"
+      },
+      {
+        "letter": "D",
+        "text": "50 miles"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "45 + 0.20m = 30 + 0.35m → 15 = 0.15m → m = 100.",
+      "distractors": {
+        "B": "Used 45/0.60 = 75",
+        "C": "Added rates: 0.55m = total confusion",
+        "D": "Used 15/0.30 = 50"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding break-even from two linear cost models",
+      "trapTypes": [
+        "Setup Error",
+        "Rate Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-7ce287e6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 5y - 3(y - 2) + 4 = 2(y + 5)",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All real numbers (identity)"
+      },
+      {
+        "letter": "B",
+        "text": "y = 0"
+      },
+      {
+        "letter": "C",
+        "text": "y = 5"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "5y - 3y + 6 + 4 = 2y + 10 → 2y + 10 = 2y + 10. Identity.",
+      "distractors": {
+        "B": "Set y = 0",
+        "C": "Stopped at 2y + 2 on left (arithmetic error)",
+        "D": "Thought terms cancel to contradiction"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Distribution and simplification to identify identity",
+      "trapTypes": [
+        "Identity Recognition",
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-143326ec",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 2/(x - 1) = 6. What is x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4/3"
+      },
+      {
+        "letter": "B",
+        "text": "7/3"
+      },
+      {
+        "letter": "C",
+        "text": "1/3"
+      },
+      {
+        "letter": "D",
+        "text": "5/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2 = 6(x - 1) → 2 = 6x - 6 → 8 = 6x → x = 4/3.",
+      "distractors": {
+        "B": "Added 1 to 2/6 = 1/3 → 4/3 + 1 = 7/3",
+        "C": "Divided: 2/6 = 1/3",
+        "D": "Used 5/3 from mental math error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving rational equation by clearing denominator",
+      "trapTypes": [
+        "Cross Multiplication Error",
+        "Simplification Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-deab57dd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A number decreased by 40% of itself equals 27. What is the number?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "45"
+      },
+      {
+        "letter": "B",
+        "text": "67.5"
+      },
+      {
+        "letter": "C",
+        "text": "38"
+      },
+      {
+        "letter": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x - 0.4x = 27 → 0.6x = 27 → x = 45.",
+      "distractors": {
+        "B": "Divided 27 by 0.4 instead of 0.6",
+        "C": "Added 40% of 27 to 27: 27 + 10.8 = 37.8 ≈ 38",
+        "D": "Took 40% of 45 = 18 (confused result with input)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translating percent decrease into linear equation",
+      "trapTypes": [
+        "Percent Complement Error",
+        "Wrong Operation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-b1524ec2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 3(x + 2) - 2(3x - 1) = -(3x - 8)",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All real numbers (identity)"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0"
+      },
+      {
+        "letter": "C",
+        "text": "x = 8"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3x + 6 - 6x + 2 = -3x + 8 → -3x + 8 = -3x + 8. Identity.",
+      "distractors": {
+        "B": "Set x = 0 and concluded unique",
+        "C": "Stopped at constant 8",
+        "D": "Negated wrong: -(3x-8) = -3x - 8"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Multi-term distribution to recognize identity",
+      "trapTypes": [
+        "Identity Recognition",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-8a8a4768",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Sum of 3 consecutive odd integers is 63. What is the largest?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "23"
+      },
+      {
+        "letter": "B",
+        "text": "21"
+      },
+      {
+        "letter": "C",
+        "text": "19"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x + (x+2) + (x+4) = 63 → 3x + 6 = 63 → x = 19. Largest = 23.",
+      "distractors": {
+        "B": "Gave middle number: 21",
+        "C": "Gave smallest: 19",
+        "D": "Added 6 to 19 instead of 4"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Setting up consecutive integer equations",
+      "trapTypes": [
+        "Solved Wrong Part",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-3ccb6a30",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 5x + 3 = 5x + k, for what value of k does the equation have exactly one solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "No such value exists"
+      },
+      {
+        "letter": "B",
+        "text": "k = 3"
+      },
+      {
+        "letter": "C",
+        "text": "k = 0"
+      },
+      {
+        "letter": "D",
+        "text": "k = -3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "5x cancels: 3 = k. If k = 3: identity. If k ≠ 3: contradiction. Neither gives exactly one solution.",
+      "distractors": {
+        "B": "k = 3 gives identity, not one solution",
+        "C": "Set k = 0 to 'eliminate constant'",
+        "D": "Tried negative"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Understanding parallel-line analogy for solution counts",
+      "trapTypes": [
+        "Solution Count Error",
+        "Identity vs Contradiction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-a30ffd71",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A taxi charges $3 base plus $1.50/mile. If total is $15, how many miles?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8"
+      },
+      {
+        "letter": "B",
+        "text": "10"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3 + 1.5m = 15 → 1.5m = 12 → m = 8.",
+      "distractors": {
+        "B": "Forgot base: 15/1.5 = 10",
+        "C": "Used 15/3 = 5",
+        "D": "Added base to result: 8 + 3 = 11... no, 12 from 15-3=12 confused as answer"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving linear equation from word problem",
+      "trapTypes": [
+        "Forgot Base Fare",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-4b8baf11",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: (x + 1)/2 + (x - 1)/3 = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "29/5"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "11/5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "LCD = 6: 3(x+1) + 2(x-1) = 30 → 5x + 1 = 30 → x = 29/5.",
+      "distractors": {
+        "B": "Forgot LCD: added numerators directly",
+        "C": "Used LCD = 5",
+        "D": "Subtracted instead of adding"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Fraction equation requiring LCD",
+      "trapTypes": [
+        "LCD Error",
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-1265fd00",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If mx + 5 = 3x + 5 has infinitely many solutions, what is m?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "Any value"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "For identity: mx = 3x for all x → m = 3.",
+      "distractors": {
+        "B": "Set m = 0 to 'remove' x-term",
+        "C": "Confused m with constant 5",
+        "D": "Thought any m works"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Matching coefficients for identity condition",
+      "trapTypes": [
+        "Parameter Identification",
+        "Coefficient Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-e02ae113",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 0.25x - 0.1(x + 10) = 0.5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "-10"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "6.67"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "0.25x - 0.1x - 1 = 0.5 → 0.15x = 1.5 → x = 10.",
+      "distractors": {
+        "B": "Sign error: got -10",
+        "C": "Forgot to distribute -0.1 to 10",
+        "D": "Decimal arithmetic error: 1.5/0.25"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving equations with decimal coefficients",
+      "trapTypes": [
+        "Decimal Distribution Error",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-4e12ba6b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Rectangle: length is 3 more than width. Perimeter = 46. Find the length.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "13"
+      },
+      {
+        "letter": "B",
+        "text": "10"
+      },
+      {
+        "letter": "C",
+        "text": "23"
+      },
+      {
+        "letter": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Half-perimeter = 23. w + (w+3) = 23 → 2w = 20 → w = 10, l = 13.",
+      "distractors": {
+        "B": "Gave width instead",
+        "C": "Used perimeter = l + w",
+        "D": "Added 3 to wrong value"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Geometry word problem",
+      "trapTypes": [
+        "Solved Wrong Variable",
+        "Perimeter Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-a18355dd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of a does 2(ax - 3) = 6x - 6 have infinitely many solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "-3"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2ax - 6 = 6x - 6. For identity: 2a = 6 → a = 3. Constants: -6 = -6 ✓.",
+      "distractors": {
+        "B": "Forgot to divide by 2: a = 6",
+        "C": "Used negative: -6/2 = -3",
+        "D": "Set a = 1 without calculation"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Coefficient matching for identity",
+      "trapTypes": [
+        "Coefficient Matching",
+        "Division Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-8bcc2ddf",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 5 - 2(3 - x) = 2x - 1",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All real numbers (identity)"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0"
+      },
+      {
+        "letter": "C",
+        "text": "x = 2"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "5 - 6 + 2x = 2x - 1 → -1 + 2x = 2x - 1. Identity.",
+      "distractors": {
+        "B": "Substituted x = 0 only",
+        "C": "Computed 5 - 6 = 1 instead of -1",
+        "D": "Thought contradiction"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Nested distribution to identify identity",
+      "trapTypes": [
+        "Identity Recognition",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-ef8a9787",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Worker earns $18/hr regular, $27/hr overtime. Total $594 with 4 overtime hours. Regular hours?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "27"
+      },
+      {
+        "letter": "B",
+        "text": "33"
+      },
+      {
+        "letter": "C",
+        "text": "30"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "18h + 27(4) = 594 → 18h + 108 = 594 → 18h = 486 → h = 27.",
+      "distractors": {
+        "B": "Forgot overtime: 594/18 = 33",
+        "C": "Used blended rate",
+        "D": "Subtracted overtime incorrectly"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-rate earning equation",
+      "trapTypes": [
+        "Ignored Second Term",
+        "Rate Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-fd0ee927",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve for b: V = (1/3)πr²b",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "b = 3V/(πr²)"
+      },
+      {
+        "letter": "B",
+        "text": "b = V/(3πr²)"
+      },
+      {
+        "letter": "C",
+        "text": "b = 3Vπr²"
+      },
+      {
+        "letter": "D",
+        "text": "b = Vπr²/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3V = πr²b → b = 3V/(πr²).",
+      "distractors": {
+        "B": "Forgot to multiply by 3",
+        "C": "Multiplied instead of dividing",
+        "D": "Misarranged terms"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Isolating variable in geometry formula",
+      "trapTypes": [
+        "Inverse Operation",
+        "Formula Manipulation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-413ea81a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 8 - 3(2x + 1) = 5 - 6x, what can be concluded?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Infinitely many solutions"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0"
+      },
+      {
+        "letter": "C",
+        "text": "x = 1"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "8 - 6x - 3 = 5 - 6x → 5 - 6x = 5 - 6x. Identity.",
+      "distractors": {
+        "B": "Substituted x = 0 only",
+        "C": "Computed 8 - 3 = 4",
+        "D": "Thought x cancels = no solution"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Distribution and simplification",
+      "trapTypes": [
+        "Identity vs No Solution",
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-ef639949",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Boat rental: $200 + $50/hr. Jet ski: $80 + $80/hr. When equal?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4 hours"
+      },
+      {
+        "letter": "B",
+        "text": "3 hours"
+      },
+      {
+        "letter": "C",
+        "text": "5 hours"
+      },
+      {
+        "letter": "D",
+        "text": "6 hours"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "200 + 50h = 80 + 80h → 120 = 30h → h = 4.",
+      "distractors": {
+        "B": "Subtraction error: 120/40 = 3",
+        "C": "Used 200/40 = 5",
+        "D": "Added: (200+80)/(50+80)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even point calculation",
+      "trapTypes": [
+        "Setup Error",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-4982aaa9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 4(x - 3) + 7 = 2(2x + 1) - 3",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "No solution"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0"
+      },
+      {
+        "letter": "C",
+        "text": "x = -6"
+      },
+      {
+        "letter": "D",
+        "text": "All real numbers"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "4x - 12 + 7 = 4x + 2 - 3 → 4x - 5 = 4x - 1 → -5 ≠ -1. Contradiction.",
+      "distractors": {
+        "B": "Set x = 0 and said 'close enough'",
+        "C": "Combined -12 + 7 as -6",
+        "D": "Thought 4x = 4x means identity"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing contradiction",
+      "trapTypes": [
+        "Contradiction Recognition",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-783e0853",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 2x/3 - x/6 = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "30"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "LCD = 6: 4x - x = 30 → 3x = 30 → x = 10.",
+      "distractors": {
+        "B": "Forgot to multiply RHS: 3x = 5",
+        "C": "LCD error: used 3",
+        "D": "Divided 30 by 2"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Combining fractions with different denominators",
+      "trapTypes": [
+        "LCD Error",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-132a175a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In kx + 6 = 4x + 2k, for what value of k does the equation have no solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "-4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(k-4)x = 2k - 6. For no solution: k-4 = 0 AND 2k-6 ≠ 0. k = 4: 2(4)-6 = 2 ≠ 0. ✓",
+      "distractors": {
+        "B": "Set 2k-6 = 0 → k = 3, but that gives unique solution",
+        "C": "Set k = 0 blindly",
+        "D": "Negated: -4"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Parameter analysis for no-solution condition",
+      "trapTypes": [
+        "Parameter Analysis",
+        "Contradiction Condition"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-a43cd055",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If a/3 + a/4 = 7, what is a?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "12"
+      },
+      {
+        "letter": "B",
+        "text": "7"
+      },
+      {
+        "letter": "C",
+        "text": "21"
+      },
+      {
+        "letter": "D",
+        "text": "84/7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "LCD = 12: 4a + 3a = 84 → 7a = 84 → a = 12.",
+      "distractors": {
+        "B": "Assumed a = 7 from RHS",
+        "C": "Multiplied: 3 × 7 = 21",
+        "D": "Left as fraction"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Adding fractions with LCD",
+      "trapTypes": [
+        "LCD Error",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-2863c436",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The average of x, x+4, and x+8 is 20. What is x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "16"
+      },
+      {
+        "letter": "B",
+        "text": "20"
+      },
+      {
+        "letter": "C",
+        "text": "12"
+      },
+      {
+        "letter": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(3x + 12)/3 = 20 → 3x + 12 = 60 → x = 16.",
+      "distractors": {
+        "B": "Used average as answer",
+        "C": "Subtracted 8: 20-8 = 12",
+        "D": "Added 4: 20+4 = 24"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Average equation setup",
+      "trapTypes": [
+        "Arithmetic Error",
+        "Conceptual Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-65f5b1e8",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 5(x - 2) + 3 = 2x + k and x = 4, what is k?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "5(2)+3=13, 2(4)+k=8+k=13 → k=5."
+    },
+    "metadata": {
+      "cognitiveMove": "Substituting to find parameter",
+      "trapTypes": [
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-85b8e155",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 3x + 7 = 2(x + 5) - 3",
+    "type": "SPR",
+    "correctAnswer": "0",
+    "acceptableAnswers": [
+      "0"
+    ],
+    "explanation": {
+      "correct": "3x+7=2x+7 → x=0."
+    },
+    "metadata": {
+      "cognitiveMove": "Two-step equation",
+      "trapTypes": [
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-ba9af9c7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A number increased by 25% equals 80. What is the number?",
+    "type": "SPR",
+    "correctAnswer": "64",
+    "acceptableAnswers": [
+      "64"
+    ],
+    "explanation": {
+      "correct": "1.25x=80 → x=64."
+    },
+    "metadata": {
+      "cognitiveMove": "Percent increase equation",
+      "trapTypes": [
+        "Percent Direction Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-08752965",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: (x-3)/4 = (x+1)/6",
+    "type": "SPR",
+    "correctAnswer": "11",
+    "acceptableAnswers": [
+      "11"
+    ],
+    "explanation": {
+      "correct": "LCD=12: 3(x-3)=2(x+1) → 3x-9=2x+2 → x=11."
+    },
+    "metadata": {
+      "cognitiveMove": "Cross multiplication",
+      "trapTypes": [
+        "LCD Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-ff407e44",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2x - 7 = 3(x - 4), what is x?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "2x-7=3x-12 → -x=-5 → x=5."
+    },
+    "metadata": {
+      "cognitiveMove": "Distribution and collection",
+      "trapTypes": [
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-f7f44f71",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "|2x - 10| = 6. What is the sum of all solutions?",
+    "type": "SPR",
+    "correctAnswer": "10",
+    "acceptableAnswers": [
+      "10"
+    ],
+    "explanation": {
+      "correct": "x=8 or x=2. Sum=10."
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value sum",
+      "trapTypes": [
+        "Missing Second Case"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-77e30247",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A number is tripled, then 7 is subtracted. Result is 29. What is the number?",
+    "type": "SPR",
+    "correctAnswer": "12",
+    "acceptableAnswers": [
+      "12"
+    ],
+    "explanation": {
+      "correct": "3x-7=29 → x=12."
+    },
+    "metadata": {
+      "cognitiveMove": "Verbal translation",
+      "trapTypes": [
+        "Order of Operations"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-1c42b80b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 0.5(x + 6) = 0.2x + 4.5",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "0.5x+3=0.2x+4.5 → 0.3x=1.5 → x=5."
+    },
+    "metadata": {
+      "cognitiveMove": "Decimal equation",
+      "trapTypes": [
+        "Decimal Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-e7dd59c2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In d = rt, if d = 240 and r = 60, find t.",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "t = 240/60 = 4."
+    },
+    "metadata": {
+      "cognitiveMove": "Formula application",
+      "trapTypes": [
+        "Formula Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-7e7653c8",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 4(2x + 3) = 5(x + 3) - 3",
+    "type": "SPR",
+    "correctAnswer": "0",
+    "acceptableAnswers": [
+      "0"
+    ],
+    "explanation": {
+      "correct": "8x+12=5x+12 → 3x=0 → x=0."
+    },
+    "metadata": {
+      "cognitiveMove": "Multi-step distribution",
+      "trapTypes": [
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-53f4a426",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If x/3 + x/4 = 7, what is x?",
+    "type": "SPR",
+    "correctAnswer": "12",
+    "acceptableAnswers": [
+      "12"
+    ],
+    "explanation": {
+      "correct": "LCD=12: 4x+3x=84 → 7x=84 → x=12."
+    },
+    "metadata": {
+      "cognitiveMove": "Fraction addition",
+      "trapTypes": [
+        "LCD Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-81132b02",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The average of x, 2x, and 3x is 30. What is x?",
+    "type": "SPR",
+    "correctAnswer": "15",
+    "acceptableAnswers": [
+      "15"
+    ],
+    "explanation": {
+      "correct": "(6x)/3=30 → 2x=30 → x=15."
+    },
+    "metadata": {
+      "cognitiveMove": "Average equation",
+      "trapTypes": [
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq1-param"
+    }
+  }
+]

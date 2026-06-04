@@ -1,0 +1,75 @@
+{
+  "apply": true,
+  "version": "antigravity-math-warning-upgrade-2026-05-20",
+  "upgraded": [
+    "antigravity-9e79fa96",
+    "antigravity-664ac988",
+    "antigravity-93e9d124",
+    "antigravity-79fec792",
+    "antigravity-833730e9",
+    "antigravity-18e88c7d",
+    "antigravity-7135103c",
+    "antigravity-419f8b48",
+    "antigravity-eb7e77db",
+    "antigravity-fcc7c75b",
+    "antigravity-ee0dc20e",
+    "antigravity-fa47710f",
+    "antigravity-ab26a52c"
+  ],
+  "promoted": [
+    {
+      "id": "antigravity-18e88c7d",
+      "sourceIndex": 3019
+    },
+    {
+      "id": "antigravity-419f8b48",
+      "sourceIndex": 3021
+    },
+    {
+      "id": "antigravity-664ac988",
+      "sourceIndex": 3004
+    },
+    {
+      "id": "antigravity-7135103c",
+      "sourceIndex": 3020
+    },
+    {
+      "id": "antigravity-79fec792",
+      "sourceIndex": 3012
+    },
+    {
+      "id": "antigravity-833730e9",
+      "sourceIndex": 3014
+    },
+    {
+      "id": "antigravity-93e9d124",
+      "sourceIndex": 3006
+    },
+    {
+      "id": "antigravity-9e79fa96",
+      "sourceIndex": 3003
+    },
+    {
+      "id": "antigravity-ab26a52c",
+      "sourceIndex": 3061
+    },
+    {
+      "id": "antigravity-eb7e77db",
+      "sourceIndex": 3022
+    },
+    {
+      "id": "antigravity-ee0dc20e",
+      "sourceIndex": 3050
+    },
+    {
+      "id": "antigravity-fa47710f",
+      "sourceIndex": 3058
+    },
+    {
+      "id": "antigravity-fcc7c75b",
+      "sourceIndex": 3049
+    }
+  ],
+  "blocked": [],
+  "missing": []
+}

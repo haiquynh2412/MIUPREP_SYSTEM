@@ -1,0 +1,40 @@
+{
+  "count": 360,
+  "bySection": {
+    "Reading and Writing": 180,
+    "Math": 180
+  },
+  "bySkill": {
+    "Area and volume": 7,
+    "Boundaries": 24,
+    "Central Ideas and Details": 16,
+    "Circles": 6,
+    "Command of Evidence": 16,
+    "Cross-Text Connections": 15,
+    "Data interpretation": 10,
+    "Equivalent expressions": 12,
+    "Exponential functions": 13,
+    "Form, structure, and sense": 23,
+    "Inferences": 15,
+    "Linear equations in one variable": 10,
+    "Linear equations in two variables": 24,
+    "Linear functions and slope": 12,
+    "Linear inequalities": 8,
+    "Lines, angles, and triangles": 8,
+    "Nonlinear equations and functions": 22,
+    "Percentages": 5,
+    "Probability": 3,
+    "Quadratic equations": 16,
+    "Ratios and rates": 5,
+    "Rhetorical Synthesis": 24,
+    "Right triangles and trigonometry": 6,
+    "Statistics": 4,
+    "Systems of linear equations": 9,
+    "Text Structure and Purpose": 20,
+    "Transitions": 12,
+    "Words in Context": 15
+  },
+  "studentProducedResponse": 47,
+  "hardQuestions": 139,
+  "output": "data\\sat-king-supplemental-ai-bank.json"
+}

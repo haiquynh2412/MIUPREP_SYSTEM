@@ -1,0 +1,27 @@
+{
+  "version": "sat-expansion-batch-004-2026-05-20",
+  "basisReports": [
+    "data/math-algebra-advanced-blueprint-analysis.json",
+    "data/sat-2026-readiness-audit.json",
+    "data/reviewed-question-expert-audit.json"
+  ],
+  "batch004Targets": {
+    "Math Algebra": 16,
+    "Math Advanced Math": 16
+  },
+  "difficultySkew": {
+    "Medium": 14,
+    "Hard": 18
+  },
+  "formatSkew": {
+    "multiple_choice": 24,
+    "student_produced_response": 8
+  },
+  "avoid": [
+    "routine circumference, hypotenuse, or probability clones",
+    "single-step arithmetic-only prompts",
+    "Geometry and routine PSDA additions while those domains are overrepresented",
+    "near-duplicate prompts from batches 001-003"
+  ],
+  "reason": "Product audit 2026-05-20 requests continued Algebra/Advanced Math rebalancing before broad public launch."
+}

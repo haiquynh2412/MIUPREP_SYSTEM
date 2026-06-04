@@ -1,0 +1,993 @@
+{
+  "version": "opensat-quality-remediation-2026-05-20",
+  "target": "SAT 1000-1600 roadmap, target 1600",
+  "sourceFile": "data\\opensat-pinesat.json",
+  "counts": {
+    "rejected_quality_gate": 88
+  },
+  "reviewStatusAfter": {
+    "reviewed": 2096,
+    "rejected": 90
+  },
+  "postReviewUseAfter": {
+    "unified_mixed_sat_pool": 2096,
+    "excluded_from_unified_mixed_sat_pool": 90
+  },
+  "rejectedThisRunCount": 88,
+  "rejectedTotalAfter": 90,
+  "excludedFromPoolTotalAfter": 90,
+  "cleanedThisRunCount": 0,
+  "rejected": [
+    {
+      "sourceIndex": 32,
+      "id": "b307477f",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 38,
+      "id": "random_id_b9",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 45,
+      "id": "67a4829f",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 53,
+      "id": "f94c0c33",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 70,
+      "id": "2175c79f",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 78,
+      "id": "197df82e",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 87,
+      "id": "f9939d2c",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 100,
+      "id": "152d892d",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 138,
+      "id": "random_id_c3",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 158,
+      "id": "random_id_e4",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 166,
+      "id": "random_id_1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 169,
+      "id": "random_id_c7",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 183,
+      "id": "random_id_a1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 202,
+      "id": "random_id_b3",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 206,
+      "id": "6f54812c",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 222,
+      "id": "2346d88f",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 241,
+      "id": "random_id_c4",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 346,
+      "id": "19f69a7c",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 359,
+      "id": "random_id_b8",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 378,
+      "id": "random_id_e8",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 405,
+      "id": "6249b173",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 406,
+      "id": "random_id_a9",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 423,
+      "id": "random_id_c7",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 466,
+      "id": "random_id_b7",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 521,
+      "id": "random_id_a1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 535,
+      "id": "random_id_e4",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 544,
+      "id": "random_id_e8",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 602,
+      "id": "random_id_a5",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 604,
+      "id": "random_id_3",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 610,
+      "id": "random_id_a5",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 702,
+      "id": "random_id_42",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 733,
+      "id": "245f9000",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 734,
+      "id": "9a152541",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 746,
+      "id": "e88f7e33",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 767,
+      "id": "random_id_a1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 780,
+      "id": "6758427d",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Form, Structure, and Sense",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 807,
+      "id": "23456789",
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices",
+        "rw_prompt_too_long_for_training_item"
+      ]
+    },
+    {
+      "sourceIndex": 824,
+      "id": "random_id_a10",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 851,
+      "id": "random_id_english_1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 862,
+      "id": "c293e98a",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 872,
+      "id": "7c629b53",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 887,
+      "id": "54b7c3c3",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 888,
+      "id": "random_id_d3",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 941,
+      "id": "e64458b4",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 960,
+      "id": "random_id_english_5",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 973,
+      "id": "random_id_e1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 997,
+      "id": "random_id_e9",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Form, Structure, and Sense",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1002,
+      "id": "random_id_e5",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1004,
+      "id": "random_id_e8",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1037,
+      "id": "random_id_c8",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1046,
+      "id": "c891b25b",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1055,
+      "id": "7a45c12b",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1064,
+      "id": "random_id_e6",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1080,
+      "id": "213957e6",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Form, Structure, and Sense",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1085,
+      "id": "7f7c3993",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1094,
+      "id": "random_id_english_1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1098,
+      "id": "f765438a",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices",
+        "rw_prompt_too_long_for_training_item"
+      ]
+    },
+    {
+      "sourceIndex": 1151,
+      "id": "119b489c",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1157,
+      "id": "87654321",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1175,
+      "id": "92ef1d2e",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1209,
+      "id": "8f92374d",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1229,
+      "id": "random_id_a2",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1240,
+      "id": "54d6446b",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1316,
+      "id": "random_id_english_1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1320,
+      "id": "random_id_a2",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Form, Structure, and Sense",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1344,
+      "id": "random_id_a1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1350,
+      "id": "257f017c",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1352,
+      "id": "89656d1c",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1361,
+      "id": "random_id_e7",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1372,
+      "id": "random_id_a1",
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1419,
+      "id": "random_id_c10",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Easy",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 1618,
+      "id": "random_id_c7",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Hard",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1623,
+      "id": "random_id_a6",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1652,
+      "id": "85a7b24c",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1678,
+      "id": "f711e94e",
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "difficulty": "Hard",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1695,
+      "id": "random_id_c9",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Hard",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1774,
+      "id": "23c9d83a",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1787,
+      "id": "9f12e366",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Hard",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1789,
+      "id": "random_id_9",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1860,
+      "id": "random_id_d3",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "difficulty": "Hard",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 1957,
+      "id": "random_id_c1",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 2012,
+      "id": "random_id_8",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Hard",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 2022,
+      "id": "random_id_b8",
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "difficulty": "Hard",
+      "reasons": [
+        "duplicate_or_non_unique_answer_choices"
+      ]
+    },
+    {
+      "sourceIndex": 2080,
+      "id": "random_id_c3",
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "difficulty": "Easy",
+      "reasons": [
+        "invalid_multiple_choice_schema"
+      ]
+    },
+    {
+      "sourceIndex": 2094,
+      "id": "random_id_e5",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 2111,
+      "id": "301a429b",
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations in one variable and systems of equations in two variables",
+      "difficulty": "Hard",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 2127,
+      "id": "d84e67c3",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    },
+    {
+      "sourceIndex": 2163,
+      "id": "e83839db",
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "difficulty": "Medium",
+      "reasons": [
+        "math_answer_or_explanation_contradiction"
+      ]
+    }
+  ],
+  "cleanedSamples": []
+}

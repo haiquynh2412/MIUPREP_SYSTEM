@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "sat_study_policy_v1",
+  "purpose": "Suppress technically valid but low-priority rows from default learner flows without deleting them from the bank.",
+  "suppressedDefaultStudyIds": [],
+  "topicOverflowCandidateIds": [],
+  "rwLongPromptIds": [],
+  "counts": {
+    "suppressedDefaultStudy": 0,
+    "topicOverflowCandidates": 0,
+    "rwLongPrompts": 0
+  }
+}

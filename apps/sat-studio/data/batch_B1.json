@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "antigravity-hard-0361e2f3",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to (1/(x − 2) − 1/(x + 2)) ÷ (1/(x² − 4))?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: 1/(x−2) − 1/(x+2) = [(x+2)−(x−2)]/(x²−4) = 4/(x²−4). Dividing by 1/(x²−4) means multiplying by (x²−4)/1, so 4/(x²−4) · (x²−4) = 4.\nSlow: common denominator for the top, then invert-and-multiply.",
+      "distractors": {
+        "A": "Confuses the simplified numerator 4/(x²−4) with 1 by wrongly cancelling the 4.",
+        "B": "Sign error: computing (x−2)−(x+2) = −4 instead of (x+2)−(x−2) = 4.",
+        "D": "Forgets to multiply by the reciprocal and leaves x²−4 as the answer."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compound-fraction collapse via LCD then reciprocal multiplication",
+      "trapTypes": [
+        "sign error in subtraction",
+        "forgetting reciprocal"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "−4"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "x² − 4"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-a38524e0",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which expression is equivalent to (x² − 9)/(x² + 5x + 6) · (x + 2)/(x − 3)?",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Factor: (x²−9) = (x−3)(x+3) and (x²+5x+6) = (x+2)(x+3). So the product becomes [(x−3)(x+3)]/[(x+2)(x+3)] · (x+2)/(x−3). Cancel (x+3), then (x−3), then (x+2) → 1.",
+      "distractors": {
+        "B": "Only cancels (x+3) and forgets to cancel the remaining (x+2)/(x−3) · (x−3) pair.",
+        "C": "Cancels (x−3) and (x+2) but forgets to cancel (x+3) from numerator and denominator.",
+        "D": "Squares both remaining factors instead of cancelling them."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Multi-step factoring reveals complete cancellation to 1",
+      "trapTypes": [
+        "incomplete cancellation",
+        "overlooking common factors"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "(x − 3)/(x + 2)"
+      },
+      {
+        "letter": "C",
+        "text": "(x + 3)/(x + 2)"
+      },
+      {
+        "letter": "D",
+        "text": "(x + 3)²/(x + 2)²"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-96453a1e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  2x/(x+1) + 3/(x−1) − (x+5)/(x²−1).\nWhich of the following is equivalent?",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "LCD = (x+1)(x−1) = x²−1. Rewrite:\n2x(x−1)/(x²−1) + 3(x+1)/(x²−1) − (x+5)/(x²−1).\nNumerator = 2x²−2x + 3x+3 − x−5 = 2x²−2 = 2(x²−1).\nSo the expression = 2(x²−1)/(x²−1) = 2.",
+      "distractors": {
+        "A": "Drops the last two fractions after failing to find a common denominator.",
+        "C": "Forgets to subtract (x+5) and leaves the numerator unfactored as 2x²−2x.",
+        "D": "Sign errors cause all terms to cancel, yielding 0."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "LCD combination with three rational terms",
+      "trapTypes": [
+        "distribution error",
+        "sign error in subtraction"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2x/(x+1)"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "(2x²−2x)/(x²−1)"
+      },
+      {
+        "letter": "D",
+        "text": "0"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-6ab54426",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  √(50x³) / √(2x)  for x > 0?",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "√(50x³)/√(2x) = √(50x³/(2x)) = √(25x²) = 5x  (x > 0).",
+      "distractors": {
+        "B": "Simplifies √(50x³) = 5x√x but forgets to divide by √(2x).",
+        "C": "Squares the result 5x instead of leaving it as is.",
+        "D": "Divides exponents incorrectly: x³/x → x^(1/2) instead of x²."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Combine radicals under one root before simplifying",
+      "trapTypes": [
+        "forgetting to combine radicals",
+        "exponent arithmetic error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5x"
+      },
+      {
+        "letter": "B",
+        "text": "5x√x"
+      },
+      {
+        "letter": "C",
+        "text": "25x"
+      },
+      {
+        "letter": "D",
+        "text": "5√x"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-412b205a",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Rationalize the denominator:  6 / (√7 − √3).\nWhich of the following is the result?",
+    "type": "MCQ",
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Multiply numerator and denominator by the conjugate (√7 + √3):\n6(√7+√3) / [(√7)²−(√3)²] = 6(√7+√3) / (7−3) = 6(√7+√3)/4 = 3(√7+√3)/2.",
+      "distractors": {
+        "A": "Uses 7+3 = 10 in the denominator instead of 7−3 = 4.",
+        "B": "Correct numerator but uses denominator 4 without fully reducing 6/4.",
+        "C": "Multiplies by (√7−√3) again instead of the conjugate (√7+√3)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Conjugate multiplication to eliminate radical denominator",
+      "trapTypes": [
+        "adding instead of subtracting squares",
+        "incomplete simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6(√7 + √3) / 10"
+      },
+      {
+        "letter": "B",
+        "text": "(3√7 + 3√3) / 4"
+      },
+      {
+        "letter": "C",
+        "text": "6(√7 − √3) / 4"
+      },
+      {
+        "letter": "D",
+        "text": "3(√7 + √3) / 2"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-b01ea136",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  a^(2/3) · a^(1/2) = a^k,  what is the value of k expressed as a fraction?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "When bases are equal, add exponents: 2/3 + 1/2 = 4/6 + 3/6 = 7/6.",
+      "distractors": {
+        "A": "Multiplies exponents (2/3 · 1/2 = 1/3) instead of adding.",
+        "B": "Rounds 7/6 ≈ 1.17 to 1.",
+        "D": "Adds numerators and denominators directly: (2+1)/(3+2) = 3/5."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Exponent addition with unlike-denominator fractions",
+      "trapTypes": [
+        "multiplying exponents instead of adding",
+        "fraction addition error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1/3"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "7/6"
+      },
+      {
+        "letter": "D",
+        "text": "3/5"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-b712df52",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which expression is equivalent to  (x⁴ − 16) / (x² + 4)?",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "x⁴ − 16 = (x²)² − 4² = (x²−4)(x²+4). Dividing by (x²+4) gives x²−4.",
+      "distractors": {
+        "A": "Confuses the remaining factor with the cancelled factor.",
+        "C": "Writes the full factored form of the numerator without dividing.",
+        "D": "Incorrectly factors x⁴−16 as (x²−2)(x²+2) using √16=2 instead of 4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Difference of squares applied twice, then cancellation",
+      "trapTypes": [
+        "factoring with wrong constant",
+        "forgetting to cancel"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x² + 4"
+      },
+      {
+        "letter": "B",
+        "text": "x² − 4"
+      },
+      {
+        "letter": "C",
+        "text": "(x − 2)(x + 2)(x² + 4)"
+      },
+      {
+        "letter": "D",
+        "text": "x² − 2"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-012355c1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (1 + 1/x) / (1 − 1/x²).",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Numerator: 1 + 1/x = (x+1)/x.\nDenominator: 1 − 1/x² = (x²−1)/x² = (x−1)(x+1)/x².\nCompound fraction: [(x+1)/x] / [(x−1)(x+1)/x²] = (x+1)/x · x²/[(x−1)(x+1)] = x/(x−1).",
+      "distractors": {
+        "B": "Cancels (x−1) from wrong part, leaving x/(x+1).",
+        "C": "Forgets the x²/x simplification, leaving (x+1)/(x−1).",
+        "D": "Only combines the fractions without cancelling the (x+1) factor."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Nested fraction simplification with factoring",
+      "trapTypes": [
+        "incorrect factor cancellation",
+        "forgetting to simplify x²/x"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x/(x − 1)"
+      },
+      {
+        "letter": "B",
+        "text": "x/(x + 1)"
+      },
+      {
+        "letter": "C",
+        "text": "(x + 1)/(x − 1)"
+      },
+      {
+        "letter": "D",
+        "text": "x²/(x² − 1)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-0dfde6c7",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  (x³ − 8) / (x − 2)?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "x³ − 8 = x³ − 2³ = (x−2)(x²+2x+4)  (sum-of-cubes pattern a³−b³). Dividing by (x−2) leaves x²+2x+4.",
+      "distractors": {
+        "B": "Uses the wrong sign pattern (−2x instead of +2x), confusing difference and sum of cubes.",
+        "A": "Applies difference of squares (x²−4) instead of difference of cubes.",
+        "D": "Expands (x−2)² = x²−4x+4, a common but incorrect factorization guess."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing and applying the difference-of-cubes formula",
+      "trapTypes": [
+        "confusing sum/difference of cubes signs",
+        "applying difference of squares instead"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x² − 4"
+      },
+      {
+        "letter": "B",
+        "text": "x² − 2x + 4"
+      },
+      {
+        "letter": "C",
+        "text": "x² + 2x + 4"
+      },
+      {
+        "letter": "D",
+        "text": "(x − 2)²"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-82a7804a",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (2/(x+3)) + (5/(x−2)).\nWhich of the following is equivalent?",
+    "type": "MCQ",
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "LCD = (x+3)(x−2) = x²+x−6. Numerator: 2(x−2)+5(x+3) = 2x−4+5x+15 = 7x+11.",
+      "distractors": {
+        "B": "Adds numerators as 2+5=7 without cross-multiplying.",
+        "C": "Sign error: computes 2(x−2)+5(x+3) as 2x−4+5x−15 = 7x−11 by distributing the wrong sign on 5·3.",
+        "A": "Incorrectly adds both numerators and both denominators: 7/(2x+1)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Adding rational expressions with unlike linear denominators",
+      "trapTypes": [
+        "adding numerators without LCD",
+        "adding denominators directly"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "7/(2x+1)"
+      },
+      {
+        "letter": "B",
+        "text": "7/(x²+x−6)"
+      },
+      {
+        "letter": "C",
+        "text": "(7x−11)/(x²+x−6)"
+      },
+      {
+        "letter": "D",
+        "text": "(7x+11)/(x²+x−6)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-c4628c17",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which expression is equivalent to  (x^(1/2) · x^(−3/4))² ?",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Inside: x^(1/2) · x^(−3/4) = x^(1/2 − 3/4) = x^(2/4 − 3/4) = x^(−1/4). Squaring: (x^(−1/4))² = x^(−1/2).",
+      "distractors": {
+        "A": "Forgets to square the result: leaves x^(−1/4) as the answer.",
+        "C": "Adds exponents as 1/2+3/4 = 5/4 (wrong sign on −3/4) and forgets to square.",
+        "D": "Squares −1/4 as −1 instead of −1/2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-step exponent arithmetic: add then multiply",
+      "trapTypes": [
+        "forgetting the outer exponent",
+        "sign error on negative exponent"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x^(−1/4)"
+      },
+      {
+        "letter": "B",
+        "text": "x^(−1/2)"
+      },
+      {
+        "letter": "C",
+        "text": "x^(5/4)"
+      },
+      {
+        "letter": "D",
+        "text": "1/x"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-096fc6de",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (x²−x−6)/(x²−9) · (x²+4x+3)/(x²+x−2).",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Factor:\n  x²−x−6 = (x−3)(x+2),  x²−9 = (x−3)(x+3)\n  x²+4x+3 = (x+1)(x+3),  x²+x−2 = (x+2)(x−1)\nProduct = [(x−3)(x+2)(x+1)(x+3)] / [(x−3)(x+3)(x+2)(x−1)].\nCancel (x−3), (x+2), (x+3) → (x+1)/(x−1).",
+      "distractors": {
+        "B": "Fails to cancel (x+2) and wrongly leaves (x−3) in the numerator.",
+        "C": "Assumes all factors cancel, but (x+1) and (x−1) do not cancel.",
+        "D": "Only cancels (x−3) and stops, leaving uncancelled factors."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Multi-factor cancellation across product of rationals",
+      "trapTypes": [
+        "incomplete factoring",
+        "miscounting shared factors"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(x+1)/(x−1)"
+      },
+      {
+        "letter": "B",
+        "text": "(x−3)/(x−1)"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "(x+2)/(x+3)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-c13942fe",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  3/(√5 + √2) + 3/(√5 − √2)?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Rationalize each: 3(√5−√2)/(5−2) + 3(√5+√2)/(5−2) = [3√5−3√2+3√5+3√2]/3 = 6√5/3 = 2√5.",
+      "distractors": {
+        "A": "Correct intermediate step 6√5/3 but doesn't simplify to 2√5.",
+        "B": "Keeps √2 terms instead of √5 terms after sign cancellation.",
+        "D": "Confuses which radical survives after the ± cancellation."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Symmetric conjugate pair simplification",
+      "trapTypes": [
+        "incomplete simplification",
+        "wrong radical surviving"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6√5 / 3"
+      },
+      {
+        "letter": "B",
+        "text": "6√2 / 3"
+      },
+      {
+        "letter": "C",
+        "text": "2√5"
+      },
+      {
+        "letter": "D",
+        "text": "2√2"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-bf19b5bc",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If f(x) = (x² − 4x + 4)/(x³ − 8), which of the following is equivalent to f(x) for x ≠ 2?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Numerator: x²−4x+4 = (x−2)².\nDenominator: x³−8 = (x−2)(x²+2x+4).\nCancel one (x−2): f(x) = (x−2)/(x²+2x+4).",
+      "distractors": {
+        "A": "Incorrectly factors x³−8 as (x−2)(x+2) and cancels both (x−2)s.",
+        "B": "Cancels both factors of (x−2)² instead of only one, losing the numerator entirely.",
+        "D": "Writes the fraction without factoring the denominator at all."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Difference of cubes in denominator with perfect square numerator",
+      "trapTypes": [
+        "over-cancelling",
+        "wrong cube formula"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1/(x + 2)"
+      },
+      {
+        "letter": "B",
+        "text": "1/(x² + 2x + 4)"
+      },
+      {
+        "letter": "C",
+        "text": "(x − 2)/(x² + 2x + 4)"
+      },
+      {
+        "letter": "D",
+        "text": "(x − 2)²/(x − 2)³"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-8ed10f0a",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (1/(a−b) + 1/(a+b)) · (a² − b²).\nWhich of the following is equivalent?",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "1/(a−b) + 1/(a+b) = [(a+b)+(a−b)] / (a²−b²) = 2a/(a²−b²). Multiply by (a²−b²): 2a.",
+      "distractors": {
+        "B": "Computes (a+b)−(a−b) = 2b instead of (a+b)+(a−b) = 2a.",
+        "C": "Forgets that (a²−b²) cancels with the denominator.",
+        "D": "Only evaluates the sum of fractions and ignores the multiplication."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "LCD collapse then multiply to cancel denominator",
+      "trapTypes": [
+        "subtraction instead of addition",
+        "forgetting cancellation"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2a"
+      },
+      {
+        "letter": "B",
+        "text": "2b"
+      },
+      {
+        "letter": "C",
+        "text": "2(a² − b²)"
+      },
+      {
+        "letter": "D",
+        "text": "a² − b²"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-0056c05b",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  (√a − √b)/(a − b)  for a ≠ b, a > 0, b > 0?",
+    "type": "MCQ",
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "a − b = (√a − √b)(√a + √b). So (√a − √b)/(a − b) = (√a − √b)/[(√a − √b)(√a + √b)] = 1/(√a + √b).",
+      "distractors": {
+        "A": "Cancels (a−b) incorrectly, leaving the reciprocal of the numerator.",
+        "B": "Confuses (√a+√b) with (a+b).",
+        "C": "Multiplies by conjugate in numerator but forgets to simplify."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing the denominator as a difference-of-squares in radical form",
+      "trapTypes": [
+        "not seeing a−b as (√a−√b)(√a+√b)",
+        "confusing radical and polynomial forms"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1/(√a − √b)"
+      },
+      {
+        "letter": "B",
+        "text": "1/(a + b)"
+      },
+      {
+        "letter": "C",
+        "text": "(√a + √b)/(a − b)"
+      },
+      {
+        "letter": "D",
+        "text": "1/(√a + √b)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-a1fd874e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (x/(x−3) − 3/(3−x)).",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Note 3−x = −(x−3), so 3/(3−x) = −3/(x−3). Expression = x/(x−3) − (−3/(x−3)) = x/(x−3) + 3/(x−3) = (x+3)/(x−3).",
+      "distractors": {
+        "A": "Computes x−3 in the numerator by subtracting instead of adding.",
+        "C": "Flips which factor goes where after the sign correction.",
+        "D": "Cancels (x+3) with (x−3) as if they were equal."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognizing opposite denominators and sign adjustment",
+      "trapTypes": [
+        "missing the sign flip on (3−x)",
+        "subtracting instead of adding after flip"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(x − 3)/(x − 3)"
+      },
+      {
+        "letter": "B",
+        "text": "(x + 3)/(x − 3)"
+      },
+      {
+        "letter": "C",
+        "text": "(x − 3)/(x + 3)"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-e99b52be",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  (8x³)^(2/3) = ax²  for all x > 0, what is the value of a?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "(8x³)^(2/3) = 8^(2/3) · (x³)^(2/3) = (∛8)² · x² = 2² · x² = 4x². So a = 4.",
+      "distractors": {
+        "A": "Computes 8^(1/3) = 2 but forgets to square it.",
+        "B": "Uses 8^(2/3) = 8 by treating the exponent as 1.",
+        "D": "Computes 8^(2/3) as 8² then cube root of 64 ≈ 4, or just uses 8·2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Distributing a fractional exponent across a product",
+      "trapTypes": [
+        "forgetting to square after cube root",
+        "misapplying exponent rules"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "16"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-04209113",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  1/(x(x+1)) − 1/((x+1)(x+2)).",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "LCD = x(x+1)(x+2). Numerator: (x+2) − x = 2. Result: 2/[x(x+1)(x+2)].",
+      "distractors": {
+        "B": "Tries partial-fraction telescoping 1/x − 1/(x+2) but that gives a different LCD.",
+        "C": "Subtracts in reverse order, getting −2 instead of +2.",
+        "D": "Only considers the first fraction and ignores the subtraction."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "LCD combination of partial fractions with shared factor",
+      "trapTypes": [
+        "sign error",
+        "incomplete simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2/[x(x+1)(x+2)]"
+      },
+      {
+        "letter": "B",
+        "text": "1/[x(x+2)]"
+      },
+      {
+        "letter": "C",
+        "text": "−1/[x(x+1)(x+2)]"
+      },
+      {
+        "letter": "D",
+        "text": "1/[x(x+1)]"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-21784f35",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Rationalize the denominator:  (√3 + 1) / (√3 − 1).\nWhich of the following is the result?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Multiply by (√3+1)/(√3+1): (√3+1)²/(3−1) = (3+2√3+1)/2 = (4+2√3)/2 = 2+√3.",
+      "distractors": {
+        "A": "Incorrectly computes (√3+1)(√3+1) = 3+1 = 4, then 4/2 = 2, then rounds to 3.",
+        "B": "Uses 3 in the denominator (√3·√3−1 = 3−1=2, not 3) — doesn't reduce.",
+        "D": "Divides only part of the numerator: (√3+1)² = 4+2√3, divides 2√3/2 = √3 but forgets 4/2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Conjugate rationalization with a binomial squared numerator",
+      "trapTypes": [
+        "forgetting to expand (√3+1)²",
+        "dividing only part of the numerator"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "(4 + 2√3) / 3"
+      },
+      {
+        "letter": "C",
+        "text": "2 + √3"
+      },
+      {
+        "letter": "D",
+        "text": "1 + √3"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-fc940f16",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which expression is equivalent to  (6x²+x−2)/(2x−1) · (2x−1)/(3x+2)?",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Factor 6x²+x−2 = (2x−1)(3x+2). Product becomes:\n(2x−1)(3x+2)/(2x−1) · (2x−1)/(3x+2) = (3x+2)·(2x−1)/(3x+2) = 2x−1.",
+      "distractors": {
+        "A": "Cancels the two (2x−1) factors but forgets to cancel (3x+2).",
+        "C": "Cancels (2x−1) factors and keeps (3x+2) instead of the correct remaining factor.",
+        "D": "Assumes everything cancels, but one factor of (2x−1) remains."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factoring quadratics to reveal cancellation",
+      "trapTypes": [
+        "incorrect factoring of 2x²+3x−5"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6x²+x−2"
+      },
+      {
+        "letter": "B",
+        "text": "2x−1"
+      },
+      {
+        "letter": "C",
+        "text": "3x+2"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-ce873596",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  (x^(3/2) − x^(1/2)) / x^(1/2)  for x > 0?",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Factor x^(1/2) from numerator: x^(1/2)(x − 1) / x^(1/2) = x − 1.",
+      "distractors": {
+        "B": "Subtracts exponents incorrectly: 3/2−1/2=1 for first term but uses √x−1 pattern.",
+        "C": "Divides only the first term by x^(1/2) and leaves the second unchanged.",
+        "D": "Only divides x^(3/2) by x^(1/2) and drops the x^(1/2) term."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factor common radical before cancelling",
+      "trapTypes": [
+        "dividing only one term",
+        "exponent subtraction error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x − 1"
+      },
+      {
+        "letter": "B",
+        "text": "x^(1/2) − 1"
+      },
+      {
+        "letter": "C",
+        "text": "x − x^(1/2)"
+      },
+      {
+        "letter": "D",
+        "text": "x^(3/2) − 1"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-cf578550",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (4/(x²−1)) − (2/(x−1)).",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "LCD = (x−1)(x+1) = x²−1. Rewrite 2/(x−1) as 2(x+1)/(x²−1).\n4/(x²−1) − 2(x+1)/(x²−1) = [4−2x−2]/(x²−1) = (2−2x)/(x²−1)\n= −2(x−1)/[(x−1)(x+1)] = −2/(x+1).",
+      "distractors": {
+        "A": "Gets the magnitude right but drops the negative sign.",
+        "B": "Cancels with the wrong factor, leaving (x−1) in the denominator.",
+        "D": "Correct intermediate form but not fully simplified — the (x−1) cancels."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "LCD with one denominator being a factor of the other",
+      "trapTypes": [
+        "sign errors",
+        "incomplete simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2/(x+1)"
+      },
+      {
+        "letter": "B",
+        "text": "2/(x−1)"
+      },
+      {
+        "letter": "C",
+        "text": "−2/(x+1)"
+      },
+      {
+        "letter": "D",
+        "text": "(2−2x)/(x²−1)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-00eb6748",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  (27x⁶)^(1/3) / (9x⁴)^(1/2) = ax^b,  what is the value of a?",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Numerator: (27x⁶)^(1/3) = 27^(1/3) · x^(6/3) = 3x².\nDenominator: (9x⁴)^(1/2) = 9^(1/2) · x^(4/2) = 3x².\nRatio: 3x²/(3x²) = 1. So a = 1 (and b = 0).",
+      "distractors": {
+        "B": "Computes only the numerator coefficient 3 without dividing.",
+        "C": "Inverts: puts 1/3 thinking denominator coefficient is larger.",
+        "D": "Multiplies 3·3 = 9 instead of dividing."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluate two radical expressions and compare",
+      "trapTypes": [
+        "forgetting to divide coefficients",
+        "exponent arithmetic error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "1/3"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-a01d23c8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  [(x+h)² − x²] / h  for h ≠ 0.",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "(x+h)² − x² = x²+2xh+h² − x² = 2xh+h² = h(2x+h). Divide by h: 2x+h.",
+      "distractors": {
+        "A": "Doesn't factor h from h²: writes 2x+h² instead of 2x+h.",
+        "C": "Cancels 2xh/h = 2x but then drops it, keeping only h²/h = h.",
+        "D": "Forgets the h² term entirely and writes 2xh/h = 2x, then confuses format."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Difference quotient simplification (pre-calculus)",
+      "trapTypes": [
+        "not dividing h² by h",
+        "dropping the 2x term"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2x + h²"
+      },
+      {
+        "letter": "B",
+        "text": "2x + h"
+      },
+      {
+        "letter": "C",
+        "text": "h"
+      },
+      {
+        "letter": "D",
+        "text": "2xh"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-d41a3dba",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  √(x² + 6x + 9) for all real x?",
+    "type": "MCQ",
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x²+6x+9 = (x+3)². √((x+3)²) = |x+3| by definition of the principal square root.",
+      "distractors": {
+        "A": "Correct only when x ≥ −3; fails for x < −3 since √ returns non-negative values.",
+        "B": "Correct only when x < −3; not valid for all real x.",
+        "C": "Doesn't recognize the perfect-square trinomial."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Perfect-square trinomial under a radical requires absolute value",
+      "trapTypes": [
+        "forgetting absolute value",
+        "not recognizing perfect square"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x + 3"
+      },
+      {
+        "letter": "B",
+        "text": "−(x + 3)"
+      },
+      {
+        "letter": "C",
+        "text": "x² + 3"
+      },
+      {
+        "letter": "D",
+        "text": "|x + 3|"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-15da9e21",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (x² − 5x + 6)/(x − 2) − (x² − 7x + 12)/(x − 3).",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Factor: x²−5x+6 = (x−2)(x−3) → (x−2)(x−3)/(x−2) = x−3.\nx²−7x+12 = (x−3)(x−4) → (x−3)(x−4)/(x−3) = x−4.\nDifference: (x−3) − (x−4) = x − 3 − x + 4 = 1.",
+      "distractors": {
+        "A": "Sign error: computes (x−3)−(x−4) as −1 by forgetting to distribute the minus.",
+        "B": "Assumes the subtraction gives 0 because both simplified forms look similar.",
+        "D": "Subtracts without factoring first, leading to an unsimplified polynomial."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factor-and-cancel before subtracting simplified expressions",
+      "trapTypes": [
+        "subtracting before simplifying",
+        "sign error in subtraction"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−1"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "x − 7"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-cc0a5465",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  (3√2 + √6) / √2?",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Divide each term: 3√2/√2 = 3 and √6/√2 = √(6/2) = √3. Sum = 3 + √3.",
+      "distractors": {
+        "A": "Simplifies √6/√2 as 6 instead of √3.",
+        "C": "Only divides √6 by √2, leaving 3√2 unchanged.",
+        "D": "Doesn't simplify √6/√2 at all."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Term-by-term division of radical expressions",
+      "trapTypes": [
+        "not simplifying √6/√2",
+        "confusing √6/√2 with 6"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3 + 6"
+      },
+      {
+        "letter": "B",
+        "text": "3 + √3"
+      },
+      {
+        "letter": "C",
+        "text": "3√2 + √3"
+      },
+      {
+        "letter": "D",
+        "text": "3 + √6"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-0df20c18",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  x^(1/3) = 2, what is the value of  x^(−2/3) + x^(1/3)?",
+    "type": "MCQ",
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x^(1/3) = 2, so x = 8.\nx^(−2/3) = 1/x^(2/3) = 1/(x^(1/3))² = 1/4.\nSum: 1/4 + 2 = 9/4.",
+      "distractors": {
+        "A": "Computes 1/2 + 4 = 4.5, confusing exponent values.",
+        "B": "Uses x^(−1/3) = 1/2 instead of x^(−2/3) = 1/4.",
+        "C": "Correct but not simplified — 1/4+2 = 9/4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substituting a cube-root value into negative fractional exponents",
+      "trapTypes": [
+        "wrong exponent evaluation",
+        "not simplifying to single fraction"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4.5"
+      },
+      {
+        "letter": "B",
+        "text": "2.5"
+      },
+      {
+        "letter": "C",
+        "text": "1/4 + 2"
+      },
+      {
+        "letter": "D",
+        "text": "9/4"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-265e6d3c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify the complex fraction:  (1/x − 1/y) / (1/x + 1/y).",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Numerator: 1/x − 1/y = (y−x)/(xy). Denominator: 1/x + 1/y = (y+x)/(xy). Ratio: (y−x)/(y+x).",
+      "distractors": {
+        "B": "Swaps the subtraction order: gets (x−y)/(x+y) — off by a sign.",
+        "C": "Divides 1/x by 1/y = y/x, ignoring the subtraction/addition structure.",
+        "D": "Assumes the fraction simplifies to −1 regardless of x, y."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compound fraction with two variables — LCD cancellation",
+      "trapTypes": [
+        "subtraction order error",
+        "forgetting xy cancels"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(y − x) / (y + x)"
+      },
+      {
+        "letter": "B",
+        "text": "(x − y) / (x + y)"
+      },
+      {
+        "letter": "C",
+        "text": "y/x"
+      },
+      {
+        "letter": "D",
+        "text": "−1"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-e9286b6f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which expression is equivalent to  (x⁴ − 1) / [(x² + 1)(x + 1)]  ÷  (x − 1)?",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x⁴−1 = (x²−1)(x²+1) = (x−1)(x+1)(x²+1).\nNumerator / [(x²+1)(x+1)] = (x−1).\nDividing by (x−1): (x−1)/(x−1) = 1.",
+      "distractors": {
+        "B": "Squares (x−1) instead of cancelling it.",
+        "C": "Only cancels (x−1)(x+1) and leaves x²+1 uncancelled.",
+        "D": "Cancels x²+1 but leaves (x+1)(x−1) uncancelled."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Nested difference of squares with multi-step cancellation",
+      "trapTypes": [
+        "over-cancelling",
+        "incomplete factoring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "(x − 1)²"
+      },
+      {
+        "letter": "C",
+        "text": "x² + 1"
+      },
+      {
+        "letter": "D",
+        "text": "(x + 1)(x − 1)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-c0324913",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  √(72x⁵y³) / √(2xy)  for x > 0, y > 0.",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "√(72x⁵y³) / √(2xy) = √(72x⁵y³ / (2xy)) = √(36x⁴y²) = 6x²y.",
+      "distractors": {
+        "A": "Doesn't fully simplify y³/y = y², leaving an extra √y.",
+        "C": "Squares the coefficient: (6)² = 36.",
+        "D": "Incorrect exponent division: x⁵/x = x⁴ ✓ but y³/y = y² gives 6x²y, yet this answer has xy under a radical."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Combine radicals under one root then simplify perfect squares",
+      "trapTypes": [
+        "not combining under one radical",
+        "exponent subtraction error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6x²y√y"
+      },
+      {
+        "letter": "B",
+        "text": "6x²y"
+      },
+      {
+        "letter": "C",
+        "text": "36x²y"
+      },
+      {
+        "letter": "D",
+        "text": "6xy√(xy)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-792cf89a",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  (x + 1/x)²  when expanded and simplified?",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "(x + 1/x)² = x² + 2·x·(1/x) + (1/x)² = x² + 2 + 1/x².",
+      "distractors": {
+        "A": "Forgets the cross term 2·x·(1/x) = 2.",
+        "B": "Computes the cross term as 1 instead of 2 (halves the coefficient).",
+        "D": "Writes the cross term as 2x instead of 2 (doesn't simplify x·(1/x))."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Binomial expansion with reciprocal term",
+      "trapTypes": [
+        "forgetting the cross term",
+        "not simplifying x·(1/x)"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x² + 1/x²"
+      },
+      {
+        "letter": "B",
+        "text": "x² + 1 + 1/x²"
+      },
+      {
+        "letter": "C",
+        "text": "x² + 2 + 1/x²"
+      },
+      {
+        "letter": "D",
+        "text": "x² + 2x + 1/x²"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-b4db7d7d",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  3/(x+1) − 1/(x+3)?",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "LCD = (x+1)(x+3). Numerator: 3(x+3) − (x+1) = 3x+9−x−1 = 2x+8 = 2(x+4). Result: 2(x+4)/[(x+1)(x+3)].",
+      "distractors": {
+        "A": "Subtracts denominators: drops (x+1) and leaves 2/(x+3).",
+        "C": "Uses incorrect LCD = 2x+4 instead of (x+1)(x+3).",
+        "D": "Only subtracts numerators 3−1 = 2 without cross-multiplying."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Adding rational functions with different linear denominators",
+      "trapTypes": [
+        "LCD error",
+        "distribution error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2/(x+3)"
+      },
+      {
+        "letter": "B",
+        "text": "2(x+4)/[(x+1)(x+3)]"
+      },
+      {
+        "letter": "C",
+        "text": "(2x+8)/(2x+4)"
+      },
+      {
+        "letter": "D",
+        "text": "2/(x²+4x+3)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-a14ef77f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  (√(x+4) − 2) · (√(x+4) + 2) / x?",
+    "type": "MCQ",
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Numerator uses difference of squares: (√(x+4))² − 2² = (x+4) − 4 = x. So x/x = 1 (for x ≠ 0).",
+      "distractors": {
+        "B": "Expands only (√(x+4))² = x+4 and forgets to subtract 4.",
+        "C": "Inverts the fraction.",
+        "D": "Uses x² in the denominator from squaring x."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Conjugate pair in numerator creates telescoping cancellation",
+      "trapTypes": [
+        "forgetting to subtract 4",
+        "not recognizing difference of squares"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "(x+4)/x"
+      },
+      {
+        "letter": "C",
+        "text": "x/(x+4)"
+      },
+      {
+        "letter": "D",
+        "text": "(x+4−4)/x²"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-46bd9d6d",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (a²b − ab²) / (a² − b²).",
+    "type": "MCQ",
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Numerator: ab(a − b). Denominator: (a − b)(a + b). Cancel (a − b): ab/(a + b).",
+      "distractors": {
+        "A": "Cancels ab from numerator and denominator, which is invalid.",
+        "B": "Cancels (a+b) instead of (a−b) — keeps wrong factor.",
+        "D": "Cancels (a−b) and (a+b) both, but (a+b) is only in the denominator."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factor GCF and difference of squares, then cancel",
+      "trapTypes": [
+        "cancelling wrong factor",
+        "not factoring numerator"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "a − b"
+      },
+      {
+        "letter": "B",
+        "text": "ab/(a − b)"
+      },
+      {
+        "letter": "C",
+        "text": "ab/(a + b)"
+      },
+      {
+        "letter": "D",
+        "text": "ab"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-e7dbfea9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  ∛(8x⁶y⁹) / ∛(x³y³)  for x > 0, y > 0?",
+    "type": "MCQ",
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "∛(8x⁶y⁹) = 2x²y³ and ∛(x³y³) = xy. Ratio = 2x²y³/(xy) = 2xy².",
+      "distractors": {
+        "A": "Uses 8 instead of ∛8 = 2.",
+        "B": "Computes the numerator cube root but forgets to divide by the denominator.",
+        "C": "Doesn't take cube roots of the exponents: leaves x³ and y⁶."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Cube root simplification with variable exponents",
+      "trapTypes": [
+        "exponent division error",
+        "forgetting cube root of 8"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8xy²"
+      },
+      {
+        "letter": "B",
+        "text": "2x²y³"
+      },
+      {
+        "letter": "C",
+        "text": "2x³y⁶"
+      },
+      {
+        "letter": "D",
+        "text": "2xy²"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-b1f74a8f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following is equivalent to  1 / (1 + 1/(1 − 1/x))  for x ≠ 0, x ≠ 1?",
+    "type": "MCQ",
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Inside out:\n  1 − 1/x = (x−1)/x\n  1/((x−1)/x) = x/(x−1)\n  1 + x/(x−1) = (2x−1)/(x−1)\n  1/[(2x−1)/(x−1)] = (x−1)/(2x−1).\nVerify x=3: (3−1)/(6−1) = 2/5. Direct: 1−1/3=2/3, 1/(2/3)=3/2, 1+3/2=5/2, 1/(5/2)=2/5. ✓",
+      "distractors": {
+        "A": "Uses x instead of (x−1) in the numerator, missing the final inversion step.",
+        "C": "Stops at x/(x−1) and inverts to (x−1)/x, skipping the addition step.",
+        "D": "Loses the numerator entirely, only keeping the denominator 2x−1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Deeply nested compound fraction simplification",
+      "trapTypes": [
+        "order of operations in nested fractions",
+        "sign errors"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x/(2x − 1)"
+      },
+      {
+        "letter": "B",
+        "text": "(x − 1)/(2x − 1)"
+      },
+      {
+        "letter": "C",
+        "text": "(x − 1)/x"
+      },
+      {
+        "letter": "D",
+        "text": "1/(2x − 1)"
+      }
+    ]
+  },
+  {
+    "id": "antigravity-hard-61f275f0",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  (x² − 16)/(x + 4) = x + k  for all x ≠ −4, what is the value of k?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "x²−16 = (x−4)(x+4). Dividing by (x+4) gives x−4. So k = −4."
+    },
+    "metadata": {
+      "cognitiveMove": "Polynomial division reveals hidden constant",
+      "trapTypes": [
+        "sign error: k=4 instead of −4",
+        "forgetting to factor"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "-4",
+    "acceptableAnswers": [
+      "-4"
+    ]
+  },
+  {
+    "id": "antigravity-hard-63ba9c69",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (2/3)^(−2) + (3/2)^(−1).\nGive your answer as a fraction or decimal.",
+    "type": "SPR",
+    "explanation": {
+      "correct": "(2/3)^(−2) = (3/2)² = 9/4. (3/2)^(−1) = 2/3. Sum: 9/4 + 2/3 = 27/12 + 8/12 = 35/12.\nWait: 9/4+2/3 = 27/12+8/12 = 35/12. Hmm let me recheck: 9·3=27, 4·2=8 on LCD 12. 27+8=35. So 35/12."
+    },
+    "metadata": {
+      "cognitiveMove": "Negative exponent evaluation then fraction addition",
+      "trapTypes": [
+        "negative exponent confusion",
+        "fraction addition LCD error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "35/12",
+    "acceptableAnswers": [
+      "35/12",
+      "2.9167",
+      "2.917",
+      "2.91666",
+      "2.9166"
+    ]
+  },
+  {
+    "id": "antigravity-hard-cc6e1c86",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  √(5x + 1) = x + 1, and x > 0, what is the value of x?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "Square both sides: 5x+1 = x²+2x+1. → x²−3x = 0 → x(x−3)=0.\nWait: x²+2x+1−5x−1 = x²−3x = 0 → x(x−3)=0 → x=0 or x=3.\nSince x > 0, x = 3. Check: √(16) = 4, but x+1=4. √(15+1)=√16=4, x+1=3+1=4. ✓\nSo x = 3."
+    },
+    "metadata": {
+      "cognitiveMove": "Solving radical equation by squaring then checking",
+      "trapTypes": [
+        "extraneous solutions",
+        "algebra errors after squaring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ]
+  },
+  {
+    "id": "antigravity-hard-bebc727e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the value of  (16)^(3/4) − (27)^(2/3)?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "16^(3/4) = (⁴√16)³ = 2³ = 8. 27^(2/3) = (∛27)² = 3² = 9. Difference: 8 − 9 = −1."
+    },
+    "metadata": {
+      "cognitiveMove": "Fractional exponent evaluation and subtraction",
+      "trapTypes": [
+        "confusing which root to take first",
+        "sign error in subtraction"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "-1",
+    "acceptableAnswers": [
+      "-1"
+    ]
+  },
+  {
+    "id": "antigravity-hard-6ebbc474",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify:  (5/(x+2) + 3/(x−2)) evaluated at x = 3.\nGive your answer as a fraction.",
+    "type": "SPR",
+    "explanation": {
+      "correct": "At x=3: 5/(3+2) + 3/(3−2) = 5/5 + 3/1 = 1 + 3 = 4.\nWait, let me recompute: 5/5 + 3/1 = 1 + 3 = 4."
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluate rational expression at a specific value",
+      "trapTypes": [
+        "LCD error",
+        "arithmetic mistake"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ]
+  },
+  {
+    "id": "antigravity-hard-a1ca1d9f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If the expression  (ax + b)/(x² − 1) = 2/(x − 1) + 3/(x + 1)  holds for all x ≠ ±1, what is the value of a + b?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "Combine RHS: [2(x+1)+3(x−1)] / (x²−1) = (2x+2+3x−3)/(x²−1) = (5x−1)/(x²−1). So a=5, b=−1, and a+b = 4."
+    },
+    "metadata": {
+      "cognitiveMove": "Partial fraction recombination to identify coefficients",
+      "trapTypes": [
+        "distribution error",
+        "sign error on b"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ]
+  },
+  {
+    "id": "antigravity-hard-66ee1afd",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the value of  (√8 + √2)² ?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "√8 = 2√2. So (2√2+√2)² = (3√2)² = 9·2 = 18."
+    },
+    "metadata": {
+      "cognitiveMove": "Simplify radicals before squaring to avoid expansion errors",
+      "trapTypes": [
+        "expanding without simplifying first",
+        "arithmetic error in (a+b)²"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "18",
+    "acceptableAnswers": [
+      "18"
+    ]
+  },
+  {
+    "id": "antigravity-hard-b8b60246",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  (x² + 2x − 15)/(x² − 9) = (x + a)/(x + 3)  for x ≠ 3, x ≠ −3, what is the value of a?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "Factor numerator: x²+2x−15 = (x+5)(x−3). Denominator: x²−9 = (x+3)(x−3). Cancel (x−3): (x+5)/(x+3). So a = 5."
+    },
+    "metadata": {
+      "cognitiveMove": "Factor and cancel to reveal hidden parameter",
+      "trapTypes": [
+        "wrong factoring of x²+2x−15",
+        "cancelling wrong factor"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ]
+  },
+  {
+    "id": "antigravity-hard-dc85303e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Rationalize:  4 / (√6 + √2).  If the result is written as (a√6 + b√2) / c  in simplest form, what is a + b + c?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "Multiply by conjugate: 4(√6−√2)/(6−2) = 4(√6−√2)/4 = √6−√2.\nIn the form (a√6+b√2)/c: a=1, b=−1, c=1. So a+b+c = 1−1+1 = 1."
+    },
+    "metadata": {
+      "cognitiveMove": "Conjugate rationalization then coefficient extraction",
+      "trapTypes": [
+        "using wrong conjugate",
+        "arithmetic in denominator"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "1",
+    "acceptableAnswers": [
+      "1"
+    ]
+  },
+  {
+    "id": "antigravity-hard-4768808b",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  f(x) = (x³ + 27)/(x + 3), what is f(2)?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "x³+27 = (x+3)(x²−3x+9). So f(x) = x²−3x+9 for x ≠ −3. f(2) = 4−6+9 = 7."
+    },
+    "metadata": {
+      "cognitiveMove": "Sum of cubes factoring before evaluation",
+      "trapTypes": [
+        "plugging in directly without simplifying",
+        "wrong cube formula signs"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "7",
+    "acceptableAnswers": [
+      "7"
+    ]
+  },
+  {
+    "id": "antigravity-hard-a37d1829",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Simplify the expression  (4^(1/2) · 8^(1/3)) / 2^(3/2).  Give your answer as a fraction or integer.",
+    "type": "SPR",
+    "explanation": {
+      "correct": "4^(1/2) = 2, 8^(1/3) = 2, 2^(3/2) = 2√2.\nProduct of numerator = 2·2 = 4. 4/(2√2) = 2/√2 = √2.\nHmm. Let me redo with exponents: 4=2², 8=2³.\n4^(1/2) = 2^1, 8^(1/3) = 2^1, numerator = 2^2 = 4.\nDenominator = 2^(3/2). Ratio = 2^(2−3/2) = 2^(1/2) = √2.\nSo the answer is √2."
+    },
+    "metadata": {
+      "cognitiveMove": "Convert all bases to 2 for exponent arithmetic",
+      "trapTypes": [
+        "base conversion error",
+        "exponent subtraction error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "√2",
+    "acceptableAnswers": [
+      "√2",
+      "1.414",
+      "1.41",
+      "2^(1/2)"
+    ]
+  },
+  {
+    "id": "antigravity-hard-164e06d5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Equivalent expressions",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If  1/a + 1/b = 5  and  ab = 3, what is the value of  (a + b)/3?",
+    "type": "SPR",
+    "explanation": {
+      "correct": "1/a + 1/b = (a+b)/(ab) = (a+b)/3 = 5. So (a+b)/3 = 5."
+    },
+    "metadata": {
+      "cognitiveMove": "Recognize 1/a+1/b = (a+b)/ab and substitute known product",
+      "trapTypes": [
+        "trying to solve for a and b individually",
+        "LCD manipulation error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-equiv-rational"
+    },
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ]
+  }
+]

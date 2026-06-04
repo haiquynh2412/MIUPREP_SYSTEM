@@ -1,0 +1,139 @@
+import { useMemo, useState } from 'react';
+
+type SurfaceMode = 'dark' | 'light';
+
+const TRACKS = [
+  { label: 'Math 6-9', value: '485', detail: 'questions ready', tone: 'accent' },
+  { label: 'SAT', value: '9,305', detail: 'public items', tone: 'blue' },
+  { label: 'IELTS/CPE/CAE', value: '2,898', detail: 'learning-ready', tone: 'green' },
+] as const;
+
+const PIPELINE = [
+  { label: 'Diagnostic', value: 'baseline', status: 'ready' },
+  { label: 'Knowledge Graph', value: 'concept/skill map', status: 'ready' },
+  { label: 'Mastery', value: 'adaptive estimate', status: 'active' },
+  { label: 'Recommendation', value: 'next best step', status: 'active' },
+] as const;
+
+export default function SystemSurfacePreview() {
+  const [mode, setMode] = useState<SurfaceMode>('dark');
+  const copy = useMemo(() => SURFACE_COPY[mode], [mode]);
+
+  return (
+    <section className={`system-surface system-surface--${mode}`} aria-label="MiuPrep system interface preview">
+      <div className="system-surface__toolbar">
+        <div>
+          <p className="system-surface__eyebrow">System UI direction</p>
+          <h2>{copy.title}</h2>
+        </div>
+        <div className="system-surface__toggle" role="group" aria-label="Choose interface theme">
+          <button type="button" className={mode === 'dark' ? 'is-active' : ''} onClick={() => setMode('dark')}>
+            Dark screen
+          </button>
+          <button type="button" className={mode === 'light' ? 'is-active' : ''} onClick={() => setMode('light')}>
+            Light option
+          </button>
+        </div>
+      </div>
+
+      <div className="system-surface__layout">
+        <div className="system-surface__main">
+          <div className="system-surface__hero">
+            <div>
+              <p className="system-surface__eyebrow">{copy.badge}</p>
+              <h3>{copy.headline}</h3>
+              <p>{copy.description}</p>
+            </div>
+            <div className="system-surface__score" aria-label="System readiness score">
+              <span>92</span>
+              <small>readiness</small>
+            </div>
+          </div>
+
+          <div className="system-surface__metrics">
+            {TRACKS.map((track) => (
+              <div key={track.label} className={`system-surface__metric system-surface__metric--${track.tone}`}>
+                <span>{track.label}</span>
+                <strong>{track.value}</strong>
+                <small>{track.detail}</small>
+              </div>
+            ))}
+          </div>
+
+          <div className="system-surface__panel">
+            <div className="system-surface__panel-head">
+              <span>Learning loop</span>
+              <strong>{copy.loopStatus}</strong>
+            </div>
+            <div className="system-surface__pipeline">
+              {PIPELINE.map((item, index) => (
+                <div key={item.label} className="system-surface__step">
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <div>
+                    <strong>{item.label}</strong>
+                    <small>{item.value}</small>
+                  </div>
+                  <em>{item.status}</em>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <aside className="system-surface__side">
+          <div className="system-surface__panel">
+            <div className="system-surface__panel-head">
+              <span>Next build</span>
+              <strong>{copy.nextBuild}</strong>
+            </div>
+            <ul className="system-surface__task-list">
+              {copy.tasks.map((task) => (
+                <li key={task}>
+                  <span />
+                  {task}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="system-surface__panel system-surface__panel--compact">
+            <span className="system-surface__eyebrow">Design intent</span>
+            <p>{copy.intent}</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  );
+}
+
+const SURFACE_COPY: Record<SurfaceMode, {
+  title: string;
+  badge: string;
+  headline: string;
+  description: string;
+  loopStatus: string;
+  nextBuild: string;
+  intent: string;
+  tasks: string[];
+}> = {
+  dark: {
+    title: 'Dark operations screen',
+    badge: 'For admin, analytics, exam operations',
+    headline: 'Quiet command center for content, mastery and beta readiness.',
+    description: 'Best for long work sessions, dense monitoring, and reviewing blockers without visual fatigue.',
+    loopStatus: 'stable',
+    nextBuild: 'wire beta evidence',
+    intent: 'Use this as the primary operations surface: restrained, high contrast, dense enough for admins and tutors.',
+    tasks: ['Math 9 internal beta run', 'IELTS Reading/Listening beta run', 'Graph adjustment from real events'],
+  },
+  light: {
+    title: 'MiuMath green learner screen',
+    badge: 'For student, parent, classroom review',
+    headline: 'Fresh MiuMath-style study surface for daily progress and next action.',
+    description: 'Best for younger learners, parent check-ins, classroom projection, and printable progress reviews.',
+    loopStatus: 'guided',
+    nextBuild: 'student flow QA',
+    intent: 'Use this as the learner-facing alternative: MiuMath green, brighter, calmer, and easier to scan on shared screens.',
+    tasks: ['Student dashboard polish', 'Parent progress review', 'Accessible light-mode QA'],
+  },
+};

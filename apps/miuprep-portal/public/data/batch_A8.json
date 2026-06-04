@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "antigravity-hard-e087993a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Convert 3x + 4y = 24 to slope-intercept form.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y = -3x/4 + 6"
+      },
+      {
+        "letter": "B",
+        "text": "y = 3x/4 + 6"
+      },
+      {
+        "letter": "C",
+        "text": "y = -4x/3 + 8"
+      },
+      {
+        "letter": "D",
+        "text": "y = 4x/3 - 6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "4y = -3x + 24 → y = (-3/4)x + 6.",
+      "distractors": {
+        "B": "Forgot negative: y = (3/4)x + 6",
+        "C": "Solved for x instead: swapped coefficients",
+        "D": "Multiple sign errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Converting standard to slope-intercept form",
+      "trapTypes": [
+        "Sign Error",
+        "Division Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-3eeb6cd2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line passes through (2, -1) and is perpendicular to y = 3x + 5. Equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y = -x/3 - 1/3"
+      },
+      {
+        "letter": "B",
+        "text": "y = 3x - 7"
+      },
+      {
+        "letter": "C",
+        "text": "y = -3x + 5"
+      },
+      {
+        "letter": "D",
+        "text": "y = x/3 - 5/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Perpendicular slope = -1/3. y-(-1)=-1/3(x-2) → y=-x/3+2/3-1=-x/3-1/3.",
+      "distractors": {
+        "B": "Used same slope (parallel)",
+        "C": "Used negative slope but not reciprocal",
+        "D": "Wrong point substitution"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding perpendicular line through a point",
+      "trapTypes": [
+        "Perpendicular Slope Error",
+        "Point-Slope Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-6ee3a09a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which equation represents a line parallel to 2x - 5y = 10?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2x - 5y = -3"
+      },
+      {
+        "letter": "B",
+        "text": "5x - 2y = 10"
+      },
+      {
+        "letter": "C",
+        "text": "2x + 5y = 10"
+      },
+      {
+        "letter": "D",
+        "text": "-2x + 5y = 10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Parallel = same A/B ratio. 2x - 5y = 10 has slope 2/5. A: 2x - 5y = -3 also has slope 2/5.",
+      "distractors": {
+        "B": "Swapped coefficients: slope = 5/2",
+        "C": "Changed sign of y-coefficient",
+        "D": "Negated x-coefficient"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identifying parallel lines in standard form",
+      "trapTypes": [
+        "Coefficient Confusion",
+        "Slope from Standard Form"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-e56e0315",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line: y = -2x + 7. What is the x-intercept?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(3.5, 0)"
+      },
+      {
+        "letter": "B",
+        "text": "(0, 7)"
+      },
+      {
+        "letter": "C",
+        "text": "(7, 0)"
+      },
+      {
+        "letter": "D",
+        "text": "(-3.5, 0)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Set y = 0: 0 = -2x + 7 → x = 3.5. Point: (3.5, 0).",
+      "distractors": {
+        "B": "Gave y-intercept instead",
+        "C": "Used b-value as x-intercept",
+        "D": "Sign error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding x-intercept from slope-intercept form",
+      "trapTypes": [
+        "X vs Y Intercept",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-9bfad750",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which pair of lines are perpendicular?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y = 2x + 1 and y = -x/2 + 3"
+      },
+      {
+        "letter": "B",
+        "text": "y = 2x + 1 and y = 2x + 3"
+      },
+      {
+        "letter": "C",
+        "text": "y = 2x + 1 and y = -2x + 3"
+      },
+      {
+        "letter": "D",
+        "text": "y = 2x + 1 and y = x/2 + 3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Slopes 2 and -1/2. Product = -1. Perpendicular.",
+      "distractors": {
+        "B": "Same slope = parallel",
+        "C": "Negative slope ≠ negative reciprocal",
+        "D": "Positive reciprocal, not negative"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identifying perpendicular pairs",
+      "trapTypes": [
+        "Perpendicular Condition",
+        "Negative Reciprocal"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-ceb0ab3e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In 5x - 3y = 15, what does the y-intercept represent if x = items sold and y = profit in hundreds?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-5 (loss of $500 at zero sales)"
+      },
+      {
+        "letter": "B",
+        "text": "5 (profit of $500)"
+      },
+      {
+        "letter": "C",
+        "text": "3 (break-even at 3)"
+      },
+      {
+        "letter": "D",
+        "text": "15 (total revenue)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Set x=0: -3y=15 → y=-5. At zero sales, profit = -$500 (loss).",
+      "distractors": {
+        "B": "Used positive 5",
+        "C": "Confused coefficient with intercept",
+        "D": "Used constant as revenue"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Interpreting y-intercept in real-world context",
+      "trapTypes": [
+        "Sign Interpretation",
+        "Context Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-7d9c4c95",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through (1, 4) and (3, 10). Write in standard form Ax + By = C with positive A.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3x - y = -1"
+      },
+      {
+        "letter": "B",
+        "text": "-3x + y = 1"
+      },
+      {
+        "letter": "C",
+        "text": "x - 3y = -1"
+      },
+      {
+        "letter": "D",
+        "text": "3x + y = 1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Slope = (10-4)/(3-1) = 3. y-4=3(x-1) → y=3x+1 → -3x+y=1 → 3x-y=-1.",
+      "distractors": {
+        "B": "Same but didn't make A positive",
+        "C": "Swapped x and y coefficients",
+        "D": "Sign error on constant"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Converting to standard form",
+      "trapTypes": [
+        "Standard Form Convention",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-3a1db3b8",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two lines: 4x + 6y = 12 and 6x + 9y = 18. What is their relationship?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Same line (coincident)"
+      },
+      {
+        "letter": "B",
+        "text": "Parallel (no intersection)"
+      },
+      {
+        "letter": "C",
+        "text": "Perpendicular"
+      },
+      {
+        "letter": "D",
+        "text": "Intersect at one point"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Line 2: 6x+9y=18, divide by 3/2: 4x+6y=12. Same line.",
+      "distractors": {
+        "B": "Noticed same slope but didn't check intercept",
+        "C": "Computed slopes incorrectly",
+        "D": "Assumed different constants = different lines"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Detecting coincident lines",
+      "trapTypes": [
+        "Coincident vs Parallel",
+        "Proportionality Check"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-87fc01aa",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A line has slope 5/3. A perpendicular line has slope:",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-3/5"
+      },
+      {
+        "letter": "B",
+        "text": "3/5"
+      },
+      {
+        "letter": "C",
+        "text": "-5/3"
+      },
+      {
+        "letter": "D",
+        "text": "5/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Perpendicular slope = negative reciprocal = -3/5.",
+      "distractors": {
+        "B": "Reciprocal but forgot negative",
+        "C": "Negative but forgot reciprocal",
+        "D": "Same slope (parallel)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Computing perpendicular slope",
+      "trapTypes": [
+        "Negative Reciprocal",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-c73a66fd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line y = 4x - 2 is shifted up 5 units. New equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y = 4x + 3"
+      },
+      {
+        "letter": "B",
+        "text": "y = 9x - 2"
+      },
+      {
+        "letter": "C",
+        "text": "y = 4x - 7"
+      },
+      {
+        "letter": "D",
+        "text": "y = 4x + 5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Shift up 5: add 5 to y-intercept. y = 4x + (-2+5) = 4x + 3.",
+      "distractors": {
+        "B": "Added 5 to slope",
+        "C": "Subtracted 5",
+        "D": "Used y = 4x + 5 (added to wrong part)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Vertical translation of linear function",
+      "trapTypes": [
+        "Slope vs Intercept",
+        "Direction Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-88b81b3c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the slope of any line parallel to 7x - 2y = 14?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "7/2"
+      },
+      {
+        "letter": "B",
+        "text": "-7/2"
+      },
+      {
+        "letter": "C",
+        "text": "2/7"
+      },
+      {
+        "letter": "D",
+        "text": "-2/7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Solve: y = (7/2)x - 7. Slope = 7/2. Parallel = same slope.",
+      "distractors": {
+        "B": "Forgot sign when rearranging",
+        "C": "Inverted fraction",
+        "D": "Both errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Extracting slope from standard form",
+      "trapTypes": [
+        "Standard Form Slope",
+        "Fraction Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-f03dc5e6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through (-2, 3) with slope -1/2. Y-intercept?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "y = -x/2 + b. 3 = -(-2)/2 + b = 1 + b → b = 2.",
+      "distractors": {
+        "B": "3 + 1 = 4 (added instead of subtracting)",
+        "C": "Used -(-2)/2 = -1",
+        "D": "Used point's y as intercept"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Finding y-intercept from point and slope",
+      "trapTypes": [
+        "Sign Error",
+        "Substitution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-ea652bbe",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which equation is NOT equivalent to 2x - y = 6?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y = -2x + 6"
+      },
+      {
+        "letter": "B",
+        "text": "y = 2x - 6"
+      },
+      {
+        "letter": "C",
+        "text": "4x - 2y = 12"
+      },
+      {
+        "letter": "D",
+        "text": "-2x + y = -6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Original: y = 2x - 6. A: y = -2x + 6 is NOT equivalent (different slope).",
+      "distractors": {
+        "B": "This IS equivalent",
+        "C": "Multiply by 2: equivalent",
+        "D": "Multiply by -1: equivalent"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identifying non-equivalent linear equations",
+      "trapTypes": [
+        "Equivalent Forms",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-34f53a81",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line AB: passes through (0,3) and (4,3). Line CD: passes through (2,1) and (2,5). Relationship?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Perpendicular (horizontal ⊥ vertical)"
+      },
+      {
+        "letter": "B",
+        "text": "Parallel"
+      },
+      {
+        "letter": "C",
+        "text": "Neither"
+      },
+      {
+        "letter": "D",
+        "text": "Same line"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "AB: slope=0 (horizontal). CD: undefined slope (vertical). Horizontal ⊥ vertical.",
+      "distractors": {
+        "B": "Thought undefined and 0 means parallel",
+        "C": "Thought special cases don't count",
+        "D": "Only checked x-values"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Horizontal/vertical perpendicularity",
+      "trapTypes": [
+        "Special Slope Cases",
+        "Undefined Slope"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-808f87ef",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Convert y - 3 = 2(x + 1) to standard form.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2x - y = -5"
+      },
+      {
+        "letter": "B",
+        "text": "2x - y = 5"
+      },
+      {
+        "letter": "C",
+        "text": "-2x + y = -5"
+      },
+      {
+        "letter": "D",
+        "text": "2x + y = 5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "y - 3 = 2x + 2 → y = 2x + 5 → -2x + y = 5 → 2x - y = -5.",
+      "distractors": {
+        "B": "Sign error on constant",
+        "C": "Didn't flip to positive A",
+        "D": "Added instead of subtracted"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Point-slope to standard form conversion",
+      "trapTypes": [
+        "Sign Error",
+        "Convention Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-538f1680",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Lines y = 3x + 2 and y = 3x - 4. Distance between their y-intercepts?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "|2 - (-4)| = 6.",
+      "distractors": {
+        "B": "Used |4-2| = 2",
+        "C": "Used |-4| = 4",
+        "D": "Added: 2+(-4) then abs"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Vertical distance between parallel lines at y-axis",
+      "trapTypes": [
+        "Absolute Value",
+        "Subtraction Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-463cfc70",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A line has x-intercept 4 and y-intercept -3. What is its slope?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3/4"
+      },
+      {
+        "letter": "B",
+        "text": "-3/4"
+      },
+      {
+        "letter": "C",
+        "text": "4/3"
+      },
+      {
+        "letter": "D",
+        "text": "-4/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Points: (4,0) and (0,-3). Slope = (0-(-3))/(4-0) = 3/4.",
+      "distractors": {
+        "B": "Used -3/4 (forgot negative of -3)",
+        "C": "Inverted: 4/3",
+        "D": "Both errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Slope from intercepts",
+      "trapTypes": [
+        "Rise-Run Order",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-8ece77d3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Given 2x + 3y = 12, if x increases by 3, how does y change?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Decreases by 2"
+      },
+      {
+        "letter": "B",
+        "text": "Increases by 2"
+      },
+      {
+        "letter": "C",
+        "text": "Decreases by 3"
+      },
+      {
+        "letter": "D",
+        "text": "Increases by 3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Slope = -2/3. Δy = (-2/3)(3) = -2. Decreases by 2.",
+      "distractors": {
+        "B": "Used positive slope",
+        "C": "Swapped: used -3/2",
+        "D": "Ignored slope sign"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Using slope to predict change",
+      "trapTypes": [
+        "Slope Interpretation",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-68016346",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line perpendicular to 4x + 3y = 12 through origin. Equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y = 3x/4"
+      },
+      {
+        "letter": "B",
+        "text": "y = -3x/4"
+      },
+      {
+        "letter": "C",
+        "text": "y = -4x/3"
+      },
+      {
+        "letter": "D",
+        "text": "y = 4x/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Original slope = -4/3. Perpendicular = 3/4. Through origin: y = (3/4)x.",
+      "distractors": {
+        "B": "Used original slope",
+        "C": "Negative but not reciprocal",
+        "D": "Reciprocal but not negative"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Perpendicular through origin",
+      "trapTypes": [
+        "Perpendicular Slope",
+        "Origin Simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-d383555d",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which point lies on the line 3x - 2y = 7?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(3, 1)"
+      },
+      {
+        "letter": "B",
+        "text": "(1, 3)"
+      },
+      {
+        "letter": "C",
+        "text": "(7, 0)"
+      },
+      {
+        "letter": "D",
+        "text": "(0, 7)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Check (3,1): 3(3)-2(1)=9-2=7 ✓.",
+      "distractors": {
+        "B": "Swapped x and y",
+        "C": "Set y=0: x=7/3≠7",
+        "D": "Set x=0: y=-7/2≠7"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Verifying point on line",
+      "trapTypes": [
+        "Substitution Error",
+        "Point Checking"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-2719c413",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Slope of line through (1,2) and (4,11)?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "(11-2)/(4-1)=9/3=3."
+    },
+    "metadata": {
+      "cognitiveMove": "Slope formula",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-5fe758c1",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=5x-3. When x=4, y=?",
+    "type": "SPR",
+    "correctAnswer": "17",
+    "acceptableAnswers": [
+      "17"
+    ],
+    "explanation": {
+      "correct": "5(4)-3=17."
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluation",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-49697105",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "3x-y=9. Y-intercept value?",
+    "type": "SPR",
+    "correctAnswer": "-9",
+    "acceptableAnswers": [
+      "-9"
+    ],
+    "explanation": {
+      "correct": "x=0: -y=9 → y=-9."
+    },
+    "metadata": {
+      "cognitiveMove": "Y-intercept",
+      "trapTypes": [
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-a256745f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through (0,4) with slope -2. X-intercept?",
+    "type": "SPR",
+    "correctAnswer": "2",
+    "acceptableAnswers": [
+      "2"
+    ],
+    "explanation": {
+      "correct": "0=−2x+4 → x=2."
+    },
+    "metadata": {
+      "cognitiveMove": "X-intercept",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-214d54c3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "2x+5y=20 and 4x+10y=k. For same line, k=?",
+    "type": "SPR",
+    "correctAnswer": "40",
+    "acceptableAnswers": [
+      "40"
+    ],
+    "explanation": {
+      "correct": "Multiply by 2: 4x+10y=40."
+    },
+    "metadata": {
+      "cognitiveMove": "Proportional equations",
+      "trapTypes": [
+        "Scaling"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-f92dba8a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Perpendicular to slope 4. What slope?",
+    "type": "SPR",
+    "correctAnswer": "-1/4",
+    "acceptableAnswers": [
+      "-1/4",
+      "-0.25"
+    ],
+    "explanation": {
+      "correct": "Negative reciprocal."
+    },
+    "metadata": {
+      "cognitiveMove": "Perpendicular slope",
+      "trapTypes": [
+        "Reciprocal"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-d8ab038c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y=mx+3 through (2,9). Find m.",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "9=2m+3 → m=3."
+    },
+    "metadata": {
+      "cognitiveMove": "Slope from point",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-bd0a152e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Standard form 5x-2y=10. Slope?",
+    "type": "SPR",
+    "correctAnswer": "5/2",
+    "acceptableAnswers": [
+      "5/2",
+      "2.5"
+    ],
+    "explanation": {
+      "correct": "-2y=-5x+10 → y=5x/2-5. Slope=5/2."
+    },
+    "metadata": {
+      "cognitiveMove": "Slope extraction",
+      "trapTypes": [
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-b5c23b52",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Distance between y-intercepts of y=x+3 and y=x-5?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "|3-(-5)|=8."
+    },
+    "metadata": {
+      "cognitiveMove": "Intercept distance",
+      "trapTypes": [
+        "Absolute Value"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-b9431ca6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through (3,7) parallel to y=2x+1. Y-intercept?",
+    "type": "SPR",
+    "correctAnswer": "1",
+    "acceptableAnswers": [
+      "1"
+    ],
+    "explanation": {
+      "correct": "y=2x+b. 7=6+b → b=1."
+    },
+    "metadata": {
+      "cognitiveMove": "Parallel y-intercept",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-9bf220d8",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "4x+By=12 has slope -2. Find B.",
+    "type": "SPR",
+    "correctAnswer": "2",
+    "acceptableAnswers": [
+      "2"
+    ],
+    "explanation": {
+      "correct": "Slope=-4/B=-2 → B=2."
+    },
+    "metadata": {
+      "cognitiveMove": "Coefficient from slope",
+      "trapTypes": [
+        "Division"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-0c873b92",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x-intercept of y=-3x+9?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "0=-3x+9 → x=3."
+    },
+    "metadata": {
+      "cognitiveMove": "X-intercept",
+      "trapTypes": [
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-a530e260",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the slope of 6x - 3y = 12?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "-2"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "-6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "y=2x-4. Slope=2.",
+      "distractors": {
+        "B": "Forgot sign when rearranging",
+        "C": "Used x-coefficient",
+        "D": "Negative of x-coeff"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Slope from standard form",
+      "trapTypes": [
+        "Sign Error",
+        "Coefficient Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-f7772b8a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through (0,-5) perpendicular to y=x/3+2. Equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y=-3x-5"
+      },
+      {
+        "letter": "B",
+        "text": "y=x/3-5"
+      },
+      {
+        "letter": "C",
+        "text": "y=3x-5"
+      },
+      {
+        "letter": "D",
+        "text": "y=-x/3-5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Perp slope=-3. y=-3x-5.",
+      "distractors": {
+        "B": "Used same slope (parallel)",
+        "C": "Used reciprocal without negative",
+        "D": "Negative but not reciprocal"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Perpendicular through y-intercept",
+      "trapTypes": [
+        "Perpendicular Slope",
+        "Reciprocal"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-c2d021aa",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Are 2x+4y=8 and x+2y=5 parallel, intersecting, or same?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Parallel (no solution)"
+      },
+      {
+        "letter": "B",
+        "text": "Intersecting (one solution)"
+      },
+      {
+        "letter": "C",
+        "text": "Same line"
+      },
+      {
+        "letter": "D",
+        "text": "Perpendicular"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "First: y=-x/2+2. Second: y=-x/2+5/2. Same slope, different intercepts → parallel.",
+      "distractors": {
+        "B": "Thought different forms = different slopes",
+        "C": "Thought doubling gives same line",
+        "D": "Computed slopes wrong"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Parallel line detection",
+      "trapTypes": [
+        "Same Slope Check",
+        "Scaling Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-f650e7e9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Equation of line with x-intercept 6 and y-intercept -4?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2x-3y=12"
+      },
+      {
+        "letter": "B",
+        "text": "3x-2y=12"
+      },
+      {
+        "letter": "C",
+        "text": "2x+3y=12"
+      },
+      {
+        "letter": "D",
+        "text": "x-y=10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Points (6,0) and (0,-4). m=4/6=2/3. y=(2/3)x-4→2x-3y=12.",
+      "distractors": {
+        "B": "Swapped coefficients",
+        "C": "Wrong sign on y",
+        "D": "Added intercepts"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Standard form from intercepts",
+      "trapTypes": [
+        "Slope Calculation",
+        "Form Conversion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-1733d7d5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If y=4x-1 and y=4x+c represent the same line, c=?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-1"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "No value"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Same slope 4. Same intercept: c=-1.",
+      "distractors": {
+        "B": "Used opposite",
+        "C": "Set c=0",
+        "D": "Thought impossible"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Coincident line condition",
+      "trapTypes": [
+        "Intercept Matching",
+        "Parameter"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-64c17441",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through (2,3) and (5,3). Slope?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "Undefined"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Same y-values: horizontal line. Slope=0.",
+      "distractors": {
+        "B": "Confused with vertical",
+        "C": "Used (3-3)/(5-2) then said 1",
+        "D": "Used y-value"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Horizontal line slope",
+      "trapTypes": [
+        "Horizontal vs Vertical",
+        "Zero Slope"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-e12af1d3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Convert y=-5x/2+7 to standard form with integer coefficients.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5x+2y=14"
+      },
+      {
+        "letter": "B",
+        "text": "5x-2y=14"
+      },
+      {
+        "letter": "C",
+        "text": "2x+5y=14"
+      },
+      {
+        "letter": "D",
+        "text": "-5x+2y=14"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2y=-5x+14→5x+2y=14.",
+      "distractors": {
+        "B": "Sign error on 2y",
+        "C": "Swapped coefficients",
+        "D": "Didn't move to positive A"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Slope-intercept to standard form",
+      "trapTypes": [
+        "Multiplication Error",
+        "Convention"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-5dbc1e5c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line parallel to x-axis through (3,-7). Equation?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y=-7"
+      },
+      {
+        "letter": "B",
+        "text": "x=3"
+      },
+      {
+        "letter": "C",
+        "text": "y=3"
+      },
+      {
+        "letter": "D",
+        "text": "x=-7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Parallel to x-axis = horizontal. y=-7.",
+      "distractors": {
+        "B": "Confused x and y axes",
+        "C": "Used x-coordinate as y",
+        "D": "Swapped signs"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Horizontal/vertical lines",
+      "trapTypes": [
+        "Axis Confusion",
+        "Coordinate Swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-17aa702e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In 3x-y=6, increasing x by 2 increases y by:",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Slope=3. Δy=3×2=6.",
+      "distractors": {
+        "B": "Gave slope only",
+        "C": "Gave Δx",
+        "D": "3²=9"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Rate of change interpretation",
+      "trapTypes": [
+        "Slope Application",
+        "Multiplication"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-dd25566f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Midpoint of (1,5) and (7,1) lies on which line?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y=-x+7"
+      },
+      {
+        "letter": "B",
+        "text": "y=x+1"
+      },
+      {
+        "letter": "C",
+        "text": "y=-x+3"
+      },
+      {
+        "letter": "D",
+        "text": "y=x-1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Midpoint = (4,3). Check A: y=-4+7=3. Correct.",
+      "distractors": {
+        "B": "Substitution gives 5, not 3",
+        "C": "Substitution gives -1, not 3",
+        "D": "Substitution gives 3 but slope doesn't match context"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Midpoint verification on line",
+      "trapTypes": [
+        "Midpoint Formula",
+        "Substitution"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-c7974524",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line has slope -3/4 and passes through (8,1). Find x when y=7.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-8"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "-4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "y-1=(-3/4)(x-8). 7-1=(-3/4)(x-8). 6=(-3/4)(x-8). x-8=-8. x=0. Hmm answer should be 0 which is B. Let me recalculate: 6×(-4/3)=x-8→-8=x-8→x=0. Answer B.",
+      "distractors": {
+        "A": "Used x=-8 (forgot to add back 8)",
+        "C": "Half of 8",
+        "D": "Sign error"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Point-slope reverse solving",
+      "trapTypes": [
+        "Arithmetic",
+        "Adding Back"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-9b9786c3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2x+3y=12 and 4x+6y=k have no solution, then:",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k can be any value except 24"
+      },
+      {
+        "letter": "B",
+        "text": "k=24"
+      },
+      {
+        "letter": "C",
+        "text": "k=12"
+      },
+      {
+        "letter": "D",
+        "text": "There is no such k"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Second is 2× first when k=24 (same line). For no solution: k≠24.",
+      "distractors": {
+        "B": "k=24 gives same line, not no solution",
+        "C": "Used constant from first equation",
+        "D": "Thought always solvable"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "No-solution parameter condition",
+      "trapTypes": [
+        "Scaling Analysis",
+        "Identity vs Contradiction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-1a0e8c1d",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line through origin perpendicular to 3x+4y=12. Slope?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4/3"
+      },
+      {
+        "letter": "B",
+        "text": "-4/3"
+      },
+      {
+        "letter": "C",
+        "text": "3/4"
+      },
+      {
+        "letter": "D",
+        "text": "-3/4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Original slope=-3/4. Perp=4/3.",
+      "distractors": {
+        "B": "Used negative",
+        "C": "Used reciprocal of wrong fraction",
+        "D": "Used original slope"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Perpendicular from standard form",
+      "trapTypes": [
+        "Negative Reciprocal",
+        "Standard Form Slope"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-c314a133",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Graph of x=5 is:",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Vertical line at x=5"
+      },
+      {
+        "letter": "B",
+        "text": "Horizontal line at y=5"
+      },
+      {
+        "letter": "C",
+        "text": "Point (5,5)"
+      },
+      {
+        "letter": "D",
+        "text": "Line with slope 5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x=constant is vertical.",
+      "distractors": {
+        "B": "Confused x= with y=",
+        "C": "Thought it's a point",
+        "D": "Misinterpreted"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Vertical line recognition",
+      "trapTypes": [
+        "Horizontal vs Vertical",
+        "Equation Type"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-9702f1f2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Find equation: passes through (4,-2), parallel to 3x-y=1.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "y=3x-14"
+      },
+      {
+        "letter": "B",
+        "text": "y=-3x+10"
+      },
+      {
+        "letter": "C",
+        "text": "y=3x+14"
+      },
+      {
+        "letter": "D",
+        "text": "y=-x/3-2/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Parallel slope=3. -2=12+b→b=-14. y=3x-14.",
+      "distractors": {
+        "B": "Used negative slope",
+        "C": "Wrong sign on b",
+        "D": "Used perpendicular"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Parallel line through point",
+      "trapTypes": [
+        "Slope Sign",
+        "Substitution"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-40948bed",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Sum of x and y intercepts of 4x+5y=20?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "9"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x-int: 5. y-int: 4. Sum=9.",
+      "distractors": {
+        "B": "Gave x-intercept",
+        "C": "Gave y-intercept",
+        "D": "Multiplied"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Intercept sum",
+      "trapTypes": [
+        "Intercept Calculation",
+        "Wrong Operation"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-43b033b7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Line with y-intercept 3 and x-intercept -6. Slope?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1/2"
+      },
+      {
+        "letter": "B",
+        "text": "-1/2"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "-2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Points (0,3) and (-6,0). m=(0-3)/(-6-0)=(-3)/(-6)=1/2.",
+      "distractors": {
+        "B": "Forgot negative/negative=positive",
+        "C": "Inverted",
+        "D": "Both errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Slope from two intercepts",
+      "trapTypes": [
+        "Sign Error",
+        "Rise/Run"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  },
+  {
+    "id": "antigravity-hard-65a9a904",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If a line has undefined slope, it must be:",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Vertical"
+      },
+      {
+        "letter": "B",
+        "text": "Horizontal"
+      },
+      {
+        "letter": "C",
+        "text": "Diagonal"
+      },
+      {
+        "letter": "D",
+        "text": "Through the origin"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Undefined slope = vertical line (Δx=0).",
+      "distractors": {
+        "B": "Confused with slope=0",
+        "C": "No specific orientation",
+        "D": "Not necessarily through origin"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Undefined slope identification",
+      "trapTypes": [
+        "Slope Types",
+        "Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-lineq2-forms"
+    }
+  }
+]

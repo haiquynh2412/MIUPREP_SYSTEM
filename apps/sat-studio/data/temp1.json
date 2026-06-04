@@ -1,0 +1,38 @@
+{
+  "id": "antigravity-hard-algebra-systems-word-1",
+  "section": "Math",
+  "domain": "Algebra",
+  "skill": "Systems of two linear equations in two variables",
+  "difficulty": "Hard",
+  "targetBand": "SAT-1600",
+  "prompt": "A metallurgist wants to make 120 grams of an alloy that is 45% silver by mass. She has two alloys available: Alloy A, which is 30% silver by mass, and Alloy B, which is 80% silver by mass. If she mixes the two alloys to create exactly the desired amount and concentration, how many more grams of Alloy A does she need to use than Alloy B?",
+  "type": "MCQ",
+  "choices": [
+    {"letter": "A", "text": "48"},
+    {"letter": "B", "text": "36"},
+    {"letter": "C", "text": "84"},
+    {"letter": "D", "text": "54"}
+  ],
+  "correctAnswer": "A",
+  "explanation": {
+    "correct": "Step 1: Set up the system of equations. Let x be the mass of Alloy A and y be the mass of Alloy B. We have two conditions: total mass (x + y = 120) and silver mass (0.30x + 0.80y = 0.45 * 120). \nStep 2: Simplify the silver equation. 0.45 * 120 = 54, so 0.3x + 0.8y = 54. \nStep 3: Solve the system. Multiply the first equation by 0.3 to get 0.3x + 0.3y = 36. Subtract this from the silver equation to eliminate x: (0.8y - 0.3y) = 54 - 36, which gives 0.5y = 18. Solving for y gives y = 36. \nStep 4: Find x. Since x + y = 120, x = 120 - 36 = 84. \nStep 5: Answer the specific question asked. The question asks how many MORE grams of Alloy A are used than Alloy B. So, x - y = 84 - 36 = 48. \nFast Path: You can use the method of alligation to find the ratio of Alloy A to Alloy B. The difference between A (30%) and the target (45%) is 15. The difference between B (80%) and the target (45%) is 35. The required ratio of A to B is 35:15, or 7:3. Since the total parts are 10, each part is 120 / 10 = 12 grams. The difference is 7 - 3 = 4 parts. 4 * 12 = 48 grams. \nVerification: 84g of A (25.2g silver) + 36g of B (28.8g silver) = 120g total (54g silver, which is exactly 45%). 84 - 36 = 48.",
+    "distractors": {
+      "B": "This is the mass in grams of Alloy B required for the mixture (the value of y). The question asks for the difference in mass between Alloy A and Alloy B, not just the mass of Alloy B alone.",
+      "C": "This is the mass in grams of Alloy A required for the mixture (the value of x). Students who select this trap successfully solved the system of equations but forgot to subtract the mass of Alloy B.",
+      "D": "This represents the total mass of silver in the final 120-gram mixture (45% of 120 = 54). This is merely the right side of the silver concentration equation, not the difference in alloy masses."
+    }
+  },
+  "metadata": {
+    "cognitiveMove": [
+      "Translate word problem into a system of equations",
+      "Solve a linear system",
+      "Calculate a relative difference instead of a direct variable"
+    ],
+    "trapTypes": [
+      "Solving for the wrong variable",
+      "Partial answer trap",
+      "Misinterpreting the final question"
+    ],
+    "sourceSignalId": "antigravity-hard-algebra-systems-word"
+  }
+}

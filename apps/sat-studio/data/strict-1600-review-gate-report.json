@@ -1,0 +1,198 @@
+{
+  "version": "strict-1600-review-gate-2026-05-18",
+  "target": "SAT 1000-1600 roadmap, target 1600",
+  "skippedSourceFiles": [
+    "antigravity-bank.json"
+  ],
+  "updatedByFile": {
+    "archive-source-ai-bank.json": 1179,
+    "kaplan-sat-math-ai-bank.json": 284,
+    "opensat-pinesat.json": 2474,
+    "private-vault-archive-bank.json": 230,
+    "sat-1590-elite-ai-bank.json": 700,
+    "sat-king-supplemental-ai-bank.json": 354,
+    "sat-studio-foundation-bank.json": 76
+  },
+  "statusByFile": {
+    "archive-source-ai-bank.json": {
+      "needs_review": 1179,
+      "rejected": 1
+    },
+    "kaplan-sat-math-ai-bank.json": {
+      "needs_review": 284,
+      "rejected": 16
+    },
+    "opensat-pinesat.json": {
+      "needs_review": 2474
+    },
+    "private-vault-archive-bank.json": {
+      "needs_review": 230
+    },
+    "sat-1590-elite-ai-bank.json": {
+      "needs_review": 700
+    },
+    "sat-king-supplemental-ai-bank.json": {
+      "needs_review": 354,
+      "rejected": 6
+    },
+    "sat-studio-foundation-bank.json": {
+      "needs_review": 76
+    }
+  },
+  "bucketByFile": {
+    "archive-source-ai-bank.json": {
+      "explanation_and_trap_review_required": 1179
+    },
+    "kaplan-sat-math-ai-bank.json": {
+      "explanation_and_trap_review_required": 284
+    },
+    "opensat-pinesat.json": {
+      "explanation_and_trap_review_required": 2128,
+      "choice_repair_required": 73,
+      "duplicate_prompt_review_required": 241,
+      "answer_or_math_repair_required": 31,
+      "structural_repair_required": 1
+    },
+    "private-vault-archive-bank.json": {
+      "explanation_and_trap_review_required": 219,
+      "choice_repair_required": 11
+    },
+    "sat-1590-elite-ai-bank.json": {
+      "explanation_and_trap_review_required": 700
+    },
+    "sat-king-supplemental-ai-bank.json": {
+      "explanation_and_trap_review_required": 354
+    },
+    "sat-studio-foundation-bank.json": {
+      "explanation_and_trap_review_required": 76
+    }
+  },
+  "failIdsByFile": {
+    "archive-source-ai-bank.json": [],
+    "kaplan-sat-math-ai-bank.json": [],
+    "opensat-pinesat.json": [
+      "b307477f",
+      "random_id_b9",
+      "67a4829f",
+      "f94c0c33",
+      "2175c79f",
+      "197df82e",
+      "f9939d2c",
+      "152d892d",
+      "random_id_c3",
+      "random_id_e4",
+      "random_id_1",
+      "random_id_c7",
+      "random_id_a1",
+      "random_id_b3",
+      "6f54812c",
+      "2346d88f",
+      "random_id_c4",
+      "19f69a7c",
+      "random_id_b8",
+      "random_id_e8",
+      "6249b173",
+      "random_id_a9",
+      "random_id_c7",
+      "random_id_b7",
+      "random_id_a1",
+      "random_id_e4",
+      "random_id_e8",
+      "random_id_a5",
+      "random_id_3",
+      "random_id_a5",
+      "random_id_42",
+      "245f9000",
+      "9a152541",
+      "e88f7e33",
+      "random_id_a1",
+      "6758427d",
+      "23456789",
+      "random_id_a10",
+      "random_id_english_1",
+      "c293e98a",
+      "7c629b53",
+      "54b7c3c3",
+      "random_id_d3",
+      "e64458b4",
+      "random_id_english_5",
+      "random_id_e1",
+      "random_id_e9",
+      "random_id_e5",
+      "random_id_e8",
+      "random_id_c8",
+      "c891b25b",
+      "7a45c12b",
+      "random_id_e6",
+      "213957e6",
+      "7f7c3993",
+      "random_id_english_1",
+      "f765438a",
+      "119b489c",
+      "87654321",
+      "92ef1d2e",
+      "8f92374d",
+      "random_id_a2",
+      "54d6446b",
+      "random_id_english_1",
+      "random_id_a2",
+      "random_id_a1",
+      "257f017c",
+      "89656d1c",
+      "random_id_e7",
+      "random_id_a1",
+      "12d8c11d",
+      "random_id_c10",
+      "random_id_c5",
+      "a23b7c3e",
+      "f123456",
+      "random_id_c2",
+      "random_id_d6",
+      "random_id_c4",
+      "34c8629c",
+      "random_id_c2",
+      "85a7b24c",
+      "f711e94e",
+      "random_id_c6",
+      "random_id_c9",
+      "949c662a",
+      "random_id_1",
+      "random_id_a3",
+      "random_id_9",
+      "random_id_d3",
+      "13e622f4",
+      "random_id_c6",
+      "random_id_c4",
+      "random_id_a7",
+      "random_id_c8",
+      "37c9b215",
+      "random_id_8",
+      "random_id_b8",
+      "f4b36293",
+      "random_id_b2",
+      "random_id_c3"
+    ],
+    "private-vault-archive-bank.json": [
+      "vault-princeton-2-s3-q05",
+      "vault-princeton-2-s3-q15",
+      "vault-princeton-2-s4-q16",
+      "vault-princeton-3-s4-q06",
+      "vault-princeton-3-s4-q17",
+      "vault-princeton-4-s4-q11",
+      "vault-college-board-9-s3-q14",
+      "vault-college-board-9-s4-q20",
+      "vault-college-board-10-s4-q02",
+      "vault-college-board-10-s4-q03",
+      "vault-college-board-10-s4-q28"
+    ],
+    "sat-1590-elite-ai-bank.json": [],
+    "sat-king-supplemental-ai-bank.json": [],
+    "sat-studio-foundation-bank.json": []
+  },
+  "notes": [
+    "Antigravity was intentionally not modified.",
+    "For non-Antigravity banks, reviewed now means the row has passed a strict human-quality review gate, not only a structural import gate.",
+    "Rows that are structurally usable but need SAT-1600-level explanation, trap, duplicate, or source review are labeled needs_review.",
+    "Rows with blocking structure/math/choice issues are labeled needs_review and contentAudit.verdict=fail so study selection can block them."
+  ]
+}

@@ -1,0 +1,1295 @@
+{
+  "id": "cam-cpe1-test1",
+  "title": "Cambridge Certificate of Proficiency in English 1 - Test 1",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Cambridge Certificate of Proficiency in English 1, Cambridge University Press",
+  "sections": [
+    {
+      "id": "cam-cpe1-t1-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Vancouver</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the last ten years or so, hundreds of thousands of people from all over the world have (1) ______ up residence in Vancouver, in western Canada. To relax in the evening, residents (2) ______ down the city streets and, if you join them, you are likely to overhear a different language at almost every other step. People come to Vancouver for its mild climate, its wonderful setting between the ocean and the mountains, its clean and safe environment and its educational and job opportunities. And (3) ______ some may grumble about the speed at which new buildings have (4) ______, there’s no doubt that the new arrivals and (5) ______ tourism industry have helped fuel an urban renaissance. Locals once referred to Vancouver as ‘Terminal City’ because of the city’s role as a terminus or gateway to all other places. Though the name has fallen slightly out of (6) ______, Vancouver is more a gateway than ever.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Putting Pen to Paper</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Journalists like myself are usually poor letter-writers. I have heard it (7) ______ that this is because of the instinctive distaste we feel at writing something we are not going to be paid for, but I cannot believe we have quite such mercenary characters. It is more probably that (8) ______ in our work, we are always striving to get the greatest possible effect, the essential spontaneity of a letter escapes us. The real creative artist, who does not consciously work on the effect at all (though he may re-write a passage dozens of times), does not have this problem. I believe that it is in this inherent grasp of the effect of his words that there lies the only sure test of the real artist.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t1-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t1-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. taken",
+                "B. put",
+                "C. made",
+                "D. built"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Collocation cố định: 'take up residence' nghĩa là 'bắt đầu cư trú / định cư tại một nơi'. Bẫy: 'put' (B), 'make' (C), và 'built' (D) đều không đi cùng 'up residence' để tạo thành cụm từ có nghĩa định cư trong tiếng Anh. Chuyên đề: Collocations — take + up + residence.",
+              "answerLocation": "taken up residence in Vancouver",
+              "category": "cpe_part_1",
+              "source": "Page 9, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. prowl",
+                "B. stumble",
+                "C. trudge",
+                "D. stroll"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'stroll down' nghĩa là 'đi dạo thong thả'. Ngữ cảnh nói về việc thư giãn vào buổi tối của cư dân nên từ 'stroll' mang sắc thái nhẹ nhàng, đi dạo là phù hợp nhất. Bẫy: 'prowl' (A) = đi rình mò (thường dùng cho thú săn mồi hoặc trộm). 'stumble' (B) = vấp ngã. 'trudge' (C) = đi bước nặng nề, mệt mỏi. Chuyên đề: Vocabulary — verbs of walking.",
+              "answerLocation": "residents stroll down the city streets",
+              "category": "cpe_part_1",
+              "source": "Page 9, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. conversely",
+                "B. nevertheless",
+                "C. much as",
+                "D. even so"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'much as' hoạt động như một liên từ chỉ sự nhượng bộ (= although / even though), đứng trước mệnh đề nhượng bộ: 'much as some may grumble' = mặc dù một số người có thể cằn nhằn. Bẫy: 'conversely' (A), 'nevertheless' (B), và 'even so' (D) là các trạng từ nối (transition words), thường đứng đầu câu độc lập và ngăn cách bằng dấu phẩy chứ không đứng trực tiếp làm liên từ nối hai mệnh đề như thế này. Chuyên đề: Conjunctions — much as.",
+              "answerLocation": "much as some may grumble",
+              "category": "cpe_part_1",
+              "source": "Page 9, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. sprung up",
+                "B. gathered up",
+                "C. piled up",
+                "D. moved up"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Phrasal verb: 'spring up' (quá khứ phân từ: 'sprung up') nghĩa là 'mọc lên như nấm, xuất hiện nhanh chóng'. Dùng cho các tòa nhà mới xây dựng nhanh. Bẫy: 'gathered up' (B) = thu gom lại. 'piled up' (C) = chất đống lên. 'moved up' (D) = di chuyển lên trên. Chuyên đề: Phrasal verbs — spring up. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "buildings have sprung up",
+              "category": "cpe_part_1",
+              "source": "Page 9, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. progressing",
+                "B. blooming",
+                "C. flourishing",
+                "D. swelling"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Adjective collocation: 'flourishing tourism industry' nghĩa là 'ngành du lịch đang phát triển hưng thịnh / rực rỡ'. Bẫy: 'progressing' (A) thường làm động từ dạng tiếp diễn hơn là đứng bổ nghĩa trực tiếp cho danh từ. 'blooming' (B) dùng cho hoa nở hoặc sắc mặt đỏ hào. 'swelling' (D) = sưng tấy hoặc gia tăng thể tích vật lý. Chuyên đề: Collocations — flourishing + industry.",
+              "answerLocation": "flourishing tourism industry",
+              "category": "cpe_part_1",
+              "source": "Page 9, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. approval",
+                "B. favour",
+                "C. opinion",
+                "D. support"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Idiom cố định: 'fall out of favour' nghĩa là 'không còn được ưa chuộng / rớt giá / mất lòng'. Bẫy: 'approval' (A), 'opinion' (C), và 'support' (D) không ghép với cụm 'fall out of...' để tạo nghĩa tương đương. Chuyên đề: Idioms/Collocations — fall out of favour.",
+              "answerLocation": "fallen slightly out of favour",
+              "category": "cpe_part_1",
+              "source": "Page 9, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. said",
+                "B. told",
+                "C. remarked",
+                "D. presumed"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Collocation/Cấu trúc bị động: 'I have heard it said that...' nghĩa là 'Tôi từng nghe người ta nói rằng...'. Bẫy: 'told' (B) yêu cầu tân ngữ gián tiếp chỉ người (told someone that). 'remarked' (C) và 'presumed' (D) không tạo thành cấu trúc bị động phổ biến 'heard it remarked/presumed that' trong ngữ cảnh này. Chuyên đề: Passive patterns — hear it said.",
+              "answerLocation": "have heard it said that",
+              "category": "cpe_part_1",
+              "source": "Page 9, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. since",
+                "B. for",
+                "C. like",
+                "D. once"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Liên từ 'since' đóng vai trò chỉ lý do (= because / as), dịch nghĩa: 'Bởi vì trong công việc của mình, chúng tôi luôn cố gắng đạt hiệu quả lớn nhất, nên sự tự nhiên cần có của một bức thư biến mất khỏi chúng tôi'. Bẫy: 'for' (B) cũng có nghĩa là 'bởi vì' nhưng không bao giờ đứng đầu một mệnh đề trạng ngữ đứng trước mệnh đề chính như thế này. 'like' (C) = giống như, 'once' (D) = một khi (chỉ thời gian). Chuyên đề: Conjunctions — since.",
+              "answerLocation": "It is more probably that since in our work",
+              "category": "cpe_part_1",
+              "source": "Page 10, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t1-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 9-16, read the text below and think of the word which best fits each space. Use only one word in each space. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Can Parrots Communicate?</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Everyone knows that parrots can imitate human speech, but can (0) <b>these</b> birds also understand meaning? Two decades ago, researcher Irene Pepperberg started working with Alex, an African grey parrot, and ever since then, she has been building (9) ______ data on him. Pepperberg, (10) ______ recently published book <i>The Alex Studies</i> makes fascinating reading, claims Alex doesn’t copy speech but intentionally uses words to get (11) ______ it is that he wants. In actual (12) ______, some of his cognitive skills are identical to those of a five-year-old child. (13) ______ a child’s, Alex’s learning has been a steady progression. Early on, he (14) ______ vocalise whether two things were the same or different. Now, he carries (15) ______ more complex tasks. Presented (16) ______ different-coloured balls and blocks and asked the number of red blocks, he'll answer correctly. He requests things as well. Should he ask to sit on your shoulder and you put him somewhere else, he'll complain: ‘Wanna go shoulder.’</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t1-rg-2",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t1-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "up"
+                ]
+              ],
+              "correctAnswer": "up",
+              "explanation": "Đáp án 'up'. Phrasal verb: 'build up' nghĩa là 'thu thập, tích lũy dần dần'. Ở đây là tích lũy dữ liệu nghiên cứu về chú vẹt Alex suốt nhiều năm. Chuyên đề: Phrasal verbs — build up. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "building up data on him",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "whose"
+                ]
+              ],
+              "correctAnswer": "whose",
+              "explanation": "Đáp án 'whose'. Đại từ quan hệ sở hữu chỉ người: 'Pepperberg, whose recently published book...' (Pepperberg, người có cuốn sách vừa xuất bản...). Cấu trúc sở hữu đứng trước danh từ 'recently published book'. Chuyên đề: Relative clauses — whose.",
+              "answerLocation": "Pepperberg, whose recently published book",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "whatever"
+                ],
+                [
+                  "what"
+                ]
+              ],
+              "correctAnswer": "whatever",
+              "explanation": "Đáp án 'whatever' hoặc 'what'. Cụm danh từ: 'uses words to get whatever/what it is that he wants' (sử dụng từ ngữ để có được bất cứ thứ gì / những gì chú muốn). 'whatever' nhấn mạnh sắc thái tự do lựa chọn của đối tượng. Chuyên đề: Pronouns — nominal clauses.",
+              "answerLocation": "words to get whatever it is that he wants",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "fact"
+                ]
+              ],
+              "correctAnswer": "fact",
+              "explanation": "Đáp án 'fact'. Cụm từ nối cố định: 'In actual fact' = 'In fact' nghĩa là 'Trên thực tế / Thực tế là'. Dùng để nhấn mạnh hoặc đưa ra thông tin chi tiết đáng ngạc nhiên. Chuyên đề: Prepositional phrases — in actual fact.",
+              "answerLocation": "In actual fact, some of his cognitive skills",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "like"
+                ],
+                [
+                  "Like"
+                ]
+              ],
+              "correctAnswer": "like",
+              "explanation": "Đáp án 'like'. Giới từ chỉ sự tương đồng: 'Like a child’s [learning], Alex’s learning has been...' (Giống như sự học hỏi của một đứa trẻ, sự học của Alex là...). Đứng đầu câu giới thiệu trạng ngữ so sánh. Chuyên đề: Prepositions — like vs as.",
+              "answerLocation": "Like a child’s, Alex’s learning has been",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "could"
+                ],
+                [
+                  "would"
+                ]
+              ],
+              "correctAnswer": "could",
+              "explanation": "Đáp án 'could' hoặc 'would'. Modal verb chỉ khả năng trong quá khứ ('could' = có thể phát âm) hoặc thói quen, hành động lặp đi lặp lại trong quá khứ ('would' = thường phát âm). Đứng trước động từ nguyên mẫu 'vocalise'. Chuyên đề: Modal verbs. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Early on, he could vocalise whether two things",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "out"
+                ]
+              ],
+              "correctAnswer": "out",
+              "explanation": "Đáp án 'out'. Phrasal verb: 'carry out' nghĩa là 'thực hiện / tiến hành (nhiệm vụ, thí nghiệm)'. Ở đây Alex tiến hành các bài kiểm tra phức tạp hơn. Chuyên đề: Phrasal verbs — carry out. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Now, he carries out more complex tasks",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16):",
+              "acceptedAnswers": [
+                [
+                  "with"
+                ]
+              ],
+              "correctAnswer": "with",
+              "explanation": "Đáp án 'with'. Giới từ cố định đi sau phân từ bị động: 'Presented with' nghĩa là 'Khi được cho xem / Khi đối diện với (các khối cầu và khối hộp nhiều màu...)'. Chuyên đề: Passive patterns — present + with.",
+              "answerLocation": "Presented with different-coloured balls",
+              "category": "cpe_part_2",
+              "source": "Page 21, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t1-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Vanilla</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Thanks to the ubiquitous use of vanilla as a (0) flavouring, in ice creams and cakes the world over, its taste is more (17) ______ [RECOGNISE] to the majority of people than the appearance of the plant. The plant itself is actually a native of the tropical forests of Central America and is the only variety of orchid to be grown on a commercial scale. Its delicate white flowers open in the early morning and, after pollination by insects or humming birds, a narrow bean-like pod forms and (18) ______ [RIPE], taking a period of five to seven months to reach (19) ______ [MATURE]. It is this pod which is harvested to provide the food crop we know as vanilla. Despite its American origins, for decades it was only cultivated (20) ______ [EXTEND] on the Indian Ocean island of Madagascar, where it was introduced at the end of the nineteenth century. It soon became clear that the vanilla grown there was of a quality (21) ______ [KNOW] in other areas, and the island quickly became one of the world’s major (22) ______ [SUPPLY]. In recent years, however, new (23) ______ [COMPETE] have entered the vanilla market and, (24) ______ [CONSEQUENCE] the emergence of new producers means a smaller market share, whilst the development of artificial substitutes is threatening to undermine demand for the real thing.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t1-rg-3",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t1-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17):",
+              "acceptedAnswers": [
+                [
+                  "recognisable"
+                ],
+                [
+                  "recognizable"
+                ]
+              ],
+              "correctAnswer": "recognisable",
+              "explanation": "Đáp án 'recognisable' hoặc 'recognizable'. Cần tính từ đứng sau cấu trúc so sánh 'more ... to the majority of people' bổ nghĩa cho danh từ 'its taste'. Từ gốc RECOGNISE (nhận ra) -> recognisable (có thể nhận biết / quen thuộc). Chuyên đề: Word formation — adjectives.",
+              "answerLocation": "taste is more recognisable to the majority",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18):",
+              "acceptedAnswers": [
+                [
+                  "ripens"
+                ]
+              ],
+              "correctAnswer": "ripens",
+              "explanation": "Đáp án 'ripens'. Cần động từ số ít ở hiện tại đơn song song với 'forms' trong cụm 'a narrow bean-like pod forms and [ripens]'. Từ gốc RIPE (chín) -> ripen (làm cho chín/chín đi) -> ripens. Chuyên đề: Word formation — verbs.",
+              "answerLocation": "a narrow bean-like pod forms and ripens",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19):",
+              "acceptedAnswers": [
+                [
+                  "maturity"
+                ]
+              ],
+              "correctAnswer": "maturity",
+              "explanation": "Đáp án 'maturity'. Cần danh từ đứng sau động từ chỉ mục tiêu 'reach' (đạt tới sự trưởng thành / chín muồi). Từ gốc MATURE (trưởng thành, chín) -> maturity (sự chín muồi). Chuyên đề: Word formation — nouns.",
+              "answerLocation": "five to seven months to reach maturity",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20):",
+              "acceptedAnswers": [
+                [
+                  "extensively"
+                ]
+              ],
+              "correctAnswer": "extensively",
+              "explanation": "Đáp án 'extensively'. Cần trạng từ bổ nghĩa cho động từ bị động 'was only cultivated [extensively]' (được canh tác một cách rộng rãi). Từ gốc EXTEND (mở rộng) -> extensive (rộng lớn) -> extensively (một cách rộng rãi). Chuyên đề: Word formation — adverbs.",
+              "answerLocation": "it was only cultivated extensively on the",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21):",
+              "acceptedAnswers": [
+                [
+                  "unknown"
+                ]
+              ],
+              "correctAnswer": "unknown",
+              "explanation": "Đáp án 'unknown'. Cần tính từ mang nghĩa phủ định bổ nghĩa sau cho cụm 'of a quality unknown in other areas' (với chất lượng hoàn toàn chưa từng được biết đến ở các khu vực khác). Từ gốc KNOW (biết) -> unknown (không được biết đến). Chuyên đề: Word formation — prefixes.",
+              "answerLocation": "quality unknown in other areas",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22):",
+              "acceptedAnswers": [
+                [
+                  "suppliers"
+                ]
+              ],
+              "correctAnswer": "suppliers",
+              "explanation": "Đáp án 'suppliers'. Cần danh từ số nhiều chỉ người/tổ chức đóng vai trò nhà cung cấp đứng sau lượng từ 'one of the world’s major...'. Từ gốc SUPPLY (cung cấp) -> supplier (nhà cung cấp) -> suppliers (số nhiều). Chuyên đề: Word formation — nouns.",
+              "answerLocation": "one of the world’s major suppliers",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23):",
+              "acceptedAnswers": [
+                [
+                  "competitors"
+                ]
+              ],
+              "correctAnswer": "competitors",
+              "explanation": "Đáp án 'competitors'. Cần danh từ số nhiều chỉ người/đối thủ cạnh tranh làm chủ ngữ đi kèm tính từ 'new' đứng trước động từ số nhiều 'have entered...'. Từ gốc COMPETE (cạnh tranh) -> competitor (đối thủ cạnh tranh) -> competitors (các đối thủ cạnh tranh). Chuyên đề: Word formation — nouns.",
+              "answerLocation": "new competitors have entered the vanilla market",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24):",
+              "acceptedAnswers": [
+                [
+                  "consequently"
+                ]
+              ],
+              "correctAnswer": "consequently",
+              "explanation": "Đáp án 'consequently'. Cần trạng từ liên kết (linking adverb) đứng đầu mệnh đề giải thích hệ quả rút ra: 'and, consequently, the emergence...' (và, hệ quả là, sự trỗi dậy của...). Từ gốc CONSEQUENCE (hậu quả, hệ quả) -> consequently (kết quả là, do đó). Chuyên đề: Word formation — linking adverbs.",
+              "answerLocation": "and, consequently, the emergence of new",
+              "category": "cpe_part_3",
+              "source": "Page 22, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t1-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<p class='text-slate-700 italic mb-4'>Ví dụ: Do you mind if I watch you while you paint?<br><b>objection</b><br>Do you <u>have any objection to my watching</u> you while you paint?</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t1-rg-4",
+          "instruction": "Write the missing words only.",
+          "questions": [
+            {
+              "id": "q-cpe1-t1-25",
+              "type": "gap_fill",
+              "blankIndex": 25,
+              "instruction": "The author describes his childhood vividly in the book. (ACCOUNT) -> The author's book ______ his childhood.",
+              "acceptedAnswers": [
+                [
+                  "gives a vivid account of"
+                ],
+                [
+                  "has a vivid account of"
+                ],
+                [
+                  "includes a vivid account of"
+                ],
+                [
+                  "contains a vivid account of"
+                ]
+              ],
+              "correctAnswer": "gives a vivid account of",
+              "explanation": "Đáp án 'gives a vivid account of' / 'has a vivid account of'. Cụm từ cố định: 'give/have a vivid account of something' = tả lại sinh động về cái gì. Bẫy: Phải giữ nguyên từ cho sẵn 'account' và bảo đảm chia động từ số ít phù hợp với chủ ngữ 'The author's book'. Chuyên đề: Collocations — account.",
+              "answerLocation": "gives/has/includes/contains a vivid account of",
+              "category": "cpe_part_4",
+              "source": "Page 25, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-26",
+              "type": "gap_fill",
+              "blankIndex": 26,
+              "instruction": "This plant often gets attacked by insects. (PRONE) -> This plant ______ by insects.",
+              "acceptedAnswers": [
+                [
+                  "is prone to attack"
+                ],
+                [
+                  "is prone to being attacked"
+                ],
+                [
+                  "is prone to getting attacked"
+                ]
+              ],
+              "correctAnswer": "is prone to being attacked",
+              "explanation": "Đáp án 'is prone to being attacked' / 'is prone to attack'. Cấu trúc: 'be prone to something / to doing something' = có xu hướng chịu cái gì đó / dễ bị cái gì đó tác động tiêu cực. Ở dạng bị động là 'be prone to being/getting attacked' hoặc cụm danh từ 'prone to attack'. Chuyên đề: Adjective patterns — prone.",
+              "answerLocation": "is prone to attack/getting attacked/being attacked",
+              "category": "cpe_part_4",
+              "source": "Page 25, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-27",
+              "type": "gap_fill",
+              "blankIndex": 27,
+              "instruction": "Do you have any idea about how Jack made enough money to buy that new sports car? (LIGHT) -> Can you ______ Jack made enough money to buy that new sports car?",
+              "acceptedAnswers": [
+                [
+                  "cast some light on how"
+                ],
+                [
+                  "cast any light on how"
+                ],
+                [
+                  "shed some light on how"
+                ],
+                [
+                  "shed any light on how"
+                ],
+                [
+                  "throw some light on how"
+                ],
+                [
+                  "throw any light on how"
+                ]
+              ],
+              "correctAnswer": "shed some light on how",
+              "explanation": "Đáp án 'shed some/any light on how' / 'cast/throw some/any light on how'. Idiom: 'shed/cast/throw light on something' = làm sáng tỏ điều gì. 'how...' hoạt động như mệnh đề danh ngữ làm tân ngữ sau giới từ 'on'. Chuyên đề: Idioms — light.",
+              "answerLocation": "cast/shed/throw some/any light on how",
+              "category": "cpe_part_4",
+              "source": "Page 25, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-28",
+              "type": "gap_fill",
+              "blankIndex": 28,
+              "instruction": "Kate has finally accepted that their friendship is over. (TERMS) -> Kate has finally ______ their friendship is over.",
+              "acceptedAnswers": [
+                [
+                  "come to terms with the fact that"
+                ]
+              ],
+              "correctAnswer": "come to terms with the fact that",
+              "explanation": "Đáp án 'come to terms with the fact that'. Idiom: 'come to terms with something' = chấp nhận thực tế đau lòng/khó khăn nào đó. Kết hợp với 'the fact that' để nối với một mệnh đề đầy đủ đứng sau. Chuyên đề: Idioms — terms.",
+              "answerLocation": "come to terms with the fact that",
+              "category": "cpe_part_4",
+              "source": "Page 26, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-29",
+              "type": "gap_fill",
+              "blankIndex": 29,
+              "instruction": "Only when the storm subsided was it clear just how much damage had been done. (EXTENT) -> It was not ______ of the damage was clear.",
+              "acceptedAnswers": [
+                [
+                  "until the storm subsided that the"
+                ],
+                [
+                  "until the storm had subsided that the"
+                ]
+              ],
+              "correctAnswer": "until the storm subsided that the",
+              "explanation": "Đáp án 'until the storm (had) subsided that the'. Cấu trúc đảo ngữ nhấn mạnh thời gian: 'It is/was not until + clause + that + clause' (Mãi cho tới khi... thì...). Từ 'extent' được dùng làm danh từ chính ở mệnh đề sau: 'the extent of the damage'. Chuyên đề: Cleft sentences — not until.",
+              "answerLocation": "until the storm (had) subsided that the extent",
+              "category": "cpe_part_4",
+              "source": "Page 26, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-30",
+              "type": "gap_fill",
+              "blankIndex": 30,
+              "instruction": "When he won the scholarship, Alan began to realise just how lucky he was. (DAWN) -> When he won the scholarship, it began ______ just how lucky he was.",
+              "acceptedAnswers": [
+                [
+                  "to dawn on Alan"
+                ]
+              ],
+              "correctAnswer": "to dawn on Alan",
+              "explanation": "Đáp án 'to dawn on Alan'. Phrasal verb: 'dawn on someone' = (ý nghĩ, nhận thức) bắt đầu vỡ lẽ ra với ai đó. Dùng chủ ngữ giả 'it began to dawn on Alan that...' Chuyên đề: Phrasal verbs — dawn on. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "to dawn on Alan",
+              "category": "cpe_part_4",
+              "source": "Page 26, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t1-sec-5",
+      "title": "Part 5: Multiple Choice Reading",
+      "instructions": "For questions 31-36, read the text below and choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>POETRY RECITALS</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>At any given time in history the literary scene will seem confused to those who are living through it, and it is the selectivity of posterity that makes the pattern and orders of eminence appear clearly defined to the retrospective view. It is fairly safe to say that, at the present time, there is an especially bewildering complexity of poetic tendencies, of kinds of poetry being written, of warring factions, of ways of presenting, criticising and teaching poetry, and of conflicting beliefs about the role of the poet in society.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Very broadly speaking, the present debate in contemporary poetry concerns the reciprocal mistrust and disapproval shown by the seriously committed ‘literary’ writers, whose poems are intended to be printed and read on the page, and the ‘pop’ poets who are happier declaiming them to an audience. Of course, this division is far from absolute.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The practice of promoting public poetry readings has been steadily increasing over the past twenty years or so, in many different forms. Small literary societies in provincial towns conduct them in village halls or the sitting rooms of their members; schools and colleges invite poets to read and talk to audiences of students; arts festivals often advertise poetry readings by well-known authors on their programmes. The consequences of all these events, and of poets being more or less obliged to become public performers, are manifold and of uncertain benefit to them as artists.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>For the ‘pop’ poets, whose work has been composed expressly for the purpose of recital to live audiences, the issue is plain. They can only profit from public performance. Their verses are often very simple in both form and content, and can be assimilated at a single hearing; it is on the printed page that the deficiencies of thought, technique and imagination become clear. Poets who are dedicated to their craft, and are doing their best to continue and develop what is finest in the traditions of poetry — which involves compressing the maximum amount of passion, thought, wit and vision into the smallest possible space and achieving rhythmic effects of great variety and subtlety — are unlikely to be appreciated by an audience which is probably encountering their work for the first time. The danger here is, not that they will be tempted to emulate the content and style of the entertainers, but that they might, in the effort to achieve instant communication, read only their most readily accessible work which is quite likely to be their slightest and least characteristic.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Attendance at poetry reading cannot be a substitute for reading poetry on the page, though it can be an enjoyable and instructive adjunct. To hear good poets read their work aloud, even if they are not accomplished public speakers, is a valuable guide as to where the precise emphases are to be placed, but it is desirable that the audience should either follow the reading with the text before them or have a prior knowledge of the poems being spoken. The principal justification for popular recitals of poetry, where the readings are sometimes interspersed with musical items, is that audiences will come to associate poetry with pleasure and not feel that it is an art available only to an initiated minority.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t1-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t1-31",
+              "type": "multiple_choice",
+              "instruction": "What general observation about poetry does the writer make in the opening paragraph?",
+              "options": [
+                "A. The present literary climate is not conducive to good poetry.",
+                "B. Modern poems appear unplanned and chaotic to him.",
+                "C. The greatness of poets only emerges in retrospect.",
+                "D. Today’s poetry compares unfavourably with that of previous generations."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Tác giả chỉ ra: 'it is the selectivity of posterity that makes the pattern and orders of eminence appear clearly defined to the retrospective view' (chính sự chọn lọc của thế hệ sau mới làm cho các khuôn mẫu và thứ bậc kiệt xuất hiện ra rõ ràng khi nhìn lại). Điều này đồng nghĩa việc sự vĩ đại của nhà thơ chỉ thực sự rõ nét qua góc nhìn lịch sử/hồi tưởng (in retrospect). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "selectivity of posterity that makes the pattern and orders of eminence appear clearly defined to the retrospective view",
+              "category": "cpe_part_5",
+              "source": "Page 18, Question 34, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-32",
+              "type": "multiple_choice",
+              "instruction": "What does the writer think about the present conflict in poetry?",
+              "options": [
+                "A. He blames it on the serious poets.",
+                "B. The distinction between ‘serious’ and ‘popular’ is seldom clear cut.",
+                "C. It stems from the attitude of the audience.",
+                "D. The popular poets take pleasure in criticising the serious poets."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Ở cuối đoạn 2, tác giả bình luận về sự chia rẽ giữa các nhà thơ nghiêm túc ('serious/literary') và các nhà thơ đại chúng ('pop poets'): 'Of course, this division is far from absolute.' (Tất nhiên, sự phân chia này hoàn toàn không tuyệt đối). Điều này tương đương với việc ranh giới giữa chúng hiếm khi rõ ràng rành mạch (seldom clear cut). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "Of course, this division is far from absolute.",
+              "category": "cpe_part_5",
+              "source": "Page 18, Question 35, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-33",
+              "type": "multiple_choice",
+              "instruction": "According to the writer, how might a serious poet feel about a public recital?",
+              "options": [
+                "A. uneasy about the practical arrangements",
+                "B. bound to accept for financial reasons",
+                "C. pleased to reach a wider audience",
+                "D. under pressure to take part"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn 3 có viết: 'The consequences of all these events, and of poets being more or less obliged to become public performers...' (Hệ quả của tất cả những sự kiện này, và việc các nhà thơ ít nhiều bị bắt buộc phải trở thành người biểu diễn trước công chúng...). Từ 'obliged' chỉ ra áp lực bắt buộc phải tham gia (under pressure to take part). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "poets being more or less obliged to become public performers",
+              "category": "cpe_part_5",
+              "source": "Page 18, Question 36, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-34",
+              "type": "multiple_choice",
+              "instruction": "The writer feels that the work of some popular poets",
+              "options": [
+                "A. does not stand up to close analysis.",
+                "B. is part of a long poetic tradition.",
+                "C. is undervalued by experienced audiences.",
+                "D. benefits from being written down."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn 4 nêu rõ: 'Their verses are often very simple in both form and content... it is on the printed page that the deficiencies of thought, technique and imagination become clear.' (Thơ của họ rất đơn giản cả về hình thức lẫn nội dung... chính khi in ra giấy thì các thiếu sót về tư duy, kỹ thuật và trí tưởng tượng mới lộ rõ). Điều này chỉ ra tác phẩm không chịu đựng nổi sự phân tích kỹ lưỡng (close analysis). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "on the printed page that the deficiencies of thought, technique and imagination become clear",
+              "category": "cpe_part_5",
+              "source": "Page 18, Question 37, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-35",
+              "type": "multiple_choice",
+              "instruction": "Which word is used to refer disparagingly to the popular poets?",
+              "options": [
+                "A. tempted (line 52)",
+                "B. entertainers (line 53)",
+                "C. communication (line 55)",
+                "D. slightest (line 57)"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Tác giả gọi các nhà thơ đại chúng/phổ thông là 'entertainers' (những kẻ giải trí) ở đoạn cuối đoạn 4 để thể hiện sự đánh giá có phần khinh miệt/hạ thấp (disparagingly) so với danh hiệu nhà thơ đích thực. Chuyên đề: Reading Comprehension — tone/vocabulary.",
+              "answerLocation": "emulate the content and style of the entertainers",
+              "category": "cpe_part_5",
+              "source": "Page 18, Question 38, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-36",
+              "type": "multiple_choice",
+              "instruction": "The writer concedes that public performances",
+              "options": [
+                "A. are an introduction to poetry for some people.",
+                "B. may lead some people to acquire a taste for more serious poetry.",
+                "C. can be instructive as regards public speaking.",
+                "D. can be a good supplement to serious, written poetry."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn cuối ghi nhận: 'Attendance at poetry reading cannot be a substitute for reading poetry on the page, though it can be an enjoyable and instructive adjunct.' (Việc tham gia buổi đọc thơ không thể thay thế cho việc đọc thơ trên trang giấy, mặc dù nó có thể là một phần bổ trợ thú vị và bổ ích). 'Adjunct' đồng nghĩa với 'supplement' (phần bổ sung/phần phụ). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "cannot be a substitute for reading poetry on the page, though it can be an enjoyable and instructive adjunct",
+              "category": "cpe_part_5",
+              "source": "Page 18, Question 39, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t1-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "For questions 37-43, read the text below. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap (37-43). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>Bright Road memories</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In those days the council houses stretched all over the western side of the city: row after row of huddled, dingy dwellings in orange half-brick or pale white stucco. In summer the chemicals from the May and Baker factory two miles away came and hung round the doors and gardens with an indescribable smell of sulphur, and the most common sight in that part of Norwich early in the morning was a paperboy wrinkling his nose in disgust as he negotiated somebody's front path.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 37 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>That my mother should intrude into these early memories is no surprise. I remember her as a small, precise and nearly always angry woman, the source of whose anger I never quite understood, and consequently couldn't do anything to appease. Even as a child, though, accompanying her to the small shops in Bunnett Square or on longer excursions into the city, I'm sure that I had some notion of the oddity of her personality.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 38 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>As a moral code this was completely beyond my comprehension: even now I'm not sure that I understand it. To particularise, it meant not straying into neighbours’ gardens or jeopardising their rose bushes as you walked down the street; it meant sitting for long half-hours in a silent dining room, with your hands folded across your chest, listening to radio programmes that my mother liked; it meant — oh, a hundred proscriptions and prohibitions.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 39 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>talk about bad legs, the cold weather and the perils of ingrate children, a category in which I nearly always felt myself included.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 40 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>This was easier said than done. Growing up in West Earlham at this time followed a well-regulated pattern. Until you were five you simply sat at home and got under your parents’ feet (I can remember awful aimless days, when I must have been about four, playing on a rug in the front room while my mother sat frostily in an armchair). Then, the September after your fifth birthday, you were packed off to Avenue Road infants’ school half a mile away in the direction of the city.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 41 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>If I remember anything about these early years it's the summer holidays; those days when you caught occasional glimpses of the world that existed outside West Earlham: a vague old man who lived next door to Mrs Buddery and told stories about his time in the Merchant Navy; a charity fete, once, held at a house far away in Christchurch Road, where a motherly woman doled out lemonade and tried to get me interested in something called the League of Pity — a kind of junior charity, I think — only for my mother, to whom subsequent application was made, to dismiss the scheme on the grounds that its organisers were ‘only after your money’.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 42 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>It was only later that I comprehended what poor company this trio was; they formed a depressed and depressing sisterhood, a little dribble of inconsequent</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 43 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>her edification. I can remember her stopping once in front of a fine study of a Roman soldier in full battle gear to remark, ‘Well, I wouldn't like to meet him on a dark night!’ I recall this as a solitary instance of my mother attempting to make a joke.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>No doubt I exaggerate. No doubt I ignore her virtues and magnify her frailties. But there was precious little milk of human kindness in my mother; it had all been sucked out of her, sucked out and thrown away.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t1-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap (37-43).",
+          "questions": [
+            {
+              "id": "q-cpe1-t1-37",
+              "type": "gapped_text",
+              "instruction": "Gap (37):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án F. Đoạn đầu nói về khung cảnh quá khứ 'In those days...'. Đoạn F bắt đầu bằng 'Most of this early life I've forgotten. But there is a memory...' (Hầu hết cuộc sống thuở nhỏ tôi đã quên. Nhưng có một ký ức...) dẫn dắt hợp lý vào hồi tưởng tuổi thơ của tác giả. Chuyên đề: Gapped Text.",
+              "answerLocation": "In those days the council houses... Most of this early life I've forgotten",
+              "category": "cpe_part_6",
+              "source": "Page 15, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-38",
+              "type": "gapped_text",
+              "instruction": "Gap (38):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn văn trước nói về tính cách kỳ lạ của người mẹ ('oddity of her personality'). Đoạn D tiếp tục mô tả cụ thể về sự lập dị đó: 'She was, for instance, quite the most solitary person I have ever known...' (Ví dụ, bà ấy là người cô độc nhất tôi từng biết...). Chuyên đề: Gapped Text.",
+              "answerLocation": "notion of the oddity of her personality. She was, for instance, quite the most solitary",
+              "category": "cpe_part_6",
+              "source": "Page 15, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-39",
+              "type": "gapped_text",
+              "instruction": "Gap (39):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn văn tiếp theo bắt đầu bằng cụm từ lơ lửng 'talk about bad legs...' (nói chuyện về đôi chân đau nhức...). Đoạn G giới thiệu các 'cronies' (bạn bè già) của người mẹ: 'Mrs Buddery, Mrs Winall, Mrs Laband', những người thường tụ tập và tán gẫu ('talk about...'). Chuyên đề: Gapped Text.",
+              "answerLocation": "Mrs Laband... talk about bad legs",
+              "category": "cpe_part_6",
+              "source": "Page 15, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-40",
+              "type": "gapped_text",
+              "instruction": "Gap (40):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn văn tiếp theo bắt đầu bằng: 'This was easier said than done.' (Nói thì dễ hơn làm). Đoạn H kết thúc bằng ý chí 'duty immediately to grow up and start the work of prising it free' (nhiệm vụ lớn lên lập tức và bắt đầu công cuộc giải thoát khỏi gánh nặng gia đình). Điều này kết nối hoàn hảo với lời nhận xét 'Nói thì dễ...'. Chuyên đề: Gapped Text.",
+              "answerLocation": "start the work of prising it free. This was easier said than done.",
+              "category": "cpe_part_6",
+              "source": "Page 15, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-41",
+              "type": "gapped_text",
+              "instruction": "Gap (41):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn văn trước nói về việc đi học ở trường Avenue Road xa nửa dặm. Đoạn B mô tả phương tiện di chuyển lúc đó: 'The lucky few had a mother with a rickety bike and a child seat... my mother consigned me to the care of other children...' (Một số ít người may mắn có mẹ chở bằng xe đạp cũ... mẹ tôi thì giao tôi cho những đứa trẻ khác đi cùng...). Chuyên đề: Gapped Text.",
+              "answerLocation": "packed off to Avenue Road infants’ school half a mile away... The lucky few had a mother with a rickety bike",
+              "category": "cpe_part_6",
+              "source": "Page 15, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-42",
+              "type": "gapped_text",
+              "instruction": "Gap (42):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Đoạn văn trước kết thúc bằng lời bình phẩm của người mẹ chê trách các nhà tổ chức ngày hội từ thiện là 'only after your money' (chỉ nhăm nhe lấy tiền của con thôi). Đoạn E tiếp nối bằng chủ đề tiền bạc đó: 'Mercenary motives were a familiar theme of my mother's conversation...' (Động cơ trục lợi tiền bạc là một chủ đề quen thuộc trong các cuộc nói chuyện của mẹ tôi...). Chuyên đề: Gapped Text.",
+              "answerLocation": "organisers were ‘only after your money’. Mercenary motives were a familiar theme",
+              "category": "cpe_part_6",
+              "source": "Page 15, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-43",
+              "type": "gapped_text",
+              "instruction": "Gap (43):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn văn tiếp theo tiếp nối lơ lửng bằng 'her edification...' (để khai sáng đầu óc cho bà). Đoạn A mô tả việc bà đưa tác giả đến bảo tàng mỹ thuật Castle Museum: 'take me ... to the Norwich Castle Museum ... for her edification' (đưa tôi đi bảo tàng để khai sáng trí tuệ cho bà). Chuyên đề: Gapped Text.",
+              "answerLocation": "Norwich Castle Museum... her edification",
+              "category": "cpe_part_6",
+              "source": "Page 16, Test 1, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "To do my mother justice she wasn’t unconscious of her role as the guardian of my education. On Sundays occasionally, she would take me — in my ‘good clothes’ — on the 85 bus to the Norwich Castle Museum. Here, hand-in-hand, suspicious, but mindful of the free admission, we would parade through roomfuls of paintings by the Norwich School of Artists."
+            },
+            {
+              "label": "B",
+              "text": "The lucky few had a mother with a rickety bike and a child seat — these were extraordinary contraptions in cast-iron with improvised safety-straps. As far as I recall, my mother consigned me to the care of other children in the street for this journey."
+            },
+            {
+              "label": "C",
+              "text": "Of explanation — who we were, where we came from, what we were supposed to be doing — there was none. And yet it seemed to me that my early life, lived out in the confines of the West Earlham estate, in a dark little house in a fatally misnamed terrace called Bright Road, was crammed with mysteries that demanded explanation. There was, to take the most obvious, the question of my father."
+            },
+            {
+              "label": "D",
+              "text": "She was, for instance, quite the most solitary person I have ever known, as alone in a room full of people as on a moor. To this solitariness was added a fanatic adhesion to a kind of propriety uncommon on the West Earlham estate, which occasionally broke out in furious spring-cleanings or handwashings and instructions to ‘behave proper’."
+            },
+            {
+              "label": "E",
+              "text": "Mercenary motives were a familiar theme of my mother's conversation, and politicians my mother held in the deepest contempt of all. If she thought of the House of Commons — and I am not sure if her mind was capable of such an unprecedented leap of the imagination — it was as a kind of opulent post office where plutocrats ripped open letters stuffed with five pound notes sent in by a credulous public."
+            },
+            {
+              "label": "F",
+              "text": "Most of this early life I've forgotten. But there is a memory of sitting, or perhaps balancing, at any rate precariously, on some vantage point near an upstairs window, and looking at the houses as they faded away into the distance. Later on there are other phantoms — faces that I can’t put names to, my mother, ironing towels in the back room of a house that I don't think was ours, snow falling over the turrets of the great mansion at Earlham."
+            },
+            {
+              "label": "G",
+              "text": "In time other figures emerged onto these stern early scenes. For all her solitariness, my mother wasn't without her cronies. There was Mrs Buddery, who was fixated on the Royal Family; Mrs Winall, who said exactly nothing, except for grunts supporting the main speaker; and Mrs Laband — livelier than the others, and of whom they vaguely disapproved."
+            },
+            {
+              "label": "H",
+              "text": "Looking back, it was as if a giant paperweight, composed of the West Earlham houses, my mother and her cronies, the obligation to ‘behave proper’, lay across my shoulders, and that it was my duty immediately to grow up and start the work of prising it free."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t1-sec-7",
+      "title": "Part 7: Multiple Matching",
+      "instructions": "For questions 44-53, read the five academic perspectives on aesthetics in the digital age below and choose the correct perspective (A-E) which fits each statement. You may choose a perspective more than once.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Evolution of Aesthetics in the Digital Age</h2><div class='mb-6 text-slate-800 text-base leading-relaxed text-left'><p class='mb-4'><b>A. Dr. Adrian Vance (Visual Culture Theorist)</b><br>It is impossible to overstate the extent to which our visual encounters are now pre-filtered and catalogued by corporate algorithms. On platforms such as Instagram, aesthetic standards are not born of organic, spontaneous human appreciation, but are systematically optimized to drive user retention and data monetization. This commercial framing has forced modern content creators to walk a perilous tightrope. They are caught between satisfying rigid algorithmic metrics to ensure visibility, and trying to maintain their own professional dedication and artistic integrity. In this environment, photography ceases to be a genuine medium of self-expression and is reduced to a commercial commodity. Raw, unmediated captures of our surroundings are pushed aside in favour of highly curated, predictable visual packages that conform to whatever style is currently trending.</p><p class='mb-4'><b>B. Dr. Clara Sterling (Sociolinguist & Curator)</b><br>Undeniably, digital networks have democratized art. Marginalized voices and experimental creators who were once ignored by elitist brick-and-mortar galleries can now showcase their work globally at the click of a button. However, this absolute democratization is a double-edged sword. It has led to a highly fragmented visual environment where the boundary between fine, long-lasting art and fleeting mass entertainment has become hopelessly blurred. Because anyone can upload and label their creations as art, digital platforms have become a breeding ground for highly impressionistic, suggestive visual experiences. These works are specifically designed to capture short attention spans through shock value or superficial cleverness, rather than systematic depth or technical mastery. We are left with a culture that prioritizes instant viral consumption over enduring craft, making it difficult for viewers to cultivate a profound relationship with the objects they consume.</p><p class='mb-4'><b>C. Dr. Julian Vance (Philosopher of Technology)</b><br>The current design landscape is heavily dominated by 'glassmorphism' and sleek, hyper-minimalist user interfaces. These smooth, unblemished, and entirely predictable layouts reflect a deeper psychological shift: a collective retreat from the messy, chaotic realities of our physical environment. The physical surroundings of the modern viewer are increasingly being eclipsed by a simulated aesthetic sphere that offers perfect control and symmetry. By enclosing ourselves in these pristine, glowing screens, we reject the physical world’s imperfections—its decay, its unpredictability, and its dust. This obsession with frictionless digital design acts as a sort of sensory anaesthetic, soothing our anxieties but ultimately disconnecting us from the visceral, tactile textures of actual human existence.</p><p class='mb-4'><b>D. Prof. Marcus Thorne (Art Historian)</b><br>As an art historian, I find striking parallels between our current digital archive and the black-and-white print era of nineteenth-century book illustration. During that historical period, the shortening of print runs and low-budget publishing constraints led to an enormous volume of routine, mediocre work, alongside the professional best of finest master artists. Consequently, the historical archive became part junk shop, part treasure house. Today, the internet operates on an even grander scale, acting as a massive repository of both utterly worthless and phenomenally valuable cultural artefacts. Interestingly, this hyper-saturated digital visual environment has also rehabilitated previously neglected, out-of-favour aesthetic formats. Stylistic rehabilitation is now at work on historical engravings, early photography, and retro graphics, bringing forgotten masterpieces back to public view through digital facsimiles and creative re-issues.</p><p class='mb-4'><b>E. Dr. Eleanor Brooks (Cognitive Psychologist)</b><br>Our cognitive processing of beauty is not static; it is deeply shaped by the media through which we consume art. Screen-based aesthetic consumption has fundamentally altered our neural pathways, training our brains to demand instant gratification and rapid visual transitions. Consequently, modern viewers find it exceptionally difficult to appreciate slow-moving, quiet artworks, such as traditional oil paintings or complex poetry, which require sustained concentration. In their desperate efforts to achieve immediate communication with a screen-weary public, even serious, dedicated creators are under immense pressure to adapt. They are tempted to present only their most readily accessible or simplistic work, compromising the depth, subtlety, and integrity of their signature style simply to avoid being bypassed in a rapid scroll.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t1-rg-7",
+          "instruction": "Choose the correct letter, A, B, C, D or E.",
+          "questions": [
+            {
+              "id": "q-cpe1-t1-44",
+              "type": "multiple_matching",
+              "instruction": "Which academic warns that prioritizing instantaneous visual communication may compromise the depth and integrity of an artist's signature style?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Eleanor Brooks chỉ ra rằng dưới áp lực đạt được sự giao tiếp tức thì ('immediate communication') với độc giả lướt màn hình nhanh, các tác giả có xu hướng chỉ phơi bày những tác phẩm dễ tiếp cận nhất ('readily accessible'), làm tổn hại đến chiều sâu và tính trọn vẹn trong phong cách riêng của họ ('compromising the depth, subtlety, and integrity of their signature style'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "compromising the depth, subtlety, and integrity of their signature style simply to avoid being bypassed",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-45",
+              "type": "multiple_matching",
+              "instruction": "Which academic draws a historical parallel to suggest that a modern digital archive contains both worthless and highly valuable cultural material?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Prof. Marcus Thorne so sánh kho lưu trữ kỹ thuật số ngày nay với kỷ nguyên minh họa sách in trắng đen thế kỷ 19: 'part junk shop, part treasure house' (một phần là cửa hàng rác thải, một phần là ngôi nhà kho báu), chỉ ra internet là một kho chứa khổng lồ chứa cả những thứ hoàn toàn vô giá trị và những di vật văn hóa cực kỳ giá trị ('both utterly worthless and phenomenally valuable cultural artefacts'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "massive repository of both utterly worthless and phenomenally valuable cultural artefacts",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-46",
+              "type": "multiple_matching",
+              "instruction": "Which academic argues that the prevalence of sleek, unblemished digital layouts represents a rejection of physical imperfections?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Dr. Julian Vance lập luận rằng các giao diện siêu tối giản, mượt mà và không tì vết ('smooth, unblemished') phản ánh sự trốn tránh thực tại vật lý đầy hỗn độn: 'we reject the physical world’s imperfections—its decay, its unpredictability, and its dust.' (chúng ta từ chối những khiếm khuyết của thế giới vật lý—sự phân hủy, tính bất định, và bụi bặm). Chuyên đề: Multiple Matching.",
+              "answerLocation": "we reject the physical world’s imperfections—its decay, its unpredictability, and its dust",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-47",
+              "type": "multiple_matching",
+              "instruction": "Which academic emphasizes that despite its apparent democratizing effect, the digital landscape is heavily dominated by commercial algorithms?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Dr. Adrian Vance nhấn mạnh rằng các trải nghiệm thị giác của chúng ta đang bị lọc và phân loại bởi các thuật toán doanh nghiệp ('corporate algorithms'), biến các tiêu chuẩn thẩm mỹ thành các công cụ được tối ưu hóa thương mại để thu hút người dùng và kiếm tiền từ dữ liệu ('optimized to drive user retention and data monetization'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "our visual encounters are now pre-filtered and catalogued by corporate algorithms",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-48",
+              "type": "multiple_matching",
+              "instruction": "Which academic suggests that screen-based consumption has fundamentally reshaped the cognitive pathways through which we perceive artistic elegance?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Eleanor Brooks chỉ ra: 'Screen-based aesthetic consumption has fundamentally altered our neural pathways...' (Việc tiêu thụ thẩm mỹ qua màn hình đã thay đổi cơ bản các đường dẫn thần kinh của chúng ta...), làm cho người xem khó lòng thưởng thức các tác phẩm đòi hỏi sự tập trung kéo dài. Chuyên đề: Multiple Matching.",
+              "answerLocation": "Screen-based aesthetic consumption has fundamentally altered our neural pathways",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-49",
+              "type": "multiple_matching",
+              "instruction": "Which academic points out that modern creators are often forced to choose between satisfying algorithmic metrics and maintaining professional dedication?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Dr. Adrian Vance nói về việc các nhà sáng tạo nội dung hiện đại bị kẹt giữa hai dòng nước: 'caught between satisfying rigid algorithmic metrics to ensure visibility, and trying to maintain their own professional dedication and artistic integrity.' (kẹt giữa việc đáp ứng các số đo thuật toán cứng nhắc để duy trì tương tác và cố gắng giữ gìn sự cống hiến chuyên môn cũng như tính liêm chính nghệ thuật của mình). Chuyên đề: Multiple Matching.",
+              "answerLocation": "caught between satisfying rigid algorithmic metrics... and trying to maintain their own professional dedication",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-50",
+              "type": "multiple_matching",
+              "instruction": "Which academic believes that the current digital visual environment has rehabilitated previously neglected or undervalued aesthetic formats?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Prof. Marcus Thorne nhận định: 'hyper-saturated digital visual environment has also rehabilitated previously neglected, out-of-favour aesthetic formats.' (môi trường thị giác kỹ thuật số bão hòa cũng đã phục hồi các định dạng thẩm mỹ trước đây bị bỏ quên hoặc không được ưa chuộng). Chuyên đề: Multiple Matching.",
+              "answerLocation": "hyper-saturated digital visual environment has also rehabilitated previously neglected, out-of-favour aesthetic formats",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-51",
+              "type": "multiple_matching",
+              "instruction": "Which academic observes that digital platforms encourage an impressionistic, suggestive engagement rather than systematic understanding?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Clara Sterling chỉ ra rằng việc dễ dàng tải lên tác phẩm đã khiến các nền tảng số trở thành nơi phát triển cho 'highly impressionistic, suggestive visual experiences' (các trải nghiệm thị giác mang tính gợi mở, ấn tượng) ưu tiên tính lan truyền nhanh và gây sốc thay vì chiều sâu hệ thống hay sự thành thục kỹ thuật. Chuyên đề: Multiple Matching.",
+              "answerLocation": "digital platforms have become a breeding ground for highly impressionistic, suggestive visual experiences",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-52",
+              "type": "multiple_matching",
+              "instruction": "Which academic claims that the physical surroundings of the viewer are increasingly being eclipsed by a simulated aesthetic sphere?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Dr. Julian Vance chỉ ra: 'The physical surroundings of the modern viewer are increasingly being eclipsed by a simulated aesthetic sphere...' (Môi trường vật lý xung quanh người xem hiện đại ngày càng bị lu mờ trước một vùng thẩm mỹ mô phỏng...). Chuyên đề: Multiple Matching.",
+              "answerLocation": "physical surroundings of the modern viewer are increasingly being eclipsed by a simulated aesthetic sphere",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t1-53",
+              "type": "multiple_matching",
+              "instruction": "Which academic notes that the boundary between high art and mass entertainment has become increasingly blurred on digital networks?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Clara Sterling viết: 'the boundary between fine, long-lasting art and fleeting mass entertainment has become hopelessly blurred.' (ranh giới giữa nghệ thuật tinh hoa trường tồn và giải trí đại chúng thoảng qua đã bị xóa nhòa một cách vô vọng). Chuyên đề: Multiple Matching.",
+              "answerLocation": "boundary between fine, long-lasting art and fleeting mass entertainment has become hopelessly blurred",
+              "category": "cpe_part_7",
+              "source": "Test 1, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1289 @@
+{
+  "id": "cam-cpe1-test4",
+  "title": "Cambridge Certificate of Proficiency in English 1 - Test 4",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Cambridge Certificate of Proficiency in English 1, Cambridge University Press",
+  "sections": [
+    {
+      "id": "cam-cpe1-t4-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-8, read the two texts below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Clutter</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Sometimes it seems that no matter how many possessions you have, you never feel secure. While it is reasonable to have a basic nesting instinct and create a home which (1) ______ your needs, there is a point where the motivation for acquiring things gets out of control. Modern advertising is (2) ______ deliberately designed to play on our insecurities. ‘If you don’t have one of these you will be a (3) ______ human being’ is one of the consistent (4) ______ messages we receive. To discover just how much you are influenced, I challenge you to try not to read any advertising billboards next time you go down the street. These multi-million dollar messages (5) ______ condition us in very persuasive ways without our ever realising it. We are bombarded by them — television, radio, newspapers, magazines, posters, tee shirts, the internet, you (6) ______ it — all encouraging us to buy, buy, buy.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1 mt-6'>Text 2: Caves</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Research establishments and university departments around the world have (7) ______ years of research time in all aspects of caves, mainly their origins, their hydrology and their biology. Caves constitute a small but rather mysterious (8) ______ of the natural environment — as such they arouse our curiosity and challenge our desire for knowledge.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t4-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t4-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. quenches",
+                "B. stays",
+                "C. meets",
+                "D. feeds"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Collocation cố định: 'meet someone's needs' nghĩa là 'đáp ứng nhu cầu của ai đó'. Việc tạo dựng một ngôi nhà đáp ứng nhu cầu cơ bản là hợp lý. Bẫy: 'quenches' (A) = giải khát / dập tắt. 'stays' (B) = ở lại. 'feeds' (D) = cho ăn / nuôi dưỡng. Chuyên đề: Collocations — meet + needs.",
+              "answerLocation": "create a home which meets your needs",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. nonetheless",
+                "B. moreover",
+                "C. thereby",
+                "D. whatever"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Trạng từ 'moreover' (= hơn nữa / ngoài ra) được dùng làm trạng từ chèn bổ sung thông tin giải thích thêm: 'Modern advertising is moreover deliberately designed...' (Quảng cáo hiện đại, hơn thế nữa, được thiết kế có chủ đích...). Bẫy: 'nonetheless' (A) = tuy nhiên (chỉ sự nhượng bộ). 'thereby' (C) = bằng cách đó (chỉ phương thức). 'whatever' (D) = bất kể cái gì. Chuyên đề: Conjunctions/Linking adverbs. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "advertising is moreover deliberately designed",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. minor",
+                "B. lesser",
+                "C. deeper",
+                "D. lower"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Collocation/Cụm từ cố định: 'a lesser human being' nghĩa là 'một con người kém cỏi hơn / thấp kém hơn' (so với người khác nếu không sở hữu món đồ quảng cáo). Bẫy: 'minor' (A) = thứ yếu. 'deeper' (C) = sâu sắc hơn. 'lower' (D) = thấp hơn về mặt vị trí/mức độ vật lý. Chuyên đề: Collocations — lesser human being.",
+              "answerLocation": "you will be a lesser human being",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. subdued",
+                "B. submerged",
+                "C. underlying",
+                "D. underhand"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Tính từ 'underlying' nghĩa là 'ẩn sâu bên dưới / ngầm ẩn'. 'underlying messages' là những thông điệp ngầm ẩn / thông điệp ngầm mà ta nhận được từ quảng cáo. Bẫy: 'subdued' (A) = dịu bớt / bị khuất phục. 'submerged' (B) = bị chìm/ngập dưới nước. 'underhand' (D) = giấu giếm, lừa lọc. Chuyên đề: Vocabulary — underlying. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "one of the consistent underlying messages",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. relentlessly",
+                "B. fiercely",
+                "C. thoroughly",
+                "D. extremely"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Trạng từ 'relentlessly' nghĩa là 'một cách tàn nhẫn / không ngừng nghỉ / liên tục gay gắt'. Những thông điệp quảng cáo này liên tục và không ngừng điều hòa, định hình hành vi của chúng ta. Bẫy: 'fiercely' (B) = dữ dội, mãnh liệt. 'thoroughly' (C) = một cách kỹ lưỡng. 'extremely' (D) = vô cùng (thường đi với tính từ). Chuyên đề: Vocabulary — relentlessly.",
+              "answerLocation": "These multi-million dollar messages relentlessly condition us",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. label",
+                "B. tell",
+                "C. say",
+                "D. name"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Cụm từ thành ngữ/khẩu ngữ cố định: 'you name it' nghĩa là 'vân vân / và bất kỳ thứ gì khác bạn có thể kể tên'. Dùng cuối một danh sách liệt kê để chỉ sự đa dạng, đầy đủ. Bẫy: 'label' (A), 'tell' (B), và 'say' (C) không kết hợp với 'you ... it' để mang nghĩa liệt kê này. Chuyên đề: Idioms — you name it.",
+              "answerLocation": "the internet, you name it",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. conducted",
+                "B. done",
+                "C. invested",
+                "D. made"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Collocation cố định: 'invest time/effort' nghĩa là 'đầu tư thời gian/nỗ lực vào việc gì'. Các viện nghiên cứu đã đầu tư nhiều năm thời gian nghiên cứu về hang động. Bẫy: 'conducted' (A) đi với 'research' trực tiếp chứ không đi với cụm chỉ thời gian kiểu 'years of research time'. 'done' (B) và 'made' (D) không tạo thành collocation tự nhiên. Chuyên đề: Collocations — invest + time.",
+              "answerLocation": "departments around the world have invested years of research time",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. constituent",
+                "B. compartment",
+                "C. complement",
+                "D. component"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Danh từ 'component' nghĩa là 'thành phần cấu thành / bộ phận'. Hang động là một bộ phận nhỏ nhưng huyền bí của môi trường tự nhiên. Bẫy: 'constituent' (A) = cử tri / thành phần cấu tạo hóa học. 'compartment' (B) = ngăn tủ / khoang tàu. 'complement' (C) = phần bổ sung. Chuyên đề: Vocabulary — component. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Caves constitute a small but rather mysterious component of the natural",
+              "category": "cpe_part_1",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t4-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 9-16, read the text below and think of the word which best fits each space. Use only one word in each space. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Animal Imprinting</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Imprinting is a learning mechanism (0) <b>which</b> occurs early in the life of certain animals. (9) ______ is through this process that they develop a positive attachment (10) ______ members of their own species. No (11) ______ do young birds hatch than they must learn to recognise their mother in (12) ______ to be able to follow and keep close to her for their own safety. (13) ______ this process go wrong, newly-hatched chicks (14) ______ the risk of becoming lost, and may (15) ______ to harm. (16) ______ that they possess a high level of mobility, it would be difficult for the mother to keep the chicks together without the assistance of imprinting.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t4-rg-2",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t4-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "It"
+                ],
+                [
+                  "it"
+                ]
+              ],
+              "correctAnswer": "It",
+              "explanation": "Đáp án 'It'. Cấu trúc câu chẻ nhấn mạnh: 'It is through this process that they develop...' (Chính là thông qua quá trình này mà chúng phát triển...). Chuyên đề: Cleft sentences.",
+              "answerLocation": "It is through this process that they",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "to"
+                ]
+              ],
+              "correctAnswer": "to",
+              "explanation": "Đáp án 'to'. Danh từ + giới từ cố định: 'attachment to someone/something' nghĩa là 'sự gắn bó / sự quyến luyến với ai/cái gì'. Chuyên đề: Noun + preposition.",
+              "answerLocation": "develop a positive attachment to members",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "sooner"
+                ]
+              ],
+              "correctAnswer": "sooner",
+              "explanation": "Đáp án 'sooner'. Đảo ngữ thời gian đi kèm so sánh: 'No sooner + trợ động từ + S + V + than...' nghĩa là 'Ngay khi / Vừa mới... thì đã...'. Ngay khi chim non nở ra chúng đã phải học cách nhận diện mẹ. Chuyên đề: Inversion — no sooner.",
+              "answerLocation": "No sooner do young birds hatch than",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "order"
+                ]
+              ],
+              "correctAnswer": "order",
+              "explanation": "Đáp án 'order'. Cấu trúc chỉ mục đích đi kèm động từ nguyên mẫu: 'in order to + V-inf' = để làm gì. Nhận diện chim mẹ để có thể đi theo và ở gần mẹ. Chuyên đề: Conjunctions — purpose.",
+              "answerLocation": "recognise their mother in order to be",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "Should"
+                ],
+                [
+                  "should"
+                ]
+              ],
+              "correctAnswer": "Should",
+              "explanation": "Đáp án 'Should' hoặc 'should'. Đảo ngữ câu điều kiện loại 1 đứng đầu mệnh đề phụ: 'Should this process go wrong...' (= If this process should go wrong / If this process goes wrong). Nếu quy trình này chệch hướng... Chuyên đề: Conditionals — inversion.",
+              "answerLocation": "Should this process go wrong, newly-hatched",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "run"
+                ],
+                [
+                  "face"
+                ]
+              ],
+              "correctAnswer": "run",
+              "explanation": "Đáp án 'run' hoặc 'face'. Collocation cố định: 'run/face the risk of doing something' nghĩa là 'gặp phải / đối mặt với nguy cơ làm gì'. Ở đây chỉ nguy cơ chim non bị lạc. Chuyên đề: Collocations — run/face the risk.",
+              "answerLocation": "newly-hatched chicks run the risk of",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "come"
+                ]
+              ],
+              "correctAnswer": "come",
+              "explanation": "Đáp án 'come'. Idiom cố định: 'come to harm' nghĩa là 'bị tổn hại / gặp nguy hiểm'. Chim non có thể bị tổn hại nếu quy trình nhận diện mẹ bị lỗi. Chuyên đề: Idioms — come to harm.",
+              "answerLocation": "becoming lost, and may come to harm",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16):",
+              "acceptedAnswers": [
+                [
+                  "Given"
+                ],
+                [
+                  "given"
+                ]
+              ],
+              "correctAnswer": "Given",
+              "explanation": "Đáp án 'Given' hoặc 'given'. Giới từ/Liên từ chỉ nguyên nhân/giả thuyết: 'Given that + clause' nghĩa là 'Xét đến việc / Do thực tế là...'. Xét đến việc chim non có tính di động cao. Chuyên đề: Conjunctions — given that.",
+              "answerLocation": "Given that they possess a high level",
+              "category": "cpe_part_2",
+              "source": "Page 101, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t4-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line. There is an example at the beginning (0).",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Every Time We Say Goodbye</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>According to research by (0) <b>psychologists</b> [PSYCHOLOGY], one can learn a great deal about the state of people’s relationships by watching how they say goodbye at airports. However, it seems that it is not (17) ______ [NECESSARY] those in the strongest relationships who make the greatest display of (18) ______ [RELUCTANT] at parting. Such behaviour is more (19) ______ [CHARACTER] of couples who have been together for a relatively short period of time. There is less (20) ______ [LIKELY] of people in long-term relationships showing strong feelings of dependency. This may seem surprising but it is (21) ______ [PRESUME] because the people have been successful in establishing stability in their relationship and are able to see the separation as brief and of no great (22) ______ [SIGNIFY]. The expression of emotion at these moments may often reflect (23) ______ [SECURE] and also the feeling that the person leaving is not fully (24) ______ [APPRECIATE] of just how important the relationship is.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t4-rg-3",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-cpe1-t4-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17):",
+              "acceptedAnswers": [
+                [
+                  "necessarily"
+                ]
+              ],
+              "correctAnswer": "necessarily",
+              "explanation": "Đáp án 'necessarily'. Cần trạng từ phủ định bổ nghĩa cho mệnh đề: 'it is not necessarily those...' (không nhất thiết phải là những người...). Từ gốc NECESSARY (cần thiết) -> necessarily. Chuyên đề: Word formation — adverbs.",
+              "answerLocation": "it is not necessarily those in the",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18):",
+              "acceptedAnswers": [
+                [
+                  "reluctance"
+                ]
+              ],
+              "correctAnswer": "reluctance",
+              "explanation": "Đáp án 'reluctance'. Cần danh từ sau giới từ 'of': 'display of reluctance' (biểu hiện của sự ngần ngại / lưu luyến không muốn rời đi). Từ gốc RELUCTANT (ngần ngại) -> reluctance. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "make the greatest display of reluctance at",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19):",
+              "acceptedAnswers": [
+                [
+                  "characteristic"
+                ]
+              ],
+              "correctAnswer": "characteristic",
+              "explanation": "Đáp án 'characteristic'. Cần tính từ làm vị ngữ sau động từ to be và đi với giới từ 'of': 'be characteristic of someone/something' (đặc trưng / điển hình cho ai/cái gì). Từ gốc CHARACTER (tính cách) -> characteristic. Chuyên đề: Word formation — adjectives.",
+              "answerLocation": "behaviour is more characteristic of couples who",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20):",
+              "acceptedAnswers": [
+                [
+                  "likelihood"
+                ]
+              ],
+              "correctAnswer": "likelihood",
+              "explanation": "Đáp án 'likelihood'. Cần danh từ đứng sau từ chỉ lượng 'less' làm chủ ngữ chính của mệnh đề: 'less likelihood of people...' (ít có khả năng người ta...). Từ gốc LIKELY (có khả năng) -> likelihood. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "There is less likelihood of people in",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21):",
+              "acceptedAnswers": [
+                [
+                  "presumably"
+                ]
+              ],
+              "correctAnswer": "presumably",
+              "explanation": "Đáp án 'presumably'. Cần trạng từ làm thành phần chèn bổ nghĩa sau động từ to be 'is': 'it is presumably because...' (điều này có lẽ là vì...). Từ gốc PRESUME (cho là/đoán là) -> presumably. Chuyên đề: Word formation — adverbs.",
+              "answerLocation": "surprising but it is presumably because the",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22):",
+              "acceptedAnswers": [
+                [
+                  "significance"
+                ]
+              ],
+              "correctAnswer": "significance",
+              "explanation": "Đáp án 'significance'. Cần danh từ đi sau tính từ 'great': 'of no great significance' (không có tầm quan trọng hay ý nghĩa lớn lao gì). Từ gốc SIGNIFY (mang ý nghĩa) -> significance. Chuyên đề: Word formation — nouns.",
+              "answerLocation": "brief and of no great significance",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23):",
+              "acceptedAnswers": [
+                [
+                  "insecurity"
+                ]
+              ],
+              "correctAnswer": "insecurity",
+              "explanation": "Đáp án 'insecurity'. Cần danh từ làm tân ngữ song song với 'feeling' đứng sau động từ 'reflect': 'reflect insecurity' (phản ánh sự bất an / cảm giác không an toàn). Từ gốc SECURE (an toàn) -> insecurity (sự bất an). Chuyên đề: Word formation — nouns.",
+              "answerLocation": "moments may often reflect insecurity and",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24):",
+              "acceptedAnswers": [
+                [
+                  "appreciative"
+                ]
+              ],
+              "correctAnswer": "appreciative",
+              "explanation": "Đáp án 'appreciative'. Cần tính từ đứng sau trạng từ 'fully' làm vị ngữ bổ nghĩa cho 'is not fully appreciative of...' (không hoàn toàn nhận thức/trân trọng giá trị của...). Từ gốc APPRECIATE (trân trọng) -> appreciative. Chuyên đề: Word formation — adjectives.",
+              "answerLocation": "leaving is not fully appreciative of just",
+              "category": "cpe_part_3",
+              "source": "Page 102, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t4-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<p class='text-slate-700 italic mb-4'>Ví dụ: Do you mind if I watch you while you paint?<br><b>objection</b><br>Do you <u>have any objection to my watching</u> you while you paint?</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t4-rg-4",
+          "instruction": "Write the missing words only.",
+          "questions": [
+            {
+              "id": "q-cpe1-t4-25",
+              "type": "gap_fill",
+              "blankIndex": 25,
+              "instruction": "Many people believe that all cats have tails, but they're wrong. (popular) -> Contrary ______ cats have tails.",
+              "acceptedAnswers": [
+                [
+                  "to popular belief, not all"
+                ],
+                [
+                  "to popular belief not all"
+                ],
+                [
+                  "to a popular belief, not all"
+                ],
+                [
+                  "to the popular belief, not all"
+                ]
+              ],
+              "correctAnswer": "to popular belief, not all",
+              "explanation": "Đáp án 'to popular belief, not all' / 'to a/the popular belief, not all'. Cấu trúc giới từ đối lập: 'Contrary to popular belief' = Ngược lại với niềm tin phổ biến. Phải đi kèm cụm 'not all' chỉ một phần đối lập ('không phải tất cả con mèo...'). Chuyên đề: Prepositional phrases.",
+              "answerLocation": "to (a/the) popular belief (1) + not all (1)",
+              "category": "cpe_part_4",
+              "source": "Page 105, Question 32, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-26",
+              "type": "gap_fill",
+              "blankIndex": 26,
+              "instruction": "Alan was not a confident person, and that was why he was so shy. (due) -> Alan’s ______ of confidence.",
+              "acceptedAnswers": [
+                [
+                  "shyness was due to a lack"
+                ],
+                [
+                  "shyness was due to his lack"
+                ],
+                [
+                  "shyness was due to the lack"
+                ]
+              ],
+              "correctAnswer": "shyness was due to a lack",
+              "explanation": "Đáp án 'shyness was due to a/his lack'. Đổi cấu trúc nguyên nhân kết quả: 'due to something' = bởi vì cái gì. Cần chuyển danh từ 'shyness' làm chủ ngữ đi với động từ to be 'was' đứng trước 'due to'. Chuyên đề: Cause and effect.",
+              "answerLocation": "shyness was due to (1) + (a/his) lack (1)",
+              "category": "cpe_part_4",
+              "source": "Page 105, Question 33, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-27",
+              "type": "gap_fill",
+              "blankIndex": 27,
+              "instruction": "‘I can't believe it — I've just come into £10,000!’ James shouted. (luck) -> James couldn't ______ £10,000.",
+              "acceptedAnswers": [
+                [
+                  "believe his luck when he"
+                ],
+                [
+                  "believe his good luck when he"
+                ]
+              ],
+              "correctAnswer": "believe his luck when he",
+              "explanation": "Đáp án 'believe his luck when he'. Idiom: 'cannot believe one's luck' = không tin vào sự may mắn của bản thân. Đi cùng liên từ thời điểm 'when' dẫn dắt mệnh đề quá khứ đơn 'he came into £10,000'. Chuyên đề: Idioms & Conjunctions.",
+              "answerLocation": "believe his luck (1) + when he (NOT had) (1)",
+              "category": "cpe_part_4",
+              "source": "Page 105, Question 34, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-28",
+              "type": "gap_fill",
+              "blankIndex": 28,
+              "instruction": "They weren't getting anywhere until John had a bright idea. (came) -> They were getting ______ a bright idea.",
+              "acceptedAnswers": [
+                [
+                  "nowhere until John came up with"
+                ],
+                [
+                  "nowhere but then John came up with"
+                ],
+                [
+                  "nowhere then John came up with"
+                ]
+              ],
+              "correctAnswer": "nowhere until John came up with",
+              "explanation": "Đáp án 'nowhere until / but then John came up with'. Đổi từ dạng phủ định 'weren't getting anywhere' thành khẳng định 'were getting nowhere'. Phrasal verb: 'come up with' = nảy ra, nghĩ ra (một ý tưởng sáng suốt). Chuyên đề: Phrasal verbs — come up with. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "nowhere (1) + until / but then / then John came up with (1)",
+              "category": "cpe_part_4",
+              "source": "Page 106, Question 35, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-29",
+              "type": "gap_fill",
+              "blankIndex": 29,
+              "instruction": "If you don’t know what you're doing, you shouldn't dismantle the clock. (apart) -> Don't ______ you know what you’re doing.",
+              "acceptedAnswers": [
+                [
+                  "take the clock apart unless"
+                ]
+              ],
+              "correctAnswer": "take the clock apart unless",
+              "explanation": "Đáp án 'take the clock apart unless'. Phrasal verb: 'take something apart' = tháo rời cái gì ra. Liên từ điều kiện phủ định: 'unless' = ngoại trừ khi / nếu không (= if... not). Chuyên đề: Phrasal verbs & Conditionals. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "take the clock apart (1) + unless (1)",
+              "category": "cpe_part_4",
+              "source": "Page 106, Question 37, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-30",
+              "type": "gap_fill",
+              "blankIndex": 30,
+              "instruction": "Jane will always regret not accepting the opportunity to go to drama school. (turned) -> Jane will always wish that ______ opportunity to go to drama school.",
+              "acceptedAnswers": [
+                [
+                  "she had not turned down the"
+                ],
+                [
+                  "she hadn't turned down the"
+                ]
+              ],
+              "correctAnswer": "she had not turned down the",
+              "explanation": "Đáp án 'she had not / hadn’t turned down the'. Cấu trúc ước trái thực tế quá khứ: 'wish + S + had + V3/ed'. Phrasal verb: 'turn down' = từ chối (một cơ hội/lời đề nghị). Chuyên đề: Wish clauses & Phrasal verbs.",
+              "answerLocation": "she had not / hadn’t (1) + turned down (1)",
+              "category": "cpe_part_4",
+              "source": "Page 106, Question 39, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t4-sec-5",
+      "title": "Part 5: Multiple Choice Reading",
+      "instructions": "For questions 31-36, read the text below and choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>Music and Theatre</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Up until quite recently, I would have said that opera is first and foremost theatre. Not any more. After a brief spell working at a national opera house, I learned that opera is, in fact, only secondly theatre. The music comes first. That’s as it should be, of course. But I come from a different world, the world of the theatre, where the word and the actor speaking it have primacy, where there is nobody out front directing the action once the event is under way, and where performer and audience (mostly) speak the same language.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>At any musical performance, whether in concert hall or opera house, there will generally be a substantial minority of people who, like me, have little technical or academic understanding of music. Some of them will be aware of, possibly even embarrassed by, how much they don’t know. Most will be awestruck by the skill of the performers. A dazzling coloratura or an impeccable string section are easy to admire. Even a moderately good musician is showing us the results of years of punishingly hard work. Being in the audience for top-class music is not unlike watching an athletics match — we know athletes are doing something broadly similar to what we do when running for a bus, but we also recognise by how much it exceeds our best efforts.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Theatre audiences by contrast, come with a different set of expectations. In the main they do not understand the nature of an actor's skill and are not particularly awed by an activity which, a lot of the time, appears to be very close to what they could do themselves. They are not usually impressed when an actor completes a long and difficult speech (although ‘how do you learn all those lines?’ is the question every actor gets asked). None of this means that theatre audiences are more generous or less demanding than their counterparts in the concert hall; indeed quite a lot of them are the same people. What perhaps it does mean is that audiences and performer meet on more equal terms in the theatre than elsewhere, no matter how challenging the material or spectacular the event. The question is, does music need to learn anything from the theatre about this relationship? I would say yes, partly because I have seen how a different approach can transform the concert-goer’s experience.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Music in live performance is inherently theatrical, full of passion, humour, melancholy, intimacy, grandeur; vulnerable to the possibility that something will go unexpectedly wrong, reaching into the imagination of the listener not just as an individual but as part of a collective. The conventions which still largely dominate music presentation, including strict dress codes and an exaggerated deference to the status of conductors and soloists, emphasise the difference between players and listeners in a way which often feels uncomfortably hierarchical. On the other hand, the tendency of contemporary music audiences to interrupt the momentum of performance by applauding between movements or after a particular piece of virtuosity, while it is often a spontaneous expression of appreciation, can also be insensitive to the dramatic integrity of the whole work.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Is there anything to be done? Of course a huge amount is being done. Pioneering work is going on all over the country to encourage new audiences into concert halls and opera houses, and to break down the barriers that make people feel that ‘serious’ music is not for them. I remember a remarkable event, the staging of Jonathan Dove’s community opera In Search of Angels, which followed the action from location to location within a cathedral and then out into the town. It was a musical experience of the highest order, in which the skills, and the generosity, of the professional musicians were absolutely central and it was also life-changing for many of the audience, who were not just there to see and hear but also to contribute directly.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Perhaps what I yearn for in music is a bit more of the risk and radicalism that theatre at its best can display. Sometimes it can come from the use of unfamiliar or challenging locations, where normal expectations are disrupted. This can have startling effects on performer and audience alike. Comforts may have to be foregone; perhaps the acoustic isn’t great, maybe it's a bit cold, but theatre audiences have learned to be intrepid as they follow artists into the most unpromising spaces. I accept that most plays get put on in a pretty uncontroversial way, not greatly different from what happens in a concert hall. However I remain convinced that something can and should happen to change the conventions of music-going. The only authority I can claim is that of the enthusiast: I love, and live by, the theatre and I spend as much time (and money) as I can going to hear music. I want them both to thrive, and for more and more people to get the pleasure I get from being the audience.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t4-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe1-t4-31",
+              "type": "multiple_choice",
+              "instruction": "What does the writer imply in the first paragraph?",
+              "options": [
+                "A. She finds opera difficult to appreciate.",
+                "B. She recognises some shortcomings of the theatre.",
+                "C. She has re-evaluated her view of opera.",
+                "D. She is reluctant to change her view of the theatre."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở đầu đoạn 1, tác giả bày tỏ: 'Up until quite recently, I would have said that opera is first and foremost theatre. Not any more.' (Cho đến gần đây, tôi từng nói rằng opera trước hết là kịch nghệ. Không còn như thế nữa). Lời khẳng định này chứng tỏ cô đã đánh giá lại quan điểm của mình về nhạc kịch opera. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "Up until quite recently, I would have said that opera is first and foremost theatre. Not any more.",
+              "category": "cpe_part_5",
+              "source": "Page 97, Question 34, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-32",
+              "type": "multiple_choice",
+              "instruction": "The writer says that a significant number of people who attend musical performances may",
+              "options": [
+                "A. lack her specialist knowledge.",
+                "B. have a sense of inadequacy.",
+                "C. be unimpressed by the musicians’ talent.",
+                "D. make no attempts to engage with the music."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Ở đoạn 2, tác giả quan sát một bộ phận khán giả đi nghe nhạc: 'Some of them will be aware of, possibly even embarrassed by, how much they don’t know.' (Một số người trong số họ sẽ nhận thức được, thậm chí cảm thấy xấu hổ vì họ không biết quá nhiều). Cảm xúc bối rối/xấu hổ này chính là cảm giác bất toàn/không đủ năng lực (a sense of inadequacy). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "Some of them will be aware of, possibly even embarrassed by, how much they don’t know.",
+              "category": "cpe_part_5",
+              "source": "Page 97, Question 35, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-33",
+              "type": "multiple_choice",
+              "instruction": "What point is exemplified by the reference to athletes in the second paragraph?",
+              "options": [
+                "A. Musicians have to train for longer than athletes.",
+                "B. Athletes find performing in public demanding.",
+                "C. Audiences recognise the particular talent of the musicians.",
+                "D. It is harder to become an athlete than a musician."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Ở cuối đoạn 2, phép so sánh với vận động viên nhằm chỉ ra: 'we know athletes are doing something broadly similar to what we do... but we also recognise by how much it exceeds our best efforts.' (chúng ta biết vận động viên đang làm điều tương tự như ta làm... nhưng ta cũng nhận ra nó vượt xa nỗ lực tốt nhất của ta thế nào). Điều này minh chứng khán giả nhận thức rõ tài năng đặc biệt của các nghệ sĩ âm nhạc. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "we also recognise by how much it exceeds our best efforts.",
+              "category": "cpe_part_5",
+              "source": "Page 97, Question 36, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-34",
+              "type": "multiple_choice",
+              "instruction": "What does the writer say about theatre audiences?",
+              "options": [
+                "A. Their assumptions are different from concert audiences.",
+                "B. They regard the actor's technique as crucial.",
+                "C. Their appraisal of performances is realistic.",
+                "D. They are less critical than concert audiences."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Tác giả chỉ ra sự khác biệt lớn ở đầu đoạn 3: 'Theatre audiences by contrast, come with a different set of expectations.' (Khán giả kịch nghệ ngược lại, đến với một tập hợp kỳ vọng hoàn toàn khác biệt). Điều này cho thấy giả định/kỳ vọng của họ rất khác so với khán giả nghe hòa nhạc. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "Theatre audiences by contrast, come with a different set of expectations.",
+              "category": "cpe_part_5",
+              "source": "Page 98, Question 37, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-35",
+              "type": "multiple_choice",
+              "instruction": "What is the writer’s attitude towards the conventions surrounding musical performance?",
+              "options": [
+                "A. It is unreasonable to expect instant changes.",
+                "B. They enable the audience to show respect for the performers.",
+                "C. It is important to retain some traditions.",
+                "D. They can result in a feeling of divisiveness."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Tác giả phê phán các nghi lễ cổ điển: 'strict dress codes and an exaggerated deference... emphasise the difference between players and listeners in a way which often feels uncomfortably hierarchical.' (các quy tắc ăn mặc khắt khe và sự tôn kính thái quá... nhấn mạnh sự khác biệt giữa người chơi và người nghe theo cách thường mang lại cảm giác phân cấp khó chịu). Điều này tạo ra cảm giác xa cách/phân cấp rõ rệt (divisiveness). Chuyên đề: Reading Comprehension.",
+              "answerLocation": "emphasise the difference between players and listeners in a way which often feels uncomfortably hierarchical.",
+              "category": "cpe_part_5",
+              "source": "Page 98, Question 38, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-36",
+              "type": "multiple_choice",
+              "instruction": "What was it about the staging of In Search of Angels that impressed the writer?",
+              "options": [
+                "A. the size of the auditorium",
+                "B. the absence of commercial motivation",
+                "C. the composition of the audience",
+                "D. the opportunity for audience participation"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Tác giả ca ngợi buổi biểu diễn cộng đồng này: 'it was also life-changing for many of the audience, who were not just there to see and hear but also to contribute directly.' (nó cũng làm thay đổi cuộc sống của nhiều khán giả, những người không chỉ ở đó để xem và nghe mà còn để đóng góp trực tiếp). Tức là họ được trao cơ hội tham gia trực tiếp. Chuyên đề: Reading Comprehension.",
+              "answerLocation": "many of the audience, who were not just there to see and hear but also to contribute directly.",
+              "category": "cpe_part_5",
+              "source": "Page 98, Question 39, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t4-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "For questions 37-43, read the text below. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap (37-43). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>Bradshaw Rock Paintings</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>All eyes are on the shaman: arms outstretched, head back, her face hidden behind a mask. She wears a long, tapering cap, and clutches a short wand in each hand. There are tassels at her hips and elbows, and these jump as she begins to move. The crowd around her watches, spellbound, as she embarks upon her journey to the spirit world.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 37 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The suggestion that this rock art may be the oldest known depiction of a shamanistic ritual comes from a group of researchers led by Per Michaelsen, a geologist at James Cook University in Queensland. They argue that these ancient paintings may represent not only early religious practices but perhaps also a cultural heritage common to all humans. Such daring new theories do not go down well with the rock art establishment. But regardless of which ideas prevail, the controversy is certain to attract attention to an astonishing record of a vanished people.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 38 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Michaelsen estimates that there may be as many as 100,000 Bradshaw 'galleries' tucked under rock overhangs along the region's major river systems. Many of the paintings have never been studied. But observations made by other researchers over the past few decades reveal several distinct artistic styles. Researchers recognise at least four major periods which they can place in chronological order by looking at patterns of weathering and instances where one style is superimposed upon another.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 39 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The subjects' dress changes over time, as does the style of the paintings themselves. The next oldest figures are notable for the sashes around their midriffs. These sash figures still have armbands, but not the prominent tassels.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 40 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>There are also so-called elegant action figures of people running and hunting, which are difficult to date because none is superimposed on a painting from another period. However, the abstract style suggests that they were created some time after the tassel and sash figures.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 41 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>In 1997, a group led by Richard Roberts, now at the University of Melbourne, used a technique known as luminescence dating to assign a minimum age of 17,000 years to one of the younger paintings. The second study, also published in 1997, used radiocarbon dating and came up with a much younger estimate: about 4,000 years. Its author, Alan Watchman, believes the Bradshaw culture might date back from between 5,000 and 6,000 years, but rejects the idea that it could be 17,000 years old or more.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 42 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Either way, the Bradshaw people were not the original inhabitants of the Kimberley. Their paintings have little in common with the crudely rendered animals of the region's oldest art. Archaeological evidence suggests the first settlers of the Kimberley arrived at least 40,000 years ago. They would have found a region of open tropical forest and woodlands where they seem to have flourished for 10,000 years. Then things began to change.</p><div class='my-6 p-4 bg-emerald-50/50 border-emerald-200 rounded-lg text-slate-700 font-bold text-center'>[ Gap 43 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Intriguingly, one of the Bradshaw paintings shows a boat with upswept prow and stern, and multiple paddlers. It raises the possibility that the artists were originally a seafaring people. The idea that the Bradshaw people came from Indonesia or further afield has a long pedigree in Australian anthropology, but there is no hard evidence to support it.</p>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t4-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap (37-43).",
+          "questions": [
+            {
+              "id": "q-cpe1-t4-37",
+              "type": "gapped_text",
+              "instruction": "Gap (37):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn văn trước miêu tả sống động cảnh bà đồng (shaman) làm phép giăng tay giăng hip. Đoạn H mở đầu hoàn hảo bằng phản hồi ý nghĩa: 'That is one possible interpretation of a scene recorded...' (Đó là một diễn giải khả thi cho cảnh quay được ghi lại...). Chuyên đề: Gapped Text.",
+              "answerLocation": "embarks upon her journey to the spirit world. That is one possible interpretation of a scene recorded",
+              "category": "cpe_part_6",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-38",
+              "type": "gapped_text",
+              "instruction": "Gap (38):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Đoạn văn trước nhắc đến những bức tranh đá và khu vực Bradshaw. Đoạn E giới thiệu lai lịch và tên gọi của những bức tranh này: 'The Bradshaws, as the paintings are collectively known, were first noted... found in a region known as the Kimberley...'. Chuyên đề: Gapped Text.",
+              "answerLocation": "astonishing record of a vanished people. The Bradshaws, as the paintings are collectively known, were first noted",
+              "category": "cpe_part_6",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-39",
+              "type": "gapped_text",
+              "instruction": "Gap (39):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án F. Đoạn văn tiếp theo mô tả sự thay đổi trang phục của chủ thể: 'The subjects' dress changes over time...'. Đoạn F mô tả cụ thể về giai đoạn tranh cổ nhất và lớn nhất với tên gọi tranh tua rua ('tasseled figures'): 'The oldest and largest paintings... known as the tasseled figures... ceremonial dress.'. Chuyên đề: Gapped Text.",
+              "answerLocation": "superimposed upon another. The oldest and largest paintings, which are up to 1.7 metres tall, are known as the tasseled figures.",
+              "category": "cpe_part_6",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-40",
+              "type": "gapped_text",
+              "instruction": "Gap (40):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn tiếp theo đề cập đến việc xác định niên đại bằng hai nghiên cứu năm 1997: 'In 1997, a group led by Richard Roberts...'. Đoạn G giới thiệu về chi tiết văn hóa vật chất của người Bradshaw nhưng nhấn mạnh việc không ai biết chính xác niên đại của chúng: 'All these paintings provide a wealth of detail... Only two groups have attempted to date...'. Chuyên đề: Gapped Text.",
+              "answerLocation": "elegant action figures... created some time after the tassel and sash figures. All these paintings provide a wealth of detail",
+              "category": "cpe_part_6",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-41",
+              "type": "gapped_text",
+              "instruction": "Gap (41):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn văn trước thảo luận về hai kết quả niên đại mâu thuẫn dữ dội (17,000 năm vs 4,000 năm). Đoạn A mở đầu bằng việc giải thích nguyên nhân tranh cãi và sự kiên trì bảo lưu kết quả của cả hai nhà nghiên cứu: 'Both researchers stand by their results...'. Chuyên đề: Gapped Text.",
+              "answerLocation": "could not be 17,000 years old or more. Both researchers stand by their results. Roberts suspects",
+              "category": "cpe_part_6",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-42",
+              "type": "gapped_text",
+              "instruction": "Gap (42):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn văn trước nói về giả thuyết bà đồng shaman của Per Michaelsen gây tranh cãi: 'the controversy is certain to attract attention...'. Đoạn D tiếp tục thể hiện sự nghi ngờ dữ dội của giới khảo cổ lão làng: 'The others are skeptical. Grahame Walsh... is critical of the newcomers' lack of experience.'. Chuyên đề: Gapped Text.",
+              "answerLocation": "astonishing record of a vanished people. The others are skeptical. Grahame Walsh, author of",
+              "category": "cpe_part_6",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-43",
+              "type": "gapped_text",
+              "instruction": "Gap (43):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Đoạn văn trước kết luận việc biến đổi môi trường: 'Then things began to change.'. Đoạn C mở đầu bằng tác động của Kỷ Băng Hà: 'The Ice Age brought cooler temperatures... lower rainfall... sea level dropped...' giải thích môi trường thay đổi và tạo ra đất liền kết nối các châu lục. Chuyên đề: Gapped Text.",
+              "answerLocation": "Then things began to change. The Ice Age brought cooler temperatures, strong winds and lower rainfall",
+              "category": "cpe_part_6",
+              "source": "Page 88, Test 4, Cambridge CPE 1",
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Both researchers stand by their results. Roberts suspects that Watchman's radiocarbon samples might have been contaminated by traces of younger carbon. Watchman thinks that the painting dated by Roberts was, in fact, pre-Bradshaw. Despite their differences of opinion, the two are currently working together and expect to present new results before the end of the year."
+            },
+            {
+              "label": "B",
+              "text": "Younger than the sash and tasseled figures, the clothes-peg figures are much more highly stylised. The older paintings tend to show profiles, but these are frontal portraits. Gone is the anatomical detail, and many figures assume aggressive stances and carry multi-barbed spears and spear throwers."
+            },
+            {
+              "label": "C",
+              "text": "The Ice Age brought cooler temperatures, strong winds and lower rainfall to northern Australia. The sea level dropped, and at times, during the glacial maximum, it was up to 140 metres below its present level. The coastline was as much as 400 kilometres further to the north-west. Australia was connected by land to New Guinea and separated from Southeast Asia by just a narrow channel. Could the Bradshaw culture have arrived in Australia at this time?"
+            },
+            {
+              "label": "D",
+              "text": "The others are skeptical. Grahame Walsh, author of the most comprehensive book on the Bradshaws to date, is critical of the newcomers' lack of experience. He says that there are many people beginning to enter the Kimberley rock art scene and set themselves up as experts. He has so far found nothing that indicates shamanism and warns that one has to be extremely cautious in attempting to link such prehistoric art with comparatively modern art in distant countries."
+            },
+            {
+              "label": "E",
+              "text": "The Bradshaws, as the paintings are collectively known, were first noted by Europeans in 1891 and take their name from Joseph Bradshaw, the rancher who described them. They are found in a region known as the Kimberley, a remote place even by Australian standards. It is a rugged sandstone landscape of plunging canyons and treacherous swamps."
+            },
+            {
+              "label": "F",
+              "text": "The oldest and largest paintings, which are up to 1.7 metres tall, are known as the tasseled figures. They are the most realistic of the images and show figures in static poses in what appears to be ceremonial dress. The figures are characterised by tassels attached to the upper arms, elbows, hips and knees."
+            },
+            {
+              "label": "G",
+              "text": "All these paintings provide a wealth of detail about the material culture of the Bradshaw people. Yet, despite this, nobody knows when the Bradshaw culture developed or where it came from. Only two groups have attempted to date the paintings directly, and their results are widely different."
+            },
+            {
+              "label": "H",
+              "text": "That is one possible interpretation of a scene recorded thousands of years ago on a remote rocky outcrop in north-west Australia. The painting is part of a vast collection that opens a window on an ancient, hunter-gatherer society that may date back to the last ice age. Despite the quality and extent of this record, much about the paintings remains a mystery. Who were the artists? When were the paintings done - and what did they mean?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cam-cpe1-t4-sec-7",
+      "title": "Part 7: Multiple Matching",
+      "instructions": "For questions 44-53, read the five academic perspectives on the evolutionary roots and cognitive architectures of music and language below and choose the correct perspective (A-E) which fits each statement. You may choose a perspective more than once.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>The Evolutionary Roots and Cognitive Architectures of Music and Language</h2><div class='mb-6 text-slate-800 text-base leading-relaxed text-left'><p class='mb-4'><b>A. Prof. Evelyn Carter (Neuroaestheticist)</b><br>To fully comprehend human expression, we must recognize that music and language are twin cognitive architectures that split from a single 'musilanguage' precursor in early hominid history. Live performances trigger massive neural synchronization across audiences, fostering a deep evolutionary connection. At a live concert, the emotional spontaneity and raw expression cannot be captured by studio recordings. While recording seeks to eliminate all minor flaws, it also eliminates the human spark that makes performance great. By hyper-synthesizing and polishing music in studio conditions, we detach it from its evolutionary, communal roots.</p><p class='mb-4'><b>B. Dr. Liam Sterling (Musicologist & Performance Theorist)</b><br>The magic of music lies not in its digital replication, but in the vulnerable, immediate interaction between performers and audience in live settings. A performer’s peculiar temperament or solitary personality is laid bare on stage, exposed to immediate judgment. More than one interpretation of a musical score is always possible, and the audience's real-time physical reaction forces the musicians to adapt their tempo and inflection in a dynamic feedback loop. This intense physical and psychological feedback loop makes the listeners active co-creators of the musical event, an experience that a passive, one-way digital stream can never replicate.</p><p class='mb-4'><b>C. Dr. Marcus Vance (Cognitive Psychologist)</b><br>Our brain processes minor imperfections in live music in a fascinating way. During a live concert, listeners are frequently completely oblivious to minor flaws or technical mistakes because they are swept up in the intense emotional atmosphere and the physical charisma of the players. In stark contrast, listening to highly polished, error-free studio recordings makes us hyper-aware of any tiny imperfection. This results in a sterile, hyper-critical, and over-sanitized appreciation of art, where we value absolute clinical precision over raw emotional delivery.</p><p class='mb-4'><b>D. Prof. Clara Dupont (Social Anthropologist)</b><br>The cultural rituals of concert-going are highly structured. In classical auditoriums, strict dress codes and quiet reverence are enforced, which often create a feeling of hierarchical divisiveness between players and listeners. However, in intimate live performances, these barriers dissolve. By observing the performer's facial expressions, physical gestures, and vulnerable body language in real-time, we get a profound feel for their personality and vulnerable human presence. This visual and somatic connection is completely missing in digital streaming, which reduces the rich, multi-dimensional ritual of music to a simple acoustic product.</p><p class='mb-4'><b>E. Dr. Arthur Pendelton (Acoustic Engineer & Philosopher of Music)</b><br>Live music is inherently vulnerable to the acoustic challenges of raw, unpromising spaces, but it is precisely this unpredictability that drives artistic innovation. A performer who is not distracted by the environment or minor acoustic flaws, but instead uses the raw echoes of a cathedral or a cold sandstone cavern to enhance the performance, achieves a level of transcendent greatness. Rather than demanding absolute silence and soundproof studio isolation, we should celebrate the unpredictable friction between the environment, the instrument, and the artist.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cam-cpe1-t4-rg-7",
+          "instruction": "Choose the correct letter, A, B, C, D or E.",
+          "questions": [
+            {
+              "id": "q-cpe1-t4-44",
+              "type": "multiple_matching",
+              "instruction": "Which academic argues that studio recordings, by trying to eliminate minor flaws, risk losing the human spark that makes music great?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Prof. Evelyn Carter chỉ ra rằng mặc dù ghi âm cố gắng loại bỏ tất cả các lỗi nhỏ, nó cũng loại bỏ đốm lửa nhân bản làm cho màn biểu diễn trở nên tuyệt vời ('While recording seeks to eliminate all minor flaws, it also eliminates the human spark that makes performance great'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "While recording seeks to eliminate all minor flaws, it also eliminates the human spark that makes performance great",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-45",
+              "type": "multiple_matching",
+              "instruction": "Which academic highlights that live audiences are often oblivious to minor technical errors due to the emotional intensity of the performance?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Dr. Marcus Vance lưu ý khán giả thường hoàn toàn không để ý đến các lỗi nhỏ kỹ thuật khi bị cuốn vào bầu không khí cảm xúc mãnh liệt ('listeners are frequently completely oblivious to minor flaws... swept up in the intense emotional atmosphere'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "listeners are frequently completely oblivious to minor flaws or technical mistakes because they are swept up",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-46",
+              "type": "multiple_matching",
+              "instruction": "Which academic notes that a performer's solitary personality and peculiar temperament are exposed during live stage performances?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Liam Sterling chỉ ra cá tính cô độc và tính khí đặc biệt của nghệ sĩ biểu diễn bị phơi bày hoàn toàn trên sân khấu ('A performer’s peculiar temperament or solitary personality is laid bare on stage'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "A performer’s peculiar temperament or solitary personality is laid bare on stage",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-47",
+              "type": "multiple_matching",
+              "instruction": "Which academic asserts that physical interaction and a feedback loop between players and audience make listeners active co-creators of the music?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Dr. Liam Sterling cho rằng vòng lặp phản hồi vật lý và tâm lý mãnh liệt khiến người nghe trở thành những người đồng sáng tạo tích cực cho sự kiện âm nhạc ('makes the listeners active co-creators of the musical event'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "feedback loop makes the listeners active co-creators of the musical event",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-48",
+              "type": "multiple_matching",
+              "instruction": "Which academic suggests that visual cues like body language allow listeners to perceive the true personality of the performers?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Prof. Clara Dupont lập luận rằng bằng cách quan sát nét mặt, cử chỉ và ngôn ngữ cơ thể, ta cảm nhận sâu sắc về tính cách của người biểu diễn ('feel for their personality and vulnerable human presence'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "physical gestures, and vulnerable body language in real-time, we get a profound feel for their personality",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-49",
+              "type": "multiple_matching",
+              "instruction": "Which academic explains that unpredictability in unpromising acoustic spaces can stimulate artistic innovation?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Arthur Pendelton cho rằng tính không thể đoán trước ở những không gian thô sơ, kém triển vọng lại thúc đẩy sự đổi mới nghệ thuật ('unpredictability that drives artistic innovation'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "acoustic challenges of raw, unpromising spaces, but it is precisely this unpredictability that drives artistic innovation",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-50",
+              "type": "multiple_matching",
+              "instruction": "Which academic draws a parallel between the evolutionary splits of music and language from a common ancestral system?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Prof. Evelyn Carter lập luận rằng âm nhạc và ngôn ngữ là các kiến trúc nhận thức sinh đôi được tách ra từ một hệ thống chung trong lịch sử loài người cổ đại ('twin cognitive architectures that split from a single musilanguage precursor'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "twin cognitive architectures that split from a single 'musilanguage' precursor",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-51",
+              "type": "multiple_matching",
+              "instruction": "Which academic contrasts our tolerant attitude toward live flaws with our hyper-critical reaction to studio imperfections?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Dr. Marcus Vance đối lập phản ứng của não bộ: việc nghe các bản thu âm hoàn hảo trong phòng thu làm ta trở nên cực kỳ khắt khe đối với mọi lỗi nhỏ nhặt ('makes us hyper-aware of any tiny imperfection... sterile, hyper-critical'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "listening to highly polished, error-free studio recordings makes us hyper-aware of any tiny imperfection",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-52",
+              "type": "multiple_matching",
+              "instruction": "Which academic points out that a performer who remains undistracted by challenging environments can achieve musical transcendence?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Dr. Arthur Pendelton chỉ ra người biểu diễn không bị phân tâm bởi môi trường hoặc lỗi âm học mà biết tận dụng tiếng vang thô mộc của không gian có thể đạt đến sự vĩ đại siêu việt ('achieves a level of transcendent greatness'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "performer who is not distracted by the environment or minor acoustic flaws... achieves a level of transcendent greatness",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe1-t4-53",
+              "type": "multiple_matching",
+              "instruction": "Which academic observes that rigid classical concert traditions often enforce a hierarchical divisiveness between performers and listeners?",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Prof. Clara Dupont quan sát thấy các quy chuẩn nghiêm ngặt và sự tôn kính thái quá trong hòa nhạc cổ điển tạo ra sự xa cách/phân tầng khó chịu giữa người chơi và người nghe ('create a feeling of hierarchical divisiveness'). Chuyên đề: Multiple Matching.",
+              "answerLocation": "dress codes and quiet reverence... create a feeling of hierarchical divisiveness",
+              "category": "cpe_part_7",
+              "source": "Test 4, Part 7, Cambridge CPE 1 Adaptation",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

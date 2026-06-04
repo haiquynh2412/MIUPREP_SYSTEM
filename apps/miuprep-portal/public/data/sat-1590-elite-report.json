@@ -1,0 +1,54 @@
+{
+  "count": 700,
+  "targetScore": "1590",
+  "bySection": {
+    "Reading and Writing": 240,
+    "Math": 460
+  },
+  "byDomain": {
+    "Math | Advanced Math": 161,
+    "Math | Algebra": 161,
+    "Math | Geometry and Trigonometry": 69,
+    "Math | Problem-Solving and Data Analysis": 69,
+    "Reading and Writing | Craft and Structure": 67,
+    "Reading and Writing | Expression of Ideas": 48,
+    "Reading and Writing | Information and Ideas": 62,
+    "Reading and Writing | Standard English Conventions": 63
+  },
+  "bySkill": {
+    "Area and volume": 15,
+    "Boundaries": 35,
+    "Central Ideas and Details": 14,
+    "Circles": 22,
+    "Command of Evidence": 24,
+    "Cross-Text Connections": 22,
+    "Data interpretation": 11,
+    "Equivalent expressions": 33,
+    "Exponential functions": 24,
+    "Form, structure, and sense": 28,
+    "Inferences": 24,
+    "Linear equations in one variable": 18,
+    "Linear equations in two variables": 49,
+    "Linear functions and slope": 35,
+    "Linear inequalities": 18,
+    "Lines, angles, and triangles": 14,
+    "Nonlinear equations and functions": 46,
+    "Percentages": 16,
+    "Probability": 6,
+    "Quadratic equations": 58,
+    "Ratios and rates": 14,
+    "Rhetorical Synthesis": 28,
+    "Right triangles and trigonometry": 18,
+    "Statistics": 22,
+    "Systems of linear equations": 41,
+    "Text Structure and Purpose": 22,
+    "Transitions": 20,
+    "Words in Context": 23
+  },
+  "byDifficulty": {
+    "Hard": 560,
+    "Medium": 140
+  },
+  "studentProducedResponse": 279,
+  "output": "data\\sat-1590-elite-ai-bank.json"
+}

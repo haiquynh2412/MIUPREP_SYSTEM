@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-05-28T07:36:56.989466+00:00",
+  "mode": "apply",
+  "version": "sat-training-metadata-enrichment-v1-2026-05-26",
+  "changedRows": 729,
+  "coverageBefore": {
+    "totalRows": 10523,
+    "activeReviewed": 10523,
+    "skeletonOrTemplatePct": 100.0,
+    "rwSemanticFieldPct": 98.0,
+    "mathToolTagPct": 95.5,
+    "multiStepLevelPct": 96.5,
+    "cruciblePoolPct": 94.8,
+    "cruciblePoolCount": 4420,
+    "hardReviewedCount": 4661
+  },
+  "coverageAfter": {
+    "totalRows": 10523,
+    "activeReviewed": 10523,
+    "skeletonOrTemplatePct": 100.0,
+    "rwSemanticFieldPct": 100.0,
+    "mathToolTagPct": 100.0,
+    "multiStepLevelPct": 100.0,
+    "cruciblePoolPct": 100.0,
+    "cruciblePoolCount": 4661,
+    "hardReviewedCount": 4661
+  },
+  "files": [
+    {
+      "file": "antigravity-bank.json",
+      "rows": 7158,
+      "changedRows": 675,
+      "changedFields": {
+        "templateFormId": 675,
+        "skeletonId": 675,
+        "skeletonDiversity": 675,
+        "mathToolTag": 274,
+        "multiStepLevel": 364,
+        "cruciblePool": 241,
+        "crucibleEligibility": 241,
+        "metadataEnrichmentVersion": 364,
+        "semanticField": 90
+      }
+    },
+    {
+      "file": "archive-source-ai-bank.json",
+      "rows": 792,
+      "changedRows": 0,
+      "changedFields": {}
+    },
+    {
+      "file": "kaplan-sat-math-ai-bank.json",
+      "rows": 148,
+      "changedRows": 0,
+      "changedFields": {}
+    },
+    {
+      "file": "opensat-pinesat.json",
+      "rows": 1026,
+      "changedRows": 48,
+      "changedFields": {
+        "templateFormId": 48,
+        "skeletonId": 48,
+        "skeletonDiversity": 48
+      }
+    },
+    {
+      "file": "private-vault-archive-bank.json",
+      "rows": 165,
+      "changedRows": 0,
+      "changedFields": {}
+    },
+    {
+      "file": "sat-1590-elite-ai-bank.json",
+      "rows": 661,
+      "changedRows": 0,
+      "changedFields": {}
+    },
+    {
+      "file": "sat-king-supplemental-ai-bank.json",
+      "rows": 354,
+      "changedRows": 0,
+      "changedFields": {}
+    },
+    {
+      "file": "sat-studio-foundation-bank.json",
+      "rows": 219,
+      "changedRows": 6,
+      "changedFields": {
+        "templateFormId": 6,
+        "skeletonId": 6,
+        "skeletonDiversity": 6
+      }
+    }
+  ]
+}

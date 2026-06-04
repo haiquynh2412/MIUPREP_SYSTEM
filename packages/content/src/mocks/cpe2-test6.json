@@ -1,0 +1,1650 @@
+{
+  "id": "cpe2-test6",
+  "title": "CPE C2 Proficiency Reading & Use of English - Test 6 (Book 2)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Practice Tests CPE 2, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe2-t6-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Hawkeye Cricket Technology</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>A new system has recently been installed which should make a great deal of (1) ______ to future test cricket matches. The system has been dubbed 'Hawkeye' and is a good example of how military technology has been used for peaceful purposes. Based on missile tracking technology, six digital cameras placed around the (2) ______ will track the path of the ball and help the umpire when he makes lbw decisions, (for non cricketers lbw = leg before wicket, when the umpire must (3) ______ whether the ball would have hit the stumps had the batsman's leg not got in the way). Modern bowlers deliver the ball at such incredible speeds that umpires have difficulty following the ball with the (4) ______ eye. New software predicts with an accuracy of 5mm whether the ball would have gone on to hit the stumps. At the same time, the system collects statistical data, including the height it (5) ______ and the speed it travelled at. Since lbw decisions are often (6) ______ disputed, this system will greatly help umpires.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 2: The Notch Household</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the household of the Notch he found warmth and simplicity of feeling and the wisdom of New England, which the family had gathered from the mountains and valleys and brought to the very (7) ______ of their home. He had travelled far and wide. His whole life, indeed, had been a lonely path; for with the pride of his (8) ______, he had (9) ______ himself apart from those who might otherwise have been his companions. The family, too, though so kind and friendly, had a feeling of (10) ______ among themselves and separation from the world. But this evening, the refined and educated youth (11) ______ out his heart before the simple mountaineers. The secret of the young man's character was a (12) ______ ambition. He could have borne to live an ordinary life, but not to be forgotten in his grave.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 3: A Special Breed of Dog</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Greenland dogs are a (13) ______ version of the Inuit dog, the original working dog of the North. Though not fast, they are true cargo dogs — good at pulling sleds over vast distances in (14) ______ conditions. They are the (15) ______ type of dog for Arctic exploration, but they became increasingly hard to get, as the expeditions of the 'Heroic Age' (roughly 1850–1910) (16) ______ supplies. The Greenland dog has been described as 'a wolf in dog's clothing' and in fact, purists believe this sled dog is a descendant of the wolf. Today the dogs are to be found only in designated sled-dog regions in Eastern and North Western Greenland where the (17) ______ of the breed is protected by law. It is (18) ______ to import, or keep dog breeds other than police dogs in those districts. A measure of the value placed on the dogs can be found in statistics. The population of Greenland is currently 60,000 people (mostly Inuit) and 30,000 sled dogs!</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t6-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe2t6-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. contrast",
+                "B. difference",
+                "C. variance",
+                "D. diversity"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'make a great deal of difference' = tạo ra sự khác biệt lớn. Đây là collocation cố định: 'make a difference (to something)'. Bẫy: 'make a contrast' (A) không phải collocation chuẩn. 'variance' (C) = sai lệch (thống kê). 'diversity' (D) = đa dạng, không phù hợp. Chuyên đề: Collocations — make a difference.",
+              "answerLocation": "make a great deal of difference to future test cricket matches",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. land",
+                "B. ground",
+                "C. soil",
+                "D. earth"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'ground' = sân (cricket ground = sân cricket). Trong bối cảnh thể thao, 'ground' là từ chuẩn để chỉ sân thi đấu cricket. Bẫy: 'land' (A) = đất đai (diện tích lớn). 'soil' (C) = đất (trồng trọt). 'earth' (D) = trái đất/đất. Chuyên đề: Vocabulary — sports venues. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "six digital cameras placed around the ground",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. describe",
+                "B. infer",
+                "C. evaluate",
+                "D. determine"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'determine whether' = xác định liệu. 'The umpire must determine whether the ball would have hit the stumps' — trọng tài phải XÁC ĐỊNH. 'Determine' = đưa ra quyết định cuối cùng. Bẫy: 'describe' (A) = mô tả, không phải quyết định. 'infer' (B) = suy luận (từ bằng chứng gián tiếp). 'evaluate' (C) = đánh giá (chung chung hơn). Chuyên đề: Vocabulary — determine vs. evaluate. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "the umpire must determine whether the ball would have hit the stumps",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. naked",
+                "B. exposed",
+                "C. bare",
+                "D. uncovered"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'the naked eye' = mắt thường (không có thiết bị hỗ trợ). Đây là collocation cố định duy nhất. 'With the naked eye' = bằng mắt thường. Bẫy: 'bare eye' (C), 'exposed eye' (B), 'uncovered eye' (D) đều KHÔNG phải collocations chuẩn. Chỉ có 'naked eye' là đúng. Chuyên đề: Collocations — the naked eye.",
+              "answerLocation": "difficulty following the ball with the naked eye",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. managed",
+                "B. increased",
+                "C. reached",
+                "D. ranged"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'the height it reached' = độ cao mà nó đạt được. 'Reach a height' là collocation chuẩn — quả bóng đạt đến một độ cao nhất định. Bẫy: 'managed' (A) cần 'managed to reach'. 'increased' (B) = tăng, nhưng không phù hợp vì bóng bay lên rồi xuống. 'ranged' (D) cần 'ranged from...to'. Chuyên đề: Collocations — reach a height.",
+              "answerLocation": "the height it reached and the speed it travelled at",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. fierily",
+                "B. smoulderingly",
+                "C. blazingly",
+                "D. hotly"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'hotly disputed' = bị tranh cãi gay gắt. Đây là collocation cố định rất phổ biến. 'Hotly' + 'disputed/debated/contested' là cụm từ chuẩn. Bẫy: 'fierily' (A), 'smoulderingly' (B), 'blazingly' (C) đều không phải trạng từ tiêu chuẩn collocate với 'disputed'. Chuyên đề: Collocations — hotly disputed.",
+              "answerLocation": "lbw decisions are often hotly disputed",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. root",
+                "B. kernel",
+                "C. essence",
+                "D. heart"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'the very heart of their home' = trung tâm/trái tim ngôi nhà. 'Heart' = phần cốt lõi, trung tâm (nghĩa bóng). 'The very heart of' là cụm cố định chỉ phần sâu xa nhất, cốt lõi nhất. Bẫy: 'root' (A) = gốc rễ, thường dùng 'at the root of a problem'. 'kernel' (B) = hạt nhân (nghĩa đen). 'essence' (C) = bản chất, có thể dùng nhưng 'heart' tự nhiên hơn với 'home'. Chuyên đề: Collocations — the heart of.",
+              "answerLocation": "brought to the very heart of their home",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. nature",
+                "B. trend",
+                "C. mood",
+                "D. temper"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'the pride of his nature' = sự kiêu hãnh thuộc bản chất anh ta. 'Nature' = bản tính, tính cách bẩm sinh. Sự kiêu hãnh là phần CỐ HỮU trong bản tính anh ta, khiến anh ta sống cô lập. Bẫy: 'trend' (B) = xu hướng, không phù hợp. 'mood' (C) = tâm trạng (tạm thời). 'temper' (D) = tính khí/cơn giận. Chuyên đề: Vocabulary — nature (character). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "with the pride of his nature, he had kept himself apart",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-9",
+              "type": "multiple_choice",
+              "instruction": "Gap (9):",
+              "options": [
+                "A. shut",
+                "B. taken",
+                "C. kept",
+                "D. backed"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'kept himself apart' = giữ khoảng cách, tự cô lập. 'Keep oneself apart from' là phrasal verb cố định nghĩa là tự tách biệt khỏi người khác. Bẫy: 'shut himself apart' (A) không phải cụm chuẩn — 'shut oneself away' mới đúng. 'taken apart' (B) = tháo rời. 'backed apart' (D) không tồn tại. Chuyên đề: Phrasal verbs — keep apart. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "he had kept himself apart from those who might otherwise have been his companions",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-10",
+              "type": "multiple_choice",
+              "instruction": "Gap (10):",
+              "options": [
+                "A. individuality",
+                "B. entity",
+                "C. personality",
+                "D. unity"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'a feeling of unity among themselves' = cảm giác đoàn kết/thống nhất giữa họ. 'Unity' = sự gắn kết nội bộ. Gia đình có sự gắn bó mạnh mẽ VỚI NHAU nhưng TÁCH BIỆT với thế giới ('and separation from the world'). Bẫy: 'individuality' (A) = tính cá nhân, NGƯỢC nghĩa unity. 'entity' (B) = thực thể. 'personality' (C) = nhân cách. Chuyên đề: Vocabulary — unity vs. individuality. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "had a feeling of unity among themselves and separation from the world",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-11",
+              "type": "multiple_choice",
+              "instruction": "Gap (11):",
+              "options": [
+                "A. poured",
+                "B. drained",
+                "C. streamed",
+                "D. flowed"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'poured out his heart' = trút bầu tâm sự, bày tỏ cảm xúc sâu kín. Đây là idiom cố định: 'pour out one's heart (before/to someone)'. Bẫy: 'drained out' (B) = rút cạn, không có nghĩa tâm sự. 'streamed out' (C) = tuôn chảy (nước). 'flowed out' (D) = chảy ra. Không cái nào là idiom với 'heart'. Chuyên đề: Idioms — pour out one's heart.",
+              "answerLocation": "the youth poured out his heart before the simple mountaineers",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-12",
+              "type": "multiple_choice",
+              "instruction": "Gap (12):",
+              "options": [
+                "A. glowing",
+                "B. swollen",
+                "C. inflamed",
+                "D. burning"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'a burning ambition' = tham vọng cháy bỏng. Đây là collocation cố định cực kỳ phổ biến. 'Burning' + ambition/desire/passion là cụm từ tiêu chuẩn. Bẫy: 'glowing ambition' (A) không phải collocation chuẩn — 'glowing' đi với 'review/report'. 'swollen ambition' (B) không tồn tại. 'inflamed ambition' (C) không phải collocation chuẩn. Chuyên đề: Collocations — burning ambition.",
+              "answerLocation": "The secret of the young man's character was a burning ambition",
+              "category": "cpe_part_1",
+              "source": "Page 134, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-13",
+              "type": "multiple_choice",
+              "instruction": "Gap (13):",
+              "options": [
+                "A. healthy",
+                "B. powerful",
+                "C. potent",
+                "D. resolute"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'a powerful version of the Inuit dog' = phiên bản mạnh mẽ/cường tráng của chó Inuit. 'Powerful' mô tả sức mạnh thể chất — chó Greenland là giống chó to lớn, khỏe mạnh. Bẫy: 'healthy' (A) = khỏe mạnh (sức khỏe chung). 'potent' (C) thường dùng cho thuốc/chất hóa học. 'resolute' (D) = kiên quyết (tính cách con người). Chuyên đề: Vocabulary — powerful (physical strength). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "a powerful version of the Inuit dog",
+              "category": "cpe_part_1",
+              "source": "Page 135, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-14",
+              "type": "multiple_choice",
+              "instruction": "Gap (14):",
+              "options": [
+                "A. profound",
+                "B. excessive",
+                "C. extreme",
+                "D. unnatural"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'in extreme conditions' = trong điều kiện khắc nghiệt. 'Extreme conditions' là collocation cố định dùng cho thời tiết/môi trường khắc nghiệt (Bắc Cực). Bẫy: 'profound conditions' (A) không phải collocation chuẩn. 'excessive conditions' (B) không tự nhiên. 'unnatural conditions' (D) = điều kiện không tự nhiên, sai nghĩa. Chuyên đề: Collocations — extreme conditions.",
+              "answerLocation": "pulling sleds over vast distances in extreme conditions",
+              "category": "cpe_part_1",
+              "source": "Page 135, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-15",
+              "type": "multiple_choice",
+              "instruction": "Gap (15):",
+              "options": [
+                "A. flawless",
+                "B. ideal",
+                "C. sound",
+                "D. impeccable"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'the ideal type of dog for Arctic exploration' = loại chó lý tưởng cho thám hiểm Bắc Cực. 'Ideal' = hoàn hảo cho mục đích cụ thể. Bẫy: 'flawless' (A) = không tì vết (phẩm chất). 'sound' (C) = vững chắc/đáng tin cậy. 'impeccable' (D) = hoàn hảo (hành vi/phong cách). Chỉ 'ideal' phù hợp với 'type of... for'. Chuyên đề: Vocabulary — ideal (suitability). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "the ideal type of dog for Arctic exploration",
+              "category": "cpe_part_1",
+              "source": "Page 135, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-16",
+              "type": "multiple_choice",
+              "instruction": "Gap (16):",
+              "options": [
+                "A. depleted",
+                "B. dissipated",
+                "C. consumed",
+                "D. spent"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'depleted supplies' = làm cạn kiệt nguồn cung. 'Deplete' = sử dụng hết, làm giảm đáng kể. Các chuyến thám hiểm đã LÀM CẠN KIỆT nguồn cung cấp chó. Bẫy: 'dissipated' (B) = phân tán (năng lượng, sương mù). 'consumed' (C) = tiêu thụ (thức ăn), quá trực tiếp. 'spent' (D) = tiêu (tiền/thời gian), không đi với 'supplies' tự nhiên. Chuyên đề: Vocabulary — deplete supplies.",
+              "answerLocation": "expeditions of the Heroic Age depleted supplies",
+              "category": "cpe_part_1",
+              "source": "Page 135, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-17",
+              "type": "multiple_choice",
+              "instruction": "Gap (17):",
+              "options": [
+                "A. purity",
+                "B. clarity",
+                "C. innocence",
+                "D. cleanliness"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'the purity of the breed' = sự thuần chủng của giống. 'Purity' = sự tinh khiết/thuần chủng. Trong ngữ cảnh chăn nuôi, 'purity of the breed' là cụm từ chuẩn — bảo vệ giống chó không bị lai tạp. Bẫy: 'clarity' (B) = sự rõ ràng. 'innocence' (C) = sự ngây thơ. 'cleanliness' (D) = sự sạch sẽ. Chuyên đề: Collocations — purity of the breed.",
+              "answerLocation": "the purity of the breed is protected by law",
+              "category": "cpe_part_1",
+              "source": "Page 135, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-18",
+              "type": "multiple_choice",
+              "instruction": "Gap (18):",
+              "options": [
+                "A. disallowed",
+                "B. proscribed",
+                "C. restricted",
+                "D. prohibited"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'It is prohibited to import' = Bị cấm nhập khẩu. 'Prohibited' = bị cấm bởi luật pháp. Cấu trúc 'It is prohibited to + infinitive' là cách diễn đạt pháp lý chuẩn. Bẫy: 'disallowed' (A) ít trang trọng hơn và thường dùng cho phán quyết cụ thể. 'proscribed' (B) = bị nghiêm cấm (rất trang trọng, ít dùng). 'restricted' (C) = bị hạn chế (không hoàn toàn cấm). Chuyên đề: Vocabulary — prohibited vs. restricted.",
+              "answerLocation": "It is prohibited to import, or keep dog breeds other than police dogs",
+              "category": "cpe_part_1",
+              "source": "Page 135, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t6-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Changing Seasons</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>If we measure the seasons, (0) <b>AS</b> in the past they have (1) ______, by ordinary natural events such as the departure of migrating birds or the appearance of the first flower, (2) ______ spring now begins in November and autumn ends in December. (3) ______ may seem an unlikely situation to us, but in (4) ______ fact, data shows that spring now occurs ten to thirty days earlier than it did, while recent research bears (5) ______ that autumn is arriving (6) ______.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Traditional data on phenology — the study of the timing of natural events — goes (7) ______ to 1736 in Britain. Taken (8) ______ isolation, phenological data may not mean (9) ______, but the received wisdom from ecology is about interconnectedness. (10) ______, with higher temperatures in winter, some species will breed earlier and then find that their food source has been destroyed (11) ______ winter finally arrives. Competition for winter food will probably increase too, as birds stop migrating south in winter, as has (12) ______ happened in a (13) ______ of cases. (14) ______ it is often difficult to be certain that seasonal trends are progressive and not cyclical, those involved in analysing the information see the fingerprints of global warming (15) ______ this blurring of the seasons' edges.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t6-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe2t6-19",
+              "type": "gap_fill",
+              "instruction": "Gap (1): as in the past they have ______",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "been"
+                ]
+              ],
+              "correctAnswer": "been",
+              "explanation": "Đáp án: BEEN. 'as they have been' — present perfect passive. Câu nói: nếu đo mùa như trước đây chúng ĐÃ ĐƯỢC đo, bằng các sự kiện tự nhiên. 'Have been (measured)' với 'measured' được ngầm hiểu từ 'If we measure'. Chuyên đề: Grammar — present perfect passive (ellipsis).",
+              "answerLocation": "as in the past they have been",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-20",
+              "type": "gap_fill",
+              "instruction": "Gap (2): ______ spring now begins in November",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "then"
+                ]
+              ],
+              "correctAnswer": "then",
+              "explanation": "Đáp án: THEN. 'then spring now begins in November' — 'then' kết nối kết quả logic: NẾU đo theo sự kiện tự nhiên, THÌ mùa xuân bắt đầu vào tháng 11. 'If... then...' là cấu trúc điều kiện. Chuyên đề: Conjunctions — if... then.",
+              "answerLocation": "then spring now begins in November",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-21",
+              "type": "gap_fill",
+              "instruction": "Gap (3): ______ may seem an unlikely situation",
+              "blankIndex": 3,
+              "acceptedAnswers": [
+                [
+                  "This",
+                  "That"
+                ]
+              ],
+              "correctAnswer": "This",
+              "explanation": "Đáp án: THIS (hoặc THAT). 'This may seem an unlikely situation' — 'This' chỉ lại toàn bộ ý trước đó (mùa xuân bắt đầu tháng 11). Demonstrative pronoun dùng để tham chiếu. Chuyên đề: Reference words — this/that (anaphoric reference). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "This may seem an unlikely situation",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-22",
+              "type": "gap_fill",
+              "instruction": "Gap (4): but in ______ fact",
+              "blankIndex": 4,
+              "acceptedAnswers": [
+                [
+                  "actual"
+                ]
+              ],
+              "correctAnswer": "actual",
+              "explanation": "Đáp án: ACTUAL. 'in actual fact' = trên thực tế, thực ra. Đây là fixed expression nhấn mạnh sự thật trái với kỳ vọng. 'In actual fact' mạnh hơn 'in fact'. Chuyên đề: Fixed expressions — in actual fact. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "in actual fact, data shows",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-23",
+              "type": "gap_fill",
+              "instruction": "Gap (5): research bears ______ that",
+              "blankIndex": 5,
+              "acceptedAnswers": [
+                [
+                  "out"
+                ]
+              ],
+              "correctAnswer": "out",
+              "explanation": "Đáp án: OUT. 'bears out' = xác nhận, chứng minh. 'Research bears out that autumn is arriving later' = nghiên cứu xác nhận rằng mùa thu đến muộn hơn. 'Bear out' là phrasal verb nghĩa là confirm/support. Chuyên đề: Phrasal verbs — bear out. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "research bears out that autumn is arriving",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-24",
+              "type": "gap_fill",
+              "instruction": "Gap (6): autumn is arriving ______",
+              "blankIndex": 6,
+              "acceptedAnswers": [
+                [
+                  "later"
+                ]
+              ],
+              "correctAnswer": "later",
+              "explanation": "Đáp án: LATER. 'arriving later' = đến muộn hơn. Mùa xuân đến SỚM hơn ('earlier'), mùa thu đến MUỘN hơn. 'Later' là comparative of 'late', tạo sự đối xứng logic với 'earlier'. Chuyên đề: Comparatives — later. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "autumn is arriving later",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-25",
+              "type": "gap_fill",
+              "instruction": "Gap (7): goes ______ to 1736 in Britain",
+              "blankIndex": 7,
+              "acceptedAnswers": [
+                [
+                  "back"
+                ]
+              ],
+              "correctAnswer": "back",
+              "explanation": "Đáp án: BACK. 'goes back to 1736' = có từ năm 1736, xuất phát từ năm 1736. 'Go back to + year' là phrasal verb cố định chỉ nguồn gốc thời gian. Chuyên đề: Phrasal verbs — go back to. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "goes back to 1736 in Britain",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-26",
+              "type": "gap_fill",
+              "instruction": "Gap (8): Taken ______ isolation",
+              "blankIndex": 8,
+              "acceptedAnswers": [
+                [
+                  "in"
+                ]
+              ],
+              "correctAnswer": "in",
+              "explanation": "Đáp án: IN. 'taken in isolation' = xem xét riêng lẻ, tách biệt. 'In isolation' = một mình, không xét bối cảnh. Dữ liệu phenology RIÊNG LẺ có thể không có ý nghĩa nhiều. Chuyên đề: Fixed expressions — in isolation. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Taken in isolation, phenological data",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-27",
+              "type": "gap_fill",
+              "instruction": "Gap (9): may not mean ______",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "much"
+                ]
+              ],
+              "correctAnswer": "much",
+              "explanation": "Đáp án: MUCH. 'may not mean much' = có thể không có ý nghĩa nhiều. 'Not mean much' = không quan trọng lắm. Đây là cách nói thông dụng trong tiếng Anh. Chuyên đề: Quantifiers — much (with negative). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "may not mean much, but the received wisdom",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-28",
+              "type": "gap_fill",
+              "instruction": "Gap (10): ______, with higher temperatures in winter",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "So",
+                  "Thus"
+                ]
+              ],
+              "correctAnswer": "So",
+              "explanation": "Đáp án: SO (hoặc THUS). 'So, with higher temperatures...' = Vậy nên, với nhiệt độ cao hơn... 'So' nối kết luận logic từ 'interconnectedness' sang ví dụ cụ thể: vì mọi thứ liên kết, NÊN nhiệt độ cao hơn sẽ ảnh hưởng chuỗi thức ăn. Chuyên đề: Conjunctions — so/thus (consequence). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "So, with higher temperatures in winter, some species will breed earlier",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-29",
+              "type": "gap_fill",
+              "instruction": "Gap (11): food source has been destroyed ______ winter finally arrives",
+              "blankIndex": 11,
+              "acceptedAnswers": [
+                [
+                  "when"
+                ]
+              ],
+              "correctAnswer": "when",
+              "explanation": "Đáp án: WHEN. 'destroyed when winter finally arrives' = bị phá hủy KHI mùa đông cuối cùng đến. 'When' chỉ thời điểm — nguồn thức ăn bị mất khi mùa đông thực sự đến. Chuyên đề: Conjunctions — when (temporal). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "food source has been destroyed when winter finally arrives",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-30",
+              "type": "gap_fill",
+              "instruction": "Gap (12): as has ______ happened in a",
+              "blankIndex": 12,
+              "acceptedAnswers": [
+                [
+                  "already"
+                ]
+              ],
+              "correctAnswer": "already",
+              "explanation": "Đáp án: ALREADY. 'as has already happened' = như ĐÃ xảy ra rồi. 'Already' nhấn mạnh rằng hiện tượng này KHÔNG phải dự đoán mà đã xảy ra. Present perfect + already = completed action. Chuyên đề: Adverbs — already with present perfect. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "as has already happened in a number of cases",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-31",
+              "type": "gap_fill",
+              "instruction": "Gap (13): in a ______ of cases",
+              "blankIndex": 13,
+              "acceptedAnswers": [
+                [
+                  "number"
+                ]
+              ],
+              "correctAnswer": "number",
+              "explanation": "Đáp án: NUMBER. 'a number of cases' = một số trường hợp. 'A number of' = several/some, là fixed expression rất phổ biến. Chuyên đề: Fixed expressions — a number of. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "in a number of cases",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-32",
+              "type": "gap_fill",
+              "instruction": "Gap (14): ______ it is often difficult to be certain",
+              "blankIndex": 14,
+              "acceptedAnswers": [
+                [
+                  "While",
+                  "Although",
+                  "Though"
+                ]
+              ],
+              "correctAnswer": "While",
+              "explanation": "Đáp án: WHILE (hoặc ALTHOUGH/THOUGH). 'While it is often difficult to be certain..., those involved see the fingerprints' = MẶC DÙ thường khó chắc chắn..., những người phân tích VẪN thấy dấu vết. 'While' ở đây = although (nhượng bộ). Chuyên đề: Conjunctions — while (concessive). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "While it is often difficult to be certain that seasonal trends are progressive",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-33",
+              "type": "gap_fill",
+              "instruction": "Gap (15): fingerprints of global warming ______ this blurring",
+              "blankIndex": 15,
+              "acceptedAnswers": [
+                [
+                  "in",
+                  "behind"
+                ]
+              ],
+              "correctAnswer": "in",
+              "explanation": "Đáp án: IN (hoặc BEHIND). 'see the fingerprints of global warming in this blurring' = thấy dấu vết của hiện tượng nóng lên toàn cầu TRONG sự mờ nhạt này. 'In' chỉ vị trí — dấu vết nằm TRONG hiện tượng mùa bị xóa nhòa ranh giới. Chuyên đề: Prepositions — in (within).",
+              "answerLocation": "see the fingerprints of global warming in this blurring of the seasons' edges",
+              "category": "cpe_part_2",
+              "source": "Page 146, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t6-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Winter Walking in Britain</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Nowadays, there is a huge range of clothing designed for winter outdoor pursuits. The (0) <b>TRADITIONAL</b> wax jacket and rubber boots have largely been superseded by man-made fabrics such as 'Gortex' and designer hiking boots. (16) ______ (<b>RESPECT</b>) of your preference in clothing on your winter walks, the main (17) ______ (<b>PRIOR</b>) is to keep you warm and dry. To this end, the old adage: use the (18) ______ (<b>LAYER</b>) technique still applies. Thermal underwear and socks, topped with an outer shell of jackets and overtrousers in (19) ______ (<b>PERMEATE</b>) fabrics which keep out the wind and (20) ______ (<b>MOIST</b>) and are also 'breathable', keep you warm and dry. For wet weather or shore walking, rubber boots are best, but these are (21) ______ (<b>SUIT</b>) for real walking. This will require proper hiking boots, which these days are sturdy and light. Boots designed (22) ______ (<b>SPECIFIC</b>) for hiking have a stiff insole and provide good ankle support as well as giving good traction on (23) ______ (<b>SLIP</b>) surfaces. A small rucksack of 15-25 litre capacity is suitable for short walks, but the more intrepid hiker will probably need a (24) ______ (<b>SUBSTANCE</b>) larger backpack of around 25-40 litres. Hiker's rucksacks have been considerably (25) ______ (<b>LIGHT</b>) over the last few years and new fabric technology will make them even lighter.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t6-rg-3",
+          "instruction": "Fill in the gaps with the correct word form.",
+          "questions": [
+            {
+              "id": "q-cpe2t6-34",
+              "type": "gap_fill",
+              "instruction": "Gap (16): ______ (RESPECT) of your preference",
+              "blankIndex": 16,
+              "acceptedAnswers": [
+                [
+                  "Irrespective"
+                ]
+              ],
+              "correctAnswer": "Irrespective",
+              "explanation": "Đáp án: IRRESPECTIVE (từ gốc: RESPECT). Thêm tiền tố 'ir-' và hậu tố '-ive' để tạo tính từ/trạng từ. 'Irrespective of' = bất kể, không phụ thuộc vào. Bẫy: 'Respective' (tương ứng) hoàn toàn khác nghĩa. 'Regardless' đồng nghĩa nhưng không phải từ gốc RESPECT. Chuyên đề: Word Formation — Adjectives (ir- + root + -ive).",
+              "answerLocation": "Irrespective of your preference in clothing",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-35",
+              "type": "gap_fill",
+              "instruction": "Gap (17): the main ______ (PRIOR) is to keep you warm",
+              "blankIndex": 17,
+              "acceptedAnswers": [
+                [
+                  "priority"
+                ]
+              ],
+              "correctAnswer": "priority",
+              "explanation": "Đáp án: PRIORITY (từ gốc: PRIOR). Thêm hậu tố '-ity' để tạo danh từ. 'The main priority' = ưu tiên chính. Cần danh từ vì đứng sau 'the main' (tính từ) và trước 'is' (linking verb). Chuyên đề: Word Formation — Nouns (-ity).",
+              "answerLocation": "the main priority is to keep you warm and dry",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-36",
+              "type": "gap_fill",
+              "instruction": "Gap (18): use the ______ (LAYER) technique",
+              "blankIndex": 18,
+              "acceptedAnswers": [
+                [
+                  "layering"
+                ]
+              ],
+              "correctAnswer": "layering",
+              "explanation": "Đáp án: LAYERING (từ gốc: LAYER). Thêm hậu tố '-ing' để tạo danh từ/tính từ. 'The layering technique' = kỹ thuật mặc nhiều lớp. 'Layering' dùng như tính từ bổ nghĩa cho 'technique'. Chuyên đề: Word Formation — Gerunds as modifiers (-ing).",
+              "answerLocation": "use the layering technique still applies",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-37",
+              "type": "gap_fill",
+              "instruction": "Gap (19): ______ (PERMEATE) fabrics which keep out the wind",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "impermeable"
+                ]
+              ],
+              "correctAnswer": "impermeable",
+              "explanation": "Đáp án: IMPERMEABLE (từ gốc: PERMEATE). Chuyển động từ thành tính từ phủ định: permeate → permeable → impermeable. 'Impermeable fabrics' = vải không thấm nước. Cần tính từ phủ định vì vải phải NGĂN gió và ẩm. Bẫy: 'permeable' (thấm được) NGƯỢC nghĩa. Chuyên đề: Word Formation — Negative adjectives (im- + root + -able).",
+              "answerLocation": "impermeable fabrics which keep out the wind",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-38",
+              "type": "gap_fill",
+              "instruction": "Gap (20): keep out the wind and ______ (MOIST)",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "moisture"
+                ]
+              ],
+              "correctAnswer": "moisture",
+              "explanation": "Đáp án: MOISTURE (từ gốc: MOIST). Thêm hậu tố '-ure' để tạo danh từ. 'Keep out the wind and moisture' = ngăn gió và ẩm. Cần danh từ song song với 'wind' (danh từ + and + danh từ). Chuyên đề: Word Formation — Nouns (-ure).",
+              "answerLocation": "keep out the wind and moisture",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-39",
+              "type": "gap_fill",
+              "instruction": "Gap (21): these are ______ (SUIT) for real walking",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "unsuitable"
+                ]
+              ],
+              "correctAnswer": "unsuitable",
+              "explanation": "Đáp án: UNSUITABLE (từ gốc: SUIT). Thêm hậu tố '-able' và tiền tố phủ định 'un-'. 'Unsuitable for real walking' = không phù hợp cho đi bộ thực sự. Ngữ cảnh cho thấy ủng cao su KHÔNG tốt cho đi bộ → cần phủ định. Bẫy: 'suitable' (phù hợp) NGƯỢC nghĩa ngữ cảnh. Chuyên đề: Word Formation — Negative adjectives (un- + root + -able).",
+              "answerLocation": "these are unsuitable for real walking",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-40",
+              "type": "gap_fill",
+              "instruction": "Gap (22): Boots designed ______ (SPECIFIC) for hiking",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "specifically"
+                ]
+              ],
+              "correctAnswer": "specifically",
+              "explanation": "Đáp án: SPECIFICALLY (từ gốc: SPECIFIC). Thêm hậu tố '-ally' để tạo trạng từ. 'Designed specifically for hiking' = được thiết kế RIÊNG cho đi bộ đường dài. Cần trạng từ vì bổ nghĩa cho 'designed'. Chuyên đề: Word Formation — Adverbs (-ally).",
+              "answerLocation": "Boots designed specifically for hiking",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-41",
+              "type": "gap_fill",
+              "instruction": "Gap (23): good traction on ______ (SLIP) surfaces",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "slippery"
+                ]
+              ],
+              "correctAnswer": "slippery",
+              "explanation": "Đáp án: SLIPPERY (từ gốc: SLIP). Thêm hậu tố '-pery' để tạo tính từ. 'Slippery surfaces' = bề mặt trơn trượt. Cần tính từ vì bổ nghĩa cho danh từ 'surfaces'. Chuyên đề: Word Formation — Adjectives (-ery).",
+              "answerLocation": "good traction on slippery surfaces",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-42",
+              "type": "gap_fill",
+              "instruction": "Gap (24): a ______ (SUBSTANCE) larger backpack",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "substantially"
+                ]
+              ],
+              "correctAnswer": "substantially",
+              "explanation": "Đáp án: SUBSTANTIALLY (từ gốc: SUBSTANCE). Thay đổi hậu tố: substance → substantial → substantially. 'A substantially larger backpack' = ba lô lớn hơn ĐÁNG KỂ. Cần trạng từ vì bổ nghĩa cho tính từ so sánh 'larger'. Chuyên đề: Word Formation — Adverbs (-ially).",
+              "answerLocation": "a substantially larger backpack of around 25-40 litres",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-43",
+              "type": "gap_fill",
+              "instruction": "Gap (25): have been considerably ______ (LIGHT)",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "lightened"
+                ]
+              ],
+              "correctAnswer": "lightened",
+              "explanation": "Đáp án: LIGHTENED (từ gốc: LIGHT). Thêm hậu tố '-en' + '-ed' để tạo quá khứ phân từ. 'Have been considerably lightened' = đã được làm nhẹ đáng kể. Cần past participle vì cấu trúc bị động 'have been + V-ed'. 'Lighten' = làm nhẹ bớt. Chuyên đề: Word Formation — Verbs (-en from adjective, passive).",
+              "answerLocation": "rucksacks have been considerably lightened over the last few years",
+              "category": "cpe_part_3",
+              "source": "Page 147, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t6-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 32-39, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Key Word Transformation</h2><div class='mb-4 text-slate-800 text-base leading-relaxed'><p class='mb-2'><b>32.</b> The government's failure to respond to the crisis caused negotiations to collapse. (BROUGHT)</p><p class='mb-2'>The government's failure to respond to the crisis ______ negotiations.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>33.</b> She was not involved in the decision to close the factory. (NOTHING)</p><p class='mb-2'>She had ______ the decision to close the factory.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>34.</b> Nobody thought she would win the race. (CAME)</p><p class='mb-2'>Her victory in the race ______ everyone.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>35.</b> I find it really difficult to understand his attitude. (LOSS)</p><p class='mb-2'>I am at a complete ______ his attitude.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>36.</b> I was the one who started this project in 1995. (INITIATED)</p><p class='mb-2'>It was I who ______ in 1995.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>37.</b> He didn't at all suspect what was about to happen. (LITTLE)</p><p class='mb-2'>Little ______ what was about to happen.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>38.</b> The new manager immediately started introducing changes. (LOST)</p><p class='mb-2'>The new manager ______ introducing changes.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>39.</b> It would be a shame if this dispute ruined our friendship. (COME)</p><p class='mb-2'>I wouldn't want our friendship to ______ this dispute.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t6-rg-4",
+          "instruction": "Fill in the gap for each sentence below using 3 to 8 words.",
+          "questions": [
+            {
+              "id": "q-cpe2t6-44",
+              "type": "gap_fill",
+              "instruction": "Sentence 32: The government's failure to respond to the crisis ______ negotiations. (Key word: BROUGHT)",
+              "blankIndex": 32,
+              "acceptedAnswers": [
+                [
+                  "brought about the collapse of"
+                ]
+              ],
+              "correctAnswer": "brought about the collapse of",
+              "explanation": "Đáp án: 'brought about the collapse of'. 'Bring about' = gây ra, dẫn đến. 'Brought about the collapse of negotiations' = gây ra sự sụp đổ của đàm phán. Câu gốc 'caused negotiations to collapse' → chuyển sang 'brought about the collapse of'. Chuyên đề: Phrasal verbs — bring about. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "brought about the collapse of negotiations",
+              "category": "cpe_part_4",
+              "source": "Page 150, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-45",
+              "type": "gap_fill",
+              "instruction": "Sentence 33: She had ______ the decision to close the factory. (Key word: NOTHING)",
+              "blankIndex": 33,
+              "acceptedAnswers": [
+                [
+                  "nothing to do with"
+                ]
+              ],
+              "correctAnswer": "nothing to do with",
+              "explanation": "Đáp án: 'nothing to do with'. 'Have nothing to do with' = không liên quan gì đến. 'She had nothing to do with the decision' = Cô ấy không liên quan đến quyết định. Câu gốc 'was not involved in' → 'had nothing to do with'. Chuyên đề: Fixed expressions — have nothing to do with. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "She had nothing to do with the decision",
+              "category": "cpe_part_4",
+              "source": "Page 150, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-46",
+              "type": "gap_fill",
+              "instruction": "Sentence 34: Her victory in the race ______ everyone. (Key word: CAME)",
+              "blankIndex": 34,
+              "acceptedAnswers": [
+                [
+                  "came as a surprise to",
+                  "came as a shock to"
+                ]
+              ],
+              "correctAnswer": "came as a surprise to",
+              "explanation": "Đáp án: 'came as a surprise to'. 'Come as a surprise to someone' = làm ai đó ngạc nhiên. 'Her victory came as a surprise to everyone' = Chiến thắng của cô ấy là điều bất ngờ. Câu gốc 'Nobody thought she would win' → không ai ngờ = surprise. Chuyên đề: Fixed expressions — come as a surprise. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Her victory came as a surprise to everyone",
+              "category": "cpe_part_4",
+              "source": "Page 150, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-47",
+              "type": "gap_fill",
+              "instruction": "Sentence 35: I am at a complete ______ his attitude. (Key word: LOSS)",
+              "blankIndex": 35,
+              "acceptedAnswers": [
+                [
+                  "loss to understand"
+                ]
+              ],
+              "correctAnswer": "loss to understand",
+              "explanation": "Đáp án: 'loss to understand'. 'Be at a loss to + infinitive' = không thể, bối rối không biết. 'At a complete loss to understand his attitude' = hoàn toàn không hiểu thái độ của anh ta. Câu gốc 'find it really difficult to understand' → 'at a complete loss to understand'. Chuyên đề: Fixed expressions — at a loss. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "at a complete loss to understand his attitude",
+              "category": "cpe_part_4",
+              "source": "Page 150, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-48",
+              "type": "gap_fill",
+              "instruction": "Sentence 36: It was I who ______ in 1995. (Key word: INITIATED)",
+              "blankIndex": 36,
+              "acceptedAnswers": [
+                [
+                  "initiated this project"
+                ]
+              ],
+              "correctAnswer": "initiated this project",
+              "explanation": "Đáp án: 'initiated this project'. 'Initiate' = khởi xướng, bắt đầu. 'It was I who initiated this project in 1995' = Chính tôi là người khởi xướng dự án này năm 1995. Câu gốc 'I was the one who started' → cleft sentence 'It was I who initiated'. Chuyên đề: Cleft sentences — It was... who. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "It was I who initiated this project in 1995",
+              "category": "cpe_part_4",
+              "source": "Page 151, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-49",
+              "type": "gap_fill",
+              "instruction": "Sentence 37: Little ______ what was about to happen. (Key word: LITTLE)",
+              "blankIndex": 37,
+              "acceptedAnswers": [
+                [
+                  "did he suspect",
+                  "did he realise"
+                ]
+              ],
+              "correctAnswer": "did he suspect",
+              "explanation": "Đáp án: 'did he suspect'. 'Little did he suspect' = Anh ta hầu như không ngờ. Đây là cấu trúc đảo ngữ với 'little' đứng đầu câu: Little + auxiliary + subject + main verb. Câu gốc 'He didn't at all suspect' → đảo ngữ nhấn mạnh 'Little did he suspect'. Chuyên đề: Inversion — negative adverbs (Little).",
+              "answerLocation": "Little did he suspect what was about to happen",
+              "category": "cpe_part_4",
+              "source": "Page 151, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-50",
+              "type": "gap_fill",
+              "instruction": "Sentence 38: The new manager ______ introducing changes. (Key word: LOST)",
+              "blankIndex": 38,
+              "acceptedAnswers": [
+                [
+                  "lost no time in"
+                ]
+              ],
+              "correctAnswer": "lost no time in",
+              "explanation": "Đáp án: 'lost no time in'. 'Lose no time in doing something' = không chần chừ, làm ngay lập tức. 'The new manager lost no time in introducing changes' = Quản lý mới không chần chừ trong việc đưa ra thay đổi. Câu gốc 'immediately started' → 'lost no time in'. Chuyên đề: Idioms — lose no time in.",
+              "answerLocation": "The new manager lost no time in introducing changes",
+              "category": "cpe_part_4",
+              "source": "Page 151, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-51",
+              "type": "gap_fill",
+              "instruction": "Sentence 39: I wouldn't want our friendship to ______ this dispute. (Key word: COME)",
+              "blankIndex": 39,
+              "acceptedAnswers": [
+                [
+                  "come to grief over",
+                  "come to grief because of"
+                ]
+              ],
+              "correctAnswer": "come to grief over",
+              "explanation": "Đáp án: 'come to grief over'. 'Come to grief' = gặp thất bại, bị hủy hoại. 'I wouldn't want our friendship to come to grief over this dispute' = Tôi không muốn tình bạn bị hủy hoại vì tranh chấp này. Câu gốc 'it would be a shame if this dispute ruined' → 'come to grief over'. Chuyên đề: Idioms — come to grief.",
+              "answerLocation": "our friendship to come to grief over this dispute",
+              "category": "cpe_part_4",
+              "source": "Page 151, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t6-sec-5",
+      "title": "Part 5: Multiple Choice",
+      "instructions": "You are going to read four extracts about food and cooking and an introduction to a book of Welsh short stories. For questions 19-26 and 34-40, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 1: MSG and Umami</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Good food is one of life's pleasures and more than 1,200 years ago, oriental cooks knew that certain foods tasted better when prepared with a soup stock made from a type of seaweed. But it was only in 1908 that Japanese scientists identified the ingredient responsible for enhancing flavour. That ingredient is best known today by its scientific name, monosodium glutamate. It is often referred to as MSG and is an amino acid found in both its forms, free and bound, in virtually all foods. The free form of glutamate in foods enhances food flavours. Tomatoes, cheese and mushrooms are just some free-glutamate rich foods. Free glutamate content increases during ripening, bringing out a fuller taste in many foods and is made as a flavour enhancer by a fermentation process, commonly using sugar beet or sugarcane. People have long known about the four basic tastes — sweet, sour, salty and bitter. But now a fifth basic taste called umami has been recognised. This is imparted to foods by glutamate and is responsible for the savoury taste of many foods.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 2: Organic Food & Business</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Organic farmers pride themselves on fostering Earth-friendly sustainable agriculture, but it remains to be seen if the organic food industry's rapid growth is equally sustainable. One challenge facing the industry is to bring the price of organic products more in line with those of conventional food products. However, supply issues are overshadowed by the fact that the organic foods segment continues to grow faster than the food industry as a whole, fundamentally due to the natural alliance between organic crops and processed foods. For one thing, organic fruit and vegetables earmarked for processing do not have to be as cosmetically perfect as their fresh counterparts. In addition, freezing or tinning organic products reduces many of the shelf-life problems associated with fresh produce. The pioneers of the organic food industry view the growing presence of major food companies in their markets as a mixed blessing. Many smaller companies fear that the philosophical ideals of organic agriculture will be compromised by business interests. Others think major food companies will only help the organic cause; many consumers who are reluctant to buy organic products may be tempted to actually try them if they see a name they trust.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 3: Chilli</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Capsicums, commonly known as chillis, come in all dimensions and colours from the tiny, pointed, extremely hot, bird's eye chilli, to the large, mild, fleshy peppers like the Anaheim. Indigenous to Central and South America and the West Indies, they were cultivated there long before the Spanish conquest. Today, there are in all likelihood 400 different varieties of chillis grown. They are as easy to cultivate as tomatoes and are one of the world's most widely distributed crops, available for sale at most food outlets. In 1902, a method was developed for measuring the strength of a given variety of capsicum, giving it a ranking on a predetermined scale. This originally meant tasting the peppers, but nowadays it can be done more accurately with the help of computers to rate the peppers in units to indicate parts per million of capsaicin. This potent chemical not only causes the fiery sensation, but also triggers the brain to produce endorphins, natural painkillers that promote a sense of well-being.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 4: Writing about Cooking</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Two cookery writers are often credited with the present revival of interest in food and cooking. Elizabeth David discovered her taste for good food when she lived with a French family for two years. After returning to England she learnt to cook so that she could reproduce some of the food that she had come to appreciate in France. Her first book appeared when rationing was still in force after the war and most of the ingredients she had so lovingly described were not available. At the time her book was read rather than used, and created in its readers a yearning both for good ingredients and for a way of life that saw more in food and cooking than mere sustenance, but her later books confirmed her position as the most inspirational and influential cookery writer in the English language. She shared with Jane Grigson, an equally influential writer, an absorbing interest in the literature of cookery, as well as the practical side. Jane Grigson was brought up in the north-east of England. She was renowned for her fine writing on food and cookery, often catching the imagination with a deftly chosen fragment of history or poetry, but never failing to explain the 'why' as well as the 'how' of cookery, winning herself a wide audience because she was, above all, a friendly writer.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 5: Introduction to Welsh Short Stories</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>It was an American wit who listed one of man's greatest virtues as the art of making the long story short, but he was saying nothing about the short story, which has its own necessary length, neither too long nor too short, and is at its best when it presents a revealing insight into a person in a particular situation. What interests me most is being at the core of another life, seeing new light thrown upon it through the mind and world of the central character. It is a help if I am so involved at the outset that my attention does not wander and that my sympathies are immediately engaged, but ultimately, I must know more at the end than I did at the beginning.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>These stories have been chosen to fulfil such requirements where they can be met, but they are in addition, of a place and a time. The place is Wales and the time is the twentieth century. They reflect Wales, not always flatteringly, as it is and has been. English writers, it has been said, are often refugees from society, but almost all the stories in this book written by Welsh men and women show a concern for a particular landscape or community. It is as if Welsh writers cannot escape this involvement, and often there is also a sense of characters off stage, present but unseen at the storyteller's elbow.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>I have not otherwise been able to define a specific characteristic of the Welsh story which makes it immediately identifiable, save for the nationality or place of residence of the writer, but it should be pointed out that some Welsh writers writing in English have faced particular difficulties when they have felt the need to emphasise their difference from English counterparts. Often this need has led to stereotyped patterns of speech, the whimsicality of which often gives a false impression.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There is an abundance of riches from which the anthologist may choose and my task has been made easier by the selections of other editors whose choices I have tried not to duplicate where possible. I have tried to represent all Welsh writers, including those whose work belies the concept of Wales as a homogeneous society. All arguments about degrees of Welshness I find to be fruitless; for me, the story is the thing, although on re-reading so many stories in preparing this volume, I could not help but detect the security of so many writers in the Welsh language, which has freed them from painful attempts to emphasise their nationality. Ironically, this freedom seems to be in danger of ending and appears to have been replaced by the aim of political conversion, to the detriment, in my view, of the storyteller's art.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t6-rg-5a",
+          "instruction": "Choose the answer (A, B, C or D) which you think fits best according to the text. (Questions 19-26)",
+          "questions": [
+            {
+              "id": "q-cpe2t6-52",
+              "type": "multiple_choice",
+              "instruction": "19. From the text, free glutamate as a flavour enhancer can be obtained",
+              "options": [
+                "A. from mature fruit and vegetables.",
+                "B. from fermenting soy sauce and vinegar.",
+                "C. from sugar beet or sugar cane.",
+                "D. from a type of Japanese seaweed."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết nói: 'is made as a flavour enhancer by a fermentation process, commonly using sugar beet or sugarcane'. Glutamate tự do được SẢN XUẤT từ sugar beet hoặc sugarcane. Bẫy: D hấp dẫn vì seaweed được đề cập nhưng đó là cách cooks PHÁT HIỆN hương vị, không phải cách sản xuất glutamate hiện đại. A — ripening tăng glutamate TỰ NHIÊN, không phải sản xuất. B — soy sauce/vinegar là ví dụ fermentation tương tự, không phải nguồn sản xuất MSG. Chuyên đề: Reading — detail.",
+              "answerLocation": "made as a flavour enhancer by a fermentation process, commonly using sugar beet or sugarcane",
+              "category": "cpe_part_5",
+              "source": "Page 136, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-53",
+              "type": "multiple_choice",
+              "instruction": "20. What does the writer say about umami?",
+              "options": [
+                "A. All food would be tasteless and bland without it.",
+                "B. It should be added to all foods to improve the taste.",
+                "C. It is a basic food taste.",
+                "D. It is an entirely natural ingredient."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết nói: 'a fifth basic taste called umami has been recognised.' — Umami là VỊ CƠ BẢN thứ năm. 'A basic food taste' = vị cơ bản của thực phẩm. Bẫy: A quá tuyệt đối — không phải TẤT CẢ thực phẩm đều cần umami. B không được nêu — bài không khuyến nghị thêm umami vào mọi thứ. D — MSG có thể tự nhiên hoặc sản xuất, bài không nói 'entirely natural'. Chuyên đề: Reading — stated fact.",
+              "answerLocation": "a fifth basic taste called umami has been recognised",
+              "category": "cpe_part_5",
+              "source": "Page 136, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-54",
+              "type": "multiple_choice",
+              "instruction": "21. The text suggests that for processed organic food",
+              "options": [
+                "A. organic products last longer than processed foods.",
+                "B. the range of processed foods is still limited.",
+                "C. the appearance of food used in processing is unimportant.",
+                "D. fraud has entered the organic food industry."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết nói: 'organic fruit and vegetables earmarked for processing do not have to be as cosmetically perfect as their fresh counterparts.' — Thực phẩm dùng để chế biến KHÔNG CẦN đẹp mắt. 'The appearance is unimportant' = ngoại hình không quan trọng. Bẫy: A sai — bài nói 'reduces shelf-life problems' nhưng không nói organic lâu hơn processed. B không được đề cập. D không có bằng chứng. Chuyên đề: Reading — inference from detail.",
+              "answerLocation": "do not have to be as cosmetically perfect as their fresh counterparts",
+              "category": "cpe_part_5",
+              "source": "Page 137, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-55",
+              "type": "multiple_choice",
+              "instruction": "22. What may tempt consumers to try organic products?",
+              "options": [
+                "A. Brand loyalty.",
+                "B. An idealistic attitude.",
+                "C. Consumer awareness.",
+                "D. Larger farms."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Bài viết nói: 'consumers who are reluctant to buy organic products may be tempted to actually try them if they see a name they trust.' — 'A name they trust' = thương hiệu họ tin tưởng = Brand loyalty. Người tiêu dùng sẵn sàng thử organic NẾU thấy THƯƠNG HIỆU quen thuộc. Bẫy: B — idealistic attitude là của organic pioneers, không phải consumers. C quá chung chung. D không được đề cập. Chuyên đề: Reading — inference from motivation.",
+              "answerLocation": "may be tempted to actually try them if they see a name they trust",
+              "category": "cpe_part_5",
+              "source": "Page 137, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-56",
+              "type": "multiple_choice",
+              "instruction": "23. From the text, chillis",
+              "options": [
+                "A. are closely related to tomatoes and other fruit.",
+                "B. all have a hot, burning taste.",
+                "C. seem to be adaptable plants.",
+                "D. will only grow in selected areas."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài nói: 'They are as easy to cultivate as tomatoes and are one of the world's most widely distributed crops.' — Dễ trồng VÀ phân bố rộng khắp = ADAPTABLE (dễ thích nghi). Bẫy: A sai — bài nói 'as easy to cultivate AS tomatoes' (so sánh cách trồng), không phải 'closely related' (họ hàng thực vật). B sai — có loại 'mild' (nhẹ). D NGƯỢC nghĩa — 'most widely distributed crops'. Chuyên đề: Reading — paraphrasing adaptability.",
+              "answerLocation": "as easy to cultivate as tomatoes... one of the world's most widely distributed crops",
+              "category": "cpe_part_5",
+              "source": "Page 138, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-57",
+              "type": "multiple_choice",
+              "instruction": "24. Capsaicin",
+              "options": [
+                "A. contains a pain-killing ingredient.",
+                "B. is automatically graded by strength.",
+                "C. causes a physical reaction when eaten.",
+                "D. is measured according to variety."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài nói: 'This potent chemical not only causes the fiery sensation, but also triggers the brain to produce endorphins.' — Capsaicin GÂY RA phản ứng vật lý: cảm giác cay nóng VÀ kích thích não sản xuất endorphins. Bẫy: A — endorphins là do NÃO sản xuất, capsaicin không 'chứa' chúng. B — grading by computers nhưng không 'automatically'. D — đo theo 'parts per million of capsaicin', không theo variety. Chuyên đề: Reading — cause and effect.",
+              "answerLocation": "causes the fiery sensation... triggers the brain to produce endorphins",
+              "category": "cpe_part_5",
+              "source": "Page 138, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-58",
+              "type": "multiple_choice",
+              "instruction": "25. The first books by the two writers",
+              "options": [
+                "A. were written in France.",
+                "B. were enjoyable to read.",
+                "C. contained basic, wholesome recipes.",
+                "D. gave them instant recognition."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Elizabeth David's first book 'was read rather than used' (đọc để thưởng thức, không để nấu — vì nguyên liệu không có) và 'created in its readers a yearning'. Jane Grigson 'was renowned for her fine writing... catching the imagination'. Cả hai đều viết sách THƯỞNG THỨC KHI ĐỌC. Bẫy: A sai — David sống ở Pháp nhưng VIẾT ở Anh. C sai — nguyên liệu David mô tả 'were not available' (không cơ bản). D sai — David's 'later books confirmed her position' (không phải sách đầu). Chuyên đề: Reading — comparison inference.",
+              "answerLocation": "her book was read rather than used... renowned for her fine writing",
+              "category": "cpe_part_5",
+              "source": "Page 139, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-59",
+              "type": "multiple_choice",
+              "instruction": "26. The two writers",
+              "options": [
+                "A. simplified the art of cooking.",
+                "B. combined their ideas on French cooking.",
+                "C. improved people's ability to cook.",
+                "D. altered the way we eat today."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Câu đầu: 'Two cookery writers are often credited with the present revival of interest in food and cooking.' — Họ được ghi nhận tạo ra SỰ HỒI SINH quan tâm đến ẩm thực = THAY ĐỔI cách chúng ta ăn ngày nay. Bẫy: A — không đề cập đơn giản hóa. B — họ CHIA SẺ (shared) interest nhưng không 'combined ideas'. C — David's book 'was read rather than used' nên không cải thiện khả năng nấu. Chuyên đề: Reading — main idea.",
+              "answerLocation": "credited with the present revival of interest in food and cooking",
+              "category": "cpe_part_5",
+              "source": "Page 139, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        },
+        {
+          "id": "cpe2-t6-rg-5b",
+          "instruction": "Choose the answer (A, B, C or D) which you think fits best according to the text. (Questions 34-40)",
+          "questions": [
+            {
+              "id": "q-cpe2t6-60",
+              "type": "multiple_choice",
+              "instruction": "34. What does the writer say is essential when he reads a short story?",
+              "options": [
+                "A. It should be the correct length for a short story.",
+                "B. The story should be an amusing one.",
+                "C. It should deepen his understanding of human nature.",
+                "D. It should hold his attention from the start."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết nói: 'ultimately, I must know more at the end than I did at the beginning' và 'a revealing insight into a person in a particular situation'. ĐIỀU CỐT YẾU (essential/ultimately) là hiểu sâu hơn về bản chất con người. Bẫy: D hấp dẫn — 'It is a help if... my attention does not wander' nhưng đó chỉ là 'a help' (hữu ích), không phải 'essential'. A — length được đề cập nhưng không phải yếu tố cốt yếu. B — 'a smile' chỉ là bonus ('Now and again'). Chuyên đề: Reading — distinguishing essential from helpful.",
+              "answerLocation": "ultimately, I must know more at the end than I did at the beginning",
+              "category": "cpe_part_5",
+              "source": "Page 143, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-61",
+              "type": "multiple_choice",
+              "instruction": "35. In the second paragraph the writer says the stories show",
+              "options": [
+                "A. how English writers resort to escapism.",
+                "B. real life in Wales in the past and in the present.",
+                "C. a new form of writing.",
+                "D. the best aspects of Welsh life."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Bài viết nói: 'They reflect Wales, not always flatteringly, as it is and has been.' — Phản ánh Wales THỰC TẾ (không luôn tốt đẹp), HIỆN TẠI VÀ QUÁ KHỨ. Bẫy: A — English writers being 'refugees from society' được đề cập nhưng để TƯƠNG PHẢN với Welsh writers, không phải nội dung chính. D sai — 'not always flatteringly' = KHÔNG PHẢI chỉ mặt tốt. C không được nêu. Chuyên đề: Reading — main idea of paragraph.",
+              "answerLocation": "They reflect Wales, not always flatteringly, as it is and has been",
+              "category": "cpe_part_5",
+              "source": "Page 143, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-62",
+              "type": "multiple_choice",
+              "instruction": "36. The writer suggests that, unlike English writers, Welsh writers",
+              "options": [
+                "A. have a strong sense of place.",
+                "B. become closely involved with the characters they write about.",
+                "C. only write about densely populated areas.",
+                "D. avoid writing about specific people or places."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Bài viết nói: 'almost all the stories... show a concern for a particular landscape or community. It is as if Welsh writers cannot escape this involvement.' Welsh writers có GẮN BÓ MẠNH VỚI ĐỊA ĐIỂM (landscape/community). English writers là 'refugees from society' (trốn khỏi xã hội) → Welsh writers NGƯỢC LẠI. Bẫy: B — involvement là với LANDSCAPE/COMMUNITY, không phải characters cụ thể. C sai — 'crowded places' được đề cập nhưng không phải 'only'. D NGƯỢC nghĩa. Chuyên đề: Reading — contrast and inference.",
+              "answerLocation": "a concern for a particular landscape or community... Welsh writers cannot escape this involvement",
+              "category": "cpe_part_5",
+              "source": "Page 143, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-63",
+              "type": "multiple_choice",
+              "instruction": "37. Some writers in English make their stories identifiable as Welsh by",
+              "options": [
+                "A. portraying Welsh characters in a comical way.",
+                "B. deliberately using dialect forms.",
+                "C. observing life in England from a Welsh point of view.",
+                "D. bowing to pressure from their Welsh readers."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Bài viết nói: 'this need has led to stereotyped patterns of speech, the whimsicality of which often gives a false impression.' — Nhu cầu khác biệt dẫn đến KHUÔN MẪU CÁCH NÓI (stereotyped speech patterns). 'Forced use of language' = CÁCH DÙNG NGÔN NGỮ CỐ Ý = deliberately using dialect forms. Bẫy: A hấp dẫn — 'those who like to see their Welshmen as clowns' nhưng đó là áp lực BÊN NGOÀI, không phải mục đích của writers. C là về Alun Lewis cụ thể. D — writers 'needed much encouragement' nhưng không phải 'bowing to pressure'. Chuyên đề: Reading — cause and method.",
+              "answerLocation": "this need has led to stereotyped patterns of speech... forced use of language",
+              "category": "cpe_part_5",
+              "source": "Page 143, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-64",
+              "type": "multiple_choice",
+              "instruction": "38. What does the writer say helped him choose the stories in the book?",
+              "options": [
+                "A. He could initially ignore a number of stories.",
+                "B. The large number of Welsh stories to choose from.",
+                "C. Many writers lived outside Wales.",
+                "D. Their popularity with the reading public."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Bài viết nói: 'There is an abundance of riches from which the anthologist may choose and my task has been made easier by the selections of other editors.' — SỐ LƯỢNG LỚN truyện ('abundance of riches') giúp việc chọn DỄ HƠN. Bẫy: A — 'not to duplicate' choices nhưng không phải 'initially ignore'. C — Alun Lewis sống ngoài Wales nhưng đó là ví dụ riêng. D không được đề cập. Chuyên đề: Reading — stated reason.",
+              "answerLocation": "There is an abundance of riches from which the anthologist may choose",
+              "category": "cpe_part_5",
+              "source": "Page 143, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-65",
+              "type": "multiple_choice",
+              "instruction": "39. The stories in the book",
+              "options": [
+                "A. are all translations from the original Welsh language.",
+                "B. put across the idea that all Welsh people are the same.",
+                "C. represent a wide variety of Welsh authors.",
+                "D. have a tendency to accentuate the author's origins."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Bài viết nói: 'I have tried to represent all Welsh writers, including those whose work belies the concept of Wales as a homogeneous society, some who write in English and others who write exclusively in Welsh.' — Tác giả cố gắng ĐẠI DIỆN TẤT CẢ nhà văn Welsh = wide variety. Bẫy: A sai — bao gồm cả writers viết bằng English. B NGƯỢC nghĩa — 'belies the concept of Wales as a homogeneous society'. D — một số writers nhấn mạnh quốc tịch nhưng đó là VẤN ĐỀ, không phải đặc điểm chung. Chuyên đề: Reading — authorial intention.",
+              "answerLocation": "I have tried to represent all Welsh writers... some who write in English and others exclusively in Welsh",
+              "category": "cpe_part_5",
+              "source": "Page 143, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-66",
+              "type": "multiple_choice",
+              "instruction": "40. What does the writer say about the writers who write in Welsh today?",
+              "options": [
+                "A. They represent Wales throughout its history.",
+                "B. Writing a good story may not be their main purpose.",
+                "C. They have less skill than writers using English.",
+                "D. The translations of their work are not always accurate."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Bài viết nói: 'this freedom seems to be in danger of ending and appears to have been replaced by the aim of political conversion, to the detriment, in my view, of the storyteller's art.' — Mục đích đã chuyển sang CHUYỂN ĐỔI CHÍNH TRỊ, GÂY HẠI cho nghệ thuật kể chuyện. Tức là viết truyện hay KHÔNG CÒN LÀ mục đích chính. Bẫy: A quá rộng. C không được nêu. D không được đề cập. Chuyên đề: Reading — criticism and implication.",
+              "answerLocation": "replaced by the aim of political conversion, to the detriment of the storyteller's art",
+              "category": "cpe_part_5",
+              "source": "Page 143, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t6-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "You are going to read an extract from a novel. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap (27-33). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Anna's Story</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>'I'm sorry,' said Oliver dryly. 'I suppose she goes back to school shortly?' 'No, she was — we were asked to remove her. She ran away from school, you know, last term. Not in this direction.' 'Who enticed her? Where did she go?' 'I don't know,' said Henry. 'You should find out. What will she do now?' Henry looked vague and began to move away from the gate. 'Nobody seems to know. I believe she's quite clever. The school seemed to think so, before all this trouble.' 'Isn't it time,' said Oliver professionally, 'she was making her mind up?'</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 27]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>One gets sore. Of course, she thought, hating her father now, too, for betraying her too casually; of course, I'm silly. I know I'm silly, I know this stage will pass. But meanwhile, until I'm not silly, there's nothing. One is trapped in one's own silliness, quite as much as in love. Probably more.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 28]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Here she went out into the city to look at it, there was nothing she could do that day, it was Sunday, nothing was ever done on a Sunday. She climbed up onto the walls, with her suitcase knocking against her knees, and walked briskly round them, looking out brightly at roofs and sloping grass ramparts. Just not to be at school was a release, to be doing something on her own, was to be light and singing.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 29]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>She walked a long way in this indecision, and in the end, when it was already dark, she came back to the station and sat on her suitcase, staring miserably at the bulk of the Station Hotel. She was very tired and there was a fine rain falling.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 30]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Finally, she walked into the first house she came to — a small Victorian tenement house, painted an uneven chocolate brown, with narrow, dirty windows and a hand painted notice in red ink. Bed and Breakfast. Her room was horrid — a sloping attic with frosted glass at the window, and grey, limp curtains and sheets, which seemed slightly greasy to the touch. The bed was cast iron and rattled. There was no mirror, only a huge wash stand with a bowl of water, filmed over with dust.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 31]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>And then failure set in. Looking back, Anna could still not understand it, and jibbed, so painful was the remembering, at trying to do so. She hadn't known, when she got there, quite what she meant to do, but there seemed, from the garden, to have been so many things.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 32]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>At first, she had been filling a putative 'waiting time' and later she could not think of anything else to do. When she had visited all the cinemas, and her money was running out, she packed her suitcase, paid the landlady and spent her last shillings on a ticket back to school.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 33]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>When she arrived late at night, she was hustled crossly into the sick-room, isolated and allowed to speak to no one. In a day's time, Henry appeared and told her she was to go and pack her trunk, they were going home, now. Anna, who had spent her period of isolation sitting on the bed and looking out of the window, had not got up when he came in; now she looked up at him and said, 'Why? When'm I coming back?' 'You aren't,' Henry said. 'I've been asked to remove you.'</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t6-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph you do not need to use.",
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "She could have got a job. She could have sat, alternatively, in the Minster, which was beautiful, and have thought out what she wanted. She could have worked all day and written the novel at night. But she had gone to the pictures, afternoon and evening, sitting in the red warmth, in the cheapest seats, sometimes seeing the whole programme through twice."
+            },
+            {
+              "label": "B",
+              "text": "In the evening she began walking from hotel to hotel, hesitating at every front door, afraid to go in. She felt that inside, under bright lights, porters and receptionists would immediately see that she was in some way a fraud. They would know she was out without leave from somewhere where she should have been shut up, and they would find out from her where it was, and make telephone calls."
+            },
+            {
+              "label": "C",
+              "text": "'I don't want to,' said Anna. She added, unwillingly, exposing herself, 'It's not as though it made any real difference to anyone whether I was there or not.' 'Ah, I see,' said Oliver, as though she had offered him an important confidence. He seemed to think that she had given him the right to settle in; at least, he drew forward one of Jeremy's boxes from the wall, dusted it, and sat on it, facing her."
+            },
+            {
+              "label": "D",
+              "text": "She had been quite calm over all this at the time, as though mesmerised by her daily routine, cold breakfast, cold early lunch, the cinema, supper, the cinema and cold bed, into thinking not that this course of action was inevitable, it was nothing as forceful as that, but that all her actions had no weight and no importance, that she was living in a vacuum, and might as well do anyone thing as any other. It had been a running down, an unwinding, and when her mind was moving slowly enough, she saw, in blinkers, no road except this. So, with this curious calmness, she went back."
+            },
+            {
+              "label": "E",
+              "text": "She felt suddenly and finally trapped — when she pushed up the window with a great deal of effort to look at the sky, she was confronted by a blank wall and a dark window. Once up, the window would not close again, and the draught sucked directly across the bed. Anna slept badly."
+            },
+            {
+              "label": "F",
+              "text": "Anna saw them for a moment and then heard them weaving back as they had come, between the trees, one behind the other. They said something indistinguishable and then Henry's voice reached her for a moment, 'She'll grow out of it,' and then she heard the creak of the gate into the garden. Grow out of it, she thought. Of course I'll grow out of it. I'm growing out of it now, that's what hurts. I'm growing out of everything, all the time, too quickly."
+            },
+            {
+              "label": "G",
+              "text": "Looking back at this time from the garden Anna told herself that there was no reason to be afraid, no reason at all, that she had behaved extremely stupidly — and, nevertheless, she shuddered, remembering the heavy street, and the cold gas lamps, the sudden grim and oppressive northernness of the city that had been by day so lightly poised, and carved, and clean."
+            },
+            {
+              "label": "H",
+              "text": "And they had broken her mood, obtruding things she was deliberately not thinking of, her future and, worse, her abortive attempt to escape, which she would have preferred to forget altogether. She had left quietly one Sunday morning whilst the other girls were putting on their Sunday hats for church and had taken the train north as far as the largest city, which was York."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q-cpe2t6-67",
+              "type": "gapped_text",
+              "instruction": "Gap 27:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án F. Đoạn F: Anna nghe thấy Henry nói 'She'll grow out of it' — bố cô nói về cô một cách thờ ơ. Sau gap 27, Anna nghĩ 'hating her father now, too, for betraying her too casually' — cô GHÉT bố vì PHẢN BỘI cô quá dễ dàng. Câu 'She'll grow out of it' = phản bội/coi thường = 'betraying her too casually'. Chuyên đề: Text coherence — emotional cause and effect.",
+              "answerLocation": "Gap 27 — after Oliver's question, before 'hating her father for betraying her'",
+              "category": "cpe_part_6",
+              "source": "Page 140, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-68",
+              "type": "gapped_text",
+              "instruction": "Gap 28:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn H: 'They had broken her mood... her abortive attempt to escape... She had left quietly one Sunday morning... taken the train north... to York.' Đoạn này chuyển từ HIỆN TẠI (trong vườn) sang HỒI TƯỞNG (trốn khỏi trường đến York). Sau gap 28: 'Here she went out into the city' — tiếp tục câu chuyện ở York. 'York' trong H nối trực tiếp với 'the city' sau gap. Chuyên đề: Text coherence — flashback transition.",
+              "answerLocation": "Gap 28 — transitions from present garden scene to flashback in York",
+              "category": "cpe_part_6",
+              "source": "Page 140, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-69",
+              "type": "gapped_text",
+              "instruction": "Gap 29:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn G: 'Looking back at this time from the garden' — xen vào hồi tưởng bằng suy nghĩ HIỆN TẠI. Anna 'shuddered, remembering the heavy street, the cold gas lamps' — nhớ lại buổi TỐI u ám. Trước gap 29: ban NGÀY 'light and singing'. Sau gap 29: 'She walked a long way in this indecision' — buổi tối. G là cầu nối từ ngày sang đêm, với suy nghĩ hiện tại xen vào. Chuyên đề: Text coherence — present-day interjection in flashback.",
+              "answerLocation": "Gap 29 — between daytime freedom and evening indecision",
+              "category": "cpe_part_6",
+              "source": "Page 140, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-70",
+              "type": "gapped_text",
+              "instruction": "Gap 30:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn B: 'In the evening she began walking from hotel to hotel, hesitating at every front door, afraid to go in.' Anna sợ bị phát hiện là 'fraud'. Trước gap 30: ngồi ở ga xe lửa, mệt, mưa phùn. Sau gap 30: 'Finally, she walked into the first house she came to' — cuối cùng tìm được B&B. B giải thích TẠI SAO cô không vào hotel → phải tìm B&B rẻ tiền. Chuyên đề: Text coherence — cause and effect (fear → B&B).",
+              "answerLocation": "Gap 30 — after station scene, before finding the tenement",
+              "category": "cpe_part_6",
+              "source": "Page 140, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-71",
+              "type": "gapped_text",
+              "instruction": "Gap 31:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án E. Đoạn E: 'She felt suddenly and finally trapped — pushed up the window... confronted by a blank wall... draught sucked across the bed. Anna slept badly.' Mô tả đêm đầu tiên trong phòng tồi tàn. Trước gap 31: mô tả phòng xấu xí. E tiếp tục mô tả trải nghiệm TRONG phòng đó — bị mắc kẹt, ngủ không yên. Sau gap 31: 'failure set in' — sáng hôm sau, thất bại bắt đầu. Chuyên đề: Text coherence — elaboration of setting.",
+              "answerLocation": "Gap 31 — after room description, before failure sets in",
+              "category": "cpe_part_6",
+              "source": "Page 140, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-72",
+              "type": "gapped_text",
+              "instruction": "Gap 32:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn A: 'She could have got a job... written the novel at night. But she had gone to the pictures.' Anna liệt kê những gì CÓ THỂ đã làm nhưng THAY VÀO ĐÓ chỉ đi xem phim. Trước gap 32: 'there seemed to have been so many things' (nhiều thứ có thể làm). A giải thích CỤ THỂ 'so many things' là gì và tại sao cô THẤT BẠI (chỉ đi xem phim). Chuyên đề: Text coherence — elaboration of failure.",
+              "answerLocation": "Gap 32 — after 'so many things', explains the failure",
+              "category": "cpe_part_6",
+              "source": "Page 141, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t6-73",
+              "type": "gapped_text",
+              "instruction": "Gap 33:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn D: 'She had been quite calm... mesmerised by her daily routine... living in a vacuum... So, with this curious calmness, she went back.' Anna mô tả trạng thái TÊ LIỆT tinh thần khi quyết định TRỞ VỀ trường. Trước gap 33: cô hết tiền, mua vé về. D giải thích TÂM TRẠNG khi quyết định quay lại — không phải quyết định tích cực mà là sự đầu hàng bình lặng. Sau gap 33: 'When she arrived late at night' — kết quả. C là đoạn thừa. Chuyên đề: Text coherence — psychological state before action.",
+              "answerLocation": "Gap 33 — before arriving back at school, explains psychological state",
+              "category": "cpe_part_6",
+              "source": "Page 141, Test 6, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

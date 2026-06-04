@@ -1,0 +1,566 @@
+{
+  "policy": {
+    "version": "topic-diversity-v3-2026-05-26",
+    "normalPracticeTargetPerTopic": 35,
+    "action": "Strictly cap generated topic clones in normal practice by moving overflow to remedial_pool.",
+    "hardPolicy": "Hard generated rows can be moved only after lower-difficulty overflow candidates are exhausted.",
+    "apply": true,
+    "strictCoreCap": true,
+    "includeAllFiles": false
+  },
+  "summary": {
+    "recordsScanned": 8495,
+    "topicsScanned": 2389,
+    "topicsOverTarget": 24,
+    "movedToRemedial": 414,
+    "unresolvedOverflow": 0,
+    "restoredPreviousPolicyRows": 108,
+    "changedByFile": {
+      "antigravity-bank.json": 313,
+      "archive-source-ai-bank.json": 80,
+      "kaplan-sat-math-ai-bank.json": 10,
+      "sat-king-supplemental-ai-bank.json": 3,
+      "sat-1590-elite-ai-bank.json": 8
+    }
+  },
+  "topics": [
+    {
+      "topic": "hypotenuse",
+      "total": 96,
+      "coreVisibleBefore": 91,
+      "target": 35,
+      "overflowBefore": 56,
+      "movedToRemedial": 56,
+      "unresolvedOverflow": 0,
+      "candidateCount": 84,
+      "sampleMovedIds": [
+        "antigravity-1aa10986",
+        "antigravity-2c0cdd7d",
+        "antigravity-45ef40ee",
+        "antigravity-4824662a",
+        "antigravity-7942908c",
+        "antigravity-8a80c142",
+        "antigravity-8a931032",
+        "antigravity-ab6cde7c"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 35,
+        "archive-source-ai-bank.json": 14,
+        "kaplan-sat-math-ai-bank.json": 5,
+        "sat-king-supplemental-ai-bank.json": 2
+      }
+    },
+    {
+      "topic": "intersection",
+      "total": 69,
+      "coreVisibleBefore": 69,
+      "target": 35,
+      "overflowBefore": 34,
+      "movedToRemedial": 34,
+      "unresolvedOverflow": 0,
+      "candidateCount": 64,
+      "sampleMovedIds": [
+        "antigravity-b308eff2",
+        "antigravity-35ed2518",
+        "antigravity-hard-2511eae7",
+        "antigravity-7f5a1858",
+        "antigravity-hard-2d00f5d3",
+        "antigravity-hard-0f0e220b",
+        "antigravity-hard-03db6e9c",
+        "antigravity-hard-5946cdd4"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 34
+      }
+    },
+    {
+      "topic": "rectangular",
+      "total": 73,
+      "coreVisibleBefore": 68,
+      "target": 35,
+      "overflowBefore": 33,
+      "movedToRemedial": 33,
+      "unresolvedOverflow": 0,
+      "candidateCount": 66,
+      "sampleMovedIds": [
+        "antigravity-508328d7",
+        "antigravity-552f8df6",
+        "antigravity-69e9b105",
+        "antigravity-8f288538",
+        "antigravity-6a574ade",
+        "antigravity-7877deb5",
+        "antigravity-easy-18e3165b",
+        "antigravity-easy-3155ed46"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 15,
+        "archive-source-ai-bank.json": 13,
+        "kaplan-sat-math-ai-bank.json": 5
+      }
+    },
+    {
+      "topic": "probability",
+      "total": 67,
+      "coreVisibleBefore": 67,
+      "target": 35,
+      "overflowBefore": 32,
+      "movedToRemedial": 32,
+      "unresolvedOverflow": 0,
+      "candidateCount": 59,
+      "sampleMovedIds": [
+        "archive-ai-archive-signal-p-n-ies-sat-math-001",
+        "archive-ai-archive-signal-panda-sat-math-005",
+        "archive-ai-archive-signal-panda-sat-math-033",
+        "archive-ai-archive-signal-panda-sat-math-047",
+        "archive-ai-archive-signal-panda-sat-math-019",
+        "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-012",
+        "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-026",
+        "archive-ai-archive-signal-mcclenathan-mike-pwn-the-sat-math-guide-040"
+      ],
+      "sourceMixMoved": {
+        "archive-source-ai-bank.json": 13,
+        "antigravity-bank.json": 19
+      }
+    },
+    {
+      "topic": "relationship",
+      "total": 63,
+      "coreVisibleBefore": 63,
+      "target": 35,
+      "overflowBefore": 28,
+      "movedToRemedial": 28,
+      "unresolvedOverflow": 0,
+      "candidateCount": 56,
+      "sampleMovedIds": [
+        "antigravity-b474f577",
+        "antigravity-b7327b95",
+        "antigravity-ab4f63fe",
+        "antigravity-cc84abac",
+        "antigravity-d3bb1c5f",
+        "antigravity-d15e9bc6",
+        "antigravity-95babc42",
+        "antigravity-easy-22516314"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 28
+      }
+    },
+    {
+      "topic": "y-intercept",
+      "total": 61,
+      "coreVisibleBefore": 61,
+      "target": 35,
+      "overflowBefore": 26,
+      "movedToRemedial": 26,
+      "unresolvedOverflow": 0,
+      "candidateCount": 53,
+      "sampleMovedIds": [
+        "antigravity-20575ffc",
+        "antigravity-4c10afff",
+        "antigravity-d270089e",
+        "antigravity-f4293cd6",
+        "antigravity-0b4f364f",
+        "antigravity-6c3b9d7c",
+        "antigravity-85e494f8",
+        "antigravity-d81c58b7"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 26
+      }
+    },
+    {
+      "topic": "completes",
+      "total": 59,
+      "coreVisibleBefore": 59,
+      "target": 35,
+      "overflowBefore": 24,
+      "movedToRemedial": 24,
+      "unresolvedOverflow": 0,
+      "candidateCount": 57,
+      "sampleMovedIds": [
+        "antigravity-ph2e1-a8cad45a",
+        "antigravity-ph2e1-47422f17",
+        "antigravity-easy-5a4c606f",
+        "antigravity-easy-59fb6977",
+        "antigravity-easy-b016d301",
+        "antigravity-easy-52a2e013",
+        "antigravity-easy-d60f1246",
+        "antigravity-easy-55b4f305"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 24
+      }
+    },
+    {
+      "topic": "infinitely",
+      "total": 58,
+      "coreVisibleBefore": 58,
+      "target": 35,
+      "overflowBefore": 23,
+      "movedToRemedial": 23,
+      "unresolvedOverflow": 0,
+      "candidateCount": 53,
+      "sampleMovedIds": [
+        "antigravity-87e56577",
+        "antigravity-phA-cde0b9ed",
+        "antigravity-58393631",
+        "antigravity-bda7c22a",
+        "antigravity-1600-79ffaa11",
+        "antigravity-hard-438ebabd",
+        "antigravity-hard-212f9da9",
+        "antigravity-hard-1265fd00"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 23
+      }
+    },
+    {
+      "topic": "observations",
+      "total": 57,
+      "coreVisibleBefore": 57,
+      "target": 35,
+      "overflowBefore": 22,
+      "movedToRemedial": 22,
+      "unresolvedOverflow": 0,
+      "candidateCount": 56,
+      "sampleMovedIds": [
+        "archive-ai-archive-signal-ivy-global-sat-2016-029",
+        "archive-ai-archive-signal-hi-hello-009",
+        "archive-ai-archive-signal-kaplan3-014",
+        "archive-ai-archive-signal-kaplan4-014",
+        "archive-ai-archive-signal-2017-05-vn-019",
+        "archive-ai-archive-signal-2019-may-us-sat-qas-039",
+        "archive-ai-archive-signal-2019-october-us-034",
+        "archive-ai-archive-signal-kaplan5-009"
+      ],
+      "sourceMixMoved": {
+        "archive-source-ai-bank.json": 17,
+        "antigravity-bank.json": 5
+      }
+    },
+    {
+      "topic": "satisfies",
+      "total": 56,
+      "coreVisibleBefore": 54,
+      "target": 35,
+      "overflowBefore": 19,
+      "movedToRemedial": 19,
+      "unresolvedOverflow": 0,
+      "candidateCount": 44,
+      "sampleMovedIds": [
+        "antigravity-9e3296c0",
+        "antigravity-9f599b8b",
+        "antigravity-b0fa7e14",
+        "antigravity-ae3da765",
+        "strategy-math-224-20260525-085",
+        "strategy-math-224-20260525-086",
+        "antigravity-easy-026c2226",
+        "antigravity-easy-108cc274"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 16,
+        "sat-1590-elite-ai-bank.json": 3
+      }
+    },
+    {
+      "topic": "circular",
+      "total": 65,
+      "coreVisibleBefore": 52,
+      "target": 35,
+      "overflowBefore": 17,
+      "movedToRemedial": 17,
+      "unresolvedOverflow": 0,
+      "candidateCount": 51,
+      "sampleMovedIds": [
+        "antigravity-b5fc507d",
+        "antigravity-easy-2e6366ca",
+        "antigravity-easy-69ecadfb",
+        "antigravity-easy-a84330c0",
+        "antigravity-easy-c630d371",
+        "antigravity-easy-f134d39d",
+        "archive-ai-archive-signal-hi-hello-027",
+        "archive-ai-archive-signal-ivy-global-sat-2016-023"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 6,
+        "archive-source-ai-bank.json": 11
+      }
+    },
+    {
+      "topic": "constants",
+      "total": 63,
+      "coreVisibleBefore": 51,
+      "target": 35,
+      "overflowBefore": 16,
+      "movedToRemedial": 16,
+      "unresolvedOverflow": 0,
+      "candidateCount": 49,
+      "sampleMovedIds": [
+        "antigravity-easy-21f314c8",
+        "antigravity-easy-3b25d7b4",
+        "antigravity-easy-3e978a80",
+        "antigravity-easy-50bb225a",
+        "antigravity-easy-fac66998",
+        "antigravity-easy-18a93539",
+        "antigravity-easy-41d8f563",
+        "antigravity-easy-88d67b90"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 16
+      }
+    },
+    {
+      "topic": "positive",
+      "total": 52,
+      "coreVisibleBefore": 50,
+      "target": 35,
+      "overflowBefore": 15,
+      "movedToRemedial": 15,
+      "unresolvedOverflow": 0,
+      "candidateCount": 45,
+      "sampleMovedIds": [
+        "antigravity-0106cf16",
+        "antigravity-3eac3e3d",
+        "antigravity-424f5072",
+        "antigravity-4843ff3b",
+        "antigravity-7852fba9",
+        "antigravity-9feba318",
+        "antigravity-a2ecda98",
+        "antigravity-b457707a"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 15
+      }
+    },
+    {
+      "topic": "interpretation",
+      "total": 46,
+      "coreVisibleBefore": 46,
+      "target": 35,
+      "overflowBefore": 11,
+      "movedToRemedial": 11,
+      "unresolvedOverflow": 0,
+      "candidateCount": 43,
+      "sampleMovedIds": [
+        "antigravity-43690c06",
+        "antigravity-ph2e1-828d82ca",
+        "antigravity-b56f8d09",
+        "antigravity-c0778288",
+        "antigravity-ph1im-73b4840a",
+        "antigravity-ph2e3-89896fa4",
+        "antigravity-ph2e3-4f2b0f96",
+        "antigravity-ph2e3-8c59700f"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 11
+      }
+    },
+    {
+      "topic": "values",
+      "total": 45,
+      "coreVisibleBefore": 45,
+      "target": 35,
+      "overflowBefore": 10,
+      "movedToRemedial": 10,
+      "unresolvedOverflow": 0,
+      "candidateCount": 40,
+      "sampleMovedIds": [
+        "antigravity-3d0d5c5f",
+        "antigravity-7ab69342",
+        "antigravity-phB-7b053a8b",
+        "antigravity-easy-4cc825c6",
+        "antigravity-easy-72c0c346",
+        "antigravity-easy-a4006b57",
+        "antigravity-easy-b578b2a4",
+        "antigravity-easy-e44dc5f2"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 10
+      }
+    },
+    {
+      "topic": "significantly",
+      "total": 44,
+      "coreVisibleBefore": 44,
+      "target": 35,
+      "overflowBefore": 9,
+      "movedToRemedial": 9,
+      "unresolvedOverflow": 0,
+      "candidateCount": 43,
+      "sampleMovedIds": [
+        "antigravity-67bd04b8",
+        "antigravity-fd389694",
+        "antigravity-ph2e1-abd99eac",
+        "antigravity-ph2e1-fdadab09",
+        "antigravity-46c80915",
+        "antigravity-ab37b2fa",
+        "antigravity-easy-d639e6e0",
+        "antigravity-ph1qe-7d12e431"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 9
+      }
+    },
+    {
+      "topic": "fundraiser",
+      "total": 53,
+      "coreVisibleBefore": 42,
+      "target": 35,
+      "overflowBefore": 7,
+      "movedToRemedial": 7,
+      "unresolvedOverflow": 0,
+      "candidateCount": 41,
+      "sampleMovedIds": [
+        "archive-ai-archive-signal-kaplan4-007",
+        "archive-ai-archive-signal-kaplan4-043",
+        "archive-ai-archive-signal-p-n-ies-sat-math-026",
+        "archive-ai-archive-signal-p-n-ies-sat-math-040",
+        "archive-ai-archive-signal-panda-sat-math-030",
+        "archive-ai-archive-signal-panda-sat-math-044",
+        "archive-ai-archive-signal-2019-october-us-015"
+      ],
+      "sourceMixMoved": {
+        "archive-source-ai-bank.json": 7
+      }
+    },
+    {
+      "topic": "exactly",
+      "total": 42,
+      "coreVisibleBefore": 42,
+      "target": 35,
+      "overflowBefore": 7,
+      "movedToRemedial": 7,
+      "unresolvedOverflow": 0,
+      "candidateCount": 34,
+      "sampleMovedIds": [
+        "antigravity-57b030fc",
+        "antigravity-01524404",
+        "antigravity-phA-a0c1eed7",
+        "antigravity-6776d91c",
+        "antigravity-5abf57e7",
+        "antigravity-hard-fafd0b8f",
+        "antigravity-hard-c389b019"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 7
+      }
+    },
+    {
+      "topic": "calibration",
+      "total": 45,
+      "coreVisibleBefore": 41,
+      "target": 35,
+      "overflowBefore": 6,
+      "movedToRemedial": 6,
+      "unresolvedOverflow": 0,
+      "candidateCount": 41,
+      "sampleMovedIds": [
+        "sat1590-math-265",
+        "sat1590-math-255",
+        "sat1590-math-260",
+        "sat1590-math-245",
+        "sat1590-math-250",
+        "strategy-math-200-even-hard-20260525-192"
+      ],
+      "sourceMixMoved": {
+        "sat-1590-elite-ai-bank.json": 5,
+        "antigravity-bank.json": 1
+      }
+    },
+    {
+      "topic": "presentation",
+      "total": 80,
+      "coreVisibleBefore": 40,
+      "target": 35,
+      "overflowBefore": 5,
+      "movedToRemedial": 5,
+      "unresolvedOverflow": 0,
+      "candidateCount": 40,
+      "sampleMovedIds": [
+        "archive-ai-archive-signal-2018-april-school-day-sat-also-may-2018-international-perfect-copy-mai-017",
+        "archive-ai-archive-signal-2018-april-school-day-sat-also-may-2018-international-perfect-copy-mai-018",
+        "archive-ai-archive-signal-2018-april-school-day-sat-also-may-2018-international-perfect-copy-mai-019",
+        "archive-ai-archive-signal-2018-april-school-day-sat-also-may-2018-international-perfect-copy-mai-020",
+        "archive-ai-archive-signal-cracking-sat-2020-prem-online-practice-test-6-answers-003"
+      ],
+      "sourceMixMoved": {
+        "archive-source-ai-bank.json": 5
+      }
+    },
+    {
+      "topic": "coordinator",
+      "total": 40,
+      "coreVisibleBefore": 40,
+      "target": 35,
+      "overflowBefore": 5,
+      "movedToRemedial": 5,
+      "unresolvedOverflow": 0,
+      "candidateCount": 40,
+      "sampleMovedIds": [
+        "strategy-math-200-20260525-133",
+        "strategy-math-200-20260525-138",
+        "strategy-math-200-20260525-052",
+        "strategy-math-200-20260525-061",
+        "strategy-math-200-20260525-129"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 5
+      }
+    },
+    {
+      "topic": "increased",
+      "total": 44,
+      "coreVisibleBefore": 39,
+      "target": 35,
+      "overflowBefore": 4,
+      "movedToRemedial": 4,
+      "unresolvedOverflow": 0,
+      "candidateCount": 33,
+      "sampleMovedIds": [
+        "antigravity-d01d5fd1",
+        "antigravity-b416967c",
+        "antigravity-d58dc9df",
+        "antigravity-easy-1e2c8be9"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 4
+      }
+    },
+    {
+      "topic": "neighborhoods",
+      "total": 43,
+      "coreVisibleBefore": 38,
+      "target": 35,
+      "overflowBefore": 3,
+      "movedToRemedial": 3,
+      "unresolvedOverflow": 0,
+      "candidateCount": 36,
+      "sampleMovedIds": [
+        "antigravity-ph2e1-b717adc1",
+        "antigravity-ph2e1-f0262daf",
+        "satking-rw-046"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 2,
+        "sat-king-supplemental-ai-bank.json": 1
+      }
+    },
+    {
+      "topic": "approximately",
+      "total": 37,
+      "coreVisibleBefore": 37,
+      "target": 35,
+      "overflowBefore": 2,
+      "movedToRemedial": 2,
+      "unresolvedOverflow": 0,
+      "candidateCount": 37,
+      "sampleMovedIds": [
+        "antigravity-dc746766",
+        "antigravity-c773635c"
+      ],
+      "sourceMixMoved": {
+        "antigravity-bank.json": 2
+      }
+    }
+  ]
+}

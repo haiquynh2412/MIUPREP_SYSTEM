@@ -1,0 +1,789 @@
+# MiuPrep Implementation Audit Plan
+
+Generated: 2026-06-04
+
+Purpose: turn the architecture audit into a controlled implementation plan. This file is the working checklist for future fixes so changes are done in the right order, with proof, and without skipping hidden risks.
+
+## 0. Decision Summary
+
+The audit direction is useful, but the implementation must be staged.
+
+- Do now: internal beta telemetry, event quality, content lazy-load/query service, sync hardening, quality gates.
+- Do after evidence: repair-loop rerouting, SRS tuning, Mastery V2 shadow mode, empirical difficulty, lightweight Elo, AI grading validation.
+- Defer until real need is proven: Graph DB, CRDT, IRT 3PL, AI consensus updating mastery, automatic self-healing graph edits, real-time battle room.
+
+Core principle: beta data first, architecture expansion second.
+
+## 0.1. Added Beta Evaluation Input
+
+Additional source reviewed: `miuprep_beta_evaluation_report.md`, generated from a simulated internal beta run on 2026-06-04.
+
+Useful signals from that report:
+
+- Entry gates and diagnostic target validity pass on the simulated beta package.
+- Recommendation sanity passes, but learning impact remains `watch`.
+- Repeated repair loops appear around:
+  - `math.quadratic_equation`
+  - `math.solve_quadratic_by_factor`
+  - `eng.reading_inference`
+  - `eng.infer_implicit_meaning`
+- Misconception recurrence appears around:
+  - `mis.math.factor_vs_expand`
+  - `mis.eng.inference_literal_only`
+- Proposed improvements worth incorporating:
+  - emergency rerouting when a learner is stuck in repair
+  - SRS decay tuning by difficulty and recurrence
+  - graph adjustment proposals from telemetry
+
+Important constraint: simulated beta signals are not enough to automatically change graph edges, mastery policy, or production recommendations. They can define watch metrics and acceptance criteria only.
+
+## 1. Non-Negotiable Guardrails
+
+These rules apply to every phase.
+
+- No major architecture swap without a failing metric or capacity limit proving the need.
+- No Graph DB migration before a simpler content query service fails real query needs.
+- No CRDT migration before append-only event sync has been implemented and audited.
+- No IRT 3PL before enough real attempts exist to calibrate item parameters.
+- No Writing/Speaking AI score may update mastery directly until grading reliability is validated.
+- No simulated beta result may be treated as live learning proof.
+- No self-healing graph edit may apply automatically; telemetry can only create a candidate until human/admin approval and real evidence thresholds pass.
+- No beta scope expansion while content blockers, telemetry gaps, or recommendation sanity issues remain unresolved.
+- Every implementation must include tests or generated reports that prove the acceptance criteria.
+- Every phase must preserve current working behavior in Math 9, IELTS/CPE/CAE content, SAT Studio, portal, and desktop apps.
+
+## 2. Audit Control Workflow
+
+Use this workflow for each implementation batch.
+
+1. Scope the batch
+   - Write the target phase and exact files/packages likely affected.
+   - List what is intentionally out of scope.
+   - Identify rollback risk.
+
+2. Baseline before edits
+   - Run or inspect the current relevant audit/report.
+   - Capture current counts: content readiness, learning events, blockers, warnings, test status.
+   - Do not start a change if the baseline is unknown.
+
+3. Implement narrowly
+   - Prefer existing package patterns over new frameworks.
+   - Keep source-of-truth boundaries clear: content, learning, db, ai, portal, app shells.
+   - Avoid broad refactors unless required by the target phase.
+
+4. Verify
+   - Run package tests for every touched package.
+   - Run content guards if content or adapters are touched.
+   - Run beta export if telemetry, mastery, recommendation, or graph logic changes.
+   - Run app build or browser QA for UI-facing changes.
+
+5. Record proof
+   - Update the implementation log only after verification.
+   - Save generated audit outputs in `reports/`.
+   - Include residual risk and next follow-up.
+
+## 3. Phase A - Internal Beta Evidence
+
+Goal: collect enough real learning evidence before changing the learning model or Knowledge Graph.
+
+Current baseline to respect:
+
+- Math 9 internal beta: 485 questions, 28 units.
+- IELTS Reading/Listening internal beta: 110 learning-ready questions.
+- Current beta package is smoke-ready, but seeded telemetry is not enough for wider rollout.
+- Current graph adjustment backlog is watch-only.
+
+Implementation checklist:
+
+- Ensure every diagnostic, practice, review, mock, retry, and feedback action writes a `LearningEventRecord`.
+- Add or verify fields in learning events:
+  - `eventId`
+  - `learnerId`
+  - `programId`
+  - `domainId`
+  - `conceptIds`
+  - `skillIds`
+  - `itemId`
+  - `mode`
+  - `correct` or score payload
+  - `timeSpentSeconds`
+  - `source`
+  - `schemaVersion`
+- Separate real beta events from seeded/demo events in reports.
+- Add daily/weekly beta summaries:
+  - events per learner
+  - diagnostic completion
+  - practice completion
+  - review completion
+  - weak mastery areas
+  - recurring misconceptions
+  - stuck repair streaks by learner and skill
+  - reroute candidates
+  - recommendation quality
+  - retention after SRS review
+- Keep graph adjustment candidates in `watch` until live evidence passes threshold.
+- Track the known simulated watch targets separately:
+  - `math.quadratic_equation`
+  - `math.solve_quadratic_by_factor`
+  - `eng.reading_inference`
+  - `eng.infer_implicit_meaning`
+  - `mis.math.factor_vs_expand`
+  - `mis.eng.inference_literal_only`
+
+Acceptance criteria:
+
+- Each beta learner has at least the configured minimum real events per cohort.
+- Beta report clearly labels real vs seeded telemetry.
+- Recommendation sanity has zero missing graph targets and zero out-of-program targets.
+- Graph adjustments are accepted/rejected/deferred with evidence, not intuition.
+- Stuck repair counts are visible and do not rely on reading raw event logs manually.
+- Simulated watch targets are not auto-promoted to graph changes.
+
+Verification commands/reports:
+
+- `npm test -w @miuprep/beta`
+- `npm test -w @miuprep/learning`
+- `npm run export:beta-run -w @miuprep/beta`
+- Review `reports/beta/internal-beta-run.md`
+
+Exit gate:
+
+- Internal beta can widen only when real event coverage, recommendation quality, and graph backlog review pass.
+
+## 4. Phase B - Content Query And Lazy Loading
+
+Goal: reduce client static JSON overhead without jumping directly to Graph DB.
+
+Problem:
+
+- Large banks such as SAT 9,305 items can be loaded too broadly.
+- Future banks may grow to hundreds of thousands of items.
+- Sending full banks to the client increases load time and scraping risk.
+
+Implementation checklist:
+
+- Build a content query layer before adopting GraphQL/Graph DB.
+- Query inputs should support:
+  - `programId`
+  - `domainId`
+  - `conceptIds`
+  - `skillIds`
+  - `difficulty`
+  - `questionType`
+  - `readiness`
+  - `mode`
+  - `limit`
+  - `cursor`
+- Return only the required item slice for diagnostic/practice/review.
+- Add stable item summaries for list views and fetch full item detail only when needed.
+- Keep adapters and quality gates as the content source of truth.
+- Add cache by small scope, not whole bank.
+- Add a scrape mitigation layer:
+  - auth/session checks where applicable
+  - rate limits if backend exists
+  - request logging
+  - no full-bank endpoint for student clients
+  - signed/expiring access for protected media if needed
+
+Do not implement yet:
+
+- Neo4j
+- Apache Age
+- full GraphQL migration
+- end-to-end encryption as a scrape solution
+
+Acceptance criteria:
+
+- Student practice flows do not require loading the full SAT bank.
+- Existing content guards still pass.
+- Query output is deterministic and paginated.
+- Client can resume practice using item IDs without keeping the whole bank in memory.
+
+Verification commands/reports:
+
+- `npm test -w @miuprep/content`
+- `npm run guard:sat -w @miuprep/content`
+- `npm run guard:english -w @miuprep/content`
+- `npm run sync:portal-quality -w @miuprep/content`
+- Relevant app build or browser QA for changed clients.
+
+Exit gate:
+
+- Lazy loading is considered complete only when at least SAT and one English practice flow use scoped item retrieval.
+
+## 5. Phase C - Sync Hardening With Append-Only Events
+
+Goal: prevent data loss and overwrite between web LocalStorage, desktop SQLite, and future server sync.
+
+Preferred model:
+
+- Attempts and learning events are append-only facts.
+- `StudentModel` is a derived snapshot, not the sync source of truth.
+- Conflict resolution happens at event level.
+
+Implementation checklist:
+
+- Add or verify event metadata:
+  - `eventId`
+  - `idempotencyKey`
+  - `learnerId`
+  - `deviceId`
+  - `occurredAt`
+  - `receivedAt`
+  - `source`
+  - `schemaVersion`
+  - `payloadHash`
+- Make duplicate writes idempotent.
+- Add a merge function that:
+  - keeps both valid attempts if they are distinct
+  - deduplicates exact repeats
+  - flags suspicious conflicts
+  - never silently overwrites newer or older attempt evidence
+- Add sync audit report:
+  - duplicate events
+  - missing learner IDs
+  - missing item IDs
+  - invalid timestamps
+  - cross-device conflicts
+  - events excluded from mastery
+- Keep CRDT out of scope unless mutable shared records become unavoidable.
+
+Acceptance criteria:
+
+- Re-importing the same event batch does not duplicate evidence.
+- Offline events from two devices merge without losing attempts.
+- Snapshot recomputation from merged events is deterministic.
+- Conflicts are visible in reports, not hidden.
+
+Verification commands/reports:
+
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/db`
+- Desktop `cargo check` if SQLite commands change.
+- New sync audit report under `reports/` if implemented.
+
+Exit gate:
+
+- Move to server sync only after local and desktop event merge is proven.
+
+## 6. Phase D - Mastery V2 Shadow Mode
+
+Goal: improve mastery estimates without breaking the current recommendation engine.
+
+Current baseline:
+
+- `computeMastery` is a practical heuristic using attempts, accuracy, confidence, hard proof, and recent wrong penalty.
+- This is acceptable for internal beta but too simple for long-term adaptive learning.
+
+Implementation checklist:
+
+- Keep current `computeMastery` as `Mastery V1` baseline.
+- Add `Mastery V2` in shadow mode first.
+- V2 should consider:
+  - recency weighting
+  - diagnostic/practice/review/mock mode weights
+  - hard item proof
+  - repeated misconception penalty
+  - hint usage
+  - time-spent anomalies
+  - item empirical difficulty
+  - evidence confidence
+- Store or report V1 vs V2 deltas.
+- Do not let V2 change UI recommendations until deltas are reviewed.
+- Add explainability output:
+  - why score changed
+  - strongest evidence
+  - weakest evidence
+  - confidence level
+
+Repair-loop rerouting checklist:
+
+- Detect consecutive repair loops per learner and mastery node.
+- Start with a conservative threshold: 5 consecutive failed/repair attempts on the same concept or skill.
+- When threshold is reached, recommend one of these instead of repeating the same node:
+  - easier prerequisite micro-diagnostic
+  - lower-difficulty practice set
+  - remediation lesson for the linked misconception
+  - teacher/admin review if the loop persists
+- Rerouting must be explainable:
+  - stuck node
+  - streak length
+  - suspected prerequisite gap
+  - selected reroute action
+- First release must run in shadow mode or admin-visible recommendation mode before changing student-facing behavior.
+
+SRS tuning checklist:
+
+- Extend Error Notebook review scheduling with difficulty and recurrence signals.
+- Reduce interval or ease faster for:
+  - hard questions
+  - repeated misconception categories
+  - high-value prerequisite skills
+  - inference-heavy English reading/listening tasks
+  - complex Math 9 transformations or geometry tasks
+- Keep simple recall items on the current stable schedule unless real retention data says otherwise.
+- Report review interval changes so SRS tuning is auditable.
+
+Acceptance criteria:
+
+- V2 runs without changing existing learner outcomes unless explicitly enabled.
+- V1/V2 differences are reported and reviewable.
+- No Writing/Speaking feedback-only events are converted into mastery attempts.
+- Recommendation quality does not regress.
+- Repair-loop rerouting can identify stuck nodes without creating recommendation loops.
+- SRS tuning never schedules invalid review dates and remains deterministic for the same input.
+
+Verification commands/reports:
+
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/beta`
+- `npm run export:beta-run -w @miuprep/beta`
+- Beta report includes stuck repair and reroute candidate sections when implemented.
+- Error Notebook/SRS tests cover difficulty and recurrence tuning when implemented.
+
+Exit gate:
+
+- V2, rerouting, or SRS tuning can affect student-facing recommendations only after shadow reports show stable improvement over V1/current behavior.
+
+## 7. Phase E - Empirical Difficulty And Lightweight Elo
+
+Goal: start item calibration safely after real event volume is sufficient.
+
+Prerequisites:
+
+- Enough real attempts per item or per skill cluster.
+- Stable event schema.
+- Mastery V2 shadow report is in place.
+
+Implementation checklist:
+
+- Start with empirical item stats:
+  - attempts
+  - correct rate
+  - average time
+  - hint rate
+  - review recurrence
+  - discrimination proxy by learner band/mastery bucket
+- Add lightweight Elo only as a secondary signal.
+- Calibrate at cluster/skill level when per-item data is sparse.
+- Keep teacher-authored difficulty as a prior, not overwritten blindly.
+- Track calibration drift over time.
+
+Implemented guardrails / still do not implement:
+
+- Empirical item stats and lightweight Elo may run in shadow-only reports.
+- Shadow reports must preserve teacher-authored difficulty as the prior.
+- Shadow reports must keep `applied: false` and `highStakesPlacementEnabled: false`.
+
+- IRT 3PL
+- guessing parameter calibration
+- high-stakes placement based only on Elo
+
+Acceptance criteria:
+
+- Item difficulty updates are explainable and reversible.
+- Sparse items keep prior difficulty.
+- Calibration does not destabilize diagnostic selection.
+
+Verification commands/reports:
+
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/content`
+- `npm run export:beta-run -w @miuprep/beta`
+- Calibration audit report under `reports/` or the beta readiness export.
+
+Exit gate:
+
+- Consider Rasch/1PL or 2PL only after enough real responses exist and empirical calibration is stable.
+
+## 8. Phase F - AI Writing/Speaking Governance
+
+Goal: improve productive-skill feedback while protecting mastery accuracy.
+
+Implementation checklist:
+
+- Keep Writing/Speaking as `feedback_only` by default.
+- Require every AI grading result to store:
+  - `attemptId`
+  - `modelUsed`
+  - `provider`
+  - `rubricVersion`
+  - `descriptorSource`
+  - `confidence`
+  - `criteria`
+  - `evidence`
+  - `createdAt`
+- Build or expand golden sample evaluation:
+  - human/expert score
+  - AI score
+  - deviation by criterion
+  - deviation overall
+  - pass/fail threshold
+- Add consensus only for validation and review, not mastery update.
+- If multiple models disagree beyond threshold, mark `needs_review`.
+- AI score may affect mastery only after a future governance gate approves it.
+
+Acceptance criteria:
+
+- AI feedback can produce practice plans and remediation tasks.
+- Mastery remains protected from unvalidated AI scoring.
+- Reliability report exists before any mastery-policy change.
+
+Verification commands/reports:
+
+- `npm test -w @miuprep/ai`
+- `npm test -w @miuprep/learning`
+- AI reliability/golden sample report if implemented.
+
+Exit gate:
+
+- Productive skill mastery remains locked until AI reliability is proven against benchmark samples.
+
+## 9. Phase G - Product And Gamification Controls
+
+Goal: improve motivation without distorting learning behavior.
+
+Implementation checklist:
+
+- Keep rewards tied to learning-positive actions:
+  - correcting mistakes
+  - due review completion
+  - diagnostic completion
+  - consistent practice
+- Avoid rewarding only raw correctness.
+- Parent rewards should be approval-based, not smart-contract/tokenomics based.
+- Add parent dashboard signals:
+  - effort consistency
+  - repair completion
+  - mastery trend
+  - retention trend
+  - next recommended support
+- Defer real-time battle rooms until:
+  - item difficulty is calibrated
+  - anti-cheat and fairness rules are clear
+  - learning benefit is tested with smaller asynchronous challenges.
+
+Acceptance criteria:
+
+- Rewards do not encourage rushing, guessing, or avoiding hard questions.
+- Parent view emphasizes learning progress over score pressure.
+- No new gamification feature bypasses learning event logging.
+
+Verification commands/reports:
+
+- `npm run lint -w miuprep-portal`
+- `npm run build -w miuprep-portal`
+- `npm run test:vite -w sat-studio`
+- Browser QA for changed student/parent flows.
+
+Exit gate:
+
+- Gamification changes must improve completion/retention metrics without increasing low-quality attempts.
+
+## 10. Phase H - Future Graph Backend Evaluation
+
+Goal: decide whether Graph DB is needed based on evidence.
+
+Evaluate Graph DB only if at least two of these become true:
+
+- Knowledge graph queries become too slow with simpler indexed storage.
+- Cross-program prerequisite/remediation traversal becomes complex enough to justify graph-native queries.
+- Admin content review needs deep multi-hop graph analysis.
+- Recommendation engine needs runtime graph traversal that current package APIs cannot support.
+- Content volume and graph relations outgrow static/package-based graph management.
+
+Before Graph DB:
+
+- Try indexed JSON/build artifact.
+- Try relational tables.
+- Try content query service.
+- Try cached graph traversal in `@miuprep/knowledge`.
+
+Acceptance criteria for a Graph DB decision:
+
+- A benchmark shows current approach is insufficient.
+- Migration plan preserves existing graph validator semantics.
+- There is a rollback path.
+- No client app depends directly on the database shape.
+
+Self-healing graph guardrails:
+
+- Telemetry may create graph adjustment candidates automatically.
+- Telemetry must not apply graph changes automatically.
+- A graph candidate needs all of these before approval:
+  - real beta data, not simulated data
+  - sufficient learner count for the affected scope
+  - repeated evidence across more than one item
+  - no content-quality blocker explaining the failure
+  - admin/teacher review of the proposed edge change
+  - before/after expectation documented
+- Suggested starting threshold: more than 100 real learners in the affected scope, or a smaller explicitly approved expert cohort with manual review.
+- Candidate actions can include:
+  - increase remediation edge weight
+  - add prerequisite edge
+  - lower default difficulty for a node
+  - add a remediation lesson requirement
+  - flag content for review
+- Automatic edge reversal is not allowed in early phases.
+
+## 11. Required Regression Matrix
+
+Use the narrowest set for small changes, but use the full matrix when touching shared contracts.
+
+Shared packages:
+
+- `npm test -w @miuprep/knowledge`
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/content`
+- `npm test -w @miuprep/db`
+- `npm test -w @miuprep/ai`
+- `npm test -w @miuprep/beta`
+
+Content gates:
+
+- `npm run guard:sat -w @miuprep/content`
+- `npm run guard:english -w @miuprep/content`
+- `npm run sync:portal-quality -w @miuprep/content`
+- `npm run export:beta-run -w @miuprep/beta`
+
+Apps:
+
+- `npm run lint -w miuprep-portal`
+- `npm run build -w miuprep-portal`
+- `npm run lint -w miumath-app`
+- `npm run build -w miumath-app`
+- `npm run test:vite -w sat-studio`
+- `npm run build -w @miuprep/desktop`
+- `npm run build -w @miuprep/cpe-desktop`
+- `npm run build`
+
+Native desktop when touched:
+
+- `cargo check` in `apps/ielts-desktop/src-tauri`
+- `cargo check` in `apps/cpe-desktop/src-tauri`
+
+Browser QA when UI changes:
+
+- Portal admin dashboard
+- Student overview/practice/tutor/rewards
+- Parent overview
+- Admin content review
+- SAT practice bridge
+- MiuMath diagnostic/practice/review
+- No horizontal overflow on desktop/mobile
+- No console errors in tested flow
+
+## 12. Anti-Skip Checklist
+
+Before marking a phase complete, answer all questions.
+
+- What user-facing or learning outcome did this improve?
+- What current behavior was preserved?
+- What exact report/test proves it?
+- Did any content counts change?
+- Did any learning event schema change?
+- Did any mastery/recommendation behavior change?
+- Are Writing/Speaking still protected by `feedback_only`?
+- Is there any seeded/demo data being mistaken for real beta data?
+- Are simulated beta findings clearly separated from live evidence?
+- If a learner is stuck in repair, is rerouting suggested instead of repeating the same loop?
+- If SRS intervals changed, is the reason visible and deterministic?
+- If graph candidates were generated, are they still pending human/admin approval?
+- Does the change require new admin visibility?
+- What is the rollback path?
+- What is still intentionally deferred?
+
+## 13. Current Recommended Order
+
+1. Phase A: Internal Beta Evidence
+2. Phase B: Content Query And Lazy Loading
+3. Phase C: Sync Hardening With Append-Only Events
+4. Phase D: Mastery V2 Shadow Mode, Repair Rerouting, SRS Tuning
+5. Phase F: AI Writing/Speaking Governance
+6. Phase E: Empirical Difficulty And Lightweight Elo
+7. Phase G: Product And Gamification Controls
+8. Phase H: Future Graph Backend Evaluation
+
+Reason: evidence and data integrity must come before model sophistication.
+
+## 14. Definition Of Done For The Whole Optimization Program
+
+The optimization program is complete only when:
+
+- Beta telemetry is real, segmented, and sufficient for decisions.
+- Content is served by scoped queries for large banks.
+- Event sync is idempotent and conflict-audited.
+- Stuck repair loops are detected and rerouted with evidence.
+- SRS tuning is difficulty-aware, recurrence-aware, and auditable.
+- Mastery V2 has run in shadow mode and shown stable value.
+- AI productive-skill grading has reliability reports and remains gated.
+- Recommendation quality is measured and does not regress.
+- Admin reports expose content, telemetry, graph, and sync risks.
+- Graph self-healing remains candidate-based until human-approved real evidence thresholds pass.
+- Deferred architecture decisions are documented with evidence thresholds.
+
+## 15. Implementation Log
+
+### 2026-06-04 Batch 1 - Phases A, B, C, D partial
+
+Scope completed:
+
+- Phase A: beta evidence separation, weekly review evidence labels, stuck repair reroute candidates, graph candidate guardrails.
+- Phase B: generic content query service with scoped filters, deterministic cursor pagination, summary-only query output, detail-by-id lookup, small-scope cache.
+- Phase C: learning event metadata hardening with `eventId`, `idempotencyKey`, `receivedAt`, `deviceId`, `payloadHash`, legacy normalization, and merge conflict reporting.
+- Phase D partial: SRS tuning now uses difficulty, lapse/recurrence count, grade, deterministic interval reasoning, and preserves feedback-only productive skills.
+
+Changed files:
+
+- `packages/beta/src/index.ts`
+- `packages/beta/src/export-beta-run.ts`
+- `packages/beta/src/index.test.ts`
+- `packages/content/src/content-query.ts`
+- `packages/content/src/index.ts`
+- `packages/content/src/standard.test.ts`
+- `packages/learning/src/index.ts`
+- `packages/learning/src/index.test.ts`
+- `apps/sat-studio/src/domain/learning-events.ts`
+- `apps/sat-studio/src/domain/learning-events.test.ts`
+- `apps/miuprep-portal/src/data/contentQualitySnapshot.ts`
+- `reports/beta/internal-beta-run.json`
+- `reports/beta/internal-beta-run.md`
+- `reports/beta/internal-beta-weekly-review.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed:
+
+- `npm test -w @miuprep/beta`
+- `npm test -w @miuprep/content`
+- `npm run guard:sat -w @miuprep/content`
+- `npm run guard:english -w @miuprep/content`
+- `npm run sync:portal-quality -w @miuprep/content`
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/db`
+- `npm run build -w @miuprep/ai`
+- `npm run export:beta-run -w @miuprep/beta`
+- `npm run lint -w miuprep-portal`
+- `npm run build -w miuprep-portal`
+- `npm run build -w miumath-app`
+- `npm run build -w @miuprep/desktop`
+- `npm run build -w @miuprep/cpe-desktop`
+- `npm run test:vite -w sat-studio`
+
+Proof captured:
+
+- `reports/beta/internal-beta-run.md` now shows `Live learning telemetry: 0`, `Seeded learning telemetry: 4`, `Synthetic learner-state events: 14`, and `Learning KPI source: synthetic`.
+- Graph backlog entries now carry `evidenceSource` and `autoApply: false`.
+- Weekly review now has explicit repair reroute rows and defers all synthetic reroutes.
+- SAT query tests prove a 9,305-item bank can be queried as small deterministic pages without exposing prompts or answer keys in summaries.
+- Learning tests prove old events are normalized with sync metadata and same-id payload conflicts are flagged.
+- Learning tests prove SRS interval tuning shortens hard/recurrent items relative to easy retained items and records a readable reason.
+- SAT shared event bridge now maps into the shared learning event builder and preserves sync metadata.
+
+Residual risk:
+
+- Student-facing apps still need to adopt `createContentQueryService` or a backend endpoint before Phase B is fully complete at product-flow level.
+- Current beta export is still a smoke package with seeded/synthetic evidence only; it must not approve wider rollout.
+- Event merge conflict reporting exists in core learning, but app/admin UI does not yet surface conflicts.
+- Mastery V2 shadow mode and AI grading governance are started in batch 2; empirical difficulty, lightweight Elo, and gamification controls remain intentionally deferred until real evidence exists.
+
+### 2026-06-04 Batch 2 - Phase C audit, Phase D shadow, Phase F governance
+
+Scope completed:
+
+- Phase C: added `buildLearningEventSyncAuditReport` so duplicate idempotency keys, missing learner/entity IDs, invalid timestamps, feedback-only events, and merge conflicts can be surfaced as a report instead of hidden in merge internals.
+- Phase D: added `computeMasteryV2ShadowReport` as a shadow-only comparison layer. It reports V1 vs V2 score/status deltas, confidence level, strongest/weakest evidence, protected feedback-only event count, and explicitly keeps `studentFacingEnabled: false` with `recommendationPolicy: v1_only`.
+- Phase D beta visibility: beta readiness report now includes `masteryShadowAudit` summary and the markdown export shows a `Mastery V2 Shadow` section.
+- Phase F: added productive-skill governance reporting via `buildProductiveSkillGovernanceReport`, including required provenance checks, golden sample deviation thresholds, consensus as validation-only, and mastery locked as `feedback_only_locked`.
+- Phase F event provenance: Writing/Speaking tutor events now persist direct payload fields for `attemptId`, `modelUsed`, `provider`, `rubricVersion`, `descriptorSource`, `evidence`, `createdAt`, and `confidence`.
+
+Changed files:
+
+- `packages/learning/src/index.ts`
+- `packages/learning/src/index.test.ts`
+- `packages/beta/src/index.ts`
+- `packages/beta/src/export-beta-run.ts`
+- `packages/beta/src/index.test.ts`
+- `packages/ai/src/tutor.ts`
+- `packages/ai/src/tutor.test.ts`
+- `packages/ai/src/index.ts`
+- `reports/beta/internal-beta-run.json`
+- `reports/beta/internal-beta-run.md`
+- `reports/beta/internal-beta-weekly-review.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed:
+
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/ai`
+- `npm test -w @miuprep/beta`
+- `npm run export:beta-run -w @miuprep/beta`
+
+Proof captured:
+
+- Learning tests prove the sync audit report marks duplicate idempotency keys as `watch`, and blocks conflict/missing metadata/invalid timestamp cases.
+- `reports/beta/internal-beta-run.md` now has `Mastery V2 Shadow` with status `watch`, evidence source `synthetic`, 4 comparison rows, 0 changed status rows, largest absolute delta 17, and recommendation policy `v1_only`.
+- Learning tests prove Mastery V2 does not turn feedback-only Writing into mastery rows and counts protected feedback-only events.
+- AI tests prove governance reports pass clean golden samples, block missing provenance/excessive deviation, and keep productive-skill mastery ineligible.
+- AI tests prove Writing/Speaking tutor events persist direct provider/model/evidence metadata while still not changing mastery.
+
+Residual risk:
+
+- Mastery V2 is now observable but not validated against live learners; keep it shadow-only until deltas are reviewed on real beta data.
+- AI governance report exists, but a broad benchmark set with human/expert scores still needs to be curated before productive-skill mastery can be considered.
+- Empirical difficulty, lightweight Elo, and gamification changes were deferred in this batch because the current beta export was still synthetic/seeded; Batch 3 adds shadow/audit-only controls.
+
+### 2026-06-04 Batch 3 - Phase B app adoption, Phase E shadow, Phase G reward controls
+
+Scope completed:
+
+- Phase B: SAT and English learning selectors now call the shared scoped content query layer before returning detail items, so product flows use the same program/mode/skill/difficulty/exclusion filters as the generic query service.
+- Phase B SAT guardrail: unscoped SAT diagnostics query both `english_core` and `mathematics` before balanced selection, preventing domain skew from catalog ordering.
+- Phase E: added `buildEmpiricalDifficultyShadowReport` with attempts, correct rate, average time, hint rate, review recurrence, discrimination proxy, empirical difficulty, lightweight Elo delta, sparse-item handling, and `applied: false`.
+- Phase E beta visibility: beta readiness/export now includes `Empirical Difficulty / Elo Shadow`, with shadow-only policy, no high-stakes placement, and synthetic evidence labeled `watch`.
+- Phase G: added reward behavior audit for attendance-only rewards, raw-correctness achievement rewards, learning-positive criteria, and parent/admin claim-flow evidence.
+
+Changed files:
+
+- `packages/content/src/sat-content.ts`
+- `packages/content/src/english-learning.ts`
+- `packages/learning/src/index.ts`
+- `packages/learning/src/index.test.ts`
+- `packages/beta/src/index.ts`
+- `packages/beta/src/export-beta-run.ts`
+- `packages/beta/src/index.test.ts`
+- `apps/sat-studio/src/domain/rewards.ts`
+- `apps/sat-studio/src/domain/rewards.test.ts`
+- `reports/beta/internal-beta-run.json`
+- `reports/beta/internal-beta-run.md`
+- `reports/beta/internal-beta-weekly-review.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm test -w @miuprep/content`
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/beta`
+- `npm run test:vite -w sat-studio`
+- `npm run export:beta-run -w @miuprep/beta`
+
+Verification passed, round 2:
+
+- `npm test -w @miuprep/content`
+- `npm test -w @miuprep/learning`
+- `npm test -w @miuprep/beta`
+- `npm run test:vite -w sat-studio`
+- `npm run export:beta-run -w @miuprep/beta`
+- `npm run lint -w miuprep-portal`
+- `npm run build -w miuprep-portal`
+
+Proof captured:
+
+- Content tests compile both SAT and English selector adoption through the shared query service.
+- Learning tests prove empirical difficulty keeps sparse items on prior difficulty, emits drift candidates, preserves `shadow_only_prior_preserved`, disables high-stakes placement, and never applies updates.
+- Beta export shows `Empirical difficulty shadow status: watch` and keeps recommendation/calibration behavior observational.
+- SAT Studio rewards tests prove the audit catches `hard-winner` as raw-correctness-only, flags attendance-point rewards as `watch`, confirms claim flow parent/admin approval evidence, and blocks orphan reward programs without fulfillment ownership.
+
+Residual risk:
+
+- Empirical difficulty remains synthetic/seeded in beta reports; keep it shadow-only until repeated real attempts per item or skill cluster exist.
+- Reward audit is now a domain guard, not a UI redesign; `hard-winner` and attendance-only badges are intentionally flagged for later product tuning rather than silently changed.

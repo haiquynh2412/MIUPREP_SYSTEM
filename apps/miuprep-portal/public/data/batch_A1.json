@@ -1,0 +1,2038 @@
+[
+  {
+    "id": "antigravity-hard-5b1c99ea",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the following system have no solution?\n\n  kx + 3y = 7\n  2x + 6y = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: No solution ⇒ parallel lines (same slope, different intercept). Slopes: −k/3 and −2/6 = −1/3. Equal when k = 1. Intercepts: 7/3 ≠ 5/6 ✓ — not coincident.\nSlow: Multiply eq1 by 2: 2kx + 6y = 14. Compare with 2x + 6y = 5. Parallel ⇒ 2k = 2 ⇒ k = 1, and 14 ≠ 5 ✓.",
+      "distractors": {
+        "B": "Coefficient grab – takes the x-coefficient 2 from eq2 directly.",
+        "C": "Y-coefficient confusion – picks the y-coefficient 3 from eq1.",
+        "D": "Y-coefficient grab – picks 6 from eq2's y-term."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set coefficient ratios equal while ensuring constant ratio differs",
+      "trapTypes": [
+        "coefficient-grab",
+        "parallel-vs-coincident confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-438ebabd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions. What is the value of c?\n\n  4x − 6y = c\n  −2x + 3y = −5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "−10"
+      },
+      {
+        "letter": "D",
+        "text": "−5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Infinitely many ⇒ one equation is a scalar multiple of the other. Multiply eq2 by −2: 4x − 6y = 10. So c = 10.\nSlow: Ratios: 4/(−2) = (−6)/3 = c/(−5). Each = −2. c = (−2)(−5) = 10.",
+      "distractors": {
+        "B": "Magnitude error – takes |−5| = 5 without scaling.",
+        "C": "Sign error – computes 2 × (−5) = −10 instead of (−2)(−5) = 10.",
+        "D": "Constant grab – picks −5 directly from eq2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find the scalar connecting two equations and apply to the constant",
+      "trapTypes": [
+        "sign-error",
+        "forgetting-to-scale-constant"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-df1c217b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of a does the system have no solution?\n\n  3x − 2y = 9\n  −6x + ay = 4",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "−4"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "−2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: No solution ⇒ parallel. Multiply eq1 by −2: −6x + 4y = −18. Comparing with −6x + ay = 4: a = 4, and −18 ≠ 4 ✓.\nSlow: x-ratio: 3/(−6) = −1/2. y-ratio: (−2)/a = −1/2 ⇒ a = 4.",
+      "distractors": {
+        "B": "Sign error – mistakenly includes an extra negative to get −4.",
+        "C": "Half-value – divides 4 by 2 to get 2.",
+        "D": "Combined error – gets −2 via half-value + sign error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Track sign changes through coefficient ratio matching",
+      "trapTypes": [
+        "sign-error",
+        "ratio-inversion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-3201d6b7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has no solution. What is the value of m?\n\n  5x + my = 12\n  10x − 8y = 7",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−4"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "−8"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ coefficient ratios equal. x-ratio: 5/10 = 1/2. y-ratio: m/(−8) = 1/2 ⇒ m = −4. Constants: 12/7 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 10x + 2my = 24. Compare: 2m = −8 ⇒ m = −4.",
+      "distractors": {
+        "B": "Sign error – ignores the negative on −8 and gets m = 4.",
+        "C": "Coefficient grab – takes −8 from eq2 directly.",
+        "D": "Absolute value – takes |−8| = 8."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply ratio condition with sign tracking in y-coefficient",
+      "trapTypes": [
+        "sign-error",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-77578f0e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For which value of p does the system have infinitely many solutions?\n\n  2x + 5y = p\n  6x + 15y = 21",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "7"
+      },
+      {
+        "letter": "B",
+        "text": "21"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Infinitely many ⇒ proportional. Multiply eq1 by 3: 6x + 15y = 3p. Set 3p = 21 ⇒ p = 7.\nSlow: Ratios: 2/6 = 5/15 = p/21 = 1/3 ⇒ p = 7.",
+      "distractors": {
+        "B": "Constant grab – picks 21 directly from eq2.",
+        "C": "Ratio as answer – writes the multiplier 3 instead of 21/3.",
+        "D": "Coefficient grab – picks 15 from eq2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Determine proportionality constant and apply to the constant term",
+      "trapTypes": [
+        "constant-grab",
+        "forgetting-to-scale-constant"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-a3b56013",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have exactly one solution?\n\n  kx + 4y = 10\n  3x + 4y = 7",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Any value of k except 3"
+      },
+      {
+        "letter": "B",
+        "text": "k = 3 only"
+      },
+      {
+        "letter": "C",
+        "text": "k = 0 only"
+      },
+      {
+        "letter": "D",
+        "text": "Any real number"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Unique solution ⇒ lines not parallel ⇒ slopes differ. Slope of eq1: −k/4. Slope of eq2: −3/4. Differ when k ≠ 3.\nSlow: Determinant = 4k − 12 ≠ 0 ⇒ k ≠ 3. So any k except 3.",
+      "distractors": {
+        "B": "Condition reversal – k = 3 makes lines parallel (no/infinite solutions), not unique.",
+        "C": "Zero reflex – k = 0 gives a valid unique-solution system.",
+        "D": "Over-generalization – ignores the excluded value k = 3."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Negate the parallel condition to identify the range for uniqueness",
+      "trapTypes": [
+        "condition-reversal",
+        "zero-reflex"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-2512dbed",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has no solution.\n\n  (a + 1)x + 2y = 5\n  6x + 4y = 3\n\nWhat is the value of a?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ (a+1)/6 = 2/4 = 1/2. So a + 1 = 3 ⇒ a = 2. Constants: 5/3 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 2(a+1)x + 4y = 10. Compare: 2(a+1) = 6 ⇒ a = 2, 10 ≠ 3 ✓.",
+      "distractors": {
+        "B": "Off-by-one – confuses a + 1 = 3 with a = 3.",
+        "C": "Constant confusion – picks 5 from eq1.",
+        "D": "Guess – tries a = 1, giving a + 1 = 2, ratio 2/6 = 1/3 ≠ 1/2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve for a parameter inside a binomial coefficient",
+      "trapTypes": [
+        "off-by-one",
+        "algebraic-expression-in-coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-8f47102a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A store sells pens for $a each and notebooks for $b each. Two customers report:\n\n  3a + 2b = 13\n  6a + kb = 20\n\nFor what value of k is the pricing information contradictory (the system has no solution)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: No solution ⇒ parallel. Ratio: 3/6 = 1/2. So 2/k = 1/2 ⇒ k = 4. Constants: 13/20 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 6a + 4b = 26. Compare: k = 4, 26 ≠ 20 ✓.",
+      "distractors": {
+        "B": "Ratio mistake – computes 2 × (3/6) = 1 then picks k = 2.",
+        "C": "Coefficient grab – picks 6 from eq2's a-coefficient.",
+        "D": "Stray computation – uses 13 − 20 or similar."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply parallel condition in a word-problem context",
+      "trapTypes": [
+        "real-world-distraction",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-38df0599",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions.\n\n  ax + 4y = b\n  3x + 2y = 5\n\nWhat is the value of a + b?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "16"
+      },
+      {
+        "letter": "B",
+        "text": "11"
+      },
+      {
+        "letter": "C",
+        "text": "13"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Infinitely many ⇒ eq1 = k · eq2. From y: 4/2 = 2. So a = 2·3 = 6 and b = 2·5 = 10. a + b = 16.\nSlow: a/3 = 4/2 = b/5 = 2 ⇒ a = 6, b = 10, sum = 16.",
+      "distractors": {
+        "B": "Partial scale – computes a = 6 but uses b = 5, getting 11.",
+        "C": "Wrong multiplier – uses 3 + 10 = 13.",
+        "D": "Half-scale – uses multiplier 4/2 on a but divides b, getting 6 + 2.5 ≈ 8."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find scalar from known ratio and apply to all terms",
+      "trapTypes": [
+        "forgetting-to-scale-constant",
+        "ratio-direction-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-28c29662",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  2x − 5y = 8\n  −4x + ky = 3",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "−10"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "−5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ x-ratio: 2/(−4) = −1/2. y-ratio: (−5)/k = −1/2 ⇒ k = 10. Constants: 8/3 ≠ −1/2 ✓.\nSlow: Multiply eq1 by −2: −4x + 10y = −16. Compare: k = 10, −16 ≠ 3 ✓.",
+      "distractors": {
+        "B": "Sign error – gets −10 from mishandling negatives.",
+        "C": "Coefficient grab – picks 5 from eq1.",
+        "D": "Sign + grab – picks −5 from eq1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Track negatives across two equations in ratio condition",
+      "trapTypes": [
+        "sign-error",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-1aff5544",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have infinitely many solutions?\n\n  (k − 2)x + 3y = 7\n  4x + 6y = 14",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ y-ratio: 3/6 = 1/2. x-ratio: (k−2)/4 = 1/2 ⇒ k − 2 = 2 ⇒ k = 4. Constants: 7/14 = 1/2 ✓.\nSlow: Multiply eq1 by 2: 2(k−2)x + 6y = 14. So 2(k−2) = 4 ⇒ k = 4.",
+      "distractors": {
+        "B": "Incomplete – solves k − 2 = 0 (sets expression to zero) instead of k − 2 = 2.",
+        "C": "Coefficient grab – picks 6 from eq2.",
+        "D": "Zero reflex – tries k = 0 without solving."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve for a parameter inside a binomial under proportionality",
+      "trapTypes": [
+        "off-by-one",
+        "algebraic-expression-in-coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-b183900c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two food trucks sell tacos (t) and burritos (b).\n\n  2t + 3b = 17\n  4t + 6b = k\n\nFor what value of k are the two equations equivalent (infinitely many solutions)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "34"
+      },
+      {
+        "letter": "B",
+        "text": "17"
+      },
+      {
+        "letter": "C",
+        "text": "51"
+      },
+      {
+        "letter": "D",
+        "text": "8.5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ multiply eq1 by 2: 4t + 6b = 34. So k = 34.\nSlow: Ratios: 2/4 = 3/6 = 17/k = 1/2 ⇒ k = 34.",
+      "distractors": {
+        "B": "Constant grab – picks 17 directly.",
+        "C": "Wrong multiplier – uses 3 instead of 2, getting 51.",
+        "D": "Division instead of multiplication – divides 17 by 2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply proportionality in a real-world context",
+      "trapTypes": [
+        "constant-grab",
+        "operation-direction-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-daeb9c2a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has no solution. What is the value of b?\n\n  x + by = 4\n  3x − 9y = 7",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−3"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "−9"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ x-ratio: 1/3. y-ratio: b/(−9) = 1/3 ⇒ b = −3. Constants: 4/7 ≠ 1/3 ✓.\nSlow: Multiply eq1 by 3: 3x + 3by = 12. Match: 3b = −9 ⇒ b = −3.",
+      "distractors": {
+        "B": "Sign error – drops the negative.",
+        "C": "Coefficient grab – takes −9 from eq2.",
+        "D": "Absolute grab – takes |−9| = 9."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Handle negative coefficients in parallel-line ratios",
+      "trapTypes": [
+        "sign-error",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-1a4b2719",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  kx − y = 3\n  8x − 2y = 15",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "−4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: (−1)/(−2) = 1/2. x-ratio: k/8 = 1/2 ⇒ k = 4. Constants: 3/15 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 2kx − 2y = 6. Compare: 2k = 8 ⇒ k = 4, 6 ≠ 15 ✓.",
+      "distractors": {
+        "B": "Half-value – divides 4 by 2.",
+        "C": "Coefficient grab – picks 8 from eq2.",
+        "D": "Sign error – gets −4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Use y-coefficient ratio to determine x-coefficient parameter",
+      "trapTypes": [
+        "coefficient-grab",
+        "ratio-computation-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-aabe7c01",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions.\n\n  3x + ky = 9\n  x + 2y = 3\n\nWhat is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Infinitely many ⇒ eq1 = 3 · eq2. So k = 3 · 2 = 6. Check: 3 · 3 = 9 ✓.\nSlow: Ratios: 3/1 = k/2 = 9/3. Each = 3 ⇒ k = 6.",
+      "distractors": {
+        "B": "Coefficient grab – picks 2 from eq2.",
+        "C": "Constant grab – picks 3 from eq2.",
+        "D": "Constant grab – picks 9 from eq1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify the multiplier from x-coefficients and apply to y",
+      "trapTypes": [
+        "coefficient-grab",
+        "constant-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-33c0c666",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of a does the system have no solution?\n\n  ax + 6y = 5\n  −3x − 9y = 2",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "−2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "−3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: 6/(−9) = −2/3. x-ratio: a/(−3) = −2/3 ⇒ a = 2. Constants: 5/2 ≠ −2/3 ✓.\nSlow: Multiply eq1 by −3/a… or just cross-multiply: a/(−3) = 6/(−9) ⇒ −9a = −18 ⇒ a = 2.",
+      "distractors": {
+        "B": "Sign error – assigns a = −2.",
+        "C": "Magnitude grab – picks |−3| = 3.",
+        "D": "Coefficient grab – picks −3 from eq2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Cross-multiply with negatives to find the parameter",
+      "trapTypes": [
+        "sign-error",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-1806432c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A system of equations is shown.\n\n  2x + 3y = a\n  4x + 6y = b\n\nWhich condition on a and b guarantees the system has no solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "b ≠ 2a"
+      },
+      {
+        "letter": "B",
+        "text": "b = 2a"
+      },
+      {
+        "letter": "C",
+        "text": "a = 2b"
+      },
+      {
+        "letter": "D",
+        "text": "a ≠ b"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: The coefficient matrix has proportional rows (ratio 1/2), so lines are always parallel or coincident. They coincide when a/b = 1/2 ⇒ b = 2a. No solution ⇒ b ≠ 2a.\nSlow: Multiply eq1 by 2: 4x + 6y = 2a. For no solution: 2a ≠ b.",
+      "distractors": {
+        "B": "Condition reversal – b = 2a gives infinitely many solutions.",
+        "C": "Ratio inversion – reverses the multiplier direction.",
+        "D": "Insufficient condition – a ≠ b doesn't rule out b = 2a."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Distinguish no-solution vs infinite-solution conditions for parallel lines",
+      "trapTypes": [
+        "condition-reversal",
+        "ratio-inversion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-5fd39bf0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  2kx + 4y = 9\n  3x + 2y = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: 4/2 = 2. So 2k/3 = 2 ⇒ 2k = 6 ⇒ k = 3. Constants: 9/5 ≠ 2 ✓.\nSlow: Multiply eq2 by 2: 6x + 4y = 10. Compare: 2k = 6 ⇒ k = 3, 9 ≠ 10 ✓.",
+      "distractors": {
+        "B": "Forgot to halve – computes 2k = 6 but writes k = 6.",
+        "C": "Coefficient grab – picks 4 from eq1.",
+        "D": "Coefficient grab – picks 2 from eq2 y-coefficient."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve for parameter inside a product coefficient",
+      "trapTypes": [
+        "algebraic-expression-in-coefficient",
+        "forgot-to-divide"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-f8692f40",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions.\n\n  ax − 2y = 10\n  −3x + by = −30\n\nWhat is the value of ab?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "−6"
+      },
+      {
+        "letter": "C",
+        "text": "9"
+      },
+      {
+        "letter": "D",
+        "text": "−9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ eq2 = k · eq1. From constants: −30/10 = −3. Check x: −3 = −3 · a/(a) ⇒ we need a · (−3) = −3 ⇒ a = 1. Wait, let me redo. Ratios: a/(−3) = (−2)/b = 10/(−30) = −1/3. a/(−3) = −1/3 ⇒ a = 1. (−2)/b = −1/3 ⇒ b = 6. ab = 6.\nSlow: Multiply eq1 by −3: −3ax + 6y = −30. Compare: −3a = −3 ⇒ a = 1, b = 6. ab = 6.",
+      "distractors": {
+        "B": "Sign error – gets a = −1, b = 6, product = −6.",
+        "C": "Wrong parameter – computes a = 3, b = 3, product = 9.",
+        "D": "Both errors – sign error + wrong value gives −9."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve two simultaneous ratio equations for two parameters",
+      "trapTypes": [
+        "sign-error",
+        "multi-parameter-tracking"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-de833e3b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  (1/2)x + ky = 4\n  x + 6y = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "1/2"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ x-ratio: (1/2)/1 = 1/2. y-ratio: k/6 = 1/2 ⇒ k = 3. Constants: 4/5 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: x + 2ky = 8. Compare: 2k = 6 ⇒ k = 3, 8 ≠ 5 ✓.",
+      "distractors": {
+        "B": "Coefficient grab – picks 6 from eq2.",
+        "C": "Ratio confusion – picks the x-coefficient 1/2 from eq1.",
+        "D": "Overcorrection – multiplies 6 by 2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Handle fractional coefficients in the parallel condition",
+      "trapTypes": [
+        "fraction-handling",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-1fe5d05b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has infinitely many solutions.\n\n  5x + 10y = c\n  x + 2y = 7\n\nWhat is the value of c?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "35"
+      },
+      {
+        "letter": "B",
+        "text": "7"
+      },
+      {
+        "letter": "C",
+        "text": "10"
+      },
+      {
+        "letter": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: eq1 = 5 · eq2. So c = 5 · 7 = 35.\nSlow: Ratios: 5/1 = 10/2 = c/7 = 5 ⇒ c = 35.",
+      "distractors": {
+        "B": "Constant grab – picks 7 from eq2.",
+        "C": "Coefficient grab – picks 10 from eq1.",
+        "D": "Coefficient grab – picks 5 from eq1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify scalar multiplier and apply to constant",
+      "trapTypes": [
+        "constant-grab",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-4b0d194c",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Consider the system:\n\n  2x + 3y = 7\n  kx + 3y = 7\n\nFor which value of k does the system have a unique solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Any value except 2"
+      },
+      {
+        "letter": "B",
+        "text": "k = 2 only"
+      },
+      {
+        "letter": "C",
+        "text": "k = 0 only"
+      },
+      {
+        "letter": "D",
+        "text": "No value of k"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Same y-coefficients and same constants. If k = 2, the equations are identical (infinitely many solutions). For k ≠ 2, slopes differ ⇒ unique solution.\nSlow: Subtract: (k − 2)x = 0. If k ≠ 2, then x = 0 is forced and y = 7/3; unique.",
+      "distractors": {
+        "B": "Condition reversal – k = 2 gives identical equations, not uniqueness.",
+        "C": "Zero reflex – k = 0 works but so does any k ≠ 2.",
+        "D": "Incorrect conclusion – every k ≠ 2 gives a unique solution."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognize identical equations and negate for uniqueness",
+      "trapTypes": [
+        "condition-reversal",
+        "zero-reflex"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-492bd803",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  (k + 3)x − 4y = 11\n  5x − 4y = 6",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "−3"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: No solution ⇒ same slopes, different intercepts. Since y-coefficients are both −4, we need x-coefficients equal: k + 3 = 5 ⇒ k = 2. Constants: 11 ≠ 6 ✓.\nSlow: Ratio: (k+3)/5 = (−4)/(−4) = 1. So k + 3 = 5 ⇒ k = 2. And 11/6 ≠ 1 ✓.",
+      "distractors": {
+        "B": "Off-by-one – writes k = 5 (the coefficient itself) instead of solving k + 3 = 5.",
+        "C": "Zero-expression – sets k + 3 = 0 to get k = −3.",
+        "D": "Adds instead of subtracts – computes k = 5 + 3 = 8."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve a binomial coefficient condition for parallel lines",
+      "trapTypes": [
+        "off-by-one",
+        "algebraic-expression-in-coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-b2f74dd4",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A gym offers two membership plans. Plan A costs $a per month plus $b per class. Plan B costs $2a per month plus $2b per class. A member's monthly cost equations are:\n\n  a + 5b = 45\n  2a + 10b = k\n\nFor what value of k do the two statements give consistent but redundant information (infinitely many solutions)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "90"
+      },
+      {
+        "letter": "B",
+        "text": "45"
+      },
+      {
+        "letter": "C",
+        "text": "22.5"
+      },
+      {
+        "letter": "D",
+        "text": "135"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: eq2 = 2 · eq1 ⇒ k = 2 · 45 = 90.\nSlow: Ratios: 1/2 = 5/10 = 45/k = 1/2 ⇒ k = 90.",
+      "distractors": {
+        "B": "Constant grab – picks 45 from eq1.",
+        "C": "Division error – divides 45 by 2 instead of multiplying.",
+        "D": "Wrong multiplier – uses 3 instead of 2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply proportionality in a membership-pricing context",
+      "trapTypes": [
+        "constant-grab",
+        "operation-direction-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-7d84759b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which of the following describes all values of k for which the system has no solution?\n\n  4x − 2y = 10\n  −6x + 3y = k",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All values of k except −15"
+      },
+      {
+        "letter": "B",
+        "text": "k = −15 only"
+      },
+      {
+        "letter": "C",
+        "text": "All values of k"
+      },
+      {
+        "letter": "D",
+        "text": "No value of k"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: The coefficient ratios are 4/(−6) = (−2)/3 = −2/3. These are equal, so lines are always parallel or coincident. For coincident: 10/k = −2/3 ⇒ k = −15. For no solution: k ≠ −15.\nSlow: Multiply eq1 by −3/2: −6x + 3y = −15. Coincident when k = −15; no solution otherwise.",
+      "distractors": {
+        "B": "Condition reversal – k = −15 gives infinitely many, not no solution.",
+        "C": "Over-generalization – misses that k = −15 makes the lines coincident.",
+        "D": "Under-generalization – fails to see the lines are always parallel except when coincident."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Determine the exception value that switches from no-solution to infinite-solution",
+      "trapTypes": [
+        "condition-reversal",
+        "parallel-vs-coincident confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-893cacfb",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions. What is the value of k?\n\n  kx + 2y = 8\n  6x + 4y = 16",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ y-ratio: 2/4 = 1/2. Constants: 8/16 = 1/2 ✓. x-ratio: k/6 = 1/2 ⇒ k = 3.\nSlow: Multiply eq1 by 2: 2kx + 4y = 16. Compare: 2k = 6 ⇒ k = 3.",
+      "distractors": {
+        "B": "Coefficient grab – picks 6 from eq2.",
+        "C": "Coefficient grab – picks 2 from eq1.",
+        "D": "Constant grab – picks 8 from eq1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify the proportionality constant from two matching ratios and solve for the third",
+      "trapTypes": [
+        "coefficient-grab",
+        "constant-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-552f147f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  3kx − 6y = 11\n  2x − 4y = 7",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: (−6)/(−4) = 3/2. x-ratio: 3k/2 = 3/2 ⇒ k = 1. Constants: 11/7 ≠ 3/2 ✓.\nSlow: Multiply eq2 by 3/2: 3x − 6y = 21/2. Compare: 3k = 3 ⇒ k = 1, 11 ≠ 21/2 ✓.",
+      "distractors": {
+        "B": "Forgot to divide – computes 3k = 3 as k = 3/3 · 2 = 2.",
+        "C": "Numerator confusion – picks 3 from the coefficient 3k.",
+        "D": "Random guess."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Isolate k from a product coefficient using ratio matching",
+      "trapTypes": [
+        "algebraic-expression-in-coefficient",
+        "forgot-to-divide"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-5ceb427b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Consider the system:\n\n  ax + 2y = 7\n  2x + ay = 3\n\nFor what value of a does the system have no solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "−2"
+      },
+      {
+        "letter": "C",
+        "text": "7/3"
+      },
+      {
+        "letter": "D",
+        "text": "3/7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: No solution ⇒ det = 0 and constants not proportional. det = a·a − 2·2 = a² − 4 = 0 ⇒ a = ±2. If a = 2: equations are 2x + 2y = 7 and 2x + 2y = 3. Same LHS, different RHS ⇒ no solution ✓. If a = −2: equations are −2x + 2y = 7 and 2x − 2y = 3. Adding: 0 = 10 ⇒ no solution ✓. Both work, but only a = 2 is among the choices.\nSlow: For parallel with a = 2: slopes are −2/2 = −1 and −2/2 = −1 (same), intercepts 7/2 ≠ 3/2 ✓.",
+      "distractors": {
+        "B": "Partial solution – a = −2 also gives no solution, but −2 is listed as a distractor here to test whether students verify both roots and pick the one in choices.",
+        "C": "Ratio confusion – sets 7/3 = a/2 to get a = 14/3 ≈ 7/3, mixing up the condition.",
+        "D": "Inverse ratio – computes 3/7 by inverting the constant ratio."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set determinant to zero and verify the no-solution condition on constants",
+      "trapTypes": [
+        "determinant-condition",
+        "multiple-roots-selection"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-9a8592a6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  −3x + 9y = 2\n  kx − 27y = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "9"
+      },
+      {
+        "letter": "B",
+        "text": "−9"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "−3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: 9/(−27) = −1/3. x-ratio: (−3)/k = −1/3 ⇒ k = 9. Constants: 2/5 ≠ −1/3 ✓.\nSlow: Multiply eq1 by −3: 9x − 27y = −6. Compare: k = 9, −6 ≠ 5 ✓.",
+      "distractors": {
+        "B": "Sign error – gets −9 by extra negative.",
+        "C": "Ratio error – picks 3 from |−3|.",
+        "D": "Coefficient grab – picks −3 from eq1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Match ratios with multiple negatives in both equations",
+      "trapTypes": [
+        "sign-error",
+        "multiple-negatives"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-1b2c9b49",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has infinitely many solutions.\n\n  ax − 3y = b\n  2x − y = 4\n\nWhat is the value of a − b?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−6"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "−2"
+      },
+      {
+        "letter": "D",
+        "text": "2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ y-ratio: (−3)/(−1) = 3. So eq1 = 3 · eq2. a = 3 · 2 = 6, b = 3 · 4 = 12. a − b = 6 − 12 = −6.\nSlow: a/2 = (−3)/(−1) = b/4 = 3. a = 6, b = 12, difference = −6.",
+      "distractors": {
+        "B": "Sign error – computes b − a = 6 instead of a − b.",
+        "C": "Wrong scale – uses multiplier 1 instead of 3.",
+        "D": "Wrong subtraction – gets 12 − 10 = 2 via arithmetic error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find two parameters from proportionality and compute their difference",
+      "trapTypes": [
+        "sign-error-in-subtraction",
+        "multi-parameter-tracking"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-8265b57e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has no solution.\n\n  ax + 8y = 3\n  6x + ky = 5\n\nIf a/6 = 8/k, what is the value of a · k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "48"
+      },
+      {
+        "letter": "B",
+        "text": "14"
+      },
+      {
+        "letter": "C",
+        "text": "24"
+      },
+      {
+        "letter": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: The condition a/6 = 8/k gives a · k = 6 · 8 = 48 by cross multiplication.\nSlow: a/6 = 8/k ⇒ ak = 48. (And 3/5 ≠ a/6 ensures no solution.)",
+      "distractors": {
+        "B": "Adds instead of multiplies – computes a + k for some pair.",
+        "C": "Half product – computes 48/2 = 24.",
+        "D": "Wrong cross product – computes 6 · 6 = 36."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Use cross multiplication to find a product of parameters",
+      "trapTypes": [
+        "operation-confusion",
+        "cross-multiplication-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-212f9da9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have infinitely many solutions?\n\n  (2k − 1)x + 3y = 12\n  5x + 3y = 12",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Infinitely many ⇒ equations identical (same y-coefficients and constants already match). Need 2k − 1 = 5 ⇒ k = 3.\nSlow: All ratios must be 1: (2k−1)/5 = 3/3 = 12/12 = 1. 2k − 1 = 5 ⇒ k = 3.",
+      "distractors": {
+        "B": "Coefficient grab – picks 5 from eq2.",
+        "C": "Half-value – solves 2k = 4 instead of 2k = 6.",
+        "D": "Off-by-one – solves 2k − 1 = 1 ⇒ k = 1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve a linear equation from the condition that two expressions must be equal",
+      "trapTypes": [
+        "algebraic-expression-in-coefficient",
+        "off-by-one"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-ceabcd06",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two runners start a race. Runner A's position after t seconds is given by d = 3t + k, and Runner B's position is d = 3t + 8. For what value of k will the runners never be at the same position at the same time (the system d = 3t + k and d = 3t + 8 has no solution)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Any value of k except 8"
+      },
+      {
+        "letter": "B",
+        "text": "k = 8"
+      },
+      {
+        "letter": "C",
+        "text": "k = 0 only"
+      },
+      {
+        "letter": "D",
+        "text": "k = −8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Same slope (3) ⇒ parallel lines. They never meet unless intercepts match: k = 8. No solution ⇒ k ≠ 8, i.e., any value except 8.\nSlow: Set equal: 3t + k = 3t + 8 ⇒ k = 8. If k ≠ 8, the equation 0 = 8 − k has no solution.",
+      "distractors": {
+        "B": "Condition reversal – k = 8 makes them always at the same position.",
+        "C": "Zero reflex – k = 0 is one valid value but not the only one.",
+        "D": "Sign flip – assumes the opposite of 8 is needed."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply parallel-line reasoning in a motion context",
+      "trapTypes": [
+        "condition-reversal",
+        "real-world-distraction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-b857af6e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has infinitely many solutions. What is the value of k?\n\n  −2x + ky = −10\n  x − 3y = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "−6"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "−3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ eq1 = c · eq2. x-ratio: (−2)/1 = −2. So k = −2 · (−3) = 6. Check constant: −2 · 5 = −10 ✓.\nSlow: Multiply eq2 by −2: −2x + 6y = −10. Match: k = 6.",
+      "distractors": {
+        "B": "Sign error – gets −6 by mishandling the double negative.",
+        "C": "Coefficient grab – picks 3 from |−3|.",
+        "D": "Coefficient grab – picks −3 from eq2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply negative scalar to determine the y-coefficient parameter",
+      "trapTypes": [
+        "sign-error",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-e39000f5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what positive value of k does the system have no solution?\n\n  k²x + 4y = 7\n  9x + 4y = 5",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: No solution ⇒ same slope, different intercept. y-coefficients are both 4, so we need x-coefficients equal and constants different: k² = 9 ⇒ k = 3 (positive). Constants: 7 ≠ 5 ✓.\nSlow: Ratio: k²/9 = 4/4 = 1. So k² = 9 ⇒ k = ±3. Since k > 0, k = 3.",
+      "distractors": {
+        "B": "Forgot square root – writes k = 9 (the value of k²).",
+        "C": "Coefficient grab – picks 4.",
+        "D": "Wrong root – picks k = 1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve k² = c under a positivity constraint",
+      "trapTypes": [
+        "forgot-square-root",
+        "positive-only-constraint"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-f23c8328",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system is shown below.\n\n  6x − 4y = a\n  −9x + 6y = 15\n\nFor what value of a does the system have no solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Any value of a except −10"
+      },
+      {
+        "letter": "B",
+        "text": "a = −10"
+      },
+      {
+        "letter": "C",
+        "text": "Any value of a"
+      },
+      {
+        "letter": "D",
+        "text": "a = 10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Coefficient ratios: 6/(−9) = (−4)/6 = −2/3. These are equal, so lines are always parallel or coincident. Coincident when a/15 = −2/3 ⇒ a = −10. No solution when a ≠ −10.\nSlow: Multiply eq1 by −3/2: −9x + 6y = −3a/2. Match eq2: −3a/2 = 15 ⇒ a = −10 for coincident.",
+      "distractors": {
+        "B": "Condition reversal – a = −10 gives infinitely many solutions.",
+        "C": "Over-generalization – misses that a = −10 is the coincident case.",
+        "D": "Sign error – gets a = 10 instead of −10."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify the unique constant value that converts parallel lines to coincident",
+      "trapTypes": [
+        "condition-reversal",
+        "sign-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-2c10fa6a",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  (k + 1)x + 5y = 12\n  8x + 10y = 7",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: 5/10 = 1/2. x-ratio: (k+1)/8 = 1/2 ⇒ k + 1 = 4 ⇒ k = 3. Constants: 12/7 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 2(k+1)x + 10y = 24. Compare: 2(k+1) = 8 ⇒ k = 3, 24 ≠ 7 ✓.",
+      "distractors": {
+        "B": "Off-by-one – writes k = 4 (the value of k + 1).",
+        "C": "Constant confusion – picks 7 from eq2.",
+        "D": "Coefficient grab – picks 8 from eq2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve for k inside a binomial x-coefficient",
+      "trapTypes": [
+        "off-by-one",
+        "algebraic-expression-in-coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-4b6a9114",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions.\n\n  kx − 8y = c\n  3x − 4y = 7\n\nWhat is the value of k + c?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "20"
+      },
+      {
+        "letter": "B",
+        "text": "14"
+      },
+      {
+        "letter": "C",
+        "text": "10"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ y-ratio: (−8)/(−4) = 2. So eq1 = 2 · eq2. k = 2 · 3 = 6, c = 2 · 7 = 14. k + c = 20.\nSlow: k/3 = (−8)/(−4) = c/7 = 2 ⇒ k = 6, c = 14, sum = 20.",
+      "distractors": {
+        "B": "Partial scale – gets c = 14 but forgets to add k.",
+        "C": "Constant grab – gets c = 7, k = 3 (unscaled), sum = 10.",
+        "D": "Only k – computes k = 6 and stops."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve two parameters from one ratio and sum them",
+      "trapTypes": [
+        "partial-computation",
+        "forgetting-to-scale-constant"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-8f681373",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  2x + ky = 9\n  4x + 10y = 3",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5",
+      "5.0"
+    ],
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ x-ratio: 2/4 = 1/2. y-ratio: k/10 = 1/2 ⇒ k = 5. Constants: 9/3 = 3 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 4x + 2ky = 18. Compare: 2k = 10 ⇒ k = 5, 18 ≠ 3 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Compute y-coefficient ratio for parallel condition",
+      "trapTypes": [
+        "coefficient-grab",
+        "forgetting-constant-check"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-d9dfa202",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions. What is the value of p?\n\n  3x − 9y = p\n  −x + 3y = 4",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "-12",
+    "acceptableAnswers": [
+      "-12",
+      "−12"
+    ],
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ x-ratio: 3/(−1) = −3. So p = −3 · 4 = −12. Check y: −9 = −3 · 3 ✓.\nSlow: Multiply eq2 by −3: 3x − 9y = −12. So p = −12."
+    },
+    "metadata": {
+      "cognitiveMove": "Apply a negative scalar multiplier to the constant term",
+      "trapTypes": [
+        "sign-error",
+        "forgetting-to-scale-constant"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-4f1a92dd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  7x − 2y = 13\n  14x + ky = 5",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "-4",
+    "acceptableAnswers": [
+      "-4",
+      "−4"
+    ],
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ x-ratio: 7/14 = 1/2. y-ratio: (−2)/k = 1/2 ⇒ k = −4. Constants: 13/5 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 14x − 4y = 26. Compare: k = −4, 26 ≠ 5 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Track sign in y-coefficient ratio",
+      "trapTypes": [
+        "sign-error",
+        "ratio-computation-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-dd7a9745",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has infinitely many solutions. Find the value of a.\n\n  ax + 6y = 15\n  2x + 4y = 10",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3",
+      "3.0"
+    ],
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ y-ratio: 6/4 = 3/2. So a = (3/2)·2 = 3. Constants: (3/2)·10 = 15 ✓.\nSlow: a/2 = 6/4 = 15/10 = 3/2. a = 3."
+    },
+    "metadata": {
+      "cognitiveMove": "Use the y-coefficient ratio to find a when ratios involve fractions",
+      "trapTypes": [
+        "fraction-handling",
+        "ratio-direction-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-75062930",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  −5x + 15y = 8\n  x + ky = 3",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "-3",
+    "acceptableAnswers": [
+      "-3",
+      "−3"
+    ],
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ x-ratio: (−5)/1 = −5. y-ratio: 15/k = −5 ⇒ k = −3. Constants: 8/3 ≠ −5 ✓.\nSlow: Multiply eq2 by −5: −5x − 5ky = −15. Compare: −5k = 15 ⇒ k = −3, −15 ≠ 8 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Apply negative ratio to determine k",
+      "trapTypes": [
+        "sign-error",
+        "ratio-direction-error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-d9b08d08",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has infinitely many solutions. What is the value of b?\n\n  4x + by = 20\n  −2x + 5y = −10",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "-10",
+    "acceptableAnswers": [
+      "-10",
+      "−10"
+    ],
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ x-ratio: 4/(−2) = −2. So b = −2 · 5 = −10. Constants: −2 · (−10) = 20 ✓.\nSlow: Multiply eq2 by −2: 4x − 10y = 20. So b = −10."
+    },
+    "metadata": {
+      "cognitiveMove": "Apply negative scalar to all terms including the y-coefficient",
+      "trapTypes": [
+        "sign-error",
+        "forgetting-negative-multiplier"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-d1dbcd44",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  6x + 9y = 11\n  kx + 3y = 4",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "2",
+    "acceptableAnswers": [
+      "2",
+      "2.0"
+    ],
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: 9/3 = 3. x-ratio: 6/k = 3 ⇒ k = 2. Constants: 11/4 ≠ 3 ✓.\nSlow: Multiply eq2 by 3: 3kx + 9y = 12. Compare: 3k = 6 ⇒ k = 2, 12 ≠ 11 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Reverse-engineer the x-coefficient from the y-ratio",
+      "trapTypes": [
+        "ratio-direction-error",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-fe645c8e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has infinitely many solutions. What is the value of a + b?\n\n  ax + by = 10\n  4x − 6y = −20",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": [
+      "1"
+    ],
+    "acceptableAnswers": [
+      "1",
+      "1.0"
+    ],
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ constant ratio: 10/(−20) = −1/2. So a = −1/2 · 4 = −2 and b = −1/2 · (−6) = 3. a + b = −2 + 3 = 1.\nSlow: Multiply eq2 by −1/2: −2x + 3y = 10. So a = −2, b = 3, sum = 1."
+    },
+    "metadata": {
+      "cognitiveMove": "Find two parameters using a fractional negative scalar",
+      "trapTypes": [
+        "sign-error",
+        "fraction-handling"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-449536e2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  3x + (k − 1)y = 8\n  6x + 10y = 3",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "6",
+    "acceptableAnswers": [
+      "6",
+      "6.0"
+    ],
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ x-ratio: 3/6 = 1/2. y-ratio: (k−1)/10 = 1/2 ⇒ k − 1 = 5 ⇒ k = 6. Constants: 8/3 ≠ 1/2 ✓.\nSlow: Multiply eq1 by 2: 6x + 2(k−1)y = 16. Compare: 2(k−1) = 10 ⇒ k = 6, 16 ≠ 3 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Solve for k inside a binomial y-coefficient",
+      "trapTypes": [
+        "off-by-one",
+        "algebraic-expression-in-coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-092085d9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has infinitely many solutions. What is the value of c?\n\n  −x + 2y = c\n  3x − 6y = 12",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "-4",
+    "acceptableAnswers": [
+      "-4",
+      "−4"
+    ],
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ x-ratio: (−1)/3 = −1/3. Check y: 2/(−6) = −1/3 ✓. Constants: c/12 = −1/3 ⇒ c = −4.\nSlow: Multiply eq1 by −3: 3x − 6y = −3c. Compare: −3c = 12 ⇒ c = −4."
+    },
+    "metadata": {
+      "cognitiveMove": "Apply negative fractional ratio to the constant",
+      "trapTypes": [
+        "sign-error",
+        "forgetting-to-scale-constant"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-9fd651d4",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the system have no solution?\n\n  2x − 3y = 5\n  kx − 12y = 7",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8",
+      "8.0"
+    ],
+    "explanation": {
+      "correct": "Fast: Parallel ⇒ y-ratio: (−3)/(−12) = 1/4. x-ratio: 2/k = 1/4 ⇒ k = 8. Constants: 5/7 ≠ 1/4 ✓.\nSlow: Multiply eq1 by 4: 8x − 12y = 20. Compare: k = 8, 20 ≠ 7 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Scale equation by 4 to match y-coefficients",
+      "trapTypes": [
+        "ratio-computation-error",
+        "coefficient-grab"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  },
+  {
+    "id": "antigravity-hard-3c4511c1",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system has infinitely many solutions. What is the value of k?\n\n  2x + 3y = 5\n  6x + 9y = 3k",
+    "type": "SPR",
+    "choices": null,
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5",
+      "5.0"
+    ],
+    "explanation": {
+      "correct": "Fast: Proportional ⇒ x-ratio: 2/6 = 1/3. y-ratio: 3/9 = 1/3 ✓. Constants: 5/(3k) = 1/3 ⇒ 3k = 15 ⇒ k = 5.\nSlow: Multiply eq1 by 3: 6x + 9y = 15. Compare: 3k = 15 ⇒ k = 5."
+    },
+    "metadata": {
+      "cognitiveMove": "Solve for k when it appears inside the constant as a product",
+      "trapTypes": [
+        "algebraic-expression-in-constant",
+        "forgot-to-divide"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-param"
+    }
+  }
+]

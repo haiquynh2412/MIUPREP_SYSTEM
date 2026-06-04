@@ -1,0 +1,2606 @@
+{
+  "id": "camcp3-test2",
+  "title": "CPE C2 Proficiency Reading & Use of English - Test 2 (Cambridge CPE 3)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Cambridge Certificate of Proficiency in English 3, Cambridge University Press",
+  "sections": [
+    {
+      "id": "camcp3-test2-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-18, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Part 1: Cloze Texts</h2><h3 class='text-lg font-bold mb-2 text-slate-800'>The Kingfisher</h3><p class='mb-4 text-slate-800 text-base leading-relaxed'>It was still dark as she (1) ______ down the back stairs and drew back the bolt of the kitchen door as noiselessly as possible. It made a loud (2) ______ sound. She must remember to oil it! Every time it happened she thought that, but never remembered until the next time it made the same noise. It never seemed to wake the (3) ______ of the house, though. Probably because it was so early. The grass was damp with dew as she crossed the lawn in front of the house. Wet feet, again. She should have worn her wellingtons, but she didn’t know where they were. Sheila could have borrowed them. She often borrowed them, even though they were about three (4) ______ too big. Sheila was careless and was always losing things. She heard bird (5) ______ as she reached the river bank and saw the first (6) ______ of the sun shining over the Doonagh Hills.</p><h3 class='text-lg font-bold mb-2 text-slate-800'>Bedtime Reading</h3><p class='mb-4 text-slate-800 text-base leading-relaxed'>Can you see yourself logging off, turning off and unplugging, before you turn off your light? Many people are saying now that this is precisely what we will all be doing in a few years’ time. They are prophesying the demise of the book. Leaving your device on your bedside (7) ______ is a routine for many already. A new (8) ______ of life for the rainforests, they say, another coup for technology.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp3-test2-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-camcp3-test2-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. stood",
+                "B. stayed",
+                "C. held",
+                "D. lay"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức: D - lay. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (stood): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (stayed): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (held): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "D. lay",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. paved",
+                "B. fashioned",
+                "C. generated",
+                "D. grounded"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - paved. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: B (fashioned): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (generated): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (grounded): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. paved",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. fastened",
+                "B. joined",
+                "C. linked",
+                "D. related"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - linked. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (fastened): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (joined): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (related): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. linked",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. opportunity",
+                "B. chance",
+                "C. way",
+                "D. access"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - opportunity. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: B (chance): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (way): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (access): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. opportunity",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. needed",
+                "B. obliged",
+                "C. demanded",
+                "D. required"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức: D - required. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (needed): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (obliged): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (demanded): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "D. required",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. engrossed",
+                "B. glued",
+                "C. sealed",
+                "D. enthralled"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - glued. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (engrossed): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (sealed): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (enthralled): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. glued",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. slithered",
+                "B. swooped",
+                "C. skipped",
+                "D. swept"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - slithered. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: B (swooped): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (skipped): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (swept): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. slithered",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. sank",
+                "B. gave",
+                "C. opened",
+                "D. fell"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - gave. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (sank): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (opened): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (fell): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. gave",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-9",
+              "type": "multiple_choice",
+              "instruction": "Gap (9):",
+              "options": [
+                "A. lining",
+                "B. fabric",
+                "C. crust",
+                "D. cloak"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - crust. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (lining): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (fabric): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (cloak): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. crust",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-10",
+              "type": "multiple_choice",
+              "instruction": "Gap (10):",
+              "options": [
+                "A. hauled",
+                "B. handed",
+                "C. carted",
+                "D. trailed"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - hauled. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: B (handed): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (carted): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (trailed): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. hauled",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-11",
+              "type": "multiple_choice",
+              "instruction": "Gap (11):",
+              "options": [
+                "A. issue",
+                "B. thought",
+                "C. stock",
+                "D. gist"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - stock. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (issue): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (thought): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (gist): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. stock",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-12",
+              "type": "multiple_choice",
+              "instruction": "Gap (12):",
+              "options": [
+                "A. abandon",
+                "B. neglect",
+                "C. desist",
+                "D. refute"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - abandon. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: B (neglect): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (desist): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (refute): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. abandon",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-13",
+              "type": "multiple_choice",
+              "instruction": "Gap (13):",
+              "options": [
+                "A. silent",
+                "B. dark",
+                "C. blank",
+                "D. dumb"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - silent. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: B (dark): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (blank): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (dumb): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. silent",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-14",
+              "type": "multiple_choice",
+              "instruction": "Gap (14):",
+              "options": [
+                "A. However",
+                "B. Accordingly",
+                "C. Even so",
+                "D. Inessence"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - Accordingly. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (However): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Even so): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (Inessence): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. Accordingly",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-15",
+              "type": "multiple_choice",
+              "instruction": "Gap (15):",
+              "options": [
+                "A. employed",
+                "B. engaged",
+                "C. exploited",
+                "D. entered"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - engaged. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (employed): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (exploited): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (entered): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. engaged",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-16",
+              "type": "multiple_choice",
+              "instruction": "Gap (16):",
+              "options": [
+                "A. accounts",
+                "B. manners",
+                "C. approaches",
+                "D. modes"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - approaches. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (accounts): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (manners): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (modes): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. approaches",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-17",
+              "type": "multiple_choice",
+              "instruction": "Gap (17):",
+              "options": [
+                "A. turning",
+                "B. making",
+                "C. putting",
+                "D. getting"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - making. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (turning): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (putting): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (getting): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. making",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-18",
+              "type": "multiple_choice",
+              "instruction": "Gap (18):",
+              "options": [
+                "A. propose",
+                "B. render",
+                "C. extend",
+                "D. present"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức: D - present. Giải thích biên soạn/đề xuất: đặt đáp án vào chỗ trống rồi kiểm tra 3 lớp: collocation tự nhiên, sắc thái nghĩa, và cấu trúc ngữ pháp ngay trước/sau gap. Đáp án đúng là lựa chọn tạo cụm đúng tiếng Anh trong văn cảnh; nếu chỉ dịch từng từ hoặc chọn từ gần nghĩa nhưng không đi với cụm quanh gap thì sẽ sai. Phân tích phương án sai: A (propose): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (render): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (extend): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "D. present",
+              "category": "cpe_part_1",
+              "tags": [
+                "vocabulary",
+                "cpe_part_1"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.multiple_choice_cloze",
+                "group": "use_of_english",
+                "title_en": "Multiple-choice cloze",
+                "title_vi": "Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh",
+                "path_en": "CPE > Use of English > Multiple-choice cloze",
+                "path_vi": "CPE > Use of English > Trắc nghiệm từ vựng-ngữ pháp theo ngữ cảnh"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp3-test2-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>A University Education</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>A few generations ago, a university education could only be aspired <b>TO</b> by an elite minority. In the (9) ______ few decades, however, a change has slowly but (10) ______ been taking place and prospective students who, a century ago, would have known that (11) ______ a basic education was beyond (12) ______ reach, can now look forward to gaining a degree in higher education.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Universities have been transformed (13) ______ places not only of learning, but also of business and are churning out on a regular (14) ______ their finished product — the graduate. However, degree-holders are still faced (15) ______ a problem. (16) ______ used to be a passport to employment is no longer a guarantee of success.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp3-test2-rg-2",
+          "instruction": "Write the correct word in each gap in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-camcp3-test2-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "FEWER",
+                  "fewer"
+                ]
+              ],
+              "correctAnswer": "FEWER",
+              "explanation": "Đáp án chính thức: FEWER. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "FEWER",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "FAR",
+                  "far"
+                ]
+              ],
+              "correctAnswer": "FAR",
+              "explanation": "Đáp án chính thức: FAR. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "FAR",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "blankIndex": 3,
+              "acceptedAnswers": [
+                [
+                  "VERY",
+                  "very"
+                ]
+              ],
+              "correctAnswer": "VERY",
+              "explanation": "Đáp án chính thức: VERY. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "VERY",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "blankIndex": 4,
+              "acceptedAnswers": [
+                [
+                  "THOUGH",
+                  "though"
+                ],
+                [
+                  "ALTHOUGH",
+                  "although"
+                ],
+                [
+                  "WHILE",
+                  "while"
+                ],
+                [
+                  "WHILST",
+                  "whilst"
+                ]
+              ],
+              "correctAnswer": "THOUGH",
+              "explanation": "Đáp án chính thức: THOUGH/ALTHOUGH/WHILE/WHILST. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "THOUGH/ALTHOUGH/WHILE/WHILST",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "blankIndex": 5,
+              "acceptedAnswers": [
+                [
+                  "TOO",
+                  "too"
+                ]
+              ],
+              "correctAnswer": "TOO",
+              "explanation": "Đáp án chính thức: TOO. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "TOO",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "blankIndex": 6,
+              "acceptedAnswers": [
+                [
+                  "HIS",
+                  "his"
+                ]
+              ],
+              "correctAnswer": "HIS",
+              "explanation": "Đáp án chính thức: HIS. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "HIS",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "blankIndex": 7,
+              "acceptedAnswers": [
+                [
+                  "ON",
+                  "on"
+                ],
+                [
+                  "UPON",
+                  "upon"
+                ]
+              ],
+              "correctAnswer": "ON",
+              "explanation": "Đáp án chính thức: ON/UPON. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "ON/UPON",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "blankIndex": 8,
+              "acceptedAnswers": [
+                [
+                  "TO",
+                  "to"
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Đáp án chính thức: TO. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "TO",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "WITH",
+                  "with"
+                ]
+              ],
+              "correctAnswer": "WITH",
+              "explanation": "Đáp án chính thức: WITH. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "WITH",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "ALL",
+                  "all"
+                ]
+              ],
+              "correctAnswer": "ALL",
+              "explanation": "Đáp án chính thức: ALL. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "ALL",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "blankIndex": 11,
+              "acceptedAnswers": [
+                [
+                  "LITTLE",
+                  "little"
+                ],
+                [
+                  "NO",
+                  "no"
+                ],
+                [
+                  "NOTHING",
+                  "nothing"
+                ]
+              ],
+              "correctAnswer": "LITTLE",
+              "explanation": "Đáp án chính thức: LITTLE/NO/NOTHING. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "LITTLE/NO/NOTHING",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "blankIndex": 12,
+              "acceptedAnswers": [
+                [
+                  "DID",
+                  "did"
+                ]
+              ],
+              "correctAnswer": "DID",
+              "explanation": "Đáp án chính thức: DID. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "DID",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "blankIndex": 13,
+              "acceptedAnswers": [
+                [
+                  "ITS",
+                  "its"
+                ]
+              ],
+              "correctAnswer": "ITS",
+              "explanation": "Đáp án chính thức: ITS. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "ITS",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "blankIndex": 14,
+              "acceptedAnswers": [
+                [
+                  "SUCH",
+                  "such"
+                ]
+              ],
+              "correctAnswer": "SUCH",
+              "explanation": "Đáp án chính thức: SUCH. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "SUCH",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "blankIndex": 15,
+              "acceptedAnswers": [
+                [
+                  "THESE",
+                  "these"
+                ],
+                [
+                  "THOSE",
+                  "those"
+                ]
+              ],
+              "correctAnswer": "THESE",
+              "explanation": "Đáp án chính thức: THESE/THOSE. Giải thích biên soạn/đề xuất: đây là từ ngữ pháp/collocation, nên cần kiểm tra liên kết trước-sau gap như giới từ, đại từ, liên từ, trợ động từ hoặc cụm cố định. Nếu key cho nhiều biến thể, các biến thể đó đều được chấp nhận.",
+              "answerLocation": "THESE/THOSE",
+              "category": "cpe_part_2",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_2"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.open_cloze",
+                "group": "use_of_english",
+                "title_en": "Open cloze",
+                "title_vi": "Điền từ vào đoạn văn",
+                "path_en": "CPE > Use of English > Open cloze",
+                "path_vi": "CPE > Use of English > Điền từ vào đoạn văn"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp3-test2-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Laughter</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Is there anyone who doesn’t enjoy a good laugh? I think not. Well, you may still be surprised to hear that researchers have recently estimated that laughing 100 times is the equivalent to a 15-minute (17) ______ <b>(WORK)</b>. They explain that when we laugh, not only does our blood (18) ______ <b>(PRESS)</b> drop, but the flow of the blood improves, which in turn aids (19) ______ <b>(HEAL)</b>. Laughter also exercises other parts of your body, including your diaphragm, leg, back, and of course (20) ______ <b>(FACE)</b> muscles.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>This all sounds very nice, but is there any proof? Well, according to doctors dealing with patients on a regular basis, the (21) ______ <b>(PSYCHOLOGY)</b> advantages to be gained from laughter are (22) ______ <b>(COMPARE)</b>. Those suffering from depression were found to make vast improvements when introduced to laughter-generating situations. Apparently the message is crystal clear: if you feel stressed or miserable there is nothing as (23) ______ <b>(THERAPY)</b> as laughing. Although it has so far been hard to (24) ______ <b>(VALUE)</b> the results on a long-term basis, it is hoped that further research will prove its lasting benefits.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp3-test2-rg-3",
+          "instruction": "Write your answers in CAPITAL LETTERS.",
+          "questions": [
+            {
+              "id": "q-camcp3-test2-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16):",
+              "blankIndex": 16,
+              "acceptedAnswers": [
+                [
+                  "INTERVENTION",
+                  "intervention"
+                ]
+              ],
+              "correctAnswer": "INTERVENTION",
+              "explanation": "Đáp án chính thức: INTERVENTION. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "INTERVENTION",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17):",
+              "blankIndex": 17,
+              "acceptedAnswers": [
+                [
+                  "ADDITIONAL",
+                  "additional"
+                ]
+              ],
+              "correctAnswer": "ADDITIONAL",
+              "explanation": "Đáp án chính thức: ADDITIONAL. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "ADDITIONAL",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18):",
+              "blankIndex": 18,
+              "acceptedAnswers": [
+                [
+                  "PROCEDURE",
+                  "procedure"
+                ]
+              ],
+              "correctAnswer": "PROCEDURE",
+              "explanation": "Đáp án chính thức: PROCEDURE. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "PROCEDURE",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19):",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "NOTORIOUSLY",
+                  "notoriously"
+                ]
+              ],
+              "correctAnswer": "NOTORIOUSLY",
+              "explanation": "Đáp án chính thức: NOTORIOUSLY. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "NOTORIOUSLY",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20):",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "ASCERTAIN",
+                  "ascertain"
+                ]
+              ],
+              "correctAnswer": "ASCERTAIN",
+              "explanation": "Đáp án chính thức: ASCERTAIN. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "ASCERTAIN",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21):",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "INCONCLUSIVE",
+                  "inconclusive"
+                ]
+              ],
+              "correctAnswer": "INCONCLUSIVE",
+              "explanation": "Đáp án chính thức: INCONCLUSIVE. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "INCONCLUSIVE",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22):",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "RESEARCHERS",
+                  "researchers"
+                ]
+              ],
+              "correctAnswer": "RESEARCHERS",
+              "explanation": "Đáp án chính thức: RESEARCHERS. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "RESEARCHERS",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23):",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "RIGOROUS",
+                  "rigorous"
+                ]
+              ],
+              "correctAnswer": "RIGOROUS",
+              "explanation": "Đáp án chính thức: RIGOROUS. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "RIGOROUS",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24):",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "RAINFALL",
+                  "rainfall"
+                ]
+              ],
+              "correctAnswer": "RAINFALL",
+              "explanation": "Đáp án chính thức: RAINFALL. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "RAINFALL",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25):",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "FINDINGS",
+                  "findings"
+                ]
+              ],
+              "correctAnswer": "FINDINGS",
+              "explanation": "Đáp án chính thức: FINDINGS. Giải thích biên soạn/đề xuất: xác định từ loại cần điền trước, sau đó kiểm tra tiền tố/hậu tố, số ít-số nhiều và nghĩa trong câu. Bẫy là tạo đúng họ từ nhưng sai từ loại hoặc sai sắc thái phủ định/khẳng định.",
+              "answerLocation": "FINDINGS",
+              "category": "cpe_part_3",
+              "tags": [
+                "word_formation",
+                "cpe_part_3"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.word_formation",
+                "group": "use_of_english",
+                "title_en": "Word formation",
+                "title_vi": "Biến đổi từ loại",
+                "path_en": "CPE > Use of English > Word formation",
+                "path_vi": "CPE > Use of English > Biến đổi từ loại"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp3-test2-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 32-39, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<h2 class='text-2xl font-bold mb-4 text-emerald-800 border-b-2 border-emerald-100 pb-2'>Key Word Transformation</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>For questions 25-30 (or 32-39), complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp3-test2-rg-4",
+          "instruction": "Write the missing words only.",
+          "questions": [
+            {
+              "id": "q-camcp3-test2-32",
+              "type": "gap_fill",
+              "instruction": "Chess is a much more skilful game than backgammon. (deal) -> Playing chess requires ____________________ playing backgammon.",
+              "blankIndex": 32,
+              "acceptedAnswers": [
+                [
+                  "a good deal more skill than",
+                  "a great deal more skill than",
+                  "a good deal more ability than",
+                  "a great deal more ability than"
+                ]
+              ],
+              "correctAnswer": "a good deal more skill than",
+              "explanation": "Đáp án: A GOOD DEAL MORE SKILL THAN. Giải thích: So sánh hơn 'much more skilful than' viết lại sử dụng danh từ kết hợp cụm định lượng 'a good/great deal more + uncountable noun + than'. Do đó ta đổi tính từ 'skilful' thành danh từ không đếm được 'skill' hoặc 'ability'. Chuyên đề: Quantifiers (a good deal of) & Comparative structures. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "a good/great deal more skill/ability than",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-33",
+              "type": "gap_fill",
+              "instruction": "John’s comments on the new film were not well received. (go) -> John’s comments on the new film ____________________ well.",
+              "blankIndex": 33,
+              "acceptedAnswers": [
+                [
+                  "did not go down so",
+                  "did not go down very",
+                  "did not go down particularly",
+                  "did not go down all that",
+                  "didn't go down so",
+                  "didn't go down very",
+                  "didn't go down particularly",
+                  "didn't go down all that"
+                ]
+              ],
+              "correctAnswer": "did not go down so",
+              "explanation": "Đáp án: DID NOT GO DOWN SO/VERY. Giải thích: Cụm động từ 'go down well (with someone)' = được đón nhận nồng nhiệt, được chấp nhận tốt bởi ai đó. Câu gốc 'were not well received' ở quá khứ viết lại thành cấu trúc phủ định của phrasal verb này: 'did not/didn't go down so/very/particularly well'. Chuyên đề: Phrasal verbs - Go down.",
+              "answerLocation": "did not/didn't go down so/very/particularly/all that",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-34",
+              "type": "gap_fill",
+              "instruction": "It was never explained why Gregor decided to leave. (given) -> No ____________________ Gregor’s decision to leave.",
+              "blankIndex": 34,
+              "acceptedAnswers": [
+                [
+                  "explanation was ever given of",
+                  "explanations were ever given of",
+                  "explanation was ever given for",
+                  "explanations were ever given for"
+                ]
+              ],
+              "correctAnswer": "explanation was ever given of",
+              "explanation": "Đáp án: EXPLANATION WAS EVER GIVEN OF/FOR. Giải thích: Đổi động từ 'explained' thành danh từ 'explanation' (hoặc số nhiều 'explanations'). Cấu trúc phủ định 'never explained' đổi thành cấu trúc bị động ở quá khứ: 'No explanation was ever given of/for...'. Đi kèm giới từ 'of/for' chỉ nguyên nhân của quyết định rời đi. Chuyên đề: Nominalisation (Danh từ hóa) & Passive voice.",
+              "answerLocation": "explanation was/explanations were ever given of/for",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-35",
+              "type": "gap_fill",
+              "instruction": "Nobody expected Lucy to resign. (came) -> Lucy's ____________________ everyone.",
+              "blankIndex": 35,
+              "acceptedAnswers": [
+                [
+                  "resignation came as a surprise to",
+                  "resigning came as a surprise to",
+                  "decision to resign came as a surprise to",
+                  "resignation came as a total surprise to",
+                  "resigning came as a total surprise to",
+                  "decision to resign came as a total surprise to",
+                  "resignation came as a complete surprise to",
+                  "resigning came as a complete surprise to",
+                  "decision to resign came as a complete surprise to",
+                  "resignation came as a shock to",
+                  "resigning came as a shock to",
+                  "decision to resign came as a shock to",
+                  "resignation came as a total shock to",
+                  "resigning came as a total shock to",
+                  "decision to resign came as a total shock to",
+                  "resignation came as a complete shock to",
+                  "resigning came as a complete shock to",
+                  "decision to resign came as a complete shock to"
+                ]
+              ],
+              "correctAnswer": "resignation came as a surprise to",
+              "explanation": "Đáp án: RESIGNATION CAME AS A SURPRISE TO. Giải thích: Động từ 'resign' đổi thành danh từ sở hữu 'Lucy's resignation' (hoặc danh động từ 'Lucy's resigning', cụm từ 'Lucy's decision to resign'). Cụm từ cố định 'come as a surprise/shock to someone' = mang lại sự bất ngờ/sốc cho ai đó. Chuyên đề: Nominalisation & Fixed expressions.",
+              "answerLocation": "resignation/resigning/decision to resign came as a surprise/shock to",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-36",
+              "type": "gap_fill",
+              "instruction": "I was just about to leave the house when I heard the phone ring. (verge) -> I ____________________ the house when I heard the phone ring.",
+              "blankIndex": 36,
+              "acceptedAnswers": [
+                [
+                  "was on the verge of leaving",
+                  "was on the verge of going out of"
+                ]
+              ],
+              "correctAnswer": "was on the verge of leaving",
+              "explanation": "Đáp án: WAS ON THE VERGE OF LEAVING. Giải thích: Cấu trúc cố định 'be on the verge of doing something' = sắp sửa, cận kề việc làm gì đó, đồng nghĩa với cấu trúc 'be just about to do something'. Do đó biến đổi 'leave the house' thành 'leaving/going out of the house'. Chuyên đề: Future in the past & Fixed phrases - be on the verge of.",
+              "answerLocation": "was on the verge of leaving/going out of",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-37",
+              "type": "gap_fill",
+              "instruction": "Stefano decided to stay on at the hotel for two more weeks. (extend) -> Stefano decided ____________________ two weeks.",
+              "blankIndex": 37,
+              "acceptedAnswers": [
+                [
+                  "to extend his stay at the hotel by",
+                  "to extend her stay at the hotel by",
+                  "to extend his stay at the hotel for",
+                  "to extend her stay at the hotel for"
+                ]
+              ],
+              "correctAnswer": "to extend his stay at the hotel by",
+              "explanation": "Đáp án: TO EXTEND HIS STAY AT THE HOTEL BY. Giải thích: Động từ 'stay' đổi thành cụm danh từ 'his/her stay at the hotel'. Kết hợp với động từ 'extend' (gia hạn, kéo dài thêm) và giới từ 'by' chỉ lượng gia tăng thêm (hai tuần). Chuyên đề: Verb patterns & Prepositions of quantity.",
+              "answerLocation": "to extend his/her stay at the hotel by/for",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-38",
+              "type": "gap_fill",
+              "instruction": "I'm sorry, I didn’t mean to interrupt the meeting. (intention) -> I'm sorry, I ____________________ the meeting.",
+              "blankIndex": 38,
+              "acceptedAnswers": [
+                [
+                  "had no intention of interrupting",
+                  "did not have any intention of interrupting",
+                  "didn't have any intention of interrupting"
+                ]
+              ],
+              "correctAnswer": "had no intention of interrupting",
+              "explanation": "Đáp án: HAD NO INTENTION OF INTERRUPTING. Giải thích: Cụm từ cố định 'have no intention of doing something' = không có ý định làm gì, đồng nghĩa với 'not mean to do something' (không cố ý làm gì). Do đó đổi 'interrupt' thành danh động từ 'interrupting'. Chuyên đề: Fixed phrases - have no intention of & Verb-noun transformation.",
+              "answerLocation": "had no/did not have any intention of interrupting",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-39",
+              "type": "gap_fill",
+              "instruction": "I wonder what’s happened to Hans; he’s normally on time for an important meeting. (unlike) -> I wonder what’s happened to Hans; it’s most ____________________ for an important meeting.",
+              "blankIndex": 39,
+              "acceptedAnswers": [
+                [
+                  "unlike him to be late",
+                  "unlike him to arrive late",
+                  "unlike him to come late",
+                  "unlike him to turn up late",
+                  "unlike him not to be in time",
+                  "unlike him not to be on time"
+                ]
+              ],
+              "correctAnswer": "unlike him to be late",
+              "explanation": "Đáp án: UNLIKE HIM TO BE LATE. Giải thích: Cấu trúc cố định 'It is unlike someone to do something' = Không giống tính cách của ai đó khi làm gì. Trái nghĩa với 'normally on time' (bình thường đúng giờ) là 'to be late' (đến muộn) hoặc lùi cấu trúc phủ định 'not to be on/in time'. Chuyên đề: Fixed structures - unlike someone & antonyms.",
+              "answerLocation": "unlike him to be/arrive/come/turn up late OR not to be in/on time",
+              "category": "cpe_part_4",
+              "tags": [
+                "grammar_patterns",
+                "cpe_part_4"
+              ],
+              "source": "Page 42-49, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.use_of_english.key_word_transformation",
+                "group": "use_of_english",
+                "title_en": "Key word transformation",
+                "title_vi": "Viết lại câu với từ khóa",
+                "path_en": "CPE > Use of English > Key word transformation",
+                "path_vi": "CPE > Use of English > Viết lại câu với từ khóa"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp3-test2-sec-5",
+      "title": "Part 5: Multiple Choice",
+      "instructions": "For questions 19-40, read the texts below and choose the answer (A, B, C or D) which you think fits best according to the texts.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Hidden Fears</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Recently I found myself in the dentist's waiting room, with a large number of people before me. I picked a magazine at random from the table and, a few minutes later, found myself deeply engrossed in an article about phobias. I was fascinated. I’d never thought too much about it. I knew some people were afraid of certain things. I perceived these people as being mostly women. Maybe I had been conditioned from an early age by cartoons showing women jumping up on tables when they saw a mouse, or running out of rooms screaming if they saw a spider. Also, if you had asked me, I would have said that nearly all people’s phobias were about things like rodents or insects.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>My eyes were opened by this article which was based on the results of a survey. Thousands of people said they had a strong fear of flying, but most of them were too embarrassed to admit it to their friends. There were many with rodent and insect phobias, phobias about snakes, birds, cats, dogs and horses. Some are afraid of open spaces and some are afraid of enclosed spaces. It seems there is a phobia to suit every taste and pocket, and many of us cope with mild phobias on a daily basis.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>When asked if they could find a reason for their phobias, people's answers varied. There were cases of, say, a dog bite in childhood causing a subsequent fear and hatred of dogs, or someone who had been badly cut by a kitchen knife being afraid of blades of all sorts. But it is arguable that these cases are not really phobias, because one of the main hallmarks of a phobia is that it is completely irrational. Strictly speaking, that is the difference between a fear and a phobia. If you are terrified of a poisonous snake or spider that could do you harm or even kill you, that is logical. It makes sense. It is, in a word, rational; a natural human instinct to keep away from danger. However, being terrified by a tiny spider, a small mouse or even a large cockroach makes no sense at all. In an equal battle situation, a human being would win hands down every time. It's simply a matter of size.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>So, what is it that makes people scream and squirm when the unfortunate insect runs for cover? People surveyed said that part of the answer, for these types of phobias, anyway, may be found in our senses of sight and touch. A spider that is still - or dead — does not usually inspire too much terror. A spider in full health, on the other hand, walking across the living-room floor, is what does it. It seems to be the movement of the spider's legs that causes the phobic reaction. Other people described a similar reaction to birds’ claws. What is interesting is that nearly everyone imagined the spider or the bird touching them. This is the stuff of nightmares and horror films, and the reason why people who like snakes or keep tarantulas as pets are thought to be weird and twisted. Not one of those questioned could explain why the gentle touch of a spider's legs, say, on their arm would cause them such horror.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>A final series of questions in the survey asked people how they managed to live with their phobias and whether they were trying to do something about them. Answers, again, varied. Claustrophobics mostly said that they avoided going into small rooms whenever possible, though they had to do it sometimes, and likewise agoraphobics with wide open spaces. They managed, they said. Others with a phobia about common domestic animals like cats and dogs said that they had tried to tackle it. Having children, for example, who want a pet can be a good way to do this. They nearly all admitted, though, that they hated the animal and would never go near it unless absolutely necessary. Though many people said that they had managed to make some progress, it was a clear case of mind over matter. Being very strict with themselves enabled them to carry on a seemingly normal life in the presence of the occasional bird, spider or mouse. The phobia was always there, though, lurking in the background, waiting to take over from reason and rational thought.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp3-test2-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-camcp3-test2-19",
+              "type": "multiple_choice",
+              "instruction": "Question 19: What is the writer suggesting by his use of the phrase 'not incidentally' (line 9)?",
+              "options": [
+                "A. that the success of Dr Gray's book took other publishers by surprise",
+                "B. that a major attraction of self-help books to publishers is financial gain",
+                "C. that self-help books do not really help readers to feel better",
+                "D. that publishers outside New York would not have started the self-help industry"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - that a major attraction of self-help books to publishers is financial gain. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (that the success of Dr Gray's book took other publishers by surprise): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (that self-help books do not really help readers to feel better): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (that publishers outside New York would not have started the self-help industry): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. that a major attraction of self-help books to publishers is financial gain",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-20",
+              "type": "multiple_choice",
+              "instruction": "Question 20: What, according to the writer, is 'no small mercy' (lines 13-14)?",
+              "options": [
+                "A. they have a very low regard for their readers.",
+                "B. they feel this enables them to create a more accurate impression.",
+                "C. they fear they cannot describe real events entertainingly.",
+                "D. they are simply unaware of the fact that they are doing so."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức: D - they are simply unaware of the fact that they are doing so. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (they have a very low regard for their readers.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (they feel this enables them to create a more accurate impression.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (they fear they cannot describe real events entertainingly.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "D. they are simply unaware of the fact that they are doing so.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-21",
+              "type": "multiple_choice",
+              "instruction": "Question 21: Reading Part 2 question 21: choose A, B, C or D according to the relevant extract.",
+              "options": [
+                "A. they have a very low regard for their readers.",
+                "B. they feel this enables them to create a more accurate impression.",
+                "C. they fear they cannot describe real events entertainingly.",
+                "D. they are simply unaware of the fact that they are doing so."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - they feel this enables them to create a more accurate impression. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (they have a very low regard for their readers.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (they fear they cannot describe real events entertainingly.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (they are simply unaware of the fact that they are doing so.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. they feel this enables them to create a more accurate impression.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-22",
+              "type": "multiple_choice",
+              "instruction": "Question 22: What does 'All of which' (in the last sentence) refer to?",
+              "options": [
+                "A. the types of pact between writer and reader",
+                "B. ways of deceiving the more naive readers",
+                "C. ways of breaking the pact",
+                "D. the reasons for disguising fiction or truth"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - ways of breaking the pact. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (the types of pact between writer and reader): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (ways of deceiving the more naive readers): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (the reasons for disguising fiction or truth): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. ways of breaking the pact",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-23",
+              "type": "multiple_choice",
+              "instruction": "Question 23: The writer describes Hammett's detective stories as 'peculiar' because",
+              "options": [
+                "A. they do not conform to the theory that detective stories are allegories.",
+                "B. they are not resolved in the way that other detective stories are.",
+                "C. they are based on a particularly negative view of human nature.",
+                "D. they present an unconventional view as to why crimes are committed."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - they are based on a particularly negative view of human nature. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (they do not conform to the theory that detective stories are allegories.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (they are not resolved in the way that other detective stories are.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (they present an unconventional view as to why crimes are committed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. they are based on a particularly negative view of human nature.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-24",
+              "type": "multiple_choice",
+              "instruction": "Question 24: Which of the following does the writer consider to be ambiguous?",
+              "options": [
+                "A. the private eye's position in society",
+                "B. the criminal's position in society",
+                "C. the attitude of the criminal towards the private eye",
+                "D. the attitude of the law towards the private eye"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - the private eye's position in society. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: B (the criminal's position in society): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (the attitude of the criminal towards the private eye): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (the attitude of the law towards the private eye): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. the private eye's position in society",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-25",
+              "type": "multiple_choice",
+              "instruction": "Question 25: Which of the following do we learn about the Grand Hotel?",
+              "options": [
+                "A. It inspired Gould to talk about the role of the science writer in society.",
+                "B. Another writer had described the atmosphere there very well.",
+                "C. The writer of this article thought it an unappealing place.",
+                "D. It made Gould aware that the experience of many science writers is too narrow."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - The writer of this article thought it an unappealing place. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (It inspired Gould to talk about the role of the science writer in society.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (Another writer had described the atmosphere there very well.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (It made Gould aware that the experience of many science writers is too narrow.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. The writer of this article thought it an unappealing place.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-26",
+              "type": "multiple_choice",
+              "instruction": "Question 26: Who is Gould talking about when he mentions 'the community' (line 14)?",
+              "options": [
+                "A. scientists \\",
+                "B. ordinary people",
+                "C. science writers",
+                "D. highly educated people"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - scientists \\. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: B (ordinary people): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (science writers): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (highly educated people): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. scientists \\",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading_extract",
+                "group": "reading",
+                "title_en": "Extract-based multiple choice",
+                "title_vi": "Đọc hiểu các đoạn trích",
+                "path_en": "CPE > Reading > Extract-based multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu các đoạn trích"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-34",
+              "type": "multiple_choice",
+              "instruction": "Question 34: What do we learn in the first paragraph about Ralph's current attitude towards his flat?",
+              "options": [
+                "A. He resents the responsibilities ownership of it involves.",
+                "B. He regrets that he cannot put more effort into its upkeep.",
+                "C. Heis aware that he has imposed his personality on it.",
+                "D. He sees it as an area over which he has supreme authority."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án chính thức: C - Heis aware that he has imposed his personality on it. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (He resents the responsibilities ownership of it involves.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (He regrets that he cannot put more effort into its upkeep.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (He sees it as an area over which he has supreme authority.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "C. Heis aware that he has imposed his personality on it.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading",
+                "group": "reading",
+                "title_en": "Long-text multiple choice",
+                "title_vi": "Đọc hiểu bài dài trắc nghiệm",
+                "path_en": "CPE > Reading > Long-text multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu bài dài trắc nghiệm"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-35",
+              "type": "multiple_choice",
+              "instruction": "Question 35: What do we learn from Ralph's thoughts about his answering machine?",
+              "options": [
+                "A. He takes some comfort from its presence.",
+                "B. He dislikes its intrusive nature.",
+                "C. It increases his feelings of isolation.",
+                "D. It contributes to his sense of security."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - He takes some comfort from its presence. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: B (He dislikes its intrusive nature.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (It increases his feelings of isolation.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (It contributes to his sense of security.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. He takes some comfort from its presence.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading",
+                "group": "reading",
+                "title_en": "Long-text multiple choice",
+                "title_vi": "Đọc hiểu bài dài trắc nghiệm",
+                "path_en": "CPE > Reading > Long-text multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu bài dài trắc nghiệm"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-36",
+              "type": "multiple_choice",
+              "instruction": "Question 36: According to the author, Ralph's desire to be alone is",
+              "options": [
+                "A. self-indulgent.",
+                "B. conceited.",
+                "C. self-destructive.",
+                "D. misguided."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức: D - misguided. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (self-indulgent.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (conceited.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (self-destructive.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "D. misguided.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading",
+                "group": "reading",
+                "title_en": "Long-text multiple choice",
+                "title_vi": "Đọc hiểu bài dài trắc nghiệm",
+                "path_en": "CPE > Reading > Long-text multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu bài dài trắc nghiệm"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-37",
+              "type": "multiple_choice",
+              "instruction": "Question 37: Ralph suspects that his work",
+              "options": [
+                "A. has restricted his other interests.",
+                "B. should be a more sociable experience.",
+                "C. is too complex for his limited abilities.",
+                "D. has had a negative effect on his personality."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức: D - has had a negative effect on his personality. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (has restricted his other interests.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (should be a more sociable experience.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (is too complex for his limited abilities.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "D. has had a negative effect on his personality.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading",
+                "group": "reading",
+                "title_en": "Long-text multiple choice",
+                "title_vi": "Đọc hiểu bài dài trắc nghiệm",
+                "path_en": "CPE > Reading > Long-text multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu bài dài trắc nghiệm"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-38",
+              "type": "multiple_choice",
+              "instruction": "Question 38: Ralph's initial concern after university had been to",
+              "options": [
+                "A. improve his future prospects.",
+                "B. keep sight of his long-term goals.",
+                "C. avoid any early mistakes.",
+                "D. follow his own interests."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - improve his future prospects. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: B (keep sight of his long-term goals.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (avoid any early mistakes.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (follow his own interests.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A. improve his future prospects.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading",
+                "group": "reading",
+                "title_en": "Long-text multiple choice",
+                "title_vi": "Đọc hiểu bài dài trắc nghiệm",
+                "path_en": "CPE > Reading > Long-text multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu bài dài trắc nghiệm"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-39",
+              "type": "multiple_choice",
+              "instruction": "Question 39: What approach did Ralph take in looking for a job?",
+              "options": [
+                "A. He tried to apply faster than other applicants.",
+                "B. He unthinkingly adopted the ideas of others.",
+                "C. He rehearsed for interviews with his friends.",
+                "D. He focused on areas in which he had some experience."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - He unthinkingly adopted the ideas of others. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (He tried to apply faster than other applicants.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (He rehearsed for interviews with his friends.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (He focused on areas in which he had some experience.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. He unthinkingly adopted the ideas of others.",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading",
+                "group": "reading",
+                "title_en": "Long-text multiple choice",
+                "title_vi": "Đọc hiểu bài dài trắc nghiệm",
+                "path_en": "CPE > Reading > Long-text multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu bài dài trắc nghiệm"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-40",
+              "type": "multiple_choice",
+              "instruction": "Question 40: What do we learn about Ralph's interview with Neil?",
+              "options": [
+                "A. Neil took pains to make Ralph feel relaxed.",
+                "B. Ralph failed to find out about the job concerned",
+                "C. it was much shorter than Ralph had expected.",
+                "D. The two men shared similar educational backgrounds."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - Ralph failed to find out about the job concerned. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (Neil took pains to make Ralph feel relaxed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (it was much shorter than Ralph had expected.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (The two men shared similar educational backgrounds.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B. Ralph failed to find out about the job concerned",
+              "category": "cpe_part_5",
+              "tags": [
+                "reading_comprehension",
+                "cpe_part_5"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.multiple_choice_reading",
+                "group": "reading",
+                "title_en": "Long-text multiple choice",
+                "title_vi": "Đọc hiểu bài dài trắc nghiệm",
+                "path_en": "CPE > Reading > Long-text multiple choice",
+                "path_vi": "CPE > Reading > Đọc hiểu bài dài trắc nghiệm"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camcp3-test2-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "For questions 37-43, read the text below. Seven paragraphs have been removed from the extract. Choose from the paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Disposable Buildings?</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Look at a building, any building. What can it tell you? Most people would agree that the architecture of a certain period reflects the taste and style of that period.</p><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-200 text-center font-bold text-slate-700'>[ Gap 37 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>Today’s architectural landmarks tend to be more secular than religious. For our present purpose, however, it is less important to know who commissioned a building than to look at it carefully. So, look around at today’s buildings: what do you see? You see odd shapes and garish colours that jar. Seeing one modern building does very little to prepare you for the next one; there is little or no uniformity.</p><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-200 text-center font-bold text-slate-700'>[ Gap 38 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the larger scheme of things, though, these differences are minor, and we can safely say that uniformity of appearance is one of the things that differentiates between the buildings of the past and those of the present. Another important difference, and one so obvious that it may seem to go without saying, is that modern buildings do not look like old buildings, (unless they are built in imitation, like neo-Classical architecture, for example).</p><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-200 text-center font-bold text-slate-700'>[ Gap 39 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>This is more than a comment on the quality of the respective building materials. The Pyramids were built to last; the Millennium Dome most assuredly was not. Of course this is not to say that the intention for modern structures is that they should last a certain amount of time and then fall down — a kind of disposable building. However, it is true to say that they seem to be designed and built with only the very immediate future in mind.</p><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-200 text-center font-bold text-slate-700'>[ Gap 40 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The people of the past, on the other hand, looked ahead. It is clear that they wanted their buildings to be there for future generations. This is corroborated by the fact that, in countries where the climate allows it, they planted trees. Think about it: planting a tree, especially one that will some day grow to be very big, is the ultimate in altruistic behaviour. When you plant an oak sapling, you know very well that you will not see the tree that it will become.</p><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-200 text-center font-bold text-slate-700'>[ Gap 41 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>There is a third element in today’s way of thinking that is particularly relevant to architecture, and that is the aesthetic element. This is a difficult area to deal with because it is extremely subjective. Beauty is, indeed, very often in the eye of the beholder; we all know what we like, and we all like different things. Even allowing for this, however, most people would probably agree that ‘beautiful’ is not the word they would use to describe the majority of modern buildings.</p><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-200 text-center font-bold text-slate-700'>[ Gap 42 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>With most modern buildings, we certainly get one. I say this with total objectivity. I believe that it can be a very positive thing to be confronted with something completely different, even something that is a bit shocking. It provokes a reaction. It makes us think. All art changes as time goes by, and architecture in all its varied manifestations is a form of art.</p><div class='mb-6 p-4 bg-emerald-50 rounded-lg border-emerald-200 text-center font-bold text-slate-700'>[ Gap 43 ]</div><p class='mb-4 text-slate-800 text-base leading-relaxed'>The result of all this has been that we have learnt a lot about cultures of past eras. What will be left behind after us? If we believe that the past has any value or anything to teach us, and if we believe that we bring the past with us into the future, this view has not been reflected in our architecture. The generations of the future will not benefit from us the way we have benefited from the generations of the past.</p>",
+      "questionGroups": [
+        {
+          "id": "camcp3-test2-rg-6",
+          "instruction": "Match the correct paragraph (A-H) to each gap.",
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'"
+            },
+            {
+              "label": "B",
+              "text": "The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed."
+            },
+            {
+              "label": "C",
+              "text": "Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process."
+            },
+            {
+              "label": "D",
+              "text": "However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising."
+            },
+            {
+              "label": "E",
+              "text": "It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves."
+            },
+            {
+              "label": "F",
+              "text": "Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more."
+            },
+            {
+              "label": "G",
+              "text": "Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions."
+            },
+            {
+              "label": "H",
+              "text": "In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q-camcp3-test2-27",
+              "type": "gapped_text",
+              "instruction": "Gap (27):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án chính thức: H - In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; E (It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; F (Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; G (Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "H - In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi...",
+              "category": "cpe_part_6",
+              "tags": [
+                "cohesion_coherence",
+                "cpe_part_6"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.gapped_text",
+                "group": "reading",
+                "title_en": "Gapped text",
+                "title_vi": "Điền đoạn văn A-H vào bài đọc",
+                "path_en": "CPE > Reading > Gapped text",
+                "path_vi": "CPE > Reading > Điền đoạn văn A-H vào bài đọc"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-28",
+              "type": "gapped_text",
+              "instruction": "Gap (28):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án chính thức: F - Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; E (It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; G (Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; H (In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "F - Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm...",
+              "category": "cpe_part_6",
+              "tags": [
+                "cohesion_coherence",
+                "cpe_part_6"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.gapped_text",
+                "group": "reading",
+                "title_en": "Gapped text",
+                "title_vi": "Điền đoạn văn A-H vào bài đọc",
+                "path_en": "CPE > Reading > Gapped text",
+                "path_vi": "CPE > Reading > Điền đoạn văn A-H vào bài đọc"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-29",
+              "type": "gapped_text",
+              "instruction": "Gap (29):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án chính thức: B - The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; E (It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; F (Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; G (Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; H (In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "B - The consequences have been that marketing activities have at last begun to be given the attention they deserve",
+              "category": "cpe_part_6",
+              "tags": [
+                "cohesion_coherence",
+                "cpe_part_6"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.gapped_text",
+                "group": "reading",
+                "title_en": "Gapped text",
+                "title_vi": "Điền đoạn văn A-H vào bài đọc",
+                "path_en": "CPE > Reading > Gapped text",
+                "path_vi": "CPE > Reading > Điền đoạn văn A-H vào bài đọc"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-30",
+              "type": "gapped_text",
+              "instruction": "Gap (30):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án chính thức: D - However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; E (It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; F (Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; G (Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; H (In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "D - However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ...",
+              "category": "cpe_part_6",
+              "tags": [
+                "cohesion_coherence",
+                "cpe_part_6"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.gapped_text",
+                "group": "reading",
+                "title_en": "Gapped text",
+                "title_vi": "Điền đoạn văn A-H vào bài đọc",
+                "path_en": "CPE > Reading > Gapped text",
+                "path_vi": "CPE > Reading > Điền đoạn văn A-H vào bài đọc"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-31",
+              "type": "gapped_text",
+              "instruction": "Gap (31):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án chính thức: A - Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: B (The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; E (It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; F (Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; G (Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; H (In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "A - Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời...",
+              "category": "cpe_part_6",
+              "tags": [
+                "cohesion_coherence",
+                "cpe_part_6"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.gapped_text",
+                "group": "reading",
+                "title_en": "Gapped text",
+                "title_vi": "Điền đoạn văn A-H vào bài đọc",
+                "path_en": "CPE > Reading > Gapped text",
+                "path_vi": "CPE > Reading > Điền đoạn văn A-H vào bài đọc"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-32",
+              "type": "gapped_text",
+              "instruction": "Gap (32):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án chính thức: G - Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; E (It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; F (Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; H (In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "G - Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ...",
+              "category": "cpe_part_6",
+              "tags": [
+                "cohesion_coherence",
+                "cpe_part_6"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.gapped_text",
+                "group": "reading",
+                "title_en": "Gapped text",
+                "title_vi": "Điền đoạn văn A-H vào bài đọc",
+                "path_en": "CPE > Reading > Gapped text",
+                "path_vi": "CPE > Reading > Điền đoạn văn A-H vào bài đọc"
+              }
+            },
+            {
+              "id": "q-camcp3-test2-33",
+              "type": "gapped_text",
+              "instruction": "Gap (33):",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "Đáp án chính thức: E - It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc. Đáp án đúng phải trả lời đúng trọng tâm câu hỏi, khớp phạm vi ý, thái độ người viết và quan hệ logic trong câu/đoạn. Nếu option chỉ lặp keyword nhưng đổi chủ thể, đổi mức độ, đảo nguyên nhân-kết quả hoặc thêm thông tin không có trong bài thì phải loại. Phân tích phương án sai: A (Thus, client companies almost everywhere took the view of one of their leaders quoted in the British trade magazine Campaign: 'We want better strategies, better targeting, better creativity, better media placement, better thinking. We aim to ensure we get advertising agencies' best people on our business and then ensure they are motivated to work their fingers to the bone, producing outstanding work for us.'): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; B (The consequences have been that marketing activities have at last begun to be given the attention they deserve by management, that these people have acquired a little learning about the subject, and that a few brands have actually begun to be genuinely marketed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; C (Ultimately, the poverty of the current advertising scene is due to the nature of the relationship between agencies and their clients. The best way of getting better advertising lies partly in improving this, and partly in adopting a more empirical approach to the whole advertising process.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; D (However, there was also evidence of more deep-seated change which would not simply be waved away as, and when, economic prospects brightened. The fact was that while this recession naturally caused potential clients to review, reconsider and often cut their budgets at the time, it also made them examine more closely than ever before the economics of advertising.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; F (Seen, as they are, to spearhead efforts to support the bottom line, they suppose themselves to be under close enough scrutiny from their colleagues, let alone their bosses. Moreover, they are also faced with the very considerable problem of increasingly being asked to do their ever more difficult jobs with smaller and smaller budgets. They have been told that less must be more.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; G (Some of these are a direct consequence of the recession discussed earlier: the controversy over production costs, and the disinclination to take the sort of risks that are ironically often the essence of good advertising. Other events would have happened irrespective of local or global economic conditions.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.; H (In Britain, it meant in 1991 alone that while gross domestic product declined, interest rates remained punitively high, consumer spending on almost everything other than staples fell, more than half a million people lost their jobs, and some 75,000 homes were repossessed.): distractor cần loại; hãy đối chiếu lại evidence để tìm lỗi thường gặp như sai phạm vi, không được nêu trực tiếp, đảo ý, hoặc chỉ trùng keyword.",
+              "answerLocation": "E - It is not terribly surprising that, at the moment, help for those who want or need to do just that is far from freely available. Generally, companies and the advertising agencies they use have been far too busy simply coping with these circumstances to wish to talk or write about them, while those that have succeeded in keeping their heads above water are often understandably anxious to keep the secrets of their success to themselves. Giải thích biên soạn/đề xuất: đối chiếu option với evidence trong đoạn đọc....",
+              "category": "cpe_part_6",
+              "tags": [
+                "cohesion_coherence",
+                "cpe_part_6"
+              ],
+              "source": "Page 30-39, Test 2, Cambridge CPE 3",
+              "displayMode": "both",
+              "topic": {
+                "id": "cpe.reading.gapped_text",
+                "group": "reading",
+                "title_en": "Gapped text",
+                "title_vi": "Điền đoạn văn A-H vào bài đọc",
+                "path_en": "CPE > Reading > Gapped text",
+                "path_vi": "CPE > Reading > Điền đoạn văn A-H vào bài đọc"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

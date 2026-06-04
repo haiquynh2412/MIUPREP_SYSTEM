@@ -1,0 +1,2014 @@
+[
+  {
+    "id": "antigravity-hard-595d089f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A chemist has Solution X (15% salt) and Solution Y (40% salt). She mixes them to obtain 50 liters of a 30% salt solution. How many liters of Solution X does she use?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "20"
+      },
+      {
+        "letter": "B",
+        "text": "25"
+      },
+      {
+        "letter": "C",
+        "text": "30"
+      },
+      {
+        "letter": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x + y = 50, 0.15x + 0.40y = 15. Sub y = 50 − x → −0.25x = −5 → x = 20. Alligation: X:Y = (40−30):(30−15) = 2:3, X = 2/5 · 50 = 20.",
+      "distractors": {
+        "B": "Equal-split fallacy — divides 50/2 = 25 ignoring concentrations.",
+        "C": "Variable swap — solves for Y (30 liters) instead of X.",
+        "D": "Percentage mismap — uses (30/40)·50 ≈ 37.5, rounds to 35."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set up weighted-average equation; solve for the specified variable",
+      "trapTypes": [
+        "variable swap",
+        "equal-split fallacy"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-864544fb",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A coffee shop blends Brand A ($9/lb) with Brand B ($14/lb) to create 80 lb of a blend priced at $11/lb. How many pounds of Brand B are used?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "24"
+      },
+      {
+        "letter": "B",
+        "text": "32"
+      },
+      {
+        "letter": "C",
+        "text": "40"
+      },
+      {
+        "letter": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "a + b = 80, 9a + 14b = 880. Sub a = 80 − b → 5b = 160 → b = 32.",
+      "distractors": {
+        "A": "Uses wrong alligation ratio → 24.",
+        "C": "Equal-split: 80/2 = 40.",
+        "D": "Variable swap — gives Brand A (48) instead of B."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Cost-per-unit mixture equation; solve for correct brand",
+      "trapTypes": [
+        "variable swap",
+        "equal-split assumption"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-a63ec4b3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "An alloy that is 70% copper is mixed with an alloy that is 45% copper to produce 200 kg of a 52% copper alloy. How many kg of the 70% alloy are needed?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "48"
+      },
+      {
+        "letter": "B",
+        "text": "56"
+      },
+      {
+        "letter": "C",
+        "text": "64"
+      },
+      {
+        "letter": "D",
+        "text": "144"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "0.70x + 0.45(200 − x) = 104 → 0.25x = 14 → x = 56.",
+      "distractors": {
+        "A": "Arithmetic slip rounding 14/0.25.",
+        "C": "Off-by-8 from alligation-table error.",
+        "D": "Variable swap — gives the 45% alloy amount (200 − 56 = 144)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-alloy alligation equation",
+      "trapTypes": [
+        "variable swap",
+        "percentage arithmetic slip"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-fefce3f5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A bartender mixes juice A (10% sugar) with juice B (35% sugar) to make 100 oz of a drink that is 20% sugar. How many ounces of juice A does she use?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "40"
+      },
+      {
+        "letter": "B",
+        "text": "50"
+      },
+      {
+        "letter": "C",
+        "text": "60"
+      },
+      {
+        "letter": "D",
+        "text": "75"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "0.10a + 0.35(100 − a) = 20 → −0.25a = −15 → a = 60.",
+      "distractors": {
+        "A": "Variable swap — solves for juice B (40).",
+        "B": "Equal-split: 100/2 = 50.",
+        "D": "Ratio inversion: (35/45)·100 ≈ 78, rounds to 75."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Mixture setup — verify which variable is requested",
+      "trapTypes": [
+        "variable swap",
+        "ratio inversion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-e6b25a2b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A painter mixes Paint A (30% pigment) with Paint B (70% pigment) to get 60 gallons of 50% pigment paint. How many gallons of Paint A are used?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "20"
+      },
+      {
+        "letter": "B",
+        "text": "25"
+      },
+      {
+        "letter": "C",
+        "text": "30"
+      },
+      {
+        "letter": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "0.30a + 0.70(60 − a) = 30 → −0.40a = −12 → a = 30.",
+      "distractors": {
+        "A": "Uses 12/0.60 = 20 (wrong coefficient).",
+        "B": "Averages 20 and 30 → 25.",
+        "D": "Variable swap — gives Paint B amount (30) then mis-picks 40."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Weighted-average pigment equation",
+      "trapTypes": [
+        "coefficient confusion",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-371f1e05",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A store mixes cashews ($12/kg) with peanuts ($5/kg) to get 70 kg of a $7/kg mixture. How many kilograms of cashews are used?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "15"
+      },
+      {
+        "letter": "C",
+        "text": "20"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "12c + 5(70 − c) = 490 → 7c = 140 → c = 20.",
+      "distractors": {
+        "A": "Halves the correct answer: 20/2 = 10.",
+        "B": "Uses 140/10 = 14, rounds to 15.",
+        "D": "Ratio inversion: (5/7)·70/2 = 25."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Cost-per-kg mixture equation",
+      "trapTypes": [
+        "ratio inversion",
+        "halving error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-8152af69",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A mechanic needs 40 liters of a 65% antifreeze solution. He has 80% and 50% solutions. How many liters of the 80% solution should he use?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "15"
+      },
+      {
+        "letter": "B",
+        "text": "20"
+      },
+      {
+        "letter": "C",
+        "text": "25"
+      },
+      {
+        "letter": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "0.80x + 0.50(40 − x) = 0.65·40 = 26 → 0.30x = 6 → x = 20.",
+      "distractors": {
+        "A": "Wrong target (uses 0.60 instead of 0.65): 0.30x = 4.5 → 15.",
+        "C": "Wrong coefficient: 6/0.25 = 24, rounds to 25.",
+        "D": "Variable swap — gives 50% solution (20) then adds 10."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Antifreeze concentration mixture",
+      "trapTypes": [
+        "arithmetic slip",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-39d2a7d7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many liters of a 60% acid solution must be mixed with 20 liters of a 30% acid solution to obtain a 50% acid solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "30"
+      },
+      {
+        "letter": "B",
+        "text": "40"
+      },
+      {
+        "letter": "C",
+        "text": "50"
+      },
+      {
+        "letter": "D",
+        "text": "60"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "0.60x + 6 = 0.50(x + 20) → 0.10x = 4 → x = 40.",
+      "distractors": {
+        "A": "Uses 0.10x = 3 (subtraction error) → 30.",
+        "C": "Uses 4/0.08 = 50 (wrong coefficient).",
+        "D": "Uses 4/0.60 · 10 ≈ 67, rounds to 60."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Open-ended mixture where total is a variable",
+      "trapTypes": [
+        "forgetting variable total",
+        "coefficient error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-801f3d8e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two cyclists start from the same point riding in opposite directions. Cyclist A rides 4 km/h faster than Cyclist B. After 3 hours they are 114 km apart. What is Cyclist A's speed in km/h?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "17"
+      },
+      {
+        "letter": "B",
+        "text": "19"
+      },
+      {
+        "letter": "C",
+        "text": "21"
+      },
+      {
+        "letter": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "3b + 3(b+4) = 114 → 6b = 102 → b = 17 → A = 21.",
+      "distractors": {
+        "A": "Variable swap — gives B's speed (17).",
+        "B": "Adds 2 instead of 4 to B's speed: 17 + 2 = 19.",
+        "D": "Doubles the difference: 17 + 6 = 23."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Relative speeds in opposite directions",
+      "trapTypes": [
+        "variable swap",
+        "doubling the difference"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-abf195d9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A boat travels 48 km upstream in 4 hours and 48 km downstream in 3 hours. What is the speed of the current in km/h?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Upstream = 48/4 = 12, downstream = 48/3 = 16. b − c = 12, b + c = 16 → 2c = 4 → c = 2.",
+      "distractors": {
+        "A": "Halves too far: 2/2 = 1.",
+        "C": "Forgets to halve: 16 − 12 = 4.",
+        "D": "Variable swap — gives the boat's speed (14)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Boat-current speed system; solve for current",
+      "trapTypes": [
+        "forgetting to halve",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-942fbaf6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A car leaves City A at 60 km/h toward City B. One hour later, a second car leaves City B at 80 km/h toward City A. The cities are 340 km apart. How many hours after the second car departs do they meet?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1.5"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "2.5"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "After 1 h Car A covers 60 km → 280 km remain. Combined speed = 140. t = 280/140 = 2.",
+      "distractors": {
+        "A": "Uses 340/200 − adjustment = 1.5.",
+        "C": "Ignores head-start: 340/140 ≈ 2.43 → 2.5.",
+        "D": "Adds head-start time: 2 + 1 = 3."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Account for head-start distance, then use combined speed",
+      "trapTypes": [
+        "time-reference confusion",
+        "ignoring head-start"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-a2bec9ea",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A car departs at 50 km/h. Two hours later a motorcycle departs at 75 km/h on the same route. How many hours after the motorcycle departs does it catch up?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Gap = 50·2 = 100 km. Relative speed = 25 km/h. Time = 100/25 = 4.",
+      "distractors": {
+        "A": "Confuses head-start time (2 h) with catch-up time.",
+        "B": "Divides 75/25 = 3.",
+        "D": "Doubles the correct answer: 4·1.5 = 6."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify gap and relative speed in a pursuit",
+      "trapTypes": [
+        "confusing head-start with catch-up",
+        "wrong relative speed"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-7ec99e99",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Pipe A fills a tank in 6 hours and Pipe B fills it in 10 hours. Working together, how many hours does it take to fill the tank?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "15/4"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Combined rate = 1/6 + 1/10 = 4/15. Time = 15/4 = 3.75 h.",
+      "distractors": {
+        "A": "Mis-applies harmonic mean, gets 3.",
+        "C": "Rounds 3.75 up to 4.",
+        "D": "Averages times: (6+10)/2 = 8."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Combine work rates and invert to find time",
+      "trapTypes": [
+        "averaging times instead of rates",
+        "rounding"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-259b7479",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A train travels from Station A to Station B at 90 km/h and returns at 60 km/h. What is the average speed for the entire round trip, in km/h?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "70"
+      },
+      {
+        "letter": "B",
+        "text": "72"
+      },
+      {
+        "letter": "C",
+        "text": "75"
+      },
+      {
+        "letter": "D",
+        "text": "80"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Harmonic mean = 2·90·60/(90+60) = 10800/150 = 72.",
+      "distractors": {
+        "A": "Subtracts 5 from the arithmetic mean.",
+        "C": "Arithmetic-mean trap: (90+60)/2 = 75.",
+        "D": "Weighted guess closer to 90."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply harmonic mean for equal-distance round trip",
+      "trapTypes": [
+        "arithmetic mean trap",
+        "equal-distance weighting"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-cb974aa0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two planes fly toward each other from airports 3,000 km apart. Plane A flies at 500 km/h and Plane B at 700 km/h. How many hours until they meet?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "2.5"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Combined speed = 1200. t = 3000/1200 = 2.5.",
+      "distractors": {
+        "A": "Uses 3000/1500 = 2.",
+        "C": "Uses 3000/1000 = 3.",
+        "D": "Divides by one speed: 3000/700 ≈ 4.3 → 4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Sum approach speeds and divide distance",
+      "trapTypes": [
+        "dividing by one speed",
+        "arithmetic slip"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-782b7a9b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A plane flies 600 km with a tailwind in 2 hours and returns against the wind in 3 hours. What is the speed of the wind in km/h?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "25"
+      },
+      {
+        "letter": "B",
+        "text": "50"
+      },
+      {
+        "letter": "C",
+        "text": "75"
+      },
+      {
+        "letter": "D",
+        "text": "100"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "With wind: p + w = 300. Against: p − w = 200. Subtract: 2w = 100 → w = 50.",
+      "distractors": {
+        "A": "Halves again: 50/2 = 25.",
+        "C": "Adds adjustment: 50 + 25 = 75.",
+        "D": "Forgets to halve: 300 − 200 = 100."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Plane-wind system analogous to boat-current",
+      "trapTypes": [
+        "forgetting to halve",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-e78fc6dd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A company's fixed costs are $4,800/month. Each widget costs $6 to make and sells for $18. How many widgets must be sold to break even?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "200"
+      },
+      {
+        "letter": "B",
+        "text": "267"
+      },
+      {
+        "letter": "C",
+        "text": "400"
+      },
+      {
+        "letter": "D",
+        "text": "800"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "18n = 4800 + 6n → 12n = 4800 → n = 400.",
+      "distractors": {
+        "A": "Divides by sum: 4800/24 = 200.",
+        "B": "Divides by selling price: 4800/18 ≈ 267.",
+        "D": "Divides by variable cost: 4800/6 = 800."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Contribution-margin break-even",
+      "trapTypes": [
+        "ignoring variable cost",
+        "dividing by wrong quantity"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-6f8f5256",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A theater sold 350 tickets. Adult tickets cost $12 and child tickets cost $7. Total revenue was $3,300. How many adult tickets were sold?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "140"
+      },
+      {
+        "letter": "B",
+        "text": "170"
+      },
+      {
+        "letter": "C",
+        "text": "180"
+      },
+      {
+        "letter": "D",
+        "text": "210"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "12a + 7(350 − a) = 3300 → 5a = 850 → a = 170.",
+      "distractors": {
+        "A": "Divides 850/6 ≈ 142, rounds to 140.",
+        "C": "Variable swap — gives child tickets (180).",
+        "D": "Divides 3300/12 ≈ 275, adjusts to 210."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Revenue + count system; solve for adult tickets",
+      "trapTypes": [
+        "variable swap",
+        "dividing by one price"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-68d31515",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A bakery sells cupcakes for $3.50 and cookies for $1.50 each. On Monday it sold 200 items for $460. How many cupcakes were sold?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "60"
+      },
+      {
+        "letter": "B",
+        "text": "80"
+      },
+      {
+        "letter": "C",
+        "text": "120"
+      },
+      {
+        "letter": "D",
+        "text": "140"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "3.50c + 1.50(200 − c) = 460 → 2c = 160 → c = 80.",
+      "distractors": {
+        "A": "Uses 160/2.50 = 64, rounds to 60.",
+        "C": "Variable swap — gives cookies (120).",
+        "D": "Divides 460/3.50 ≈ 131, rounds to 140."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-price sales system",
+      "trapTypes": [
+        "variable swap",
+        "dividing by selling price"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-16661640",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A phone plan has a monthly fee plus a per-minute charge. Last month 300 minutes cost $47; this month 500 minutes cost $63. What is the monthly fee?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$20"
+      },
+      {
+        "letter": "B",
+        "text": "$23"
+      },
+      {
+        "letter": "C",
+        "text": "$25"
+      },
+      {
+        "letter": "D",
+        "text": "$30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Subtract: 200r = 16 → r = 0.08. f = 47 − 24 = 23.",
+      "distractors": {
+        "A": "Rounds 23 down to 20.",
+        "C": "Mis-computes 47 − 300·0.07 = 26, picks 25.",
+        "D": "Uses 63 − 500·0.066 = 30."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Subtract two linear cost equations to isolate rate, then find fixed fee",
+      "trapTypes": [
+        "subtraction order error",
+        "unit-rate confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-bb09a576",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Company X charges $500 setup + $0.03/page. Company Y charges $200 setup + $0.06/page. Above how many pages does Company X become cheaper?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5,000"
+      },
+      {
+        "letter": "B",
+        "text": "8,000"
+      },
+      {
+        "letter": "C",
+        "text": "10,000"
+      },
+      {
+        "letter": "D",
+        "text": "15,000"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "500 + 0.03p = 200 + 0.06p → 300 = 0.03p → p = 10,000.",
+      "distractors": {
+        "A": "Divides 300/0.06 = 5000.",
+        "B": "Divides 500/0.06 ≈ 8333 → 8000.",
+        "D": "Uses wrong rate diff: 300/0.02 = 15000."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set two cost functions equal",
+      "trapTypes": [
+        "wrong rate difference",
+        "dividing by single rate"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-9df95755",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A factory makes Type P bolts (3 min each) and Type Q bolts (5 min each). In a 480-minute shift exactly 120 bolts are produced using all time. How many Type Q bolts are produced?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "30"
+      },
+      {
+        "letter": "B",
+        "text": "40"
+      },
+      {
+        "letter": "C",
+        "text": "60"
+      },
+      {
+        "letter": "D",
+        "text": "80"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "p + q = 120, 3p + 5q = 480. Sub p = 120 − q → 2q = 120 → q = 60.",
+      "distractors": {
+        "A": "Uses 480/16 = 30.",
+        "B": "Splits: 120/3 = 40.",
+        "D": "Solves for P then doubles."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Quantity + time constraint system",
+      "trapTypes": [
+        "variable swap",
+        "misidentifying constraint"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-6af21965",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Each chair needs 2 h carpentry and 1 h finishing. Each table needs 3 h carpentry and 2 h finishing. A shop has 120 h carpentry and 70 h finishing weekly (all used). How many chairs are made?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "20"
+      },
+      {
+        "letter": "B",
+        "text": "24"
+      },
+      {
+        "letter": "C",
+        "text": "30"
+      },
+      {
+        "letter": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "2c + 3t = 120, c + 2t = 70. Sub c = 70 − 2t → −t = −20, t = 20, c = 30.",
+      "distractors": {
+        "A": "Variable swap — gives tables (20).",
+        "B": "Uses 120/5 = 24.",
+        "D": "Uses 120/2 − 70/3 ≈ 37, rounds to 36."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Resource-constraint system; solve for correct product",
+      "trapTypes": [
+        "variable swap",
+        "dividing by wrong coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-fafd0b8f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Today Maria is 3 times as old as her son. In 12 years she will be exactly twice as old as her son. How old is Maria today?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "24"
+      },
+      {
+        "letter": "B",
+        "text": "30"
+      },
+      {
+        "letter": "C",
+        "text": "36"
+      },
+      {
+        "letter": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "3s + 12 = 2(s + 12) → s = 12 → Maria = 36.",
+      "distractors": {
+        "A": "Son's future age: 12 + 12 = 24.",
+        "B": "Uses 12 × 2.5 = 30.",
+        "D": "Maria's future age: 36 + 12 = 48."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Time-shifted age equations",
+      "trapTypes": [
+        "future-age shift error",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-f25509a1",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Five years ago a father was 7 times as old as his daughter. Five years from now he will be 3 times as old as she will be. How old is the father now?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "30"
+      },
+      {
+        "letter": "B",
+        "text": "35"
+      },
+      {
+        "letter": "C",
+        "text": "40"
+      },
+      {
+        "letter": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "f = 7d − 30 and f = 3d + 10 → 7d − 30 = 3d + 10 → d = 10, f = 40.",
+      "distractors": {
+        "A": "Uses 3·10 = 30 (stops too early).",
+        "B": "Gives f − 5 = 35.",
+        "D": "Gives f + 5 = 45."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two time-shifted age equations (past & future)",
+      "trapTypes": [
+        "sign error in time shifts",
+        "solving for wrong person"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-96265068",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The sum of a mother's and daughter's ages is 50. Five years ago the mother was 7 times as old as the daughter. How old is the mother now?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "35"
+      },
+      {
+        "letter": "B",
+        "text": "38"
+      },
+      {
+        "letter": "C",
+        "text": "40"
+      },
+      {
+        "letter": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "m + d = 50, m − 5 = 7(d − 5). Sub m = 50 − d → 8d = 80 → d = 10, m = 40.",
+      "distractors": {
+        "A": "Uses d = 10 and adds 25 → 35.",
+        "B": "Arithmetic slip: (50 + 30)/2 − 1 = 38.",
+        "D": "Uses 7(d) instead of 7(d − 5): off by +5."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Sum + past-ratio age system",
+      "trapTypes": [
+        "sign error in past ages",
+        "wrong multiplier"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-50245a50",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Liam invests $12,000 total in two accounts: A pays 5% and B pays 8% annually. After one year he earns $810 interest. How much did he invest in Account B?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$3,000"
+      },
+      {
+        "letter": "B",
+        "text": "$5,000"
+      },
+      {
+        "letter": "C",
+        "text": "$7,000"
+      },
+      {
+        "letter": "D",
+        "text": "$9,000"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "0.05(12000 − b) + 0.08b = 810 → 0.03b = 210 → b = 7000.",
+      "distractors": {
+        "A": "Uses 810/0.08 − 12000 logic → 3000.",
+        "B": "Variable swap — gives Account A ($5,000).",
+        "D": "Uses 810/0.08 ≈ 10125, rounds to 9000."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-account interest system; solve for correct account",
+      "trapTypes": [
+        "variable swap",
+        "dividing total interest by one rate"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-63ed07b7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A jar has only dimes and quarters — 54 coins worth $9.45 total. How many quarters are in the jar?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "18"
+      },
+      {
+        "letter": "B",
+        "text": "22"
+      },
+      {
+        "letter": "C",
+        "text": "27"
+      },
+      {
+        "letter": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "d + q = 54, 10d + 25q = 945. Sub d = 54 − q → 15q = 405 → q = 27.",
+      "distractors": {
+        "A": "Uses 945/54 ≈ 17.5, rounds to 18.",
+        "B": "Mis-values dimes as nickels → 22.",
+        "D": "Solves for dimes (27) and adds 5."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Count + value coin system",
+      "trapTypes": [
+        "unit confusion (cents vs dollars)",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-623fcdc0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A school buys notebooks ($4 each) and pens ($1.50 each). It purchases 150 items for $375. How many notebooks were purchased?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "36"
+      },
+      {
+        "letter": "B",
+        "text": "48"
+      },
+      {
+        "letter": "C",
+        "text": "60"
+      },
+      {
+        "letter": "D",
+        "text": "90"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "4n + 1.50(150 − n) = 375 → 2.50n = 150 → n = 60.",
+      "distractors": {
+        "A": "Divides 375/10 ≈ 38, rounds to 36.",
+        "B": "Uses 375/8 ≈ 47, rounds to 48.",
+        "D": "Variable swap — gives pens (90)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Item-count + total-cost system",
+      "trapTypes": [
+        "variable swap",
+        "dividing by sum of prices"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-0c86bedd",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Company A charges $40/day plus $0.10/mile. Company B charges $25/day plus $0.25/mile. For a one-day rental, at how many miles do they charge the same?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "50"
+      },
+      {
+        "letter": "B",
+        "text": "80"
+      },
+      {
+        "letter": "C",
+        "text": "100"
+      },
+      {
+        "letter": "D",
+        "text": "150"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "40 + 0.10m = 25 + 0.25m → 15 = 0.15m → m = 100.",
+      "distractors": {
+        "A": "Uses 15/0.30 = 50.",
+        "B": "Averages (150 + 50)/2 → 80.",
+        "D": "Uses 15/0.10 = 150."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set two linear cost functions equal",
+      "trapTypes": [
+        "wrong rate difference",
+        "dividing by one rate"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-9fbdbfcb",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Salesperson A earns $600/week + 4% commission. Salesperson B earns $400/week + 8% commission. At what weekly sales amount do they earn the same?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$3,000"
+      },
+      {
+        "letter": "B",
+        "text": "$4,000"
+      },
+      {
+        "letter": "C",
+        "text": "$5,000"
+      },
+      {
+        "letter": "D",
+        "text": "$6,000"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "600 + 0.04s = 400 + 0.08s → 200 = 0.04s → s = 5000.",
+      "distractors": {
+        "A": "Uses 200/0.06 ≈ 3333, rounds to 3000.",
+        "B": "Uses 200/0.05 = 4000.",
+        "D": "Uses 200/0.04 + 1000 = 6000."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set two earnings functions equal",
+      "trapTypes": [
+        "wrong commission difference",
+        "extra addition"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-045ce540",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Gym A charges $50 membership + $8/class. Gym B charges $30 membership + $12/class. After how many classes is the total cost the same?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "50 + 8n = 30 + 12n → 20 = 4n → n = 5.",
+      "distractors": {
+        "A": "Uses 20/8 = 2.5, rounds to 3.",
+        "B": "Uses 20/5 = 4.",
+        "D": "Uses (50+30)/(12−8) = 20."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set two linear fee functions equal",
+      "trapTypes": [
+        "dividing by one rate",
+        "rounding"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-9a5857ef",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Worker A and Worker B are paid different hourly rates. When A works 20 h and B works 30 h, total pay is $1,300. When A works 30 h and B works 20 h, total pay is $1,200. What is Worker B's hourly rate?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$18"
+      },
+      {
+        "letter": "B",
+        "text": "$22"
+      },
+      {
+        "letter": "C",
+        "text": "$26"
+      },
+      {
+        "letter": "D",
+        "text": "$30"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Add: 50(a+b) = 2500 → a+b = 50. Subtract: 10(a−b) = −100 → a−b = −10. So a = 20, b = 30.",
+      "distractors": {
+        "A": "Divides 1300/72 ≈ 18.",
+        "B": "Divides 1200/55 ≈ 22.",
+        "C": "Averages: 50/2 = 25, rounds to 26."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Symmetric wage system — add and subtract equations",
+      "trapTypes": [
+        "variable swap",
+        "arithmetic error in elimination"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-470fc0c2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The sum of two numbers is 84 and their difference is 18. What is the larger number?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "33"
+      },
+      {
+        "letter": "B",
+        "text": "42"
+      },
+      {
+        "letter": "C",
+        "text": "48"
+      },
+      {
+        "letter": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "x + y = 84, x − y = 18. Add: 2x = 102 → x = 51.",
+      "distractors": {
+        "A": "Variable swap — gives the smaller number (33).",
+        "B": "Ignores difference: 84/2 = 42.",
+        "C": "Adds half the difference: 42 + 6 = 48."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Sum-and-difference shortcut",
+      "trapTypes": [
+        "variable swap",
+        "ignoring difference"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-5ff6862b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A farm has chickens and cows — 50 animals with 140 legs total. How many cows are there?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "10"
+      },
+      {
+        "letter": "B",
+        "text": "15"
+      },
+      {
+        "letter": "C",
+        "text": "20"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "c + k = 50, 4c + 2k = 140. Sub k = 50 − c → 2c = 40 → c = 20.",
+      "distractors": {
+        "A": "Uses 140/14 = 10.",
+        "B": "Uses (140−100)/4 = 10 then adds 5.",
+        "D": "Equal-split: 50/2 = 25."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Classic animal-count problem",
+      "trapTypes": [
+        "leg-count error",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-d4efd2a2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Dried apricots cost $8/lb and dried cranberries cost $5/lb. A grocer makes 30 lb of trail mix that costs $6/lb. How many pounds of apricots are in the mix?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "10"
+      },
+      {
+        "letter": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "8a + 5(30 − a) = 180 → 3a = 30 → a = 10.",
+      "distractors": {
+        "A": "Uses 30/6 = 5.",
+        "B": "Uses 30/3.75 = 8.",
+        "D": "Equal-split: 30/2 = 15."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Cost-per-pound trail-mix system",
+      "trapTypes": [
+        "equal-split fallacy",
+        "dividing by wrong coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-c6605266",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Emma splits $10,000 between a 4% account and a 7% account. Total interest after one year is $550. How much is in the 4% account?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$3,000"
+      },
+      {
+        "letter": "B",
+        "text": "$4,000"
+      },
+      {
+        "letter": "C",
+        "text": "$5,000"
+      },
+      {
+        "letter": "D",
+        "text": "$6,000"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "0.04x + 0.07(10000 − x) = 550 → −0.03x = −150 → x = 5000.",
+      "distractors": {
+        "A": "Uses 550/0.07 − 10000 ≈ −2143, flips to 3000.",
+        "B": "Uses 150/0.04 = 3750, rounds to 4000.",
+        "D": "Variable swap — gives the 7% account ($5,000) then picks 6000."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Two-rate interest allocation",
+      "trapTypes": [
+        "variable swap",
+        "dividing by single rate"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-54691096",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many liters of pure water must be added to 30 liters of a 40% alcohol solution to dilute it to 25%?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "12"
+      },
+      {
+        "letter": "B",
+        "text": "15"
+      },
+      {
+        "letter": "C",
+        "text": "18"
+      },
+      {
+        "letter": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "0.40·30 = 0.25(30 + w) → 12 = 7.5 + 0.25w → 0.25w = 4.5 → w = 18.",
+      "distractors": {
+        "A": "Confuses solute amount (12) with water needed.",
+        "B": "Uses 4.5/0.30 = 15 (wrong coefficient).",
+        "D": "Uses 12/0.50 = 24."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Dilution: water has 0% concentration",
+      "trapTypes": [
+        "confusing solute with solvent",
+        "wrong denominator"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-a8812d59",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A store sells pens for $2 and markers for $5 each. A customer buys 16 items for $50 total. How many markers did the customer buy?",
+    "type": "SPR",
+    "correctAnswer": "6",
+    "acceptableAnswers": [
+      "6"
+    ],
+    "explanation": {
+      "correct": "2(16 − m) + 5m = 50 → 32 + 3m = 50 → m = 6."
+    },
+    "metadata": {
+      "cognitiveMove": "Item-count + value system",
+      "trapTypes": [
+        "variable swap",
+        "arithmetic error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-cd9ba0d0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two numbers have a sum of 63 and a difference of 19. What is the smaller number?",
+    "type": "SPR",
+    "correctAnswer": "22",
+    "acceptableAnswers": [
+      "22"
+    ],
+    "explanation": {
+      "correct": "Add: 2x = 82, x = 41. y = 63 − 41 = 22."
+    },
+    "metadata": {
+      "cognitiveMove": "Sum-and-difference shortcut",
+      "trapTypes": [
+        "variable swap",
+        "forgetting to halve"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-b6519da1",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A boat travels 60 km downstream in 3 hours and 60 km upstream in 5 hours. What is the boat's speed in still water, in km/h?",
+    "type": "SPR",
+    "correctAnswer": "16",
+    "acceptableAnswers": [
+      "16"
+    ],
+    "explanation": {
+      "correct": "Down = 20, up = 12. b + c = 20, b − c = 12 → 2b = 32, b = 16."
+    },
+    "metadata": {
+      "cognitiveMove": "Boat-current system; solve for boat speed",
+      "trapTypes": [
+        "solving for current instead",
+        "forgetting to average"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-68bce5b1",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A cashier has $7.50 in nickels and dimes — 100 coins total. How many dimes are there?",
+    "type": "SPR",
+    "correctAnswer": "50",
+    "acceptableAnswers": [
+      "50"
+    ],
+    "explanation": {
+      "correct": "5(100 − d) + 10d = 750 → 5d = 250 → d = 50."
+    },
+    "metadata": {
+      "cognitiveMove": "Coin count + value system",
+      "trapTypes": [
+        "unit confusion",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-75446029",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A plane flies 800 km with the wind in 2 hours and 800 km against the wind in 4 hours. What is the wind speed in km/h?",
+    "type": "SPR",
+    "correctAnswer": "100",
+    "acceptableAnswers": [
+      "100"
+    ],
+    "explanation": {
+      "correct": "p + w = 400, p − w = 200. Subtract: 2w = 200, w = 100."
+    },
+    "metadata": {
+      "cognitiveMove": "Plane-wind system",
+      "trapTypes": [
+        "forgetting to halve",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-3495013d",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The cost of 3 notebooks and 2 folders is $21. The cost of 5 notebooks and 4 folders is $37. What is the cost of one notebook in dollars?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "Multiply first by 2: 6n + 4f = 42. Subtract: n = 42 − 37 = 5."
+    },
+    "metadata": {
+      "cognitiveMove": "Elimination with multiplier",
+      "trapTypes": [
+        "wrong multiplier",
+        "solving for folder"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-614c0846",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A farm has chickens and goats — 40 animals and 120 legs total. How many goats are there?",
+    "type": "SPR",
+    "correctAnswer": "20",
+    "acceptableAnswers": [
+      "20"
+    ],
+    "explanation": {
+      "correct": "2(40 − g) + 4g = 120 → 2g = 40 → g = 20."
+    },
+    "metadata": {
+      "cognitiveMove": "Animal-leg count system",
+      "trapTypes": [
+        "leg-count error",
+        "variable swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-b779a14d",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Mixture A is 20% acid and Mixture B is 60% acid. How many liters of Mixture B must be added to 40 liters of Mixture A to produce a 40% acid solution?",
+    "type": "SPR",
+    "correctAnswer": "40",
+    "acceptableAnswers": [
+      "40"
+    ],
+    "explanation": {
+      "correct": "8 + 0.60b = 0.40(40 + b) → 0.20b = 8 → b = 40."
+    },
+    "metadata": {
+      "cognitiveMove": "Open-ended mixture with variable total",
+      "trapTypes": [
+        "forgetting variable total",
+        "coefficient error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-27aded47",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A carpenter makes bookshelves (6 boards each) and desks (10 boards each). He has 120 boards and makes 16 items total, using all boards. How many desks does he make?",
+    "type": "SPR",
+    "correctAnswer": "6",
+    "acceptableAnswers": [
+      "6"
+    ],
+    "explanation": {
+      "correct": "6(16 − d) + 10d = 120 → 4d = 24 → d = 6."
+    },
+    "metadata": {
+      "cognitiveMove": "Resource allocation system",
+      "trapTypes": [
+        "variable swap",
+        "arithmetic error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-cabfae13",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "$8,000 is split between a 3% account and a 6% account. Annual interest totals $390. How many dollars are invested at 6%?",
+    "type": "SPR",
+    "correctAnswer": "5000",
+    "acceptableAnswers": [
+      "5000",
+      "5,000"
+    ],
+    "explanation": {
+      "correct": "240 + 0.03x = 390 → 0.03x = 150 → x = 5000."
+    },
+    "metadata": {
+      "cognitiveMove": "Two-rate interest allocation",
+      "trapTypes": [
+        "variable swap",
+        "dividing total interest by one rate"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-41ba2018",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "An express train at 100 km/h and a local train at 60 km/h start from the same station going the same direction. The local leaves 1 hour earlier. How many hours after the express departs does it overtake the local?",
+    "type": "SPR",
+    "correctAnswer": "1.5",
+    "acceptableAnswers": [
+      "1.5",
+      "3/2"
+    ],
+    "explanation": {
+      "correct": "Gap = 60 km. Relative speed = 40. Time = 60/40 = 1.5 h."
+    },
+    "metadata": {
+      "cognitiveMove": "Pursuit with head-start gap",
+      "trapTypes": [
+        "time-reference confusion",
+        "wrong relative speed"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  },
+  {
+    "id": "antigravity-hard-ffb38c3b",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Systems of two linear equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "In a class of 45 students, each studies either French or Spanish (not both). There are 9 more students studying Spanish than French. How many study French?",
+    "type": "SPR",
+    "correctAnswer": "18",
+    "acceptableAnswers": [
+      "18"
+    ],
+    "explanation": {
+      "correct": "f + (f + 9) = 45 → 2f = 36 → f = 18."
+    },
+    "metadata": {
+      "cognitiveMove": "Count system with difference constraint",
+      "trapTypes": [
+        "variable swap",
+        "off-by-one"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-systems-word"
+    }
+  }
+]

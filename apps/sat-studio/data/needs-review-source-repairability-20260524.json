@@ -1,0 +1,89 @@
+{
+  "version": "needs-review-source-repairability-2026-05-24",
+  "generatedAt": "2026-05-24T09:33:19+00:00",
+  "summary": {
+    "totalNeedsReview": 0,
+    "byBank": {},
+    "bySourceGroup": {},
+    "bySourceType": {},
+    "bySourceName": {},
+    "byRepairCategory": {},
+    "byRepairability": {},
+    "byBucket": {},
+    "byVerdict": {},
+    "bySection": {},
+    "byDomain": {},
+    "byDifficulty": {},
+    "byVisibility": {},
+    "byPublicationStatus": {}
+  },
+  "topReasons": {},
+  "byBank": {
+    "antigravity-bank.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    },
+    "archive-source-ai-bank.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    },
+    "kaplan-sat-math-ai-bank.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    },
+    "opensat-pinesat.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    },
+    "private-vault-archive-bank.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    },
+    "sat-1590-elite-ai-bank.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    },
+    "sat-king-supplemental-ai-bank.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    },
+    "sat-studio-foundation-bank.json": {
+      "total": 0,
+      "bySourceGroup": {},
+      "byRepairCategory": {},
+      "byBucket": {},
+      "bySection": {},
+      "topReasons": {}
+    }
+  },
+  "repairQueueCsv": "data\\needs-review-source-repairability-20260524.csv",
+  "markdownPlan": "artifacts\\needs-review-repair-plan-20260524.md"
+}

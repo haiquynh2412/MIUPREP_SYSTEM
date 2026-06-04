@@ -1,0 +1,256 @@
+{
+  "generatedAt": "2026-05-17",
+  "inventory": {
+    "activeIncludingVault": 4301,
+    "activeWithoutVaultFromFullAudit": 4071,
+    "readyGeneratedOrSatKing": 1840,
+    "satKingSupplemental": 360,
+    "satKingGridIn": 47,
+    "satKingHard": 139,
+    "needsHumanReviewOrExternal": 2461,
+    "sourceCounts": {
+      "opensat": 2155,
+      "foundation": 76,
+      "ai_generated": 1480,
+      "sat_king": 360,
+      "private_vault": 230
+    }
+  },
+  "officialBasis": {
+    "rwDomainsPct": {
+      "Information and Ideas": 26,
+      "Craft and Structure": 28,
+      "Expression of Ideas": 20,
+      "Standard English Conventions": 26
+    },
+    "mathDomainsPct": {
+      "Algebra": 35,
+      "Advanced Math": 35,
+      "Problem-Solving and Data Analysis": 15,
+      "Geometry and Trigonometry": 15
+    },
+    "mathFormat": {
+      "multipleChoicePct": 75,
+      "studentProducedResponsePct": 25
+    }
+  },
+  "domainDistribution": {
+    "satKingReadingWriting": [
+      {
+        "domain": "Information and Ideas",
+        "count": 47,
+        "actualPct": 26.1,
+        "officialPct": 26,
+        "deltaPctPoints": 0.1
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 50,
+        "actualPct": 27.8,
+        "officialPct": 28,
+        "deltaPctPoints": -0.2
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 36,
+        "actualPct": 20.0,
+        "officialPct": 20,
+        "deltaPctPoints": 0.0
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 47,
+        "actualPct": 26.1,
+        "officialPct": 26,
+        "deltaPctPoints": 0.1
+      }
+    ],
+    "satKingMath": [
+      {
+        "domain": "Algebra",
+        "count": 63,
+        "actualPct": 35.0,
+        "officialPct": 35,
+        "deltaPctPoints": 0.0
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 63,
+        "actualPct": 35.0,
+        "officialPct": 35,
+        "deltaPctPoints": 0.0
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 27,
+        "actualPct": 15.0,
+        "officialPct": 15,
+        "deltaPctPoints": 0.0
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 27,
+        "actualPct": 15.0,
+        "officialPct": 15,
+        "deltaPctPoints": 0.0
+      }
+    ],
+    "allActiveReadingWriting": [
+      {
+        "domain": "Information and Ideas",
+        "count": 722,
+        "actualPct": 30.6,
+        "officialPct": 26,
+        "deltaPctPoints": 4.6
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 418,
+        "actualPct": 17.7,
+        "officialPct": 28,
+        "deltaPctPoints": -10.3
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 180,
+        "actualPct": 7.6,
+        "officialPct": 20,
+        "deltaPctPoints": -12.4
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 1038,
+        "actualPct": 44.0,
+        "officialPct": 26,
+        "deltaPctPoints": 18.0
+      }
+    ],
+    "allActiveMath": [
+      {
+        "domain": "Algebra",
+        "count": 463,
+        "actualPct": 27.0,
+        "officialPct": 35,
+        "deltaPctPoints": -8.0
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 501,
+        "actualPct": 29.2,
+        "officialPct": 35,
+        "deltaPctPoints": -5.8
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 363,
+        "actualPct": 21.2,
+        "officialPct": 15,
+        "deltaPctPoints": 6.2
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 386,
+        "actualPct": 22.5,
+        "officialPct": 15,
+        "deltaPctPoints": 7.5
+      }
+    ],
+    "readyGeneratedReadingWriting": [
+      {
+        "domain": "Information and Ideas",
+        "count": 396,
+        "actualPct": 39.1,
+        "officialPct": 26,
+        "deltaPctPoints": 13.1
+      },
+      {
+        "domain": "Craft and Structure",
+        "count": 118,
+        "actualPct": 11.6,
+        "officialPct": 28,
+        "deltaPctPoints": -16.4
+      },
+      {
+        "domain": "Expression of Ideas",
+        "count": 70,
+        "actualPct": 6.9,
+        "officialPct": 20,
+        "deltaPctPoints": -13.1
+      },
+      {
+        "domain": "Standard English Conventions",
+        "count": 429,
+        "actualPct": 42.3,
+        "officialPct": 26,
+        "deltaPctPoints": 16.3
+      }
+    ],
+    "readyGeneratedMath": [
+      {
+        "domain": "Algebra",
+        "count": 275,
+        "actualPct": 33.3,
+        "officialPct": 35,
+        "deltaPctPoints": -1.7
+      },
+      {
+        "domain": "Advanced Math",
+        "count": 207,
+        "actualPct": 25.0,
+        "officialPct": 35,
+        "deltaPctPoints": -10.0
+      },
+      {
+        "domain": "Problem-Solving and Data Analysis",
+        "count": 191,
+        "actualPct": 23.1,
+        "officialPct": 15,
+        "deltaPctPoints": 8.1
+      },
+      {
+        "domain": "Geometry and Trigonometry",
+        "count": 154,
+        "actualPct": 18.6,
+        "officialPct": 15,
+        "deltaPctPoints": 3.6
+      }
+    ]
+  },
+  "difficultyDistribution": {
+    "satKing": {
+      "Medium": 154,
+      "Hard": 139,
+      "Easy": 67
+    },
+    "readyGenerated": {
+      "Easy": 217,
+      "Medium": 1484,
+      "Hard": 139
+    },
+    "allActive": {
+      "Medium": 2881,
+      "Hard": 756,
+      "Easy": 664
+    }
+  },
+  "remainingGaps": [
+    "Adaptive scoring is still approximate; not official Bluebook-equivalent.",
+    "Private vault/OpenSAT/Foundation still need human answer/source review.",
+    "Rhetorical Synthesis, Cross-Text, Data Interpretation, and Linear equations in two variables are now present but should grow beyond 30-50 high-quality items each.",
+    "Hard module needs more non-template, passage-rich R/W and multi-step Math items."
+  ],
+  "verdict": {
+    "breadthScore10": 8,
+    "depthScore10": 6.5,
+    "examFidelityScore10": 5.5,
+    "familyPracticeReadinessScore10": 8,
+    "publicReleaseReadinessScore10": 6,
+    "summary": "SAT King supplemental pack fixes the zero-coverage gaps and adds Math student-produced responses. The app is now materially stronger for family practice, but still not official-equivalent until adaptive scoring, more hard passage-style items, and human review are expanded."
+  },
+  "outputs": {
+    "supplementalBank": "data/sat-king-supplemental-ai-bank.json",
+    "supplementalReport": "data/sat-king-supplemental-report.json",
+    "fullAudit": "data/full-question-bank-audit-report.json",
+    "generatedAudit": "data/generated-question-audit-report.json"
+  }
+}

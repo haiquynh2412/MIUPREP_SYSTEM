@@ -1,0 +1,750 @@
+{
+  "generatedAt": "2026-06-04T06:21:40.833Z",
+  "sourceSummary": {
+    "mathUnits": 28,
+    "mathQuestions": 485,
+    "miumathSourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\apps\\miumath-app\\public\\data\\questions_db.json",
+    "englishTests": 93,
+    "englishLearningReadyQuestions": 110,
+    "learners": 2,
+    "telemetryEvents": 4
+  },
+  "report": {
+    "schemaVersion": "miuprep_beta_readiness_v1",
+    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "scopes": [
+      {
+        "scopeId": "math_9_internal",
+        "title": "Math 9 internal beta",
+        "programId": "vn_math_6_9",
+        "status": "pass",
+        "contentUnits": 28,
+        "questionCount": 485,
+        "learners": 1,
+        "targetCoverage": 67,
+        "diagnosticStatus": "pass",
+        "recommendationStatus": "pass",
+        "blockers": [],
+        "nextActions": []
+      },
+      {
+        "scopeId": "ielts_reading_listening_internal",
+        "title": "IELTS Reading/Listening internal beta",
+        "programId": "ielts",
+        "status": "pass",
+        "contentUnits": 6,
+        "questionCount": 110,
+        "learners": 1,
+        "targetCoverage": 100,
+        "diagnosticStatus": "pass",
+        "recommendationStatus": "pass",
+        "blockers": [],
+        "nextActions": []
+      }
+    ],
+    "learningEvents": {
+      "status": "watch",
+      "totalEvents": 18,
+      "realTelemetryEvents": 0,
+      "seededTelemetryEvents": 4,
+      "stateLearningEvents": 0,
+      "syntheticStateLearningEvents": 14,
+      "evidenceBreakdown": {
+        "liveTelemetryEvents": 0,
+        "seededTelemetryEvents": 4,
+        "liveStateLearningEvents": 0,
+        "syntheticStateLearningEvents": 14,
+        "liveLearners": 0,
+        "syntheticLearners": 2
+      },
+      "byType": {
+        "diagnostic_attempt": 4,
+        "practice_attempt": 14
+      },
+      "firstAt": "2026-06-03T08:00:00.000Z",
+      "lastAt": "2026-06-04T06:21:40.833Z",
+      "detail": "Only seeded/synthetic learning events are available; collect live learner evidence before widening beta or changing graph edges."
+    },
+    "diagnosticAudit": {
+      "status": "pass",
+      "scopedContentUnits": 34,
+      "diagnosticEvents": 2,
+      "targetCoverage": 84,
+      "invalidTargetIds": [],
+      "detail": "Diagnostic has enough graph coverage or live diagnostic telemetry for internal beta."
+    },
+    "recommendationAudit": {
+      "status": "pass",
+      "checkedLearners": 2,
+      "saneRecommendations": 2,
+      "questionableRecommendations": [],
+      "detail": "Recommendations are scoped to the learner target programs and valid graph nodes."
+    },
+    "learningQualityKpis": {
+      "status": "watch",
+      "learners": 2,
+      "realLearners": 0,
+      "syntheticLearners": 2,
+      "attemptSamples": 14,
+      "realAttemptSamples": 0,
+      "syntheticAttemptSamples": 14,
+      "eventSamples": 18,
+      "realEventSamples": 0,
+      "seededEventSamples": 18,
+      "evidenceSource": "synthetic",
+      "masteryLift": 52,
+      "retentionAfter7Days": 0,
+      "timeToStableDays": null,
+      "errorRecurrenceRate": 50,
+      "lessonCompletionQuality": 67,
+      "detail": "Learning KPI currently relies on seeded/synthetic evidence; collect live events before trusting graph or routing changes."
+    },
+    "recommendationQualityAudit": {
+      "status": "pass",
+      "checkedLearners": 2,
+      "passedRecommendations": 2,
+      "watchIssues": [],
+      "blockedIssues": [],
+      "detail": "Recommendations pass graph scope, prerequisite, difficulty, and repetition checks."
+    },
+    "masteryShadowAudit": {
+      "status": "watch",
+      "learners": 2,
+      "rows": 4,
+      "changedStatusRows": 0,
+      "largestAbsoluteDelta": 17,
+      "protectedFeedbackOnlyEvents": 0,
+      "evidenceSource": "synthetic",
+      "learnerReports": [
+        {
+          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "summary": {
+            "trackedRows": 2,
+            "changedStatusRows": 0,
+            "averageDelta": -17,
+            "largestAbsoluteDelta": 17,
+            "protectedFeedbackOnlyEvents": 0
+          },
+          "studentFacingEnabled": false,
+          "recommendationPolicy": "v1_only"
+        },
+        {
+          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "summary": {
+            "trackedRows": 2,
+            "changedStatusRows": 0,
+            "averageDelta": -17,
+            "largestAbsoluteDelta": 17,
+            "protectedFeedbackOnlyEvents": 0
+          },
+          "studentFacingEnabled": false,
+          "recommendationPolicy": "v1_only"
+        }
+      ],
+      "detail": "Mastery V2 shadow is collecting comparison deltas only; review changed statuses or synthetic evidence before enabling any behavior."
+    },
+    "empiricalDifficultyAudit": {
+      "status": "watch",
+      "learners": 2,
+      "rows": 14,
+      "calibratedCandidates": 0,
+      "sparseItems": 14,
+      "driftWatchItems": 0,
+      "evidenceSource": "synthetic",
+      "learnerReports": [
+        {
+          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "summary": {
+            "totalItems": 8,
+            "calibratedCandidates": 0,
+            "sparseItems": 8,
+            "driftWatchItems": 0,
+            "averageEloDelta": 0
+          },
+          "calibrationPolicy": "shadow_only_prior_preserved",
+          "highStakesPlacementEnabled": false
+        },
+        {
+          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "summary": {
+            "totalItems": 6,
+            "calibratedCandidates": 0,
+            "sparseItems": 6,
+            "driftWatchItems": 0,
+            "averageEloDelta": 0
+          },
+          "calibrationPolicy": "shadow_only_prior_preserved",
+          "highStakesPlacementEnabled": false
+        }
+      ],
+      "detail": "Empirical difficulty and lightweight Elo are shadow-only; keep teacher-authored difficulty until real repeated attempts confirm calibration."
+    },
+    "graphAdjustmentCandidates": [
+      {
+        "id": "mis.eng.inference_literal_only",
+        "kind": "misconception_signal",
+        "programId": "ielts",
+        "evidenceCount": 3,
+        "score": 45,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "reason": "mis.eng.inference_literal_only appears in 3 attempts; review remediation edges against eng.reading_inference, eng.infer_implicit_meaning."
+      },
+      {
+        "id": "mis.math.factor_vs_expand",
+        "kind": "misconception_signal",
+        "programId": "vn_math_6_9",
+        "evidenceCount": 3,
+        "score": 45,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "reason": "mis.math.factor_vs_expand appears in 3 attempts; review remediation edges against math.quadratic_equation, math.solve_quadratic_by_factor."
+      },
+      {
+        "id": "math.quadratic_equation",
+        "kind": "weak_mastery",
+        "programId": "vn_math_6_9",
+        "evidenceCount": 8,
+        "score": 73,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "reason": "math.quadratic_equation is still in repair after 8 attempts; inspect prerequisite/remediation edges."
+      },
+      {
+        "id": "math.solve_quadratic_by_factor",
+        "kind": "weak_mastery",
+        "programId": "vn_math_6_9",
+        "evidenceCount": 8,
+        "score": 73,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "reason": "math.solve_quadratic_by_factor is still in repair after 8 attempts; inspect prerequisite/remediation edges."
+      },
+      {
+        "id": "eng.reading_inference",
+        "kind": "weak_mastery",
+        "programId": "ielts",
+        "evidenceCount": 6,
+        "score": 50,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "reason": "eng.reading_inference is still in repair after 6 attempts; inspect prerequisite/remediation edges."
+      },
+      {
+        "id": "eng.infer_implicit_meaning",
+        "kind": "weak_mastery",
+        "programId": "ielts",
+        "evidenceCount": 6,
+        "score": 50,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "reason": "eng.infer_implicit_meaning is still in repair after 6 attempts; inspect prerequisite/remediation edges."
+      }
+    ],
+    "repairRerouteCandidates": [
+      {
+        "learnerId": "beta-math-learner-1",
+        "programId": "vn_math_6_9",
+        "targetId": "math.quadratic_equation",
+        "scope": "concept",
+        "status": "repair",
+        "evidenceCount": 8,
+        "wrongAttempts": 3,
+        "consecutiveWrongAttempts": 0,
+        "score": 73,
+        "suspectedPrerequisiteIds": [
+          "math.factorization",
+          "math.linear_equation"
+        ],
+        "misconceptionIds": [
+          "mis.math.factor_vs_expand"
+        ],
+        "action": "prerequisite_micro_diagnostic",
+        "evidenceSource": "synthetic",
+        "reason": "math.quadratic_equation is still in repair after 8 evidence signals; reroute to prerequisite micro-diagnostic for math.factorization, math.linear_equation."
+      },
+      {
+        "learnerId": "beta-math-learner-1",
+        "programId": "vn_math_6_9",
+        "targetId": "math.solve_quadratic_by_factor",
+        "scope": "skill",
+        "status": "repair",
+        "evidenceCount": 8,
+        "wrongAttempts": 3,
+        "consecutiveWrongAttempts": 0,
+        "score": 73,
+        "suspectedPrerequisiteIds": [],
+        "misconceptionIds": [
+          "mis.math.factor_vs_expand"
+        ],
+        "action": "remediation_lesson",
+        "evidenceSource": "synthetic",
+        "reason": "math.solve_quadratic_by_factor is still in repair after 8 evidence signals; assign remediation lesson for mis.math.factor_vs_expand before more same-level practice."
+      },
+      {
+        "learnerId": "beta-ielts-learner-1",
+        "programId": "ielts",
+        "targetId": "eng.infer_implicit_meaning",
+        "scope": "skill",
+        "status": "repair",
+        "evidenceCount": 6,
+        "wrongAttempts": 3,
+        "consecutiveWrongAttempts": 0,
+        "score": 50,
+        "suspectedPrerequisiteIds": [],
+        "misconceptionIds": [
+          "mis.eng.inference_literal_only"
+        ],
+        "action": "remediation_lesson",
+        "evidenceSource": "synthetic",
+        "reason": "eng.infer_implicit_meaning is still in repair after 6 evidence signals; assign remediation lesson for mis.eng.inference_literal_only before more same-level practice."
+      },
+      {
+        "learnerId": "beta-ielts-learner-1",
+        "programId": "ielts",
+        "targetId": "eng.reading_inference",
+        "scope": "concept",
+        "status": "repair",
+        "evidenceCount": 6,
+        "wrongAttempts": 3,
+        "consecutiveWrongAttempts": 0,
+        "score": 50,
+        "suspectedPrerequisiteIds": [
+          "eng.reading_detail"
+        ],
+        "misconceptionIds": [
+          "mis.eng.inference_literal_only"
+        ],
+        "action": "prerequisite_micro_diagnostic",
+        "evidenceSource": "synthetic",
+        "reason": "eng.reading_inference is still in repair after 6 evidence signals; reroute to prerequisite micro-diagnostic for eng.reading_detail."
+      }
+    ],
+    "checklist": [
+      {
+        "id": "math_9_beta",
+        "label": "Beta noi bo voi Toan lop 9",
+        "status": "pass",
+        "detail": "28 units, 485 questions, 1 beta learners.",
+        "evidenceCount": 485
+      },
+      {
+        "id": "ielts_reading_listening_beta",
+        "label": "Beta noi bo voi IELTS Reading/Listening",
+        "status": "pass",
+        "detail": "6 units, 110 questions, 1 beta learners.",
+        "evidenceCount": 110
+      },
+      {
+        "id": "real_learning_events",
+        "label": "Thu thap learning events that",
+        "status": "watch",
+        "detail": "Only seeded/synthetic learning events are available; collect live learner evidence before widening beta or changing graph edges.",
+        "evidenceCount": 18
+      },
+      {
+        "id": "diagnostic_validity",
+        "label": "Kiem tra do dung cua diagnostic",
+        "status": "pass",
+        "detail": "Diagnostic has enough graph coverage or live diagnostic telemetry for internal beta.",
+        "evidenceCount": 2
+      },
+      {
+        "id": "recommendation_sanity",
+        "label": "Kiem tra recommendation co hop ly khong",
+        "status": "pass",
+        "detail": "Recommendations are scoped to the learner target programs and valid graph nodes.",
+        "evidenceCount": 2
+      },
+      {
+        "id": "graph_adjustment_backlog",
+        "label": "Sua Knowledge Graph theo du lieu that",
+        "status": "watch",
+        "detail": "Graph adjustment backlog is ready; apply changes only after reviewing live beta evidence.",
+        "evidenceCount": 6
+      }
+    ],
+    "readyForInternalBeta": true
+  },
+  "runPlan": {
+    "id": "internal-beta-2026-06-04",
+    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "status": "watch",
+    "cohorts": [
+      {
+        "id": "cohort-math_9_internal",
+        "scopeId": "math_9_internal",
+        "programId": "vn_math_6_9",
+        "title": "Math 9 internal beta",
+        "status": "pass",
+        "targetLearners": 1,
+        "currentLearners": 1,
+        "minimumLearningEvents": 10,
+        "minimumDiagnosticAttempts": 1,
+        "focus": [
+          "Run diagnostic, focused practice, review and tutor feedback loops."
+        ]
+      },
+      {
+        "id": "cohort-ielts_reading_listening_internal",
+        "scopeId": "ielts_reading_listening_internal",
+        "programId": "ielts",
+        "title": "IELTS Reading/Listening internal beta",
+        "status": "pass",
+        "targetLearners": 1,
+        "currentLearners": 1,
+        "minimumLearningEvents": 10,
+        "minimumDiagnosticAttempts": 1,
+        "focus": [
+          "Run diagnostic, focused practice, review and tutor feedback loops."
+        ]
+      }
+    ],
+    "entryGates": [
+      "Each beta scope has active content mapped to Knowledge Graph targets.",
+      "Each beta learner is assigned to the correct target program.",
+      "Diagnostic attempts are captured before adaptive practice recommendations are trusted.",
+      "Recommendation audit has no missing or out-of-program graph targets."
+    ],
+    "exitGates": [
+      "Each cohort reaches the minimum learning event target.",
+      "Diagnostic placement agrees with observed weak mastery areas after practice.",
+      "Recommendation watchlist has no blocked issues for live learner states.",
+      "Graph adjustment candidates are reviewed and either accepted, rejected, or deferred."
+    ],
+    "telemetryRequired": [
+      "diagnostic_attempt",
+      "practice_attempt",
+      "review_attempt",
+      "feedback_only",
+      "graph_adjustment_decision"
+    ],
+    "nextActions": [
+      "Collect live learning events from diagnostic/practice/review flows.",
+      "Track 4 simulated stuck-repair reroute candidate(s) separately from live beta evidence."
+    ]
+  },
+  "changeImpact": {
+    "schemaVersion": "miuprep_change_impact_v1",
+    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "sourceLabel": "internal_beta_run_export",
+    "previousGeneratedAt": "2026-06-04T06:18:53.175Z",
+    "status": "watch",
+    "summary": {
+      "totalItems": 14,
+      "changedItems": 0,
+      "blockers": 0,
+      "watches": 13,
+      "passes": 1
+    },
+    "items": [
+      {
+        "id": "checklist:graph_adjustment_backlog",
+        "kind": "checklist",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "Sua Knowledge Graph theo du lieu that",
+        "whatChanged": "Status watch -> watch; evidence 6 -> 6.",
+        "why": "Graph adjustment backlog is ready; apply changes only after reviewing live beta evidence.",
+        "impact": "Gate needs monitoring before wider rollout.",
+        "evidenceCount": 6
+      },
+      {
+        "id": "checklist:real_learning_events",
+        "kind": "checklist",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "Thu thap learning events that",
+        "whatChanged": "Status watch -> watch; evidence 18 -> 18.",
+        "why": "Only seeded/synthetic learning events are available; collect live learner evidence before widening beta or changing graph edges.",
+        "impact": "Gate needs monitoring before wider rollout.",
+        "evidenceCount": 18
+      },
+      {
+        "id": "graph:misconception_signal:mis.eng.inference_literal_only",
+        "kind": "graph",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "misconception_signal: mis.eng.inference_literal_only",
+        "whatChanged": "Evidence 3 -> 3; score 45 -> 45; source synthetic -> synthetic.",
+        "why": "mis.eng.inference_literal_only appears in 3 attempts; review remediation edges against eng.reading_inference, eng.infer_implicit_meaning.",
+        "impact": "Keep this as a watch-only candidate until live beta evidence confirms it.",
+        "evidenceCount": 3
+      },
+      {
+        "id": "graph:misconception_signal:mis.math.factor_vs_expand",
+        "kind": "graph",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "misconception_signal: mis.math.factor_vs_expand",
+        "whatChanged": "Evidence 3 -> 3; score 45 -> 45; source synthetic -> synthetic.",
+        "why": "mis.math.factor_vs_expand appears in 3 attempts; review remediation edges against math.quadratic_equation, math.solve_quadratic_by_factor.",
+        "impact": "Keep this as a watch-only candidate until live beta evidence confirms it.",
+        "evidenceCount": 3
+      },
+      {
+        "id": "graph:weak_mastery:eng.infer_implicit_meaning",
+        "kind": "graph",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "weak_mastery: eng.infer_implicit_meaning",
+        "whatChanged": "Evidence 6 -> 6; score 50 -> 50; source synthetic -> synthetic.",
+        "why": "eng.infer_implicit_meaning is still in repair after 6 attempts; inspect prerequisite/remediation edges.",
+        "impact": "Keep this as a watch-only candidate until live beta evidence confirms it.",
+        "evidenceCount": 6
+      },
+      {
+        "id": "graph:weak_mastery:eng.reading_inference",
+        "kind": "graph",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "weak_mastery: eng.reading_inference",
+        "whatChanged": "Evidence 6 -> 6; score 50 -> 50; source synthetic -> synthetic.",
+        "why": "eng.reading_inference is still in repair after 6 attempts; inspect prerequisite/remediation edges.",
+        "impact": "Keep this as a watch-only candidate until live beta evidence confirms it.",
+        "evidenceCount": 6
+      },
+      {
+        "id": "graph:weak_mastery:math.quadratic_equation",
+        "kind": "graph",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "weak_mastery: math.quadratic_equation",
+        "whatChanged": "Evidence 8 -> 8; score 73 -> 73; source synthetic -> synthetic.",
+        "why": "math.quadratic_equation is still in repair after 8 attempts; inspect prerequisite/remediation edges.",
+        "impact": "Keep this as a watch-only candidate until live beta evidence confirms it.",
+        "evidenceCount": 8
+      },
+      {
+        "id": "graph:weak_mastery:math.solve_quadratic_by_factor",
+        "kind": "graph",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "weak_mastery: math.solve_quadratic_by_factor",
+        "whatChanged": "Evidence 8 -> 8; score 73 -> 73; source synthetic -> synthetic.",
+        "why": "math.solve_quadratic_by_factor is still in repair after 8 attempts; inspect prerequisite/remediation edges.",
+        "impact": "Keep this as a watch-only candidate until live beta evidence confirms it.",
+        "evidenceCount": 8
+      },
+      {
+        "id": "kpi:real_learning",
+        "kind": "kpi",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "Real learning KPI",
+        "whatChanged": "Mastery lift 52 -> 52; retention 0% -> 0%; recurrence 50% -> 50%; completion quality 67% -> 67%; source synthetic -> synthetic.",
+        "why": "Learning KPI currently relies on seeded/synthetic evidence; collect live events before trusting graph or routing changes.",
+        "impact": "Learning impact has signals but needs more evidence before graph changes.",
+        "evidenceCount": 32
+      },
+      {
+        "id": "reroute:beta-ielts-learner-1:concept:eng.reading_inference",
+        "kind": "reroute",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "Reroute candidate: eng.reading_inference",
+        "whatChanged": "Evidence 6 -> 6; consecutive wrong 0 -> 0; action prerequisite_micro_diagnostic -> prerequisite_micro_diagnostic.",
+        "why": "eng.reading_inference is still in repair after 6 evidence signals; reroute to prerequisite micro-diagnostic for eng.reading_detail.",
+        "impact": "Use this to monitor the simulated stuck-repair pattern; do not change student routing until live evidence confirms it.",
+        "evidenceCount": 6
+      },
+      {
+        "id": "reroute:beta-ielts-learner-1:skill:eng.infer_implicit_meaning",
+        "kind": "reroute",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "Reroute candidate: eng.infer_implicit_meaning",
+        "whatChanged": "Evidence 6 -> 6; consecutive wrong 0 -> 0; action remediation_lesson -> remediation_lesson.",
+        "why": "eng.infer_implicit_meaning is still in repair after 6 evidence signals; assign remediation lesson for mis.eng.inference_literal_only before more same-level practice.",
+        "impact": "Use this to monitor the simulated stuck-repair pattern; do not change student routing until live evidence confirms it.",
+        "evidenceCount": 6
+      },
+      {
+        "id": "reroute:beta-math-learner-1:concept:math.quadratic_equation",
+        "kind": "reroute",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "Reroute candidate: math.quadratic_equation",
+        "whatChanged": "Evidence 8 -> 8; consecutive wrong 0 -> 0; action prerequisite_micro_diagnostic -> prerequisite_micro_diagnostic.",
+        "why": "math.quadratic_equation is still in repair after 8 evidence signals; reroute to prerequisite micro-diagnostic for math.factorization, math.linear_equation.",
+        "impact": "Use this to monitor the simulated stuck-repair pattern; do not change student routing until live evidence confirms it.",
+        "evidenceCount": 8
+      },
+      {
+        "id": "reroute:beta-math-learner-1:skill:math.solve_quadratic_by_factor",
+        "kind": "reroute",
+        "changeType": "unchanged_risk",
+        "severity": "watch",
+        "title": "Reroute candidate: math.solve_quadratic_by_factor",
+        "whatChanged": "Evidence 8 -> 8; consecutive wrong 0 -> 0; action remediation_lesson -> remediation_lesson.",
+        "why": "math.solve_quadratic_by_factor is still in repair after 8 evidence signals; assign remediation lesson for mis.math.factor_vs_expand before more same-level practice.",
+        "impact": "Use this to monitor the simulated stuck-repair pattern; do not change student routing until live evidence confirms it.",
+        "evidenceCount": 8
+      },
+      {
+        "id": "recommendation:quality",
+        "kind": "recommendation",
+        "changeType": "unchanged_risk",
+        "severity": "pass",
+        "title": "Recommendation quality",
+        "whatChanged": "Checked learners 2 -> 2; issues 0 -> 0; passed 2 -> 2.",
+        "why": "Recommendations pass graph scope, prerequisite, difficulty, and repetition checks.",
+        "impact": "Adaptive recommendations can be assigned.",
+        "evidenceCount": 2
+      }
+    ]
+  },
+  "weeklyReview": {
+    "schemaVersion": "miuprep_weekly_beta_review_v1",
+    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "weekOf": "2026-06-04",
+    "status": "watch",
+    "cohortReviews": [
+      {
+        "cohortId": "cohort-math_9_internal",
+        "scopeId": "math_9_internal",
+        "title": "Math 9 internal beta",
+        "status": "pass",
+        "learnerProgress": "1/1 learners",
+        "evidenceProgress": "18/10 learning events (100%)",
+        "readiness": "485 questions, 67% graph coverage.",
+        "nextAction": "Improve graph coverage for Math 9 internal beta before wider rollout."
+      },
+      {
+        "cohortId": "cohort-ielts_reading_listening_internal",
+        "scopeId": "ielts_reading_listening_internal",
+        "title": "IELTS Reading/Listening internal beta",
+        "status": "pass",
+        "learnerProgress": "1/1 learners",
+        "evidenceProgress": "18/10 learning events (100%)",
+        "readiness": "110 questions, 100% graph coverage.",
+        "nextAction": "Continue IELTS Reading/Listening internal beta and review mastery/retention deltas next week."
+      }
+    ],
+    "graphBacklog": [
+      {
+        "id": "mis.eng.inference_literal_only",
+        "kind": "misconception_signal",
+        "programId": "ielts",
+        "severity": "watch",
+        "evidenceCount": 3,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "decision": "defer",
+        "reason": "mis.eng.inference_literal_only appears in 3 attempts; review remediation edges against eng.reading_inference, eng.infer_implicit_meaning."
+      },
+      {
+        "id": "mis.math.factor_vs_expand",
+        "kind": "misconception_signal",
+        "programId": "vn_math_6_9",
+        "severity": "watch",
+        "evidenceCount": 3,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "decision": "defer",
+        "reason": "mis.math.factor_vs_expand appears in 3 attempts; review remediation edges against math.quadratic_equation, math.solve_quadratic_by_factor."
+      },
+      {
+        "id": "math.quadratic_equation",
+        "kind": "weak_mastery",
+        "programId": "vn_math_6_9",
+        "severity": "watch",
+        "evidenceCount": 8,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "decision": "defer",
+        "reason": "math.quadratic_equation is still in repair after 8 attempts; inspect prerequisite/remediation edges."
+      },
+      {
+        "id": "math.solve_quadratic_by_factor",
+        "kind": "weak_mastery",
+        "programId": "vn_math_6_9",
+        "severity": "watch",
+        "evidenceCount": 8,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "decision": "defer",
+        "reason": "math.solve_quadratic_by_factor is still in repair after 8 attempts; inspect prerequisite/remediation edges."
+      },
+      {
+        "id": "eng.reading_inference",
+        "kind": "weak_mastery",
+        "programId": "ielts",
+        "severity": "watch",
+        "evidenceCount": 6,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "decision": "defer",
+        "reason": "eng.reading_inference is still in repair after 6 attempts; inspect prerequisite/remediation edges."
+      },
+      {
+        "id": "eng.infer_implicit_meaning",
+        "kind": "weak_mastery",
+        "programId": "ielts",
+        "severity": "watch",
+        "evidenceCount": 6,
+        "evidenceSource": "synthetic",
+        "autoApply": false,
+        "decision": "defer",
+        "reason": "eng.infer_implicit_meaning is still in repair after 6 attempts; inspect prerequisite/remediation edges."
+      }
+    ],
+    "repairReroutes": [
+      {
+        "learnerId": "beta-math-learner-1",
+        "programId": "vn_math_6_9",
+        "targetId": "math.quadratic_equation",
+        "action": "prerequisite_micro_diagnostic",
+        "evidenceCount": 8,
+        "consecutiveWrongAttempts": 0,
+        "evidenceSource": "synthetic",
+        "decision": "defer",
+        "reason": "math.quadratic_equation is still in repair after 8 evidence signals; reroute to prerequisite micro-diagnostic for math.factorization, math.linear_equation."
+      },
+      {
+        "learnerId": "beta-math-learner-1",
+        "programId": "vn_math_6_9",
+        "targetId": "math.solve_quadratic_by_factor",
+        "action": "remediation_lesson",
+        "evidenceCount": 8,
+        "consecutiveWrongAttempts": 0,
+        "evidenceSource": "synthetic",
+        "decision": "defer",
+        "reason": "math.solve_quadratic_by_factor is still in repair after 8 evidence signals; assign remediation lesson for mis.math.factor_vs_expand before more same-level practice."
+      },
+      {
+        "learnerId": "beta-ielts-learner-1",
+        "programId": "ielts",
+        "targetId": "eng.infer_implicit_meaning",
+        "action": "remediation_lesson",
+        "evidenceCount": 6,
+        "consecutiveWrongAttempts": 0,
+        "evidenceSource": "synthetic",
+        "decision": "defer",
+        "reason": "eng.infer_implicit_meaning is still in repair after 6 evidence signals; assign remediation lesson for mis.eng.inference_literal_only before more same-level practice."
+      },
+      {
+        "learnerId": "beta-ielts-learner-1",
+        "programId": "ielts",
+        "targetId": "eng.reading_inference",
+        "action": "prerequisite_micro_diagnostic",
+        "evidenceCount": 6,
+        "consecutiveWrongAttempts": 0,
+        "evidenceSource": "synthetic",
+        "decision": "defer",
+        "reason": "eng.reading_inference is still in repair after 6 evidence signals; reroute to prerequisite micro-diagnostic for eng.reading_detail."
+      }
+    ],
+    "decisions": [
+      "Keep beta cohorts small while watch items gather more evidence.",
+      "Do not use beta data for hard Knowledge Graph changes until real learning KPIs improve.",
+      "4 simulated stuck-repair reroute candidate(s) are watch-only until live beta evidence confirms them."
+    ],
+    "nextActions": [
+      "Collect live learning events from diagnostic/practice/review flows.",
+      "Track 4 simulated stuck-repair reroute candidate(s) separately from live beta evidence.",
+      "Improve graph coverage for Math 9 internal beta before wider rollout.",
+      "Continue IELTS Reading/Listening internal beta and review mastery/retention deltas next week."
+    ]
+  }
+}

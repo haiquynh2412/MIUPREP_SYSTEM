@@ -1,0 +1,143 @@
+{
+  "id": "listening-sample-3",
+  "title": "Sports Club Membership Inquiry",
+  "type": "academic",
+  "skill": "listening",
+  "sections": [
+    {
+      "id": "l3-sec-1",
+      "title": "Oakridge Sports Centre Enquiry",
+      "instructions": "Answer the questions below based on the audio script.",
+      "audioPath": "/listening-sample-3-standalone.wav",
+      "audioChecksum": "82cb3d733551edc82551ae567aef001366a57f593865a14484c4c61e5f0f9941",
+      "transcript": "Good morning! Welcome to the Oakridge Sports Centre. How can I help you today? Hi, yes. I'm moving to the area next week and would like to find out about your gym membership options. Splendid! We have three levels of membership. The Bronze tier is our basic package, which costs thirty-five pounds per month and includes pool access. The Silver tier is forty-five pounds per month and adds full gym access. And our premium Gold tier is sixty pounds per month, which gives you unlimited access to all group classes and personal training sessions. I think the Silver membership would be perfect for me since I don't really do group classes. Excellent. Let's fill in some details. Could I have your full name, please? Yes, it's David Harrison. Harrison is spelled H-A-R-R-I-S-O-N. Perfect, Mr. Harrison. And a contact number? Sure, it's 0-7-7-0-0, 9-0-0-1-2-3. Got it. And when would you like the membership to start? On Monday, June 1st, if possible. Absolutely. We also have a one-off registration fee of twenty pounds. However, we are running a spring promotion where that fee is reduced by fifty percent, so it is just ten pounds today. That's great! I'll pay that by credit card. Perfect. Now, let me tell you about our opening hours...",
+      "questionGroups": [
+        {
+          "id": "l3-rg-1",
+          "instruction": "Complete the form below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questions": [
+            {
+              "id": "q-l3-1",
+              "type": "gap_fill",
+              "instruction": "Client's Surname: ______",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "harrison"
+                ]
+              ],
+              "correctAnswer": "Harrison",
+              "explanation": "Khách hàng tự đánh vần họ của mình là Harrison: 'Harrison is spelled H-A-R-R-I-S-O-N.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "Harrison is spelled H-A-R-R-I-S-O-N"
+            },
+            {
+              "id": "q-l3-2",
+              "type": "gap_fill",
+              "instruction": "Selected Membership Tier: ______",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "silver"
+                ]
+              ],
+              "correctAnswer": "Silver",
+              "explanation": "Khách hàng chọn gói Silver vì nhu cầu tập thể hình nhưng không học lớp nhóm: 'I think the Silver membership would be perfect for me...'",
+              "answerLocation": "I think the Silver membership would be perfect for me"
+            },
+            {
+              "id": "q-l3-3",
+              "type": "gap_fill",
+              "instruction": "Contact Number: ______",
+              "blankIndex": 3,
+              "acceptedAnswers": [
+                [
+                  "07700900123",
+                  "07700 900123",
+                  "07700 900 123"
+                ]
+              ],
+              "correctAnswer": "07700900123",
+              "explanation": "Khách hàng cung cấp số điện thoại liên lạc: 'it's 0-7-7-0-0, 9-0-0-1-2-3.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "it's 0-7-7-0-0, 9-0-0-1-2-3"
+            },
+            {
+              "id": "q-l3-4",
+              "type": "gap_fill",
+              "instruction": "Start Date: Monday, June ______",
+              "blankIndex": 4,
+              "acceptedAnswers": [
+                [
+                  "1",
+                  "1st",
+                  "first"
+                ]
+              ],
+              "correctAnswer": "1",
+              "explanation": "Ngày bắt đầu hoạt động thẻ thành viên là thứ Hai, ngày 1 tháng 6: 'On Monday, June 1st, if possible.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "On Monday, June 1st"
+            },
+            {
+              "id": "q-l3-5",
+              "type": "gap_fill",
+              "instruction": "Registration Fee (discount applied): £______",
+              "blankIndex": 5,
+              "acceptedAnswers": [
+                [
+                  "10",
+                  "ten"
+                ]
+              ],
+              "correctAnswer": "10",
+              "explanation": "Phí đăng ký gốc là 20 bảng nhưng được giảm 50% trong đợt khuyến mãi mùa xuân còn 10 bảng: 'reduced by fifty percent, so it is just ten pounds today.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "reduced by fifty percent, so it is just ten pounds today"
+            }
+          ]
+        },
+        {
+          "id": "l3-rg-2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "id": "q-l3-6",
+              "type": "multiple_choice",
+              "instruction": "Why did David Harrison choose the Silver membership tier?",
+              "options": [
+                "A. It is the cheapest tier available.",
+                "B. It includes gym access but excludes group classes he doesn't need.",
+                "C. It includes a complimentary personal training session."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "David chọn hạng Silver vì nó bổ sung quyền vào phòng gym và anh không có nhu cầu tham gia các lớp học nhóm (vốn chỉ có ở hạng Gold): 'I think the Silver membership would be perfect for me since I don't really do group classes.'",
+              "answerLocation": "I think the Silver membership would be perfect for me since I don't really do group classes"
+            },
+            {
+              "id": "q-l3-7",
+              "type": "multiple_choice",
+              "instruction": "How does David Harrison decide to pay the registration fee?",
+              "options": [
+                "A. In cash",
+                "B. By debit card",
+                "C. By credit card"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "David Harrison cho biết anh sẽ thanh toán khoản phí bằng thẻ tín dụng: 'I'll pay that by credit card.' Meo/Trap: khong chon theo keyword nghe thay dau tien. Hay nghe tiep cac correction, contrast va y cuoi cung cua speaker; sau do doi chieu spelling, word form, so it/so nhieu va word limit.",
+              "answerLocation": "I'll pay that by credit card"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

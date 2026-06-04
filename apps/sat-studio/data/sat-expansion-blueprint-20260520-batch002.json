@@ -1,0 +1,22 @@
+{
+  "version": "sat-expansion-batch-002-2026-05-20",
+  "basisReports": [
+    "data/sat-2026-readiness-audit.json",
+    "data/reviewed-question-expert-audit.json",
+    "data/opensat-rw-p1-metadata-repair-report.json",
+    "data/topic-governance-report.json"
+  ],
+  "batch002Targets": {
+    "Math Algebra": 8,
+    "Math Advanced Math": 8,
+    "Reading and Writing Expression of Ideas": 6,
+    "Math PSDA statistical claim micro-skills": 6
+  },
+  "avoid": [
+    "routine probability clone",
+    "routine circumference or hypotenuse clone",
+    "single-step percent discount",
+    "generic student-notes question without a specific goal"
+  ],
+  "reason": "After metadata repair, the main remaining domain gaps are Advanced Math, Algebra, Expression of Ideas, plus thin PSDA statistical-claim micro-skills."
+}

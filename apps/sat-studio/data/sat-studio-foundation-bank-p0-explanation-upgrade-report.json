@@ -1,0 +1,24 @@
+{
+  "apply": true,
+  "version": "source-p0-explanation-upgrade-2026-05-20",
+  "sourceFile": "sat-studio-foundation-bank.json",
+  "targetCount": 1,
+  "attempted": [
+    {
+      "id": "foundation-rw-cross-text-001",
+      "sourceIndex": 75
+    }
+  ],
+  "upgraded": [
+    {
+      "id": "foundation-rw-cross-text-001",
+      "sourceIndex": 75
+    }
+  ],
+  "blocked": [],
+  "remainingDepthFlags": [],
+  "attemptedCount": 1,
+  "upgradedCount": 1,
+  "blockedCount": 0,
+  "remainingDepthFlagCount": 0
+}

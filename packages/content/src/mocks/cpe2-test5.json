@@ -1,0 +1,1656 @@
+{
+  "id": "cpe2-test5",
+  "title": "CPE C2 Proficiency Reading & Use of English - Test 5 (Book 2)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "Practice Tests CPE 2, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe2-t5-sec-1",
+      "title": "Part 1: Multiple-Choice Cloze",
+      "instructions": "For questions 1-18, read the three texts below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 1: Folklore</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Folktales have always been a (1) ______ of the social and cultural life of American Indian and Inuit peoples regardless of whether they were sedentary agriculturalists or nomadic hunters. As they (2) ______ around a fire at night, the hard-working Indians could be transported to another world through the talent of a good storyteller. The effect was not only (3) ______ from the novelty of the tale itself but also from the imaginative skill of the narrator, who often added gestures and songs and occasionally adapted a particular tale to (4) ______ a specific culture. One adaptation frequently used by the storyteller was the repetition of incidents. The description of an incident would be repeated a (5) ______ number of times. This type of repetition was very effective in oral communication, for it firmly (6) ______ the incident in the minds of the listeners, much in the same manner that repetition is used today in radio and television advertising.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 2: Gold</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Almost every culture throughout history has valued gold in its various (7) ______ and sought it as a precious material, either to worship or (8) ______ in. A symbol of power and success, the desire to own it tends to provoke greed and lust. Its very presence can make or break a nation. The esteem associated with it has (9) ______ mankind to great lengths to obtain it and the great gold rushes of the 19th century saw hundreds of thousands die in their attempt to (10) ______ it rich. Despite declining gold prices and uncertainties in the market, as countries such as Australia and the UK sell off large (11) ______ of their gold reserves, the desire to find gold is as strong as ever. In the US, panning for gold has become a huge leisure industry, where once men (12) ______ and slaved for the glitter of gold, families now take their gold pans and picnics for a day out. However, for most, gold is still only the stuff of dreams.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Text 3: Bears</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Bears are famous for waking up with sore heads, at least according to popular (13) ______. Someone who'd disagree with that is Professor Henry Harlow of the University of Wyoming. He has found that bears wake up raring to go after their winter sleep. 'After 130 days of hibernation, a bear can come (14) ______ out of its den and climb a mountain,' he says. His team is investigating how bears manage to (15) ______ this trick, in the hope of helping humans with muscle-wasting conditions. There are a number of possible explanations of how bears (16) ______ their strength during hibernation. One possibility is that bears sacrifice their less essential muscles to keep 'fight or flight' muscles up to (17) ______, which is a useful idea for anyone trying to get back to normal after a plaster cast is removed.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t5-rg-1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe2t5-1",
+              "type": "multiple_choice",
+              "instruction": "Gap (1):",
+              "options": [
+                "A. section",
+                "B. part",
+                "C. portion",
+                "D. piece"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'a part of' = một phần của. 'Part of the social and cultural life' là cách diễn đạt tự nhiên nhất để nói rằng truyện dân gian là một phần thuộc đời sống xã hội và văn hóa. Bẫy: 'section' (A) thường chỉ một phần cụ thể, tách biệt (section of a book, section of a road). 'portion' (C) thường dùng cho phần chia được (portion of food). 'piece' (D) thường dùng cho mảnh vật lý hoặc 'a piece of advice/information'. Chuyên đề: Collocations — part of.",
+              "answerLocation": "a part of the social and cultural life",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-2",
+              "type": "multiple_choice",
+              "instruction": "Gap (2):",
+              "options": [
+                "A. joined",
+                "B. merged",
+                "C. gathered",
+                "D. united"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'gathered around a fire' = quây quần bên đống lửa. 'Gather around' là phrasal verb cố định diễn tả hành động tụ tập xung quanh. Bẫy: 'joined' (A) cần 'joined together' hoặc 'joined in', không đi với 'around a fire' tự nhiên. 'merged' (B) = hòa nhập/sáp nhập, không phù hợp ngữ cảnh con người quây quần. 'united' (D) = đoàn kết, mang nghĩa chính trị/trừu tượng hơn. Chuyên đề: Phrasal verbs — gather around.",
+              "answerLocation": "gathered around a fire at night",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-3",
+              "type": "multiple_choice",
+              "instruction": "Gap (3):",
+              "options": [
+                "A. derived",
+                "B. issued",
+                "C. stemmed",
+                "D. ensued"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'derived from' = bắt nguồn từ, có được từ. 'The effect was not only derived from the novelty...' = hiệu ứng không chỉ bắt nguồn từ sự mới lạ... Cấu trúc 'be derived from' phù hợp với thể bị động ở đây. Bẫy: 'stemmed from' (C) cũng có nghĩa tương tự nhưng 'stem from' là intransitive — không dùng ở thể bị động ('was stemmed from' SAI). 'issued' (B) = phát hành, ban hành. 'ensued' (D) = xảy ra sau đó, cũng intransitive. Chuyên đề: Collocations — derive from vs. stem from.",
+              "answerLocation": "the effect was not only derived from the novelty",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-4",
+              "type": "multiple_choice",
+              "instruction": "Gap (4):",
+              "options": [
+                "A. connect",
+                "B. blend",
+                "C. suit",
+                "D. compare"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'suit a specific culture' = phù hợp với một nền văn hóa cụ thể. Người kể chuyện thay đổi câu chuyện để PHÙ HỢP với văn hóa của người nghe. 'Suit' = thích hợp, phù hợp. Bẫy: 'connect' (A) = kết nối, cần giới từ 'to/with'. 'blend' (B) = pha trộn, cần 'blend with/into'. 'compare' (D) = so sánh, không phù hợp ngữ nghĩa. Chuyên đề: Vocabulary — suit vs. match vs. fit.",
+              "answerLocation": "adapted a particular tale to suit a specific culture",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-5",
+              "type": "multiple_choice",
+              "instruction": "Gap (5):",
+              "options": [
+                "A. peculiar",
+                "B. certain",
+                "C. typical",
+                "D. positive"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'a certain number of times' = một số lần nhất định. 'Certain' ở đây có nghĩa là 'some' hoặc 'particular' (một số nào đó, không xác định cụ thể). Bẫy: 'peculiar' (A) = kỳ lạ, không đi với 'number of times' tự nhiên. 'typical' (C) = điển hình, cũng không phù hợp collocate với 'number of times'. 'positive' (D) = tích cực/dương, không phù hợp ngữ nghĩa. Chuyên đề: Collocations — a certain number.",
+              "answerLocation": "repeated a certain number of times",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-6",
+              "type": "multiple_choice",
+              "instruction": "Gap (6):",
+              "options": [
+                "A. planted",
+                "B. allocated",
+                "C. assigned",
+                "D. trapped"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'planted the incident in the minds' = gieo/trồng sự kiện vào tâm trí. 'Plant something in someone's mind' là idiom nghĩa là khắc sâu/gieo ý tưởng vào đầu ai đó. Giống như quảng cáo ngày nay 'trồng' thông điệp vào tâm trí người xem. Bẫy: 'allocated' (B) = phân bổ (tài nguyên). 'assigned' (C) = giao nhiệm vụ. 'trapped' (D) = bẫy, không phù hợp ngữ cảnh. Chuyên đề: Idioms — plant in the mind.",
+              "answerLocation": "firmly planted the incident in the minds of the listeners",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-7",
+              "type": "multiple_choice",
+              "instruction": "Gap (7):",
+              "options": [
+                "A. kinds",
+                "B. forms",
+                "C. states",
+                "D. designs"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'in its various forms' = dưới nhiều hình thức khác nhau. 'Forms' dùng để chỉ các dạng/hình thức khác nhau của cùng một chất liệu (vàng thỏi, vàng bột, vàng trang sức...). Bẫy: 'kinds' (A) thường dùng cho các loại khác nhau (kinds of animals), không phù hợp khi nói về CÁC DẠNG của CÙNG MỘT chất. 'states' (C) = trạng thái (solid, liquid), hẹp hơn ngữ cảnh. 'designs' (D) = thiết kế, không phù hợp. Chuyên đề: Collocations — in various forms.",
+              "answerLocation": "gold in its various forms",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-8",
+              "type": "multiple_choice",
+              "instruction": "Gap (8):",
+              "options": [
+                "A. bargain",
+                "B. engage",
+                "C. trade",
+                "D. handle"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'trade in' = buôn bán, giao dịch. 'Either to worship or trade in' = hoặc để thờ cúng hoặc để buôn bán. 'Trade in gold' là cách nói tự nhiên cho việc mua bán vàng. Bẫy: 'bargain in' (A) không phải phrasal verb chuẩn. 'engage in' (B) = tham gia vào (hoạt động), quá chung chung. 'handle' (D) = xử lý, không đi với 'in'. Chuyên đề: Phrasal verbs — trade in.",
+              "answerLocation": "either to worship or trade in",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-9",
+              "type": "multiple_choice",
+              "instruction": "Gap (9):",
+              "options": [
+                "A. sent",
+                "B. thrown",
+                "C. forced",
+                "D. driven"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'driven mankind to great lengths' = thúc đẩy nhân loại đi đến những mức độ cực đoan. 'Drive someone to great lengths' là collocation chuẩn — 'drive' ở đây có nghĩa là thúc đẩy mạnh mẽ. Bẫy: 'sent' (A) không collocate với 'to great lengths' — chỉ có 'go to great lengths'. 'forced' (C) cần cấu trúc 'forced someone to do something', không đi với 'to great lengths'. 'thrown' (B) không phù hợp ngữ nghĩa. Chuyên đề: Collocations — drive to great lengths.",
+              "answerLocation": "has driven mankind to great lengths to obtain it",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-10",
+              "type": "multiple_choice",
+              "instruction": "Gap (10):",
+              "options": [
+                "A. hit",
+                "B. discover",
+                "C. strike",
+                "D. make"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'strike it rich' = đột ngột trở nên giàu có. Đây là idiom cố định, đặc biệt phổ biến trong ngữ cảnh gold rush. Bẫy: 'make it rich' (D) gần đúng — 'make it big' là cụm đúng nhưng 'make it rich' không phải idiom chuẩn. 'hit it rich' (A) không tồn tại. 'discover it rich' (B) không có nghĩa. Chuyên đề: Idioms — strike it rich.",
+              "answerLocation": "attempt to strike it rich",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-11",
+              "type": "multiple_choice",
+              "instruction": "Gap (11):",
+              "options": [
+                "A. helpings",
+                "B. fractions",
+                "C. portions",
+                "D. servings"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'large portions of their gold reserves' = phần lớn dự trữ vàng. 'Portions' = phần, phù hợp khi nói về phần chia từ tổng thể lớn hơn. Bẫy: 'helpings' (A) = phần thức ăn (a helping of food). 'fractions' (B) = phân số/phần nhỏ, thường nhấn mạnh phần RẤT NHỎ ('a fraction of the cost'). 'servings' (D) = khẩu phần ăn. Cả A và D đều liên quan thực phẩm. Chuyên đề: Vocabulary — portions vs. fractions. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "sell off large portions of their gold reserves",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-12",
+              "type": "multiple_choice",
+              "instruction": "Gap (12):",
+              "options": [
+                "A. exerted",
+                "B. toiled",
+                "C. strained",
+                "D. ground"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'toiled and slaved' = lao động cực nhọc. 'Toil' = làm việc vất vả, nặng nhọc. Cặp từ 'toiled and slaved' là binomial expression (hai từ đồng nghĩa nối bằng 'and'). Bẫy: 'exerted' (A) = nỗ lực, thường dùng 'exert oneself'. 'strained' (C) = căng thẳng, cố gắng quá sức. 'ground' (D) = nghiền, mài. Chuyên đề: Binomial expressions — toil and slave. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "once men toiled and slaved for the glitter of gold",
+              "category": "cpe_part_1",
+              "source": "Page 108, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-13",
+              "type": "multiple_choice",
+              "instruction": "Gap (13):",
+              "options": [
+                "A. knowledge",
+                "B. belief",
+                "C. judgement",
+                "D. awareness"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'popular belief' = niềm tin phổ biến. 'According to popular belief' = theo niềm tin phổ biến/quan niệm dân gian. Đây là collocation cố định. Bẫy: 'popular knowledge' (A) không phải collocation chuẩn — có 'common knowledge' nhưng không có 'popular knowledge'. 'popular judgement' (C) không tồn tại. 'popular awareness' (D) cũng không phải collocation tự nhiên. Chuyên đề: Collocations — popular belief.",
+              "answerLocation": "according to popular belief",
+              "category": "cpe_part_1",
+              "source": "Page 109, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-14",
+              "type": "multiple_choice",
+              "instruction": "Gap (14):",
+              "options": [
+                "A. away",
+                "B. far",
+                "C. clear",
+                "D. straight"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'come straight out of its den' = đi thẳng ra khỏi hang. 'Straight' nhấn mạnh hành động NGAY LẬP TỨC, không do dự sau 130 ngày ngủ đông — gấu tỉnh dậy và đi thẳng ra leo núi. Bẫy: 'come away' (A) không tự nhiên trong ngữ cảnh này. 'come far' (B) không phù hợp cấu trúc. 'come clear' (C) không phải phrasal verb phù hợp. Chuyên đề: Adverbs — straight (immediately).",
+              "answerLocation": "a bear can come straight out of its den and climb a mountain",
+              "category": "cpe_part_1",
+              "source": "Page 109, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-15",
+              "type": "multiple_choice",
+              "instruction": "Gap (15):",
+              "options": [
+                "A. pull off",
+                "B. set off",
+                "C. take off",
+                "D. start off"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'pull off this trick' = thực hiện thành công trò này. 'Pull off' = làm được điều khó khăn, đạt được thành công bất ngờ. Ở đây là 'trick' = thủ thuật (giữ cơ bắp khỏe trong khi ngủ đông). Bẫy: 'set off' (B) = khởi hành, kích hoạt. 'take off' (C) = cất cánh, cởi ra. 'start off' (D) = bắt đầu. Không cái nào có nghĩa 'thực hiện thành công'. Chuyên đề: Phrasal verbs — pull off. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "how bears manage to pull off this trick",
+              "category": "cpe_part_1",
+              "source": "Page 109, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-16",
+              "type": "multiple_choice",
+              "instruction": "Gap (16):",
+              "options": [
+                "A. keep",
+                "B. maintain",
+                "C. hoard",
+                "D. uphold"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'maintain their strength' = duy trì sức mạnh. 'Maintain' = giữ gìn, duy trì ở mức đã có. Phù hợp nhất khi nói về cơ bắp/thể lực qua thời gian dài. Bẫy: 'keep' (A) cũng có thể dùng ('keep their strength') nhưng 'maintain' chính xác hơn trong ngữ cảnh khoa học/y tế. 'hoard' (C) = tích trữ (thường tiêu cực, như hoard money). 'uphold' (D) = duy trì (giá trị, luật pháp), không dùng cho sức mạnh thể chất. Chuyên đề: Vocabulary — maintain vs. keep.",
+              "answerLocation": "how bears maintain their strength during hibernation",
+              "category": "cpe_part_1",
+              "source": "Page 109, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-17",
+              "type": "multiple_choice",
+              "instruction": "Gap (17):",
+              "options": [
+                "A. scratch",
+                "B. level",
+                "C. score",
+                "D. mark"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. 'up to scratch' = đạt tiêu chuẩn, đủ tốt. 'Keep muscles up to scratch' = giữ cơ bắp ở mức đạt tiêu chuẩn. Đây là idiom cố định. Bẫy: 'up to level' (B) không phải idiom chuẩn. 'up to score' (C) không tồn tại. 'up to mark' (D) gần đúng — 'up to the mark' có tồn tại nhưng cần mạo từ 'the', và ở đây không có 'the'. Chuyên đề: Idioms — up to scratch.",
+              "answerLocation": "keep fight or flight muscles up to scratch",
+              "category": "cpe_part_1",
+              "source": "Page 109, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-18",
+              "type": "multiple_choice",
+              "instruction": "Gap (18):",
+              "options": [
+                "A. pledge",
+                "B. fallacy",
+                "C. claim",
+                "D. avowal"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Câu hỏi 14 trong PDF gốc nằm ở vị trí 18 theo thứ tự đếm. Tuy nhiên, dựa vào extraction, câu 13 = belief, 14 = claim (someone who'd disagree with that claim), 15 = straight, 16 = pull off, 17 = maintain, 18 = scratch. Xem lại: gap 14 trong bài gốc có options: pledge/fallacy/claim/avowal. 'Someone who'd disagree with that claim' — 'claim' = lời tuyên bố. Sore heads khi thức dậy là một 'claim' (tuyên bố/lời khẳng định) phổ biến. Bẫy: 'pledge' (A) = lời cam kết. 'fallacy' (B) = sai lầm logic. 'avowal' (D) = lời thú nhận/xác nhận, quá trang trọng. Chuyên đề: Vocabulary — claim. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Someone who'd disagree with that claim",
+              "category": "cpe_part_1",
+              "source": "Page 109, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t5-sec-2",
+      "title": "Part 2: Open Cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Theatre Design</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Built between c. 350 and c. 330 BC, the semi-circular theatre at Epidaurus has (1) ______ been bettered. Its acoustics are near perfect, its design and natural setting breathtaking. Yet, has theatre design really got anywhere since Epidaurus?</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In today's world, (2) ______ remains a divide between the expectations of traditionally-minded audiences and (3) ______ of inventive theatrical companies, with no one seeming to know quite (4) ______ a theatre (5) ______ to be — a group of wandering players or permanently housed in magnificent buildings?</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In the (6) ______ case, going to see a play is (7) ______ going to the cinema: actors play on a distant stage framed by heavy curtains. There is (8) ______ similarity between this and the audience participation promoted by other theatre groups; the two experiences are quite (9) ______ each other, require different architectural settings and, (10) ______ date, have appealed to different audiences.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Finding an ideal architectural setting (11) ______ theatre has been a quixotic quest for centuries. (12) ______ a mirror of the culture of the relatively homogenous society that created it, Epidaurus was perfect in its time. In today's far (13) ______ inclusive societies, though, directors can hardly expect to find easy solutions to something that (14) ______ predecessors have struggled with (15) ______ since ancient audiences abandoned the stone seats of Epidaurus.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t5-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe2t5-19",
+              "type": "gap_fill",
+              "instruction": "Gap (1): has ______ been bettered",
+              "blankIndex": 1,
+              "acceptedAnswers": [
+                [
+                  "never"
+                ]
+              ],
+              "correctAnswer": "never",
+              "explanation": "Đáp án: NEVER. 'has never been bettered' = chưa bao giờ bị vượt qua. Present perfect + never diễn tả điều chưa từng xảy ra từ trước đến nay. Nhà hát Epidaurus chưa bao giờ bị vượt qua về chất lượng. Chuyên đề: Adverbs of frequency — never with present perfect. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "has never been bettered",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-20",
+              "type": "gap_fill",
+              "instruction": "Gap (2): ______ remains a divide between",
+              "blankIndex": 2,
+              "acceptedAnswers": [
+                [
+                  "there"
+                ]
+              ],
+              "correctAnswer": "there",
+              "explanation": "Đáp án: THERE. 'there remains a divide' = vẫn tồn tại một khoảng cách. Cấu trúc 'there + remain(s) + noun' dùng để chỉ sự tồn tại tiếp tục của điều gì đó. Chuyên đề: Existential 'there' — there remains.",
+              "answerLocation": "there remains a divide between",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-21",
+              "type": "gap_fill",
+              "instruction": "Gap (3): the expectations of traditionally-minded audiences and ______ of inventive theatrical companies",
+              "blankIndex": 3,
+              "acceptedAnswers": [
+                [
+                  "those"
+                ]
+              ],
+              "correctAnswer": "those",
+              "explanation": "Đáp án: THOSE. 'those of inventive theatrical companies' = những kỳ vọng của các đoàn kịch sáng tạo. 'Those' thay thế cho 'the expectations' đã đề cập trước đó, tránh lặp từ. Đây là demonstrative pronoun dùng thay thế danh từ số nhiều. Chuyên đề: Reference words — those (substitution). Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "audiences and those of inventive theatrical companies",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-22",
+              "type": "gap_fill",
+              "instruction": "Gap (4): no one seeming to know quite ______ a theatre",
+              "blankIndex": 4,
+              "acceptedAnswers": [
+                [
+                  "what"
+                ]
+              ],
+              "correctAnswer": "what",
+              "explanation": "Đáp án: WHAT. 'what a theatre is to be' = nhà hát phải là gì/như thế nào. 'What' là interrogative pronoun trong câu hỏi gián tiếp, đóng vai trò bổ ngữ cho 'is to be'. Câu hỏi ở đây là bản chất của nhà hát là gì. Chuyên đề: Indirect questions — what. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "know quite what a theatre is to be",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-23",
+              "type": "gap_fill",
+              "instruction": "Gap (5): what a theatre ______ to be",
+              "blankIndex": 5,
+              "acceptedAnswers": [
+                [
+                  "is",
+                  "ought"
+                ]
+              ],
+              "correctAnswer": "is",
+              "explanation": "Đáp án: IS (hoặc OUGHT). 'what a theatre is to be' = nhà hát phải/nên là gì. 'Be to + infinitive' diễn tả mục đích hoặc kỳ vọng. Hoặc 'ought to be' = nên là. Chuyên đề: Modal expressions — be to + infinitive. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "what a theatre is to be",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-24",
+              "type": "gap_fill",
+              "instruction": "Gap (6): In the ______ case",
+              "blankIndex": 6,
+              "acceptedAnswers": [
+                [
+                  "latter",
+                  "former"
+                ]
+              ],
+              "correctAnswer": "latter",
+              "explanation": "Đáp án: LATTER (hoặc FORMER). 'In the latter case' = trong trường hợp thứ hai. Hai lựa chọn đã đề cập: (1) wandering players hoặc (2) permanently housed. 'The latter case' chỉ trường hợp thứ hai (housed permanently) — xem bối cảnh so sánh với cinema. Chuyên đề: Determiners — latter/former. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "In the latter case, going to see a play is like going to the cinema",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-25",
+              "type": "gap_fill",
+              "instruction": "Gap (7): going to see a play is ______ going to the cinema",
+              "blankIndex": 7,
+              "acceptedAnswers": [
+                [
+                  "like"
+                ]
+              ],
+              "correctAnswer": "like",
+              "explanation": "Đáp án: LIKE. 'is like going to the cinema' = giống như đi xem phim. 'Like' dùng để so sánh hai trải nghiệm tương tự: xem kịch trong nhà hát lớn giống như xem phim ở rạp (diễn viên trên sân khấu xa, rèm nặng). Chuyên đề: Prepositions — like (comparison).",
+              "answerLocation": "going to see a play is like going to the cinema",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-26",
+              "type": "gap_fill",
+              "instruction": "Gap (8): There is ______ similarity between this and",
+              "blankIndex": 8,
+              "acceptedAnswers": [
+                [
+                  "little",
+                  "no"
+                ]
+              ],
+              "correctAnswer": "little",
+              "explanation": "Đáp án: LITTLE (hoặc NO). 'There is little/no similarity' = có ít/không có sự tương đồng. Ngữ cảnh cho thấy hai trải nghiệm rất khác nhau ('quite unlike each other'), nên phải dùng từ phủ định/giới hạn. Chuyên đề: Quantifiers — little/no with uncountable nouns.",
+              "answerLocation": "There is little similarity between this and",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-27",
+              "type": "gap_fill",
+              "instruction": "Gap (9): the two experiences are quite ______ each other",
+              "blankIndex": 9,
+              "acceptedAnswers": [
+                [
+                  "unlike"
+                ]
+              ],
+              "correctAnswer": "unlike",
+              "explanation": "Đáp án: UNLIKE. 'quite unlike each other' = hoàn toàn khác nhau. 'Unlike' = không giống, trái ngược với 'like'. Hai trải nghiệm (nhà hát truyền thống vs. tương tác) hoàn toàn khác nhau. Chuyên đề: Prepositions — unlike.",
+              "answerLocation": "the two experiences are quite unlike each other",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-28",
+              "type": "gap_fill",
+              "instruction": "Gap (10): and, ______ date, have appealed to",
+              "blankIndex": 10,
+              "acceptedAnswers": [
+                [
+                  "to"
+                ]
+              ],
+              "correctAnswer": "to",
+              "explanation": "Đáp án: TO. 'to date' = cho đến nay, tính đến hiện tại. Đây là fixed expression rất phổ biến. 'To date, they have appealed to different audiences' = cho đến nay, chúng đã thu hút các khán giả khác nhau. Chuyên đề: Fixed expressions — to date. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "to date, have appealed to different audiences",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-29",
+              "type": "gap_fill",
+              "instruction": "Gap (11): Finding an ideal architectural setting ______ theatre",
+              "blankIndex": 11,
+              "acceptedAnswers": [
+                [
+                  "for"
+                ]
+              ],
+              "correctAnswer": "for",
+              "explanation": "Đáp án: FOR. 'a setting for theatre' = bối cảnh/không gian cho nhà hát. 'For' chỉ mục đích — tìm kiếm không gian kiến trúc PHÙ HỢP CHO nhà hát. Chuyên đề: Prepositions — for (purpose).",
+              "answerLocation": "Finding an ideal architectural setting for theatre",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-30",
+              "type": "gap_fill",
+              "instruction": "Gap (12): ______ a mirror of the culture",
+              "blankIndex": 12,
+              "acceptedAnswers": [
+                [
+                  "as"
+                ]
+              ],
+              "correctAnswer": "as",
+              "explanation": "Đáp án: AS. 'As a mirror of the culture' = với vai trò là tấm gương phản chiếu văn hóa. 'As' ở đây có nghĩa 'in the role/capacity of' — Epidaurus đóng vai trò như tấm gương phản chiếu văn hóa của xã hội đồng nhất đã tạo ra nó. Chuyên đề: Prepositions — as (in the role of).",
+              "answerLocation": "As a mirror of the culture of the relatively homogenous society",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-31",
+              "type": "gap_fill",
+              "instruction": "Gap (13): In today's far ______ inclusive societies",
+              "blankIndex": 13,
+              "acceptedAnswers": [
+                [
+                  "more"
+                ]
+              ],
+              "correctAnswer": "more",
+              "explanation": "Đáp án: MORE. 'far more inclusive' = bao trùm hơn nhiều. 'Far' + comparative = nhấn mạnh so sánh. Xã hội ngày nay 'far more inclusive' (đa dạng, bao trùm hơn rất nhiều) so với xã hội đồng nhất thời Epidaurus. Chuyên đề: Comparatives — far more + adjective. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "today's far more inclusive societies",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-32",
+              "type": "gap_fill",
+              "instruction": "Gap (14): something that ______ predecessors have struggled with",
+              "blankIndex": 14,
+              "acceptedAnswers": [
+                [
+                  "their"
+                ]
+              ],
+              "correctAnswer": "their",
+              "explanation": "Đáp án: THEIR. 'their predecessors' = những người tiền nhiệm của họ. 'Their' là possessive determiner chỉ sở hữu, liên kết với 'directors' đã đề cập trước đó. Các đạo diễn không thể tìm giải pháp dễ dàng cho điều mà tiền nhân CỦA HỌ đã vật lộn. Chuyên đề: Possessive determiners — their. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "something that their predecessors have struggled with",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-33",
+              "type": "gap_fill",
+              "instruction": "Gap (15): have struggled with ______ since ancient audiences",
+              "blankIndex": 15,
+              "acceptedAnswers": [
+                [
+                  "ever"
+                ]
+              ],
+              "correctAnswer": "ever",
+              "explanation": "Đáp án: EVER. 'ever since' = kể từ đó (nhấn mạnh liên tục). 'Ever since ancient audiences abandoned the stone seats' = kể từ khi khán giả cổ đại rời bỏ ghế đá. 'Ever' nhấn mạnh tính liên tục không gián đoạn. Chuyên đề: Adverbs — ever since. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "struggled with ever since ancient audiences abandoned",
+              "category": "cpe_part_2",
+              "source": "Page 120, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t5-sec-3",
+      "title": "Part 3: Word Formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>'With Many Thanks'</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Many people have given <b>ASSISTANCE</b> to me during the writing of this book, but it is to my wife that I am most deeply (16) ______ (<b>DEBT</b>) for her loyalty and (17) ______ (<b>DEVOTE</b>) during the four years the project lasted. She gave her time and advice (18) ______ (<b>STINT</b>) in order for this work to be completed, giving both moral and (19) ______ (<b>PRACTICE</b>) support for the lengthy research into social conditions the project (20) ______ (<b>NECESSARY</b>). Her assurance and encouragement sustained me in my (21) ______ (<b>BELIEVE</b>) that this was valuable work and it was (22) ______ (<b>DOUBT</b>) what enabled me to continue in the face of often (23) ______ (<b>OVERWHELM</b>) obstacles. I would also like to thank my assistant who never wavered in all my efforts and who spent long hours in libraries and on trains to distant parts of the country in search of material. I know that he will say that he enjoyed it, but without his (24) ______ (<b>EXCEPT</b>) enthusiasm this book would never have been written. Finally, I would like to thank my friends and family, who have had to put up with what must have seemed to them an (25) ______ (<b>END</b>) project.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t5-rg-3",
+          "instruction": "Fill in the gaps with the correct word form.",
+          "questions": [
+            {
+              "id": "q-cpe2t5-34",
+              "type": "gap_fill",
+              "instruction": "Gap (16): most deeply ______ (DEBT) for her loyalty",
+              "blankIndex": 16,
+              "acceptedAnswers": [
+                [
+                  "indebted"
+                ]
+              ],
+              "correctAnswer": "indebted",
+              "explanation": "Đáp án: INDEBTED (từ gốc: DEBT). Thêm tiền tố 'in-' và hậu tố '-ed' để tạo tính từ. 'Deeply indebted' = rất mang ơn. Cần tính từ vì đứng sau 'am' (linking verb). Bẫy: 'debted' không phải từ tiếng Anh. Phải thêm tiền tố 'in-' để tạo tính từ 'indebted'. Chuyên đề: Word Formation — Adjectives (in- + root + -ed).",
+              "answerLocation": "most deeply indebted for her loyalty",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-35",
+              "type": "gap_fill",
+              "instruction": "Gap (17): for her loyalty and ______ (DEVOTE)",
+              "blankIndex": 17,
+              "acceptedAnswers": [
+                [
+                  "devotion"
+                ]
+              ],
+              "correctAnswer": "devotion",
+              "explanation": "Đáp án: DEVOTION (từ gốc: DEVOTE). Thêm hậu tố '-ion' để tạo danh từ. 'Loyalty and devotion' = lòng trung thành và sự cống hiến. Cần danh từ vì song song với 'loyalty' (danh từ + and + danh từ). Bẫy: 'devoted' (tính từ) không phù hợp cấu trúc song song. Chuyên đề: Word Formation — Nouns (-ion).",
+              "answerLocation": "for her loyalty and devotion",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-36",
+              "type": "gap_fill",
+              "instruction": "Gap (18): gave her time and advice ______ (STINT)",
+              "blankIndex": 18,
+              "acceptedAnswers": [
+                [
+                  "unstintingly"
+                ]
+              ],
+              "correctAnswer": "unstintingly",
+              "explanation": "Đáp án: UNSTINTINGLY (từ gốc: STINT). Thêm tiền tố 'un-' + hậu tố '-ing' + '-ly' để tạo trạng từ. 'Gave unstintingly' = cho đi không tiếc, hào phóng. Cần trạng từ vì bổ nghĩa cho động từ 'gave'. Bẫy: 'stintingly' (một cách dè sẻn) NGƯỢC nghĩa với ngữ cảnh tích cực. Phải thêm 'un-' để phủ định. Chuyên đề: Word Formation — Adverbs (un- + root + -ingly).",
+              "answerLocation": "gave her time and advice unstintingly",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-37",
+              "type": "gap_fill",
+              "instruction": "Gap (19): both moral and ______ (PRACTICE) support",
+              "blankIndex": 19,
+              "acceptedAnswers": [
+                [
+                  "practical"
+                ]
+              ],
+              "correctAnswer": "practical",
+              "explanation": "Đáp án: PRACTICAL (từ gốc: PRACTICE). Thay đổi dạng từ để tạo tính từ. 'Moral and practical support' = hỗ trợ về mặt tinh thần và thực tiễn. Cần tính từ song song với 'moral'. Bẫy: 'practicable' cũng là tính từ nhưng nghĩa khác ('có thể thực hiện được'). 'Practical' = thiết thực, thực tế, phù hợp hơn. Chuyên đề: Word Formation — Adjectives (-ical).",
+              "answerLocation": "both moral and practical support",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-38",
+              "type": "gap_fill",
+              "instruction": "Gap (20): research the project ______ (NECESSARY)",
+              "blankIndex": 20,
+              "acceptedAnswers": [
+                [
+                  "necessitated"
+                ]
+              ],
+              "correctAnswer": "necessitated",
+              "explanation": "Đáp án: NECESSITATED (từ gốc: NECESSARY). Chuyển tính từ thành động từ bằng hậu tố '-ate' + chia quá khứ '-d'. 'The project necessitated' = dự án đòi hỏi phải có. Cần động từ chia thì quá khứ vì mô tả dự án đã hoàn thành. Chuyên đề: Word Formation — Verbs (-ate from adjective).",
+              "answerLocation": "research the project necessitated",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-39",
+              "type": "gap_fill",
+              "instruction": "Gap (21): sustained me in my ______ (BELIEVE)",
+              "blankIndex": 21,
+              "acceptedAnswers": [
+                [
+                  "belief"
+                ]
+              ],
+              "correctAnswer": "belief",
+              "explanation": "Đáp án: BELIEF (từ gốc: BELIEVE). Chuyển động từ thành danh từ bằng cách thay đổi đuôi '-eve' → '-ef'. 'My belief that' = niềm tin rằng. Cần danh từ vì đứng sau possessive 'my'. Bẫy: 'believing' (gerund) có thể dùng nhưng 'belief' tự nhiên hơn trong cấu trúc 'in my belief that'. Chuyên đề: Word Formation — Nouns (believe → belief).",
+              "answerLocation": "sustained me in my belief that this was valuable work",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-40",
+              "type": "gap_fill",
+              "instruction": "Gap (22): it was ______ (DOUBT) what enabled me",
+              "blankIndex": 22,
+              "acceptedAnswers": [
+                [
+                  "undoubtedly"
+                ]
+              ],
+              "correctAnswer": "undoubtedly",
+              "explanation": "Đáp án: UNDOUBTEDLY (từ gốc: DOUBT). Thêm tiền tố 'un-' + hậu tố '-edly' để tạo trạng từ. 'It was undoubtedly what enabled me' = đó chắc chắn là điều đã giúp tôi. Cần trạng từ vì bổ nghĩa cho cả mệnh đề. Bẫy: 'doubtedly' không phải từ phổ biến. 'Doubtful' (tính từ) không phù hợp cấu trúc. Chuyên đề: Word Formation — Adverbs (un- + root + -edly).",
+              "answerLocation": "it was undoubtedly what enabled me to continue",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-41",
+              "type": "gap_fill",
+              "instruction": "Gap (23): in the face of often ______ (OVERWHELM) obstacles",
+              "blankIndex": 23,
+              "acceptedAnswers": [
+                [
+                  "overwhelming"
+                ]
+              ],
+              "correctAnswer": "overwhelming",
+              "explanation": "Đáp án: OVERWHELMING (từ gốc: OVERWHELM). Thêm hậu tố '-ing' để tạo tính từ. 'Overwhelming obstacles' = trở ngại áp đảo/chồng chất. Cần tính từ vì bổ nghĩa cho danh từ 'obstacles'. Bẫy: 'overwhelmed' (quá khứ phân từ) dùng để mô tả cảm xúc CỦA CON NGƯỜI ('I felt overwhelmed'), không dùng cho vật ('obstacles'). Chuyên đề: Word Formation — Adjectives (-ing vs -ed).",
+              "answerLocation": "in the face of often overwhelming obstacles",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-42",
+              "type": "gap_fill",
+              "instruction": "Gap (24): without his ______ (EXCEPT) enthusiasm",
+              "blankIndex": 24,
+              "acceptedAnswers": [
+                [
+                  "exceptional"
+                ]
+              ],
+              "correctAnswer": "exceptional",
+              "explanation": "Đáp án: EXCEPTIONAL (từ gốc: EXCEPT). Thêm hậu tố '-ional' để tạo tính từ. 'Exceptional enthusiasm' = sự nhiệt tình phi thường/đặc biệt. Cần tính từ vì bổ nghĩa cho danh từ 'enthusiasm'. Bẫy: 'excepted' không phải tính từ phù hợp. 'Exception' (danh từ) không đúng loại từ cần thiết. Chuyên đề: Word Formation — Adjectives (-ional).",
+              "answerLocation": "without his exceptional enthusiasm",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-43",
+              "type": "gap_fill",
+              "instruction": "Gap (25): seemed to them an ______ (END) project",
+              "blankIndex": 25,
+              "acceptedAnswers": [
+                [
+                  "endless",
+                  "unending"
+                ]
+              ],
+              "correctAnswer": "endless",
+              "explanation": "Đáp án: ENDLESS (hoặc UNENDING) (từ gốc: END). Thêm hậu tố '-less' (hoặc tiền tố 'un-' + '-ing') để tạo tính từ. 'An endless project' = một dự án không bao giờ kết thúc. Cần tính từ vì đứng sau mạo từ 'an' và trước danh từ 'project'. Chuyên đề: Word Formation — Adjectives (-less / un- + -ing).",
+              "answerLocation": "seemed to them an endless project",
+              "category": "cpe_part_3",
+              "source": "Page 121, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t5-sec-4",
+      "title": "Part 4: Key Word Transformation",
+      "instructions": "For questions 32-39, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Key Word Transformation</h2><div class='mb-4 text-slate-800 text-base leading-relaxed'><p class='mb-2'><b>32.</b> I should have insisted on taking a taxi home. (LET)</p><p class='mb-2'>I shouldn't ______ me walk home.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>33.</b> She told the children to stop fighting. (PUT)</p><p class='mb-2'>She told ______ their fighting.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>34.</b> 'I'm not going to sign the contract,' said the union leader. (REFUSED)</p><p class='mb-2'>The union leader ______ the contract.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>35.</b> Her friends still hadn't arrived by 9 o'clock so Helen went to the party alone. (SIGN)</p><p class='mb-2'>There ______ 9 o'clock, so Helen went to the party alone.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>36.</b> It doesn't look as though John wants to buy that house after all. (DECIDED)</p><p class='mb-2'>John ______ buying that house after all.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>37.</b> More spices would make this dish taste much better. (GREATLY)</p><p class='mb-2'>More spices ______ this dish.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>38.</b> She's not very good at arranging flowers. (FLAIR)</p><p class='mb-2'>She ______ arranging flowers.</p><hr class='my-3 border-emerald-50'/><p class='mb-2'><b>39.</b> My salary never lasts beyond the end of the month. (SHORT)</p><p class='mb-2'>I ______ the end of the month.</p></div>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t5-rg-4",
+          "instruction": "Fill in the gap for each sentence below using 3 to 8 words.",
+          "questions": [
+            {
+              "id": "q-cpe2t5-44",
+              "type": "gap_fill",
+              "instruction": "Sentence 32: I shouldn't ______ me walk home. (Key word: LET)",
+              "blankIndex": 32,
+              "acceptedAnswers": [
+                [
+                  "have let them make",
+                  "have let them force",
+                  "have let anyone make"
+                ]
+              ],
+              "correctAnswer": "have let them make",
+              "explanation": "Đáp án: 'have let them make'. 'I shouldn't have let them make me walk home' = Tôi không nên để họ bắt tôi đi bộ về nhà. 'Let someone make me do something' = để ai đó ép tôi làm gì. Câu gốc dùng 'should have insisted on' (lẽ ra nên kiên quyết) → chuyển sang 'shouldn't have let' (không nên để). Chuyên đề: Modal perfect — should have + let. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "shouldn't have let them make me walk home",
+              "category": "cpe_part_4",
+              "source": "Page 124, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-45",
+              "type": "gap_fill",
+              "instruction": "Sentence 33: She told ______ their fighting. (Key word: PUT)",
+              "blankIndex": 33,
+              "acceptedAnswers": [
+                [
+                  "the children to put a stop to",
+                  "the children to put an end to"
+                ]
+              ],
+              "correctAnswer": "the children to put a stop to",
+              "explanation": "Đáp án: 'the children to put a stop to'. 'Put a stop to' = chấm dứt, ngừng. 'She told the children to put a stop to their fighting' = Cô bảo bọn trẻ chấm dứt cuộc đánh nhau. Câu gốc dùng 'stop fighting' → chuyển sang idiom 'put a stop/end to'. Chuyên đề: Idioms — put a stop to.",
+              "answerLocation": "told the children to put a stop to their fighting",
+              "category": "cpe_part_4",
+              "source": "Page 124, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-46",
+              "type": "gap_fill",
+              "instruction": "Sentence 34: The union leader ______ the contract. (Key word: REFUSED)",
+              "blankIndex": 34,
+              "acceptedAnswers": [
+                [
+                  "refused to sign",
+                  "flatly refused to sign"
+                ]
+              ],
+              "correctAnswer": "refused to sign",
+              "explanation": "Đáp án: 'refused to sign'. 'The union leader refused to sign the contract' = Lãnh đạo công đoàn từ chối ký hợp đồng. Câu gốc 'I'm not going to sign' (trực tiếp) → chuyển sang reported speech 'refused to sign'. 'Refuse to + infinitive' = từ chối làm gì. Chuyên đề: Reported speech — refuse to. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The union leader refused to sign the contract",
+              "category": "cpe_part_4",
+              "source": "Page 124, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-47",
+              "type": "gap_fill",
+              "instruction": "Sentence 35: There ______ 9 o'clock, so Helen went to the party alone. (Key word: SIGN)",
+              "blankIndex": 35,
+              "acceptedAnswers": [
+                [
+                  "was no sign of her friends by",
+                  "was still no sign of her friends by"
+                ]
+              ],
+              "correctAnswer": "was no sign of her friends by",
+              "explanation": "Đáp án: 'was no sign of her friends by'. 'There was no sign of her friends by 9 o'clock' = Không có dấu hiệu nào của bạn bè cô ấy đến 9 giờ. Câu gốc 'hadn't arrived' → 'no sign of' (không có dấu hiệu). 'No sign of someone' = ai đó chưa xuất hiện. Chuyên đề: Fixed expressions — no sign of. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "There was no sign of her friends by 9 o'clock",
+              "category": "cpe_part_4",
+              "source": "Page 125, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-48",
+              "type": "gap_fill",
+              "instruction": "Sentence 36: John ______ buying that house after all. (Key word: DECIDED)",
+              "blankIndex": 36,
+              "acceptedAnswers": [
+                [
+                  "seems to have decided against",
+                  "appears to have decided against"
+                ]
+              ],
+              "correctAnswer": "seems to have decided against",
+              "explanation": "Đáp án: 'seems to have decided against'. 'John seems to have decided against buying that house' = John có vẻ đã quyết định không mua ngôi nhà đó. Câu gốc 'It doesn't look as though he wants to' → 'seems to have decided against'. 'Decide against + V-ing' = quyết định không làm gì. Chuyên đề: Phrasal verbs — decide against. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "John seems to have decided against buying",
+              "category": "cpe_part_4",
+              "source": "Page 125, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-49",
+              "type": "gap_fill",
+              "instruction": "Sentence 37: More spices ______ this dish. (Key word: GREATLY)",
+              "blankIndex": 37,
+              "acceptedAnswers": [
+                [
+                  "would greatly enhance the taste of",
+                  "would greatly improve the flavour of"
+                ]
+              ],
+              "correctAnswer": "would greatly enhance the taste of",
+              "explanation": "Đáp án: 'would greatly enhance the taste of'. 'More spices would greatly enhance the taste of this dish' = Thêm gia vị sẽ cải thiện đáng kể hương vị món ăn. Câu gốc 'make taste much better' → 'greatly enhance the taste of'. 'Greatly' = rất nhiều, đáng kể. Chuyên đề: Adverbs — greatly with enhance/improve. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "would greatly enhance the taste of this dish",
+              "category": "cpe_part_4",
+              "source": "Page 125, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-50",
+              "type": "gap_fill",
+              "instruction": "Sentence 38: She ______ arranging flowers. (Key word: FLAIR)",
+              "blankIndex": 38,
+              "acceptedAnswers": [
+                [
+                  "doesn't have much of a flair for",
+                  "has no flair for",
+                  "hasn't got much flair for"
+                ]
+              ],
+              "correctAnswer": "doesn't have much of a flair for",
+              "explanation": "Đáp án: 'doesn't have much of a flair for'. 'She doesn't have much of a flair for arranging flowers' = Cô ấy không có nhiều khiếu về cắm hoa. Câu gốc 'not very good at' → 'doesn't have a flair for'. 'Have a flair for something' = có khiếu/năng khiếu về điều gì. Chuyên đề: Fixed expressions — have a flair for. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "doesn't have much of a flair for arranging flowers",
+              "category": "cpe_part_4",
+              "source": "Page 125, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-51",
+              "type": "gap_fill",
+              "instruction": "Sentence 39: I ______ the end of the month. (Key word: SHORT)",
+              "blankIndex": 39,
+              "acceptedAnswers": [
+                [
+                  "am always short of money by",
+                  "always run short of money before"
+                ]
+              ],
+              "correctAnswer": "am always short of money by",
+              "explanation": "Đáp án: 'am always short of money by'. 'I am always short of money by the end of the month' = Tôi luôn hết tiền vào cuối tháng. Câu gốc 'salary never lasts beyond' → 'always short of money by'. 'Be short of money' = thiếu tiền, hết tiền. Chuyên đề: Fixed expressions — short of money. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "I am always short of money by the end of the month",
+              "category": "cpe_part_4",
+              "source": "Page 125, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t5-sec-5",
+      "title": "Part 5: Multiple Choice",
+      "instructions": "You are going to read four extracts about labour-saving devices and an autobiography. For questions 19-26 and 34-40, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 1: Vacuum Cleaners</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Jim Kirby was an inventor for most of his adult life. After seeing his father work too hard for too little, he decided early on that he would not spend his life as a salaried worker. Instead, he started his own business designing gadgets for a fee. Best known for the vacuum cleaner that bears his name, his goal in life was to reduce or eliminate drudgery wherever it existed. His first cleaner, invented in 1906, used water for dirt separation. In 1907, displeased with the unpleasant task of disposing of dirty water, he went back to work and designed a system that used a spinning action and cloth to filter the dirt.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>In 1907, another man, James Murray Spangler also built a machine for cleaning carpets. The device grew out of his own need, for he was employed as a janitor in a department store and used a broom and carpet sweeper in his daily work. Spangler was apparently familiar with the then new idea of using suction to remove dust and dirt from carpets. It occurred to him that carpets could be more easily cleaned with the sweeping action used in the carpet sweeper. Using tin and wood as materials and a pillow case for a dust bag, he combined the two ideas in a single machine and although it was a crude and clumsy device, it worked. Spangler lacked the capital, manufacturing capacity and merchandising experience to market his new machine, so he contacted a boyhood friend, William H. Hoover to try to interest him in the project. Hoover perceived the possibilities of the new device, and a company was formed in 1908 to begin the manufacture of the machine. Three years later, the company started trading under the name of 'Hoover', which remains even today a household word for vacuum cleaners.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 2: Labour-Saving Devices in History</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Until the 1920s, domestic servants were common in Europe and any easing of their lot was frowned on. It was not until after the First World War, which drained economies and temporarily obstructed affluent society, that domestic life in Europe started to change. Women were emancipated, domestic labour less easily available and items previously reserved only for the wealthy were now available to all. In America, however, things had been different; the rapidly expanding western frontier had meant hard work and long hours. Combined with high wages and a labour shortage, this had presented a particularly receptive market for mass produced labour saving devices of all kinds. When the Second World War came, it crippled Europe but left the American economy relatively unscathed, with the result that America took the lead in the production and marketing of household appliances. By the latter part of the century though, the rest of the world had caught up.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 3: Wrinkles and Creases — The History of Ironing</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>For centuries, ironing garments and household linen to free them of wrinkles and creases has been an ever-present chore. In the past before ironing boards, irons and ironing machines, the Chinese stretched their garments across bamboo poles as a way of smoothing their garments free of wrinkles. The Greeks folded their garments in chests devised with weights, to free them of creases. The Romans used wooden mallets in order to beat garments into smoothness and later invented the first press to serve that purpose. In the Middle Ages, it was discovered that cloth pressed while being steamed would hold the shape into which it was moulded. Iron was the heaviest material available at that time and was a good conductor of heat without being destroyed by its application. Hence the name we still use today.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 4: Washing Day</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>I remember when I was young how laborious washing days were for my mother. In those days we had no running water, and even the simplest handwashing used staggering amounts of time and labour. She used to fill buckets from a communal pump in the village square and haul them back to the house where each one was heated in a tub over a gas stove. My mother spent what seemed like an eternity on rubbing, wringing and lifting water-laden clothes into a second tub to be rinsed. How my mother would envy those neighbours who were lucky enough to have running water and electricity, not to mention the privileged few who owned what was then known as a clothes washer. She consoled herself with something she'd read somewhere, that this type of washer was a death trap. She might have been right, too; the motor which rotated the tub in the machines was completely unprotected, so water often dripped into it, causing short circuits and jolting shocks. All this made me determined to buy my mother a clothes washer, the performance of which had greatly improved, of course. This model, the ultimate of its kind, was the one I eventually longed to buy. The only trouble was, my mother's chicks had all flown the nest and the need for this modern contraption was now beyond her comprehension. She declined the offer graciously, although I can't imagine life without it.</p><h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Extract 5: An Autobiography — Reading and Visitors</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>It was true I read a lot, but by now I had graduated to adult reading. Dickens had my full attention, for surely in those novels he was telling the same story of travail and triumph. The additional benefit, apart from the eccentric characters with their eccentric names, was that many of these travails were undertaken by young men of peerless disposition. This was welcome proof that such life experiences were universal, and, more important, could be, and usually were, brought about while suffering an initial handicap — wicked step-parents, or an indigent family — which the hero could manage with little more than his own blamelessness to guide him.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The unapologetic presence of our visitors, their peculiar blend of restlessness and complacency, which was discordant, was essentially harmless, though it occasionally sought relief in imprecations, in disapproval of others, principally of my mother and myself. I saw — in Nancy's hoarse smoker's laugh, in Millicent's delicate hand smoothing her hair — a quality that was alien to our own lives, faintly undesirable. Sometimes my mother's eyes had a look of tiredness, and she was obliged to turn her head away for a brief moment, as suggestions for improvement, or rather self-improvement, came her way.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>These visits, which I now see were undertaken for more merciful reasons than mere curiosity, were in essence a form of female solidarity. They were concerned for any woman, living on her own with only a child for company. They genuinely pitied a woman who had no status, but they also translated this lack of status as failure in the world's terms. What distinguished my mother was a form of guilelessness which they had, regretfully, laid aside. My mother was their crusade; they also usefully saw her as a pupil. When they rose to leave, the frowns disappeared from their faces, the concern evaporated, and their embraces were genuine.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>My mother, shaking cushions after their departure, would be more silent than usual, and I somehow knew I should not intrude on her thoughts. I reflected that Nancy and Millie were characters, no less and no more, and that any confrontation would be unequal: my mother was bound to succeed, for she was untainted by the world's corruption and thus qualified for remission. I comforted myself that even David Copperfield had had moments of downheartedness.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>On the whole, I was happy. I liked my school, I liked my friends; I liked the shabby charm of my flat from which a light shone out in winter to guide me home. I liked our silent streets, the big windows of the houses in which artists had once lived. I liked its emanations of the nineteenth century. That we were somewhat on the margin of things did not disturb me. It is true that our surroundings were a little mournful, perhaps unnaturally so to those habitual shoppers. I, on the other hand, cherished them as a place of safety.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t5-rg-5a",
+          "instruction": "Choose the answer (A, B, C or D) which you think fits best according to the text. (Questions 19-26)",
+          "questions": [
+            {
+              "id": "q-cpe2t5-52",
+              "type": "multiple_choice",
+              "instruction": "19. Kirby and Spangler both wanted to",
+              "options": [
+                "A. become prosperous businessmen.",
+                "B. make manual labour easier.",
+                "C. become famous designers.",
+                "D. experiment with new ideas."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Kirby's 'goal in life was to reduce or eliminate drudgery wherever it existed' (giảm/loại bỏ lao động nặng nhọc). Spangler 'built a machine for cleaning carpets' vì cần nó cho công việc. Cả hai đều muốn làm cho lao động tay chân DỄ DÀNG hơn. Bẫy: A sai vì Spangler thiếu vốn, không theo đuổi giàu có. C không có bằng chứng. D quá chung chung. Chuyên đề: Reading — common purpose inference.",
+              "answerLocation": "his goal in life was to reduce or eliminate drudgery",
+              "category": "cpe_part_5",
+              "source": "Page 110, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-53",
+              "type": "multiple_choice",
+              "instruction": "20. Both machines",
+              "options": [
+                "A. bore the inventors' names.",
+                "B. were not an instant success.",
+                "C. removed grime from carpets.",
+                "D. worked on the same principle."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Cả hai máy đều được thiết kế để LÀM SẠCH bụi bẩn (grime) từ thảm. Kirby's cleaner 'filter the dirt', Spangler's machine 'cleaning carpets' + 'remove dust and dirt'. Bẫy: A sai vì máy Spangler mang tên Hoover, không phải tên Spangler. B không có bằng chứng. D sai vì hai máy dùng nguyên lý khác nhau (water vs. suction+sweeping). Chuyên đề: Reading — detail comparison.",
+              "answerLocation": "remove dust and dirt from carpets",
+              "category": "cpe_part_5",
+              "source": "Page 110, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-54",
+              "type": "multiple_choice",
+              "instruction": "21. In Europe, the interest in labour-saving devices was stimulated by",
+              "options": [
+                "A. less time being available for housework.",
+                "B. the women's liberation movement.",
+                "C. the extravagant lifestyle in Europe.",
+                "D. people's unwillingness to do household chores."
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Sau WWI: 'Women were emancipated, domestic labour less easily available' — phụ nữ được giải phóng nên ÍT THỜI GIAN hơn cho việc nhà, tạo nhu cầu thiết bị tiết kiệm lao động. Bẫy: B hấp dẫn vì 'women were emancipated' nhưng đây là HẬU QUẢ dẫn đến ít người làm việc nhà, không phải 'women's liberation movement' như phong trào chính trị có tổ chức. C sai — ngược lại, chiến tranh 'drained economies'. D không được đề cập. Chuyên đề: Reading — cause and effect.",
+              "answerLocation": "domestic labour less easily available",
+              "category": "cpe_part_5",
+              "source": "Page 111, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-55",
+              "type": "multiple_choice",
+              "instruction": "22. Labour-saving devices became available in Europe",
+              "options": [
+                "A. when technology advanced.",
+                "B. prior to their availability in the US.",
+                "C. in the early part of the 21st century.",
+                "D. comparatively late."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'America took the lead in the production and marketing of household appliances. By the latter part of the century though, the rest of the world had caught up.' — Châu Âu bắt kịp MỸ vào cuối thế kỷ 20, tức là TƯƠNG ĐỐI MUỘN so với Mỹ. Bẫy: B sai — ngược lại, Mỹ có trước. C sai — bài nói 'latter part of the century' (cuối thế kỷ 20), không phải đầu thế kỷ 21. A quá chung chung. Chuyên đề: Reading — chronological inference.",
+              "answerLocation": "By the latter part of the century though, the rest of the world had caught up",
+              "category": "cpe_part_5",
+              "source": "Page 111, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-56",
+              "type": "multiple_choice",
+              "instruction": "23. In the past, garments were",
+              "options": [
+                "A. stretched before being ironed.",
+                "B. weighed down and then washed.",
+                "C. ironed while still damp.",
+                "D. smoothed out with an electric iron."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'In the Middle Ages, it was discovered that cloth pressed while being steamed would hold the shape' — vải được ủi khi CÒN ẨM (steamed = hơi nước, tức là ẩm). 'Ironed while still damp' = ủi khi còn ẩm. Bẫy: A — Chinese stretched garments nhưng KHÔNG phải trước khi ủi (đó là thay thế cho ủi). B — Greeks dùng weights nhưng không liên quan washing. D — electric iron là hiện đại, không phải 'in the past'. Chuyên đề: Reading — detail.",
+              "answerLocation": "cloth pressed while being steamed would hold the shape",
+              "category": "cpe_part_5",
+              "source": "Page 112, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-57",
+              "type": "multiple_choice",
+              "instruction": "24. According to the text, iron was used to smooth out materials because it",
+              "options": [
+                "A. was made in attractive forms.",
+                "B. could easily pass heat from one surface to another.",
+                "C. did not destroy the delicate clothing materials.",
+                "D. could hold heated material."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'Iron was the heaviest material available at that time and was a good conductor of heat without being destroyed by its application.' — Sắt là VẬT DẪN NHIỆT TỐT (good conductor of heat) = 'could easily pass heat from one surface to another'. Bẫy: A — irons WERE made in artistic styles nhưng đó không phải LÝ DO sử dụng sắt. C — bài nói sắt không bị phá hủy bởi nhiệt (iron not destroyed), không phải vải. D — quá mơ hồ. Chuyên đề: Reading — reason/purpose.",
+              "answerLocation": "was a good conductor of heat without being destroyed by its application",
+              "category": "cpe_part_5",
+              "source": "Page 112, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-58",
+              "type": "multiple_choice",
+              "instruction": "25. As a child, the writer",
+              "options": [
+                "A. resented those who had modern appliances.",
+                "B. was less well off than some others.",
+                "C. helped her mother with household chores.",
+                "D. had never heard of a washing machine."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Gia đình không có nước máy ('no running water'), mẹ gánh nước từ giếng chung. Mẹ 'envy those neighbours who were lucky enough to have running water and electricity'. Rõ ràng gia đình NGHÈO HƠN một số người khác. Bẫy: A — mẹ 'envy' (thèm muốn) chứ không 'resent' (oán giận). C không được đề cập. D sai — mẹ BIẾT về máy giặt (đọc rằng nó nguy hiểm). Chuyên đề: Reading — inference about social status.",
+              "answerLocation": "no running water... How my mother would envy those neighbours",
+              "category": "cpe_part_5",
+              "source": "Page 113, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-59",
+              "type": "multiple_choice",
+              "instruction": "26. The writer",
+              "options": [
+                "A. has no need of a clothes washer.",
+                "B. has bought her mother a washing machine.",
+                "C. has fulfilled her childhood dream.",
+                "D. does not have to wash by hand."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Cuối bài: 'She declined the offer graciously, although I can't imagine life without it.' — Mẹ từ chối nhưng người viết 'can't imagine life without it' (không thể tưởng tượng cuộc sống thiếu máy giặt). Tức là người viết CÓ máy giặt và KHÔNG phải giặt tay. Bẫy: B sai — mẹ đã từ chối ('declined the offer'). C sai — giấc mơ mua cho MẸ chưa thực hiện. A sai — ngược lại, cô ấy cần nó. Chuyên đề: Reading — inference from final statement.",
+              "answerLocation": "She declined the offer graciously, although I can't imagine life without it",
+              "category": "cpe_part_5",
+              "source": "Page 113, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        },
+        {
+          "id": "cpe2-t5-rg-5b",
+          "instruction": "Choose the answer (A, B, C or D) which you think fits best according to the text. (Questions 34-40)",
+          "questions": [
+            {
+              "id": "q-cpe2t5-60",
+              "type": "multiple_choice",
+              "instruction": "34. What does the writer say about Dickens' novels?",
+              "options": [
+                "A. She has always found them to be intriguing.",
+                "B. They often portrayed hard work and success.",
+                "C. They were unequalled by other novels of that time.",
+                "D. The main characters were invariably impoverished orphans."
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. 'Surely in those novels he was telling the same story of travail and triumph' — 'travail' = hard work/suffering, 'triumph' = success. Dickens's novels mô tả sự VẤT VẢ VÀ THÀNH CÔNG. Bẫy: D hấp dẫn — bài đề cập 'wicked step-parents, indigent family' nhưng KHÔNG phải tất cả nhân vật đều là 'impoverished orphans' (mồ côi nghèo) — đó chỉ là ví dụ về 'initial handicap'. A quá chung chung. C không được nêu. Chuyên đề: Reading — paraphrasing 'travail and triumph'.",
+              "answerLocation": "he was telling the same story of travail and triumph",
+              "category": "cpe_part_5",
+              "source": "Page 117, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-61",
+              "type": "multiple_choice",
+              "instruction": "35. The writer's mother seemed to",
+              "options": [
+                "A. enjoy Nancy and Millicent's visits.",
+                "B. disapprove of Nancy and Millicent.",
+                "C. tolerate the remarks they made.",
+                "D. become visibly angry when they spoke."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Mẹ 'was obliged to turn her head away for a brief moment, as suggestions for improvement came her way' — mẹ CHỊU ĐỰNG (tolerate) những nhận xét. Bà không phản đối công khai, chỉ quay đầu đi một chút. 'Tolerate' = chấp nhận mà không phàn nàn. Bẫy: A sai — 'tiredness' cho thấy mẹ KHÔNG thích. B sai — mẹ không thể hiện sự phản đối rõ ràng. D sai — mẹ KHÔNG tỏ ra giận dữ ('obliged to turn her head away' ≠ anger). Chuyên đề: Reading — character attitude.",
+              "answerLocation": "she was obliged to turn her head away for a brief moment",
+              "category": "cpe_part_5",
+              "source": "Page 117, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-62",
+              "type": "multiple_choice",
+              "instruction": "36. According to the writer the visitors were",
+              "options": [
+                "A. persistently critical.",
+                "B. extremely sensitive.",
+                "C. fundamentally supportive.",
+                "D. utterly contemptuous."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'These visits were undertaken for more merciful reasons than mere curiosity, were in essence a form of female solidarity.' Và 'They were concerned for any woman, living on her own.' — Khách thăm THỰC CHẤT có lòng tốt và muốn HỖ TRỢ (fundamentally supportive), dù cách thể hiện có vẻ phê phán. Bẫy: A — họ có phê phán nhưng bài nhấn mạnh lý do sâu xa là 'merciful'. D quá tiêu cực — 'genuinely pitied', không 'contemptuous'. B không có bằng chứng. Chuyên đề: Reading — underlying attitude.",
+              "answerLocation": "undertaken for more merciful reasons than mere curiosity... a form of female solidarity",
+              "category": "cpe_part_5",
+              "source": "Page 117, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-63",
+              "type": "multiple_choice",
+              "instruction": "37. Nancy and Millicent regarded the writer's mother as",
+              "options": [
+                "A. someone to be envied.",
+                "B. someone they could confide in.",
+                "C. someone who could give them status.",
+                "D. someone who disregarded their advice."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'My mother was their crusade; they also usefully saw her as a pupil.' Và 'glad to have done their social duty, even if the results were so sadly lacking.' — KẾT QUẢ 'sadly lacking' cho thấy mẹ KHÔNG NGHE theo lời khuyên. Họ coi mẹ là 'pupil' (học trò) nhưng mẹ 'disregarded their advice' (bỏ qua lời khuyên). Bẫy: A sai — họ 'pitied' (thương hại) mẹ, không 'envied'. B sai — không có bằng chứng họ tâm sự với mẹ. C sai — ngược lại, họ muốn cho mẹ status. Chuyên đề: Reading — implied attitude.",
+              "answerLocation": "My mother was their crusade; they also usefully saw her as a pupil... results were so sadly lacking",
+              "category": "cpe_part_5",
+              "source": "Page 117, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-64",
+              "type": "multiple_choice",
+              "instruction": "38. In paragraph 3, how does the writer react after the visitors leave?",
+              "options": [
+                "A. She feels happy the visit was brief.",
+                "B. She tries to lift her mother's spirits.",
+                "C. She hopes they will not visit again.",
+                "D. She reflects that others have felt the same."
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. 'I comforted myself that even David Copperfield had had moments of downheartedness.' — Người viết tự an ủi rằng ngay cả David Copperfield (nhân vật Dickens) cũng có lúc chán nản. Tức là cô SUY NGẪM rằng NGƯỜI KHÁC cũng cảm thấy tương tự (others have felt the same). Bẫy: B sai — cô KHÔNG cố vui lên mẹ mà biết 'should not intrude on her thoughts'. A không có bằng chứng. C không được thể hiện. Chuyên đề: Reading — inference from literary allusion.",
+              "answerLocation": "I comforted myself that even David Copperfield had had moments of downheartedness",
+              "category": "cpe_part_5",
+              "source": "Page 117, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-65",
+              "type": "multiple_choice",
+              "instruction": "39. To the writer, her neighbourhood is",
+              "options": [
+                "A. a place where artists gather.",
+                "B. too far away from her friends.",
+                "C. a refuge from the world.",
+                "D. a depressing, rundown area."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. 'I cherished them as a place of safety' — Người viết yêu quý khu phố như NƠI TRỐN AN TOÀN. 'A refuge from the world' = nơi ẩn náu khỏi thế giới = 'a place of safety'. Bẫy: A sai — bài nói 'artists had once lived' (đã từng sống), KHÔNG phải hiện tại. B sai — cô THÍCH khoảng cách ('on the margin of things did not disturb me'). D sai — tuy 'mournful' nhưng cô CHERISHED (yêu quý) nơi đó. Chuyên đề: Reading — attitude toward place.",
+              "answerLocation": "I cherished them as a place of safety",
+              "category": "cpe_part_5",
+              "source": "Page 117, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-66",
+              "type": "multiple_choice",
+              "instruction": "40. The writer gives the impression of having been",
+              "options": [
+                "A. always happy during childhood.",
+                "B. lonely because she was an only child.",
+                "C. protected from the outside world.",
+                "D. thankful to have overcome life's hardships."
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Nhiều chi tiết cho thấy cô được BẢO VỆ khỏi thế giới bên ngoài: 'place of safety', 'the street lamp... a benign gesture', 'guardian of our decency', sống ở rìa xã hội nhưng coi đó là bình yên. Mẹ cô có 'guilelessness' (ngây thơ, không thủ đoạn) và sống tách biệt. Bẫy: A sai — 'on the whole, I was happy' nhưng KHÔNG PHẢI 'always' — có lúc buồn (visitors). B sai — cô có bạn bè trường ('I liked my friends'). D sai — cô CHƯA trải qua hardships thực sự (mẹ giải thích 'wickedness' chỉ là 'worldliness'). Chuyên đề: Reading — overall impression.",
+              "answerLocation": "C. protected from the outside world.",
+              "category": "cpe_part_5",
+              "source": "Page 117, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe2-t5-sec-6",
+      "title": "Part 6: Gapped Text",
+      "instructions": "You are going to read an extract from an article about 19th century London. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap (27-33). There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Booth's Survey of London Poverty</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>When Booth conducted his survey, he had no precedents to guide him except occasional reports from factory inspectors, royal commissions, the census and other statistical surveys. There had been no inquiry into poverty in general, no breakdown of income and classes. In attempting to deal with just these problems through his own observations, Booth, despite the defects of his methods, was a pioneer.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 27]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There is an openness to reality, a willingness to look at squalor without coating it over with moralistic language, and a humility before the plight of some of the poor, which give the writing a literary distinctiveness truly reminiscent of Orwell's own efforts to assert decency. It is journalistic without seeming callous and sensationalist. 'Here in Ferdinand Street,' he writes of one packed block of houses, 'not an inch was lost, and the fingers of any one passer-by might have tapped at any window or door as he passed along.'</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 28]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>He has a remarkably good ear for common speech and an eye for telling details. One pictures him tall, stooped, notebook in hand, intent upon his subject, asking frequent questions, at times a trifle self-deprecating, but never so aware of his posture as to lose sight of his inquiry. Booth was, apparently, courteous almost to a fault, and his prose is a perfectly unaffected vehicle for such decorum. Sometimes we are hardly conscious of the intrusion of his style.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 29]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Whether Booth's manner, which lends so much dignity to the poor without special pleading, would be as appropriate to writing about them today is worth considering. Nowadays the writer about poverty is likely to make much of his own motivations, to assert his involvement, or to agonise over it, even attempting to de-class himself, and always questioning his relatedness because of the strain of trying to relate.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 30]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Yet once he encountered the poor, his compassion was never tidy or priggish; it was what motivated him to keep on learning and writing. Booth did not attempt to render poverty in its most existential terms. Probably he would have found such efforts contemptible, for he truly believed that between himself and the poor there was an unbridgeable gap of class and culture. But by forcing himself to live among the poor, to make a confrontation with their lives, he achieved a human recognition. His writing is never so opinionated that it does not reflect this.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 31]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Booth's study of the poor also achieved its first objective: it gave the public some idea of the dimensions and meaning of poverty in London. Never before had the middle classes been told in such harrowing detail about the effects of moral decay and destitution, about the domestic lives of the poor, about the oppression of work, the condition of women workers, the practice of sweating, about the new immigrants.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 32]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>He now found that the proportion in East London was close to thirty-five per cent; that of the 900,000 people in the district, 314,000 were poor; that of these far more than half (185,000) belonged to families earning less than eighteen shillings a week; and that more than half of these in turn (over 100,000) suffered from acute 'distress'.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 33]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Booth's evidence thus demolished the middle-class myth that poverty resulted from personal failure, vice or improvidence. Despite himself, he implicitly lent support to the argument that poverty was a collective, not an individual, responsibility.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe2-t5-rg-6",
+          "instruction": "Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph you do not need to use.",
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Booth uses metaphor and figurative language sparingly. There is a deliberate no-nonsense quality to the prose which may be a trifle off-putting to those accustomed to learning of poverty through the lyricism of a James Agee or the rhetorical indignation of James Baldwin. But, though Booth's primary aim was not to create literature but to describe reality, it is difficult to read his writings today without reflecting on the literary strengths of such a method."
+            },
+            {
+              "label": "B",
+              "text": "And if the writing, like the thought, never manages to encompass the total reality behind London poverty, it does manage to convey strength, resilience, patience, and a certain toughness of observation which seems wholly pertinent to the harsh realities he was called upon to observe. He is hardly ever censorious, never contemptuous and often gently humorous."
+            },
+            {
+              "label": "C",
+              "text": "Booth made a second important discovery. On the basis of information received from 4,000 poor people, he concluded that the cause of poverty in about eighty-five per cent of the cases was either 'employment' (both lack of work and low pay) or 'circumstances' (large family and sickness). 'Habit' ('idleness, and thriftlessness') accounted for only about fifteen percent."
+            },
+            {
+              "label": "D",
+              "text": "Booth's wanderings among the habitations of the poor on Chester, Eldon, Ferdinand and Dutton streets, his tough-minded, empirical descriptions of housing, styles of dress, eating habits, shops and employment, may recall George Orwell's visits nearly fifty years later among the poor of Wigan Pier."
+            },
+            {
+              "label": "E",
+              "text": "Politically and administratively, London had scarcely advanced beyond the Middle Ages. In the 1880s with a population of over four million, it still lacked a water, sanitation and public health system; it still suffered from periodic plagues of typhus and cholera; and its poor laws were as archaic and oppressive as ever. There was no central government to speak of. Not until 1888 was a County Council established to assume overall responsibility for education, sewage disposal, housing and hospitals."
+            },
+            {
+              "label": "F",
+              "text": "Booth's dry statistical data furnished incontestable proof that previous writers had been in error; they had actually seen only a fraction of London poverty. In the Pall Mall Gazette of 1885, the Social Democratic Federation had contended that twenty-five per cent of the working class was poor, a statistic that Booth had then condemned as shockingly high."
+            },
+            {
+              "label": "G",
+              "text": "Stripped of abstractions, except for an occasional epithet which temper or compassion provokes, it describes a reality only to be found on the streets of London. As Booth himself pointed out in a letter to his assistant Ernest Aves, 'I am afraid we are sure to shock very many good people in the conclusions — the danger of hurting is rather to be found in the details necessary to support these conclusions. It cannot be entirely avoided, but must never be wanton.'"
+            },
+            {
+              "label": "H",
+              "text": "Booth's prose shows none of the strains of such an engagement. No doubt he was inspired to begin his researches chiefly because — like many other Englishmen of his class and era — he felt vaguely threatened by the presence of so much poverty and wished to specify the problem in hopes of finding the most appropriate solutions to it."
+            }
+          ],
+          "questions": [
+            {
+              "id": "q-cpe2t5-67",
+              "type": "gapped_text",
+              "instruction": "Gap 27:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Đáp án D. Đoạn D đề cập 'Booth's wanderings among the habitations of the poor' và so sánh với Orwell's 'Wigan Pier'. Nó nối liền mạch ý từ đoạn trước (Booth là pioneer) sang đoạn sau (văn phong gợi nhớ Orwell — 'truly reminiscent of Orwell's own efforts'). Từ khóa liên kết: 'Orwell' xuất hiện ở cả đoạn D và đoạn sau gap 27. Chuyên đề: Text coherence — literary comparison.",
+              "answerLocation": "Gap 27 — before Orwell comparison paragraph",
+              "category": "cpe_part_6",
+              "source": "Page 114, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-68",
+              "type": "gapped_text",
+              "instruction": "Gap 28:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Đáp án A. Đoạn A nói về Booth's prose style — 'uses metaphor sparingly', 'no-nonsense quality', 'literary strengths'. Nó chuyển tiếp từ ví dụ cụ thể về Ferdinand Street sang phân tích phong cách viết. Đoạn sau gap 28 tiếp tục mô tả Booth's writing skills ('good ear for common speech'). Chuyên đề: Text coherence — literary analysis.",
+              "answerLocation": "Gap 28 — after Ferdinand Street quote, before 'good ear for common speech'",
+              "category": "cpe_part_6",
+              "source": "Page 114, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-69",
+              "type": "gapped_text",
+              "instruction": "Gap 29:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Đáp án B. Đoạn B nói về chất lượng viết: 'convey strength, resilience, patience', 'never contemptuous, often gently humorous'. Nó tiếp tục phân tích style từ đoạn trước ('courteous almost to a fault', 'unaffected vehicle'). Đoạn sau gap 29 chuyển sang so sánh phương pháp Booth với writers hiện đại ('Nowadays the writer...'). Chuyên đề: Text coherence — summary and transition.",
+              "answerLocation": "Gap 29 — after 'courteous almost to a fault', before comparison with modern writers",
+              "category": "cpe_part_6",
+              "source": "Page 114, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-70",
+              "type": "gapped_text",
+              "instruction": "Gap 30:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Đáp án H. Đoạn H nói 'Booth's prose shows none of the strains of such an engagement' — 'such an engagement' liên kết với đoạn trước về writers hiện đại 'agonise', 'questioning relatedness'. Đoạn sau gap 30 bắt đầu 'Yet once he encountered the poor, his compassion was never tidy' — 'Yet' tạo sự đối lập với motivation được nêu trong H. Chuyên đề: Text coherence — contrast.",
+              "answerLocation": "Gap 30 — after modern writers paragraph, before 'compassion' paragraph",
+              "category": "cpe_part_6",
+              "source": "Page 114, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-71",
+              "type": "gapped_text",
+              "instruction": "Gap 31:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Đáp án G. Đoạn G nói 'Stripped of abstractions... describes a reality only to be found on the streets of London' và trích thư Booth về 'shock' và 'danger of hurting in the details'. Nó nối ý 'writing is never so opinionated' (trước gap) với 'Booth's study achieved its first objective' (sau gap) — từ phân tích style sang impact. Chuyên đề: Text coherence — transition from analysis to impact.",
+              "answerLocation": "Gap 31 — after 'never so opinionated', before 'achieved its first objective'",
+              "category": "cpe_part_6",
+              "source": "Page 114-115, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-72",
+              "type": "gapped_text",
+              "instruction": "Gap 32:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Đáp án F. Đoạn F nói 'Booth's dry statistical data furnished incontestable proof' và đề cập 'twenty-five per cent' từ 1885. Đoạn sau gap 32 cho thấy Booth tìm ra con số CAO HƠN ('close to thirty-five per cent'). F là cầu nối: đầu tiên người khác nói 25% → Booth phát hiện thực tế là 35%. 'He now found' liên kết trực tiếp với 'previous writers had been in error'. Chuyên đề: Text coherence — statistical contrast.",
+              "answerLocation": "Gap 32 — before '35%' statistics paragraph",
+              "category": "cpe_part_6",
+              "source": "Page 115, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe2t5-73",
+              "type": "gapped_text",
+              "instruction": "Gap 33:",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Đáp án C. Đoạn C nói về Booth's 'second important discovery' — nguyên nhân nghèo đói (85% do employment/circumstances, chỉ 15% do 'habit'). Đoạn sau gap 33 kết luận: 'Booth's evidence demolished the middle-class myth that poverty resulted from personal failure' — 'personal failure' liên kết trực tiếp với 'Habit (idleness, thriftlessness)' chỉ chiếm 15%. Chuyên đề: Text coherence — evidence supporting conclusion.",
+              "answerLocation": "Gap 33 — before conclusion about demolishing myths",
+              "category": "cpe_part_6",
+              "source": "Page 115, Test 5, Practice Tests CPE 2",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

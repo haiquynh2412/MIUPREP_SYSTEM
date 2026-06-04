@@ -1,0 +1,348 @@
+{
+  "summary": {
+    "generatedAt": "2026-05-17",
+    "sourceArchive": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\SAT\\data\\SAT-20260516T141004Z-3-001.zip",
+    "questionCount": 230,
+    "sourceCount": 6,
+    "policy": [
+      "Private family study only.",
+      "Do not publish, share, or export these items to public accounts.",
+      "Items are extracted from user-supplied local files and require admin verification."
+    ]
+  },
+  "sources": [
+    {
+      "label": "Princeton Review Practice Test 5",
+      "test": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Online_Practice_Test_5.pdf",
+      "answers": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Online_Practice_Test_5_Answers.pdf",
+      "status": "parsed",
+      "pageCount": 60,
+      "imported": 31,
+      "sectionCounts": {
+        "Math - No Calculator": 11,
+        "Math - Calculator": 20
+      },
+      "parser": "princeton_line_parser"
+    },
+    {
+      "label": "Princeton Review Practice Test 6",
+      "test": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Prem_Online_Practice_Test_6.pdf",
+      "answers": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Prem_Online_Practice_Test_6_Answers.pdf",
+      "status": "parsed",
+      "pageCount": 64,
+      "imported": 32,
+      "sectionCounts": {
+        "Math - No Calculator": 11,
+        "Math - Calculator": 21
+      },
+      "parser": "princeton_line_parser"
+    },
+    {
+      "label": "Princeton Review Practice Test 7",
+      "test": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Prem_Online_Practice_Test_7.pdf",
+      "answers": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Prem_Online_Practice_Test_7_Answers.pdf",
+      "status": "parsed",
+      "pageCount": 62,
+      "imported": 37,
+      "sectionCounts": {
+        "Math - No Calculator": 12,
+        "Math - Calculator": 25
+      },
+      "parser": "princeton_line_parser"
+    },
+    {
+      "label": "Princeton Review Practice Test 8",
+      "test": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Prem_Online_Practice_Test_8.pdf",
+      "answers": "SAT/PRACTICE TESTS/Princeton review /Crack the new Sat online practice/Cracking_SAT_2020_Prem_Online_Practice_Test_8_Answers.pdf",
+      "status": "parsed",
+      "pageCount": 58,
+      "imported": 40,
+      "sectionCounts": {
+        "Math - No Calculator": 13,
+        "Math - Calculator": 27
+      },
+      "parser": "princeton_line_parser"
+    },
+    {
+      "label": "College Board Practice Test 9",
+      "test": "SAT/PRACTICE TESTS/CollegeBoard/Tests 9 + 10/Test 9/pdf_sat-practice-test-9.pdf",
+      "answers": "SAT/PRACTICE TESTS/CollegeBoard/Tests 9 + 10/Test 9/Answers test 9.pdf",
+      "status": "parsed",
+      "pageCount": 64,
+      "imported": 45,
+      "sectionCounts": {
+        "Math - No Calculator": 15,
+        "Math - Calculator": 30
+      },
+      "parser": "college_board_math_parser",
+      "note": "Imported Math multiple-choice only; grid-in items are skipped because the app bank expects A-D choices."
+    },
+    {
+      "label": "College Board Practice Test 10",
+      "test": "SAT/PRACTICE TESTS/CollegeBoard/Tests 9 + 10/Test 10/pdf_sat-practice-test-10.pdf",
+      "answers": "SAT/PRACTICE TESTS/CollegeBoard/Tests 9 + 10/Test 10/Answer test 10.pdf",
+      "status": "parsed",
+      "pageCount": 64,
+      "imported": 45,
+      "sectionCounts": {
+        "Math - No Calculator": 15,
+        "Math - Calculator": 30
+      },
+      "parser": "college_board_math_parser",
+      "note": "Imported Math multiple-choice only; grid-in items are skipped because the app bank expects A-D choices."
+    },
+    {
+      "label": "Microsoft Word - SAT Online Practice Test - Edition 2.2 - Draft 5 - SA Edits.docx",
+      "test": "SAT/PRACTICE TESTS/Ivy Global/Ivy Global SAT 2016.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "commercial_prep",
+      "risk": "High",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "qas1018gobblegobble",
+      "test": "SAT/REAL TESTS/2018_Oct_Answers.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "answer_key_or_scoring",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "Answer/scoring file only; paired where a matching parseable test exists."
+    },
+    {
+      "label": "Kaplan4",
+      "test": "SAT/PRACTICE TESTS/Kaplan /Kaplan4.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "commercial_prep",
+      "risk": "High",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "可汗语法48篇0523_SAT小帮手整理",
+      "test": "SAT/WRITING /Khan - Writing _No Watermark.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "reference",
+      "sourceType": "khan_college_board",
+      "risk": "High",
+      "reason": "Reference/guide material, not a complete question bank with A-D answers."
+    },
+    {
+      "label": "panda sat math",
+      "test": "SAT/MATHS/panda sat math.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "reference",
+      "sourceType": "commercial_prep",
+      "risk": "High",
+      "reason": "Reference/guide material, not a complete question bank with A-D answers."
+    },
+    {
+      "label": "Kaplan5",
+      "test": "SAT/PRACTICE TESTS/Kaplan /Kaplan5.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "commercial_prep",
+      "risk": "High",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "ĐÁP ÁN IES SAT Math ",
+      "test": "SAT/MATHS/ĐÁP ÁN IES SAT Math .pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "answer_key_or_scoring",
+      "sourceType": "third_party_prep",
+      "risk": "High",
+      "reason": "Answer/scoring file only; paired where a matching parseable test exists."
+    },
+    {
+      "label": "Erica Meltzer Grammar Workbook",
+      "test": "SAT/WRITING /Erica Meltzer Grammar Workbook.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "reference",
+      "sourceType": "commercial_prep",
+      "risk": "High",
+      "reason": "Reference/guide material, not a complete question bank with A-D answers."
+    },
+    {
+      "label": "Scoring Your SAT Practice Test #9",
+      "test": "SAT/PRACTICE TESTS/CollegeBoard/Tests 9 + 10/Test 9/Scoring test 9.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "answer_key_or_scoring",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "Answer/scoring file only; paired where a matching parseable test exists."
+    },
+    {
+      "label": "2019 May US SAT QAS",
+      "test": "SAT/REAL TESTS/2019 May US SAT QAS.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "No reliable extractable text or likely scanned/encoded PDF."
+    },
+    {
+      "label": "Kaplan3",
+      "test": "SAT/PRACTICE TESTS/Kaplan /Kaplan3.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "commercial_prep",
+      "risk": "High",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "SAT Vocabulary A New Approach",
+      "test": "SAT/READING/SAT Vocabulary A New Approach.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "reference",
+      "sourceType": "unknown_archive_doc",
+      "risk": "Medium",
+      "reason": "Reference/guide material, not a complete question bank with A-D answers."
+    },
+    {
+      "label": "2019-10-U.S.",
+      "test": "SAT/REAL TESTS/2019 - October US.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "No reliable extractable text or likely scanned/encoded PDF."
+    },
+    {
+      "label": "可汗阅读68篇0523_SAT小帮手整理",
+      "test": "SAT/READING/Khan - Reading_No Watermark.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "reference",
+      "sourceType": "khan_college_board",
+      "risk": "High",
+      "reason": "Reference/guide material, not a complete question bank with A-D answers."
+    },
+    {
+      "label": "2017 05 VN",
+      "test": "SAT/REAL TESTS/2017 05 VN.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "No reliable extractable text or likely scanned/encoded PDF."
+    },
+    {
+      "label": "Scoring Your SAT Practice Test #10",
+      "test": "SAT/PRACTICE TESTS/CollegeBoard/Tests 9 + 10/Test 10/Scoring test 10.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "answer_key_or_scoring",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "Answer/scoring file only; paired where a matching parseable test exists."
+    },
+    {
+      "label": "2018 03 US",
+      "test": "SAT/REAL TESTS/2018 03 US.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "SAT-Math-Tests-Kolby-Jeff-SRG",
+      "test": "SAT/MATHS/SAT-Math-Tests-Kolby-Jeff-SRG.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "unknown_archive_doc",
+      "risk": "Medium",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "mcclenathan_mike_pwn_the_sat_math_guide",
+      "test": "SAT/MATHS/mcclenathan_mike_pwn_the_sat_math_guide.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "reference",
+      "sourceType": "commercial_prep",
+      "risk": "High",
+      "reason": "Reference/guide material, not a complete question bank with A-D answers."
+    },
+    {
+      "label": "April 2019",
+      "test": "SAT/REAL TESTS/April 2019.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "2018 April School-Day SAT (Also May 2018 International) - Perfect Copy (Maine)",
+      "test": "SAT/REAL TESTS/2018 April School-Day SAT (Also May 2018 International) - Perfect Copy (Maine).pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "No reliable A-D question parser plus answer key pair was available."
+    },
+    {
+      "label": "hi hello ^^",
+      "test": "SAT/REAL TESTS/hi hello ^^.docx",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "practice_test",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "No reliable extractable text or likely scanned/encoded PDF."
+    },
+    {
+      "label": "2017-18 SAT Student Guide | SAT Suite of Assessments – The College Board",
+      "test": "SAT/GENERAL INFORMATION/SAT Student Guide.pdf",
+      "answers": "",
+      "status": "skipped",
+      "imported": 0,
+      "role": "guide",
+      "sourceType": "college_board",
+      "risk": "High",
+      "reason": "Reference/guide material, not a complete question bank with A-D answers."
+    }
+  ]
+}

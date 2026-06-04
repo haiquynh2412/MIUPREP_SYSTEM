@@ -1,0 +1,2017 @@
+[
+  {
+    "id": "antigravity-hard-53c4e9f6",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the equation x² + kx + 9 = 0 have exactly one real solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "±6"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = k² − 36 = 0 ⇒ k² = 36 ⇒ k = ±6. Completing the square: (x + a)² = x² + 2ax + a², so a² = 9 ⇒ a = ±3 ⇒ k = 2a = ±6.",
+      "distractors": {
+        "B": "Partial answer – takes only k = 6, ignoring k = −6.",
+        "C": "Square-root confusion – uses k = √9 = 3, confusing the constant term with the coefficient.",
+        "D": "Coefficient confusion – sets k = 9 by equating the constant directly."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognise Δ = 0 yields k² = 36, requiring both ± roots.",
+      "trapTypes": [
+        "incomplete case analysis",
+        "sign neglect"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-04ad8090",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation x² − 6x + k = 0 has two distinct real solutions. Which of the following could be a value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "10"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 36 − 4k > 0 ⇒ k < 9. Among the choices only k = 8 satisfies k < 9. Completing the square: (x − 3)² = 9 − k > 0 ⇒ k < 9.",
+      "distractors": {
+        "B": "Boundary error – k = 9 gives Δ = 0 (one repeated root, not two distinct).",
+        "C": "Direction error – k = 10 makes Δ < 0, giving no real solutions.",
+        "D": "Direction error – k = 12 makes Δ even more negative."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translate 'two distinct real solutions' into strict inequality Δ > 0.",
+      "trapTypes": [
+        "boundary inclusion error",
+        "inequality direction"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-b468efee",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For which value of k does the equation 2x² + 4x + k = 0 have no real solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "−1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 16 − 8k. No real solutions: Δ < 0 ⇒ k > 2. Only k = 3 satisfies this. Dividing by 2: (x + 1)² = 1 − k/2 < 0 ⇒ k > 2.",
+      "distractors": {
+        "B": "Boundary error – k = 2 gives Δ = 0, exactly one solution.",
+        "C": "Insufficient – k = 1 gives Δ = 8 > 0, two real solutions.",
+        "D": "Sign error – k = −1 gives Δ = 24 > 0, two real solutions."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compute discriminant of a non-monic quadratic and solve the resulting inequality.",
+      "trapTypes": [
+        "forgetting coefficient of x²",
+        "boundary inclusion error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-9612483e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The roots of 3x² − 12x + k = 0 sum to 4. What is the product of the roots?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k/3"
+      },
+      {
+        "letter": "B",
+        "text": "k"
+      },
+      {
+        "letter": "C",
+        "text": "3k"
+      },
+      {
+        "letter": "D",
+        "text": "12/k"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vieta's: sum = −b/a = 12/3 = 4 ✓, product = c/a = k/3. Alternatively, expanding 3(x − r)(x − s) shows the constant is 3rs = k, so rs = k/3.",
+      "distractors": {
+        "B": "Coefficient neglect – forgets to divide by a = 3, giving product = k.",
+        "C": "Inversion error – multiplies by a instead of dividing, giving 3k.",
+        "D": "Formula confusion – inverts the relationship, using 12/k."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply Vieta's product formula c/a and resist ignoring the leading coefficient.",
+      "trapTypes": [
+        "leading coefficient neglect",
+        "formula inversion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-a9bf2e71",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = 2x + k is tangent to the parabola y = x². What is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−1"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "0"
+      },
+      {
+        "letter": "D",
+        "text": "−4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Set x² = 2x + k ⇒ x² − 2x − k = 0. Tangency: Δ = 4 + 4k = 0 ⇒ k = −1. Alternatively: slope y' = 2x = 2 ⇒ x = 1, y = 1, so k = 1 − 2 = −1.",
+      "distractors": {
+        "B": "Sign error – solves 4 + 4k = 0 but drops the negative, getting k = 1.",
+        "C": "Oversight – assumes the tangent passes through the origin, giving k = 0.",
+        "D": "Arithmetic error – misapplies Δ = 4 − 4k = 0 and gets k = −4 through further sign slips."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant of the combined system to zero for tangency.",
+      "trapTypes": [
+        "sign error in discriminant",
+        "tangency vs intersection confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-ff509a74",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation x² + 8x + k = 0 can be rewritten as (x + 4)² = 16 − k. For which value of k does this equation have exactly one solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "16"
+      },
+      {
+        "letter": "B",
+        "text": "−16"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(x + 4)² = 16 − k. Exactly one solution when 16 − k = 0 ⇒ k = 16. Cross-check: Δ = 64 − 4(16) = 0. ✓",
+      "distractors": {
+        "B": "Sign confusion – sets 16 + k = 0, getting k = −16.",
+        "C": "Square root error – takes √16 = 4 and uses that as k.",
+        "D": "Halving error – uses 8 (the coefficient of x) directly as k."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognise that a perfect square equals zero yields exactly one solution.",
+      "trapTypes": [
+        "sign confusion",
+        "coefficient misidentification"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-f4ca01ab",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the equation x² − (k/2)x + 4 = 0 have a repeated root?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "±8"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = (k/2)² − 16 = k²/4 − 16 = 0 ⇒ k² = 64 ⇒ k = ±8. Cross-check: repeated root r with 2r = k/2 and r² = 4 ⇒ r = ±2 ⇒ k = ±8.",
+      "distractors": {
+        "B": "Partial answer – finds only k = 8, ignoring k = −8.",
+        "C": "Arithmetic error – confuses k/2 with k, gets Δ = k² − 16 = 0 ⇒ k = 4.",
+        "D": "Squaring error – computes (k/2)² as k²/2 and gets k² = 32 ⇒ k ≈ 5.66, rounds to 16."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Handle fractional b-coefficient in the discriminant and include both ± values.",
+      "trapTypes": [
+        "fractional coefficient error",
+        "incomplete ± analysis"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-592d186e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A rectangle has a perimeter of 20 and an area of k. If the length and width satisfy x² − 10x + k = 0, what is the maximum possible value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "25"
+      },
+      {
+        "letter": "B",
+        "text": "20"
+      },
+      {
+        "letter": "C",
+        "text": "100"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Perimeter 20 ⇒ l + w = 10. Area = lw = k. For real dimensions, Δ ≥ 0: 100 − 4k ≥ 0 ⇒ k ≤ 25. By AM-GM: lw ≤ (10/2)² = 25 when l = w = 5.",
+      "distractors": {
+        "B": "Perimeter confusion – uses k = 20 (the perimeter itself).",
+        "C": "Squaring error – computes 20²/4 = 100.",
+        "D": "Halving error – uses half the perimeter k = 10."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Connect Δ ≥ 0 with geometric maximum-area constraint.",
+      "trapTypes": [
+        "AM-GM vs discriminant equivalence",
+        "perimeter-area confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-8cb7ce16",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For k ≠ 0, the equation kx² + 6x + k = 0 has exactly one real solution. What are the possible values of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "±3"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "−3"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 36 − 4k² = 0 ⇒ k² = 9 ⇒ k = ±3. Both satisfy k ≠ 0. Check: k = 3 gives 3(x + 1)² = 0 ✓; k = −3 gives −3(x − 1)² = 0 ✓.",
+      "distractors": {
+        "B": "Partial answer – only considers k = 3.",
+        "C": "Partial answer – only considers k = −3.",
+        "D": "Formula error – solves 36 − 4k = 0 instead of 36 − 4k² = 0, getting k = 9."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Handle a symmetric quadratic where k appears as both a and c.",
+      "trapTypes": [
+        "symmetric coefficient oversight",
+        "incomplete ± cases"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-d368014b",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If the product of the solutions to 2x² + 5x + c = 0 is −3, what is the value of c?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−6"
+      },
+      {
+        "letter": "B",
+        "text": "−3"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vieta's product = c/a = c/2. Set c/2 = −3 ⇒ c = −6. Expanding 2(x − r)(x − s): constant = 2rs = c, so c = 2(−3) = −6.",
+      "distractors": {
+        "B": "Leading coefficient neglect – sets c = −3 directly.",
+        "C": "Sign error – gets c = 6 by dropping the negative.",
+        "D": "Double error – ignores a = 2 and drops negative, getting c = 3."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recall product of roots = c/a and multiply both sides by a.",
+      "trapTypes": [
+        "leading coefficient neglect",
+        "sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-b70617cd",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation x² + 2kx + k + 6 = 0 has two distinct real roots. Which inequality must k satisfy?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k < −2 or k > 3"
+      },
+      {
+        "letter": "B",
+        "text": "−2 < k < 3"
+      },
+      {
+        "letter": "C",
+        "text": "k > 3"
+      },
+      {
+        "letter": "D",
+        "text": "k < −2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 4k² − 4(k + 6) > 0 ⇒ k² − k − 6 > 0 ⇒ (k − 3)(k + 2) > 0, which holds when k < −2 or k > 3.",
+      "distractors": {
+        "B": "Inequality reversal – solves (k − 3)(k + 2) < 0 instead of > 0.",
+        "C": "Partial interval – only takes k > 3.",
+        "D": "Partial interval – only takes k < −2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve a quadratic inequality in k arising from Δ > 0.",
+      "trapTypes": [
+        "inequality direction reversal",
+        "partial interval selection"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-0239b5e6",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = x + k is tangent to the circle x² + y² = 8. What are the possible values of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "±4"
+      },
+      {
+        "letter": "B",
+        "text": "±2√2"
+      },
+      {
+        "letter": "C",
+        "text": "±8"
+      },
+      {
+        "letter": "D",
+        "text": "±√8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Substitute: 2x² + 2kx + k² − 8 = 0. Tangency: Δ = 4k² − 8(k² − 8) = −4k² + 64 = 0 ⇒ k² = 16 ⇒ k = ±4. Alternatively, distance |k|/√2 = √8 ⇒ |k| = 4.",
+      "distractors": {
+        "B": "Intermediate confusion – uses 2√2 (= √8), confusing the radius form with k.",
+        "C": "Squaring error – uses k = ±8 from a miscalculated discriminant.",
+        "D": "Unsimplified – writes ±√8 instead of ±4, failing to recognise √8 ≠ 4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Combine substitution with Δ = 0 or use point-to-line distance.",
+      "trapTypes": [
+        "simplification error",
+        "distance formula vs discriminant"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-16ca5803",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "One root of 3x² − 7x + c = 0 is 2. What is the other root?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1/3"
+      },
+      {
+        "letter": "B",
+        "text": "7/3"
+      },
+      {
+        "letter": "C",
+        "text": "c/6"
+      },
+      {
+        "letter": "D",
+        "text": "−2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vieta's sum = 7/3. Other root = 7/3 − 2 = 1/3. Cross-check: plug x = 2 ⇒ c = 2, then 3x² − 7x + 2 = (3x − 1)(x − 2) = 0, x = 1/3. ✓",
+      "distractors": {
+        "B": "Reports the sum 7/3 itself instead of 7/3 − 2.",
+        "C": "Leaves answer in terms of c without substituting.",
+        "D": "Sign error – assumes the other root is −2 (negating the given root)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Use Vieta's sum as a shortcut to find the other root.",
+      "trapTypes": [
+        "reporting sum instead of difference",
+        "sign assumption"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-93c6af9e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many real solutions does x² − 4x + (k² + 5) = 0 have for any real value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Always 0"
+      },
+      {
+        "letter": "B",
+        "text": "Always 1"
+      },
+      {
+        "letter": "C",
+        "text": "Always 2"
+      },
+      {
+        "letter": "D",
+        "text": "Depends on k"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 16 − 4(k² + 5) = −4k² − 4 = −4(k² + 1). Since k² + 1 ≥ 1 for all real k, Δ < 0 always. Completing the square: (x − 2)² = −(k² + 1) < 0, impossible.",
+      "distractors": {
+        "B": "Misguess – assumes k can be tuned to give one solution.",
+        "C": "Over-optimism – assumes k² + 5 can be small enough for Δ ≥ 0.",
+        "D": "Logic error – notes Δ depends on k, but fails to verify Δ < 0 always."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognise k² + 1 > 0 for all real k makes Δ permanently negative.",
+      "trapTypes": [
+        "assuming parameter always yields variable behavior",
+        "sign of composed expression"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-40c721f1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation 2x² − 12x + k = 0 can be rewritten as 2(x − 3)² = 18 − k. For what value of k does this equation have exactly one solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "18"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2(x − 3)² = 18 − k. One solution when 18 − k = 0 ⇒ k = 18. Cross-check: Δ = 144 − 8(18) = 0. ✓",
+      "distractors": {
+        "B": "Division error – divides 18 by 2, getting k = 9.",
+        "C": "Halving error – uses the coefficient 12/2 = 6 as k.",
+        "D": "Squaring error – squares 6 to get 36."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set the right side of the completed-square form to zero.",
+      "trapTypes": [
+        "unnecessary division",
+        "coefficient confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-faf5c963",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = 4x + k is tangent to y = x² + 2x + 5. What is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "−1"
+      },
+      {
+        "letter": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Set x² + 2x + 5 = 4x + k ⇒ x² − 2x + (5 − k) = 0. Tangency: Δ = 4 − 4(5 − k) = 4k − 16 = 0 ⇒ k = 4. Alternatively: y' = 2x + 2 = 4 ⇒ x = 1, y = 8, so k = 8 − 4 = 4.",
+      "distractors": {
+        "B": "Premature answer – solves 5 − k = 4 ⇒ k = 1 from a misread setup.",
+        "C": "Sign error – computes Δ incorrectly and arrives at k = −1.",
+        "D": "Constant confusion – uses k = 5 from the parabola's constant term."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set up the system, apply Δ = 0 for tangency.",
+      "trapTypes": [
+        "sign error in discriminant expansion",
+        "misreading constants"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-b5520341",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If the sum of the solutions of x² − (2k + 1)x + 5 = 0 is 7, what is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "7"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Vieta's sum = 2k + 1 = 7 ⇒ 2k = 6 ⇒ k = 3.",
+      "distractors": {
+        "B": "Coefficient neglect – sets k = 7, equating the sum directly with k.",
+        "C": "Off-by-one – solves 2k = 7 ⇒ k = 3.5, rounds to 4.",
+        "D": "Arithmetic error – computes 7 − 1 = 6 but forgets to divide by 2."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Extract sum of roots from the x-coefficient and solve a linear equation.",
+      "trapTypes": [
+        "confusing sum with parameter",
+        "arithmetic rounding"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-6cbd8b29",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation −x² + 6x + k = 0 has no real solutions. Which describes all values of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k < −9"
+      },
+      {
+        "letter": "B",
+        "text": "k > −9"
+      },
+      {
+        "letter": "C",
+        "text": "k > 9"
+      },
+      {
+        "letter": "D",
+        "text": "k < 9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 36 − 4(−1)(k) = 36 + 4k. No real solutions: Δ < 0 ⇒ 36 + 4k < 0 ⇒ k < −9. Multiplying by −1: x² − 6x − k = 0, Δ = 36 + 4k < 0 confirms k < −9.",
+      "distractors": {
+        "B": "Sign reversal – solves Δ > 0 instead of Δ < 0, getting k > −9.",
+        "C": "Wrong formula – uses Δ = 36 − 4k < 0, getting k > 9.",
+        "D": "Arithmetic error – gets Δ = 36 − 4k and sets < 0, giving k < 9."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Handle negative leading coefficient correctly in the discriminant.",
+      "trapTypes": [
+        "negative leading coefficient",
+        "inequality direction with negative a"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-a2bd38f1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 4x² + bx + 9 = 0 has a double root, which of the following is a possible value of b?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "12"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "18"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = b² − 4(4)(9) = b² − 144 = 0 ⇒ b = ±12. So b = 12 is possible. Check: (2x + 3)² = 4x² + 12x + 9. ✓",
+      "distractors": {
+        "B": "Square-root shortcut error – computes √(4·9) = 6 instead of the full discriminant.",
+        "C": "Multiplication error – uses b = 2 · 9 = 18.",
+        "D": "Coefficient confusion – copies the constant term b = 9."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Connect double root with perfect-square trinomial or Δ = 0.",
+      "trapTypes": [
+        "incorrect square root of product",
+        "coefficient confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-4a30bcbb",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The solutions of x² − 10x + k = 0 are r and s, with r − s = 6. What is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "16"
+      },
+      {
+        "letter": "B",
+        "text": "25"
+      },
+      {
+        "letter": "C",
+        "text": "24"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "r + s = 10, r − s = 6 ⇒ r = 8, s = 2. k = rs = 16. Alternatively: (r − s)² = (r + s)² − 4rs ⇒ 36 = 100 − 4k ⇒ k = 16.",
+      "distractors": {
+        "B": "Identity confusion – uses (r + s)²/4 = 25.",
+        "C": "Arithmetic error – misreads r − s as 5 and gets r·s = 8·3 = 24.",
+        "D": "Uses (r − s)²/4 = 9."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Combine Vieta's sum with the given difference to find the product.",
+      "trapTypes": [
+        "identity misapplication",
+        "arithmetic slip"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-c2d999a9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A projectile's height is h(t) = −16t² + 48t + k. If h(t) = 0 has no real solutions, which inequality must k satisfy?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k < −36"
+      },
+      {
+        "letter": "B",
+        "text": "k > 36"
+      },
+      {
+        "letter": "C",
+        "text": "k > −36"
+      },
+      {
+        "letter": "D",
+        "text": "k < 36"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 48² − 4(−16)(k) = 2304 + 64k. No real solutions: Δ < 0 ⇒ 2304 + 64k < 0 ⇒ k < −36. Completing the square: max h = 36 + k; if 36 + k < 0, the parabola never crosses h = 0.",
+      "distractors": {
+        "B": "Wrong discriminant sign – uses Δ = 2304 − 64k and gets k > 36.",
+        "C": "Sign error – correctly gets 2304 + 64k but solves > 0, giving k > −36.",
+        "D": "Weak inequality – gets k < 36 from a computational error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compute discriminant with a negative leading coefficient in a real-world context.",
+      "trapTypes": [
+        "negative leading coefficient in discriminant",
+        "inequality direction"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-423e7af1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does x⁴ − 5x² + k = 0 have exactly two distinct real solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "25/4"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Let u = x². Then u² − 5u + k = 0. For exactly two real x-values, need exactly one positive u (double root). Δ_u = 25 − 4k = 0 ⇒ k = 25/4. Double root u = 5/2 > 0, giving x = ±√(5/2). ✓",
+      "distractors": {
+        "B": "Counting error – k = 0 gives u = 0 or 5, yielding x = 0, ±√5 → three real solutions.",
+        "C": "Over-count – k = 4 gives u = 1 or 4, yielding x = ±1, ±2 → four real solutions.",
+        "D": "Over-count – k = 6 gives two positive u-values, yielding four real solutions."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute u = x² and reason about how many positive u-values produce real x.",
+      "trapTypes": [
+        "quadratic-in-disguise",
+        "counting real vs complex solutions"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-9905a2dc",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation x² + 2√3 · x + k = 0 has a repeated root. What is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "√3"
+      },
+      {
+        "letter": "C",
+        "text": "2√3"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = (2√3)² − 4k = 12 − 4k = 0 ⇒ k = 3. Check: (x + √3)² = x² + 2√3·x + 3, so k = 3. ✓",
+      "distractors": {
+        "B": "Square-root confusion – uses k = √3 instead of (√3)² = 3.",
+        "C": "No simplification – copies the coefficient 2√3 as k.",
+        "D": "Squaring error – computes (2√3)² = 12 and uses that as k without dividing by 4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Square an irrational coefficient correctly: (2√3)² = 12, then Δ = 12 − 4k.",
+      "trapTypes": [
+        "irrational coefficient squaring",
+        "forgetting to divide by 4"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-69b8fd86",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The parabola y = x² + 4 and the line y = mx are tangent. What is the value of m²?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "16"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x² + 4 = mx ⇒ x² − mx + 4 = 0. Tangency: Δ = m² − 16 = 0 ⇒ m² = 16. Alternatively: at tangent point, slope 2a = m and a² + 4 = 2a² ⇒ a² = 4 ⇒ m = ±4, m² = 16.",
+      "distractors": {
+        "B": "Halving error – computes m² = 4·4/2 = 8.",
+        "C": "Missing factor – uses m² = 4 (the constant term).",
+        "D": "Arithmetic slip – computes 16 − 4 = 12 from a mis-set discriminant."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero for tangency between a line through the origin and a parabola.",
+      "trapTypes": [
+        "tangency condition setup",
+        "arithmetic in discriminant"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-8bf997df",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If x² + bx + b = 0 has a double root, and b ≠ 0, what is the value of b?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "−4"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = b² − 4b = b(b − 4) = 0. Since b ≠ 0, b = 4. Check: x² + 4x + 4 = (x + 2)² = 0. ✓",
+      "distractors": {
+        "B": "Square-root error – takes b = √4 = 2.",
+        "C": "Sign error – uses b = −4 from the − sign in Vieta's sum.",
+        "D": "Simplification error – gets b = 4 but writes b/b = 1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factor the discriminant condition and apply the constraint b ≠ 0.",
+      "trapTypes": [
+        "extraneous root b = 0",
+        "sign error in Vieta's"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-03e77916",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A farmer has 30 m of fencing to enclose a rectangular garden against a wall (3 sides). The area A satisfies −2w² + 30w − A = 0. What is the maximum value of A?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "225/2"
+      },
+      {
+        "letter": "B",
+        "text": "225"
+      },
+      {
+        "letter": "C",
+        "text": "112"
+      },
+      {
+        "letter": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 900 − 8A ≥ 0 ⇒ A ≤ 112.5 = 225/2. Maximum at w = 30/4 = 7.5: A = 30(7.5) − 2(56.25) = 112.5 = 225/2.",
+      "distractors": {
+        "B": "Missing factor – uses 900/4 = 225, forgetting the leading coefficient −2.",
+        "C": "Rounding error – approximates 225/2 = 112.5 as 112.",
+        "D": "Perimeter confusion – uses 30 (the fencing length) as the area."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Link discriminant non-negativity to geometric maximum area.",
+      "trapTypes": [
+        "forgetting leading coefficient in Δ",
+        "rounding fractions"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-ecbcfc47",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For how many integer values of k with −3 ≤ k ≤ 5 does x² + 4x + k = 0 have two distinct real solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "7"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 16 − 4k > 0 ⇒ k < 4. Integers in [−3, 5] with k < 4: {−3, −2, −1, 0, 1, 2, 3} = 7 values. k = 4 gives Δ = 0 (not distinct).",
+      "distractors": {
+        "B": "Only counts non-negative k: k ∈ {0, 1, 2, 3} = 4.",
+        "C": "Boundary error – includes k = 4 (Δ = 0), counting 8.",
+        "D": "Only counts positive k: k ∈ {1, 2, 3} = 3."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve the discriminant inequality and count integers in the intersection with the given range.",
+      "trapTypes": [
+        "boundary inclusion at Δ = 0",
+        "integer counting in intervals"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-7f172504",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If r and s are solutions of x² − 6x + 4 = 0, what is r² + s²?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "28"
+      },
+      {
+        "letter": "B",
+        "text": "32"
+      },
+      {
+        "letter": "C",
+        "text": "36"
+      },
+      {
+        "letter": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "r + s = 6, rs = 4. r² + s² = (r + s)² − 2rs = 36 − 8 = 28. Direct check: roots 3 ± √5, (3+√5)² + (3−√5)² = 14 + 14 = 28. ✓",
+      "distractors": {
+        "B": "Factor-of-2 error – computes (r+s)² − rs = 36 − 4 = 32.",
+        "C": "Reports (r + s)² = 36 instead of r² + s².",
+        "D": "Wrong identity – computes (r+s)² − 4rs = 20, which is actually (r−s)²."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply the identity r² + s² = (r+s)² − 2rs using Vieta's formulas.",
+      "trapTypes": [
+        "identity confusion: (r+s)² − 2rs vs (r−s)²",
+        "forgetting factor of 2"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-170ddb9e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equation (k − 2)x² + 4x + 1 = 0, with k ≠ 2, has equal roots. What is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "−2"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 16 − 4(k − 2) = 16 − 4k + 8 = 24 − 4k = 0 ⇒ k = 6. Check: 4x² + 4x + 1 = (2x + 1)² = 0. ✓",
+      "distractors": {
+        "B": "Excluded value trap – uses k = 2, which makes the equation linear.",
+        "C": "Sign error – computes 16 − 4(k + 2) = 0 ⇒ k = 2, then tries k = −2.",
+        "D": "Division shortcut – computes 16/4 = 4 and uses that as k."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero when the parameter is in the leading coefficient.",
+      "trapTypes": [
+        "excluded value trap",
+        "coefficient expansion error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-438207ab",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Two similar rectangles have dimensions x by (x+2) and (x+2) by (x+6). The proportion x/(x+2) = (x+2)/(x+6) yields a quadratic. What is the positive value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "1"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Cross-multiply: x(x+6) = (x+2)². x² + 6x = x² + 4x + 4 ⇒ 2x = 4 ⇒ x = 2. Verify: 2/4 = 4/8 = 1/2. ✓",
+      "distractors": {
+        "B": "Misidentification – uses x + 2 = 4 ⇒ x = 4.",
+        "C": "Guess – x = 1 gives 1/3 ≠ 3/7.",
+        "D": "Uses the larger dimension x = 6; 6/8 ≠ 8/12."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Cross-multiply a proportion from similar figures and solve.",
+      "trapTypes": [
+        "cross-multiplication errors",
+        "extraneous root rejection"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-c010ac9e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system y = x² − 3x and y = k has exactly one solution. What is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−9/4"
+      },
+      {
+        "letter": "B",
+        "text": "0"
+      },
+      {
+        "letter": "C",
+        "text": "9/4"
+      },
+      {
+        "letter": "D",
+        "text": "−3/2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x² − 3x = k ⇒ x² − 3x − k = 0. One solution: Δ = 9 + 4k = 0 ⇒ k = −9/4. Alternatively: vertex of y = (x − 3/2)² − 9/4 is at y = −9/4.",
+      "distractors": {
+        "B": "Oversight – k = 0 gives x(x − 3) = 0, two solutions.",
+        "C": "Sign error – uses k = 9/4 instead of −9/4.",
+        "D": "Coordinate confusion – uses −3/2 (the vertex x-coordinate) as k."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Identify that 'one solution' for y = k means the line passes through the vertex.",
+      "trapTypes": [
+        "vertex y-value vs x-value confusion",
+        "sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-82980db4",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Both roots of x² − 2kx + k² − 1 = 0 are positive. What is the range of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k > 1"
+      },
+      {
+        "letter": "B",
+        "text": "k > 0"
+      },
+      {
+        "letter": "C",
+        "text": "k > −1"
+      },
+      {
+        "letter": "D",
+        "text": "k ≥ 1"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Δ = 4k² − 4(k² − 1) = 4 > 0 always. Roots: k ± 1. Both positive: k − 1 > 0 AND k + 1 > 0 ⇒ k > 1. Vieta check: sum = 2k > 0, product = k² − 1 > 0 ⇒ k > 1 or k < −1; combined: k > 1.",
+      "distractors": {
+        "B": "Incomplete – only uses sum > 0, getting k > 0.",
+        "C": "Uses the weaker root condition k + 1 > 0, giving k > −1.",
+        "D": "Boundary error – includes k = 1, but then one root is 0 (not positive)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find roots explicitly and impose positivity on both.",
+      "trapTypes": [
+        "missing one constraint",
+        "boundary inclusion error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-ad471967",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For the equation x² − 8x + k = 0 to have two integer solutions, which of the following is NOT a valid value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8"
+      },
+      {
+        "letter": "B",
+        "text": "7"
+      },
+      {
+        "letter": "C",
+        "text": "15"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Integer pairs summing to 8: (1,7)→k=7, (2,6)→k=12, (3,5)→k=15, (4,4)→k=16, (0,8)→k=0, etc. For k = 8: Δ = 64 − 32 = 32, irrational roots. No integer pair has product 8 and sum 8. So k = 8 is NOT valid.",
+      "distractors": {
+        "B": "k = 7 IS valid: roots 1 and 7.",
+        "C": "k = 15 IS valid: roots 3 and 5.",
+        "D": "k = 12 IS valid: roots 2 and 6."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Enumerate integer pairs summing to 8 and check which products are achievable.",
+      "trapTypes": [
+        "assuming all nice numbers give integer roots",
+        "enumeration oversight"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-d928c5ee",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If x² + kx + 9 > 0 for all real values of x, which describes the values of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "−6 < k < 6"
+      },
+      {
+        "letter": "B",
+        "text": "k < −6 or k > 6"
+      },
+      {
+        "letter": "C",
+        "text": "k = ±6"
+      },
+      {
+        "letter": "D",
+        "text": "−6 ≤ k ≤ 6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "For x² + kx + 9 > 0 ∀x: a > 0 ✓ and Δ < 0. Δ = k² − 36 < 0 ⇒ |k| < 6 ⇒ −6 < k < 6. Completing the square: (x + k/2)² + 9 − k²/4 > 0 needs 9 − k²/4 > 0.",
+      "distractors": {
+        "B": "Inequality reversal – solves Δ > 0.",
+        "C": "Boundary confusion – Δ = 0 means the quadratic touches zero, violating strict >.",
+        "D": "Boundary error – uses ≤ instead of <; at k = ±6 the expression equals zero at the vertex."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "For a quadratic to be always positive, Δ must be strictly negative.",
+      "trapTypes": [
+        "strict vs non-strict inequality",
+        "inequality direction"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-d03d252e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If one root of 5x² − 3x + k = 0 is the reciprocal of the other, what is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "1/5"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "−5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Roots r and 1/r: product = 1. Vieta's product = k/5 = 1 ⇒ k = 5. Check: 5x² − 3x + 5 = 0, Δ = 9 − 100 < 0 (complex roots, but product = 1 ✓ algebraically).",
+      "distractors": {
+        "B": "Inversion error – uses k = 1/5, the reciprocal of a.",
+        "C": "Coefficient confusion – uses k = 3 (the |b| value).",
+        "D": "Sign error – gets k = −5."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Reciprocal roots ⇒ product = 1, then solve k/a = 1.",
+      "trapTypes": [
+        "product = c/a not c",
+        "sign confusion with reciprocals"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-3fa665d4",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = 3x + k is tangent to the circle x² + y² = 10. What are the possible values of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "±10"
+      },
+      {
+        "letter": "B",
+        "text": "±√10"
+      },
+      {
+        "letter": "C",
+        "text": "±√30"
+      },
+      {
+        "letter": "D",
+        "text": "±100"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Distance from origin to 3x − y + k = 0 is |k|/√10. Set = radius √10: |k|/√10 = √10 ⇒ |k| = 10. Substitution check: 10x² + 6kx + k² − 10 = 0, Δ = −4k² + 400 = 0 ⇒ k² = 100.",
+      "distractors": {
+        "B": "Radius confusion – uses k = ±√10, confusing k with the radius.",
+        "C": "Intermediate error – miscomputes distance to get k = ±√30.",
+        "D": "Squaring error – squares the answer, giving k = ±100."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Use point-to-line distance or discriminant for tangency to a circle.",
+      "trapTypes": [
+        "confusing k with radius",
+        "squaring vs square-root error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-82e825b8",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the minimum value of x² − 6x + 14?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "14"
+      },
+      {
+        "letter": "C",
+        "text": "−5"
+      },
+      {
+        "letter": "D",
+        "text": "0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x² − 6x + 14 = (x − 3)² + 5. Minimum is 5 at x = 3. Vertex formula: x = 3, y = 9 − 18 + 14 = 5.",
+      "distractors": {
+        "B": "No computation – uses the constant term 14 as the minimum.",
+        "C": "Sign error – gets (x − 3)² − 5 from a completing-the-square mistake.",
+        "D": "Assumes minimum is always 0."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Complete the square to identify the vertex value.",
+      "trapTypes": [
+        "constant term confusion",
+        "completing the square sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-0bc70b8c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The equations x² − 5x + 6 = 0 and x² − kx + 8 = 0 share exactly one common root. What is the value of k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "First equation: (x − 2)(x − 3) = 0, roots 2, 3. Test x = 2 in second: 4 − 2k + 8 = 0 ⇒ k = 6. Check: x² − 6x + 8 = (x−2)(x−4), roots 2, 4. Common root: 2 only ✓. Test x = 3: k = 17/3, not integer.",
+      "distractors": {
+        "B": "If x = 3 were common: k = 17/3 ≈ 5.67, and 9 is a rounding/miscomputation.",
+        "C": "Coefficient copy – uses k = 5 from the first equation's middle term.",
+        "D": "Guess – k = 4 doesn't satisfy either root substitution."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Factor the first equation, test each root in the second.",
+      "trapTypes": [
+        "testing only one root",
+        "non-integer trap"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-9efe5d29",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What positive value of k makes x² − 10x + k = 0 have exactly one real solution?",
+    "type": "SPR",
+    "correctAnswer": "25",
+    "acceptableAnswers": [
+      "25"
+    ],
+    "explanation": {
+      "correct": "Δ = 100 − 4k = 0 ⇒ k = 25. Check: (x − 5)² = 0. ✓"
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero and solve for k.",
+      "trapTypes": [
+        "forgetting to divide by 4",
+        "sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-c0789289",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the sum of the solutions of 4x² − 20x + 9 = 0?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5",
+      "5.0",
+      "20/4"
+    ],
+    "explanation": {
+      "correct": "Vieta's sum = −(−20)/4 = 5. Solving: x = (20 ± 16)/8, roots 9/2, 1/2. Sum = 5. ✓"
+    },
+    "metadata": {
+      "cognitiveMove": "Apply Vieta's sum formula instead of solving fully.",
+      "trapTypes": [
+        "solving fully instead of Vieta's",
+        "sign error on −b"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-66a89883",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the product of the solutions of 3x² + 7x − 6 = 0?",
+    "type": "SPR",
+    "correctAnswer": "-2",
+    "acceptableAnswers": [
+      "-2",
+      "-6/3"
+    ],
+    "explanation": {
+      "correct": "Vieta's product = c/a = −6/3 = −2. Factor: (3x − 2)(x + 3) = 0, roots 2/3 and −3. Product: (2/3)(−3) = −2. ✓"
+    },
+    "metadata": {
+      "cognitiveMove": "Apply Vieta's product formula c/a.",
+      "trapTypes": [
+        "sign error",
+        "forgetting to divide by a"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-4701d7f5",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many real solutions does 5x² − 4x + 1 = 0 have?",
+    "type": "SPR",
+    "correctAnswer": "0",
+    "acceptableAnswers": [
+      "0"
+    ],
+    "explanation": {
+      "correct": "Δ = 16 − 20 = −4 < 0. No real solutions."
+    },
+    "metadata": {
+      "cognitiveMove": "Compute the discriminant and check its sign.",
+      "trapTypes": [
+        "arithmetic error making Δ positive",
+        "confusing −4 with 4"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-823181e1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The expression 2x² + 12x + 23 can be written as 2(x + h)² + k. What is the value of k?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "2(x² + 6x) + 23 = 2(x + 3)² − 18 + 23 = 2(x + 3)² + 5. So k = 5. Vertex: x = −3, value = 2(9) − 36 + 23 = 5."
+    },
+    "metadata": {
+      "cognitiveMove": "Complete the square with a leading coefficient and track the constant.",
+      "trapTypes": [
+        "forgetting to multiply completion constant by 2",
+        "sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-3f91a9b1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = −x + k is tangent to the parabola y = x² + 1. What is the value of k?",
+    "type": "SPR",
+    "correctAnswer": "3/4",
+    "acceptableAnswers": [
+      "3/4",
+      "0.75",
+      ".75"
+    ],
+    "explanation": {
+      "correct": "x² + 1 = −x + k ⇒ x² + x + (1 − k) = 0. Tangent: Δ = 1 − 4(1 − k) = 4k − 3 = 0 ⇒ k = 3/4. Check via slope: y' = 2x = −1 ⇒ x = −1/2, y = 5/4; k = 5/4 − (−1)(−1/2) = 5/4 − 1/2 = 3/4. ✓"
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero for tangency.",
+      "trapTypes": [
+        "sign error in completing the square",
+        "confusing x with k"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-be106780",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does 9x² + kx + 4 = 0 have exactly one solution? Give the positive value of k.",
+    "type": "SPR",
+    "correctAnswer": "12",
+    "acceptableAnswers": [
+      "12"
+    ],
+    "explanation": {
+      "correct": "Δ = k² − 144 = 0 ⇒ k = ±12. Positive: k = 12. Check: (3x + 2)² = 9x² + 12x + 4. ✓"
+    },
+    "metadata": {
+      "cognitiveMove": "Compute discriminant of a non-monic quadratic.",
+      "trapTypes": [
+        "forgetting to multiply a·c by 4",
+        "incomplete ± analysis"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-a2531cc6",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If r and s are the solutions of 2x² − 10x + 3 = 0, what is 1/r + 1/s? Express as a fraction.",
+    "type": "SPR",
+    "correctAnswer": "10/3",
+    "acceptableAnswers": [
+      "10/3"
+    ],
+    "explanation": {
+      "correct": "1/r + 1/s = (r + s)/(rs) = (10/2)/(3/2) = 5/(3/2) = 10/3."
+    },
+    "metadata": {
+      "cognitiveMove": "Combine Vieta's sum and product to compute the sum of reciprocals.",
+      "trapTypes": [
+        "inverting the wrong quantity",
+        "division of fractions error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-1f21d532",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A right triangle has legs of length x and (x + 2). The area is 24. What is the length of the shorter leg?",
+    "type": "SPR",
+    "correctAnswer": "6",
+    "acceptableAnswers": [
+      "6"
+    ],
+    "explanation": {
+      "correct": "Area = x(x + 2)/2 = 24 ⇒ x² + 2x − 48 = 0 ⇒ (x + 8)(x − 6) = 0. Positive root: x = 6."
+    },
+    "metadata": {
+      "cognitiveMove": "Translate a geometric area condition into a quadratic and reject the negative root.",
+      "trapTypes": [
+        "forgetting to divide by 2 for triangle area",
+        "accepting negative root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-b3d6516a",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many distinct real solutions does x² + 6x + 9 = 0 have?",
+    "type": "SPR",
+    "correctAnswer": "1",
+    "acceptableAnswers": [
+      "1"
+    ],
+    "explanation": {
+      "correct": "x² + 6x + 9 = (x + 3)² = 0 ⇒ one repeated root x = −3. Δ = 36 − 36 = 0."
+    },
+    "metadata": {
+      "cognitiveMove": "Recognise a perfect-square trinomial.",
+      "trapTypes": [
+        "confusing 'repeated root' with 'two solutions'",
+        "miscounting"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-9f3b2c07",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "What is the largest integer value of k for which x² − 8x + (k + 1) = 0 has two distinct real solutions?",
+    "type": "SPR",
+    "correctAnswer": "14",
+    "acceptableAnswers": [
+      "14"
+    ],
+    "explanation": {
+      "correct": "Δ = 64 − 4(k + 1) > 0 ⇒ 60 − 4k > 0 ⇒ k < 15. Largest integer: k = 14. At k = 15, Δ = 0 (not distinct)."
+    },
+    "metadata": {
+      "cognitiveMove": "Solve the strict inequality and find the largest integer below the boundary.",
+      "trapTypes": [
+        "using ≤ instead of <",
+        "off-by-one error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  },
+  {
+    "id": "antigravity-hard-f5245965",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Nonlinear equations in one variable",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If r and s are the solutions of x² − 4x + 1 = 0, what is (r − s)²?",
+    "type": "SPR",
+    "correctAnswer": "12",
+    "acceptableAnswers": [
+      "12"
+    ],
+    "explanation": {
+      "correct": "(r − s)² = (r + s)² − 4rs = 16 − 4 = 12. Check: roots 2 ± √3, difference 2√3, squared = 12. ✓"
+    },
+    "metadata": {
+      "cognitiveMove": "Apply the identity (r − s)² = (r + s)² − 4rs.",
+      "trapTypes": [
+        "using −2rs instead of −4rs",
+        "confusing with r² + s²"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-nonlineq-discrim"
+    }
+  }
+]

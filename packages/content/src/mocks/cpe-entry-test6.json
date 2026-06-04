@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test6",
+  "title": "CPE Entry Test 6 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test6-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Black Holes Are Among Us</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Black holes are suddenly turning up (0) all over the place: vast (1) __________ in other galaxies, middle-sized ones in our own and maybe (2) __________ tiny ones on the Earth.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>A black hole is the essence of gravity, a place where space is stretched to the limit. Stray (3) __________ and you will be drawn irresistibly inwards. Even light (4) __________ escape from beyond the event horizon, (5) __________ time slows to a stop. Black holes may sound (6) __________ a crazy conjecture of theoretical physicists, but now we (7) __________ actually begun to find them.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Gigantic black holes, it seems, lurk in the centres of most galaxies. Some astronomers now (8) __________ that these massive holes created and shaped every galaxy in the universe. (9) __________ we ever manage to visit a black hole, it (10) __________ probably be one in our own galaxy - perhaps one of the middleweight holes believed (11) __________ power microquasars - ultraviolet objects discovered just a few years (12) __________. But we might not (13) __________ to go so far. Two physicists believe that microscopic black holes left (14) __________ the big bang might litter the universe, pretending to be ordinary atoms. Some of them (15) __________ even be hiding within you. So they mark the end of space and time, the beginning of galaxies, and your insides. The universe is full of holes.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test6-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test6-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "ONES",
+                  "ones"
+                ]
+              ],
+              "correctAnswer": "ONES",
+              "explanation": "Đáp án đề xuất: ONES. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "ONES",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "EVEN",
+                  "even"
+                ]
+              ],
+              "correctAnswer": "EVEN",
+              "explanation": "Đáp án đề xuất: EVEN. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "EVEN",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "TOO",
+                  "too"
+                ]
+              ],
+              "correctAnswer": "TOO",
+              "explanation": "Đáp án đề xuất: TOO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TOO",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "CANNOT",
+                  "cannot"
+                ]
+              ],
+              "correctAnswer": "CANNOT",
+              "explanation": "Đáp án đề xuất: CANNOT. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "CANNOT",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "WHERE",
+                  "where"
+                ]
+              ],
+              "correctAnswer": "WHERE",
+              "explanation": "Đáp án đề xuất: WHERE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WHERE",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "LIKE",
+                  "like"
+                ]
+              ],
+              "correctAnswer": "LIKE",
+              "explanation": "Đáp án đề xuất: LIKE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "LIKE",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "HAVE",
+                  "have"
+                ]
+              ],
+              "correctAnswer": "HAVE",
+              "explanation": "Đáp án đề xuất: HAVE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "HAVE",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "BELIEVE",
+                  "believe"
+                ]
+              ],
+              "correctAnswer": "BELIEVE",
+              "explanation": "Đáp án đề xuất: BELIEVE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "BELIEVE",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "IF",
+                  "if"
+                ]
+              ],
+              "correctAnswer": "IF",
+              "explanation": "Đáp án đề xuất: IF. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "IF",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "WILL",
+                  "will"
+                ]
+              ],
+              "correctAnswer": "WILL",
+              "explanation": "Đáp án đề xuất: WILL. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "WILL",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "TO",
+                  "to"
+                ]
+              ],
+              "correctAnswer": "TO",
+              "explanation": "Đáp án đề xuất: TO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "TO",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "AGO",
+                  "ago"
+                ]
+              ],
+              "correctAnswer": "AGO",
+              "explanation": "Đáp án đề xuất: AGO. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "AGO",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "HAVE",
+                  "have"
+                ]
+              ],
+              "correctAnswer": "HAVE",
+              "explanation": "Đáp án đề xuất: HAVE. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "HAVE",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "OVER",
+                  "over"
+                ]
+              ],
+              "correctAnswer": "OVER",
+              "explanation": "Đáp án đề xuất: OVER. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "OVER",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "MAY",
+                  "may"
+                ]
+              ],
+              "correctAnswer": "MAY",
+              "explanation": "Đáp án đề xuất: MAY. Từ này hoàn thiện cấu trúc ngữ pháp/cụm cố định trong câu. Khi tự học, hãy đặt lại vào chỗ trống và kiểm tra sự hòa hợp với phần trước/sau: thì, giới từ, liên từ, đại từ hoặc lượng từ.",
+              "answerLocation": "MAY",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test6-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Troubled Waters</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>CAPITAL LETTERS on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>exemple: [o)OT ANT oTETRToluTs] TTT TIT</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>There is a swift-moving, (0) danger ous. current in the Arctic Ocean which flows DANGER</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>back and forth between Moskenesoya and Masken, two of the Logoten Islands</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>off the north-western coast of Norway. It is this phenomenon which causes</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the Maelstrom, or Moskenstraumen in Norwegian, which has (16) ..........eeee DESTROY</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>CAL): aacccssncreeteeteonas small ships. NUMBER</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The Maelstrom is a whirlpool, a mass of water which spins round rapidly in</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Gi (18) oscirsscinscscsncdtivase motion and which is formed by rocks and tides that CIRCLE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>oppose the current. It is 5 miles (8 km) wide and alternates in flow between</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the open sea to the west and Vestfjorden to the east, its current</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>attaining a velocity of 7 miles (11 km) an hour as the tides change.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Strong local winds add to the hazard of a sea-crossing here, blowing against</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the current between high and low tide, which is when (19) .....:seeceeee TREACHERY</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>whirlpools are created. It was the French (20) ....sesereeeeee Jules Verne, NOVEL</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>in conjunction with the American poet Edgar Allan Poe, who brought the term</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>“maelstrom” into common parlance, exaggerating it to the (21) .....seseeaeee EXTEND</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>that it means a cataclysmic whirlpool (22) ......eeeeeee everything in its path. GULF</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>With the passage of time, it has come to have a meaning</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>thatt iS (23) ....ceccssreccecscereee as well as literal, so that now we can use the FIGURE</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(24) ivectaxeorsiasassrseras “maelstrom” to speak of conflicting feelings, or EXPRESS</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(25): scsspen sozecoiiiersens turmoil. EMOTION</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test6-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test6-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: DESTROY]:",
+              "acceptedAnswers": [
+                [
+                  "DESTROYED",
+                  "destroyed"
+                ]
+              ],
+              "correctAnswer": "DESTROYED",
+              "explanation": "Đáp án đề xuất: DESTROYED. Từ gốc 'DESTROY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "DESTROYED",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "DESTROY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: NUMBER]:",
+              "acceptedAnswers": [
+                [
+                  "INNUMERABLE",
+                  "innumerable"
+                ]
+              ],
+              "correctAnswer": "INNUMERABLE",
+              "explanation": "Đáp án đề xuất: INNUMERABLE. Từ gốc 'NUMBER' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "INNUMERABLE",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "NUMBER",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: CIRCLE]:",
+              "acceptedAnswers": [
+                [
+                  "CIRCULAR",
+                  "circular"
+                ]
+              ],
+              "correctAnswer": "CIRCULAR",
+              "explanation": "Đáp án đề xuất: CIRCULAR. Từ gốc 'CIRCLE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "CIRCULAR",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "CIRCLE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: TREACHERY]:",
+              "acceptedAnswers": [
+                [
+                  "TREACHEROUS",
+                  "treacherous"
+                ]
+              ],
+              "correctAnswer": "TREACHEROUS",
+              "explanation": "Đáp án đề xuất: TREACHEROUS. Từ gốc 'TREACHERY' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "TREACHEROUS",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "TREACHERY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: NOVEL]:",
+              "acceptedAnswers": [
+                [
+                  "NOVELIST",
+                  "novelist"
+                ]
+              ],
+              "correctAnswer": "NOVELIST",
+              "explanation": "Đáp án đề xuất: NOVELIST. Từ gốc 'NOVEL' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "NOVELIST",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "NOVEL",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: EXTEND]:",
+              "acceptedAnswers": [
+                [
+                  "EXTENT",
+                  "extent"
+                ]
+              ],
+              "correctAnswer": "EXTENT",
+              "explanation": "Đáp án đề xuất: EXTENT. Từ gốc 'EXTEND' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EXTENT",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "EXTEND",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: GULF]:",
+              "acceptedAnswers": [
+                [
+                  "ENGULFING",
+                  "engulfing"
+                ]
+              ],
+              "correctAnswer": "ENGULFING",
+              "explanation": "Đáp án đề xuất: ENGULFING. Từ gốc 'GULF' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "ENGULFING",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "GULF",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: FIGURE]:",
+              "acceptedAnswers": [
+                [
+                  "FIGURATIVE",
+                  "figurative"
+                ]
+              ],
+              "correctAnswer": "FIGURATIVE",
+              "explanation": "Đáp án đề xuất: FIGURATIVE. Từ gốc 'FIGURE' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "FIGURATIVE",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "FIGURE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: EXPRESS]:",
+              "acceptedAnswers": [
+                [
+                  "EXPRESSION",
+                  "expression"
+                ]
+              ],
+              "correctAnswer": "EXPRESSION",
+              "explanation": "Đáp án đề xuất: EXPRESSION. Từ gốc 'EXPRESS' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EXPRESSION",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "EXPRESS",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: EMOTION]:",
+              "acceptedAnswers": [
+                [
+                  "EMOTIONAL",
+                  "emotional"
+                ]
+              ],
+              "correctAnswer": "EMOTIONAL",
+              "explanation": "Đáp án đề xuất: EMOTIONAL. Từ gốc 'EMOTION' cần biến đổi để đúng từ loại và sắc thái nghĩa trong câu. Cách làm: xác định vị trí sau/trước danh từ, động từ hoặc tính từ, rồi kiểm tra hậu tố/tiền tố và dạng số ít-số nhiều.",
+              "answerLocation": "EMOTIONAL",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "EMOTION",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test6-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Island Homes Will Vanish</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>For questions 26-37, read the two texts below and decide which answer (A, B, C or D) best fits each gap.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Part 3</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>A recent report warning that four</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>hundred people on Papua New</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Guinea’s Takuu Island may have as</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>| little as five years before their tiny atoll</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>vanishes under water has sent shock</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>26 A_ waves</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>27. ~=~A_ signalled</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>28 A _ scale</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>29 A drowning</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>30 =A _ hold off</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>31 A. expedient</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(26) sisrsoernssene through the area. A</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>deadly combination of plate tectonics</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>and the global rise in sea-levels is being</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>blamed.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The report says that the island’s</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>vulnerability has been dramatically</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(27) sconassconniin by three massive</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>earthquakes measuring 8, 7.7 and 73.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>on the Richter (28) -sersssssss , centred</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>around Rabual, just 520 kilometres to</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the west. Experts are of the view that</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>the islands are (29) sesscsssssy a VIEW</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>based on individual experiences and</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>observations. Gardens are being</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>exposed to and affected by seawater.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Even the winds have changed and the</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>sand dunes are being swept away. The</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>most important objective now is to</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>seek land to relocate the residents of</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Takuu. Although some (30) sss</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>hope for a sea wall and land</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>reclamation programme, it is</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>admittedly nothing more than a mere</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(BD) ssesccerenees +</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>tides Cc streams D ripples</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>highlighted C_ pinpointed D undermined</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>measure C gauge DB degree</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>declining C_ ebbing Ds sinking</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>hold on C_ hold out D hold with</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>emergency C substitute D_ stopgap</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>32 A simply</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>33 A partisan</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>34 A focused</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>35 A _ integral</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>36 A dwindles</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>37 A comprised</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>n economics professor, trying to</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Az ‘monopoly’ to a first year</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>lass, could (32)</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>more illuminating example than professional</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>sports. The major leagues maintain</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>control over the supply of their</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>sports. The United States does have some</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>rules and regulations (34) at</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>preventing monopolistic control of industry,</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>non nn wn</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>(35)</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>agreement.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>but these might as well not exist where sports are |</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>concerned. Every league effectively operates as a |</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>cartel — a group of competitors joined together for |</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>economic benefit. The cartel |</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>arrangement gives participating teams the best of j</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>two worlds. It (36) ..</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>members, while still allowing them freedom of |</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>action in areas not (37) ...... by the cartel i</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>. competition among §</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>merely C utterly D hardly</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>protectionist C_ ingrained D exclusive</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>aimed C viewed D fixed</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>co-existing Cc mutual D communal</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>reduces C declines D fades</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>constituted C covered D_ complied</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Entry Test 6</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>&</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>47</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test6-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test6-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - waves. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "waves",
+              "category": "cpe_part_1",
+              "options": [
+                "A. waves",
+                "B. tides",
+                "C. streams",
+                "D. ripples"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - highlighted. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "highlighted",
+              "category": "cpe_part_1",
+              "options": [
+                "A. signalled",
+                "B. highlighted",
+                "C. pinpointed",
+                "D. undermined"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - scale. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "scale",
+              "category": "cpe_part_1",
+              "options": [
+                "A. scale",
+                "B. measure",
+                "C. gauge",
+                "D. degree"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - sinking. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "sinking",
+              "category": "cpe_part_1",
+              "options": [
+                "A. drowning",
+                "B. declining",
+                "C. ebbing",
+                "D. sinking"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - hold out. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "hold out",
+              "category": "cpe_part_1",
+              "options": [
+                "A. hold off",
+                "B. hold on",
+                "C. hold out",
+                "D. hold with"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - stopgap. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "stopgap",
+              "category": "cpe_part_1",
+              "options": [
+                "A. expedient",
+                "B. emergency",
+                "C. substitute",
+                "D. stopgap"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - hardly. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "hardly",
+              "category": "cpe_part_1",
+              "options": [
+                "A. simply",
+                "B. merely",
+                "C. utterly",
+                "D. hardly"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - exclusive. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "exclusive",
+              "category": "cpe_part_1",
+              "options": [
+                "A. partisan",
+                "B. protectionist",
+                "C. ingrained",
+                "D. exclusive"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - aimed. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "aimed",
+              "category": "cpe_part_1",
+              "options": [
+                "A. focused",
+                "B. aimed",
+                "C. viewed",
+                "D. fixed"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - mutual. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "mutual",
+              "category": "cpe_part_1",
+              "options": [
+                "A. integral",
+                "B. co-existing",
+                "C. mutual",
+                "D. communal"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - reduces. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "reduces",
+              "category": "cpe_part_1",
+              "options": [
+                "A. dwindles",
+                "B. reduces",
+                "C. declines",
+                "D. fades"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - covered. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "covered",
+              "category": "cpe_part_1",
+              "options": [
+                "A. comprised",
+                "B. constituted",
+                "C. covered",
+                "D. complied"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test6-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an extract from a book. Seven paragraphs have been removed from the extract. Choose from paragraphs A-H the one which fits each gap (38-44). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Non-Verbal Communication</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Sociological research points to the theory that certain ways of positioning or moving the body have a direct correlation with how one is perceived. People emit an aura of strength or power dependent on posture, gestures and eye movement. Quick, enthusiastic, meaningful movements and gestures suggest a dynamic, alert person. People who look at, and maintain eye contact with their audience while conversing with them exude confidence and fearlessness.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Being conscious of one's posture and gestures when sitting is also conducive to creating the right impression on the beholder. When one wishes to appear self-assured and knowledgeable in an important interpersonal situation where sitting is required, a high, straight-backed chair should be chosen when possible. Placing and clasping the hands behind the head, with elbows stretched to the sides, adds to the impression of comfortable assertiveness. It also keeps the hands under control and out of danger of unwanted fidgeting.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>The appropriate placing of the hands depends on the situation. When one is in an upright position, standing face to face with another person, the palms of the hands should not be evident. Hands open in a palm-revealing gesture can connote a begging or submissive attitude.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Research shows that people in business have adopted a standard routine. Many professionals assume a hand-to-chin position when seated and when engaged in discussion, they will sit erectly in their chair with one leg crossed casually over the other, seemingly calm and cool. The moment the discussion begins to take on a more serious note, the professional will uncross the legs, place both feet squarely on the floor and lean forward to indicate assertiveness and strength. It does not do, though, to be too defensive.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>Staring or glaring eyes flash “threat or warning” to both humans and animals. How often have we observed a dog with hackles raised, staring down an opponent? Just as beasts send signals of dominance in this fashion, so do humans. The eyes can communicate other emotions as well. Eyes that blink rapidly and shift from side to side give the illusion of nervousness or untrustworthiness.</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>In some situations, staring, as opposed to maintaining eye contact, can have a negative effect. In addition to being regarded as rude, staring at someone can indeed make them back down or surrender. Adversely, it could antagonise them into accepting the suggested challenge.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>This phenomenon proves to be even more evident when a person takes on the role of listener. In almost all social scenarios, people demonstrate a heightened sense of attentiveness when a perceived person of power speaks. Whether one is discussing a teacher in a classroom or a company president in the boardroom, all eyes seem to be riveted on the sage, advice-giving, more dominant speaker.</p>\n<p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p>\n<p class='mb-4 text-slate-800 text-base leading-relaxed'>It is said that we form impressions of people within the first thirty seconds of meeting them. Within this time period, the beholder is strongly influenced by a person’s stance, gestures and physical actions. When someone is aware of this, they are far more prepared to consciously use the tools of impression management to control the overall impression they make on those around them.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test6-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test6-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "Chọn đoạn F. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Somebody who is relaxed enough to stand before his audience without any visual signs of stress exudes self-assuredness and honesty. Even though these people are comfortable in their stance, they hold themselves erect and avoid looking round-shouldered or hunched over. Being lazy with one's posture could be indicative of defeat, while standing tall and proud paints a picture of one who is in charge.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "Chọn đoạn H. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "When sitting, many people make the mistake of folding their arms across their chests. This gives the impression of being closed off or inaccessible to the audience. By rights, the hands should be clasped loosely, with fingers interlaced, and placed in the lap. This gesture indicates an open, friendly attitude to the audience.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn đoạn D. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "There are times when one's hands seem to have a “mind of their own’. Unconsciously, one might tap their fingers on the arms of a chair, fidget with jewellery, or even crack one's knuckles. All of these actions are very clear signs of boredom, nervousness or inattentiveness.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn đoạn C. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Just as posture plays a role in impression management, so too do the eyes. The eyes can communicate a million words without the owner consciously knowing they are doing so. The eyes are the “mirror of the soul” and by moving them, or using them in certain ways, diverse messages can be relayed to an observer.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "Chọn đoạn G. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "It is said that many politicians are very aware of this impression that the eyes can make on an audience. Many insist that there be no movement in a television studio where they are being taped, for fear that their eyes may automatically flit to the sudden movement. Obviously, no politician wants to appear to be lying or feeling uncomfortable about what he is saying during a live taping of a political debate or speech.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn đoạn B. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "Just as staring can be offensive at times, looking at someone too frequently or for too long a duration can also suggest something negative; namely submissiveness. With regard to the higher primates and humans, both occupy themselves for longer periods of time observing their superiors as opposed to their inferiors.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn đoạn A. Đoạn này nối mạch ý giữa câu trước và câu sau chỗ trống. Khi tự học, hãy gạch chân đại từ quy chiếu, từ nối thời gian/nguyên nhân và sự tiếp nối sự kiện để kiểm chứng lựa chọn. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "In the instances where a speaker wishes to present and reinforce an impression of honesty and powerfulness on his audience, body language may speak more loudly and more effectively than the actual spoken words.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "In the instances where a speaker wishes to present and reinforce an impression of honesty and powerfulness on his audience, body language may speak more loudly and more effectively than the actual spoken words."
+            },
+            {
+              "label": "B",
+              "text": "Just as staring can be offensive at times, looking at someone too frequently or for too long a duration can also suggest something negative; namely submissiveness. With regard to the higher primates and humans, both occupy themselves for longer periods of time observing their superiors as opposed to their inferiors."
+            },
+            {
+              "label": "C",
+              "text": "Just as posture plays a role in impression management, so too do the eyes. The eyes can communicate a million words without the owner consciously knowing they are doing so. The eyes are the “mirror of the soul” and by moving them, or using them in certain ways, diverse messages can be relayed to an observer."
+            },
+            {
+              "label": "D",
+              "text": "There are times when one's hands seem to have a “mind of their own’. Unconsciously, one might tap their fingers on the arms of a chair, fidget with jewellery, or even crack one's knuckles. All of these actions are very clear signs of boredom, nervousness or inattentiveness."
+            },
+            {
+              "label": "E",
+              "text": "A flatterer is a person who controls his impression management in such a way that the message being sent is one of a likeable, friendly person. The flatterer’s aim is to be seen only in a positive light and will tell an audience exactly what they want to hear to create this aura."
+            },
+            {
+              "label": "F",
+              "text": "Somebody who is relaxed enough to stand before his audience without any visual signs of stress exudes self-assuredness and honesty. Even though these people are comfortable in their stance, they hold themselves erect and avoid looking round-shouldered or hunched over. Being lazy with one's posture could be indicative of defeat, while standing tall and proud paints a picture of one who is in charge."
+            },
+            {
+              "label": "G",
+              "text": "It is said that many politicians are very aware of this impression that the eyes can make on an audience. Many insist that there be no movement in a television studio where they are being taped, for fear that their eyes may automatically flit to the sudden movement. Obviously, no politician wants to appear to be lying or feeling uncomfortable about what he is saying during a live taping of a political debate or speech."
+            },
+            {
+              "label": "H",
+              "text": "When sitting, many people make the mistake of folding their arms across their chests. This gives the impression of being closed off or inaccessible to the audience. By rights, the hands should be clasped loosely, with fingers interlaced, and placed in the lap. This gesture indicates an open, friendly attitude to the audience."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test6-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an article on caffeine. For questions 45-50, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Have you noticed how many people are giving up coffee for the decaffeinated variety and how many others are opting for herbal drinks in preference to tea? Do they know something we don't\" Well, perhaps not. Coffee, tea and fizzy drinks like cola all contain caffeine, an alkaloid with toxic properties, although the caffeine content varies according to specific type of beverage and method of brewing. For example, a cup of espresso may contain up to 300 mg of caffeine, whereas a cup of ever-popular instant coffee contains not more than 75mg. Filter coffee may contain more caffeine than espresso, as the water is in contact with the coffee beans for longer. Tea generally has a rather lower caffeine content than instant coffee, at around 40-50 mg, although this also depends on how long the tea is brewed.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Cola drinks, on the other hand, contain roughly half the amount of caffeine for the equivalent volume of tea and about a third that of instant coffee, but are generally consumed by children who, because of their size, ingest as much caffeine from fizzy drinks as adults do from coffee.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>So what are the health risks associated with caffeine? In children, it inhibits the absorption of the essential growth nutrients calcium and iron, as well as exacerbating hyperactivity by making children restless, irritable and nervous. For adults, taking nutritional supplements with tea or coffee at breakfast is a waste of time, as the caffeine binds the nutrients in the gut, preventing absorption. Menopausal women and people taking steroids, who have an increased risk of osteoporosis, should keep their caffeine intake down to help maintain bone density and strength. Equally, those suffering from iron deficiency anaemia need to keep their caffeine intake to a minimum and should leave at least a couple of hours between an iron-rich meal and a cup of tea or coffee. Excess caffeine can speed up the heart rate, so those with a history of heart trouble should avoid caffeine altogether.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Apart from sheer force of habit - after all, we have tea and coffee breaks at work - a main reason for the over- consumption of these beverages is the stimulating effect it has on the brain. It targets brain receptors designed for adenosine, a natural sedative that instructs the body to slow down. Caffeine blocks this normal hormone reaction, tricking the body into staying in top gear. This is all very well from time to time, but relying on coffee to stay the course on a long-term basis undermines the organism’s natural ability</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>to feel energetic and to sleep when needed in order to replenish its store of nutrients, repair body tissues and heal itself. So it is better to avoid coffee or tea from the evening © onwards, unless you want a restless night of tossing and turning.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The above may have led you to consider cutting out caffeine, but this is easier said than done. Giving up tea o1 coffee may produce unpleasant side effects like lowered mood, headaches and drowsiness. In other words, caffeine is, like so many other substances that people are fond of, addictive. If you with to rid your system of caffeine, it is better to stop gradually so as to minimize the cold turkey symptoms. Eventually you will feel the benefit of the change and will feel a lot more energetic.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>After giving up tea and/or coffee, you will probably - wonder ruefully what to fill your tea cup or coffee mug with Will you be doomed to drink only chocolate? Well, there is, - as I mentioned earlier, the option of decaffeinated coffee or. tea, but the process of decaffeination has an adverse effect on the flavour. That may not be too much of a problem as a new taste can be acquired without too much difficulty. What is more worrying is that, in the case of coffee, the process of decaffeination involves the use of solvents such as methylene chloride and, although the beans are steamed to bring the level of residues below the legal limit, some residues still remain at the end of the process. Unless it is stated on the packaging that the contents have only been exposed to the » water method, as opposed to just “steamed”, which is misleading, you should assume that solvents will have been used.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Perhaps it is better to follow the old adage of moderation in all things. A little of what you fancy in the form of a cup of tea or coffee may do you good. And now, if you'll excuse me, I’m off to put the kettle on for a cuppa. Care to join me?</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test6-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test6-45",
+              "type": "multiple_choice",
+              "instruction": "Which of the following has the highest caffeine content, according to the writer?",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - filter coffee. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "filter coffee",
+              "category": "cpe_part_5",
+              "options": [
+                "A. tea",
+                "B. espresso coffee",
+                "C. filter coffee",
+                "D. soft drinks"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-46",
+              "type": "multiple_choice",
+              "instruction": "Why are cola drinks not advisable for children?",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - Because less caffeine is needed to give children the same effect. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "Because less caffeine is needed to give children the same effect",
+              "category": "cpe_part_5",
+              "options": [
+                "A. Because they contain as much caffeine as coffee",
+                "B. Because children are hyperactive",
+                "C. Because less caffeine is needed to give children the same effect",
+                "D. Because they contain half again as much caffeine as tea"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-47",
+              "type": "multiple_choice",
+              "instruction": "Which of the following should be avoided?",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - drinking a lot of tea or coffee if you have cardiac problems. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "drinking a lot of tea or coffee if you have cardiac problems",
+              "category": "cpe_part_5",
+              "options": [
+                "A. reducing caffeine intake if you have osteoporosis",
+                "B. combining vitamin supplements with tea or coffee",
+                "C. drinking a lot of tea or coffee if you have cardiac problems",
+                "D. taking steroids for osteoporosis"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-48",
+              "type": "multiple_choice",
+              "instruction": "Caffeine’s effect on the brain is",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - energising.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "energising.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. undermining.",
+                "B. sedating.",
+                "C. replenishing.",
+                "D. energising."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-49",
+              "type": "multiple_choice",
+              "instruction": "Because of the side effects of giving up caffeine, it is better to",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - lessen your caffeine intake bit by bit.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "lessen your caffeine intake bit by bit.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. eat cold turkey.",
+                "B. cut out caffeine in one go.",
+                "C. drink decaffeinated beverages.",
+                "D. lessen your caffeine intake bit by bit."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test6-50",
+              "type": "multiple_choice",
+              "instruction": "The main problem about decaffeination is that it",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - entails using solvents.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "entails using solvents.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. spoils the flavour.",
+                "B. means acquiring a new taste.",
+                "C. entails using solvents.",
+                "D. involves steaming the beans."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

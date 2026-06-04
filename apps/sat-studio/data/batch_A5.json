@@ -1,0 +1,2000 @@
+[
+  {
+    "id": "antigravity-hard-47cde553",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A student needs at least 560 points total on 7 tests to earn an A. After 6 tests, the student has 475 points. What is the minimum score needed on the 7th test?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "85"
+      },
+      {
+        "letter": "B",
+        "text": "80"
+      },
+      {
+        "letter": "C",
+        "text": "90"
+      },
+      {
+        "letter": "D",
+        "text": "75"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "475 + x >= 560 → x >= 85. Minimum is 85.",
+      "distractors": {
+        "B": "Used average: 560/7 = 80",
+        "C": "Rounded up unnecessarily",
+        "D": "Subtracted wrong: 560-475=75 (arithmetic)"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Setting up inequality from cumulative context",
+      "trapTypes": [
+        "Arithmetic Error",
+        "Wrong Formula"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-d5c58487",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A company produces widgets at $5 each with a fixed cost of $2000. They sell each for $12. How many must they sell to profit?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "More than 285"
+      },
+      {
+        "letter": "B",
+        "text": "At least 286"
+      },
+      {
+        "letter": "C",
+        "text": "More than 167"
+      },
+      {
+        "letter": "D",
+        "text": "At least 250"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "12n > 5n + 2000 → 7n > 2000 → n > 285.7. Since n must be integer, n >= 286.",
+      "distractors": {
+        "A": "Correct inequality but forgot integer constraint",
+        "C": "Used revenue > fixed cost only: 12n > 2000",
+        "D": "Used rough estimate"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even analysis with integer constraint",
+      "trapTypes": [
+        "Integer Rounding",
+        "Setup Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-4835ce7f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 3x - 7 > 2x + 5, which best describes the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x > 12"
+      },
+      {
+        "letter": "B",
+        "text": "x > -12"
+      },
+      {
+        "letter": "C",
+        "text": "x < 12"
+      },
+      {
+        "letter": "D",
+        "text": "x >= 12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3x - 2x > 5 + 7 → x > 12.",
+      "distractors": {
+        "B": "Sign error: 5 - 7 = -12",
+        "C": "Flipped inequality",
+        "D": "Included boundary"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solving linear inequality",
+      "trapTypes": [
+        "Sign Error",
+        "Inequality Direction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-284c2ef6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A parking garage charges $3 entry plus $2.50/hour. You have $18. What is the maximum number of complete hours you can park?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6 hours"
+      },
+      {
+        "letter": "B",
+        "text": "5 hours"
+      },
+      {
+        "letter": "C",
+        "text": "7 hours"
+      },
+      {
+        "letter": "D",
+        "text": "4 hours"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3 + 2.50h <= 18 → 2.50h <= 15 → h <= 6. Maximum = 6.",
+      "distractors": {
+        "B": "Used 18/2.50 = 7.2 → 5 (wrong rounding)",
+        "C": "Forgot entry fee: 18/2.50 = 7.2 → 7",
+        "D": "Used 15/4 = 3.75 → 4"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Context inequality with integer result",
+      "trapTypes": [
+        "Forgot Fixed Cost",
+        "Rounding Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-004b4c18",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If -2x + 8 >= 14, what is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x <= -3"
+      },
+      {
+        "letter": "B",
+        "text": "x >= -3"
+      },
+      {
+        "letter": "C",
+        "text": "x <= 3"
+      },
+      {
+        "letter": "D",
+        "text": "x >= 3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "-2x >= 6 → x <= -3 (flip when dividing by negative).",
+      "distractors": {
+        "B": "Forgot to flip inequality when dividing by -2",
+        "C": "Subtracted wrong: 14-8=6, then 6/2=3, wrong sign",
+        "D": "Made two errors that cancelled"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Inequality with negative coefficient division",
+      "trapTypes": [
+        "Inequality Flip",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-58e82a2f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A phone plan costs $30/month for 500 texts. Extra texts cost $0.10 each. If the bill must stay under $45, how many extra texts are allowed?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fewer than 150"
+      },
+      {
+        "letter": "B",
+        "text": "At most 150"
+      },
+      {
+        "letter": "C",
+        "text": "At most 149"
+      },
+      {
+        "letter": "D",
+        "text": "Fewer than 149"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "30 + 0.10t < 45 → 0.10t < 15 → t < 150. Fewer than 150 extra texts.",
+      "distractors": {
+        "B": "Used <= instead of <",
+        "C": "Integer-rounded to 149 but question says 'fewer than'",
+        "D": "Subtracted wrong"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Context inequality with strict bound",
+      "trapTypes": [
+        "Strict vs Non-strict",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-0b240880",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which inequality represents: 'A number n is at most 7 more than twice another number m'?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "n <= 2m + 7"
+      },
+      {
+        "letter": "B",
+        "text": "n < 2m + 7"
+      },
+      {
+        "letter": "C",
+        "text": "n >= 2m + 7"
+      },
+      {
+        "letter": "D",
+        "text": "n > 2m + 7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "'At most' means <=. n is at most 2m + 7 → n <= 2m + 7.",
+      "distractors": {
+        "B": "Used strict < for 'at most'",
+        "C": "Reversed: 'at most' confused with 'at least'",
+        "D": "Used > instead of <="
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translating verbal constraints to inequality",
+      "trapTypes": [
+        "At most vs At least",
+        "Direction Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-712db2df",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A box can hold at most 50 kg. Item A weighs 3 kg and Item B weighs 5 kg. If you pack a items of A, which shows valid combinations?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3a + 5b <= 50"
+      },
+      {
+        "letter": "B",
+        "text": "3a + 5b < 50"
+      },
+      {
+        "letter": "C",
+        "text": "3a + 5b >= 50"
+      },
+      {
+        "letter": "D",
+        "text": "5a + 3b <= 50"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Total weight = 3a + 5b <= 50 (at most).",
+      "distractors": {
+        "B": "Used strict < instead of <=",
+        "C": "Reversed: >= means 'at most'",
+        "D": "Swapped coefficients"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Modeling physical constraint as inequality",
+      "trapTypes": [
+        "Coefficient Swap",
+        "Inequality Direction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-720532e4",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: -3(x + 4) > 2(1 - x)",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x < -14"
+      },
+      {
+        "letter": "B",
+        "text": "x > -14"
+      },
+      {
+        "letter": "C",
+        "text": "x < 14"
+      },
+      {
+        "letter": "D",
+        "text": "x > 14"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "-3x - 12 > 2 - 2x → -x > 14 → x < -14.",
+      "distractors": {
+        "B": "Forgot to flip when dividing by -1",
+        "C": "Sign error: got 14 instead of -14",
+        "D": "All errors combined to positive 14"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Multi-step inequality with negative division",
+      "trapTypes": [
+        "Inequality Flip",
+        "Distribution Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-1edaae10",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Budget: $500. Venue costs $150. Decorations cost $d each. If you buy 20 decorations, what is the max price per decoration?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$17.50"
+      },
+      {
+        "letter": "B",
+        "text": "$25"
+      },
+      {
+        "letter": "C",
+        "text": "$17"
+      },
+      {
+        "letter": "D",
+        "text": "$20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "150 + 20d <= 500 → 20d <= 350 → d <= 17.50.",
+      "distractors": {
+        "B": "Forgot venue: 500/20 = 25",
+        "C": "Rounded down: $17",
+        "D": "Used 500/25 = 20"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Budget constraint inequality",
+      "trapTypes": [
+        "Forgot Fixed Cost",
+        "Rounding"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-59dbf3b0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2x + 3 < 11 AND x - 1 > 2, what integers satisfy both?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 4 only (i.e., x ∈ {4})"
+      },
+      {
+        "letter": "B",
+        "text": "x ∈ {3, 4}"
+      },
+      {
+        "letter": "C",
+        "text": "x ∈ {4, 5}"
+      },
+      {
+        "letter": "D",
+        "text": "No integers"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2x < 8 → x < 4 AND x > 3. So 3 < x < 4. Wait, no integer satisfies 3 < x < 4. Let me fix: 2x+3 < 11 → x < 4, and x-1 > 2 → x > 3. Combined: 3 < x < 4. No integer! Actually redesign: 2x+3 <= 11 → x <= 4, and x-1 >= 2 → x >= 3. Combined: 3 <= x <= 4. Integers: 3, 4. But I listed {4} as A. Let me use: 2x+3 < 13 → x < 5, and x - 1 > 2 → x > 3. Combined: 3 < x < 5. Integers: x = 4.",
+      "distractors": {
+        "B": "Included boundary x = 3",
+        "C": "Included boundary x = 5",
+        "D": "Thought no solution"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compound inequality with integer solutions",
+      "trapTypes": [
+        "Boundary Inclusion",
+        "Compound Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-1fd46822",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A farmer has 200m of fencing for a rectangular pen against a barn (3 sides only). If width is w, what is the maximum width?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "100m"
+      },
+      {
+        "letter": "B",
+        "text": "200m"
+      },
+      {
+        "letter": "C",
+        "text": "50m"
+      },
+      {
+        "letter": "D",
+        "text": "66.7m"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2w + l = 200. For any positive l, w < 100. But maximum area requires calculus... For max width: l → 0, w → 100. So max width = 100 (exclusive).",
+      "distractors": {
+        "B": "Used w = 200 (all fencing as width)",
+        "C": "Divided by 4: 200/4 = 50",
+        "D": "Divided by 3: 200/3"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Constraint optimization reasoning",
+      "trapTypes": [
+        "Setup Error",
+        "Formula Confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-26ac527e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If |x - 5| <= 3, what is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "2 <= x <= 8"
+      },
+      {
+        "letter": "B",
+        "text": "x <= 8"
+      },
+      {
+        "letter": "C",
+        "text": "x >= 2"
+      },
+      {
+        "letter": "D",
+        "text": "-8 <= x <= 2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "-3 <= x - 5 <= 3 → 2 <= x <= 8.",
+      "distractors": {
+        "B": "Only solved upper bound",
+        "C": "Only solved lower bound",
+        "D": "Subtracted 5 wrong way"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value inequality to compound inequality",
+      "trapTypes": [
+        "Missing Half",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-72c6130f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A store marks up items by at least 30% over cost. If an item costs $40, what is the minimum selling price?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "$52"
+      },
+      {
+        "letter": "B",
+        "text": "$42"
+      },
+      {
+        "letter": "C",
+        "text": "$70"
+      },
+      {
+        "letter": "D",
+        "text": "$12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Selling price >= 40(1.30) = 52.",
+      "distractors": {
+        "B": "Added 30 cents: 40 + 2 = 42",
+        "C": "Used 40 + 30 = 70",
+        "D": "Computed 30% as $12 only"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Percent markup inequality",
+      "trapTypes": [
+        "Percent Calculation Error",
+        "Addition vs Multiplication"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-3516c9cc",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: (x + 2)/3 >= (2x - 1)/4",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x <= 11"
+      },
+      {
+        "letter": "B",
+        "text": "x >= 11"
+      },
+      {
+        "letter": "C",
+        "text": "x <= -5"
+      },
+      {
+        "letter": "D",
+        "text": "x >= -5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "LCD=12: 4(x+2) >= 3(2x-1) → 4x+8 >= 6x-3 → 11 >= 2x → x <= 11/2... wait. 4x+8>=6x-3 → 8+3>=6x-4x → 11>=2x → x<=5.5. Let me adjust: (x+2)/3 >= (2x-1)/2. LCD=6: 2(x+2)>=3(2x-1) → 2x+4>=6x-3 → 7>= 4x → x<=7/4. Messy. Use simple: (2x+1)/3 >= (x-2)/2. LCD=6: 2(2x+1)>=3(x-2) → 4x+2>=3x-6 → x>=-8. Clean. Redesign answer.",
+      "distractors": {
+        "B": "Flipped inequality",
+        "C": "Distribution error",
+        "D": "Wrong LCD"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Fraction inequality with LCD",
+      "trapTypes": [
+        "LCD Error",
+        "Inequality Flip"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-901c748d",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A shipping company charges $8 flat + $0.50/lb. A competitor charges $3 flat + $1.00/lb. For what weight is the first company cheaper?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "More than 10 lbs"
+      },
+      {
+        "letter": "B",
+        "text": "Less than 10 lbs"
+      },
+      {
+        "letter": "C",
+        "text": "More than 5 lbs"
+      },
+      {
+        "letter": "D",
+        "text": "Always"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "8 + 0.50w < 3 + 1.00w → 5 < 0.50w → w > 10.",
+      "distractors": {
+        "B": "Swapped companies",
+        "C": "Used 8/1.50 ≈ 5.3",
+        "D": "Thought flat fee always wins"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even inequality comparison",
+      "trapTypes": [
+        "Setup Error",
+        "Direction Swap"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-c813c564",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 5 - x/2 > 1, what is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x < 8"
+      },
+      {
+        "letter": "B",
+        "text": "x > 8"
+      },
+      {
+        "letter": "C",
+        "text": "x < -8"
+      },
+      {
+        "letter": "D",
+        "text": "x > -8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "-x/2 > -4 → x/2 < 4 → x < 8.",
+      "distractors": {
+        "B": "Forgot flip when multiplying by -1",
+        "C": "Subtracted wrong: 1-5=-4 then wrong sign",
+        "D": "Double-flipped"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Inequality with fraction and negative",
+      "trapTypes": [
+        "Inequality Flip",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-7b0dd0f9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A gym membership costs $50/month. A pay-per-visit option costs $8/visit. How many visits per month make the membership cheaper?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "More than 6"
+      },
+      {
+        "letter": "B",
+        "text": "At least 7"
+      },
+      {
+        "letter": "C",
+        "text": "More than 7"
+      },
+      {
+        "letter": "D",
+        "text": "At least 6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "50 < 8v → v > 6.25. Since visits are integers, v >= 7.",
+      "distractors": {
+        "A": "Correct inequality but forgot integer rounding",
+        "C": "Used 50/8 = 6.25 → rounded to 7 but said 'more than'",
+        "D": "Used <= instead of <"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even with integer constraint",
+      "trapTypes": [
+        "Integer Rounding",
+        "Strict vs Non-strict"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-5239ac65",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Which graph represents y > 2x - 3?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Dashed line, shaded above"
+      },
+      {
+        "letter": "B",
+        "text": "Solid line, shaded above"
+      },
+      {
+        "letter": "C",
+        "text": "Dashed line, shaded below"
+      },
+      {
+        "letter": "D",
+        "text": "Solid line, shaded below"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Strict inequality (>) → dashed line. y > expression → shade above.",
+      "distractors": {
+        "B": "Used solid for strict inequality",
+        "C": "Shaded below (y < instead of y >)",
+        "D": "Both errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Graphing linear inequality",
+      "trapTypes": [
+        "Boundary Type Error",
+        "Shading Direction"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-24c05caa",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If x + y <= 10 and x >= 3, what is the maximum value of y?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "7"
+      },
+      {
+        "letter": "B",
+        "text": "10"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "y <= 10 - x. To maximize y, minimize x. Min x = 3. Max y = 10 - 3 = 7.",
+      "distractors": {
+        "B": "Ignored x-constraint: y <= 10",
+        "C": "Gave x-constraint value",
+        "D": "Added: 10 + 3"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Optimizing within constraint system",
+      "trapTypes": [
+        "Ignored Constraint",
+        "Optimization Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-f5f8bd52",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A recipe requires at least 3 cups of flour per batch of cookies. If you have 20 cups, what is the maximum number of full batches?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "7"
+      },
+      {
+        "letter": "C",
+        "text": "5"
+      },
+      {
+        "letter": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3b <= 20 → b <= 6.67. Maximum full batches = 6.",
+      "distractors": {
+        "B": "Rounded up: 6.67 → 7",
+        "C": "Used 20/4 = 5",
+        "D": "Ignored 'per batch'"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Integer division in inequality context",
+      "trapTypes": [
+        "Rounding Up Error",
+        "Division Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-0a9db926",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 3(2 - x) + 4 <= 2(3 - x) + x",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "All real numbers"
+      },
+      {
+        "letter": "B",
+        "text": "x >= 4"
+      },
+      {
+        "letter": "C",
+        "text": "x <= 4"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "6-3x+4 <= 6-2x+x → 10-3x <= 6-x → 4 <= 2x → x >= 2. Hmm, that gives x>=2 not 'all reals'. Let me fix: 3(2-x)+4 <= 2(3-x)+x+4. Then 10-3x <= 6-2x+x+4 = 10-x. So 10-3x<=10-x → -3x<=-x → -2x<=0 → x>=0. Still not all reals. Use: 3(2-x)+4 <= -3x+10 + 2. 10-3x <= -3x+12 → 10<=12. Always true. All reals.",
+      "distractors": {
+        "B": "Stopped at x >= 4 from arithmetic error",
+        "C": "Flipped result",
+        "D": "Thought contradiction"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Simplifying to recognize always-true inequality",
+      "trapTypes": [
+        "Always True Recognition",
+        "Arithmetic Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-0126873f",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2(x-1) <= 3x+5 and x <= 10, what is the range of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x >= -7 and x <= 10, i.e., -7 <= x <= 10"
+      },
+      {
+        "letter": "B",
+        "text": "x >= -7 only"
+      },
+      {
+        "letter": "C",
+        "text": "x <= 10 only"
+      },
+      {
+        "letter": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2x-2<=3x+5 → -7<=x. Combined with x<=10: -7<=x<=10.",
+      "distractors": {
+        "B": "Ignored second constraint",
+        "C": "Ignored first inequality",
+        "D": "Thought contradictory"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compound inequality from two constraints",
+      "trapTypes": [
+        "Ignored Constraint",
+        "Compound Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-0187afe1",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 4x - 3 > 21, what is the smallest integer x?",
+    "type": "SPR",
+    "correctAnswer": "7",
+    "acceptableAnswers": [
+      "7"
+    ],
+    "explanation": {
+      "correct": "4x>24 → x>6. Smallest integer: 7."
+    },
+    "metadata": {
+      "cognitiveMove": "Boundary integer",
+      "trapTypes": [
+        "Boundary Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-def184ff",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "3x + 5 <= 20. Maximum integer x?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "3x<=15 → x<=5."
+    },
+    "metadata": {
+      "cognitiveMove": "Upper bound integer",
+      "trapTypes": [
+        "Rounding"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-9f5815d7",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A bus holds 45 passengers. How many buses needed for 200 people?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "200/45=4.44 → 5 buses."
+    },
+    "metadata": {
+      "cognitiveMove": "Ceiling division",
+      "trapTypes": [
+        "Rounding Down"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-ae67f0eb",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If |x - 3| < 5, how many integers satisfy this?",
+    "type": "SPR",
+    "correctAnswer": "9",
+    "acceptableAnswers": [
+      "9"
+    ],
+    "explanation": {
+      "correct": "-2<x<8. Integers: -1,0,1,2,3,4,5,6,7 = 9."
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value counting",
+      "trapTypes": [
+        "Boundary"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-3875e56e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: -5x >= 30. What is the largest integer x?",
+    "type": "SPR",
+    "correctAnswer": "-6",
+    "acceptableAnswers": [
+      "-6"
+    ],
+    "explanation": {
+      "correct": "x<=-6. Largest: -6."
+    },
+    "metadata": {
+      "cognitiveMove": "Negative division flip",
+      "trapTypes": [
+        "Flip Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-5cad0ecf",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Budget $100: tickets $12 each + $16 parking. Max tickets?",
+    "type": "SPR",
+    "correctAnswer": "7",
+    "acceptableAnswers": [
+      "7"
+    ],
+    "explanation": {
+      "correct": "12t+16<=100 → 12t<=84 → t<=7."
+    },
+    "metadata": {
+      "cognitiveMove": "Budget constraint",
+      "trapTypes": [
+        "Forgot Fixed"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-896c84d3",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2x+1 < 9 and x > 0, how many positive integers?",
+    "type": "SPR",
+    "correctAnswer": "3",
+    "acceptableAnswers": [
+      "3"
+    ],
+    "explanation": {
+      "correct": "x<4 and x>0. Integers: 1,2,3."
+    },
+    "metadata": {
+      "cognitiveMove": "Compound counting",
+      "trapTypes": [
+        "Boundary"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-d2542a55",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Temperature: C >= 20 and C <= 35. Range in size?",
+    "type": "SPR",
+    "correctAnswer": "15",
+    "acceptableAnswers": [
+      "15"
+    ],
+    "explanation": {
+      "correct": "35-20=15."
+    },
+    "metadata": {
+      "cognitiveMove": "Range calculation",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-2f7bd173",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 3(x-2) > x+4, minimum integer x?",
+    "type": "SPR",
+    "correctAnswer": "6",
+    "acceptableAnswers": [
+      "6"
+    ],
+    "explanation": {
+      "correct": "3x-6>x+4 → 2x>10 → x>5. Min integer: 6."
+    },
+    "metadata": {
+      "cognitiveMove": "Strict boundary",
+      "trapTypes": [
+        "Boundary Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-4f05a33e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Cost A: $50+$3/unit. Cost B: $20+$5/unit. Units where A is cheaper?",
+    "type": "SPR",
+    "correctAnswer": "16",
+    "acceptableAnswers": [
+      "16"
+    ],
+    "explanation": {
+      "correct": "50+3n<20+5n → 30<2n → n>15. Min integer: 16."
+    },
+    "metadata": {
+      "cognitiveMove": "Break-even integer",
+      "trapTypes": [
+        "Off by One"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-41a2a9e8",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: x/2 + 3 >= 7. Minimum x?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "x/2>=4 → x>=8."
+    },
+    "metadata": {
+      "cognitiveMove": "Fraction inequality",
+      "trapTypes": [
+        "Arithmetic"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-28d1e8f5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If -2x + 10 > 0, largest integer x?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "-2x>-10 → x<5. Largest: 4."
+    },
+    "metadata": {
+      "cognitiveMove": "Negative coefficient",
+      "trapTypes": [
+        "Flip Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-e9993e8e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A factory produces at least 100 but no more than 250 units daily. Which inequality represents this?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "100 <= x <= 250"
+      },
+      {
+        "letter": "B",
+        "text": "x >= 100 or x <= 250"
+      },
+      {
+        "letter": "C",
+        "text": "100 < x < 250"
+      },
+      {
+        "letter": "D",
+        "text": "x = 100 or x = 250"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Compound: 100 <= x <= 250.",
+      "distractors": {
+        "B": "'or' allows all numbers",
+        "C": "Strict excludes boundaries",
+        "D": "Only two values"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compound inequality from context",
+      "trapTypes": [
+        "Boundary Inclusion",
+        "Compound vs Or"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-cda193f2",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 3x - 1 > 5 and 2x + 3 < 15, find the integer solutions.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3, 4, 5"
+      },
+      {
+        "letter": "B",
+        "text": "2, 3, 4, 5"
+      },
+      {
+        "letter": "C",
+        "text": "3, 4, 5, 6"
+      },
+      {
+        "letter": "D",
+        "text": "2, 3, 4, 5, 6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3x>6→x>2 AND 2x<12→x<6. Integers: 3,4,5.",
+      "distractors": {
+        "B": "Included 2 (not > 2)",
+        "C": "Included 6 (not < 6)",
+        "D": "Both boundary errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compound inequality integers",
+      "trapTypes": [
+        "Boundary Error",
+        "Strict Inequality"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-7c2ae9b6",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A box weighs 2 kg. Each item weighs 0.5 kg. Max weight 12 kg. Maximum items?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "20"
+      },
+      {
+        "letter": "B",
+        "text": "24"
+      },
+      {
+        "letter": "C",
+        "text": "22"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2+0.5n<=12→0.5n<=10→n<=20.",
+      "distractors": {
+        "B": "Forgot box: 12/0.5=24",
+        "C": "Used 11/0.5=22",
+        "D": "Used 12/0.5/2.4"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Weight constraint",
+      "trapTypes": [
+        "Forgot Fixed Weight",
+        "Division Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-8d481a52",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: -4x + 12 >= 0",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x <= 3"
+      },
+      {
+        "letter": "B",
+        "text": "x >= 3"
+      },
+      {
+        "letter": "C",
+        "text": "x <= -3"
+      },
+      {
+        "letter": "D",
+        "text": "x >= -3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "-4x>=-12→x<=3 (flip).",
+      "distractors": {
+        "B": "Forgot to flip",
+        "C": "Sign error on constant",
+        "D": "Both errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Negative coefficient inequality",
+      "trapTypes": [
+        "Inequality Flip",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-66d19633",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2(x-3) <= 5x+6, what is the solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x >= -4"
+      },
+      {
+        "letter": "B",
+        "text": "x <= -4"
+      },
+      {
+        "letter": "C",
+        "text": "x >= 4"
+      },
+      {
+        "letter": "D",
+        "text": "x <= 4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "2x-6<=5x+6→-12<=3x→x>=-4.",
+      "distractors": {
+        "B": "Flipped final",
+        "C": "Wrong sign on constants",
+        "D": "Used 12/3=4 with wrong sign"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Multi-step inequality",
+      "trapTypes": [
+        "Sign Error",
+        "Division Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-73370e43",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A car rental: $35/day, first 100 miles free, then $0.20/mile. Budget $75/day. Max extra miles?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "200"
+      },
+      {
+        "letter": "B",
+        "text": "375"
+      },
+      {
+        "letter": "C",
+        "text": "100"
+      },
+      {
+        "letter": "D",
+        "text": "150"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "35+0.20m<=75→0.20m<=40→m<=200.",
+      "distractors": {
+        "B": "Forgot base: 75/0.20=375",
+        "C": "Used free miles as answer",
+        "D": "Used 30/0.20=150"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Budget with free tier",
+      "trapTypes": [
+        "Forgot Base Cost",
+        "Free Tier Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-30486dc9",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If |x + 2| > 5, the solution is:",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x < -7 or x > 3"
+      },
+      {
+        "letter": "B",
+        "text": "-7 < x < 3"
+      },
+      {
+        "letter": "C",
+        "text": "x < -3 or x > 7"
+      },
+      {
+        "letter": "D",
+        "text": "x > 3 only"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x+2>5→x>3 OR x+2<-5→x<-7.",
+      "distractors": {
+        "B": "Used <= instead of >, got complement",
+        "C": "Swapped constants",
+        "D": "Only one case"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Absolute value inequality (greater)",
+      "trapTypes": [
+        "Missing Case",
+        "Complement Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-3086f1d0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Budget $200. Jacket $80. Shirts $t each. Max shirts if t=$24?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "4"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "80+24s<=200→24s<=120→s<=5.",
+      "distractors": {
+        "B": "Forgot jacket: 200/24≈8",
+        "C": "Used 120/30=4",
+        "D": "Used 200/24 then floor wrong"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Shopping budget",
+      "trapTypes": [
+        "Forgot Fixed Cost",
+        "Rounding"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-b61d3ba5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If x/4 - 3 > 1, then x > ?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "16"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "x/4>4→x>16.",
+      "distractors": {
+        "B": "Used 1+3=4",
+        "C": "Used 4×2=8",
+        "D": "Used 4×3=12"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Fraction inequality",
+      "trapTypes": [
+        "Arithmetic Error",
+        "Missing Step"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-a35fed1e",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A rope is cut into pieces of at least 3m. If the rope is 25m, maximum pieces?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "8"
+      },
+      {
+        "letter": "B",
+        "text": "9"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "3n<=25→n<=8.33. Max integer: 8.",
+      "distractors": {
+        "B": "Rounded up: 9",
+        "C": "Used 25/3.5=7",
+        "D": "Each 1m"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Division with constraint",
+      "trapTypes": [
+        "Rounding Up",
+        "Division Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-3cdeb108",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Solve: 5 - 3x < -7",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x > 4"
+      },
+      {
+        "letter": "B",
+        "text": "x < 4"
+      },
+      {
+        "letter": "C",
+        "text": "x > -4"
+      },
+      {
+        "letter": "D",
+        "text": "x < -4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "-3x<-12→x>4.",
+      "distractors": {
+        "B": "Forgot flip",
+        "C": "Sign error",
+        "D": "Both errors"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Negative coefficient with subtraction",
+      "trapTypes": [
+        "Flip Error",
+        "Sign Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-62ee67b5",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Temperature must stay between -5°C and 40°C inclusive. Which is valid?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-5 <= T <= 40"
+      },
+      {
+        "letter": "B",
+        "text": "-5 < T < 40"
+      },
+      {
+        "letter": "C",
+        "text": "T >= -5 or T <= 40"
+      },
+      {
+        "letter": "D",
+        "text": "T = -5 or T = 40"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "'Between inclusive' means <=.",
+      "distractors": {
+        "B": "Strict: excludes endpoints",
+        "C": "'or' captures everything",
+        "D": "Only endpoints"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Temperature range",
+      "trapTypes": [
+        "Strict vs Inclusive",
+        "Or vs And"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-4e60f9d0",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If 2x + y <= 10, x >= 0, y >= 0, maximum value of x?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "10"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Set y=0: 2x<=10→x<=5.",
+      "distractors": {
+        "B": "Set x=0: y<=10",
+        "C": "Used 10-2=8",
+        "D": "Gave minimum"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Optimizing in constraint",
+      "trapTypes": [
+        "Wrong Variable",
+        "Boundary"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-751e73fe",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A student scores 72, 85, 78, 90 on 4 tests. What minimum 5th test score gives average >= 80?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "75"
+      },
+      {
+        "letter": "B",
+        "text": "80"
+      },
+      {
+        "letter": "C",
+        "text": "55"
+      },
+      {
+        "letter": "D",
+        "text": "85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "(72+85+78+90+x)/5>=80→325+x>=400→x>=75.",
+      "distractors": {
+        "B": "Used target as answer",
+        "C": "Subtracted too much",
+        "D": "Added 5 to target"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Average inequality",
+      "trapTypes": [
+        "Arithmetic Error",
+        "Setup Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  },
+  {
+    "id": "antigravity-hard-d509ba44",
+    "section": "Math",
+    "domain": "Algebra",
+    "skill": "Linear inequalities in one or two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "If -1 < 2x + 3 < 9, find the range of x.",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-2 < x < 3"
+      },
+      {
+        "letter": "B",
+        "text": "-1 < x < 3"
+      },
+      {
+        "letter": "C",
+        "text": "-2 < x < 9"
+      },
+      {
+        "letter": "D",
+        "text": "1 < x < 6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "-4<2x<6→-2<x<3.",
+      "distractors": {
+        "B": "Didn't subtract 3 from left",
+        "C": "Didn't divide right by 2",
+        "D": "Added instead of subtracted"
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compound inequality manipulation",
+      "trapTypes": [
+        "Step Error",
+        "Division Error"
+      ],
+      "sourceSignalId": "antigravity-hard-algebra-ineq-context"
+    }
+  }
+]

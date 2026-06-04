@@ -1,0 +1,1126 @@
+{
+  "id": "cpe-entry-test7",
+  "title": "CPE Entry Test 7 (Diagnostic)",
+  "type": "academic",
+  "skill": "reading",
+  "source": "CPE Entry Tests 1, Virginia Evans, Express Publishing",
+  "sections": [
+    {
+      "id": "cpe-entry-test7-sec-1",
+      "title": "Part 1 - Open cloze",
+      "instructions": "For questions 1-15, read the text below and think of the word which best fits each space. Use only one word in each space.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>School's out for Summer</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>Organised excursions are one of the ways that summer school programmes create a relaxed and fun atmosphere for their students, (0) but escape from the classroom for a day is not an excuse to stop learning.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>As well as (1) __________ a great way to see Britain and to learn more about British life and culture, excursions can have a valuable role to (2) __________ in language learning as they give learners the opportunity to put (3) __________ practice what they have learnt in the classroom.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Excursions can (4) __________ from visits to famous towns and cities to the thousands of sites of historical interest around the country. Museums, art galleries and theme parks are other options. (5) __________, it is the responsibility of the school to ensure that learners are properly prepared for their trips (6) __________ in the classroom. Teachers should introduce the excursion as a discussion topic, provide background information (7) __________ the place of interest or instruct students to carry (8) __________ their own research. New vocabulary and key words can be explained and learners can prepare questions to ask (9) __________ they get to their destination. Once (10) __________ the classroom, many learners find it easier to relax and, as a result, become more articulate. They are helped by the (11) __________ that at most tourist attractions there are staff who are used to talking to learners and will make the effort to understand their English. (12) __________ returning to the classroom, teachers can set (13) __________ a variety of extension exercises such as giving a mini-presentation (14) __________ an aspect of the trip or making a poster or an information leaflet to advertise the place (15) __________.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test7-rg-1",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test7-1",
+              "type": "gap_fill",
+              "instruction": "Gap (1):",
+              "acceptedAnswers": [
+                [
+                  "BEING",
+                  "being"
+                ]
+              ],
+              "correctAnswer": "BEING",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Cụm từ cần điền đứng sau liên từ ghép 'As well as'. Theo quy tắc ngữ pháp, sau 'as well as' động từ phải ở dạng V-ing.\n2. **Xác định nghĩa cần diễn đạt:** Ý câu muốn nói 'Bên cạnh việc là một cách tuyệt vời để tham quan nước Anh...'\n3. **Lựa chọn từ phù hợp:** Động từ liên kết 'be' chuyển thành dạng V-ing là **BEING**.\n4. **Kiểm tra độ hòa hợp:** 'As well as being a great way to see Britain...' hoàn toàn tự nhiên và đúng ngữ pháp.",
+              "answerLocation": "BEING",
+              "category": "cpe_part_2",
+              "blankIndex": 1,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-2",
+              "type": "gap_fill",
+              "instruction": "Gap (2):",
+              "acceptedAnswers": [
+                [
+                  "PLAY",
+                  "play"
+                ]
+              ],
+              "correctAnswer": "PLAY",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Phía trước có danh từ 'role' và giới từ 'to', phía sau có giới từ 'in'.\n2. **Nhận diện cụm từ cố định (Collocation):** Ta có cấu trúc cực kỳ phổ biến: 'to play a role in something' (đóng vai trò trong việc gì).\n3. **Lựa chọn từ phù hợp:** Động từ đi với 'role' ở dạng nguyên mẫu có 'to' là **PLAY**.\n4. **Kiểm tra độ hòa hợp:** 'excursions can have a valuable role to play in language learning' (dã ngoại có một vai trò giá trị cần thể hiện trong việc học ngôn ngữ).",
+              "answerLocation": "PLAY",
+              "category": "cpe_part_2",
+              "blankIndex": 2,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-3",
+              "type": "gap_fill",
+              "instruction": "Gap (3):",
+              "acceptedAnswers": [
+                [
+                  "INTO",
+                  "into"
+                ]
+              ],
+              "correctAnswer": "INTO",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Cấu trúc chứa động từ 'put' đứng trước khoảng trống, và danh từ 'practice' đứng ngay sau khoảng trống.\n2. **Nhận diện cụm từ cố định (Collocation):** Ta có cụm 'put something into practice' (đưa cái gì vào thực tiễn). Ở đây, cụm tân ngữ 'what they have learnt' đã được đảo ra sau, tạo thành cấu trúc đảo nhẹ: 'put into practice what...'.\n3. **Lựa chọn từ phù hợp:** Giới từ đi với 'put... practice' là **INTO**.\n4. **Kiểm tra độ hòa hợp:** 'opportunity to put into practice what they have learnt' (cơ hội để đưa vào thực hành những gì họ đã học).",
+              "answerLocation": "INTO",
+              "category": "cpe_part_2",
+              "blankIndex": 3,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-4",
+              "type": "gap_fill",
+              "instruction": "Gap (4):",
+              "acceptedAnswers": [
+                [
+                  "RANGE",
+                  "range"
+                ]
+              ],
+              "correctAnswer": "RANGE",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Khoảng trống đứng sau động từ khuyết thiếu 'can' và đứng trước giới từ 'from'.\n2. **Nhận diện cấu trúc ngữ pháp:** Đi kèm với 'from ... to ...' để chỉ sự đa dạng trong phạm vi, ta sử dụng động từ 'range' hoặc 'vary'.\n3. **Lựa chọn từ phù hợp:** Động từ nguyên mẫu phù hợp nhất ở đây là **RANGE** (hoặc **VARY**). Ở đây đáp án chuẩn là **RANGE**.\n4. **Kiểm tra độ hòa hợp:** 'Excursions can range from visits to famous towns... to the thousands of sites...' (Các chuyến dã ngoại có thể trải dài từ việc tham quan các thị trấn nổi tiếng... cho đến hàng ngàn địa điểm...).",
+              "answerLocation": "RANGE",
+              "category": "cpe_part_2",
+              "blankIndex": 4,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-5",
+              "type": "gap_fill",
+              "instruction": "Gap (5):",
+              "acceptedAnswers": [
+                [
+                  "HOWEVER",
+                  "however"
+                ]
+              ],
+              "correctAnswer": "HOWEVER",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Khoảng trống đứng ở đầu câu mới và ngay sau đó có dấu phẩy (,).\n2. **Xác định mối quan hệ ngữ nghĩa:** Câu trước nói về sự đa dạng và thú vị của dã ngoại. Câu sau nhấn mạnh nghĩa vụ và trách nhiệm chuẩn bị của nhà trường. Đây là mối quan hệ tương phản, nhượng bộ.\n3. **Lựa chọn từ phù hợp:** Trạng từ liên kết chỉ sự tương phản đứng đầu câu có dấu phẩy đi kèm thích hợp nhất là **HOWEVER**.\n4. **Kiểm tra độ hòa hợp:** 'However, it is the responsibility of the school...' (Tuy nhiên, trách nhiệm của nhà trường là phải đảm bảo...).",
+              "answerLocation": "HOWEVER",
+              "category": "cpe_part_2",
+              "blankIndex": 5,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-6",
+              "type": "gap_fill",
+              "instruction": "Gap (6):",
+              "acceptedAnswers": [
+                [
+                  "BEFOREHAND",
+                  "beforehand"
+                ]
+              ],
+              "correctAnswer": "BEFOREHAND",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Khoảng trống đứng ở cuối mệnh đề phụ 'ensure that learners are properly prepared for their trips (6) __________'.\n2. **Xác định thời điểm hành động:** Để chuyến đi thành công, học sinh cần được chuẩn bị 'trước', 'ngay tại lớp học'.\n3. **Lựa chọn từ phù hợp:** Trạng từ chỉ thời gian 'trước đó/trước mắt' là **BEFOREHAND** (hoặc cụm 'in advance' nhưng ở đây chỉ được điền 1 từ nên **BEFOREHAND** hoặc **FIRST** là hoàn hảo).\n4. **Kiểm tra độ hòa hợp:** 'prepared for their trips beforehand in the classroom' (được chuẩn bị sẵn sàng cho chuyến đi từ trước ngay tại lớp học).",
+              "answerLocation": "BEFOREHAND",
+              "category": "cpe_part_2",
+              "blankIndex": 6,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-7",
+              "type": "gap_fill",
+              "instruction": "Gap (7):",
+              "acceptedAnswers": [
+                [
+                  "ABOUT",
+                  "about"
+                ]
+              ],
+              "correctAnswer": "ABOUT",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Đứng sau cụm danh từ 'background information' (thông tin nền) và đứng trước danh từ chỉ nơi chốn 'the place of interest'.\n2. **Nhận diện giới từ đi kèm:** Để chỉ thông tin liên quan đến chủ đề gì, giới từ phổ biến nhất đi sau 'information' là 'about' hoặc 'on'.\n3. **Lựa chọn từ phù hợp:** Giới từ **ABOUT** hoặc **ON** đều chính xác. Đáp án tiêu chuẩn là **ABOUT**.\n4. **Kiểm tra độ hòa hợp:** 'provide background information about the place of interest' (cung cấp thông tin nền về địa điểm tham quan).",
+              "answerLocation": "ABOUT",
+              "category": "cpe_part_2",
+              "blankIndex": 7,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-8",
+              "type": "gap_fill",
+              "instruction": "Gap (8):",
+              "acceptedAnswers": [
+                [
+                  "OUT",
+                  "out"
+                ]
+              ],
+              "correctAnswer": "OUT",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Khoảng trống đứng sau động từ 'carry' và đứng trước tính từ sở hữu 'their own research'.\n2. **Nhận diện cụm động từ (Phrasal Verb):** Cụm động từ mang nghĩa tiến hành, thực hiện một cuộc nghiên cứu, khảo sát hay nhiệm vụ là 'carry out'.\n3. **Lựa chọn từ phù hợp:** Tiểu từ/Giới từ điền vào khoảng trống là **OUT**.\n4. **Kiểm tra độ hòa hợp:** 'instruct students to carry out their own research' (hướng dẫn học sinh tự thực hiện nghiên cứu của riêng mình).",
+              "answerLocation": "OUT",
+              "category": "cpe_part_2",
+              "blankIndex": 8,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-9",
+              "type": "gap_fill",
+              "instruction": "Gap (9):",
+              "acceptedAnswers": [
+                [
+                  "WHEN",
+                  "when"
+                ]
+              ],
+              "correctAnswer": "WHEN",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Đứng giữa hai mệnh đề 'prepare questions to ask' và 'they get to their destination'. Đây là vị trí của một liên từ chỉ thời gian.\n2. **Xác định quan hệ thời gian:** Câu muốn nói chuẩn bị câu hỏi để hỏi 'khi' hoặc 'ngay sau khi' họ đến nơi.\n3. **Lựa chọn từ phù hợp:** Liên từ chỉ thời gian phù hợp nhất là **WHEN** hoặc **ONCE**.\n4. **Kiểm tra độ hòa hợp:** 'prepare questions to ask when they get to their destination' (chuẩn bị các câu hỏi để hỏi khi họ đến nơi).",
+              "answerLocation": "WHEN",
+              "category": "cpe_part_2",
+              "blankIndex": 9,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-10",
+              "type": "gap_fill",
+              "instruction": "Gap (10):",
+              "acceptedAnswers": [
+                [
+                  "OUTSIDE",
+                  "outside"
+                ]
+              ],
+              "correctAnswer": "OUTSIDE",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Đứng sau trạng từ chỉ tần suất/thời gian 'Once' và đứng trước cụm danh từ 'the classroom'.\n2. **Xác định tính logic của bối cảnh:** Các phần trước nói về việc chuẩn bị 'trong lớp học' (in the classroom). Khi dã ngoại bắt đầu, học sinh sẽ ở 'ngoài lớp học'. Cụm từ 'Once outside the classroom' mang nghĩa 'Một khi đã bước ra ngoài lớp học'.\n3. **Lựa chọn từ phù hợp:** Giới từ chỉ vị trí tương phản với 'in/inside' là **OUTSIDE**.\n4. **Kiểm tra độ hòa hợp:** 'Once outside the classroom, many learners find it easier to relax' (Một khi đã ở bên ngoài lớp học, nhiều người học cảm thấy dễ thư giãn hơn).",
+              "answerLocation": "OUTSIDE",
+              "category": "cpe_part_2",
+              "blankIndex": 10,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-11",
+              "type": "gap_fill",
+              "instruction": "Gap (11):",
+              "acceptedAnswers": [
+                [
+                  "FACT",
+                  "fact"
+                ]
+              ],
+              "correctAnswer": "FACT",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Đứng sau mạo từ xác định 'the' và trước mệnh đề quan hệ bắt đầu bằng liên từ 'that': 'the __________ that at most tourist attractions...'.\n2. **Nhận diện cụm từ định danh:** Cấu trúc để giới thiệu một sự thật hiển nhiên hỗ trợ cho lập luận trước đó là 'helped by the fact that...' (được hỗ trợ bởi thực tế là...).\n3. **Lựa chọn từ phù hợp:** Danh từ phù hợp nhất là **FACT**.\n4. **Kiểm tra độ hòa hợp:** 'They are helped by the fact that at most tourist attractions...' (Họ được hỗ trợ bởi thực tế là tại hầu hết các điểm thu hút khách du lịch...).",
+              "answerLocation": "FACT",
+              "category": "cpe_part_2",
+              "blankIndex": 11,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-12",
+              "type": "gap_fill",
+              "instruction": "Gap (12):",
+              "acceptedAnswers": [
+                [
+                  "ON",
+                  "on"
+                ]
+              ],
+              "correctAnswer": "ON",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Khoảng trống đứng ở đầu câu, trước động từ thêm -ing 'returning'. Đây là trạng từ hoặc giới từ chỉ thời gian tạo trạng ngữ rút gọn.\n2. **Xác định mối quan hệ thời gian:** Ý câu nói: 'Khi quay trở lại lớp học, giáo viên có thể thiết lập...'. Cấu trúc 'On/Upon + V-ing' mang nghĩa 'Ngay sau khi làm gì'.\n3. **Lựa chọn từ phù hợp:** Giới từ thời gian thích hợp nhất là **ON** hoặc **UPON**.\n4. **Kiểm tra độ hòa hợp:** 'On returning to the classroom, teachers can set...' (Khi quay trở lại lớp học, giáo viên có thể thiết lập...).",
+              "answerLocation": "ON",
+              "category": "cpe_part_2",
+              "blankIndex": 12,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-13",
+              "type": "gap_fill",
+              "instruction": "Gap (13):",
+              "acceptedAnswers": [
+                [
+                  "UP",
+                  "up"
+                ]
+              ],
+              "correctAnswer": "UP",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Khoảng trống đứng sau động từ 'set' và trước cụm danh từ 'a variety of extension exercises'.\n2. **Nhận diện cụm động từ (Phrasal Verb):** Động từ 'set' đi với tiểu từ để chỉ việc thiết lập, giao hoặc chuẩn bị các bài tập/hoạt động cho học sinh là 'set up'.\n3. **Lựa chọn từ phù hợp:** Giới từ cần điền là **UP**.\n4. **Kiểm tra độ hòa hợp:** 'teachers can set up a variety of extension exercises' (giáo viên có thể thiết lập nhiều bài tập mở rộng khác nhau).",
+              "answerLocation": "UP",
+              "category": "cpe_part_2",
+              "blankIndex": 13,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-14",
+              "type": "gap_fill",
+              "instruction": "Gap (14):",
+              "acceptedAnswers": [
+                [
+                  "ON",
+                  "on"
+                ]
+              ],
+              "correctAnswer": "ON",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Đứng sau cụm danh từ 'giving a mini-presentation' và đứng trước danh từ 'an aspect of the trip'.\n2. **Nhận diện giới từ đi kèm:** Động từ/Danh từ 'presentation' (thuyết trình) thường đi với giới từ 'on' hoặc 'about' để chỉ chủ đề bài thuyết trình.\n3. **Lựa chọn từ phù hợp:** Giới từ **ON** hoặc **ABOUT** đều chính xác. Đáp án tiêu chuẩn là **ON**.\n4. **Kiểm tra độ hòa hợp:** 'giving a mini-presentation on an aspect of the trip' (thuyết trình ngắn về một khía cạnh của chuyến đi).",
+              "answerLocation": "ON",
+              "category": "cpe_part_2",
+              "blankIndex": 14,
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-15",
+              "type": "gap_fill",
+              "instruction": "Gap (15):",
+              "acceptedAnswers": [
+                [
+                  "VISITED",
+                  "visited"
+                ]
+              ],
+              "correctAnswer": "VISITED",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Phân tích ngữ cảnh:** Đứng cuối câu sau danh từ 'the place'. Đây là vị trí của một mệnh đề quan hệ rút gọn ở dạng bị động để bổ nghĩa cho danh từ trước đó.\n2. **Xác định nghĩa ngữ cảnh:** Họ làm poster để quảng cáo cho địa điểm 'được ghé thăm/đã đi qua'.\n3. **Lựa chọn từ phù hợp:** Phân từ hai (V3/V-ed) của 'visit' là **VISITED** (hoặc đại từ phản thân **ITSELF** để nhấn mạnh quảng cáo chính địa điểm đó). Ở đây đáp án chuẩn của sách là **VISITED**.\n4. **Kiểm tra độ hòa hợp:** 'advertise the place visited' (quảng cáo địa điểm đã được tham quan).",
+              "answerLocation": "VISITED",
+              "category": "cpe_part_2",
+              "blankIndex": 15,
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test7-sec-2",
+      "title": "Part 2 - Word formation",
+      "instructions": "For questions 16-25, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>US Post Codes</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>The American Zip code, devised in (0) response to changing (16) __________ needs, has been around for some time. Between 1900 and the year of its (17) __________, the quantity and nature of US mail changed. Its volume increased by 900% and most of it became business, rather than personal, (18) __________. An acronym for Zoning Improvement Plan, the Zip system speeds up the sorting and delivering of mail, especially bulk mail. (19) __________, it consists of five numbers after the address. The first digit identifies one of ten broad (20) __________ areas. The next two numbers designate a metropolitan area or sectional centre. The final two numbers stand for a small town or delivery unit from which the mail is distributed. For instance, in 22207, the initial number is area 2, (21) __________ the District of Columbia, Maryland, North Carolina, South Carolina, Virginia and West Virginia; the following 22 is the Arlington district of Virginia, and 07 is the local area. In 1983, an (22) __________ nine-numbered Zip code was introduced. Business mailers with large volumes of post can use this code, receiving a (23) __________ discount on their mailing rate. In addition, as early as 1963, when the Zip code itself was devised, two-letter abbreviations for states and other areas were brought in, to (24) __________ the mechanised addressing system used by many companies to (25) __________ on time by putting a Zip code on the same line as the city or state.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test7-rg-2",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test7-16",
+              "type": "gap_fill",
+              "instruction": "Gap (16) [Word Prompt: POST]:",
+              "acceptedAnswers": [
+                [
+                  "POSTAL",
+                  "postal"
+                ]
+              ],
+              "correctAnswer": "POSTAL",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **POST** (Danh từ/Động từ).\n2. **Phân tích ngữ cảnh:** Đứng trước danh từ 'needs' (nhu cầu), ta cần một tính từ bổ nghĩa cho danh từ này.\n3. **Biến đổi từ loại:** Tính từ của 'post' liên quan đến bưu điện/bưu chính là **POSTAL**.\n4. **Kiểm tra độ hòa hợp:** 'changing postal needs' (những nhu cầu bưu chính đang thay đổi) hoàn toàn chính xác.",
+              "answerLocation": "POSTAL",
+              "category": "cpe_part_3",
+              "blankIndex": 16,
+              "wordPrompt": "POST",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-17",
+              "type": "gap_fill",
+              "instruction": "Gap (17) [Word Prompt: INTRODUCE]:",
+              "acceptedAnswers": [
+                [
+                  "INTRODUCTION",
+                  "introduction"
+                ]
+              ],
+              "correctAnswer": "INTRODUCTION",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **INTRODUCE** (Động từ: giới thiệu, ra mắt).\n2. **Phân tích ngữ cảnh:** Đứng sau tính từ sở hữu 'its' và đứng trước dấu phẩy, ta bắt buộc phải điền một danh từ chỉ sự ra đời, sự giới thiệu.\n3. **Biến đổi từ loại:** Danh từ của động từ 'introduce' là **INTRODUCTION**.\n4. **Kiểm tra độ hòa hợp:** 'Between 1900 and the year of its introduction...' (Giữa năm 1900 và năm nó được đưa vào sử dụng...) là cực kỳ chuẩn xác.",
+              "answerLocation": "INTRODUCTION",
+              "category": "cpe_part_3",
+              "blankIndex": 17,
+              "wordPrompt": "INTRODUCE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-18",
+              "type": "gap_fill",
+              "instruction": "Gap (18) [Word Prompt: CORRESPOND]:",
+              "acceptedAnswers": [
+                [
+                  "CORRESPONDENCE",
+                  "correspondence"
+                ]
+              ],
+              "correctAnswer": "CORRESPONDENCE",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **CORRESPOND** (Động từ: trao đổi thư từ).\n2. **Phân tích ngữ cảnh:** Đứng sau cụm danh từ 'business, rather than personal,', đóng vai trò làm tân ngữ chính của câu sau động từ 'became'. Ta cần một danh từ không đếm được chỉ thư từ trao đổi.\n3. **Biến đổi từ loại:** Danh từ của 'correspond' chỉ thư tín/thư từ nói chung là **CORRESPONDENCE**.\n4. **Kiểm tra độ hòa hợp:** 'most of it became business, rather than personal, correspondence' (hầu hết nó đã trở thành thư tín thương mại, thay vì cá nhân).",
+              "answerLocation": "CORRESPONDENCE",
+              "category": "cpe_part_3",
+              "blankIndex": 18,
+              "wordPrompt": "CORRESPOND",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-19",
+              "type": "gap_fill",
+              "instruction": "Gap (19) [Word Prompt: BRIEF]:",
+              "acceptedAnswers": [
+                [
+                  "BRIEFLY",
+                  "briefly"
+                ]
+              ],
+              "correctAnswer": "BRIEFLY",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **BRIEF** (Tính từ: ngắn gọn).\n2. **Phân tích ngữ cảnh:** Đứng ở đầu câu, ngăn cách với mệnh đề chính bằng dấu phẩy. Đây là vị trí của một trạng từ liên kết bổ nghĩa cho cả câu.\n3. **Biến đổi từ loại:** Trạng từ của 'brief' là **BRIEFLY** (Tóm lại, nói một cách ngắn gọn).\n4. **Kiểm tra độ hòa hợp:** 'Briefly, it consists of five numbers...' (Nói một cách ngắn gọn, nó bao gồm 5 chữ số...) rất logic và mạch lạc.",
+              "answerLocation": "BRIEFLY",
+              "category": "cpe_part_3",
+              "blankIndex": 19,
+              "wordPrompt": "BRIEF",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-20",
+              "type": "gap_fill",
+              "instruction": "Gap (20) [Word Prompt: GEOGRAPHY]:",
+              "acceptedAnswers": [
+                [
+                  "GEOGRAPHICAL",
+                  "geographical"
+                ]
+              ],
+              "correctAnswer": "GEOGRAPHICAL",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **GEOGRAPHY** (Danh từ: địa lý).\n2. **Phân tích ngữ cảnh:** Đứng trước danh từ 'areas' (các vùng), ta cần một tính từ để bổ nghĩa cho vùng này.\n3. **Biến đổi từ loại:** Tính từ thuộc về địa lý là **GEOGRAPHICAL**.\n4. **Kiểm tra độ hòa hợp:** 'broad geographical areas' (những khu vực địa lý rộng lớn) đúng chuẩn cấu trúc ngữ pháp ngữ nghĩa.",
+              "answerLocation": "GEOGRAPHICAL",
+              "category": "cpe_part_3",
+              "blankIndex": 20,
+              "wordPrompt": "GEOGRAPHY",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-21",
+              "type": "gap_fill",
+              "instruction": "Gap (21) [Word Prompt: NAME]:",
+              "acceptedAnswers": [
+                [
+                  "NAMELY",
+                  "namely"
+                ]
+              ],
+              "correctAnswer": "NAMELY",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **NAME** (Danh từ/Động từ: tên, đặt tên).\n2. **Phân tích ngữ cảnh:** Đứng độc lập giữa dấu phẩy để liên kết liệt kê cụ thể phía sau: 'area 2, [blank] the District of Columbia...'. Ta cần trạng từ mang nghĩa 'tức là, cụ thể là'.\n3. **Biến đổi từ loại:** Trạng từ liên kết giải thích của 'name' là **NAMELY**.\n4. **Kiểm tra độ hòa hợp:** 'the initial number is area 2, namely the District of Columbia...' (chữ số đầu tiên là khu vực 2, cụ thể là Đặc khu Columbia...).",
+              "answerLocation": "NAMELY",
+              "category": "cpe_part_3",
+              "blankIndex": 21,
+              "wordPrompt": "NAME",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-22",
+              "type": "gap_fill",
+              "instruction": "Gap (22) [Word Prompt: OPT]:",
+              "acceptedAnswers": [
+                [
+                  "OPTIONAL",
+                  "optional"
+                ]
+              ],
+              "correctAnswer": "OPTIONAL",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **OPT** (Động từ: lựa chọn).\n2. **Phân tích ngữ cảnh:** Đứng trước danh từ ghép 'nine-numbered Zip code', đóng vai trò bổ trợ tính chất cho mã bưu chính này (tự nguyện, không bắt buộc).\n3. **Biến đổi từ loại:** Tính từ của động từ 'opt' chỉ sự tùy chọn, tự nguyện là **OPTIONAL**.\n4. **Kiểm tra độ hòa hợp:** 'an optional nine-numbered Zip code was introduced' (một mã Zip gồm chín chữ số tùy chọn đã được giới thiệu).",
+              "answerLocation": "OPTIONAL",
+              "category": "cpe_part_3",
+              "blankIndex": 22,
+              "wordPrompt": "OPT",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-23",
+              "type": "gap_fill",
+              "instruction": "Gap (23) [Word Prompt: SUBSTANCE]:",
+              "acceptedAnswers": [
+                [
+                  "SUBSTANTIAL",
+                  "substantial"
+                ]
+              ],
+              "correctAnswer": "SUBSTANTIAL",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **SUBSTANCE** (Danh từ: thực thể, chất chất).\n2. **Phân tích ngữ cảnh:** Đứng trước danh từ 'discount' (sự giảm giá), ta cần một tính từ mang nghĩa 'đáng kể, có giá trị lớn'.\n3. **Biến đổi từ loại:** Tính từ bổ nghĩa cho 'discount' biến đổi từ 'substance' là **SUBSTANTIAL**.\n4. **Kiểm tra độ hòa hợp:** 'receiving a substantial discount' (nhận được mức chiết khấu/giảm giá đáng kể).",
+              "answerLocation": "SUBSTANTIAL",
+              "category": "cpe_part_3",
+              "blankIndex": 23,
+              "wordPrompt": "SUBSTANCE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-24",
+              "type": "gap_fill",
+              "instruction": "Gap (24) [Word Prompt: ABLE]:",
+              "acceptedAnswers": [
+                [
+                  "ENABLE",
+                  "enable"
+                ]
+              ],
+              "correctAnswer": "ENABLE",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **ABLE** (Tính từ: có năng lực).\n2. **Phân tích ngữ cảnh:** Đứng sau cấu trúc chỉ mục đích 'to', ta cần một động từ nguyên mẫu mang nghĩa 'cho phép, tạo điều kiện'.\n3. **Biến đổi từ loại:** Động từ của 'able' là **ENABLE**.\n4. **Kiểm tra độ hòa hợp:** 'to enable the mechanised addressing system' (để cho phép/kích hoạt hệ thống địa chỉ cơ giới hóa).",
+              "answerLocation": "ENABLE",
+              "category": "cpe_part_3",
+              "blankIndex": 24,
+              "wordPrompt": "ABLE",
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-25",
+              "type": "gap_fill",
+              "instruction": "Gap (25) [Word Prompt: ECONOMY]:",
+              "acceptedAnswers": [
+                [
+                  "ECONOMISE",
+                  "economise"
+                ]
+              ],
+              "correctAnswer": "ECONOMISE",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước:**\n1. **Từ gốc cho sẵn:** **ECONOMY** (Danh từ: nền kinh tế).\n2. **Phân tích ngữ cảnh:** Đứng sau từ chỉ mục đích 'to' (to [blank] on time), ta bắt buộc phải điền một động từ nguyên mẫu mang nghĩa 'tiết kiệm' (thời gian/tiền bạc).\n3. **Biến đổi từ loại:** Động từ của 'economy' là **ECONOMISE** (Anh-Anh) hoặc **ECONOMIZE** (Anh-Mỹ).\n4. **Kiểm tra độ hòa hợp:** 'to economise on time by putting a Zip code...' (để tiết kiệm thời gian bằng cách đặt mã Zip...).",
+              "answerLocation": "ECONOMISE",
+              "category": "cpe_part_3",
+              "blankIndex": 25,
+              "wordPrompt": "ECONOMY",
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test7-sec-3",
+      "title": "Part 3 - Multiple-choice cloze",
+      "instructions": "For questions 26-37, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>EIGHT SECONDS TO GET YOUR OXYGEN</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>If an aircraft depressurises, pilots should don oxygen masks immediately. So say air safety experts, who add that studies (26) __________ back to World War II may have led pilots to overestimate how long they have to react. The US National Transportation Safety Board says pilots may have only seconds before they become too (27) __________ to function. The advice follows the NTSB's investigation into a crash in 1999, after a plane flew without a pilot for four hours and failed to respond to radio calls. The crew and passengers (28) __________ consciousness after the cabin depressurised. All six were killed. Although it's not clear why the jet's pilots didn't get (29) __________ oxygen, the NTSB found that many pilots have an (30) __________ idea of how much \"time of useful consciousness\" they have. Previous studies, some from as (31) __________ back as the 1940s, have suggested that pilots can function for a minute or so in a depressurised cabin at about 30,000 feet.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test7-rg-3",
+          "instruction": "Write the correct word in each gap.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test7-26",
+              "type": "multiple_choice",
+              "instruction": "Gap (26):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - dating. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "dating",
+              "category": "cpe_part_1",
+              "options": [
+                "A. lasting",
+                "B. dating",
+                "C. reaching",
+                "D. continuing"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-27",
+              "type": "multiple_choice",
+              "instruction": "Gap (27):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - disorientated. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "disorientated",
+              "category": "cpe_part_1",
+              "options": [
+                "A. displaced",
+                "B. disorientated",
+                "C. disjointed",
+                "D. dispossessed"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-28",
+              "type": "multiple_choice",
+              "instruction": "Gap (28):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - lost. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "lost",
+              "category": "cpe_part_1",
+              "options": [
+                "A. left",
+                "B. lost",
+                "C. lapsed",
+                "D. failed"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-29",
+              "type": "multiple_choice",
+              "instruction": "Gap (29):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - supplementary. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "supplementary",
+              "category": "cpe_part_1",
+              "options": [
+                "A. complimentary",
+                "B. reactionary",
+                "C. supplementary",
+                "D. rudimentary"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-30",
+              "type": "multiple_choice",
+              "instruction": "Gap (30):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - unrealistic. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "unrealistic",
+              "category": "cpe_part_1",
+              "options": [
+                "A. unrealistic",
+                "B. impractical",
+                "C. identical",
+                "D. idiosyncratic"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-31",
+              "type": "multiple_choice",
+              "instruction": "Gap (31):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - far. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "far",
+              "category": "cpe_part_1",
+              "options": [
+                "A. old",
+                "B. early",
+                "C. far",
+                "D. distant"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-32",
+              "type": "multiple_choice",
+              "instruction": "Gap (32):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - clue. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "clue",
+              "category": "cpe_part_1",
+              "options": [
+                "A. sign",
+                "B. clue",
+                "C. proof",
+                "D. suggestion"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-33",
+              "type": "multiple_choice",
+              "instruction": "Gap (33):",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - uncovered. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "uncovered",
+              "category": "cpe_part_1",
+              "options": [
+                "A. uncovered",
+                "B. upended",
+                "C. withdrew",
+                "D. disclosed"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-34",
+              "type": "multiple_choice",
+              "instruction": "Gap (34):",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - formed. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "formed",
+              "category": "cpe_part_1",
+              "options": [
+                "A. made",
+                "B. grown",
+                "C. formed",
+                "D. known"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-35",
+              "type": "multiple_choice",
+              "instruction": "Gap (35):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - primitive. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "primitive",
+              "category": "cpe_part_1",
+              "options": [
+                "A. primate",
+                "B. primitive",
+                "C. prime",
+                "D. primordial"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-36",
+              "type": "multiple_choice",
+              "instruction": "Gap (36):",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - evolve. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "evolve",
+              "category": "cpe_part_1",
+              "options": [
+                "A. advance",
+                "B. establish",
+                "C. progress",
+                "D. evolve"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-37",
+              "type": "multiple_choice",
+              "instruction": "Gap (37):",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - similar. Đây là lựa chọn phù hợp nhất về nghĩa và collocation trong ngữ cảnh. Các phương án khác thường sai vì không kết hợp tự nhiên với từ xung quanh hoặc làm lệch sắc thái nghĩa của câu.",
+              "answerLocation": "similar",
+              "category": "cpe_part_1",
+              "options": [
+                "A. alike",
+                "B. similar",
+                "C. close",
+                "D. like"
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test7-sec-4",
+      "title": "Part 4 - Gapped text",
+      "instructions": "For questions 38-44, read the text below from which paragraphs have been removed. Choose from paragraphs A-H the one which fits each gap. There is one extra paragraph which you do not need to use.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>You are going to read an extract from an article. Seven paragraphs have been removed from the article. Choose from paragraphs A-H the one which fits each gap (38-44). There is one extra paragraph which you do not need to use. Mark your answers on the separate answer sheet.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Heading westward from Ottawa on Highway 417 will eventually, after approximately 25 minutes of leisurely driving, bring the casual Sunday driver or visiting American tourist to a partially obscured entrance to a dead-end road. At the end of this cul-de-sac, one will come face to face with a set of imposing wrought iron gates on which a small bronze plaque modestly announces 'Canada’s Cold War Museum'.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 38]</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 39]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Entering through a low doorway, and by means of a generator-powered elevator, one travels down, down, down, actually four storeys down, and finds oneself in a huge cavern-like room. No, this is not the stuff spelunkers’ dreams are made of. Instead, one is standing in a man-made reminder of what hate, panic and doomsayers’ premonitions can persuade a people to do.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 40]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>What is less well documented is that Canadians, too, were infected with this contagious, all-enveloping panic induced by the ‘Great Red Bear’ and its supposed arsenal of weapons of annihilation. Canada, though never a particularly imposing military might or presence, was seen as a potential target site for Russian missiles due to the ‘big-brother, little sister’ relationship she enjoyed with the neighbouring US.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 41]</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 42]</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 43]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>On cessation of bombing, it was thought that the dugout would serve as a military command post. From here, orders and instructions would be issued for the reorganisation and rebuilding of the Canadian defence system. From their safe haven, the prime minister and other government dignitaries could advise Canadian survivors, presupposing there be any Canadian survivors, on the means for gathering their scattered wits about them, getting back on their feet and beginning the necessary task of reconstructing the country.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The government’s proverbial skeleton in the closet was revealed when a disgruntled lower-echelon member of the military leaked information of its existence to the press. The government's omission to make Canadians privy to the Diefenbunker met with loud outcries of public disapproval.</p><p class='mb-2 text-emerald-700 font-semibold'>[Gap 44]</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Perhaps the Canadian people, instead of frothing at the mouth in anger over their government’s perceived misbehaviour, would have better spent their time counting their lucky stars that the fortitude and indestructibility of the Diefenbunker had never needed to be put to the test. The ‘sky is falling’ mentality of both the American and Canadian governments changed dramatically with the dissolution of the Soviet Union in 1989. The Diefenbunker, which was once regarded as an asylum by the chosen few and an act of government betrayal by the multitudes, is now only a historical landmark visited by history buffs and off-the-beaten-track tourists. Physically, this concrete monstrosity serves as both museum and display case for war memorabilia. More significantly, however, it serves as a reminder of what can occur when hate-mongering, racism and the gutter press are allowed to run rampant and unchecked.</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test7-rg-4",
+          "instruction": "Choose the correct letter, A-H.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test7-38",
+              "type": "gapped_text",
+              "instruction": "Gap 38:",
+              "acceptedAnswers": [
+                [
+                  "E",
+                  "e"
+                ]
+              ],
+              "correctAnswer": "E",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước (Sơ đồ tư duy logic):**\n1. **Phân tích câu trước khoảng trống:** Đoạn văn mở đầu mô tả hành trình đến bảo tàng chiến tranh lạnh của Canada, kết thúc bằng chi tiết: 'a set of imposing wrought iron gates on which a small bronze plaque modestly announces Canada’s Cold War Museum.' (một cổng sắt rèn uy nghiêm với một tấm biển đồng nhỏ công bố một cách khiêm tốn: Bảo tàng Chiến tranh Lạnh của Canada).\n2. **Phát hiện manh mối từ vựng (Lexical Cohesion Clues):** Đoạn trước nhấn mạnh sự 'khiêm tốn' ('modestly announces') của tấm biển đồng. Do đó, đoạn tiếp theo phải phản hồi trực tiếp cảm xúc đối với lời giới thiệu này.\n3. **Khớp nối thông tin:** Đoạn **E** bắt đầu bằng: 'On this rather unimposing recommendation...' (Trước lời giới thiệu khá không mấy ấn tượng này...). Cụm từ 'unimposing recommendation' chính là sự quy chiếu (reference) trực tiếp đến sự khiêm tốn của tấm biển đồng trước đó.\n4. **Định vị kết quả:** Lựa chọn **E** khớp hoàn hảo về mặt liên kết và ngữ nghĩa cho Gap 38.",
+              "answerLocation": "On this rather unimposing recommendation, one would be hard pressed to work up any enthusiasm to visit what would appear to be just another museum. However, if curiosity did prevail and one",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-39",
+              "type": "gapped_text",
+              "instruction": "Gap 39:",
+              "acceptedAnswers": [
+                [
+                  "F",
+                  "f"
+                ]
+              ],
+              "correctAnswer": "F",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước (Sơ đồ tư duy logic):**\n1. **Phân tích mối liên kết ngữ pháp chặt chẽ (Syntactic Hook):** Hãy quan sát kỹ câu cuối cùng của đoạn **E** trước đó: 'However, if curiosity did prevail and one...' (Tuy nhiên, nếu sự tò mò thực sự chiến thắng và một người...).\n2. **Nhận diện cấu trúc dang dở:** Câu này kết thúc lửng lơ với chủ ngữ 'one' ở cuối và là một mệnh đề giả định 'if' chưa hoàn thành động từ chính ở mệnh đề kết quả.\n3. **Khớp nối cú pháp:** Đoạn **F** mở đầu bằng động từ: 'did, albeit reluctantly, go through the gates...' (thực sự đi qua cánh cổng, dù có chút miễn cưỡng...). Sự kết hợp giữa chủ ngữ 'one' của E và động từ 'did... go' của F tạo thành một câu hoàn chỉnh và trôi chảy về mặt ngữ pháp.\n4. **Kiểm tra câu sau khoảng trống:** Sau Gap 39, văn bản bắt đầu bằng: 'Entering through a low doorway...' mô tả việc thực tế bước qua cửa hầm, rất logic với hành động đi qua cổng ở đoạn F.\n5. **Định vị kết quả:** Lựa chọn **F** là mảnh ghép bắt buộc cho Gap 39.",
+              "answerLocation": "did, albeit reluctantly, go through the gates, they would be surprised at what was secreted away behind, and hinted at, by the aforementioned, self-effacing plaque.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-40",
+              "type": "gapped_text",
+              "instruction": "Gap 40:",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước (Sơ đồ tư duy logic):**\n1. **Phân tích bối cảnh trước chỗ trống:** Người đọc vừa đi xuống 4 tầng hầm và đứng trong căn phòng khổng lồ, được ví như một lời nhắc nhở nhân tạo về 'what hate, panic and doomsayers’ premonitions can persuade a people to do.' (sự căm thù, hoảng loạn và những lời tiên tri diệt vong có thể thuyết phục một dân tộc làm gì).\n2. **Phân tích bối cảnh sau chỗ trống:** Câu tiếp theo nói về: 'What is less well documented is that Canadians, too, were infected with this contagious, all-enveloping panic...' (Điều ít được ghi chép lại là người dân Canada cũng bị lây nhiễm nỗi hoảng loạn bao trùm này...).\n3. **Phát hiện từ quy chiếu (Reference Clues):** Câu sau dùng cụm từ 'this contagious, all-enveloping panic' (nỗi hoảng sợ lây lan bao trùm này). Từ 'this' bắt buộc phải quy chiếu đến một sự hoảng loạn cụ thể đã được mô tả chi tiết ở đoạn trống trước đó.\n4. **Khớp nối thông tin:** Đoạn **A** mô tả chi tiết làn sóng hoảng loạn hạt nhân tại Mỹ trong những năm 50-60: bài phát biểu của Tổng thống Kennedy về khủng hoảng vịnh Con Heo khiến người Mỹ hoảng sợ đào hầm tránh bom như những con chuột chũi ('sent Americans scurrying to their backyards... dig bomb shelters'). Đây chính là nguồn gốc của nỗi sợ hãi tột cùng đó.\n5. **Định vị kết quả:** Lựa chọn **A** kết nối xuất sắc dòng chảy ý chí lịch sử cho Gap 40.",
+              "answerLocation": "Any 7th grader is made well aware of the cloud of impending doom that had hung over the North American continent throughout the turbulent 50s and 60s of the preceding century. The late President Kennedy’s address to the American people was broadcast live into almost every living room in the US. This apocalypse-prognosticating speech, in combination with the Bay of Pigs Crisis, sent Americans scurrying to their backyards, where, gopher-like, they began to dig bomb shelters in expectation of an all-out Soviet nuclear attack.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-41",
+              "type": "gapped_text",
+              "instruction": "Gap 41:",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước (Sơ đồ tư duy logic):**\n1. **Phân tích câu trước chỗ trống:** Cuối đoạn trước giải thích rằng Canada được xem là mục tiêu tiềm tàng cho tên lửa Liên Xô do mối quan hệ 'anh trai, em gái' thân thiết với Mỹ.\n2. **Tìm kiếm phản ứng tương thích:** Đối mặt với mối đe dọa quân sự khủng khiếp từ tên lửa hạt nhân của Liên Xô, chính phủ Canada sẽ phải phản ứng như thế nào?\n3. **Khớp nối thông tin:** Đoạn **C** mở đầu bằng cụm từ: 'In response to this perceived threat...' (Để phản ứng lại mối đe dọa được nhận thức này...). Mối đe dọa này chính là việc Canada bị lọt vào tầm ngắm tên lửa được nêu ở đoạn trước. Đoạn C tiếp tục giải thích việc chính phủ giao kỹ sư xây dựng căn hầm khổng lồ 4 tầng tự cung tự cấp.\n4. **Định vị kết quả:** Lựa chọn **C** là bước đi logic tiếp theo cho Gap 41.",
+              "answerLocation": "In response to this perceived threat, the Canadian government adopted a rather ‘Chicken Little’ type attitude, and assigned architects and civil engineers the task of planning and erecting a gigantic, four-storey underground bunker. The bunker was to be totally self-contained and self-sufficient.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-42",
+              "type": "gapped_text",
+              "instruction": "Gap 42:",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước (Sơ đồ tư duy logic):**\n1. **Phân tích mối liên kết xuyên suốt (Cohesive Flow):** Đoạn trước (Gap 41 / đoạn C) giới thiệu việc lập kế hoạch xây dựng một căn hầm ngầm khổng lồ, tự cung tự cấp.\n2. **Tìm kiếm thông tin triển khai tiếp theo:** Khi một công trình được lên kế hoạch, bước logic tiếp theo là quyết định khởi công, đặt tên và tiến hành xây dựng thực tế.\n3. **Khớp nối thông tin:** Đoạn **D** giới thiệu: 'The bunker’s namesake, John Diefenbaker, who was then acting Prime Minister, ordered the construction begun in 1959. Two years later, it was completed...' (Người được lấy tên đặt cho căn hầm, John Diefenbaker, Thủ tướng đương nhiệm thời đó, đã ra lệnh khởi công năm 1959. Hai năm sau, nó hoàn thành...). Sự tiếp nối từ kế hoạch (C) sang khởi công và hoàn thành (D) là một logic biên niên sử hoàn hảo.\n4. **Định vị kết quả:** Lựa chọn **D** lấp đầy vị trí Gap 42 một cách xuất sắc. Meo/Trap: xac dinh loai gap truoc khi chon: word form, collocation, dependent preposition, clause pattern hoac idiom. Kiem tra tu ngay truoc/sau gap, so it/so nhieu, tense/aspect va register. Bay thuong gap la dap an dung nghia nhung sai cau truc hoac sai collocation.",
+              "answerLocation": "The bunker’s namesake, John Diefenbaker, who was then acting Prime Minister, ordered the construction begun in 1959. Two years later, it was completed and thus began the era of one of Canada’s best-guarded secrets. Military officials were forced to confess to the actuality of Diefenbunker after rumours of there being such an edifice were confirmed.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-43",
+              "type": "gapped_text",
+              "instruction": "Gap 43:",
+              "acceptedAnswers": [
+                [
+                  "H",
+                  "h"
+                ]
+              ],
+              "correctAnswer": "H",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước (Sơ đồ tư duy logic):**\n1. **Phân tích câu sau chỗ trống:** Ngay sau Gap 43 là câu: 'On cessation of bombing, it was thought that the dugout would serve as a military command post...' (Khi bom ngừng rơi, người ta nghĩ rằng căn hầm trú ẩn này sẽ đóng vai trò là một bốt chỉ huy quân sự...).\n2. **Phát hiện từ quy chiếu (Reference Clues):** Câu sau bắt đầu bằng 'On cessation of bombing' (Khi cuộc ném bom ngừng rơi) và gọi căn hầm là 'the dugout' (hầm đào). Ý nghĩa này ngầm định rằng đoạn trước đó đã phải mô tả cảnh ném bom hạt nhân dội xuống và tính năng chịu lực bền vững chống đỡ bom đạn của căn hầm này.\n3. **Khớp nối thông tin:** Đoạn **H** mô tả: 'This Bismark of a shelter... would supposedly withstand anything barring a direct hit, if and when the Soviet bombs began to fall...' (Căn hầm thép vững chãi như chiến hạm Bismark này... được cho là sẽ chịu đựng được mọi thứ ngoại trừ một cú đánh trực diện, nếu và khi bom của Liên Xô bắt đầu rơi...). Đoạn này cũng nói rõ các chính khách VIP sẽ trốn an toàn trong thời gian bom rơi, khớp hoàn toàn với ý 'khi bom ngừng rơi' ở đầu đoạn tiếp theo.\n4. **Định vị kết quả:** Lựa chọn **H** khớp nối hoàn hảo về cấu trúc ngữ nghĩa cho Gap 43.",
+              "answerLocation": "This Bismark of a shelter, constructed entirely of cement, would supposedly withstand anything barring a direct hit, if and when the Soviet bombs began to fall. This reputedly invincible ‘hole in the ground’ was built to shelter government and military higher-ups. Throughout the inevitable Soviet barrage, these privileged VIPs would be saved from the missiles themselves, while afterwards, the impenetrable concrete walls would insulate them against the consequent fallout and ensuing nuclear radiation.",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-44",
+              "type": "gapped_text",
+              "instruction": "Gap 44:",
+              "acceptedAnswers": [
+                [
+                  "G",
+                  "g"
+                ]
+              ],
+              "correctAnswer": "G",
+              "explanation": "💡 **Quá trình tư duy & Cách làm từng bước (Sơ đồ tư duy logic):**\n1. **Phân tích bối cảnh trước chỗ trống:** Đoạn trước kể về việc một binh sĩ bất mãn rò rỉ thông tin về căn hầm Diefenbunker cho báo chí. Việc chính phủ che giấu căn hầm này vấp phải sự phản đối dữ dội của công chúng: 'met with loud outcries of public disapproval' (gặp phải những tiếng la hét phản đối kịch liệt từ công chúng).\n2. **Tìm kiếm phản ứng tâm lý của quần chúng:** Sự phản đối dữ dội của người dân sẽ được biểu hiện và mô tả cụ thể bằng những cảm xúc và tiếng hét như thế nào?\n3. **Khớp nối thông tin:** Đoạn **G** mở đầu bằng: 'Canada... felt betrayed and disillusioned by what it saw as blatant mistruths...' (Người dân Canada... cảm thấy bị phản bội và vỡ mộng trước những gì họ xem là những lời nói dối trắng trợn...). Đoạn này liệt kê các câu hỏi phẫn nộ của người dân xuống đường: 'Why had they, as a people, not been warned...?'. Điều này giải thích sâu sắc cho cụm từ 'tiếng la hét phản đối' ở đoạn trước.\n4. **Kiểm tra câu sau khoảng trống:** Đoạn sau Gap 44 phản hồi: 'Perhaps the Canadian people, instead of frothing at the mouth in anger...' (Có lẽ người dân Canada, thay vì giận dữ sùi bọt mép...). Cụm từ 'frothing at the mouth in anger' (giận dữ sùi bọt mép) chính là sự tóm tắt hoàn hảo trạng thái phẫn nộ ở đoạn G trước đó.\n5. **Định vị kết quả:** Lựa chọn **G** là lời giải thích duy nhất hợp lý cho Gap 44.",
+              "answerLocation": "Canada, a country which in the past had prided itself on maintaining a good rapport with its democratic representatives, felt betrayed and disillusioned by what it saw as blatant mistruths and withholding of pertinent information. The collective voice on the street shouted: why had they, as a people, not been warned of the great threat posed by the Soviets? Why had safeguards not been put in place to ensure the safety of the average Canadian?",
+              "category": "cpe_part_6",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "displayMode": "both"
+            }
+          ],
+          "paragraphOptions": [
+            {
+              "label": "A",
+              "text": "Any 7th grader is made well aware of the cloud of impending doom that had hung over the North American continent throughout the turbulent 50s and 60s of the preceding century. The late President Kennedy’s address to the American people was broadcast live into almost every living room in the US. This apocalypse-prognosticating speech, in combination with the Bay of Pigs Crisis, sent Americans scurrying to their backyards, where, gopher-like, they began to dig bomb shelters in expectation of an all-out Soviet nuclear attack."
+            },
+            {
+              "label": "B",
+              "text": "Although the majority of Europeans erroneously believe that Toronto is Canada’s capital, the honour actually belongs to Ottawa. This northern city has a population of approximately one million people. The city is well worth visiting, as it is home to the Parliament Buildings, the National Gallery, and the picturesque campus on which the University of Ottawa sits."
+            },
+            {
+              "label": "C",
+              "text": "In response to this perceived threat, the Canadian government adopted a rather ‘Chicken Little’ type attitude, and assigned architects and civil engineers the task of planning and erecting a gigantic, four-storey underground bunker. The bunker was to be totally self-contained and self-sufficient."
+            },
+            {
+              "label": "D",
+              "text": "The bunker’s namesake, John Diefenbaker, who was then acting Prime Minister, ordered the construction begun in 1959. Two years later, it was completed and thus began the era of one of Canada’s best-guarded secrets. Military officials were forced to confess to the actuality of Diefenbunker after rumours of there being such an edifice were confirmed."
+            },
+            {
+              "label": "E",
+              "text": "On this rather unimposing recommendation, one would be hard pressed to work up any enthusiasm to visit what would appear to be just another museum. However, if curiosity did prevail and one"
+            },
+            {
+              "label": "F",
+              "text": "did, albeit reluctantly, go through the gates, they would be surprised at what was secreted away behind, and hinted at, by the aforementioned, self-effacing plaque."
+            },
+            {
+              "label": "G",
+              "text": "Canada, a country which in the past had prided itself on maintaining a good rapport with its democratic representatives, felt betrayed and disillusioned by what it saw as blatant mistruths and withholding of pertinent information. The collective voice on the street shouted: why had they, as a people, not been warned of the great threat posed by the Soviets? Why had safeguards not been put in place to ensure the safety of the average Canadian?"
+            },
+            {
+              "label": "H",
+              "text": "This Bismark of a shelter, constructed entirely of cement, would supposedly withstand anything barring a direct hit, if and when the Soviet bombs began to fall. This reputedly invincible ‘hole in the ground’ was built to shelter government and military higher-ups. Throughout the inevitable Soviet barrage, these privileged VIPs would be saved from the missiles themselves, while afterwards, the impenetrable concrete walls would insulate them against the consequent fallout and ensuing nuclear radiation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cpe-entry-test7-sec-5",
+      "title": "Part 5 - Multiple-choice reading",
+      "instructions": "For questions 45-50, read the text below and choose the correct letter, A, B, C or D.",
+      "passageHtml": "<h2 class='text-xl font-bold mb-3 text-emerald-800 border-b border-emerald-100 pb-1'>Reading Passage</h2><p class='mb-4 text-slate-800 text-base leading-relaxed'>To think how snotty I used to be about Americans who ‘did’ England in three days! I've just done much much worse - Indochina in a week - and of course I am now a total convert to whistlestop tourism. Everything is so clear cut. How did you like Thailand? Charming. Cambodia? Sinister. Malaysia? Rubber trees. Singapore? Fabulous. It completely banishes the fear of boredom. If you don't like somewhere - pouf! — it's gone, in the blinking of an eye; if you do like somewhere, you can tell yourself you'll come back.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>All the guidebooks say you must spend at least three days or preferably a week at Angkor Wat but I found an afternoon a bit on the long side. Angkor Wat, as I’m sure you all know — though I didn’t until the other day — is the flowering glory of Khmer ninth-to-thirteenth century civilisation. It is Westminster Abbey, Chartres cathedral, Notre Dame and St Peter’s laid end to end and stuck in the middle of the Cambodian jungle - which might give you some clue to its drawback. It is vast, so walking round it in the Cambodian humidity, which feels like having boiling towels clamped to your face, is not much fun. Moreover, although it is extraordinary, impressive, awesome, etc., it is not actually very beautiful. The stonework is grey and lumpy and blotched with lichen and the dark green jungle backdrop casts a gloomy shade. It reminded me of the old loaf you always find in the breadbin of a holiday cottage that hasn’t been visited all winter.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>Anyway, that was Friday, that was Cambodia. My tour started with an overnight flight to Bangkok arriving on Thursday afternoon. In theory, I could have whisked around the city and taken in a few temples; in practice, I found the luscious precincts of the hotel rather difficult to leave. By evening I thought I should make some effort to see Bangkok so I took the hotel launch across the river to the hotel spa where I had a yummy jetlag massage in a sandalwood panelled room and fell fast asleep. Super place, Bangkok.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The next morning we boarded the Eastern and Oriental Express — owned by Orient Express - for a journey through southern Thailand and Malaysia to Singapore. Having effortlessly adjusted to the concept of whistlestop tourism, this seems a bit slow — two whole days chuntering through Thailand? But the scenery was stunning — emerald fields with egrets and kingfishers everywhere, and prawn ponds weirdly striplit at night, fantastically shaped craggy mountains in the distance, a milky white haze at dawn. It is so beautiful, Thailand, I can see why everyone who goes gets hooked.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>We stopped to see the Bridge on the River Kwai. It is a beautiful spot — not remotely reminiscent of the bridge in the film, which was shot in Sri Lanka. The next day we entered Malaysia and saw rubber plantations. I thought rubber trees were stiff plastic things that lived in offices and needed dusting, but they are as graceful and shivery as larches.</p><p class='mb-4 text-slate-800 text-base leading-relaxed'>The train is beautifully designed, with marquetry panelling and Art-Nouveau fittings, apparently inspired by the 1932 film Shanghai Express. The food is excellent and service impeccable but you have to be keen on dressing for dinner and sitting round sipping cocktails in a piano bar because that’s what you spend most of the time doing. Frankly, I’m puzzled by this nostalgia for empire malarkey, though it is all the rage in travel brochures. If people have a yearning to eat cucumber sandwiches and fairy cakes and call it tiffin why can't they do it back home?</p>",
+      "questionGroups": [
+        {
+          "id": "cpe-entry-test7-rg-5",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "id": "q-cpe-entry-test7-45",
+              "type": "multiple_choice",
+              "instruction": "What does the writer say about herself in the first paragraph?",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - She was a snob regarding travel.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "She was a snob regarding travel.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. She loathed meeting Americans on her travels.",
+                "B. She looked down on tourism generally.",
+                "C. She didn’t like travelling to tourist destinations.",
+                "D. She was a snob regarding travel."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-46",
+              "type": "multiple_choice",
+              "instruction": "What was the writer’s impression of Angkor Wat?",
+              "acceptedAnswers": [
+                [
+                  "C",
+                  "c"
+                ]
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chọn C - She found it rather unattractive.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "She found it rather unattractive.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. Its beauty was overshadowed by its size.",
+                "B. There wasn’t much to see there.",
+                "C. She found it rather unattractive.",
+                "D. Efforts to preserve it have failed."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-47",
+              "type": "multiple_choice",
+              "instruction": "What does the writer say about her stay in Bangkok",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - She preferred to avail herself of the hotel's facilities.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "She preferred to avail herself of the hotel's facilities.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. Her hotel was too far from the city centre.",
+                "B. There was nothing to see there apart from temples.",
+                "C. She didn't have enough time to see the city.",
+                "D. She preferred to avail herself of the hotel's facilities."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-48",
+              "type": "multiple_choice",
+              "instruction": "How did the writer feel about a two-day train journey?",
+              "acceptedAnswers": [
+                [
+                  "B",
+                  "b"
+                ]
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chọn B - It dragged because she was accustomed to paying fleeting visits to places.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "It dragged because she was accustomed to paying fleeting visits to places.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. She would have preferred a faster mode of transport.",
+                "B. It dragged because she was accustomed to paying fleeting visits to places.",
+                "C. She was reluctant to spend another two days in Thailand.",
+                "D. She found rail travel effortless."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-49",
+              "type": "multiple_choice",
+              "instruction": "What does the writer say about the Bridge on the River Kwai?",
+              "acceptedAnswers": [
+                [
+                  "A",
+                  "a"
+                ]
+              ],
+              "correctAnswer": "A",
+              "explanation": "Chọn A - It doesn't resemble the bridge in the film of the same name.:. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "It doesn't resemble the bridge in the film of the same name.:",
+              "category": "cpe_part_5",
+              "options": [
+                "A. It doesn't resemble the bridge in the film of the same name.",
+                "B. The bridge has changed considerably since the film was made.",
+                "C. It detracts from the surrounding beauty.",
+                "D. The makers of the film were right in choosing a different location."
+              ],
+              "displayMode": "both"
+            },
+            {
+              "id": "q-cpe-entry-test7-50",
+              "type": "multiple_choice",
+              "instruction": "According to the writer, the train journey would appeal to",
+              "acceptedAnswers": [
+                [
+                  "D",
+                  "d"
+                ]
+              ],
+              "correctAnswer": "D",
+              "explanation": "Chọn D - people who want to recall the past.. Phương án này khớp/paraphrase thông tin trong bài đọc. Các phương án còn lại thường sai do trái chi tiết, suy diễn quá mức, hoặc chỉ đúng một phần nhưng không trả lời chính xác câu hỏi.",
+              "answerLocation": "people who want to recall the past.",
+              "category": "cpe_part_5",
+              "options": [
+                "A. people who enjoy eating English food.",
+                "B. people who like visiting places featured in films.",
+                "C. people who want a home from home.",
+                "D. people who want to recall the past."
+              ],
+              "displayMode": "both"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,959 @@
+[
+  {
+    "sampleId": "writing-task2-cam15-test1-band8",
+    "skill": "writing",
+    "taskNumber": 2,
+    "prompt": "In some countries, more and more people are becoming interested in finding out about the history of the house or building they live in. What are the reasons for this? How can people research this?",
+    "studentResponse": "In this modern era, an increasing number of individuals show a keen interest in discovering the background of their residential buildings. This essay will examine the primary reasons for this curiosity, such as a desire for historical connection and architectural appreciation, and outline the methods of research, including examining local archives and interviewing elderly neighbors.\n\nFirstly, people seek a sense of identity and connection to the past. Living in an old house prompts questions about its former occupants and their lifestyles. By understanding who lived there before, one can feel a stronger bond with the community's heritage. Moreover, architectural significance is another motivating factor. Many residents are fascinated by the craftsmanship of yesteryears and want to know if their homes were designed by notable architects or constructed using traditional, historically unique techniques.\n\nTo conduct this research, several effective avenues are available. The most direct approach is visiting local historical archives or municipal registries. These public offices maintain records of property deeds, maps, and land registries dating back decades, which detail ownership changes and structural renovations. Additionally, digital platforms have made historical research highly accessible; old newspapers and census records can now be searched online with minimal effort. Lastly, oral history should not be overlooked. Speaking with elderly residents who have resided in the area for a long time can provide invaluable anecdotes that are not recorded in official documents.\n\nIn conclusion, the urge to uncover the history of one's home stems from a natural curiosity about heritage and architecture. Through archives, digital records, and local stories, anyone can successfully piece together the fascinating story of their home.",
+    "expertScores": {
+      "overall": 8,
+      "criteria": {
+        "taskResponse": 8,
+        "coherenceCohesion": 8,
+        "lexicalResource": 8,
+        "grammarRangeAccuracy": 8
+      },
+      "examinerCommentary": "This is a very well-developed response that addresses all parts of the prompt with relevant and fully extended ideas. The paragraphs are logically organized, with clear central topics. Vocabulary is varied and academic, showing excellent control of collocations and word forms. Grammatical structures are complex and entirely error-free, which justifies an 8.0 band overall."
+    }
+  },
+  {
+    "sampleId": "writing-task1-cam16-test3-band6.5",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "The plans below show a public park when it first opened in 1920 and the same park today. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "studentResponse": "The two maps compare the changes that occurred in a public park from 1920 to the present day. Overall, the park has been modernized and now features more recreational amenities for visitors, while some of the original green spaces and trees have been replaced by new facilities.\n\nIn 1920, the park had a very symmetrical layout with a large fountain in the center. There were many seats arranged around the fountain and along the paths. A stage for musicians was located on the left side of the park, and there was a rose garden in the top right corner. Additionally, a pond for water plants was situated in the bottom right, and a glasshouse stood in the top left.\n\nToday, the park is very different. The central fountain has been completely removed and replaced by a large rose garden. The original rose garden in the top right corner has been converted into a children's play area with slides and swings. Furthermore, the stage for musicians has been replaced by an amphitheatre for concerts. The glasshouse has been demolished, and in its place, a new water feature has been introduced. While some seats remain, they are now scattered throughout the park rather than arranged in a strict circle.",
+    "expertScores": {
+      "overall": 6.5,
+      "criteria": {
+        "taskAchievement": 7,
+        "coherenceCohesion": 6.5,
+        "lexicalResource": 6,
+        "grammarRangeAccuracy": 6.5
+      },
+      "examinerCommentary": "The candidate has provided a good overview and has described the main changes clearly. The layout is well-structured, but the transition between the two periods could be smoother. Vocabulary is sufficient to describe the maps, but there is some repetition. Grammatical structures are mostly accurate, although there are minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-part2-candidate-band7.5",
+    "skill": "speaking",
+    "prompt": "Describe a book you read that you found useful.",
+    "studentResponse": "I would like to talk about a book called 'Atomic Habits' by James Clear, which I read about a year ago. I found it incredibly practical and life-changing. The main idea of the book is that small, incremental changes in our daily routines can lead to massive long-term results. Before reading it, I always thought that in order to achieve big goals, you needed to make huge changes in your life. But James Clear explains that just improving by one percent every day makes a huge difference over a year. He introduces a four-step framework: cue, craving, response, and reward, which makes it very simple to understand how habits are built and how to break bad ones. For example, I used this framework to establish a morning reading habit. I put my book on my pillow every morning so that when I go to bed, it's the first thing I see. This cue prompts me to read a few pages. Overall, the book is very readable and filled with real-world examples, and it has completely transformed how I approach my daily productivity.",
+    "expertScores": {
+      "overall": 7.5,
+      "criteria": {
+        "fluencyCoherence": 7.5,
+        "lexicalResource": 8,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 8
+      },
+      "examinerCommentary": "The candidate speaks fluently without much hesitation. The response is coherent and well-structured, with good use of cohesive devices. Vocabulary is sophisticated and highly appropriate for the topic. Grammatical structures are varied, although there are minor slip-ups. Pronunciation is clear."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-1-band7.0",
+    "skill": "speaking",
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 1 regarding Technology and Society. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-2-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 2 regarding Environment and Cities. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-3-band5.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 3 regarding Art and Culture. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-4-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 4 regarding Global Tourism. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-5-band9.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 5 regarding Education and Careers. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-6-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 6 regarding Technology and Society. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-7-band7.0",
+    "skill": "speaking",
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 7 regarding Environment and Cities. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-8-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 8 regarding Art and Culture. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-9-band5.0",
+    "skill": "speaking",
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 9 regarding Global Tourism. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-10-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 10 regarding Education and Careers. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-11-band9.0",
+    "skill": "speaking",
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 11 regarding Technology and Society. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-12-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 12 regarding Environment and Cities. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-13-band7.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 13 regarding Art and Culture. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-14-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 14 regarding Global Tourism. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-15-band5.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 15 regarding Education and Careers. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-16-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 16 regarding Technology and Society. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-17-band9.0",
+    "skill": "speaking",
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 17 regarding Environment and Cities. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-18-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 18 regarding Art and Culture. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-19-band7.0",
+    "skill": "speaking",
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 19 regarding Global Tourism. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-20-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 20 regarding Education and Careers. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-21-band5.0",
+    "skill": "speaking",
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 21 regarding Technology and Society. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-22-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 22 regarding Environment and Cities. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-23-band9.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 23 regarding Art and Culture. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-24-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 24 regarding Global Tourism. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-25-band7.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 25 regarding Education and Careers. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-26-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 26 regarding Technology and Society. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-27-band5.0",
+    "skill": "speaking",
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 27 regarding Environment and Cities. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-28-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 28 regarding Art and Culture. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-29-band9.0",
+    "skill": "speaking",
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 29 regarding Global Tourism. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-30-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 30 regarding Education and Careers. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-31-band7.0",
+    "skill": "speaking",
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 31 regarding Technology and Society. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-32-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 32 regarding Environment and Cities. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-33-band5.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 33 regarding Art and Culture. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-34-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 34 regarding Global Tourism. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-35-band9.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 35 regarding Education and Careers. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-36-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 36 regarding Technology and Society. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-37-band7.0",
+    "skill": "speaking",
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 37 regarding Environment and Cities. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-38-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 38 regarding Art and Culture. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-39-band5.0",
+    "skill": "speaking",
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 39 regarding Global Tourism. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-40-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 40 regarding Education and Careers. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-41-band9.0",
+    "skill": "speaking",
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 41 regarding Technology and Society. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-42-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 42 regarding Environment and Cities. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-43-band7.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 43 regarding Art and Culture. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-44-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 44 regarding Global Tourism. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-45-band5.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 45 regarding Education and Careers. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-46-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 46 regarding Technology and Society. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-47-band9.0",
+    "skill": "speaking",
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 47 regarding Environment and Cities. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-48-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 48 regarding Art and Culture. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-49-band7.0",
+    "skill": "speaking",
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 49 regarding Global Tourism. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-50-band9.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "taskResponse": 9,
+        "coherenceCohesion": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 50 regarding Education and Careers. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-51-band5.0",
+    "skill": "speaking",
+    "prompt": "In many countries, people are spending more time using smartphones and tablets. Is this a positive or negative development?",
+    "studentResponse": "Response regarding Technology and Society: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "fluencyCoherence": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5,
+        "pronunciation": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 51 regarding Technology and Society. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-52-band7.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Many large cities around the world are experiencing severe traffic congestion. What are the causes of this problem, and what measures can be taken to solve it?",
+    "studentResponse": "Response regarding Environment and Cities: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "taskResponse": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 52 regarding Environment and Cities. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-53-band9.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that governments should fund artists and musicians, while others think this is a waste of public money. Discuss both views.",
+    "studentResponse": "Response regarding Art and Culture: Undeniably, the question of whether university tuition should be completely subsidized is of paramount importance in modern educational policy. Advocates of free tertiary education argue that it democratizes learning, enabling meritorious individuals from disadvantaged socioeconomic backgrounds to achieve intellectual fruition without being constrained by debt. From a macroeconomic perspective, an educated populace acts as a catalyst for technological innovation and societal advancement. Conversely, detractors contend that subsidizing higher education imposes an unsustainable fiscal burden on taxpayers. In my estimation, a balanced framework, where tuition is fully subsidized for critical STEM and public-service fields while other students receive income-contingent loans, represents the most pragmatic compromise.",
+    "expertScores": {
+      "overall": 9,
+      "criteria": {
+        "fluencyCoherence": 9,
+        "lexicalResource": 9,
+        "grammarRangeAccuracy": 9,
+        "pronunciation": 9
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 53 regarding Art and Culture. An exceptionally eloquent response that exhibits full mastery of cohesive links and sophisticated vocabulary. Arguments are fully extended, logical, and nuanced. Sentence structures are diverse, featuring natural, error-free execution throughout the text."
+    }
+  },
+  {
+    "sampleId": "writing-sample-id-54-band5.0",
+    "skill": "writing",
+    "taskNumber": 1,
+    "prompt": "Tourism is one of the fastest-growing industries in the world. While it brings economic benefits, it can also harm local communities and environments. What is your view?",
+    "studentResponse": "Response regarding Global Tourism: Many people think university must be free because education is very important for all people. I agree because if university is free, poor people can study and get good job to help their family. Also, the country will have more doctors and engineers to make the economy better. But some people say university is very expensive and government cannot pay for all because they need money for hospitals and schools. In my opinion, government should make university free for poor students and rich students can pay the fee. This is fair for everyone.",
+    "expertScores": {
+      "overall": 5,
+      "criteria": {
+        "taskResponse": 5,
+        "coherenceCohesion": 5,
+        "lexicalResource": 5,
+        "grammarRangeAccuracy": 5
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 54 regarding Global Tourism. The candidate addresses the prompt directly but ideas are presented in a simple, repetitive manner. Paragraph structure is present but transitions are abrupt. Vocabulary is basic and grammar errors (especially subject-verb agreement and article omission) are frequent, though they do not impede comprehension."
+    }
+  },
+  {
+    "sampleId": "speaking-sample-id-55-band7.0",
+    "skill": "speaking",
+    "prompt": "Some people believe that university education should be free for everyone, while others argue that students should pay for it. Discuss both views and give your opinion.",
+    "studentResponse": "Response regarding Education and Careers: It is widely believed that higher education should be free for all students, although others think that tuition fees are necessary for maintaining university standards. On the one hand, making university free helps students from poorer families to access higher level jobs and improve their lives. This leads to a more skilled workforce which benefits the country's economy in the long run. On the other hand, running a university requires expensive research labs and highly paid professors. If the government pays for everyone, it might lead to higher taxes for citizens. Personally, I believe that universities should charge moderate fees but offer generous scholarships for excellent students who cannot afford them.",
+    "expertScores": {
+      "overall": 7,
+      "criteria": {
+        "fluencyCoherence": 7,
+        "lexicalResource": 7,
+        "grammarRangeAccuracy": 7,
+        "pronunciation": 7
+      },
+      "examinerCommentary": "Teacher-graded simulation sample 55 regarding Education and Careers. A well-structured response that develops a clear opinion and supports it with relevant points. Cohesion is maintained through effective linking words. Vocabulary is sufficiently academic with clear collocations, and grammatical structures are mostly accurate with very minor errors."
+    }
+  }
+]

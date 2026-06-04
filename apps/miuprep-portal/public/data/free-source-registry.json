@@ -1,0 +1,92 @@
+{
+  "updatedAt": "2026-05-16",
+  "policy": [
+    "Use reusable sources for in-app question text only when the license or project terms allow it.",
+    "Use official SAT sources as metadata-only study logs unless written permission allows storing question text.",
+    "For public release, keep sourceName, licenseNote, and reviewStatus visible for every imported or generated question."
+  ],
+  "sources": [
+    {
+      "id": "opensat-pinesat",
+      "name": "OpenSAT / PineSAT",
+      "urls": [
+        "https://github.com/Anas099X/OpenSAT",
+        "https://pinesat.com/api/questions"
+      ],
+      "licenseSummary": "OpenSAT README describes the project as an open-source/free SAT question databank and says the API is free to use and modify.",
+      "allowedUse": "Local seed bank, subject to admin review for accuracy and originality.",
+      "appPolicy": "Imported directly as sourceType=opensat and reviewStatus=needs_review.",
+      "risk": "Medium"
+    },
+    {
+      "id": "openstax-exercises",
+      "name": "OpenStax Exercises",
+      "urls": [
+        "https://exercises.openstax.org/copyright",
+        "https://github.com/openstax/exercises"
+      ],
+      "licenseSummary": "OpenStax Exercises says many questions are Creative Commons Attribution licensed, but each question needs its own copyright/licensing details checked.",
+      "allowedUse": "Use as a candidate source only after item-level license review and attribution.",
+      "appPolicy": "For now, use OpenStax as a concept/reference source for original SAT Studio questions, not as copied text.",
+      "risk": "Medium"
+    },
+    {
+      "id": "openstax-textbooks",
+      "name": "OpenStax textbooks",
+      "urls": [
+        "https://help.openstax.org/s/article/Licensing-information-of-OpenStax-textbooks",
+        "https://help.openstax.org/s/article/Citing-OpenStax-texts"
+      ],
+      "licenseSummary": "OpenStax textbooks are free and Creative Commons licensed, with attribution and license terms depending on the specific title.",
+      "allowedUse": "Use for lessons, concept references, and original/adapted practice where attribution is preserved.",
+      "appPolicy": "Use as concept references for foundation math/writing explanations; do not copy textbook exercise text without title-level attribution review.",
+      "risk": "Low to Medium"
+    },
+    {
+      "id": "ck12",
+      "name": "CK-12",
+      "urls": [
+        "https://info.ck12.org/terms-of-use"
+      ],
+      "licenseSummary": "CK-12 grants a limited license for educational purposes and has restrictions on resale, commercial use, aggregation, and some redistribution.",
+      "allowedUse": "Private educational reference and concept mapping; review terms before public redistribution.",
+      "appPolicy": "Do not copy CK-12 question text into public bank. Use only as a concept reference unless permission/license is verified.",
+      "risk": "Medium"
+    },
+    {
+      "id": "college-board-official",
+      "name": "College Board official SAT material",
+      "urls": [
+        "https://satsuite.collegeboard.org/sat/testing-rules",
+        "https://satsuite.collegeboard.org/practice/practice-tests/bluebook"
+      ],
+      "licenseSummary": "Official SAT material is owned by College Board and should not be copied into a public app without permission.",
+      "allowedUse": "Metadata-only official practice log: score, source, module, question number, skill, mistake note.",
+      "appPolicy": "Never import official prompts, passages, answer choices, or explanations into reusable question bank.",
+      "risk": "High"
+    },
+    {
+      "id": "cracksat",
+      "name": "CrackSAT.net",
+      "urls": [
+        "https://www.cracksat.net/digital/reading-writing/",
+        "https://www.cracksat.net/about/copyright.html"
+      ],
+      "licenseSummary": "CrackSAT copyright page says users cannot reproduce any material from the website in any format.",
+      "allowedUse": "Reference/link only unless permission is granted. Private family study should be kept out of public bank.",
+      "appPolicy": "Do not scrape or copy CrackSAT prompts into public content. If a family imports material privately, mark it private_family and never expose to public accounts.",
+      "risk": "High"
+    },
+    {
+      "id": "khan-college-board-sat",
+      "name": "Khan Academy / College Board SAT content",
+      "urls": [
+        "https://cdn.kastatic.org/KA-share/sat/KA_CB_license.pdf"
+      ],
+      "licenseSummary": "Khan/College Board SAT license notice says the SAT content is copyrighted and Creative Commons licenses do not apply.",
+      "allowedUse": "Link out or log metadata only.",
+      "appPolicy": "Do not copy Khan/College Board SAT question text into SAT Studio.",
+      "risk": "High"
+    }
+  ]
+}

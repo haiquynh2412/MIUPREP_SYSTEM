@@ -1,0 +1,1421 @@
+{
+  "maxVisibleBeforeMastery": 3,
+  "auditedGeneratedQuestions": 2540,
+  "forms": 1056,
+  "oversizedForms": 125,
+  "annotatedTemplateVariants": 1792,
+  "keptReady": 2517,
+  "rejectedEasyTemplate": 23,
+  "activeByFile": {
+    "kaplan-sat-math-ai-bank.json": 284,
+    "archive-source-ai-bank.json": 1179,
+    "sat-king-supplemental-ai-bank.json": 354,
+    "sat-1590-elite-ai-bank.json": 700
+  },
+  "rejectedByFile": {
+    "kaplan-sat-math-ai-bank.json": 16,
+    "archive-source-ai-bank.json": 1,
+    "sat-king-supplemental-ai-bank.json": 6,
+    "sat-1590-elite-ai-bank.json": 0
+  },
+  "largestOversizedForms": [
+    {
+      "formSizeBeforeLimit": 50,
+      "keptActive": 50,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 50
+      },
+      "sourceMix": {
+        "ai_generated": 50
+      },
+      "samplePrompt": "A 2010 study of urban tree cover surveyed 705 participants and compared 45 sites that differed in cooler sidewalks. After tracking the sites for 7 months, the researchers found that neighborhoods with more shade had lower afternoon temperatures. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of urban tree cover surveyed # participants and compared # sites that differed in cooler sidewalks. after tracking the sites for # months, the researchers found that "
+    },
+    {
+      "formSizeBeforeLimit": 47,
+      "keptActive": 47,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 47
+      },
+      "sourceMix": {
+        "ai_generated": 47
+      },
+      "samplePrompt": "A 2018 study of public transit maps surveyed 802 participants and compared 174 sites that differed in wayfinding. After tracking the sites for 4 months, the researchers found that simplified station labels helped riders plan transfers more quickly. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of public transit maps surveyed # participants and compared # sites that differed in wayfinding. after tracking the sites for # months, the researchers found that sim"
+    },
+    {
+      "formSizeBeforeLimit": 37,
+      "keptActive": 37,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 37
+      },
+      "sourceMix": {
+        "ai_generated": 37
+      },
+      "samplePrompt": "A 2018 study of school gardens surveyed 502 participants and compared 94 sites that differed in student engagement. After tracking the sites for 4 months, the researchers found that classes that maintained gardens reported more voluntary science projects. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of school gardens surveyed # participants and compared # sites that differed in student engagement. after tracking the sites for # months, the researchers found that "
+    },
+    {
+      "formSizeBeforeLimit": 37,
+      "keptActive": 37,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 37
+      },
+      "sourceMix": {
+        "ai_generated": 37
+      },
+      "samplePrompt": "A 2022 study of library programs surveyed 503 participants and compared 91 sites that differed in community attendance. After tracking the sites for 5 months, the researchers found that evening workshops brought in patrons who rarely visited during the day. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of library programs surveyed # participants and compared # sites that differed in community attendance. after tracking the sites for # months, the researchers found t"
+    },
+    {
+      "formSizeBeforeLimit": 33,
+      "keptActive": 33,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 33
+      },
+      "sourceMix": {
+        "ai_generated": 33
+      },
+      "samplePrompt": "A 2012 study of coral restoration surveyed 878 participants and compared 121 sites that differed in reef recovery. After tracking the sites for 5 months, the researchers found that nurseries with mixed species attracted more juvenile fish. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of coral restoration surveyed # participants and compared # sites that differed in reef recovery. after tracking the sites for # months, the researchers found that nu"
+    },
+    {
+      "formSizeBeforeLimit": 29,
+      "keptActive": 29,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 29
+      },
+      "sourceMix": {
+        "ai_generated": 29
+      },
+      "samplePrompt": "A 2016 study of battery design surveyed 879 participants and compared 118 sites that differed in storage capacity. After tracking the sites for 6 months, the researchers found that a revised separator allowed cells to hold a charge for longer periods. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of battery design surveyed # participants and compared # sites that differed in storage capacity. after tracking the sites for # months, the researchers found that a "
+    },
+    {
+      "formSizeBeforeLimit": 28,
+      "keptActive": 28,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Statistics",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 22,
+        "Hard": 6
+      },
+      "sourceMix": {
+        "ai_generated": 20,
+        "sat_1590": 8
+      },
+      "samplePrompt": "The mean of five numbers is 18.0. Four of the numbers are 7, 11, 17, and 21. What is the fifth number?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Statistics|multiple_choice|the mean of five numbers is #. four of the numbers are #, #, #, and #. what is the fifth number?"
+    },
+    {
+      "formSizeBeforeLimit": 27,
+      "keptActive": 27,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 27
+      },
+      "sourceMix": {
+        "ai_generated": 27
+      },
+      "samplePrompt": "By June, the garden volunteers had finished week 31 of the prototype after reviewing 17 records ______ by September, the neighborhood association had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by june, the garden volunteers had finished week # of the prototype after reviewing # records ______ by september, the neighborhood association had begun testing the results. which cho"
+    },
+    {
+      "formSizeBeforeLimit": 26,
+      "keptActive": 26,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 26
+      },
+      "sourceMix": {
+        "ai_generated": 26
+      },
+      "samplePrompt": "A 2019 study of bird migration surveyed 876 participants and compared 127 sites that differed in seasonal timing. After tracking the sites for 3 months, the researchers found that tracking data showed that some birds adjusted routes after unusually warm springs. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of bird migration surveyed # participants and compared # sites that differed in seasonal timing. after tracking the sites for # months, the researchers found that tra"
+    },
+    {
+      "formSizeBeforeLimit": 24,
+      "keptActive": 24,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Central Ideas and Details",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 24
+      },
+      "sourceMix": {
+        "ai_generated": 24
+      },
+      "samplePrompt": "A 2023 study of ancient pottery surveyed 877 participants and compared 124 sites that differed in trade routes. After tracking the sites for 4 months, the researchers found that chemical traces showed that clay vessels moved between distant towns. They concluded that local conditions can shape outcomes in ways that broad regional averages may miss.\n\nWhich choice best states the main idea of the text?",
+      "formKey": "Reading and Writing|Information and Ideas|Central Ideas and Details|multiple_choice|a # study of ancient pottery surveyed # participants and compared # sites that differed in trade routes. after tracking the sites for # months, the researchers found that chemi"
+    },
+    {
+      "formSizeBeforeLimit": 23,
+      "keptActive": 23,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 23
+      },
+      "sourceMix": {
+        "ai_generated": 23
+      },
+      "samplePrompt": "The student editor needed two items for the grant draft presentation in room 39 after reviewing 36 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the student editor needed two items for the grant draft presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so "
+    },
+    {
+      "formSizeBeforeLimit": 22,
+      "keptActive": 22,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Exponential functions",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 22
+      },
+      "sourceMix": {
+        "ai_generated": 22
+      },
+      "samplePrompt": "A quantity starts at 3 and is multiplied by 2 each year. What is its value after 2 years?",
+      "formKey": "Math|Advanced Math|Exponential functions|multiple_choice|a quantity starts at # and is multiplied by # each year. what is its value after # years?"
+    },
+    {
+      "formSizeBeforeLimit": 22,
+      "keptActive": 22,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Percentages",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 22
+      },
+      "sourceMix": {
+        "ai_generated": 22
+      },
+      "samplePrompt": "A price of $80 is increased by 10%. What is the new price?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Percentages|multiple_choice|a price of # is increased by #. what is the new price?"
+    },
+    {
+      "formSizeBeforeLimit": 22,
+      "keptActive": 22,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 22
+      },
+      "sourceMix": {
+        "ai_generated": 22
+      },
+      "samplePrompt": "The city council needed two items for the map update presentation in room 23 after reviewing 12 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the city council needed two items for the map update presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so tha"
+    },
+    {
+      "formSizeBeforeLimit": 22,
+      "keptActive": 22,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 22
+      },
+      "sourceMix": {
+        "ai_generated": 22
+      },
+      "samplePrompt": "By June, the biology class had finished week 49 of the lab notebook after reviewing 35 records ______ by September, the lab partners had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by june, the biology class had finished week # of the lab notebook after reviewing # records ______ by september, the lab partners had begun testing the results. which choice completes"
+    },
+    {
+      "formSizeBeforeLimit": 20,
+      "keptActive": 20,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of linear equations",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 20
+      },
+      "sourceMix": {
+        "ai_generated": 20
+      },
+      "samplePrompt": "A system of equations is shown:\n\nx + y = 5\nx - y = 3\n\nWhat is the value of x?",
+      "formKey": "Math|Algebra|Systems of linear equations|multiple_choice|a system of equations is shown: v + v = # v - v = # what is the value of x?"
+    },
+    {
+      "formSizeBeforeLimit": 20,
+      "keptActive": 20,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Ratios and rates",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 20
+      },
+      "sourceMix": {
+        "ai_generated": 20
+      },
+      "samplePrompt": "The ratio of red tiles to blue tiles is 2:3. If there are 20 tiles total, how many blue tiles are there?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Ratios and rates|multiple_choice|the ratio of red tiles to blue tiles is #:#. if there are # tiles total, how many blue tiles are there?"
+    },
+    {
+      "formSizeBeforeLimit": 20,
+      "keptActive": 20,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 20
+      },
+      "sourceMix": {
+        "ai_generated": 20
+      },
+      "samplePrompt": "The debate coach needed two items for the field report presentation in room 35 after reviewing 18 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the debate coach needed two items for the field report presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so t"
+    },
+    {
+      "formSizeBeforeLimit": 20,
+      "keptActive": 20,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 20
+      },
+      "sourceMix": {
+        "ai_generated": 20
+      },
+      "samplePrompt": "By June, the astronomy club had finished week 38 of the exhibit plan after reviewing 17 records ______ by September, the data team had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by june, the astronomy club had finished week # of the exhibit plan after reviewing # records ______ by september, the data team had begun testing the results. which choice completes t"
+    },
+    {
+      "formSizeBeforeLimit": 19,
+      "keptActive": 19,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 19
+      },
+      "sourceMix": {
+        "ai_generated": 19
+      },
+      "samplePrompt": "The astronomy club needed two items for the exhibit plan presentation in room 31 after reviewing 27 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the astronomy club needed two items for the exhibit plan presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so"
+    },
+    {
+      "formSizeBeforeLimit": 19,
+      "keptActive": 19,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 19
+      },
+      "sourceMix": {
+        "ai_generated": 19
+      },
+      "samplePrompt": "The garden volunteers needed two items for the prototype presentation in room 49 after reviewing 45 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the garden volunteers needed two items for the prototype presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so"
+    },
+    {
+      "formSizeBeforeLimit": 19,
+      "keptActive": 19,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 19
+      },
+      "sourceMix": {
+        "ai_generated": 19
+      },
+      "samplePrompt": "The biology class needed two items for the lab notebook presentation in room 45 after reviewing 27 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the biology class needed two items for the lab notebook presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so "
+    },
+    {
+      "formSizeBeforeLimit": 18,
+      "keptActive": 18,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 18
+      },
+      "sourceMix": {
+        "ai_generated": 18
+      },
+      "samplePrompt": "A circular practice target has radius 12. What is its area?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|multiple_choice|a circular practice target has radius #. what is its area?"
+    },
+    {
+      "formSizeBeforeLimit": 18,
+      "keptActive": 18,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 18
+      },
+      "sourceMix": {
+        "ai_generated": 18
+      },
+      "samplePrompt": "The robotics team needed two items for the survey presentation in room 28 after reviewing 18 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the robotics team needed two items for the survey presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so that i"
+    },
+    {
+      "formSizeBeforeLimit": 18,
+      "keptActive": 18,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 18
+      },
+      "sourceMix": {
+        "ai_generated": 18
+      },
+      "samplePrompt": "By June, the museum staff had finished week 45 of the data review after reviewing 17 records ______ by September, the visiting scholars had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by june, the museum staff had finished week # of the data review after reviewing # records ______ by september, the visiting scholars had begun testing the results. which choice comple"
+    },
+    {
+      "formSizeBeforeLimit": 18,
+      "keptActive": 18,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 18
+      },
+      "sourceMix": {
+        "ai_generated": 18
+      },
+      "samplePrompt": "The museum staff needed two items for the data review presentation in room 38 after reviewing 27 records ______ a clear diagram and a short summary.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the museum staff needed two items for the data review presentation in room # after reviewing # records ______ a clear diagram and a short summary. which choice completes the text so th"
+    },
+    {
+      "formSizeBeforeLimit": 17,
+      "keptActive": 17,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions and slope",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 11,
+        "Easy": 2,
+        "Hard": 4
+      },
+      "sourceMix": {
+        "ai_generated": 9,
+        "sat_king": 8
+      },
+      "samplePrompt": "A line passes through (5, 5) and (9, 25). What is the slope of the line?",
+      "formKey": "Math|Algebra|Linear functions and slope|multiple_choice|a line passes through (#, #) and (#, #). what is the slope of the line?"
+    },
+    {
+      "formSizeBeforeLimit": 16,
+      "keptActive": 0,
+      "rejectedEasy": 16,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Probability",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Easy": 16
+      },
+      "sourceMix": {
+        "ai_generated": 16
+      },
+      "samplePrompt": "A bag contains 2 red marbles, 3 blue marbles, and 1 green marbles. If one marble is selected at random, what is the probability that it is blue?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Probability|multiple_choice|a bag contains # red marbles, # blue marbles, and # green marbles. if one marble is selected at random, what is the probability that it is blue?"
+    },
+    {
+      "formSizeBeforeLimit": 16,
+      "keptActive": 16,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 16
+      },
+      "sourceMix": {
+        "ai_generated": 16
+      },
+      "samplePrompt": "The map update included updated charts from week 29 after reviewing 16 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the map update included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so that "
+    },
+    {
+      "formSizeBeforeLimit": 14,
+      "keptActive": 14,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Lines, angles, and triangles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Easy": 14
+      },
+      "sourceMix": {
+        "ai_generated": 14
+      },
+      "samplePrompt": "Two angles of a triangle measure 35 degrees and 45 degrees. What is the measure, in degrees, of the third angle?",
+      "formKey": "Math|Geometry and Trigonometry|Lines, angles, and triangles|multiple_choice|two angles of a triangle measure # degrees and # degrees. what is the measure, in degrees, of the third angle?"
+    },
+    {
+      "formSizeBeforeLimit": 14,
+      "keptActive": 14,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 14
+      },
+      "sourceMix": {
+        "ai_generated": 14
+      },
+      "samplePrompt": "The survey included updated charts from week 4 after reviewing 40 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the survey included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so that it c"
+    },
+    {
+      "formSizeBeforeLimit": 14,
+      "keptActive": 14,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 14
+      },
+      "sourceMix": {
+        "ai_generated": 14
+      },
+      "samplePrompt": "The exhibit plan included updated charts from week 27 after reviewing 37 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the exhibit plan included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so tha"
+    },
+    {
+      "formSizeBeforeLimit": 14,
+      "keptActive": 14,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 14
+      },
+      "sourceMix": {
+        "ai_generated": 14
+      },
+      "samplePrompt": "By March, the student editor had finished week 37 of the grant draft after reviewing 44 records ______ by September, the review board had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by march, the student editor had finished week # of the grant draft after reviewing # records ______ by september, the review board had begun testing the results. which choice complete"
+    },
+    {
+      "formSizeBeforeLimit": 14,
+      "keptActive": 14,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations and functions",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Hard": 12,
+        "Medium": 2
+      },
+      "sourceMix": {
+        "sat_1590": 14
+      },
+      "samplePrompt": "For g(x) = 5(x - 1)^2 + 2, what is g(4)?",
+      "formKey": "Math|Advanced Math|Nonlinear equations and functions|student_produced_response|for f(v) = #(v - #)^# + #, what is f(#)?"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Area and volume",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 12
+      },
+      "sourceMix": {
+        "ai_generated": 12
+      },
+      "samplePrompt": "A rectangular prism has length 4, width 3, and height 2. What is its volume?",
+      "formKey": "Math|Geometry and Trigonometry|Area and volume|multiple_choice|a rectangular prism has length #, width #, and height #. what is its volume?"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 12
+      },
+      "sourceMix": {
+        "ai_generated": 12
+      },
+      "samplePrompt": "The grant draft included updated charts from week 32 after reviewing 16 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the grant draft included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so that"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 12
+      },
+      "sourceMix": {
+        "ai_generated": 12
+      },
+      "samplePrompt": "The field report included updated charts from week 50 after reviewing 34 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the field report included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so tha"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 12
+      },
+      "sourceMix": {
+        "ai_generated": 12
+      },
+      "samplePrompt": "The prototype included updated charts from week 20 after reviewing 37 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the prototype included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so that i"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 12
+      },
+      "sourceMix": {
+        "ai_generated": 12
+      },
+      "samplePrompt": "The lab notebook included updated charts from week 16 after reviewing 19 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the lab notebook included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so tha"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 12
+      },
+      "sourceMix": {
+        "ai_generated": 12
+      },
+      "samplePrompt": "The data review included updated charts from week 34 after reviewing 37 records ______ however, the appendix still contained the older data table.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|the data review included updated charts from week # after reviewing # records ______ however, the appendix still contained the older data table. which choice completes the text so that"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of linear equations",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Hard": 9,
+        "Medium": 3
+      },
+      "sourceMix": {
+        "sat_1590": 12
+      },
+      "samplePrompt": "The system x + 2y = 5 and 3x - y = 8 has solution (x, y). What is the value of x + y?",
+      "formKey": "Math|Algebra|Systems of linear equations|multiple_choice|the system v + 2y = # and 3x - v = # has solution ( v, v). what is the value of v + v?"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions and slope",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Hard": 10,
+        "Medium": 2
+      },
+      "sourceMix": {
+        "sat_1590": 12
+      },
+      "samplePrompt": "A linear function h satisfies h(7) = -1 and h(12) = 39. What is the slope of the graph of y = h(x)?",
+      "formKey": "Math|Algebra|Linear functions and slope|student_produced_response|a linear function h satisfies f(#) = -# and f(#) = #. what is the slope of the graph of v = f(v)?"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Statistics",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Medium": 3,
+        "Hard": 9
+      },
+      "sourceMix": {
+        "sat_1590": 12
+      },
+      "samplePrompt": "Four values in a data set are 9, 13, 16, and 22. If the mean of the five-value data set is 19, what is the fifth value?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Statistics|student_produced_response|four values in a data set are #, #, #, and #. if the mean of the five-value data set is #, what is the fifth value?"
+    },
+    {
+      "formSizeBeforeLimit": 12,
+      "keptActive": 12,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Hard": 10,
+        "Medium": 2
+      },
+      "sourceMix": {
+        "sat_1590": 12
+      },
+      "samplePrompt": "A circle used in a geometry model has diameter 8. What is its radius?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|student_produced_response|a circle used in a geometry model has diameter #. what is its radius?"
+    },
+    {
+      "formSizeBeforeLimit": 11,
+      "keptActive": 11,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations and functions",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Hard": 9,
+        "Medium": 2
+      },
+      "sourceMix": {
+        "sat_1590": 11
+      },
+      "samplePrompt": "For g(x) = 6(x - 2)^2 + 5, what is g(5)?",
+      "formKey": "Math|Advanced Math|Nonlinear equations and functions|multiple_choice|for f(v) = #(v - #)^# + #, what is f(#)?"
+    },
+    {
+      "formSizeBeforeLimit": 10,
+      "keptActive": 10,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Right triangles and trigonometry",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 10
+      },
+      "sourceMix": {
+        "ai_generated": 10
+      },
+      "samplePrompt": "In a right triangle, an acute angle has opposite side 3 and hypotenuse 5. What is the sine of that angle?",
+      "formKey": "Math|Geometry and Trigonometry|Right triangles and trigonometry|multiple_choice|in a right triangle, an acute angle has opposite side # and hypotenuse #. what is the sine of that angle?"
+    },
+    {
+      "formSizeBeforeLimit": 10,
+      "keptActive": 10,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Hard": 8,
+        "Medium": 2
+      },
+      "sourceMix": {
+        "sat_1590": 10
+      },
+      "samplePrompt": "A circle has radius 3. A central angle of 60 degrees intercepts an arc. What is the arc length in terms of pi?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|multiple_choice|a circle has radius #. a central angle of # degrees intercepts an arc. what is the arc length in terms of pi?"
+    },
+    {
+      "formSizeBeforeLimit": 10,
+      "keptActive": 10,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Exponential functions",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Medium": 2,
+        "Hard": 8
+      },
+      "sourceMix": {
+        "sat_1590": 10
+      },
+      "samplePrompt": "A quantity starts at 3 and doubles once per step. What is the value after 4 steps?",
+      "formKey": "Math|Advanced Math|Exponential functions|student_produced_response|a quantity starts at # and doubles once per step. what is the value after # steps?"
+    },
+    {
+      "formSizeBeforeLimit": 9,
+      "keptActive": 9,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Information and Ideas",
+      "skill": "Command of Evidence",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 9
+      },
+      "sourceMix": {
+        "ai_generated": 9
+      },
+      "samplePrompt": "A student claims that a tutoring program involving 26 participants had a measurable effect during a fall trial. Which finding, if true, would most directly support the claim?",
+      "formKey": "Reading and Writing|Information and Ideas|Command of Evidence|multiple_choice|a student claims that a tutoring program involving # participants had a measurable effect during a fall trial. which finding, if true, would most directly support the claim?"
+    },
+    {
+      "formSizeBeforeLimit": 9,
+      "keptActive": 9,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Percentages",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 9
+      },
+      "sourceMix": {
+        "ai_generated": 9
+      },
+      "samplePrompt": "In a museum fundraiser, a price of $245 is increased by 90%. What is the new price?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Percentages|multiple_choice|in a museum fundraiser, a price of # is increased by #. what is the new price?"
+    },
+    {
+      "formSizeBeforeLimit": 9,
+      "keptActive": 9,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Craft and Structure",
+      "skill": "Words in Context",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 9
+      },
+      "sourceMix": {
+        "ai_generated": 9
+      },
+      "samplePrompt": "During the lab meeting, after reviewing 17 field notes, the researcher's summary was unusually ______: it focused on steps that could be completed with the available budget.\n\nWhich choice completes the text with the most logical and precise word?",
+      "formKey": "Reading and Writing|Craft and Structure|Words in Context|multiple_choice|during the lab meeting, after reviewing # field notes, the researcher's summary was unusually ______: it focused on steps that could be completed with the available budget. which choice c"
+    },
+    {
+      "formSizeBeforeLimit": 9,
+      "keptActive": 7,
+      "rejectedEasy": 2,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of linear equations",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 4,
+        "Hard": 3,
+        "Easy": 2
+      },
+      "sourceMix": {
+        "sat_king": 9
+      },
+      "samplePrompt": "A system is shown:\n\nx + y = 5\nx - y = 1\n\nWhat is the value of x?",
+      "formKey": "Math|Algebra|Systems of linear equations|multiple_choice|a system is shown: v + v = # v - v = # what is the value of x?"
+    },
+    {
+      "formSizeBeforeLimit": 9,
+      "keptActive": 8,
+      "rejectedEasy": 1,
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Exponential functions",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Hard": 4,
+        "Medium": 4,
+        "Easy": 1
+      },
+      "sourceMix": {
+        "sat_king": 9
+      },
+      "samplePrompt": "A population starts at 3 hundred and doubles each year. After 3 years, how many hundreds are in the population?",
+      "formKey": "Math|Advanced Math|Exponential functions|multiple_choice|a population starts at # hundred and doubles each year. after # years, how many hundreds are in the population?"
+    },
+    {
+      "formSizeBeforeLimit": 9,
+      "keptActive": 9,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions and slope",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Hard": 8,
+        "Medium": 1
+      },
+      "sourceMix": {
+        "sat_1590": 9
+      },
+      "samplePrompt": "Function f is linear. The table gives two values: f(5) = -1 and f(10) = 29. What is the slope of the graph of y = f(x)?",
+      "formKey": "Math|Algebra|Linear functions and slope|multiple_choice|function f is linear. the table gives two values: f(#) = -# and f(#) = #. what is the slope of the graph of v = f(v)?"
+    },
+    {
+      "formSizeBeforeLimit": 9,
+      "keptActive": 9,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Advanced Math",
+      "skill": "Nonlinear equations and functions",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Medium": 2,
+        "Hard": 7
+      },
+      "sourceMix": {
+        "sat_1590": 9
+      },
+      "samplePrompt": "For f(x) = 4(x - -2)^2 + 7, what is f(2)?",
+      "formKey": "Math|Advanced Math|Nonlinear equations and functions|student_produced_response|for f(v) = #(v - -#)^# + #, what is f(#)?"
+    },
+    {
+      "formSizeBeforeLimit": 8,
+      "keptActive": 8,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Percentages",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 8
+      },
+      "sourceMix": {
+        "ai_generated": 8
+      },
+      "samplePrompt": "In a lab fundraiser, a price of $110 is increased by 55%. What is the new price?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Percentages|multiple_choice|in a lab fundraiser, a price of # is increased by #. what is the new price?"
+    },
+    {
+      "formSizeBeforeLimit": 8,
+      "keptActive": 8,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Lines, angles, and triangles",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Medium": 4,
+        "Hard": 3,
+        "Easy": 1
+      },
+      "sourceMix": {
+        "sat_king": 8
+      },
+      "samplePrompt": "In a triangle, two angle measures are 40 degrees and 60 degrees. What is the third angle measure?",
+      "formKey": "Math|Geometry and Trigonometry|Lines, angles, and triangles|student_produced_response|in a triangle, two angle measures are # degrees and # degrees. what is the third angle measure?"
+    },
+    {
+      "formSizeBeforeLimit": 8,
+      "keptActive": 8,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Percentages",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Hard": 7,
+        "Medium": 1
+      },
+      "sourceMix": {
+        "sat_1590": 8
+      },
+      "samplePrompt": "A scholarship fund of $150 thousand decreases by 12%. What is the new amount, in thousands of dollars?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Percentages|student_produced_response|a scholarship fund of # thousand decreases by #. what is the new amount, in thousands of dollars?"
+    },
+    {
+      "formSizeBeforeLimit": 8,
+      "keptActive": 8,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Right triangles and trigonometry",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Medium": 2,
+        "Hard": 6
+      },
+      "sourceMix": {
+        "sat_1590": 8
+      },
+      "samplePrompt": "In a right triangle, angle T has adjacent side 16 and hypotenuse 20. What is cos(T)?",
+      "formKey": "Math|Geometry and Trigonometry|Right triangles and trigonometry|student_produced_response|in a right triangle, angle t has adjacent side # and hypotenuse #. what is cos(t)?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear functions and slope",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 6,
+        "Hard": 1
+      },
+      "sourceMix": {
+        "ai_generated": 6,
+        "sat_king": 1
+      },
+      "samplePrompt": "A line passes through (2, -1) and (6, 7). What is the slope of the line?",
+      "formKey": "Math|Algebra|Linear functions and slope|multiple_choice|a line passes through (#, -#) and (#, #). what is the slope of the line?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 7
+      },
+      "sourceMix": {
+        "ai_generated": 7
+      },
+      "samplePrompt": "A circular workshop display has radius 7. What is its area?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|multiple_choice|a circular workshop display has radius #. what is its area?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of linear equations",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 7
+      },
+      "sourceMix": {
+        "ai_generated": 7
+      },
+      "samplePrompt": "In a stadium planning problem, two values x and y satisfy this system:\n\nx + y = 7\nx - y = 15\n\nWhat is the value of x?",
+      "formKey": "Math|Algebra|Systems of linear equations|multiple_choice|in a stadium planning problem, two values x and y satisfy this system: v + v = # v - v = # what is the value of x?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 7
+      },
+      "sourceMix": {
+        "ai_generated": 7
+      },
+      "samplePrompt": "A circular market display has radius 99. What is its area?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|multiple_choice|a circular market display has radius #. what is its area?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 7
+      },
+      "sourceMix": {
+        "ai_generated": 7
+      },
+      "samplePrompt": "A circular stadium display has radius 25. What is its area?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|multiple_choice|a circular stadium display has radius #. what is its area?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Percentages",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 7
+      },
+      "sourceMix": {
+        "ai_generated": 7
+      },
+      "samplePrompt": "In a stadium fundraiser, a price of $65 is increased by 50%. What is the new price?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Percentages|multiple_choice|in a stadium fundraiser, a price of # is increased by #. what is the new price?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Percentages",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 7
+      },
+      "sourceMix": {
+        "ai_generated": 7
+      },
+      "samplePrompt": "In a garden fundraiser, a price of $175 is increased by 20%. What is the new price?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Percentages|multiple_choice|in a garden fundraiser, a price of # is increased by #. what is the new price?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 7
+      },
+      "sourceMix": {
+        "ai_generated": 7
+      },
+      "samplePrompt": "By March, the debate coach had finished week 24 of the field report after reviewing 38 records ______ by September, the tournament judges had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by march, the debate coach had finished week # of the field report after reviewing # records ______ by september, the tournament judges had begun testing the results. which choice comp"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 6,
+      "rejectedEasy": 1,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Area and volume",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 3,
+        "Hard": 3,
+        "Easy": 1
+      },
+      "sourceMix": {
+        "sat_king": 7
+      },
+      "samplePrompt": "A rectangular display panel in design plan B has length 7 and width 4. What is its area?",
+      "formKey": "Math|Geometry and Trigonometry|Area and volume|multiple_choice|a rectangular display panel in design plan @ has length # and width #. what is its area?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Right triangles and trigonometry",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Hard": 6,
+        "Medium": 1
+      },
+      "sourceMix": {
+        "sat_1590": 7
+      },
+      "samplePrompt": "In right triangle RST, angle R has opposite side 10 and hypotenuse 26. What is sin(R)?",
+      "formKey": "Math|Geometry and Trigonometry|Right triangles and trigonometry|student_produced_response|in right triangle rst, angle r has opposite side # and hypotenuse #. what is sin(r)?"
+    },
+    {
+      "formSizeBeforeLimit": 7,
+      "keptActive": 7,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Area and volume",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Hard": 6,
+        "Medium": 1
+      },
+      "sourceMix": {
+        "sat_1590": 7
+      },
+      "samplePrompt": "Two similar solids have corresponding side lengths in the ratio 1:3. The smaller solid has volume 10. What is the volume of the larger solid?",
+      "formKey": "Math|Geometry and Trigonometry|Area and volume|student_produced_response|two similar solids have corresponding side lengths in the ratio #:#. the smaller solid has volume #. what is the volume of the larger solid?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Easy": 4,
+        "Hard": 2
+      },
+      "sourceMix": {
+        "ai_generated": 4,
+        "sat_king": 2
+      },
+      "samplePrompt": "If 6x - 1 = 41, what is the value of x?",
+      "formKey": "Math|Algebra|Linear equations in one variable|multiple_choice|if 6x - # = #, what is the value of x?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 5,
+      "rejectedEasy": 1,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Easy": 6
+      },
+      "sourceMix": {
+        "ai_generated": 6
+      },
+      "samplePrompt": "If 8x + 6 = 86, what is the value of x?",
+      "formKey": "Math|Algebra|Linear equations in one variable|multiple_choice|if 8x + # = #, what is the value of x?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Linear equations in one variable",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Easy": 4,
+        "Medium": 2
+      },
+      "sourceMix": {
+        "ai_generated": 4,
+        "sat_king": 2
+      },
+      "samplePrompt": "If 2x - 1 = 5, what is the value of x?",
+      "formKey": "Math|Algebra|Linear equations in one variable|multiple_choice|if 2x - # = #, what is the value of x?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Algebra",
+      "skill": "Systems of linear equations",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 6
+      },
+      "sourceMix": {
+        "ai_generated": 6
+      },
+      "samplePrompt": "In a garden planning problem, two values x and y satisfy this system:\n\nx + y = 24\nx - y = 4\n\nWhat is the value of x?",
+      "formKey": "Math|Algebra|Systems of linear equations|multiple_choice|in a garden planning problem, two values x and y satisfy this system: v + v = # v - v = # what is the value of x?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 6
+      },
+      "sourceMix": {
+        "ai_generated": 6
+      },
+      "samplePrompt": "A circular garden display has radius 30. What is its area?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|multiple_choice|a circular garden display has radius #. what is its area?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Circles",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 6
+      },
+      "sourceMix": {
+        "ai_generated": 6
+      },
+      "samplePrompt": "A circular school display has radius 12. What is its area?",
+      "formKey": "Math|Geometry and Trigonometry|Circles|multiple_choice|a circular school display has radius #. what is its area?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 6
+      },
+      "sourceMix": {
+        "ai_generated": 6
+      },
+      "samplePrompt": "By March, the robotics team had finished week 17 of the survey after reviewing 38 records ______ by September, the design committee had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by march, the robotics team had finished week # of the survey after reviewing # records ______ by september, the design committee had begun testing the results. which choice completes "
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Reading and Writing",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Medium": 6
+      },
+      "sourceMix": {
+        "ai_generated": 6
+      },
+      "samplePrompt": "By March, the city council had finished week 10 of the map update after reviewing 38 records ______ by September, the transportation office had begun testing the results.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+      "formKey": "Reading and Writing|Standard English Conventions|Boundaries|multiple_choice|by march, the city council had finished week # of the map update after reviewing # records ______ by september, the transportation office had begun testing the results. which choice co"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 6,
+      "rejectedEasy": 0,
+      "section": "Math",
+      "domain": "Problem-Solving and Data Analysis",
+      "skill": "Data interpretation",
+      "questionType": "multiple_choice",
+      "difficultyMix": {
+        "Hard": 2,
+        "Medium": 3,
+        "Easy": 1
+      },
+      "sourceMix": {
+        "sat_king": 6
+      },
+      "samplePrompt": "A table shows that a club had 43 members in April and 56 members in May. By how many members did the club increase?",
+      "formKey": "Math|Problem-Solving and Data Analysis|Data interpretation|multiple_choice|a table shows that a club had # members in april and # members in may. by how many members did the club increase?"
+    },
+    {
+      "formSizeBeforeLimit": 6,
+      "keptActive": 5,
+      "rejectedEasy": 1,
+      "section": "Math",
+      "domain": "Geometry and Trigonometry",
+      "skill": "Right triangles and trigonometry",
+      "questionType": "student_produced_response",
+      "difficultyMix": {
+        "Medium": 3,
+        "Hard": 2,
+        "Easy": 1
+      },
+      "sourceMix": {
+        "sat_king": 6
+      },
+      "samplePrompt": "In a right triangle, the side opposite angle A is 9 and the hypotenuse is 15. What is sin(A)?",
+      "formKey": "Math|Geometry and Trigonometry|Right triangles and trigonometry|student_produced_response|in a right triangle, the side opposite angle a is # and the hypotenuse is #. what is sin(v)?"
+    }
+  ],
+  "policy": "Repeated hard/medium forms stay active but are annotated with a formId. The app hides a form after the learner answers any variant correctly and shows only a small set while unmastered. Easy repeated forms are rejected unless they are quick mental-math drills."
+}

@@ -1,0 +1,2012 @@
+[
+  {
+    "id": "antigravity-hard-2356ab37",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 4x + 3\ny = 2x − 5\n\nHow many real solutions does the system above have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: Set equal: 2x − 5 = x² − 4x + 3 → x² − 6x + 8 = 0 → (x−2)(x−4) = 0 → x = 2, 4. Two intersection points ⇒ 2 solutions.\nSlow: Discriminant Δ = 36 − 32 = 4 > 0 confirms two distinct real roots.",
+      "distractors": {
+        "A": "Sign error: rearranging to x² − 6x + 8 = 0 incorrectly as x² − 6x + 12 = 0 gives Δ < 0.",
+        "B": "Confuses Δ > 0 with exactly one solution (tangent); Δ = 0 gives one solution, not Δ > 0.",
+        "D": "Treats the system as cubic or double-counts a repeated root that doesn't exist here."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute linear into quadratic and analyse discriminant",
+      "trapTypes": [
+        "sign error in rearrangement",
+        "discriminant miscalculation"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-b0c99753",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of k does the line y = kx − 3 intersect the parabola y = x² exactly once (tangent)?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k = −2√3 only"
+      },
+      {
+        "letter": "B",
+        "text": "k = 2√3 only"
+      },
+      {
+        "letter": "C",
+        "text": "k = ±2√3"
+      },
+      {
+        "letter": "D",
+        "text": "k = 0"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: Set kx − 3 = x² → x² − kx + 3 = 0. Tangency ⇒ Δ = 0: k² − 12 = 0 → k² = 12 → k = ±2√3.\nSlow: Each sign of k gives a different tangent line to y = x²: y = 2√3·x − 3 touches the parabola in the first quadrant; y = −2√3·x − 3 touches it in the second quadrant.",
+      "distractors": {
+        "A": "Takes only the negative root, forgetting the positive root also satisfies k² = 12.",
+        "B": "Takes only the positive root, forgetting the negative root also satisfies k² = 12.",
+        "D": "Sets k = 0 and checks y = −3 against y = x², which gives x² = −3 (no solution, not tangent)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero for tangency condition",
+      "trapTypes": [
+        "forgetting ± from square root",
+        "sign confusion in constant term"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-56af4e62",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A circle has equation x² + y² = 25 and a line has equation y = x + 7. How many points of intersection do the circle and line have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "Infinitely many"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: Substitute y = x + 7 into x² + y² = 25: x² + (x+7)² = 25 → 2x² + 14x + 49 = 25 → 2x² + 14x + 24 = 0 → x² + 7x + 12 = 0. Δ = 49 − 48 = 1 > 0 → (x+3)(x+4) = 0 → x = −3, −4. Two intersection points.\nSlow: Verify: (−3, 4) → 9+16 = 25 ✓; (−4, 3) → 16+9 = 25 ✓.",
+      "distractors": {
+        "A": "Expansion error: incorrectly getting 2x²+14x+74 = 0 yields Δ < 0, falsely suggesting no intersection.",
+        "B": "Arithmetic slip making Δ = 0 instead of Δ = 1, concluding tangent instead of secant.",
+        "D": "A line can intersect a circle in at most 2 points; infinitely many is impossible."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute linear into circle equation and count roots",
+      "trapTypes": [
+        "arithmetic error in expansion",
+        "forgetting to simplify"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-e2b2e413",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = 2x² − 3x + 1\ny = x − 1\n\nWhat is the sum of the x-coordinates of the points where the line intersects the parabola?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Set x − 1 = 2x² − 3x + 1 → 2x² − 4x + 2 = 0 → x² − 2x + 1 = 0. By Vieta's, sum of roots = 2. (Note: Δ = 0 here, so both roots equal 1 — the line is tangent at x = 1, and the 'sum' of the double root is 2.)\nSlow: (x−1)² = 0 → x = 1 (double root). Sum = 1 + 1 = 2.",
+      "distractors": {
+        "A": "Uses the single double-root x = 1 as the 'sum', forgetting that multiplicity means 1+1 = 2.",
+        "C": "Applies Vieta's to 2x²−3x+1 = 0 (sum = 3/2) and rounds to 3, mixing up with the reduced equation.",
+        "D": "Confuses the sum with the product or adds extraneous values from arithmetic errors."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Use Vieta's formulas on the substituted quadratic",
+      "trapTypes": [
+        "confusing Vieta's sum with the original equation",
+        "double-root misinterpretation"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-d3a57dc6",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x² + y² = 50\ny = 3x + 10\n\nIf (a, b) and (c, d) are the solutions to the system above, what is the value of a + c?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-6"
+      },
+      {
+        "letter": "B",
+        "text": "-3"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Substitute y = 3x + 10 into x² + y² = 50: x² + (3x+10)² = 50 → x² + 9x² + 60x + 100 = 50 → 10x² + 60x + 50 = 0 → x² + 6x + 5 = 0. By Vieta's, sum of roots = −6.\nSlow: Factor (x+1)(x+5) = 0 → x = −1, −5. Sum = −1 + (−5) = −6.",
+      "distractors": {
+        "B": "Takes −b/a from the wrong equation or halves the sum, getting −3 instead of −6.",
+        "C": "Sign error: uses +6/1 instead of −6/1 for Vieta's sum.",
+        "D": "Drops the negative sign entirely from Vieta's formula."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute and apply Vieta's sum formula",
+      "trapTypes": [
+        "sign error in Vieta's",
+        "dividing by leading coefficient incorrectly"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-b4ad0621",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The height h, in meters, of a projectile t seconds after launch is given by h = −5t² + 20t. A horizontal boundary is at height h = 15. How many times does the projectile cross the boundary?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "The projectile never reaches height 15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: Set −5t² + 20t = 15 → −5t² + 20t − 15 = 0 → t² − 4t + 3 = 0. Δ = 16 − 12 = 4 > 0 → two distinct positive times t = 1, t = 3. The projectile crosses h = 15 on the way up and again on the way down.\nSlow: Factor (t−1)(t−3) = 0 ✓. Both t > 0 so both are physically valid.",
+      "distractors": {
+        "A": "Arithmetic error leads to Δ < 0; perhaps forgets to divide by −5.",
+        "B": "Confuses two crossings with one tangent point, or discards one root as 'extraneous'.",
+        "D": "Finds the maximum h = 20 but incorrectly compares or makes an error in the setup."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Translate real-world scenario into a line-parabola system",
+      "trapTypes": [
+        "discarding a valid positive root",
+        "sign error dividing by negative coefficient"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-465ddca7",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what value of b does the line y = 4x + b intersect the parabola y = x² + 4x + 5 at exactly one point?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "b = 4"
+      },
+      {
+        "letter": "B",
+        "text": "b = 5"
+      },
+      {
+        "letter": "C",
+        "text": "b = 6"
+      },
+      {
+        "letter": "D",
+        "text": "b = 1"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Set 4x + b = x² + 4x + 5 → x² + 5 − b = 0 → x² = b − 5. Exactly one intersection ⇒ Δ = 0 for x² + 0x + (5−b) = 0 → Δ = 0 − 4(5−b) = 4b − 20 = 0 → b = 5.\nSlow: With b = 5, x² = 0 → x = 0, y = 20. One point of tangency.",
+      "distractors": {
+        "A": "Off-by-one: subtracts the coefficient 4 from the constant or makes a rearrangement error.",
+        "C": "Adds 1 extra to the constant; may confuse 5 − b = −1 with 5 − b = 0.",
+        "D": "Incorrectly simplifies and solves b − 4 = 0 from a wrong intermediate step."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Equate and set discriminant to zero for tangency",
+      "trapTypes": [
+        "cancellation oversight",
+        "constant term confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-b4f76fdc",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A line y = mx + 2 is tangent to the circle x² + y² = 4. What are the possible values of m?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "m = 0 only"
+      },
+      {
+        "letter": "B",
+        "text": "m = ±1"
+      },
+      {
+        "letter": "C",
+        "text": "m = ±√3"
+      },
+      {
+        "letter": "D",
+        "text": "No real value of m"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Distance from center (0,0) to line mx − y + 2 = 0 equals radius 2: |0 − 0 + 2| / √(m² + 1) = 2 → 4 / (m² + 1) = 4 → m² + 1 = 1 → m = 0.\nSlow: Substitute y = mx + 2 into x² + y² = 4: x²(1 + m²) + 4mx + 4 − 4 = 0 → x²(1+m²) + 4mx = 0 → x[(1+m²)x + 4m] = 0. Tangency needs a double root: Δ = 16m² − 0 = 0 doesn't work unless we reconsider. Actually x[(1+m²)x + 4m] = 0 gives x = 0 and x = −4m/(1+m²). For tangency these must coincide: −4m/(1+m²) = 0 → m = 0.",
+      "distractors": {
+        "B": "Erroneously solves m²+1 = 2 from a distance miscalculation.",
+        "C": "Solves m²+1 = 4/1 incorrectly, getting m² = 3.",
+        "D": "Incorrectly concludes no tangent exists because they forgot y-intercept 2 equals the radius."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Use distance-from-center-to-line formula for tangency",
+      "trapTypes": [
+        "distance formula sign error",
+        "forgetting the y-intercept equals the radius"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-fa11f576",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² + 6x + 5\ny = −2x − 7\n\nWhich of the following describes the solutions to the system above?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Two solutions with both x-values positive"
+      },
+      {
+        "letter": "B",
+        "text": "Two solutions with both x-values negative"
+      },
+      {
+        "letter": "C",
+        "text": "One positive and one negative x-value"
+      },
+      {
+        "letter": "D",
+        "text": "No real solutions"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Set −2x − 7 = x² + 6x + 5 → x² + 8x + 12 = 0 → (x+2)(x+6) = 0 → x = −2, x = −6. Both negative.\nSlow: Δ = 64 − 48 = 16 > 0 → two real roots. By Vieta's: sum = −8, product = 12 (both positive product, negative sum → both roots negative).",
+      "distractors": {
+        "A": "Flips signs during rearrangement, getting x = 2 and x = 6.",
+        "C": "Factors incorrectly as (x+6)(x−2) = 0, yielding one positive root.",
+        "D": "Expands incorrectly to get x² + 8x + 20 = 0 with Δ < 0."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute and classify the signs of the roots",
+      "trapTypes": [
+        "sign errors in rearrangement",
+        "incorrect factoring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-5c0ac066",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The system below has no real solutions.\n\ny = x² + 4\ny = 2x + c\n\nWhich of the following could be the value of c?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "c = 5"
+      },
+      {
+        "letter": "B",
+        "text": "c = 4"
+      },
+      {
+        "letter": "C",
+        "text": "c = 3"
+      },
+      {
+        "letter": "D",
+        "text": "c = 2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Fast: Set 2x + c = x² + 4 → x² − 2x + (4 − c) = 0. No real solutions ⇒ Δ < 0: 4 − 4(4 − c) < 0 → 4 − 16 + 4c < 0 → 4c < 12 → c < 3. Only c = 2 satisfies c < 3.\nSlow: Check c = 2: x² − 2x + 2 = 0, Δ = 4 − 8 = −4 < 0 ✓.",
+      "distractors": {
+        "A": "c = 5 gives Δ = 4 − 4(−1) = 8 > 0 → two solutions (intersecting).",
+        "B": "c = 4 gives Δ = 4 − 0 = 4 > 0 → two solutions.",
+        "C": "c = 3 gives Δ = 4 − 4 = 0 → exactly one solution (tangent), not zero."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Determine parameter range for no real solutions via discriminant inequality",
+      "trapTypes": [
+        "boundary confusion (Δ = 0 vs Δ < 0)",
+        "inequality direction error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-bb48b235",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = 3x² − x − 2\ny = 5x + 4\n\nIf (x₁, y₁) and (x₂, y₂) are the solutions, what is x₁ · x₂?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "-2"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "-2/3"
+      },
+      {
+        "letter": "D",
+        "text": "6/3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set 5x + 4 = 3x² − x − 2 → 3x² − 6x − 6 = 0 → x² − 2x − 2 = 0. By Vieta's, product = −2/1 = −2.\nSlow: Δ = 4 + 8 = 12 > 0 → two real roots. x = (2 ± 2√3)/2 = 1 ± √3. Product = (1+√3)(1−√3) = 1 − 3 = −2 ✓.",
+      "distractors": {
+        "B": "Drops the negative sign from the product.",
+        "C": "Forgets to divide by the leading coefficient when simplifying 3x²−6x−6 = 0.",
+        "D": "Uses −b/a = 6/3 = 2 (the sum formula) instead of the product."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply Vieta's product formula after substitution",
+      "trapTypes": [
+        "confusing sum and product formulas",
+        "forgetting to simplify"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-52fd2a8c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A line passes through (0, −9) with slope m and intersects the parabola y = x² at two points. For what values of m does this occur?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "m > 6 or m < −6"
+      },
+      {
+        "letter": "B",
+        "text": "−6 < m < 6"
+      },
+      {
+        "letter": "C",
+        "text": "m > 0"
+      },
+      {
+        "letter": "D",
+        "text": "All real values of m"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Line y = mx − 9. Set mx − 9 = x² → x² − mx + 9 = 0. Two intersections ⇒ Δ > 0: m² − 36 > 0 → |m| > 6 → m > 6 or m < −6.\nSlow: Check m = 7: x² − 7x + 9 = 0, Δ = 49 − 36 = 13 > 0 ✓.",
+      "distractors": {
+        "B": "Reverses the inequality, using Δ < 0 condition instead of Δ > 0.",
+        "C": "Only considers positive slopes, forgetting negative slopes with |m| > 6 also work.",
+        "D": "Assumes the line through (0,−9) always reaches y = x², but when |m| ≤ 6 it doesn't intersect."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Derive parameter condition from discriminant inequality",
+      "trapTypes": [
+        "inequality direction error",
+        "absolute value oversight"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-4e16201e",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x² + y² = 18\ny = x + a\n\nFor what value of a does the line intersect the circle at exactly one point?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "a = ±3"
+      },
+      {
+        "letter": "B",
+        "text": "a = ±6"
+      },
+      {
+        "letter": "C",
+        "text": "a = ±3√2"
+      },
+      {
+        "letter": "D",
+        "text": "a = ±√6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Distance from (0,0) to line x − y + a = 0 equals √18 = 3√2: |a| / √2 = 3√2 → |a| = 3·2 = 6 → a = ±6.\nSlow: Substitute y = x + a into x² + y² = 18: 2x² + 2ax + a² − 18 = 0. Δ = 0 → 4a² − 8(a²−18) = 0 → −4a² + 144 = 0 → a² = 36 → a = ±6.",
+      "distractors": {
+        "A": "Divides by 2 somewhere extra, getting a² = 9 instead of 36.",
+        "C": "Uses |a|/√2 = √18 correctly but then simplifies |a| = √36 as 3√2 instead of 6.",
+        "D": "Confuses a² = 36 with a = √6 from a calculation shortcut error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply tangency condition (distance = radius) to line-circle system",
+      "trapTypes": [
+        "radical simplification error",
+        "distance formula application"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-a4d0c613",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A ball is thrown so that its height y (in feet) at horizontal distance x (in feet) is y = −0.05x² + 2x. A fence of height 15 feet stands at x = 30. Does the ball clear the fence, and by how much?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Yes, by 0 feet (just touches)"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, by 5 feet"
+      },
+      {
+        "letter": "C",
+        "text": "No, it falls 5 feet short"
+      },
+      {
+        "letter": "D",
+        "text": "Yes, by 15 feet"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: At x = 30, y = −0.05(900) + 2(30) = −45 + 60 = 15. The fence is 15 ft tall, so the ball is at exactly 15 ft → just touches.\nSlow: The system y = −0.05x² + 2x and y = 15 at x = 30 gives 15 = 15 ✓.",
+      "distractors": {
+        "B": "Computes −0.05 × 900 as −40 instead of −45, getting y = 20, so 'clears by 5'.",
+        "C": "Gets −0.05 × 900 = −50, so y = 10 and concludes the ball is 5 ft short.",
+        "D": "Confuses the height of the ball (15) with clearance above the fence, adding 15 instead of subtracting."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Evaluate quadratic at a given x and compare with boundary",
+      "trapTypes": [
+        "decimal multiplication error",
+        "comparison vs. subtraction confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-27501de9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 6x + k\ny = 2x − 5\n\nFor what value of k does the system have exactly one solution?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k = 11"
+      },
+      {
+        "letter": "B",
+        "text": "k = 21"
+      },
+      {
+        "letter": "C",
+        "text": "k = −11"
+      },
+      {
+        "letter": "D",
+        "text": "k = 5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set 2x − 5 = x² − 6x + k → x² − 8x + (k+5) = 0. Δ = 0 → 64 − 4(k+5) = 0 → 64 − 4k − 20 = 0 → 44 = 4k → k = 11.\nSlow: With k = 11, x² − 8x + 16 = 0 → (x−4)² = 0 → x = 4 (double root). ✓",
+      "distractors": {
+        "B": "Forgets to include the −5 from the line when rearranging, solving 64 − 4k = 0 → k = 16, then adds 5.",
+        "C": "Sign error: solves 4k = −44 instead of 4k = 44.",
+        "D": "Sets k = 5 by equating the constant terms directly without proper substitution."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero for tangency with parameter",
+      "trapTypes": [
+        "forgetting constant from line equation",
+        "sign error in rearrangement"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-be0a8153",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = −x² + 10x\ny = mx\n\nBoth curves pass through the origin. For what positive value of m does the line also pass through the vertex of the parabola?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "m = 5"
+      },
+      {
+        "letter": "B",
+        "text": "m = 10"
+      },
+      {
+        "letter": "C",
+        "text": "m = 25"
+      },
+      {
+        "letter": "D",
+        "text": "m = 20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Vertex of y = −x² + 10x is at x = −10/(2·(−1)) = 5, y = −25 + 50 = 25. Line y = mx through origin and (5, 25): m = 25/5 = 5.\nSlow: Set mx = −x² + 10x → x² + (m−10)x = 0 → x(x + m − 10) = 0. The other intersection is at x = 10 − m. For the line to pass through the vertex, 10 − m = 5 → m = 5, and y = 5(5) = 25 = −25 + 50 ✓.",
+      "distractors": {
+        "B": "Uses m = 10 (the linear coefficient), confusing the vertex x-coordinate formula.",
+        "C": "Uses y-coordinate 25 as the slope, confusing rise with slope.",
+        "D": "Multiplies vertex coordinates 5 × 4 or makes another arithmetic error."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find vertex of parabola and use it to determine slope",
+      "trapTypes": [
+        "confusing vertex coordinate with slope",
+        "vertex formula error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-d4bb32c6",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x² + (y − 3)² = 16\ny = 7\n\nWhat is the distance between the two intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "4√2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Substitute y = 7: x² + (7−3)² = 16 → x² + 16 = 16 → x² = 0 → x = 0. Only one intersection point (0, 7). Distance between 'two' points is 0 (tangent).\nSlow: The line y = 7 is tangent to the circle centered at (0,3) with radius 4, since the distance from center to line is |7−3| = 4 = radius.",
+      "distractors": {
+        "B": "Assumes two points separated by the radius distance.",
+        "C": "Uses 2 × radius = 8 as the distance, forgetting there's only one point.",
+        "D": "Applies a Pythagorean calculation that doesn't apply to a tangent case."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognize tangency from single-root substitution",
+      "trapTypes": [
+        "assuming two intersection points when tangent",
+        "misusing diameter as distance"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-d0b8ea38",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = 2x² − 3x − 5\ny = 3x − 5\n\nWhat are the x-coordinates of the intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x = 0 and x = 3"
+      },
+      {
+        "letter": "B",
+        "text": "x = 0 and x = −3"
+      },
+      {
+        "letter": "C",
+        "text": "x = 1 and x = 3"
+      },
+      {
+        "letter": "D",
+        "text": "x = −1 and x = 3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set 3x − 5 = 2x² − 3x − 5 → 2x² − 6x = 0 → 2x(x − 3) = 0 → x = 0 or x = 3.\nSlow: Verify: x = 0 → y = −5 (both equations give −5 ✓). x = 3 → y = 4 (line: 9−5 = 4; parabola: 18−9−5 = 4 ✓).",
+      "distractors": {
+        "B": "Sign error: factors 2x(x + 3) = 0 instead of 2x(x − 3) = 0.",
+        "C": "Doesn't factor out x; instead solves 2x² − 6x + 0 = 0 incorrectly by quadratic formula.",
+        "D": "Divides incorrectly and gets x = −1 as one root."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute and factor the resulting equation",
+      "trapTypes": [
+        "sign error in factoring",
+        "forgetting x = 0 as a solution"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-fde21624",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The profit P, in thousands of dollars, from selling x hundred units is P = −2x² + 24x − 54. A company breaks even when P = 0. What are the break-even sales quantities?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "300 and 900 units"
+      },
+      {
+        "letter": "B",
+        "text": "3 and 9 hundred units"
+      },
+      {
+        "letter": "C",
+        "text": "600 units only"
+      },
+      {
+        "letter": "D",
+        "text": "No break-even point exists"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set −2x² + 24x − 54 = 0 → x² − 12x + 27 = 0 → (x−3)(x−9) = 0 → x = 3, 9. Since x is in hundreds, the break-even quantities are 300 and 900 units.\nSlow: Δ = 144 − 108 = 36 > 0. x = (12 ± 6)/2 → x = 3 or x = 9.",
+      "distractors": {
+        "B": "Correctly solves x = 3 and x = 9 but forgets that x is in hundreds, giving '3 and 9 hundred' instead of converting to units.",
+        "C": "Takes the average of the two roots (x = 6) as the only solution.",
+        "D": "Computes Δ incorrectly and concludes no real solutions."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve profit quadratic and interpret units correctly",
+      "trapTypes": [
+        "unit conversion oversight",
+        "averaging roots instead of listing them"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-009c2dae",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x − 2)² + (y + 1)² = 25\ny = x + 2\n\nWhat is the sum of the y-coordinates of the intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "3"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Substitute y = x + 2: (x−2)² + (x+2+1)² = 25 → (x−2)² + (x+3)² = 25. Expand: x²−4x+4 + x²+6x+9 = 25 → 2x²+2x−12 = 0 → x²+x−6 = 0 → (x+3)(x−2) = 0. x = −3 → y = −1; x = 2 → y = 4. Sum of y-coordinates = −1 + 4 = 3.\nSlow: Alternatively, Vieta's on x gives x₁+x₂ = −1, so y₁+y₂ = (x₁+2)+(x₂+2) = −1+4 = 3.",
+      "distractors": {
+        "A": "Computes x₁+x₂ = −1 and adds 2 once (getting 1) then doubles to 5, or another Vieta's error.",
+        "C": "Adds 4 to the x-sum (−1+4 = 3) then adds 4 again, getting 7.",
+        "D": "Uses only the x-sum (−1) and adds 2 once, getting 1."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute into circle, solve, then compute y-values",
+      "trapTypes": [
+        "computing x-sum instead of y-sum",
+        "sign errors in substitution"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-08c8e176",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 2x + 3\ny = −x + 5\n\nAt which point(s) do the graphs intersect?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "(1, 4) only"
+      },
+      {
+        "letter": "B",
+        "text": "(2, 3) and (−1, 6)"
+      },
+      {
+        "letter": "C",
+        "text": "(2, 3) only"
+      },
+      {
+        "letter": "D",
+        "text": "(1, 4) and (2, 3)"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Set −x + 5 = x² − 2x + 3 → x² − x − 2 = 0 → (x−2)(x+1) = 0 → x = 2, x = −1. y-values: x = 2 → y = −2+5 = 3; x = −1 → y = 1+5 = 6. Points: (2, 3) and (−1, 6).\nSlow: Verify in parabola: x = 2 → 4−4+3 = 3 ✓; x = −1 → 1+2+3 = 6 ✓.",
+      "distractors": {
+        "A": "Tests x = 1 by plugging in and finding y = 4 for both, but x = 1 doesn't satisfy x²−x−2 = 0.",
+        "C": "Finds only x = 2 and ignores the other factor (x+1) = 0.",
+        "D": "Lists (1,4) which doesn't satisfy the system; x = 1 gives parabola y = 2 ≠ line y = 4."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve quadratic from substitution and find both intersection points",
+      "trapTypes": [
+        "discarding negative x as extraneous",
+        "incorrect point matching"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-3963c75c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = 3x + c is tangent to the circle x² + y² = 10. What is the positive value of c?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "√10"
+      },
+      {
+        "letter": "B",
+        "text": "√30"
+      },
+      {
+        "letter": "C",
+        "text": "√40"
+      },
+      {
+        "letter": "D",
+        "text": "√100"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Fast: Distance from origin to line 3x − y + c = 0 must equal radius √10: |c|/√(9+1) = √10 → |c|/√10 = √10 → |c| = 10. Positive c = 10 = √100.\nSlow: Substitute y = 3x+10 into x²+y² = 10: x²+9x²+60x+100 = 10 → 10x²+60x+90 = 0 → x²+6x+9 = 0 → (x+3)² = 0 → tangent ✓.",
+      "distractors": {
+        "A": "Confuses distance formula result, using c = √10 instead of c = 10.",
+        "B": "Erroneously computes |c| = √10 · √3 = √30.",
+        "C": "Computes |c|² = 40 but forgets to take the square root correctly, giving c = √40."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply distance formula for line tangent to circle",
+      "trapTypes": [
+        "forgetting to multiply radius by √(a²+b²)",
+        "radical simplification"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-cf697c21",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A rocket's height (in meters) is h = −4.9t² + 49t. A drone flies at constant height h = 102.9 meters. For how many seconds is the rocket above the drone?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3 seconds"
+      },
+      {
+        "letter": "B",
+        "text": "4 seconds"
+      },
+      {
+        "letter": "C",
+        "text": "5 seconds"
+      },
+      {
+        "letter": "D",
+        "text": "7 seconds"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Set −4.9t² + 49t = 102.9 → t² − 10t + 21 = 0 → (t−3)(t−7) = 0. The rocket is above 102.9 m for 3 < t < 7, which is 7 − 3 = 4 seconds.\nSlow: Verify midpoint t = 5: h = −4.9(25)+245 = −122.5+245 = 122.5 > 102.9 ✓.",
+      "distractors": {
+        "A": "Uses the first crossing time t = 3 as the total duration above the drone.",
+        "C": "Takes 10/2 = 5 (half-sum of roots = vertex time) as the duration instead of 7−3.",
+        "D": "Uses the second crossing time t = 7 as the duration."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve inequality by finding roots and computing interval length",
+      "trapTypes": [
+        "confusing a root with the interval length",
+        "decimal division error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-453b4ef2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = −x² + 4x + c\ny = 0\n\nIf the parabola is tangent to the x-axis, what is the value of c?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "c = −4"
+      },
+      {
+        "letter": "B",
+        "text": "c = 4"
+      },
+      {
+        "letter": "C",
+        "text": "c = −16"
+      },
+      {
+        "letter": "D",
+        "text": "c = 0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Tangent to x-axis ⇒ −x² + 4x + c = 0 has Δ = 0. Δ = 16 − 4(−1)(c) = 16 + 4c = 0 → c = −4.\nSlow: With c = −4, −x² + 4x − 4 = 0 → x² − 4x + 4 = 0 → (x−2)² = 0 → x = 2. Vertex at (2, 0) touching x-axis ✓.",
+      "distractors": {
+        "B": "Forgets the negative leading coefficient: uses Δ = 16 − 4c = 0 → c = 4.",
+        "C": "Squares the discriminant condition: (16+4c)² = 0 leads nowhere, arrives at c = −16.",
+        "D": "Assumes c = 0 because the parabola touches y = 0, without computing the discriminant."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero with correct signs for negative leading coefficient",
+      "trapTypes": [
+        "sign error with negative leading coefficient",
+        "ignoring the −1 in 'a'"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-2ba534d6",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "How many solutions does the following system have?\n\nx² + y² = 9\ny = x² − 3",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: Substitute y = x²−3 into x²+y² = 9: x² + (x²−3)² = 9 → x² + x⁴ − 6x² + 9 = 9 → x⁴ − 5x² = 0 → x²(x²−5) = 0. x² = 0 → x = 0 (one solution); x² = 5 → x = ±√5 (two solutions). Check y: x = 0 → y = −3, (0,−3): 0+9 = 9 ✓. x = √5 → y = 2, (√5,2): 5+4 = 9 ✓. x = −√5 → y = 2, (−√5,2): 5+4 = 9 ✓. Total: 3 solutions.",
+      "distractors": {
+        "A": "Only finds x = 0 and stops, missing x² = 5.",
+        "B": "Finds x = ±√5 but forgets x = 0.",
+        "D": "Double-counts x = 0 as two solutions (±0) or introduces extraneous roots."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute to get a quartic, factor, and count valid roots",
+      "trapTypes": [
+        "missing the x = 0 root",
+        "double-counting ±0"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-e490c0f9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² + bx + 9\ny = 2x + 5\n\nIf the line is tangent to the parabola, what are the possible values of b?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "b = 6 or b = −2"
+      },
+      {
+        "letter": "B",
+        "text": "b = −6 or b = 2"
+      },
+      {
+        "letter": "C",
+        "text": "b = 6 or b = 2"
+      },
+      {
+        "letter": "D",
+        "text": "b = −6 or b = −2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set 2x + 5 = x² + bx + 9 → x² + (b−2)x + 4 = 0. Tangent ⇒ Δ = 0: (b−2)² − 16 = 0 → (b−2)² = 16 → b−2 = ±4. b = 6 or b = −2.\nSlow: Check b = 6: x²+4x+4 = 0 → (x+2)² = 0 ✓. Check b = −2: x²−4x+4 = 0 → (x−2)² = 0 ✓.",
+      "distractors": {
+        "B": "Negates both values by taking −(b−2) = ±4 → b = −6 or b = 2.",
+        "C": "Only takes the positive square root: b−2 = 4 → b = 6, then incorrectly sets b = 2 for the other.",
+        "D": "Takes b+2 = ±4 (sign error in rearrangement) → b = 2 or b = −6, then negates."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero with parameter in b-coefficient",
+      "trapTypes": [
+        "sign error in (b−2)",
+        "forgetting ± from square root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-d976fe20",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = −x + k intersects the parabola y = x² at two points whose x-coordinates differ by √5. What is k?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "k = −1"
+      },
+      {
+        "letter": "B",
+        "text": "k = 1"
+      },
+      {
+        "letter": "C",
+        "text": "k = 5/4"
+      },
+      {
+        "letter": "D",
+        "text": "k = −5/4"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Set x² + x − k = 0. Roots differ by √5. |x₁−x₂| = √((x₁+x₂)²−4x₁x₂). By Vieta's: sum = −1, product = −k. |x₁−x₂| = √(1 + 4k) = √5 → 1 + 4k = 5 → k = 1.\nSlow: x² + x − 1 = 0 → x = (−1±√5)/2. Difference = √5 ✓.",
+      "distractors": {
+        "A": "Sign error: solves 1 + 4k = 5 as 4k = −4 → k = −1.",
+        "C": "Uses |x₁−x₂|² = 5 but divides by 4 instead of solving 1+4k = 5.",
+        "D": "Combines both errors from A and C."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply root-difference formula via Vieta's",
+      "trapTypes": [
+        "sign error in product term",
+        "squaring vs. square-rooting confusion"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-5879c15c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A particle moves along y = x² − 4. A laser beam travels along y = 2x + c. For the beam to miss the particle's path entirely, which values of c are valid?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "c < −5"
+      },
+      {
+        "letter": "B",
+        "text": "c > −3"
+      },
+      {
+        "letter": "C",
+        "text": "c < −5 or c > −3"
+      },
+      {
+        "letter": "D",
+        "text": "−5 < c < −3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set 2x + c = x² − 4 → x² − 2x − (4+c) = 0. No intersection ⇒ Δ < 0: 4 + 4(4+c) < 0 → 4 + 16 + 4c < 0 → 20 + 4c < 0 → c < −5.\nSlow: At c = −6: x² − 2x − (−2) = x² − 2x + 2 = 0, Δ = 4−8 = −4 < 0 ✓.",
+      "distractors": {
+        "B": "Reverses the inequality: solves Δ > 0 instead of Δ < 0.",
+        "C": "Treats the problem as 'intersect at two points' with |Δ| > 0.",
+        "D": "Finds −5 < c < −3 from an incorrect intermediate step or boundary mix-up."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Use discriminant inequality for no-intersection condition",
+      "trapTypes": [
+        "inequality direction error",
+        "sign error in constant collection"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-0d5f5313",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = ax² + 2\ny = 4x − 2\n\nIf the system has exactly one solution, what is the value of a?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "a = 1"
+      },
+      {
+        "letter": "B",
+        "text": "a = −1"
+      },
+      {
+        "letter": "C",
+        "text": "a = 2"
+      },
+      {
+        "letter": "D",
+        "text": "a = 1/2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set 4x − 2 = ax² + 2 → ax² − 4x + 4 = 0. Exactly one solution ⇒ Δ = 0: 16 − 16a = 0 → a = 1.\nSlow: With a = 1: x² − 4x + 4 = 0 → (x−2)² = 0 → x = 2, y = 6. Check: 4(2)−2 = 6 and 4+2 = 6 ✓.",
+      "distractors": {
+        "B": "Sign error in the discriminant: solves 16 + 16a = 0 → a = −1.",
+        "C": "Divides incorrectly: 16 = 8a → a = 2.",
+        "D": "Halves the correct answer by an extra division step."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero with parameter in leading coefficient",
+      "trapTypes": [
+        "sign error in discriminant",
+        "division error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-1895f235",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x − 1)² + (y − 2)² = r²\ny = x + 1\n\nIf the line passes through the center of the circle, what is the distance between the two intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "r"
+      },
+      {
+        "letter": "B",
+        "text": "r√2"
+      },
+      {
+        "letter": "C",
+        "text": "2r"
+      },
+      {
+        "letter": "D",
+        "text": "r²"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: Center is (1, 2). Line y = x + 1 at x = 1 gives y = 2 ✓ — the line passes through the center. A line through the center of a circle is a diameter, so it intersects at two diametrically opposite points. Distance = diameter = 2r.\nSlow: Substitute y = x+1: (x−1)² + (x−1)² = r² → 2(x−1)² = r² → (x−1)² = r²/2 → x = 1 ± r/√2. Distance = √((Δx)² + (Δy)²) = √(2) · r√2/1 = √(2·r²/2 + 2·r²/2) Hmm, let me compute: Δx = 2·r/√2 = r√2. Δy = Δx = r√2. Distance = √(2r² + ... ) — no. Points: (1+r/√2, 2+r/√2) and (1−r/√2, 2−r/√2). Distance = √((2r/√2)² + (2r/√2)²) = √(2r² + 2r²) = 2r ✓.",
+      "distractors": {
+        "A": "Confuses radius with diameter; gives r instead of 2r.",
+        "B": "Computes chord length incorrectly with an extra √2 factor.",
+        "D": "Squares the radius instead of doubling it."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Recognize line through center creates a diameter",
+      "trapTypes": [
+        "confusing radius and diameter",
+        "unnecessary chord-length calculation"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-4208074c",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = 2x² − 8x + 6\ny = −2x + 2\n\nWhat is the product of the y-coordinates of the intersection points?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "−6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set −2x + 2 = 2x² − 8x + 6 → 2x² − 6x + 4 = 0 → x² − 3x + 2 = 0 → (x−1)(x−2) = 0 → x = 1, 2. y-values: x=1 → y = 0; x=2 → y = −2. Product = 0 · (−2) = 0.\nSlow: Verify: (1,0) on parabola: 2−8+6 = 0 ✓. (2,−2) on parabola: 8−16+6 = −2 ✓.",
+      "distractors": {
+        "B": "Uses the line's y-intercept (2) as the product.",
+        "C": "Uses the parabola's constant term (6) as the product.",
+        "D": "Computes −2 · 3 = −6 from misidentified y-values."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find intersection y-values and multiply",
+      "trapTypes": [
+        "overlooking that one y-value is zero",
+        "using wrong equation for y"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-8518e116",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x² + y² = 100\ny = −3x/4 + 25/2\n\nHow many intersection points do the circle and line have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "Cannot be determined"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Distance from (0,0) to line 3x/4 + y − 25/2 = 0 → rewrite as 3x + 4y − 50 = 0. Distance = |−50|/√(9+16) = 50/5 = 10 = radius. So the line is tangent → 1 point.\nSlow: Substitute y = −3x/4 + 25/2 into x² + y² = 100: x² + 9x²/16 − 75x/4 + 625/4 = 100. Multiply by 16: 16x² + 9x² − 300x + 2500 = 1600 → 25x² − 300x + 900 = 0 → x² − 12x + 36 = 0 → (x−6)² = 0 → x = 6. One solution ✓.",
+      "distractors": {
+        "A": "Miscalculates distance as 12 > 10, concluding no intersection.",
+        "C": "Miscalculates distance as 8 < 10, concluding two intersections.",
+        "D": "Doesn't recognize that distance formula conclusively determines the count."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Apply center-to-line distance and compare with radius",
+      "trapTypes": [
+        "fraction arithmetic errors",
+        "distance formula sign errors"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-1233b3f9",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "Revenue from selling x units: R = −x² + 70x. The fixed cost is $600 (C = 600). For what range of x does revenue exceed cost?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "x < 10 or x > 60"
+      },
+      {
+        "letter": "B",
+        "text": "10 < x < 60"
+      },
+      {
+        "letter": "C",
+        "text": "0 < x < 70"
+      },
+      {
+        "letter": "D",
+        "text": "20 < x < 30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: R > C → −x²+70x > 10x+600 → −x²+60x−600 > 0 → x²−60x+600 < 0. Roots: x = (60 ± √(3600−2400))/2 = (60 ± √1200)/2 = (60 ± 20√3)/2 = 30 ± 10√3. Still irrational. Let me use the factored version.\nActually let's just use C = 600: x²−60x+600 = 0. Not factorable to integers.\nLet me try R = −x²+70x, C = 600: R > C → −x²+70x > 600 → x²−70x+600 < 0 → (x−10)(x−60) < 0 → 10 < x < 60 ✓.",
+      "distractors": {
+        "A": "Solves (x−10)(x−60) > 0, reversing the inequality direction.",
+        "C": "Uses the roots of R = 0 (x = 0 and x = 70) instead of R − C = 0.",
+        "D": "Finds the vertex x = 35 and guesses a symmetric interval."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Solve quadratic inequality from revenue exceeding a constant cost",
+      "trapTypes": [
+        "inequality reversal",
+        "using wrong equation's roots"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-4802fa33",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 5x + 4\ny = x − 1\n\nWhat is the area of the triangle formed by the two intersection points and the origin?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "1"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Set x−1 = x²−5x+4 → x²−6x+5 = 0 → (x−1)(x−5) = 0 → x = 1, 5. Intersection points: (1, 0) and (5, 4). Triangle with origin: Area = ½|x₁y₂ − x₂y₁| = ½|1·4 − 5·0| = 2.\nSlow: Verify points: (1,0) → 1−5+4 = 0 = 1−1 ✓; (5,4) → 25−25+4 = 4 = 5−1 ✓.",
+      "distractors": {
+        "A": "Halves 2 again, applying ½ twice.",
+        "C": "Computes ½|1·4 + 5·0| + something extra, or uses |x₁−x₂|·|y₁−y₂|/2 = 4·4/2 incorrectly.",
+        "D": "Uses the product of the x-coordinates (1·5 = 5) as the area."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find intersection points and compute triangle area",
+      "trapTypes": [
+        "shoelace formula error",
+        "forgetting the ½ factor"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-895e7fa1",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² + 2x + 5\ny = 4x + 1\n\nWhich statement is true about the system?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The system has two solutions with positive x-values"
+      },
+      {
+        "letter": "B",
+        "text": "The system has two solutions with negative x-values"
+      },
+      {
+        "letter": "C",
+        "text": "The system has one positive and one negative solution"
+      },
+      {
+        "letter": "D",
+        "text": "The system has no real solutions"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correct": "Fast: Set 4x + 1 = x² + 2x + 5 → x² − 2x + 4 = 0. Δ = 4 − 16 = −12 < 0 → no real solutions.\nSlow: The minimum of x²−2x+4 is at x = 1: 1−2+4 = 3 > 0. Since the quadratic is always positive and never zero, no intersection.",
+      "distractors": {
+        "A": "Incorrectly computes Δ = 4 + 16 = 20 > 0 (sign error) and assumes positive roots.",
+        "B": "Misinterprets the sign of −b/2a = 1 > 0 as meaning roots are negative.",
+        "C": "Factors x²−2x+4 as (x−4)(x+1) = 0 (incorrect factoring)."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compute discriminant to determine existence of real solutions",
+      "trapTypes": [
+        "sign error in discriminant",
+        "incorrect factoring attempt"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-6df496b0",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A circle centered at (3, 0) with radius 5 has equation (x−3)² + y² = 25. The line y = 4 intersects the circle. What is the length of the chord?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correct": "Fast: Substitute y = 4: (x−3)² + 16 = 25 → (x−3)² = 9 → x−3 = ±3 → x = 0 or x = 6. Chord length = 6 − 0 = 6.\nSlow: Distance from center (3,0) to line y = 4 is |4| = 4. Half-chord = √(r²−d²) = √(25−16) = 3. Chord = 6.",
+      "distractors": {
+        "A": "Computes only the half-chord length (3) and stops.",
+        "C": "Uses 2·4 = 8, confusing the distance with half-chord.",
+        "D": "Uses the full diameter (10) instead of the chord."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Find chord length via substitution or distance-to-chord formula",
+      "trapTypes": [
+        "half-chord vs full chord",
+        "confusing diameter with chord"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-20ed761a",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = 2x² + kx + 2\ny = 0\n\nFor how many integer values of k does the equation 2x² + kx + 2 = 0 have no real solutions?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "3"
+      },
+      {
+        "letter": "B",
+        "text": "5"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correct": "Fast: Set 4x = 2x²+kx+8 → 2x²+(k−4)x+8 = 0. No real solutions ⇒ Δ < 0: (k−4)² − 64 < 0 → (k−4)² < 64 → |k−4| < 8 → −8 < k−4 < 8 → −4 < k < 12. Integer values: k = −3, −2, −1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 → 15 values. Still doesn't match. Let me pick smaller numbers.\nUse 2x² + kx + 2 and y = 0: 2x² + kx + 2 = 0. Δ < 0: k² − 16 < 0 → |k| < 4 → k ∈ {−3,−2,−1,0,1,2,3} = 7 values.",
+      "distractors": {
+        "A": "Only counts positive k values: {1,2,3} = 3.",
+        "B": "Counts |k| ≤ 4 including endpoints: {−4,…,4} but that gives Δ = 0, not Δ < 0.",
+        "D": "Counts |k| ≤ 4 including ±4: 9 values, but k = ±4 gives Δ = 0 (tangent, not 'no solution')."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Count integers in strict discriminant inequality range",
+      "trapTypes": [
+        "including boundary values",
+        "off-by-one error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-56fb0c3b",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 4x + 9\ny = 2x − 1\n\nHow many real solutions does the system have?",
+    "type": "MCQ",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "0"
+      },
+      {
+        "letter": "B",
+        "text": "1"
+      },
+      {
+        "letter": "C",
+        "text": "2"
+      },
+      {
+        "letter": "D",
+        "text": "Infinitely many"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correct": "Fast: Set 2x−1 = x²−4x+9 → x²−6x+10 = 0. Δ = 36 − 40 = −4 < 0 → no real solutions.\nSlow: The parabola's vertex is at (2, 5) and opens upward. At x = 2, line gives y = 3. The parabola is always above the line in this region.",
+      "distractors": {
+        "B": "Miscomputes Δ = 36 − 36 = 0 (using wrong constant) and concludes tangent.",
+        "C": "Incorrectly factors x²−6x+10 as (x−2)(x−5), getting two roots.",
+        "D": "Confuses with a dependent system; a line and parabola cannot overlap infinitely."
+      }
+    },
+    "metadata": {
+      "cognitiveMove": "Compute discriminant to detect no real intersection",
+      "trapTypes": [
+        "close discriminant (−4 near 0)",
+        "incorrect factoring attempt"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-5bad7a19",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 3x − 10\ny = 2x − 10\n\nWhat is the positive x-coordinate of an intersection point?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "Fast: Set 2x − 10 = x² − 3x − 10 → x² − 5x = 0 → x(x − 5) = 0 → x = 0 or x = 5. The positive x-coordinate is 5.\nSlow: Verify: (5, 0) → 25−15−10 = 0 = 10−10 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute and identify the positive root",
+      "trapTypes": [
+        "forgetting x = 0 as a root",
+        "sign error in factoring"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-bd91ec3b",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "The line y = mx − 4 is tangent to the parabola y = x². If m > 0, what is the value of m?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "Fast: Set mx − 4 = x² → x² − mx + 4 = 0. Tangent ⇒ Δ = 0: m² − 16 = 0 → m = ±4. Since m > 0, m = 4.\nSlow: At m = 4: x² − 4x + 4 = 0 → (x−2)² = 0 → x = 2, y = 4. Check: 4(2)−4 = 4 = 4 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero and select positive parameter",
+      "trapTypes": [
+        "forgetting to restrict m > 0",
+        "sign error in Δ"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-6b035ac6",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x² + y² = 169\ny = 5\n\nWhat is the positive x-coordinate of the intersection?",
+    "type": "SPR",
+    "correctAnswer": "12",
+    "acceptableAnswers": [
+      "12"
+    ],
+    "explanation": {
+      "correct": "Fast: x² + 25 = 169 → x² = 144 → x = ±12. Positive: x = 12.\nSlow: 12² + 5² = 144 + 25 = 169 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute constant y into circle equation and solve",
+      "trapTypes": [
+        "arithmetic error in 169 − 25",
+        "forgetting to take square root"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-4456fac0",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 8x + 12\ny = −4\n\nWhat is the sum of the x-values at the intersection points?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "Fast: Set x² − 8x + 12 = −4 → x² − 8x + 16 = 0 → (x−4)² = 0 → x = 4 (double root). Sum = 4 + 4 = 8. Alternatively, by Vieta's: sum = 8.\nSlow: The vertex of x²−8x+12 is at x = 4, y = 16−32+12 = −4. So y = −4 is tangent at the vertex."
+    },
+    "metadata": {
+      "cognitiveMove": "Recognize vertex tangency and apply Vieta's sum",
+      "trapTypes": [
+        "reporting single root instead of sum",
+        "vertex calculation error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-2d788ae2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "A ball's height is h = −16t² + 96t. A platform is at h = 80. At what time (in seconds) does the ball first reach the platform?",
+    "type": "SPR",
+    "correctAnswer": "1",
+    "acceptableAnswers": [
+      "1"
+    ],
+    "explanation": {
+      "correct": "Fast: Set −16t² + 96t = 80 → 16t² − 96t + 80 = 0 → t² − 6t + 5 = 0 → (t−1)(t−5) = 0. First time: t = 1 second.\nSlow: Verify: h(1) = −16 + 96 = 80 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Solve projectile-boundary system and select earliest time",
+      "trapTypes": [
+        "selecting the later time t = 5",
+        "division error with 16"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-c3ed46ba",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x − 4)² + (y − 3)² = 25\ny = 0\n\nWhat is the length of the chord where the x-axis intersects the circle?",
+    "type": "SPR",
+    "correctAnswer": "8",
+    "acceptableAnswers": [
+      "8"
+    ],
+    "explanation": {
+      "correct": "Fast: Substitute y = 0: (x−4)² + 9 = 25 → (x−4)² = 16 → x = 0 or x = 8. Chord length = 8 − 0 = 8.\nSlow: Distance from center (4,3) to x-axis = 3. Half-chord = √(25−9) = 4. Chord = 8."
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute y = 0 and compute chord length from roots",
+      "trapTypes": [
+        "computing half-chord only",
+        "sign error in (x−4)²"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-84c735d2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = 3x² − 12x + 9\ny = 3x − 3\n\nWhat is the product of the x-coordinates of the intersection points?",
+    "type": "SPR",
+    "correctAnswer": "4",
+    "acceptableAnswers": [
+      "4"
+    ],
+    "explanation": {
+      "correct": "Fast: Set 3x − 3 = 3x² − 12x + 9 → 3x² − 15x + 12 = 0 → x² − 5x + 4 = 0. By Vieta's: product = 4.\nSlow: Factor (x−1)(x−4) = 0 → x = 1, 4. Product = 1·4 = 4. Verify: (1, 0): 3−12+9 = 0 = 3−3 ✓. (4, 9): 48−48+9 = 9 = 12−3 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Apply Vieta's product formula after equating",
+      "trapTypes": [
+        "dividing by 3 incorrectly",
+        "confusing sum and product"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-42d384f2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "For what positive value of c does the line y = 6x − c intersect the parabola y = x² at exactly one point?",
+    "type": "SPR",
+    "correctAnswer": "9",
+    "acceptableAnswers": [
+      "9"
+    ],
+    "explanation": {
+      "correct": "Fast: Set 6x − c = x² → x² − 6x + c = 0. Tangent ⇒ Δ = 0: 36 − 4c = 0 → c = 9.\nSlow: With c = 9: x² − 6x + 9 = (x−3)² = 0 → x = 3, y = 9. Check: 6(3)−9 = 9 = 9 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Set discriminant to zero for tangency",
+      "trapTypes": [
+        "solving 36 − 4c = 0 incorrectly",
+        "confusing c/4 with 4c"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-0a9b1bf2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "x² + y² = 50\ny = x\n\nWhat is the positive x-coordinate of the intersection?",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "Fast: Substitute y = x: x² + x² = 50 → 2x² = 50 → x² = 25 → x = ±5. Positive: x = 5.\nSlow: (5, 5): 25 + 25 = 50 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute y = x into circle equation",
+      "trapTypes": [
+        "forgetting to divide by 2",
+        "taking √50 instead of √25"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-73f6f3b2",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² − 2x − 15\ny = 6x − 15\n\nThe graphs intersect at (0, −15) and at one other point. What is the y-coordinate of the other intersection point?",
+    "type": "SPR",
+    "correctAnswer": "33",
+    "acceptableAnswers": [
+      "33"
+    ],
+    "explanation": {
+      "correct": "Fast: Set 6x − 15 = x² − 2x − 15 → x² − 8x = 0 → x(x − 8) = 0 → x = 0 or x = 8. At x = 8: y = 6(8) − 15 = 48 − 15 = 33.\nSlow: Verify in parabola: 64 − 16 − 15 = 33 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Factor out the known root and find the other intersection",
+      "trapTypes": [
+        "using x = 0 answer instead of x = 8",
+        "arithmetic error at x = 8"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-8168b78f",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "(x + 2)² + (y − 1)² = 20\ny = 2x + 5\n\nWhat is the sum of the x-coordinates of the intersection points?",
+    "type": "SPR",
+    "correctAnswer": "-4",
+    "acceptableAnswers": [
+      "-4"
+    ],
+    "explanation": {
+      "correct": "Fast: Substitute y = 2x+5: (x+2)² + (2x+4)² = 20 → (x+2)² + 4(x+2)² = 20 → 5(x+2)² = 20 → (x+2)² = 4 → x+2 = ±2 → x = 0 or x = −4. Sum = 0 + (−4) = −4.\nSlow: Verify: (0, 5) → 4+16 = 20 ✓. (−4, −3) → 4+16 = 20 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Substitute and simplify using perfect square structure",
+      "trapTypes": [
+        "expanding instead of recognizing (x+2) pattern",
+        "sign error"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  },
+  {
+    "id": "antigravity-hard-6e61da77",
+    "section": "Math",
+    "domain": "Advanced Math",
+    "skill": "Systems of equations in two variables",
+    "difficulty": "Hard",
+    "targetBand": "SAT-1600",
+    "prompt": "y = x² + 2x + 5\ny = 2x + k\n\nFor what value of k does the system have exactly one solution? (Enter the value of k.)",
+    "type": "SPR",
+    "correctAnswer": "5",
+    "acceptableAnswers": [
+      "5"
+    ],
+    "explanation": {
+      "correct": "Fast: Set 2x + k = x² + 2x + 5 → x² + 5 − k = 0 → x² = k − 5. Exactly one solution ⇒ x² = 0 ⇒ k = 5.\nSlow: Δ = 0 − 4(5−k) = 4k − 20 = 0 → k = 5. With k = 5: x² = 0 → x = 0, y = 5. Check: 0+0+5 = 5 = 0+5 ✓."
+    },
+    "metadata": {
+      "cognitiveMove": "Cancel linear terms and set discriminant to zero",
+      "trapTypes": [
+        "not noticing the 2x terms cancel",
+        "sign error in constant"
+      ],
+      "sourceSignalId": "antigravity-hard-advmath-systems-nonlinear1"
+    }
+  }
+]

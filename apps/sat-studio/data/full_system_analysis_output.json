@@ -1,0 +1,38 @@
+{
+  "total_questions": 19149,
+  "sections": {
+    "Reading and Writing": 7616,
+    "Math": 11533
+  },
+  "domains": {
+    "Reading and Writing": {
+      "Craft and Structure": 1926,
+      "Expression of Ideas": 1766,
+      "Information and Ideas": 2240,
+      "Standard English Conventions": 1684
+    },
+    "Math": {
+      "Problem-Solving and Data Analysis": 2185,
+      "Geometry and Trigonometry": 1327,
+      "Algebra": 3863,
+      "Advanced Math": 4158
+    }
+  },
+  "difficulties": {
+    "Hard": 9770,
+    "Medium": 3448,
+    "Easy": 5931
+  },
+  "sources": {
+    "antigravity": 13680,
+    "Unknown": 4626,
+    "sat_studio_original": 624,
+    "foundation": 219
+  },
+  "statuses": {
+    "reviewed": 15504,
+    "rejected": 144,
+    "needs_review": 1799,
+    "Unknown": 1702
+  }
+}
