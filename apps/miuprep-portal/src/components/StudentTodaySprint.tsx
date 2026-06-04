@@ -33,6 +33,7 @@ interface StudentTodaySprintProps {
   onStartRepair: () => void;
   onOpenCourses: () => void;
   onOpenTutor: () => void;
+  onDailyStepCompleted?: (stepId: DailyLoopStepId) => void;
   onDailyPlanCompleted?: () => void;
 }
 
@@ -47,6 +48,7 @@ export default function StudentTodaySprint({
   onStartRepair,
   onOpenCourses,
   onOpenTutor,
+  onDailyStepCompleted,
   onDailyPlanCompleted,
 }: StudentTodaySprintProps) {
   const dateKey = getTodayPlanDateKey();
@@ -126,6 +128,7 @@ export default function StudentTodaySprint({
   };
 
   const handleStepToggle = (stepId: DailyLoopStepId) => {
+    const wasEffectivelyCompleted = effectiveCompletedStepIds.includes(stepId);
     const nextCompletedStepIds = toggleDailyPlanStep(completedStepIds, stepId);
     const nextEffectiveCompletedStepIds = uniqueStepIds([...nextCompletedStepIds, ...eventCompletedStepIds]);
     const nextPlan = buildDailyLearningPlan({
@@ -150,6 +153,7 @@ export default function StudentTodaySprint({
 
     setCompletedStepIds(nextCompletedStepIds);
     persistDailyPlanCompletedSteps(localStorage, currentUser.username, nextCompletedStepIds, dateKey);
+    if (!wasEffectivelyCompleted && nextEffectiveCompletedStepIds.includes(stepId)) onDailyStepCompleted?.(stepId);
     if (nextPlan.isCompleted && !dailyPlan.isCompleted) onDailyPlanCompleted?.();
   };
 
@@ -157,6 +161,9 @@ export default function StudentTodaySprint({
     const allStepIds = dailyPlan.steps.map((step) => step.id);
     setCompletedStepIds(allStepIds);
     persistDailyPlanCompletedSteps(localStorage, currentUser.username, allStepIds, dateKey);
+    allStepIds
+      .filter((stepId) => !effectiveCompletedStepIds.includes(stepId))
+      .forEach((stepId) => onDailyStepCompleted?.(stepId));
     if (!dailyPlan.isCompleted) onDailyPlanCompleted?.();
   };
 

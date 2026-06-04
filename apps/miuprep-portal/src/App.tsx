@@ -30,6 +30,8 @@ import {
   DEFAULT_ERROR_NOTEBOOK_QUESTIONS,
   MASCOT_STORE_ITEMS,
   STUDENT_DIARY_MOODS,
+  buildDailyLoopStepLearningEvent,
+  buildErrorRetryLearningEvent,
   buildStudentWorkspaceTabs,
   countActiveErrorQuestions,
   getActiveErrorQuestions,
@@ -44,6 +46,7 @@ import {
   recordStudyDiary,
   resolveErrorRetry,
   toggleMascotItem,
+  type DailyLoopStepId,
   type DiaryEntry,
   type StudentWorkspaceTabId,
 } from './lib/studentProgress';
@@ -88,6 +91,95 @@ function downloadJsonFile(filename: string, payload: ContentExamChangeSet | Cont
 
 function safeFilePart(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '') || 'content';
+}
+
+function buildSatPracticeLearningEvent(
+  learner: LocalUser,
+  question: SatQuestion,
+  state: SatPracticeState,
+  selectedAnswer: string,
+  isCorrect: boolean,
+): LearningEventRecord {
+  const occurredAt = new Date().toISOString();
+  const itemId = question.id || `sat-${safeFilePart(state.bankName)}-${state.currentIndex + 1}`;
+  const domainId = inferSatLearningDomain(question, state);
+  const conceptIds = inferSatLearningConceptIds(question, state, domainId);
+  const skillIds = inferSatLearningSkillIds(question, state, domainId);
+
+  return buildLearningEvent(
+    'practice_attempt',
+    {
+      attemptId: `sat-${learner.username}-${itemId}-${safeFilePart(occurredAt)}`,
+      itemId,
+      domainId,
+      programId: 'sat',
+      conceptIds,
+      skillIds,
+      correct: isCorrect,
+      score: isCorrect ? 1 : 0,
+      maxScore: 1,
+      difficulty: question.difficulty || '',
+      mode: 'practice',
+      selectedAnswer,
+      correctAnswer: question.correctAnswer || '',
+      errorCategories: isCorrect ? [] : [inferSatErrorCategory(question, domainId)],
+      misconceptionIds: isCorrect ? [] : inferSatMisconceptionIds(question, domainId),
+      timeSpentSeconds: 0,
+      bankName: state.bankName,
+      questionIndex: state.currentIndex,
+      sourceSurface: 'sat_practice_board',
+    },
+    {
+      learnerId: learner.username,
+      entityType: 'learning_item',
+      entityId: itemId,
+      occurredAt,
+      source: 'miuprep_portal_sat_practice',
+    },
+  );
+}
+
+function inferSatLearningDomain(question: SatQuestion, state: SatPracticeState): string {
+  const value = `${question.domain || ''} ${question.skill || ''} ${question.canonicalSkill || ''} ${state.domain || ''}`.toLowerCase();
+  return value.includes('math') || value.includes('algebra') || value.includes('geometry') ? 'mathematics' : 'english_core';
+}
+
+function inferSatLearningConceptIds(question: SatQuestion, state: SatPracticeState, domainId: string): string[] {
+  const domain = question.domain || state.domain || (domainId === 'mathematics' ? 'math' : 'reading');
+  return [`sat.${slugLearningId(domain)}`];
+}
+
+function inferSatLearningSkillIds(question: SatQuestion, state: SatPracticeState, domainId: string): string[] {
+  const skill = question.canonicalSkill || question.skill || state.skill || (domainId === 'mathematics' ? 'math_problem_solving' : 'reading_inference');
+  return [`sat.${slugLearningId(skill)}`];
+}
+
+function inferSatErrorCategory(question: SatQuestion, domainId: string): string {
+  const value = `${question.domain || ''} ${question.skill || ''} ${question.canonicalSkill || ''}`.toLowerCase();
+  if (domainId === 'mathematics') return value.includes('geometry') ? 'reading_prompt' : 'calculation';
+  if (value.includes('grammar') || value.includes('standard')) return 'grammar';
+  if (value.includes('vocab') || value.includes('word')) return 'vocabulary';
+  if (value.includes('inference') || value.includes('evidence')) return 'inference';
+  return 'reading_prompt';
+}
+
+function inferSatMisconceptionIds(question: SatQuestion, domainId: string): string[] {
+  const value = `${question.domain || ''} ${question.skill || ''} ${question.canonicalSkill || ''}`.toLowerCase();
+  if (domainId === 'mathematics') {
+    if (value.includes('algebra')) return ['mis.math.factor_vs_expand'];
+    return ['mis.math.calculation_slip'];
+  }
+  if (value.includes('inference') || value.includes('evidence')) return ['mis.eng.inference_literal_only'];
+  return [];
+}
+
+function slugLearningId(value: string): string {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '') || 'mixed';
 }
 
 interface TrackInfo {
@@ -374,6 +466,9 @@ export default function App() {
   const handleAnswerSatQuestion = (choice: string) => {
     if (!activePracticeState) return;
     const { currentQuestion, isCorrect, nextState } = answerSatQuestion(activePracticeState, choice);
+    if (currentUser?.role === 'student') {
+      void saveStudentLearningEvent(buildSatPracticeLearningEvent(currentUser, currentQuestion, activePracticeState, choice, isCorrect));
+    }
 
     if (isCorrect) {
       setFishCoins(prev => {
@@ -793,6 +888,16 @@ export default function App() {
 
   const handleRetryErrorQuestion = (qId: string, choice: string, correctAns: string) => {
     const retryResult = resolveErrorRetry(errorQuestions, qId, choice, correctAns, fishCoins, mouseTrapsCount);
+    const attemptedQuestion = errorQuestions.find((question) => question.id === qId);
+    if (currentUser?.role === 'student' && attemptedQuestion) {
+      void saveStudentLearningEvent(buildErrorRetryLearningEvent({
+        username: currentUser.username,
+        question: attemptedQuestion,
+        selectedAnswer: choice,
+        correctAnswer: correctAns,
+        result: retryResult,
+      }));
+    }
 
     if (retryResult.isCorrect) {
       setErrorQuestions(retryResult.nextErrorQuestions);
@@ -812,6 +917,17 @@ export default function App() {
 
   const handleRetryErrorQuestionV2 = (qId: string, choice: string, correctAns: string) => {
     const retryResult = resolveErrorRetry(errorQuestions, qId, choice, correctAns, fishCoins, mouseTrapsCount);
+    const attemptedQuestion = errorQuestions.find((question) => question.id === qId);
+    if (currentUser?.role === 'student' && attemptedQuestion) {
+      void saveStudentLearningEvent(buildErrorRetryLearningEvent({
+        username: currentUser.username,
+        question: attemptedQuestion,
+        selectedAnswer: choice,
+        correctAnswer: correctAns,
+        result: retryResult,
+      }));
+    }
+
     setErrorQuestions(retryResult.nextErrorQuestions);
     setMouseTrapsCount(retryResult.nextTrapCount);
 
@@ -982,6 +1098,15 @@ export default function App() {
       });
     } catch (e) {
       console.error("Failed to log system event", e);
+    }
+  };
+
+  const saveStudentLearningEvent = async (event: LearningEventRecord) => {
+    try {
+      await db.saveLearningEvent(event);
+      setStudentLearningEvents(await db.listLearningEvents(undefined, 200));
+    } catch (e) {
+      console.error("Failed to save student learning event", e);
     }
   };
 
@@ -1185,6 +1310,16 @@ export default function App() {
     setStudentLearningEvents(await db.listLearningEvents(undefined, 200));
     await logSystemEvent('INFO', `Hoc sinh @${currentUser.username} hoan thanh today target`, { dateKey, eventId: event.id });
     showNotif('Today target completed. Miuprep se day hoc sinh sang muc tiep theo khi mastery du on dinh.', 'success');
+  };
+
+  const handleDailyStepCompleted = (stepId: DailyLoopStepId) => {
+    if (!currentUser || currentUser.role !== 'student') return;
+    void saveStudentLearningEvent(buildDailyLoopStepLearningEvent({
+      username: currentUser.username,
+      stepId,
+      dateKey: getTodayPlanDateKey(),
+      activeErrorCount: activeErrorQuestionCount,
+    }));
   };
 
   // ==========================================
@@ -2161,6 +2296,7 @@ export default function App() {
               onStartRepair={handleOpenStudentRepair}
               onOpenCourses={() => setStudentWorkspaceTab('courses')}
               onOpenTutor={() => setStudentWorkspaceTab('tutor')}
+              onDailyStepCompleted={handleDailyStepCompleted}
               onDailyPlanCompleted={handleDailyPlanCompleted}
             />
 

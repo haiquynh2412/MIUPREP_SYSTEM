@@ -1,4 +1,4 @@
-import type { LearningEventRecord } from '@miuprep/learning';
+import { buildLearningEvent, type LearningEventRecord } from '@miuprep/learning';
 import type { ErrorNotebookQuestion } from './satPractice';
 
 export interface DiaryEntry {
@@ -109,6 +109,24 @@ export interface DiaryUpdateResult {
   entry: DiaryEntry;
   nextDiaryList: DiaryEntry[];
   nextCoins: number;
+}
+
+export interface DailyLoopStepLearningEventInput {
+  username: string;
+  stepId: DailyLoopStepId;
+  dateKey?: string;
+  timeMode?: StudyTimeMode;
+  activeErrorCount?: number;
+  recommendationKind?: string;
+}
+
+export interface ErrorRetryLearningEventInput {
+  username: string;
+  question: ErrorNotebookQuestion;
+  selectedAnswer: string;
+  correctAnswer: string;
+  result: RetryErrorResult;
+  occurredAt?: string;
 }
 
 export type ErrorNotebookRetryStatusCode = 'new' | 'repairing' | 'prerequisite' | 'stable';
@@ -375,6 +393,71 @@ export function toggleDailyPlanStep(
   return normalized.includes(stepId)
     ? normalized.filter((id) => id !== stepId)
     : normalizeDailyStepIds([...normalized, stepId]);
+}
+
+export function buildDailyLoopStepLearningEvent(input: DailyLoopStepLearningEventInput): LearningEventRecord {
+  const dateKey = input.dateKey || getTodayPlanDateKey();
+  return buildLearningEvent(
+    'daily_step_completed',
+    {
+      dateKey,
+      dailyStepId: input.stepId,
+      completed: true,
+      timeMode: input.timeMode || '',
+      activeErrorCount: input.activeErrorCount || 0,
+      recommendationKind: input.recommendationKind || '',
+      sourceSurface: 'student_today_sprint',
+    },
+    {
+      learnerId: input.username,
+      entityType: 'daily_plan_step',
+      entityId: `daily-plan-${input.username}-${dateKey}-${input.stepId}`,
+      source: 'miuprep_portal',
+    },
+  );
+}
+
+export function buildErrorRetryLearningEvent(input: ErrorRetryLearningEventInput): LearningEventRecord {
+  const occurredAt = input.occurredAt || new Date().toISOString();
+  const domainId = inferErrorQuestionDomainId(input.question);
+  const programId = input.question.programId || (domainId === 'english_core' ? 'ielts' : 'vn_math_6_9');
+  const conceptIds = normalizeLearningIds(input.question.conceptIds, fallbackConceptId(domainId, input.question));
+  const skillIds = normalizeLearningIds(input.question.skillIds, fallbackSkillId(domainId, input.question));
+  const stageAfter = input.result.nextErrorQuestions.find((question) => question.id === input.question.id)?.stage ?? input.question.stage;
+
+  return buildLearningEvent(
+    'review_attempt',
+    {
+      attemptId: `retry-${input.username}-${input.question.id}-${stableEventPart(occurredAt)}`,
+      itemId: input.question.id,
+      domainId,
+      programId,
+      conceptIds,
+      skillIds,
+      correct: input.result.isCorrect,
+      score: input.result.isCorrect ? 1 : 0,
+      maxScore: 1,
+      difficulty: difficultyFromErrorStage(input.question.stage),
+      mode: 'review',
+      selectedAnswer: input.selectedAnswer,
+      correctAnswer: input.correctAnswer,
+      stageBefore: input.question.stage,
+      stageAfter,
+      retryAttempts: input.result.retryAttempts,
+      retryStatusCode: input.result.retryStatusCode,
+      errorCategories: input.result.isCorrect ? [] : [errorCategoryFromQuestion(input.question, domainId)],
+      misconceptionIds: input.result.isCorrect ? [] : misconceptionIdsFromQuestion(input.question, domainId),
+      timeSpentSeconds: 0,
+      sourceSurface: 'error_notebook',
+    },
+    {
+      learnerId: input.username,
+      entityType: 'learning_item',
+      entityId: input.question.id,
+      occurredAt,
+      source: 'miuprep_portal_error_notebook',
+    },
+  );
 }
 
 export function buildDailyLearningPlan(input: DailyLearningPlanInput): DailyLearningPlan {
@@ -892,6 +975,87 @@ function dailyStepIdFromEvent(event: LearningEventRecord): DailyLoopStepId | nul
   if (text.includes('review') || text.includes('feedback_only') || text.includes('tutor')) return 'review';
   if (text.includes('practice') || text.includes('guided')) return 'guided';
   return null;
+}
+
+function inferErrorQuestionDomainId(question: ErrorNotebookQuestion): string {
+  if (question.domainId) return question.domainId;
+  const text = normalizePlainText(`${question.id} ${question.text} ${question.answerExpl}`);
+  if (text.includes('english') || text.includes('grammar') || text.includes('ielts') || text.includes('sat reading')) {
+    return 'english_core';
+  }
+  return 'mathematics';
+}
+
+function normalizeLearningIds(values: string[] | undefined, fallback: string): string[] {
+  const normalized = (Array.isArray(values) ? values : [])
+    .map((value) => String(value || '').trim())
+    .filter(Boolean);
+  return normalized.length ? [...new Set(normalized)] : [fallback];
+}
+
+function fallbackConceptId(domainId: string, question: ErrorNotebookQuestion): string {
+  if (domainId === 'english_core') {
+    const text = normalizePlainText(`${question.text} ${question.answerExpl}`);
+    if (text.includes('inference')) return 'eng.reading_inference';
+    if (text.includes('grammar') || text.includes('although')) return 'eng.grammar_accuracy';
+    return 'eng.core_skill';
+  }
+  if (question.repairLessonId?.includes('geometry') || normalizePlainText(question.text).includes('duong tron')) {
+    return 'math.geometry';
+  }
+  return 'math.algebraic_expression';
+}
+
+function fallbackSkillId(domainId: string, question: ErrorNotebookQuestion): string {
+  if (domainId === 'english_core') {
+    const text = normalizePlainText(`${question.text} ${question.answerExpl}`);
+    if (text.includes('inference')) return 'eng.infer_implicit_meaning';
+    if (text.includes('grammar') || text.includes('although')) return 'eng.grammar_accuracy';
+    return 'eng.academic_reading';
+  }
+  if (question.repairLessonId?.includes('geometry') || normalizePlainText(question.text).includes('duong tron')) {
+    return 'math.geometry_proof';
+  }
+  if (normalizePlainText(question.text).includes('sqrt')) return 'math.simplify_expression';
+  return 'math.solve_problem';
+}
+
+function difficultyFromErrorStage(stage: number): string {
+  if (stage >= 3) return 'hard';
+  if (stage >= 1) return 'medium';
+  return 'easy';
+}
+
+function errorCategoryFromQuestion(question: ErrorNotebookQuestion, domainId: string): string {
+  if (question.errorType === 'reading_prompt') return 'reading_prompt';
+  if (question.errorType === 'time_strategy') return 'time_management';
+  if (question.errorType === 'calculation') return 'calculation';
+  if (domainId === 'english_core') {
+    const text = normalizePlainText(`${question.text} ${question.answerExpl}`);
+    if (text.includes('inference')) return 'inference';
+    if (text.includes('grammar') || text.includes('although')) return 'grammar';
+    return 'reading_prompt';
+  }
+  const text = normalizePlainText(`${question.text} ${question.answerExpl}`);
+  if (text.includes('dieu kien') || text.includes('domain')) return 'missing_condition';
+  if (text.includes('sqrt') || text.includes('rut gon')) return 'algebra_transform';
+  return 'calculation';
+}
+
+function misconceptionIdsFromQuestion(question: ErrorNotebookQuestion, domainId: string): string[] {
+  const text = normalizePlainText(`${question.text} ${question.answerExpl}`);
+  if (domainId === 'english_core') {
+    if (text.includes('inference')) return ['mis.eng.inference_literal_only'];
+    if (text.includes('grammar') || text.includes('although')) return ['mis.eng.grammar_connector_confusion'];
+    return [];
+  }
+  if (text.includes('sqrt') || text.includes('rut gon') || text.includes('factor')) return ['mis.math.factor_vs_expand'];
+  if (text.includes('dieu kien') || text.includes('domain')) return ['mis.math.missing_domain_condition'];
+  return ['mis.math.calculation_slip'];
+}
+
+function stableEventPart(value: string): string {
+  return String(value || '').replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'event';
 }
 
 function normalizeDailyStepIds(values: unknown[]): DailyLoopStepId[] {

@@ -1093,3 +1093,43 @@ Residual risk:
 - Math 6 is not fully display-ready. The 477 Word/OLE formula-review blockers require recovering equations from original files or a better Word formula extraction path.
 - The 79 legacy font/encoding blockers need source-specific Vietnamese/font conversion review before student-facing release.
 - The 2 original-image blockers still need original diagrams captured or manually recreated.
+
+### 2026-06-04 Batch 11 - Student live learning event capture
+
+Scope completed:
+
+- Student SAT practice answers now write `practice_attempt` learning events for both correct and incorrect answers.
+- Error Notebook legacy and V2 retries now write `review_attempt` learning events for both correct and incorrect retries, including stage, retry status, error category, misconception IDs, and fallback concept/skill IDs.
+- Today Sprint step completion now writes `daily_step_completed` learning events per diagnostic/lesson/guided/independent/review step, while the existing full-day completion event remains unchanged.
+- Portal event saves refresh the in-memory learning event list so student overview/admin analytics/reroute panels can consume the latest local events.
+
+Changed files:
+
+- `apps/miuprep-portal/src/App.tsx`
+- `apps/miuprep-portal/src/components/StudentTodaySprint.tsx`
+- `apps/miuprep-portal/src/lib/studentProgress.ts`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Proof captured:
+
+- Portal lint/build prove the student UI compiles with the new event builders and callback wiring.
+- Learning tests still pass against the event-derived importer, so the new `practice_attempt` and `review_attempt` shape remains compatible with `buildStudentModelFromLearningEvents`.
+- Beta tests still pass against reroute/readiness logic, so student live attempts can feed the existing admin-visible repair queue without changing student-facing recommendation policy.
+
+Residual risk:
+
+- Daily step completion events are workflow evidence, not scored mastery attempts; only SAT answers and Error Notebook retries are imported as tracked attempts.
+- Other non-SAT course/practice surfaces still need real question-answer flows before they can emit tracked attempts.
+- Browser visual QA was not run for this batch because the changes are data-capture wiring with no intended layout change; use a fresh browser session before product sign-off.
