@@ -1252,3 +1252,39 @@ Residual risk:
 
 - Lesson panels are live-first for recommendation context only. Non-SAT course surfaces still need tracked answer submission events before they can influence mastery through real attempts.
 - Authenticated browser visual QA remains outstanding because the in-app Browser login form still hits the virtual-clipboard input limitation.
+
+### 2026-06-04 Batch 15 - Live-first Today Sprint plan
+
+Scope completed:
+
+- Today Sprint now builds its mastery, weakest-focus, recommendation, and next-step context from live learning events first.
+- The existing synthetic learner snapshot remains the fallback when the student has no valid tracked attempts.
+- Daily step completion still merges local completion state with stored `daily_step_completed` events, so this batch only changes the evidence source behind the plan recommendation.
+
+Changed files:
+
+- `apps/miuprep-portal/src/components/StudentTodaySprint.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Proof captured:
+
+- Portal lint/build prove Today Sprint compiles after switching to the shared live-first snapshot helper.
+- Learning tests prove live event-derived state reconstruction still accepts the event shapes emitted by portal flows.
+- Beta tests prove reroute/readiness logic remains stable after Today Sprint consumes the same live evidence model as the dashboard, parent views, and lesson panels.
+
+Residual risk:
+
+- Today Sprint can only reflect live mastery for flows that emit valid scored attempts. Non-SAT course/practice screens still need answer-submission event capture before they become true mastery sources.
+- Authenticated browser visual QA remains outstanding because the in-app Browser login form still hits the virtual-clipboard input limitation.

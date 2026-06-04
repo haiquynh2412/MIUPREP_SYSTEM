@@ -17,7 +17,7 @@ import {
   type StudyTimeMode,
 } from '../lib/studentProgress';
 import {
-  buildLearnerSnapshot,
+  buildLearnerSnapshotFromLiveEvents,
   normalizeAssignedTracks,
   type PortalTrackInfo,
 } from './UnifiedLearnerDashboard';
@@ -70,8 +70,8 @@ export default function StudentTodaySprint({
     [assignedTracks, tracks],
   );
   const snapshot = useMemo(
-    () => buildLearnerSnapshot(currentUser, activeTracks, fishCoins, mouseTrapsCount),
-    [activeTracks, currentUser, fishCoins, mouseTrapsCount],
+    () => buildLearnerSnapshotFromLiveEvents(currentUser, activeTracks, learningEvents, fishCoins, mouseTrapsCount),
+    [activeTracks, currentUser, fishCoins, learningEvents, mouseTrapsCount],
   );
 
   const firstError = activeErrorQuestions[0];
