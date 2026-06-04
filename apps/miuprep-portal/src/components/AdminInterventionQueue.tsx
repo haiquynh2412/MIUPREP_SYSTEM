@@ -6,6 +6,7 @@ import { buildStudentModelFromLearningEvents, type LearningEventRecord } from '@
 import { loadStudentProgressSnapshot } from '../lib/studentProgress';
 import {
   buildLearnerSnapshot,
+  buildLearnerSnapshotFromLiveEvents,
   normalizeAssignedTracks,
   type PortalTrackInfo,
   type PortalTrackId,
@@ -500,9 +501,10 @@ function buildLearnerInterventions(
   const students = users.filter((user) => user.role === 'student' && (user.status || 'approved') === 'approved');
 
   return students.map((student) => {
-    const activeTracks = tracks.filter((track) => normalizeAssignedTracks(toLocalUser(student)).includes(track.id));
+    const localStudent = toLocalUser(student);
+    const activeTracks = tracks.filter((track) => normalizeAssignedTracks(localStudent).includes(track.id));
     const progress = readProgress(student.username);
-    const snapshot = buildLearnerSnapshot(toLocalUser(student), activeTracks, progress.coins, Math.max(progress.traps, activeErrors.length));
+    const snapshot = buildLearnerSnapshotFromLiveEvents(localStudent, activeTracks, learningEvents, progress.coins, Math.max(progress.traps, activeErrors.length));
     const weakest = snapshot.programSummaries.slice().sort((a, b) => a.score - b.score)[0];
     const studentEvents = learningEvents.filter((event) => event.learnerId === student.id || event.learnerId === student.username);
     const attempts = Math.max(snapshot.state.attempts.length, studentEvents.length);

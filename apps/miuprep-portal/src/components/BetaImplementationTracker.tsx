@@ -9,7 +9,7 @@ import {
 import type { LocalUser, SystemLog } from '@miuprep/db';
 import { buildGraphBackendEvaluationReport, createSeedKnowledgeGraph } from '@miuprep/knowledge';
 import { buildLearningEventSyncAuditReport, type LearningEventRecord } from '@miuprep/learning';
-import { buildLearnerSnapshot, normalizeAssignedTracks, type PortalTrackInfo, type PortalTrackId } from './UnifiedLearnerDashboard';
+import { buildLearnerSnapshotFromLiveEvents, normalizeAssignedTracks, type PortalTrackInfo, type PortalTrackId } from './UnifiedLearnerDashboard';
 
 type ProgramId = 'vn_math_6_9' | 'sat' | 'ielts' | 'cae' | 'cpe';
 
@@ -68,13 +68,13 @@ export default function BetaImplementationTracker({
       .map((user) => {
         const assignedTrackIds = normalizeAssignedTracks(user as LocalUser);
         const activeTracks = tracks.filter((track) => assignedTrackIds.includes(track.id));
-        const snapshot = buildLearnerSnapshot(toLocalUser(user), activeTracks, 150, errorQuestionCount);
+        const snapshot = buildLearnerSnapshotFromLiveEvents(toLocalUser(user), activeTracks, learningEvents, 150, errorQuestionCount);
         return {
           id: user.id || user.username,
           username: user.username,
           targetProgramIds: assignedTrackIds.map((trackId) => TRACK_TO_PROGRAM[trackId]),
           state: snapshot.state,
-          stateKind: 'synthetic' as const,
+          stateKind: snapshot.evidenceSource,
         };
       });
 

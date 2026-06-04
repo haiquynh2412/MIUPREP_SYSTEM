@@ -1288,3 +1288,40 @@ Residual risk:
 
 - Today Sprint can only reflect live mastery for flows that emit valid scored attempts. Non-SAT course/practice screens still need answer-submission event capture before they become true mastery sources.
 - Authenticated browser visual QA remains outstanding because the in-app Browser login form still hits the virtual-clipboard input limitation.
+
+### 2026-06-04 Batch 16 - Admin and beta live learner evidence
+
+Scope completed:
+
+- Admin Intervention Queue teacher-facing learner interventions now build mastery, focus, score, reason, and action from live learning events first.
+- Beta Implementation Tracker now builds learner state from live learning events first and passes `stateKind` as `live` or `synthetic` according to the snapshot evidence source.
+- The remaining direct synthetic snapshot call in Admin Intervention Queue is limited to the explicit fallback branch inside beta reroute learner construction, where `stateKind: 'synthetic'` is still required for beta evidence accounting.
+
+Changed files:
+
+- `apps/miuprep-portal/src/components/AdminInterventionQueue.tsx`
+- `apps/miuprep-portal/src/components/BetaImplementationTracker.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Proof captured:
+
+- Portal lint/build prove admin and beta tracker surfaces compile after switching to live-first learner snapshots.
+- Learning tests prove event-derived student model reconstruction remains stable for portal learning events.
+- Beta tests prove readiness, KPI, graph-candidate, and repair-reroute rules still preserve live versus synthetic evidence semantics.
+
+Residual risk:
+
+- Admin/beta live state still depends on available scored attempt events. Workflow-only events remain telemetry and do not become mastery attempts.
+- Authenticated browser visual QA remains outstanding because the in-app Browser login form still hits the virtual-clipboard input limitation.
