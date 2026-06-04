@@ -327,15 +327,16 @@ export function selectSatDiagnosticItems(
     domainIds: satDiagnosticDomainIds(options),
     tags: satScopeTags(options),
   }).filter((item) => String(item.metadata?.practicePool || '') !== 'remedial_pool');
+  const scopedPool = pool.filter((item) => matchesSatScope(item, options));
 
-  const selected = balancedSelect(pool, limit, (item) => [
+  const selected = balancedSelect(scopedPool, limit, (item) => [
     String(item.metadata?.section || 'unknown'),
     String(item.metadata?.satDomain || 'unknown'),
     item.difficulty,
   ]);
 
   if (selected.length >= limit) return selected;
-  return fillSelection(selected, pool, limit);
+  return fillSelection(selected, scopedPool, limit);
 }
 
 export function selectSatPracticeItems(catalog: SatLearningCatalog, options: SatPracticeSelectionOptions = {}): QuestionItem[] {

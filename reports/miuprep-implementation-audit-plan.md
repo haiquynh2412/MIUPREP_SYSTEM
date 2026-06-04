@@ -1370,3 +1370,59 @@ Proof captured:
 Residual risk:
 
 - The only open Phase 11 item remains Knowledge Graph update from real beta data. It is intentionally not implemented until real beta evidence is collected and reviewed.
+
+### 2026-06-04 Batch 18 - Practical regression and SAT scope build fix
+
+Scope completed:
+
+- Re-ran the audit verification as real commands and browser QA instead of document-only comparison.
+- Found a root build failure in `packages/content/src/sat-content.ts`: `matchesSatScope` was declared but unused under the full workspace build.
+- Wired SAT diagnostic selection through `matchesSatScope`, so section/domain scope is enforced before balanced diagnostic item selection and fallback fill.
+- Re-ran authenticated browser QA on the live portal dev server at `http://127.0.0.1:5181`.
+- Corrected the QA seed shape to match the production learning event schema: scored attempt fields live in `payload`, while event metadata remains top-level.
+
+Changed files:
+
+- `packages/content/src/sat-content.ts`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run guard:english -w @miuprep/content`
+- `npm.cmd run guard:sat -w @miuprep/content`
+- `npm.cmd run export:beta-run -w @miuprep/beta`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+
+Verification passed, round 2:
+
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run guard:sat -w @miuprep/content`
+- `npm.cmd run build -w @miuprep/content`
+- `npm.cmd run build`
+
+Authenticated browser QA:
+
+- Started portal dev server at `http://127.0.0.1:5181`.
+- Seeded admin, parent, student, peer accounts and four valid live learning events in browser localStorage through Playwright.
+- Verified student Overview: `Daily Learning Loop V2` and `Live events`.
+- Verified student Courses: `LessonTemplate core` and `English Core`.
+- Verified parent view: `PARENT NEXT ACTION` and `PARENT LEARNING OVERVIEW`.
+- Verified admin Analytics: `Intervention Queue`, `Teacher queue`, `Beta Readiness`, and `Learning event capture`.
+- Verified no page errors, no console errors, and no horizontal overflow.
+
+Proof captured:
+
+- Full workspace build initially failed on the unused SAT scope helper; after the fix, `npm.cmd run build` passed across all workspaces.
+- Playwright reported `ok: true`, 10 passed authenticated surface checks, 4 seeded learning events, 0 errors, 0 console errors, and no overflow at 1440px.
+- The browser QA also proved the learner dashboard consumes live learning events only when the event payload has valid attempt evidence.
+
+Residual risk:
+
+- Knowledge Graph update from real beta data remains intentionally blocked until real beta evidence is collected and reviewed.
+- Math 6 display/content recovery still has dirty worktree artifacts and should be handled in a separate content-data batch, not mixed into this SAT/build QA commit.
+- Non-SAT course mastery still depends on additional answer-submission event capture in the relevant course/practice flows.
