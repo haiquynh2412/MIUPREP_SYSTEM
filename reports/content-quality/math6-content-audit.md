@@ -1,14 +1,14 @@
 # Math 6 Content Audit
 
-Generated at: 2026-06-04T08:09:59.050Z
+Generated at: 2026-06-04T10:52:46.796Z
 
 ## Summary
 
 - Sources: 75
 - Questions: 1270
-- Display-ready questions: 766
-- Generated SVG figures: 465
-- Blockers: 558
+- Display-ready questions: 783
+- Generated SVG figures: 467
+- Blockers: 494
 - Warnings: 20
 - Adapter converted items: 1270
 - Adapter pass: yes
@@ -18,7 +18,7 @@ Generated at: 2026-06-04T08:09:59.050Z
 
 - Needs formula review: 477
 - Needs original image: 2
-- Needs text encoding review: 79
+- Needs text encoding review: 15
 - Prompt control characters: 0
 - Raw sources with Word/OLE markers: 61
 - Raw Word/OLE markers total: 2811
@@ -28,7 +28,7 @@ Generated at: 2026-06-04T08:09:59.050Z
 | Code | Count |
 | --- | ---: |
 | display.formula_review | 477 |
-| display.legacy_font_encoding | 79 |
+| display.legacy_font_encoding | 15 |
 | import.source.unmapped_blocks | 12 |
 | import.source.no_exercise_blocks | 8 |
 | display.image_missing | 2 |
@@ -37,29 +37,29 @@ Generated at: 2026-06-04T08:09:59.050Z
 
 | Topic | Questions |
 | --- | ---: |
-| math6.geometry.points_lines_segments | 411 |
-| math6.number.natural_operations | 201 |
-| math6.number.divisibility | 124 |
+| math6.geometry.points_lines_segments | 412 |
+| math6.number.natural_operations | 176 |
+| math6.number.divisibility | 130 |
 | math6.number.sets_natural_numbers | 115 |
-| math6.advanced.divisibility_hsg | 92 |
-| math6.number.prime_factor_gcd_lcm | 85 |
-| math6.geometry.angles | 59 |
-| math6.number.integers_intro | 54 |
-| math6.number.powers_order_operations | 36 |
+| math6.advanced.divisibility_hsg | 96 |
+| math6.number.prime_factor_gcd_lcm | 89 |
+| math6.geometry.angles | 60 |
+| math6.number.integers_intro | 55 |
+| math6.number.powers_order_operations | 39 |
 | math6.number.decimal_percent | 35 |
 | math6.number.fraction_operations | 29 |
-| math6.number.fraction_foundation | 20 |
+| math6.number.fraction_foundation | 25 |
 | math6.number.fraction_three_basic_problems | 9 |
 
 ## Level Coverage
 
 | Level | Questions |
 | --- | ---: |
-| foundation | 540 |
-| application | 375 |
-| core | 242 |
-| advanced | 72 |
-| hsg | 41 |
+| foundation | 522 |
+| application | 384 |
+| core | 245 |
+| advanced | 77 |
+| hsg | 42 |
 
 ## Top Issues
 
@@ -201,27 +201,27 @@ Generated at: 2026-06-04T08:09:59.050Z
 | blocker | display.formula_review | math6.geometry_points_lines_segments.30dehsgtoan6_doc.1wmog8n.139 | 30DeHSGToan6.doc | math6.geometry.points_lines_segments | Question may have lost Word/OLE formula content (5 raw marker(s)). |
 | blocker | display.formula_review | math6.number_sets_natural_numbers.4444444444444444_doc.16rbgqh.001 | 4444444444444444.doc | math6.number.sets_natural_numbers | Question may have lost Word/OLE formula content (5 raw marker(s)). |
 | blocker | display.formula_review | math6.geometry_points_lines_segments.4444444444444444_doc.16rbgqh.009 | 4444444444444444.doc | math6.geometry.points_lines_segments | Question may have lost Word/OLE formula content (3 raw marker(s)). |
-| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.001 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.001 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
-| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.002 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.002 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.003 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
-| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.004 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.004 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
+| blocker | display.formula_review | math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.001 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.fraction_foundation | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.002 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.fraction_foundation | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.004 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.divisibility | Question may have lost Word/OLE formula content (1 raw marker(s)). |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.005 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (2 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.005 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.006 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (9 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.006 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.007 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (3 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.007 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.008 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
 | blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.008 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.009 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (2 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.009 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.010 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
 | blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.010 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.011 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
-| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.011 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
 | blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.012 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
 | blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.012 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
-| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.013 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (5 raw marker(s)). |
+| blocker | display.formula_review | math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.013 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.fraction_foundation | Question may have lost Word/OLE formula content (5 raw marker(s)). |
+| blocker | display.formula_review | math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.014 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.fraction_foundation | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.015 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.017 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.018 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.020 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.advanced_divisibility_hsg.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.021 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.advanced.divisibility_hsg | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.formula_review | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.022 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Question may have lost Word/OLE formula content (1 raw marker(s)). |
+| blocker | display.legacy_font_encoding | math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.022 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.natural_operations | Prompt appears to contain legacy font or mojibake text. |
+| blocker | display.formula_review | math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.023 | Bai tap danh cho hoc sinh lop 6 tu hoc.doc | math6.number.prime_factor_gcd_lcm | Question may have lost Word/OLE formula content (1 raw marker(s)). |

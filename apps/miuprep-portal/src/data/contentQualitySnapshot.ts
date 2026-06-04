@@ -60,6 +60,8 @@ export interface ContentCoverageProgramSnapshot {
   coverageStatus: 'ready' | 'watch' | 'planned' | 'needs_repair';
   sourceMatched?: boolean;
   changedQuestions?: number;
+  sourceFiles?: number;
+  sourceFormats?: Record<string, number>;
   sourcePath?: string;
   currentPath?: string;
   note: string;
@@ -73,17 +75,17 @@ export interface UnifiedContentCoverageSnapshot {
 
 export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
   "schemaVersion": "english_content_guard_v1",
-  "generatedAt": "2026-06-04T07:12:58.983Z",
+  "generatedAt": "2026-06-04T10:23:17.466Z",
   "sourceCommand": "npm.cmd run sync:portal-quality -w @miuprep/content",
   "qualitySummary": {
-    "tests": 91,
-    "questions": 7026,
+    "tests": 95,
+    "questions": 7098,
     "blockers": 0,
     "warnings": 112,
     "byProgram": {
       "ielts": 6,
       "cpe": 47,
-      "cae": 38
+      "cae": 42
     },
     "topIssues": [
       {
@@ -264,13 +266,13 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
     {
       "skill": "writing",
       "label": "Writing",
-      "totalItems": 27,
+      "totalItems": 67,
       "learningReadyItems": 0,
-      "feedbackOnlyItems": 27,
+      "feedbackOnlyItems": 67,
       "blockerItems": 0,
       "warningItems": 0,
       "byProgram": {
-        "cae": 20,
+        "cae": 60,
         "cpe": 4,
         "ielts": 3
       }
@@ -278,21 +280,21 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
     {
       "skill": "speaking",
       "label": "Speaking",
-      "totalItems": 22,
+      "totalItems": 54,
       "learningReadyItems": 0,
-      "feedbackOnlyItems": 22,
+      "feedbackOnlyItems": 54,
       "blockerItems": 0,
       "warningItems": 0,
       "byProgram": {
-        "cae": 16,
+        "cae": 48,
         "cpe": 3,
         "ielts": 3
       }
     }
   ],
   "adapter": {
-    "readyItems": 7026,
-    "mockTests": 91,
+    "readyItems": 7098,
+    "mockTests": 95,
     "passages": 658,
     "errorCount": 0,
     "pass": true
@@ -301,11 +303,57 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
 
 export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
   "schemaVersion": "miuprep_content_coverage_v1",
-  "generatedAt": "2026-06-04T07:12:58.983Z",
+  "generatedAt": "2026-06-04T10:23:17.466Z",
   "programs": [
     {
-      "programId": "vn_math_6_9",
+      "programId": "vn_math_6",
+      "label": "VN Math 6 Local Sources",
+      "sourceQuestions": 1270,
+      "importedQuestions": 1270,
+      "readyQuestions": 783,
+      "blockerItems": 487,
+      "warningItems": 20,
+      "coverageStatus": "watch",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 75,
+      "sourceFormats": {
+        "doc": 67,
+        "docx": 7,
+        "dot": 1
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math6-raw-extract.json",
+      "note": "783/1270 questions are display-ready; 467 geometry SVG figures generated; 487 items remain behind formula/image/encoding gates."
+    },
+    {
+      "programId": "vn_math_9",
       "label": "MiuMath Math 9",
+      "sourceQuestions": 485,
+      "importedQuestions": 485,
+      "readyQuestions": 485,
+      "blockerItems": 0,
+      "warningItems": 0,
+      "coverageStatus": "ready",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 136,
+      "sourceFormats": {
+        ".rar": 6,
+        ".pdf": 106,
+        ".docx": 21,
+        ".doc": 2,
+        ".zip": 1
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\ON THi\\miumath-app\\public\\data\\questions_db.json",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\apps\\miumath-app\\public\\data\\questions_db.json",
+      "note": "Counts match source and every question converts to QuestionItem. Local TOAN 9 folder has 136 files for the next guarded import batch."
+    },
+    {
+      "programId": "vn_math_vao_10",
+      "label": "MiuMath On Vao 10",
       "sourceQuestions": 485,
       "importedQuestions": 485,
       "readyQuestions": 485,
@@ -317,11 +365,11 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       "changedQuestions": 0,
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\ON THi\\miumath-app\\public\\data\\questions_db.json",
       "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\apps\\miumath-app\\public\\data\\questions_db.json",
-      "note": "Counts match source and every question converts to QuestionItem."
+      "note": "Counts match source and every question converts to QuestionItem. The same item bank is tagged for entrance-exam review via vn_math_vao_10."
     },
     {
-      "programId": "vn_math_10_12",
-      "label": "VN Math 10-12",
+      "programId": "vn_math_7",
+      "label": "VN Math 7 Local Sources",
       "sourceQuestions": 0,
       "importedQuestions": 0,
       "readyQuestions": 0,
@@ -329,9 +377,57 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       "warningItems": 0,
       "coverageStatus": "planned",
       "adapterPass": true,
-      "sourceMatched": false,
+      "sourceMatched": true,
       "changedQuestions": 0,
-      "note": "Knowledge Graph, objectives, skills, and remediation map are ready; question bank has not been imported yet."
+      "sourceFiles": 6,
+      "sourceFormats": {
+        ".pdf": 5,
+        ".docx": 1
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 7",
+      "note": "Source folder is detected; build a Math 7 matrix/importer with the same Math guard before opening items."
+    },
+    {
+      "programId": "vn_math_8",
+      "label": "VN Math 8 Local Sources",
+      "sourceQuestions": 0,
+      "importedQuestions": 0,
+      "readyQuestions": 0,
+      "blockerItems": 0,
+      "warningItems": 0,
+      "coverageStatus": "planned",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 25,
+      "sourceFormats": {
+        ".pdf": 23,
+        ".rar": 2
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 8",
+      "note": "Source folder is detected; build a Math 8 matrix/importer with the same Math guard before opening items."
+    },
+    {
+      "programId": "vn_math_10_12",
+      "label": "VN Math 10-12 Local Sources",
+      "sourceQuestions": 0,
+      "importedQuestions": 0,
+      "readyQuestions": 0,
+      "blockerItems": 0,
+      "warningItems": 0,
+      "coverageStatus": "planned",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 67,
+      "sourceFormats": {
+        ".pdf": 62,
+        ".doc": 1,
+        ".docx": 1,
+        ".xlsx": 3
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10",
+      "note": "Knowledge Graph is ready; source folder is detected and should use the same guarded import/display-ready flow."
     },
     {
       "programId": "sat",
@@ -381,17 +477,17 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
     {
       "programId": "cae",
       "label": "CAE",
-      "sourceQuestions": 3865,
-      "importedQuestions": 3865,
+      "sourceQuestions": 3937,
+      "importedQuestions": 3937,
       "readyQuestions": 3829,
       "blockerItems": 0,
-      "warningItems": 38,
+      "warningItems": 42,
       "coverageStatus": "watch",
-      "feedbackOnlyItems": 36,
+      "feedbackOnlyItems": 108,
       "adapterPass": true,
       "sourceMatched": true,
       "changedQuestions": 0,
-      "note": "3829 mastery-ready questions and 36 feedback-only Writing/Speaking samples in the shared English catalog."
+      "note": "3829 mastery-ready questions and 108 feedback-only Writing/Speaking samples in the shared English catalog."
     }
   ]
 };

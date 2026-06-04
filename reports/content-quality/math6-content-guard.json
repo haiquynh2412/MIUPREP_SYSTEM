@@ -1,14 +1,14 @@
 {
   "schemaVersion": "math6_content_guard_v1",
-  "generatedAt": "2026-06-04T08:09:59.050Z",
+  "generatedAt": "2026-06-04T10:52:46.796Z",
   "input": {
     "rawPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math6-raw-extract.json",
     "sources": 75
   },
   "stats": {
     "questions": 1270,
-    "displayReady": 766,
-    "generatedFigures": 465,
+    "displayReady": 783,
+    "generatedFigures": 467,
     "byProgram": {
       "vn_math_6": 1270,
       "vn_math_6_8": 1270,
@@ -16,26 +16,26 @@
       "vn_math_thcs": 1270
     },
     "byTopic": {
-      "math6.number.prime_factor_gcd_lcm": 85,
-      "math6.number.natural_operations": 201,
+      "math6.number.prime_factor_gcd_lcm": 89,
+      "math6.number.natural_operations": 176,
       "math6.number.sets_natural_numbers": 115,
       "math6.number.fraction_operations": 29,
       "math6.number.decimal_percent": 35,
-      "math6.geometry.angles": 59,
+      "math6.geometry.angles": 60,
       "math6.number.fraction_three_basic_problems": 9,
-      "math6.number.fraction_foundation": 20,
-      "math6.geometry.points_lines_segments": 411,
-      "math6.number.divisibility": 124,
-      "math6.advanced.divisibility_hsg": 92,
-      "math6.number.integers_intro": 54,
-      "math6.number.powers_order_operations": 36
+      "math6.number.fraction_foundation": 25,
+      "math6.geometry.points_lines_segments": 412,
+      "math6.number.divisibility": 130,
+      "math6.advanced.divisibility_hsg": 96,
+      "math6.number.integers_intro": 55,
+      "math6.number.powers_order_operations": 39
     },
     "byLevel": {
-      "foundation": 540,
-      "application": 375,
-      "core": 242,
-      "hsg": 41,
-      "advanced": 72
+      "foundation": 522,
+      "application": 384,
+      "core": 245,
+      "hsg": 42,
+      "advanced": 77
     },
     "bySource": {
       "[123doc.vn] - luyen-tap-phan-tich-ra-thua-so-nguyen-to.doc": 9,
@@ -107,20 +107,20 @@
   },
   "qualitySummary": {
     "questions": 1270,
-    "blockers": 558,
+    "blockers": 494,
     "warnings": 20,
     "byCode": {
       "import.source.unmapped_blocks": 12,
       "import.source.no_exercise_blocks": 8,
       "display.formula_review": 477,
       "display.image_missing": 2,
-      "display.legacy_font_encoding": 79
+      "display.legacy_font_encoding": 15
     }
   },
   "display": {
     "needsFormulaReview": 477,
     "needsOriginalImage": 2,
-    "needsTextEncodingReview": 79,
+    "needsTextEncodingReview": 15,
     "promptControlCharacters": 0,
     "rawSourcesWithOleMarkers": 61,
     "rawOleMarkersTotal": 2811
@@ -1452,19 +1452,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[212].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.001",
+      "questionId": "math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.001",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[212].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.001",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.fraction_foundation",
       "field": "prompt"
     },
     {
@@ -1472,29 +1462,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[213].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.002",
+      "questionId": "math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.002",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[213].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.002",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[214].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.003",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.fraction_foundation",
       "field": "prompt"
     },
     {
@@ -1502,35 +1472,15 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[215].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.004",
+      "questionId": "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.004",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[215].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.004",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.divisibility",
       "field": "prompt"
     },
     {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
-      "path": "questions[216].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.005",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[216].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.005",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -1548,29 +1498,9 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[217].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.006",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (3 raw marker(s)).",
-      "path": "questions[218].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.007",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[218].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.007",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -1608,16 +1538,6 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[220].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.009",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
@@ -1641,16 +1561,6 @@
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
-      "path": "questions[222].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.011",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[222].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.011",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -1682,19 +1592,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (5 raw marker(s)).",
       "path": "questions[224].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.013",
+      "questionId": "math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.013",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[224].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.013",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.fraction_foundation",
       "field": "prompt"
     },
     {
@@ -1702,19 +1602,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[225].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.014",
+      "questionId": "math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.014",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[225].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.014",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.fraction_foundation",
       "field": "prompt"
     },
     {
@@ -1728,39 +1618,9 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[226].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.015",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[227].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.016",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
-      "path": "questions[228].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.017",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[228].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.017",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -1778,39 +1638,9 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[229].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.018",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[230].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.019",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
-      "path": "questions[231].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.020",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[231].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.020",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -1822,19 +1652,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[232].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.021",
+      "questionId": "math6.advanced_divisibility_hsg.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.021",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[232].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.021",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.advanced.divisibility_hsg",
       "field": "prompt"
     },
     {
@@ -1862,19 +1682,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[234].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.023",
+      "questionId": "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.023",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[234].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.023",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.prime_factor_gcd_lcm",
       "field": "prompt"
     },
     {
@@ -1882,35 +1692,15 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
       "path": "questions[235].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.024",
+      "questionId": "math6.advanced_divisibility_hsg.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.024",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[235].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.024",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.advanced.divisibility_hsg",
       "field": "prompt"
     },
     {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
-      "path": "questions[236].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.025",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[236].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.025",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -1928,29 +1718,9 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[237].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.026",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
-      "path": "questions[238].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.027",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[238].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.027",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -1962,39 +1732,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[239].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.028",
+      "questionId": "math6.number_powers_order_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.028",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[239].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.028",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[240].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.029",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[241].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.030",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.powers_order_operations",
       "field": "prompt"
     },
     {
@@ -2002,19 +1742,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (3 raw marker(s)).",
       "path": "questions[242].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.031",
+      "questionId": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.031",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[242].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.031",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.geometry.points_lines_segments",
       "field": "prompt"
     },
     {
@@ -2028,53 +1758,13 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[243].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.032",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[244].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.033",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[245].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.034",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[246].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.035",
+      "questionId": "math6.number_powers_order_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.035",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[246].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.035",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.powers_order_operations",
       "field": "prompt"
     },
     {
@@ -2088,49 +1778,19 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[247].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.036",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[248].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.037",
+      "questionId": "math6.advanced_divisibility_hsg.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.037",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[248].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.037",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.advanced.divisibility_hsg",
       "field": "prompt"
     },
     {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
-      "path": "questions[249].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.038",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[249].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.038",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -2148,29 +1808,9 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[250].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.039",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
-      "path": "questions[251].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.040",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[251].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.040",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -2182,19 +1822,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[252].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.041",
+      "questionId": "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.041",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[252].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.041",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.divisibility",
       "field": "prompt"
     },
     {
@@ -2202,35 +1832,15 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
       "path": "questions[253].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.042",
+      "questionId": "math6.number_fraction_foundation.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.042",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[253].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.042",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.fraction_foundation",
       "field": "prompt"
     },
     {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
-      "path": "questions[254].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.043",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[254].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.043",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -2248,43 +1858,13 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[255].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.044",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[256].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.045",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
       "path": "questions[257].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.046",
+      "questionId": "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.046",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[257].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.046",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.divisibility",
       "field": "prompt"
     },
     {
@@ -2298,29 +1878,9 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[258].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.047",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
-      "path": "questions[259].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.048",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[259].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.048",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -2332,19 +1892,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
       "path": "questions[260].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.049",
+      "questionId": "math6.number_powers_order_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.049",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[260].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.049",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.powers_order_operations",
       "field": "prompt"
     },
     {
@@ -2618,29 +2168,9 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[333].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.122",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (1 raw marker(s)).",
-      "path": "questions[335].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.124",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
       "path": "questions[335].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.124",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
@@ -2658,16 +2188,6 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[336].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.125",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (4 raw marker(s)).",
@@ -2678,41 +2198,11 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[337].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.126",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (3 raw marker(s)).",
       "path": "questions[338].prompt",
       "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.127",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[338].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.127",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[339].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.128",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
       "topicId": "math6.number.natural_operations",
       "field": "prompt"
@@ -2728,33 +2218,13 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[340].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.129",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
       "path": "questions[341].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.130",
+      "questionId": "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.130",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[341].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.130",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.prime_factor_gcd_lcm",
       "field": "prompt"
     },
     {
@@ -2762,19 +2232,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (3 raw marker(s)).",
       "path": "questions[342].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.131",
+      "questionId": "math6.advanced_divisibility_hsg.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.131",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[342].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.131",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.advanced.divisibility_hsg",
       "field": "prompt"
     },
     {
@@ -2782,19 +2242,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (3 raw marker(s)).",
       "path": "questions[343].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.132",
+      "questionId": "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.132",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[343].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.132",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
+      "topicId": "math6.number.prime_factor_gcd_lcm",
       "field": "prompt"
     },
     {
@@ -2803,36 +2253,6 @@
       "message": "Question may have lost Word/OLE formula content (2 raw marker(s)).",
       "path": "questions[356].prompt",
       "questionId": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.145",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.geometry.points_lines_segments",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[359].prompt",
-      "questionId": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.148",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.geometry.points_lines_segments",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[360].prompt",
-      "questionId": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.149",
-      "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[361].prompt",
-      "questionId": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.150",
       "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
       "topicId": "math6.geometry.points_lines_segments",
       "field": "prompt"
@@ -4308,26 +3728,6 @@
       "field": "prompt"
     },
     {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[700].prompt",
-      "questionId": "math6.geometry_points_lines_segments.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.006",
-      "sourceFile": "Chuyên đề. Tia. Hai tia đối nhau.doc",
-      "topicId": "math6.geometry.points_lines_segments",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[705].prompt",
-      "questionId": "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.003",
-      "sourceFile": "Chuyên đề. Trung điểm đoạn thẳng.doc",
-      "topicId": "math6.geometry.points_lines_segments",
-      "field": "prompt"
-    },
-    {
       "code": "display.formula_review",
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (8 raw marker(s)).",
@@ -5792,29 +5192,9 @@
       "severity": "blocker",
       "message": "Question may have lost Word/OLE formula content (8 raw marker(s)).",
       "path": "questions[1238].prompt",
-      "questionId": "math6.number_natural_operations.toan_6_ki_1_doc.1xeqnjs.029",
+      "questionId": "math6.number_divisibility.toan_6_ki_1_doc.1xeqnjs.029",
       "sourceFile": "Toan 6 ki 1.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[1238].prompt",
-      "questionId": "math6.number_natural_operations.toan_6_ki_1_doc.1xeqnjs.029",
-      "sourceFile": "Toan 6 ki 1.doc",
-      "topicId": "math6.number.natural_operations",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[1249].prompt",
-      "questionId": "math6.number_prime_factor_gcd_lcm.toan_6_ki_1_doc.1xeqnjs.040",
-      "sourceFile": "Toan 6 ki 1.doc",
-      "topicId": "math6.number.prime_factor_gcd_lcm",
+      "topicId": "math6.number.divisibility",
       "field": "prompt"
     },
     {
@@ -5845,26 +5225,6 @@
       "questionId": "math6.number_integers_intro.toan_6_ki_1_doc.1xeqnjs.044",
       "sourceFile": "Toan 6 ki 1.doc",
       "topicId": "math6.number.integers_intro",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[1263].prompt",
-      "questionId": "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.054",
-      "sourceFile": "Toan 6 ki 1.doc",
-      "topicId": "math6.geometry.points_lines_segments",
-      "field": "prompt"
-    },
-    {
-      "code": "display.legacy_font_encoding",
-      "severity": "blocker",
-      "message": "Prompt appears to contain legacy font or mojibake text.",
-      "path": "questions[1264].prompt",
-      "questionId": "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.055",
-      "sourceFile": "Toan 6 ki 1.doc",
-      "topicId": "math6.geometry.points_lines_segments",
       "field": "prompt"
     }
   ],
@@ -5965,6 +5325,14 @@
     "math6.number_natural_operations.4444444444444444_doc.16rbgqh.006",
     "math6.number_natural_operations.4444444444444444_doc.16rbgqh.007",
     "math6.geometry_angles.4444444444444444_doc.16rbgqh.008",
+    "math6.number_integers_intro.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.003",
+    "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.016",
+    "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.019",
+    "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.029",
+    "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.030",
+    "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.033",
+    "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.034",
+    "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.045",
     "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.050",
     "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.051",
     "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.052",
@@ -6013,6 +5381,7 @@
     "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.118",
     "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.119",
     "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.123",
+    "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.128",
     "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.133",
     "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.134",
     "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.135",
@@ -6027,6 +5396,9 @@
     "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.144",
     "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.146",
     "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.147",
+    "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.148",
+    "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.149",
+    "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.150",
     "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.151",
     "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.154",
     "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.155",
@@ -6219,10 +5591,12 @@
     "math6.geometry_points_lines_segments.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.003",
     "math6.geometry_points_lines_segments.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.004",
     "math6.geometry_points_lines_segments.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.005",
+    "math6.geometry_angles.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.006",
     "math6.geometry_angles.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.007",
     "math6.geometry_points_lines_segments.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.008",
     "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.001",
     "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.002",
+    "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.003",
     "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.004",
     "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.005",
     "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.006",
@@ -6619,6 +5993,7 @@
     "math6.number_divisibility.toan_6_ki_1_doc.1xeqnjs.037",
     "math6.number_divisibility.toan_6_ki_1_doc.1xeqnjs.038",
     "math6.number_natural_operations.toan_6_ki_1_doc.1xeqnjs.039",
+    "math6.number_prime_factor_gcd_lcm.toan_6_ki_1_doc.1xeqnjs.040",
     "math6.number_natural_operations.toan_6_ki_1_doc.1xeqnjs.042",
     "math6.number_natural_operations.toan_6_ki_1_doc.1xeqnjs.043",
     "math6.advanced_divisibility_hsg.toan_6_ki_1_doc.1xeqnjs.045",
@@ -6630,6 +6005,8 @@
     "math6.number_powers_order_operations.toan_6_ki_1_doc.1xeqnjs.051",
     "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.052",
     "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.053",
+    "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.054",
+    "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.055",
     "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.056",
     "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.057",
     "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.058",

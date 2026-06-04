@@ -344,7 +344,7 @@ function normalizeExtractedText(text: string): string {
 }
 
 function normalizePrompt(text: string): string {
-  return text
+  return decodeLegacyVietnameseText(text)
     .replace(/\s+/g, ' ')
     .replace(/\s+([,.;:!?])/g, '$1')
     .trim();
@@ -419,3 +419,95 @@ function shortHash(value: string): string {
 function uniqueStrings(values: string[]): string[] {
   return [...new Set(values.map((value) => String(value || '').trim()).filter(Boolean))];
 }
+
+function decodeLegacyVietnameseText(value: string): string {
+  const text = String(value || '');
+  if (!looksLikeTcvn3Text(text)) return text;
+  return text.replace(TCVN3_CHAR_RE, (char) => TCVN3_CHAR_MAP[char] || char);
+}
+
+function looksLikeTcvn3Text(value: string): boolean {
+  const matches = value.match(TCVN3_SIGNAL_RE);
+  return Boolean(matches && matches.length >= 2 && TCVN3_WORD_RE.test(value));
+}
+
+const TCVN3_CHAR_MAP: Record<string, string> = {
+  '\u00b5': '\u00e0',
+  '\u00b8': '\u00e1',
+  '\u00b6': '\u1ea3',
+  '\u00b7': '\u00e3',
+  '\u00b9': '\u1ea1',
+  '\u00a8': '\u0103',
+  '\u00bb': '\u1eaf',
+  '\u00be': '\u1eb1',
+  '\u00bc': '\u1eb3',
+  '\u00bd': '\u1eb5',
+  '\u00c6': '\u1eb7',
+  '\u00a9': '\u00e2',
+  '\u00ca': '\u1ea5',
+  '\u00c7': '\u1ea7',
+  '\u00c8': '\u1ea9',
+  '\u00c9': '\u1eab',
+  '\u00cb': '\u1ead',
+  '\u00ae': '\u0111',
+  '\u00cc': '\u00e8',
+  '\u00d0': '\u00e9',
+  '\u00ce': '\u1ebb',
+  '\u00cf': '\u1ebd',
+  '\u00d1': '\u1eb9',
+  '\u00aa': '\u00ea',
+  '\u00d5': '\u1ebf',
+  '\u00d2': '\u1ec1',
+  '\u00d3': '\u1ec3',
+  '\u00d4': '\u1ec5',
+  '\u00d6': '\u1ec7',
+  '\u00d7': '\u00ec',
+  '\u00dd': '\u00ed',
+  '\u00d8': '\u1ec9',
+  '\u00dc': '\u0129',
+  '\u00de': '\u1ecb',
+  '\u00df': '\u00f2',
+  '\u00e3': '\u00f3',
+  '\u00e1': '\u1ecf',
+  '\u00e2': '\u00f5',
+  '\u00e4': '\u1ecd',
+  '\u00ab': '\u00f4',
+  '\u00e8': '\u1ed1',
+  '\u00e5': '\u1ed3',
+  '\u00e6': '\u1ed5',
+  '\u00e7': '\u1ed7',
+  '\u00e9': '\u1ed9',
+  '\u00ac': '\u01a1',
+  '\u00ed': '\u1edb',
+  '\u00ea': '\u1edd',
+  '\u00eb': '\u1edf',
+  '\u00ec': '\u1ee1',
+  '\u00ee': '\u1ee3',
+  '\u00ef': '\u00f9',
+  '\u00f3': '\u00fa',
+  '\u00f1': '\u1ee7',
+  '\u00f2': '\u0169',
+  '\u00f4': '\u1ee5',
+  '\u00ad': '\u01b0',
+  '\u00f8': '\u1ee9',
+  '\u00f5': '\u1eeb',
+  '\u00f6': '\u1eed',
+  '\u00f7': '\u1eef',
+  '\u00f9': '\u1ef1',
+  '\u00fa': '\u1ef3',
+  '\u00fd': '\u00fd',
+  '\u00fb': '\u1ef7',
+  '\u00fc': '\u1ef9',
+  '\u00fe': '\u1ef5',
+  '\u00a1': '\u0102',
+  '\u00a2': '\u00c2',
+  '\u00a7': '\u0110',
+  '\u00a3': '\u00ca',
+  '\u00a4': '\u00d4',
+  '\u00a5': '\u01a0',
+  '\u00a6': '\u01af',
+};
+
+const TCVN3_CHAR_RE = new RegExp(`[${Object.keys(TCVN3_CHAR_MAP).join('')}]`, 'g');
+const TCVN3_SIGNAL_RE = /[\u00a8\u00a9\u00aa\u00ab\u00ac\u00ad\u00ae\u00b5\u00b6\u00b8\u00b9\u00bb\u00bc\u00bd\u00be\u00c6\u00c7\u00c8\u00c9\u00ca\u00cb\u00cc\u00ce\u00cf\u00d0\u00d1\u00d2\u00d3\u00d4\u00d5\u00d6\u00d7\u00d8\u00dc\u00dd\u00de\u00df\u00e5\u00e6\u00e7\u00e8\u00e9\u00ee\u00ef\u00f1\u00f4\u00f8\u00fb\u00fc\u00fe]/g;
+const TCVN3_WORD_RE = /(?:T\u00d7m|t\u00d7m|c\u00b8c|gi\u00b8|tr\u00de|nguy\u00aan|c\u00f1a|ph\u00a9n|s\u00e8|l\u00b5|kh\u00abng|v\u00b5|ch\u00f8ng|Ch\u00f8ng|s\u00b8nh|So s\u00b8nh|\u00ae\u00d3|\u00ae\u00d0|\u00ae\u00e8)/;

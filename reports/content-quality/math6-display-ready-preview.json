@@ -1,9 +1,9 @@
 {
   "report": {
-    "generatedAt": "2026-06-04T08:09:59.050Z",
+    "generatedAt": "2026-06-04T10:52:46.796Z",
     "totalItems": 1270,
-    "displayReadyItems": 766,
-    "generatedFigures": 465
+    "displayReadyItems": 783,
+    "generatedFigures": 467
   },
   "items": [
     {
@@ -5013,6 +5013,374 @@
       }
     },
     {
+      "id": "math6.number_integers_intro.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.003",
+      "sourceId": "number_integers_intro.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.003",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.integer_number"
+      ],
+      "skillIds": [
+        "math.operate_integers"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 3: Cho a là một số nguyên có dạng: a = 3b + 7. Hỏi a có thể nhận giá trị nào? a = 11; a = 2002; a = 11570; a = 22789; a = 29563; a = 299537.",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N6",
+        "math6.number.integers_intro",
+        "math6.integers.compare_number_line",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N6",
+        "topicId": "math6.number.integers_intro",
+        "patternId": "math6.integers.compare_number_line",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 0.86,
+        "figureStatus": "none"
+      }
+    },
+    {
+      "id": "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.016",
+      "sourceId": "number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.016",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.divisibility_number_theory"
+      ],
+      "skillIds": [
+        "math.apply_divisibility_prime_gcd_lcm"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 21: Cho P là số nguyên tố lớn hơn 3 và 5p +1 cũng là số nguyên tố. CMR: 7p +1 là hợp số.",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N5",
+        "math6.number.prime_factor_gcd_lcm",
+        "math6.prime.factorization",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N5",
+        "topicId": "math6.number.prime_factor_gcd_lcm",
+        "patternId": "math6.prime.factorization",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 0.86,
+        "figureStatus": "none"
+      }
+    },
+    {
+      "id": "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.019",
+      "sourceId": "number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.019",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.divisibility_number_theory"
+      ],
+      "skillIds": [
+        "math.apply_divisibility_prime_gcd_lcm"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 26: Tìm các số nguyên x sao cho 4x-3 chia hết cho x-2.",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N4",
+        "math6.number.divisibility",
+        "math6.divisibility.basic_tests",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N4",
+        "topicId": "math6.number.divisibility",
+        "patternId": "math6.divisibility.basic_tests",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 0.86,
+        "figureStatus": "none"
+      }
+    },
+    {
+      "id": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.029",
+      "sourceId": "number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.029",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.natural_number_set"
+      ],
+      "skillIds": [
+        "math.work_with_sets_natural_numbers"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 41: Một số A nếu chia cho 64 thì dư 38, nếu chia cho 67 thì dư 14. Cả hai lần chia đều có cùng một thương số. Tìm thương và số A đó.",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "analyze",
+      "tags": [
+        "math6",
+        "number",
+        "N2",
+        "math6.number.natural_operations",
+        "math6.natural_ops.find_x",
+        "level:application",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N2",
+        "topicId": "math6.number.natural_operations",
+        "patternId": "math6.natural_ops.find_x",
+        "level": "application",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 1,
+        "figureStatus": "none"
+      }
+    },
+    {
+      "id": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.030",
+      "sourceId": "number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.030",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.natural_number_set"
+      ],
+      "skillIds": [
+        "math.work_with_sets_natural_numbers"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 43: Có tồn tại a, b hay không để 55a + 30 b = 3658.",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N2",
+        "math6.number.natural_operations",
+        "math6.natural_ops.calculate",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N2",
+        "topicId": "math6.number.natural_operations",
+        "patternId": "math6.natural_ops.calculate",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 1,
+        "figureStatus": "none"
+      }
+    },
+    {
+      "id": "math6.number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.033",
+      "sourceId": "number_divisibility.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.033",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.divisibility_number_theory"
+      ],
+      "skillIds": [
+        "math.apply_divisibility_prime_gcd_lcm"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 47: Viết thêm vào bên phải số 579 ba chữ số nào để được số chia hết cho 5, 7, 9.",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N4",
+        "math6.number.divisibility",
+        "math6.divisibility.basic_tests",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N4",
+        "topicId": "math6.number.divisibility",
+        "patternId": "math6.divisibility.basic_tests",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 0.86,
+        "figureStatus": "none"
+      }
+    },
+    {
+      "id": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.034",
+      "sourceId": "number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.034",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.natural_number_set"
+      ],
+      "skillIds": [
+        "math.work_with_sets_natural_numbers"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 48: Một số chia cho 4 dư 3; chia cho 17 dư 9; chia cho 19 dư 13. Hỏi số đó chia cho 1292 dư bao nhiêu?",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N2",
+        "math6.number.natural_operations",
+        "math6.natural_ops.calculate",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N2",
+        "topicId": "math6.number.natural_operations",
+        "patternId": "math6.natural_ops.calculate",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 1,
+        "figureStatus": "none"
+      }
+    },
+    {
+      "id": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.045",
+      "sourceId": "number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.045",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.natural_number_set"
+      ],
+      "skillIds": [
+        "math.work_with_sets_natural_numbers"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "BÀI TẬP 61: Tìm số tự nhiên a biết rắng 398 chia cho a thì dư 38, còn 450 chia cho a thì dư 18.",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N2",
+        "math6.number.natural_operations",
+        "math6.natural_ops.calculate",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N2",
+        "topicId": "math6.number.natural_operations",
+        "patternId": "math6.natural_ops.calculate",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 1,
+        "figureStatus": "none"
+      }
+    },
+    {
       "id": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.050",
       "sourceId": "number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.050",
       "source": "math6_local_source",
@@ -7386,6 +7754,52 @@
       }
     },
     {
+      "id": "math6.number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.128",
+      "sourceId": "number_natural_operations.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.128",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.natural_number_set"
+      ],
+      "skillIds": [
+        "math.work_with_sets_natural_numbers"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 11: Tính giá trị của biểu thức: a) 39: 37 + 5. 22 b) 23. 32 - 516: 514",
+      "correctAnswer": null,
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math6",
+        "number",
+        "N2",
+        "math6.number.natural_operations",
+        "math6.natural_ops.calculate",
+        "level:foundation",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N2",
+        "topicId": "math6.number.natural_operations",
+        "patternId": "math6.natural_ops.calculate",
+        "level": "foundation",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 1,
+        "figureStatus": "none"
+      }
+    },
+    {
       "id": "math6.number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.133",
       "sourceId": "number_prime_factor_gcd_lcm.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.133",
       "source": "math6_local_source",
@@ -8075,6 +8489,181 @@
           ],
           "description": "Ba diem A, B, C thang hang, B nam giua A va C.",
           "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"42\" y1=\"105\" x2=\"282\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" />\n      <circle cx=\"56\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"48\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n      <circle cx=\"145\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"137\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n      <circle cx=\"266\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"258\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n      \n      \n      \n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 31:: a, Vẽ đoạn AB dài 13cm.Xác định các điểm M, N của đoạn AB đó sao cho AM= 5.5cm và N...</text>\n    \n</svg>"
+        },
+        "figureStatus": "generated_svg"
+      }
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.148",
+      "sourceId": "geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.148",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.basic_geometry"
+      ],
+      "skillIds": [
+        "math.reason_basic_geometry"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 32: Cho hai tia Ax và Ax’ đối nhau. Trên tia Ax lấy điểm B sao cho AB = 7cm, trên tia Ax’ lấy điểm C sao cho AC = 7cm. a, A có phải là trung điểm của BC không? Vì sao? b, Trên tia Ax’ lấy điểm M sao cho AM = 9cm, trên tia Ax lấy điểm N sao cho AN = 8cm. Tính CM,BN.",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "analyze",
+      "tags": [
+        "math6",
+        "geometry",
+        "G1",
+        "math6.geometry.points_lines_segments",
+        "math6.geometry.midpoint",
+        "level:application",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "figure:generated"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "geometry",
+        "unit": "G1",
+        "topicId": "math6.geometry.points_lines_segments",
+        "patternId": "math6.geometry.midpoint",
+        "level": "application",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 0.88,
+        "generatedFigure": {
+          "kind": "collinear_segments",
+          "confidence": 0.78,
+          "labels": [
+            "A",
+            "B",
+            "C"
+          ],
+          "description": "Ba diem A, B, C thang hang, B nam giua A va C.",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"42\" y1=\"105\" x2=\"282\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" />\n      <circle cx=\"56\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"48\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n      <circle cx=\"145\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"137\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n      <circle cx=\"266\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"258\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n      <line x1=\"56\" y1=\"132\" x2=\"145\" y2=\"132\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"56\" y1=\"127\" x2=\"56\" y2=\"137\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"145\" y1=\"127\" x2=\"145\" y2=\"137\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <text x=\"82.5\" y=\"128\" font-family=\"Inter, Arial, sans-serif\" font-size=\"11\" fill=\"#475569\">AB=7</text>\n      \n      <line x1=\"56\" y1=\"176\" x2=\"266\" y2=\"176\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"56\" y1=\"171\" x2=\"56\" y2=\"181\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"266\" y1=\"171\" x2=\"266\" y2=\"181\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <text x=\"143\" y=\"172\" font-family=\"Inter, Arial, sans-serif\" font-size=\"11\" fill=\"#475569\">AC=7</text>\n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 32: Cho hai tia Ax và Ax’ đối nhau. Trên tia Ax lấy điểm B sao cho AB = 7cm, trên tia Ax...</text>\n    \n</svg>"
+        },
+        "figureStatus": "generated_svg"
+      }
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.149",
+      "sourceId": "geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.149",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.basic_geometry"
+      ],
+      "skillIds": [
+        "math.reason_basic_geometry"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 33: Cho đoạn thẳng AB = 8cm. I là trung điểm của AB. a) Tính IA và IB. b) K là trung điểm của IA, I có là trung điểm của KB không? Vì sao?",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "analyze",
+      "tags": [
+        "math6",
+        "geometry",
+        "G1",
+        "math6.geometry.points_lines_segments",
+        "math6.geometry.midpoint",
+        "level:application",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "figure:generated"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "geometry",
+        "unit": "G1",
+        "topicId": "math6.geometry.points_lines_segments",
+        "patternId": "math6.geometry.midpoint",
+        "level": "application",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 0.88,
+        "generatedFigure": {
+          "kind": "collinear_segments",
+          "confidence": 0.78,
+          "labels": [
+            "A",
+            "B",
+            "C"
+          ],
+          "description": "Ba diem A, B, C thang hang, B nam giua A va C.",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"42\" y1=\"105\" x2=\"282\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" />\n      <circle cx=\"56\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"48\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n      <circle cx=\"145\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"137\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n      <circle cx=\"266\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"258\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n      <line x1=\"56\" y1=\"132\" x2=\"145\" y2=\"132\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"56\" y1=\"127\" x2=\"56\" y2=\"137\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"145\" y1=\"127\" x2=\"145\" y2=\"137\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <text x=\"82.5\" y=\"128\" font-family=\"Inter, Arial, sans-serif\" font-size=\"11\" fill=\"#475569\">AB=8</text>\n      \n      \n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 33: Cho đoạn thẳng AB = 8cm. I là trung điểm của AB. a) Tính IA và IB. b) K là trung điể...</text>\n    \n</svg>"
+        },
+        "figureStatus": "generated_svg"
+      }
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.150",
+      "sourceId": "geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.150",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.basic_geometry"
+      ],
+      "skillIds": [
+        "math.reason_basic_geometry"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 34: Cho đoạn thẳng EF dài 5 cm. Trên tia EF lấy điểm I sao cho EI = 2,5 cm a/ Điểm I có nắm giữa hai điểm E và F không? Vì sao? b/ So sánh EI và IF. I có là trung điểm của EF không?",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "apply",
+      "tags": [
+        "math6",
+        "geometry",
+        "G1",
+        "math6.geometry.points_lines_segments",
+        "math6.geometry.ray_segment_length",
+        "level:core",
+        "source:Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "figure:generated"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "geometry",
+        "unit": "G1",
+        "topicId": "math6.geometry.points_lines_segments",
+        "patternId": "math6.geometry.ray_segment_length",
+        "level": "core",
+        "sourceFile": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+        "importConfidence": 0.88,
+        "generatedFigure": {
+          "kind": "generic_points_lines",
+          "confidence": 0.58,
+          "labels": [
+            "A",
+            "B",
+            "C",
+            "d"
+          ],
+          "description": "Hinh minh hoa tong quat cho diem, duong thang, tia va doan thang.",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"44\" y1=\"112\" x2=\"278\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"2.3\" marker-end=\"url(#arrow)\" />\n      <circle cx=\"82\" cy=\"112\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"74\" y=\"98\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n      <circle cx=\"156\" cy=\"112\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"148\" y=\"98\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n      <circle cx=\"232\" cy=\"112\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"224\" y=\"98\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n      <text x=\"266\" y=\"100\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">d</text>\n    \n</svg>"
         },
         "figureStatus": "generated_svg"
       }
@@ -17545,6 +18134,64 @@
       }
     },
     {
+      "id": "math6.geometry_angles.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.006",
+      "sourceId": "geometry_angles.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.006",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.basic_geometry"
+      ],
+      "skillIds": [
+        "math.reason_basic_geometry"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 6: Cho điểm A nằm giữa hai điểm B và C. Biết điểm M nằm giữa hai điểm A và B, điểm N nằm giữa hai điểm A và C. Hỏi điểm A cú nằm giữa hai điểm M và N khụng? Bài 7. a. Vẽ 5 điểm M, N, P, Q, R sao cho ba điểm M, N, P thẳng hàng; ba điểm N, P, Q thẳng hàng còn ba điểm N, P, R không thẳng hàng. b. Kẻ các đường thẳng đi qua các cặp điểm. Có bao nhiêu đường thẳng? Kể tên các đường thẳng đó. c. Có bao nhiêu đoạn thẳng? Kể tên các đoạn thẳng đó. d. Kể tên các tia gốc P. Trong các tia đó hai tia nào đối nhau? Hai tia nào trùng nhau?",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "analyze",
+      "tags": [
+        "math6",
+        "geometry",
+        "G2",
+        "math6.geometry.angles",
+        "math6.angle.relation",
+        "level:application",
+        "source:Chuyên đề. Tia. Hai tia đối nhau.doc",
+        "figure:generated"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 2,
+        "strand": "geometry",
+        "unit": "G2",
+        "topicId": "math6.geometry.angles",
+        "patternId": "math6.angle.relation",
+        "level": "application",
+        "sourceFile": "Chuyên đề. Tia. Hai tia đối nhau.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Chuyên đề. Tia. Hai tia đối nhau.doc",
+        "importConfidence": 0.9,
+        "generatedFigure": {
+          "kind": "collinear_segments",
+          "confidence": 0.78,
+          "labels": [
+            "A",
+            "B",
+            "C"
+          ],
+          "description": "Ba diem A, B, C thang hang, B nam giua A va C.",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"42\" y1=\"105\" x2=\"282\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" />\n      <circle cx=\"56\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"48\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n      <circle cx=\"145\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"137\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n      <circle cx=\"266\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"258\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">C</text>\n      \n      \n      \n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 6: Cho điểm A nằm giữa hai điểm B và C. Biết điểm M nằm giữa hai điểm A và B, điểm N nằm...</text>\n    \n</svg>"
+        },
+        "figureStatus": "generated_svg"
+      }
+    },
+    {
       "id": "math6.geometry_angles.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.007",
       "sourceId": "geometry_angles.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.007",
       "source": "math6_local_source",
@@ -17774,6 +18421,66 @@
           ],
           "description": "Tia Ox voi cac diem A, B nam tren tia.",
           "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"54\" y1=\"105\" x2=\"286\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-end=\"url(#arrow)\" />\n      <circle cx=\"62\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"54\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">O</text>\n      <circle cx=\"150\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"142\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n      <circle cx=\"260\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"252\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n      <text x=\"276\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">x</text>\n      <line x1=\"62\" y1=\"128\" x2=\"150\" y2=\"128\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"62\" y1=\"123\" x2=\"62\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <line x1=\"150\" y1=\"123\" x2=\"150\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1.3\" />\n    <text x=\"88\" y=\"124\" font-family=\"Inter, Arial, sans-serif\" font-size=\"11\" fill=\"#475569\">OA=1</text>\n      \n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 2: Vẽ tai Ox rồi đặt điểm A trên tia Ox sao cho OA = 1cm. Đặt điểm B trên tia Ax sao cho...</text>\n    \n</svg>"
+        },
+        "figureStatus": "generated_svg"
+      }
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.003",
+      "sourceId": "geometry_points_lines_segments.chuyen_de_trung_diem_doan_thang_doc.01la3a5.003",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.basic_geometry"
+      ],
+      "skillIds": [
+        "math.reason_basic_geometry"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 3: Trờn tia Ox lấy hai điểm A và B sao cho OA = 3cm, OB = 5cm. Trờn tia đối của tia OB lấy điểm C sao cho BC = 7cm. So sỏnh độ dài đoạn OC và AB. Bài 4: Cho đoạn AB = 6cm, điểm D (tia AB sao cho AD = 8cm. Tính độ dài DB? Gọi E là điểm thuộc tia AB sao cho AE = 4cm. So sánh BE và DB? Cho AB = 8cm. Trên tia AB lấy C sao cho AC = 6cm. Tính độ dài BC? Gọi I(AB sao cho AI =7cm. Hỏi I có là trung điểm của đoạn thẳng nào không? Vì sao? Cho CD = 5cm. Trên đoạn này lấy I và K sao cho CI = 1cm, DK = 2cm. Điểm K là trung điểm của CD không? Vì sao? Chứng tỏ rắng điểm I là trung điểm của CK. Trên tia Ox lấy điểm A và B. Tính độ dài của đoạn OB trong mỗi trường hợp sau: Biết OA = 8cm; AB = 2cm. Bài toán có mấy đáp số? Biết OA = 8cm; AB = 10 cm. Bài toán có mấy đáp số? Trên đường thẳng xy, lần lượt lấy các điểm A, B, C theo thứ tự sao cho AB = 8cm, AC = 10cm. Tính độ dài BC. Gọi M là trung điểm của AB. So sánh MC và AB? Bài 5. Cho đoạn thẳng AB = 6cm và điểm O là trung điểm của đoạn AB. Gọi M là một điểm thuộc đoạn AB. Tính độ dài các đoạn AM, BM biết OM = 1cm. Bài 6. Trên đường thẳng xy lấy điểm O rồi lấy hai điểm A và B trên tia Ox, điểm C nắm trên tia Oy sao cho: OA = 3cm, OB = 6cm, OC = 4cm a) Tính AB, AC b) Chứng minh: A là trung điểm của OB.",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "analyze",
+      "tags": [
+        "math6",
+        "geometry",
+        "G1",
+        "math6.geometry.points_lines_segments",
+        "math6.geometry.midpoint",
+        "level:application",
+        "source:Chuyên đề. Trung điểm đoạn thẳng.doc",
+        "figure:generated"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "geometry",
+        "unit": "G1",
+        "topicId": "math6.geometry.points_lines_segments",
+        "patternId": "math6.geometry.midpoint",
+        "level": "application",
+        "sourceFile": "Chuyên đề. Trung điểm đoạn thẳng.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Chuyên đề. Trung điểm đoạn thẳng.doc",
+        "importConfidence": 0.88,
+        "generatedFigure": {
+          "kind": "opposite_rays",
+          "confidence": 0.88,
+          "labels": [
+            "x",
+            "N",
+            "O",
+            "M",
+            "y"
+          ],
+          "description": "Duong thang xy voi hai tia doi nhau Ox va Oy, cac diem nam tren hai tia.",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"34\" y1=\"105\" x2=\"286\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\n      <circle cx=\"150\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"142\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">O</text>\n      <circle cx=\"92\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"84\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">N</text>\n      <circle cx=\"218\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"210\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">M</text>\n      <text x=\"42\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">x</text>\n      <text x=\"274\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">y</text>\n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 3: Trờn tia Ox lấy hai điểm A và B sao cho OA = 3cm, OB = 5cm. Trờn tia đối của tia OB l...</text>\n    \n</svg>"
         },
         "figureStatus": "generated_svg"
       }
@@ -38020,6 +38727,52 @@
       }
     },
     {
+      "id": "math6.number_prime_factor_gcd_lcm.toan_6_ki_1_doc.1xeqnjs.040",
+      "sourceId": "number_prime_factor_gcd_lcm.toan_6_ki_1_doc.1xeqnjs.040",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.divisibility_number_theory"
+      ],
+      "skillIds": [
+        "math.apply_divisibility_prime_gcd_lcm"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 16: Số học sinh khối 6 của một trường là số gồm 3 chữ số nhỏ hơn 200. Khi xếp thành 12 hàng, 15 hàng, 18 hàng đều vừa đủ khụng thừa ai. Tớnh số học sinh khối 6 của trường đú. VIII.BỘI, BỘI CHUNG NHỎ NHẤT Bài 1: Tìm BCNN của: 24 và 10 9 và 24 12 và 52 18; 24 và 30 14; 21 và 56 8; 12 và 15 6; 8 và 10 9; 24 và 35",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "apply",
+      "tags": [
+        "math6",
+        "number",
+        "N5",
+        "math6.number.prime_factor_gcd_lcm",
+        "math6.gcd_lcm.compute",
+        "level:core",
+        "source:Toan 6 ki 1.doc"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "number",
+        "unit": "N5",
+        "topicId": "math6.number.prime_factor_gcd_lcm",
+        "patternId": "math6.gcd_lcm.compute",
+        "level": "core",
+        "sourceFile": "Toan 6 ki 1.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Toan 6 ki 1.doc",
+        "importConfidence": 0.86,
+        "figureStatus": "none"
+      }
+    },
+    {
       "id": "math6.number_natural_operations.toan_6_ki_1_doc.1xeqnjs.042",
       "sourceId": "number_natural_operations.toan_6_ki_1_doc.1xeqnjs.042",
       "source": "math6_local_source",
@@ -38548,6 +39301,126 @@
           ],
           "description": "Tia Ox voi cac diem A, B nam tren tia.",
           "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"54\" y1=\"105\" x2=\"286\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-end=\"url(#arrow)\" />\n      <circle cx=\"62\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"54\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">O</text>\n      <circle cx=\"150\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"142\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text>\n      <circle cx=\"260\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"252\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">B</text>\n      <text x=\"276\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">x</text>\n      \n      \n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 2: Trên tia Ox, lấy hai điểm M, N sao cho OM = 2cm, ON = 8cm Tính độ dài đoạn thẳng MN. ...</text>\n    \n</svg>"
+        },
+        "figureStatus": "generated_svg"
+      }
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.054",
+      "sourceId": "geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.054",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.basic_geometry"
+      ],
+      "skillIds": [
+        "math.reason_basic_geometry"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 3: Vẽ đoạn thẳng AB dài 7cm. Lấy điểm C nằm giữa A, B sao cho AC = 3cm. Tớnh độ dài đoạn thẳng CB. Vẽ trung điểm I của Đoạn thẳng AC. Tớnh IA, IC. Trờn tia đối của tia CB lấy điểm D sao cho CD = 7cm. So sỏnh CB và DA? Bài 4: Cho hai tia Ox, Oy đối nhau. Trên tia Ox lấy hai điểm A, B sao cho OA = 2cm, OB = 5cm. Trên tia Oy lấy điểm C sao cho OC= 1cm. Tính độ dài đoạn thẳng AB, BC Chứng minh rắng A là trung điểm của đoạn thẳng BC. Gọi M là trung điểm của đoạn thẳng AB. Tớnh AM, OM Bài 5: Cho điểm O thuộc đường thẳng xy. Trên tia Ox lấy hai điểm M, N sao cho OM = 2cm, ON = 7cm. Trên tia Oy lấy điểm P sao cho OP= 3m. Tính độ dài đoạn thẳng MN, NP Chứng minh rắng M là trung điểm của đoạn thẳng NP. Gọi I là trung điểm của đoạn thẳng MN. Tớnh MI, OI.",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "analyze",
+      "tags": [
+        "math6",
+        "geometry",
+        "G1",
+        "math6.geometry.points_lines_segments",
+        "math6.geometry.midpoint",
+        "level:application",
+        "source:Toan 6 ki 1.doc",
+        "figure:generated"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "geometry",
+        "unit": "G1",
+        "topicId": "math6.geometry.points_lines_segments",
+        "patternId": "math6.geometry.midpoint",
+        "level": "application",
+        "sourceFile": "Toan 6 ki 1.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Toan 6 ki 1.doc",
+        "importConfidence": 0.88,
+        "generatedFigure": {
+          "kind": "opposite_rays",
+          "confidence": 0.88,
+          "labels": [
+            "x",
+            "N",
+            "O",
+            "M",
+            "y"
+          ],
+          "description": "Duong thang xy voi hai tia doi nhau Ox va Oy, cac diem nam tren hai tia.",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"34\" y1=\"105\" x2=\"286\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\n      <circle cx=\"150\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"142\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">O</text>\n      <circle cx=\"92\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"84\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">N</text>\n      <circle cx=\"218\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"210\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">M</text>\n      <text x=\"42\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">x</text>\n      <text x=\"274\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">y</text>\n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 3: Vẽ đoạn thẳng AB dài 7cm. Lấy điểm C nằm giữa A, B sao cho AC = 3cm. Tớnh độ dài đoạn...</text>\n    \n</svg>"
+        },
+        "figureStatus": "generated_svg"
+      }
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.055",
+      "sourceId": "geometry_points_lines_segments.toan_6_ki_1_doc.1xeqnjs.055",
+      "source": "math6_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_6",
+        "vn_math_6_8",
+        "vn_math_6_9",
+        "vn_math_thcs"
+      ],
+      "conceptIds": [
+        "math.basic_geometry"
+      ],
+      "skillIds": [
+        "math.reason_basic_geometry"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Bài 6: Cho điểm O thuộc đường thẳng xy. Trên tia Ox lấy điểm A, sao cho OA = 1cm. Trên tia Oy lấy điểm B, C sao cho OB = 3cm, OC = 7cm. Tính độ dài đoạn thẳng BC, AC Chứng minh rắng B là trung điểm của đoạn thẳng AC. Gọi M là trung điểm của đoạn thẳng BC. Tớnh BM, OM.",
+      "correctAnswer": null,
+      "difficulty": "medium",
+      "cognitiveLevel": "analyze",
+      "tags": [
+        "math6",
+        "geometry",
+        "G1",
+        "math6.geometry.points_lines_segments",
+        "math6.geometry.midpoint",
+        "level:application",
+        "source:Toan 6 ki 1.doc",
+        "figure:generated"
+      ],
+      "metadata": {
+        "grade": 6,
+        "semester": 1,
+        "strand": "geometry",
+        "unit": "G1",
+        "topicId": "math6.geometry.points_lines_segments",
+        "patternId": "math6.geometry.midpoint",
+        "level": "application",
+        "sourceFile": "Toan 6 ki 1.doc",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6\\Toan 6 ki 1.doc",
+        "importConfidence": 0.88,
+        "generatedFigure": {
+          "kind": "opposite_rays",
+          "confidence": 0.88,
+          "labels": [
+            "x",
+            "N",
+            "O",
+            "M",
+            "y"
+          ],
+          "description": "Duong thang xy voi hai tia doi nhau Ox va Oy, cac diem nam tren hai tia.",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Hinh minh hoa Toan 6\">\n  <defs>\n    <marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#0f172a\"/></marker>\n    <marker id=\"arrowGreen\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\"><path d=\"M0,0 L0,6 L7,3 z\" fill=\"#10b981\"/></marker>\n  </defs>\n  <rect x=\"8\" y=\"8\" width=\"304\" height=\"194\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" />\n  \n      <line x1=\"34\" y1=\"105\" x2=\"286\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\" marker-start=\"url(#arrow)\" marker-end=\"url(#arrow)\" />\n      <circle cx=\"150\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"142\" y=\"91\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">O</text>\n      <circle cx=\"92\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"84\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">N</text>\n      <circle cx=\"218\" cy=\"105\" r=\"4.5\" fill=\"#0f172a\" /><text x=\"210\" y=\"127\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">M</text>\n      <text x=\"42\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">x</text>\n      <text x=\"274\" y=\"92\" font-family=\"Inter, Arial, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">y</text>\n      <text x=\"18\" y=\"196\" font-family=\"Inter, Arial, sans-serif\" font-size=\"9.5\" fill=\"#64748b\">Bài 6: Cho điểm O thuộc đường thẳng xy. Trên tia Ox lấy điểm A, sao cho OA = 1cm. Trên tia O...</text>\n    \n</svg>"
         },
         "figureStatus": "generated_svg"
       }

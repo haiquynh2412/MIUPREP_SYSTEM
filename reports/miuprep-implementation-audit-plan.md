@@ -1426,3 +1426,55 @@ Residual risk:
 - Knowledge Graph update from real beta data remains intentionally blocked until real beta evidence is collected and reviewed.
 - Math 6 display/content recovery still has dirty worktree artifacts and should be handled in a separate content-data batch, not mixed into this SAT/build QA commit.
 - Non-SAT course mastery still depends on additional answer-submission event capture in the relevant course/practice flows.
+
+### 2026-06-04 Batch 19 - Math 6 display-ready catalog gate
+
+Scope completed:
+
+- Added a generic Math learning catalog builder that keeps display-ready Math 6 items open and separates blocked items from learner-facing selection.
+- Added Math 6 raw-source catalog helper that runs the content guard and passes only `displayReadyItemIds` into the learner-facing catalog.
+- Added Math diagnostic/practice selectors that filter by program, topic, level, concept, skill, difficulty, and attempted item IDs.
+- Added TCVN3 legacy Vietnamese text decoding during Math 6 prompt normalization to reduce encoding blockers where source text uses old font mappings.
+- Synced portal content coverage snapshot so Admin Content Repair Queue can show `vn_math_6` as a guarded `watch` source with 783/1270 display-ready questions, 467 generated figures, and remaining blocker counts.
+
+Changed files:
+
+- `packages/content/src/math-learning.ts`
+- `packages/content/src/index.ts`
+- `packages/content/src/math6-import.ts`
+- `packages/content/src/standard.test.ts`
+- `packages/content/src/sync-portal-content-quality-snapshot.ts`
+- `apps/miuprep-portal/src/data/contentQualitySnapshot.ts`
+- `reports/content-quality/math6-content-audit.md`
+- `reports/content-quality/math6-content-guard.json`
+- `reports/content-quality/math6-content-issues.csv`
+- `reports/content-quality/math6-display-ready-preview.json`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+- `npm.cmd run build -w @miuprep/content`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd run lint -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Proof captured:
+
+- Math 6 guard still reports adapter pass with 1,270 converted items and 783 display-ready learner-facing items.
+- Standard tests now prove legacy TCVN3 text is decoded and blocked Math 6 items are excluded from the default learning catalog.
+- Portal lint/build prove the new unified content coverage snapshot shape compiles in admin surfaces.
+
+Residual risk:
+
+- 477 Math 6 items still require formula review because Word/OLE formula payloads are not recoverable from the current plain-text extract alone.
+- 2 Math 6 items still require original-image or manually generated figure review.
+- 15 Math 6 items still require encoding review after automatic TCVN3 decoding; these need source-specific cleanup.
+- CAE OCR/content expansion artifacts are still dirty in the worktree and should be committed only in a separate CAE-focused batch after their own guard run.

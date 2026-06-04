@@ -16,6 +16,7 @@ import {
 import { buildMath6QuestionItemsFromRawSources, extractMath6ExerciseBlocks, matchMath6TopicForSource } from "./math6-import";
 import { buildMath6ContentGuardReport } from "./math6-content-guard-report";
 import { generateMath6GeometryFigure, needsOriginalGeometryImage } from "./math6-geometry-figures";
+import { buildMath6LearningCatalogFromRawSources, buildMathLearningCatalog, selectMathDiagnosticItems, selectMathPracticeItems } from "./math-learning";
 import {
   buildSatLearningCatalog,
   buildSatContentReadinessSnapshot,
@@ -104,6 +105,17 @@ assert(math6Import.items.every((question) => question.programIds.includes("vn_ma
 assert(math6Import.items.every((question) => question.metadata?.topicId === "math6.number.sets_natural_numbers"), "Math 6 imported questions should retain topic metadata.");
 assert(validateStandardContentBundle({ questions: math6Import.items }).length === 0, "Math 6 imported QuestionItems should validate cleanly.");
 
+const math6LegacyFontImport = buildMath6QuestionItemsFromRawSources([
+  {
+    fileName: "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    relativePath: "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    extension: "doc",
+    text: "BAI TAP 1: T\u00d7m c\u00b8c gi\u00b8 tr\u00de nguy\u00aan c\u00f1a n \u00ae\u00d3 ph\u00a9n s\u00e8 A c\u00e3 gi\u00b8 tr\u00de l\u00b5 s\u00e8 nguy\u00aan.",
+  },
+]);
+assert(math6LegacyFontImport.items[0]?.prompt.includes("Tìm các giá trị nguyên"), "Math 6 importer should decode TCVN3 legacy Vietnamese text.");
+assert(!math6LegacyFontImport.items[0]?.prompt.includes("T\u00d7m c\u00b8c"), "Math 6 importer should not keep TCVN3 marker text in prompts.");
+
 const math6MixedReview = buildMath6QuestionItemsFromRawSources([
   {
     fileName: "de-kiem-tra-hoc-ki-1-mon-toan-lop-6.doc",
@@ -142,6 +154,27 @@ const math6GeometryGuard = buildMath6ContentGuardReport([
 assert(math6GeometryGuard.report.stats.generatedFigures === 1, "Math 6 guard should count generated SVG figures.");
 assert(math6GeometryGuard.report.display.needsOriginalImage === 0, "Generated geometry figures should satisfy the image display gate.");
 assert(math6GeometryGuard.report.adapter.pass, "Math 6 guard output should validate as standard QuestionItems.");
+
+const math6CatalogFromGuard = buildMathLearningCatalog(math6GeometryGuard.items, {
+  programIds: ["vn_math_6"],
+  grades: [6],
+  displayReadyItemIds: math6GeometryGuard.report.displayReadyItemIds,
+});
+assert(math6CatalogFromGuard.items.length === 1, "Generic Math catalog should keep display-ready Math 6 items.");
+assert(math6CatalogFromGuard.coverage.generatedFigures === 1, "Generic Math catalog should count generated geometry figures.");
+assert(selectMathPracticeItems(math6CatalogFromGuard, { limit: 1, topicIds: ["math6.geometry.points_lines_segments"] }).length === 1, "Generic Math practice selector should filter by topic.");
+assert(selectMathDiagnosticItems(math6CatalogFromGuard, [], { limit: 1, programId: "vn_math_6" }).length === 1, "Generic Math diagnostic selector should return Math 6 items.");
+
+const math6CatalogFromRaw = buildMath6LearningCatalogFromRawSources([
+  {
+    fileName: "Chuyen de diem duong thang tia.doc",
+    relativePath: "Chuyen de diem duong thang tia.doc",
+    extension: "doc",
+    text: "Cau 1: Cho duong thang xy, diem O nam tren xy. Tren tia Ox lay diem N, tren tia Oy lay diem M.",
+  },
+]);
+assert(math6CatalogFromRaw.catalog.items.length === 1, "Math 6 raw-source catalog helper should expose display-ready items.");
+assert(math6CatalogFromRaw.guardReport.adapter.pass, "Math 6 raw-source catalog helper should keep guard validation status.");
 
 const baseQuestion: MiuMathQuestion = {
   id: "Q001",

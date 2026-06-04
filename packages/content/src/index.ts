@@ -60,6 +60,7 @@ export * from './math6-plan';
 export * from './math6-import';
 export * from './math6-geometry-figures';
 export * from './math6-content-guard-report';
+export * from './math-learning';
 export * from './admin-import';
 export * from './sat-content';
 export * from './english-learning';
