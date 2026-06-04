@@ -887,3 +887,45 @@ Residual risk:
 
 - The admin panel is a visibility layer; it does not yet provide one-click repair actions for sync conflicts or graph trigger investigation.
 - Screenshot capture in the in-app browser timed out once, so visual QA used DOM presence, layout bounding data, and console-log checks instead of a retained screenshot artifact.
+
+### 2026-06-04 Batch 6 - Admin-visible stuck repair reroute queue
+
+Scope completed:
+
+- Admin Intervention Queue now consumes `buildRepairRerouteCandidates` from `@miuprep/beta` and exposes stuck-repair reroutes as an admin-visible shadow review panel.
+- Queue metrics now include reroute candidate count, and urgent count includes live teacher-review/high-streak reroutes if future live evidence produces them.
+- Each reroute card shows learner ID, target node, evidence source, selected reroute action, evidence count, wrong attempts, consecutive wrong streak, score, suspected prerequisites, and misconceptions.
+- Reroute actions remain admin-only and do not change student-facing recommendation or routing behavior.
+
+Changed files:
+
+- `apps/miuprep-portal/src/components/AdminInterventionQueue.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm run lint -w miuprep-portal`
+- `npm test -w @miuprep/beta`
+- `npm run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm run lint -w miuprep-portal`
+- `npm test -w @miuprep/beta`
+- `npm run build -w miuprep-portal`
+
+Browser QA:
+
+- Started dev servers on `http://127.0.0.1:5179` and `http://127.0.0.1:5178`; both returned HTTP 200 and were stopped after the attempt.
+- In-app browser interaction for login/typing hit a runtime virtual-clipboard limitation, and subsequent navigation attempts timed out despite the local server responding. Browser QA is therefore not counted as passed for this batch.
+
+Proof captured:
+
+- Portal lint/build verifies the admin queue compiles with the beta reroute API and the new JSX panel.
+- Beta package tests continue to prove reroute candidates are generated from stuck repair evidence, preserve `evidenceSource`, and stay watch-only for synthetic evidence.
+- The panel explicitly labels the evidence source so synthetic portal snapshots are not confused with live beta proof.
+
+Residual risk:
+
+- Browser visual QA for this specific panel still needs a clean browser session or a stable in-app browser runtime.
+- Current portal-generated reroutes are based on portal snapshots and are labelled synthetic; live event-derived student models are still needed before treating reroutes as live beta evidence.

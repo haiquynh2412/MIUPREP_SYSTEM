@@ -1,4 +1,5 @@
 import { useMemo, type ReactNode } from 'react';
+import { buildRepairRerouteCandidates, type BetaLearner, type RepairRerouteCandidate } from '@miuprep/beta';
 import type { LocalUser, SystemLog } from '@miuprep/db';
 import { createSeedKnowledgeGraph } from '@miuprep/knowledge';
 import type { LearningEventRecord } from '@miuprep/learning';
@@ -7,7 +8,10 @@ import {
   buildLearnerSnapshot,
   normalizeAssignedTracks,
   type PortalTrackInfo,
+  type PortalTrackId,
 } from './UnifiedLearnerDashboard';
+
+type ProgramId = 'vn_math_6_9' | 'sat' | 'ielts' | 'cae' | 'cpe';
 
 interface MathLessonLike {
   id: string;
@@ -102,6 +106,14 @@ interface RecurringMisconception {
   skillIds: string[];
 }
 
+const TRACK_TO_PROGRAM: Record<PortalTrackId, ProgramId> = {
+  math: 'vn_math_6_9',
+  sat: 'sat',
+  ielts: 'ielts',
+  cae: 'cae',
+  cpe: 'cpe',
+};
+
 export default function AdminInterventionQueue({
   tracks,
   users,
@@ -137,11 +149,12 @@ export default function AdminInterventionQueue({
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 min-w-full lg:min-w-[620px]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2 min-w-full lg:min-w-[720px]">
           <QueueMetric label="Learners" value={String(queue.learners.length)} tone="rose" />
           <QueueMetric label="Content" value={String(queue.content.length)} tone="amber" />
           <QueueMetric label="Parents" value={String(queue.parentDigests.length)} tone="cyan" />
           <QueueMetric label="Misconcept" value={String(queue.misconceptions.length)} tone="cyan" />
+          <QueueMetric label="Reroutes" value={String(queue.repairReroutes.length)} tone="amber" />
           <QueueMetric label="Urgent" value={String(queue.urgentCount)} tone="orange" />
         </div>
       </div>
@@ -166,6 +179,15 @@ export default function AdminInterventionQueue({
         </Panel>
       </div>
 
+      <Panel title="Repair reroute review" meta="admin-visible shadow gate">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+          {queue.repairReroutes.slice(0, 6).map((item) => (
+            <RepairRerouteCard key={`${item.learnerId}-${item.scope}-${item.targetId}`} item={item} onOpenUsers={onOpenUsers} onOpenContent={onOpenContent} />
+          ))}
+          {queue.repairReroutes.length === 0 && <EmptyState text="No stuck repair reroute candidate has enough evidence yet." />}
+        </div>
+      </Panel>
+
       <Panel title="Top recurring misconceptions" meta="error notebook + learning events + graph">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {queue.misconceptions.slice(0, 6).map((item) => (
@@ -184,6 +206,65 @@ export default function AdminInterventionQueue({
         </div>
       </Panel>
     </section>
+  );
+}
+
+function RepairRerouteCard({
+  item,
+  onOpenUsers,
+  onOpenContent,
+}: {
+  item: RepairRerouteCandidate;
+  onOpenUsers: () => void;
+  onOpenContent: (track: ContentIntervention['track']) => void;
+}) {
+  const priority = repairReroutePriority(item);
+  const track = programToTrack(item.programId);
+  return (
+    <article className={`rounded-2xl border p-4 ${priorityClass(priority)}`}>
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <PriorityPill priority={priority} />
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{item.evidenceSource}</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{readableRerouteAction(item.action)}</span>
+          </div>
+          <h4 className="text-sm font-black text-slate-100 mt-2 mb-1">{item.targetId}</h4>
+          <p className="text-xs text-slate-400 leading-relaxed m-0">{item.reason}</p>
+          <p className="text-[11px] text-slate-500 mt-2 mb-0">
+            {item.suspectedPrerequisiteIds.length ? `Prereq: ${compactIds(item.suspectedPrerequisiteIds)}. ` : ''}
+            {item.misconceptionIds.length ? `Misconception: ${compactIds(item.misconceptionIds)}.` : ''}
+          </p>
+        </div>
+        <div className="grid grid-cols-2 gap-2 sm:min-w-[240px]">
+          <TinyMetric label="Evidence" value={String(item.evidenceCount)} />
+          <TinyMetric label="Wrong" value={String(item.wrongAttempts)} />
+          <TinyMetric label="Streak" value={String(item.consecutiveWrongAttempts)} />
+          <TinyMetric label="Score" value={`${Math.round(item.score)}%`} />
+        </div>
+      </div>
+      <div className="mt-3 pt-3 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <p className="text-xs text-slate-300 m-0">
+          Learner <span className="font-mono text-orange-200">{item.learnerId}</span> needs admin review before more same-level repair.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={onOpenUsers}
+            className="px-3 py-2 rounded-xl bg-slate-950 hover:bg-slate-900 border border-slate-700 text-slate-200 text-[10px] font-black uppercase tracking-wider cursor-pointer"
+          >
+            Open user
+          </button>
+          <button
+            type="button"
+            onClick={() => onOpenContent(track)}
+            className="px-3 py-2 rounded-xl bg-orange-400 hover:bg-orange-300 text-slate-950 text-[10px] font-black uppercase tracking-wider cursor-pointer border-0"
+          >
+            Open content
+          </button>
+        </div>
+      </div>
+    </article>
   );
 }
 
@@ -343,21 +424,50 @@ function buildQueue(input: {
   const learners = buildLearnerInterventions(input.users, input.tracks, input.errorQuestions, input.learningEvents);
   const content = buildContentInterventions(input.mathLessons, input.importedExams, input.errorQuestions);
   const misconceptions = buildRecurringMisconceptions(input.errorQuestions, input.learningEvents);
+  const repairReroutes = buildRepairRerouteCandidates(
+    createSeedKnowledgeGraph(),
+    buildBetaLearners(input.users, input.tracks, input.errorQuestions),
+  );
   const parentDigests = buildParentDigests(input.users, learners);
   const urgentCount =
     learners.filter((item) => item.priority === 'urgent').length +
     content.filter((item) => item.priority === 'urgent').length +
     misconceptions.filter((item) => item.priority === 'urgent').length +
+    repairReroutes.filter((item) => repairReroutePriority(item) === 'urgent').length +
     input.users.filter((user) => user.status === 'pending').length;
 
   return {
     learners,
     content,
     misconceptions,
+    repairReroutes,
     parentDigests,
     urgentCount,
     logCount: input.adminLogs.length,
   };
+}
+
+function buildBetaLearners(
+  users: Omit<LocalUser, 'passwordHash'>[],
+  tracks: PortalTrackInfo[],
+  errorQuestions: ErrorQuestionLike[],
+): BetaLearner[] {
+  const activeErrors = errorQuestions.filter((question) => question.stage > 0);
+  return users
+    .filter((user) => user.role === 'student' && (user.status || 'approved') === 'approved')
+    .map((student) => {
+      const assignedTrackIds = normalizeAssignedTracks(toLocalUser(student));
+      const activeTracks = tracks.filter((track) => assignedTrackIds.includes(track.id));
+      const progress = readProgress(student.username);
+      const snapshot = buildLearnerSnapshot(toLocalUser(student), activeTracks, progress.coins, Math.max(progress.traps, activeErrors.length));
+      return {
+        id: student.id || student.username,
+        username: student.username,
+        targetProgramIds: assignedTrackIds.map((trackId) => TRACK_TO_PROGRAM[trackId]),
+        state: snapshot.state,
+        stateKind: 'synthetic' as const,
+      };
+    });
 }
 
 function buildLearnerInterventions(
@@ -576,6 +686,24 @@ function compactIds(values: string[]): string {
   const text = values.slice(0, 4).join(', ');
   if (values.length <= 4) return text;
   return `${text}, +${values.length - 4}`;
+}
+
+function readableRerouteAction(action: RepairRerouteCandidate['action']): string {
+  return action.replace(/_/g, ' ');
+}
+
+function repairReroutePriority(item: RepairRerouteCandidate): 'urgent' | 'watch' | 'routine' {
+  if (item.evidenceSource === 'live' && (item.action === 'teacher_review' || item.consecutiveWrongAttempts >= 3)) return 'urgent';
+  if (item.evidenceCount >= 5 || item.consecutiveWrongAttempts >= 3) return 'watch';
+  return 'routine';
+}
+
+function programToTrack(programId: string): ContentIntervention['track'] {
+  if (programId === 'sat') return 'sat';
+  if (programId === 'ielts') return 'ielts';
+  if (programId === 'cae') return 'cae';
+  if (programId === 'cpe') return 'cpe';
+  return 'math';
 }
 
 function buildLearnerReason(priority: LearnerIntervention['priority'], attempts: number, mastery: number, errors: number): string {
