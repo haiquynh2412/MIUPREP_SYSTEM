@@ -1478,3 +1478,52 @@ Residual risk:
 - 2 Math 6 items still require original-image or manually generated figure review.
 - 15 Math 6 items still require encoding review after automatic TCVN3 decoding; these need source-specific cleanup.
 - CAE OCR/content expansion artifacts are still dirty in the worktree and should be committed only in a separate CAE-focused batch after their own guard run.
+
+### 2026-06-04 Batch 20 - CAE writing/speaking visual expansion
+
+Scope completed:
+
+- Expanded CAE feedback-only Writing/Speaking tasks with source-grounded guidance and original visual-input references for CAE 4 and CAE 5 writing tasks.
+- Added portal-served CAE visual input assets referenced by the writing task HTML.
+- Preserved CAE visual prompts through the English adapter by carrying `passageHtml` from source questions into `QuestionItem.metadata`.
+- Updated CAE mock data across CAE Plus, CAE 1-6, and listening topic banks while keeping the English catalog guard at 0 blockers.
+- Re-ran CAE deep audit after the expansion and confirmed 42 tests / 3,937 questions with 0 issues.
+
+Changed files:
+
+- `packages/content/src/mocks/cae-writing-speaking-samples.ts`
+- `packages/content/src/mocks/cam-cae-plus1-test*.json`
+- `packages/content/src/mocks/cam-cae1-*.json`
+- `packages/content/src/mocks/cam-cae2-*.json`
+- `packages/content/src/mocks/cam-cae3-*.json`
+- `packages/content/src/mocks/cam-cae4-*.json`
+- `packages/content/src/mocks/cam-cae5-*.json`
+- `packages/content/src/mocks/cam-cae6-*.json`
+- `packages/content/src/standard.ts`
+- `apps/miuprep-portal/public/assets/cae/visual-inputs/*.png`
+- `reports/content-quality/cae-deep-audit/cae-deep-audit.json`
+- `reports/content-quality/cae-deep-audit/cae-deep-audit.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run guard:english -w @miuprep/content`
+- `npm.cmd test -w @miuprep/content`
+
+Verification passed, round 2:
+
+- `npm.cmd run audit:cae-deep -w @miuprep/content`
+- `npm.cmd run guard:english -w @miuprep/content`
+- `npm.cmd test -w @miuprep/content`
+
+Proof captured:
+
+- CAE deep audit reports 42 tests, 3,937 questions, 0 total issues, 0 blockers, and 0 warnings.
+- English guard reports 95 tests, 7,098 items, 0 blockers, 112 warnings, and adapter pass.
+- CAE writing/speaking feedback-only inventory remains protected from mastery scoring while still preserving visual prompts for review.
+
+Residual risk:
+
+- English guard warnings remain: 64 `blankIndex` warnings and 48 transcript warnings, all non-blocking.
+- OCR/rendered-page work artifacts under `reports/content-quality/cae-ocr`, `cae-other-focused-audit`, and `cae6-focused-audit` are intentionally not committed in this batch.
+- The remaining Knowledge Graph update still waits for real beta evidence rather than seeded or synthetic learner data.

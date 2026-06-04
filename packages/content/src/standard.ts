@@ -967,6 +967,7 @@ export function toQuestionItemFromEnglishExam(
       category: question.category || '',
       topicId,
       topicTitle,
+      passageHtml: question.passageHtml || '',
       blankIndex: question.blankIndex || null,
       audioPath: section.audioPath || '',
       audioChecksum: section.audioChecksum || '',

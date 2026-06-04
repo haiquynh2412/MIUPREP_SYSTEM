@@ -1,11 +1,11 @@
 # CAE Deep Content Audit
 
-Generated at: 2026-06-04T07:12:24.651Z
+Generated at: 2026-06-04T12:11:43.983Z
 
 ## Summary
 
-- Tests audited: 38
-- Questions audited: 3865
+- Tests audited: 42
+- Questions audited: 3937
 - Total issues: 0
 - Blockers: 0
 - Warnings: 0
