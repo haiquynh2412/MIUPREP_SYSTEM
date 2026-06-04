@@ -133,7 +133,19 @@ function validateQuestion(q: any, path: string, test: any, errors: ValidationErr
     errors.push({ path: `${path}.id`, message: 'Question ID must be a non-empty string.', severity: 'error' });
   }
 
-  const validTypes = ['multiple_choice', 'true_false_not_given', 'matching_headings', 'gap_fill', 'map_labeling', 'multiple_select', 'table_completion', 'gapped_text', 'multiple_matching'];
+  const validTypes = [
+    'multiple_choice',
+    'true_false_not_given',
+    'matching_headings',
+    'gap_fill',
+    'map_labeling',
+    'multiple_select',
+    'table_completion',
+    'gapped_text',
+    'multiple_matching',
+    'writing_task',
+    'speaking_task',
+  ];
   if (!validTypes.includes(q.type)) {
     errors.push({ path: `${path}.type`, message: `Invalid question type: "${q.type}". Must be one of: ${validTypes.join(', ')}`, severity: 'error' });
   }

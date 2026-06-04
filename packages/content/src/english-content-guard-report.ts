@@ -133,7 +133,11 @@ function buildSkillReadiness(tests: EnglishExamTest[], catalog: ReturnType<typeo
 
   catalog.items.forEach((item) => {
     const skill = normalizeSkill(String(item.metadata?.skillArea || item.metadata?.testSkill || 'reading'));
-    incrementSkillRow(rows, skill, 'learningReadyItems', 1);
+    if (item.masteryPolicy === 'feedback_only') {
+      incrementSkillRow(rows, skill, 'feedbackOnlyItems', 1);
+    } else {
+      incrementSkillRow(rows, skill, 'learningReadyItems', 1);
+    }
   });
 
   const blockedQuestionKeys = new Set<string>();

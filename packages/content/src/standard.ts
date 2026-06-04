@@ -658,6 +658,16 @@ const ENGLISH_QUESTION_TYPE_OVERRIDES: Record<string, Partial<TagMap>> = {
     skillIds: ['eng.identify_specific_detail'],
     cognitiveLevel: 'understand',
   },
+  writing_task: {
+    conceptIds: ['eng.academic_writing', 'eng.writing_task_response', 'eng.paragraph_development', 'eng.essay_coherence'],
+    skillIds: ['eng.plan_essay_response', 'eng.develop_academic_argument', 'eng.develop_body_paragraph', 'eng.revise_for_coherence'],
+    cognitiveLevel: 'create',
+  },
+  speaking_task: {
+    conceptIds: ['eng.speaking_fluency', 'eng.spoken_discourse_management', 'eng.interactive_communication', 'eng.pronunciation_control'],
+    skillIds: ['eng.organize_spoken_response', 'eng.sustain_fluent_turn', 'eng.manage_interactive_communication', 'eng.use_pronunciation_features'],
+    cognitiveLevel: 'create',
+  },
 };
 
 const ENGLISH_TOPIC_OVERRIDES: Record<string, Partial<TagMap>> = {
@@ -758,6 +768,36 @@ const ENGLISH_TOPIC_OVERRIDES: Record<string, Partial<TagMap>> = {
     conceptIds: ['eng.listening_detail', 'eng.listening_inference'],
     skillIds: ['eng.identify_specific_detail', 'eng.infer_speaker_attitude'],
     cognitiveLevel: 'analyze',
+  },
+  cae_writing_part_1: {
+    conceptIds: ['eng.academic_writing', 'eng.writing_task_response', 'eng.essay_coherence'],
+    skillIds: ['eng.plan_essay_response', 'eng.develop_academic_argument', 'eng.revise_for_coherence'],
+    cognitiveLevel: 'create',
+  },
+  cae_writing_part_2: {
+    conceptIds: ['eng.academic_writing', 'eng.writing_task_response', 'eng.paragraph_development'],
+    skillIds: ['eng.plan_essay_response', 'eng.develop_body_paragraph', 'eng.control_clause_structure'],
+    cognitiveLevel: 'create',
+  },
+  cae_speaking_part_1: {
+    conceptIds: ['eng.speaking_fluency', 'eng.spoken_discourse_management'],
+    skillIds: ['eng.organize_spoken_response', 'eng.sustain_fluent_turn'],
+    cognitiveLevel: 'create',
+  },
+  cae_speaking_part_2: {
+    conceptIds: ['eng.speaking_fluency', 'eng.spoken_discourse_management', 'eng.vocabulary_range'],
+    skillIds: ['eng.organize_spoken_response', 'eng.sustain_fluent_turn', 'eng.use_collocation'],
+    cognitiveLevel: 'create',
+  },
+  cae_speaking_part_3: {
+    conceptIds: ['eng.interactive_communication', 'eng.spoken_discourse_management'],
+    skillIds: ['eng.manage_interactive_communication', 'eng.organize_spoken_response'],
+    cognitiveLevel: 'create',
+  },
+  cae_speaking_part_4: {
+    conceptIds: ['eng.speaking_fluency', 'eng.spoken_discourse_management', 'eng.grammar_accuracy'],
+    skillIds: ['eng.sustain_fluent_turn', 'eng.organize_spoken_response', 'eng.control_clause_structure'],
+    cognitiveLevel: 'create',
   },
 };
 

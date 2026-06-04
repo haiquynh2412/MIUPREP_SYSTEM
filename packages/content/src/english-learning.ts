@@ -205,15 +205,16 @@ function filterMockTestToReadyItems(mockTest: MockTest, readyIds: Set<string>): 
 
 function buildCatalogCoverage(items: QuestionItem[], blockers: ContentQualityIssue[], warnings: ContentQualityIssue[]): EnglishLearningCatalogCoverage {
   const blockedQuestionKeys = new Set(blockers.filter((issue) => issue.questionId).map((issue) => [issue.testId, issue.sectionId, issue.groupId, issue.questionId].join('::')));
+  const masteryReadyItems = items.filter((item) => item.masteryPolicy !== 'feedback_only');
   return {
-    readyQuestions: items.length,
+    readyQuestions: masteryReadyItems.length,
     blockedQuestions: blockedQuestionKeys.size,
     warningIssues: warnings.length,
-    byProgram: countBy(items.flatMap((item) => item.programIds)),
-    bySkill: countBy(items.map((item) => String(item.metadata?.skillArea || item.metadata?.testSkill || 'unknown'))),
-    byQuestionType: countBy(items.map((item) => item.type)),
-    byConcept: countBy(items.flatMap((item) => item.conceptIds)),
-    bySourceTest: countBy(items.map((item) => String(item.metadata?.testId || 'unknown'))),
+    byProgram: countBy(masteryReadyItems.flatMap((item) => item.programIds)),
+    bySkill: countBy(masteryReadyItems.map((item) => String(item.metadata?.skillArea || item.metadata?.testSkill || 'unknown'))),
+    byQuestionType: countBy(masteryReadyItems.map((item) => item.type)),
+    byConcept: countBy(masteryReadyItems.flatMap((item) => item.conceptIds)),
+    bySourceTest: countBy(masteryReadyItems.map((item) => String(item.metadata?.testId || 'unknown'))),
   };
 }
 
