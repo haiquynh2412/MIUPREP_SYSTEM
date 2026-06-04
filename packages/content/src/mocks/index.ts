@@ -214,3 +214,4 @@ export const CAE_ENTRY_TEST_3 = CAM_CAE1_TEST3;
 
 export * from './cpe-writing-speaking-samples';
 export * from './ielts-writing-speaking-samples';
+export * from './cae-writing-speaking-samples';
