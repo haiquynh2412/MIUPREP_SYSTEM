@@ -929,3 +929,40 @@ Residual risk:
 
 - Browser visual QA for this specific panel still needs a clean browser session or a stable in-app browser runtime.
 - Current portal-generated reroutes are based on portal snapshots and are labelled synthetic; live event-derived student models are still needed before treating reroutes as live beta evidence.
+
+### 2026-06-04 Batch 7 - Productive skill governance report artifact
+
+Scope completed:
+
+- Added a deterministic `@miuprep/ai` exporter for Writing/Speaking productive-skill governance evidence.
+- Exporter writes JSON and Markdown artifacts under `reports/ai`, using seeded golden samples with expert scores, provenance, rubric versions, descriptor sources, confidence, criteria, and evidence.
+- Report keeps `masteryPolicy: feedback_only_locked`, `masteryEligible: false`, and `consensusPolicy: validation_only`, even when seeded governance samples pass.
+- Added `npm run export:productive-governance -w @miuprep/ai`.
+
+Changed files:
+
+- `packages/ai/package.json`
+- `packages/ai/src/export-productive-skill-governance.ts`
+- `reports/ai/productive-skill-governance.json`
+- `reports/ai/productive-skill-governance.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm test -w @miuprep/ai`
+- `npm run export:productive-governance -w @miuprep/ai`
+
+Verification passed, round 2:
+
+- `npm test -w @miuprep/ai`
+- `npm run export:productive-governance -w @miuprep/ai`
+
+Proof captured:
+
+- `reports/ai/productive-skill-governance.md` reports status `pass`, 2 samples, 2 passed samples, 0 watch, 0 blocked, average overall deviation 0, max overall deviation 0.
+- The same report explicitly states mastery remains ineligible and Writing/Speaking scores are not approved for mastery updates.
+- AI tests still prove missing provenance or excessive deviation blocks governance, and tutor feedback events remain feedback-only.
+
+Residual risk:
+
+- This is a seeded repeatable governance artifact, not a broad expert benchmark. A larger human-scored sample set is still required before changing productive-skill mastery policy.

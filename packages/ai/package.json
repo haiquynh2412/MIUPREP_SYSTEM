@@ -6,7 +6,8 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && node dist/tutor.test.js"
+    "test": "npm run build && node dist/tutor.test.js",
+    "export:productive-governance": "npm run build && node dist/export-productive-skill-governance.js"
   },
   "dependencies": {
     "@miuprep/db": "*",

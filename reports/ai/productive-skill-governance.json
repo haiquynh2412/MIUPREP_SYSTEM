@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-06-04T07:45:18.178Z",
+  "source": "seeded_governance_samples",
+  "samples": [
+    {
+      "sampleId": "writing-governance-seed-1",
+      "feedbackType": "writing",
+      "feedback": {
+        "attemptId": "writing-governance-seed-1",
+        "taskNumber": 2,
+        "bandOverall": 7,
+        "criteria": [
+          {
+            "criterionName": "Task Response",
+            "band": 7,
+            "feedbackText": "The position is clear and supported with relevant examples.",
+            "evidence": [
+              "clear position",
+              "relevant examples"
+            ],
+            "nextAction": "Add one sharper counterargument sentence."
+          },
+          {
+            "criterionName": "Coherence and Cohesion",
+            "band": 6.5,
+            "feedbackText": "Paragraphing is logical, but one transition is mechanical.",
+            "evidence": [
+              "logical paragraphing",
+              "mechanical transition"
+            ],
+            "nextAction": "Replace the repeated linker with a cause-effect bridge."
+          }
+        ],
+        "corrections": [],
+        "suggestionsForImprovement": [
+          "Develop one counterargument before the conclusion."
+        ],
+        "modelUsed": "seeded-governance-rater",
+        "createdAt": "2026-06-04T07:45:18.178Z",
+        "rubricVersion": "v1.0.0-academic",
+        "descriptorSource": "IELTS Writing Band Descriptors May 2023",
+        "confidence": 0.91,
+        "isMockScoring": true
+      },
+      "expertOverall": 7,
+      "expertCriteria": {
+        "Task Response": 7,
+        "Coherence and Cohesion": 6.5
+      },
+      "provider": "seeded",
+      "allowedOverallDeviation": 0.5,
+      "allowedCriterionDeviation": 0.75
+    },
+    {
+      "sampleId": "speaking-governance-seed-1",
+      "feedbackType": "speaking",
+      "feedback": {
+        "attemptId": "speaking-governance-seed-1",
+        "transcript": "I think online learning is useful because students can review lessons and practice more.",
+        "bandOverall": 7,
+        "criteria": [
+          {
+            "criterionName": "Fluency and Coherence",
+            "band": 7,
+            "feedbackText": "The answer is sustained and easy to follow.",
+            "evidence": [
+              "sustained answer",
+              "easy to follow"
+            ],
+            "nextAction": "Add one example without pausing after the first reason."
+          },
+          {
+            "criterionName": "Pronunciation",
+            "band": 7,
+            "feedbackText": "Pronunciation is clear with minor word-stress slips.",
+            "evidence": [
+              "clear pronunciation",
+              "minor word-stress slips"
+            ],
+            "nextAction": "Repair stress on academic vocabulary before rerecording."
+          }
+        ],
+        "pronunciationErrors": [
+          {
+            "word": "review",
+            "suggestion": "Stress the second syllable."
+          }
+        ],
+        "fluencyReview": "Generally smooth, with one hesitation before the example.",
+        "modelUsed": "seeded-governance-rater",
+        "createdAt": "2026-06-04T07:45:18.178Z",
+        "rubricVersion": "v1.0.0-speaking",
+        "descriptorSource": "IELTS Speaking Band Descriptors",
+        "confidence": 0.88,
+        "isMockScoring": true
+      },
+      "expertOverall": 7,
+      "expertCriteria": {
+        "Fluency and Coherence": 7,
+        "Pronunciation": 7
+      },
+      "provider": "seeded",
+      "allowedOverallDeviation": 0.5,
+      "allowedCriterionDeviation": 0.75
+    }
+  ],
+  "report": {
+    "schemaVersion": "productive_skill_governance_v1",
+    "generatedAt": "2026-06-04T07:45:18.178Z",
+    "status": "pass",
+    "samples": 2,
+    "passedSamples": 2,
+    "watchSamples": 0,
+    "blockedSamples": 0,
+    "averageOverallDeviation": 0,
+    "maxOverallDeviation": 0,
+    "masteryPolicy": "feedback_only_locked",
+    "masteryEligible": false,
+    "consensusPolicy": "validation_only",
+    "requiredFields": [
+      "attemptId",
+      "modelUsed",
+      "provider",
+      "rubricVersion",
+      "descriptorSource",
+      "confidence",
+      "criteria",
+      "evidence",
+      "createdAt"
+    ],
+    "findings": [
+      {
+        "sampleId": "writing-governance-seed-1",
+        "feedbackType": "writing",
+        "severity": "pass",
+        "reason": "sample_passed",
+        "detail": "Sample has required provenance and stays within supplied reliability thresholds."
+      },
+      {
+        "sampleId": "speaking-governance-seed-1",
+        "feedbackType": "speaking",
+        "severity": "pass",
+        "reason": "sample_passed",
+        "detail": "Sample has required provenance and stays within supplied reliability thresholds."
+      }
+    ],
+    "detail": "Productive-skill feedback passed the supplied governance sample checks, but mastery remains feedback-only."
+  }
+}
