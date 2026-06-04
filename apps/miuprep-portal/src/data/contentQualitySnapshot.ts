@@ -73,17 +73,17 @@ export interface UnifiedContentCoverageSnapshot {
 
 export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
   "schemaVersion": "english_content_guard_v1",
-  "generatedAt": "2026-06-04T05:02:02.493Z",
+  "generatedAt": "2026-06-04T07:12:58.983Z",
   "sourceCommand": "npm.cmd run sync:portal-quality -w @miuprep/content",
   "qualitySummary": {
-    "tests": 89,
-    "questions": 6990,
+    "tests": 91,
+    "questions": 7026,
     "blockers": 0,
     "warnings": 112,
     "byProgram": {
       "ielts": 6,
       "cpe": 47,
-      "cae": 36
+      "cae": 38
     },
     "topIssues": [
       {
@@ -264,12 +264,13 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
     {
       "skill": "writing",
       "label": "Writing",
-      "totalItems": 7,
+      "totalItems": 27,
       "learningReadyItems": 0,
-      "feedbackOnlyItems": 7,
+      "feedbackOnlyItems": 27,
       "blockerItems": 0,
       "warningItems": 0,
       "byProgram": {
+        "cae": 20,
         "cpe": 4,
         "ielts": 3
       }
@@ -277,20 +278,21 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
     {
       "skill": "speaking",
       "label": "Speaking",
-      "totalItems": 6,
+      "totalItems": 22,
       "learningReadyItems": 0,
-      "feedbackOnlyItems": 6,
+      "feedbackOnlyItems": 22,
       "blockerItems": 0,
       "warningItems": 0,
       "byProgram": {
+        "cae": 16,
         "cpe": 3,
         "ielts": 3
       }
     }
   ],
   "adapter": {
-    "readyItems": 6990,
-    "mockTests": 89,
+    "readyItems": 7026,
+    "mockTests": 91,
     "passages": 658,
     "errorCount": 0,
     "pass": true
@@ -299,7 +301,7 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
 
 export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
   "schemaVersion": "miuprep_content_coverage_v1",
-  "generatedAt": "2026-06-04T05:02:02.493Z",
+  "generatedAt": "2026-06-04T07:12:58.983Z",
   "programs": [
     {
       "programId": "vn_math_6_9",
@@ -351,7 +353,7 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       "label": "IELTS Layer",
       "sourceQuestions": 116,
       "importedQuestions": 116,
-      "readyQuestions": 116,
+      "readyQuestions": 110,
       "blockerItems": 0,
       "warningItems": 6,
       "coverageStatus": "watch",
@@ -366,7 +368,7 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       "label": "CPE",
       "sourceQuestions": 3058,
       "importedQuestions": 3058,
-      "readyQuestions": 3058,
+      "readyQuestions": 3051,
       "blockerItems": 0,
       "warningItems": 47,
       "coverageStatus": "watch",
@@ -379,17 +381,17 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
     {
       "programId": "cae",
       "label": "CAE",
-      "sourceQuestions": 3829,
-      "importedQuestions": 3829,
+      "sourceQuestions": 3865,
+      "importedQuestions": 3865,
       "readyQuestions": 3829,
       "blockerItems": 0,
-      "warningItems": 36,
+      "warningItems": 38,
       "coverageStatus": "watch",
-      "feedbackOnlyItems": 0,
+      "feedbackOnlyItems": 36,
       "adapterPass": true,
       "sourceMatched": true,
       "changedQuestions": 0,
-      "note": "3829 mastery-ready questions and 0 feedback-only Writing/Speaking samples in the shared English catalog."
+      "note": "3829 mastery-ready questions and 36 feedback-only Writing/Speaking samples in the shared English catalog."
     }
   ]
 };

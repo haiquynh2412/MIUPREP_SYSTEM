@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "graph_backend_evaluation_v1",
+  "generatedAt": "2026-06-04T07:12:05.084Z",
+  "status": "pass",
+  "recommendation": "keep_indexed_package_graph",
+  "graphDbCriteriaMet": 0,
+  "graphDbEvaluationEligible": false,
+  "migrationAllowed": false,
+  "rollbackPlanRequired": false,
+  "clientDirectDbAccessAllowed": false,
+  "validation": {
+    "ok": true,
+    "errors": 0,
+    "warnings": 0
+  },
+  "stats": {
+    "nodes": 237,
+    "domains": 2,
+    "programs": 13,
+    "concepts": 77,
+    "skills": 83,
+    "objectives": 23,
+    "misconceptions": 17,
+    "lessonTemplates": 22,
+    "edges": 133,
+    "crossDomainPrograms": 1
+  },
+  "benchmark": {
+    "queries": 46,
+    "elapsedMs": 7,
+    "maxQueryMs": 1,
+    "averageQueryMs": 0.04,
+    "maxClosureSize": 2,
+    "averageClosureSize": 0.04,
+    "maxPrerequisiteDepth": 2
+  },
+  "triggers": [
+    {
+      "id": "indexed_query_performance_limit",
+      "met": false,
+      "evidence": "query=1ms threshold=25ms",
+      "recommendation": "Try cached traversal or relational/indexed storage before Graph DB."
+    },
+    {
+      "id": "content_volume_limit",
+      "met": false,
+      "evidence": "nodes=237/25000, edges=133/75000",
+      "recommendation": "Move from static package graph only after volume exceeds configured limits."
+    },
+    {
+      "id": "cross_program_traversal_complexity",
+      "met": false,
+      "evidence": "crossDomainPrograms=1/3, maxDepth=2/8",
+      "recommendation": "Prefer cached graph traversal in @miuprep/knowledge until multi-hop complexity is proven."
+    },
+    {
+      "id": "admin_deep_multi_hop_need",
+      "met": false,
+      "evidence": "no admin multi-hop requirement supplied",
+      "recommendation": "Document admin review queries before choosing a graph-native backend."
+    },
+    {
+      "id": "runtime_graph_traversal_need",
+      "met": false,
+      "evidence": "no runtime traversal requirement supplied",
+      "recommendation": "Keep client apps independent of database shape; expose package/service APIs only."
+    }
+  ],
+  "detail": "Current indexed package graph is sufficient for this graph size and measured traversal workload."
+}

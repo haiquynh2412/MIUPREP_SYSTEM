@@ -268,8 +268,8 @@ function buildEnglishProgramCoverageRows(report: EnglishContentGuardReport): Uni
       .filter((row) => row.skill === 'writing' || row.skill === 'speaking')
       .reduce((sum, row) => sum + Number(row.byProgram[programId] || 0), 0);
     const importedQuestions = report.skillReadiness.reduce((sum, row) => sum + Number(row.byProgram[programId] || 0), 0);
-    const readyQuestions = masteryReadyQuestions + feedbackOnlyItems;
-    const blockerItems = Math.max(0, importedQuestions - readyQuestions);
+    const readyQuestions = masteryReadyQuestions;
+    const blockerItems = Math.max(0, importedQuestions - masteryReadyQuestions - feedbackOnlyItems);
     const warnings = Number(report.qualitySummary.byProgram[programId] || 0);
     return {
       programId,

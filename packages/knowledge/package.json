@@ -6,7 +6,8 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && node dist/index.test.js"
+    "test": "npm run build && node dist/index.test.js",
+    "export:graph-evaluation": "npm run build && node dist/export-graph-backend-evaluation.js"
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { createSeedKnowledgeGraph, prerequisiteClosure, validateKnowledgeGraph, type KnowledgeGraph } from "./index";
+import { buildGraphBackendEvaluationReport, createSeedKnowledgeGraph, prerequisiteClosure, validateKnowledgeGraph, type KnowledgeGraph } from "./index";
 
 function assert(condition: unknown, message: string): void {
   if (!condition) throw new Error(message);
@@ -7,6 +7,29 @@ function assert(condition: unknown, message: string): void {
 const seed = createSeedKnowledgeGraph();
 const valid = validateKnowledgeGraph(seed);
 assert(valid.ok, `Seed graph should be valid: ${valid.errors.map((error) => error.message).join(", ")}`);
+
+const graphBackendEvaluation = buildGraphBackendEvaluationReport(seed, { generatedAt: "2026-06-04T00:00:00.000Z" });
+assert(graphBackendEvaluation.schemaVersion === "graph_backend_evaluation_v1", "Graph backend evaluation report should be versioned.");
+assert(graphBackendEvaluation.validation.ok, "Graph backend evaluation should preserve graph validation semantics.");
+assert(graphBackendEvaluation.status === "pass", "Seed graph should not require a Graph DB yet.");
+assert(graphBackendEvaluation.recommendation === "keep_indexed_package_graph", "Current graph should stay on indexed package traversal.");
+assert(graphBackendEvaluation.graphDbCriteriaMet < 2, "Graph DB evaluation should require at least two criteria.");
+assert(graphBackendEvaluation.graphDbEvaluationEligible === false, "Graph DB evaluation should not be eligible for the current seed graph.");
+assert(graphBackendEvaluation.migrationAllowed === false, "Graph backend report should never authorize automatic migration.");
+assert(graphBackendEvaluation.clientDirectDbAccessAllowed === false, "Client apps should not depend directly on database shape.");
+assert(graphBackendEvaluation.benchmark.queries > 0, "Graph backend evaluation should benchmark prerequisite traversal.");
+
+const forcedGraphEvaluation = buildGraphBackendEvaluationReport(seed, {
+  generatedAt: "2026-06-04T00:00:00.000Z",
+  staticNodeLimit: 1,
+  staticEdgeLimit: 1,
+  adminDeepMultiHopRequired: true,
+});
+assert(forcedGraphEvaluation.status === "watch", "Meeting multiple criteria should create a watch-level Graph DB evaluation, not a migration.");
+assert(forcedGraphEvaluation.graphDbEvaluationEligible === true, "Two or more criteria should make Graph DB evaluation eligible.");
+assert(forcedGraphEvaluation.recommendation === "evaluate_graph_db_with_rollback_plan", "Eligible Graph DB evaluation should require rollback planning.");
+assert(forcedGraphEvaluation.rollbackPlanRequired === true, "Graph DB evaluation should require a rollback plan.");
+assert(forcedGraphEvaluation.migrationAllowed === false, "Even eligible evaluation should not allow automatic migration.");
 
 const englishConceptIds = new Set(seed.concepts.filter((concept) => concept.domainId === "english_core").map((concept) => concept.id));
 [

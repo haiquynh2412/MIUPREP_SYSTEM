@@ -787,3 +787,59 @@ Residual risk:
 
 - Empirical difficulty remains synthetic/seeded in beta reports; keep it shadow-only until repeated real attempts per item or skill cluster exist.
 - Reward audit is now a domain guard, not a UI redesign; `hard-winner` and attendance-only badges are intentionally flagged for later product tuning rather than silently changed.
+
+### 2026-06-04 Batch 4 - Phase H graph backend decision report
+
+Scope completed:
+
+- Phase H: added `buildGraphBackendEvaluationReport` in `@miuprep/knowledge` so Graph DB decisions are based on validation, graph size, prerequisite traversal benchmark, cross-program complexity, and explicit runtime/admin requirements.
+- Phase H guardrails: report requires at least two Graph DB criteria before evaluation is eligible, keeps `migrationAllowed: false`, requires rollback planning when eligible, and keeps `clientDirectDbAccessAllowed: false`.
+- Phase H artifacts: added `npm run export:graph-evaluation -w @miuprep/knowledge`, writing JSON/Markdown reports under `reports/knowledge`.
+- Content snapshot cleanup: portal content coverage now counts Writing/Speaking feedback-only samples separately from mastery-ready questions, matching the productive-skill governance gate.
+
+Changed files:
+
+- `packages/knowledge/src/index.ts`
+- `packages/knowledge/src/index.test.ts`
+- `packages/knowledge/src/export-graph-backend-evaluation.ts`
+- `packages/knowledge/package.json`
+- `packages/content/src/sync-portal-content-quality-snapshot.ts`
+- `apps/miuprep-portal/src/data/contentQualitySnapshot.ts`
+- `reports/knowledge/graph-backend-evaluation.json`
+- `reports/knowledge/graph-backend-evaluation.md`
+- `reports/content-quality/cae-deep-audit/cae-deep-audit.json`
+- `reports/content-quality/cae-deep-audit/cae-deep-audit.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm test -w @miuprep/knowledge`
+- `npm run export:graph-evaluation -w @miuprep/knowledge`
+- `npm test -w @miuprep/content`
+- `npm run audit:cae-deep -w @miuprep/content`
+- `npm run sync:portal-quality -w @miuprep/content`
+- `npm run guard:english -w @miuprep/content`
+- `npm run lint -w miuprep-portal`
+- `npm run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm test -w @miuprep/knowledge`
+- `npm run export:graph-evaluation -w @miuprep/knowledge`
+- `npm test -w @miuprep/content`
+- `npm run audit:cae-deep -w @miuprep/content`
+- `npm run sync:portal-quality -w @miuprep/content`
+- `npm run guard:english -w @miuprep/content`
+- `npm run lint -w miuprep-portal`
+- `npm run build -w miuprep-portal`
+
+Proof captured:
+
+- Graph backend evaluation currently reports `status: pass`, `recommendation: keep_indexed_package_graph`, `graphDbCriteriaMet: 0`, `graphDbEvaluationEligible: false`, `migrationAllowed: false`, and `clientDirectDbAccessAllowed: false`.
+- Current seed graph size is 237 nodes and 133 edges; benchmark runs 46 prerequisite traversal queries with max query time 1ms, average 0.04ms, max closure size 2, and max prerequisite depth 2.
+- CAE deep audit now covers 38 tests and 3,865 questions with 0 blockers and 0 warnings after feedback-only Writing/Speaking samples are included.
+
+Residual risk:
+
+- The benchmark is a local package-level traversal benchmark, not production traffic. Re-run this report after real beta graph workload and admin review queries are collected.
+- Graph DB remains intentionally deferred; this batch proves current conditions do not justify migration.

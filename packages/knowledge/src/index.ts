@@ -156,6 +156,74 @@ export interface KnowledgeIndex {
   edgesByTo: Map<string, KnowledgeEdge[]>;
 }
 
+export type GraphBackendEvaluationStatus = "pass" | "watch" | "blocked";
+
+export type GraphBackendRecommendation =
+  | "keep_indexed_package_graph"
+  | "evaluate_relational_or_cached_traversal"
+  | "evaluate_graph_db_with_rollback_plan"
+  | "fix_graph_validation_before_backend_decision";
+
+export interface GraphBackendEvaluationOptions {
+  generatedAt?: string;
+  benchmarkNodeIds?: string[];
+  slowQueryThresholdMs?: number;
+  staticNodeLimit?: number;
+  staticEdgeLimit?: number;
+  multiHopDepthThreshold?: number;
+  crossDomainProgramThreshold?: number;
+  adminDeepMultiHopRequired?: boolean;
+  runtimeTraversalRequired?: boolean;
+  observedQueryP95Ms?: number;
+}
+
+export interface GraphBackendEvaluationTrigger {
+  id: string;
+  met: boolean;
+  evidence: string;
+  recommendation: string;
+}
+
+export interface GraphBackendEvaluationReport {
+  schemaVersion: "graph_backend_evaluation_v1";
+  generatedAt: string;
+  status: GraphBackendEvaluationStatus;
+  recommendation: GraphBackendRecommendation;
+  graphDbCriteriaMet: number;
+  graphDbEvaluationEligible: boolean;
+  migrationAllowed: boolean;
+  rollbackPlanRequired: boolean;
+  clientDirectDbAccessAllowed: boolean;
+  validation: {
+    ok: boolean;
+    errors: number;
+    warnings: number;
+  };
+  stats: {
+    nodes: number;
+    domains: number;
+    programs: number;
+    concepts: number;
+    skills: number;
+    objectives: number;
+    misconceptions: number;
+    lessonTemplates: number;
+    edges: number;
+    crossDomainPrograms: number;
+  };
+  benchmark: {
+    queries: number;
+    elapsedMs: number;
+    maxQueryMs: number;
+    averageQueryMs: number;
+    maxClosureSize: number;
+    averageClosureSize: number;
+    maxPrerequisiteDepth: number;
+  };
+  triggers: GraphBackendEvaluationTrigger[];
+  detail: string;
+}
+
 type EntityWithId = { id: string };
 
 export function createEmptyKnowledgeGraph(): KnowledgeGraph {
@@ -350,6 +418,94 @@ export function prerequisiteClosure(graph: KnowledgeGraph, nodeId: string): stri
   }
 
   return [...visited];
+}
+
+export function buildGraphBackendEvaluationReport(
+  graph: KnowledgeGraph,
+  options: GraphBackendEvaluationOptions = {},
+): GraphBackendEvaluationReport {
+  const validation = validateKnowledgeGraph(graph);
+  const stats = buildGraphBackendStats(graph);
+  const benchmark = benchmarkPrerequisiteQueries(graph, options.benchmarkNodeIds);
+  const slowQueryThresholdMs = positiveNumber(options.slowQueryThresholdMs, 25);
+  const staticNodeLimit = positiveNumber(options.staticNodeLimit, 25000);
+  const staticEdgeLimit = positiveNumber(options.staticEdgeLimit, 75000);
+  const multiHopDepthThreshold = positiveNumber(options.multiHopDepthThreshold, 8);
+  const crossDomainProgramThreshold = positiveNumber(options.crossDomainProgramThreshold, 3);
+  const observedOrMeasuredQueryMs = Number.isFinite(options.observedQueryP95Ms)
+    ? Number(options.observedQueryP95Ms)
+    : benchmark.maxQueryMs;
+  const triggers: GraphBackendEvaluationTrigger[] = [
+    {
+      id: "indexed_query_performance_limit",
+      met: observedOrMeasuredQueryMs > slowQueryThresholdMs,
+      evidence: `query=${roundNumber(observedOrMeasuredQueryMs)}ms threshold=${slowQueryThresholdMs}ms`,
+      recommendation: "Try cached traversal or relational/indexed storage before Graph DB.",
+    },
+    {
+      id: "content_volume_limit",
+      met: stats.nodes > staticNodeLimit || stats.edges > staticEdgeLimit,
+      evidence: `nodes=${stats.nodes}/${staticNodeLimit}, edges=${stats.edges}/${staticEdgeLimit}`,
+      recommendation: "Move from static package graph only after volume exceeds configured limits.",
+    },
+    {
+      id: "cross_program_traversal_complexity",
+      met: stats.crossDomainPrograms >= crossDomainProgramThreshold || benchmark.maxPrerequisiteDepth >= multiHopDepthThreshold,
+      evidence: `crossDomainPrograms=${stats.crossDomainPrograms}/${crossDomainProgramThreshold}, maxDepth=${benchmark.maxPrerequisiteDepth}/${multiHopDepthThreshold}`,
+      recommendation: "Prefer cached graph traversal in @miuprep/knowledge until multi-hop complexity is proven.",
+    },
+    {
+      id: "admin_deep_multi_hop_need",
+      met: Boolean(options.adminDeepMultiHopRequired),
+      evidence: options.adminDeepMultiHopRequired ? "admin multi-hop review requirement supplied" : "no admin multi-hop requirement supplied",
+      recommendation: "Document admin review queries before choosing a graph-native backend.",
+    },
+    {
+      id: "runtime_graph_traversal_need",
+      met: Boolean(options.runtimeTraversalRequired),
+      evidence: options.runtimeTraversalRequired ? "runtime traversal requirement supplied" : "no runtime traversal requirement supplied",
+      recommendation: "Keep client apps independent of database shape; expose package/service APIs only.",
+    },
+  ];
+  const graphDbCriteriaMet = triggers.filter((trigger) => trigger.met).length;
+  const graphDbEvaluationEligible = validation.ok && graphDbCriteriaMet >= 2;
+  const recommendation: GraphBackendRecommendation = !validation.ok
+    ? "fix_graph_validation_before_backend_decision"
+    : graphDbCriteriaMet >= 2
+      ? "evaluate_graph_db_with_rollback_plan"
+      : graphDbCriteriaMet === 1
+        ? "evaluate_relational_or_cached_traversal"
+        : "keep_indexed_package_graph";
+  const status: GraphBackendEvaluationStatus = !validation.ok
+    ? "blocked"
+    : graphDbCriteriaMet >= 2
+      ? "watch"
+      : "pass";
+
+  return {
+    schemaVersion: "graph_backend_evaluation_v1",
+    generatedAt: options.generatedAt || new Date().toISOString(),
+    status,
+    recommendation,
+    graphDbCriteriaMet,
+    graphDbEvaluationEligible,
+    migrationAllowed: false,
+    rollbackPlanRequired: graphDbEvaluationEligible,
+    clientDirectDbAccessAllowed: false,
+    validation: {
+      ok: validation.ok,
+      errors: validation.errors.length,
+      warnings: validation.warnings.length,
+    },
+    stats,
+    benchmark,
+    triggers,
+    detail: !validation.ok
+      ? "Knowledge Graph validation must be fixed before any backend evaluation."
+      : graphDbEvaluationEligible
+        ? "At least two Graph DB evaluation criteria are met; evaluate with a rollback plan, but do not migrate automatically."
+        : "Current indexed package graph is sufficient for this graph size and measured traversal workload.",
+  };
 }
 
 export function createSeedKnowledgeGraph(): KnowledgeGraph {
@@ -1987,6 +2143,109 @@ function mapById<T extends EntityWithId>(items: T[]): Map<string, T> {
 
 function appendToMap<T>(map: Map<string, T[]>, key: string, value: T): void {
   map.set(key, [...(map.get(key) || []), value]);
+}
+
+function buildGraphBackendStats(graph: KnowledgeGraph): GraphBackendEvaluationReport["stats"] {
+  const domains = graph.domains.length;
+  const programs = graph.programs.length;
+  const concepts = graph.concepts.length;
+  const skills = graph.skills.length;
+  const objectives = graph.objectives.length;
+  const misconceptions = graph.misconceptions.length;
+  const lessonTemplates = (graph.lessonTemplates || []).length;
+  const crossDomainPrograms = graph.programs.filter((program) => uniqueKnowledgeStrings(program.domainIds || []).length > 1).length;
+  return {
+    nodes: domains + programs + concepts + skills + objectives + misconceptions + lessonTemplates,
+    domains,
+    programs,
+    concepts,
+    skills,
+    objectives,
+    misconceptions,
+    lessonTemplates,
+    edges: graph.edges.length,
+    crossDomainPrograms,
+  };
+}
+
+function benchmarkPrerequisiteQueries(graph: KnowledgeGraph, nodeIds?: string[]): GraphBackendEvaluationReport["benchmark"] {
+  const benchmarkIds = uniqueKnowledgeStrings(
+    (nodeIds && nodeIds.length ? nodeIds : defaultBenchmarkNodeIds(graph)).filter((nodeId) => Boolean(nodeId)),
+  );
+  const start = Date.now();
+  const rows = benchmarkIds.map((nodeId) => {
+    const queryStart = Date.now();
+    const closure = prerequisiteClosure(graph, nodeId);
+    const elapsedMs = Date.now() - queryStart;
+    return {
+      nodeId,
+      elapsedMs,
+      closureSize: closure.length,
+      depth: prerequisiteDepth(graph, nodeId),
+    };
+  });
+  const elapsedMs = Date.now() - start;
+  const closureSizes = rows.map((row) => row.closureSize);
+  const queryTimes = rows.map((row) => row.elapsedMs);
+  return {
+    queries: rows.length,
+    elapsedMs,
+    maxQueryMs: queryTimes.length ? Math.max(...queryTimes) : 0,
+    averageQueryMs: averageNumbers(queryTimes),
+    maxClosureSize: closureSizes.length ? Math.max(...closureSizes) : 0,
+    averageClosureSize: averageNumbers(closureSizes),
+    maxPrerequisiteDepth: rows.length ? Math.max(...rows.map((row) => row.depth)) : 0,
+  };
+}
+
+function defaultBenchmarkNodeIds(graph: KnowledgeGraph): string[] {
+  return uniqueKnowledgeStrings([
+    ...graph.programMaps.flatMap((programMap) => [
+      ...(programMap.exitObjectiveIds || []),
+      ...(programMap.objectiveIds || []).slice(-2),
+      ...(programMap.skillIds || []).slice(-2),
+    ]),
+    ...graph.concepts.slice(-8).map((concept) => concept.id),
+    ...graph.skills.slice(-8).map((skill) => skill.id),
+  ]).slice(0, 96);
+}
+
+function prerequisiteDepth(graph: KnowledgeGraph, nodeId: string): number {
+  const index = buildKnowledgeIndex(graph);
+  const visited = new Set<string>();
+  const stack = (index.edgesByTo.get(nodeId) || [])
+    .filter((edge) => edge.type === "prerequisite")
+    .map((edge) => ({ id: edge.from, depth: 1 }));
+  let maxDepth = 0;
+
+  while (stack.length) {
+    const current = stack.pop();
+    if (!current || visited.has(current.id)) continue;
+    visited.add(current.id);
+    maxDepth = Math.max(maxDepth, current.depth);
+    stack.push(
+      ...(index.edgesByTo.get(current.id) || [])
+        .filter((edge) => edge.type === "prerequisite")
+        .map((edge) => ({ id: edge.from, depth: current.depth + 1 })),
+    );
+  }
+
+  return maxDepth;
+}
+
+function positiveNumber(value: unknown, fallback: number): number {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+function averageNumbers(values: number[]): number {
+  const finite = values.filter((value) => Number.isFinite(value));
+  if (!finite.length) return 0;
+  return roundNumber(finite.reduce((sum, value) => sum + value, 0) / finite.length);
+}
+
+function roundNumber(value: number): number {
+  return Math.round(value * 100) / 100;
 }
 
 function validateUniqueIds(path: string, items: EntityWithId[], errors: KnowledgeIssue[]): void {
