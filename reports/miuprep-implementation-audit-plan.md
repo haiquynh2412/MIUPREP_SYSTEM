@@ -843,3 +843,47 @@ Residual risk:
 
 - The benchmark is a local package-level traversal benchmark, not production traffic. Re-run this report after real beta graph workload and admin review queries are collected.
 - Graph DB remains intentionally deferred; this batch proves current conditions do not justify migration.
+
+### 2026-06-04 Batch 5 - Admin visibility for architecture and sync gates
+
+Scope completed:
+
+- Admin tracker now exposes the Graph backend evaluation gate directly in the Analytics workspace, including recommendation, criteria count, migration lock, rollback requirement, and per-trigger evidence.
+- Admin tracker now exposes the Learning Event Sync audit gate directly in the Analytics workspace, including duplicate idempotency keys, merge conflicts, missing learner/entity IDs, invalid timestamps, and feedback-only event counts.
+- The tracker reuses a memoized seed graph for beta readiness and backend evaluation, avoiding duplicate graph construction inside the component render path.
+
+Changed files:
+
+- `apps/miuprep-portal/src/components/BetaImplementationTracker.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm run lint -w miuprep-portal`
+- `npm test -w @miuprep/knowledge`
+- `npm test -w @miuprep/learning`
+- `npm run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm run lint -w miuprep-portal`
+- `npm test -w @miuprep/knowledge`
+- `npm test -w @miuprep/learning`
+- `npm run build -w miuprep-portal`
+
+Browser QA:
+
+- Started the portal at `http://127.0.0.1:5178`, logged in with the seeded admin account, opened `Analytics Quality`, and confirmed `Architecture and sync gates`, `Graph backend decision`, `Learning event sync`, `Graph backend triggers`, and `Sync import risk` render in the implementation tracker.
+- Browser console error log was empty during the check.
+- Dev server was stopped after QA; port `5178` returned stopped.
+
+Proof captured:
+
+- Admin Analytics now surfaces previously backend/report-only gates, so graph migration and event-sync risks are visible before beta operation rather than buried in package tests or generated reports.
+- Current Graph backend gate remains locked for migration and reports criteria count instead of implying approval.
+- Current Learning Event Sync gate reports raw sync risk counters and will move to `blocked` when core sync audit detects conflicts, missing IDs, or invalid timestamps.
+
+Residual risk:
+
+- The admin panel is a visibility layer; it does not yet provide one-click repair actions for sync conflicts or graph trigger investigation.
+- Screenshot capture in the in-app browser timed out once, so visual QA used DOM presence, layout bounding data, and console-log checks instead of a retained screenshot artifact.

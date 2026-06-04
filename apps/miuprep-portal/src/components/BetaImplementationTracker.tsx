@@ -7,8 +7,8 @@ import {
   type BetaTelemetryEvent,
 } from '@miuprep/beta';
 import type { LocalUser, SystemLog } from '@miuprep/db';
-import { createSeedKnowledgeGraph } from '@miuprep/knowledge';
-import type { LearningEventRecord } from '@miuprep/learning';
+import { buildGraphBackendEvaluationReport, createSeedKnowledgeGraph } from '@miuprep/knowledge';
+import { buildLearningEventSyncAuditReport, type LearningEventRecord } from '@miuprep/learning';
 import { buildLearnerSnapshot, normalizeAssignedTracks, type PortalTrackInfo, type PortalTrackId } from './UnifiedLearnerDashboard';
 
 type ProgramId = 'vn_math_6_9' | 'sat' | 'ielts' | 'cae' | 'cpe';
@@ -61,8 +61,8 @@ export default function BetaImplementationTracker({
   learningEvents,
   errorQuestionCount,
 }: BetaImplementationTrackerProps) {
+  const graph = useMemo(() => createSeedKnowledgeGraph(), []);
   const report = useMemo(() => {
-    const graph = createSeedKnowledgeGraph();
     const learners = users
       .filter((user) => user.role === 'student' && (user.status || 'approved') === 'approved')
       .map((user) => {
@@ -84,8 +84,10 @@ export default function BetaImplementationTracker({
       learners,
       telemetryEvents: [...adminLogs.map(logToTelemetryEvent), ...learningEvents.map(learningEventToTelemetryEvent)],
     });
-  }, [adminLogs, errorQuestionCount, importedExams, learningEvents, mathLessons, tracks, users]);
+  }, [adminLogs, errorQuestionCount, graph, importedExams, learningEvents, mathLessons, tracks, users]);
   const runPlan = useMemo(() => buildInternalBetaRunPlan(report), [report]);
+  const graphBackendEvaluation = useMemo(() => buildGraphBackendEvaluationReport(graph), [graph]);
+  const syncAudit = useMemo(() => buildLearningEventSyncAuditReport(learningEvents), [learningEvents]);
 
   return (
     <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-5xl mx-auto shadow-xl text-left space-y-6">
@@ -196,6 +198,61 @@ export default function BetaImplementationTracker({
               No recommendation quality issues detected.
             </div>
           )}
+        </div>
+      </Panel>
+
+      <Panel title="Architecture and sync gates" meta="Graph DB / event sync">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+          <AuditRow
+            title="Graph backend decision"
+            status={graphBackendEvaluation.status}
+            detail={`${graphBackendEvaluation.detail} Recommendation: ${readableId(graphBackendEvaluation.recommendation)}.`}
+            value={`${graphBackendEvaluation.graphDbCriteriaMet}/${graphBackendEvaluation.triggers.length}`}
+          />
+          <AuditRow
+            title="Learning event sync"
+            status={syncAudit.status}
+            detail={syncAudit.detail}
+            value={syncAudit.totalEvents}
+          />
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-3">
+          <MiniStat label="Migration" value={graphBackendEvaluation.migrationAllowed ? 'allowed' : 'locked'} />
+          <MiniStat label="Rollback" value={graphBackendEvaluation.rollbackPlanRequired ? 'required' : 'not needed'} />
+          <MiniStat label="Dupes" value={syncAudit.duplicateIdempotencyKeys} />
+          <MiniStat label="Conflicts" value={syncAudit.conflicts.length} />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3">
+          <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
+            <p className="text-xs font-black text-slate-100 m-0">Graph backend triggers</p>
+            <div className="space-y-2 mt-3">
+              {graphBackendEvaluation.triggers.map((trigger) => (
+                <div key={trigger.id} className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[11px] font-bold text-slate-300 m-0">{readableId(trigger.id)}</p>
+                    <p className="text-[10px] text-slate-500 leading-relaxed mt-1 mb-0">{trigger.evidence}</p>
+                  </div>
+                  <span className={`text-[10px] font-black uppercase shrink-0 ${trigger.met ? 'text-amber-400' : 'text-emerald-400'}`}>
+                    {trigger.met ? 'met' : 'clear'}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
+            <p className="text-xs font-black text-slate-100 m-0">Sync import risk</p>
+            <div className="grid grid-cols-2 gap-2 mt-3">
+              <MiniStat label="Missing learner" value={syncAudit.missingLearnerIds} />
+              <MiniStat label="Missing entity" value={syncAudit.missingEntityIds} />
+              <MiniStat label="Bad time" value={syncAudit.invalidTimestamps} />
+              <MiniStat label="Feedback only" value={syncAudit.feedbackOnlyEvents} />
+            </div>
+            {syncAudit.conflicts.length > 0 && (
+              <p className="text-[11px] text-rose-300 leading-relaxed mt-3 mb-0">
+                {syncAudit.conflicts.slice(0, 2).map((conflict) => readableId(conflict.reason)).join(', ')}
+              </p>
+            )}
+          </div>
         </div>
       </Panel>
 
@@ -503,6 +560,10 @@ function formatSignedPercent(value: number): string {
 
 function formatDays(value: number | null): string {
   return value === null ? '-' : `${value}d`;
+}
+
+function readableId(value: string): string {
+  return value.replace(/_/g, ' ');
 }
 
 function normalizeText(value: string): string {
