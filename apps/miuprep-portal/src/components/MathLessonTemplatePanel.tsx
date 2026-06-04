@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { LocalUser } from '@miuprep/db';
+import type { LearningEventRecord } from '@miuprep/learning';
 import {
   buildMathRemediationPlan,
   recommendMath9LessonTemplates,
@@ -10,7 +11,7 @@ import {
   type LessonTemplateStage,
 } from '../lib/lessonTemplates';
 import {
-  buildLearnerSnapshot,
+  buildLearnerSnapshotFromLiveEvents,
   normalizeAssignedTracks,
   type PortalTrackInfo,
 } from './UnifiedLearnerDashboard';
@@ -20,6 +21,7 @@ interface MathLessonTemplatePanelProps {
   tracks: PortalTrackInfo[];
   fishCoins: number;
   mouseTrapsCount: number;
+  learningEvents?: LearningEventRecord[];
   onOpenPractice: () => void;
   onOpenTutor: () => void;
 }
@@ -29,6 +31,7 @@ export default function MathLessonTemplatePanel({
   tracks,
   fishCoins,
   mouseTrapsCount,
+  learningEvents = [],
   onOpenPractice,
   onOpenTutor,
 }: MathLessonTemplatePanelProps) {
@@ -38,8 +41,8 @@ export default function MathLessonTemplatePanel({
     [assignedTrackIds, tracks],
   );
   const snapshot = useMemo(
-    () => buildLearnerSnapshot(currentUser, activeTracks, fishCoins, mouseTrapsCount),
-    [activeTracks, currentUser, fishCoins, mouseTrapsCount],
+    () => buildLearnerSnapshotFromLiveEvents(currentUser, activeTracks, learningEvents, fishCoins, mouseTrapsCount),
+    [activeTracks, currentUser, fishCoins, learningEvents, mouseTrapsCount],
   );
   const mathSummary = snapshot.programSummaries.find((summary) => summary.track.id === 'math');
   const mathNextStep = snapshot.learningPath.steps.find((step) => step.domainId === 'mathematics') || snapshot.learningPath.nextStep;

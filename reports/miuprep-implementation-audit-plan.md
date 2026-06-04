@@ -1214,3 +1214,41 @@ Residual risk:
 
 - Parent live evidence depends on linked child accounts sharing the same local event store in this portal prototype. Server-backed multi-account sync remains a later Phase C/product integration step.
 - Authenticated browser visual QA for student/parent/admin surfaces still needs a clean browser session or a runtime without the current input limitation.
+
+### 2026-06-04 Batch 14 - Live-first lesson template panels
+
+Scope completed:
+
+- Math lesson template recommendations now build their learner snapshot from live learning events first.
+- English Core lesson template recommendations now use the same live-first learner snapshot path.
+- Both course panels preserve the existing synthetic fallback for accounts with no valid tracked attempts.
+- App wiring now passes the refreshed student learning event list into the Math and English lesson template panels.
+
+Changed files:
+
+- `apps/miuprep-portal/src/App.tsx`
+- `apps/miuprep-portal/src/components/MathLessonTemplatePanel.tsx`
+- `apps/miuprep-portal/src/components/EnglishCoreLessonTemplatePanel.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+
+Proof captured:
+
+- Portal lint/build prove both recommendation panels compile after switching from synthetic snapshots to live event-derived snapshots.
+- Learning and beta tests confirm the importer and reroute/readiness model remain stable while lesson panels consume the same evidence path as student and parent summaries.
+
+Residual risk:
+
+- Lesson panels are live-first for recommendation context only. Non-SAT course surfaces still need tracked answer submission events before they can influence mastery through real attempts.
+- Authenticated browser visual QA remains outstanding because the in-app Browser login form still hits the virtual-clipboard input limitation.

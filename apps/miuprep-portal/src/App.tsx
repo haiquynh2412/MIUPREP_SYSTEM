@@ -2550,6 +2550,7 @@ export default function App() {
                     tracks={TRACKS}
                     fishCoins={fishCoins}
                     mouseTrapsCount={mouseTrapsCount}
+                    learningEvents={studentLearningEvents}
                     onOpenPractice={() => setStudentWorkspaceTab('practice')}
                     onOpenTutor={() => setStudentWorkspaceTab('tutor')}
                   />
@@ -2558,6 +2559,7 @@ export default function App() {
                     tracks={TRACKS}
                     fishCoins={fishCoins}
                     mouseTrapsCount={mouseTrapsCount}
+                    learningEvents={studentLearningEvents}
                     onOpenPractice={() => setStudentWorkspaceTab('practice')}
                     onOpenTutor={() => setStudentWorkspaceTab('tutor')}
                   />

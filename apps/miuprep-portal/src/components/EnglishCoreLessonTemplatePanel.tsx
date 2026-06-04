@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { LocalUser } from '@miuprep/db';
+import type { LearningEventRecord } from '@miuprep/learning';
 import {
   buildEnglishCoreRemediationPlan,
   recommendEnglishCoreLessonTemplates,
@@ -8,7 +9,7 @@ import {
   type LessonTemplateStage,
 } from '../lib/lessonTemplates';
 import {
-  buildLearnerSnapshot,
+  buildLearnerSnapshotFromLiveEvents,
   normalizeAssignedTracks,
   type PortalTrackInfo,
 } from './UnifiedLearnerDashboard';
@@ -18,6 +19,7 @@ interface EnglishCoreLessonTemplatePanelProps {
   tracks: PortalTrackInfo[];
   fishCoins: number;
   mouseTrapsCount: number;
+  learningEvents?: LearningEventRecord[];
   onOpenPractice: () => void;
   onOpenTutor: () => void;
 }
@@ -29,6 +31,7 @@ export default function EnglishCoreLessonTemplatePanel({
   tracks,
   fishCoins,
   mouseTrapsCount,
+  learningEvents = [],
   onOpenPractice,
   onOpenTutor,
 }: EnglishCoreLessonTemplatePanelProps) {
@@ -39,8 +42,8 @@ export default function EnglishCoreLessonTemplatePanel({
   );
   const activeEnglishTracks = activeTracks.filter((track) => ENGLISH_TRACK_IDS.has(track.id));
   const snapshot = useMemo(
-    () => buildLearnerSnapshot(currentUser, activeTracks, fishCoins, mouseTrapsCount),
-    [activeTracks, currentUser, fishCoins, mouseTrapsCount],
+    () => buildLearnerSnapshotFromLiveEvents(currentUser, activeTracks, learningEvents, fishCoins, mouseTrapsCount),
+    [activeTracks, currentUser, fishCoins, learningEvents, mouseTrapsCount],
   );
 
   const englishSummary = snapshot.programSummaries.find((summary) => ENGLISH_TRACK_IDS.has(summary.track.id));
