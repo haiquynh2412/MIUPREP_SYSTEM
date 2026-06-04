@@ -1001,3 +1001,38 @@ Proof captured:
 Residual risk:
 
 - This batch provides the core importer only. Portal/admin reroute panels still need to consume live stored learning events instead of synthetic snapshots before reroutes can be treated as live beta evidence.
+
+### 2026-06-04 Batch 9 - Live-first admin reroute source
+
+Scope completed:
+
+- Admin Intervention Queue now builds beta reroute learners from stored learning events first, using `buildStudentModelFromLearningEvents`.
+- Learner event matching accepts both `student.id` and `student.username`, then canonicalizes the event learner ID before importing the live model.
+- Reroute candidates use `stateKind: "live"` only when the event-derived model has at least one accepted attempt.
+- Synthetic learner snapshots remain the fallback when stored events are absent or contain only non-attempt/incomplete evidence.
+
+Changed files:
+
+- `apps/miuprep-portal/src/components/AdminInterventionQueue.tsx`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+
+Proof captured:
+
+- Portal lint/build prove the admin queue compiles against the new learning importer and the beta reroute API.
+- The reroute queue no longer forces all learners through synthetic `buildLearnerSnapshot` when live attempt events exist.
+- Evidence labeling remains conservative: live status requires accepted attempt evidence; otherwise the existing synthetic fallback stays labelled synthetic.
+
+Residual risk:
+
+- Browser visual QA was not repeated for this small data-source change because the previous in-app browser session hit a runtime clipboard/navigation limitation. A fresh browser session should still be used before product sign-off.
+- Live reroute usefulness still depends on student flows writing enough diagnostic/practice/review attempt events, not just daily-plan completion events.

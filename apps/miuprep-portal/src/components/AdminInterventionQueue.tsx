@@ -2,7 +2,7 @@ import { useMemo, type ReactNode } from 'react';
 import { buildRepairRerouteCandidates, type BetaLearner, type RepairRerouteCandidate } from '@miuprep/beta';
 import type { LocalUser, SystemLog } from '@miuprep/db';
 import { createSeedKnowledgeGraph } from '@miuprep/knowledge';
-import type { LearningEventRecord } from '@miuprep/learning';
+import { buildStudentModelFromLearningEvents, type LearningEventRecord } from '@miuprep/learning';
 import { loadStudentProgressSnapshot } from '../lib/studentProgress';
 import {
   buildLearnerSnapshot,
@@ -426,7 +426,7 @@ function buildQueue(input: {
   const misconceptions = buildRecurringMisconceptions(input.errorQuestions, input.learningEvents);
   const repairReroutes = buildRepairRerouteCandidates(
     createSeedKnowledgeGraph(),
-    buildBetaLearners(input.users, input.tracks, input.errorQuestions),
+    buildBetaLearners(input.users, input.tracks, input.errorQuestions, input.learningEvents),
   );
   const parentDigests = buildParentDigests(input.users, learners);
   const urgentCount =
@@ -451,6 +451,7 @@ function buildBetaLearners(
   users: Omit<LocalUser, 'passwordHash'>[],
   tracks: PortalTrackInfo[],
   errorQuestions: ErrorQuestionLike[],
+  learningEvents: LearningEventRecord[],
 ): BetaLearner[] {
   const activeErrors = errorQuestions.filter((question) => question.stage > 0);
   return users
@@ -458,12 +459,30 @@ function buildBetaLearners(
     .map((student) => {
       const assignedTrackIds = normalizeAssignedTracks(toLocalUser(student));
       const activeTracks = tracks.filter((track) => assignedTrackIds.includes(track.id));
+      const targetProgramIds = assignedTrackIds.map((trackId) => TRACK_TO_PROGRAM[trackId]);
+      const canonicalLearnerId = student.id || student.username;
+      const studentEvents = learningEvents
+        .filter((event) => event.learnerId === student.id || event.learnerId === student.username)
+        .map((event) => ({ ...event, learnerId: canonicalLearnerId }));
+      const liveModelReport = studentEvents.length
+        ? buildStudentModelFromLearningEvents(studentEvents, { learnerId: canonicalLearnerId, targetProgramIds })
+        : null;
+      if (liveModelReport && liveModelReport.acceptedAttempts > 0) {
+        return {
+          id: canonicalLearnerId,
+          username: student.username,
+          targetProgramIds,
+          state: liveModelReport.state,
+          stateKind: 'live' as const,
+        };
+      }
+
       const progress = readProgress(student.username);
       const snapshot = buildLearnerSnapshot(toLocalUser(student), activeTracks, progress.coins, Math.max(progress.traps, activeErrors.length));
       return {
-        id: student.id || student.username,
+        id: canonicalLearnerId,
         username: student.username,
-        targetProgramIds: assignedTrackIds.map((trackId) => TRACK_TO_PROGRAM[trackId]),
+        targetProgramIds,
         state: snapshot.state,
         stateKind: 'synthetic' as const,
       };
