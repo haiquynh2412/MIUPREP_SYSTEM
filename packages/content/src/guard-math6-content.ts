@@ -8,7 +8,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const workspaceRoot = findWorkspaceRoot(process.cwd());
-const rawPath = getPathArg('--raw', path.resolve(workspaceRoot, 'reports/content-quality/math6-raw-extract.json'));
+const rawPath = getPathArg('--raw', resolveDefaultMath6RawPath());
 const outputDir = getPathArg('--outDir', path.resolve(workspaceRoot, 'reports/content-quality'));
 
 const rawSources = readRawSources(rawPath);
@@ -139,6 +139,25 @@ function entriesByCount(record: Record<string, number>): Array<[string, number]>
 function getPathArg(name: string, fallback: string): string {
   const value = getArgValue(name);
   return value ? path.resolve(workspaceRoot, value) : fallback;
+}
+
+function resolveDefaultMath6RawPath(): string {
+  const richRawPath = path.resolve(workspaceRoot, 'reports/content-quality/math6-rich-raw-extract.json');
+  const plainRawPath = path.resolve(workspaceRoot, 'reports/content-quality/math6-raw-extract.json');
+  return shouldUseRichRawPath(richRawPath, plainRawPath) ? richRawPath : plainRawPath;
+}
+
+function shouldUseRichRawPath(richRawPath: string, plainRawPath: string): boolean {
+  if (!fs.existsSync(richRawPath)) return false;
+  try {
+    const richSources = readRawSources(richRawPath);
+    const richSourcesWithText = richSources.filter((source) => String(source.text || '').trim().length > 0).length;
+    if (!fs.existsSync(plainRawPath)) return richSourcesWithText > 0;
+    const plainSources = readRawSources(plainRawPath);
+    return richSources.length >= plainSources.length && richSourcesWithText >= Math.ceil(plainSources.length * 0.9);
+  } catch {
+    return false;
+  }
 }
 
 function getArgValue(name: string): string {

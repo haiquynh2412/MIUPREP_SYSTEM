@@ -1084,14 +1084,14 @@ Verification passed, round 2:
 
 Proof captured:
 
-- Math 6 adapter still converts 1,270 items with `adapter.pass: true`.
-- Display audit reports 766/1,270 items ready for display, 465 generated SVG geometry figures, 0 prompt control/replacement characters, 477 formula-review blockers, 2 original-image blockers, and 79 text-encoding blockers.
+- Superseded by Batch 21: current Math 6 adapter converts 1,549 items with `adapter.pass: true`.
+- Superseded by Batch 21: current display audit reports 926/1,549 items ready for display, 539 generated SVG geometry figures, 0 prompt control/replacement characters, 593 formula-review blockers, 2 original-image blockers, and 44 text-encoding blockers.
 - Content guard reports 558 blockers and 20 warnings while preserving the pass/fail distinction: adapter errors fail the guard, display blockers remain visible triage items.
 
 Residual risk:
 
-- Math 6 is not fully display-ready. The 477 Word/OLE formula-review blockers require recovering equations from original files or a better Word formula extraction path.
-- The 79 legacy font/encoding blockers need source-specific Vietnamese/font conversion review before student-facing release.
+- Math 6 is not fully display-ready. The 593 Word/OLE formula-review blockers require recovering equations from original files or a better Word formula extraction path.
+- The 44 legacy font/encoding blockers need source-specific Vietnamese/font conversion review before student-facing release.
 - The 2 original-image blockers still need original diagrams captured or manually recreated.
 
 ### 2026-06-04 Batch 11 - Student live learning event capture
@@ -1435,7 +1435,7 @@ Scope completed:
 - Added Math 6 raw-source catalog helper that runs the content guard and passes only `displayReadyItemIds` into the learner-facing catalog.
 - Added Math diagnostic/practice selectors that filter by program, topic, level, concept, skill, difficulty, and attempted item IDs.
 - Added TCVN3 legacy Vietnamese text decoding during Math 6 prompt normalization to reduce encoding blockers where source text uses old font mappings.
-- Synced portal content coverage snapshot so Admin Content Repair Queue can show `vn_math_6` as a guarded `watch` source with 783/1270 display-ready questions, 467 generated figures, and remaining blocker counts.
+- Synced portal content coverage snapshot so Admin Content Repair Queue can show `vn_math_6` as a guarded `watch` source; Batch 21 resync updates this to 926/1549 display-ready questions, 539 generated figures, and remaining blocker counts.
 
 Changed files:
 
@@ -1468,13 +1468,13 @@ Verification passed, round 2:
 
 Proof captured:
 
-- Math 6 guard still reports adapter pass with 1,270 converted items and 783 display-ready learner-facing items.
+- Math 6 guard now reports adapter pass with 1,549 converted items and 926 display-ready learner-facing items after the Batch 21 resync.
 - Standard tests now prove legacy TCVN3 text is decoded and blocked Math 6 items are excluded from the default learning catalog.
 - Portal lint/build prove the new unified content coverage snapshot shape compiles in admin surfaces.
 
 Residual risk:
 
-- 477 Math 6 items still require formula review because Word/OLE formula payloads are not recoverable from the current plain-text extract alone.
+- 593 Math 6 items still require formula review because Word/OLE formula payloads are not recoverable from the current plain-text extract alone.
 - 2 Math 6 items still require original-image or manually generated figure review.
 - 15 Math 6 items still require encoding review after automatic TCVN3 decoding; these need source-specific cleanup.
 - CAE OCR/content expansion artifacts are still dirty in the worktree and should be committed only in a separate CAE-focused batch after their own guard run.
@@ -1527,3 +1527,85 @@ Residual risk:
 - English guard warnings remain: 64 `blankIndex` warnings and 48 transcript warnings, all non-blocking.
 - OCR/rendered-page work artifacts under `reports/content-quality/cae-ocr`, `cae-other-focused-audit`, and `cae6-focused-audit` are intentionally not committed in this batch.
 - The remaining Knowledge Graph update still waits for real beta evidence rather than seeded or synthetic learner data.
+
+### 2026-06-04 Batch 21 - Real QA, lesson-template events, and Math 6 resync
+
+Scope completed:
+
+- Re-ran portal verification as real browser QA on the local app instead of comparing only against the audit plan.
+- Added learner telemetry for Math and English Core lesson-template actions: clicking `Open practice` or `Ask AI Tutor` now writes a `lesson_template_action` learning event.
+- Kept lesson-template action events out of mastery scoring by omitting scored-attempt fields such as `correct`.
+- Added portal rendering support for recovered Math formula tokens in learner/admin question prompts, so future rich Math 6 formula assets can display as inline images.
+- Updated Math 6 importer/guard/audit defaults so they prefer `math6-rich-raw-extract.json` when present, while falling back to the current plain raw extract.
+- Synced Math 6 reports and portal quality snapshot to the current actual guard output: 1,549 imported items, 926 display-ready items, 593 formula blockers, 2 image blockers, 44 encoding blockers, and 539 generated geometry figures.
+- Found and removed a partial one-source `math6-rich-raw-extract.json` created by a timed-out rich-extraction test before re-running Math 6 export/audit/sync from the production plain raw extract.
+- Hardened Math 6 raw selection so export, guard, portal snapshot sync, and display audit use rich raw only when it is sufficiently complete; partial rich raw files now fall back to the production plain raw extract.
+
+Changed files:
+
+- `apps/miuprep-portal/src/App.tsx`
+- `apps/miuprep-portal/src/components/MathLessonTemplatePanel.tsx`
+- `apps/miuprep-portal/src/components/EnglishCoreLessonTemplatePanel.tsx`
+- `apps/miuprep-portal/src/lib/studentProgress.ts`
+- `apps/miuprep-portal/src/data/contentQualitySnapshot.ts`
+- `packages/content/src/export-math6-content.ts`
+- `packages/content/src/guard-math6-content.ts`
+- `packages/content/src/math6-content-guard-report.ts`
+- `packages/content/src/math6-import.ts`
+- `packages/content/src/standard.test.ts`
+- `packages/content/src/sync-portal-content-quality-snapshot.ts`
+- `scripts/audit-math6-display.js`
+- `MIUPREP_IMPLEMENTATION_PLAN.md`
+- `reports/content-quality/math6-content-audit.md`
+- `reports/content-quality/math6-content-guard.json`
+- `reports/content-quality/math6-content-issues.csv`
+- `reports/content-quality/math6-display-audit.json`
+- `reports/content-quality/math6-display-audit.md`
+- `reports/content-quality/math6-display-ready-preview.json`
+- `reports/content-quality/math6-question-bank-audit.md`
+- `reports/content-quality/math6-question-bank-coverage.csv`
+- `reports/content-quality/math6-question-bank-preview.json`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed, round 1:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd test -w @miuprep/learning`
+- Practical Playwright QA on `http://127.0.0.1:5181` with seeded student account and real browser localStorage events.
+
+Verification passed, round 2:
+
+- `npm.cmd run lint -w miuprep-portal`
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd test -w @miuprep/learning`
+- `npm.cmd test -w @miuprep/beta`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd run build`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+- `npm.cmd run export:math6 -w @miuprep/content`
+- `npm.cmd run audit:math6-display -w @miuprep/content`
+- `npm.cmd run sync:portal-quality -w @miuprep/content`
+- Partial-rich fallback regression: copied a 3-source rich extract into the default rich path, then re-ran `guard:math6` and `sync:portal-quality`; output stayed at 1,549 imported / 926 display-ready.
+- Headless Playwright QA on `http://127.0.0.1:5181` seeded an approved Math+IELTS student, clicked the real Courses UI, and read the resulting browser localStorage event log.
+
+Browser proof captured:
+
+- Student Courses produced two real `lesson_template_action` events after clicking a Math `Open practice` action and an English Core `Ask AI Tutor` action.
+- In-app browser UI flow separately confirmed registration, admin approval, IELTS assignment, Math+IELTS dashboard visibility, and both Courses actions moving to the expected Practice/Tutor surfaces.
+- Captured event proof: Math event used `programId: vn_math_6_9`, `domainId: mathematics`, `action: open_practice`, `templateId: math9.algebra_transform.repair`, `entityType: lesson_template`, `sourceSurface: math_lesson_template_panel`, and no `correct` field.
+- Captured event proof: English event used `programId: ielts`, `domainId: english_core`, `action: open_tutor`, `templateId: eng.core.vocab_collocation.precision`, `entityType: lesson_template`, `sourceSurface: english_core_lesson_template_panel`, and no `correct` field.
+- Browser QA reported 0 page errors and 0 console errors.
+
+Math 6 proof captured:
+
+- Sequential `export:math6` reported 1,549 extracted/converted items from the current raw extract on two consecutive runs.
+- Sequential `audit:math6-display` reported 926 display-ready items, 593 formula blockers, 2 image blockers, 44 encoding blockers, 539 generated figures, and 0 prompt control characters on two consecutive runs after cleanup.
+- `sync:portal-quality` updated Admin content coverage for `vn_math_6` to 926/1,549 display-ready with 623 gated items.
+- Rich fallback test reported `{ guardQuestions: 1549, guardReady: 926, snapshotHasPlainFull: true }` while a partial rich extract existed at the default path.
+
+Residual risk:
+
+- Word/OLE formula recovery is not complete. A limited rich-extraction run produced only a partial one-source rich extract before timeout; that artifact was removed from the production path, so formula recovery remains a separate content-data task.
+- Non-SAT course-template actions are now captured as workflow telemetry only. Full non-SAT mastery still needs scored answer-submission events in the real practice engine.
+- Knowledge Graph update from real beta evidence remains intentionally pending until real learner data is available.

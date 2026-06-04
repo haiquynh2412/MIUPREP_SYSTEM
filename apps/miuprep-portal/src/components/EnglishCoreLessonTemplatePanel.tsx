@@ -8,6 +8,7 @@ import {
   type EnglishCoreRemediationPlan,
   type LessonTemplateStage,
 } from '../lib/lessonTemplates';
+import type { LessonTemplateAction } from '../lib/studentProgress';
 import {
   buildLearnerSnapshotFromLiveEvents,
   normalizeAssignedTracks,
@@ -22,6 +23,7 @@ interface EnglishCoreLessonTemplatePanelProps {
   learningEvents?: LearningEventRecord[];
   onOpenPractice: () => void;
   onOpenTutor: () => void;
+  onTemplateAction?: (template: EnglishCoreLessonTemplate, action: LessonTemplateAction) => void;
 }
 
 const ENGLISH_TRACK_IDS = new Set(['ielts', 'cpe', 'cae', 'sat']);
@@ -34,6 +36,7 @@ export default function EnglishCoreLessonTemplatePanel({
   learningEvents = [],
   onOpenPractice,
   onOpenTutor,
+  onTemplateAction,
 }: EnglishCoreLessonTemplatePanelProps) {
   const assignedTrackIds = useMemo(() => normalizeAssignedTracks(currentUser), [currentUser]);
   const activeTracks = useMemo(
@@ -149,6 +152,7 @@ export default function EnglishCoreLessonTemplatePanel({
           remediationPlan={remediationPlan}
           onOpenPractice={onOpenPractice}
           onOpenTutor={onOpenTutor}
+          onTemplateAction={onTemplateAction}
         />
       </div>
     </section>
@@ -161,12 +165,14 @@ function EnglishTemplateDetail({
   remediationPlan,
   onOpenPractice,
   onOpenTutor,
+  onTemplateAction,
 }: {
   template: EnglishCoreLessonTemplate;
   matchReason: string;
   remediationPlan: EnglishCoreRemediationPlan;
   onOpenPractice: () => void;
   onOpenTutor: () => void;
+  onTemplateAction?: (template: EnglishCoreLessonTemplate, action: LessonTemplateAction) => void;
 }) {
   return (
     <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-5 space-y-5">
@@ -179,14 +185,20 @@ function EnglishTemplateDetail({
         <div className="flex gap-2 shrink-0">
           <button
             type="button"
-            onClick={onOpenPractice}
+            onClick={() => {
+              onTemplateAction?.(template, 'open_practice');
+              onOpenPractice();
+            }}
             className="px-4 py-2 rounded-xl border border-sky-400/40 bg-sky-500 text-slate-950 text-xs font-black uppercase tracking-wider hover:bg-sky-400 transition-colors"
           >
             Open practice
           </button>
           <button
             type="button"
-            onClick={onOpenTutor}
+            onClick={() => {
+              onTemplateAction?.(template, 'open_tutor');
+              onOpenTutor();
+            }}
             className="px-4 py-2 rounded-xl border border-slate-700 bg-slate-950 text-slate-200 text-xs font-black uppercase tracking-wider hover:border-sky-400/40 transition-colors"
           >
             Ask AI Tutor

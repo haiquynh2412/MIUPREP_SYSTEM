@@ -4,16 +4,16 @@ const path = require('node:path');
 const workspaceRoot = path.resolve(__dirname, '..');
 const reportDir = path.join(workspaceRoot, 'reports', 'content-quality');
 const previewPath = path.join(reportDir, 'math6-question-bank-preview.json');
-const rawPath = path.join(reportDir, 'math6-raw-extract.json');
+const rawPath = resolveDefaultMath6RawPath();
 const jsonOutPath = path.join(reportDir, 'math6-display-audit.json');
 const mdOutPath = path.join(reportDir, 'math6-display-audit.md');
 
 const preview = JSON.parse(fs.readFileSync(previewPath, 'utf8').replace(/^\uFEFF/, ''));
 const rawExtract = JSON.parse(fs.readFileSync(rawPath, 'utf8').replace(/^\uFEFF/, ''));
 const items = preview.items || [];
-const rawSources = rawExtract.sources || [];
+const rawSources = Array.isArray(rawExtract) ? rawExtract : rawExtract.sources || [];
 
-const EXERCISE_HEADER_RE = /(?:^|[\r\n\f])\s*((?:B(?:a|[\u00e0\u00c0])i|C(?:a|[\u00e2\u00c2])u)(?:\s+t(?:a|[\u1ead\u1eac])p)?\s*\d+[A-Za-z\u00c0-\u1ef90-9\s]*[:.)-]?)/giu;
+const EXERCISE_HEADER_RE = /(?:^|[\r\n\f]|[^\p{L}])\s*((?:B[\p{L}\u00a0]{0,3}i|C[\p{L}\u00a0]{0,3}u)(?:\s+t[\p{L}\u00a0]{0,3}p)?\s*\d+[A-Za-z\u00c0-\u1ef90-9\s]*[:.)-]?)/giu;
 const CONTROL_OR_REPLACEMENT_RE = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\ufffd]/;
 const MOJIBAKE_RE = /(?:\u00c3|\u00c4|\u00c5|\u00c2|\u00c6|\u00e1[\u00ba\u00bb])/;
 const LEGACY_FONT_RE = /[\u00a9\u00aa\u00ad\u00ae\u00b5\u00b8\u00c5\u00cf\u00d7\u00d8\u00de\u00e7\u00f1\u00f8\u00fc]/;
@@ -65,8 +65,8 @@ const summary = {
   needsTextEncodingReview: issueRows.filter((row) => row.needsTextEncodingReview).length,
   generatedFigures: audits.filter((row) => row.flags.generatedFigure).length,
   promptControlCharacters: audits.filter((row) => row.flags.controlCharacters).length,
-  rawSourcesWithOleMarkers: rawSources.filter((source) => countMatches(source.text, /\u0001/g) > 0).length,
-  rawOleMarkersTotal: rawSources.reduce((sum, source) => sum + countMatches(source.text, /\u0001/g), 0),
+  rawSourcesWithOleMarkers: rawSources.filter((source) => getRawOleMarkerCount(source) > 0).length,
+  rawOleMarkersTotal: rawSources.reduce((sum, source) => sum + getRawOleMarkerCount(source), 0),
   byTopic: summarizeBy(issueRows, 'topicId'),
   topFormulaSources: topSources(issueRows, (row) => row.needsFormulaReview),
   topImageSources: topSources(issueRows, (row) => row.needsImageReview),
@@ -90,8 +90,8 @@ function extractRawBlocks(text) {
   const matches = [...normalized.matchAll(EXERCISE_HEADER_RE)];
   return matches
     .map((match, index) => {
-      const start = match.index || 0;
-      const next = matches[index + 1]?.index ?? normalized.length;
+      const start = getExerciseHeaderStart(match);
+      const next = matches[index + 1] ? getExerciseHeaderStart(matches[index + 1]) : normalized.length;
       const raw = normalized.slice(start, next);
       const cleaned = normalizePrompt(raw);
       return {
@@ -101,6 +101,13 @@ function extractRawBlocks(text) {
       };
     })
     .filter((block) => block.cleaned.length >= 24 && block.cleaned.length <= 2600);
+}
+
+function getExerciseHeaderStart(match) {
+  const fullMatch = match[0] || '';
+  const header = match[1] || '';
+  const offset = header ? fullMatch.indexOf(header) : 0;
+  return (match.index || 0) + Math.max(0, offset);
 }
 
 function getBlockIndex(id) {
@@ -144,6 +151,36 @@ function normalizeSearchText(value) {
 
 function countMatches(value, regex) {
   return (String(value || '').match(regex) || []).length;
+}
+
+function getRawOleMarkerCount(source) {
+  return typeof source.rawOleMarkerCount === 'number' ? source.rawOleMarkerCount : countMatches(source.text, /\u0001/g);
+}
+
+function resolveDefaultMath6RawPath() {
+  const richRawPath = path.join(reportDir, 'math6-rich-raw-extract.json');
+  const plainRawPath = path.join(reportDir, 'math6-raw-extract.json');
+  return shouldUseRichRawPath(richRawPath, plainRawPath) ? richRawPath : plainRawPath;
+}
+
+function shouldUseRichRawPath(richRawPath, plainRawPath) {
+  if (!fs.existsSync(richRawPath)) return false;
+  try {
+    const richSources = readRawSources(richRawPath);
+    const richSourcesWithText = richSources.filter((source) => String(source.text || '').trim().length > 0).length;
+    if (!fs.existsSync(plainRawPath)) return richSourcesWithText > 0;
+    const plainSources = readRawSources(plainRawPath);
+    return richSources.length >= plainSources.length && richSourcesWithText >= Math.ceil(plainSources.length * 0.9);
+  } catch {
+    return false;
+  }
+}
+
+function readRawSources(filePath) {
+  const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, ''));
+  if (Array.isArray(parsed)) return parsed;
+  if (Array.isArray(parsed.sources)) return parsed.sources;
+  return [];
 }
 
 function summarizeBy(rows, key) {

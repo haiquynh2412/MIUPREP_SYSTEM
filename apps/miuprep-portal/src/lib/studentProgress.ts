@@ -129,6 +129,23 @@ export interface ErrorRetryLearningEventInput {
   occurredAt?: string;
 }
 
+export type LessonTemplateAction = 'open_practice' | 'open_tutor';
+
+export interface LessonTemplateActionLearningEventInput {
+  username: string;
+  programId: string;
+  domainId: string;
+  templateId: string;
+  templateTitle: string;
+  conceptIds?: string[];
+  skillIds?: string[];
+  estimatedMinutes?: number;
+  masteryTarget?: number;
+  action: LessonTemplateAction;
+  sourceSurface: 'math_lesson_template_panel' | 'english_core_lesson_template_panel';
+  occurredAt?: string;
+}
+
 export type ErrorNotebookRetryStatusCode = 'new' | 'repairing' | 'prerequisite' | 'stable';
 export type ErrorNotebookV2Type = 'knowledge' | 'reading_prompt' | 'calculation' | 'time_strategy';
 
@@ -413,6 +430,35 @@ export function buildDailyLoopStepLearningEvent(input: DailyLoopStepLearningEven
       entityType: 'daily_plan_step',
       entityId: `daily-plan-${input.username}-${dateKey}-${input.stepId}`,
       source: 'miuprep_portal',
+    },
+  );
+}
+
+export function buildLessonTemplateActionLearningEvent(input: LessonTemplateActionLearningEventInput): LearningEventRecord {
+  const occurredAt = input.occurredAt || new Date().toISOString();
+  const conceptIds = normalizeLearningIds(input.conceptIds, fallbackLessonConceptId(input.domainId));
+  const skillIds = normalizeLearningIds(input.skillIds, fallbackLessonSkillId(input.domainId));
+
+  return buildLearningEvent(
+    'lesson_template_action',
+    {
+      programId: input.programId,
+      domainId: input.domainId,
+      conceptIds,
+      skillIds,
+      action: input.action,
+      templateId: input.templateId,
+      templateTitle: input.templateTitle,
+      estimatedMinutes: input.estimatedMinutes || 0,
+      masteryTarget: input.masteryTarget || 0,
+      sourceSurface: input.sourceSurface,
+    },
+    {
+      learnerId: input.username,
+      entityType: 'lesson_template',
+      entityId: input.templateId,
+      occurredAt,
+      source: 'miuprep_portal_lesson_template',
     },
   );
 }
@@ -991,6 +1037,14 @@ function normalizeLearningIds(values: string[] | undefined, fallback: string): s
     .map((value) => String(value || '').trim())
     .filter(Boolean);
   return normalized.length ? [...new Set(normalized)] : [fallback];
+}
+
+function fallbackLessonConceptId(domainId: string): string {
+  return domainId === 'english_core' ? 'eng.core_skill' : 'math.algebraic_expression';
+}
+
+function fallbackLessonSkillId(domainId: string): string {
+  return domainId === 'english_core' ? 'eng.academic_reading' : 'math.solve_problem';
 }
 
 function fallbackConceptId(domainId: string, question: ErrorNotebookQuestion): string {

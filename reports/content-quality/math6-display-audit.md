@@ -1,15 +1,15 @@
 # Math 6 Display Audit
 
-Generated at: 2026-06-04T08:10:45.837Z
+Generated at: 2026-06-04T12:42:29.773Z
 
 ## Summary
 
-- Total imported items: 1270
-- Ready for display without detected issues: 766
-- Needs formula review: 477
+- Total imported items: 1549
+- Ready for display without detected issues: 926
+- Needs formula review: 593
 - Needs image review: 2
-- Needs text encoding review: 79
-- Generated SVG figures: 465
+- Needs text encoding review: 44
+- Generated SVG figures: 539
 - Prompt control/replacement characters still present: 0
 - Raw sources with Word/OLE formula markers: 61
 - Raw Word/OLE formula markers total: 2811
@@ -18,34 +18,34 @@ Generated at: 2026-06-04T08:10:45.837Z
 
 | Topic | Total | Ready | Formula | Image | Encoding |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| math6.geometry.points_lines_segments | 411 | 256 | 146 | 0 | 10 |
-| math6.number.natural_operations | 201 | 105 | 85 | 0 | 62 |
-| math6.number.divisibility | 124 | 95 | 28 | 0 | 2 |
-| math6.number.sets_natural_numbers | 115 | 80 | 33 | 1 | 2 |
-| math6.advanced.divisibility_hsg | 92 | 42 | 49 | 1 | 0 |
-| math6.number.prime_factor_gcd_lcm | 85 | 70 | 14 | 0 | 1 |
-| math6.geometry.angles | 59 | 27 | 32 | 0 | 0 |
-| math6.number.integers_intro | 54 | 44 | 9 | 0 | 1 |
-| math6.number.powers_order_operations | 36 | 24 | 11 | 0 | 1 |
-| math6.number.decimal_percent | 35 | 15 | 20 | 0 | 0 |
+| math6.geometry.points_lines_segments | 455 | 298 | 151 | 0 | 8 |
+| math6.number.natural_operations | 252 | 142 | 94 | 0 | 28 |
+| math6.number.divisibility | 157 | 115 | 41 | 0 | 2 |
+| math6.number.sets_natural_numbers | 123 | 82 | 38 | 1 | 3 |
+| math6.number.prime_factor_gcd_lcm | 115 | 94 | 20 | 0 | 1 |
+| math6.advanced.divisibility_hsg | 113 | 52 | 60 | 1 | 0 |
+| math6.geometry.angles | 89 | 31 | 58 | 0 | 0 |
+| math6.number.integers_intro | 68 | 52 | 15 | 0 | 1 |
+| math6.number.powers_order_operations | 47 | 29 | 17 | 0 | 1 |
+| math6.number.fraction_foundation | 45 | 7 | 38 | 0 | 0 |
+| math6.number.decimal_percent | 42 | 16 | 26 | 0 | 0 |
 | math6.number.fraction_operations | 29 | 0 | 29 | 0 | 0 |
-| math6.number.fraction_foundation | 20 | 5 | 15 | 0 | 0 |
-| math6.number.fraction_three_basic_problems | 9 | 3 | 6 | 0 | 0 |
+| math6.number.fraction_three_basic_problems | 14 | 8 | 6 | 0 | 0 |
 
 ## Top Formula Sources
 
 | Source | Count |
 | --- | ---: |
-| Bai tap danh cho hoc sinh lop 6 tu hoc.doc | 82 |
+| Bai tap danh cho hoc sinh lop 6 tu hoc.doc | 192 |
 | 30DeHSGToan6.doc | 62 |
 | 10 de-kiem-tra-thu-ki-II-mon-toan6.doc | 49 |
-| bai-tap-toan-lop-6-so-chinh-phuong.doc | 28 |
-| Bo - De-KS-daunam-2011-2012-kimDongTHCS-Toan.DOC | 23 |
+| bai-tap-toan-lop-6-so-chinh-phuong.doc | 31 |
+| Bo - De-KS-daunam-2011-2012-kimDongTHCS-Toan.DOC | 24 |
 | bai-tap-toan-lop-6-so-nguyen.doc | 21 |
 | Bo - de-on-tap-hoc-ki-2-mon-toan-lop-6-nam-hoc-2014-2015.doc | 21 |
 | Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc | 13 |
 | de-kiem-tra-hoc-ki-1-mon-toan-lop-6.doc | 12 |
-| chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen.doc | 10 |
+| chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen.doc | 11 |
 | chuyên-đề-hỗn-số-số-thập-phân-phần-trăm.doc | 10 |
 | Ôn thi cuối kì 1/79878795786988.doc | 10 |
 | de-kiem-tra-hoc-ki-1-mon-toan-lop-6-nam-2014-2015-huyen-binh-giang.doc | 9 |
@@ -67,11 +67,9 @@ Generated at: 2026-06-04T08:10:45.837Z
 
 | Source | Count |
 | --- | ---: |
-| Bai tap danh cho hoc sinh lop 6 tu hoc.doc | 66 |
-| Toan 6 ki 1.doc | 6 |
+| Bai tap danh cho hoc sinh lop 6 tu hoc.doc | 37 |
 | de-ktra-giua-hk-mon-toan-lop-6-truong-nhan-my.doc | 2 |
-| Chuyên đề. Tia. Hai tia đối nhau.doc | 1 |
-| Chuyên đề. Trung điểm đoạn thẳng.doc | 1 |
+| Toan 6 ki 1.doc | 2 |
 | de-thi-khao-sat-chat-luong-dot-1-mon-toan-lop-6-truong-thcs-ngu-lao-nam-2015-2016.doc | 1 |
 | Luy thua/Chuyên đề 3. Lũy thừa(4 sửa).docx | 1 |
 | Ôn thi cuối kì 1/79878795786988.doc | 1 |
@@ -100,15 +98,15 @@ Generated at: 2026-06-04T08:10:45.837Z
 
 ### Encoding Review
 
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 1: T×m c¸c gi¸ trÞ nguyªn cña n ®Ó ph©n sè A = cã gi¸ trÞ lµ sè nguyªn.
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 2: Chøng tá r»ng lµ ph©n sè tèi gi¶n.
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 3: Cho a lµ mét sè nguyªn cã d¹ng: a = 3b + 7. Hái a cã thÓ nhËn gi¸ trÞ nµo? a = 11; a = 2002; a = 11570; a = 22789; a = 29563; a = 299537.
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 4: Cho a) TÝnh A. b) A cã chia hÕt cho 2, cho 3, cho 5 kh«ng? c) A cã bao nhiªu ­íc tù nhiªn. Bao nhiªu ­íc nguyªn?
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 5: Cho vµ. So s¸nh A vµ B.
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 6: T×m x Z: 1) = 2) = 3) = vµ x < y 4) = vµ x < 0 < y
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 7: Cho vµ ( Víi n ( N, ). CMR: a, b lµ hai sè ntè cïng nhau.
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.sets_natural_numbers: Bµi 1: Thùc hiÖn phÐp tÝnh 1.(-3).5 – (-4).(6) + (-2)3 2. -17 – (-5).6 + (12 – 17)2 3. 15.(-6) + (-6).85 – (15).11 4. -32 -2.[23.(-3) – (-5 – 7).3] 5. 74.(-41) – 41.26 + (-2)3.[49 + (-2)2] 6 -8.(21 – 13 +72) + 80.(-21 + 76 – 132) 7. [15:(-3) + 40:(-8)] -3.(16:
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: bµi 36: Thùc hiÖn phÐp tÝnh. a) [( 286: 11 + 7. 2 ). 3 – 119 ]. 2007 + 1. b) ( 21999 + 22004 ): ( 21990. 29 ) c) 1 + 6 + 11 +... + 2001 + 2006. d) ( 225 _ 72 ). ( 225 – 102 ). ( 225 – 92 ). ( 225 – 152 ).
 - Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 8: Cho. So s¸nh A víi 1?
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 9: T×m x, y biÕt: = vµ x - y = 5
 - Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 10: Cho. So s¸nh A víi 1?
-- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 11: T×m sè tù nhiªn n biÕt:
 - Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 13: Cho. Chøng minh: S ( 1
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: BÀI TẬP 31: T×m x, y, z sao cho:
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: bµi 27: TÝnh nhanh: a) b)
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: Bài 46. Chứng minh đẳng thức: (a, b ( Z) a) (a – b) – (a + b) + (2a – b) – (2a – 3b) = 0 b) (a + b – c) – (a – b + c) + (b + c – a) – (b – a – c) = 2b phÇn ii: h×nh häc
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: Bµi tËp 3: a) BiÕt a – 5b 17 CMR 10a + b 17 (a, b ( N) b) BiÕt 3a + 2b 17 CMR 10a + b 17 (a, b ( N)
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: Bµi tËp 11: Mét thiÕt bÞ ®iÖn tö 605 ph¸t tiÕng bÝp; chiÒu thø 2 625 bÝp lóc 10h s¸ng c¶ 2 cïng kªu hái lóc mÊy giê c¶ 2 cïng kªu (10h 31p)
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: Bµi tËp 13: HiÖu b»ng 84; ¦CLN b»ng 28; n»m trong kho¶ng (300; 440) a= 392; b= 308
+- Bai tap danh cho hoc sinh lop 6 tu hoc.doc / math6.number.natural_operations: Bµi tËp 16: (a, b) = 15; [a; b] = 2100(a, b) (15; 31500) (45; 10500) (60; 7875) (150; 4500) (180; 2625) (315; 1500) (375; 1260) (420; 1125)

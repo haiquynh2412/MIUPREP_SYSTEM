@@ -75,7 +75,7 @@ export interface UnifiedContentCoverageSnapshot {
 
 export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
   "schemaVersion": "english_content_guard_v1",
-  "generatedAt": "2026-06-04T10:23:17.466Z",
+  "generatedAt": "2026-06-04T13:51:00.334Z",
   "sourceCommand": "npm.cmd run sync:portal-quality -w @miuprep/content",
   "qualitySummary": {
     "tests": 95,
@@ -303,15 +303,15 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
 
 export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
   "schemaVersion": "miuprep_content_coverage_v1",
-  "generatedAt": "2026-06-04T10:23:17.466Z",
+  "generatedAt": "2026-06-04T13:51:00.334Z",
   "programs": [
     {
       "programId": "vn_math_6",
       "label": "VN Math 6 Local Sources",
-      "sourceQuestions": 1270,
-      "importedQuestions": 1270,
-      "readyQuestions": 783,
-      "blockerItems": 487,
+      "sourceQuestions": 1549,
+      "importedQuestions": 1549,
+      "readyQuestions": 926,
+      "blockerItems": 623,
       "warningItems": 20,
       "coverageStatus": "watch",
       "adapterPass": true,
@@ -325,7 +325,7 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       },
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6",
       "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math6-raw-extract.json",
-      "note": "783/1270 questions are display-ready; 467 geometry SVG figures generated; 487 items remain behind formula/image/encoding gates."
+      "note": "926/1549 questions are display-ready; 539 geometry SVG figures generated; 623 items remain behind formula/image/encoding gates."
     },
     {
       "programId": "vn_math_9",

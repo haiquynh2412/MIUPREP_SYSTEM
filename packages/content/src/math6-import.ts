@@ -12,7 +12,22 @@ export interface Math6RawSource {
   path?: string;
   extension?: string;
   text: string;
+  richExtraction?: boolean;
+  formulaAssetCount?: number;
+  formulaAssets?: Math6FormulaAsset[];
+  assetBasePath?: string;
+  rawOleMarkerCount?: number;
   error?: string;
+}
+
+export interface Math6FormulaAsset {
+  src: string;
+  width?: number | string;
+  height?: number | string;
+  alt?: string;
+  fileName?: string;
+  copied?: boolean;
+  source?: string;
 }
 
 export interface Math6ExtractedBlock {
@@ -53,7 +68,15 @@ interface TopicMatch {
   confidence: number;
 }
 
-const EXERCISE_HEADER_PATTERN = /(?:^|[\r\n\f])\s*((?:Bài|Bai|Câu|Cau)(?:\s+tập|\s+tap)?\s*\d+[A-Za-zÀ-ỹ0-9\s]*[:.)-]?)/giu;
+interface Math6PromptFormulaAsset {
+  src: string;
+  width?: number;
+  height?: number;
+  alt: string;
+}
+
+const EXERCISE_HEADER_PATTERN = /(?:^|[\r\n\f]|[^\p{L}])\s*((?:B[\p{L}\u00a0]{0,3}i|C[\p{L}\u00a0]{0,3}u)(?:\s+t[\p{L}\u00a0]{0,3}p)?\s*\d+[A-Za-zÀ-ỹ0-9\s]*[:.)-]?)/giu;
+const FORMULA_TOKEN_RE = /\{\{formula:([^}|]+)(?:\|w=(\d+))?(?:\|h=(\d+))?\}\}/g;
 
 export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource[]): { items: QuestionItem[]; blocks: Math6ExtractedBlock[]; report: Math6ImportReport } {
   const issues: Math6ImportIssue[] = [];
@@ -131,6 +154,7 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
     const pattern = topic?.patterns.find((candidate) => candidate.id === block.patternId);
     const generatedFigure = generateMath6GeometryFigure(block.prompt, block.topicId);
     const needsOriginalImage = needsOriginalGeometryImage(block.prompt);
+    const formulaAssets = extractFormulaAssets(block.prompt);
     return {
       id: `math6.${block.id}`,
       sourceId: block.id,
@@ -153,6 +177,7 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
         block.patternId,
         `level:${block.level}`,
         `source:${block.sourceFile}`,
+        formulaAssets.length ? 'formula:recovered_asset' : '',
         generatedFigure ? 'figure:generated' : '',
         needsOriginalImage && !generatedFigure ? 'figure:needs_original' : '',
       ]),
@@ -167,6 +192,9 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
         sourceFile: block.sourceFile,
         sourcePath: block.sourcePath || '',
         importConfidence: block.confidence,
+        formulaAssets,
+        formulaAssetCount: formulaAssets.length,
+        formulaStatus: formulaAssets.length ? 'recovered_asset' : 'none',
         generatedFigure,
         figureStatus: generatedFigure ? 'generated_svg' : needsOriginalImage ? 'needs_original_image' : 'none',
       },
@@ -187,13 +215,20 @@ export function extractMath6ExerciseBlocks(text: string): string[] {
 
   const blocks: string[] = [];
   matches.forEach((match, index) => {
-    const start = match.index || 0;
-    const next = matches[index + 1]?.index ?? normalized.length;
+    const start = getExerciseHeaderStart(match);
+    const next = matches[index + 1] ? getExerciseHeaderStart(matches[index + 1]) : normalized.length;
     const block = normalizePrompt(normalized.slice(start, next));
     if (isUsefulExerciseBlock(block)) blocks.push(block);
   });
 
   return blocks;
+}
+
+function getExerciseHeaderStart(match: RegExpMatchArray): number {
+  const fullMatch = match[0] || '';
+  const header = match[1] || '';
+  const offset = header ? fullMatch.indexOf(header) : 0;
+  return (match.index || 0) + Math.max(0, offset);
 }
 
 export function matchMath6TopicForSource(source: Math6RawSource): TopicMatch | undefined {
@@ -341,6 +376,21 @@ function normalizeExtractedText(text: string): string {
     .replace(/\r/g, '\n')
     .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '')
     .replace(/\n{3,}/g, '\n\n');
+}
+
+function extractFormulaAssets(prompt: string): Math6PromptFormulaAsset[] {
+  const assets: Math6PromptFormulaAsset[] = [];
+  for (const match of String(prompt || '').matchAll(FORMULA_TOKEN_RE)) {
+    const src = match[1] || '';
+    if (!src.startsWith('/assets/')) continue;
+    assets.push({
+      src,
+      width: match[2] ? Number(match[2]) : undefined,
+      height: match[3] ? Number(match[3]) : undefined,
+      alt: 'Math formula',
+    });
+  }
+  return assets;
 }
 
 function normalizePrompt(text: string): string {

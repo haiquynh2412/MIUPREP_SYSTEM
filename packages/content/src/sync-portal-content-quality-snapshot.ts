@@ -187,7 +187,7 @@ function buildUnifiedCoverageSnapshot(workspaceRootPath: string, englishReport: 
   const generatedAt = englishReport.generatedAt;
   const programs: UnifiedContentCoverageSnapshot['programs'] = [];
   const localMathSourceRoot = path.resolve(workspaceRootPath, '..', '..', 'SACH VIET', 'TOAN');
-  const math6RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math6-raw-extract.json');
+  const math6RawPath = resolveDefaultMath6RawPath(workspaceRootPath);
 
   if (fs.existsSync(math6RawPath)) {
     const rawSources = readMath6RawSources(math6RawPath);
@@ -413,6 +413,25 @@ function readMath6RawSources(filePath: string): Math6RawSource[] {
     return (parsed as { sources: Math6RawSource[] }).sources;
   }
   throw new Error(`Expected Math 6 raw source array or { sources: [] } at ${filePath}`);
+}
+
+function resolveDefaultMath6RawPath(workspaceRootPath: string): string {
+  const richRawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math6-rich-raw-extract.json');
+  const plainRawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math6-raw-extract.json');
+  return shouldUseRichMath6RawPath(richRawPath, plainRawPath) ? richRawPath : plainRawPath;
+}
+
+function shouldUseRichMath6RawPath(richRawPath: string, plainRawPath: string): boolean {
+  if (!fs.existsSync(richRawPath)) return false;
+  try {
+    const richSources = readMath6RawSources(richRawPath);
+    const richSourcesWithText = richSources.filter((source) => String(source.text || '').trim().length > 0).length;
+    if (!fs.existsSync(plainRawPath)) return richSourcesWithText > 0;
+    const plainSources = readMath6RawSources(plainRawPath);
+    return richSources.length >= plainSources.length && richSourcesWithText >= Math.ceil(plainSources.length * 0.9);
+  } catch {
+    return false;
+  }
 }
 
 function countSourceFormats(rawSources: Math6RawSource[]): Record<string, number> {

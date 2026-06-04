@@ -171,8 +171,8 @@ export function buildMath6ContentGuardReport(
     }
   });
 
-  const rawSourcesWithOleMarkers = rawSources.filter((source) => countMatches(source.text, /\u0001/g) > 0).length;
-  const rawOleMarkersTotal = rawSources.reduce((sum, source) => sum + countMatches(source.text, /\u0001/g), 0);
+  const rawSourcesWithOleMarkers = rawSources.filter((source) => getRawOleMarkerCount(source) > 0).length;
+  const rawOleMarkersTotal = rawSources.reduce((sum, source) => sum + getRawOleMarkerCount(source), 0);
   const displayReadyItems = importResult.items.filter((item) => displayReadyItemIds.includes(item.id));
 
   const report: Math6ContentGuardReport = {
@@ -237,8 +237,8 @@ function extractRawBlocks(text: string): RawBlock[] {
   const matches = [...normalized.matchAll(EXERCISE_HEADER_RE)];
   return matches
     .map((match, index) => {
-      const start = match.index || 0;
-      const next = matches[index + 1]?.index ?? normalized.length;
+      const start = getExerciseHeaderStart(match);
+      const next = matches[index + 1] ? getExerciseHeaderStart(matches[index + 1]) : normalized.length;
       const raw = normalized.slice(start, next);
       return {
         raw,
@@ -247,6 +247,13 @@ function extractRawBlocks(text: string): RawBlock[] {
       };
     })
     .filter((block) => block.cleaned.length >= 24 && block.cleaned.length <= 2600);
+}
+
+function getExerciseHeaderStart(match: RegExpMatchArray): number {
+  const fullMatch = match[0] || '';
+  const header = match[1] || '';
+  const offset = header ? fullMatch.indexOf(header) : 0;
+  return (match.index || 0) + Math.max(0, offset);
 }
 
 function normalizePrompt(text: string): string {
@@ -301,6 +308,10 @@ function countMatches(value: string | undefined, regex: RegExp): number {
   return (String(value || '').match(regex) || []).length;
 }
 
+function getRawOleMarkerCount(source: Math6RawSource): number {
+  return typeof source.rawOleMarkerCount === 'number' ? source.rawOleMarkerCount : countMatches(source.text, /\u0001/g);
+}
+
 function summarizeIssues(questionCount: number, issues: Math6ContentIssue[]): Math6ContentGuardReport['qualitySummary'] {
   return {
     questions: questionCount,
@@ -310,7 +321,7 @@ function summarizeIssues(questionCount: number, issues: Math6ContentIssue[]): Ma
   };
 }
 
-const EXERCISE_HEADER_RE = /(?:^|[\r\n\f])\s*((?:B(?:a|[\u00e0\u00c0])i|C(?:a|[\u00e2\u00c2])u)(?:\s+t(?:a|[\u1ead\u1eac])p)?\s*\d+[A-Za-z\u00c0-\u1ef90-9\s]*[:.)-]?)/giu;
+const EXERCISE_HEADER_RE = /(?:^|[\r\n\f]|[^\p{L}])\s*((?:B[\p{L}\u00a0]{0,3}i|C[\p{L}\u00a0]{0,3}u)(?:\s+t[\p{L}\u00a0]{0,3}p)?\s*\d+[A-Za-z\u00c0-\u1ef90-9\s]*[:.)-]?)/giu;
 const CONTROL_OR_REPLACEMENT_RE = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\ufffd]/;
 const MOJIBAKE_RE = /(?:\u00c3|\u00c4|\u00c5|\u00c2|\u00c6|\u00e1[\u00ba\u00bb])/;
 const LEGACY_FONT_RE = /[\u00a9\u00aa\u00ad\u00ae\u00b5\u00b8\u00c5\u00cf\u00d7\u00d8\u00de\u00e7\u00f1\u00f8\u00fc]/;

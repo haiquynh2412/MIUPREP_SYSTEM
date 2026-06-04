@@ -32,6 +32,7 @@ import {
   STUDENT_DIARY_MOODS,
   buildDailyLoopStepLearningEvent,
   buildErrorRetryLearningEvent,
+  buildLessonTemplateActionLearningEvent,
   buildStudentWorkspaceTabs,
   countActiveErrorQuestions,
   getActiveErrorQuestions,
@@ -48,6 +49,7 @@ import {
   toggleMascotItem,
   type DailyLoopStepId,
   type DiaryEntry,
+  type LessonTemplateAction,
   type StudentWorkspaceTabId,
 } from './lib/studentProgress';
 import {
@@ -91,6 +93,64 @@ function downloadJsonFile(filename: string, payload: ContentExamChangeSet | Cont
 
 function safeFilePart(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '') || 'content';
+}
+
+const FORMULA_TOKEN_PATTERN = /\{\{formula:([^}|]+)(?:\|w=(\d+))?(?:\|h=(\d+))?\}\}/g;
+
+function PromptWithAssets({ text, className }: { text: string; className?: string }): JSX.Element {
+  const promptText = String(text || '');
+  const nodes: React.ReactNode[] = [];
+  let cursor = 0;
+
+  for (const match of promptText.matchAll(FORMULA_TOKEN_PATTERN)) {
+    const index = match.index ?? 0;
+    if (index > cursor) {
+      nodes.push(<span key={`text-${cursor}`}>{promptText.slice(cursor, index)}</span>);
+    }
+
+    const src = match[1] || '';
+    const width = match[2] ? Number(match[2]) : undefined;
+    const height = match[3] ? Number(match[3]) : undefined;
+    if (src.startsWith('/assets/')) {
+      nodes.push(
+        <img
+          key={`formula-${index}`}
+          src={src}
+          alt="math formula"
+          loading="lazy"
+          className="mx-1 inline-block max-w-full rounded-sm bg-white align-middle"
+          style={{
+            width: width ? `${Math.min(width, 360)}px` : undefined,
+            height: height ? `${Math.min(height, 180)}px` : undefined,
+            objectFit: 'contain',
+          }}
+        />,
+      );
+    }
+    cursor = index + match[0].length;
+  }
+
+  if (cursor < promptText.length) {
+    nodes.push(<span key={`text-${cursor}`}>{promptText.slice(cursor)}</span>);
+  }
+
+  return <div className={className}>{nodes.length ? nodes : promptText}</div>;
+}
+
+type LessonTemplateActionTemplate = {
+  id: string;
+  title: string;
+  conceptIds?: string[];
+  skillIds?: string[];
+  estimatedMinutes?: number;
+  masteryTarget?: number;
+};
+
+const ENGLISH_PROGRAM_ORDER = ['ielts', 'cae', 'cpe', 'sat'] as const;
+
+function resolvePrimaryEnglishProgramId(user: LocalUser): typeof ENGLISH_PROGRAM_ORDER[number] {
+  const assignedTracks = user.assignedTracks?.length ? user.assignedTracks : [user.assignedTrack || 'ielts'];
+  return ENGLISH_PROGRAM_ORDER.find((programId) => assignedTracks.includes(programId)) || 'ielts';
 }
 
 function buildSatPracticeLearningEvent(
@@ -1360,6 +1420,40 @@ export default function App() {
     }));
   };
 
+  const handleMathLessonTemplateAction = (template: LessonTemplateActionTemplate, action: LessonTemplateAction) => {
+    if (!currentUser || currentUser.role !== 'student') return;
+    void saveStudentLearningEvent(buildLessonTemplateActionLearningEvent({
+      username: currentUser.username,
+      programId: 'vn_math_6_9',
+      domainId: 'mathematics',
+      templateId: template.id,
+      templateTitle: template.title,
+      conceptIds: template.conceptIds,
+      skillIds: template.skillIds,
+      estimatedMinutes: template.estimatedMinutes,
+      masteryTarget: template.masteryTarget,
+      action,
+      sourceSurface: 'math_lesson_template_panel',
+    }));
+  };
+
+  const handleEnglishLessonTemplateAction = (template: LessonTemplateActionTemplate, action: LessonTemplateAction) => {
+    if (!currentUser || currentUser.role !== 'student') return;
+    void saveStudentLearningEvent(buildLessonTemplateActionLearningEvent({
+      username: currentUser.username,
+      programId: resolvePrimaryEnglishProgramId(currentUser),
+      domainId: 'english_core',
+      templateId: template.id,
+      templateTitle: template.title,
+      conceptIds: template.conceptIds,
+      skillIds: template.skillIds,
+      estimatedMinutes: template.estimatedMinutes,
+      masteryTarget: template.masteryTarget,
+      action,
+      sourceSurface: 'english_core_lesson_template_panel',
+    }));
+  };
+
   // ==========================================
   // Parent Actions
   // ==========================================
@@ -2051,9 +2145,10 @@ export default function App() {
 
                       {/* Question Prompt */}
                       <div className="space-y-4">
-                        <p className="text-sm font-extrabold text-slate-150 leading-relaxed bg-slate-955 p-5 rounded-2xl border border-slate-850/60 font-sans shadow-inner whitespace-pre-line">
-                          {activePracticeState.questions[activePracticeState.currentIndex].prompt}
-                        </p>
+                        <PromptWithAssets
+                          text={activePracticeState.questions[activePracticeState.currentIndex].prompt}
+                          className="text-sm font-extrabold text-slate-150 leading-relaxed bg-slate-955 p-5 rounded-2xl border border-slate-850/60 font-sans shadow-inner whitespace-pre-line"
+                        />
                       </div>
 
                       {/* Choices Panel */}
@@ -2553,6 +2648,7 @@ export default function App() {
                     learningEvents={studentLearningEvents}
                     onOpenPractice={() => setStudentWorkspaceTab('practice')}
                     onOpenTutor={() => setStudentWorkspaceTab('tutor')}
+                    onTemplateAction={handleMathLessonTemplateAction}
                   />
                   <EnglishCoreLessonTemplatePanel
                     currentUser={currentUser}
@@ -2562,6 +2658,7 @@ export default function App() {
                     learningEvents={studentLearningEvents}
                     onOpenPractice={() => setStudentWorkspaceTab('practice')}
                     onOpenTutor={() => setStudentWorkspaceTab('tutor')}
+                    onTemplateAction={handleEnglishLessonTemplateAction}
                   />
                 </>
               )}
@@ -4044,7 +4141,10 @@ export default function App() {
                               {/* Prompt */}
                               <div className="space-y-1 bg-slate-955 p-3 rounded-xl border border-slate-850">
                                 <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Nội dung câu hỏi (Prompt)</span>
-                                <p className="font-semibold text-slate-150 whitespace-pre-line leading-relaxed font-sans">{adminActiveQuestionDetail.prompt}</p>
+                                <PromptWithAssets
+                                  text={adminActiveQuestionDetail.prompt}
+                                  className="font-semibold text-slate-150 whitespace-pre-line leading-relaxed font-sans"
+                                />
                               </div>
 
                               {/* Choices */}

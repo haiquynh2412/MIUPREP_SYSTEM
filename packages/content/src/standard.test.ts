@@ -105,6 +105,18 @@ assert(math6Import.items.every((question) => question.programIds.includes("vn_ma
 assert(math6Import.items.every((question) => question.metadata?.topicId === "math6.number.sets_natural_numbers"), "Math 6 imported questions should retain topic metadata.");
 assert(validateStandardContentBundle({ questions: math6Import.items }).length === 0, "Math 6 imported QuestionItems should validate cleanly.");
 
+const math6FormulaImport = buildMath6QuestionItemsFromRawSources([
+  {
+    fileName: "Bai tap phan so.doc",
+    relativePath: "Bai tap phan so.doc",
+    extension: "doc",
+    text: "Bai 1: Thuc hien phep tinh a) {{formula:/assets/math6/formulas/sample/image001.gif|w=66|h=44}} b) {{formula:/assets/math6/formulas/sample/image002.gif|w=42|h=20}}.",
+  },
+]);
+assert(math6FormulaImport.items.length === 1, "Math 6 rich importer should keep formula-image exercise blocks.");
+assert(math6FormulaImport.items[0]?.tags.includes("formula:recovered_asset"), "Math 6 formula assets should be tagged for rich rendering.");
+assert((math6FormulaImport.items[0]?.metadata?.formulaAssetCount as number) === 2, "Math 6 formula tokens should be captured in metadata.");
+
 const math6LegacyFontImport = buildMath6QuestionItemsFromRawSources([
   {
     fileName: "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
