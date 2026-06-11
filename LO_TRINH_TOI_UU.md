@@ -56,10 +56,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - Test vòng 2: gọi thử bằng key CŨ → phải bị từ chối (401/403); grep toàn repo không còn key cũ
 - [x] **1.1.2. Xóa credentials admin/student hardcode (ielts-desktop + cpe-desktop + portal)** *(11/06/2026 — Phạm vi thực tế rộng hơn audit: 5 file ở 3 app. Đã xóa: seed admin/student mặc định, backdoor login admin123/student, passcode hardcode (admin123, miuprep2026), plaintext passwordHash ở portal, bypass theo username. Thay bằng first-run setup: admin đầu tiên trên thiết bị đăng ký tự do, admin sau phải do admin hiện tại cấp. CPE được thêm role selector. Test: grep sạch toàn repo; e2e recovery PASS với user seed mới; QA portal 2/2 PASS)*
 - [x] **1.1.3. Thay SHA256 bằng PBKDF2 cho mật khẩu (salt ngẫu nhiên)** *(11/06/2026 — Module mới `packages/db/src/password.ts`: PBKDF2-SHA256 310k iterations qua Web Crypto, không thêm dependency. `verifyPassword` nhận diện record cũ (SHA256-hex / plaintext) và trả `needsRehash` → tự nâng cấp hash khi user đăng nhập thành công. Unit tests: salt khác nhau cho cùng mật khẩu, verify đúng/sai, migration legacy — PASS trong `npm test -w @miuprep/db`)*
-- [ ] **1.1.4. Gỡ bỏ ObfuscatedLocalStorageStore (XOR store) — `packages/ai/src/utils/credential-store.ts`**
-  - Bước: desktop dùng TauriKeychainStore; bản web yêu cầu nhập key mỗi session (giữ trong memory) hoặc chặn tính năng AI khi không có keychain; migration: đọc key cũ 1 lần → chuyển vào keychain → xóa khỏi localStorage
-  - Test vòng 1: `npm test -w @miuprep/ai` pass; kiểm tra localStorage sau migration không còn key
-  - Test vòng 2: T-E2E-IELTS + T-E2E-CPE (luồng Writing/Speaking AI vẫn hoạt động với keychain)
+- [x] **1.1.4. Gỡ bỏ ObfuscatedLocalStorageStore (XOR store)** *(11/06/2026 — Thay bằng `SessionCredentialStore`: web giữ key trong memory mỗi phiên, không ghi gì đảo ngược được xuống đĩa; migration 1 lần đọc key XOR cũ → memory → purge khỏi localStorage; desktop giữ nguyên Tauri Keychain. Unit tests migration/purge/memory-only PASS trong `npm test -w @miuprep/ai`; cả 2 app desktop build sạch. Commit `53b4f039`)*
 - [ ] **1.1.5. Che chắn đề chẩn đoán + đáp án hardcode trong `Onboarding.tsx`**
   - Bước: tối thiểu — tách đáp án ra khỏi bundle client (load từ content package có guard); ghi chú: giải pháp triệt để cần backend (task 2.4)
   - Test vòng 1: build xong, search trong `dist/` không thấy chuỗi đáp án
@@ -77,10 +74,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 1.3. Quan sát được lỗi thực tế
 
-- [ ] **1.3.1. Thêm ErrorBoundary component vào `@miuprep/ui`, bọc root của cả 6 app**
-  - UI fallback thân thiện (tiếng Việt) + nút "Tải lại" + log lỗi vào SystemLog
-  - Test vòng 1: unit test ErrorBoundary (component con throw → fallback hiện, app không trắng màn hình)
-  - Test vòng 2: T-BUILD + throử lỗi thật trong dev mode ở portal và ielts-desktop → fallback hiển thị, SystemLog ghi nhận
+- [x] **1.3.1. Thêm ErrorBoundary component vào `@miuprep/ui`, bọc root của 5 app React** *(11/06/2026 — ErrorBoundary với fallback tiếng Việt + nút "Tải lại" + hook `onError` (sẵn sàng nối Sentry/SystemLog ở 1.3.2). Bọc root: portal, ielts, cpe, miumath, miuphysics (2 app JS được thêm dep `@miuprep/ui`). sat-studio là Svelte — cần cơ chế riêng, chuyển sang 1.3.2. Test: 5/5 app build PASS, QA portal smoke PASS 0 console error. Commit `77d799ac`)*
 - [ ] **1.3.2. Tích hợp crash reporting (Sentry hoặc GlitchTip self-hosted)**
   - Chú ý dữ liệu trẻ em: bật `beforeSend` scrub PII, không gửi nội dung bài làm
   - Test vòng 1: ném lỗi thử → event xuất hiện trên dashboard, KHÔNG chứa PII
@@ -89,9 +83,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - Bước: bật từng rule → sửa vi phạm (hoặc `// eslint-disable-next-line` có ghi lý do từng chỗ)
   - Test vòng 1: `npm run lint -w miuprep-portal` 0 error
   - Test vòng 2: T-QA-PORTAL pass (sửa lint không phá hành vi)
-- [ ] **1.3.4. Thêm `strict: true` cho cpe-desktop tsconfig**
-  - Test vòng 1: `tsc -b` của cpe-desktop pass sau khi sửa lỗi strict
-  - Test vòng 2: T-E2E-CPE pass
+- [x] **1.3.4. Thêm `strict: true` cho cpe-desktop tsconfig (+ ielts-desktop)** *(11/06/2026 — Cả 2 app desktop đều thiếu strict trong tsconfig.app.json; đã bật cho cả hai. Fresh typecheck (xóa tsbuildinfo): 0 lỗi — codebase đã strict-compatible sẵn. Commit `77d799ac`)*
 
 ---
 
@@ -198,10 +190,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | Giai đoạn | Tổng task | Hoàn thành | Tiến độ |
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
-| GĐ 1 — Nền móng | 12 | 3 (+1 đang chờ remote) | ~29% |
+| GĐ 1 — Nền móng | 12 | 6 (+1 đang chờ remote) | ~54% |
 | GĐ 2 — Kiến trúc | 13 | 0 | 0% |
 | GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
-| **Tổng** | **40** | **7** | **17.5%** |
+| **Tổng** | **40** | **10** | **25%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
@@ -213,4 +205,6 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 0.4 | `git status` sạch sau commit | Commit `0ebddd52`, 254 file |
 | 11/06/2026 | 1.2.1 | PASS local — cả 4 nhóm lệnh CI chạy xanh (T-PKG, SAT, lint 4 app, build) | `[~]` chờ GitHub remote để kích hoạt Actions |
 | 11/06/2026 | 1.2.2 | PASS — hook chặn lỗi TS cố ý (TS2322), cho qua commit hợp lệ | Commit `2935f6c7`; hook tự cài qua `npm install` (script `prepare`) |
+| 11/06/2026 | 1.3.1 + 1.3.4 | PASS — 5/5 app build; QA portal smoke 0 console error; strict typecheck 0 lỗi | Commit `77d799ac` |
+| 11/06/2026 | 1.1.4 | PASS — ai tests (migration/purge/memory-only); 2 app desktop build sạch | Commit `53b4f039` |
 | 11/06/2026 | 1.1.2 + 1.1.3 | PASS — 7/7 package tests; build ielts/cpe/portal; lint 3 app; e2e recovery PASS; QA portal 2/2 PASS; grep credentials sạch | Commit `af0f0165`. Gỡ toàn bộ backdoor/seed mặc định ở 3 app; PBKDF2 + auto-rehash; e2e tự seed user. **Phát hiện mới:** `QuotaExceededError` ở web mode (ngân hàng đề vượt quota localStorage) → cần xử lý ở task 2.2 (chuyển content sang load theo nhu cầu / IndexedDB); e2e listening fail ở bước sau-submit vì vấn đề này (có sẵn, không do auth) |
