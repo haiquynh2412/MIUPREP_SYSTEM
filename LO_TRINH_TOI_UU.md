@@ -36,18 +36,13 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 > Mục đích: chụp lại trạng thái "xanh" hiện tại. Mọi task sau này so sánh với baseline để biết có gây hồi quy không.
 
-- [x] **0.1. Chạy toàn bộ unit test packages, ghi lại kết quả baseline** *(11/06/2026 — Vòng 1: 7/7 packages PASS · Vòng 2 chạy lại sạch: 7/7 PASS)*
-  - Lệnh: T-PKG → lưu kết quả vào `reports/baseline/`
-  - Test vòng 1: chạy T-PKG, tất cả PASS hoặc ghi rõ test nào đang đỏ
-  - Test vòng 2: chạy lại T-PKG lần nữa để xác nhận kết quả ổn định (không flaky)
-- [x] **0.2. Build toàn bộ workspace, ghi nhận thời gian + lỗi/warning** *(11/06/2026 — Vòng 1: PASS ~5.5 phút, có warning chunk >500kB ở portal/desktop · Vòng 2: PASS, kết quả nhất quán)*
-  - Lệnh: T-BUILD
-  - Test vòng 1: build pass toàn bộ
-  - Test vòng 2: kiểm tra `dist/` của từng workspace tồn tại và có nội dung
-- [x] **0.3. Chạy SAT domain tests baseline** *(11/06/2026 — Vòng 1: typecheck PASS + 14/14 test files PASS + build PASS · Vòng 2: chạy lại test:public-contract PASS)*
-  - Lệnh: T-SAT
-- [x] **0.4. Commit trạng thái working tree hiện tại** *(11/06/2026 — commit `e7762a59`; vòng 1: `git status` sạch · vòng 2: `git show --stat` xác nhận đủ file)*
-  - Working tree đang có ~75 file thay đổi chưa commit — phải commit/stash trước khi bắt đầu sửa, để mỗi task sau có diff sạch
+- [x] **0.1. Chạy toàn bộ unit test packages, ghi lại kết quả baseline** *(11/06/2026 — Vòng 1: 7/7 packages PASS, exit 0 · Vòng 2: 7/7 PASS, exit 0, không flaky)*
+  - Lệnh: T-PKG (log: `scratch/test-round2.log`)
+- [x] **0.2. Build toàn bộ workspace, ghi nhận lỗi/warning** *(11/06/2026 — Build PASS, exit 0; kiểm tra 14/14 workspace đều có `dist/`; không có warning chunk-size trong log)*
+  - Lệnh: T-BUILD (log: `scratch/build-round1.log`)
+- [x] **0.3. Chạy SAT domain tests baseline** *(11/06/2026 — Vòng 1: typecheck PASS + 14/14 test files PASS + vite build PASS · Vòng 2: 14/14 PASS, exit 0)*
+  - Lệnh: T-SAT (log: `scratch/sat-test-round1.log`, `sat-test-round2.log`)
+- [x] **0.4. Commit trạng thái working tree hiện tại** *(11/06/2026 — commit `0ebddd52` "Baseline: snapshot working tree before optimization roadmap", 254 file; `git status` sạch sau commit)*
 
 ---
 
@@ -220,9 +215,9 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
-| Ngày | Task | Kết quả test vòng 1 | Kết quả test vòng 2 | Ghi chú |
-|------|------|---------------------|---------------------|---------|
-| 11/06/2026 | 0.1 | PASS — 7/7 packages | PASS — chạy lại ổn định | Baseline xanh |
-| 11/06/2026 | 0.2 | PASS — build toàn bộ ~5.5 phút | PASS — dist/ đầy đủ | Warning: chunk >500kB ở portal & desktop apps (xử lý ở 2.2.3) |
-| 11/06/2026 | 0.3 | PASS — typecheck + 14/14 + build | PASS — chạy lại ổn định | |
-| 11/06/2026 | 0.4 | `git status` sạch | `git show --stat` đủ file | Commit `e7762a59` |
+| Ngày | Task | Kết quả test | Ghi chú |
+|------|------|--------------|---------|
+| 11/06/2026 | 0.1 | PASS — 7/7 packages (chạy 2 lần, ổn định) | Baseline xanh |
+| 11/06/2026 | 0.2 | PASS — build 14/14 workspace, đủ `dist/`, không warning | |
+| 11/06/2026 | 0.3 | PASS — typecheck + 14/14 domain tests + build (chạy 2 lần) | |
+| 11/06/2026 | 0.4 | `git status` sạch sau commit | Commit `0ebddd52`, 254 file |
