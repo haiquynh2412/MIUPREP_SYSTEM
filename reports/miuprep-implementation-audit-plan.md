@@ -1710,3 +1710,187 @@ Residual risk:
 - Portal build still reports the existing Vite chunk-size warning. The new item-bank helper uses a dynamic import, but Vite reports it is ineffective because `@miuprep/content` is still statically imported by other portal/database paths. This is a performance follow-up, not a functional blocker.
 - The next performance pass should split or lazy-load `@miuprep/content` usage in `adminContent.ts` and shared database adapters before expecting English item-bank code to move into a separate chunk.
 - Non-Math6 math item-bank practice remains a later batch. Math 6 rich formula/image/encoding recovery remains intentionally deferred.
+
+### 2026-06-05 Batch 24 - Math 6 import and pedagogy-readiness gate
+
+Scope completed:
+
+- Re-ran Math 6 import and display audit against the current rich raw extract.
+- Added a separate Math 6 scored-practice pedagogy gate so display-ready questions are no longer treated as learner-scored-ready by default.
+- Added guard metrics for missing correct answer, explanation, worked solution, trap/misconception guidance, thinking/observation guide, hard items without thinking guide, and answer/review markers accidentally inside prompts.
+- Updated the Math 6 raw-source learning catalog helper so it exposes only scored-practice-ready items by default; an explicit `includeUnscoredPractice` option keeps display-ready items available for internal review/admin workflows.
+- Updated portal quality snapshot sync so Math 6 `readyQuestions` now means scored-practice-ready, while the note still reports display-ready count separately.
+- Confirmed CAE/beta dirty artifacts are separate generated/sourced artifacts, not outputs of this Math 6 batch.
+
+Changed files:
+
+- `packages/content/src/math6-content-guard-report.ts`
+- `packages/content/src/guard-math6-content.ts`
+- `packages/content/src/math-learning.ts`
+- `packages/content/src/sync-portal-content-quality-snapshot.ts`
+- `packages/content/src/standard.test.ts`
+- `apps/miuprep-portal/src/data/contentQualitySnapshot.ts`
+- `reports/content-quality/math6-content-audit.md`
+- `reports/content-quality/math6-content-guard.json`
+- `reports/content-quality/math6-content-issues.csv`
+- `reports/content-quality/math6-display-audit.json`
+- `reports/content-quality/math6-display-audit.md`
+- `reports/content-quality/math6-display-ready-preview.json`
+- `reports/content-quality/math6-question-bank-audit.md`
+- `reports/content-quality/math6-question-bank-coverage.csv`
+- `reports/content-quality/math6-question-bank-preview.json`
+- `MIUPREP_IMPLEMENTATION_PLAN.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed:
+
+- `npm.cmd run build -w @miuprep/content`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+- `npm.cmd run export:math6 -w @miuprep/content`
+- `npm.cmd run audit:math6-display -w @miuprep/content`
+- `npm.cmd run sync:portal-quality -w @miuprep/content`
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run build -w miuprep-portal`
+- `git diff --check`
+
+Proof captured:
+
+- Math 6 import now reports 75 sources, 1,574 extracted/converted items, 66 mapped sources, 2 unmapped sources, and adapter pass.
+- Display gate reports 1,509/1,574 display-ready items, 535 generated geometry SVG figures, 15 formula-review blockers, 5 original-image blockers, 46 text-encoding blockers, and 0 prompt control characters.
+- Scored practice gate reports 0/1,574 scored-practice-ready items because all 1,574 imported items are missing a correct answer, explanation, worked solution, trap/misconception guidance, and thinking/observation guide.
+- The 74 hard Math 6 items all lack a thinking/observation guide, so difficult/HSG items are explicitly blocked from learner scoring.
+- `sync:portal-quality` now reports `vn_math_6` as `needs_repair`, with 1,574 imported, 0 ready, 1,574 blockers, and adapter pass.
+
+Dirty/untracked artifact explanation:
+
+- CAE mock files such as `cam-cae2-test1.json`, `cam-cae2-test3.json`, `cam-cae3-test1.json`, and `cam-cae4-test4.json` are dirty because a separate CAE content-correction/OCR batch rewrote passages, answer evidence, explanations, and options from source pages.
+- CAE report artifacts under `cae-ocr`, `cae-other-focused-audit`, `cae4-page-images`, `cae6-focused-audit`, and `cae6-page-images` are untracked because they are generated OCR caches, rendered source pages, focused-audit outputs, and page-image evidence from that separate CAE review workflow.
+- Beta artifacts are dirty because `export:beta-run` was run again: timestamps changed and the English scanned test count moved from 93 to 99 after CAE inventory expanded. They are generated report outputs, not Math 6 importer code.
+
+Residual risk:
+
+- Math 6 is not ready for scored learner practice. The next real content task is answer-key and worked-solution enrichment, ideally source-by-source, starting with high-value display-ready foundation/core items.
+- Some Math 6 display blockers remain: 15 formula-review, 5 image, and 46 encoding issues.
+- Several dirty Math8/Math9 local-source files and artifacts are present in the worktree from adjacent work; they should be reviewed and committed in separate subject-specific batches.
+
+### 2026-06-05 Batch 25 - Math 6 scored-practice enrichment seed
+
+Scope completed:
+
+- Added a separate Math 6 manual enrichment layer so reviewed answer keys and pedagogy are not mixed into the raw importer/parser.
+- Seeded the first 6 scored-practice-ready Math 6 items from `[123doc.vn] - luyen-tap-phan-tich-ra-thua-so-nguyen-to.doc`.
+- Each seeded item now has `correctAnswer`, worked explanation, observation/thinking guide, trap/misconception guidance, `misconceptionIds`, and `pedagogy:manual_enriched` tags.
+- Kept non-enriched items blocked: the same 9-block source fixture now exposes 6 scored items and leaves 3 unscored items blocked.
+- Re-ran Math 6 export/guard/display audit and portal quality snapshot after enrichment.
+
+Changed files:
+
+- `packages/content/src/math6-enrichment.ts`
+- `packages/content/src/math6-import.ts`
+- `packages/content/src/standard.test.ts`
+- `apps/miuprep-portal/src/data/contentQualitySnapshot.ts`
+- `reports/content-quality/math6-content-audit.md`
+- `reports/content-quality/math6-content-guard.json`
+- `reports/content-quality/math6-content-issues.csv`
+- `reports/content-quality/math6-display-audit.json`
+- `reports/content-quality/math6-display-audit.md`
+- `reports/content-quality/math6-display-ready-preview.json`
+- `reports/content-quality/math6-question-bank-audit.md`
+- `reports/content-quality/math6-question-bank-coverage.csv`
+- `reports/content-quality/math6-question-bank-preview.json`
+- `MIUPREP_IMPLEMENTATION_PLAN.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed:
+
+- `npm.cmd run build -w @miuprep/content`
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run export:math6 -w @miuprep/content`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+- `npm.cmd run audit:math6-display -w @miuprep/content`
+- `npm.cmd run sync:portal-quality -w @miuprep/content`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd run build`
+- `git diff --check`
+
+Proof captured:
+
+- Math 6 guard now reports 6/1,574 scored-practice-ready items.
+- Pedagogy blockers dropped from 1,574 to 1,568 for missing correct answer, explanation, worked solution, trap/misconception guidance, and thinking guide.
+- The 6 scored IDs are:
+  - `math6.number_prime_factor_gcd_lcm.123doc_vn_luyen_tap_phan_tich_ra_thua_so.06k2x6x.001`
+  - `math6.number_prime_factor_gcd_lcm.123doc_vn_luyen_tap_phan_tich_ra_thua_so.06k2x6x.002`
+  - `math6.number_prime_factor_gcd_lcm.123doc_vn_luyen_tap_phan_tich_ra_thua_so.06k2x6x.003`
+  - `math6.number_sets_natural_numbers.123doc_vn_luyen_tap_phan_tich_ra_thua_so.06k2x6x.006`
+  - `math6.number_prime_factor_gcd_lcm.123doc_vn_luyen_tap_phan_tich_ra_thua_so.06k2x6x.008`
+  - `math6.number_prime_factor_gcd_lcm.123doc_vn_luyen_tap_phan_tich_ra_thua_so.06k2x6x.009`
+- Direct preview inspection found exactly 6 `pedagogy:manual_enriched` items, each with answer key, misconception IDs, and explanation text containing observation, worked-solution, and trap guidance.
+- `sync:portal-quality` now reports `vn_math_6` as `watch`, with 1,574 imported, 6 ready, 1,568 blockers, and adapter pass.
+- Display status is unchanged and still valid: 1,509/1,574 display-ready, 535 generated SVG figures, 15 formula-review blockers, 5 image blockers, 46 encoding blockers.
+
+Residual risk:
+
+- Math 6 still needs large-scale answer-key enrichment before it is meaningfully usable as a full item bank.
+- The 74 hard Math 6 items still lack thinking/observation guidance and remain blocked.
+- Formula/image/encoding blockers are separate from pedagogy and still require their own repair pass.
+- Current worktree still contains unrelated CAE, beta, Math8, and Math9 dirty/untracked artifacts; keep commits scoped carefully.
+
+### 2026-06-05 Batch 26 - Math 6 source-file solutions and SGK guidance
+
+Scope completed:
+
+- Added conservative Math 6 source-answer segmentation: clear answer-key sections are split out before exercise extraction, so answer-key blocks are no longer imported as extra prompts.
+- Added aligned source-file solution attachment for Math 6. Exact block-count alignment is required before the importer trusts source solutions.
+- Source-file solutions now populate `correctAnswer`, `explanation`, `misconceptionIds`, tags, and metadata including `solutionSource: source_file`, `sourceSolutionLabel`, `sourceSolutionConfidence`, and `sgkAlignment: grade6_standard_curriculum`.
+- Preserved the manual SGK-authored seed as `solutionSource: sgk_authored`.
+- Added SGK-oriented observation/trap heuristics for common Grade 6 types: set listing, fast calculation, find-x inverse operations, UCLN/BCNN/prime factorization, divisibility, powers, fractions, angles, and point-line-ray geometry.
+- Fixed classifier logic so `tia goc A` is treated as point-line-ray geometry, not an angle problem.
+- Fixed generated Math 6 geometry figures so point-line prompts containing `tia goc` do not render an angle figure with `? deg`.
+- Added regression tests for source answer-key separation and the `tia goc` figure issue.
+
+Changed files:
+
+- `packages/content/src/math6-import.ts`
+- `packages/content/src/math6-enrichment.ts`
+- `packages/content/src/math6-geometry-figures.ts`
+- `packages/content/src/standard.test.ts`
+- `apps/miuprep-portal/src/data/contentQualitySnapshot.ts`
+- `reports/content-quality/math6-content-audit.md`
+- `reports/content-quality/math6-content-guard.json`
+- `reports/content-quality/math6-content-issues.csv`
+- `reports/content-quality/math6-display-audit.json`
+- `reports/content-quality/math6-display-audit.md`
+- `reports/content-quality/math6-display-ready-preview.json`
+- `reports/content-quality/math6-question-bank-audit.md`
+- `reports/content-quality/math6-question-bank-coverage.csv`
+- `reports/content-quality/math6-question-bank-preview.json`
+- `MIUPREP_IMPLEMENTATION_PLAN.md`
+- `reports/miuprep-implementation-audit-plan.md`
+
+Verification passed:
+
+- `npm.cmd test -w @miuprep/content`
+- `npm.cmd run export:math6 -w @miuprep/content`
+- `npm.cmd run guard:math6 -w @miuprep/content -- --quiet`
+- `npm.cmd run audit:math6-display -w @miuprep/content`
+- `npm.cmd run sync:portal-quality -w @miuprep/content`
+- `npm.cmd run build -w miuprep-portal`
+- `npm.cmd run build`
+- `git diff --check`
+
+Proof captured:
+
+- Math 6 import now reports 75 input sources, 66 mapped sources, 2 unmapped sources, 1,432 extracted/converted items, and adapter pass.
+- Item count dropped from 1,574 to 1,432 because aligned answer-key/solution sections are no longer counted as learner prompts.
+- Display audit reports 1,380/1,432 display-ready items, 443 generated SVG figures, 7 formula-review blockers, 5 original-image blockers, 41 text-encoding blockers, 0 prompt control characters, and 0 missing formula assets.
+- Scored-practice gate reports 41 ready items: 35 source-file solution items plus 6 SGK-authored/manual seed items.
+- Pedagogy blockers now report 1,389 items still missing correct answer, worked solution, trap/misconception guidance, and thinking guide.
+- Direct preview inspection confirmed the former `tia goc A` false-positive is now `math6.geometry.points_lines_segments`, uses `generic_points_lines`, has no `? deg` angle label, and has a point-line-ray observation/trap guide.
+- Portal quality snapshot reports `vn_math_6` as `watch`, with 1,432 imported, 41 ready, 1,391 blockers, and adapter pass.
+
+Residual risk:
+
+- The 41 scored-practice-ready items are suitable for the current gate, but most Math 6 items remain blocked from learner scoring until source-by-source answer and worked-solution enrichment continues.
+- Display blockers remain: 7 formula-review, 5 original-image, and 41 legacy-encoding items.
+- 87 hard Math 6 items still lack thinking/observation guidance and remain blocked.
+- Current worktree still contains unrelated CAE, beta, Math8, and Math9 dirty/untracked artifacts; do not bundle them into a single commit without review.

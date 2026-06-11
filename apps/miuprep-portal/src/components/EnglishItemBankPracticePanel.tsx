@@ -19,6 +19,7 @@ export default function EnglishItemBankPracticePanel({
 }: EnglishItemBankPracticePanelProps) {
   const question = state.questions[state.currentIndex];
   const progress = `${state.currentIndex + 1}/${state.questions.length}`;
+  const progressPercent = Math.round(((state.currentIndex + 1) / state.questions.length) * 100);
   const sectionTitle = String(question.metadata.sectionTitle || question.metadata.testSkill || 'English practice');
   const testTitle = String(question.metadata.testTitle || state.programId.toUpperCase());
 
@@ -53,6 +54,16 @@ export default function EnglishItemBankPracticePanel({
 
       <div className="grid grid-cols-1 xl:grid-cols-[1fr_300px] gap-4">
         <div className="space-y-4">
+          <div className="bg-sky-500/10 border border-sky-500/20 rounded-2xl p-4">
+            <div className="flex items-center justify-between gap-3 text-[10px] font-black uppercase tracking-widest text-sky-300">
+              <span>Session goal: answer, review source, keep one takeaway</span>
+              <span>{progressPercent}%</span>
+            </div>
+            <div className="h-2 rounded-full bg-slate-950 border border-slate-800 overflow-hidden mt-3">
+              <div className="h-full rounded-full bg-sky-400 transition-all" style={{ width: `${progressPercent}%` }} />
+            </div>
+          </div>
+
           <div className="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
             <div className="flex flex-wrap gap-2 mb-3">
               <Badge>{testTitle}</Badge>

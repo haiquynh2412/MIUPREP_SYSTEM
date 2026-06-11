@@ -31,12 +31,14 @@ export {
   gradeSpeakingWithTutorEvent,
   gradeWritingWithTutorEvent,
   recordQuestionTutorFeedback,
+  scoreProductiveFeedbackReliability,
 } from './tutor';
 export type {
   FeedbackPracticeTask,
   FeedbackRevisionLoop,
   FeedbackToPracticeOptions,
   FeedbackToPracticePlan,
+  ProductiveFeedbackReliability,
   ProductiveSkillGoldenSample,
   ProductiveSkillGovernanceFinding,
   ProductiveSkillGovernanceReport,

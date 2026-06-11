@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useEffect } from 'react';
+import { Suspense, lazy, useState, useEffect } from 'react';
 import { 
   isCorrectAnswer
 } from '@miuprep/core';
@@ -16,56 +16,6 @@ import {
   getActiveCredentialStore
 } from '@miuprep/ai';
 import type { ValidationError, IeltsQuestion, QuestionGroup } from '@miuprep/content';
-import { 
-  SAMPLE_CPE_TEST,
-  CPE_PRACTICE_TEST_1_BOOK_3,
-  CPE_PRACTICE_TEST_2_BOOK_3,
-  CPE_PRACTICE_TEST_3_BOOK_3,
-  CPE_PRACTICE_TEST_4_BOOK_3,
-  CPE_PRACTICE_TEST_5_BOOK_3,
-  CPE_PRACTICE_TEST_6_BOOK_3,
-  CPE2_TEST_1,
-  CPE2_TEST_2,
-  CPE2_TEST_3,
-  CPE2_TEST_4,
-  CPE2_TEST_5,
-  CPE2_TEST_6,
-  CAM_CPE1_TEST1,
-  CAM_CPE1_TEST2,
-  CAM_CPE1_TEST3,
-  CAM_CPE1_TEST4,
-  CAMCP2_TEST1,
-  CAMCP2_TEST2,
-  CAMCP2_TEST3,
-  CAMCP2_TEST4,
-  CAMCP2_LISTENING_TOPIC_BANK,
-  CAMCP3_TEST1,
-  CAMCP3_TEST2,
-  CAMCP3_TEST3,
-  CAMCP3_TEST4,
-  CAMCP3_LISTENING_TOPIC_BANK,
-  CAMCP4_TEST1,
-  CAMCP4_TEST2,
-  CAMCP4_TEST3,
-  CAMCP4_TEST4,
-  CAMCP4_LISTENING_TOPIC_BANK,
-  CAMCP5_TEST1,
-  CAMCP5_TEST2,
-  CAMCP5_TEST3,
-  CAMCP5_TEST4,
-  CAMCP5_LISTENING_TOPIC_BANK,
-  CPE_ENTRY_TEST_1,
-  CPE_ENTRY_TEST_2,
-  CPE_ENTRY_TEST_3,
-  CPE_ENTRY_TEST_4,
-  CPE_ENTRY_TEST_5,
-  CPE_ENTRY_TEST_6,
-  CPE_ENTRY_TEST_7,
-  CPE_ENTRY_TEST_8,
-  CPE_ENTRY_TEST_9,
-  CPE_ENTRY_TEST_10,
-  validateIeltsTest
-} from '@miuprep/content';
 
 
 // Specialized Hook Imports
@@ -75,22 +25,32 @@ import useAiEvaluation from './hooks/useAiEvaluation';
 import useExam from './hooks/useExam';
 
 // Modular Presentation Component Imports
-import ErrorNotebook from './components/ErrorNotebook';
-import SpeakingAiRoom from './components/SpeakingAiRoom';
-import AdaptivePracticeRoom from './components/AdaptivePracticeRoom';
 import Onboarding from './components/Onboarding';
-import WritingAiRoom from './components/WritingAiRoom';
 
 import ModeSelectorModal from './components/modules/ModeSelectorModal';
 import ImportErrorModal from './components/modules/ImportErrorModal';
 import DashboardPanel from './components/modules/DashboardPanel';
 import ExamRunner from './components/modules/ExamRunner';
+import { loadCpeSeedTests, validateContentTest } from './lib/contentRuntime';
+
+const ErrorNotebook = lazy(() => import('./components/ErrorNotebook'));
+const SpeakingAiRoom = lazy(() => import('./components/SpeakingAiRoom'));
+const AdaptivePracticeRoom = lazy(() => import('./components/AdaptivePracticeRoom'));
+const WritingAiRoom = lazy(() => import('./components/WritingAiRoom'));
 
 // User ID state is now fully abstracted into a reactive component state (currentUserId)
 
 // Helper to generate unique local IDs without violating react-hooks/purity rule
 function generateLocalId(prefix: string): string {
   return `${prefix}_${typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString() + Math.random().toString(36).substring(2, 7)}`;
+}
+
+function LazyPanelFallback() {
+  return (
+    <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-8 text-center text-sm font-semibold text-slate-400">
+      Loading module...
+    </div>
+  );
 }
 
 function categorizeTest(test: any): 'diagnostic' | 'topic_bank' | 'practice_bank' | 'full_exam' {
@@ -420,55 +380,7 @@ export default function App() {
       try {
         await db.initialize();
         
-        const seedTests = [
-          SAMPLE_CPE_TEST,
-          CPE_PRACTICE_TEST_1_BOOK_3,
-          CPE_PRACTICE_TEST_2_BOOK_3,
-          CPE_PRACTICE_TEST_3_BOOK_3,
-          CPE_PRACTICE_TEST_4_BOOK_3,
-          CPE_PRACTICE_TEST_5_BOOK_3,
-          CPE_PRACTICE_TEST_6_BOOK_3,
-          CPE2_TEST_1,
-          CPE2_TEST_2,
-          CPE2_TEST_3,
-          CPE2_TEST_4,
-          CPE2_TEST_5,
-          CPE2_TEST_6,
-          CAM_CPE1_TEST1,
-          CAM_CPE1_TEST2,
-          CAM_CPE1_TEST3,
-          CAM_CPE1_TEST4,
-          CAMCP2_TEST1,
-          CAMCP2_TEST2,
-          CAMCP2_TEST3,
-          CAMCP2_TEST4,
-          CAMCP2_LISTENING_TOPIC_BANK,
-          CAMCP3_TEST1,
-          CAMCP3_TEST2,
-          CAMCP3_TEST3,
-          CAMCP3_TEST4,
-          CAMCP3_LISTENING_TOPIC_BANK,
-          CAMCP4_TEST1,
-          CAMCP4_TEST2,
-          CAMCP4_TEST3,
-          CAMCP4_TEST4,
-          CAMCP4_LISTENING_TOPIC_BANK,
-          CAMCP5_TEST1,
-          CAMCP5_TEST2,
-          CAMCP5_TEST3,
-          CAMCP5_TEST4,
-          CAMCP5_LISTENING_TOPIC_BANK,
-          CPE_ENTRY_TEST_1,
-          CPE_ENTRY_TEST_2,
-          CPE_ENTRY_TEST_3,
-          CPE_ENTRY_TEST_4,
-          CPE_ENTRY_TEST_5,
-          CPE_ENTRY_TEST_6,
-          CPE_ENTRY_TEST_7,
-          CPE_ENTRY_TEST_8,
-          CPE_ENTRY_TEST_9,
-          CPE_ENTRY_TEST_10
-        ];
+        const seedTests = await loadCpeSeedTests();
 
 
         const CURRENT_SEED_VERSION = '1.1.2';
@@ -484,7 +396,7 @@ export default function App() {
             }
 
             // Run content validation before saving to log specific failures
-            const validationErrors = validateIeltsTest(test);
+            const validationErrors = await validateContentTest(test);
             const critical = validationErrors.filter(err => err.severity === 'error');
             if (critical.length > 0) {
               console.error(`[Seeding] Skipping invalid seed test "${test.title || test.id}":`, critical);
@@ -579,7 +491,7 @@ export default function App() {
         const text = event.target?.result as string;
         const parsed = JSON.parse(text);
         
-        const errors = validateIeltsTest(parsed);
+        const errors = await validateContentTest(parsed);
         const criticalErrors = errors.filter(err => err.severity === 'error');
         
         if (criticalErrors.length > 0) {
@@ -832,66 +744,74 @@ export default function App() {
 
         {/* TAB 3: WRITING AI MODULE */}
         {currentTab === 'writing_ai' && (
-          <WritingAiRoom
-            writingFeedback={writingFeedback}
-            isAiLoading={isAiLoading}
-            aiErrorMsg={aiErrorMsg}
-            runWritingAiEvaluation={runWritingAiEvaluation}
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <WritingAiRoom
+              writingFeedback={writingFeedback}
+              isAiLoading={isAiLoading}
+              aiErrorMsg={aiErrorMsg}
+              runWritingAiEvaluation={runWritingAiEvaluation}
+            />
+          </Suspense>
         )}
 
         {/* TAB 4: ERROR NOTEBOOK SRS */}
         {currentTab === 'error_notebook' && (
-          <ErrorNotebook
-            errorEntries={errorEntries}
-            notebookSearch={notebookSearch}
-            setNotebookSearch={setNotebookSearch}
-            reviewQueue={reviewQueue}
-            setReviewQueue={setReviewQueue}
-            currentReviewIdx={currentReviewIdx}
-            setCurrentReviewIdx={setCurrentReviewIdx}
-            reviewUserAnswer={reviewUserAnswer}
-            setReviewUserAnswer={setReviewUserAnswer}
-            reviewShowCorrect={reviewShowCorrect}
-            setReviewShowCorrect={setReviewShowCorrect}
-            notebookFilter={notebookFilter}
-            setNotebookFilter={setNotebookFilter}
-            startNotebookReview={startNotebookReview}
-            handleSrsGrade={handleSrsGrade}
-            onViewInExam={handleViewInExam}
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <ErrorNotebook
+              errorEntries={errorEntries}
+              notebookSearch={notebookSearch}
+              setNotebookSearch={setNotebookSearch}
+              reviewQueue={reviewQueue}
+              setReviewQueue={setReviewQueue}
+              currentReviewIdx={currentReviewIdx}
+              setCurrentReviewIdx={setCurrentReviewIdx}
+              reviewUserAnswer={reviewUserAnswer}
+              setReviewUserAnswer={setReviewUserAnswer}
+              reviewShowCorrect={reviewShowCorrect}
+              setReviewShowCorrect={setReviewShowCorrect}
+              notebookFilter={notebookFilter}
+              setNotebookFilter={setNotebookFilter}
+              startNotebookReview={startNotebookReview}
+              handleSrsGrade={handleSrsGrade}
+              onViewInExam={handleViewInExam}
+            />
+          </Suspense>
         )}
 
         {/* TAB 5: SPEAKING AI ROOM */}
         {currentTab === 'speaking_ai' && (
-          <SpeakingAiRoom
-            speakingTopic={speakingTopic}
-            setSpeakingTopic={setSpeakingTopic}
-            speakingFeedback={speakingFeedback}
-            setSpeakingFeedback={setSpeakingFeedback}
-            aiConfig={aiConfig}
-            credentialStore={credentialStore}
-            generateLocalId={generateLocalId}
-            db={db}
-            track="cpe"
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <SpeakingAiRoom
+              speakingTopic={speakingTopic}
+              setSpeakingTopic={setSpeakingTopic}
+              speakingFeedback={speakingFeedback}
+              setSpeakingFeedback={setSpeakingFeedback}
+              aiConfig={aiConfig}
+              credentialStore={credentialStore}
+              generateLocalId={generateLocalId}
+              db={db}
+              track="cpe"
+            />
+          </Suspense>
         )}
 
         {/* TAB 6: ADAPTIVE LEARNING PRACTICE ROOM */}
         {currentTab === 'adaptive_room' && (
-          <AdaptivePracticeRoom
-            availableTests={availableTests}
-            db={db}
-            userId={currentUserId}
-            activeTrack="cpe"
-            weaknesses={getGlobalWeaknessAnalysis()}
-            onHistoryReload={loadHistory}
-            onNavigateTab={(tab) => {
-              setReviewQueue([]);
-              setCurrentReviewIdx(-1);
-              setActiveTab(tab);
-            }}
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <AdaptivePracticeRoom
+              availableTests={availableTests}
+              db={db}
+              userId={currentUserId}
+              activeTrack="cpe"
+              weaknesses={getGlobalWeaknessAnalysis()}
+              onHistoryReload={loadHistory}
+              onNavigateTab={(tab) => {
+                setReviewQueue([]);
+                setCurrentReviewIdx(-1);
+                setActiveTab(tab);
+              }}
+            />
+          </Suspense>
         )}
       </main>
 

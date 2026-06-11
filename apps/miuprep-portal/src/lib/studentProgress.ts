@@ -78,6 +78,7 @@ export interface DailyLearningPlan {
   completionPercent: number;
   completedStepCount: number;
   totalStepCount: number;
+  rewardCoins: number;
   isCompleted: boolean;
   primaryTitle: string;
   primaryDetail: string;
@@ -227,6 +228,7 @@ export interface ErrorNotebookV2Group {
 export const DEFAULT_STUDENT_COINS = 150;
 export const DEFAULT_STUDENT_TRAPS = 4;
 export const ERROR_RETRY_REWARD = 10;
+export const DAILY_PLAN_COMPLETION_REWARD = 25;
 
 export const DAILY_STUDY_TIME_MODES: StudyTimeModeOption[] = [
   { id: '15', label: '15 min', minutes: 15, description: 'Core sprint' },
@@ -772,23 +774,24 @@ export function buildDailyLearningPlan(input: DailyLearningPlanInput): DailyLear
     completionPercent: Math.min(100, Math.max(0, completionPercent)),
     completedStepCount,
     totalStepCount: steps.length,
+    rewardCoins: DAILY_PLAN_COMPLETION_REWARD,
     isCompleted,
     primaryTitle: isCompleted
-      ? 'Today target completed'
+      ? 'Today quest complete'
       : hasDueErrors
-        ? `Sua ${input.activeErrorCount} loi den han`
-        : 'Bat dau bai hoc tiep theo',
+        ? `Repair ${input.activeErrorCount} due mistake${input.activeErrorCount === 1 ? '' : 's'}`
+        : 'Start the next best lesson',
     primaryDetail: isCompleted
-      ? `Da hoan thanh ${completedStepCount}/${steps.length} buoc. Lan tiep theo he thong se day len muc kho hon hoac mo nut tiep theo.`
+      ? `Completed ${completedStepCount}/${steps.length} steps. Tomorrow's quest can unlock a harder move or the next skill link.`
       : hasDueErrors
-        ? 'He thong uu tien sua loi cu truoc khi mo kien thuc moi.'
-        : `Tiep tuc voi ${weakestProgram}, lay them evidence cho mastery.`,
-    whyTitle: hasDueErrors ? 'Vi sao sua loi truoc?' : 'Vi sao hoc bai nay?',
+        ? 'The system prioritizes old mistakes before opening new knowledge.'
+        : `Continue with ${weakestProgram} and collect short evidence for mastery.`,
+    whyTitle: hasDueErrors ? 'Why repair first?' : 'Why this lesson?',
     whyDetail: hasDueErrors
-      ? `Con ${input.activeErrorCount} loi dang den han. Loi dau tien o stage ${input.firstErrorStage || 1}; neu sua on dinh, learning path se bot bi nghen.`
-      : `${input.recommendationReason || input.recommendationKind || 'mastery_signal'}: ky nang yeu nhat hien la ${weakestLabel}. He thong can them evidence ngan, dung luc.`,
+      ? `${input.activeErrorCount} mistake${input.activeErrorCount === 1 ? '' : 's'} are due. The first one is at stage ${input.firstErrorStage || 1}; stable repair keeps the path from getting blocked.`
+      : `${input.recommendationReason || input.recommendationKind || 'mastery_signal'}: the weakest link is ${weakestLabel}. A short, timed action gives the system better evidence.`,
     unlockTitle: input.nextStepUnlocked ? 'Next is open' : 'Unlock next',
-    unlockDetail: `${targetLabel} dang o ${targetMastery}%. Dat khoang 80% va hoan thanh review hom nay de mo mixed challenge tiep theo.`,
+    unlockDetail: `${targetLabel} is at ${targetMastery}%. Reach about 80% and finish today's review to open the next mixed challenge.`,
     steps,
   };
 }

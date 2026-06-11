@@ -1,0 +1,997 @@
+[
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.396",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Câu 5(0,5): Gọi năm số tự nhiên liên tiếp là: a, a+1, a+2,a+3, a+4 ta có: a + a+1 + a+2 +a+3+ a+4 = (5a+10) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0653.png|w=8|h=20}} 5 ĐỀ KIẾN NGHỊ HỌC KỲ I NĂM HỌC 2012 – 2013 Môn: Toán 6 Thời gian: 90 phút",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0653.png"
+    ],
+    "count": 1,
+    "maxW": 8,
+    "ids": "396"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.249",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 10: a) M = a + b – 1 và N = b + c – 1. Biết M > N hỏi hiệu a – c dương hay âm? b) Cho M = ( - a + b ) – ( b + c – a ) + ( c – a ). Trong đó b, c {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0382.png|w=14|h=14}} Z còn a là một số nguyên âm. Chứng minh rắng biểu thức M luôn dương.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0382.png"
+    ],
+    "count": 1,
+    "maxW": 14,
+    "ids": "249"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.250",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 11: Cho A = a – b + c – 1; B = a + 2 với a, b, c {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0383.png|w=14|h=14}} Z Biết A = B, chứng minh rắng b và c là hai số nguyên liền nhau.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0383.png"
+    ],
+    "count": 1,
+    "maxW": 14,
+    "ids": "250"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.254",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 01: Cho a, b, c {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0395.png|w=14|h=14}} Z; A = a – b + c; B = - a + b – c. CMR: A và B là hai số đối nhau.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0395.png"
+    ],
+    "count": 1,
+    "maxW": 14,
+    "ids": "254"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.267",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 08: Lập các phân số bắng nhau từ đẳng thức: m. n = p. q ( m, n, p, q {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0462.png|w=14|h=14}} Z; m, n, p, q khác 0 )",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0462.png"
+    ],
+    "count": 1,
+    "maxW": 14,
+    "ids": "267"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.279",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 10: Vẽ góc bẹt xOy. Vẽ tia phân giác Oz của góc đó. Vẽ các tia Ot, Ot' lần lượt là các tia phân giác của góc xOz và yOz. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0502.png|w=18|h=16}} tOt'.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0502.png"
+    ],
+    "count": 1,
+    "maxW": 18,
+    "ids": "279"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.181",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 42. Liệt kê và tính tổng tất cả các số nguyên x thỏa mãn: a) – 4 < x < 5 b) – 7 < x < 5 c) – 19 < x < 20 d) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0179.png|w=19|h=27}} < 10",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0179.png"
+    ],
+    "count": 1,
+    "maxW": 19,
+    "ids": "181"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.248",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 09: Cho a > b; tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0381.png|w=19|h=27}} biết. S = - ( a – b – c ) + ( - c + b + a ) – ( a + b )",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0381.png"
+    ],
+    "count": 1,
+    "maxW": 19,
+    "ids": "248"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.330",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 2: Tìm số đối của các số sau: -9; 6; 0;-(-3 ); {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0576.png|w=28|h=27}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0576.png"
+    ],
+    "count": 1,
+    "maxW": 28,
+    "ids": "330"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.340",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 3: Chứng minh rằng: a/ A= 3+32 + 33+..........+360 chia hết cho 13 b/ (n+3).(n+6) chia hết cho 2 ( với mọi n {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0587.png|w=30|h=18}} ) c/ CMR: hai số tự nhiên lẻ liên tiếp là hai số nguyên tố cùng nhau.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0587.png"
+    ],
+    "count": 1,
+    "maxW": 30,
+    "ids": "340"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.225",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 7:Tìm phân số bắng phân số {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0339.png|w=32|h=42}} biết rắng hiệu giữa mẫu và tử của phân số đó bắng -160",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0339.png"
+    ],
+    "count": 1,
+    "maxW": 32,
+    "ids": "225"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.229",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 11: Tìm tất cả các số nguyên n để phân số: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0346.png|w=54|h=42}} là phân số tối giản.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0346.png"
+    ],
+    "count": 1,
+    "maxW": 54,
+    "ids": "229"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.358",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 4: Chứng minh rắng: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0617.png|w=74|h=22}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0617.png"
+    ],
+    "count": 1,
+    "maxW": 74,
+    "ids": "358"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.085",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "BÀI TẬP 27: Tìm các số tự nhiên a và b thoả mãn {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0102.png|w=91|h=42}} và (a, b) = 1",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0102.png"
+    ],
+    "count": 1,
+    "maxW": 91,
+    "ids": "085"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.090",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "BÀI TẬP 32: Tìm hai số nguyên tố a và b sao cho: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0107.png|w=114|h=22}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0107.png"
+    ],
+    "count": 1,
+    "maxW": 114,
+    "ids": "090"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.088",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "BÀI TẬP 30: Cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0105.png|w=116|h=22}} a) Chứng minh rắng A chia hết cho 3 với mọi số nguyên n. b) Tìm giá trị nguyên dương của n với n < 10 để A chia hết cho 15.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0105.png"
+    ],
+    "count": 1,
+    "maxW": 116,
+    "ids": "088"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.145",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 7: Cho số tự nhiên n. CMR: a, 5n – 1 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0168.png|w=8|h=20}} 4 b, n {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0169.png|w=11|h=20}} + n + 1 không chia hết cho 4 và cho 5.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0168.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0169.png"
+    ],
+    "count": 2,
+    "maxW": 11,
+    "ids": "145"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.274",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 05: Vẽ hai góc kề bù xOy, yOx', biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0486.png|w=18|h=16}} xOy = 1500. Gọi Ot là tia phân giác của góc xOy. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0487.png|w=18|h=16}} x'Ot",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0486.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0487.png"
+    ],
+    "count": 2,
+    "maxW": 18,
+    "ids": "274"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.284",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 15: Hãy vẽ ba tia chung gốc Ox, Oy, Oz, trong đó {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0519.png|w=18|h=16}} xOz = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0520.png|w=18|h=16}} zOy mà Oz không phải là tia phân giác của góc xOy.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0519.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0520.png"
+    ],
+    "count": 2,
+    "maxW": 18,
+    "ids": "284"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.230",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 12: Cộng cả tử và mẫu của phân số {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0347.png|w=24|h=42}} với cùng một số tự nhiên n rồi rút gọn được {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0348.png|w=16|h=42}}.Tìm số n",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0347.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0348.png"
+    ],
+    "count": 2,
+    "maxW": 24,
+    "ids": "230"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.263",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 04:Tìm phân số {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0426.png|w=16|h=42}} bắng phân số {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0427.png|w=24|h=42}}, biết: Tổng của tử và mẫu là 10 g) BCNN(a, b) = 90 Hiệu của tử và mẫu là 3 h) ƯCLN(a, b) = 54 Tích của tử và mẫu là 150 i) BCNN(a, b). ƯCLN(a, b) = 3456",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0426.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0427.png"
+    ],
+    "count": 2,
+    "maxW": 24,
+    "ids": "263"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.262",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 03:Tìm phân số {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0424.png|w=16|h=42}} bắng phân số {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0425.png|w=30|h=42}}, biết: a) Tổng của tử và mẫu là 42 b) Hiệu của tử và mẫu là 57 c) Tích của tử và mẫu là 90",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0424.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0425.png"
+    ],
+    "count": 2,
+    "maxW": 30,
+    "ids": "262"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.237",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 06: Tìm số nguyên x biết rắng:2002 < {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0360.png|w=39|h=27}} < 2007 và {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0361.png|w=39|h=27}} đạt giá trị lớn nhất, giá trị nhỏ nhất.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0360.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0361.png"
+    ],
+    "count": 2,
+    "maxW": 39,
+    "ids": "237"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.351",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 4: Tìm số nguyên x biết: a/ x + 23 = 15 b / x - (-14) = 18 +(-18) c/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0598.png|w=18|h=27}} + 15 = 19 c*/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0599.png|w=40|h=27}} =25",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0598.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0599.png"
+    ],
+    "count": 2,
+    "maxW": 40,
+    "ids": "351"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.251",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 12: Tìm x {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0384.png|w=14|h=14}} Z, biết: 1 < {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0385.png|w=42|h=27}} < 4",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0384.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0385.png"
+    ],
+    "count": 2,
+    "maxW": 42,
+    "ids": "251"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.371",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 17: x lớn nhất và {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0643.png|w=62|h=24}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0644.png|w=62|h=24}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0643.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0644.png"
+    ],
+    "count": 2,
+    "maxW": 62,
+    "ids": "371"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.367",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 13: Tìm số nguyên tố p để a) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0635.png|w=83|h=22}} là số nguyên tố. b) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0636.png|w=91|h=22}} là số nguyên tố.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0635.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0636.png"
+    ],
+    "count": 2,
+    "maxW": 91,
+    "ids": "367"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.391",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Câu 2 (1,5đ): Tìm x, biết: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0651.png|w=98|h=27}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0652.png|w=96|h=27}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0651.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0652.png"
+    ],
+    "count": 2,
+    "maxW": 98,
+    "ids": "391"
+  },
+  {
+    "id": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.347",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.points_lines_segments",
+    "prompt": "Bài 10: Cho đoạn thẳng AB và trung điểm M của nó. a/ Chứng tỏ rằng: Nếu C là điểm nằm giữa M và B thì {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0591.png|w=104|h=42}} b/ Nếu C thuộc tia đối của tia AB. Chứng tỏ rằng: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0592.png|w=104|h=42}} ĐỀ THI HỌC KỲ I Môn toán 6- Năm học: 2011-2012 Thời gian: 90 phút",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0591.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0592.png"
+    ],
+    "count": 2,
+    "maxW": 104,
+    "ids": "347"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.098",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "BÀI TẬP 40: So sánh: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0116.png|w=110|h=44}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0117.png|w=110|h=44}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0116.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0117.png"
+    ],
+    "count": 2,
+    "maxW": 110,
+    "ids": "098"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.275",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 06: Vẽ hai góc kề bù xOy, yOx', biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0488.png|w=18|h=16}} xOy = 500. Gọi Ot là tia phân giác của góc xOy. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0489.png|w=18|h=16}} x'Ot, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0490.png|w=18|h=16}} xOt'.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0488.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0489.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0490.png"
+    ],
+    "count": 3,
+    "maxW": 18,
+    "ids": "275"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.276",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 07: Vẽ hai góc kề bù xOy, yOx', biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0491.png|w=18|h=16}} xOy = 900. Gọi Ot là tia phân giác của góc xOy. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0492.png|w=18|h=16}} x'Ot, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0493.png|w=18|h=16}} xOt'.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0491.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0492.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0493.png"
+    ],
+    "count": 3,
+    "maxW": 18,
+    "ids": "276"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.280",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 11: Cho hai tia Oy, Oz cùng nắm trên một nửa mặt phẳng bờ chứa tia Ox. Biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0503.png|w=18|h=16}} xOy = 400, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0504.png|w=18|h=16}} xOz = 1200. Vẽ các tia Oa, Ob lần lượt là các tia phân giác của các góc xOy, yOz. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0505.png|w=18|h=16}} aOb.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0503.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0504.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0505.png"
+    ],
+    "count": 3,
+    "maxW": 18,
+    "ids": "280"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.281",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 12: Cho hai tia Oy, Oz cùng nắm trên một nửa mặt phẳng bờ chứa tia Ox. Biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0506.png|w=18|h=16}} xOy = 900, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0507.png|w=18|h=16}} xOz = 1500. Vẽ các tia Ot, Ot' lần lượt là các tia phân giác của các góc xOy, yOz. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0508.png|w=18|h=16}} tOt'.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0506.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0507.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0508.png"
+    ],
+    "count": 3,
+    "maxW": 18,
+    "ids": "281"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.294",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 03: Trên cùng một nửa mặt phẳng bờ chứa tia OA, vẽ các tia OB, OC sao cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0542.png|w=18|h=16}} AOB = 300, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0543.png|w=18|h=16}} AOC = 750. xOy = 350, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0544.png|w=18|h=16}} xOz = 700. a) Tia nào trong ba tia Ox, Oy, Oz nắm giữa hai tia còn lại? b) Tia Oy có phải là tia phân giác của góc xOz không? Vì sao?",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0542.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0543.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0544.png"
+    ],
+    "count": 3,
+    "maxW": 18,
+    "ids": "294"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.332",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 4: Liệt kê và tính tổng các số nguyên x biết: a/ -6 < x < 4; b/ (-2) +(-3) < x < {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0579.png|w=30|h=27}}; c/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0580.png|w=18|h=27}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0581.png|w=14|h=16}} 2",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0579.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0580.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0581.png"
+    ],
+    "count": 3,
+    "maxW": 30,
+    "ids": "332"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.261",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 02:Cho phân số A = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0421.png|w=39|h=42}} với n {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0422.png|w=14|h=14}} Z và n {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0423.png|w=15|h=15}} 0. Số nguyên n phải thoả mãn đk gì để phân số A tồn tại? Tìm phân số A, khi n = 0; n = 5; n = 7. Với giá trị nào của n thì A là số nguyên?",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0421.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0422.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0423.png"
+    ],
+    "count": 3,
+    "maxW": 39,
+    "ids": "261"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.236",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 05: Chứng minh rắng với a, b {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0357.png|w=14|h=14}} Z thì a. a – b và b – a là hai số đối nhau. b. {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0358.png|w=42|h=27}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0359.png|w=42|h=27}}.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0357.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0358.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0359.png"
+    ],
+    "count": 3,
+    "maxW": 42,
+    "ids": "236"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.350",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 3: Điền chữ số thích hợp vào dấu * để: a/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0595.png|w=46|h=23}}; b/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0596.png|w=28|h=22}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0597.png|w=18|h=20}} và 9",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0595.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0596.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0597.png"
+    ],
+    "count": 3,
+    "maxW": 46,
+    "ids": "350"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.369",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 15: Cho p là số nguyên tố lớn hơn 3.Chứng tỏ rắng: p có dạng {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0640.png|w=42|h=19}} hoặc {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0641.png|w=43|h=19}} với {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0642.png|w=47|h=22}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0640.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0641.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0642.png"
+    ],
+    "count": 3,
+    "maxW": 47,
+    "ids": "369"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.228",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 10: Chứng tỏ rắng: các phân số sau đây là phân số tối giản với mọi số tự nhiên n. a, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0343.png|w=46|h=42}} b, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0344.png|w=51|h=42}} c, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0345.png|w=79|h=44}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0343.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0344.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0345.png"
+    ],
+    "count": 3,
+    "maxW": 79,
+    "ids": "228"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.368",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 14:Cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0637.png|w=80|h=22}} và n không chia hết cho 3. Chứng minh rắng: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0638.png|w=39|h=22}} và {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0639.png|w=39|h=22}} không thể đồng thời là số nguyên tố.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0637.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0638.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0639.png"
+    ],
+    "count": 3,
+    "maxW": 80,
+    "ids": "368"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.196",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 3: a) Biết a – 5b {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0184.png|w=7|h=21}} 17 CMR 10a + b {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0185.png|w=7|h=21}} 17 (a, b ( N) b) Biết 3a + 2b {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0186.png|w=7|h=21}} 17 CMR 10a + b {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0187.png|w=7|h=21}} 17 (a, b ( N)",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0184.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0185.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0186.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0187.png"
+    ],
+    "count": 4,
+    "maxW": 7,
+    "ids": "196"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.042",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 8: Cho A = 4+4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0052.png|w=11|h=20}} +4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0053.png|w=10|h=20}} +...+ 4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0054.png|w=15|h=20}} +4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0055.png|w=15|h=20}}. CMR: A chia hết cho 20; 21; và 420.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0052.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0053.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0054.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0055.png"
+    ],
+    "count": 4,
+    "maxW": 15,
+    "ids": "042"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.146",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 8: Cho A = 4+4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0170.png|w=11|h=20}} +4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0171.png|w=10|h=20}} +...+ 4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0172.png|w=15|h=20}} +4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0173.png|w=15|h=20}}. CMR: A chia hết cho 20; 21 và 420.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0170.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0171.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0172.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0173.png"
+    ],
+    "count": 4,
+    "maxW": 15,
+    "ids": "146"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.270",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 01: Trên cùng một nửa mặt phẳng bờ chứa tia OA, vẽ hai tia OB, OC sao cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0470.png|w=18|h=16}} BOA = 1250, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0471.png|w=12|h=23}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0472.png|w=18|h=16}} COA = 500. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0473.png|w=18|h=16}} BOC.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0470.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0471.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0472.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0473.png"
+    ],
+    "count": 4,
+    "maxW": 18,
+    "ids": "270"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.271",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 02: Gọi Ot, Ot' là hai tia nắm trên cùng một nửa mặt phẳng bờ là đường thẳng xy đi qua O. Biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0474.png|w=18|h=16}} xOt = 400, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0475.png|w=18|h=16}} yOt' = 600. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0476.png|w=18|h=16}} yOt, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0477.png|w=18|h=16}} yOt'.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0474.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0475.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0476.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0477.png"
+    ],
+    "count": 4,
+    "maxW": 18,
+    "ids": "271"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.272",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 03: Gọi Ot, Ot' là hai tia nắm trên cùng một nửa mặt phẳng bờ là đường thẳng xy đi qua O. Biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0478.png|w=18|h=16}} xOt = 300, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0479.png|w=18|h=16}} yOt' = 500. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0480.png|w=18|h=16}} yOt, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0481.png|w=18|h=16}} yOt'.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0478.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0479.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0480.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0481.png"
+    ],
+    "count": 4,
+    "maxW": 18,
+    "ids": "272"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.273",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 04: Gọi Ot, Ot' là hai tia nắm trên cùng một nửa mặt phẳng bờ là đường thẳng xy đi qua O. Biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0482.png|w=18|h=16}} xOt = 800, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0483.png|w=18|h=16}} yOt' = 600. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0484.png|w=18|h=16}} yOt, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0485.png|w=18|h=16}} yOt'.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0482.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0483.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0484.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0485.png"
+    ],
+    "count": 4,
+    "maxW": 18,
+    "ids": "273"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.277",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 08: Vẽ hai góc kề bù xOy, yOx', biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0494.png|w=18|h=16}} xOy = 1500. Gọi Ot là tia phân giác của góc xOy, Ot' là tia phân giác của góc yOx'. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0495.png|w=18|h=16}} xOt', {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0496.png|w=18|h=16}} x'Ot, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0497.png|w=18|h=16}} tOt'",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0494.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0495.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0496.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0497.png"
+    ],
+    "count": 4,
+    "maxW": 18,
+    "ids": "277"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.278",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 09: Vẽ hai góc kề bù xOy, yOx', biết {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0498.png|w=18|h=16}} xOy = 700. Gọi Ot là tia phân giác của góc xOy, Ot' là tia phân giác của góc yOx'. Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0499.png|w=18|h=16}} x'Ot, {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0500.png|w=18|h=16}} xOt', {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0501.png|w=18|h=16}} tOt'",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0498.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0499.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0500.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0501.png"
+    ],
+    "count": 4,
+    "maxW": 18,
+    "ids": "278"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.287",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 18: Cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0526.png|w=18|h=16}} xOy = 1300. ở trong góc đó vẽ hai tia Om, On sao cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0527.png|w=18|h=16}} xOm + {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0528.png|w=18|h=16}} yOn = 1000. a) Trong ba tia Ox, Om, On tia nào nắm giữa hai tia còn lại? b) Tính {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0529.png|w=18|h=16}} mOn.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0526.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0527.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0528.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0529.png"
+    ],
+    "count": 4,
+    "maxW": 18,
+    "ids": "287"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.352",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 5: Liệt kê và tính tổng các số nguyên x biết: a/ -6 < x < 4; b/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0600.png|w=18|h=27}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0601.png|w=14|h=16}} 2; b* / {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0602.png|w=19|h=27}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0603.png|w=14|h=16}} 1001",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0600.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0601.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0602.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0603.png"
+    ],
+    "count": 4,
+    "maxW": 19,
+    "ids": "352"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.328",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 2: Tìm các chữ số a, b để: a/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0572.png|w=36|h=23}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0573.png|w=8|h=20}} (2,3, 5 và 9 ); b/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0574.png|w=28|h=26}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0575.png|w=8|h=20}} 3 và 5 VI/ Dạng bài tập về số nguyên",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0572.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0573.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0574.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0575.png"
+    ],
+    "count": 4,
+    "maxW": 36,
+    "ids": "328"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.183",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 44. Tìm số nguyên x, biết: a) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0180.png|w=19|h=27}} = 4 b) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0181.png|w=40|h=27}} = 6 c) 2x – 35 = 15 d) 3x – 17 = - 2 e) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0182.png|w=38|h=27}} = 251 + (- 151) f) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0183.png|w=40|h=27}} = 0 g) 2.x – 18 = 10 h) 3. x – 25 = 5",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0180.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0181.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0182.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0183.png"
+    ],
+    "count": 4,
+    "maxW": 40,
+    "ids": "183"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.239",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 08: a) Tìm giá trị nhỏ nhất của biểu thức A = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0370.png|w=39|h=27}} + 1980 với x {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0371.png|w=14|h=14}} Z b) Tìm giá trị lớn nhất của biểu thức B = - {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0372.png|w=40|h=27}} + 1986 với x {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0373.png|w=14|h=14}} Z Chú ý: Học sinh tích cực ôn tập để chuẩn bị thi học kì I đạt kết quả tốt. @. COM.6CD.0986053022 Tờ bài tập số 10",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0370.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0371.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0372.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0373.png"
+    ],
+    "count": 4,
+    "maxW": 40,
+    "ids": "239"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.327",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 1: Điền chữ số thích hợp vào dấu * để: a/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0568.png|w=46|h=23}}; b/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0569.png|w=44|h=23}} mà không chia hết cho 9 c/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0570.png|w=35|h=23}} 5 và 9; d/ {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0571.png|w=36|h=23}} 2 và 3",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0568.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0569.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0570.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0571.png"
+    ],
+    "count": 4,
+    "maxW": 46,
+    "ids": "327"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.362",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 8: Tìm {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0621.png|w=42|h=19}} để:a) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0622.png|w=63|h=20}} b) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0623.png|w=55|h=20}} c) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0624.png|w=72|h=20}} d) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0625.png|w=64|h=20}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0621.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0622.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0623.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0624.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0625.png"
+    ],
+    "count": 5,
+    "maxW": 72,
+    "ids": "362"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.264",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 05:Viết các phân số sau dưới dạng phân số có mẫu dương: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0428.png|w=35|h=42}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0429.png|w=35|h=42}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0430.png|w=35|h=42}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0431.png|w=35|h=42}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0432.png|w=35|h=42}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0433.png|w=27|h=42}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0428.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0429.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0430.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0431.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0432.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0433.png"
+    ],
+    "count": 6,
+    "maxW": 35,
+    "ids": "264"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.268",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 09: Cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0463.png|w=16|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0464.png|w=18|h=42}} CMR: a) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0465.png|w=16|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0466.png|w=40|h=42}} b) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0467.png|w=40|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0468.png|w=16|h=42}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0463.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0464.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0465.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0466.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0467.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0468.png"
+    ],
+    "count": 6,
+    "maxW": 40,
+    "ids": "268"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.109",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "BÀI TẬP 51: a) Một bà bán trứng cho ba người: bán cho người thứ nhất {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0127.png|w=16|h=42}} số trứng và 3 quả; bán cho người thứ hai {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0128.png|w=15|h=42}} số trứng còn lại và 4 quả; bán cho người thứ ba {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0129.png|w=16|h=42}} số trứng còn lại và 5 quả. Cuối cùng còn lại 6 quả. Tính số trứng bà đã bán cho ba người? b) Tìm các số tự nhiên a, b, c, d nhỏ nhất sao cho: {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0130.png|w=43|h=42}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0131.png|w=50|h=42}}; {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0132.png|w=51|h=42}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0127.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0128.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0129.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0130.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0131.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0132.png"
+    ],
+    "count": 6,
+    "maxW": 51,
+    "ids": "109"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.128",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "bài 19: Tìm n {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0159.png|w=14|h=14}} N để: a) (n + 12) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0160.png|w=8|h=20}} n b) (8n + 33) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0161.png|w=8|h=20}} n c) (50 – 2n) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0162.png|w=8|h=20}} n d) (n - 2) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0163.png|w=8|h=20}} n + 1 e) (3n + 3) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0164.png|w=8|h=20}} (n – 5) g) (3n + 34) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0165.png|w=8|h=20}} (n + 5)",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0159.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0160.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0161.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0162.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0163.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0164.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0165.png"
+    ],
+    "count": 7,
+    "maxW": 14,
+    "ids": "128"
+  },
+  {
+    "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.283",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.geometry.angles",
+    "prompt": "Bài 14: Cho góc xOy có {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0512.png|w=18|h=16}} xOy = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0513.png|w=16|h=15}} ( 0 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0514.png|w=11|h=22}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0515.png|w=16|h=15}} {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0516.png|w=14|h=16}} 1800 ). Trên nửa mặt phẳng bờ chứa tia Ox, vẽ tia Oz sao cho {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0517.png|w=18|h=16}} xOz = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0518.png|w=19|h=42}}. CMR: Oz là tia phân giác của góc xOy.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0512.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0513.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0514.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0515.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0516.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0517.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0518.png"
+    ],
+    "count": 7,
+    "maxW": 19,
+    "ids": "283"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.357",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 3: Tìm {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0610.png|w=42|h=19}} để a) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0611.png|w=51|h=20}} b) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0612.png|w=62|h=20}} c) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0613.png|w=66|h=20}} d) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0614.png|w=70|h=20}} e) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0615.png|w=78|h=20}} g) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0616.png|w=91|h=20}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0610.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0611.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0612.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0613.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0614.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0615.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0616.png"
+    ],
+    "count": 7,
+    "maxW": 91,
+    "ids": "357"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.199",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 6: Tìm n sao cho a) n + 4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0193.png|w=7|h=21}} n + 1 b) n2 + 4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0194.png|w=7|h=21}} n + 2 Giải: a) n + 4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0195.png|w=7|h=21}} n + 1 => (n + 1) + 3 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0196.png|w=7|h=21}} n + 1 => 3 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0197.png|w=7|h=21}} n + 1 b- n2 + 4 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0198.png|w=7|h=21}} n + 2 => n2 + 2n – 2n – 2 + 6 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0199.png|w=7|h=21}} n + 1 => n(n + 2) – 2 (n + 2) + 6 {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0200.png|w=7|h=21}} n + 1",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0193.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0194.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0195.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0196.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0197.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0198.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0199.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0200.png"
+    ],
+    "count": 8,
+    "maxW": 7,
+    "ids": "199"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.266",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 07:Tìm các số nguyên x, y, z, t, biết: a) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0454.png|w=28|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0455.png|w=16|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0456.png|w=30|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0457.png|w=35|h=42}} b) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0458.png|w=36|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0459.png|w=16|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0460.png|w=26|h=46}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0461.png|w=28|h=44}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0454.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0455.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0456.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0457.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0458.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0459.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0460.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0461.png"
+    ],
+    "count": 8,
+    "maxW": 36,
+    "ids": "266"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.010",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "bài 02: CMR a) ( 102007 + 71 ) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0019.png|w=8|h=20}} 9 b) ( 2403.a + 18.b ) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0020.png|w=8|h=20}} 9 với {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0021.png|w=16|h=18}} a, b {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0022.png|w=14|h=14}} N. c) ( 102008 + 35 ) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0023.png|w=8|h=20}} 45 d) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0024.png|w=52|h=23}} chia hết cho cả 7; 11 và 13. e) 243.a + 8181.b + 927.c chia hết cho 3, cho 9 với {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0025.png|w=16|h=18}} a, b, c {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0026.png|w=14|h=14}} N.",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0019.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0020.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0021.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0022.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0023.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0024.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0025.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0026.png"
+    ],
+    "count": 8,
+    "maxW": 52,
+    "ids": "010"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.235",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài 04: Tìm số nguyên x biết rắng. 1) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0349.png|w=55|h=27}} = 0 2) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0350.png|w=40|h=27}} = 7 3) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0351.png|w=54|h=27}} = 4 4) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0352.png|w=42|h=27}} = 12 5) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0353.png|w=56|h=27}} = 0 6) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0354.png|w=42|h=27}} = 21 7) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0355.png|w=54|h=27}} = 24 8) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0356.png|w=40|h=27}} + 12 = 0",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0349.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0350.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0351.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0352.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0353.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0354.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0355.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0356.png"
+    ],
+    "count": 8,
+    "maxW": 56,
+    "ids": "235"
+  },
+  {
+    "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.265",
+    "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+    "topic": "math6.number.sets_natural_numbers",
+    "prompt": "Bài tập 06:Tìm số nguyên x biết: a) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0434.png|w=15|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0435.png|w=24|h=42}} b) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0436.png|w=28|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0437.png|w=16|h=42}} c) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0438.png|w=28|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0439.png|w=15|h=42}} d) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0440.png|w=28|h=44}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0441.png|w=27|h=42}} e) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0442.png|w=16|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0443.png|w=34|h=42}} f) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0444.png|w=28|h=44}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0445.png|w=34|h=42}} g) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0446.png|w=28|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0447.png|w=34|h=42}} h) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0448.png|w=28|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0449.png|w=16|h=42}} i) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0450.png|w=35|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0451.png|w=30|h=44}} k) {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0452.png|w=16|h=42}} = {{formula:/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0453.png|w=27|h=42}}",
+    "formulas": [
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0434.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0435.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0436.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0437.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0438.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0439.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0440.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0441.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0442.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0443.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0444.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0445.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0446.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0447.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0448.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0449.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0450.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0451.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0452.png",
+      "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0453.png"
+    ],
+    "count": 20,
+    "maxW": 35,
+    "ids": "265"
+  }
+]

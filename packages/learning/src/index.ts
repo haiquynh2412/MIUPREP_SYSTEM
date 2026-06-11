@@ -172,10 +172,12 @@ export interface MasteryEstimate {
   accuracy: number;
   hardAttempts: number;
   hardCorrect: number;
+  consecutiveFailures: number;
   confidence: number;
   score: number;
   status: MasteryStatus;
   lastAttemptAt: string;
+  lastAttemptDifficulty: string;
   lastCorrectAt: string;
   lastWrongAt: string;
   errorCategories: ErrorCategory[];
@@ -268,6 +270,7 @@ export interface Recommendation {
   detail: string;
   priority: number;
   domainId?: string;
+  difficulty?: string;
   conceptIds: string[];
   skillIds: string[];
   reason: string;
@@ -813,12 +816,13 @@ export function scheduleErrorNotebookReview(entry: ErrorNotebookEntryCore, grade
   let easeFactor = normalized.easeFactor;
   let lapseCount = normalized.lapseCount || 0;
   let baseIntervalDays = intervalDays;
+  const misconceptionCount = (normalized.misconceptionIds || []).length;
 
   if (boundedGrade >= 3) {
     if (repetitions === 0) baseIntervalDays = 1;
     else if (repetitions === 1) baseIntervalDays = 6;
     else baseIntervalDays = Math.max(1, Math.round(intervalDays * easeFactor));
-    intervalDays = tuneSrsIntervalDays(baseIntervalDays, boundedGrade, normalized.difficulty || "medium", lapseCount);
+    intervalDays = tuneSrsIntervalDays(baseIntervalDays, boundedGrade, normalized.difficulty || "medium", lapseCount, misconceptionCount);
     repetitions += 1;
   } else {
     repetitions = 0;
@@ -843,6 +847,7 @@ export function scheduleErrorNotebookReview(entry: ErrorNotebookEntryCore, grade
       difficulty: normalized.difficulty || "medium",
       previousLapseCount: normalized.lapseCount || 0,
       nextLapseCount: lapseCount,
+      misconceptionCount,
       baseIntervalDays,
       intervalDays,
       repetitions,
@@ -850,11 +855,12 @@ export function scheduleErrorNotebookReview(entry: ErrorNotebookEntryCore, grade
   };
 }
 
-function tuneSrsIntervalDays(baseIntervalDays: number, grade: number, difficulty: string, lapseCount: number): number {
+function tuneSrsIntervalDays(baseIntervalDays: number, grade: number, difficulty: string, lapseCount: number, misconceptionCount: number = 0): number {
   const difficultyMultiplier = srsDifficultyMultiplier(difficulty);
   const gradeMultiplier = grade >= 5 ? 1.15 : grade === 3 ? 0.85 : 1;
   const lapseMultiplier = Math.pow(0.85, Math.min(3, Math.max(0, lapseCount)));
-  return Math.max(1, Math.round(baseIntervalDays * difficultyMultiplier * gradeMultiplier * lapseMultiplier));
+  const misconceptionMultiplier = misconceptionCount > 0 ? 0.9 : 1;
+  return Math.max(1, Math.round(baseIntervalDays * difficultyMultiplier * gradeMultiplier * lapseMultiplier * misconceptionMultiplier));
 }
 
 function srsDifficultyMultiplier(difficulty: string): number {
@@ -869,6 +875,7 @@ function buildSrsReason(input: {
   difficulty: string;
   previousLapseCount: number;
   nextLapseCount: number;
+  misconceptionCount: number;
   baseIntervalDays: number;
   intervalDays: number;
   repetitions: number;
@@ -876,7 +883,8 @@ function buildSrsReason(input: {
   if (input.grade < 3) {
     return `Grade ${input.grade} reset the card to 1 day; lapse count ${input.previousLapseCount} -> ${input.nextLapseCount}.`;
   }
-  return `Grade ${input.grade}, difficulty ${normalizeDifficulty(input.difficulty)}, lapse count ${input.previousLapseCount}, base ${input.baseIntervalDays} days -> ${input.intervalDays} days after SRS tuning; repetitions now ${input.repetitions}.`;
+  const misconceptionDetail = input.misconceptionCount > 0 ? `, misconception signals ${input.misconceptionCount}` : "";
+  return `Grade ${input.grade}, difficulty ${normalizeDifficulty(input.difficulty)}, lapse count ${input.previousLapseCount}${misconceptionDetail}, base ${input.baseIntervalDays} days -> ${input.intervalDays} days after SRS tuning; repetitions now ${input.repetitions}.`;
 }
 
 export function getDueErrorNotebookEntries(entries: ErrorNotebookEntryCore[], now: string = new Date().toISOString()): ErrorNotebookEntryCore[] {
@@ -1358,8 +1366,9 @@ export function buildEmpiricalDifficultyShadowReport(
   };
 }
 
-export function recommendNextAction(state: StudentModel, options: { diagnosticMinAttempts?: number } = {}): Recommendation {
+export function recommendNextAction(state: StudentModel, options: { diagnosticMinAttempts?: number; rerouteFailureThreshold?: number } = {}): Recommendation {
   const diagnosticMinAttempts = Math.max(1, Number(options.diagnosticMinAttempts || 8));
+  const rerouteFailureThreshold = Math.max(2, Number(options.rerouteFailureThreshold || 5));
   if (state.attempts.length < diagnosticMinAttempts) {
     return {
       kind: "diagnostic",
@@ -1373,6 +1382,11 @@ export function recommendNextAction(state: StudentModel, options: { diagnosticMi
   }
 
   const mastery = computeMastery(state);
+  const stuck = mastery.find((row) => row.consecutiveFailures >= rerouteFailureThreshold);
+  if (stuck) {
+    return buildRerouteRecommendation(stuck, rerouteFailureThreshold);
+  }
+
   const repair = mastery.find((row) => row.status === "repair");
   if (repair) {
     return {
@@ -1424,6 +1438,42 @@ export function recommendNextAction(state: StudentModel, options: { diagnosticMi
     skillIds: [],
     reason: "stable_mastery",
   };
+}
+
+function buildRerouteRecommendation(row: MasteryEstimate, threshold: number): Recommendation {
+  const currentDifficulty = normalizeDifficulty(row.lastAttemptDifficulty || "medium");
+  const easierDifficulty = easierPracticeDifficulty(currentDifficulty);
+  const scopedIds = row.scope === "concept" ? { conceptIds: [row.id], skillIds: [] } : { conceptIds: [], skillIds: [row.id] };
+
+  if (!easierDifficulty) {
+    return {
+      kind: "review",
+      title: "Relearn prerequisite",
+      detail: `${row.id} has ${row.consecutiveFailures} consecutive misses at easy level. Review the prerequisite lesson before assigning more repair attempts.`,
+      priority: 95,
+      domainId: row.domainId,
+      ...scopedIds,
+      reason: "consecutive_failures_prerequisite",
+    };
+  }
+
+  return {
+    kind: "practice",
+    title: "Reroute to easier practice",
+    detail: `${row.id} has ${row.consecutiveFailures} consecutive misses. Move from ${currentDifficulty || "current"} to ${easierDifficulty} practice before retrying repair.`,
+    priority: 95,
+    domainId: row.domainId,
+    difficulty: easierDifficulty,
+    ...scopedIds,
+    reason: `consecutive_failures_${threshold}`,
+  };
+}
+
+function easierPracticeDifficulty(difficulty: string): string | null {
+  const normalized = normalizeDifficulty(difficulty || "medium");
+  if (normalized === "hard") return "medium";
+  if (normalized === "medium") return "easy";
+  return null;
 }
 
 export function buildDiagnosticSet<T extends LearningItem>(items: T[], attempts: AttemptRecord[] = [], options: DiagnosticOptions = {}): T[] {
@@ -1910,10 +1960,12 @@ function updateMastery(rows: Map<string, MasteryAccumulator>, scope: MasteryScop
       accuracy: 0,
       hardAttempts: 0,
       hardCorrect: 0,
+      consecutiveFailures: 0,
       confidence: 0,
       score: 0,
       status: "collect_evidence",
       lastAttemptAt: "",
+      lastAttemptDifficulty: "",
       lastCorrectAt: "",
       lastWrongAt: "",
       errorCategories: [],
@@ -1921,10 +1973,13 @@ function updateMastery(rows: Map<string, MasteryAccumulator>, scope: MasteryScop
     } satisfies MasteryAccumulator);
 
   row.attempts += 1;
+  row.lastAttemptDifficulty = normalizeDifficulty(attempt.difficulty || "medium");
   if (attempt.correct) {
     row.correct += 1;
+    row.consecutiveFailures = 0;
     row.lastCorrectAt = maxIso(row.lastCorrectAt, attempt.answeredAt);
   } else {
+    row.consecutiveFailures += 1;
     row.lastWrongAt = maxIso(row.lastWrongAt, attempt.answeredAt);
   }
   if (normalizeDifficulty(attempt.difficulty || "") === "hard") {

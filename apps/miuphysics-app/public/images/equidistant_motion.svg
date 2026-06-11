@@ -1,0 +1,42 @@
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E1E2E" rx="8"/>
+  
+  <!-- Axis Line -->
+  <line x1="40" y1="110" x2="460" y2="110" stroke="#CDD6F4" stroke-width="3"/>
+  <path d="M450 105 L460 110 L450 115" fill="#CDD6F4"/>
+  <text x="455" y="135" fill="#CDD6F4" font-size="12" font-family="Arial" font-weight="bold">x (km)</text>
+  
+  <!-- Point A (Start/Motorcycle origin) -->
+  <circle cx="60" cy="110" r="5" fill="#F38BA8"/>
+  <text x="52" y="90" fill="#F38BA8" font-size="14" font-family="Arial" font-weight="bold">A (0 km)</text>
+  <text x="50" y="135" fill="#CDD6F4" font-size="11" font-family="Arial">Gốc tọa độ</text>
+  
+  <!-- Position of Motorcycle at 7:00 AM (C) -->
+  <circle cx="120" cy="110" r="5" fill="#FAB387"/>
+  <text x="110" y="90" fill="#FAB387" font-size="13" font-family="Arial" font-weight="bold">Xe máy (50 km)</text>
+  <path d="M120 110 L150 110" stroke="#FAB387" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M145 107 L150 110 L145 113" fill="#FAB387"/>
+  <text x="130" y="130" fill="#FAB387" font-size="11" font-family="Arial">v₁=50 km/h</text>
+  
+  <!-- Position of Cyclist at 7:00 AM (D) -->
+  <circle cx="270" cy="110" r="5" fill="#A6E3A1"/>
+  <text x="235" y="90" fill="#A6E3A1" font-size="13" font-family="Arial" font-weight="bold">Xe đạp (175 km)</text>
+  <text x="245" y="130" fill="#A6E3A1" font-size="11" font-family="Arial">Cách đều 2 xe (125 km)</text>
+  
+  <!-- Position of Car at 7:00 AM (B) -->
+  <circle cx="420" cy="110" r="5" fill="#89B4FA"/>
+  <text x="400" y="90" fill="#89B4FA" font-size="13" font-family="Arial" font-weight="bold">Ô tô (300 km) B</text>
+  <path d="M420 110 L390 110" stroke="#89B4FA" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M395 107 L390 110 L395 113" fill="#89B4FA"/>
+  <text x="375" y="130" fill="#89B4FA" font-size="11" font-family="Arial">v₂=75 km/h</text>
+  
+  <!-- Brackets for distances -->
+  <!-- Distance C-D (125 km) -->
+  <path d="M 120 150 L 120 160 L 270 160 L 270 150" fill="none" stroke="#CDD6F4" stroke-width="1.5"/>
+  <text x="180" y="175" fill="#CDD6F4" font-size="11" font-family="Arial">125 km</text>
+  
+  <!-- Distance D-B (125 km) -->
+  <path d="M 270 150 L 270 160 L 420 160 L 420 150" fill="none" stroke="#CDD6F4" stroke-width="1.5"/>
+  <text x="330" y="175" fill="#CDD6F4" font-size="11" font-family="Arial">125 km</text>
+</svg>

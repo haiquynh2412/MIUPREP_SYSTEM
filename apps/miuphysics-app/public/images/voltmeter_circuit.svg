@@ -1,0 +1,50 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E1E2E" rx="8"/>
+  
+  <!-- Voltage Source (Left) -->
+  <line x1="50" y1="70" x2="50" y2="130" stroke="#CDD6F4" stroke-width="2"/>
+  <!-- Battery plates -->
+  <line x1="35" y1="90" x2="65" y2="90" stroke="#A6E3A1" stroke-width="4"/> <!-- Positive -->
+  <line x1="42" y1="110" x2="58" y2="110" stroke="#CDD6F4" stroke-width="2"/> <!-- Negative -->
+  <text x="25" y="80" fill="#A6E3A1" font-size="14" font-family="Arial" font-weight="bold">+</text>
+  <text x="28" y="130" fill="#CDD6F4" font-size="14" font-family="Arial" font-weight="bold">-</text>
+  <text x="65" y="105" fill="#CDD6F4" font-size="14" font-family="Arial">U</text>
+  
+  <!-- Connections from source to loop -->
+  <line x1="50" y1="70" x2="120" y2="70" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="50" y1="130" x2="320" y2="130" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="320" y1="130" x2="320" y2="70" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Resistor R1 -->
+  <rect x="120" y="55" width="60" height="30" fill="#313244" stroke="#89B4FA" stroke-width="3" rx="4"/>
+  <text x="142" y="75" fill="#89B4FA" font-size="14" font-family="Arial" font-weight="bold">R₁</text>
+  
+  <!-- Connection between R1 and R2 -->
+  <line x1="180" y1="70" x2="240" y2="70" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Resistor R2 -->
+  <rect x="240" y="55" width="60" height="30" fill="#313244" stroke="#89B4FA" stroke-width="3" rx="4"/>
+  <text x="262" y="75" fill="#89B4FA" font-size="14" font-family="Arial" font-weight="bold">R₂</text>
+  
+  <!-- Connection to right side of loop -->
+  <line x1="300" y1="70" x2="320" y2="70" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Voltmeter branch in parallel with R1 -->
+  <!-- Junction points -->
+  <circle cx="100" cy="70" r="4" fill="#CDD6F4"/>
+  <circle cx="205" cy="70" r="4" fill="#CDD6F4"/>
+  
+  <!-- Branch lines going up -->
+  <line x1="100" y1="70" x2="100" y2="140" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="205" y1="70" x2="205" y2="140" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- We put the voltmeter at the bottom to balance the space, or at the top. Let's do top (above R1) -->
+  <line x1="100" y1="70" x2="100" y2="25" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="205" y1="70" x2="205" y2="25" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="100" y1="25" x2="132" y2="25" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="172" y1="25" x2="205" y2="25" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <circle cx="152" cy="25" r="20" fill="#313244" stroke="#F9E2AF" stroke-width="3"/>
+  <text x="145" y="31" fill="#F9E2AF" font-size="18" font-family="Arial" font-weight="bold">V</text>
+</svg>

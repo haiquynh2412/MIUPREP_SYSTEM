@@ -9,6 +9,7 @@ import {
   gradeSpeakingWithTutorEvent,
   gradeWritingWithTutorEvent,
   recordQuestionTutorFeedback,
+  scoreProductiveFeedbackReliability,
   type TutorSpeakingAdapter,
   type TutorWritingAdapter,
   buildSpeakingFeedbackPracticeState,
@@ -161,6 +162,35 @@ assert(governanceReport.status === 'pass', 'Governance report should pass clean 
 assert(governanceReport.masteryPolicy === 'feedback_only_locked', 'Governance report should keep productive-skill mastery locked.');
 assert(governanceReport.masteryEligible === false, 'Governance report should not make AI scoring mastery eligible.');
 assert(governanceReport.consensusPolicy === 'validation_only', 'Consensus should remain validation-only.');
+assert(governanceReport.averageReliabilityConfidence >= 0.9, 'Governance report should expose reliability confidence for clean samples.');
+
+const shortSpeakingReliability = scoreProductiveFeedbackReliability(speakingFeedback, 'speaking', {
+  responseText: speakingFeedback.transcript,
+  provider: 'mock',
+});
+assert(shortSpeakingReliability.confidence < Number(speakingFeedback.confidence), 'Reliability scoring should lower confidence for short/thin speaking evidence.');
+assert(shortSpeakingReliability.reasons.includes('short speaking sample'), 'Reliability scoring should explain short speaking samples.');
+
+const lowReliabilitySpeakingFeedback: SpeakingFeedback = {
+  ...speakingFeedback,
+  transcript: 'Too short.',
+  rubricVersion: 'v1.0.0-speaking',
+  descriptorSource: 'IELTS Speaking Band Descriptors',
+  confidence: 0.62,
+  criteria: speakingFeedback.criteria.map((criterion) => ({ ...criterion, evidence: ['sample evidence'] })),
+};
+const watchGovernanceReport = buildProductiveSkillGovernanceReport([
+  {
+    sampleId: 'speaking-governance-watch',
+    feedbackType: 'speaking',
+    feedback: lowReliabilitySpeakingFeedback,
+    responseText: lowReliabilitySpeakingFeedback.transcript,
+    expertOverall: 6.5,
+    provider: 'mock',
+  },
+], { generatedAt: '2026-06-02T00:05:30.000Z' });
+assert(watchGovernanceReport.status === 'watch', 'Governance report should watch low reliability even when metadata is present.');
+assert(watchGovernanceReport.findings.some((finding) => finding.reason === 'low_reliability_confidence'), 'Governance report should expose low adjusted confidence.');
 
 const blockedGovernanceReport = buildProductiveSkillGovernanceReport([
   {
@@ -188,7 +218,9 @@ async function runAsyncChecks(): Promise<void> {
   assert(writingRecorded.event.payload.attemptId === 'writing-1', 'Writing tutor event should persist attempt id directly.');
   assert(writingRecorded.event.payload.modelUsed === 'fake-writing', 'Writing tutor event should persist model provenance directly.');
   assert(writingRecorded.event.payload.provider === 'mock', 'Writing tutor event should persist provider provenance directly.');
-  assert(writingRecorded.event.payload.confidence === 0.91, 'Writing tutor event should persist confidence.');
+  assert(writingRecorded.event.payload.rawConfidence === 0.91, 'Writing tutor event should persist raw adapter confidence.');
+  assert(Number(writingRecorded.event.payload.confidence) < 0.91, 'Writing tutor event should persist adjusted reliability confidence.');
+  assert(Array.isArray(writingRecorded.event.payload.confidenceReasons), 'Writing tutor event should persist confidence reasons.');
   assert(Array.isArray(writingRecorded.event.payload.evidence), 'Writing tutor event should persist governance evidence directly.');
   assert(Boolean(writingRecorded.event.payload.practicePlan), 'Writing tutor event should persist the practice plan.');
 
@@ -201,7 +233,9 @@ async function runAsyncChecks(): Promise<void> {
   assert(speakingRecorded.event.payload.attemptId === 'speaking-1', 'Speaking tutor event should persist attempt id directly.');
   assert(speakingRecorded.event.payload.modelUsed === 'fake-speaking', 'Speaking tutor event should persist model provenance directly.');
   assert(speakingRecorded.event.payload.provider === 'mock', 'Speaking tutor event should persist provider provenance directly.');
-  assert(speakingRecorded.event.payload.confidence === 0.88, 'Speaking tutor event should persist confidence.');
+  assert(speakingRecorded.event.payload.rawConfidence === 0.88, 'Speaking tutor event should persist raw adapter confidence.');
+  assert(Number(speakingRecorded.event.payload.confidence) < 0.88, 'Speaking tutor event should persist adjusted reliability confidence.');
+  assert(Array.isArray(speakingRecorded.event.payload.confidenceReasons), 'Speaking tutor event should persist confidence reasons.');
   assert(Array.isArray(speakingRecorded.event.payload.evidence), 'Speaking tutor event should persist governance evidence directly.');
   assert(Boolean(speakingRecorded.event.payload.practicePlan), 'Speaking tutor event should persist the practice plan.');
   assert(Boolean(speakingRecorded.event.payload.speakingPracticeState), 'Speaking tutor event should persist recording/transcript state.');

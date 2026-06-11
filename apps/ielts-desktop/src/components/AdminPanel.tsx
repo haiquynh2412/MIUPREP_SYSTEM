@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import type { StorageAdapter, LocalUser } from '@miuprep/db';
-import { validateIeltsTest } from '@miuprep/content';
+import { validateIeltsTest } from '@miuprep/content/src/validator';
 import type { ValidationError } from '@miuprep/content';
 
 interface AdminPanelProps {

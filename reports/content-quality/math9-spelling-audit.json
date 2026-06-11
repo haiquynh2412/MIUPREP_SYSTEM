@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "math9_spelling_audit_v1",
+  "generatedAt": "2026-06-05T19:23:07.781Z",
+  "input": {
+    "rawPath": "reports/content-quality/math9-rich-raw-extract.json",
+    "questions": 1653
+  },
+  "summary": {
+    "totalIssues": 0,
+    "fixedCheckHits": 0,
+    "reviewHits": 0,
+    "byCode": {},
+    "bySource": {}
+  },
+  "passedChecks": [
+    "watermark_gv154",
+    "editorial_soan_khoang",
+    "typo_anen_phu",
+    "typo_vay_exact",
+    "typo_can_tre",
+    "replacement_char"
+  ],
+  "failedFixedChecks": [],
+  "issues": []
+}

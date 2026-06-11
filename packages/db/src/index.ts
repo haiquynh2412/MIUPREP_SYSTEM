@@ -1,5 +1,4 @@
 import type { IeltsTest } from '@miuprep/content';
-import { validateIeltsTest } from '@miuprep/content';
 import {
   listLearningEventsFromStorage,
   normalizeErrorNotebookEntry,
@@ -7,6 +6,27 @@ import {
   scheduleErrorNotebookReview,
   type LearningEventRecord,
 } from '@miuprep/learning';
+
+type ContentValidationModule = typeof import('@miuprep/content/src/validator');
+type ContentValidationError = {
+  severity: string;
+  path: string;
+  message: string;
+};
+
+let contentValidationModulePromise: Promise<ContentValidationModule> | null = null;
+
+function loadContentValidationModule(): Promise<ContentValidationModule> {
+  if (!contentValidationModulePromise) {
+    contentValidationModulePromise = import('@miuprep/content/src/validator');
+  }
+  return contentValidationModulePromise;
+}
+
+async function validateIeltsTestForDb(test: IeltsTest): Promise<ContentValidationError[]> {
+  const { validateIeltsTest } = await loadContentValidationModule();
+  return validateIeltsTest(test);
+}
 
 // ==========================================
 // 1. Data Schemas
@@ -291,7 +311,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   }
 
   async saveTest(test: IeltsTest): Promise<void> {
-    const errors = validateIeltsTest(test);
+    const errors = await validateIeltsTestForDb(test);
     const criticalErrors = errors.filter(e => e.severity === 'error');
     if (criticalErrors.length > 0) {
       const errorMsg = `Invalid test content: ${criticalErrors.map(e => `[${e.path}]: ${e.message}`).join(', ')}`;

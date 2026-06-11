@@ -75,13 +75,13 @@ export interface UnifiedContentCoverageSnapshot {
 
 export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
   "schemaVersion": "english_content_guard_v1",
-  "generatedAt": "2026-06-04T13:51:00.334Z",
+  "generatedAt": "2026-06-11T02:40:28.953Z",
   "sourceCommand": "npm.cmd run sync:portal-quality -w @miuprep/content",
   "qualitySummary": {
     "tests": 95,
     "questions": 7098,
     "blockers": 0,
-    "warnings": 112,
+    "warnings": 96,
     "byProgram": {
       "ielts": 6,
       "cpe": 47,
@@ -90,7 +90,7 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
     "topIssues": [
       {
         "code": "schema.sections[*].questionGroups[*].questions[*].blankIndex",
-        "count": 64
+        "count": 48
       },
       {
         "code": "schema.sections[*].transcript",
@@ -101,7 +101,7 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
   "coverage": {
     "readyQuestions": 6990,
     "blockedQuestions": 0,
-    "warningIssues": 112,
+    "warningIssues": 96,
     "byProgram": {
       "ielts": 110,
       "cpe": 3051,
@@ -229,7 +229,7 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
       "learningReadyItems": 2049,
       "feedbackOnlyItems": 0,
       "blockerItems": 0,
-      "warningItems": 64,
+      "warningItems": 48,
       "byProgram": {
         "ielts": 56,
         "cpe": 797,
@@ -303,16 +303,16 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
 
 export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
   "schemaVersion": "miuprep_content_coverage_v1",
-  "generatedAt": "2026-06-04T13:51:00.334Z",
+  "generatedAt": "2026-06-11T02:40:28.953Z",
   "programs": [
     {
       "programId": "vn_math_6",
       "label": "VN Math 6 Local Sources",
-      "sourceQuestions": 1549,
-      "importedQuestions": 1549,
-      "readyQuestions": 926,
-      "blockerItems": 623,
-      "warningItems": 20,
+      "sourceQuestions": 1428,
+      "importedQuestions": 1428,
+      "readyQuestions": 1214,
+      "blockerItems": 0,
+      "warningItems": 241,
       "coverageStatus": "watch",
       "adapterPass": true,
       "sourceMatched": true,
@@ -324,8 +324,8 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
         "dot": 1
       },
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TAI LIEU TOAN 6",
-      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math6-raw-extract.json",
-      "note": "926/1549 questions are display-ready; 539 geometry SVG figures generated; 623 items remain behind formula/image/encoding gates."
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math6-rich-raw-extract.json",
+      "note": "1428/1428 questions are display-ready; 1214/1428 are scored-practice-ready; 214 source-artifact/formula-image items are held for review, with 0 eligible items still pending answer keys."
     },
     {
       "programId": "vn_math_9",
@@ -339,17 +339,18 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       "adapterPass": true,
       "sourceMatched": true,
       "changedQuestions": 0,
-      "sourceFiles": 136,
+      "sourceFiles": 180,
       "sourceFormats": {
+        ".doc": 26,
         ".rar": 6,
-        ".pdf": 106,
+        ".pdf": 125,
         ".docx": 21,
-        ".doc": 2,
+        ".ini": 1,
         ".zip": 1
       },
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\ON THi\\miumath-app\\public\\data\\questions_db.json",
       "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\apps\\miumath-app\\public\\data\\questions_db.json",
-      "note": "Counts match source and every question converts to QuestionItem. Local TOAN 9 folder has 136 files for the next guarded import batch."
+      "note": "Counts match source and every question converts to QuestionItem. Local TOAN 9 folder has 180 files for the next guarded import batch."
     },
     {
       "programId": "vn_math_vao_10",
@@ -368,66 +369,125 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       "note": "Counts match source and every question converts to QuestionItem. The same item bank is tagged for entrance-exam review via vn_math_vao_10."
     },
     {
-      "programId": "vn_math_7",
-      "label": "VN Math 7 Local Sources",
-      "sourceQuestions": 0,
-      "importedQuestions": 0,
-      "readyQuestions": 0,
-      "blockerItems": 0,
-      "warningItems": 0,
-      "coverageStatus": "planned",
+      "programId": "vn_math_9_local_sources",
+      "label": "VN Math 9 Local Sources",
+      "sourceQuestions": 16116,
+      "importedQuestions": 16116,
+      "readyQuestions": 15983,
+      "blockerItems": 133,
+      "warningItems": 9,
+      "coverageStatus": "watch",
       "adapterPass": true,
       "sourceMatched": true,
       "changedQuestions": 0,
-      "sourceFiles": 6,
+      "sourceFiles": 112,
       "sourceFormats": {
-        ".pdf": 5,
-        ".docx": 1
+        "docx": 21,
+        "doc": 26,
+        "pdf": 65
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math9-rich-raw-extract.json",
+      "note": "15983/16116 questions are display-ready from local Math 9 sources; 12918 have source answers/solutions for scored practice; 133 items remain behind formula/image/encoding gates and 3065 display-ready items still need answer keys."
+    },
+    {
+      "programId": "vn_math_vao_10_combined",
+      "label": "VN Math Vao 10 Combined",
+      "sourceQuestions": 14386,
+      "importedQuestions": 14386,
+      "readyQuestions": 14386,
+      "blockerItems": 0,
+      "warningItems": 9,
+      "coverageStatus": "watch",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 113,
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math9-rich-raw-extract.json",
+      "note": "Combines 485 legacy MiuMath questions with 13901 display-ready local Math 9/on-vao-10 questions across 8 exam10 clusters; 119 display-blocked questions were excluded from the combined entrance-exam learner path."
+    },
+    {
+      "programId": "vn_math_7",
+      "label": "VN Math 7 Local Sources",
+      "sourceQuestions": 2091,
+      "importedQuestions": 2091,
+      "readyQuestions": 2037,
+      "blockerItems": 54,
+      "warningItems": 1,
+      "coverageStatus": "watch",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 44,
+      "sourceFormats": {
+        "docx": 62,
+        "pdf": 6
       },
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 7",
-      "note": "Source folder is detected; build a Math 7 matrix/importer with the same Math guard before opening items."
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math7-rich-raw-extract.json",
+      "note": "2037/2091 questions are display-ready; 54 items remain behind formula/image/encoding gates."
     },
     {
       "programId": "vn_math_8",
       "label": "VN Math 8 Local Sources",
-      "sourceQuestions": 0,
-      "importedQuestions": 0,
-      "readyQuestions": 0,
+      "sourceQuestions": 5992,
+      "importedQuestions": 5992,
+      "readyQuestions": 5992,
       "blockerItems": 0,
       "warningItems": 0,
-      "coverageStatus": "planned",
+      "coverageStatus": "ready",
       "adapterPass": true,
       "sourceMatched": true,
       "changedQuestions": 0,
-      "sourceFiles": 25,
+      "sourceFiles": 35,
       "sourceFormats": {
-        ".pdf": 23,
-        ".rar": 2
+        "docx": 15,
+        "pdf": 20
       },
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 8",
-      "note": "Source folder is detected; build a Math 8 matrix/importer with the same Math guard before opening items."
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math8-rich-raw-extract.json",
+      "note": "5992/5992 questions are display-ready; 0 items remain behind formula/image/encoding gates."
     },
     {
       "programId": "vn_math_10_12",
       "label": "VN Math 10-12 Local Sources",
-      "sourceQuestions": 0,
-      "importedQuestions": 0,
-      "readyQuestions": 0,
+      "sourceQuestions": 12238,
+      "importedQuestions": 12238,
+      "readyQuestions": 12238,
       "blockerItems": 0,
-      "warningItems": 0,
-      "coverageStatus": "planned",
+      "warningItems": 3,
+      "coverageStatus": "watch",
       "adapterPass": true,
       "sourceMatched": true,
       "changedQuestions": 0,
-      "sourceFiles": 67,
+      "sourceFiles": 79,
       "sourceFormats": {
-        ".pdf": 62,
-        ".doc": 1,
-        ".docx": 1,
-        ".xlsx": 3
+        "pdf": 79
       },
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10",
-      "note": "Knowledge Graph is ready; source folder is detected and should use the same guarded import/display-ready flow."
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math10-published-question-bank.json",
+      "note": "12238 Math 10 questions are published to the learner system; 5276/12238 published questions have source or generated MiuMath answers/solutions for scored practice; 160 are generated MiuMath solutions; 9 blocked raw questions were excluded before publish."
+    },
+    {
+      "programId": "vn_math_11_local_sources",
+      "label": "VN Math 11 Local Sources",
+      "sourceQuestions": 8328,
+      "importedQuestions": 8328,
+      "readyQuestions": 8328,
+      "blockerItems": 0,
+      "warningItems": 2,
+      "coverageStatus": "watch",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 22,
+      "sourceFormats": {
+        "pdf": 22
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 11",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math11-published-question-bank.json",
+      "note": "8328 Math 11 questions are published to the learner system; 2820/8328 published questions have source answers/solutions for scored practice; 0 blocked raw questions were excluded before publish."
     },
     {
       "programId": "sat",

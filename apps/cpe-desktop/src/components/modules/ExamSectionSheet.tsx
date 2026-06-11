@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react';
 import type { IeltsTest, IeltsQuestion, QuestionGroup } from '@miuprep/content';
 import type { ExamAttempt } from '@miuprep/db';

@@ -1,0 +1,2589 @@
+{
+  "total": 255,
+  "byCode": {
+    "suspicious_slash_letters": 252,
+    "suspicious_many_symbols": 3
+  },
+  "bySkill": {
+    "reading": 168,
+    "use_of_english": 87
+  },
+  "bySection": {
+    "cam-cae6-test1.json::cam-cae6-t1-rsec1": 16,
+    "cam-cae6-test1.json::cam-cae6-t1-rsec2": 7,
+    "cam-cae6-test1.json::cam-cae6-t1-rsec3": 5,
+    "cam-cae6-test1.json::cam-cae6-t1-rsec4": 20,
+    "cam-cae6-test1.json::cam-cae6-t1-usec1": 15,
+    "cam-cae6-test1.json::cam-cae6-t1-usec6": 6,
+    "cam-cae6-test2.json::cam-cae6-t2-rsec1": 19,
+    "cam-cae6-test2.json::cam-cae6-t2-rsec2": 7,
+    "cam-cae6-test2.json::cam-cae6-t2-rsec3": 6,
+    "cam-cae6-test2.json::cam-cae6-t2-rsec4": 19,
+    "cam-cae6-test2.json::cam-cae6-t2-usec1": 15,
+    "cam-cae6-test2.json::cam-cae6-t2-usec4": 1,
+    "cam-cae6-test2.json::cam-cae6-t2-usec6": 6,
+    "cam-cae6-test3.json::cam-cae6-t3-rsec1": 12,
+    "cam-cae6-test3.json::cam-cae6-t3-rsec2": 7,
+    "cam-cae6-test3.json::cam-cae6-t3-rsec3": 6,
+    "cam-cae6-test3.json::cam-cae6-t3-rsec4": 21,
+    "cam-cae6-test3.json::cam-cae6-t3-usec1": 15,
+    "cam-cae6-test3.json::cam-cae6-t3-usec6": 6,
+    "cam-cae6-test4.json::cam-cae6-t4-rsec1": 15,
+    "cam-cae6-test4.json::cam-cae6-t4-rsec3": 8,
+    "cam-cae6-test4.json::cam-cae6-t4-usec1": 16,
+    "cam-cae6-test4.json::cam-cae6-t4-usec2": 1,
+    "cam-cae6-test4.json::cam-cae6-t4-usec6": 6
+  },
+  "rows": [
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r16.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "section.passageHtml",
+      "code": "suspicious_slash_letters",
+      "pattern": "H/A",
+      "excerpt": "t put into her. That is the well-tried method of the sea. Paragraphs Options (A-H/A-G): A. It's not that I'm suggesting that sailors should go back to enduring every hardship. It's always been important to me that my boats have a coal stove for warmth and dryn"
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t1-r17.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t1-r18.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t1-r19.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "G. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t1-r20.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t1-r21.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t1-r22.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t1-r23.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "e might be some truth in it.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t1-r24.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": " position of their property.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t1-r25.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "unfit for human consumption.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t1-r26.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "are unwilling to take risks.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t1-r27.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "me which can be made from it. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "section.passageHtml",
+      "code": "suspicious_slash_letters",
+      "pattern": "PIt/net",
+      "excerpt": "made for themselves and head ofT for f()reign climes. C Jennifer Cox, of Lonely PIt/net guidebook publishers, identifies a growing awareness that adventure is there for the raking: 'The penny's dropped. The sort of people who alwavs say \"I wish I'd had that op"
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r28.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r29.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r30.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r31.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r32.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r33.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r34.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r35.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r36.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r37.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r38.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r39.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r40.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r41.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r42.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r43.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r44.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r45.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t1-r46.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. encircle. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. altering. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. course. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. followed. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. cutting. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. reach. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. beyond. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. greater. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. represented. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. considerable. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. day. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. did. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. left. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. sprang. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. desirable. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u75.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u76.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u77.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "H. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u78.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u79.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t1-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t1-u80.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r1.instruction",
+      "code": "suspicious_slash_letters",
+      "pattern": "he/she",
+      "excerpt": "1. says that the book contained a wider range of material than other books he/she owned?"
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r6.instruction",
+      "code": "suspicious_slash_letters",
+      "pattern": "him/her",
+      "excerpt": "6. explains what motivated him/her to start drawing?"
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r7.instruction",
+      "code": "suspicious_slash_letters",
+      "pattern": "him/her",
+      "excerpt": "7. explains what motivated him/her to start drawing?"
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r16.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "section.passageHtml",
+      "code": "suspicious_slash_letters",
+      "pattern": "H/A",
+      "excerpt": "es of the great scientist. @]-- I --- I ----_ .._--\" ~J _ Paragraphs Options (A-H/A-G): A. 'On our expedition we can use global positioning satellites to determine that.' The British Geological Survey and the United States Navy have offered to supply instru­ m"
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t2-r17.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t2-r18.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t2-r19.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "G. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t2-r20.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t2-r21.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t2-r22.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t2-r23.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": " be no consensus of opinion.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t2-r24.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": " through particular objects.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t2-r25.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": " what is factually accurate.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t2-r26.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. the design. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t2-r27.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "atisfy the original concept.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t2-r28.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "ll live up to their setting.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r29.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r30.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r31.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r32.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r33.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r34.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r35.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r36.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r37.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r38.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r39.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r40.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r41.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r42.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r43.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r44.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r45.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r46.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t2-r47.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. adapt. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. turn. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. set. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. dream. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. rate. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. stage. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. passes. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. make. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. finishing. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. ahead. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. regarded. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. rules. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. rough. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. severe. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. aim. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec4",
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "field": "section.passageHtml",
+      "code": "suspicious_many_symbols",
+      "pattern": "~~",
+      "excerpt": "er sheet. The exercise begins with an example (0). Example: ~1_O_b_5_e_~_5_jO_n ~~I~ EXTRACT FROM AN ARTICLE Our passion for chocolate Some experts believe that the reason for our (0) ..... with chocolate lies in its chemical content, but most tend to put its "
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u75.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u76.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u77.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u78.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "I. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u79.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t2-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t2-u80.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "section.passageHtml",
+      "code": "suspicious_slash_letters",
+      "pattern": "H/A",
+      "excerpt": " [ would be foolish not to write another novel,' he said. Paragraphs Options (A-H/A-G): A. Evans' imagination was captured. He began researching the subject with a view to writing a screenplay - he was, after all, a film-maker. But disillusionment with the fil"
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t3-r13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t3-r14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t3-r15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t3-r16.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "G. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t3-r17.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec2",
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "field": "question.q-cam-cae6-t3-r18.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t3-r19.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "ssion of Hurst was accurate.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t3-r20.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "n to be a skilled craftsman.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t3-r21.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "cept poor quality furniture.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t3-r22.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": " arrogant than he really is.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t3-r23.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": " produce functional designs.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t3-r24.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "t his work into perspective.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r25.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r26.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r27.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r28.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r29.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r30.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r31.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r32.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r33.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r34.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r35.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r36.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r37.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r38.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r39.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r40.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r41.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r42.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r43.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r44.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t3-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t3-r45.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. version. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. check. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. room. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. expands. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. located. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. meets. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. average. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. build. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. exactly. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. cause. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. performance. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. use. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. place. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. shape. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. goods. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u75.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u76.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u77.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u78.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u79.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test3.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t3-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t3-u80.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "G. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "E. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "field": "question.q-cam-cae6-t4-r15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "section.passageHtml",
+      "code": "suspicious_slash_letters",
+      "pattern": "trmn/Jc",
+      "excerpt": "y artists who l10 not sign their work unless they are asked to. Sarah Janson, a trmn/Jc-l'(Jcilartist, is one. She IS nut remotely interested in the concept of the artist as creator, let alone that of the artist as genius: 'It's not the artist who is important"
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t4-r22.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "bts about Janson were wrong.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t4-r23.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "t was what she wanted to do.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t4-r24.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "ke to become over-confident.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t4-r25.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "s of an exceptional quality.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t4-r26.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "ustaining people's interest.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t4-r27.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "ind of ideas the client has.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t4-rsec3",
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "field": "question.q-cam-cae6-t4-r28.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "t she has written about her.. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "section.passageHtml",
+      "code": "suspicious_many_symbols",
+      "pattern": "~~~",
+      "excerpt": " the separate answer sheet. The exercise begins with an example (0). Example: ~ ~~~ We really can tell if we are being watched Stories about how people somehow know when they are being watched have been going around for years. However, few (0) ..... have been "
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u1.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. genuine. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u2.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. involved. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u3.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. covered. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u4.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. tell. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u5.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. total. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u6.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. carried out. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u7.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. correctly. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u8.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. added. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u9.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. separated. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u10.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. pretending. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u11.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. prevented. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u12.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. transmitted. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u13.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "B. convincing. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u14.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. really. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec1",
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u15.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. come about. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec2",
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "field": "section.passageHtml",
+      "code": "suspicious_many_symbols",
+      "pattern": "~~~~",
+      "excerpt": "or each space. The exercise begins with an example (0). Example: S 6in._c_e --_-~~~~lJ The toughest runners These runners are the ones who have completed every London Marathon (0) ..... the first race in 1981. They are the toughest runners of (16) ...... These"
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u75.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "G. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u76.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "C. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u77.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "D. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u78.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "H. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u79.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "A. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    },
+    {
+      "file": "cam-cae6-test4.json",
+      "skill": "use_of_english",
+      "sectionId": "cam-cae6-t4-usec6",
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "field": "question.q-cam-cae6-t4-u80.answerLocation",
+      "code": "suspicious_slash_letters",
+      "pattern": "passage/audio",
+      "excerpt": "F. Answer-key option. Evidence cue: use this answer-key option with the passage/audio paraphrase; confirm the full claim, not just a repeated keyword."
+    }
+  ]
+}

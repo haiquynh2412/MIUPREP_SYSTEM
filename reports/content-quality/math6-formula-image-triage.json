@@ -1,0 +1,3373 @@
+{
+  "generatedAt": "2026-06-09T01:06:21.960Z",
+  "baselineBeforeThisBatch": {
+    "formulaImageUntranscribed": 149,
+    "scoredPracticeReady": 1152
+  },
+  "afterThisBatch": {
+    "formulaImageUntranscribed": 109,
+    "scoredPracticeReady": 1192,
+    "scoredPracticeExcluded": 236
+  },
+  "resolvedThisBatch": 40,
+  "counts": {
+    "manual_next_batch": 44,
+    "manual_hsg_batch": 17,
+    "contradictory_or_incomplete_source": 4,
+    "large_multi_part_manual": 12,
+    "geometry_or_construction_review": 6,
+    "needs_image_transcription_review": 10,
+    "source_artifact_or_cross_grade": 15,
+    "needs_original_source": 1
+  },
+  "items": [
+    {
+      "id": "math6.number_sets_natural_numbers.123doc_vn_luyen_tap_phan_tich_ra_thua_so.06k2x6x.007",
+      "source": "[123doc.vn] - luyen-tap-phan-tich-ra-thua-so-nguyen-to.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/123doc-vn-luyen-tap-phan-tich-ra-thua-so-nguyen-to-d-66b1358d/formula0001.png",
+          "name": "formula0001.png",
+          "w": 70,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/123doc-vn-luyen-tap-phan-tich-ra-thua-so-nguyen-to-d-66b1358d/formula0002.png",
+          "name": "formula0002.png",
+          "w": 70,
+          "h": 23
+        }
+      ],
+      "text": "Bài 7: Thay dấu * bằng chữ số thích hợp, biết: a) [formula] b) [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.002",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0002.png",
+          "name": "formula0002.png",
+          "w": 28,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0003.png",
+          "name": "formula0003.png",
+          "w": 80,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0004.png",
+          "name": "formula0004.png",
+          "w": 94,
+          "h": 26
+        }
+      ],
+      "text": "Câu 2: (1 điểm) Tìm tất cả các số tự nhiên có 3 chữ số [formula] sao cho [formula] và [formula].",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.008",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 5,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0010.png",
+          "name": "formula0010.png",
+          "w": 55,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0011.png",
+          "name": "formula0011.png",
+          "w": 24,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0012.png",
+          "name": "formula0012.png",
+          "w": 23,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0013.png",
+          "name": "formula0013.png",
+          "w": 24,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0014.png",
+          "name": "formula0014.png",
+          "w": 38,
+          "h": 42
+        }
+      ],
+      "text": "Câu 2. a. Chứng tỏ rằng [formula] là phân số tối giản. b. Chứng minh rằng: [formula] + [formula] + [formula] +...+ [formula] <1.",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.028",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 5,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0034.png",
+          "name": "formula0034.png",
+          "w": 23,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0035.png",
+          "name": "formula0035.png",
+          "w": 71,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0036.png",
+          "name": "formula0036.png",
+          "w": 39,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0037.png",
+          "name": "formula0037.png",
+          "w": 55,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0038.png",
+          "name": "formula0038.png",
+          "w": 23,
+          "h": 16
+        }
+      ],
+      "text": "Câu 1: (2 điểm) a) Các phân số sau có bằng nhau không? Vì sao? [formula]; [formula]; [formula]; [formula] b) Chứng tỏ rằng: 2x + 3y chia hết cho 17 [formula] 9x + 5y chia hết cho 17.",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.050",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0068.png",
+          "name": "formula0068.png",
+          "w": 232,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0069.png",
+          "name": "formula0069.png",
+          "w": 244,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0070.png",
+          "name": "formula0070.png",
+          "w": 190,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0071.png",
+          "name": "formula0071.png",
+          "w": 134,
+          "h": 44
+        }
+      ],
+      "text": "Câu 1: Thực hiện các phép tính sau: (4 điểm) a) [formula] b. [formula] c. [formula] d. [formula]",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.061",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0089.png",
+          "name": "formula0089.png",
+          "w": 224,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0090.png",
+          "name": "formula0090.png",
+          "w": 14,
+          "h": 14
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0091.png",
+          "name": "formula0091.png",
+          "w": 284,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0092.png",
+          "name": "formula0092.png",
+          "w": 182,
+          "h": 27
+        }
+      ],
+      "text": "Bài 1 (3 điểm) a. Tính nhanh: A = [formula] b. Chứng minh: Với k [formula] N* ta luôn có: [formula]. Áp dụng tính tổng: S = [formula].",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.062",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0093.png",
+          "name": "formula0093.png",
+          "w": 115,
+          "h": 32
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0094.png",
+          "name": "formula0094.png",
+          "w": 74,
+          "h": 26
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0095.png",
+          "name": "formula0095.png",
+          "w": 130,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0096.png",
+          "name": "formula0096.png",
+          "w": 8,
+          "h": 19
+        }
+      ],
+      "text": "Bài 2 (3 điểm) a.Chứng minh rằng: nếu [formula] thì: [formula]. b.Cho A = [formula] Chứng minh: A [formula] 3; 7; 15.",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.081",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0101.png",
+          "name": "formula0101.png",
+          "w": 87,
+          "h": 42
+        }
+      ],
+      "text": "Câu 2: (2đ) Tìm số tự nhiên n để phân bố [formula] a. Có giá trị là số tự nhiên. b. Là phân số tối giản. c. Với giá trị nào của n trong khoảng từ 150 đến 170 thì phân số A rút gọn được.",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.102",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0120.png",
+          "name": "formula0120.png",
+          "w": 158,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0121.png",
+          "name": "formula0121.png",
+          "w": 379,
+          "h": 86
+        }
+      ],
+      "text": "Câu 1: (3đ) Thực hiện phép tính bằng cách hợp lí: A = [formula] B = [formula]",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.103",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0122.png",
+          "name": "formula0122.png",
+          "w": 60,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0123.png",
+          "name": "formula0123.png",
+          "w": 12,
+          "h": 23
+        }
+      ],
+      "text": "Câu 2: (2đ) Tìm các cặp số (a,b) sao cho: [formula] [formula]",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.105",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0125.png",
+          "name": "formula0125.png",
+          "w": 82,
+          "h": 44
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0126.png",
+          "name": "formula0126.png",
+          "w": 82,
+          "h": 44
+        }
+      ],
+      "text": "Câu 4: (1đ) So sánh: A = [formula] và B = [formula]",
+      "category": "contradictory_or_incomplete_source",
+      "reason": "Source statement/formula is internally inconsistent or missing a scorable subpart; do not auto-score without original source.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.109",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0129.png",
+          "name": "formula0129.png",
+          "w": 223,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0130.png",
+          "name": "formula0130.png",
+          "w": 145,
+          "h": 41
+        }
+      ],
+      "text": "Bài 3 (1,5 đ): Tính a) C = [formula] b) D = [formula]",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.118",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0134.png",
+          "name": "formula0134.png",
+          "w": 272,
+          "h": 83
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0135.png",
+          "name": "formula0135.png",
+          "w": 226,
+          "h": 42
+        }
+      ],
+      "text": "Bài 1. Tính các giá trị của biểu thức. a. A = 1 + 2 + 3 + 4 +.........+ 100. b. B = -1 [formula] c. C = [formula]",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.119",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0136.png",
+          "name": "formula0136.png",
+          "w": 135,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0137.png",
+          "name": "formula0137.png",
+          "w": 23,
+          "h": 42
+        }
+      ],
+      "text": "Bài 2. So sánh các biểu thức: a. 3200 và 2300 b. A = [formula] với B = [formula].",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.125",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0142.png",
+          "name": "formula0142.png",
+          "w": 42,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0143.png",
+          "name": "formula0143.png",
+          "w": 48,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0144.png",
+          "name": "formula0144.png",
+          "w": 50,
+          "h": 42
+        }
+      ],
+      "text": "Câu 2: Tìm số tự nhiên a, b, c, d nhỏ nhất sao cho: [formula]; [formula]; [formula].",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.134",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0150.png",
+          "name": "formula0150.png",
+          "w": 222,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0151.png",
+          "name": "formula0151.png",
+          "w": 170,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0152.png",
+          "name": "formula0152.png",
+          "w": 279,
+          "h": 42
+        }
+      ],
+      "text": "Bài 3: (2,25 điểm) Tính: A= [formula] B = [formula] C = [formula]",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.135",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0153.png",
+          "name": "formula0153.png",
+          "w": 188,
+          "h": 44
+        }
+      ],
+      "text": "Bài 4: (1 điểm) Cho: A= [formula]. Hãy so sánh A và B.",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.137",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0154.png",
+          "name": "formula0154.png",
+          "w": 14,
+          "h": 14
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0155.png",
+          "name": "formula0155.png",
+          "w": 160,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0156.png",
+          "name": "formula0156.png",
+          "w": 54,
+          "h": 26
+        }
+      ],
+      "text": "Bài 1: (3 điểm) a. Chứng tỏ rằng tổng sau khôngm chia hết cho 10: A = 405n + 2405 + m2 ( m,n [formula] N; n ≠ 0 ) b. Tìm số tự nhiên n để các biểu thức sau là số tự nhiên: B = [formula] c. Tìm các chữ số x,y sao cho: C = [formula] chia hết cho 55",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.30dehsgtoan6_doc.1wmog8n.138",
+      "source": "30DeHSGToan6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0157.png",
+          "name": "formula0157.png",
+          "w": 183,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/30dehsgtoan6-doc-2e5e85a8/formula0158.png",
+          "name": "formula0158.png",
+          "w": 150,
+          "h": 42
+        }
+      ],
+      "text": "Bài 2 (2 điểm ) a. Tính tổng: M = [formula].b. Cho S = [formula]. Chứng minh rằng: 1< S < 2.",
+      "category": "manual_hsg_batch",
+      "reason": "HSG items remain mostly multi-part proof/comparison. They are solvable but need deliberate hand-authored solution, not quick formula replacement.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.010",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 8,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0019.png",
+          "name": "formula0019.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0020.png",
+          "name": "formula0020.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0021.png",
+          "name": "formula0021.png",
+          "w": 16,
+          "h": 18
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0022.png",
+          "name": "formula0022.png",
+          "w": 14,
+          "h": 14
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0023.png",
+          "name": "formula0023.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0024.png",
+          "name": "formula0024.png",
+          "w": 52,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0025.png",
+          "name": "formula0025.png",
+          "w": 16,
+          "h": 18
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0026.png",
+          "name": "formula0026.png",
+          "w": 14,
+          "h": 14
+        }
+      ],
+      "text": "bài 02: CMR a) ( 102007 + 71 ) [formula] 9 b) ( 2403.a + 18.b ) [formula] 9 với [formula] a, b [formula] N. c) ( 102008 + 35 ) [formula] 45 d) [formula] chia hết cho cả 7; 11 và 13. e) 243.a + 8181.b + 927.c chia hết cho 3, cho 9 với [formula] a, b, c [formula] N.",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.077",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0094.png",
+          "name": "formula0094.png",
+          "w": 268,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0095.png",
+          "name": "formula0095.png",
+          "w": 255,
+          "h": 42
+        }
+      ],
+      "text": "BÀI TẬP 19: So sánh: [formula] và [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.089",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0106.png",
+          "name": "formula0106.png",
+          "w": 166,
+          "h": 39
+        }
+      ],
+      "text": "BÀI TẬP 31: Tìm x, y, z sao cho: [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.108",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0126.png",
+          "name": "formula0126.png",
+          "w": 248,
+          "h": 22
+        }
+      ],
+      "text": "BÀI TẬP 50: Chứng minh rắng A là một luỹ thừa của 2 với: [formula]",
+      "category": "contradictory_or_incomplete_source",
+      "reason": "Source statement/formula is internally inconsistent or missing a scorable subpart; do not auto-score without original source.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.109",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 6,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0127.png",
+          "name": "formula0127.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0128.png",
+          "name": "formula0128.png",
+          "w": 15,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0129.png",
+          "name": "formula0129.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0130.png",
+          "name": "formula0130.png",
+          "w": 43,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0131.png",
+          "name": "formula0131.png",
+          "w": 50,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0132.png",
+          "name": "formula0132.png",
+          "w": 51,
+          "h": 42
+        }
+      ],
+      "text": "BÀI TẬP 51: a) Một bà bán trứng cho ba người: bán cho người thứ nhất [formula] số trứng và 3 quả; bán cho người thứ hai [formula] số trứng còn lại và 4 quả; bán cho người thứ ba [formula] số trứng còn lại và 5 quả. Cuối cùng còn lại 6 quả. Tính số trứng bà đã bán cho ba người? b) Tìm các số tự nhiên a, b, c, d nhỏ nhất sao cho: [formula]; [formula]; [formula]",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.110",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0133.png",
+          "name": "formula0133.png",
+          "w": 247,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0134.png",
+          "name": "formula0134.png",
+          "w": 199,
+          "h": 42
+        }
+      ],
+      "text": "BÀI TẬP 52: TÝnh a) [formula] b) [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.112",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0136.png",
+          "name": "formula0136.png",
+          "w": 247,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0137.png",
+          "name": "formula0137.png",
+          "w": 60,
+          "h": 20
+        }
+      ],
+      "text": "BÀI TẬP 54: Cho [formula] và [formula]. So sánh A và B.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.114",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0141.png",
+          "name": "formula0141.png",
+          "w": 143,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0142.png",
+          "name": "formula0142.png",
+          "w": 230,
+          "h": 83
+        }
+      ],
+      "text": "BÀI TẬP 56: Tính giá trị các biểu thức sau bắng phương pháp hợp lí: a) [formula] b) [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.128",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 7,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0159.png",
+          "name": "formula0159.png",
+          "w": 14,
+          "h": 14
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0160.png",
+          "name": "formula0160.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0161.png",
+          "name": "formula0161.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0162.png",
+          "name": "formula0162.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0163.png",
+          "name": "formula0163.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0164.png",
+          "name": "formula0164.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0165.png",
+          "name": "formula0165.png",
+          "w": 8,
+          "h": 20
+        }
+      ],
+      "text": "bài 19: Tìm n [formula] N để: a) (n + 12) [formula] n b) (8n + 33) [formula] n c) (50 – 2n) [formula] n d) (n - 2) [formula] n + 1 e) (3n + 3) [formula] (n – 5) g) (3n + 34) [formula] (n + 5)",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.136",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0166.png",
+          "name": "formula0166.png",
+          "w": 216,
+          "h": 36
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0167.png",
+          "name": "formula0167.png",
+          "w": 224,
+          "h": 27
+        }
+      ],
+      "text": "bài 27: Tính nhanh: a) [formula] b) [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.149",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0174.png",
+          "name": "formula0174.png",
+          "w": 322,
+          "h": 44
+        }
+      ],
+      "text": "Bài 11: CMR với mọi số tự nhiên n ta đều có: [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.199",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 8,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0193.png",
+          "name": "formula0193.png",
+          "w": 7,
+          "h": 21
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0194.png",
+          "name": "formula0194.png",
+          "w": 7,
+          "h": 21
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0195.png",
+          "name": "formula0195.png",
+          "w": 7,
+          "h": 21
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0196.png",
+          "name": "formula0196.png",
+          "w": 7,
+          "h": 21
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0197.png",
+          "name": "formula0197.png",
+          "w": 7,
+          "h": 21
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0198.png",
+          "name": "formula0198.png",
+          "w": 7,
+          "h": 21
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0199.png",
+          "name": "formula0199.png",
+          "w": 7,
+          "h": 21
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0200.png",
+          "name": "formula0200.png",
+          "w": 7,
+          "h": 21
+        }
+      ],
+      "text": "Bài tập 6: Tìm n sao cho a) n + 4 [formula] n + 1 b) n2 + 4 [formula] n + 2 Giải: a) n + 4 [formula] n + 1 => (n + 1) + 3 [formula] n + 1 => 3 [formula] n + 1 b- n2 + 4 [formula] n + 2 => n2 + 2n – 2n – 2 + 6 [formula] n + 1 => n(n + 2) – 2 (n + 2) + 6 [formula] n + 1",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.220",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0285.png",
+          "name": "formula0285.png",
+          "w": 354,
+          "h": 48
+        }
+      ],
+      "text": "Bài 9. Chứng minh các phân số sau là các phân số tối giản: [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.223",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0294.png",
+          "name": "formula0294.png",
+          "w": 263,
+          "h": 47
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0295.png",
+          "name": "formula0295.png",
+          "w": 226,
+          "h": 47
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0296.png",
+          "name": "formula0296.png",
+          "w": 203,
+          "h": 47
+        }
+      ],
+      "text": "Bài 12. Chứng minh rắng: a) [formula] b) [formula] c) [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.225",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0339.png",
+          "name": "formula0339.png",
+          "w": 32,
+          "h": 42
+        }
+      ],
+      "text": "Bài 7:Tìm phân số bắng phân số [formula] biết rắng hiệu giữa mẫu và tử của phân số đó bắng -160",
+      "category": "contradictory_or_incomplete_source",
+      "reason": "Source statement/formula is internally inconsistent or missing a scorable subpart; do not auto-score without original source.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.228",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0343.png",
+          "name": "formula0343.png",
+          "w": 46,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0344.png",
+          "name": "formula0344.png",
+          "w": 51,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0345.png",
+          "name": "formula0345.png",
+          "w": 79,
+          "h": 44
+        }
+      ],
+      "text": "Bài 10: Chứng tỏ rắng: các phân số sau đây là phân số tối giản với mọi số tự nhiên n. a, [formula] b, [formula] c, [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.235",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 8,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0349.png",
+          "name": "formula0349.png",
+          "w": 55,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0350.png",
+          "name": "formula0350.png",
+          "w": 40,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0351.png",
+          "name": "formula0351.png",
+          "w": 54,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0352.png",
+          "name": "formula0352.png",
+          "w": 42,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0353.png",
+          "name": "formula0353.png",
+          "w": 56,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0354.png",
+          "name": "formula0354.png",
+          "w": 42,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0355.png",
+          "name": "formula0355.png",
+          "w": 54,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0356.png",
+          "name": "formula0356.png",
+          "w": 40,
+          "h": 27
+        }
+      ],
+      "text": "Bài 04: Tìm số nguyên x biết rắng. 1) [formula] = 0 2) [formula] = 7 3) [formula] = 4 4) [formula] = 12 5) [formula] = 0 6) [formula] = 21 7) [formula] = 24 8) [formula] + 12 = 0",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.239",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0370.png",
+          "name": "formula0370.png",
+          "w": 39,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0371.png",
+          "name": "formula0371.png",
+          "w": 14,
+          "h": 14
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0372.png",
+          "name": "formula0372.png",
+          "w": 40,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0373.png",
+          "name": "formula0373.png",
+          "w": 14,
+          "h": 14
+        }
+      ],
+      "text": "Bài 08: a) Tìm giá trị nhỏ nhất của biểu thức A = [formula] + 1980 với x [formula] Z b) Tìm giá trị lớn nhất của biểu thức B = - [formula] + 1986 với x [formula] Z Chú ý: Học sinh tích cực ôn tập để chuẩn bị thi học kì I đạt kết quả tốt. @. COM.6CD.0986053022 Tờ bài tập số 10",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.249",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0382.png",
+          "name": "formula0382.png",
+          "w": 14,
+          "h": 14
+        }
+      ],
+      "text": "Bài 10: a) M = a + b – 1 và N = b + c – 1. Biết M > N hỏi hiệu a – c dương hay âm? b) Cho M = ( - a + b ) – ( b + c – a ) + ( c – a ). Trong đó b, c [formula] Z còn a là một số nguyên âm. Chứng minh rắng biểu thức M luôn dương.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.250",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0383.png",
+          "name": "formula0383.png",
+          "w": 14,
+          "h": 14
+        }
+      ],
+      "text": "Bài 11: Cho A = a – b + c – 1; B = a + 2 với a, b, c [formula] Z Biết A = B, chứng minh rắng b và c là hai số nguyên liền nhau.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.260",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 16,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0405.png",
+          "name": "formula0405.png",
+          "w": 36,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0406.png",
+          "name": "formula0406.png",
+          "w": 34,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0407.png",
+          "name": "formula0407.png",
+          "w": 24,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0408.png",
+          "name": "formula0408.png",
+          "w": 42,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0409.png",
+          "name": "formula0409.png",
+          "w": 36,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0410.png",
+          "name": "formula0410.png",
+          "w": 36,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0411.png",
+          "name": "formula0411.png",
+          "w": 27,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0412.png",
+          "name": "formula0412.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0413.png",
+          "name": "formula0413.png",
+          "w": 52,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0414.png",
+          "name": "formula0414.png",
+          "w": 82,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0415.png",
+          "name": "formula0415.png",
+          "w": 56,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0416.png",
+          "name": "formula0416.png",
+          "w": 103,
+          "h": 44
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0417.png",
+          "name": "formula0417.png",
+          "w": 136,
+          "h": 44
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0418.png",
+          "name": "formula0418.png",
+          "w": 135,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0419.png",
+          "name": "formula0419.png",
+          "w": 72,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0420.png",
+          "name": "formula0420.png",
+          "w": 56,
+          "h": 48
+        }
+      ],
+      "text": "Bài tập 01:Rút gọn các phân số: [formula]; [formula]; [formula]; [formula]; [formula]; [formula]; [formula]; [formula]; [formula]; [formula]; [formula] [formula]; [formula]; [formula]; [formula]; [formula]",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.261",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0421.png",
+          "name": "formula0421.png",
+          "w": 39,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0422.png",
+          "name": "formula0422.png",
+          "w": 14,
+          "h": 14
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0423.png",
+          "name": "formula0423.png",
+          "w": 15,
+          "h": 15
+        }
+      ],
+      "text": "Bài tập 02:Cho phân số A = [formula] với n [formula] Z và n [formula] 0. Số nguyên n phải thoả mãn đk gì để phân số A tồn tại? Tìm phân số A, khi n = 0; n = 5; n = 7. Với giá trị nào của n thì A là số nguyên?",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.263",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0426.png",
+          "name": "formula0426.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0427.png",
+          "name": "formula0427.png",
+          "w": 24,
+          "h": 42
+        }
+      ],
+      "text": "Bài tập 04:Tìm phân số [formula] bắng phân số [formula], biết: Tổng của tử và mẫu là 10 g) BCNN(a, b) = 90 Hiệu của tử và mẫu là 3 h) ƯCLN(a, b) = 54 Tích của tử và mẫu là 150 i) BCNN(a, b). ƯCLN(a, b) = 3456",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.264",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 6,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0428.png",
+          "name": "formula0428.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0429.png",
+          "name": "formula0429.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0430.png",
+          "name": "formula0430.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0431.png",
+          "name": "formula0431.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0432.png",
+          "name": "formula0432.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0433.png",
+          "name": "formula0433.png",
+          "w": 27,
+          "h": 42
+        }
+      ],
+      "text": "Bài tập 05:Viết các phân số sau dưới dạng phân số có mẫu dương: [formula]; [formula]; [formula]; [formula]; [formula]; [formula]",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.265",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 20,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0434.png",
+          "name": "formula0434.png",
+          "w": 15,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0435.png",
+          "name": "formula0435.png",
+          "w": 24,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0436.png",
+          "name": "formula0436.png",
+          "w": 28,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0437.png",
+          "name": "formula0437.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0438.png",
+          "name": "formula0438.png",
+          "w": 28,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0439.png",
+          "name": "formula0439.png",
+          "w": 15,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0440.png",
+          "name": "formula0440.png",
+          "w": 28,
+          "h": 44
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0441.png",
+          "name": "formula0441.png",
+          "w": 27,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0442.png",
+          "name": "formula0442.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0443.png",
+          "name": "formula0443.png",
+          "w": 34,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0444.png",
+          "name": "formula0444.png",
+          "w": 28,
+          "h": 44
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0445.png",
+          "name": "formula0445.png",
+          "w": 34,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0446.png",
+          "name": "formula0446.png",
+          "w": 28,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0447.png",
+          "name": "formula0447.png",
+          "w": 34,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0448.png",
+          "name": "formula0448.png",
+          "w": 28,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0449.png",
+          "name": "formula0449.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0450.png",
+          "name": "formula0450.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0451.png",
+          "name": "formula0451.png",
+          "w": 30,
+          "h": 44
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0452.png",
+          "name": "formula0452.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0453.png",
+          "name": "formula0453.png",
+          "w": 27,
+          "h": 42
+        }
+      ],
+      "text": "Bài tập 06:Tìm số nguyên x biết: a) [formula] = [formula] b) [formula] = [formula] c) [formula] = [formula] d) [formula] = [formula] e) [formula] = [formula] f) [formula] = [formula] g) [formula] = [formula] h) [formula] = [formula] i) [formula] = [formula] k) [formula] = [formula]",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.266",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 8,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0454.png",
+          "name": "formula0454.png",
+          "w": 28,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0455.png",
+          "name": "formula0455.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0456.png",
+          "name": "formula0456.png",
+          "w": 30,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0457.png",
+          "name": "formula0457.png",
+          "w": 35,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0458.png",
+          "name": "formula0458.png",
+          "w": 36,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0459.png",
+          "name": "formula0459.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0460.png",
+          "name": "formula0460.png",
+          "w": 26,
+          "h": 46
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0461.png",
+          "name": "formula0461.png",
+          "w": 28,
+          "h": 44
+        }
+      ],
+      "text": "Bài tập 07:Tìm các số nguyên x, y, z, t, biết: a) [formula] = [formula] = [formula] = [formula] b) [formula] = [formula] = [formula] = [formula]",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.267",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0462.png",
+          "name": "formula0462.png",
+          "w": 14,
+          "h": 14
+        }
+      ],
+      "text": "Bài 08: Lập các phân số bắng nhau từ đẳng thức: m. n = p. q ( m, n, p, q [formula] Z; m, n, p, q khác 0 )",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.268",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 6,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0463.png",
+          "name": "formula0463.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0464.png",
+          "name": "formula0464.png",
+          "w": 18,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0465.png",
+          "name": "formula0465.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0466.png",
+          "name": "formula0466.png",
+          "w": 40,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0467.png",
+          "name": "formula0467.png",
+          "w": 40,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0468.png",
+          "name": "formula0468.png",
+          "w": 16,
+          "h": 42
+        }
+      ],
+      "text": "Bài tập 09: Cho [formula] = [formula] CMR: a) [formula] = [formula] b) [formula] = [formula]",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.269",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0469.png",
+          "name": "formula0469.png",
+          "w": 135,
+          "h": 42
+        }
+      ],
+      "text": "Bài tập 10: Cho M = [formula] a) Rút gọn M b) Xoá 1 số hạng ở tử và 1 số hạng ở mẫu của M để được ps mới vẫn bắng M. tờ bài tập số 38",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.275",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.geometry.angles",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0488.png",
+          "name": "formula0488.png",
+          "w": 18,
+          "h": 16
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0489.png",
+          "name": "formula0489.png",
+          "w": 18,
+          "h": 16
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0490.png",
+          "name": "formula0490.png",
+          "w": 18,
+          "h": 16
+        }
+      ],
+      "text": "Bài 06: Vẽ hai góc kề bù xOy, yOx', biết [formula] xOy = 500. Gọi Ot là tia phân giác của góc xOy. Tính [formula] x'Ot, [formula] xOt'.",
+      "category": "geometry_or_construction_review",
+      "reason": "Geometry item needs figure/source semantics; avoid auto-scoring from formula image alone.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.276",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.geometry.angles",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0491.png",
+          "name": "formula0491.png",
+          "w": 18,
+          "h": 16
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0492.png",
+          "name": "formula0492.png",
+          "w": 18,
+          "h": 16
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0493.png",
+          "name": "formula0493.png",
+          "w": 18,
+          "h": 16
+        }
+      ],
+      "text": "Bài 07: Vẽ hai góc kề bù xOy, yOx', biết [formula] xOy = 900. Gọi Ot là tia phân giác của góc xOy. Tính [formula] x'Ot, [formula] xOt'.",
+      "category": "geometry_or_construction_review",
+      "reason": "Geometry item needs figure/source semantics; avoid auto-scoring from formula image alone.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.284",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.geometry.angles",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0519.png",
+          "name": "formula0519.png",
+          "w": 18,
+          "h": 16
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0520.png",
+          "name": "formula0520.png",
+          "w": 18,
+          "h": 16
+        }
+      ],
+      "text": "Bài 15: Hãy vẽ ba tia chung gốc Ox, Oy, Oz, trong đó [formula] xOz = [formula] zOy mà Oz không phải là tia phân giác của góc xOy.",
+      "category": "geometry_or_construction_review",
+      "reason": "Geometry item needs figure/source semantics; avoid auto-scoring from formula image alone.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.geometry_angles.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.294",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.geometry.angles",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0542.png",
+          "name": "formula0542.png",
+          "w": 18,
+          "h": 16
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0543.png",
+          "name": "formula0543.png",
+          "w": 18,
+          "h": 16
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0544.png",
+          "name": "formula0544.png",
+          "w": 18,
+          "h": 16
+        }
+      ],
+      "text": "Bài 03: Trên cùng một nửa mặt phẳng bờ chứa tia OA, vẽ các tia OB, OC sao cho [formula] AOB = 300, [formula] AOC = 750. xOy = 350, [formula] xOz = 700. a) Tia nào trong ba tia Ox, Oy, Oz nắm giữa hai tia còn lại? b) Tia Oy có phải là tia phân giác của góc xOz không? Vì sao?",
+      "category": "geometry_or_construction_review",
+      "reason": "Geometry item needs figure/source semantics; avoid auto-scoring from formula image alone.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.316",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0557.png",
+          "name": "formula0557.png",
+          "w": 132,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0558.png",
+          "name": "formula0558.png",
+          "w": 99,
+          "h": 24
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0559.png",
+          "name": "formula0559.png",
+          "w": 131,
+          "h": 23
+        }
+      ],
+      "text": "Bài 1: Viết tập hợp sau bằng cách liệt kê các phần tử của tập hợp: a/ A= [formula]; b/ B= [formula]; c/ C= [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.327",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0568.png",
+          "name": "formula0568.png",
+          "w": 46,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0569.png",
+          "name": "formula0569.png",
+          "w": 44,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0570.png",
+          "name": "formula0570.png",
+          "w": 35,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0571.png",
+          "name": "formula0571.png",
+          "w": 36,
+          "h": 23
+        }
+      ],
+      "text": "Bài 1: Điền chữ số thích hợp vào dấu * để: a/ [formula]; b/ [formula] mà không chia hết cho 9 c/ [formula] 5 và 9; d/ [formula] 2 và 3",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.328",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0572.png",
+          "name": "formula0572.png",
+          "w": 36,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0573.png",
+          "name": "formula0573.png",
+          "w": 8,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0574.png",
+          "name": "formula0574.png",
+          "w": 28,
+          "h": 26
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0575.png",
+          "name": "formula0575.png",
+          "w": 8,
+          "h": 20
+        }
+      ],
+      "text": "Bài 2: Tìm các chữ số a, b để: a/ [formula] [formula] (2,3, 5 và 9 ); b/ [formula] [formula] 3 và 5 VI/ Dạng bài tập về số nguyên",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.339",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0585.png",
+          "name": "formula0585.png",
+          "w": 131,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0586.png",
+          "name": "formula0586.png",
+          "w": 212,
+          "h": 42
+        }
+      ],
+      "text": "Bài 2: Tính a/ A= [formula]; b/ B= [formula] c/ 1+(-2)+3+(-4)+5+(-6)+.....+99+(-100) d/ 1-2-3+4 +5-6-7+8+............+1997+(-1998)+(-1999) + 2000",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.340",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0587.png",
+          "name": "formula0587.png",
+          "w": 30,
+          "h": 18
+        }
+      ],
+      "text": "Bài 3: Chứng minh rằng: a/ A= 3+32 + 33+..........+360 chia hết cho 13 b/ (n+3).(n+6) chia hết cho 2 ( với mọi n [formula] ) c/ CMR: hai số tự nhiên lẻ liên tiếp là hai số nguyên tố cùng nhau.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.347",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.geometry.points_lines_segments",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0591.png",
+          "name": "formula0591.png",
+          "w": 104,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0592.png",
+          "name": "formula0592.png",
+          "w": 104,
+          "h": 42
+        }
+      ],
+      "text": "Bài 10: Cho đoạn thẳng AB và trung điểm M của nó. a/ Chứng tỏ rằng: Nếu C là điểm nằm giữa M và B thì [formula] b/ Nếu C thuộc tia đối của tia AB. Chứng tỏ rằng: [formula] ĐỀ THI HỌC KỲ I Môn toán 6- Năm học: 2011-2012 Thời gian: 90 phút",
+      "category": "geometry_or_construction_review",
+      "reason": "Geometry item needs figure/source semantics; avoid auto-scoring from formula image alone.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.350",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0595.png",
+          "name": "formula0595.png",
+          "w": 46,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0596.png",
+          "name": "formula0596.png",
+          "w": 28,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0597.png",
+          "name": "formula0597.png",
+          "w": 18,
+          "h": 20
+        }
+      ],
+      "text": "Bài 3: Điền chữ số thích hợp vào dấu * để: a/ [formula]; b/ [formula] [formula] và 9",
+      "category": "contradictory_or_incomplete_source",
+      "reason": "Source statement/formula is internally inconsistent or missing a scorable subpart; do not auto-score without original source.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_danh_cho_hoc_sinh_lop_6_tu_hoc_d.07i1stx.360",
+      "source": "Bai tap danh cho hoc sinh lop 6 tu hoc.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0618.png",
+          "name": "formula0618.png",
+          "w": 162,
+          "h": 20
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-danh-cho-hoc-sinh-lop-6-tu-hoc-doc-e9b56c24/formula0619.png",
+          "name": "formula0619.png",
+          "w": 70,
+          "h": 22
+        }
+      ],
+      "text": "Bài 6: Chứng minh rắng: [formula] [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.050",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0019.png",
+          "name": "formula0019.png",
+          "w": 179,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0020.png",
+          "name": "formula0020.png",
+          "w": 196,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0021.png",
+          "name": "formula0021.png",
+          "w": 196,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0022.png",
+          "name": "formula0022.png",
+          "w": 137,
+          "h": 22
+        }
+      ],
+      "text": "Bài 3 (3 điểm). Tìm [formula] biết: a) [formula] b) [formula] c) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.051",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0023.png",
+          "name": "formula0023.png",
+          "w": 137,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0024.png",
+          "name": "formula0024.png",
+          "w": 207,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0025.png",
+          "name": "formula0025.png",
+          "w": 207,
+          "h": 22
+        }
+      ],
+      "text": "Bài 4 (1,5 điểm). Tính tổng của tất cả các số nguyên x thỏa mãn: a) [formula] b) [formula] c) [formula] ĐỀ 5",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.052",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0026.png",
+          "name": "formula0026.png",
+          "w": 44,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0027.png",
+          "name": "formula0027.png",
+          "w": 44,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0028.png",
+          "name": "formula0028.png",
+          "w": 80,
+          "h": 22
+        }
+      ],
+      "text": "Bài 1 (1,5 điểm). Tính: a) [formula] b) [formula] c) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.053",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0029.png",
+          "name": "formula0029.png",
+          "w": 80,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0030.png",
+          "name": "formula0030.png",
+          "w": 118,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0031.png",
+          "name": "formula0031.png",
+          "w": 118,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0032.png",
+          "name": "formula0032.png",
+          "w": 152,
+          "h": 22
+        }
+      ],
+      "text": "Bài 2 (4 điểm). Tính: a) [formula] b) [formula] c) [formula] d) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.054",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0033.png",
+          "name": "formula0033.png",
+          "w": 152,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0034.png",
+          "name": "formula0034.png",
+          "w": 104,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0035.png",
+          "name": "formula0035.png",
+          "w": 104,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0036.png",
+          "name": "formula0036.png",
+          "w": 94,
+          "h": 22
+        }
+      ],
+      "text": "Bài 3 (3 điểm). Tìm [formula] biết: a) [formula] b) [formula] c) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.057",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0043.png",
+          "name": "formula0043.png",
+          "w": 68,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0044.png",
+          "name": "formula0044.png",
+          "w": 67,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0045.png",
+          "name": "formula0045.png",
+          "w": 67,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0046.png",
+          "name": "formula0046.png",
+          "w": 179,
+          "h": 22
+        }
+      ],
+      "text": "Bài 2 (4 điểm). Tính: a) [formula] b) [formula] c) [formula] d) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.058",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0047.png",
+          "name": "formula0047.png",
+          "w": 179,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0048.png",
+          "name": "formula0048.png",
+          "w": 166,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0049.png",
+          "name": "formula0049.png",
+          "w": 166,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0050.png",
+          "name": "formula0050.png",
+          "w": 137,
+          "h": 22
+        }
+      ],
+      "text": "Bài 3 (3 điểm). Tìm [formula] biết: a) [formula] b) [formula] c) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.059",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0051.png",
+          "name": "formula0051.png",
+          "w": 137,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0052.png",
+          "name": "formula0052.png",
+          "w": 157,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0053.png",
+          "name": "formula0053.png",
+          "w": 157,
+          "h": 22
+        }
+      ],
+      "text": "Bài 4 (1,5 điểm). Tính tổng của tất cả các số nguyên x thỏa mãn: a) [formula] b) [formula] c) [formula] ĐỀ 7",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.061",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0057.png",
+          "name": "formula0057.png",
+          "w": 80,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0058.png",
+          "name": "formula0058.png",
+          "w": 128,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0059.png",
+          "name": "formula0059.png",
+          "w": 128,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0060.png",
+          "name": "formula0060.png",
+          "w": 152,
+          "h": 22
+        }
+      ],
+      "text": "Bài 2 (4 điểm). Tính: a) [formula] b) [formula] c) [formula] d) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bai_tap_toan_lop_6_so_nguyen_doc.1l9d7yv.062",
+      "source": "bai-tap-toan-lop-6-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0061.png",
+          "name": "formula0061.png",
+          "w": 152,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0062.png",
+          "name": "formula0062.png",
+          "w": 94,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0063.png",
+          "name": "formula0063.png",
+          "w": 94,
+          "h": 22
+        },
+        {
+          "path": "/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0064.png",
+          "name": "formula0064.png",
+          "w": 94,
+          "h": 22
+        }
+      ],
+      "text": "Bài 3 (3 điểm). Tìm [formula] biết: a) [formula] b) [formula] c) [formula]",
+      "category": "needs_image_transcription_review",
+      "reason": "Integer worksheet formulas are readable but rendered as dark image strips and several prompts bleed between blocks; handle with original/source comparison.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bo_de_ks_daunam_2011_2012_kimdongthcs_to.0boblck.001",
+      "source": "Bo - De-KS-daunam-2011-2012-kimDongTHCS-Toan.DOC",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0001.png",
+          "name": "formula0001.png",
+          "w": 36,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0002.png",
+          "name": "formula0002.png",
+          "w": 39,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0003.png",
+          "name": "formula0003.png",
+          "w": 50,
+          "h": 27
+        }
+      ],
+      "text": "Bài 1 (4,5 điểm) Giải các phương trình sau: 5(x – 2) = 3(x + 1) [formula] + [formula] = 2 [formula] = 3",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bo_de_ks_daunam_2011_2012_kimdongthcs_to.0boblck.002",
+      "source": "Bo - De-KS-daunam-2011-2012-kimDongTHCS-Toan.DOC",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0004.png",
+          "name": "formula0004.png",
+          "w": 44,
+          "h": 42
+        }
+      ],
+      "text": "Bài 2 (2 điểm) Giải các bất phương trình sau: (x + 2)2 < (x – 1)(x + 1) [formula] > 2",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bo_de_ks_daunam_2011_2012_kimdongthcs_to.0boblck.004",
+      "source": "Bo - De-KS-daunam-2011-2012-kimDongTHCS-Toan.DOC",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0005.png",
+          "name": "formula0005.png",
+          "w": 36,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0006.png",
+          "name": "formula0006.png",
+          "w": 39,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0007.png",
+          "name": "formula0007.png",
+          "w": 50,
+          "h": 27
+        }
+      ],
+      "text": "Bài 1 (4,5 điểm) Giải các phương trình sau: 5(x – 2) = 3(x + 1) [formula] + [formula] = 2 [formula] = 3",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bo_de_ks_daunam_2011_2012_kimdongthcs_to.0boblck.005",
+      "source": "Bo - De-KS-daunam-2011-2012-kimDongTHCS-Toan.DOC",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0008.png",
+          "name": "formula0008.png",
+          "w": 44,
+          "h": 42
+        }
+      ],
+      "text": "Bài 2 (2 điểm) Giải các bất phương trình sau: (x + 2)2 < (x – 1)(x + 1) [formula] > 2",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.bo_de_ks_daunam_2011_2012_kimdongthcs_to.0boblck.023",
+      "source": "Bo - De-KS-daunam-2011-2012-kimDongTHCS-Toan.DOC",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 7,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0047.png",
+          "name": "formula0047.png",
+          "w": 22,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0048.png",
+          "name": "formula0048.png",
+          "w": 36,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0049.png",
+          "name": "formula0049.png",
+          "w": 39,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0050.png",
+          "name": "formula0050.png",
+          "w": 50,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0051.png",
+          "name": "formula0051.png",
+          "w": 84,
+          "h": 48
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0052.png",
+          "name": "formula0052.png",
+          "w": 71,
+          "h": 48
+        },
+        {
+          "path": "/assets/math6/formulas/bo-de-ks-daunam-2011-2012-kimdongthcs-toan-doc-5c6caba5/formula0053.png",
+          "name": "formula0053.png",
+          "w": 56,
+          "h": 48
+        }
+      ],
+      "text": "câu 1,5 điểm: Câu a) 5(x – 2) = 3(x + 1) ( 5x – 10 = 3x + 3 ( 2x = 13 ( x = [formula] 1,5 đ Câu b) [formula] + [formula] = 2 (ĐKXĐ: x ( – 1; x ( 2) ( 2x(x – 2) + 3(x + 1) = 2(x + 1)(x – 2) ( 2x2 – 4x + 3x + 3 = 2(x2 – 2x + x – 2) ( 2x2 – x + 3 = 2x2 – 2x – 4 ( x = – 7 (thoả mãn ĐKXĐ) 0,25 đ 0,5 đ 0,25 đ 0,25 đ 0,25 đ Câu c) [formula] = 3 ( [formula] ( [formula] ( [formula] 1,5 đ",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_1_tap_hop_doc.1xevvfv.010",
+      "source": "Chuyên đề 1 tập hợp.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-1-t-p-h-p-doc-fcf885ff/formula0022.png",
+          "name": "formula0022.png",
+          "w": 9,
+          "h": 10
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-1-t-p-h-p-doc-fcf885ff/formula0023.png",
+          "name": "formula0023.png",
+          "w": 9,
+          "h": 10
+        }
+      ],
+      "text": "Bài 10: Tập hợp A các số tự nhiên lớn hơn 5 và nhỏ hơn 12. Tập hợp B các số tự nhiên lớn hơn 7 và nhỏ hơn 15. Viết tập hợp A và B bằng cách liệt kê Tìm tập hợp [formula] Tập hợp [formula] có bao nhiêu phần tử.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_3_luy_thua_doc.0ygqjgj.003",
+      "source": "Chuyên đề 3. Lũy thừa.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 4,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0007.png",
+          "name": "formula0007.png",
+          "w": 130,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0008.png",
+          "name": "formula0008.png",
+          "w": 110,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0009.png",
+          "name": "formula0009.png",
+          "w": 110,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0010.png",
+          "name": "formula0010.png",
+          "w": 72,
+          "h": 42
+        }
+      ],
+      "text": "Bài 3: Dùng lũy thừa để viết các số sau: [formula] [formula] [formula] [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_3_luy_thua_doc.0ygqjgj.006",
+      "source": "Chuyên đề 3. Lũy thừa.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 6,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0032.png",
+          "name": "formula0032.png",
+          "w": 55,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0033.png",
+          "name": "formula0033.png",
+          "w": 55,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0034.png",
+          "name": "formula0034.png",
+          "w": 45,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0035.png",
+          "name": "formula0035.png",
+          "w": 45,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0036.png",
+          "name": "formula0036.png",
+          "w": 134,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0037.png",
+          "name": "formula0037.png",
+          "w": 134,
+          "h": 25
+        }
+      ],
+      "text": "Bài 1: Thực hiện các phép tính sau: [formula]; [formula]; [formula]; [formula]; [formula]; [formula];",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_3_luy_thua_doc.0ygqjgj.011",
+      "source": "Chuyên đề 3. Lũy thừa.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0074.png",
+          "name": "formula0074.png",
+          "w": 190,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-3-l-y-th-a-doc-d9c4b67b/formula0075.png",
+          "name": "formula0075.png",
+          "w": 134,
+          "h": 26
+        }
+      ],
+      "text": "Bài 2: Tìm x [formula] [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.003",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0008.png",
+          "name": "formula0008.png",
+          "w": 146,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0009.png",
+          "name": "formula0009.png",
+          "w": 165,
+          "h": 25
+        }
+      ],
+      "text": "Bài 3: Chứng tỏ rằng [formula] chia hết cho 9 và 5 [formula] chia hết cho 2 và 9",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.004",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0010.png",
+          "name": "formula0010.png",
+          "w": 165,
+          "h": 25
+        }
+      ],
+      "text": "Bài 4: Em hãy viết vào dấu * ở số [formula] một chữ số để được số có 3 chữ số và là số: a) Chia hết cho 2 b) chia hết cho 3 c) Chia hết cho 5 d) chia hết cho 9 e) Chia hết cho cả 2 và 5 g) Chia hết cho cả 3 và 9",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.005",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0011.png",
+          "name": "formula0011.png",
+          "w": 325,
+          "h": 25
+        }
+      ],
+      "text": "Bài 5: Hãy tìm các chữ số x, y sao cho [formula] chia hết cho 5 và 9.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.006",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0012.png",
+          "name": "formula0012.png",
+          "w": 325,
+          "h": 25
+        }
+      ],
+      "text": "Bài 6: Tìm x và y để số [formula] chia hết cho 2, 5 và 9.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.007",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0013.png",
+          "name": "formula0013.png",
+          "w": 325,
+          "h": 25
+        }
+      ],
+      "text": "Bài 7: Tìm a và b để [formula] chia hết cho 36.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.008",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0014.png",
+          "name": "formula0014.png",
+          "w": 325,
+          "h": 25
+        }
+      ],
+      "text": "Bài 8: Thay các chữ x, y bởi các số thích hợp để [formula] chia hết cho 45",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.009",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0015.png",
+          "name": "formula0015.png",
+          "w": 76,
+          "h": 26
+        }
+      ],
+      "text": "Bài 9: Tìm tất cả các chữ số a và b để phân số [formula] là số tự nhiên.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.010",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0016.png",
+          "name": "formula0016.png",
+          "w": 76,
+          "h": 26
+        }
+      ],
+      "text": "Bài 10: Tìm x để [formula] chia hết cho 3.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.011",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0017.png",
+          "name": "formula0017.png",
+          "w": 76,
+          "h": 26
+        }
+      ],
+      "text": "Bài 11: Tìm a và b để số [formula] chia hết cho 9 và chia cho 5 dư 1.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.012",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0018.png",
+          "name": "formula0018.png",
+          "w": 76,
+          "h": 26
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0019.png",
+          "name": "formula0019.png",
+          "w": 34,
+          "h": 26
+        }
+      ],
+      "text": "Bài 12: Tìm tất cả các số có 3 chữ số khác nhau [formula], biết: [formula].",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.013",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0020.png",
+          "name": "formula0020.png",
+          "w": 34,
+          "h": 26
+        }
+      ],
+      "text": "Bài 13: Cho số [formula]. Hãy tìm x và y để được số có 4 chữ số khác nhau chia hết cho 2, 3 và chia cho 5 dư 4.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_4_dau_hieu_chia_het_lop_6_doc.0o987xw.017",
+      "source": "Chuyên đề 4. Dấu hiệu chia hết lớp 6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 8,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0022.png",
+          "name": "formula0022.png",
+          "w": 51,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0023.png",
+          "name": "formula0023.png",
+          "w": 44,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0024.png",
+          "name": "formula0024.png",
+          "w": 98,
+          "h": 26
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0025.png",
+          "name": "formula0025.png",
+          "w": 98,
+          "h": 26
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0026.png",
+          "name": "formula0026.png",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0027.png",
+          "name": "formula0027.png",
+          "w": 57,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0028.png",
+          "name": "formula0028.png",
+          "w": 44,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-4-d-u-hi-u-chia-h-t-l-p-6-doc-788684f8/formula0029.png",
+          "name": "formula0029.png",
+          "w": 28,
+          "h": 23
+        }
+      ],
+      "text": "Bài 18: Tìm các chữ số x, y để a) [formula] ∶ 2 b) [formula] ∶ 3 c) [formula] ∶ 3 và 9 d) [formula] ∶ 2 và 3 e) [formula] ∶ 3 và 5 f) [formula] ∶ 2; 3; 5 và 9 g) [formula] ∶ 9 nhưng ∶ 5 h) [formula] chia hết cho 2; 3; 5; 9.",
+      "category": "large_multi_part_manual",
+      "reason": "Large multi-part exercise; needs a small dedicated authored branch or split into separate practice items.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.chuyen_de_tia_hai_tia_doi_nhau_doc.13w6iyr.002",
+      "source": "Chuyên đề. Tia. Hai tia đối nhau.doc",
+      "topic": "math6.geometry.points_lines_segments",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-tia-hai-tia-i-nhau-doc-4cc5a2e5/formula0002.png",
+          "name": "formula0002.png",
+          "w": 24,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-tia-hai-tia-i-nhau-doc-4cc5a2e5/formula0003.png",
+          "name": "formula0003.png",
+          "w": 24,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-tia-hai-tia-i-nhau-doc-4cc5a2e5/formula0004.png",
+          "name": "formula0004.png",
+          "w": 24,
+          "h": 25
+        }
+      ],
+      "text": "Bài 2: Cho ba điểm A, B, C không thẳng hang. ĐẶt tên đường thẳng BC là [formula], đường thẳng CA là [formula] và đường thẳng AB là [formula]. Gọi tên các cặp tia đối nhau.",
+      "category": "geometry_or_construction_review",
+      "reason": "Geometry item needs figure/source semantics; avoid auto-scoring from formula image alone.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_cac_bai_toan_ve_su_chia_het_cu.1jvbt3e.011",
+      "source": "chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 7,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen--b46d98d3/formula0104.png",
+          "name": "formula0104.png",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "path": "/assets/math6/formulas/chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen--b46d98d3/formula0105.png",
+          "name": "formula0105.png",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "path": "/assets/math6/formulas/chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen--b46d98d3/formula0106.png",
+          "name": "formula0106.png",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "path": "/assets/math6/formulas/chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen--b46d98d3/formula0107.png",
+          "name": "formula0107.png",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "path": "/assets/math6/formulas/chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen--b46d98d3/formula0108.png",
+          "name": "formula0108.png",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "path": "/assets/math6/formulas/chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen--b46d98d3/formula0109.png",
+          "name": "formula0109.png",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "path": "/assets/math6/formulas/chuyen-de-cac-bai-toan-ve-su-chia-het-cua-so-nguyen--b46d98d3/formula0110.png",
+          "name": "formula0110.png",
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "text": "Bài 2: Tìm n [formula] N để: a) 3n – 1 chia hết cho 8 b) A = 32n + 3 + 24n + 1 chia hết cho 25 c) 5n – 2n chia hết cho 9 Giải a) Khi n = 2k (k [formula] N) thì 3n – 1 = 32k – 1 = 9k – 1 chia hết cho 9 – 1 = 8 Khi n = 2k + 1 (k [formula] N) thì 3n – 1 = 32k + 1 – 1 = 3. (9k – 1 ) + 2 = BS 8 + 2 Vậy: 3n – 1 chia hết cho 8 khi n = 2k (k [formula] N) b) A = 32n + 3 + 24n + 1 = 27. 32n + 2.24n = (25 + 2) 32n + 2.24n = 25. 32n + 2.32n + 2.24n = BS 25 + 2(9n + 16n) Nếu n = 2k +1(k [formula] N) thì 9n + 16n = 92k + 1 + 162k + 1 chia hết cho 9 + 16 = 25 Nếu n = 2k (k [formula] N) thì 9n có chữ số tận cùng bằng 1, còn 16n có chữ số tận cùng bằng 6 suy ra 2((9n + 16n) có chữ số tận cùng bằng 4 nên A không chia hết cho 5 nên không chia hết cho 25 c) Nếu n = 3k (k [formula] N) thì 5n – 2n = 53k – 23k chia hết cho 53 – 23 = 117 nên chia hết cho 9 Nếu n = 3k + 1 thì 5n – 2n = 5.53k – 2.23k = 5(53k – 23k) + 3. 23k = BS 9 + 3. 8k = BS 9 + 3(BS 9 – 1)k = BS 9 + BS 9 + 3 Tương tự: nếu n = 3k + 2 thì 5n – 2n không chia hết cho 9",
+      "category": "needs_original_source",
+      "reason": "Specialized theory/proof source keeps key symbols only as images; recover by reading original Word/PDF context first.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.chuyen_de_ucln_bc_nn_doc.1srh73e.005",
+      "source": "CHUYÊN-ĐỀ-UCLN  - BC NN.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 3,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/chuy-n-ucln-bc-nn-doc-20c45c03/formula0010.png",
+          "name": "formula0010.png",
+          "w": 244,
+          "h": 27
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-ucln-bc-nn-doc-20c45c03/formula0011.png",
+          "name": "formula0011.png",
+          "w": 281,
+          "h": 58
+        },
+        {
+          "path": "/assets/math6/formulas/chuy-n-ucln-bc-nn-doc-20c45c03/formula0012.png",
+          "name": "formula0012.png",
+          "w": 357,
+          "h": 60
+        }
+      ],
+      "text": "Bài 7,8,9,10 Các dạng bài tập và câu hỏi tự luyện Dạng 1: Tìm UCLN và BCNN của hai hay nhiều số Bài toán 1: Tìm UCLN và BCNN của 100, 150; 125 Giải: [formula] Các thừa số nguyên tố chung là: 5 Các thừa số nguyên tố riêng là: 2;3 [formula] Bài toán 2: Tìm UC, BC của 100,150,125 Giải: Để tìm ƯC; BC của các số trên ta không cần lập tập hợp các ước và bội của các số mà thông qua ƯCLN; BCNN để tìm. [formula] Các bài tập tương tự:",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_cuong_on_tap_he_mon_toan_lop_6_doc.1umr0aw.012",
+      "source": "de-cuong-on-tap-he-mon-toan-lop-6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-cuong-on-tap-he-mon-toan-lop-6-doc-d77607aa/formula0001.png",
+          "name": "formula0001.png",
+          "w": 43,
+          "h": 26
+        }
+      ],
+      "text": "Bài 4: Thay các chữ x, y bởi các số thích hợp để số [formula] chia hết cho a. 2, 3 và 5 b. 2, 5 và 9 c, chia hết cho 45",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_kiem_tra_hk_1_mon_toan_lop_6_nam_2014.09tf63t.003",
+      "source": "de-kiem-tra-hk-1-mon-toan-lop-6-nam-2014-2015-thcs-thi-tran-trang-bang.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-kiem-tra-hk-1-mon-toan-lop-6-nam-2014-2015-thcs-t-60ae362f/formula0002.png",
+          "name": "formula0002.png",
+          "w": 32,
+          "h": 23
+        },
+        {
+          "path": "/assets/math6/formulas/de-kiem-tra-hk-1-mon-toan-lop-6-nam-2014-2015-thcs-t-60ae362f/formula0003.png",
+          "name": "formula0003.png",
+          "w": 30,
+          "h": 23
+        }
+      ],
+      "text": "Câu 3: (1 điểm) Điền chữ số vào dấu * để: a) [formula] chia hết cho 3 b) [formula] chia hết cho 9 và 5",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_kiem_tra_hoc_ki_1_mon_toan_lop_6_doc.1oxdt9m.021",
+      "source": "de-kiem-tra-hoc-ki-1-mon-toan-lop-6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-kiem-tra-hoc-ki-1-mon-toan-lop-6-doc-64776d35/formula0006.png",
+          "name": "formula0006.png",
+          "w": 36,
+          "h": 24
+        }
+      ],
+      "text": "Bài 3. Điền các chữ số x, y để: [formula] chia hết cho 9 nhưng chia cho 5 dư 3",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_kiem_tra_hoc_ki_1_mon_toan_lop_6_doc.1oxdt9m.040",
+      "source": "de-kiem-tra-hoc-ki-1-mon-toan-lop-6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-kiem-tra-hoc-ki-1-mon-toan-lop-6-doc-64776d35/formula0007.png",
+          "name": "formula0007.png",
+          "w": 8,
+          "h": 18
+        },
+        {
+          "path": "/assets/math6/formulas/de-kiem-tra-hoc-ki-1-mon-toan-lop-6-doc-64776d35/formula0008.png",
+          "name": "formula0008.png",
+          "w": 8,
+          "h": 18
+        }
+      ],
+      "text": "Bài 1. Viết tập hợp sau bằng cách liệt kê các phần tử: A = {x(N / 84 [formula] x; 180 [formula] x; x(6)",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_kiem_tra_hoc_ki_1_mon_toan_lop_6_doc.1oxdt9m.096",
+      "source": "de-kiem-tra-hoc-ki-1-mon-toan-lop-6.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-kiem-tra-hoc-ki-1-mon-toan-lop-6-doc-64776d35/formula0022.png",
+          "name": "formula0022.png",
+          "w": 30,
+          "h": 23
+        }
+      ],
+      "text": "Bài 1. Điền một chữ số vào dấu * để số [formula] chia hết: a). Cho 2 b). Cho 3 c). Cho 5 d). Cho 9",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_kscl_dau_nam_lop_6_toan_nam_2013_2014.1jxvv9z.004",
+      "source": "de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-duc-tho.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 6,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-5ec088bd/formula0004.png",
+          "name": "formula0004.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-5ec088bd/formula0005.png",
+          "name": "formula0005.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-5ec088bd/formula0006.png",
+          "name": "formula0006.png",
+          "w": 15,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-5ec088bd/formula0007.png",
+          "name": "formula0007.png",
+          "w": 15,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-5ec088bd/formula0008.png",
+          "name": "formula0008.png",
+          "w": 16,
+          "h": 42
+        },
+        {
+          "path": "/assets/math6/formulas/de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-5ec088bd/formula0009.png",
+          "name": "formula0009.png",
+          "w": 16,
+          "h": 42
+        }
+      ],
+      "text": "Câu 3. Số bé nhất trong các số: [formula]; 1 [formula]; 0,5; [formula] là A. [formula]. B. 1 [formula]. C. 0,5. D. [formula].",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_kscl_dau_nam_lop_6_toan_nam_2013_2014.1jxvv9z.011",
+      "source": "de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-duc-tho.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-kscl-dau-nam-lop-6-toan-nam-2013-2014-phong-gd-dt-5ec088bd/formula0011.png",
+          "name": "formula0011.png",
+          "w": 16,
+          "h": 42
+        }
+      ],
+      "text": "Bài 4: Cho tam giác ABC có cạnh đáy BC dài 30 cm. Chiều cao AH bằng [formula] độ dài đáy BC. Tính diện tích tam giác ABC. Kéo dài đáy BC về phía C một đoạn CM sao cho diện tích tam giác ACM bằng 20% diện tích tam giác ABC. Tính độ dài đoạn CM?",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_thi_hsg_toan6_huyen_viet_tri_2014_201.00khg32.001",
+      "source": "de-thi-hsg-toan6-huyen-viet-tri-2014-2015.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-thi-hsg-toan6-huyen-viet-tri-2014-2015-doc-98f866cb/formula0001.png",
+          "name": "formula0001.png",
+          "w": 313,
+          "h": 87
+        },
+        {
+          "path": "/assets/math6/formulas/de-thi-hsg-toan6-huyen-viet-tri-2014-2015-doc-98f866cb/formula0002.png",
+          "name": "formula0002.png",
+          "w": 186,
+          "h": 47
+        }
+      ],
+      "text": "Câu 1 (1,5 điểm): Thực hiện phép tính. a) [formula] b) M = [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_thi_hsg_toan6_huyen_viet_tri_2014_201.00khg32.003",
+      "source": "de-thi-hsg-toan6-huyen-viet-tri-2014-2015.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-thi-hsg-toan6-huyen-viet-tri-2014-2015-doc-98f866cb/formula0003.png",
+          "name": "formula0003.png",
+          "w": 187,
+          "h": 44
+        }
+      ],
+      "text": "Câu 3 (2 điểm): a) Tìm x, y nguyên biết: 2x (3y – 2) + (3y – 2) = -55 b) Chứng minh rằng: [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_thi_hsg_toan6_huyen_viet_tri_2014_201.00khg32.005",
+      "source": "de-thi-hsg-toan6-huyen-viet-tri-2014-2015.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-thi-hsg-toan6-huyen-viet-tri-2014-2015-doc-98f866cb/formula0004.png",
+          "name": "formula0004.png",
+          "w": 236,
+          "h": 22
+        }
+      ],
+      "text": "Câu 5 (1,5 điểm): Cho [formula] a) Chứng minh rằng A chia hết cho 24 b) Chứng minh rằng A không phải là số chính phương. Lưu ý: Cán bộ coi thi không giải thích gì thêm.",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_thi_tuyen_sinh_lop6_nguyen_tri_phuong.1qqc1zu.008",
+      "source": "De-thi-Tuyen-sinh-lop6-Nguyen-Tri-Phuong-2012.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0001.png",
+          "name": "formula0001.png",
+          "w": 159,
+          "h": 146
+        }
+      ],
+      "text": "Câu 8: Hình vuông ABCD có cạnh bằng 4 cm.Diện tích phần tô màu ở hình bên là: 12,44 cm2 4,44 cm2 5,44 cm2 3,44 cm2 [formula]",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.geometry_points_lines_segments.de_thi_tuyen_sinh_lop6_nguyen_tri_phuong.1qqc1zu.009",
+      "source": "De-thi-Tuyen-sinh-lop6-Nguyen-Tri-Phuong-2012.doc",
+      "topic": "math6.geometry.points_lines_segments",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0002.png",
+          "name": "formula0002.png",
+          "w": 9,
+          "h": 40
+        }
+      ],
+      "text": "Câu 9: Cho hình tam giác ABC có diện tích bằng 250 cm2. Kéo dài cạnh đáy BC về phía C thêm một đoạn thẳng CD sao cho BD = [formula] BC. Diện tích tam giác ACD là: 125 cm2 B. 375 cm2 C. 500 cm2 D. 250 cm2",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_thi_tuyen_sinh_lop6_nguyen_tri_phuong.1qqc1zu.021",
+      "source": "De-thi-Tuyen-sinh-lop6-Nguyen-Tri-Phuong-2012.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 6,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0018.png",
+          "name": "formula0018.png",
+          "w": 11,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0019.png",
+          "name": "formula0019.png",
+          "w": 11,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0020.png",
+          "name": "formula0020.png",
+          "w": 23,
+          "h": 35
+        },
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0021.png",
+          "name": "formula0021.png",
+          "w": 23,
+          "h": 35
+        },
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0022.png",
+          "name": "formula0022.png",
+          "w": 30,
+          "h": 25
+        },
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0023.png",
+          "name": "formula0023.png",
+          "w": 30,
+          "h": 25
+        }
+      ],
+      "text": "Bài 1: (1,0 điểm) Tính: A = [formula] + [formula] + [formula] + [formula] + [formula] + [formula]",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.de_thi_tuyen_sinh_lop6_nguyen_tri_phuong.1qqc1zu.023",
+      "source": "De-thi-Tuyen-sinh-lop6-Nguyen-Tri-Phuong-2012.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 2,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0024.png",
+          "name": "formula0024.png",
+          "w": 15,
+          "h": 35
+        },
+        {
+          "path": "/assets/math6/formulas/de-thi-tuyen-sinh-lop6-nguyen-tri-phuong-2012-doc-0dec7e0a/formula0025.png",
+          "name": "formula0025.png",
+          "w": 15,
+          "h": 35
+        }
+      ],
+      "text": "Bài 3: (2 điểm) Hai kho A và B đều chứa hạt cà phê, biết khối lượng cà phê ở kho A bằng [formula] khối lượng cà phê ở kho B. Nếu chuyển 7 tấn cà phê từ kho A sang kho B thì kho A có khối lượng cà phê bằng [formula] khối lượng cà phê ở kho B. Hỏi cả hai kho chứa bao nhiêu tấn cà phê?",
+      "category": "source_artifact_or_cross_grade",
+      "reason": "Several images are corrupted arrows, higher-grade equations, or source solution bleed; needs source-level repair before scored practice.",
+      "nextAction": "Open original source or keep excluded."
+    },
+    {
+      "id": "math6.number_sets_natural_numbers.on_thi_cuoi_ki_1_de_thi_cuoi_ki_1_doc.1rb6rbl.002",
+      "source": "Ôn thi cuối kì 1/Đề thi cuối kì 1.doc",
+      "topic": "math6.number.sets_natural_numbers",
+      "formulaCount": 1,
+      "formulas": [
+        {
+          "path": "/assets/math6/formulas/n-thi-cu-i-k-1-thi-cu-i-k-1-doc-0216c8a0/formula0001.png",
+          "name": "formula0001.png",
+          "w": 64,
+          "h": 27
+        }
+      ],
+      "text": "Bài 2 (1,5điểm) Tìm x - 3 - x = 5 5 x + 1 = 2727: 27 [formula]",
+      "category": "manual_next_batch",
+      "reason": "Potentially recoverable, but not included in this safe batch because the formula/context needs one more source check.",
+      "nextAction": "Hand-author after source/context check."
+    }
+  ]
+}

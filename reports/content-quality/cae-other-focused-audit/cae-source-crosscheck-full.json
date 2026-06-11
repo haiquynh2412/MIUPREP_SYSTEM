@@ -1,0 +1,3932 @@
+{
+  "summary": {
+    "generatedAt": "2026-06-04T12:23:19.123Z",
+    "files": 25,
+    "sections": 238,
+    "statusCounts": {
+      "ok": 209,
+      "review_similarity": 26,
+      "low_similarity": 3
+    },
+    "byBook": {
+      "cam-cae-plus1": {
+        "sections": 50,
+        "ok": 50,
+        "review_similarity": 0,
+        "low_similarity": 0
+      },
+      "cam-cae1": {
+        "sections": 36,
+        "ok": 36,
+        "review_similarity": 0,
+        "low_similarity": 0
+      },
+      "cam-cae2": {
+        "sections": 36,
+        "ok": 32,
+        "review_similarity": 4,
+        "low_similarity": 0
+      },
+      "cam-cae3": {
+        "sections": 36,
+        "ok": 34,
+        "review_similarity": 2,
+        "low_similarity": 0
+      },
+      "cam-cae4": {
+        "sections": 40,
+        "ok": 39,
+        "review_similarity": 1,
+        "low_similarity": 0
+      },
+      "cam-cae5": {
+        "sections": 40,
+        "ok": 18,
+        "review_similarity": 19,
+        "low_similarity": 3
+      }
+    }
+  },
+  "records": [
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        7
+      ],
+      "bestPhysicalPage": 7,
+      "bestScore": 0.87,
+      "hits": 87,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Matching (Reading) For questions 1–12, answer by matching the opinions expressed with the people listed (A–E) below. Indicate your answers on the separate answer sheet. Some of the choices may be require",
+      "ocrPreview": "e with a degree in design history, Kelly Moore was going through | similar emotions. She said, “Going to lectures, being part of Welcome to the world of work! How do students make the ne system, it aoe lose that transiti"
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "bestPhysicalPage": 8,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Gapped Text (Reading) For questions 13–18, choose which of paragraphs A–G fit into the numbered gaps in the following newspaper article. There is one extra paragraph which you do not need to use. A Consuming Addi",
+      "ocrPreview": "For questions 13-18, you must choose which of paragraphs A-G on page 9 fit into the numbered gaps in the following newspaper article. There is one extra paragraph which does not fit in any of the gaps. Indicate your answ"
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        10
+      ],
+      "bestPhysicalPage": 10,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the following newspaper article and answer questions 19–24. Choose the answer (A, B, C or D) which you think fits best according to the text. Heroes and Villains William Carlos Will",
+      "ocrPreview": "Read the following newspaper article and answer questions 19-24 on page 11. On your answer sheet, indicate the letter A, B, C or D against the number of each question 19-24. Give only one answer to each question. Indicat"
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        13,
+        14
+      ],
+      "bestPhysicalPage": 13,
+      "bestScore": 0.88,
+      "hits": 88,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Multiple Matching (Reading) For questions 25–42, choose your answers from the family members (A–D) listed below. Some choices may be required more than once. A. Freda Brett, 85 I started school when I was four. I",
+      "ocrPreview": "EDUCATION An English Family 80 Years of Schooling Freda Brett,85 | took sandwiches. If I hadn’t got the scholarship, I would Freda Brett, 85 have gone to the area school and left at about 14. sy, Instead, my parents sign"
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice (Use of English)",
+      "sourcePages": [
+        21
+      ],
+      "bestPhysicalPage": 21,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Choice (Use of English) For questions 43–57, read the text below and then decide which word best fits each space. Put the letter you choose for each question in the correct box on your answer sheet. (Ori",
+      "ocrPreview": "PAPER 3 English in Use (1 hour 30 minutes) Tip Strip For questions 1-15, read the text below and then decide which word best fits each space. Put the letter you choose for each question in the correct box on your answer "
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        22
+      ],
+      "bestPhysicalPage": 22,
+      "bestScore": 0.958,
+      "hits": 92,
+      "sample": 96,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 58–72, complete the following article by writing each missing word in the correct box on your answer sheet. Use only one word for each space. (Originally questions 16–30 ",
+      "ocrPreview": "PART 2 Tip Stri For questions 16-30 complete the following article by writing each missing word in 'p strip the correct box on your answer sheet. Use only one word for each space. The Remember to: exercise begins with an"
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        23
+      ],
+      "bestPhysicalPage": 23,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Error Correction (Use of English) In most lines of the following text there is one unnecessary word. It is either grammatically incorrect or does not fit in with the sense of the text. For each numbered line 73–8",
+      "ocrPreview": "PART 3 Tip Stri In most lines of the following text there is one unnecessary word. It is either ip strip grammatically incorrect or does not fit in with the sense of the text. For each Remember: numbered line 31-46, find"
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        24
+      ],
+      "bestPhysicalPage": 24,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 89–103, read the two texts below. Use the words in the boxes to form one word that fits in the same numbered space in the text. (Originally questions 47–61 in the exa",
+      "ocrPreview": "PART 4 Tip Stri For questions 47-61 read the two texts below. Use the words in the boxes to form P P one word that fits in the same numbered space in the text. Write the new word in the Remember: correct box on your answ"
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        25
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 104–116, read the informal note from a colleague and use the information to complete the numbered gaps in the memo. Use no more than two words for each gap. The wo",
+      "ocrPreview": ". . For questions 62-74, read the following informal note that you have received from a Tip Strip . | colleague and use the information to complete the numbered gaps in the memo. Then Remember to: write the new words in "
+    },
+    {
+      "file": "cam-cae-plus1-test1.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Gapped Phrases (Use of English)",
+      "sourcePages": [
+        26
+      ],
+      "bestPhysicalPage": 26,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 6: Gapped Phrases (Use of English) For questions 117–122, read through the text and then choose from the list A–J the best phrase to fill each of the spaces. Some of the suggested answers do not fit at all. (Origina",
+      "ocrPreview": "Tip Strip For questions 75-80 read through the following text and then choose from the list A-J below the best phrase to fill each of the spaces. Write one letter (A-J) in the Remember to: correct box on your answer shee"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        35
+      ],
+      "bestPhysicalPage": 35,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1-12 by referring to the newspaper article about sportsmen on page 35. THEY THINK IT'S ALL OVER In sport, the fall from stardom can be hard and sudden. Some come to a ",
+      "ocrPreview": "N sport, the fall from stardom can be hard when the floodlights go out. But in sport, the fall | and sudden. Some come to a tragic end, can be hard and sudden. John Watson was one of others drift happily into mundane job"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        36
+      ],
+      "bestPhysicalPage": 36,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Gapped Text (Reading) For questions 13-18, choose which of paragraphs A-G fits into the numbered gaps in the following newspaper article. There is one extra paragraph which does not fit in any of the gaps. Davis,",
+      "ocrPreview": "For questions 17-22, you must choose which of paragraphs A-G on page 37 fit into the numbered gaps in the following newspaper article. There is one extra paragraph which does not fit in any of the gaps. Indicate your ans"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        38
+      ],
+      "bestPhysicalPage": 38,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the following article from a journal and then answer questions 19-24. ‘The whale has no voice’, wrote Melville in Moby Dick ‘but then again what has the whale to say? Seldom have I ",
+      "ocrPreview": "Read the following article from a journal and then answer questions 23-29 on page 39. On your answer sheet, indicate the letter A, B, C or D against the number of each question, 23-29. Give only one answer to each questi"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        41,
+        42
+      ],
+      "bestPhysicalPage": 41,
+      "bestScore": 0.83,
+      "hits": 83,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Multiple Matching (Reading) Answer questions 25-42 by referring to the information writers give about themselves on pages 41-42. Writers Do It Lying Down! How and where do writers write? With coffee and cacophony",
+      "ocrPreview": ", [] je s I've got the study I've always longed for. It | looks out onto a big sloping lawn, and as | soon as | go into it in the morning, it just | takes me in. | like to start the day slowly, | giving external attentio"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        45
+      ],
+      "bestPhysicalPage": 45,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 43-57, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). That Sweet Smell of Success is ",
+      "ocrPreview": "PAPER 3 English in Use (1 hour 30 minutes) Tip Stri For questions 1-15, read the text below and then decide which word best fits each Pp P space. Put the letter you choose for each question in the correct box on your ans"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        46
+      ],
+      "bestPhysicalPage": 46,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 58-72, complete the following article by writing each missing word. Use only one word for each space. The exercise begins with an example (0). Volcanoes: Dangers and Bene",
+      "ocrPreview": "PART 20 | Tip Strip For questions 16-30 complete the following article by writing each missing word in the correct box on your answer sheet. Use only one word for each space. The Question 16: This is exercise begins with"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        47
+      ],
+      "bestPhysicalPage": 47,
+      "bestScore": 0.74,
+      "hits": 74,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Error Correction (Use of English) For questions 73-88, read the text below. Some of the lines contain a spelling or punctuation mistake. Other lines are correct. If a line has a spelling/punctuation mistake, writ",
+      "ocrPreview": "PART 3 Tip Stri In most lines of the following text, there is either a spelling or a punctuation error. For Pp Pp each numbered line 31-46, write the correctly spelled word(s) or show the correct * Ifa comma, full stop o"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        48
+      ],
+      "bestPhysicalPage": 48,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 89-103, read the two texts below. Use the words in brackets to form one word that fits in the corresponding gap. Notice: In Case of Fire General Instructions In an em",
+      "ocrPreview": "PART 4 Tip Stri For questions 47-61 read the two texts below. Use the words in the boxes to the right Pp Pp of the texts to form one word that fits in the same numbered space in the text. The © Identify the part of exerc"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        49
+      ],
+      "bestPhysicalPage": 49,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 104-116, read the Historical Cottages Trust Booking Terms leaflet and use the information to complete the numbered gaps in the informal letter. Use no more than tw",
+      "ocrPreview": "Tip Strip For questions 62-74, read the Historical Cottages Trust Booking Terms leaflet and use the information to complete the numbered gaps in the informal letter. Use no more Remember: than two words for each gap. The"
+    },
+    {
+      "file": "cam-cae-plus1-test2.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Text Gaps (Use of English)",
+      "sourcePages": [
+        50
+      ],
+      "bestPhysicalPage": 50,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 6: Text Gaps (Use of English) For questions 117-122, read through the text below and then choose from the list A-J below the best phrase to fill each of the spaces. A Telephone Pioneer: Henry Hunnings (1843-86) Most",
+      "ocrPreview": "Tip Stri For questions 75-80 read through the following text and then choose from the list P P A-J below the best phrase to fill each of the spaces. Write one letter (A-J) in the Remember: correct box on your answer shee"
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        56,
+        57
+      ],
+      "bestPhysicalPage": 57,
+      "bestScore": 0.87,
+      "hits": 87,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1-17 by referring to the newspaper article about curriculum vitaes on page 57. For questions 1-17, answer by choosing from the sections of the article (A-F). You may c",
+      "ocrPreview": "Always put your most recent job first and then work back in chronological order. As people read from left to @) 4 @) right, put the most important things on the left side of the page, so state the title of the job you ha"
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        58
+      ],
+      "bestPhysicalPage": 58,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Gapped Text (Reading) For questions 18-23, choose which of the paragraphs A-G fit into the numbered gaps in the magazine article on pages 58-59. There is one extra paragraph which you do not need to use. Sleep ea",
+      "ocrPreview": "For questions 18-23, you must choose which of the paragraphs A-G on page 59 fit into the numbered gaps in the following magazine article. There is one extra paragraph which does not fit in any of the gaps. Indicate your "
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        60
+      ],
+      "bestPhysicalPage": 60,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the newspaper article about the author Jeffrey Archer and then answer questions 24-30 by choosing the correct letter A, B, C or D. Still Sprinting Derek Parker talks to the milliona",
+      "ocrPreview": "PART 3 Read the following newspaper article and then answer questions 24-30 on page 61. On your answer sheet, indicate the letter A, B, C or D against the number of each question, 24-30. Give only one answer to each ques"
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        62
+      ],
+      "bestPhysicalPage": 63,
+      "bestScore": 0.83,
+      "hits": 83,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Multiple Matching (Reading) Answer questions 31-48 by referring to the newspaper article about spas on pages 63-64. For questions 31-48, answer by choosing from the list (A-D) of spas. Some choices may be require",
+      "ocrPreview": "Vichy washes away When you land on the past cares e e rocky shore, you are —————— S greeted by a horrible It was Napoleon III pringing stench. This is from the who put Vichy on the sulphides ein bil from map. He believed"
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        67
+      ],
+      "bestPhysicalPage": 67,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 49-63, read the text below and then decide which word best fits each space. Choose from the options A, B, C or D. SHOPLIFTING Last year, losses from shops thro",
+      "ocrPreview": "PAPER 3 English in Use (1 hour 30 minutes) Tip Strip For questions 1-15, read the text below and then decide which word best fits each space. Put the letter you choose for each question in the correct box on your answer "
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        68
+      ],
+      "bestPhysicalPage": 68,
+      "bestScore": 0.926,
+      "hits": 88,
+      "sample": 95,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 64-78, read the text below and think of the word which best fits each space. Use only one word in each space. Across the Gap Some of the most impressive structures in the",
+      "ocrPreview": "PART 2 Tip Stri For questions 16-30 complete the following article by writing each missing word in P Pp the correct box on your answer sheet. Use only one word for each space. The Question 17: You need a exercise begins "
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        69
+      ],
+      "bestPhysicalPage": 69,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Error Correction (Use of English) In most lines of the following text there is one unnecessary word. It is either grammatically incorrect or does not fit in with the sense of the text. For each numbered line 79-9",
+      "ocrPreview": "PART 3 Tip Stri In most lines of the following text there is one unnecessary word. It is either P P grammatically inncorrect or does not fit in with the sense of the text. For each Line 32: In this line, is numbered line"
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        70
+      ],
+      "bestPhysicalPage": 70,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 95-109, read the two texts below. Use the word in bold at the end of some lines to form a word that fits in the space in the same line. A REVIEW Tudor House This rest",
+      "ocrPreview": "PART 4 Tip Stri For questions 47-61 read the two texts below. Use the words in the boxes to form iP Pp one word that fits in the same numbered space in the text. Write the new word in the Question 49: Is this correct box"
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        71
+      ],
+      "bestPhysicalPage": 71,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 110-122, read the following formal notice and use the information to complete the gaps in the informal letter. Use no more than two words for each gap. Do not use ",
+      "ocrPreview": "PART 5 Tip Stri For questions 62-74, read the following formal notice and use the information to Pp Pp complete the numbered gaps in the informal letter. Then write the new words in the Question 62: What is correct space"
+    },
+    {
+      "file": "cam-cae-plus1-test3.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 10: Text Completion (Use of English)",
+      "sourcePages": [
+        72
+      ],
+      "bestPhysicalPage": 72,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 10: Text Completion (Use of English) For questions 123-128, read through the following text and then choose from the list A-J below the best phrase to fill each of the spaces. Why You Feel Under the Weather Most of ",
+      "ocrPreview": "Tip Strip For questions 75-80 read through the following text and then choose from the list A-J below the best phrase to fill each of the spaces. Write one letter (A-J) in the Question 75: The word correct box on your an"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        79
+      ],
+      "bestPhysicalPage": 79,
+      "bestScore": 0.83,
+      "hits": 83,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1-16 by referring to the newspaper article on page 79. Indicate your answers on the separate answer sheet. For questions 1-16, answer by choosing from the list (A-F) o",
+      "ocrPreview": "Four times a year, students produce 5,000 words of their novel for discussion and criticism. Although intimidating, the sessions were invaluable for Anna Davis, who was among the first intake of students and has since se"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        80,
+        81
+      ],
+      "bestPhysicalPage": 80,
+      "bestScore": 0.88,
+      "hits": 88,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article. Six paragraphs have been removed from the extract. Choose from the paragraphs A-G the one which fits each gap (17-22). There is one ",
+      "ocrPreview": "PART 2 For questions 17-22, you must choose which of the paragraphs A-G on page 81 fit into the numbered gaps in the following magazine article. There is one extra paragraph which does not fit in any of the gaps. Indicat"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        82,
+        83
+      ],
+      "bestPhysicalPage": 82,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the following newspaper article and then answer questions 23-28. Choose the correct letter A, B, C or D. Desert Discoveries and Monster Myths DAVID KEYS on new insights into the day",
+      "ocrPreview": "Read the following newspaper article and then answer questions 23-28 on page 83. On your answer sheet, indicate the letter A, B, C or D against the number of each question, 23-28. Give only one answer to each question. I"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        85,
+        86
+      ],
+      "bestPhysicalPage": 85,
+      "bestScore": 0.84,
+      "hits": 84,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Multiple Matching (Reading) Answer questions 29-46 by referring to the newspaper article about holidays on pages 85-86. For questions 29-46, choose your answers from the list of people (A-F). Some choices may be ",
+      "ocrPreview": "turning into a nightmare and we went home immediately. My wife and son were not upset e Ss O because they know my nature. a | i m es, Ines de la Fresange Model Wo rst When I was seven I was sent to boarding school in Eng"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple-Choice Cloze",
+      "sourcePages": [
+        89
+      ],
+      "bestPhysicalPage": 89,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple-Choice Cloze For questions 47-61, read the text below and then decide which word best fits each space. Put the letter you choose (A, B, C or D) in the correct box. You Must Remember This ... Sometimes yo",
+      "ocrPreview": "PAPER 3 English in Use (1 hour 30 minutes) PART For questions 1-15, read the text below and then decide which word best fits each space. Put the letter you choose for each question in the correct box on your answer sheet"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        90
+      ],
+      "bestPhysicalPage": 90,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 62-76, read the text below and think of the word which best fits each space. Use only one word in each space. The Development of the Motor Car The earliest motor vehicle ",
+      "ocrPreview": "For questions 16-30 complete the following article by writing each missing word in the correct box on your answer sheet. Use only one word for each space. The exercise begins with an example (0). The Development of the M"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        91
+      ],
+      "bestPhysicalPage": 91,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Error Correction (Use of English) In most lines of the following text, there is either a spelling or a punctuation error. For each numbered line 31-46 write the correctly spelled word or show the correct punctuat",
+      "ocrPreview": "In most lines of the following text, there is either a spelling or a punctuation error. For each numbered line 31-46 write the correctly spelled word or show the correct punctuation. Some lines are correct. Indicate thes"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        92
+      ],
+      "bestPhysicalPage": 92,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 93-107, read the two texts below. Use the words in the boxes to the right to form one word that fits in the same numbered space in the text. Word Formation Text 1: A ",
+      "ocrPreview": "For questions 47-61 read the two texts below. Use the words in the boxes to the right of the texts to form one word that fits in the same numbered space in the text. Write the new word in the correct box on your answer s"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer",
+      "sourcePages": [
+        93
+      ],
+      "bestPhysicalPage": 93,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 5: Register Transfer For questions 108-120, read the newspaper story and use the information in it to complete the gaps in the informal letter. Use no more than two words for each gap. The words you need do not occu",
+      "ocrPreview": "PART 5 For questions 62-74, read the following newspaper story and use the information in it to complete the numbered gaps in the informal letter. Then write the new words in the correct space on your answer sheet. Use n"
+    },
+    {
+      "file": "cam-cae-plus1-test4.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Multiple Choice Matching (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 94,
+      "bestScore": 0.948,
+      "hits": 91,
+      "sample": 96,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 6: Multiple Choice Matching (Use of English) For questions 121-126, read through the text and then choose from the list A-J below the best phrase to fill each of the spaces. Aspects of Love For Dr Robert Sternberg, ",
+      "ocrPreview": "PART 6 For questions 75-80, read through the following text and then choose from the list A-J below the best phrase to fill each of the spaces. Write one letter (A-J) in the correct box on your answer sheet. Some of the "
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        100,
+        101
+      ],
+      "bestPhysicalPage": 101,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1-12 by referring to the newspaper article about argument and debate on page 100-101. Section A If you say “I am having an argument”, most people will assume that you ",
+      "ocrPreview": "were laid down in the ancient world. Whether he e ower would be impressed by what he heard is, of course, another matter. Arguments and debates can be exhilarating To wi . - a. ‘o win an argument, you need to convince so"
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        102,
+        103
+      ],
+      "bestPhysicalPage": 102,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Gapped Text (Reading) For questions 13–18, read the article on page 102-103. Choose from the paragraphs A–G the one which fits each gap. There is one extra paragraph which you do not need to use. Simply the best ",
+      "ocrPreview": "For questions 18-23, you must choose which of the paragraphs A-G on page 103 fit into the numbered gaps in the following magazine article. There is one extra paragraph which does not fit in any of the gaps. Indicate your"
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        104,
+        105
+      ],
+      "bestPhysicalPage": 104,
+      "bestScore": 0.57,
+      "hits": 57,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Multiple Choice (Reading) For questions 19–24, read the article on page 104-105. Choose the correct letter A, B, C or D. FAST FORWARD A standard twenty-first-century fantasy: the laptop on the beach. Free from th",
+      "ocrPreview": "PART 3 Read the following article and then answer questions 24-29 on page 105. On your answer sheet, indicate the letter A, B, C or D against the number of each question, 24-29. Give only one answer to each question. Ind"
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        106,
+        107,
+        108
+      ],
+      "bestPhysicalPage": 107,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Multiple Matching (Reading) For questions 25–42, read the article on page 106-108. Choose the correct person (A, B, C or D) for each statement. They said I was useless but look at me now ANNE NICHOLLS meets four ",
+      "ocrPreview": "Peter Seldon, 41, is the Martina Cole, 33, managing director of a = received a £150,000 company producing T advance for her first novel, software systems for large hey Sa id a story about a working- corporate computer cl"
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        111
+      ],
+      "bestPhysicalPage": 111,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 43–57, read the text below and decide which word best fits each space. (Originally questions 1-15 in the test paper). Food For Astronauts It used to be thought",
+      "ocrPreview": "PAPER 3 English in Use (1 hour 30 minutes) For questions 1-15, read the text below and then decide which word best fits each space. Put the letter you choose for each question in the correct box on your answer sheet. The"
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        112
+      ],
+      "bestPhysicalPage": 112,
+      "bestScore": 0.89,
+      "hits": 89,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 58–72, read the text below and think of the word which best fits each space. Use only one word in each space. (Originally questions 16-30 in the test paper). Chess Chess ",
+      "ocrPreview": "For questions 16-30 complete the following article by writing each missing word in the correct box on your answer sheet. Use only one word for each space. The exercise begins with an example (0). Chess is (0) .......... "
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        113
+      ],
+      "bestPhysicalPage": 113,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 3: Error Correction (Use of English) For questions 73–88, read the text below. Most lines have one unnecessary word. Find this word and write it in the space. Some lines are correct. If a line is correct, write 'COR",
+      "ocrPreview": "In most lines of the following text there is one unnecessary word. It is either grammatically incorrect or does not fit in with the sense of the text. For each numbered line 31-46 find this word and then write it in the "
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        114
+      ],
+      "bestPhysicalPage": 114,
+      "bestScore": 0.82,
+      "hits": 82,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 89–103, read the two texts below. Use the word in bold at the end of some of the lines to form a word that fits in the space in the same line. (Originally questions 4",
+      "ocrPreview": "PART 4 For questions 47-61 read the following two texts below. Use the words in the boxes to form one word that fits in the same numbered space in the text. The exercise begins with an example (0). come [0 [wind |e A LEA"
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        115
+      ],
+      "bestPhysicalPage": 115,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 104–116, read the advertisement for Bolingbroke House and use the information to complete the gaps in the memo. Use no more than two words for each gap. (Originall",
+      "ocrPreview": "For questions 62-74, read the following advertisement and use the information in it to complete the numbered gaps in the memo. Then write the new words in the correct boxes on your answer sheet. Use no more than two word"
+    },
+    {
+      "file": "cam-cae-plus1-test5.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Gapped Phrases (Use of English)",
+      "sourcePages": [
+        116
+      ],
+      "bestPhysicalPage": 116,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 142,
+      "excerpt": "Part 6: Gapped Phrases (Use of English) For questions 117–122, read through the text below and choose from the list A–J the best phrase to fill each of the spaces. (Originally questions 75-80 in the test paper). The Pull",
+      "ocrPreview": "For questions 75-80, read through the following text and then choose from the list A-J below the best phrase to fill each of the spaces. Write one letter (A-J) in the correct box on your answer sheet. Some of the suggest"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        8
+      ],
+      "bestPhysicalPage": 8,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with providing a service. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according",
+      "ocrPreview": "Test 1 PAPER 1 READING (1 hour 15 minutes) Part 1 You are going to read three extracts which are all concerned in some way with providing a service. For questions 1-6, choose the answer (A, B, C or D) which you think fit"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        11
+      ],
+      "bestPhysicalPage": 11,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read a magazine article about hippos. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (7–12). There is one extr",
+      "ocrPreview": "Test 1 Part 2 You are going to read a magazine article about hi . Six paragraphs have been removed from g gaz! Ippos. the article. Choose from the paragraphs A-G the one which fits each gap (7-12). There is one extra Par"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        13
+      ],
+      "bestPhysicalPage": 13,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article about a novelist. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. The opera-lover turned ",
+      "ocrPreview": "Test 1 Part 3 You are going to read a newspaper article about a novelist. For questions 13-19, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sh"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        15
+      ],
+      "bestPhysicalPage": 16,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about the human mind. For questions 20–34, choose from the sections (A–E). The sections may be chosen more than once. Picture this ... with your mind’s",
+      "ocrPreview": "Paper 1 Reading Picture this ... with your mind’s eye Trying to understand and cope with life, we impose our own frameworks on it and represent information in different symbolic forms in our mind, writes Jonathan Hancock"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple-Choice Cloze",
+      "sourcePages": [
+        19
+      ],
+      "bestPhysicalPage": 19,
+      "bestScore": 0.969,
+      "hits": 94,
+      "sample": 97,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple-Choice Cloze For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Girls and Technology If you want your daughter to",
+      "ocrPreview": "Test 1 PAPER 3 USE OF ENGLISH (1 hour) Part 1 For questions 1-12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Mark your answers on the separate"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze",
+      "sourcePages": [
+        21
+      ],
+      "bestPhysicalPage": 21,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Open Cloze For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Weather in Antarctica The most extreme ",
+      "ocrPreview": "Test 1 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Write your answers IN CAPITAL LETTERS on the"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation",
+      "sourcePages": [
+        22
+      ],
+      "bestPhysicalPage": 22,
+      "bestScore": 0.956,
+      "hits": 87,
+      "sample": 91,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Word Formation For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the beginning (",
+      "ocrPreview": "Paper 3 Use of English Part 3 For questions 28-37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap In the same line. There is an example at the begi"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences",
+      "sourcePages": [
+        23
+      ],
+      "bestPhysicalPage": 23,
+      "bestScore": 0.714,
+      "hits": 10,
+      "sample": 14,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Gapped Sentences For questions 38–42, think of one word only which can be used appropriately in all three sentences. Write the word in CAPITAL LETTERS. ⚠️ Dạng bài riêng CAE (không có trong CPE) Mỗi câu hỏi gồm 3",
+      "ocrPreview": "Test 1 Part 4 For questions 38-42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: 0 The committee decided to ..........:s000. the money equally between the"
+    },
+    {
+      "file": "cam-cae1-test1.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation",
+      "sourcePages": [
+        25
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.952,
+      "hits": 20,
+      "sample": 21,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 5: Key Word Transformation For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, includ"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        33
+      ],
+      "bestPhysicalPage": 33,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with communication. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according to th",
+      "ocrPreview": "Test 2 PAPER 1 READING (1 hour 15 minutes) Part 1 You are going to read three extracts which are all concerned in some way with communication. For questions 1-6, choose the answer (A, B, C or D) which you think fits best"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        36
+      ],
+      "bestPhysicalPage": 36,
+      "bestScore": 0.88,
+      "hits": 88,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read a newspaper article about chocolate cake. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (7–12). There is",
+      "ocrPreview": "Test 2 Part 2 You are going to read a newspaper article about chocolate cake. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (7-12). There is one extra parag"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        38
+      ],
+      "bestPhysicalPage": 38,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article about art. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. Fake art meets real money Chri",
+      "ocrPreview": "Test 2 Part 3 You are going to read a newspaper article about art. For questions 13-19, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet. ti"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        40
+      ],
+      "bestPhysicalPage": 41,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about leisure clothes. For questions 20–34, choose from the sections (A–E). The sections may be chosen more than once. OFFSHORE VESTMENTS Initially des",
+      "ocrPreview": "Paper 1 Reading OFFSHORE VESTMENTS Initially designed for yachtsmen, marine clothing then unwittingly took the male fashion scene by storm. Now this modern leisurewear is becoming increasingly popular. Keith Wheatley rep"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple-Choice Cloze (Use of English)",
+      "sourcePages": [
+        44
+      ],
+      "bestPhysicalPage": 44,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple-Choice Cloze (Use of English) For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). The changing earth Although the ",
+      "ocrPreview": "Test 2 PAPER 3 USE OF ENGLISH (1 hour) Part 1 For questions 1-12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Mark your answers on the separate"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        46
+      ],
+      "bestPhysicalPage": 46,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Early photography In t",
+      "ocrPreview": "Test 2 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Write your answers IN CAPITAL LETTERS on the"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation (Use of English)",
+      "sourcePages": [
+        47
+      ],
+      "bestPhysicalPage": 47,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Word Formation (Use of English) For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example a",
+      "ocrPreview": "Paper 3 Use of English Part 3 For questions 28-37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the begi"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences (Use of English)",
+      "sourcePages": [
+        48
+      ],
+      "bestPhysicalPage": 23,
+      "bestScore": 0.667,
+      "hits": 10,
+      "sample": 15,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Gapped Sentences (Use of English) For questions 38–42, think of one word only which can be used appropriately in all three sentences. Write the word in CAPITAL LETTERS. ⚠️ Dạng bài riêng CAE (không có trong CPE) ",
+      "ocrPreview": "Test 1 Part 4 For questions 38-42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: 0 The committee decided to ..........:s000. the money equally between the"
+    },
+    {
+      "file": "cam-cae1-test2.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation (Use of English)",
+      "sourcePages": [
+        50
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.909,
+      "hits": 20,
+      "sample": 22,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 5: Key Word Transformation (Use of English) For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use ",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, includ"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        70
+      ],
+      "bestPhysicalPage": 70,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with dance. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according to the text. ",
+      "ocrPreview": "Test 3 PAPER 1 READING (1 hour 15 minutes) Part 1 You are going to read three extracts which are all concerned in some way with dance. For questions 1-6, choose the answer (A, B, C or D) which you think fits best accordi"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        73
+      ],
+      "bestPhysicalPage": 73,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a newspaper article about coral reefs. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (7–",
+      "ocrPreview": "Test 3 Part 2 You are going to read an extract from a newspaper article about coral reefs. Six paragraphs have ap) been removed from the extract. Choose from the paragraphs A-G the one which fits each gap (7-12). There i"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        75
+      ],
+      "bestPhysicalPage": 75,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. Lights, camera, action man Travel journa",
+      "ocrPreview": "Test 3 Part 3 You are going to read a newspaper article. For questions 13-19, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet. eee s s Ligh"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        77
+      ],
+      "bestPhysicalPage": 78,
+      "bestScore": 0.91,
+      "hits": 91,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about mazes. For questions 20–34, choose from the sections (A–E). The sections may be chosen more than once. MAZES There are few rules to having your o",
+      "ocrPreview": "Paper 1 Reading Mazes There are few rules to having your own maze, although getting the design right is one of them. Then sit back and wait for a few years. Rupert Wright loses himself in the thick of it all. A ong 2 cun"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        81
+      ],
+      "bestPhysicalPage": 81,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Dinosaur discoveries In the late",
+      "ocrPreview": "Test 3 PAPER 3 USE OF ENGLISH (1 hour) Part 1 For questions 1-12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Mark your answers on the separate"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        83
+      ],
+      "bestPhysicalPage": 83,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). The Best Books Are the",
+      "ocrPreview": "Test 3 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Write your answers IN CAPITAL LETTERS on the"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation (Use of English)",
+      "sourcePages": [
+        84
+      ],
+      "bestPhysicalPage": 84,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Word Formation (Use of English) For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example a",
+      "ocrPreview": "Paper 3 Use of English Part 3 For questions 28-37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the begi"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences (Use of English)",
+      "sourcePages": [
+        85
+      ],
+      "bestPhysicalPage": 48,
+      "bestScore": 0.906,
+      "hits": 29,
+      "sample": 32,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Gapped Sentences (Use of English) For questions 38–42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Gapped Sentences Example: 0. • The committee decided t",
+      "ocrPreview": "Test 2 Part 4 For questions 38-42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: 0 The committee decided to .........+..++++++++. the money equally betwee"
+    },
+    {
+      "file": "cam-cae1-test3.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation (Use of English)",
+      "sourcePages": [
+        87
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.909,
+      "hits": 20,
+      "sample": 22,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 5: Key Word Transformation (Use of English) For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use ",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, includ"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        95
+      ],
+      "bestPhysicalPage": 95,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with people living together. For questions 1–6, choose the answer (A, B, C or D) which you think fits best accord",
+      "ocrPreview": "Test 4 PAPER 1 READING (1 hour 15 minutes) Part 1 You are going to read three extracts which are all concerned in some way with people living together. For questions 1-6, choose the answer (A, B, C or D) which you think "
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        98
+      ],
+      "bestPhysicalPage": 98,
+      "bestScore": 0.82,
+      "hits": 82,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read a newspaper article about a sport. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (7–12). There is one ex",
+      "ocrPreview": "Test 4 Part 2 You are going to read a newspaper article about a sport. Six paragraphs have been removed from the article. Choose from the paragraphs A~G the one which fits each gap (7-12). There is one extra Paragraph wh"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        100
+      ],
+      "bestPhysicalPage": 100,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. Travelling sensitively A tour operator w",
+      "ocrPreview": "Test 4 Part 3 You are going to read a newspaper article. For questions 13-19, choose the answer (A, B, C or D) which you think fits best according to the text. Mark your answers on the separate answer sheet. cue Travelli"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        102
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about over-consumption. For questions 20–34, choose from the sections (A–D). The sections may be chosen more than once. Over-consumption Paul Wachtel a",
+      "ocrPreview": "Paper 1 Reading Over-consumption Paul Wachtel asks why economic growth does not automatically lead to an increased sense of well-being. A material goods and a sense of well-being. Many of the Inahost of different ways, t"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        106
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). A guidebook writer He is five th",
+      "ocrPreview": "Test 4 PAPER 3 USE OF ENGLISH (1 hour) Part 1 For questions 1-12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Mark your answers on the separate"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        108
+      ],
+      "bestPhysicalPage": 108,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). The history of the cin",
+      "ocrPreview": "Test 4 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Write your answers IN CAPITAL LETTERS on the"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation (Use of English)",
+      "sourcePages": [
+        109
+      ],
+      "bestPhysicalPage": 109,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 3: Word Formation (Use of English) For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example a",
+      "ocrPreview": "Paper 3 Use of English Part 3 For questions 28-37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the begi"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences (Use of English)",
+      "sourcePages": [
+        110
+      ],
+      "bestPhysicalPage": 48,
+      "bestScore": 0.906,
+      "hits": 29,
+      "sample": 32,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 4: Gapped Sentences (Use of English) For questions 38–42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Gapped Sentences Example: 0. • The committee decided t",
+      "ocrPreview": "Test 2 Part 4 For questions 38-42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: 0 The committee decided to .........+..++++++++. the money equally betwee"
+    },
+    {
+      "file": "cam-cae1-test4.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation (Use of English)",
+      "sourcePages": [
+        112
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.909,
+      "hits": 20,
+      "sample": 22,
+      "status": "ok",
+      "cachedPageCount": 137,
+      "excerpt": "Part 5: Key Word Transformation (Use of English) For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use ",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, includ"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        8,
+        9,
+        10
+      ],
+      "bestPhysicalPage": 70,
+      "bestScore": 0.17,
+      "hits": 17,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with well-being or lifestyle. For questions 1–6, choose the answer (A, B, C or D) which you think fits best accor",
+      "ocrPreview": "Test 3 PAPER 1 READING (1 hour 15 minutes) Part1 ‘You are going to read three extracts which are all concerned in some way with making decisions. For questions 1-6, choose the answer (A, B, C or D) which you think fits b"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        11,
+        12
+      ],
+      "bestPhysicalPage": 11,
+      "bestScore": 0.19,
+      "hits": 19,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a story. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (7–12). There is one extra paragr",
+      "ocrPreview": "‘Test 1 Part 2 You are going to read an extract from a magazine article. Six paragraphs have been removed from. the extract. Choose from the paragraphs A~G the one which fits each gap (7~12).There is one extra Paragraph "
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        13,
+        14
+      ],
+      "bestPhysicalPage": 13,
+      "bestScore": 0.3,
+      "hits": 30,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a magazine article about the crime writer P.D. James. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. P.D. Ja",
+      "ocrPreview": "‘Test 1 Part3 You are going to read a magazine article. For questions 13-19, choose the answer (A, B, C or D) Which you think fis best acoording to the text. “Mark your answers on the separate answer sheet. P.D. James Ba"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        15,
+        16
+      ],
+      "bestPhysicalPage": 15,
+      "bestScore": 0.26,
+      "hits": 26,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read the introduction to a book about organising local events. For questions 20–34, choose from the sections (A–E). The sections may be chosen more than once. Organisi",
+      "ocrPreview": "Test 1 Part 4 You are going to read an introduction to @ book about how to organise local events. For questions 20-34, choose from the sections ofthe introduction (A-E). The sections may be chosen more than once. Mark yo"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        19
+      ],
+      "bestPhysicalPage": 19,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Secretaries What's in a name? In",
+      "ocrPreview": "Test 1 PAPER 3 USE OF ENGLISH (1 hour) Part 1 For questions 1-12, read the text below and decide which answer (A, B, C or D) best fits each gap. ‘There is an example atthe beginning (0). Mark your answers on the separate"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        20
+      ],
+      "bestPhysicalPage": 21,
+      "bestScore": 0.958,
+      "hits": 92,
+      "sample": 96,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Changing cities What w",
+      "ocrPreview": "Test 1 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only ‘one word in each gap. There is an example atthe beginning (0). Write your answers IN CAPITAL LETTERS on the"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation (Use of English)",
+      "sourcePages": [
+        21
+      ],
+      "bestPhysicalPage": 22,
+      "bestScore": 0.9,
+      "hits": 90,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3: Word Formation (Use of English) For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example a",
+      "ocrPreview": "Paper 3 Use of English Part 3 For questions 26-37, read the text below. Use the word given in capitals atthe end of some of the lines to form a word that fits in the gap in the same line. There is an example atthe beginn"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences (Use of English)",
+      "sourcePages": [
+        23,
+        24
+      ],
+      "bestPhysicalPage": 110,
+      "bestScore": 0.906,
+      "hits": 29,
+      "sample": 32,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4: Gapped Sentences (Use of English) For questions 38–42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example (0): The committee decided to split the money ",
+      "ocrPreview": "Test 4 Part4 For questions 38-42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: (0 The committee decided t0 .....c-s.rneae the money equally between the t"
+    },
+    {
+      "file": "cam-cae2-test1.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformations (Use of English)",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.864,
+      "hits": 19,
+      "sample": 22,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 5: Key Word Transformations (Use of English) For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning tothe first ‘sentence, using the word given. Do not change the word given. You must use between three and ‘six words, inclu"
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        45,
+        46,
+        47
+      ],
+      "bestPhysicalPage": 45,
+      "bestScore": 0.86,
+      "hits": 86,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with well-being. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according to the t",
+      "ocrPreview": "Test 2 PAPER 1 READING (1 hour 15 minutes) Part1 You are gong to read thee extracts which ae all concemed in some way with wol-belng For ‘questions 1-6, choose the answer (A, B, C or D) which you think fits best accordin"
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        48
+      ],
+      "bestPhysicalPage": 48,
+      "bestScore": 0.78,
+      "hits": 78,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (7–12). There is one e",
+      "ocrPreview": "Test 2 Part 2 You are going to read an extract from a magazine article. Six paragraphs have been removed from the extract. Choose rom the paragraphs AG the one which fis each gap (7-12). Ther is one extra Paragraph which"
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        51
+      ],
+      "bestPhysicalPage": 50,
+      "bestScore": 0.8,
+      "hits": 80,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article about an expedition. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. An awfully big adven",
+      "ocrPreview": "Test 2 Part 3 You are going to read a newspaper article about an expedition. For questions 13-19, choose the answer (A, B, Cor D) which you think fis best according tothe text. Mark your answers on the separate answer sh"
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        52
+      ],
+      "bestPhysicalPage": 53,
+      "bestScore": 0.49,
+      "hits": 49,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about offices. For questions 20–34, choose from the offices (A–D). The offices may be chosen more than once. IS YOUR OFFICE WORKING OK? Fresh air and t",
+      "ocrPreview": "Paper 1 Reading Fresh air and the right chars are the key 0 a happy, healthy workforce, according to a new survey. We went to four contrasting office, to find out how healthy and happy they were as working environments. "
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        56
+      ],
+      "bestPhysicalPage": 56,
+      "bestScore": 0.935,
+      "hits": 86,
+      "sample": 92,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Sports photography Sport as a sp",
+      "ocrPreview": "Test 2 PAPER3 USE OF ENGLISH (1 hour) Part 1 For questions 1-12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example atthe beginning (0). ‘Mark your answers on the separate "
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        58
+      ],
+      "bestPhysicalPage": 58,
+      "bestScore": 0.925,
+      "hits": 86,
+      "sample": 93,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Traffic jams are nothi",
+      "ocrPreview": "Test 2 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only ‘one word in each gap. There is an example at the beginning (0). Write your answer in CAPITAL LETTERS on the"
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation (Use of English)",
+      "sourcePages": [
+        59
+      ],
+      "bestPhysicalPage": 59,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3: Word Formation (Use of English) For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example a",
+      "ocrPreview": "Paper 3 Use of English Part 3 For questions 28-97, read the text below. Use the word given in capitals atthe end of some of the lines to form a word that fits in the gap in the same line. There is an example at the begin"
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences (Use of English)",
+      "sourcePages": [
+        60,
+        61
+      ],
+      "bestPhysicalPage": 110,
+      "bestScore": 0.875,
+      "hits": 28,
+      "sample": 32,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4: Gapped Sentences (Use of English) For questions 38–42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: 0. The committee decided to split the money e",
+      "ocrPreview": "Test 4 Part4 For questions 38-42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: (0 The committee decided t0 .....c-s.rneae the money equally between the t"
+    },
+    {
+      "file": "cam-cae2-test2.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation (Use of English)",
+      "sourcePages": [
+        62,
+        63
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.615,
+      "hits": 16,
+      "sample": 26,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 5: Key Word Transformation (Use of English) For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use ",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning tothe first ‘sentence, using the word given. Do not change the word given. You must use between three and ‘six words, inclu"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        70,
+        71,
+        72
+      ],
+      "bestPhysicalPage": 70,
+      "bestScore": 0.84,
+      "hits": 84,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with making decisions. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according to",
+      "ocrPreview": "Test 3 PAPER 1 READING (1 hour 15 minutes) Part1 ‘You are going to read three extracts which are all concerned in some way with making decisions. For questions 1-6, choose the answer (A, B, C or D) which you think fits b"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        73
+      ],
+      "bestPhysicalPage": 98,
+      "bestScore": 0.17,
+      "hits": 17,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (7–12). There is one e",
+      "ocrPreview": "‘Test 4 Part 2 ‘You are going to read an extract from a newspaper article. Six paragraphs have been removed from the extract. Choose from the paragraphs A-G the one which fits each gap (7-12). There is one extra. Paragra"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        75,
+        76
+      ],
+      "bestPhysicalPage": 13,
+      "bestScore": 0.15,
+      "hits": 15,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a magazine article about a man who survived for a long time on a solar-powered boat. For questions 13–19, choose the answer (A, B, C or D) which you think fits best",
+      "ocrPreview": "‘Test 1 Part3 You are going to read a magazine article. For questions 13-19, choose the answer (A, B, C or D) Which you think fis best acoording to the text. “Mark your answers on the separate answer sheet. P.D. James Ba"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        77,
+        78
+      ],
+      "bestPhysicalPage": 78,
+      "bestScore": 0.24,
+      "hits": 24,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about book reviews. For questions 20–34, choose from the publishers (A–E). The publishers may be chosen more than once. Do reviews sell books? Five pub",
+      "ocrPreview": "Paper 1 Reading DO REVIEWS SELL BOOKS? We atk five lenin Bh publaers about he ete the reewe ts book Sa Sommer ots ee a ny St Publisher er he vee cule ef hy sorry sen ae Revere yori -etpan ahha mo ty rsa. heer the newspap"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1 Use of English",
+      "sourcePages": [
+        81,
+        82
+      ],
+      "bestPhysicalPage": 81,
+      "bestScore": 0.28,
+      "hits": 28,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1 Use of English For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Holidays in South Carolina South Carolina is a state of g",
+      "ocrPreview": "Test 3 PAPER3 USE OF ENGLISH (1 hour) Part1 For questions 1-12, read the text bolow and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Mark your answers on the separate a"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2 Use of English",
+      "sourcePages": [
+        83
+      ],
+      "bestPhysicalPage": 83,
+      "bestScore": 0.32,
+      "hits": 32,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2 Use of English For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). The Sahara marathon The Marathon of ",
+      "ocrPreview": "Test 3 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only ‘one word in each gap. There is an example at the beginning (0). ‘Write your answers IN CAPITAL LETTERS on t"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3 Use of English",
+      "sourcePages": [
+        84
+      ],
+      "bestPhysicalPage": 84,
+      "bestScore": 0.38,
+      "hits": 38,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3 Use of English For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the beginning (0",
+      "ocrPreview": "Paper 3. Use of English Part 3 For questions 28-37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fis in the gap in the same line. There is an example atthe begin"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4 Use of English",
+      "sourcePages": [
+        85,
+        86
+      ],
+      "bestPhysicalPage": 23,
+      "bestScore": 0.714,
+      "hits": 10,
+      "sample": 14,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4 Use of English For questions 38–42, think of one word only which can be used appropriately in all three sentences. Write the word in CAPITAL LETTERS. ⚠️ Dạng bài riêng CAE Mỗi câu hỏi gồm 3 câu riêng biệt. Bạn phả",
+      "ocrPreview": "Test 1 Part 4 For questions 3842, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: 0 The committoe decided 10 .nunnnmee the money equally between the two cha"
+    },
+    {
+      "file": "cam-cae2-test3.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5 Use of English",
+      "sourcePages": [
+        87,
+        88
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.952,
+      "hits": 20,
+      "sample": 21,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 5 Use of English For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning tothe first ‘sentence, using the word given. Do not change the word given. You must use between three and ‘six words, inclu"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        95,
+        96,
+        97
+      ],
+      "bestPhysicalPage": 95,
+      "bestScore": 0.5,
+      "hits": 50,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with music or performance. For questions 1–6, choose the answer (A, B, C or D) which you think fits best accordin",
+      "ocrPreview": "Test 4 PAPER 1 READING (1 hour 15 minutes) Part 1 ‘You are going to read three extracts which are all concemed in some way with music. For questions 1-6, choose the answer (A, B, Cor D) which you think fits best accordin"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        98
+      ],
+      "bestPhysicalPage": 98,
+      "bestScore": 0.36,
+      "hits": 36,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read a magazine article about a flight in weightless conditions. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each ga",
+      "ocrPreview": "‘Test 4 Part 2 ‘You are going to read an extract from a newspaper article. Six paragraphs have been removed from the extract. Choose from the paragraphs A-G the one which fits each gap (7-12). There is one extra. Paragra"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        100
+      ],
+      "bestPhysicalPage": 100,
+      "bestScore": 0.59,
+      "hits": 59,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article about a ‘mystery visitor’ who inspects hotels for a guide book. For questions 13–19, choose the answer (A, B, C or D) which you think fits best ",
+      "ocrPreview": "‘Test 4 Part 3 You are going to read a newspaper article about a ‘mystery visitor’ who inspects hotels for a guide ‘book. For questions 13-19, choose the answer (A, B, C or D) which you think fits best according to theto"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        103
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.74,
+      "hits": 74,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about leadership. For questions 20–34, choose from the sections (A–F). The sections may be chosen more than once. CAREER POWER Get the leading edge - m",
+      "ocrPreview": "Paper 1 Reading Get the leading edge - motivate yourself to take full control at work. ‘A What makes agood leader? Aleaderis one Leaders create their own horizons. ‘A good ‘who inspires, an agent of change,adeveloper man"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice (Use of English)",
+      "sourcePages": [
+        106
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 1: Multiple Choice (Use of English) For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Universal wet weekend The weather acro",
+      "ocrPreview": "Test 4 PAPER 3 USE OF ENGLISH (1 hour) Part 1 For questions 1-12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Mark your answers on the separate"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        108
+      ],
+      "bestPhysicalPage": 108,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Travelling through Nor",
+      "ocrPreview": "Test 4 Part 2 For questions 13-27, read the text below and think of the word which best fits each gap. Use only ‘one word in each gap. There is an example atthe beginning (0). ‘Write your answers IN CAPITAL LETTERS on th"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation (Use of English)",
+      "sourcePages": [
+        109
+      ],
+      "bestPhysicalPage": 109,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 3: Word Formation (Use of English) For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example a",
+      "ocrPreview": "Paper 3 Use of English Parts For questions 28-37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fis in the gap in the same line. There is an example atthe beginni"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences (Use of English)",
+      "sourcePages": [
+        110,
+        111
+      ],
+      "bestPhysicalPage": 110,
+      "bestScore": 0.875,
+      "hits": 28,
+      "sample": 32,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 4: Gapped Sentences (Use of English) For questions 38–42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: 0 The committee decided to split the money eq",
+      "ocrPreview": "Test 4 Part4 For questions 38-42, think of one word only which can be used appropriately in all three sentences. Here is an example (0). Example: (0 The committee decided t0 .....c-s.rneae the money equally between the t"
+    },
+    {
+      "file": "cam-cae2-test4.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation (Use of English)",
+      "sourcePages": [
+        112
+      ],
+      "bestPhysicalPage": 25,
+      "bestScore": 0.909,
+      "hits": 20,
+      "sample": 22,
+      "status": "ok",
+      "cachedPageCount": 105,
+      "excerpt": "Part 5: Key Word Transformation (Use of English) For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use ",
+      "ocrPreview": "Test 1 Part 5 For questions 43-50, complete the second sentence so that it has a similar meaning tothe first ‘sentence, using the word given. Do not change the word given. You must use between three and ‘six words, inclu"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "bestPhysicalPage": 51,
+      "bestScore": 0.19,
+      "hits": 19,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 70,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with fashion. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according to the text",
+      "ocrPreview": "We Test 4 Paper 1 Reading Part3 43 After spending time with Janson, the interviewer concludes that Janson has lite faith in journalist. ‘You are going to read a magazine article about an artist. For questions 13-19, choo"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "bestPhysicalPage": 37,
+      "bestScore": 0.24,
+      "hits": 24,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article about boat design. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (7–1",
+      "ocrPreview": "Test 3 Paper 1 Reading Part 2 [A This lack of individual accountability may For a group and its behaviour are shaped by » © Jead to people letting goof theirinhibitions~ ~~ who Is in charge and the roles the other ‘You a"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "bestPhysicalPage": 37,
+      "bestScore": 0.27,
+      "hits": 27,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a magazine article about a writer. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. Creative Hurdles Jane Smil",
+      "ocrPreview": "Test 3 Paper 1 Reading Part 2 [A This lack of individual accountability may For a group and its behaviour are shaped by » © Jead to people letting goof theirinhibitions~ ~~ who Is in charge and the roles the other ‘You a"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "bestPhysicalPage": 37,
+      "bestScore": 0.2,
+      "hits": 20,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 70,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article about clock radios. For questions 20–34, choose from the sections (A–E). The sections may be chosen more than once. SOUND THE ALARM Stuart Harris repor",
+      "ocrPreview": "Test 3 Paper 1 Reading Part 2 [A This lack of individual accountability may For a group and its behaviour are shaped by » © Jead to people letting goof theirinhibitions~ ~~ who Is in charge and the roles the other ‘You a"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 5: Multiple-Choice Cloze",
+      "sourcePages": [
+        18
+      ],
+      "bestPhysicalPage": 9,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 5: Multiple-Choice Cloze For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). The early railway in Britain In 1830, there were ",
+      "ocrPreview": "lll _eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee . Test 1 est Paper 3. Use of English PAPER 3 USE OF ENGLISH (1 hour) 1 A revolve B enclose © encircle D orbit 2 A at any t atering B amending «adapting D_ adjusting 3 A rout"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 6: Open Cloze",
+      "sourcePages": [
+        20
+      ],
+      "bestPhysicalPage": 10,
+      "bestScore": 0.89,
+      "hits": 89,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 6: Open Cloze For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Write your answers in CAPITAL LETTERS. ",
+      "ocrPreview": "a = Test 1 t Paper 3 Use of English Part 2 | Part 3 For questions 19-27, read the text below and think of the word which best fis each gap. Use only For questions 26-37, read the text below. Use the word given in capital"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 7: Word Formation",
+      "sourcePages": [
+        21
+      ],
+      "bestPhysicalPage": 10,
+      "bestScore": 0.79,
+      "hits": 79,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 7: Word Formation For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the beginning (",
+      "ocrPreview": "a = Test 1 t Paper 3 Use of English Part 2 | Part 3 For questions 19-27, read the text below and think of the word which best fis each gap. Use only For questions 26-37, read the text below. Use the word given in capital"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 8: Gapped Sentences",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "bestPhysicalPage": 10,
+      "bestScore": 0.385,
+      "hits": 10,
+      "sample": 26,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 8: Gapped Sentences For questions 38–42, think of one word only which can be used appropriately in all three sentences. Write the word in CAPITAL LETTERS. Note: This part tests your vocabulary depth. You must find a",
+      "ocrPreview": "a = Test 1 t Paper 3 Use of English Part 2 | Part 3 For questions 19-27, read the text below and think of the word which best fis each gap. Use only For questions 26-37, read the text below. Use the word given in capital"
+    },
+    {
+      "file": "cam-cae3-test1.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 9: Key Word Transformation",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "bestPhysicalPage": 44,
+      "bestScore": 0.852,
+      "hits": 23,
+      "sample": 27,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 9: Key Word Transformation For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and",
+      "ocrPreview": "Test 3 Paper 3 Use of English Part 5 46 Many people believe that Edilson has the ability to become world judo champion. For questions 43-60, complete the second sentence so that it has a similar meaning to the first ie *"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        34,
+        35
+      ],
+      "bestPhysicalPage": 16,
+      "bestScore": 0.68,
+      "hits": 68,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with communication. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according to th",
+      "ocrPreview": "SS il Test 2 PAPER 1 READING (1 hour 15 minutes) Part 1 You are going to read three extracts which are all concemed in some way with communication. For questions 1-8, choose the answer (A,B, C or D) which you think fis b"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        36,
+        37
+      ],
+      "bestPhysicalPage": 18,
+      "bestScore": 0.69,
+      "hits": 69,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article about music. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (7–12). Th",
+      "ocrPreview": "a Test 2 Paper 1 Reading Part2 ‘A. The recording should earn Léa hearing far Asa result of this exposure, he was able to beyond the traditional world-music ‘get a job when he moved to Senegal at the ‘You are going to rea"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        38
+      ],
+      "bestPhysicalPage": 19,
+      "bestScore": 0.41,
+      "hits": 41,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read an extract from a book. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. Introduction to a book about maps Thi",
+      "ocrPreview": "Test 2 Paper 1 Reading Part 3 419 What does the writer suggest about his book inthe first paragraph? B, Cor A He found his aims difficult to achieve. You are going to read an extract from a book. For questions 13-19, cho"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        41
+      ],
+      "bestPhysicalPage": 20,
+      "bestScore": 0.31,
+      "hits": 31,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article in which four naturalists explain their choice of most inspiring book about the environment. For questions 20–34, choose from the naturalists (A–D). Th",
+      "ocrPreview": "[eee a Test2 Paper 1 Reading Part 4 Wildlife Books {You are going to read an article in which four naturalists explain ther choice of most inspiring book We jain fr lang tna tsi iat os ab wae see about the environment. F"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple-Choice Cloze",
+      "sourcePages": [
+        44
+      ],
+      "bestPhysicalPage": 22,
+      "bestScore": 0.88,
+      "hits": 88,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 1: Multiple-Choice Cloze For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Driving from Beijing to Paris ‘Every (0) journey ",
+      "ocrPreview": "aaa a a Test 2 Paper 3 Use of English PAPER 3 USE OF ENGLISH (1 hour) 1 A adapt B moderate © improve D form 2 A head B move © set Dt Part 1 a 3A. vision B fantasy © hope D- dram For questions 1-12, read the text below an"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze",
+      "sourcePages": [
+        46
+      ],
+      "bestPhysicalPage": 23,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 2: Open Cloze For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Central Park If you have the chance (0)",
+      "ocrPreview": "oe a | Test2 Paper 3 Use of English Part 2 , Part 3 For questions 19-27, read the text below and think ofthe word which best fits each gap. Use only For questione 28-S7, road the text below, Use the word glven In capital"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation",
+      "sourcePages": [
+        47
+      ],
+      "bestPhysicalPage": 23,
+      "bestScore": 0.79,
+      "hits": 79,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 3: Word Formation For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the beginning (",
+      "ocrPreview": "oe a | Test2 Paper 3 Use of English Part 2 , Part 3 For questions 19-27, read the text below and think ofthe word which best fits each gap. Use only For questione 28-S7, road the text below, Use the word glven In capital"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences",
+      "sourcePages": [
+        48,
+        49
+      ],
+      "bestPhysicalPage": 24,
+      "bestScore": 0.714,
+      "hits": 10,
+      "sample": 14,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 4: Gapped Sentences For questions 38–42, think of one word only which can be used appropriately in all three sentences. Write the word in CAPITAL LETTERS. ⚠️ Dạng bài riêng CAE (không có trong CPE) Mỗi câu hỏi gồm 3",
+      "ocrPreview": "SEE ee Test 2 i}. Paper 3 Use of English / Part 4 * 44 The tutor ssid the organisation of ideas in my essay WS ..nsnsoe But LN@eded to do ‘more work on the conclusion. For questions 38-42, think of one word only which ca"
+    },
+    {
+      "file": "cam-cae3-test2.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation",
+      "sourcePages": [
+        50,
+        51
+      ],
+      "bestPhysicalPage": 57,
+      "bestScore": 0.905,
+      "hits": 19,
+      "sample": 21,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 5: Key Word Transformation For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and",
+      "ocrPreview": "———— - a Test 4 Paper 3 Use of English Part 5 46 By the end of the month, it will be two years since Hendrik came to England. FOR For questions 43-50, complete the second sentence so that it has a similar meaning to the "
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        35,
+        36
+      ],
+      "bestPhysicalPage": 35,
+      "bestScore": 0.63,
+      "hits": 63,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are concerned in some way with the arts or lifestyle. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according t",
+      "ocrPreview": "Test 3 PAPER 1 READING (1 hour 15 minutes) Part 1 ‘You are going to read three extracts which are all concerned in some way with entertainment. For questions 1-6, choose the answer (A, B, G or D) which you think fits bes"
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        37
+      ],
+      "bestPhysicalPage": 37,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article about psychology. Six paragraphs have been removed from the extract. Choose from the paragraphs A-G the one which fits each gap (7-12",
+      "ocrPreview": "Test 3 Paper 1 Reading Part 2 [A This lack of individual accountability may For a group and its behaviour are shaped by » © Jead to people letting goof theirinhibitions~ ~~ who Is in charge and the roles the other ‘You a"
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        38
+      ],
+      "bestPhysicalPage": 38,
+      "bestScore": 0.7,
+      "hits": 70,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a magazine article about an ancient Greek shipwreck. For questions 13-19, choose the answer (A, B, C or D) which you think fits best according to the text. Discover",
+      "ocrPreview": "Test 3 Paper 1 Reading Part 3. 43. In the first paragraph, what point does the writer make about the exploration? {twas most effective when carried team. ‘You ae going to read a magazine ate about an ancent Greek shipwre"
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        40
+      ],
+      "bestPhysicalPage": 39,
+      "bestScore": 0.85,
+      "hits": 85,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article in which scientists and writers nominate their favourite science fiction authors. For questions 20-34, choose from the authors (A-D). The authors may b",
+      "ocrPreview": "Test 3 ! Paper 1 Reading Part 4 | FAVOURITE SCIENCE FICTION AUTHORS ‘Top scientists and writers nominate thetr favourite science fiction authors ‘You are going to read an article in which scientists and writers nominate "
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple-Choice Cloze",
+      "sourcePages": [
+        71
+      ],
+      "bestPhysicalPage": 41,
+      "bestScore": 0.933,
+      "hits": 84,
+      "sample": 90,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 1: Multiple-Choice Cloze For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). Smart shoes Smart shoes that (0) adjust their siz",
+      "ocrPreview": "Test 3 Paper 3 Use of English PAPER 3 USE OF ENGLISH (1 hour) 4A assortment ——B_version © stye D variety 2 A) room B cap © area D_ emptiness Part 1 For questions 1-12, read the text below and then decide which answer (A,"
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze",
+      "sourcePages": [
+        72
+      ],
+      "bestPhysicalPage": 42,
+      "bestScore": 0.77,
+      "hits": 77,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 2: Open Cloze For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). Blue whales Blue whales, the world's la",
+      "ocrPreview": "Test 3 Paper 3. Use of English Part 2 hy Part3 For questions 13427, read the article below and think of the word which best fits each gap. Use 1 For questions 28-7, read the text below. Use the word given in capitals at "
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation",
+      "sourcePages": [
+        73
+      ],
+      "bestPhysicalPage": 42,
+      "bestScore": 0.554,
+      "hits": 36,
+      "sample": 65,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 3: Word Formation For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the beginning (",
+      "ocrPreview": "Test 3 Paper 3. Use of English Part 2 hy Part3 For questions 13427, read the article below and think of the word which best fits each gap. Use 1 For questions 28-7, read the text below. Use the word given in capitals at "
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences",
+      "sourcePages": [
+        74,
+        75
+      ],
+      "bestPhysicalPage": 24,
+      "bestScore": 0.714,
+      "hits": 10,
+      "sample": 14,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 4: Gapped Sentences For questions 38–42, think of one word only which can be used appropriately in all three sentences. Write the word in CAPITAL LETTERS. ⚠️ Dạng bài riêng CAE (không có trong CPE) Mỗi câu hỏi gồm 3",
+      "ocrPreview": "SEE ee Test 2 i}. Paper 3 Use of English / Part 4 * 44 The tutor ssid the organisation of ideas in my essay WS ..nsnsoe But LN@eded to do ‘more work on the conclusion. For questions 38-42, think of one word only which ca"
+    },
+    {
+      "file": "cam-cae3-test3.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation",
+      "sourcePages": [
+        76,
+        77
+      ],
+      "bestPhysicalPage": 57,
+      "bestScore": 0.952,
+      "hits": 20,
+      "sample": 21,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 5: Key Word Transformation For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and",
+      "ocrPreview": "———— - a Test 4 Paper 3 Use of English Part 5 46 By the end of the month, it will be two years since Hendrik came to England. FOR For questions 43-50, complete the second sentence so that it has a similar meaning to the "
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Choice (Reading)",
+      "sourcePages": [
+        48,
+        49
+      ],
+      "bestPhysicalPage": 48,
+      "bestScore": 0.82,
+      "hits": 82,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 1: Multiple Choice (Reading) You are going to read three extracts which are all concerned in some way with journalism. For questions 1–6, choose the answer (A, B, C or D) which you think fits best according to the t",
+      "ocrPreview": "re q Test 4 PAPER 1 READING (1 hour 15 minutes) Part1 ‘You are going to read three extracts which are all concemed in some way with journalism. For questions 1-8, choose the answer (A, B, © or D) which you think fits bes"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        50
+      ],
+      "bestPhysicalPage": 50,
+      "bestScore": 0.61,
+      "hits": 61,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article about Cape Cod. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (7–12).",
+      "ocrPreview": "se 0hCmUmtC<7|( PP —— Test 4 Paper 1 Reading Part 2 A It continued to the South Wellfleet sea cliff 4 E We tied several of them. Sometimes we were sehere Marconi broadcast the fist transatlantic \"on woodland trails shade"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        51
+      ],
+      "bestPhysicalPage": 51,
+      "bestScore": 0.86,
+      "hits": 86,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a magazine article about an artist. For questions 13–19, choose the answer (A, B, C or D) which you think fits best according to the text. Under Sarah's Spell Sarah",
+      "ocrPreview": "We Test 4 Paper 1 Reading Part3 43 After spending time with Janson, the interviewer concludes that Janson has lite faith in journalist. ‘You are going to read a magazine article about an artist. For questions 13-19, choo"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        52
+      ],
+      "bestPhysicalPage": 52,
+      "bestScore": 0.52,
+      "hits": 52,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 4: Multiple Matching (Reading) You are going to read an article from a book about being a shopkeeper. For questions 20–34, choose from the sections (A–E). The sections may be chosen more than once. HOW TO RUN A SHOP",
+      "ocrPreview": "C—O Test 4 Paper 1 Reading Part 4 4 HOW TO RUN A SHOP ‘You are: Golng to reed an article from elbook about bang a shopkeeper. For quseiioné- 20-84) Tan Maitland offers a practical survival guide to retailing today. choos"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple-Choice Cloze",
+      "sourcePages": [
+        54
+      ],
+      "bestPhysicalPage": 54,
+      "bestScore": 0.915,
+      "hits": 86,
+      "sample": 94,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 1: Multiple-Choice Cloze For questions 1–12, read the text below and decide which answer (A, B, C or D) best fits each gap. There is an example at the beginning (0). We really can tell if we are being watched Storie",
+      "ocrPreview": "Gg, = SSS_———e ee Test 4 Paper 3. Use of English ine B accepted © received D sue PAPER 3 USE OF ENGLISH (1 hour) ae ot me 2 A involved B contained comprised D enclosed Patt 3 A find B notice C tell D reveal For questions"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze",
+      "sourcePages": [
+        55
+      ],
+      "bestPhysicalPage": 55,
+      "bestScore": 0.71,
+      "hits": 71,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 2: Open Cloze For questions 13–27, read the text below and think of the word which best fits each gap. Use only one word in each gap. There is an example at the beginning (0). The toughest runners There are a few ru",
+      "ocrPreview": "— Foe OO Ss Test 4 Paper 3 Use of English Part 2 Part3 exams [0] EDT ELE TELL sarote (5) PEED PTET TTT TTT The toughest runners r Gulangyu 1981. They are the toughest runners of (13) . These athletes, (14) ..... honour o"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Word Formation",
+      "sourcePages": [
+        55
+      ],
+      "bestPhysicalPage": 55,
+      "bestScore": 0.47,
+      "hits": 47,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 3: Word Formation For questions 28–37, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. There is an example at the beginning (",
+      "ocrPreview": "— Foe OO Ss Test 4 Paper 3 Use of English Part 2 Part3 exams [0] EDT ELE TELL sarote (5) PEED PTET TTT TTT The toughest runners r Gulangyu 1981. They are the toughest runners of (13) . These athletes, (14) ..... honour o"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Gapped Sentences",
+      "sourcePages": [
+        56
+      ],
+      "bestPhysicalPage": 24,
+      "bestScore": 0.588,
+      "hits": 10,
+      "sample": 17,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 4: Gapped Sentences For questions 38–42, think of one word only which can be used appropriately in all three sentences. Write the word in CAPITAL LETTERS. ⚠️ Dạng bài riêng biệt của kỳ thi CAE cũ Mỗi câu hỏi dưới đâ",
+      "ocrPreview": "SEE ee Test 2 i}. Paper 3 Use of English / Part 4 * 44 The tutor ssid the organisation of ideas in my essay WS ..nsnsoe But LN@eded to do ‘more work on the conclusion. For questions 38-42, think of one word only which ca"
+    },
+    {
+      "file": "cam-cae3-test4.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Key Word Transformation",
+      "sourcePages": [
+        57
+      ],
+      "bestPhysicalPage": 57,
+      "bestScore": 0.952,
+      "hits": 20,
+      "sample": 21,
+      "status": "ok",
+      "cachedPageCount": 70,
+      "excerpt": "Part 5: Key Word Transformation For questions 43–50, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and",
+      "ocrPreview": "———— - a Test 4 Paper 3 Use of English Part 5 46 By the end of the month, it will be two years since Hendrik came to England. FOR For questions 43-50, complete the second sentence so that it has a similar meaning to the "
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        8
+      ],
+      "bestPhysicalPage": 10,
+      "bestScore": 0.28,
+      "hits": 28,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Matching (Reading) For questions 1-15, choose from the reviews/options. Some choices may be chosen more than once. A INDIA GHANERAO HOTEL, RAJASTHAN Ghanerao Hotel sits at the edge of the Aravalli Hills ",
+      "ocrPreview": "Paper 1 Reading REMOTE HOTELS aan pu es St nthe ach nthe complimentary champagne (her CHANERAO HOTEL, Sein hen creone hs re own band iyo aw le RAASTTIAN Snvathe gcd fom hey Se we) Chlnere Hl sea ce of Jol ec av away wn t"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        8
+      ],
+      "bestPhysicalPage": 11,
+      "bestScore": 0.85,
+      "hits": 85,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Gapped Text (Reading) Choose from paragraphs A-H/A-G the one which fits each gap. There is one extra paragraph you do not need to use. the numbered gaps in the following newspaper article. There is one extra para",
+      "ocrPreview": "Test 1 Part 2 For questions 16-22, you must choose which of the paragraphs A-H on page 7 fit into the numbered gaps in the following newspaper article. There is one extra paragraph which does not fit in any of the gaps. "
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "bestPhysicalPage": 13,
+      "bestScore": 0.48,
+      "hits": 48,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the text and choose the best answer (A, B, C or D). Read the following article from a magazine and then answer questions 23-27 on page 9. On your answer sheet, indicate the letter A",
+      "ocrPreview": "Test Part3 Read the folowing atl from a magazine and then answer questions 23-27 on page ‘9. On your answer sheet, indicate the letter A, B, C or D against the number of each tuostion 3-27, Give ony one anewer to each qu"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        8
+      ],
+      "bestPhysicalPage": 17,
+      "bestScore": 0.3,
+      "hits": 30,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Multiple Matching (Reading) For questions 28-45 (approx), match the statements with the correct options. Paper1 Reading Take Five Careers Rebecca Cripps meets five women who discuss their different professions: t",
+      "ocrPreview": "Test 1 \\ usually have a big breakfast, though, and when we do a complete landscape from start just have snacks during the day. People often to finish and then see all the blooms come ask me_ to recommend restaurants, out"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        17
+      ],
+      "bestPhysicalPage": 21,
+      "bestScore": 0.896,
+      "hits": 86,
+      "sample": 96,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1-15, choose the word which best fits each space. best fits each space. Put the letter you choose for each question in the correct box on ‘PAPER 3 ENGLISH IN U",
+      "ocrPreview": "Test 1 PAPER 3 ENGLISH IN USE (1 hour 30 minutes) Part 1 For questions 1-16, read the article below and then decide which word on page 17 best fits each space. Put the letter you choose for each question in the correct b"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        17
+      ],
+      "bestPhysicalPage": 23,
+      "bestScore": 0.925,
+      "hits": 74,
+      "sample": 80,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 16-30, fill each space with one word. correct box on the answer sheet. Use only one word for each space. The exercise begins with an example (0). Example: 0 ~ ALLERGIES P",
+      "ocrPreview": "Test 1 Part2 For questions 16-30, complete the following article by writing the missing words in the correct box on the answer sheet. Use only one word for each space. The exercise begins with an example (0) Example: 0 |"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        17
+      ],
+      "bestPhysicalPage": 24,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Error Correction (Use of English) For questions 31-46, identify the error or write 'CORRECT' / '✓' if the line is correct. In most lines of the following text, there is one unnecessary word. It is either grammati",
+      "ocrPreview": "Paper3 English in Use Part 3 In most lines of the following text, there is one unnecessary word. It is either ‘grammatically incorrect or does not fit in with the sense of the text. For each numbered line 3146, find this"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        17
+      ],
+      "bestPhysicalPage": 27,
+      "bestScore": 0.92,
+      "hits": 92,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 47-61, form a new word from the base word provided. this text to complete the numbered gaps in the informal letter. Then write the new words in the correct spaces on ",
+      "ocrPreview": "Test 1 Part 5 For questions 62-74, read the following job advertisement and use the information in this text to complete the numbered gaps in the informal letter. Then write the new words in the correct spaces on your an"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        17
+      ],
+      "bestPhysicalPage": 29,
+      "bestScore": 0.42,
+      "hits": 42,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 62-74, complete the second text with similar meaning using formal register. phrase given below to fill each of the spaces. Write one letter (A-J) in the correct bo",
+      "ocrPreview": "Test 1 Part 6 ‘suggested answers do not fit at all. The exercise begins with an example (0). twenty-three letters of the Latin alphabet (0) ...... Because English has sounds that do not spoke other first languages, espec"
+    },
+    {
+      "file": "cam-cae4-test1.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "sourcePages": [
+        17
+      ],
+      "bestPhysicalPage": 28,
+      "bestScore": 0.857,
+      "hits": 54,
+      "sample": 63,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 6: Discourse Cloze (Use of English) For questions 75-80, match the paragraphs to the gaps. INFORMAL LETTER You know promised to tell you if heard of any interesting jobs going? Well, our company is (0) ..... a new M",
+      "ocrPreview": "Paper 3 English in Use INFORMAL LETTER You know | promised to tell you i heard of any interesting jobs going? Well, our company is (0)... a new Marketing Director - the ad goes in next week. | The new director will be (6"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        30
+      ],
+      "bestPhysicalPage": 36,
+      "bestScore": 0.61,
+      "hits": 61,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Matching (Reading) For questions 1-15, choose from the reviews/options. Some choices may be chosen more than once. Paper1 Reading ® ) (Hide and Seek Yvonne Coppard Emma and_= her friends are pursuing a h",
+      "ocrPreview": "Paper 1 Reading Hide and Seek ® ) (Pigeon Summer ©.) (Someone's Mother © Ywonne Coppard Ann Turnbull in Missing Emma and her frends are) | Mary Dyer docs't relly fit ino || Harry Mazer pursuing + holiday” game | | ber fa"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        30
+      ],
+      "bestPhysicalPage": 38,
+      "bestScore": 0.26,
+      "hits": 26,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Gapped Text (Reading) Choose from paragraphs A-H/A-G the one which fits each gap. There is one extra paragraph you do not need to use. into the numbered gaps in the following magazine article. There is one extra ",
+      "ocrPreview": "Paper! Reading ‘A. Pethaps we can now exphin why art as we Ef we're going to inss that our recent creative usually define it ~ the dazaling explosion of burst finally does set us apart, then in what human art since Cro-M"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        30,
+        35
+      ],
+      "bestPhysicalPage": 39,
+      "bestScore": 0.81,
+      "hits": 81,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the text and choose the best answer (A, B, C or D). Read thé following newspaper article and then answer questions 21-25 on page 35. On your answer sheet, indicate the letter A, B, ",
+      "ocrPreview": "Test 2 Part 3 Read the following newspaper article and then answer questions 21-25 on page 35, On your answer sheet, indicate the letter A, B, C or D against the number of each question 21-25. Give only one answer to eac"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        30
+      ],
+      "bestPhysicalPage": 42,
+      "bestScore": 0.82,
+      "hits": 82,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Multiple Matching (Reading) For questions 28-45 (approx), match the statements with the correct options. Paper1 Reading The University Museum of Classical Archaeology The Museum of Classical Archaeology is one of",
+      "ocrPreview": "Paper 1 Reading A| The University Museum of Classical | B | Cambridge Darkroom Archaeology Cambridge Darkroom is a centre for The Museum of Classical Archaeology is | | photography with community dartrooms one of the few"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        42
+      ],
+      "bestPhysicalPage": 47,
+      "bestScore": 0.935,
+      "hits": 86,
+      "sample": 92,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1-15, choose the word which best fits each space. best fits each space. Put the letter you choose for each question in the correct box on your answer sheet. Th",
+      "ocrPreview": "Test 2 PAPER 3 ENGLISH IN USE (1 hour 30 minutes) Part For questions 1-18, read the article below and then decide which word on page 43, best fits each space. Put the letter you choose for each question in the correct bo"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        42
+      ],
+      "bestPhysicalPage": 49,
+      "bestScore": 0.967,
+      "hits": 87,
+      "sample": 90,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 16-30, fill each space with one word. correct box on the answer sheet. Use only one word for each space. The exercise begins with an example (0). Example: o by 0 WRONGED ",
+      "ocrPreview": "Test 2 Part 2 For questions 16-30, complete the following article by writing the missing words in the correct box on the answer sheet. Use only one word for each space. The exercise begins with an example (0). Example: 0"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        42
+      ],
+      "bestPhysicalPage": 50,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Error Correction (Use of English) For questions 31-46, identify the error or write 'CORRECT' / '✓' if the line is correct. In most lines of the following text, there is either a spelling or a punctuation error. F",
+      "ocrPreview": "Paper 3 English in Use Part3 In most lines of the following text, there is either a spelling or a punctuation error. For each numbered line 31-46, write the correctly-spelled word or show the correct punctuation in the b"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        42
+      ],
+      "bestPhysicalPage": 51,
+      "bestScore": 0.71,
+      "hits": 71,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 47-61, form a new word from the base word provided. to the right of the text, listed 47-61, to form a word that fits in the same numbered space in the text. Write the",
+      "ocrPreview": "Test 2 Part 4 For questions 47-61, read the two texts on pages 46-47. Use the words in the boxes 1 the right of the text, listed 47-61, to form a word that fits in the same numbered space in the text. Write the new word "
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        42
+      ],
+      "bestPhysicalPage": 53,
+      "bestScore": 0.87,
+      "hits": 87,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 62-74, complete the second text with similar meaning using formal register. use the information in this text to complete the numbered gaps in the publicity leaflet",
+      "ocrPreview": "Test 2 Part 5 For questions 62-74, read the following informal note about a poetry competition and use the information in this text to complete the numbered gaps in the publicity leaflet about the competition. Then write"
+    },
+    {
+      "file": "cam-cae4-test2.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "sourcePages": [
+        42
+      ],
+      "bestPhysicalPage": 55,
+      "bestScore": 0.33,
+      "hits": 33,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 6: Discourse Cloze (Use of English) For questions 75-80, match the paragraphs to the gaps. \"Part 6 phrase given below to fill each of the spaces. Write one letter (AJ) in the correct box on your answer sheet. Each c",
+      "ocrPreview": "Part6 business school, Oxford and Cambridge, (0) ..... , are dipping their toes into the (75) , plans to open the doors of its own School of Management Studies soon. ‘The two universities could not be entering the MBA ar"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        56
+      ],
+      "bestPhysicalPage": 62,
+      "bestScore": 0.81,
+      "hits": 81,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Matching (Reading) For questions 1-15, choose from the reviews/options. Some choices may be chosen more than once. Paper1 Reading GREAT SPORTS Women on a winning streak To excel in any sport is hard enou",
+      "ocrPreview": "Paper 1 Reading GREAT SPORTS Women on a winning streak To excel in any sport is hard enough, even for men, but women have to be twice as tough. Training and ‘competition leave litle time for a normal if, so sacrifices mu"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        56
+      ],
+      "bestPhysicalPage": 62,
+      "bestScore": 0.22,
+      "hits": 22,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Gapped Text (Reading) Choose from paragraphs A-H/A-G the one which fits each gap. There is one extra paragraph you do not need to use. into the numbered gaps in the following newspaper article. There is one extra",
+      "ocrPreview": "Paper 1 Reading GREAT SPORTS Women on a winning streak To excel in any sport is hard enough, even for men, but women have to be twice as tough. Training and ‘competition leave litle time for a normal if, so sacrifices mu"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        56,
+        61
+      ],
+      "bestPhysicalPage": 65,
+      "bestScore": 0.89,
+      "hits": 89,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the text and choose the best answer (A, B, C or D). Read the following newspaper article and then answer questions 24-28 on page 61. On your answer sheet, indicate the letter A, B, ",
+      "ocrPreview": "Test 3 Part 3 Read the following newspaper article and then answer questions 24~28 on page 61. On your answer sheet, indicate the letter A, B, C or D against the number of each question 24-28. Give only one answer to eac"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        56
+      ],
+      "bestPhysicalPage": 68,
+      "bestScore": 0.44,
+      "hits": 44,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Multiple Matching (Reading) For questions 28-45 (approx), match the statements with the correct options. Ancient Chinese medicine in the West? Acupuncture is two thousand years old. It comes from the traditional ",
+      "ocrPreview": "Paper 1 Reading Ancient Senerat appesrance. He or |” that simulating pastculor she wil ack about your ewes\" blogs. pain Chinese —wredical history, current signals and stops them iat health, general welkbeing, _fromrreaeh"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        68
+      ],
+      "bestPhysicalPage": 73,
+      "bestScore": 0.836,
+      "hits": 61,
+      "sample": 73,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1-15, choose the word which best fits each space. ° > o on oo a &F Oo DH = ee ee ee eS - © DYN = O a a ee a a ae ae a ae ee ee ae ae =\" a projected delayed com",
+      "ocrPreview": "Paper 3 English in Use 0 A. projected supposed © assumed —D__pretended 1A delayed —B_bothered «infected «= restricted 2 A comeback B_ setback © drawback cutback 3A fade B_ melt © mould D rust 4A substituted B replaced _a"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        68
+      ],
+      "bestPhysicalPage": 73,
+      "bestScore": 0.871,
+      "hits": 61,
+      "sample": 70,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 16-30, fill each space with one word. ° > o on oo a &F Oo DH = ee ee ee eS - © DYN = O a a ee a a ae ae a ae ee ee ae ae =\" a projected delayed comeback fade substituted ",
+      "ocrPreview": "Paper 3 English in Use 0 A. projected supposed © assumed —D__pretended 1A delayed —B_bothered «infected «= restricted 2 A comeback B_ setback © drawback cutback 3A fade B_ melt © mould D rust 4A substituted B replaced _a"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        68
+      ],
+      "bestPhysicalPage": 74,
+      "bestScore": 0.938,
+      "hits": 90,
+      "sample": 96,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Error Correction (Use of English) For questions 31-46, identify the error or write 'CORRECT' / '✓' if the line is correct. correct box on the answer sheet. Use only one word for each space. The exercise begins wi",
+      "ocrPreview": "Test 3 Part2 For questions 16-30, complete the following article by writing the missing words in the correct box on the answer sheet. Use only one word for each space. The exercise begins with an example (0). Example: 0 "
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        68
+      ],
+      "bestPhysicalPage": 75,
+      "bestScore": 0.91,
+      "hits": 91,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 47-61, form a new word from the base word provided. In most lines of the following text, there is either a spelling or a punctuation error. For each numbered line 31-",
+      "ocrPreview": "Paper 3 English in Use Part 3 In most ines ofthe following text, there is either a speling or a punctuation error. For each numbered line 3146, write the correctly-spelled word or show the correct punctuation in the box "
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        68
+      ],
+      "bestPhysicalPage": 77,
+      "bestScore": 0.7,
+      "hits": 70,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 62-74, complete the second text with similar meaning using formal register. GUIDE BOOK ENTRY DIEPPE - A FRENCH TOWN NOT TO MiSS Dieppe’s (54) ..... to Paris makes ",
+      "ocrPreview": "Paper 3 English in Use GUIDE BOOK ENTRY DIEPPE - A FRENCH TOWN NOT TO MISS Dieppe'’s (64)... to Paris makes this much-loved seaside resort an attraction for weekend holiday breaks in winter and summer alike. | | ¢54) cLo"
+    },
+    {
+      "file": "cam-cae4-test3.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "sourcePages": [
+        68
+      ],
+      "bestPhysicalPage": 80,
+      "bestScore": 0.87,
+      "hits": 87,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 6: Discourse Cloze (Use of English) For questions 75-80, match the paragraphs to the gaps. Fo ph on su r questions 75-80, read the following text and then choose from the list A-J the best rase given below to fill e",
+      "ocrPreview": "Test 3 Part 6 For questions 75-80, read the following text and then choose from thelist A-J the best Phrase given below to fl each of the spaces. Write one letter (A-v) in the correct box ‘on your answer sheet. Each corr"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        82
+      ],
+      "bestPhysicalPage": 87,
+      "bestScore": 0.69,
+      "hits": 69,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Matching (Reading) For questions 1-15, choose from the reviews/options. Some choices may be chosen more than once. BOOK A » Steve Martin’s Compelling Evidence is compelling indeed. The narrator, a lawyer",
+      "ocrPreview": "Paper 1 Reading BOOK A BOOK D BOOK G Steve Martin's Compelling | | pouble Deuce by Robert B.|| Dead for a Ducat by Simon Evidence is compelling indeed. | | parker sets that most literate of | | Shaw presents actor Philip"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        82
+      ],
+      "bestPhysicalPage": 88,
+      "bestScore": 0.42,
+      "hits": 42,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Gapped Text (Reading) Choose from paragraphs A-H/A-G the one which fits each gap. There is one extra paragraph you do not need to use. into the numbered gaps in the following magazine article. There is one extra ",
+      "ocrPreview": "rcs oases on te epee et Richard Nerurkar, one of Britain's top 10,000-metre runners, visits the Kenyans’ high-altitude training camp. ‘gicier-capped Mount Kenya. This gorgeous, ifonely and | ‘Central Highlands. ‘work-out"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        82,
+        87
+      ],
+      "bestPhysicalPage": 90,
+      "bestScore": 0.88,
+      "hits": 88,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the text and choose the best answer (A, B, C or D). Read the following introduction from a book and then answer questions 21-25 on page 87. On your answer sheet, indicate the letter",
+      "ocrPreview": "Test 4 Part 3 Read the following introduction from a book and then answer questions 21-25 0n page '87. On your answer sheet, indicate the letter A, B, C or D against the number of each question 21-25. Give only one answe"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        82
+      ],
+      "bestPhysicalPage": 93,
+      "bestScore": 0.39,
+      "hits": 39,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Multiple Matching (Reading) For questions 28-45 (approx), match the statements with the correct options. Paper1 Reading Photographing People People are the most interesting of all subjects. A photograph with some",
+      "ocrPreview": "Paper 1 Reading Photographing People Siwaye more compelling than the same aha without the human intrest. People are aloo the most difficult subjects to photograph well. Apart from the technical and artistic ‘A GROUPING P"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 98,
+      "bestScore": 0.97,
+      "hits": 97,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 1-15, choose the word which best fits each space. best fits each space. Put the letter you choose for each question in the correct box on your answer sheet. Th",
+      "ocrPreview": "Test 4 PAPER 3 ENGLISH IN USE (1 hour 30 minutes) Part 1 For questions 1-15, read the article below and then decide which word on page 95 best fits each space. Put the letter you choose for each question in the correct b"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 100,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 16-30, fill each space with one word. the answer sheet. Use only one word for each space. The exercise begins with an example (0). = Te CARROT ADDICTION Example: 0 Eating",
+      "ocrPreview": "Test 4 Part 2 For questions 16-30, complete the following article by writing each missing word on the answer sheet. Use only one word for each space. The exercise begins with an example (0). Example: | o| as Lo | CARROT "
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 101,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 3: Error Correction (Use of English) For questions 31-46, identify the error or write 'CORRECT' / '✓' if the line is correct. In most lines of the following text, there is one unnecessary word. It is either grammati",
+      "ocrPreview": "Paper 3 English in Use Part 3 In most lines of the following text, there is one unnecessary word. It is either grammatically incorrect or does not fit in with the sense of the text. For each numbered line 31-46, find thi"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 101,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 47-61, form a new word from the base word provided. In most lines of the following text, there is one unnecessary word. It is either grammatically incorrect or does n",
+      "ocrPreview": "Paper 3 English in Use Part 3 In most lines of the following text, there is one unnecessary word. It is either grammatically incorrect or does not fit in with the sense of the text. For each numbered line 31-46, find thi"
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.57,
+      "hits": 57,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 120,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 62-74, complete the second text with similar meaning using formal register. MAGAZINE ARTICLE IT IS NEVER TOO LATE TO BE PUNCTUAL People who are unpunctual fall int",
+      "ocrPreview": "Paper 3 English in Use MAGAZINE ARTICLE IT IS NEVER TOO LATE TO BE PUNCTUAL People who are unpunctual fall into three categories. The first, and (64) ....., comprises the (55) ..... incompetent and (56) ..... who worry ("
+    },
+    {
+      "file": "cam-cae4-test4.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Discourse Cloze (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 80,
+      "bestScore": 0.21,
+      "hits": 21,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 120,
+      "excerpt": "Part 6: Discourse Cloze (Use of English) For questions 75-80, match the paragraphs to the gaps. phrase given below to fill each of the spaces. Write one letter (A-J) in the correct box on your answer sheet. Each correct ",
+      "ocrPreview": "Test 3 Part 6 For questions 75-80, read the following text and then choose from thelist A-J the best Phrase given below to fl each of the spaces. Write one letter (A-v) in the correct box ‘on your answer sheet. Each corr"
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.17,
+      "hits": 17,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1-14 by referring to the book reviews on page 5. Indicate your answers on the separate answer sheet. For questions 1-14, match each of the statements below with one of",
+      "ocrPreview": "Test 4 4 | Part 3 | 1 Read the following newspaper article about a ‘mystery visitor who inspects hotels fora guide book, | i and answer questions 23-29 on page 87. On your answer sheet, indicate the letter A,B,C orD | i "
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "bestPhysicalPage": 104,
+      "bestScore": 0.19,
+      "hits": 19,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Gapped Text (Reading) For questions 15-21, choose which of the paragraphs A-H on page 7 fit into the numbered gaps in the following newspaper article. There is one extra paragraph which does not fit in any of the",
+      "ocrPreview": "| Test 4 | a For questions 16-22, choose which of the paragraphs A-H on page 85 fit into the numbered gaps q a in the following newspaper article. There is one extra paragraph, which does not fit in any of the gaps. Indi"
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.14,
+      "hits": 14,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the following magazine article and answer questions 22-28. Choose the answer (A, B, C or D) which you think fits best according to the text. P.D. James Barbara Michaels meets the ac",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        10,
+        11,
+        12
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.22,
+      "hits": 22,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Multiple Matching (Reading) For questions 29-47, answer by choosing from the people (A-D) whose stories are detailed in the article. Some of the choices may be required more than once. We changed lives for a day!",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "bestPhysicalPage": 20,
+      "bestScore": 0.94,
+      "hits": 94,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 48-62, read the article below and then decide which word best fits each space. Indicate your choice on the answer sheet. SECRETARIES What’s in a name? In the c",
+      "ocrPreview": "i i | | - i es i PAPER 3 ENGLISH IN USE (1 hour 30 minutes) Part 1 ll For questions 1-15, read the article below and then decide which word on page 17 best fits each Ni space. Put the letter you choose for each question "
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        18
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.17,
+      "hits": 17,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 63-77, complete the following article by writing each missing word. Use only one word for each space. The exercise begins with an example (0). The Legend of the Root Gins",
+      "ocrPreview": "Test 4 4 | Part 3 | 1 Read the following newspaper article about a ‘mystery visitor who inspects hotels fora guide book, | i and answer questions 23-29 on page 87. On your answer sheet, indicate the letter A,B,C orD | i "
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        19
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.15,
+      "hits": 15,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Error Correction (Use of English) In most lines of the following text, there is either a spelling or a punctuation error. For each numbered line 78-93, write the correctly spelt word or show the correct punctuati",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "bestPhysicalPage": 71,
+      "bestScore": 0.12,
+      "hits": 12,
+      "sample": 100,
+      "status": "low_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 94-108, read the two texts below. Use the words in the boxes to the right of the texts to form one word that fits in the corresponding space. Indicate your answers on",
+      "ocrPreview": ". Paper 2 Writing — Part 2 | _ Choose one of the following writing tasks. Your answer should follow exactly the instructions given. _____Write approximately 250 words. ; | 2. Yousee the following announcement in a magazi"
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.2,
+      "hits": 20,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 109-121, read the memorandum and use the information in it to complete the numbered gaps in the leaflet. The words you need do not occur in the memorandum. Use no ",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test1.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Gapped Phrases (Use of English)",
+      "sourcePages": [
+        24
+      ],
+      "bestPhysicalPage": 110,
+      "bestScore": 0.25,
+      "hits": 25,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 6: Gapped Phrases (Use of English) For questions 122-127, read the following text and then choose from the list A-J given below, the best phrase to fill each of the spaces. Each correct phrase may only be used once.",
+      "ocrPreview": "! Test 4 j mountaineer and guide, Phil Erscheler. He was around 80 kms per hour and temperatures below 4 q taking a party up the mountain via the Polish minus 50°C, we all got to the top within 8 hours. a Glacier, away f"
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        31
+      ],
+      "bestPhysicalPage": 102,
+      "bestScore": 0.19,
+      "hits": 19,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1–16 by referring to the newspaper interviews on page 31 about book reviews. Indicate your answers on the separate answer sheet. Some of the choices may be required mo",
+      "ocrPreview": "Leen | qi PAPER 1 READING (1-hour 15 minutes) | 4 Part 1 | a Answer questions 1-15 by referring to the magazine article on page 83 about leadership at work. 7 Indicate your answers on the separate answer sheet. a a For q"
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        32
+      ],
+      "bestPhysicalPage": 109,
+      "bestScore": 0.14,
+      "hits": 14,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read an extract from a magazine article. Six paragraphs have been removed from the extract. Choose from the paragraphs A–G the one which fits each gap (17–22). There is one ",
+      "ocrPreview": "| i a Paper1 Reading _ Seven Up | 4 Mountaineer Doug Scott shares with his readers the mystical experience of fo conquering the highest peak on each continent: the Seven Summits. q : q My quest to climb the Seven Summits"
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        35
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.17,
+      "hits": 17,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article about an expedition. For questions 23–29, choose the answer (A, B, C or D) which you think fits best according to the text. An awfully big adven",
+      "ocrPreview": "Test 4 4 | Part 3 | 1 Read the following newspaper article about a ‘mystery visitor who inspects hotels fora guide book, | i and answer questions 23-29 on page 87. On your answer sheet, indicate the letter A,B,C orD | i "
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        37,
+        38
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.16,
+      "hits": 16,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Multiple Matching (Reading) Answer questions 30–45 by referring to the magazine article on pages 37–38 about different jobs. Choose your answers from the people (A–F). The people may be chosen more than once. Six",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        46
+      ],
+      "bestPhysicalPage": 46,
+      "bestScore": 0.959,
+      "hits": 93,
+      "sample": 97,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 46–60, read the text below and decide which word best fits each space. Put the letter you choose in the correct box on your answer sheet. Sports Photography Sp",
+      "ocrPreview": "I Test 2 \\ PAPER 3 ENGLISH IN USE (1 hour 30 minutes) {iit A Hh) . For questions 1-15, read the text below and then decide which word on page 43 best fits each i) | space. Put the letter you choose for each question in t"
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        48
+      ],
+      "bestPhysicalPage": 72,
+      "bestScore": 0.24,
+      "hits": 24,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 61–75, read the text below and think of the word which best fits each space. Use only one word in each space. The exercise begins with an example (0). Traffic Jams are No",
+      "ocrPreview": "i Test 3 Y PAPER 3 ENGLISH IN USE (1 hour 30 minutes) / | | Part 1 { For questions 1-15, read the text below and then decide which word on page 69 best fits each | . space. Put the letter you choose for each question in "
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        49
+      ],
+      "bestPhysicalPage": 117,
+      "bestScore": 0.18,
+      "hits": 18,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Error Correction (Use of English) In most lines of the following text, there is one unnecessary word. It is either grammatically incorrect or does not fit in with the sense of the text. For each numbered line 76–",
+      "ocrPreview": "Paper 3 English in Use a Part 3 i a In most lines of the following text, there is one unnecessary word. It is either grammatically i 4 incorrect or does not fit in with the sense of the text. For each numbered line 31-46"
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        50,
+        51
+      ],
+      "bestPhysicalPage": 114,
+      "bestScore": 0.13,
+      "hits": 13,
+      "sample": 100,
+      "status": "low_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 92–106, read the two texts below. Use the word given in capitals at the end of some of the lines to form a word that fits in the space in the same line. The exercise ",
+      "ocrPreview": "/ Test 4 ] PAPER 3 ENGLISH IN USE (1 hour 30 minutes) | i] Part 1 a q For questions 1-15, read the text below and then decide which word on page 95 best fits each | | space. Put the letter you choose for each question in"
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Information Transfer (Use of English)",
+      "sourcePages": [
+        53
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.2,
+      "hits": 20,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 5: Information Transfer (Use of English) For questions 107–119, read the note from a Directors’ meeting and use the information in it to complete the numbered gaps in the memorandum. Use no more than two words for e",
+      "ocrPreview": "Test 4 4 | Part 3 | 1 Read the following newspaper article about a ‘mystery visitor who inspects hotels fora guide book, | i and answer questions 23-29 on page 87. On your answer sheet, indicate the letter A,B,C orD | i "
+    },
+    {
+      "file": "cam-cae5-test2.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Gapped Text (Use of English)",
+      "sourcePages": [
+        54
+      ],
+      "bestPhysicalPage": 121,
+      "bestScore": 0.25,
+      "hits": 25,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 6: Gapped Text (Use of English) For questions 120–125, read the text below and then choose from the list A–J given below, the best phrase to fill each of the spaces. Write one letter (A–J) in the correct box on your",
+      "ocrPreview": "Test 4 | Part 6 i f For questions 75-80, read the following text and then choose from the list A-J given below the | best phrase to fill each of the spaces. Write one letter (A-J) in the correct box on your answer , shee"
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        56,
+        57,
+        61
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.14,
+      "hits": 14,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1-16 by referring to the office descriptions on pages 60-61. For questions 1-16, match each of the statements below with one of the offices (A-D) described on page 61.",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        58,
+        59
+      ],
+      "bestPhysicalPage": 104,
+      "bestScore": 0.2,
+      "hits": 20,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Gapped Text (Reading) For questions 17–22, choose which of the paragraphs A–G on page 59 fit into the numbered gaps in the following newspaper article. There is one extra paragraph which does not fit in any of th",
+      "ocrPreview": "| Test 4 | a For questions 16-22, choose which of the paragraphs A-H on page 85 fit into the numbered gaps q a in the following newspaper article. There is one extra paragraph, which does not fit in any of the gaps. Indi"
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        60,
+        61
+      ],
+      "bestPhysicalPage": 104,
+      "bestScore": 0.11,
+      "hits": 11,
+      "sample": 100,
+      "status": "low_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Multiple Choice (Reading) Read the following magazine article and answer questions 23-29. Choose the answer (A, B, C or D) which you think fits best according to the text. Solar Survivor Charles Clover ventures i",
+      "ocrPreview": "| Test 4 | a For questions 16-22, choose which of the paragraphs A-H on page 85 fit into the numbered gaps q a in the following newspaper article. There is one extra paragraph, which does not fit in any of the gaps. Indi"
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        62,
+        63,
+        64
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.17,
+      "hits": 17,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Multiple Matching (Reading) Answer questions 30–48 by referring to the magazine article on pages 62–64 about hotels and health farms. Choose your answers from the places or journalists (A–E). The choices may be c",
+      "ocrPreview": "Test 4 4 | Part 3 | 1 Read the following newspaper article about a ‘mystery visitor who inspects hotels fora guide book, | i and answer questions 23-29 on page 87. On your answer sheet, indicate the letter A,B,C orD | i "
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        68,
+        69
+      ],
+      "bestPhysicalPage": 72,
+      "bestScore": 0.49,
+      "hits": 49,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 49-63, read the text below and then decide which word on page 69 best fits each space. Put the letter you choose for each question in the correct box on your a",
+      "ocrPreview": "i Test 3 Y PAPER 3 ENGLISH IN USE (1 hour 30 minutes) / | | Part 1 { For questions 1-15, read the text below and then decide which word on page 69 best fits each | . space. Put the letter you choose for each question in "
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        70
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.2,
+      "hits": 20,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 64-78, read the text below and think of the word which best fits each space. Use only one word in each space. The Sahara Marathon One of the (0) most amazing marathon rac",
+      "ocrPreview": "Test 4 4 | Part 3 | 1 Read the following newspaper article about a ‘mystery visitor who inspects hotels fora guide book, | i and answer questions 23-29 on page 87. On your answer sheet, indicate the letter A,B,C orD | i "
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        71
+      ],
+      "bestPhysicalPage": 117,
+      "bestScore": 0.17,
+      "hits": 17,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Error Correction (Use of English) In most lines of the following text, there is either a spelling or a punctuation error. For each numbered line 79-94, write the correctly spelt word or show the correct punctuati",
+      "ocrPreview": "Paper 3 English in Use a Part 3 i a In most lines of the following text, there is one unnecessary word. It is either grammatically i 4 incorrect or does not fit in with the sense of the text. For each numbered line 31-46"
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        72,
+        73
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.21,
+      "hits": 21,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 95-109, read the two texts below. Use the words in the boxes to the right of the texts to form one word that fits in the same numbered space in the text. Write the ne",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Information Transfer (Use of English)",
+      "sourcePages": [
+        74,
+        75
+      ],
+      "bestPhysicalPage": 120,
+      "bestScore": 0.19,
+      "hits": 19,
+      "sample": 100,
+      "status": "review_similarity",
+      "cachedPageCount": 43,
+      "excerpt": "Part 5: Information Transfer (Use of English) For questions 110-122, read the hotel information leaflet and use the information in it to complete the numbered gaps in the letter on page 75. Use no more than two words for",
+      "ocrPreview": "Test 4 ] Part 5 q For questions 62-74, read the following letter from a Head of Department and use the information qq in it to complete the numbered gaps in the letter to a friend on page 101. The words you need do q not"
+    },
+    {
+      "file": "cam-cae5-test3.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Gapped Text (Use of English)",
+      "sourcePages": [
+        76
+      ],
+      "bestPhysicalPage": 121,
+      "bestScore": 0.27,
+      "hits": 27,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 6: Gapped Text (Use of English) For questions 123-128, read the text below and then choose from the list A-J given below the best phrase to fill each of the spaces. Write one letter (A—J) in the correct box on your ",
+      "ocrPreview": "Test 4 | Part 6 i f For questions 75-80, read the following text and then choose from the list A-J given below the | best phrase to fill each of the spaces. Write one letter (A-J) in the correct box on your answer , shee"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 0,
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "sourcePages": [
+        82
+      ],
+      "bestPhysicalPage": 103,
+      "bestScore": 0.87,
+      "hits": 87,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Matching (Reading) Answer questions 1–15 by referring to the magazine article about leadership at work on pages 82-83. Indicate your answers on the separate answer sheet. Some of the choices may be requi",
+      "ocrPreview": "_ Paper1 Readin _ | ° . | Get the leading edge — motivate yourself to take full control at work. q | A What makes a good leader? A leader is one who D_ Leaders and managers can be seen as different | _ inspires, an agent"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 1,
+      "sectionTitle": "Part 2: Gapped Text (Reading)",
+      "sourcePages": [
+        84
+      ],
+      "bestPhysicalPage": 104,
+      "bestScore": 0.93,
+      "hits": 93,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Gapped Text (Reading) You are going to read a newspaper article about students using weightlessness to test their theories. Six paragraphs have been removed from the article. Choose from the paragraphs A–H the on",
+      "ocrPreview": "| Test 4 | a For questions 16-22, choose which of the paragraphs A-H on page 85 fit into the numbered gaps q a in the following newspaper article. There is one extra paragraph, which does not fit in any of the gaps. Indi"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 2,
+      "sectionTitle": "Part 3: Multiple Choice (Reading)",
+      "sourcePages": [
+        86
+      ],
+      "bestPhysicalPage": 106,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Multiple Choice (Reading) You are going to read a newspaper article about a hotel inspector. For questions 23–29, choose the answer (A, B, C or D) which you think fits best according to the text. The Hotel Inspec",
+      "ocrPreview": "Test 4 4 | Part 3 | 1 Read the following newspaper article about a ‘mystery visitor who inspects hotels fora guide book, | i and answer questions 23-29 on page 87. On your answer sheet, indicate the letter A,B,C orD | i "
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 3,
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "sourcePages": [
+        88
+      ],
+      "bestPhysicalPage": 109,
+      "bestScore": 0.88,
+      "hits": 88,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Multiple Matching (Reading) Answer questions 30-47 by referring to the magazine article about mountain climbing on pages 89-90. Some of the choices may be required more than once. Seven Up Mountaineer Doug Scott ",
+      "ocrPreview": "| i a Paper1 Reading _ Seven Up | 4 Mountaineer Doug Scott shares with his readers the mystical experience of fo conquering the highest peak on each continent: the Seven Summits. q : q My quest to climb the Seven Summits"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 4,
+      "sectionTitle": "Part 1: Multiple Choice Cloze (Use of English)",
+      "sourcePages": [
+        94
+      ],
+      "bestPhysicalPage": 114,
+      "bestScore": 0.95,
+      "hits": 95,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 1: Multiple Choice Cloze (Use of English) For questions 48-62, read the text below and then decide which word best fits each space. Put the letter you choose in the correct box on your answer sheet. The exercise beg",
+      "ocrPreview": "/ Test 4 ] PAPER 3 ENGLISH IN USE (1 hour 30 minutes) | i] Part 1 a q For questions 1-15, read the text below and then decide which word on page 95 best fits each | | space. Put the letter you choose for each question in"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 5,
+      "sectionTitle": "Part 2: Open Cloze (Use of English)",
+      "sourcePages": [
+        96
+      ],
+      "bestPhysicalPage": 116,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 2: Open Cloze (Use of English) For questions 63-77, complete the following article by writing each missing word in the correct box on your answer sheet. Use only one word for each space. The exercise begins with an ",
+      "ocrPreview": "Test 4 | Part 2 a ' For questions 16-30, complete the following article by writing each missing word in the correct 4 box on your answer sheet. Use only one word for each space. The exercise begins with an _ example (0)."
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 6,
+      "sectionTitle": "Part 3: Error Correction (Use of English)",
+      "sourcePages": [
+        97
+      ],
+      "bestPhysicalPage": 117,
+      "bestScore": 0.98,
+      "hits": 98,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 3: Error Correction (Use of English) In most lines of the following text, there is one unnecessary word. It is either grammatically incorrect or does not fit in with the sense of the text. For each numbered line 78-",
+      "ocrPreview": "Paper 3 English in Use a Part 3 i a In most lines of the following text, there is one unnecessary word. It is either grammatically i 4 incorrect or does not fit in with the sense of the text. For each numbered line 31-46"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 7,
+      "sectionTitle": "Part 4: Word Formation (Use of English)",
+      "sourcePages": [
+        98,
+        99
+      ],
+      "bestPhysicalPage": 118,
+      "bestScore": 0.66,
+      "hits": 66,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 4: Word Formation (Use of English) For questions 94-108, read the two texts on pages 98 and 99. Use the words in the boxes to the right of the texts to form one word that fits in the same numbered space in the text.",
+      "ocrPreview": "F | Test 4 Part 4 a For questions 47-61, read the two texts on pages 98 and 99. Use the words in the boxes to the right of the texts to form one word that fits in the same numbered space in the text. Write the new u word"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 8,
+      "sectionTitle": "Part 5: Register Transfer (Use of English)",
+      "sourcePages": [
+        100,
+        101
+      ],
+      "bestPhysicalPage": 120,
+      "bestScore": 0.76,
+      "hits": 76,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 5: Register Transfer (Use of English) For questions 109-121, read the letter from a Head of Department on page 100 and use the information in it to complete the gaps in the letter to a friend on page 101. Use no mor",
+      "ocrPreview": "Test 4 ] Part 5 q For questions 62-74, read the following letter from a Head of Department and use the information qq in it to complete the numbered gaps in the letter to a friend on page 101. The words you need do q not"
+    },
+    {
+      "file": "cam-cae5-test4.json",
+      "sectionIndex": 9,
+      "sectionTitle": "Part 6: Gapped Phrases (Use of English)",
+      "sourcePages": [
+        101
+      ],
+      "bestPhysicalPage": 121,
+      "bestScore": 0.96,
+      "hits": 96,
+      "sample": 100,
+      "status": "ok",
+      "cachedPageCount": 43,
+      "excerpt": "Part 6: Gapped Phrases (Use of English) For questions 122-127, read the following text and then choose from the list A-J given below the best phrase to fill each of the spaces. Write one letter (A-J) in the correct box. ",
+      "ocrPreview": "Test 4 | Part 6 i f For questions 75-80, read the following text and then choose from the list A-J given below the | best phrase to fill each of the spaces. Write one letter (A-J) in the correct box on your answer , shee"
+    }
+  ]
+}

@@ -1,0 +1,796 @@
+BỒI DƯỠNG HỌC SINH GIỎI VẬT LÝ 9 PHẦN ĐIỆN HỌC
+A Tóm tắc lý thuyết:
+1. Định luật Ôm
+a/ Định luật Ôm:     I= 
+Trong đó:     U là HĐT, đơn vị V
+R là điện trở, đơn vị 
+I là CĐDĐ, đơn vị A
+* Lưu ý: Giả sử nguồn điện có suất điện động là E, điện trở trong là r, điên trở mạch ngoài là R, ta có:E = I(R+r )
+Gọi UAB= IR là HĐT của mạch ngoài, thì ta có:
+      E = UAB + Ir => UAB = E – Ir
+- Nếu r rất nhỏ( r=0) hoặc mạch hở I=0 thì UAB=E
+- Nếu R rất nhỏ(R=0) thì I= sẽ có giá trị rất lớn, ta nói nguồn điện bị đoản mạch.
+b/ Định luật Ôm cho đoạn mạch có các điện trở mắc nối tiếp.
+I=I1=I2=…=In
+U=U1+U2+…+Un 
+R=R1+R2+…+Rn
+c/ Định luật Ôm cho đoạn mạch có các điện trở mắc song song.
+I=I1+I2+…+In
+U=U1=U2=…=Un
+++…+
+2. Công thức điện trở:
+a/ Công thức tính điện trở:     R=
+b/ Công thức tính điện trở theo chiều dài, tiết diện và vật liệu làm dây dẫn:  R= 
+    Trong đó:l là chiều dài dây dẫn, đơn vị m
+S là tiết diện dây dẫn, đơn vị m2
+ là điện trở suất, đơn vị  m
+R là điện trở, đơn vị là 
++ Nếu hai dây dẫn cùng tiết diện , cùng một vật liệu ( chất liệu) thì:    
++ Nếu hai dây dẫn cùng chiều dài và cùng vật liệu thì:    
++ Nếu dây dẫn tiết diện tròn thì: 
+c/ Công thức tính điện trở phụ thuộc vào nhiệt độ:     Rt=R0( 1+ t)
+     Trong đó:R0 là điện trở của vật dẫn ở 00C
+Rt là điện trở của vật dẫn ở nhiệt độ t
+ là hệ số nở nhiệt của điện trở đơn vịK-1
+t là nhiệt độ đơn vị 0C
+3.Công của dòng điện:
+Định nghĩa: 
+Số đo phần điện năng chuyển hóa sang các dạng năng lương khác trong một đoạn mạch điện được gọi là công của dòng điện sản ra trong đoạn mạch đó.
+Công thức:          A=Pt= UIt
+Trong đó:   U là HĐT tính bằng đơn vị V
+I là cường độ dòng điện tính bằng đơn vị A
+P là công suất của dòng điện tính bằng đơn vị W
+T là thời gian tính bằng đơn vị s
+A là công của dòng điện tính bằng đơn vị J.Ngoài ra người ta còn dùng đơn vịWs hoặc KWh
+4. Công suất của dòng điện:
+ạ Định nghĩa:
+Công suất có được xác định bằng tích của HĐT 2đầu đoạn mạch với cường độ dòng điện qua nó.
+b.Công thức: P=UI
+Ngoài ra người ta còn dùng các công thức khác đó là: P=RI2 Hoặc P=U2/R
+*Lưu ý:
+- Trên mỗi dụng cụ dùng điện hay trên mỗi đèn điện người ta có ghi hiệu điện thế và công suất định mức của chúng.
+- Khi xét đèn điện hay các thiết bị điện hoạt động bình thường hay không ta so sánh HĐT thực tế với HĐT định mức, hoặc so sánh cường độ dòng điện thực tế với cường độ dòng điện định mức
+Nếu Utt<Uđm ( hoặc Itt<Iđm): Thiết  bị hoạt động yếu, đèn sáng mờ.
+Nếu Utt=Uđm ( hoặc Itt=Iđm): Thiết  bị hoạt độngbình thường, đèn sáng bình thường
+Nếu Utt>Uđm ( hoặc Itt>Iđm): Thiết  bị hoạt động mạnh, đèn sáng quá sáng
+5.Định luật Jun-Lenxơ:
+Định luật:
+    Nhiệt lượng tỏa ra trên dây dẫn tỉ lệ thuận với bình phương cường độ dòng điện, với điện trở và thời gian dòng điện chạy quạ
+    b. Công thức:
+     - Nếu tính theo đơn vị J: Q=I2Rt
+     -Nếu tính theo đơn vị cal: Q= 0,24I2Rt
+B. Bài tập:
+1.Tính điện trở tương đương của đoạn mạch như hình vẽ( H.1)    Biết các điện trở bằng nhau và bằng r.
+Giải   H.1H.1                      A                C
+H.1
+H.1
+Điện trở của đoạn mạch:
+RAB= RAC + RCD + RDB = r + + r = 2,75r              B               D
+2. Bốn điện trở giống nhau có điện trở bằng r , Hỏi có bao nhiêu cách mắc để điện trở của đoạn mạch có giá tri khác nhaụ
+Giải:
+Có 9 cách mắc để điện trở của đoạn mạch có giá trị khác nhau;
+Rtd1=4r  ; Rtd2= r/4  ; Rtd3= 3r/4  ; Rtd4=4r/3  ; Rtd5= 5r/2  ; Rtd6 = 2r/5
+Rtd7 = 5r/3  ; Rtd8 = 3r/5;  Rtđ9 =r.
+3. Có một số điện trở R=5. Hỏi phải dùng tối thiểu bao nhiêu điện trở để mắc thành mạch  điện có điện trở tương đương Rtđ= 3. Vẽ sơ đồ mắc mạch điện đó.
+Giải:
+Vì Rtđ nhỏ hơn điện trở thành phần nên các điện trở R mắc theo kiểu song song
+Gọi R1 là điện trở của nhánh mắc song song R
+H.2H.2    Rtđ== 3
+H.2
+H.2
+=>R.R1=3( R+R1)  5R1=15+ 3R1 => R1 = 7,5
+    Vì R1>R nên nhánh R1 gồm R nối tiếp R2
+    R1= R + R2 => R2= 2,5Vậy mạch điện được mắc như sau ( hình 2)
+4. Có một số điện trở R= 5, phải dùng ít nhất bao nhiêu điện trở để mắc thành mạch điện có điện trở tương đương bằng 8 
+Giải:
+    Vì Rtđ= 8> R=5 đoạn mạch gồm 1 điện trở R mắc nối tiếp với một đoạn mạch có điện trở 3( Rtđ1=3)
+    Trong đoạn mạch Rtđ1 có Rtđ1< R Rtđ1 gồm một điện trở R mắc song song với một đoạn mạch Rtđ2.
+   =1/3-1/5=2/5 => Rtđ2= 7,5
+    Trong đoạn mạch Rtđ2, ta có: Rtđ2> R. Nên Rtđ2 gồm một điện trở R mắc nối tiếp với đoạn mạch  có điện trở Rtđ3.
+    Rtđ3= 7,5-5= 2,5
+   Vì Rtđ3< R =>  đoạn mạch Rtđ3 gồm một điện trở mắc song song với Rtđ4. Ta có :
+H.3H.3   = -  => Rtđ4=5 = R
+H.3
+H.3
+   Vậy đoạn mạch gồm 5 điện trở R mắc như hình 3
+5. Một dây dẫn có điện trở R= 144. Phải cắt ra bao nhiêu đoạn bằng nhau để khi mắc các đoạn đó song song với nhau ta được điện trở tương đương của chúng là 4
+Giải:
+Điện trở của một đoạn: R=
+Khi n điện trở này được mắc song song với nhau thì ta có: Rtđ = 
+Hay  = 4  =>n = 6 
+Vây phải cắt dây ra làm 6 đoạn
+6. Giữa hai điểm A,B của mạch điên có HĐT luôn không đổi và bằng 12V, người ta mắc hai điện trở R1 và R2. Nếu chúng được mắc nối tiếp nhau thì cường độ dòng điện chạy trong mạch chính là 0,12Ạ Nếu chúng được mắc song song với nhau thì cường độ dòng điện chạy trong mạch chính là0,5Ạ Tính điện trở R1 và R2.
+Giải:
+Điện trở tương đương của đoạn mạch khi mắc nối tiếp
+Rnt = = 100      Hay R1 + R2 = 100  ( 1)
+Điện trở tương đương trong trường hợp mắc song song
+R// =  = 24        Hay = 24  
+                                         R1.R2 = 24(R1+R2)  R1.R2  = 2400 (2)
+Từ (1) và (2) ta suy ra:  R1= 60; R2= 40 Hoặc R1= 40; R2= 60.
+7. Có hai điện trở R1 và R2 mắc và nguồn điện có HĐT 6V.Nếu mắc nối tiếp thì  cường độ dòng điện qua chúng là 0,24Ạ Nếu mắc song song thì cường độ dòng điện qua mạch chính là 1Ạ Tính R1 và R2.
+Giải:
+Khi mắc R1 nối tiếp R2 thì điện trở tương đương của đoạn mạch là:
+Rnt = = 25                 Hay R1 + R2 = 25 (1)
+Khi mắc R1 song song R2 thì điện trở tương đương là
+R// =  = 6                   Hay= 6  
+                                                  R1.R2=6( R1+R2)  R1.R2= 150 (2)
+Từ (1) và (2) ta  được:  R1=15   ; R2= 10     Hoặc R1=10   ; R2=  15
+8. Có hai dây dẫn, 1 dây làm bằng đồng còn dây kia làm bằng nhôm. Dây đồng có tiết diện 0,5 lần dây nhôm và có chiều dài gấp 0,75 lần chiều dài dây nhôm. Tính điện trở của dây nhôm, biết dây đồng có điện trở 10.
+Giải:
+Điện trở của dây đồng: Rđ=đ  (1)
+Điện trở của dây nhôm: Rn= (2)
+Từ (1) và (2) ta có:=  (3)
+Thay Sđ=0,5 Sn ø; lđ= 0,75 ln ; điện trở suất của đồng và nhôm vào (3) ta được:
+Rn= 0,11Rđ . Hay Rn= 0,11. 10=11
+9. Cho mạch điện như hình vẽ (Hình 4)
+Trong đó: R1=2  ; R2=3  ;R3=4  ; Rx là biến trở
+ạKhi Rx= R3. tính điện trở tương đương của mạch điện.
+    b. cho HĐT 2 đầu đoạn mạch là 8V, điều chỉnh Rx cho đến khi ampe kế chỉ 2Ạ Lúc đó Rx có giá trị bao nhiêụ
+Giải:
+Điện trởcủa mạch điện.
+H.4H.4     Rtđ= R12 + R3x                                                                      R1           R3
+H.4
+H.4
+                                                                                        A                                              
+       Rtđ=+                                                            R2      Rb
+       Thay số ta được: Rtđ= 3,2
+Điện trở của đoạn mạch:R,tđ== 4
+      Điện trở của đoạn mạch gồm R3 và Rx:      R3x=R,tđ- R12= 2,8
+      Hay=2,8    => Rx = 3,9
+10. Cho mạch điện như hình 5. Trong đó: R1=10   ; R2=3 ;  R3=R4= 6   R5=4   . Cường độ dòng điện chạy trong mạch chính là 6Ạ Tính cường độ dòng điện qua mỗi điện trở.
+Giải
+H.5H.5                                                                                              R1       C               R2   
+H.5
+H.5
+Điện trở của nhánh gồm R1,R2,R3
+R123=R1+R23= R1+      A                      R4             R3               B
+Điện trở của đoạn AB                                                                  R5
+=>RAB=2
+Hiệu điện thế 2 đầu  đoạn AB: UAB= Ị RAB=6.2=12V
+Cường độ dòng điện qua điện trở R1 :I1=
+Vì đoạn CD mắc nối tiếp R1 nên ICD=I1
+Hiệu điện thế 2 đầu đoạn CD :UCD= ICD.R23= 1.2=2V
+Cường độ dòng điện qua R2 : I2=
+ Cường độ dòng điện qua R3:  I3=
+Cường độ dòng điện qua R4:  
+Cường độ dòng điện qua R5:   I5=
+11*. Dòng điện qua một vòng dây dẫn tại hai điểm A và B ( H.6).
+Sợi dây dẫn tạo nên một vòng dây là sợi dây kim loại đồng chất    A            B
+H.6H.6 tiết diện đều có chiều dài l. xác định vị trí A và B để điện trở
+H.6
+H.6
+của vòng dây nhỏ hơn điện trở của cuộn dây n lần
+                                           Giải:
+Vì cuộn dây được chia làm hai phần có điện trở R1 và R2 mắc 
+song song. Gọi l1, l2 lần lượt là chiều dài của dây dẫn có điện trở R1, R2.
+ Ta có:
+    
+   Điện trở tương đương của đoạn mạch AB:   
+   Gọi Rd là điện trở của sợi dâỵ Ta có: Rd=  
+   Theo đề ta có: 
+   =>
+   Hay: 
+   Giải phương trình ta được 2 nghiệm: 
+      
+    Với điều kiện n4
+     + Khi n>4:
+- Nếu l1> l/2 thì nghiệm của l1 là nghiệm l1 ở trên còn nghiệm l2 là nghiệm l’1
+- Nếu l1< l/2 thì nghiệm của l1 là nghiệm l’1 ở trên còn nghiệm l2 là nghiệm l1
+    + Khi n=4: ta có l1=l2=l/2
+12*. Có hai điện trở R1 và R2, nếu mắc nối tiếp thì điện trở tương đương của đoạn mạch gấp 6.25 lần khi mắc song song.
+  a/ Tính tỉ số giữa hai điện trở.
+  b/ Cho điện trở tương đương của đoạn mạch nối tiếp là 100. Tính giá trị mỗi điện trở.
+                                                              Giải:
+    a/ Điện trở tương đương của đoạn mạch nối tiếp: Rnt = R1+ R2
+    Điện trở tương đương của đoạn mạch song song: R//=
+   Theo đề ta có:
+   
+  Đặt   ( x>0)  ; Phương trình trên có thể viết lại: x+ 1/x = 4,25 ( * )
+   Giải phương trình (*) ta được: x=4 và x=1/4.
+   Vậy tỉ số giữa R1 và R2 là: 
+  b/ Ta có:  (1)                    R1+ R2= 100 (2)
+   Từ (1) và (2) ta suy ra R1=80 ; R2 20.
+13. Để đo điện trở của đèn , một học sinh đã mắc mạch điện như hình 7 
+   a/ hãy cho biết nhận xét của mình về mạch điện nàỵ
+H.7H.7    b/ Cho biết ampe kế chỉ 0,2A , vôn kế chỉ 5V.
+H.7
+H.7
+Ý nghĩa của các giá trị đó là gì?
+                                                                                                                      
+                                      Giải:                                             A               B         V               C
+   a/ HS đó đã mắc nhầm mạch điện.
+ Đúng ra phải mắc vôn kế song song với đèn                           A
+( giữa hai điểm A và B) còn ampe kế nối tiếp
+ với đèn ( giữa hai điểm B và C)
+   b/ Số chỉ của ampe kế cho biết cường độ dòng điện qua am pe kế chứ không phải cường độ dòng điện qua đèn.
+Số chỉ của vôn kế cho biết hiệu điện thế giữa hai điểm BC chứ không phải hiệu điện thế hai đầu của đèn.
+14. Cho một nguồn điện , một ampe kế , một điện trở R=50, một vật dẫn chưa biết điện trở X, các dây dẫn điện. ( Coi ampe kế có điện trở không đáng kể) . Hãy vẽ sơ đồ và nêu nguyên tắc xác định điện trở X.
+Giải:
+Sơ đồ mạch điện:
+H.8H.8H.8H.8     
+H.8
+H.8
+H.8
+H.8
+                            R                                                                                X
+                   A                X                                                            A                 R
+                  
+(2)
+   Trong 2 sơ đồ:
+    Trong sơ đồ (1) ta đo được cường độ dòng điện qua điện trở X là I 
+    Trong sơ đồ (2) ta đo được cường độ dòng điện qua điện trở R là Í.
+  Do hiệu điện thế 2 đầu đoạn mạch bằng nhau, nếu bỏ qua điện trở của ampe kế thì ta có: IX = ÍR => X = Í.R/ I
+15. Cho một nguồn 6V, 1 vôn kế, một điện trở R = 50, một khóa điện, một sợi dây đàn, các dây dẫn. Hãy xác định điện trở của dây đàn. Coi vôn kế có điện trở rất  lớn.
+Giải:
+         Sơ đồ mạch điện như hình 9
+H.9H.9
+H.9
+H.9
+             A          R           B             X               C                A           R                B           X          C
+                   V                                                                                                          V
+                         ( 1)                                                              (2)
++ Dùng vôn kế lần lượt đo HĐT UAB Giữa hai đầu điện trở R và UBC giữa hai đầu dây đàn có điện trở X.
++ Do vôn kế có điện trở rất lớn nên cường độ dòng điện qua nó không đáng kể. Do đó ta có thể coi như R và X mắc nối tiếp nhau, cường độ dòng điện qua chúng bằng nhaụ Ta có:
++ Làm thí nghiệm nhiều lần để tính giá trị trung bình.
+16. một dây dẫn đồng chất gồm 4 mẫu nối tiếp nhau, các mẫu này có chiều dài bằng nhau; nhưng tiết diện lần lượt là: 3mm2; 6mm2; 9mm2; 12mm2. Hiệu điện thế hai đầu dây dẫn bằng 120V. Tìm hiệu điện thế hai đầu mỗi mẫu .( Hình 10)
+Giải:
+   Gọi điện trở của các đoạn dây dẫn có tiết diện S1; S2; S3; S4 lần lượt là R1; R2; R3; R4 . Chọn R4=R.
+H.10H.10   Ta có:
+H.10
+H.10
+   
+   Bốn điện trở mắc nối tiếp nhau nên điện trở toàn mạch:
+    Rtm = R1 + R2 + R3 + R4 = 4R + 2R + 4R/3 + R = 25R/3.
+   Cường độ dòng điện qua mạch chính:    
+Hiệu điện thế hai đầu R1: U1 = R1.I = 57,6V
+Hiệu điện thế hai đầu R2: U2 = R2.I =28,8V
+Hiệu điện thế hai đầu R3: U3 = R3.I =19.2V
+Hiệu điện thế hai đầu R4: U4 = R4.I =14,4V
+17*. Một dây dẫn đồng chất tiết diện đều có điện trở R và có khối lượng m được cắt làm hai đoạn có khối lượng lần lượt là m1 và m2( với m1 = 4m2). Mắc hai đầu dây dẫn đó song song với nhaụ Hãy tính điện trở tương đương của mạch theo R.
+Giải:
+Từ công thức m = DV = DSl
+Gọi l; l1; l2 lần lượt là chiều dài các dây dẫn có khối lượng m; m1; m2 và D là khối lượng riêng của chúng.
+m = DV = DSl
+Mà m1 = 4m2 => m = m1 + m2 = 5m2 = 1.25m1
+l = 1,25l1
+Điện trở của dây l1: 
+Tương tự ta có: R2 = 0,2R
+Điện trở tương đương của đoạn mạch mắc song song:
+18. Cho mạch điện như hình 11. MN là một sợi dây đồng chất tiết diện đều có điện trở R = 10; Ro= 3 . Hiệu điện thế UAB= 12V. 
+Khi con chạy C ở vị trí mà MC=0,6m. Tính điện trở MC của biến trở, tính hiệu điện thế giữa hai điểm AC.
+Giải:
+Điện trở R1 của đoạn MC của biến trở:
+H.11H.11                                       M                            N 
+H.11
+H.11
+=> R1 = 0,6R = 0,6.10 = 6                                       R0                       C
+Điện trở R2 của đoạn CN của biến trở:
+R2 = R – R1 = 10 – 6 = 4                                                A         B
+Điện trở tương đương của đoạn AC
+Điện trở tương đương của đoạn mạch AB
+RAB = RAC + RCM = 2 + 4 = 6
+Cượng độ dòng điện qua mạch chính:   
+Hiệu điện thế giữa hai điểm AC:  UAC = RAC .I = 2.2 = 4V
+19. Một bóng đèn có ghi 220V-100W. Nếu mắc đèn vào nguồn điện có HĐT 110V thì công suất của tiêu thụ của đèn là bao nhiêụ
+Giải:
+     Điện trở của đèn:  R=
+Công suất tiêu thụ của đèn: P=
+20. Có 2 bóng đèn điện, trong đó: Đ1: 220V-75W ; Đ2 : 220V- 25W.
+ạ Nếu mắc nối tiếp 2 bóng đèn vào 2 điểm có HĐT 220V thì đèn nào sáng hơn. Tính công suất của mỗi bóng và công suất của đoạn mạch.
+ b. Nếu mắc song song chúng vào 2 điểm có HĐT 220V thì đèn nào sáng hơn Tính công suất của đoạn mạch.
+Giải:
+  Điện trở của đèn 1:   R1=
+   Điện trở của đèn 2:    R2=
+  ạ Khi mắc 2 đèn nối tiếp vào 2 điểm có HĐT 220V thì cường độ dòng điện qua mỗi đèn:
+    Int=
+  Cường độ dòng điện định mức của đèn 1:    I1đm=
+  Cường độ dòng điện định mức của đèn 2:    I2đm=
+  So sánh Int với I1đm và I2đm ta thấy:
+      Int<I1đm: Đèn 1 sáng mờ.        Int<I2đm: Đèn 1 sáng mờ
+  Công suất của đèn 1:      P1=R1I2= 645,3.(0,085)2=4,66W
+  Công suất của đèn 2:      P2=R2.I2= 1936.(0,085)2=14W
+  Công suất của đoạn mạch:Pnt=P1+P2=4,66+14=18,66W
+b.Khi mắc 2 đèn song song vào giữa 2 điểm có HĐT 220V
+  - Đèn 1 có công suất 75W ( Vì Utt=Uđm)  ; Đèn 2 có công suất 25W ( vì Utt=Uđm)
+Vậy đèn 1 sáng hơn đèn 2. Cả hai đèn đều sáng bình thường.
+Công suất tiêu thụ của đoạn mạch: P//=P1+P2= 75+25=100W
+21.Giữa 2 điểm M và N của một mạch điện có HĐT luôn không đổi U= 120V, người ta mắc 2 điện trở R1 và R2. Nếu mắc nối tiếp thì công suất tiêu thụ của đoạn mạch là 144W; Nếu mắc song song thì công suất tiêu thụ của đoạn mạch là 600W. Tính điện trở R1 và R2.
+Giải:
+  Công suất tiêu thụ của đoạn MN khi R1 và R2 mắc nối tiếp
+  Pnt= (1)
+  Công suất tiêu thụ của đoạn mạch khi R1//R2
+  P//=( 2)
+  Giải hệ phương trình (1) và (2) ta được:
+  R1=60  ; R2= 40   Hoặc R1=40   ; R2= 60 
+22.Cho mạch điện như hình 12. Trong đó:
+UAB=9V, Rđ1= 10    Rx là biến trở, Ampe kế có điện trở rất nhỏ
+ạ Khi Rx=2. Tính số chỉ của ampe kế và công suất tiêu thụ của đèn
+H.12AH.12Ab. Nếu thay đèn Đ1 bằng đèn Đ2(6V-3W)                                   A     B
+H.12
+A
+H.12
+A
+Muốn đèn Đ2sáng bình thường thì biến trở có 
+Giá trị R,x bằng bao nhiêụ                                                                                 A
+Giải:                         Đ1         RX
+ạ Theo hình vẽ ta có:                                                             
+  R=  Rđ1 +Rx=  10+2=  12
+ Cường độ dòng điện qua mạch:     I= 
+  Công suất tiêu thụ của đèn Đ1:     PĐ1=I2.Rđ1=(0,75)2.10=5,65W
+ b.Điện trở của đèn Đ2:                                Rđ2= 
+   Muốn đèn Đ2 sáng bình thường thì: I,=  IĐ2đm =
+Theo định luật ôm ta có: I,= 
+R,=Rđ2-R,x     =>R,x=R,-Rđ2     =18 -12=  6                   
+H.13H.1323. Cho mạch điện như hình 13.                                   Đ1               Đ2                           R3
+H.13
+H.13
+Trong đó: Đ1: 3V-6W  
+  Đ2: 6V-3W    R3 =  2                                               R1                        R2        
+Hai đèn sáng bình thường khi AB được                            A           B
+ mắc vào nguồn có hiệu điện thế 15V
+a/ Tính điện trở của mỗi bóng đèn và 
+cường độ dòng điện qua mỗi bóng.
+b/ Tính cường độ dòng điện qua R1, R2 và giá trị điện trở R1, R2.
+c/ Tính điện trở tương đương của toàn mạch.
+d/ Tính công suất tiêu thụ của toàn mạch.
+Giải:
+a/ Điện trở của mỗi bóng đèn:
+Vì 2 đèn sáng bình thường nên cường độ dòng điện qua mỗi đèn bằng cường độ dòng điện định mức của mỗi đèn. Cường độ dòng điện qua Đ1 và Đ2:
+b/ Hiệu điện thế 2 đầu R3:
+Vì 2 đèn sáng bình thường nên U1 = 3V; U2 = 6V
+U3 = U- ( U1+ U2) = 15 – ( 3 + 6) = 6V
+Cường độ dòng điện qua R3:  
+Cường độ dòng điện qua R1 và R2:
+IR1 = I – I1 = 3-2 = 1A        và  IR2 = I – I2 = 3 – 0,5 = 2,5A
+Giá trị điện trở R1 và R2:
+c/ Điện trở tương đương của toàn mạch:
+d/ Công suất tiêu thụ của toàn mạch: P = UI = 15.3 = 45W
+H.14H.1424. Cho mạch điện như hình 14.                                                     A          C
+H.14
+H.14
+Trong đó: đèn có ghi 6V-12W;                                        
+Điện trở R0 = 5 và biến trở.                                     A      R’                  B         Đ
+UAC = 10V. 
+Điện trở của dây nối và ampe kế rất nhỏ.                            R0
+a/ Con chạy đang ở vị trí ứng với R’ = 2. 
+Tính số chỉ của ampe kế , đèn sáng như thế nàỏ Công suất của đèn khi đó?
+   b/Muốn đèn sáng bình thường cần di chuyển con chạy về phía nàỏTínhR’lúc đó.
+   c/ Khi đèn sáng bình thường tính hiệu suất của mạch.
+Giải:
+Điện trở của bóng đèn:
+Điện trở của đoạn mạch AB:
+Điện trở tương đương của toàn mạch: RAC = RAB + R1 = 1,43 + 3 = 4,43
+Cường độ dòng điện định mức của đèn:
+Số chỉ của ampe kế là cường độ dòng điện qua mạch chính cũng là cường độ dòng điện qua đèn.
+Ta thấy IA> Iđm nên đèn sáng hơn định mức, có thể bị hỏng.
+Công suất thực tế của đèn: P’ = R1.I2A = 3. 2,262 = 15,3W
+b/ Muốn đèn sáng bình thường thì số chỉ của ampe kế là 2A
+   Điện trở của mạch AC lúc này là: 
+Điện trở của đoạn AB: RAB = RAC – R1 = 5-3 = 2
+   Điện trở của biến trở:
+ Phải dịch chuyển con chạy sao cho điện trở của biến trở tăng đến giá trị 3,33
+   c/ Công suất tiêu thụ của toàn mạch: P = UI = 10.2 = 20W
+Hiệu suất của mạch: 
+25. Cho một bóng đèn xe đạp Đ1: 6V-3W, một bóng đèn ô tô có ghi Đ2: 6V-3A, một nguồn điện có hiệu điện thế 6V, một khóa điện, các dây dẫn. Hãy lắp mạch điện thỏa mãn các yêu cầu sau:
+a/ Khi đóng khóa điện thì một đèn sẽ sáng bình thường còn đèn kia tắt hẳn, khi mở khóa điện thì đèn đang tắt sáng lên, đèn đang sáng không còn sáng nữạ
+b/ Khi đóng khóa điện thì một đèn sẽ sáng bình thường, đèn kia tắt hẳn, khi mở khóa điện thì đèn đang sáng chỉ hơi kém sáng đi một chút, đèn kia vẫn không sáng.
+c/ Khi đóng khóa điện thì cả hai đèn cùng sáng bình thường, khi mở khóa điện thì một trong hai đèn sẽ tắt đị
+Giải:
+a/ Sơ đồ mạch điện như hình 15.
++ Khi đóng khóa K thì đèn Đ1 tắt vì bị nối tắt còn đèn Đ2 sáng đúng mức.                                 
+                                              Đ1                        Đ2
+H.15H.15+ Khi ngắt khóa K thì đèn Đ1 nối tiếp
+H.15
+H.15
+ với đèn Đ2.                                                                               K
+Hiệu điện thế hai đầu đèn Đ1:
+H.16H.17H.16H.17U1 = R1.I =        (*)    Với:  ( I = )
+H.16
+H.17
+H.16
+H.17
+Điện trở của đèn Đ1 và đèn Đ2:                                                                                            Đ1                      Đ2 
+                                              K                         
+Thay giá trị (1) và (2) vào (*) ta được:                                   
+Hiệu điện thế hai đầu của đèn Đ2:                                                          K                  Đ1
+U2 = U- U1 = 6- 5,14 = 0,86V << 6V                                                          
+Vậy đèn Đ2 gần như không sáng còn đèn Đ1 thì sáng.                                 Đ2
+b/ Sơ đồ mạch điện như hình 16.                                                                     
++ Khi đóng khóa K thì đèn Đ2 tắt,còn đèn Đ1 sáng đúng mức.
++ Khi ngắt khóa K thì đèn Đ1 nối tiếp với đèn Đ2 như đã trình bày ở câu a           
+c/ Sơ đồ mạch điện như hình 17.                                                         
+26. Người ta dùng một bếp điện 220V-1000W để đun 250g nước ở nhiệt độ 250C cho đến khi hóa hơi hoàn toàn ở nhiệt độ sôị Hiệu suất của bếp là 0,85. Cho biết nhiệt dung riêng của nước là c= 4200J/KgK; nhiệt hóa hơi của nước là L = 2,3.106 J/Kg.
+a/ Tính thời gian cần thiết khi bếp điện sử dụng đúng hiệu điện thế định mức.
+b/ Khi hiệu điện thế sụt xuống 190V, thời gian cần thiết dùng để đun là bao nhiêủ
+Giải:
+a/ Nhiệt lượng cần cung cấp để đun nước tăng đến 1000C
+Q1 = mc( t2 – t1) = 0,25. 4200(100 – 25) = 78750J
+Nhiệt lượng cần cung cấp để nước hóa hơi hoàn toàn ở nhiệt độ sôị
+Q2 = mL = 0,25. 2,3.106 = 575000J
+Nhiệt lượng tổng cộng dùng để cung cấp cho 250g nước từ 250C đến khi hóa hơi hoàn toàn ở nhiệt độ sôi:
+Q = Q1 + Q2 = 78750 + 575000 = 653750J
+Nhiệt lượng do bếp tỏa ra trong thời gian t :  Q’ = Pt
+Nhiệt lượng có ích nườc thu vào: Qi = Q’H = PtH = 1000.0,85t= 850t 
+Theo định luật bảo toàn và chuyển hóa năng lượng, ta có:
+Q = Qi   850t = 653750    => t = 769s
+b/ Công suất bếp tỏa ra khi hiệu điện thế Ú = 190V
+Tương tự như câu a ta suy ra: t’= 1031s
+27. Một dây dẫn được nhúng ngập trong 1 lít nước có nhiệt độ ban đầu 200C. Hỏi sau thời gian bao lâu nước sôị Biết hiệu điện thế giữa hai đầu dây là 220V và cường độ dòng điện qua dây là 5Ạ ( Bỏ qua mất mất nhiệt do tỏa ra môi trường xung quanh và do ấm thu).
+Giải:
+Nhiệt lượng tỏa ra trên dây dẫn khi có dòng điện chạy qua:
+Qtỏa = RI2t = UIt = 220.5.t = 1100t
+Nhiệt lượng nước thu vào để tăng nhiệt độ từ 200C đến 1000C
+Qthu = mc(t2-t1) = 1.4200.(100-20) = 336000J
+Theo phương trình cân bằng nhiệt, ta có:
+Qtỏa = Qthu     1100t = 336000J  => t = 305s 
+28. Một bếp điện có 2 dây điện trở R1=4; R2= 6. Nếu sử dụng dây thứ nhất để đun nước thì sau thời gian t1= 10ph nước sôi; nếu sử dụng dây thứ hai thì sau thời gian t2=? nước sôỉ
+a/ Nếu hai dây trên được mắc nối tiếp nhau thì sau  bao lâu nước sôỉ
+b/ Nếu hai dây trên được mắc song song thì sau bao lâu nước sôỉ
+( Bỏ qua mất mát nhiệt trong các trường hợp trên lượng nước dùng để đun như nhau và hiệu điện thế nguồn không thay đổi)
+Giải:
+Nhiệt lượng bếp tỏa ra khi dùng điện trở R1:  Q1 = 
+Nhiệt lượng bếp tỏa ra khi dùng điện trở R2:  Q2 = 
+Theo đề , vì lượng nước không đổi và bỏ qua mất mát nhiệt . Từ (1) và (2) ta có:
+    
+a/ Khi dùng R1 nối tiếp R2:
+Gọi Q3 là nhiệt lượng tỏa ra khi R1 nối tiếp R2, ta có : Q3 = 
+Từ (1) và (3) ta có:
+b/ Gọi Q4 là nhiệt lượng tỏa ra khi R1//R2, ta có: Q4 = 
+Từ (1) và (4) ta có:
+29. Một bếp điện mắc vào nguồn điện có hiệu điện thế 110V thì cường độ dòng điện qua bếp là 4Ạ
+a/ Nếu cắt ngắn dây điện trở đi một nửa và mắc vào hiệu điện thế trên thì công suất của bếp là bao nhiêủ
+b/ Nếu cắt đôi dây điện trở rồi chập lại hai đầu ( mắc song song) và vẫn mắc vào nguồn điện có hiệu điện thế trên thì công suất của bếp là bao nhiêủ
+Giải:
+Gọi P là công suất của bếp khi chưa cắt dây điện trở, ta có:
+P = UI = 110.4 = 440W
+a/ Gọi P1 là công suất của bếp khi cắt ngắn dây điện trở đi một nửạ( R1= R/2)
+P1= 
+P1 = 2P = 2.440W = 880W
+b/ Gọi P2 là công suất của bếp khi mắc hai nửa dây điện trở song song vào nguồn điện 110V, ta có:
+P2 = 4P = 4.440W = 1760W
+30. Giữa hai điểm có hiệu điện thế U = 220V người ta mắc song song hai dây kim loạị Cường độ dòng điện qua dây thứ nhất là I1 = 4A và qua dây thứ hai là I2 = 2A
+a/ Tính công suất của đoạn mạch trên.
+b/ Để công suất của đoạn mạch là 200W, người ta phải cắt bỏ một đoạn dây thứ hai rồi mắc lại như cũ. Tính điện trở của phần dây bị cắt bỏ.
+Giải:
+a/ Công suất của đoạn mạch:
+P = P1 + P2 = UI1 + UI2 = U( I1+I2) = 220V( 4A+2A) = 1320W
+b/ Gọi P’2 là công suất của đoạn dây thứ hai còn lại
+            P’ là công suất của đoạn mạch sau khi cắt bỏ 1 đoạn dây thứ haị
+Ta có: P’ = P1 + P’2  => P’2 = P’ – P1 = 2000 – 220.4 = 1120W
+Điện trở của dây thứ hai còn lại mắc trong mạch:
+Điện trở Rb của phần dây thứ 2 bị cắt bỏ:Rb = R2 – R’2= 220/2 – 43,21 = 66,79 .
+31. Một đèn compact loại có công suất 15W được chế tạo có độ sáng bằng đèn ống loại 40W thường dùng. Một xí nghiệp sử dụng 300 bóng đèn. Hỏi nếu sử dụng đèn ống này trung bình mỗi ngày 10 giờ thì trong 365 ngày sẽ giảm được bao nhiêu tiền điện khi sử dụng đèn compact loại 15W thay cho đèn 40W. Cho rằng giá tiền điện là 2350 đồng/KWh
+Giải:
+Điện năng 1 đèn ống công suất 40W tiêu thụ trong 1 năm
+  A1 = P1.t = 40.10.365 = 146000Wh = 146KWh
+Điện năng 1 đèn compact công suất 15W tiêu thụ trong 1 năm:
+A2 = P2.t = 15.10.365 = 54750Wh = 54,75KWh
+Tổng số điện năng xí nghiệp tiết kiệm được trong 1 năm khi sử dụng đèn compact:
+A = (A1 – A2). 300 = ( 146 – 54,75 ).300 = 27375kWh
+Số tiền điện tiết kiệm được:T = Ạ 1350 = 27375.1350 = 36 956 250 đồng                 
+                                                                                                          R1                                   R2
+H.18H.1832. Cho mạch điện như hình 18.                                                        C
+H.18
+H.18
+Trong đó: R1 = 10; R2= 20;                            A                           A                            B
+R3 = 30; R4 = 60.UAB= 24V                                               R3                       R4
+Tính cường độ dòng điện qua các                                                      D
+điện trở, số chỉ ampe kế. Cho ampe kế lý tưởng.
+Giải:
+Vì ampe kế lý tưởng nên điện trở của đoạn CD bằng 0. Lúc này mạch điện AB được xem như gồm ( R1//R3)nt ( R2//R4)
+Điện trở của đoạn mạch AB:
+RAB= RACD + RCDB   = 
+Cường độ dòng điện qua mạch chính:
+Hiệu điện thế hai đầu đoạn AC: UAC = RAC.I = 7,5.1,07 = 8V
+Hiệu điện thế hai đầu đoạn CB:  UCB = UAB – UAC = 24-8 = 16V
+Cường độ dòng điện qua R1; R2; R3; R4:
+Giả sử tại A là cực dương và dòng điện chạy từ A sang B. Tại điểm C ta có:
+I1 = IA + I2  => IA = I1 – I2 = 0,8 – 0,8 =0Ạ
+Như vậy số chỉ của ampe kế là 0Ạ
+* Chú ý: Đối với những mạch điện có dạng như trên người ta gọi là mạch cầu cân bằng. Cách nhận biết mạch cầu cân bằng:   theo hình vẽ trên, nếuthì mạch cầu này là mạch cầu cân bằng. Ở mạch cầu cân bằng thì hiệu điện thế giữa hai điểm C và D bằng 0 nên không có dòng điện chạy qua đoạn CD.
+H.19H.1933. Cho mạch điện như hình 19
+H.19
+H.19
+Trong đó:r1=4; r2=6; Đ1: 6V-3W;                                  A         B
+Đ2:3V-1,5W; RA=0; ampe kế chỉ 0,5ẠTính:
+a/ Cường độ dòng điện qua r2 và r1.                 r1                     r2                      Đ2
+b/ HĐT hai đầu đèn Đ2; r2; r1 và toàn mạch.             C                                                    D
+Đèn có sáng bình thường không? Tại saỏ                           A                          Đ1
+Giải:
+Điện trở của bóng đèn 1 và 2:
+Hiệu điện thế hai đầu đoạn CD: UCD = R1.IA = 12.0,5 = 6V
+Cường độ dòng điện qua r2 và đèn Đ2: I2 = 
+Cường độ dòng điện qua mạch chính cũng chính là cường độ dòng điện qua r1:
+I = I1 + I2 = 0,5 + 0,5 = 1A
+b/ Hiệu điện thế hai đầu r1: Ur1 = UAC = r1.I = 4.1 = 4V
+    Hiệu điện thế hai đầu r2:  Ur2 = r2.I2 = 6.0,5 = 3V
+    Hiệu điện thế hai đầu đèn Đ2: UĐ2 = R2.I2 = 6.0,5 = 3V
+    Hiệu điện thế hai đầu đoạn mạch AB: UAB = UAC + UCB = 4 + 6 = 10V
+c/ Cường độ dòng điện định mức của đèn 1 và đèn 2:
+Ta thấy I1dm = IA và I2dm = I2 . vậy hai đèn sáng bình thường.
+34*. Hai điện trở, R = 4 và r mắc nối tiếp vào hai điểm có hiệu điện thế U = 24V. Khi thay đổi giá trị của r thì công suất tỏa nhiệt trên r thay đổi và đạt giá trị cực đạị Tính giá trị cực đại đó. 
+Giải:
+Cách 1:
+Gọi I là cường độ dòng điện chạy trong mạch.
+Hiệu điện thế hai đầu điện trở r: Ur = U – RI = 24 – 4Ị
+Công suất tiệu thụ trên r: P = Ur.I = ( 24- 4I) Ị
+4I2 – 24I + P = 0
+Vì phương trình luôn có nghiệm nên: 
+242-4.4P 
+Cách 2:
+Cường độ dòng điện qua mạch gồm hai điện trở mắc nối tiếp:
+Công suất tỏa nhiệt trên r:
+P = rI2 =  (1)
+Dựa vào bất đẳng thức Côsi: 
+=> 
+Khi mẫu số của biểu thức (1) cực tiểu thì P cực đại:Pmax=576/(8+8) = 36W
+Từ (1) ta suy ra: r2 + ( 8 – 576/P)r + 16 = 0  (2)
+Vì phương trình (2) luôn luôn có nghiệm số nên: 
+( 8 – 576/P )2 - 64
+35. Điện trở R mắc vào hiệu điện thế U = 160V không đổị Tiêu thụ công suất P = 320W.
+a) Tính R và cường độ dòng điện qua R.
+b) Thay R bằng hai điện trở R1 và R2 mắc nối tiếp. R1 = 10 khi này công suất tiêu thụ của R2 là P2 = 480W. Tính I qua R2 và giá trị của R2.
+Biết R2 chịu được dòng điện không quá 10Ạ
+Giải:
+a/ Cường độ dòng điện đi qua R: 
+    Điện trở R cần tìm: 
+b/ Cách 1:
+Cường độ dòng điện qua R1: 
+Công suất tỏa nhiệt trên R2:   P2 = R2.I2 =     (1)
+3R22 – 100R2 + 300 = 0
+R2 = 30. Hoặc R2 = 3,33.
+Nếu R2 = 30 => I = 4A < 10A nhận kết quả nàỵ
+Nếu R2 = 3,33 => I = 12A kết quả này không phù hợp ( loại)
+Cách 2:
+Gọi I là cường độ dòng điện chạy qua mạch.
+Hiệu điện thế hai đầu R2: U2 = U – R1I = 160 – 10I
+Công suất tiêu thụ trên R2: P2 = U2I = (160 – 10I)I = 480
+         I2 – 16I + 48 =0  (2)
+Nghiệm của phương trình(2) là:I1 = 4A (nhận kết quả này); hoặc I1 = 12A ( loại)
+36. Cho mạch điện như hình 20.                                            U
+H.20H.20Trong đó; U = 120V; r = 1,25.                                                     r
+H.20
+H.20
+Bốn bóng đèn giống nhau, mỗi
+ bóng có công suất P = 115W;                                                        4Đ 
+các đèn đó sáng bình thường. 
+Các đèn đó phải mắc thế nàỏ
+ Tính hiệu điện thế và cường độ dòng điện định mức của mỗi đèn. 
+Giải:
+ Công suất tiêu thụ của bốn đèn khi sáng bình thường: P = 4.115 = 460W
+Gọi I là cường độ dòng điện qua mạch.
+Hiệu điện thế hai đầu điện trở R của mỗi bóng đèn: Uđ = U – rI = 120 – 1,25I
+Công suất tiêu thụ của bốn bóng đèn: P = UđI = ( 120 – 1,25I ) I = 460
+=> I2 – 96I + 368 = 0     ( 1)
+Nghiệm của phương trình trên là: I = 4A và Í = 92Ạ
+Với I = 4A   => cường độ dòng điện qua mỗi bóng đèn là 1A  và Uđ = 115V (nhận kết quả này).
+Với Í=92A =>C. độ dòng điện qua mỗi  đèn là 23A vàUđ=6V(loại kết quả này)
+Vậy 4 bóng đèn được mắc song song với nhaụ 
+H.21H.21                                                                                               R1                   M                   R3
+H.21
+H.21
+37. cho mạch điện như hình 21
+Trong đó: U=12V; R1=6; R2=6;                      A                                                                     B
+R3=12; R4=6                                                                   R2                         N                 R4
+a/ Tính cường độ dòng điện qua mỗi điện trở 
+và hiệu điện thế hai đầu mỗi điện trở.                                      +       -
+b/ Nối M và N bằng một vôn kếV ( có điện trở          
+ rất lớn) thì vôn kế chỉ bao nhiêủ Cực dương 
+của vôn kế nối với điểm nàỏ
+c/ Nối Mvà N bằng một vôn kế A ( có điện trở không đáng kể thì ampe kế chỉ bao nhiêủ
+Giải:
+a/ Cường độ dòng điện qua nhánh R1-R3 và nhánh R2-R4
+Hiệu điện thế hai đầu điện trở R1:UAM = I1,2. R1= 2/3 . 6 = 4V
+Hiệu điện thế hai đầu điện trở R3:UMB = I1,2. R3 = 2/3 . 12 = 8V
+Hiệu điện thế hai đầu điện trở R2: UAN = I2,4. R2 = 1.6 = 6V
+Hiệu điện thế hai đầu điện trở R4: UNB = I2,4 . R4 = 1.6 = 6V
+b/ Nối M và N bằng một vôn kế V có
+H.22H.22 điện trở rất lớn nên dòng điện qua vôn                           R1                           M      R3   
+H.22
+H.22
+ kế coi như không đáng kể ( hình 22),                  A                      V                     B
+â dòng điện qua các điện trở như câu a
+Ta có: UAM = UAN + UNM                                                     R2               N            R4
+=> UNM= UAM – UAN = 4 – 6 = -2V                                   +      -
+     UNM= -2V hay UMN = 2V
+Vậy vôn kế chỉ 2V và UMN= 2V> 0 
+Nên cực dương của vôn kế mắc vào điểm M.( Ta có thể tính cách khác):
+ UMN = UMA + UAN = -UAM + UAN hoặc UMN = UMB + UBN = UMB - UNB  )
+c/ Khi nối M và N bằng  am pe kế A  ( Hình 23) có điện trở rất nhỏ thì có thể chập M với N.Ta có:
+Điện trở tương đương của  đoạn AM và đoạn MB:
+H.23H.23Điện trở tương đương của đoạn AB                                    R1                    M         R#
+H.23
+H.23
+RAB = R1,2 + R3,4 = 3 + 4 = 7                                                     
+Cường độ dòng điện qua mạch chính:              A                           A                               B
+                                                               R2                N           R4
+Hiệu điện thế giữa hai điểm A và M:
+UAM = Ị R1,2 = 1,7.3 = 5,1V
+Cường độ dòng điện chạy qua R1:
+Hiệu điện thế giữa M và B : UMB = Ị R3,4 = 1,7 . 4 = 6,8V
+Cường độ dòng điện qua R3:
+Do I1>I3 nên dòng điện đến M sẽ rẽ một phần qua ampe kế và một phần qua R3.
+Ta có I1 = Ia + I3 => Ia = I1 –I3 = 0,29A
+Vậy ampe kế chỉ 0,29A và chiều dòng điện qua ampe kế đi theo chiều từ M đến N.
+38. Cho mạch điện như hình 24
+H.24H.24Trong đó: R1=R4=4; R2=2; R3=8;                              R1                 M          R3
+H.24
+H.24
+                 R5=10; UAB=12V.                                                          R5
+Điện trở các dây nối và khóa K không đáng kể.       A                                                         B
+Tính cường độ dòng điện qua mỗi điện trở khi;                             K
+a/ K mở.                                                                                   R2             N           R4
+b/ K đóng.
+Giải:
+a/ Khi K mở:
+Mạch điện bị hở ở khóa K, cường độ dòng điện qua R5 bằng 0
+Cường độ dòng điện qua R1; R2; R3; R4.
+b/ Khi K đóng:
+Theo câu a, khi K mở ta có hiệu điện thế hai đầu R1; R2 là:
+UR1 = UAM = I1.R1 = 1.4 = 4V   và UR2 = UAN = I2.R2 = 2.2 = 4V
+Hiệu điện thế giữa hai điểm M và N: UMN = UMA + UAN = -UAM + UAN = 0
+Vậy khi đóng khóa K thì cường độ dòng điện qua các điện trở không thay đổị
+Ta có thể giải theo cách khác:
+UMN = UMB + UBN = UMB –UNB =0
+UMB = UNB
+Vậy:
+Hay mạch điện trên là mạch cầu cân bằng, dòng điện không qua cầu . Trong    truờng hợp này, nếu thay R5 bằng vôn kế hay ampe kế thì chúng đều chỉ giá trị 0.
+39*. Cho mạch điện như hình vẽ, trong đó: 
+R1=5; R2=2; R3=10; R4=30;                                      R1                C          R2
+R5=5; UAB=15V.
+     Tính cường độ dòn điện qua mỗi điện trở          A                                    R5                                                 B
+Và điện trở tương đương của đoạn mạch AB
+Giải:                                     R3              D            R4
+   Giả sử dòng điện chạy trong mạch có chiều
+ như hình vẽ. Tại nút C và D ta có:
+I1=I2+I5  (1)                                          I1    R1       C  I2     R2
+I4=I3+I5                  I5
+Theo đề ta có: UAB = VA-VB =U =15V                    A                                     R5                                                 B
+Giả sử ta chọn VB =0; suy ra: VA=Ụ
+Aùp dụng công thức định luật Ôm ta có:                             I3      R3          D    I4       R4
+I1=2A  ;  I2= 2,5A  ;  I3= 0,75A  ;  I4= 0,25A  ; I5 = 0,5A
+Cường độ dòng điện chạy trong mạch chính:   I = I1+I3 = 2 + 0,75 = 2,75A
+Điện trở tương đương của đoạn mạch AB:
+40. Một bóng đèn có ghi 120V-60W được sử dụng với mạng điện có hiệu điện thế 220V.
+a/ Cần phải mắc điện trở R với đèn ra sao để đèn sáng bình thường. Tính giá trị của điện trở R.
+b/ Tìm hiệu suất của cách sử dụng điện trên.
+Giải:
+a/ Do Uđm của đèn > U của mạng điện nên ta phải mắc điện trở R nối tiếp với đèn. Khi đèn đã sáng bình thường, dòng điện qua mạch  đúng bằng dòng điện định mức của đèn.
+Điện trở toàn mạch lúc này: 
+Giá trị điện trở mắc nối tiếp với đèn:
+R= Rtđ – Rđ    R = Rtđ - 
+b/ Công suất có ích là công suất tiêu thụ của đèn: Pi = Pđm = 60W
+Công suất toàn phần là công suất của mạch điện: Ptp = 220 . 0,5 = 110W
+Hiệu suất của mạch điện:H = 
+41. Để mắc một bóng đèn vào nguồn điện có hiệu điện thế lớn hơn giá trị ghi trên đèn, ta có thể dùng một trong hai sơ đồ saụ Biết cả hai trường hợp đèn đều sáng bình thường. Sơ đồ nào có hiệu suất lớn hơn?
+H.25H.25 
+H.25
+H.25
+                
+                                    ( a )                                      ( b )
+Giải:
+ Công suất của đèn là phần công suất có ích : Pi = Uđ.Iđ
++ Theo sơ đồ a: 
+Gọi x là phần điện trở mắc song song với đèn (Hình a), H1 là hiệu suất của sơ đồ a
+Công suất của mạch điện:
++ Theo sơ đồ b:
+ Gọi P’ là công suất của mạch điện ; H2 là hiệu suất của sơ đồ b:
+H2 = 
+Từ (1) và (2)  => 
+=> H1 < H2  . Vậy sơ đồ b có hiệu suất lớn hơn.
+42. Dùng bếp điện để đun nước, nếu mắc bếp vào nguồn điện có hiệu điện thế U1= 120V thì thời gian nước sôi là t1= 10 phút; Nếu mắc bếp với U2=80V thì thời gian nước sôi là t2=20 phút.
+Hỏi nếu nối bếp vào nguồn U3=60V thì nước sôi sau thời gian bao lâủ Cho biết nhiệt lương hao phí tỉ lệ với thời gian đun nước.
+Giải:
+Gọi Q là nhiệt lượng cần để đun nước sôi, k là hệ số tỉ lệ của sự hao phí nhiệt ứng với 3 trường hợp. Ta có:
+Thay số ta được: t3 = 30,76 ph  
+H. 26H. 26                                                                                                        Đ1        C    Đ2
+H. 26
+H. 26
+43*.Cho mạch điện như hình vẽ ( Hình 26).                 A                                 Đ3                           B
+Trong đó:Đ1:6V-6W; Đ2:12V-6W.
+Khi mắc hai điểm A và B vào hiệu                                          Đ4                     D    Đ5
+ điện thế U0 thì các đèn sáng bình
+ thường. Hãy xác định:
+a/ Hiệu điện thế định mức của các đèn Đ3; Đ4; Đ5.
+b/ Công suất tiêu thụ của cả mạch. Biết công suất tiêu thụ của Đ3 là 1,5W và tỉ số công suất định mức của Đ4/Đ5 là 5/3.
+Giải:
+a/ Giả sử điểm A nối với cực dương, B nối với cực âm của nguồn điện nên dòng điện I1; I2; I4; I5  trên nhánh ACB và ADB có chiều từ A đến B.
+Cường độ dòng điện chạy qua đèn Đ1 và Đ2 là:
+Vì I1>I2 nên dòng điện qua đèn Đ3 phải có chiều từ C đến D:
+I1 = I2 + I3  => I3 = I1 – I2 = 1 – 0,5 = 0,5Ạ
+Vậy hiệu điện thế định mức của đèn Đ3 là:  U3 =
+Ta có: UAD = UAC + UCD  => U4 = U1 + U3 = 6 + 3 = 9V
+Và UDB = UAB – UAD  => U5 = ( U1 + U2 ) – U4 = ( 6 + 12 ) – 9 = 9V
+Vì hai đèn sáng bình thường nên hiệu điện thế định mức của  đèn Đ4 và Đ5 là 9V
+b/ Vì hai đèn có cùng hiệu điện thế định mức nên tỉ số công suất của chúng bằng tỉ số cường độ dòng điện định mức của chúng:
+   ( Vì I5>I4 )  (1)
+Mặc khác ta có: I5 = I4 + I3  => I5 = I4 + 0,5  (2)
+Từ (1) và (2) ta suy ra: I4 = 0,75A  và I5 = 1,25A
+Suy ra P4 = U4.I4 = 9.0,75 = 6,75W   và P5 = U5.I5 = 11,25W.
+Công suất tiêu thụ của cả mạch: 
+P = P1 + P2 + P3 + P4 + P5 =6 + 6 + 1,5 + 6,75 + 11,25 = 31,5W
+H.27H.2744*. Cho mạch điện như hình 27
+H.27
+H.27
+Trong đó U = 16V; R0 = 4; R1= 12                                             + U -
+Rx là giá trị tức thời của một biến trở đủ 
+lớn, ampe kế A và dây nối có điện trở không                         A
+ đáng kể.
+a/ Tính Rx sao cho công suất tiêu thụ trên                                   R0
+ nó bằng 9W và tính hiệu suất của mạch điện.                                  R1
+ Biết rằng tiêu hao năng lượng trên R1 và Rx 
+là có ích; trên R0 là vô ích.
+b/ Với giá trị nào của Rx thì công suất tiêu thụ                              Rx
+ trên nó là cực đạị 
+Giải:
+a/ Tính Rx
+Công suất tiêu thụ trên Rx:
+Thay Px = 9W và giải phương trình (1) ta được: Rx = 9 và R’x = 1 ( vì hai nghiệm đều dương  nên nhận cả hai nghiệm)
++ Với Rx = 9 thì R1x= 36/7 và Rtđ = 64/7 ; I = 7A/ 4 ; Ix = 1Ạ
+Hiệu suất của mạch điện:
++ 
+b/ Tính Rx để Px cực đại:
+Từ biểu thức (1) ta suy ra:
+H.28H.2845. Một dây đồng tiết diện đều được uốn thành một hình vuông ABCD như hình 28. Hãy so sánh điện trở của khung dây đó trong hai trường hợp sau:  B            C               B            C
+H.28
+H.28
+a/ Dòng điện đi vào ở điểm A và đi ra khỏi điểm D.                     
+b/ Dòng điện đi vào ở điểm A và đi ra ở điểm C                           A            D                  A           D 
+ Giải:                                            
+Vì dây đồng chất tiết diện đều nên điện trở của dây tỉ lệ 
+thuận với chiều dài, do đó điện trở của các cạnh hình vuông bằng nhaụ Gọi điện trở của mỗi cạnh hình vuông là r .
+Ở sơ đồ a: Vì nhánh AD có điện trở r nên  RAD < r (1)
+Ở sơ đồ b: RAC = 2r/2 = r   (2)
+So sánh (1) và (2) ta có: RAD < RAC
+46. Một dây đồng tiết diện đều có điện trở R=4 được uốn thành một khung tròn. Dòng điện đi vào ở điểm A và đi ra ở điểm B như hình 29. Hãy xác định vị trí của A và B sao cho:
+H.29H.30H.29H.30a/ Điện trở của khung tròn RAB = 0,75.                            A
+H.29
+H.30
+H.29
+H.30
+b/ Điện trở của khung tròn lớn nhất.                                                    B
+Tính điện trở lớn nhất đó.
+Giải:
+Gọi điện trở của cung AmB là r                                          A            m             B
+Thì điện trở của cung AnB là (4-r)                                                o
+Theo hình 30, điện trở của khung tròn:                                          n           B      
+Đoạn AmB bằng ¼  hoặc ¾  khung tròn ( RAmB=R/4 hoặc RAmB= 3R/4.)
+Hay nói cách khác: Góc AOB bằng 900
+b/ Vì RAB =  nên RAB(max) khi :( r.( 4-r))max
+Vì r+(4-r)=4 nên ( r.( 4-r))max   khi: r = (4-r) => r = 2
+RABmax = 
+H.31H.31Đoạn AmB bằng 1/2 khung tròn ( RAmB= R/2).
+H.31
+H.31
+Hay nói cách khác:  Góc AOB bằng 1800
+47*. Cho mạch điện như hình vẽ. Cho biết
+ U=6V; R1=6; R2=2 và Rx là một biến trở.
+ạ Tính giá trị của Rx để công suất tiêu thụ ở Rx 
+là 3W.                                                                                        R2
+b. Với giá trị nào của Rx thì công suất tiệu thụ                       C            R1                           D
+ ở Rx là lớn nhất? Tính giá trị lớn nhất đó.
+( Đề thi HSG cấp tỉnh năm học 2005 – 2006)                                   Rx
+C. BÀI TẬP TỰ LUYỆN
+1. Có 2 dây dẫn , một dây làm bằng Nikêlin còn dây kia làm bằngNicrôm. Dây Nilêlin có tiết diện gấp 0,5 lần dây Nicrôm và có chiều dài gấp 0,75 lần dây Nicrôm. Tính điện trở của dây Nicrôm. Biết dây Nikêlin có điện trở 10.
+2. Cho mạch điện như hình vẽ 
+AR1R2R3R5R4BAR1R2R3R5R4BTrong đó:
+A
+R1
+R2
+R3
+R5
+R4
+B
+A
+R1
+R2
+R3
+R5
+R4
+B
+R1=4,5;   R2=15;R3=12
+R4=6;      R5=6
+Hiệu điện thế 2 đầu R3 là 6V.
+Tính cường độ dòng điện qua mỗi
+ điện trở và hiệu điện thế 2 đầu đoạn AB
+   

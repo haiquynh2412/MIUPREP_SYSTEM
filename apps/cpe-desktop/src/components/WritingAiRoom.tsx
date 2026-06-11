@@ -1,8 +1,13 @@
 import { useState } from 'react';
-import { CPE_WRITING_SAMPLES } from '@miuprep/content';
+import { CPE_WRITING_SAMPLES } from '@miuprep/content/src/mocks/cpe-writing-speaking-samples';
+import type { WritingFeedback } from '@miuprep/db';
+
+type WritingCriterion = WritingFeedback['criteria'][number];
+type WritingCorrection = WritingFeedback['corrections'][number];
+type SentenceUpgrade = NonNullable<WritingFeedback['sentenceUpgrades']>[number];
 
 interface WritingAiRoomProps {
-  writingFeedback: any;
+  writingFeedback: WritingFeedback | null;
   isAiLoading: boolean;
   aiErrorMsg: string | null;
   runWritingAiEvaluation: (essay: string, taskNum: 1 | 2, track: 'ielts' | 'cpe' | 'cae', prompt: string) => Promise<void>;
@@ -375,7 +380,7 @@ export default function WritingAiRoom({
                 Điểm Chi Tiết Theo Tiêu Chí C2 Proficiency Writing Rubric
               </h4>
               <div className="flex flex-col gap-4">
-                {writingFeedback.criteria?.map((crit: any) => (
+                {writingFeedback.criteria?.map((crit: WritingCriterion) => (
                   <div
                     key={crit.criterionName}
                     className="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col text-xs text-left"
@@ -457,7 +462,7 @@ export default function WritingAiRoom({
               <div className="flex flex-col gap-4 text-left">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide m-0">Bản Đồ Nâng Cấp Câu Chi Tiết (+0.5 Score Strategy)</h4>
                 <div className="flex flex-col gap-4">
-                  {writingFeedback.sentenceUpgrades.map((upg: any, idx: number) => (
+                  {writingFeedback.sentenceUpgrades.map((upg: SentenceUpgrade, idx: number) => (
                     <div key={idx} className="border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col">
                       <div className="grid grid-cols-1 sm:grid-cols-2 border-b">
                         {/* Original sentence panel (Red tint) */}
@@ -486,7 +491,7 @@ export default function WritingAiRoom({
             <div className="flex flex-col gap-3 text-left">
               <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide m-0">Các Lỗi Ngữ Pháp & Từ Vựng Phát Hiện</h4>
               <div className="flex flex-col gap-2.5">
-                {writingFeedback.corrections?.map((c: any, idx: number) => (
+                {writingFeedback.corrections?.map((c: WritingCorrection, idx: number) => (
                   <div key={idx} className="border border-slate-100 bg-slate-50/50 p-4 rounded-lg text-xs leading-normal flex flex-col gap-1.5">
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <span className="font-bold text-slate-500">Lỗi sai:</span>

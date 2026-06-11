@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-04T06:21:40.833Z",
+  "generatedAt": "2026-06-04T10:30:08.955Z",
   "sourceSummary": {
     "mathUnits": 28,
     "mathQuestions": 485,
     "miumathSourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\apps\\miumath-app\\public\\data\\questions_db.json",
-    "englishTests": 93,
+    "englishTests": 99,
     "englishLearningReadyQuestions": 110,
     "learners": 2,
     "telemetryEvents": 4
   },
   "report": {
     "schemaVersion": "miuprep_beta_readiness_v1",
-    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "generatedAt": "2026-06-04T10:30:08.955Z",
     "scopes": [
       {
         "scopeId": "math_9_internal",
@@ -62,7 +62,7 @@
         "practice_attempt": 14
       },
       "firstAt": "2026-06-03T08:00:00.000Z",
-      "lastAt": "2026-06-04T06:21:40.833Z",
+      "lastAt": "2026-06-04T10:30:08.955Z",
       "detail": "Only seeded/synthetic learning events are available; collect live learner evidence before widening beta or changing graph edges."
     },
     "diagnosticAudit": {
@@ -117,7 +117,7 @@
       "evidenceSource": "synthetic",
       "learnerReports": [
         {
-          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "generatedAt": "2026-06-04T10:30:08.955Z",
           "summary": {
             "trackedRows": 2,
             "changedStatusRows": 0,
@@ -129,7 +129,7 @@
           "recommendationPolicy": "v1_only"
         },
         {
-          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "generatedAt": "2026-06-04T10:30:08.955Z",
           "summary": {
             "trackedRows": 2,
             "changedStatusRows": 0,
@@ -153,7 +153,7 @@
       "evidenceSource": "synthetic",
       "learnerReports": [
         {
-          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "generatedAt": "2026-06-04T10:30:08.955Z",
           "summary": {
             "totalItems": 8,
             "calibratedCandidates": 0,
@@ -165,7 +165,7 @@
           "highStakesPlacementEnabled": false
         },
         {
-          "generatedAt": "2026-06-04T06:21:40.833Z",
+          "generatedAt": "2026-06-04T10:30:08.955Z",
           "summary": {
             "totalItems": 6,
             "calibratedCandidates": 0,
@@ -368,7 +368,7 @@
   },
   "runPlan": {
     "id": "internal-beta-2026-06-04",
-    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "generatedAt": "2026-06-04T10:30:08.955Z",
     "status": "watch",
     "cohorts": [
       {
@@ -426,9 +426,9 @@
   },
   "changeImpact": {
     "schemaVersion": "miuprep_change_impact_v1",
-    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "generatedAt": "2026-06-04T10:30:08.955Z",
     "sourceLabel": "internal_beta_run_export",
-    "previousGeneratedAt": "2026-06-04T06:18:53.175Z",
+    "previousGeneratedAt": "2026-06-04T06:21:40.833Z",
     "status": "watch",
     "summary": {
       "totalItems": 14,
@@ -596,7 +596,7 @@
   },
   "weeklyReview": {
     "schemaVersion": "miuprep_weekly_beta_review_v1",
-    "generatedAt": "2026-06-04T06:21:40.833Z",
+    "generatedAt": "2026-06-04T10:30:08.955Z",
     "weekOf": "2026-06-04",
     "status": "watch",
     "cohortReviews": [

@@ -1,0 +1,263 @@
+{
+  "generatedAt": "2026-06-07T14:27:35.852Z",
+  "folderFiles": 86,
+  "importedSources": 79,
+  "missingSources": [
+    {
+      "rel": "bai-toan-thuc-te-ve-xac-suat-co-dieu-kien-toan-12-vo-cong-truong.pdf",
+      "imported": false,
+      "cls": "defer: THPT/Toan 12 hoac ngoai pham vi Toan 10"
+    },
+    {
+      "rel": "chuyen-de-nguyen-ly-cuc-han-huynh-kim-linh.doc",
+      "imported": false,
+      "cls": "can xu ly bang Word/OCR truoc khi nhap"
+    },
+    {
+      "rel": "chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao.pdf",
+      "imported": false,
+      "cls": "defer: THPT/Toan 12 hoac ngoai pham vi Toan 10"
+    },
+    {
+      "rel": "Chuyên đề bài toán lãi suất và tăng trưởng-6 trang đề.docx",
+      "imported": false,
+      "cls": "can xu ly bang Word/OCR truoc khi nhap"
+    },
+    {
+      "rel": "he-thong-kien-thuc-mon-toan-on-thi-tot-nghiep-thpt-vo-cong-truong.pdf",
+      "imported": false,
+      "cls": "defer: THPT/Toan 12 hoac ngoai pham vi Toan 10"
+    },
+    {
+      "rel": "toan-tap-xac-suat-co-dieu-kien-mon-toan-12-thpt.pdf",
+      "imported": false,
+      "cls": "defer: THPT/Toan 12 hoac ngoai pham vi Toan 10"
+    },
+    {
+      "rel": "tuyen-tap-bai-tap-to-hop-xac-suat-hay-va-kho-trong-de-thi-tn-thpt-mon-toan.pdf",
+      "imported": false,
+      "cls": "defer: THPT/Toan 12 hoac ngoai pham vi Toan 10"
+    }
+  ],
+  "stats": {
+    "questions": 17400,
+    "displayReady": 17054,
+    "sourceSolutions": 8142,
+    "correctAnswers": 8142,
+    "scoredPracticeReady": 7947,
+    "generatedFigures": 0,
+    "byProgram": {
+      "vn_math_10_12": 17400
+    },
+    "byTopic": {
+      "math10.algebra.logic_sets": 5052,
+      "math10.assessment.integrated_review": 2732,
+      "math10.algebra.quadratic_functions_graphs": 2121,
+      "math10.algebra.inequalities_one_variable": 985,
+      "math10.statistics_probability.prob_stats": 527,
+      "math10.algebra.combinatorics": 200,
+      "math10.algebra.linear_inequalities_two_variables": 1076,
+      "math10.geometry.coordinate_plane_oxy": 2875,
+      "math10.geometry.trigonometry_triangles": 975,
+      "math10.geometry.vectors": 857
+    },
+    "byLevel": {
+      "foundation": 6636,
+      "core": 8673,
+      "application": 1486,
+      "advanced": 605
+    },
+    "bySource": {
+      "D10_C1_B1_Menh De.pdf": 158,
+      "D10_C1_B2_TAP HOP.pdf": 57,
+      "D10_C1_B4_cac tap hop so.pdf": 89,
+      "DS_C1_So gan dung va Sai so.pdf": 47,
+      "D10_C1_B5_So gan dung, sai so.pdf": 69,
+      "menh de va tap hop/bai-giang-menh-de-va-tap-hop-mon-toan-10-ngo-quang-nghiep.pdf": 171,
+      "menh de va tap hop/bai-giang-toan-10-chu-de-menh-de-va-tap-hop-le-quang-xe.pdf": 219,
+      "menh de va tap hop/bai-tap-toan-ung-dung-thuc-te-chuyen-de-tap-hop-va-cac-phep-toan-tap-hop.pdf": 520,
+      "menh de va tap hop/bo-de-on-tap-mon-toan-10-chu-de-menh-de-va-tap-hop.pdf": 350,
+      "menh de va tap hop/chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf": 804,
+      "menh de va tap hop/chuyen-de-toan-thuc-te-cac-phep-toan-tren-tap-hop-mon-toan-10.pdf": 54,
+      "menh de va tap hop/de-kiem-tra-theo-bai-hoc-chu-de-menh-de-va-tap-hop.pdf": 307,
+      "menh de va tap hop/phuong-phap-giai-toan-va-bai-tap-chuyen-de-menh-de-va-tap-hop-toan-10.pdf": 923,
+      "menh de va tap hop/tai-lieu-hoc-tap-toan-10-chu-de-menh-de-va-tap-hop-le-quang-xe.pdf": 195,
+      "D10_C4_B2_he phuong trinh, bat phuong trinh.pdf": 223,
+      "D10_C4_B3_Dau cua nhi thuc bac nhat.pdf": 95,
+      "DS_C4_Bat dang thuc.pdf": 41,
+      "DS_C4_Bat phuong trinh - He bat phuong trinh bac nhat mot an.pdf": 50,
+      "DS_C4_Dau cua nhi thuc bac nhat.pdf": 50,
+      "phan-loai-va-phuong-phap-giai-bai-tap-bat-dang-thuc-bat-phuong-trinh.pdf": 376,
+      "D10_C4_B4_BAT PHUONG TRINH BAC NHAT HAI AN.pdf": 39,
+      "de-kiem-tra-theo-bai-hoc-chu-de-bpt-va-he-bpt-bac-nhat-hai-an.pdf": 201,
+      "chuyen-de-bpt-va-he-bpt-bac-nhat-hai-an-toan-10-dinh-huong-cau-truc-moi.pdf": 448,
+      "toan-thuc-te-he-bat-phuong-trinh-bac-nhat-hai-an-dang-viet-dong.pdf": 464,
+      "D10_C2_B1_Ham So.pdf": 112,
+      "DS_C2_Ham so bac hai.pdf": 50,
+      "DS_C2_Ham so bac nhat.pdf": 50,
+      "DS_C2_Mot so van de ve Ham so.pdf": 50,
+      "DS_C3_Dai cuong ve phuong trinh.pdf": 50,
+      "DS_C3_He phuong trinh.pdf": 50,
+      "DS_C3_Phuong trinh bac nhat va bac hai mot an.pdf": 51,
+      "DS_C4_Dau cua tam thuc bac hai - Bat phuong trinh bac hai.pdf": 48,
+      "chuyen-de-he-phuong-trinh-bac-nhat-ba-an-le-quang-xe.pdf": 99,
+      "chuyen-de-ham-so-bac-hai-va-do-thi-toan-10.pdf": 331,
+      "tong-hop-100-bai-toan-thuc-te-ve-ham-so-bac-hai.pdf": 119,
+      "D10_C6_B2_gia tri luong giac cua mot cung.pdf": 161,
+      "HH_C2_Gia tri luong giac cua mot goc bat ky.pdf": 50,
+      "DS_C6_Cong thuc luong giac.pdf": 50,
+      "cac-dang-toan-he-thuc-luong-trong-tam-giac-toan-10-thuong-gap.pdf": 123,
+      "chuyen-de-toan-10-chuong-he-thuc-luong-trong-tam-giac-va-ung-dung.pdf": 143,
+      "chuyen-de-toan-thuc-te-he-thuc-luong-trong-tam-giac-mon-toan-10.pdf": 80,
+      "de-kiem-tra-theo-bai-hoc-chu-de-he-thuc-luong-trong-tam-giac.pdf": 302,
+      "BÀI TẬP HÌNH HỌC THỰC TẾ.pdf": 126,
+      "HH_C1_Cac dinh nghia ve vecto.pdf": 50,
+      "HH_C1_Hieu hai vecto.pdf": 50,
+      "HH_C1_Tong cua hai vecto.pdf": 50,
+      "H10_C1_B2_tong va hieu cua hai vec to.pdf": 90,
+      "H10_C2_B3_tich voi huong vecto.pdf": 185,
+      "HH_C2_Tich vo huong cua hai vecto.pdf": 50,
+      "H10_C1_B4_he truc toa do.pdf": 91,
+      "HH_C1_Truc toa do va he truc toa do.pdf": 50,
+      "H10_C3_B1_phuong phap toa do trong mat phang.pdf": 372,
+      "DẠNG-25 PHƯƠNG-TRÌNH-ĐƯỜNG-THẲNG.pdf": 30,
+      "HH_C3_Duong tron.pdf": 50,
+      "HH_C3_Elip.pdf": 50,
+      "HH_C3_Parabol.pdf": 50,
+      "HH_C3_Phuong trinh duong thang.pdf": 50,
+      "HH_C3_Khoang cach.pdf": 50,
+      "chuyen-de-phuong-phap-toa-do-trong-mat-phang-toan-10-chuong-trinh-moi.pdf": 1335,
+      "chuyen-de-phuong-phap-toa-do-trong-mat-phang-toan-10.pdf": 548,
+      "chuyen-de-toan-thuc-te-phuong-phap-toa-do-trong-mat-phang-mon-toan-10.pdf": 87,
+      "D10_C5_THONG KE.pdf": 174,
+      "12-bai-toan-ki-thuat-trong-tam-nhat-lam-chu-bai-toan-to-hop-xac-suat.pdf": 125,
+      "bai giang trong tam mon toan lop 10.pdf": 20,
+      "bai-giang-co-ban-va-nang-cao-toan-10-tap-1-dai-so-10.pdf": 1348,
+      "bai-tap-trac-nghiem-dang-dung-sai-mon-toan-10.pdf": 358,
+      "BỘ-10-ĐỀ-ÔN-TRĂC-NGHIỆM-TỰ-LUẬN-K10.pdf": 495,
+      "bo-de-danh-gia-chat-luong-cuoi-chuong-mon-toan-10-hoc-ky-2.pdf": 922,
+      "chuyen-de-mon-toan-10-hoc-ki-1-le-dien-phu.pdf": 115,
+      "chuyen-de-toan-thuc-te-mon-toan-lop-10.pdf": 52,
+      "de-cuong-hoc-ki-1-toan-10-nam-2025-2026-truong-thpt-viet-duc-ha-noi.pdf": 73,
+      "de-cuong-cuoi-hoc-ki-2-toan-10-nam-2025-2026-truong-thpt-viet-duc-ha-noi.pdf": 64,
+      "he-thong-kien-thuc-va-phuong-phap-giai-toan-10-vo-cong-truong.pdf": 90,
+      "phan-dang-va-bai-tap-toan-10-knttvcs-tap-2-nguyen-thanh-nhan.pdf": 414,
+      "tai-lieu-khai-phong-nang-luc-hoc-toan-10.pdf": 945,
+      "[toanthaycu.com]_Chuyên đề Toán thực tế 10_Trần Đình Cư.pdf": 972
+    }
+  },
+  "qualitySummary": {
+    "questions": 17400,
+    "blockers": 349,
+    "warnings": 3,
+    "byCode": {
+      "import.source.no_exercise_blocks": 3,
+      "display.legacy_font_encoding": 256,
+      "display.control_characters": 25,
+      "display.formula_review": 68
+    }
+  },
+  "display": {
+    "needsFormulaReview": 68,
+    "needsOriginalImage": 0,
+    "needsTextEncodingReview": 281,
+    "promptControlCharacters": 25,
+    "rawSourcesWithOleMarkers": 0,
+    "rawOleMarkersTotal": 0
+  },
+  "topicReadiness": {
+    "math10.algebra.logic_sets": {
+      "label": "Menh de, tap hop, sai so",
+      "total": 5052,
+      "ready": 4960,
+      "scored": 2216,
+      "sourceSolutions": 2216,
+      "blockers": 95
+    },
+    "math10.algebra.inequalities_one_variable": {
+      "label": "Bat dang thuc va BPT mot an",
+      "total": 985,
+      "ready": 930,
+      "scored": 547,
+      "sourceSolutions": 547,
+      "blockers": 55
+    },
+    "math10.algebra.linear_inequalities_two_variables": {
+      "label": "BPT va he BPT bac nhat hai an",
+      "total": 1076,
+      "ready": 1062,
+      "scored": 498,
+      "sourceSolutions": 498,
+      "blockers": 14
+    },
+    "math10.algebra.quadratic_functions_graphs": {
+      "label": "Ham so, parabol, tam thuc bac hai",
+      "total": 2121,
+      "ready": 2083,
+      "scored": 1275,
+      "sourceSolutions": 1275,
+      "blockers": 38
+    },
+    "math10.geometry.trigonometry_triangles": {
+      "label": "He thuc luong trong tam giac",
+      "total": 975,
+      "ready": 957,
+      "scored": 628,
+      "sourceSolutions": 628,
+      "blockers": 18
+    },
+    "math10.geometry.vectors": {
+      "label": "Vecto",
+      "total": 857,
+      "ready": 848,
+      "scored": 369,
+      "sourceSolutions": 369,
+      "blockers": 9
+    },
+    "math10.geometry.coordinate_plane_oxy": {
+      "label": "Toa do Oxy",
+      "total": 2875,
+      "ready": 2830,
+      "scored": 1231,
+      "sourceSolutions": 1231,
+      "blockers": 45
+    },
+    "math10.algebra.combinatorics": {
+      "label": "Dai so to hop",
+      "total": 200,
+      "ready": 193,
+      "scored": 97,
+      "sourceSolutions": 97,
+      "blockers": 7
+    },
+    "math10.statistics_probability.prob_stats": {
+      "label": "Thong ke va xac suat",
+      "total": 527,
+      "ready": 526,
+      "scored": 151,
+      "sourceSolutions": 151,
+      "blockers": 1
+    },
+    "math10.assessment.integrated_review": {
+      "label": "On tap tong hop va mo rong",
+      "total": 2732,
+      "ready": 2665,
+      "scored": 935,
+      "sourceSolutions": 935,
+      "blockers": 67
+    }
+  },
+  "notes": [
+    "Learner-facing Math 10 publish bank now contains only display-ready questions.",
+    "346 unique blocked raw questions were excluded from the learner system (349 blocker reports).",
+    "Three SGK 2026 PDFs produced almost no extractable text and need OCR/Word conversion before student-facing import.",
+    "Remaining raw blockers are kept only in audit/excluded artifacts for traceability, not in the published learner bank."
+  ],
+  "published": {
+    "publishedItems": 17054,
+    "excludedUniqueItems": 346,
+    "blockerReports": 349,
+    "currentPath": "reports/content-quality/math10-published-question-bank.json",
+    "excludedPath": "reports/content-quality/math10-excluded-question-bank.json"
+  }
+}

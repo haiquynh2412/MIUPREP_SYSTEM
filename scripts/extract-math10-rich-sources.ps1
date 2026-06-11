@@ -1,0 +1,387 @@
+param(
+  [string]$SourceRoot = "C:\Users\HAIQUYNH\OneDrive\SACH VIET\TOAN\toan 10",
+  [string]$OutPath = "reports\content-quality\math10-rich-raw-extract.json",
+  [string]$HtmlWorkDir = "reports\content-quality\math10-rich-html",
+  [string]$AssetPublicRoot = "apps\miuprep-portal\public\assets\math10\formulas",
+  [switch]$IncludePdf = $true,
+  [switch]$UseInlineShapeRanges,
+  [string]$FileListPath = "",
+  [int]$Limit = 0
+)
+
+# Set registry keys to suppress PDF opt-in warning in MS Word
+$registryPaths = @(
+  "HKCU:\Software\Microsoft\Office\15.0\Word\Options",
+  "HKCU:\Software\Microsoft\Office\16.0\Word\Options"
+)
+foreach ($path in $registryPaths) {
+  try {
+    if (-not (Test-Path $path)) {
+      $null = New-Item -Path $path -Force -ErrorAction SilentlyContinue
+    }
+    $null = Set-ItemProperty -Path $path -Name "DidShowPDFOptIn" -Value 1 -ErrorAction SilentlyContinue
+  } catch {
+    Write-Warning "Could not set registry key for $($path): $($_.Exception.Message)"
+  }
+}
+
+$ErrorActionPreference = "Continue"
+$workspaceRoot = Split-Path -Parent $PSScriptRoot
+$resolvedOutPath = if ([System.IO.Path]::IsPathRooted($OutPath)) { $OutPath } else { Join-Path $workspaceRoot $OutPath }
+$resolvedHtmlWorkDir = if ([System.IO.Path]::IsPathRooted($HtmlWorkDir)) { $HtmlWorkDir } else { Join-Path $workspaceRoot $HtmlWorkDir }
+$resolvedAssetPublicRoot = if ([System.IO.Path]::IsPathRooted($AssetPublicRoot)) { $AssetPublicRoot } else { Join-Path $workspaceRoot $AssetPublicRoot }
+$extensions = @(".doc", ".docx", ".dot")
+if ($IncludePdf) {
+  $extensions += ".pdf"
+}
+
+Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Drawing
+
+function Get-RelativeSourcePath {
+  param($File)
+
+  $rootWithSeparator = $SourceRoot.TrimEnd("\", "/") + "\"
+  if ($File.FullName.StartsWith($rootWithSeparator, [System.StringComparison]::OrdinalIgnoreCase)) {
+    return $File.FullName.Substring($rootWithSeparator.Length).Replace("\", "/")
+  }
+
+  return $File.Name
+}
+
+function Get-Slug {
+  param([string]$Value)
+
+  $normalized = $Value.ToLowerInvariant() -replace '[^a-z0-9]+', '-'
+  $normalized = $normalized.Trim('-')
+  if (-not $normalized) {
+    $normalized = "source"
+  }
+
+  $sha1 = [System.Security.Cryptography.SHA1]::Create()
+  $bytes = [System.Text.Encoding]::UTF8.GetBytes($Value)
+  $hashBytes = $sha1.ComputeHash($bytes)
+  $hash = -join ($hashBytes[0..3] | ForEach-Object { $_.ToString("x2") })
+  return "$($normalized.Substring(0, [Math]::Min(52, $normalized.Length)))-$hash"
+}
+
+function Count-OleMarkers {
+  param([string]$Text)
+  return ([regex]::Matches([string]$Text, [regex]::Escape([string][char]1))).Count
+}
+
+function Export-InlineShapeAsset {
+  param(
+    $InlineShape,
+    [int]$Index,
+    [string]$AssetTargetDir,
+    [string]$AssetPublicBase
+  )
+
+  $assetName = "formula{0:D4}.png" -f $Index
+  $targetPath = Join-Path $AssetTargetDir $assetName
+  $publicPath = ($AssetPublicBase.TrimEnd('/') + '/' + $assetName).Replace('\', '/')
+  $width = ""
+  $height = ""
+  $copied = $false
+  $method = ""
+
+  try {
+    $width = [string][Math]::Max(1, [int][Math]::Round([double]$InlineShape.Width * 96 / 72))
+    $height = [string][Math]::Max(1, [int][Math]::Round([double]$InlineShape.Height * 96 / 72))
+  } catch {
+    $width = ""
+    $height = ""
+  }
+
+  $emfPath = [System.IO.Path]::ChangeExtension($targetPath, ".emf")
+  $metafile = $null
+  try {
+    $bits = $InlineShape.Range.EnhMetaFileBits
+    if ($bits -ne $null) {
+      [System.IO.File]::WriteAllBytes($emfPath, [byte[]]$bits)
+      $metafile = [System.Drawing.Image]::FromFile($emfPath)
+      $metafile.Save($targetPath, [System.Drawing.Imaging.ImageFormat]::Png)
+      $copied = $true
+      $method = "emf_png"
+    }
+  } catch {
+    $copied = $false
+  } finally {
+    if ($metafile -ne $null) {
+      try {
+        $metafile.Dispose()
+      } catch {
+      }
+    }
+    if (Test-Path -LiteralPath $emfPath) {
+      try {
+        Remove-Item -LiteralPath $emfPath -Force
+      } catch {
+      }
+    }
+  }
+
+  if (-not $copied) {
+    try {
+      for ($attempt = 1; $attempt -le 4 -and -not $copied; $attempt += 1) {
+        [System.Windows.Forms.Clipboard]::Clear()
+        $InlineShape.Range.CopyAsPicture()
+        Start-Sleep -Milliseconds (180 * $attempt)
+        $image = [System.Windows.Forms.Clipboard]::GetImage()
+        if ($image -ne $null) {
+          $image.Save($targetPath, [System.Drawing.Imaging.ImageFormat]::Png)
+          $image.Dispose()
+          $copied = $true
+          $method = "clipboard_png"
+        }
+      }
+    } catch {
+      $copied = $false
+    }
+  }
+
+  $parts = New-Object System.Collections.Generic.List[string]
+  $parts.Add("{{formula:$publicPath")
+  if ($width) {
+    $parts.Add("|w=$width")
+  }
+  if ($height) {
+    $parts.Add("|h=$height")
+  }
+  $parts.Add("}}")
+
+  return [ordered]@{
+    token = (($parts.ToArray()) -join "")
+    asset = [ordered]@{
+      src = $publicPath
+      width = $width
+      height = $height
+      fileName = $assetName
+      copied = $copied
+      source = "inlineShape:$Index"
+      exportMethod = $method
+    }
+  }
+}
+
+function Convert-PlainTextMarkersToRichText {
+  param(
+    [string]$PlainText,
+    $InlineShapes,
+    [string]$AssetTargetDir,
+    [string]$AssetPublicBase
+  )
+
+  New-Item -ItemType Directory -Force -Path $AssetTargetDir | Out-Null
+  $assets = New-Object System.Collections.Generic.List[object]
+  $builder = New-Object System.Text.StringBuilder
+  $marker = [char]1
+  $shapeIndex = 1
+  $shapeCount = 0
+
+  try {
+    $shapeCount = [int]$InlineShapes.Count
+  } catch {
+    $shapeCount = 0
+  }
+
+  for ($i = 0; $i -lt $PlainText.Length; $i += 1) {
+    $char = $PlainText[$i]
+    if ($char -eq $marker) {
+      if ($shapeIndex -le $shapeCount) {
+        $export = Export-InlineShapeAsset -InlineShape $InlineShapes.Item($shapeIndex) -Index $shapeIndex -AssetTargetDir $AssetTargetDir -AssetPublicBase $AssetPublicBase
+        $assets.Add($export.asset)
+        [void]$builder.Append(" ")
+        [void]$builder.Append($export.token)
+        [void]$builder.Append(" ")
+        $shapeIndex += 1
+      }
+    } else {
+      [void]$builder.Append($char)
+    }
+  }
+
+  return [ordered]@{
+    text = $builder.ToString()
+    assets = $assets
+    inlineShapeCount = $shapeCount
+    exportedInlineShapes = $assets.Count
+  }
+}
+
+function Convert-InlineShapesByRangeToRichText {
+  param(
+    $Doc,
+    [string]$AssetTargetDir,
+    [string]$AssetPublicBase
+  )
+
+  New-Item -ItemType Directory -Force -Path $AssetTargetDir | Out-Null
+  $assets = New-Object System.Collections.Generic.List[object]
+  $builder = New-Object System.Text.StringBuilder
+  $shapeCount = 0
+  $cursor = 0
+
+  try {
+    $shapeCount = [int]$Doc.InlineShapes.Count
+    $cursor = [int]$Doc.Content.Start
+  } catch {
+    $shapeCount = 0
+  }
+
+  if ($shapeCount -gt 0) {
+    for ($shapeIndex = 1; $shapeIndex -le $shapeCount; $shapeIndex += 1) {
+      $inlineShape = $Doc.InlineShapes.Item($shapeIndex)
+      $shapeStart = [int]$inlineShape.Range.Start
+      $shapeEnd = [int]$inlineShape.Range.End
+
+      if ($shapeStart -gt $cursor) {
+        [void]$builder.Append([string]$Doc.Range($cursor, $shapeStart).Text)
+      }
+
+      $export = Export-InlineShapeAsset -InlineShape $inlineShape -Index $shapeIndex -AssetTargetDir $AssetTargetDir -AssetPublicBase $AssetPublicBase
+      $assets.Add($export.asset)
+      [void]$builder.Append(" ")
+      [void]$builder.Append($export.token)
+      [void]$builder.Append(" ")
+
+      if ($shapeEnd -gt $cursor) {
+        $cursor = $shapeEnd
+      }
+    }
+  }
+
+  try {
+    $contentEnd = [int]$Doc.Content.End
+    if ($contentEnd -gt $cursor) {
+      [void]$builder.Append([string]$Doc.Range($cursor, $contentEnd).Text)
+    }
+  } catch {
+  }
+
+  return [ordered]@{
+    text = $builder.ToString()
+    assets = $assets
+    inlineShapeCount = $shapeCount
+    exportedInlineShapes = $assets.Count
+  }
+}
+
+function Write-ExtractPayload {
+  param($Sources)
+
+  $payload = [ordered]@{
+    schemaVersion = "math10_rich_raw_extract_v1"
+    generatedAt = (Get-Date).ToUniversalTime().ToString("o")
+    sourceRoot = $SourceRoot
+    assetPublicRoot = "/assets/math10/formulas"
+    sources = $Sources
+  }
+
+  New-Item -ItemType Directory -Force -Path (Split-Path -Parent $resolvedOutPath) | Out-Null
+  $json = $payload | ConvertTo-Json -Depth 8
+  $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+  [System.IO.File]::WriteAllText($resolvedOutPath, $json + [Environment]::NewLine, $utf8NoBom)
+}
+
+if ($FileListPath) {
+  $resolvedFileListPath = if ([System.IO.Path]::IsPathRooted($FileListPath)) { $FileListPath } else { Join-Path $workspaceRoot $FileListPath }
+  $files = @(
+    Get-Content -LiteralPath $resolvedFileListPath -Encoding UTF8 |
+      Where-Object { $_ -and -not $_.Trim().StartsWith("#") } |
+      ForEach-Object {
+        $relativePath = $_.Trim().Replace("/", "\")
+        $candidatePath = if ([System.IO.Path]::IsPathRooted($relativePath)) { $relativePath } else { Join-Path $SourceRoot $relativePath }
+        if (Test-Path -LiteralPath $candidatePath) {
+          Get-Item -LiteralPath $candidatePath
+        } else {
+          Write-Warning "Source file not found: $relativePath"
+        }
+      }
+  ) | Where-Object { $_ -and ($extensions -contains $_.Extension.ToLowerInvariant()) } | Sort-Object FullName
+} else {
+  $files = Get-ChildItem -LiteralPath $SourceRoot -Recurse -File |
+    Where-Object { $extensions -contains $_.Extension.ToLowerInvariant() } |
+    Sort-Object FullName
+}
+
+if ($Limit -gt 0) {
+  $files = @($files | Select-Object -First $Limit)
+}
+
+New-Item -ItemType Directory -Force -Path $resolvedHtmlWorkDir | Out-Null
+New-Item -ItemType Directory -Force -Path $resolvedAssetPublicRoot | Out-Null
+
+$sources = New-Object System.Collections.Generic.List[object]
+$word = $null
+
+try {
+  $word = New-Object -ComObject Word.Application
+  $word.Visible = $false
+  $word.DisplayAlerts = 0
+
+  foreach ($file in $files) {
+    $relativePath = Get-RelativeSourcePath -File $file
+    $sourceSlug = Get-Slug -Value $relativePath
+    $assetTargetDir = Join-Path $resolvedAssetPublicRoot $sourceSlug
+    $assetPublicBase = "/assets/math10/formulas/$sourceSlug"
+    Write-Host "Extracting rich $relativePath"
+    $doc = $null
+
+    try {
+      $doc = $word.Documents.OpenNoRepairDialog($file.FullName, $false, $true, $false)
+      $plainText = [string]$doc.Content.Text
+      if ($UseInlineShapeRanges) {
+        $rich = Convert-InlineShapesByRangeToRichText -Doc $doc -AssetTargetDir $assetTargetDir -AssetPublicBase $assetPublicBase
+      } else {
+        $rich = Convert-PlainTextMarkersToRichText -PlainText $plainText -InlineShapes $doc.InlineShapes -AssetTargetDir $assetTargetDir -AssetPublicBase $assetPublicBase
+      }
+      $sources.Add([ordered]@{
+        fileName = $file.Name
+        relativePath = $relativePath
+        path = $file.FullName
+        extension = $file.Extension.ToLowerInvariant().TrimStart(".")
+        text = [string]$rich.text
+        richExtraction = $true
+        richExtractionMethod = if ($UseInlineShapeRanges) { "inline_shape_range_png" } else { "inline_shape_png" }
+        assetBasePath = $assetPublicBase
+        formulaAssetCount = $rich.assets.Count
+        formulaAssets = $rich.assets
+        inlineShapeCount = $rich.inlineShapeCount
+        exportedInlineShapes = $rich.exportedInlineShapes
+        rawOleMarkerCount = Count-OleMarkers -Text $plainText
+      })
+    } catch {
+      $sources.Add([ordered]@{
+        fileName = $file.Name
+        relativePath = $relativePath
+        path = $file.FullName
+        extension = $file.Extension.ToLowerInvariant().TrimStart(".")
+        text = ""
+        richExtraction = $false
+        formulaAssetCount = 0
+        rawOleMarkerCount = 0
+        error = $_.Exception.Message
+      })
+    } finally {
+      if ($doc -ne $null) {
+        try {
+          $doc.Close($false) | Out-Null
+        } catch {
+        }
+      }
+      Write-ExtractPayload -Sources $sources
+    }
+  }
+} finally {
+  if ($word -ne $null) {
+    try {
+      $word.Quit() | Out-Null
+    } catch {
+    }
+  }
+}
+
+Write-ExtractPayload -Sources $sources
+Write-Host "Wrote $($sources.Count) rich extracted sources to $resolvedOutPath"

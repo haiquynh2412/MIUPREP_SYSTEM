@@ -1,9 +1,19 @@
 import { buildEnglishContentGuardReport, type EnglishContentGuardReport } from './english-content-guard-report';
 import { buildMath6ContentGuardReport } from './math6-content-guard-report';
 import type { Math6RawSource } from './math6-import';
+import { buildMath8ContentGuardReport } from './math8-content-guard-report';
+import type { Math8RawSource } from './math8-import';
+import { buildMath9ContentGuardReport } from './math9-content-guard-report';
+import type { Math9RawSource } from './math9-import';
+import { buildMath10ContentGuardReport } from './math10-content-guard-report';
+import type { Math10RawSource } from './math10-import';
+import { buildMath11ContentGuardReport } from './math11-content-guard-report';
+import type { Math11RawSource } from './math11-import';
+import { buildMath7ContentGuardReport } from './math7-content-guard-report';
+import type { Math7RawSource } from './math7-import';
 import { buildMiuMathContentGuardReport } from './miumath-content-guard-report';
 import { buildSatContentReadinessSnapshot, type SatPublicStudentPackage } from './sat-content';
-import { toQuestionItemsFromMiuMath, type MiuMathQuestion } from './standard';
+import { toQuestionItemsFromMiuMath, type MiuMathQuestion, type QuestionItem } from './standard';
 
 declare function require(name: string): any;
 declare const process: { argv: string[]; cwd(): string; exitCode?: number };
@@ -188,20 +198,30 @@ function buildUnifiedCoverageSnapshot(workspaceRootPath: string, englishReport: 
   const programs: UnifiedContentCoverageSnapshot['programs'] = [];
   const localMathSourceRoot = path.resolve(workspaceRootPath, '..', '..', 'SACH VIET', 'TOAN');
   const math6RawPath = resolveDefaultMath6RawPath(workspaceRootPath);
+  let miumathItemsForCoverage: QuestionItem[] = [];
+  let miumathAdapterPass = true;
+  let miumathBlockers = 0;
+  let miumathWarnings = 0;
 
   if (fs.existsSync(math6RawPath)) {
     const rawSources = readMath6RawSources(math6RawPath);
-    const math6Report = buildMath6ContentGuardReport(rawSources, { rawPath: math6RawPath, generatedAt }).report;
-    const blockedItems = Math.max(0, math6Report.stats.questions - math6Report.stats.displayReady);
+    const math6Report = buildMath6ContentGuardReport(rawSources, {
+      rawPath: math6RawPath,
+      generatedAt,
+      formulaAssetExists: (src) => mathFormulaAssetExists(workspaceRootPath, src),
+    }).report;
+    const scoredReadyItems = math6Report.pedagogy.scoredPracticeReady;
+    const blockedItems = math6Report.qualitySummary.blockers;
+    const warningItems = math6Report.qualitySummary.warnings;
     programs.push({
       programId: 'vn_math_6',
       label: 'VN Math 6 Local Sources',
       sourceQuestions: math6Report.stats.questions,
       importedQuestions: math6Report.adapter.convertedItems,
-      readyQuestions: math6Report.stats.displayReady,
+      readyQuestions: scoredReadyItems,
       blockerItems: blockedItems,
-      warningItems: math6Report.qualitySummary.warnings,
-      coverageStatus: !math6Report.adapter.pass || math6Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems > 0 ? 'watch' : 'ready',
+      warningItems,
+      coverageStatus: !math6Report.adapter.pass || scoredReadyItems === 0 ? 'needs_repair' : blockedItems > 0 || warningItems > 0 ? 'watch' : 'ready',
       adapterPass: math6Report.adapter.pass,
       sourceMatched: true,
       changedQuestions: 0,
@@ -209,7 +229,7 @@ function buildUnifiedCoverageSnapshot(workspaceRootPath: string, englishReport: 
       sourceFormats: countSourceFormats(rawSources),
       sourcePath: path.resolve(localMathSourceRoot, 'TAI LIEU TOAN 6'),
       currentPath: math6RawPath,
-      note: `${math6Report.stats.displayReady}/${math6Report.stats.questions} questions are display-ready; ${math6Report.stats.generatedFigures} geometry SVG figures generated; ${blockedItems} items remain behind formula/image/encoding gates.`,
+      note: `${math6Report.stats.displayReady}/${math6Report.stats.questions} questions are display-ready; ${scoredReadyItems}/${math6Report.stats.questions} are scored-practice-ready; ${math6Report.pedagogy.scoredPracticeExcluded} source-artifact/formula-image items are held for review, with ${math6Report.pedagogy.scoredPracticePending} eligible items still pending answer keys.`,
     });
   } else {
     programs.push(buildPlannedMathProgramRow('vn_math_6', 'VN Math 6 Local Sources', path.resolve(localMathSourceRoot, 'TAI LIEU TOAN 6'), 'Raw extract is missing; run the Math 6 extractor before guard/import.'));
@@ -227,13 +247,208 @@ function buildUnifiedCoverageSnapshot(workspaceRootPath: string, englishReport: 
       sourceQuestions,
     });
     const miumathItems = toQuestionItemsFromMiuMath(currentQuestions);
+    miumathItemsForCoverage = miumathItems;
+    miumathAdapterPass = miumathReport.adapter.pass;
+    miumathBlockers = miumathReport.qualitySummary.blockers;
+    miumathWarnings = miumathReport.qualitySummary.warnings;
     const localMath9Sources = scanSourceFolder(path.resolve(localMathSourceRoot, 'TOAN 9'));
     programs.push(...buildMiuMathProgramRows(miumathReport, miumathItems, localMath9Sources));
   }
 
-  programs.push(buildPlannedMathProgramRow('vn_math_7', 'VN Math 7 Local Sources', path.resolve(localMathSourceRoot, 'toan 7'), 'Source folder is detected; build a Math 7 matrix/importer with the same Math guard before opening items.'));
-  programs.push(buildPlannedMathProgramRow('vn_math_8', 'VN Math 8 Local Sources', path.resolve(localMathSourceRoot, 'toan 8'), 'Source folder is detected; build a Math 8 matrix/importer with the same Math guard before opening items.'));
-  programs.push(buildPlannedMathProgramRow('vn_math_10_12', 'VN Math 10-12 Local Sources', path.resolve(localMathSourceRoot, 'toan 10'), 'Knowledge Graph is ready; source folder is detected and should use the same guarded import/display-ready flow.'));
+  const math9RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math9-rich-raw-extract.json');
+  const math9HsgPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math9-hsg-raw-extract.json');
+  const math9OnVao10Path = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math9-onvao10-rich-raw-extract.json');
+  if (fs.existsSync(math9RawPath) || fs.existsSync(math9HsgPath) || fs.existsSync(math9OnVao10Path)) {
+    const rawSources9 = fs.existsSync(math9RawPath) ? readMath9RawSources(math9RawPath) : [];
+    if (fs.existsSync(math9HsgPath)) {
+      const hsgSources9 = readMath9RawSources(math9HsgPath);
+      rawSources9.push(...hsgSources9);
+    }
+    if (fs.existsSync(math9OnVao10Path)) {
+      const onVao10Sources9 = readMath9RawSources(math9OnVao10Path);
+      rawSources9.push(...onVao10Sources9);
+    }
+    const uniqueRawSources9 = dedupeMathRawSources(rawSources9);
+    const activeMath9RawPath = fs.existsSync(math9RawPath) ? math9RawPath : fs.existsSync(math9OnVao10Path) ? math9OnVao10Path : math9HsgPath;
+    const math9GuardResult = buildMath9ContentGuardReport(uniqueRawSources9, {
+      rawPath: activeMath9RawPath,
+      generatedAt,
+      formulaAssetExists: (src) => mathFormulaAssetExists(workspaceRootPath, src),
+    });
+    const math9Report = math9GuardResult.report;
+    const blockedItems9 = Math.max(0, math9Report.stats.questions - math9Report.stats.displayReady);
+    const unscoredItems9 = Math.max(0, math9Report.stats.displayReady - math9Report.stats.scoredPracticeReady);
+    programs.push({
+      programId: 'vn_math_9_local_sources',
+      label: 'VN Math 9 Local Sources',
+      sourceQuestions: math9Report.stats.questions,
+      importedQuestions: math9Report.adapter.convertedItems,
+      readyQuestions: math9Report.stats.displayReady,
+      blockerItems: blockedItems9,
+      warningItems: math9Report.qualitySummary.warnings,
+      coverageStatus: !math9Report.adapter.pass || math9Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems9 > 0 ? 'watch' : 'ready',
+      adapterPass: math9Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math9Report.input.sources,
+      sourceFormats: countSourceFormats(uniqueRawSources9),
+      sourcePath: path.resolve(localMathSourceRoot, 'TOAN 9'),
+      currentPath: activeMath9RawPath,
+      note: `${math9Report.stats.displayReady}/${math9Report.stats.questions} questions are display-ready from local Math 9 sources; ${math9Report.stats.scoredPracticeReady} have source answers/solutions for scored practice; ${blockedItems9} items remain behind formula/image/encoding gates and ${unscoredItems9} display-ready items still need answer keys.`,
+    });
+    programs.push(buildCombinedExam10ProgramRow({
+      miumathItems: miumathItemsForCoverage,
+      miumathAdapterPass,
+      miumathBlockers,
+      miumathWarnings,
+      math9Items: math9GuardResult.items,
+      math9Report,
+      sourcePath: path.resolve(localMathSourceRoot, 'TOAN 9'),
+      currentPath: activeMath9RawPath,
+    }));
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_9_local_sources', 'VN Math 9 Local Sources', path.resolve(localMathSourceRoot, 'TOAN 9'), 'Source folder is detected; run the Math 9 rich extractor and guard before opening local items.'));
+  }
+
+  const math7RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math7-rich-raw-extract.json');
+  if (fs.existsSync(math7RawPath) || fs.existsSync(path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math7-hsg-raw-extract.json'))) {
+    const rawSources7 = fs.existsSync(math7RawPath) ? readMath7RawSources(math7RawPath) : [];
+    const math7HsgPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math7-hsg-raw-extract.json');
+    if (fs.existsSync(math7HsgPath)) {
+      const hsgSources7 = readMath7RawSources(math7HsgPath);
+      rawSources7.push(...hsgSources7);
+    }
+    const seenFiles7 = new Set<string>();
+    const uniqueRawSources7: Math7RawSource[] = [];
+    for (const src of rawSources7) {
+      const key = src.relativePath || src.fileName;
+      if (!seenFiles7.has(key)) {
+        seenFiles7.add(key);
+        uniqueRawSources7.push(src);
+      }
+    }
+    const activeRawPath = fs.existsSync(math7RawPath) ? math7RawPath : math7HsgPath;
+    const math7Report = buildMath7ContentGuardReport(uniqueRawSources7, { rawPath: activeRawPath, generatedAt }).report;
+    const blockedItems7 = Math.max(0, math7Report.stats.questions - math7Report.stats.displayReady);
+    programs.push({
+      programId: 'vn_math_7',
+      label: 'VN Math 7 Local Sources',
+      sourceQuestions: math7Report.stats.questions,
+      importedQuestions: math7Report.adapter.convertedItems,
+      readyQuestions: math7Report.stats.displayReady,
+      blockerItems: blockedItems7,
+      warningItems: math7Report.qualitySummary.warnings,
+      coverageStatus: !math7Report.adapter.pass || math7Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems7 > 0 ? 'watch' : 'ready',
+      adapterPass: math7Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math7Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources7),
+      sourcePath: path.resolve(localMathSourceRoot, 'toan 7'),
+      currentPath: activeRawPath,
+      note: `${math7Report.stats.displayReady}/${math7Report.stats.questions} questions are display-ready; ${blockedItems7} items remain behind formula/image/encoding gates.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_7', 'VN Math 7 Local Sources', path.resolve(localMathSourceRoot, 'toan 7'), 'Source folder is detected; build a Math 7 matrix/importer with the same Math guard before opening items.'));
+  }
+  const math8RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math8-rich-raw-extract.json');
+  if (fs.existsSync(math8RawPath) || fs.existsSync(path.resolve(workspaceRootPath, 'reports/content-quality/math8-hsg-raw-extract.json'))) {
+    const rawSources8 = fs.existsSync(math8RawPath) ? readMath8RawSources(math8RawPath) : [];
+    const math8HsgPath = path.resolve(workspaceRootPath, 'reports/content-quality/math8-hsg-raw-extract.json');
+    if (fs.existsSync(math8HsgPath)) {
+      const hsgSources8 = readMath8RawSources(math8HsgPath);
+      rawSources8.push(...hsgSources8);
+    }
+    const seenFiles8 = new Set<string>();
+    const uniqueRawSources8: Math8RawSource[] = [];
+    for (const src of rawSources8) {
+      const key = src.relativePath || src.fileName;
+      if (!seenFiles8.has(key)) {
+        seenFiles8.add(key);
+        uniqueRawSources8.push(src);
+      }
+    }
+    const activeRawPath = fs.existsSync(math8RawPath) ? math8RawPath : math8HsgPath;
+    const math8Report = buildMath8ContentGuardReport(uniqueRawSources8, { rawPath: activeRawPath, generatedAt }).report;
+    const blockedItems8 = Math.max(0, math8Report.stats.questions - math8Report.stats.displayReady);
+    programs.push({
+      programId: 'vn_math_8',
+      label: 'VN Math 8 Local Sources',
+      sourceQuestions: math8Report.stats.questions,
+      importedQuestions: math8Report.adapter.convertedItems,
+      readyQuestions: math8Report.stats.displayReady,
+      blockerItems: blockedItems8,
+      warningItems: math8Report.qualitySummary.warnings,
+      coverageStatus: !math8Report.adapter.pass || math8Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems8 > 0 ? 'watch' : 'ready',
+      adapterPass: math8Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math8Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources8),
+      sourcePath: path.resolve(localMathSourceRoot, 'toan 8'),
+      currentPath: math8RawPath,
+      note: `${math8Report.stats.displayReady}/${math8Report.stats.questions} questions are display-ready; ${blockedItems8} items remain behind formula/image/encoding gates.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_8', 'VN Math 8 Local Sources', path.resolve(localMathSourceRoot, 'toan 8'), 'Source folder is detected; build a Math 8 matrix/importer with the same Math guard before opening items.'));
+  }
+  const math10RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math10-rich-raw-extract.json');
+  if (fs.existsSync(math10RawPath)) {
+    const rawSources10 = readMath10RawSources(math10RawPath);
+    const math10Report = buildMath10ContentGuardReport(rawSources10, { rawPath: math10RawPath, generatedAt }).report;
+    const publishedItems10 = math10Report.stats.displayReady;
+    const excludedItems10 = Math.max(0, math10Report.stats.questions - math10Report.stats.displayReady);
+    const math10PublishedPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math10-published-question-bank.json');
+    programs.push({
+      programId: 'vn_math_10_12',
+      label: 'VN Math 10-12 Local Sources',
+      sourceQuestions: publishedItems10,
+      importedQuestions: publishedItems10,
+      readyQuestions: publishedItems10,
+      blockerItems: 0,
+      warningItems: math10Report.qualitySummary.warnings,
+      coverageStatus: !math10Report.adapter.pass || publishedItems10 === 0 ? 'needs_repair' : math10Report.qualitySummary.warnings > 0 ? 'watch' : 'ready',
+      adapterPass: math10Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math10Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources10),
+      sourcePath: path.resolve(localMathSourceRoot, 'toan 10'),
+      currentPath: fs.existsSync(math10PublishedPath) ? math10PublishedPath : math10RawPath,
+      note: `${publishedItems10} Math 10 questions are published to the learner system; ${math10Report.stats.scoredPracticeReady}/${publishedItems10} published questions have source or generated MiuMath answers/solutions for scored practice; ${math10Report.stats.generatedSolutions} are generated MiuMath solutions; ${excludedItems10} blocked raw questions were excluded before publish.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_10_12', 'VN Math 10-12 Local Sources', path.resolve(localMathSourceRoot, 'toan 10'), 'Knowledge Graph is ready; source folder is detected and should use the same guarded import/display-ready flow.'));
+  }
+
+  const math11RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math11-rich-raw-extract.json');
+  if (fs.existsSync(math11RawPath)) {
+    const rawSources11 = readMath11RawSources(math11RawPath);
+    const math11Report = buildMath11ContentGuardReport(rawSources11, { rawPath: math11RawPath, generatedAt }).report;
+    const publishedItems11 = math11Report.stats.displayReady;
+    const excludedItems11 = Math.max(0, math11Report.stats.questions - math11Report.stats.displayReady);
+    const math11PublishedPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math11-published-question-bank.json');
+    programs.push({
+      programId: 'vn_math_11_local_sources',
+      label: 'VN Math 11 Local Sources',
+      sourceQuestions: publishedItems11,
+      importedQuestions: publishedItems11,
+      readyQuestions: publishedItems11,
+      blockerItems: 0,
+      warningItems: math11Report.qualitySummary.warnings,
+      coverageStatus: !math11Report.adapter.pass || publishedItems11 === 0 ? 'needs_repair' : math11Report.qualitySummary.warnings > 0 ? 'watch' : 'ready',
+      adapterPass: math11Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math11Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources11),
+      sourcePath: path.resolve(localMathSourceRoot, 'toan 11'),
+      currentPath: fs.existsSync(math11PublishedPath) ? math11PublishedPath : math11RawPath,
+      note: `${publishedItems11} Math 11 questions are published to the learner system; ${math11Report.stats.scoredPracticeReady}/${publishedItems11} published questions have source answers/solutions for scored practice; ${excludedItems11} blocked raw questions were excluded before publish.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_11_local_sources', 'VN Math 11 Local Sources', path.resolve(localMathSourceRoot, 'toan 11'), 'Knowledge Graph is ready; source folder is detected and should use the same guarded import/display-ready flow.'));
+  }
 
   const satPackagePath = path.resolve(workspaceRootPath, 'apps', 'sat-studio', 'artifacts', 'sat-studio-public-content-package-latest.json');
   if (fs.existsSync(satPackagePath)) {
@@ -320,6 +535,72 @@ function buildMiuMathProgramRows(
   ];
 }
 
+function buildCombinedExam10ProgramRow(options: {
+  miumathItems: QuestionItem[];
+  miumathAdapterPass: boolean;
+  miumathBlockers: number;
+  miumathWarnings: number;
+  math9Items: QuestionItem[];
+  math9Report: ReturnType<typeof buildMath9ContentGuardReport>['report'];
+  sourcePath: string;
+  currentPath: string;
+}): UnifiedContentCoverageSnapshot['programs'][number] {
+  const miumathExam10Items = options.miumathItems.filter(isExam10OverlayItem);
+  const math9Exam10Items = options.math9Items.filter(isExam10OverlayItem);
+  const math9DisplayReadyIds = new Set(options.math9Report.displayReadyItemIds);
+  const math9ReadyItems = math9Exam10Items.filter((item) => math9DisplayReadyIds.has(item.id));
+  const miumathReadyQuestions = Math.max(0, miumathExam10Items.length - options.miumathBlockers);
+  const importedQuestions = miumathReadyQuestions + math9ReadyItems.length;
+  const readyQuestions = importedQuestions;
+  const excludedQuestions = Math.max(0, miumathExam10Items.length - miumathReadyQuestions)
+    + Math.max(0, math9Exam10Items.length - math9ReadyItems.length);
+  const blockerItems = 0;
+  const math9ReadyItemIds = new Set(math9ReadyItems.map((item) => item.id));
+  const math9Warnings = options.math9Report.issues.filter((issue) =>
+    issue.severity === 'warning' && (!issue.questionId || math9ReadyItemIds.has(issue.questionId)),
+  ).length;
+  const warningItems = options.miumathWarnings + math9Warnings;
+  const adapterPass = options.miumathAdapterPass && options.math9Report.adapter.pass;
+  const clusters = countExam10Clusters([...miumathExam10Items, ...math9ReadyItems]);
+  const clusterCount = Object.keys(clusters).length;
+
+  return {
+    programId: 'vn_math_vao_10_combined',
+    label: 'VN Math Vao 10 Combined',
+    sourceQuestions: importedQuestions,
+    importedQuestions,
+    readyQuestions,
+    blockerItems,
+    warningItems,
+    coverageStatus: !adapterPass || readyQuestions === 0 ? 'needs_repair' : blockerItems > 0 || warningItems > 0 ? 'watch' : 'ready',
+    adapterPass,
+    sourceMatched: true,
+    changedQuestions: 0,
+    sourceFiles: options.math9Report.input.sources + (miumathExam10Items.length ? 1 : 0),
+    sourcePath: options.sourcePath,
+    currentPath: options.currentPath,
+    note: `Combines ${miumathExam10Items.length} legacy MiuMath questions with ${math9ReadyItems.length} display-ready local Math 9/on-vao-10 questions across ${clusterCount} exam10 clusters; ${excludedQuestions} display-blocked questions were excluded from the combined entrance-exam learner path.`,
+  };
+}
+
+function isExam10OverlayItem(item: QuestionItem): boolean {
+  return item.programIds.includes('vn_math_vao_10') && Boolean(getExam10Metadata(item));
+}
+
+function countExam10Clusters(items: QuestionItem[]): Record<string, number> {
+  return items.reduce<Record<string, number>>((result, item) => {
+    const clusterId = String(getExam10Metadata(item)?.clusterId || '');
+    if (!clusterId) return result;
+    result[clusterId] = (result[clusterId] || 0) + 1;
+    return result;
+  }, {});
+}
+
+function getExam10Metadata(item: QuestionItem): Record<string, unknown> | undefined {
+  const value = item.metadata?.exam10;
+  return value && typeof value === 'object' && !Array.isArray(value) ? value as Record<string, unknown> : undefined;
+}
+
 function buildPlannedMathProgramRow(programId: string, label: string, sourcePath: string, note: string): UnifiedContentCoverageSnapshot['programs'][number] {
   const scan = scanSourceFolder(sourcePath);
   return {
@@ -391,15 +672,25 @@ function scanSourceFolder(folderPath: string): SourceFolderScan {
   return { exists: true, totalFiles, byExtension };
 }
 
-function walkFiles(folderPath: string, visitor: (filePath: string) => void): void {
-  fs.readdirSync(folderPath, { withFileTypes: true }).forEach((entry: { name: string; isDirectory(): boolean; isFile(): boolean }) => {
+function walkFiles(folderPath: string, visitor: (filePath: string) => void, depth = 0, state = { count: 0 }): void {
+  if (depth > 8 || state.count >= 10000) return;
+  fs.readdirSync(folderPath, { withFileTypes: true }).forEach((entry: { name: string; isDirectory(): boolean; isFile(): boolean; isSymbolicLink?(): boolean }) => {
+    if (state.count >= 10000 || entry.isSymbolicLink?.()) return;
     const entryPath = path.join(folderPath, entry.name);
     if (entry.isDirectory()) {
-      walkFiles(entryPath, visitor);
+      if (isSkippedSourceScanDir(entry.name)) return;
+      walkFiles(entryPath, visitor, depth + 1, state);
       return;
     }
-    if (entry.isFile()) visitor(entryPath);
+    if (entry.isFile()) {
+      state.count += 1;
+      visitor(entryPath);
+    }
   });
+}
+
+function isSkippedSourceScanDir(name: string): boolean {
+  return ['.git', '.svn', '.hg', 'node_modules', 'dist', 'build', '.next', '.vite'].includes(name.toLowerCase());
 }
 
 function countItemsByProgram(items: ReturnType<typeof toQuestionItemsFromMiuMath>, programId: string): number {
@@ -415,10 +706,68 @@ function readMath6RawSources(filePath: string): Math6RawSource[] {
   throw new Error(`Expected Math 6 raw source array or { sources: [] } at ${filePath}`);
 }
 
+function readMath8RawSources(filePath: string): Math8RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math8RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math8RawSource[] }).sources;
+  }
+  throw new Error(`Expected Math 8 raw source array or { sources: [] } at ${filePath}`);
+}
+
+function readMath9RawSources(filePath: string): Math9RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math9RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math9RawSource[] }).sources;
+  }
+  throw new Error(`Expected Math 9 raw source array or { sources: [] } at ${filePath}`);
+}
+
+function readMath10RawSources(filePath: string): Math10RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math10RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math10RawSource[] }).sources;
+  }
+  return [];
+}
+
+function readMath11RawSources(filePath: string): Math11RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math11RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math11RawSource[] }).sources;
+  }
+  return [];
+}
+
+function readMath7RawSources(filePath: string): Math7RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math7RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math7RawSource[] }).sources;
+  }
+  throw new Error(`Expected Math 7 raw source array or { sources: [] } at ${filePath}`);
+}
+
+function dedupeMathRawSources<T extends { fileName: string; relativePath?: string }>(sources: T[]): T[] {
+  const byKey = new Map<string, T>();
+  sources.forEach((source) => {
+    byKey.set(source.relativePath || source.fileName, source);
+  });
+  return [...byKey.values()];
+}
+
 function resolveDefaultMath6RawPath(workspaceRootPath: string): string {
   const richRawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math6-rich-raw-extract.json');
   const plainRawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math6-raw-extract.json');
   return shouldUseRichMath6RawPath(richRawPath, plainRawPath) ? richRawPath : plainRawPath;
+}
+
+function mathFormulaAssetExists(workspaceRootPath: string, src: string): boolean {
+  if (!String(src || '').startsWith('/assets/')) return true;
+  return fs.existsSync(path.resolve(workspaceRootPath, 'apps', 'miuprep-portal', 'public', String(src).replace(/^\/+/, '')));
 }
 
 function shouldUseRichMath6RawPath(richRawPath: string, plainRawPath: string): boolean {
@@ -434,7 +783,7 @@ function shouldUseRichMath6RawPath(richRawPath: string, plainRawPath: string): b
   }
 }
 
-function countSourceFormats(rawSources: Math6RawSource[]): Record<string, number> {
+function countSourceFormats(rawSources: any[]): Record<string, number> {
   return rawSources.reduce<Record<string, number>>((result, source) => {
     const extension = String(source.extension || path.extname(source.fileName).replace(/^\./, '') || 'unknown').toLowerCase();
     result[extension] = (result[extension] || 0) + 1;

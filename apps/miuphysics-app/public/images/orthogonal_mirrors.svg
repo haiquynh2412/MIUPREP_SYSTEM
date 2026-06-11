@@ -1,0 +1,46 @@
+<svg viewBox="0 0 360 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E1E2E" rx="8"/>
+  
+  <!-- Mirror intersection point O -->
+  <text x="130" y="165" fill="#CDD6F4" font-size="14" font-family="Arial" font-weight="bold">O</text>
+  
+  <!-- Mirror 1 (Horizontal, G1) -->
+  <line x1="150" y1="150" x2="300" y2="150" stroke="#89B4FA" stroke-width="4"/>
+  <text x="280" y="140" fill="#89B4FA" font-size="12" font-family="Arial" font-weight="bold">G₁</text>
+  <!-- Mirror 1 Hatch marks (backside shading) -->
+  <path d="M 170 150 L 165 158 M 190 150 L 185 158 M 210 150 L 205 158 M 230 150 L 225 158 M 250 150 L 245 158 M 270 150 L 265 158 M 290 150 L 285 158" stroke="#585B70" stroke-width="1.5"/>
+  
+  <!-- Mirror 2 (Vertical, G2) -->
+  <line x1="150" y1="50" x2="150" y2="150" stroke="#89B4FA" stroke-width="4"/>
+  <text x="130" y="70" fill="#89B4FA" font-size="12" font-family="Arial" font-weight="bold">G₂</text>
+  <!-- Mirror 2 Hatch marks -->
+  <path d="M 150 70 L 142 65 M 150 90 L 142 85 M 150 110 L 142 105 M 150 130 L 142 125" stroke="#585B70" stroke-width="1.5"/>
+  
+  <!-- Extended virtual mirror lines (dashed) -->
+  <line x1="150" y1="150" x2="60" y2="150" stroke="#585B70" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="150" y1="150" x2="150" y2="240" stroke="#585B70" stroke-width="1.5" stroke-dasharray="4,4"/>
+  
+  <!-- Symmetric Locus Circle (dashed) -->
+  <circle cx="150" cy="150" r="94.3" fill="none" stroke="#313244" stroke-width="1.5" stroke-dasharray="4,4"/>
+  
+  <!-- Object S -->
+  <circle cx="230" cy="100" r="5" fill="#F9E2AF"/>
+  <text x="240" y="98" fill="#F9E2AF" font-size="14" font-family="Arial" font-weight="bold">S</text>
+  
+  <!-- Image S1 (via G1) -->
+  <circle cx="230" cy="200" r="5" fill="#A6E3A1" opacity="0.8"/>
+  <text x="240" y="205" fill="#A6E3A1" font-size="12" font-family="Arial">S₁ (ảnh của S qua G₁)</text>
+  <line x1="230" y1="100" x2="230" y2="200" stroke="#585B70" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Image S2 (via G2) -->
+  <circle cx="70" cy="100" r="5" fill="#A6E3A1" opacity="0.8"/>
+  <text x="20" y="95" fill="#A6E3A1" font-size="12" font-family="Arial">S₂ (ảnh qua G₂)</text>
+  <line x1="230" y1="100" x2="70" y2="100" stroke="#585B70" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Image S12 / S21 (coincident image) -->
+  <circle cx="70" cy="200" r="5" fill="#F38BA8" opacity="0.8"/>
+  <text x="15" y="215" fill="#F38BA8" font-size="12" font-family="Arial" font-weight="bold">S₁₂ ≡ S₂₁</text>
+  <line x1="70" y1="100" x2="70" y2="200" stroke="#585B70" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="230" y1="200" x2="70" y2="200" stroke="#585B70" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

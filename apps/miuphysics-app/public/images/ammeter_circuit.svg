@@ -1,0 +1,57 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E1E2E" rx="8"/>
+  <!-- Main entry A -->
+  <line x1="40" y1="120" x2="100" y2="120" stroke="#CDD6F4" stroke-width="3"/>
+  <circle cx="40" cy="120" r="5" fill="#F38BA8"/>
+  <text x="35" y="105" fill="#CDD6F4" font-size="16" font-family="Arial" font-weight="bold">A</text>
+  
+  <!-- Junction Left to Top/Bottom -->
+  <line x1="100" y1="120" x2="160" y2="60" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="100" y1="120" x2="160" y2="180" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Resistor R1 (Top Left) -->
+  <rect x="140" y="45" width="40" height="30" fill="#313244" stroke="#89B4FA" stroke-width="3" rx="4"/>
+  <text x="150" y="65" fill="#89B4FA" font-size="14" font-family="Arial" font-weight="bold">R₁</text>
+  
+  <!-- Resistor R2 (Bottom Left) -->
+  <rect x="140" y="165" width="40" height="30" fill="#313244" stroke="#89B4FA" stroke-width="3" rx="4"/>
+  <text x="150" y="185" fill="#89B4FA" font-size="14" font-family="Arial" font-weight="bold">R₂</text>
+  
+  <!-- Lines from R1/R2 to Bridge Nodes -->
+  <line x1="180" y1="60" x2="200" y2="60" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="180" y1="180" x2="200" y2="180" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Bridge Nodes C and D -->
+  <circle cx="200" cy="60" r="4" fill="#CDD6F4"/>
+  <text x="195" y="45" fill="#CDD6F4" font-size="12" font-family="Arial">C</text>
+  <circle cx="200" cy="180" r="4" fill="#CDD6F4"/>
+  <text x="195" y="205" fill="#CDD6F4" font-size="12" font-family="Arial">D</text>
+  
+  <!-- Ammeter (Bridge branch) -->
+  <line x1="200" y1="60" x2="200" y2="100" stroke="#CDD6F4" stroke-width="3"/>
+  <circle cx="200" cy="120" r="20" fill="#313244" stroke="#F5C2E7" stroke-width="3"/>
+  <text x="193" y="126" fill="#F5C2E7" font-size="18" font-family="Arial" font-weight="bold">A</text>
+  <line x1="200" y1="140" x2="200" y2="180" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Lines from Bridge Nodes to R3/R4 -->
+  <line x1="200" y1="60" x2="220" y2="60" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="200" y1="180" x2="220" y2="180" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Resistor R3 (Top Right) -->
+  <rect x="220" y="45" width="40" height="30" fill="#313244" stroke="#89B4FA" stroke-width="3" rx="4"/>
+  <text x="230" y="65" fill="#89B4FA" font-size="14" font-family="Arial" font-weight="bold">R₃</text>
+  
+  <!-- Resistor R4 (Bottom Right) -->
+  <rect x="220" y="165" width="40" height="30" fill="#313244" stroke="#89B4FA" stroke-width="3" rx="4"/>
+  <text x="230" y="185" fill="#89B4FA" font-size="14" font-family="Arial" font-weight="bold">R₄</text>
+  
+  <!-- Junction Right to B -->
+  <line x1="260" y1="60" x2="300" y2="120" stroke="#CDD6F4" stroke-width="3"/>
+  <line x1="260" y1="180" x2="300" y2="120" stroke="#CDD6F4" stroke-width="3"/>
+  
+  <!-- Main exit B -->
+  <line x1="300" y1="120" x2="360" y2="120" stroke="#CDD6F4" stroke-width="3"/>
+  <circle cx="360" cy="120" r="5" fill="#F38BA8"/>
+  <text x="350" y="105" fill="#CDD6F4" font-size="16" font-family="Arial" font-weight="bold">B</text>
+</svg>

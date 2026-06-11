@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-05T23:38:24.207Z",
+  "included": {
+    "doc24": 24,
+    "pdfAdvanced": 18,
+    "total": 42
+  },
+  "excluded": [
+    {
+      "fileName": "de-khao-sat-hsg-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-khao-sat-hsg-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "pageCount": 6,
+      "textLength": 0,
+      "extractedBlockCount": 0,
+      "artifactPerK": 0,
+      "reasons": [
+        "empty_text_or_scanned_pdf",
+        "too_few_detected_exercise_blocks"
+      ]
+    },
+    {
+      "fileName": "phuong-phap-dirichle-va-ung-dung-nguyen-huu-dien.pdf",
+      "relativePath": "on vao 10/phuong-phap-dirichle-va-ung-dung-nguyen-huu-dien.pdf",
+      "pageCount": 184,
+      "textLength": 86148,
+      "extractedBlockCount": 1,
+      "artifactPerK": 25.54,
+      "reasons": [
+        "too_few_detected_exercise_blocks",
+        "legacy_font_or_mojibake_text"
+      ]
+    }
+  ]
+}

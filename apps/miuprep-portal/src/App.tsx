@@ -1,37 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import { MiuMascot } from '@miuprep/ui';
 import { calculateCoinsReward } from '@miuprep/core';
 import { LocalStorageAdapter, LocalUser, SystemLog } from '@miuprep/db';
 import { buildLearningEvent, type LearningEventRecord } from '@miuprep/learning';
-import UnifiedLearnerDashboard from './components/UnifiedLearnerDashboard';
-import ParentLearningOverview from './components/ParentLearningOverview';
-import AdminLearningAnalytics from './components/AdminLearningAnalytics';
-import AITutorPreviewPanel from './components/AITutorPreviewPanel';
-import BetaImplementationTracker from './components/BetaImplementationTracker';
-import SystemSurfacePreview from './components/SystemSurfacePreview';
-import StudentTodaySprint from './components/StudentTodaySprint';
-import MathLessonTemplatePanel from './components/MathLessonTemplatePanel';
-import EnglishCoreLessonTemplatePanel from './components/EnglishCoreLessonTemplatePanel';
-import TemplatePracticeSessionPanel from './components/TemplatePracticeSessionPanel';
-import EnglishItemBankPracticePanel from './components/EnglishItemBankPracticePanel';
-import ErrorNotebookV2Panel from './components/ErrorNotebookV2Panel';
-import AdminInterventionQueue from './components/AdminInterventionQueue';
-import AdminContentRepairQueue from './components/AdminContentRepairQueue';
-import ParentActionSummary from './components/ParentActionSummary';
 import {
   advanceSatPractice,
   answerSatQuestion,
   createSatErrorQuestion,
   createSatPracticeState,
-  getSatExplanation,
   type ErrorNotebookQuestion,
   type SatPracticeState,
   type SatQuestion,
 } from './lib/satPractice';
 import {
   DEFAULT_ERROR_NOTEBOOK_QUESTIONS,
-  MASCOT_STORE_ITEMS,
-  STUDENT_DIARY_MOODS,
+  DAILY_PLAN_COMPLETION_REWARD,
   buildDailyLoopStepLearningEvent,
   buildEnglishItemBankPracticeAttemptLearningEvent,
   buildErrorRetryLearningEvent,
@@ -40,7 +23,6 @@ import {
   buildStudentWorkspaceTabs,
   countActiveErrorQuestions,
   getActiveErrorQuestions,
-  getErrorNotebookSummary,
   getTodayPlanDateKey,
   loadStudentProgressSnapshot,
   openErrorNotebookFromOverview,
@@ -56,24 +38,29 @@ import {
   type LessonTemplateAction,
   type StudentWorkspaceTabId,
 } from './lib/studentProgress';
-import {
-  advanceTemplatePractice,
-  answerTemplatePracticeQuestion,
-  createTemplatePracticeState,
-  type TemplatePracticeChoiceKey,
-  type TemplatePracticeQuestion,
-  type TemplatePracticeState,
-  type TemplatePracticeTemplate,
+import type {
+  TemplatePracticeChoiceKey,
+  TemplatePracticeQuestion,
+  TemplatePracticeState,
+  TemplatePracticeTemplate,
 } from './lib/templatePractice';
-import {
-  advanceEnglishItemBankPractice,
-  answerEnglishItemBankPracticeQuestion,
-  createEnglishItemBankPracticeState,
-  isEnglishItemBankProgramId,
-  type EnglishItemBankPracticeChoiceKey,
-  type EnglishItemBankPracticeQuestion,
-  type EnglishItemBankPracticeState,
+import type {
+  EnglishItemBankPracticeChoiceKey,
+  EnglishItemBankPracticeQuestion,
+  EnglishItemBankPracticeState,
 } from './lib/englishItemBankPractice';
+import AdminAnalyticsWorkspace from './components/AdminAnalyticsWorkspace';
+import AdminContentReviewPanel from './components/AdminContentReviewPanel';
+import AdminExamImportPanel from './components/AdminExamImportPanel';
+import AdminLogsPanel from './components/AdminLogsPanel';
+import AdminMathContentPanel from './components/AdminMathContentPanel';
+import AdminOverviewPanel from './components/AdminOverviewPanel';
+import AdminSatContentPanel from './components/AdminSatContentPanel';
+import AdminUserDetailModal from './components/AdminUserDetailModal';
+import AdminUsersPanel from './components/AdminUsersPanel';
+import ParentWorkspace from './components/ParentWorkspace';
+import StudentDashboardWorkspace from './components/StudentDashboardWorkspace';
+import StudentSatBoardWorkspace from './components/StudentSatBoardWorkspace';
 import {
   buildContentExamChangeSet,
   buildContentReviewChangeSetExport,
@@ -99,6 +86,28 @@ import {
   type ImportedExam,
 } from './lib/adminContent';
 
+const SystemSurfacePreview = React.lazy(() => import('./components/SystemSurfacePreview'));
+
+type TemplatePracticeModule = typeof import('./lib/templatePractice');
+type EnglishItemBankPracticeModule = typeof import('./lib/englishItemBankPractice');
+
+let templatePracticeModulePromise: Promise<TemplatePracticeModule> | null = null;
+let englishItemBankPracticeModulePromise: Promise<EnglishItemBankPracticeModule> | null = null;
+
+function loadTemplatePracticeModule(): Promise<TemplatePracticeModule> {
+  if (!templatePracticeModulePromise) {
+    templatePracticeModulePromise = import('./lib/templatePractice');
+  }
+  return templatePracticeModulePromise;
+}
+
+function loadEnglishItemBankPracticeModule(): Promise<EnglishItemBankPracticeModule> {
+  if (!englishItemBankPracticeModulePromise) {
+    englishItemBankPracticeModulePromise = import('./lib/englishItemBankPractice');
+  }
+  return englishItemBankPracticeModulePromise;
+}
+
 const db = new LocalStorageAdapter();
 
 function downloadJsonFile(filename: string, payload: ContentExamChangeSet | ContentReviewChangeSetExport): void {
@@ -117,46 +126,19 @@ function safeFilePart(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '') || 'content';
 }
 
-const FORMULA_TOKEN_PATTERN = /\{\{formula:([^}|]+)(?:\|w=(\d+))?(?:\|h=(\d+))?\}\}/g;
-
-function PromptWithAssets({ text, className }: { text: string; className?: string }): JSX.Element {
-  const promptText = String(text || '');
-  const nodes: React.ReactNode[] = [];
-  let cursor = 0;
-
-  for (const match of promptText.matchAll(FORMULA_TOKEN_PATTERN)) {
-    const index = match.index ?? 0;
-    if (index > cursor) {
-      nodes.push(<span key={`text-${cursor}`}>{promptText.slice(cursor, index)}</span>);
-    }
-
-    const src = match[1] || '';
-    const width = match[2] ? Number(match[2]) : undefined;
-    const height = match[3] ? Number(match[3]) : undefined;
-    if (src.startsWith('/assets/')) {
-      nodes.push(
-        <img
-          key={`formula-${index}`}
-          src={src}
-          alt="math formula"
-          loading="lazy"
-          className="mx-1 inline-block max-w-full rounded-sm bg-white align-middle"
-          style={{
-            width: width ? `${Math.min(width, 360)}px` : undefined,
-            height: height ? `${Math.min(height, 180)}px` : undefined,
-            objectFit: 'contain',
-          }}
-        />,
-      );
-    }
-    cursor = index + match[0].length;
-  }
-
-  if (cursor < promptText.length) {
-    nodes.push(<span key={`text-${cursor}`}>{promptText.slice(cursor)}</span>);
-  }
-
-  return <div className={className}>{nodes.length ? nodes : promptText}</div>;
+function DeferredPanel({ children, label = 'Loading workspace' }: { children: React.ReactNode; label?: string }): JSX.Element {
+  return (
+    <Suspense
+      fallback={(
+        <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 shadow-xl">
+          <div className="h-2 w-28 rounded-full bg-emerald-400/70 animate-pulse mb-4" />
+          <p className="text-xs font-black uppercase tracking-widest text-slate-500 m-0">{label}</p>
+        </section>
+      )}
+    >
+      {children}
+    </Suspense>
+  );
 }
 
 type LessonTemplateActionTemplate = TemplatePracticeTemplate;
@@ -618,12 +600,13 @@ export default function App() {
     setActivePracticeState(nextState);
   };
 
-  const startLessonTemplatePractice = (
+  const startLessonTemplatePractice = async (
     template: LessonTemplateActionTemplate,
     domainId: 'mathematics' | 'english_core',
     programId: string,
     sourceSurface: 'math_lesson_template_panel' | 'english_core_lesson_template_panel',
   ) => {
+    const { createTemplatePracticeState } = await loadTemplatePracticeModule();
     const nextState = createTemplatePracticeState({ template, domainId, programId, sourceSurface });
     if (!nextState) {
       showNotif("Template nay chua co practice item de cham diem.", "info");
@@ -640,6 +623,7 @@ export default function App() {
     template: LessonTemplateActionTemplate,
     programId: 'ielts' | 'cae' | 'cpe',
   ): Promise<boolean> => {
+    const { createEnglishItemBankPracticeState } = await loadEnglishItemBankPracticeModule();
     const attemptedItemIds = getAttemptedEnglishItemIds(programId);
     const nextState = await createEnglishItemBankPracticeState({
       template,
@@ -683,8 +667,9 @@ export default function App() {
     setActivePracticeState(nextState);
   };
 
-  const handleAnswerTemplatePractice = (choice: TemplatePracticeChoiceKey) => {
+  const handleAnswerTemplatePractice = async (choice: TemplatePracticeChoiceKey) => {
     if (!templatePracticeState) return;
+    const { answerTemplatePracticeQuestion } = await loadTemplatePracticeModule();
     const { currentQuestion, isCorrect, nextState } = answerTemplatePracticeQuestion(templatePracticeState, choice);
     if (currentUser?.role === 'student') {
       const selectedMove = currentQuestion.choices.find((item) => item.key === choice)?.text || '';
@@ -737,8 +722,9 @@ export default function App() {
     setTemplatePracticeState(nextState);
   };
 
-  const handleNextTemplatePractice = () => {
+  const handleNextTemplatePractice = async () => {
     if (!templatePracticeState) return;
+    const { advanceTemplatePractice } = await loadTemplatePracticeModule();
     const { completed, finalScore, totalQuestions, nextState } = advanceTemplatePractice(templatePracticeState);
     if (completed) {
       showNotif(`Hoan thanh scored practice: ${finalScore}/${totalQuestions} cau dung.`, "success");
@@ -769,8 +755,9 @@ export default function App() {
     correctRetryCount: 0,
   });
 
-  const handleAnswerEnglishItemBankPractice = (choice: EnglishItemBankPracticeChoiceKey) => {
+  const handleAnswerEnglishItemBankPractice = async (choice: EnglishItemBankPracticeChoiceKey) => {
     if (!englishItemBankPracticeState) return;
+    const { answerEnglishItemBankPracticeQuestion } = await loadEnglishItemBankPracticeModule();
     const { currentQuestion, isCorrect, nextState } = answerEnglishItemBankPracticeQuestion(englishItemBankPracticeState, choice);
     const selectedChoice = currentQuestion.choices.find((item) => item.key === choice);
 
@@ -826,8 +813,9 @@ export default function App() {
     setEnglishItemBankPracticeState(nextState);
   };
 
-  const handleNextEnglishItemBankPractice = () => {
+  const handleNextEnglishItemBankPractice = async () => {
     if (!englishItemBankPracticeState) return;
+    const { advanceEnglishItemBankPractice } = await loadEnglishItemBankPracticeModule();
     const { completed, finalScore, totalQuestions, nextState } = advanceEnglishItemBankPractice(englishItemBankPracticeState);
     if (completed) {
       showNotif(`Hoan thanh item-bank practice: ${finalScore}/${totalQuestions} cau dung.`, "success");
@@ -891,11 +879,11 @@ export default function App() {
     }, 2000);
   };
 
-  const handleImportJsonExam = (trackId: EnglishExamTrack) => {
+  const handleImportJsonExam = async (trackId: EnglishExamTrack) => {
     setExamImportError(null);
     setExamImportSuccess(null);
 
-    const result = importExamFromJson(examJsonInput, trackId);
+    const result = await importExamFromJson(examJsonInput, trackId);
 
     if (!result.ok) {
       setExamImportError(result.error);
@@ -1065,6 +1053,11 @@ export default function App() {
     };
     setSelectedContentExamId(exam.id);
     setContentExamDraft(editableExam);
+  };
+
+  const handleCloseContentExam = () => {
+    setSelectedContentExamId(null);
+    setContentExamDraft(null);
   };
 
   const updateContentExamDraft = (patch: Partial<ImportedExam>) => {
@@ -1637,12 +1630,24 @@ export default function App() {
   const handleDailyPlanCompleted = async () => {
     if (!currentUser || currentUser.role !== 'student') return;
     const dateKey = getTodayPlanDateKey();
+    const alreadyRewardedToday = studentLearningEvents.some((event) => {
+      return (
+        event.type === 'daily_target_completed' &&
+        event.learnerId === currentUser.username &&
+        (event.payload?.dateKey === dateKey || String(event.entityId || '').endsWith(dateKey))
+      );
+    });
+    if (alreadyRewardedToday) {
+      showNotif('Today quest is already completed. Keep the streak alive tomorrow.', 'info');
+      return;
+    }
     const event = buildLearningEvent(
       'daily_target_completed',
       {
         dateKey,
         dailyPlanCompleted: true,
         dailyStepIds: ['diagnostic', 'lesson', 'guided', 'independent', 'review'],
+        rewardCoins: DAILY_PLAN_COMPLETION_REWARD,
         sourceSurface: 'student_today_sprint',
       },
       {
@@ -1653,9 +1658,14 @@ export default function App() {
       },
     );
     await db.saveLearningEvent(event);
+    setFishCoins(prev => {
+      const nextCoins = prev + DAILY_PLAN_COMPLETION_REWARD;
+      persistCoinBalance(localStorage, currentUser.username, nextCoins);
+      return nextCoins;
+    });
     setStudentLearningEvents(await db.listLearningEvents(undefined, 200));
     await logSystemEvent('INFO', `Hoc sinh @${currentUser.username} hoan thanh today target`, { dateKey, eventId: event.id });
-    showNotif('Today target completed. Miuprep se day hoc sinh sang muc tiep theo khi mastery du on dinh.', 'success');
+    showNotif(`Today quest completed. +${DAILY_PLAN_COMPLETION_REWARD} coins earned.`, 'success');
   };
 
   const handleDailyStepCompleted = (stepId: DailyLoopStepId) => {
@@ -1684,7 +1694,7 @@ export default function App() {
       sourceSurface: 'math_lesson_template_panel',
     }));
     if (action === 'open_practice') {
-      startLessonTemplatePractice(template, 'mathematics', 'vn_math_6_9', 'math_lesson_template_panel');
+      void startLessonTemplatePractice(template, 'mathematics', 'vn_math_6_9', 'math_lesson_template_panel');
     }
   };
 
@@ -1705,11 +1715,12 @@ export default function App() {
       sourceSurface: 'english_core_lesson_template_panel',
     }));
     if (action === 'open_practice') {
+      const { isEnglishItemBankProgramId } = await loadEnglishItemBankPracticeModule();
       if (isEnglishItemBankProgramId(programId)) {
         const started = await startEnglishItemBankPractice(template, programId);
         if (started) return;
       }
-      startLessonTemplatePractice(template, 'english_core', programId, 'english_core_lesson_template_panel');
+      await startLessonTemplatePractice(template, 'english_core', programId, 'english_core_lesson_template_panel');
     }
   };
 
@@ -1797,6 +1808,13 @@ export default function App() {
     }
   };
 
+  const handleOpenUserDetail = async (userUsername: string) => {
+    const fullUserObj = await db.getLocalUser(userUsername);
+    if (fullUserObj) {
+      setSelectedUserForDetail(fullUserObj);
+    }
+  };
+
   const handleUpdateStatus = async (userUsername: string, nextStatus: 'approved' | 'rejected') => {
     try {
       const targetUser = await db.getLocalUser(userUsername);
@@ -1835,6 +1853,45 @@ export default function App() {
     await logSystemEvent('INFO', 'Đồng bộ hóa Salmon Coins ví dùng chung hoàn tất');
     await refreshAdminData();
     showNotif("Đã tái tạo dữ liệu Telemetry Logs mẫu thành công meow! 📊", "success");
+  };
+
+  const handleSendEmergencyIntervention = async () => {
+    alert("Đã gửi thông báo nhắc nhở kèm bài tập bổ sung môn Toán 9 cho tài khoản con @con.cung meow! 🐾🚀");
+    await logSystemEvent('WARN', 'Admin đã gửi thông báo khắc phục khẩn cấp cho con @con.cung');
+  };
+
+  const handleApproveAllPendingUsers = async () => {
+    const list = await db.listLocalUsers();
+    for (const user of list) {
+      if (user.status === 'pending') {
+        const fullUser = await db.getLocalUser(user.username);
+        if (fullUser) {
+          fullUser.status = 'approved';
+          await db.registerLocalUser(fullUser);
+        }
+      }
+    }
+    await logSystemEvent('WARN', 'Admin phê duyệt nhanh tất cả các tài khoản');
+    showNotif("Đã phê duyệt nhanh toàn bộ tài khoản meow! 🚀", "success");
+    await refreshAdminData();
+  };
+
+  const handleBoostAllStudentCoins = async () => {
+    const users = await db.listLocalUsers();
+    users.forEach((user) => {
+      if (user.role === 'student') {
+        persistCoinBalance(localStorage, user.username, 1000);
+      }
+    });
+    await logSystemEvent('WARN', 'Admin bơm tài nguyên: Set ví học viên thành 1,000 Coins');
+    showNotif("Bơm tài nguyên 1,000 Coins cho tất cả học viên thành công! 🐟", "success");
+    await refreshAdminData();
+  };
+
+  const handleClearTelemetryLogs = () => {
+    localStorage.removeItem('ielts_app_logs_list');
+    setAdminLogs([]);
+    showNotif("Đã làm sạch toàn bộ Telemetry Logs meow!", "success");
   };
 
   // ==========================================
@@ -2261,829 +2318,69 @@ export default function App() {
             ========================================== */}
         {currentUser && currentUser.role === 'student' && (
           activeStudentTab === 'sat-board' ? (
-            <div className="space-y-8 animate-fade-in text-left">
-              
-              {/* SAT Header Control Bar */}
-              <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-r from-slate-900 via-rose-950/5 to-slate-950">
-                <div className="flex items-center gap-4">
-                  <button
-                    onClick={() => {
-                      setActiveStudentTab('dashboard');
-                      setActivePracticeState(null);
-                      setEnglishItemBankPracticeState(null);
-                    }}
-                    className="px-4 py-2 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-300 hover:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer"
-                  >
-                    ← Quay lại Dashboard
-                  </button>
-                  <div>
-                    <h2 className="text-lg font-black text-rose-400 font-sans tracking-tight">STUDIO SAT THÍCH ỨNG</h2>
-                    <p className="text-[10px] text-slate-500 mt-0.5">Tích hợp lý thuyết IRT & Động cơ thi thử Bluebook</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-wrap items-center gap-4">
-                  {/* Dynamic IRT Gauge */}
-                  <div className="bg-slate-955 border border-slate-850 px-4 py-2 rounded-2xl flex items-center gap-3">
-                    <span className="text-xl">🧠</span>
-                    <div className="flex flex-col">
-                      <span className="text-[8px] uppercase tracking-wider text-slate-500 font-bold">Estimated IRT</span>
-                      <span className="text-sm font-black text-rose-400 font-mono">{satEstimatedScore} <span className="text-[10px] text-slate-500">/ 1600</span></span>
-                    </div>
-                  </div>
-
-                  {/* Target Score */}
-                  <div className="bg-slate-955 border border-slate-850 px-4 py-2 rounded-2xl flex items-center gap-3">
-                    <span className="text-xl">🎯</span>
-                    <div className="flex flex-col">
-                      <span className="text-[8px] uppercase tracking-wider text-slate-500 font-bold">Mục tiêu</span>
-                      <span className="text-sm font-black text-amber-400 font-mono">{satTargetScore} <span className="text-[10px] text-slate-500">/ 1600</span></span>
-                    </div>
-                  </div>
-
-                  {/* Coins Balance */}
-                  <div className="bg-slate-955 border border-slate-850 px-4 py-2 rounded-2xl flex items-center gap-3">
-                    <span className="text-xl">🐟</span>
-                    <div className="flex flex-col">
-                      <span className="text-[8px] uppercase tracking-wider text-slate-500 font-bold">Salmon Coins</span>
-                      <span className="text-sm font-black text-emerald-400 font-mono">{fishCoins} Xu</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Dynamic JSON Bank Selector Card */}
-              <div className="bg-slate-900/40 border border-slate-850 rounded-3xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="flex items-center gap-3 text-left">
-                  <span className="text-3xl bg-slate-955 p-2 rounded-2xl border border-slate-850">🎓</span>
-                  <div className="space-y-0.5">
-                    <span className="text-[9px] uppercase tracking-widest font-black text-slate-500">Chọn Ngân Hàng Đề Thi SAT (10,000+ Câu)</span>
-                    <p className="text-xs text-slate-300 font-bold">
-                      {selectedSatBank === 'antigravity-bank.json' 
-                        ? 'Master Antigravity Bank (7,158 câu cực lớn • Đầy đủ Reading, Writing & Math)' 
-                        : selectedSatBank === 'opensat-pinesat.json'
-                          ? 'OpenSAT Pinesat (1,026 câu thi thử thích ứng)'
-                          : selectedSatBank === 'sat-1590-elite-ai-bank.json'
-                            ? 'Elite AI Bank (661 câu tinh hoa nâng cao)'
-                            : selectedSatBank === 'sat-studio-foundation-bank.json'
-                              ? 'SAT Studio Foundation Bank (219 câu chuyên đề nền tảng)'
-                              : selectedSatBank === 'private-vault-archive-bank.json'
-                                ? 'Private Vault Archive Bank (165 câu lưu trữ đặc biệt)'
-                                : selectedSatBank === 'kaplan-sat-math-ai-bank.json'
-                                  ? 'Kaplan SAT Math AI Bank (148 câu toán cao cấp)'
-                                  : 'Supplemental SAT AI Question Pack'}
-                    </p>
-                  </div>
-                </div>
-
-                <select
-                  value={selectedSatBank}
-                  onChange={e => {
-                    setSelectedSatBank(e.target.value);
-                    setActivePracticeState(null);
-                    setTemplatePracticeState(null);
-                    setEnglishItemBankPracticeState(null);
-                  }}
-                  className="bg-slate-955 border border-slate-850 text-slate-200 rounded-xl px-4 py-2.5 text-xs font-bold outline-none cursor-pointer focus:border-rose-500 min-w-[240px]"
-                >
-                  <option value="sat-1590-elite-ai-bank.json">1. Elite AI Bank (661 câu - Nạp nhanh 🚀)</option>
-                  <option value="antigravity-bank.json">2. Antigravity Bank (7,158 câu - Dung lượng lớn 50MB 🐘)</option>
-                  <option value="opensat-pinesat.json">3. OpenSAT Pinesat (1,026 câu)</option>
-                  <option value="sat-king-supplemental-ai-bank.json">4. Supplemental AI Bank (354 câu)</option>
-                  <option value="archive-source-ai-bank.json">5. Archive AI Bank (792 câu)</option>
-                  <option value="sat-studio-foundation-bank.json">6. Foundation Bank (219 câu)</option>
-                  <option value="private-vault-archive-bank.json">7. Private Vault Bank (165 câu)</option>
-                  <option value="kaplan-sat-math-ai-bank.json">8. Kaplan Math AI Bank (148 câu)</option>
-                </select>
-              </div>
-
-              {/* Loading Indicator */}
-              {isLoadingQuestions && (
-                <div className="bg-slate-900 border border-slate-800 rounded-3xl p-12 text-center flex flex-col items-center justify-center gap-4">
-                  <div className="w-10 h-10 border-4 border-rose-500 border-t-transparent rounded-full animate-spin"></div>
-                  <p className="text-xs text-slate-400 font-bold font-sans">
-                    Đang nạp cơ sở dữ liệu SAT thích ứng meow... {selectedSatBank === 'antigravity-bank.json' ? '(Tệp dữ liệu siêu lớn 50MB, vui lòng đợi trong giây lát...)' : 'Tải cực nhanh...'}
-                  </p>
-                </div>
-              )}
-
-              {/* Main Workspace Display */}
-              {!isLoadingQuestions && (
-                activePracticeState ? (
-                  /* ==========================================
-                     PRACTICE MODE ACTIVE
-                     ========================================== */
-                  <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 items-start">
-                    
-                    {/* Left: Active Question Board */}
-                    <div className="xl:col-span-2 bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-6 relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950">
-                      <div className="absolute top-0 left-0 w-full h-[3px] bg-rose-500" />
-                      
-                      {/* Breadcrumb info */}
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-805">
-                        <div className="flex flex-col gap-1">
-                          <span className="text-[9px] uppercase tracking-wider font-extrabold text-rose-455">
-                            {activePracticeState.domain} • {activePracticeState.skill}
-                          </span>
-                          <h3 className="text-xs font-black text-slate-400">
-                            Câu hỏi {activePracticeState.currentIndex + 1} trên {activePracticeState.questions.length}
-                          </h3>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className={`text-[9px] font-black px-2 py-0.5 rounded-md border uppercase tracking-wider ${
-                            activePracticeState.questions[activePracticeState.currentIndex].difficulty === 'Hard'
-                              ? 'bg-rose-950/70 border-rose-900 text-rose-400'
-                              : activePracticeState.questions[activePracticeState.currentIndex].difficulty === 'Medium'
-                                ? 'bg-amber-950/70 border-amber-900 text-amber-400'
-                                : 'bg-emerald-950/70 border-emerald-900 text-emerald-400'
-                          }`}>
-                            Độ khó: {activePracticeState.questions[activePracticeState.currentIndex].difficulty || 'Medium'}
-                          </span>
-                          <span className="text-[9px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded-md font-mono font-bold uppercase">
-                            ID: {activePracticeState.questions[activePracticeState.currentIndex].id}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Question Prompt */}
-                      <div className="space-y-4">
-                        <PromptWithAssets
-                          text={activePracticeState.questions[activePracticeState.currentIndex].prompt}
-                          className="text-sm font-extrabold text-slate-150 leading-relaxed bg-slate-955 p-5 rounded-2xl border border-slate-850/60 font-sans shadow-inner whitespace-pre-line"
-                        />
-                      </div>
-
-                      {/* Choices Panel */}
-                      <div className="space-y-3">
-                        {activePracticeState.questions[activePracticeState.currentIndex].choices ? (
-                          /* Multiple Choice Questions */
-                          Object.entries(activePracticeState.questions[activePracticeState.currentIndex].choices).map(([opt, text]) => {
-                            const isSelected = activePracticeState.selectedAnswer === opt;
-                            const isCorrectAns = activePracticeState.questions[activePracticeState.currentIndex].correctAnswer?.trim().toUpperCase() === opt.toUpperCase();
-                            const hasBeenAnswered = activePracticeState.answered;
-
-                            let btnStyle = "bg-slate-950 hover:bg-slate-900 border-slate-850 text-slate-300";
-                            if (hasBeenAnswered) {
-                              if (isCorrectAns) {
-                                btnStyle = "bg-emerald-950/30 border-emerald-500 text-emerald-400 font-extrabold";
-                              } else if (isSelected) {
-                                btnStyle = "bg-rose-950/30 border-rose-500 text-rose-455 font-extrabold";
-                              } else {
-                                btnStyle = "bg-slate-950/30 border-slate-900 text-slate-600 opacity-60";
-                              }
-                            } else if (isSelected) {
-                              btnStyle = "bg-rose-950/30 border-rose-500 text-rose-400";
-                            }
-
-                            return (
-                              <button
-                                key={opt}
-                                disabled={hasBeenAnswered}
-                                onClick={() => handleAnswerSatQuestion(opt)}
-                                className={`w-full p-4 rounded-2xl border text-xs text-left transition-all duration-150 flex items-start gap-3 hover:scale-[1.002] cursor-pointer ${btnStyle}`}
-                              >
-                                <span className={`w-6 h-6 rounded-lg font-black flex items-center justify-center shrink-0 border uppercase text-[10px] ${
-                                  isSelected 
-                                    ? 'bg-rose-500 border-rose-400 text-slate-950' 
-                                    : hasBeenAnswered && isCorrectAns
-                                      ? 'bg-emerald-500 border-emerald-400 text-slate-950'
-                                      : 'bg-slate-900 border-slate-800 text-slate-400'
-                                }`}>
-                                  {opt}
-                                </span>
-                                <span className="flex-1 leading-normal font-semibold">{text as string}</span>
-                              </button>
-                            );
-                          })
-                        ) : (
-                          /* Student-Produced Response (SPR) Math questions */
-                          <div className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3">
-                            <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 block mb-1">Nhập kết quả số của bạn</span>
-                            <div className="flex gap-2">
-                              <input
-                                type="text"
-                                disabled={activePracticeState.answered}
-                                placeholder="Ví dụ: 5, -2.5, 7/3..."
-                                value={activePracticeState.customInput}
-                                onChange={e => setActivePracticeState({ ...activePracticeState, customInput: e.target.value })}
-                                className="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm outline-none focus:border-rose-500 text-slate-200"
-                              />
-                              <button
-                                disabled={activePracticeState.answered || !activePracticeState.customInput.trim()}
-                                onClick={() => handleAnswerSatQuestion(activePracticeState.customInput.trim())}
-                                className="px-6 bg-rose-600 hover:bg-rose-700 text-white font-extrabold uppercase text-xs tracking-wider rounded-xl transition-all border-0 cursor-pointer shadow disabled:opacity-50"
-                              >
-                                Gửi Đáp Án
-                              </button>
-                            </div>
-                            {activePracticeState.answered && (
-                              <p className="text-xs text-slate-400 font-medium">
-                                Đáp án chính xác: <strong className="text-emerald-400 font-mono">{activePracticeState.questions[activePracticeState.currentIndex].correctAnswer}</strong>
-                              </p>
-                            )}
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Explanation box */}
-                      {activePracticeState.explanationOpened && (
-                        <div className="bg-slate-955 rounded-2xl border border-slate-850 p-5 space-y-3 text-xs leading-relaxed animate-fade-in">
-                          <span className="font-black text-rose-400 uppercase tracking-widest flex items-center gap-1.5 font-sans">
-                            <span>💡 HƯỚNG DẪN GIẢI THÍCH SƯ PHẠM CHI TIẾT</span>
-                          </span>
-                          <p className="text-slate-300 font-medium font-sans bg-slate-950 p-4 rounded-xl border border-slate-900 whitespace-pre-line leading-relaxed">
-                            {getSatExplanation(activePracticeState.questions[activePracticeState.currentIndex])}
-                          </p>
-                        </div>
-                      )}
-
-                      {/* Next Question Bar */}
-                      {activePracticeState.answered && (
-                        <div className="flex justify-end pt-2">
-                          <button
-                            onClick={handleNextSatQuestion}
-                            className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-950 font-black uppercase text-xs tracking-widest rounded-xl border-0 shadow active:scale-95 duration-100 cursor-pointer"
-                          >
-                            {activePracticeState.currentIndex + 1 < activePracticeState.questions.length 
-                              ? 'Câu Tiếp Theo ➔' 
-                              : 'Kết Thúc & Tổng Kết'}
-                          </button>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Right: Collapsible Desmos Math Calculator */}
-                    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-4">
-                      <div className="flex items-center justify-between border-b border-slate-800 pb-2">
-                        <span className="text-xs font-black uppercase tracking-wider text-indigo-400 font-sans flex items-center gap-1.5">
-                          🧮 Máy tính vẽ đồ thị Desmos
-                        </span>
-                        <span className="text-[9px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono">LIVE PREP</span>
-                      </div>
-                      
-                      <div className="border border-slate-850 rounded-2xl overflow-hidden h-[360px] bg-slate-950 relative shadow-inner">
-                        <iframe
-                          src="https://www.desmos.com/calculator?embed=true"
-                          width="100%"
-                          height="100%"
-                          style={{ border: 'none', filter: 'invert(90%) hue-rotate(180deg)' }}
-                          title="Desmos Live Inside SAT Studio"
-                        />
-                      </div>
-                      <p className="text-[9px] text-slate-500 leading-relaxed font-light">
-                        * Dành cho phần Math: Vẽ các phương trình giao nhau để giải tìm nghiệm nhanh nhất. Máy tính được tích hợp chuẩn giao diện tối.
-                      </p>
-                    </div>
-                  </div>
-                ) : (
-                  /* ==========================================
-                     OVERVIEW: KEY MATRIX OF TOPICS
-                     ========================================== */
-                  <div className="space-y-8 animate-fade-in">
-                    
-                    {/* Welcome Banner */}
-                    <div className="bg-gradient-to-r from-rose-950/20 via-slate-900 to-rose-900/10 border border-rose-500/20 rounded-3xl p-6 text-left flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden">
-                      <div className="absolute top-0 left-0 w-2 bg-rose-500 h-full" />
-                      <div className="space-y-2">
-                        <h2 className="text-lg font-black text-rose-455 font-sans tracking-wide uppercase">⚡ LUYỆN TẬP CHUYÊN ĐỀ HỆ THỐNG THÍCH ỨNG</h2>
-                        <p className="text-xs text-slate-350 leading-relaxed font-light font-sans max-w-2xl">
-                          Hệ thống tự động điều chỉnh độ khó của câu hỏi theo mức năng lực thời gian thực dựa trên Lý thuyết Ứng đáp Câu hỏi (IRT). Hãy chọn một kỹ năng nhỏ bất kỳ bên dưới để bắt đầu meow!
-                        </p>
-                      </div>
-                      <button
-                        onClick={() => handleStartPractice('all', 'all')}
-                        className="px-6 py-3 bg-gradient-to-r from-rose-500 to-red-500 hover:from-rose-600 hover:to-red-600 text-white font-extrabold uppercase text-xs tracking-wider rounded-2xl border-0 shadow active:scale-95 duration-100 cursor-pointer shrink-0"
-                      >
-                        🔥 Thi thử thích ứng tổng hợp
-                      </button>
-                    </div>
-
-                    {/* Skill Taxonomy Matrix */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                      
-                      {/* Section 1: Reading & Writing */}
-                      <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 space-y-6">
-                        <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                          <h3 className="text-sm font-black text-indigo-400 uppercase tracking-widest flex items-center gap-2">
-                            <span>📚 READING & WRITING DOMAINS</span>
-                          </h3>
-                          <span className="text-[10px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono font-bold">4 DOMAINS</span>
-                        </div>
-
-                        {satTaxonomy?.sections?.["Reading and Writing"]?.domains ? (
-                          Object.entries(satTaxonomy.sections["Reading and Writing"].domains).map(([domainName, domainObj]: [string, any]) => (
-                            <div key={domainName} className="space-y-3">
-                              <span className="text-xs font-black text-slate-200 block border-l-2 border-indigo-500 pl-2 bg-indigo-500/5 py-1 rounded-r-md">
-                                {domainName} <span className="text-[10px] text-slate-500 font-mono font-normal">({domainObj.targetPct}% Tỷ trọng)</span>
-                              </span>
-                              
-                              <div className="grid grid-cols-1 gap-2.5">
-                                {Object.keys(domainObj.canonicalSkills || {}).map(skillName => (
-                                  <div
-                                    key={skillName}
-                                    className="p-3 bg-slate-955 rounded-xl border border-slate-850 flex items-center justify-between hover:border-indigo-500/40 transition-colors"
-                                  >
-                                    <div className="space-y-0.5">
-                                      <span className="text-xs font-bold text-slate-300 block">{skillName}</span>
-                                      <span className="text-[9px] text-slate-500 font-light block">Kỹ năng chuẩn College Board</span>
-                                    </div>
-                                    <button
-                                      onClick={() => handleStartPractice(domainName, skillName)}
-                                      className="px-3 py-1.5 bg-indigo-900/50 hover:bg-indigo-600 border border-indigo-850 text-indigo-300 hover:text-white text-[10px] font-black uppercase rounded-lg transition-colors border-0 cursor-pointer"
-                                    >
-                                      Luyện ➔
-                                    </button>
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          ))
-                        ) : (
-                          /* Fallback reading taxonomy if fetch delayed */
-                          <div className="text-xs text-slate-500 italic py-6 text-center">Đang nạp cấu trúc chuyên đề Đọc hiểu meow...</div>
-                        )}
-                      </div>
-
-                      {/* Section 2: Math */}
-                      <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 space-y-6">
-                        <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                          <h3 className="text-sm font-black text-rose-455 uppercase tracking-widest flex items-center gap-2">
-                            <span>📐 MATHEMATICS DOMAINS</span>
-                          </h3>
-                          <span className="text-[10px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono font-bold">4 DOMAINS</span>
-                        </div>
-
-                        {satTaxonomy?.sections?.["Math"]?.domains ? (
-                          Object.entries(satTaxonomy.sections["Math"].domains).map(([domainName, domainObj]: [string, any]) => (
-                            <div key={domainName} className="space-y-3">
-                              <span className="text-xs font-black text-slate-200 block border-l-2 border-rose-500 pl-2 bg-rose-500/5 py-1 rounded-r-md">
-                                {domainName} <span className="text-[10px] text-slate-500 font-mono font-normal">({domainObj.targetPct}% Tỷ trọng)</span>
-                              </span>
-                              
-                              <div className="grid grid-cols-1 gap-2.5">
-                                {Object.keys(domainObj.canonicalSkills || {}).map(skillName => (
-                                  <div
-                                    key={skillName}
-                                    className="p-3 bg-slate-955 rounded-xl border border-slate-850 flex items-center justify-between hover:border-rose-500/40 transition-colors"
-                                  >
-                                    <div className="space-y-0.5">
-                                      <span className="text-xs font-bold text-slate-300 block">{skillName}</span>
-                                      <span className="text-[9px] text-slate-500 font-light block">Chuyên đề con thích ứng</span>
-                                    </div>
-                                    <button
-                                      onClick={() => handleStartPractice(domainName, skillName)}
-                                      className="px-3 py-1.5 bg-rose-950/50 hover:bg-rose-600 border border-rose-900 text-rose-400 hover:text-white text-[10px] font-black uppercase rounded-lg transition-colors border-0 cursor-pointer"
-                                    >
-                                      Luyện ➔
-                                    </button>
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          ))
-                        ) : (
-                          /* Fallback math taxonomy */
-                          <div className="text-xs text-slate-500 italic py-6 text-center">Đang nạp cấu trúc chuyên đề Toán meow...</div>
-                        )}
-                      </div>
-
-                    </div>
-                  </div>
-                )
-              )}
-            </div>
+            <StudentSatBoardWorkspace
+              satEstimatedScore={satEstimatedScore}
+              satTargetScore={satTargetScore}
+              fishCoins={fishCoins}
+              selectedSatBank={selectedSatBank}
+              setSelectedSatBank={setSelectedSatBank}
+              isLoadingQuestions={isLoadingQuestions}
+              activePracticeState={activePracticeState}
+              setActivePracticeState={setActivePracticeState}
+              setTemplatePracticeState={setTemplatePracticeState}
+              setEnglishItemBankPracticeState={setEnglishItemBankPracticeState}
+              satTaxonomy={satTaxonomy}
+              setActiveStudentTab={setActiveStudentTab}
+              handleAnswerSatQuestion={handleAnswerSatQuestion}
+              handleNextSatQuestion={handleNextSatQuestion}
+              handleStartPractice={handleStartPractice}
+            />
           ) : (
-            <div className="space-y-12">
-
-            <section className="max-w-5xl mx-auto">
-              <div className="bg-slate-900/70 border border-slate-800 rounded-2xl p-2 grid grid-cols-2 md:grid-cols-5 gap-2 shadow-xl">
-                {studentWorkspaceTabs.map(tab => (
-                  <button
-                    key={tab.id}
-                    onClick={() => setStudentWorkspaceTab(tab.id)}
-                    className={`rounded-xl px-4 py-3 text-left transition-all border cursor-pointer ${
-                      studentWorkspaceTab === tab.id
-                        ? 'bg-emerald-400 text-slate-950 border-emerald-300 shadow-lg shadow-emerald-950/20'
-                        : 'bg-slate-950/60 text-slate-300 border-slate-850 hover:border-emerald-500/60 hover:text-white'
-                    }`}
-                  >
-                    <span className="block text-sm font-black uppercase tracking-wider">{tab.label}</span>
-                    <span className={`mt-1 block text-[10px] font-bold ${studentWorkspaceTab === tab.id ? 'text-slate-900' : 'text-slate-600'}`}>
-                      {tab.detail}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </section>
-            
-            {/* 1. Student Unified Shared Stats */}
-            {studentWorkspaceTab === 'overview' && (
-              <>
-            <StudentTodaySprint
-              key={`${currentUser.username}-${new Date().toLocaleDateString('en-CA')}`}
+            <StudentDashboardWorkspace
               currentUser={currentUser}
               tracks={TRACKS}
+              studentWorkspaceTabs={studentWorkspaceTabs}
+              studentWorkspaceTab={studentWorkspaceTab}
+              setStudentWorkspaceTab={setStudentWorkspaceTab}
               fishCoins={fishCoins}
               mouseTrapsCount={mouseTrapsCount}
               activeErrorQuestions={activeErrorQuestions}
               activeErrorQuestionCount={activeErrorQuestionCount}
-              learningEvents={studentLearningEvents}
-              onStartRepair={handleOpenStudentRepair}
-              onOpenCourses={() => setStudentWorkspaceTab('courses')}
-              onOpenTutor={() => setStudentWorkspaceTab('tutor')}
-              onDailyStepCompleted={handleDailyStepCompleted}
-              onDailyPlanCompleted={handleDailyPlanCompleted}
-            />
-
-            <section className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {/* Salmon Coins */}
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between shadow hover:border-emerald-500/40 transition-colors bg-gradient-to-tr from-slate-900 to-teal-950/20">
-                <div className="flex flex-col gap-1 text-left">
-                  <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Ví Xu Cá Hồi Chung</span>
-                  <span className="text-3xl font-black text-emerald-400 font-mono">{fishCoins} 🐟</span>
-                  <span className="text-[10px] text-slate-500">Khen thưởng từ MiuMath & Phụ huynh</span>
-                </div>
-                <span className="text-4xl filter drop-shadow">💰</span>
-              </div>
-
-              {/* Spaced-Repetition Mouse Traps (Clickable) */}
-              <div 
-                onClick={() => {
-                  const notebookAction = openErrorNotebookFromOverview(showErrorNotebook);
-                  setShowErrorNotebook(notebookAction.nextShowErrorNotebook);
-                  if (notebookAction.nextWorkspaceTab) {
-                    setStudentWorkspaceTab(notebookAction.nextWorkspaceTab);
-                  }
-                  if (notebookAction.shouldNotify) {
-                    showNotif("Đã mở Sổ Tay Bẫy Chuột Leitner ôn tập! 😼", "info");
-                  }
-                }}
-                className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between shadow hover:border-rose-500/40 transition-all hover:scale-[1.02] cursor-pointer bg-gradient-to-tr from-slate-900 to-rose-950/20"
-                title="Bấm để mở Sổ tay ôn tập Bẫy chuột"
-              >
-                <div className="flex flex-col gap-1 text-left">
-                  <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Bẫy Chuột Sửa Sai *</span>
-                  <span className="text-3xl font-black text-rose-400 font-mono">{mouseTrapsCount} 😼</span>
-                  <span className="text-[10px] text-slate-400 font-bold">Nhập chuột để làm câu sai!</span>
-                </div>
-                <span className="text-4xl filter drop-shadow">🪤</span>
-              </div>
-
-              {/* Global Progress */}
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between shadow hover:border-indigo-500/40 transition-colors bg-gradient-to-tr from-slate-900 to-indigo-950/20">
-                <div className="flex flex-col gap-1 text-left">
-                  <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Độ Thích Ứng (IRT)</span>
-                  <span className="text-3xl font-black text-indigo-400 font-mono">92.4% 🧠</span>
-                  <span className="text-[10px] text-slate-500">Mục tiêu ôn tuần: {(currentUser as any).studyPlan?.weeklyTarget || 4} buổi</span>
-                </div>
-                <span className="text-4xl filter drop-shadow">🌌</span>
-              </div>
-            </section>
-
-            <UnifiedLearnerDashboard
-              currentUser={currentUser}
-              tracks={TRACKS}
-              fishCoins={fishCoins}
-              mouseTrapsCount={mouseTrapsCount}
-              errorQuestionCount={activeErrorQuestionCount}
-              learningEvents={studentLearningEvents}
-            />
-              </>
-            )}
-
-            {studentWorkspaceTab === 'tutor' && (
-            <AITutorPreviewPanel
-              currentUser={currentUser}
+              studentLearningEvents={studentLearningEvents}
+              handleOpenStudentRepair={handleOpenStudentRepair}
+              handleDailyStepCompleted={handleDailyStepCompleted}
+              handleDailyPlanCompleted={handleDailyPlanCompleted}
               errorQuestions={errorQuestions}
+              englishItemBankPracticeState={englishItemBankPracticeState}
+              handleAnswerEnglishItemBankPractice={handleAnswerEnglishItemBankPractice}
+              handleNextEnglishItemBankPractice={handleNextEnglishItemBankPractice}
+              setEnglishItemBankPracticeState={setEnglishItemBankPracticeState}
+              templatePracticeState={templatePracticeState}
+              handleAnswerTemplatePractice={handleAnswerTemplatePractice}
+              handleNextTemplatePractice={handleNextTemplatePractice}
+              setTemplatePracticeState={setTemplatePracticeState}
+              showErrorNotebook={showErrorNotebook}
+              setShowErrorNotebook={setShowErrorNotebook}
+              handleRetryErrorQuestionV2={handleRetryErrorQuestionV2}
+              handleRetryErrorQuestion={handleRetryErrorQuestion}
+              unlockedMascotItems={unlockedMascotItems}
+              equippedMascotItem={equippedMascotItem}
+              handleBuyMascotItem={handleBuyMascotItem}
+              handleEquipMascotItem={handleEquipMascotItem}
+              showDesmos={showDesmos}
+              setShowDesmos={setShowDesmos}
+              studyDiary={studyDiary}
+              setStudyDiary={setStudyDiary}
+              diaryMood={diaryMood}
+              setDiaryMood={setDiaryMood}
+              diaryList={diaryList}
+              handleSaveDiary={handleSaveDiary}
+              setHoveredTrack={setHoveredTrack}
+              setActiveStudentTab={setActiveStudentTab}
+              showNotif={showNotif}
+              handleMathLessonTemplateAction={handleMathLessonTemplateAction}
+              handleEnglishLessonTemplateAction={handleEnglishLessonTemplateAction}
             />
-            )}
-
-            {studentWorkspaceTab === 'practice' && englishItemBankPracticeState && (
-              <EnglishItemBankPracticePanel
-                state={englishItemBankPracticeState}
-                onAnswer={handleAnswerEnglishItemBankPractice}
-                onNext={handleNextEnglishItemBankPractice}
-                onClose={() => setEnglishItemBankPracticeState(null)}
-              />
-            )}
-
-            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && templatePracticeState && (
-              <TemplatePracticeSessionPanel
-                state={templatePracticeState}
-                onAnswer={handleAnswerTemplatePractice}
-                onNext={handleNextTemplatePractice}
-                onClose={() => setTemplatePracticeState(null)}
-              />
-            )}
-
-            {/* 1.3. LEITNER ERROR NOTEBOOK (Collapsible) */}
-            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && !templatePracticeState && !showErrorNotebook && (
-              <section className="bg-slate-900/60 border border-rose-500/20 rounded-3xl p-6 max-w-4xl mx-auto shadow-xl text-left">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div>
-                    <h3 className="text-sm font-black text-rose-400 uppercase tracking-widest">Sổ lỗi Leitner</h3>
-                    <p className="text-xs text-slate-500 mt-1">
-                      {getErrorNotebookSummary(activeErrorQuestionCount)}
-                    </p>
-                  </div>
-                  <button
-                    onClick={() => setShowErrorNotebook(true)}
-                    className="bg-rose-500 hover:bg-rose-600 text-white text-xs font-black uppercase px-5 py-3 rounded-xl transition-colors border-0 cursor-pointer"
-                  >
-                    Mở sổ lỗi
-                  </button>
-                </div>
-              </section>
-            )}
-
-            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && !templatePracticeState && showErrorNotebook && (
-              <ErrorNotebookV2Panel
-                errorQuestions={errorQuestions}
-                onClose={() => setShowErrorNotebook(false)}
-                onRetry={handleRetryErrorQuestionV2}
-                onOpenTutor={() => {
-                  setShowErrorNotebook(false);
-                  setStudentWorkspaceTab('tutor');
-                }}
-              />
-            )}
-
-            {studentWorkspaceTab === 'practice' && !englishItemBankPracticeState && !templatePracticeState && showErrorNotebook && Boolean(localStorage.getItem('miuprep_show_legacy_error_notebook')) && (
-              <section className="bg-slate-900/60 border-2 border-rose-500/30 rounded-3xl p-6 max-w-4xl mx-auto shadow-2xl relative overflow-hidden bg-gradient-to-r from-slate-900 to-rose-950/20 text-left transition-all duration-300">
-                <div className="absolute top-0 left-0 w-full h-[3px] bg-rose-500" />
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-sm font-black text-rose-400 uppercase tracking-widest flex items-center gap-2">
-                    <span>😼 SỔ TAY BẪY CHUỘT ÔN TẬP LEITNER CỦA BẠN</span>
-                    <span className="text-[10px] bg-rose-950/60 text-rose-300 border border-rose-900 px-2 py-0.5 rounded-full font-bold font-mono">ACTIVE REVIEW</span>
-                  </h3>
-                  <button
-                    onClick={() => setShowErrorNotebook(false)}
-                    className="bg-slate-950 hover:bg-slate-850 text-slate-350 hover:text-white border-0 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold cursor-pointer transition-all"
-                  >
-                    ✕
-                  </button>
-                </div>
-
-                <div className="space-y-4">
-                  {activeErrorQuestionCount === 0 ? (
-                    <p className="text-xs text-slate-500 italic text-center py-6">Tuyệt vời meow! Bạn đã xử lý sạch sẽ toàn bộ bẫy chuột ôn tập rồi! 🐟😽</p>
-                  ) : (
-                    activeErrorQuestions.map((q) => (
-                        <div key={q.id} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 text-xs flex flex-col gap-3 relative">
-                          <span className="absolute top-3 right-3 text-[9px] bg-rose-950/70 text-rose-400 border border-rose-900 px-2 py-0.5 rounded font-mono font-bold">STAGE {q.stage}</span>
-                          <p className="font-extrabold text-slate-200 leading-relaxed pr-16">{q.text}</p>
-                          <div className="grid grid-cols-4 gap-2">
-                            {q.options.map(opt => (
-                              <button
-                                key={opt}
-                                onClick={() => handleRetryErrorQuestion(q.id, opt, q.answer)}
-                                className="py-2 bg-slate-900 hover:bg-rose-950/30 border border-slate-800 hover:border-rose-900 rounded-xl text-xs font-bold text-slate-400 hover:text-rose-455 transition-all cursor-pointer"
-                              >
-                                {opt}
-                              </button>
-                            ))}
-                          </div>
-                          <details className="text-[10px] text-slate-500 font-light cursor-pointer select-none">
-                            <summary className="font-bold text-slate-450 hover:text-slate-300">💡 Xem giải thích lý thuyết chi tiết</summary>
-                            <p className="mt-1.5 bg-slate-900 p-2.5 rounded-lg border border-slate-850 leading-relaxed text-slate-400">{q.answerExpl}</p>
-                          </details>
-                        </div>
-                      ))
-                  )}
-                </div>
-              </section>
-            )}
-
-            {/* 1.4. CỬA HÀNG PHỤ KIỆN MASCOT MIU MIU */}
-            {studentWorkspaceTab === 'rewards' && (
-            <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-4xl mx-auto shadow-xl relative overflow-hidden bg-gradient-to-br from-slate-900 via-orange-950/5 to-slate-950 text-left">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4 pb-2 border-b border-slate-800">
-                <div>
-                  <h3 className="text-sm font-black text-orange-400 uppercase tracking-widest flex items-center gap-2">
-                    <span>🛍️ CỬA HÀNG PHỤ KIỆN MASCOT MIU MIU</span>
-                    <span className="text-[9px] bg-orange-950/60 text-orange-400 border border-orange-900 px-2 py-0.5 rounded-full font-black font-mono">SALMON STORE</span>
-                  </h3>
-                  <p className="text-[10px] text-slate-500 mt-1 font-light">
-                    Dùng xu cá hồi học viên tích lũy để mở khóa đồ trang trí cho Miu. Emoji phụ kiện sẽ bay bập bênh cạnh Miu meow!
-                  </p>
-                </div>
-                <div className="text-xs font-black text-emerald-450 font-mono bg-slate-950 px-3 py-1.5 rounded-full border border-slate-850 shadow-inner shrink-0">
-                  Ví của bạn: {fishCoins} 🐟
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {MASCOT_STORE_ITEMS.map(item => {
-                  const isUnlocked = unlockedMascotItems.includes(item.key);
-                  const isEquipped = equippedMascotItem === item.key;
-                  
-                  return (
-                    <div key={item.key} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 flex flex-col justify-between gap-3 transition-all hover:border-orange-500/30">
-                      <div className="flex items-start justify-between">
-                        <span className="text-4xl bg-slate-900 p-2 rounded-xl border border-slate-850">{item.key}</span>
-                        <div className="flex flex-col items-end gap-1 text-right">
-                          <span className="text-[10px] font-black text-slate-200">{item.label}</span>
-                          <span className="text-[10px] font-bold text-amber-400 font-mono">{item.price} 🐟</span>
-                        </div>
-                      </div>
-                      
-                      <p className="text-[9px] text-slate-500 leading-normal font-light">{item.desc}</p>
-                      
-                      {isUnlocked ? (
-                        <button
-                          onClick={() => handleEquipMascotItem(item.key)}
-                          className={`w-full py-1.5 rounded-lg text-[10px] font-black uppercase tracking-wider border transition-all cursor-pointer ${
-                            isEquipped 
-                              ? 'bg-orange-500/20 border-orange-500 text-orange-450' 
-                              : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
-                          }`}
-                        >
-                          {isEquipped ? '✓ Đang diện đồ' : '👚 Mặc thử'}
-                        </button>
-                      ) : (
-                        <button
-                          onClick={() => handleBuyMascotItem(item.key, item.price)}
-                          className="w-full py-1.5 bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-600 hover:to-rose-600 text-white font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer shadow hover:scale-[0.98] active:scale-95 duration-100"
-                        >
-                          🛍️ Mở khóa
-                        </button>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-            )}
-
-            {/* 2. Course Tracks Grid */}
-            {studentWorkspaceTab === 'courses' && (
-            <section className="space-y-8">
-              {currentUser && (
-                <>
-                  <MathLessonTemplatePanel
-                    currentUser={currentUser}
-                    tracks={TRACKS}
-                    fishCoins={fishCoins}
-                    mouseTrapsCount={mouseTrapsCount}
-                    learningEvents={studentLearningEvents}
-                    onOpenPractice={() => setStudentWorkspaceTab('practice')}
-                    onOpenTutor={() => setStudentWorkspaceTab('tutor')}
-                    onTemplateAction={handleMathLessonTemplateAction}
-                  />
-                  <EnglishCoreLessonTemplatePanel
-                    currentUser={currentUser}
-                    tracks={TRACKS}
-                    fishCoins={fishCoins}
-                    mouseTrapsCount={mouseTrapsCount}
-                    learningEvents={studentLearningEvents}
-                    onOpenPractice={() => setStudentWorkspaceTab('practice')}
-                    onOpenTutor={() => setStudentWorkspaceTab('tutor')}
-                    onTemplateAction={handleEnglishLessonTemplateAction}
-                  />
-                </>
-              )}
-              <div>
-              <h2 className="text-2xl font-black mb-6 text-center sm:text-left text-slate-200 uppercase tracking-widest flex items-center gap-2">
-                <span>🚀 LỰA CHỌN PHÂN HỆ HỌC TẬP</span>
-                <span className="text-xs bg-slate-900 border border-slate-800 text-slate-400 font-bold px-2 py-0.5 rounded-full">5 TRACKS ACTIVE</span>
-              </h2>
-              
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {TRACKS.map(track => (
-                  <div
-                    key={track.id}
-                    onMouseEnter={() => setHoveredTrack(track.id)}
-                    onMouseLeave={() => setHoveredTrack(null)}
-                    className={`border border-slate-800 bg-slate-950/60 rounded-3xl p-6 flex flex-col gap-4 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl shadow-inner relative overflow-hidden bg-gradient-to-br ${track.colorClass}`}
-                  >
-                    <div className="flex items-start justify-between">
-                      <div className="flex flex-col gap-1 text-left">
-                        <span className="text-xs font-black uppercase tracking-wider text-indigo-400">{track.subtitle}</span>
-                        <h3 className="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-                          {track.title}
-                        </h3>
-                      </div>
-                      <span className="text-4xl bg-slate-900/40 p-3 rounded-2xl border border-white/5">{track.icon}</span>
-                    </div>
-
-                    <p className="text-slate-300 text-sm leading-relaxed flex-1 text-left">
-                      {track.description}
-                    </p>
-
-                    <div className="text-[10px] font-bold text-slate-400 bg-slate-900/40 px-3 py-1.5 rounded-lg border border-white/5 self-start">
-                      {track.badge}
-                    </div>
-
-                    <button 
-                      onClick={() => {
-                        if (track.id === 'sat') {
-                          setActiveStudentTab('sat-board');
-                          showNotif("Đã mở phân hệ học tập thích ứng SAT Studio! 🎓🐾", "success");
-                        } else {
-                          alert(`Chào bạn meow meow! Tính năng mở khóa phân hệ [${track.title}] đang được Tauri biên dịch độc lập meow! 🐾`);
-                        }
-                      }}
-                      className="mt-2 w-full py-3 rounded-xl font-bold bg-white text-slate-950 hover:bg-slate-100 transition-colors shadow flex items-center justify-center gap-2 hover:scale-[0.99] active:scale-95 duration-100 border-0 cursor-pointer"
-                    >
-                      <span>{track.buttonText}</span>
-                      <span>➔</span>
-                    </button>
-                  </div>
-                ))}
-              </div>
-              </div>
-            </section>
-            )}
-
-            {/* 2.5. DESMOS INTEGRATED GRAPHING CALCULATOR */}
-            {studentWorkspaceTab === 'practice' && (
-            <section className="bg-slate-900/30 border border-slate-850 rounded-3xl p-6 max-w-4xl mx-auto shadow-inner bg-gradient-to-br from-slate-900/50 to-indigo-950/15 text-left">
-              <div className="flex items-center justify-between">
-                <h3 className="text-sm font-black text-indigo-400 uppercase tracking-widest flex items-center gap-2 font-mono">
-                  <span>📐 CÔNG CỤ MÁY TÍNH VẼ ĐỒ THỊ DESMOS TÍCH HỢP</span>
-                  <span className="text-[9px] bg-indigo-950/60 text-indigo-400 border border-indigo-900 px-2 py-0.5 rounded-full font-bold">DESMOS LIVE</span>
-                </h3>
-                <button
-                  onClick={() => setShowDesmos(!showDesmos)}
-                  className="bg-indigo-600 hover:bg-indigo-700 text-white text-[10px] font-black uppercase px-4 py-2 rounded-xl transition-colors border-0 cursor-pointer"
-                >
-                  {showDesmos ? '✕ Thu Nhỏ Máy Tính' : '🧮 Mở Máy Tính Đồ Thị'}
-                </button>
-              </div>
-
-              {showDesmos && (
-                <div className="mt-4 border border-indigo-900/50 rounded-2xl overflow-hidden shadow-2xl h-[420px] relative bg-slate-950 transition-all duration-300">
-                  <iframe
-                    src="https://www.desmos.com/calculator?embed=true"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 'none', filter: 'invert(90%) hue-rotate(180deg)' }}
-                    title="Desmos Grapher"
-                  />
-                  <div className="absolute bottom-2 left-2 bg-slate-950/80 px-2 py-1 rounded border border-slate-800 text-[9px] text-slate-500 font-mono">
-                    * Đã kích hoạt Dark-Theme Desmos thích hợp cho học viên MiuPrep.
-                  </div>
-                </div>
-              )}
-            </section>
-            )}
-
-            {/* 3. Study Journal Section */}
-            {studentWorkspaceTab === 'rewards' && (
-            <section className="bg-slate-900/30 border border-slate-850 rounded-3xl p-6 max-w-4xl mx-auto shadow-inner bg-gradient-to-br from-slate-900/50 to-orange-950/15">
-              <h2 className="text-xl font-black mb-4 text-slate-200 flex items-center gap-2">
-                📔 SỔ TAY NHẬT KÝ HỌC TẬP MIUPREP
-              </h2>
-              
-              <form onSubmit={handleSaveDiary} className="flex flex-col gap-4 mb-6">
-                <div className="flex flex-col sm:flex-row items-center gap-3">
-                  <span className="text-xs font-bold text-slate-400">Hôm nay bạn thấy thế nào meow?</span>
-                  <div className="flex gap-2">
-                    {STUDENT_DIARY_MOODS.map(mood => (
-                      <button
-                        type="button"
-                        key={mood}
-                        onClick={() => setDiaryMood(mood)}
-                        className={`text-2xl p-2 rounded-xl border transition-all cursor-pointer ${diaryMood === mood ? 'bg-orange-500/30 border-orange-500 scale-110 shadow' : 'border-slate-800 bg-slate-950/40 hover:scale-105'}`}
-                      >
-                        {mood}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="flex gap-2">
-                  <textarea
-                    value={studyDiary}
-                    onChange={(e) => setStudyDiary(e.target.value)}
-                    placeholder="Hôm nay bạn đã học được mẹo giải toán Casio hay từ vựng IELTS mới nào meow..."
-                    rows={2}
-                    className="flex-1 bg-slate-950/50 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 outline-none focus:border-orange-500/80 transition-colors placeholder:text-slate-700 resize-none font-medium"
-                  />
-                  <button
-                    type="submit"
-                    className="bg-orange-500 hover:bg-orange-600 text-white font-black px-6 rounded-xl transition-colors text-sm hover:scale-[0.99] active:scale-95 duration-100 shadow border-0 cursor-pointer"
-                  >
-                    Ghi Sổ
-                  </button>
-                </div>
-                <p className="text-[10px] text-slate-500 text-left">* Viết nhật ký học tập mỗi ngày để được Mascot Miu thưởng thêm 🐟 15 Xu Cá Hồi nhé!</p>
-              </form>
-
-              <div className="max-h-48 overflow-y-auto flex flex-col gap-3 pr-2 scrollbar-thin text-left">
-                {diaryList.map((entry, idx) => (
-                  <div key={idx} className="bg-slate-950/40 border border-slate-850 p-3 rounded-xl flex items-center justify-between gap-4">
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl p-1 bg-slate-900/60 rounded-lg border border-white/5">{entry.mood}</span>
-                      <p className="text-xs font-semibold text-slate-300">{entry.text}</p>
-                    </div>
-                    <span className="text-[10px] font-mono text-slate-500 shrink-0">{entry.date}</span>
-                  </div>
-                ))}
-              </div>
-            </section>
-            )}
-            </div>
           )
         )}
 
@@ -3092,195 +2389,20 @@ export default function App() {
             ROLE: PARENT DASHBOARD (SAT Tracker Styled)
             ========================================== */}
         {currentUser && currentUser.role === 'parent' && (
-          <div className="space-y-12">
-            <ParentActionSummary
-              linkedStudents={linkedStudentsList}
-              tracks={TRACKS}
-              learningEvents={studentLearningEvents}
-              rewardsAllocated={currentUser.rewardsAllocated || 0}
-            />
-            
-            {/* Summary Widget */}
-            <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between bg-gradient-to-tr from-slate-900 to-orange-950/20">
-                <div className="flex flex-col gap-1 text-left">
-                  <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Số con liên kết</span>
-                  <span className="text-3xl font-black text-orange-400 font-mono">{linkedStudentsList.length} Học Sinh 🎒</span>
-                </div>
-                <span className="text-4xl">🏠</span>
-              </div>
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between bg-gradient-to-tr from-slate-900 to-amber-950/20">
-                <div className="flex flex-col gap-1 text-left">
-                  <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Đã khen thưởng Xu Cá Hồi</span>
-                  <span className="text-3xl font-black text-amber-400 font-mono">🐟 {currentUser.rewardsAllocated || 0} Xu</span>
-                </div>
-                <span className="text-4xl">🎁</span>
-              </div>
-            </section>
-
-            <ParentLearningOverview
-              linkedStudents={linkedStudentsList}
-              tracks={TRACKS}
-              learningEvents={studentLearningEvents}
-            />
-
-            {/* Core Monitoring Block */}
-            <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-5xl mx-auto shadow-xl">
-              <h2 className="text-xl font-black mb-6 text-slate-200 uppercase tracking-widest text-left flex items-center gap-2">
-                <span>📊 BẢNG THEO DÕI TIẾN TRÌNH CỦA CON (SAT STYLE)</span>
-              </h2>
-
-              {linkedStudentsList.length === 0 ? (
-                <div className="py-12 border-2 border-dashed border-slate-800 rounded-2xl text-slate-500 font-medium">
-                  Chưa liên kết học sinh nào meow! Hãy liên hệ admin hoặc chỉnh sửa profile meow! 😿
-                </div>
-              ) : (
-                <div className="space-y-8">
-                  {/* Table */}
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse text-sm">
-                      <thead>
-                        <tr className="border-b border-slate-800 text-slate-400 font-black uppercase text-xs">
-                          <th className="p-4">Tên con (Username)</th>
-                          <th className="p-4">Ví Xu Cá Hồi tích lũy</th>
-                          <th className="p-4">Số Bẫy Chuột sai sót</th>
-                          <th className="p-4">Phân quyền học</th>
-                          <th className="p-4">Mục tiêu học tuần</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {linkedStudentsList.map((student) => {
-                          const studentProgress = loadStudentProgressSnapshot(localStorage, student.username);
-                          
-                          return (
-                            <tr key={student.id} className="border-b border-slate-900 hover:bg-slate-900/40 transition-colors">
-                              <td className="p-4 font-bold text-white flex items-center gap-2">
-                                <span className="w-8 h-8 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 flex items-center justify-center font-black">
-                                  {student.displayName?.slice(0, 2) || student.username.slice(0, 2)}
-                                </span>
-                                <div className="flex flex-col text-left">
-                                  <span>{student.displayName || student.username}</span>
-                                  <span className="text-[10px] text-slate-500 font-mono">@{student.username}</span>
-                                </div>
-                              </td>
-                              <td className="p-4 font-black text-emerald-400 font-mono">🐟 {studentProgress.coins} Xu</td>
-                              <td className="p-4 font-bold text-rose-400 font-mono">😼 {studentProgress.traps} bẫy chuột</td>
-                              <td className="p-4">
-                                <div className="flex flex-col gap-1.5 w-40 text-left">
-                                  <div className="flex justify-between text-[9px] text-slate-400 font-bold uppercase">
-                                    <span>Toán 9 (MiuMath)</span>
-                                    <span className="text-emerald-450 font-mono font-bold">85%</span>
-                                  </div>
-                                  <div className="w-full bg-slate-950 rounded-full h-1 overflow-hidden border border-slate-850">
-                                    <div className="bg-emerald-500 h-full rounded-full animate-pulse" style={{ width: '85%' }} />
-                                  </div>
-                                  <div className="flex justify-between text-[9px] text-slate-400 font-bold uppercase mt-0.5">
-                                    <span>IELTS Academy</span>
-                                    <span className="text-indigo-455 font-mono font-bold">68%</span>
-                                  </div>
-                                  <div className="w-full bg-slate-950 rounded-full h-1 overflow-hidden border border-slate-850">
-                                    <div className="bg-indigo-500 h-full rounded-full animate-pulse" style={{ width: '68%' }} />
-                                  </div>
-                                </div>
-                              </td>
-                              <td className="p-4 font-bold text-orange-400 font-mono">{(student as any).studyPlan?.weeklyTarget || 4} buổi/tuần</td>
-                            </tr>
-                          );
-                        })}
-                      </tbody>
-                    </table>
-                  </div>
-
-                  {/* Actions Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 border-t border-slate-800">
-                    
-                    {/* Setup Study Roadmap */}
-                    <div className="bg-slate-950/50 border border-slate-850 p-6 rounded-2xl flex flex-col gap-4 text-left">
-                      <h3 className="text-sm font-black uppercase text-orange-400 tracking-wider">🛠️ CÀI ĐẶT LỘ TRÌNH CHO CON</h3>
-                      
-                      <div className="flex flex-col gap-1">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase">Chọn tài khoản con</label>
-                        <select 
-                          value={selectedStudent} 
-                          onChange={(e) => {
-                            setSelectedStudent(e.target.value);
-                            const selected = linkedStudentsList.find(s => s.username === e.target.value);
-                            if (selected) setWeeklyTargetValue((selected as any).studyPlan?.weeklyTarget || 4);
-                          }}
-                          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-sm text-slate-200 focus:border-orange-500 outline-none cursor-pointer"
-                        >
-                          {linkedStudentsList.map(s => (
-                            <option key={s.id} value={s.username}>{s.displayName || s.username}</option>
-                          ))}
-                        </select>
-                      </div>
-
-                      <div className="flex flex-col gap-1">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase">Mục tiêu số buổi học / tuần</label>
-                        <input
-                          type="number"
-                          min={1}
-                          max={7}
-                          value={weeklyTargetValue}
-                          onChange={(e) => setWeeklyTargetValue(parseInt(e.target.value) || 4)}
-                          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-sm text-slate-200 focus:border-orange-500 outline-none"
-                        />
-                      </div>
-
-                      <button
-                        onClick={handleUpdateStudentTarget}
-                        className="py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 font-bold text-xs uppercase tracking-widest text-white shadow transition-all border-0 cursor-pointer"
-                      >
-                        Cập nhật lộ trình
-                      </button>
-                    </div>
-
-                    {/* Reward Allocator Box */}
-                    <div className="bg-slate-950/50 border border-slate-850 p-6 rounded-2xl flex flex-col gap-4 text-left">
-                      <h3 className="text-sm font-black uppercase text-orange-400 tracking-wider">🎁 KHEN THƯỞNG XU CÁ HỒI</h3>
-                      
-                      <div className="flex flex-col gap-1">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase">Chọn tài khoản con</label>
-                        <select 
-                          value={selectedStudent} 
-                          onChange={(e) => setSelectedStudent(e.target.value)}
-                          className="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-sm text-slate-200 focus:border-orange-500 outline-none cursor-pointer"
-                        >
-                          {linkedStudentsList.map(s => (
-                            <option key={s.id} value={s.username}>{s.displayName || s.username}</option>
-                          ))}
-                        </select>
-                      </div>
-
-                      <div className="flex flex-col gap-1">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase">Mức Khen Thưởng</label>
-                        <div className="grid grid-cols-2 gap-2">
-                          {[50, 100].map(amt => (
-                            <button
-                              key={amt}
-                              onClick={() => setRewardAmount(amt)}
-                              className={`py-2 rounded-xl text-xs font-bold border transition-all cursor-pointer ${rewardAmount === amt ? 'bg-amber-600 border-amber-500 text-white' : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'}`}
-                            >
-                              🐟 Thưởng {amt} Xu
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-
-                      <button
-                        onClick={handleRewardCoins}
-                        className="py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 font-bold text-xs uppercase tracking-widest text-white shadow border-0 cursor-pointer"
-                      >
-                        Gửi Tặng Xu Khen Thưởng ➔
-                      </button>
-                    </div>
-
-                  </div>
-                </div>
-              )}
-
-            </section>
-          </div>
+          <ParentWorkspace
+            currentUser={currentUser}
+            linkedStudents={linkedStudentsList}
+            tracks={TRACKS}
+            learningEvents={studentLearningEvents}
+            selectedStudent={selectedStudent}
+            setSelectedStudent={setSelectedStudent}
+            weeklyTargetValue={weeklyTargetValue}
+            setWeeklyTargetValue={setWeeklyTargetValue}
+            rewardAmount={rewardAmount}
+            setRewardAmount={setRewardAmount}
+            handleUpdateStudentTarget={handleUpdateStudentTarget}
+            handleRewardCoins={handleRewardCoins}
+          />
         )}
 
 
@@ -3343,521 +2465,58 @@ export default function App() {
             </section>
 
             {effectiveAdminWorkspaceTab === 'overview' && !isAdminContentOnly && (
-            <>
-            {/* 1.1 TELEMETRY EARLY WARNING ALARMS */}
-            <div className="max-w-5xl mx-auto text-left">
-              <div className="bg-rose-950/40 border-2 border-dashed border-rose-500/40 rounded-3xl p-5 shadow-lg relative overflow-hidden bg-gradient-to-r from-slate-900 to-rose-950/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all duration-300 hover:scale-[1.005]">
-                <div className="flex items-center gap-3.5">
-                  <div className="w-10 h-10 rounded-2xl bg-rose-500/20 flex items-center justify-center border border-rose-500/30 text-rose-400 text-xl font-bold animate-pulse shrink-0">
-                    ⚠️
-                  </div>
-                  <div>
-                    <span className="text-[9px] font-black text-rose-455 uppercase tracking-widest block font-sans">HỆ THỐNG CẢNH BÁO SỚM HỌC THUẬT (TELEMETRY ALARMS)</span>
-                    <p className="text-xs text-slate-350 font-semibold mt-0.5 leading-relaxed">
-                      Phát hiện học viên <strong className="text-rose-400">@con.cung</strong> có tỷ lệ Bẫy Chuột sai sót tăng đột biến <strong className="text-rose-455 font-mono">82%</strong> tại bài <strong className="text-slate-100">Tứ giác nội tiếp</strong>!
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-2 shrink-0">
-                  <button
-                    onClick={() => {
-                      alert("Đã gửi thông báo nhắc nhở kèm bài tập bổ sung môn Toán 9 cho tài khoản con @con.cung meow! 🐾🚀");
-                      logSystemEvent('WARN', 'Admin đã gửi thông báo khắc phục khẩn cấp cho con @con.cung');
-                    }}
-                    className="bg-rose-900/60 hover:bg-rose-800 border border-rose-700 text-rose-300 px-3.5 py-1.5 rounded-xl text-[10px] font-bold uppercase transition-all duration-100 cursor-pointer border-none outline-none"
-                  >
-                    Khắc phục ngay ✓
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* 1. TELEMETRY STATS GRID */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-left">
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-5 shadow-lg flex items-center gap-4 hover:border-emerald-500/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-500/20">
-                  👥
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Học viên Active</span>
-                  <h3 className="text-2xl font-black text-slate-100 mt-0.5">
-                    {allUsersList.filter(u => u.role === 'student').length} <span className="text-xs text-slate-500 font-bold">con</span>
-                  </h3>
-                </div>
-              </div>
-
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-5 shadow-lg flex items-center gap-4 hover:border-indigo-500/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-xl font-bold border border-indigo-500/20">
-                  🎯
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Điểm Số Hệ Thống</span>
-                  <h3 className="text-sm font-black text-slate-100 mt-1">
-                    SAT: <span className="text-rose-400 font-mono font-bold">1340</span> • IELTS: <span className="text-indigo-400 font-mono font-bold">7.2</span>
-                  </h3>
-                </div>
-              </div>
-
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-5 shadow-lg flex items-center gap-4 hover:border-orange-500/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-400 text-xl font-bold border border-orange-500/20">
-                  🐟
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Xu Cá Hồi Lưu Thông</span>
-                  <h3 className="text-2xl font-black text-slate-100 mt-0.5">
-                    {getCirculatingCoins()} <span className="text-xs text-slate-500 font-bold">🐟</span>
-                  </h3>
-                </div>
-              </div>
-
-              <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-5 shadow-lg flex items-center gap-4 hover:border-amber-500/30 transition-all duration-300 relative overflow-hidden">
-                {allUsersList.filter(u => u.status === 'pending').length > 0 && (
-                  <span className="absolute top-2 right-2 w-2 h-2 bg-amber-500 rounded-full animate-ping" />
+              <AdminOverviewPanel
+                users={allUsersList}
+                circulatingCoins={getCirculatingCoins()}
+                onSendEmergencyIntervention={handleSendEmergencyIntervention}
+                onApproveAllPendingUsers={handleApproveAllPendingUsers}
+                onBoostStudentCoins={handleBoostAllStudentCoins}
+                onClearTelemetryLogs={handleClearTelemetryLogs}
+                systemPreview={(
+                  <DeferredPanel label="Loading system preview">
+                    <SystemSurfacePreview />
+                  </DeferredPanel>
                 )}
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl font-bold border border-amber-500/20">
-                  ⏳
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Yêu Cầu Duyệt Mới</span>
-                  <h3 className="text-2xl font-black text-slate-100 mt-0.5">
-                    {allUsersList.filter(u => u.status === 'pending').length} <span className="text-xs text-slate-500 font-bold">yêu cầu</span>
-                  </h3>
-                </div>
-              </div>
-            </div>
-
-            <SystemSurfacePreview />
-            </>
+              />
             )}
 
             {effectiveAdminWorkspaceTab === 'analytics' && (
-              isAdminContentOnly ? (
-                <AdminContentRepairQueue
-                  onOpenContent={openAdminContentTrack}
-                />
-              ) : (
-                <>
-                <AdminInterventionQueue
-                  tracks={TRACKS}
-                  users={allUsersList}
-                  mathLessons={mathLessons}
-                  importedExams={importedExams}
-                  errorQuestions={errorQuestions}
-                  adminLogs={adminLogs}
-                  learningEvents={adminLearningEvents}
-                  onOpenUsers={() => setAdminWorkspaceTab('users')}
-                  onOpenContent={openAdminContentTrack}
-                />
-
-                <AdminContentRepairQueue
-                  onOpenContent={openAdminContentTrack}
-                />
-
-                <AdminLearningAnalytics
-                  tracks={TRACKS}
-                  mathLessons={mathLessons}
-                  importedExams={importedExams}
-                  errorQuestions={errorQuestions}
-                  adminLogs={adminLogs}
-                  learningEvents={adminLearningEvents}
-                />
-
-                <BetaImplementationTracker
-                  tracks={TRACKS}
-                  users={allUsersList}
-                  mathLessons={mathLessons}
-                  importedExams={importedExams}
-                  adminLogs={adminLogs}
-                  learningEvents={adminLearningEvents}
-                  errorQuestionCount={activeErrorQuestionCount}
-                />
-                </>
-              )
-            )}
-
-            {effectiveAdminWorkspaceTab === 'overview' && !isAdminContentOnly && (
-            <>
-            {/* 2. WEAK SKILLS HEATMAP & ADAPTIVE TELEMETRY */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto text-left">
-              <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xs font-black text-slate-350 uppercase tracking-widest mb-4 flex items-center gap-2">
-                    <span>🔥 BẢN ĐỒ KỸ NĂNG YẾU (SYSTEM HEATMAP)</span>
-                  </h3>
-                  <div className="space-y-3">
-                    <div>
-                      <div className="flex justify-between text-[10px] mb-1">
-                        <span className="text-slate-400 font-semibold">🧮 Toán 9: Tứ giác nội tiếp & Cực trị</span>
-                        <span className="text-orange-400 font-bold">Mức độ yếu: 78%</span>
-                      </div>
-                      <div className="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-850">
-                        <div className="bg-orange-500 h-full rounded-full" style={{ width: '78%' }} />
-                      </div>
-                    </div>
-
-                    <div>
-                      <div className="flex justify-between text-[10px] mb-1">
-                        <span className="text-slate-400 font-semibold">🎓 SAT RW: Standard English Conventions</span>
-                        <span className="text-rose-400 font-bold">Mức độ yếu: 65%</span>
-                      </div>
-                      <div className="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-850">
-                        <div className="bg-rose-500 h-full rounded-full" style={{ width: '65%' }} />
-                      </div>
-                    </div>
-
-                    <div>
-                      <div className="flex justify-between text-[10px] mb-1">
-                        <span className="text-slate-400 font-semibold">🎙️ IELTS: Speaking Pronunciation</span>
-                        <span className="text-indigo-400 font-bold">Mức độ yếu: 58%</span>
-                      </div>
-                      <div className="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-850">
-                        <div className="bg-indigo-500 h-full rounded-full" style={{ width: '58%' }} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">
-                  💡 Bản đồ kỹ năng yếu được tổng hợp tự động dựa trên nhật ký Bẫy Chuột và sai sót làm bài thực tế của tất cả học viên đang online.
-                </div>
-              </section>
-
-              <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xs font-black text-slate-350 uppercase tracking-widest mb-4 flex items-center gap-2">
-                    <span>⚡ KÍCH HOẠT HỆ THỐNG MẪU NHANH (QUICK ACTIONS)</span>
-                  </h3>
-                  <div className="grid grid-cols-2 gap-3">
-                    <button
-                      onClick={async () => {
-                        const list = await db.listLocalUsers();
-                        for (const u of list) {
-                          if (u.status === 'pending') {
-                            const fullU = await db.getLocalUser(u.username);
-                            if (fullU) {
-                              fullU.status = 'approved';
-                              await db.registerLocalUser(fullU);
-                            }
-                          }
-                        }
-                        await logSystemEvent('WARN', 'Admin phê duyệt nhanh tất cả các tài khoản');
-                        showNotif("Đã phê duyệt nhanh toàn bộ tài khoản meow! 🚀", "success");
-                        refreshAdminData();
-                      }}
-                      className="py-3 bg-emerald-950/60 hover:bg-emerald-900/45 border border-emerald-900/60 rounded-2xl text-[10px] font-black uppercase text-emerald-450 tracking-wider transition-all cursor-pointer text-center"
-                    >
-                      ✓ Duyệt tất cả
-                    </button>
-                    <button
-                      onClick={async () => {
-                        const uList = await db.listLocalUsers();
-                        uList.forEach(u => {
-                          if (u.role === 'student') {
-                            persistCoinBalance(localStorage, u.username, 1000);
-                          }
-                        });
-                        await logSystemEvent('WARN', 'Admin bơm tài nguyên: Set ví học viên thành 1,000 Coins');
-                        showNotif("Bơm tài nguyên 1,000 Coins cho tất cả học viên thành công! 🐟", "success");
-                        refreshAdminData();
-                      }}
-                      className="py-3 bg-orange-950/60 hover:bg-orange-900/45 border border-orange-900/60 rounded-2xl text-[10px] font-black uppercase text-orange-450 tracking-wider transition-all cursor-pointer text-center"
-                    >
-                      🐟 Bơm 1K Coins
-                    </button>
-                    <button
-                      onClick={() => {
-                        localStorage.removeItem('ielts_app_logs_list');
-                        setAdminLogs([]);
-                        showNotif("Đã làm sạch toàn bộ Telemetry Logs meow!", "success");
-                      }}
-                      className="py-3 bg-slate-950 hover:bg-slate-900 border border-slate-800 rounded-2xl text-[10px] font-black uppercase text-slate-400 tracking-wider transition-all cursor-pointer text-center col-span-2"
-                    >
-                      🧹 Xóa Telemetry Logs
-                    </button>
-                  </div>
-                </div>
-                <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">
-                  ⚠️ Các lệnh nhanh tác động trực tiếp lên database Local Storage dùng chung của toàn hệ thống. Hãy cân nhắc kỹ trước khi bấm!
-                </div>
-              </section>
-            </div>
-            </>
+              <AdminAnalyticsWorkspace
+                isAdminContentOnly={isAdminContentOnly}
+                tracks={TRACKS}
+                users={allUsersList}
+                mathLessons={mathLessons}
+                importedExams={importedExams}
+                errorQuestions={errorQuestions}
+                adminLogs={adminLogs}
+                learningEvents={adminLearningEvents}
+                activeErrorQuestionCount={activeErrorQuestionCount}
+                onOpenUsers={() => setAdminWorkspaceTab('users')}
+                onOpenContent={openAdminContentTrack}
+              />
             )}
 
             {/* 3. INTERACTIVE USER DETAILS Drawer / Modal */}
             {selectedUserForDetail && (
-              <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
-                <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 max-w-lg w-full shadow-2xl relative text-left space-y-6 transform scale-98 transition-transform duration-300">
-                  <button
-                    onClick={() => setSelectedUserForDetail(null)}
-                    className="absolute top-4 right-4 bg-slate-950 hover:bg-slate-850 text-slate-500 hover:text-slate-200 border border-slate-800 rounded-full w-8 h-8 flex items-center justify-center font-bold transition-all cursor-pointer"
-                  >
-                    ✕
-                  </button>
-
-                  {/* Mascot Header */}
-                  <div className="flex items-center gap-3 pb-4 border-b border-slate-805">
-                    <span className="text-3xl">👤</span>
-                    <div>
-                      <h3 className="text-lg font-black text-slate-100">Chi Tiết Học Viên @{selectedUserForDetail.username}</h3>
-                      <p className="text-[10px] text-slate-500">
-                        Đăng ký lúc: {selectedUserForDetail.createdAt ? new Date(selectedUserForDetail.createdAt).toLocaleString('vi-VN') : 'Không rõ'}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Core Metrics */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-slate-950 p-3 rounded-2xl border border-slate-850 text-xs">
-                      <span className="text-[10px] text-slate-500 font-bold uppercase block mb-1">Tên hiển thị</span>
-                      <span className="font-extrabold text-slate-200">{selectedUserForDetail.displayName || selectedUserForDetail.username}</span>
-                    </div>
-                    <div className="bg-slate-950 p-3 rounded-2xl border border-slate-850 text-xs">
-                      <span className="text-[10px] text-slate-500 font-bold uppercase block mb-1">Vai Trò</span>
-                      <span className="font-extrabold text-orange-400 capitalize">{selectedUserForDetail.role === 'admin' ? 'Quản trị viên' : selectedUserForDetail.role === 'parent' ? 'Phụ huynh' : 'Học sinh'}</span>
-                    </div>
-                    <div className="bg-slate-950 p-3 rounded-2xl border border-slate-850 text-xs">
-                      <span className="text-[10px] text-slate-500 font-bold uppercase block mb-1">Mục tiêu</span>
-                      <span className="font-extrabold text-slate-200">{selectedUserForDetail.role === 'student' ? `Band ${selectedUserForDetail.targetBand}` : '-'}</span>
-                    </div>
-                    <div className="bg-slate-950 p-3 rounded-2xl border border-slate-850 text-xs">
-                      <span className="text-[10px] text-slate-500 font-bold uppercase block mb-1">Ví Xu Cá Hồi</span>
-                      <span className="font-extrabold text-orange-400 font-mono">
-                        {selectedUserForDetail.role === 'student'
-                          ? `${loadStudentProgressSnapshot(localStorage, selectedUserForDetail.username).coins} 🐟`
-                          : '-'}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Adjust Coins & Assign Tracks */}
-                  {selectedUserForDetail.role === 'student' && (
-                    <div className="space-y-4">
-                      <div>
-                        <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-2">Bơm / Trừ Ví Xu Cá Hồi</span>
-                        <div className="flex gap-2">
-                          <button
-                            onClick={() => handleAdjustCoins(selectedUserForDetail.username, 50)}
-                            className="flex-1 py-2 bg-slate-950 hover:bg-emerald-950/60 border border-slate-800 hover:border-emerald-900 rounded-xl text-xs font-bold text-slate-400 hover:text-emerald-400 cursor-pointer transition-all"
-                          >
-                            🐟 +50 Xu
-                          </button>
-                          <button
-                            onClick={() => handleAdjustCoins(selectedUserForDetail.username, 100)}
-                            className="flex-1 py-2 bg-slate-950 hover:bg-emerald-950/60 border border-slate-800 hover:border-emerald-900 rounded-xl text-xs font-bold text-slate-400 hover:text-emerald-400 cursor-pointer transition-all"
-                          >
-                            🐟 +100 Xu
-                          </button>
-                          <button
-                            onClick={() => handleAdjustCoins(selectedUserForDetail.username, -50)}
-                            className="flex-1 py-2 bg-slate-950 hover:bg-rose-950/60 border border-slate-800 hover:border-rose-900 rounded-xl text-xs font-bold text-slate-400 hover:text-rose-400 cursor-pointer transition-all"
-                          >
-                            🪓 -50 Xu
-                          </button>
-                        </div>
-                      </div>
-
-                      <div>
-                        <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-2">Phân Quyền Các Khoá Học Assigned</span>
-                        <div className="flex flex-wrap gap-2">
-                          {(['math', 'sat', 'ielts', 'cae', 'cpe'] as const).map(track => {
-                            const isAssigned = (selectedUserForDetail.assignedTracks || []).includes(track);
-                            return (
-                              <button
-                                key={track}
-                                onClick={() => {
-                                  let nextTracks = [...(selectedUserForDetail.assignedTracks || [])];
-                                  if (nextTracks.includes(track)) {
-                                    nextTracks = nextTracks.filter(t => t !== track);
-                                  } else {
-                                    nextTracks.push(track);
-                                  }
-                                  handleUpdateUserTracks(selectedUserForDetail.username, nextTracks);
-                                }}
-                                className={`px-2.5 py-1.5 rounded-lg text-[10px] font-bold uppercase transition-all cursor-pointer border ${
-                                  isAssigned
-                                    ? 'bg-orange-500/20 border-orange-500 text-orange-400'
-                                    : 'bg-slate-950 border-slate-850 text-slate-500 hover:text-slate-350'
-                                }`}
-                              >
-                                {track.toUpperCase()}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Actions footer */}
-                  <div className="flex gap-3 pt-4 border-t border-slate-800 justify-end">
-                    <button
-                      onClick={() => setSelectedUserForDetail(null)}
-                      className="px-4 py-2 bg-slate-950 hover:bg-slate-850 border border-slate-800 text-slate-400 text-xs font-extrabold uppercase rounded-xl cursor-pointer"
-                    >
-                      Đóng
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <AdminUserDetailModal
+                user={selectedUserForDetail}
+                onClose={() => setSelectedUserForDetail(null)}
+                onAdjustCoins={handleAdjustCoins}
+                onUpdateUserTracks={handleUpdateUserTracks}
+              />
             )}
 
             {effectiveAdminWorkspaceTab === 'users' && !isAdminContentOnly && (
-            <>
-            {/* Registered Users Table */}
-            <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-5xl mx-auto shadow-xl">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-800">
-                <h3 className="text-sm font-black text-slate-350 uppercase tracking-widest">👥 DANH SÁCH TÀI KHOẢN ({allUsersList.length})</h3>
-                
-                {/* Filters */}
-                <div className="flex flex-wrap items-center gap-3">
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[10px] text-slate-500 font-bold uppercase">Vai trò:</span>
-                    <select
-                      value={roleFilter}
-                      onChange={(e) => setRoleFilter(e.target.value as any)}
-                      className="bg-slate-950 border border-slate-850 text-slate-300 rounded-lg px-2 py-1 text-[10px] font-bold outline-none cursor-pointer"
-                    >
-                      <option value="all">Tất cả</option>
-                      <option value="admin">Quản trị</option>
-                      <option value="parent">Phụ huynh</option>
-                      <option value="student">Học sinh</option>
-                    </select>
-                  </div>
-
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[10px] text-slate-500 font-bold uppercase">Duyệt:</span>
-                    <select
-                      value={statusFilter}
-                      onChange={(e) => setStatusFilter(e.target.value as any)}
-                      className="bg-slate-950 border border-slate-850 text-slate-300 rounded-lg px-2 py-1 text-[10px] font-bold outline-none cursor-pointer"
-                    >
-                      <option value="all">Tất cả</option>
-                      <option value="pending">Chờ duyệt</option>
-                      <option value="approved">Đã duyệt</option>
-                      <option value="rejected">Bị từ chối</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div className="overflow-x-auto rounded-2xl border border-slate-850">
-                <table className="w-full border-collapse text-left text-xs text-slate-300">
-                  <thead>
-                    <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-bold">
-                      <th className="p-4">Người dùng</th>
-                      <th className="p-4">Liên hệ</th>
-                      <th className="p-4">Vai trò</th>
-                      <th className="p-4">Trạng thái</th>
-                      <th className="p-4">Ngày đăng ký</th>
-                      <th className="p-4 text-center">Thao tác</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {allUsersList.length === 0 ? (
-                      <tr>
-                        <td colSpan={6} className="p-8 text-center text-slate-500 italic">Không tìm thấy tài khoản nào phù hợp...</td>
-                      </tr>
-                    ) : (
-                      allUsersList
-                        .filter(u => {
-                          if (roleFilter !== 'all' && u.role !== roleFilter) return false;
-                          const status = u.status || 'pending';
-                          if (statusFilter !== 'all' && status !== statusFilter) return false;
-                          return true;
-                        })
-                        .map((user) => {
-                          const status = user.status || 'pending';
-                          return (
-                            <tr key={user.id} className="border-b border-slate-900 hover:bg-slate-900/30 transition-colors">
-                              <td className="p-4">
-                                <div className="flex items-center gap-2">
-                                  <span className={`w-8 h-8 rounded-full flex items-center justify-center font-black uppercase text-[10px] ${
-                                    user.role === 'admin' ? 'bg-purple-900/40 text-purple-300' : user.role === 'parent' ? 'bg-orange-900/40 text-orange-300' : 'bg-slate-800 text-slate-300'
-                                  }`}>
-                                    {user.username.slice(0, 2)}
-                                  </span>
-                                  <div className="flex flex-col text-left">
-                                    <span className="font-extrabold text-sm text-white">{user.displayName || user.username}</span>
-                                    <span className="text-[10px] text-slate-500 font-mono">@{user.username}</span>
-                                  </div>
-                                </div>
-                              </td>
-                              <td className="p-4 font-semibold text-slate-300 font-mono">
-                                {user.contactInfo || <span className="text-slate-650 italic">Không có</span>}
-                              </td>
-                              <td className="p-4">
-                                <span className={`text-[9px] font-black px-2.5 py-0.5 rounded-full border uppercase tracking-wider ${
-                                  user.role === 'admin' 
-                                    ? 'bg-purple-950/70 border-purple-900 text-purple-400' 
-                                    : user.role === 'parent' 
-                                      ? 'bg-orange-950/70 border-orange-900 text-orange-400'
-                                      : 'bg-slate-950/60 border-slate-850 text-slate-400'
-                                }`}>
-                                  {user.role === 'admin' ? 'Admin' : user.role === 'parent' ? 'Phụ huynh' : 'Học sinh'}
-                                </span>
-                              </td>
-                              <td className="p-4 font-bold">
-                                <span className={`text-[9px] font-black px-2.5 py-0.5 rounded-full border uppercase tracking-wider ${
-                                  status === 'approved'
-                                    ? 'bg-emerald-950/75 border-emerald-900 text-emerald-400'
-                                    : status === 'rejected'
-                                      ? 'bg-rose-950/75 border-rose-900 text-rose-400'
-                                      : 'bg-amber-950/75 border-amber-900 text-amber-400 animate-pulse'
-                                }`}>
-                                  {status === 'approved' ? '✓ Đã duyệt' : status === 'rejected' ? '❌ Bị từ chối' : '⏳ Chờ duyệt'}
-                                </span>
-                              </td>
-                              <td className="p-4 text-slate-500 font-mono">{user.createdAt ? new Date(user.createdAt).toLocaleDateString('vi-VN') : '-'}</td>
-                              <td className="p-4">
-                                <div className="flex items-center justify-center gap-2">
-                                  <button
-                                    onClick={async () => {
-                                      const fullUserObj = await db.getLocalUser(user.username);
-                                      if (fullUserObj) {
-                                        setSelectedUserForDetail(fullUserObj);
-                                      }
-                                    }}
-                                    className="px-2 py-1 rounded bg-slate-950 hover:bg-indigo-950/60 text-slate-500 hover:text-indigo-400 border border-slate-800 hover:border-indigo-900 transition-all cursor-pointer font-bold text-xs"
-                                    title="Xem chi tiết & Điều chỉnh"
-                                  >
-                                    🔍
-                                  </button>
-                                  {status !== 'approved' && (
-                                    <button
-                                      onClick={() => handleUpdateStatus(user.username, 'approved')}
-                                      className="px-2.5 py-1 rounded bg-emerald-700 hover:bg-emerald-600 text-white font-extrabold text-[10px] uppercase transition-all border-0 cursor-pointer"
-                                      title="Duyệt tài khoản"
-                                    >
-                                      Duyệt ✓
-                                    </button>
-                                  )}
-                                  {status !== 'rejected' && (
-                                    <button
-                                      onClick={() => handleUpdateStatus(user.username, 'rejected')}
-                                      className="px-2.5 py-1 rounded bg-rose-950 hover:bg-rose-900 text-rose-400 font-extrabold text-[10px] uppercase transition-all border-0 cursor-pointer"
-                                      title="Từ chối tài khoản"
-                                    >
-                                      Từ chối ❌
-                                    </button>
-                                  )}
-                                  <button
-                                    onClick={() => handleDeleteUser(user.username)}
-                                    className="px-2 py-1 rounded bg-slate-950 hover:bg-slate-900 hover:text-red-400 text-slate-500 border border-slate-800 transition-all cursor-pointer"
-                                    title="Xóa vĩnh viễn"
-                                  >
-                                    🗑️
-                                  </button>
-                                </div>
-                              </td>
-                            </tr>
-                          );
-                        })
-                    )}
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            </>
+              <AdminUsersPanel
+                users={allUsersList}
+                roleFilter={roleFilter}
+                setRoleFilter={setRoleFilter}
+                statusFilter={statusFilter}
+                setStatusFilter={setStatusFilter}
+                onOpenUserDetail={handleOpenUserDetail}
+                onUpdateStatus={handleUpdateStatus}
+                onDeleteUser={handleDeleteUser}
+              />
             )}
 
             {/* ==========================================
@@ -3904,1144 +2563,108 @@ export default function App() {
 
               {/* TRACK 1: MIUMATH MANAGEMENT */}
               {adminActiveTab === 'math' && (
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  {/* Left: Lessons Table */}
-                  <div className="lg:col-span-2 space-y-4">
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">📚 Danh sách chuyên đề toán lớp 9</h4>
-                    <div className="border border-slate-855 rounded-2xl overflow-hidden bg-slate-950/40">
-                      <table className="w-full border-collapse text-xs text-left">
-                        <thead>
-                          <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-bold">
-                            <th className="p-3">ID</th>
-                            <th className="p-3">Tên Chuyên Đề</th>
-                            <th className="p-3">Chủ Đề</th>
-                            <th className="p-3">Số Bài Tập</th>
-                            <th className="p-3">Trạng Thái</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {mathLessons.map(lesson => (
-                            <tr key={lesson.id} className="border-b border-slate-855/60 hover:bg-slate-900/40">
-                              <td className="p-3 font-mono text-slate-500">{lesson.id}</td>
-                              <td className="p-3 font-bold text-slate-200">{lesson.title}</td>
-                              <td className="p-3 text-slate-450">{lesson.topic}</td>
-                              <td className="p-3 font-semibold text-slate-355">{lesson.count}</td>
-                              <td className="p-3">
-                                <span className="text-[9px] bg-emerald-950/70 border border-emerald-900 text-emerald-400 px-2 py-0.5 rounded-full uppercase font-bold">
-                                  {lesson.status}
-                                </span>
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-
-                  {/* Right Column: Casio Tips & New Lesson Creator Form */}
-                  <div className="space-y-6 animate-fade-in">
-                    <div className="space-y-4">
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">💡 Quản lý Mẹo Casio FX-580</h4>
-                      
-                      {/* List of Tips */}
-                      <div className="flex flex-col gap-2 max-h-40 overflow-y-auto pr-1">
-                        {mathCasioTips.map(tip => (
-                          <div key={tip.id} className="p-3 bg-slate-950 rounded-xl border border-slate-850 text-[11px] text-left">
-                            <div className="flex justify-between items-start gap-2">
-                              <span className="font-bold text-orange-400">{tip.title}</span>
-                              <span className="font-mono bg-slate-900 px-1.5 py-0.5 rounded border border-slate-800 text-[10px] text-orange-300 font-extrabold whitespace-nowrap">{tip.syntax}</span>
-                            </div>
-                            <p className="text-slate-500 mt-1 leading-relaxed">{tip.explanation}</p>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Add Casio Tip Form */}
-                      <form onSubmit={handleAddCasioTip} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-                        <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">💡 Thêm Mẹo Bấm Casio Mới</span>
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Tiêu đề mẹo *</label>
-                          <input
-                            type="text"
-                            placeholder="Ví dụ: Tính nhanh lim, đạo hàm..."
-                            value={newCasioTitle}
-                            onChange={e => setNewCasioTitle(e.target.value)}
-                            className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                            required
-                          />
-                        </div>
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Cú pháp bấm máy *</label>
-                          <input
-                            type="text"
-                            placeholder="Ví dụ: [MODE] [7]..."
-                            value={newCasioSyntax}
-                            onChange={e => setNewCasioSyntax(e.target.value)}
-                            className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                            required
-                          />
-                        </div>
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Giải thích chi tiết</label>
-                          <textarea
-                            rows={2}
-                            placeholder="Nhập hướng dẫn các bước..."
-                            value={newCasioExpl}
-                            onChange={e => setNewCasioExpl(e.target.value)}
-                            className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700 resize-none"
-                          />
-                        </div>
-                        <button
-                          type="submit"
-                          className="w-full py-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-slate-950 font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer transition-all active:scale-[0.98]"
-                        >
-                          ➕ Thêm Mẹo Casio
-                        </button>
-                      </form>
-                    </div>
-
-                    {/* New Math Lesson Creator Form */}
-                    <form onSubmit={handleAddMathLesson} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-                      <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">🧮 Đăng ký chuyên đề Toán 9 mới</span>
-                      
-                      <div>
-                        <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Mã Chuyên Đề (tự chọn)</label>
-                        <input
-                          type="text"
-                          placeholder="Ví dụ: math-alg-06 (để trống tự tạo)..."
-                          value={newMathId}
-                          onChange={e => setNewMathId(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                        />
-                      </div>
-
-                      <div>
-                        <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Tên Chuyên Đề *</label>
-                        <input
-                          type="text"
-                          placeholder="Ví dụ: Hàm số bậc nhất nâng cao..."
-                          value={newMathTitle}
-                          onChange={e => setNewMathTitle(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                          required
-                        />
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-2">
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Phân Loại</label>
-                          <select
-                            value={newMathTopic}
-                            onChange={e => setNewMathTopic(e.target.value)}
-                            className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2.5 text-xs outline-none text-slate-200 cursor-pointer"
-                          >
-                            <option value="Đại số (Algebra)">Đại số (Algebra)</option>
-                            <option value="Hình học (Geometry)">Hình học (Geometry)</option>
-                            <option value="Thi thử (Mock)">Thi thử (Mock)</option>
-                          </select>
-                        </div>
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Số câu bài tập</label>
-                          <input
-                            type="number"
-                            min={5}
-                            max={200}
-                            value={newMathCount}
-                            onChange={e => setNewMathCount(parseInt(e.target.value) || 40)}
-                            className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-255"
-                          />
-                        </div>
-                      </div>
-
-                      <button
-                        type="submit"
-                        className="w-full py-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-950 font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer transition-all active:scale-[0.98]"
-                      >
-                        ➕ Thêm Chuyên Đề Toán
-                      </button>
-                    </form>
-
-                    {/* Visual LaTeX Question Editor */}
-                    <form onSubmit={handleCreateLatexQuestion} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-                      <span className="text-[10px] font-black uppercase tracking-wider text-indigo-400 block font-sans">⚛️ Trình soạn câu hỏi LaTeX Toán học</span>
-                      <div>
-                        <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Mã câu hỏi (tự chọn)</label>
-                        <input
-                          type="text"
-                          placeholder="Ví dụ: math-q-10 (để trống tự tạo)..."
-                          value={latexMathId}
-                          onChange={e => setLatexMathId(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                        />
-                      </div>
-                      <div>
-                        <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Nội dung câu hỏi *</label>
-                        <input
-                          type="text"
-                          placeholder="Ví dụ: Rút gọn biểu thức chứa căn..."
-                          value={latexMathTitle}
-                          onChange={e => setLatexMathTitle(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Phương trình toán LaTeX *</label>
-                        <input
-                          type="text"
-                          placeholder="Ví dụ: \sqrt{x^2+y^2} = 5"
-                          value={latexMathEq}
-                          onChange={e => setLatexMathEq(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                          required
-                        />
-                      </div>
-                      <div className="grid grid-cols-2 gap-2">
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Đáp án đúng</label>
-                          <select
-                            value={latexMathAns}
-                            onChange={e => setLatexMathAns(e.target.value)}
-                            className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-200 cursor-pointer"
-                          >
-                            <option value="A">Đáp án A</option>
-                            <option value="B">Đáp án B</option>
-                            <option value="C">Đáp án C</option>
-                            <option value="D">Đáp án D</option>
-                          </select>
-                        </div>
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Giải thích lời giải</label>
-                          <input
-                            type="text"
-                            placeholder="Giải thích các bước..."
-                            value={latexMathExpl}
-                            onChange={e => setLatexMathExpl(e.target.value)}
-                            className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                          />
-                        </div>
-                      </div>
-
-                      {/* LaTeX Live Preview Area */}
-                      {latexMathTitle && (
-                        <div className="p-3 bg-slate-900/60 border border-indigo-950 rounded-xl space-y-1.5">
-                          <span className="text-[8px] font-black uppercase text-indigo-400 block font-mono">LIVE PREVIEW (XEM TRƯỚC)</span>
-                          <p className="text-[10px] font-semibold text-slate-350">{latexMathTitle}</p>
-                          <p className="text-xs font-mono bg-slate-955 p-2 rounded border border-slate-850 text-indigo-400 font-bold text-center">
-                            {latexMathEq || 'f(x) = ...'}
-                          </p>
-                          <p className="text-[9px] text-slate-500 italic">* Renders beautiful LaTeX via math notation</p>
-                        </div>
-                      )}
-
-                      <button
-                        type="submit"
-                        className="w-full py-2 bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 text-white font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer transition-all active:scale-[0.98]"
-                      >
-                        ➕ Tạo Câu Hỏi LaTeX
-                      </button>
-                    </form>
-                  </div>
-                </div>
+                <AdminMathContentPanel
+                  mathLessons={mathLessons}
+                  mathCasioTips={mathCasioTips}
+                  newCasioTitle={newCasioTitle}
+                  newCasioSyntax={newCasioSyntax}
+                  newCasioExpl={newCasioExpl}
+                  newMathId={newMathId}
+                  newMathTitle={newMathTitle}
+                  newMathTopic={newMathTopic}
+                  newMathCount={newMathCount}
+                  latexMathId={latexMathId}
+                  latexMathTitle={latexMathTitle}
+                  latexMathEq={latexMathEq}
+                  latexMathAns={latexMathAns}
+                  latexMathExpl={latexMathExpl}
+                  onSetNewCasioTitle={setNewCasioTitle}
+                  onSetNewCasioSyntax={setNewCasioSyntax}
+                  onSetNewCasioExpl={setNewCasioExpl}
+                  onSetNewMathId={setNewMathId}
+                  onSetNewMathTitle={setNewMathTitle}
+                  onSetNewMathTopic={setNewMathTopic}
+                  onSetNewMathCount={setNewMathCount}
+                  onSetLatexMathId={setLatexMathId}
+                  onSetLatexMathTitle={setLatexMathTitle}
+                  onSetLatexMathEq={setLatexMathEq}
+                  onSetLatexMathAns={setLatexMathAns}
+                  onSetLatexMathExpl={setLatexMathExpl}
+                  onAddCasioTip={handleAddCasioTip}
+                  onAddMathLesson={handleAddMathLesson}
+                  onCreateLatexQuestion={handleCreateLatexQuestion}
+                />
               )}
 
               {/* TRACK 2: SAT adaptive MANAGEMENT */}
               {adminActiveTab === 'sat' && (
-                <div className="space-y-6 text-left">
-                  
-                  {/* Admin SAT Sub-Tabs Switcher */}
-                  <div className="flex bg-slate-950 p-1.5 rounded-2xl border border-slate-850 gap-2 self-start inline-flex">
-                    <button
-                      type="button"
-                      onClick={() => setAdminSatSubTab('explorer')}
-                      className={`px-4 py-2 rounded-xl text-xs font-black uppercase transition-all border-0 cursor-pointer ${
-                        adminSatSubTab === 'explorer'
-                          ? 'bg-rose-500 text-slate-955 font-bold shadow'
-                          : 'bg-transparent text-slate-400 hover:text-slate-200'
-                      }`}
-                    >
-                      🔍 Duyệt Câu Hỏi (Explorer)
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setAdminSatSubTab('integrity')}
-                      className={`px-4 py-2 rounded-xl text-xs font-black uppercase transition-all border-0 cursor-pointer ${
-                        adminSatSubTab === 'integrity'
-                          ? 'bg-rose-500 text-slate-955 font-bold shadow'
-                          : 'bg-transparent text-slate-400 hover:text-slate-200'
-                      }`}
-                    >
-                      💎 Tính Toàn Vẹn (Integrity)
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setAdminSatSubTab('calibration')}
-                      className={`px-4 py-2 rounded-xl text-xs font-black uppercase transition-all border-0 cursor-pointer ${
-                        adminSatSubTab === 'calibration'
-                          ? 'bg-rose-500 text-slate-955 font-bold shadow'
-                          : 'bg-transparent text-slate-400 hover:text-slate-200'
-                      }`}
-                    >
-                      ⚡ Hiệu Chuẩn (Calibration)
-                    </button>
-                  </div>
-
-                  {/* SUB-TAB 1: SAT QUESTION EXPLORER & BROWSER */}
-                  {adminSatSubTab === 'explorer' && (
-                    <div className="space-y-6">
-                      
-                      {/* Active bank, search & filter bars */}
-                      <div className="bg-slate-955 p-5 rounded-3xl border border-slate-850 grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
-                        
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Chọn Ngân Hàng</label>
-                          <select
-                            value={adminSelectedSatBank}
-                            onChange={e => {
-                              setAdminSelectedSatBank(e.target.value);
-                              setAdminCurrentPage(1);
-                            }}
-                            className="w-full bg-slate-900 border border-slate-800 text-slate-200 rounded-xl px-3 py-2 text-xs font-bold outline-none cursor-pointer focus:border-rose-500 animate-pulse-slow"
-                          >
-                            <option value="sat-1590-elite-ai-bank.json">Elite AI Bank (661 câu)</option>
-                            <option value="antigravity-bank.json">Antigravity Bank (7,158 câu 🐘)</option>
-                            <option value="opensat-pinesat.json">OpenSAT Pinesat (1,026 câu)</option>
-                            <option value="sat-king-supplemental-ai-bank.json">Supplemental AI Bank (354 câu)</option>
-                            <option value="archive-source-ai-bank.json">Archive AI Bank (792 câu)</option>
-                            <option value="sat-studio-foundation-bank.json">Foundation Bank (219 câu)</option>
-                            <option value="private-vault-archive-bank.json">Private Vault Bank (165 câu)</option>
-                            <option value="kaplan-sat-math-ai-bank.json">Kaplan Math AI Bank (148 câu)</option>
-                          </select>
-                        </div>
-
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Lọc theo Domain</label>
-                          <select
-                            value={adminSelectedDomain}
-                            onChange={e => {
-                              setAdminSelectedDomain(e.target.value);
-                              setAdminSelectedSkill('all');
-                              setAdminCurrentPage(1);
-                            }}
-                            className="w-full bg-slate-900 border border-slate-800 text-slate-200 rounded-xl px-3 py-2 text-xs font-bold outline-none cursor-pointer focus:border-rose-500"
-                          >
-                            <option value="all">Tất cả Domains</option>
-                            <option value="Information and Ideas">Information and Ideas</option>
-                            <option value="Craft and Structure">Craft and Structure</option>
-                            <option value="Expression of Ideas">Expression of Ideas</option>
-                            <option value="Standard English Conventions">Standard English Conventions</option>
-                            <option value="Algebra">Math: Algebra</option>
-                            <option value="Advanced Math">Math: Advanced Math</option>
-                            <option value="Problem-Solving and Data Analysis">Math: Problem-Solving & Data</option>
-                            <option value="Geometry and Trigonometry">Math: Geometry & Trig</option>
-                          </select>
-                        </div>
-
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Tìm kiếm Từ khóa</label>
-                          <input
-                            type="text"
-                            placeholder="Nhập ID hoặc từ khóa..."
-                            value={adminSearchQuery}
-                            onChange={e => {
-                              setAdminSearchQuery(e.target.value);
-                              setAdminCurrentPage(1);
-                            }}
-                            className="w-full bg-slate-900 border border-slate-805 text-slate-200 rounded-xl px-3 py-2 text-xs outline-none focus:border-rose-500 placeholder:text-slate-700"
-                          />
-                        </div>
-
-                        <div className="text-right shrink-0">
-                          <span className="text-[10px] font-black text-rose-455 font-mono bg-rose-955 border border-rose-900/40 px-3 py-2 rounded-xl block text-center">
-                            Tổng lọc: {
-                              loadedQuestions.filter(q => {
-                                const matchesDomain = adminSelectedDomain === 'all' || q.domain?.toLowerCase() === adminSelectedDomain.toLowerCase();
-                                const matchesSearch = !adminSearchQuery.trim() || 
-                                                      q.id?.toLowerCase().includes(adminSearchQuery.toLowerCase()) || 
-                                                      q.prompt?.toLowerCase().includes(adminSearchQuery.toLowerCase());
-                                return matchesDomain && matchesSearch;
-                              }).length
-                            } / {loadedQuestions.length} câu meow
-                          </span>
-                        </div>
-
-                      </div>
-
-                      {/* Paginated Questions List Table */}
-                      <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-4">
-                        <div className="overflow-x-auto rounded-2xl border border-slate-850">
-                          <table className="w-full border-collapse text-left text-xs text-slate-350">
-                            <thead>
-                              <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-black uppercase font-sans">
-                                <th className="p-3">ID</th>
-                                <th className="p-3">Phân Loại / Domain</th>
-                                <th className="p-3">Chuyên Đề / Skill</th>
-                                <th className="p-3">Nội Dung Câu Hỏi (Prompt)</th>
-                                <th className="p-3">Độ Khó</th>
-                                <th className="p-3 text-center">Đáp Án</th>
-                                <th className="p-3 text-center">Thao Tác</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {(() => {
-                                const filtered = loadedQuestions.filter(q => {
-                                  const matchesDomain = adminSelectedDomain === 'all' || q.domain?.toLowerCase() === adminSelectedDomain.toLowerCase();
-                                  const matchesSearch = !adminSearchQuery.trim() || 
-                                                        q.id?.toLowerCase().includes(adminSearchQuery.toLowerCase()) || 
-                                                        q.prompt?.toLowerCase().includes(adminSearchQuery.toLowerCase());
-                                  return matchesDomain && matchesSearch;
-                                });
-
-                                const pageSize = 10;
-                                const totalPages = Math.ceil(filtered.length / pageSize);
-                                const startIndex = (adminCurrentPage - 1) * pageSize;
-                                const pageItems = filtered.slice(startIndex, startIndex + pageSize);
-
-                                if (pageItems.length === 0) {
-                                  return (
-                                    <tr>
-                                      <td colSpan={7} className="p-8 text-center text-slate-500 italic">Không tìm thấy câu hỏi SAT nào meow...</td>
-                                    </tr>
-                                  );
-                                }
-
-                                return pageItems.map(q => (
-                                  <tr key={q.id} className="border-b border-slate-855 hover:bg-slate-950/40 font-sans">
-                                    <td className="p-3 font-mono font-bold text-rose-455">{q.id}</td>
-                                    <td className="p-3">
-                                      <span className="text-[10px] bg-slate-950 text-slate-400 border border-slate-850 px-2 py-0.5 rounded font-medium">
-                                        {q.domain || 'Math'}
-                                      </span>
-                                    </td>
-                                    <td className="p-3 text-slate-200 font-bold max-w-[120px] truncate" title={q.skill || q.canonicalSkill}>
-                                      {q.skill || q.canonicalSkill || 'Mixed'}
-                                    </td>
-                                    <td className="p-3 text-slate-450 max-w-[280px] truncate" title={q.prompt}>
-                                      {q.prompt}
-                                    </td>
-                                    <td className="p-3">
-                                      <span className={`text-[9px] font-black px-2 py-0.5 rounded-full border uppercase tracking-wider ${
-                                        q.difficulty === 'Hard'
-                                          ? 'bg-rose-955 border-rose-900 text-rose-455'
-                                          : q.difficulty === 'Medium'
-                                            ? 'bg-amber-955 border-amber-900 text-amber-400'
-                                            : 'bg-emerald-950 border-emerald-900 text-emerald-400'
-                                      }`}>
-                                        {q.difficulty || 'Hard'}
-                                      </span>
-                                    </td>
-                                    <td className="p-3 text-center font-mono font-black text-emerald-400 uppercase">{q.correctAnswer}</td>
-                                    <td className="p-3 text-center">
-                                      <button
-                                        onClick={() => setAdminActiveQuestionDetail(q)}
-                                        className="px-2.5 py-1 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-lg text-[10px] font-black uppercase cursor-pointer transition-all"
-                                      >
-                                        Duyệt 🔍
-                                      </button>
-                                    </td>
-                                  </tr>
-                                ));
-                              })()}
-                            </tbody>
-                          </table>
-                        </div>
-
-                        {/* Pagination Footer */}
-                        {(() => {
-                          const filtered = loadedQuestions.filter(q => {
-                            const matchesDomain = adminSelectedDomain === 'all' || q.domain?.toLowerCase() === adminSelectedDomain.toLowerCase();
-                            const matchesSearch = !adminSearchQuery.trim() || 
-                                                  q.id?.toLowerCase().includes(adminSearchQuery.toLowerCase()) || 
-                                                  q.prompt?.toLowerCase().includes(adminSearchQuery.toLowerCase());
-                            return matchesDomain && matchesSearch;
-                          });
-
-                          const pageSize = 10;
-                          const totalPages = Math.ceil(filtered.length / pageSize) || 1;
-
-                          return (
-                            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-800">
-                              <span className="text-[10px] text-slate-500 font-bold uppercase">
-                                Trang {adminCurrentPage} trên {totalPages} (Tổng số {filtered.length} câu)
-                              </span>
-                              <div className="flex gap-2">
-                                <button
-                                  disabled={adminCurrentPage === 1}
-                                  onClick={() => setAdminCurrentPage(prev => Math.max(1, prev - 1))}
-                                  className="px-3 py-1 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-xl text-[10px] font-bold transition-all disabled:opacity-40 cursor-pointer"
-                                >
-                                  ← Trang Trước
-                                </button>
-                                <button
-                                  disabled={adminCurrentPage >= totalPages}
-                                  onClick={() => setAdminCurrentPage(prev => Math.min(totalPages, prev + 1))}
-                                  className="px-3 py-1 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-xl text-[10px] font-bold transition-all disabled:opacity-40 cursor-pointer"
-                                >
-                                  Trang Sau →
-                                </button>
-                              </div>
-                            </div>
-                          );
-                        })()}
-
-                      </div>
-
-                      {/* Detail Drawer Modal */}
-                      {adminActiveQuestionDetail && (
-                        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-955/80 backdrop-blur-md p-4">
-                          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 max-w-2xl w-full shadow-2xl relative text-left space-y-5 animate-fade-in">
-                            <button
-                              onClick={() => setAdminActiveQuestionDetail(null)}
-                              className="absolute top-4 right-4 bg-slate-955 hover:bg-slate-850 text-slate-500 hover:text-white border border-slate-805 rounded-full w-8 h-8 flex items-center justify-center font-bold transition-all cursor-pointer"
-                            >
-                              ✕
-                            </button>
-
-                            <div className="flex items-center gap-3 pb-3 border-b border-slate-805">
-                              <span className="text-2xl">🎓</span>
-                              <div>
-                                <h3 className="text-sm font-black text-rose-400 font-sans uppercase">CHI TIẾT CÂU HỎI THÍCH ỨNG</h3>
-                                <span className="text-[10px] font-mono text-slate-500 block mt-0.5">ID: {adminActiveQuestionDetail.id} • Section: {adminActiveQuestionDetail.section}</span>
-                              </div>
-                            </div>
-
-                            <div className="space-y-4 max-h-[380px] overflow-y-auto pr-2 scrollbar-thin text-xs">
-                              {/* Metadata */}
-                              <div className="grid grid-cols-2 gap-3">
-                                <div className="bg-slate-955 p-2.5 rounded-xl border border-slate-850">
-                                  <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Domain</span>
-                                  <span className="font-extrabold text-slate-200">{adminActiveQuestionDetail.domain}</span>
-                                </div>
-                                <div className="bg-slate-955 p-2.5 rounded-xl border border-slate-850">
-                                  <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Skill / Chuyên Đề</span>
-                                  <span className="font-extrabold text-slate-200">{adminActiveQuestionDetail.skill || adminActiveQuestionDetail.canonicalSkill}</span>
-                                </div>
-                              </div>
-
-                              {/* Prompt */}
-                              <div className="space-y-1 bg-slate-955 p-3 rounded-xl border border-slate-850">
-                                <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Nội dung câu hỏi (Prompt)</span>
-                                <PromptWithAssets
-                                  text={adminActiveQuestionDetail.prompt}
-                                  className="font-semibold text-slate-150 whitespace-pre-line leading-relaxed font-sans"
-                                />
-                              </div>
-
-                              {/* Choices */}
-                              {adminActiveQuestionDetail.choices && (
-                                <div className="space-y-1.5">
-                                  <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block">Các Phương Án Trắc Nghiệm</span>
-                                  <div className="grid grid-cols-1 gap-2">
-                                    {Object.entries(adminActiveQuestionDetail.choices).map(([k, v]) => (
-                                      <div key={k} className={`p-2.5 rounded-xl border flex items-start gap-2.5 ${
-                                        k === adminActiveQuestionDetail.correctAnswer ? 'bg-emerald-950/20 border-emerald-900/60 text-emerald-400' : 'bg-slate-955 border-slate-855 text-slate-400'
-                                      }`}>
-                                        <span className={`w-5 h-5 rounded font-black flex items-center justify-center text-[9px] uppercase border shrink-0 ${
-                                          k === adminActiveQuestionDetail.correctAnswer ? 'bg-emerald-500 border-emerald-400 text-slate-950' : 'bg-slate-900 border-slate-855 text-slate-550'
-                                        }`}>{k}</span>
-                                        <span className="font-semibold leading-normal">{v as string}</span>
-                                      </div>
-                                    ))}
-                                  </div>
-                                </div>
-                              )}
-
-                              {/* Explanation */}
-                              <div className="space-y-1 bg-slate-955 p-3 rounded-xl border border-slate-850">
-                                <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Giải thích chi tiết (Explanation)</span>
-                                <p className="text-slate-350 whitespace-pre-line leading-relaxed font-sans">
-                                  {typeof adminActiveQuestionDetail.explanation === 'object'
-                                    ? (adminActiveQuestionDetail.explanation.correct || JSON.stringify(adminActiveQuestionDetail.explanation))
-                                    : (adminActiveQuestionDetail.explanation || 'Chưa có giải thích.')}
-                                </p>
-                              </div>
-                            </div>
-
-                            <div className="flex justify-end pt-3 border-t border-slate-805">
-                              <button
-                                onClick={() => setAdminActiveQuestionDetail(null)}
-                                className="px-5 py-2 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-xl text-xs font-black uppercase cursor-pointer"
-                              >
-                                Đóng
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      )}
-
-                    </div>
-                  )}
-
-                  {/* SUB-TAB 2: DATABASE & INTEGRITY AUDIT */}
-                  {adminSatSubTab === 'integrity' && (
-                    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-6">
-                      <div className="border-b border-slate-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                        <div>
-                          <h4 className="text-xs font-black text-rose-400 uppercase tracking-widest font-sans flex items-center gap-1.5">
-                            <span>💎 BẢNG KIỂM TRA TÍNH TOÀN VẸN CƠ SỞ DỮ LIỆU (INTEGRITY AUDIT)</span>
-                          </h4>
-                          <p className="text-[10px] text-slate-500 mt-1 font-light font-sans leading-relaxed">
-                            Báo cáo đo lường chi tiết kích thước file vật lý và số câu hỏi đã parsed thành công từ các tệp dữ liệu đã di chuyển sang.
-                          </p>
-                        </div>
-                        <div className="text-xs font-black text-emerald-450 font-mono bg-slate-950 px-3.5 py-1.5 rounded-full border border-slate-855 shrink-0">
-                          Tổng Ngân Hàng Pool: 10,000+ Câu
-                        </div>
-                      </div>
-
-                      {/* Integrity Audit Table */}
-                      <div className="overflow-x-auto rounded-2xl border border-slate-850">
-                        <table className="w-full border-collapse text-left text-xs text-slate-350">
-                          <thead>
-                            <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-black uppercase font-sans">
-                              <th className="p-4">Tên Tệp Vật Lý (Static JSON)</th>
-                              <th className="p-4">Dung Lượng (MB)</th>
-                              <th className="p-4">Tổng Số Câu Hỏi</th>
-                              <th className="p-4">Loại Ngân Hàng (Bank Type)</th>
-                              <th className="p-4">Độ An Toàn (Quality Integrity)</th>
-                              <th className="p-4">Trạng Thái Hoạt Động</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {[
-                              { name: 'antigravity-bank.json', size: '50.5 MB', count: '7,158 câu', type: 'Ngân hàng Gốc Siêu Cấp', cert: 'College Board Aligned', status: 'Healthy • Active' },
-                              { name: 'opensat-pinesat.json', size: '9.3 MB', count: '1,026 câu', type: 'Đề thi Adaptive Practice', cert: 'Bluebook Aligned', status: 'Healthy • Active' },
-                              { name: 'sat-1590-elite-ai-bank.json', size: '5.1 MB', count: '661 câu', type: 'Tinh hoa AI 1590', cert: 'Strict 1600 Audit', status: 'Healthy • Active' },
-                              { name: 'sat-king-supplemental-ai-bank.json', size: '2.9 MB', count: '354 câu', type: 'Bổ sung AI King Pack', cert: 'Passed AutoCheck', status: 'Healthy • Active' },
-                              { name: 'archive-source-ai-bank.json', size: '6.7 MB', count: '792 câu', type: 'Kho lưu trữ đặc biệt', cert: 'Curriculum Metadata Aligned', status: 'Healthy • Active' },
-                              { name: 'canonical-sat-taxonomy.json', size: '16.5 KB', count: '518 dòng', type: 'Sơ đồ chuyên đề chuẩn', cert: 'Official Taxonomy v3', status: 'Healthy • Active' }
-                            ].map(bank => (
-                              <tr key={bank.name} className="border-b border-slate-855 hover:bg-slate-950/40 font-sans">
-                                <td className="p-4 font-mono font-bold text-rose-455">{bank.name}</td>
-                                <td className="p-4 font-mono font-bold text-slate-205">{bank.size}</td>
-                                <td className="p-4 font-bold text-slate-300">{bank.count}</td>
-                                <td className="p-4 text-slate-450">{bank.type}</td>
-                                <td className="p-4">
-                                  <span className="text-[9px] bg-slate-950 text-slate-400 border border-slate-850 px-2.5 py-0.5 rounded font-black font-mono">
-                                    {bank.cert}
-                                  </span>
-                                </td>
-                                <td className="p-4">
-                                  <span className="text-[9px] bg-emerald-950/70 border border-emerald-900 text-emerald-400 px-2.5 py-0.5 rounded-full font-black uppercase">
-                                    {bank.status}
-                                  </span>
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <div className="p-4 bg-slate-955 rounded-2xl border border-slate-850 text-xs text-slate-500 font-light leading-relaxed font-sans">
-                        💡 **Bảo mật và Bản quyền**: Toàn bộ ngân hàng câu hỏi đã vượt qua hệ thống kiểm duyệt chất lượng nghiêm ngặt (Strict 1600 Content Gate Review) để loại bỏ các câu trùng lặp, đảm bảo độ khó thực tế của kỳ thi SAT thật.
-                      </div>
-                    </div>
-                  )}
-
-                  {/* SUB-TAB 3: IRT CALIBRATION CONTROLS */}
-                  {adminSatSubTab === 'calibration' && (
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                      
-                      {/* Left: Performance Thresholds */}
-                      <div className="p-6 bg-slate-900 rounded-3xl border border-slate-800 space-y-4 shadow-xl">
-                        <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 font-sans">📊 Cấu Hình Tham Số Thích Ứng (IRT)</h4>
-                        
-                        <div className="space-y-4">
-                          <div>
-                            <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">Mục tiêu Điểm Đánh giá SAT (Diagnostic Threshold)</label>
-                            <div className="flex items-center gap-3">
-                              <input
-                                type="range"
-                                min="800"
-                                max="1600"
-                                step="50"
-                                value={satDiagnosticThreshold}
-                                onChange={e => setSatDiagnosticThreshold(Number(e.target.value))}
-                                className="flex-1 accent-rose-500 cursor-pointer"
-                              />
-                              <span className="font-mono font-bold text-slate-200 shrink-0 w-12 text-right">{satDiagnosticThreshold}</span>
-                            </div>
-                          </div>
-
-                          <div>
-                            <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">Tỷ lệ Học tập Tham số (IRT Learning Rate &alpha;)</label>
-                            <div className="flex items-center gap-3">
-                              <input
-                                type="range"
-                                min="0.01"
-                                max="0.2"
-                                step="0.01"
-                                value={satIrtAlpha}
-                                onChange={e => setSatIrtAlpha(Number(e.target.value))}
-                                className="flex-1 accent-rose-500 cursor-pointer"
-                              />
-                              <span className="font-mono font-bold text-slate-200 shrink-0 w-12 text-right">{satIrtAlpha.toFixed(2)}</span>
-                            </div>
-                          </div>
-
-                          <div className="p-3 bg-slate-950 border border-slate-850 rounded-xl text-[10px] text-slate-500 leading-relaxed font-light font-sans">
-                            💡 **Tham số IRT**: Việc tăng tốc độ học tập giúp điều chỉnh mức độ khó thích ứng của Module 2 SAT nhanh hơn dựa trên kết quả Module 1 của học viên.
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Right: IRT Calibrator Module */}
-                      <div className="p-6 bg-slate-900 rounded-3xl border border-slate-800 flex flex-col justify-between shadow-xl">
-                        <div>
-                          <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2 font-sans">⚡ Bộ Hiệu Chuẩn Thống Kê IRT</h4>
-                          <p className="text-[10px] text-slate-500 leading-relaxed mb-4 font-light font-sans">
-                            Chạy phân tích thống kê phi tham số giả lập để tự động cập nhật độ phân biệt (Discrimination $a$), độ khó (Difficulty $b$) của toàn bộ 10,000+ câu hỏi trong ngân hàng đề thi thích ứng dựa trên lịch sử làm bài của học viên.
-                          </p>
-                        </div>
-
-                        <button
-                          type="button"
-                          disabled={isIrtCalibrating}
-                          onClick={handleTriggerIrtCalibration}
-                          className={`w-full py-4 bg-gradient-to-r from-rose-500 to-red-500 hover:from-rose-600 hover:to-red-600 text-white font-extrabold uppercase text-xs tracking-widest rounded-xl border-0 cursor-pointer shadow-lg shadow-rose-950/20 active:scale-[0.98] duration-100 ${
-                            isIrtCalibrating ? 'opacity-50 animate-pulse cursor-not-allowed' : ''
-                          }`}
-                        >
-                          {isIrtCalibrating ? '⚙️ Đang hiệu chuẩn mô hình...' : '🔥 Chạy hiệu chuẩn IRT Calibrate'}
-                        </button>
-                      </div>
-
-                    </div>
-                  )}
-
-                </div>
+                <AdminSatContentPanel
+                  adminSatSubTab={adminSatSubTab}
+                  adminSelectedSatBank={adminSelectedSatBank}
+                  adminSearchQuery={adminSearchQuery}
+                  adminSelectedDomain={adminSelectedDomain}
+                  adminCurrentPage={adminCurrentPage}
+                  loadedQuestions={loadedQuestions}
+                  activeQuestionDetail={adminActiveQuestionDetail}
+                  satDiagnosticThreshold={satDiagnosticThreshold}
+                  satIrtAlpha={satIrtAlpha}
+                  isIrtCalibrating={isIrtCalibrating}
+                  onSetAdminSatSubTab={setAdminSatSubTab}
+                  onSetAdminSelectedSatBank={setAdminSelectedSatBank}
+                  onSetAdminSearchQuery={setAdminSearchQuery}
+                  onSetAdminSelectedDomain={setAdminSelectedDomain}
+                  onSetAdminSelectedSkill={setAdminSelectedSkill}
+                  onSetAdminCurrentPage={setAdminCurrentPage}
+                  onSetActiveQuestionDetail={setAdminActiveQuestionDetail}
+                  onSetSatDiagnosticThreshold={setSatDiagnosticThreshold}
+                  onSetSatIrtAlpha={setSatIrtAlpha}
+                  onTriggerIrtCalibration={handleTriggerIrtCalibration}
+                />
               )}
 
               {/* TRACKS 3, 4, 5: IELTS, CAE, CPE (EXAM MANAGEMENT) */}
               {(adminActiveTab === 'ielts' || adminActiveTab === 'cae' || adminActiveTab === 'cpe') && (
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  {/* Left: Active Mock Exams */}
-                  <div className="lg:col-span-2 space-y-4">
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-indigo-400 font-sans">
-                      🏆 Danh sách đề thi thử {adminActiveTab.toUpperCase()} hiện hành
-                    </h4>
-                    <div className="flex flex-col xl:flex-row xl:items-end justify-between gap-4">
-                      <p className="text-[11px] text-slate-500 mt-0 mb-0">
-                        Review progress {activeContentReviewSummary.completionRate}% - {activeContentReviewSummary.checked}/{activeContentReviewSummary.totalExams} checked
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <button
-                          type="button"
-                          onClick={handleExportContentReviewSet}
-                          className="px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase cursor-pointer transition-all bg-emerald-500 text-slate-950 border-emerald-300 hover:bg-emerald-400"
-                        >
-                          Export review set
-                        </button>
-                        {[
-                          { id: 'all', label: 'All', count: activeContentReviewSummary.totalExams },
-                          { id: 'unchecked', label: 'Draft', count: activeContentReviewSummary.unchecked },
-                          { id: 'needs_fix', label: 'Needs Fix', count: activeContentReviewSummary.needsFix },
-                          { id: 'checked', label: 'Checked', count: activeContentReviewSummary.checked },
-                        ].map((filter) => (
-                          <button
-                            key={filter.id}
-                            type="button"
-                            onClick={() => setContentReviewFilter(filter.id as ContentReviewFilter)}
-                            className={`px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase cursor-pointer transition-all ${
-                              contentReviewFilter === filter.id
-                                ? 'bg-indigo-400 text-slate-950 border-indigo-300'
-                                : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-indigo-300 hover:border-indigo-900'
-                            }`}
-                          >
-                            {filter.label} {filter.count}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
+                  <AdminContentReviewPanel
+                    track={adminActiveTab}
+                    currentUser={currentUser}
+                    reviewFilter={contentReviewFilter}
+                    reviewSummary={activeContentReviewSummary}
+                    filteredExams={filteredContentExams}
+                    selectedExamId={selectedContentExamId}
+                    examDraft={contentExamDraft}
+                    onSetReviewFilter={setContentReviewFilter}
+                    onExportReviewSet={handleExportContentReviewSet}
+                    onOpenExam={handleOpenContentExam}
+                    onSaveDraft={handleSaveContentExamDraft}
+                    onExportChangeSet={handleExportContentExamChangeSet}
+                    onCloseDraft={handleCloseContentExam}
+                    onUpdateDraft={updateContentExamDraft}
+                    onUpdateSection={updateContentExamSection}
+                    onUpdateQuestion={updateContentExamQuestion}
+                    onAddSection={handleAddContentSection}
+                    onAddQuestion={handleAddContentQuestion}
+                    onRemoveQuestion={handleRemoveContentQuestion}
+                  />
 
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-                      {[
-                        { label: 'Exams', value: activeContentReviewSummary.totalExams, tone: 'text-indigo-300' },
-                        { label: 'Questions', value: activeContentReviewSummary.totalQuestions, tone: 'text-cyan-300' },
-                        { label: 'Checked', value: activeContentReviewSummary.checked, tone: 'text-emerald-300' },
-                        { label: 'Needs fix', value: activeContentReviewSummary.needsFix, tone: 'text-rose-300' },
-                        { label: 'Draft', value: activeContentReviewSummary.unchecked, tone: 'text-amber-300' },
-                      ].map((metric) => (
-                        <div key={metric.label} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-3">
-                          <p className="text-[9px] uppercase tracking-widest text-slate-500 font-black m-0">{metric.label}</p>
-                          <p className={`text-xl font-black mt-1 mb-0 ${metric.tone}`}>{metric.value}</p>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="border border-slate-855 rounded-2xl overflow-hidden bg-slate-950/40">
-                      <table className="w-full border-collapse text-xs text-left">
-                        <thead>
-                          <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-bold font-sans">
-                            <th className="p-3">Tên Đề Thi</th>
-                            <th className="p-3">Hệ Đề</th>
-                            <th className="p-3">Số Câu</th>
-                            <th className="p-3">Thời Gian</th>
-                            <th className="p-3">Trạng Thái</th>
-                            <th className="p-3">Review</th>
-                            <th className="p-3 text-center">Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {filteredContentExams.length === 0 ? (
-                            <tr>
-                              <td className="p-6 text-center text-slate-500 font-bold" colSpan={7}>
-                                No exams match this review filter.
-                              </td>
-                            </tr>
-                          ) : (
-                            filteredContentExams.map(ex => (
-                              <tr key={ex.id} className="border-b border-slate-850/60 hover:bg-slate-900/40 font-sans">
-                                <td className="p-3 font-bold text-slate-200">{ex.title}</td>
-                                <td className="p-3 font-mono text-indigo-400">{ex.exam}</td>
-                                <td className="p-3 text-slate-350">{ex.questions} câu</td>
-                                <td className="p-3 text-slate-350">{ex.duration} phút</td>
-                                <td className="p-3">
-                                  <span className="text-[9px] bg-emerald-950/70 border border-emerald-900 text-emerald-400 px-2 py-0.5 rounded-full uppercase font-bold">
-                                    {ex.status}
-                                  </span>
-                                </td>
-                                <td className="p-3">
-                                  <span className={`text-[9px] px-2 py-0.5 rounded-full uppercase font-black border ${
-                                    ex.reviewStatus === 'checked'
-                                      ? 'bg-emerald-950/70 border-emerald-900 text-emerald-400'
-                                      : ex.reviewStatus === 'needs_fix'
-                                        ? 'bg-rose-950/70 border-rose-900 text-rose-400'
-                                        : 'bg-amber-950/70 border-amber-900 text-amber-400'
-                                  }`}>
-                                    {ex.reviewStatus === 'checked' ? 'checked' : ex.reviewStatus === 'needs_fix' ? 'needs fix' : 'unchecked'}
-                                  </span>
-                                </td>
-                                <td className="p-3 text-center">
-                                  <button
-                                    type="button"
-                                    onClick={() => handleOpenContentExam(ex)}
-                                    className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase border cursor-pointer transition-all ${
-                                      selectedContentExamId === ex.id
-                                        ? 'bg-indigo-400 text-slate-950 border-indigo-300'
-                                        : 'bg-slate-950 text-indigo-300 border-indigo-900 hover:bg-indigo-950/60'
-                                    }`}
-                                  >
-                                    Mở / Sửa
-                                  </button>
-                                </td>
-                              </tr>
-                            ))
-                          )}
-                        </tbody>
-                      </table>
-                    </div>
-
-                    {contentExamDraft && contentExamDraft.exam.toLowerCase() === adminActiveTab && (
-                      <div className="bg-slate-950/70 border border-indigo-900/50 rounded-3xl p-5 space-y-5 shadow-xl">
-                        <div className="flex flex-col xl:flex-row xl:items-start justify-between gap-4">
-                          <div>
-                            <p className="text-[10px] font-black uppercase tracking-[0.16em] text-indigo-300 m-0">Content Review Editor</p>
-                            <h4 className="text-lg font-black text-slate-100 mt-1 mb-0">{contentExamDraft.title}</h4>
-                            <p className="text-[11px] text-slate-500 mt-1 mb-0 font-mono">
-                              {contentExamDraft.id} • {contentExamDraft.exam} • reviewer: {contentExamDraft.reviewer || currentUser?.username || 'admin'}
-                            </p>
-                          </div>
-                          <div className="flex flex-wrap gap-2">
-                            <button
-                              type="button"
-                              onClick={() => handleSaveContentExamDraft('unchecked')}
-                              className="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-[10px] font-black uppercase cursor-pointer"
-                            >
-                              Save Draft
-                            </button>
-                            <button
-                              type="button"
-                              onClick={() => handleSaveContentExamDraft('needs_fix')}
-                              className="px-3 py-2 rounded-xl bg-rose-950/70 hover:bg-rose-900 text-rose-300 border border-rose-900 text-[10px] font-black uppercase cursor-pointer"
-                            >
-                              Mark Needs Fix
-                            </button>
-                            <button
-                              type="button"
-                              onClick={() => handleSaveContentExamDraft('checked')}
-                              className="px-3 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 border border-emerald-300 text-[10px] font-black uppercase cursor-pointer"
-                            >
-                              Save & Checked
-                            </button>
-                            <button
-                              type="button"
-                              onClick={handleExportContentExamChangeSet}
-                              className="px-3 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 border border-cyan-300 text-[10px] font-black uppercase cursor-pointer"
-                            >
-                              Export Change Set
-                            </button>
-                            <button
-                              type="button"
-                              onClick={() => {
-                                setSelectedContentExamId(null);
-                                setContentExamDraft(null);
-                              }}
-                              className="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-[10px] font-black uppercase cursor-pointer"
-                            >
-                              Close
-                            </button>
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-[1fr_120px_120px] gap-3">
-                          <div>
-                            <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Exam title</label>
-                            <input
-                              value={contentExamDraft.title}
-                              onChange={(event) => updateContentExamDraft({ title: event.target.value })}
-                              className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-100 outline-none focus:border-indigo-500"
-                            />
-                          </div>
-                          <div>
-                            <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Questions</label>
-                            <input
-                              type="number"
-                              min={1}
-                              value={contentExamDraft.questions}
-                              onChange={(event) => updateContentExamDraft({ questions: Number(event.target.value) || 1 })}
-                              className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-100 outline-none focus:border-indigo-500"
-                            />
-                          </div>
-                          <div>
-                            <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Minutes</label>
-                            <input
-                              type="number"
-                              min={1}
-                              value={contentExamDraft.duration}
-                              onChange={(event) => updateContentExamDraft({ duration: Number(event.target.value) || 1 })}
-                              className="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-100 outline-none focus:border-indigo-500"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="space-y-4">
-                          {ensureEditableExamSections(contentExamDraft).map((section, sectionIndex) => (
-                            <div key={`${section.id}-${sectionIndex}`} className="bg-slate-900/70 border border-slate-800 rounded-2xl p-4 space-y-3">
-                              <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3 items-end">
-                                <div>
-                                  <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Section title</label>
-                                  <input
-                                    value={section.title}
-                                    onChange={(event) => updateContentExamSection(sectionIndex, { title: event.target.value })}
-                                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-100 outline-none focus:border-indigo-500"
-                                  />
-                                </div>
-                                <button
-                                  type="button"
-                                  onClick={() => handleAddContentQuestion(sectionIndex)}
-                                  className="px-3 py-2 rounded-xl bg-indigo-950 hover:bg-indigo-900 text-indigo-300 border border-indigo-900 text-[10px] font-black uppercase cursor-pointer"
-                                >
-                                  Add Question
-                                </button>
-                              </div>
-
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                <div>
-                                  <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Passage / prompt context</label>
-                                  <textarea
-                                    rows={3}
-                                    value={section.passageHtml || ''}
-                                    onChange={(event) => updateContentExamSection(sectionIndex, { passageHtml: event.target.value })}
-                                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-[11px] text-slate-100 outline-none focus:border-indigo-500 resize-y"
-                                  />
-                                </div>
-                                <div>
-                                  <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Transcript / listening text</label>
-                                  <textarea
-                                    rows={3}
-                                    value={section.transcript || ''}
-                                    onChange={(event) => updateContentExamSection(sectionIndex, { transcript: event.target.value })}
-                                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-[11px] text-slate-100 outline-none focus:border-indigo-500 resize-y"
-                                  />
-                                </div>
-                              </div>
-
-                              <div className="space-y-3">
-                                {section.questions.length === 0 ? (
-                                  <div className="border border-dashed border-slate-750 rounded-xl p-4 text-[11px] text-slate-500">
-                                    Đề này đang ở dạng summary. Bấm Add Question để nhập nội dung câu hỏi trực tiếp, hoặc import JSON đầy đủ để có section/question tự động.
-                                  </div>
-                                ) : (
-                                  section.questions.map((question, questionIndex) => (
-                                    <div key={`${question.id}-${questionIndex}`} className="bg-slate-950/75 border border-slate-850 rounded-2xl p-3 space-y-2">
-                                      <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_140px_auto] gap-2 items-start">
-                                        <input
-                                          value={question.id}
-                                          onChange={(event) => updateContentExamQuestion(sectionIndex, questionIndex, { id: event.target.value })}
-                                          className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-indigo-300 font-mono outline-none"
-                                        />
-                                        <textarea
-                                          rows={2}
-                                          value={question.text}
-                                          onChange={(event) => updateContentExamQuestion(sectionIndex, questionIndex, { text: event.target.value })}
-                                          className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-slate-100 outline-none resize-y"
-                                        />
-                                        <input
-                                          value={question.answer}
-                                          onChange={(event) => updateContentExamQuestion(sectionIndex, questionIndex, { answer: event.target.value })}
-                                          placeholder="Answer"
-                                          className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-emerald-300 font-mono outline-none"
-                                        />
-                                        <button
-                                          type="button"
-                                          onClick={() => handleRemoveContentQuestion(sectionIndex, questionIndex)}
-                                          className="px-2 py-2 rounded-lg bg-rose-950/50 hover:bg-rose-900 text-rose-300 border border-rose-900 text-[10px] font-black cursor-pointer"
-                                        >
-                                          Remove
-                                        </button>
-                                      </div>
-                                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                        <textarea
-                                          rows={2}
-                                          value={(question.options || []).join('\n')}
-                                          onChange={(event) =>
-                                            updateContentExamQuestion(sectionIndex, questionIndex, {
-                                              options: event.target.value.split('\n').map((line) => line.trim()).filter(Boolean),
-                                            })
-                                          }
-                                          placeholder="Options, one per line"
-                                          className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-slate-300 outline-none resize-y"
-                                        />
-                                        <textarea
-                                          rows={2}
-                                          value={question.note || ''}
-                                          onChange={(event) => updateContentExamQuestion(sectionIndex, questionIndex, { note: event.target.value })}
-                                          placeholder="Content note / explanation"
-                                          className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-slate-300 outline-none resize-y"
-                                        />
-                                      </div>
-                                    </div>
-                                  ))
-                                )}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-
-                        <div className="flex flex-wrap justify-between gap-3 border-t border-slate-800 pt-4">
-                          <button
-                            type="button"
-                            onClick={handleAddContentSection}
-                            className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-[10px] font-black uppercase cursor-pointer"
-                          >
-                            Add Section
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => handleSaveContentExamDraft('unchecked')}
-                            className="px-5 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-slate-950 border border-indigo-300 text-[10px] font-black uppercase cursor-pointer"
-                          >
-                            Save Draft
-                          </button>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Right Column: Visual Creator Form & JSON Import */}
-                  <div className="space-y-6">
-                    {/* Visual Exam Creator */}
-                    <div className="p-4 bg-slate-950 rounded-2xl border border-slate-850 space-y-3 text-left">
-                      <h4 className="text-xs font-black uppercase text-indigo-400 tracking-wider font-sans">🚀 Tạo nhanh đề {adminActiveTab.toUpperCase()} trực quan</h4>
-                      <div>
-                        <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Mã Đề Thi (tự chọn)</label>
-                        <input
-                          type="text"
-                          placeholder={`Ví dụ: ${adminActiveTab}-mock-02 (để trống tự tạo)...`}
-                          value={newExamId}
-                          onChange={e => setNewExamId(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-850 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                        />
-                      </div>
-                      <div>
-                        <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Tên Đề Thi *</label>
-                        <input
-                          type="text"
-                          placeholder="Ví dụ: Cambridge Academic Mock Test 1..."
-                          value={newExamTitle}
-                          onChange={e => setNewExamTitle(e.target.value)}
-                          className="w-full bg-slate-900 border border-slate-850 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
-                          required
-                        />
-                      </div>
-                      <div className="grid grid-cols-2 gap-2">
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Số Câu Hỏi</label>
-                          <input
-                            type="number"
-                            min={1}
-                            max={100}
-                            value={newExamQuestions}
-                            onChange={e => setNewExamQuestions(parseInt(e.target.value) || 40)}
-                            className="w-full bg-slate-900 border border-slate-850 rounded-lg px-3 py-2 text-xs outline-none text-slate-250"
-                          />
-                        </div>
-                        <div>
-                          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Thời Gian (Phút)</label>
-                          <input
-                            type="number"
-                            min={5}
-                            max={240}
-                            value={newExamDuration}
-                            onChange={e => setNewExamDuration(parseInt(e.target.value) || 60)}
-                            className="w-full bg-slate-900 border border-slate-850 rounded-lg px-3 py-2 text-xs outline-none text-slate-250"
-                          />
-                        </div>
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => handleAddEnglishExam(adminActiveTab)}
-                        className="w-full py-2.5 bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 text-white font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer shadow active:scale-95 duration-100"
-                      >
-                        ➕ Tạo Đề Thi Nhanh
-                      </button>
-                    </div>
-
-                    {/* JSON Exam Import Area */}
-                    <div className="space-y-4">
-                      <div className="flex justify-between items-center">
-                        <h4 className="text-xs font-bold uppercase tracking-wider text-indigo-400 font-sans">💾 Nhập Đề Thi {adminActiveTab.toUpperCase()} (JSON)</h4>
-                        <button
-                          type="button"
-                          onClick={() => handleLoadDemoExam(adminActiveTab)}
-                          className="bg-indigo-950 hover:bg-indigo-900 text-indigo-300 border border-indigo-900 px-2.5 py-1 rounded-lg text-[9px] font-black uppercase cursor-pointer transition-all font-sans"
-                        >
-                          ⚡ Nạp Đề Mẫu
-                        </button>
-                      </div>
-
-                      <div className="space-y-2">
-                        <textarea
-                          rows={6}
-                          placeholder={`Dán chuỗi đề thi JSON ${adminActiveTab.toUpperCase()} vào đây...`}
-                          value={examJsonInput}
-                          onChange={e => setExamJsonInput(e.target.value)}
-                          className="w-full bg-slate-950 border border-slate-850 rounded-2xl p-3 text-[10px] font-mono outline-none text-slate-250 placeholder:text-slate-700 resize-none focus:border-indigo-500/60"
-                        />
-                        
-                        {examImportError && (
-                          <div className="text-[10px] text-rose-400 font-bold bg-rose-950/40 border border-rose-900/60 p-2.5 rounded-xl text-left leading-relaxed font-sans">
-                            ⚠️ {examImportError}
-                          </div>
-                        )}
-
-                        {examImportSuccess && (
-                          <div className="text-[10px] text-emerald-400 font-bold bg-emerald-950/40 border border-emerald-900/60 p-2.5 rounded-xl text-left leading-relaxed font-sans">
-                            ✅ {examImportSuccess}
-                          </div>
-                        )}
-
-                        <button
-                          type="button"
-                          onClick={() => handleImportJsonExam(adminActiveTab)}
-                          className="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold uppercase text-[10px] tracking-wider rounded-xl border-0 cursor-pointer shadow-md transition-all"
-                        >
-                          🚀 Import Đề Thi {adminActiveTab.toUpperCase()}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  <AdminExamImportPanel
+                    track={adminActiveTab}
+                    newExamId={newExamId}
+                    newExamTitle={newExamTitle}
+                    newExamQuestions={newExamQuestions}
+                    newExamDuration={newExamDuration}
+                    examJsonInput={examJsonInput}
+                    examImportError={examImportError}
+                    examImportSuccess={examImportSuccess}
+                    onSetNewExamId={setNewExamId}
+                    onSetNewExamTitle={setNewExamTitle}
+                    onSetNewExamQuestions={setNewExamQuestions}
+                    onSetNewExamDuration={setNewExamDuration}
+                    onSetExamJsonInput={setExamJsonInput}
+                    onAddExam={handleAddEnglishExam}
+                    onLoadDemoExam={handleLoadDemoExam}
+                    onImportJsonExam={handleImportJsonExam}
+                  />
                 </div>
               )}
             </section>
@@ -5049,64 +2672,12 @@ export default function App() {
 
             {/* System Telemetry Logs Audit & CLI Control Console */}
             {effectiveAdminWorkspaceTab === 'logs' && !isAdminContentOnly && (
-            <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-5xl mx-auto shadow-xl relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950">
-              <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-teal-500 via-indigo-500 to-rose-500" />
-              
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4 pb-2 border-b border-slate-800">
-                <h3 className="text-sm font-black text-slate-350 uppercase tracking-widest text-left flex items-center gap-2">
-                  <span>💻 MIUPREP REAL-TIME AUDIT & CONTROL TERMINAL</span>
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                </h3>
-                <div className="flex items-center gap-1.5">
-                  <span className="w-3 h-3 rounded-full bg-rose-500" />
-                  <span className="w-3 h-3 rounded-full bg-amber-500" />
-                  <span className="w-3 h-3 rounded-full bg-emerald-500" />
-                </div>
-              </div>
-              
-              {/* Terminal Window container */}
-              <div className="bg-slate-950 rounded-2xl border border-slate-850 overflow-hidden shadow-inner flex flex-col">
-                {/* Scrolling Logs Screen */}
-                <div className="p-4 max-h-60 overflow-y-auto scrollbar-thin flex flex-col gap-2 font-mono text-[11px] border-b border-slate-850 text-left min-h-[120px]">
-                  {adminLogs.length === 0 ? (
-                    <span className="text-slate-650 italic">No telemetry events logged yet meow...</span>
-                  ) : (
-                    adminLogs.map(log => (
-                      <div key={log.id} className="flex items-start gap-3 leading-relaxed">
-                        <span className="text-slate-500 shrink-0">[{log.createdAt ? new Date(log.createdAt).toLocaleTimeString('vi-VN') : '-'}]</span>
-                        <span className={`font-black shrink-0 ${
-                          log.level === 'ERROR' ? 'text-rose-400' : log.level === 'WARN' ? 'text-amber-400' : 'text-emerald-450'
-                        }`}>[{log.level}]</span>
-                        <span className="text-slate-300 font-medium flex-1">{log.message}</span>
-                        {log.payload && (
-                          <span className="text-slate-500 text-[10px] bg-slate-900 border border-slate-855 px-1 rounded max-w-[200px] truncate" title={log.payload}>
-                            {log.payload}
-                          </span>
-                        )}
-                      </div>
-                    ))
-                  )}
-                </div>
-                
-                {/* Command Line Input Bar */}
-                <form onSubmit={handleTerminalSubmit} className="flex items-center bg-slate-900/40 px-4 py-3 gap-2 text-left border-t border-slate-900">
-                  <span className="font-mono text-xs font-bold text-emerald-450 shrink-0">MiuPrep@Admin:~$</span>
-                  <input
-                    type="text"
-                    value={terminalCommand}
-                    onChange={(e) => setTerminalCommand(e.target.value)}
-                    placeholder="Nhập lệnh CLI (ví dụ: /help, /approve-all, /coins @username 100)..."
-                    className="flex-1 bg-transparent border-0 outline-none text-emerald-400 font-mono text-xs placeholder:text-slate-700 min-w-0"
-                  />
-                  <button
-                    type="submit"
-                    className="bg-emerald-950/80 hover:bg-emerald-900/60 border border-emerald-800 text-emerald-400 px-3.5 py-1 rounded-lg text-[10px] font-mono font-bold uppercase transition-all duration-100 hover:scale-[1.02] cursor-pointer"
-                  >
-                    Execute
-                  </button>
-                </form>
-              </div>
-            </section>
+              <AdminLogsPanel
+                adminLogs={adminLogs}
+                terminalCommand={terminalCommand}
+                setTerminalCommand={setTerminalCommand}
+                handleTerminalSubmit={handleTerminalSubmit}
+              />
             )}
 
           </div>

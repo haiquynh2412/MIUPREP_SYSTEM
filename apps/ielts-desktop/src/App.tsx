@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState, useEffect } from 'react';
+import { Suspense, lazy, useState, useEffect } from 'react';
 import { 
   isCorrectAnswer, 
   analyzeWeaknesses
@@ -21,68 +20,8 @@ import {
   getActiveCredentialStore
 } from '@miuprep/ai';
 import type { ValidationError, IeltsQuestion, QuestionGroup } from '@miuprep/content';
-import { 
-  SAMPLE_READING_TEST, 
-  SAMPLE_READING_TEST_2,
-  SAMPLE_READING_TEST_3,
-  SAMPLE_LISTENING_TEST,
-  SAMPLE_LISTENING_TEST_2,
-  SAMPLE_LISTENING_TEST_3,
-  SAMPLE_CPE_TEST,
-  CPE_PRACTICE_TEST_1_BOOK_3,
-  CPE_PRACTICE_TEST_2_BOOK_3,
-  CPE_PRACTICE_TEST_3_BOOK_3,
-  CPE_PRACTICE_TEST_4_BOOK_3,
-  CPE_PRACTICE_TEST_5_BOOK_3,
-  CPE_PRACTICE_TEST_6_BOOK_3,
-  CPE2_TEST_1,
-  CPE2_TEST_2,
-  CPE2_TEST_3,
-  CPE2_TEST_4,
-  CPE2_TEST_5,
-  CPE2_TEST_6,
-  CAM_CPE1_TEST1,
-  CAM_CPE1_TEST2,
-  CAM_CPE1_TEST3,
-  CAM_CPE1_TEST4,
-  CAMCP2_TEST1,
-  CAMCP2_TEST2,
-  CAMCP2_TEST3,
-  CAMCP2_TEST4,
-  CAMCP2_LISTENING_TOPIC_BANK,
-  CAMCP3_TEST1,
-  CAMCP3_TEST2,
-  CAMCP3_TEST3,
-  CAMCP3_TEST4,
-  CAMCP3_LISTENING_TOPIC_BANK,
-  CAMCP4_TEST1,
-  CAMCP4_TEST2,
-  CAMCP4_TEST3,
-  CAMCP4_TEST4,
-  CAMCP4_LISTENING_TOPIC_BANK,
-  CAMCP5_TEST1,
-  CAMCP5_TEST2,
-  CAMCP5_TEST3,
-  CAMCP5_TEST4,
-  CAMCP5_LISTENING_TOPIC_BANK,
-  CPE_ENTRY_TEST_1,
-  CPE_ENTRY_TEST_2,
-  CPE_ENTRY_TEST_3,
-  CPE_ENTRY_TEST_4,
-  CPE_ENTRY_TEST_5,
-  CPE_ENTRY_TEST_6,
-  CPE_ENTRY_TEST_7,
-  CPE_ENTRY_TEST_8,
-  CPE_ENTRY_TEST_9,
-  CPE_ENTRY_TEST_10,
-  SAMPLE_CAE_TEST,
-  CAE_ENTRY_TEST_1,
-  CAE_ENTRY_TEST_2,
-  CAE_ENTRY_TEST_3,
-  validateIeltsTest,
-  IELTS_WRITING_SAMPLES,
-  CPE_WRITING_SAMPLES
-} from '@miuprep/content';
+import { IELTS_WRITING_SAMPLES } from '@miuprep/content/src/mocks/ielts-writing-speaking-samples';
+import { CPE_WRITING_SAMPLES } from '@miuprep/content/src/mocks/cpe-writing-speaking-samples';
 
 // Specialized Hook Imports
 import useLearnerProfile from './hooks/useLearnerProfile';
@@ -92,19 +31,29 @@ import useExam from './hooks/useExam';
 
 // Modular Presentation Component Imports
 import LearnerProfileCard from './components/LearnerProfileCard';
-import ErrorNotebook from './components/ErrorNotebook';
-import SpeakingAiRoom from './components/SpeakingAiRoom';
-import AdaptivePracticeRoom from './components/AdaptivePracticeRoom';
 import Onboarding from './components/Onboarding';
-import AdminPanel from './components/AdminPanel';
-import WritingAiRoom from './components/WritingAiRoom';
-import IeltsLearnerDashboard from './components/IeltsLearnerDashboard';
 
 import ModeSelectorModal from './components/modules/ModeSelectorModal';
 import ImportErrorModal from './components/modules/ImportErrorModal';
 import ExamSectionSheet from './components/modules/ExamSectionSheet';
+import { loadEnglishSeedTests, validateContentTest } from './lib/contentRuntime';
+
+const AdminPanel = lazy(() => import('./components/AdminPanel'));
+const ErrorNotebook = lazy(() => import('./components/ErrorNotebook'));
+const SpeakingAiRoom = lazy(() => import('./components/SpeakingAiRoom'));
+const AdaptivePracticeRoom = lazy(() => import('./components/AdaptivePracticeRoom'));
+const WritingAiRoom = lazy(() => import('./components/WritingAiRoom'));
+const IeltsLearnerDashboard = lazy(() => import('./components/IeltsLearnerDashboard'));
 function generateLocalId(prefix: string): string {
   return `${prefix}_${typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString() + Math.random().toString(36).substring(2, 7)}`;
+}
+
+function LazyPanelFallback() {
+  return (
+    <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-8 text-center text-sm font-semibold text-slate-400">
+      Loading module...
+    </div>
+  );
 }
 
 function categorizeTest(test: any): 'diagnostic' | 'topic_bank' | 'practice_bank' | 'full_exam' {
@@ -305,7 +254,7 @@ export default function App() {
         setActiveTrack(null);
       }
     }, 0);
-  }, [currentUserId, localUsers]);
+  }, [currentUserId, isTauri, localUsers]);
 
   const refreshUsers = async () => {
     try {
@@ -617,67 +566,9 @@ export default function App() {
       try {
         await db.initialize();
         
-        const seedTests = [
-          SAMPLE_READING_TEST,
-          SAMPLE_READING_TEST_2,
-          SAMPLE_READING_TEST_3,
-          SAMPLE_LISTENING_TEST,
-          SAMPLE_LISTENING_TEST_2,
-          SAMPLE_LISTENING_TEST_3,
-          SAMPLE_CPE_TEST,
-          CPE_PRACTICE_TEST_1_BOOK_3,
-          CPE_PRACTICE_TEST_2_BOOK_3,
-          CPE_PRACTICE_TEST_3_BOOK_3,
-          CPE_PRACTICE_TEST_4_BOOK_3,
-          CPE_PRACTICE_TEST_5_BOOK_3,
-          CPE_PRACTICE_TEST_6_BOOK_3,
-          CPE2_TEST_1,
-          CPE2_TEST_2,
-          CPE2_TEST_3,
-          CPE2_TEST_4,
-          CPE2_TEST_5,
-          CPE2_TEST_6,
-          CAM_CPE1_TEST1,
-          CAM_CPE1_TEST2,
-          CAM_CPE1_TEST3,
-          CAM_CPE1_TEST4,
-          CAMCP2_TEST1,
-          CAMCP2_TEST2,
-          CAMCP2_TEST3,
-          CAMCP2_TEST4,
-          CAMCP2_LISTENING_TOPIC_BANK,
-          CAMCP3_TEST1,
-          CAMCP3_TEST2,
-          CAMCP3_TEST3,
-          CAMCP3_TEST4,
-          CAMCP3_LISTENING_TOPIC_BANK,
-          CAMCP4_TEST1,
-          CAMCP4_TEST2,
-          CAMCP4_TEST3,
-          CAMCP4_TEST4,
-          CAMCP4_LISTENING_TOPIC_BANK,
-          CAMCP5_TEST1,
-          CAMCP5_TEST2,
-          CAMCP5_TEST3,
-          CAMCP5_TEST4,
-          CAMCP5_LISTENING_TOPIC_BANK,
-          CPE_ENTRY_TEST_1,
-          CPE_ENTRY_TEST_2,
-          CPE_ENTRY_TEST_3,
-          CPE_ENTRY_TEST_4,
-          CPE_ENTRY_TEST_5,
-          CPE_ENTRY_TEST_6,
-          CPE_ENTRY_TEST_7,
-          CPE_ENTRY_TEST_8,
-          CPE_ENTRY_TEST_9,
-          CPE_ENTRY_TEST_10,
-          SAMPLE_CAE_TEST,
-          CAE_ENTRY_TEST_1,
-          CAE_ENTRY_TEST_2,
-          CAE_ENTRY_TEST_3
-        ];
+        const seedTests = await loadEnglishSeedTests();
 
-        const CURRENT_SEED_VERSION = '1.1.2';
+        const CURRENT_SEED_VERSION = '1.1.3';
         const lastSeedVersion = localStorage.getItem('ielts_db_seed_version');
         const forceReseed = lastSeedVersion !== CURRENT_SEED_VERSION;
 
@@ -690,7 +581,7 @@ export default function App() {
             }
 
             // Run content validation before saving to log specific failures
-            const validationErrors = validateIeltsTest(test);
+            const validationErrors = await validateContentTest(test);
             const critical = validationErrors.filter(err => err.severity === 'error');
             if (critical.length > 0) {
               console.error(`[Seeding] Skipping invalid seed test "${test.title || test.id}":`, critical);
@@ -785,7 +676,7 @@ export default function App() {
         const text = event.target?.result as string;
         const parsed = JSON.parse(text);
         
-        const errors = validateIeltsTest(parsed);
+        const errors = await validateContentTest(parsed);
         const criticalErrors = errors.filter(err => err.severity === 'error');
         
         if (criticalErrors.length > 0) {
@@ -830,13 +721,15 @@ export default function App() {
 
   if (showAdminPanel) {
     return (
-      <AdminPanel
-        db={db}
-        currentUserId="user_admin"
-        onLogout={async () => {
-          setShowAdminPanel(false);
-        }}
-      />
+      <Suspense fallback={<LazyPanelFallback />}>
+        <AdminPanel
+          db={db}
+          currentUserId="user_admin"
+          onLogout={async () => {
+            setShowAdminPanel(false);
+          }}
+        />
+      </Suspense>
     );
   }
 
@@ -857,22 +750,24 @@ export default function App() {
 
   if (isAdmin) {
     return (
-      <AdminPanel
-        db={db}
-        currentUserId={currentUserId}
-        onLogout={async () => {
-          if (isTauri) {
-            localStorage.setItem('current_user_id', 'user_student');
-            setCurrentUserId('user_student');
-            await refreshUsers();
-            await loadHistory();
-          } else {
-            setCurrentUserId('');
-            localStorage.removeItem('current_user_id');
-            await refreshUsers();
-          }
-        }}
-      />
+      <Suspense fallback={<LazyPanelFallback />}>
+        <AdminPanel
+          db={db}
+          currentUserId={currentUserId}
+          onLogout={async () => {
+            if (isTauri) {
+              localStorage.setItem('current_user_id', 'user_student');
+              setCurrentUserId('user_student');
+              await refreshUsers();
+              await loadHistory();
+            } else {
+              setCurrentUserId('');
+              localStorage.removeItem('current_user_id');
+              await refreshUsers();
+            }
+          }}
+        />
+      </Suspense>
     );
   }
 
@@ -1260,17 +1155,19 @@ export default function App() {
                 }}
               />
 
-              <IeltsLearnerDashboard
-                attempts={attempts}
-                availableTests={availableTests.filter(t => getExamTrackOfTest(t) === activeTrack)}
-                userId={currentUserId}
-                activeTrack={activeTrack || 'ielts'}
-                onOpenAdaptivePractice={() => {
-                  setReviewQueue([]);
-                  setCurrentReviewIdx(-1);
-                  setActiveTab('adaptive_room');
-                }}
-              />
+              <Suspense fallback={<LazyPanelFallback />}>
+                <IeltsLearnerDashboard
+                  attempts={attempts}
+                  availableTests={availableTests.filter(t => getExamTrackOfTest(t) === activeTrack)}
+                  userId={currentUserId}
+                  activeTrack={activeTrack || 'ielts'}
+                  onOpenAdaptivePractice={() => {
+                    setReviewQueue([]);
+                    setCurrentReviewIdx(-1);
+                    setActiveTab('adaptive_room');
+                  }}
+                />
+              </Suspense>
 
               {/* Luyện Tập Theo Chuyên Đề Card Panel */}
               <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm flex flex-col gap-4 text-left">
@@ -1805,71 +1702,79 @@ export default function App() {
 
         {/* TAB 3: WRITING AI MODULE */}
         {currentTab === 'writing_ai' && (
-          <WritingAiRoom
-            writingFeedback={writingFeedback}
-            isAiLoading={isAiLoading}
-            aiErrorMsg={aiErrorMsg}
-            runWritingAiEvaluation={runWritingAiEvaluation as any}
-            activeTrack={activeTrack || 'ielts'}
-            activeTheme={activeTheme}
-            availableWritingSamples={availableWritingSamples}
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <WritingAiRoom
+              writingFeedback={writingFeedback}
+              isAiLoading={isAiLoading}
+              aiErrorMsg={aiErrorMsg}
+              runWritingAiEvaluation={runWritingAiEvaluation as any}
+              activeTrack={activeTrack || 'ielts'}
+              activeTheme={activeTheme}
+              availableWritingSamples={availableWritingSamples}
+            />
+          </Suspense>
         )}
 
         {/* TAB 4: ERROR NOTEBOOK SRS */}
         {currentTab === 'error_notebook' && (
-          <ErrorNotebook
-            errorEntries={errorEntries}
-            notebookSearch={notebookSearch}
-            setNotebookSearch={setNotebookSearch}
-            reviewQueue={reviewQueue}
-            setReviewQueue={setReviewQueue}
-            currentReviewIdx={currentReviewIdx}
-            setCurrentReviewIdx={setCurrentReviewIdx}
-            reviewUserAnswer={reviewUserAnswer}
-            setReviewUserAnswer={setReviewUserAnswer}
-            reviewShowCorrect={reviewShowCorrect}
-            setReviewShowCorrect={setReviewShowCorrect}
-            notebookFilter={notebookFilter}
-            setNotebookFilter={setNotebookFilter}
-            startNotebookReview={startNotebookReview}
-            handleSrsGrade={handleSrsGrade}
-            onViewInExam={handleViewInExam}
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <ErrorNotebook
+              errorEntries={errorEntries}
+              notebookSearch={notebookSearch}
+              setNotebookSearch={setNotebookSearch}
+              reviewQueue={reviewQueue}
+              setReviewQueue={setReviewQueue}
+              currentReviewIdx={currentReviewIdx}
+              setCurrentReviewIdx={setCurrentReviewIdx}
+              reviewUserAnswer={reviewUserAnswer}
+              setReviewUserAnswer={setReviewUserAnswer}
+              reviewShowCorrect={reviewShowCorrect}
+              setReviewShowCorrect={setReviewShowCorrect}
+              notebookFilter={notebookFilter}
+              setNotebookFilter={setNotebookFilter}
+              startNotebookReview={startNotebookReview}
+              handleSrsGrade={handleSrsGrade}
+              onViewInExam={handleViewInExam}
+            />
+          </Suspense>
         )}
 
         {/* TAB 5: SPEAKING AI ROOM */}
         {currentTab === 'speaking_ai' && (
-          <SpeakingAiRoom
-            speakingTopic={speakingTopic}
-            setSpeakingTopic={setSpeakingTopic}
-            speakingFeedback={speakingFeedback}
-            setSpeakingFeedback={setSpeakingFeedback}
-            aiConfig={aiConfig}
-            credentialStore={credentialStore}
-            generateLocalId={generateLocalId}
-            db={db}
-            track={activeTrack || 'ielts'}
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <SpeakingAiRoom
+              speakingTopic={speakingTopic}
+              setSpeakingTopic={setSpeakingTopic}
+              speakingFeedback={speakingFeedback}
+              setSpeakingFeedback={setSpeakingFeedback}
+              aiConfig={aiConfig}
+              credentialStore={credentialStore}
+              generateLocalId={generateLocalId}
+              db={db}
+              track={activeTrack || 'ielts'}
+            />
+          </Suspense>
         )}
 
         {/* TAB 6: ADAPTIVE LEARNING PRACTICE ROOM */}
         {currentTab === 'adaptive_room' && (
-          <AdaptivePracticeRoom
-            availableTests={availableTests.filter(t => getExamTrackOfTest(t) === activeTrack)}
-            db={db}
-            userId={currentUserId}
-            activeTrack={activeTrack}
-            weaknesses={getGlobalWeaknessAnalysis()}
-            onHistoryReload={loadHistory}
-            autoLaunchPracticeType={autoLaunchPracticeType}
-            clearAutoLaunch={() => setAutoLaunchPracticeType(null)}
-            onNavigateTab={(tab) => {
-              setReviewQueue([]);
-              setCurrentReviewIdx(-1);
-              setActiveTab(tab);
-            }}
-          />
+          <Suspense fallback={<LazyPanelFallback />}>
+            <AdaptivePracticeRoom
+              availableTests={availableTests.filter(t => getExamTrackOfTest(t) === activeTrack)}
+              db={db}
+              userId={currentUserId}
+              activeTrack={activeTrack}
+              weaknesses={getGlobalWeaknessAnalysis()}
+              onHistoryReload={loadHistory}
+              autoLaunchPracticeType={autoLaunchPracticeType}
+              clearAutoLaunch={() => setAutoLaunchPracticeType(null)}
+              onNavigateTab={(tab) => {
+                setReviewQueue([]);
+                setCurrentReviewIdx(-1);
+                setActiveTab(tab);
+              }}
+            />
+          </Suspense>
         )}
       </main>
 

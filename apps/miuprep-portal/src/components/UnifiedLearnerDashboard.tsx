@@ -87,18 +87,18 @@ export default function UnifiedLearnerDashboard({
         <div>
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-[10px] font-black uppercase tracking-[0.16em] text-orange-400 bg-orange-950/40 border border-orange-900/50 px-2 py-1 rounded">
-              Shared Learner Model
+              Learning map
             </span>
             <span className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-400 bg-slate-950 border border-slate-850 px-2 py-1 rounded">
-              Knowledge Graph
+              Skill links
             </span>
             <span className="text-[10px] font-black uppercase tracking-[0.16em] text-sky-300 bg-sky-950/40 border border-sky-900/50 px-2 py-1 rounded">
-              {snapshot.evidenceSource === 'live' ? 'Live events' : 'Synthetic preview'}
+              {snapshot.evidenceSource === 'live' ? 'Live progress' : 'Preview mode'}
             </span>
           </div>
-          <h2 className="text-xl font-black text-slate-100 m-0 mt-3">Dashboard hoc tap chung</h2>
+          <h2 className="text-xl font-black text-slate-100 m-0 mt-3">Your growth map</h2>
           <p className="text-xs text-slate-500 mt-1 max-w-3xl">
-            Portal view nay gom program dang hoc, mastery theo chuong trinh, learning path va error notebook vao mot noi.
+            One place to see what is improving, what still blocks progress, and which small action should happen next.
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 min-w-full lg:min-w-[520px]">
@@ -138,7 +138,7 @@ export default function UnifiedLearnerDashboard({
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 border-t border-slate-850 pt-5">
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">Next action</h3>
+            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">Best next move</h3>
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{snapshot.recommendation.reason}</span>
           </div>
           <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
@@ -146,7 +146,7 @@ export default function UnifiedLearnerDashboard({
             <p className="text-xs text-slate-500 leading-relaxed mt-2 mb-0">{recommendationDetail(snapshot.recommendation, graph)}</p>
             {nextStep && (
               <div className="mt-4 pt-4 border-t border-slate-850">
-                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Next graph step</span>
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Next unlock</span>
                 <p className="text-sm font-bold text-slate-200 mt-1 mb-0">{nextStep.label}</p>
                 <p className="text-[11px] text-slate-500 mt-1 mb-0">
                   {statusLabel(nextStep.status)} · {Math.round(nextStep.masteryScore)}% · {nextStep.unlocked ? 'open' : 'locked'}
@@ -158,7 +158,7 @@ export default function UnifiedLearnerDashboard({
 
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">Learning path</h3>
+            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">Path to unlock</h3>
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{snapshot.learningPath.steps.length} steps</span>
           </div>
           <div className="space-y-2">
@@ -397,10 +397,10 @@ function programSummary(graph: KnowledgeGraph, track: PortalTrackInfo, programId
 }
 
 function recommendationTitle(recommendation: Recommendation): string {
-  if (recommendation.kind === 'diagnostic') return 'Run diagnostic baseline';
-  if (recommendation.kind === 'review') return 'Repair weakest area';
-  if (recommendation.kind === 'practice') return 'Collect more evidence';
-  return 'Move to challenge set';
+  if (recommendation.kind === 'diagnostic') return 'Find your starting point';
+  if (recommendation.kind === 'review') return 'Repair the weakest link';
+  if (recommendation.kind === 'practice') return 'Build proof with practice';
+  return 'Try the next challenge';
 }
 
 function recommendationDetail(recommendation: Recommendation, graph: KnowledgeGraph): string {

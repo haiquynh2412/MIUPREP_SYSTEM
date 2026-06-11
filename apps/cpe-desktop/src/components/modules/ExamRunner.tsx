@@ -1,11 +1,15 @@
 import { ExamTimer } from '@miuprep/ui';
 import ExamSectionSheet from './ExamSectionSheet';
 import { isCorrectAnswer, analyzeWeaknesses } from '@miuprep/core';
+import type { IeltsQuestion, IeltsTest, QuestionGroup } from '@miuprep/content';
+import type { ExamAttempt } from '@miuprep/db';
+
+type DashboardTab = 'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room';
 
 interface ExamRunnerProps {
-  selectedTest: any;
+  selectedTest: IeltsTest;
   isReviewMode: boolean;
-  reviewAttempt: any;
+  reviewAttempt: ExamAttempt | null;
   currentExamMode: 'practice' | 'exam';
   togglePause: () => void;
   isPaused: boolean;
@@ -16,10 +20,10 @@ interface ExamRunnerProps {
   setUserAnswers: React.Dispatch<React.SetStateAction<Record<string, string>>>;
   listeningReviewTab: 'transcript' | 'questions';
   setListeningReviewTab: React.Dispatch<React.SetStateAction<'transcript' | 'questions'>>;
-  getHighlightedPassageHtml: (passage: string, questionGroups: any[], isReviewMode: boolean) => string;
-  getSocraticHintForQuestion: (q: any) => string;
-  setSelectedTest: (test: any) => void;
-  setActiveTab: (tab: any) => void;
+  getHighlightedPassageHtml: (passage: string, questionGroups: QuestionGroup[], isReviewMode: boolean) => string;
+  getSocraticHintForQuestion: (q: IeltsQuestion) => string;
+  setSelectedTest: (test: IeltsTest | null) => void;
+  setActiveTab: (tab: DashboardTab) => void;
 }
 
 export default function ExamRunner({

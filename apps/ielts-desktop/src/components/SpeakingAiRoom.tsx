@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import type { SpeakingFeedback, StorageAdapter } from '@miuprep/db';
 import { AIAdapterFactory } from '@miuprep/ai';
 import type { AIConfig } from '@miuprep/ai';
 import type { CredentialStore } from '@miuprep/ai';
-import { IELTS_SPEAKING_SAMPLES, CPE_SPEAKING_SAMPLES } from '@miuprep/content';
+import { IELTS_SPEAKING_SAMPLES } from '@miuprep/content/src/mocks/ielts-writing-speaking-samples';
+import { CPE_SPEAKING_SAMPLES } from '@miuprep/content/src/mocks/cpe-writing-speaking-samples';
 
 interface ExtendedWindow extends Window {
   webkitAudioContext?: typeof AudioContext;
@@ -40,9 +40,10 @@ export default function SpeakingAiRoom({
   const [isSpeakingLoading, setIsSpeakingLoading] = useState(false);
   const [recordingDuration, setRecordingDuration] = useState(0);
 
-  const availableSpeakingSamples = (track === 'cpe' || track === 'cae')
-    ? CPE_SPEAKING_SAMPLES
-    : IELTS_SPEAKING_SAMPLES;
+  const availableSpeakingSamples = useMemo(
+    () => (track === 'cpe' || track === 'cae' ? CPE_SPEAKING_SAMPLES : IELTS_SPEAKING_SAMPLES),
+    [track],
+  );
 
   const [selectedSpeakingSampleId, setSelectedSpeakingSampleId] = useState(availableSpeakingSamples[0].id);
   const [showSpeakingOutlineModal, setShowSpeakingOutlineModal] = useState(false);
@@ -56,7 +57,7 @@ export default function SpeakingAiRoom({
         setSpeakingTopic(currentSample.prompt);
       }
     }, 0);
-  }, [speakingTopic, track, setSpeakingTopic]);
+  }, [availableSpeakingSamples, speakingTopic, setSpeakingTopic]);
 
   const activeSpeakingSample = availableSpeakingSamples.find((s: any) => s.id === selectedSpeakingSampleId) || availableSpeakingSamples[0];
 

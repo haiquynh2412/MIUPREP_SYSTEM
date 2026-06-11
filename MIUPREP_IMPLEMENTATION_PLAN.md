@@ -4,6 +4,9 @@ Muc tieu: bien cac ung dung hien co cua MiuPrep thanh mot nen tang hoc thich ung
 
 ## Integration Log
 
+- [x] 2026-06-05: Seed dau tien cho Math 6 scored practice da co 6 cau duoc manual-enrich answer key, worked solution, trap/misconception va thinking guide; guard hien bao 6/1,574 scored-practice-ready va 1,568 cau con bi chan pedagogy.
+- [x] 2026-06-05: Math 6 import/audit duoc tach thanh 2 gate ro rang: 1,574 cau import tu 75 nguon, 1,509 cau display-ready, 535 hinh SVG tu sinh, va chi cau co answer key/explanation/worked solution/trap/thinking guide moi duoc vao scored practice.
+- [x] 2026-06-05: Khoa an toan Math 6 learning catalog: raw-source catalog mac dinh khong expose item chua scored-ready cho practice/diagnostic; chi che do review noi bo moi duoc xem display-ready unscored items. `guard:math6`, `export:math6`, `audit:math6-display`, `sync:portal-quality`, `npm test -w @miuprep/content`, `npm run build -w miuprep-portal` pass.
 - [x] 2026-06-05: Mo rong portal `Open practice` cho IELTS/CAE/CPE tu template micro-practice sang scored item-bank practice dung `EnglishLearningCatalog`/`QuestionItem` that; moi attempt ghi `practice_attempt` co itemId/source/test/section, concept/skill, correct, score va Error Notebook khi sai.
 - [x] 2026-06-05: Test item-bank IELTS/CAE/CPE pass tren UI that: `npm run qa:portal-english-item-bank-practice`, `npm run qa:portal-template-practice`, `npm run lint -w miuprep-portal`, `npm test -w @miuprep/learning`, `npm test -w @miuprep/content`, `npm run build -w miuprep-portal`, `npm run build`; in-app browser xac nhan panel `Scored item-bank practice` thay template panel cho English.
 - [x] 2026-06-04: Doi chieu PDF goc `Cambridge Certificate in Advanced English 6.pdf` va sua sach 23 OCR warnings cua `cam-cae6-test4` Reading Part 2/Part 4: cap nhat `passageHtml` o ca section/question, sua answer evidence va explanation theo answer key Test 4.
@@ -703,3 +706,14 @@ Thu tu nen lam ngay:
 - [x] Tao dashboard mastery dau tien
 - [x] Tach IELTS/CPE content sang adapter schema chung
 - [x] Tao learner dashboard chung trong `miuprep-portal`
+
+## 15. Latest Audit Status
+
+### 2026-06-05 Math 6 source-solution pass
+
+- [x] Math 6 importer now separates clear source answer-key sections (`dap an`, `huong dan cham/giai`, `bieu diem`, `dap so`) from exercise prompts.
+- [x] Aligned source-file solutions are attached as `solutionSource: source_file` and converted into `correctAnswer` plus SGK-aligned observation, worked-step, and trap guidance.
+- [x] Existing manually authored SGK solution seed remains marked as `solutionSource: sgk_authored`.
+- [x] Fixed Math 6 point-line classifier/generator so `tia goc A` is not treated as an angle prompt.
+- [x] Current Math 6 proof: 1,432 imported items, 1,380 display-ready, 41 scored-practice-ready, 443 generated SVG figures, adapter pass.
+- [ ] Remaining Math 6 blockers: 1,389 items still need answer/explanation/worked-solution/trap/thinking enrichment; display blockers remain 7 formula-review, 5 original-image, and 41 legacy-encoding items.

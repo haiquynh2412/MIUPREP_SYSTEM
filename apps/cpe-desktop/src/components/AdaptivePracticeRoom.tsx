@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import type { IeltsTest, IeltsQuestion } from '@miuprep/content';
-import { buildEnglishLearningCatalog, filterEnglishExamTestsToLearningReady } from '@miuprep/content';
+import { buildEnglishLearningCatalog, filterEnglishExamTestsToLearningReady } from '@miuprep/content/src/english-learning';
 import type { StorageAdapter } from '@miuprep/db';
 import { isCorrectAnswer, generateAdaptiveDiagnostic } from '@miuprep/core';
 import { sanitizeHtml } from '@miuprep/ui';
@@ -175,15 +175,22 @@ export default function AdaptivePracticeRoom({
   const [isQuizAnswered, setIsQuizAnswered] = useState(false);
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const activeProgramIds = activeTrack ? [activeTrack] : undefined;
-  const learningCatalog = buildEnglishLearningCatalog(availableTests, {
-    programIds: activeProgramIds,
-    displayModes: ['both', 'topic'],
-  });
-  const adaptiveReadyTests = filterEnglishExamTestsToLearningReady(availableTests, {
-    programIds: activeProgramIds,
-    displayModes: ['both', 'topic'],
-  }) as IeltsTest[];
+  const startFocusedPracticeRef = useRef<(typeId: string) => void>(() => undefined);
+  const activeProgramIds = useMemo(() => (activeTrack ? [activeTrack] : undefined), [activeTrack]);
+  const learningCatalog = useMemo(
+    () => buildEnglishLearningCatalog(availableTests, {
+      programIds: activeProgramIds,
+      displayModes: ['both', 'topic'],
+    }),
+    [activeProgramIds, availableTests],
+  );
+  const adaptiveReadyTests = useMemo(
+    () => filterEnglishExamTestsToLearningReady(availableTests, {
+      programIds: activeProgramIds,
+      displayModes: ['both', 'topic'],
+    }) as IeltsTest[],
+    [activeProgramIds, availableTests],
+  );
 
   // Save vocabulary list to localstorage
   useEffect(() => {
@@ -197,10 +204,14 @@ export default function AdaptivePracticeRoom({
     };
   }, []);
 
+  useEffect(() => {
+    startFocusedPracticeRef.current = startFocusedPractice;
+  });
+
   // Handle auto-launching from dashboard
   useEffect(() => {
     if (autoLaunchPracticeType) {
-      startFocusedPractice(autoLaunchPracticeType);
+      startFocusedPracticeRef.current(autoLaunchPracticeType);
       if (clearAutoLaunch) clearAutoLaunch();
     }
   }, [autoLaunchPracticeType, clearAutoLaunch]);

@@ -1,0 +1,1848 @@
+{
+  "schemaVersion": "math9_source_inventory_v1",
+  "generatedAt": "2026-06-04T18:04:07.847468+00:00",
+  "sourceRoot": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9",
+  "totalFiles": 136,
+  "byExtension": {
+    "rar": 6,
+    "pdf": 106,
+    "docx": 21,
+    "doc": 2,
+    "zip": 1
+  },
+  "byScope": {
+    "exam10_advanced": 33,
+    "math9_core": 12,
+    "math9_advanced": 56,
+    "off_scope": 7,
+    "exam10_review": 28
+  },
+  "byTopicHint": {
+    "math9.assessment.exam10_synthesis": 42,
+    "math9.algebra.word_problem_systems": 14,
+    "math9.geometry.proof_synthesis": 6,
+    "math9.geometry.solid_geometry": 6,
+    "math9.unsorted": 25,
+    "math9.algebra.radicals_domain": 9,
+    "math9.geometry.circle_angles": 5,
+    "math9.geometry.cyclic_tangent_secant": 4,
+    "math9.algebra.functions_linear_quadratic": 5,
+    "math9.algebra.quadratic_equations": 4,
+    "math9.geometry.right_triangle_trig": 7,
+    "math9.algebra.linear_equations_inequalities": 2,
+    "math9.algebra.systems": 5,
+    "math9.statistics_probability.statistics": 4,
+    "math9.statistics_probability.probability": 6,
+    "math9.advanced.number_theory": 7,
+    "math9.advanced.inequality_extrema": 8,
+    "math9.algebra.radical_equations": 4,
+    "math9.algebra.radicals_transform": 5
+  },
+  "sources": [
+    {
+      "fileName": "24-chuyen-de-dai-so-boi-duong-hoc-sinh-gioi-toan-9-va-on-thi-vao-lop-10.rar",
+      "relativePath": "24-chuyen-de-dai-so-boi-duong-hoc-sinh-gioi-toan-9-va-on-thi-vao-lop-10.rar",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\24-chuyen-de-dai-so-boi-duong-hoc-sinh-gioi-toan-9-va-on-thi-vao-lop-10.rar",
+      "extension": "rar",
+      "sizeBytes": 9173878,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "rar_recorded_not_extracted",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "[toanthaycu.com]_Trọn bộ toán thực tế 9_Đề bài.pdf",
+      "relativePath": "[toanthaycu.com]_Trọn bộ toán thực tế 9_Đề bài.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\[toanthaycu.com]_Trọn bộ toán thực tế 9_Đề bài.pdf",
+      "extension": "pdf",
+      "sizeBytes": 15096929,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.algebra.word_problem_systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "BÀI TẬP HÌNH HỌC THỰC TẾ.pdf",
+      "relativePath": "BÀI TẬP HÌNH HỌC THỰC TẾ.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\BÀI TẬP HÌNH HỌC THỰC TẾ.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2560906,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.geometry.proof_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cac bai toan tinh dien tich phan to dam.pdf",
+      "relativePath": "cac bai toan tinh dien tich phan to dam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\cac bai toan tinh dien tich phan to dam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1085797,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.geometry.solid_geometry"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Cac chuyen de luyen thi vao lop 10 mon toan.pdf",
+      "relativePath": "Cac chuyen de luyen thi vao lop 10 mon toan.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Cac chuyen de luyen thi vao lop 10 mon toan.pdf",
+      "extension": "pdf",
+      "sizeBytes": 24776259,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cac-chuyen-de-hoc-tap-toan-9-hoc-ki-1.pdf",
+      "relativePath": "cac-chuyen-de-hoc-tap-toan-9-hoc-ki-1.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\cac-chuyen-de-hoc-tap-toan-9-hoc-ki-1.pdf",
+      "extension": "pdf",
+      "sizeBytes": 805163,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cac-chuyen-de-hoc-tap-toan-9-hoc-ki-2.pdf",
+      "relativePath": "cac-chuyen-de-hoc-tap-toan-9-hoc-ki-2.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\cac-chuyen-de-hoc-tap-toan-9-hoc-ki-2.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1794983,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cac-chuyen-de-toan-9-on-thi-vao-lop-10.pdf",
+      "relativePath": "cac-chuyen-de-toan-9-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\cac-chuyen-de-toan-9-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2132963,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cam-nang-100-bai-tap-hinh-khoi-thuc-te-toan-9-knttvcs-co-loi-giai-metoan.com.pdf",
+      "relativePath": "cam-nang-100-bai-tap-hinh-khoi-thuc-te-toan-9-knttvcs-co-loi-giai-metoan.com.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\cam-nang-100-bai-tap-hinh-khoi-thuc-te-toan-9-knttvcs-co-loi-giai-metoan.com.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2430493,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.geometry.solid_geometry"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Cambridge Certificate In Advanced English 4 as.pdf",
+      "relativePath": "Cambridge Certificate In Advanced English 4 as.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Cambridge Certificate In Advanced English 4 as.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2420790,
+      "scope": "off_scope",
+      "topicHints": [],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cambridge-certificate-in-advanced-english-4-Students-book.pdf",
+      "relativePath": "cambridge-certificate-in-advanced-english-4-Students-book.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\cambridge-certificate-in-advanced-english-4-Students-book.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2902882,
+      "scope": "off_scope",
+      "topicHints": [],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-can-bac-hai-va-can-bac-ba-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-can-bac-hai-va-can-bac-ba-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-can-bac-hai-va-can-bac-ba-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2583734,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-can-thuc-toan-9-chan-troi-sang-tao.pdf",
+      "relativePath": "chuyen-de-can-thuc-toan-9-chan-troi-sang-tao.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-can-thuc-toan-9-chan-troi-sang-tao.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1656991,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1.pdf",
+      "relativePath": "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1.pdf",
+      "extension": "pdf",
+      "sizeBytes": 4950456,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1.rar",
+      "relativePath": "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1.rar",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1.rar",
+      "extension": "rar",
+      "sizeBytes": 14552368,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "rar_recorded_not_extracted",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 6679707,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.circle_angles",
+        "math9.geometry.cyclic_tangent_secant"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-duong-tron-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-duong-tron-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-duong-tron-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 5149560,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.circle_angles"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-ham-so-y-ax2-a-≠-0-phuong-trinh-bac-hai-mot-an-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-ham-so-y-ax2-a-≠-0-phuong-trinh-bac-hai-mot-an-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-ham-so-y-ax2-a-≠-0-phuong-trinh-bac-hai-mot-an-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2946914,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.functions_linear_quadratic",
+        "math9.algebra.quadratic_equations"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-he-thuc-luong-trong-tam-giac-vuong-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-he-thuc-luong-trong-tam-giac-vuong-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-he-thuc-luong-trong-tam-giac-vuong-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2293802,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.right_triangle_trig"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-hinh-hoc-khong-gian-toan-9-hinh-tru-hinh-non-hinh-cau.pdf",
+      "relativePath": "chuyen-de-hinh-hoc-khong-gian-toan-9-hinh-tru-hinh-non-hinh-cau.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-hinh-hoc-khong-gian-toan-9-hinh-tru-hinh-non-hinh-cau.pdf",
+      "extension": "pdf",
+      "sizeBytes": 788816,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.solid_geometry"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-hinh-khoi-trong-thuc-tien-toan-9-kntt-ly-thuyet-bai-tap-metoan.com.pdf",
+      "relativePath": "chuyen-de-hinh-khoi-trong-thuc-tien-toan-9-kntt-ly-thuyet-bai-tap-metoan.com.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-hinh-khoi-trong-thuc-tien-toan-9-kntt-ly-thuyet-bai-tap-metoan.com.pdf",
+      "extension": "pdf",
+      "sizeBytes": 4093926,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.solid_geometry"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-khai-phong-nang-luc-mon-toan-9.pdf",
+      "relativePath": "chuyen-de-khai-phong-nang-luc-mon-toan-9.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-khai-phong-nang-luc-mon-toan-9.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2687105,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-mot-so-hinh-khoi-trong-thuc-tien-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-mot-so-hinh-khoi-trong-thuc-tien-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-mot-so-hinh-khoi-trong-thuc-tien-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 4037751,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.solid_geometry"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-phuong-trinh-va-bat-phuong-trinh-bac-nhat-mot-an-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-phuong-trinh-va-bat-phuong-trinh-bac-nhat-mot-an-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-phuong-trinh-va-bat-phuong-trinh-bac-nhat-mot-an-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1222269,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.linear_equations_inequalities"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-phuong-trinh-va-he-hai-phuong-trinh-bac-nhat-hai-an-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-phuong-trinh-va-he-hai-phuong-trinh-bac-nhat-hai-an-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-phuong-trinh-va-he-hai-phuong-trinh-bac-nhat-hai-an-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1493024,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-tan-so-va-tan-so-tuong-doi-toan-9-knttvcs-tai-lieu-toan-dien-135-trang-metoan.com.pdf",
+      "relativePath": "chuyen-de-tan-so-va-tan-so-tuong-doi-toan-9-knttvcs-tai-lieu-toan-dien-135-trang-metoan.com.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-tan-so-va-tan-so-tuong-doi-toan-9-knttvcs-tai-lieu-toan-dien-135-trang-metoan.com.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3909187,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.statistics_probability.statistics"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-tan-so-va-tan-so-tuong-doi-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-tan-so-va-tan-so-tuong-doi-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-tan-so-va-tan-so-tuong-doi-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3808163,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.statistics_probability.statistics"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-toan-thuc-te-mon-toan-9-nguyen-ngoc-dung.pdf",
+      "relativePath": "chuyen-de-toan-thuc-te-mon-toan-9-nguyen-ngoc-dung.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-toan-thuc-te-mon-toan-9-nguyen-ngoc-dung.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1011549,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.word_problem_systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-xac-suat-cua-bien-co-trong-mot-so-mo-hinh-xac-suat-don-gian-toan-9-knttvcs-metoan.com.pdf",
+      "relativePath": "chuyen-de-xac-suat-cua-bien-co-trong-mot-so-mo-hinh-xac-suat-don-gian-toan-9-knttvcs-metoan.com.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-xac-suat-cua-bien-co-trong-mot-so-mo-hinh-xac-suat-don-gian-toan-9-knttvcs-metoan.com.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1484062,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.statistics_probability.probability"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-xac-suat-cua-bien-co-trong-mot-so-mo-hinh-xac-suat-don-gian-toan-9-knttvcs.pdf",
+      "relativePath": "chuyen-de-xac-suat-cua-bien-co-trong-mot-so-mo-hinh-xac-suat-don-gian-toan-9-knttvcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\chuyen-de-xac-suat-cua-bien-co-trong-mot-so-mo-hinh-xac-suat-don-gian-toan-9-knttvcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1406407,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.statistics_probability.probability"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Chuyên đề phương trình nghiệm nguyên.pdf",
+      "relativePath": "Chuyên đề phương trình nghiệm nguyên.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Chuyên đề phương trình nghiệm nguyên.pdf",
+      "extension": "pdf",
+      "sizeBytes": 10237775,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.advanced.number_theory"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHUYÊN ĐỀ. thực tế-logic-dirichle.pdf",
+      "relativePath": "CHUYÊN ĐỀ. thực tế-logic-dirichle.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\CHUYÊN ĐỀ. thực tế-logic-dirichle.pdf",
+      "extension": "pdf",
+      "sizeBytes": 984136,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.advanced.number_theory"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Các bài toán nâng cao hình học 9 theo chuyên đề.pdf",
+      "relativePath": "Các bài toán nâng cao hình học 9 theo chuyên đề.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Các bài toán nâng cao hình học 9 theo chuyên đề.pdf",
+      "extension": "pdf",
+      "sizeBytes": 9062156,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Các bài toán đại số lớp 9 bồi dưỡng hsg.pdf",
+      "relativePath": "Các bài toán đại số lớp 9 bồi dưỡng hsg.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Các bài toán đại số lớp 9 bồi dưỡng hsg.pdf",
+      "extension": "pdf",
+      "sizeBytes": 9076591,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-hoc-ki-1-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-hoc-ki-1-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-hoc-ki-1-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 333740,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-hoc-ky-2-toan-9-nam-2025-2026-truong-chuyen-tran-dai-nghia-tp-hcm.pdf",
+      "relativePath": "de-hoc-ky-2-toan-9-nam-2025-2026-truong-chuyen-tran-dai-nghia-tp-hcm.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-hoc-ky-2-toan-9-nam-2025-2026-truong-chuyen-tran-dai-nghia-tp-hcm.pdf",
+      "extension": "pdf",
+      "sizeBytes": 754718,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-hoc-ky-2-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-hoc-ky-2-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-hoc-ky-2-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 590215,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-khao-sat-hsg-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-khao-sat-hsg-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-khao-sat-hsg-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1693678,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-khao-sat-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-khao-sat-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-khao-sat-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 215744,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-kiem-tra-lan-4-toan-9-nam-2025-2026-truong-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-kiem-tra-lan-4-toan-9-nam-2025-2026-truong-chuyen-ha-noi-amsterdam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-kiem-tra-lan-4-toan-9-nam-2025-2026-truong-chuyen-ha-noi-amsterdam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 443815,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-kscl-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-kscl-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-kscl-toan-9-nam-2025-2026-truong-thpt-chuyen-ha-noi-amsterdam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1004913,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "de-ra-soat-lan-5-toan-9-nam-2024-2025-truong-chuyen-ha-noi-amsterdam.pdf",
+      "relativePath": "de-ra-soat-lan-5-toan-9-nam-2024-2025-truong-chuyen-ha-noi-amsterdam.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\de-ra-soat-lan-5-toan-9-nam-2024-2025-truong-chuyen-ha-noi-amsterdam.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3580267,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "nang-cao-ky-nang-dat-an-phu-giai-phuong-trinh-he-phuong-trinh-metoan.com.docx",
+      "relativePath": "nang-cao-ky-nang-dat-an-phu-giai-phuong-trinh-he-phuong-trinh-metoan.com.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\nang-cao-ky-nang-dat-an-phu-giai-phuong-trinh-he-phuong-trinh-metoan.com.docx",
+      "extension": "docx",
+      "sizeBytes": 2399395,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "13-chuyen-de-on-thi-tuyen-sinh-vao-lop-10-mon-toan.pdf",
+      "relativePath": "on vao 10/13-chuyen-de-on-thi-tuyen-sinh-vao-lop-10-mon-toan.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\13-chuyen-de-on-thi-tuyen-sinh-vao-lop-10-mon-toan.pdf",
+      "extension": "pdf",
+      "sizeBytes": 13590651,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "7-chuyen-de-luyen-thi-vao-lop-10-mon-toan-diep-tuan.pdf",
+      "relativePath": "on vao 10/7-chuyen-de-luyen-thi-vao-lop-10-mon-toan-diep-tuan.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\7-chuyen-de-luyen-thi-vao-lop-10-mon-toan-diep-tuan.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3299553,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "8-chu-de-luyen-thi-tuyen-sinh-vao-lop-10-mon-toan.pdf",
+      "relativePath": "on vao 10/8-chu-de-luyen-thi-tuyen-sinh-vao-lop-10-mon-toan.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\8-chu-de-luyen-thi-tuyen-sinh-vao-lop-10-mon-toan.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3132093,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "bien-doi-de-tim-cuc-tri-dang-phan-thuc-ap-dung-vao-phuong-trinh-bac-hai-co-tham-so.pdf",
+      "relativePath": "on vao 10/bien-doi-de-tim-cuc-tri-dang-phan-thuc-ap-dung-vao-phuong-trinh-bac-hai-co-tham-so.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\bien-doi-de-tim-cuc-tri-dang-phan-thuc-ap-dung-vao-phuong-trinh-bac-hai-co-tham-so.pdf",
+      "extension": "pdf",
+      "sizeBytes": 456245,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.algebra.functions_linear_quadratic",
+        "math9.algebra.quadratic_equations",
+        "math9.advanced.inequality_extrema"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "BO CAU HOI VAN DUNG CAO - TOAN THUC TE (75 CAU) (DE).pdf",
+      "relativePath": "on vao 10/BO CAU HOI VAN DUNG CAO - TOAN THUC TE (75 CAU) (DE).pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\BO CAU HOI VAN DUNG CAO - TOAN THUC TE (75 CAU) (DE).pdf",
+      "extension": "pdf",
+      "sizeBytes": 1134637,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.algebra.word_problem_systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Bất đẳng thức chuyên giai đoạn 2009-2019.pdf",
+      "relativePath": "on vao 10/Bất đẳng thức chuyên giai đoạn 2009-2019.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\Bất đẳng thức chuyên giai đoạn 2009-2019.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3141631,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Cac chuyen de luyen thi vao lop 10.pdf",
+      "relativePath": "on vao 10/Cac chuyen de luyen thi vao lop 10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\Cac chuyen de luyen thi vao lop 10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 10818403,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cac-bai-toan-thuc-te-ket-hop-bat-dang-thuc-trong-cac-de-thi-mon-toan-thcs.pdf",
+      "relativePath": "on vao 10/cac-bai-toan-thuc-te-ket-hop-bat-dang-thuc-trong-cac-de-thi-mon-toan-thcs.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\cac-bai-toan-thuc-te-ket-hop-bat-dang-thuc-trong-cac-de-thi-mon-toan-thcs.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3986947,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.advanced.inequality_extrema",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cac-bai-toan-xac-suat-lop-9-va-trong-ki-thi-tuyen-sinh-lop-10-nguyen-hong-diep-trang-1.pdf",
+      "relativePath": "on vao 10/cac-bai-toan-xac-suat-lop-9-va-trong-ki-thi-tuyen-sinh-lop-10-nguyen-hong-diep-trang-1.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\cac-bai-toan-xac-suat-lop-9-va-trong-ki-thi-tuyen-sinh-lop-10-nguyen-hong-diep-trang-1.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2234105,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.statistics_probability.probability"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "cac-bai-toan-xac-suat-lop-9-va-trong-ki-thi-tuyen-sinh-lop-10-nguyen-hong-diep.pdf",
+      "relativePath": "on vao 10/cac-bai-toan-xac-suat-lop-9-va-trong-ki-thi-tuyen-sinh-lop-10-nguyen-hong-diep.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\cac-bai-toan-xac-suat-lop-9-va-trong-ki-thi-tuyen-sinh-lop-10-nguyen-hong-diep.pdf",
+      "extension": "pdf",
+      "sizeBytes": 10359823,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.statistics_probability.probability"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen de on thi vao 10.pdf",
+      "relativePath": "on vao 10/chuyen de on thi vao 10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen de on thi vao 10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3289669,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-bat-dang-thuc-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-bat-dang-thuc-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-bat-dang-thuc-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1053678,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.advanced.inequality_extrema",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-bat-dang-thuc-va-cac-bai-toan-cuc-tri-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-bat-dang-thuc-va-cac-bai-toan-cuc-tri-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-bat-dang-thuc-va-cac-bai-toan-cuc-tri-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 832185,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.advanced.inequality_extrema",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-bat-dang-thuc-va-cuc-tri-hinh-hoc-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-bat-dang-thuc-va-cuc-tri-hinh-hoc-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-bat-dang-thuc-va-cuc-tri-hinh-hoc-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1468813,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.advanced.inequality_extrema",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-cac-bai-toan-thuc-te-co-lien-quan-den-cuc-tri-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-cac-bai-toan-thuc-te-co-lien-quan-den-cuc-tri-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-cac-bai-toan-thuc-te-co-lien-quan-den-cuc-tri-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1007692,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.advanced.inequality_extrema",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-cac-mo-hinh-thuong-gap-va-cac-bai-toan-tong-hop-hinh-hoc-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-cac-mo-hinh-thuong-gap-va-cac-bai-toan-tong-hop-hinh-hoc-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-cac-mo-hinh-thuong-gap-va-cac-bai-toan-tong-hop-hinh-hoc-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2538927,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-duong-tron-on-thi-vao-lop-10.doc",
+      "relativePath": "on vao 10/chuyen-de-duong-tron-on-thi-vao-lop-10.doc",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-duong-tron-on-thi-vao-lop-10.doc",
+      "extension": "doc",
+      "sizeBytes": 2099712,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.circle_angles",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-giai-bai-toan-bang-cach-lap-phuong-trinh-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-giai-bai-toan-bang-cach-lap-phuong-trinh-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-giai-bai-toan-bang-cach-lap-phuong-trinh-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 631843,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-goc-voi-duong-tron-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-goc-voi-duong-tron-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-goc-voi-duong-tron-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 745741,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.circle_angles",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-ham-so-bac-hai-va-bai-toan-tuong-giao-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-ham-so-bac-hai-va-bai-toan-tuong-giao-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-ham-so-bac-hai-va-bai-toan-tuong-giao-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1491662,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.functions_linear_quadratic",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-he-phuong-trinh-bac-nhat-hai-an-va-giai-bai-toan-bang-cach-lap-he-phuong-trinh.pdf",
+      "relativePath": "on vao 10/chuyen-de-he-phuong-trinh-bac-nhat-hai-an-va-giai-bai-toan-bang-cach-lap-he-phuong-trinh.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-he-phuong-trinh-bac-nhat-hai-an-va-giai-bai-toan-bang-cach-lap-he-phuong-trinh.pdf",
+      "extension": "pdf",
+      "sizeBytes": 624419,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.systems",
+        "math9.algebra.word_problem_systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-he-thuc-luong-trong-tam-giac-vuong-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-he-thuc-luong-trong-tam-giac-vuong-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-he-thuc-luong-trong-tam-giac-vuong-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 695689,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.right_triangle_trig",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-he-thuc-luong-trong-tam-giac-vuong-va-ung-dung-ti-so-luong-giac.pdf",
+      "relativePath": "on vao 10/chuyen-de-he-thuc-luong-trong-tam-giac-vuong-va-ung-dung-ti-so-luong-giac.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-he-thuc-luong-trong-tam-giac-vuong-va-ung-dung-ti-so-luong-giac.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1950157,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.right_triangle_trig"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-mot-so-yeu-to-thong-ke-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-mot-so-yeu-to-thong-ke-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-mot-so-yeu-to-thong-ke-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2042214,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.statistics_probability.statistics",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-mot-so-yeu-to-xac-suat-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-mot-so-yeu-to-xac-suat-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-mot-so-yeu-to-xac-suat-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1026019,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.statistics_probability.probability",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-nhung-dinh-ly-hinh-hoc-noi-tieng-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-nhung-dinh-ly-hinh-hoc-noi-tieng-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-nhung-dinh-ly-hinh-hoc-noi-tieng-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1202377,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.proof_synthesis",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-non-tru-cau-va-hinh-khoi-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-non-tru-cau-va-hinh-khoi-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-non-tru-cau-va-hinh-khoi-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2988065,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.solid_geometry",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-phuong-trinh-bac-hai-va-he-thuc-viete-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-phuong-trinh-bac-hai-va-he-thuc-viete-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-phuong-trinh-bac-hai-va-he-thuc-viete-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 817665,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.quadratic_equations",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-phuong-trinh-vo-ty-on-thi-vao-lop-10.doc",
+      "relativePath": "on vao 10/chuyen-de-phuong-trinh-vo-ty-on-thi-vao-lop-10.doc",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-phuong-trinh-vo-ty-on-thi-vao-lop-10.doc",
+      "extension": "doc",
+      "sizeBytes": 3820032,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.radical_equations",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-rut-gon-bieu-thuc-va-bai-toan-lien-quan-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-rut-gon-bieu-thuc-va-bai-toan-lien-quan-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-rut-gon-bieu-thuc-va-bai-toan-lien-quan-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1051161,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_transform",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "chuyen-de-tu-giac-noi-tiep-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/chuyen-de-tu-giac-noi-tiep-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\chuyen-de-tu-giac-noi-tiep-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 719636,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.cyclic_tangent_secant",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Chuyên đề hàm số ôn thi lớp 10.pdf",
+      "relativePath": "on vao 10/Chuyên đề hàm số ôn thi lớp 10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\Chuyên đề hàm số ôn thi lớp 10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 6662049,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.algebra.functions_linear_quadratic",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHƯƠNG I. HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG.pdf",
+      "relativePath": "on vao 10/CHƯƠNG I. HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\CHƯƠNG I. HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1221340,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.geometry.right_triangle_trig"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHƯƠNG III. GÓC VỚI ĐƯỜNG TRÒN.pdf",
+      "relativePath": "on vao 10/CHƯƠNG III. GÓC VỚI ĐƯỜNG TRÒN.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\CHƯƠNG III. GÓC VỚI ĐƯỜNG TRÒN.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1508040,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHƯƠNG IV. CHÙM BÀI TOÁN LIÊN QUAN ĐIỂM, ĐƯỜNG ĐẶC BIỆT TRONG TAM GIÁC, TIẾP TUYẾN CẮT TUYẾN CỦA ĐƯỜNG TRÒN.pdf",
+      "relativePath": "on vao 10/CHƯƠNG IV. CHÙM BÀI TOÁN LIÊN QUAN ĐIỂM, ĐƯỜNG ĐẶC BIỆT TRONG TAM GIÁC, TIẾP TUYẾN CẮT TUYẾN CỦA ĐƯỜNG TRÒN.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\CHƯƠNG IV. CHÙM BÀI TOÁN LIÊN QUAN ĐIỂM, ĐƯỜNG ĐẶC BIỆT TRONG TAM GIÁC, TIẾP TUYẾN CẮT TUYẾN CỦA ĐƯỜNG TRÒN.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2086822,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.geometry.cyclic_tangent_secant"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHƯƠNG V. THẲNG HẰNG, ĐỒNG QUY, ĐIỂM CỐ ĐỊNH, ĐƯỜNG CỐ ĐỊNH.pdf",
+      "relativePath": "on vao 10/CHƯƠNG V. THẲNG HẰNG, ĐỒNG QUY, ĐIỂM CỐ ĐỊNH, ĐƯỜNG CỐ ĐỊNH.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\CHƯƠNG V. THẲNG HẰNG, ĐỒNG QUY, ĐIỂM CỐ ĐỊNH, ĐƯỜNG CỐ ĐỊNH.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3509929,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHƯƠNG VII. NHỮNG ĐỊNH LÝ HÌNH HỌC NỔI TIẾNG.pdf",
+      "relativePath": "on vao 10/CHƯƠNG VII. NHỮNG ĐỊNH LÝ HÌNH HỌC NỔI TIẾNG.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\CHƯƠNG VII. NHỮNG ĐỊNH LÝ HÌNH HỌC NỔI TIẾNG.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2327007,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHỦ ĐỀ 7. MỘT SỐ PHƯƠNG PHÁP GIẢI PHƯƠNG TRÌNH NGHIỆM NGUYÊN.pdf",
+      "relativePath": "on vao 10/CHỦ ĐỀ 7. MỘT SỐ PHƯƠNG PHÁP GIẢI PHƯƠNG TRÌNH NGHIỆM NGUYÊN.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\CHỦ ĐỀ 7. MỘT SỐ PHƯƠNG PHÁP GIẢI PHƯƠNG TRÌNH NGHIỆM NGUYÊN.pdf",
+      "extension": "pdf",
+      "sizeBytes": 813666,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.advanced.number_theory"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "CHỦ ĐỀ 8. MỘT SỐ BÀI TOÁN SỐ NGUYÊN TỐ, SỐ CHÍNH PHƯƠNG.pdf",
+      "relativePath": "on vao 10/CHỦ ĐỀ 8. MỘT SỐ BÀI TOÁN SỐ NGUYÊN TỐ, SỐ CHÍNH PHƯƠNG.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\CHỦ ĐỀ 8. MỘT SỐ BÀI TOÁN SỐ NGUYÊN TỐ, SỐ CHÍNH PHƯƠNG.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1485430,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.advanced.number_theory"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "he-thong-cac-khai-niem-co-ban-va-dinh-ly-hinh-hoc-thcs-hinh-hoc-phang.pdf",
+      "relativePath": "on vao 10/he-thong-cac-khai-niem-co-ban-va-dinh-ly-hinh-hoc-thcs-hinh-hoc-phang.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\he-thong-cac-khai-niem-co-ban-va-dinh-ly-hinh-hoc-thcs-hinh-hoc-phang.pdf",
+      "extension": "pdf",
+      "sizeBytes": 745057,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.geometry.proof_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "kien-thuc-kinh-nghiem-trai-nghiem-lam-bai-hinh-hoc-toan-chung-cho-hoc-sinh-lop-9.pdf",
+      "relativePath": "on vao 10/kien-thuc-kinh-nghiem-trai-nghiem-lam-bai-hinh-hoc-toan-chung-cho-hoc-sinh-lop-9.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\kien-thuc-kinh-nghiem-trai-nghiem-lam-bai-hinh-hoc-toan-chung-cho-hoc-sinh-lop-9.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1262322,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "kien-thuc-kinh-nghiem-trai-nghiem-lam-bai-hinh-hoc-toan-chuyen-cho-hoc-sinh-lop-9.pdf",
+      "relativePath": "on vao 10/kien-thuc-kinh-nghiem-trai-nghiem-lam-bai-hinh-hoc-toan-chuyen-cho-hoc-sinh-lop-9.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\kien-thuc-kinh-nghiem-trai-nghiem-lam-bai-hinh-hoc-toan-chuyen-cho-hoc-sinh-lop-9.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1390835,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.geometry.proof_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "luyen thi vao lop 10 mon toan theo chu de.pdf",
+      "relativePath": "on vao 10/luyen thi vao lop 10 mon toan theo chu de.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\luyen thi vao lop 10 mon toan theo chu de.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2495375,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "mot-so-bai-tap-chon-loc-hinh-hoc-phang-on-thi-vao-lop-10.pdf",
+      "relativePath": "on vao 10/mot-so-bai-tap-chon-loc-hinh-hoc-phang-on-thi-vao-lop-10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\mot-so-bai-tap-chon-loc-hinh-hoc-phang-on-thi-vao-lop-10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1498303,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.geometry.proof_synthesis",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "mot-so-phuong-phap-giai-bai-toan-phuong-trinh-nghiem-nguyen.pdf",
+      "relativePath": "on vao 10/mot-so-phuong-phap-giai-bai-toan-phuong-trinh-nghiem-nguyen.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\mot-so-phuong-phap-giai-bai-toan-phuong-trinh-nghiem-nguyen.pdf",
+      "extension": "pdf",
+      "sizeBytes": 770772,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.advanced.number_theory"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "MỘT SỐ PHƯƠNG PHÁP GIẢI PHƯƠNG TRÌNH CÓ CHỨA ẨN Ở MẪU.pdf",
+      "relativePath": "on vao 10/MỘT SỐ PHƯƠNG PHÁP GIẢI PHƯƠNG TRÌNH CÓ CHỨA ẨN Ở MẪU.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\MỘT SỐ PHƯƠNG PHÁP GIẢI PHƯƠNG TRÌNH CÓ CHỨA ẨN Ở MẪU.pdf",
+      "extension": "pdf",
+      "sizeBytes": 961792,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "phuong-phap-dirichle-va-ung-dung-nguyen-huu-dien.pdf",
+      "relativePath": "on vao 10/phuong-phap-dirichle-va-ung-dung-nguyen-huu-dien.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\phuong-phap-dirichle-va-ung-dung-nguyen-huu-dien.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1274477,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.advanced.number_theory"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "phuong-trinh-nghiem-nguyen-chon-loc.pdf",
+      "relativePath": "on vao 10/phuong-trinh-nghiem-nguyen-chon-loc.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\phuong-trinh-nghiem-nguyen-chon-loc.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1165585,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.advanced.number_theory"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "QUAN HỆ GIỮA CÁC ĐƯỜNG CAO TRONG TAM GIÁC VÀ ĐƯỜNG TRÒN.pdf",
+      "relativePath": "on vao 10/QUAN HỆ GIỮA CÁC ĐƯỜNG CAO TRONG TAM GIÁC VÀ ĐƯỜNG TRÒN.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\QUAN HỆ GIỮA CÁC ĐƯỜNG CAO TRONG TAM GIÁC VÀ ĐƯỜNG TRÒN.pdf",
+      "extension": "pdf",
+      "sizeBytes": 984467,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "rut gon bieu thuc chua can va bai toan lien quan.pdf",
+      "relativePath": "on vao 10/rut gon bieu thuc chua can va bai toan lien quan.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\rut gon bieu thuc chua can va bai toan lien quan.pdf",
+      "extension": "pdf",
+      "sizeBytes": 1832655,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.algebra.radicals_domain",
+        "math9.algebra.radicals_transform"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "SU DUNG BDT COSI TRONG HINH HOC 9.pdf",
+      "relativePath": "on vao 10/SU DUNG BDT COSI TRONG HINH HOC 9.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\SU DUNG BDT COSI TRONG HINH HOC 9.pdf",
+      "extension": "pdf",
+      "sizeBytes": 590577,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.advanced.inequality_extrema"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "toan thuc te luyen thi vao lop 10.pdf",
+      "relativePath": "on vao 10/toan thuc te luyen thi vao lop 10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\toan thuc te luyen thi vao lop 10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3362851,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Toan thực tế THCS.pdf",
+      "relativePath": "on vao 10/Toan thực tế THCS.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\Toan thực tế THCS.pdf",
+      "extension": "pdf",
+      "sizeBytes": 10545244,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.algebra.word_problem_systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Tong on de toan luyen thi vao lop 10.pdf",
+      "relativePath": "on vao 10/Tong on de toan luyen thi vao lop 10.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\Tong on de toan luyen thi vao lop 10.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2946411,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "tong-hop-cac-bai-toan-phuong-trinh-vo-ti-hay-va-kho-huynh-thanh-phong.pdf",
+      "relativePath": "on vao 10/tong-hop-cac-bai-toan-phuong-trinh-vo-ti-hay-va-kho-huynh-thanh-phong.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\tong-hop-cac-bai-toan-phuong-trinh-vo-ti-hay-va-kho-huynh-thanh-phong.pdf",
+      "extension": "pdf",
+      "sizeBytes": 9533687,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.algebra.radical_equations"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "trong-tam-kien-thuc-va-cac-dang-de-on-thi-vao-lop-10-mon-toan.pdf",
+      "relativePath": "on vao 10/trong-tam-kien-thuc-va-cac-dang-de-on-thi-vao-lop-10-mon-toan.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\on vao 10\\trong-tam-kien-thuc-va-cac-dang-de-on-thi-vao-lop-10-mon-toan.pdf",
+      "extension": "pdf",
+      "sizeBytes": 2412463,
+      "scope": "exam10_review",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "phieu-bai-tap-toan-9-chuong-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep.rar",
+      "relativePath": "phieu-bai-tap-toan-9-chuong-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep.rar",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\phieu-bai-tap-toan-9-chuong-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep.rar",
+      "extension": "rar",
+      "sizeBytes": 4798591,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.geometry.circle_angles",
+        "math9.geometry.cyclic_tangent_secant"
+      ],
+      "archiveStatus": "rar_recorded_not_extracted",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "phieu-bai-tap-toan-9-chuong-ham-so-y-ax2-a-≠-0-phuong-trinh-bac-hai-mot-an.rar",
+      "relativePath": "phieu-bai-tap-toan-9-chuong-ham-so-y-ax2-a-≠-0-phuong-trinh-bac-hai-mot-an.rar",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\phieu-bai-tap-toan-9-chuong-ham-so-y-ax2-a-≠-0-phuong-trinh-bac-hai-mot-an.rar",
+      "extension": "rar",
+      "sizeBytes": 4196245,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.algebra.functions_linear_quadratic",
+        "math9.algebra.quadratic_equations"
+      ],
+      "archiveStatus": "rar_recorded_not_extracted",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "phieu-bai-tap-toan-9-chuong-hinh-hoc-truc-quan.rar",
+      "relativePath": "phieu-bai-tap-toan-9-chuong-hinh-hoc-truc-quan.rar",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\phieu-bai-tap-toan-9-chuong-hinh-hoc-truc-quan.rar",
+      "extension": "rar",
+      "sizeBytes": 6786712,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "rar_recorded_not_extracted",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "phieu-bai-tap-toan-9-chuong-mot-so-yeu-to-thong-ke-va-xac-suat.rar",
+      "relativePath": "phieu-bai-tap-toan-9-chuong-mot-so-yeu-to-thong-ke-va-xac-suat.rar",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\phieu-bai-tap-toan-9-chuong-mot-so-yeu-to-thong-ke-va-xac-suat.rar",
+      "extension": "rar",
+      "sizeBytes": 3855757,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.statistics_probability.statistics",
+        "math9.statistics_probability.probability"
+      ],
+      "archiveStatus": "rar_recorded_not_extracted",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Phát triển kỹ năng giải toán hình học phẳng dành cho bậc THCS.pdf",
+      "relativePath": "Phát triển kỹ năng giải toán hình học phẳng dành cho bậc THCS.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Phát triển kỹ năng giải toán hình học phẳng dành cho bậc THCS.pdf",
+      "extension": "pdf",
+      "sizeBytes": 9794611,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.geometry.proof_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "tai lieu boi duong hoc sinh gioi may tinh bo tui THCS.pdf",
+      "relativePath": "tai lieu boi duong hoc sinh gioi may tinh bo tui THCS.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\tai lieu boi duong hoc sinh gioi may tinh bo tui THCS.pdf",
+      "extension": "pdf",
+      "sizeBytes": 3300438,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-Bo-10-de-kiem-tra-HK2-Toan-9-nam-25-26.docx",
+      "relativePath": "thuvienhoclieu.com-Bo-10-de-kiem-tra-HK2-Toan-9-nam-25-26.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-Bo-10-de-kiem-tra-HK2-Toan-9-nam-25-26.docx",
+      "extension": "docx",
+      "sizeBytes": 5172244,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-1-CAN-BAC-HAI-VA-CAN-THUC-BAC-HAI.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-1-CAN-BAC-HAI-VA-CAN-THUC-BAC-HAI.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-1-CAN-BAC-HAI-VA-CAN-THUC-BAC-HAI.docx",
+      "extension": "docx",
+      "sizeBytes": 867744,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-10-PHUONG-TRINH-CHUA-CAN-THUC.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-10-PHUONG-TRINH-CHUA-CAN-THUC.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-10-PHUONG-TRINH-CHUA-CAN-THUC.docx",
+      "extension": "docx",
+      "sizeBytes": 912902,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain",
+        "math9.algebra.radical_equations"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-11-PHUONG-TRINH-CHUA-CAN-THUC-p2.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-11-PHUONG-TRINH-CHUA-CAN-THUC-p2.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-11-PHUONG-TRINH-CHUA-CAN-THUC-p2.docx",
+      "extension": "docx",
+      "sizeBytes": 2206962,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain",
+        "math9.algebra.radical_equations"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-12-PHUONG-TRINH-VA-BAT-PHUONG-TRINH.docx.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-12-PHUONG-TRINH-VA-BAT-PHUONG-TRINH.docx.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-12-PHUONG-TRINH-VA-BAT-PHUONG-TRINH.docx.docx",
+      "extension": "docx",
+      "sizeBytes": 6707500,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.linear_equations_inequalities"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-13-GIAI-BAI-TOAN-BANG-CACH-LAP-HPT.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-13-GIAI-BAI-TOAN-BANG-CACH-LAP-HPT.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-13-GIAI-BAI-TOAN-BANG-CACH-LAP-HPT.docx",
+      "extension": "docx",
+      "sizeBytes": 3151697,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.systems",
+        "math9.algebra.word_problem_systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-14-PHUONG-TRINH-BAC-NHAT-HAI-AN.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-14-PHUONG-TRINH-BAC-NHAT-HAI-AN.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-14-PHUONG-TRINH-BAC-NHAT-HAI-AN.docx",
+      "extension": "docx",
+      "sizeBytes": 1265259,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-15-HE-PHUONG-TRINH.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-15-HE-PHUONG-TRINH.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-15-HE-PHUONG-TRINH.docx",
+      "extension": "docx",
+      "sizeBytes": 3494464,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.systems"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-16-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-16-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-16-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "extension": "docx",
+      "sizeBytes": 5579753,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.right_triangle_trig"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-17-UNG-DUNG-THUC-TE-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-17-UNG-DUNG-THUC-TE-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-17-UNG-DUNG-THUC-TE-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "extension": "docx",
+      "sizeBytes": 7844815,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.word_problem_systems",
+        "math9.geometry.right_triangle_trig"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-18-CAC-DANG-BAI-TAP-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-18-CAC-DANG-BAI-TAP-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-18-CAC-DANG-BAI-TAP-HE-THUC-LUONG-TRONG-TAM-GIAC-VUONG.docx",
+      "extension": "docx",
+      "sizeBytes": 5300172,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.geometry.right_triangle_trig"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-2-CAN-BAC-HAI.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-2-CAN-BAC-HAI.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-2-CAN-BAC-HAI.docx",
+      "extension": "docx",
+      "sizeBytes": 743782,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-3-CAC-PHEP-BIEN-DOI-BIEU-THUC-CHUA-CAN.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-3-CAC-PHEP-BIEN-DOI-BIEU-THUC-CHUA-CAN.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-3-CAC-PHEP-BIEN-DOI-BIEU-THUC-CHUA-CAN.docx",
+      "extension": "docx",
+      "sizeBytes": 1153112,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_transform"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-4-CAC-PHEP-BIEN-DOI-BIEU-THUC-CHUA-CAN-p2.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-4-CAC-PHEP-BIEN-DOI-BIEU-THUC-CHUA-CAN-p2.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-4-CAC-PHEP-BIEN-DOI-BIEU-THUC-CHUA-CAN-p2.docx",
+      "extension": "docx",
+      "sizeBytes": 1163827,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_transform"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-5-RUT-GON-BIEU-THUC.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-5-RUT-GON-BIEU-THUC.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-5-RUT-GON-BIEU-THUC.docx",
+      "extension": "docx",
+      "sizeBytes": 1158208,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_transform"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-6-RUT-GON-VA-CAC-CAU-HOI-SAU-BAI-TOAN-RUT-GON-p2.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-6-RUT-GON-VA-CAC-CAU-HOI-SAU-BAI-TOAN-RUT-GON-p2.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-6-RUT-GON-VA-CAC-CAU-HOI-SAU-BAI-TOAN-RUT-GON-p2.docx",
+      "extension": "docx",
+      "sizeBytes": 2372221,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-8-CAN-BAC-BA.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-8-CAN-BAC-BA.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-8-CAN-BAC-BA.docx",
+      "extension": "docx",
+      "sizeBytes": 421660,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-CHUYEN-DE-9-CAN-BAC-BA-VA-CAN-THUC-BAC-BA.docx",
+      "relativePath": "thuvienhoclieu.com-CHUYEN-DE-9-CAN-BAC-BA-VA-CAN-THUC-BAC-BA.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-CHUYEN-DE-9-CAN-BAC-BA-VA-CAN-THUC-BAC-BA.docx",
+      "extension": "docx",
+      "sizeBytes": 471380,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.algebra.radicals_domain"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-De-thi-tuyen-sinh-10-Toan-Chuyen-KHTN-Ha-Noi-nam-26-27.docx",
+      "relativePath": "thuvienhoclieu.com-De-thi-tuyen-sinh-10-Toan-Chuyen-KHTN-Ha-Noi-nam-26-27.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-De-thi-tuyen-sinh-10-Toan-Chuyen-KHTN-Ha-Noi-nam-26-27.docx",
+      "extension": "docx",
+      "sizeBytes": 590651,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-De-thi-tuyen-sinh-10-Toan-Chuyen-KHXHNV-Ha-Noi-nam-26-27.docx",
+      "relativePath": "thuvienhoclieu.com-De-thi-tuyen-sinh-10-Toan-Chuyen-KHXHNV-Ha-Noi-nam-26-27.docx",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-De-thi-tuyen-sinh-10-Toan-Chuyen-KHXHNV-Ha-Noi-nam-26-27.docx",
+      "extension": "docx",
+      "sizeBytes": 1086701,
+      "scope": "exam10_advanced",
+      "topicHints": [
+        "math9.assessment.exam10_synthesis"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-SGK-chuyen-de-Toan-10-tu-nam-2026.pdf",
+      "relativePath": "thuvienhoclieu.com-SGK-chuyen-de-Toan-10-tu-nam-2026.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-SGK-chuyen-de-Toan-10-tu-nam-2026.pdf",
+      "extension": "pdf",
+      "sizeBytes": 8428276,
+      "scope": "off_scope",
+      "topicHints": [],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-SGK-chuyen-de-Toan-11-tu-nam-2026.pdf",
+      "relativePath": "thuvienhoclieu.com-SGK-chuyen-de-Toan-11-tu-nam-2026.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-SGK-chuyen-de-Toan-11-tu-nam-2026.pdf",
+      "extension": "pdf",
+      "sizeBytes": 10364634,
+      "scope": "off_scope",
+      "topicHints": [],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-SGK-chuyen-de-Toan-12-tu-nam-2026.pdf",
+      "relativePath": "thuvienhoclieu.com-SGK-chuyen-de-Toan-12-tu-nam-2026.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-SGK-chuyen-de-Toan-12-tu-nam-2026.pdf",
+      "extension": "pdf",
+      "sizeBytes": 10336964,
+      "scope": "off_scope",
+      "topicHints": [],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-SGK-Toan-10-tu-nam-2026-Tap-1.pdf",
+      "relativePath": "thuvienhoclieu.com-SGK-Toan-10-tu-nam-2026-Tap-1.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-SGK-Toan-10-tu-nam-2026-Tap-1.pdf",
+      "extension": "pdf",
+      "sizeBytes": 15067674,
+      "scope": "off_scope",
+      "topicHints": [],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-SGK-Toan-10-tu-nam-2026-Tap-2.pdf",
+      "relativePath": "thuvienhoclieu.com-SGK-Toan-10-tu-nam-2026-Tap-2.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-SGK-Toan-10-tu-nam-2026-Tap-2.pdf",
+      "extension": "pdf",
+      "sizeBytes": 17553403,
+      "scope": "off_scope",
+      "topicHints": [],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-1.pdf",
+      "relativePath": "thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-1.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-1.pdf",
+      "extension": "pdf",
+      "sizeBytes": 13815813,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-2.pdf",
+      "relativePath": "thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-2.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-2.pdf",
+      "extension": "pdf",
+      "sizeBytes": 16385702,
+      "scope": "math9_core",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "tron-bo-chuyen-de-va-bai-tap-toan-9-tap-1-ket-noi-tri-thuc-voi-cuoc-song-metoan.com.pdf",
+      "relativePath": "tron-bo-chuyen-de-va-bai-tap-toan-9-tap-1-ket-noi-tri-thuc-voi-cuoc-song-metoan.com.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\tron-bo-chuyen-de-va-bai-tap-toan-9-tap-1-ket-noi-tri-thuc-voi-cuoc-song-metoan.com.pdf",
+      "extension": "pdf",
+      "sizeBytes": 5100214,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "tron-bo-chuyen-de-va-bai-tap-toan-9-tap-1-ket-noi-tri-thuc-voi-cuoc-song-metoan.com.zip",
+      "relativePath": "tron-bo-chuyen-de-va-bai-tap-toan-9-tap-1-ket-noi-tri-thuc-voi-cuoc-song-metoan.com.zip",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\tron-bo-chuyen-de-va-bai-tap-toan-9-tap-1-ket-noi-tri-thuc-voi-cuoc-song-metoan.com.zip",
+      "extension": "zip",
+      "sizeBytes": 16329668,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "zip_listed:11",
+      "archiveEntries": [
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/1. Chương 1. PHƯƠNG TRÌNH VÀ HỆ PHƯƠNG TRÌNH BẬC NHẤT 2 ẨN( 16 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/10. Chương 5.  ĐÁP ÁN ( 34 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/2. Chương 2. PHƯƠNG TRÌNH VÀ BẤT PHƯƠNG TRÌNH BẬC NHẤT 1 ẨN ( 8 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/3. Chương 3. CĂN BẬC HAI, CĂN BẬC BA ( 30 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/4. Chương 4. HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG ( 15 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/5. Chương 5. ĐƯỜNG TRÒN ( 27 TRANG).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/6. Chương 1. ĐÁP ÁN ( 29 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/7. Chương 2. ĐÁP ÁN ( 22 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/8. Chương 3. ĐÁP ÁN ( 87 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/9. Chương 4. ĐÁP ÁN ( 17 trang).docx",
+        "chuyen-de-co-ban-mon-toan-9-ket-noi-tri-thuc-voi-cuoc-song-tap-1-metoan.com/README.txt"
+      ]
+    },
+    {
+      "fileName": "Tuyển tập các bài toán cực trị - Bồi dưỡng học sinh giỏi THCS.pdf",
+      "relativePath": "Tuyển tập các bài toán cực trị - Bồi dưỡng học sinh giỏi THCS.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Tuyển tập các bài toán cực trị - Bồi dưỡng học sinh giỏi THCS.pdf",
+      "extension": "pdf",
+      "sizeBytes": 10335265,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.advanced.inequality_extrema"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    },
+    {
+      "fileName": "Tách đề chuyên 2023-2024.pdf",
+      "relativePath": "Tách đề chuyên 2023-2024.pdf",
+      "path": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\TOAN 9\\Tách đề chuyên 2023-2024.pdf",
+      "extension": "pdf",
+      "sizeBytes": 5163466,
+      "scope": "math9_advanced",
+      "topicHints": [
+        "math9.unsorted"
+      ],
+      "archiveStatus": "",
+      "archiveEntries": []
+    }
+  ]
+}

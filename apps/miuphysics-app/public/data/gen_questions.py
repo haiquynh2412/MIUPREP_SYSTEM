@@ -1,0 +1,1804 @@
+import json, os
+
+questions = []
+
+# ============================================================
+# CHAPTER 1: MEASUREMENT (12 questions)
+# ============================================================
+questions.append({
+  "id": "phys6_measurement_001", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "length_measurement", "topic_vn": "Đo chiều dài",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Đơn vị đo chiều dài trong hệ thống đo lường quốc tế (SI) là gì?",
+  "options": [{"key":"A","content":"Kilômét (km)"},{"key":"B","content":"Mét (m)"},{"key":"C","content":"Xentimét (cm)"},{"key":"D","content":"Milimét (mm)"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Trong hệ SI, đơn vị cơ bản của chiều dài là mét (m). Các đơn vị khác như km, cm, mm đều là bội số hoặc ước số của mét.","key_concept":"Mét (m) là đơn vị đo chiều dài cơ bản trong hệ SI."},
+  "thinking_guide": {
+    "understand": "Đề bài hỏi đơn vị đo chiều dài cơ bản trong hệ SI.",
+    "identify_knowledge": "Hệ đo lường quốc tế SI có 7 đơn vị cơ bản, trong đó đơn vị chiều dài là mét.",
+    "plan": "Nhớ lại kiến thức về hệ SI và xác định đơn vị cơ bản.",
+    "steps": ["Bước 1: Nhớ lại 7 đơn vị cơ bản của hệ SI.", "Bước 2: Xác định đơn vị chiều dài là mét (m)."],
+    "verify": "Kiểm tra: km = 1000m, cm = 0.01m, mm = 0.001m → đều là bội/ước của m → m là đơn vị cơ bản.",
+    "extend": "Các đơn vị cơ bản khác trong SI: kg (khối lượng), s (thời gian), K (nhiệt độ)...",
+    "common_traps": ["Nhầm lẫn giữa đơn vị cơ bản (m) với đơn vị thường dùng (cm, km)."],
+    "hints": ["Hệ SI = Système International, đơn vị cơ bản của chiều dài bắt đầu bằng chữ 'm'."]
+  },
+  "real_world_connection": "Khi mua vải ở chợ, người bán thường đo bằng mét. Chiều cao của con cũng được đo bằng mét hoặc xentimét.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_002", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "length_measurement", "topic_vn": "Đo chiều dài",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Giới hạn đo (GHĐ) của thước là gì?",
+  "options": [{"key":"A","content":"Độ dài giữa hai vạch chia liên tiếp trên thước"},{"key":"B","content":"Độ dài lớn nhất ghi trên thước"},{"key":"C","content":"Độ dài nhỏ nhất ghi trên thước"},{"key":"D","content":"Độ dài trung bình của thước"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"GHĐ của thước là độ dài lớn nhất ghi trên thước, cho biết thước đo được tối đa bao nhiêu.","key_concept":"GHĐ = giá trị lớn nhất ghi trên dụng cụ đo."},
+  "thinking_guide": {
+    "understand": "Đề hỏi về khái niệm giới hạn đo của thước.",
+    "identify_knowledge": "GHĐ là giá trị lớn nhất mà dụng cụ đo được.",
+    "plan": "Phân biệt GHĐ với ĐCNN (độ chia nhỏ nhất).",
+    "steps": ["Bước 1: GHĐ = giá trị lớn nhất trên dụng cụ.", "Bước 2: ĐCNN = khoảng cách giữa 2 vạch chia liên tiếp."],
+    "verify": "Ví dụ thước 30cm: GHĐ = 30cm, ĐCNN = 1mm.",
+    "extend": "Tại sao cần biết GHĐ? Để chọn thước phù hợp với vật cần đo.",
+    "common_traps": ["Nhầm GHĐ với ĐCNN - đây là hai khái niệm khác nhau."],
+    "hints": ["GHĐ = giới hạn đo = đo được tối đa bao nhiêu."]
+  },
+  "real_world_connection": "Thước kẻ của con có GHĐ 20cm hoặc 30cm. Muốn đo chiều dài bàn học, con cần thước có GHĐ lớn hơn.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_003", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "length_measurement", "topic_vn": "Đo chiều dài",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Một thước có 101 vạch chia, vạch đầu tiên ghi 0, vạch cuối cùng ghi 100 cm. Độ chia nhỏ nhất (ĐCNN) của thước là bao nhiêu?",
+  "options": [{"key":"A","content":"0,5 cm"},{"key":"B","content":"1 cm"},{"key":"C","content":"1 mm"},{"key":"D","content":"0,1 cm"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"101 vạch chia tạo ra 100 khoảng chia. Mỗi khoảng = 100cm ÷ 100 = 1cm. Vậy ĐCNN = 1cm.","key_concept":"ĐCNN = khoảng cách giữa hai vạch chia liên tiếp."},
+  "thinking_guide": {
+    "understand": "Có 101 vạch chia, từ 0 đến 100cm. Tìm ĐCNN.",
+    "identify_knowledge": "Số khoảng chia = số vạch - 1. ĐCNN = tổng chiều dài ÷ số khoảng.",
+    "plan": "Tính số khoảng chia, rồi chia tổng chiều dài cho số khoảng.",
+    "steps": ["Bước 1: Số khoảng chia = 101 - 1 = 100.", "Bước 2: ĐCNN = 100cm ÷ 100 = 1cm."],
+    "verify": "Kiểm tra: 100 khoảng × 1cm = 100cm ✓",
+    "extend": "Nếu thước có 201 vạch từ 0-100cm thì ĐCNN = 0,5cm.",
+    "common_traps": ["Nhầm số vạch với số khoảng (số khoảng = số vạch - 1)."],
+    "hints": ["Vẽ ra 3-4 vạch để thấy: 3 vạch tạo 2 khoảng, 4 vạch tạo 3 khoảng..."]
+  },
+  "real_world_connection": "Khi chọn thước để đo, ĐCNN càng nhỏ thì đo càng chính xác. Thước vẽ kỹ thuật có ĐCNN 0,5mm.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_004", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "mass_measurement", "topic_vn": "Đo khối lượng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Dụng cụ nào dùng để đo khối lượng?",
+  "options": [{"key":"A","content":"Thước dây"},{"key":"B","content":"Cân"},{"key":"C","content":"Đồng hồ"},{"key":"D","content":"Nhiệt kế"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Cân là dụng cụ chuyên dùng để đo khối lượng của vật.","key_concept":"Cân đo khối lượng, thước đo chiều dài, đồng hồ đo thời gian, nhiệt kế đo nhiệt độ."},
+  "thinking_guide": {
+    "understand": "Đề hỏi dụng cụ đo khối lượng.",
+    "identify_knowledge": "Mỗi đại lượng vật lý có dụng cụ đo riêng.",
+    "plan": "Xác định chức năng của từng dụng cụ.",
+    "steps": ["Bước 1: Thước dây → đo chiều dài.", "Bước 2: Cân → đo khối lượng.", "Bước 3: Đồng hồ → đo thời gian.", "Bước 4: Nhiệt kế → đo nhiệt độ."],
+    "verify": "Cân cho kết quả bằng kg, g → đúng là đơn vị khối lượng.",
+    "extend": "Có nhiều loại cân: cân đồng hồ, cân điện tử, cân Rôbécvan...",
+    "common_traps": ["Nhầm giữa khối lượng (đo bằng cân) và trọng lượng (đo bằng lực kế)."],
+    "hints": ["Khối lượng đo bằng đơn vị kg, g → dụng cụ nào cho kết quả đó?"]
+  },
+  "real_world_connection": "Khi mẹ đi chợ mua thịt, cá, người bán dùng cân để xác định khối lượng hàng hóa.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_005", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "time_measurement", "topic_vn": "Đo thời gian",
+  "type": "true_false", "difficulty": "easy",
+  "question_text": "Đơn vị đo thời gian trong hệ SI là phút.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Đơn vị đo thời gian trong hệ SI là giây (s), không phải phút. 1 phút = 60 giây.","key_concept":"Giây (s) là đơn vị thời gian cơ bản trong hệ SI."},
+  "thinking_guide": {
+    "understand": "Đề khẳng định đơn vị thời gian trong SI là phút. Đúng hay sai?",
+    "identify_knowledge": "Đơn vị thời gian cơ bản trong hệ SI là giây (s).",
+    "plan": "So sánh khẳng định với kiến thức đã học.",
+    "steps": ["Bước 1: Nhớ lại đơn vị thời gian trong SI = giây (s).", "Bước 2: Đề nói là phút → Sai."],
+    "verify": "1 phút = 60s, 1 giờ = 3600s → giây là đơn vị nhỏ nhất và cơ bản.",
+    "extend": "Tại sao chọn giây? Vì giây là đơn vị cơ bản, phút và giờ là bội số.",
+    "common_traps": ["Hay nhầm vì trong đời sống ta thường dùng phút, giờ nhiều hơn giây."],
+    "hints": ["Nhớ: hệ SI dùng các đơn vị cơ bản, không phải đơn vị thường dùng."]
+  },
+  "real_world_connection": "Đồng hồ bấm giây trong thể dục đo thời gian chạy bằng giây.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_006", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "temperature_measurement", "topic_vn": "Đo nhiệt độ",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Nhiệt kế y tế có GHĐ và ĐCNN thường là bao nhiêu?",
+  "options": [{"key":"A","content":"GHĐ 100°C, ĐCNN 1°C"},{"key":"B","content":"GHĐ 42°C, ĐCNN 0,1°C"},{"key":"C","content":"GHĐ 50°C, ĐCNN 0,5°C"},{"key":"D","content":"GHĐ 42°C, ĐCNN 1°C"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Nhiệt kế y tế đo từ 35°C đến 42°C, ĐCNN 0,1°C để đo chính xác thân nhiệt.","key_concept":"Nhiệt kế y tế: GHĐ 42°C, ĐCNN 0,1°C."},
+  "thinking_guide": {
+    "understand": "Cần biết thông số kỹ thuật của nhiệt kế y tế.",
+    "identify_knowledge": "Nhiệt kế y tế dùng đo thân nhiệt (khoảng 36-42°C), cần độ chính xác cao.",
+    "plan": "Nhớ lại đặc điểm nhiệt kế y tế hoặc suy luận từ mục đích sử dụng.",
+    "steps": ["Bước 1: Thân nhiệt bình thường ~37°C, sốt cao ~42°C → GHĐ 42°C.", "Bước 2: Cần phân biệt 37,0°C và 37,5°C → ĐCNN phải là 0,1°C."],
+    "verify": "GHĐ 42°C phù hợp vì trên 42°C người đã nguy hiểm tính mạng.",
+    "extend": "Nhiệt kế thủy ngân trong phòng thí nghiệm có GHĐ lớn hơn (100°C, 200°C...).",
+    "common_traps": ["Nhầm với nhiệt kế phòng thí nghiệm có GHĐ 100°C."],
+    "hints": ["Nhiệt kế y tế chỉ cần đo khoảng nhiệt độ cơ thể người."]
+  },
+  "real_world_connection": "Khi con bị sốt, mẹ dùng nhiệt kế y tế kẹp nách để đo nhiệt độ cơ thể.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_007", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "measurement_tools", "topic_vn": "Dụng cụ đo",
+  "type": "fill_in", "difficulty": "medium",
+  "question_text": "Đổi đơn vị: 2,5 km = ______ m",
+  "options": None,
+  "correct_answer": "2500",
+  "explanation": {"summary":"1 km = 1000 m, nên 2,5 km = 2,5 × 1000 = 2500 m.","key_concept":"1 km = 1000 m."},
+  "thinking_guide": {
+    "understand": "Đổi 2,5 km sang mét.",
+    "identify_knowledge": "1 km = 1000 m.",
+    "plan": "Nhân 2,5 với 1000.",
+    "steps": ["Bước 1: 1 km = 1000 m.", "Bước 2: 2,5 km = 2,5 × 1000 = 2500 m."],
+    "verify": "2500 m = 2,5 km ✓ (chia ngược lại: 2500 ÷ 1000 = 2,5).",
+    "extend": "Đổi ngược: 500 m = 0,5 km. Nắm bảng đổi đơn vị chiều dài.",
+    "common_traps": ["Nhầm nhân với 100 thay vì 1000."],
+    "hints": ["Kilo = 1000 lần đơn vị cơ bản."]
+  },
+  "real_world_connection": "Quãng đường từ nhà đến trường khoảng 1-2 km, tức là 1000-2000 m.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_008", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "measurement_tools", "topic_vn": "Dụng cụ đo",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Để đo chiều dài sân trường, nên chọn thước nào?",
+  "options": [{"key":"A","content":"Thước kẻ 30 cm"},{"key":"B","content":"Thước dây 5 m"},{"key":"C","content":"Thước cuộn 50 m"},{"key":"D","content":"Thước kẹp"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Sân trường dài hàng chục mét, cần thước có GHĐ lớn. Thước cuộn 50m là phù hợp nhất.","key_concept":"Chọn dụng cụ đo có GHĐ phù hợp với vật cần đo."},
+  "thinking_guide": {
+    "understand": "Cần đo sân trường (vài chục mét), chọn thước phù hợp.",
+    "identify_knowledge": "GHĐ của thước phải lớn hơn hoặc bằng kích thước vật cần đo.",
+    "plan": "Ước lượng chiều dài sân trường, so sánh với GHĐ từng thước.",
+    "steps": ["Bước 1: Sân trường dài khoảng 30-50 m.", "Bước 2: Thước kẻ (30cm), thước dây (5m) quá ngắn.", "Bước 3: Thước cuộn 50m phù hợp."],
+    "verify": "Thước cuộn 50m đo được sân trường mà không cần đo nhiều lần.",
+    "extend": "Thước kẹp dùng để đo vật nhỏ với độ chính xác cao (đường kính viên bi).",
+    "common_traps": ["Chọn thước dây 5m - phải đo nhiều lần, dễ sai số."],
+    "hints": ["GHĐ thước nên ≥ chiều dài vật cần đo."]
+  },
+  "real_world_connection": "Thợ xây dùng thước cuộn để đo kích thước nền nhà, sân vườn.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_009", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "measurement_error", "topic_vn": "Sai số phép đo",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Tại sao khi đo chiều dài, mắt phải nhìn theo hướng vuông góc với thước tại vị trí đầu kia của vật? Nếu nhìn lệch thì kết quả đo sẽ bị ảnh hưởng như thế nào?",
+  "options": None,
+  "correct_answer": "Nhìn vuông góc để tránh sai số do thị sai (parallax). Nhìn lệch sẽ đọc sai giá trị: lệch trái thì đọc giá trị nhỏ hơn, lệch phải thì đọc giá trị lớn hơn thực tế.",
+  "explanation": {"summary":"Khi nhìn lệch, do khoảng cách giữa mắt thước và vạch chia, tia nhìn xiên sẽ chỉ vào vạch khác với vạch thật. Đây gọi là sai số thị sai.","key_concept":"Sai số thị sai xảy ra khi mắt không nhìn vuông góc với dụng cụ đo."},
+  "thinking_guide": {
+    "understand": "Tại sao phải nhìn vuông góc khi đo? Nhìn lệch thì sao?",
+    "identify_knowledge": "Sai số thị sai (parallax error) trong phép đo.",
+    "plan": "Giải thích nguyên lý quang học và minh họa bằng ví dụ.",
+    "steps": ["Bước 1: Khi nhìn vuông góc, tia nhìn đi thẳng từ mắt đến vạch chia → đọc đúng.", "Bước 2: Khi nhìn lệch, tia nhìn xiên → 'thấy' vạch chia khác → đọc sai.", "Bước 3: Lệch sang trái → đọc nhỏ hơn, lệch phải → đọc lớn hơn."],
+    "verify": "Thử nghiệm: đặt bút chì trên thước, nhìn lệch trái/phải sẽ thấy bút chỉ vào vạch khác nhau.",
+    "extend": "Sai số thị sai cũng xảy ra khi đọc nhiệt kế, đồng hồ kim.",
+    "common_traps": ["Nghĩ rằng chỉ cần đặt thước đúng là được, quên cách nhìn."],
+    "hints": ["Hãy tưởng tượng con đứng ở các vị trí khác nhau nhìn cùng một cột đèn."]
+  },
+  "real_world_connection": "Khi đọc đồng hồ treo tường từ góc lệch, kim giờ có vẻ chỉ sai giờ.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_010", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "length_measurement", "topic_vn": "Đo chiều dài",
+  "type": "fill_in", "difficulty": "medium",
+  "question_text": "Đổi đơn vị: 350 mm = ______ cm",
+  "options": None,
+  "correct_answer": "35",
+  "explanation": {"summary":"1 cm = 10 mm, nên 350 mm = 350 ÷ 10 = 35 cm.","key_concept":"1 cm = 10 mm."},
+  "thinking_guide": {
+    "understand": "Đổi 350 mm sang cm.",
+    "identify_knowledge": "1 cm = 10 mm → chia cho 10 để đổi mm sang cm.",
+    "plan": "Chia 350 cho 10.",
+    "steps": ["Bước 1: 1 cm = 10 mm.", "Bước 2: 350 mm = 350 ÷ 10 = 35 cm."],
+    "verify": "35 cm × 10 = 350 mm ✓",
+    "extend": "350 mm = 35 cm = 0,35 m = 0,00035 km.",
+    "common_traps": ["Nhầm nhân thay vì chia khi đổi từ đơn vị nhỏ sang đơn vị lớn."],
+    "hints": ["Đổi từ đơn vị nhỏ sang lớn → chia. Từ lớn sang nhỏ → nhân."]
+  },
+  "real_world_connection": "Quyển sách giáo khoa dài khoảng 260 mm = 26 cm.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_011", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "measurement_tools", "topic_vn": "Dụng cụ đo",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Em hãy giải thích tại sao khi đo thể tích chất lỏng bằng bình chia độ, phải đặt bình thẳng đứng và đọc mực chất lỏng tại vị trí ngang bằng mặt thoáng.",
+  "options": None,
+  "correct_answer": "Đặt bình thẳng đứng để mực chất lỏng ở trạng thái cân bằng, phân bố đều. Đọc ngang mặt thoáng để tránh sai số thị sai. Nếu bình nghiêng hoặc nhìn từ trên/dưới sẽ đọc sai giá trị.",
+  "explanation": {"summary":"Bình nghiêng làm mực chất lỏng không đều, không thể xác định chính xác. Nhìn từ trên xuống đọc lớn hơn, từ dưới lên đọc nhỏ hơn thực tế.","key_concept":"Đặt thẳng đứng + đọc ngang mặt thoáng = tránh sai số."},
+  "thinking_guide": {
+    "understand": "Tại sao cần 2 điều kiện: bình thẳng đứng và đọc ngang mặt thoáng?",
+    "identify_knowledge": "Chất lỏng tự cân bằng theo phương ngang. Sai số thị sai khi đọc.",
+    "plan": "Phân tích từng điều kiện và hậu quả nếu không tuân thủ.",
+    "steps": ["Bước 1: Bình thẳng đứng → mặt thoáng nằm ngang → đọc chính xác.", "Bước 2: Bình nghiêng → mặt thoáng ở các vạch khác nhau → không xác định được.", "Bước 3: Nhìn ngang → tránh sai số thị sai."],
+    "verify": "Thử nghiệm: nghiêng chai nước, mực nước không song song với vạch chia.",
+    "extend": "Với chất lỏng có mặt khum (nước trong ống nhỏ), đọc ở đáy mặt khum.",
+    "common_traps": ["Quên rằng mặt nước trong ống nhỏ bị cong (mặt khum)."],
+    "hints": ["Hãy tưởng tượng nghiêng chai nước có vạch chia - con đọc ở vạch nào?"]
+  },
+  "real_world_connection": "Khi đong nước bằng ca đo trong nhà bếp, mẹ thường đặt ca trên mặt phẳng và cúi nhìn ngang.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_measurement_012", "grade": 6, "chapter": "measurement",
+  "chapter_vn": "Các phép đo", "topic": "mass_measurement", "topic_vn": "Đo khối lượng",
+  "type": "multiple_choice", "difficulty": "hard",
+  "question_text": "Một học sinh cân 3 lần một vật và được kết quả: 150g, 152g, 148g. Giá trị trung bình khối lượng vật là bao nhiêu?",
+  "options": [{"key":"A","content":"148 g"},{"key":"B","content":"150 g"},{"key":"C","content":"151 g"},{"key":"D","content":"152 g"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Giá trị trung bình = (150 + 152 + 148) ÷ 3 = 450 ÷ 3 = 150g.","key_concept":"Đo nhiều lần và lấy trung bình để giảm sai số."},
+  "thinking_guide": {
+    "understand": "Tính giá trị trung bình của 3 lần đo.",
+    "identify_knowledge": "Trung bình cộng = tổng các giá trị ÷ số lần đo.",
+    "plan": "Cộng 3 giá trị rồi chia cho 3.",
+    "steps": ["Bước 1: Tổng = 150 + 152 + 148 = 450g.", "Bước 2: Trung bình = 450 ÷ 3 = 150g."],
+    "verify": "150g nằm giữa 148g và 152g → hợp lý.",
+    "extend": "Sai số tuyệt đối trung bình = (|150-150| + |152-150| + |148-150|) ÷ 3 ≈ 1,3g.",
+    "common_traps": ["Chọn giá trị xuất hiện nhiều nhất thay vì tính trung bình."],
+    "hints": ["Trung bình cộng = tổng ÷ số lần đo."]
+  },
+  "real_world_connection": "Trong phòng thí nghiệm, các nhà khoa học luôn đo nhiều lần và lấy trung bình để có kết quả chính xác hơn.",
+  "formula": "\\bar{m} = \\frac{m_1 + m_2 + m_3}{3}"
+})
+
+# ============================================================
+# CHAPTER 2: MASS & DENSITY (10 questions)
+# ============================================================
+questions.append({
+  "id": "phys6_mass_density_001", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "mass_concept", "topic_vn": "Khối lượng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Khối lượng của một vật cho biết điều gì?",
+  "options": [{"key":"A","content":"Vật nặng hay nhẹ"},{"key":"B","content":"Lượng chất tạo nên vật"},{"key":"C","content":"Kích thước của vật"},{"key":"D","content":"Vật chuyển động nhanh hay chậm"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Khối lượng cho biết lượng chất (lượng vật chất) chứa trong một vật.","key_concept":"Khối lượng = lượng chất tạo nên vật."},
+  "thinking_guide": {
+    "understand": "Khối lượng của vật có ý nghĩa gì?",
+    "identify_knowledge": "Khối lượng là đại lượng đo lượng chất chứa trong vật.",
+    "plan": "Phân tích từng phương án và loại trừ.",
+    "steps": ["Bước 1: 'Nặng nhẹ' → cảm giác chủ quan, không chính xác.", "Bước 2: 'Lượng chất' → đúng định nghĩa khối lượng.", "Bước 3: 'Kích thước' → đó là thể tích.", "Bước 4: 'Nhanh chậm' → đó là vận tốc."],
+    "verify": "Cục sắt nhỏ nặng hơn cục xốp lớn → khối lượng không phải kích thước.",
+    "extend": "Khối lượng không đổi khi đem vật lên Mặt Trăng, nhưng trọng lượng thay đổi.",
+    "common_traps": ["Nhầm 'nặng nhẹ' (cảm giác) với lượng chất (khoa học)."],
+    "hints": ["Khối lượng là tính chất riêng của vật, không phụ thuộc vị trí."]
+  },
+  "real_world_connection": "Một gói gạo 5kg chứa cùng lượng gạo dù ở Hà Nội hay TP.HCM.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_mass_density_002", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_concept", "topic_vn": "Khối lượng riêng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Khối lượng riêng của một chất là gì?",
+  "options": [{"key":"A","content":"Khối lượng của một vật"},{"key":"B","content":"Khối lượng của một đơn vị thể tích chất đó"},{"key":"C","content":"Thể tích của một đơn vị khối lượng"},{"key":"D","content":"Trọng lượng của một vật"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Khối lượng riêng (D) là khối lượng của một đơn vị thể tích (1 m³) của chất đó.","key_concept":"D = m/V, đơn vị kg/m³."},
+  "thinking_guide": {
+    "understand": "Khối lượng riêng được định nghĩa như thế nào?",
+    "identify_knowledge": "D = m/V: khối lượng chia cho thể tích.",
+    "plan": "Phân tích ý nghĩa công thức D = m/V.",
+    "steps": ["Bước 1: D = m/V nghĩa là khối lượng trên mỗi đơn vị thể tích.", "Bước 2: Ví dụ: D_nước = 1000 kg/m³ → 1m³ nước có khối lượng 1000kg."],
+    "verify": "Đáp án B nói 'khối lượng của một đơn vị thể tích' → đúng với D = m/V.",
+    "extend": "Mỗi chất có khối lượng riêng khác nhau: sắt 7800 kg/m³, nước 1000 kg/m³.",
+    "common_traps": ["Nhầm khối lượng riêng với khối lượng. Khối lượng riêng là đặc trưng cho chất, không phải cho vật."],
+    "hints": ["'Riêng' nghĩa là đặc trưng cho từng chất."]
+  },
+  "real_world_connection": "Sắt nặng hơn nhôm vì khối lượng riêng của sắt lớn hơn nhôm, dù cùng kích thước.",
+  "formula": "D = \\frac{m}{V}"
+})
+
+questions.append({
+  "id": "phys6_mass_density_003", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_calculation", "topic_vn": "Tính khối lượng riêng",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Một khối sắt có khối lượng 7800 g và thể tích 1000 cm³. Khối lượng riêng của sắt là bao nhiêu?",
+  "options": [{"key":"A","content":"7,8 g/cm³"},{"key":"B","content":"7800 g/cm³"},{"key":"C","content":"78 g/cm³"},{"key":"D","content":"0,78 g/cm³"}],
+  "correct_answer": "A",
+  "explanation": {"summary":"D = m/V = 7800/1000 = 7,8 g/cm³.","key_concept":"Áp dụng công thức D = m/V."},
+  "thinking_guide": {
+    "understand": "Cho m = 7800g, V = 1000 cm³. Tính D.",
+    "identify_knowledge": "Công thức: D = m/V.",
+    "plan": "Thay số vào công thức và tính.",
+    "steps": ["Bước 1: D = m/V = 7800g ÷ 1000cm³.", "Bước 2: D = 7,8 g/cm³."],
+    "verify": "7,8 × 1000 = 7800g ✓. So sánh: D_sắt ≈ 7800 kg/m³ = 7,8 g/cm³ ✓.",
+    "extend": "Đổi sang SI: 7,8 g/cm³ = 7800 kg/m³.",
+    "common_traps": ["Quên đổi đơn vị hoặc nhầm vị trí dấu phẩy."],
+    "hints": ["Chỉ cần chia m cho V, chú ý đơn vị."]
+  },
+  "real_world_connection": "Biết khối lượng riêng giúp phân biệt kim loại thật giả (vàng thật D = 19,3 g/cm³).",
+  "formula": "D = \\frac{m}{V} = \\frac{7800}{1000} = 7,8 \\text{ g/cm³}"
+})
+
+questions.append({
+  "id": "phys6_mass_density_004", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_calculation", "topic_vn": "Tính khối lượng riêng",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Khối lượng riêng của nước là 1000 kg/m³. Một bể nước hình hộp chữ nhật có kích thước 2m × 1m × 0,5m chứa đầy nước. Khối lượng nước trong bể là bao nhiêu?",
+  "options": [{"key":"A","content":"500 kg"},{"key":"B","content":"1000 kg"},{"key":"C","content":"2000 kg"},{"key":"D","content":"100 kg"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"V = 2 × 1 × 0,5 = 1 m³. m = D × V = 1000 × 1 = 1000 kg.","key_concept":"m = D × V."},
+  "thinking_guide": {
+    "understand": "Tìm khối lượng nước trong bể, biết D và kích thước bể.",
+    "identify_knowledge": "V = dài × rộng × cao. m = D × V.",
+    "plan": "Tính thể tích bể trước, rồi tính khối lượng.",
+    "steps": ["Bước 1: V = 2 × 1 × 0,5 = 1 m³.", "Bước 2: m = D × V = 1000 × 1 = 1000 kg."],
+    "verify": "1 m³ nước = 1000 lít = 1000 kg → hợp lý.",
+    "extend": "1000 kg = 1 tấn nước. Bể nước gia đình thường chứa vài trăm lít.",
+    "common_traps": ["Quên tính thể tích trước, hoặc nhân sai kích thước."],
+    "hints": ["Tính V trước, rồi dùng m = D × V."]
+  },
+  "real_world_connection": "Bể nước trên sân thượng nhà thường chứa 500-2000 lít nước.",
+  "formula": "m = D \\times V = 1000 \\times (2 \\times 1 \\times 0,5) = 1000 \\text{ kg}"
+})
+
+questions.append({
+  "id": "phys6_mass_density_005", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_comparison", "topic_vn": "So sánh khối lượng riêng",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Một vật nổi trên nước (D_nước = 1000 kg/m³). Khối lượng riêng của vật có thể là:",
+  "options": [{"key":"A","content":"1200 kg/m³"},{"key":"B","content":"1000 kg/m³"},{"key":"C","content":"800 kg/m³"},{"key":"D","content":"1500 kg/m³"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Vật nổi khi khối lượng riêng của vật nhỏ hơn khối lượng riêng của chất lỏng. 800 < 1000 → nổi.","key_concept":"D_vật < D_chất lỏng → vật nổi."},
+  "thinking_guide": {
+    "understand": "Vật nổi trên nước, tìm khối lượng riêng phù hợp.",
+    "identify_knowledge": "Vật nổi khi D_vật < D_nước. Vật chìm khi D_vật > D_nước.",
+    "plan": "So sánh từng đáp án với D_nước = 1000 kg/m³.",
+    "steps": ["Bước 1: Vật nổi → D_vật < 1000 kg/m³.", "Bước 2: Chỉ có 800 kg/m³ < 1000 kg/m³ → đáp án C."],
+    "verify": "Gỗ (D ≈ 600-800 kg/m³) nổi trên nước ✓.",
+    "extend": "Tàu thép nổi được nhờ khoang rỗng làm D trung bình < D nước.",
+    "common_traps": ["Nhầm: nặng hơn thì chìm → sai, phải so D chứ không phải m."],
+    "hints": ["So sánh D_vật với D_nước: nhỏ hơn → nổi."]
+  },
+  "real_world_connection": "Gỗ, xốp nổi trên nước vì có khối lượng riêng nhỏ hơn nước.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_mass_density_006", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_calculation", "topic_vn": "Tính khối lượng riêng",
+  "type": "fill_in", "difficulty": "medium",
+  "question_text": "Một viên gạch có khối lượng 1,6 kg và thể tích 0,001 m³. Khối lượng riêng của gạch là ______ kg/m³.",
+  "options": None,
+  "correct_answer": "1600",
+  "explanation": {"summary":"D = m/V = 1,6/0,001 = 1600 kg/m³.","key_concept":"D = m/V."},
+  "thinking_guide": {
+    "understand": "Cho m = 1,6 kg, V = 0,001 m³. Tìm D.",
+    "identify_knowledge": "D = m/V.",
+    "plan": "Thay số tính toán.",
+    "steps": ["Bước 1: D = m/V = 1,6 ÷ 0,001.", "Bước 2: D = 1600 kg/m³."],
+    "verify": "1600 × 0,001 = 1,6 kg ✓. Gạch có D ≈ 1500-1800 kg/m³ → hợp lý.",
+    "extend": "So sánh: D_gạch = 1600 > D_nước = 1000 → gạch chìm trong nước.",
+    "common_traps": ["Chia sai: 1,6 ÷ 0,001 = 1600 (không phải 0,0016)."],
+    "hints": ["Chia cho 0,001 tức là nhân với 1000."]
+  },
+  "real_world_connection": "Gạch xây nhà có khối lượng riêng khác nhau: gạch đặc nặng hơn gạch rỗng.",
+  "formula": "D = \\frac{m}{V} = \\frac{1,6}{0,001} = 1600 \\text{ kg/m³}"
+})
+
+questions.append({
+  "id": "phys6_mass_density_007", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_concept", "topic_vn": "Khối lượng riêng",
+  "type": "true_false", "difficulty": "easy",
+  "question_text": "Khối lượng riêng của một chất phụ thuộc vào khối lượng và thể tích của vật làm bằng chất đó.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Khối lượng riêng là đặc trưng cho chất, không phụ thuộc vào khối lượng hay thể tích của vật cụ thể. Mọi vật làm bằng sắt đều có D = 7800 kg/m³.","key_concept":"D là hằng số đặc trưng cho mỗi chất, không đổi."},
+  "thinking_guide": {
+    "understand": "D có phụ thuộc vào m và V của từng vật không?",
+    "identify_knowledge": "D là đặc trưng cho chất liệu, không thay đổi khi thay đổi kích thước vật.",
+    "plan": "Lấy ví dụ cụ thể để kiểm chứng.",
+    "steps": ["Bước 1: Cục sắt 1kg có D = 7800 kg/m³.", "Bước 2: Cục sắt 10kg cũng có D = 7800 kg/m³.", "Bước 3: → D không phụ thuộc m hay V → Sai."],
+    "verify": "D = m/V, khi m tăng thì V cũng tăng tỉ lệ → D không đổi.",
+    "extend": "D chỉ thay đổi khi thay đổi nhiệt độ hoặc áp suất (kiến thức nâng cao).",
+    "common_traps": ["Vì công thức D = m/V nên tưởng D phụ thuộc m, V."],
+    "hints": ["Hãy nghĩ: cắt đôi cục sắt, m giảm nửa, V giảm nửa, D có đổi không?"]
+  },
+  "real_world_connection": "Dù mua 1 lạng hay 1 kg vàng, khối lượng riêng vàng vẫn là 19300 kg/m³.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_mass_density_008", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "mass_concept", "topic_vn": "Khối lượng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "1 tấn bằng bao nhiêu kilôgam?",
+  "options": [{"key":"A","content":"10 kg"},{"key":"B","content":"100 kg"},{"key":"C","content":"1000 kg"},{"key":"D","content":"10000 kg"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"1 tấn = 1000 kg.","key_concept":"1 tấn = 1000 kg = 1.000.000 g."},
+  "thinking_guide": {
+    "understand": "Đổi đơn vị: 1 tấn = ? kg.",
+    "identify_knowledge": "Bảng đổi đơn vị khối lượng.",
+    "plan": "Nhớ lại quy tắc đổi đơn vị.",
+    "steps": ["Bước 1: 1 tấn = 10 tạ.", "Bước 2: 1 tạ = 100 kg.", "Bước 3: 1 tấn = 10 × 100 = 1000 kg."],
+    "verify": "Xe ô tô nặng khoảng 1-2 tấn = 1000-2000 kg → hợp lý.",
+    "extend": "1 tấn = 1000 kg, 1 kg = 1000 g, 1 g = 1000 mg.",
+    "common_traps": ["Nhầm 1 tấn = 100 kg (đó là 1 tạ)."],
+    "hints": ["Tấn → tạ → yến → kg: mỗi bậc nhân 10."]
+  },
+  "real_world_connection": "Xe tải nhỏ chở được khoảng 1-2 tấn hàng hóa.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_mass_density_009", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_calculation", "topic_vn": "Tính khối lượng riêng",
+  "type": "fill_in", "difficulty": "hard",
+  "question_text": "Một khối nhôm có khối lượng 5,4 kg và thể tích 2000 cm³. Khối lượng riêng của nhôm là ______ kg/m³.",
+  "options": None,
+  "correct_answer": "2700",
+  "explanation": {"summary":"Đổi V = 2000 cm³ = 0,002 m³. D = m/V = 5,4/0,002 = 2700 kg/m³.","key_concept":"Phải đổi đơn vị về cùng hệ trước khi tính."},
+  "thinking_guide": {
+    "understand": "Cho m = 5,4 kg, V = 2000 cm³. Tìm D theo kg/m³.",
+    "identify_knowledge": "D = m/V. Cần đổi cm³ sang m³.",
+    "plan": "Đổi đơn vị V, rồi tính D.",
+    "steps": ["Bước 1: 1 m³ = 1.000.000 cm³.", "Bước 2: V = 2000 cm³ = 2000/1000000 = 0,002 m³.", "Bước 3: D = 5,4/0,002 = 2700 kg/m³."],
+    "verify": "D_nhôm = 2700 kg/m³ → đúng với giá trị tra bảng.",
+    "extend": "Nhôm nhẹ hơn sắt (7800) nên được dùng làm vỏ máy bay.",
+    "common_traps": ["Quên đổi cm³ sang m³, hoặc đổi sai (1m³ ≠ 100 cm³)."],
+    "hints": ["1m = 100cm → 1m³ = 100³ cm³ = 1.000.000 cm³."]
+  },
+  "real_world_connection": "Nhôm nhẹ và bền nên được dùng làm nồi, chảo, khung cửa.",
+  "formula": "D = \\frac{m}{V} = \\frac{5,4}{0,002} = 2700 \\text{ kg/m³}"
+})
+
+questions.append({
+  "id": "phys6_mass_density_010", "grade": 6, "chapter": "mass_density",
+  "chapter_vn": "Khối lượng riêng", "topic": "density_comparison", "topic_vn": "So sánh khối lượng riêng",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Tại sao tàu thủy làm bằng thép (D = 7800 kg/m³) lại có thể nổi trên nước (D = 1000 kg/m³)?",
+  "options": None,
+  "correct_answer": "Tàu thủy có cấu tạo rỗng bên trong (khoang chứa không khí), nên khối lượng riêng trung bình của toàn bộ tàu nhỏ hơn khối lượng riêng của nước.",
+  "explanation": {"summary":"Tuy vỏ tàu bằng thép có D lớn, nhưng bên trong tàu có nhiều khoang rỗng chứa không khí (D ≈ 1,2 kg/m³). Khối lượng riêng trung bình của toàn bộ tàu < 1000 kg/m³ nên tàu nổi.","key_concept":"D trung bình của hệ thống quyết định nổi/chìm, không phải D vật liệu."},
+  "thinking_guide": {
+    "understand": "Thép nặng hơn nước nhưng tàu thép vẫn nổi. Tại sao?",
+    "identify_knowledge": "Điều kiện nổi: D_trung bình < D_nước. Không khí có D rất nhỏ.",
+    "plan": "Phân tích cấu tạo tàu và tính D trung bình.",
+    "steps": ["Bước 1: Tàu gồm vỏ thép + khoang rỗng chứa không khí.", "Bước 2: D_không khí ≈ 1,2 kg/m³ << D_nước.", "Bước 3: D_trung bình = m_tổng/V_tổng < 1000 → nổi."],
+    "verify": "Nếu đập bẹp tàu (mất khoang rỗng), nó sẽ chìm → đúng.",
+    "extend": "Tàu ngầm thay đổi D bằng cách bơm nước vào/ra khoang.",
+    "common_traps": ["Nghĩ rằng D_thép > D_nước thì mọi vật bằng thép đều chìm."],
+    "hints": ["Hãy nghĩ về tổng thể tàu (thép + không khí), không chỉ vỏ thép."]
+  },
+  "real_world_connection": "Tàu container tại cảng Hải Phòng nặng hàng nghìn tấn nhưng vẫn nổi nhờ thiết kế khoang rỗng.",
+  "formula": "D_{tb} = \\frac{m_{thép} + m_{kk}}{V_{tổng}} < D_{nước}"
+})
+
+# ============================================================
+# CHAPTER 3: FORCE BASICS (12 questions)
+# ============================================================
+questions.append({
+  "id": "phys6_force_basics_001", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "force_effects", "topic_vn": "Tác dụng của lực",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Lực tác dụng lên một vật có thể gây ra những kết quả nào?",
+  "options": [{"key":"A","content":"Chỉ làm vật biến dạng"},{"key":"B","content":"Chỉ làm thay đổi chuyển động của vật"},{"key":"C","content":"Làm vật biến dạng hoặc thay đổi chuyển động, hoặc cả hai"},{"key":"D","content":"Không gây ra kết quả gì"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Lực có thể làm vật biến dạng (ép lon), thay đổi chuyển động (đá bóng), hoặc cả hai cùng lúc.","key_concept":"Lực gây ra 2 tác dụng: biến dạng và thay đổi chuyển động."},
+  "thinking_guide": {
+    "understand": "Lực tác dụng lên vật gây ra kết quả gì?",
+    "identify_knowledge": "Hai tác dụng của lực: biến dạng + thay đổi chuyển động.",
+    "plan": "Lấy ví dụ cho từng tác dụng.",
+    "steps": ["Bước 1: Bóp lon → biến dạng.", "Bước 2: Đẩy xe → thay đổi chuyển động.", "Bước 3: Đá bóng → vừa biến dạng vừa bay đi."],
+    "verify": "Đáp án C bao gồm cả hai khả năng → đầy đủ nhất.",
+    "extend": "Lực cũng có thể không làm gì nếu bị cân bằng bởi lực khác.",
+    "common_traps": ["Chỉ nghĩ đến một tác dụng, quên tác dụng còn lại."],
+    "hints": ["Nghĩ đến việc đá quả bóng: bóng vừa bẹp vừa bay."]
+  },
+  "real_world_connection": "Khi con đá quả bóng, chân tác dụng lực làm bóng biến dạng (bẹp nhẹ) rồi bay đi (thay đổi chuyển động).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_002", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "contact_force", "topic_vn": "Lực tiếp xúc",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Lực nào sau đây là lực tiếp xúc?",
+  "options": [{"key":"A","content":"Lực hút của Trái Đất"},{"key":"B","content":"Lực hút của nam châm (ở xa)"},{"key":"C","content":"Lực ma sát"},{"key":"D","content":"Lực hấp dẫn giữa Mặt Trời và Trái Đất"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Lực ma sát là lực tiếp xúc vì chỉ xuất hiện khi hai bề mặt tiếp xúc nhau. Các lực còn lại là lực không tiếp xúc.","key_concept":"Lực tiếp xúc: hai vật phải chạm nhau. Lực không tiếp xúc: tác dụng từ xa."},
+  "thinking_guide": {
+    "understand": "Xác định lực nào cần hai vật tiếp xúc nhau.",
+    "identify_knowledge": "Lực tiếp xúc: ma sát, lực đẩy/kéo, phản lực. Lực không tiếp xúc: trọng lực, từ lực, lực hấp dẫn.",
+    "plan": "Kiểm tra từng đáp án xem có cần tiếp xúc không.",
+    "steps": ["Bước 1: Lực hút Trái Đất → tác dụng từ xa → không tiếp xúc.", "Bước 2: Lực nam châm → hút từ xa → không tiếp xúc.", "Bước 3: Lực ma sát → cần 2 mặt chạm nhau → tiếp xúc ✓.", "Bước 4: Lực hấp dẫn → tác dụng từ xa."],
+    "verify": "Ma sát chỉ xuất hiện khi kéo/đẩy vật trên mặt bàn → phải tiếp xúc ✓.",
+    "extend": "Lực đàn hồi (lò xo) cũng là lực tiếp xúc.",
+    "common_traps": ["Nhầm lực nam châm là tiếp xúc vì nam châm hút từ gần."],
+    "hints": ["Tiếp xúc = chạm nhau. Lực nào chỉ xuất hiện khi hai vật chạm nhau?"]
+  },
+  "real_world_connection": "Lực ma sát giữa giày và sàn nhà giúp con đi lại mà không bị trượt.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_003", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "gravity", "topic_vn": "Trọng lực",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Trọng lực là gì?",
+  "options": [{"key":"A","content":"Lực đẩy của mặt đất lên vật"},{"key":"B","content":"Lực hút của Trái Đất tác dụng lên vật"},{"key":"C","content":"Lực ma sát giữa vật và Trái Đất"},{"key":"D","content":"Lực do con người tác dụng lên vật"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Trọng lực là lực hút của Trái Đất tác dụng lên mọi vật, có phương thẳng đứng, chiều hướng về tâm Trái Đất.","key_concept":"Trọng lực = lực hút Trái Đất, phương thẳng đứng, chiều từ trên xuống."},
+  "thinking_guide": {
+    "understand": "Định nghĩa trọng lực.",
+    "identify_knowledge": "Trọng lực là lực hấp dẫn của Trái Đất lên vật.",
+    "plan": "Nhớ lại định nghĩa và đặc điểm của trọng lực.",
+    "steps": ["Bước 1: Trọng lực do Trái Đất gây ra.", "Bước 2: Tác dụng lên mọi vật có khối lượng.", "Bước 3: Hướng xuống (về tâm Trái Đất)."],
+    "verify": "Thả vật → rơi xuống → do trọng lực hút xuống ✓.",
+    "extend": "Trọng lượng P = m × g (g ≈ 10 N/kg trên Trái Đất).",
+    "common_traps": ["Nhầm trọng lực với lực phản lực (lực đẩy mặt đất lên vật)."],
+    "hints": ["Trọng = nặng, lực = sức hút. Trọng lực = lực làm vật 'nặng'."]
+  },
+  "real_world_connection": "Khi thả viên phấn, nó rơi xuống đất vì trọng lực kéo nó xuống.",
+  "formula": "P = m \\times g \\quad (g \\approx 10 \\text{ N/kg})"
+})
+
+questions.append({
+  "id": "phys6_force_basics_004", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "friction", "topic_vn": "Lực ma sát",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Trong các trường hợp sau, trường hợp nào lực ma sát có ích?",
+  "options": [{"key":"A","content":"Ma sát làm mòn lốp xe"},{"key":"B","content":"Ma sát giữa giày và sàn giúp đi lại"},{"key":"C","content":"Ma sát làm nóng máy"},{"key":"D","content":"Ma sát cản trở chuyển động xe đạp"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Ma sát giữa giày và sàn giúp ta đi lại mà không bị trượt. Đây là ma sát có ích.","key_concept":"Ma sát có ích: giúp đi lại, phanh xe, cầm nắm đồ vật."},
+  "thinking_guide": {
+    "understand": "Xác định trường hợp ma sát có lợi.",
+    "identify_knowledge": "Ma sát có ích khi giúp thực hiện hoạt động. Ma sát có hại khi cản trở, làm hỏng.",
+    "plan": "Phân tích từng đáp án: lợi hay hại?",
+    "steps": ["Bước 1: Mòn lốp xe → hại.", "Bước 2: Đi lại không trượt → ích ✓.", "Bước 3: Nóng máy → hại.", "Bước 4: Cản xe đạp → hại."],
+    "verify": "Nếu không có ma sát giày-sàn, ta sẽ trượt như trên băng → ma sát này rất cần.",
+    "extend": "Phanh xe cũng dùng ma sát có ích để dừng xe.",
+    "common_traps": ["Nghĩ mọi ma sát đều có hại."],
+    "hints": ["Ma sát có ích = giúp ta làm việc gì đó tốt hơn."]
+  },
+  "real_world_connection": "Khi trời mưa, sàn trơn → ít ma sát → dễ trượt ngã.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_005", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "elastic_force", "topic_vn": "Lực đàn hồi",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Lực đàn hồi xuất hiện khi nào?",
+  "options": [{"key":"A","content":"Khi vật đứng yên trên mặt bàn"},{"key":"B","content":"Khi vật rơi tự do"},{"key":"C","content":"Khi lò xo bị nén hoặc kéo dãn"},{"key":"D","content":"Khi vật chuyển động đều"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Lực đàn hồi xuất hiện khi vật đàn hồi (lò xo, dây cao su) bị biến dạng (nén hoặc kéo dãn), có xu hướng đưa vật về hình dạng ban đầu.","key_concept":"Lực đàn hồi xuất hiện khi vật bị biến dạng đàn hồi."},
+  "thinking_guide": {
+    "understand": "Điều kiện xuất hiện lực đàn hồi.",
+    "identify_knowledge": "Lực đàn hồi xuất hiện ở vật đàn hồi bị biến dạng.",
+    "plan": "Tìm đáp án có vật bị biến dạng đàn hồi.",
+    "steps": ["Bước 1: Vật trên bàn → có trọng lực và phản lực, không nhất thiết có đàn hồi rõ ràng.", "Bước 2: Rơi tự do → chỉ có trọng lực.", "Bước 3: Lò xo nén/dãn → biến dạng đàn hồi → có lực đàn hồi ✓.", "Bước 4: Chuyển động đều → không liên quan."],
+    "verify": "Kéo dãn lò xo rồi thả → lò xo co lại → do lực đàn hồi ✓.",
+    "extend": "Lực đàn hồi tỉ lệ với độ biến dạng (định luật Hooke ở lớp cao hơn).",
+    "common_traps": ["Nhầm: vật trên bàn có lực đàn hồi từ mặt bàn → đúng nhưng không rõ ràng bằng lò xo."],
+    "hints": ["Đàn hồi = biến dạng rồi trở lại. Khi nào có biến dạng?"]
+  },
+  "real_world_connection": "Dây chun (dây thun) khi kéo dãn sẽ có lực đàn hồi kéo trở lại.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_006", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "gravity", "topic_vn": "Trọng lực",
+  "type": "fill_in", "difficulty": "medium",
+  "question_text": "Một vật có khối lượng 5 kg. Trọng lượng của vật là ______ N. (Lấy g = 10 N/kg)",
+  "options": None,
+  "correct_answer": "50",
+  "explanation": {"summary":"P = m × g = 5 × 10 = 50 N.","key_concept":"P = m × g."},
+  "thinking_guide": {
+    "understand": "Cho m = 5 kg, g = 10 N/kg. Tính P.",
+    "identify_knowledge": "Công thức trọng lượng: P = m × g.",
+    "plan": "Thay số vào công thức.",
+    "steps": ["Bước 1: P = m × g.", "Bước 2: P = 5 × 10 = 50 N."],
+    "verify": "1 kg có trọng lượng 10 N → 5 kg có 50 N ✓.",
+    "extend": "Trên Mặt Trăng, g ≈ 1,6 N/kg → P = 5 × 1,6 = 8 N.",
+    "common_traps": ["Nhầm đơn vị: trọng lượng đo bằng N (Niutơn), không phải kg."],
+    "hints": ["P (N) = m (kg) × 10."]
+  },
+  "real_world_connection": "Quả tạ 5 kg trong phòng tập kéo tay con xuống với lực 50 N.",
+  "formula": "P = m \\times g = 5 \\times 10 = 50 \\text{ N}"
+})
+
+questions.append({
+  "id": "phys6_force_basics_007", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "non_contact_force", "topic_vn": "Lực không tiếp xúc",
+  "type": "true_false", "difficulty": "easy",
+  "question_text": "Lực hút của nam châm lên miếng sắt là lực tiếp xúc.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Lực hút nam châm là lực không tiếp xúc vì nam châm có thể hút sắt mà không cần chạm vào.","key_concept":"Lực từ (nam châm) là lực không tiếp xúc."},
+  "thinking_guide": {
+    "understand": "Lực nam châm hút sắt là tiếp xúc hay không tiếp xúc?",
+    "identify_knowledge": "Lực không tiếp xúc = tác dụng từ xa, không cần chạm.",
+    "plan": "Kiểm tra: nam châm có cần chạm vào sắt không?",
+    "steps": ["Bước 1: Đưa nam châm lại gần sắt → sắt bị hút khi chưa chạm.", "Bước 2: → Lực tác dụng từ xa → không tiếp xúc.", "Bước 3: → Đề nói 'tiếp xúc' → Sai."],
+    "verify": "Thí nghiệm: để giấy giữa nam châm và sắt → vẫn hút qua giấy ✓.",
+    "extend": "Trọng lực cũng là lực không tiếp xúc (Trái Đất hút ta mà không chạm).",
+    "common_traps": ["Vì nam châm thường để gần sắt nên tưởng là tiếp xúc."],
+    "hints": ["Nếu bỏ nam châm cách sắt 1cm, sắt có bị hút không?"]
+  },
+  "real_world_connection": "Nam châm trên cửa tủ lạnh hút giữ giấy note mà không cần chạm trực tiếp giấy.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_008", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "friction", "topic_vn": "Lực ma sát",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Có mấy loại lực ma sát?",
+  "options": [{"key":"A","content":"1 loại"},{"key":"B","content":"2 loại"},{"key":"C","content":"3 loại"},{"key":"D","content":"4 loại"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Có 3 loại lực ma sát: ma sát trượt, ma sát lăn và ma sát nghỉ.","key_concept":"3 loại: ma sát trượt, ma sát lăn, ma sát nghỉ."},
+  "thinking_guide": {
+    "understand": "Có bao nhiêu loại ma sát?",
+    "identify_knowledge": "Ma sát trượt, ma sát lăn, ma sát nghỉ.",
+    "plan": "Nhớ lại phân loại lực ma sát.",
+    "steps": ["Bước 1: Ma sát trượt - khi vật trượt (kéo hộp trên sàn).", "Bước 2: Ma sát lăn - khi vật lăn (bánh xe lăn).", "Bước 3: Ma sát nghỉ - giữ vật đứng yên (sách trên mặt nghiêng)."],
+    "verify": "Trượt, lăn, nghỉ → 3 loại ✓.",
+    "extend": "Ma sát lăn nhỏ hơn ma sát trượt → nên dùng bánh xe thay vì kéo lê.",
+    "common_traps": ["Quên ma sát nghỉ vì vật đứng yên nên tưởng không có ma sát."],
+    "hints": ["Trượt, lăn, nghỉ = 3 từ khóa."]
+  },
+  "real_world_connection": "Kéo va li có bánh xe (ma sát lăn) nhẹ hơn nhiều so với kéo lê trên sàn (ma sát trượt).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_009", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "force_effects", "topic_vn": "Tác dụng của lực",
+  "type": "fill_in", "difficulty": "hard",
+  "question_text": "Một vật có khối lượng 3,5 kg. Trọng lượng của vật là ______ N. (Lấy g = 10 N/kg)",
+  "options": None,
+  "correct_answer": "35",
+  "explanation": {"summary":"P = m × g = 3,5 × 10 = 35 N.","key_concept":"P = m × g."},
+  "thinking_guide": {
+    "understand": "Cho m = 3,5 kg. Tính P.",
+    "identify_knowledge": "P = m × g, g = 10 N/kg.",
+    "plan": "Thay số tính.",
+    "steps": ["Bước 1: P = 3,5 × 10.", "Bước 2: P = 35 N."],
+    "verify": "3,5 kg → gần 4 kg → P gần 40 N. 35 N hợp lý.",
+    "extend": "Ngược lại: biết P = 60 N → m = P/g = 60/10 = 6 kg.",
+    "common_traps": ["Nhầm: 3,5 × 10 = 350 (sai vì 3,5 × 10 = 35)."],
+    "hints": ["Nhân số thập phân: chuyển dấu phẩy sang phải 1 chữ số."]
+  },
+  "real_world_connection": "Một bịch gạo 3,5 kg tạo lực kéo tay con xuống khoảng 35 N.",
+  "formula": "P = m \\times g = 3,5 \\times 10 = 35 \\text{ N}"
+})
+
+questions.append({
+  "id": "phys6_force_basics_010", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "friction", "topic_vn": "Lực ma sát",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Tại sao khi trời mưa, đường trơn, xe ô tô cần phải giảm tốc độ và giữ khoảng cách xa hơn với xe phía trước?",
+  "options": None,
+  "correct_answer": "Khi trời mưa, nước làm giảm lực ma sát giữa lốp xe và mặt đường. Ma sát nhỏ hơn nên xe khó phanh gấp, quãng đường phanh dài hơn, dễ bị trượt. Cần giảm tốc và giữ khoảng cách để có đủ quãng đường phanh an toàn.",
+  "explanation": {"summary":"Nước mưa tạo lớp bôi trơn giữa lốp và đường, giảm hệ số ma sát → lực phanh giảm → quãng đường phanh tăng → cần giảm tốc và giữ khoảng cách.","key_concept":"Nước giảm ma sát → giảm khả năng phanh."},
+  "thinking_guide": {
+    "understand": "Tại sao trời mưa phải lái xe chậm hơn, xa hơn xe trước?",
+    "identify_knowledge": "Ma sát phụ thuộc bề mặt tiếp xúc. Nước làm trơn → giảm ma sát.",
+    "plan": "Phân tích: mưa → trơn → ma sát giảm → hệ quả gì?",
+    "steps": ["Bước 1: Mưa → nước trên đường → bề mặt trơn.", "Bước 2: Ma sát lốp-đường giảm → phanh kém hiệu quả.", "Bước 3: Quãng đường phanh dài hơn → cần khoảng cách xa hơn.", "Bước 4: Giảm tốc → giảm quán tính → dễ dừng hơn."],
+    "verify": "Thực tế: báo đài luôn cảnh báo lái xe chậm khi mưa → đúng.",
+    "extend": "Lốp xe có gai/rãnh để thoát nước, tăng ma sát khi mưa.",
+    "common_traps": ["Chỉ nói 'đường trơn' mà không giải thích cơ chế ma sát."],
+    "hints": ["Nước đóng vai trò như chất bôi trơn giữa hai bề mặt."]
+  },
+  "real_world_connection": "Biển báo 'Đường trơn khi mưa' thường đặt ở các đoạn đường nguy hiểm.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_011", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "elastic_force", "topic_vn": "Lực đàn hồi",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Khi treo vật nặng vào lò xo, lò xo dãn ra. Lực đàn hồi của lò xo có đặc điểm nào?",
+  "options": [{"key":"A","content":"Cùng chiều với trọng lực"},{"key":"B","content":"Ngược chiều với trọng lực"},{"key":"C","content":"Vuông góc với trọng lực"},{"key":"D","content":"Không có hướng nhất định"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Lực đàn hồi có xu hướng đưa lò xo về hình dạng ban đầu → kéo lên → ngược chiều trọng lực (kéo xuống).","key_concept":"Lực đàn hồi ngược chiều biến dạng."},
+  "thinking_guide": {
+    "understand": "Treo vật vào lò xo, lò xo dãn xuống. Lực đàn hồi hướng nào?",
+    "identify_knowledge": "Lực đàn hồi luôn ngược chiều biến dạng, kéo vật về vị trí cân bằng.",
+    "plan": "Phân tích: lò xo dãn xuống → lực đàn hồi kéo lên.",
+    "steps": ["Bước 1: Trọng lực kéo vật xuống → lò xo dãn ra.", "Bước 2: Lực đàn hồi chống lại sự dãn → hướng lên.", "Bước 3: Lên ↑ ngược chiều xuống ↓ → ngược chiều trọng lực."],
+    "verify": "Khi cân bằng: lực đàn hồi = trọng lực, ngược chiều → đúng.",
+    "extend": "Đây là nguyên lý hoạt động của lực kế lò xo.",
+    "common_traps": ["Nhầm: lò xo dãn xuống nên lực đàn hồi cũng hướng xuống."],
+    "hints": ["Lực đàn hồi luôn 'chống lại' sự biến dạng."]
+  },
+  "real_world_connection": "Cân treo (cân lò xo) hoạt động dựa trên lực đàn hồi cân bằng trọng lực.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_force_basics_012", "grade": 6, "chapter": "force_basics",
+  "chapter_vn": "Lực cơ bản", "topic": "force_effects", "topic_vn": "Tác dụng của lực",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Tại sao khi muốn dừng xe đạp, con phải bóp phanh? Giải thích bằng kiến thức về lực.",
+  "options": None,
+  "correct_answer": "Bóp phanh tạo ra lực ma sát giữa má phanh và vành bánh xe. Lực ma sát này ngược chiều chuyển động, làm bánh xe quay chậm lại rồi dừng hẳn. Lực ma sát đã làm thay đổi chuyển động của xe.",
+  "explanation": {"summary":"Phanh xe tạo lực ma sát trượt giữa má phanh và vành xe, cản trở chuyển động quay → xe chậm lại → dừng.","key_concept":"Phanh tạo ma sát → cản chuyển động → xe dừng."},
+  "thinking_guide": {
+    "understand": "Bóp phanh → xe dừng. Giải thích cơ chế bằng kiến thức về lực.",
+    "identify_knowledge": "Lực ma sát cản trở chuyển động. Lực làm thay đổi chuyển động.",
+    "plan": "Mô tả quá trình: bóp phanh → ma sát → thay đổi chuyển động.",
+    "steps": ["Bước 1: Bóp phanh → má phanh ép vào vành xe.", "Bước 2: Sinh ra lực ma sát trượt giữa má phanh và vành.", "Bước 3: Ma sát ngược chiều quay → bánh xe chậm lại.", "Bước 4: Xe giảm tốc rồi dừng."],
+    "verify": "Nếu phanh hỏng (không có ma sát), xe không dừng được → đúng vai trò ma sát.",
+    "extend": "Phanh đĩa xe máy cũng hoạt động theo nguyên lý tương tự.",
+    "common_traps": ["Nói chung chung 'phanh làm xe dừng' mà không giải thích lực ma sát."],
+    "hints": ["Bóp phanh = ép hai bề mặt vào nhau. Khi hai bề mặt chạm nhau có lực gì?"]
+  },
+  "real_world_connection": "Phanh xe đạp mòn dần theo thời gian, cần thay má phanh để đảm bảo an toàn.",
+  "formula": ""
+})
+
+# ============================================================
+# CHAPTER 4: MOTION BASICS (12 questions)
+# ============================================================
+questions.append({
+  "id": "phys6_motion_basics_001", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "motion_description", "topic_vn": "Mô tả chuyển động",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Một vật được coi là chuyển động khi:",
+  "options": [{"key":"A","content":"Vật đó nặng"},{"key":"B","content":"Vị trí của vật thay đổi so với vật mốc theo thời gian"},{"key":"C","content":"Vật đó có hình dạng thay đổi"},{"key":"D","content":"Vật đó có màu sắc thay đổi"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Một vật chuyển động khi vị trí của nó thay đổi so với vật mốc (vật được chọn làm chuẩn) theo thời gian.","key_concept":"Chuyển động = thay đổi vị trí so với vật mốc."},
+  "thinking_guide": {
+    "understand": "Khi nào ta nói một vật đang chuyển động?",
+    "identify_knowledge": "Định nghĩa chuyển động cơ học: thay đổi vị trí so với vật mốc.",
+    "plan": "Chọn đáp án liên quan đến vị trí và vật mốc.",
+    "steps": ["Bước 1: Chuyển động = thay đổi vị trí.", "Bước 2: Phải so với một vật mốc (chuẩn).", "Bước 3: Đáp án B nói đúng cả hai ý."],
+    "verify": "Xe chạy trên đường: vị trí xe thay đổi so với cây bên đường → chuyển động ✓.",
+    "extend": "Nếu vật không thay đổi vị trí so với vật mốc → đứng yên.",
+    "common_traps": ["Quên 'so với vật mốc' - chuyển động luôn cần vật mốc để so sánh."],
+    "hints": ["Chuyển động = di chuyển = thay đổi vị trí."]
+  },
+  "real_world_connection": "Con ngồi trên xe buýt: so với ghế ngồi thì con đứng yên, so với cây bên đường thì con đang chuyển động.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_motion_basics_002", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "relative_motion", "topic_vn": "Tính tương đối của chuyển động",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Một hành khách ngồi trên tàu hỏa đang chạy. Hành khách đó đang chuyển động so với vật mốc nào?",
+  "options": [{"key":"A","content":"Ghế ngồi trên tàu"},{"key":"B","content":"Toa tàu"},{"key":"C","content":"Hành khách ngồi cạnh"},{"key":"D","content":"Nhà ga"}],
+  "correct_answer": "D",
+  "explanation": {"summary":"So với nhà ga (đứng yên trên mặt đất), hành khách thay đổi vị trí → chuyển động. So với ghế, toa tàu, người ngồi cạnh → không đổi vị trí → đứng yên.","key_concept":"Tính tương đối: cùng một vật, có thể đứng yên hoặc chuyển động tùy vật mốc."},
+  "thinking_guide": {
+    "understand": "Hành khách trên tàu chuyển động so với vật mốc nào?",
+    "identify_knowledge": "Chuyển động có tính tương đối - phụ thuộc vật mốc.",
+    "plan": "Kiểm tra từng vật mốc: vị trí hành khách có thay đổi không?",
+    "steps": ["Bước 1: So với ghế → không đổi vị trí → đứng yên.", "Bước 2: So với toa tàu → không đổi → đứng yên.", "Bước 3: So với người cạnh → không đổi → đứng yên.", "Bước 4: So với nhà ga → vị trí thay đổi → chuyển động ✓."],
+    "verify": "Nhìn qua cửa sổ tàu thấy nhà ga lùi lại → hành khách chuyển động so với nhà ga ✓.",
+    "extend": "Mặt Trời 'mọc' và 'lặn' cũng là tính tương đối: Trái Đất quay, ta thấy Mặt Trời di chuyển.",
+    "common_traps": ["Nghĩ rằng hành khách luôn chuyển động vì tàu chạy → sai nếu chọn vật mốc trên tàu."],
+    "hints": ["Vật mốc phải là vật 'không cùng di chuyển' với hành khách."]
+  },
+  "real_world_connection": "Khi ngồi trên xe buýt, con thấy cây cối, nhà cửa 'chạy lùi' - đó là tính tương đối.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_motion_basics_003", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "speed", "topic_vn": "Tốc độ",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Tốc độ cho biết điều gì?",
+  "options": [{"key":"A","content":"Quãng đường vật đi được"},{"key":"B","content":"Thời gian vật chuyển động"},{"key":"C","content":"Mức độ nhanh hay chậm của chuyển động"},{"key":"D","content":"Hướng chuyển động của vật"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Tốc độ cho biết mức độ nhanh hay chậm của chuyển động. Tốc độ càng lớn → chuyển động càng nhanh.","key_concept":"Tốc độ = quãng đường / thời gian, cho biết nhanh chậm."},
+  "thinking_guide": {
+    "understand": "Tốc độ biểu thị điều gì?",
+    "identify_knowledge": "v = s/t, tốc độ cho biết nhanh/chậm.",
+    "plan": "Phân tích ý nghĩa vật lý của tốc độ.",
+    "steps": ["Bước 1: v = s/t: quãng đường đi được trong một đơn vị thời gian.", "Bước 2: v lớn → đi nhanh, v nhỏ → đi chậm.", "Bước 3: → Tốc độ cho biết nhanh/chậm."],
+    "verify": "Xe máy v=40km/h chậm hơn ô tô v=80km/h → tốc độ phân biệt nhanh chậm ✓.",
+    "extend": "Đơn vị tốc độ: m/s, km/h. 1 m/s = 3,6 km/h.",
+    "common_traps": ["Nhầm tốc độ với quãng đường (quãng đường chỉ cho biết đi bao xa)."],
+    "hints": ["Tốc độ trả lời câu hỏi: 'Nhanh bao nhiêu?'"]
+  },
+  "real_world_connection": "Biển báo tốc độ tối đa 40 km/h trước trường học giúp đảm bảo an toàn.",
+  "formula": "v = \\frac{s}{t}"
+})
+
+questions.append({
+  "id": "phys6_motion_basics_004", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "speed", "topic_vn": "Tốc độ",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Một xe đạp đi được 6 km trong 30 phút. Tốc độ trung bình của xe là bao nhiêu?",
+  "options": [{"key":"A","content":"5 km/h"},{"key":"B","content":"12 km/h"},{"key":"C","content":"180 km/h"},{"key":"D","content":"0,2 km/h"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"30 phút = 0,5 giờ. v = s/t = 6/0,5 = 12 km/h.","key_concept":"v = s/t. Chú ý đổi đơn vị thời gian."},
+  "thinking_guide": {
+    "understand": "s = 6 km, t = 30 phút. Tìm v (km/h).",
+    "identify_knowledge": "v = s/t. Cần đổi phút sang giờ.",
+    "plan": "Đổi 30 phút = 0,5 giờ, rồi tính v.",
+    "steps": ["Bước 1: t = 30 phút = 30/60 = 0,5 giờ.", "Bước 2: v = s/t = 6/0,5 = 12 km/h."],
+    "verify": "12 km/h → tốc độ xe đạp bình thường → hợp lý.",
+    "extend": "12 km/h = 12000/3600 ≈ 3,3 m/s.",
+    "common_traps": ["Quên đổi phút sang giờ: 6/30 = 0,2 (sai đơn vị)."],
+    "hints": ["Kết quả muốn km/h → thời gian phải đổi sang giờ."]
+  },
+  "real_world_connection": "Xe đạp đi học thường có tốc độ 10-15 km/h.",
+  "formula": "v = \\frac{s}{t} = \\frac{6}{0,5} = 12 \\text{ km/h}"
+})
+
+questions.append({
+  "id": "phys6_motion_basics_005", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "uniform_motion", "topic_vn": "Chuyển động đều và không đều",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Chuyển động đều là chuyển động có:",
+  "options": [{"key":"A","content":"Quãng đường đi được tăng dần"},{"key":"B","content":"Tốc độ không thay đổi theo thời gian"},{"key":"C","content":"Hướng chuyển động không đổi"},{"key":"D","content":"Vật chuyển động theo đường thẳng"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Chuyển động đều là chuyển động có tốc độ không đổi theo thời gian.","key_concept":"Chuyển động đều: tốc độ không đổi. Chuyển động không đều: tốc độ thay đổi."},
+  "thinking_guide": {
+    "understand": "Đặc điểm của chuyển động đều là gì?",
+    "identify_knowledge": "Đều = không thay đổi. Chuyển động đều = tốc độ không đổi.",
+    "plan": "Chọn đáp án nói về tốc độ không đổi.",
+    "steps": ["Bước 1: 'Đều' nghĩa là đều đặn, không thay đổi.", "Bước 2: Đại lượng không đổi trong chuyển động đều là tốc độ.", "Bước 3: Đáp án B: tốc độ không đổi ✓."],
+    "verify": "Xe chạy 60 km/h liên tục → chuyển động đều. Quãng đường tăng đều nhưng tốc độ không đổi.",
+    "extend": "Trong thực tế, chuyển động đều rất hiếm. Hầu hết là chuyển động không đều.",
+    "common_traps": ["Nhầm 'quãng đường tăng dần' với chuyển động đều (quãng đường luôn tăng khi vật chuyển động)."],
+    "hints": ["Đều = tốc độ giữ nguyên, không nhanh lên, không chậm đi."]
+  },
+  "real_world_connection": "Kim giây đồng hồ quay đều - tốc độ quay không đổi.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_motion_basics_006", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "relative_motion", "topic_vn": "Tính tương đối của chuyển động",
+  "type": "true_false", "difficulty": "medium",
+  "question_text": "Mặt Trời mọc ở phía Đông và lặn ở phía Tây chứng tỏ Mặt Trời chuyển động quanh Trái Đất.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Thực tế Trái Đất quay quanh trục từ Tây sang Đông. Ta thấy Mặt Trời 'mọc-lặn' là do tính tương đối của chuyển động khi lấy Trái Đất làm vật mốc.","key_concept":"Mặt Trời mọc/lặn là biểu hiện tính tương đối, không phải Mặt Trời quay quanh Trái Đất."},
+  "thinking_guide": {
+    "understand": "Mặt Trời mọc-lặn → Mặt Trời quay quanh Trái Đất? Đúng hay Sai?",
+    "identify_knowledge": "Trái Đất tự quay quanh trục. Tính tương đối của chuyển động.",
+    "plan": "Phân tích hiện tượng bằng tính tương đối.",
+    "steps": ["Bước 1: Trái Đất quay quanh trục (Tây → Đông).", "Bước 2: Người trên Trái Đất lấy mặt đất làm mốc → thấy Mặt Trời di chuyển.", "Bước 3: Đây là tính tương đối → Sai khi nói MT quay quanh TĐ."],
+    "verify": "Khoa học đã chứng minh: Trái Đất quay quanh Mặt Trời (Copernicus).",
+    "extend": "Trái Đất vừa tự quay (tạo ngày đêm) vừa quay quanh Mặt Trời (tạo mùa).",
+    "common_traps": ["Tin vào quan sát trực tiếp mà không phân tích tính tương đối."],
+    "hints": ["Ngồi trên tàu chạy, nhìn ra ngoài thấy cây 'chạy lùi' → cây có thật sự chuyển động không?"]
+  },
+  "real_world_connection": "Ngày xưa, người ta từng tin Mặt Trời quay quanh Trái Đất (thuyết địa tâm).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_motion_basics_007", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "speed", "topic_vn": "Tốc độ",
+  "type": "fill_in", "difficulty": "medium",
+  "question_text": "Đổi đơn vị: 36 km/h = ______ m/s",
+  "options": None,
+  "correct_answer": "10",
+  "explanation": {"summary":"36 km/h = 36 × 1000/3600 m/s = 36/3,6 = 10 m/s.","key_concept":"1 km/h = 1/3,6 m/s. Hoặc chia km/h cho 3,6 được m/s."},
+  "thinking_guide": {
+    "understand": "Đổi 36 km/h sang m/s.",
+    "identify_knowledge": "1 km = 1000 m, 1 giờ = 3600 s.",
+    "plan": "Đổi km → m (×1000), giờ → giây (×3600).",
+    "steps": ["Bước 1: 36 km/h = 36 × 1000m / 3600s.", "Bước 2: = 36000/3600 = 10 m/s."],
+    "verify": "10 m/s × 3,6 = 36 km/h ✓.",
+    "extend": "Quy tắc nhanh: km/h → m/s: chia 3,6. m/s → km/h: nhân 3,6.",
+    "common_traps": ["Nhầm nhân 3,6 thay vì chia 3,6 khi đổi km/h → m/s."],
+    "hints": ["km/h → m/s: ÷ 3,6. Vì m/s là đơn vị 'nhỏ hơn'."]
+  },
+  "real_world_connection": "Ô tô chạy 36 km/h trong thành phố, tức là mỗi giây đi được 10 mét.",
+  "formula": "36 \\text{ km/h} = \\frac{36}{3,6} = 10 \\text{ m/s}"
+})
+
+questions.append({
+  "id": "phys6_motion_basics_008", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "speed", "topic_vn": "Tốc độ",
+  "type": "multiple_choice", "difficulty": "hard",
+  "question_text": "Một ô tô đi nửa quãng đường đầu với tốc độ 40 km/h và nửa quãng đường sau với tốc độ 60 km/h. Tốc độ trung bình trên cả quãng đường là:",
+  "options": [{"key":"A","content":"50 km/h"},{"key":"B","content":"48 km/h"},{"key":"C","content":"45 km/h"},{"key":"D","content":"52 km/h"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Gọi nửa quãng đường = s. t₁ = s/40, t₂ = s/60. v_tb = 2s/(s/40 + s/60) = 2s/(3s/120 + 2s/120) = 2s/(5s/120) = 2×120/5 = 48 km/h.","key_concept":"v_tb = tổng quãng đường / tổng thời gian, KHÔNG phải trung bình cộng tốc độ."},
+  "thinking_guide": {
+    "understand": "Nửa đường đi v₁=40, nửa đường v₂=60. Tìm v trung bình.",
+    "identify_knowledge": "v_tb = S_tổng / t_tổng. KHÔNG lấy (v₁+v₂)/2.",
+    "plan": "Đặt nửa quãng đường = s. Tính t₁, t₂, rồi v_tb.",
+    "steps": ["Bước 1: S_tổng = 2s.", "Bước 2: t₁ = s/40, t₂ = s/60.", "Bước 3: t_tổng = s/40 + s/60 = (3s + 2s)/120 = 5s/120.", "Bước 4: v_tb = 2s ÷ (5s/120) = 2s × 120/5s = 48 km/h."],
+    "verify": "48 km/h < 50 (trung bình cộng) → hợp lý vì xe đi chậm hơn ở nửa đầu mất nhiều thời gian hơn.",
+    "extend": "Nếu đi nửa THỜI GIAN thì v_tb = (40+60)/2 = 50 km/h.",
+    "common_traps": ["Sai lầm phổ biến: (40+60)/2 = 50 km/h → sai!"],
+    "hints": ["v_tb = tổng quãng đường / tổng thời gian. Đặt nửa đường = s."]
+  },
+  "real_world_connection": "GPS trên ô tô tính tốc độ trung bình cả chuyến đi theo công thức này.",
+  "formula": "v_{tb} = \\frac{S}{t_1 + t_2} = \\frac{2s}{\\frac{s}{40}+\\frac{s}{60}} = 48 \\text{ km/h}"
+})
+
+questions.append({
+  "id": "phys6_motion_basics_009", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "motion_description", "topic_vn": "Mô tả chuyển động",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Trong các chuyển động sau, chuyển động nào là chuyển động thẳng?",
+  "options": [{"key":"A","content":"Chuyển động của kim đồng hồ"},{"key":"B","content":"Chuyển động của quả bóng bàn khi nảy"},{"key":"C","content":"Chuyển động của thang máy đi lên"},{"key":"D","content":"Chuyển động của cánh quạt trần"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Thang máy di chuyển lên/xuống theo phương thẳng đứng → chuyển động thẳng. Kim đồng hồ, cánh quạt chuyển động tròn. Bóng bàn nảy theo đường cong.","key_concept":"Chuyển động thẳng: quỹ đạo là đường thẳng."},
+  "thinking_guide": {
+    "understand": "Tìm chuyển động có quỹ đạo là đường thẳng.",
+    "identify_knowledge": "Phân loại theo quỹ đạo: thẳng, cong, tròn.",
+    "plan": "Xác định quỹ đạo của từng chuyển động.",
+    "steps": ["Bước 1: Kim đồng hồ → tròn.", "Bước 2: Bóng bàn nảy → cong.", "Bước 3: Thang máy → thẳng đứng ✓.", "Bước 4: Cánh quạt → tròn."],
+    "verify": "Thang máy chạy trong ống thẳng đứng → quỹ đạo thẳng ✓.",
+    "extend": "Ô tô trên đường thẳng cũng là chuyển động thẳng.",
+    "common_traps": ["Nhầm bóng bàn nảy lên xuống là thẳng (thực tế có thành phần ngang)."],
+    "hints": ["Vẽ đường đi của vật: đường nào thẳng?"]
+  },
+  "real_world_connection": "Thang máy trong chung cư, trung tâm thương mại chuyển động thẳng đứng.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_motion_basics_010", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "speed", "topic_vn": "Tốc độ",
+  "type": "fill_in", "difficulty": "hard",
+  "question_text": "Một người đi bộ với tốc độ 5 km/h trong 2 giờ. Quãng đường người đó đi được là ______ km.",
+  "options": None,
+  "correct_answer": "10",
+  "explanation": {"summary":"s = v × t = 5 × 2 = 10 km.","key_concept":"s = v × t."},
+  "thinking_guide": {
+    "understand": "v = 5 km/h, t = 2h. Tìm s.",
+    "identify_knowledge": "s = v × t.",
+    "plan": "Thay số tính.",
+    "steps": ["Bước 1: s = v × t.", "Bước 2: s = 5 × 2 = 10 km."],
+    "verify": "Đi bộ 5 km/h × 2 giờ = 10 km → khoảng cách đi bộ hợp lý.",
+    "extend": "10 km ≈ khoảng cách từ trung tâm đến ngoại thành.",
+    "common_traps": ["Chia thay vì nhân: s = v/t → sai."],
+    "hints": ["v = s/t → s = v × t (nhân chéo)."]
+  },
+  "real_world_connection": "Đi bộ 10 km là quãng đường phổ biến trong các cuộc thi chạy bộ.",
+  "formula": "s = v \\times t = 5 \\times 2 = 10 \\text{ km}"
+})
+
+questions.append({
+  "id": "phys6_motion_basics_011", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "uniform_motion", "topic_vn": "Chuyển động đều và không đều",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Một xe máy chạy trên đường từ nhà đến trường. Trong quá trình đi, có lúc xe chạy nhanh, có lúc chạy chậm, có lúc dừng đèn đỏ. Em hãy giải thích tại sao chuyển động này là chuyển động không đều và cách tính tốc độ trung bình.",
+  "options": None,
+  "correct_answer": "Chuyển động không đều vì tốc độ thay đổi liên tục (nhanh, chậm, dừng). Tốc độ trung bình = tổng quãng đường / tổng thời gian (bao gồm cả thời gian dừng).",
+  "explanation": {"summary":"Tốc độ xe thay đổi liên tục → không đều. v_tb tính bằng cách chia tổng quãng đường cho tổng thời gian, kể cả thời gian nghỉ.","key_concept":"Chuyển động không đều: tốc độ thay đổi. v_tb = S/t_tổng."},
+  "thinking_guide": {
+    "understand": "Xe có lúc nhanh, chậm, dừng → loại chuyển động gì? Tính v_tb thế nào?",
+    "identify_knowledge": "CĐ không đều: tốc độ thay đổi. v_tb = S_tổng/t_tổng.",
+    "plan": "Giải thích tại sao không đều + cách tính v_tb.",
+    "steps": ["Bước 1: Tốc độ thay đổi (nhanh/chậm/dừng) → không đều.", "Bước 2: v_tb = tổng quãng đường ÷ tổng thời gian.", "Bước 3: Tổng thời gian gồm cả thời gian dừng đèn đỏ."],
+    "verify": "Nếu đi 10 km mất 30 phút (kể cả dừng) → v_tb = 10/0,5 = 20 km/h.",
+    "extend": "Trong thực tế, hầu hết chuyển động đều là không đều.",
+    "common_traps": ["Không tính thời gian dừng vào tổng thời gian khi tính v_tb."],
+    "hints": ["v_tb 'san bằng' tất cả thay đổi thành một giá trị duy nhất."]
+  },
+  "real_world_connection": "Google Maps tính thời gian di chuyển dựa trên tốc độ trung bình của các phương tiện.",
+  "formula": "v_{tb} = \\frac{S_{tổng}}{t_{tổng}}"
+})
+
+questions.append({
+  "id": "phys6_motion_basics_012", "grade": 6, "chapter": "motion_basics",
+  "chapter_vn": "Chuyển động", "topic": "relative_motion", "topic_vn": "Tính tương đối của chuyển động",
+  "type": "explain", "difficulty": "easy",
+  "question_text": "Hãy lấy một ví dụ trong đời sống thể hiện tính tương đối của chuyển động và chỉ rõ vật mốc.",
+  "options": None,
+  "correct_answer": "Ví dụ: Một em học sinh ngồi trên xe buýt. So với xe buýt (vật mốc), em đứng yên. So với cây bên đường (vật mốc), em đang chuyển động.",
+  "explanation": {"summary":"Cùng một vật, tùy vật mốc khác nhau mà có thể nói là đứng yên hoặc chuyển động. Đó là tính tương đối.","key_concept":"Tính tương đối: đứng yên hay chuyển động phụ thuộc vật mốc được chọn."},
+  "thinking_guide": {
+    "understand": "Lấy ví dụ thể hiện tính tương đối + chỉ rõ vật mốc.",
+    "identify_knowledge": "Cùng 1 vật có thể đứng yên hoặc chuyển động tùy vật mốc.",
+    "plan": "Chọn tình huống thực tế, chỉ ra 2 vật mốc khác nhau.",
+    "steps": ["Bước 1: Chọn tình huống: ngồi trên xe buýt.", "Bước 2: Vật mốc 1 (ghế xe) → đứng yên.", "Bước 3: Vật mốc 2 (cây bên đường) → chuyển động."],
+    "verify": "Cùng 1 người, 2 kết luận khác nhau tùy vật mốc → tính tương đối ✓.",
+    "extend": "Trái Đất quay quanh Mặt Trời nhưng ta 'thấy' Mặt Trời mọc/lặn.",
+    "common_traps": ["Quên chỉ rõ vật mốc trong ví dụ."],
+    "hints": ["Nghĩ về con ngồi trên xe/tàu và quan sát bên ngoài."]
+  },
+  "real_world_connection": "Khi đi thang cuốn ở siêu thị, con đứng yên so với bậc thang nhưng chuyển động so với sàn nhà.",
+  "formula": ""
+})
+
+# ============================================================
+# CHAPTER 5: ENERGY BASICS (10 questions)
+# ============================================================
+questions.append({
+  "id": "phys6_energy_basics_001", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_forms", "topic_vn": "Các dạng năng lượng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Dạng năng lượng nào được sử dụng khi bật đèn điện?",
+  "options": [{"key":"A","content":"Nhiệt năng"},{"key":"B","content":"Điện năng"},{"key":"C","content":"Cơ năng"},{"key":"D","content":"Hóa năng"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Khi bật đèn điện, điện năng từ nguồn điện được chuyển hóa thành quang năng (ánh sáng) và nhiệt năng.","key_concept":"Đèn điện sử dụng điện năng."},
+  "thinking_guide": {
+    "understand": "Bật đèn điện dùng dạng năng lượng gì?",
+    "identify_knowledge": "Đèn điện cần dòng điện để hoạt động.",
+    "plan": "Xác định nguồn năng lượng cung cấp cho đèn.",
+    "steps": ["Bước 1: Đèn điện cắm vào ổ điện hoặc dùng pin.", "Bước 2: Nguồn cung cấp = điện năng.", "Bước 3: Điện năng → quang năng + nhiệt năng."],
+    "verify": "Mất điện → đèn tắt → xác nhận đèn dùng điện năng.",
+    "extend": "Đèn LED hiệu quả hơn vì ít chuyển thành nhiệt năng hơn đèn sợi đốt.",
+    "common_traps": ["Nhầm với quang năng - đó là năng lượng ĐẦU RA, không phải đầu vào."],
+    "hints": ["Đèn ĐIỆN → dùng ĐIỆN năng."]
+  },
+  "real_world_connection": "Hóa đơn tiền điện tính theo số kWh điện năng mà gia đình sử dụng.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_002", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_forms", "topic_vn": "Các dạng năng lượng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Khi đốt cháy củi, dạng năng lượng nào được giải phóng?",
+  "options": [{"key":"A","content":"Điện năng và cơ năng"},{"key":"B","content":"Nhiệt năng và quang năng"},{"key":"C","content":"Cơ năng và quang năng"},{"key":"D","content":"Hóa năng và điện năng"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Đốt củi: hóa năng trong củi → nhiệt năng (nóng) + quang năng (ánh sáng lửa).","key_concept":"Đốt cháy: hóa năng → nhiệt năng + quang năng."},
+  "thinking_guide": {
+    "understand": "Đốt củi giải phóng dạng năng lượng gì?",
+    "identify_knowledge": "Quá trình cháy giải phóng nhiệt và ánh sáng.",
+    "plan": "Quan sát hiện tượng đốt củi: nóng + sáng.",
+    "steps": ["Bước 1: Đốt củi → ngọn lửa nóng → nhiệt năng.", "Bước 2: Ngọn lửa phát sáng → quang năng.", "Bước 3: → Nhiệt năng + quang năng."],
+    "verify": "Ngồi cạnh đống lửa thấy ấm (nhiệt) và thấy sáng (quang) ✓.",
+    "extend": "Hóa năng trong củi đến từ quang hợp: cây hấp thụ ánh sáng Mặt Trời.",
+    "common_traps": ["Nghĩ đốt cháy tạo ra hóa năng - thực ra hóa năng là ĐẦU VÀO."],
+    "hints": ["Lửa → nóng + sáng = hai dạng năng lượng."]
+  },
+  "real_world_connection": "Bếp củi ở nông thôn Việt Nam dùng hóa năng trong củi để nấu ăn (nhiệt năng).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_003", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_conversion", "topic_vn": "Chuyển hóa năng lượng",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Khi quạt điện hoạt động, quá trình chuyển hóa năng lượng chủ yếu là:",
+  "options": [{"key":"A","content":"Điện năng → cơ năng"},{"key":"B","content":"Cơ năng → điện năng"},{"key":"C","content":"Nhiệt năng → cơ năng"},{"key":"D","content":"Quang năng → điện năng"}],
+  "correct_answer": "A",
+  "explanation": {"summary":"Quạt điện: điện năng từ nguồn điện → cơ năng (cánh quạt quay) + một ít nhiệt năng.","key_concept":"Quạt điện: điện năng → cơ năng."},
+  "thinking_guide": {
+    "understand": "Quạt điện chuyển hóa năng lượng như thế nào?",
+    "identify_knowledge": "Quạt dùng điện để quay cánh quạt (chuyển động cơ học).",
+    "plan": "Xác định năng lượng đầu vào (điện) và đầu ra (cơ năng).",
+    "steps": ["Bước 1: Đầu vào: cắm điện → điện năng.", "Bước 2: Đầu ra: cánh quạt quay → cơ năng.", "Bước 3: → Điện năng → cơ năng."],
+    "verify": "Rút điện → quạt dừng. Cắm điện → quạt quay. → Đúng điện → cơ.",
+    "extend": "Ngược lại: máy phát điện (tuabin gió) chuyển cơ năng → điện năng.",
+    "common_traps": ["Nhầm chiều chuyển hóa: cơ → điện là máy phát, không phải quạt."],
+    "hints": ["Quạt DÙNG điện để QUAY → điện → cơ."]
+  },
+  "real_world_connection": "Quạt điện, máy giặt, máy xay sinh tố đều chuyển điện năng → cơ năng.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_004", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_conversion", "topic_vn": "Chuyển hóa năng lượng",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Pin mặt trời (tấm pin năng lượng mặt trời) thực hiện sự chuyển hóa năng lượng nào?",
+  "options": [{"key":"A","content":"Nhiệt năng → điện năng"},{"key":"B","content":"Quang năng → điện năng"},{"key":"C","content":"Hóa năng → điện năng"},{"key":"D","content":"Cơ năng → điện năng"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Pin mặt trời hấp thụ ánh sáng (quang năng) và chuyển hóa thành điện năng.","key_concept":"Pin mặt trời: quang năng → điện năng."},
+  "thinking_guide": {
+    "understand": "Pin mặt trời chuyển hóa năng lượng gì thành gì?",
+    "identify_knowledge": "Pin mặt trời dùng ánh sáng (quang năng) để phát điện.",
+    "plan": "Xác định: đầu vào = ánh sáng, đầu ra = điện.",
+    "steps": ["Bước 1: Pin mặt trời đặt ngoài nắng → hấp thụ ánh sáng = quang năng.", "Bước 2: Tạo ra dòng điện = điện năng.", "Bước 3: → Quang năng → điện năng."],
+    "verify": "Trời tối/mây che → pin không phát điện → đúng phụ thuộc quang năng.",
+    "extend": "Nhà máy nhiệt điện mặt trời: quang năng → nhiệt → hơi nước → cơ năng → điện năng.",
+    "common_traps": ["Nhầm với nhiệt năng - pin mặt trời dùng ÁNH SÁNG, không phải nhiệt."],
+    "hints": ["Mặt trời → sáng. Pin mặt trời dùng ánh sáng."]
+  },
+  "real_world_connection": "Nhiều nhà ở Việt Nam lắp pin mặt trời trên mái để tiết kiệm tiền điện.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_005", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_conservation", "topic_vn": "Bảo toàn năng lượng",
+  "type": "true_false", "difficulty": "medium",
+  "question_text": "Năng lượng có thể tự sinh ra và tự mất đi.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Theo định luật bảo toàn năng lượng: năng lượng không tự sinh ra và không tự mất đi, chỉ chuyển hóa từ dạng này sang dạng khác.","key_concept":"Năng lượng bảo toàn: không tự sinh ra, không tự mất đi."},
+  "thinking_guide": {
+    "understand": "Năng lượng có thể tự sinh ra hoặc tự mất đi không?",
+    "identify_knowledge": "Định luật bảo toàn năng lượng.",
+    "plan": "Áp dụng định luật bảo toàn năng lượng.",
+    "steps": ["Bước 1: Định luật: năng lượng không tự sinh ra, không tự mất đi.", "Bước 2: Năng lượng chỉ chuyển từ dạng này sang dạng khác.", "Bước 3: → Đề nói 'tự sinh, tự mất' → Sai."],
+    "verify": "Ví dụ: thả quả bóng → thế năng → động năng → nhiệt (khi va chạm). Không mất, chỉ chuyển hóa.",
+    "extend": "Đây là một trong những định luật cơ bản nhất của vật lý.",
+    "common_traps": ["Pin hết → tưởng năng lượng 'mất' → thực ra đã chuyển thành nhiệt, ánh sáng..."],
+    "hints": ["Bảo toàn = giữ nguyên tổng lượng. Chỉ thay đổi dạng."]
+  },
+  "real_world_connection": "Xăng ô tô hết không phải mất năng lượng - hóa năng đã chuyển thành cơ năng và nhiệt năng.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_006", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_forms", "topic_vn": "Các dạng năng lượng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Năng lượng mà một vật có được do chuyển động gọi là gì?",
+  "options": [{"key":"A","content":"Thế năng"},{"key":"B","content":"Nhiệt năng"},{"key":"C","content":"Động năng"},{"key":"D","content":"Hóa năng"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Động năng là năng lượng mà vật có được do chuyển động. Vật chuyển động càng nhanh, khối lượng càng lớn thì động năng càng lớn.","key_concept":"Động năng = năng lượng do chuyển động."},
+  "thinking_guide": {
+    "understand": "Năng lượng do chuyển động gọi là gì?",
+    "identify_knowledge": "Động = chuyển động. Động năng = năng lượng chuyển động.",
+    "plan": "Phân tích nghĩa từ 'động năng'.",
+    "steps": ["Bước 1: Động = chuyển động, năng = năng lượng.", "Bước 2: Động năng = năng lượng do chuyển động.", "Bước 3: Thế năng = do vị trí/độ cao."],
+    "verify": "Viên đạn bay nhanh có động năng lớn → làm xuyên mục tiêu ✓.",
+    "extend": "Cơ năng = động năng + thế năng.",
+    "common_traps": ["Nhầm động năng với thế năng (thế năng do vị trí, không phải chuyển động)."],
+    "hints": ["ĐỘNG = chuyển ĐỘNG. ĐỘNG năng = năng lượng CHUYỂN ĐỘNG."]
+  },
+  "real_world_connection": "Xe tải nặng chạy nhanh có động năng rất lớn, nên va chạm gây thiệt hại nghiêm trọng.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_007", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_conversion", "topic_vn": "Chuyển hóa năng lượng",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Khi thả một quả bóng từ trên cao xuống, quá trình chuyển hóa năng lượng chủ yếu là:",
+  "options": [{"key":"A","content":"Động năng → thế năng"},{"key":"B","content":"Thế năng → động năng"},{"key":"C","content":"Nhiệt năng → cơ năng"},{"key":"D","content":"Hóa năng → cơ năng"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Ở trên cao, quả bóng có thế năng (do vị trí cao). Khi rơi, độ cao giảm → thế năng giảm, tốc độ tăng → động năng tăng. Thế năng chuyển hóa thành động năng.","key_concept":"Vật rơi: thế năng → động năng."},
+  "thinking_guide": {
+    "understand": "Thả bóng từ cao → rơi. Chuyển hóa năng lượng gì?",
+    "identify_knowledge": "Thế năng phụ thuộc độ cao. Động năng phụ thuộc tốc độ.",
+    "plan": "Phân tích: cao → thấp = thế năng giảm. Chậm → nhanh = động năng tăng.",
+    "steps": ["Bước 1: Ban đầu ở cao, đứng yên: thế năng lớn, động năng = 0.", "Bước 2: Rơi xuống: độ cao giảm → thế năng giảm.", "Bước 3: Tốc độ tăng → động năng tăng.", "Bước 4: → Thế năng → động năng."],
+    "verify": "Ngay trước khi chạm đất: thế năng ≈ 0, động năng lớn nhất ✓.",
+    "extend": "Khi bóng nảy lên: động năng → thế năng (ngược lại).",
+    "common_traps": ["Nhầm chiều: rơi xuống = thế → động (không phải động → thế)."],
+    "hints": ["Rơi = mất độ cao + tăng tốc = mất thế năng + tăng động năng."]
+  },
+  "real_world_connection": "Thác nước Bản Giốc: nước ở cao (thế năng) rơi xuống (động năng) tạo ra sức mạnh.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_008", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_conservation", "topic_vn": "Bảo toàn năng lượng",
+  "type": "fill_in", "difficulty": "hard",
+  "question_text": "Hoàn thành câu: Năng lượng không tự sinh ra và không tự mất đi, nó chỉ ______ từ dạng này sang dạng khác.",
+  "options": None,
+  "correct_answer": "chuyển hóa",
+  "explanation": {"summary":"Định luật bảo toàn năng lượng: năng lượng không tự sinh ra, không tự mất đi, chỉ chuyển hóa từ dạng này sang dạng khác.","key_concept":"Từ khóa: chuyển hóa."},
+  "thinking_guide": {
+    "understand": "Điền từ còn thiếu trong phát biểu định luật bảo toàn năng lượng.",
+    "identify_knowledge": "Định luật bảo toàn năng lượng.",
+    "plan": "Nhớ lại nguyên văn định luật.",
+    "steps": ["Bước 1: Năng lượng không tự sinh ra.", "Bước 2: Không tự mất đi.", "Bước 3: Chỉ CHUYỂN HÓA từ dạng này sang dạng khác."],
+    "verify": "Chuyển hóa = thay đổi dạng. Ví dụ: điện năng → quang năng ✓.",
+    "extend": "Năng lượng cũng có thể truyền từ vật này sang vật khác.",
+    "common_traps": ["Viết 'biến đổi' hoặc 'thay đổi' - đúng ý nhưng 'chuyển hóa' là từ chính xác."],
+    "hints": ["Chuyển + hóa = chuyển đổi hình thức."]
+  },
+  "real_world_connection": "Cơ thể con chuyển hóa hóa năng trong thức ăn thành cơ năng (chạy nhảy) và nhiệt năng (giữ ấm).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_009", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_forms", "topic_vn": "Các dạng năng lượng",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Hãy mô tả chuỗi chuyển hóa năng lượng khi con đi xe đạp lên dốc rồi thả xuống dốc (không đạp).",
+  "options": None,
+  "correct_answer": "Lên dốc: hóa năng trong cơ thể → cơ năng (đạp xe) → động năng + thế năng (xe và người lên cao). Xuống dốc: thế năng → động năng (xe tăng tốc). Một phần năng lượng chuyển thành nhiệt năng do ma sát.",
+  "explanation": {"summary":"Chuỗi: hóa năng (thức ăn) → cơ năng (cơ bắp) → thế năng (lên cao) → động năng (xuống dốc) + nhiệt (ma sát).","key_concept":"Năng lượng chuyển hóa qua nhiều dạng liên tiếp."},
+  "thinking_guide": {
+    "understand": "Mô tả chuỗi chuyển hóa năng lượng: đạp xe lên dốc → thả xuống.",
+    "identify_knowledge": "Hóa năng, cơ năng, thế năng, động năng, nhiệt năng.",
+    "plan": "Chia thành 2 giai đoạn: lên dốc và xuống dốc.",
+    "steps": ["Bước 1: Lên dốc - con đạp xe: hóa năng (thức ăn) → cơ năng (chân đạp).", "Bước 2: Xe lên cao: cơ năng → thế năng (tăng) + động năng.", "Bước 3: Đỉnh dốc: thế năng lớn nhất.", "Bước 4: Xuống dốc (thả): thế năng → động năng (xe nhanh dần).", "Bước 5: Ma sát → một phần → nhiệt năng."],
+    "verify": "Tổng năng lượng bảo toàn (chỉ đổi dạng, không mất).",
+    "extend": "Nếu không có ma sát, xe sẽ leo được dốc bên kia cao bằng dốc ban đầu.",
+    "common_traps": ["Quên nhiệt năng do ma sát - nó luôn có nhưng thường bị bỏ qua."],
+    "hints": ["Chia nhỏ: trước khi đạp → đạp lên → đỉnh → xuống → chân dốc."]
+  },
+  "real_world_connection": "Đạp xe trên cầu vượt: lên dốc mệt (tiêu hao năng lượng), xuống dốc nhàn (thế năng chuyển thành động năng).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_energy_basics_010", "grade": 6, "chapter": "energy_basics",
+  "chapter_vn": "Năng lượng", "topic": "energy_conservation", "topic_vn": "Bảo toàn năng lượng",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Tại sao nói 'tiết kiệm năng lượng' mà không nói 'tạo ra năng lượng'? Giải thích dựa trên kiến thức bảo toàn năng lượng.",
+  "options": None,
+  "correct_answer": "Vì năng lượng không thể tự sinh ra (định luật bảo toàn), con người chỉ chuyển hóa năng lượng từ dạng có sẵn (than, dầu, gió, mặt trời) sang dạng cần dùng. Nguồn năng lượng có hạn nên cần tiết kiệm.",
+  "explanation": {"summary":"Con người không 'tạo' năng lượng mà chuyển hóa từ nguồn sẵn có. Nguồn hóa thạch (than, dầu) có hạn → cần tiết kiệm và dùng năng lượng tái tạo.","key_concept":"Không tạo được năng lượng, chỉ chuyển hóa → phải tiết kiệm."},
+  "thinking_guide": {
+    "understand": "Tại sao nói 'tiết kiệm' chứ không nói 'tạo ra' năng lượng?",
+    "identify_knowledge": "Định luật bảo toàn năng lượng + nguồn năng lượng có hạn.",
+    "plan": "Liên kết bảo toàn năng lượng với thực tế sử dụng.",
+    "steps": ["Bước 1: Định luật: năng lượng không tự sinh ra.", "Bước 2: Con người chỉ chuyển hóa: hóa năng (xăng) → cơ năng (xe chạy).", "Bước 3: Nguồn hóa thạch mất hàng triệu năm hình thành → có hạn.", "Bước 4: → Phải tiết kiệm vì không thể 'tạo thêm'."],
+    "verify": "Nhà máy điện không tạo năng lượng, chỉ chuyển: nhiệt → cơ → điện ✓.",
+    "extend": "Năng lượng tái tạo (gió, mặt trời) giúp giảm phụ thuộc nhiên liệu hóa thạch.",
+    "common_traps": ["Nghĩ nhà máy điện 'tạo ra' điện - thực ra chỉ chuyển hóa."],
+    "hints": ["Bảo toàn = không tạo thêm được. Nguồn có hạn → tiết kiệm."]
+  },
+  "real_world_connection": "Chiến dịch 'Giờ Trái Đất' khuyến khích tắt đèn để tiết kiệm điện năng.",
+  "formula": ""
+})
+
+# ============================================================
+# CHAPTER 6: LIGHT BASICS (12 questions)
+# ============================================================
+questions.append({
+  "id": "phys6_light_basics_001", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "light_source", "topic_vn": "Nguồn sáng và vật sáng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Nguồn sáng là gì?",
+  "options": [{"key":"A","content":"Vật tự phát ra ánh sáng"},{"key":"B","content":"Vật phản chiếu ánh sáng"},{"key":"C","content":"Vật hấp thụ ánh sáng"},{"key":"D","content":"Vật trong suốt"}],
+  "correct_answer": "A",
+  "explanation": {"summary":"Nguồn sáng là vật TỰ phát ra ánh sáng, như Mặt Trời, đèn điện đang sáng, ngọn nến đang cháy.","key_concept":"Nguồn sáng = tự phát ra ánh sáng."},
+  "thinking_guide": {
+    "understand": "Định nghĩa nguồn sáng.",
+    "identify_knowledge": "Nguồn sáng tự phát sáng. Vật sáng gồm nguồn sáng + vật phản xạ ánh sáng.",
+    "plan": "Chọn đáp án nói về tự phát sáng.",
+    "steps": ["Bước 1: 'Nguồn' = nơi phát ra.", "Bước 2: 'Nguồn sáng' = nơi phát ra ánh sáng = tự phát sáng.", "Bước 3: Đáp án A ✓."],
+    "verify": "Mặt Trời tự phát sáng → nguồn sáng ✓. Mặt Trăng phản xạ → không phải nguồn sáng.",
+    "extend": "Vật sáng = nguồn sáng + vật hắt lại ánh sáng (Mặt Trăng là vật sáng nhưng không phải nguồn sáng).",
+    "common_traps": ["Nhầm Mặt Trăng là nguồn sáng (thực ra Mặt Trăng phản xạ ánh sáng Mặt Trời)."],
+    "hints": ["Nguồn = gốc, nơi bắt đầu. Tự phát ra, không cần nhận từ nguồn khác."]
+  },
+  "real_world_connection": "Đèn LED, nến, đom đóm là nguồn sáng. Mặt Trăng, gương, tờ giấy trắng là vật phản xạ ánh sáng.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_002", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "light_propagation", "topic_vn": "Sự truyền ánh sáng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Trong môi trường trong suốt và đồng tính, ánh sáng truyền theo đường nào?",
+  "options": [{"key":"A","content":"Đường cong"},{"key":"B","content":"Đường gấp khúc"},{"key":"C","content":"Đường thẳng"},{"key":"D","content":"Đường xoắn ốc"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Định luật truyền thẳng ánh sáng: Trong môi trường trong suốt và đồng tính, ánh sáng truyền theo đường thẳng.","key_concept":"Ánh sáng truyền thẳng trong MT trong suốt, đồng tính."},
+  "thinking_guide": {
+    "understand": "Ánh sáng truyền theo đường gì trong MT trong suốt, đồng tính?",
+    "identify_knowledge": "Định luật truyền thẳng ánh sáng.",
+    "plan": "Nhớ lại định luật.",
+    "steps": ["Bước 1: Điều kiện: MT trong suốt + đồng tính (đồng nhất).", "Bước 2: Ánh sáng truyền theo đường thẳng."],
+    "verify": "Tia laser chiếu thẳng → thấy vệt sáng thẳng trong khói ✓.",
+    "extend": "Ánh sáng bị bẻ cong khi qua MT không đồng tính (ảo ảnh sa mạc).",
+    "common_traps": ["Quên điều kiện 'trong suốt và đồng tính' - ánh sáng không phải luôn truyền thẳng."],
+    "hints": ["Trong suốt = ánh sáng xuyên qua. Đồng tính = giống nhau ở mọi nơi."]
+  },
+  "real_world_connection": "Tia laser dùng trong trình chiếu, bút chỉ laser cho thấy ánh sáng truyền thẳng.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_003", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "shadow", "topic_vn": "Bóng tối",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Bóng tối được tạo thành khi nào?",
+  "options": [{"key":"A","content":"Khi ánh sáng chiếu qua vật trong suốt"},{"key":"B","content":"Khi vật cản không cho ánh sáng truyền qua, vùng phía sau vật không nhận được ánh sáng"},{"key":"C","content":"Khi ánh sáng phản xạ"},{"key":"D","content":"Khi ánh sáng truyền trong không khí"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Bóng tối là vùng không nhận được ánh sáng từ nguồn sáng vì bị vật cản chắn. Vật cản không cho ánh sáng truyền qua → phía sau có bóng tối.","key_concept":"Bóng tối = vùng bị chắn, không có ánh sáng."},
+  "thinking_guide": {
+    "understand": "Bóng tối hình thành như thế nào?",
+    "identify_knowledge": "Ánh sáng truyền thẳng → vật cản → phía sau tối.",
+    "plan": "Liên hệ truyền thẳng ánh sáng với sự hình thành bóng.",
+    "steps": ["Bước 1: Ánh sáng truyền thẳng.", "Bước 2: Gặp vật cản (không trong suốt) → không xuyên qua.", "Bước 3: Phía sau vật cản không nhận được ánh sáng → bóng tối."],
+    "verify": "Dùng đèn pin chiếu vào tay → phía sau tay có bóng tối trên tường ✓.",
+    "extend": "Bóng nửa tối (bán dạ) xuất hiện khi nguồn sáng có kích thước lớn.",
+    "common_traps": ["Nhầm bóng tối với bóng nửa tối (bóng nửa tối vẫn nhận được một phần ánh sáng)."],
+    "hints": ["Bóng TỐI = hoàn toàn KHÔNG có ánh sáng."]
+  },
+  "real_world_connection": "Khi chơi trò chơi bóng tay trên tường, con dùng tay chắn đèn tạo bóng hình thú.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_004", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "eclipse", "topic_vn": "Nhật thực và nguyệt thực",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Nhật thực xảy ra khi nào?",
+  "options": [{"key":"A","content":"Trái Đất nằm giữa Mặt Trời và Mặt Trăng"},{"key":"B","content":"Mặt Trăng nằm giữa Mặt Trời và Trái Đất"},{"key":"C","content":"Mặt Trời nằm giữa Trái Đất và Mặt Trăng"},{"key":"D","content":"Ba thiên thể không thẳng hàng"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Nhật thực xảy ra khi Mặt Trăng nằm giữa Mặt Trời và Trái Đất, che khuất ánh sáng Mặt Trời chiếu đến Trái Đất.","key_concept":"Nhật thực: MT Trăng che MT Trời → Trái Đất không nhận được ánh sáng."},
+  "thinking_guide": {
+    "understand": "Nhật thực xảy ra ở vị trí tương đối nào?",
+    "identify_knowledge": "Nhật = Mặt Trời. Nhật thực = Mặt Trời bị che. Nguyệt thực = Mặt Trăng bị che.",
+    "plan": "Xác định vật nào che vật nào.",
+    "steps": ["Bước 1: 'Nhật' = Mặt Trời → Mặt Trời bị che.", "Bước 2: Cái gì che Mặt Trời? → Mặt Trăng.", "Bước 3: → Mặt Trăng nằm giữa Mặt Trời và Trái Đất."],
+    "verify": "Nhìn từ Trái Đất: Mặt Trăng che Mặt Trời → thấy trời tối ban ngày ✓.",
+    "extend": "Nhật thực toàn phần rất hiếm ở một địa điểm (trung bình 400 năm/lần).",
+    "common_traps": ["Nhầm nhật thực với nguyệt thực. Nhật = Mặt Trời bị che. Nguyệt = Mặt Trăng bị che."],
+    "hints": ["Nhật = Mặt Trời. Thực = che khuất. Nhật thực = MT Trời bị che."]
+  },
+  "real_world_connection": "Việt Nam đã quan sát được nhật thực vào năm 1995, thu hút hàng triệu người theo dõi.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_005", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "eclipse", "topic_vn": "Nhật thực và nguyệt thực",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Nguyệt thực xảy ra khi nào?",
+  "options": [{"key":"A","content":"Mặt Trăng nằm giữa Mặt Trời và Trái Đất"},{"key":"B","content":"Trái Đất nằm giữa Mặt Trời và Mặt Trăng, bóng Trái Đất che Mặt Trăng"},{"key":"C","content":"Mặt Trời nằm giữa Trái Đất và Mặt Trăng"},{"key":"D","content":"Mặt Trăng không phản xạ ánh sáng"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Nguyệt thực xảy ra khi Trái Đất nằm giữa Mặt Trời và Mặt Trăng, bóng Trái Đất che phủ Mặt Trăng.","key_concept":"Nguyệt thực: Trái Đất che MT Trăng khỏi ánh sáng MT Trời."},
+  "thinking_guide": {
+    "understand": "Nguyệt thực xảy ra ở vị trí nào?",
+    "identify_knowledge": "Nguyệt = Mặt Trăng. Nguyệt thực = Mặt Trăng bị che (nằm trong bóng Trái Đất).",
+    "plan": "Xác định: ai che ai?",
+    "steps": ["Bước 1: 'Nguyệt' = Mặt Trăng → Mặt Trăng bị che.", "Bước 2: Trái Đất chắn ánh sáng MT Trời → bóng TĐ che MT Trăng.", "Bước 3: → Trái Đất nằm giữa MT Trời và MT Trăng."],
+    "verify": "Nguyệt thực xảy ra vào đêm rằm (trăng tròn) → MT Trăng đối diện MT Trời ✓.",
+    "extend": "Nguyệt thực Mặt Trăng thường có màu đỏ do khí quyển Trái Đất khúc xạ ánh sáng.",
+    "common_traps": ["Nhầm với nhật thực. Ghi nhớ: NHẬT = Trời, NGUYỆT = Trăng."],
+    "hints": ["NGUYỆT = Trăng. Thực = bị che. Nguyệt thực = TRĂNG bị che."]
+  },
+  "real_world_connection": "Nguyệt thực 'trăng máu' (Mặt Trăng đỏ) là hiện tượng thiên văn đẹp có thể quan sát bằng mắt thường.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_006", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "light_source", "topic_vn": "Nguồn sáng và vật sáng",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Vật nào sau đây KHÔNG phải là nguồn sáng?",
+  "options": [{"key":"A","content":"Mặt Trời"},{"key":"B","content":"Đèn LED đang sáng"},{"key":"C","content":"Mặt Trăng"},{"key":"D","content":"Ngôi sao"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Mặt Trăng không tự phát sáng mà chỉ phản xạ ánh sáng từ Mặt Trời. Mặt Trời, đèn LED, ngôi sao đều tự phát ra ánh sáng.","key_concept":"Mặt Trăng phản xạ ánh sáng, không tự phát sáng → không phải nguồn sáng."},
+  "thinking_guide": {
+    "understand": "Tìm vật KHÔNG tự phát sáng.",
+    "identify_knowledge": "Nguồn sáng = tự phát sáng. Mặt Trăng chỉ phản xạ.",
+    "plan": "Kiểm tra từng vật: tự sáng hay phản xạ?",
+    "steps": ["Bước 1: Mặt Trời → tự sáng (phản ứng hạt nhân) ✓.", "Bước 2: Đèn LED → tự sáng (dùng điện) ✓.", "Bước 3: Mặt Trăng → phản xạ ánh sáng MT Trời → KHÔNG phải nguồn sáng.", "Bước 4: Ngôi sao → tự sáng ✓."],
+    "verify": "Khi nhật thực, MT Trăng che MT Trời → MT Trăng tối (vì nó phản xạ ánh sáng MT Trời).",
+    "extend": "Các hành tinh (Sao Kim, Sao Hỏa...) cũng không phải nguồn sáng.",
+    "common_traps": ["Mặt Trăng sáng ban đêm → tưởng tự sáng. Thực ra nó 'mượn' ánh sáng MT Trời."],
+    "hints": ["Mặt Trăng ban đêm sáng do phản chiếu. Lúc nhật thực, phần bị che tối đen."]
+  },
+  "real_world_connection": "Ban đêm, ta thấy Mặt Trăng sáng nhưng đó là ánh sáng Mặt Trời phản chiếu.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_007", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "shadow", "topic_vn": "Bóng tối",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Khi đưa vật cản lại gần nguồn sáng (nguồn sáng nhỏ), bóng tối trên màn sẽ thay đổi như thế nào?",
+  "options": [{"key":"A","content":"Bóng tối nhỏ lại"},{"key":"B","content":"Bóng tối to ra"},{"key":"C","content":"Bóng tối không thay đổi"},{"key":"D","content":"Bóng tối biến mất"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Khi vật cản lại gần nguồn sáng, vùng bị chắn (góc chắn) rộng hơn → bóng tối trên màn to ra.","key_concept":"Vật cản gần nguồn sáng → bóng to hơn."},
+  "thinking_guide": {
+    "understand": "Vật cản tiến gần nguồn sáng, bóng trên màn thay đổi ra sao?",
+    "identify_knowledge": "Ánh sáng truyền thẳng → bóng phụ thuộc vị trí vật cản.",
+    "plan": "Vẽ tia sáng từ nguồn qua mép vật cản đến màn.",
+    "steps": ["Bước 1: Vật gần nguồn → góc mở của chùm bị chắn lớn hơn.", "Bước 2: Bóng trên màn rộng hơn → bóng to ra.", "Bước 3: Ngược lại, vật xa nguồn → bóng nhỏ đi."],
+    "verify": "Thí nghiệm: đưa tay gần đèn bàn → bóng tay trên tường to ra ✓.",
+    "extend": "Nguyên lý máy chiếu bóng: vật nhỏ gần nguồn → bóng lớn trên màn.",
+    "common_traps": ["Nghĩ vật gần nguồn thì bóng nhỏ (sai, thực tế ngược lại)."],
+    "hints": ["Thử làm: đặt tay gần đèn bàn, quan sát bóng trên tường."]
+  },
+  "real_world_connection": "Nghệ thuật rối bóng (múa bóng) dùng nguyên lý này: đưa tay gần đèn → bóng to hơn.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_008", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "light_propagation", "topic_vn": "Sự truyền ánh sáng",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Hiện tượng nào sau đây được giải thích bằng sự truyền thẳng của ánh sáng?",
+  "options": [{"key":"A","content":"Cầu vồng sau mưa"},{"key":"B","content":"Nhìn thấy bóng mình trên sàn khi đứng ngoài nắng"},{"key":"C","content":"Nhìn thấy cá trong bể nước"},{"key":"D","content":"Nhìn thấy mình trong gương"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Bóng trên sàn do ánh sáng Mặt Trời truyền thẳng, bị cơ thể chắn → phía sau tối. Cầu vồng do tán sắc, cá trong nước do khúc xạ, gương do phản xạ.","key_concept":"Bóng nắng là ứng dụng truyền thẳng ánh sáng."},
+  "thinking_guide": {
+    "understand": "Hiện tượng nào do truyền thẳng ánh sáng?",
+    "identify_knowledge": "Truyền thẳng → bóng tối, nhật/nguyệt thực. Phản xạ → gương. Khúc xạ → bẻ cong.",
+    "plan": "Phân loại từng hiện tượng.",
+    "steps": ["Bước 1: Cầu vồng → tán sắc ánh sáng.", "Bước 2: Bóng trên sàn → truyền thẳng + vật chắn ✓.", "Bước 3: Cá trong nước → khúc xạ.", "Bước 4: Gương → phản xạ."],
+    "verify": "Bóng có hình giống người → ánh sáng truyền thẳng, bị thân chặn ✓.",
+    "extend": "Đồng hồ mặt trời cổ xưa dùng bóng nắng để xem giờ.",
+    "common_traps": ["Nhầm nhìn cá trong nước là truyền thẳng (thực ra ánh sáng bị bẻ khi qua nước)."],
+    "hints": ["Truyền thẳng → bị chắn → tạo bóng. Tìm hiện tượng liên quan đến bóng."]
+  },
+  "real_world_connection": "Khi đứng ngoài sân trường dưới nắng, con thấy bóng mình trên sàn - đó là ánh sáng truyền thẳng bị chặn.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_009", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "light_source", "topic_vn": "Nguồn sáng và vật sáng",
+  "type": "true_false", "difficulty": "medium",
+  "question_text": "Mọi vật mà mắt ta nhìn thấy đều là nguồn sáng.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Sai. Ta nhìn thấy vật vì có ánh sáng từ vật đó truyền đến mắt. Nhưng nhiều vật chỉ phản xạ ánh sáng (quyển sách, cái bàn) chứ không tự phát sáng → không phải nguồn sáng.","key_concept":"Mắt nhìn thấy vật = có ánh sáng từ vật đến mắt, không nhất thiết vật tự phát sáng."},
+  "thinking_guide": {
+    "understand": "Mọi vật nhìn thấy đều là nguồn sáng? Đúng/Sai?",
+    "identify_knowledge": "Nguồn sáng tự phát sáng. Nhiều vật chỉ phản xạ ánh sáng.",
+    "plan": "Lấy ví dụ phản chứng.",
+    "steps": ["Bước 1: Quyển sách trên bàn - ta nhìn thấy nó.", "Bước 2: Quyển sách không tự phát sáng, chỉ phản xạ ánh sáng đèn.", "Bước 3: → Nhìn thấy nhưng không phải nguồn sáng → Sai."],
+    "verify": "Tắt đèn trong phòng tối → không nhìn thấy sách → sách không tự sáng ✓.",
+    "extend": "Vật sáng = nguồn sáng + vật phản xạ ánh sáng.",
+    "common_traps": ["Vì nhìn thấy vật nên tưởng vật đó phát sáng."],
+    "hints": ["Tắt đèn trong phòng - con có nhìn thấy quyển sách không?"]
+  },
+  "real_world_connection": "Ban đêm không có đèn, phòng tối om, ta không nhìn thấy gì dù đồ vật vẫn ở đó.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_010", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "light_propagation", "topic_vn": "Sự truyền ánh sáng",
+  "type": "true_false", "difficulty": "hard",
+  "question_text": "Ánh sáng có thể truyền qua được mọi vật.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Sai. Ánh sáng chỉ truyền qua được vật trong suốt (kính, nước). Vật mờ (kính mờ) cho một phần ánh sáng qua. Vật chắn sáng (gỗ, kim loại) không cho ánh sáng truyền qua.","key_concept":"Ánh sáng qua vật trong suốt, không qua vật chắn sáng."},
+  "thinking_guide": {
+    "understand": "Ánh sáng có truyền qua mọi vật không?",
+    "identify_knowledge": "3 loại vật: trong suốt, mờ, chắn sáng.",
+    "plan": "Lấy ví dụ vật không cho ánh sáng qua.",
+    "steps": ["Bước 1: Kính trong suốt → ánh sáng qua ✓.", "Bước 2: Tường gạch → ánh sáng không qua ✗.", "Bước 3: → Không phải mọi vật → Sai."],
+    "verify": "Đứng sau tường, không thấy đèn phía bên kia → ánh sáng không qua tường ✓.",
+    "extend": "Tia X có thể xuyên qua một số vật mà ánh sáng thường không qua.",
+    "common_traps": ["Nghĩ đến tia X hoặc tia gamma → nhưng đề hỏi về ánh sáng thông thường."],
+    "hints": ["Con có nhìn xuyên qua tường được không?"]
+  },
+  "real_world_connection": "Rèm cửa chắn ánh sáng Mặt Trời, giúp phòng mát mẻ và dễ ngủ.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_011", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "shadow", "topic_vn": "Bóng tối",
+  "type": "multiple_choice", "difficulty": "hard",
+  "question_text": "Tại sao ban đêm, khi đứng dưới cột đèn đường, bóng của con rất ngắn, nhưng khi đi xa cột đèn, bóng lại dài ra?",
+  "options": [{"key":"A","content":"Vì ánh sáng yếu đi khi xa đèn"},{"key":"B","content":"Vì khi đứng ngay dưới đèn, ánh sáng chiếu từ trên xuống nên bóng ngắn; khi xa đèn, ánh sáng chiếu xiên nên bóng dài"},{"key":"C","content":"Vì con cao hơn khi xa đèn"},{"key":"D","content":"Vì mắt nhìn sai"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Khi đứng ngay dưới đèn, tia sáng chiếu gần như thẳng đứng → bóng ngắn. Khi xa đèn, tia sáng chiếu xiên → bóng dài hơn.","key_concept":"Góc chiếu sáng quyết định độ dài bóng. Xiên → bóng dài, thẳng đứng → bóng ngắn."},
+  "thinking_guide": {
+    "understand": "Tại sao bóng thay đổi khi đi xa cột đèn?",
+    "identify_knowledge": "Ánh sáng truyền thẳng. Góc chiếu khác nhau tạo bóng khác nhau.",
+    "plan": "Vẽ tia sáng từ đèn đến người ở 2 vị trí.",
+    "steps": ["Bước 1: Đứng dưới đèn: tia sáng chiếu từ trên xuống (gần thẳng đứng) → bóng rất ngắn.", "Bước 2: Đi xa: tia sáng chiếu xiên → bóng dài hơn.", "Bước 3: Càng xa đèn → góc xiên càng lớn → bóng càng dài."],
+    "verify": "Buổi trưa (MT trên đỉnh đầu) → bóng ngắn. Chiều (MT xiên) → bóng dài ✓.",
+    "extend": "Nguyên lý tương tự giải thích bóng nắng thay đổi trong ngày.",
+    "common_traps": ["Nghĩ rằng ánh sáng yếu đi gây ra bóng dài (sai - góc chiếu mới quan trọng)."],
+    "hints": ["Vẽ hình: đèn ở trên, người ở 2 vị trí, kẻ đường thẳng từ đèn qua đỉnh đầu."]
+  },
+  "real_world_connection": "Khi đi bộ dưới đèn đường ban đêm, con có thể quan sát bóng mình thay đổi.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_light_basics_012", "grade": 6, "chapter": "light_basics",
+  "chapter_vn": "Ánh sáng", "topic": "shadow", "topic_vn": "Bóng tối",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Tại sao vào buổi trưa nắng, bóng của cây cột ngắn hơn bóng vào buổi chiều? Liên hệ với sự truyền thẳng của ánh sáng.",
+  "options": None,
+  "correct_answer": "Buổi trưa, Mặt Trời ở cao gần đỉnh đầu, tia sáng chiếu gần thẳng đứng nên bóng ngắn. Buổi chiều, Mặt Trời ở thấp, tia sáng chiếu xiên nên bóng dài. Ánh sáng truyền thẳng nên bóng tỉ lệ với góc chiếu.",
+  "explanation": {"summary":"Góc chiếu thay đổi theo vị trí MT Trời trong ngày → bóng thay đổi. Trưa: MT cao → bóng ngắn. Chiều: MT thấp → bóng dài.","key_concept":"Vị trí nguồn sáng + truyền thẳng → góc chiếu → độ dài bóng."},
+  "thinking_guide": {
+    "understand": "Tại sao bóng cột thay đổi từ trưa đến chiều?",
+    "identify_knowledge": "Truyền thẳng ánh sáng + vị trí MT Trời thay đổi trong ngày.",
+    "plan": "So sánh góc chiếu trưa vs chiều.",
+    "steps": ["Bước 1: Buổi trưa: MT Trời ở cao → tia sáng gần thẳng đứng.", "Bước 2: Bóng rơi gần chân cột → ngắn.", "Bước 3: Buổi chiều: MT Trời thấp → tia sáng xiên.", "Bước 4: Bóng kéo dài trên mặt đất → dài."],
+    "verify": "Có thể quan sát bóng cột cờ trường thay đổi trong ngày.",
+    "extend": "Đồng hồ mặt trời cổ đại dùng nguyên lý này để đo giờ.",
+    "common_traps": ["Nghĩ cường độ sáng làm thay đổi bóng (sai - góc chiếu mới quan trọng)."],
+    "hints": ["Vẽ MT Trời ở 2 vị trí (cao/thấp) và kẻ tia sáng qua đỉnh cột."]
+  },
+  "real_world_connection": "Đồng hồ mặt trời ở Hoàng thành Huế dùng bóng nắng để chỉ giờ.",
+  "formula": ""
+})
+
+# ============================================================
+# CHAPTER 7: SOUND BASICS (12 questions)
+# ============================================================
+questions.append({
+  "id": "phys6_sound_basics_001", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "sound_source", "topic_vn": "Nguồn âm",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Nguồn âm là gì?",
+  "options": [{"key":"A","content":"Vật phát ra ánh sáng"},{"key":"B","content":"Vật đang dao động phát ra âm thanh"},{"key":"C","content":"Vật đứng yên"},{"key":"D","content":"Vật có nhiệt độ cao"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Nguồn âm là vật đang dao động (rung) và phát ra âm thanh. Mọi vật phát ra âm thanh đều đang dao động.","key_concept":"Nguồn âm = vật dao động phát ra âm thanh."},
+  "thinking_guide": {
+    "understand": "Nguồn âm là gì?",
+    "identify_knowledge": "Âm thanh do dao động tạo ra. Nguồn âm = vật dao động.",
+    "plan": "Tìm đáp án liên quan đến dao động.",
+    "steps": ["Bước 1: Gõ trống → mặt trống rung → phát ra âm thanh.", "Bước 2: Dây đàn rung → phát ra tiếng.", "Bước 3: → Nguồn âm = vật dao động phát ra âm."],
+    "verify": "Đặt tay lên mặt trống khi đang kêu → thấy rung → dao động ✓.",
+    "extend": "Dây thanh quản trong cổ họng dao động → tạo giọng nói.",
+    "common_traps": ["Nghĩ loa là nguồn âm gốc (thực ra loa tái tạo âm, nguồn gốc là nhạc cụ/giọng nói)."],
+    "hints": ["Mọi vật phát ra âm đều đang rung (dao động)."]
+  },
+  "real_world_connection": "Khi nói, dây thanh quản trong cổ họng con rung → tạo ra giọng nói.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_002", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "sound_medium", "topic_vn": "Môi trường truyền âm",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Âm thanh có thể truyền qua môi trường nào?",
+  "options": [{"key":"A","content":"Chỉ qua chất rắn"},{"key":"B","content":"Chỉ qua chất khí"},{"key":"C","content":"Qua chất rắn, lỏng và khí"},{"key":"D","content":"Qua chân không"}],
+  "correct_answer": "C",
+  "explanation": {"summary":"Âm thanh truyền được qua chất rắn, lỏng, khí. Âm thanh KHÔNG truyền được trong chân không vì cần môi trường vật chất để dao động.","key_concept":"Âm truyền qua rắn, lỏng, khí. KHÔNG truyền trong chân không."},
+  "thinking_guide": {
+    "understand": "Âm thanh truyền qua đâu?",
+    "identify_knowledge": "Âm thanh cần môi trường vật chất (rắn, lỏng, khí) để truyền.",
+    "plan": "Lấy ví dụ truyền âm qua 3 môi trường.",
+    "steps": ["Bước 1: Khí: nghe nhạc qua không khí ✓.", "Bước 2: Lỏng: nghe tiếng động dưới nước ✓.", "Bước 3: Rắn: áp tai xuống bàn, gõ đầu kia nghe rõ ✓.", "Bước 4: Chân không: ngoài vũ trụ không nghe được ✗."],
+    "verify": "Thí nghiệm chuông trong bình chân không: hút hết khí → không nghe tiếng chuông.",
+    "extend": "Tốc độ âm: rắn > lỏng > khí. Trong thép ≈ 5000 m/s, nước ≈ 1500 m/s, không khí ≈ 340 m/s.",
+    "common_traps": ["Nhầm: âm thanh truyền được trong chân không (sai - phim Star Wars có tiếng nổ ngoài vũ trụ là không thực tế)."],
+    "hints": ["Âm cần 'cái gì đó' để rung. Chân không = không có gì → không rung → không truyền."]
+  },
+  "real_world_connection": "Khi lặn dưới hồ bơi, con vẫn nghe được tiếng gọi từ trên bờ → âm truyền qua nước.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_003", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "loudness", "topic_vn": "Độ to của âm",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Độ to của âm thanh phụ thuộc vào yếu tố nào?",
+  "options": [{"key":"A","content":"Tần số dao động"},{"key":"B","content":"Biên độ dao động"},{"key":"C","content":"Tốc độ truyền âm"},{"key":"D","content":"Môi trường truyền âm"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Độ to của âm phụ thuộc vào biên độ dao động. Biên độ càng lớn → âm càng to. Biên độ nhỏ → âm nhỏ.","key_concept":"Độ to ↔ biên độ dao động. Biên độ lớn → âm to."},
+  "thinking_guide": {
+    "understand": "Độ to âm thanh phụ thuộc gì?",
+    "identify_knowledge": "Độ to → biên độ. Độ cao → tần số.",
+    "plan": "Phân biệt: to/nhỏ ↔ biên độ. Cao/thấp ↔ tần số.",
+    "steps": ["Bước 1: Gõ mạnh trống → biên độ lớn → tiếng to.", "Bước 2: Gõ nhẹ → biên độ nhỏ → tiếng nhỏ.", "Bước 3: → Độ to phụ thuộc biên độ."],
+    "verify": "Đánh đàn mạnh → dây rung rộng (biên độ lớn) → tiếng to ✓.",
+    "extend": "Đơn vị đo độ to: đềxiben (dB). Ngưỡng đau tai: 130 dB.",
+    "common_traps": ["Nhầm độ to với độ cao. To/nhỏ ≠ cao/thấp."],
+    "hints": ["TO = rung MẠNH = biên độ LỚN."]
+  },
+  "real_world_connection": "Gõ mạnh vào mặt bàn → tiếng to. Gõ nhẹ → tiếng nhỏ. Biên độ rung khác nhau.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_004", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "pitch", "topic_vn": "Độ cao của âm",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Độ cao của âm thanh phụ thuộc vào yếu tố nào?",
+  "options": [{"key":"A","content":"Biên độ dao động"},{"key":"B","content":"Tần số dao động"},{"key":"C","content":"Độ to của âm"},{"key":"D","content":"Khoảng cách đến nguồn âm"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Độ cao của âm phụ thuộc vào tần số dao động. Tần số càng lớn → âm càng cao (bổng). Tần số nhỏ → âm thấp (trầm).","key_concept":"Độ cao ↔ tần số. Tần số lớn → âm cao (bổng)."},
+  "thinking_guide": {
+    "understand": "Độ cao âm thanh phụ thuộc gì?",
+    "identify_knowledge": "Độ cao → tần số. Độ to → biên độ.",
+    "plan": "Tần số = số dao động trong 1 giây.",
+    "steps": ["Bước 1: Dây đàn ngắn, căng → rung nhanh (tần số lớn) → tiếng cao.", "Bước 2: Dây đàn dài, chùng → rung chậm (tần số nhỏ) → tiếng trầm.", "Bước 3: → Độ cao phụ thuộc tần số."],
+    "verify": "Giọng nữ cao (tần số ~300Hz) > giọng nam trầm (tần số ~100Hz) ✓.",
+    "extend": "Tai người nghe được tần số 20 Hz - 20000 Hz.",
+    "common_traps": ["Nhầm biên độ (độ to) với tần số (độ cao)."],
+    "hints": ["CAO = rung NHANH = tần số LỚN."]
+  },
+  "real_world_connection": "Tiếng muỗi vo ve rất cao (tần số lớn), tiếng trống trầm hùng (tần số nhỏ).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_005", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "sound_source", "topic_vn": "Nguồn âm",
+  "type": "multiple_choice", "difficulty": "easy",
+  "question_text": "Khi gõ vào mặt trống, bộ phận nào của trống dao động phát ra âm thanh?",
+  "options": [{"key":"A","content":"Thân trống"},{"key":"B","content":"Mặt trống"},{"key":"C","content":"Chân trống"},{"key":"D","content":"Dùi trống"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Khi gõ, mặt trống dao động (rung) phát ra âm thanh. Có thể cảm nhận bằng cách rắc cát lên mặt trống → cát nảy lên.","key_concept":"Mặt trống dao động → phát ra âm thanh."},
+  "thinking_guide": {
+    "understand": "Bộ phận nào của trống dao động phát ra âm?",
+    "identify_knowledge": "Vật phát ra âm phải đang dao động. Mặt trống rung khi bị gõ.",
+    "plan": "Xác định bộ phận tiếp xúc với dùi và dao động.",
+    "steps": ["Bước 1: Dùi gõ vào mặt trống.", "Bước 2: Mặt trống rung (dao động).", "Bước 3: Dao động → phát ra âm thanh."],
+    "verify": "Rắc giấy vụn lên mặt trống, gõ → giấy nảy → mặt trống dao động ✓.",
+    "extend": "Mỗi nhạc cụ có bộ phận dao động khác nhau: đàn = dây, sáo = cột khí.",
+    "common_traps": ["Nghĩ thân trống phát ra âm (thân trống khuếch đại âm, không phải nguồn)."],
+    "hints": ["Dùi chạm vào đâu → cái đó rung → phát ra âm."]
+  },
+  "real_world_connection": "Khi đánh trống trường, mặt trống rung rất mạnh, cảm nhận được nếu chạm tay.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_006", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "sound_medium", "topic_vn": "Môi trường truyền âm",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Tốc độ truyền âm trong các môi trường được sắp xếp từ lớn đến nhỏ là:",
+  "options": [{"key":"A","content":"Rắn > lỏng > khí"},{"key":"B","content":"Khí > lỏng > rắn"},{"key":"C","content":"Lỏng > rắn > khí"},{"key":"D","content":"Rắn > khí > lỏng"}],
+  "correct_answer": "A",
+  "explanation": {"summary":"Tốc độ truyền âm: rắn > lỏng > khí. Vì trong chất rắn, các phân tử gần nhau nhất nên truyền dao động nhanh nhất.","key_concept":"Tốc độ âm: rắn > lỏng > khí."},
+  "thinking_guide": {
+    "understand": "Sắp xếp tốc độ truyền âm trong 3 môi trường.",
+    "identify_knowledge": "Phân tử rắn gần nhau nhất → truyền dao động nhanh nhất.",
+    "plan": "So sánh khoảng cách phân tử trong 3 môi trường.",
+    "steps": ["Bước 1: Rắn: phân tử rất gần → truyền nhanh nhất.", "Bước 2: Lỏng: phân tử xa hơn rắn → nhanh vừa.", "Bước 3: Khí: phân tử xa nhất → chậm nhất.", "Bước 4: → Rắn > lỏng > khí."],
+    "verify": "Trong thép v ≈ 5000 m/s, nước ≈ 1500 m/s, không khí ≈ 340 m/s ✓.",
+    "extend": "Người Da Đỏ áp tai xuống đất để nghe tiếng vó ngựa từ xa.",
+    "common_traps": ["Nhầm: không khí truyền nhanh nhất vì ta nghe âm qua không khí nhiều nhất."],
+    "hints": ["Phân tử gần nhau → 'đẩy' nhau nhanh → âm truyền nhanh."]
+  },
+  "real_world_connection": "Áp tai vào đường ray, nghe tiếng tàu hỏa từ rất xa (âm truyền nhanh qua thép).",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_007", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "noise_pollution", "topic_vn": "Ô nhiễm tiếng ồn",
+  "type": "multiple_choice", "difficulty": "medium",
+  "question_text": "Biện pháp nào sau đây giúp giảm ô nhiễm tiếng ồn?",
+  "options": [{"key":"A","content":"Mở cửa sổ khi ở gần đường lớn"},{"key":"B","content":"Trồng cây xanh xung quanh nhà"},{"key":"C","content":"Dùng loa phát nhạc to hơn"},{"key":"D","content":"Xây nhà gần sân bay"}],
+  "correct_answer": "B",
+  "explanation": {"summary":"Trồng cây xanh giúp hấp thụ và giảm tiếng ồn. Cây có tán lá dày cản và phân tán sóng âm hiệu quả.","key_concept":"Biện pháp giảm ồn: trồng cây, cách âm, giảm âm tại nguồn."},
+  "thinking_guide": {
+    "understand": "Tìm biện pháp giảm ô nhiễm tiếng ồn.",
+    "identify_knowledge": "3 cách giảm ồn: tại nguồn, trên đường truyền, tại nơi nhận.",
+    "plan": "Phân tích từng đáp án.",
+    "steps": ["Bước 1: Mở cửa → ồn thêm → không giảm.", "Bước 2: Trồng cây → cản + hấp thụ tiếng ồn → giảm ✓.", "Bước 3: Mở nhạc to hơn → tăng ồn.", "Bước 4: Gần sân bay → nhiều ồn hơn."],
+    "verify": "Đường có dải cây xanh yên tĩnh hơn đường không có cây ✓.",
+    "extend": "Các biện pháp khác: lắp kính 2 lớp, dùng vật liệu cách âm, đeo nút tai.",
+    "common_traps": ["Nghĩ chỉ cần đóng cửa là đủ (đóng cửa giảm ồn nhưng trồng cây hiệu quả hơn)."],
+    "hints": ["Cây xanh như 'tường chắn' tự nhiên ngăn âm thanh."]
+  },
+  "real_world_connection": "Dọc đường cao tốc TP.HCM - Long Thành có trồng hàng cây xanh để giảm ồn cho khu dân cư.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_008", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "sound_medium", "topic_vn": "Môi trường truyền âm",
+  "type": "true_false", "difficulty": "medium",
+  "question_text": "Trên Mặt Trăng, hai phi hành gia không thể nói chuyện trực tiếp với nhau (không dùng bộ đàm) vì Mặt Trăng không có khí quyển.",
+  "options": [{"key":"A","content":"Đúng"},{"key":"B","content":"Sai"}],
+  "correct_answer": "A",
+  "explanation": {"summary":"Đúng. Mặt Trăng không có khí quyển (gần như chân không). Âm thanh không truyền được trong chân không nên không thể nói chuyện trực tiếp.","key_concept":"Không có không khí = chân không → âm thanh không truyền được."},
+  "thinking_guide": {
+    "understand": "Trên Mặt Trăng không nói chuyện trực tiếp được? Đúng/Sai?",
+    "identify_knowledge": "Âm thanh không truyền trong chân không. Mặt Trăng không có khí quyển.",
+    "plan": "Kiểm tra: MT Trăng có khí quyển không? Âm có truyền trong chân không không?",
+    "steps": ["Bước 1: Mặt Trăng không có khí quyển → chân không.", "Bước 2: Âm không truyền trong chân không.", "Bước 3: → Không nói chuyện trực tiếp được → Đúng."],
+    "verify": "Phi hành gia NASA dùng sóng radio (bộ đàm) để liên lạc trên Mặt Trăng ✓.",
+    "extend": "Sóng radio (sóng điện từ) truyền được trong chân không, khác với sóng âm.",
+    "common_traps": ["Nghĩ phi hành gia nói to hơn là được (sai - không có không khí thì không truyền âm)."],
+    "hints": ["Chân không = không có phân tử → không có gì rung → không truyền âm."]
+  },
+  "real_world_connection": "Trong phim khoa học viễn tưởng, tiếng nổ ngoài vũ trụ là không thực tế vì ngoài đó là chân không.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_009", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "pitch", "topic_vn": "Độ cao của âm",
+  "type": "fill_in", "difficulty": "hard",
+  "question_text": "Tai người có thể nghe được âm thanh có tần số trong khoảng từ ______ Hz đến 20000 Hz.",
+  "options": None,
+  "correct_answer": "20",
+  "explanation": {"summary":"Tai người nghe được âm có tần số từ 20 Hz đến 20000 Hz. Dưới 20 Hz gọi là hạ âm, trên 20000 Hz gọi là siêu âm.","key_concept":"Ngưỡng nghe tai người: 20 Hz - 20000 Hz."},
+  "thinking_guide": {
+    "understand": "Giới hạn dưới tần số nghe được của tai người.",
+    "identify_knowledge": "Tai người: 20 Hz - 20000 Hz.",
+    "plan": "Nhớ lại ngưỡng nghe.",
+    "steps": ["Bước 1: Giới hạn dưới: 20 Hz.", "Bước 2: Giới hạn trên: 20000 Hz.", "Bước 3: < 20 Hz: hạ âm. > 20000 Hz: siêu âm."],
+    "verify": "Chó nghe được siêu âm (>20000 Hz) mà người không nghe được ✓.",
+    "extend": "Máy siêu âm y tế dùng sóng siêu âm (>20000 Hz) để chụp hình thai nhi.",
+    "common_traps": ["Nhầm 200 Hz thay vì 20 Hz."],
+    "hints": ["20 - 20000: hai số 20, một có 3 số 0."]
+  },
+  "real_world_connection": "Còi chó (dog whistle) phát siêu âm mà chó nghe được nhưng người không nghe.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_010", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "noise_pollution", "topic_vn": "Ô nhiễm tiếng ồn",
+  "type": "fill_in", "difficulty": "medium",
+  "question_text": "Đơn vị đo độ to (mức cường độ âm) của âm thanh là ______ (viết tắt: dB).",
+  "options": None,
+  "correct_answer": "đềxiben",
+  "explanation": {"summary":"Đơn vị đo độ to của âm thanh là đềxiben, viết tắt dB. Ngưỡng đau tai khoảng 130 dB.","key_concept":"Đơn vị độ to: đềxiben (dB)."},
+  "thinking_guide": {
+    "understand": "Đơn vị đo độ to âm thanh, viết tắt dB.",
+    "identify_knowledge": "dB = đềxiben (decibel).",
+    "plan": "Nhớ lại tên đơn vị từ viết tắt dB.",
+    "steps": ["Bước 1: dB = đềxiben.", "Bước 2: d = đềxi (1/10), B = Ben (tên nhà khoa học Bell)."],
+    "verify": "Tiếng thì thầm ≈ 20 dB, nói bình thường ≈ 60 dB, nhạc rock ≈ 110 dB.",
+    "extend": "Tiếp xúc tiếng ồn > 85 dB trong thời gian dài gây tổn thương thính giác.",
+    "common_traps": ["Viết sai chính tả: đềxiben, không phải đêxiben hay đềxibel."],
+    "hints": ["dB = đề-xi-ben. Đặt theo tên nhà phát minh điện thoại Alexander Graham Bell."]
+  },
+  "real_world_connection": "Ứng dụng đo tiếng ồn trên điện thoại có thể đo mức dB xung quanh con.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_011", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "noise_pollution", "topic_vn": "Ô nhiễm tiếng ồn",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Tại sao khi ở gần công trường xây dựng, người dân thường bị ảnh hưởng sức khỏe? Nêu 3 biện pháp giảm ô nhiễm tiếng ồn.",
+  "options": None,
+  "correct_answer": "Tiếng ồn lớn (>70 dB) kéo dài gây mệt mỏi, mất ngủ, giảm thính lực, stress. Ba biện pháp: (1) Giảm ồn tại nguồn (dùng máy ít ồn, lót giảm chấn), (2) Ngăn trên đường truyền (xây tường cách âm, trồng cây), (3) Bảo vệ tại người nhận (đeo nút tai, đóng cửa kính).",
+  "explanation": {"summary":"Tiếng ồn công trường >85 dB, vượt ngưỡng an toàn. Giảm ồn 3 cách: tại nguồn, trên đường truyền, tại người nhận.","key_concept":"Ô nhiễm tiếng ồn ảnh hưởng sức khỏe. 3 biện pháp giảm ồn."},
+  "thinking_guide": {
+    "understand": "Tại sao tiếng ồn công trường ảnh hưởng sức khỏe? Nêu 3 cách giảm.",
+    "identify_knowledge": "Ngưỡng an toàn <70 dB. 3 nhóm biện pháp giảm ồn.",
+    "plan": "Giải thích tác hại + liệt kê 3 biện pháp theo 3 nhóm.",
+    "steps": ["Bước 1: Công trường ồn >85 dB → vượt ngưỡng an toàn.", "Bước 2: Tác hại: mệt mỏi, mất ngủ, giảm thính lực.", "Bước 3: BP1 - tại nguồn: dùng máy ít ồn.", "Bước 4: BP2 - đường truyền: tường cách âm, cây xanh.", "Bước 5: BP3 - người nhận: nút tai, đóng cửa."],
+    "verify": "Công nhân xây dựng đeo nút tai → đúng biện pháp tại người nhận.",
+    "extend": "Luật pháp quy định giờ thi công để giảm ảnh hưởng đến dân.",
+    "common_traps": ["Chỉ nêu 1 biện pháp, quên phân loại 3 nhóm."],
+    "hints": ["3 vị trí giảm ồn: nguồn → đường đi → tai."]
+  },
+  "real_world_connection": "Nhiều chung cư gần đường lớn ở TP.HCM lắp kính 2 lớp để giảm tiếng ồn xe cộ.",
+  "formula": ""
+})
+
+questions.append({
+  "id": "phys6_sound_basics_012", "grade": 6, "chapter": "sound_basics",
+  "chapter_vn": "Âm thanh", "topic": "sound_source", "topic_vn": "Nguồn âm",
+  "type": "explain", "difficulty": "hard",
+  "question_text": "Khi gảy dây đàn guitar, tại sao ta nghe được âm thanh? Nếu dùng tay chạm vào dây đàn đang rung thì điều gì xảy ra? Giải thích.",
+  "options": None,
+  "correct_answer": "Gảy dây → dây dao động → truyền dao động qua không khí → đến tai → nghe được âm. Khi chạm tay vào dây đang rung → dây ngừng dao động → âm tắt. Vì nguồn âm ngừng dao động thì không còn phát ra âm thanh.",
+  "explanation": {"summary":"Dây đàn dao động → không khí rung → tai nghe. Chạm tay → dừng dao động → âm tắt. Mất dao động = mất âm.","key_concept":"Có dao động → có âm. Ngừng dao động → âm tắt."},
+  "thinking_guide": {
+    "understand": "Gảy đàn → nghe âm. Chạm dây → sao? Giải thích.",
+    "identify_knowledge": "Âm thanh do dao động. Ngừng dao động → hết âm.",
+    "plan": "Giải thích chuỗi: gảy → dao động → truyền → tai. Chạm → dừng → tắt.",
+    "steps": ["Bước 1: Gảy dây → dây rung (dao động).", "Bước 2: Dao động truyền qua không khí đến tai.", "Bước 3: Tai nhận dao động → nghe được âm.", "Bước 4: Chạm tay → dây dừng rung → không còn dao động.", "Bước 5: → Âm tắt ngay lập tức."],
+    "verify": "Thử gảy dây rồi chạm → âm tắt ngay → đúng ✓.",
+    "extend": "Kỹ thuật 'tắt dây' (muting) trong guitar rất quan trọng khi chơi nhạc.",
+    "common_traps": ["Nghĩ âm vẫn còn sau khi chạm dây (có thể nghe dư âm do phòng dội lại, nhưng dây đã hết rung)."],
+    "hints": ["Dao động = nguồn gốc âm thanh. Ngừng dao động = ngừng âm thanh."]
+  },
+  "real_world_connection": "Nghệ sĩ guitar dùng kỹ thuật chạm dây (palm mute) để tạo hiệu ứng âm thanh đặc biệt.",
+  "formula": ""
+})
+
+# Write to file
+output_path = r"c:\Users\HAIQUYNH\OneDrive\CODE AI\MIUPREP_SYSTEM\apps\miuphysics-app\public\data\questions_db.json"
+os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully wrote {len(questions)} questions to {output_path}")
+
+# Verify distribution
+from collections import Counter
+chapters = Counter(q["chapter"] for q in questions)
+difficulties = Counter(q["difficulty"] for q in questions)
+types = Counter(q["type"] for q in questions)
+print(f"\nChapter distribution: {dict(chapters)}")
+print(f"Difficulty distribution: {dict(difficulties)}")
+print(f"Type distribution: {dict(types)}")
+print(f"\nDifficulty %: easy={difficulties['easy']/len(questions)*100:.0f}%, medium={difficulties['medium']/len(questions)*100:.0f}%, hard={difficulties['hard']/len(questions)*100:.0f}%")
+print(f"Type %: MC={types['multiple_choice']/len(questions)*100:.0f}%, fill_in={types['fill_in']/len(questions)*100:.0f}%, T/F={types['true_false']/len(questions)*100:.0f}%, explain={types['explain']/len(questions)*100:.0f}%")

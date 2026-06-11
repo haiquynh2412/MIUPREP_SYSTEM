@@ -121,6 +121,13 @@ export default function StudentTodaySprint({
   );
 
   const primaryAction = hasDueErrors ? onStartRepair : onOpenCourses;
+  const nextIncompleteStep = dailyPlan.steps.find((step) => !step.completed);
+  const remainingMinutes = Math.max(0, dailyPlan.totalMinutes - dailyPlan.completedMinutes);
+  const momentumMessage = dailyPlan.isCompleted
+    ? 'Quest complete. Come back tomorrow for a fresh target.'
+    : nextIncompleteStep
+      ? `Next tiny step: ${nextIncompleteStep.title} (${nextIncompleteStep.durationMinutes} min).`
+      : 'Pick one step and start small.';
 
   const handleTimeModeChange = (nextMode: StudyTimeMode) => {
     setTimeMode(nextMode);
@@ -186,7 +193,7 @@ export default function StudentTodaySprint({
         <div className="space-y-3">
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-[10px] font-black uppercase tracking-[0.18em] text-emerald-300 bg-emerald-950/80 border border-emerald-700/60 px-2 py-1 rounded">
-              Daily Learning Loop V2
+              Today quest
             </span>
             <span className="text-[10px] font-bold text-slate-400 bg-slate-950/60 border border-slate-800 px-2 py-1 rounded">
               {dailyPlan.completedStepCount}/{dailyPlan.totalStepCount} steps - {dailyPlan.completedMinutes}/{dailyPlan.totalMinutes} min
@@ -203,15 +210,16 @@ export default function StudentTodaySprint({
             <p className="text-sm text-slate-300 mt-2 mb-0 max-w-2xl leading-relaxed">{dailyPlan.primaryDetail}</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 max-w-3xl">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 max-w-3xl">
             <MiniMetric label="Mastery" value={`${Math.round(snapshot.averageMastery)}%`} />
             <MiniMetric label="Due errors" value={String(activeErrorQuestionCount)} />
             <MiniMetric label="Coins" value={String(fishCoins)} />
+            <MiniMetric label="Reward" value={`+${dailyPlan.rewardCoins}`} />
           </div>
 
           <div className="max-w-3xl">
             <div className="flex items-center justify-between text-[11px] font-black uppercase tracking-widest text-slate-500">
-              <span>Today target</span>
+              <span>Quest progress</span>
               <span>{dailyPlan.completionPercent}%</span>
             </div>
             <div className="h-3 rounded-full bg-slate-950 border border-slate-800 overflow-hidden mt-2">
@@ -220,6 +228,12 @@ export default function StudentTodaySprint({
                 style={{ width: `${Math.max(4, dailyPlan.completionPercent)}%` }}
               />
             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-3xl">
+            <MomentumTile label="Next move" value={momentumMessage} />
+            <MomentumTile label="Time left" value={dailyPlan.isCompleted ? 'Done for today' : `${remainingMinutes} focused min`} />
+            <MomentumTile label="Reward rule" value={`Finish all steps once today to earn +${dailyPlan.rewardCoins} coins.`} />
           </div>
         </div>
 
@@ -268,7 +282,7 @@ export default function StudentTodaySprint({
             onClick={primaryAction}
             className="bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-sm px-5 py-3 rounded-2xl border-0 cursor-pointer shadow-lg shadow-emerald-950/30 transition-colors flex-1"
           >
-            Start now
+            Start today's quest
           </button>
           <button
             type="button"
@@ -302,7 +316,7 @@ export default function StudentTodaySprint({
                 }`}
                 title={step.completed ? 'Mark incomplete' : 'Mark complete'}
               >
-                {step.completed ? 'OK' : index + 1}
+                {step.completed ? '✓' : index + 1}
               </button>
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{step.durationMinutes} min</span>
             </div>
@@ -321,7 +335,7 @@ export default function StudentTodaySprint({
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-5 mt-5 pt-5 border-t border-emerald-500/20">
         <div className="bg-slate-950/45 border border-slate-800 rounded-2xl p-4">
-          <p className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-500 m-0">Loop logic</p>
+          <p className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-500 m-0">Why this works</p>
           <p className="text-xs text-slate-300 mt-2 mb-0 leading-relaxed">
             Mini diagnostic finds the bottleneck, micro lesson repairs the exact link, guided practice builds the method,
             independent practice collects evidence, and error review protects retention.
@@ -334,7 +348,7 @@ export default function StudentTodaySprint({
             onClick={markAllDone}
             className="bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-sm px-5 py-3 rounded-2xl border-0 cursor-pointer shadow-lg shadow-emerald-950/30 transition-colors"
           >
-            Mark target done
+            Complete quest
           </button>
           <button
             type="button"
@@ -354,6 +368,15 @@ function MiniMetric({ label, value }: { label: string; value: string }) {
     <div className="bg-slate-950/60 border border-slate-800 rounded-2xl p-3">
       <p className="text-[9px] font-black uppercase tracking-[0.14em] text-slate-500 m-0">{label}</p>
       <p className="text-xl font-black text-emerald-300 m-0 mt-1 font-mono">{value}</p>
+    </div>
+  );
+}
+
+function MomentumTile({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-2xl p-3">
+      <p className="text-[9px] font-black uppercase tracking-[0.14em] text-emerald-300 m-0">{label}</p>
+      <p className="text-[11px] text-slate-200 font-bold leading-relaxed mt-1 mb-0">{value}</p>
     </div>
   );
 }

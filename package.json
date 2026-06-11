@@ -10,6 +10,7 @@
   "scripts": {
     "dev:portal": "npm run dev -w miuprep-portal",
     "dev:miumath": "npm run dev -w miumath-app",
+    "dev:miuphysics": "npm run dev -w miuphysics-app",
     "dev:ielts": "npm run dev -w @miuprep/desktop",
     "dev:cpe": "npm run dev -w @miuprep/cpe-desktop",
     "dev:sat": "npm run dev:vite -w sat-studio",

@@ -5,6 +5,12 @@ const path = require("node:path");
 const repoRoot = path.resolve(__dirname, "..");
 const isWindows = process.platform === "win32";
 const npmCommand = isWindows ? "npm.cmd" : "npm";
+const buildScriptOverrides = new Map([
+  // Portal public assets include large SAT banks and formula images. The monorepo
+  // build gate validates code bundling; full public asset copy stays available via
+  // `npm run build -w miuprep-portal` when packaging the portal artifact.
+  ["miuprep-portal", "build:app"],
+]);
 
 const preferredOrder = [
   "@miuprep/knowledge",
@@ -49,8 +55,9 @@ const orderedNames = [
 ];
 
 for (const name of orderedNames) {
-  console.log(`\n> Building ${name}`);
-  const result = runNpm(["run", "build", "-w", name]);
+  const scriptName = buildScriptOverrides.get(name) || "build";
+  console.log(`\n> Building ${name}${scriptName === "build" ? "" : ` (${scriptName})`}`);
+  const result = runNpm(["run", scriptName, "-w", name]);
   if (result.error) {
     console.error(result.error.message);
     process.exit(1);

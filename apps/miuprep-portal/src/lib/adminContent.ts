@@ -1,9 +1,8 @@
-import {
-  parseAdminEnglishExamImportJson,
-  type AdminEnglishExamTrack,
-  type AdminEnglishImportAdapterReport,
-  type AdminEnglishStandardStatus,
-} from '@miuprep/content';
+import type {
+  AdminEnglishExamTrack,
+  AdminEnglishImportAdapterReport,
+  AdminEnglishStandardStatus,
+} from '@miuprep/content/src/admin-import';
 
 export type EnglishExamTrack = AdminEnglishExamTrack;
 
@@ -129,6 +128,17 @@ export type ExamImportResult =
 
 const DEFAULT_MATH_TOPIC = 'Đại số (Algebra)';
 
+type AdminContentModule = typeof import('@miuprep/content/src/admin-import');
+
+let adminContentModulePromise: Promise<AdminContentModule> | null = null;
+
+function loadAdminContentModule(): Promise<AdminContentModule> {
+  if (!adminContentModulePromise) {
+    adminContentModulePromise = import('@miuprep/content/src/admin-import');
+  }
+  return adminContentModulePromise;
+}
+
 export function createCasioTip(
   input: { title: string; syntax: string; explanation: string },
   now = Date.now()
@@ -148,7 +158,8 @@ export function createCasioTip(
   };
 }
 
-export function importExamFromJson(input: string, trackId: EnglishExamTrack): ExamImportResult {
+export async function importExamFromJson(input: string, trackId: EnglishExamTrack): Promise<ExamImportResult> {
+  const { parseAdminEnglishExamImportJson } = await loadAdminContentModule();
   return parseAdminEnglishExamImportJson(input, trackId);
 }
 

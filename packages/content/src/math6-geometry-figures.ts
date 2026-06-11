@@ -130,7 +130,7 @@ function generateCollinearSegments(prompt: string, text: string): Math6Generated
 }
 
 function generateAngle(prompt: string, text: string): Math6GeneratedFigure | undefined {
-  if (!/(?:goc|tia phan giac|ke bu|nua mat phang)/.test(text)) return undefined;
+  if (!hasStrongAngleCue(text)) return undefined;
   const hasBisector = /(?:phan giac|om|ot)/.test(text);
   const angleValues = [...text.matchAll(/(\d{2,3})\s*(?:do|0|\u00b0)/g)].map((match) => Number(match[1])).filter((value) => value > 0 && value <= 180);
   const angle = angleValues[0] || 70;
@@ -157,6 +157,10 @@ function generateAngle(prompt: string, text: string): Math6GeneratedFigure | und
       ${caption(prompt)}
     `),
   };
+}
+
+function hasStrongAngleCue(text: string): boolean {
+  return /\b(?:tia\s+phan\s+giac|phan\s+giac|ke\s+bu|so\s+do\s+goc|nua\s+mat\s+phang|goc\s+[a-z]{2,4}|goc\s+[a-z]\s+(?:vuong|nhon|tu|bet))\b/.test(text);
 }
 
 function generateTrianglePoints(prompt: string, text: string): Math6GeneratedFigure | undefined {

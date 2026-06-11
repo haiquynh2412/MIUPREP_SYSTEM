@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { isCorrectAnswer } from '@miuprep/core';
 import type { ExamAttempt } from '@miuprep/db';
 import type { IeltsTest } from '@miuprep/content';
-import { toQuestionItemFromEnglishExam } from '@miuprep/content';
+import { toQuestionItemFromEnglishExam } from '@miuprep/content/src/standard';
 import { createSeedKnowledgeGraph, type KnowledgeGraph } from '@miuprep/knowledge';
 import {
   buildLearningPath,

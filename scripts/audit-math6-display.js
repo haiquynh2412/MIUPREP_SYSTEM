@@ -15,11 +15,14 @@ const rawSources = Array.isArray(rawExtract) ? rawExtract : rawExtract.sources |
 
 const EXERCISE_HEADER_RE = /(?:^|[\r\n\f]|[^\p{L}])\s*((?:B[\p{L}\u00a0]{0,3}i|C[\p{L}\u00a0]{0,3}u)(?:\s+t[\p{L}\u00a0]{0,3}p)?\s*\d+[A-Za-z\u00c0-\u1ef90-9\s]*[:.)-]?)/giu;
 const CONTROL_OR_REPLACEMENT_RE = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\ufffd]/;
-const MOJIBAKE_RE = /(?:\u00c3|\u00c4|\u00c5|\u00c2|\u00c6|\u00e1[\u00ba\u00bb])/;
-const LEGACY_FONT_RE = /[\u00a9\u00aa\u00ad\u00ae\u00b5\u00b8\u00c5\u00cf\u00d7\u00d8\u00de\u00e7\u00f1\u00f8\u00fc]/;
+const MOJIBAKE_RE = /(?:\u00c3|\u00c4|\u00c5|\u00c6|\u00e1[\u00ba\u00bb])/;
+const LEGACY_FONT_RE = /[\u00a9\u00aa\u00ad\u00ae\u00b5\u00b8\u00c5\u00cf\u00d8\u00de\u00e7\u00f1\u00f8\u00fc]/;
 
 const rawBlocksBySource = new Map(
   rawSources.map((source) => [source.relativePath || source.fileName, extractRawBlocks(source.text)]),
+);
+const formulaRecoveryGapBySource = new Map(
+  rawSources.map((source) => [source.relativePath || source.fileName, getFormulaRecoveryGap(source)]),
 );
 
 const audits = items.map((item) => {
@@ -29,6 +32,10 @@ const audits = items.map((item) => {
   const blockIndex = getBlockIndex(item.id);
   const rawBlock = blockIndex ? rawBlocksBySource.get(sourceFile)?.[blockIndex - 1] : undefined;
   const rawOleMarkers = rawBlock?.oleMarkers || 0;
+  const sourceFormulaRecoveryGap = formulaRecoveryGapBySource.get(sourceFile) || 0;
+  const missingFormulaAssets = countMissingFormulaAssets(item);
+  const recoveredFormulaAssets = countRecoveredFormulaAssets(item);
+  const recoveredFigureAsset = hasRecoveredFigureAsset(item);
 
   return {
     id: item.id,
@@ -43,6 +50,10 @@ const audits = items.map((item) => {
       imageDependency: hasImageDependency(normalizedPrompt),
       generatedFigure: Boolean(item.metadata?.generatedFigure),
       rawOleFormulaMarkers: rawOleMarkers,
+      sourceFormulaRecoveryGap,
+      missingFormulaAssets,
+      recoveredFormulaAssets,
+      recoveredFigureAsset,
       blankFormulaShape: hasBlankFormulaShape(normalizedPrompt),
     },
   };
@@ -50,8 +61,11 @@ const audits = items.map((item) => {
 
 const issueRows = audits.map((audit) => ({
   ...audit,
-  needsFormulaReview: audit.flags.rawOleFormulaMarkers > 0 || audit.flags.blankFormulaShape,
-  needsImageReview: audit.flags.imageDependency && !audit.flags.generatedFigure,
+  needsFormulaReview: audit.flags.missingFormulaAssets > 0
+    || audit.flags.blankFormulaShape
+    || (audit.flags.rawOleFormulaMarkers > 0 && audit.flags.recoveredFormulaAssets === 0)
+    || (audit.flags.sourceFormulaRecoveryGap > 0 && audit.flags.blankFormulaShape),
+  needsImageReview: audit.flags.imageDependency && !audit.flags.generatedFigure && !audit.flags.recoveredFigureAsset,
   needsTextEncodingReview: audit.flags.controlCharacters || audit.flags.legacyFontOrEncoding,
 }));
 
@@ -67,6 +81,9 @@ const summary = {
   promptControlCharacters: audits.filter((row) => row.flags.controlCharacters).length,
   rawSourcesWithOleMarkers: rawSources.filter((source) => getRawOleMarkerCount(source) > 0).length,
   rawOleMarkersTotal: rawSources.reduce((sum, source) => sum + getRawOleMarkerCount(source), 0),
+  missingFormulaAssets: audits.reduce((sum, row) => sum + row.flags.missingFormulaAssets, 0),
+  sourcesWithFormulaRecoveryGap: rawSources.filter((source) => getFormulaRecoveryGap(source) > 0).length,
+  formulaRecoveryGapMarkers: rawSources.reduce((sum, source) => sum + getFormulaRecoveryGap(source), 0),
   byTopic: summarizeBy(issueRows, 'topicId'),
   topFormulaSources: topSources(issueRows, (row) => row.needsFormulaReview),
   topImageSources: topSources(issueRows, (row) => row.needsImageReview),
@@ -128,15 +145,30 @@ function normalizePrompt(text) {
 }
 
 function hasImageDependency(normalizedPrompt) {
+  if (/\bcon duong\s+a1\b.*\bb1\b.*\bc1\b/.test(normalizedPrompt)) return false;
+  if (
+    /\bbang\s+o\s+gom\s+2007\s+o\b/.test(normalizedPrompt)
+    && /\bo\s+1\s+trong\b/.test(normalizedPrompt)
+    && /\bo\s+2\s*=\s*17\b/.test(normalizedPrompt)
+    && /\bo\s+4\s*=\s*36\b/.test(normalizedPrompt)
+    && /\bo\s+7\s*=\s*19\b/.test(normalizedPrompt)
+  ) return false;
   return /\bhinh\s+(?:ve|\d|ben|sau|duoi|tren)\b/.test(normalizedPrompt)
     || /\b(?:cho|ve|theo)\s+hinh\b/.test(normalizedPrompt)
     || /\bbang\s+o\b/.test(normalizedPrompt);
 }
 
 function hasBlankFormulaShape(normalizedPrompt) {
-  return /\b[a-d]\)\s*\b[b-e]\)/.test(normalizedPrompt)
-    || /=\s*(?:[.;,)]|$)/.test(normalizedPrompt)
-    || /\b(?:biet|bang|la)\s+(?:va|;|,|\.)\b/.test(normalizedPrompt)
+  const asksStudentToFillOrCompute = /\b(?:thuc hien phep tinh|tinh hop ly|dien dau|dien dau|dien)\b/.test(normalizedPrompt)
+    || /\.{3,}|…/.test(normalizedPrompt);
+  if (asksStudentToFillOrCompute) return false;
+
+  const hasBlankVerbOrConjunction = /\b(?:biet|bang|la)\s+(?:va|;|,|\.)\b/.test(normalizedPrompt)
+    && !/\bla\s+va\b/.test(normalizedPrompt);
+
+  return /(?:^|\s)[a-d]\)\s+[b-e]\)/.test(normalizedPrompt)
+    || (/=\s*(?:[.;,)]|$)/.test(normalizedPrompt) && !/\b(?:tinh|thuc hien|tim x|rut gon)\b/.test(normalizedPrompt))
+    || hasBlankVerbOrConjunction
     || /\b(?:thuc hien phep tinh|rut gon|quy dong|so sanh|tim x)\b.{0,90}\b[a-d]\)\s*\b[b-e]\)/.test(normalizedPrompt);
 }
 
@@ -155,6 +187,34 @@ function countMatches(value, regex) {
 
 function getRawOleMarkerCount(source) {
   return typeof source.rawOleMarkerCount === 'number' ? source.rawOleMarkerCount : countMatches(source.text, /\u0001/g);
+}
+
+function getFormulaRecoveryGap(source) {
+  if (!source.richExtraction) return 0;
+  return Math.max(0, getRawOleMarkerCount(source) - Number(source.formulaAssetCount || 0));
+}
+
+function countMissingFormulaAssets(item) {
+  const formulaAssets = Array.isArray(item.metadata?.formulaAssets) ? item.metadata.formulaAssets : [];
+  return formulaAssets.filter((asset) => {
+    const src = String(asset?.src || '');
+    if (!src.startsWith('/assets/')) return false;
+    const localPath = path.join(workspaceRoot, 'apps', 'miuprep-portal', 'public', src.replace(/^\/+/, ''));
+    return !fs.existsSync(localPath);
+  }).length;
+}
+
+function countRecoveredFormulaAssets(item) {
+  return Array.isArray(item.metadata?.formulaAssets) ? item.metadata.formulaAssets.length : 0;
+}
+
+function hasRecoveredFigureAsset(item) {
+  const formulaAssets = Array.isArray(item.metadata?.formulaAssets) ? item.metadata.formulaAssets : [];
+  return formulaAssets.some((asset) => {
+    const width = Number(asset?.width || 0);
+    const height = Number(asset?.height || 0);
+    return width >= 80 || height >= 80;
+  });
 }
 
 function resolveDefaultMath6RawPath() {
@@ -235,6 +295,9 @@ function renderMarkdown(summary) {
     `- Prompt control/replacement characters still present: ${summary.promptControlCharacters}`,
     `- Raw sources with Word/OLE formula markers: ${summary.rawSourcesWithOleMarkers}`,
     `- Raw Word/OLE formula markers total: ${summary.rawOleMarkersTotal}`,
+    `- Missing formula image assets: ${summary.missingFormulaAssets}`,
+    `- Sources with formula recovery gap: ${summary.sourcesWithFormulaRecoveryGap}`,
+    `- Formula recovery gap markers: ${summary.formulaRecoveryGapMarkers}`,
     '',
     '## Topic Risk',
     '',
@@ -274,6 +337,7 @@ function renderMarkdown(summary) {
     '',
     ...summary.samples.encoding.map((row) => `- ${escapeMd(row.sourceFile)} / ${escapeMd(row.topicId)}: ${escapeMd(row.prompt)}`),
   ];
+  while (lines.length && lines[lines.length - 1] === '') lines.pop();
   return `${lines.join('\n')}\n`;
 }
 

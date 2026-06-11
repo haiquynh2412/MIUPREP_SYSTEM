@@ -1,0 +1,377 @@
+PHẦN III:  CÔNG - CÔNG SUẤT - ĐỊNH LUẬT VỀ CÔNG
+I - CƠ SỞ LÝ THUYẾT:
+1/ Công cơ học:
+-  Một lực tác dụng lên vật chuyển dời theo phương của lực thì lực đó đã thực hiện một công cơ học ( gọi tắt là công).
+Trong đó:A: Công cơ học (J)F: Lực tác dụng (N)S: Quãng đường vật dich chuyển (m)Trong đó:A: Công cơ học (J)F: Lực tác dụng (N)S: Quãng đường vật dich chuyển (m)- Công thức tính công cơ học:
+Trong đó:
+A: Công cơ học (J)
+F: Lực tác dụng (N)
+S: Quãng đường vật dich chuyển (m)
+Trong đó:
+A: Công cơ học (J)
+F: Lực tác dụng (N)
+S: Quãng đường vật dich chuyển (m)
+A = F.S
+2/ Công suất:
+- Công suất được xác định bằng công thực hiện được trong một đơn vị thời gian.
+Trong đó:A: Công cơ học (J)P: Công suất (W)t: Thời gian thực hiện công (s)Trong đó:A: Công cơ học (J)P: Công suất (W)t: Thời gian thực hiện công (s)- Tông thức tính công suất:
+Trong đó:
+A: Công cơ học (J)
+P: Công suất (W)
+t: Thời gian thực hiện công (s)
+Trong đó:
+A: Công cơ học (J)
+P: Công suất (W)
+t: Thời gian thực hiện công (s)
+ 
+3/ Máy cơ đơn giản:
+RÒNG RỌC CỐ ĐỊNH
+RÒNG RỌC ĐỘNG
+ĐÒN BẢY
+MẶT PHẲNG NGHIÊNG
+CẤU TẠO
+S2S2S1S1
+S2
+S2
+S1
+S1
+h1h1S2S2S1S1
+h1
+h1
+S2
+S2
+S1
+S1
+l2l2l1l1h2h2
+l2
+l2
+l1
+l1
+h2
+h2
+hhll
+h
+h
+l
+l
+TÁC DỤNG
+BIẾN ĐỔI LỰC
+Chỉ có tác dụng biến đổi phương chiều của lực:
+F = P
+Biến đổi về độ lớn của lực:
+Biến đổi về phương, chiều và độ lớn của lực.
+CÔNG
+CÓ ÍCH
+Aich = P.S1
+Aich = P.S1
+Aich = P.h1
+Aich = P.h
+CÔNG TOÀN PHẦN
+Atp = F.S2
+Atp = F.S2
+Atp = F.h2
+Atp = Fl
+TÍNH CHẤT CHUNG
+Asinh ra = Anhận được
+( Khi công hao phí không đáng kể)
+HIỆU SUẤT
+4/ Định luật về công:
+Không một máy cơ đơn giản nào cho ta lợi về công. Được lợi bao nhiêu lần về lực thì thiệt bấy nhiêu lần về đường đi và ngược lại.
+II/ BÀI TẬP ÁP DỤNG:
+Bài 1: Một người kéo một gàu nước từ giếng sâu 10m. Công tối thiểu của người đó phải thực hiện là bao nhiêu? Biết gàu nước có khối lượnh là 1Kg và đựng thêm 5lít nước, khối lượng riêng của nước là 1000kg/m3.
+Hướng dẫn giải:
+Thể tích của nước: V = 5l = 0,005 m3
+Khối lượng của nước: mn = V.D = 0,005 . 1000 = 5 (Kg)
+Lực tối thiểu để kéo gàu nước lên là: F = P
+Hay: F = 10(mn + mg) = 10(5 + 1) = 60(N)
+Công tối thiểu của người đó phải thực hiện: A = F.S = 60. 10 = 600(J)
+Bài 2: Người ta dùng một ròng rọc cố định để kéo một vật có khối lượng 10Kg lên cao 15m với lực kéo 120N.
+a/ Tính công của lực kéo.
+b/ Tính công hao phí để thắng lực cản.
+Hướng dẫn giải:
+a/ Công của lực kéo: A = F.S = 120.15 = 1800(J)
+b/ Công có ích để kéo vật: Ai = P.S = 100.15 =1500(J)
+Công hgao phí: Ahp = A - Ai = 1800- 1500 = 300 (J)
+Bài 3: Để đưa một vật coa khối lượng 200Kg lên độ cao 10m người ta dùng một trong hai cách sau:
+a/ Dùng hệ thống một ròng rọc cố định, một ròng rọc động. Lúc này lực kéo dây để nâng vật lên là F1 = 1200N.
+Hãy tính:
+- Hiệu suất của hệ thống.
+- Khối lượng của ròng rọc động, Biết hao phí để nâng ròng rọc bằng hao phí tổng cộng do ma sát.
+b/ Dùng mặt phẳng nghiêng dài l = 12m. Lực kéo lúc này là F2 = 1900N. Tính lực ma sát giữa vật và mặt phẳng nghiêng, hiệu suất của cơ hệ.
+Hướng dẫn giải:
+a/ Công dungd để nâng vật lên 10m:
+A1 = 10.m.h = 20 000 (J)
+- Khi dùng hệ thống ròng rọc trên thì khi vật lên cao một đoạn h thì phải kéo dây một đoạn S = 2h. Do đó công dùng để kéo vật:
+A = F1 . S = F1 . 2h = 24000(J)
+- Hiệu suất của hệ thống:
+- Công hao phí: Ahp = A - A1 = 4000(J)
+- Công hao phí để nâng ròng rọc động:
+- Khối lượng của ròng rọc động: 
+b/ Công có ích dùng để kéo vật là A1 = 20000(J)
+- Công toàn phần kéo vật lúc nay:
+A = F2. l = 22800(J)
+- Công hao phí do ma sát: Ahp = A - A1 = 2800(J)
+- Lực ma sát giữa vật và mặt phẳng nghiêng:
+- Hiệu suất của mặt phẳng nghiêng:
+Bài 4: Một đầu tàu kéo một toa tàu chuyển động từ ga A tới ga B trong 15phút với vận tốc 30Km/h. Tại ga B đoàn tàu được mắc thêm toa và do đó đoàn tàu đi từ ga B đến ga C với vận tốc nhỏ hơn 10Km/h. Thời gian đi từ ga B đến ga C là 30phút. Tính công của đầu tàu sinh ra biết rằng lực kéo của đầu tàu không đổi là 40000N.
+Hướng dẫn giải:
+- Quãng đường đi từ ga A đến ga B:
+S1 = v1.t1 = 7,5 (Km) = 7500m
+- Quãng đường đi từ ga B đến ga C:
+S2 = v2.t2 = 10 (Km) = 10000m
+- Công sinh ra: 
+A = F (S1 + S2) = 700000000 (J) = 700000(KJ)
+Bài 5: Người ta dùng một mặt phẳng ngiêng có chiều dài 3m để kéo một vật có khối lượng 300Kg  với lực kéo 1200N . Hỏi vật có thể lên cao bao nhiêu? Biết hiệu suất của mặt phẳng nghiêng là 80%.
+Hướng dẫn giải:
+- Công của lự kéo vật:
+A = F.l = 3600(J)
+- Công có ích:
+A1 = P.h = 10.m.h = 3000h (J)
+- Độ cao vật có thể lên được:
+Bài 6: Người ta dùng hệ thống ròng rọc để trục một vật cổ bằng đồng có trọng lượng
+ P = 5340N từ đáy hồ sâu H = 10m lên (hình vẽ). Hãy tính:
+Lực kéo khi:
+Tượng ở phía trên mặt nước.
+Tượng chìm hoàn toàn dưới nước.
+Tính công tổng cộng của lực kéo tượng từ đáy hồ lên 
+phía trên mặt nước h = 4m. Biết trọng lượng riêng của đồng và 
+của nước lần lượt là 89000N/m3, 10000N/m3. Bỏ qua trọng lượng của các ròng rọc.                                       
+Hướng dẫn giải:
+1a/ Dùng ròng rọc động được lợi hai lần về lực, nên lực kéo khi vật đã lên khỏi mặt nước:
+1b/ Khi vật còn ở dưới nước thì thể tích chiếm chỗ:
+- Lực đẩy Acsimet tác dụng lên vật:
+FA= V.d0 = 0,06.10000 = 600(N)
+- Lực do dây treo tác dụng lên vật:
+P1 = P - FA = 5340 - 600 = 4740 (N)
+- Lực kéo vật khi còn trong nước:
+2/ Do dùng ròng rọc động nên bị thiệt hai lần về đường đi nên công tổng cộng của lực kéo:
+A =F1.2H + F. 2h = 68760 (J)
+Bài 7: Người ta lăn 1 cái thùng theo một tấm ván nghiêng lên ôtô. Sàn xe ôtô cao 1,2m, ván dài 3m. Thùng có khối lượng 100Kg và lực đẩy thùng là 420N.
+a/ Tình lực ma sát giữa tấm ván và thùng.
+b/ Tình hiệu suất của mặt phẳng nghiêng.
+Hướng dẫn giải: 
+- Nếu không có ma sát thì lực đẩy thùng là:
+- Thực tế phải đẩy thùng với 1 lực 420N vậy lực ma sát giữa ván và thùng:
+Fms = F - F' = 20(N)
+- Công có ích để đưa vật lên:
+Ai = P . h = 1200(J)
+- Công toàn phần để đưa vật lên:
+A = F. S = 1260 (J)
+- Hiệu suất mặt phẳng nghiêng:
+Bài 8: Người ta dùng một palăng để đưa một kiện hàng lên cao 3m. Biết quãng đường dịch chuyển của lực kéo là 12m.
+a/ Cho biết cấu tạo của palăng nói trên.
+b/ Biết lực kéo có giá trị F = 156,25N. Tính khối lượng của kiện hàng nói trên.
+c/ Tính công của lực kéo và công nâng vật không qua palăng. Từ đó rút ra kết luận gì?
+Hướng dẫn giải:
+a/ Số cặp ròng rọc: 
+(Cặp)
+Vậy palăng được cấu tạo bởi 2 ròng rọc cố định và 2 ròng rọc động.
+b/ Ta có: 
+- Trọng lượng của kiện hàng:
+P = 4F = 4. 156,25 = 625(N)
+- Khối lượng của kiện hàng:
+c/ công của lực kéo:
+Ak = FK.S' = 156,25.12 = 1875 (J)
+- Công của lực nâng vật:
+An = P.S = 625.3 = 1875(J)
+- Hệ thống palăng không cho lợi về công.
+Bài 9: Cho hệ giống như hình vẽ. vật m1 có khối lượng 10Kg, vật m2 có khối lượng 6Kg. Cho khoảng cách AB = 20cm. Tính chiều dài của thanh OB để hệ cân bằng.                                                    
+F'F'AA
+F'
+F'
+A
+A
+OOBB
+O
+O
+B
+B
+m2m2
+m2
+m2
+m1m1
+m1
+m1
+P2 = F2P2 = F2
+P2 = F2
+P2 = F2
+P1 = F1P1 = F1
+P1 = F1
+P1 = F1
+                                                                           
+Hướng dẫn giải:
+- Trọng lượng của vật m1:
+P1 = F1 = 10.m1 = 100N
+- Trọng lượng của vật m2:
+P2 = F2 = 10.m2 = 60N
+- Do vật m1 nặng hơn m2 nên m1 đi xuống vậy đầu B có xu thế đi lên:
+- Độ lớn lực tác dụng lên đầu B
+- Áp dụng hệ thức cân bằng của đòn bảy ta có:
+- Chiều dài thanh OB:
+OB = OA + AB = 100 + 20 = 120 (cm)
+Bài 10: Thanh AB dài 160cm, ở đầu A người ta treo một vật có khối lượng m1 = 9Kg, điểm tựa O nằm cách A một đoạn 40cm.
+a/ Hỏi phải treo vào đầu b một vật m2 có khối lượng bao nhiêu để thanh cân bằng?
+b/ Vật m2 giữ nguyên không đổi, bay giờ người ta dịch chuyển điểm O về phía đầu B và cách B một đoạn 60cm. Hỏi vật m1 phải thay đổi như thế nào để thanh vẫn ccân bằng?
+Hướng dẫn giải:
+a/ Ta có: OA = 40cm
+Trọng lượng của vật m1:
+P1 = F1 = 10.m1 = 90N
+Áp dụng hệ thức cân bằng của đòn bảy:
+Lực tác dụng vào đầu B:
+Vậy để thanh AB cân bằng thì phải treo vào đầu B vật m2 = 3Kg.
+b/ Ta có: OB = 60cm
+Áp dụng hệ thức cân bằng của đòn bảy, để thanh AB cân bằng thì lực tác dụng vào đầu A:
+Vậy vật m1 = 1,8Kg tức là vật m1 phải bớt đi 7,2Kg.
+III/ BÀI TẬP TỰ GIẢI:
+Bài 1: Một khối gỗ hình hộp chữ nhật có diện tích đáy là S = 150 cm2 cao h =  30cm, khối gỗ được thả nổi trong hồ nước sâu H =  0,8m sao cho khối gỗ thẳng đứng. Biết trọng lượng riêng của gỗ bằng 2/3 trọng lượng riêng của nước và   = 10 000 N/m3.                        
+  Bỏ qua sự thay đổi mực nước của hồ, hãy :
+a) Tính chiều cao phần chìm trong nước của khối gỗ ?               
+b) Tính công của lực để nhấc khối gỗ ra khỏi nước                          H
+     theo phương thẳng đứng ? 
+c) Tính công của lực để nhấn chìm khối gỗ đến đáy
+     hồ theo phương thẳng đứng ?
+Bài 2: Dùng một  mặt phẳng nghiêng để kéo một vật có khối lượng 200kg,trọng lượng riêng d=8800(N/m3) lên cao 4m với vận tốc 0,2m/s ,trong thời gian 1phút 40giây.Hiệu suất của mặt phẳng nghiêng 80%.
+       a/Tính trọng lượng và thể tích của vật.
+       b/Tính chiều dài và lực kéo trên mặt phẳng nghiêng. 
+       c/Tính  công suất nâng vật. 
+Bài 3: Dùng mặt phẳng nghiêng đẩy một bao xi măng có khối lượng 50Kg lên sàn ô tô . Sàn ô tô cách mặt đất 1,2 m.
+a/Tính chiều dài của mặt phẳng nghiêng sao cho người công nhân chỉ cần tạo lực đẩy bằng 200N để đưa bì xi măng lên ô tô . Giả sử ma sát giữa mặt phẳng nghiêng và bao xi măng không đáng kể .
+b/ Nhưng thực tế không thêt bỏ qua ma sát nên hiệu suất của mặtphẳng nghiêng là 75% . Tính lực ma sát tác dụng vào bao xi măng.
+Bài 4: Một thang máy có khối lượng m = 580kg, được kéo từ đáy hầm mỏ sâu 125m lên mặt đất bằng lực căng của một dây cáp do máy thực hiện.
+a)  Tính công nhỏ nhất của lực căng để thực hiện việc đó.
+b)  Biết hiệu suất của máy là 75%. Tính công do máy thực hiện và công hao phí do lục cản.
+Bài 5: Người ta kéo một vật A, có khối lượng mA = 10g, chuyển động đều lên mặt phẳng nghiêng (như hình vẽ).
+CDEABCDEABBiết CD = 4m; DE = 1m.
+C
+D
+E
+A
+B
+C
+D
+E
+A
+B
+a/ Nếu bỏ qua ma sát thì vật B phải 
+có khối lượng mB là bao nhiêu?
+b/ Thực tế có ma sát nên để kéo vật
+A đi lên đều người ta phải treovật B
+có khối lượng m’B = 3kg. Tính hiệu 
+suất của mặt phẳng nghiêng. Biết dây
+nối có khối lượng không đáng kể.
+Bài 6: Từ dưới đất kéo vật nặng lên cao người ta mắc một hệ thống gồm ròng rọc động và ròng rọc cố định. Vẽ hình mô tả cách mắc để được lợi:
+a/ 2 lần về lực.
+b/ 3 lần về lực.
+Muốn đạt được điều đó ta phải chú ý đến những điều kiện gì?
+Bài 7: Cho 1 hệ như hình vẽ ,thanh AB có khối lượng không đáng kể , ở hai đầu có treo hai quả cầu bằng nhôm có trọng lượng PA và PB.Thanh được treo nằm ngang bằng một sợi dây tại điểm O hơi lệch về phía A . Nếu nhúng hai quả cầu này vào nước thì thanh còn cân bằng nữa không? tại sao?
+OOPBPBPAPABBAA
+O
+O
+PB
+PB
+PA
+PA
+B
+B
+A
+A
+Bài 8: Người ta dùng một cái xà beng có dạng như hình vẽ (Hình2) để nhổ một cây đinh cắm sâu vào gỗ. 
+a/ Khi tác dụng một lực F =100N vuông góc với OB tại đầu B ta sẽ nhổ được đinh. Tính lực giữ của đinh lúc này? Biết OB= 10.OA.(Có biểu diễn lực trong hình vẽ)
+b/ Nếu lực tác dụng vào đầu B có hướng vuông góc với tấm gỗ thì phải có độ lớn là bao nhiêu mới nhổ được đinh.(Có biểu diễn lực trong hình vẽ).
+Bài 9: Ô tô có khối lượng 1200 kg khi chạy trên đường nằm ngang với vận tốc  V= 72 km/h thì tiêu hao 80g xăng trên đoạn đờng S = 1 km. Hiệu suất động cơ là 20%.
+a/ Tính công suất của ô tô.
+b/ Hỏi với những điều kiện như vậy thì ô tô đạt vận tốc bao nhiêu khi nó leo dốc ? Biết rằng cứ mỗi quãng đường l = 100m thì đọ cao tăng thêm h = 2 cm. Cho biết năng suất toả nhiệt của xăng là q = 45.106 J/kg.
+Bài 10: Cho một hệ thống như hình vẽ.
+Hai vật A và B đứng yên. Ma sát không đáng kể. Vật A và vật B có nặng bằng nhau không ?
+Cho MN = 80 cm, NH = 5 cm. Tính tỷ số khối lượng của hai vật A và B
+      N
+                                        A
+  B
+           
+           H                                            M
+Bài 11: Tính lực kéo F trong các trường hợp sau đây. Biết vật nặng có trọng lượng  P = 120 N (Bỏ qua ma sát, khối lượng của các ròng rọc và dây ).
+FFFFFFPFFFFFFP4FFFF2F2F4FP4FFFF2F2F4FPFFFFFFFPFFFFFFFP
+F
+F
+F
+F
+F
+F
+P
+F
+F
+F
+F
+F
+F
+P
+4F
+F
+F
+F
+2F
+2F
+4F
+P
+4F
+F
+F
+F
+2F
+2F
+4F
+P
+F
+F
+F
+F
+F
+F
+F
+P
+F
+F
+F
+F
+F
+F
+F
+P
+Bài 12: Trong bình đựng hai chất lỏng không trộn lẫn có trọng lượng riêng d1=12000N/m3; d2=8000N/m3. Một khối gỗ hình lập phương cạnh a = 20cm có trọng lượng riêng d = 9000N/m3được thả vào chất lỏng.
+a/ Tìm chiều cao của phần khối gỗ trong chất lỏng d1?
+ b/ Tính công để nhấn chìm khối gỗ hoàn toàn trong chất lỏng d1? Bỏ qua sự thay đổi mực nước.
+Bài 13:Ô tô có khối lượng 1200 kg khi chạy trên đường nằm ngang với vận tốc  V= 72 km/h thì tiêu hao 80g xăng trên đoạn đường S = 1 km. Hiệu suất động cơ là 20%.
+a/ Tính công suất của ô tô.
+b/ Hỏi với những điều kiện như vậy thì ô tô đạt vận tốc bao nhiêu khi nó leo dốc ? Biết rằng cứ mỗi quãng đường l = 100m thì độ cao tăng thêm h = 2 cm. Cho biết năng suất toả nhiệt của xăng là q = 45.106 J/kg.
+AABài 14: Vật A ở hình bên có khối lượng 2kg. Hỏi lực kế chỉ bao nhiêu ?
+A
+A
+ Muốn vật A đi lên được 2cm, ta phải kéo lực kế đi xuống bao nhiêu cm ?
+Bài 15: Một xe cút kít chở một vật nặng 1500N. Khi người công nhân đẩy cho xe chuyển động đều phương của trọng lượng cắt mặt xe ở một điểm cách trục bánh xe 80cm.
+a/ Tìm lực tác dụng thẳng đứng của mỗi tay vào càng xe, biết rằng mỗi tay cách càng xe một đoạn là 1,6m.
+b/ Tìm lực đè của bánh xe lên mặt đường.
+Bài 16: Công suất trung bình của động cơ kéo tời là 73,5W và hiệu suất của tời là 0,9. Hãy tính:
+a/ Độ cao mà động cơ kéo vật nặng 588N lên được trong một phút.
+b/ Số vòng quay của tời trong một phút. Biết bán kính của tời là 5cm.
+c/ Độ lớn của lực tác dụng vuông góc vào tay quay, cho biết chiều dài tay quay là 30cm.
+Bài 17: Một bể nước hình trụ thẳng đứng cao 3m đường kính 0,7m. Người ta bơm nước cho đầy bể từ một mực nước thấp hơn đáy bể 8m.
+a/ Tính công thực hiệnđể bơm nước đầy bbẻ vaói giả thiết ma sát giữa nước và ống dẫn không đáng kể.
+b/ Tính công suất máy bơm biết rằng cần 20phút để bơm đầy bể.
+Bài 18: Một trục kéo với tay quay dài 60cm và hình tru có bán kính 15cm, được dùng để lấy nướcở một giếng sau 10m. Thùng chứa nước có dung tích 10lít.
+a/ Tính lực tác dụng vào tay quay khi kéo một thùng nước lên.
+b/ Tính công cần dùng để kéo 100lít nước lên.
+c/ Tính quãng đường đi của đầu tay quay và số vòng quay khi kéo lên được một thùng nước.
+d/ Tính công suất trung binh khi kéo được 100lit mỗi giờ.
+Bài 19: Một xe lữa có răng cưa đi trên một đoạn đường dốc dài 5Km. Khoảng cách thẳng đứng giữa hai điểm đầu của dốc là 1,5Km. mỗi toa xe kể cả hành khách nặng 5tấn.
+a/ Tính lực kéo của động cơ để lôi một toa xe lên theo đường dốc.
+b/ Tính công cần dùng để kéo toa xe lên.
+c/ Xe lữa lên dốc với vận tốc trung bình là 12Km/h. Tính công suất của động cơ dùng để kéo hai toa xe lên.
+d/ Dùng năng lượng một thác nước cao 10m. Biết công hao phí là 25% công phát động. Tính lượng nước cần dùng mỗi giờ để làm chuyển vận động cơ kéo hai toa xe lên.
+Bài 20: Một người đi xe đạp có khối lượng cả người lẫn xe là 80Kg chuyển động trên một đường bằng với vận tốc 18Km/h. Các lực ma sát nghịch chiều với chuyển động là 7N và lực cản của không khí là 5N. tính:
+a/ Công tạo nên bởi người xe đạp khi đi 1Km trên đường bằng.
+b/ công suất của người xe đạp trong điều kiện ở câu a.
+c/ Công suất của người xe đạp trong trường hợp người này phải chuyển động trên một đường dốc nhưng muốn giữ vận tốc trên đường bằng. Dốc là đốc cao 2m lúc đường đi dài 100m.
+Bài 21: Công đưa một vật lên cao 4m bằng mặt phẳng nghiêng là 6000J.
+a/ Tính trọng lượng của vật. Biết mặt phẳng nghiêng có hiệu suất 80%.
+b/ Tính công để thắng lực ma sát khi kéo vật lên và xác định lực ma sát đó, biết mặt phẳng nghiêng có chiều dài l = 20m.
+c/ Để đưa vật lại xuống đất phải tác dụng vào vật một lực như thế nào? Tính độ lớn của lực đó.

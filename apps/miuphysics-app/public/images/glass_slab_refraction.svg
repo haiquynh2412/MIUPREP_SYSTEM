@@ -1,0 +1,60 @@
+<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E1E2E" rx="8"/>
+  
+  <!-- Glass Slab (y = 80 to y = 160) -->
+  <rect x="40" y="80" width="280" height="80" fill="#22D3EE" fill-opacity="0.1" stroke="#89B4FA" stroke-width="2"/>
+  <text x="50" y="110" fill="#89B4FA" font-size="12" font-family="Arial" font-weight="bold">Bản mặt song song</text>
+  <text x="50" y="125" fill="#89B4FA" font-size="11" font-family="Arial" font-style="italic">Bề dày d, chiết suất n</text>
+  
+  <!-- Normals (Dashed) -->
+  <!-- First surface normal at x = 150 -->
+  <line x1="150" y1="40" x2="150" y2="120" stroke="#CDD6F4" stroke-dasharray="4,4" stroke-width="1.5"/>
+  <text x="155" y="55" fill="#CDD6F4" font-size="10" font-family="Arial">N₁</text>
+  
+  <!-- Second surface normal at x = 190 -->
+  <line x1="190" y1="120" x2="190" y2="200" stroke="#CDD6F4" stroke-dasharray="4,4" stroke-width="1.5"/>
+  <text x="195" y="195" fill="#CDD6F4" font-size="10" font-family="Arial">N₂</text>
+  
+  <!-- Incident Ray (Air -> Glass) -->
+  <!-- From (70, 20) to (150, 80) -->
+  <line x1="70" y1="20" x2="150" y2="80" stroke="#F9E2AF" stroke-width="2.5"/>
+  <path d="M 105 46.2 L 115 53.7 L 107.5 56.2 Z" fill="#F9E2AF"/> <!-- Arrow -->
+  <text x="75" y="35" fill="#F9E2AF" font-size="12" font-family="Arial">Tia tới S</text>
+  
+  <!-- Angle of Incidence i -->
+  <!-- Arc at (150,80) from angle 217 to 270 (approx 53 deg) -->
+  <path d="M 138 64 A 20 20 0 0 1 150 60" fill="none" stroke="#F9E2AF" stroke-width="1.5"/>
+  <text x="133" y="55" fill="#F9E2AF" font-size="11" font-family="Arial">i</text>
+  
+  <!-- Refracted Ray (Inside Glass) -->
+  <!-- From (150, 80) to (190, 160) -->
+  <line x1="150" y1="80" x2="190" y2="160" stroke="#A6E3A1" stroke-width="2.5"/>
+  <path d="M 166 112 L 172 124 L 166.5 121 Z" fill="#A6E3A1"/> <!-- Arrow -->
+  
+  <!-- Angle of Refraction r -->
+  <!-- Arc at (150,80) inside glass -->
+  <path d="M 150 95 A 15 15 0 0 1 157 94" fill="none" stroke="#A6E3A1" stroke-width="1.5"/>
+  <text x="153" y="110" fill="#A6E3A1" font-size="11" font-family="Arial">r</text>
+  
+  <!-- Emergent Ray (Glass -> Air) -->
+  <!-- From (190, 160) to (270, 220) - Parallel to incident ray direction (dx=80, dy=60) -->
+  <line x1="190" y1="160" x2="270" y2="220" stroke="#F9E2AF" stroke-width="2.5"/>
+  <path d="M 225 186.2 L 235 193.7 L 227.5 196.2 Z" fill="#F9E2AF"/> <!-- Arrow -->
+  <text x="250" y="210" fill="#F9E2AF" font-size="12" font-family="Arial">Tia ló I'</text>
+  
+  <!-- Extended Incident Ray (Dashed) -->
+  <!-- From (150, 80) to (256.6, 160) then to (290, 185) -->
+  <line x1="150" y1="80" x2="256.6" y2="160" stroke="#585B70" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="256.6" y1="160" x2="290" y2="185" stroke="#585B70" stroke-width="1.5" stroke-dasharray="4,4"/>
+  
+  <!-- Lateral Shift Line (δ) -->
+  <!-- Perpendicular line from emergent ray (230, 190) to extended ray (x=202.4, y=119.3) -->
+  <!-- Let's draw a line showing shift between the two parallel paths -->
+  <!-- Extended ray goes through (210, 125). Emergent ray goes through (190, 160) to (270, 220). -->
+  <!-- At x=230, emergent is y=190. At x=230, extended is y=140. Shift is perpendicular. -->
+  <line x1="230" y1="190" x2="206" y2="222" stroke="#F38BA8" stroke-width="1.5"/>
+  <!-- Let's make a simple visual line indicating shift with arrows -->
+  <path d="M 256.6 160 L 190 160" stroke="#F38BA8" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="210" y="153" fill="#F38BA8" font-size="12" font-family="Arial" font-weight="bold">δ (độ dời)</text>
+</svg>

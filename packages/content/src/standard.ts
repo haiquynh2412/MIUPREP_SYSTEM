@@ -1,3 +1,5 @@
+import { getExam10ReviewClusterForMiuMathCategory } from './math9-plan';
+
 export type ContentDomainId = 'mathematics' | 'english_core' | string;
 export type ContentProgramId =
   | 'vn_math_thcs'
@@ -833,6 +835,7 @@ export function toQuestionItemFromMiuMath(question: MiuMathQuestion): QuestionIt
   const patternId = taxonomy.patternId || override.patternId || base.patternId || question.sub_category;
   const level = taxonomy.level || override.level || base.level || 'core';
   const examTarget = uniqueStrings([...(base.examTarget || []), ...(override.examTarget || []), ...(taxonomy.examTarget || []), 'grade9', 'vao10']);
+  const exam10Cluster = getExam10ReviewClusterForMiuMathCategory(question.category, question.sub_category);
 
   return {
     id: `miumath.${question.id}`,
@@ -859,6 +862,11 @@ export function toQuestionItemFromMiuMath(question: MiuMathQuestion): QuestionIt
       `topic:${topicId}`,
       `pattern:${patternId}`,
       `level:${level}`,
+      ...examTarget.map((target) => `exam:${target}`),
+      exam10Cluster ? 'exam10' : '',
+      exam10Cluster ? `exam10:${exam10Cluster.id}` : '',
+      exam10Cluster ? `exam10-stage:${exam10Cluster.stage}` : '',
+      exam10Cluster ? `score:${exam10Cluster.scoreBand}` : '',
     ]),
     metadata: {
       examId: question.exam_id,
@@ -870,6 +878,17 @@ export function toQuestionItemFromMiuMath(question: MiuMathQuestion): QuestionIt
       patternId,
       level,
       examTarget,
+      exam10: exam10Cluster ? {
+        clusterId: exam10Cluster.id,
+        clusterTitle: exam10Cluster.title,
+        stage: exam10Cluster.stage,
+        scoreBand: exam10Cluster.scoreBand,
+        sourceRole: 'legacy_miumath',
+        matrixSourceRole: exam10Cluster.sourceRole,
+        topicIds: exam10Cluster.topicIds,
+        legacyCategory: question.category,
+        legacySubCategory: question.sub_category,
+      } : undefined,
       learningPathScope: 'math_thcs',
       category: question.category,
       categoryVn: question.category_vn,

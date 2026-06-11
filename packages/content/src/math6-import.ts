@@ -3,6 +3,7 @@ import {
   type Math6Pattern,
   type Math6TopicPlan,
 } from './math6-plan';
+import { applyMath6AutoEnrichment, applyMath6ManualEnrichment, applyMath6SourceSolution, type Math6SourceSolution } from './math6-enrichment';
 import { generateMath6GeometryFigure, needsOriginalGeometryImage } from './math6-geometry-figures';
 import type { MathLearningLevel, QuestionItem } from './standard';
 
@@ -39,6 +40,7 @@ export interface Math6ExtractedBlock {
   patternId: string;
   level: MathLearningLevel;
   confidence: number;
+  sourceSolution?: Math6SourceSolution;
 }
 
 export interface Math6ImportIssue {
@@ -75,8 +77,15 @@ interface Math6PromptFormulaAsset {
   alt: string;
 }
 
+interface Math6SegmentedSourceText {
+  exerciseText: string;
+  solutionText?: string;
+  solutionLabel?: string;
+}
+
 const EXERCISE_HEADER_PATTERN = /(?:^|[\r\n\f]|[^\p{L}])\s*((?:B[\p{L}\u00a0]{0,3}i|C[\p{L}\u00a0]{0,3}u)(?:\s+t[\p{L}\u00a0]{0,3}p)?\s*\d+[A-Za-zÀ-ỹ0-9\s]*[:.)-]?)/giu;
 const FORMULA_TOKEN_RE = /\{\{formula:([^}|]+)(?:\|w=(\d+))?(?:\|h=(\d+))?\}\}/g;
+const SOURCE_SOLUTION_SECTION_RE = /(?:^|[\n\f]|[-=]{3,}\s*)\s*((?:dap\s*an|huong\s*dan\s*(?:cham|giai)?|bieu\s*diem|dap\s*so)(?:[\s:.\-_/a-z0-9]{0,80})?)/i;
 
 export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource[]): { items: QuestionItem[]; blocks: Math6ExtractedBlock[]; report: Math6ImportReport } {
   const issues: Math6ImportIssue[] = [];
@@ -95,8 +104,10 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
       return;
     }
 
+    const segmentedSource = segmentMath6SourceText(source.text);
     const topicMatch = matchMath6TopicForSource(source);
-    const sourceBlocks = extractMath6ExerciseBlocks(source.text);
+    const sourceBlocks = extractMath6ExerciseBlocks(segmentedSource.exerciseText);
+    const sourceSolutionBlocks = alignSourceSolutions(sourceBlocks, segmentedSource);
     if (!sourceBlocks.length) {
       if (topicMatch) {
         issues.push({
@@ -129,6 +140,7 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
         patternId: pattern.id,
         level: pattern.level,
         confidence: resolvedTopicMatch.confidence,
+        sourceSolution: sourceSolutionBlocks[index],
       });
     });
 
@@ -153,8 +165,10 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
     const topic = MATH6_LEARNING_MATRIX.find((candidate) => candidate.id === block.topicId);
     const pattern = topic?.patterns.find((candidate) => candidate.id === block.patternId);
     const generatedFigure = generateMath6GeometryFigure(block.prompt, block.topicId);
-    const needsOriginalImage = needsOriginalGeometryImage(block.prompt);
     const formulaAssets = extractFormulaAssets(block.prompt);
+    const needsOriginalImage = needsOriginalGeometryImage(block.prompt)
+      && !hasTextResolvedImageDependency(block.prompt)
+      && !hasRecoveredFigureAsset(formulaAssets);
     return {
       id: `math6.${block.id}`,
       sourceId: block.id,
@@ -199,7 +213,13 @@ export function buildMath6QuestionItemsFromRawSources(rawSources: Math6RawSource
         figureStatus: generatedFigure ? 'generated_svg' : needsOriginalImage ? 'needs_original_image' : 'none',
       },
     };
-  });
+  })
+    .map((item, index) => {
+      const sourceSolution = blocks[index]?.sourceSolution;
+      return sourceSolution ? applyMath6SourceSolution(item, sourceSolution) : item;
+    })
+    .map(applyMath6AutoEnrichment)
+    .map(applyMath6ManualEnrichment);
 
   return {
     items,
@@ -222,6 +242,55 @@ export function extractMath6ExerciseBlocks(text: string): string[] {
   });
 
   return blocks;
+}
+
+function segmentMath6SourceText(text: string): Math6SegmentedSourceText {
+  const normalized = normalizeExtractedText(text);
+  const marker = findSourceSolutionSectionMarker(normalized);
+  if (!marker) return { exerciseText: normalized };
+
+  const exerciseText = normalized.slice(0, marker.index);
+  const solutionText = normalized.slice(marker.index);
+  if (!extractMath6ExerciseBlocks(exerciseText).length) return { exerciseText: normalized };
+
+  return {
+    exerciseText,
+    solutionText,
+    solutionLabel: marker.label,
+  };
+}
+
+function alignSourceSolutions(sourceBlocks: string[], segmentedSource: Math6SegmentedSourceText): Math6SourceSolution[] {
+  if (!segmentedSource.solutionText) return [];
+  const solutionBlocks = extractMath6SolutionBlocks(segmentedSource.solutionText);
+  if (solutionBlocks.length !== sourceBlocks.length) return [];
+
+  return solutionBlocks.map((text) => ({
+    text,
+    label: segmentedSource.solutionLabel || 'source_solution',
+    confidence: 0.9,
+  }));
+}
+
+function extractMath6SolutionBlocks(text: string): string[] {
+  const normalized = normalizeExtractedText(text);
+  const matches = [...normalized.matchAll(EXERCISE_HEADER_PATTERN)];
+  if (!matches.length) return [];
+
+  return matches
+    .map((match, index) => {
+      const start = getExerciseHeaderStart(match);
+      const next = matches[index + 1] ? getExerciseHeaderStart(matches[index + 1]) : normalized.length;
+      return normalizeSolutionText(normalized.slice(start, next));
+    })
+    .filter((block) => block.length >= 16 && block.length <= 5000);
+}
+
+function findSourceSolutionSectionMarker(text: string): { index: number; label: string } | undefined {
+  const searchable = normalizeSolutionSearchText(text);
+  const match = SOURCE_SOLUTION_SECTION_RE.exec(searchable);
+  if (!match || match.index < 0) return undefined;
+  return { index: match.index, label: normalizePrompt(match[1] || 'source_solution') };
 }
 
 function getExerciseHeaderStart(match: RegExpMatchArray): number {
@@ -307,11 +376,11 @@ function inferTopicForExercise(prompt: string, source: Math6RawSource): TopicMat
   const hsgSource = /\b(hsg|olympic|violimpic)\b/.test(sourceText);
   const semester2Source = sourceText.includes('ki-ii') || sourceText.includes('ki 2') || sourceText.includes('ky 2') || sourceText.includes('hoc ki 2') || sourceText.includes('hoc-ki-2');
 
-  if (text.includes('goc') || text.includes('phan giac') || text.includes('ke bu') || text.includes('nua mat phang')) {
+  if (hasStrongAngleCue(text)) {
     return topicMatch('math6.geometry.angles', 0.9);
   }
 
-  if (text.includes('diem') || text.includes('duong thang') || text.includes('tia') || text.includes('doan thang') || text.includes('trung diem') || text.includes('thang hang')) {
+  if (hasGeometryPointLineCue(text)) {
     return topicMatch('math6.geometry.points_lines_segments', 0.88);
   }
 
@@ -368,6 +437,14 @@ function find(id: string): Math6TopicPlan | undefined {
   return MATH6_LEARNING_MATRIX.find((topic) => topic.id === id);
 }
 
+function hasStrongAngleCue(text: string): boolean {
+  return /\b(?:phan\s+giac|ke\s+bu|so\s+do\s+goc|nua\s+mat\s+phang|goc\s+[a-z]{2,4}|goc\s+[a-z]\s+(?:vuong|nhon|tu|bet))\b/.test(text);
+}
+
+function hasGeometryPointLineCue(text: string): boolean {
+  return /\b(?:duong\s+thang|doan\s+thang|trung\s+diem|thang\s+hang|tia\s+goc\s+[a-z]|tia\s+[a-z]|hai\s+tia|diem\s+[a-z]|cac\s+diem|ba\s+diem|nam\s+giua)\b/.test(text);
+}
+
 function normalizeExtractedText(text: string): string {
   return String(text || '')
     .replace(/\u0001/g, '')
@@ -393,11 +470,46 @@ function extractFormulaAssets(prompt: string): Math6PromptFormulaAsset[] {
   return assets;
 }
 
+function hasTextResolvedImageDependency(prompt: string): boolean {
+  const text = normalizeSearchText(prompt);
+  if (/\bcon duong\s+a1\b.*\bb1\b.*\bc1\b/.test(text)) return true;
+  return /\bbang\s+o\s+gom\s+2007\s+o\b/.test(text)
+    && /\bo\s+1\s+trong\b/.test(text)
+    && /\bo\s+2\s*=\s*17\b/.test(text)
+    && /\bo\s+4\s*=\s*36\b/.test(text)
+    && /\bo\s+7\s*=\s*19\b/.test(text);
+}
+
+function hasRecoveredFigureAsset(assets: Math6PromptFormulaAsset[]): boolean {
+  return assets.some((asset) => Number(asset.width || 0) >= 80 || Number(asset.height || 0) >= 80);
+}
+
 function normalizePrompt(text: string): string {
-  return decodeLegacyVietnameseText(text)
+  return cleanupRecoveredMath6Prompt(decodeLegacyVietnameseText(text))
     .replace(/\s+/g, ' ')
     .replace(/\s+([,.;:!?])/g, '$1')
     .trim();
+}
+
+function normalizeSolutionText(text: string): string {
+  return cleanupRecoveredMath6Prompt(decodeLegacyVietnameseText(text))
+    .replace(/\u0001/g, '')
+    .replace(/\u0007/g, ' ')
+    .replace(/\f/g, ' ')
+    .replace(/\r/g, ' ')
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([,.;:!?])/g, '$1')
+    .trim();
+}
+
+function normalizeSolutionSearchText(text: string): string {
+  return String(text || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\u0111/g, 'd')
+    .replace(/\u0110/g, 'D')
+    .replace(/\u0007/g, '\n')
+    .toLowerCase();
 }
 
 function isUsefulExerciseBlock(block: string): boolean {
@@ -471,15 +583,74 @@ function uniqueStrings(values: string[]): string[] {
 }
 
 function decodeLegacyVietnameseText(value: string): string {
-  const text = String(value || '');
-  if (!looksLikeTcvn3Text(text)) return text;
-  return text.replace(TCVN3_CHAR_RE, (char) => TCVN3_CHAR_MAP[char] || char);
+  let text = String(value || '');
+  if (looksLikeTcvn3Text(text)) {
+    text = text.replace(TCVN3_CHAR_RE, (char) => TCVN3_CHAR_MAP[char] || char);
+  }
+
+  return decodeVniVietnameseText(text);
 }
 
 function looksLikeTcvn3Text(value: string): boolean {
   const matches = value.match(TCVN3_SIGNAL_RE);
-  return Boolean(matches && matches.length >= 2 && TCVN3_WORD_RE.test(value));
+  return Boolean(matches && TCVN3_WORD_RE.test(value));
 }
+
+function decodeVniVietnameseText(value: string): string {
+  let text = value;
+  for (const [from, to] of VNI_REPLACEMENTS) {
+    text = text.replace(new RegExp(escapeRegExp(from), 'g'), to);
+  }
+  return text;
+}
+
+function cleanupRecoveredMath6Prompt(value: string): string {
+  let text = value;
+  for (const [from, to] of RECOVERED_FORMULA_TEXT_REPLACEMENTS) {
+    text = text.replace(new RegExp(escapeRegExp(from), 'g'), to);
+  }
+
+  if (isRecoveredBandGridPrompt(text)) {
+    text = MATH6_BAND_GRID_PROMPT_REPAIR;
+  }
+
+  return text
+    .replace(/Bài 3:\s*\(4đ\)\s*Cho bằng ô gồm 2007 ô như sau:\s*17\s+36\s+19\s+Phần đầu của băng ô như trên\.[\s\S]*?Đề số 9 Thời gian làm bài:\s*120 phút/i, 'Bài 3: (4đ) Cho băng ô gồm 2007 ô. Phần đầu của băng ô là: ô 1 trống, ô 2 = 17, ô 3 trống, ô 4 = 36, ô 5 trống, ô 6 trống, ô 7 = 19, các ô tiếp theo trống. Hãy điền số vào chỗ trống sao cho tổng 4 số ở 4 ô liền nhau bằng 100 và tính: a) Tổng các số trên băng ô. b) Tổng các chữ số trên băng ô. c) Số điền ở ô thứ 1964 là số nào?')
+    .replace(/Bài 3:\s*\(4đ\)\s*Cho b[ăằ]ng ô gồm 2007 ô như sau:\s*17\s+36\s+19\s+Phần đầu của băng ô như trên\.\s*Hãy điền số vào ch[ốỗ] trống sao cho tổng 4 số ở 4 ô liền nhau bằng 100 và tính:\s*Tổng các số trên băng ô\.\s*Tổng các chữ số trên băng ô\.\s*Số điền ở ô thứ 1964 là số nào\?\s*(?:Đề số 9\s*Thời gian làm bài:\s*120 phút)?/i, 'Bài 3: (4đ) Cho băng ô gồm 2007 ô. Phần đầu của băng ô là: ô 1 trống, ô 2 = 17, ô 3 trống, ô 4 = 36, ô 5 trống, ô 6 trống, ô 7 = 19, các ô tiếp theo trống. Hãy điền số vào chỗ trống sao cho tổng 4 số ở 4 ô liền nhau bằng 100 và tính: a) Tổng các số trên băng ô. b) Tổng các chữ số trên băng ô. c) Số điền ở ô thứ 1964 là số nào?')
+    .replace(/\s+\{\{formula:\/assets\/math6\/formulas\/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee\/formula0009\.png\|w=190\|h=98\}\}[\s\S]*$/i, '')
+    .replace(/(?:^|[\r\n])\s*[-–—]*\s*Hết\s*[-–—]*\s*(?=$|[\r\n])/gim, '')
+    .replace(/\s+KIỂM TRA HỌC KỲ?[\s\S]*$/i, '')
+    .replace(/\s+MÔN TOÁN LỚP 6[\s\S]*$/i, '')
+    .trim();
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function isRecoveredBandGridPrompt(value: string): boolean {
+  const key = toVietnameseSearchKey(value);
+  return key.includes('bai 3')
+    && key.includes('gom 2007 o')
+    && key.includes('17 36 19')
+    && key.includes('phan dau cua bang o nhu tren')
+    && key.includes('tong 4 so o 4 o lien nhau bang 100')
+    && key.includes('o thu 1964');
+}
+
+function toVietnameseSearchKey(value: string): string {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'd')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+const MATH6_BAND_GRID_PROMPT_REPAIR = 'Bài 3: (4đ) Cho băng ô gồm 2007 ô. Phần đầu của băng ô là: ô 1 trống, ô 2 = 17, ô 3 trống, ô 4 = 36, ô 5 trống, ô 6 trống, ô 7 = 19, các ô tiếp theo trống. Hãy điền số vào chỗ trống sao cho tổng 4 số ở 4 ô liền nhau bằng 100 và tính: a) Tổng các số trên băng ô. b) Tổng các chữ số trên băng ô. c) Số điền ở ô thứ 1964 là số nào?';
 
 const TCVN3_CHAR_MAP: Record<string, string> = {
   '\u00b5': '\u00e0',
@@ -560,4 +731,113 @@ const TCVN3_CHAR_MAP: Record<string, string> = {
 
 const TCVN3_CHAR_RE = new RegExp(`[${Object.keys(TCVN3_CHAR_MAP).join('')}]`, 'g');
 const TCVN3_SIGNAL_RE = /[\u00a8\u00a9\u00aa\u00ab\u00ac\u00ad\u00ae\u00b5\u00b6\u00b8\u00b9\u00bb\u00bc\u00bd\u00be\u00c6\u00c7\u00c8\u00c9\u00ca\u00cb\u00cc\u00ce\u00cf\u00d0\u00d1\u00d2\u00d3\u00d4\u00d5\u00d6\u00d7\u00d8\u00dc\u00dd\u00de\u00df\u00e5\u00e6\u00e7\u00e8\u00e9\u00ee\u00ef\u00f1\u00f4\u00f8\u00fb\u00fc\u00fe]/g;
-const TCVN3_WORD_RE = /(?:T\u00d7m|t\u00d7m|c\u00b8c|gi\u00b8|tr\u00de|nguy\u00aan|c\u00f1a|ph\u00a9n|s\u00e8|l\u00b5|kh\u00abng|v\u00b5|ch\u00f8ng|Ch\u00f8ng|s\u00b8nh|So s\u00b8nh|\u00ae\u00d3|\u00ae\u00d0|\u00ae\u00e8)/;
+const TCVN3_WORD_RE = /(?:B\u00b5i|b\u00b5i|T\u00d7m|t\u00d7m|Th\u00f9c|th\u00f9c|hi\u00d6n|ph\u00d0p|t\u00ddnh|Bi\u00d5t|M\u00e9t|c\u00b8c|gi\u00b8|tr\u00de|nguy\u00aan|c\u00f1a|ph\u00a9n|s\u00e8|l\u00b5|kh\u00abng|v\u00b5|ch\u00f8ng|Ch\u00f8ng|s\u00b8nh|So s\u00b8nh|t\u00cbp|h\u00d7nh|\u00ae\u00D3|\u00ae\u00D0|\u00ae\u00e8|\u00aei|\u00aeo)/;
+
+const VNI_REPLACEMENTS: Array<[string, string]> = [
+  ['Baøi', 'Bài'],
+  ['baøi', 'bài'],
+  ['Thöïc', 'Thực'],
+  ['thöïc', 'thực'],
+  ['hieän', 'hiện'],
+  ['pheùp', 'phép'],
+  ['tính', 'tính'],
+  ['soá', 'số'],
+  ['Soá', 'Số'],
+  ['töï', 'tự'],
+  ['nhieân', 'nhiên'],
+  ['bieát', 'biết'],
+  ['Bieát', 'Biết'],
+  ['ÖCLN', 'ƯCLN'],
+  ['vaø', 'và'],
+  ['Vaø', 'Và'],
+  ['boäi', 'bội'],
+  ['cuûa', 'của'],
+  ['khoaûng', 'khoảng'],
+  ['töø', 'từ'],
+  ['ñeán', 'đến'],
+  ['xeáp', 'xếp'],
+  ['haøng', 'hàng'],
+  ['coøn', 'còn'],
+  ['vöøa', 'vừa'],
+  ['ñuû', 'đủ'],
+  ['tröôøng', 'trường'],
+  ['laø', 'là'],
+  ['bao nhieâu', 'bao nhiêu'],
+  ['treân', 'trên'],
+  ['laáy', 'lấy'],
+  ['ñieåm', 'điểm'],
+  ['ñieåm', 'điểm'],
+  ['naøo', 'nào'],
+  ['Naøo', 'Nào'],
+  ['naèm', 'nằm'],
+  ['giöõa', 'giữa'],
+  ['So saùnh', 'So sánh'],
+  ['so saùnh', 'so sánh'],
+  ['Chöùng toû', 'Chứng tỏ'],
+  ['chöùng toû', 'chứng tỏ'],
+  ['ñoaïn', 'đoạn'],
+  ['thaúng', 'thẳng'],
+  ['laàn', 'lần'],
+  ['löôït', 'lượt'],
+  ['Goïi', 'Gọi'],
+  ['goïi', 'gọi'],
+  ['ñoä', 'độ'],
+  ['daøi', 'dài'],
+  ['Daøi', 'Dài'],
+  ['hoïc', 'học'],
+  ['Hoïc', 'Học'],
+  ['sinh', 'sinh'],
+  ['khoái', 'khối'],
+  ['ñeàu', 'đều'],
+  ['thöøa', 'thừa'],
+  ['Tìm', 'Tìm'],
+  ['töû', 'tử'],
+  ['boû', 'bỏ'],
+  ['daáu', 'dấu'],
+  ['ngoaëc', 'ngoặc'],
+  ['Ñôn', 'Đơn'],
+  ['ñôn', 'đơn'],
+  ['giaûn', 'giản'],
+  ['bieåu', 'biểu'],
+  ['thöùc', 'thức'],
+  ['sau khi', 'sau khi'],
+  ['KIEÅM TRA', 'KIỂM TRA'],
+  ['HOÏC', 'HỌC'],
+  ['KYØ', 'KỲ'],
+  ['THAM KHAÛO', 'THAM KHẢO'],
+  ['MOÂN', 'MÔN'],
+  ['TOAÙN', 'TOÁN'],
+  ['HEÁT', 'HẾT'],
+  ['heát', 'hết'],
+  ['Î', '∈'],
+  ['Ï', '∉'],
+  ['ñ', 'đ'],
+];
+
+const RECOVERED_FORMULA_TEXT_REPLACEMENTS: Array<[string, string]> = [
+  ['{{formula:/assets/math6/formulas/bai-tap-toan-lop-6-so-nguyen-doc-7326bdcf/formula0010.png|w=35|h=27}}', '|-25|'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0001.png|w=18|h=47}}', '3/2'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0002.png|w=75|h=48}}', '(4/5 - x = 2/3)'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0003.png|w=40|h=48}}', '6/7 : 1/2'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0004.png|w=46|h=48}}', '3/4 - 5/8'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0005.png|w=18|h=47}}', '1/2'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0006.png|w=100|h=26}}', 'S(ABC) và S(BIC)'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0007.png|w=39|h=26}}', 'S(AIC)'],
+  ['{{formula:/assets/math6/formulas/de-kscl-dau-nam-lop-6-mon-toan-2013-2014-thcs-quat-d-f2a4cbee/formula0008.png|w=40|h=26}}', 'S(AIK)'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0006.png|w=14|h=16}}', '∉'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0007.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0008.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0009.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0010.png|w=14|h=16}}', '∉'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0011.png|w=14|h=16}}', '∉'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0012.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/4444444444444444-doc-00c874c2/formula0013.png|w=14|h=16}}', '∉'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0006.png|w=14|h=16}}', '∉'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0007.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0008.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0009.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0010.png|w=14|h=16}}', '∉'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0011.png|w=14|h=16}}', '∉'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0012.png|w=14|h=14}}', '∈'],
+  ['{{formula:/assets/math6/formulas/ktra-giua-ky-1-doc-65d272b0/formula0013.png|w=14|h=16}}', '∉'],
+];

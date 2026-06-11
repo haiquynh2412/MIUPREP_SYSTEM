@@ -12,7 +12,7 @@ const rawPath = getPathArg('--raw', resolveDefaultMath6RawPath());
 const outputDir = getPathArg('--outDir', path.resolve(workspaceRoot, 'reports/content-quality'));
 
 const rawSources = readRawSources(rawPath);
-const { report, items, displayReadyItems } = buildMath6ContentGuardReport(rawSources, { rawPath });
+const { report, items, displayReadyItems } = buildMath6ContentGuardReport(rawSources, { rawPath, formulaAssetExists });
 
 fs.mkdirSync(outputDir, { recursive: true });
 fs.writeFileSync(path.join(outputDir, 'math6-content-guard.json'), JSON.stringify(report, null, 2), 'utf8');
@@ -68,11 +68,25 @@ function renderMarkdownReport(report: Math6ContentGuardReport): string {
     `- Adapter pass: ${report.adapter.pass ? 'yes' : 'no'}`,
     `- Raw path: ${report.input.rawPath || ''}`,
     '',
+    '## Scored Practice Gate',
+    '',
+    `- Scored-practice-ready questions: ${report.pedagogy.scoredPracticeReady}`,
+    `- Missing correct answer: ${report.pedagogy.missingCorrectAnswer}`,
+    `- Missing explanation: ${report.pedagogy.missingExplanation}`,
+    `- Missing worked solution: ${report.pedagogy.missingWorkedSolution}`,
+    `- Missing trap/misconception guidance: ${report.pedagogy.missingTrapOrMisconception}`,
+    `- Missing thinking/observation guide: ${report.pedagogy.missingThinkingGuide}`,
+    `- Hard items without thinking guide: ${report.pedagogy.hardItemsWithoutThinkingGuide}`,
+    `- Review markers inside prompt: ${report.pedagogy.reviewMarkersInsidePrompt}`,
+    '',
     '## Display Gate',
     '',
     `- Needs formula review: ${report.display.needsFormulaReview}`,
     `- Needs original image: ${report.display.needsOriginalImage}`,
     `- Needs text encoding review: ${report.display.needsTextEncodingReview}`,
+    `- Missing formula image assets: ${report.display.missingFormulaAssets}`,
+    `- Sources with formula recovery gap: ${report.display.sourcesWithFormulaRecoveryGap}`,
+    `- Formula recovery gap markers: ${report.display.formulaRecoveryGapMarkers}`,
     `- Prompt control characters: ${report.display.promptControlCharacters}`,
     `- Raw sources with Word/OLE markers: ${report.display.rawSourcesWithOleMarkers}`,
     `- Raw Word/OLE markers total: ${report.display.rawOleMarkersTotal}`,
@@ -158,6 +172,11 @@ function shouldUseRichRawPath(richRawPath: string, plainRawPath: string): boolea
   } catch {
     return false;
   }
+}
+
+function formulaAssetExists(src: string): boolean {
+  if (!String(src || '').startsWith('/assets/')) return true;
+  return fs.existsSync(path.resolve(workspaceRoot, 'apps/miuprep-portal/public', String(src).replace(/^\/+/, '')));
 }
 
 function getArgValue(name: string): string {

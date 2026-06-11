@@ -17,9 +17,7 @@ export default defineConfig({
             }
             return 'vendor-others';
           }
-          if (id.includes('packages/content/src/mocks')) {
-            return 'ielts-mock-exams';
-          }
+          return undefined;
         }
       }
     }

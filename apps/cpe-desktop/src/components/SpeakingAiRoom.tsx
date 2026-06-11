@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useRef, useEffect } from 'react';
 import type { SpeakingFeedback, StorageAdapter } from '@miuprep/db';
 import { AIAdapterFactory } from '@miuprep/ai';
 import type { AIConfig } from '@miuprep/ai';
 import type { CredentialStore } from '@miuprep/ai';
-import { CPE_SPEAKING_SAMPLES } from '@miuprep/content';
+import { CPE_SPEAKING_SAMPLES } from '@miuprep/content/src/mocks/cpe-writing-speaking-samples';
 
 
 interface ExtendedWindow extends Window {

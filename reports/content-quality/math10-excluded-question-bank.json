@@ -1,0 +1,622 @@
+{
+  "schemaVersion": "math10_excluded_question_bank_v1",
+  "generatedAt": "2026-06-09T04:05:31.661Z",
+  "sourceRawPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math10-rich-raw-extract.json",
+  "excludedItems": 9,
+  "issues": [
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question appears to have fragmented PDF formula text that may not render as a readable expression.",
+      "path": "questions[894].prompt",
+      "questionId": "math10.math10.algebra.logic_sets.menh_de_va_tap_hop_bo_de_on_tap_mon_toan_10_chu_de_menh_de_va_tap_hop_pdf.q35",
+      "sourceFile": "menh de va tap hop/bo-de-on-tap-mon-toan-10-chu-de-menh-de-va-tap-hop.pdf",
+      "topicId": "math10.algebra.logic_sets",
+      "field": "prompt"
+    },
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question has private-use formula/font glyphs (1 found).",
+      "path": "questions[1677].prompt",
+      "questionId": "math10.math10.algebra.logic_sets.menh_de_va_tap_hop_chuyen_de_menh_de_va_tap_hop_toan_10_ket_noi_tri_thuc_voi_cuoc_song_pdf.q537",
+      "sourceFile": "menh de va tap hop/chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+      "topicId": "math10.algebra.logic_sets",
+      "field": "prompt"
+    },
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question has private-use formula/font glyphs (1 found).",
+      "path": "questions[1791].prompt",
+      "questionId": "math10.math10.algebra.logic_sets.menh_de_va_tap_hop_chuyen_de_menh_de_va_tap_hop_toan_10_ket_noi_tri_thuc_voi_cuoc_song_pdf.q651",
+      "sourceFile": "menh de va tap hop/chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+      "topicId": "math10.algebra.logic_sets",
+      "field": "prompt"
+    },
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question appears to have inline formula text with unbalanced delimiters or leaked fragments near answer choices.",
+      "path": "questions[8105].prompt",
+      "questionId": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q35",
+      "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+      "topicId": "math10.assessment.integrated_review",
+      "field": "prompt"
+    },
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question has private-use formula/font glyphs (2 found).",
+      "path": "questions[8125].prompt",
+      "questionId": "math10.math10.algebra.inequalities_one_variable.bai_giang_trong_tam_mon_toan_lop_10_pdf.q56",
+      "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+      "topicId": "math10.algebra.inequalities_one_variable",
+      "field": "prompt"
+    },
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question appears to have inline formula text with unbalanced delimiters or leaked fragments near answer choices.",
+      "path": "questions[8126].prompt",
+      "questionId": "math10.math10.algebra.inequalities_one_variable.bai_giang_trong_tam_mon_toan_lop_10_pdf.q57",
+      "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+      "topicId": "math10.algebra.inequalities_one_variable",
+      "field": "prompt"
+    },
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question has private-use formula/font glyphs (4 found).",
+      "path": "questions[8131].prompt",
+      "questionId": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q62",
+      "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+      "topicId": "math10.assessment.integrated_review",
+      "field": "prompt"
+    },
+    {
+      "code": "display.formula_review",
+      "severity": "blocker",
+      "message": "Question appears to have inline formula text with unbalanced delimiters or leaked fragments near answer choices.",
+      "path": "questions[8146].prompt",
+      "questionId": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q77",
+      "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+      "topicId": "math10.assessment.integrated_review",
+      "field": "prompt"
+    },
+    {
+      "code": "display.image_missing",
+      "severity": "blocker",
+      "message": "Question appears to depend on an original figure/table/image that has not been captured.",
+      "path": "questions[8189].prompt",
+      "questionId": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q126",
+      "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+      "topicId": "math10.assessment.integrated_review",
+      "field": "prompt"
+    }
+  ],
+  "items": [
+    {
+      "id": "math10.math10.algebra.logic_sets.menh_de_va_tap_hop_bo_de_on_tap_mon_toan_10_chu_de_menh_de_va_tap_hop_pdf.q35",
+      "sourceId": "math10.algebra.logic_sets.menh_de_va_tap_hop_bo_de_on_tap_mon_toan_10_chu_de_menh_de_va_tap_hop_pdf.q35",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.logic_sets"
+      ],
+      "skillIds": [
+        "math10.logic.identify"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Cõu 4: Cỏc mệnh đề sau đỳng hay sai?\n 1\n a) 3 + 2 =.\n 3 - 2\n 2\n b) 2 - 18 > 8. ( )\n 2\n c) 3 + 12 là một số hữu tỷ. ( )\n x^2 - 4\n d) x = 2 là một nghiệm của phương trỡnh = 0.\n x - 2",
+      "correctAnswer": "Lời giải:\n 3 + 2 3 - 2 ( )( ) 1 1\n a) Ta cú: 3 + 2 = = nờn mệnh đề: “ 3 + 2 = ” là\n 3 - 2 3 - 2 3 - 2 ( )\n mệnh đề đỳng.\n 2 2 2 2\n b) Ta cú: 2 - 18 = 2 - 3 2 =-2 2 = 8 nờn mệnh đề: 2 - 18 > 8 ” là mệnh ( ) ( ) ( ) “( )\n ",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.\n\n**2. Hướng tư duy:** Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.\n\n**3. Bẫy cần tránh:** Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "recognition": "Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.",
+        "trap": "Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "checklist": "Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.\n\nBước 1 - Chọn đường giải: Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nLời giải:\n 3 + 2 3 - 2 ( )( ) 1 1\n a) Ta cú: 3 + 2 = = nờn mệnh đề: “ 3 + 2 = ” là\n 3 - 2 3 - 2 3 - 2 ( )\n mệnh đề đỳng.\n 2 2 2 2\n b) Ta cú: 2 - 18 = 2 - 3 2 =-2 2 = 8 nờn mệnh đề: 2 - 18 > 8 ” là mệnh ( ) ( ) ( ) “( )\n đề sai.\n 2 2 2 2\n c) Vỡ 3 + 12 = 3 + 2 3 = 3 3 = 27 nờn mệnh đề: 3 + 12 là một số hữu tỷ” là ( ) ( ) ( ) “( )\n mệnh đề đỳng.\n x^2 - 4\n d) Vỡ phương trỡnh = 0 khụng xỏc định tại x = 2 nờn mệnh đề: “ x = 2 là một nghiệm\n x - 2x^2 - 4\n của phương trỡnh = 0 ” là mệnh đề sai.\n x - 2\nPHẦN III. Cõu trắc nghiệm trả lời ngắn. Thớ sinh trả lời từ\n\nBước 3 - Soát lại: Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "answer": "Lời giải:\n 3 + 2 3 - 2 ( )( ) 1 1\n a) Ta cú: 3 + 2 = = nờn mệnh đề: “ 3 + 2 = ” là\n 3 - 2 3 - 2 3 - 2 ( )\n mệnh đề đỳng.\n 2 2 2 2\n b) Ta cú: 2 - 18 = 2 - 3 2 =-2 2 = 8 nờn mệnh đề: 2 - 18 > 8 ” là mệnh ( ) ( ) ( ) “( )\n ",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math10",
+        "algebra",
+        "math10.algebra.logic_sets",
+        "math10.logic.identify.p1",
+        "level:foundation",
+        "source:menh de va tap hop/bo-de-on-tap-mon-toan-10-chu-de-menh-de-va-tap-hop.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": 1,
+        "strand": "algebra",
+        "topicId": "math10.algebra.logic_sets",
+        "patternId": "math10.logic.identify.p1",
+        "level": "foundation",
+        "sourceFile": "menh de va tap hop/bo-de-on-tap-mon-toan-10-chu-de-menh-de-va-tap-hop.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\menh de va tap hop\\bo-de-on-tap-mon-toan-10-chu-de-menh-de-va-tap-hop.pdf",
+        "importConfidence": 0.9,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "Lời giải:\n 3 + 2 3 - 2 ( )( ) 1 1\n a) Ta cú: 3 + 2 = = nờn mệnh đề: “ 3 + 2 = ” là\n 3 - 2 3 - 2 3 - 2 ( )\n mệnh đề đỳng.\n 2 2 2 2\n b) Ta cú: 2 - 18 = 2 - 3 2 =-2 2 = 8 nờn mệnh đề: 2 - 18 > 8 ” là mệnh ( ) ( ) ( ) “( )\n "
+      }
+    },
+    {
+      "id": "math10.math10.algebra.logic_sets.menh_de_va_tap_hop_chuyen_de_menh_de_va_tap_hop_toan_10_ket_noi_tri_thuc_voi_cuoc_song_pdf.q537",
+      "sourceId": "math10.algebra.logic_sets.menh_de_va_tap_hop_chuyen_de_menh_de_va_tap_hop_toan_10_ket_noi_tri_thuc_voi_cuoc_song_pdf.q537",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.logic_sets"
+      ],
+      "skillIds": [
+        "math10.logic.identify"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Cõu 2: Ký hiệu nào sau đõy để chỉ 5 khụng phải là một số hữu tỉ?\n A. 5 ≠ B. 5  C. 5∉ D. 5 ⊂",
+      "correctAnswer": null,
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "missing_source_solution",
+        "guidedSolutionStatus": "generated_miumath_guidance",
+        "thinking": "**1. Quan sát & nhận diện:** Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.\n\n**2. Hướng tư duy:** Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.\n\n**3. Bẫy cần tránh:** Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "recognition": "Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.",
+        "trap": "Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "checklist": "Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.",
+        "steps": "Bài này chưa có lời giải nguồn đã kiểm chứng nên chỉ dùng ở chế độ guided/display cho đến khi bổ sung đáp án.\n\nBước 0 - Quan sát đề: Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.\n\nBước 1 - Dựng hướng làm: Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.\n\nBước 2 - Tự kiểm tra trap: Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "answer": null,
+        "teacherNote": "Chưa có lời giải nguồn; không mở chấm điểm tự động cho câu này."
+      },
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math10",
+        "algebra",
+        "math10.algebra.logic_sets",
+        "math10.logic.identify.p1",
+        "level:foundation",
+        "source:menh de va tap hop/chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": 1,
+        "strand": "algebra",
+        "topicId": "math10.algebra.logic_sets",
+        "patternId": "math10.logic.identify.p1",
+        "level": "foundation",
+        "sourceFile": "menh de va tap hop/chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\menh de va tap hop\\chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+        "importConfidence": 1,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "missing_source_solution",
+        "sourceAnswer": ""
+      }
+    },
+    {
+      "id": "math10.math10.algebra.logic_sets.menh_de_va_tap_hop_chuyen_de_menh_de_va_tap_hop_toan_10_ket_noi_tri_thuc_voi_cuoc_song_pdf.q651",
+      "sourceId": "math10.algebra.logic_sets.menh_de_va_tap_hop_chuyen_de_menh_de_va_tap_hop_toan_10_ket_noi_tri_thuc_voi_cuoc_song_pdf.q651",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.logic_sets"
+      ],
+      "skillIds": [
+        "math10.logic.identify"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Cõu 2: Ký hiệu nào sau đõy để chỉ 5 khụng phải là một số hữu tỉ?\n A. 5 ≠ B. 5  C. 5∉ D. 5 ⊂",
+      "correctAnswer": "Lời giải\n\n Vỡ 5 chỉ là một phần tử cũn là một tập hợp nờn cỏc đỏp ỏn A, B, D đều sai.\n\n Đỏp ỏn C.",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.\n\n**2. Hướng tư duy:** Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.\n\n**3. Bẫy cần tránh:** Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "recognition": "Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.",
+        "trap": "Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "checklist": "Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Nhìn từ khóa mệnh đề, phủ định, kéo theo, tương đương, tập hợp, giao/hợp/hiệu/phần bù; cần phân biệt câu khẳng định với câu hỏi/cảm thán và mệnh đề chứa biến.\n\nBước 1 - Chọn đường giải: Phân loại câu/mệnh đề -> xác định ký hiệu/tập hợp -> thực hiện phép phủ định, kéo theo hoặc phép toán tập hợp -> kiểm tra lại bằng ví dụ nhỏ.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nLời giải\n\n Vỡ 5 chỉ là một phần tử cũn là một tập hợp nờn cỏc đỏp ỏn A, B, D đều sai.\n\n Đỏp ỏn C.\n\nBước 3 - Soát lại: Dễ nhầm mệnh đề với mệnh đề chứa biến, nhầm điều kiện cần/đủ, hoặc đổi phủ định sai khi có “mọi/tồn tại”.",
+        "answer": "Lời giải\n\n Vỡ 5 chỉ là một phần tử cũn là một tập hợp nờn cỏc đỏp ỏn A, B, D đều sai.\n\n Đỏp ỏn C.",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math10",
+        "algebra",
+        "math10.algebra.logic_sets",
+        "math10.logic.identify.p1",
+        "level:foundation",
+        "source:menh de va tap hop/chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": 1,
+        "strand": "algebra",
+        "topicId": "math10.algebra.logic_sets",
+        "patternId": "math10.logic.identify.p1",
+        "level": "foundation",
+        "sourceFile": "menh de va tap hop/chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\menh de va tap hop\\chuyen-de-menh-de-va-tap-hop-toan-10-ket-noi-tri-thuc-voi-cuoc-song.pdf",
+        "importConfidence": 1,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "Lời giải\n\n Vỡ 5 chỉ là một phần tử cũn là một tập hợp nờn cỏc đỏp ỏn A, B, D đều sai.\n\n Đỏp ỏn C."
+      }
+    },
+    {
+      "id": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q35",
+      "sourceId": "math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q35",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.integrated_review"
+      ],
+      "skillIds": [
+        "math10.review.mixed_foundation"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Ví dụ 24: Cho hệ phương trỡnh:\n { 2x + y = 4;.\n }| x − 2y |= m\n a.",
+      "correctAnswer": "Vậy, với m = 3 hệ cú nghiệm (1; 2) và (11; −2 ).",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\n**2. Hướng tư duy:** Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\n**3. Bẫy cần tránh:** Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "recognition": "Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.",
+        "trap": "Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "checklist": "Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\nBước 1 - Chọn đường giải: Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nGiải hệ phương trỡnh với m = 3.\n b. Tỡm m để hệ cú hai nghiệm với hoành độ trỏi dấu.\n Giải\n Biến đổi tương đương hệ về dạng:\n { m ≥ 0 { m ≥ 0\n |=; y^4 − 2x ⇔ |=; y^4 − 2x\n | 2 2 | 2 2 } (x − 2y) = m }[x − 2(4 − 2x)] = m\n\n Liờn hệ tài liệu word toỏn SĐT (zalo): 039.373.2038 130\n\n { m ≥ 0 { m ≥ 0\n ⇔ |=; y^4 − 2x ⇔ |=; y^4 − 2x. (I)\n | 2 2 | 2 2 } (5x − 8) = m } f (x) = 25x − 80x + 64 − m = 0 (1)\na. Với m = 3, ta được:\n { y = 4 − 2x [ x = 1 và y = 2\n { y = 4 − 2x | |; 2 ⇔; [ x = 1 ⇔ 11 2. }5x − 16x + 11 = 0 | | | x = và y = − } [ x = 11/5 |[ 5 5\n Vậy, với m = 3 hệ cú nghiệm (1; 2) và (11; −2 ).\n 5 5\nb. Để hệ cú hai nghiệm với hoành độ trỏi dấu\n m ≥ 0\n ⇔ (1) cú hai nghiểm trỏi dấu ⇔ a.f(0) < 0 ⇔ 64 − m2 < 0 ⇔ m > 8.\n Vậy, với m > 8 thoả món điều kiện đầu bài.\n\nBước 3 - Soát lại: Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "answer": "Vậy, với m = 3 hệ cú nghiệm (1; 2) và (11; −2 ).",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math10",
+        "assessment",
+        "math10.assessment.integrated_review",
+        "math10.review.mixed_foundation.p1",
+        "level:foundation",
+        "source:bai giang trong tam mon toan lop 10.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": "full_year",
+        "strand": "assessment",
+        "topicId": "math10.assessment.integrated_review",
+        "patternId": "math10.review.mixed_foundation.p1",
+        "level": "foundation",
+        "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\bai giang trong tam mon toan lop 10.pdf",
+        "importConfidence": 1,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "Vậy, với m = 3 hệ cú nghiệm (1; 2) và (11; −2 )."
+      }
+    },
+    {
+      "id": "math10.math10.algebra.inequalities_one_variable.bai_giang_trong_tam_mon_toan_lop_10_pdf.q56",
+      "sourceId": "math10.algebra.inequalities_one_variable.bai_giang_trong_tam_mon_toan_lop_10_pdf.q56",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.inequality"
+      ],
+      "skillIds": [
+        "math10.ineq1.solve_system"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Ví dụ 21: Giải bất phương trình  2 − 3 x + 1 < 2 + 3",
+      "correctAnswer": "Vậy, nghiệm của bất phương trình:",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Nhận diện bất đẳng thức/bất phương trình một ẩn qua dấu so sánh, điều kiện biến đổi và yêu cầu tìm tập nghiệm hoặc điều kiện tham số.\n\n**2. Hướng tư duy:** Đặt điều kiện -> biến đổi tương đương có kiểm soát -> xét dấu/lập bảng -> đọc tập nghiệm hoặc điều kiện tham số.\n\n**3. Bẫy cần tránh:** Khi nhân/chia với biểu thức chưa biết dấu phải xét dấu; bài tham số cần tách trường hợp biên.",
+        "recognition": "Nhận diện bất đẳng thức/bất phương trình một ẩn qua dấu so sánh, điều kiện biến đổi và yêu cầu tìm tập nghiệm hoặc điều kiện tham số.",
+        "trap": "Khi nhân/chia với biểu thức chưa biết dấu phải xét dấu; bài tham số cần tách trường hợp biên.",
+        "checklist": "Đặt điều kiện -> biến đổi tương đương có kiểm soát -> xét dấu/lập bảng -> đọc tập nghiệm hoặc điều kiện tham số.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Nhận diện bất đẳng thức/bất phương trình một ẩn qua dấu so sánh, điều kiện biến đổi và yêu cầu tìm tập nghiệm hoặc điều kiện tham số.\n\nBước 1 - Chọn đường giải: Đặt điều kiện -> biến đổi tương đương có kiểm soát -> xét dấu/lập bảng -> đọc tập nghiệm hoặc điều kiện tham số.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nGiải\n Ta có:\n 1 3 + 2\n 2 − 3 x + 1 < 2 + 3 ⇔ ( 3 − 2 )x − 1 ≤\n 3 − 2 3 − 2\n\n Liờn hệ tài liệu word toỏn SĐT (zalo): 039.373.2038 210\n\n 1\n ⇔ x − ≤ 5 + 2 6 ⇔ x − ( 2 + 3 ) ≤ 5 + 2 6\n 3 − 2\n ⇔ − (5 + 2 6 ) ≤ x − ( 2 + 3 ) ≤ 5 + 2 6\n ⇔ −5 − 2 6 + 2 + 3 ≤ x ≤ 5 + 2 6 + 2 + 3.\n Vậy, nghiệm của bất phương trình:\n S = [−5 − 2 6 + 2 + 3; 5 + 2 6 + 2 + 3 ].\n\nBước 3 - Soát lại: Khi nhân/chia với biểu thức chưa biết dấu phải xét dấu; bài tham số cần tách trường hợp biên.",
+        "answer": "Vậy, nghiệm của bất phương trình:",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "medium",
+      "cognitiveLevel": "apply",
+      "tags": [
+        "math10",
+        "algebra",
+        "math10.algebra.inequalities_one_variable",
+        "math10.ineq1.solve_system.p3",
+        "level:core",
+        "source:bai giang trong tam mon toan lop 10.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": 1,
+        "strand": "algebra",
+        "topicId": "math10.algebra.inequalities_one_variable",
+        "patternId": "math10.ineq1.solve_system.p3",
+        "level": "core",
+        "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\bai giang trong tam mon toan lop 10.pdf",
+        "importConfidence": 0.9,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "Vậy, nghiệm của bất phương trình:"
+      }
+    },
+    {
+      "id": "math10.math10.algebra.inequalities_one_variable.bai_giang_trong_tam_mon_toan_lop_10_pdf.q57",
+      "sourceId": "math10.algebra.inequalities_one_variable.bai_giang_trong_tam_mon_toan_lop_10_pdf.q57",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.inequality"
+      ],
+      "skillIds": [
+        "math10.ineq1.solve_system"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Ví dụ 22: Giải bất phương trình |2x2 − 3x + 1| − |2x2 − 5x| < 2x + 1.",
+      "correctAnswer": "Vậy, bất phương trình có nghiệm là (−∞; −1 )∪(; +∞).",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Nhận diện bất đẳng thức/bất phương trình một ẩn qua dấu so sánh, điều kiện biến đổi và yêu cầu tìm tập nghiệm hoặc điều kiện tham số.\n\n**2. Hướng tư duy:** Đặt điều kiện -> biến đổi tương đương có kiểm soát -> xét dấu/lập bảng -> đọc tập nghiệm hoặc điều kiện tham số.\n\n**3. Bẫy cần tránh:** Khi nhân/chia với biểu thức chưa biết dấu phải xét dấu; bài tham số cần tách trường hợp biên.",
+        "recognition": "Nhận diện bất đẳng thức/bất phương trình một ẩn qua dấu so sánh, điều kiện biến đổi và yêu cầu tìm tập nghiệm hoặc điều kiện tham số.",
+        "trap": "Khi nhân/chia với biểu thức chưa biết dấu phải xét dấu; bài tham số cần tách trường hợp biên.",
+        "checklist": "Đặt điều kiện -> biến đổi tương đương có kiểm soát -> xét dấu/lập bảng -> đọc tập nghiệm hoặc điều kiện tham số.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Nhận diện bất đẳng thức/bất phương trình một ẩn qua dấu so sánh, điều kiện biến đổi và yêu cầu tìm tập nghiệm hoặc điều kiện tham số.\n\nBước 1 - Chọn đường giải: Đặt điều kiện -> biến đổi tương đương có kiểm soát -> xét dấu/lập bảng -> đọc tập nghiệm hoặc điều kiện tham số.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nGiải\n Biến đổi bất phương trình ban đầu về dạng:\n |2x2 − 3x + 1| − |2x2 − 5x| < |(2x2 − 3x + 1) − (2x2 − 5x)|\n [ x < −1/ 2\n ⇔ (2x2 − 5x)(2x + 1) < 0 ⇔.\n |<[ 0 x < 5/ 2\n 5 Vậy, bất phương trình có nghiệm là (−∞; −1 )∪(; +∞).\n 2 2\n\nBước 3 - Soát lại: Khi nhân/chia với biểu thức chưa biết dấu phải xét dấu; bài tham số cần tách trường hợp biên.",
+        "answer": "Vậy, bất phương trình có nghiệm là (−∞; −1 )∪(; +∞).",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "medium",
+      "cognitiveLevel": "apply",
+      "tags": [
+        "math10",
+        "algebra",
+        "math10.algebra.inequalities_one_variable",
+        "math10.ineq1.solve_system.p3",
+        "level:core",
+        "source:bai giang trong tam mon toan lop 10.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": 1,
+        "strand": "algebra",
+        "topicId": "math10.algebra.inequalities_one_variable",
+        "patternId": "math10.ineq1.solve_system.p3",
+        "level": "core",
+        "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\bai giang trong tam mon toan lop 10.pdf",
+        "importConfidence": 0.9,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "Vậy, bất phương trình có nghiệm là (−∞; −1 )∪(; +∞)."
+      }
+    },
+    {
+      "id": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q62",
+      "sourceId": "math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q62",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.integrated_review"
+      ],
+      "skillIds": [
+        "math10.review.mixed_foundation"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Ví dụ 27: Giải phương trình:\n 2x − 6 + x − 1 = 3x − 7. (1)",
+      "correctAnswer": "vậy, ta phải xột phương trỡnh trờn ba tập (−∞, 1); [1, 3]; (3, +∞) và lập bảng",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\n**2. Hướng tư duy:** Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\n**3. Bẫy cần tránh:** Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "recognition": "Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.",
+        "trap": "Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "checklist": "Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\nBước 1 - Chọn đường giải: Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nGiải\n Theo định nghĩa giỏ trị tuyệt đối, ta cú:\n {2 x − 6 khi x ≥ 3\n 2x − 6=;.\n } − 2 x + 6 khi x < 3\n { x − 1 khi x ≥ 1\n x – 1 =;.\n } − x + 1 khi x < 1\n Như vậy, ta phải xột phương trỡnh trờn ba tập (−∞, 1); [1, 3]; (3, +∞) và lập bảng\nsau:\n x −∞ 1 3 +∞\n 2x − 6 6 − 2x 6 − 2x 0 2x − 6\n x − 1 1 − x 0 x − 1 x − 1\n VT^7 − 3x 5 − x 3x − 7\n Từ đú, ta xột cỏc trường hợp:\n\n Liờn hệ tài liệu word toỏn SĐT (zalo): 039.373.2038 213\n\nTrường hợp 1: Nếu x ∈ (−∞, 1) thỡ:\n 7\n (1) ⇔ 7 − 3x = 3x − 7 ⇔ 6x = 14 ⇔ x = loại.\n 3\nTrường hợp 2: Nếu x ∈ [1, 3] thỡ:\n (1) ⇔ 5 − x = 3x − 7 ⇔ 4x = 12 ⇔ x = 3 thoả m)n.\nTrường hợp 3: Nếu x ∈ (3, +∞) thỡ:\n (1) ⇔ 3x − 7 = 3x − 7 luụn đỳng.\n Do đú, mọi x thuộc khoảng (3, +∞) đều là nghiệm của (1).\n Vậy, tập nghiệm của phương trỡnh là T = {3} ∪ (3, +∞) = [3, +∞).\n\nBước 3 - Soát lại: Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "answer": "vậy, ta phải xột phương trỡnh trờn ba tập (−∞, 1); [1, 3]; (3, +∞) và lập bảng",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math10",
+        "assessment",
+        "math10.assessment.integrated_review",
+        "math10.review.mixed_foundation.p1",
+        "level:foundation",
+        "source:bai giang trong tam mon toan lop 10.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": "full_year",
+        "strand": "assessment",
+        "topicId": "math10.assessment.integrated_review",
+        "patternId": "math10.review.mixed_foundation.p1",
+        "level": "foundation",
+        "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\bai giang trong tam mon toan lop 10.pdf",
+        "importConfidence": 1,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "vậy, ta phải xột phương trỡnh trờn ba tập (−∞, 1); [1, 3]; (3, +∞) và lập bảng"
+      }
+    },
+    {
+      "id": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q77",
+      "sourceId": "math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q77",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.integrated_review"
+      ],
+      "skillIds": [
+        "math10.review.mixed_foundation"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Ví dụ 42: Giải hệ phương trình:\n { x^2 + y^2 = 1 (1);. (I)\n }| x + 3y − 3| − | 3x + y − 3|= 2| x + y | (2)",
+      "correctAnswer": "Vậy, hệ có ba cặp nghiệm (0; 1), (1; 0), (0; −1).",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\n**2. Hướng tư duy:** Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\n**3. Bẫy cần tránh:** Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "recognition": "Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.",
+        "trap": "Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "checklist": "Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\nBước 1 - Chọn đường giải: Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nGiải\n Biến đổi (2) về dạng:\n (2) ⇔ |x + 3y − 3| − |3x + y − 3| = |( x + 3y − 3) − ( 3x + y − 3)|\n [ 3x + y − 3 ≥ 0 & x + y ≥ 0 (3)\n ⇔ (3x + y − 3)(x + y) ≥ 0 ⇔ | [ 3x + y − 3 ≤ 0 & x + y ≤ 0 (4)\n ∋ Với (3), ta được:\n (2) ⇔ |x + 3y − 3| − (3x + y − 3) = 2(x + y) ⇔ |x + 3y − 3| = 5x + 3y − 3 ≥ 0\n [ x + 3y − 3 = 5x + 3y − 3 [ x = 0\n ⇔ ⇔.\n |+[ x 3y − 3 = −5x − 3y + 3 |+[ x y = 1\n ∋ Với x = 0, ta được:\n { x^2 + y^2 = 1 { y^2 = 1 [ x = 0 & y = 1\n (I) ⇔; ⇔; ⇔ |. } x = 0 } x = 0 [ x = 0 & y = −1 (l)\n ∋ Với x + y = 1, ta được:\n { x^2 + y^2 = 1 { x + y = 1 [ x = 0 & y = 1\n = 0 [ x = 1 & y = 0 (I) ⇔;+} x y = 1 ⇔ }; xy ⇔ |.\n ∋ Với (4), ta được:\n (2) ⇔ |x + 3y − 3| + (3x + y − 3) = − 2(x + y) ⇔ |x + 3y − 3| = − 5x − 3y + 3 ≥ 0\n\n Liờn hệ tài liệu word toỏn SĐT (zalo): 039.373.2038 222\n\n [ x + 3y − 3 = 5x + 3y − 3 [ x = 0\n ⇔ ⇔.\n |+[ x 3y − 3 = −5x − 3y + 3 |+[ x y = 1 (l)\n ∋ Với x = 0, ta được:\n { x^2 + y^2 = 1 { y^2 = 1 [ x = 0 & y = 1 (l)\n (I) ⇔; ⇔; ⇔ |. } x = 0 } x = 0 [ x = 0 & y = −1\n Vậy, hệ có ba cặp nghiệm (0; 1), (1; 0), (0; −1).\n\nBước 3 - Soát lại: Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "answer": "Vậy, hệ có ba cặp nghiệm (0; 1), (1; 0), (0; −1).",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math10",
+        "assessment",
+        "math10.assessment.integrated_review",
+        "math10.review.mixed_foundation.p1",
+        "level:foundation",
+        "source:bai giang trong tam mon toan lop 10.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": "full_year",
+        "strand": "assessment",
+        "topicId": "math10.assessment.integrated_review",
+        "patternId": "math10.review.mixed_foundation.p1",
+        "level": "foundation",
+        "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\bai giang trong tam mon toan lop 10.pdf",
+        "importConfidence": 1,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "Vậy, hệ có ba cặp nghiệm (0; 1), (1; 0), (0; −1)."
+      }
+    },
+    {
+      "id": "math10.math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q126",
+      "sourceId": "math10.assessment.integrated_review.bai_giang_trong_tam_mon_toan_lop_10_pdf.q126",
+      "source": "math10_local_source",
+      "domainId": "mathematics",
+      "programIds": [
+        "vn_math_10_12"
+      ],
+      "conceptIds": [
+        "math.integrated_review"
+      ],
+      "skillIds": [
+        "math10.review.mixed_foundation"
+      ],
+      "misconceptionIds": [],
+      "type": "open_response",
+      "prompt": "Ví dụ 1: Cho hình bình hành ABCD, biết tâm I(2; 2) và phương trình cạnh\n (AB): 2x − y = 0, (AD): 4x − 3y = 0.\n Lập phương trình các cạnh BC và CD.",
+      "correctAnswer": "Vậy phương trình (BC): 4x − 3y − 4 = 0.",
+      "explanation": {
+        "source": "math10_local_source",
+        "sourceSolutionStatus": "source_solution",
+        "guidedSolutionStatus": "verified_source_solution",
+        "thinking": "**1. Quan sát & nhận diện:** Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\n**2. Hướng tư duy:** Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\n**3. Bẫy cần tránh:** Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "recognition": "Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.",
+        "trap": "Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "checklist": "Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.",
+        "steps": "Bước 0 - Đọc đề và nhận diện: Đây là bài ôn/tổng hợp; cần phân loại nhanh câu thuộc chuyên đề nào rồi dùng công cụ tương ứng.\n\nBước 1 - Chọn đường giải: Ghi điều kiện -> chọn công cụ -> giải từng bước -> kiểm tra -> kết luận.\n\nBước 2 - Thực hiện lời giải nguồn:\n\nGiải\na. Cạnh BC đối xứng với AD qua I, ta lần lượt thực hiện:\n Với mỗi đểm M(x, y) ∈ (AD) ⇒ tồn tại điểm M1(x1, y1) ∈ (BC) nhận I làm trung\nđiểm, ta được:\n { x + x 1 = 4 { x = 4 − x 1;+} y y1 = 4 ⇔;=} y^4 − y1. (I)\n Thay (I) vào phương trình của (AD), ta được:\n 4(4 − x1) − 3(4 − y1) = 0 ⇔ 4x1 − 3y1 − 4 = 0. (1)\n 4x − 3y − 4 = 0. (2)\n Vậy phương trình (BC): 4x − 3y − 4 = 0.\nb. Cạnh CD đối xứng với AB qua I, ta lần lượt thực hiện:\n Lấy điểm O(0, 0) ∈ (AB), gọi O1 là điểm đối xứng với O qua I ⇒ O1(4, 4).\n ∋ Vì (CD) // (AB): 2x − y = 0 ⇒ (CD): 2x − y + C = 0.\n ∋ Vì O1 ∈ (CD) ⇒ C = − 4.\n Vậy, phương trình đường thẳng (CD): 2x − y − 4 = 0.\n\nBước 3 - Soát lại: Cần giữ điều kiện xác định, kiểm tra kết quả và viết kết luận đúng yêu cầu đề.",
+        "answer": "Vậy phương trình (BC): 4x − 3y − 4 = 0.",
+        "teacherNote": "Đã có lời giải nguồn; khi dạy nên yêu cầu học sinh nêu dấu hiệu nhận diện trước khi xem phép biến đổi."
+      },
+      "difficulty": "easy",
+      "cognitiveLevel": "understand",
+      "tags": [
+        "math10",
+        "assessment",
+        "math10.assessment.integrated_review",
+        "math10.review.mixed_foundation.p1",
+        "level:foundation",
+        "source:bai giang trong tam mon toan lop 10.pdf"
+      ],
+      "metadata": {
+        "grade": 10,
+        "semester": "full_year",
+        "strand": "assessment",
+        "topicId": "math10.assessment.integrated_review",
+        "patternId": "math10.review.mixed_foundation.p1",
+        "level": "foundation",
+        "sourceFile": "bai giang trong tam mon toan lop 10.pdf",
+        "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 10\\bai giang trong tam mon toan lop 10.pdf",
+        "importConfidence": 1,
+        "formulaAssets": [],
+        "formulaAssetCount": 0,
+        "formulaStatus": "none",
+        "figureStatus": "none",
+        "solutionStatus": "source_solution",
+        "sourceAnswer": "Vậy phương trình (BC): 4x − 3y − 4 = 0."
+      }
+    }
+  ]
+}

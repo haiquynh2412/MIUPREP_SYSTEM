@@ -1,0 +1,43 @@
+{
+  "total": 3,
+  "byCode": {
+    "known_ocr_words": 1,
+    "slash_inside_word": 2
+  },
+  "bySection": {
+    "cam-cae6-test1.json::cam-cae6-t1-rsec4": 1,
+    "cam-cae6-test2.json::cam-cae6-t2-rsec1": 2
+  },
+  "rows": [
+    {
+      "file": "cam-cae6-test1.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t1-rsec4",
+      "sectionTitle": "Part 4: Multiple Matching (Reading)",
+      "where": "section.passageHtml",
+      "code": "known_ocr_words",
+      "match": "climes",
+      "excerpt": "s in their late twenties and thirties to want to disentangle themselves from the lives they've made for themselves and head off for foreign climes. C Jennifer Cox, of Lonely Planet guidebook publishers, identifies a growing awareness that adventure is there for the taking: 'The penny's dropped. The sort of people who always say \"I wish I'd had that opportunity\" are realising that they can have it "
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "where": "q.q-cam-cae6-t2-r1.instruction",
+      "code": "slash_inside_word",
+      "match": "he/she",
+      "excerpt": "1. says that the book contained a wider range of material than other books he/she owned?"
+    },
+    {
+      "file": "cam-cae6-test2.json",
+      "skill": "reading",
+      "sectionId": "cam-cae6-t2-rsec1",
+      "sectionTitle": "Part 1: Multiple Matching (Reading)",
+      "where": "q.q-cam-cae6-t2-r5.instruction",
+      "code": "slash_inside_word",
+      "match": "him/her",
+      "excerpt": "5. explains what motivated him/her to start drawing?"
+    }
+  ]
+}

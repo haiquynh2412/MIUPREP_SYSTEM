@@ -1,0 +1,73 @@
+<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E1E2E" rx="8"/>
+  
+  <!-- Grid/Decorative lines (Subtle) -->
+  <line x1="50" y1="200" x2="450" y2="200" stroke="#313244" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="50" y1="80" x2="450" y2="80" stroke="#313244" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- Escalator Structure (Truss & Handrails) -->
+  <!-- Bottom floor landing -->
+  <rect x="50" y="195" width="60" height="10" fill="#45475A" rx="2"/>
+  <!-- Top floor landing -->
+  <rect x="390" y="75" width="60" height="10" fill="#45475A" rx="2"/>
+
+  <!-- Escalator Slope (Incline) -->
+  <line x1="110" y1="200" x2="390" y2="80" stroke="#CDD6F4" stroke-width="6"/>
+  <!-- Inner track -->
+  <line x1="115" y1="208" x2="385" y2="92" stroke="#585B70" stroke-width="2"/>
+
+  <!-- Handrail (Top guide) -->
+  <line x1="110" y1="170" x2="390" y2="50" stroke="#F38BA8" stroke-width="4"/>
+  <line x1="70" y1="170" x2="110" y2="170" stroke="#F38BA8" stroke-width="4"/>
+  <line x1="390" y1="50" x2="430" y2="50" stroke="#F38BA8" stroke-width="4"/>
+  <!-- Handrail supports -->
+  <line x1="150" y1="183" x2="150" y2="153" stroke="#45475A" stroke-width="2"/>
+  <line x1="250" y1="140" x2="250" y2="110" stroke="#45475A" stroke-width="2"/>
+  <line x1="350" y1="97" x2="350" y2="67" stroke="#45475A" stroke-width="2"/>
+
+  <!-- Steps (Indicative) -->
+  <path d="M 120 196 L 135 196 L 135 189 L 150 189 L 150 183 L 165 183 L 165 176 L 180 176 L 180 170" fill="none" stroke="#A6ADC8" stroke-width="2"/>
+  <path d="M 220 153 L 235 153 L 235 146 L 250 146 L 250 140 L 265 140 L 265 133 L 280 133 L 280 127" fill="none" stroke="#A6ADC8" stroke-width="2"/>
+  <path d="M 320 110 L 335 110 L 335 103 L 350 103 L 350 97 L 365 97 L 365 90 L 380 90 L 380 84" fill="none" stroke="#A6ADC8" stroke-width="2"/>
+
+  <!-- Labels for floors -->
+  <text x="50" y="225" fill="#BAC2DE" font-size="12" font-family="Arial" font-weight="bold">Trệt / Ground Floor</text>
+  <text x="350" y="35" fill="#BAC2DE" font-size="12" font-family="Arial" font-weight="bold">Lầu / Upper Floor</text>
+
+  <!-- Person schematic on the escalator -->
+  <!-- We place the passenger at the middle of the escalator (x=240, y=144) -->
+  <!-- Head -->
+  <circle cx="240" cy="115" r="7" fill="#A6E3A1"/>
+  <!-- Body -->
+  <line x1="240" y1="122" x2="240" y2="138" stroke="#A6E3A1" stroke-width="3"/>
+  <!-- Legs -->
+  <line x1="240" y1="138" x2="233" y2="148" stroke="#A6E3A1" stroke-width="2"/>
+  <line x1="240" y1="138" x2="247" y2="148" stroke="#A6E3A1" stroke-width="2"/>
+  <!-- Arms -->
+  <line x1="240" y1="127" x2="232" y2="133" stroke="#A6E3A1" stroke-width="2"/>
+  <line x1="240" y1="127" x2="248" y2="133" stroke="#A6E3A1" stroke-width="2"/>
+
+  <!-- Velocity Vectors (Arrows) -->
+  <!-- 1. Escalator speed vector v_t (Blue/Cyan) -->
+  <g transform="translate(160, 215)">
+    <line x1="0" y1="0" x2="60" y2="-25" stroke="#89B4FA" stroke-width="3"/>
+    <polygon points="60,-25 50,-20 56,-28" fill="#89B4FA"/>
+    <text x="15" y="-18" fill="#89B4FA" font-size="11" font-family="Arial" font-weight="bold" transform="rotate(-22.6)">v_t (Thang)</text>
+  </g>
+
+  <!-- 2. Passenger walking speed vector v_n (Green) -->
+  <g transform="translate(250, 95)">
+    <line x1="0" y1="0" x2="60" y2="-25" stroke="#A6E3A1" stroke-width="3"/>
+    <polygon points="60,-25 50,-20 56,-28" fill="#A6E3A1"/>
+    <text x="15" y="-18" fill="#A6E3A1" font-size="11" font-family="Arial" font-weight="bold" transform="rotate(-22.6)">v_n (Người)</text>
+  </g>
+
+  <!-- Dimension Indicator for Length L -->
+  <path d="M 100 215 L 90 220 M 380 95 L 370 100" stroke="#9399B2" stroke-width="1.5"/>
+  <path d="M 95 217 L 375 97" stroke="#9399B2" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Double arrow heads -->
+  <polygon points="95,217 105,216 99,211" fill="#9399B2"/>
+  <polygon points="375,97 365,98 371,103" fill="#9399B2"/>
+  <text x="230" y="170" fill="#9399B2" font-size="12" font-family="Arial" font-style="italic">Chiều dài L / Length L</text>
+</svg>

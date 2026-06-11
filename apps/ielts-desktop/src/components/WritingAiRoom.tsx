@@ -1,13 +1,53 @@
 import { useState } from 'react';
+import type { WritingFeedback } from '@miuprep/db';
+
+type WritingCriterion = WritingFeedback['criteria'][number];
+type WritingCorrection = WritingFeedback['corrections'][number];
+type SentenceUpgrade = NonNullable<WritingFeedback['sentenceUpgrades']>[number];
+
+interface WritingTheme {
+  name: string;
+  primary: string;
+  hover: string;
+  bgLight: string;
+  borderLight: string;
+  textDark: string;
+  gradientFrom: string;
+  gradientTo: string;
+}
+
+interface WritingCollocation {
+  phrase: string;
+  vietnamese: string;
+  example: string;
+}
+
+interface WritingOutlineSection {
+  sectionName: string;
+  description: string;
+}
+
+interface WritingSample {
+  id: string;
+  title: string;
+  type: string;
+  testNum: number | string;
+  taskNum: 1 | 2 | number;
+  prompt: string;
+  sampleAnswer: string;
+  wordCount: number;
+  collocations?: WritingCollocation[];
+  outline?: WritingOutlineSection[];
+}
 
 interface WritingAiRoomProps {
-  writingFeedback: any;
+  writingFeedback: WritingFeedback | null;
   isAiLoading: boolean;
   aiErrorMsg: string | null;
   runWritingAiEvaluation: (essay: string, taskNum: 1 | 2, track: 'ielts' | 'cpe' | 'cae', prompt: string) => Promise<void>;
   activeTrack: 'ielts' | 'cpe' | 'cae';
-  activeTheme: any;
-  availableWritingSamples: any[];
+  activeTheme: WritingTheme;
+  availableWritingSamples: WritingSample[];
 }
 
 export default function WritingAiRoom({
@@ -62,7 +102,7 @@ export default function WritingAiRoom({
               onChange={(e) => handleWritingSampleChange(e.target.value)}
               className={`bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-${activeTrack === 'cpe' ? 'emerald' : activeTrack === 'cae' ? 'violet' : 'blue'}-500 focus:border-${activeTrack === 'cpe' ? 'emerald' : activeTrack === 'cae' ? 'violet' : 'blue'}-500 cursor-pointer font-bold text-slate-700 outline-none w-full`}
             >
-              {availableWritingSamples.map((sample: any) => (
+              {availableWritingSamples.map((sample: WritingSample) => (
                 <option key={sample.id} value={sample.id}>
                   [Test {sample.testNum} - Task {sample.taskNum}] {sample.title} ({sample.type})
                 </option>
@@ -183,7 +223,7 @@ export default function WritingAiRoom({
                 Hãy tham khảo và tích hợp các từ vựng/cụm từ nâng cao này vào bài viết của bạn để ghi điểm **Lexical Resource** ấn tượng:
               </p>
               <div className="flex flex-col gap-3 mt-1 max-h-[48vh] overflow-y-auto pr-1">
-                {activeWritingSample.collocations?.map((col: any, idx: number) => (
+                {activeWritingSample.collocations?.map((col: WritingCollocation, idx: number) => (
                   <div key={idx} className="bg-white border rounded-lg p-3 flex flex-col gap-1.5 shadow-sm">
                     <div className="flex items-center gap-2">
                       <span className={`text-white font-mono text-[9px] px-1.5 py-0.2 rounded font-black bg-${activeTheme.primary}`}>
@@ -250,7 +290,7 @@ export default function WritingAiRoom({
                 Điểm Chi Tiết Theo Tiêu Chí IELTS Writing Rubric
               </h4>
               <div className="flex flex-col gap-4">
-                {writingFeedback.criteria?.map((crit: any) => (
+                {writingFeedback.criteria?.map((crit: WritingCriterion) => (
                   <div
                     key={crit.criterionName}
                     className="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col text-xs text-left"
@@ -336,7 +376,7 @@ export default function WritingAiRoom({
               <div className="flex flex-col gap-4 text-left">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide m-0">Bản Đồ Nâng Cấp Câu Chi Tiết (+0.5 Strategy)</h4>
                 <div className="flex flex-col gap-4">
-                  {writingFeedback.sentenceUpgrades.map((upg: any, idx: number) => (
+                  {writingFeedback.sentenceUpgrades.map((upg: SentenceUpgrade, idx: number) => (
                     <div key={idx} className="border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col">
                       <div className="grid grid-cols-1 sm:grid-cols-2 border-b">
                         {/* Original sentence panel (Red tint) */}
@@ -365,7 +405,7 @@ export default function WritingAiRoom({
             <div className="flex flex-col gap-3 text-left">
               <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide m-0">Các Lỗi Ngữ Pháp & Từ Vựng Phát Hiện</h4>
               <div className="flex flex-col gap-2.5">
-                {writingFeedback.corrections?.map((c: any, idx: number) => (
+                {writingFeedback.corrections?.map((c: WritingCorrection, idx: number) => (
                   <div key={idx} className="border border-slate-100 bg-slate-50/50 p-4 rounded-lg text-xs leading-normal flex flex-col gap-1.5">
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <span className="font-bold text-slate-500">Lỗi sai:</span>
@@ -451,7 +491,7 @@ export default function WritingAiRoom({
                     Bố cục dàn ý chuẩn giúp tối ưu điểm **Organisation** và **Content** của bài thi tự luận:
                   </p>
                   <div className="flex flex-col gap-3.5 mt-1">
-                    {activeWritingSample.outline?.map((o: any, idx: number) => (
+                    {activeWritingSample.outline?.map((o: WritingOutlineSection, idx: number) => (
                       <div key={idx} className={`border-l-4 border-${activeTheme.primary} bg-slate-50 p-3.5 rounded-r-lg shadow-sm`}>
                         <h4 className="font-bold text-slate-800 m-0 text-xs uppercase tracking-wide">
                           {idx + 1}. {o.sectionName}
@@ -504,7 +544,7 @@ export default function WritingAiRoom({
                     Các cụm từ cố định học thuật (Collocations) đắt giá được chèn khéo léo trong bài viết mẫu:
                   </p>
                   <div className="flex flex-col gap-3.5 mt-1">
-                    {activeWritingSample.collocations?.map((col: any, idx: number) => (
+                    {activeWritingSample.collocations?.map((col: WritingCollocation, idx: number) => (
                       <div key={idx} className="bg-slate-50 border rounded-lg p-3.5 flex flex-col gap-1.5 shadow-sm">
                         <div className="flex items-center gap-2">
                           <span className={`text-white font-mono text-[10px] px-1.5 py-0.2 rounded font-black bg-${activeTheme.primary}`}>

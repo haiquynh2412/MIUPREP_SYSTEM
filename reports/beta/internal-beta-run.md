@@ -1,6 +1,6 @@
 # MiuPrep Internal Beta Run
 
-Generated at: 2026-06-04T06:21:40.833Z
+Generated at: 2026-06-04T10:30:08.955Z
 
 Note: this export is the internal smoke beta package. Seeded learner states prove the pipeline; replace them with live events before approving a wider production beta run.
 
@@ -11,7 +11,7 @@ Note: this export is the internal smoke beta package. Seeded learner states prov
 - Math content units: 28
 - Math questions: 485
 - MiuMath source: C:\Users\HAIQUYNH\OneDrive\CODE AI\MIUPREP_SYSTEM\apps\miumath-app\public\data\questions_db.json
-- English tests scanned: 93
+- English tests scanned: 99
 - English learning-ready questions: 110
 - Learners: 2
 - Telemetry events: 4
@@ -79,7 +79,7 @@ Detail: Empirical difficulty and lightweight Elo are shadow-only; keep teacher-a
 ## What Changed, Why, Impact
 
 - Change report status: watch
-- Compared with: 2026-06-04T06:18:53.175Z
+- Compared with: 2026-06-04T06:21:40.833Z
 - Items: 14; changed: 0; blockers: 0; watches: 13; passes: 1
 
 | Area | Severity | Change | What changed | Why | Impact |

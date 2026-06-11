@@ -1,7 +1,26 @@
 import type { StorageAdapter, ExamAttempt, WritingFeedback, LearnerProfile, ErrorNotebookEntry, LocalUser } from './index';
 import type { IeltsTest } from '@miuprep/content';
-import { validateIeltsTest } from '@miuprep/content';
 import { normalizeLearningEvents, type LearningEventRecord } from '@miuprep/learning';
+
+type ContentValidationModule = typeof import('@miuprep/content/src/validator');
+type ContentValidationError = {
+  severity: string;
+  message: string;
+};
+
+let contentValidationModulePromise: Promise<ContentValidationModule> | null = null;
+
+function loadContentValidationModule(): Promise<ContentValidationModule> {
+  if (!contentValidationModulePromise) {
+    contentValidationModulePromise = import('@miuprep/content/src/validator');
+  }
+  return contentValidationModulePromise;
+}
+
+async function validateIeltsTestForDb(test: IeltsTest): Promise<ContentValidationError[]> {
+  const { validateIeltsTest } = await loadContentValidationModule();
+  return validateIeltsTest(test);
+}
 
 /**
  * World-class zero-dependency Tauri SQLite database adapter.
@@ -135,7 +154,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
   }
 
   async saveTest(test: IeltsTest): Promise<void> {
-    const errors = validateIeltsTest(test);
+    const errors = await validateIeltsTestForDb(test);
     const critical = errors.filter(err => err.severity === 'error');
     if (critical.length > 0) {
       throw new Error(`Invalid test package: ${critical.map(c => c.message).join(', ')}`);

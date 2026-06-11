@@ -152,11 +152,24 @@ export interface ProductiveSkillGoldenSample {
   sampleId: string;
   feedbackType: ProductiveFeedbackType;
   feedback: WritingFeedback | SpeakingFeedback;
+  responseText?: string;
   expertOverall?: number;
   expertCriteria?: Record<string, number>;
   provider?: string;
   allowedOverallDeviation?: number;
   allowedCriterionDeviation?: number;
+}
+
+export interface ProductiveFeedbackReliability {
+  schemaVersion: 'productive_feedback_reliability_v1';
+  feedbackType: ProductiveFeedbackType;
+  provider: string;
+  confidence: number;
+  rawConfidence: number;
+  outputWordCount: number;
+  evidenceCount: number;
+  issueDensityPer100Words: number;
+  reasons: string[];
 }
 
 export interface ProductiveSkillGovernanceFinding {
@@ -177,6 +190,8 @@ export interface ProductiveSkillGovernanceReport {
   blockedSamples: number;
   averageOverallDeviation: number;
   maxOverallDeviation: number;
+  averageReliabilityConfidence: number;
+  minReliabilityConfidence: number;
   masteryPolicy: 'feedback_only_locked';
   masteryEligible: false;
   consensusPolicy: 'validation_only';
@@ -289,6 +304,8 @@ export async function gradeWritingWithTutorEvent(
   context: Partial<AITutorQuestionInput> = {},
 ): Promise<TutorEventResult<WritingFeedback>> {
   const feedback = await adapter.gradeWriting(params);
+  const provider = inferProvider(feedback.modelUsed, context.source);
+  const reliability = scoreProductiveFeedbackReliability(feedback, 'writing', { responseText: params.essay, provider });
   const practicePlan = generateWritingFeedbackPracticePlan(feedback, {
     track: params.track || context.programId || 'ielts',
     learnerId: context.learnerId || state.learnerId,
@@ -310,8 +327,11 @@ export async function gradeWritingWithTutorEvent(
       aiFeedbackType: 'writing',
       attemptId: feedback.attemptId,
       modelUsed: feedback.modelUsed,
-      provider: inferProvider(feedback.modelUsed, context.source),
-      confidence: normalizeConfidence(feedback.confidence),
+      provider,
+      confidence: reliability.confidence,
+      rawConfidence: reliability.rawConfidence,
+      confidenceReasons: reliability.reasons,
+      reliability,
       rubricVersion: feedback.rubricVersion || '',
       descriptorSource: feedback.descriptorSource || '',
       evidence: collectFeedbackEvidence(feedback),
@@ -337,6 +357,8 @@ export async function gradeSpeakingWithTutorEvent(
   context: Partial<AITutorQuestionInput> = {},
 ): Promise<TutorEventResult<SpeakingFeedback>> {
   const feedback = await adapter.gradeSpeaking(params);
+  const provider = inferProvider(feedback.modelUsed, context.source);
+  const reliability = scoreProductiveFeedbackReliability(feedback, 'speaking', { responseText: feedback.transcript || params.transcriptMock || '', provider });
   const practicePlan = generateSpeakingFeedbackPracticePlan(feedback, {
     track: params.track || context.programId || 'ielts',
     learnerId: context.learnerId || state.learnerId,
@@ -358,8 +380,11 @@ export async function gradeSpeakingWithTutorEvent(
       aiFeedbackType: 'speaking',
       attemptId: feedback.attemptId,
       modelUsed: feedback.modelUsed,
-      provider: inferProvider(feedback.modelUsed, context.source),
-      confidence: normalizeConfidence(feedback.confidence),
+      provider,
+      confidence: reliability.confidence,
+      rawConfidence: reliability.rawConfidence,
+      confidenceReasons: reliability.reasons,
+      reliability,
       rubricVersion: feedback.rubricVersion || '',
       descriptorSource: feedback.descriptorSource || '',
       evidence: collectFeedbackEvidence(feedback),
@@ -499,6 +524,91 @@ export function buildSpeakingFeedbackPracticeState(
   };
 }
 
+export function scoreProductiveFeedbackReliability(
+  feedback: WritingFeedback | SpeakingFeedback,
+  feedbackType: ProductiveFeedbackType,
+  options: { responseText?: string; provider?: string } = {},
+): ProductiveFeedbackReliability {
+  const provider = options.provider || inferProvider(feedback.modelUsed, '');
+  const rawConfidence = normalizeConfidence(feedback.confidence);
+  const responseText = options.responseText || ('transcript' in feedback ? feedback.transcript : '');
+  const outputWordCount = countWords(responseText);
+  const evidenceCount = collectFeedbackEvidence(feedback).length;
+  const issueCount = 'corrections' in feedback ? (feedback.corrections || []).length : (feedback.pronunciationErrors || []).length;
+  const issueDensityPer100Words = outputWordCount > 0 ? round2((issueCount / outputWordCount) * 100) : issueCount > 0 ? 100 : 0;
+  const reasons: string[] = [];
+  let score = rawConfidence;
+
+  if (feedback.rubricVersion) {
+    score += 0.02;
+    reasons.push('rubric version present');
+  } else {
+    score -= 0.08;
+    reasons.push('missing rubric version');
+  }
+
+  if (feedback.descriptorSource) {
+    score += 0.02;
+    reasons.push('descriptor source present');
+  } else {
+    score -= 0.08;
+    reasons.push('missing descriptor source');
+  }
+
+  if ((feedback.criteria || []).length >= 4) {
+    score += 0.04;
+    reasons.push('complete rubric criteria');
+  } else {
+    score -= 0.1;
+    reasons.push('incomplete rubric criteria');
+  }
+
+  if (evidenceCount >= 4) {
+    score += 0.04;
+    reasons.push('sufficient scoring evidence');
+  } else {
+    score -= 0.06;
+    reasons.push('thin scoring evidence');
+  }
+
+  const minimumWords = feedbackType === 'writing' ? 80 : 20;
+  const strongWords = feedbackType === 'writing' ? 180 : 50;
+  if (outputWordCount === 0) {
+    score -= 0.03;
+    reasons.push('response text unavailable for length check');
+  } else if (outputWordCount < minimumWords) {
+    score -= 0.1;
+    reasons.push(`short ${feedbackType} sample`);
+  } else if (outputWordCount >= strongWords) {
+    score += 0.03;
+    reasons.push(`adequate ${feedbackType} length`);
+  }
+
+  if (issueDensityPer100Words > 8) {
+    score -= 0.05;
+    reasons.push('high issue density');
+  }
+
+  if (!provider || provider === 'unknown') {
+    score -= 0.08;
+    reasons.push('unknown provider');
+  } else {
+    reasons.push(`provider ${provider}`);
+  }
+
+  return {
+    schemaVersion: 'productive_feedback_reliability_v1',
+    feedbackType,
+    provider: provider || 'unknown',
+    confidence: round2(clamp(score, 0.35, 0.99)),
+    rawConfidence,
+    outputWordCount,
+    evidenceCount,
+    issueDensityPer100Words,
+    reasons: uniqueStrings(reasons),
+  };
+}
+
 export function buildProductiveSkillGovernanceReport(
   samples: ProductiveSkillGoldenSample[] = [],
   options: { generatedAt?: string; defaultOverallDeviation?: number; defaultCriterionDeviation?: number } = {},
@@ -508,6 +618,13 @@ export function buildProductiveSkillGovernanceReport(
   const deviations = samples
     .map((sample) => typeof sample.expertOverall === 'number' ? Math.abs(Number(sample.feedback.bandOverall || 0) - sample.expertOverall) : NaN)
     .filter((value) => Number.isFinite(value));
+  const reliabilityRows = samples.map((sample) =>
+    scoreProductiveFeedbackReliability(sample.feedback, sample.feedbackType, {
+      responseText: sample.responseText,
+      provider: sample.provider || inferProvider(sample.feedback.modelUsed, ''),
+    }),
+  );
+  const reliabilityConfidences = reliabilityRows.map((row) => row.confidence);
   const blockedSamples = new Set(findings.filter((finding) => finding.severity === 'blocked').map((finding) => finding.sampleId)).size;
   const watchSamples = new Set(findings.filter((finding) => finding.severity === 'watch').map((finding) => finding.sampleId)).size;
   const passedSamples = Math.max(0, samples.length - blockedSamples - watchSamples);
@@ -523,6 +640,8 @@ export function buildProductiveSkillGovernanceReport(
     blockedSamples,
     averageOverallDeviation: round2(averageNumber(deviations)),
     maxOverallDeviation: deviations.length ? Math.max(...deviations.map((value) => round2(value))) : 0,
+    averageReliabilityConfidence: round2(averageNumber(reliabilityConfidences)),
+    minReliabilityConfidence: reliabilityConfidences.length ? Math.min(...reliabilityConfidences) : 0,
     masteryPolicy: 'feedback_only_locked',
     masteryEligible: false,
     consensusPolicy: 'validation_only',
@@ -928,6 +1047,7 @@ function evaluateProductiveSkillSample(
   const findings: ProductiveSkillGovernanceFinding[] = [];
   const feedback = sample.feedback;
   const provider = sample.provider || inferProvider(feedback.modelUsed, '');
+  const reliability = scoreProductiveFeedbackReliability(feedback, sample.feedbackType, { responseText: sample.responseText, provider });
   const missingFields = [
     !feedback.attemptId ? 'attemptId' : '',
     !feedback.modelUsed ? 'modelUsed' : '',
@@ -974,6 +1094,16 @@ function evaluateProductiveSkillSample(
 
   const criterionFindings = evaluateCriterionDeviation(sample, options.defaultCriterionDeviation ?? 0.75);
   findings.push(...criterionFindings);
+
+  if (reliability.confidence < 0.7) {
+    findings.push({
+      sampleId: sample.sampleId,
+      feedbackType: sample.feedbackType,
+      severity: 'watch',
+      reason: 'low_reliability_confidence',
+      detail: `Adjusted reliability confidence ${reliability.confidence} is below 0.7 (${reliability.reasons.join('; ')}).`,
+    });
+  }
 
   if (!findings.length) {
     findings.push({
@@ -1267,6 +1397,10 @@ function inferProgram(input: AITutorQuestionInput): string {
 
 function uniqueErrorCategories(values: ErrorCategory[]): ErrorCategory[] {
   return uniqueStrings(values.filter(Boolean)) as ErrorCategory[];
+}
+
+function countWords(value: string): number {
+  return String(value || '').trim().split(/\s+/).filter(Boolean).length;
 }
 
 function normalizeConfidence(value: unknown): number {

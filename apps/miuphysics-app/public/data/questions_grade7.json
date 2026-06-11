@@ -1,0 +1,2869 @@
+[
+  {
+    "id": "phys7_speed_graph_001",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "average_speed",
+    "topic_vn": "Tốc độ trung bình",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Công thức tính tốc độ trung bình là gì?",
+    "options": [
+      {
+        "key": "A",
+        "content": "v = s \\times t"
+      },
+      {
+        "key": "B",
+        "content": "v = \\dfrac{s}{t}"
+      },
+      {
+        "key": "C",
+        "content": "v = \\dfrac{t}{s}"
+      },
+      {
+        "key": "D",
+        "content": "v = s - t"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Tốc độ trung bình bằng quãng đường đi được chia cho thời gian đi hết quãng đường đó: v = s/t.",
+      "key_concept": "Tốc độ trung bình: v = s/t, trong đó s là quãng đường, t là thời gian."
+    },
+    "thinking_guide": {
+      "understand": "Đề hỏi công thức tính tốc độ trung bình.",
+      "identify_knowledge": "Tốc độ = quãng đường / thời gian.",
+      "plan": "Nhớ lại công thức cơ bản và phân tích từng đáp án.",
+      "steps": [
+        "Bước 1: Tốc độ cho biết quãng đường đi được trong một đơn vị thời gian.",
+        "Bước 2: Vậy v = s/t → đáp án B."
+      ],
+      "verify": "Kiểm tra đơn vị: s (m) / t (s) = m/s → đúng đơn vị tốc độ.",
+      "extend": "Từ v = s/t suy ra: s = v × t và t = s/v.",
+      "common_traps": [
+        "Nhầm v = s × t (đây là công thức tính quãng đường s = v × t)."
+      ],
+      "hints": [
+        "Tốc độ = quãng đường chia cho thời gian, giống như 'đi bao xa trong bao lâu'."
+      ]
+    },
+    "real_world_connection": "Khi đi từ nhà đến trường mất 15 phút đi được 3 km, tốc độ trung bình = 3/15 × 60 = 12 km/h.",
+    "formula": "v = \\frac{s}{t}"
+  },
+  {
+    "id": "phys7_speed_graph_002",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "speed_unit",
+    "topic_vn": "Đơn vị tốc độ",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Đơn vị tốc độ trong hệ SI là gì?",
+    "options": [
+      {
+        "key": "A",
+        "content": "km/h"
+      },
+      {
+        "key": "B",
+        "content": "m/s"
+      },
+      {
+        "key": "C",
+        "content": "cm/s"
+      },
+      {
+        "key": "D",
+        "content": "m/phút"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Trong hệ SI, đơn vị chiều dài là mét (m), đơn vị thời gian là giây (s), nên đơn vị tốc độ là m/s.",
+      "key_concept": "Đơn vị tốc độ trong hệ SI: m/s (mét trên giây)."
+    },
+    "thinking_guide": {
+      "understand": "Đề hỏi đơn vị tốc độ chuẩn trong hệ SI.",
+      "identify_knowledge": "Hệ SI dùng mét (m) cho chiều dài và giây (s) cho thời gian.",
+      "plan": "Suy ra đơn vị tốc độ từ đơn vị chiều dài và thời gian trong SI.",
+      "steps": [
+        "Bước 1: v = s/t → đơn vị v = đơn vị s / đơn vị t.",
+        "Bước 2: Trong SI: s → m, t → s → v → m/s."
+      ],
+      "verify": "km/h là đơn vị thường dùng nhưng không phải đơn vị SI.",
+      "extend": "Đổi đơn vị: 1 m/s = 3,6 km/h. Ví dụ: 10 m/s = 36 km/h.",
+      "common_traps": [
+        "Nhầm km/h là đơn vị SI vì thường gặp trên biển báo giao thông."
+      ],
+      "hints": [
+        "Hệ SI dùng mét và giây, vậy tốc độ phải dùng mét trên giây."
+      ]
+    },
+    "real_world_connection": "Biển báo tốc độ trên đường dùng km/h, nhưng trong bài tập Vật lý thường dùng m/s.",
+    "formula": "1 \\text{ m/s} = 3,6 \\text{ km/h}"
+  },
+  {
+    "id": "phys7_speed_graph_003",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "average_speed",
+    "topic_vn": "Tốc độ trung bình",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Một xe đạp đi quãng đường 6 km trong 30 phút. Tốc độ trung bình của xe đạp là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "0,2 km/h"
+      },
+      {
+        "key": "B",
+        "content": "12 km/h"
+      },
+      {
+        "key": "C",
+        "content": "180 km/h"
+      },
+      {
+        "key": "D",
+        "content": "20 km/h"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Đổi t = 30 phút = 0,5 giờ. v = s/t = 6/0,5 = 12 km/h.",
+      "key_concept": "Phải đổi đơn vị thời gian cho thống nhất với đơn vị quãng đường trước khi tính."
+    },
+    "thinking_guide": {
+      "understand": "Cho s = 6 km, t = 30 phút. Tìm v.",
+      "identify_knowledge": "v = s/t. Cần đổi phút sang giờ (vì s tính bằng km).",
+      "plan": "Đổi 30 phút = 0,5 giờ, rồi áp dụng v = s/t.",
+      "steps": [
+        "Bước 1: Đổi t = 30 phút = 30/60 = 0,5 giờ.",
+        "Bước 2: v = s/t = 6/0,5 = 12 km/h."
+      ],
+      "verify": "Xe đạp đi 12 km/h → hợp lý (xe đạp thường đi 10-20 km/h).",
+      "extend": "Đổi sang m/s: 12 km/h = 12/3,6 ≈ 3,33 m/s.",
+      "common_traps": [
+        "Quên đổi phút sang giờ: 6/30 = 0,2 → sai đơn vị (km/phút, không phải km/h)."
+      ],
+      "hints": [
+        "Muốn kết quả km/h thì t phải tính bằng giờ. 30 phút = 0,5 giờ."
+      ]
+    },
+    "real_world_connection": "Khi đạp xe đi học, con có thể ước lượng tốc độ bằng cách tính quãng đường chia cho thời gian.",
+    "formula": "v = \\frac{s}{t} = \\frac{6}{0,5} = 12 \\text{ km/h}"
+  },
+  {
+    "id": "phys7_speed_graph_004",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "uniform_motion",
+    "topic_vn": "Chuyển động đều",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Chuyển động đều là chuyển động có đặc điểm gì?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Tốc độ thay đổi theo thời gian"
+      },
+      {
+        "key": "B",
+        "content": "Tốc độ không đổi theo thời gian"
+      },
+      {
+        "key": "C",
+        "content": "Quãng đường không đổi"
+      },
+      {
+        "key": "D",
+        "content": "Thời gian không đổi"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Chuyển động đều là chuyển động mà tốc độ có giá trị không thay đổi theo thời gian.",
+      "key_concept": "Chuyển động đều: tốc độ không đổi. Chuyển động không đều: tốc độ thay đổi."
+    },
+    "thinking_guide": {
+      "understand": "Đề hỏi đặc điểm của chuyển động đều.",
+      "identify_knowledge": "Chuyển động đều ↔ tốc độ không đổi.",
+      "plan": "Nhớ lại định nghĩa chuyển động đều.",
+      "steps": [
+        "Bước 1: 'Đều' nghĩa là đều đặn, không thay đổi.",
+        "Bước 2: Đại lượng không đổi trong chuyển động đều là tốc độ."
+      ],
+      "verify": "Xe chạy đều 40 km/h: mỗi giờ đi đúng 40 km → tốc độ không đổi ✓.",
+      "extend": "Trong thực tế, rất khó có chuyển động đều tuyệt đối. Hầu hết chuyển động đều là gần đúng.",
+      "common_traps": [
+        "Nhầm 'quãng đường không đổi' — quãng đường tăng dần theo thời gian trong chuyển động đều."
+      ],
+      "hints": [
+        "'Đều' = đều đặn = cái gì đó giữ nguyên. Trong chuyển động, đó là tốc độ."
+      ]
+    },
+    "real_world_connection": "Khi xe chạy trên đường cao tốc giữ đúng 80 km/h, đó gần giống chuyển động đều.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_speed_graph_005",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "distance_time_graph",
+    "topic_vn": "Đồ thị quãng đường - thời gian",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Trên đồ thị quãng đường – thời gian (s – t), chuyển động đều được biểu diễn bằng đường gì?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Đường cong"
+      },
+      {
+        "key": "B",
+        "content": "Đường thẳng xiên qua gốc tọa độ"
+      },
+      {
+        "key": "C",
+        "content": "Đường nằm ngang"
+      },
+      {
+        "key": "D",
+        "content": "Đường gấp khúc"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Chuyển động đều có tốc độ không đổi, nên quãng đường tỉ lệ thuận với thời gian: s = v × t. Đồ thị s–t là đường thẳng đi qua gốc tọa độ.",
+      "key_concept": "Chuyển động đều → đồ thị s–t là đường thẳng xiên. Độ dốc = tốc độ."
+    },
+    "thinking_guide": {
+      "understand": "Đồ thị s–t của chuyển động đều có dạng gì?",
+      "identify_knowledge": "s = v × t (v không đổi) → s tỉ lệ thuận với t → đường thẳng.",
+      "plan": "Phân tích dạng hàm số s = v × t trên đồ thị.",
+      "steps": [
+        "Bước 1: s = v × t là hàm bậc nhất (y = ax).",
+        "Bước 2: Đồ thị hàm bậc nhất qua gốc tọa độ là đường thẳng xiên.",
+        "Bước 3: Độ dốc (hệ số góc) = v = tốc độ."
+      ],
+      "verify": "t=0 → s=0 (qua gốc). t tăng đều → s tăng đều → đường thẳng ✓.",
+      "extend": "Đường thẳng càng dốc → tốc độ càng lớn. Đường nằm ngang → vật đứng yên.",
+      "common_traps": [
+        "Nhầm đường nằm ngang — đó là vật đứng yên (s không đổi)."
+      ],
+      "hints": [
+        "s tỉ lệ thuận với t → dạng y = ax → đường thẳng qua gốc tọa độ."
+      ]
+    },
+    "real_world_connection": "Khi ghi lại quãng đường ô tô đi mỗi giờ trên đường cao tốc, vẽ ra được gần đúng đường thẳng.",
+    "formula": "s = v \\times t"
+  },
+  {
+    "id": "phys7_speed_graph_006",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "average_speed",
+    "topic_vn": "Tốc độ trung bình",
+    "type": "fill_in",
+    "difficulty": "medium",
+    "question_text": "Một ô tô đi quãng đường 150 km trong 2,5 giờ. Tốc độ trung bình của ô tô là ______ km/h.",
+    "options": null,
+    "correct_answer": "60",
+    "explanation": {
+      "summary": "v = s/t = 150/2,5 = 60 km/h.",
+      "key_concept": "Áp dụng trực tiếp công thức v = s/t."
+    },
+    "thinking_guide": {
+      "understand": "Cho s = 150 km, t = 2,5 h. Tìm v.",
+      "identify_knowledge": "v = s/t.",
+      "plan": "Thay số vào công thức.",
+      "steps": [
+        "Bước 1: v = s/t = 150/2,5.",
+        "Bước 2: v = 60 km/h."
+      ],
+      "verify": "60 × 2,5 = 150 km ✓. Ô tô đi 60 km/h là hợp lý trong thành phố.",
+      "extend": "Đổi sang m/s: 60/3,6 ≈ 16,7 m/s.",
+      "common_traps": [
+        "Tính sai phép chia: 150/2,5 = 150 × 2/5 = 60."
+      ],
+      "hints": [
+        "150 ÷ 2,5 = 150 ÷ (5/2) = 150 × 2/5 = 60."
+      ]
+    },
+    "real_world_connection": "Ô tô đi từ Hà Nội đến Hải Phòng (khoảng 120 km) mất 2 giờ → tốc độ trung bình khoảng 60 km/h.",
+    "formula": "v = \\frac{s}{t} = \\frac{150}{2,5} = 60 \\text{ km/h}"
+  },
+  {
+    "id": "phys7_speed_graph_007",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "non_uniform_motion",
+    "topic_vn": "Chuyển động không đều",
+    "type": "true_false",
+    "difficulty": "easy",
+    "question_text": "Trong chuyển động không đều, tốc độ trung bình trên các quãng đường khác nhau luôn bằng nhau.",
+    "options": [
+      {
+        "key": "A",
+        "content": "Đúng"
+      },
+      {
+        "key": "B",
+        "content": "Sai"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Trong chuyển động không đều, tốc độ thay đổi theo thời gian, nên tốc độ trung bình trên các quãng đường khác nhau thường khác nhau.",
+      "key_concept": "Tốc độ trung bình phụ thuộc vào quãng đường và thời gian cụ thể, không phải hằng số trong chuyển động không đều."
+    },
+    "thinking_guide": {
+      "understand": "Tốc độ trung bình trong chuyển động không đều có giống nhau trên mọi quãng đường?",
+      "identify_knowledge": "Chuyển động không đều: tốc độ thay đổi → tốc độ trung bình trên các đoạn khác nhau sẽ khác nhau.",
+      "plan": "Lấy ví dụ cụ thể để minh họa.",
+      "steps": [
+        "Bước 1: Xe đi đoạn 1 (lên dốc): 10 km trong 30 phút → v₁ = 20 km/h.",
+        "Bước 2: Xe đi đoạn 2 (xuống dốc): 10 km trong 15 phút → v₂ = 40 km/h.",
+        "Bước 3: v₁ ≠ v₂ → tốc độ trung bình trên các đoạn khác nhau không bằng nhau → Sai."
+      ],
+      "verify": "Chỉ trong chuyển động đều thì tốc độ trung bình mới không đổi trên mọi quãng đường.",
+      "extend": "Tốc độ trung bình trên cả quãng đường ≠ trung bình cộng các tốc độ trung bình từng đoạn.",
+      "common_traps": [
+        "Nhầm tốc độ trung bình là trung bình cộng của các tốc độ."
+      ],
+      "hints": [
+        "Nếu xe đi chậm đoạn đầu và nhanh đoạn sau, tốc độ trung bình hai đoạn khác nhau."
+      ]
+    },
+    "real_world_connection": "Khi đi xe máy trong thành phố, đoạn tắc đi chậm, đoạn thông thoáng đi nhanh → tốc độ trung bình mỗi đoạn rất khác nhau.",
+    "formula": "v_{tb} = \\frac{s_{tổng}}{t_{tổng}}"
+  },
+  {
+    "id": "phys7_speed_graph_008",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "average_speed",
+    "topic_vn": "Tốc độ trung bình",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Một học sinh đi bộ từ nhà đến trường: đoạn đầu dài 1,2 km hết 15 phút, đoạn sau dài 0,8 km hết 10 phút. Tốc độ trung bình trên cả quãng đường là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "4 km/h"
+      },
+      {
+        "key": "B",
+        "content": "4,8 km/h"
+      },
+      {
+        "key": "C",
+        "content": "5 km/h"
+      },
+      {
+        "key": "D",
+        "content": "5,2 km/h"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "s_tổng = 1,2 + 0,8 = 2 km. t_tổng = 15 + 10 = 25 phút = 25/60 giờ. v = 2 / (25/60) = 2 × 60/25 = 4,8 km/h.",
+      "key_concept": "Tốc độ trung bình = tổng quãng đường / tổng thời gian (không phải trung bình cộng tốc độ)."
+    },
+    "thinking_guide": {
+      "understand": "Đi 2 đoạn với quãng đường và thời gian khác nhau. Tìm tốc độ trung bình cả hành trình.",
+      "identify_knowledge": "v_tb = s_tổng / t_tổng.",
+      "plan": "Tính tổng quãng đường, tổng thời gian, rồi chia.",
+      "steps": [
+        "Bước 1: s_tổng = 1,2 + 0,8 = 2 km.",
+        "Bước 2: t_tổng = 15 + 10 = 25 phút = 25/60 giờ.",
+        "Bước 3: v = 2 ÷ (25/60) = 2 × 60/25 = 4,8 km/h."
+      ],
+      "verify": "Đi bộ 4,8 km/h → hợp lý (người đi bộ thường 4-6 km/h).",
+      "extend": "Nếu tính trung bình cộng: v₁ = 4,8 km/h, v₂ = 4,8 km/h → trùng hợp bằng nhau. Nhưng cách đúng vẫn là s/t.",
+      "common_traps": [
+        "Tính trung bình cộng tốc độ hai đoạn → sai khi hai đoạn có chiều dài hoặc thời gian khác nhau."
+      ],
+      "hints": [
+        "Tốc độ trung bình = TỔNG quãng đường / TỔNG thời gian, chứ không phải trung bình hai tốc độ."
+      ]
+    },
+    "real_world_connection": "Khi đi bộ đến trường, con có thể đếm bước hoặc dùng điện thoại đo quãng đường và thời gian để tính tốc độ trung bình.",
+    "formula": "v_{tb} = \\frac{s_1 + s_2}{t_1 + t_2} = \\frac{1,2 + 0,8}{\\frac{25}{60}} = 4,8 \\text{ km/h}"
+  },
+  {
+    "id": "phys7_speed_graph_009",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "speed_conversion",
+    "topic_vn": "Đổi đơn vị tốc độ",
+    "type": "fill_in",
+    "difficulty": "medium",
+    "question_text": "Đổi đơn vị: 72 km/h = ______ m/s.",
+    "options": null,
+    "correct_answer": "20",
+    "explanation": {
+      "summary": "72 km/h = 72 × 1000/3600 m/s = 72/3,6 = 20 m/s.",
+      "key_concept": "Đổi km/h sang m/s: chia cho 3,6. Đổi m/s sang km/h: nhân với 3,6."
+    },
+    "thinking_guide": {
+      "understand": "Đổi 72 km/h sang m/s.",
+      "identify_knowledge": "1 km/h = 1000m / 3600s = 1/3,6 m/s.",
+      "plan": "Chia 72 cho 3,6.",
+      "steps": [
+        "Bước 1: 72 km/h = 72 / 3,6 m/s.",
+        "Bước 2: 72 / 3,6 = 20 m/s."
+      ],
+      "verify": "20 × 3,6 = 72 ✓",
+      "extend": "Quy tắc nhanh: km/h → m/s chia 3,6; m/s → km/h nhân 3,6.",
+      "common_traps": [
+        "Nhầm nhân 3,6 thay vì chia 3,6."
+      ],
+      "hints": [
+        "m/s lớn hơn km/h (1 m/s = 3,6 km/h), nên đổi từ km/h sang m/s phải chia."
+      ]
+    },
+    "real_world_connection": "Xe máy chạy 72 km/h tức là mỗi giây đi được 20 mét. Con có thể cảm nhận 20 mét là bao xa để hiểu tốc độ thực tế.",
+    "formula": "72 \\text{ km/h} = \\frac{72}{3,6} = 20 \\text{ m/s}"
+  },
+  {
+    "id": "phys7_speed_graph_010",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "distance_time_graph",
+    "topic_vn": "Đồ thị quãng đường - thời gian",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Cho đồ thị quãng đường – thời gian (s – t) của hai vật A và B cùng xuất phát từ gốc tọa độ. Đường biểu diễn của A dốc hơn đường biểu diễn của B. Hãy giải thích vật nào chuyển động nhanh hơn và tại sao.",
+    "options": null,
+    "correct_answer": "Vật A chuyển động nhanh hơn vì đường biểu diễn dốc hơn nghĩa là trong cùng một khoảng thời gian, vật A đi được quãng đường dài hơn vật B, tức tốc độ vật A lớn hơn.",
+    "explanation": {
+      "summary": "Trên đồ thị s–t, độ dốc (hệ số góc) biểu thị tốc độ. Đường càng dốc → tốc độ càng lớn → chuyển động càng nhanh.",
+      "key_concept": "Độ dốc đồ thị s–t = tốc độ. Dốc hơn = nhanh hơn."
+    },
+    "thinking_guide": {
+      "understand": "So sánh tốc độ hai vật dựa trên đồ thị s–t.",
+      "identify_knowledge": "Trên đồ thị s–t: độ dốc = Δs/Δt = tốc độ.",
+      "plan": "Phân tích ý nghĩa của độ dốc và so sánh.",
+      "steps": [
+        "Bước 1: Độ dốc = Δs/Δt = tốc độ.",
+        "Bước 2: A dốc hơn B → Δs_A/Δt > Δs_B/Δt → v_A > v_B.",
+        "Bước 3: Vật A nhanh hơn."
+      ],
+      "verify": "Lấy cùng Δt = 1 giờ, đọc Δs trên đồ thị: nếu s_A > s_B thì A nhanh hơn.",
+      "extend": "Nếu hai đường cắt nhau, vật sau vượt lên trước tại thời điểm giao nhau.",
+      "common_traps": [
+        "Nhầm đường thẳng nằm ngang là nhanh nhất (thực ra là đứng yên)."
+      ],
+      "hints": [
+        "Hãy tưởng tượng sau 1 giờ, ai đi xa hơn → người đó nhanh hơn → đường dốc hơn."
+      ]
+    },
+    "real_world_connection": "Khi hai bạn cùng xuất phát từ trường, bạn đi xe đạp (nhanh hơn) sẽ có đồ thị dốc hơn bạn đi bộ.",
+    "formula": "v = \\frac{\\Delta s}{\\Delta t} = \\text{độ dốc đồ thị s–t}"
+  },
+  {
+    "id": "phys7_speed_graph_011",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "average_speed",
+    "topic_vn": "Tốc độ trung bình",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "question_text": "Một xe đi nửa quãng đường đầu với tốc độ 40 km/h, nửa quãng đường sau với tốc độ 60 km/h. Tốc độ trung bình trên cả quãng đường là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "48 km/h"
+      },
+      {
+        "key": "B",
+        "content": "50 km/h"
+      },
+      {
+        "key": "C",
+        "content": "52 km/h"
+      },
+      {
+        "key": "D",
+        "content": "55 km/h"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Gọi nửa quãng đường là d. t₁ = d/40, t₂ = d/60. v_tb = 2d/(d/40 + d/60) = 2d/(3d/120 + 2d/120) = 2d/(5d/120) = 2 × 120/5 = 48 km/h.",
+      "key_concept": "Tốc độ trung bình khi đi hai nửa quãng đường bằng nhau: v_tb = 2v₁v₂/(v₁+v₂)."
+    },
+    "thinking_guide": {
+      "understand": "Nửa đường đầu v₁ = 40, nửa sau v₂ = 60. Tìm v_tb.",
+      "identify_knowledge": "v_tb = s_tổng / t_tổng. KHÔNG phải trung bình cộng.",
+      "plan": "Gọi nửa quãng đường là d, tính t₁ và t₂, rồi tính v_tb.",
+      "steps": [
+        "Bước 1: Gọi nửa quãng đường = d. s_tổng = 2d.",
+        "Bước 2: t₁ = d/40, t₂ = d/60.",
+        "Bước 3: t_tổng = d/40 + d/60 = (3d + 2d)/120 = 5d/120.",
+        "Bước 4: v_tb = 2d / (5d/120) = 2 × 120/5 = 48 km/h."
+      ],
+      "verify": "48 < 50 (trung bình cộng) → hợp lý vì đi chậm hơn trên nửa đầu tốn nhiều thời gian hơn.",
+      "extend": "Công thức nhanh: v_tb = 2v₁v₂/(v₁+v₂) = 2×40×60/(40+60) = 4800/100 = 48.",
+      "common_traps": [
+        "Tính trung bình cộng: (40+60)/2 = 50 → SAI! Phải dùng s_tổng/t_tổng."
+      ],
+      "hints": [
+        "Tốc độ trung bình KHÔNG BAO GIỜ bằng trung bình cộng các tốc độ (trừ trường hợp đặc biệt)."
+      ]
+    },
+    "real_world_connection": "Khi đi từ Hà Nội đến Ninh Bình, nửa đường đầu kẹt xe đi 40 km/h, nửa sau thông thoáng đi 60 km/h. Tốc độ trung bình chỉ khoảng 48 km/h.",
+    "formula": "v_{tb} = \\frac{2v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 40 \\times 60}{40 + 60} = 48 \\text{ km/h}"
+  },
+  {
+    "id": "phys7_speed_graph_012",
+    "grade": 7,
+    "chapter": "speed_graph",
+    "chapter_vn": "Tốc độ và đồ thị",
+    "topic": "distance_time_graph",
+    "topic_vn": "Đồ thị quãng đường - thời gian",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Trên đồ thị s–t, một vật có đường biểu diễn gồm 3 đoạn: đoạn 1 là đường thẳng xiên lên (từ 0 đến 2 phút), đoạn 2 nằm ngang (từ 2 đến 4 phút), đoạn 3 là đường thẳng xiên lên dốc hơn đoạn 1 (từ 4 đến 6 phút). Hãy mô tả chuyển động của vật.",
+    "options": null,
+    "correct_answer": "Đoạn 1 (0-2 phút): vật chuyển động đều với tốc độ v₁. Đoạn 2 (2-4 phút): vật đứng yên (s không đổi). Đoạn 3 (4-6 phút): vật chuyển động đều với tốc độ v₃ > v₁ (dốc hơn nên nhanh hơn).",
+    "explanation": {
+      "summary": "Đường thẳng xiên = chuyển động đều. Đường nằm ngang = đứng yên. Đoạn dốc hơn = tốc độ lớn hơn.",
+      "key_concept": "Đọc đồ thị s–t: xiên = chuyển động, ngang = đứng yên, dốc hơn = nhanh hơn."
+    },
+    "thinking_guide": {
+      "understand": "Đọc và mô tả chuyển động từ đồ thị s–t gồm 3 đoạn.",
+      "identify_knowledge": "Đường thẳng xiên → chuyển động đều. Đường ngang → đứng yên. Độ dốc → tốc độ.",
+      "plan": "Phân tích từng đoạn của đồ thị.",
+      "steps": [
+        "Bước 1: Đoạn 1 (0-2 phút): đường xiên → chuyển động đều tốc độ v₁.",
+        "Bước 2: Đoạn 2 (2-4 phút): đường ngang → vật đứng yên, nghỉ 2 phút.",
+        "Bước 3: Đoạn 3 (4-6 phút): đường xiên dốc hơn → chuyển động đều tốc độ v₃ > v₁."
+      ],
+      "verify": "3 giai đoạn: đi → dừng → đi nhanh hơn → hoàn toàn hợp lý.",
+      "extend": "Có thể tính tốc độ mỗi đoạn nếu biết giá trị s cụ thể tại các mốc thời gian.",
+      "common_traps": [
+        "Nhầm đoạn nằm ngang là chuyển động đều (thực ra s không đổi → đứng yên)."
+      ],
+      "hints": [
+        "Đường nằm ngang trên đồ thị s–t nghĩa là quãng đường không thay đổi → vật không di chuyển."
+      ]
+    },
+    "real_world_connection": "Giống như con đi xe buýt: xe chạy, dừng đón khách, rồi chạy tiếp nhanh hơn.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_reflection_refraction_001",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "reflection_law",
+    "topic_vn": "Định luật phản xạ ánh sáng",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Theo định luật phản xạ ánh sáng, góc phản xạ bằng bao nhiêu so với góc tới?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Góc phản xạ lớn hơn góc tới"
+      },
+      {
+        "key": "B",
+        "content": "Góc phản xạ nhỏ hơn góc tới"
+      },
+      {
+        "key": "C",
+        "content": "Góc phản xạ bằng góc tới"
+      },
+      {
+        "key": "D",
+        "content": "Góc phản xạ gấp đôi góc tới"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Định luật phản xạ ánh sáng: Góc phản xạ bằng góc tới (i' = i). Tia phản xạ nằm trong mặt phẳng tới, ở bên kia pháp tuyến so với tia tới.",
+      "key_concept": "Định luật phản xạ: góc phản xạ = góc tới (i' = i)."
+    },
+    "thinking_guide": {
+      "understand": "Mối quan hệ giữa góc phản xạ và góc tới.",
+      "identify_knowledge": "Định luật phản xạ ánh sáng.",
+      "plan": "Nhớ lại nội dung định luật phản xạ.",
+      "steps": [
+        "Bước 1: Tia tới chiếu vào gương tạo góc tới i với pháp tuyến.",
+        "Bước 2: Tia phản xạ tạo góc phản xạ i' với pháp tuyến.",
+        "Bước 3: Định luật: i' = i."
+      ],
+      "verify": "Thí nghiệm chiếu đèn vào gương: đo góc tới và góc phản xạ → luôn bằng nhau.",
+      "extend": "Định luật phản xạ áp dụng cho mọi loại gương: phẳng, cầu lõm, cầu lồi.",
+      "common_traps": [
+        "Nhầm góc tới là góc giữa tia tới và mặt gương (đúng ra phải là góc với pháp tuyến)."
+      ],
+      "hints": [
+        "Pháp tuyến là đường vuông góc với mặt gương. Góc tới và góc phản xạ đều đo từ pháp tuyến."
+      ]
+    },
+    "real_world_connection": "Khi chiếu đèn pin vào gương, ánh sáng phản xạ theo góc bằng góc chiếu, giống như quả bóng bàn bật ra khỏi mặt bàn.",
+    "formula": "i' = i"
+  },
+  {
+    "id": "phys7_reflection_refraction_002",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "plane_mirror",
+    "topic_vn": "Gương phẳng",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Ảnh của một vật tạo bởi gương phẳng có đặc điểm gì?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Ảnh thật, cùng chiều, nhỏ hơn vật"
+      },
+      {
+        "key": "B",
+        "content": "Ảnh ảo, đối xứng với vật qua gương, bằng vật"
+      },
+      {
+        "key": "C",
+        "content": "Ảnh thật, ngược chiều, bằng vật"
+      },
+      {
+        "key": "D",
+        "content": "Ảnh ảo, cùng chiều, lớn hơn vật"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Gương phẳng tạo ảnh ảo, có kích thước bằng vật, đối xứng với vật qua mặt gương. Ảnh không hứng được trên màn.",
+      "key_concept": "Ảnh qua gương phẳng: ảo, bằng vật, đối xứng qua gương."
+    },
+    "thinking_guide": {
+      "understand": "Đặc điểm của ảnh tạo bởi gương phẳng.",
+      "identify_knowledge": "Gương phẳng: ảnh ảo, cùng kích thước, đối xứng qua gương.",
+      "plan": "Nhớ lại tính chất ảnh qua gương phẳng.",
+      "steps": [
+        "Bước 1: Ảnh ảo (không hứng được trên màn).",
+        "Bước 2: Ảnh có kích thước bằng vật.",
+        "Bước 3: Ảnh đối xứng với vật qua mặt gương (khoảng cách vật-gương = khoảng cách ảnh-gương)."
+      ],
+      "verify": "Đứng trước gương: ảnh giống y hệt, cao bằng mình, cách gương bằng khoảng cách mình đến gương ✓.",
+      "extend": "Nếu đưa tay phải, ảnh trong gương đưa tay trái → gương đảo trái-phải.",
+      "common_traps": [
+        "Nhầm ảnh trong gương phẳng là ảnh thật. Ảnh thật hứng được trên màn, ảnh ảo thì không."
+      ],
+      "hints": [
+        "Nhìn vào gương: hình ảnh giống hệt nhưng không sờ được → ảnh ảo."
+      ]
+    },
+    "real_world_connection": "Khi soi gương mỗi sáng, con thấy hình ảnh bằng mình, cách gương giống khoảng cách mình đến gương. Đó là ảnh ảo.",
+    "formula": "d' = d \\quad (\\text{khoảng cách ảnh đến gương} = \\text{khoảng cách vật đến gương})"
+  },
+  {
+    "id": "phys7_reflection_refraction_003",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "reflection_law",
+    "topic_vn": "Định luật phản xạ ánh sáng",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Chiếu một tia sáng tới gương phẳng với góc tới bằng 30°. Góc tạo bởi tia phản xạ và mặt gương là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "30°"
+      },
+      {
+        "key": "B",
+        "content": "60°"
+      },
+      {
+        "key": "C",
+        "content": "90°"
+      },
+      {
+        "key": "D",
+        "content": "120°"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Góc tới i = 30° → góc phản xạ i' = 30°. Góc giữa tia phản xạ và mặt gương = 90° - 30° = 60°.",
+      "key_concept": "Góc giữa tia và mặt gương = 90° - góc tới (vì pháp tuyến vuông góc với mặt gương)."
+    },
+    "thinking_guide": {
+      "understand": "Góc tới 30°, tìm góc giữa tia phản xạ và mặt gương.",
+      "identify_knowledge": "Góc tới/phản xạ đo từ pháp tuyến. Pháp tuyến vuông góc với mặt gương.",
+      "plan": "Tính góc phản xạ, rồi tính góc với mặt gương.",
+      "steps": [
+        "Bước 1: i = 30° → i' = 30° (định luật phản xạ).",
+        "Bước 2: Pháp tuyến ⊥ mặt gương → góc (tia phản xạ, mặt gương) = 90° - i' = 90° - 30° = 60°."
+      ],
+      "verify": "Góc tới + góc giữa tia tới và mặt gương = 30° + 60° = 90° ✓ (vì pháp tuyến ⊥ gương).",
+      "extend": "Nếu tia tới vuông góc với gương (i = 0°), tia phản xạ đi ngược lại (i' = 0°).",
+      "common_traps": [
+        "Nhầm góc tới là góc giữa tia tới và mặt gương (30°), dẫn đến đáp án sai."
+      ],
+      "hints": [
+        "Đề cho góc tới = 30° (đo từ pháp tuyến), hỏi góc với mặt gương = 90° - góc phản xạ."
+      ]
+    },
+    "real_world_connection": "Kỹ sư quang học dùng định luật phản xạ để thiết kế hệ thống gương trong kính thiên văn và periscope tàu ngầm.",
+    "formula": "\\alpha = 90° - i' = 90° - 30° = 60°"
+  },
+  {
+    "id": "phys7_reflection_refraction_004",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "plane_mirror",
+    "topic_vn": "Gương phẳng",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Một người đứng cách gương phẳng 1,5 m. Ảnh của người đó cách người bao nhiêu mét?",
+    "options": [
+      {
+        "key": "A",
+        "content": "1,5 m"
+      },
+      {
+        "key": "B",
+        "content": "3 m"
+      },
+      {
+        "key": "C",
+        "content": "0,75 m"
+      },
+      {
+        "key": "D",
+        "content": "4,5 m"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Khoảng cách từ vật đến gương = khoảng cách từ ảnh đến gương = 1,5 m. Khoảng cách từ người đến ảnh = 1,5 + 1,5 = 3 m.",
+      "key_concept": "Ảnh đối xứng qua gương: d' = d → khoảng cách vật-ảnh = 2d."
+    },
+    "thinking_guide": {
+      "understand": "Người cách gương 1,5 m, tìm khoảng cách người đến ảnh.",
+      "identify_knowledge": "Ảnh đối xứng qua gương: d' = d.",
+      "plan": "Khoảng cách người-ảnh = d + d' = d + d = 2d.",
+      "steps": [
+        "Bước 1: d = 1,5 m (vật cách gương).",
+        "Bước 2: d' = d = 1,5 m (ảnh cách gương).",
+        "Bước 3: Khoảng cách người-ảnh = d + d' = 1,5 + 1,5 = 3 m."
+      ],
+      "verify": "Ảnh nằm 'trong' gương, cách gương 1,5 m → cách người 3 m ✓.",
+      "extend": "Nếu người tiến gần gương 0,5 m, khoảng cách mới = 2 × 1 = 2 m.",
+      "common_traps": [
+        "Quên rằng ảnh ở phía sau gương, nên khoảng cách người-ảnh = 2 lần khoảng cách đến gương."
+      ],
+      "hints": [
+        "Ảnh ở 'phía bên kia' gương, cách gương bằng đúng khoảng cách bạn cách gương."
+      ]
+    },
+    "real_world_connection": "Khi đứng trước gương tủ quần áo cách 1 m, hình ảnh con trông giống như đứng cách con 2 m.",
+    "formula": "d_{\\text{vật-ảnh}} = 2d = 2 \\times 1,5 = 3 \\text{ m}"
+  },
+  {
+    "id": "phys7_reflection_refraction_005",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "refraction",
+    "topic_vn": "Khúc xạ ánh sáng",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Hiện tượng khúc xạ ánh sáng xảy ra khi nào?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Khi ánh sáng truyền trong một môi trường trong suốt"
+      },
+      {
+        "key": "B",
+        "content": "Khi ánh sáng truyền từ môi trường trong suốt này sang môi trường trong suốt khác"
+      },
+      {
+        "key": "C",
+        "content": "Khi ánh sáng bị chặn bởi vật cản"
+      },
+      {
+        "key": "D",
+        "content": "Khi ánh sáng gặp gương phẳng"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Khúc xạ ánh sáng là hiện tượng tia sáng bị lệch hướng (gãy khúc) khi truyền xiên góc từ môi trường trong suốt này sang môi trường trong suốt khác.",
+      "key_concept": "Khúc xạ xảy ra tại mặt phân cách giữa hai môi trường trong suốt khác nhau."
+    },
+    "thinking_guide": {
+      "understand": "Khi nào xảy ra khúc xạ ánh sáng?",
+      "identify_knowledge": "Khúc xạ = ánh sáng bị gãy khi đi qua mặt phân cách hai môi trường.",
+      "plan": "Phân biệt khúc xạ với phản xạ và truyền thẳng.",
+      "steps": [
+        "Bước 1: Truyền trong 1 môi trường → truyền thẳng (không khúc xạ).",
+        "Bước 2: Gặp mặt phân cách 2 môi trường → khúc xạ ✓.",
+        "Bước 3: Bị chặn → tạo bóng. Gặp gương → phản xạ."
+      ],
+      "verify": "Đũa cắm trong cốc nước trông như bị gãy → do khúc xạ tại mặt nước ✓.",
+      "extend": "Khúc xạ chỉ xảy ra khi tia sáng chiếu xiên góc. Chiếu vuông góc → không lệch.",
+      "common_traps": [
+        "Nhầm khúc xạ với phản xạ. Phản xạ: ánh sáng bật lại. Khúc xạ: ánh sáng đi qua nhưng bị lệch."
+      ],
+      "hints": [
+        "'Khúc' = gãy khúc, 'xạ' = tia. Ánh sáng bị gãy khúc khi đi qua ranh giới hai môi trường."
+      ]
+    },
+    "real_world_connection": "Khi nhìn xuống hồ bơi, đáy hồ trông nông hơn thực tế vì ánh sáng bị khúc xạ tại mặt nước.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_reflection_refraction_006",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "refraction",
+    "topic_vn": "Khúc xạ ánh sáng",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Khi tia sáng truyền từ không khí vào nước (chiếu xiên), góc khúc xạ so với góc tới thì:",
+    "options": [
+      {
+        "key": "A",
+        "content": "Góc khúc xạ lớn hơn góc tới"
+      },
+      {
+        "key": "B",
+        "content": "Góc khúc xạ bằng góc tới"
+      },
+      {
+        "key": "C",
+        "content": "Góc khúc xạ nhỏ hơn góc tới"
+      },
+      {
+        "key": "D",
+        "content": "Không có tia khúc xạ"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Khi tia sáng truyền từ môi trường kém chiết quang (không khí) sang môi trường chiết quang hơn (nước), tia khúc xạ lệch gần pháp tuyến hơn → góc khúc xạ nhỏ hơn góc tới.",
+      "key_concept": "Từ không khí vào nước: góc khúc xạ < góc tới. Từ nước ra không khí: góc khúc xạ > góc tới."
+    },
+    "thinking_guide": {
+      "understand": "So sánh góc khúc xạ với góc tới khi ánh sáng đi từ không khí vào nước.",
+      "identify_knowledge": "Nước chiết quang hơn không khí → tia khúc xạ gần pháp tuyến hơn.",
+      "plan": "Áp dụng quy tắc: vào môi trường chiết quang hơn → góc giảm.",
+      "steps": [
+        "Bước 1: Không khí → nước: môi trường chiết quang hơn.",
+        "Bước 2: Tia khúc xạ bẻ gần pháp tuyến hơn.",
+        "Bước 3: → Góc khúc xạ < góc tới."
+      ],
+      "verify": "Đặt đũa vào cốc nước: phần dưới nước 'dịch' về phía gần pháp tuyến hơn ✓.",
+      "extend": "Nếu ánh sáng đi từ nước ra không khí: góc khúc xạ > góc tới.",
+      "common_traps": [
+        "Nhầm hướng: nhớ 'vào nước thì góc nhỏ lại' để tránh sai."
+      ],
+      "hints": [
+        "Nước 'dày' hơn không khí → ánh sáng bị 'kìm lại', tia lệch gần pháp tuyến hơn."
+      ]
+    },
+    "real_world_connection": "Khi lặn trong hồ bơi nhìn lên, cảnh vật phía trên mặt nước bị bóp méo do khúc xạ.",
+    "formula": "r < i \\quad (\\text{khi truyền từ không khí vào nước})"
+  },
+  {
+    "id": "phys7_reflection_refraction_007",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "plane_mirror",
+    "topic_vn": "Gương phẳng",
+    "type": "fill_in",
+    "difficulty": "medium",
+    "question_text": "Chiếu tia sáng tới gương phẳng với góc tới bằng 45°. Góc tạo bởi tia tới và tia phản xạ là ______ độ.",
+    "options": null,
+    "correct_answer": "90",
+    "explanation": {
+      "summary": "Góc tới i = 45° → góc phản xạ i' = 45°. Góc giữa tia tới và tia phản xạ = i + i' = 45° + 45° = 90°.",
+      "key_concept": "Góc giữa tia tới và tia phản xạ = 2i."
+    },
+    "thinking_guide": {
+      "understand": "Góc tới 45°, tìm góc giữa tia tới và tia phản xạ.",
+      "identify_knowledge": "i' = i. Góc giữa tia tới và tia phản xạ = i + i' = 2i.",
+      "plan": "Áp dụng định luật phản xạ, tính góc giữa hai tia.",
+      "steps": [
+        "Bước 1: i = 45° → i' = 45°.",
+        "Bước 2: Góc giữa tia tới và tia phản xạ = i + i' = 45° + 45° = 90°."
+      ],
+      "verify": "Tia tới và tia phản xạ nằm hai bên pháp tuyến, mỗi bên 45° → tổng 90° ✓.",
+      "extend": "Nếu i = 30° → góc giữa hai tia = 60°. Nếu i = 0° → hai tia trùng nhau (0°).",
+      "common_traps": [
+        "Nhầm góc giữa tia tới và tia phản xạ bằng góc tới (45°)."
+      ],
+      "hints": [
+        "Hai tia nằm hai bên pháp tuyến, góc giữa chúng = i + i' = 2 × góc tới."
+      ]
+    },
+    "real_world_connection": "Trong trò chơi laser tag, biết góc phản xạ giúp con dự đoán tia laser sẽ đi đâu sau khi bật khỏi gương.",
+    "formula": "\\alpha = i + i' = 2i = 2 \\times 45° = 90°"
+  },
+  {
+    "id": "phys7_reflection_refraction_008",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "reflection_law",
+    "topic_vn": "Định luật phản xạ ánh sáng",
+    "type": "true_false",
+    "difficulty": "easy",
+    "question_text": "Tia phản xạ nằm trong mặt phẳng chứa tia tới và pháp tuyến tại điểm tới.",
+    "options": [
+      {
+        "key": "A",
+        "content": "Đúng"
+      },
+      {
+        "key": "B",
+        "content": "Sai"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Đây là nội dung thứ nhất của định luật phản xạ ánh sáng: Tia phản xạ nằm trong mặt phẳng tới (mặt phẳng chứa tia tới và pháp tuyến).",
+      "key_concept": "Định luật phản xạ gồm 2 phần: (1) tia phản xạ nằm trong mặt phẳng tới, (2) góc phản xạ = góc tới."
+    },
+    "thinking_guide": {
+      "understand": "Kiểm tra xem tia phản xạ có nằm trong mặt phẳng tới không.",
+      "identify_knowledge": "Định luật phản xạ: tia phản xạ nằm trong mặt phẳng chứa tia tới và pháp tuyến.",
+      "plan": "Nhớ lại nội dung đầy đủ của định luật phản xạ.",
+      "steps": [
+        "Bước 1: Mặt phẳng tới chứa tia tới và pháp tuyến.",
+        "Bước 2: Tia phản xạ nằm trong mặt phẳng này → Đúng."
+      ],
+      "verify": "Chiếu đèn pin vào gương: tia tới, pháp tuyến và tia phản xạ luôn trên cùng một mặt phẳng ✓.",
+      "extend": "Nếu tia phản xạ không nằm trong mặt phẳng tới, ánh sáng sẽ bị lệch sang bên → không xảy ra với gương phẳng.",
+      "common_traps": [
+        "Chỉ nhớ 'góc phản xạ = góc tới' mà quên điều kiện cùng mặt phẳng."
+      ],
+      "hints": [
+        "Tưởng tượng tia tới và tia phản xạ như hai cánh của một con bướm đối xứng qua pháp tuyến."
+      ]
+    },
+    "real_world_connection": "Khi chơi bi-a, viên bi bật ra khỏi thành bàn cũng tuân theo quy luật tương tự: viên bi đi, bật lại trong cùng mặt phẳng.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_reflection_refraction_009",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "refraction",
+    "topic_vn": "Khúc xạ ánh sáng",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Tại sao khi cắm một chiếc đũa thẳng vào cốc nước, nhìn từ bên ngoài ta thấy đũa như bị gãy tại mặt nước?",
+    "options": null,
+    "correct_answer": "Do hiện tượng khúc xạ ánh sáng. Ánh sáng từ phần đũa dưới nước khi truyền từ nước ra không khí bị gãy khúc (lệch xa pháp tuyến hơn). Mắt ta nhìn thẳng theo tia khúc xạ nên thấy phần đũa dưới nước bị lệch vị trí so với phần trên, tạo cảm giác đũa bị gãy.",
+    "explanation": {
+      "summary": "Khúc xạ làm tia sáng từ phần đũa dưới nước bị đổi hướng khi ra không khí. Não bộ 'nối dài' tia sáng theo đường thẳng nên thấy đũa gãy.",
+      "key_concept": "Mắt nhìn theo tia khúc xạ và não bộ giả định ánh sáng truyền thẳng → ảo giác đũa gãy."
+    },
+    "thinking_guide": {
+      "understand": "Tại sao đũa trong nước trông như bị gãy?",
+      "identify_knowledge": "Khúc xạ ánh sáng tại mặt phân cách nước-không khí.",
+      "plan": "Vẽ đường đi tia sáng từ đũa dưới nước → khúc xạ → mắt.",
+      "steps": [
+        "Bước 1: Ánh sáng từ đũa trong nước truyền đến mặt nước.",
+        "Bước 2: Tại mặt nước, tia sáng bị khúc xạ (lệch xa pháp tuyến vì từ nước ra không khí).",
+        "Bước 3: Mắt nhận tia khúc xạ nhưng não 'kéo thẳng' tia → thấy đũa ở vị trí khác → như bị gãy."
+      ],
+      "verify": "Rút đũa ra khỏi nước → đũa vẫn thẳng → chứng tỏ là ảo giác do khúc xạ.",
+      "extend": "Tương tự, đáy hồ bơi trông nông hơn thực tế cũng do khúc xạ.",
+      "common_traps": [
+        "Nghĩ rằng nước làm cong đũa thật sự. Thực ra đũa vẫn thẳng, chỉ là ảo giác quang học."
+      ],
+      "hints": [
+        "Vẽ đường đi của tia sáng: thẳng trong nước → gãy tại mặt nước → thẳng trong không khí."
+      ]
+    },
+    "real_world_connection": "Khi câu cá, con cá trông ở vị trí khác với vị trí thật do khúc xạ. Người câu giỏi biết nhắm lệch xuống để bắt đúng cá.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_reflection_refraction_010",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "plane_mirror",
+    "topic_vn": "Gương phẳng",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "question_text": "Một người cao 1,6 m muốn nhìn thấy toàn bộ ảnh của mình trong gương phẳng treo thẳng đứng trên tường. Chiều cao tối thiểu của gương là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "1,6 m"
+      },
+      {
+        "key": "B",
+        "content": "1,2 m"
+      },
+      {
+        "key": "C",
+        "content": "0,8 m"
+      },
+      {
+        "key": "D",
+        "content": "0,4 m"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Để nhìn thấy toàn bộ cơ thể, gương chỉ cần dài bằng nửa chiều cao người = 1,6/2 = 0,8 m (mép trên gương ngang tầm giữa đầu và mắt, mép dưới ngang tầm giữa mắt và chân).",
+      "key_concept": "Chiều cao gương tối thiểu = 1/2 chiều cao người (không phụ thuộc khoảng cách đến gương)."
+    },
+    "thinking_guide": {
+      "understand": "Tìm chiều cao gương tối thiểu để nhìn toàn thân.",
+      "identify_knowledge": "Định luật phản xạ + hình học đối xứng.",
+      "plan": "Vẽ hình: tia sáng từ đỉnh đầu và chân → phản xạ → vào mắt.",
+      "steps": [
+        "Bước 1: Tia từ đỉnh đầu → phản xạ tại điểm ngang giữa đầu và mắt.",
+        "Bước 2: Tia từ chân → phản xạ tại điểm ngang giữa mắt và chân.",
+        "Bước 3: Chiều cao gương = khoảng cách giữa hai điểm này = 1/2 chiều cao người = 0,8 m."
+      ],
+      "verify": "Kết quả không phụ thuộc khoảng cách → đứng gần hay xa gương đều cần 0,8 m ✓.",
+      "extend": "Mép trên gương phải ở ngang tầm giữa đầu và mắt. Mép dưới ngang tầm giữa mắt và chân.",
+      "common_traps": [
+        "Nghĩ gương phải cao bằng người (1,6 m) → sai, chỉ cần nửa."
+      ],
+      "hints": [
+        "Vẽ hình: tia sáng từ đầu và chân bật vào mắt, tìm chiều cao gương."
+      ]
+    },
+    "real_world_connection": "Gương soi toàn thân ở cửa hàng quần áo thường cao khoảng 0,8-1 m, đủ để nhìn thấy toàn bộ cơ thể.",
+    "formula": "h_{gương} = \\frac{h_{người}}{2} = \\frac{1,6}{2} = 0,8 \\text{ m}"
+  },
+  {
+    "id": "phys7_reflection_refraction_011",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "reflection_law",
+    "topic_vn": "Định luật phản xạ ánh sáng",
+    "type": "fill_in",
+    "difficulty": "medium",
+    "question_text": "Chiếu một tia sáng tới gương phẳng, biết góc tạo bởi tia tới và tia phản xạ là 120°. Góc tới bằng ______ độ.",
+    "options": null,
+    "correct_answer": "60",
+    "explanation": {
+      "summary": "Góc giữa tia tới và tia phản xạ = i + i' = 2i = 120°. Suy ra i = 60°.",
+      "key_concept": "Góc giữa tia tới và tia phản xạ = 2 × góc tới."
+    },
+    "thinking_guide": {
+      "understand": "Biết góc giữa tia tới và tia phản xạ = 120°, tìm góc tới.",
+      "identify_knowledge": "Góc giữa tia tới và tia phản xạ = i + i' = 2i.",
+      "plan": "Giải phương trình 2i = 120°.",
+      "steps": [
+        "Bước 1: Góc tia tới – tia phản xạ = 2i = 120°.",
+        "Bước 2: i = 120°/2 = 60°."
+      ],
+      "verify": "i = 60° → i' = 60° → tổng = 120° ✓. Góc tới 60° < 90° → hợp lý.",
+      "extend": "Góc giữa tia tới và mặt gương = 90° - 60° = 30°.",
+      "common_traps": [
+        "Nhầm góc tới bằng 120° (đó là góc giữa hai tia, không phải góc với pháp tuyến)."
+      ],
+      "hints": [
+        "Pháp tuyến nằm giữa tia tới và tia phản xạ, chia đôi góc 120° → mỗi bên 60°."
+      ]
+    },
+    "real_world_connection": "Thợ lắp gương trong phòng tập thể dục cần biết góc phản xạ để đặt gương sao cho mọi người đều nhìn thấy mình.",
+    "formula": "i = \\frac{\\alpha}{2} = \\frac{120°}{2} = 60°"
+  },
+  {
+    "id": "phys7_reflection_refraction_012",
+    "grade": 7,
+    "chapter": "reflection_refraction",
+    "chapter_vn": "Phản xạ và khúc xạ",
+    "topic": "refraction",
+    "topic_vn": "Khúc xạ ánh sáng",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Em hãy giải thích tại sao khi nhìn từ trên bờ xuống đáy hồ bơi, đáy hồ trông nông hơn so với độ sâu thực tế.",
+    "options": null,
+    "correct_answer": "Do hiện tượng khúc xạ ánh sáng. Tia sáng từ đáy hồ truyền từ nước ra không khí bị khúc xạ, lệch xa pháp tuyến hơn. Mắt ta nhìn theo đường kéo dài của tia khúc xạ nên thấy ảnh của đáy hồ nằm ở vị trí cao hơn đáy thật, tạo cảm giác hồ nông hơn.",
+    "explanation": {
+      "summary": "Khúc xạ làm cho ảnh của đáy hồ nâng lên cao hơn vị trí thật. Não bộ suy ra vị trí ảnh theo đường kéo dài tia sáng → thấy đáy nông hơn.",
+      "key_concept": "Khúc xạ nước-không khí: ảnh ảo của vật dưới nước nâng lên cao hơn vị trí thật."
+    },
+    "thinking_guide": {
+      "understand": "Tại sao đáy hồ trông nông hơn khi nhìn từ trên xuống?",
+      "identify_knowledge": "Khúc xạ ánh sáng từ nước ra không khí.",
+      "plan": "Vẽ đường đi tia sáng từ đáy hồ → khúc xạ tại mặt nước → mắt.",
+      "steps": [
+        "Bước 1: Tia sáng từ đáy hồ đi lên mặt nước.",
+        "Bước 2: Tại mặt nước, tia khúc xạ lệch xa pháp tuyến (nước → không khí).",
+        "Bước 3: Mắt kéo thẳng tia khúc xạ → thấy ảnh đáy ở vị trí cao hơn → hồ trông nông hơn."
+      ],
+      "verify": "Thực nghiệm: đo chiều sâu thật bằng gậy và chiều sâu 'nhìn thấy' → luôn thấy nông hơn.",
+      "extend": "Nguy hiểm: trẻ em có thể nhảy xuống hồ tưởng nông nhưng thực ra sâu hơn nhiều!",
+      "common_traps": [
+        "Nghĩ rằng nước làm 'phóng to' đáy hồ. Thực ra là khúc xạ nâng ảnh lên."
+      ],
+      "hints": [
+        "Vẽ tia sáng từ đáy → mặt nước → mắt. Kéo dài tia vào mắt ngược lại → ảnh ở đâu?"
+      ]
+    },
+    "real_world_connection": "Khi bước xuống hồ bơi, con tưởng nông nhưng thực ra sâu hơn. Luôn cẩn thận vì khúc xạ tạo ảo giác!",
+    "formula": ""
+  },
+  {
+    "id": "phys7_sound_wave_001",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "sound_source",
+    "topic_vn": "Nguồn âm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Âm thanh được tạo ra nhờ đâu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Sự dao động của vật"
+      },
+      {
+        "key": "B",
+        "content": "Sự nóng lên của vật"
+      },
+      {
+        "key": "C",
+        "content": "Sự đứng yên của vật"
+      },
+      {
+        "key": "D",
+        "content": "Sự tan chảy của vật"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": {
+      "summary": "Âm thanh được tạo ra do sự dao động (rung động) của các vật. Khi vật dao động, nó làm các lớp không khí xung quanh dao động theo, truyền âm đến tai ta.",
+      "key_concept": "Nguồn âm là vật dao động. Vật ngừng dao động → âm tắt."
+    },
+    "thinking_guide": {
+      "understand": "Âm thanh được tạo ra bằng cách nào?",
+      "identify_knowledge": "Mọi nguồn âm đều dao động.",
+      "plan": "Lấy ví dụ cụ thể về nguồn âm.",
+      "steps": [
+        "Bước 1: Gõ trống → mặt trống rung → phát ra âm.",
+        "Bước 2: Gảy đàn → dây đàn rung → phát ra âm.",
+        "Bước 3: → Âm thanh do vật dao động."
+      ],
+      "verify": "Giữ chặt dây đàn (không cho rung) → âm tắt ✓.",
+      "extend": "Con người phát ra giọng nói nhờ dây thanh quản dao động khi luồng khí đi qua.",
+      "common_traps": [
+        "Nhầm rằng vật phải nóng hoặc phải di chuyển mới phát âm. Chỉ cần dao động (rung) là đủ."
+      ],
+      "hints": [
+        "Đặt tay lên cổ và nói: cảm nhận dây thanh quản rung → đó là dao động tạo âm."
+      ]
+    },
+    "real_world_connection": "Khi đánh trống, mặt trống rung rất nhanh tạo ra sóng âm. Đặt hạt gạo trên mặt trống sẽ thấy hạt nảy lên do rung.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_sound_wave_002",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "frequency",
+    "topic_vn": "Tần số âm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Tai người có thể nghe được âm thanh có tần số trong khoảng nào?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Từ 2 Hz đến 2000 Hz"
+      },
+      {
+        "key": "B",
+        "content": "Từ 20 Hz đến 20 000 Hz"
+      },
+      {
+        "key": "C",
+        "content": "Từ 200 Hz đến 200 000 Hz"
+      },
+      {
+        "key": "D",
+        "content": "Từ 0 Hz đến 100 000 Hz"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Tai người nghe được âm có tần số từ 20 Hz đến 20 000 Hz (20 kHz). Âm dưới 20 Hz là hạ âm, trên 20 000 Hz là siêu âm.",
+      "key_concept": "Ngưỡng nghe: 20 Hz – 20 000 Hz. Dưới: hạ âm. Trên: siêu âm."
+    },
+    "thinking_guide": {
+      "understand": "Khoảng tần số mà tai người nghe được.",
+      "identify_knowledge": "Ngưỡng nghe của con người: 20 Hz – 20 000 Hz.",
+      "plan": "Nhớ lại giới hạn tần số nghe được.",
+      "steps": [
+        "Bước 1: Giới hạn dưới: 20 Hz (dưới ngưỡng này → hạ âm, không nghe được).",
+        "Bước 2: Giới hạn trên: 20 000 Hz (trên ngưỡng này → siêu âm, không nghe được)."
+      ],
+      "verify": "20 Hz ≈ âm trầm nhất (giống tiếng sấm rất xa). 20 000 Hz ≈ tiếng rít rất cao.",
+      "extend": "Chó nghe được đến ~40 000 Hz, dơi đến ~100 000 Hz.",
+      "common_traps": [
+        "Nhầm 2 Hz (quá thấp) hoặc 200 Hz (bỏ sót nhiều âm trầm)."
+      ],
+      "hints": [
+        "Nhớ: 20 – 20 000, hai số đều bắt đầu bằng 20."
+      ]
+    },
+    "real_world_connection": "Người già thường không nghe được âm cao trên 15 000 Hz. Một số ứng dụng dùng âm cao để đuổi muỗi hoặc chuột.",
+    "formula": "20 \\text{ Hz} \\leq f \\leq 20\\,000 \\text{ Hz}"
+  },
+  {
+    "id": "phys7_sound_wave_003",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "frequency",
+    "topic_vn": "Tần số âm",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Khi tần số dao động tăng lên, âm phát ra có đặc điểm gì?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Âm trầm hơn"
+      },
+      {
+        "key": "B",
+        "content": "Âm to hơn"
+      },
+      {
+        "key": "C",
+        "content": "Âm bổng (cao) hơn"
+      },
+      {
+        "key": "D",
+        "content": "Âm nhỏ hơn"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Tần số quyết định độ cao của âm. Tần số càng lớn → âm càng bổng (cao). Tần số càng nhỏ → âm càng trầm.",
+      "key_concept": "Tần số → độ cao: tần số lớn → âm cao (bổng), tần số nhỏ → âm trầm."
+    },
+    "thinking_guide": {
+      "understand": "Tần số ảnh hưởng đến đặc tính nào của âm?",
+      "identify_knowledge": "Tần số ↔ độ cao. Biên độ ↔ độ to.",
+      "plan": "Phân biệt ảnh hưởng của tần số và biên độ.",
+      "steps": [
+        "Bước 1: Tần số = số dao động trong 1 giây.",
+        "Bước 2: Tần số lớn → dao động nhanh → âm cao (bổng).",
+        "Bước 3: Tần số nhỏ → dao động chậm → âm trầm."
+      ],
+      "verify": "Dây đàn ngắn (rung nhanh, tần số lớn) → âm cao. Dây đàn dài (rung chậm, tần số nhỏ) → âm trầm ✓.",
+      "extend": "Nốt Đô (C4) có tần số 262 Hz. Nốt La (A4) có tần số 440 Hz → La cao hơn Đô.",
+      "common_traps": [
+        "Nhầm tần số với biên độ: tần số → cao/trầm, biên độ → to/nhỏ."
+      ],
+      "hints": [
+        "Tần = tần suất (bao nhiêu lần/giây). Rung nhanh → tiếng cao, rung chậm → tiếng trầm."
+      ]
+    },
+    "real_world_connection": "Giọng nữ cao hơn giọng nam vì dây thanh quản nữ dao động với tần số lớn hơn.",
+    "formula": "f \\uparrow \\Rightarrow \\text{âm cao (bổng)} \\quad ; \\quad f \\downarrow \\Rightarrow \\text{âm trầm}"
+  },
+  {
+    "id": "phys7_sound_wave_004",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "amplitude",
+    "topic_vn": "Biên độ âm",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Đại lượng nào quyết định độ to (cường độ) của âm thanh?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Tần số dao động"
+      },
+      {
+        "key": "B",
+        "content": "Biên độ dao động"
+      },
+      {
+        "key": "C",
+        "content": "Vận tốc truyền âm"
+      },
+      {
+        "key": "D",
+        "content": "Bước sóng"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Biên độ dao động quyết định độ to của âm. Biên độ càng lớn → âm càng to. Biên độ càng nhỏ → âm càng nhỏ.",
+      "key_concept": "Biên độ → độ to: biên độ lớn → âm to, biên độ nhỏ → âm nhỏ."
+    },
+    "thinking_guide": {
+      "understand": "Đại lượng nào ảnh hưởng đến độ to?",
+      "identify_knowledge": "Biên độ ↔ độ to. Tần số ↔ độ cao.",
+      "plan": "Nhớ lại kiến thức về quan hệ giữa các đại lượng đặc trưng.",
+      "steps": [
+        "Bước 1: Tần số → quyết định cao/trầm (độ cao).",
+        "Bước 2: Biên độ → quyết định to/nhỏ (độ to).",
+        "Bước 3: → Đáp án B."
+      ],
+      "verify": "Gõ trống mạnh (biên độ lớn) → tiếng to. Gõ nhẹ (biên độ nhỏ) → tiếng nhỏ ✓.",
+      "extend": "Đơn vị đo mức cường độ âm: đêxiben (dB). Ngưỡng đau: 130 dB.",
+      "common_traps": [
+        "Nhầm tần số quyết định độ to. Nhớ: tần số → cao/trầm, biên độ → to/nhỏ."
+      ],
+      "hints": [
+        "Biên = biên độ = rung rộng hay hẹp. Rung rộng → to, rung hẹp → nhỏ."
+      ]
+    },
+    "real_world_connection": "Khi nói to (hét), dây thanh quản rung với biên độ lớn hơn khi thì thầm.",
+    "formula": "A \\uparrow \\Rightarrow \\text{âm to} \\quad ; \\quad A \\downarrow \\Rightarrow \\text{âm nhỏ}"
+  },
+  {
+    "id": "phys7_sound_wave_005",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "ultrasound_infrasound",
+    "topic_vn": "Siêu âm và hạ âm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Siêu âm là âm có tần số như thế nào?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Nhỏ hơn 20 Hz"
+      },
+      {
+        "key": "B",
+        "content": "Từ 20 Hz đến 20 000 Hz"
+      },
+      {
+        "key": "C",
+        "content": "Lớn hơn 20 000 Hz"
+      },
+      {
+        "key": "D",
+        "content": "Bằng 20 000 Hz"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Siêu âm là âm có tần số lớn hơn 20 000 Hz, nằm ngoài ngưỡng nghe trên của tai người.",
+      "key_concept": "Siêu âm: f > 20 000 Hz. Hạ âm: f < 20 Hz. Cả hai đều không nghe được."
+    },
+    "thinking_guide": {
+      "understand": "Tần số của siêu âm nằm ở khoảng nào?",
+      "identify_knowledge": "Ngưỡng nghe: 20 – 20 000 Hz. Trên ngưỡng = siêu âm.",
+      "plan": "Phân loại theo ngưỡng tần số.",
+      "steps": [
+        "Bước 1: f < 20 Hz → hạ âm.",
+        "Bước 2: 20 Hz ≤ f ≤ 20 000 Hz → âm nghe được.",
+        "Bước 3: f > 20 000 Hz → siêu âm."
+      ],
+      "verify": "'Siêu' = vượt trên → siêu âm vượt trên ngưỡng nghe → f > 20 000 Hz ✓.",
+      "extend": "Dơi phát siêu âm (f ≈ 50 000-100 000 Hz) để định vị mồi trong đêm tối.",
+      "common_traps": [
+        "Nhầm siêu âm là âm rất to. 'Siêu' ở đây nghĩa là tần số vượt ngưỡng, không phải âm lượng lớn."
+      ],
+      "hints": [
+        "Siêu = trên, vượt. Siêu âm = vượt trên ngưỡng nghe."
+      ]
+    },
+    "real_world_connection": "Máy siêu âm trong bệnh viện dùng sóng siêu âm để tạo hình ảnh em bé trong bụng mẹ.",
+    "formula": "f_{\\text{siêu âm}} > 20\\,000 \\text{ Hz}"
+  },
+  {
+    "id": "phys7_sound_wave_006",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "sound_speed",
+    "topic_vn": "Vận tốc truyền âm",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Âm thanh truyền nhanh nhất trong môi trường nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Không khí"
+      },
+      {
+        "key": "B",
+        "content": "Nước"
+      },
+      {
+        "key": "C",
+        "content": "Thép"
+      },
+      {
+        "key": "D",
+        "content": "Chân không"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Âm truyền nhanh nhất trong chất rắn (thép: ~6100 m/s), chậm hơn trong chất lỏng (nước: ~1500 m/s), chậm nhất trong chất khí (không khí: ~340 m/s). Âm không truyền được trong chân không.",
+      "key_concept": "Tốc độ âm: rắn > lỏng > khí. Âm không truyền trong chân không."
+    },
+    "thinking_guide": {
+      "understand": "So sánh tốc độ truyền âm trong các môi trường.",
+      "identify_knowledge": "Âm truyền nhờ dao động các hạt vật chất. Rắn > lỏng > khí.",
+      "plan": "Xếp hạng tốc độ truyền âm theo trạng thái vật chất.",
+      "steps": [
+        "Bước 1: Chân không: không có hạt vật chất → không truyền âm.",
+        "Bước 2: Không khí (khí): ~340 m/s.",
+        "Bước 3: Nước (lỏng): ~1500 m/s.",
+        "Bước 4: Thép (rắn): ~6100 m/s → nhanh nhất."
+      ],
+      "verify": "Rắn có các hạt sát nhau nhất → dao động truyền nhanh nhất → hợp lý ✓.",
+      "extend": "Trên Mặt Trăng (gần chân không), phi hành gia không thể nói chuyện trực tiếp, phải dùng radio.",
+      "common_traps": [
+        "Nghĩ rằng âm truyền nhanh nhất trong không khí vì ta nghe âm qua không khí hàng ngày."
+      ],
+      "hints": [
+        "Các hạt trong chất rắn sát nhau nhất → truyền dao động nhanh nhất."
+      ]
+    },
+    "real_world_connection": "Áp tai xuống đường ray xe lửa, con nghe tiếng tàu đến sớm hơn so với nghe qua không khí vì âm truyền qua thép nhanh hơn.",
+    "formula": "v_{rắn} > v_{lỏng} > v_{khí} \\quad ; \\quad v_{\\text{không khí}} \\approx 340 \\text{ m/s}"
+  },
+  {
+    "id": "phys7_sound_wave_007",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "sound_speed",
+    "topic_vn": "Vận tốc truyền âm",
+    "type": "fill_in",
+    "difficulty": "medium",
+    "question_text": "Tiếng sét phát ra cách người quan sát 1700 m. Biết vận tốc âm trong không khí là 340 m/s. Sau bao lâu người đó nghe thấy tiếng sét? ______ giây.",
+    "options": null,
+    "correct_answer": "5",
+    "explanation": {
+      "summary": "t = s/v = 1700/340 = 5 giây.",
+      "key_concept": "Áp dụng công thức t = s/v cho sóng âm."
+    },
+    "thinking_guide": {
+      "understand": "Cho s = 1700 m, v = 340 m/s. Tìm thời gian t.",
+      "identify_knowledge": "t = s/v.",
+      "plan": "Thay số và tính.",
+      "steps": [
+        "Bước 1: t = s/v = 1700/340.",
+        "Bước 2: t = 5 giây."
+      ],
+      "verify": "5 × 340 = 1700 m ✓. Thấy sét rồi nghe sau 5 giây → khoảng 1,7 km → hợp lý.",
+      "extend": "Ánh sáng truyền gần như tức thời (300 000 km/s). Nên ta thấy chớp trước, nghe sét sau.",
+      "common_traps": [
+        "Dùng nhầm công thức: t = s × v thay vì t = s/v."
+      ],
+      "hints": [
+        "t = s/v. Nếu thấy chớp rồi đếm 5 giây mới nghe sét → sét cách khoảng 1,7 km."
+      ]
+    },
+    "real_world_connection": "Khi thấy chớp, con đếm giây cho đến khi nghe tiếng sét, rồi nhân với 340 m sẽ biết sét cách bao xa.",
+    "formula": "t = \\frac{s}{v} = \\frac{1700}{340} = 5 \\text{ s}"
+  },
+  {
+    "id": "phys7_sound_wave_008",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "sound_source",
+    "topic_vn": "Nguồn âm",
+    "type": "true_false",
+    "difficulty": "medium",
+    "question_text": "Âm thanh có thể truyền được trong chân không.",
+    "options": [
+      {
+        "key": "A",
+        "content": "Đúng"
+      },
+      {
+        "key": "B",
+        "content": "Sai"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Âm thanh KHÔNG thể truyền trong chân không vì chân không không có các hạt vật chất để dao động và truyền sóng âm.",
+      "key_concept": "Âm cần môi trường vật chất (rắn, lỏng, khí) để truyền. Chân không → không truyền âm."
+    },
+    "thinking_guide": {
+      "understand": "Âm thanh có truyền được trong chân không không?",
+      "identify_knowledge": "Âm truyền nhờ dao động các hạt vật chất. Chân không không có hạt.",
+      "plan": "Phân tích cơ chế truyền âm.",
+      "steps": [
+        "Bước 1: Âm = sóng cơ, cần môi trường vật chất.",
+        "Bước 2: Chân không = không gian không có vật chất.",
+        "Bước 3: → Không truyền được → Sai."
+      ],
+      "verify": "Thí nghiệm: đặt chuông trong bình hút chân không → không nghe tiếng chuông ✓.",
+      "extend": "Ánh sáng (sóng điện từ) truyền được trong chân không, nhưng âm thanh thì không.",
+      "common_traps": [
+        "Nhầm vì trong phim khoa học viễn tưởng, tàu vũ trụ nổ vẫn nghe tiếng → không đúng thực tế!"
+      ],
+      "hints": [
+        "Trong vũ trụ (chân không), phi hành gia không thể hét cho nhau nghe."
+      ]
+    },
+    "real_world_connection": "Trên trạm vũ trụ, phi hành gia phải dùng radio để liên lạc vì bên ngoài là chân không, âm không truyền được.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_sound_wave_009",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "ultrasound_infrasound",
+    "topic_vn": "Siêu âm và hạ âm",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Em hãy giải thích tại sao dơi có thể bay trong bóng tối mà không va vào vật cản. Hiện tượng này liên quan đến kiến thức vật lý nào?",
+    "options": null,
+    "correct_answer": "Dơi phát ra sóng siêu âm (tần số rất cao, vượt ngưỡng nghe của người). Sóng siêu âm bật lại (phản xạ) khi gặp vật cản và quay về tai dơi. Dựa vào thời gian giữa phát và nhận sóng, dơi xác định khoảng cách và vị trí vật cản để tránh. Đây là nguyên lý định vị bằng siêu âm (echolocation).",
+    "explanation": {
+      "summary": "Dơi dùng nguyên lý phản xạ siêu âm (echolocation): phát siêu âm → sóng phản xạ từ vật → thu lại → xác định khoảng cách.",
+      "key_concept": "Echolocation: phát siêu âm + thu phản xạ → xác định vị trí vật."
+    },
+    "thinking_guide": {
+      "understand": "Làm sao dơi bay ban đêm mà không va chạm?",
+      "identify_knowledge": "Siêu âm, phản xạ sóng, định vị bằng âm thanh.",
+      "plan": "Mô tả cơ chế echolocation từng bước.",
+      "steps": [
+        "Bước 1: Dơi phát sóng siêu âm (f > 20 000 Hz) liên tục.",
+        "Bước 2: Sóng gặp vật cản → phản xạ lại.",
+        "Bước 3: Tai dơi thu sóng phản xạ.",
+        "Bước 4: Dựa vào thời gian đi-về, dơi tính khoảng cách: d = v × t/2."
+      ],
+      "verify": "Bịt tai dơi → dơi bay va vào vật → đúng cơ chế echolocation ✓.",
+      "extend": "Cá heo cũng dùng echolocation. Sonar tàu ngầm hoạt động tương tự.",
+      "common_traps": [
+        "Nghĩ dơi có mắt nhìn đêm tốt. Thực ra phần lớn dơi có thị lực yếu và dựa vào siêu âm."
+      ],
+      "hints": [
+        "Dơi giống như 'radar sống' — phát sóng và thu sóng dội lại để 'nhìn' bằng âm thanh."
+      ]
+    },
+    "real_world_connection": "Nguyên lý tương tự được ứng dụng trong sonar tàu biển để đo độ sâu đáy biển và phát hiện đàn cá.",
+    "formula": "d = \\frac{v \\times t}{2}"
+  },
+  {
+    "id": "phys7_sound_wave_010",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "sound_speed",
+    "topic_vn": "Vận tốc truyền âm",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "question_text": "Một người đứng trước vách núi và hét lên. Sau 4 giây, người đó nghe thấy tiếng vọng. Biết vận tốc âm trong không khí là 340 m/s. Khoảng cách từ người đến vách núi là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "1360 m"
+      },
+      {
+        "key": "B",
+        "content": "680 m"
+      },
+      {
+        "key": "C",
+        "content": "340 m"
+      },
+      {
+        "key": "D",
+        "content": "170 m"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Trong 4 giây, âm đi từ người → vách núi → quay lại. Quãng đường tổng = v × t = 340 × 4 = 1360 m. Khoảng cách = 1360/2 = 680 m.",
+      "key_concept": "Tiếng vọng: âm đi 2 lần khoảng cách → d = v × t / 2."
+    },
+    "thinking_guide": {
+      "understand": "Nghe tiếng vọng sau 4s, tìm khoảng cách đến vách núi.",
+      "identify_knowledge": "Tiếng vọng = âm đi lượt đi + lượt về → d = v × t / 2.",
+      "plan": "Tính quãng đường tổng, rồi chia 2.",
+      "steps": [
+        "Bước 1: Quãng đường tổng = v × t = 340 × 4 = 1360 m.",
+        "Bước 2: Khoảng cách = 1360 / 2 = 680 m."
+      ],
+      "verify": "Vách núi cách 680 m → âm đi 680 m + về 680 m = 1360 m. Thời gian = 1360/340 = 4s ✓.",
+      "extend": "Muốn nghe rõ tiếng vọng, vách phải cách ít nhất ~17 m (thời gian đi-về ≥ 0,1s).",
+      "common_traps": [
+        "Quên chia 2: nghĩ khoảng cách = 340 × 4 = 1360 m → sai vì âm đi cả lượt đi và lượt về."
+      ],
+      "hints": [
+        "Tiếng vọng = âm đi + về, nên khoảng cách chỉ bằng NỬA quãng đường tổng."
+      ]
+    },
+    "real_world_connection": "Ở Đà Lạt hoặc vùng núi, con có thể hét vào vách đá và đếm giây để ước tính khoảng cách đến vách.",
+    "formula": "d = \\frac{v \\times t}{2} = \\frac{340 \\times 4}{2} = 680 \\text{ m}"
+  },
+  {
+    "id": "phys7_sound_wave_011",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "frequency",
+    "topic_vn": "Tần số âm",
+    "type": "fill_in",
+    "difficulty": "hard",
+    "question_text": "Một dây đàn dao động 880 lần trong 2 giây. Tần số dao động của dây đàn là ______ Hz.",
+    "options": null,
+    "correct_answer": "440",
+    "explanation": {
+      "summary": "Tần số = số dao động / thời gian = 880 / 2 = 440 Hz.",
+      "key_concept": "Tần số (Hz) = số dao động / thời gian (s)."
+    },
+    "thinking_guide": {
+      "understand": "Dây đàn dao động 880 lần trong 2 giây, tìm tần số.",
+      "identify_knowledge": "f = số dao động / t.",
+      "plan": "Chia số dao động cho thời gian.",
+      "steps": [
+        "Bước 1: f = 880 / 2.",
+        "Bước 2: f = 440 Hz."
+      ],
+      "verify": "440 Hz là tần số nốt La (A4) chuẩn trong âm nhạc → rất hợp lý ✓.",
+      "extend": "Nốt La (A4) = 440 Hz là tần số chuẩn để lên dây đàn.",
+      "common_traps": [
+        "Nhầm nhân thay vì chia: 880 × 2 = 1760 → sai."
+      ],
+      "hints": [
+        "Tần số = bao nhiêu dao động trong 1 giây = tổng dao động ÷ tổng giây."
+      ]
+    },
+    "real_world_connection": "Khi lên dây đàn, nhạc công dùng nốt La 440 Hz làm chuẩn. Điều này thống nhất trên toàn thế giới.",
+    "formula": "f = \\frac{N}{t} = \\frac{880}{2} = 440 \\text{ Hz}"
+  },
+  {
+    "id": "phys7_sound_wave_012",
+    "grade": 7,
+    "chapter": "sound_wave",
+    "chapter_vn": "Sóng âm",
+    "topic": "ultrasound_infrasound",
+    "topic_vn": "Siêu âm và hạ âm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Động vật nào sau đây có thể nghe được hạ âm (f < 20 Hz)?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Dơi"
+      },
+      {
+        "key": "B",
+        "content": "Chó"
+      },
+      {
+        "key": "C",
+        "content": "Voi"
+      },
+      {
+        "key": "D",
+        "content": "Cá heo"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Voi có thể nghe và phát ra hạ âm (tần số rất thấp, dưới 20 Hz) để liên lạc với nhau ở khoảng cách rất xa, có thể đến hàng chục km.",
+      "key_concept": "Voi dùng hạ âm (f < 20 Hz) để giao tiếp ở khoảng cách xa."
+    },
+    "thinking_guide": {
+      "understand": "Động vật nào nghe được hạ âm?",
+      "identify_knowledge": "Hạ âm: f < 20 Hz. Voi dùng hạ âm để giao tiếp.",
+      "plan": "Nhớ kiến thức về khả năng nghe của các loài.",
+      "steps": [
+        "Bước 1: Dơi → siêu âm (f cao).",
+        "Bước 2: Chó → nghe rộng hơn người nhưng chủ yếu siêu âm.",
+        "Bước 3: Voi → nghe và phát hạ âm ✓.",
+        "Bước 4: Cá heo → siêu âm."
+      ],
+      "verify": "Voi to lớn, phát âm trầm (tần số thấp) → hạ âm ✓.",
+      "extend": "Hạ âm truyền xa vì ít bị hấp thụ, giúp voi giao tiếp hàng chục km.",
+      "common_traps": [
+        "Nhầm dơi với hạ âm. Dơi dùng siêu âm (tần số cao), không phải hạ âm."
+      ],
+      "hints": [
+        "Con vật to → tiếng trầm → tần số thấp → hạ âm."
+      ]
+    },
+    "real_world_connection": "Trước động đất hoặc sóng thần, voi thường có phản ứng bất thường vì chúng nghe được hạ âm từ lòng đất.",
+    "formula": "f_{\\text{hạ âm}} < 20 \\text{ Hz}"
+  },
+  {
+    "id": "phys7_magnetic_field_001",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnet_properties",
+    "topic_vn": "Tính chất nam châm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Nam châm có bao nhiêu cực từ?",
+    "options": [
+      {
+        "key": "A",
+        "content": "1 cực"
+      },
+      {
+        "key": "B",
+        "content": "2 cực"
+      },
+      {
+        "key": "C",
+        "content": "3 cực"
+      },
+      {
+        "key": "D",
+        "content": "4 cực"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Mọi nam châm đều có 2 cực từ: cực Bắc (N - North) và cực Nam (S - South). Không thể tách riêng một cực.",
+      "key_concept": "Nam châm có 2 cực: cực Bắc (N) và cực Nam (S). Luôn tồn tại thành cặp."
+    },
+    "thinking_guide": {
+      "understand": "Nam châm có bao nhiêu cực?",
+      "identify_knowledge": "Nam châm luôn có 2 cực: Bắc (N) và Nam (S).",
+      "plan": "Nhớ lại kiến thức cơ bản về nam châm.",
+      "steps": [
+        "Bước 1: Cực Bắc (N) thường sơn màu đỏ.",
+        "Bước 2: Cực Nam (S) thường sơn màu xanh.",
+        "Bước 3: Mọi nam châm đều có đúng 2 cực."
+      ],
+      "verify": "Bẻ đôi nam châm → mỗi nửa vẫn có 2 cực N-S → không tách được 1 cực riêng ✓.",
+      "extend": "Nếu bẻ đôi nam châm, mỗi mảnh vẫn có 2 cực mới. Không tồn tại 'đơn cực từ'.",
+      "common_traps": [
+        "Nghĩ rằng bẻ đôi sẽ được 1 cực N riêng và 1 cực S riêng → sai."
+      ],
+      "hints": [
+        "Giống như đồng xu có 2 mặt, nam châm luôn có 2 cực."
+      ]
+    },
+    "real_world_connection": "Nam châm trên tủ lạnh có 2 cực, nhưng thường cực nào cũng hút sắt nên ta không nhận ra.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_002",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnet_interaction",
+    "topic_vn": "Tương tác giữa các nam châm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Khi đưa hai cực cùng tên của hai nam châm lại gần nhau, chúng sẽ:",
+    "options": [
+      {
+        "key": "A",
+        "content": "Hút nhau"
+      },
+      {
+        "key": "B",
+        "content": "Đẩy nhau"
+      },
+      {
+        "key": "C",
+        "content": "Không tương tác"
+      },
+      {
+        "key": "D",
+        "content": "Dính chặt vào nhau"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Hai cực cùng tên (N-N hoặc S-S) đẩy nhau. Hai cực khác tên (N-S) hút nhau. Đây là quy tắc cơ bản của tương tác từ.",
+      "key_concept": "Cùng tên → đẩy. Khác tên → hút."
+    },
+    "thinking_guide": {
+      "understand": "Hai cực cùng tên tương tác thế nào?",
+      "identify_knowledge": "Quy tắc: cùng tên đẩy, khác tên hút.",
+      "plan": "Áp dụng quy tắc tương tác nam châm.",
+      "steps": [
+        "Bước 1: Cùng tên (N-N hoặc S-S) → đẩy nhau.",
+        "Bước 2: Khác tên (N-S) → hút nhau."
+      ],
+      "verify": "Thí nghiệm: đưa 2 cực N lại gần → cảm thấy lực đẩy ✓.",
+      "extend": "Tương tự điện tích: cùng dấu đẩy nhau, khác dấu hút nhau.",
+      "common_traps": [
+        "Nhớ nhầm: cùng tên hút nhau (thực ra là đẩy)."
+      ],
+      "hints": [
+        "Giống như 2 người 'cùng tính' hay xung đột (đẩy), 'khác tính' thì hợp nhau (hút)."
+      ]
+    },
+    "real_world_connection": "Khi chơi với hai nam châm, con cảm nhận lực đẩy khi ép hai cực cùng tên vào nhau — giống như có một 'đệm vô hình' ngăn cách.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_003",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnetic_field_lines",
+    "topic_vn": "Đường sức từ",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Đường sức từ bên ngoài nam châm có chiều đi từ đâu đến đâu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Từ cực Nam đến cực Bắc"
+      },
+      {
+        "key": "B",
+        "content": "Từ cực Bắc đến cực Nam"
+      },
+      {
+        "key": "C",
+        "content": "Từ giữa ra hai đầu"
+      },
+      {
+        "key": "D",
+        "content": "Đường sức từ không có chiều"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Bên ngoài nam châm, đường sức từ đi ra từ cực Bắc (N) và đi vào cực Nam (S). Bên trong nam châm, chiều ngược lại (S → N) tạo thành vòng kín.",
+      "key_concept": "Đường sức từ bên ngoài: N → S. Bên trong: S → N. Tạo thành vòng kín."
+    },
+    "thinking_guide": {
+      "understand": "Chiều đường sức từ bên ngoài nam châm.",
+      "identify_knowledge": "Quy ước: bên ngoài đi từ N sang S.",
+      "plan": "Nhớ quy ước chiều đường sức từ.",
+      "steps": [
+        "Bước 1: Bên ngoài: đi ra từ cực Bắc (N).",
+        "Bước 2: Đi vào cực Nam (S).",
+        "Bước 3: Nhớ: 'Ra Bắc vào Nam' bên ngoài."
+      ],
+      "verify": "Đặt la bàn nhỏ dọc đường sức → kim chỉ hướng N → S ✓.",
+      "extend": "Đường sức từ luôn là vòng kín, không bao giờ cắt nhau.",
+      "common_traps": [
+        "Nhầm chiều: nhớ 'Ra Bắc vào Nam' (bên ngoài) để không nhầm."
+      ],
+      "hints": [
+        "Bắc = bắt đầu (ra), Nam = nhận (vào). Bên ngoài: N → S."
+      ]
+    },
+    "real_world_connection": "Rắc mạt sắt quanh nam châm sẽ thấy các hình vẽ đường sức từ rất đẹp, từ cực N sang cực S.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_004",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "compass",
+    "topic_vn": "La bàn",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Kim la bàn chỉ hướng Bắc vì:",
+    "options": [
+      {
+        "key": "A",
+        "content": "Kim la bàn bị ánh sáng Mặt Trời hút"
+      },
+      {
+        "key": "B",
+        "content": "Kim la bàn là nam châm, bị từ trường Trái Đất tác dụng"
+      },
+      {
+        "key": "C",
+        "content": "Kim la bàn bị gió thổi về hướng Bắc"
+      },
+      {
+        "key": "D",
+        "content": "Kim la bàn bị trọng lực kéo về hướng Bắc"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Kim la bàn là một nam châm nhỏ tự do. Trái Đất có từ trường (giống một nam châm khổng lồ), cực từ Bắc của Trái Đất hút cực từ Bắc của kim → kim chỉ Bắc.",
+      "key_concept": "Kim la bàn = nam châm nhỏ. Trái Đất = nam châm khổng lồ → kim la bàn chỉ Bắc."
+    },
+    "thinking_guide": {
+      "understand": "Tại sao kim la bàn chỉ hướng Bắc?",
+      "identify_knowledge": "Trái Đất có từ trường. Kim la bàn là nam châm tự do.",
+      "plan": "Liên hệ tương tác giữa nam châm (kim) và từ trường Trái Đất.",
+      "steps": [
+        "Bước 1: Kim la bàn là nam châm tự do (quay được).",
+        "Bước 2: Trái Đất có từ trường (như nam châm khổng lồ).",
+        "Bước 3: Cực Bắc của kim bị hút về phía cực từ Bắc → kim chỉ Bắc."
+      ],
+      "verify": "Đặt nam châm mạnh gần la bàn → kim lệch khỏi hướng Bắc → chứng tỏ kim chịu tác dụng từ ✓.",
+      "extend": "Cực từ Bắc của Trái Đất thực ra gần cực địa lý Nam (hơi lệch). Nhưng ở cấp độ lớp 7, ta coi nó trùng phương Bắc.",
+      "common_traps": [
+        "Nhầm rằng cực Bắc của Trái Đất là cực từ Bắc. Thực ra cực từ ở gần cực Bắc có tên gọi khoa học là 'cực từ Nam' của Trái Đất."
+      ],
+      "hints": [
+        "Kim la bàn là nam châm + Trái Đất có từ trường = kim bị từ trường Trái Đất hướng."
+      ]
+    },
+    "real_world_connection": "La bàn đã được phát minh ở Trung Quốc từ hàng nghìn năm trước, giúp thủy thủ định hướng trên biển.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_005",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnet_properties",
+    "topic_vn": "Tính chất nam châm",
+    "type": "true_false",
+    "difficulty": "easy",
+    "question_text": "Nam châm chỉ hút được sắt, không hút được niken hay côban.",
+    "options": [
+      {
+        "key": "A",
+        "content": "Đúng"
+      },
+      {
+        "key": "B",
+        "content": "Sai"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Nam châm hút được các vật liệu từ (có tính nhiễm từ) bao gồm sắt, niken, côban và một số hợp kim khác. Không chỉ riêng sắt.",
+      "key_concept": "Vật liệu từ: sắt (Fe), niken (Ni), côban (Co). Nam châm hút được tất cả."
+    },
+    "thinking_guide": {
+      "understand": "Nam châm chỉ hút sắt hay còn hút vật liệu khác?",
+      "identify_knowledge": "Nam châm hút vật liệu từ: sắt, niken, côban.",
+      "plan": "Liệt kê các vật liệu từ.",
+      "steps": [
+        "Bước 1: Sắt (Fe) → bị nam châm hút ✓.",
+        "Bước 2: Niken (Ni) → bị hút ✓.",
+        "Bước 3: Côban (Co) → bị hút ✓.",
+        "Bước 4: → Nam châm không chỉ hút sắt → Sai."
+      ],
+      "verify": "Đồng xu niken dính vào nam châm ✓.",
+      "extend": "Đồng (Cu), nhôm (Al), vàng (Au) KHÔNG bị nam châm hút.",
+      "common_traps": [
+        "Nghĩ chỉ sắt bị hút vì trong đời sống ta thường thấy nam châm hút sắt."
+      ],
+      "hints": [
+        "Nhớ 3 chất: Sắt – Niken – Côban (SNC) đều bị nam châm hút."
+      ]
+    },
+    "real_world_connection": "Đồng xu cũ làm bằng hợp kim niken cũng bị nam châm hút nhẹ.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_006",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnetic_field_lines",
+    "topic_vn": "Đường sức từ",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Đường sức từ có đặc điểm nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Là các đường thẳng song song"
+      },
+      {
+        "key": "B",
+        "content": "Là các đường cong kín, không cắt nhau"
+      },
+      {
+        "key": "C",
+        "content": "Là các đường cong có thể cắt nhau"
+      },
+      {
+        "key": "D",
+        "content": "Chỉ tồn tại bên trong nam châm"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Đường sức từ là các đường cong kín, đi từ cực N ra ngoài rồi vào cực S và nối liền bên trong nam châm. Chúng không bao giờ cắt nhau.",
+      "key_concept": "Đường sức từ: đường cong kín, không cắt nhau, dày ở nơi từ trường mạnh."
+    },
+    "thinking_guide": {
+      "understand": "Đặc điểm của đường sức từ.",
+      "identify_knowledge": "Đường sức từ: cong kín, không cắt nhau.",
+      "plan": "Nhớ lại tính chất đường sức từ.",
+      "steps": [
+        "Bước 1: Đường sức từ là đường cong (không phải thẳng).",
+        "Bước 2: Chúng tạo thành vòng kín (N → bên ngoài → S → bên trong → N).",
+        "Bước 3: Không bao giờ cắt nhau."
+      ],
+      "verify": "Nếu 2 đường sức cắt nhau, tại giao điểm từ trường có 2 hướng → vô lý → không cắt nhau ✓.",
+      "extend": "Nơi đường sức từ dày → từ trường mạnh. Nơi thưa → từ trường yếu.",
+      "common_traps": [
+        "Nhầm đường sức từ là đường thẳng song song (đó chỉ đúng trong từ trường đều)."
+      ],
+      "hints": [
+        "Rắc mạt sắt quanh nam châm: mạt sắt xếp thành đường cong, không cắt nhau."
+      ]
+    },
+    "real_world_connection": "Rắc mạt sắt lên giấy đặt trên nam châm, gõ nhẹ → mạt sắt xếp thành hình đường sức từ rất đẹp.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_007",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnet_interaction",
+    "topic_vn": "Tương tác giữa các nam châm",
+    "type": "fill_in",
+    "difficulty": "medium",
+    "question_text": "Khi treo tự do, cực Bắc (N) của nam châm luôn chỉ về hướng ______ địa lý.",
+    "options": null,
+    "correct_answer": "Bắc",
+    "explanation": {
+      "summary": "Cực Bắc (N) của nam châm tự do luôn chỉ về hướng Bắc địa lý vì nó bị cực từ Bắc của Trái Đất hút.",
+      "key_concept": "Cực N của nam châm chỉ Bắc địa lý. Đó là lý do gọi là cực 'Bắc'."
+    },
+    "thinking_guide": {
+      "understand": "Cực Bắc (N) của nam châm tự do chỉ hướng nào?",
+      "identify_knowledge": "Cực Bắc (North) → chỉ Bắc. Đó là nguồn gốc tên gọi.",
+      "plan": "Nhớ quy ước đặt tên cực nam châm.",
+      "steps": [
+        "Bước 1: Tên 'cực Bắc' = 'cực chỉ Bắc' (North-seeking pole).",
+        "Bước 2: → Cực N luôn chỉ Bắc."
+      ],
+      "verify": "Treo nam châm tự do → cực N quay về Bắc ✓.",
+      "extend": "Cực từ của Trái Đất ở gần cực Bắc địa lý thực ra là cực từ Nam (vì hút cực N).",
+      "common_traps": [
+        "Nhầm cực N chỉ Nam. Nhớ: N = North = Bắc."
+      ],
+      "hints": [
+        "N = North = Bắc. Cực N chỉ Bắc."
+      ]
+    },
+    "real_world_connection": "Nguyên lý này là cơ sở của la bàn — một trong bốn phát minh vĩ đại của Trung Quốc cổ đại.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_008",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "compass",
+    "topic_vn": "La bàn",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "question_text": "Nếu đặt một thanh nam châm mạnh gần la bàn, kim la bàn sẽ:",
+    "options": [
+      {
+        "key": "A",
+        "content": "Vẫn chỉ hướng Bắc như bình thường"
+      },
+      {
+        "key": "B",
+        "content": "Bị lệch khỏi hướng Bắc, chỉ về phía nam châm"
+      },
+      {
+        "key": "C",
+        "content": "Quay liên tục không dừng"
+      },
+      {
+        "key": "D",
+        "content": "Mất từ tính hoàn toàn"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Từ trường của nam châm đặt gần mạnh hơn từ trường Trái Đất, nên kim la bàn bị hút về phía nam châm, lệch khỏi hướng Bắc.",
+      "key_concept": "Từ trường mạnh hơn sẽ chi phối kim la bàn. Nam châm gần > từ trường Trái Đất."
+    },
+    "thinking_guide": {
+      "understand": "Kim la bàn phản ứng thế nào khi có nam châm mạnh gần?",
+      "identify_knowledge": "Kim la bàn chịu tác dụng tổng hợp từ trường. Từ trường mạnh hơn thắng.",
+      "plan": "So sánh từ trường Trái Đất (yếu) và nam châm gần (mạnh).",
+      "steps": [
+        "Bước 1: Từ trường Trái Đất rất yếu (~50 μT).",
+        "Bước 2: Nam châm đặt gần tạo từ trường mạnh hơn nhiều.",
+        "Bước 3: Kim la bàn bị nam châm gần hút → lệch khỏi Bắc."
+      ],
+      "verify": "Thực nghiệm: đặt nam châm cạnh la bàn → kim quay về phía nam châm ✓.",
+      "extend": "Vì thế, khi dùng la bàn cần tránh xa kim loại và nam châm.",
+      "common_traps": [
+        "Nghĩ la bàn luôn chỉ Bắc trong mọi trường hợp. Nó chỉ đúng khi không có từ trường ngoài mạnh."
+      ],
+      "hints": [
+        "Kim la bàn là nam châm nhỏ, nó 'nghe lời' từ trường mạnh nhất gần nó."
+      ]
+    },
+    "real_world_connection": "Khi đi trekking, cần giữ la bàn xa điện thoại, đồng hồ kim loại để tránh kim bị lệch.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_009",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnet_properties",
+    "topic_vn": "Tính chất nam châm",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Tại sao khi bẻ đôi một thanh nam châm, ta không thể thu được một mảnh chỉ có cực Bắc hoặc chỉ có cực Nam?",
+    "options": null,
+    "correct_answer": "Vì từ tính của nam châm bắt nguồn từ cấu trúc vi mô: mỗi nguyên tử hoạt động như một nam châm nhỏ có 2 cực. Khi bẻ đôi, mỗi mảnh vẫn là tập hợp nhiều 'nam châm nguyên tử', nên mỗi mảnh vẫn có đầy đủ 2 cực N và S. Không thể tách riêng một cực từ.",
+    "explanation": {
+      "summary": "Từ tính xuất phát từ cấp nguyên tử. Mỗi nguyên tử = 1 nam châm nhỏ. Bẻ đôi → mỗi nửa vẫn có 2 cực.",
+      "key_concept": "'Đơn cực từ' không tồn tại. Bẻ nam châm luôn tạo ra 2 nam châm nhỏ, mỗi cái có 2 cực."
+    },
+    "thinking_guide": {
+      "understand": "Tại sao không tách riêng được 1 cực từ?",
+      "identify_knowledge": "Từ tính có nguồn gốc vi mô. Mỗi nguyên tử = nam châm nhỏ 2 cực.",
+      "plan": "Giải thích từ cấu trúc vi mô của nam châm.",
+      "steps": [
+        "Bước 1: Nam châm gồm hàng triệu 'nam châm nguyên tử' sắp xếp đều.",
+        "Bước 2: Mỗi nam châm nguyên tử có 2 cực.",
+        "Bước 3: Bẻ đôi → 2 nhóm, mỗi nhóm vẫn có 2 cực.",
+        "Bước 4: Tiếp tục bẻ → vẫn 2 cực. Không bao giờ tách được 1 cực."
+      ],
+      "verify": "Thí nghiệm: bẻ đôi nam châm → dùng mạt sắt kiểm tra → mỗi mảnh có 2 cực ✓.",
+      "extend": "Trong vật lý hiện đại, 'đơn cực từ' (monopole) là bài toán mở, chưa tìm thấy trong tự nhiên.",
+      "common_traps": [
+        "Nghĩ rằng bẻ đôi sẽ tách được cực N riêng và cực S riêng."
+      ],
+      "hints": [
+        "Tưởng tượng nam châm như chuỗi mũi tên → → →. Cắt ở đâu, mỗi nửa vẫn có đầu và đuôi."
+      ]
+    },
+    "real_world_connection": "Các nhà vật lý vẫn đang tìm kiếm 'đơn cực từ' — một hạt chỉ có 1 cực, nhưng chưa ai tìm thấy.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_010",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnet_interaction",
+    "topic_vn": "Tương tác giữa các nam châm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Vật liệu nào sau đây KHÔNG bị nam châm hút?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Sắt"
+      },
+      {
+        "key": "B",
+        "content": "Niken"
+      },
+      {
+        "key": "C",
+        "content": "Đồng"
+      },
+      {
+        "key": "D",
+        "content": "Côban"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Đồng (Cu) không phải vật liệu từ nên không bị nam châm hút. Sắt, niken, côban là các vật liệu từ, bị nam châm hút.",
+      "key_concept": "Vật liệu từ: sắt, niken, côban. Vật liệu không từ: đồng, nhôm, vàng, bạc..."
+    },
+    "thinking_guide": {
+      "understand": "Vật liệu nào không bị nam châm hút?",
+      "identify_knowledge": "Chỉ sắt, niken, côban (và hợp kim) bị nam châm hút.",
+      "plan": "Kiểm tra từng vật liệu.",
+      "steps": [
+        "Bước 1: Sắt → từ tính ✓ → bị hút.",
+        "Bước 2: Niken → từ tính ✓ → bị hút.",
+        "Bước 3: Đồng → không có từ tính → KHÔNG bị hút ✓.",
+        "Bước 4: Côban → từ tính ✓ → bị hút."
+      ],
+      "verify": "Đặt dây đồng gần nam châm → không phản ứng ✓.",
+      "extend": "Nhôm, vàng, bạc, gỗ, nhựa đều không bị nam châm hút.",
+      "common_traps": [
+        "Nhầm tất cả kim loại đều bị nam châm hút. Chỉ Fe, Ni, Co bị hút."
+      ],
+      "hints": [
+        "Nhớ: Sắt-Niken-Côban (Fe-Ni-Co) → 3 vật liệu từ chính."
+      ]
+    },
+    "real_world_connection": "Dây điện trong nhà làm bằng đồng → không bị nam châm hút. Tủ lạnh làm bằng thép → nam châm dán được.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_011",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "magnetic_field_lines",
+    "topic_vn": "Đường sức từ",
+    "type": "fill_in",
+    "difficulty": "hard",
+    "question_text": "Đường sức từ càng dày (gần nhau) thì từ trường tại đó càng ______.",
+    "options": null,
+    "correct_answer": "mạnh",
+    "explanation": {
+      "summary": "Mật độ đường sức từ biểu thị cường độ từ trường. Đường sức càng dày → từ trường càng mạnh. Thưa → yếu.",
+      "key_concept": "Đường sức dày → từ trường mạnh. Đường sức thưa → từ trường yếu."
+    },
+    "thinking_guide": {
+      "understand": "Mật độ đường sức từ cho biết điều gì?",
+      "identify_knowledge": "Mật độ đường sức ∝ cường độ từ trường.",
+      "plan": "Liên hệ giữa mật độ đường sức và từ trường.",
+      "steps": [
+        "Bước 1: Đường sức dày → nhiều đường sức trên đơn vị diện tích → từ trường mạnh.",
+        "Bước 2: Đường sức thưa → ít đường sức → từ trường yếu."
+      ],
+      "verify": "Gần cực nam châm: đường sức dày → hút mạnh nhất ✓.",
+      "extend": "Tại hai cực nam châm, đường sức dày nhất → từ trường mạnh nhất.",
+      "common_traps": [
+        "Nghĩ đường sức dày = từ trường yếu (ngược lại mới đúng)."
+      ],
+      "hints": [
+        "Dày = đông = mạnh. Thưa = ít = yếu."
+      ]
+    },
+    "real_world_connection": "Vùng gần cực nam châm có đường sức dày, hút sắt mạnh nhất. Xa cực thì đường sức thưa, hút yếu.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_magnetic_field_012",
+    "grade": 7,
+    "chapter": "magnetic_field_basics",
+    "chapter_vn": "Từ trường",
+    "topic": "compass",
+    "topic_vn": "La bàn",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Tại sao la bàn không hoạt động chính xác ở gần các cực của Trái Đất (cực Bắc và cực Nam)?",
+    "options": null,
+    "correct_answer": "Tại gần cực Trái Đất, đường sức từ gần như thẳng đứng (đi vào hoặc đi ra khỏi mặt đất theo phương đứng). Kim la bàn nằm ngang nên không thể xoay theo đường sức đứng, dẫn đến chỉ hướng không chính xác hoặc kim bị 'nghiêng' mà không chỉ rõ phương Bắc-Nam.",
+    "explanation": {
+      "summary": "Ở cực, đường sức từ gần thẳng đứng. Kim la bàn nằm ngang → không theo được đường sức → mất phương hướng.",
+      "key_concept": "Đường sức từ thẳng đứng tại cực → la bàn ngang không thể chỉ đúng."
+    },
+    "thinking_guide": {
+      "understand": "Tại sao la bàn không hoạt động tốt ở cực?",
+      "identify_knowledge": "Hướng đường sức từ tại cực. Kim la bàn chỉ quay theo phương ngang.",
+      "plan": "Phân tích hướng đường sức từ tại cực so với mặt ngang.",
+      "steps": [
+        "Bước 1: Ở xích đạo: đường sức từ gần ngang → la bàn hoạt động tốt.",
+        "Bước 2: Gần cực: đường sức từ gần thẳng đứng (chui vào/ra mặt đất).",
+        "Bước 3: Kim la bàn nằm ngang → không quay theo được → mất phương hướng."
+      ],
+      "verify": "Các nhà thám hiểm ở Bắc Cực ghi nhận la bàn hoạt động không tin cậy → đúng ✓.",
+      "extend": "Ở Bắc Cực, người ta dùng GPS hoặc quan sát sao để định hướng thay cho la bàn.",
+      "common_traps": [
+        "Nghĩ la bàn hoạt động tốt nhất ở cực vì gần cực từ → sai, vì đường sức thẳng đứng."
+      ],
+      "hints": [
+        "Kim la bàn chỉ quay trên mặt phẳng ngang. Nếu từ trường hướng lên/xuống thì kim 'bối rối'."
+      ]
+    },
+    "real_world_connection": "Các nhà thám hiểm Bắc Cực như Amundsen phải dùng sao Bắc Đẩu và kinh nghiệm để định hướng vì la bàn không đáng tin cậy.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_001",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "day_night",
+    "topic_vn": "Ngày và đêm",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Hiện tượng ngày và đêm xảy ra do:",
+    "options": [
+      {
+        "key": "A",
+        "content": "Trái Đất quay quanh Mặt Trời"
+      },
+      {
+        "key": "B",
+        "content": "Trái Đất tự quay quanh trục"
+      },
+      {
+        "key": "C",
+        "content": "Mặt Trăng quay quanh Trái Đất"
+      },
+      {
+        "key": "D",
+        "content": "Mặt Trời di chuyển quanh Trái Đất"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Ngày và đêm xảy ra do Trái Đất tự quay quanh trục (tự quay). Nửa hướng về Mặt Trời là ngày, nửa khuất là đêm. Một vòng tự quay mất khoảng 24 giờ.",
+      "key_concept": "Tự quay quanh trục → ngày đêm. Chu kỳ: 24 giờ."
+    },
+    "thinking_guide": {
+      "understand": "Nguyên nhân gây ra ngày và đêm.",
+      "identify_knowledge": "Trái Đất tự quay quanh trục → nửa sáng, nửa tối.",
+      "plan": "Phân biệt tự quay (ngày đêm) và quay quanh Mặt Trời (mùa).",
+      "steps": [
+        "Bước 1: Trái Đất tự quay → mỗi điểm lần lượt hướng về/khuất Mặt Trời.",
+        "Bước 2: Hướng về Mặt Trời = ngày. Khuất = đêm.",
+        "Bước 3: Chu kỳ 24 giờ → 1 ngày đêm."
+      ],
+      "verify": "Nếu Trái Đất không quay, một nửa sẽ luôn sáng, nửa kia luôn tối → đúng ✓.",
+      "extend": "Quay quanh Mặt Trời gây ra các mùa (do trục nghiêng), không phải ngày đêm.",
+      "common_traps": [
+        "Nhầm quay quanh Mặt Trời gây ngày đêm. Quay quanh Mặt Trời gây ra MÙA."
+      ],
+      "hints": [
+        "Tự quay → ngày đêm. Quay quanh Mặt Trời → bốn mùa."
+      ]
+    },
+    "real_world_connection": "Ở Việt Nam ban ngày thì ở Mỹ ban đêm, vì Trái Đất quay khiến hai nơi hướng về Mặt Trời vào lúc khác nhau.",
+    "formula": "T_{\\text{tự quay}} \\approx 24 \\text{ giờ}"
+  },
+  {
+    "id": "phys7_earth_solar_002",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "seasons",
+    "topic_vn": "Các mùa",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Hiện tượng bốn mùa trên Trái Đất xảy ra do:",
+    "options": [
+      {
+        "key": "A",
+        "content": "Trái Đất tự quay quanh trục"
+      },
+      {
+        "key": "B",
+        "content": "Khoảng cách Trái Đất đến Mặt Trời thay đổi"
+      },
+      {
+        "key": "C",
+        "content": "Trục Trái Đất nghiêng và Trái Đất quay quanh Mặt Trời"
+      },
+      {
+        "key": "D",
+        "content": "Mặt Trăng che ánh sáng Mặt Trời"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Bốn mùa xảy ra vì trục Trái Đất nghiêng 23,5° so với đường vuông góc với mặt phẳng quỹ đạo, và Trái Đất quay quanh Mặt Trời. Khi bán cầu Bắc nghiêng về phía Mặt Trời → mùa hè ở bán cầu Bắc.",
+      "key_concept": "Trục nghiêng 23,5° + quay quanh Mặt Trời → bốn mùa."
+    },
+    "thinking_guide": {
+      "understand": "Nguyên nhân gây ra bốn mùa.",
+      "identify_knowledge": "Trục nghiêng + chuyển động quanh Mặt Trời → góc chiếu sáng thay đổi → mùa.",
+      "plan": "Phân tích vai trò của trục nghiêng trong việc tạo mùa.",
+      "steps": [
+        "Bước 1: Trục Trái Đất nghiêng 23,5°.",
+        "Bước 2: Khi bán cầu Bắc hướng về Mặt Trời → ánh sáng chiếu trực tiếp → mùa hè.",
+        "Bước 3: 6 tháng sau, bán cầu Bắc nghiêng xa Mặt Trời → ánh sáng xiên → mùa đông."
+      ],
+      "verify": "Nếu trục không nghiêng → không có mùa (giả sử quỹ đạo tròn) → đúng ✓.",
+      "extend": "Ở xích đạo, mùa ít rõ rệt vì luôn nhận ánh sáng gần vuông góc.",
+      "common_traps": [
+        "Nhầm rằng mùa hè do Trái Đất gần Mặt Trời hơn. Thực ra khoảng cách thay đổi rất ít."
+      ],
+      "hints": [
+        "Trục nghiêng = nghiêng hướng nào thì bán cầu đó được sưởi ấm hơn."
+      ]
+    },
+    "real_world_connection": "Khi Việt Nam đang mùa hè thì Úc đang mùa đông, vì hai nước ở hai bán cầu khác nhau.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_003",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "moon_phases",
+    "topic_vn": "Các pha Mặt Trăng",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Mặt Trăng phát sáng được là do:",
+    "options": [
+      {
+        "key": "A",
+        "content": "Mặt Trăng tự phát sáng như Mặt Trời"
+      },
+      {
+        "key": "B",
+        "content": "Mặt Trăng phản xạ ánh sáng từ Mặt Trời"
+      },
+      {
+        "key": "C",
+        "content": "Mặt Trăng phản xạ ánh sáng từ Trái Đất"
+      },
+      {
+        "key": "D",
+        "content": "Mặt Trăng có lõi nóng phát sáng"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Mặt Trăng không tự phát sáng. Nó phản xạ ánh sáng Mặt Trời chiếu vào bề mặt, vì vậy ta thấy Mặt Trăng sáng vào ban đêm.",
+      "key_concept": "Mặt Trăng = vệ tinh, không tự phát sáng. Sáng nhờ phản xạ ánh sáng Mặt Trời."
+    },
+    "thinking_guide": {
+      "understand": "Mặt Trăng phát sáng bằng cách nào?",
+      "identify_knowledge": "Mặt Trăng là vệ tinh, phản xạ ánh sáng Mặt Trời.",
+      "plan": "Phân biệt vật tự phát sáng và vật phản xạ ánh sáng.",
+      "steps": [
+        "Bước 1: Mặt Trời = ngôi sao, tự phát sáng (phản ứng hạt nhân).",
+        "Bước 2: Mặt Trăng = đá, không tự phát sáng.",
+        "Bước 3: Ánh sáng Mặt Trời chiếu vào → Mặt Trăng phản xạ → ta thấy sáng."
+      ],
+      "verify": "Khi nhật thực: Mặt Trăng che Mặt Trời → phần tối hoàn toàn → chứng tỏ không tự sáng ✓.",
+      "extend": "Các pha Mặt Trăng (tròn, khuyết, bán nguyệt) là do ta thấy phần được chiếu sáng khác nhau.",
+      "common_traps": [
+        "Nghĩ Mặt Trăng tự phát sáng vì nhìn rất sáng ban đêm."
+      ],
+      "hints": [
+        "Mặt Trăng giống như quả bóng trong phòng tối — chỉ sáng khi có đèn chiếu vào."
+      ]
+    },
+    "real_world_connection": "Đêm rằm (15 âm lịch) Mặt Trăng tròn nhất vì ta nhìn thấy toàn bộ mặt được Mặt Trời chiếu sáng.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_004",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "solar_system",
+    "topic_vn": "Hệ Mặt Trời",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question_text": "Trong hệ Mặt Trời, hành tinh nào gần Mặt Trời nhất?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Sao Kim (Venus)"
+      },
+      {
+        "key": "B",
+        "content": "Trái Đất (Earth)"
+      },
+      {
+        "key": "C",
+        "content": "Sao Thủy (Mercury)"
+      },
+      {
+        "key": "D",
+        "content": "Sao Hỏa (Mars)"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Sao Thủy (Mercury) là hành tinh gần Mặt Trời nhất, cách khoảng 58 triệu km. Thứ tự 8 hành tinh: Thủy – Kim – Trái Đất – Hỏa – Mộc – Thổ – Thiên Vương – Hải Vương.",
+      "key_concept": "Thứ tự hành tinh từ Mặt Trời: Thủy – Kim – Địa – Hỏa – Mộc – Thổ – Thiên – Hải."
+    },
+    "thinking_guide": {
+      "understand": "Hành tinh nào gần Mặt Trời nhất?",
+      "identify_knowledge": "Thứ tự hành tinh trong hệ Mặt Trời.",
+      "plan": "Nhớ thứ tự 8 hành tinh.",
+      "steps": [
+        "Bước 1: Gần nhất: Sao Thủy (Mercury).",
+        "Bước 2: Tiếp: Sao Kim → Trái Đất → Sao Hỏa.",
+        "Bước 3: Sao Thủy → đáp án C."
+      ],
+      "verify": "Sao Thủy nhỏ nhất và gần Mặt Trời nhất, nhiệt độ ban ngày rất cao (~430°C) ✓.",
+      "extend": "Câu nhớ: 'Thủy Kim Địa Hỏa Mộc Thổ Thiên Hải'.",
+      "common_traps": [
+        "Nhầm Sao Kim gần nhất vì nghe quen thuộc hơn."
+      ],
+      "hints": [
+        "Thủy = Mercury = hành tinh đầu tiên. 'Thủy Kim Địa Hỏa Mộc Thổ Thiên Hải'."
+      ]
+    },
+    "real_world_connection": "Sao Thủy nhỏ đến mức chỉ lớn hơn Mặt Trăng một chút. Có thể nhìn thấy bằng mắt thường gần đường chân trời lúc hoàng hôn.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_005",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "moon_phases",
+    "topic_vn": "Các pha Mặt Trăng",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Chu kỳ Mặt Trăng quay quanh Trái Đất (từ trăng tròn này đến trăng tròn kế tiếp) là khoảng bao lâu?",
+    "options": [
+      {
+        "key": "A",
+        "content": "7 ngày"
+      },
+      {
+        "key": "B",
+        "content": "14 ngày"
+      },
+      {
+        "key": "C",
+        "content": "29,5 ngày"
+      },
+      {
+        "key": "D",
+        "content": "365 ngày"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": {
+      "summary": "Chu kỳ synodic (từ trăng tròn đến trăng tròn) khoảng 29,5 ngày, tương đương 1 tháng âm lịch.",
+      "key_concept": "Chu kỳ trăng (synodic): ~29,5 ngày ≈ 1 tháng âm lịch."
+    },
+    "thinking_guide": {
+      "understand": "Mất bao lâu từ trăng tròn này đến trăng tròn kế?",
+      "identify_knowledge": "Chu kỳ Mặt Trăng ≈ 29,5 ngày ≈ 1 tháng.",
+      "plan": "Nhớ lại chu kỳ hoặc suy luận từ lịch âm.",
+      "steps": [
+        "Bước 1: Trăng tròn vào 15 âm lịch.",
+        "Bước 2: Trăng tròn kế vào 15 tháng sau ≈ 30 ngày.",
+        "Bước 3: Chính xác: ~29,5 ngày."
+      ],
+      "verify": "Tháng âm lịch có 29 hoặc 30 ngày → trung bình 29,5 ngày ✓.",
+      "extend": "Chu kỳ sidereal (so với sao) = 27,3 ngày. Synodic (so với Mặt Trời) = 29,5 ngày.",
+      "common_traps": [
+        "Nhầm 365 ngày (đó là chu kỳ Trái Đất quay quanh Mặt Trời = 1 năm)."
+      ],
+      "hints": [
+        "Tháng âm lịch = 29-30 ngày ≈ chu kỳ Mặt Trăng."
+      ]
+    },
+    "real_world_connection": "Tết Trung Thu (15/8 âm lịch) luôn có trăng tròn nhờ lịch âm dựa trên chu kỳ Mặt Trăng.",
+    "formula": "T_{\\text{Mặt Trăng}} \\approx 29,5 \\text{ ngày}"
+  },
+  {
+    "id": "phys7_earth_solar_006",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "day_night",
+    "topic_vn": "Ngày và đêm",
+    "type": "fill_in",
+    "difficulty": "medium",
+    "question_text": "Trái Đất tự quay quanh trục một vòng hết khoảng ______ giờ.",
+    "options": null,
+    "correct_answer": "24",
+    "explanation": {
+      "summary": "Trái Đất tự quay quanh trục mất khoảng 24 giờ (chính xác: 23 giờ 56 phút 4 giây cho một ngày thiên văn, nhưng ngày Mặt Trời trung bình = 24 giờ).",
+      "key_concept": "Chu kỳ tự quay Trái Đất ≈ 24 giờ = 1 ngày đêm."
+    },
+    "thinking_guide": {
+      "understand": "Trái Đất mất bao lâu để tự quay 1 vòng?",
+      "identify_knowledge": "Chu kỳ tự quay ≈ 24 giờ.",
+      "plan": "Nhớ lại kiến thức cơ bản.",
+      "steps": [
+        "Bước 1: 1 ngày đêm = 24 giờ.",
+        "Bước 2: Nguyên nhân: Trái Đất tự quay 1 vòng ≈ 24 giờ."
+      ],
+      "verify": "Mặt Trời mọc → lặn → mọc lại ≈ 24 giờ ✓.",
+      "extend": "Ngày thiên văn = 23h56m4s (so với sao). Ngày Mặt Trời = 24h (so với Mặt Trời).",
+      "common_traps": [
+        "Nhầm với 365 ngày (đó là chu kỳ quay quanh Mặt Trời = 1 năm)."
+      ],
+      "hints": [
+        "1 ngày đêm = 24 giờ = 1 vòng tự quay."
+      ]
+    },
+    "real_world_connection": "Vì Trái Đất quay 1 vòng mất 24 giờ, nên các múi giờ cách nhau 1 giờ = 360°/24 = 15° kinh độ.",
+    "formula": "T_{\\text{tự quay}} \\approx 24 \\text{ giờ}"
+  },
+  {
+    "id": "phys7_earth_solar_007",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "seasons",
+    "topic_vn": "Các mùa",
+    "type": "true_false",
+    "difficulty": "medium",
+    "question_text": "Khi bán cầu Bắc đang là mùa hè thì bán cầu Nam cũng đang là mùa hè.",
+    "options": [
+      {
+        "key": "A",
+        "content": "Đúng"
+      },
+      {
+        "key": "B",
+        "content": "Sai"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Khi bán cầu Bắc nghiêng về Mặt Trời (mùa hè), bán cầu Nam nghiêng xa Mặt Trời (mùa đông). Hai bán cầu luôn có mùa ngược nhau.",
+      "key_concept": "Hai bán cầu có mùa ngược nhau: Bắc hè → Nam đông, và ngược lại."
+    },
+    "thinking_guide": {
+      "understand": "Hai bán cầu có mùa giống nhau không?",
+      "identify_knowledge": "Trục nghiêng → khi 1 bán cầu hướng Mặt Trời, bán cầu kia khuất.",
+      "plan": "Phân tích vị trí hai bán cầu so với Mặt Trời.",
+      "steps": [
+        "Bước 1: Tháng 6: bán cầu Bắc nghiêng về Mặt Trời → mùa hè.",
+        "Bước 2: Cùng lúc, bán cầu Nam nghiêng xa → mùa đông.",
+        "Bước 3: → Hai bán cầu mùa ngược nhau → Sai."
+      ],
+      "verify": "Giáng Sinh ở Úc (bán cầu Nam) vào mùa hè, trong khi ở Việt Nam đang đông ✓.",
+      "extend": "Ở xích đạo, sự khác biệt mùa rất nhỏ vì ánh sáng luôn chiếu gần vuông góc.",
+      "common_traps": [
+        "Nghĩ cả Trái Đất cùng mùa vì cùng khoảng cách đến Mặt Trời."
+      ],
+      "hints": [
+        "Khi Bắc nghiêng về Mặt Trời → Bắc hè. Đồng thời Nam nghiêng xa → Nam đông."
+      ]
+    },
+    "real_world_connection": "Du khách Việt Nam sang Úc vào tháng 12 sẽ gặp mùa hè nóng bức, dù ở Việt Nam đang lạnh.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_008",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "solar_system",
+    "topic_vn": "Hệ Mặt Trời",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "question_text": "Hành tinh nào lớn nhất trong hệ Mặt Trời?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Sao Thổ (Saturn)"
+      },
+      {
+        "key": "B",
+        "content": "Sao Mộc (Jupiter)"
+      },
+      {
+        "key": "C",
+        "content": "Sao Thiên Vương (Uranus)"
+      },
+      {
+        "key": "D",
+        "content": "Sao Hải Vương (Neptune)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Sao Mộc (Jupiter) là hành tinh lớn nhất hệ Mặt Trời, có đường kính gấp khoảng 11 lần Trái Đất và khối lượng gấp 318 lần Trái Đất.",
+      "key_concept": "Sao Mộc (Jupiter) = hành tinh lớn nhất hệ Mặt Trời."
+    },
+    "thinking_guide": {
+      "understand": "Hành tinh lớn nhất?",
+      "identify_knowledge": "Sao Mộc (Jupiter) lớn nhất, Sao Thủy nhỏ nhất.",
+      "plan": "Nhớ thứ tự kích thước hành tinh.",
+      "steps": [
+        "Bước 1: Sao Mộc = lớn nhất (đường kính ~140 000 km).",
+        "Bước 2: Sao Thổ = lớn thứ 2 (~116 000 km).",
+        "Bước 3: → Đáp án B."
+      ],
+      "verify": "Sao Mộc nặng hơn tổng tất cả các hành tinh khác cộng lại → đúng là lớn nhất ✓.",
+      "extend": "Sao Mộc có Vết Đỏ Lớn — cơn bão khổng lồ to hơn cả Trái Đất, kéo dài hàng trăm năm.",
+      "common_traps": [
+        "Nhầm Sao Thổ lớn nhất vì vành đai ấn tượng. Sao Thổ lớn thứ 2."
+      ],
+      "hints": [
+        "Mộc = Jupiter = 'vua' của các hành tinh."
+      ]
+    },
+    "real_world_connection": "Nhìn lên bầu trời đêm, Sao Mộc là một trong những vật thể sáng nhất (sau Mặt Trăng và Sao Kim).",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_009",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "moon_phases",
+    "topic_vn": "Các pha Mặt Trăng",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Em hãy giải thích tại sao Mặt Trăng có các pha (trăng tròn, trăng khuyết, trăng non, trăng bán nguyệt) thay đổi theo chu kỳ.",
+    "options": null,
+    "correct_answer": "Mặt Trăng quay quanh Trái Đất, trong khi chỉ một nửa Mặt Trăng được Mặt Trời chiếu sáng. Tùy vào vị trí tương đối của Mặt Trăng so với Trái Đất và Mặt Trời, ta nhìn thấy phần được chiếu sáng nhiều hay ít: khi ở giữa (trăng non → không thấy), khi đối diện (trăng tròn → thấy hết), khi ở bên cạnh (bán nguyệt → thấy nửa).",
+    "explanation": {
+      "summary": "Các pha Mặt Trăng do vị trí tương đối của Mặt Trăng – Trái Đất – Mặt Trời thay đổi khi Mặt Trăng quay quanh Trái Đất.",
+      "key_concept": "Pha Mặt Trăng = phần được chiếu sáng mà ta nhìn thấy, thay đổi theo vị trí quỹ đạo."
+    },
+    "thinking_guide": {
+      "understand": "Tại sao Mặt Trăng thay đổi hình dạng (pha)?",
+      "identify_knowledge": "Mặt Trăng quay quanh Trái Đất, được Mặt Trời chiếu sáng một nửa.",
+      "plan": "Phân tích vị trí Mặt Trăng tại các pha khác nhau.",
+      "steps": [
+        "Bước 1: Mặt Trăng luôn có nửa sáng (hướng Mặt Trời) và nửa tối.",
+        "Bước 2: Trăng non: Mặt Trăng ở giữa Trái Đất và Mặt Trời → ta thấy mặt tối.",
+        "Bước 3: Trăng tròn: Trái Đất ở giữa → ta thấy toàn bộ mặt sáng.",
+        "Bước 4: Bán nguyệt: Mặt Trăng ở bên cạnh → ta thấy nửa sáng."
+      ],
+      "verify": "Chu kỳ lặp lại sau ~29,5 ngày = 1 tháng âm lịch ✓.",
+      "extend": "Khi trăng non + thẳng hàng chính xác → nhật thực. Khi trăng tròn + thẳng hàng → nguyệt thực.",
+      "common_traps": [
+        "Nghĩ rằng bóng Trái Đất che Mặt Trăng gây trăng khuyết. Thực ra đó chỉ đúng khi nguyệt thực."
+      ],
+      "hints": [
+        "Dùng quả bóng và đèn pin trong phòng tối: xoay quanh đầu → thấy các pha."
+      ]
+    },
+    "real_world_connection": "Người xưa theo dõi pha Mặt Trăng để làm lịch âm. Tết Nguyên Đán bắt đầu vào ngày trăng non (mùng 1).",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_010",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "day_night",
+    "topic_vn": "Ngày và đêm",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "question_text": "Vào ngày hạ chí (khoảng 21/6), hiện tượng nào xảy ra ở bán cầu Bắc?",
+    "options": [
+      {
+        "key": "A",
+        "content": "Ngày ngắn nhất, đêm dài nhất"
+      },
+      {
+        "key": "B",
+        "content": "Ngày dài nhất, đêm ngắn nhất"
+      },
+      {
+        "key": "C",
+        "content": "Ngày và đêm dài bằng nhau"
+      },
+      {
+        "key": "D",
+        "content": "Không có ban ngày"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": {
+      "summary": "Ngày hạ chí (21/6): bán cầu Bắc nghiêng về Mặt Trời nhiều nhất → ngày dài nhất, đêm ngắn nhất trong năm. Ngược lại ở bán cầu Nam.",
+      "key_concept": "Hạ chí (21/6): ngày dài nhất ở bán cầu Bắc. Đông chí (22/12): đêm dài nhất ở bán cầu Bắc."
+    },
+    "thinking_guide": {
+      "understand": "Ngày hạ chí ở bán cầu Bắc có gì đặc biệt?",
+      "identify_knowledge": "Hạ chí: bán cầu Bắc nghiêng nhiều nhất về Mặt Trời.",
+      "plan": "Liên hệ góc nghiêng với thời gian chiếu sáng.",
+      "steps": [
+        "Bước 1: Hạ chí (21/6): trục nghiêng khiến bán cầu Bắc hướng tối đa về Mặt Trời.",
+        "Bước 2: Bán cầu Bắc nhận ánh sáng lâu nhất → ngày dài nhất.",
+        "Bước 3: → Đáp án B."
+      ],
+      "verify": "Ở Hà Nội ngày 21/6 trời sáng từ ~5h30 đến ~18h45 ≈ 13 giờ ngày > 11 giờ đêm ✓.",
+      "extend": "Ở Bắc Cực vào hạ chí: Mặt Trời không lặn → 'đêm trắng' suốt 24h.",
+      "common_traps": [
+        "Nhầm hạ chí với đông chí. Hạ = mùa hè → ngày dài. Đông = mùa đông → đêm dài."
+      ],
+      "hints": [
+        "Hạ = hè = nóng = ngày dài. Đông = đông = lạnh = đêm dài."
+      ]
+    },
+    "real_world_connection": "Ở các nước Bắc Âu (Na Uy, Thụy Điển), ngày hạ chí có thể kéo dài 20-24 giờ — hiện tượng 'Mặt Trời nửa đêm'.",
+    "formula": ""
+  },
+  {
+    "id": "phys7_earth_solar_011",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "solar_system",
+    "topic_vn": "Hệ Mặt Trời",
+    "type": "fill_in",
+    "difficulty": "easy",
+    "question_text": "Trái Đất quay quanh Mặt Trời một vòng hết khoảng ______ ngày (tức là 1 năm).",
+    "options": null,
+    "correct_answer": "365",
+    "explanation": {
+      "summary": "Trái Đất quay quanh Mặt Trời mất khoảng 365,25 ngày (1 năm). Phần lẻ 0,25 ngày tích lũy sau 4 năm thành 1 ngày → năm nhuận có 366 ngày.",
+      "key_concept": "Chu kỳ quay quanh Mặt Trời: ~365 ngày = 1 năm."
+    },
+    "thinking_guide": {
+      "understand": "Trái Đất mất bao lâu quay quanh Mặt Trời 1 vòng?",
+      "identify_knowledge": "1 năm ≈ 365 ngày.",
+      "plan": "Nhớ kiến thức cơ bản.",
+      "steps": [
+        "Bước 1: 1 năm ≈ 365 ngày.",
+        "Bước 2: Chính xác: 365,25 ngày → 4 năm thêm 1 ngày (năm nhuận)."
+      ],
+      "verify": "Lịch có 365 ngày, cứ 4 năm thêm 29/2 → năm nhuận ✓.",
+      "extend": "Tốc độ Trái Đất quay quanh Mặt Trời: ~30 km/s = 108 000 km/h!",
+      "common_traps": [
+        "Nhầm 24 giờ (đó là chu kỳ tự quay, không phải quay quanh Mặt Trời)."
+      ],
+      "hints": [
+        "1 năm = 365 ngày. Năm nhuận (chia hết cho 4) có 366 ngày."
+      ]
+    },
+    "real_world_connection": "Năm 2024 là năm nhuận (chia hết cho 4), có thêm ngày 29 tháng 2.",
+    "formula": "T_{\\text{công chuyển}} \\approx 365,25 \\text{ ngày}"
+  },
+  {
+    "id": "phys7_earth_solar_012",
+    "grade": 7,
+    "chapter": "earth_solar_system",
+    "chapter_vn": "Trái Đất và Hệ Mặt Trời",
+    "topic": "seasons",
+    "topic_vn": "Các mùa",
+    "type": "explain",
+    "difficulty": "hard",
+    "question_text": "Em hãy giải thích tại sao về mùa hè, ban ngày ở bán cầu Bắc dài hơn ban đêm, còn vào mùa đông thì ngược lại.",
+    "options": null,
+    "correct_answer": "Do trục Trái Đất nghiêng 23,5°. Vào mùa hè, bán cầu Bắc nghiêng về Mặt Trời, diện tích được chiếu sáng lớn hơn diện tích bị che khuất, nên phần lớn quỹ đạo tự quay nằm trong vùng sáng → ngày dài hơn đêm. Vào mùa đông, bán cầu Bắc nghiêng xa Mặt Trời, diện tích bị che khuất lớn hơn → đêm dài hơn ngày.",
+    "explanation": {
+      "summary": "Trục nghiêng khiến bán cầu nào hướng Mặt Trời thì có diện tích chiếu sáng lớn hơn → ngày dài hơn. Nghiêng xa → diện tích tối lớn hơn → đêm dài hơn.",
+      "key_concept": "Trục nghiêng → phân bố ánh sáng không đều → ngày đêm dài ngắn khác nhau theo mùa."
+    },
+    "thinking_guide": {
+      "understand": "Tại sao ngày dài hơn đêm vào mùa hè và ngược lại vào mùa đông?",
+      "identify_knowledge": "Trục Trái Đất nghiêng → diện tích sáng/tối thay đổi theo mùa.",
+      "plan": "Phân tích vị trí trục nghiêng vào hè và đông.",
+      "steps": [
+        "Bước 1: Mùa hè: bán cầu Bắc nghiêng về Mặt Trời.",
+        "Bước 2: → Phần quỹ đạo tự quay trong vùng sáng lớn hơn vùng tối → ngày dài hơn đêm.",
+        "Bước 3: Mùa đông: bán cầu Bắc nghiêng xa → phần tối lớn hơn → đêm dài hơn ngày.",
+        "Bước 4: Xuân/thu phân: trục không nghiêng về phía nào → ngày = đêm ≈ 12 giờ."
+      ],
+      "verify": "Hà Nội mùa hè: Mặt Trời mọc ~5h30, lặn ~18h45 → ngày ~13h > đêm ~11h ✓.",
+      "extend": "Ở vòng Bắc Cực (66,5°N), mùa hè có ngày Mặt Trời không lặn (midnight sun).",
+      "common_traps": [
+        "Nghĩ do Trái Đất gần/xa Mặt Trời hơn. Khoảng cách thay đổi rất ít, không gây mùa."
+      ],
+      "hints": [
+        "Dùng quả địa cầu nghiêng + đèn pin: chiếu sáng → thấy bán cầu nào sáng nhiều hơn."
+      ]
+    },
+    "real_world_connection": "Tại thành phố Reykjavik (Iceland, 64°N), mùa hè gần như không có đêm — trời sáng suốt 24 giờ!",
+    "formula": ""
+  }
+]

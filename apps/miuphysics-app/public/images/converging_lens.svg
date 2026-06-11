@@ -1,0 +1,46 @@
+<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E1E2E" rx="8"/>
+  
+  <!-- Principal Axis -->
+  <line x1="20" y1="125" x2="480" y2="125" stroke="#7F849C" stroke-dasharray="5,5" stroke-width="2"/>
+  <text x="460" y="145" fill="#7F849C" font-size="12" font-family="Arial">x'</text>
+  <text x="30" y="145" fill="#7F849C" font-size="12" font-family="Arial">x</text>
+  
+  <!-- Lens (Converging) -->
+  <line x1="250" y1="30" x2="250" y2="220" stroke="#CBA6F7" stroke-width="3"/>
+  <!-- Top Arrow -->
+  <path d="M245 40 L250 30 L255 40" stroke="#CBA6F7" stroke-width="3" fill="none"/>
+  <!-- Bottom Arrow -->
+  <path d="M245 210 L250 220 L255 210" stroke="#CBA6F7" stroke-width="3" fill="none"/>
+  <text x="260" y="45" fill="#CBA6F7" font-size="12" font-family="Arial" font-weight="bold">L</text>
+  
+  <!-- Optical Center O -->
+  <circle cx="250" cy="125" r="4" fill="#CDD6F4"/>
+  <text x="255" y="140" fill="#CDD6F4" font-size="12" font-family="Arial" font-weight="bold">O</text>
+  
+  <!-- Focus F (Left) -->
+  <circle cx="150" cy="125" r="3" fill="#F9E2AF"/>
+  <text x="145" y="145" fill="#F9E2AF" font-size="12" font-family="Arial">F</text>
+  
+  <!-- Focus F' (Right) -->
+  <circle cx="350" cy="125" r="3" fill="#F9E2AF"/>
+  <text x="345" y="145" fill="#F9E2AF" font-size="12" font-family="Arial">F'</text>
+  
+  <!-- Object AB -->
+  <line x1="117" y1="125" x2="117" y2="85" stroke="#F38BA8" stroke-width="3"/>
+  <path d="M114 93 L117 85 L120 93" stroke="#F38BA8" stroke-width="2" fill="#F38BA8"/>
+  <text x="110" y="140" fill="#CDD6F4" font-size="12" font-family="Arial" font-weight="bold">A</text>
+  <text x="110" y="78" fill="#CDD6F4" font-size="12" font-family="Arial" font-weight="bold">B</text>
+  
+  <!-- Light Ray 1: Parallel then through F' -->
+  <path d="M117 85 L250 85 L350 125 L450 165" stroke="#A6E3A1" stroke-width="2" fill="none"/>
+  <!-- Light Ray 2: Through Optical Center O -->
+  <path d="M117 85 L250 125 L383 165 L450 185" stroke="#89B4FA" stroke-width="2" fill="none"/>
+  
+  <!-- Image A'B' (Real, Inverted) -->
+  <line x1="383" y1="125" x2="383" y2="205" stroke="#F38BA8" stroke-width="3"/>
+  <path d="M380 197 L383 205 L386 197" stroke="#F38BA8" stroke-width="2" fill="#F38BA8"/>
+  <text x="375" y="120" fill="#CDD6F4" font-size="12" font-family="Arial" font-weight="bold">A'</text>
+  <text x="375" y="220" fill="#CDD6F4" font-size="12" font-family="Arial" font-weight="bold">B'</text>
+</svg>

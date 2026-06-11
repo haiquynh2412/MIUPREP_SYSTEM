@@ -1,17 +1,44 @@
 import LearnerProfileCard from '../LearnerProfileCard';
+import type { IeltsTest } from '@miuprep/content';
+import type { ErrorNotebookEntry, ExamAttempt, LearnerProfile } from '@miuprep/db';
+import type { AIConfig, CredentialStore } from '@miuprep/ai';
+
+type DashboardCategory = 'all' | 'full_exam' | 'practice_bank' | 'topic_bank' | 'diagnostic';
+type DashboardTab = 'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room';
+type TestCategory = Exclude<DashboardCategory, 'all'>;
+
+interface TestConnectionResult {
+  success: boolean;
+  message: string;
+}
+
+interface Weakness {
+  questionType: string;
+  correct: number;
+  total: number;
+  accuracy: number;
+  status: 'proficient' | 'needs_improvement' | 'critical';
+}
+
+interface MicroSkill {
+  skillName: string;
+  description: string;
+  score: number;
+  status: 'proficient' | 'needs_improvement' | 'critical';
+}
 
 interface DashboardPanelProps {
-  availableTests: any[];
-  dashboardCategory: 'all' | 'full_exam' | 'practice_bank' | 'topic_bank' | 'diagnostic';
-  setDashboardCategory: (cat: any) => void;
-  categorizeTest: (test: any) => 'diagnostic' | 'topic_bank' | 'practice_bank' | 'full_exam';
-  setSelectedTestForMode: (test: any) => void;
+  availableTests: IeltsTest[];
+  dashboardCategory: DashboardCategory;
+  setDashboardCategory: (cat: DashboardCategory) => void;
+  categorizeTest: (test: IeltsTest) => TestCategory;
+  setSelectedTestForMode: (test: IeltsTest) => void;
   setShowModeSelectorModal: (show: boolean) => void;
-  attempts: any[];
-  handleReviewAttempt: (attempt: any) => void;
+  attempts: ExamAttempt[];
+  handleReviewAttempt: (attempt: ExamAttempt) => void;
   isAdmin: boolean;
-  aiConfig: any;
-  setAiConfig: (conf: any) => void;
+  aiConfig: AIConfig;
+  setAiConfig: (conf: AIConfig) => void;
   hasOpenAiKey: boolean;
   hasGeminiKey: boolean;
   openaiKeyInput: string;
@@ -20,17 +47,17 @@ interface DashboardPanelProps {
   setGeminiKeyInput: (val: string) => void;
   setHasOpenAiKey: (has: boolean) => void;
   setHasGeminiKey: (has: boolean) => void;
-  credentialStore: any;
+  credentialStore: CredentialStore;
   handleTestConnection: () => Promise<void>;
   isTestingConnection: boolean;
-  testConnectionResult: any;
+  testConnectionResult: TestConnectionResult | null;
   handleImportJson: (e: React.ChangeEvent<HTMLInputElement>) => void;
   importSuccessMsg: string | null;
-  activeAttempt: any;
-  resumeExam: (attempt: any) => void;
+  activeAttempt: ExamAttempt | null;
+  resumeExam: (attempt: ExamAttempt) => void;
   
   // Learner profile card props
-  learnerProfile: any;
+  learnerProfile: LearnerProfile | null;
   isEditingProfile: boolean;
   setIsEditingProfile: (val: boolean) => void;
   targetBandInput: number;
@@ -39,10 +66,10 @@ interface DashboardPanelProps {
   setExamDateInput: (val: string) => void;
   saveLearnerProfile: () => Promise<void>;
   getDaysRemaining: () => number | null;
-  getGlobalWeaknessAnalysis: () => any[];
-  getMicroSkillsAnalysis: () => any[];
-  setActiveTab: (tab: any) => void;
-  setReviewQueue: (val: any[]) => void;
+  getGlobalWeaknessAnalysis: () => Weakness[];
+  getMicroSkillsAnalysis: () => MicroSkill[];
+  setActiveTab: (tab: DashboardTab) => void;
+  setReviewQueue: (val: ErrorNotebookEntry[]) => void;
   setCurrentReviewIdx: (val: number) => void;
 }
 
@@ -158,7 +185,7 @@ export default function DashboardPanel({
               ].map(cat => (
                 <button
                   key={cat.id}
-                  onClick={() => setDashboardCategory(cat.id as any)}
+                  onClick={() => setDashboardCategory(cat.id as DashboardCategory)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all border outline-none cursor-pointer ${
                     dashboardCategory === cat.id
                       ? 'bg-emerald-600 border-transparent text-white shadow-sm'

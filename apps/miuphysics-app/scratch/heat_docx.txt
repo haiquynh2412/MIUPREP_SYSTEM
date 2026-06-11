@@ -1,0 +1,233 @@
+Phần I: NHIỆT HỌC
+I - CƠ SỞ LÝ THUYẾT:
+1/ Nguyên lý truyền nhiệt: 
+Nếu chỉ có hai vật trao đổi nhiệt thì:
+- Nhiệt tự truyền từ vật có nhiệt độ cao hơn sang vật có nhiệt độ thấp hơn.
+- Sự truyền nhiệt xảy ra cho đến khi nhiệt độ của hai vật bằng nhau thì dừng lại.
+-Nhiệt lượng của vật này tỏa ra bằng nhiệt lượng của vật khi thu vào.
+2/ Công thức nhiệt lượng:
+- Nhiệt lượng của một vật thu vào để nóng lên: Q = mc∆t (với ∆t = t2 - t1. Nhiệt độ cuối trừ nhiệt độ đầu)
+- Nhiệt lượng của một vật tỏa ra để lạnh đi: Q = mc∆t (với ∆t = t1 - t2. Nhiệt độ đầu trừ nhiệt độ cuối)
+- Nhiệt lượng tỏa ra và thu của các chất khi chuyển thể:
++ Sự nóng chảy - Đông đặc: Q = mλ (λ là nhiệt nóng chảy)
++ Sự hóa hơi - Ngưng tụ: Q = mL (L là nhiệt hóa hơi)
+- Nhiệt lượng tỏa ra khi nhiên liệu bị đốt cháy: 
+Q = mq (q năng suất tỏa nhiệt của nhiên liệu)
+- Nhiệt lượng tỏa ra trên dây dẫn khi có dòng điện chạy qua: 
+Q = I2Rt
+3/ Phương trình cân bằng nhiệt: 
+Qtỏa ra = Qthu vào
+4/ Hiệu suất của động cơ nhiệt: 
+H = 
+5/ Một số biểu thức liên quan:
+- Khối lượng riêng: D = 
+- Trọng lượng riêng: d = 
+- Biểu thức liên hệ giữa khối lượng và trọng lượng: P = 10m
+- Biểu thức liên hệ giữa khối lượng riêng  và trọng lượng riêng: d = 10D
+II - BÀI TẬP VẬN DỤNG
+Bài 1: Người ta thả một thỏi đồng 0,4kg ở nhiệt độ 800C vào 0,25kg nước ở nhiệt độ 180C. Hãy xác định nhiệt độ khi cân bằng nhiệt. Cho biết nhiệt dung riêng của đồng là 380J/kg.k của nước là 4200J/Kg.K.
+Hướng dẫn giải:
+- Nhiệt lượng do miếng đồng tỏa ra để nguội đi từ 800C xuống t0C:
+Q1 = m1.C1.(t1 - t) = 0,4. 380. (80 - t) (J)
+- Nhiệt lượng nước thu vào để nóng lên từ 180C đến t0C:
+Q2 = m2.C2.(t - t2) = 0,25. 4200. (t - 18) (J)
+Theo phương trình cân bằng nhiệt: 
+Q1 = Q2
+0,4. 380. (80 - t) = 0,25. 4200. (t - 18)
+t ≈ 260C
+Vậy nhiệt độ xảy ra cân bằng là 260C.
+Bài 2: Trộn lẫn rượu và nước người ta thu được hỗn hợp nặng 140g ở nhiệt độ 360C. Tính khối lượng của nước và khối lượng của rượu đã trộn. Biết rằng ban đầu rượu có nhiệt độ 190C và nước có nhiệt độ 1000C, cho biết nhiệt dung riêng của nước là 4200J/Kg.K, của rượu là 2500J/Kg.k.
+Hướng dẫn giải:
+-  Theo bài ra ta biết tổng khối lượng của nước và rượu là 140
+m1 + m2 = m   m1 = m - m2 (1)
+- Nhiệt lượng do nước tỏa ra: Q1 = m1. C1 (t1 - t)
+- Nhiệt lượng rượu thu vào: Q2 = m2. C2 (t - t2)
+- Theo PTCB nhiệt: Q1 = Q2
+m1. C1 (t1 - t) = m2. C2 (t - t2)
+m14200(100 - 36) = m22500 (36 - 19)
+268800 m1 = 42500 m2
+ (2)
+- Thay (1) vào (2) ta được:
+268800 (m - m2) = 42500 m2
+37632 - 268800 m2 = 42500 m2
+311300 m2 = 37632
+m2 = 0,12 (Kg)
+- Thay m2 vào pt (1)  ta được:
+(1) m1 = 0,14 - 0,12 = 0,02 (Kg)
+Vậy ta phải  pha trộn là 0,02Kg nước vào 0,12Kg. rượu để thu được hỗn hợp nặng 0,14Kg ở 360C.
+Bài 3: Người ta đổ m1(Kg) nước ở nhiệt độ 600C vào m2(Kg) nước đá ở nhiệt độ -50C. Khi có cân bằng nhiệt lượng nước thu được là 50Kg và có nhiệt độ là 250C . Tính khối lượng của nước đá và nước ban đầu. Cho nhiệt dung riêng của nước đá là 2100J/Kg.k. (Giải tương tự bài số 2)
+Bài 4: Người ta dẫn 0,2 Kg hơi nước ở nhiệt độ 1000C vào một bình chứa 1,5 Kg nước đang ở nhiệt độ 150C. Tính nhiệt độ cuối cùng của hỗn hợp và tổng khối lượng khi xảy ra cân bằng nhiệt.
+Hướng dẫn giải: 
+Nhiệt lượng tỏa ra khi 0,2 Kg hơi nước ở 1000C ngưng tụ thành nước ở 1000C
+Q1 = m1. L = 0,2 . 2,3.106 = 460000 (J)
+Nhiệt lượng tỏa ra khi 0,2Kg nước ở 1000C thành nước ở t0C
+Q2 = m1.C. (t1 - t) = 0,2. 4200 (100 - t)
+Nhiệt lượng thu vào khi 1,5Kg nước ở 150C thành nước ở t0C
+Q3 = m2.C. (t - t2) = 1,5. 4200 (t - 15)
+Áp dụng phương trình cân bằng nhiệt:
+Q1 + Q2 = Q3
+460000 + 0,2. 4200 (100 - t) = 1,5. 4200 (t - 15)
+6780t = 638500
+t ≈ 940C
+Tổng khối lượng khi xảy ra cân bằng nhiệt.
+m = m1 + m2 = 0,2 + 1,5 = 1,7(Kg)
+Bài 5: Có ba chất lỏng không tác dụng hóa học với nhau và được trộn lẫn vào nhau trong một nhiệt lượng kế. chúng có khối lượng lần lượt là m1=1kg, m2= 10kg, m3=5kg, có nhiệt dung riêng lần lượt là C1 = 2000J/Kg.K, C2 = 4000J/Kg.K, C3  = 2000J/Kg.K và có nhiệt độ là t1 = 60C, t2 = -400C, t3 = 600C.
+a/ Hãy xác định nhiệt độ của hỗn hợp khi xãy ra cân bằng.
+b/ Tính nhiệt lượng cần thiết để hỗn hợp được nóng lên thêm 60C. Biết rằng khi trao đổi nhiệt không có chất nào bị hóa hơi hay đông đặc.
+Hướng dẫn giải:
+a/ Giả sử rằng, thoạt đầu ta trộn hai chất có nhiệt độ thấp hơn với nhau ta thu được một hỗn hợp ở nhiệt độ t < t3 ta có pt cân bằng nhiệt:
+m1C1(t1 - t) = m2C2(t - t2)
+(1)
+Sau đó ta đem hỗn hgợp trên trôn với chất thứ 3 ta thu được hỗn hợp 3 chất ở nhiệt độ t' (t < t' < t3) ta có phương trình cân bằng nhiệt:
+(m1C1 + m2C2)(t' - t) = m3C3(t3 - t')(2)
+Từ (1) và (2) ta có:
+Thay số vào ta tính được t' ≈ -190C
+b/ Nhiệt lượng cần thiết để nâng nhiệt độ của hỗn hợp lên 60C:
+Q = (m1C1 + m2C2 + m3C3) (t4 - t') = 1300000(J)
+Bài 6: Một thỏi nước đá có khối lượng 200g ở -100C.
+a/ Tính nhiệt lượng cần cung cấp để nước đá biến thành hơi hoàn toàn ở 1000C.
+b/ Nếu bỏ thỏi nước đá trên vào một xô nước bằng nhôm ở 200C. Sau khi cân bằng nhiệt ta thấy trong xô còn lại một cục nước đá coa khối lượng 50g. tính lượng nước đã có trong xô lúc đầu. Biết xô có khối lượng 100g.
+Hướng dẫn giải:
+a/ Nhiệt lượng nước đá thu vào để tăng nhiệt độ từ -100C đến 00C
+Q1 = m1C1(t2 - t1) = 3600(J)
+Nhiệt lượng nước đá thu vào để nóng chảy hoàn toàn ở 00C
+Q2 = m1.λ = 68000 (J)
+Nhiệt lượng nước thu vào để tăng nhiệt độ từ 00C đến 1000C
+Q3 = m3C2(t3 - t2) = 84000(J)
+Nhiệt lượng nước thu vào để hóa hơi hoàn toàn ở 1000C
+Q4 = m1.L = 460000(J)
+Nhiệt lượng cần cung cấp trong suốt quá trình:
+Q = Q1 + Q2 + Q3 + Q4 = 615600(J)
+b/ Gọi m' là lượng nước đá đã tan: m' = 200 - 50 = 150g = 0,15Kg
+Do nước đá tan không hết nên nhiệt độ cuối cùng của hỗn hợp là 00C. 
+Nhiệt lượng mà m' (Kg) nước đá thu vào để nóng chảy:
+Q' = m'λ = 51000 (J)
+Nhiệt lượng do m'' Kg nước và xô nhôm tỏa ra để giảm xuống từ 200C đến 00C
+Q" = (m"C2 + mnhCnh)(20 - 0)
+Áp dụng phương trình cân bằng nhiệt:
+Q" = Q' + Q1 hay:
+(m"C2 + mnhCnh)(20 - 0) = 51000 + 3600
+m" = 0,629 (Kg)
+Bài 7: Khi thực hành trong phòng thí nghiệm, một học sinh cho một luồng hơi nước ở 1000C ngưng tụ trong một nhiệt lượng kếchứa 0,35kg nước ở 100C. Kết quả là nhiệt độ của nước tăng lên 420C và khối lượng nước trong nhhiệt kế tăng thêm 0,020kg. Hãy tính nhiệt hóa hơi của nước trong thí nghiệm này?
+Hướng dẫn giải:
+Nhiệt lượng mà 0,35kg nước thu vào:
+Q Thu vào = m.C.(t2 - t1) ≈ 46900(J)
+Nhiệt lượng mà 0,020Kg hơi nước ở 1000C ngưng tụ thành nước
+Q1 = m.L = 0,020L
+Nhiệt lượng mà 0,020Kg nước ở 1000C tỏa ra khi hạ xuống còn 420C
+Q 2 = m'.C.(t3 - t2) ≈ 4860(J)
+Theo phương trình cân bằng nhiệt:
+Q Thu vào = Q1 +  Q 2  hay:
+46900 = 0,020L + 4860
+L = 21.105 (J/Kg)
+Bài 8: Có hai bình cách nhiệt, bình thứ nhất chứa 2Kg nước ở 200C, bình thứ hai chứa 4Kg nước ở 600C. Người ta rót một ca nước từ bình 1 vào bình 2. Khi bình 2 đã cân bằng nhiệt thì người ta lại rót một ca nước từ bình 2 sang bình 1 để lượng nước trong hai bình như lúc đầu. Nhiệt độ ở bình 1 sau khi cân bằng là 21,950C. 
+a/ Xác định lượng nước đã rót ở mỗi lần và nhiệt độ cân bằng ở bình 2.
+b/ Nếu tiếp tục thực hiện lần thứ hai, tìm nhiệt độ cân bằng ở mỗi bình.
+Hướng dẫn giải:
+a/ Giả sử khi rót lượng nước m từ bình 1 sang bình 2, nhiệt độ cân bằng của bình 2 là t nên ta có phương trình cân bằng:
+m.(t - t1) = m2.(t2 - t) (1)
+Tương tự lần rót tiếp theo nhiệt độ cân bằng ở bình 1 là t' = 21,950C và lượng nước trong bình 1 lúc này chỉ còn (m1 - m) nên ta có phương trình cân bằng:
+m.(t - t') = (m1 - m).(t' - t1) (2)
+Từ (1) và (2) ta có pt sau:
+m2.(t2 - t) = m1.(t' - t1)
+(3)
+Thay (3) vào (2) tính toán ta rút phương trình sau:
+(4)
+Thay số vào (3) và (4) ta tìm được: t = 590C và m = 0,1 Kg.
+b/ Lúc này nhiệt độ của bình 1 và bình 2 lần lượt là 21,950C và 590C bây giờ ta thực hiện rót 0,1Kg nước từ bình 1 sang bình 2 thì ta có thể viết được phương trình sau:
+m.(T2 - t') = m2.(t - T2)
+Bây giờ ta tiếp tục rơt từ bình 2 sang bình 1 ta cũng dễ dàng viết được phương trình sau:
+m.(T1 - T2) = (m1 - m).(t - T1)
+Bài 9: Bếp điện có ghi 220V-800W được nối với hiệu điện thế 220V được dùng để đun sôi 2lít nước ở 200C. Biết hiệu suất của bếp H = 80% và nhiệt dung riêng của nước là 4200J/kg.K.
+a/ Tính thời gian đun sôi nước và điện năng tiêu thụ của bếp ra Kwh.
+b/ Biết cuộn dây có đường kính d = 0,2mm, điện trở suất được quấn trên một lõi bằng sứ cách điện hình trụ tròn có đường kính D = 2cm. Tính số vòng dây của bếp điện trên.
+Hướng dẫn giải:
+a/ Gọi Q là nhiệt lượng mà nước thu vào để nóng lên từ 200C đến 1000:
+Q = m.C.∆t
+Gọi Q' là nhiệt lượng do dòng điện tỏa ra trên dây đốt nóng
+Q' = R.I2.t = P. t
+Theo bài ra ta có: 
+Điện năng tiêu thụ của bếp:
+A = P. t = 233,33 (Wh) = 0,233 (Kwh)
+b/ Điện trở của dây: 
+ (1)
+Mặt khác:  (2)
+Từ (1) và (2) ta có:
+Bài 10: Cầu chì trong mạch điện có tiết diện S = 0,1mm2, ở nhiệt độ 270C. Biết rằng khi đoản mạch thì cường độ dòng điện qua dây chì là I = 10A. Hỏi sau bao lâu thì dây chì đứt? Bỏ qua sụ tỏa nhiệt ra môi trường xung quanh và sự thay đổi điện trở, kích thước dây chì theo nhiệt độ. cho biết nhiệt dung riêng, điện trỏe suất, khối lượng riêng, nhiệt nóng chảy và nhiệt độ nóng chảy của chì lần lượt là: C = 120J/kg.K; ; D = 11300kg/m3; ; tc=3270C.
+Hướng dẫn giải:
+Gọi Q là nhiệt lượng do dòng điện I tỏa ra trong thời gian t, ta có:
+Q = R.I2.t =  ( Với l là chiều dài dây chì)
+Gọi Q' là nhiệt lượng do dây chì thu vào để tăng nhiệt độ từ 270C đến nhiệt độ nóng chảy tc = 3270C và nóng chảy hoàn toàn ở nhiệt độ nóng chảy, ta có
+Q' = m.C.∆t + mλ = m(C.∆t + λ) = DlS(C.∆t + λ) với (m = D.V = DlS)
+ Do không có sự mất mát nhiệt nên:
+Q = Q' hay:  = DlS(C.∆t + λ)
+III - BÀI TẬP TỰ GIẢI
+Bài 1: Một nhiệt lượng kế bằng đồng có khối lượng 200g đựng 1,6 Kg nước ở 800C, người ta thả 1,6Kg  nước đá ở -100C vào nhiệt lượng kế.
+a/ Nước đá có tan hết không?
+b/ Nhiệt độ cuối cùng của nhiệt lượng kế là bao nhiêu? Cho biết nhiệt dung riêng của đồng 380J/kg.K; của nước đá là 2100J/kg.K; của nước là 4190J/kg.K; Nhiệt nóng chảy của nước đá là 336.103 J/Kg.
+Bài 2: Phải trộn bao nhiêu nước ở nhiệt độ 800C vào nước ở 200C để được 90Kg nước ở 600C. Cho biết nhiệt dung riêng của nước là 4200/kg.K.
+Bài 3: Người ta bỏ một cục nước đá có khối lượng 100g vào một nhiệt lượng kế bằng đồng có khối lượng 125g, thì nhiệt độ của nhiệt lượng kế và nước đá là -200C. Hỏi cần phải thêm vào nhiệt lượng kế bao nhiêu nước ở 200C để làm tan được một nửa lượng nước đá trên? Cho biết nhiệt dung riêng của đồng 380J/kg.K; của nước đá là 2100J/kg.K; của nước là 4200J/kg.K; Nhiệt nóng chảy của nước đá là 3,4.105 J/Kg.
+Bài 4: Có hai bình cách nhiệt, bình thứ nhất chứa 4lít nước ở 800C, bình thứ hai chứa 2lít nước ở 200C. Người ta rót một ca nước từ bình 1 vào bình 2. Khi bình 2 đã cân bằng nhiệt thì người ta lại rót một ca nước từ bình 2 sang bình 1 để lượng nước trong hai bình như lúc đầu. Nhiệt độ ở bình 1 sau khi cân bằng là 740C. Xác định lượng nước đã rót ở mỗi lần.
+Bài 5: Có hai bình cách nhiệt, bình A chứa 4kg nước ở 200C, bình B chứa 8kg nước ở 400C. Người ta rót một lượng nước có khối lượng m từ bình B sang bình A. Khi bình A đã cân bằng nhiệt thì người ta lại rót một lượng nước như lúc đầu từ bình A sang bình B. Nhiệt độ ở bình B sau khi cân bằng là 380C. Xác định lượng nước m đã rót và nhiệt độ cân bằng ở bình A.
+Bài 6: Bỏ 25g nước đá ở 00C vào một cái cốc chứa 0,5kg nước ở 400C. Hỏi nhiệt độ cuối cùng của cốc là bao nhiêu? Biết nhiệt dung riêng của nước là C = 4190J/Kg.K; Nhiệt nóng chảy của nước đá là 
+Bài 7: Trộn lẫn ba phần nước có khối lượng lần lượt là m1 = 50kg, m2 = 30kg, m3 = 20kg. có nhiệt độ lần lượt là t1 = 600C, t2 = 400C, t3 = 200C; Cho rằng m1 truyền nhiệt cho m2 và m3. Bỏ qua sự mất mát nhiệt, tín nhiệt độ của hỗn hợp. Biết nhiệt dung riêng của nước là 4200J/Kg.K. ( Giải tương tự bài số 5)
+Bài 8: Một phích nước nóng có nhiệt độ không đổi, một cái cốc và một nhiệt kế. Ban đầu cốc và nhiệt kế có nhiệt độ t = 250C. Người ta rót nước từ phích vào đầy cốc và thả nhiệt kế vào cốc, nhiệt kế chỉ t1 = 600C. Đổ nước cũ đi thì nhiệt độ của cốc và nhiệt kế là t' = 550C, lại rót từ phích vào đầy cốc, nhiệt kế chỉ t2 = 750C. Cho rằng thời gian từ lúc rót nước vào cốc đến lúc đọc nhiệt độ là rất nhỏ. Cho nhiệt dung riêng của nước là C, của cốc và nhiệt kế là C1. hỏi nhiệt độ của nước trong phích là bao nhiêu?
+Bài 9: Rót nước ở nhiệt độ 200C vào một nhiệt lượng kế. Thả trong nước một cục nước đá có khối lượng 0,5kg và ở nhiệt độ -150C. Hãy tính nhiệt độ của hỗn hợp sau khi cân bằng nhiệt. Biết khối lượng của nước rót vào bằng khối lượng của nước đá.
+Bài 10: Để xác định nhiệt hóa hơi của nước người ta thực hiện thí nghiệm như sau:
+Lấy 0,02kg hơi nước ở 1000C cho ngưng tụ trong ống nhiệt lượng kế chứa 0,35kg nước ở 100C. Nhiệt độ cuối cùng đo được là 420C. Hãy dựa vào các số liệu trên tính lại nhiệt hóa hơi của nước. 
+Bài 11: Người ta bỏ một cục sắt khối lượng m1 = 100g có nhiệt độ  t1 = 5270C vào một bình chứa m2 = 1kg nước ở nhiệt độ t2 = 200C. Hỏi đã có bao nhiêu gam nước kịp hóa hơi ở nhiệt độ 1000C, biết rằng nhiệt độ cuối cùng của hỗn hợp là t = 240C. Nhiệt dung riêng của sắt là 460J/kg.K, Nhiệt hóa hơi của sắt là L = 2,3.106 J/Kg.
+Bài 12: Một ôtô đi được quãng đường 100km với lực kéo trung bình là 700N. Hiệu suất của động cơ ôtô là 38%. Tính lượng xăng ôtô tiêu thụ. Biết năng suất tỏa nhiệt của xăng là 46.106 J/kg.
+Bài 13: Một ô tô chuyển động với vận tốc 36Km/h thì động cơ có công suất là 3220W. Hiệu suất của động cơ ôtô là 40%. Hỏi với một lít xăng xe đi được bao nhiêu mét? Cho khối lượng riêng của xăng là 700kg/m3 và năng suất tỏa nhiệt của xăng là 46.106 J/kg.
+Bài 14: Một ô tô chuyển động với vận tốc 54Km/h thì động cơ có công suất là 4500W. Hiệu suất của động cơ ôtô là 30%. Tính lượng xăng ôtô cần dùng để ô tô đi được 100 km. Biết năng suất tỏa nhiệt của xăng là 46.106 J/kg, khối lượng riêng của xăng là 700kg/m3.
+Bài 15: Một ấm nhôm có khối lượng 250g chứa 1,5 lít nước ở 200C. 
+a. Tính nhiệt lượng cần thiết để đun sôi ấm nước trên.
+b. Người ta sử dung một bếp dầu để đun ấm, biết hiệu suất của bếp khi đun nước là 30%. Tính lượng dầu cần dùng để đun sôi ấm nước.
+Biết nhiệt dung riêng của nước là 4200J/kg.K, của nhôm là 880J/kg.K và năng suất tỏa nhiệt của dầu là 44.106 J/kg.
+Bài 16: Bỏ một quả cầu bằng đồng thau có khối lượng 1kg được đun nóng đến 1000C vào trong một cái thùng bằng sắt có khối lượng 500g chứa 2 lít nước ở nhiệt độ 200C. Tính nhiệt độ cuối cùng của nước. Biết nhiệt dung riêng của nước là 4200J/kg.K, của đồng thau là 380J/kg.K và của sắt là 460J/kg.K.
+Bài 17: Người ta vớt một cục sắt đang ngâm trong nước sôi rồi thả vào một ly nước ở nhiệt độ 200C. Biết khối lượng của cục sắt bằng ba lần khối lượng của nước chứa trong ly. Tính nhiệt độ của nước sau khi cân bằng. Bỏ qua sự mất mát nhiệt do ly hấp thụ và tỏa ra môi trường xung quanh.
+Bài 18: Đưa 5kg hơi nước ở nhiệt độ 1000C vào lò dùng hơi nóng, Khi hơi ngung tụ hoàn toàn thành nước thì lò đã nhận được một lượng nhiệt là 12340kJ. Tính nhiệt độ của nước từ lò đi ra. Biết nhiệt hóa hơi của nước là 2,3.106J/Kg, nhiệt dung riêng của nước là 4200J/Kg.K.
+Bài 19: Một ấm điện bằng nhôm có khối lượng 0,4kg chứa 1,5kg nước ở 200C. Muốn đun sôi nược nước đó trong 15 phút thì ấm phải có công suất là bao nhiêu? Biết rằng nhiệt dung riêng của nước là 4200J/kg.K. Nhiệt dung riêng của nhôm là 880J/kg.K và 20% nhiệt lượng tỏa ra môi trường xung quanh.
+Bài 20: Một nhiệt lượng kế bằng nhôm có khối lượng 200g chứa 400g nước ở nhiệt độ 200C.
+a/ Đổ thêm vào bình một lượng nước m ở nhiệt độ 50C. Khi cân bằng nhiệt thì nhiệt độ của nước trong bình là 100C. Tính khối lượng m.
+b/ Sau đó người ta thả vào bình một khối nước đá có khối lượng m3 ở nhiệt  độ -50C. Khi cân bằng nhiệt thì thấy trong bình còn lại 100g nước đá. Tính khối lượng m3 của nước đá.
+Bài 21: Tính hiệu suất của động cơ ôtô, biết rằng khi ô tô chuyển động với vận tốc 72Km/h thì động cơ có công suất là 30kW và tiêu thụ 12lit xăng trên quãng đường 80km. Cho khối lượng riêng của xăng là 0,7kg/dm3 và năng suất tỏa nhiệt của xăng là 46.106 J/kg.
+Bài 22:  Một máy bơm khi tiêu thụ 9Kg dầu thì đưa được 750m3 nước lên cao 10,5m. Tính hiệu suất của máy bơm. Biết năng suất tỏa nhiệt của dầu là 44.106J/Kg.
+Bài 23: Có một số chai sữa hoàn toàn giống nhau, đều đang ở nhiệt độ . Người ta thả từng chai lần lượt vào một bình cách nhiệt chứa nước, sau khi cân bằng nhiệt thì lấy ra rồi thả chai khác vào. Nhiệt độ nước ban đầu trong bình là t0 = 360C, chai thứ nhất khi lấy ra có nhiệt độ t1 = 330C, chai thứ hai khi lấy ra có nhiệt độ t2 = 30,50C. Bỏ qua sự hao phí nhiệt.
+a. Tìm nhiệt độ tx.
+b. Đến chai thứ bao nhiêu thì khi lấy ra nhiệt độ nước trong bình bắt đầu nhỏ hơn 260C.
+Bài 24: Dẫn m1= 0,4 kg hơi nước ở nhiệt độ t1= 1000C từ một lò hơi vào một bình chứa m2= 0,8 kg nước đá ở t0= 00C. Hỏi khi có cân bằng nhiệt, khối lượng và nhiệt độ nước ở trong bình khi đó là bao nhiêu? Cho biết nhiệt dung riêng của nước là C = 4200 J/kg.độ; nhiệt hoá hơi của nước là L = 2,3.106 J/kg và nhiệt nóng chảy của nước đá là λ = 3,4.105 J/kg; (Bỏ qua sự hấp thụ nhiệt của bình chứa).
+Bài 25: Một bếp dầu đun sôi 1 lít nước đựng trong ấm bằng nhôm khối lượng  m2 = 300g thì sau thời gian t1 = 10 phút nước sôi .Nếu dùng bếp trên để đun 2 lít nước trong cùng điều kiện thì sau bao lâu nước sôi ?(Biết nhiệt dung riêng của nước và nhôm lần lượt là c1 = 4200J/kg.K ; c2 = 880J/kg.K .Biết nhiệt do bếp dầu cung cấp một cách đều đặn.
+Bài 26: Một nhiệt lượng kế đựng 2kg nước ở nhiệt độ 150C. Cho một khối nước đá ở nhiệt độ -100C  vào nhiệt lượng kế. Sau khi đạt cân bằng nhiệt người ta tiếp tục cung cấp cho nhiệt lượng kế một nhiệt lượng  Q= 158kJ thì nhiệt độ của   nhiệt lượng kế đạt 100C. Cần cung cấp thêm nhiệt lượng  bao nhiêu để nước trong  nhiệt lượng kế bắt đầu sôi? Bỏ qua sự truyền nhiệt cho nhiệt lượng kế và môi trường .Cho nhiệt dung riêng của nước Cn=4200J/kg.K, nhiệt dung riêng của nước đá: Cnđ =1800J/kg.K;Nhiệt nóng chảy của nước đá :  nđ = 34.104 J/kg.
+Bài 27: Người ta đổ một lượng nước sôi (1000C) vào một thùng đã chứa nước ở nhiệt độ của phòng là 25oC thì thấy khi cân bằng nhiệt, nhiệt độ của nước trong thùng là 70oC. Nếu chỉ đổ lượng nước sôi nói trên vào thùng này nhưng ban đầu không chứa gì thì nhiệt độ của nước khi cân bằng là bao nhiêu? Biết rằng lượng nước sôi gấp hai lần lượng nước nguội. Bỏ qua sự trao đổi nhiệt với môi trường. 
+Bài 28: Có 2 bình cách nhiệt. Bình thứ nhất chứa 2 kg nước ở nhiệt độ ban đầu là 500C. Bình thứ hai chứa 1kg nước ở nhiệt độ ban đầu 300C. Một người rót một ít nước từ bình thứ nhất vào bình thứ hai. Sau khi bình hai cân bằng nhiệt, người đó lại rót nước từ bình hai trở lại bình thứ nhất sao cho lượng nước ở mỗi bình giống như lúc đầu. Sau khi cân bằng nhiệt, nhiệt độ ở bình thứ nhất là 480C. Tính nhiệt độ cân bằng ở bình thứ hai và lượng nước đã rót từ bình nọ sang bình kia. Bỏ qua sự trao đổi nhiệt với môi trường bên ngoài trong quá trình rót nước từ bình nọ sang bình kia.
+Bài 29: Một nhiệt lượng kế bằng nhôm có khối lượng m (kg) ở nhiệt độ t1 = 230C, cho vào nhiệt lượng kế một khối lượng m (kg) nước ở nhiệt độ t2. Sau khi hệ cân bằng nhiệt, nhiệt độ của nước giảm đi 9 0C. Tiếp  tục  đổ thêm vào nhiệt lượng kế 2m (kg) một chất lỏng  khác (không tác dụng hóa học với nước)  ở  nhiệt  độ t3 = 45 0C, khi có  cân bằng  nhiệt lần hai, nhiệt độ của hệ lại giảm 10 0C so với nhiệt độ cân bằng nhiệt lần thứ nhất. 
+Tìm nhiệt dung riêng của chất lỏng đã đổ thêm vào nhiệt lượng kế, biết  nhiệt  dung  riêng  của nhôm và của nước lần lượt là c1 = 900 J/kg.K và c2 = 4200 J/kg.K. Bỏ qua mọi mất mát nhiệt khác
+Bài 30: Có ba chai sữa giống nhau, đều có nhiệt độ t0= 200C. Người ta thả chai sữa thứ nhất vào phích đựng nước ở nhiệt độ t = 420C. Khi đạt cân bằng nhiệt, chai sữa thứ nhất nóng tới nhiệt độ t1=380C, lấy chai sữa này ra và thả vào phích nước đó một chai sữa thứ hai. Đợi đến khi cân bằng nhiệt xảy ra, người ta lấy chai sữa ra rồi tiếp tục thả chai sữa thứ ba vào. Hỏi ở trạng thái cân bằng nhiệt chai sữa thứ ba này có nhiệt độ là bao nhiêu? Giả thiết không có sự mất mát năng lượng nhiệt ra môi trường xung quanh.    
+Bài 31: Một nhiệt lượng kế ban đầu không chứa gì, có nhiệt độ t0. Đổ vào nhiệt lượng kế một ca nước nóng thì thấy nhiệt độ của nhiệt lượng kế tăng thêm 50C. Lần thứ hai, đổ thêm một ca nước nóng như trên vào thì thấy nhiệt độ của nhiệt lượng kế tăng thêm 30C nữa. Hỏi nếu lần thứ ba đổ thêm vào cùng một lúc 5 ca nước nóng nói trên thì nhiệt độ của nhiệt lượng kế tăng thêm bao nhiêu độ nữa?
+Bài 32: Người ta đặt một viên bi đặc bằng sắt hình cầu bán kính R = 6cm đã được nung nóng tới nhiệt độ  lên mặt một khối nước đá rất lớn ở . Hỏi viên bi chui vào khối nước đá đến độ sâu bao nhiêu? Bỏ qua sự dẫn nhiệt của nước đá và độ nóng lên của đá đã tan. Cho khối lượng riêng của sắt là D = 7800kg/m3, khối lượng riêng của nước đá là D0 = 915kg/m3, nhiệt dung riêng của sắt là C = 460J/kg.K, nhiệt nóng chảy của nước đá ( tức là nhiệt lượng mà 1kg nước đá ở  cần thu vào để nóng chảy hoàn toàn thành nước ở nhiệt độ ấy) là = 3,4.105J/kg. Thể tích hình cầu được tính theo công thức  với R là bán kính.
+Bài 33: Trong hai bình cách nhiệt có chứa hai chất lỏng khác nhau ở hai nhiệt độ ban đầu khác nhau. Ngời ta dùng một nhiệt kế lần lợt nhúng đi nhúng lại vào bình 1 rồi bình 2. Chỉ số của nhiệt kế lần lợt là 400C; 80C; 390C; 9,50C. 
+a. Xét lần nhúng thứ hai vào bình 1 để lập biểu thức liên hệ giữa nhiệt dung q của nhiệt kế và nhiệt dung q1 của bình 1.
+b. Đến lần nhúng tiếp theo ( lần thứ 3 vào bình 1) nhiệt kế chỉ bao nhiêu ?
+c. Sau một số rất lớn lần nhúng nh vậy, nhiệt kế sẽ chỉ bao nhiêu .
+Bài 34: Một chậu nhôm khối lượng 0,5kg đựng 2kg nước ở 200C
+a) Thả vào chậu nhôm một thỏi đồng có khối lượng 200g lấy ở lò ra. Nước nóng đến 21,20C. Tìm nhiệt độ của bếp lò? Biết nhiệt dung riêng của nhôm, nước và đồng lần lượt là:  c1= 880J/kg.K , c2= 4200J/kg.K , c3= 380J/kg.K . Bỏ qua sự toả nhiệt ra môi trường
+b) Thực ra trong trường hợp này, nhiệt lượng toả ra môi trường là 10% nhiệt lượng cung cấp cho chậu nước. Tìm nhiệt độ thực sự của bếp lò.
+c) Nếu tiếp tục bỏ vào chậu nước một thỏi nước đá có khối lượng 100g ở 00C. Nước đá có tan hết không? Tìm nhiệt độ cuối cùng của hệ thống hoặc lượng nước đá còn sót lại nếu tan không hết? Biết nhiệt nóng chảy của nước đá là  = 3,4.105J/kg
+Bài 35: Một học sinh dùng một  nhiệt lượng kế bằng đồng có khối lượng M = 0,2 kg để pha m = 0,3 kg nước nhằm đạt nhiệt độ cuối cùng t = 15oC. Học sinh đó rót vào nhiệt lượng kế m1 gam nước ở t1= 32oC  và thả vào đó m2 gam nước đá ở t2= - 6oC.
+a. Xác định m1, m2. 
+b. Khi tính toán học sinh không chú ý rằng trong khi nước đá tan, mặt ngoài của nhiệt lượng kế sẽ có một ít nước bám vào, thành thử nhiệt độ cuối cùng của nước là 17,2oC. Hãy giải thích xem sai lầm của học sinh ở đâu và tính khối lượng nước bám vào mặt ngoài của nhiệt lượng kế. Biết NDR của đồng, nước và nước đá tương ứng là: C = 400J/kgK; C1= 4200J/kgK; C2= 2100J/kgK. Nhiệt nóng chảy của nước đá là λ = 3,35.105J/kg. Nhiệt hóa hơi của nước ở 17,2oC là L = 2,46.106J/kg.
+Bài 36: Một nhiệt lượng kế khối lượng m1 = 100g, chứa m2 = 500g nước cùng ở nhiệt độ t1= 150C. Người ta thả vào đó m = 150g hỗn hợp bột nhôm và thiếc được nung nóng tới t2 = 1000C. Nhiệt độ khi cân bằng nhiệt là t = 170C. Tính khối lượng nhôm và thiếc có trong hỗn hợp. Nhiệt dung riêng của chất làm nhiệt lượng kế, của nước, nhôm, thiếc lần lượt là : C1 = 460J/kg.K ; C2 = 4200J/kg.K ; C3 = 900J/kg.K ; C4 =230J/kg.K.
+Bài 37: Một thỏi kim loại có khối lượng 600g, chìm trong nước đang sôi. người ta vớt nó lên và thả vào trong một bình chứa 0,33 lít nước ở nhiệt độ 300C. Nhiệt độ cuối cùng của nước và thỏi kim loại là 400C. Thỏi đó là kim loại gì?
+Cho biết nhiệt dung riêng của nước là 4200J/kg.K và nhiệt lượng do bình thu được là không đáng kể. 
+Bài 38: Thả một cục nước đá có mẩu thuỷ tinh bị đóng băng trong đó vào một bình hình trụ chứa nước. Khi đó mực nước trong bình dâng lên một đoạn là h = 11mm. Cục nước đá nổi nhưng ngập hoàn toàn trong nước. Hỏi khi cục nước đá tan hết thì mực nước trong bình thay đổi thế nào?. Cho khối lượng riêng của nước là Dn = 1g/cm3. Của nước đá là Dđ = 0,9g/cm3. và của thuỷ tinh là Dt = 2g/cm3.
+Bài 39: Một lò sưởi giữ cho phòng ở nhiệt độ 200C khi nhiệt độ ngoài trời là 50C. Nếu nhiệt độ ngoài trời hạ xuống tới – 50C thì phải dùng thêm một lò sưởi nữa có công suất 0,8KW mới duy trì nhiệt độ phòng như trên. Tìm công suất lò sưởi được đặt trong phòng lúc đầu?.
+Bài 40: Muốn có 100 lít nước ở nhiệt độ 350C thì phải đổ bao nhiêu lít nước đang sôi vào bao nhiêu lít nước ở nhiệt độ 150C. Lấy nhiệt dung riêng của nước là 4190J/kg.K ?
+Bài 41: Một thỏi nhôm và một thỏi sắt có trọng lượng như nhau. Treo các thỏi nhôm và sắt vào 
+hai phía của một cân treo. Để cân thăng bằng rồi nhúng ngập cả hai thỏi đồng thời vào hai bình đựng nước. Cân bây giờ còn thăng bằng không ? Tại sao? Biết trọng lượng riêng của nhôm là 27 000N/m3 và của sắt là 78 000N/m3.
+Bài 42:  Một thác nước cao 100m và chênh lệch nhiệt độ của nước ở đỉnh thác và chân thác là 0,240C. Giả thiết rằng khi chạm vào chân thác, toàn bộ động năng của nước chuyển thành nhiệt lượng truyền cho nước. Hãy tính nhiệt dung riêng của nước.
+Bài 43: một ôtô có khối lượng 1200kg khi chạy trên đường nằm ngang với vận tốc v = 72Km/h thì tiêu hao 80g xăng cho S = 1Km. Hiệu suất của động cơ là H = 28%. Hỏi với những dữ kiện như vậy thì ôtô có thể đạt vận tốc bao nhiêu khi nó leo lên một cái dốc cứ mỗi đoạn đường dài 100m lại cao thêm 3,5m. Biết năng suất tỏa nhiệt của xăng là 45.106J/Kg.
+Bài 44: Tìm lương xăng tiêu hao trên 1km của một ôtô chuyển động đều với vận tốc 60Km/h. Cho biết công suất của ôtô là 17158W, hiệu suất của động cơ là 30% và năng suất tỏa nhiệt của xăng là 45.106J/Kg.
+Bài 45: Một nguồn nhiệt có công suất là 500W cung cấp nhiệt lượng cho một nồi áp suất đựng nước có van an toàn được điều chỉnh sao cho hơi nước thoát ra là 10,4g/phút. Nếu nhiệt lượng được cung cấp với công suất 700W thì hơi nước thoát ra là 15,6g/phút. Hãy giải thích hiện tượng và suy ra:
+a/ Nhiệt hóa hơi của nước tại nhiệt độ của nồi.
+b/ Công suất bị mất mát vì những nguyên nhân khác ngoài nguyên nhân hóa hơi.
+Bài 46: Người ta dùng bếp điện có công suất không đổi để duun nước. người ta nhận thấy rằng phải mất 15phút thì nước từ 00C sẽ nóng lên tới điểm sôi, sau đó phải mất 1h20phút để biến hết nước ở điểm sôi thành hơi nước. Tìm nhiệt hóa hơi của nước biết nhiệt dung riêng của nước là 4200J/Kg.k

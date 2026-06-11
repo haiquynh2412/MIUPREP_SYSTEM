@@ -1,9 +1,13 @@
 import type {
   ContentProgramId,
   EnglishExamTest,
-  EnglishLearningCatalog,
   QuestionItem,
-} from '@miuprep/content';
+} from '@miuprep/content/src/standard';
+import {
+  buildEnglishLearningCatalog,
+  selectEnglishPracticeItems,
+  type EnglishLearningCatalog,
+} from '@miuprep/content/src/english-learning';
 import type { TemplatePracticeTemplate } from './templatePractice';
 
 export type EnglishItemBankPracticeProgramId = 'ielts' | 'cae' | 'cpe';
@@ -64,10 +68,14 @@ export interface EnglishItemBankPracticeState {
 const PROGRAM_IDS: EnglishItemBankPracticeProgramId[] = ['ielts', 'cae', 'cpe'];
 const CHOICE_KEYS: EnglishItemBankPracticeChoiceKey[] = ['A', 'B', 'C', 'D'];
 
-type EnglishContentModule = typeof import('@miuprep/content');
+type IeltsSeedModule = typeof import('@miuprep/content/src/mocks/ielts-seed-tests');
+type CpeSeedModule = typeof import('@miuprep/content/src/mocks/cpe-seed-tests');
+type CaeSeedModule = typeof import('@miuprep/content/src/mocks/cae-seed-tests');
 
 const catalogCache = new Map<EnglishItemBankPracticeProgramId, EnglishLearningCatalog>();
-let englishContentModulePromise: Promise<EnglishContentModule> | null = null;
+let ieltsSeedModulePromise: Promise<IeltsSeedModule> | null = null;
+let cpeSeedModulePromise: Promise<CpeSeedModule> | null = null;
+let caeSeedModulePromise: Promise<CaeSeedModule> | null = null;
 
 export function isEnglishItemBankProgramId(value: string): value is EnglishItemBankPracticeProgramId {
   return PROGRAM_IDS.includes(value as EnglishItemBankPracticeProgramId);
@@ -80,11 +88,9 @@ export async function createEnglishItemBankPracticeState(input: {
   limit?: number;
   now?: string;
 }): Promise<EnglishItemBankPracticeState | null> {
-  const contentModule = await loadEnglishContentModule();
-  const catalog = await getEnglishCatalog(input.programId, contentModule);
+  const catalog = await getEnglishCatalog(input.programId);
   const limit = Math.max(1, Number(input.limit || 6));
   const selectedItems = selectScorablePracticeItems({
-    contentModule,
     catalog,
     programId: input.programId,
     template: input.template,
@@ -173,7 +179,7 @@ export function getCurrentEnglishItemBankPracticeQuestion(state: EnglishItemBank
 }
 
 export async function getEnglishItemBankPracticeCatalogCoverage(programId: EnglishItemBankPracticeProgramId): Promise<EnglishItemBankPracticeCoverage> {
-  const catalog = await getEnglishCatalog(programId, await loadEnglishContentModule());
+  const catalog = await getEnglishCatalog(programId);
   return {
     readyQuestions: catalog.coverage.readyQuestions,
     blockedQuestions: catalog.coverage.blockedQuestions,
@@ -184,18 +190,32 @@ export async function getEnglishItemBankPracticeCatalogCoverage(programId: Engli
   };
 }
 
-async function loadEnglishContentModule(): Promise<EnglishContentModule> {
-  if (!englishContentModulePromise) {
-    englishContentModulePromise = import('@miuprep/content');
+function loadIeltsSeedModule(): Promise<IeltsSeedModule> {
+  if (!ieltsSeedModulePromise) {
+    ieltsSeedModulePromise = import('@miuprep/content/src/mocks/ielts-seed-tests');
   }
-  return englishContentModulePromise;
+  return ieltsSeedModulePromise;
 }
 
-async function getEnglishCatalog(programId: EnglishItemBankPracticeProgramId, contentModule: EnglishContentModule): Promise<EnglishLearningCatalog> {
+function loadCpeSeedModule(): Promise<CpeSeedModule> {
+  if (!cpeSeedModulePromise) {
+    cpeSeedModulePromise = import('@miuprep/content/src/mocks/cpe-seed-tests');
+  }
+  return cpeSeedModulePromise;
+}
+
+function loadCaeSeedModule(): Promise<CaeSeedModule> {
+  if (!caeSeedModulePromise) {
+    caeSeedModulePromise = import('@miuprep/content/src/mocks/cae-seed-tests');
+  }
+  return caeSeedModulePromise;
+}
+
+async function getEnglishCatalog(programId: EnglishItemBankPracticeProgramId): Promise<EnglishLearningCatalog> {
   const cached = catalogCache.get(programId);
   if (cached) return cached;
 
-  const catalog = contentModule.buildEnglishLearningCatalog(getEnglishExamTests(contentModule), {
+  const catalog = buildEnglishLearningCatalog(await loadEnglishExamTests(programId), {
     programIds: [programId],
     displayModes: ['topic', 'both', 'test'],
   });
@@ -203,27 +223,27 @@ async function getEnglishCatalog(programId: EnglishItemBankPracticeProgramId, co
   return catalog;
 }
 
-function getEnglishExamTests(contentModule: EnglishContentModule): EnglishExamTest[] {
-  return Object.values(contentModule)
-    .filter(isEnglishExamTest)
-    .filter((test) => isEnglishItemBankProgramId(String(test.exam || '').toLowerCase()))
-    .sort((left, right) => `${left.exam}.${left.id}`.localeCompare(`${right.exam}.${right.id}`));
-}
-
-function isEnglishExamTest(value: unknown): value is EnglishExamTest {
-  const test = value as EnglishExamTest;
-  return Boolean(test && typeof test === 'object' && typeof test.id === 'string' && Array.isArray(test.sections));
+async function loadEnglishExamTests(programId: EnglishItemBankPracticeProgramId): Promise<EnglishExamTest[]> {
+  if (programId === 'ielts') {
+    const { IELTS_SEED_TESTS } = await loadIeltsSeedModule();
+    return IELTS_SEED_TESTS;
+  }
+  if (programId === 'cpe') {
+    const { loadCpeSeedTests } = await loadCpeSeedModule();
+    return loadCpeSeedTests();
+  }
+  const { loadCaeSeedTests } = await loadCaeSeedModule();
+  return loadCaeSeedTests();
 }
 
 function selectScorablePracticeItems(input: {
-  contentModule: EnglishContentModule;
   catalog: EnglishLearningCatalog;
   programId: EnglishItemBankPracticeProgramId;
   template: TemplatePracticeTemplate;
   attemptedItemIds: string[];
   limit: number;
 }): QuestionItem[] {
-  const focused = input.contentModule.selectEnglishPracticeItems(input.catalog, {
+  const focused = selectEnglishPracticeItems(input.catalog, {
     programId: input.programId as ContentProgramId,
     conceptIds: input.template.conceptIds,
     skillIds: input.template.skillIds,
@@ -235,7 +255,7 @@ function selectScorablePracticeItems(input: {
 
   const selected = [...focused];
   const selectedIds = new Set(selected.map((item) => item.id));
-  const fallback = input.contentModule.selectEnglishPracticeItems(input.catalog, {
+  const fallback = selectEnglishPracticeItems(input.catalog, {
     programId: input.programId as ContentProgramId,
     attemptedItemIds: [...input.attemptedItemIds, ...selectedIds],
     limit: input.limit * 8,

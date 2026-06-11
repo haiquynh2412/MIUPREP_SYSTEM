@@ -54,6 +54,36 @@ const mastery = computeMastery(state);
 assert(mastery.some((row) => row.id === "math.solve_quadratic_by_factor"), "Skill mastery row should be created.");
 assert(mastery.every((row) => row.attempts >= 3), "Concept and skill rows should aggregate all attempts.");
 
+let stuckHardState = emptyStudentModel("stuck-hard-learner", ["vn_math_6_9"]);
+for (let index = 0; index < 5; index += 1) {
+  stuckHardState = recordAttempt(stuckHardState, {
+    ...baseAttempt,
+    itemId: `stuck-hard-${index + 1}`,
+    correct: false,
+    difficulty: "hard",
+    answeredAt: `2026-01-${String(index + 1).padStart(2, "0")}T02:00:00.000Z`,
+  }).state;
+}
+const stuckHardMastery = computeMastery(stuckHardState);
+assert(stuckHardMastery.some((row) => row.consecutiveFailures === 5 && row.lastAttemptDifficulty === "hard"), "Mastery should expose consecutive failure streaks.");
+const stuckHardRecommendation = recommendNextAction(stuckHardState, { diagnosticMinAttempts: 1 });
+assert(stuckHardRecommendation.reason === "consecutive_failures_5", "Five consecutive hard misses should trigger rerouting before normal repair.");
+assert(stuckHardRecommendation.difficulty === "medium", "Hard stuck learners should be rerouted to medium practice.");
+
+let stuckEasyState = emptyStudentModel("stuck-easy-learner", ["vn_math_6_9"]);
+for (let index = 0; index < 5; index += 1) {
+  stuckEasyState = recordAttempt(stuckEasyState, {
+    ...baseAttempt,
+    itemId: `stuck-easy-${index + 1}`,
+    correct: false,
+    difficulty: "easy",
+    answeredAt: `2026-01-${String(index + 1).padStart(2, "0")}T03:00:00.000Z`,
+  }).state;
+}
+const stuckEasyRecommendation = recommendNextAction(stuckEasyState, { diagnosticMinAttempts: 1 });
+assert(stuckEasyRecommendation.reason === "consecutive_failures_prerequisite", "Easy-level stuck learners should be routed back to prerequisite review.");
+assert(stuckEasyRecommendation.kind === "review", "Easy-level rerouting should avoid assigning more practice before reteaching.");
+
 const learningPath = buildLearningPath(
   mastery,
   [
@@ -190,6 +220,19 @@ const hardLapsedRetained = scheduleErrorNotebookReview(
 );
 assert(easyRetained.intervalDays > hardLapsedRetained.intervalDays, "SRS tuning should shorten hard/recurrent items relative to easy retained items.");
 assert(hardLapsedRetained.srsReason?.includes("lapse count 2"), "SRS reason should expose recurrence pressure.");
+
+const noMisconceptionRetained = scheduleErrorNotebookReview(
+  { ...notebookEntry!, difficulty: "medium", repetitions: 2, intervalDays: 6, lapseCount: 0, misconceptionIds: [] },
+  5,
+  "2026-01-08T00:00:00.000Z",
+);
+const misconceptionRetained = scheduleErrorNotebookReview(
+  { ...notebookEntry!, difficulty: "medium", repetitions: 2, intervalDays: 6, lapseCount: 0, misconceptionIds: ["mis.eng.grammar_role_mismatch"] },
+  5,
+  "2026-01-08T00:00:00.000Z",
+);
+assert(misconceptionRetained.intervalDays < noMisconceptionRetained.intervalDays, "Misconception-tagged reviews should return sooner than ordinary retained reviews.");
+assert(misconceptionRetained.srsReason?.includes("misconception signals 1"), "SRS reason should expose misconception pressure.");
 
 const calibrationAttempts = [
   ...Array.from({ length: 5 }, (_, index) => makeAttempt({
