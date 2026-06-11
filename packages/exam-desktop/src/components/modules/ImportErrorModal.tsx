@@ -1,4 +1,5 @@
 import type { ValidationError } from '@miuprep/content';
+import { useTrackConfig } from '../../track-config';
 
 interface ImportErrorModalProps {
   importErrors: ValidationError[];
@@ -9,6 +10,7 @@ export default function ImportErrorModal({
   importErrors,
   onClose,
 }: ImportErrorModalProps) {
+  const track = useTrackConfig();
   return (
     <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
       <div className="bg-white border border-slate-200 rounded-xl shadow-2xl max-w-lg w-full overflow-hidden flex flex-col max-h-[80vh]">
@@ -28,7 +30,7 @@ export default function ImportErrorModal({
         
         <div className="p-6 overflow-y-auto flex flex-col gap-4">
           <p className="text-sm text-slate-600 m-0 leading-normal">
-            The imported JSON file did not pass the standard CPE-style schema validation rules. Please review and correct the following errors before re-importing:
+            The imported JSON file did not pass the standard {track.label}-style schema validation rules. Please review and correct the following errors before re-importing:
           </p>
           
           <div className="flex flex-col gap-2">

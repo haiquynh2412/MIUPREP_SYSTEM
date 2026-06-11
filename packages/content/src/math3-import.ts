@@ -257,8 +257,39 @@ function normalizeExtractedText(text: string): string {
 }
 
 function normalizePrompt(text: string): string {
-  return String(text || '').replace(/\s+/g, ' ').trim();
+  const cleanSpace = String(text || '').replace(/\s+/g, ' ').trim();
+  return cleanupVietnameseSpelling(cleanSpace);
 }
+
+function cleanupVietnameseSpelling(text: string): string {
+  if (!text) return '';
+  return text
+    .replace(/Baøi/g, 'Bài')
+    .replace(/baøi/g, 'bài')
+    .replace(/Caâu/g, 'Câu')
+    .replace(/caâu/g, 'câu')
+    .replace(/soá/g, 'số')
+    .replace(/Soá/g, 'Số')
+    .replace(/coù/g, 'có')
+    .replace(/Coù/g, 'Có')
+    .replace(/ñaùp/g, 'đáp')
+    .replace(/ñeå/g, 'để')
+    .replace(/ñuùng/g, 'đúng')
+    .replace(/ñeàn/g, 'điền')
+    .replace(/hỡnh/g, 'hình')
+    .replace(/thỡ/g, 'thì')
+    .replace(/tớnh/g, 'tính')
+    .replace(/Tớnh/g, 'Tính')
+    .replace(/cõu/g, 'câu')
+    .replace(/Cõu/g, 'Câu')
+    .replace(/qu\)ng/g, 'quãng')
+    .replace(/đ\)/g, 'đã')
+    .replace(/cỳ/g, 'có')
+    .replace(/tớch/g, 'tích')
+    .replace(/đỳ/g, 'đó')
+    .replace(/phth/g, 'phép tính');
+}
+
 
 function matchMath3TopicForSource(source: Math3RawSource): { topic: Math3TopicPlan; confidence: number } | undefined {
   const fileName = (source.relativePath || source.fileName).toLowerCase();

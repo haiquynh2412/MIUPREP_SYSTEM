@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import type { ExamAttempt, StorageAdapter, ErrorNotebookEntry, AnswerState } from '@miuprep/db';
+import type { ExamTrackConfig } from '../track-config';
 import type { IeltsTest } from '@miuprep/content';
 import { buildLearningEvent } from '@miuprep/learning';
 import { 
@@ -10,8 +11,6 @@ import {
   convertRawToCambridgeScale,
   calculateCpeWeightedScore
 } from '@miuprep/core';
-
-const LEARNING_EVENT_SOURCE = 'miuprep_cpe_desktop';
 
 function inferProgramId(test: IeltsTest): string {
   if (test.exam) return test.exam;
@@ -34,9 +33,11 @@ interface UseExamProps {
   isTauri: boolean;
   generateLocalId: (prefix: string) => string;
   onUpdateWeaknesses: () => Promise<void>;
+  track: ExamTrackConfig;
 }
 
-export default function useExam({ db, userId, isTauri, generateLocalId, onUpdateWeaknesses }: UseExamProps) {
+export default function useExam({ db, userId, isTauri, generateLocalId, onUpdateWeaknesses, track }: UseExamProps) {
+  const LEARNING_EVENT_SOURCE = track.learningEventSource;
   const [attempts, setAttempts] = useState<ExamAttempt[]>([]);
   const [availableTests, setAvailableTests] = useState<IeltsTest[]>([]);
   
@@ -83,7 +84,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
       if (isTauri) {
         for (let i = 0; i < localStorage.length; i++) {
           const key = localStorage.key(i);
-          if (key && key.startsWith('cpe_tauri_emergency_')) {
+          if (key && key.startsWith(track.emergencyStoragePrefix)) {
             try {
               const raw = localStorage.getItem(key);
               if (raw) {
@@ -463,7 +464,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
           sync_status: 'pending',
           version: 999999
         };
-        const itemKey = `cpe_tauri_emergency_${currentAttemptId}`;
+        const itemKey = `${track.emergencyStoragePrefix}${currentAttemptId}`;
         localStorage.setItem(itemKey, JSON.stringify(updatedAttempt));
       }
     };

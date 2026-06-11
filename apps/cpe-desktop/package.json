@@ -19,6 +19,7 @@
     "@miuprep/content": "*",
     "@miuprep/core": "*",
     "@miuprep/db": "*",
+    "@miuprep/exam-desktop": "*",
     "@miuprep/learning": "*",
     "@miuprep/ui": "*",
     "@tauri-apps/api": "^1.5.3",

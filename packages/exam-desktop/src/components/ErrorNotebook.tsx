@@ -58,7 +58,7 @@ export default function ErrorNotebook({
         <div className="bg-white border border-slate-200 rounded-xl shadow-lg p-6 max-w-2xl mx-auto w-full flex flex-col gap-5 text-left">
           <div className="flex justify-between items-center border-b pb-3">
             <div>
-              <span className="text-[10px] bg-emerald-600 text-white font-black px-2 py-0.5 rounded-full uppercase tracking-wider">
+              <span className="text-[10px] bg-accent-600 text-white font-black px-2 py-0.5 rounded-full uppercase tracking-wider">
                 Spaced Repetition Mode
               </span>
               <h3 className="text-base font-bold text-slate-800 mt-1">
@@ -86,7 +86,7 @@ export default function ErrorNotebook({
                 </span>
               </div>
               <div className="text-slate-700 font-medium py-1">
-                <span className="font-bold text-emerald-900 block mb-1">
+                <span className="font-bold text-accentdeep-900 block mb-1">
                   Nội dung / Ngữ cảnh câu hỏi:
                 </span>
                 Cần trả lời chính xác thông tin dựa trên kiến thức đã ghi nhận trong bài thi gốc.
@@ -111,12 +111,12 @@ export default function ErrorNotebook({
               value={reviewUserAnswer}
               onChange={(e) => setReviewUserAnswer(e.target.value)}
               disabled={reviewShowCorrect}
-              className="border border-slate-300 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 bg-white text-slate-800 focus:outline-none"
+              className="border border-slate-300 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-accent-500 focus:border-accent-500 bg-white text-slate-800 focus:outline-none"
             />
             {!reviewShowCorrect && (
               <button
                 onClick={() => setReviewShowCorrect(true)}
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 px-4 rounded shadow-sm transition-all mt-1 cursor-pointer border-0 outline-none"
+                className="bg-accent-600 hover:bg-accent-700 text-white font-bold text-xs py-2.5 px-4 rounded shadow-sm transition-all mt-1 cursor-pointer border-0 outline-none"
               >
                 Hiện đáp án & Đánh giá trí nhớ
               </button>
@@ -182,7 +182,7 @@ export default function ErrorNotebook({
                   </button>
                   <button
                     onClick={() => handleSrsGrade(3)}
-                    className="bg-emerald-100 hover:bg-emerald-200 text-emerald-800 font-bold text-[10px] py-2 px-1 rounded text-center transition-all cursor-pointer border border-emerald-200 outline-none"
+                    className="bg-accent-100 hover:bg-accent-200 text-accent-800 font-bold text-[10px] py-2 px-1 rounded text-center transition-all cursor-pointer border border-accent-200 outline-none"
                   >
                     Grade 3<span className="block font-normal text-[8px]">Nhớ có gợi ý</span>
                   </button>
@@ -210,10 +210,10 @@ export default function ErrorNotebook({
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {/* Box 1 */}
             <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-emerald-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-accent-500" />
               <div>
                 <div className="flex justify-between items-start">
-                  <span className="text-xs font-black text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-black text-accent-600 uppercase tracking-widest bg-accent-50 px-2 py-0.5 rounded-full">
                     🌱 Hộp Khởi Động
                   </span>
                   <span className="text-2xl font-black text-slate-800">{box1.length} thẻ</span>
@@ -229,17 +229,17 @@ export default function ErrorNotebook({
                   <span>{pct1}%</span>
                 </div>
                 <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-emerald-500 h-full transition-all" style={{ width: `${pct1}%` }} />
+                  <div className="bg-accent-500 h-full transition-all" style={{ width: `${pct1}%` }} />
                 </div>
               </div>
             </div>
 
             {/* Box 2 */}
             <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-teal-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-accentalt-500" />
               <div>
                 <div className="flex justify-between items-start">
-                  <span className="text-xs font-black text-teal-600 uppercase tracking-widest bg-teal-50 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-black text-accentalt-600 uppercase tracking-widest bg-accentalt-50 px-2 py-0.5 rounded-full">
                     ⚡ Hộp Tăng Tốc
                   </span>
                   <span className="text-2xl font-black text-slate-800">{box2.length} thẻ</span>
@@ -255,17 +255,17 @@ export default function ErrorNotebook({
                   <span>{pct2}%</span>
                 </div>
                 <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-teal-500 h-full transition-all" style={{ width: `${pct2}%` }} />
+                  <div className="bg-accentalt-500 h-full transition-all" style={{ width: `${pct2}%` }} />
                 </div>
               </div>
             </div>
 
             {/* Box 3 */}
             <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-indigo-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-accentcontrast-500" />
               <div>
                 <div className="flex justify-between items-start">
-                  <span className="text-xs font-black text-indigo-600 uppercase tracking-widest bg-indigo-50 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-black text-accentcontrast-600 uppercase tracking-widest bg-accentcontrast-50 px-2 py-0.5 rounded-full">
                     🏆 Hộp Làm Chủ
                   </span>
                   <span className="text-2xl font-black text-slate-800">{box3.length} thẻ</span>
@@ -281,7 +281,7 @@ export default function ErrorNotebook({
                   <span>{pct3}%</span>
                 </div>
                 <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-indigo-500 h-full transition-all" style={{ width: `${pct3}%` }} />
+                  <div className="bg-accentcontrast-500 h-full transition-all" style={{ width: `${pct3}%` }} />
                 </div>
               </div>
             </div>
@@ -291,7 +291,7 @@ export default function ErrorNotebook({
             {/* Left side: filter & start review session */}
             <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm flex flex-col gap-4">
               <h3 className="text-base font-bold text-slate-800 flex items-center gap-1.5 border-b pb-2">
-                <svg className="w-5 h-5 text-emerald-600 fill-current" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-accent-600 fill-current" viewBox="0 0 24 24">
                   <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
                 </svg>
                 SRS Spaced Repetition Panel
@@ -306,7 +306,7 @@ export default function ErrorNotebook({
                     onClick={() => setNotebookFilter('due')}
                     className={`py-1.5 px-2 rounded text-xs font-semibold text-center transition-all border-0 outline-none cursor-pointer ${
                       notebookFilter === 'due'
-                        ? 'bg-emerald-600 text-white shadow'
+                        ? 'bg-accent-600 text-white shadow'
                         : 'text-slate-500 hover:text-slate-800 bg-transparent'
                     }`}
                   >
@@ -316,7 +316,7 @@ export default function ErrorNotebook({
                     onClick={() => setNotebookFilter('all')}
                     className={`py-1.5 px-2 rounded text-xs font-semibold text-center transition-all border-0 outline-none cursor-pointer ${
                       notebookFilter === 'all'
-                        ? 'bg-emerald-600 text-white shadow'
+                        ? 'bg-accent-600 text-white shadow'
                         : 'text-slate-500 hover:text-slate-800 bg-transparent'
                     }`}
                   >
@@ -342,7 +342,7 @@ export default function ErrorNotebook({
                     return new Date(e.nextReviewAt) <= new Date();
                   }).length === 0
                 }
-                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded shadow transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 border-0 outline-none"
+                className="w-full bg-accent-600 hover:bg-accent-700 text-white font-bold py-2.5 px-4 rounded shadow transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 border-0 outline-none"
               >
                 Bắt đầu ôn tập lặp quãng
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -355,7 +355,7 @@ export default function ErrorNotebook({
             <div className="md:col-span-2 bg-white border border-slate-200 rounded-lg p-6 shadow-sm flex flex-col gap-4">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 border-b pb-2">
                 <h3 className="text-base font-bold text-slate-800 flex items-center gap-1.5">
-                  <svg className="w-5 h-5 text-emerald-600 fill-current" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-accent-600 fill-current" viewBox="0 0 24 24">
                     <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z" />
                   </svg>
                   Danh sách lỗi sai trong bài thi
@@ -365,7 +365,7 @@ export default function ErrorNotebook({
                   placeholder="Tìm kiếm mã câu hỏi, đáp án..."
                   value={notebookSearch}
                   onChange={(e) => setNotebookSearch(e.target.value)}
-                  className="border border-slate-300 rounded px-2.5 py-1 text-xs focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 max-w-xs bg-white text-slate-800 focus:outline-none"
+                  className="border border-slate-300 rounded px-2.5 py-1 text-xs focus:ring-1 focus:ring-accent-500 focus:border-accent-500 max-w-xs bg-white text-slate-800 focus:outline-none"
                 />
               </div>
 
@@ -414,7 +414,7 @@ export default function ErrorNotebook({
                           {onViewInExam && (
                             <button
                               onClick={() => onViewInExam(entry.questionId, entry.attemptId)}
-                              className="mt-2 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-700 font-bold text-[10px] py-1.5 px-3 rounded-lg cursor-pointer outline-none transition-colors whitespace-nowrap self-start"
+                              className="mt-2 bg-accentdeep-50 hover:bg-accentdeep-100 border border-accentdeep-200 text-accentdeep-700 font-bold text-[10px] py-1.5 px-3 rounded-lg cursor-pointer outline-none transition-colors whitespace-nowrap self-start"
                             >
                               🔍 Xem câu hỏi gốc
                             </button>

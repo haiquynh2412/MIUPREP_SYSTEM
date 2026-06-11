@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react';
 import type { IeltsTest, IeltsQuestion, QuestionGroup } from '@miuprep/content';
+import { useTrackConfig } from '../../track-config';
 import type { ExamAttempt } from '@miuprep/db';
 import { 
   IeltsAudioPlayer, 
@@ -43,6 +44,7 @@ export default function ExamSectionSheet({
   isCorrectAnswer,
   analyzeWeaknesses,
 }: ExamSectionSheetProps) {
+  const track = useTrackConfig();
 
   return (
     <div className="flex flex-col gap-6">
@@ -50,7 +52,7 @@ export default function ExamSectionSheet({
       {isReviewMode && reviewAttempt && (
         <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-md flex flex-col gap-4">
           <h3 className="text-base font-bold text-slate-800 flex items-center gap-2 border-b pb-2">
-            <svg className="w-5 h-5 text-indigo-600 fill-current" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+            <svg className="w-5 h-5 text-accentdeep-600 fill-current" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
             Diagnostic Skill Report (Phân tích chẩn đoán điểm yếu)
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -92,10 +94,10 @@ export default function ExamSectionSheet({
             </div>
             
             {/* Right: teacher pedagogical guidance */}
-            <div className="bg-indigo-50/50 border border-indigo-100 rounded-lg p-5 flex flex-col justify-between text-left">
+            <div className="bg-accentdeep-50/50 border border-accentdeep-100 rounded-lg p-5 flex flex-col justify-between text-left">
               <div>
-                <h4 className="text-xs font-bold text-indigo-900 uppercase tracking-wide mb-2">Lời khuyên sư phạm cá nhân hóa</h4>
-                <div className="text-[11px] text-indigo-950/90 leading-relaxed flex flex-col gap-2.5">
+                <h4 className="text-xs font-bold text-accentdeep-900 uppercase tracking-wide mb-2">Lời khuyên sư phạm cá nhân hóa</h4>
+                <div className="text-[11px] text-accentdeep-950/90 leading-relaxed flex flex-col gap-2.5">
                   {analyzeWeaknesses(userAnswers, selectedTest).map(weak => {
                     if (weak.status === 'critical') {
                       if (weak.questionType === 'true_false_not_given') {
@@ -119,8 +121,8 @@ export default function ExamSectionSheet({
                   )}
                 </div>
               </div>
-              <div className="border-t border-indigo-100/80 pt-2.5 mt-3 text-[9px] text-indigo-700 italic">
-                Báo cáo từ IELTS Analytical Core Engine.
+              <div className="border-t border-accentdeep-100/80 pt-2.5 mt-3 text-[9px] text-accentdeep-700 italic">
+                Báo cáo từ {track.label} Analytical Core Engine.
               </div>
             </div>
           </div>
@@ -140,7 +142,7 @@ export default function ExamSectionSheet({
             
             {sec.questionGroups.map(grp => (
               <div key={grp.id} className="border-b border-slate-100 pb-5 last:border-0">
-                <h4 className="text-sm font-bold text-slate-900 border-l-4 border-blue-500 pl-2 mb-3">
+                <h4 className="text-sm font-bold text-slate-900 border-l-4 border-accent-500 pl-2 mb-3">
                   {grp.instruction}
                 </h4>
 
@@ -197,7 +199,7 @@ export default function ExamSectionSheet({
                             onChange={e => setUserAnswers({...userAnswers, [q.id]: e.target.value})}
                             placeholder={isReviewMode ? "(No response)" : `Type answer for blank ${q.blankIndex}`}
                             disabled={isReviewMode}
-                            className="border border-slate-300 rounded px-3 py-1.5 max-w-xs focus:ring-1 focus:ring-blue-500 focus:border-blue-500 bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed disabled:text-slate-700"
+                            className="border border-slate-300 rounded px-3 py-1.5 max-w-xs focus:ring-1 focus:ring-accent-500 focus:border-accent-500 bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed disabled:text-slate-700"
                           />
                         )}
 
@@ -212,7 +214,7 @@ export default function ExamSectionSheet({
                                     userAnswers[q.id] === char 
                                       ? (isReviewMode 
                                           ? (isCorrect ? 'bg-green-100/70 border-green-300 font-bold' : 'bg-red-100/70 border-red-300 font-bold')
-                                          : 'bg-blue-50 border-blue-300 font-bold'
+                                          : 'bg-accent-50 border-accent-300 font-bold'
                                         ) 
                                       : 'bg-slate-50 border-slate-200 hover:bg-slate-100/70'
                                   } ${isReviewMode ? 'cursor-not-allowed' : ''}`}
@@ -224,7 +226,7 @@ export default function ExamSectionSheet({
                                     checked={userAnswers[q.id] === char}
                                     onChange={() => setUserAnswers({...userAnswers, [q.id]: char})}
                                     disabled={isReviewMode}
-                                    className="text-blue-600 focus:ring-blue-500 disabled:opacity-70"
+                                    className="text-accent-600 focus:ring-accent-500 disabled:opacity-70"
                                   />
                                   <span className="text-slate-700">{opt}</span>
                                 </label>
@@ -242,7 +244,7 @@ export default function ExamSectionSheet({
                                   userAnswers[q.id] === opt 
                                     ? (isReviewMode 
                                         ? (isCorrect ? 'bg-green-100/70 border-green-300 font-bold' : 'bg-red-100/70 border-red-300 font-bold')
-                                        : 'bg-blue-50 border-blue-300 font-bold'
+                                        : 'bg-accent-50 border-accent-300 font-bold'
                                       ) 
                                     : 'bg-slate-50 border-slate-200 hover:bg-slate-100/70'
                                 } ${isReviewMode ? 'cursor-not-allowed' : ''}`}
@@ -254,7 +256,7 @@ export default function ExamSectionSheet({
                                   checked={userAnswers[q.id] === opt}
                                   onChange={() => setUserAnswers({...userAnswers, [q.id]: opt})}
                                   disabled={isReviewMode}
-                                  className="text-blue-600 focus:ring-blue-500 disabled:opacity-70"
+                                  className="text-accent-600 focus:ring-accent-500 disabled:opacity-70"
                                 />
                                 <span>{opt}</span>
                               </label>
@@ -288,7 +290,7 @@ export default function ExamSectionSheet({
                                     isChecked 
                                       ? (isReviewMode 
                                           ? (isCorrect ? 'bg-green-100/70 border-green-300 font-bold' : 'bg-red-100/70 border-red-300 font-bold')
-                                          : 'bg-blue-50 border-blue-300 font-bold'
+                                          : 'bg-accent-50 border-accent-300 font-bold'
                                         ) 
                                       : 'bg-slate-50 border-slate-200 hover:bg-slate-100/70'
                                   } ${isReviewMode ? 'cursor-not-allowed' : ''}`}
@@ -299,7 +301,7 @@ export default function ExamSectionSheet({
                                     checked={isChecked}
                                     onChange={handleCheckboxChange}
                                     disabled={isReviewMode}
-                                    className="text-blue-600 focus:ring-blue-500 rounded disabled:opacity-70"
+                                    className="text-accent-600 focus:ring-accent-500 rounded disabled:opacity-70"
                                   />
                                   <span className="text-slate-700">{opt}</span>
                                 </label>
@@ -317,7 +319,7 @@ export default function ExamSectionSheet({
                               onChange={e => setUserAnswers({...userAnswers, [q.id]: e.target.value})}
                               placeholder={isReviewMode ? "(No response)" : "Enter cell value"}
                               disabled={isReviewMode}
-                              className="border border-slate-300 rounded px-2.5 py-1.5 text-xs focus:ring-1 focus:ring-blue-500 focus:border-blue-500 max-w-[160px] bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed"
+                              className="border border-slate-300 rounded px-2.5 py-1.5 text-xs focus:ring-1 focus:ring-accent-500 focus:border-accent-500 max-w-[160px] bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed"
                             />
                           </div>
                         )}
@@ -328,7 +330,7 @@ export default function ExamSectionSheet({
                               value={userAnswers[q.id] || ''}
                               onChange={e => setUserAnswers({...userAnswers, [q.id]: e.target.value})}
                               disabled={isReviewMode}
-                              className="bg-white border border-slate-300 rounded px-3 py-2 text-xs focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer text-slate-800 disabled:bg-slate-50 disabled:cursor-not-allowed disabled:text-slate-700"
+                              className="bg-white border border-slate-300 rounded px-3 py-2 text-xs focus:ring-1 focus:ring-accent-500 focus:border-accent-500 cursor-pointer text-slate-800 disabled:bg-slate-50 disabled:cursor-not-allowed disabled:text-slate-700"
                             >
                               <option value="">-- Choose Heading --</option>
                               {q.options.map(opt => (
@@ -345,7 +347,7 @@ export default function ExamSectionSheet({
                                 value={userAnswers[q.id] || ''}
                                 onChange={e => setUserAnswers({...userAnswers, [q.id]: e.target.value})}
                                 disabled={isReviewMode}
-                                className="bg-white border border-slate-300 rounded px-3 py-2 text-xs focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer text-slate-800 disabled:bg-slate-50 disabled:cursor-not-allowed disabled:text-slate-700"
+                                className="bg-white border border-slate-300 rounded px-3 py-2 text-xs focus:ring-1 focus:ring-accent-500 focus:border-accent-500 cursor-pointer text-slate-800 disabled:bg-slate-50 disabled:cursor-not-allowed disabled:text-slate-700"
                               >
                                 <option value="">-- Select Location --</option>
                                 {q.options.map(opt => (
@@ -359,7 +361,7 @@ export default function ExamSectionSheet({
                                 onChange={e => setUserAnswers({...userAnswers, [q.id]: e.target.value})}
                                 placeholder={isReviewMode ? "(No response)" : "Enter location name"}
                                 disabled={isReviewMode}
-                                className="border border-slate-300 rounded px-3 py-1.5 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 max-w-xs bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed disabled:text-slate-700"
+                                className="border border-slate-300 rounded px-3 py-1.5 focus:ring-1 focus:ring-accent-500 focus:border-accent-500 max-w-xs bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed disabled:text-slate-700"
                               />
                             )}
                           </div>
@@ -405,7 +407,7 @@ export default function ExamSectionSheet({
                                     isSelected
                                       ? (isReviewMode
                                           ? (isCorrect ? 'bg-green-600 border-green-600 text-white shadow-sm' : 'bg-red-600 border-red-600 text-white shadow-sm')
-                                          : 'bg-blue-600 border-blue-600 text-white shadow-md'
+                                          : 'bg-accent-600 border-accent-600 text-white shadow-md'
                                         )
                                       : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-350'
                                   } ${isReviewMode ? 'cursor-not-allowed opacity-80' : ''}`}
@@ -421,10 +423,10 @@ export default function ExamSectionSheet({
                         {!isReviewMode && currentExamMode === 'practice' && (
                           <div className="mt-2 text-left">
                             <details className="cursor-pointer group">
-                              <summary className="text-[10px] text-indigo-600 font-bold hover:text-indigo-800 flex items-center gap-1 outline-none select-none">
+                              <summary className="text-[10px] text-accentdeep-600 font-bold hover:text-accentdeep-800 flex items-center gap-1 outline-none select-none">
                                 <span>💡 Xem gợi ý tư duy Socratic</span>
                               </summary>
-                              <div className="mt-1.5 p-2.5 bg-indigo-50 border border-indigo-150 rounded text-[10px] leading-relaxed text-indigo-900 font-sans">
+                              <div className="mt-1.5 p-2.5 bg-accentdeep-50 border border-accentdeep-150 rounded text-[10px] leading-relaxed text-accentdeep-900 font-sans">
                                 {getSocraticHintForQuestion(q)}
                               </div>
                             </details>
@@ -456,7 +458,7 @@ export default function ExamSectionSheet({
                             
                             {q.explanation && (
                               <div className="mt-1.5 border-t border-slate-100 pt-1.5">
-                                <strong className="text-indigo-900 font-semibold block mb-0.5">Sư phạm giải thích chi tiết:</strong> 
+                                <strong className="text-accentdeep-900 font-semibold block mb-0.5">Sư phạm giải thích chi tiết:</strong> 
                                 <p className="text-slate-600 m-0 leading-relaxed font-sans">{q.explanation}</p>
                               </div>
                             )}
@@ -497,7 +499,7 @@ export default function ExamSectionSheet({
                 onClick={() => setListeningReviewTab('questions')}
                 className={`px-4 py-2 text-xs font-bold border-b-2 transition-all cursor-pointer ${
                   listeningReviewTab === 'questions'
-                    ? 'border-indigo-600 text-indigo-600'
+                    ? 'border-accentdeep-600 text-accentdeep-600'
                     : 'border-transparent text-slate-500 hover:text-slate-700'
                 }`}
               >
@@ -507,7 +509,7 @@ export default function ExamSectionSheet({
                 onClick={() => setListeningReviewTab('transcript')}
                 className={`px-4 py-2 text-xs font-bold border-b-2 transition-all cursor-pointer ${
                   listeningReviewTab === 'transcript'
-                    ? 'border-indigo-600 text-indigo-600'
+                    ? 'border-accentdeep-600 text-accentdeep-600'
                     : 'border-transparent text-slate-500 hover:text-slate-700'
                 }`}
               >
@@ -558,7 +560,7 @@ export default function ExamSectionSheet({
                               onChange={e => setUserAnswers({...userAnswers, [q.id]: e.target.value})}
                               placeholder={isReviewMode ? "(No response)" : `Answer field ${q.blankIndex}`}
                               disabled={isReviewMode}
-                              className="border border-slate-300 rounded px-3 py-1.5 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 bg-white text-slate-800 max-w-xs disabled:bg-white/80 disabled:cursor-not-allowed disabled:text-slate-700"
+                              className="border border-slate-300 rounded px-3 py-1.5 focus:ring-1 focus:ring-accent-500 focus:border-accent-500 bg-white text-slate-800 max-w-xs disabled:bg-white/80 disabled:cursor-not-allowed disabled:text-slate-700"
                             />
                           )}
 
@@ -573,7 +575,7 @@ export default function ExamSectionSheet({
                                       userAnswers[q.id] === char 
                                         ? (isReviewMode 
                                             ? (isCorrect ? 'bg-green-100/70 border-green-300 font-bold' : 'bg-red-100/70 border-red-300 font-bold')
-                                            : 'bg-blue-50 border-blue-300 font-bold'
+                                            : 'bg-accent-50 border-accent-300 font-bold'
                                           ) 
                                         : 'bg-white border-slate-200 hover:bg-slate-50'
                                     } ${isReviewMode ? 'cursor-not-allowed' : ''}`}
@@ -585,7 +587,7 @@ export default function ExamSectionSheet({
                                       checked={userAnswers[q.id] === char}
                                       onChange={() => setUserAnswers({...userAnswers, [q.id]: char})}
                                       disabled={isReviewMode}
-                                      className="text-blue-600 focus:ring-blue-500 disabled:opacity-70"
+                                      className="text-accent-600 focus:ring-accent-500 disabled:opacity-70"
                                     />
                                     <span className="text-slate-700">{opt}</span>
                                   </label>
@@ -620,7 +622,7 @@ export default function ExamSectionSheet({
                                       isChecked 
                                         ? (isReviewMode 
                                             ? (isCorrect ? 'bg-green-100/70 border-green-300 font-bold' : 'bg-red-100/70 border-red-300 font-bold')
-                                            : 'bg-blue-50 border-blue-300 font-bold'
+                                            : 'bg-accent-50 border-accent-300 font-bold'
                                           ) 
                                         : 'bg-white border-slate-200 hover:bg-slate-50'
                                     } ${isReviewMode ? 'cursor-not-allowed' : ''}`}
@@ -631,7 +633,7 @@ export default function ExamSectionSheet({
                                       checked={isChecked}
                                       onChange={handleCheckboxChange}
                                       disabled={isReviewMode}
-                                      className="text-blue-600 focus:ring-blue-500 rounded disabled:opacity-70"
+                                      className="text-accent-600 focus:ring-accent-500 rounded disabled:opacity-70"
                                     />
                                     <span className="text-slate-700">{opt}</span>
                                   </label>
@@ -649,7 +651,7 @@ export default function ExamSectionSheet({
                                 onChange={e => setUserAnswers({...userAnswers, [q.id]: e.target.value})}
                                 placeholder={isReviewMode ? "(No response)" : "Enter cell value"}
                                 disabled={isReviewMode}
-                                className="border border-slate-300 rounded px-2.5 py-1.5 text-xs focus:ring-1 focus:ring-blue-500 focus:border-blue-500 max-w-[160px] bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed"
+                                className="border border-slate-300 rounded px-2.5 py-1.5 text-xs focus:ring-1 focus:ring-accent-500 focus:border-accent-500 max-w-[160px] bg-white text-slate-800 disabled:bg-white/80 disabled:cursor-not-allowed"
                               />
                             </div>
                           )}
@@ -658,10 +660,10 @@ export default function ExamSectionSheet({
                           {!isReviewMode && currentExamMode === 'practice' && (
                             <div className="mt-2 text-left">
                               <details className="cursor-pointer group">
-                                <summary className="text-[10px] text-indigo-600 font-bold hover:text-indigo-800 flex items-center gap-1 outline-none select-none">
+                                <summary className="text-[10px] text-accentdeep-600 font-bold hover:text-accentdeep-800 flex items-center gap-1 outline-none select-none">
                                   <span>💡 Xem gợi ý tư duy Socratic</span>
                                 </summary>
-                                <div className="mt-1.5 p-2.5 bg-indigo-50 border border-indigo-150 rounded text-[10px] leading-relaxed text-indigo-900 font-sans">
+                                <div className="mt-1.5 p-2.5 bg-accentdeep-50 border border-accentdeep-150 rounded text-[10px] leading-relaxed text-accentdeep-900 font-sans">
                                   {getSocraticHintForQuestion(q)}
                                 </div>
                               </details>
@@ -693,7 +695,7 @@ export default function ExamSectionSheet({
                               
                               {q.explanation && (
                                 <div className="mt-1.5 border-t border-slate-100 pt-1.5">
-                                  <strong className="text-indigo-900 font-semibold block mb-0.5">Sư phạm giải thích chi tiết:</strong> 
+                                  <strong className="text-accentdeep-900 font-semibold block mb-0.5">Sư phạm giải thích chi tiết:</strong> 
                                   <p className="text-slate-600 m-0 leading-relaxed font-sans">{q.explanation}</p>
                                 </div>
                               )}
@@ -766,17 +768,17 @@ function InteractiveTapescript({ htmlText }: { htmlText: string }) {
   return (
     <div className="flex flex-col gap-4 text-left">
       {playingText && (
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-3.5 flex items-center justify-between animate-pulse text-left">
-          <div className="flex items-center gap-2.5 text-xs text-blue-900 text-left">
+        <div className="bg-accent-50 border border-accent-200 rounded-xl p-3.5 flex items-center justify-between animate-pulse text-left">
+          <div className="flex items-center gap-2.5 text-xs text-accent-900 text-left">
             <span className="flex h-2.5 w-2.5 relative shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent-500"></span>
             </span>
             <span className="font-semibold text-left">Đang phát audio phân đoạn lời thoại...</span>
           </div>
           <button 
             onClick={handleStop}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-[10px] px-3 py-1.5 rounded-lg transition-colors cursor-pointer border-0 outline-none shrink-0"
+            className="bg-accent-600 hover:bg-accent-700 text-white font-bold text-[10px] px-3 py-1.5 rounded-lg transition-colors cursor-pointer border-0 outline-none shrink-0"
           >
             Dừng phát
           </button>

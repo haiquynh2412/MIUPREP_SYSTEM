@@ -19,23 +19,20 @@ import type { ValidationError, IeltsQuestion, QuestionGroup } from '@miuprep/con
 
 
 // Specialized Hook Imports
-import useLearnerProfile from './hooks/useLearnerProfile';
-import useErrorNotebook from './hooks/useErrorNotebook';
-import useAiEvaluation from './hooks/useAiEvaluation';
-import useExam from './hooks/useExam';
+import { useLearnerProfile, useErrorNotebook, useAiEvaluation, useExam } from '@miuprep/exam-desktop';
+import { TRACK_CONFIG } from './trackConfig';
 
 // Modular Presentation Component Imports
 import Onboarding from './components/Onboarding';
 
-import ModeSelectorModal from './components/modules/ModeSelectorModal';
-import ImportErrorModal from './components/modules/ImportErrorModal';
+import { ModeSelectorModal, ImportErrorModal } from '@miuprep/exam-desktop';
 import DashboardPanel from './components/modules/DashboardPanel';
 import ExamRunner from './components/modules/ExamRunner';
 import { loadCpeSeedTests, validateContentTest } from './lib/contentRuntime';
 
-const ErrorNotebook = lazy(() => import('./components/ErrorNotebook'));
+const ErrorNotebook = lazy(() => import('@miuprep/exam-desktop/src/components/ErrorNotebook'));
 const SpeakingAiRoom = lazy(() => import('./components/SpeakingAiRoom'));
-const AdaptivePracticeRoom = lazy(() => import('./components/AdaptivePracticeRoom'));
+const AdaptivePracticeRoom = lazy(() => import('@miuprep/exam-desktop/src/components/AdaptivePracticeRoom'));
 const WritingAiRoom = lazy(() => import('./components/WritingAiRoom'));
 
 // User ID state is now fully abstracted into a reactive component state (currentUserId)
@@ -179,6 +176,7 @@ export default function App() {
     userId: currentUserId,
     isTauri,
     generateLocalId,
+    track: TRACK_CONFIG,
     onUpdateWeaknesses: async () => {
       // Recalculate weak skills based on updated history
       try {

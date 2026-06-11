@@ -1,5 +1,5 @@
 import { ExamTimer } from '@miuprep/ui';
-import ExamSectionSheet from './ExamSectionSheet';
+import { ExamSectionSheet } from '@miuprep/exam-desktop';
 import { isCorrectAnswer, analyzeWeaknesses } from '@miuprep/core';
 import type { IeltsQuestion, IeltsTest, QuestionGroup } from '@miuprep/content';
 import type { ExamAttempt } from '@miuprep/db';

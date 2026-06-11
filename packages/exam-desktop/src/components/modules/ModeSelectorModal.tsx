@@ -14,12 +14,12 @@ export default function ModeSelectorModal({
   return (
     <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 animate-fade-in">
       <div className="bg-white border border-slate-200 rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden flex flex-col">
-        <header className="bg-gradient-to-r from-blue-700 to-indigo-800 text-white px-6 py-4 flex items-center justify-between">
+        <header className="bg-gradient-to-r from-accent-700 to-accentdeep-800 text-white px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <span className="text-xl">🏆</span>
             <div className="text-left">
               <h3 className="text-base font-bold tracking-tight m-0 text-white leading-tight">Lựa chọn chế độ làm bài</h3>
-              <span className="text-[10px] text-indigo-200 font-semibold tracking-wide uppercase mt-0.5 block">{selectedTestForMode.title}</span>
+              <span className="text-[10px] text-accentdeep-200 font-semibold tracking-wide uppercase mt-0.5 block">{selectedTestForMode.title}</span>
             </div>
           </div>
           <button
@@ -41,13 +41,13 @@ export default function ModeSelectorModal({
             <div 
               id="practice-mode-select"
               onClick={() => onSelectMode(selectedTestForMode, 'practice')}
-              className="border border-slate-200 hover:border-blue-400 bg-slate-50/50 hover:bg-blue-50/10 p-5 rounded-xl cursor-pointer transition-all flex flex-col gap-2.5 hover:shadow-md group text-left"
+              className="border border-slate-200 hover:border-accent-400 bg-slate-50/50 hover:bg-accent-50/10 p-5 rounded-xl cursor-pointer transition-all flex flex-col gap-2.5 hover:shadow-md group text-left"
             >
               <div className="flex items-center justify-between">
                 <span className="text-lg">💡</span>
                 <span className="text-[9px] bg-green-100 text-green-700 font-bold px-2 py-0.5 rounded border border-green-200 uppercase">Học tập</span>
               </div>
-              <h4 className="text-sm font-bold text-slate-800 m-0 group-hover:text-blue-700">Practice Mode</h4>
+              <h4 className="text-sm font-bold text-slate-800 m-0 group-hover:text-accent-700">Practice Mode</h4>
               <ul className="text-[10px] text-slate-500 flex flex-col gap-1 list-disc list-inside p-0 m-0 leading-relaxed">
                 <li>Cho phép tạm dừng thời gian</li>
                 <li>Tua audio phát thoải mái</li>
