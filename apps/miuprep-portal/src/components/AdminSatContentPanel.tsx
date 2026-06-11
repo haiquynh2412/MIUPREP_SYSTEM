@@ -3,7 +3,7 @@ import type { SatQuestion } from '../lib/satPractice';
 import PromptWithAssets from './PromptWithAssets';
 
 type AdminSatSubTab = 'explorer' | 'integrity' | 'calibration';
-type AdminSatQuestion = SatQuestion & { section?: string };
+export type AdminSatQuestion = SatQuestion & { section?: string };
 
 interface AdminSatContentPanelProps {
   adminSatSubTab: AdminSatSubTab;

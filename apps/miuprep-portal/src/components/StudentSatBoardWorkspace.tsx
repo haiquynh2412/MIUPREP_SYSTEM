@@ -15,7 +15,7 @@ interface SatTaxonomySection {
   domains?: Record<string, SatTaxonomyDomain>;
 }
 
-interface SatTaxonomy {
+export interface SatTaxonomy {
   sections?: Record<string, SatTaxonomySection>;
 }
 

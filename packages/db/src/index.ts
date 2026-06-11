@@ -174,6 +174,7 @@ export interface LocalUser {
   assignedTracks?: ('ielts' | 'cpe' | 'cae' | 'math' | 'sat')[];
   linkedStudents?: string[];
   rewardsAllocated?: number;
+  studyPlan?: { weeklyTarget?: number; nextSessionAt?: string };
 }
 
 export interface SystemLog {

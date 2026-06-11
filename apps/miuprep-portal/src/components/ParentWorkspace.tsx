@@ -53,7 +53,7 @@ export default function ParentWorkspace({
   const updateSelectedStudent = (username: string): void => {
     setSelectedStudent(username);
     const selected = linkedStudents.find((student) => student.username === username);
-    if (selected) setWeeklyTargetValue((selected as any).studyPlan?.weeklyTarget || 4);
+    if (selected) setWeeklyTargetValue(selected.studyPlan?.weeklyTarget || 4);
   };
 
   return (
@@ -149,7 +149,7 @@ export default function ParentWorkspace({
                             </div>
                           </div>
                         </td>
-                        <td className="p-4 font-bold text-orange-400 font-mono">{(student as any).studyPlan?.weeklyTarget || 4} buổi/tuần</td>
+                        <td className="p-4 font-bold text-orange-400 font-mono">{student.studyPlan?.weeklyTarget || 4} buổi/tuần</td>
                       </tr>
                     );
                   })}

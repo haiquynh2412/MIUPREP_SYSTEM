@@ -234,7 +234,7 @@ export default function StudentDashboardWorkspace({
         <div className="flex flex-col gap-1 text-left">
           <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Độ Thích Ứng (IRT)</span>
           <span className="text-3xl font-black text-indigo-400 font-mono">92.4% 🧠</span>
-          <span className="text-[10px] text-slate-500">Mục tiêu ôn tuần: {(currentUser as any).studyPlan?.weeklyTarget || 4} buổi</span>
+          <span className="text-[10px] text-slate-500">Mục tiêu ôn tuần: {currentUser.studyPlan?.weeklyTarget || 4} buổi</span>
         </div>
         <span className="text-4xl filter drop-shadow">🌌</span>
       </div>

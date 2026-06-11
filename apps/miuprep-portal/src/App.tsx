@@ -56,11 +56,13 @@ import AdminLogsPanel from './components/AdminLogsPanel';
 import AdminMathContentPanel from './components/AdminMathContentPanel';
 import AdminOverviewPanel from './components/AdminOverviewPanel';
 import AdminSatContentPanel from './components/AdminSatContentPanel';
+import type { AdminSatQuestion } from './components/AdminSatContentPanel';
 import AdminUserDetailModal from './components/AdminUserDetailModal';
 import AdminUsersPanel from './components/AdminUsersPanel';
 import ParentWorkspace from './components/ParentWorkspace';
 import StudentDashboardWorkspace from './components/StudentDashboardWorkspace';
 import StudentSatBoardWorkspace from './components/StudentSatBoardWorkspace';
+import type { SatTaxonomy } from './components/StudentSatBoardWorkspace';
 import {
   buildContentExamChangeSet,
   buildContentReviewChangeSetExport,
@@ -488,9 +490,9 @@ export default function App() {
   const [selectedSatBank, setSelectedSatBank] = useState<string>('sat-1590-elite-ai-bank.json');
   const [loadedQuestions, setLoadedQuestions] = useState<SatQuestion[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState<boolean>(false);
-  const [satTaxonomy, setSatTaxonomy] = useState<any>(null);
+  const [satTaxonomy, setSatTaxonomy] = useState<SatTaxonomy | null>(null);
   const [satEstimatedScore, setSatEstimatedScore] = useState<number>(1280);
-  const [satTargetScore, setSatTargetScore] = useState<number>(1450);
+  const [satTargetScore] = useState<number>(1450);
   const [activePracticeState, setActivePracticeState] = useState<SatPracticeState | null>(null);
   const [templatePracticeState, setTemplatePracticeState] = useState<TemplatePracticeState | null>(null);
   const [englishItemBankPracticeState, setEnglishItemBankPracticeState] = useState<EnglishItemBankPracticeState | null>(null);
@@ -500,9 +502,9 @@ export default function App() {
   const [adminSelectedSatBank, setAdminSelectedSatBank] = useState<string>('sat-1590-elite-ai-bank.json');
   const [adminSearchQuery, setAdminSearchQuery] = useState<string>('');
   const [adminSelectedDomain, setAdminSelectedDomain] = useState<string>('all');
-  const [adminSelectedSkill, setAdminSelectedSkill] = useState<string>('all');
+  const [, setAdminSelectedSkill] = useState<string>('all');
   const [adminCurrentPage, setAdminCurrentPage] = useState<number>(1);
-  const [adminActiveQuestionDetail, setAdminActiveQuestionDetail] = useState<any | null>(null);
+  const [adminActiveQuestionDetail, setAdminActiveQuestionDetail] = useState<AdminSatQuestion | null>(null);
 
   // Fetch SAT Taxonomy on mount
   useEffect(() => {
@@ -526,6 +528,7 @@ export default function App() {
       const targetBank = currentUser?.role === 'admin' ? adminSelectedSatBank : selectedSatBank;
       fetchQuestions(targetBank);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- fetchQuestions chỉ phụ thuộc bank truyền vào; thêm nó vào deps sẽ gây refetch lặp. Sẽ chuyển sang useCallback khi tách App.tsx (task 2.2.3)
   }, [selectedSatBank, adminSelectedSatBank, activeStudentTab, currentUser]);
 
   const fetchQuestions = async (bank: string) => {
@@ -943,7 +946,7 @@ export default function App() {
       if (selectedUserForDetail && selectedUserForDetail.username === username) {
         setSelectedUserForDetail(updated);
       }
-    } catch (e) {
+    } catch {
       showNotif("Cập nhật phân quyền thất bại!", "error");
     }
   };
@@ -1385,6 +1388,7 @@ export default function App() {
     };
 
     syncRoleData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- refresh*Data ổn định theo currentUser; thêm vào deps gây vòng lặp sync. Sẽ chuyển sang useCallback khi tách App.tsx (task 2.2.3)
   }, [currentUser]);
 
   // General Notification Handler
@@ -1394,7 +1398,7 @@ export default function App() {
   };
 
   // Log system events to LocalStorage DB Adapter
-  const logSystemEvent = async (level: 'INFO' | 'WARN' | 'ERROR', message: string, payload?: any) => {
+  const logSystemEvent = async (level: 'INFO' | 'WARN' | 'ERROR', message: string, payload?: unknown) => {
     try {
       await db.logSystemEvent({
         id: `log-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
@@ -1498,7 +1502,7 @@ export default function App() {
       setContactInfo('');
       setStudentToLink('');
       setAuthTab('login');
-    } catch (err) {
+    } catch {
       showNotif("Đăng ký thất bại, đã xảy ra lỗi meow!", "error");
     }
   };
@@ -1548,7 +1552,7 @@ export default function App() {
       setCurrentUser(u);
       await logSystemEvent('INFO', `Người dùng đăng nhập thành công: @${u.username}`);
       showNotif(`Meow mừng bạn trở lại, ${u.displayName || u.username}! 🎉`, "success");
-    } catch (err) {
+    } catch {
       showNotif("Đăng nhập thất bại meow!", "error");
     }
   };
@@ -1697,7 +1701,7 @@ export default function App() {
     setLinkedStudentsList(students);
     if (students.length > 0) {
       setSelectedStudent(students[0].username);
-      setWeeklyTargetValue((students[0] as any).studyPlan?.weeklyTarget || 4);
+      setWeeklyTargetValue(students[0].studyPlan?.weeklyTarget || 4);
     }
   };
 
@@ -1710,7 +1714,7 @@ export default function App() {
           ...studentObj,
           studyPlan: {
             weeklyTarget: weeklyTargetValue,
-            nextSessionAt: (studentObj as any).studyPlan?.nextSessionAt || ''
+            nextSessionAt: studentObj.studyPlan?.nextSessionAt || ''
           }
         };
         await db.registerLocalUser(updated);
@@ -1718,7 +1722,7 @@ export default function App() {
         showNotif("Đã cập nhật mục tiêu học tập hàng tuần cho con meow! 👍", "success");
         await refreshParentData();
       }
-    } catch (e) {
+    } catch {
       showNotif("Cập nhật mục tiêu thất bại!", "error");
     }
   };
@@ -1744,7 +1748,7 @@ export default function App() {
 
       showNotif(`Đã chuyển tặng thành công 🐟 ${rewardAmount} Xu Cá Hồi khen thưởng cho con! 🎁`, "success");
       await refreshParentData();
-    } catch (e) {
+    } catch {
       showNotif("Khen thưởng thất bại meow!", "error");
     }
   };
@@ -1782,7 +1786,7 @@ export default function App() {
         showNotif(`Đã duyệt trạng thái tài khoản @${userUsername} thành công meow!`, "success");
         await refreshAdminData();
       }
-    } catch (e) {
+    } catch {
       showNotif("Duyệt trạng thái thất bại!", "error");
     }
   };
@@ -1800,7 +1804,7 @@ export default function App() {
       await logSystemEvent('WARN', `Admin @${currentUser?.username} xóa vĩnh viễn tài khoản: @${userUsername}`);
       showNotif(`Đã xóa vĩnh viễn tài khoản @${userUsername} meow!`, "success");
       await refreshAdminData();
-    } catch (e) {
+    } catch {
       showNotif("Xóa tài khoản thất bại!", "error");
     }
   };
@@ -1990,7 +1994,7 @@ export default function App() {
     // Default student
     const activeTrack = TRACKS.find(t => t.id === hoveredTrack);
     return {
-      theme: (hoveredTrack === 'cae' ? 'ielts' : (hoveredTrack || 'math')) as any,
+      theme: (hoveredTrack === 'cae' ? 'ielts' : (hoveredTrack || 'math')) as 'math' | 'sat' | 'ielts' | 'cpe' | 'cpa',
       state: hoveredTrack ? 'success' as const : 'idle' as const,
       bubble: activeTrack 
         ? activeTrack.bubbleText 
