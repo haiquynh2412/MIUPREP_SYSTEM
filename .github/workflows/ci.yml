@@ -16,6 +16,9 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      # Build all packages first (in dependency order) so cross-package test
+      # imports like core's ../ai/dist resolve on a clean checkout.
+      - run: npm run build
       - run: npm test -w @miuprep/core -w @miuprep/content -w @miuprep/learning -w @miuprep/db -w @miuprep/knowledge -w @miuprep/ai -w @miuprep/beta
 
   test-sat:

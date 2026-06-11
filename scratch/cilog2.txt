@@ -1,0 +1,383 @@
+﻿2026-06-11T22:25:09.8231425Z Current runner version: '2.334.0'
+2026-06-11T22:25:09.8256289Z ##[group]Runner Image Provisioner
+2026-06-11T22:25:09.8257520Z Hosted Compute Agent
+2026-06-11T22:25:09.8258147Z Version: 20260527.539
+2026-06-11T22:25:09.8258791Z Commit: a891dd388383b896fa6ac04a82c0b75cec981078
+2026-06-11T22:25:09.8259647Z Build Date: 2026-05-27T21:39:57Z
+2026-06-11T22:25:09.8260337Z Worker ID: {98bbf4f3-a5ae-4c96-8055-e51b11a95485}
+2026-06-11T22:25:09.8261093Z Azure Region: westus
+2026-06-11T22:25:09.8261679Z ##[endgroup]
+2026-06-11T22:25:09.8263165Z ##[group]Operating System
+2026-06-11T22:25:09.8263921Z Ubuntu
+2026-06-11T22:25:09.8264441Z 24.04.4
+2026-06-11T22:25:09.8264941Z LTS
+2026-06-11T22:25:09.8265514Z ##[endgroup]
+2026-06-11T22:25:09.8266263Z ##[group]Runner Image
+2026-06-11T22:25:09.8266978Z Image: ubuntu-24.04
+2026-06-11T22:25:09.8267562Z Version: 20260607.184.1
+2026-06-11T22:25:09.8268860Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260607.184/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-11T22:25:09.8270372Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260607.184
+2026-06-11T22:25:09.8271396Z ##[endgroup]
+2026-06-11T22:25:09.8272608Z ##[group]GITHUB_TOKEN Permissions
+2026-06-11T22:25:09.8274572Z Contents: read
+2026-06-11T22:25:09.8275201Z Metadata: read
+2026-06-11T22:25:09.8275802Z Packages: read
+2026-06-11T22:25:09.8276634Z ##[endgroup]
+2026-06-11T22:25:09.8278853Z Secret source: Actions
+2026-06-11T22:25:09.8279731Z Prepare workflow directory
+2026-06-11T22:25:09.8625695Z Prepare all required actions
+2026-06-11T22:25:09.8669352Z Getting action download info
+2026-06-11T22:25:10.3308674Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-06-11T22:25:10.4111875Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-06-11T22:25:10.5954237Z Complete job name: Unit tests (7 packages)
+2026-06-11T22:25:10.6675813Z ##[group]Run actions/checkout@v4
+2026-06-11T22:25:10.6677286Z with:
+2026-06-11T22:25:10.6677765Z   repository: haiquynh2412/MIUPREP_SYSTEM
+2026-06-11T22:25:10.6682029Z   token: ***
+2026-06-11T22:25:10.6682455Z   ssh-strict: true
+2026-06-11T22:25:10.6682893Z   ssh-user: git
+2026-06-11T22:25:10.6683340Z   persist-credentials: true
+2026-06-11T22:25:10.6683830Z   clean: true
+2026-06-11T22:25:10.6684283Z   sparse-checkout-cone-mode: true
+2026-06-11T22:25:10.6684808Z   fetch-depth: 1
+2026-06-11T22:25:10.6685251Z   fetch-tags: false
+2026-06-11T22:25:10.6685702Z   show-progress: true
+2026-06-11T22:25:10.6686322Z   lfs: false
+2026-06-11T22:25:10.6686741Z   submodules: false
+2026-06-11T22:25:10.6687192Z   set-safe-directory: true
+2026-06-11T22:25:10.6687932Z ##[endgroup]
+2026-06-11T22:25:10.7793044Z Syncing repository: haiquynh2412/MIUPREP_SYSTEM
+2026-06-11T22:25:10.7794803Z ##[group]Getting Git version info
+2026-06-11T22:25:10.7795665Z Working directory is '/home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM'
+2026-06-11T22:25:10.7797159Z [command]/usr/bin/git version
+2026-06-11T22:25:10.7884852Z git version 2.54.0
+2026-06-11T22:25:10.7912017Z ##[endgroup]
+2026-06-11T22:25:10.7928882Z Temporarily overriding HOME='/home/runner/work/_temp/9d8e47b1-8dc2-4123-b8f1-fae4a503bb97' before making global git config changes
+2026-06-11T22:25:10.7931374Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-11T22:25:10.7943659Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM
+2026-06-11T22:25:10.8032145Z Deleting the contents of '/home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM'
+2026-06-11T22:25:10.8036272Z ##[group]Initializing the repository
+2026-06-11T22:25:10.8041502Z [command]/usr/bin/git init /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM
+2026-06-11T22:25:10.8159568Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-11T22:25:10.8160660Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-11T22:25:10.8161821Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-11T22:25:10.8162870Z hint: call:
+2026-06-11T22:25:10.8163288Z hint:
+2026-06-11T22:25:10.8163803Z hint: 	git config --global init.defaultBranch <name>
+2026-06-11T22:25:10.8164423Z hint:
+2026-06-11T22:25:10.8165012Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-11T22:25:10.8166333Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-11T22:25:10.8167130Z hint:
+2026-06-11T22:25:10.8167603Z hint: 	git branch -m <name>
+2026-06-11T22:25:10.8168426Z hint:
+2026-06-11T22:25:10.8169348Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-11T22:25:10.8170453Z Initialized empty Git repository in /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM/.git/
+2026-06-11T22:25:10.8179763Z [command]/usr/bin/git remote add origin https://github.com/haiquynh2412/MIUPREP_SYSTEM
+2026-06-11T22:25:10.8223917Z ##[endgroup]
+2026-06-11T22:25:10.8224714Z ##[group]Disabling automatic garbage collection
+2026-06-11T22:25:10.8228302Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-11T22:25:10.8255285Z ##[endgroup]
+2026-06-11T22:25:10.8256366Z ##[group]Setting up auth
+2026-06-11T22:25:10.8261817Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-11T22:25:10.8294526Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-11T22:25:10.8654570Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-11T22:25:10.8686718Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-11T22:25:10.8902014Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-11T22:25:10.8940731Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-11T22:25:10.9157046Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-11T22:25:10.9190384Z ##[endgroup]
+2026-06-11T22:25:10.9191174Z ##[group]Fetching the repository
+2026-06-11T22:25:10.9198782Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +dc4cf764fb16940cbdbd673cebc313109960f6c8:refs/remotes/origin/master
+2026-06-11T22:25:42.2254062Z From https://github.com/haiquynh2412/MIUPREP_SYSTEM
+2026-06-11T22:25:42.2255172Z  * [new ref]           dc4cf764fb16940cbdbd673cebc313109960f6c8 -> origin/master
+2026-06-11T22:25:42.2283563Z ##[endgroup]
+2026-06-11T22:25:42.2284406Z ##[group]Determining the checkout info
+2026-06-11T22:25:42.2285963Z ##[endgroup]
+2026-06-11T22:25:42.2292541Z [command]/usr/bin/git sparse-checkout disable
+2026-06-11T22:25:42.2359312Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-11T22:25:42.2383739Z ##[group]Checking out the ref
+2026-06-11T22:25:42.2389510Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2026-06-11T22:25:43.3668573Z Updating files:   2% (2455/87346)
+2026-06-11T22:25:43.7399977Z Updating files:   3% (2621/87346)
+2026-06-11T22:25:44.2950179Z Updating files:   4% (3494/87346)
+2026-06-11T22:25:44.4436565Z Updating files:   4% (4227/87346)
+2026-06-11T22:25:44.5284825Z Updating files:   5% (4368/87346)
+2026-06-11T22:25:44.5729883Z Updating files:   6% (5241/87346)
+2026-06-11T22:25:44.7339150Z Updating files:   7% (6115/87346)
+2026-06-11T22:25:44.7757176Z Updating files:   8% (6988/87346)
+2026-06-11T22:25:44.8192152Z Updating files:   9% (7862/87346)
+2026-06-11T22:25:44.8527928Z Updating files:  10% (8735/87346)
+2026-06-11T22:25:44.8843564Z Updating files:  11% (9609/87346)
+2026-06-11T22:25:44.9188212Z Updating files:  12% (10482/87346)
+2026-06-11T22:25:44.9659435Z Updating files:  13% (11355/87346)
+2026-06-11T22:25:45.0181220Z Updating files:  14% (12229/87346)
+2026-06-11T22:25:45.0757901Z Updating files:  15% (13102/87346)
+2026-06-11T22:25:45.1257676Z Updating files:  16% (13976/87346)
+2026-06-11T22:25:45.1731613Z Updating files:  17% (14849/87346)
+2026-06-11T22:25:45.2939574Z Updating files:  18% (15723/87346)
+2026-06-11T22:25:45.4463450Z Updating files:  18% (16137/87346)
+2026-06-11T22:25:45.5140060Z Updating files:  19% (16596/87346)
+2026-06-11T22:25:45.5955411Z Updating files:  20% (17470/87346)
+2026-06-11T22:25:45.6663515Z Updating files:  21% (18343/87346)
+2026-06-11T22:25:45.8206751Z Updating files:  22% (19217/87346)
+2026-06-11T22:25:45.8831499Z Updating files:  23% (20090/87346)
+2026-06-11T22:25:45.9510114Z Updating files:  24% (20964/87346)
+2026-06-11T22:25:46.0170817Z Updating files:  25% (21837/87346)
+2026-06-11T22:25:46.0718262Z Updating files:  26% (22710/87346)
+2026-06-11T22:25:46.1319457Z Updating files:  27% (23584/87346)
+2026-06-11T22:25:46.2055234Z Updating files:  28% (24457/87346)
+2026-06-11T22:25:46.2747640Z Updating files:  29% (25331/87346)
+2026-06-11T22:25:46.2938983Z Updating files:  30% (26204/87346)
+2026-06-11T22:25:46.3483786Z Updating files:  30% (26455/87346)
+2026-06-11T22:25:46.4123465Z Updating files:  31% (27078/87346)
+2026-06-11T22:25:46.5014399Z Updating files:  32% (27951/87346)
+2026-06-11T22:25:46.5738644Z Updating files:  33% (28825/87346)
+2026-06-11T22:25:46.6366949Z Updating files:  34% (29698/87346)
+2026-06-11T22:25:46.7034930Z Updating files:  35% (30572/87346)
+2026-06-11T22:25:46.7698837Z Updating files:  36% (31445/87346)
+2026-06-11T22:25:46.8427822Z Updating files:  37% (32319/87346)
+2026-06-11T22:25:46.9127603Z Updating files:  38% (33192/87346)
+2026-06-11T22:25:46.9466515Z Updating files:  39% (34065/87346)
+2026-06-11T22:25:46.9814887Z Updating files:  40% (34939/87346)
+2026-06-11T22:25:47.0166611Z Updating files:  41% (35812/87346)
+2026-06-11T22:25:47.0516894Z Updating files:  42% (36686/87346)
+2026-06-11T22:25:47.0887345Z Updating files:  43% (37559/87346)
+2026-06-11T22:25:47.1249076Z Updating files:  44% (38433/87346)
+2026-06-11T22:25:47.1595688Z Updating files:  45% (39306/87346)
+2026-06-11T22:25:47.1946524Z Updating files:  46% (40180/87346)
+2026-06-11T22:25:47.2322535Z Updating files:  47% (41053/87346)
+2026-06-11T22:25:47.2727701Z Updating files:  48% (41927/87346)
+2026-06-11T22:25:47.2939386Z Updating files:  49% (42800/87346)
+2026-06-11T22:25:47.3080237Z Updating files:  49% (43333/87346)
+2026-06-11T22:25:47.3429296Z Updating files:  50% (43673/87346)
+2026-06-11T22:25:47.3781842Z Updating files:  51% (44547/87346)
+2026-06-11T22:25:47.4131084Z Updating files:  52% (45420/87346)
+2026-06-11T22:25:47.4475554Z Updating files:  53% (46294/87346)
+2026-06-11T22:25:47.4828586Z Updating files:  54% (47167/87346)
+2026-06-11T22:25:47.5177389Z Updating files:  55% (48041/87346)
+2026-06-11T22:25:47.5837224Z Updating files:  56% (48914/87346)
+2026-06-11T22:25:47.6624318Z Updating files:  57% (49788/87346)
+2026-06-11T22:25:47.7253954Z Updating files:  58% (50661/87346)
+2026-06-11T22:25:47.8269053Z Updating files:  59% (51535/87346)
+2026-06-11T22:25:47.8989100Z Updating files:  60% (52408/87346)
+2026-06-11T22:25:47.9656602Z Updating files:  61% (53282/87346)
+2026-06-11T22:25:48.0160187Z Updating files:  62% (54155/87346)
+2026-06-11T22:25:48.0615671Z Updating files:  63% (55028/87346)
+2026-06-11T22:25:48.1084653Z Updating files:  64% (55902/87346)
+2026-06-11T22:25:48.1635992Z Updating files:  65% (56775/87346)
+2026-06-11T22:25:48.2498744Z Updating files:  66% (57649/87346)
+2026-06-11T22:25:48.2939043Z Updating files:  67% (58522/87346)
+2026-06-11T22:25:48.3053840Z Updating files:  67% (59194/87346)
+2026-06-11T22:25:48.3749027Z Updating files:  68% (59396/87346)
+2026-06-11T22:25:48.4487490Z Updating files:  69% (60269/87346)
+2026-06-11T22:25:48.4864605Z Updating files:  70% (61143/87346)
+2026-06-11T22:25:48.5389425Z Updating files:  71% (62016/87346)
+2026-06-11T22:25:48.5992165Z Updating files:  72% (62890/87346)
+2026-06-11T22:25:48.6350574Z Updating files:  73% (63763/87346)
+2026-06-11T22:25:48.6707631Z Updating files:  74% (64637/87346)
+2026-06-11T22:25:48.7075084Z Updating files:  75% (65510/87346)
+2026-06-11T22:25:48.7435765Z Updating files:  76% (66383/87346)
+2026-06-11T22:25:48.7808498Z Updating files:  77% (67257/87346)
+2026-06-11T22:25:48.8165540Z Updating files:  78% (68130/87346)
+2026-06-11T22:25:48.8525186Z Updating files:  79% (69004/87346)
+2026-06-11T22:25:48.8891458Z Updating files:  80% (69877/87346)
+2026-06-11T22:25:48.9253390Z Updating files:  81% (70751/87346)
+2026-06-11T22:25:48.9611804Z Updating files:  82% (71624/87346)
+2026-06-11T22:25:48.9962306Z Updating files:  83% (72498/87346)
+2026-06-11T22:25:49.0325715Z Updating files:  84% (73371/87346)
+2026-06-11T22:25:49.0685742Z Updating files:  85% (74245/87346)
+2026-06-11T22:25:49.1207336Z Updating files:  86% (75118/87346)
+2026-06-11T22:25:49.1771189Z Updating files:  87% (75992/87346)
+2026-06-11T22:25:49.2499648Z Updating files:  88% (76865/87346)
+2026-06-11T22:25:49.2909246Z Updating files:  89% (77738/87346)
+2026-06-11T22:25:49.2937822Z Updating files:  90% (78612/87346)
+2026-06-11T22:25:49.3524915Z Updating files:  90% (78673/87346)
+2026-06-11T22:25:49.4191313Z Updating files:  91% (79485/87346)
+2026-06-11T22:25:49.4736614Z Updating files:  92% (80359/87346)
+2026-06-11T22:25:49.5095443Z Updating files:  93% (81232/87346)
+2026-06-11T22:25:49.5470518Z Updating files:  94% (82106/87346)
+2026-06-11T22:25:49.5976387Z Updating files:  95% (82979/87346)
+2026-06-11T22:25:50.1970281Z Updating files:  96% (83853/87346)
+2026-06-11T22:25:50.2939110Z Updating files:  97% (84726/87346)
+2026-06-11T22:25:50.5638767Z Updating files:  97% (85350/87346)
+2026-06-11T22:25:51.0679345Z Updating files:  98% (85600/87346)
+2026-06-11T22:25:51.2973893Z Updating files:  99% (86473/87346)
+2026-06-11T22:25:52.3183987Z Updating files:  99% (86617/87346)
+2026-06-11T22:25:52.9959292Z Updating files:  99% (87040/87346)
+2026-06-11T22:25:52.9960026Z Updating files: 100% (87346/87346)
+2026-06-11T22:25:52.9960510Z Updating files: 100% (87346/87346), done.
+2026-06-11T22:25:53.1172788Z Reset branch 'master'
+2026-06-11T22:25:53.1174385Z branch 'master' set up to track 'origin/master'.
+2026-06-11T22:25:53.1596798Z ##[endgroup]
+2026-06-11T22:25:53.1643402Z [command]/usr/bin/git log -1 --format=%H
+2026-06-11T22:25:53.1668704Z dc4cf764fb16940cbdbd673cebc313109960f6c8
+2026-06-11T22:25:53.2106907Z ##[group]Run actions/setup-node@v4
+2026-06-11T22:25:53.2107402Z with:
+2026-06-11T22:25:53.2107765Z   node-version: 24
+2026-06-11T22:25:53.2108130Z   cache: npm
+2026-06-11T22:25:53.2108482Z   always-auth: false
+2026-06-11T22:25:53.2108860Z   check-latest: false
+2026-06-11T22:25:53.2114526Z   token: ***
+2026-06-11T22:25:53.2114885Z ##[endgroup]
+2026-06-11T22:25:53.4049862Z Found in cache @ /opt/hostedtoolcache/node/24.16.0/x64
+2026-06-11T22:25:53.4051023Z ##[group]Environment details
+2026-06-11T22:25:56.5044851Z node: v24.16.0
+2026-06-11T22:25:56.5045268Z npm: 11.13.0
+2026-06-11T22:25:56.5045599Z yarn: 1.22.22
+2026-06-11T22:25:56.5047325Z ##[endgroup]
+2026-06-11T22:25:56.5067755Z [command]/opt/hostedtoolcache/node/24.16.0/x64/bin/npm config get cache
+2026-06-11T22:25:56.7816255Z /home/runner/.npm
+2026-06-11T22:25:57.0716846Z Cache hit for: node-cache-Linux-x64-npm-81b0111f3473879d25d71f4845cd71644a914e6a9dcee32fc70a9694aa4caa74
+2026-06-11T22:25:58.3621691Z Received 4194304 of 59594596 (7.0%), 4.0 MBs/sec
+2026-06-11T22:25:58.9629733Z Received 59594596 of 59594596 (100.0%), 35.5 MBs/sec
+2026-06-11T22:25:58.9630782Z Cache Size: ~57 MB (59594596 B)
+2026-06-11T22:25:58.9745651Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f0e08c1e-fe0e-4610-a645-d031cf4cf1db/cache.tzst -P -C /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM --use-compress-program unzstd
+2026-06-11T22:25:59.1572342Z Cache restored successfully
+2026-06-11T22:25:59.1611487Z Cache restored from key: node-cache-Linux-x64-npm-81b0111f3473879d25d71f4845cd71644a914e6a9dcee32fc70a9694aa4caa74
+2026-06-11T22:25:59.1771649Z ##[group]Run npm ci
+2026-06-11T22:25:59.1772153Z [36;1mnpm ci[0m
+2026-06-11T22:25:59.2009153Z shell: /usr/bin/bash -e {0}
+2026-06-11T22:25:59.2009444Z ##[endgroup]
+2026-06-11T22:26:04.4038505Z 
+2026-06-11T22:26:04.4047423Z > miuprep-monorepo@1.0.0 prepare
+2026-06-11T22:26:04.4048101Z > git config core.hooksPath .githooks
+2026-06-11T22:26:04.4048415Z 
+2026-06-11T22:26:04.4261056Z 
+2026-06-11T22:26:04.4262157Z added 272 packages, and audited 288 packages in 5s
+2026-06-11T22:26:04.4262588Z 
+2026-06-11T22:26:04.4262810Z 62 packages are looking for funding
+2026-06-11T22:26:04.4263665Z   run `npm fund` for details
+2026-06-11T22:26:04.4274805Z 
+2026-06-11T22:26:04.4275008Z found 0 vulnerabilities
+2026-06-11T22:26:04.5001910Z ##[group]Run npm test -w @miuprep/core -w @miuprep/content -w @miuprep/learning -w @miuprep/db -w @miuprep/knowledge -w @miuprep/ai -w @miuprep/beta
+2026-06-11T22:26:04.5002959Z [36;1mnpm test -w @miuprep/core -w @miuprep/content -w @miuprep/learning -w @miuprep/db -w @miuprep/knowledge -w @miuprep/ai -w @miuprep/beta[0m
+2026-06-11T22:26:04.5035680Z shell: /usr/bin/bash -e {0}
+2026-06-11T22:26:04.5035950Z ##[endgroup]
+2026-06-11T22:26:04.7504456Z 
+2026-06-11T22:26:04.7504889Z > @miuprep/core@1.0.0 test
+2026-06-11T22:26:04.7505514Z > npm run build && node test-runner.js
+2026-06-11T22:26:04.8859839Z 
+2026-06-11T22:26:04.8859858Z 
+2026-06-11T22:26:04.8860401Z > @miuprep/core@1.0.0 build
+2026-06-11T22:26:04.8860886Z > tsc
+2026-06-11T22:26:04.8861072Z 
+2026-06-11T22:26:06.0176588Z 🚀 Running Test Suite for @miuprep/core...
+2026-06-11T22:26:06.0178437Z 👉 Test 1: Scoring calculations...
+2026-06-11T22:26:06.0180643Z ✅ Scoring thresholds verified successfully.
+2026-06-11T22:26:06.0181720Z 👉 Test 2: Normalization rules...
+2026-06-11T22:26:06.0187637Z 👉 Advanced IELTS normalization & matching tests...
+2026-06-11T22:26:06.0190871Z ✅ Text normalization verified successfully.
+2026-06-11T22:26:06.0191611Z 👉 Test 3: Timer calculations...
+2026-06-11T22:26:06.0194614Z ✅ Drift-proof timer engine verified successfully.
+2026-06-11T22:26:06.0195425Z 👉 Test 4: Diagnostics & band safeguards...
+2026-06-11T22:26:06.0204071Z ✅ Diagnostics and band safeguards verified successfully.
+2026-06-11T22:26:06.0205071Z 👉 Test 5: UI Question Render & Headings Value Mapping...
+2026-06-11T22:26:06.0206291Z ✅ UI question render & headings value mapping verified successfully.
+2026-06-11T22:26:06.0206883Z 👉 Test 6: Adaptive Practice Engine...
+2026-06-11T22:26:06.0249505Z ✅ Adaptive practice engine verified successfully.
+2026-06-11T22:26:06.0250223Z 👉 Test 7: HTML XSS Sanitizer Safeguards...
+2026-06-11T22:26:06.0251083Z ✅ HTML XSS Sanitizer safeguards verified successfully.
+2026-06-11T22:26:06.0252070Z 👉 Test 8: Tauri SQLite Adapter Integration...
+2026-06-11T22:26:06.0252562Z 👉 Test 9: AI Adapter Mock & Failure Cases...
+2026-06-11T22:26:06.0257240Z 👉 Test 10: Autosave / Resume Timer Calculations...
+2026-06-11T22:26:06.0258281Z ✅ Autosave / Resume timer calculations verified successfully.
+2026-06-11T22:26:06.0259242Z 👉 Test 11: IELTS Rubric Engine & Capping Rules...
+2026-06-11T22:26:06.0330332Z node:internal/modules/cjs/loader:1503
+2026-06-11T22:26:06.0331141Z   throw err;
+2026-06-11T22:26:06.0331522Z   ^
+2026-06-11T22:26:06.0331711Z 
+2026-06-11T22:26:06.0332044Z Error: Cannot find module '../ai/dist/index.js'
+2026-06-11T22:26:06.0332613Z Require stack:
+2026-06-11T22:26:06.0333374Z - /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM/packages/core/test-runner.js
+2026-06-11T22:26:06.0334393Z     at Module._resolveFilename (node:internal/modules/cjs/loader:1500:15)
+2026-06-11T22:26:06.0335360Z     at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+2026-06-11T22:26:06.0336589Z     at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+2026-06-11T22:26:06.0337225Z     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+2026-06-11T22:26:06.0337731Z     at Module._load (node:internal/modules/cjs/loader:1285:25)
+2026-06-11T22:26:06.0338189Z     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-06-11T22:26:06.0338996Z     at Module.require (node:internal/modules/cjs/loader:1600:12)
+2026-06-11T22:26:06.0339434Z     at require (node:internal/modules/helpers:153:16)
+2026-06-11T22:26:06.0340065Z     at Object.<anonymous> (/home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM/packages/core/test-runner.js:476:5)
+2026-06-11T22:26:06.0340702Z     at Module._compile (node:internal/modules/cjs/loader:1854:14) {
+2026-06-11T22:26:06.0341074Z   code: 'MODULE_NOT_FOUND',
+2026-06-11T22:26:06.0341344Z   requireStack: [
+2026-06-11T22:26:06.0341750Z     '/home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM/packages/core/test-runner.js'
+2026-06-11T22:26:06.0342160Z   ]
+2026-06-11T22:26:06.0342557Z }
+2026-06-11T22:26:06.0342677Z 
+2026-06-11T22:26:06.0342782Z Node.js v24.16.0
+2026-06-11T22:26:06.0397405Z npm error Lifecycle script `test` failed with error:
+2026-06-11T22:26:06.0398841Z npm error code 1
+2026-06-11T22:26:06.0399874Z npm error path /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM/packages/core
+2026-06-11T22:26:06.0400831Z npm error workspace @miuprep/core@1.0.0
+2026-06-11T22:26:06.0402359Z npm error location /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM/packages/core
+2026-06-11T22:26:06.0405907Z npm error command failed
+2026-06-11T22:26:06.0407088Z npm error command sh -c npm run build && node test-runner.js
+2026-06-11T22:26:06.0407569Z 
+2026-06-11T22:26:06.0411241Z 
+2026-06-11T22:26:06.0411603Z > @miuprep/content@1.0.0 test
+2026-06-11T22:26:06.0412275Z > npm run build && node dist/standard.test.js
+2026-06-11T22:26:06.0412674Z 
+2026-06-11T22:26:06.1700207Z 
+2026-06-11T22:26:06.1701077Z > @miuprep/content@1.0.0 build
+2026-06-11T22:26:06.1701533Z > tsc
+2026-06-11T22:26:06.1701666Z 
+2026-06-11T22:26:38.1392157Z 
+2026-06-11T22:26:38.1392718Z > @miuprep/learning@1.0.0 test
+2026-06-11T22:26:38.1393394Z > npm run build && node dist/index.test.js
+2026-06-11T22:26:38.1393775Z 
+2026-06-11T22:26:38.2637006Z 
+2026-06-11T22:26:38.2637622Z > @miuprep/learning@1.0.0 build
+2026-06-11T22:26:38.2638119Z > tsc
+2026-06-11T22:26:38.2638256Z 
+2026-06-11T22:26:39.6967194Z Adaptive engine tests passed.
+2026-06-11T22:26:39.7056210Z 
+2026-06-11T22:26:39.7056633Z > @miuprep/db@1.0.0 test
+2026-06-11T22:26:39.7057259Z > npm run build && node dist/index.test.js
+2026-06-11T22:26:39.7057490Z 
+2026-06-11T22:26:39.8329192Z 
+2026-06-11T22:26:39.8329764Z > @miuprep/db@1.0.0 build
+2026-06-11T22:26:39.8330426Z > tsc
+2026-06-11T22:26:39.8330622Z 
+2026-06-11T22:27:09.5522745Z 
+2026-06-11T22:27:09.5523426Z > @miuprep/knowledge@1.0.0 test
+2026-06-11T22:27:09.5524097Z > npm run build && node dist/index.test.js
+2026-06-11T22:27:09.6812139Z 
+2026-06-11T22:27:09.6812162Z 
+2026-06-11T22:27:09.6812841Z > @miuprep/knowledge@1.0.0 build
+2026-06-11T22:27:09.6813426Z > tsc
+2026-06-11T22:27:09.6813647Z 
+2026-06-11T22:27:11.0602707Z 
+2026-06-11T22:27:11.0603288Z > @miuprep/ai@1.0.0 test
+2026-06-11T22:27:11.0603887Z > npm run build && node dist/tutor.test.js
+2026-06-11T22:27:11.0604128Z 
+2026-06-11T22:27:11.1915899Z 
+2026-06-11T22:27:11.1916698Z > @miuprep/ai@1.0.0 build
+2026-06-11T22:27:11.1917165Z > tsc
+2026-06-11T22:27:11.1917304Z 
+2026-06-11T22:27:41.0200829Z Cache + usage tests passed.
+2026-06-11T22:27:41.0274605Z 
+2026-06-11T22:27:41.0274998Z > @miuprep/beta@1.0.0 test
+2026-06-11T22:27:41.0275639Z > npm run build && node dist/index.test.js
+2026-06-11T22:27:41.0276452Z 
+2026-06-11T22:27:41.1566250Z 
+2026-06-11T22:27:41.1567048Z > @miuprep/beta@1.0.0 build
+2026-06-11T22:27:41.1567432Z > tsc
+2026-06-11T22:27:41.1567573Z 
+2026-06-11T22:28:10.5977256Z ##[error]Process completed with exit code 1.
+2026-06-11T22:28:10.6094092Z Post job cleanup.
+2026-06-11T22:28:10.7090814Z [command]/usr/bin/git version
+2026-06-11T22:28:10.7126835Z git version 2.54.0
+2026-06-11T22:28:10.7169796Z Temporarily overriding HOME='/home/runner/work/_temp/ae694048-9a60-4e62-b7fa-ebf62e808861' before making global git config changes
+2026-06-11T22:28:10.7171296Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-11T22:28:10.7175275Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/MIUPREP_SYSTEM/MIUPREP_SYSTEM
+2026-06-11T22:28:10.7210408Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-11T22:28:10.7242423Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-11T22:28:10.7529184Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-11T22:28:10.7552374Z http.https://github.com/.extraheader
+2026-06-11T22:28:10.7564475Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-06-11T22:28:10.7594927Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-11T22:28:10.7868168Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-11T22:28:10.7901428Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-11T22:28:10.8328529Z Cleaning up orphan processes
+2026-06-11T22:28:10.8661770Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
