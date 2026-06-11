@@ -73,14 +73,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 1.2. CI/CD + chốt chặn chất lượng
 
-- [ ] **1.2.1. Tạo GitHub Actions workflow `.github/workflows/ci.yml`**
+- [~] **1.2.1. Tạo GitHub Actions workflow `.github/workflows/ci.yml`** *(11/06/2026 — File đã tạo, 4 jobs: T-PKG / SAT / lint / build. Toàn bộ lệnh của workflow đã chạy xanh ở local. CHỜ: repo chưa có GitHub remote — cần push lên GitHub để kích hoạt và xác nhận run xanh)*
   - Nội dung: trigger push + PR → jobs: (a) T-PKG, (b) T-SAT typecheck + domain tests, (c) T-LINT, (d) T-BUILD
-  - Test vòng 1: chạy từng lệnh của workflow ở local — tất cả pass
-  - Test vòng 2: push lên branch thử → xem run trên GitHub Actions xanh toàn bộ
-- [ ] **1.2.2. Thêm husky pre-commit hook**
-  - Nội dung: `tsc --noEmit` cho workspace bị ảnh hưởng + eslint staged files (lint-staged)
-  - Test vòng 1: tạo commit chứa lỗi TS cố ý → hook phải chặn
-  - Test vòng 2: commit hợp lệ đi qua bình thường; clone sạch + `npm install` → hook tự cài
+  - Việc còn lại: tạo repo GitHub → `git remote add origin ...` → push → xem Actions run xanh
+- [x] **1.2.2. Thêm pre-commit hook (dùng `core.hooksPath`, không cần dependency husky)** *(11/06/2026 — Hook `.githooks/pre-commit`: lint app bị ảnh hưởng + `tsc --noEmit` package bị ảnh hưởng; tự cài qua script `prepare`. Test: commit chứa lỗi TS cố ý → BỊ CHẶN đúng (error TS2322); commit hợp lệ → đi qua bình thường. Commit `2935f6c7`)*
 - [ ] **1.2.3. Thêm Prettier + format toàn repo (1 commit riêng chỉ format)**
   - Test vòng 1: `npx prettier --check .` pass
   - Test vòng 2: T-PKG + T-BUILD vẫn xanh sau format (format không đổi hành vi)
@@ -208,10 +204,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | Giai đoạn | Tổng task | Hoàn thành | Tiến độ |
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
-| GĐ 1 — Nền móng | 12 | 0 | 0% |
+| GĐ 1 — Nền móng | 12 | 1 (+1 đang chờ remote) | ~12% |
 | GĐ 2 — Kiến trúc | 13 | 0 | 0% |
 | GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
-| **Tổng** | **40** | **4** | **10%** |
+| **Tổng** | **40** | **5** | **12.5%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
@@ -221,3 +217,5 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 0.2 | PASS — build 14/14 workspace, đủ `dist/`, không warning | |
 | 11/06/2026 | 0.3 | PASS — typecheck + 14/14 domain tests + build (chạy 2 lần) | |
 | 11/06/2026 | 0.4 | `git status` sạch sau commit | Commit `0ebddd52`, 254 file |
+| 11/06/2026 | 1.2.1 | PASS local — cả 4 nhóm lệnh CI chạy xanh (T-PKG, SAT, lint 4 app, build) | `[~]` chờ GitHub remote để kích hoạt Actions |
+| 11/06/2026 | 1.2.2 | PASS — hook chặn lỗi TS cố ý (TS2322), cho qua commit hợp lệ | Commit `2935f6c7`; hook tự cài qua `npm install` (script `prepare`) |
