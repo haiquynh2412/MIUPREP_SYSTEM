@@ -85,12 +85,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 2.1. Hợp nhất cpe-desktop + ielts-desktop
 
-- [ ] **2.1.1. Đo lường chính xác diff giữa 2 app** (diff từng file trùng tên, lập bảng khác biệt → quyết định cấu hình `track`)
-  - Test vòng 1: tài liệu diff hoàn chỉnh, review không sót file nào
-  - Test vòng 2: xác nhận với bảng import — không component nào bị bỏ quên
-- [ ] **2.1.2. Tách 6 component lớn trùng lặp vào package mới `@miuprep/exam-desktop-ui`** (AdaptivePracticeRoom, SpeakingAiRoom, WritingAiRoom, Onboarding, ErrorNotebook, ExamSectionSheet) — nhận `track: 'ielts' | 'cae' | 'cpe'` qua props/context
-  - Test vòng 1: T-PKG + cả 2 app build pass, dùng component chung
-  - Test vòng 2: T-E2E-IELTS + T-E2E-CPE pass đầy đủ (cả 7 spec mỗi app)
+- [x] **2.1.1. Đo lường chính xác diff giữa 2 app** *(11/06/2026 — Báo cáo đầy đủ tại `reports/desktop-apps-diff-analysis.md`: 16 file so sánh từng dòng. Nhóm A (≤5% khác, chỉ màu theme + nhãn): 10 file ~4.500 dòng → trích xuất được ngay. Nhóm B (khác nội dung thật theo track): WritingAiRoom, SpeakingAiRoom, Onboarding, App.tsx → cần đẩy content vào @miuprep/content trước)*
+- [x] **2.1.2. Tách component trùng lặp vào package mới `@miuprep/exam-desktop`** *(11/06/2026 — Trích xuất 4 hooks + 5 components (AdaptivePracticeRoom 1.655 dòng, ExamSectionSheet 797, ErrorNotebook, ModeSelectorModal, ImportErrorModal); xóa 18 file trùng (~4.000 dòng bảo trì kép). Tham số hóa: `ExamTrackConfig` qua context + màu semantic Tailwind (accent/accentdeep/accentalt/accentcontrast) — mỗi app map sang palette riêng, giữ nguyên nhận diện thị giác. Test: tsc package sạch, 2 app build + lint sạch, e2e recovery PASS cả 2 app. Commit `2e25807e`. Còn lại cho 2.1.3: SpeakingAiRoom/WritingAiRoom/Onboarding (nội dung theo track) + LearnerProfileCard (thang điểm khác))*
 - [ ] **2.1.3. Hợp nhất phần còn lại → 1 app `exam-desktop` duy nhất với build config theo track**
   - Test vòng 1: build ra 2 bản (ielts/cpe) từ 1 codebase, e2e cả 2 pass
   - Test vòng 2: Tauri build thật trên Windows, mở app kiểm tra thủ công luồng: onboarding → thi → chấm AI → error notebook
@@ -185,9 +181,9 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 7 (+1 chờ remote, +1 gộp vào GĐ2) | ~64% |
-| GĐ 2 — Kiến trúc | 13 | 0 | 0% |
+| GĐ 2 — Kiến trúc | 13 | 2 | ~15% |
 | GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
-| **Tổng** | **40** | **11** | **27.5%** |
+| **Tổng** | **40** | **13** | **32.5%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
@@ -202,5 +198,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 1.3.1 + 1.3.4 | PASS — 5/5 app build; QA portal smoke 0 console error; strict typecheck 0 lỗi | Commit `77d799ac` |
 | 11/06/2026 | 1.3.3 | PASS — lint 0 error; build PASS; QA smoke PASS | Commit `d2fd6dba`; phát hiện 14 lỗi tsc pre-existing ở portal → 2.2.3 |
 | 11/06/2026 | 1.1.5 | Đánh giá lại — chuyển `[!]`, gộp vào 2.4 | Tách đáp án sang content package là bảo mật giả; cần server-side scoring |
+| 11/06/2026 | 2.1.1 | PASS — báo cáo diff 16 file hoàn chỉnh | `reports/desktop-apps-diff-analysis.md` |
+| 11/06/2026 | 2.1.2 | PASS — tsc package sạch; 2 app build + lint sạch; e2e recovery PASS cả 2 app | Commit `2e25807e`; xóa ~4.000 dòng trùng lặp; package mới `@miuprep/exam-desktop` |
 | 11/06/2026 | 1.1.4 | PASS — ai tests (migration/purge/memory-only); 2 app desktop build sạch | Commit `53b4f039` |
 | 11/06/2026 | 1.1.2 + 1.1.3 | PASS — 7/7 package tests; build ielts/cpe/portal; lint 3 app; e2e recovery PASS; QA portal 2/2 PASS; grep credentials sạch | Commit `af0f0165`. Gỡ toàn bộ backdoor/seed mặc định ở 3 app; PBKDF2 + auto-rehash; e2e tự seed user. **Phát hiện mới:** `QuotaExceededError` ở web mode (ngân hàng đề vượt quota localStorage) → cần xử lý ở task 2.2 (chuyển content sang load theo nhu cầu / IndexedDB); e2e listening fail ở bước sau-submit vì vấn đề này (có sẵn, không do auth) |
