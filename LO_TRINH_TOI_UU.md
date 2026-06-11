@@ -65,7 +65,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - Nội dung: trigger push + PR → jobs: (a) T-PKG, (b) T-SAT typecheck + domain tests, (c) T-LINT, (d) T-BUILD
   - Việc còn lại: tạo repo GitHub → `git remote add origin ...` → push → xem Actions run xanh
 - [x] **1.2.2. Thêm pre-commit hook (dùng `core.hooksPath`, không cần dependency husky)** *(11/06/2026 — Hook `.githooks/pre-commit`: lint app bị ảnh hưởng + `tsc --noEmit` package bị ảnh hưởng; tự cài qua script `prepare`. Test: commit chứa lỗi TS cố ý → BỊ CHẶN đúng (error TS2322); commit hợp lệ → đi qua bình thường. Commit `2935f6c7`)*
-- [ ] **1.2.3. Thêm Prettier + format toàn repo (1 commit riêng chỉ format)**
+- [ ] **1.2.3. Thêm Prettier + format toàn repo (1 commit riêng chỉ format)** *(HOÃN CÓ ĐIỀU KIỆN 11/06/2026: chỉ thực hiện SAU khi repo đã push lên GitHub (có backup off-machine). Lý do: reformat tạo diff khổng lồ + mất git blame; cần kèm `.git-blame-ignore-revs` và loại trừ file data sinh tự động (math*-enrichment.ts, knowledge/index.ts) khỏi phạm vi format)*
   - Test vòng 1: `npx prettier --check .` pass
   - Test vòng 2: T-PKG + T-BUILD vẫn xanh sau format (format không đổi hành vi)
 
