@@ -28,7 +28,7 @@ import type {
 } from '@miuprep/learning';
 
 /** Raw question objects as loaded from the app's JSON banks (loosely shaped). */
-export type MiuMathRawQuestion = Partial<MiuMathQuestion> & { id: string };
+export type MiuMathRawQuestion = { [K in keyof MiuMathQuestion]?: MiuMathQuestion[K] | null } & { id: string };
 
 type MiuMathProgramMap = { programId: string; conceptIds?: string[]; skillIds?: string[] } | undefined;
 
@@ -233,7 +233,9 @@ export function buildMiuMathDiagnosticQuestions(state: StudentModel, questions: 
   const items = toQuestionItemsFromMiuMath(normalizedQuestions);
   const selectedItems = buildDiagnosticSet(items, attempts, { limit, programId: MIU_MATH_PROGRAM_ID });
   const rawQuestionByItemId = new Map((questions || []).map((question) => [`miumath.${question.id}`, question]));
-  return selectedItems.map((item) => rawQuestionByItemId.get(item.id)).filter(Boolean);
+  return selectedItems
+    .map((item) => rawQuestionByItemId.get(item.id))
+    .filter((question): question is MiuMathRawQuestion => Boolean(question));
 }
 
 function buildMiuMathLearningPath(mastery: MasteryEstimate[], recommendation: Recommendation) {
@@ -304,6 +306,7 @@ function normalizeMiuMathQuestion(question: MiuMathRawQuestion): MiuMathQuestion
     difficulty: question.difficulty || 'medium',
     category: question.category || 'algebra-simplification',
     category_vn: question.category_vn || question.category || 'MiuMath',
+    image: question.image ?? undefined,
     question_text: question.question_text || '',
     options: Array.isArray(question.options) ? question.options : [],
     correct_answer: question.correct_answer || '',

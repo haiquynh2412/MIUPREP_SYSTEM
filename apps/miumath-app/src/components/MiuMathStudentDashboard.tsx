@@ -218,7 +218,7 @@ export default function MiuMathStudentDashboard({
                     <span className="decor-paw"></span> Hướng 2: Thi Thử Bộ Đề Thực Chiến
                   </h3>
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '16px' }}>
-                    {Array.from(new Set(questions.map(q => q.exam_id))).filter(Boolean).sort((a, b) => a - b).map(examId => {
+                    {Array.from(new Set<number>(questions.map((q: { exam_id?: number | null }) => q.exam_id).filter((id: number | null | undefined): id is number => typeof id === 'number' && id > 0))).sort((a, b) => a - b).map(examId => {
                       const qCount = questions.filter(q => q.exam_id === examId).length;
                       return (
                         <div 

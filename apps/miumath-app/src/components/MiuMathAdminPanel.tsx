@@ -55,7 +55,7 @@ export default function MiuMathAdminPanel({
 
   return (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justify: 'space-between', gap: '12px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap' }}>
                   <button className="btn btn-secondary" onClick={handleBackToDashboard}>
                     ⬅️ Trở lại Bảng điều khiển
                   </button>

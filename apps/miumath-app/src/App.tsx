@@ -3,18 +3,30 @@ import DOMPurify from 'dompurify';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import './App.css';
-import MathDiaryRoom from './components/MathDiaryRoom.jsx';
-import MathExamRoom from './components/MathExamRoom.jsx';
-import MathErrorNotebook from './components/MathErrorNotebook.jsx';
-import MathPracticeRoom from './components/MathPracticeRoom.jsx';
-import EditMemberModal from './components/EditMemberModal.jsx';
-import MiuMathSidebar from './components/MiuMathSidebar.jsx';
-import MiuMathStudentDashboard from './components/MiuMathStudentDashboard.jsx';
-import MiuMathAppHeader from './components/MiuMathAppHeader.jsx';
-import MiuMathAdminDashboard from './components/MiuMathAdminDashboard.jsx';
-import MiuMathAdminPanel from './components/MiuMathAdminPanel.jsx';
-import MiuMathAuthScreen from './components/MiuMathAuthScreen.jsx';
-import StudentProgressModal from './components/StudentProgressModal.jsx';
+import type { MiuMathRawQuestion } from './learning';
+import type { LearningEventRecord } from '@miuprep/learning';
+
+export interface MiuMathUser {
+  username: string;
+  password: string;
+  fullName?: string;
+  phone?: string;
+  role: string;
+  active?: boolean;
+  approved?: boolean;
+}
+import MathDiaryRoom from './components/MathDiaryRoom';
+import MathExamRoom from './components/MathExamRoom';
+import MathErrorNotebook from './components/MathErrorNotebook';
+import MathPracticeRoom from './components/MathPracticeRoom';
+import EditMemberModal from './components/EditMemberModal';
+import MiuMathSidebar from './components/MiuMathSidebar';
+import MiuMathStudentDashboard from './components/MiuMathStudentDashboard';
+import MiuMathAppHeader from './components/MiuMathAppHeader';
+import MiuMathAdminDashboard from './components/MiuMathAdminDashboard';
+import MiuMathAdminPanel from './components/MiuMathAdminPanel';
+import MiuMathAuthScreen from './components/MiuMathAuthScreen';
+import StudentProgressModal from './components/StudentProgressModal';
 import {
   buildMiuMathDiagnosticQuestions,
   buildMiuMathErrorNotebookSummary,
@@ -27,7 +39,7 @@ import {
   saveMiuMathLearningState,
   saveMiuMathSharedLearningEvent,
   saveMiuMathSharedLearningEvents,
-} from './learning.js';
+} from './learning';
 
 const SANITIZE_OPTIONS = {
   USE_PROFILES: { html: true, mathMl: true },
@@ -277,8 +289,8 @@ const recommendationLabel = (kind) => {
 function App() {
 
   // --- AUTHENTICATION & ROLE-BASED ACCESS CONTROL ---
-  const [users, setUsers] = useState([]);
-  const [currentUser, setCurrentUser] = useState(null);
+  const [users, setUsers] = useState<MiuMathUser[]>([]);
+  const [currentUser, setCurrentUser] = useState<MiuMathUser | null>(null);
   const [authMode, setAuthMode] = useState("login"); // "login" or "register"
   const [authUsername, setAuthUsername] = useState("");
   const [authPassword, setAuthPassword] = useState("");
@@ -286,8 +298,8 @@ function App() {
   const [authSuccess, setAuthSuccess] = useState("");
   const [authFullName, setAuthFullName] = useState("");
   const [authPhone, setAuthPhone] = useState("");
-  const [selectedStudentProgress, setSelectedStudentProgress] = useState(null);
-  const [editingUser, setEditingUser] = useState(null);
+  const [selectedStudentProgress, setSelectedStudentProgress] = useState<MiuMathUser | null>(null);
+  const [editingUser, setEditingUser] = useState<string | null>(null);
   const [editFullName, setEditFullName] = useState("");
   const [editPhone, setEditPhone] = useState("");
   const [editPassword, setEditPassword] = useState("");
@@ -567,20 +579,20 @@ function App() {
   };
 
   // Database state
-  const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState<MiuMathRawQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [learningState, setLearningState] = useState(() => loadMiuMathLearningState("guest"));
   
   // Core tracks & selections
   const [grade, setGrade] = useState("Lớp 9 Chuyên");
   const [mode, setMode] = useState("dashboard"); // "dashboard", "chuyen_de", "diagnostic_adaptive", "lam_de", "so_tay_bay_chuot"
-  const [selectedChuyenDe, setSelectedChuyenDe] = useState(null); // Chuyen đề index
+  const [selectedChuyenDe, setSelectedChuyenDe] = useState<string | number | null>(null); // Chuyen đề index
   const [selectedSubCategory, setSelectedSubCategory] = useState("all");
-  const [selectedExamId, setSelectedExamId] = useState(null); // Exam paper ID
-  const [diagnosticQuestionIds, setDiagnosticQuestionIds] = useState([]);
+  const [selectedExamId, setSelectedExamId] = useState<string | number | null>(null); // Exam paper ID
+  const [diagnosticQuestionIds, setDiagnosticQuestionIds] = useState<string[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [spentCoinsMap, setSpentCoinsMap] = useState({}); // { questionId: number }
-  const [understoodList, setUnderstoodList] = useState([]); // [questionId]
+  const [understoodList, setUnderstoodList] = useState<string[]>([]); // [questionId]
   
   // Interactive answers & hinting states
   const [userAnswers, setUserAnswers] = useState({}); // { questionId: answer }
@@ -590,7 +602,7 @@ function App() {
   
   // User profile & personalized name & diary & gamification
   const [userName, setUserName] = useState("bạn");
-  const [diaryEntries, setDiaryEntries] = useState([]);
+  const [diaryEntries, setDiaryEntries] = useState<any[]>([]);
   const [diaryText, setDiaryText] = useState("");
   const [diaryMood, setDiaryMood] = useState("😸");
   const [fishCoins, setFishCoins] = useState(100);
@@ -602,9 +614,9 @@ function App() {
   const [mascotBubble, setMascotBubble] = useState("Chào mừng bạn! Hôm nay chúng ta sẽ học chuyên đề nào đây meow? 🐾");
   
   // Spaced repetition & bookmarks
-  const [mouseTrapList, setMouseTrapList] = useState([]); // Questions in incorrect notebook
+  const [mouseTrapList, setMouseTrapList] = useState<string[]>([]); // Questions in incorrect notebook
   const [errorNotebookEntries, setErrorNotebookEntries] = useState(() => loadMiuMathErrorNotebook("guest"));
-  const [bookmarkedList, setBookmarkedList] = useState([]);
+  const [bookmarkedList, setBookmarkedList] = useState<string[]>([]);
   
   // Exam Mode states
   const [examActive, setExamActive] = useState(false);
@@ -612,10 +624,10 @@ function App() {
   const [examAnswers, setExamAnswers] = useState({}); // temporary answers during exam
   const [examFinished, setExamFinished] = useState(false);
   const [examScore, setExamScore] = useState(0);
-  const [examAnalysis, setExamAnalysis] = useState([]);
+  const [examAnalysis, setExamAnalysis] = useState<any[]>([]);
 
   // Timer reference
-  const timerRef = useRef(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   const currentLearnerId = currentUser?.username || "guest";
   const errorNotebookSummary = buildMiuMathErrorNotebookSummary(errorNotebookEntries);
@@ -822,12 +834,12 @@ function App() {
     if (!currentAnswer.trim()) return;
 
     const cleanUser = currentAnswer.trim().toLowerCase();
-    const cleanCorrect = q.correct_answer.trim().toLowerCase();
+    const cleanCorrect = (q.correct_answer || '').trim().toLowerCase();
     const isCorrect = cleanUser === cleanCorrect;
 
     // Save temporary answer
     setUserAnswers(prev => ({ ...prev, [qId]: currentAnswer }));
-    let recorded = null;
+    let recorded: ReturnType<typeof recordMiuMathAttempt> = null;
     if (hintLevel[qId] !== 2) {
       const attemptMode = mode === "diagnostic_adaptive" ? "diagnostic" : mode === "so_tay_bay_chuot" ? "review" : "practice";
       recorded = recordMiuMathAttempt(learningState, q, currentAnswer, attemptMode, currentLearnerId);
@@ -944,21 +956,22 @@ function App() {
 
     const examQuestions = questions.filter(q => q.exam_id === selectedExamId);
     let correctCount = 0;
-    const categoryStats = {}; // { category: { total: 0, correct: 0 } }
+    const categoryStats: Record<string, { total: number; correct: number; name?: string | null }> = {}; // { category: { total: 0, correct: 0 } }
     let nextLearningState = learningState;
     let nextErrorNotebookEntries = errorNotebookEntries;
     const nextTrapList = [...mouseTrapList];
-    const submittedLearningEvents = [];
+    const submittedLearningEvents: LearningEventRecord[] = [];
 
     examQuestions.forEach(q => {
       // Initialize stats
-      if (!categoryStats[q.category]) {
-        categoryStats[q.category] = { total: 0, correct: 0, name: q.category_vn };
+      const cat = q.category || 'unknown';
+      if (!categoryStats[cat]) {
+        categoryStats[cat] = { total: 0, correct: 0, name: q.category_vn };
       }
-      categoryStats[q.category].total += 1;
+      categoryStats[cat].total += 1;
 
       const userAns = examAnswers[q.id] || "";
-      const isCorrect = userAns.trim().toLowerCase() === q.correct_answer.trim().toLowerCase();
+      const isCorrect = userAns.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
       const recorded = recordMiuMathAttempt(nextLearningState, q, userAns || "__blank__", "mock_test", currentLearnerId);
       if (recorded) {
         nextLearningState = recorded.state;
@@ -967,7 +980,7 @@ function App() {
 
       if (isCorrect) {
         correctCount += 1;
-        categoryStats[q.category].correct += 1;
+        categoryStats[cat].correct += 1;
       } else {
         // Add wrong questions to spaced repetition notebook automatically
         if (!nextTrapList.includes(q.id)) {
@@ -1103,7 +1116,7 @@ function App() {
   const activeQuestions = mode === "chuyen_de" 
     ? questions.filter(q => {
         const matchCategory = currentChuyenDeId === "casio-hacks"
-          ? (q.category === "casio-hacks" || (q.explanation && q.explanation.casio))
+          ? (q.category === "casio-hacks" || Boolean(typeof q.explanation === 'object' && q.explanation !== null && (q.explanation as Record<string, unknown>).casio))
           : q.category === currentChuyenDeId;
         if (!matchCategory) return false;
         
@@ -1134,12 +1147,12 @@ function App() {
 
     const categoryIndex = CHUYEN_DE_LIST.findIndex(cd => {
       if (cd.id === recommended.category) return true;
-      return cd.id === "casio-hacks" && (recommended.category === "casio-hacks" || (recommended.explanation && recommended.explanation.casio));
+      return cd.id === "casio-hacks" && (recommended.category === "casio-hacks" || Boolean(typeof recommended.explanation === 'object' && recommended.explanation !== null && (recommended.explanation as Record<string, unknown>).casio));
     });
     const nextCategoryIndex = categoryIndex >= 0 ? categoryIndex : 0;
     const nextCategory = CHUYEN_DE_LIST[nextCategoryIndex];
     const targetQuestions = questions.filter(q => {
-      if (nextCategory.id === "casio-hacks") return q.category === "casio-hacks" || (q.explanation && q.explanation.casio);
+      if (nextCategory.id === "casio-hacks") return q.category === "casio-hacks" || Boolean(typeof q.explanation === "object" && q.explanation !== null && (q.explanation as Record<string, unknown>).casio);
       return q.category === nextCategory.id;
     });
     const targetIndex = targetQuestions.findIndex(q => q.id === recommended.id);
