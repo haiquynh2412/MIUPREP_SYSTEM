@@ -672,3 +672,67 @@ export const MiuMascot: React.FC<MiuMascotProps> = ({
   );
 };
 
+
+// ==========================================
+// ErrorBoundary Component
+// ==========================================
+interface ErrorBoundaryProps {
+  children: React.ReactNode;
+  /** Called once per crash with the error and React component stack (for SystemLog / crash reporting) */
+  onError?: (error: Error, componentStack: string) => void;
+}
+
+interface ErrorBoundaryState {
+  error: Error | null;
+}
+
+export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  state: ErrorBoundaryState = { error: null };
+
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+    return { error };
+  }
+
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    try {
+      this.props.onError?.(error, info.componentStack || '');
+    } catch {
+      // Reporting must never crash the fallback UI
+    }
+    console.error('[ErrorBoundary]', error, info.componentStack);
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <div style={{
+          minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
+          background: '#0f172a', color: '#e2e8f0', fontFamily: 'system-ui, sans-serif', padding: 24
+        }}>
+          <div style={{ maxWidth: 480, textAlign: 'center' }}>
+            <div style={{ fontSize: 48, marginBottom: 12 }}>😿</div>
+            <h1 style={{ fontSize: 20, fontWeight: 800, marginBottom: 8 }}>Đã xảy ra lỗi không mong muốn</h1>
+            <p style={{ fontSize: 13, color: '#94a3b8', lineHeight: 1.6, marginBottom: 16 }}>
+              Ứng dụng gặp sự cố và không thể hiển thị màn hình này. Dữ liệu học tập của bạn vẫn an toàn.
+              Hãy thử tải lại trang; nếu lỗi lặp lại, vui lòng liên hệ quản trị viên.
+            </p>
+            <pre style={{
+              fontSize: 11, color: '#f87171', background: '#1e293b', borderRadius: 8,
+              padding: 12, overflow: 'auto', maxHeight: 96, textAlign: 'left', marginBottom: 16
+            }}>{String(this.state.error?.message || this.state.error)}</pre>
+            <button
+              onClick={() => window.location.reload()}
+              style={{
+                background: '#2563eb', color: '#fff', border: 0, borderRadius: 10,
+                padding: '10px 24px', fontSize: 13, fontWeight: 700, cursor: 'pointer'
+              }}
+            >
+              Tải lại ứng dụng
+            </button>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}

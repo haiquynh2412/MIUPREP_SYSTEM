@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@miuprep/content": "*",
+    "@miuprep/ui": "*",
     "@miuprep/knowledge": "*",
     "@miuprep/learning": "*",
     "dompurify": "^3.4.7",
