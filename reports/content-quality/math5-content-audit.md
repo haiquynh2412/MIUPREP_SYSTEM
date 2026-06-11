@@ -1,16 +1,16 @@
 # Math 5 Content Audit
 
-Generated at: 2026-06-11T04:10:14.103Z
+Generated at: 2026-06-11T05:40:08.768Z
 
 ## Summary
 
 - Sources: 57
 - Questions: 416
 - Display-ready questions: 416
-- Blockers: 3
+- Blockers: 0
 - Warnings: 2
 - Adapter converted items: 416
-- Adapter pass: no
+- Adapter pass: yes
 - Raw path: C:\Users\HAIQUYNH\OneDrive\CODE AI\MIUPREP_SYSTEM\reports\content-quality\math5-rich-raw-extract.json
 
 ## Scored Practice Gate
@@ -42,6 +42,3 @@ Generated at: 2026-06-11T04:10:14.103Z
 | --- | --- | --- | --- | --- | --- |
 | warning | import.source.no_exercise_blocks |  | BT VE HINH TRON.doc | math5.measurement.geometry | No exercise blocks were detected in this source. |
 | warning | import.source.no_exercise_blocks |  | CON THUC HINH HOC O TIEU HOC.doc | math5.measurement.geometry | No exercise blocks were detected in this source. |
-| blocker | adapter.validation |  |  |  | Duplicate QuestionItem id "math5.math5.number.percentage.dekiemtrah.003". |
-| blocker | adapter.validation |  |  |  | Duplicate QuestionItem id "math5.math5.number.percentage.dekiemtrah.001". |
-| blocker | adapter.validation |  |  |  | Duplicate QuestionItem id "math5.math5.number.percentage.dekiemtrah.006". |

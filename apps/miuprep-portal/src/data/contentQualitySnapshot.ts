@@ -75,7 +75,7 @@ export interface UnifiedContentCoverageSnapshot {
 
 export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
   "schemaVersion": "english_content_guard_v1",
-  "generatedAt": "2026-06-11T02:40:28.953Z",
+  "generatedAt": "2026-06-11T05:42:29.729Z",
   "sourceCommand": "npm.cmd run sync:portal-quality -w @miuprep/content",
   "qualitySummary": {
     "tests": 95,
@@ -303,7 +303,7 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
 
 export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
   "schemaVersion": "miuprep_content_coverage_v1",
-  "generatedAt": "2026-06-11T02:40:28.953Z",
+  "generatedAt": "2026-06-11T05:42:29.729Z",
   "programs": [
     {
       "programId": "vn_math_6",
@@ -488,6 +488,107 @@ export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
       "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\toan 11",
       "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math11-published-question-bank.json",
       "note": "8328 Math 11 questions are published to the learner system; 2820/8328 published questions have source answers/solutions for scored practice; 0 blocked raw questions were excluded before publish."
+    },
+    {
+      "programId": "vn_math_1",
+      "label": "VN Math 1 Local Sources",
+      "sourceQuestions": 627,
+      "importedQuestions": 627,
+      "readyQuestions": 627,
+      "blockerItems": 0,
+      "warningItems": 0,
+      "coverageStatus": "ready",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 17,
+      "sourceFormats": {
+        "doc": 17
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6\\TAI LIEU TOAN 1",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math1-rich-raw-extract.json",
+      "note": "627/627 questions are display-ready; 627 have visual explanations for scored practice."
+    },
+    {
+      "programId": "vn_math_2",
+      "label": "VN Math 2 Local Sources",
+      "sourceQuestions": 1990,
+      "importedQuestions": 1990,
+      "readyQuestions": 1990,
+      "blockerItems": 0,
+      "warningItems": 0,
+      "coverageStatus": "ready",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 64,
+      "sourceFormats": {
+        "doc": 64
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6\\TAI LIEU TOAN 2",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math2-rich-raw-extract.json",
+      "note": "1990/1990 questions are display-ready; 1990 have visual explanations for scored practice."
+    },
+    {
+      "programId": "vn_math_3",
+      "label": "VN Math 3 Local Sources",
+      "sourceQuestions": 184,
+      "importedQuestions": 184,
+      "readyQuestions": 184,
+      "blockerItems": 0,
+      "warningItems": 3,
+      "coverageStatus": "ready",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 34,
+      "sourceFormats": {
+        "doc": 22,
+        "docx": 12
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6\\TAI LIEU TOAN 3",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math3-rich-raw-extract.json",
+      "note": "184/184 questions are display-ready; 184 have visual explanations for scored practice."
+    },
+    {
+      "programId": "vn_math_4",
+      "label": "VN Math 4 Local Sources",
+      "sourceQuestions": 445,
+      "importedQuestions": 445,
+      "readyQuestions": 445,
+      "blockerItems": 0,
+      "warningItems": 0,
+      "coverageStatus": "ready",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 44,
+      "sourceFormats": {
+        "doc": 44
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6\\TAI LIEU TOAN 4",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math4-rich-raw-extract.json",
+      "note": "445/445 questions are display-ready; 445 have visual explanations for scored practice."
+    },
+    {
+      "programId": "vn_math_5",
+      "label": "VN Math 5 Local Sources",
+      "sourceQuestions": 416,
+      "importedQuestions": 416,
+      "readyQuestions": 416,
+      "blockerItems": 0,
+      "warningItems": 2,
+      "coverageStatus": "ready",
+      "adapterPass": true,
+      "sourceMatched": true,
+      "changedQuestions": 0,
+      "sourceFiles": 57,
+      "sourceFormats": {
+        "doc": 57
+      },
+      "sourcePath": "C:\\Users\\HAIQUYNH\\OneDrive\\SACH VIET\\TOAN\\CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6\\TAI LIEU TOAN 5",
+      "currentPath": "C:\\Users\\HAIQUYNH\\OneDrive\\CODE AI\\MIUPREP_SYSTEM\\reports\\content-quality\\math5-rich-raw-extract.json",
+      "note": "416/416 questions are display-ready; 416 have visual explanations for scored practice."
     },
     {
       "programId": "sat",

@@ -3,16 +3,16 @@ import goldenDataset from '../../content/src/mocks/golden-dataset.json';
 import { OpenAIAdapter } from './adapters/openai';
 import { GeminiAdapter } from './adapters/gemini';
 import type { CredentialStore } from './utils/credential-store';
-import { ObfuscatedLocalStorageStore } from './utils/credential-store';
+import { SessionCredentialStore } from './utils/credential-store';
 import { TauriKeychainStore } from './utils/tauri-keychain-store';
 
 // Re-export adapters, validators & stores
 export { OpenAIAdapter } from './adapters/openai';
 export { GeminiAdapter } from './adapters/gemini';
 export type { CredentialStore } from './utils/credential-store';
-export { 
-  InMemoryCredentialStore, 
-  ObfuscatedLocalStorageStore 
+export {
+  InMemoryCredentialStore,
+  SessionCredentialStore
 } from './utils/credential-store';
 export { TauriKeychainStore } from './utils/tauri-keychain-store';
 export { 
@@ -524,5 +524,6 @@ export function getActiveCredentialStore(): CredentialStore {
   if (typeof window !== 'undefined' && (window as any).__TAURI__) {
     return new TauriKeychainStore();
   }
-  return new ObfuscatedLocalStorageStore();
+  // Web: memory-only per session — browsers cannot persist API keys safely.
+  return new SessionCredentialStore();
 }

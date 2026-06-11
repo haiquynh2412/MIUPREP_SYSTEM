@@ -207,6 +207,51 @@ runAsyncChecks().catch((error) => {
   throw error;
 });
 
+testSessionCredentialStore().catch((error) => {
+  throw error;
+});
+
+async function testSessionCredentialStore(): Promise<void> {
+  const { SessionCredentialStore } = await import('./utils/credential-store');
+
+  // Simulate a browser with a legacy XOR-obfuscated key left in localStorage
+  const legacySalt = 'ielts-prep-obfuscator-entropy-salt-v1';
+  const legacyEncode = (text: string) => {
+    let result = '';
+    for (let i = 0; i < text.length; i++) {
+      result += String.fromCharCode(text.charCodeAt(i) ^ legacySalt.charCodeAt(i % legacySalt.length));
+    }
+    return Buffer.from(unescape(encodeURIComponent(result)), 'binary').toString('base64');
+  };
+
+  const backing = new Map<string, string>();
+  backing.set('ielts_app_secure_openai', legacyEncode('sk-legacy-value'));
+  (globalThis as any).window = {
+    localStorage: {
+      getItem: (k: string) => backing.get(k) ?? null,
+      setItem: (k: string, v: string) => void backing.set(k, v),
+      removeItem: (k: string) => void backing.delete(k),
+    },
+  };
+  (globalThis as any).localStorage = (globalThis as any).window.localStorage;
+
+  try {
+    const store = new SessionCredentialStore();
+    assert((await store.get('openai')) === 'sk-legacy-value', 'Legacy XOR value should be migrated into memory.');
+    assert(!backing.has('ielts_app_secure_openai'), 'Legacy XOR value must be purged from localStorage after migration.');
+
+    await store.set('gemini', 'g-key');
+    assert((await store.get('gemini')) === 'g-key', 'Session store should return values set in memory.');
+    assert([...backing.keys()].every(k => !k.includes('gemini')), 'Session store must never persist keys to localStorage.');
+
+    await store.delete('gemini');
+    assert((await store.get('gemini')) === null, 'Deleted keys should be gone.');
+  } finally {
+    delete (globalThis as any).window;
+    delete (globalThis as any).localStorage;
+  }
+}
+
 async function runAsyncChecks(): Promise<void> {
   const writingRecorded = await gradeWritingWithTutorEvent(writingAdapter, state, {
     attemptId: 'writing-1',
