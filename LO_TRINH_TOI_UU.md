@@ -114,9 +114,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 ### 2.3. Chuẩn hóa 2 app JS còn lại
 
 - [x] **2.3.1. Migrate miumath-app sang TypeScript — HOÀN THÀNH 14/14 file** *(11/06/2026 — GĐ1 commit `02aefbd5`; GĐ2 commit `b278afe6`: toàn bộ App + 12 components → .tsx, type hóa mọi useState hub (MiuMathUser, MiuMathRawQuestion...), TS bắt được 1 bug CSS thật (`justify` → `justifyContent` bị bỏ qua âm thầm). Nợ chuyển tiếp đã ghi: `noImplicitAny=false` đến khi viết Props interface cho components; strict null checks bật đủ. Test: tsc 0 lỗi, build PASS, lint PASS. **Phát hiện mới:** miumath tự quản auth với mật khẩu PLAINTEXT trong localStorage (`u.password === authPassword`) → cần task bảo mật riêng: dùng password utils từ @miuprep/db)*
-- [~] **2.3.2. Migrate miuphysics-app sang TypeScript**
-  - [x] *GĐ1 (11/06/2026): strict tsconfig + main.tsx + gate typecheck hook/CI. Test: tsc 0 lỗi, build PASS. Commit `de8ba89c`*
-  - [ ] GĐ2: ĐÃ ĐO THỬ (11/06): rename 13 file → **396 lỗi** ngay cả khi tắt noImplicitAny (221 TS2339 property-not-exist, 64 TS2554 sai số tham số hàm — code gốc lỏng hơn miumath nhiều). Đã hoàn nguyên sạch. Cần 1 phiên riêng, làm từng component một.
+- [x] **2.3.2. Migrate miuphysics-app sang TypeScript — HOÀN THÀNH 17/17 file** *(11/06/2026 — GĐ1 commit `de8ba89c`; GĐ2 commit `efbb3f6b`: giải quyết trọn 396 lỗi đã đo. Nguyên nhân gốc của 64 lỗi chỉ là 1 ký tự: tham số `params` của wrapper `t()` thiếu `?`. **3 bug thật do compiler bắt được:** (1) dashboard tính mastery % bằng field không tồn tại `r.mastery` → luôn hiện 0%, sửa thành `r.accuracy`; (2) CSS `justifycontent` viết thường bị browser bỏ qua âm thầm; (3) phép trừ trực tiếp 2 object Date trong sort của ObservationDiary. Nợ chuyển tiếp: props components đánh dấu `any` chờ Props interfaces. Test: tsc 0 lỗi, build PASS)*
+- [x] **2.3.3. (MỚI) Vá bảo mật miumath-app: PBKDF2 + bỏ tài khoản mặc định** *(11/06/2026 — commit `63a1d062`: login qua `verifyPassword` + tự nâng cấp record plaintext cũ; đăng ký hash PBKDF2; tài khoản đầu tiên trên thiết bị thành admin (bỏ seed admin/admin + student/student); modal sửa thành viên không còn hiển thị mật khẩu (type=password, để trống = giữ nguyên); session không lưu hash. Test: tsc 0 lỗi, build PASS, lint PASS, grep plaintext sạch)*
 
 ### 2.4. Backend trung tâm (đầu tư chiến lược nhất)
 
