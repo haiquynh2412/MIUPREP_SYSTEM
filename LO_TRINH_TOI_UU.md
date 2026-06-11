@@ -61,7 +61,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 1.2. CI/CD + chốt chặn chất lượng
 
-- [x] **1.2.1. GitHub Actions CI + push lên remote** *(12/06/2026 — Đã push 60 commit lên `github.com/haiquynh2412/MIUPREP_SYSTEM` (master tracking). CI workflow `.github/workflows/ci.yml` (T-PKG / SAT / lint+typecheck 3 app / build) kích hoạt tự động trên push. Đã xử lý chặn: 4 file dữ liệu thô >50MB (zip SAT 115MB, JSON content-quality 106/53/53MB) gỡ khỏi toàn bộ lịch sử bằng filter-branch + thêm .gitignore. Còn lại: bạn xem tab Actions xác nhận run xanh)*
+- [x] **1.2.1. GitHub Actions CI + push lên remote — CI XANH 4/4 JOBS** *(12/06/2026 — Push toàn bộ lên `github.com/haiquynh2412/MIUPREP_SYSTEM`. CI workflow xác nhận chạy đậu trên GitHub: Build all / ESLint 4 app / SAT / Unit tests 7 packages đều success (run `79af5e19`). Đã xử lý: (a) 4 file thô >50MB gỡ khỏi lịch sử bằng filter-branch + .gitignore; (b) 2 lỗi clean-checkout có sẵn trong repo — core test thiếu build (`tsc && node test-runner.js`) và test-packages cần build-all trước vì core cross-import `../ai/dist`+`../content/dist`. Pipeline giờ chốt chặn mọi push/PR)*
 - [x] **1.2.2. Thêm pre-commit hook (dùng `core.hooksPath`, không cần dependency husky)** *(11/06/2026 — Hook `.githooks/pre-commit`: lint app bị ảnh hưởng + `tsc --noEmit` package bị ảnh hưởng; tự cài qua script `prepare`. Test: commit chứa lỗi TS cố ý → BỊ CHẶN đúng (error TS2322); commit hợp lệ → đi qua bình thường. Commit `2935f6c7`)*
 - [ ] **1.2.3. Thêm Prettier + format toàn repo (1 commit riêng chỉ format)** *(HOÃN CÓ ĐIỀU KIỆN 11/06/2026: chỉ thực hiện SAU khi repo đã push lên GitHub (có backup off-machine). Lý do: reformat tạo diff khổng lồ + mất git blame; cần kèm `.git-blame-ignore-revs` và loại trừ file data sinh tự động (math*-enrichment.ts, knowledge/index.ts) khỏi phạm vi format)*
   - Test vòng 1: `npx prettier --check .` pass
@@ -167,7 +167,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 - [ ] **3.3.2. i18n framework (i18next) — externalize text Việt/Anh**
   - Test vòng 1: chuyển đổi ngôn ngữ runtime hoạt động trên portal
   - Test vòng 2: script quét chuỗi hardcode còn sót — 0 kết quả trong components đã migrate
-- [ ] **3.3.3. Bundle size budget + Lighthouse CI** (chặn PR làm phình bundle quá ngưỡng)
+- [x] **3.3.3. Bundle size budget** *(11/06/2026 — `scripts/check-bundle-budget.mjs` fail CI nếu entry chunk vượt ngưỡng (portal 110KB, hiện 72.5KB); chốt giữ thành quả code-split. Wire vào CI build job. Lighthouse CI để dành phiên i18n/perf riêng)*
 
 ---
 
@@ -178,8 +178,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 9 (+1 gộp GĐ2) | ~83% |
 | GĐ 2 — Kiến trúc | 16 | 10 | ~63% |
-| GĐ 3 — Cạnh tranh | 11 | 4 | ~36% |
-| **Tổng** | **42** | **27** | **~64%** |
+| GĐ 3 — Cạnh tranh | 11 | 5 | ~45% |
+| **Tổng** | **42** | **28** | **~67%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
