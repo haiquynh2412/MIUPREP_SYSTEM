@@ -54,14 +54,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - Bước: Tạo key mới trong Google AI Studio/Cloud Console → cập nhật `apps/sat-studio/.env` → vô hiệu key cũ
   - Test vòng 1: gọi thử 1 request Gemini bằng key mới (qua app hoặc curl) → thành công
   - Test vòng 2: gọi thử bằng key CŨ → phải bị từ chối (401/403); grep toàn repo không còn key cũ
-- [ ] **1.1.2. Xóa credentials admin/student hardcode khỏi `apps/ielts-desktop/src/App.tsx:605,626`**
-  - Bước: thay bằng first-run setup flow — lần đầu mở app bắt buộc tạo tài khoản admin với mật khẩu tự chọn
-  - Test vòng 1: grep toàn repo không còn hash `240ef403...` và `264c8c38...`; chạy app mới (xóa localStorage) → hiện flow tạo admin
-  - Test vòng 2: T-E2E-IELTS (cập nhật e2e nếu cần) + đăng nhập sai mật khẩu phải bị từ chối
-- [ ] **1.1.3. Thay SHA256 bằng PBKDF2/Argon2 cho mật khẩu (có salt ngẫu nhiên)**
-  - Bước: dùng Web Crypto `PBKDF2` (không cần dependency mới) với salt per-user, iterations ≥ 310.000; viết migration cho user cũ (re-hash khi đăng nhập thành công lần sau)
-  - Test vòng 1: unit test hash/verify (2 user cùng mật khẩu → hash khác nhau; verify đúng/sai chính xác)
-  - Test vòng 2: e2e đăng nhập với tài khoản tạo trước migration vẫn vào được, sau đó hash trong DB đã được nâng cấp
+- [x] **1.1.2. Xóa credentials admin/student hardcode (ielts-desktop + cpe-desktop + portal)** *(11/06/2026 — Phạm vi thực tế rộng hơn audit: 5 file ở 3 app. Đã xóa: seed admin/student mặc định, backdoor login admin123/student, passcode hardcode (admin123, miuprep2026), plaintext passwordHash ở portal, bypass theo username. Thay bằng first-run setup: admin đầu tiên trên thiết bị đăng ký tự do, admin sau phải do admin hiện tại cấp. CPE được thêm role selector. Test: grep sạch toàn repo; e2e recovery PASS với user seed mới; QA portal 2/2 PASS)*
+- [x] **1.1.3. Thay SHA256 bằng PBKDF2 cho mật khẩu (salt ngẫu nhiên)** *(11/06/2026 — Module mới `packages/db/src/password.ts`: PBKDF2-SHA256 310k iterations qua Web Crypto, không thêm dependency. `verifyPassword` nhận diện record cũ (SHA256-hex / plaintext) và trả `needsRehash` → tự nâng cấp hash khi user đăng nhập thành công. Unit tests: salt khác nhau cho cùng mật khẩu, verify đúng/sai, migration legacy — PASS trong `npm test -w @miuprep/db`)*
 - [ ] **1.1.4. Gỡ bỏ ObfuscatedLocalStorageStore (XOR store) — `packages/ai/src/utils/credential-store.ts`**
   - Bước: desktop dùng TauriKeychainStore; bản web yêu cầu nhập key mỗi session (giữ trong memory) hoặc chặn tính năng AI khi không có keychain; migration: đọc key cũ 1 lần → chuyển vào keychain → xóa khỏi localStorage
   - Test vòng 1: `npm test -w @miuprep/ai` pass; kiểm tra localStorage sau migration không còn key
@@ -204,10 +198,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | Giai đoạn | Tổng task | Hoàn thành | Tiến độ |
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
-| GĐ 1 — Nền móng | 12 | 1 (+1 đang chờ remote) | ~12% |
+| GĐ 1 — Nền móng | 12 | 3 (+1 đang chờ remote) | ~29% |
 | GĐ 2 — Kiến trúc | 13 | 0 | 0% |
 | GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
-| **Tổng** | **40** | **5** | **12.5%** |
+| **Tổng** | **40** | **7** | **17.5%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
@@ -219,3 +213,4 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 0.4 | `git status` sạch sau commit | Commit `0ebddd52`, 254 file |
 | 11/06/2026 | 1.2.1 | PASS local — cả 4 nhóm lệnh CI chạy xanh (T-PKG, SAT, lint 4 app, build) | `[~]` chờ GitHub remote để kích hoạt Actions |
 | 11/06/2026 | 1.2.2 | PASS — hook chặn lỗi TS cố ý (TS2322), cho qua commit hợp lệ | Commit `2935f6c7`; hook tự cài qua `npm install` (script `prepare`) |
+| 11/06/2026 | 1.1.2 + 1.1.3 | PASS — 7/7 package tests; build ielts/cpe/portal; lint 3 app; e2e recovery PASS; QA portal 2/2 PASS; grep credentials sạch | Commit `af0f0165`. Gỡ toàn bộ backdoor/seed mặc định ở 3 app; PBKDF2 + auto-rehash; e2e tự seed user. **Phát hiện mới:** `QuotaExceededError` ở web mode (ngân hàng đề vượt quota localStorage) → cần xử lý ở task 2.2 (chuyển content sang load theo nhu cầu / IndexedDB); e2e listening fail ở bước sau-submit vì vấn đề này (có sẵn, không do auth) |
