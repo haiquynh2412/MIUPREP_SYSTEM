@@ -47,6 +47,7 @@ jobs:
       - run: npm run lint -w @miuprep/cpe-desktop
       - run: npm run lint -w miumath-app
       - run: npm run typecheck -w miumath-app
+      - run: npm run typecheck -w miuphysics-app
 
   build:
     name: Build all workspaces
