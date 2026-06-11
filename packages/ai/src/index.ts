@@ -15,10 +15,30 @@ export {
   SessionCredentialStore
 } from './utils/credential-store';
 export { TauriKeychainStore } from './utils/tauri-keychain-store';
-export { 
+export {
+  CachingAIAdapter,
+  InMemoryResponseCache,
+  PROMPT_VERSION,
+  hashContent,
+  type ResponseCache,
+  type CachingAdapterOptions,
+} from './utils/cache';
+export {
+  UsageLedger,
+  QuotaExceededError,
+  MODEL_PRICING,
+  estimateTokens,
+  estimateCostUsd,
+  pricingForModel,
+  type UsageEntry,
+  type UsageSummary,
+  type QuotaPolicy,
+  type ModelPricing,
+} from './utils/usage';
+export {
   AIValidationError,
   validateWritingFeedback,
-  validateSpeakingFeedback 
+  validateSpeakingFeedback
 } from './utils/schema-validator';
 export {
   AI_TUTOR_FEEDBACK_SCHEMA_VERSION,

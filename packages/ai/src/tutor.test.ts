@@ -286,3 +286,63 @@ async function runAsyncChecks(): Promise<void> {
   assert(Boolean(speakingRecorded.event.payload.speakingPracticeState), 'Speaking tutor event should persist recording/transcript state.');
   assert(computeMastery(speakingRecorded.state).length === 0, 'Speaking feedback plan should not alter mastery.');
 }
+
+// ===========================================================================
+// Cache + cost ledger tests
+// ===========================================================================
+import { CachingAIAdapter, hashContent, PROMPT_VERSION } from './utils/cache';
+import { UsageLedger, QuotaExceededError, estimateCostUsd } from './utils/usage';
+import type { AIAdapter } from './index';
+
+async function testCacheAndUsage(): Promise<void> {
+  assert(hashContent(['a', 1]) === hashContent(['a', 1]), 'hashContent must be stable for equal inputs.');
+  assert(hashContent(['a', 1]) !== hashContent(['a', 2]), 'hashContent must differ for different inputs.');
+
+  let writingCalls = 0;
+  let speakingCalls = 0;
+  const fake: AIAdapter = {
+    async gradeWriting() {
+      writingCalls++;
+      return { attemptId: 'x', taskNumber: 2, bandOverall: 7, criteria: [], corrections: [], suggestionsForImprovement: [] } as any;
+    },
+    async gradeSpeaking() {
+      speakingCalls++;
+      return { attemptId: 'x' } as any;
+    },
+  };
+
+  const ledger = new UsageLedger({ perLearnerUsd: 1 });
+  const adapter = new CachingAIAdapter(fake, { ledger, learnerId: 'L1', model: 'gpt-4o', now: () => '2026-06-11T00:00:00.000Z' });
+
+  const essay = 'A reasonably long essay body that repeats. '.repeat(20);
+  await adapter.gradeWriting({ attemptId: 'a1', essay, taskNumber: 2, track: 'ielts' });
+  await adapter.gradeWriting({ attemptId: 'a2', essay, taskNumber: 2, track: 'ielts' });
+  assert(writingCalls === 1, 'Identical essay must hit cache on the second call (provider invoked once).');
+
+  await adapter.gradeWriting({ attemptId: 'a3', essay: essay + ' extra', taskNumber: 2, track: 'ielts' });
+  assert(writingCalls === 2, 'A changed essay must miss the cache and call the provider.');
+
+  const summary = ledger.summary('L1');
+  assert(summary.calls === 3, 'Ledger should record all three calls.');
+  assert(summary.cachedCalls === 1, 'Exactly one call should be marked cached.');
+  assert(summary.billedCostUsd > 0, 'Billed cost should accrue for provider calls.');
+  assert(summary.billedCostUsd < summary.totalCostUsd, 'Billed cost must exclude the cached call cost.');
+
+  // Quota enforcement: a tiny per-learner cap blocks before the billable call.
+  const strict = new UsageLedger({ perLearnerUsd: 0.0000001 });
+  const strictAdapter = new CachingAIAdapter(fake, { ledger: strict, learnerId: 'L2', model: 'gpt-4o' });
+  let threw = false;
+  try {
+    await strictAdapter.gradeSpeaking({ attemptId: 's1', transcriptMock: 'hello '.repeat(50), track: 'cpe' });
+  } catch (e) {
+    threw = e instanceof QuotaExceededError;
+  }
+  assert(threw, 'A breached per-learner quota must throw QuotaExceededError before calling the provider.');
+  assert(speakingCalls === 0, 'Provider speaking grader must not run when quota is exceeded.');
+
+  assert(estimateCostUsd('gpt-4o', 1_000_000, 0) === 2.5, 'Cost estimate should match the gpt-4o input price.');
+  assert(estimateCostUsd('mock', 1_000_000, 1_000_000) === 0, 'Mock model must be free.');
+  assert(PROMPT_VERSION.length > 0, 'PROMPT_VERSION must be set for cache invalidation.');
+}
+
+testCacheAndUsage().then(() => console.log('Cache + usage tests passed.')).catch((e) => { throw e; });

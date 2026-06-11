@@ -1,4 +1,6 @@
-export * from "./adaptive-engine";
+// Adaptive engine (Elo calibration + CAT) is consumed via the deep path
+// `@miuprep/learning/src/adaptive-engine` to keep this barrel free of relative
+// re-exports (which break node's TS-source loading used by sibling package tests).
 
 export const LEARNING_EVENT_SCHEMA_VERSION = "learning_event_v1";
 export const ATTEMPT_SCHEMA_VERSION = "miuprep_attempt_v1";
