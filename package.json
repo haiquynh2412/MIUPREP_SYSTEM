@@ -16,7 +16,8 @@
     "dev:sat": "npm run dev:vite -w sat-studio",
     "qa:portal-template-practice": "node scripts/qa-portal-template-practice.mjs",
     "qa:portal-english-item-bank-practice": "node scripts/qa-portal-english-item-bank-practice.mjs",
-    "build": "node scripts/build-workspaces.cjs"
+    "build": "node scripts/build-workspaces.cjs",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "devDependencies": {
     "typescript": "^5.3.3"

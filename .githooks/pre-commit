@@ -1,0 +1,41 @@
+#!/bin/sh
+# Pre-commit guard: lint/typecheck cac workspace co file bi thay doi trong commit nay.
+# Cai dat tu dong qua "npm install" (script "prepare" o package.json goc).
+# Bo qua hook (khong khuyen khich): git commit --no-verify
+
+staged=$(git diff --cached --name-only --diff-filter=ACM)
+[ -z "$staged" ] && exit 0
+
+fail=0
+
+check_app() {
+  prefix="$1"; ws="$2"
+  if echo "$staged" | grep -q "^$prefix/src/.*\.\(ts\|tsx\|js\|jsx\)$"; then
+    echo "[pre-commit] eslint: $ws"
+    npm run lint -w "$ws" || fail=1
+  fi
+}
+
+check_app "apps/miuprep-portal" "miuprep-portal"
+check_app "apps/ielts-desktop" "@miuprep/desktop"
+check_app "apps/cpe-desktop" "@miuprep/cpe-desktop"
+check_app "apps/miumath-app" "miumath-app"
+
+if echo "$staged" | grep -q "^apps/sat-studio/src/.*\.ts$"; then
+  echo "[pre-commit] typecheck: sat-studio"
+  npm run typecheck -w sat-studio || fail=1
+fi
+
+for pkg in ai beta content core db knowledge learning ui; do
+  if echo "$staged" | grep -q "^packages/$pkg/src/.*\.tsx\?$"; then
+    echo "[pre-commit] tsc --noEmit: packages/$pkg"
+    npx tsc --noEmit -p "packages/$pkg" || fail=1
+  fi
+done
+
+if [ "$fail" -ne 0 ]; then
+  echo ""
+  echo "[pre-commit] BI CHAN: lint/typecheck that bai. Sua loi roi commit lai."
+  exit 1
+fi
+exit 0
