@@ -52,3 +52,6 @@ apps/sat-studio/data/*.zip
 reports/content-quality/math9-display-ready-preview.json
 reports/content-quality/math10-display-ready-preview.json
 reports/content-quality/math10-published-question-bank.json
+
+# Scratch / throwaway workspace (never versioned)
+scratch/
