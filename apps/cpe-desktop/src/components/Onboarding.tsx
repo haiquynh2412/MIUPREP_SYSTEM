@@ -1,162 +1,16 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { hashPassword, verifyPassword } from '@miuprep/db';
 import type { StorageAdapter, LocalUser } from '@miuprep/db';
+import { getDiagnosticBank } from '@miuprep/content';
 
 interface OnboardingProps {
   db: StorageAdapter;
   onComplete: (userId: string) => void;
 }
 
-interface DiagnosticQuestion {
-  id: string;
-  skill: 'reading' | 'listening' | 'grammar';
-  title: string;
-  questionText: string;
-  acceptedAnswers: string[];
-  explanation: string;
-}
-
-const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
-  {
-    id: 'q1',
-    skill: 'reading',
-    title: 'Question 1: Multiple-Choice Cloze (C2 Level)',
-    questionText: 'He was determined to ______ his mark on the scientific community.',
-    acceptedAnswers: ['A', 'a'],
-    explanation: 'Cấu trúc cố định (collocation) ở trình độ C2: "make one\'s mark" nghĩa là tạo dựng danh tiếng, dấu ấn cá nhân nổi bật trong một lĩnh vực. Do đó chọn đáp án A (make).'
-  },
-  {
-    id: 'q2',
-    skill: 'reading',
-    title: 'Question 2: Open Cloze (C2 Level)',
-    questionText: 'No sooner had he arrived ______ the storm broke.',
-    acceptedAnswers: ['than'],
-    explanation: 'Cấu trúc đảo ngữ ngữ pháp nâng cao của C2: "No sooner had + S + V3/ed + THAN + S + V2/ed" (Ngay sau khi... thì...). Do đó từ cần điền vào ô trống là "than".'
-  },
-  {
-    id: 'q3',
-    skill: 'reading',
-    title: 'Question 3: Word Formation (C2 Level)',
-    questionText: 'The beauty of the island is ______ (COMPARE).',
-    acceptedAnswers: ['incomparable'],
-    explanation: 'Từ loại phái sinh (Word Formation) ở cấp độ C2: Từ động từ gốc "compare", ta chuyển thành tính từ phủ định mang nghĩa tuyệt đối là "incomparable" (đẹp vô song, không thể so sánh được).'
-  },
-  {
-    id: 'q4',
-    skill: 'reading',
-    title: 'Question 4: Key Word Transformation (C2 Level)',
-    questionText: 'It was a mistake for you to buy that expensive car. (SHOULD) -> You ______ that expensive car.',
-    acceptedAnswers: ['should not have bought', "shouldn't have bought"],
-    explanation: 'Dạng bài biến đổi câu giữ nguyên nghĩa của CPE: Sử dụng động từ khuyết thiếu ở quá khứ "should not have + V3" để diễn tả một sự việc đáng lẽ không nên làm trong quá khứ.'
-  },
-  {
-    id: 'q5',
-    skill: 'reading',
-    title: 'Question 5: Multiple Choice Reading Comprehension',
-    questionText: 'According to the scientific passage: "Advanced quantum networks present unprecedented cryptographic opportunities. However, the sheer vulnerability of quantum states to environmental decoherence has precluded their widespread commercial application." -> What is the primary obstacle to the commercialization of quantum networks? (A. Financial constraints, B. Environmental sensitivity, C. Lack of cryptographic interest, D. Hardware shortage)',
-    acceptedAnswers: ['B', 'b'],
-    explanation: 'Bài đọc nêu rõ sự nhạy cảm cực độ của trạng thái lượng tử trước sự mất liên kết từ môi trường (environmental decoherence) chính là rào cản lớn nhất ngăn việc thương mại hóa rộng rãi. Chọn đáp án B.'
-  },
-  {
-    id: 'q6',
-    skill: 'listening',
-    title: 'Question 6: Note Completion (C2 Level)',
-    questionText: 'Historically, the adult brain was considered to be a ______ structure.',
-    acceptedAnswers: ['static'],
-    explanation: 'Trong bài nghe học thuật: "...Historically, it was believed that the adult brain was a static structure..." (Trong lịch sử, não người trưởng thành được cho là một cấu trúc tĩnh). Do đó đáp án là "static".'
-  },
-  {
-    id: 'q7',
-    skill: 'listening',
-    title: 'Question 7: Note Completion (C2 Level)',
-    questionText: 'Neuroplasticity refers to the brain\'s capacity to form new ______ connections.',
-    acceptedAnswers: ['neural'],
-    explanation: 'Trong bài nghe: "...neuroplasticity—the brain’s remarkable ability to reorganize itself by forming new neural connections..." (Khả năng tổ chức lại bằng cách tạo ra các kết nối thần kinh mới). Do đó đáp án là "neural".'
-  },
-  {
-    id: 'q8',
-    skill: 'listening',
-    title: 'Question 8: Note Completion (C2 Level)',
-    questionText: 'Groundbreaking research in the late twentieth century shattered the long-held ______.',
-    acceptedAnswers: ['dogma'],
-    explanation: 'Trong bài nghe: "...groundbreaking research in the late twentieth century shattered this dogma..." (nghiên cứu đột phá vào cuối thế kỷ 20 đã đập tan giáo điều này). Đáp án là "dogma".'
-  },
-  {
-    id: 'q9',
-    skill: 'listening',
-    title: 'Question 9: Note Completion (C2 Level)',
-    questionText: 'Our cognitive architecture remains highly malleable even in ______ (old age).',
-    acceptedAnswers: ['senescence'],
-    explanation: 'Trong bài nghe: "...our cognitive architecture remains highly malleable even in senescence." (Cấu trúc nhận thức vẫn vô cùng linh hoạt ngay cả khi về già). Đáp án là "senescence".'
-  },
-  {
-    id: 'q10',
-    skill: 'listening',
-    title: 'Question 10: Note Completion (C2 Level)',
-    questionText: 'This discovery has profound implications for ______ rehabilitation.',
-    acceptedAnswers: ['stroke'],
-    explanation: 'Trong bài nghe: "...profound implications for stroke rehabilitation and learning." (tác động sâu sắc đến phục hồi chức năng sau đột quỵ và học tập). Đáp án là "stroke".'
-  },
-  {
-    id: 'q11',
-    skill: 'grammar',
-    title: 'Question 11: Subjunctive Mood (C2 Level)',
-    questionText: 'It is imperative that he ______ present at the board meeting.',
-    acceptedAnswers: ['B', 'b'],
-    explanation: 'Cấu trúc cầu khiến/giả định cách (Subjunctive Mood) ở cấp độ C2: "It is imperative/essential/important that + S + V_inf (nguyên thể không chia)". Do đó chọn đáp án B (be).'
-  },
-  {
-    id: 'q12',
-    skill: 'grammar',
-    title: 'Question 12: Conditional Inversion (C2 Level)',
-    questionText: '______ you require any further assistance, please do not hesitate to contact us.',
-    acceptedAnswers: ['A', 'a'],
-    explanation: 'Đảo ngữ câu điều kiện loại 1 (CPE style): "Should + S + V_inf" tương đương "If + S + V(present)". Chọn đáp án A (Should).'
-  },
-  {
-    id: 'q13',
-    skill: 'grammar',
-    title: 'Question 13: Advanced Phrasal Verbs (C2 Level)',
-    questionText: 'I was completely ______ by his sudden decision to resign.',
-    acceptedAnswers: ['A', 'a'],
-    explanation: 'Cụm động từ nâng cao C2: "be taken aback" nghĩa là vô cùng ngạc nhiên, sững sờ hoặc bị sốc bởi điều gì. Chọn đáp án A.'
-  },
-  {
-    id: 'q14',
-    skill: 'grammar',
-    title: 'Question 14: Third Conditional Inversion (C2 Level)',
-    questionText: 'Had I known about the traffic, I ______ here on time.',
-    acceptedAnswers: ['B', 'b'],
-    explanation: 'Đảo ngữ câu điều kiện loại 3 diễn tả sự việc trái ngược quá khứ: "Had + S + V3/ed, S + would have + V3/ed" (Nếu tôi biết... tôi đã đến đây đúng giờ). Chọn đáp án B (would have been).'
-  },
-  {
-    id: 'q15',
-    skill: 'grammar',
-    title: 'Question 15: Gerund with Regret (C2 Level)',
-    questionText: 'He regrets ______ school at such an early age, as he now struggles to find a job.',
-    acceptedAnswers: ['A', 'a'],
-    explanation: 'Cấu trúc động từ: "regret + V-ing" (hối hận vì đã làm gì trong quá khứ). Tránh nhầm lẫn với "regret + to-V" (tiếc khi sắp phải làm gì). Chọn đáp án A (leaving).'
-  }
-];
-
-// Ground Truth Answers
-const GROUND_TRUTH: Record<string, string[]> = {
-  q1: ['A', 'a'],
-  q2: ['than'],
-  q3: ['incomparable'],
-  q4: ['should not have bought', "shouldn't have bought"],
-  q5: ['B', 'b'],
-  q6: ['static'],
-  q7: ['neural'],
-  q8: ['dogma'],
-  q9: ['senescence'],
-  q10: ['stroke'],
-  q11: ['B', 'b'],
-  q12: ['A', 'a'],
-  q13: ['A', 'a'],
-  q14: ['B', 'b'],
-  q15: ['A', 'a']
-};
+const __diagBank = getDiagnosticBank('cpe');
+const DIAGNOSTIC_QUESTIONS = __diagBank.questions;
+const GROUND_TRUTH = __diagBank.groundTruth;
 
 export default function Onboarding({ db, onComplete }: OnboardingProps) {
   const [view, setView] = useState<'login' | 'register' | 'diagnostic' | 'result' | 'review'>('register');

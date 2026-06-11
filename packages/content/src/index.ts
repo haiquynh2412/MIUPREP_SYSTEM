@@ -98,3 +98,4 @@ export * from './math5-plan';
 export * from './math5-import';
 export * from './math5-content-guard-report';
 export * from './mocks';
+export * from './onboarding-diagnostics';
