@@ -1,4 +1,4 @@
-import LearnerProfileCard from '../LearnerProfileCard';
+import { LearnerProfileCard } from '@miuprep/exam-desktop';
 import type { IeltsTest } from '@miuprep/content';
 import type { ErrorNotebookEntry, ExamAttempt, LearnerProfile } from '@miuprep/db';
 import type { AIConfig, CredentialStore } from '@miuprep/ai';
@@ -162,6 +162,7 @@ export default function DashboardPanel({
           getDaysRemaining={getDaysRemaining}
           getGlobalWeaknessAnalysis={getGlobalWeaknessAnalysis}
           getMicroSkillsAnalysis={getMicroSkillsAnalysis}
+          activeTrack="cpe"
           onNavigateTab={(tab) => {
             setReviewQueue([]);
             setCurrentReviewIdx(-1);

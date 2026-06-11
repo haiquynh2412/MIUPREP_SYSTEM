@@ -25,11 +25,10 @@ import { IELTS_WRITING_SAMPLES } from '@miuprep/content/src/mocks/ielts-writing-
 import { CPE_WRITING_SAMPLES } from '@miuprep/content/src/mocks/cpe-writing-speaking-samples';
 
 // Specialized Hook Imports
-import { useLearnerProfile, useErrorNotebook, useAiEvaluation, useExam } from '@miuprep/exam-desktop';
+import { useLearnerProfile, useErrorNotebook, useAiEvaluation, useExam, LearnerProfileCard } from '@miuprep/exam-desktop';
 import { TRACK_CONFIG } from './trackConfig';
 
 // Modular Presentation Component Imports
-import LearnerProfileCard from './components/LearnerProfileCard';
 import Onboarding from './components/Onboarding';
 
 import { ModeSelectorModal, ImportErrorModal, ExamSectionSheet } from '@miuprep/exam-desktop';
