@@ -514,7 +514,7 @@ function normalizePersistedEditableSections(raw: unknown): EditableExamSection[]
         questions: questionsValue.map((question, questionIndex) => normalizeEditableQuestion(question, questionIndex)),
       };
     })
-    .filter((section): section is EditableExamSection => Boolean(section));
+    .filter((section) => section !== null);
 }
 
 function resolvePreviousEditableSections(exam: ImportedExam, previousExam?: ImportedExam | null): EditableExamSection[] {

@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import React, { Suspense } from 'react';
 import type { LocalUser } from '@miuprep/db';
 import type { LearningEventRecord } from '@miuprep/learning';

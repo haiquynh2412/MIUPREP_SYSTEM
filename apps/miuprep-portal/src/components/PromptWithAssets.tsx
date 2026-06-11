@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import type { ReactNode } from 'react';
 
 const FORMULA_TOKEN_PATTERN = /\{\{formula:([^}|]+)(?:\|w=(\d+))?(?:\|h=(\d+))?\}\}/g;

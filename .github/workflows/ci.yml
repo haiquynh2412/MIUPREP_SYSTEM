@@ -42,6 +42,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint -w miuprep-portal
+      - run: npm run typecheck -w miuprep-portal
       - run: npm run lint -w @miuprep/desktop
       - run: npm run lint -w @miuprep/cpe-desktop
       - run: npm run lint -w miumath-app

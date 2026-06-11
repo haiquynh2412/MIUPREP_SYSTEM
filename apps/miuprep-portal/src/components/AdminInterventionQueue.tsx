@@ -632,7 +632,7 @@ function buildRecurringMisconceptions(
         id: misconception.id,
         name: misconception.name,
         kind: misconception.kind,
-        track: misconception.domainId === 'mathematics' ? 'math' : 'ielts',
+        track: misconception.domainId === 'mathematics' ? ('math' as const) : ('ielts' as const),
         priority,
         score,
         evidenceCount,

@@ -1,4 +1,5 @@
 import React, { Suspense, useState, useEffect } from 'react';
+import type { JSX } from 'react';
 import { MiuMascot } from '@miuprep/ui';
 import { calculateCoinsReward } from '@miuprep/core';
 import { LocalStorageAdapter, LocalUser, SystemLog, hashPassword, verifyPassword } from '@miuprep/db';
@@ -86,6 +87,7 @@ import {
   type EditableExamSection,
   type EnglishExamTrack,
   type ImportedExam,
+  type MathLesson,
 } from './lib/adminContent';
 
 const SystemSurfacePreview = React.lazy(() => import('./components/SystemSurfacePreview'));
@@ -370,7 +372,7 @@ export default function App() {
   const [adminWorkspaceTab, setAdminWorkspaceTab] = useState<AdminWorkspaceTabId>('overview');
   const [adminActiveTab, setAdminActiveTab] = useState<'math' | 'sat' | 'ielts' | 'cae' | 'cpe'>('math');
   const [contentReviewFilter, setContentReviewFilter] = useState<ContentReviewFilter>('all');
-  const [mathLessons, setMathLessons] = useState([
+  const [mathLessons, setMathLessons] = useState<MathLesson[]>([
     // Algebra Components
     { id: 'math-alg-01', title: 'Căn bậc hai và Căn bậc ba nâng cao', topic: 'Đại số (Algebra)', count: 45, status: 'Active' },
     { id: 'math-alg-02', title: 'Rút gọn biểu thức chứa căn thức bậc hai', topic: 'Đại số (Algebra)', count: 55, status: 'Active' },

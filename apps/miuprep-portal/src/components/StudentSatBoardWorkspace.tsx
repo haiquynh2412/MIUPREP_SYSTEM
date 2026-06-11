@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import type React from 'react';
 import { getSatExplanation, type SatPracticeState } from '../lib/satPractice';
 import type { TemplatePracticeState } from '../lib/templatePractice';
@@ -211,7 +212,7 @@ export default function StudentSatBoardWorkspace({
               <div className="space-y-3">
                 {activePracticeState.questions[activePracticeState.currentIndex].choices ? (
                   /* Multiple Choice Questions */
-                  Object.entries(activePracticeState.questions[activePracticeState.currentIndex].choices).map(([opt, text]) => {
+                  Object.entries(activePracticeState.questions[activePracticeState.currentIndex].choices ?? {}).map(([opt, text]) => {
                     const isSelected = activePracticeState.selectedAnswer === opt;
                     const isCorrectAns = activePracticeState.questions[activePracticeState.currentIndex].correctAnswer?.trim().toUpperCase() === opt.toUpperCase();
                     const hasBeenAnswered = activePracticeState.answered;
