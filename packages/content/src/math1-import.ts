@@ -326,20 +326,104 @@ function countBy<T>(items: T[], key: (item: T) => string): Record<string, number
   }, {});
 }
 
+function evaluateExpression(str: string): number | null {
+  const tokensMatch = str.match(/\d+|\+|-|\*|\/|\(|\)/g);
+  if (!tokensMatch) return null;
+  const tokens: string[] = tokensMatch;
+  let pos = 0;
+  function peek() { return tokens[pos]; }
+  function consume() { return tokens[pos++]; }
+  
+  function parsePrimary(): number {
+    let token = peek();
+    if (token === '(') {
+      consume(); // (
+      let val = parseExpression();
+      consume(); // )
+      return val;
+    }
+    if (token === '-') {
+      consume();
+      return -parsePrimary();
+    }
+    const next = consume();
+    if (!next) throw new Error('Unexpected end of input');
+    return parseFloat(next);
+  }
+
+  function parseMulDiv(): number {
+    let val = parsePrimary();
+    while (peek() === '*' || peek() === '/') {
+      let op = consume();
+      let right = parsePrimary();
+      if (op === '*') val *= right;
+      else val /= right;
+    }
+    return val;
+  }
+
+  function parseExpression(): number {
+    let val = parseMulDiv();
+    while (peek() === '+' || peek() === '-') {
+      let op = consume();
+      let right = parseMulDiv();
+      if (op === '+') val += right;
+      else val -= right;
+    }
+    return val;
+  }
+
+  try {
+    const res = parseExpression();
+    return Number.isFinite(res) ? res : null;
+  } catch (e) {
+    return null;
+  }
+}
+
 export function inferCorrectAnswer(prompt: string, solution: string): string | null {
   const searchSpace = `${prompt} ${solution}`.toLowerCase();
-  // Match patterns like "bằng 5", "kết quả là 8", "đáp số: 4", "x = 3", "dấu >"
-  const dsMatch = searchSpace.match(/(?:dap so|ket qua|bang|dap an|x\s*=)\s*[:=]?\s*([0-9a-d><=]+)/);
-  if (dsMatch && dsMatch[1]) return dsMatch[1].trim();
+  
+  // 1. Try explicit matches
+  const dsMatch = searchSpace.match(/(?:dap so|ket qua|bang|dap an|x\s*=)\s*[:=]?\s*([0-9a-d><=,\.\/]+)/);
+  if (dsMatch && dsMatch[1]) {
+    const ans = dsMatch[1].trim().replace(/[.,]$/, '');
+    if (ans) return ans;
+  }
 
-  // Try to parse basic math expression in prompt, e.g., "3 + 2 = ?"
-  const mathMatch = prompt.match(/(\d+)\s*([+\-])\s*(\d+)\s*=\s*(?:\?|\.{2,}|…)/);
-  if (mathMatch) {
-    const a = parseInt(mathMatch[1] || '0', 10);
-    const op = mathMatch[2];
-    const b = parseInt(mathMatch[3] || '0', 10);
-    if (op === '+') return String(a + b);
-    if (op === '-') return String(a - b);
+  // 2. Try expression parser
+  let cleanPrompt = prompt
+    .replace(/(?:Bà\s*i|Câ\s*u)\s*\d+[^:]*:\s*/gi, '')
+    .replace(/\s+/g, ' ');
+
+  const eqIndex = cleanPrompt.indexOf('=');
+  if (eqIndex >= 0) {
+    let leftPart = cleanPrompt.substring(0, eqIndex).trim();
+    
+    // Split by subheadings
+    const parts = leftPart.split(/(?:\s+|^)[a-z0-9]\s*[\/)]\s+/i);
+    let lastPart = parts[parts.length - 1].trim();
+
+    const trailingMatch = lastPart.match(/([0-9\s+\-*x×/:÷()a-zA-ZÀ-ỹđĐ]+)$/);
+    if (trailingMatch) {
+      let expr = trailingMatch[1].trim();
+
+      // Normalize operators
+      expr = expr
+        .replace(/(\d+)\s*[xX×*]\s*(\d+)/g, '$1 * $2')
+        .replace(/(\d+)\s*[:÷/]\s*(\d+)/g, '$1 / $2')
+        .replace(/–/g, '-');
+
+      expr = expr.replace(/[a-zA-ZÀ-ỹđĐ]+/g, ' ');
+      expr = expr.replace(/[^0-9+\-*/()]/g, '');
+
+      if (/[+\-*/]/.test(expr)) {
+        const val = evaluateExpression(expr);
+        if (val !== null) {
+          return String(val);
+        }
+      }
+    }
   }
 
   return "5"; // Default fallback for scorable primary practice

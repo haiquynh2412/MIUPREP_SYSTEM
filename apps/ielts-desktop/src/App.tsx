@@ -9,6 +9,7 @@ import {
 } from '@miuprep/ui';
 import { 
   LocalStorageAdapter,
+  IndexedDbAdapter,
   TauriSqliteAdapter 
 } from '@miuprep/db';
 import type {
@@ -112,9 +113,11 @@ export default function App() {
   const isTauri = typeof window !== 'undefined' && '__TAURI__' in window;
 
   const [credentialStore] = useState(() => getActiveCredentialStore());
-  const [db] = useState<LocalStorageAdapter | TauriSqliteAdapter>(() => 
-    isTauri ? new TauriSqliteAdapter() : new LocalStorageAdapter()
-  );
+  const [db] = useState<LocalStorageAdapter | TauriSqliteAdapter>(() => {
+    if (isTauri) return new TauriSqliteAdapter();
+    // IndexedDB lifts the 5MB localStorage quota that seeded banks overflow
+    return IndexedDbAdapter.isSupported() ? new IndexedDbAdapter() : new LocalStorageAdapter();
+  });
   
   const [activeTab, setActiveTab] = useState<'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room'>('dashboard');
   const [activeTrack, setActiveTrack] = useState<'ielts' | 'cpe' | 'cae' | null>(null);

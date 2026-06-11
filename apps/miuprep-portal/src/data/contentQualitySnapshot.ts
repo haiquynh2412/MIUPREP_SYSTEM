@@ -75,7 +75,7 @@ export interface UnifiedContentCoverageSnapshot {
 
 export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
   "schemaVersion": "english_content_guard_v1",
-  "generatedAt": "2026-06-11T05:42:29.729Z",
+  "generatedAt": "2026-06-11T07:24:39.937Z",
   "sourceCommand": "npm.cmd run sync:portal-quality -w @miuprep/content",
   "qualitySummary": {
     "tests": 95,
@@ -303,7 +303,7 @@ export const ENGLISH_CONTENT_QUALITY_SNAPSHOT: EnglishContentQualitySnapshot = {
 
 export const CONTENT_COVERAGE_SNAPSHOT: UnifiedContentCoverageSnapshot = {
   "schemaVersion": "miuprep_content_coverage_v1",
-  "generatedAt": "2026-06-11T05:42:29.729Z",
+  "generatedAt": "2026-06-11T07:24:39.937Z",
   "programs": [
     {
       "programId": "vn_math_6",

@@ -1,0 +1,102 @@
+
+==================================================
+AUDITING GRADE 1 (627 questions)
+==================================================
+True OCR/VNI spelling issues: 1
+Logical mismatch issues: 48
+Sample Logical Mismatch Issues:
+  - [math1.number_ops_10.13_de_thi_toan_lop_1_hk1_2010_.1608alg.035] (13_De_Thi_Toan_Lop_1_HK1-2010-2011.doc): "Câu 6: Thực hiện các phép tính : 4 + 2 - 3= ? (1 đã 2 3 5"
+    Expected: -1 | Actual: 3
+  - [math1.number_ops_10.13_de_thi_toan_lop_1_hk1_2010_.1608alg.039] (13_De_Thi_Toan_Lop_1_HK1-2010-2011.doc): "Bài 3. (3 điểm) Tính: a) 6 5 8 8 9 3 2 0 7 5 ..... ..... ..... ..... ..... b) 3 + 4 - 5 = .......... c) 8 - 3 + 4 = .........."
+    Expected: 7 | Actual: 2
+  - [math1.number_ops_10.13_de_thi_toan_lop_1_hk1_2010_.1608alg.050] (13_De_Thi_Toan_Lop_1_HK1-2010-2011.doc): "Bài 1 : Điền số. 5 + ......... = 9 ......... – 6 = 3 5 + ......... = 8 ......... + 2 = 7 6 + 3 = .........  ......... + 7 = 8 9 - ......... = 5"
+    Expected: 9 | Actual: 5
+  - [math1.number_ops_10.13_de_thi_toan_lop_1_hk1_2010_.1608alg.051] (13_De_Thi_Toan_Lop_1_HK1-2010-2011.doc): "Bài 2 : Tính. 9 – 1 = ......... 7 + 2 = ......... 9 – 4 =......... 9 – 7= ......... 9 – 5 =......... 8 – 7 = .........  6 + 2 = ......... 9 – "
+    Expected: 9 | Actual: 5
+  - [math1.number_ops_10.13_de_thi_toan_lop_1_hk1_2010_.1608alg.060] (13_De_Thi_Toan_Lop_1_HK1-2010-2011.doc): "Bài 4. (1 điểm) Tính 4 + 4 – 3 = …………………. 9 – 5 + 2 = …………………….."
+    Expected: 7 | Actual: 5
+Fallback "5" candidates: 21
+Sample Fallback Candidates:
+  - [math1.number_ops_10.13_de_thi_toan_lop_1_hk1_2010_.1608alg.058] (13_De_Thi_Toan_Lop_1_HK1-2010-2011.doc): "Bài 2. (1 điểm) Số? - 4 + 3 + 0 + 1"
+  - [math1.number_ops_10.de_kiem_tra_cuoi_ki_1_lop_1_mo.14snx0r.002] (de-kiem-tra-cuoi-ki-1-lop-1-mon-toan-nam-2014-2015.doc): "Bài 2: Dấu điền vào ô trống: 3 + 4 9 + 0 a. > ; b. < ; c. ="
+  - [math1.number_ops_10.de_on_tap_mon_toan_nang_cao_lo.1h0se6d.014] (de-on-tap-mon-toan-nang-cao-lop-1.doc): "Bài 14: Điền số thích hợp vào dấu * 6 * + * 4 9 8  * 7 + 2 1 6 *  * 3 + 3 * 7 9  3 * + * 3 3 7  "
+  - [math1.number_ops_10.de_on_tap_mon_toan_nang_cao_lo.1h0se6d.023] (de-on-tap-mon-toan-nang-cao-lop-1.doc): "Câu 1: Điền số - 8 + 6 + 2 - 6 10"
+  - [math1.number_ops_10.de_on_tap_mon_toan_nang_cao_lo.1h0se6d.026] (de-on-tap-mon-toan-nang-cao-lop-1.doc): "Câu 4: Đặt tính rồi tính a, 1 4 + 3 b, 7 + 11 c, 19 - 6 d, 18 - 7 ........................... ......................... ......................... ...."
+
+==================================================
+AUDITING GRADE 2 (1990 questions)
+==================================================
+True OCR/VNI spelling issues: 3
+Logical mismatch issues: 59
+Sample Logical Mismatch Issues:
+  - [math2.number_mul_div.bai_tap_toan_2_co_ban_va_nang_.1xryk7z.007] (bai-tap-toan-2-co-ban-va-nang-cao.doc): "Bài 7: Viết các tổng sau thành tích: a) 5 + 5 + 5 + 5 + 5 + 5 = ……………………………………………. b) 4 + 4 + 12 + 8 =……………………………………………………………… ……………………………………………………………"
+    Expected: 10 | Actual: 30
+  - [math2.number_mul_div.bo_de_kiem_tra_hoc_ki_1_mon_to.0nu23g2.026] (bo-de-kiem-tra-hoc-ki-1-mon-toan-lop-2.doc): "Bài 1: (1 điểm) Tính nhẩm: 16 + 3 = ….. 14 – 8 = ….. 15 – 6 = ….. 9 + 7 = ….."
+    Expected: 19 | Actual: 1
+  - [math2.number_ops_100_carry.bo_de_kiem_tra_hoc_ki_1_mon_to.0nu23g2.036] (bo-de-kiem-tra-hoc-ki-1-mon-toan-lop-2.doc): "Bài 4) (2đã Khoanh tròn vào chữ cái trước kết quả đúng a/ 28 + 36 + 14=? b/ 76 - 22 - 38 = ? A. 68 A. 26 B. 78 B. 15 C. 79 C. 16"
+    Expected: 50 | Actual: 78
+  - [math2.number_mul_div.bo_de_kiem_tra_hoc_ki_1_mon_to.0nu23g2.040] (bo-de-kiem-tra-hoc-ki-1-mon-toan-lop-2.doc): "Bài 1: Khoanh vào chữ đặt trước câu trả lời đúng a/ 85 – 39 = ? A. 45 B. 46 C. 55 D. 56 b/ 29 – 5 + 15 = ? A. 49 B. 39 C. 19 D. 9"
+    Expected: 20 | Actual: 10
+  - [math2.number_ops_100_carry.bo_de_kiem_tra_hoc_ki_1_mon_to.0nu23g2.066] (bo-de-kiem-tra-hoc-ki-1-mon-toan-lop-2.doc): "Bài 7 . Tính kết quả 86 - 6 - 9 = ? A. 71 B. 70 C. 81"
+    Expected: -3 | Actual: 71
+Fallback "10" candidates: 299
+Sample Fallback Candidates:
+  - [math2.number_mul_div.bai_tap_toan_2_co_ban_va_nang_.1xryk7z.048] (bai-tap-toan-2-co-ban-va-nang-cao.doc): "Bài 48: Năm nay kỉ niệm ngày quốc tế lao động 1 - 5 vào thứ tư. Em có biết năm nay kỉ niệm ngày thành lập Đội 15 - 5, kỉ niệm ngày sinh nhật Bác 19 - "
+  - [math2.number_mul_div.bai_tap_toan_2_co_ban_va_nang_.1xryk7z.049] (bai-tap-toan-2-co-ban-va-nang-cao.doc): "Bài 49: Bạn Mai muốn biết ngày khai giảng năm học 5 - 9 là vào thứ mấy. Bạn Lan lại cho biết " ngày 25 -9 là vào thứ hai". Em có thể giúp bạn Mai biết"
+  - [math2.number_mul_div.bo_de_kiem_tra_hoc_ki_1_mon_to.0nu23g2.005] (bo-de-kiem-tra-hoc-ki-1-mon-toan-lop-2.doc): "Bài 5: Đặt tính rồi tính: (2 điểm) a. 57 + 26 b. 39 + 6 c. 81 – 35 d. 90 - 58 ………… ……….. ……….. ………… ………... ………. ……….. …………. ………... ………. ……….. …………."
+  - [math2.number_mul_div.bo_de_kiem_tra_hoc_ki_1_mon_to.0nu23g2.020] (bo-de-kiem-tra-hoc-ki-1-mon-toan-lop-2.doc): "Bài 2: Đặt tính rồi tính: (2 điểm) 27 + 69 14 + 56 77 – 48 63 – 45 ……… ……… ………. ……… ……… ……… ………. ……… ……… ……… ………. ………"
+  - [math2.number_mul_div.bo_de_kiem_tra_hoc_ki_1_mon_to.0nu23g2.022] (bo-de-kiem-tra-hoc-ki-1-mon-toan-lop-2.doc): "Bài 4: Điền dấu >; <; = (1 điểm) 13 + 29 …… 28 + 14 97 – 58 …….32 + 5"
+
+==================================================
+AUDITING GRADE 3 (184 questions)
+==================================================
+True OCR/VNI spelling issues: 0
+Logical mismatch issues: 5
+Sample Logical Mismatch Issues:
+  - [math3.number_mul_div_table.de_kiem_tra_hk_i_doc.1t0idr9.008] (DE KIEM TRA HK I.doc): "Câu 8: Tính giá trị của biểu thức. 326 + 945 : 9 = ...................... b) ( 794 - 38 ) : 7 = ...................... ........................."
+    Expected: 105 | Actual: 431
+  - [math3.number_mul_div_table.de_kiem_tra_hk_i_doc.1t0idr9.018] (DE KIEM TRA HK I.doc): "Câu 8: Tính giá trị của biểu thức. 345 + 846 : 6 = ...................... b) ( 822 - 38 ) : 7 = ...................... ........................."
+    Expected: 141 | Actual: 486
+  - [math3.geometry_midpoint_perimeter_area.tuyen_tap_de_kiem_tra_giua_hoc.1kd4s42.074] (TUYỂN TẬP ĐỀ KIỂM TRA GIỮA HỌC KỲ I TOÁN 3  XXX 000.doc): "Câu 4: Lớp 3A thu nhặt được 36 kg giấy vụn, lớp 3B thu nhặt được gấp 2 lần số giấy lớp 3A. Hỏi lớp 3B thu nhặt được bao nhiêu ki-lô-gam giấy vụn ? ĐỀ "
+    Expected: 32 | Actual: 7
+  - [math3.geometry_midpoint_perimeter_area.tuyen_tap_de_kiem_tra_giua_hoc.1kd4s42.158] (TUYỂN TẬP ĐỀ KIỂM TRA GIỮA HỌC KỲ I TOÁN 3  XXX 000.doc): "Bài 4: Nhà em nuôi 48 con gà. Sau khi đem bán thì số gà giảm đi 4 lần. Hỏi nhà em còn lại bao nhiêu con gà? ………………………………………………………………………………………………………………"
+    Expected: 29 | Actual: 7
+  - [math3.geometry_midpoint_perimeter_area.tuyen_tap_de_kiem_tra_giua_hoc.1kd4s42.173] (TUYỂN TẬP ĐỀ KIỂM TRA GIỮA HỌC KỲ I TOÁN 3  XXX 000.doc): "Bài 4: Một cửa hàng có 24 kg táo và đã bán được {{formula:/assets/math3/formulas/tuy-n-t-p-ki-m-tra-gi-a-h-c-k-i-to-n-3-xxx-000-doc-7dd75647/formula00"
+    Expected: 29 | Actual: 150
+Fallback "30" candidates: 86
+Sample Fallback Candidates:
+  - [math3.geometry_midpoint_perimeter_area.252_bai_thi_toan_hsg_lop_3_doc.13rbamh.011] (252 BAI THI TOAN HSG LOP 3.doc): "Bài 11: Một hình chữ nhật có chiều rộng 12 cm. Biết chu vi gấp 6 lần chiều rộng, tính chiều dài hình chữ nhật đó."
+  - [math3.geometry_midpoint_perimeter_area.252_bai_thi_toan_hsg_lop_3_doc.13rbamh.016] (252 BAI THI TOAN HSG LOP 3.doc): "Bài 16: Một hình chữ nhật có 2 lần chiều rộng thì hơn chiều dài 5m. Nhưng 2 lần chiều dài lại hơn 2 lần chiều rộng 10m. Tính chu vi hình chữ nhật đó."
+  - [math3.geometry_midpoint_perimeter_area.252_bai_thi_toan_hsg_lop_3_doc.13rbamh.024] (252 BAI THI TOAN HSG LOP 3.doc): "Bài 24: Một hình chữ nhật có chu vi 72cm. Nếu giảm chiều rộng đi 6cm và giữ nguyên chiều dài thì diện tích giảm đi 120cm2. Tính chiều dài và chiều rộn"
+  - [math3.geometry_midpoint_perimeter_area.252_bai_thi_toan_hsg_lop_3_doc.13rbamh.035] (252 BAI THI TOAN HSG LOP 3.doc): "Bài 35: Một hình chữ nhật có chu vi là 80cm. Nếu tăng chiều dài 5cm thì diện tích tăng 75cm2. Tính chiều dài, chiều rộng hình chữ nhật đó."
+  - [math3.geometry_midpoint_perimeter_area.252_bai_thi_toan_hsg_lop_3_doc.13rbamh.041] (252 BAI THI TOAN HSG LOP 3.doc): "Bài 41: Một mảnh đất hình chữ nhật có chiều dài 14m. Nếu chiều rộng tăng 2m, chiều dài giảm 3m thì mảnh đất đó trở thành hình vuông. Tính chu vi mảnh "
+
+==================================================
+AUDITING GRADE 4 (445 questions)
+==================================================
+True OCR/VNI spelling issues: 1
+Logical mismatch issues: 1
+Sample Logical Mismatch Issues:
+  - [math4.number_fractions.bai_tap_on_he_mon_toan_4_doc.0f9hufi.029] (BAI TAP ON HE MON TOAN 4.doc): "Bài 1: Tính bằng cách thuận tiện nhất. a) 96 + 78 + 4=................................................................................................"
+    Expected: 82 | Actual: 178
+Fallback "40" candidates: 0
+
+==================================================
+AUDITING GRADE 5 (416 questions)
+==================================================
+True OCR/VNI spelling issues: 0
+Logical mismatch issues: 3
+Sample Logical Mismatch Issues:
+  - [math5.number_percentage.120_bai_toan_luyen_thi_violymp.1enlwt6.003] (120 BAI TOAN LUYEN THI VIOLYMPIC.doc): "bài 40 ) 8. Tích của hai số tự nhiên là một số lẻ thì hiệu của hai số tự nhiên đó cũng là một số lẻ. Sai 9. Số bé nhất khác 0 chia hết cho cả 2 ; 3 ; "
+    Expected: 2419 | Actual: 15
+  - [math5.number_percentage.29_de_toan_lop_5_doc.00j505j.053] (29 DE TOAN LOP 5.doc): "Bài tập 1: Khoanh vào phương án đúng: a) 2,8 phút {{formula:/assets/math5/formulas/29-de-toan-lop-5-doc-e4795ffa/formula0018.png|w=12|h=13}} 6 = ...ph"
+    Expected: 4 | Actual: 50
+  - [math5.number_percentage.29_de_toan_lop_5_doc.00j505j.093] (29 DE TOAN LOP 5.doc): "Bài tập1: Khoanh vào phương án đúng: a) 9: 4 = ... A. 2 B. 2,25 C. {{formula:/assets/math5/formulas/29-de-toan-lop-5-doc-e4795ffa/formula0040.png|w=25"
+    Expected: 2.25 | Actual: 22
+Fallback "50" candidates: 63
+Sample Fallback Candidates:
+  - [math5.number_percentage.100_bt_trac_nghiem_lop_5_doc.1w8jt9i.008] (100 BT TRAC NGHIEM LOP 5.doc): "Bài 8: Trong hộp có 40 viên bi, trong đó có 24 viên bi xanh. Tỉ số phần trăm của số bi xanh và số bi trong hộp là bao nhiêu? A. 20% B. 40% C. 60% D. 8"
+  - [math5.number_percentage.100_bt_trac_nghiem_lop_5_doc.1w8jt9i.042] (100 BT TRAC NGHIEM LOP 5.doc): "Bài 42: Viết phân số sau thành tỉ số phần trăm: {{formula:/assets/math5/formulas/100-bt-trac-nghiem-lop-5-doc-82a09eff/formula0038.png|w=56|h=41}} A. "
+  - [math5.number_percentage.100_bt_trac_nghiem_lop_5_doc.1w8jt9i.086] (100 BT TRAC NGHIEM LOP 5.doc): "Bài 86: Viết phân số sau thành tỉ số phần trăm {{formula:/assets/math5/formulas/100-bt-trac-nghiem-lop-5-doc-82a09eff/formula0126.png|w=56|h=41}} A. 5"
+  - [math5.number_percentage.15_de_luyen_thi_hsg_doc.1vgcab6.040] (15 DE LUYEN THI HSG.doc): "Bài 4: Một hình chữ nhật nếu chiều dài bỏ bớt đi 25% của nó và chiều rộng tăng 25% của nó thì diện tích giảm đi {{formula:/assets/math5/formulas/15-de"
+  - [math5.number_percentage.29_de_toan_lop_5_doc.00j505j.041] (29 DE TOAN LOP 5.doc): "Bài tập 3: (HSKG): Một số nếu được tăng lên 25% thì được số mới. Hỏi phải giảm số mới đi bao nhiêu phần trăm để lại được số ban đầu. To¸n 5- §Ò 13"
