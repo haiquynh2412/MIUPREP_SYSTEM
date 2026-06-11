@@ -108,14 +108,17 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - Test vòng 2: T-PKG toàn bộ (các package phụ thuộc knowledge không vỡ)
 - [~] **2.2.3. Portal: typecheck + tách App.tsx thành routes/modules**
   - [x] *Giai đoạn 1 (11/06/2026): sửa toàn bộ 14 lỗi tsc pre-existing (JSX namespace React 19, vite-env.d.ts cho CSS imports, type MathLesson, literal track, null-guard) + thêm script `typecheck` vào pre-commit hook và CI — portal từ nay không thể lọt lỗi type. Test: tsc 0 lỗi, lint 0 lỗi, build PASS. Commit `30e01c19`*
-  - [ ] Giai đoạn 2: tách App.tsx (2.652 dòng) thành routes + React.lazy; đo bundle trước/sau; T-QA-PORTAL pass
+  - [x] *Giai đoạn 2a (11/06/2026): code-splitting — 11 workspace panel chuyển sang React.lazy + DeferredPanel; main bundle 184KB → 74KB (-60%). Test: tsc 0 lỗi, lint 0 lỗi, build sạch, QA 2/2 PASS. Commit `cd6b1309`*
+  - [ ] Giai đoạn 2b: tách state/handlers của App.tsx (2.652 dòng) thành modules theo role
 
 ### 2.3. Chuẩn hóa 2 app JS còn lại
 
-- [ ] **2.3.1. Migrate miumath-app sang TypeScript + viết test cho logic chấm điểm**
-  - Test vòng 1: `tsc --noEmit` pass + test mới pass
-  - Test vòng 2: build + kiểm tra thủ công các luồng chính của miumath
-- [ ] **2.3.2. Migrate miuphysics-app sang TypeScript (tương tự)**
+- [~] **2.3.1. Migrate miumath-app sang TypeScript**
+  - [x] *GĐ1 (11/06/2026): strict tsconfig (allowJs chuyển tiếp); `learning.js` → `learning.ts` typed đầy đủ từ @miuprep/learning; main.tsx; gate typecheck vào hook + CI. Test: tsc 0 lỗi, build PASS, lint PASS. Commit `02aefbd5`*
+  - [ ] GĐ2: chuyển 13 component .jsx → .tsx + test logic chấm điểm
+- [~] **2.3.2. Migrate miuphysics-app sang TypeScript**
+  - [x] *GĐ1 (11/06/2026): strict tsconfig + main.tsx + gate typecheck hook/CI. Test: tsc 0 lỗi, build PASS. Commit `de8ba89c`*
+  - [ ] GĐ2: chuyển components + logic .js → TS
 
 ### 2.4. Backend trung tâm (đầu tư chiến lược nhất)
 
