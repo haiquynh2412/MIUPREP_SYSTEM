@@ -113,12 +113,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 2.3. Chuẩn hóa 2 app JS còn lại
 
-- [~] **2.3.1. Migrate miumath-app sang TypeScript**
-  - [x] *GĐ1 (11/06/2026): strict tsconfig (allowJs chuyển tiếp); `learning.js` → `learning.ts` typed đầy đủ từ @miuprep/learning; main.tsx; gate typecheck vào hook + CI. Test: tsc 0 lỗi, build PASS, lint PASS. Commit `02aefbd5`*
-  - [ ] GĐ2: chuyển 13 component .jsx → .tsx + test logic chấm điểm
+- [x] **2.3.1. Migrate miumath-app sang TypeScript — HOÀN THÀNH 14/14 file** *(11/06/2026 — GĐ1 commit `02aefbd5`; GĐ2 commit `b278afe6`: toàn bộ App + 12 components → .tsx, type hóa mọi useState hub (MiuMathUser, MiuMathRawQuestion...), TS bắt được 1 bug CSS thật (`justify` → `justifyContent` bị bỏ qua âm thầm). Nợ chuyển tiếp đã ghi: `noImplicitAny=false` đến khi viết Props interface cho components; strict null checks bật đủ. Test: tsc 0 lỗi, build PASS, lint PASS. **Phát hiện mới:** miumath tự quản auth với mật khẩu PLAINTEXT trong localStorage (`u.password === authPassword`) → cần task bảo mật riêng: dùng password utils từ @miuprep/db)*
 - [~] **2.3.2. Migrate miuphysics-app sang TypeScript**
   - [x] *GĐ1 (11/06/2026): strict tsconfig + main.tsx + gate typecheck hook/CI. Test: tsc 0 lỗi, build PASS. Commit `de8ba89c`*
-  - [ ] GĐ2: chuyển components + logic .js → TS
+  - [ ] GĐ2: ĐÃ ĐO THỬ (11/06): rename 13 file → **396 lỗi** ngay cả khi tắt noImplicitAny (221 TS2339 property-not-exist, 64 TS2554 sai số tham số hàm — code gốc lỏng hơn miumath nhiều). Đã hoàn nguyên sạch. Cần 1 phiên riêng, làm từng component một.
 
 ### 2.4. Backend trung tâm (đầu tư chiến lược nhất)
 
