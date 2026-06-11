@@ -6,7 +6,7 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "test": "node test-runner.js",
+    "test": "npm run build && node test-runner.js",
     "benchmark": "node benchmark-runner.js"
   },
   "dependencies": {},
