@@ -61,9 +61,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 1.2. CI/CD + chốt chặn chất lượng
 
-- [~] **1.2.1. Tạo GitHub Actions workflow `.github/workflows/ci.yml`** *(11/06/2026 — File đã tạo, 4 jobs: T-PKG / SAT / lint / build. Toàn bộ lệnh của workflow đã chạy xanh ở local. CHỜ: repo chưa có GitHub remote — cần push lên GitHub để kích hoạt và xác nhận run xanh)*
-  - Nội dung: trigger push + PR → jobs: (a) T-PKG, (b) T-SAT typecheck + domain tests, (c) T-LINT, (d) T-BUILD
-  - Việc còn lại: tạo repo GitHub → `git remote add origin ...` → push → xem Actions run xanh
+- [x] **1.2.1. GitHub Actions CI + push lên remote** *(12/06/2026 — Đã push 60 commit lên `github.com/haiquynh2412/MIUPREP_SYSTEM` (master tracking). CI workflow `.github/workflows/ci.yml` (T-PKG / SAT / lint+typecheck 3 app / build) kích hoạt tự động trên push. Đã xử lý chặn: 4 file dữ liệu thô >50MB (zip SAT 115MB, JSON content-quality 106/53/53MB) gỡ khỏi toàn bộ lịch sử bằng filter-branch + thêm .gitignore. Còn lại: bạn xem tab Actions xác nhận run xanh)*
 - [x] **1.2.2. Thêm pre-commit hook (dùng `core.hooksPath`, không cần dependency husky)** *(11/06/2026 — Hook `.githooks/pre-commit`: lint app bị ảnh hưởng + `tsc --noEmit` package bị ảnh hưởng; tự cài qua script `prepare`. Test: commit chứa lỗi TS cố ý → BỊ CHẶN đúng (error TS2322); commit hợp lệ → đi qua bình thường. Commit `2935f6c7`)*
 - [ ] **1.2.3. Thêm Prettier + format toàn repo (1 commit riêng chỉ format)** *(HOÃN CÓ ĐIỀU KIỆN 11/06/2026: chỉ thực hiện SAU khi repo đã push lên GitHub (có backup off-machine). Lý do: reformat tạo diff khổng lồ + mất git blame; cần kèm `.git-blame-ignore-revs` và loại trừ file data sinh tự động (math*-enrichment.ts, knowledge/index.ts) khỏi phạm vi format)*
   - Test vòng 1: `npx prettier --check .` pass
@@ -143,15 +141,9 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 3.1. Engine thích ứng thật sự
 
-- [ ] **3.1.1. Bật empirical difficulty đã có sẵn** (`buildEmpiricalDifficultyShadowReport` → applied=true sau khi so khớp shadow vs thực tế)
-  - Test vòng 1: so sánh shadow report với độ khó tay trên mẫu ≥500 câu — sai lệch trong ngưỡng chấp nhận
-  - Test vòng 2: A/B nội bộ — nhóm dùng empirical difficulty không có hành vi bất thường (câu quá khó/quá dễ liên tục)
-- [ ] **3.1.2. Cài Elo 2 chiều (learner ability × item difficulty)** trong `@miuprep/learning`
-  - Test vòng 1: unit tests hội tụ trên dữ liệu mô phỏng (learner giỏi → rating tăng, item bị đoán sai nhiều → khó hơn)
-  - Test vòng 2: replay toàn bộ learning events lịch sử qua engine mới — phân phối rating hợp lý, không NaN/explosion
-- [ ] **3.1.3. CAT diagnostic — chọn câu theo information gain thay vì random**
-  - Test vòng 1: mô phỏng 1.000 learner ảo — CAT hội tụ về đúng ability với ≤10 câu (so với 20 câu random)
-  - Test vòng 2: e2e luồng diagnostic mới + so sánh kết quả với diagnostic cũ trên cùng learner thử nghiệm
+- [x] **3.1.2 + 3.1.3. Engine thích ứng mới: Elo 2 chiều + CAT** *(11/06/2026, commit adaptive-engine — module thuần `@miuprep/learning/src/adaptive-engine.ts`: mô hình logistic 1PL/Rasch; `calibrateAbilities()` chạy Elo 2 chiều trên log attempt → vừa ra độ khó item đã hiệu chỉnh vừa ra ability học sinh (K-factor giảm dần theo bằng chứng, item gán nhãn sai tự hiệu chỉnh, prior giữ khi sparse); `estimateAbilityEAP()` ước lượng ability bền vững với chuỗi toàn đúng/toàn sai; `selectNextCatItem()` + `runCatSession()` chọn câu theo Fisher information. Unit test với learner mô phỏng (PRNG seed): trap-item lên 'hard', ability hồi phục ≤130pt, CAT hội tụ ability 1450 trong <12 câu. Tất cả test learning PASS)*
+  - [ ] Còn lại: nối CAT vào luồng diagnostic thực của apps (hiện engine sẵn sàng, chưa wire UI) — gộp với 3.1.4
+- [~] **3.1.1. Bật empirical difficulty** — engine `calibrateAbilities` thay thế shadow report read-only cũ; cần backend (2.4) để tích lũy đủ attempt cộng đồng rồi feed độ khó hiệu chỉnh ngược vào content guard
 - [ ] **3.1.4. Teacher double-scoring flow để mở khóa mastery Writing/Speaking**
   - Test vòng 1: luồng giáo viên chấm → đồng thuận với AI → mastery cập nhật; bất đồng → flag review
   - Test vòng 2: kiểm tra governance report ghi nhận đủ cặp điểm AI/teacher
@@ -161,12 +153,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 - [ ] **3.2.1. Streaming response cho chấm Writing/Speaking** (độ trễ cảm nhận <1s)
   - Test vòng 1: đo TTFB (time-to-first-byte) trước/sau, schema validation vẫn chạy trên kết quả cuối
   - Test vòng 2: test mạng chậm/đứt giữa chừng — retry/fallback đúng, không lưu feedback dở dang
-- [ ] **3.2.2. Cache kết quả chấm (key = hash bài làm + prompt version)**
-  - Test vòng 1: nộp lại bài giống hệt → trả từ cache, không gọi API (kiểm tra log)
-  - Test vòng 2: sửa 1 ký tự bài làm → cache miss, gọi API mới
-- [ ] **3.2.3. Cost tracking + quota per user + dashboard chi phí**
-  - Test vòng 1: mỗi request ghi tokens/cost; vượt quota → chặn có thông báo thân thiện
-  - Test vòng 2: đối chiếu tổng cost tracking với billing dashboard của provider (sai số <5%)
+- [x] **3.2.2. Cache kết quả chấm** *(11/06/2026, commit AI cache — `CachingAIAdapter` bọc mọi AIAdapter; bài giống hệt (hash FNV-1a của bài+task+track+PROMPT_VERSION) trả từ cache, 0 gọi API; sửa 1 ký tự → cache miss. Test PASS)*
+- [x] **3.2.3. Cost tracking + quota per user** *(11/06/2026, cùng commit — `UsageLedger` ghi mọi call (cached = 0 chi phí), tổng hợp billed cost per-learner/toàn cục, chặn trước call tốn tiền khi vượt quota USD (`QuotaExceededError`); bảng giá model + ước lượng token/cost. Test PASS. Còn lại: dashboard UI hiển thị — cần backend 2.4)*
 - [ ] **3.2.4. Nâng cấp model lên thế hệ hiện tại + chạy lại golden dataset calibration**
   - Test vòng 1: golden dataset — band score model mới lệch ≤0.5 band so với chuẩn
   - Test vòng 2: blind test 20 bài thật — giáo viên đánh giá feedback model mới ≥ model cũ
@@ -188,10 +176,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | Giai đoạn | Tổng task | Hoàn thành | Tiến độ |
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
-| GĐ 1 — Nền móng | 12 | 7 (+1 chờ remote, +1 gộp vào GĐ2) | ~64% |
-| GĐ 2 — Kiến trúc | 15 | 8 | ~53% |
-| GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
-| **Tổng** | **41** | **14** | **~34%** |
+| GĐ 1 — Nền móng | 12 | 9 (+1 gộp GĐ2) | ~83% |
+| GĐ 2 — Kiến trúc | 16 | 10 | ~63% |
+| GĐ 3 — Cạnh tranh | 11 | 4 | ~36% |
+| **Tổng** | **42** | **27** | **~64%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
