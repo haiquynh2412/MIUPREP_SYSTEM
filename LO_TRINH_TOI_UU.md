@@ -106,9 +106,9 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 - [ ] **2.2.2. Tách `packages/knowledge/src/index.ts` (173k dòng) thành data JSON + logic TS**
   - Test vòng 1: `npm test -w @miuprep/knowledge` pass, export API không đổi
   - Test vòng 2: T-PKG toàn bộ (các package phụ thuộc knowledge không vỡ)
-- [ ] **2.2.3. Tách `apps/miuprep-portal/src/App.tsx` (2.689 dòng) thành routes/modules + React.lazy**
-  - Test vòng 1: build + đo bundle chính giảm (ghi số liệu trước/sau)
-  - Test vòng 2: T-QA-PORTAL pass cả 2 script
+- [~] **2.2.3. Portal: typecheck + tách App.tsx thành routes/modules**
+  - [x] *Giai đoạn 1 (11/06/2026): sửa toàn bộ 14 lỗi tsc pre-existing (JSX namespace React 19, vite-env.d.ts cho CSS imports, type MathLesson, literal track, null-guard) + thêm script `typecheck` vào pre-commit hook và CI — portal từ nay không thể lọt lỗi type. Test: tsc 0 lỗi, lint 0 lỗi, build PASS. Commit `30e01c19`*
+  - [ ] Giai đoạn 2: tách App.tsx (2.652 dòng) thành routes + React.lazy; đo bundle trước/sau; T-QA-PORTAL pass
 
 ### 2.3. Chuẩn hóa 2 app JS còn lại
 
@@ -208,5 +208,6 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 2.1.2 | PASS — tsc package sạch; 2 app build + lint sạch; e2e recovery PASS cả 2 app | Commit `2e25807e`; xóa ~4.000 dòng trùng lặp; package mới `@miuprep/exam-desktop` |
 | 11/06/2026 | 2.2.0 | PASS — e2e listening FAIL→PASS, 0 QuotaExceeded | Commit `40bf4d1a`; IndexedDB backend |
 | 11/06/2026 | 2.2.1 | Điều tra bằng số đo → chuyển `[!]` | Build chậm do OneDrive (50s overhead cố định/lần tsc; ngoài OneDrive 3.5s); junction đã thử và hoàn nguyên; cần chuyển repo ra ngoài OneDrive (quyết định của bạn) |
+| 11/06/2026 | 2.2.3 GĐ1 | PASS — portal tsc 0 lỗi (sửa 14), lint 0, build PASS; gate vào hook + CI | Commit `30e01c19` |
 | 11/06/2026 | 1.1.4 | PASS — ai tests (migration/purge/memory-only); 2 app desktop build sạch | Commit `53b4f039` |
 | 11/06/2026 | 1.1.2 + 1.1.3 | PASS — 7/7 package tests; build ielts/cpe/portal; lint 3 app; e2e recovery PASS; QA portal 2/2 PASS; grep credentials sạch | Commit `af0f0165`. Gỡ toàn bộ backdoor/seed mặc định ở 3 app; PBKDF2 + auto-rehash; e2e tự seed user. **Phát hiện mới:** `QuotaExceededError` ở web mode (ngân hàng đề vượt quota localStorage) → cần xử lý ở task 2.2 (chuyển content sang load theo nhu cầu / IndexedDB); e2e listening fail ở bước sau-submit vì vấn đề này (có sẵn, không do auth) |
