@@ -498,3 +498,121 @@ assert(!inferredLearnerStudentModel.state.attempts.some((attempt) => attempt.lea
 const eventDerivedMastery = computeMastery(eventDerivedStudentModel.state);
 assert(eventDerivedMastery.some((row) => row.id === "math.solve_quadratic_by_factor"), "Event-derived attempts should feed tracked mastery.");
 assert(!eventDerivedMastery.some((row) => row.id === "eng.academic_writing"), "Feedback-only events should not become mastery rows when importing from event logs.");
+
+// ===========================================================================
+// Adaptive engine (two-way Elo + CAT) — simulated-learner tests
+// ===========================================================================
+import {
+  calibrateAbilities,
+  estimateAbilityEAP,
+  expectedScore,
+  fisherInformation,
+  ratingToDifficultyLabel,
+  runCatSession,
+  selectNextCatItem,
+  DEFAULT_ABILITY,
+  RATING_SCALE,
+  type AdaptiveAttempt,
+  type CatItem,
+} from "./adaptive-engine";
+
+// Deterministic PRNG (mulberry32) so the simulation is reproducible.
+function makeRng(seed: number): () => number {
+  let a = seed >>> 0;
+  return () => {
+    a |= 0; a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// --- expectedScore / fisherInformation sanity ---
+assert(Math.abs(expectedScore(1200, 1200) - 0.5) < 1e-9, "Equal ability and difficulty must give p=0.5.");
+assert(expectedScore(1600, 1200) > 0.9, "A much stronger learner should almost always succeed.");
+assert(expectedScore(800, 1200) < 0.1, "A much weaker learner should almost always fail.");
+assert(fisherInformation(1200, 1200) > fisherInformation(1200, 1800), "Information peaks when difficulty matches ability.");
+
+// --- Two-way Elo calibration: an item that everyone gets wrong must rate harder ---
+(() => {
+  const rng = makeRng(11);
+  const attempts: AdaptiveAttempt[] = [];
+  // 40 average learners attempt a "medium"-labelled item that is secretly very hard.
+  for (let i = 0; i < 40; i++) {
+    attempts.push({
+      learnerId: `L${i}`,
+      itemId: "trap-item",
+      correct: rng() < 0.12, // truly hard: ~12% success
+      difficulty: "medium",
+      answeredAt: `2026-01-01T00:${String(i).padStart(2, "0")}:00.000Z`,
+    });
+  }
+  const { items } = calibrateAbilities(attempts);
+  const trap = items.get("trap-item")!;
+  assert(trap.rating > trap.priorRating + 80, "A mislabelled hard item must calibrate to a higher rating than its prior.");
+  assert(ratingToDifficultyLabel(trap.rating) === "hard", "Empirical difficulty of the trap item should resolve to 'hard'.");
+  assert(!trap.provisional, "40 attempts should clear the provisional flag.");
+})();
+
+// --- Two-way Elo: a strong learner's ability rises above default ---
+(() => {
+  const attempts: AdaptiveAttempt[] = [];
+  for (let i = 0; i < 30; i++) {
+    attempts.push({
+      learnerId: "ace",
+      itemId: `item-${i}`,
+      correct: true, // aces every hard item
+      difficulty: "hard",
+      answeredAt: `2026-02-01T00:${String(i).padStart(2, "0")}:00.000Z`,
+    });
+  }
+  const { learners } = calibrateAbilities(attempts);
+  assert(learners.get("ace")!.ability > DEFAULT_ABILITY + 200, "A learner who aces hard items should rate well above default ability.");
+})();
+
+// --- EAP ability estimate recovers a known ability from simulated responses ---
+(() => {
+  const rng = makeRng(7);
+  const trueAbility = 1500;
+  const difficulties = [1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700];
+  const responses = [] as Array<{ difficulty: number; correct: boolean }>;
+  for (let rep = 0; rep < 6; rep++) {
+    for (const d of difficulties) {
+      responses.push({ difficulty: d, correct: rng() < expectedScore(trueAbility, d) });
+    }
+  }
+  const est = estimateAbilityEAP(responses);
+  assert(Math.abs(est.ability - trueAbility) < 130, `EAP should recover ability within ~130 pts (got ${est.ability.toFixed(0)}).`);
+})();
+
+// --- selectNextCatItem picks the most informative unanswered item ---
+(() => {
+  const pool: CatItem[] = [
+    { id: "a", difficulty: 800 },
+    { id: "b", difficulty: 1180 },
+    { id: "c", difficulty: 1600 },
+  ];
+  const pick = selectNextCatItem(pool, 1200, []);
+  assert(pick?.id === "b", "At ability 1200 the closest-difficulty item must be chosen.");
+  const pick2 = selectNextCatItem(pool, 1200, ["b"]);
+  assert(pick2?.id === "a" || pick2?.id === "c", "Already-asked items must be skipped.");
+})();
+
+// --- Full CAT converges to the right level in <= random's fixed 20, with fewer items ---
+(() => {
+  const rng = makeRng(99);
+  const pool: CatItem[] = [];
+  for (let d = 800; d <= 1700; d += 50) pool.push({ id: `q${d}`, difficulty: d });
+  const trueAbility = 1450;
+  const result = runCatSession(
+    pool,
+    (item) => rng() < expectedScore(trueAbility, item.difficulty),
+    { maxItems: 12, minItems: 4, seThreshold: 120 },
+  );
+  assert(result.steps.length <= 12, "CAT must respect the item cap.");
+  assert(result.steps.length < 20, "CAT should finish in fewer items than the legacy fixed 20-item diagnostic.");
+  assert(Math.abs(result.ability - trueAbility) < 160, `CAT should locate ability near 1450 (got ${result.ability.toFixed(0)}).`);
+  assert(result.difficultyLabel === "hard", "A 1450-ability learner should be routed to 'hard' material.");
+})();
+
+console.log("Adaptive engine tests passed.");

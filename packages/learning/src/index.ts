@@ -1,3 +1,5 @@
+export * from "./adaptive-engine";
+
 export const LEARNING_EVENT_SCHEMA_VERSION = "learning_event_v1";
 export const ATTEMPT_SCHEMA_VERSION = "miuprep_attempt_v1";
 export const DEFAULT_LEARNING_EVENT_LIMIT = 1000;
