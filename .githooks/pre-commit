@@ -31,6 +31,11 @@ if echo "$staged" | grep -q "^apps/miuprep-portal/src/.*\.tsx\?$"; then
   npm run typecheck -w miuprep-portal || fail=1
 fi
 
+if echo "$staged" | grep -q "^apps/miumath-app/src/.*\.tsx\?$"; then
+  echo "[pre-commit] typecheck: miumath-app"
+  npm run typecheck -w miumath-app || fail=1
+fi
+
 for pkg in ai beta content core db exam-desktop knowledge learning ui; do
   if echo "$staged" | grep -q "^packages/$pkg/src/.*\.tsx\?$"; then
     echo "[pre-commit] tsc --noEmit: packages/$pkg"

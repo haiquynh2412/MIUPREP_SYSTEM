@@ -1,5 +1,6 @@
 import { toQuestionItemFromMiuMath, toQuestionItemsFromMiuMath } from '@miuprep/content/src/standard';
 import { createSeedKnowledgeGraph } from '@miuprep/knowledge';
+import type { MiuMathQuestion } from '@miuprep/content/src/standard';
 import {
   buildDiagnosticSet,
   buildReviewSet,
@@ -16,6 +17,20 @@ import {
   scheduleErrorNotebookReview,
   summarizeErrorNotebook,
 } from '@miuprep/learning';
+import type {
+  AttemptRecord,
+  ErrorCategory,
+  ErrorNotebookEntryCore,
+  LearningEventRecord,
+  MasteryEstimate,
+  Recommendation,
+  StudentModel,
+} from '@miuprep/learning';
+
+/** Raw question objects as loaded from the app's JSON banks (loosely shaped). */
+export type MiuMathRawQuestion = Partial<MiuMathQuestion> & { id: string };
+
+type MiuMathProgramMap = { programId: string; conceptIds?: string[]; skillIds?: string[] } | undefined;
 
 export const MIU_MATH_PROGRAM_ID = 'vn_math_6_9';
 export const MIU_MATH_DOMAIN_ID = 'mathematics';
@@ -24,10 +39,10 @@ const STORAGE_PREFIX = 'miu_math_learning_state';
 const ERROR_NOTEBOOK_PREFIX = 'miu_math_error_notebook';
 const SHARED_LEARNING_EVENT_SOURCE = 'miumath_app';
 
-export const learningStorageKey = (learnerId) => `${STORAGE_PREFIX}_${learnerId || 'guest'}`;
-export const errorNotebookStorageKey = (learnerId) => `${ERROR_NOTEBOOK_PREFIX}_${learnerId || 'guest'}`;
+export const learningStorageKey = (learnerId?: string) => `${STORAGE_PREFIX}_${learnerId || 'guest'}`;
+export const errorNotebookStorageKey = (learnerId?: string) => `${ERROR_NOTEBOOK_PREFIX}_${learnerId || 'guest'}`;
 
-export function loadMiuMathLearningState(learnerId = 'guest') {
+export function loadMiuMathLearningState(learnerId = 'guest'): StudentModel {
   const base = emptyStudentModel(learnerId, [MIU_MATH_PROGRAM_ID]);
   try {
     const stored = localStorage.getItem(learningStorageKey(learnerId));
@@ -47,19 +62,24 @@ export function loadMiuMathLearningState(learnerId = 'guest') {
   }
 }
 
-export function saveMiuMathLearningState(learnerId, state) {
+export function saveMiuMathLearningState(learnerId: string, state: StudentModel): void {
   localStorage.setItem(learningStorageKey(learnerId), JSON.stringify(state));
 }
 
-export function saveMiuMathSharedLearningEvent(event) {
-  return saveLearningEventToStorage(prepareMiuMathSharedLearningEvent(event));
+export function saveMiuMathSharedLearningEvent(event: LearningEventRecord | null | undefined) {
+  const prepared = prepareMiuMathSharedLearningEvent(event);
+  return prepared ? saveLearningEventToStorage(prepared) : undefined;
 }
 
-export function saveMiuMathSharedLearningEvents(events) {
-  return saveLearningEventsToStorage((Array.isArray(events) ? events : []).map(prepareMiuMathSharedLearningEvent).filter(Boolean));
+export function saveMiuMathSharedLearningEvents(events: Array<LearningEventRecord | null | undefined>) {
+  return saveLearningEventsToStorage(
+    (Array.isArray(events) ? events : [])
+      .map(prepareMiuMathSharedLearningEvent)
+      .filter((event): event is LearningEventRecord => event !== null),
+  );
 }
 
-export function loadMiuMathErrorNotebook(learnerId = 'guest') {
+export function loadMiuMathErrorNotebook(learnerId = 'guest'): ErrorNotebookEntryCore[] {
   try {
     const stored = localStorage.getItem(errorNotebookStorageKey(learnerId));
     if (!stored) return [];
@@ -70,13 +90,19 @@ export function loadMiuMathErrorNotebook(learnerId = 'guest') {
   }
 }
 
-export function saveMiuMathErrorNotebook(learnerId, entries) {
+export function saveMiuMathErrorNotebook(learnerId: string, entries: ErrorNotebookEntryCore[]): ErrorNotebookEntryCore[] {
   const normalized = (Array.isArray(entries) ? entries : []).map(normalizeErrorNotebookEntry);
   localStorage.setItem(errorNotebookStorageKey(learnerId), JSON.stringify(normalized));
   return normalized;
 }
 
-export function recordMiuMathAttempt(state, question, selectedAnswer, mode = 'practice', learnerId = state.learnerId || 'guest') {
+export function recordMiuMathAttempt(
+  state: StudentModel,
+  question: MiuMathRawQuestion | null | undefined,
+  selectedAnswer: string | null | undefined,
+  mode: AttemptRecord['mode'] = 'practice',
+  learnerId: string = state.learnerId || 'guest',
+) {
   const answer = String(selectedAnswer || '').trim();
   if (!question || !answer) return null;
 
@@ -113,7 +139,13 @@ export function recordMiuMathAttempt(state, question, selectedAnswer, mode = 'pr
   );
 }
 
-export function recordMiuMathErrorNotebookMistake(learnerId, question, selectedAnswer, attempt, currentEntries) {
+export function recordMiuMathErrorNotebookMistake(
+  learnerId: string,
+  question: MiuMathRawQuestion | null | undefined,
+  selectedAnswer: string | null | undefined,
+  attempt: AttemptRecord | null | undefined,
+  currentEntries?: ErrorNotebookEntryCore[],
+) {
   if (!question || !attempt || attempt.correct) return { entries: loadMiuMathErrorNotebook(learnerId), entry: null };
 
   const entry = buildErrorNotebookEntryFromAttempt(attempt, {
@@ -146,7 +178,12 @@ export function recordMiuMathErrorNotebookMistake(learnerId, question, selectedA
   return { entries: saveMiuMathErrorNotebook(learnerId, entries), entry: normalizedEntry };
 }
 
-export function reviewMiuMathErrorNotebookEntry(learnerId, questionId, grade = 5, currentEntries) {
+export function reviewMiuMathErrorNotebookEntry(
+  learnerId: string,
+  questionId: string,
+  grade = 5,
+  currentEntries?: ErrorNotebookEntryCore[],
+) {
   const entries = Array.isArray(currentEntries) ? currentEntries.map(normalizeErrorNotebookEntry) : loadMiuMathErrorNotebook(learnerId);
   const index = entries.findIndex((entry) => entry.questionId === `miumath.${questionId}` || entry.questionId === questionId);
   if (index < 0) return { entries, entry: null };
@@ -156,14 +193,14 @@ export function reviewMiuMathErrorNotebookEntry(learnerId, questionId, grade = 5
   return { entries: saveMiuMathErrorNotebook(learnerId, entries), entry: reviewed };
 }
 
-export function buildMiuMathErrorNotebookSummary(entries, now = new Date().toISOString()) {
+export function buildMiuMathErrorNotebookSummary(entries: ErrorNotebookEntryCore[] | null | undefined, now = new Date().toISOString()) {
   return {
     ...summarizeErrorNotebook(entries || [], now),
     dueEntries: getDueErrorNotebookEntries(entries || [], now),
   };
 }
 
-export function buildMiuMathLearningDashboard(state, questions) {
+export function buildMiuMathLearningDashboard(state: StudentModel, questions: MiuMathRawQuestion[]) {
   const attempts = Array.isArray(state?.attempts) ? state.attempts : [];
   const items = toQuestionItemsFromMiuMath((questions || []).map(normalizeMiuMathQuestion));
   const mastery = computeMastery({ ...state, attempts });
@@ -190,7 +227,7 @@ export function buildMiuMathLearningDashboard(state, questions) {
   };
 }
 
-export function buildMiuMathDiagnosticQuestions(state, questions, limit = 10) {
+export function buildMiuMathDiagnosticQuestions(state: StudentModel, questions: MiuMathRawQuestion[], limit = 10) {
   const attempts = Array.isArray(state?.attempts) ? state.attempts : [];
   const normalizedQuestions = (questions || []).map(normalizeMiuMathQuestion);
   const items = toQuestionItemsFromMiuMath(normalizedQuestions);
@@ -199,7 +236,7 @@ export function buildMiuMathDiagnosticQuestions(state, questions, limit = 10) {
   return selectedItems.map((item) => rawQuestionByItemId.get(item.id)).filter(Boolean);
 }
 
-function buildMiuMathLearningPath(mastery, recommendation) {
+function buildMiuMathLearningPath(mastery: MasteryEstimate[], recommendation: Recommendation) {
   const graph = createSeedKnowledgeGraph();
   const programMap = graph.programMaps.find((map) => map.programId === MIU_MATH_PROGRAM_ID);
   const nodes = [
@@ -208,7 +245,7 @@ function buildMiuMathLearningPath(mastery, recommendation) {
       .map((concept) => ({
         id: concept.id,
         domainId: concept.domainId,
-        scope: 'concept',
+        scope: 'concept' as const,
         label: concept.name,
         programIds: programMap?.conceptIds?.includes(concept.id) ? [MIU_MATH_PROGRAM_ID] : [],
       })),
@@ -217,7 +254,7 @@ function buildMiuMathLearningPath(mastery, recommendation) {
       .map((skill) => ({
         id: skill.id,
         domainId: skill.domainId,
-        scope: 'skill',
+        scope: 'skill' as const,
         label: skill.name,
         programIds: programMap?.skillIds?.includes(skill.id) ? [MIU_MATH_PROGRAM_ID] : [],
       })),
@@ -229,7 +266,7 @@ function buildMiuMathLearningPath(mastery, recommendation) {
         id: `edge.${conceptId}_to_${skill.id}`,
         from: conceptId,
         to: skill.id,
-        type: 'supports',
+        type: 'supports' as const,
         weight: 0.75,
       })),
     );
@@ -243,7 +280,7 @@ function buildMiuMathLearningPath(mastery, recommendation) {
   });
 }
 
-function pickMiuMathLearningTargetIds(recommendation, mastery, programMap) {
+function pickMiuMathLearningTargetIds(recommendation: Recommendation, mastery: MasteryEstimate[], programMap: MiuMathProgramMap): string[] {
   const recommended = uniqueStrings([...(recommendation?.conceptIds || []), ...(recommendation?.skillIds || [])]);
   if (recommended.length) return recommended;
 
@@ -258,7 +295,7 @@ function pickMiuMathLearningTargetIds(recommendation, mastery, programMap) {
   return mappedTargets.length ? mappedTargets : (programMap?.conceptIds || []).slice(0, 3);
 }
 
-function normalizeMiuMathQuestion(question) {
+function normalizeMiuMathQuestion(question: MiuMathRawQuestion): MiuMathQuestion {
   return {
     ...question,
     exam_id: Number(question.exam_id || 0),
@@ -276,7 +313,7 @@ function normalizeMiuMathQuestion(question) {
   };
 }
 
-function inferErrorCategories(question) {
+function inferErrorCategories(question: MiuMathRawQuestion): ErrorCategory[] {
   if (question.category === 'word-problems') return ['reading_prompt'];
   if (question.category === 'algebra-simplification') return ['algebra_transform'];
   if (question.category === 'equations-systems' || question.category === 'viet-applications') return ['wrong_formula'];
@@ -284,22 +321,24 @@ function inferErrorCategories(question) {
   return ['unknown'];
 }
 
-function formatMiuMathExplanation(question) {
-  const explanation = question?.explanation || {};
+function formatMiuMathExplanation(question: MiuMathRawQuestion | null | undefined): string {
+  const raw = question?.explanation;
+  if (typeof raw === 'string') return raw || question?.question_text || '';
+  const explanation = raw || {};
   const parts = [
     explanation.thinking,
     explanation.steps,
     explanation.traps,
     explanation.casio,
-  ].filter(Boolean);
+  ].filter((part): part is string => typeof part === 'string' && part.length > 0);
   return parts.join('\n\n') || question?.question_text || '';
 }
 
-function uniqueStrings(values) {
+function uniqueStrings(values: Array<string | null | undefined>): string[] {
   return [...new Set((values || []).map((value) => String(value || '').trim()).filter(Boolean))];
 }
 
-function prepareMiuMathSharedLearningEvent(event) {
+function prepareMiuMathSharedLearningEvent(event: LearningEventRecord | null | undefined): LearningEventRecord | null {
   if (!event) return null;
   return {
     ...event,
