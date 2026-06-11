@@ -429,7 +429,7 @@ export default function MiuMathAdminPanel({
                                                 setEditingUser(u.username);
                                                 setEditFullName(u.fullName || "");
                                                 setEditPhone(u.phone || "");
-                                                setEditPassword(u.password || "");
+                                                setEditPassword("");
                                                 setEditRole(u.role || "student");
                                                 triggerMascotReaction("success", `Meow! Bạn đang chuẩn bị sửa thông tin của @${u.username} đó! 🐾📝`);
                                               }}

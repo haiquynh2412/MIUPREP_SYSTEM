@@ -5,10 +5,12 @@ import 'katex/dist/katex.min.css';
 import './App.css';
 import type { MiuMathRawQuestion } from './learning';
 import type { LearningEventRecord } from '@miuprep/learning';
+import { hashPassword, verifyPassword } from '@miuprep/db';
 
 export interface MiuMathUser {
   username: string;
-  password: string;
+  /** PBKDF2 hash (legacy plaintext records are re-hashed on next successful login) */
+  password?: string;
   fullName?: string;
   phone?: string;
   role: string;
@@ -325,7 +327,7 @@ function App() {
   const [newQSteps, setNewQSteps] = useState("");
 
   // Login handler
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     if (e) e.preventDefault();
     setAuthError("");
     setAuthSuccess("");
@@ -334,11 +336,23 @@ function App() {
       return;
     }
     const foundUser = users.find(
-      u => u.username.toLowerCase() === authUsername.trim().toLowerCase() && u.password === authPassword
+      u => u.username.toLowerCase() === authUsername.trim().toLowerCase()
     );
     if (!foundUser) {
       setAuthError("Tài khoản hoặc mật khẩu không chính xác meow! 😿");
       return;
+    }
+    const verdict = await verifyPassword(authPassword, foundUser.password);
+    if (!verdict.ok) {
+      setAuthError("Tài khoản hoặc mật khẩu không chính xác meow! 😿");
+      return;
+    }
+    // Transparently upgrade legacy plaintext records to PBKDF2
+    if (verdict.needsRehash) {
+      const upgradedHash = await hashPassword(authPassword);
+      const upgradedUsers = users.map(u => (u.username === foundUser.username ? { ...u, password: upgradedHash } : u));
+      setUsers(upgradedUsers);
+      localStorage.setItem("miu_math_users", JSON.stringify(upgradedUsers));
     }
     if (foundUser.approved === false) {
       setAuthError("Tài khoản của bạn đang chờ Quản trị viên phê duyệt meow! Vui lòng liên hệ Giáo viên hoặc thử lại sau nhé! ⏳🐾");
@@ -349,9 +363,10 @@ function App() {
       return;
     }
     
-    // Success login
-    setCurrentUser(foundUser);
-    localStorage.setItem("miu_math_current_user", JSON.stringify(foundUser));
+    // Success login (never persist the password hash with the session)
+    const { password: _sessionPw, ...sessionUser } = foundUser;
+    setCurrentUser(sessionUser);
+    localStorage.setItem("miu_math_current_user", JSON.stringify(sessionUser));
     setUserName(foundUser.username);
     setAuthUsername("");
     setAuthPassword("");
@@ -377,7 +392,7 @@ function App() {
   };
 
   // Register handler
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     if (e) e.preventDefault();
     setAuthError("");
     setAuthSuccess("");
@@ -401,14 +416,17 @@ function App() {
       return;
     }
 
+    // First-run setup: the very first account on this device becomes the
+    // approved admin (no default credentials ship with the app).
+    const isFirstAccount = users.length === 0;
     const newUser = {
       username: authUsername.trim(),
-      password: authPassword,
+      password: await hashPassword(authPassword),
       fullName: authFullName.trim() || authUsername.trim(),
       phone: authPhone.trim() || "Chưa cung cấp",
-      role: "student",
+      role: isFirstAccount ? "admin" : "student",
       active: true,
-      approved: false // New registered users are pending approval
+      approved: isFirstAccount // Later registrations wait for admin approval
     };
     const updatedUsers = [...users, newUser];
     setUsers(updatedUsers);
@@ -474,9 +492,11 @@ function App() {
     }
   };
 
-  const handleSaveEditUser = (e) => {
+  const handleSaveEditUser = async (e) => {
     if (e) e.preventDefault();
     if (!editingUser) return;
+    // Empty password field means: keep the current hash
+    const nextPasswordHash = editPassword.trim() ? await hashPassword(editPassword.trim()) : undefined;
     
     const updated = users.map(u => {
       if (u.username === editingUser) {
@@ -484,7 +504,7 @@ function App() {
           ...u,
           fullName: editFullName.trim(),
           phone: editPhone.trim(),
-          password: editPassword,
+          password: nextPasswordHash ?? u.password,
           role: editRole
         };
       }
@@ -500,7 +520,6 @@ function App() {
         ...currentUser,
         fullName: editFullName.trim(),
         phone: editPhone.trim(),
-        password: editPassword,
         role: editRole
       };
       setCurrentUser(updatedCurrent);
@@ -658,10 +677,8 @@ function App() {
     const savedUsers = localStorage.getItem("miu_math_users");
     let parsedUsers;
     if (!savedUsers) {
-      parsedUsers = [
-        { username: "admin", password: "admin", fullName: "Quản trị viên hệ thống", phone: "0999999999", role: "admin", active: true, approved: true },
-        { username: "student", password: "student", fullName: "Học sinh chuyên cần", phone: "0888888888", role: "student", active: true, approved: true }
-      ];
+      // No default credentials: the first registered account becomes the admin
+      parsedUsers = [];
       localStorage.setItem("miu_math_users", JSON.stringify(parsedUsers));
     } else {
       parsedUsers = getStoredJson("miu_math_users", []);

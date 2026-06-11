@@ -12,9 +12,10 @@
   },
   "dependencies": {
     "@miuprep/content": "*",
-    "@miuprep/ui": "*",
+    "@miuprep/db": "*",
     "@miuprep/knowledge": "*",
     "@miuprep/learning": "*",
+    "@miuprep/ui": "*",
     "dompurify": "^3.4.7",
     "katex": "^0.17.0",
     "react": "^19.2.6",

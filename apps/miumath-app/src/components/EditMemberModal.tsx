@@ -100,12 +100,11 @@ export default function EditMemberModal({
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
           <label style={{ fontSize: '0.8rem', fontWeight: 700, color: '#064e3b' }}>Mat khau</label>
           <input
-            type="text"
+            type="password"
             value={editPassword}
             onChange={(event) => setEditPassword(event.target.value)}
-            placeholder="Nhap mat khau moi..."
+            placeholder="De trong neu giu mat khau cu..."
             style={{ padding: '10px 14px', borderRadius: '12px', border: '1.5px solid #10b981', fontSize: '0.88rem', outline: 'none' }}
-            required
           />
         </div>
 
