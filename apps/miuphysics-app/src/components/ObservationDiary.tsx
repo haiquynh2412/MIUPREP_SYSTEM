@@ -12,10 +12,10 @@ export default function ObservationDiary({
   onDeleteEntry,
   chapters = [],
   lang = 'vi',
-}) {
+}: any) {
   const [text, setText] = useState('');
   const [selectedChapter, setSelectedChapter] = useState('');
-  const [tags, setTags] = useState([]);
+  const [tags, setTags] = useState<any[]>([]);
   const [tagInput, setTagInput] = useState('');
   const [showForm, setShowForm] = useState(false);
 
@@ -220,7 +220,7 @@ export default function ObservationDiary({
       {entries.length > 0 ? (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           {[...entries]
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
             .map((entry) => {
               const chObj = chapters.find((c) => c.id === entry.chapter);
               const chName = chObj ? (lang === 'en' ? chObj.name : chObj.nameVn) : String(entry.chapter || '').replace(/_/g, ' ');

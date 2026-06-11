@@ -1,4 +1,4 @@
-export default function StreakTracker({ streak = 0, bestStreak = 0, lang = 'vi' }) {
+export default function StreakTracker({ streak = 0, bestStreak = 0, lang = 'vi' }: any) {
   const displayBest = bestStreak > streak;
 
   return (

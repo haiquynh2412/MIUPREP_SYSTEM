@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import { useState } from 'react';
 
 export default function DiscoveryMap({
@@ -9,7 +10,7 @@ export default function DiscoveryMap({
   onSelectZone,
   selectedGrade,
   lang = 'vi',
-}) {
+}: any) {
   const [expandedZone, setExpandedZone] = useState(null);
 
   const getZoneProgress = (zone) => {
@@ -72,7 +73,7 @@ export default function DiscoveryMap({
             <div key={zone.id} className={`discovery-zone-wrapper ${isExpanded ? 'expanded' : ''}`}>
               <div
                 className={`discovery-zone-card ${isExpanded ? 'active' : ''}`}
-                style={{ '--zone-color': zone.color, '--zone-gradient': zone.gradient }}
+                style={{ '--zone-color': zone.color, '--zone-gradient': zone.gradient } as CSSProperties}
                 onClick={() => handleZoneClick(zone)}
                 role="button"
                 tabIndex={0}

@@ -1,9 +1,10 @@
+import type { CSSProperties } from 'react';
 // ─────────────────────────────────────────────────────────
 // MiuPhysics — Language Toggle Component
 // Compact VI / EN pill switch
 // ─────────────────────────────────────────────────────────
 
-export default function LanguageToggle({ lang = 'vi', onToggle }) {
+export default function LanguageToggle({ lang = 'vi', onToggle }: any) {
   return (
     <button
       className="language-toggle"
@@ -29,7 +30,7 @@ export default function LanguageToggle({ lang = 'vi', onToggle }) {
 }
 
 // Inline styles that honour the dark-violet theme via CSS variable fallbacks
-const styles = {
+const styles: Record<string, CSSProperties> = {
   toggle: {
     display: 'inline-flex',
     alignItems: 'center',

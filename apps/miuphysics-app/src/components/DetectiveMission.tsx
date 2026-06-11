@@ -7,7 +7,7 @@ export default function DetectiveMission({
   completedMissionIds = [],
   onCompleteMission,
   lang = 'vi',
-}) {
+}: any) {
   const [expandedHints, setExpandedHints] = useState({});
 
   const completedSet = new Set(completedMissionIds);

@@ -1,7 +1,7 @@
-import ProgressRing from './ProgressRing.jsx';
+import ProgressRing from './ProgressRing';
 import { t } from '../data/i18n.js';
 
-export default function ChapterMap({ chapters, questions, learningState, onSelectChapter, lang = 'vi' }) {
+export default function ChapterMap({ chapters, questions, learningState, onSelectChapter, lang = 'vi' }: any) {
   const getChapterProgress = (chapterId) => {
     const chapterQuestions = (questions || []).filter((q) => q.chapter === chapterId);
     if (!chapterQuestions.length) return { total: 0, attempted: 0, correct: 0, progress: 0 };

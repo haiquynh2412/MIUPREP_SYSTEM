@@ -37,7 +37,7 @@ export default function ThinkingGuide({
   isVisible = true,
   renderMath,
   lang = 'vi',
-}) {
+}: any) {
   const [expanded, setExpanded] = useState(true);
   const [hintLevel, setHintLevel] = useState(0);
 
@@ -107,7 +107,7 @@ export default function ThinkingGuide({
     }
   };
 
-  const hints = [];
+  const hints: any[] = [];
   const tgHints = guide?.thinking_guide?.hints || [];
   if (Array.isArray(tgHints) && tgHints.length > 0) {
     tgHints.forEach(h => {

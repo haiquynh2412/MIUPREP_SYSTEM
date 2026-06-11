@@ -31,7 +31,7 @@ export default function AchievementPanel({
   streak = 0,
   levels = DEFAULT_LEVELS,
   lang = 'vi',
-}) {
+}: any) {
   const currentLevel = getCurrentLevel(xp, levels);
   const nextLevel = getNextLevel(xp, levels);
   const currentMinXp = currentLevel.xpRequired !== undefined ? currentLevel.xpRequired : currentLevel.minXp;
@@ -53,7 +53,7 @@ export default function AchievementPanel({
 
       {/* Level & XP */}
       <div className="card level-display" style={{ marginBottom: 20 }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifycontent: 'space-between', justifyContent: 'space-between', marginBottom: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
           <div>
             <div style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-heading)' }}>
               ⭐ {t('achievement_level_prefix', lang, { level: currentLevel.level, title: levelTitle })}

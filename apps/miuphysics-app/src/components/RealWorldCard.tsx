@@ -18,7 +18,7 @@ const INSPIRING_MESSAGES_MAP = {
   ],
 };
 
-export default function RealWorldCard({ connection, chapter = '', renderMath, lang = 'vi' }) {
+export default function RealWorldCard({ connection, chapter = '', renderMath, lang = 'vi' }: any) {
   const [expanded, setExpanded] = useState(true);
 
   if (!connection) return null;

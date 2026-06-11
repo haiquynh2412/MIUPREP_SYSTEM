@@ -11,7 +11,7 @@ function seededRandom(seed) {
   return x - Math.floor(x);
 }
 
-export default function DailyFact({ facts = [], selectedGrade = null, lang = 'vi' }) {
+export default function DailyFact({ facts = [], selectedGrade = null, lang = 'vi' }: any) {
   const daySeed = Math.floor(Date.now() / 86400000);
 
   const filteredFacts = selectedGrade

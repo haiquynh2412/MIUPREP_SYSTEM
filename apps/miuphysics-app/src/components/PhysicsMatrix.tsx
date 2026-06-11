@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import { t } from '../data/i18n.js';
 
 export default function PhysicsMatrix({
@@ -8,7 +9,7 @@ export default function PhysicsMatrix({
   onSelectChapter,
   selectedGrade = null,
   lang = 'vi',
-}) {
+}: any) {
   // Calculate completion stats for a specific chapter
   const getChapterStats = (chapterId) => {
     const chapterQuestions = (questions || []).filter((q) => q.chapter === chapterId);
@@ -104,7 +105,7 @@ export default function PhysicsMatrix({
                                 role="button"
                                 tabIndex={0}
                                 onKeyDown={(e) => e.key === 'Enter' && onSelectChapter(ch)}
-                                style={{ '--chapter-color': ch.color }}
+                                style={{ '--chapter-color': ch.color } as CSSProperties}
                               >
                                 <div className="matrix-chapter-header">
                                   <span className="matrix-chapter-icon">{ch.icon}</span>

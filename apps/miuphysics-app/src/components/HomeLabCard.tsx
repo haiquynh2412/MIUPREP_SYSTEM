@@ -6,7 +6,7 @@ export default function HomeLabCard({
   onMarkComplete,
   completedIds = [],
   lang = 'vi',
-}) {
+}: any) {
   const [showAnswers, setShowAnswers] = useState({});
 
   const completedSet = new Set(completedIds);

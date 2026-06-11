@@ -1,4 +1,4 @@
-import ProgressRing from './ProgressRing.jsx';
+import ProgressRing from './ProgressRing';
 import { t } from '../data/i18n.js';
 
 const getMasteryStatusLabel = (status, lang) => {
@@ -26,7 +26,7 @@ export default function Dashboard({
   onNavigate,
   errorNotebookSummary,
   lang = 'vi',
-}) {
+}: any) {
   if (!dashboard) return null;
 
   const {

@@ -31,14 +31,14 @@ export default function QuickChallenge({
   onComplete,
   renderMath,
   lang = 'vi',
-}) {
-  const [mode, setMode] = useState(null);
-  const [challengeQuestions, setChallengeQuestions] = useState([]);
+}: any) {
+  const [mode, setMode] = useState<any>(null);
+  const [challengeQuestions, setChallengeQuestions] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [timer, setTimer] = useState(0);
   const [phase, setPhase] = useState('select'); // 'select' | 'playing' | 'result'
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<any>(null);
   const [showFeedback, setShowFeedback] = useState(false);
 
   // Timer countdown

@@ -7,7 +7,7 @@ export default function QuestionCard({
   onSelectAnswer,
   renderMath,
   lang = 'vi',
-}) {
+}: any) {
   const [showSim, setShowSim] = useState(false);
   const [showTraps, setShowTraps] = useState(false);
 

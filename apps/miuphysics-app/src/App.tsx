@@ -3,6 +3,36 @@ import DOMPurify from 'dompurify';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import './App.css';
+
+export interface PhysicsQuestionOption { key: string; content: string }
+
+export interface PhysicsQuestion {
+  id: string;
+  grade?: number | string;
+  chapter?: string;
+  chapter_vn?: string;
+  topic?: string;
+  topic_vn?: string;
+  type?: string;
+  difficulty?: string;
+  question_text?: string;
+  question_text_en?: string;
+  options?: PhysicsQuestionOption[] | null;
+  correct_answer?: string;
+  explanation?: Record<string, any> | null;
+  thinking_guide?: any;
+  real_world_connection?: any;
+  formula?: any;
+}
+
+export interface PhysicsChapter {
+  id?: string;
+  name?: string;
+  nameVn?: string;
+  icon?: string;
+  grade?: number | string;
+  [key: string]: any;
+}
 import {
   buildMiuPhysicsDiagnosticQuestions,
   buildMiuPhysicsErrorNotebookSummary,
@@ -30,22 +60,22 @@ import {
 } from './learning.js';
 
 // Components
-import ChapterMap from './components/ChapterMap.jsx';
-import QuestionCard from './components/QuestionCard.jsx';
-import ThinkingGuide from './components/ThinkingGuide.jsx';
-import Dashboard from './components/Dashboard.jsx';
-import ProgressRing from './components/ProgressRing.jsx';
-import RealWorldCard from './components/RealWorldCard.jsx';
-import DailyFact from './components/DailyFact.jsx';
-import AchievementPanel from './components/AchievementPanel.jsx';
-import DetectiveMission from './components/DetectiveMission.jsx';
-import HomeLabCard from './components/HomeLabCard.jsx';
-import ObservationDiary from './components/ObservationDiary.jsx';
-import QuickChallenge from './components/QuickChallenge.jsx';
-import StreakTracker from './components/StreakTracker.jsx';
-import LanguageToggle from './components/LanguageToggle.jsx';
-import DiscoveryMap from './components/DiscoveryMap.jsx';
-import PhysicsMatrix from './components/PhysicsMatrix.jsx';
+import ChapterMap from './components/ChapterMap';
+import QuestionCard from './components/QuestionCard';
+import ThinkingGuide from './components/ThinkingGuide';
+import Dashboard from './components/Dashboard';
+import ProgressRing from './components/ProgressRing';
+import RealWorldCard from './components/RealWorldCard';
+import DailyFact from './components/DailyFact';
+import AchievementPanel from './components/AchievementPanel';
+import DetectiveMission from './components/DetectiveMission';
+import HomeLabCard from './components/HomeLabCard';
+import ObservationDiary from './components/ObservationDiary';
+import QuickChallenge from './components/QuickChallenge';
+import StreakTracker from './components/StreakTracker';
+import LanguageToggle from './components/LanguageToggle';
+import DiscoveryMap from './components/DiscoveryMap';
+import PhysicsMatrix from './components/PhysicsMatrix';
 
 // Data
 import { DAILY_FACTS } from './data/dailyFacts.js';
@@ -129,7 +159,7 @@ const getLocalizedYoutubeUrl = (url, lang) => {
 /* ---- Main App ---- */
 export default function App() {
   // Data state
-  const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState<PhysicsQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [learningState, setLearningState] = useState(() => loadMiuPhysicsLearningState('guest'));
   const [errorNotebookEntries, setErrorNotebookEntries] = useState(() => loadMiuPhysicsErrorNotebook('guest'));
@@ -137,15 +167,15 @@ export default function App() {
   // View state
   const [selectedGrade, setSelectedGrade] = useState(6);
   const [currentView, setCurrentView] = useState('home');
-  const [currentChapter, setCurrentChapter] = useState(null);
-  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [currentChapter, setCurrentChapter] = useState<PhysicsChapter | null>(null);
+  const [currentQuestion, setCurrentQuestion] = useState<PhysicsQuestion | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [showThinkingGuide, setShowThinkingGuide] = useState(true);
   const [thinkingGuideStep, setThinkingGuideStep] = useState(0);
   const [practiceMode, setPracticeMode] = useState('guided');
-  const [practiceQuestions, setPracticeQuestions] = useState([]);
+  const [practiceQuestions, setPracticeQuestions] = useState<PhysicsQuestion[]>([]);
 
   // Home view mode: 'matrix' (Thematic Matrix), 'zones' (Discovery Map) or 'chapters' (Classic)
   const [homeViewMode, setHomeViewMode] = useState('matrix');
@@ -156,7 +186,7 @@ export default function App() {
   const [streak, setStreak] = useState(() => loadStreak());
   const [xp, setXp] = useState(() => loadXp());
   const [unlockedAchievements, setUnlockedAchievements] = useState(() => loadUnlockedAchievements());
-  const [achievementToast, setAchievementToast] = useState(null);
+  const [achievementToast, setAchievementToast] = useState<any>(null);
   const [diaryEntries, setDiaryEntries] = useState(() => loadDiaryEntries());
   const [completedMissionIds, setCompletedMissionIds] = useState(() => loadCompletedMissions());
   const [completedExperimentIds, setCompletedExperimentIds] = useState(() => loadCompletedExperiments());
@@ -167,7 +197,7 @@ export default function App() {
     setLang(newLang);
     saveLanguage(newLang);
   };
-  const _ = (key, params) => t(key, lang, params);
+  const _ = (key: string, params?: Record<string, string | number>) => t(key, lang, params);
 
   const learnerId = 'guest';
   const errorNotebookSummary = buildMiuPhysicsErrorNotebookSummary(errorNotebookEntries);
@@ -208,7 +238,7 @@ export default function App() {
   }, []);
 
   /* ---- Navigation ---- */
-  const navigateTo = (view, options = {}) => {
+  const navigateTo = (view: string, options: { chapter?: PhysicsChapter; question?: PhysicsQuestion; questionIndex?: number } = {}) => {
     setCurrentView(view);
     setSelectedAnswer(null);
     setShowResult(false);
@@ -504,7 +534,7 @@ export default function App() {
               <div className="quick-stat">
                 <div className="stat-value" style={{ fontSize: '1.5rem' }}>
                   {dashboard.skillMastery.length > 0
-                    ? Math.round(dashboard.skillMastery.reduce((s, r) => s + (r.mastery || 0), 0) / dashboard.skillMastery.length * 100)
+                    ? Math.round(dashboard.skillMastery.reduce((s, r) => s + (r.accuracy || 0), 0) / dashboard.skillMastery.length * 100)
                     : 0}%
                 </div>
                 <div className="stat-label">{_('avg_mastery')}</div>
@@ -661,7 +691,7 @@ export default function App() {
 
               {/* Curiosity Banner from Zone */}
               {(() => {
-                const zone = getZoneForChapter(currentChapter.id);
+                const zone = getZoneForChapter(currentChapter.id ?? '');
                 if (!zone) return null;
                 return (
                   <div className="chapter-curiosity-banner">
@@ -878,7 +908,7 @@ export default function App() {
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                   {questions.filter((q) => q.chapter === currentChapter.id).map((q, idx) => {
-                    const diffBadge = { easy: '🟢', medium: '🟡', hard: '🔴' }[q.difficulty] || '🟡';
+                    const diffBadge = { easy: '🟢', medium: '🟡', hard: '🔴' }[q.difficulty || 'medium'] || '🟡';
                     const hasSim = !!CHAPTER_RESOURCES[currentChapter.id]?.question_sims?.[q.id];
                     return (
                       <div
@@ -899,7 +929,7 @@ export default function App() {
                       >
                         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                           <span>{diffBadge}</span>
-                          <span style={{ flex: 1, fontSize: '0.9rem' }} dangerouslySetInnerHTML={{ __html: renderMath(q.question_text?.substring(0, 120) + (q.question_text?.length > 120 ? '...' : '')) }} />
+                          <span style={{ flex: 1, fontSize: '0.9rem' }} dangerouslySetInnerHTML={{ __html: renderMath(q.question_text?.substring(0, 120) + ((q.question_text?.length || 0) > 120 ? '...' : '')) }} />
                           {hasSim && <span title="Có thí nghiệm mô phỏng" style={{ fontSize: '0.9rem' }}>🧪</span>}
                           <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>#{idx + 1}</span>
                         </div>
