@@ -87,9 +87,11 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 - [x] **2.1.1. Đo lường chính xác diff giữa 2 app** *(11/06/2026 — Báo cáo đầy đủ tại `reports/desktop-apps-diff-analysis.md`: 16 file so sánh từng dòng. Nhóm A (≤5% khác, chỉ màu theme + nhãn): 10 file ~4.500 dòng → trích xuất được ngay. Nhóm B (khác nội dung thật theo track): WritingAiRoom, SpeakingAiRoom, Onboarding, App.tsx → cần đẩy content vào @miuprep/content trước)*
 - [x] **2.1.2. Tách component trùng lặp vào package mới `@miuprep/exam-desktop`** *(11/06/2026 — Trích xuất 4 hooks + 5 components (AdaptivePracticeRoom 1.655 dòng, ExamSectionSheet 797, ErrorNotebook, ModeSelectorModal, ImportErrorModal); xóa 18 file trùng (~4.000 dòng bảo trì kép). Tham số hóa: `ExamTrackConfig` qua context + màu semantic Tailwind (accent/accentdeep/accentalt/accentcontrast) — mỗi app map sang palette riêng, giữ nguyên nhận diện thị giác. Test: tsc package sạch, 2 app build + lint sạch, e2e recovery PASS cả 2 app. Commit `2e25807e`. Còn lại cho 2.1.3: SpeakingAiRoom/WritingAiRoom/Onboarding (nội dung theo track) + LearnerProfileCard (thang điểm khác))*
-- [ ] **2.1.3. Hợp nhất phần còn lại → 1 app `exam-desktop` duy nhất với build config theo track**
-  - Test vòng 1: build ra 2 bản (ielts/cpe) từ 1 codebase, e2e cả 2 pass
-  - Test vòng 2: Tauri build thật trên Windows, mở app kiểm tra thủ công luồng: onboarding → thi → chấm AI → error notebook
+- [~] **2.1.3. Hợp nhất phần còn lại → 1 app `exam-desktop` duy nhất**
+  - [x] *Bước 1 (11/06/2026, commit `8acb03f3`): LearnerProfileCard — bản ielts đã multi-track sẵn (activeTrack + theme map), bản cpe là fork cũ → promote bản ielts vào package, cpe truyền activeTrack="cpe". Test: build 2 app + e2e cpe recovery PASS*
+  - [x] *Bước 2 (11/06/2026, commit `5ac115a5`): SpeakingAiRoom + WritingAiRoom (~2.700 dòng trùng) — cả 2 bản ielts đã track-ready; chuyển derivation theme/sample-bank vào trong component (WRITING_TRACK_THEMES), props override thành optional. Xóa 4 bản local. Test: build + lint 2 app, e2e speaking + writing PASS 2/2*
+  - [ ] Bước 3: Onboarding (fork nội dung thật — đề chẩn đoán + thang điểm khác nhau) — cần đẩy đề chẩn đoán vào @miuprep/content trước
+  - [ ] Bước 4: hợp nhất App.tsx → 1 app duy nhất build 2 bản theo track; Tauri build thật kiểm tra thủ công
 - [ ] **2.1.4. Xóa 2 app cũ sau 2 tuần chạy song song không lỗi**
 
 ### 2.2. Tách content khỏi source code & sửa tầng lưu trữ
@@ -187,7 +189,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 7 (+1 chờ remote, +1 gộp vào GĐ2) | ~64% |
-| GĐ 2 — Kiến trúc | 14 | 3 | ~21% |
+| GĐ 2 — Kiến trúc | 15 | 8 | ~53% |
 | GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
 | **Tổng** | **41** | **14** | **~34%** |
 
