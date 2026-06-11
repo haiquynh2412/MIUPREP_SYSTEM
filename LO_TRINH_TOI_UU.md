@@ -92,9 +92,12 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - Test vòng 2: Tauri build thật trên Windows, mở app kiểm tra thủ công luồng: onboarding → thi → chấm AI → error notebook
 - [ ] **2.1.4. Xóa 2 app cũ sau 2 tuần chạy song song không lỗi**
 
-### 2.2. Tách content khỏi source code
+### 2.2. Tách content khỏi source code & sửa tầng lưu trữ
 
-- [ ] **2.2.1. Chuyển `math6-enrichment.ts` (700k dòng) + `math10-enrichment.ts` sang JSON load theo nhu cầu**
+> **Hiệu chỉnh 11/06/2026:** số liệu "700k dòng" trong audit ban đầu là nhầm bytes thành dòng — `math6-enrichment.ts` thực tế 11.9k dòng (~700KB), `knowledge/index.ts` 2.8k dòng. Mức ưu tiên 2.2.1/2.2.2 hạ xuống. Vấn đề thật của tầng lưu trữ là quota localStorage (đã xử lý ở 2.2.0).
+
+- [x] **2.2.0. (MỚI) Sửa QuotaExceededError web mode — IndexedDB backend** *(11/06/2026 — `@miuprep/db` thêm tầng AsyncKV (LocalStorageKV / IndexedDbKV); `IndexedDbAdapter` cùng layout dữ liệu, quota hàng GB, tự migrate key `ielts_app_*` cũ ra khỏi localStorage; learning events giữ localStorage (helper đồng bộ dùng chung). 2 app desktop dùng IndexedDB ở web mode. Test: db unit PASS, 2 app build PASS, **e2e listening từ FAIL → PASS, 0 QuotaExceeded**, recovery PASS cả 2 app. Lưu ý: suite e2e có flaky khi chạy song song nhiều spec nặng (timeout banner 5s) — không phải lỗi logic. Commit `40bf4d1a`)*
+- [ ] **2.2.1. Chuyển `math6-enrichment.ts` (11.9k dòng) + `math10-enrichment.ts` sang JSON load theo nhu cầu** *(ưu tiên hạ sau hiệu chỉnh số liệu)*
   - Test vòng 1: `npm test -w @miuprep/content` + guard math6/math10 pass, số câu hỏi trước/sau giống hệt (đếm + checksum)
   - Test vòng 2: T-BUILD — đo thời gian build giảm; app hiển thị câu hỏi bình thường (QA script)
 - [ ] **2.2.2. Tách `packages/knowledge/src/index.ts` (173k dòng) thành data JSON + logic TS**
@@ -181,9 +184,9 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 7 (+1 chờ remote, +1 gộp vào GĐ2) | ~64% |
-| GĐ 2 — Kiến trúc | 13 | 2 | ~15% |
+| GĐ 2 — Kiến trúc | 14 | 3 | ~21% |
 | GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
-| **Tổng** | **40** | **13** | **32.5%** |
+| **Tổng** | **41** | **14** | **~34%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
