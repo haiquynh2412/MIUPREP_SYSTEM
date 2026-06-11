@@ -50,19 +50,8 @@ import type {
   EnglishItemBankPracticeQuestion,
   EnglishItemBankPracticeState,
 } from './lib/englishItemBankPractice';
-import AdminAnalyticsWorkspace from './components/AdminAnalyticsWorkspace';
-import AdminContentReviewPanel from './components/AdminContentReviewPanel';
-import AdminExamImportPanel from './components/AdminExamImportPanel';
-import AdminLogsPanel from './components/AdminLogsPanel';
-import AdminMathContentPanel from './components/AdminMathContentPanel';
-import AdminOverviewPanel from './components/AdminOverviewPanel';
-import AdminSatContentPanel from './components/AdminSatContentPanel';
 import type { AdminSatQuestion } from './components/AdminSatContentPanel';
 import AdminUserDetailModal from './components/AdminUserDetailModal';
-import AdminUsersPanel from './components/AdminUsersPanel';
-import ParentWorkspace from './components/ParentWorkspace';
-import StudentDashboardWorkspace from './components/StudentDashboardWorkspace';
-import StudentSatBoardWorkspace from './components/StudentSatBoardWorkspace';
 import type { SatTaxonomy } from './components/StudentSatBoardWorkspace';
 import {
   buildContentExamChangeSet,
@@ -91,6 +80,17 @@ import {
 } from './lib/adminContent';
 
 const SystemSurfacePreview = React.lazy(() => import('./components/SystemSurfacePreview'));
+const AdminAnalyticsWorkspace = React.lazy(() => import('./components/AdminAnalyticsWorkspace'));
+const AdminContentReviewPanel = React.lazy(() => import('./components/AdminContentReviewPanel'));
+const AdminExamImportPanel = React.lazy(() => import('./components/AdminExamImportPanel'));
+const AdminLogsPanel = React.lazy(() => import('./components/AdminLogsPanel'));
+const AdminMathContentPanel = React.lazy(() => import('./components/AdminMathContentPanel'));
+const AdminOverviewPanel = React.lazy(() => import('./components/AdminOverviewPanel'));
+const AdminSatContentPanel = React.lazy(() => import('./components/AdminSatContentPanel'));
+const AdminUsersPanel = React.lazy(() => import('./components/AdminUsersPanel'));
+const ParentWorkspace = React.lazy(() => import('./components/ParentWorkspace'));
+const StudentDashboardWorkspace = React.lazy(() => import('./components/StudentDashboardWorkspace'));
+const StudentSatBoardWorkspace = React.lazy(() => import('./components/StudentSatBoardWorkspace'));
 
 type TemplatePracticeModule = typeof import('./lib/templatePractice');
 type EnglishItemBankPracticeModule = typeof import('./lib/englishItemBankPractice');
@@ -2275,6 +2275,7 @@ export default function App() {
             ========================================== */}
         {currentUser && currentUser.role === 'student' && (
           activeStudentTab === 'sat-board' ? (
+            <DeferredPanel>
             <StudentSatBoardWorkspace
               satEstimatedScore={satEstimatedScore}
               satTargetScore={satTargetScore}
@@ -2292,7 +2293,9 @@ export default function App() {
               handleNextSatQuestion={handleNextSatQuestion}
               handleStartPractice={handleStartPractice}
             />
+            </DeferredPanel>
           ) : (
+            <DeferredPanel>
             <StudentDashboardWorkspace
               currentUser={currentUser}
               tracks={TRACKS}
@@ -2338,6 +2341,7 @@ export default function App() {
               handleMathLessonTemplateAction={handleMathLessonTemplateAction}
               handleEnglishLessonTemplateAction={handleEnglishLessonTemplateAction}
             />
+            </DeferredPanel>
           )
         )}
 
@@ -2346,6 +2350,7 @@ export default function App() {
             ROLE: PARENT DASHBOARD (SAT Tracker Styled)
             ========================================== */}
         {currentUser && currentUser.role === 'parent' && (
+          <DeferredPanel>
           <ParentWorkspace
             currentUser={currentUser}
             linkedStudents={linkedStudentsList}
@@ -2360,6 +2365,7 @@ export default function App() {
             handleUpdateStudentTarget={handleUpdateStudentTarget}
             handleRewardCoins={handleRewardCoins}
           />
+          </DeferredPanel>
         )}
 
 
@@ -2422,6 +2428,7 @@ export default function App() {
             </section>
 
             {effectiveAdminWorkspaceTab === 'overview' && !isAdminContentOnly && (
+              <DeferredPanel>
               <AdminOverviewPanel
                 users={allUsersList}
                 circulatingCoins={getCirculatingCoins()}
@@ -2435,9 +2442,11 @@ export default function App() {
                   </DeferredPanel>
                 )}
               />
+              </DeferredPanel>
             )}
 
             {effectiveAdminWorkspaceTab === 'analytics' && (
+              <DeferredPanel>
               <AdminAnalyticsWorkspace
                 isAdminContentOnly={isAdminContentOnly}
                 tracks={TRACKS}
@@ -2451,6 +2460,7 @@ export default function App() {
                 onOpenUsers={() => setAdminWorkspaceTab('users')}
                 onOpenContent={openAdminContentTrack}
               />
+              </DeferredPanel>
             )}
 
             {/* 3. INTERACTIVE USER DETAILS Drawer / Modal */}
@@ -2464,6 +2474,7 @@ export default function App() {
             )}
 
             {effectiveAdminWorkspaceTab === 'users' && !isAdminContentOnly && (
+              <DeferredPanel>
               <AdminUsersPanel
                 users={allUsersList}
                 roleFilter={roleFilter}
@@ -2474,6 +2485,7 @@ export default function App() {
                 onUpdateStatus={handleUpdateStatus}
                 onDeleteUser={handleDeleteUser}
               />
+              </DeferredPanel>
             )}
 
             {/* ==========================================
@@ -2520,6 +2532,7 @@ export default function App() {
 
               {/* TRACK 1: MIUMATH MANAGEMENT */}
               {adminActiveTab === 'math' && (
+                <DeferredPanel>
                 <AdminMathContentPanel
                   mathLessons={mathLessons}
                   mathCasioTips={mathCasioTips}
@@ -2551,10 +2564,12 @@ export default function App() {
                   onAddMathLesson={handleAddMathLesson}
                   onCreateLatexQuestion={handleCreateLatexQuestion}
                 />
+                </DeferredPanel>
               )}
 
               {/* TRACK 2: SAT adaptive MANAGEMENT */}
               {adminActiveTab === 'sat' && (
+                <DeferredPanel>
                 <AdminSatContentPanel
                   adminSatSubTab={adminSatSubTab}
                   adminSelectedSatBank={adminSelectedSatBank}
@@ -2577,11 +2592,13 @@ export default function App() {
                   onSetSatIrtAlpha={setSatIrtAlpha}
                   onTriggerIrtCalibration={handleTriggerIrtCalibration}
                 />
+                </DeferredPanel>
               )}
 
               {/* TRACKS 3, 4, 5: IELTS, CAE, CPE (EXAM MANAGEMENT) */}
               {(adminActiveTab === 'ielts' || adminActiveTab === 'cae' || adminActiveTab === 'cpe') && (
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                  <DeferredPanel>
                   <AdminContentReviewPanel
                     track={adminActiveTab}
                     currentUser={currentUser}
@@ -2603,7 +2620,9 @@ export default function App() {
                     onAddQuestion={handleAddContentQuestion}
                     onRemoveQuestion={handleRemoveContentQuestion}
                   />
+                  </DeferredPanel>
 
+                  <DeferredPanel>
                   <AdminExamImportPanel
                     track={adminActiveTab}
                     newExamId={newExamId}
@@ -2622,6 +2641,7 @@ export default function App() {
                     onLoadDemoExam={handleLoadDemoExam}
                     onImportJsonExam={handleImportJsonExam}
                   />
+                  </DeferredPanel>
                 </div>
               )}
             </section>
@@ -2629,12 +2649,14 @@ export default function App() {
 
             {/* System Telemetry Logs Audit & CLI Control Console */}
             {effectiveAdminWorkspaceTab === 'logs' && !isAdminContentOnly && (
+              <DeferredPanel>
               <AdminLogsPanel
                 adminLogs={adminLogs}
                 terminalCommand={terminalCommand}
                 setTerminalCommand={setTerminalCommand}
                 handleTerminalSubmit={handleTerminalSubmit}
               />
+              </DeferredPanel>
             )}
 
           </div>
