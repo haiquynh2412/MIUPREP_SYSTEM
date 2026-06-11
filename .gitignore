@@ -46,3 +46,9 @@ env/
 
 # Native build output
 target/
+
+# Large data artifacts that exceed GitHub's file-size limit (kept locally, not versioned)
+apps/sat-studio/data/*.zip
+reports/content-quality/math9-display-ready-preview.json
+reports/content-quality/math10-display-ready-preview.json
+reports/content-quality/math10-published-question-bank.json
