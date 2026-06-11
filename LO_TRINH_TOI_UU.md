@@ -97,9 +97,12 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 > **Hiệu chỉnh 11/06/2026:** số liệu "700k dòng" trong audit ban đầu là nhầm bytes thành dòng — `math6-enrichment.ts` thực tế 11.9k dòng (~700KB), `knowledge/index.ts` 2.8k dòng. Mức ưu tiên 2.2.1/2.2.2 hạ xuống. Vấn đề thật của tầng lưu trữ là quota localStorage (đã xử lý ở 2.2.0).
 
 - [x] **2.2.0. (MỚI) Sửa QuotaExceededError web mode — IndexedDB backend** *(11/06/2026 — `@miuprep/db` thêm tầng AsyncKV (LocalStorageKV / IndexedDbKV); `IndexedDbAdapter` cùng layout dữ liệu, quota hàng GB, tự migrate key `ielts_app_*` cũ ra khỏi localStorage; learning events giữ localStorage (helper đồng bộ dùng chung). 2 app desktop dùng IndexedDB ở web mode. Test: db unit PASS, 2 app build PASS, **e2e listening từ FAIL → PASS, 0 QuotaExceeded**, recovery PASS cả 2 app. Lưu ý: suite e2e có flaky khi chạy song song nhiều spec nặng (timeout banner 5s) — không phải lỗi logic. Commit `40bf4d1a`)*
-- [ ] **2.2.1. Chuyển `math6-enrichment.ts` (11.9k dòng) + `math10-enrichment.ts` sang JSON load theo nhu cầu** *(ưu tiên hạ sau hiệu chỉnh số liệu)*
-  - Test vòng 1: `npm test -w @miuprep/content` + guard math6/math10 pass, số câu hỏi trước/sau giống hệt (đếm + checksum)
-  - Test vòng 2: T-BUILD — đo thời gian build giảm; app hiển thị câu hỏi bình thường (QA script)
+- [!] **2.2.1. Chuyển enrichment sang JSON — VÔ HIỆU HÓA BỞI SỐ ĐO THỰC NGHIỆM** *(11/06/2026 — Điều tra kết luận:*
+  *(a) `math6-enrichment.ts` phần lớn KHÔNG phải data: 876 block lời giải dạng if-match (data trá hình code, ~73 block có logic regex/điều kiện phức tạp) + hàng trăm hàm solver thật;*
+  *(b) Đo typecheck: content (3.164 file) = 53.8s ≈ db (3 file) = 52.7s → thời gian build KHÔNG phụ thuộc kích thước file mà là overhead cố định ~50s mỗi lần chạy tsc;*
+  *(c) Cùng binary tsc, project ngoài OneDrive: 3.5s → thủ phạm là OneDrive sync engine quét node_modules;*
+  *(d) Đã THỬ junction node_modules ra ngoài OneDrive → tệ hơn (52s → 128s, có thể do Defender quét lại đường dẫn mới) → ĐÃ HOÀN NGUYÊN sạch.*
+  ***Kết luận: fix duy nhất hiệu quả là chuyển cả repo ra ngoài OneDrive (vd `C:\Source\MIUPREP_SYSTEM`), dùng git push GitHub làm backup thay cho OneDrive. Cần bạn quyết định — và phải làm giữa 2 phiên làm việc (phiên Claude đang neo vào đường dẫn hiện tại). Việc chuyển data sang JSON vẫn có giá trị cho bundle size về sau nhưng không còn là ưu tiên build-speed.)*
 - [ ] **2.2.2. Tách `packages/knowledge/src/index.ts` (173k dòng) thành data JSON + logic TS**
   - Test vòng 1: `npm test -w @miuprep/knowledge` pass, export API không đổi
   - Test vòng 2: T-PKG toàn bộ (các package phụ thuộc knowledge không vỡ)
@@ -203,5 +206,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 1.1.5 | Đánh giá lại — chuyển `[!]`, gộp vào 2.4 | Tách đáp án sang content package là bảo mật giả; cần server-side scoring |
 | 11/06/2026 | 2.1.1 | PASS — báo cáo diff 16 file hoàn chỉnh | `reports/desktop-apps-diff-analysis.md` |
 | 11/06/2026 | 2.1.2 | PASS — tsc package sạch; 2 app build + lint sạch; e2e recovery PASS cả 2 app | Commit `2e25807e`; xóa ~4.000 dòng trùng lặp; package mới `@miuprep/exam-desktop` |
+| 11/06/2026 | 2.2.0 | PASS — e2e listening FAIL→PASS, 0 QuotaExceeded | Commit `40bf4d1a`; IndexedDB backend |
+| 11/06/2026 | 2.2.1 | Điều tra bằng số đo → chuyển `[!]` | Build chậm do OneDrive (50s overhead cố định/lần tsc; ngoài OneDrive 3.5s); junction đã thử và hoàn nguyên; cần chuyển repo ra ngoài OneDrive (quyết định của bạn) |
 | 11/06/2026 | 1.1.4 | PASS — ai tests (migration/purge/memory-only); 2 app desktop build sạch | Commit `53b4f039` |
 | 11/06/2026 | 1.1.2 + 1.1.3 | PASS — 7/7 package tests; build ielts/cpe/portal; lint 3 app; e2e recovery PASS; QA portal 2/2 PASS; grep credentials sạch | Commit `af0f0165`. Gỡ toàn bộ backdoor/seed mặc định ở 3 app; PBKDF2 + auto-rehash; e2e tự seed user. **Phát hiện mới:** `QuotaExceededError` ở web mode (ngân hàng đề vượt quota localStorage) → cần xử lý ở task 2.2 (chuyển content sang load theo nhu cầu / IndexedDB); e2e listening fail ở bước sau-submit vì vấn đề này (có sẵn, không do auth) |
