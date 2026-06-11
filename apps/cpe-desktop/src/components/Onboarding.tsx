@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { hashPassword, verifyPassword } from '@miuprep/db';
 import type { StorageAdapter, LocalUser } from '@miuprep/db';
 
 interface OnboardingProps {
@@ -157,26 +158,6 @@ const GROUND_TRUTH: Record<string, string[]> = {
   q15: ['A', 'a']
 };
 
-// Zero-dependency SHA-256 helper
-async function hashPassword(password: string): Promise<string> {
-  try {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(password);
-    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-  } catch {
-    // Fallback if crypto.subtle is not supported (e.g. non-secure sandbox)
-    let hash = 0;
-    for (let i = 0; i < password.length; i++) {
-      const char = password.charCodeAt(i);
-      hash = (hash << 5) - hash + char;
-      hash = hash & hash;
-    }
-    return 'fallback_' + Math.abs(hash).toString(16);
-  }
-}
-
 export default function Onboarding({ db, onComplete }: OnboardingProps) {
   const [view, setView] = useState<'login' | 'register' | 'diagnostic' | 'result' | 'review'>('register');
   
@@ -189,6 +170,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
     d.setMonth(d.getMonth() + 3);
     return d.toISOString().split('T')[0];
   });
+  const [role, setRole] = useState<'admin' | 'student'>('student');
   const [authError, setAuthError] = useState('');
   const [authSuccess, setAuthSuccess] = useState('');
   const [currentUser, setCurrentUser] = useState<LocalUser | null>(null);
@@ -409,6 +391,16 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
     }
 
     try {
+      // First-run setup: the very first admin on this device registers freely.
+      // Once an admin exists, additional admin accounts must be issued by them.
+      if (role === 'admin') {
+        const existingUsers = await db.listLocalUsers();
+        if (existingUsers.some(u => u.role === 'admin')) {
+          setAuthError('Thiết bị này đã có Quản trị viên. Vui lòng nhờ Quản trị viên hiện tại cấp tài khoản trong trang quản trị.');
+          return;
+        }
+      }
+
       const existing = await db.getLocalUser(username.trim());
       if (existing) {
         setAuthError('Tên đăng nhập đã tồn tại trên thiết bị này.');
@@ -417,27 +409,36 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
 
       const userId = 'user_' + Math.random().toString(36).substring(2, 9);
       const passwordHash = await hashPassword(password);
-      
+
       const newUser: LocalUser = {
         id: userId,
         username: username.trim(),
         passwordHash,
         targetBand,
         examDate,
-        role: 'student',
+        role,
+        status: 'approved',
         createdAt: new Date().toISOString()
       };
 
       await db.registerLocalUser(newUser);
-      
+
       // Auto Login
       setCurrentUser(newUser);
       localStorage.setItem('current_user_id', userId);
-      setAuthSuccess('Đăng ký tài khoản thành công! Đang chuyển sang bài thi chẩn đoán...');
-      
-      setTimeout(() => {
-        setView('diagnostic');
-      }, 1000);
+
+      if (role === 'admin') {
+        setAuthSuccess('Đăng ký tài khoản Quản trị thành công! Đang chuyển sang màn hình quản lý...');
+        setTimeout(() => {
+          localStorage.setItem('diagnostic_done_' + userId, 'true');
+          onComplete(userId);
+        }, 1000);
+      } else {
+        setAuthSuccess('Đăng ký tài khoản thành công! Đang chuyển sang bài thi chẩn đoán...');
+        setTimeout(() => {
+          setView('diagnostic');
+        }, 1000);
+      }
     } catch (err) {
       setAuthError('Lỗi kết nối cơ sở dữ liệu: ' + String(err));
     }
@@ -454,76 +455,33 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
     }
 
     try {
-      let user = await db.getLocalUser(username.trim());
-
-      // Fail-safe: Seed admin dynamically if they try to login with admin/admin123 and it doesn't exist
-      if (username.trim() === 'admin' && password === 'admin123') {
-        if (!user) {
-          const defaultAdmin: LocalUser = {
-            id: 'user_admin',
-            username: 'admin',
-            passwordHash: '240ef403c6258f331f4a434199c0d4bb8e841113b2c12c4983a542b8e8b09325', // sha256 of "admin123"
-            targetBand: 200,
-            examDate: new Date(Date.now() + 365 * 86400000).toISOString().split('T')[0],
-            role: 'admin',
-            status: 'approved',
-            createdAt: new Date().toISOString()
-          };
-          await db.registerLocalUser(defaultAdmin);
-          user = defaultAdmin;
-        }
-      }
-
-      // Fail-safe: Seed student dynamically if they try to login with student/student and it doesn't exist
-      if (username.trim() === 'student' && password === 'student') {
-        if (!user) {
-          const defaultStudent: LocalUser = {
-            id: 'user_student',
-            username: 'student',
-            passwordHash: '264c8c381bf16c982a4e59b0dd4c6f7808c51a05f64c35db42cc78a2a72875bb', // sha256 of "student"
-            targetBand: 6.5,
-            examDate: new Date(Date.now() + 90 * 86400000).toISOString().split('T')[0],
-            role: 'student',
-            status: 'approved',
-            createdAt: new Date().toISOString()
-          };
-          await db.registerLocalUser(defaultStudent);
-          
-          const studentProfile = {
-            userId: 'user_student',
-            targetBand: 6.5,
-            examDate: defaultStudent.examDate,
-            weakSkills: [] as string[],
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString()
-          };
-          await db.saveLearnerProfile(studentProfile);
-          user = defaultStudent;
-        }
-      }
+      const user = await db.getLocalUser(username.trim());
 
       if (!user) {
         setAuthError('Tên đăng nhập không chính xác hoặc chưa được tạo.');
         return;
       }
 
-      const inputHash = await hashPassword(password);
-      const isPasswordCorrect = 
-        (username.trim() === 'admin' && password === 'admin123') ||
-        (username.trim() === 'student' && password === 'student') ||
-        user.passwordHash === inputHash ||
-        (username.trim() === 'admin' && user.passwordHash === 'fallback_39c43b7d');
-
-      if (!isPasswordCorrect) {
+      const verdict = await verifyPassword(password, user.passwordHash);
+      if (!verdict.ok) {
         setAuthError('Mật khẩu không khớp. Vui lòng thử lại.');
         return;
       }
 
+      // Transparently upgrade legacy password records to the current hash format
+      if (verdict.needsRehash) {
+        try {
+          await db.registerLocalUser({ ...user, passwordHash: await hashPassword(password) });
+        } catch (rehashErr) {
+          console.warn('Failed to upgrade legacy password hash:', rehashErr);
+        }
+      }
+
       setCurrentUser(user);
       localStorage.setItem('current_user_id', user.id);
-      
+
       // Check if diagnostic test completed
-      const done = localStorage.getItem('diagnostic_done_' + user.id) === 'true' || user.role === 'admin' || user.username === 'admin' || user.username === 'student';
+      const done = localStorage.getItem('diagnostic_done_' + user.id) === 'true' || user.role === 'admin';
       if (done) {
         localStorage.setItem('diagnostic_done_' + user.id, 'true');
         onComplete(user.id);
@@ -644,6 +602,36 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
 
             {view === 'register' && (
               <>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Vai trò</label>
+                  <div className="flex gap-1 bg-slate-950 border border-slate-850 rounded-lg p-1">
+                    <button
+                      type="button"
+                      onClick={() => setRole('student')}
+                      className={`flex-1 py-2 text-center text-xs font-bold rounded-md transition-all border-0 outline-none cursor-pointer ${
+                        role === 'student' ? 'bg-emerald-600 text-white shadow-md' : 'bg-transparent text-slate-400 hover:text-slate-200'
+                      }`}
+                    >
+                      Học viên (Student)
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setRole('admin')}
+                      className={`flex-1 py-2 text-center text-xs font-bold rounded-md transition-all border-0 outline-none cursor-pointer ${
+                        role === 'admin' ? 'bg-indigo-600 text-white shadow-md' : 'bg-transparent text-slate-400 hover:text-slate-200'
+                      }`}
+                    >
+                      Quản trị viên (Admin)
+                    </button>
+                  </div>
+                </div>
+
+                {role === 'admin' && (
+                  <p className="text-[10px] text-indigo-300 bg-indigo-950/40 border border-indigo-900 rounded-lg py-2 px-3 leading-relaxed">
+                    Tài khoản Quản trị đầu tiên trên thiết bị được tạo trực tiếp tại đây. Khi thiết bị đã có Quản trị viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.
+                  </p>
+                )}
+
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1.5">
                     <label className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Target CPE Score</label>

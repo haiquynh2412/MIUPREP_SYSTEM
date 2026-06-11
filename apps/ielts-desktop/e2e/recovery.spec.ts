@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { seedTestStudent } from './helpers';
 
 test.describe('IELTS Session Autosave & Recovery E2E Flow', () => {
   
@@ -6,6 +7,7 @@ test.describe('IELTS Session Autosave & Recovery E2E Flow', () => {
     page.on('console', msg => console.log(`[BROWSER CONSOLE]: ${msg.text()}`));
     page.on('pageerror', err => console.error(`[BROWSER ERROR]: ${err.message}`));
 
+    await seedTestStudent(page);
     await page.goto('/', { waitUntil: 'domcontentloaded' });
     
     // Perform authentic login using default seeded student account

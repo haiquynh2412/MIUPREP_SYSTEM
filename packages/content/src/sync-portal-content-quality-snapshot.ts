@@ -11,6 +11,16 @@ import { buildMath11ContentGuardReport } from './math11-content-guard-report';
 import type { Math11RawSource } from './math11-import';
 import { buildMath7ContentGuardReport } from './math7-content-guard-report';
 import type { Math7RawSource } from './math7-import';
+import { buildMath1ContentGuardReport } from './math1-content-guard-report';
+import type { Math1RawSource } from './math1-import';
+import { buildMath2ContentGuardReport } from './math2-content-guard-report';
+import type { Math2RawSource } from './math2-import';
+import { buildMath3ContentGuardReport } from './math3-content-guard-report';
+import type { Math3RawSource } from './math3-import';
+import { buildMath4ContentGuardReport } from './math4-content-guard-report';
+import type { Math4RawSource } from './math4-import';
+import { buildMath5ContentGuardReport } from './math5-content-guard-report';
+import type { Math5RawSource } from './math5-import';
 import { buildMiuMathContentGuardReport } from './miumath-content-guard-report';
 import { buildSatContentReadinessSnapshot, type SatPublicStudentPackage } from './sat-content';
 import { toQuestionItemsFromMiuMath, type MiuMathQuestion, type QuestionItem } from './standard';
@@ -450,6 +460,146 @@ function buildUnifiedCoverageSnapshot(workspaceRootPath: string, englishReport: 
     programs.push(buildPlannedMathProgramRow('vn_math_11_local_sources', 'VN Math 11 Local Sources', path.resolve(localMathSourceRoot, 'toan 11'), 'Knowledge Graph is ready; source folder is detected and should use the same guarded import/display-ready flow.'));
   }
 
+  // Math 1
+  const math1RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math1-rich-raw-extract.json');
+  if (fs.existsSync(math1RawPath)) {
+    const rawSources1 = readMath1RawSources(math1RawPath);
+    const math1Report = buildMath1ContentGuardReport(rawSources1, { rawPath: math1RawPath, generatedAt }).report;
+    const blockedItems1 = Math.max(0, math1Report.stats.questions - math1Report.stats.displayReady);
+    programs.push({
+      programId: 'vn_math_1',
+      label: 'VN Math 1 Local Sources',
+      sourceQuestions: math1Report.stats.questions,
+      importedQuestions: math1Report.adapter.convertedItems,
+      readyQuestions: math1Report.stats.displayReady,
+      blockerItems: blockedItems1,
+      warningItems: math1Report.qualitySummary.warnings,
+      coverageStatus: !math1Report.adapter.pass || math1Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems1 > 0 ? 'watch' : 'ready',
+      adapterPass: math1Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math1Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources1),
+      sourcePath: path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 1'),
+      currentPath: math1RawPath,
+      note: `${math1Report.stats.displayReady}/${math1Report.stats.questions} questions are display-ready; ${math1Report.stats.scoredPracticeReady} have visual explanations for scored practice.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_1', 'VN Math 1 Local Sources', path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 1'), 'Source folder is detected; run the Math 1 rich extractor and guard before opening local items.'));
+  }
+
+  // Math 2
+  const math2RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math2-rich-raw-extract.json');
+  if (fs.existsSync(math2RawPath)) {
+    const rawSources2 = readMath2RawSources(math2RawPath);
+    const math2Report = buildMath2ContentGuardReport(rawSources2, { rawPath: math2RawPath, generatedAt }).report;
+    const blockedItems2 = Math.max(0, math2Report.stats.questions - math2Report.stats.displayReady);
+    programs.push({
+      programId: 'vn_math_2',
+      label: 'VN Math 2 Local Sources',
+      sourceQuestions: math2Report.stats.questions,
+      importedQuestions: math2Report.adapter.convertedItems,
+      readyQuestions: math2Report.stats.displayReady,
+      blockerItems: blockedItems2,
+      warningItems: math2Report.qualitySummary.warnings,
+      coverageStatus: !math2Report.adapter.pass || math2Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems2 > 0 ? 'watch' : 'ready',
+      adapterPass: math2Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math2Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources2),
+      sourcePath: path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 2'),
+      currentPath: math2RawPath,
+      note: `${math2Report.stats.displayReady}/${math2Report.stats.questions} questions are display-ready; ${math2Report.stats.scoredPracticeReady} have visual explanations for scored practice.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_2', 'VN Math 2 Local Sources', path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 2'), 'Source folder is detected; run the Math 2 rich extractor and guard before opening local items.'));
+  }
+
+  // Math 3
+  const math3RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math3-rich-raw-extract.json');
+  if (fs.existsSync(math3RawPath)) {
+    const rawSources3 = readMath3RawSources(math3RawPath);
+    const math3Report = buildMath3ContentGuardReport(rawSources3, { rawPath: math3RawPath, generatedAt }).report;
+    const blockedItems3 = Math.max(0, math3Report.stats.questions - math3Report.stats.displayReady);
+    programs.push({
+      programId: 'vn_math_3',
+      label: 'VN Math 3 Local Sources',
+      sourceQuestions: math3Report.stats.questions,
+      importedQuestions: math3Report.adapter.convertedItems,
+      readyQuestions: math3Report.stats.displayReady,
+      blockerItems: blockedItems3,
+      warningItems: math3Report.qualitySummary.warnings,
+      coverageStatus: !math3Report.adapter.pass || math3Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems3 > 0 ? 'watch' : 'ready',
+      adapterPass: math3Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math3Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources3),
+      sourcePath: path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 3'),
+      currentPath: math3RawPath,
+      note: `${math3Report.stats.displayReady}/${math3Report.stats.questions} questions are display-ready; ${math3Report.stats.scoredPracticeReady} have visual explanations for scored practice.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_3', 'VN Math 3 Local Sources', path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 3'), 'Source folder is detected; run the Math 3 rich extractor and guard before opening local items.'));
+  }
+
+  // Math 4
+  const math4RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math4-rich-raw-extract.json');
+  if (fs.existsSync(math4RawPath)) {
+    const rawSources4 = readMath4RawSources(math4RawPath);
+    const math4Report = buildMath4ContentGuardReport(rawSources4, { rawPath: math4RawPath, generatedAt }).report;
+    const blockedItems4 = Math.max(0, math4Report.stats.questions - math4Report.stats.displayReady);
+    programs.push({
+      programId: 'vn_math_4',
+      label: 'VN Math 4 Local Sources',
+      sourceQuestions: math4Report.stats.questions,
+      importedQuestions: math4Report.adapter.convertedItems,
+      readyQuestions: math4Report.stats.displayReady,
+      blockerItems: blockedItems4,
+      warningItems: math4Report.qualitySummary.warnings,
+      coverageStatus: !math4Report.adapter.pass || math4Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems4 > 0 ? 'watch' : 'ready',
+      adapterPass: math4Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math4Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources4),
+      sourcePath: path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 4'),
+      currentPath: math4RawPath,
+      note: `${math4Report.stats.displayReady}/${math4Report.stats.questions} questions are display-ready; ${math4Report.stats.scoredPracticeReady} have visual explanations for scored practice.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_4', 'VN Math 4 Local Sources', path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 4'), 'Source folder is detected; run the Math 4 rich extractor and guard before opening local items.'));
+  }
+
+  // Math 5
+  const math5RawPath = path.resolve(workspaceRootPath, 'reports', 'content-quality', 'math5-rich-raw-extract.json');
+  if (fs.existsSync(math5RawPath)) {
+    const rawSources5 = readMath5RawSources(math5RawPath);
+    const math5Report = buildMath5ContentGuardReport(rawSources5, { rawPath: math5RawPath, generatedAt }).report;
+    const blockedItems5 = Math.max(0, math5Report.stats.questions - math5Report.stats.displayReady);
+    programs.push({
+      programId: 'vn_math_5',
+      label: 'VN Math 5 Local Sources',
+      sourceQuestions: math5Report.stats.questions,
+      importedQuestions: math5Report.adapter.convertedItems,
+      readyQuestions: math5Report.stats.displayReady,
+      blockerItems: blockedItems5,
+      warningItems: math5Report.qualitySummary.warnings,
+      coverageStatus: !math5Report.adapter.pass || math5Report.stats.displayReady === 0 ? 'needs_repair' : blockedItems5 > 0 ? 'watch' : 'ready',
+      adapterPass: math5Report.adapter.pass,
+      sourceMatched: true,
+      changedQuestions: 0,
+      sourceFiles: math5Report.input.sources,
+      sourceFormats: countSourceFormats(rawSources5),
+      sourcePath: path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 5'),
+      currentPath: math5RawPath,
+      note: `${math5Report.stats.displayReady}/${math5Report.stats.questions} questions are display-ready; ${math5Report.stats.scoredPracticeReady} have visual explanations for scored practice.`,
+    });
+  } else {
+    programs.push(buildPlannedMathProgramRow('vn_math_5', 'VN Math 5 Local Sources', path.resolve(localMathSourceRoot, 'CHIA SẺ TÀI LIỆU TOÁN LỚP 3-4-5-6', 'TAI LIEU TOAN 5'), 'Source folder is detected; run the Math 5 rich extractor and guard before opening local items.'));
+  }
+
   const satPackagePath = path.resolve(workspaceRootPath, 'apps', 'sat-studio', 'artifacts', 'sat-studio-public-content-package-latest.json');
   if (fs.existsSync(satPackagePath)) {
     const satPackage = readJson<SatPublicStudentPackage>(satPackagePath);
@@ -738,6 +888,51 @@ function readMath11RawSources(filePath: string): Math11RawSource[] {
   if (Array.isArray(parsed)) return parsed as Math11RawSource[];
   if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
     return (parsed as { sources: Math11RawSource[] }).sources;
+  }
+  return [];
+}
+
+function readMath1RawSources(filePath: string): Math1RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math1RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math1RawSource[] }).sources;
+  }
+  return [];
+}
+
+function readMath2RawSources(filePath: string): Math2RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math2RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math2RawSource[] }).sources;
+  }
+  return [];
+}
+
+function readMath3RawSources(filePath: string): Math3RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math3RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math3RawSource[] }).sources;
+  }
+  return [];
+}
+
+function readMath4RawSources(filePath: string): Math4RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math4RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math4RawSource[] }).sources;
+  }
+  return [];
+}
+
+function readMath5RawSources(filePath: string): Math5RawSource[] {
+  const parsed = readJson<unknown>(filePath);
+  if (Array.isArray(parsed)) return parsed as Math5RawSource[];
+  if (parsed && typeof parsed === 'object' && Array.isArray((parsed as { sources?: unknown }).sources)) {
+    return (parsed as { sources: Math5RawSource[] }).sources;
   }
   return [];
 }

@@ -1,4 +1,6 @@
 import type { IeltsTest } from '@miuprep/content';
+
+export * from './password';
 import {
   listLearningEventsFromStorage,
   normalizeErrorNotebookEntry,

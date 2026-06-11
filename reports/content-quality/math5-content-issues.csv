@@ -1,0 +1,6 @@
+"severity","code","questionId","sourceFile","topicId","field","path","message"
+"warning","import.source.no_exercise_blocks","","BT VE HINH TRON.doc","math5.measurement.geometry","","import.issues[0]","No exercise blocks were detected in this source."
+"warning","import.source.no_exercise_blocks","","CON THUC HINH HOC O TIEU HOC.doc","math5.measurement.geometry","","import.issues[1]","No exercise blocks were detected in this source."
+"blocker","adapter.validation","","","","","questions[387].id","Duplicate QuestionItem id ""math5.math5.number.percentage.dekiemtrah.003""."
+"blocker","adapter.validation","","","","","questions[388].id","Duplicate QuestionItem id ""math5.math5.number.percentage.dekiemtrah.001""."
+"blocker","adapter.validation","","","","","questions[406].id","Duplicate QuestionItem id ""math5.math5.number.percentage.dekiemtrah.006""."

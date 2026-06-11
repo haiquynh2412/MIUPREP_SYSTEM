@@ -217,7 +217,7 @@ export default function App() {
       if (currentUserId) {
         const user = localUsers.find(u => u.id === currentUserId);
         if (user) {
-          if (user.role === 'admin' || user.username === 'admin') {
+          if (user.role === 'admin') {
             // Admin can choose track freely, load from localStorage if present
             const stored = localStorage.getItem(`active_track_${currentUserId}`);
             if (stored === 'ielts' || stored === 'cpe' || stored === 'cae') {
@@ -595,60 +595,8 @@ export default function App() {
 
         localStorage.setItem('ielts_db_seed_version', CURRENT_SEED_VERSION);
 
-        // Seed default Admin User if not exists
-        try {
-          const userList = await db.listLocalUsers();
-          if (userList.length === 0 || !userList.some(u => u.username === 'admin')) {
-            const defaultAdmin = {
-              id: 'user_admin',
-              username: 'admin',
-              passwordHash: '240ef403c6258f331f4a434199c0d4bb8e841113b2c12c4983a542b8e8b09325', // sha256 of "admin123"
-              targetBand: 9.0,
-              examDate: new Date(Date.now() + 365 * 86400000).toISOString().split('T')[0],
-              role: 'admin' as const,
-              createdAt: new Date().toISOString()
-            };
-            await db.registerLocalUser(defaultAdmin);
-            console.log('[Seeding] Successfully seeded default administrator user: admin / admin123');
-          }
-          localStorage.setItem('diagnostic_done_user_admin', 'true');
-        } catch (uErr) {
-          console.error('[Seeding] Failed to seed default admin user:', uErr);
-        }
-
-        // Seed default Student User if not exists
-        try {
-          const userList = await db.listLocalUsers();
-          if (!userList.some(u => u.username === 'student')) {
-            const defaultStudent = {
-              id: 'user_student',
-              username: 'student',
-              passwordHash: '264c8c381bf16c982a4e59b0dd4c6f7808c51a05f64c35db42cc78a2a72875bb', // sha256 of "student"
-              targetBand: 6.5,
-              examDate: new Date(Date.now() + 90 * 86400000).toISOString().split('T')[0],
-              role: 'student' as const,
-              displayName: 'Default Student',
-              contactInfo: 'student@domain.com',
-              status: 'approved' as const,
-              createdAt: new Date().toISOString()
-            };
-            await db.registerLocalUser(defaultStudent);
-            
-            const studentProfile = {
-              userId: 'user_student',
-              targetBand: 6.5,
-              examDate: defaultStudent.examDate,
-              weakSkills: [] as string[],
-              createdAt: new Date().toISOString(),
-              updatedAt: new Date().toISOString()
-            };
-            await db.saveLearnerProfile(studentProfile);
-            console.log('[Seeding] Successfully seeded default student user: student / student');
-          }
-          localStorage.setItem('diagnostic_done_user_student', 'true');
-        } catch (sErr) {
-          console.error('[Seeding] Failed to seed default student user:', sErr);
-        }
+        // Account seeding removed: the first admin account is created through the
+        // Onboarding first-run setup flow (no default credentials ship with the app).
       } catch (dbError) {
         console.error('[Initialization] Database initialization failed:', dbError);
       } finally {
@@ -716,7 +664,7 @@ export default function App() {
 
   const matchedUser = localUsers.find(u => u.id === currentUserId);
   const isDiagnosticDone = currentUserId 
-    ? (localStorage.getItem('diagnostic_done_' + currentUserId) === 'true' || matchedUser?.role === 'admin' || matchedUser?.username === 'admin' || matchedUser?.username === 'student') 
+    ? (localStorage.getItem('diagnostic_done_' + currentUserId) === 'true' || matchedUser?.role === 'admin') 
     : false;
 
   if (showAdminPanel) {
@@ -746,7 +694,7 @@ export default function App() {
       />
     );
   }
-  const isAdmin = matchedUser?.role === 'admin' || matchedUser?.username === 'admin';
+  const isAdmin = matchedUser?.role === 'admin';
 
   if (isAdmin) {
     return (

@@ -1,7 +1,7 @@
 import React, { Suspense, useState, useEffect } from 'react';
 import { MiuMascot } from '@miuprep/ui';
 import { calculateCoinsReward } from '@miuprep/core';
-import { LocalStorageAdapter, LocalUser, SystemLog } from '@miuprep/db';
+import { LocalStorageAdapter, LocalUser, SystemLog, hashPassword, verifyPassword } from '@miuprep/db';
 import { buildLearningEvent, type LearningEventRecord } from '@miuprep/learning';
 import {
   advanceSatPractice,
@@ -337,7 +337,6 @@ export default function App() {
   const [displayName, setDisplayName] = useState('');
   const [contactInfo, setContactInfo] = useState('');
   const [studentToLink, setStudentToLink] = useState(''); // parent link student
-  const [adminSecret, setAdminSecret] = useState('');
   
   // Login Form States
   const [loginUsername, setLoginUsername] = useState('');
@@ -1342,39 +1341,9 @@ export default function App() {
   useEffect(() => {
     const initSession = async () => {
       await db.initialize();
-      
-      // Auto-create default admin account if none exists so user always has one to log into
-      const defaultAdmin = await db.getLocalUser('admin');
-      if (!defaultAdmin) {
-        await db.registerLocalUser({
-          id: 'user-admin',
-          username: 'admin',
-          passwordHash: 'admin123',
-          targetBand: 9.0,
-          examDate: '2026-12-31',
-          role: 'admin',
-          createdAt: new Date().toISOString(),
-          displayName: 'MiuPrep Tổng Quản',
-          contactInfo: 'admin@miuprep.edu.vn',
-          status: 'approved'
-        });
-      }
 
-      const defaultContentAdmin = await db.getLocalUser('admincontent');
-      if (!defaultContentAdmin) {
-        await db.registerLocalUser({
-          id: 'user-admincontent',
-          username: 'admincontent',
-          passwordHash: 'admincontent123',
-          targetBand: 9.0,
-          examDate: '2026-12-31',
-          role: 'admin',
-          createdAt: new Date().toISOString(),
-          displayName: 'MiuPrep Content Admin',
-          contactInfo: 'admincontent@miuprep.edu.vn',
-          status: 'approved'
-        });
-      }
+      // Default account seeding removed: the first admin account is created through
+      // the register form (first admin on a device registers freely).
 
       // Check current login session in localStorage
       const activeSession = localStorage.getItem('miuprep_active_username');
@@ -1452,24 +1421,6 @@ export default function App() {
   // ==========================================
   // Auth Functions
   // ==========================================
-  const hashPassword = async (pass: string): Promise<string> => {
-    try {
-      const encoder = new TextEncoder();
-      const data = encoder.encode(pass);
-      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-      const hashArray = Array.from(new Uint8Array(hashBuffer));
-      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-    } catch (e) {
-      let hash = 0;
-      for (let i = 0; i < pass.length; i++) {
-        const char = pass.charCodeAt(i);
-        hash = (hash << 5) - hash + char;
-        hash = hash & hash;
-      }
-      return 'fallback_' + Math.abs(hash).toString(16);
-    }
-  };
-
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!username.trim() || !password.trim() || !displayName.trim()) {
@@ -1503,8 +1454,11 @@ export default function App() {
       }
       linkedList = [linkedStudentUser];
     } else if (regRole === 'admin') {
-      if (adminSecret.trim() !== 'miuprep2026') {
-        showNotif("Mã bí mật Admin không chính xác meow!", "error");
+      // First-run setup: the very first admin registers freely. Once an admin
+      // exists, additional admin accounts must be issued by an existing admin.
+      const existingUsers = await db.listLocalUsers();
+      if (existingUsers.some(u => u.role === 'admin')) {
+        showNotif("Hệ thống đã có Quản trị viên. Vui lòng nhờ Quản trị viên hiện tại cấp tài khoản meow!", "error");
         return;
       }
       initialStatus = 'approved'; // Admins auto-approved
@@ -1543,7 +1497,6 @@ export default function App() {
       setDisplayName('');
       setContactInfo('');
       setStudentToLink('');
-      setAdminSecret('');
       setAuthTab('login');
     } catch (err) {
       showNotif("Đăng ký thất bại, đã xảy ra lỗi meow!", "error");
@@ -1565,15 +1518,19 @@ export default function App() {
         return;
       }
 
-      const inputHash = await hashPassword(loginPassword.trim());
-      const isPasswordCorrect =
-        u.passwordHash === loginPassword.trim() ||
-        u.passwordHash === inputHash ||
-        (cleanUsername === 'admin' && loginPassword.trim() === 'admin123');
-
-      if (!isPasswordCorrect) {
+      const verdict = await verifyPassword(loginPassword.trim(), u.passwordHash);
+      if (!verdict.ok) {
         showNotif("Thông tin đăng nhập không chính xác meow! 😿", "error");
         return;
+      }
+
+      // Transparently upgrade legacy password records to the current hash format
+      if (verdict.needsRehash) {
+        try {
+          await db.registerLocalUser({ ...u, passwordHash: await hashPassword(loginPassword.trim()) });
+        } catch (rehashErr) {
+          console.warn('Failed to upgrade legacy password hash:', rehashErr);
+        }
       }
 
       if (u.status === 'pending') {
@@ -2199,7 +2156,7 @@ export default function App() {
                 </button>
                 
                 <p className="text-[10px] text-slate-500 text-center mt-2">
-                  * Nhập thử tài khoản Admin dùng sẵn: <code className="bg-slate-950 px-1 py-0.5 rounded text-orange-400 font-mono">admin</code> / <code className="bg-slate-950 px-1 py-0.5 rounded text-orange-400 font-mono">admin123</code>
+                  * Lần đầu sử dụng? Chuyển sang tab Đăng ký và chọn vai trò Quản trị để tạo tài khoản Admin đầu tiên.
                 </p>
               </form>
             ) : (
@@ -2289,15 +2246,9 @@ export default function App() {
                 {/* Admin Specific Field */}
                 {regRole === 'admin' && (
                   <div className="flex flex-col text-left border-l-2 border-purple-500 pl-3 bg-purple-500/5 py-2 rounded-r-xl">
-                    <label className="text-[10px] font-black uppercase tracking-wider text-purple-400 mb-1.5">Mã kích hoạt Admin *</label>
-                    <input
-                      type="password"
-                      value={adminSecret}
-                      onChange={(e) => setAdminSecret(e.target.value)}
-                      placeholder="Nhập mã bí mật kích hoạt..."
-                      className="w-full bg-slate-955 border border-slate-850 rounded-xl px-4 py-3 text-sm outline-none focus:border-purple-500/60 font-medium placeholder:text-slate-700"
-                    />
-                    <span className="text-[9px] text-slate-500 mt-1">* Nhập mã: <code className="bg-slate-950 text-purple-400 font-mono px-1 rounded">miuprep2026</code> để tạo tài khoản admin.</span>
+                    <span className="text-[10px] text-purple-300 leading-relaxed">
+                      Tài khoản Quản trị đầu tiên của hệ thống được tạo trực tiếp tại đây. Khi đã có Quản trị viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.
+                    </span>
                   </div>
                 )}
 

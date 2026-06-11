@@ -73,7 +73,33 @@ const second = buildLearningEvent(
   },
 );
 
+const { hashPassword, verifyPassword } = require('./password');
+const { createHash } = require('crypto');
+
+async function testPasswords(): Promise<void> {
+  const h1 = await hashPassword('s3cret!');
+  const h2 = await hashPassword('s3cret!');
+  assert(h1 !== h2, 'Hashes of the same password must differ (random salt).');
+  assert(h1.startsWith('pbkdf2-sha256$'), 'Hash must use the pbkdf2-sha256 format.');
+  assert((await verifyPassword('s3cret!', h1)).ok, 'Correct password must verify.');
+  assert(!(await verifyPassword('s3cret!', h1)).needsRehash, 'Fresh hash must not need rehash.');
+  assert(!(await verifyPassword('wrong', h1)).ok, 'Wrong password must fail.');
+
+  const legacySha = createHash('sha256').update('legacy-pass').digest('hex');
+  const legacyResult = await verifyPassword('legacy-pass', legacySha);
+  assert(legacyResult.ok && legacyResult.needsRehash, 'Legacy SHA-256 record must verify and request rehash.');
+  assert(!(await verifyPassword('other', legacySha)).ok, 'Legacy SHA-256 must reject wrong password.');
+
+  const plain = await verifyPassword('old-plain-pw', 'old-plain-pw');
+  assert(plain.ok && plain.needsRehash, 'Legacy plaintext record must verify and request rehash.');
+  assert(!(await verifyPassword('x', 'old-plain-pw')).ok, 'Plaintext record must reject wrong password.');
+  assert(!(await verifyPassword('p', '')).ok, 'Empty stored hash must fail.');
+  assert(!(await verifyPassword('', h1)).ok, 'Empty password must fail.');
+}
+
 async function main(): Promise<void> {
+  await testPasswords();
+
   await db.saveLearningEvent(first);
   await db.saveLearningEvent(second);
   await db.saveLearningEvent(first);
