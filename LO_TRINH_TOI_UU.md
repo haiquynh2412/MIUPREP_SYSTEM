@@ -57,10 +57,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 - [x] **1.1.2. Xóa credentials admin/student hardcode (ielts-desktop + cpe-desktop + portal)** *(11/06/2026 — Phạm vi thực tế rộng hơn audit: 5 file ở 3 app. Đã xóa: seed admin/student mặc định, backdoor login admin123/student, passcode hardcode (admin123, miuprep2026), plaintext passwordHash ở portal, bypass theo username. Thay bằng first-run setup: admin đầu tiên trên thiết bị đăng ký tự do, admin sau phải do admin hiện tại cấp. CPE được thêm role selector. Test: grep sạch toàn repo; e2e recovery PASS với user seed mới; QA portal 2/2 PASS)*
 - [x] **1.1.3. Thay SHA256 bằng PBKDF2 cho mật khẩu (salt ngẫu nhiên)** *(11/06/2026 — Module mới `packages/db/src/password.ts`: PBKDF2-SHA256 310k iterations qua Web Crypto, không thêm dependency. `verifyPassword` nhận diện record cũ (SHA256-hex / plaintext) và trả `needsRehash` → tự nâng cấp hash khi user đăng nhập thành công. Unit tests: salt khác nhau cho cùng mật khẩu, verify đúng/sai, migration legacy — PASS trong `npm test -w @miuprep/db`)*
 - [x] **1.1.4. Gỡ bỏ ObfuscatedLocalStorageStore (XOR store)** *(11/06/2026 — Thay bằng `SessionCredentialStore`: web giữ key trong memory mỗi phiên, không ghi gì đảo ngược được xuống đĩa; migration 1 lần đọc key XOR cũ → memory → purge khỏi localStorage; desktop giữ nguyên Tauri Keychain. Unit tests migration/purge/memory-only PASS trong `npm test -w @miuprep/ai`; cả 2 app desktop build sạch. Commit `53b4f039`)*
-- [ ] **1.1.5. Che chắn đề chẩn đoán + đáp án hardcode trong `Onboarding.tsx`**
-  - Bước: tối thiểu — tách đáp án ra khỏi bundle client (load từ content package có guard); ghi chú: giải pháp triệt để cần backend (task 2.4)
-  - Test vòng 1: build xong, search trong `dist/` không thấy chuỗi đáp án
-  - Test vòng 2: chạy onboarding e2e — diagnostic vẫn chấm điểm đúng
+- [!] **1.1.5. Che chắn đề chẩn đoán + đáp án hardcode trong `Onboarding.tsx`** *(Đánh giá lại 11/06/2026: tách đáp án sang content package KHÔNG giải quyết vấn đề — content package cũng bị bundle vào client, học sinh vẫn đọc được qua source. Giải pháp thật sự duy nhất là chấm điểm server-side → gộp vào task 2.4.2/2.4.3 khi có backend. Giữ nguyên hiện trạng, không làm "bảo mật giả".)*
 
 ### 1.2. CI/CD + chốt chặn chất lượng
 
@@ -79,10 +76,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - Chú ý dữ liệu trẻ em: bật `beforeSend` scrub PII, không gửi nội dung bài làm
   - Test vòng 1: ném lỗi thử → event xuất hiện trên dashboard, KHÔNG chứa PII
   - Test vòng 2: build production + xác nhận sourcemap upload, lỗi minified vẫn đọc được stack
-- [ ] **1.3.3. Bật lại ESLint rules ở portal (`no-explicit-any`, `exhaustive-deps`, `no-unused-vars`)**
-  - Bước: bật từng rule → sửa vi phạm (hoặc `// eslint-disable-next-line` có ghi lý do từng chỗ)
-  - Test vòng 1: `npm run lint -w miuprep-portal` 0 error
-  - Test vòng 2: T-QA-PORTAL pass (sửa lint không phá hành vi)
+- [x] **1.3.3. Bật lại ESLint rules ở portal** *(11/06/2026 — `no-explicit-any` + `no-unused-vars` + `exhaustive-deps` = error; sửa 28 vi phạm thật: type hóa 9 chỗ `any` (thêm `LocalUser.studyPlan` vào @miuprep/db, export `SatTaxonomy`/`AdminSatQuestion`), dọn catch param thừa, 2 chỗ exhaustive-deps disable có lý do. Rules thử nghiệm react-hooks v6 để warn đến khi tách App.tsx (2.2.3). Test: lint 0 error, build PASS, QA smoke PASS. **Phát hiện mới:** portal có 14 lỗi tsc pre-existing vì build chỉ chạy vite không typecheck — đưa vào phạm vi 2.2.3. Commit `d2fd6dba`)*
 - [x] **1.3.4. Thêm `strict: true` cho cpe-desktop tsconfig (+ ielts-desktop)** *(11/06/2026 — Cả 2 app desktop đều thiếu strict trong tsconfig.app.json; đã bật cho cả hai. Fresh typecheck (xóa tsbuildinfo): 0 lỗi — codebase đã strict-compatible sẵn. Commit `77d799ac`)*
 
 ---
@@ -190,10 +184,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | Giai đoạn | Tổng task | Hoàn thành | Tiến độ |
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
-| GĐ 1 — Nền móng | 12 | 6 (+1 đang chờ remote) | ~54% |
+| GĐ 1 — Nền móng | 12 | 7 (+1 chờ remote, +1 gộp vào GĐ2) | ~64% |
 | GĐ 2 — Kiến trúc | 13 | 0 | 0% |
 | GĐ 3 — Cạnh tranh | 11 | 0 | 0% |
-| **Tổng** | **40** | **10** | **25%** |
+| **Tổng** | **40** | **11** | **27.5%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
@@ -206,5 +200,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 1.2.1 | PASS local — cả 4 nhóm lệnh CI chạy xanh (T-PKG, SAT, lint 4 app, build) | `[~]` chờ GitHub remote để kích hoạt Actions |
 | 11/06/2026 | 1.2.2 | PASS — hook chặn lỗi TS cố ý (TS2322), cho qua commit hợp lệ | Commit `2935f6c7`; hook tự cài qua `npm install` (script `prepare`) |
 | 11/06/2026 | 1.3.1 + 1.3.4 | PASS — 5/5 app build; QA portal smoke 0 console error; strict typecheck 0 lỗi | Commit `77d799ac` |
+| 11/06/2026 | 1.3.3 | PASS — lint 0 error; build PASS; QA smoke PASS | Commit `d2fd6dba`; phát hiện 14 lỗi tsc pre-existing ở portal → 2.2.3 |
+| 11/06/2026 | 1.1.5 | Đánh giá lại — chuyển `[!]`, gộp vào 2.4 | Tách đáp án sang content package là bảo mật giả; cần server-side scoring |
 | 11/06/2026 | 1.1.4 | PASS — ai tests (migration/purge/memory-only); 2 app desktop build sạch | Commit `53b4f039` |
 | 11/06/2026 | 1.1.2 + 1.1.3 | PASS — 7/7 package tests; build ielts/cpe/portal; lint 3 app; e2e recovery PASS; QA portal 2/2 PASS; grep credentials sạch | Commit `af0f0165`. Gỡ toàn bộ backdoor/seed mặc định ở 3 app; PBKDF2 + auto-rehash; e2e tự seed user. **Phát hiện mới:** `QuotaExceededError` ở web mode (ngân hàng đề vượt quota localStorage) → cần xử lý ở task 2.2 (chuyển content sang load theo nhu cầu / IndexedDB); e2e listening fail ở bước sau-submit vì vấn đề này (có sẵn, không do auth) |
