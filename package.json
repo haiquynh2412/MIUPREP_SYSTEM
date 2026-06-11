@@ -17,7 +17,8 @@
     "qa:portal-template-practice": "node scripts/qa-portal-template-practice.mjs",
     "qa:portal-english-item-bank-practice": "node scripts/qa-portal-english-item-bank-practice.mjs",
     "build": "node scripts/build-workspaces.cjs",
-    "prepare": "git config core.hooksPath .githooks"
+    "prepare": "git config core.hooksPath .githooks",
+    "check:bundle": "node scripts/check-bundle-budget.mjs"
   },
   "devDependencies": {
     "typescript": "^5.3.3"
