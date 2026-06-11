@@ -32,9 +32,9 @@ import ExamRunner from './components/modules/ExamRunner';
 import { loadCpeSeedTests, validateContentTest } from './lib/contentRuntime';
 
 const ErrorNotebook = lazy(() => import('@miuprep/exam-desktop/src/components/ErrorNotebook'));
-const SpeakingAiRoom = lazy(() => import('./components/SpeakingAiRoom'));
+const SpeakingAiRoom = lazy(() => import('@miuprep/exam-desktop/src/components/SpeakingAiRoom'));
 const AdaptivePracticeRoom = lazy(() => import('@miuprep/exam-desktop/src/components/AdaptivePracticeRoom'));
-const WritingAiRoom = lazy(() => import('./components/WritingAiRoom'));
+const WritingAiRoom = lazy(() => import('@miuprep/exam-desktop/src/components/WritingAiRoom'));
 
 // User ID state is now fully abstracted into a reactive component state (currentUserId)
 
@@ -695,6 +695,7 @@ export default function App() {
         {currentTab === 'writing_ai' && (
           <Suspense fallback={<LazyPanelFallback />}>
             <WritingAiRoom
+              activeTrack="cpe"
               writingFeedback={writingFeedback}
               isAiLoading={isAiLoading}
               aiErrorMsg={aiErrorMsg}

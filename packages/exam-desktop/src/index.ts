@@ -8,6 +8,8 @@ export { default as useExam } from './hooks/useExam';
 
 export { default as ErrorNotebook } from './components/ErrorNotebook';
 export { default as LearnerProfileCard } from './components/LearnerProfileCard';
+export { default as SpeakingAiRoom } from './components/SpeakingAiRoom';
+export { default as WritingAiRoom } from './components/WritingAiRoom';
 export { default as AdaptivePracticeRoom } from './components/AdaptivePracticeRoom';
 export { default as ImportErrorModal } from './components/modules/ImportErrorModal';
 export { default as ModeSelectorModal } from './components/modules/ModeSelectorModal';

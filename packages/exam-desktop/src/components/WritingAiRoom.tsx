@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import type { WritingFeedback } from '@miuprep/db';
+import { IELTS_WRITING_SAMPLES } from '@miuprep/content/src/mocks/ielts-writing-speaking-samples';
+import { CPE_WRITING_SAMPLES } from '@miuprep/content/src/mocks/cpe-writing-speaking-samples';
 
 type WritingCriterion = WritingFeedback['criteria'][number];
 type WritingCorrection = WritingFeedback['corrections'][number];
@@ -14,7 +16,34 @@ interface WritingTheme {
   textDark: string;
   gradientFrom: string;
   gradientTo: string;
+  modalBorder?: string;
+  modalText?: string;
+  badgeBg?: string;
 }
+
+const WRITING_TRACK_THEMES: Record<'ielts' | 'cpe' | 'cae', WritingTheme> = {
+  cpe: {
+    primary: 'emerald-600', hover: 'emerald-700', bgLight: 'bg-emerald-50/20',
+    borderLight: 'border-emerald-100', textDark: 'text-emerald-800',
+    gradientFrom: 'from-emerald-700', gradientTo: 'to-emerald-800',
+    modalBorder: 'border-emerald-600', modalText: 'text-emerald-700',
+    badgeBg: 'bg-emerald-600', name: 'C2 Proficiency / CPE',
+  },
+  cae: {
+    primary: 'violet-600', hover: 'violet-700', bgLight: 'bg-violet-50/20',
+    borderLight: 'border-violet-100', textDark: 'text-violet-800',
+    gradientFrom: 'from-violet-700', gradientTo: 'to-violet-800',
+    modalBorder: 'border-violet-600', modalText: 'text-violet-700',
+    badgeBg: 'bg-violet-600', name: 'C1 Advanced / CAE',
+  },
+  ielts: {
+    primary: 'blue-600', hover: 'blue-700', bgLight: 'bg-blue-50/20',
+    borderLight: 'border-blue-100', textDark: 'text-blue-800',
+    gradientFrom: 'from-blue-700', gradientTo: 'to-blue-800',
+    modalBorder: 'border-blue-600', modalText: 'text-blue-700',
+    badgeBg: 'bg-blue-650', name: 'IELTS Academic',
+  },
+};
 
 interface WritingCollocation {
   phrase: string;
@@ -46,8 +75,9 @@ interface WritingAiRoomProps {
   aiErrorMsg: string | null;
   runWritingAiEvaluation: (essay: string, taskNum: 1 | 2, track: 'ielts' | 'cpe' | 'cae', prompt: string) => Promise<void>;
   activeTrack: 'ielts' | 'cpe' | 'cae';
-  activeTheme: WritingTheme;
-  availableWritingSamples: WritingSample[];
+  /** Optional overrides; derived from activeTrack when omitted */
+  activeTheme?: WritingTheme;
+  availableWritingSamples?: WritingSample[];
 }
 
 export default function WritingAiRoom({
@@ -59,17 +89,20 @@ export default function WritingAiRoom({
   activeTheme,
   availableWritingSamples
 }: WritingAiRoomProps) {
+  const resolvedTheme = activeTheme ?? WRITING_TRACK_THEMES[activeTrack] ?? WRITING_TRACK_THEMES.ielts;
+  const resolvedSamples = availableWritingSamples
+    ?? ((activeTrack === 'cpe' || activeTrack === 'cae') ? CPE_WRITING_SAMPLES : IELTS_WRITING_SAMPLES);
   const [writingEssay, setWritingEssay] = useState('');
   const [writingTaskNum, setWritingTaskNum] = useState<1 | 2>(2);
-  const [selectedWritingSampleId, setSelectedWritingSampleId] = useState(() => availableWritingSamples[0]?.id || '');
+  const [selectedWritingSampleId, setSelectedWritingSampleId] = useState(() => resolvedSamples[0]?.id || '');
   const [showWritingSampleModal, setShowWritingSampleModal] = useState(false);
   const [writingModalTab, setWritingModalTab] = useState<'outline' | 'sample' | 'vocab'>('outline');
 
-  const activeWritingSample = availableWritingSamples.find(s => s.id === selectedWritingSampleId) || availableWritingSamples[0];
+  const activeWritingSample = resolvedSamples.find(s => s.id === selectedWritingSampleId) || resolvedSamples[0];
 
   const handleWritingSampleChange = (id: string) => {
     setSelectedWritingSampleId(id);
-    const found = availableWritingSamples.find(s => s.id === id);
+    const found = resolvedSamples.find(s => s.id === id);
     if (found) {
       setWritingTaskNum(found.taskNum as 1 | 2);
     }
@@ -80,21 +113,21 @@ export default function WritingAiRoom({
       {/* Left: Input Essay area */}
       <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col gap-4">
         <div>
-          <span className={`text-[10px] text-white font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider bg-${activeTheme.primary}`}>
-            {activeTheme.name} Writing Tutor
+          <span className={`text-[10px] text-white font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider bg-${resolvedTheme.primary}`}>
+            {resolvedTheme.name} Writing Tutor
           </span>
           <h2 className="text-xl font-bold text-slate-800 mt-2 font-sans">
             Phòng Luyện Viết {activeTrack?.toUpperCase()} & Đề cương mẫu
           </h2>
           <p className="text-xs text-slate-500 mt-1">
-            Luyện tập các đề thi tự luận {activeTheme.name} chính thức. Nhập bài viết và kích hoạt AI chấm điểm theo chuẩn {activeTrack === 'cpe' ? 'C2' : activeTrack === 'cae' ? 'C1' : 'IELTS'}.
+            Luyện tập các đề thi tự luận {resolvedTheme.name} chính thức. Nhập bài viết và kích hoạt AI chấm điểm theo chuẩn {activeTrack === 'cpe' ? 'C2' : activeTrack === 'cae' ? 'C1' : 'IELTS'}.
           </p>
         </div>
 
         {/* Selected Prompt Panel */}
-        <div className={`border rounded-xl p-4 flex flex-col gap-3 ${activeTheme.bgLight} ${activeTheme.borderLight}`}>
+        <div className={`border rounded-xl p-4 flex flex-col gap-3 ${resolvedTheme.bgLight} ${resolvedTheme.borderLight}`}>
           <div className="flex flex-col gap-1.5">
-            <label className={`text-[10px] font-black uppercase tracking-wide text-${activeTheme.textDark}`}>
+            <label className={`text-[10px] font-black uppercase tracking-wide text-${resolvedTheme.textDark}`}>
               1. Chọn đề luyện viết {activeTrack?.toUpperCase()}:
             </label>
             <select
@@ -102,7 +135,7 @@ export default function WritingAiRoom({
               onChange={(e) => handleWritingSampleChange(e.target.value)}
               className={`bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-${activeTrack === 'cpe' ? 'emerald' : activeTrack === 'cae' ? 'violet' : 'blue'}-500 focus:border-${activeTrack === 'cpe' ? 'emerald' : activeTrack === 'cae' ? 'violet' : 'blue'}-500 cursor-pointer font-bold text-slate-700 outline-none w-full`}
             >
-              {availableWritingSamples.map((sample: WritingSample) => (
+              {resolvedSamples.map((sample: WritingSample) => (
                 <option key={sample.id} value={sample.id}>
                   [Test {sample.testNum} - Task {sample.taskNum}] {sample.title} ({sample.type})
                 </option>
@@ -132,7 +165,7 @@ export default function WritingAiRoom({
           <div className="flex gap-2">
             <button
               onClick={() => setShowWritingSampleModal(true)}
-              className={`flex-1 bg-${activeTheme.primary} hover:bg-${activeTheme.hover} text-white font-bold text-xs py-2.5 px-3.5 rounded-lg shadow-sm transition-all border-0 cursor-pointer outline-none flex items-center justify-center gap-1.5 uppercase tracking-wide`}
+              className={`flex-1 bg-${resolvedTheme.primary} hover:bg-${resolvedTheme.hover} text-white font-bold text-xs py-2.5 px-3.5 rounded-lg shadow-sm transition-all border-0 cursor-pointer outline-none flex items-center justify-center gap-1.5 uppercase tracking-wide`}
             >
               <span>💡</span> Xem dàn ý & Bài mẫu
             </button>
@@ -171,7 +204,7 @@ export default function WritingAiRoom({
         <button
           onClick={() => runWritingAiEvaluation(writingEssay, writingTaskNum, activeTrack || 'ielts', activeWritingSample?.prompt)}
           disabled={isAiLoading || !writingEssay.trim()}
-          className={`w-full bg-${activeTheme.primary} hover:bg-${activeTheme.hover} text-white font-bold py-3.5 px-4 rounded-lg shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60 border-0 outline-none uppercase tracking-wider text-xs`}
+          className={`w-full bg-${resolvedTheme.primary} hover:bg-${resolvedTheme.hover} text-white font-bold py-3.5 px-4 rounded-lg shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60 border-0 outline-none uppercase tracking-wider text-xs`}
         >
           {isAiLoading ? (
             <>
@@ -190,13 +223,13 @@ export default function WritingAiRoom({
       {/* Right: AI Feedback panel */}
       <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col gap-5 overflow-y-auto max-h-[85vh]">
         <h3 className="text-lg font-bold text-slate-800 border-b pb-3 mb-2 flex items-center gap-2">
-          <svg className={`w-5 h-5 text-${activeTheme.primary} fill-current`} viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+          <svg className={`w-5 h-5 text-${resolvedTheme.primary} fill-current`} viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
           Kết quả Chẩn đoán & Gợi ý Sư phạm
         </h3>
 
         {isAiLoading && (
           <div className="flex flex-col items-center justify-center py-20 text-center gap-4">
-            <span className={`w-12 h-12 border-4 border-${activeTheme.primary} border-t-transparent rounded-full animate-spin`}></span>
+            <span className={`w-12 h-12 border-4 border-${resolvedTheme.primary} border-t-transparent rounded-full animate-spin`}></span>
             <div className="flex flex-col gap-1.5">
               <h4 className="text-sm font-bold text-slate-800 m-0">Đang khởi chạy Socratic Analytical Engine...</h4>
               <p className="text-xs text-slate-400 max-w-xs m-0 leading-normal">
@@ -216,7 +249,7 @@ export default function WritingAiRoom({
           <div className="flex flex-col gap-4">
             {/* Vocabulary Collocations Side Panel */}
             <div className={`border rounded-xl p-4 flex flex-col gap-3 text-xs text-slate-700 leading-relaxed bg-${activeTrack === 'cpe' ? 'emerald' : activeTrack === 'cae' ? 'violet' : 'blue'}-50/10 border-${activeTrack === 'cpe' ? 'emerald' : activeTrack === 'cae' ? 'violet' : 'blue'}-100`}>
-              <h4 className={`font-bold m-0 text-xs uppercase tracking-wide flex items-center gap-1.5 text-${activeTheme.primary}`}>
+              <h4 className={`font-bold m-0 text-xs uppercase tracking-wide flex items-center gap-1.5 text-${resolvedTheme.primary}`}>
                 <span>🚀</span> Gợi ý Từ vựng nâng điểm (Collocations Booster)
               </h4>
               <p className="text-slate-500 m-0 leading-normal">
@@ -226,10 +259,10 @@ export default function WritingAiRoom({
                 {activeWritingSample.collocations?.map((col: WritingCollocation, idx: number) => (
                   <div key={idx} className="bg-white border rounded-lg p-3 flex flex-col gap-1.5 shadow-sm">
                     <div className="flex items-center gap-2">
-                      <span className={`text-white font-mono text-[9px] px-1.5 py-0.2 rounded font-black bg-${activeTheme.primary}`}>
+                      <span className={`text-white font-mono text-[9px] px-1.5 py-0.2 rounded font-black bg-${resolvedTheme.primary}`}>
                         {activeTrack === 'cpe' ? 'C2' : activeTrack === 'cae' ? 'C1' : 'C1/C2'}
                       </span>
-                      <strong className={`font-bold text-xs font-mono text-${activeTheme.primary}`}>{col.phrase}</strong>
+                      <strong className={`font-bold text-xs font-mono text-${resolvedTheme.primary}`}>{col.phrase}</strong>
                       <span className="text-[10px] text-slate-400 italic">({col.vietnamese})</span>
                     </div>
                     <div className="text-[10px] text-slate-500 italic bg-slate-50 p-2 rounded border border-slate-100 leading-normal m-0 select-all">
@@ -429,7 +462,7 @@ export default function WritingAiRoom({
       {showWritingSampleModal && activeWritingSample && (
         <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 animate-fade-in text-left">
           <div className="bg-white border border-slate-200 rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden flex flex-col max-h-[85vh]">
-            <header className={`bg-gradient-to-r ${activeTheme.gradientFrom} ${activeTheme.gradientTo} text-white px-6 py-4 flex items-center justify-between`}>
+            <header className={`bg-gradient-to-r ${resolvedTheme.gradientFrom} ${resolvedTheme.gradientTo} text-white px-6 py-4 flex items-center justify-between`}>
               <div className="flex items-center gap-2.5">
                 <span className="text-xl">🏆</span>
                 <div>
@@ -455,7 +488,7 @@ export default function WritingAiRoom({
                 onClick={() => setWritingModalTab('outline')}
                 className={`px-4 py-2 text-xs font-bold border-b-2 transition-all cursor-pointer ${
                   writingModalTab === 'outline'
-                    ? `border-${activeTheme.primary} text-${activeTheme.textDark} font-black`
+                    ? `border-${resolvedTheme.primary} text-${resolvedTheme.textDark} font-black`
                     : 'border-transparent text-slate-500 hover:text-slate-700'
                 }`}
               >
@@ -465,7 +498,7 @@ export default function WritingAiRoom({
                 onClick={() => setWritingModalTab('sample')}
                 className={`px-4 py-2 text-xs font-bold border-b-2 transition-all cursor-pointer ${
                   writingModalTab === 'sample'
-                    ? `border-${activeTheme.primary} text-${activeTheme.textDark} font-black`
+                    ? `border-${resolvedTheme.primary} text-${resolvedTheme.textDark} font-black`
                     : 'border-transparent text-slate-500 hover:text-slate-700'
                 }`}
               >
@@ -475,7 +508,7 @@ export default function WritingAiRoom({
                 onClick={() => setWritingModalTab('vocab')}
                 className={`px-4 py-2 text-xs font-bold border-b-2 transition-all cursor-pointer ${
                   writingModalTab === 'vocab'
-                    ? `border-${activeTheme.primary} text-${activeTheme.textDark} font-black`
+                    ? `border-${resolvedTheme.primary} text-${resolvedTheme.textDark} font-black`
                     : 'border-transparent text-slate-500 hover:text-slate-700'
                 }`}
               >
@@ -492,7 +525,7 @@ export default function WritingAiRoom({
                   </p>
                   <div className="flex flex-col gap-3.5 mt-1">
                     {activeWritingSample.outline?.map((o: WritingOutlineSection, idx: number) => (
-                      <div key={idx} className={`border-l-4 border-${activeTheme.primary} bg-slate-50 p-3.5 rounded-r-lg shadow-sm`}>
+                      <div key={idx} className={`border-l-4 border-${resolvedTheme.primary} bg-slate-50 p-3.5 rounded-r-lg shadow-sm`}>
                         <h4 className="font-bold text-slate-800 m-0 text-xs uppercase tracking-wide">
                           {idx + 1}. {o.sectionName}
                         </h4>
@@ -529,7 +562,7 @@ export default function WritingAiRoom({
                         setWritingEssay(activeWritingSample.sampleAnswer);
                         setShowWritingSampleModal(false);
                       }}
-                      className={`bg-${activeTheme.primary} hover:bg-${activeTheme.hover} text-white font-bold py-2 px-4 rounded-lg shadow-sm border-0 cursor-pointer outline-none uppercase transition-all text-[10px]`}
+                      className={`bg-${resolvedTheme.primary} hover:bg-${resolvedTheme.hover} text-white font-bold py-2 px-4 rounded-lg shadow-sm border-0 cursor-pointer outline-none uppercase transition-all text-[10px]`}
                       title="Điền thử bài viết này vào khu vực soạn thảo để chấm thử!"
                     >
                       🚀 Chạy thử bài mẫu
@@ -547,10 +580,10 @@ export default function WritingAiRoom({
                     {activeWritingSample.collocations?.map((col: WritingCollocation, idx: number) => (
                       <div key={idx} className="bg-slate-50 border rounded-lg p-3.5 flex flex-col gap-1.5 shadow-sm">
                         <div className="flex items-center gap-2">
-                          <span className={`text-white font-mono text-[10px] px-1.5 py-0.2 rounded font-black bg-${activeTheme.primary}`}>
+                          <span className={`text-white font-mono text-[10px] px-1.5 py-0.2 rounded font-black bg-${resolvedTheme.primary}`}>
                             {activeTrack === 'cpe' ? 'C2' : activeTrack === 'cae' ? 'C1' : 'C1/C2'}
                           </span>
-                          <strong className={`font-bold text-xs font-mono text-${activeTheme.primary}`}>{col.phrase}</strong>
+                          <strong className={`font-bold text-xs font-mono text-${resolvedTheme.primary}`}>{col.phrase}</strong>
                           <span className="text-[10px] text-slate-400 italic">({col.vietnamese})</span>
                         </div>
                         <div className="text-[11px] text-slate-650 mt-1 leading-normal italic bg-white p-2 rounded border border-slate-150 leading-normal m-0 select-all">

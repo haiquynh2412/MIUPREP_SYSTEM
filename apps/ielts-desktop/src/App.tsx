@@ -36,9 +36,9 @@ import { loadEnglishSeedTests, validateContentTest } from './lib/contentRuntime'
 
 const AdminPanel = lazy(() => import('./components/AdminPanel'));
 const ErrorNotebook = lazy(() => import('@miuprep/exam-desktop/src/components/ErrorNotebook'));
-const SpeakingAiRoom = lazy(() => import('./components/SpeakingAiRoom'));
+const SpeakingAiRoom = lazy(() => import('@miuprep/exam-desktop/src/components/SpeakingAiRoom'));
 const AdaptivePracticeRoom = lazy(() => import('@miuprep/exam-desktop/src/components/AdaptivePracticeRoom'));
-const WritingAiRoom = lazy(() => import('./components/WritingAiRoom'));
+const WritingAiRoom = lazy(() => import('@miuprep/exam-desktop/src/components/WritingAiRoom'));
 const IeltsLearnerDashboard = lazy(() => import('./components/IeltsLearnerDashboard'));
 function generateLocalId(prefix: string): string {
   return `${prefix}_${typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString() + Math.random().toString(36).substring(2, 7)}`;
