@@ -2,6 +2,7 @@ import type { JSX } from 'react';
 import React, { Suspense } from 'react';
 import type { LocalUser } from '@miuprep/db';
 import type { LearningEventRecord } from '@miuprep/learning';
+import { useTranslation } from '@miuprep/i18n/src/react';
 import { loadStudentProgressSnapshot } from '../lib/studentProgress';
 import type { PortalTrackInfo } from './UnifiedLearnerDashboard';
 
@@ -51,6 +52,7 @@ export default function ParentWorkspace({
   handleUpdateStudentTarget,
   handleRewardCoins,
 }: ParentWorkspaceProps): JSX.Element {
+  const { t } = useTranslation();
   const updateSelectedStudent = (username: string): void => {
     setSelectedStudent(username);
     const selected = linkedStudents.find((student) => student.username === username);
@@ -71,14 +73,14 @@ export default function ParentWorkspace({
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
         <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between bg-gradient-to-tr from-slate-900 to-orange-950/20">
           <div className="flex flex-col gap-1 text-left">
-            <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Số con liên kết</span>
-            <span className="text-3xl font-black text-orange-400 font-mono">{linkedStudents.length} Học Sinh 🎒</span>
+            <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">{t('pw_linked_count_label')}</span>
+            <span className="text-3xl font-black text-orange-400 font-mono">{t('pw_students_count', { count: linkedStudents.length })}</span>
           </div>
           <span className="text-4xl">🏠</span>
         </div>
         <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between bg-gradient-to-tr from-slate-900 to-amber-950/20">
           <div className="flex flex-col gap-1 text-left">
-            <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Đã khen thưởng Xu Cá Hồi</span>
+            <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">{t('pw_rewarded_label')}</span>
             <span className="text-3xl font-black text-amber-400 font-mono">🐟 {currentUser.rewardsAllocated || 0} Xu</span>
           </div>
           <span className="text-4xl">🎁</span>
@@ -100,7 +102,7 @@ export default function ParentWorkspace({
 
         {linkedStudents.length === 0 ? (
           <div className="py-12 border-2 border-dashed border-slate-800 rounded-2xl text-slate-500 font-medium">
-            Chưa liên kết học sinh nào meow! Hãy liên hệ admin hoặc chỉnh sửa profile meow! 😿
+            {t('pw_no_students')}
           </div>
         ) : (
           <div className="space-y-8">
@@ -108,11 +110,11 @@ export default function ParentWorkspace({
               <table className="w-full text-left border-collapse text-sm">
                 <thead>
                   <tr className="border-b border-slate-800 text-slate-400 font-black uppercase text-xs">
-                    <th className="p-4">Tên con (Username)</th>
-                    <th className="p-4">Ví Xu Cá Hồi tích lũy</th>
-                    <th className="p-4">Số Bẫy Chuột sai sót</th>
-                    <th className="p-4">Phân quyền học</th>
-                    <th className="p-4">Mục tiêu học tuần</th>
+                    <th className="p-4">{t('pw_th_name')}</th>
+                    <th className="p-4">{t('pw_th_wallet')}</th>
+                    <th className="p-4">{t('pw_th_traps')}</th>
+                    <th className="p-4">{t('pw_th_perm')}</th>
+                    <th className="p-4">{t('pw_th_target')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -130,12 +132,12 @@ export default function ParentWorkspace({
                             <span className="text-[10px] text-slate-500 font-mono">@{student.username}</span>
                           </div>
                         </td>
-                        <td className="p-4 font-black text-emerald-400 font-mono">🐟 {studentProgress.coins} Xu</td>
-                        <td className="p-4 font-bold text-rose-400 font-mono">😼 {studentProgress.traps} bẫy chuột</td>
+                        <td className="p-4 font-black text-emerald-400 font-mono">{t('pw_coins_cell', { coins: studentProgress.coins })}</td>
+                        <td className="p-4 font-bold text-rose-400 font-mono">{t('pw_traps_cell', { traps: studentProgress.traps })}</td>
                         <td className="p-4">
                           <div className="flex flex-col gap-1.5 w-40 text-left">
                             <div className="flex justify-between text-[9px] text-slate-400 font-bold uppercase">
-                              <span>Toán 9 (MiuMath)</span>
+                              <span>{t('pw_math9')}</span>
                               <span className="text-emerald-450 font-mono font-bold">85%</span>
                             </div>
                             <div className="w-full bg-slate-950 rounded-full h-1 overflow-hidden border border-slate-850">
@@ -150,7 +152,7 @@ export default function ParentWorkspace({
                             </div>
                           </div>
                         </td>
-                        <td className="p-4 font-bold text-orange-400 font-mono">{student.studyPlan?.weeklyTarget || 4} buổi/tuần</td>
+                        <td className="p-4 font-bold text-orange-400 font-mono">{t('pw_sessions_week', { n: student.studyPlan?.weeklyTarget || 4 })}</td>
                       </tr>
                     );
                   })}
@@ -160,10 +162,10 @@ export default function ParentWorkspace({
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 border-t border-slate-800">
               <div className="bg-slate-950/50 border border-slate-850 p-6 rounded-2xl flex flex-col gap-4 text-left">
-                <h3 className="text-sm font-black uppercase text-orange-400 tracking-wider">🛠️ CÀI ĐẶT LỘ TRÌNH CHO CON</h3>
+                <h3 className="text-sm font-black uppercase text-orange-400 tracking-wider">{t('pw_settings_title')}</h3>
 
                 <div className="flex flex-col gap-1">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase">Chọn tài khoản con</label>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase">{t('pw_select_child')}</label>
                   <select
                     value={selectedStudent}
                     onChange={(event) => updateSelectedStudent(event.target.value)}
@@ -178,7 +180,7 @@ export default function ParentWorkspace({
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase">Mục tiêu số buổi học / tuần</label>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase">{t('pw_target_label')}</label>
                   <input
                     type="number"
                     min={1}
@@ -193,7 +195,7 @@ export default function ParentWorkspace({
                   onClick={handleUpdateStudentTarget}
                   className="py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 font-bold text-xs uppercase tracking-widest text-white shadow transition-all border-0 cursor-pointer"
                 >
-                  Cập nhật lộ trình
+                  {t('pw_update_plan')}
                 </button>
               </div>
 
@@ -201,7 +203,7 @@ export default function ParentWorkspace({
                 <h3 className="text-sm font-black uppercase text-orange-400 tracking-wider">🎁 KHEN THƯỞNG XU CÁ HỒI</h3>
 
                 <div className="flex flex-col gap-1">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase">Chọn tài khoản con</label>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase">{t('pw_select_child')}</label>
                   <select
                     value={selectedStudent}
                     onChange={(event) => setSelectedStudent(event.target.value)}
@@ -216,7 +218,7 @@ export default function ParentWorkspace({
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase">Mức Khen Thưởng</label>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase">{t('pw_reward_level')}</label>
                   <div className="grid grid-cols-2 gap-2">
                     {[50, 100].map((amount) => (
                       <button
@@ -228,7 +230,7 @@ export default function ParentWorkspace({
                             : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
                         }`}
                       >
-                        🐟 Thưởng {amount} Xu
+                        {t('pw_reward_amount', { amount })}
                       </button>
                     ))}
                   </div>
@@ -238,7 +240,7 @@ export default function ParentWorkspace({
                   onClick={handleRewardCoins}
                   className="py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 font-bold text-xs uppercase tracking-widest text-white shadow border-0 cursor-pointer"
                 >
-                  Gửi Tặng Xu Khen Thưởng ➔
+                  {t('pw_send_reward')}
                 </button>
               </div>
             </div>
