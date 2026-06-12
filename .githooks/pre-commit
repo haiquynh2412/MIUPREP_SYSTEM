@@ -41,7 +41,7 @@ if echo "$staged" | grep -q "^apps/miuphysics-app/src/.*\.tsx\?$"; then
   npm run typecheck -w miuphysics-app || fail=1
 fi
 
-for pkg in ai beta content core db exam-desktop knowledge learning ui; do
+for pkg in ai beta content core db exam-desktop i18n knowledge learning ui; do
   if echo "$staged" | grep -q "^packages/$pkg/src/.*\.tsx\?$"; then
     echo "[pre-commit] tsc --noEmit: packages/$pkg"
     npx tsc --noEmit -p "packages/$pkg" || fail=1

@@ -1,3 +1,5 @@
+import { createTranslator } from '@miuprep/i18n';
+
 // ─────────────────────────────────────────────────────────
 // MiuPhysics — Internationalization (i18n)
 // Vietnamese (vi) + English (en) translations
@@ -453,48 +455,23 @@ const translations = {
   },
 };
 
-const LANG_STORAGE_KEY = 'miu_physics_language';
+const __translator = createTranslator({
+  translations,
+  languages: ['vi', 'en'],
+  defaultLang: 'vi',
+  storageKey: 'miu_physics_language',
+});
 
-/**
- * Load saved language preference from localStorage.
- * Defaults to 'vi' (Vietnamese) when no preference is stored.
- * @returns {'vi'|'en'}
- */
 export function loadLanguage() {
-  try {
-    const stored = localStorage.getItem(LANG_STORAGE_KEY);
-    return stored === 'en' ? 'en' : 'vi';
-  } catch {
-    return 'vi';
-  }
+  return __translator.loadLanguage();
 }
 
-/**
- * Persist the selected language to localStorage.
- * @param {'vi'|'en'} lang
- */
 export function saveLanguage(lang) {
-  localStorage.setItem(LANG_STORAGE_KEY, lang);
+  __translator.saveLanguage(lang);
 }
 
-/**
- * Translate a key, with optional template parameter interpolation.
- *
- * @param {string}        key    — translation key (e.g. 'welcome_title')
- * @param {'vi'|'en'}     lang   — active language (default 'vi')
- * @param {Record<string, string|number>} params — template replacements
- * @returns {string}
- *
- * @example
- *   t('question_of', 'vi', { current: 3, total: 10 })
- *   // → 'Câu 3 / 10'
- */
 export function t(key, lang = 'vi', params = {}) {
-  let text = translations[lang]?.[key] || translations['vi']?.[key] || key;
-  Object.entries(params).forEach(([k, v]) => {
-    text = text.replace(new RegExp(`\\{${k}\\}`, 'g'), String(v));
-  });
-  return text;
+  return __translator.t(key, lang, params);
 }
 
 export { translations };
