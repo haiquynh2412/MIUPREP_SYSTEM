@@ -2,7 +2,6 @@ import { toQuestionItemFromMiuMath, toQuestionItemsFromMiuMath } from '@miuprep/
 import { createSeedKnowledgeGraph } from '@miuprep/knowledge';
 import type { MiuMathQuestion } from '@miuprep/content/src/standard';
 import {
-  buildDiagnosticSet,
   buildReviewSet,
   buildErrorNotebookEntryFromAttempt,
   buildLearningPath,
@@ -26,6 +25,8 @@ import type {
   Recommendation,
   StudentModel,
 } from '@miuprep/learning';
+import { buildAdaptiveDiagnostic } from '@miuprep/learning/src/adaptive-engine';
+import type { AdaptiveAttempt } from '@miuprep/learning/src/adaptive-engine';
 
 /** Raw question objects as loaded from the app's JSON banks (loosely shaped). */
 export type MiuMathRawQuestion = { [K in keyof MiuMathQuestion]?: MiuMathQuestion[K] | null } & { id: string };
@@ -200,6 +201,16 @@ export function buildMiuMathErrorNotebookSummary(entries: ErrorNotebookEntryCore
   };
 }
 
+function toAdaptiveAttempts(attempts: AttemptRecord[], learnerId: string): AdaptiveAttempt[] {
+  return attempts.map((a) => ({
+    learnerId: a.learnerId || learnerId,
+    itemId: a.itemId,
+    correct: a.correct,
+    difficulty: a.difficulty,
+    answeredAt: a.answeredAt,
+  }));
+}
+
 export function buildMiuMathLearningDashboard(state: StudentModel, questions: MiuMathRawQuestion[]) {
   const attempts = Array.isArray(state?.attempts) ? state.attempts : [];
   const items = toQuestionItemsFromMiuMath((questions || []).map(normalizeMiuMathQuestion));
@@ -207,7 +218,8 @@ export function buildMiuMathLearningDashboard(state: StudentModel, questions: Mi
   const skillMastery = mastery.filter((row) => row.scope === 'skill');
   const recommendation = recommendNextAction({ ...state, attempts }, { diagnosticMinAttempts: 8 });
   const reviewItems = buildReviewSet(items, attempts, 5);
-  const diagnosticItems = buildDiagnosticSet(items, attempts, { limit: 5, programId: MIU_MATH_PROGRAM_ID });
+  const learnerId = state?.learnerId || 'guest';
+  const diagnosticItems = buildAdaptiveDiagnostic(items, toAdaptiveAttempts(attempts, learnerId), { learnerId, limit: 5, programId: MIU_MATH_PROGRAM_ID });
   const nextItem = recommendation.kind === 'review' ? reviewItems[0] || diagnosticItems[0] : diagnosticItems[0] || reviewItems[0];
   const nextQuestion = nextItem ? questions.find((question) => `miumath.${question.id}` === nextItem.id) || null : null;
   const learningPath = buildMiuMathLearningPath(mastery, recommendation);
@@ -231,7 +243,8 @@ export function buildMiuMathDiagnosticQuestions(state: StudentModel, questions: 
   const attempts = Array.isArray(state?.attempts) ? state.attempts : [];
   const normalizedQuestions = (questions || []).map(normalizeMiuMathQuestion);
   const items = toQuestionItemsFromMiuMath(normalizedQuestions);
-  const selectedItems = buildDiagnosticSet(items, attempts, { limit, programId: MIU_MATH_PROGRAM_ID });
+  const learnerId = state?.learnerId || 'guest';
+  const selectedItems = buildAdaptiveDiagnostic(items, toAdaptiveAttempts(attempts, learnerId), { learnerId, limit, programId: MIU_MATH_PROGRAM_ID });
   const rawQuestionByItemId = new Map((questions || []).map((question) => [`miumath.${question.id}`, question]));
   return selectedItems
     .map((item) => rawQuestionByItemId.get(item.id))

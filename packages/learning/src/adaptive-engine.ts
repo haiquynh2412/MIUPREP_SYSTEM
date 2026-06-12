@@ -325,3 +325,76 @@ export function runCatSession(
     difficultyLabel: ratingToDifficultyLabel(estimate.ability),
   };
 }
+
+export interface AdaptiveDiagnosticItem {
+  id: string;
+  difficulty?: string;
+  programIds?: string[];
+}
+
+export interface AdaptiveDiagnosticOptions {
+  /** Learner whose ability drives item selection. */
+  learnerId: string;
+  limit?: number;
+  /** Restrict to items mapped to this program. */
+  programId?: string;
+  /** Restrict to these prior difficulty labels. */
+  difficulties?: string[];
+  scale?: number;
+}
+
+/**
+ * Batch adaptive item selection: estimate the learner's ability from their
+ * attempt history (two-way Elo), then pick the unseen items that are most
+ * informative at that ability (Fisher information), with a difficulty spread
+ * so the set still measures a range rather than N identical items.
+ *
+ * Drop-in, level-targeting replacement for a random/filtered diagnostic set.
+ * For fully online per-item adaptation, use runCatSession instead.
+ */
+export function buildAdaptiveDiagnostic<T extends AdaptiveDiagnosticItem>(
+  items: T[],
+  attempts: AdaptiveAttempt[],
+  options: AdaptiveDiagnosticOptions,
+): T[] {
+  const limit = options.limit ?? 10;
+  const scale = options.scale ?? RATING_SCALE;
+
+  const { items: itemRatings, learners } = calibrateAbilities(attempts, { scale });
+  const ability = learners.get(options.learnerId)?.ability ?? DEFAULT_ABILITY;
+
+  const attemptedIds = new Set(
+    attempts.filter((a) => a.learnerId === options.learnerId).map((a) => a.itemId),
+  );
+
+  const ranked = items
+    .filter((it) => {
+      if (attemptedIds.has(it.id)) return false;
+      if (options.programId && it.programIds && it.programIds.length > 0 && !it.programIds.includes(options.programId)) return false;
+      if (options.difficulties && it.difficulty && !options.difficulties.includes(it.difficulty)) return false;
+      return true;
+    })
+    .map((it) => {
+      const rating = itemRatings.get(it.id)?.rating ?? priorRatingForDifficulty(it.difficulty);
+      return { item: it, rating, info: fisherInformation(ability, rating, scale) };
+    })
+    .sort((a, b) => b.info - a.info || a.item.id.localeCompare(b.item.id));
+
+  const picked: T[] = [];
+  const pickedRatings: number[] = [];
+  const minSeparation = scale * 0.25;
+
+  for (const c of ranked) {
+    if (picked.length >= limit) break;
+    if (pickedRatings.some((r) => Math.abs(r - c.rating) < minSeparation)) continue;
+    picked.push(c.item);
+    pickedRatings.push(c.rating);
+  }
+  // Fill any remaining slots by raw information, ignoring the spread constraint.
+  for (const c of ranked) {
+    if (picked.length >= limit) break;
+    if (!picked.includes(c.item)) picked.push(c.item);
+  }
+
+  return picked;
+}

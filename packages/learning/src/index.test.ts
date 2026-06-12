@@ -510,6 +510,7 @@ import {
   ratingToDifficultyLabel,
   runCatSession,
   selectNextCatItem,
+  buildAdaptiveDiagnostic,
   DEFAULT_ABILITY,
   RATING_SCALE,
   type AdaptiveAttempt,
@@ -616,3 +617,34 @@ assert(fisherInformation(1200, 1200) > fisherInformation(1200, 1800), "Informati
 })();
 
 console.log("Adaptive engine tests passed.");
+// --- buildAdaptiveDiagnostic targets the learner's level and spreads difficulty ---
+(() => {
+  // A weak learner: many wrong on hard, right on easy -> low ability.
+  const attempts: AdaptiveAttempt[] = [];
+  let k = 0;
+  for (let i = 0; i < 10; i++) {
+    attempts.push({ learnerId: 'weak', itemId: `seen-${k++}`, correct: true, difficulty: 'easy', answeredAt: `2026-03-01T00:${String(i).padStart(2,'0')}:00Z` });
+    attempts.push({ learnerId: 'weak', itemId: `seen-${k++}`, correct: false, difficulty: 'hard', answeredAt: `2026-03-01T01:${String(i).padStart(2,'0')}:00Z` });
+  }
+  const pool = [
+    ...Array.from({ length: 6 }, (_, i) => ({ id: `easy-${i}`, difficulty: 'easy', programIds: ['vn_math_6_9'] })),
+    ...Array.from({ length: 6 }, (_, i) => ({ id: `medium-${i}`, difficulty: 'medium', programIds: ['vn_math_6_9'] })),
+    ...Array.from({ length: 6 }, (_, i) => ({ id: `hard-${i}`, difficulty: 'hard', programIds: ['vn_math_6_9'] })),
+  ];
+  const picked = buildAdaptiveDiagnostic(pool, attempts, { learnerId: 'weak', limit: 4, programId: 'vn_math_6_9' });
+  assert(picked.length === 4, 'Adaptive diagnostic should return the requested count.');
+  assert(picked.every(p => !p.id.startsWith('seen-')), 'Adaptive diagnostic must exclude already-attempted items.');
+  const hardCount = picked.filter(p => p.difficulty === 'hard').length;
+  const easyCount = picked.filter(p => p.difficulty === 'easy').length;
+  assert(easyCount >= hardCount, 'A weak learner should be routed to more easy than hard items.');
+
+  // Filtering by program excludes off-program items.
+  const offProgram = buildAdaptiveDiagnostic(
+    [...pool, { id: 'other-1', difficulty: 'medium', programIds: ['other_program'] }],
+    attempts, { learnerId: 'weak', limit: 20, programId: 'vn_math_6_9' },
+  );
+  assert(!offProgram.some(p => p.id === 'other-1'), 'Adaptive diagnostic must respect the program filter.');
+})();
+
+console.log("buildAdaptiveDiagnostic tests passed.");
+
