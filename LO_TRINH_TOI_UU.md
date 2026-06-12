@@ -142,7 +142,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 ### 3.1. Engine thích ứng thật sự
 
 - [x] **3.1.2 + 3.1.3. Engine thích ứng mới: Elo 2 chiều + CAT** *(11/06/2026, commit adaptive-engine — module thuần `@miuprep/learning/src/adaptive-engine.ts`: mô hình logistic 1PL/Rasch; `calibrateAbilities()` chạy Elo 2 chiều trên log attempt → vừa ra độ khó item đã hiệu chỉnh vừa ra ability học sinh (K-factor giảm dần theo bằng chứng, item gán nhãn sai tự hiệu chỉnh, prior giữ khi sparse); `estimateAbilityEAP()` ước lượng ability bền vững với chuỗi toàn đúng/toàn sai; `selectNextCatItem()` + `runCatSession()` chọn câu theo Fisher information. Unit test với learner mô phỏng (PRNG seed): trap-item lên 'hard', ability hồi phục ≤130pt, CAT hội tụ ability 1450 trong <12 câu. Tất cả test learning PASS)*
-  - [ ] Còn lại: nối CAT vào luồng diagnostic thực của apps (hiện engine sẵn sàng, chưa wire UI) — gộp với 3.1.4
+  - [x] *3.1.4 (12/06): nối CAT vào diagnostic thực — `buildAdaptiveDiagnostic()` (ước lượng ability từ lịch sử qua Elo 2 chiều → chọn câu theo Fisher information, có spread độ khó); miumath diagnostic chuyển từ random sang adaptive (học sinh yếu → câu dễ hơn, giỏi → khó hơn). Unit test PASS; miumath build sạch. Commit `6a691106`)*
 - [~] **3.1.1. Bật empirical difficulty** — engine `calibrateAbilities` thay thế shadow report read-only cũ; cần backend (2.4) để tích lũy đủ attempt cộng đồng rồi feed độ khó hiệu chỉnh ngược vào content guard
 - [ ] **3.1.4. Teacher double-scoring flow để mở khóa mastery Writing/Speaking**
   - Test vòng 1: luồng giáo viên chấm → đồng thuận với AI → mastery cập nhật; bất đồng → flag review
@@ -176,8 +176,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 9 (+1 gộp GĐ2) | ~83% |
 | GĐ 2 — Kiến trúc | 16 | 10 | ~63% |
-| GĐ 3 — Cạnh tranh | 11 | 6 | ~55% |
-| **Tổng** | **43** | **29** | **~67%** |
+| GĐ 3 — Cạnh tranh | 11 | 7 | ~64% |
+| **Tổng** | **43** | **31** | **~72%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
