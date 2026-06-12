@@ -1,6 +1,7 @@
 import type { JSX } from 'react';
 import React, { Suspense } from 'react';
 import type { LocalUser } from '@miuprep/db';
+import { useTranslation } from '@miuprep/i18n/src/react';
 import type { LearningEventRecord } from '@miuprep/learning';
 import {
   MASCOT_STORE_ITEMS,
@@ -151,6 +152,7 @@ export default function StudentDashboardWorkspace({
   handleMathLessonTemplateAction,
   handleEnglishLessonTemplateAction,
 }: StudentDashboardWorkspaceProps): JSX.Element {
+  const { t } = useTranslation();
   return (
     <div className="space-y-12">
 
@@ -200,9 +202,9 @@ export default function StudentDashboardWorkspace({
       {/* Salmon Coins */}
       <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between shadow hover:border-emerald-500/40 transition-colors bg-gradient-to-tr from-slate-900 to-teal-950/20">
         <div className="flex flex-col gap-1 text-left">
-          <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Ví Xu Cá Hồi Chung</span>
+          <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">{t('sdw_wallet_title')}</span>
           <span className="text-3xl font-black text-emerald-400 font-mono">{fishCoins} 🐟</span>
-          <span className="text-[10px] text-slate-500">Khen thưởng từ MiuMath & Phụ huynh</span>
+          <span className="text-[10px] text-slate-500">{t('sdw_wallet_sub')}</span>
         </div>
         <span className="text-4xl filter drop-shadow">💰</span>
       </div>
@@ -216,16 +218,16 @@ export default function StudentDashboardWorkspace({
             setStudentWorkspaceTab(notebookAction.nextWorkspaceTab);
           }
           if (notebookAction.shouldNotify) {
-            showNotif("Đã mở Sổ Tay Bẫy Chuột Leitner ôn tập! 😼", "info");
+            showNotif(t('sdw_notif_open_leitner'), "info");
           }
         }}
         className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between shadow hover:border-rose-500/40 transition-all hover:scale-[1.02] cursor-pointer bg-gradient-to-tr from-slate-900 to-rose-950/20"
-        title="Bấm để mở Sổ tay ôn tập Bẫy chuột"
+        title={t('sdw_traps_tooltip')}
       >
         <div className="flex flex-col gap-1 text-left">
-          <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Bẫy Chuột Sửa Sai *</span>
+          <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">{t('sdw_traps_title')}</span>
           <span className="text-3xl font-black text-rose-400 font-mono">{mouseTrapsCount} 😼</span>
-          <span className="text-[10px] text-slate-400 font-bold">Nhập chuột để làm câu sai!</span>
+          <span className="text-[10px] text-slate-400 font-bold">{t('sdw_traps_sub')}</span>
         </div>
         <span className="text-4xl filter drop-shadow">🪤</span>
       </div>
@@ -233,7 +235,7 @@ export default function StudentDashboardWorkspace({
       {/* Global Progress */}
       <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between shadow hover:border-indigo-500/40 transition-colors bg-gradient-to-tr from-slate-900 to-indigo-950/20">
         <div className="flex flex-col gap-1 text-left">
-          <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">Độ Thích Ứng (IRT)</span>
+          <span className="text-[10px] uppercase tracking-widest font-black text-slate-500">{t('sdw_irt_title')}</span>
           <span className="text-3xl font-black text-indigo-400 font-mono">92.4% 🧠</span>
           <span className="text-[10px] text-slate-500">Mục tiêu ôn tuần: {currentUser.studyPlan?.weeklyTarget || 4} buổi</span>
         </div>
@@ -290,7 +292,7 @@ export default function StudentDashboardWorkspace({
       <section className="bg-slate-900/60 border border-rose-500/20 rounded-3xl p-6 max-w-4xl mx-auto shadow-xl text-left">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h3 className="text-sm font-black text-rose-400 uppercase tracking-widest">Sổ lỗi Leitner</h3>
+            <h3 className="text-sm font-black text-rose-400 uppercase tracking-widest">{t('sdw_leitner_title')}</h3>
             <p className="text-xs text-slate-500 mt-1">
               {getErrorNotebookSummary(activeErrorQuestionCount)}
             </p>
@@ -299,7 +301,7 @@ export default function StudentDashboardWorkspace({
             onClick={() => setShowErrorNotebook(true)}
             className="bg-rose-500 hover:bg-rose-600 text-white text-xs font-black uppercase px-5 py-3 rounded-xl transition-colors border-0 cursor-pointer"
           >
-            Mở sổ lỗi
+            {t('sdw_open_errors')}
           </button>
         </div>
       </section>
@@ -337,7 +339,7 @@ export default function StudentDashboardWorkspace({
 
         <div className="space-y-4">
           {activeErrorQuestionCount === 0 ? (
-            <p className="text-xs text-slate-500 italic text-center py-6">Tuyệt vời meow! Bạn đã xử lý sạch sẽ toàn bộ bẫy chuột ôn tập rồi! 🐟😽</p>
+            <p className="text-xs text-slate-500 italic text-center py-6">{t('sdw_all_traps_clear')}😽</p>
           ) : (
             activeErrorQuestions.map((q) => (
                 <div key={q.id} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 text-xs flex flex-col gap-3 relative">
@@ -355,7 +357,7 @@ export default function StudentDashboardWorkspace({
                     ))}
                   </div>
                   <details className="text-[10px] text-slate-500 font-light cursor-pointer select-none">
-                    <summary className="font-bold text-slate-450 hover:text-slate-300">💡 Xem giải thích lý thuyết chi tiết</summary>
+                    <summary className="font-bold text-slate-450 hover:text-slate-300">{t('sdw_view_theory')}</summary>
                     <p className="mt-1.5 bg-slate-900 p-2.5 rounded-lg border border-slate-850 leading-relaxed text-slate-400">{q.answerExpl}</p>
                   </details>
                 </div>
@@ -375,11 +377,11 @@ export default function StudentDashboardWorkspace({
             <span className="text-[9px] bg-orange-950/60 text-orange-400 border border-orange-900 px-2 py-0.5 rounded-full font-black font-mono">SALMON STORE</span>
           </h3>
           <p className="text-[10px] text-slate-500 mt-1 font-light">
-            Dùng xu cá hồi học viên tích lũy để mở khóa đồ trang trí cho Miu. Emoji phụ kiện sẽ bay bập bênh cạnh Miu meow!
+            {t('sdw_shop_desc')}
           </p>
         </div>
         <div className="text-xs font-black text-emerald-450 font-mono bg-slate-950 px-3 py-1.5 rounded-full border border-slate-850 shadow-inner shrink-0">
-          Ví của bạn: {fishCoins} 🐟
+          {t('sdw_your_wallet')}{fishCoins} 🐟
         </div>
       </div>
 
@@ -409,14 +411,14 @@ export default function StudentDashboardWorkspace({
                       : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
                   }`}
                 >
-                  {isEquipped ? '✓ Đang diện đồ' : '👚 Mặc thử'}
+                  {isEquipped ? t('sdw_equipped') : t('sdw_try_on')}
                 </button>
               ) : (
                 <button
                   onClick={() => handleBuyMascotItem(item.key, item.price)}
                   className="w-full py-1.5 bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-600 hover:to-rose-600 text-white font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer shadow hover:scale-[0.98] active:scale-95 duration-100"
                 >
-                  🛍️ Mở khóa
+                  {t('sdw_unlock')}
                 </button>
               )}
             </div>
@@ -493,9 +495,9 @@ export default function StudentDashboardWorkspace({
               onClick={() => {
                 if (track.id === 'sat') {
                   setActiveStudentTab('sat-board');
-                  showNotif("Đã mở phân hệ học tập thích ứng SAT Studio! 🎓🐾", "success");
+                  showNotif(t('sdw_notif_open_sat'), "success");
                 } else {
-                  alert(`Chào bạn meow meow! Tính năng mở khóa phân hệ [${track.title}] đang được Tauri biên dịch độc lập meow! 🐾`);
+                  alert(t('sdw_alert_track_compiling', { title: track.title }));
                 }
               }}
               className="mt-2 w-full py-3 rounded-xl font-bold bg-white text-slate-950 hover:bg-slate-100 transition-colors shadow flex items-center justify-center gap-2 hover:scale-[0.99] active:scale-95 duration-100 border-0 cursor-pointer"
@@ -515,14 +517,14 @@ export default function StudentDashboardWorkspace({
     <section className="bg-slate-900/30 border border-slate-850 rounded-3xl p-6 max-w-4xl mx-auto shadow-inner bg-gradient-to-br from-slate-900/50 to-indigo-950/15 text-left">
       <div className="flex items-center justify-between">
         <h3 className="text-sm font-black text-indigo-400 uppercase tracking-widest flex items-center gap-2 font-mono">
-          <span>📐 CÔNG CỤ MÁY TÍNH VẼ ĐỒ THỊ DESMOS TÍCH HỢP</span>
+          <span>{t('sdw_desmos_label')}</span>
           <span className="text-[9px] bg-indigo-950/60 text-indigo-400 border border-indigo-900 px-2 py-0.5 rounded-full font-bold">DESMOS LIVE</span>
         </h3>
         <button
           onClick={() => setShowDesmos(!showDesmos)}
           className="bg-indigo-600 hover:bg-indigo-700 text-white text-[10px] font-black uppercase px-4 py-2 rounded-xl transition-colors border-0 cursor-pointer"
         >
-          {showDesmos ? '✕ Thu Nhỏ Máy Tính' : '🧮 Mở Máy Tính Đồ Thị'}
+          {showDesmos ? t('sdw_desmos_hide') : t('sdw_desmos_show')}
         </button>
       </div>
 
@@ -536,7 +538,7 @@ export default function StudentDashboardWorkspace({
             title="Desmos Grapher"
           />
           <div className="absolute bottom-2 left-2 bg-slate-950/80 px-2 py-1 rounded border border-slate-800 text-[9px] text-slate-500 font-mono">
-            * Đã kích hoạt Dark-Theme Desmos thích hợp cho học viên MiuPrep.
+            {t('sdw_desmos_note')}
           </div>
         </div>
       )}
@@ -552,7 +554,7 @@ export default function StudentDashboardWorkspace({
       
       <form onSubmit={handleSaveDiary} className="flex flex-col gap-4 mb-6">
         <div className="flex flex-col sm:flex-row items-center gap-3">
-          <span className="text-xs font-bold text-slate-400">Hôm nay bạn thấy thế nào meow?</span>
+          <span className="text-xs font-bold text-slate-400">{t('sdw_mood_q')}</span>
           <div className="flex gap-2">
             {STUDENT_DIARY_MOODS.map(mood => (
               <button
@@ -571,7 +573,7 @@ export default function StudentDashboardWorkspace({
           <textarea
             value={studyDiary}
             onChange={(e) => setStudyDiary(e.target.value)}
-            placeholder="Hôm nay bạn đã học được mẹo giải toán Casio hay từ vựng IELTS mới nào meow..."
+            placeholder={t('sdw_journal_placeholder')}
             rows={2}
             className="flex-1 bg-slate-950/50 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 outline-none focus:border-orange-500/80 transition-colors placeholder:text-slate-700 resize-none font-medium"
           />
@@ -579,10 +581,10 @@ export default function StudentDashboardWorkspace({
             type="submit"
             className="bg-orange-500 hover:bg-orange-600 text-white font-black px-6 rounded-xl transition-colors text-sm hover:scale-[0.99] active:scale-95 duration-100 shadow border-0 cursor-pointer"
           >
-            Ghi Sổ
+            {t('sdw_journal_button')}
           </button>
         </div>
-        <p className="text-[10px] text-slate-500 text-left">* Viết nhật ký học tập mỗi ngày để được Mascot Miu thưởng thêm 🐟 15 Xu Cá Hồi nhé!</p>
+        <p className="text-[10px] text-slate-500 text-left">{t('sdw_journal_note')} nhé!</p>
       </form>
 
       <div className="max-h-48 overflow-y-auto flex flex-col gap-3 pr-2 scrollbar-thin text-left">
