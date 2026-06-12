@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from 'react';
 import type { LocalUser } from '@miuprep/db';
+import { useTranslation } from '@miuprep/i18n/src/react';
 
 type UserSummary = Omit<LocalUser, 'passwordHash'>;
 type RoleFilter = 'all' | 'admin' | 'parent' | 'student';
@@ -26,6 +27,7 @@ export default function AdminUsersPanel({
   onUpdateStatus,
   onDeleteUser,
 }: AdminUsersPanelProps) {
+  const { t } = useTranslation();
   const filteredUsers = users.filter((user) => {
     if (roleFilter !== 'all' && user.role !== roleFilter) return false;
     const status = user.status || 'pending';
@@ -42,30 +44,30 @@ export default function AdminUsersPanel({
 
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex items-center gap-1.5">
-            <span className="text-[10px] text-slate-500 font-bold uppercase">Vai trò:</span>
+            <span className="text-[10px] text-slate-500 font-bold uppercase">{t('aus_th_role')}:</span>
             <select
               value={roleFilter}
               onChange={(event) => setRoleFilter(event.target.value as RoleFilter)}
               className="bg-slate-950 border border-slate-850 text-slate-300 rounded-lg px-2 py-1 text-[10px] font-bold outline-none cursor-pointer"
             >
-              <option value="all">Tất cả</option>
-              <option value="admin">Quản trị</option>
-              <option value="parent">Phụ huynh</option>
-              <option value="student">Học sinh</option>
+              <option value="all">{t('aus_opt_all')}</option>
+              <option value="admin">{t('aus_opt_admin')}</option>
+              <option value="parent">{t('aus_opt_parent')}</option>
+              <option value="student">{t('aus_opt_student')}</option>
             </select>
           </div>
 
           <div className="flex items-center gap-1.5">
-            <span className="text-[10px] text-slate-500 font-bold uppercase">Duyệt:</span>
+            <span className="text-[10px] text-slate-500 font-bold uppercase">{t('aus_filter_approve')}</span>
             <select
               value={statusFilter}
               onChange={(event) => setStatusFilter(event.target.value as StatusFilter)}
               className="bg-slate-950 border border-slate-850 text-slate-300 rounded-lg px-2 py-1 text-[10px] font-bold outline-none cursor-pointer"
             >
               <option value="all">Tất cả</option>
-              <option value="pending">Chờ duyệt</option>
-              <option value="approved">Đã duyệt</option>
-              <option value="rejected">Bị từ chối</option>
+              <option value="pending">{t('aus_opt_pending')}</option>
+              <option value="approved">{t('aus_opt_approved')}</option>
+              <option value="rejected">{t('aus_opt_rejected')}</option>
             </select>
           </div>
         </div>
@@ -75,19 +77,19 @@ export default function AdminUsersPanel({
         <table className="w-full border-collapse text-left text-xs text-slate-300">
           <thead>
             <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-bold">
-              <th className="p-4">Người dùng</th>
-              <th className="p-4">Liên hệ</th>
+              <th className="p-4">{t('aus_th_user')}</th>
+              <th className="p-4">{t('aus_th_contact')}</th>
               <th className="p-4">Vai trò</th>
-              <th className="p-4">Trạng thái</th>
-              <th className="p-4">Ngày đăng ký</th>
-              <th className="p-4 text-center">Thao tác</th>
+              <th className="p-4">{t('aus_th_status')}</th>
+              <th className="p-4">{t('aus_th_date')}</th>
+              <th className="p-4 text-center">{t('aus_th_actions')}</th>
             </tr>
           </thead>
           <tbody>
             {filteredUsers.length === 0 ? (
               <tr>
                 <td colSpan={6} className="p-8 text-center text-slate-500 italic">
-                  Không tìm thấy tài khoản nào phù hợp...
+                  {t('aus_no_results')}
                 </td>
               </tr>
             ) : (
@@ -116,7 +118,7 @@ export default function AdminUsersPanel({
                       </div>
                     </td>
                     <td className="p-4 font-semibold text-slate-300 font-mono">
-                      {user.contactInfo || <span className="text-slate-650 italic">Không có</span>}
+                      {user.contactInfo || <span className="text-slate-650 italic">{t('aus_none')}</span>}
                     </td>
                     <td className="p-4">
                       <span
@@ -128,7 +130,7 @@ export default function AdminUsersPanel({
                               : 'bg-slate-950/60 border-slate-850 text-slate-400'
                         }`}
                       >
-                        {user.role === 'admin' ? 'Admin' : user.role === 'parent' ? 'Phụ huynh' : 'Học sinh'}
+                        {user.role === 'admin' ? t('aus_role_admin') : user.role === 'parent' ? t('aus_opt_parent') : t('aus_opt_student')}
                       </span>
                     </td>
                     <td className="p-4 font-bold">
@@ -141,7 +143,7 @@ export default function AdminUsersPanel({
                               : 'bg-amber-950/75 border-amber-900 text-amber-400 animate-pulse'
                         }`}
                       >
-                        {status === 'approved' ? '✓ Đã duyệt' : status === 'rejected' ? '❌ Bị từ chối' : '⏳ Chờ duyệt'}
+                        {status === 'approved' ? t('aus_status_approved') : status === 'rejected' ? t('aus_status_rejected') : t('aus_status_pending')}
                       </span>
                     </td>
                     <td className="p-4 text-slate-500 font-mono">
@@ -153,7 +155,7 @@ export default function AdminUsersPanel({
                           type="button"
                           onClick={() => onOpenUserDetail(user.username)}
                           className="px-2 py-1 rounded bg-slate-950 hover:bg-indigo-950/60 text-slate-500 hover:text-indigo-400 border border-slate-800 hover:border-indigo-900 transition-all cursor-pointer font-bold text-xs"
-                          title="Xem chi tiết & Điều chỉnh"
+                          title={t('aus_title_detail')}
                         >
                           🔍
                         </button>
@@ -162,9 +164,9 @@ export default function AdminUsersPanel({
                             type="button"
                             onClick={() => onUpdateStatus(user.username, 'approved')}
                             className="px-2.5 py-1 rounded bg-emerald-700 hover:bg-emerald-600 text-white font-extrabold text-[10px] uppercase transition-all border-0 cursor-pointer"
-                            title="Duyệt tài khoản"
+                            title={t('aus_title_approve')}
                           >
-                            Duyệt ✓
+                            {t('aus_approve')}
                           </button>
                         )}
                         {status !== 'rejected' && (
@@ -172,16 +174,16 @@ export default function AdminUsersPanel({
                             type="button"
                             onClick={() => onUpdateStatus(user.username, 'rejected')}
                             className="px-2.5 py-1 rounded bg-rose-950 hover:bg-rose-900 text-rose-400 font-extrabold text-[10px] uppercase transition-all border-0 cursor-pointer"
-                            title="Từ chối tài khoản"
+                            title={t('aus_title_reject')}
                           >
-                            Từ chối ❌
+                            {t('aus_reject')}
                           </button>
                         )}
                         <button
                           type="button"
                           onClick={() => onDeleteUser(user.username)}
                           className="px-2 py-1 rounded bg-slate-950 hover:bg-slate-900 hover:text-red-400 text-slate-500 border border-slate-800 transition-all cursor-pointer"
-                          title="Xóa vĩnh viễn"
+                          title={t('aus_title_delete')}
                         >
                           🗑️
                         </button>

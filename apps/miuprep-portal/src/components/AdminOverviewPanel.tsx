@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { LocalUser } from '@miuprep/db';
+import { useTranslation } from '@miuprep/i18n/src/react';
 
 type UserSummary = Omit<LocalUser, 'passwordHash'>;
 
@@ -22,6 +23,7 @@ export default function AdminOverviewPanel({
   onBoostStudentCoins,
   onClearTelemetryLogs,
 }: AdminOverviewPanelProps) {
+  const { t } = useTranslation();
   const activeStudentCount = users.filter((user) => user.role === 'student').length;
   const pendingUserCount = users.filter((user) => (user.status || 'pending') === 'pending').length;
 
@@ -50,7 +52,7 @@ export default function AdminOverviewPanel({
               onClick={onSendEmergencyIntervention}
               className="bg-rose-900/60 hover:bg-rose-800 border border-rose-700 text-rose-300 px-3.5 py-1.5 rounded-xl text-[10px] font-bold uppercase transition-all duration-100 cursor-pointer border-none outline-none"
             >
-              Khắc phục ngay ✓
+              {t('aov_fix_now')}
             </button>
           </div>
         </div>
@@ -62,7 +64,7 @@ export default function AdminOverviewPanel({
             👥
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Học viên Active</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_active_students')}</span>
             <h3 className="text-2xl font-black text-slate-100 mt-0.5">
               {activeStudentCount} <span className="text-xs text-slate-500 font-bold">con</span>
             </h3>
@@ -74,7 +76,7 @@ export default function AdminOverviewPanel({
             🎯
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Điểm Số Hệ Thống</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_system_score')}</span>
             <h3 className="text-sm font-black text-slate-100 mt-1">
               SAT: <span className="text-rose-400 font-mono font-bold">1340</span> • IELTS:{' '}
               <span className="text-indigo-400 font-mono font-bold">7.2</span>
@@ -87,7 +89,7 @@ export default function AdminOverviewPanel({
             🐟
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Xu Cá Hồi Lưu Thông</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_circulating')}</span>
             <h3 className="text-2xl font-black text-slate-100 mt-0.5">
               {circulatingCoins} <span className="text-xs text-slate-500 font-bold">🐟</span>
             </h3>
@@ -100,9 +102,9 @@ export default function AdminOverviewPanel({
             ⏳
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">Yêu Cầu Duyệt Mới</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_new_requests')}</span>
             <h3 className="text-2xl font-black text-slate-100 mt-0.5">
-              {pendingUserCount} <span className="text-xs text-slate-500 font-bold">yêu cầu</span>
+              {pendingUserCount} <span className="text-xs text-slate-500 font-bold">{t('aov_requests_unit')}</span>
             </h3>
           </div>
         </div>
@@ -114,7 +116,7 @@ export default function AdminOverviewPanel({
         <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col justify-between">
           <div>
             <h3 className="text-xs font-black text-slate-350 uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span>🔥 BẢN ĐỒ KỸ NĂNG YẾU (SYSTEM HEATMAP)</span>
+              <span>{t('aov_heatmap_title')}</span>
             </h3>
             <div className="space-y-3">
               {[
@@ -125,7 +127,7 @@ export default function AdminOverviewPanel({
                 <div key={skill.label}>
                   <div className="flex justify-between text-[10px] mb-1">
                     <span className="text-slate-400 font-semibold">{skill.label}</span>
-                    <span className={`${skill.tone} font-bold`}>Mức độ yếu: {skill.value}%</span>
+                    <span className={`${skill.tone} font-bold`}>{t('aov_weakness', { value: skill.value })}</span>
                   </div>
                   <div className="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-850">
                     <div className={`${skill.bar} h-full rounded-full`} style={{ width: `${skill.value}%` }} />
@@ -135,14 +137,14 @@ export default function AdminOverviewPanel({
             </div>
           </div>
           <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">
-            💡 Bản đồ kỹ năng yếu được tổng hợp tự động dựa trên nhật ký Bẫy Chuột và sai sót làm bài thực tế của tất cả học viên đang online.
+            {t('aov_heatmap_note')}
           </div>
         </section>
 
         <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col justify-between">
           <div>
             <h3 className="text-xs font-black text-slate-350 uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span>⚡ KÍCH HOẠT HỆ THỐNG MẪU NHANH (QUICK ACTIONS)</span>
+              <span>{t('aov_quick_title')}</span>
             </h3>
             <div className="grid grid-cols-2 gap-3">
               <button
@@ -150,26 +152,26 @@ export default function AdminOverviewPanel({
                 onClick={onApproveAllPendingUsers}
                 className="py-3 bg-emerald-950/60 hover:bg-emerald-900/45 border border-emerald-900/60 rounded-2xl text-[10px] font-black uppercase text-emerald-450 tracking-wider transition-all cursor-pointer text-center"
               >
-                ✓ Duyệt tất cả
+                {t('aov_approve_all')}
               </button>
               <button
                 type="button"
                 onClick={onBoostStudentCoins}
                 className="py-3 bg-orange-950/60 hover:bg-orange-900/45 border border-orange-900/60 rounded-2xl text-[10px] font-black uppercase text-orange-450 tracking-wider transition-all cursor-pointer text-center"
               >
-                🐟 Bơm 1K Coins
+                {t('aov_boost_coins')}
               </button>
               <button
                 type="button"
                 onClick={onClearTelemetryLogs}
                 className="py-3 bg-slate-950 hover:bg-slate-900 border border-slate-800 rounded-2xl text-[10px] font-black uppercase text-slate-400 tracking-wider transition-all cursor-pointer text-center col-span-2"
               >
-                🧹 Xóa Telemetry Logs
+                {t('aov_clear_logs')}
               </button>
             </div>
           </div>
           <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">
-            ⚠️ Các lệnh nhanh tác động trực tiếp lên database Local Storage dùng chung của toàn hệ thống. Hãy cân nhắc kỹ trước khi bấm!
+            {t('aov_quick_warn')}
           </div>
         </section>
       </div>
