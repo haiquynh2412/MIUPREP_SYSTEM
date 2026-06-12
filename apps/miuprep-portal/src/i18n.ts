@@ -116,6 +116,9 @@ export const portalTranslations: TranslationDict = {
     notif_gift_coins: 'Đã chuyển tặng thành công 🐟 {amount} Xu Cá Hồi khen thưởng cho con! 🎁',
     notif_status_approved: 'Đã duyệt trạng thái tài khoản @{username} thành công meow!',
     notif_account_deleted: 'Đã xóa vĩnh viễn tài khoản @{username} meow!',
+    // Native dialogs
+    confirm_delete_account: 'Bạn có chắc chắn muốn xóa vĩnh viễn tài khoản @{username} meow?',
+    alert_reminder_sent: 'Đã gửi thông báo nhắc nhở kèm bài tập bổ sung môn Toán 9 cho tài khoản con @con.cung meow! 🐾🚀',
   },
   en: {
     // Auth — tabs
@@ -228,6 +231,9 @@ export const portalTranslations: TranslationDict = {
     notif_gift_coins: 'Successfully gifted 🐟 {amount} Salmon Coins to your child! 🎁',
     notif_status_approved: 'Approved account status for @{username} successfully meow!',
     notif_account_deleted: 'Permanently deleted account @{username} meow!',
+    // Native dialogs
+    confirm_delete_account: 'Are you sure you want to permanently delete account @{username} meow?',
+    alert_reminder_sent: 'Sent a reminder with supplementary Grade 9 Math exercises to your child @con.cung meow! 🐾🚀',
   },
 };
 

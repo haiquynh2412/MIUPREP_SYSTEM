@@ -1801,7 +1801,7 @@ export default function App() {
       showNotif(t('notif_cannot_delete_self'), "error");
       return;
     }
-    const confirm = window.confirm(`Bạn có chắc chắn muốn xóa vĩnh viễn tài khoản @${userUsername} meow?`);
+    const confirm = window.confirm(t('confirm_delete_account', { username: userUsername }));
     if (!confirm) return;
 
     try {
@@ -1822,7 +1822,7 @@ export default function App() {
   };
 
   const handleSendEmergencyIntervention = async () => {
-    alert("Đã gửi thông báo nhắc nhở kèm bài tập bổ sung môn Toán 9 cho tài khoản con @con.cung meow! 🐾🚀");
+    alert(t('alert_reminder_sent'));
     await logSystemEvent('WARN', 'Admin đã gửi thông báo khắc phục khẩn cấp cho con @con.cung');
   };
 
