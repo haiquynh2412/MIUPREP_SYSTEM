@@ -33,6 +33,11 @@ export const portalTranslations: TranslationDict = {
     auth_link_student_hint: 'Phụ huynh cần nhập đúng tên đăng nhập học sinh để đồng bộ dữ liệu.',
     auth_admin_hint: 'Tài khoản Quản trị đầu tiên của hệ thống được tạo trực tiếp tại đây. Khi đã có Quản trị viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.',
     auth_register_button: 'Đăng Ký Tài Khoản',
+    // Header / top-bar
+    header_admin_content: 'Admin Content',
+    header_logout: 'Đăng Xuất ➔',
+    header_ecosystem_tagline: 'Hệ sinh thái số #1',
+    header_subtitle: 'Ngày mai bắt đầu từ ngày hôm nay.',
   },
   en: {
     // Auth — tabs
@@ -62,6 +67,11 @@ export const portalTranslations: TranslationDict = {
     auth_link_student_hint: "Parents must enter the student's exact username to sync data.",
     auth_admin_hint: 'The first administrator account is created directly here. Once an administrator exists, new admin accounts must be issued by an existing administrator.',
     auth_register_button: 'Create Account',
+    // Header / top-bar
+    header_admin_content: 'Admin Content',
+    header_logout: 'Sign Out ➔',
+    header_ecosystem_tagline: '#1 Digital Ecosystem',
+    header_subtitle: 'Tomorrow starts today.',
   },
 };
 

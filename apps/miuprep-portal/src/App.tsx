@@ -2040,21 +2040,21 @@ export default function App() {
               <div className="flex items-center gap-2 sm:gap-3 bg-slate-950 border border-slate-850 px-2 sm:px-4 py-1.5 rounded-full shadow-inner max-w-[calc(100vw-150px)] sm:max-w-none min-w-0">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
                 <span className={`hidden sm:inline text-xs font-black uppercase text-slate-400 ${isAdminContentAccount(currentUser) ? 'sm:hidden' : ''}`}>
-                  {currentUser.role === 'admin' ? '👑 Admin' : currentUser.role === 'parent' ? '🏠 Phụ Huynh' : '🎒 Học Sinh'}
+                  {currentUser.role === 'admin' ? t('auth_role_admin') : currentUser.role === 'parent' ? t('auth_role_parent') : t('auth_role_student')}
                 </span>
                 {isAdminContentAccount(currentUser) && (
-                  <span className="hidden sm:inline text-xs font-black uppercase text-indigo-300">Admin Content</span>
+                  <span className="hidden sm:inline text-xs font-black uppercase text-indigo-300">{t('header_admin_content')}</span>
                 )}
                 <span className="text-xs font-semibold text-slate-200 truncate min-w-0 max-w-[88px] sm:max-w-none">@{currentUser.username}</span>
                 <button 
                   onClick={handleLogout}
                   className="text-xs font-black uppercase text-red-400 hover:text-red-300 sm:ml-2 bg-transparent border-0 outline-none cursor-pointer shrink-0"
                 >
-                  Đăng Xuất ➔
+                  {t('header_logout')}
                 </button>
               </div>
             ) : (
-              <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Hệ sinh thái số #1</span>
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">{t('header_ecosystem_tagline')}</span>
             )}
           </div>
         </div>
@@ -2072,7 +2072,7 @@ export default function App() {
             MIUPREP UNIVERSE
           </h1>
           <p className="mt-3 text-sm sm:text-lg text-slate-350 font-light tracking-wide italic max-w-2xl opacity-90 font-sans">
-            Ngày mai bắt đầu từ ngày hôm nay.
+            {t('header_subtitle')}
           </p>
         </header>
 
