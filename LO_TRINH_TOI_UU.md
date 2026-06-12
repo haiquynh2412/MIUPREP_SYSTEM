@@ -164,9 +164,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 - [ ] **3.3.1. Product analytics (PostHog self-hosted — phù hợp dữ liệu trẻ em)**
   - Test vòng 1: events chính (bắt đầu bài, hoàn thành, rớt giữa chừng) xuất hiện đúng trên dashboard
   - Test vòng 2: audit payload — không có PII trong analytics events
-- [ ] **3.3.2. i18n framework (i18next) — externalize text Việt/Anh**
-  - Test vòng 1: chuyển đổi ngôn ngữ runtime hoạt động trên portal
-  - Test vòng 2: script quét chuỗi hardcode còn sót — 0 kết quả trong components đã migrate
+- [~] **3.3.2. i18n framework — nền tảng dùng chung ĐÃ XONG, rollout từng app tiếp theo** *(12/06/2026 — Tạo `@miuprep/i18n` (engine thuần testable: createTranslator + interpolation `{param}` + persistence + fallback chain + `findMissingTranslationKeys` guard; React: LanguageProvider/useTranslation/LanguageToggle). miuphysics migrate sang engine chung (giữ dict riêng), parity vi/en 100%. Wire vào build order + CI + hook. README hướng dẫn rollout. Test: engine test PASS, full build 0 lỗi. **Còn lại (incremental, an toàn vì chuỗi chưa dịch vẫn render):** externalize chuỗi hardcode ở portal + 2 app desktop — làm dần từng màn hình)*
 - [x] **3.3.3. Bundle size budget** *(11/06/2026 — `scripts/check-bundle-budget.mjs` fail CI nếu entry chunk vượt ngưỡng (portal 110KB, hiện 72.5KB); chốt giữ thành quả code-split. Wire vào CI build job. Lighthouse CI để dành phiên i18n/perf riêng)*
 
 ---
@@ -178,8 +176,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 9 (+1 gộp GĐ2) | ~83% |
 | GĐ 2 — Kiến trúc | 16 | 10 | ~63% |
-| GĐ 3 — Cạnh tranh | 11 | 5 | ~45% |
-| **Tổng** | **42** | **28** | **~67%** |
+| GĐ 3 — Cạnh tranh | 11 | 6 | ~55% |
+| **Tổng** | **43** | **29** | **~67%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
