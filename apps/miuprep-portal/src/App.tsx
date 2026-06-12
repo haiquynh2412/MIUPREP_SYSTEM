@@ -546,7 +546,7 @@ export default function App() {
       logSystemEvent('INFO', `Đã nạp ${qList.length} câu hỏi SAT thành công từ ${bank}`);
     } catch (e) {
       console.error("Lỗi fetch SAT Questions", e);
-      showNotif(`Không thể nạp dữ liệu từ tệp ${bank} meow!`, "error");
+      showNotif(t('notif_load_bank_failed', { bank }), "error");
     } finally {
       setIsLoadingQuestions(false);
     }
@@ -558,13 +558,13 @@ export default function App() {
     const nextPracticeState = createSatPracticeState(loadedQuestions, domain, skill, selectedSatBank);
 
     if (!nextPracticeState) {
-      showNotif(`Chưa có câu hỏi nào thuộc kỹ năng [${skill}] trong ngân hàng này meow! Hãy thử ngân hàng khác!`, "info");
+      showNotif(t('notif_no_skill_questions', { skill }), "info");
       return;
     }
 
     setActivePracticeState(nextPracticeState);
 
-    showNotif(`Bắt đầu luyện tập ${nextPracticeState.questions.length} câu hỏi thích ứng meow! 🐾🎓`, "success");
+    showNotif(t('notif_start_adaptive', { count: nextPracticeState.questions.length }), "success");
   };
 
   const handleAnswerSatQuestion = (choice: string) => {
@@ -584,7 +584,7 @@ export default function App() {
       });
       
       setSatEstimatedScore(prev => Math.min(1600, prev + 15));
-      showNotif("Đáp án chính xác meow! Bạn nhận được +10 Xu Cá Hồi! 🎉🐟", "success");
+      showNotif(t('notif_answer_correct_10'), "success");
     } else {
       const newErr = createSatErrorQuestion(currentQuestion);
       
@@ -600,7 +600,7 @@ export default function App() {
       }
 
       setSatEstimatedScore(prev => Math.max(400, prev - 10));
-      showNotif("Ôi không meow! Hãy xem kỹ lời giải thích bên dưới nhé! 😿", "error");
+      showNotif(t('notif_answer_wrong_explain'), "error");
     }
 
     setActivePracticeState(nextState);
@@ -615,14 +615,14 @@ export default function App() {
     const { createTemplatePracticeState } = await loadTemplatePracticeModule();
     const nextState = createTemplatePracticeState({ template, domainId, programId, sourceSurface });
     if (!nextState) {
-      showNotif("Template nay chua co practice item de cham diem.", "info");
+      showNotif(t('notif_template_no_scorable'), "info");
       return;
     }
     setActivePracticeState(null);
     setEnglishItemBankPracticeState(null);
     setTemplatePracticeState(nextState);
     setShowErrorNotebook(false);
-    showNotif(`Bat dau scored practice: ${nextState.questions.length} cau tu ${template.title}.`, "success");
+    showNotif(t('notif_start_scored', { count: nextState.questions.length, title: template.title }), "success");
   };
 
   const startEnglishItemBankPractice = async (
@@ -639,7 +639,7 @@ export default function App() {
     });
 
     if (!nextState) {
-      showNotif(`Chua co item-bank practice learning-ready cho ${programId.toUpperCase()}.`, "info");
+      showNotif(t('notif_no_itembank_ready', { program: programId.toUpperCase() }), "info");
       return false;
     }
 
@@ -647,7 +647,7 @@ export default function App() {
     setTemplatePracticeState(null);
     setEnglishItemBankPracticeState(nextState);
     setShowErrorNotebook(false);
-    showNotif(`Bat dau ${programId.toUpperCase()} item-bank practice: ${nextState.questions.length} cau.`, "success");
+    showNotif(t('notif_start_itembank', { program: programId.toUpperCase(), count: nextState.questions.length }), "success");
     return true;
   };
 
@@ -667,7 +667,7 @@ export default function App() {
     const { completed, finalScore, totalQuestions, nextState } = advanceSatPractice(activePracticeState);
 
     if (completed) {
-      showNotif(`Chúc mừng bạn đã hoàn thành bài luyện tập SAT! Đạt ${finalScore}/${totalQuestions} câu đúng! 🌟`, "success");
+      showNotif(t('notif_sat_complete', { score: finalScore, total: totalQuestions }), "success");
     }
 
     setActivePracticeState(nextState);
@@ -710,7 +710,7 @@ export default function App() {
         }
         return nextCoins;
       });
-      showNotif("Dung learning move. Ban nhan +5 Xu Ca Hoi.", "success");
+      showNotif(t('notif_learning_move_correct'), "success");
     } else {
       const newErr = createTemplatePracticeErrorQuestion(currentQuestion, templatePracticeState);
       setErrorQuestions(prev => {
@@ -722,7 +722,7 @@ export default function App() {
       if (currentUser?.username) {
         persistTrapCount(localStorage, currentUser.username, nextTraps);
       }
-      showNotif("Chua dung learning move. Minh da them vao so loi de review.", "error");
+      showNotif(t('notif_learning_move_wrong'), "error");
     }
 
     setTemplatePracticeState(nextState);
@@ -733,7 +733,7 @@ export default function App() {
     const { advanceTemplatePractice } = await loadTemplatePracticeModule();
     const { completed, finalScore, totalQuestions, nextState } = advanceTemplatePractice(templatePracticeState);
     if (completed) {
-      showNotif(`Hoan thanh scored practice: ${finalScore}/${totalQuestions} cau dung.`, "success");
+      showNotif(t('notif_scored_complete', { score: finalScore, total: totalQuestions }), "success");
     }
     setTemplatePracticeState(nextState);
   };
@@ -801,7 +801,7 @@ export default function App() {
         }
         return nextCoins;
       });
-      showNotif("Dung cau item-bank. Ban nhan +8 Xu Ca Hoi.", "success");
+      showNotif(t('notif_itembank_correct'), "success");
     } else {
       const newErr = createEnglishItemBankPracticeErrorQuestion(currentQuestion, englishItemBankPracticeState);
       setErrorQuestions(prev => {
@@ -813,7 +813,7 @@ export default function App() {
       if (currentUser?.username) {
         persistTrapCount(localStorage, currentUser.username, nextTraps);
       }
-      showNotif("Chua dung. Cau nay da vao Error Notebook de on lai.", "error");
+      showNotif(t('notif_itembank_wrong'), "error");
     }
 
     setEnglishItemBankPracticeState(nextState);
@@ -824,7 +824,7 @@ export default function App() {
     const { advanceEnglishItemBankPractice } = await loadEnglishItemBankPracticeModule();
     const { completed, finalScore, totalQuestions, nextState } = advanceEnglishItemBankPractice(englishItemBankPracticeState);
     if (completed) {
-      showNotif(`Hoan thanh item-bank practice: ${finalScore}/${totalQuestions} cau dung.`, "success");
+      showNotif(t('notif_itembank_complete', { score: finalScore, total: totalQuestions }), "success");
     }
     setEnglishItemBankPracticeState(nextState);
   };
@@ -863,7 +863,7 @@ export default function App() {
     });
 
     if (!newTip) {
-      showNotif("Vui lòng điền đủ Tiêu đề và Cú pháp meow!", "error");
+      showNotif(t('notif_fill_title_syntax'), "error");
       return;
     }
 
@@ -872,7 +872,7 @@ export default function App() {
     setNewCasioSyntax('');
     setNewCasioExpl('');
     logSystemEvent('INFO', `Admin @${currentUser?.username} đã thêm mới Casio Tip: "${newTip.title}"`);
-    showNotif("Đã thêm mới Casio Tip thành công meow! 🧮🐾", "success");
+    showNotif(t('notif_casio_added'), "success");
   };
 
   const handleTriggerIrtCalibration = () => {
@@ -881,7 +881,7 @@ export default function App() {
     setTimeout(() => {
       setIsIrtCalibrating(false);
       logSystemEvent('INFO', `Hiệu chuẩn 3PL-IRT hoàn tất: Calibrated 970 câu hỏi, Learning Rate = ${satIrtAlpha}`);
-      showNotif(`Hiệu chuẩn IRT hoàn tất meow! Đã lưu tham số câu hỏi mới! 📊🐟`, "success");
+      showNotif(t('notif_irt_done'), "success");
     }, 2000);
   };
 
@@ -911,13 +911,13 @@ export default function App() {
     setExamJsonInput('');
     setExamImportSuccess(result.successMessage);
     logSystemEvent('INFO', `Admin @${currentUser?.username} nhập thành công đề thi JSON: "${result.exam.title}"`);
-    showNotif(`Nhập đề thi ${result.exam.exam} thành công meow!`, "success");
+    showNotif(t('notif_import_exam_ok', { exam: result.exam.exam }), "success");
   };
 
   const handleLoadDemoExam = (trackId: EnglishExamTrack) => {
     const demo = createDemoExam(trackId);
     setExamJsonInput(JSON.stringify(demo, null, 2));
-    showNotif(`Đã nạp đề thi mẫu ${trackId.toUpperCase()} thành công meow! Bạn hãy nhấn "Import" để nhập!`, "info");
+    showNotif(t('notif_sample_loaded', { track: trackId.toUpperCase() }), "info");
   };
 
   const handleAdjustCoins = (username: string, amount: number) => {
@@ -925,7 +925,7 @@ export default function App() {
     const newCoins = Math.max(0, progressSnapshot.coins + amount);
     persistCoinBalance(localStorage, username, newCoins);
     logSystemEvent('WARN', `Admin @${currentUser?.username} đã điều chỉnh Salmon Coins cho @${username}: ${amount > 0 ? '+' : ''}${amount} xu. Số dư mới: ${newCoins}`);
-    showNotif(`Đã điều chỉnh Salmon Coins cho @${username} thành công!`, "success");
+    showNotif(t('notif_coins_adjusted', { username }), "success");
     refreshAdminData();
     
     // Auto-update details if active
@@ -945,13 +945,13 @@ export default function App() {
       };
       await db.registerLocalUser(updated);
       logSystemEvent('WARN', `Admin @${currentUser?.username} đã thay đổi phân quyền khoá học cho @${username}: [${tracks.join(', ')}]`);
-      showNotif("Đã cập nhật phân quyền khoá học thành công meow!", "success");
+      showNotif(t('notif_course_perm_updated'), "success");
       refreshAdminData();
       if (selectedUserForDetail && selectedUserForDetail.username === username) {
         setSelectedUserForDetail(updated);
       }
     } catch {
-      showNotif("Cập nhật phân quyền thất bại!", "error");
+      showNotif(t('notif_perm_update_failed'), "error");
     }
   };
 
@@ -968,11 +968,11 @@ export default function App() {
 
     if (primary === '/help') {
       await logSystemEvent('INFO', 'Lệnh hỗ trợ Admin: /seed (Tái tạo dữ liệu), /clear-logs (Xóa logs), /approve-all (Duyệt tất cả tài khoản), /coins @username [lượng] (Tặng xu)');
-      showNotif("Đã in lệnh trợ giúp trong Terminal meow!", "info");
+      showNotif(t('notif_help_printed'), "info");
     } else if (primary === '/clear-logs') {
       localStorage.removeItem('ielts_app_logs_list');
       setAdminLogs([]);
-      showNotif("Đã xóa toàn bộ nhật ký hệ thống!", "success");
+      showNotif(t('notif_logs_cleared'), "success");
     } else if (primary === '/approve-all') {
       const list = await db.listLocalUsers();
       for (const u of list) {
@@ -985,7 +985,7 @@ export default function App() {
         }
       }
       await logSystemEvent('WARN', 'Admin đã phê duyệt toàn bộ tài khoản đang chờ duyệt thông qua lệnh CLI');
-      showNotif("Đã phê duyệt toàn bộ tài khoản meow! 🚀", "success");
+      showNotif(t('notif_all_approved'), "success");
       await refreshAdminData();
     } else if (primary === '/seed') {
       await handleAddDefaultLogs();
@@ -1012,7 +1012,7 @@ export default function App() {
     });
 
     if (!newLesson) {
-      showNotif("Vui lòng nhập Tên chuyên đề meow!", "error");
+      showNotif(t('notif_enter_topic'), "error");
       return;
     }
 
@@ -1022,7 +1022,7 @@ export default function App() {
     setNewMathTopic('Đại số (Algebra)');
     setNewMathCount(40);
     logSystemEvent('INFO', `Admin @${currentUser?.username} đã thêm chuyên đề Toán mới: "${newLesson.title}"`);
-    showNotif("Thêm chuyên đề Toán mới thành công meow! 🧮", "success");
+    showNotif(t('notif_math_topic_added'), "success");
   };
 
   const handleAddEnglishExam = (trackId: EnglishExamTrack) => {
@@ -1034,7 +1034,7 @@ export default function App() {
     });
 
     if (!newExam) {
-      showNotif("Vui lòng nhập Tên đề thi meow!", "error");
+      showNotif(t('notif_enter_exam_name'), "error");
       return;
     }
 
@@ -1048,7 +1048,7 @@ export default function App() {
     setNewExamQuestions(40);
     setNewExamDuration(60);
     logSystemEvent('INFO', `Admin @${currentUser?.username} đã tạo đề thi ${trackId.toUpperCase()} mới: "${newExam.title}"`);
-    showNotif(`Tạo đề thi ${trackId.toUpperCase()} mới thành công meow! 🚀`, "success");
+    showNotif(t('notif_create_exam_ok', { track: trackId.toUpperCase() }), "success");
   };
 
   const handleOpenContentExam = (exam: ImportedExam) => {
@@ -1166,7 +1166,7 @@ export default function App() {
     });
     setContentExamDraft(savedExam);
     logSystemEvent('WARN', `Admin @${currentUser?.username} saved content exam ${savedExam.exam}: "${savedExam.title}" [${reviewStatus}]`);
-    showNotif(`Đã lưu đề ${savedExam.exam} thành công meow!`, "success");
+    showNotif(t('notif_save_exam_ok', { exam: savedExam.exam }), "success");
   };
 
   const handleExportContentExamChangeSet = () => {
@@ -1181,13 +1181,13 @@ export default function App() {
     });
     downloadJsonFile(`miuprep-${contentExamDraft.exam.toLowerCase()}-${safeFilePart(contentExamDraft.id)}-changeset.json`, changeSet);
     logSystemEvent('INFO', `Admin @${currentUser?.username} exported content change set ${contentExamDraft.exam}: "${contentExamDraft.title}"`);
-    showNotif(`Exported change set for ${contentExamDraft.exam}.`, 'success');
+    showNotif(t('notif_exported_changeset', { exam: contentExamDraft.exam }), 'success');
   };
 
   const handleExportContentReviewSet = () => {
     const trackExams = importedExams.filter((exam) => exam.exam.toLowerCase() === adminActiveTab);
     if (!trackExams.length) {
-      showNotif(`No ${adminActiveTab.toUpperCase()} exams to export.`, 'error');
+      showNotif(t('notif_no_exams_export', { tab: adminActiveTab.toUpperCase() }), 'error');
       return;
     }
     const exportPayload: ContentReviewChangeSetExport = buildContentReviewChangeSetExport(trackExams, {
@@ -1196,19 +1196,19 @@ export default function App() {
     });
     downloadJsonFile(`miuprep-${adminActiveTab}-review-changesets.json`, exportPayload);
     logSystemEvent('INFO', `Admin @${currentUser?.username} exported ${adminActiveTab.toUpperCase()} review change set (${trackExams.length} exams)`);
-    showNotif(`Exported ${adminActiveTab.toUpperCase()} review set.`, 'success');
+    showNotif(t('notif_exported_review', { tab: adminActiveTab.toUpperCase() }), 'success');
   };
 
   const handleBuyMascotItem = (item: string, price: number) => {
     const purchase = purchaseMascotItem(unlockedMascotItems, fishCoins, item, price);
 
     if (purchase.status === 'already_unlocked') {
-      showNotif(`Bạn đã mở khóa vật phẩm này rồi meow!`, "info");
+      showNotif(t('notif_item_already_unlocked'), "info");
       return;
     }
 
     if (purchase.status === 'insufficient_coins') {
-      showNotif(`Bạn không đủ Xu Cá Hồi meow! Hãy làm bài chăm chỉ nhé! 😿`, "error");
+      showNotif(t('notif_not_enough_coins'), "error");
       return;
     }
 
@@ -1219,7 +1219,7 @@ export default function App() {
     setUnlockedMascotItems(purchase.nextUnlockedItems);
     localStorage.setItem('miuprep_unlocked_items', JSON.stringify(purchase.nextUnlockedItems));
     logSystemEvent('INFO', `Học sinh @${currentUser?.username} đã mua vật phẩm "${item}" với giá ${price} Xu`);
-    showNotif(`Mở khóa vật phẩm "${item}" thành công! Mặc thử ngay meow! 🎉`, "success");
+    showNotif(t('notif_item_unlocked', { item }), "success");
   };
 
   const handleEquipMascotItem = (item: string) => {
@@ -1253,9 +1253,9 @@ export default function App() {
       }
 
       logSystemEvent('INFO', `Học sinh @${currentUser?.username} đã giải đúng câu hỏi ôn tập Bẫy Chuột [${qId}], được thưởng +10 Xu`);
-      showNotif("Tuyệt vời meow! Bạn trả lời đúng và nhận được +10 Xu Cá Hồi! 🐟🌟", "success");
+      showNotif(t('notif_correct_10_great'), "success");
     } else {
-      showNotif("Ôi không meow! Đáp án chưa chính xác, hãy đọc kỹ giải thích nhé! 😿", "error");
+      showNotif(t('notif_wrong_read_explain'), "error");
     }
   };
 
@@ -1285,16 +1285,16 @@ export default function App() {
         persistCoinBalance(localStorage, currentUser.username, retryResult.nextCoins);
       }
       logSystemEvent('INFO', `Student @${currentUser?.username} resolved Error Notebook V2 question [${qId}], reward +10 coins`);
-      showNotif("Correct. Stage lowered and repair progress saved.", "success");
+      showNotif(t('notif_correct_stage_lowered'), "success");
       return;
     }
 
     if (retryResult.retryStatusCode === 'prerequisite') {
-      showNotif("Sai lai 2 lan. He thong se dua ban ve prerequisite/repair lesson truoc khi retry tiep.", "error");
+      showNotif(t('notif_two_fails_prereq'), "error");
       return;
     }
 
-    showNotif("Dap an chua chinh xac. Doc root cause va missed step roi thu lai.", "error");
+    showNotif(t('notif_wrong_root_cause'), "error");
   };
 
   const openAdminContentTrack = (track: 'math' | 'sat' | 'ielts' | 'cae' | 'cpe') => {
@@ -1317,7 +1317,7 @@ export default function App() {
     });
 
     if (!newLesson) {
-      showNotif("Vui lòng điền nội dung câu hỏi meow!", "error");
+      showNotif(t('notif_enter_question'), "error");
       return;
     }
 
@@ -1328,7 +1328,7 @@ export default function App() {
     setLatexMathAns('A');
     setLatexMathExpl('');
     logSystemEvent('INFO', `Admin @${currentUser?.username} đã soạn câu hỏi LaTeX mới: "${newLesson.title}"`);
-    showNotif("Thành công! Đã đăng ký câu hỏi LaTeX trực quan meow! 🧮", "success");
+    showNotif(t('notif_latex_registered'), "success");
   };
 
   const getCirculatingCoins = () => {
@@ -1359,7 +1359,7 @@ export default function App() {
         if (u) {
           if (u.status === 'rejected') {
             localStorage.removeItem('miuprep_active_username');
-            showNotif("Tài khoản của bạn đã bị từ chối hoạt động meow! ❌", "error");
+            showNotif(t('notif_account_rejected_active'), "error");
           } else {
             setCurrentUser(u);
             logSystemEvent('INFO', `Tự động đăng nhập người dùng: @${u.username}`);
@@ -1368,6 +1368,7 @@ export default function App() {
       }
     };
     initSession();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run-once session init; t() is only used for a mount-time rejected-account toast and must not re-run on language change
   }, []);
 
   // Sync data based on current logged in user role
@@ -1432,7 +1433,7 @@ export default function App() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!username.trim() || !password.trim() || !displayName.trim()) {
-      showNotif("Vui lòng điền đầy đủ các thông tin bắt buộc meow!", "error");
+      showNotif(t('notif_fill_required'), "error");
       return;
     }
 
@@ -1441,7 +1442,7 @@ export default function App() {
     // Check if user already exists
     const existing = await db.getLocalUser(cleanUsername);
     if (existing) {
-      showNotif("Tên đăng nhập đã tồn tại trên MiuPrep meow!", "error");
+      showNotif(t('notif_username_taken'), "error");
       return;
     }
 
@@ -1451,13 +1452,13 @@ export default function App() {
 
     if (regRole === 'parent') {
       if (!studentToLink.trim()) {
-        showNotif("Phụ huynh vui lòng nhập username học sinh để liên kết meow!", "error");
+        showNotif(t('notif_parent_enter_student'), "error");
         return;
       }
       const linkedStudentUser = studentToLink.trim().toLowerCase();
       const studentObj = await db.getLocalUser(linkedStudentUser);
       if (!studentObj || studentObj.role !== 'student') {
-        showNotif(`Học sinh @${linkedStudentUser} không tồn tại trên hệ thống meow!`, "error");
+        showNotif(t('notif_student_not_found', { student: linkedStudentUser }), "error");
         return;
       }
       linkedList = [linkedStudentUser];
@@ -1466,7 +1467,7 @@ export default function App() {
       // exists, additional admin accounts must be issued by an existing admin.
       const existingUsers = await db.listLocalUsers();
       if (existingUsers.some(u => u.role === 'admin')) {
-        showNotif("Hệ thống đã có Quản trị viên. Vui lòng nhờ Quản trị viên hiện tại cấp tài khoản meow!", "error");
+        showNotif(t('notif_admin_exists'), "error");
         return;
       }
       initialStatus = 'approved'; // Admins auto-approved
@@ -1494,9 +1495,9 @@ export default function App() {
       await logSystemEvent('INFO', `Tài khoản mới đăng ký: @${cleanUsername} [${regRole.toUpperCase()}]`, { username: cleanUsername, role: regRole });
       
       if (initialStatus === 'pending') {
-        showNotif("Đăng ký thành công! Vui lòng chờ Quản trị viên duyệt tài khoản meow! ⏳", "success");
+        showNotif(t('notif_register_pending'), "success");
       } else {
-        showNotif("Đăng ký tài khoản Admin thành công! Đăng nhập ngay meow meow! 🎉", "success");
+        showNotif(t('notif_register_admin_ok'), "success");
       }
       
       // Clear forms
@@ -1507,14 +1508,14 @@ export default function App() {
       setStudentToLink('');
       setAuthTab('login');
     } catch {
-      showNotif("Đăng ký thất bại, đã xảy ra lỗi meow!", "error");
+      showNotif(t('notif_register_failed'), "error");
     }
   };
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!loginUsername.trim() || !loginPassword.trim()) {
-      showNotif("Tên đăng nhập và mật khẩu là bắt buộc meow!", "error");
+      showNotif(t('notif_login_required'), "error");
       return;
     }
 
@@ -1522,13 +1523,13 @@ export default function App() {
     try {
       const u = await db.getLocalUser(cleanUsername);
       if (!u) {
-        showNotif("Thông tin đăng nhập không chính xác meow! 😿", "error");
+        showNotif(t('notif_login_incorrect'), "error");
         return;
       }
 
       const verdict = await verifyPassword(loginPassword.trim(), u.passwordHash);
       if (!verdict.ok) {
-        showNotif("Thông tin đăng nhập không chính xác meow! 😿", "error");
+        showNotif(t('notif_login_incorrect'), "error");
         return;
       }
 
@@ -1542,12 +1543,12 @@ export default function App() {
       }
 
       if (u.status === 'pending') {
-        showNotif("Tài khoản của bạn đang chờ phê duyệt từ Admin meow! Vui lòng đợi nhé! ⏳", "info");
+        showNotif(t('notif_login_pending'), "info");
         return;
       }
 
       if (u.status === 'rejected') {
-        showNotif("Tài khoản của bạn đã bị từ chối duyệt meow! Vui lòng liên hệ Admin! ❌", "error");
+        showNotif(t('notif_login_rejected'), "error");
         return;
       }
 
@@ -1555,9 +1556,9 @@ export default function App() {
       localStorage.setItem('miuprep_active_username', u.username);
       setCurrentUser(u);
       await logSystemEvent('INFO', `Người dùng đăng nhập thành công: @${u.username}`);
-      showNotif(`Meow mừng bạn trở lại, ${u.displayName || u.username}! 🎉`, "success");
+      showNotif(t('notif_welcome_back', { name: u.displayName || u.username }), "success");
     } catch {
-      showNotif("Đăng nhập thất bại meow!", "error");
+      showNotif(t('notif_login_failed'), "error");
     }
   };
 
@@ -1569,7 +1570,7 @@ export default function App() {
     setCurrentUser(null);
     setLoginUsername('');
     setLoginPassword('');
-    showNotif("Đã đăng xuất tài khoản meow! Tạm biệt và hẹn gặp lại meow! 🐾");
+    showNotif(t('notif_logout_ok'));
   };
 
   // ==========================================
@@ -1589,7 +1590,7 @@ export default function App() {
     persistDiaryUpdate(localStorage, currentUser.username, diaryUpdate);
     
     logSystemEvent('INFO', `Học sinh @${currentUser.username} viết nhật ký học tập, được tặng +15 Xu Cá Hồi`, { journal: studyDiary });
-    showNotif("Tuyệt vời meow! Bạn nhận được 🐟 15 Xu Cá Hồi vì đã chăm chỉ ghi nhật ký! 🎉", "success");
+    showNotif(t('notif_diary_reward'), "success");
   };
 
   const handleDailyPlanCompleted = async () => {
@@ -1630,7 +1631,7 @@ export default function App() {
     });
     setStudentLearningEvents(await db.listLearningEvents(undefined, 200));
     await logSystemEvent('INFO', `Hoc sinh @${currentUser.username} hoan thanh today target`, { dateKey, eventId: event.id });
-    showNotif(`Today quest completed. +${DAILY_PLAN_COMPLETION_REWARD} coins earned.`, 'success');
+    showNotif(t('notif_quest_complete', { reward: DAILY_PLAN_COMPLETION_REWARD }), 'success');
   };
 
   const handleDailyStepCompleted = (stepId: DailyLoopStepId) => {
@@ -1723,11 +1724,11 @@ export default function App() {
         };
         await db.registerLocalUser(updated);
         await logSystemEvent('INFO', `Phụ huynh @${currentUser?.username} cập nhật mục tiêu của con @${selectedStudent} thành ${weeklyTargetValue} buổi/tuần`);
-        showNotif("Đã cập nhật mục tiêu học tập hàng tuần cho con meow! 👍", "success");
+        showNotif(t('notif_weekly_target_updated'), "success");
         await refreshParentData();
       }
     } catch {
-      showNotif("Cập nhật mục tiêu thất bại!", "error");
+      showNotif(t('notif_target_update_failed'), "error");
     }
   };
 
@@ -1750,10 +1751,10 @@ export default function App() {
         setCurrentUser(updatedParent);
       }
 
-      showNotif(`Đã chuyển tặng thành công 🐟 ${rewardAmount} Xu Cá Hồi khen thưởng cho con! 🎁`, "success");
+      showNotif(t('notif_gift_coins', { amount: rewardAmount }), "success");
       await refreshParentData();
     } catch {
-      showNotif("Khen thưởng thất bại meow!", "error");
+      showNotif(t('notif_reward_failed'), "error");
     }
   };
 
@@ -1787,17 +1788,17 @@ export default function App() {
         const updated = { ...targetUser, status: nextStatus };
         await db.registerLocalUser(updated);
         await logSystemEvent('INFO', `Admin @${currentUser?.username} thay đổi trạng thái của @${userUsername} thành [${nextStatus.toUpperCase()}]`);
-        showNotif(`Đã duyệt trạng thái tài khoản @${userUsername} thành công meow!`, "success");
+        showNotif(t('notif_status_approved', { username: userUsername }), "success");
         await refreshAdminData();
       }
     } catch {
-      showNotif("Duyệt trạng thái thất bại!", "error");
+      showNotif(t('notif_status_approve_failed'), "error");
     }
   };
 
   const handleDeleteUser = async (userUsername: string) => {
     if (userUsername === currentUser?.username) {
-      showNotif("Bạn không thể tự xóa tài khoản của chính mình meow!", "error");
+      showNotif(t('notif_cannot_delete_self'), "error");
       return;
     }
     const confirm = window.confirm(`Bạn có chắc chắn muốn xóa vĩnh viễn tài khoản @${userUsername} meow?`);
@@ -1806,10 +1807,10 @@ export default function App() {
     try {
       await db.deleteLocalUser(userUsername);
       await logSystemEvent('WARN', `Admin @${currentUser?.username} xóa vĩnh viễn tài khoản: @${userUsername}`);
-      showNotif(`Đã xóa vĩnh viễn tài khoản @${userUsername} meow!`, "success");
+      showNotif(t('notif_account_deleted', { username: userUsername }), "success");
       await refreshAdminData();
     } catch {
-      showNotif("Xóa tài khoản thất bại!", "error");
+      showNotif(t('notif_delete_account_failed'), "error");
     }
   };
 
@@ -1817,7 +1818,7 @@ export default function App() {
     await logSystemEvent('INFO', 'Hệ thống AI MiuPrep khởi chạy tiến trình Calibration tham số IRT');
     await logSystemEvent('INFO', 'Đồng bộ hóa Salmon Coins ví dùng chung hoàn tất');
     await refreshAdminData();
-    showNotif("Đã tái tạo dữ liệu Telemetry Logs mẫu thành công meow! 📊", "success");
+    showNotif(t('notif_telemetry_seeded'), "success");
   };
 
   const handleSendEmergencyIntervention = async () => {
@@ -1837,7 +1838,7 @@ export default function App() {
       }
     }
     await logSystemEvent('WARN', 'Admin phê duyệt nhanh tất cả các tài khoản');
-    showNotif("Đã phê duyệt nhanh toàn bộ tài khoản meow! 🚀", "success");
+    showNotif(t('notif_quick_approve_all'), "success");
     await refreshAdminData();
   };
 
@@ -1849,14 +1850,14 @@ export default function App() {
       }
     });
     await logSystemEvent('WARN', 'Admin bơm tài nguyên: Set ví học viên thành 1,000 Coins');
-    showNotif("Bơm tài nguyên 1,000 Coins cho tất cả học viên thành công! 🐟", "success");
+    showNotif(t('notif_boost_all_coins'), "success");
     await refreshAdminData();
   };
 
   const handleClearTelemetryLogs = () => {
     localStorage.removeItem('ielts_app_logs_list');
     setAdminLogs([]);
-    showNotif("Đã làm sạch toàn bộ Telemetry Logs meow!", "success");
+    showNotif(t('notif_telemetry_cleared'), "success");
   };
 
   // ==========================================
