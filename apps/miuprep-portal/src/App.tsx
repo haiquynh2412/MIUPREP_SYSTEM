@@ -2,6 +2,7 @@ import React, { Suspense, useState, useEffect } from 'react';
 import type { JSX } from 'react';
 import { MiuMascot } from '@miuprep/ui';
 import { calculateCoinsReward } from '@miuprep/core';
+import { useTranslation, LanguageToggle } from '@miuprep/i18n/src/react';
 import { LocalStorageAdapter, LocalUser, SystemLog, hashPassword, verifyPassword } from '@miuprep/db';
 import { buildLearningEvent, type LearningEventRecord } from '@miuprep/learning';
 import {
@@ -330,6 +331,7 @@ function buildAdminWorkspaceTabs(input: {
 }
 
 export default function App() {
+  const { t } = useTranslation();
   // 1. Authentication State
   const [currentUser, setCurrentUser] = useState<LocalUser | null>(null);
   const [authTab, setAuthTab] = useState<'login' | 'register'>('login');
@@ -2113,19 +2115,22 @@ export default function App() {
             ========================================== */}
         {!currentUser && (
           <section className="max-w-md mx-auto bg-slate-900/80 border border-slate-800 rounded-3xl p-6 shadow-2xl relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950">
+            <div className="flex justify-end mb-2">
+              <LanguageToggle style={{ color: '#fb923c' }} />
+            </div>
             {/* Tabs */}
             <div className="flex border-b border-slate-800 pb-4 mb-6">
               <button
                 onClick={() => setAuthTab('login')}
                 className={`flex-1 py-2 font-black uppercase text-xs tracking-wider transition-all border-0 cursor-pointer ${authTab === 'login' ? 'text-orange-400 border-b-2 border-orange-400 bg-transparent' : 'text-slate-500 hover:text-slate-300 bg-transparent'}`}
               >
-                🔑 ĐĂNG NHẬP
+                {t('auth_tab_login')}
               </button>
               <button
                 onClick={() => setAuthTab('register')}
                 className={`flex-1 py-2 font-black uppercase text-xs tracking-wider transition-all border-0 cursor-pointer ${authTab === 'register' ? 'text-orange-400 border-b-2 border-orange-400 bg-transparent' : 'text-slate-500 hover:text-slate-300 bg-transparent'}`}
               >
-                📝 ĐĂNG KÝ MỚI
+                {t('auth_tab_register')}
               </button>
             </div>
 
@@ -2133,18 +2138,18 @@ export default function App() {
             {authTab === 'login' ? (
               <form onSubmit={handleLogin} className="flex flex-col gap-4">
                 <div className="flex flex-col text-left">
-                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">Tên đăng nhập (Username)</label>
+                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">{t('auth_username_label')}</label>
                   <input
                     type="text"
                     value={loginUsername}
                     onChange={(e) => setLoginUsername(e.target.value)}
-                    placeholder="Nhập username..."
+                    placeholder={t('auth_username_placeholder')}
                     className="w-full bg-slate-950 border border-slate-850 rounded-xl px-4 py-3 text-sm outline-none focus:border-orange-500/60 font-medium placeholder:text-slate-700"
                   />
                 </div>
 
                 <div className="flex flex-col text-left">
-                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">Mật khẩu</label>
+                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">{t('auth_password_label')}</label>
                   <input
                     type="password"
                     value={loginPassword}
@@ -2158,11 +2163,11 @@ export default function App() {
                   type="submit"
                   className="w-full py-3 rounded-xl bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-600 hover:to-rose-600 font-extrabold uppercase text-xs tracking-widest text-white shadow-lg active:scale-95 duration-100 mt-2 border-0 cursor-pointer"
                 >
-                  Đăng Nhập Ngay
+                  {t('auth_login_button')}
                 </button>
                 
                 <p className="text-[10px] text-slate-500 text-center mt-2">
-                  * Lần đầu sử dụng? Chuyển sang tab Đăng ký và chọn vai trò Quản trị để tạo tài khoản Admin đầu tiên.
+                  {t('auth_first_time_hint')}
                 </p>
               </form>
             ) : (
@@ -2171,7 +2176,7 @@ export default function App() {
                 
                 {/* Role Selector */}
                 <div className="flex flex-col text-left mb-2">
-                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-2">Bạn là ai meow?</label>
+                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-2">{t('auth_role_question')}</label>
                   <div className="grid grid-cols-3 gap-2 bg-slate-955 p-1 rounded-xl border border-slate-850">
                     {(['student', 'parent', 'admin'] as const).map(role => (
                       <button
@@ -2184,52 +2189,52 @@ export default function App() {
                             : 'text-slate-400 hover:text-slate-200 bg-transparent'
                         }`}
                       >
-                        {role === 'student' ? '🎒 Học Sinh' : role === 'parent' ? '🏠 Phụ Huynh' : '👑 Admin'}
+                        {role === 'student' ? t('auth_role_student') : role === 'parent' ? t('auth_role_parent') : t('auth_role_admin')}
                       </button>
                     ))}
                   </div>
                 </div>
 
                 <div className="flex flex-col text-left">
-                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">Tên đăng nhập (Username) *</label>
+                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">{t('auth_username_label_required')}</label>
                   <input
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Ví dụ: miu.math"
+                    placeholder={t('auth_username_placeholder_example')}
                     className="w-full bg-slate-950 border border-slate-850 rounded-xl px-4 py-3 text-sm outline-none focus:border-orange-500/60 font-medium placeholder:text-slate-700"
                   />
                 </div>
 
                 <div className="flex flex-col text-left">
-                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">Tên hiển thị (Họ Tên) *</label>
+                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">{t('auth_displayname_label')}</label>
                   <input
                     type="text"
                     value={displayName}
                     onChange={(e) => setDisplayName(e.target.value)}
-                    placeholder="Ví dụ: Nguyễn Văn A"
+                    placeholder={t('auth_displayname_placeholder')}
                     className="w-full bg-slate-950 border border-slate-850 rounded-xl px-4 py-3 text-sm outline-none focus:border-orange-500/60 font-medium placeholder:text-slate-700"
                   />
                 </div>
 
                 <div className="flex flex-col text-left">
-                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">Mật khẩu *</label>
+                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">{t('auth_password_label_required')}</label>
                   <input
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Tối thiểu 6 ký tự..."
+                    placeholder={t('auth_password_placeholder')}
                     className="w-full bg-slate-950 border border-slate-850 rounded-xl px-4 py-3 text-sm outline-none focus:border-orange-500/60 font-medium placeholder:text-slate-700"
                   />
                 </div>
 
                 <div className="flex flex-col text-left">
-                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">Liên hệ (SĐT / Email)</label>
+                  <label className="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1.5">{t('auth_contact_label')}</label>
                   <input
                     type="text"
                     value={contactInfo}
                     onChange={(e) => setContactInfo(e.target.value)}
-                    placeholder="Số điện thoại hoặc email..."
+                    placeholder={t('auth_contact_placeholder')}
                     className="w-full bg-slate-950 border border-slate-850 rounded-xl px-4 py-3 text-sm outline-none focus:border-orange-500/60 font-medium placeholder:text-slate-700"
                   />
                 </div>
@@ -2237,15 +2242,15 @@ export default function App() {
                 {/* Parent Specific Field */}
                 {regRole === 'parent' && (
                   <div className="flex flex-col text-left border-l-2 border-orange-500 pl-3 bg-orange-500/5 py-2 rounded-r-xl">
-                    <label className="text-[10px] font-black uppercase tracking-wider text-orange-400 mb-1.5">Username Học sinh liên kết *</label>
+                    <label className="text-[10px] font-black uppercase tracking-wider text-orange-400 mb-1.5">{t('auth_link_student_label')}</label>
                     <input
                       type="text"
                       value={studentToLink}
                       onChange={(e) => setStudentToLink(e.target.value)}
-                      placeholder="Username của con (phải có sẵn)..."
+                      placeholder={t('auth_link_student_placeholder')}
                       className="w-full bg-slate-955 border border-slate-850 rounded-xl px-4 py-3 text-sm outline-none focus:border-orange-500/60 font-medium placeholder:text-slate-700"
                     />
-                    <span className="text-[9px] text-slate-500 mt-1">Phụ huynh cần nhập đúng tên đăng nhập học sinh để đồng bộ dữ liệu.</span>
+                    <span className="text-[9px] text-slate-500 mt-1">{t('auth_link_student_hint')}</span>
                   </div>
                 )}
 
@@ -2253,7 +2258,7 @@ export default function App() {
                 {regRole === 'admin' && (
                   <div className="flex flex-col text-left border-l-2 border-purple-500 pl-3 bg-purple-500/5 py-2 rounded-r-xl">
                     <span className="text-[10px] text-purple-300 leading-relaxed">
-                      Tài khoản Quản trị đầu tiên của hệ thống được tạo trực tiếp tại đây. Khi đã có Quản trị viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.
+                      {t('auth_admin_hint')}
                     </span>
                   </div>
                 )}
@@ -2262,7 +2267,7 @@ export default function App() {
                   type="submit"
                   className="w-full py-3 rounded-xl bg-orange-500 hover:bg-orange-600 font-extrabold uppercase text-xs tracking-widest text-white shadow-lg active:scale-95 duration-100 mt-2 border-0 cursor-pointer"
                 >
-                  Đăng Ký Tài Khoản
+                  {t('auth_register_button')}
                 </button>
               </form>
             )}
