@@ -8,6 +8,8 @@
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./src",
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
     "strict": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,

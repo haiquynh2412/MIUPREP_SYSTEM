@@ -97,13 +97,13 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 > **Hiệu chỉnh 11/06/2026:** số liệu "700k dòng" trong audit ban đầu là nhầm bytes thành dòng — `math6-enrichment.ts` thực tế 11.9k dòng (~700KB), `knowledge/index.ts` 2.8k dòng. Mức ưu tiên 2.2.1/2.2.2 hạ xuống. Vấn đề thật của tầng lưu trữ là quota localStorage (đã xử lý ở 2.2.0).
 
 - [x] **2.2.0. (MỚI) Sửa QuotaExceededError web mode — IndexedDB backend** *(11/06/2026 — `@miuprep/db` thêm tầng AsyncKV (LocalStorageKV / IndexedDbKV); `IndexedDbAdapter` cùng layout dữ liệu, quota hàng GB, tự migrate key `ielts_app_*` cũ ra khỏi localStorage; learning events giữ localStorage (helper đồng bộ dùng chung). 2 app desktop dùng IndexedDB ở web mode. Test: db unit PASS, 2 app build PASS, **e2e listening từ FAIL → PASS, 0 QuotaExceeded**, recovery PASS cả 2 app. Lưu ý: suite e2e có flaky khi chạy song song nhiều spec nặng (timeout banner 5s) — không phải lỗi logic. Commit `40bf4d1a`)*
-- [!] **2.2.1. Chuyển enrichment sang JSON — VÔ HIỆU HÓA BỞI SỐ ĐO THỰC NGHIỆM** *(11/06/2026 — Điều tra kết luận:*
-  *(a) `math6-enrichment.ts` phần lớn KHÔNG phải data: 876 block lời giải dạng if-match (data trá hình code, ~73 block có logic regex/điều kiện phức tạp) + hàng trăm hàm solver thật;*
-  *(b) Đo typecheck: content (3.164 file) = 53.8s ≈ db (3 file) = 52.7s → thời gian build KHÔNG phụ thuộc kích thước file mà là overhead cố định ~50s mỗi lần chạy tsc;*
-  *(c) Cùng binary tsc, project ngoài OneDrive: 3.5s → thủ phạm là OneDrive sync engine quét node_modules;*
-  *(d) Đã THỬ junction node_modules ra ngoài OneDrive → tệ hơn (52s → 128s, có thể do Defender quét lại đường dẫn mới) → ĐÃ HOÀN NGUYÊN sạch.*
-  ***Kết luận: fix duy nhất hiệu quả là chuyển cả repo ra ngoài OneDrive (vd `C:\Source\MIUPREP_SYSTEM`), dùng git push GitHub làm backup thay cho OneDrive. Cần bạn quyết định — và phải làm giữa 2 phiên làm việc (phiên Claude đang neo vào đường dẫn hiện tại). Việc chuyển data sang JSON vẫn có giá trị cho bundle size về sau nhưng không còn là ưu tiên build-speed.)*
-- [ ] **2.2.2. Tách `packages/knowledge/src/index.ts` (173k dòng) thành data JSON + logic TS**
+- [x] **2.2.1. Build-speed — ĐÃ FIX (chẩn đoán lại 13/06/2026): thủ phạm là Windows Defender, KHÔNG phải OneDrive** *(11/06 điều tra ban đầu kết luận sai là do OneDrive; 13/06 đo lại trên `C:\Source` (đã ngoài OneDrive) chứng minh ngược:*
+  *(a) `db` chỉ 3 file source mà tsc mất 67.7s trên C: → overhead cố định KHÔNG phải OneDrive. `skipLibCheck` đã bật sẵn ở mọi tsconfig nên không phải lib-check;*
+  *(b) Thủ phạm thật = **Windows Defender real-time** quét hàng nghìn `.d.ts` node_modules mỗi lần tsc đọc (node_modules vừa `npm install` nên Defender quét gắt). Thêm exclusion (`Add-MpPreference -ExclusionPath` cho repo + ExclusionProcess node.exe/tsc.exe, cần admin/UAC) → **db 67.7s → 2.4s (~28×)**;*
+  *(c) `content` (3.164 file) sau exclusion vẫn ~99–113s warm vì tải type-check THẬT của data-trá-hình-code (876 block if-match + solver). Fix: bật `incremental`+`tsBuildInfoFile` cho content → **build full 116.7s, re-build không đổi file 4.3s (~27×)**. Cũng bật cho knowledge (dù knowledge chỉ 3.3s — số "173k dòng" là bytes, thực 2.8k dòng);*
+  *(d) Lưu ý vận hành: lần ĐẦU chạm file sau khi đổi exclusion luôn chậm 1 nhịp (Defender re-scan: db 98.9s, content 116.7s) rồi mới về tốc độ thật.*
+  ***Kết luận: dev-cycle đã nhanh. Việc chuyển enrichment→JSON KHÔNG còn cần cho build-speed (incremental đã giải quyết); chỉ còn giá trị bundle-size/maintainability về sau, và khó vì phần lớn là logic chứ không phải data thuần → ưu tiên thấp. Tsconfig thay đổi: `packages/content` + `packages/knowledge` thêm incremental.)*
+- [ ] **2.2.2. (Hạ ưu tiên) Tách `packages/knowledge/src/index.ts` thành data JSON + logic TS** *(13/06: số "173k dòng" trong audit là bytes — thực 2.8k dòng; knowledge typecheck chỉ 3.3s sau fix Defender. Lý do build-speed KHÔNG còn; chỉ còn giá trị maintainability/bundle → ưu tiên thấp.)*
   - Test vòng 1: `npm test -w @miuprep/knowledge` pass, export API không đổi
   - Test vòng 2: T-PKG toàn bộ (các package phụ thuộc knowledge không vỡ)
 - [~] **2.2.3. Portal: typecheck + tách App.tsx thành routes/modules**
@@ -175,9 +175,9 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 9 (+1 gộp GĐ2) | ~83% |
-| GĐ 2 — Kiến trúc | 16 | 10 | ~63% |
+| GĐ 2 — Kiến trúc | 16 | 11 | ~69% |
 | GĐ 3 — Cạnh tranh | 11 | 7 | ~64% |
-| **Tổng** | **43** | **31** | **~72%** |
+| **Tổng** | **43** | **32** | **~74%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
@@ -196,6 +196,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | 11/06/2026 | 2.1.2 | PASS — tsc package sạch; 2 app build + lint sạch; e2e recovery PASS cả 2 app | Commit `2e25807e`; xóa ~4.000 dòng trùng lặp; package mới `@miuprep/exam-desktop` |
 | 11/06/2026 | 2.2.0 | PASS — e2e listening FAIL→PASS, 0 QuotaExceeded | Commit `40bf4d1a`; IndexedDB backend |
 | 11/06/2026 | 2.2.1 | Điều tra bằng số đo → chuyển `[!]` | Build chậm do OneDrive (50s overhead cố định/lần tsc; ngoài OneDrive 3.5s); junction đã thử và hoàn nguyên; cần chuyển repo ra ngoài OneDrive (quyết định của bạn) |
+| 13/06/2026 | 2.2.1 | PASS — đo lại trên C: chứng minh chẩn đoán cũ SAI → `[x]` | Thủ phạm = **Windows Defender** (không phải OneDrive): db 67.7s→2.4s sau exclusion; content 116.7s→4.3s sau bật `incremental`; knowledge 3.3s (173k "dòng" thực ra là bytes). Enrichment→JSON không còn cần cho build-speed |
 | 11/06/2026 | 2.2.3 GĐ1 | PASS — portal tsc 0 lỗi (sửa 14), lint 0, build PASS; gate vào hook + CI | Commit `30e01c19` |
 | 11/06/2026 | 1.1.4 | PASS — ai tests (migration/purge/memory-only); 2 app desktop build sạch | Commit `53b4f039` |
 | 11/06/2026 | 1.1.2 + 1.1.3 | PASS — 7/7 package tests; build ielts/cpe/portal; lint 3 app; e2e recovery PASS; QA portal 2/2 PASS; grep credentials sạch | Commit `af0f0165`. Gỡ toàn bộ backdoor/seed mặc định ở 3 app; PBKDF2 + auto-rehash; e2e tự seed user. **Phát hiện mới:** `QuotaExceededError` ở web mode (ngân hàng đề vượt quota localStorage) → cần xử lý ở task 2.2 (chuyển content sang load theo nhu cầu / IndexedDB); e2e listening fail ở bước sau-submit vì vấn đề này (có sẵn, không do auth) |
