@@ -31,10 +31,8 @@ import {
   persistCoinBalance,
   persistDiaryUpdate,
   persistTrapCount,
-  purchaseMascotItem,
   recordStudyDiary,
   resolveErrorRetry,
-  toggleMascotItem,
   type DailyLoopStepId,
   type DiaryEntry,
   type LessonTemplateAction,
@@ -83,6 +81,7 @@ import {
 import { INITIAL_CASIO_TIPS, INITIAL_IMPORTED_EXAMS, INITIAL_MATH_LESSONS } from './lib/portalSeedData';
 import { safeFilePart } from './lib/fileUtils';
 import { buildSatPracticeLearningEvent } from './lib/satPracticeEvents';
+import { useMascotInventory } from './hooks/useMascotInventory';
 
 const SystemSurfacePreview = React.lazy(() => import('./components/SystemSurfacePreview'));
 const AdminAnalyticsWorkspace = React.lazy(() => import('./components/AdminAnalyticsWorkspace'));
@@ -281,13 +280,6 @@ export default function App() {
   const [newExamDuration, setNewExamDuration] = useState(60);
 
   // Phase 4: Advanced Multi-Role Optimizations States
-  const [unlockedMascotItems, setUnlockedMascotItems] = useState<string[]>(() => {
-    const saved = localStorage.getItem('miuprep_unlocked_items');
-    return saved ? JSON.parse(saved) : [];
-  });
-  const [equippedMascotItem, setEquippedMascotItem] = useState<string>(() => {
-    return localStorage.getItem('miuprep_equipped_item') || '';
-  });
   const [showDesmos, setShowDesmos] = useState<boolean>(false);
   const [showErrorNotebook, setShowErrorNotebook] = useState<boolean>(false);
 
@@ -1014,37 +1006,6 @@ export default function App() {
     showNotif(t('notif_exported_review', { tab: adminActiveTab.toUpperCase() }), 'success');
   };
 
-  const handleBuyMascotItem = (item: string, price: number) => {
-    const purchase = purchaseMascotItem(unlockedMascotItems, fishCoins, item, price);
-
-    if (purchase.status === 'already_unlocked') {
-      showNotif(t('notif_item_already_unlocked'), "info");
-      return;
-    }
-
-    if (purchase.status === 'insufficient_coins') {
-      showNotif(t('notif_not_enough_coins'), "error");
-      return;
-    }
-
-    setFishCoins(purchase.nextCoins);
-    if (currentUser?.username) {
-      persistCoinBalance(localStorage, currentUser.username, purchase.nextCoins);
-    }
-    setUnlockedMascotItems(purchase.nextUnlockedItems);
-    localStorage.setItem('miuprep_unlocked_items', JSON.stringify(purchase.nextUnlockedItems));
-    logSystemEvent('INFO', `Học sinh @${currentUser?.username} đã mua vật phẩm "${item}" với giá ${price} Xu`);
-    showNotif(t('notif_item_unlocked', { item }), "success");
-  };
-
-  const handleEquipMascotItem = (item: string) => {
-    const nextItem = toggleMascotItem(equippedMascotItem, item);
-    setEquippedMascotItem(nextItem);
-    localStorage.setItem('miuprep_equipped_item', nextItem);
-    logSystemEvent('INFO', `Học sinh @${currentUser?.username} đã thay đổi phụ kiện trang trí: [${nextItem || 'Trống'}]`);
-    showNotif(nextItem ? `Đã diện phụ kiện ${nextItem} cho Mascot Miu! 😻` : `Đã cởi bỏ phụ kiện của Mascot Miu meow!`, "success");
-  };
-
   const handleRetryErrorQuestion = (qId: string, choice: string, correctAns: string) => {
     const retryResult = resolveErrorRetry(errorQuestions, qId, choice, correctAns, fishCoins, mouseTrapsCount);
     const attemptedQuestion = errorQuestions.find((question) => question.id === qId);
@@ -1232,6 +1193,15 @@ export default function App() {
       console.error("Failed to log system event", e);
     }
   };
+
+  const { unlockedMascotItems, equippedMascotItem, handleBuyMascotItem, handleEquipMascotItem } = useMascotInventory({
+    currentUser,
+    fishCoins,
+    setFishCoins,
+    showNotif,
+    logSystemEvent,
+    t,
+  });
 
   const saveStudentLearningEvent = async (event: LearningEventRecord) => {
     try {
