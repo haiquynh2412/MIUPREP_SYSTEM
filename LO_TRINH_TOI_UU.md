@@ -64,9 +64,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 - [x] **1.2.1. GitHub Actions CI + push lên remote — CI XANH 4/4 JOBS** _(12/06/2026 — Push toàn bộ lên `github.com/haiquynh2412/MIUPREP_SYSTEM`. CI workflow xác nhận chạy đậu trên GitHub: Build all / ESLint 4 app / SAT / Unit tests 7 packages đều success (run `79af5e19`). Đã xử lý: (a) 4 file thô >50MB gỡ khỏi lịch sử bằng filter-branch + .gitignore; (b) 2 lỗi clean-checkout có sẵn trong repo — core test thiếu build (`tsc && node test-runner.js`) và test-packages cần build-all trước vì core cross-import `../ai/dist`+`../content/dist`. Pipeline giờ chốt chặn mọi push/PR)_
 - [x] **1.2.2. Thêm pre-commit hook (dùng `core.hooksPath`, không cần dependency husky)** _(11/06/2026 — Hook `.githooks/pre-commit`: lint app bị ảnh hưởng + `tsc --noEmit` package bị ảnh hưởng; tự cài qua script `prepare`. Test: commit chứa lỗi TS cố ý → BỊ CHẶN đúng (error TS2322); commit hợp lệ → đi qua bình thường. Commit `2935f6c7`)_
-- [ ] **1.2.3. Thêm Prettier + format toàn repo (1 commit riêng chỉ format)** _(HOÃN CÓ ĐIỀU KIỆN 11/06/2026: chỉ thực hiện SAU khi repo đã push lên GitHub (có backup off-machine). Lý do: reformat tạo diff khổng lồ + mất git blame; cần kèm `.git-blame-ignore-revs` và loại trừ file data sinh tự động (math_-enrichment.ts, knowledge/index.ts) khỏi phạm vi format)\*
-  - Test vòng 1: `npx prettier --check .` pass
-  - Test vòng 2: T-PKG + T-BUILD vẫn xanh sau format (format không đổi hành vi)
+- [x] **1.2.3. Thêm Prettier + format repo** _(14/06/2026 — prettier ^3.8.4 + `.prettierrc.json` + `.prettierignore` + script `format`/`format:check`; commit format riêng `a9234059` (194 file). Kèm `.git-blame-ignore-revs` (+ `git config blame.ignoreRevsFile`) để không mất git blame. Loại trừ: node_modules/dist/`*.png`/assets, dữ liệu auto-gen (math*-enrichment, knowledge/index.ts, contentQualitySnapshot, reports), và VÙNG AGENT ĐANG SỬA (packages/content, apps/sat-studio — sẽ `npm run format` sau khi agent xong, tránh clobber WIP). Test: prettier --check pass, portal tsc 0 lỗi, lint portal/desktop/miumath 0 error. **Còn lại:** format nốt content/sat-studio khi agent hoàn tất.)_
 
 ### 1.3. Quan sát được lỗi thực tế
 
@@ -176,10 +174,10 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 | Giai đoạn         | Tổng task | Hoàn thành     | Tiến độ  |
 | ----------------- | --------- | -------------- | -------- |
 | GĐ 0 — Baseline   | 4         | 4              | 100%     |
-| GĐ 1 — Nền móng   | 12        | 9 (+1 gộp GĐ2) | ~83%     |
+| GĐ 1 — Nền móng   | 12        | 10 (+1 gộp GĐ2) | ~92%     |
 | GĐ 2 — Kiến trúc  | 16        | 12             | ~75%     |
 | GĐ 3 — Cạnh tranh | 11        | 8              | ~73%     |
-| **Tổng**          | **43**    | **34**         | **~79%** |
+| **Tổng**          | **43**    | **35**         | **~81%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
