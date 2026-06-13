@@ -1,6 +1,6 @@
 # Math 11 Content Audit
 
-Generated at: 2026-06-11T02:37:01.991Z
+Generated at: 2026-06-13T03:30:49.652Z
 
 ## Summary
 
@@ -16,7 +16,7 @@ Generated at: 2026-06-11T02:37:01.991Z
 - Warnings: 2
 - Adapter converted items: 8328
 - Adapter pass: yes
-- Raw path: C:\Users\HAIQUYNH\OneDrive\CODE AI\MIUPREP_SYSTEM\reports\content-quality\math11-rich-raw-extract.json
+- Raw path: C:\Source\MIUPREP_SYSTEM\reports\content-quality\math11-rich-raw-extract.json
 
 ## Display Gate
 

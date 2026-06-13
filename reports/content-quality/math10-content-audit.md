@@ -1,6 +1,6 @@
 # Math 10 Content Audit
 
-Generated at: 2026-06-09T04:05:31.661Z
+Generated at: 2026-06-13T03:30:52.275Z
 
 ## Summary
 
@@ -17,7 +17,7 @@ Generated at: 2026-06-09T04:05:31.661Z
 - Warnings: 3
 - Adapter converted items: 12247
 - Adapter pass: yes
-- Raw path: C:\Users\HAIQUYNH\OneDrive\CODE AI\MIUPREP_SYSTEM\reports\content-quality\math10-rich-raw-extract.json
+- Raw path: C:\Source\MIUPREP_SYSTEM\reports\content-quality\math10-rich-raw-extract.json
 
 ## Display Gate
 
