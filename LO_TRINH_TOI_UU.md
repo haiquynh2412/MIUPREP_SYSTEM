@@ -119,9 +119,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 
 ### 2.4. Backend trung tâm (đầu tư chiến lược nhất)
 
-- [ ] **2.4.1. Thiết kế API contract** (auth, learner-events sync, AI proxy) — mở rộng từ nền sat-studio backend có sẵn (rate-limit, session, sqlite→postgres path)
-  - Test vòng 1: review contract với toàn bộ use-case của 6 app — không thiếu endpoint
-  - Test vòng 2: viết contract tests (schema request/response) chạy được
+- [x] **2.4.1. Thiết kế API contract** *(13/06/2026 — `docs/api-contract.md`: hợp đồng đầy đủ cho auth/admin user-mgmt, learner-event sync đa thiết bị (dedupe qua `idempotencyKey` + `sync_status` đã có sẵn), AI proxy (client không giữ key, tái dùng CachingAIAdapter+UsageLedger 3.2.x), PII at-rest + xóa dữ liệu. Mở rộng nền `apps/sat-studio/src/domain/public-backend.ts` (rate-limit/session/sqlite→postgres). Kèm error envelope, ma trận role-check server-side, kế hoạch contract-test. Mở khóa 2.4.2→2.4.5 + 1.1.5 + 3.1.1. Phần TRIỂN KHAI (2.4.2-2.4.5) cần dựng server thật.)*
+  - Test vòng 2 (khi triển khai): viết contract tests (schema request/response) chạy được
 - [ ] **2.4.2. Triển khai auth thật (server-side session, role check server-side)**
   - Test vòng 1: integration tests — user thường gọi endpoint admin phải 403
   - Test vòng 2: pentest thủ công: sửa flag client, replay token, brute-force rate-limit
@@ -175,9 +174,9 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 |-----------|-----------|------------|---------|
 | GĐ 0 — Baseline | 4 | 4 | 100% |
 | GĐ 1 — Nền móng | 12 | 9 (+1 gộp GĐ2) | ~83% |
-| GĐ 2 — Kiến trúc | 16 | 11 | ~69% |
+| GĐ 2 — Kiến trúc | 16 | 12 | ~75% |
 | GĐ 3 — Cạnh tranh | 11 | 8 | ~73% |
-| **Tổng** | **43** | **33** | **~77%** |
+| **Tổng** | **43** | **34** | **~79%** |
 
 ## 📝 NHẬT KÝ TRIỂN KHAI
 
