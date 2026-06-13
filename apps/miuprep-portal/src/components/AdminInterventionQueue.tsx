@@ -1,4 +1,5 @@
 import { useMemo, type ReactNode } from 'react';
+import { useTranslation } from '@miuprep/i18n/src/react';
 import { buildRepairRerouteCandidates, type BetaLearner, type RepairRerouteCandidate } from '@miuprep/beta';
 import type { LocalUser, SystemLog } from '@miuprep/db';
 import { createSeedKnowledgeGraph } from '@miuprep/knowledge';
@@ -13,6 +14,8 @@ import {
 } from './UnifiedLearnerDashboard';
 
 type ProgramId = 'vn_math_6_9' | 'sat' | 'ielts' | 'cae' | 'cpe';
+
+type TFunc = (key: string, params?: Record<string, string | number>) => string;
 
 interface MathLessonLike {
   id: string;
@@ -126,9 +129,10 @@ export default function AdminInterventionQueue({
   onOpenUsers,
   onOpenContent,
 }: AdminInterventionQueueProps) {
+  const { t } = useTranslation();
   const queue = useMemo(
-    () => buildQueue({ tracks, users, mathLessons, importedExams, errorQuestions, adminLogs, learningEvents }),
-    [adminLogs, errorQuestions, importedExams, learningEvents, mathLessons, tracks, users],
+    () => buildQueue({ tracks, users, mathLessons, importedExams, errorQuestions, adminLogs, learningEvents }, t),
+    [adminLogs, errorQuestions, importedExams, learningEvents, mathLessons, tracks, users, t],
   );
 
   return (
@@ -137,73 +141,72 @@ export default function AdminInterventionQueue({
         <div>
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-[10px] font-black uppercase tracking-[0.18em] text-orange-300 bg-orange-950/40 border border-orange-800/60 px-2 py-1 rounded">
-              Intervention Queue
+              {t('aiq_badge_intervention_queue')}
             </span>
             <span className="text-[10px] font-bold text-slate-500 bg-slate-950 border border-slate-850 px-2 py-1 rounded">
-              teacher / admin / parent
+              {t('aiq_badge_roles')}
             </span>
           </div>
-          <h3 className="text-2xl font-black text-slate-50 m-0 mt-3">Viec can can thiep hom nay</h3>
+          <h3 className="text-2xl font-black text-slate-50 m-0 mt-3">{t('aiq_heading_today')}</h3>
           <p className="text-sm text-slate-400 mt-2 mb-0 max-w-3xl leading-relaxed">
-            Queue gom hoc sinh bi stuck, content can sua va digest cho phu huynh. Muc tieu la admin nhin vao biet lam gi,
-            khong phai doc tung log hay tung de.
+            {t('aiq_intro')}
           </p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2 min-w-full lg:min-w-[720px]">
-          <QueueMetric label="Learners" value={String(queue.learners.length)} tone="rose" />
-          <QueueMetric label="Content" value={String(queue.content.length)} tone="amber" />
-          <QueueMetric label="Parents" value={String(queue.parentDigests.length)} tone="cyan" />
-          <QueueMetric label="Misconcept" value={String(queue.misconceptions.length)} tone="cyan" />
-          <QueueMetric label="Reroutes" value={String(queue.repairReroutes.length)} tone="amber" />
-          <QueueMetric label="Urgent" value={String(queue.urgentCount)} tone="orange" />
+          <QueueMetric label={t('aiq_metric_learners')} value={String(queue.learners.length)} tone="rose" />
+          <QueueMetric label={t('aiq_metric_content')} value={String(queue.content.length)} tone="amber" />
+          <QueueMetric label={t('aiq_metric_parents')} value={String(queue.parentDigests.length)} tone="cyan" />
+          <QueueMetric label={t('aiq_metric_misconcept')} value={String(queue.misconceptions.length)} tone="cyan" />
+          <QueueMetric label={t('aiq_metric_reroutes')} value={String(queue.repairReroutes.length)} tone="amber" />
+          <QueueMetric label={t('aiq_metric_urgent')} value={String(queue.urgentCount)} tone="orange" />
         </div>
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
-        <Panel title="Teacher queue" meta="stuck, low mastery, recurring errors">
+        <Panel title={t('aiq_panel_teacher_title')} meta={t('aiq_panel_teacher_meta')}>
           <div className="space-y-3">
             {queue.learners.slice(0, 5).map((item) => (
               <LearnerRow key={item.id} item={item} onOpenUsers={onOpenUsers} />
             ))}
-            {queue.learners.length === 0 && <EmptyState text="No learner intervention is needed." />}
+            {queue.learners.length === 0 && <EmptyState text={t('aiq_empty_learners')} />}
           </div>
         </Panel>
 
-        <Panel title="Content queue" meta="wrong-rate, metadata, review status">
+        <Panel title={t('aiq_panel_content_title')} meta={t('aiq_panel_content_meta')}>
           <div className="space-y-3">
             {queue.content.slice(0, 6).map((item) => (
               <ContentRow key={item.id} item={item} onOpenContent={onOpenContent} />
             ))}
-            {queue.content.length === 0 && <EmptyState text="No content repair action is queued." />}
+            {queue.content.length === 0 && <EmptyState text={t('aiq_empty_content')} />}
           </div>
         </Panel>
       </div>
 
-      <Panel title="Repair reroute review" meta="admin-visible shadow gate">
+      <Panel title={t('aiq_panel_reroute_title')} meta={t('aiq_panel_reroute_meta')}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {queue.repairReroutes.slice(0, 6).map((item) => (
             <RepairRerouteCard key={`${item.learnerId}-${item.scope}-${item.targetId}`} item={item} onOpenUsers={onOpenUsers} onOpenContent={onOpenContent} />
           ))}
-          {queue.repairReroutes.length === 0 && <EmptyState text="No stuck repair reroute candidate has enough evidence yet." />}
+          {queue.repairReroutes.length === 0 && <EmptyState text={t('aiq_empty_reroutes')} />}
         </div>
       </Panel>
 
-      <Panel title="Top recurring misconceptions" meta="error notebook + learning events + graph">
+      <Panel title={t('aiq_panel_misconception_title')} meta={t('aiq_panel_misconception_meta')}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {queue.misconceptions.slice(0, 6).map((item) => (
             <MisconceptionCard key={item.id} item={item} onOpenContent={onOpenContent} />
           ))}
-          {queue.misconceptions.length === 0 && <EmptyState text="No recurring misconception has enough evidence yet." />}
+          {queue.misconceptions.length === 0 && <EmptyState text={t('aiq_empty_misconceptions')} />}
         </div>
       </Panel>
 
-      <Panel title="Parent weekly digest" meta="3 wins / 2 focus / 1 action">
+      <Panel title={t('aiq_panel_parent_title')} meta={t('aiq_panel_parent_meta')}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {queue.parentDigests.slice(0, 4).map((digest) => (
             <ParentDigestCard key={digest.parent.username} digest={digest} />
           ))}
-          {queue.parentDigests.length === 0 && <EmptyState text="No linked parent account is available yet." />}
+          {queue.parentDigests.length === 0 && <EmptyState text={t('aiq_empty_parents')} />}
         </div>
       </Panel>
     </section>
@@ -219,6 +222,7 @@ function RepairRerouteCard({
   onOpenUsers: () => void;
   onOpenContent: (track: ContentIntervention['track']) => void;
 }) {
+  const { t } = useTranslation();
   const priority = repairReroutePriority(item);
   const track = programToTrack(item.programId);
   return (
@@ -233,20 +237,20 @@ function RepairRerouteCard({
           <h4 className="text-sm font-black text-slate-100 mt-2 mb-1">{item.targetId}</h4>
           <p className="text-xs text-slate-400 leading-relaxed m-0">{item.reason}</p>
           <p className="text-[11px] text-slate-500 mt-2 mb-0">
-            {item.suspectedPrerequisiteIds.length ? `Prereq: ${compactIds(item.suspectedPrerequisiteIds)}. ` : ''}
-            {item.misconceptionIds.length ? `Misconception: ${compactIds(item.misconceptionIds)}.` : ''}
+            {item.suspectedPrerequisiteIds.length ? t('aiq_reroute_prereq', { ids: compactIds(item.suspectedPrerequisiteIds) }) : ''}
+            {item.misconceptionIds.length ? t('aiq_reroute_misconception', { ids: compactIds(item.misconceptionIds) }) : ''}
           </p>
         </div>
         <div className="grid grid-cols-2 gap-2 sm:min-w-[240px]">
-          <TinyMetric label="Evidence" value={String(item.evidenceCount)} />
-          <TinyMetric label="Wrong" value={String(item.wrongAttempts)} />
-          <TinyMetric label="Streak" value={String(item.consecutiveWrongAttempts)} />
-          <TinyMetric label="Score" value={`${Math.round(item.score)}%`} />
+          <TinyMetric label={t('aiq_tiny_evidence')} value={String(item.evidenceCount)} />
+          <TinyMetric label={t('aiq_tiny_wrong')} value={String(item.wrongAttempts)} />
+          <TinyMetric label={t('aiq_tiny_streak')} value={String(item.consecutiveWrongAttempts)} />
+          <TinyMetric label={t('aiq_tiny_score')} value={`${Math.round(item.score)}%`} />
         </div>
       </div>
       <div className="mt-3 pt-3 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <p className="text-xs text-slate-300 m-0">
-          Learner <span className="font-mono text-orange-200">{item.learnerId}</span> needs admin review before more same-level repair.
+          {t('aiq_reroute_learner_review_pre')}<span className="font-mono text-orange-200">{item.learnerId}</span>{t('aiq_reroute_learner_review_post')}
         </p>
         <div className="flex flex-wrap gap-2">
           <button
@@ -254,14 +258,14 @@ function RepairRerouteCard({
             onClick={onOpenUsers}
             className="px-3 py-2 rounded-xl bg-slate-950 hover:bg-slate-900 border border-slate-700 text-slate-200 text-[10px] font-black uppercase tracking-wider cursor-pointer"
           >
-            Open user
+            {t('aiq_btn_open_user')}
           </button>
           <button
             type="button"
             onClick={() => onOpenContent(track)}
             className="px-3 py-2 rounded-xl bg-orange-400 hover:bg-orange-300 text-slate-950 text-[10px] font-black uppercase tracking-wider cursor-pointer border-0"
           >
-            Open content
+            {t('aiq_btn_open_content')}
           </button>
         </div>
       </div>
@@ -270,33 +274,34 @@ function RepairRerouteCard({
 }
 
 function LearnerRow({ item, onOpenUsers }: { item: LearnerIntervention; onOpenUsers: () => void }) {
+  const { t } = useTranslation();
   return (
     <article className={`rounded-2xl border p-4 ${priorityClass(item.priority)}`}>
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
             <PriorityPill priority={item.priority} />
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{item.attempts} evidence</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{t('aiq_learner_evidence', { count: item.attempts })}</span>
           </div>
           <h4 className="text-sm font-black text-slate-100 mt-2 mb-1">{item.student.displayName || item.student.username}</h4>
           <p className="text-xs text-slate-400 leading-relaxed m-0">{item.reason}</p>
         </div>
         <div className="grid grid-cols-3 gap-2 sm:min-w-[260px]">
-          <TinyMetric label="Mastery" value={`${Math.round(item.mastery)}%`} />
-          <TinyMetric label="Errors" value={String(item.errorPressure)} />
-          <TinyMetric label="Score" value={String(item.score)} />
+          <TinyMetric label={t('aiq_tiny_mastery')} value={`${Math.round(item.mastery)}%`} />
+          <TinyMetric label={t('aiq_tiny_errors')} value={String(item.errorPressure)} />
+          <TinyMetric label={t('aiq_tiny_score')} value={String(item.score)} />
         </div>
       </div>
       <div className="mt-3 pt-3 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <p className="text-xs text-slate-300 m-0">
-          Focus: <span className="text-orange-200 font-bold">{item.focus}</span>. {item.action}
+          {t('aiq_learner_focus_label')}<span className="text-orange-200 font-bold">{item.focus}</span>. {item.action}
         </p>
         <button
           type="button"
           onClick={onOpenUsers}
           className="px-3 py-2 rounded-xl bg-slate-950 hover:bg-slate-900 border border-slate-700 text-slate-200 text-[10px] font-black uppercase tracking-wider cursor-pointer"
         >
-          Open user
+          {t('aiq_btn_open_user')}
         </button>
       </div>
     </article>
@@ -304,6 +309,7 @@ function LearnerRow({ item, onOpenUsers }: { item: LearnerIntervention; onOpenUs
 }
 
 function ContentRow({ item, onOpenContent }: { item: ContentIntervention; onOpenContent: (track: ContentIntervention['track']) => void }) {
+  const { t } = useTranslation();
   return (
     <article className={`rounded-2xl border p-4 ${priorityClass(item.priority)}`}>
       <div className="flex items-start justify-between gap-3">
@@ -323,7 +329,7 @@ function ContentRow({ item, onOpenContent }: { item: ContentIntervention; onOpen
             onClick={() => onOpenContent(item.track)}
             className="mt-3 px-3 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-[10px] font-black uppercase tracking-wider cursor-pointer border-0"
           >
-            Open
+            {t('aiq_btn_open')}
           </button>
         </div>
       </div>
@@ -332,22 +338,23 @@ function ContentRow({ item, onOpenContent }: { item: ContentIntervention; onOpen
 }
 
 function ParentDigestCard({ digest }: { digest: ParentDigest }) {
+  const { t } = useTranslation();
   return (
     <article className="bg-slate-950/55 border border-slate-850 rounded-2xl p-4">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">Parent digest</p>
+          <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">{t('aiq_parent_digest_label')}</p>
           <h4 className="text-sm font-black text-slate-100 mt-1 mb-0">{digest.parent.displayName || digest.parent.username}</h4>
         </div>
         <span className="text-[10px] font-bold text-cyan-300 bg-cyan-950/40 border border-cyan-900/60 rounded px-2 py-1">
-          {digest.studentNames.join(', ') || 'no student'}
+          {digest.studentNames.join(', ') || t('aiq_parent_no_student')}
         </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
-        <DigestBox title="3 wins" items={digest.wins} />
-        <DigestBox title="2 focus" items={digest.focus} />
-        <DigestBox title="1 action" items={[digest.action]} />
+        <DigestBox title={t('aiq_digest_3_wins')} items={digest.wins} />
+        <DigestBox title={t('aiq_digest_2_focus')} items={digest.focus} />
+        <DigestBox title={t('aiq_digest_1_action')} items={[digest.action]} />
       </div>
     </article>
   );
@@ -360,6 +367,7 @@ function MisconceptionCard({
   item: RecurringMisconception;
   onOpenContent: (track: RecurringMisconception['track']) => void;
 }) {
+  const { t } = useTranslation();
   return (
     <article className={`rounded-2xl border p-4 ${priorityClass(item.priority)}`}>
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
@@ -373,9 +381,9 @@ function MisconceptionCard({
           <p className="text-xs text-slate-400 leading-relaxed m-0">{item.sample}</p>
         </div>
         <div className="grid grid-cols-3 gap-2 sm:min-w-[260px]">
-          <TinyMetric label="Evidence" value={String(item.evidenceCount)} />
-          <TinyMetric label="Learners" value={String(item.learnerCount)} />
-          <TinyMetric label="Score" value={String(item.score)} />
+          <TinyMetric label={t('aiq_tiny_evidence')} value={String(item.evidenceCount)} />
+          <TinyMetric label={t('aiq_tiny_learners')} value={String(item.learnerCount)} />
+          <TinyMetric label={t('aiq_tiny_score')} value={String(item.score)} />
         </div>
       </div>
       <div className="mt-3 pt-3 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
@@ -390,7 +398,7 @@ function MisconceptionCard({
           onClick={() => onOpenContent(item.track)}
           className="px-3 py-2 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 text-[10px] font-black uppercase tracking-wider cursor-pointer border-0"
         >
-          Open content
+          {t('aiq_btn_open_content')}
         </button>
       </div>
     </article>
@@ -421,15 +429,15 @@ function buildQueue(input: {
   errorQuestions: ErrorQuestionLike[];
   adminLogs: SystemLog[];
   learningEvents: LearningEventRecord[];
-}) {
-  const learners = buildLearnerInterventions(input.users, input.tracks, input.errorQuestions, input.learningEvents);
-  const content = buildContentInterventions(input.mathLessons, input.importedExams, input.errorQuestions);
-  const misconceptions = buildRecurringMisconceptions(input.errorQuestions, input.learningEvents);
+}, t: TFunc) {
+  const learners = buildLearnerInterventions(input.users, input.tracks, input.errorQuestions, input.learningEvents, t);
+  const content = buildContentInterventions(input.mathLessons, input.importedExams, input.errorQuestions, t);
+  const misconceptions = buildRecurringMisconceptions(input.errorQuestions, input.learningEvents, t);
   const repairReroutes = buildRepairRerouteCandidates(
     createSeedKnowledgeGraph(),
     buildBetaLearners(input.users, input.tracks, input.errorQuestions, input.learningEvents),
   );
-  const parentDigests = buildParentDigests(input.users, learners);
+  const parentDigests = buildParentDigests(input.users, learners, t);
   const urgentCount =
     learners.filter((item) => item.priority === 'urgent').length +
     content.filter((item) => item.priority === 'urgent').length +
@@ -495,6 +503,7 @@ function buildLearnerInterventions(
   tracks: PortalTrackInfo[],
   errorQuestions: ErrorQuestionLike[],
   learningEvents: LearningEventRecord[],
+  t: TFunc,
 ): LearnerIntervention[] {
   const activeErrors = errorQuestions.filter((question) => question.stage > 0);
   const recurringErrors = activeErrors.filter((question) => question.stage >= 2 || (question.retryAttempts || 0) >= 2).length;
@@ -520,9 +529,9 @@ function buildLearnerInterventions(
       mastery: snapshot.averageMastery,
       attempts,
       errorPressure,
-      focus: weakest?.weakestLabel || snapshot.learningPath.nextStep?.label || 'foundation repair',
-      reason: buildLearnerReason(priority, attempts, snapshot.averageMastery, errorPressure),
-      action: buildLearnerAction(priority, weakest?.weakestLabel || snapshot.learningPath.nextStep?.label),
+      focus: weakest?.weakestLabel || snapshot.learningPath.nextStep?.label || t('aiq_focus_foundation_repair'),
+      reason: buildLearnerReason(priority, attempts, snapshot.averageMastery, errorPressure, t),
+      action: buildLearnerAction(priority, weakest?.weakestLabel || snapshot.learningPath.nextStep?.label, t),
     };
   })
     .filter((item) => item.priority !== 'routine' || item.errorPressure > 0)
@@ -533,6 +542,7 @@ function buildContentInterventions(
   mathLessons: MathLessonLike[],
   importedExams: ExamLike[],
   errorQuestions: ErrorQuestionLike[],
+  t: TFunc,
 ): ContentIntervention[] {
   const mathRows: ContentIntervention[] = mathLessons
     .filter((lesson) => !(lesson.conceptIds?.length && lesson.skillIds?.length))
@@ -542,9 +552,9 @@ function buildContentInterventions(
       title: lesson.title,
       track: 'math',
       priority: 'watch',
-      reason: 'Math lesson lacks explicit conceptIds/skillIds for graph-based routing.',
-      action: 'Add metadata before using this lesson in adaptive recommendation.',
-      metric: 'metadata',
+      reason: t('aiq_content_math_missing_meta_reason'),
+      action: t('aiq_content_math_missing_meta_action'),
+      metric: t('aiq_metric_metadata'),
     }));
 
   const examRows: ContentIntervention[] = importedExams
@@ -559,11 +569,11 @@ function buildContentInterventions(
         track,
         priority: exam.reviewStatus === 'needs_fix' || hasErrors ? 'urgent' : 'watch',
         reason: hasErrors
-          ? `Adapter reports ${exam.standardErrorCount} content issues.`
+          ? t('aiq_content_exam_errors_reason', { count: Number(exam.standardErrorCount || 0) })
           : exam.reviewStatus === 'unchecked'
-            ? 'Exam is still draft/unchecked after import.'
-            : 'Exam is marked needs fix by admincontent.',
-        action: track === 'math' ? 'Open Math content and add tags/review.' : `Open ${track.toUpperCase()} content editor and resolve the review status.`,
+            ? t('aiq_content_exam_unchecked_reason')
+            : t('aiq_content_exam_needs_fix_reason'),
+        action: track === 'math' ? t('aiq_content_action_math') : t('aiq_content_action_other', { track: track.toUpperCase() }),
         metric: hasErrors ? `${exam.standardErrorCount}` : exam.reviewStatus || 'draft',
       };
     });
@@ -575,11 +585,11 @@ function buildContentInterventions(
       title: question.text,
       track: inferTrackFromError(question),
       priority: question.stage >= 3 ? 'urgent' : 'watch',
-      reason: `Repeated wrong-rate signal from Error Notebook stage ${question.stage}.`,
+      reason: t('aiq_content_risk_reason', { stage: question.stage }),
       action: question.repairLessonTitle
-        ? `Check source question and linked repair lesson: ${question.repairLessonTitle}.`
-        : 'Review explanation, answer key and metadata.',
-      metric: `stage ${question.stage}`,
+        ? t('aiq_content_risk_action_with_lesson', { lesson: question.repairLessonTitle })
+        : t('aiq_content_risk_action_default'),
+      metric: t('aiq_metric_stage', { stage: question.stage }),
     }));
 
   return [...riskRows, ...examRows, ...mathRows].sort(
@@ -590,6 +600,7 @@ function buildContentInterventions(
 function buildRecurringMisconceptions(
   errorQuestions: ErrorQuestionLike[],
   learningEvents: LearningEventRecord[],
+  t: TFunc,
 ): RecurringMisconception[] {
   const graph = createSeedKnowledgeGraph();
   return graph.misconceptions
@@ -637,8 +648,8 @@ function buildRecurringMisconceptions(
         score,
         evidenceCount,
         learnerCount: learnerIds.size || (evidenceCount ? 1 : 0),
-        sample: samples[0] || 'No concrete sample yet; wait for more learning events.',
-        action: buildMisconceptionAction(misconception.id, misconception.domainId),
+        sample: samples[0] || t('aiq_misconception_no_sample'),
+        action: buildMisconceptionAction(misconception.id, misconception.domainId, t),
         conceptIds: misconception.conceptIds,
         skillIds: misconception.skillIds,
       };
@@ -650,6 +661,7 @@ function buildRecurringMisconceptions(
 function buildParentDigests(
   users: Omit<LocalUser, 'passwordHash'>[],
   learners: LearnerIntervention[],
+  t: TFunc,
 ): ParentDigest[] {
   const learnerByUsername = new Map(learners.map((item) => [item.student.username, item]));
   return users
@@ -662,17 +674,17 @@ function buildParentDigests(
         parent,
         studentNames: linked,
         wins: [
-          linkedLearners.length ? `${linkedLearners.length} student profile linked` : 'Parent account is ready',
-          'Daily loop and error notebook are available',
-          'Reward wallet can reinforce study completion',
+          linkedLearners.length ? t('aiq_parent_win_linked', { count: linkedLearners.length }) : t('aiq_parent_win_ready'),
+          t('aiq_parent_win_daily_loop'),
+          t('aiq_parent_win_reward_wallet'),
         ],
         focus: [
-          focusLearner ? `${focusLearner.student.displayName || focusLearner.student.username}: ${focusLearner.focus}` : 'Link a student account',
-          focusLearner ? `${focusLearner.errorPressure} active/recurring errors to watch` : 'Set weekly target after linking',
+          focusLearner ? t('aiq_parent_focus_student', { name: focusLearner.student.displayName || focusLearner.student.username, focus: focusLearner.focus }) : t('aiq_parent_focus_link'),
+          focusLearner ? t('aiq_parent_focus_errors', { count: focusLearner.errorPressure }) : t('aiq_parent_focus_set_target'),
         ],
         action: focusLearner
-          ? `Ask child to finish one 15-minute repair sprint before rewards.`
-          : 'Invite or link the child account, then set a weekly target.',
+          ? t('aiq_parent_action_sprint')
+          : t('aiq_parent_action_invite'),
       };
     });
 }
@@ -695,12 +707,12 @@ function readStringArray(value: unknown): string[] {
   return Array.isArray(value) ? value.map((item) => String(item || '')).filter(Boolean) : [];
 }
 
-function buildMisconceptionAction(misconceptionId: string, domainId: string): string {
-  if (misconceptionId === 'mis.math.geometry_proof_gap') return 'Audit proof lesson scaffold and require given-target-theorem-plan in explanations.';
-  if (misconceptionId === 'mis.math.casio_operation_error') return 'Split calculator input checks from reasoning checks in solution review.';
-  if (misconceptionId === 'mis.math.missing_domain_condition') return 'Add condition-first worked examples before more algebra drills.';
-  if (domainId === 'mathematics') return 'Check linked Math repair lesson and add prerequisite backfill if repeated.';
-  return 'Check English Core lesson, explanation, and distractor rationale for this misconception.';
+function buildMisconceptionAction(misconceptionId: string, domainId: string, t: TFunc): string {
+  if (misconceptionId === 'mis.math.geometry_proof_gap') return t('aiq_misconception_action_geometry');
+  if (misconceptionId === 'mis.math.casio_operation_error') return t('aiq_misconception_action_casio');
+  if (misconceptionId === 'mis.math.missing_domain_condition') return t('aiq_misconception_action_domain');
+  if (domainId === 'mathematics') return t('aiq_misconception_action_math');
+  return t('aiq_misconception_action_english');
 }
 
 function compactIds(values: string[]): string {
@@ -727,16 +739,16 @@ function programToTrack(programId: string): ContentIntervention['track'] {
   return 'math';
 }
 
-function buildLearnerReason(priority: LearnerIntervention['priority'], attempts: number, mastery: number, errors: number): string {
-  if (priority === 'urgent') return `High risk: ${Math.round(mastery)}% mastery, ${attempts} attempts, ${errors} recurring error signals.`;
-  if (priority === 'watch') return `Watch: learner is building but still has ${errors} error signals.`;
-  return `Routine: continue monitoring with ${Math.round(mastery)}% mastery.`;
+function buildLearnerReason(priority: LearnerIntervention['priority'], attempts: number, mastery: number, errors: number, t: TFunc): string {
+  if (priority === 'urgent') return t('aiq_learner_reason_urgent', { mastery: Math.round(mastery), attempts, errors });
+  if (priority === 'watch') return t('aiq_learner_reason_watch', { errors });
+  return t('aiq_learner_reason_routine', { mastery: Math.round(mastery) });
 }
 
-function buildLearnerAction(priority: LearnerIntervention['priority'], focus?: string): string {
-  if (priority === 'urgent') return `Assign repair lesson and check ${focus || 'weakest prerequisite'} with a teacher.`;
-  if (priority === 'watch') return `Schedule a short guided practice on ${focus || 'the weakest skill'}.`;
-  return 'Keep daily loop active and review next week.';
+function buildLearnerAction(priority: LearnerIntervention['priority'], focus: string | undefined, t: TFunc): string {
+  if (priority === 'urgent') return t('aiq_learner_action_urgent', { focus: focus || t('aiq_focus_weakest_prerequisite') });
+  if (priority === 'watch') return t('aiq_learner_action_watch', { focus: focus || t('aiq_focus_weakest_skill') });
+  return t('aiq_learner_action_routine');
 }
 
 function readProgress(username: string) {
