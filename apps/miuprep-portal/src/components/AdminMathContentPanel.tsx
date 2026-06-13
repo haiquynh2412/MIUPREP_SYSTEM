@@ -1,4 +1,5 @@
 import type { FormEvent } from 'react';
+import { useTranslation } from '@miuprep/i18n/src/react';
 import type { CasioTip, MathLesson } from '../lib/adminContent';
 
 interface AdminMathContentPanelProps {
@@ -64,19 +65,20 @@ export default function AdminMathContentPanel({
   onAddMathLesson,
   onCreateLatexQuestion,
 }: AdminMathContentPanelProps) {
+  const { t } = useTranslation();
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div className="lg:col-span-2 space-y-4">
-        <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">Danh sách chuyên đề toán lớp 9</h4>
+        <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">{t('amc_math_lessons_heading')}</h4>
         <div className="border border-slate-855 rounded-2xl overflow-hidden bg-slate-950/40">
           <table className="w-full border-collapse text-xs text-left">
             <thead>
               <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-bold">
-                <th className="p-3">ID</th>
-                <th className="p-3">Tên chuyên đề</th>
-                <th className="p-3">Chủ đề</th>
-                <th className="p-3">Số bài tập</th>
-                <th className="p-3">Trạng thái</th>
+                <th className="p-3">{t('amc_col_id')}</th>
+                <th className="p-3">{t('amc_col_lesson_name')}</th>
+                <th className="p-3">{t('amc_col_topic')}</th>
+                <th className="p-3">{t('amc_col_exercise_count')}</th>
+                <th className="p-3">{t('amc_col_status')}</th>
               </tr>
             </thead>
             <tbody>
@@ -100,7 +102,7 @@ export default function AdminMathContentPanel({
 
       <div className="space-y-6 animate-fade-in">
         <div className="space-y-4">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">Quản lý mẹo Casio FX-580</h4>
+          <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">{t('amc_casio_manage_heading')}</h4>
 
           <div className="flex flex-col gap-2 max-h-40 overflow-y-auto pr-1">
             {mathCasioTips.map((tip) => (
@@ -117,12 +119,12 @@ export default function AdminMathContentPanel({
           </div>
 
           <form onSubmit={onAddCasioTip} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-            <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">Thêm mẹo bấm Casio mới</span>
+            <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">{t('amc_casio_add_heading')}</span>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Tiêu đề mẹo *</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_casio_title_label')}</label>
               <input
                 type="text"
-                placeholder="Ví dụ: Tính nhanh lim, đạo hàm..."
+                placeholder={t('amc_casio_title_placeholder')}
                 value={newCasioTitle}
                 onChange={(event) => onSetNewCasioTitle(event.target.value)}
                 className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
@@ -130,10 +132,10 @@ export default function AdminMathContentPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Cú pháp bấm máy *</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_casio_syntax_label')}</label>
               <input
                 type="text"
-                placeholder="Ví dụ: [MODE] [7]..."
+                placeholder={t('amc_casio_syntax_placeholder')}
                 value={newCasioSyntax}
                 onChange={(event) => onSetNewCasioSyntax(event.target.value)}
                 className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
@@ -141,10 +143,10 @@ export default function AdminMathContentPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Giải thích chi tiết</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_casio_expl_label')}</label>
               <textarea
                 rows={2}
-                placeholder="Nhập hướng dẫn các bước..."
+                placeholder={t('amc_casio_expl_placeholder')}
                 value={newCasioExpl}
                 onChange={(event) => onSetNewCasioExpl(event.target.value)}
                 className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700 resize-none"
@@ -154,19 +156,19 @@ export default function AdminMathContentPanel({
               type="submit"
               className="w-full py-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-slate-950 font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer transition-all active:scale-[0.98]"
             >
-              Thêm mẹo Casio
+              {t('amc_casio_submit')}
             </button>
           </form>
         </div>
 
         <form onSubmit={onAddMathLesson} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-          <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">Đăng ký chuyên đề Toán 9 mới</span>
+          <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">{t('amc_lesson_add_heading')}</span>
 
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Mã chuyên đề (tự chọn)</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_id_label')}</label>
             <input
               type="text"
-              placeholder="Ví dụ: math-alg-06 (để trống tự tạo)..."
+              placeholder={t('amc_lesson_id_placeholder')}
               value={newMathId}
               onChange={(event) => onSetNewMathId(event.target.value)}
               className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
@@ -174,10 +176,10 @@ export default function AdminMathContentPanel({
           </div>
 
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Tên chuyên đề *</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_title_label')}</label>
             <input
               type="text"
-              placeholder="Ví dụ: Hàm số bậc nhất nâng cao..."
+              placeholder={t('amc_lesson_title_placeholder')}
               value={newMathTitle}
               onChange={(event) => onSetNewMathTitle(event.target.value)}
               className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
@@ -187,19 +189,19 @@ export default function AdminMathContentPanel({
 
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Phân loại</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_category_label')}</label>
               <select
                 value={newMathTopic}
                 onChange={(event) => onSetNewMathTopic(event.target.value)}
                 className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2.5 text-xs outline-none text-slate-200 cursor-pointer"
               >
-                <option value="Đại số (Algebra)">Đại số (Algebra)</option>
-                <option value="Hình học (Geometry)">Hình học (Geometry)</option>
-                <option value="Thi thử (Mock)">Thi thử (Mock)</option>
+                <option value="Đại số (Algebra)">{t('amc_topic_algebra')}</option>
+                <option value="Hình học (Geometry)">{t('amc_topic_geometry')}</option>
+                <option value="Thi thử (Mock)">{t('amc_topic_mock')}</option>
               </select>
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Số câu bài tập</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_count_label')}</label>
               <input
                 type="number"
                 min={5}
@@ -215,27 +217,27 @@ export default function AdminMathContentPanel({
             type="submit"
             className="w-full py-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-950 font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer transition-all active:scale-[0.98]"
           >
-            Thêm chuyên đề Toán
+            {t('amc_lesson_submit')}
           </button>
         </form>
 
         <form onSubmit={onCreateLatexQuestion} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-          <span className="text-[10px] font-black uppercase tracking-wider text-indigo-400 block font-sans">Trình soạn câu hỏi LaTeX Toán học</span>
+          <span className="text-[10px] font-black uppercase tracking-wider text-indigo-400 block font-sans">{t('amc_latex_heading')}</span>
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Mã câu hỏi (tự chọn)</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_id_label')}</label>
             <input
               type="text"
-              placeholder="Ví dụ: math-q-10 (để trống tự tạo)..."
+              placeholder={t('amc_latex_id_placeholder')}
               value={latexMathId}
               onChange={(event) => onSetLatexMathId(event.target.value)}
               className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
             />
           </div>
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Nội dung câu hỏi *</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_content_label')}</label>
             <input
               type="text"
-              placeholder="Ví dụ: Rút gọn biểu thức chứa căn..."
+              placeholder={t('amc_latex_content_placeholder')}
               value={latexMathTitle}
               onChange={(event) => onSetLatexMathTitle(event.target.value)}
               className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
@@ -243,10 +245,10 @@ export default function AdminMathContentPanel({
             />
           </div>
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Phương trình toán LaTeX *</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_equation_label')}</label>
             <input
               type="text"
-              placeholder="Ví dụ: \\sqrt{x^2+y^2} = 5"
+              placeholder={t('amc_latex_equation_placeholder')}
               value={latexMathEq}
               onChange={(event) => onSetLatexMathEq(event.target.value)}
               className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
@@ -255,23 +257,23 @@ export default function AdminMathContentPanel({
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Đáp án đúng</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_answer_label')}</label>
               <select
                 value={latexMathAns}
                 onChange={(event) => onSetLatexMathAns(event.target.value)}
                 className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-200 cursor-pointer"
               >
-                <option value="A">Đáp án A</option>
-                <option value="B">Đáp án B</option>
-                <option value="C">Đáp án C</option>
-                <option value="D">Đáp án D</option>
+                <option value="A">{t('amc_latex_answer_a')}</option>
+                <option value="B">{t('amc_latex_answer_b')}</option>
+                <option value="C">{t('amc_latex_answer_c')}</option>
+                <option value="D">{t('amc_latex_answer_d')}</option>
               </select>
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Giải thích lời giải</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_expl_label')}</label>
               <input
                 type="text"
-                placeholder="Giải thích các bước..."
+                placeholder={t('amc_latex_expl_placeholder')}
                 value={latexMathExpl}
                 onChange={(event) => onSetLatexMathExpl(event.target.value)}
                 className="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs outline-none text-slate-250 placeholder:text-slate-700"
@@ -281,12 +283,12 @@ export default function AdminMathContentPanel({
 
           {latexMathTitle && (
             <div className="p-3 bg-slate-900/60 border border-indigo-950 rounded-xl space-y-1.5">
-              <span className="text-[8px] font-black uppercase text-indigo-400 block font-mono">Live preview</span>
+              <span className="text-[8px] font-black uppercase text-indigo-400 block font-mono">{t('amc_live_preview')}</span>
               <p className="text-[10px] font-semibold text-slate-350">{latexMathTitle}</p>
               <p className="text-xs font-mono bg-slate-955 p-2 rounded border border-slate-850 text-indigo-400 font-bold text-center">
                 {latexMathEq || 'f(x) = ...'}
               </p>
-              <p className="text-[9px] text-slate-500 italic">Renders LaTeX-style math notation.</p>
+              <p className="text-[9px] text-slate-500 italic">{t('amc_renders_latex_note')}</p>
             </div>
           )}
 
@@ -294,7 +296,7 @@ export default function AdminMathContentPanel({
             type="submit"
             className="w-full py-2 bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 text-white font-black uppercase text-[10px] tracking-wider rounded-lg border-0 cursor-pointer transition-all active:scale-[0.98]"
           >
-            Tạo câu hỏi LaTeX
+            {t('amc_latex_submit')}
           </button>
         </form>
       </div>
