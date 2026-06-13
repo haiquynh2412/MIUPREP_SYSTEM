@@ -6,7 +6,6 @@
 // ─────────────────────────────────────────────────────────
 
 export const ACHIEVEMENT_ICONS = {
-
   // ⭐ First correct answer — shining gold star
   ach_first_correct: `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
     <defs>

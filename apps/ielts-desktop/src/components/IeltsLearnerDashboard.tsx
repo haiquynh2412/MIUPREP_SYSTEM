@@ -101,7 +101,9 @@ export default function IeltsLearnerDashboard({
           </div>
           <div className="bg-slate-50 border border-slate-100 rounded p-4">
             <p className="text-sm font-black text-slate-900 m-0">{localizeRecommendationTitle(model.recommendation)}</p>
-            <p className="text-xs text-slate-600 mt-2 leading-relaxed">{localizeRecommendationDetail(model.recommendation, graph)}</p>
+            <p className="text-xs text-slate-600 mt-2 leading-relaxed">
+              {localizeRecommendationDetail(model.recommendation, graph)}
+            </p>
             {nextStep && (
               <div className="mt-3 pt-3 border-t border-slate-200">
                 <p className="text-[10px] font-black uppercase tracking-[0.14em] text-slate-400 m-0">Next graph node</p>
@@ -150,7 +152,9 @@ export default function IeltsLearnerDashboard({
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="text-[10px] font-black text-slate-400">#{step.rank}</span>
-                <span className={`text-[10px] font-black uppercase ${step.unlocked ? 'text-emerald-600' : 'text-amber-700'}`}>
+                <span
+                  className={`text-[10px] font-black uppercase ${step.unlocked ? 'text-emerald-600' : 'text-amber-700'}`}
+                >
                   {step.unlocked ? 'open' : 'locked'}
                 </span>
               </div>
@@ -166,7 +170,8 @@ export default function IeltsLearnerDashboard({
 
       {model.feedbackOnlyQuestionCount > 0 && (
         <p className="text-[11px] text-slate-500 m-0 border-t border-slate-100 pt-3">
-          {model.feedbackOnlyQuestionCount} Writing/Speaking items were detected as feedback-only and excluded from mastery scoring.
+          {model.feedbackOnlyQuestionCount} Writing/Speaking items were detected as feedback-only and excluded from
+          mastery scoring.
         </p>
       )}
     </section>
@@ -191,7 +196,10 @@ function MasteryRow({ row, label }: { row: MasteryEstimate; label: string }) {
         <p className="text-xs font-black text-slate-700 m-0">{Math.round(row.score)}%</p>
       </div>
       <div className="h-2 bg-slate-100 rounded mt-1 overflow-hidden">
-        <div className={`h-full rounded ${row.status === 'repair' ? 'bg-rose-500' : 'bg-blue-600'}`} style={{ width }} />
+        <div
+          className={`h-full rounded ${row.status === 'repair' ? 'bg-rose-500' : 'bg-blue-600'}`}
+          style={{ width }}
+        />
       </div>
       <p className="text-[11px] text-slate-500 m-0 mt-1">
         {statusLabel(row.status)} · {row.correct}/{row.attempts} correct
@@ -228,7 +236,8 @@ function buildLearnerDashboardModel(
             continue;
           }
 
-          const answeredAt = attempt.submittedAt || attempt.updatedAt || attempt.lastSavedAt || new Date().toISOString();
+          const answeredAt =
+            attempt.submittedAt || attempt.updatedAt || attempt.lastSavedAt || new Date().toISOString();
           const answer = stringifyAnswerValue(attempt.answers[question.id]?.rawValue);
           const correct = isCorrectAnswer(answer, question.acceptedAnswers || []);
           const result = recordLearningItemAttempt(state, item, {
@@ -316,17 +325,23 @@ function pickPathTargets(
   const recommendationTargets = [...recommendation.conceptIds, ...recommendation.skillIds];
   if (recommendationTargets.length) return uniqueStrings(recommendationTargets).slice(0, 3);
 
-  const weakTargets = mastery.filter((row) => row.domainId === ENGLISH_DOMAIN_ID).slice(0, 3).map((row) => row.id);
+  const weakTargets = mastery
+    .filter((row) => row.domainId === ENGLISH_DOMAIN_ID)
+    .slice(0, 3)
+    .map((row) => row.id);
   if (weakTargets.length) return weakTargets;
 
-  const programMap = graph.programMaps.find((map) => map.programId === activeTrack) || graph.programMaps.find((map) => map.programId === 'ielts');
-  const objectiveTargets = (programMap?.entryObjectiveIds || programMap?.objectiveIds || [])
-    .flatMap((objectiveId) => {
-      const objective = graph.objectives.find((item) => item.id === objectiveId);
-      return objective ? [...objective.conceptIds, ...objective.skillIds] : [];
-    });
+  const programMap =
+    graph.programMaps.find((map) => map.programId === activeTrack) ||
+    graph.programMaps.find((map) => map.programId === 'ielts');
+  const objectiveTargets = (programMap?.entryObjectiveIds || programMap?.objectiveIds || []).flatMap((objectiveId) => {
+    const objective = graph.objectives.find((item) => item.id === objectiveId);
+    return objective ? [...objective.conceptIds, ...objective.skillIds] : [];
+  });
 
-  return uniqueStrings(objectiveTargets.length ? objectiveTargets : [...(programMap?.conceptIds || []), ...(programMap?.skillIds || [])]).slice(0, 3);
+  return uniqueStrings(
+    objectiveTargets.length ? objectiveTargets : [...(programMap?.conceptIds || []), ...(programMap?.skillIds || [])],
+  ).slice(0, 3);
 }
 
 function getExamTrackOfTest(test: IeltsTest): EnglishTrack {
@@ -345,10 +360,18 @@ function stringifyAnswerValue(value: unknown): string {
 }
 
 function inferEnglishErrorCategories(item: ReturnType<typeof toQuestionItemFromEnglishExam>): ErrorCategory[] {
-  const haystack = [...item.conceptIds, ...item.skillIds, item.type, String(item.metadata?.category || '')].join(' ').toLowerCase();
+  const haystack = [...item.conceptIds, ...item.skillIds, item.type, String(item.metadata?.category || '')]
+    .join(' ')
+    .toLowerCase();
   if (haystack.includes('inference') || haystack.includes('heading')) return ['inference'];
   if (haystack.includes('collocation')) return ['collocation'];
-  if (haystack.includes('grammar') || haystack.includes('sentence') || haystack.includes('tense') || haystack.includes('gap')) return ['grammar'];
+  if (
+    haystack.includes('grammar') ||
+    haystack.includes('sentence') ||
+    haystack.includes('tense') ||
+    haystack.includes('gap')
+  )
+    return ['grammar'];
   if (haystack.includes('vocabulary') || haystack.includes('word')) return ['vocabulary'];
   if (haystack.includes('time')) return ['time_management'];
   return ['strategy'];

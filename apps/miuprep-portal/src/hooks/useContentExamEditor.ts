@@ -74,7 +74,9 @@ export function useContentExamEditor({
   const updateContentExamSection = (sectionIndex: number, patch: Partial<EditableExamSection>) => {
     setContentExamDraft((draft) => {
       if (!draft) return draft;
-      const sections = ensureEditableExamSections(draft).map((section, index) => (index === sectionIndex ? { ...section, ...patch } : section));
+      const sections = ensureEditableExamSections(draft).map((section, index) =>
+        index === sectionIndex ? { ...section, ...patch } : section,
+      );
       return { ...draft, editableSections: sections };
     });
   };
@@ -88,7 +90,9 @@ export function useContentExamEditor({
       if (!draft) return draft;
       const sections = ensureEditableExamSections(draft).map((section, index) => {
         if (index !== sectionIndex) return section;
-        const questions = section.questions.map((question, qIndex) => (qIndex === questionIndex ? { ...question, ...patch } : question));
+        const questions = section.questions.map((question, qIndex) =>
+          qIndex === questionIndex ? { ...question, ...patch } : question,
+        );
         return { ...section, questions };
       });
       return { ...draft, editableSections: sections };
@@ -146,7 +150,9 @@ export function useContentExamEditor({
     });
   };
 
-  const handleSaveContentExamDraft = (reviewStatus: ImportedExam['reviewStatus'] = contentExamDraft?.reviewStatus || 'unchecked') => {
+  const handleSaveContentExamDraft = (
+    reviewStatus: ImportedExam['reviewStatus'] = contentExamDraft?.reviewStatus || 'unchecked',
+  ) => {
     if (!contentExamDraft) return;
     const editableSections = ensureEditableExamSections(contentExamDraft);
     const editedQuestionCount = countEditableExamQuestions(editableSections);
@@ -166,7 +172,10 @@ export function useContentExamEditor({
       return nextExams;
     });
     setContentExamDraft(savedExam);
-    logSystemEvent('WARN', `Admin @${currentUser?.username} saved content exam ${savedExam.exam}: "${savedExam.title}" [${reviewStatus}]`);
+    logSystemEvent(
+      'WARN',
+      `Admin @${currentUser?.username} saved content exam ${savedExam.exam}: "${savedExam.title}" [${reviewStatus}]`,
+    );
     showNotif(t('notif_save_exam_ok', { exam: savedExam.exam }), 'success');
   };
 
@@ -180,8 +189,14 @@ export function useContentExamEditor({
       previousExam,
       reviewer: currentUser?.username || 'admincontent',
     });
-    downloadJsonFile(`miuprep-${contentExamDraft.exam.toLowerCase()}-${safeFilePart(contentExamDraft.id)}-changeset.json`, changeSet);
-    logSystemEvent('INFO', `Admin @${currentUser?.username} exported content change set ${contentExamDraft.exam}: "${contentExamDraft.title}"`);
+    downloadJsonFile(
+      `miuprep-${contentExamDraft.exam.toLowerCase()}-${safeFilePart(contentExamDraft.id)}-changeset.json`,
+      changeSet,
+    );
+    logSystemEvent(
+      'INFO',
+      `Admin @${currentUser?.username} exported content change set ${contentExamDraft.exam}: "${contentExamDraft.title}"`,
+    );
     showNotif(t('notif_exported_changeset', { exam: contentExamDraft.exam }), 'success');
   };
 
@@ -196,7 +211,10 @@ export function useContentExamEditor({
       reviewer: currentUser?.username || 'admincontent',
     });
     downloadJsonFile(`miuprep-${adminActiveTab}-review-changesets.json`, exportPayload);
-    logSystemEvent('INFO', `Admin @${currentUser?.username} exported ${adminActiveTab.toUpperCase()} review change set (${trackExams.length} exams)`);
+    logSystemEvent(
+      'INFO',
+      `Admin @${currentUser?.username} exported ${adminActiveTab.toUpperCase()} review change set (${trackExams.length} exams)`,
+    );
     showNotif(t('notif_exported_review', { tab: adminActiveTab.toUpperCase() }), 'success');
   };
 

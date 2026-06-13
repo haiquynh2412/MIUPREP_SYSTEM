@@ -138,7 +138,7 @@ export const CHAPTER_RESOURCES = {
         duration: '4:22',
       },
       {
-        title: 'Newton\'s Laws of Motion',
+        title: "Newton's Laws of Motion",
         titleVn: 'Các định luật Newton về chuyển động',
         url: 'https://www.youtube.com/embed/kKKM8Y-u7ds',
         channel: 'SmarterEveryDay',
@@ -546,7 +546,7 @@ export const CHAPTER_RESOURCES = {
         description: 'Khám phá từ trường của nam châm và nguyên lý nam châm điện',
       },
       {
-        title: 'Faraday\'s Law',
+        title: "Faraday's Law",
         titleVn: 'Định luật Faraday',
         url: 'https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_all.html',
         description: 'Tìm hiểu cách từ trường biến đổi tạo ra dòng điện',
@@ -696,7 +696,7 @@ export const CHAPTER_RESOURCES = {
       titleVn: 'Áp suất chất lỏng',
       url: 'https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_all.html',
       description: 'Tìm hiểu áp suất chất lỏng với PhET',
-      descriptionEn: 'Explore liquid pressure and Pascal\'s principle with PhET simulation',
+      descriptionEn: "Explore liquid pressure and Pascal's principle with PhET simulation",
     },
     phet: [
       {
@@ -715,7 +715,7 @@ export const CHAPTER_RESOURCES = {
     question_sims: {},
     videos: [
       {
-        title: 'Pascal\'s Principle',
+        title: "Pascal's Principle",
         titleVn: 'Nguyên lý Pascal',
         url: 'https://www.youtube.com/embed/Ks6pDviQVXo',
         channel: 'SmarterEveryDay',
@@ -750,7 +750,7 @@ export const CHAPTER_RESOURCES = {
       titleVn: 'Lực đẩy Archimedes',
       url: 'https://phet.colorado.edu/sims/html/buoyancy/latest/buoyancy_all.html',
       description: 'Khám phá lực đẩy Archimedes với PhET',
-      descriptionEn: 'Explore Archimedes\' principle and buoyancy with PhET simulation',
+      descriptionEn: "Explore Archimedes' principle and buoyancy with PhET simulation",
     },
     phet: [
       {
@@ -776,7 +776,7 @@ export const CHAPTER_RESOURCES = {
         duration: '5:56',
       },
       {
-        title: 'Archimedes\' Eureka Moment',
+        title: "Archimedes' Eureka Moment",
         titleVn: 'Khoảnh khắc Eureka của Archimedes',
         url: 'https://www.youtube.com/embed/ijj58xD5fDI',
         channel: 'MinutePhysics',
@@ -1056,15 +1056,15 @@ export const CHAPTER_RESOURCES = {
   // --- Resistance & Ohm's Law ---
   resistance_ohm: {
     intro: {
-      title: 'Resistance & Ohm\'s Law',
+      title: "Resistance & Ohm's Law",
       titleVn: 'Điện trở & Định luật Ohm',
       url: 'https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_all.html',
       description: 'Khám phá định luật Ohm với PhET',
-      descriptionEn: 'Explore Ohm\'s Law and electrical resistance with PhET simulation',
+      descriptionEn: "Explore Ohm's Law and electrical resistance with PhET simulation",
     },
     phet: [
       {
-        title: 'Ohm\'s Law',
+        title: "Ohm's Law",
         titleVn: 'Định luật Ohm',
         url: 'https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_all.html',
         description: 'Tìm hiểu mối quan hệ giữa hiệu điện thế, cường độ dòng điện và điện trở',
@@ -1079,7 +1079,7 @@ export const CHAPTER_RESOURCES = {
     question_sims: {},
     videos: [
       {
-        title: 'Ohm\'s Law Explained',
+        title: "Ohm's Law Explained",
         titleVn: 'Giải thích định luật Ohm',
         url: 'https://www.youtube.com/embed/HsLLq6Rm5tU',
         channel: 'Veritasium',
@@ -1097,7 +1097,7 @@ export const CHAPTER_RESOURCES = {
       {
         title: 'Feynman Lectures on Physics — Vol 2',
         author: 'Richard Feynman',
-        note: 'Chapter 23: Cavity Resonators — includes Ohm\'s law derivation',
+        note: "Chapter 23: Cavity Resonators — includes Ohm's law derivation",
       },
       {
         title: 'Sách giáo khoa Vật lý 9',
@@ -1124,7 +1124,7 @@ export const CHAPTER_RESOURCES = {
         description: 'Xây dựng mạch điện với pin, bóng đèn, điện trở và dây dẫn',
       },
       {
-        title: 'Ohm\'s Law',
+        title: "Ohm's Law",
         titleVn: 'Định luật Ohm',
         url: 'https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_all.html',
         description: 'Áp dụng định luật Ohm vào phân tích mạch điện',
@@ -1226,7 +1226,7 @@ export const CHAPTER_RESOURCES = {
         description: 'Tìm hiểu lực từ giữa nam châm và nam châm điện',
       },
       {
-        title: 'Faraday\'s Law',
+        title: "Faraday's Law",
         titleVn: 'Định luật Faraday',
         url: 'https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_all.html',
         description: 'Khám phá cảm ứng điện từ và định luật Faraday',
@@ -1382,7 +1382,7 @@ export const CHAPTER_RESOURCES = {
       },
     ],
   },
-  
+
   // --- Advanced Mechanics & Physics Fun ---
   gifted_mechanics_grade9: {
     intro: {
@@ -1485,4 +1485,3 @@ export const CHAPTER_RESOURCES = {
     ],
   },
 };
-

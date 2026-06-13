@@ -97,7 +97,10 @@ export interface ContentExamChangeSet {
     changedFields: string[];
   };
   questionChanges: ContentQuestionChange[];
-  current: Pick<ImportedExam, 'id' | 'title' | 'exam' | 'duration' | 'questions' | 'reviewStatus' | 'reviewer' | 'reviewedAt' | 'editableSections'>;
+  current: Pick<
+    ImportedExam,
+    'id' | 'title' | 'exam' | 'duration' | 'questions' | 'reviewStatus' | 'reviewer' | 'reviewedAt' | 'editableSections'
+  >;
   syncHint: string;
 }
 
@@ -141,7 +144,7 @@ function loadAdminContentModule(): Promise<AdminContentModule> {
 
 export function createCasioTip(
   input: { title: string; syntax: string; explanation: string },
-  now = Date.now()
+  now = Date.now(),
 ): CasioTip | null {
   const title = input.title.trim();
   const syntax = input.syntax.trim();
@@ -262,7 +265,9 @@ export function buildContentExamChangeSet(
   const currentSections = ensureEditableExamSections(exam);
   const previousSections = resolvePreviousEditableSections(exam, options.previousExam);
   const questionChanges = diffEditableQuestions(currentSections, previousSections);
-  const changedQuestionCount = questionChanges.filter((change) => change.status === 'edited' || change.status === 'added').length;
+  const changedQuestionCount = questionChanges.filter(
+    (change) => change.status === 'edited' || change.status === 'added',
+  ).length;
   const removedQuestionCount = questionChanges.filter((change) => change.status === 'removed').length;
   const changedFields = uniqueStrings(questionChanges.flatMap((change) => change.changedFields));
 
@@ -295,7 +300,8 @@ export function buildContentExamChangeSet(
       reviewedAt: exam.reviewedAt,
       editableSections: currentSections,
     },
-    syncHint: 'Apply this change set back to the source JSON/test file, then rerun the content adapter guard before publishing.',
+    syncHint:
+      'Apply this change set back to the source JSON/test file, then rerun the content adapter guard before publishing.',
   };
 }
 
@@ -371,7 +377,7 @@ export function createDemoExam(trackId: EnglishExamTrack, now = Date.now()): Dem
 
 export function createMathLesson(
   input: { id: string; title: string; topic: string; count: number },
-  now = Date.now()
+  now = Date.now(),
 ): MathLesson | null {
   const title = input.title.trim();
 
@@ -391,7 +397,7 @@ export function createMathLesson(
 export function createEnglishExam(
   trackId: EnglishExamTrack,
   input: { id: string; title: string; questions: number; duration: number },
-  now = Date.now()
+  now = Date.now(),
 ): ImportedExam | null {
   const title = input.title.trim();
 
@@ -424,7 +430,7 @@ export function createEnglishExam(
 
 export function createLatexMathLesson(
   input: { id: string; title: string; equation: string },
-  now = Date.now()
+  now = Date.now(),
 ): MathLesson | null {
   const title = input.title.trim();
 
@@ -517,13 +523,19 @@ function normalizePersistedEditableSections(raw: unknown): EditableExamSection[]
     .filter((section) => section !== null);
 }
 
-function resolvePreviousEditableSections(exam: ImportedExam, previousExam?: ImportedExam | null): EditableExamSection[] {
+function resolvePreviousEditableSections(
+  exam: ImportedExam,
+  previousExam?: ImportedExam | null,
+): EditableExamSection[] {
   if (previousExam?.editableSections?.length) return previousExam.editableSections;
   if (exam.sourceJson) return createEditableExamSectionsFromJson(exam.sourceJson);
   return [];
 }
 
-function diffEditableQuestions(currentSections: EditableExamSection[], previousSections: EditableExamSection[]): ContentQuestionChange[] {
+function diffEditableQuestions(
+  currentSections: EditableExamSection[],
+  previousSections: EditableExamSection[],
+): ContentQuestionChange[] {
   const current = flattenEditableQuestions(currentSections);
   const previous = flattenEditableQuestions(previousSections);
   const currentByKey = new Map(current.map((item) => [item.key, item]));
@@ -564,7 +576,9 @@ function diffEditableQuestions(currentSections: EditableExamSection[], previousS
   });
 }
 
-function flattenEditableQuestions(sections: EditableExamSection[]): Array<{ key: string; sectionId: string; question: EditableExamQuestion }> {
+function flattenEditableQuestions(
+  sections: EditableExamSection[],
+): Array<{ key: string; sectionId: string; question: EditableExamQuestion }> {
   return sections.flatMap((section) =>
     section.questions.map((question, index) => ({
       key: `${section.id}::${question.id || index}`,

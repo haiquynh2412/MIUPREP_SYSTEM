@@ -1,0 +1,30 @@
+# Build output / deps / caches
+node_modules
+dist
+build
+**/dist
+**/build
+*.tsbuildinfo
+package-lock.json
+
+# Binary / generated assets (huge)
+**/*.png
+**/*.svg
+apps/*/public
+apps/*/dist
+
+# Auto-generated data / reports (not hand-edited; would create noise/conflicts)
+reports
+apps/miuprep-portal/src/data
+**/*-enrichment.ts
+packages/knowledge/src/index.ts
+packages/content/src/*-enrichment.ts
+
+# Actively edited by other agents right now — format later to avoid clobbering WIP.
+# (Run `npm run format` on these once their work is committed.)
+packages/content
+apps/sat-studio
+
+# Rust / tauri
+**/src-tauri/target
+**/*.rs

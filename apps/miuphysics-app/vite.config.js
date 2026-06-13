@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,7 +11,11 @@ export default defineConfig({
           const normalized = id.replace(/\\/g, '/');
 
           if (normalized.includes('/node_modules/')) {
-            if (normalized.includes('/react/') || normalized.includes('/react-dom/') || normalized.includes('/scheduler/')) {
+            if (
+              normalized.includes('/react/') ||
+              normalized.includes('/react-dom/') ||
+              normalized.includes('/scheduler/')
+            ) {
               return 'vendor-react';
             }
             if (normalized.includes('/katex/')) {
@@ -35,5 +39,5 @@ export default defineConfig({
   server: {
     port: 5189,
     strictPort: true,
-  }
-})
+  },
+});

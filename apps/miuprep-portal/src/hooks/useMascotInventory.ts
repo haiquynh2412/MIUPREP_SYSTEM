@@ -57,8 +57,14 @@ export function useMascotInventory({
     const nextItem = toggleMascotItem(equippedMascotItem, item);
     setEquippedMascotItem(nextItem);
     localStorage.setItem('miuprep_equipped_item', nextItem);
-    logSystemEvent('INFO', `Học sinh @${currentUser?.username} đã thay đổi phụ kiện trang trí: [${nextItem || 'Trống'}]`);
-    showNotif(nextItem ? `Đã diện phụ kiện ${nextItem} cho Mascot Miu! 😻` : `Đã cởi bỏ phụ kiện của Mascot Miu meow!`, 'success');
+    logSystemEvent(
+      'INFO',
+      `Học sinh @${currentUser?.username} đã thay đổi phụ kiện trang trí: [${nextItem || 'Trống'}]`,
+    );
+    showNotif(
+      nextItem ? `Đã diện phụ kiện ${nextItem} cho Mascot Miu! 😻` : `Đã cởi bỏ phụ kiện của Mascot Miu meow!`,
+      'success',
+    );
   };
 
   return { unlockedMascotItems, equippedMascotItem, handleBuyMascotItem, handleEquipMascotItem };

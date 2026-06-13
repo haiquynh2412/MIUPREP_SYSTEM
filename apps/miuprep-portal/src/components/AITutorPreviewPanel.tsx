@@ -27,7 +27,10 @@ interface AITutorPreviewPanelProps {
 
 export default function AITutorPreviewPanel({ currentUser, errorQuestions }: AITutorPreviewPanelProps) {
   const productiveTrack = useMemo(() => resolveProductiveTrack(currentUser), [currentUser]);
-  const productivePlans = useMemo(() => buildProductivePlans(currentUser, productiveTrack), [currentUser, productiveTrack]);
+  const productivePlans = useMemo(
+    () => buildProductivePlans(currentUser, productiveTrack),
+    [currentUser, productiveTrack],
+  );
   const activeQuestion = useMemo(
     () => errorQuestions.filter((item) => item.stage > 0).sort((a, b) => b.stage - a.stage)[0],
     [errorQuestions],
@@ -52,7 +55,9 @@ export default function AITutorPreviewPanel({ currentUser, errorQuestions }: AIT
                 AI Tutor
               </span>
               <h3 className="text-lg font-black text-slate-100 mt-3 mb-0">No repair target</h3>
-              <p className="text-xs text-slate-500 mt-1 mb-0">The tutor will activate when the error notebook has a due item.</p>
+              <p className="text-xs text-slate-500 mt-1 mb-0">
+                The tutor will activate when the error notebook has a due item.
+              </p>
             </div>
           </div>
         </section>
@@ -75,7 +80,8 @@ export default function AITutorPreviewPanel({ currentUser, errorQuestions }: AIT
           </div>
           <h3 className="text-lg font-black text-slate-100 mt-3 mb-0">Wrong-answer repair coach</h3>
           <p className="text-xs text-slate-500 mt-1 max-w-3xl mb-0">
-            Uses concept, skill and error taxonomy to explain the current notebook item, then stores the tutor output as a feedback learning event.
+            Uses concept, skill and error taxonomy to explain the current notebook item, then stores the tutor output as
+            a feedback learning event.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-2 min-w-full lg:min-w-[360px]">
@@ -104,7 +110,10 @@ export default function AITutorPreviewPanel({ currentUser, errorQuestions }: AIT
               </span>
             </div>
             <div className="h-2 bg-slate-900 border border-slate-850 rounded-full overflow-hidden mt-1">
-              <div className="h-full bg-cyan-500 rounded-full" style={{ width: `${Math.max(4, snapshot.feedback.confidence * 100)}%` }} />
+              <div
+                className="h-full bg-cyan-500 rounded-full"
+                style={{ width: `${Math.max(4, snapshot.feedback.confidence * 100)}%` }}
+              />
             </div>
             <p className="text-[11px] text-slate-500 mt-2 mb-0">{snapshot.feedback.confidenceReasons.join(' / ')}</p>
           </div>
@@ -112,11 +121,17 @@ export default function AITutorPreviewPanel({ currentUser, errorQuestions }: AIT
 
         <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
           <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black m-0">Remediation lesson</p>
-          <h4 className="text-sm font-black text-slate-100 mt-2 mb-0">{snapshot.feedback.remediationLessons[0]?.title}</h4>
-          <p className="text-xs text-slate-500 leading-relaxed mt-2 mb-0">{snapshot.feedback.remediationLessons[0]?.objective}</p>
+          <h4 className="text-sm font-black text-slate-100 mt-2 mb-0">
+            {snapshot.feedback.remediationLessons[0]?.title}
+          </h4>
+          <p className="text-xs text-slate-500 leading-relaxed mt-2 mb-0">
+            {snapshot.feedback.remediationLessons[0]?.objective}
+          </p>
           <div className="mt-4 flex items-center justify-between text-[11px] font-bold">
             <span className="text-slate-500">Estimated time</span>
-            <span className="text-cyan-400 font-mono">{snapshot.feedback.remediationLessons[0]?.estimatedMinutes || 0} min</span>
+            <span className="text-cyan-400 font-mono">
+              {snapshot.feedback.remediationLessons[0]?.estimatedMinutes || 0} min
+            </span>
           </div>
         </div>
       </div>
@@ -147,7 +162,8 @@ function MetricTile({ label, value }: { label: string; value: string }) {
 }
 
 function buildTutorInput(currentUser: LocalUser, question: ErrorQuestion): AITutorQuestionInput {
-  const isEnglish = question.text.toLowerCase().includes('ielts') || /grammar|sentence|although|english/i.test(question.text);
+  const isEnglish =
+    question.text.toLowerCase().includes('ielts') || /grammar|sentence|although|english/i.test(question.text);
   const isGeometry = /circle|geometry|triangle|duong tron|tam giac/i.test(normalizeText(question.text));
 
   if (isEnglish) {
@@ -212,7 +228,10 @@ function buildTutorInput(currentUser: LocalUser, question: ErrorQuestion): AITut
 }
 
 function normalizeText(value: string): string {
-  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
 }
 
 type ProductiveTrack = 'ielts' | 'cpe' | 'cae';
@@ -237,7 +256,8 @@ function ProductiveSkillsPracticePanel({ plans }: { plans: ProductivePlans }) {
           </div>
           <h4 className="text-base font-black text-slate-100 mt-3 mb-0">Productive skills repair loop</h4>
           <p className="text-xs text-slate-500 mt-1 max-w-3xl mb-0">
-            Rubric feedback now creates focused drills, then sends the learner back to rewrite or rerecord with a before-after checklist.
+            Rubric feedback now creates focused drills, then sends the learner back to rewrite or rerecord with a
+            before-after checklist.
           </p>
         </div>
         <div className="grid grid-cols-3 gap-2 w-full lg:w-[390px]">
@@ -278,7 +298,10 @@ function PracticePlanCard({ title, plan }: { title: string; plan: FeedbackToPrac
         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">Loop</p>
         <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-5 gap-2">
           {plan.revisionLoop.steps.map((step, index) => (
-            <div key={`${plan.id}-${step.label}`} className="bg-slate-950/70 border border-slate-850 rounded-xl p-2 min-w-0">
+            <div
+              key={`${plan.id}-${step.label}`}
+              className="bg-slate-950/70 border border-slate-850 rounded-xl p-2 min-w-0"
+            >
               <span className="text-[9px] text-emerald-300 font-mono font-black">0{index + 1}</span>
               <p className="text-[10px] text-slate-200 font-black mt-1 mb-0">{step.label}</p>
               <p className="text-[10px] text-slate-500 leading-snug mt-1 mb-0">{step.action}</p>
@@ -288,7 +311,8 @@ function PracticePlanCard({ title, plan }: { title: string; plan: FeedbackToPrac
         <div className="mt-3 bg-slate-950/70 border border-amber-900/40 rounded-xl p-3">
           <p className="text-[10px] font-black uppercase tracking-widest text-amber-300 m-0">Validity gate</p>
           <p className="text-[11px] text-slate-400 leading-relaxed mt-1 mb-0">
-            Productive skills stay feedback-only until the same rubric, before-after evidence, and teacher or stable double-AI validation are present.
+            Productive skills stay feedback-only until the same rubric, before-after evidence, and teacher or stable
+            double-AI validation are present.
           </p>
         </div>
       </div>
@@ -311,7 +335,9 @@ function PracticeTaskRow({ task }: { task: FeedbackPracticeTask }) {
       <p className="text-[11px] text-slate-400 leading-relaxed mt-2 mb-0">{task.prompt}</p>
       <ul className="mt-2 space-y-1 pl-4">
         {task.instructions.slice(0, 2).map((instruction) => (
-          <li key={instruction} className="text-[10px] text-slate-500 leading-snug">{instruction}</li>
+          <li key={instruction} className="text-[10px] text-slate-500 leading-snug">
+            {instruction}
+          </li>
         ))}
       </ul>
     </div>
@@ -340,17 +366,62 @@ function buildWritingFeedbackPreview(learnerId: string, track: ProductiveTrack, 
   const isCambridge = track === 'cpe' || track === 'cae';
   const base = isCambridge
     ? [
-        { criterionName: 'Content', band: track === 'cpe' ? 198 : 186, feedbackText: 'Relevant but one point is underdeveloped.', nextAction: 'Add a sharper claim and concrete support.' },
-        { criterionName: 'Organisation', band: track === 'cpe' ? 192 : 181, feedbackText: 'Paragraphs are clear but links are mechanical.', nextAction: 'Repair paragraph bridges.' },
-        { criterionName: 'Language (Vocabulary)', band: track === 'cpe' ? 200 : 188, feedbackText: 'Good range with occasional imprecision.', nextAction: 'Swap vague wording for exact collocations.' },
-        { criterionName: 'Language (Grammar)', band: track === 'cpe' ? 190 : 179, feedbackText: 'Complex sentences sometimes lose control.', nextAction: 'Rewrite error-prone sentences with clear clause boundaries.' },
-        { criterionName: 'Register and audience fit', band: track === 'cpe' ? 188 : 178, feedbackText: 'Tone needs a more consistent reader fit.', nextAction: 'Rewrite the opening and closing for the intended audience.' },
+        {
+          criterionName: 'Content',
+          band: track === 'cpe' ? 198 : 186,
+          feedbackText: 'Relevant but one point is underdeveloped.',
+          nextAction: 'Add a sharper claim and concrete support.',
+        },
+        {
+          criterionName: 'Organisation',
+          band: track === 'cpe' ? 192 : 181,
+          feedbackText: 'Paragraphs are clear but links are mechanical.',
+          nextAction: 'Repair paragraph bridges.',
+        },
+        {
+          criterionName: 'Language (Vocabulary)',
+          band: track === 'cpe' ? 200 : 188,
+          feedbackText: 'Good range with occasional imprecision.',
+          nextAction: 'Swap vague wording for exact collocations.',
+        },
+        {
+          criterionName: 'Language (Grammar)',
+          band: track === 'cpe' ? 190 : 179,
+          feedbackText: 'Complex sentences sometimes lose control.',
+          nextAction: 'Rewrite error-prone sentences with clear clause boundaries.',
+        },
+        {
+          criterionName: 'Register and audience fit',
+          band: track === 'cpe' ? 188 : 178,
+          feedbackText: 'Tone needs a more consistent reader fit.',
+          nextAction: 'Rewrite the opening and closing for the intended audience.',
+        },
       ]
     : [
-        { criterionName: 'Task Response', band: 6, feedbackText: 'The position is clear but evidence is still general.', nextAction: 'Add one concrete example and explain its relevance.' },
-        { criterionName: 'Coherence and Cohesion', band: 6.5, feedbackText: 'Paragraph order is logical but links are thin.', nextAction: 'Repair one topic sentence and one transition.' },
-        { criterionName: 'Lexical Resource', band: 7, feedbackText: 'Vocabulary range is solid.', nextAction: 'Replace repeated general nouns with precise collocations.' },
-        { criterionName: 'Grammatical Range and Accuracy', band: 6.5, feedbackText: 'Some complex sentences need control.', nextAction: 'Rewrite three sentences with clean clause structure.' },
+        {
+          criterionName: 'Task Response',
+          band: 6,
+          feedbackText: 'The position is clear but evidence is still general.',
+          nextAction: 'Add one concrete example and explain its relevance.',
+        },
+        {
+          criterionName: 'Coherence and Cohesion',
+          band: 6.5,
+          feedbackText: 'Paragraph order is logical but links are thin.',
+          nextAction: 'Repair one topic sentence and one transition.',
+        },
+        {
+          criterionName: 'Lexical Resource',
+          band: 7,
+          feedbackText: 'Vocabulary range is solid.',
+          nextAction: 'Replace repeated general nouns with precise collocations.',
+        },
+        {
+          criterionName: 'Grammatical Range and Accuracy',
+          band: 6.5,
+          feedbackText: 'Some complex sentences need control.',
+          nextAction: 'Rewrite three sentences with clean clause structure.',
+        },
       ];
 
   return {
@@ -359,11 +430,21 @@ function buildWritingFeedbackPreview(learnerId: string, track: ProductiveTrack, 
     bandOverall: isCambridge ? (track === 'cpe' ? 194 : 183) : 6.5,
     criteria: base,
     corrections: [
-      { originalText: 'This is a very big problem.', correctedText: 'This is a pressing structural problem.', reason: 'The corrected phrase is more precise and academic.', severity: 'medium' },
+      {
+        originalText: 'This is a very big problem.',
+        correctedText: 'This is a pressing structural problem.',
+        reason: 'The corrected phrase is more precise and academic.',
+        severity: 'medium',
+      },
     ],
     suggestionsForImprovement: ['Move from feedback to a targeted rewrite instead of writing a new essay immediately.'],
     sentenceUpgrades: [
-      { original: 'People should solve this.', upgraded: 'Policy-makers should address this through targeted incentives.', explanation: 'More precise subject and action.', targetedBand: isCambridge ? 200 : 7 },
+      {
+        original: 'People should solve this.',
+        upgraded: 'Policy-makers should address this through targeted incentives.',
+        explanation: 'More precise subject and action.',
+        targetedBand: isCambridge ? 200 : 7,
+      },
     ],
     modelUsed: 'miuprep-feedback-plan-preview',
     createdAt: now,
@@ -378,22 +459,68 @@ function buildSpeakingFeedbackPreview(learnerId: string, track: ProductiveTrack,
   const isCambridge = track === 'cpe' || track === 'cae';
   const criteria = isCambridge
     ? [
-        { criterionName: 'Grammatical Resource', band: track === 'cpe' ? 190 : 180, feedbackText: 'Complex grammar is attempted but not always controlled.', nextAction: 'Use two target structures accurately in a fresh answer.' },
-        { criterionName: 'Lexical Resource', band: track === 'cpe' ? 196 : 185, feedbackText: 'Range is good but topic vocabulary could be sharper.', nextAction: 'Upgrade five topic phrases and reuse them naturally.' },
-        { criterionName: 'Discourse Management', band: track === 'cpe' ? 193 : 182, feedbackText: 'The answer has ideas but needs cleaner signposting.', nextAction: 'Answer in three planned chunks.' },
-        { criterionName: 'Pronunciation', band: track === 'cpe' ? 191 : 181, feedbackText: 'Stress patterns are mostly clear.', nextAction: 'Repair stress in high-value topic words.' },
-        { criterionName: 'Interactive Communication', band: track === 'cpe' ? 188 : 178, feedbackText: 'The turn closes too quickly.', nextAction: 'Extend, contrast, and invite continuation.' },
+        {
+          criterionName: 'Grammatical Resource',
+          band: track === 'cpe' ? 190 : 180,
+          feedbackText: 'Complex grammar is attempted but not always controlled.',
+          nextAction: 'Use two target structures accurately in a fresh answer.',
+        },
+        {
+          criterionName: 'Lexical Resource',
+          band: track === 'cpe' ? 196 : 185,
+          feedbackText: 'Range is good but topic vocabulary could be sharper.',
+          nextAction: 'Upgrade five topic phrases and reuse them naturally.',
+        },
+        {
+          criterionName: 'Discourse Management',
+          band: track === 'cpe' ? 193 : 182,
+          feedbackText: 'The answer has ideas but needs cleaner signposting.',
+          nextAction: 'Answer in three planned chunks.',
+        },
+        {
+          criterionName: 'Pronunciation',
+          band: track === 'cpe' ? 191 : 181,
+          feedbackText: 'Stress patterns are mostly clear.',
+          nextAction: 'Repair stress in high-value topic words.',
+        },
+        {
+          criterionName: 'Interactive Communication',
+          band: track === 'cpe' ? 188 : 178,
+          feedbackText: 'The turn closes too quickly.',
+          nextAction: 'Extend, contrast, and invite continuation.',
+        },
       ]
     : [
-        { criterionName: 'Fluency and Coherence', band: 6.5, feedbackText: 'Generally clear but pauses break the argument.', nextAction: 'Use answer-reason-example chunks.' },
-        { criterionName: 'Lexical Resource', band: 6.5, feedbackText: 'Vocabulary is adequate but safe.', nextAction: 'Upgrade basic phrases into natural topic language.' },
-        { criterionName: 'Grammatical Range and Accuracy', band: 6, feedbackText: 'Errors appear in longer sentences.', nextAction: 'Use two controlled structures accurately.' },
-        { criterionName: 'Pronunciation', band: 6.5, feedbackText: 'Mostly intelligible with some word stress issues.', nextAction: 'Repair word stress before rerecording.' },
+        {
+          criterionName: 'Fluency and Coherence',
+          band: 6.5,
+          feedbackText: 'Generally clear but pauses break the argument.',
+          nextAction: 'Use answer-reason-example chunks.',
+        },
+        {
+          criterionName: 'Lexical Resource',
+          band: 6.5,
+          feedbackText: 'Vocabulary is adequate but safe.',
+          nextAction: 'Upgrade basic phrases into natural topic language.',
+        },
+        {
+          criterionName: 'Grammatical Range and Accuracy',
+          band: 6,
+          feedbackText: 'Errors appear in longer sentences.',
+          nextAction: 'Use two controlled structures accurately.',
+        },
+        {
+          criterionName: 'Pronunciation',
+          band: 6.5,
+          feedbackText: 'Mostly intelligible with some word stress issues.',
+          nextAction: 'Repair word stress before rerecording.',
+        },
       ];
 
   return {
     attemptId: `${learnerId}-${track}-speaking-plan-preview`,
-    transcript: 'I think online learning is useful because it is convenient, but sometimes students need more discipline.',
+    transcript:
+      'I think online learning is useful because it is convenient, but sometimes students need more discipline.',
     bandOverall: isCambridge ? (track === 'cpe' ? 192 : 181) : 6.5,
     criteria,
     pronunciationErrors: [

@@ -17,7 +17,8 @@ button:hover {
   filter: brightness(1.05);
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: #10b981 !important;
   background-color: #ffffff !important;
 }
@@ -29,7 +30,7 @@ textarea:focus, input:focus {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
   }
-  
+
   /* Place Mascot & Sidebar below the main workspace so it doesn't block the question view */
   .App main aside {
     order: 2 !important;
@@ -57,7 +58,8 @@ textarea:focus, input:focus {
   }
 
   /* Compact button padding and typography in header to prevent screen clutter */
-  header .btn, header select {
+  header .btn,
+  header select {
     font-size: 0.78rem !important;
     padding: 6px 12px !important;
     height: 32px !important;
@@ -68,21 +70,21 @@ textarea:focus, input:focus {
   }
 
   /* Stack any inline 2-column grids (like the Exam layout: left question, right answer sheets) */
-  .App main div[style*="display: grid"],
-  .App main div[style*="display:grid"] {
+  .App main div[style*='display: grid'],
+  .App main div[style*='display:grid'] {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
   }
 
   /* Adjust exam answers sheet container grid column sizes on smaller mobile screens */
   .App main div[style*="gridTemplateColumns: 'repeat(5, 1fr)'"],
-  .App main div[style*="grid-template-columns: repeat(5, 1fr)"] {
+  .App main div[style*='grid-template-columns: repeat(5, 1fr)'] {
     grid-template-columns: repeat(5, 1fr) !important;
   }
-  
+
   /* Quick statistics board grid column layouts stacking */
   .App main div[style*="gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))'"],
-  .App main div[style*="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))"] {
+  .App main div[style*='grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))'] {
     grid-template-columns: 1fr !important;
   }
 }
@@ -115,13 +117,14 @@ textarea:focus, input:focus {
   h3 {
     font-size: 1rem !important;
   }
-  
+
   /* Digital Draft Pad compact styling */
-  textarea, input.math-input {
+  textarea,
+  input.math-input {
     font-size: 0.9rem !important;
     padding: 10px 12px !important;
   }
-  
+
   /* Adjust custom KaTeX inline elements scrollbar */
   .katex-display {
     padding: 8px !important;

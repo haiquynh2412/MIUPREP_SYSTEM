@@ -20,27 +20,15 @@ const getRecommendationLabel = (kind, lang) => {
   return t(key, lang);
 };
 
-export default function Dashboard({
-  dashboard,
-  chapters,
-  onNavigate,
-  errorNotebookSummary,
-  lang = 'vi',
-}: any) {
+export default function Dashboard({ dashboard, chapters, onNavigate, errorNotebookSummary, lang = 'vi' }: any) {
   if (!dashboard) return null;
 
-  const {
-    totalAttempts,
-    skillMastery,
-    stableSkills,
-    repairSkills,
-    recommendation,
-    topRows,
-  } = dashboard;
+  const { totalAttempts, skillMastery, stableSkills, repairSkills, recommendation, topRows } = dashboard;
 
-  const overallMastery = skillMastery.length > 0
-    ? skillMastery.reduce((sum, row) => sum + (row.mastery || 0), 0) / skillMastery.length * 100
-    : 0;
+  const overallMastery =
+    skillMastery.length > 0
+      ? (skillMastery.reduce((sum, row) => sum + (row.mastery || 0), 0) / skillMastery.length) * 100
+      : 0;
 
   return (
     <div className="animate-fadeIn">
@@ -92,9 +80,7 @@ export default function Dashboard({
               <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-heading)' }}>
                 {t('dashboard_recommendation_title', lang)} {getRecommendationLabel(recommendation.kind, lang)}
               </div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                {t('recommendation_based', lang)}
-              </div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t('recommendation_based', lang)}</div>
             </div>
           </div>
           {recommendation.reason && (
@@ -112,8 +98,8 @@ export default function Dashboard({
             📈 {t('dashboard_progress_title', lang)}
           </h3>
           {topRows.map((row) => {
-            const chapterObj = chapters.find(ch => ch.id === row.id);
-            const label = chapterObj ? (lang === 'en' ? chapterObj.name : chapterObj.nameVn) : (row.label || row.id);
+            const chapterObj = chapters.find((ch) => ch.id === row.id);
+            const label = chapterObj ? (lang === 'en' ? chapterObj.name : chapterObj.nameVn) : row.label || row.id;
             return (
               <div key={row.id} className="mastery-bar-container">
                 <div className="mastery-bar-label">
@@ -127,11 +113,12 @@ export default function Dashboard({
                     className="mastery-bar-fill"
                     style={{
                       width: `${Math.round((row.mastery || 0) * 100)}%`,
-                      background: row.status === 'stable'
-                        ? 'linear-gradient(90deg, var(--success), #059669)'
-                        : row.status === 'repair'
-                        ? 'linear-gradient(90deg, var(--error), #DC2626)'
-                        : 'linear-gradient(90deg, var(--primary), var(--primary-light))',
+                      background:
+                        row.status === 'stable'
+                          ? 'linear-gradient(90deg, var(--success), #059669)'
+                          : row.status === 'repair'
+                            ? 'linear-gradient(90deg, var(--error), #DC2626)'
+                            : 'linear-gradient(90deg, var(--primary), var(--primary-light))',
                     }}
                   />
                 </div>

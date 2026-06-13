@@ -32,7 +32,7 @@ const LISTENING_THRESHOLDS: ScoreThreshold[] = [
   { minCorrect: 4, band: 3.0 },
   { minCorrect: 2, band: 2.5 },
   { minCorrect: 1, band: 2.0 },
-  { minCorrect: 0, band: 0.0 }
+  { minCorrect: 0, band: 0.0 },
 ];
 
 const READING_ACADEMIC_THRESHOLDS: ScoreThreshold[] = [
@@ -51,7 +51,7 @@ const READING_ACADEMIC_THRESHOLDS: ScoreThreshold[] = [
   { minCorrect: 4, band: 3.0 },
   { minCorrect: 2, band: 2.5 },
   { minCorrect: 1, band: 2.0 },
-  { minCorrect: 0, band: 0.0 }
+  { minCorrect: 0, band: 0.0 },
 ];
 
 const READING_GENERAL_THRESHOLDS: ScoreThreshold[] = [
@@ -71,7 +71,7 @@ const READING_GENERAL_THRESHOLDS: ScoreThreshold[] = [
   { minCorrect: 6, band: 2.5 },
   { minCorrect: 2, band: 2.0 },
   { minCorrect: 1, band: 1.0 },
-  { minCorrect: 0, band: 0.0 }
+  { minCorrect: 0, band: 0.0 },
 ];
 
 /**
@@ -80,10 +80,10 @@ const READING_GENERAL_THRESHOLDS: ScoreThreshold[] = [
 export function calculateBandScore(
   correctCount: number,
   skill: SkillType,
-  moduleType: ExamModuleType = 'academic'
+  moduleType: ExamModuleType = 'academic',
 ): number {
   const score = Math.max(0, Math.min(40, Math.round(correctCount)));
-  const thresholds = 
+  const thresholds =
     skill === 'listening'
       ? LISTENING_THRESHOLDS
       : moduleType === 'academic'
@@ -103,23 +103,23 @@ export function calculateBandScore(
 // ==========================================
 
 const UK_TO_US_MAP: Record<string, string> = {
-  'colour': 'color',
-  'theatre': 'theater',
-  'centre': 'center',
-  'organisation': 'organization',
-  'organise': 'organize',
-  'behaviour': 'behavior',
-  'travelling': 'traveling',
-  'licence': 'license',
-  'defence': 'defense',
-  'analyse': 'analyze',
-  'programme': 'program',
-  'neighbour': 'neighbor',
-  'flavour': 'flavor',
-  'labour': 'labor',
-  'humour': 'humor',
-  'apologise': 'apologize',
-  'catalogue': 'catalog',
+  colour: 'color',
+  theatre: 'theater',
+  centre: 'center',
+  organisation: 'organization',
+  organise: 'organize',
+  behaviour: 'behavior',
+  travelling: 'traveling',
+  licence: 'license',
+  defence: 'defense',
+  analyse: 'analyze',
+  programme: 'program',
+  neighbour: 'neighbor',
+  flavour: 'flavor',
+  labour: 'labor',
+  humour: 'humor',
+  apologise: 'apologize',
+  catalogue: 'catalog',
 };
 
 /**
@@ -133,7 +133,7 @@ const UK_TO_US_MAP: Record<string, string> = {
  */
 export function normalizeAnswer(value: string | null | undefined): string {
   if (value === null || value === undefined) return '';
-  
+
   let clean = value
     .trim()
     .toLowerCase()
@@ -147,9 +147,9 @@ export function normalizeAnswer(value: string | null | undefined): string {
   if (clean.includes(',')) {
     return clean
       .split(',')
-      .map(s => s.trim())
+      .map((s) => s.trim())
       .filter(Boolean)
-      .map(word => UK_TO_US_MAP[word] || word) // Map UK spelling variants
+      .map((word) => UK_TO_US_MAP[word] || word) // Map UK spelling variants
       .sort()
       .join(', ');
   }
@@ -157,7 +157,7 @@ export function normalizeAnswer(value: string | null | undefined): string {
   // Normalise words with UK to US spellings
   return clean
     .split(' ')
-    .map(word => UK_TO_US_MAP[word] || word)
+    .map((word) => UK_TO_US_MAP[word] || word)
     .join(' ');
 }
 
@@ -168,12 +168,18 @@ export function normalizeAnswer(value: string | null | undefined): string {
 export function expandOptionalParentheses(answer: string): string[] {
   const clean = answer.trim().replace(/\s+/g, ' ');
   const regex = /\(([^)]+)\)/g;
-  
+
   if (!regex.test(clean)) return [clean];
-  
-  const withParentheses = clean.replace(/\(([^)]+)\)/g, '$1').replace(/\s+/g, ' ').trim();
-  const withoutParentheses = clean.replace(/\(([^)]+)\)/g, '').replace(/\s+/g, ' ').trim();
-  
+
+  const withParentheses = clean
+    .replace(/\(([^)]+)\)/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const withoutParentheses = clean
+    .replace(/\(([^)]+)\)/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
   const results = new Set([withParentheses, withoutParentheses]);
   return Array.from(results).filter(Boolean);
 }
@@ -185,7 +191,7 @@ export function expandOptionalParentheses(answer: string): string[] {
 export function isCorrectAnswer(
   userAnswer: string | null | undefined,
   acceptedNormalizedAnswers: string[][], // Array of variants: e.g. [["30", "thirty"], ["years", "years old"]]
-  maxWords?: number
+  maxWords?: number,
 ): boolean {
   if (maxWords !== undefined && maxWords !== null) {
     if (countWords(userAnswer) > maxWords) {
@@ -196,10 +202,10 @@ export function isCorrectAnswer(
   const normUser = normalizeAnswer(userAnswer);
   if (!normUser) return false;
 
-  return acceptedNormalizedAnswers.some(variantGroup => 
-    variantGroup.some(variant => {
+  return acceptedNormalizedAnswers.some((variantGroup) =>
+    variantGroup.some((variant) => {
       const expanded = expandOptionalParentheses(variant);
-      return expanded.some(expandedVariant => {
+      return expanded.some((expandedVariant) => {
         const normAccepted = normalizeAnswer(expandedVariant);
         if (normAccepted === normUser) return true;
 
@@ -209,7 +215,7 @@ export function isCorrectAnswer(
         }
         return false;
       });
-    })
+    }),
   );
 }
 
@@ -232,7 +238,7 @@ export function validateWordCount(value: string, maxWords: number): boolean {
 // ==========================================
 
 export interface PauseRange {
-  pausedAt: string;  // ISO String
+  pausedAt: string; // ISO String
   resumedAt: string | null; // ISO String (null if currently paused)
 }
 
@@ -241,35 +247,33 @@ export interface PauseRange {
  * resilient to system sleep, app suspension, and thread latency.
  */
 export function calculateRemainingTime(params: {
-  startedAt: string;          // ISO String
+  startedAt: string; // ISO String
   durationSeconds: number;
   pauseRanges: PauseRange[];
-  currentTime: string;        // ISO String of current reference clock (usually new Date().toISOString())
+  currentTime: string; // ISO String of current reference clock (usually new Date().toISOString())
 }): number {
   const start = new Date(params.startedAt).getTime();
   const now = new Date(params.currentTime).getTime();
-  
+
   let totalPausedDurationMs = 0;
-  
+
   for (const range of params.pauseRanges) {
     const pausedTime = new Date(range.pausedAt).getTime();
-    const resumedTime = range.resumedAt 
-      ? new Date(range.resumedAt).getTime() 
-      : now; // If still paused, use reference now time as upper bound
-      
+    const resumedTime = range.resumedAt ? new Date(range.resumedAt).getTime() : now; // If still paused, use reference now time as upper bound
+
     if (resumedTime > pausedTime) {
-      totalPausedDurationMs += (resumedTime - pausedTime);
+      totalPausedDurationMs += resumedTime - pausedTime;
     }
   }
-  
+
   // Is the exam started in the future? (Guard against system clock changes)
   if (now < start) {
     return params.durationSeconds;
   }
-  
-  const elapsedMs = (now - start) - totalPausedDurationMs;
+
+  const elapsedMs = now - start - totalPausedDurationMs;
   const elapsedSeconds = Math.floor(elapsedMs / 1000);
-  
+
   const remaining = params.durationSeconds - elapsedSeconds;
   return Math.max(0, remaining);
 }
@@ -288,7 +292,7 @@ export interface SkillWeakness {
 
 export function analyzeWeaknesses(
   userAnswers: Record<string, string>,
-  test: any // Using 'any' to avoid strict circular import issues, mapped to IeltsTest structure
+  test: any, // Using 'any' to avoid strict circular import issues, mapped to IeltsTest structure
 ): SkillWeakness[] {
   const typeMap: Record<string, { total: number; correct: number }> = {};
 
@@ -303,10 +307,10 @@ export function analyzeWeaknesses(
         if (!typeMap[type]) {
           typeMap[type] = { total: 0, correct: 0 };
         }
-        
+
         typeMap[type].total += 1;
         const uAns = userAnswers[q.id];
-        
+
         if (isCorrectAnswer(uAns, q.acceptedAnswers)) {
           typeMap[type].correct += 1;
         }
@@ -322,13 +326,13 @@ export function analyzeWeaknesses(
     } else if (accuracy >= 50) {
       status = 'needs_improvement';
     }
-    
+
     return {
       questionType,
       total: stats.total,
       correct: stats.correct,
       accuracy,
-      status
+      status,
     };
   });
 }
@@ -344,14 +348,14 @@ export function getEstimatedBandInfo(
   correctCount: number,
   totalQuestions: number,
   skill: SkillType,
-  moduleType: ExamModuleType = 'academic'
+  moduleType: ExamModuleType = 'academic',
 ): BandEstimateResult {
   if (totalQuestions <= 0) {
     return {
       band: 0.0,
       isEstimate: false,
       rawScore: '0/0',
-      message: 'Khônng có câu hỏi nào được ghi nhận.'
+      message: 'Khônng có câu hỏi nào được ghi nhận.',
     };
   }
 
@@ -363,7 +367,8 @@ export function getEstimatedBandInfo(
       band,
       isEstimate: true,
       rawScore: `${correctCount}/${totalQuestions}`,
-      message: 'Đây là điểm ước tính dựa trên đề thi thử rút gọn (dưới 40 câu). Điểm thi thực tế có thể chênh lệch do phân bố độ khó.'
+      message:
+        'Đây là điểm ước tính dựa trên đề thi thử rút gọn (dưới 40 câu). Điểm thi thực tế có thể chênh lệch do phân bố độ khó.',
     };
   }
 
@@ -373,7 +378,7 @@ export function getEstimatedBandInfo(
     band,
     isEstimate: false,
     rawScore: `${correctCount}/40`,
-    message: 'Kết quả bài thi thực tế đầy đủ chuẩn IELTS.'
+    message: 'Kết quả bài thi thực tế đầy đủ chuẩn IELTS.',
   };
 }
 
@@ -397,17 +402,21 @@ export function generateStudyPlannerAdvice(params: {
     : null;
 
   const lowestWeakness = [...params.weaknesses].sort((a, b) => a.accuracy - b.accuracy)[0];
-  
+
   if (!lowestWeakness) {
     return {
-      adviceText: "Chào mừng bạn đến với hệ thống học tập thích ứng! Hãy hoàn thành bài thi thử đầu tiên để AI phân tích điểm yếu và lên lộ trình học tối ưu.",
+      adviceText:
+        'Chào mừng bạn đến với hệ thống học tập thích ứng! Hãy hoàn thành bài thi thử đầu tiên để AI phân tích điểm yếu và lên lộ trình học tối ưu.',
       status: 'new',
-      recommendedAction: 'Làm đề thi thử Reading hoặc Listening đầu tiên'
+      recommendedAction: 'Làm đề thi thử Reading hoặc Listening đầu tiên',
     };
   }
 
   const formatTypeName = (type: string) => {
-    return type.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return type
+      .split('_')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
   };
 
   const typeVi = formatTypeName(lowestWeakness.questionType);
@@ -441,9 +450,10 @@ export function generateStudyPlannerAdvice(params: {
   return {
     adviceText,
     status,
-    recommendedAction: lowestWeakness.accuracy < 75 
-      ? `Bắt đầu khối Luyện tập Thích ứng dạng ${typeVi} (5 phút)`
-      : 'Làm đề thi thử trọn vẹn 40 câu tiếp theo'
+    recommendedAction:
+      lowestWeakness.accuracy < 75
+        ? `Bắt đầu khối Luyện tập Thích ứng dạng ${typeVi} (5 phút)`
+        : 'Làm đề thi thử trọn vẹn 40 câu tiếp theo',
   };
 }
 
@@ -455,7 +465,7 @@ export function generateStudyPlannerAdvice(params: {
 export function generateAdaptiveDiagnostic(
   tests: any[], // IeltsTest[]
   questionType: string,
-  completedQuestionIds: string[] = []
+  completedQuestionIds: string[] = [],
 ): any | null {
   const isCategoryFilter = questionType.startsWith('category:');
   const filterVal = isCategoryFilter ? questionType.substring(9) : questionType;
@@ -470,13 +480,13 @@ export function generateAdaptiveDiagnostic(
       questions: any[];
     }[] = [];
 
-    tests.forEach(test => {
+    tests.forEach((test) => {
       if (!test.sections) return;
       test.sections.forEach((sec: any) => {
         if (!sec.questionGroups) return;
         sec.questionGroups.forEach((grp: any) => {
           if (!grp.questions) return;
-          
+
           const matchedQuestionsInGroup: any[] = [];
           grp.questions.forEach((q: any) => {
             // Skip questions that are explicitly marked for mock test-only visibility
@@ -487,7 +497,7 @@ export function generateAdaptiveDiagnostic(
             if (excludeIds.includes(q.id)) {
               return;
             }
-            
+
             let isMatch = false;
             if (isCategoryFilter) {
               if (filterVal === 'collocations') {
@@ -530,7 +540,7 @@ export function generateAdaptiveDiagnostic(
                 sectionInstructions: sec.instructions,
                 audioPath: sec.audioPath,
                 audioChecksum: sec.audioChecksum,
-                passageHtml: sec.passageHtml || grp.passageHtml || q.passageHtml || null
+                passageHtml: sec.passageHtml || grp.passageHtml || q.passageHtml || null,
               });
             }
           });
@@ -542,7 +552,7 @@ export function generateAdaptiveDiagnostic(
               audioPath: sec.audioPath,
               audioChecksum: sec.audioChecksum,
               paragraphOptions: grp.paragraphOptions,
-              questions: matchedQuestionsInGroup
+              questions: matchedQuestionsInGroup,
             });
           }
         });
@@ -567,12 +577,12 @@ export function generateAdaptiveDiagnostic(
   // Dynamically size the training set based on question complexity
   let sliceCount = 5;
   const lowerType = filterVal.toLowerCase();
-  
-  const isReadingComp = 
-    lowerType.includes('part_5') || 
-    lowerType.includes('part_6') || 
-    lowerType.includes('part_7') || 
-    lowerType.includes('gapped_text') || 
+
+  const isReadingComp =
+    lowerType.includes('part_5') ||
+    lowerType.includes('part_6') ||
+    lowerType.includes('part_7') ||
+    lowerType.includes('gapped_text') ||
     lowerType.includes('multiple_matching') ||
     lowerType.includes('reading_comprehension');
 
@@ -589,11 +599,7 @@ export function generateAdaptiveDiagnostic(
     sliceCount = 1; // 1 long Reading passage (6-8 complex questions) is ideal
   } else if (isSentenceBased) {
     sliceCount = 12; // 12 sentences for a solid sentence-based practice sheet
-  } else if (
-    lowerType.includes('listen') ||
-    lowerType.includes('part_1') ||
-    lowerType.includes('part_2')
-  ) {
+  } else if (lowerType.includes('listen') || lowerType.includes('part_1') || lowerType.includes('part_2')) {
     sliceCount = 2; // 2 Cloze passages / Listening tasks (e.g., 12-16 questions) for a richer practice set
   } else {
     sliceCount = 10; // Default to a larger set of questions
@@ -603,8 +609,14 @@ export function generateAdaptiveDiagnostic(
 
   const uuid = typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString();
   const readableTitle = isCategoryFilter
-    ? `Chuyên đề ${filterVal.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`
-    : `Dạng câu hỏi ${filterVal.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`;
+    ? `Chuyên đề ${filterVal
+        .split('_')
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ')}`
+    : `Dạng câu hỏi ${filterVal
+        .split('_')
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ')}`;
 
   return {
     id: `adaptive_${filterVal}_${uuid}`,
@@ -621,10 +633,10 @@ export function generateAdaptiveDiagnostic(
           id: `grp_adaptive_${bIdx}`,
           instruction: block.sectionInstructions || `Đọc đoạn văn hoặc thông tin bên dưới và điền đáp án chính xác.`,
           paragraphOptions: block.paragraphOptions,
-          questions: block.questions
-        }))
-      }
-    ]
+          questions: block.questions,
+        })),
+      },
+    ],
   };
 }
 
@@ -640,36 +652,33 @@ export interface MicroSkillStats {
 }
 
 export const QUESTION_TYPE_TO_MICRO_SKILLS_MAP: Record<string, { skill: string; weight: number }[]> = {
-  'matching_headings': [
+  matching_headings: [
     { skill: 'Skimming & Gist Comprehension', weight: 0.5 },
     { skill: 'Identifying Topic Sentences', weight: 0.3 },
-    { skill: 'Paraphrase Recognition', weight: 0.2 }
+    { skill: 'Paraphrase Recognition', weight: 0.2 },
   ],
-  'true_false_not_given': [
+  true_false_not_given: [
     { skill: 'Scanning & Detail Location', weight: 0.4 },
     { skill: 'Fact vs. Opinion Analysis', weight: 0.4 },
-    { skill: 'Negative & Modifying Words Sensitivity', weight: 0.2 }
+    { skill: 'Negative & Modifying Words Sensitivity', weight: 0.2 },
   ],
-  'gap_fill': [
+  gap_fill: [
     { skill: 'Grammatical Word-Class Prediction', weight: 0.5 },
     { skill: 'Scanning & Detail Location', weight: 0.3 },
-    { skill: 'Spelling Accuracy', weight: 0.2 }
+    { skill: 'Spelling Accuracy', weight: 0.2 },
   ],
-  'multiple_choice': [
+  multiple_choice: [
     { skill: 'Distractor Elimination', weight: 0.4 },
     { skill: 'Deep Sentence Comprehension', weight: 0.4 },
-    { skill: 'Paraphrase Recognition', weight: 0.2 }
-  ]
+    { skill: 'Paraphrase Recognition', weight: 0.2 },
+  ],
 };
 
 /**
  * Advanced pedagogical diagnostics tool to calculate specific micro-skill profiles
  * based on the mapping matrix. Helpful for rendering granular skill dashboards.
  */
-export function diagnoseMicroSkills(
-  userAnswers: Record<string, string>,
-  test: any
-): MicroSkillStats[] {
+export function diagnoseMicroSkills(userAnswers: Record<string, string>, test: any): MicroSkillStats[] {
   const skillScores: Record<string, { totalWeight: number; weightedCorrect: number }> = {};
 
   if (!test || !test.sections) return [];
@@ -681,16 +690,16 @@ export function diagnoseMicroSkills(
       grp.questions.forEach((q: any) => {
         const qType = q.type || 'unknown';
         const isCorrect = isCorrectAnswer(userAnswers[q.id], q.acceptedAnswers);
-        
+
         const mappedSkills = QUESTION_TYPE_TO_MICRO_SKILLS_MAP[qType] || [
-          { skill: 'General Comprehension', weight: 1.0 }
+          { skill: 'General Comprehension', weight: 1.0 },
         ];
 
-        mappedSkills.forEach(mapping => {
+        mappedSkills.forEach((mapping) => {
           if (!skillScores[mapping.skill]) {
             skillScores[mapping.skill] = { totalWeight: 0, weightedCorrect: 0 };
           }
-          
+
           skillScores[mapping.skill].totalWeight += mapping.weight;
           if (isCorrect) {
             skillScores[mapping.skill].weightedCorrect += mapping.weight;
@@ -701,10 +710,8 @@ export function diagnoseMicroSkills(
   });
 
   return Object.entries(skillScores).map(([skillName, stats]) => {
-    const score = stats.totalWeight > 0 
-      ? Math.round((stats.weightedCorrect / stats.totalWeight) * 100) 
-      : 0;
-      
+    const score = stats.totalWeight > 0 ? Math.round((stats.weightedCorrect / stats.totalWeight) * 100) : 0;
+
     let description = 'Rèn luyện khả năng đọc quét dữ liệu nhanh.';
     if (skillName === 'Skimming & Gist Comprehension') {
       description = 'Khả năng đọc lướt nắm bắt ý chính toàn đoạn.';
@@ -722,7 +729,7 @@ export function diagnoseMicroSkills(
       skillName,
       description,
       score,
-      weight: stats.totalWeight
+      weight: stats.totalWeight,
     };
   });
 }
@@ -733,30 +740,30 @@ export function diagnoseMicroSkills(
  * Interpolation is piecewise linear between adjacent benchmarks.
  */
 interface ScaleBenchmark {
-  pct: number;   // raw score percentage (0.0 – 1.0)
+  pct: number; // raw score percentage (0.0 – 1.0)
   scale: number; // Cambridge English Scale score
 }
 
 const CPE_BENCHMARKS: ScaleBenchmark[] = [
-  { pct: 0.00, scale: 142 },
-  { pct: 0.20, scale: 165 },
-  { pct: 0.40, scale: 180 },
+  { pct: 0.0, scale: 142 },
+  { pct: 0.2, scale: 165 },
+  { pct: 0.4, scale: 180 },
   { pct: 0.55, scale: 190 },
-  { pct: 0.70, scale: 200 },
-  { pct: 0.80, scale: 210 },
-  { pct: 0.90, scale: 220 },
-  { pct: 1.00, scale: 230 },
+  { pct: 0.7, scale: 200 },
+  { pct: 0.8, scale: 210 },
+  { pct: 0.9, scale: 220 },
+  { pct: 1.0, scale: 230 },
 ];
 
 const CAE_BENCHMARKS: ScaleBenchmark[] = [
-  { pct: 0.00, scale: 122 },
-  { pct: 0.20, scale: 145 },
-  { pct: 0.40, scale: 160 },
+  { pct: 0.0, scale: 122 },
+  { pct: 0.2, scale: 145 },
+  { pct: 0.4, scale: 160 },
   { pct: 0.55, scale: 170 },
-  { pct: 0.70, scale: 180 },
-  { pct: 0.80, scale: 190 },
-  { pct: 0.90, scale: 200 },
-  { pct: 1.00, scale: 210 },
+  { pct: 0.7, scale: 180 },
+  { pct: 0.8, scale: 190 },
+  { pct: 0.9, scale: 200 },
+  { pct: 1.0, scale: 210 },
 ];
 
 /**
@@ -788,11 +795,7 @@ function interpolateScale(percentage: number, benchmarks: ScaleBenchmark[]): num
  * CPE (C2 Proficiency) Scale: ~142 to 230
  * CAE (C1 Advanced) Scale:    ~122 to 210
  */
-export function convertRawToCambridgeScale(
-  rawScore: number,
-  totalQuestions: number,
-  examType: 'CAE' | 'CPE'
-): number {
+export function convertRawToCambridgeScale(rawScore: number, totalQuestions: number, examType: 'CAE' | 'CPE'): number {
   if (totalQuestions <= 0) return 0;
   const percentage = Math.max(0, Math.min(1.0, rawScore / totalQuestions));
   const benchmarks = examType === 'CAE' ? CAE_BENCHMARKS : CPE_BENCHMARKS;
@@ -809,7 +812,7 @@ export function convertRawToCambridgeScale(
  */
 export function calculateCpeWeightedScore(
   userAnswers: Record<string, string>,
-  test: any
+  test: any,
 ): { rawScore: number; maxScore: number } {
   let rawScore = 0;
   let maxScore = 0;
@@ -833,9 +836,12 @@ export function calculateCpeWeightedScore(
         } else if (category.includes('part_7') || category.includes('part 7')) {
           weight = 1;
         } else if (
-          category.includes('part_1') || category.includes('part 1') ||
-          category.includes('part_2') || category.includes('part 2') ||
-          category.includes('part_3') || category.includes('part 3')
+          category.includes('part_1') ||
+          category.includes('part 1') ||
+          category.includes('part_2') ||
+          category.includes('part 2') ||
+          category.includes('part_3') ||
+          category.includes('part 3')
         ) {
           weight = 1;
         } else {
@@ -899,9 +905,9 @@ export interface MouseTrapEntry {
   questionId: string;
   timesFailed: number;
   consecutiveCorrect: number;
-  addedAt: string;         // ISO String
+  addedAt: string; // ISO String
   lastReviewedAt: string | null;
-  nextReviewAt: string;    // ISO String
+  nextReviewAt: string; // ISO String
 }
 
 /**
@@ -910,10 +916,10 @@ export interface MouseTrapEntry {
 export function scheduleNextReview(
   timesFailed: number,
   consecutiveCorrect: number,
-  referenceDate = new Date().toISOString()
+  referenceDate = new Date().toISOString(),
 ): { nextReviewAt: string; intervalDays: number } {
   let intervalDays = 1; // Default: review tomorrow
-  
+
   if (consecutiveCorrect > 0) {
     // Leitner levels: Day 1, Day 3, Day 7, Day 14, Day 30
     const intervals = [1, 3, 7, 14, 30];
@@ -925,9 +931,9 @@ export function scheduleNextReview(
   }
 
   const nextDate = new Date(new Date(referenceDate).getTime() + intervalDays * 24 * 3600 * 1000);
-  
+
   return {
     nextReviewAt: nextDate.toISOString(),
-    intervalDays
+    intervalDays,
   };
 }

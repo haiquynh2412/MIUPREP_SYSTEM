@@ -18,9 +18,12 @@
     "qa:portal-english-item-bank-practice": "node scripts/qa-portal-english-item-bank-practice.mjs",
     "build": "node scripts/build-workspaces.cjs",
     "prepare": "git config core.hooksPath .githooks",
-    "check:bundle": "node scripts/check-bundle-budget.mjs"
+    "check:bundle": "node scripts/check-bundle-budget.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
+    "prettier": "^3.8.4",
     "typescript": "^5.3.3"
   }
 }

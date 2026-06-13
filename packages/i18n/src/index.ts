@@ -54,10 +54,7 @@ export function createTranslator<L extends string>(options: TranslatorOptions<L>
     storageKey,
 
     t(key, lang, params) {
-      const text =
-        translations[lang]?.[key] ??
-        translations[defaultLang]?.[key] ??
-        key;
+      const text = translations[lang]?.[key] ?? translations[defaultLang]?.[key] ?? key;
       return interpolate(text, params);
     },
 

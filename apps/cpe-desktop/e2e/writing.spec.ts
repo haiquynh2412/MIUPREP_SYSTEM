@@ -2,21 +2,20 @@ import { test, expect } from '@playwright/test';
 import { seedTestStudent } from './helpers';
 
 test.describe('CPE Writing AI Module E2E Flow', () => {
-  
-    test.beforeEach(async ({ page }) => {
-    page.on('console', msg => console.log(`[BROWSER CONSOLE]: ${msg.text()}`));
-    page.on('pageerror', err => console.error(`[BROWSER ERROR]: ${err.message}`));
+  test.beforeEach(async ({ page }) => {
+    page.on('console', (msg) => console.log(`[BROWSER CONSOLE]: ${msg.text()}`));
+    page.on('pageerror', (err) => console.error(`[BROWSER ERROR]: ${err.message}`));
 
     await seedTestStudent(page);
     await page.goto('/');
-    
+
     // Perform authentic login using default seeded student account
     await expect(page.locator('text=CPE C2 Proficiency AI Prep Platform')).toBeVisible({ timeout: 45000 });
     await page.click('button:has-text("Đăng nhập")');
     await page.fill('input[type="text"]', 'student');
     await page.fill('input[type="password"]', 'student');
     await page.click('button:has-text("Đăng nhập vào Hệ thống")');
-    
+
     // Wait until dashboard loads
     await expect(page.locator('text=Available Mock Exams')).toBeVisible({ timeout: 45000 });
   });
@@ -37,7 +36,9 @@ test.describe('CPE Writing AI Module E2E Flow', () => {
     const textarea = page.locator('textarea').first();
     await expect(textarea).toBeVisible();
     await textarea.focus();
-    await page.keyboard.insertText('The proliferation of artificial intelligence in modern educational paradigms has engendered significant discourse. While some commentators argue that AI tutors will fundamentally supplant traditional pedagogical approaches, a more nuanced examination reveals that the symbiosis between human expertise and algorithmic precision offers the most propitious trajectory for advanced learners.');
+    await page.keyboard.insertText(
+      'The proliferation of artificial intelligence in modern educational paradigms has engendered significant discourse. While some commentators argue that AI tutors will fundamentally supplant traditional pedagogical approaches, a more nuanced examination reveals that the symbiosis between human expertise and algorithmic precision offers the most propitious trajectory for advanced learners.',
+    );
 
     // 4. Click evaluate
     const evaluateBtn = page.locator('button:has-text("Phân tích bài viết & Chấm điểm")');

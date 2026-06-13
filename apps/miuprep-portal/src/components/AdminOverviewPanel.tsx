@@ -40,8 +40,8 @@ export default function AdminOverviewPanel({
                 HỆ THỐNG CẢNH BÁO SỚM HỌC THUẬT (TELEMETRY ALARMS)
               </span>
               <p className="text-xs text-slate-350 font-semibold mt-0.5 leading-relaxed">
-                Phát hiện học viên <strong className="text-rose-400">@con.cung</strong> có tỷ lệ Bẫy Chuột sai sót tăng đột biến{' '}
-                <strong className="text-rose-455 font-mono">82%</strong> tại bài{' '}
+                Phát hiện học viên <strong className="text-rose-400">@con.cung</strong> có tỷ lệ Bẫy Chuột sai sót tăng
+                đột biến <strong className="text-rose-455 font-mono">82%</strong> tại bài{' '}
                 <strong className="text-slate-100">Tứ giác nội tiếp</strong>!
               </p>
             </div>
@@ -64,7 +64,9 @@ export default function AdminOverviewPanel({
             👥
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_active_students')}</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">
+              {t('aov_active_students')}
+            </span>
             <h3 className="text-2xl font-black text-slate-100 mt-0.5">
               {activeStudentCount} <span className="text-xs text-slate-500 font-bold">con</span>
             </h3>
@@ -76,7 +78,9 @@ export default function AdminOverviewPanel({
             🎯
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_system_score')}</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">
+              {t('aov_system_score')}
+            </span>
             <h3 className="text-sm font-black text-slate-100 mt-1">
               SAT: <span className="text-rose-400 font-mono font-bold">1340</span> • IELTS:{' '}
               <span className="text-indigo-400 font-mono font-bold">7.2</span>
@@ -89,7 +93,9 @@ export default function AdminOverviewPanel({
             🐟
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_circulating')}</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">
+              {t('aov_circulating')}
+            </span>
             <h3 className="text-2xl font-black text-slate-100 mt-0.5">
               {circulatingCoins} <span className="text-xs text-slate-500 font-bold">🐟</span>
             </h3>
@@ -97,12 +103,16 @@ export default function AdminOverviewPanel({
         </div>
 
         <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-5 shadow-lg flex items-center gap-4 hover:border-amber-500/30 transition-all duration-300 relative overflow-hidden">
-          {pendingUserCount > 0 && <span className="absolute top-2 right-2 w-2 h-2 bg-amber-500 rounded-full animate-ping" />}
+          {pendingUserCount > 0 && (
+            <span className="absolute top-2 right-2 w-2 h-2 bg-amber-500 rounded-full animate-ping" />
+          )}
           <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl font-bold border border-amber-500/20">
             ⏳
           </div>
           <div>
-            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">{t('aov_new_requests')}</span>
+            <span className="text-[10px] font-black uppercase text-slate-500 tracking-wider">
+              {t('aov_new_requests')}
+            </span>
             <h3 className="text-2xl font-black text-slate-100 mt-0.5">
               {pendingUserCount} <span className="text-xs text-slate-500 font-bold">{t('aov_requests_unit')}</span>
             </h3>
@@ -120,8 +130,18 @@ export default function AdminOverviewPanel({
             </h3>
             <div className="space-y-3">
               {[
-                { label: '🧮 Toán 9: Tứ giác nội tiếp & Cực trị', value: 78, tone: 'text-orange-400', bar: 'bg-orange-500' },
-                { label: '🎓 SAT RW: Standard English Conventions', value: 65, tone: 'text-rose-400', bar: 'bg-rose-500' },
+                {
+                  label: '🧮 Toán 9: Tứ giác nội tiếp & Cực trị',
+                  value: 78,
+                  tone: 'text-orange-400',
+                  bar: 'bg-orange-500',
+                },
+                {
+                  label: '🎓 SAT RW: Standard English Conventions',
+                  value: 65,
+                  tone: 'text-rose-400',
+                  bar: 'bg-rose-500',
+                },
                 { label: '🎙️ IELTS: Speaking Pronunciation', value: 58, tone: 'text-indigo-400', bar: 'bg-indigo-500' },
               ].map((skill) => (
                 <div key={skill.label}>
@@ -136,9 +156,7 @@ export default function AdminOverviewPanel({
               ))}
             </div>
           </div>
-          <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">
-            {t('aov_heatmap_note')}
-          </div>
+          <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">{t('aov_heatmap_note')}</div>
         </section>
 
         <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col justify-between">
@@ -170,9 +188,7 @@ export default function AdminOverviewPanel({
               </button>
             </div>
           </div>
-          <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">
-            {t('aov_quick_warn')}
-          </div>
+          <div className="text-[9px] text-slate-500 mt-4 leading-relaxed font-light">{t('aov_quick_warn')}</div>
         </section>
       </div>
     </>

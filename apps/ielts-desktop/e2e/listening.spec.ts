@@ -2,21 +2,20 @@ import { test, expect } from '@playwright/test';
 import { seedTestStudent } from './helpers';
 
 test.describe('IELTS Listening Module E2E Flow', () => {
-  
-    test.beforeEach(async ({ page }) => {
-    page.on('console', msg => console.log(`[BROWSER CONSOLE]: ${msg.text()}`));
-    page.on('pageerror', err => console.error(`[BROWSER ERROR]: ${err.message}`));
+  test.beforeEach(async ({ page }) => {
+    page.on('console', (msg) => console.log(`[BROWSER CONSOLE]: ${msg.text()}`));
+    page.on('pageerror', (err) => console.error(`[BROWSER ERROR]: ${err.message}`));
 
     await seedTestStudent(page);
     await page.goto('/');
-    
+
     // Perform authentic login using default seeded student account
     await expect(page.locator('text=IELTS AI Prep Platform')).toBeVisible({ timeout: 45000 });
     await page.click('button:has-text("Đăng nhập")');
     await page.fill('input[type="text"]', 'student');
     await page.fill('input[type="password"]', 'student');
     await page.click('button:has-text("Đăng nhập vào Hệ thống")');
-    
+
     // Wait until dashboard loads
     await expect(page.locator('text=Available Mock Exams')).toBeVisible({ timeout: 45000 });
   });
@@ -25,7 +24,9 @@ test.describe('IELTS Listening Module E2E Flow', () => {
     test.setTimeout(60000);
 
     // 1. Locate and start the first Listening Mock Exam (e.g. index 3 or search for "Library")
-    const startListeningBtn = page.locator('xpath=//h3[contains(text(), "Library Membership Application")]/../../button[contains(., "Start Mock Test")]');
+    const startListeningBtn = page.locator(
+      'xpath=//h3[contains(text(), "Library Membership Application")]/../../button[contains(., "Start Mock Test")]',
+    );
     await expect(startListeningBtn).toBeVisible();
     await startListeningBtn.dispatchEvent('click');
 
@@ -35,7 +36,9 @@ test.describe('IELTS Listening Module E2E Flow', () => {
     await expect(page.locator('text=Lựa chọn chế độ làm bài')).toBeHidden();
 
     // 3. Play Audio Simulator
-    const playButton = page.locator('button[aria-label="Play audio"], button:has-text("Play"), button:has-text("Start Audio")').first();
+    const playButton = page
+      .locator('button[aria-label="Play audio"], button:has-text("Play"), button:has-text("Start Audio")')
+      .first();
     if (await playButton.isVisible()) {
       await playButton.dispatchEvent('click');
     }

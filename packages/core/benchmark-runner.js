@@ -9,11 +9,11 @@ try {
     console.log(`📌 Loaded Golden Dataset from root path: ${rootGoldenPath}`);
   } else {
     GOLDEN_DATASET = require('../content/dist/mocks').GOLDEN_DATASET;
-    console.log("📌 Loaded Golden Dataset from content package mock.");
+    console.log('📌 Loaded Golden Dataset from content package mock.');
   }
 } catch (e) {
   GOLDEN_DATASET = require('../content/dist/mocks').GOLDEN_DATASET;
-  console.log("📌 Loaded Golden Dataset fallback mock:", e.message);
+  console.log('📌 Loaded Golden Dataset fallback mock:', e.message);
 }
 
 const { MockAIAdapter, OpenAIAdapter, GeminiAdapter, InMemoryCredentialStore } = require('../ai/dist');
@@ -25,25 +25,25 @@ const isLiveMode = !!(openaiKey || geminiKey);
 
 const credStore = new InMemoryCredentialStore({
   openai_api_key: openaiKey,
-  gemini_api_key: geminiKey
+  gemini_api_key: geminiKey,
 });
 
 let activeAdapter;
-let modeName = "Calibrated Offline Mode";
+let modeName = 'Calibrated Offline Mode';
 
 if (openaiKey) {
   activeAdapter = new OpenAIAdapter({ store: credStore, model: 'gpt-4o' });
-  modeName = "Live OpenAI (gpt-4o) Mode";
+  modeName = 'Live OpenAI (gpt-4o) Mode';
 } else if (geminiKey) {
   activeAdapter = new GeminiAdapter({ store: credStore, model: 'gemini-1.5-pro' });
-  modeName = "Live Gemini (1.5-pro) Mode";
+  modeName = 'Live Gemini (1.5-pro) Mode';
 } else {
   activeAdapter = new MockAIAdapter();
 }
 
-console.log("\n========================================================");
+console.log('\n========================================================');
 console.log(`📊 IELTS AI ACCURACY BENCHMARK RUNNER [${modeName}]`);
-console.log("========================================================");
+console.log('========================================================');
 console.log(`Loaded ${GOLDEN_DATASET.length} Golden Samples directly from official IELTS guides.`);
 
 async function runBenchmark() {
@@ -53,15 +53,17 @@ async function runBenchmark() {
 
   // For live model tests, select a representative subset to control API costs/limits
   // For offline tests, evaluate all 50+ samples to prove structural accuracy
-  const samplesToEvaluate = isLiveMode 
+  const samplesToEvaluate = isLiveMode
     ? GOLDEN_DATASET.slice(0, 3) // Live validation slice: 3 samples representing low, medium, high ranges
     : GOLDEN_DATASET;
 
   console.log(`Evaluating ${samplesToEvaluate.length} samples in this run...\n`);
 
   for (const sample of samplesToEvaluate) {
-    console.log(`👉 Calling Adapter to Grade: "${sample.sampleId}" (${sample.skill} task ${sample.taskNumber || 2})...`);
-    
+    console.log(
+      `👉 Calling Adapter to Grade: "${sample.sampleId}" (${sample.skill} task ${sample.taskNumber || 2})...`,
+    );
+
     let aiResponse;
     try {
       if (sample.skill === 'writing') {
@@ -69,12 +71,12 @@ async function runBenchmark() {
           attemptId: sample.sampleId,
           essay: sample.studentResponse,
           taskNumber: sample.taskNumber || 2,
-          promptInstruction: sample.prompt
+          promptInstruction: sample.prompt,
         });
       } else {
         aiResponse = await activeAdapter.gradeSpeaking({
           attemptId: sample.sampleId,
-          transcriptMock: sample.studentResponse
+          transcriptMock: sample.studentResponse,
         });
       }
     } catch (apiErr) {
@@ -95,7 +97,7 @@ async function runBenchmark() {
     let samplePassed = true;
 
     // Check individual criteria bounds (GRA, LR, CC, TR/TA)
-    aiResponse.criteria.forEach(crit => {
+    aiResponse.criteria.forEach((crit) => {
       const standardName = crit.criterionName;
       // Map criterion name to golden dataset keys
       let matchKey = '';
@@ -123,7 +125,7 @@ async function runBenchmark() {
       aiOverall: aiBand,
       overallDeviation: absoluteDeviation,
       criteriaDeviations,
-      samplePassed
+      samplePassed,
     });
   }
 
@@ -143,8 +145,8 @@ async function runBenchmark() {
       isLiveMode,
       totalSamples: devianceRecords.length,
       overallMAE: parseFloat(overallMAE.toFixed(3)),
-      passedThresholds: passedThresholds && (overallMAE <= 0.5),
-      records: devianceRecords
+      passedThresholds: passedThresholds && overallMAE <= 0.5,
+      records: devianceRecords,
     };
     fs.writeFileSync(filePath, JSON.stringify(reportData, null, 2), 'utf8');
     console.log(`\n💾 Saved detailed benchmark report to: ${filePath}`);
@@ -152,38 +154,40 @@ async function runBenchmark() {
     console.error(`\n⚠️ Failed to save benchmark report: ${saveErr.message}`);
   }
 
-  console.log("\n========================================================");
-  console.log("📈 IELTS AI ACCURACY BENCHMARK RESULTS SUMMARY");
-  console.log("========================================================");
+  console.log('\n========================================================');
+  console.log('📈 IELTS AI ACCURACY BENCHMARK RESULTS SUMMARY');
+  console.log('========================================================');
   console.log(`- Total Samples Checked: ${devianceRecords.length}`);
   console.log(`- Overall Mean Absolute Error (MAE): ${overallMAE.toFixed(3)} band`);
   console.log(`- Target Deviation Threshold: ±0.5 band`);
 
   if (overallMAE <= 0.5) {
-    console.log("\n✅ STATUS: CALIBRATED SUCCESS (Mean Absolute Error within the target ±0.5 band)");
+    console.log('\n✅ STATUS: CALIBRATED SUCCESS (Mean Absolute Error within the target ±0.5 band)');
   } else {
-    console.log("\n🚨 STATUS: RED FLAG WARNING - AI DEVIATION DETECTED!");
-    console.log("   Mean Absolute Error is higher than the allowed ±0.5 band threshold.");
+    console.log('\n🚨 STATUS: RED FLAG WARNING - AI DEVIATION DETECTED!');
+    console.log('   Mean Absolute Error is higher than the allowed ±0.5 band threshold.');
   }
 
-  console.log("\nDetailed Records:");
-  devianceRecords.forEach(r => {
+  console.log('\nDetailed Records:');
+  devianceRecords.forEach((r) => {
     console.log(`- [${r.samplePassed ? 'PASS' : 'WARN'}] ${r.sampleId}: MAE = ${r.overallDeviation.toFixed(1)} band`);
     Object.entries(r.criteriaDeviations).forEach(([crit, data]) => {
-      console.log(`  └─ ${crit}: Expert = ${data.expert.toFixed(1)} | AI = ${data.ai.toFixed(1)} | Dev = ${data.dev.toFixed(1)} band ${data.dev > 1.0 ? '🚨 (LỆCH QUÁ 1.0 BAND!)' : '✓'}`);
+      console.log(
+        `  └─ ${crit}: Expert = ${data.expert.toFixed(1)} | AI = ${data.ai.toFixed(1)} | Dev = ${data.dev.toFixed(1)} band ${data.dev > 1.0 ? '🚨 (LỆCH QUÁ 1.0 BAND!)' : '✓'}`,
+      );
     });
   });
 
   if (overallMAE <= 0.5 && passedThresholds) {
-    console.log("\n🎉 IELTS AI Accuracy Benchmarking Passed Successfully.");
+    console.log('\n🎉 IELTS AI Accuracy Benchmarking Passed Successfully.');
     process.exit(0);
   } else {
-    console.log("\n❌ IELTS AI Accuracy Benchmarking Failed. Prompt calibration or model adjustment required.");
+    console.log('\n❌ IELTS AI Accuracy Benchmarking Failed. Prompt calibration or model adjustment required.');
     process.exit(1);
   }
 }
 
-runBenchmark().catch(err => {
-  console.error("❌ Exception occurred during benchmark run:", err);
+runBenchmark().catch((err) => {
+  console.error('❌ Exception occurred during benchmark run:', err);
   process.exit(1);
 });

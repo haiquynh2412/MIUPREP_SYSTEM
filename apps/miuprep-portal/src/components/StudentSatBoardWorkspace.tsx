@@ -59,7 +59,6 @@ export default function StudentSatBoardWorkspace({
   const { t } = useTranslation();
   return (
     <div className="space-y-8 animate-fade-in text-left">
-      
       {/* SAT Header Control Bar */}
       <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-r from-slate-900 via-rose-950/5 to-slate-950">
         <div className="flex items-center gap-4">
@@ -85,7 +84,9 @@ export default function StudentSatBoardWorkspace({
             <span className="text-xl">🧠</span>
             <div className="flex flex-col">
               <span className="text-[8px] uppercase tracking-wider text-slate-500 font-bold">Estimated IRT</span>
-              <span className="text-sm font-black text-rose-400 font-mono">{satEstimatedScore} <span className="text-[10px] text-slate-500">/ 1600</span></span>
+              <span className="text-sm font-black text-rose-400 font-mono">
+                {satEstimatedScore} <span className="text-[10px] text-slate-500">/ 1600</span>
+              </span>
             </div>
           </div>
 
@@ -94,7 +95,9 @@ export default function StudentSatBoardWorkspace({
             <span className="text-xl">🎯</span>
             <div className="flex flex-col">
               <span className="text-[8px] uppercase tracking-wider text-slate-500 font-bold">{t('ssb_target')}</span>
-              <span className="text-sm font-black text-amber-400 font-mono">{satTargetScore} <span className="text-[10px] text-slate-500">/ 1600</span></span>
+              <span className="text-sm font-black text-amber-400 font-mono">
+                {satTargetScore} <span className="text-[10px] text-slate-500">/ 1600</span>
+              </span>
             </div>
           </div>
 
@@ -116,8 +119,8 @@ export default function StudentSatBoardWorkspace({
           <div className="space-y-0.5">
             <span className="text-[9px] uppercase tracking-widest font-black text-slate-500">{t('ssb_pick_bank')}</span>
             <p className="text-xs text-slate-300 font-bold">
-              {selectedSatBank === 'antigravity-bank.json' 
-                ? t('ssb_bank_antigravity') 
+              {selectedSatBank === 'antigravity-bank.json'
+                ? t('ssb_bank_antigravity')
                 : selectedSatBank === 'opensat-pinesat.json'
                   ? t('ssb_bank_opensat')
                   : selectedSatBank === 'sat-1590-elite-ai-bank.json'
@@ -135,7 +138,7 @@ export default function StudentSatBoardWorkspace({
 
         <select
           value={selectedSatBank}
-          onChange={e => {
+          onChange={(e) => {
             setSelectedSatBank(e.target.value);
             setActivePracticeState(null);
             setTemplatePracticeState(null);
@@ -159,23 +162,23 @@ export default function StudentSatBoardWorkspace({
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-12 text-center flex flex-col items-center justify-center gap-4">
           <div className="w-10 h-10 border-4 border-rose-500 border-t-transparent rounded-full animate-spin"></div>
           <p className="text-xs text-slate-400 font-bold font-sans">
-            {t('ssb_loading_db')} {selectedSatBank === 'antigravity-bank.json' ? t('ssb_loading_big') : t('ssb_loading_fast')}
+            {t('ssb_loading_db')}{' '}
+            {selectedSatBank === 'antigravity-bank.json' ? t('ssb_loading_big') : t('ssb_loading_fast')}
           </p>
         </div>
       )}
 
       {/* Main Workspace Display */}
-      {!isLoadingQuestions && (
-        activePracticeState ? (
+      {!isLoadingQuestions &&
+        (activePracticeState ? (
           /* ==========================================
              PRACTICE MODE ACTIVE
              ========================================== */
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 items-start">
-            
             {/* Left: Active Question Board */}
             <div className="xl:col-span-2 bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-6 relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950">
               <div className="absolute top-0 left-0 w-full h-[3px] bg-rose-500" />
-              
+
               {/* Breadcrumb info */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-805">
                 <div className="flex flex-col gap-1">
@@ -183,18 +186,25 @@ export default function StudentSatBoardWorkspace({
                     {activePracticeState.domain} • {activePracticeState.skill}
                   </span>
                   <h3 className="text-xs font-black text-slate-400">
-                    {t('ssb_question_counter', { current: activePracticeState.currentIndex + 1, total: activePracticeState.questions.length })}
+                    {t('ssb_question_counter', {
+                      current: activePracticeState.currentIndex + 1,
+                      total: activePracticeState.questions.length,
+                    })}
                   </h3>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className={`text-[9px] font-black px-2 py-0.5 rounded-md border uppercase tracking-wider ${
-                    activePracticeState.questions[activePracticeState.currentIndex].difficulty === 'Hard'
-                      ? 'bg-rose-950/70 border-rose-900 text-rose-400'
-                      : activePracticeState.questions[activePracticeState.currentIndex].difficulty === 'Medium'
-                        ? 'bg-amber-950/70 border-amber-900 text-amber-400'
-                        : 'bg-emerald-950/70 border-emerald-900 text-emerald-400'
-                  }`}>
-                    {t('ssb_difficulty', { level: activePracticeState.questions[activePracticeState.currentIndex].difficulty || 'Medium' })}
+                  <span
+                    className={`text-[9px] font-black px-2 py-0.5 rounded-md border uppercase tracking-wider ${
+                      activePracticeState.questions[activePracticeState.currentIndex].difficulty === 'Hard'
+                        ? 'bg-rose-950/70 border-rose-900 text-rose-400'
+                        : activePracticeState.questions[activePracticeState.currentIndex].difficulty === 'Medium'
+                          ? 'bg-amber-950/70 border-amber-900 text-amber-400'
+                          : 'bg-emerald-950/70 border-emerald-900 text-emerald-400'
+                    }`}
+                  >
+                    {t('ssb_difficulty', {
+                      level: activePracticeState.questions[activePracticeState.currentIndex].difficulty || 'Medium',
+                    })}
                   </span>
                   <span className="text-[9px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded-md font-mono font-bold uppercase">
                     ID: {activePracticeState.questions[activePracticeState.currentIndex].id}
@@ -214,55 +224,66 @@ export default function StudentSatBoardWorkspace({
               <div className="space-y-3">
                 {activePracticeState.questions[activePracticeState.currentIndex].choices ? (
                   /* Multiple Choice Questions */
-                  Object.entries(activePracticeState.questions[activePracticeState.currentIndex].choices ?? {}).map(([opt, text]) => {
-                    const isSelected = activePracticeState.selectedAnswer === opt;
-                    const isCorrectAns = activePracticeState.questions[activePracticeState.currentIndex].correctAnswer?.trim().toUpperCase() === opt.toUpperCase();
-                    const hasBeenAnswered = activePracticeState.answered;
+                  Object.entries(activePracticeState.questions[activePracticeState.currentIndex].choices ?? {}).map(
+                    ([opt, text]) => {
+                      const isSelected = activePracticeState.selectedAnswer === opt;
+                      const isCorrectAns =
+                        activePracticeState.questions[activePracticeState.currentIndex].correctAnswer
+                          ?.trim()
+                          .toUpperCase() === opt.toUpperCase();
+                      const hasBeenAnswered = activePracticeState.answered;
 
-                    let btnStyle = "bg-slate-950 hover:bg-slate-900 border-slate-850 text-slate-300";
-                    if (hasBeenAnswered) {
-                      if (isCorrectAns) {
-                        btnStyle = "bg-emerald-950/30 border-emerald-500 text-emerald-400 font-extrabold";
+                      let btnStyle = 'bg-slate-950 hover:bg-slate-900 border-slate-850 text-slate-300';
+                      if (hasBeenAnswered) {
+                        if (isCorrectAns) {
+                          btnStyle = 'bg-emerald-950/30 border-emerald-500 text-emerald-400 font-extrabold';
+                        } else if (isSelected) {
+                          btnStyle = 'bg-rose-950/30 border-rose-500 text-rose-455 font-extrabold';
+                        } else {
+                          btnStyle = 'bg-slate-950/30 border-slate-900 text-slate-600 opacity-60';
+                        }
                       } else if (isSelected) {
-                        btnStyle = "bg-rose-950/30 border-rose-500 text-rose-455 font-extrabold";
-                      } else {
-                        btnStyle = "bg-slate-950/30 border-slate-900 text-slate-600 opacity-60";
+                        btnStyle = 'bg-rose-950/30 border-rose-500 text-rose-400';
                       }
-                    } else if (isSelected) {
-                      btnStyle = "bg-rose-950/30 border-rose-500 text-rose-400";
-                    }
 
-                    return (
-                      <button
-                        key={opt}
-                        disabled={hasBeenAnswered}
-                        onClick={() => handleAnswerSatQuestion(opt)}
-                        className={`w-full p-4 rounded-2xl border text-xs text-left transition-all duration-150 flex items-start gap-3 hover:scale-[1.002] cursor-pointer ${btnStyle}`}
-                      >
-                        <span className={`w-6 h-6 rounded-lg font-black flex items-center justify-center shrink-0 border uppercase text-[10px] ${
-                          isSelected 
-                            ? 'bg-rose-500 border-rose-400 text-slate-950' 
-                            : hasBeenAnswered && isCorrectAns
-                              ? 'bg-emerald-500 border-emerald-400 text-slate-950'
-                              : 'bg-slate-900 border-slate-800 text-slate-400'
-                        }`}>
-                          {opt}
-                        </span>
-                        <span className="flex-1 leading-normal font-semibold">{text as string}</span>
-                      </button>
-                    );
-                  })
+                      return (
+                        <button
+                          key={opt}
+                          disabled={hasBeenAnswered}
+                          onClick={() => handleAnswerSatQuestion(opt)}
+                          className={`w-full p-4 rounded-2xl border text-xs text-left transition-all duration-150 flex items-start gap-3 hover:scale-[1.002] cursor-pointer ${btnStyle}`}
+                        >
+                          <span
+                            className={`w-6 h-6 rounded-lg font-black flex items-center justify-center shrink-0 border uppercase text-[10px] ${
+                              isSelected
+                                ? 'bg-rose-500 border-rose-400 text-slate-950'
+                                : hasBeenAnswered && isCorrectAns
+                                  ? 'bg-emerald-500 border-emerald-400 text-slate-950'
+                                  : 'bg-slate-900 border-slate-800 text-slate-400'
+                            }`}
+                          >
+                            {opt}
+                          </span>
+                          <span className="flex-1 leading-normal font-semibold">{text as string}</span>
+                        </button>
+                      );
+                    },
+                  )
                 ) : (
                   /* Student-Produced Response (SPR) Math questions */
                   <div className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3">
-                    <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 block mb-1">{t('ssb_enter_numeric')}</span>
+                    <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 block mb-1">
+                      {t('ssb_enter_numeric')}
+                    </span>
                     <div className="flex gap-2">
                       <input
                         type="text"
                         disabled={activePracticeState.answered}
                         placeholder={t('ssb_numeric_placeholder')}
                         value={activePracticeState.customInput}
-                        onChange={e => setActivePracticeState({ ...activePracticeState, customInput: e.target.value })}
+                        onChange={(e) =>
+                          setActivePracticeState({ ...activePracticeState, customInput: e.target.value })
+                        }
                         className="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm outline-none focus:border-rose-500 text-slate-200"
                       />
                       <button
@@ -275,7 +296,10 @@ export default function StudentSatBoardWorkspace({
                     </div>
                     {activePracticeState.answered && (
                       <p className="text-xs text-slate-400 font-medium">
-                        {t('ssb_correct_answer_label')} <strong className="text-emerald-400 font-mono">{activePracticeState.questions[activePracticeState.currentIndex].correctAnswer}</strong>
+                        {t('ssb_correct_answer_label')}{' '}
+                        <strong className="text-emerald-400 font-mono">
+                          {activePracticeState.questions[activePracticeState.currentIndex].correctAnswer}
+                        </strong>
                       </p>
                     )}
                   </div>
@@ -301,8 +325,8 @@ export default function StudentSatBoardWorkspace({
                     onClick={handleNextSatQuestion}
                     className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-950 font-black uppercase text-xs tracking-widest rounded-xl border-0 shadow active:scale-95 duration-100 cursor-pointer"
                   >
-                    {activePracticeState.currentIndex + 1 < activePracticeState.questions.length 
-                      ? t('ssb_next') 
+                    {activePracticeState.currentIndex + 1 < activePracticeState.questions.length
+                      ? t('ssb_next')
                       : t('ssb_finish')}
                   </button>
                 </div>
@@ -315,9 +339,11 @@ export default function StudentSatBoardWorkspace({
                 <span className="text-xs font-black uppercase tracking-wider text-indigo-400 font-sans flex items-center gap-1.5">
                   {t('ssb_desmos')}
                 </span>
-                <span className="text-[9px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono">LIVE PREP</span>
+                <span className="text-[9px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono">
+                  LIVE PREP
+                </span>
               </div>
-              
+
               <div className="border border-slate-850 rounded-2xl overflow-hidden h-[360px] bg-slate-950 relative shadow-inner">
                 <iframe
                   src="https://www.desmos.com/calculator?embed=true"
@@ -328,7 +354,8 @@ export default function StudentSatBoardWorkspace({
                 />
               </div>
               <p className="text-[9px] text-slate-500 leading-relaxed font-light">
-                * Dành cho phần Math: Vẽ các phương trình giao nhau để giải tìm nghiệm nhanh nhất. Máy tính được tích hợp chuẩn giao diện tối.
+                * Dành cho phần Math: Vẽ các phương trình giao nhau để giải tìm nghiệm nhanh nhất. Máy tính được tích
+                hợp chuẩn giao diện tối.
               </p>
             </div>
           </div>
@@ -337,12 +364,13 @@ export default function StudentSatBoardWorkspace({
              OVERVIEW: KEY MATRIX OF TOPICS
              ========================================== */
           <div className="space-y-8 animate-fade-in">
-            
             {/* Welcome Banner */}
             <div className="bg-gradient-to-r from-rose-950/20 via-slate-900 to-rose-900/10 border border-rose-500/20 rounded-3xl p-6 text-left flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-2 bg-rose-500 h-full" />
               <div className="space-y-2">
-                <h2 className="text-lg font-black text-rose-455 font-sans tracking-wide uppercase">{t('ssb_adaptive_title')}</h2>
+                <h2 className="text-lg font-black text-rose-455 font-sans tracking-wide uppercase">
+                  {t('ssb_adaptive_title')}
+                </h2>
                 <p className="text-xs text-slate-350 leading-relaxed font-light font-sans max-w-2xl">
                   {t('ssb_adaptive_desc')} Hãy chọn một kỹ năng nhỏ bất kỳ bên dưới để bắt đầu meow!
                 </p>
@@ -357,44 +385,50 @@ export default function StudentSatBoardWorkspace({
 
             {/* Skill Taxonomy Matrix */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-              
               {/* Section 1: Reading & Writing */}
               <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 space-y-6">
                 <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                   <h3 className="text-sm font-black text-indigo-400 uppercase tracking-widest flex items-center gap-2">
                     <span>📚 READING & WRITING DOMAINS</span>
                   </h3>
-                  <span className="text-[10px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono font-bold">4 DOMAINS</span>
+                  <span className="text-[10px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono font-bold">
+                    4 DOMAINS
+                  </span>
                 </div>
 
-                {satTaxonomy?.sections?.["Reading and Writing"]?.domains ? (
-                  Object.entries(satTaxonomy.sections["Reading and Writing"].domains).map(([domainName, domainObj]: [string, SatTaxonomyDomain]) => (
-                    <div key={domainName} className="space-y-3">
-                      <span className="text-xs font-black text-slate-200 block border-l-2 border-indigo-500 pl-2 bg-indigo-500/5 py-1 rounded-r-md">
-                        {domainName} <span className="text-[10px] text-slate-500 font-mono font-normal">({t('ssb_weight', { pct: domainObj.targetPct ?? 0 })})</span>
-                      </span>
-                      
-                      <div className="grid grid-cols-1 gap-2.5">
-                        {Object.keys(domainObj.canonicalSkills || {}).map(skillName => (
-                          <div
-                            key={skillName}
-                            className="p-3 bg-slate-955 rounded-xl border border-slate-850 flex items-center justify-between hover:border-indigo-500/40 transition-colors"
-                          >
-                            <div className="space-y-0.5">
-                              <span className="text-xs font-bold text-slate-300 block">{skillName}</span>
-                              <span className="text-[9px] text-slate-500 font-light block">{t('ssb_skill_cb')}</span>
-                            </div>
-                            <button
-                              onClick={() => handleStartPractice(domainName, skillName)}
-                              className="px-3 py-1.5 bg-indigo-900/50 hover:bg-indigo-600 border border-indigo-850 text-indigo-300 hover:text-white text-[10px] font-black uppercase rounded-lg transition-colors border-0 cursor-pointer"
+                {satTaxonomy?.sections?.['Reading and Writing']?.domains ? (
+                  Object.entries(satTaxonomy.sections['Reading and Writing'].domains).map(
+                    ([domainName, domainObj]: [string, SatTaxonomyDomain]) => (
+                      <div key={domainName} className="space-y-3">
+                        <span className="text-xs font-black text-slate-200 block border-l-2 border-indigo-500 pl-2 bg-indigo-500/5 py-1 rounded-r-md">
+                          {domainName}{' '}
+                          <span className="text-[10px] text-slate-500 font-mono font-normal">
+                            ({t('ssb_weight', { pct: domainObj.targetPct ?? 0 })})
+                          </span>
+                        </span>
+
+                        <div className="grid grid-cols-1 gap-2.5">
+                          {Object.keys(domainObj.canonicalSkills || {}).map((skillName) => (
+                            <div
+                              key={skillName}
+                              className="p-3 bg-slate-955 rounded-xl border border-slate-850 flex items-center justify-between hover:border-indigo-500/40 transition-colors"
                             >
-                              {t('ssb_practice')}
-                            </button>
-                          </div>
-                        ))}
+                              <div className="space-y-0.5">
+                                <span className="text-xs font-bold text-slate-300 block">{skillName}</span>
+                                <span className="text-[9px] text-slate-500 font-light block">{t('ssb_skill_cb')}</span>
+                              </div>
+                              <button
+                                onClick={() => handleStartPractice(domainName, skillName)}
+                                className="px-3 py-1.5 bg-indigo-900/50 hover:bg-indigo-600 border border-indigo-850 text-indigo-300 hover:text-white text-[10px] font-black uppercase rounded-lg transition-colors border-0 cursor-pointer"
+                              >
+                                {t('ssb_practice')}
+                              </button>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))
+                    ),
+                  )
                 ) : (
                   /* Fallback reading taxonomy if fetch delayed */
                   <div className="text-xs text-slate-500 italic py-6 text-center">{t('ssb_loading_reading')}</div>
@@ -407,47 +441,54 @@ export default function StudentSatBoardWorkspace({
                   <h3 className="text-sm font-black text-rose-455 uppercase tracking-widest flex items-center gap-2">
                     <span>📐 MATHEMATICS DOMAINS</span>
                   </h3>
-                  <span className="text-[10px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono font-bold">4 DOMAINS</span>
+                  <span className="text-[10px] bg-slate-950 text-slate-500 border border-slate-850 px-2 py-0.5 rounded font-mono font-bold">
+                    4 DOMAINS
+                  </span>
                 </div>
 
-                {satTaxonomy?.sections?.["Math"]?.domains ? (
-                  Object.entries(satTaxonomy.sections["Math"].domains).map(([domainName, domainObj]: [string, SatTaxonomyDomain]) => (
-                    <div key={domainName} className="space-y-3">
-                      <span className="text-xs font-black text-slate-200 block border-l-2 border-rose-500 pl-2 bg-rose-500/5 py-1 rounded-r-md">
-                        {domainName} <span className="text-[10px] text-slate-500 font-mono font-normal">({t('ssb_weight', { pct: domainObj.targetPct ?? 0 })})</span>
-                      </span>
-                      
-                      <div className="grid grid-cols-1 gap-2.5">
-                        {Object.keys(domainObj.canonicalSkills || {}).map(skillName => (
-                          <div
-                            key={skillName}
-                            className="p-3 bg-slate-955 rounded-xl border border-slate-850 flex items-center justify-between hover:border-rose-500/40 transition-colors"
-                          >
-                            <div className="space-y-0.5">
-                              <span className="text-xs font-bold text-slate-300 block">{skillName}</span>
-                              <span className="text-[9px] text-slate-500 font-light block">{t('ssb_subtopic_adaptive')}</span>
-                            </div>
-                            <button
-                              onClick={() => handleStartPractice(domainName, skillName)}
-                              className="px-3 py-1.5 bg-rose-950/50 hover:bg-rose-600 border border-rose-900 text-rose-400 hover:text-white text-[10px] font-black uppercase rounded-lg transition-colors border-0 cursor-pointer"
+                {satTaxonomy?.sections?.['Math']?.domains ? (
+                  Object.entries(satTaxonomy.sections['Math'].domains).map(
+                    ([domainName, domainObj]: [string, SatTaxonomyDomain]) => (
+                      <div key={domainName} className="space-y-3">
+                        <span className="text-xs font-black text-slate-200 block border-l-2 border-rose-500 pl-2 bg-rose-500/5 py-1 rounded-r-md">
+                          {domainName}{' '}
+                          <span className="text-[10px] text-slate-500 font-mono font-normal">
+                            ({t('ssb_weight', { pct: domainObj.targetPct ?? 0 })})
+                          </span>
+                        </span>
+
+                        <div className="grid grid-cols-1 gap-2.5">
+                          {Object.keys(domainObj.canonicalSkills || {}).map((skillName) => (
+                            <div
+                              key={skillName}
+                              className="p-3 bg-slate-955 rounded-xl border border-slate-850 flex items-center justify-between hover:border-rose-500/40 transition-colors"
                             >
-                              Luyện ➔
-                            </button>
-                          </div>
-                        ))}
+                              <div className="space-y-0.5">
+                                <span className="text-xs font-bold text-slate-300 block">{skillName}</span>
+                                <span className="text-[9px] text-slate-500 font-light block">
+                                  {t('ssb_subtopic_adaptive')}
+                                </span>
+                              </div>
+                              <button
+                                onClick={() => handleStartPractice(domainName, skillName)}
+                                className="px-3 py-1.5 bg-rose-950/50 hover:bg-rose-600 border border-rose-900 text-rose-400 hover:text-white text-[10px] font-black uppercase rounded-lg transition-colors border-0 cursor-pointer"
+                              >
+                                Luyện ➔
+                              </button>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))
+                    ),
+                  )
                 ) : (
                   /* Fallback math taxonomy */
                   <div className="text-xs text-slate-500 italic py-6 text-center">{t('ssb_loading_math')}</div>
                 )}
               </div>
-
             </div>
           </div>
-        )
-      )}
+        ))}
     </div>
   );
 }

@@ -130,7 +130,11 @@ export default function AdminUsersPanel({
                               : 'bg-slate-950/60 border-slate-850 text-slate-400'
                         }`}
                       >
-                        {user.role === 'admin' ? t('aus_role_admin') : user.role === 'parent' ? t('aus_opt_parent') : t('aus_opt_student')}
+                        {user.role === 'admin'
+                          ? t('aus_role_admin')
+                          : user.role === 'parent'
+                            ? t('aus_opt_parent')
+                            : t('aus_opt_student')}
                       </span>
                     </td>
                     <td className="p-4 font-bold">
@@ -143,7 +147,11 @@ export default function AdminUsersPanel({
                               : 'bg-amber-950/75 border-amber-900 text-amber-400 animate-pulse'
                         }`}
                       >
-                        {status === 'approved' ? t('aus_status_approved') : status === 'rejected' ? t('aus_status_rejected') : t('aus_status_pending')}
+                        {status === 'approved'
+                          ? t('aus_status_approved')
+                          : status === 'rejected'
+                            ? t('aus_status_rejected')
+                            : t('aus_status_pending')}
                       </span>
                     </td>
                     <td className="p-4 text-slate-500 font-mono">

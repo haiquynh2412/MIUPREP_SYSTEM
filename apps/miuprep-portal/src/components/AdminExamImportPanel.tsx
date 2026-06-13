@@ -58,7 +58,9 @@ export default function AdminExamImportPanel({
           />
         </div>
         <div>
-          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('aei_exam_title_label')}</label>
+          <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+            {t('aei_exam_title_label')}
+          </label>
           <input
             type="text"
             placeholder={t('aei_exam_title_placeholder')}
@@ -70,7 +72,9 @@ export default function AdminExamImportPanel({
         </div>
         <div className="grid grid-cols-2 gap-2">
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('aei_questions_label')}</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+              {t('aei_questions_label')}
+            </label>
             <input
               type="number"
               min={1}
@@ -81,7 +85,9 @@ export default function AdminExamImportPanel({
             />
           </div>
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('aei_duration_label')}</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+              {t('aei_duration_label')}
+            </label>
             <input
               type="number"
               min={5}

@@ -41,7 +41,11 @@ export function LanguageProvider<L extends string>({ translator, children }: Lan
     [lang, setLang, translator],
   );
 
-  return <LanguageContext.Provider value={value as unknown as LanguageContextValue<string>}>{children}</LanguageContext.Provider>;
+  return (
+    <LanguageContext.Provider value={value as unknown as LanguageContextValue<string>}>
+      {children}
+    </LanguageContext.Provider>
+  );
 }
 
 export function useTranslation<L extends string = string>(): LanguageContextValue<L> {
@@ -64,7 +68,12 @@ export interface LanguageToggleProps {
 export function LanguageToggle({ className, style }: LanguageToggleProps) {
   const { lang, setLang, languages } = useTranslation();
   return (
-    <div className={className} style={{ display: 'inline-flex', alignItems: 'center', gap: 2, ...style }} role="group" aria-label="Language">
+    <div
+      className={className}
+      style={{ display: 'inline-flex', alignItems: 'center', gap: 2, ...style }}
+      role="group"
+      aria-label="Language"
+    >
       {languages.map((code, i) => (
         <React.Fragment key={code}>
           {i > 0 && <span style={{ opacity: 0.4 }}>/</span>}

@@ -39,9 +39,7 @@ function loadValidatorModule(): Promise<ValidatorModule> {
   return validatorModulePromise;
 }
 
-export async function loadEnglishSeedTests(
-  tracks: EnglishSeedTrack[] = ['ielts', 'cpe', 'cae'],
-): Promise<IeltsTest[]> {
+export async function loadEnglishSeedTests(tracks: EnglishSeedTrack[] = ['ielts', 'cpe', 'cae']): Promise<IeltsTest[]> {
   const lists = await Promise.all(tracks.map(loadSeedTestsForTrack));
   const seenIds = new Set<string>();
   return lists.flat().filter((test) => {

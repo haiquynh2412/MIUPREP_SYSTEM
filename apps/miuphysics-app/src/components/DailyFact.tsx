@@ -1,9 +1,21 @@
 import { t } from '../data/i18n.js';
 
 const FALLBACK_FACTS = [
-  { fact: 'Ánh sáng mất khoảng 8 phút 20 giây để đi từ Mặt Trời đến Trái Đất. ☀️', factEn: 'Light takes about 8 minutes 20 seconds to travel from the Sun to Earth. ☀️', emoji: '☀️' },
-  { fact: 'Sấm sét nóng gấp 5 lần bề mặt Mặt Trời — khoảng 30.000°C! ⚡', factEn: 'Lightning is 5 times hotter than the surface of the Sun — about 30,000°C! ⚡', emoji: '⚡' },
-  { fact: 'Trong không gian, không ai có thể nghe thấy bạn la hét — vì không có môi trường truyền âm! 🚀', factEn: 'In space, no one can hear you scream — because there is no medium for sound! 🚀', emoji: '🚀' },
+  {
+    fact: 'Ánh sáng mất khoảng 8 phút 20 giây để đi từ Mặt Trời đến Trái Đất. ☀️',
+    factEn: 'Light takes about 8 minutes 20 seconds to travel from the Sun to Earth. ☀️',
+    emoji: '☀️',
+  },
+  {
+    fact: 'Sấm sét nóng gấp 5 lần bề mặt Mặt Trời — khoảng 30.000°C! ⚡',
+    factEn: 'Lightning is 5 times hotter than the surface of the Sun — about 30,000°C! ⚡',
+    emoji: '⚡',
+  },
+  {
+    fact: 'Trong không gian, không ai có thể nghe thấy bạn la hét — vì không có môi trường truyền âm! 🚀',
+    factEn: 'In space, no one can hear you scream — because there is no medium for sound! 🚀',
+    emoji: '🚀',
+  },
 ];
 
 function seededRandom(seed) {
@@ -14,16 +26,14 @@ function seededRandom(seed) {
 export default function DailyFact({ facts = [], selectedGrade = null, lang = 'vi' }: any) {
   const daySeed = Math.floor(Date.now() / 86400000);
 
-  const filteredFacts = selectedGrade
-    ? facts.filter((f) => !f.grade || f.grade === selectedGrade)
-    : facts;
+  const filteredFacts = selectedGrade ? facts.filter((f) => !f.grade || f.grade === selectedGrade) : facts;
 
   const pool = filteredFacts.length > 0 ? filteredFacts : FALLBACK_FACTS;
   const index = Math.floor(seededRandom(daySeed) * pool.length);
   const fact = pool[index];
 
   const emoji = fact.emoji || '🔬';
-  const text = lang === 'en' ? (fact.factEn || fact.fact || fact.text || fact) : (fact.fact || fact.text || fact);
+  const text = lang === 'en' ? fact.factEn || fact.fact || fact.text || fact : fact.fact || fact.text || fact;
 
   return (
     <div className="daily-fact-card animate-fadeIn">

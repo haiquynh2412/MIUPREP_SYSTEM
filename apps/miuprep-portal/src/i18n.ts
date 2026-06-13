@@ -14,7 +14,8 @@ export const portalTranslations: TranslationDict = {
     auth_username_placeholder: 'Nhập username...',
     auth_password_label: 'Mật khẩu',
     auth_login_button: 'Đăng Nhập Ngay',
-    auth_first_time_hint: '* Lần đầu sử dụng? Chuyển sang tab Đăng ký và chọn vai trò Quản trị để tạo tài khoản Admin đầu tiên.',
+    auth_first_time_hint:
+      '* Lần đầu sử dụng? Chuyển sang tab Đăng ký và chọn vai trò Quản trị để tạo tài khoản Admin đầu tiên.',
     // Auth — register form
     auth_role_question: 'Bạn là ai meow?',
     auth_role_student: '🎒 Học Sinh',
@@ -31,7 +32,8 @@ export const portalTranslations: TranslationDict = {
     auth_link_student_label: 'Username Học sinh liên kết *',
     auth_link_student_placeholder: 'Username của con (phải có sẵn)...',
     auth_link_student_hint: 'Phụ huynh cần nhập đúng tên đăng nhập học sinh để đồng bộ dữ liệu.',
-    auth_admin_hint: 'Tài khoản Quản trị đầu tiên của hệ thống được tạo trực tiếp tại đây. Khi đã có Quản trị viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.',
+    auth_admin_hint:
+      'Tài khoản Quản trị đầu tiên của hệ thống được tạo trực tiếp tại đây. Khi đã có Quản trị viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.',
     auth_register_button: 'Đăng Ký Tài Khoản',
     // Header / top-bar
     header_admin_content: 'Admin Content',
@@ -93,7 +95,8 @@ export const portalTranslations: TranslationDict = {
     notif_telemetry_cleared: 'Đã làm sạch toàn bộ Telemetry Logs meow!',
     // Notifications (interpolated)
     notif_load_bank_failed: 'Không thể nạp dữ liệu từ tệp {bank} meow!',
-    notif_no_skill_questions: 'Chưa có câu hỏi nào thuộc kỹ năng [{skill}] trong ngân hàng này meow! Hãy thử ngân hàng khác!',
+    notif_no_skill_questions:
+      'Chưa có câu hỏi nào thuộc kỹ năng [{skill}] trong ngân hàng này meow! Hãy thử ngân hàng khác!',
     notif_start_adaptive: 'Bắt đầu luyện tập {count} câu hỏi thích ứng meow! 🐾🎓',
     notif_start_scored: 'Bat dau scored practice: {count} cau tu {title}.',
     notif_no_itembank_ready: 'Chua co item-bank practice learning-ready cho {program}.',
@@ -118,7 +121,8 @@ export const portalTranslations: TranslationDict = {
     notif_account_deleted: 'Đã xóa vĩnh viễn tài khoản @{username} meow!',
     // Native dialogs
     confirm_delete_account: 'Bạn có chắc chắn muốn xóa vĩnh viễn tài khoản @{username} meow?',
-    alert_reminder_sent: 'Đã gửi thông báo nhắc nhở kèm bài tập bổ sung môn Toán 9 cho tài khoản con @con.cung meow! 🐾🚀',
+    alert_reminder_sent:
+      'Đã gửi thông báo nhắc nhở kèm bài tập bổ sung môn Toán 9 cho tài khoản con @con.cung meow! 🐾🚀',
     // Student dashboard
     sdw_wallet_title: 'Ví Xu Cá Hồi Chung',
     sdw_wallet_sub: 'Khen thưởng từ MiuMath & Phụ huynh',
@@ -131,7 +135,8 @@ export const portalTranslations: TranslationDict = {
     sdw_your_wallet: 'Ví của bạn: ',
     sdw_journal_button: 'Ghi Sổ',
     sdw_all_traps_clear: 'Tuyệt vời meow! Bạn đã xử lý sạch sẽ toàn bộ bẫy chuột ôn tập rồi! 🐟',
-    sdw_shop_desc: 'Dùng xu cá hồi học viên tích lũy để mở khóa đồ trang trí cho Miu. Emoji phụ kiện sẽ bay bập bênh cạnh Miu meow!',
+    sdw_shop_desc:
+      'Dùng xu cá hồi học viên tích lũy để mở khóa đồ trang trí cho Miu. Emoji phụ kiện sẽ bay bập bênh cạnh Miu meow!',
     sdw_unlock: '🛍️ Mở khóa',
     sdw_desmos_label: '📐 CÔNG CỤ MÁY TÍNH VẼ ĐỒ THỊ DESMOS TÍCH HỢP',
     sdw_desmos_note: '* Đã kích hoạt Dark-Theme Desmos thích hợp cho học viên MiuPrep.',
@@ -142,7 +147,8 @@ export const portalTranslations: TranslationDict = {
     sdw_equipped: '✓ Đang diện đồ',
     sdw_try_on: '👚 Mặc thử',
     sdw_notif_open_sat: 'Đã mở phân hệ học tập thích ứng SAT Studio! 🎓🐾',
-    sdw_alert_track_compiling: 'Chào bạn meow meow! Tính năng mở khóa phân hệ [{title}] đang được Tauri biên dịch độc lập meow! 🐾',
+    sdw_alert_track_compiling:
+      'Chào bạn meow meow! Tính năng mở khóa phân hệ [{title}] đang được Tauri biên dịch độc lập meow! 🐾',
     sdw_desmos_hide: '✕ Thu Nhỏ Máy Tính',
     sdw_desmos_show: '🧮 Mở Máy Tính Đồ Thị',
     sdw_journal_placeholder: 'Hôm nay bạn đã học được mẹo giải toán Casio hay từ vựng IELTS mới nào meow...',
@@ -187,7 +193,8 @@ export const portalTranslations: TranslationDict = {
     ssb_submit: 'Gửi Đáp Án',
     ssb_desmos: '🧮 Máy tính vẽ đồ thị Desmos',
     ssb_adaptive_title: '⚡ LUYỆN TẬP CHUYÊN ĐỀ HỆ THỐNG THÍCH ỨNG',
-    ssb_adaptive_desc: 'Hệ thống tự động điều chỉnh độ khó của câu hỏi theo mức năng lực thời gian thực dựa trên Lý thuyết Ứng đáp Câu hỏi (IRT).',
+    ssb_adaptive_desc:
+      'Hệ thống tự động điều chỉnh độ khó của câu hỏi theo mức năng lực thời gian thực dựa trên Lý thuyết Ứng đáp Câu hỏi (IRT).',
     ssb_adaptive_cta: '🔥 Thi thử thích ứng tổng hợp',
     ssb_skill_cb: 'Kỹ năng chuẩn College Board',
     ssb_subtopic_adaptive: 'Chuyên đề con thích ứng',
@@ -213,11 +220,13 @@ export const portalTranslations: TranslationDict = {
     aov_system_score: 'Điểm Số Hệ Thống',
     aov_circulating: 'Xu Cá Hồi Lưu Thông',
     aov_new_requests: 'Yêu Cầu Duyệt Mới',
-    aov_heatmap_note: '💡 Bản đồ kỹ năng yếu được tổng hợp tự động dựa trên nhật ký Bẫy Chuột và sai sót làm bài thực tế của tất cả học viên đang online.',
+    aov_heatmap_note:
+      '💡 Bản đồ kỹ năng yếu được tổng hợp tự động dựa trên nhật ký Bẫy Chuột và sai sót làm bài thực tế của tất cả học viên đang online.',
     aov_approve_all: '✓ Duyệt tất cả',
     aov_boost_coins: '🐟 Bơm 1K Coins',
     aov_clear_logs: '🧹 Xóa Telemetry Logs',
-    aov_quick_warn: '⚠️ Các lệnh nhanh tác động trực tiếp lên database Local Storage dùng chung của toàn hệ thống. Hãy cân nhắc kỹ trước khi bấm!',
+    aov_quick_warn:
+      '⚠️ Các lệnh nhanh tác động trực tiếp lên database Local Storage dùng chung của toàn hệ thống. Hãy cân nhắc kỹ trước khi bấm!',
     aov_heatmap_title: '🔥 BẢN ĐỒ KỸ NĂNG YẾU (SYSTEM HEATMAP)',
     aov_quick_title: '⚡ KÍCH HOẠT HỆ THỐNG MẪU NHANH (QUICK ACTIONS)',
     aov_requests_unit: 'yêu cầu',
@@ -378,7 +387,8 @@ export const portalTranslations: TranslationDict = {
     acr_add_question: 'Thêm câu hỏi',
     acr_label_passage: 'Đoạn văn / ngữ cảnh đề',
     acr_label_transcript: 'Lời thoại / văn bản nghe',
-    acr_empty_questions_hint: 'Đề này đang ở dạng tóm tắt. Bấm Thêm câu hỏi để nhập nội dung câu hỏi trực tiếp, hoặc import JSON đầy đủ để có phần/câu hỏi tự động.',
+    acr_empty_questions_hint:
+      'Đề này đang ở dạng tóm tắt. Bấm Thêm câu hỏi để nhập nội dung câu hỏi trực tiếp, hoặc import JSON đầy đủ để có phần/câu hỏi tự động.',
     acr_placeholder_answer: 'Đáp án',
     acr_remove: 'Xóa',
     acr_placeholder_options: 'Các lựa chọn, mỗi dòng một mục',
@@ -447,13 +457,15 @@ export const portalTranslations: TranslationDict = {
     asc_integrity_th_type: 'Loại ngân hàng',
     asc_integrity_th_safety: 'Độ an toàn',
     asc_integrity_th_status: 'Trạng thái',
-    asc_integrity_security_note: 'Bảo mật và bản quyền: dữ liệu được kiểm duyệt để giảm trùng lặp, giữ độ khó sát kỳ thi SAT thật và bảo vệ chất lượng nội dung.',
+    asc_integrity_security_note:
+      'Bảo mật và bản quyền: dữ liệu được kiểm duyệt để giảm trùng lặp, giữ độ khó sát kỳ thi SAT thật và bảo vệ chất lượng nội dung.',
     asc_calib_config_heading: 'Cấu hình tham số thích ứng',
     asc_calib_target_score: 'Mục tiêu điểm đánh giá SAT',
     asc_calib_irt_alpha: 'Tốc độ học IRT alpha',
     asc_calib_irt_note: 'Tham số IRT điều chỉnh tốc độ hệ thống thích ứng với kết quả Module 1 của học viên.',
     asc_calib_irt_engine_heading: 'Bộ hiệu chuẩn thống kê IRT',
-    asc_calib_irt_engine_desc: 'Chạy phân tích để cập nhật độ phân biệt, độ khó và tham số câu hỏi cho ngân hàng đề thi thích ứng.',
+    asc_calib_irt_engine_desc:
+      'Chạy phân tích để cập nhật độ phân biệt, độ khó và tham số câu hỏi cho ngân hàng đề thi thích ứng.',
     asc_btn_calibrating: 'Đang hiệu chuẩn mô hình...',
     asc_btn_run_calibration: 'Chạy hiệu chuẩn IRT',
     // UnifiedLearnerDashboard
@@ -462,7 +474,8 @@ export const portalTranslations: TranslationDict = {
     uld_badge_live_progress: 'Tiến độ trực tiếp',
     uld_badge_preview_mode: 'Chế độ xem trước',
     uld_growth_map_title: 'Bản đồ phát triển của bạn',
-    uld_growth_map_subtitle: 'Một nơi duy nhất để xem điều gì đang tiến bộ, điều gì vẫn cản trở tiến độ và hành động nhỏ nào nên thực hiện tiếp theo.',
+    uld_growth_map_subtitle:
+      'Một nơi duy nhất để xem điều gì đang tiến bộ, điều gì vẫn cản trở tiến độ và hành động nhỏ nào nên thực hiện tiếp theo.',
     uld_metric_programs: 'Chương trình',
     uld_metric_avg_mastery: 'Mức thành thạo TB',
     uld_metric_evidence: 'Bằng chứng',
@@ -496,7 +509,8 @@ export const portalTranslations: TranslationDict = {
     aiq_badge_intervention_queue: 'Hàng đợi can thiệp',
     aiq_badge_roles: 'giáo viên / quản trị / phụ huynh',
     aiq_heading_today: 'Việc cần can thiệp hôm nay',
-    aiq_intro: 'Hàng đợi gồm học sinh bị kẹt, nội dung cần sửa và bản tóm tắt cho phụ huynh. Mục tiêu là quản trị viên nhìn vào là biết làm gì, không phải đọc từng log hay từng đề.',
+    aiq_intro:
+      'Hàng đợi gồm học sinh bị kẹt, nội dung cần sửa và bản tóm tắt cho phụ huynh. Mục tiêu là quản trị viên nhìn vào là biết làm gì, không phải đọc từng log hay từng đề.',
     aiq_metric_learners: 'Học sinh',
     aiq_metric_content: 'Nội dung',
     aiq_metric_parents: 'Phụ huynh',
@@ -542,7 +556,8 @@ export const portalTranslations: TranslationDict = {
     aiq_focus_foundation_repair: 'sửa nền tảng',
     aiq_focus_weakest_prerequisite: 'điều kiện tiên quyết yếu nhất',
     aiq_focus_weakest_skill: 'kỹ năng yếu nhất',
-    aiq_content_math_missing_meta_reason: 'Bài học Toán thiếu conceptIds/skillIds rõ ràng để định tuyến dựa trên đồ thị.',
+    aiq_content_math_missing_meta_reason:
+      'Bài học Toán thiếu conceptIds/skillIds rõ ràng để định tuyến dựa trên đồ thị.',
     aiq_content_math_missing_meta_action: 'Thêm metadata trước khi dùng bài học này trong gợi ý thích ứng.',
     aiq_content_exam_errors_reason: 'Bộ chuyển đổi báo cáo {count} vấn đề nội dung.',
     aiq_content_exam_unchecked_reason: 'Đề vẫn ở dạng nháp/chưa kiểm tra sau khi nhập.',
@@ -555,10 +570,12 @@ export const portalTranslations: TranslationDict = {
     aiq_metric_metadata: 'metadata',
     aiq_metric_stage: 'giai đoạn {stage}',
     aiq_misconception_no_sample: 'Chưa có mẫu cụ thể; chờ thêm sự kiện học tập.',
-    aiq_misconception_action_geometry: 'Rà soát khung dàn bài chứng minh và yêu cầu giả thiết-kết luận-định lý-kế hoạch trong lời giải.',
+    aiq_misconception_action_geometry:
+      'Rà soát khung dàn bài chứng minh và yêu cầu giả thiết-kết luận-định lý-kế hoạch trong lời giải.',
     aiq_misconception_action_casio: 'Tách kiểm tra nhập liệu máy tính khỏi kiểm tra lập luận trong rà soát lời giải.',
     aiq_misconception_action_domain: 'Thêm ví dụ mẫu đặt điều kiện trước khi luyện thêm bài đại số.',
-    aiq_misconception_action_math: 'Kiểm tra bài học sửa lỗi Toán liên kết và bổ sung điều kiện tiên quyết nếu lặp lại.',
+    aiq_misconception_action_math:
+      'Kiểm tra bài học sửa lỗi Toán liên kết và bổ sung điều kiện tiên quyết nếu lặp lại.',
     aiq_misconception_action_english: 'Kiểm tra bài học English Core, lời giải và lý do gây nhiễu cho lỗi sai này.',
     aiq_learner_reason_urgent: 'Rủi ro cao: {mastery}% thành thạo, {attempts} lần thử, {errors} tín hiệu lỗi lặp lại.',
     aiq_learner_reason_watch: 'Theo dõi: học sinh đang tiến bộ nhưng vẫn còn {errors} tín hiệu lỗi.',
@@ -579,31 +596,36 @@ export const portalTranslations: TranslationDict = {
     // TRACKS config
     track_math_title: 'MiuMath Lớp 9 Chuyên',
     track_math_subtitle: 'Toán Học & Casio Hacks',
-    track_math_desc: 'Luyện thi Toán Chuyên sâu, rút gọn biểu thức, hệ phương trình nâng cao, hình học không gian thực tế và các mẹo bấm máy Casio FX-580VN X siêu tốc.',
+    track_math_desc:
+      'Luyện thi Toán Chuyên sâu, rút gọn biểu thức, hệ phương trình nâng cao, hình học không gian thực tế và các mẹo bấm máy Casio FX-580VN X siêu tốc.',
     track_math_badge: 'Hình học phẳng • Đại số cực trị • Casio tips',
     track_math_button: 'Vào Học Toán MiuMath',
     track_math_bubble: 'Học Toán thôi meow! Cùng Miu phá đảo bẫy chuột phương trình nâng cao nhé! 📐🐟',
     track_sat_title: 'SAT Studio Adaptive',
     track_sat_subtitle: 'Digital SAT Prep',
-    track_sat_desc: 'Động cơ thi thử thích ứng theo module chuẩn Bluebook, tích hợp máy tính vẽ đồ thị Desmos, theo dõi đo lường năng lực học viên bằng lý thuyết IRT.',
+    track_sat_desc:
+      'Động cơ thi thử thích ứng theo module chuẩn Bluebook, tích hợp máy tính vẽ đồ thị Desmos, theo dõi đo lường năng lực học viên bằng lý thuyết IRT.',
     track_sat_badge: 'Adaptive Testing • Desmos • IRT Calibration',
     track_sat_button: 'Vào Học SAT Studio',
     track_sat_bubble: 'SAT test day is coming meow! Động cơ thích ứng đã sẵn sàng, cùng Miu lướt Desmos nào! 🎓📊',
     track_ielts_title: 'IELTS Prep Academy',
     track_ielts_subtitle: 'Tiếng Anh Học Thuật',
-    track_ielts_desc: 'Cải thiện toàn diện 4 kỹ năng Listening, Reading, và phân hệ chấm điểm AI thông minh thời gian thực cho Writing và Speaking.',
+    track_ielts_desc:
+      'Cải thiện toàn diện 4 kỹ năng Listening, Reading, và phân hệ chấm điểm AI thông minh thời gian thực cho Writing và Speaking.',
     track_ielts_badge: 'AI Speaking • Essay Grader • Listening player',
     track_ielts_button: 'Vào Học IELTS Prep',
-    track_ielts_bubble: 'Let\'s boost your band score meow! Luyện nghe và viết luận cùng AI Miu thôi! 👓🎙️',
+    track_ielts_bubble: "Let's boost your band score meow! Luyện nghe và viết luận cùng AI Miu thôi! 👓🎙️",
     track_cpe_title: 'CPE C2 Proficiency',
     track_cpe_subtitle: 'Tiếng Anh Tối Cao C2',
-    track_cpe_desc: 'Chinh phục chứng chỉ tiếng Anh học thuật cấp độ C2 Proficiency của Cambridge. Thách thức với các bài Use of English biến đổi câu cực khó.',
+    track_cpe_desc:
+      'Chinh phục chứng chỉ tiếng Anh học thuật cấp độ C2 Proficiency của Cambridge. Thách thức với các bài Use of English biến đổi câu cực khó.',
     track_cpe_badge: 'Use of English • C2 Reading • Vocabulary Mastery',
     track_cpe_button: 'Vào Học CPE Cambridge',
     track_cpe_bubble: 'C2 Proficiency is elite meow! Thử thách từ vựng và biến đổi câu nâng cao cùng Miu nhé! 👑🎓',
     track_cae_title: 'CAE C1 Advanced',
     track_cae_subtitle: 'Tiếng Anh Nâng Cao C1',
-    track_cae_desc: 'Chinh phục chứng chỉ tiếng Anh học thuật cấp độ C1 Advanced của Cambridge. Ôn luyện Use of English và bài đọc nâng cao chuyên sâu.',
+    track_cae_desc:
+      'Chinh phục chứng chỉ tiếng Anh học thuật cấp độ C1 Advanced của Cambridge. Ôn luyện Use of English và bài đọc nâng cao chuyên sâu.',
     track_cae_badge: 'C1 Use of English • Reading Comprehension • C1 Level',
     track_cae_button: 'Vào Học CAE Advanced',
     track_cae_bubble: 'C1 Advanced is excellent meow! Cùng Miu ôn luyện Use of English C1 cực đỉnh nào! ✨🎓',
@@ -617,7 +639,8 @@ export const portalTranslations: TranslationDict = {
     auth_username_placeholder: 'Enter username...',
     auth_password_label: 'Password',
     auth_login_button: 'Sign In Now',
-    auth_first_time_hint: '* First time here? Switch to the Sign Up tab and pick the Admin role to create the first administrator account.',
+    auth_first_time_hint:
+      '* First time here? Switch to the Sign Up tab and pick the Admin role to create the first administrator account.',
     // Auth — register form
     auth_role_question: 'Who are you?',
     auth_role_student: '🎒 Student',
@@ -634,7 +657,8 @@ export const portalTranslations: TranslationDict = {
     auth_link_student_label: 'Linked student username *',
     auth_link_student_placeholder: "Your child's username (must exist)...",
     auth_link_student_hint: "Parents must enter the student's exact username to sync data.",
-    auth_admin_hint: 'The first administrator account is created directly here. Once an administrator exists, new admin accounts must be issued by an existing administrator.',
+    auth_admin_hint:
+      'The first administrator account is created directly here. Once an administrator exists, new admin accounts must be issued by an existing administrator.',
     auth_register_button: 'Create Account',
     // Header / top-bar
     header_admin_content: 'Admin Content',
@@ -734,7 +758,8 @@ export const portalTranslations: TranslationDict = {
     sdw_your_wallet: 'Your wallet: ',
     sdw_journal_button: 'Save Entry',
     sdw_all_traps_clear: 'Great meow! You have cleared all review mouse-traps! 🐟',
-    sdw_shop_desc: 'Spend the Salmon Coins you earn to unlock decorations for Miu. Accessory emojis will float beside Miu meow!',
+    sdw_shop_desc:
+      'Spend the Salmon Coins you earn to unlock decorations for Miu. Accessory emojis will float beside Miu meow!',
     sdw_unlock: '🛍️ Unlock',
     sdw_desmos_label: '📐 INTEGRATED DESMOS GRAPHING CALCULATOR',
     sdw_desmos_note: '* Enabled the Desmos Dark Theme tailored for MiuPrep learners.',
@@ -745,7 +770,8 @@ export const portalTranslations: TranslationDict = {
     sdw_equipped: '✓ Wearing',
     sdw_try_on: '👚 Try on',
     sdw_notif_open_sat: 'Opened the SAT Studio adaptive module! 🎓🐾',
-    sdw_alert_track_compiling: 'Hi there meow meow! Unlocking the [{title}] module is being compiled separately by Tauri meow! 🐾',
+    sdw_alert_track_compiling:
+      'Hi there meow meow! Unlocking the [{title}] module is being compiled separately by Tauri meow! 🐾',
     sdw_desmos_hide: '✕ Minimize Calculator',
     sdw_desmos_show: '🧮 Open Graphing Calculator',
     sdw_journal_placeholder: 'What Casio math trick or new IELTS vocabulary did you learn today meow...',
@@ -790,7 +816,8 @@ export const portalTranslations: TranslationDict = {
     ssb_submit: 'Submit Answer',
     ssb_desmos: '🧮 Desmos graphing calculator',
     ssb_adaptive_title: '⚡ ADAPTIVE TOPIC PRACTICE',
-    ssb_adaptive_desc: 'The system auto-adjusts question difficulty to your real-time ability using Item Response Theory (IRT).',
+    ssb_adaptive_desc:
+      'The system auto-adjusts question difficulty to your real-time ability using Item Response Theory (IRT).',
     ssb_adaptive_cta: '🔥 Combined adaptive practice',
     ssb_skill_cb: 'College Board standard skills',
     ssb_subtopic_adaptive: 'Adaptive sub-topics',
@@ -816,11 +843,13 @@ export const portalTranslations: TranslationDict = {
     aov_system_score: 'System Score',
     aov_circulating: 'Salmon Coins in circulation',
     aov_new_requests: 'New approval requests',
-    aov_heatmap_note: '💡 The weak-skill map is auto-aggregated from Mouse-Trap logs and real mistakes across all students.',
+    aov_heatmap_note:
+      '💡 The weak-skill map is auto-aggregated from Mouse-Trap logs and real mistakes across all students.',
     aov_approve_all: '✓ Approve all',
     aov_boost_coins: '🐟 Grant 1K Coins',
     aov_clear_logs: '🧹 Clear Telemetry Logs',
-    aov_quick_warn: '⚠️ Quick actions directly affect the shared system-wide Local Storage database. Use them carefully meow!',
+    aov_quick_warn:
+      '⚠️ Quick actions directly affect the shared system-wide Local Storage database. Use them carefully meow!',
     aov_heatmap_title: '🔥 WEAK-SKILL MAP (SYSTEM HEATMAP)',
     aov_quick_title: '⚡ QUICK SYSTEM ACTIONS',
     aov_requests_unit: 'requests',
@@ -981,7 +1010,8 @@ export const portalTranslations: TranslationDict = {
     acr_add_question: 'Add Question',
     acr_label_passage: 'Passage / prompt context',
     acr_label_transcript: 'Transcript / listening text',
-    acr_empty_questions_hint: 'This exam is in summary form. Click Add Question to enter question content directly, or import a full JSON to get sections/questions automatically.',
+    acr_empty_questions_hint:
+      'This exam is in summary form. Click Add Question to enter question content directly, or import a full JSON to get sections/questions automatically.',
     acr_placeholder_answer: 'Answer',
     acr_remove: 'Remove',
     acr_placeholder_options: 'Options, one per line',
@@ -1050,13 +1080,15 @@ export const portalTranslations: TranslationDict = {
     asc_integrity_th_type: 'Bank type',
     asc_integrity_th_safety: 'Safety',
     asc_integrity_th_status: 'Status',
-    asc_integrity_security_note: 'Security and copyright: data is curated to reduce duplication, keep difficulty close to the real SAT exam, and protect content quality.',
+    asc_integrity_security_note:
+      'Security and copyright: data is curated to reduce duplication, keep difficulty close to the real SAT exam, and protect content quality.',
     asc_calib_config_heading: 'Adaptive parameter configuration',
     asc_calib_target_score: 'Target SAT assessment score',
     asc_calib_irt_alpha: 'IRT learning rate alpha',
-    asc_calib_irt_note: 'The IRT parameter adjusts how fast the system adapts to the student\'s Module 1 results.',
+    asc_calib_irt_note: "The IRT parameter adjusts how fast the system adapts to the student's Module 1 results.",
     asc_calib_irt_engine_heading: 'IRT statistical calibration engine',
-    asc_calib_irt_engine_desc: 'Run analysis to update discrimination, difficulty, and item parameters for the adaptive question bank.',
+    asc_calib_irt_engine_desc:
+      'Run analysis to update discrimination, difficulty, and item parameters for the adaptive question bank.',
     asc_btn_calibrating: 'Calibrating model...',
     asc_btn_run_calibration: 'Run IRT calibration',
     // UnifiedLearnerDashboard
@@ -1065,7 +1097,8 @@ export const portalTranslations: TranslationDict = {
     uld_badge_live_progress: 'Live progress',
     uld_badge_preview_mode: 'Preview mode',
     uld_growth_map_title: 'Your growth map',
-    uld_growth_map_subtitle: 'One place to see what is improving, what still blocks progress, and which small action should happen next.',
+    uld_growth_map_subtitle:
+      'One place to see what is improving, what still blocks progress, and which small action should happen next.',
     uld_metric_programs: 'Programs',
     uld_metric_avg_mastery: 'Avg mastery',
     uld_metric_evidence: 'Evidence',
@@ -1099,7 +1132,8 @@ export const portalTranslations: TranslationDict = {
     aiq_badge_intervention_queue: 'Intervention Queue',
     aiq_badge_roles: 'teacher / admin / parent',
     aiq_heading_today: 'Interventions needed today',
-    aiq_intro: 'The queue groups stuck learners, content to fix and parent digests. The goal is for admins to know what to do at a glance, not to read every log or every exam.',
+    aiq_intro:
+      'The queue groups stuck learners, content to fix and parent digests. The goal is for admins to know what to do at a glance, not to read every log or every exam.',
     aiq_metric_learners: 'Learners',
     aiq_metric_content: 'Content',
     aiq_metric_parents: 'Parents',
@@ -1158,11 +1192,13 @@ export const portalTranslations: TranslationDict = {
     aiq_metric_metadata: 'metadata',
     aiq_metric_stage: 'stage {stage}',
     aiq_misconception_no_sample: 'No concrete sample yet; wait for more learning events.',
-    aiq_misconception_action_geometry: 'Audit proof lesson scaffold and require given-target-theorem-plan in explanations.',
+    aiq_misconception_action_geometry:
+      'Audit proof lesson scaffold and require given-target-theorem-plan in explanations.',
     aiq_misconception_action_casio: 'Split calculator input checks from reasoning checks in solution review.',
     aiq_misconception_action_domain: 'Add condition-first worked examples before more algebra drills.',
     aiq_misconception_action_math: 'Check linked Math repair lesson and add prerequisite backfill if repeated.',
-    aiq_misconception_action_english: 'Check English Core lesson, explanation, and distractor rationale for this misconception.',
+    aiq_misconception_action_english:
+      'Check English Core lesson, explanation, and distractor rationale for this misconception.',
     aiq_learner_reason_urgent: 'High risk: {mastery}% mastery, {attempts} attempts, {errors} recurring error signals.',
     aiq_learner_reason_watch: 'Watch: learner is building but still has {errors} error signals.',
     aiq_learner_reason_routine: 'Routine: continue monitoring with {mastery}% mastery.',
@@ -1182,31 +1218,37 @@ export const portalTranslations: TranslationDict = {
     // TRACKS config
     track_math_title: 'MiuMath Grade 9 Specialized',
     track_math_subtitle: 'Mathematics & Casio Hacks',
-    track_math_desc: 'In-depth specialized math prep: simplifying expressions, advanced systems of equations, real-world spatial geometry, and lightning-fast Casio FX-580VN X calculator tricks.',
+    track_math_desc:
+      'In-depth specialized math prep: simplifying expressions, advanced systems of equations, real-world spatial geometry, and lightning-fast Casio FX-580VN X calculator tricks.',
     track_math_badge: 'Plane geometry • Extremal algebra • Casio tips',
     track_math_button: 'Enter MiuMath',
-    track_math_bubble: 'Let\'s do math meow! Beat the advanced-equation mouse-traps with Miu! 📐🐟',
+    track_math_bubble: "Let's do math meow! Beat the advanced-equation mouse-traps with Miu! 📐🐟",
     track_sat_title: 'SAT Studio Adaptive',
     track_sat_subtitle: 'Digital SAT Prep',
-    track_sat_desc: 'A module-adaptive mock-test engine aligned to Bluebook, with an integrated Desmos graphing calculator and IRT-based learner ability measurement.',
+    track_sat_desc:
+      'A module-adaptive mock-test engine aligned to Bluebook, with an integrated Desmos graphing calculator and IRT-based learner ability measurement.',
     track_sat_badge: 'Adaptive Testing • Desmos • IRT Calibration',
     track_sat_button: 'Enter SAT Studio',
     track_sat_bubble: 'SAT test day is coming meow! The adaptive engine is ready — surf Desmos with Miu! 🎓📊',
     track_ielts_title: 'IELTS Prep Academy',
     track_ielts_subtitle: 'Academic English',
-    track_ielts_desc: 'Comprehensive improvement across all four skills — Listening, Reading, plus a smart real-time AI grader for Writing and Speaking.',
+    track_ielts_desc:
+      'Comprehensive improvement across all four skills — Listening, Reading, plus a smart real-time AI grader for Writing and Speaking.',
     track_ielts_badge: 'AI Speaking • Essay Grader • Listening player',
     track_ielts_button: 'Enter IELTS Prep',
-    track_ielts_bubble: 'Let\'s boost your band score meow! Practice listening and essay writing with AI Miu! 👓🎙️',
+    track_ielts_bubble: "Let's boost your band score meow! Practice listening and essay writing with AI Miu! 👓🎙️",
     track_cpe_title: 'CPE C2 Proficiency',
     track_cpe_subtitle: 'Top-Tier C2 English',
-    track_cpe_desc: 'Conquer the Cambridge C2 Proficiency certificate. Take on extremely hard Use of English sentence-transformation tasks.',
+    track_cpe_desc:
+      'Conquer the Cambridge C2 Proficiency certificate. Take on extremely hard Use of English sentence-transformation tasks.',
     track_cpe_badge: 'Use of English • C2 Reading • Vocabulary Mastery',
     track_cpe_button: 'Enter CPE Cambridge',
-    track_cpe_bubble: 'C2 Proficiency is elite meow! Take on advanced vocabulary and sentence transformations with Miu! 👑🎓',
+    track_cpe_bubble:
+      'C2 Proficiency is elite meow! Take on advanced vocabulary and sentence transformations with Miu! 👑🎓',
     track_cae_title: 'CAE C1 Advanced',
     track_cae_subtitle: 'Advanced C1 English',
-    track_cae_desc: 'Conquer the Cambridge C1 Advanced certificate. Practice Use of English and in-depth advanced reading.',
+    track_cae_desc:
+      'Conquer the Cambridge C1 Advanced certificate. Practice Use of English and in-depth advanced reading.',
     track_cae_badge: 'C1 Use of English • Reading Comprehension • C1 Level',
     track_cae_button: 'Enter CAE Advanced',
     track_cae_bubble: 'C1 Advanced is excellent meow! Practice top-notch C1 Use of English with Miu! ✨🎓',

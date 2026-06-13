@@ -34,10 +34,8 @@ export const DISCOVERY_ZONES = [
       titleVn: 'Bậc thầy Nhiệt năng',
       icon: '🔥',
     },
-    description:
-      'Khám phá vật lý ẩn giấu trong mỗi bữa ăn, từ truyền nhiệt đến áp suất!',
-    descriptionEn:
-      'Discover the physics hidden in every meal, from heat transfer to pressure!',
+    description: 'Khám phá vật lý ẩn giấu trong mỗi bữa ăn, từ truyền nhiệt đến áp suất!',
+    descriptionEn: 'Discover the physics hidden in every meal, from heat transfer to pressure!',
   },
   {
     id: 'water_world',
@@ -51,17 +49,14 @@ export const DISCOVERY_ZONES = [
     chapters: ['liquid_pressure', 'buoyancy', 'measurement'],
     curiosityHook:
       'Tại sao tàu thép vạn tấn nổi được, nhưng đinh nhỏ lại chìm? Tại sao lặn sâu bị đau tai? Thợ lặn chịu áp suất bao nhiêu?',
-    curiosityHookEn:
-      'Why do massive steel ships float while tiny nails sink? Why do your ears hurt when diving deep?',
+    curiosityHookEn: 'Why do massive steel ships float while tiny nails sink? Why do your ears hurt when diving deep?',
     badge: {
       title: 'Lord of the Oceans',
       titleVn: 'Chúa tể Đại dương',
       icon: '🌊',
     },
-    description:
-      'Giải mã bí ẩn của nước, lực đẩy Archimedes và áp suất chất lỏng!',
-    descriptionEn:
-      "Decode the mysteries of water, Archimedes' buoyancy, and liquid pressure!",
+    description: 'Giải mã bí ẩn của nước, lực đẩy Archimedes và áp suất chất lỏng!',
+    descriptionEn: "Decode the mysteries of water, Archimedes' buoyancy, and liquid pressure!",
   },
   {
     id: 'street_motion',
@@ -90,10 +85,8 @@ export const DISCOVERY_ZONES = [
       titleVn: 'Quỷ Tốc Độ',
       icon: '🏎️',
     },
-    description:
-      'Vật lý trên mỗi con đường — từ lực ma sát đến năng lượng chuyển động!',
-    descriptionEn:
-      'Physics on every road — from friction to kinetic energy!',
+    description: 'Vật lý trên mỗi con đường — từ lực ma sát đến năng lượng chuyển động!',
+    descriptionEn: 'Physics on every road — from friction to kinetic energy!',
   },
   {
     id: 'cosmic_sky',
@@ -104,13 +97,7 @@ export const DISCOVERY_ZONES = [
     color: '#8B5CF6',
     colorLight: '#C4B5FD',
     gradient: 'linear-gradient(135deg, #8B5CF6, #A78BFA)',
-    chapters: [
-      'light_basics',
-      'reflection_refraction',
-      'light_spectrum',
-      'earth_solar_system',
-      'energy_basics',
-    ],
+    chapters: ['light_basics', 'reflection_refraction', 'light_spectrum', 'earth_solar_system', 'energy_basics'],
     curiosityHook:
       'Tại sao bầu trời xanh ban ngày nhưng đỏ lúc hoàng hôn? Cầu vồng hình thành thế nào? Ánh sáng đi nhanh cỡ nào?',
     curiosityHookEn:
@@ -120,10 +107,8 @@ export const DISCOVERY_ZONES = [
       titleVn: 'Người Dệt Ánh Sáng',
       icon: '🌈',
     },
-    description:
-      'Hành trình từ tia sáng trong gương đến những vì sao xa xôi!',
-    descriptionEn:
-      'Journey from light rays in mirrors to distant stars!',
+    description: 'Hành trình từ tia sáng trong gương đến những vì sao xa xôi!',
+    descriptionEn: 'Journey from light rays in mirrors to distant stars!',
   },
   {
     id: 'sound_arena',
@@ -144,10 +129,8 @@ export const DISCOVERY_ZONES = [
       titleVn: 'Pháp sư Âm Vọng',
       icon: '🎵',
     },
-    description:
-      'Giải mã sóng âm, tiếng vọng, và khoa học đằng sau âm nhạc!',
-    descriptionEn:
-      'Decode sound waves, echoes, and the science behind music!',
+    description: 'Giải mã sóng âm, tiếng vọng, và khoa học đằng sau âm nhạc!',
+    descriptionEn: 'Decode sound waves, echoes, and the science behind music!',
   },
   {
     id: 'electric_workshop',
@@ -175,10 +158,8 @@ export const DISCOVERY_ZONES = [
       titleVn: 'Phù thủy Điện Từ',
       icon: '⚡',
     },
-    description:
-      'Từ bóng đèn trong phòng đến lõi Trái Đất — thế giới điện từ kỳ diệu!',
-    descriptionEn:
-      "From lightbulbs in your room to Earth's core — the magical electromagnetic world!",
+    description: 'Từ bóng đèn trong phòng đến lõi Trái Đất — thế giới điện từ kỳ diệu!',
+    descriptionEn: "From lightbulbs in your room to Earth's core — the magical electromagnetic world!",
   },
 ];
 

@@ -363,14 +363,13 @@ export function buildAdaptiveDiagnostic<T extends AdaptiveDiagnosticItem>(
   const { items: itemRatings, learners } = calibrateAbilities(attempts, { scale });
   const ability = learners.get(options.learnerId)?.ability ?? DEFAULT_ABILITY;
 
-  const attemptedIds = new Set(
-    attempts.filter((a) => a.learnerId === options.learnerId).map((a) => a.itemId),
-  );
+  const attemptedIds = new Set(attempts.filter((a) => a.learnerId === options.learnerId).map((a) => a.itemId));
 
   const ranked = items
     .filter((it) => {
       if (attemptedIds.has(it.id)) return false;
-      if (options.programId && it.programIds && it.programIds.length > 0 && !it.programIds.includes(options.programId)) return false;
+      if (options.programId && it.programIds && it.programIds.length > 0 && !it.programIds.includes(options.programId))
+        return false;
       if (options.difficulties && it.difficulty && !options.difficulties.includes(it.difficulty)) return false;
       return true;
     })

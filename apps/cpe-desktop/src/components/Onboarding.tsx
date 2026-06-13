@@ -14,7 +14,7 @@ const GROUND_TRUTH = __diagBank.groundTruth;
 
 export default function Onboarding({ db, onComplete }: OnboardingProps) {
   const [view, setView] = useState<'login' | 'register' | 'diagnostic' | 'result' | 'review'>('register');
-  
+
   // Auth Form State
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -62,7 +62,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
       if (storedId && db) {
         try {
           const users = await db.listLocalUsers();
-          const matched = users.find(u => u.id === storedId);
+          const matched = users.find((u) => u.id === storedId);
           if (matched) {
             const fullUser = await db.getLocalUser(matched.username);
             if (fullUser) {
@@ -70,7 +70,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
             }
           }
         } catch (e) {
-          console.error("Failed to restore current user in onboarding:", e);
+          console.error('Failed to restore current user in onboarding:', e);
         }
       }
     };
@@ -91,7 +91,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
 
   const playDiagnosticAudio = () => {
     if (typeof window === 'undefined' || !window.speechSynthesis) {
-      alert("Trình duyệt không hỗ trợ Text-to-Speech.");
+      alert('Trình duyệt không hỗ trợ Text-to-Speech.');
       return;
     }
 
@@ -105,26 +105,27 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
       return;
     }
 
-    const text = "Good morning, colleagues. Today I’ll be addressing the fascinating phenomenon of neuroplasticity—the brain’s remarkable ability to reorganize itself by forming new neural connections throughout life. Historically, it was believed that the adult brain was a static structure, unable to generate new neurons. However, groundbreaking research in the late twentieth century shattered this dogma, demonstrating that our cognitive architecture remains highly malleable even in senescence. This has profound implications for stroke rehabilitation and learning.";
-    
+    const text =
+      'Good morning, colleagues. Today I’ll be addressing the fascinating phenomenon of neuroplasticity—the brain’s remarkable ability to reorganize itself by forming new neural connections throughout life. Historically, it was believed that the adult brain was a static structure, unable to generate new neurons. However, groundbreaking research in the late twentieth century shattered this dogma, demonstrating that our cognitive architecture remains highly malleable even in senescence. This has profound implications for stroke rehabilitation and learning.';
+
     window.speechSynthesis.cancel(); // Stop any pending speech
-    
+
     const utterance = new SpeechSynthesisUtterance(text);
     speechUtteranceRef.current = utterance;
 
     // Find a good English voice
     const voices = window.speechSynthesis.getVoices();
-    const enVoice = voices.find(v => v.lang.startsWith('en-GB')) || voices.find(v => v.lang.startsWith('en'));
+    const enVoice = voices.find((v) => v.lang.startsWith('en-GB')) || voices.find((v) => v.lang.startsWith('en'));
     if (enVoice) {
       utterance.voice = enVoice;
     }
-    
+
     utterance.rate = 0.85; // Natural British clear CPE pace
-    
+
     utterance.onstart = () => {
       setIsPlayingSpeech(true);
       setSpeechProgress(0);
-      
+
       // Simulate progress bar filling up over ~30 seconds
       let cur = 0;
       const totalSteps = 300; // 30 seconds * 10 steps per second
@@ -147,7 +148,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
     };
 
     utterance.onerror = (e) => {
-      console.error("Speech synthesis error:", e);
+      console.error('Speech synthesis error:', e);
       setIsPlayingSpeech(false);
       setSpeechProgress(0);
       if (speechIntervalRef.current) {
@@ -228,7 +229,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
       return;
     }
     const timer = setInterval(() => {
-      setTimeLeft(prev => prev - 1);
+      setTimeLeft((prev) => prev - 1);
     }, 1000);
     return () => clearInterval(timer);
   }, [view, timeLeft, handleSubmitDiagnostic]);
@@ -249,8 +250,10 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
       // Once an admin exists, additional admin accounts must be issued by them.
       if (role === 'admin') {
         const existingUsers = await db.listLocalUsers();
-        if (existingUsers.some(u => u.role === 'admin')) {
-          setAuthError('Thiết bị này đã có Quản trị viên. Vui lòng nhờ Quản trị viên hiện tại cấp tài khoản trong trang quản trị.');
+        if (existingUsers.some((u) => u.role === 'admin')) {
+          setAuthError(
+            'Thiết bị này đã có Quản trị viên. Vui lòng nhờ Quản trị viên hiện tại cấp tài khoản trong trang quản trị.',
+          );
           return;
         }
       }
@@ -272,7 +275,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
         examDate,
         role,
         status: 'approved',
-        createdAt: new Date().toISOString()
+        createdAt: new Date().toISOString(),
       };
 
       await db.registerLocalUser(newUser);
@@ -359,7 +362,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
       examDate: targetExamDate,
       weakSkills: weakSkills,
       createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString()
+      updatedAt: new Date().toISOString(),
     };
 
     try {
@@ -394,7 +397,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
           <div className="flex flex-col gap-1.5 items-center text-center">
             <div className="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-lg shadow-emerald-500/20 mb-2">
               <svg className="w-6 h-6 text-white fill-current" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
               </svg>
             </div>
             <h2 className="text-2xl font-bold tracking-tight text-white m-0">CPE C2 Proficiency AI Prep Platform</h2>
@@ -403,17 +406,27 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
 
           <div className="flex bg-slate-950 p-1 rounded-lg border border-slate-800">
             <button
-              onClick={() => { setView('register'); setAuthError(''); }}
+              onClick={() => {
+                setView('register');
+                setAuthError('');
+              }}
               className={`flex-1 py-2 text-center text-xs font-bold rounded-md transition-all border-0 outline-none cursor-pointer ${
-                view === 'register' ? 'bg-emerald-600 text-white shadow-md' : 'bg-transparent text-slate-400 hover:text-slate-200'
+                view === 'register'
+                  ? 'bg-emerald-600 text-white shadow-md'
+                  : 'bg-transparent text-slate-400 hover:text-slate-200'
               }`}
             >
               Đăng ký mới
             </button>
             <button
-              onClick={() => { setView('login'); setAuthError(''); }}
+              onClick={() => {
+                setView('login');
+                setAuthError('');
+              }}
               className={`flex-1 py-2 text-center text-xs font-bold rounded-md transition-all border-0 outline-none cursor-pointer ${
-                view === 'login' ? 'bg-emerald-600 text-white shadow-md' : 'bg-transparent text-slate-400 hover:text-slate-200'
+                view === 'login'
+                  ? 'bg-emerald-600 text-white shadow-md'
+                  : 'bg-transparent text-slate-400 hover:text-slate-200'
               }`}
             >
               Đăng nhập
@@ -438,7 +451,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                 type="text"
                 placeholder="Ví dụ: haiquynh"
                 value={username}
-                onChange={e => setUsername(e.target.value)}
+                onChange={(e) => setUsername(e.target.value)}
                 className="bg-slate-950 border border-slate-850 hover:border-slate-800 rounded-lg py-2.5 px-3 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition-all font-semibold"
               />
             </div>
@@ -449,7 +462,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                 type="password"
                 placeholder="Nhập mật khẩu của bạn"
                 value={password}
-                onChange={e => setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
                 className="bg-slate-950 border border-slate-850 hover:border-slate-800 rounded-lg py-2.5 px-3 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition-all font-semibold"
               />
             </div>
@@ -463,7 +476,9 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                       type="button"
                       onClick={() => setRole('student')}
                       className={`flex-1 py-2 text-center text-xs font-bold rounded-md transition-all border-0 outline-none cursor-pointer ${
-                        role === 'student' ? 'bg-emerald-600 text-white shadow-md' : 'bg-transparent text-slate-400 hover:text-slate-200'
+                        role === 'student'
+                          ? 'bg-emerald-600 text-white shadow-md'
+                          : 'bg-transparent text-slate-400 hover:text-slate-200'
                       }`}
                     >
                       Học viên (Student)
@@ -472,7 +487,9 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                       type="button"
                       onClick={() => setRole('admin')}
                       className={`flex-1 py-2 text-center text-xs font-bold rounded-md transition-all border-0 outline-none cursor-pointer ${
-                        role === 'admin' ? 'bg-indigo-600 text-white shadow-md' : 'bg-transparent text-slate-400 hover:text-slate-200'
+                        role === 'admin'
+                          ? 'bg-indigo-600 text-white shadow-md'
+                          : 'bg-transparent text-slate-400 hover:text-slate-200'
                       }`}
                     >
                       Quản trị viên (Admin)
@@ -482,30 +499,37 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
 
                 {role === 'admin' && (
                   <p className="text-[10px] text-indigo-300 bg-indigo-950/40 border border-indigo-900 rounded-lg py-2 px-3 leading-relaxed">
-                    Tài khoản Quản trị đầu tiên trên thiết bị được tạo trực tiếp tại đây. Khi thiết bị đã có Quản trị viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.
+                    Tài khoản Quản trị đầu tiên trên thiết bị được tạo trực tiếp tại đây. Khi thiết bị đã có Quản trị
+                    viên, tài khoản quản trị mới phải do Quản trị viên hiện tại cấp.
                   </p>
                 )}
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1.5">
-                    <label className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Target CPE Score</label>
+                    <label className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">
+                      Target CPE Score
+                    </label>
                     <select
                       value={targetBand}
-                      onChange={e => setTargetBand(Number(e.target.value))}
+                      onChange={(e) => setTargetBand(Number(e.target.value))}
                       className="bg-slate-950 border border-slate-850 hover:border-slate-800 rounded-lg py-2.5 px-3 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition-all font-semibold cursor-pointer"
                     >
-                      {[180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230].map(s => (
-                        <option key={s} value={s} className="bg-slate-900 text-white font-medium">Score {s}</option>
+                      {[180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230].map((s) => (
+                        <option key={s} value={s} className="bg-slate-900 text-white font-medium">
+                          Score {s}
+                        </option>
                       ))}
                     </select>
                   </div>
 
                   <div className="flex flex-col gap-1.5">
-                    <label className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Ngày thi dự kiến</label>
+                    <label className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">
+                      Ngày thi dự kiến
+                    </label>
                     <input
                       type="date"
                       value={examDate}
-                      onChange={e => setExamDate(e.target.value)}
+                      onChange={(e) => setExamDate(e.target.value)}
                       className="bg-slate-950 border border-slate-850 hover:border-slate-800 rounded-lg py-2.5 px-3 text-sm text-slate-200 focus:outline-none focus:border-emerald-500 transition-all font-semibold"
                     />
                   </div>
@@ -528,29 +552,46 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
         <div className="w-full max-w-4xl bg-slate-900/90 backdrop-blur-xl border border-slate-800/80 p-8 rounded-2xl shadow-2xl flex flex-col gap-6 text-left relative z-10">
           <div className="flex items-center justify-between border-b border-slate-800 pb-4 flex-wrap gap-4">
             <div>
-              <span className="text-[10px] bg-emerald-900/60 border border-emerald-700/60 text-emerald-300 font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Onboarding Gate</span>
-              <h2 className="text-xl font-black tracking-tight text-white mt-1.5 mb-0">Bài Kiểm Tra Chẩn Đoán Khảo Sát Năng Lực (15 Phút)</h2>
+              <span className="text-[10px] bg-emerald-900/60 border border-emerald-700/60 text-emerald-300 font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                Onboarding Gate
+              </span>
+              <h2 className="text-xl font-black tracking-tight text-white mt-1.5 mb-0">
+                Bài Kiểm Tra Chẩn Đoán Khảo Sát Năng Lực (15 Phút)
+              </h2>
             </div>
             <div className="flex items-center gap-3 bg-red-950/40 border border-red-800/40 px-4 py-2 rounded-xl text-red-300 font-mono text-sm font-bold shadow-inner">
-              ⏱️ Hạn giờ: <span className="bg-red-900/50 px-2 py-0.5 rounded text-white animate-pulse">{formatTime(timeLeft)}</span>
+              ⏱️ Hạn giờ:{' '}
+              <span className="bg-red-900/50 px-2 py-0.5 rounded text-white animate-pulse">{formatTime(timeLeft)}</span>
             </div>
           </div>
 
           <div className="bg-slate-950/60 border border-emerald-950 rounded-xl p-4 text-xs leading-relaxed text-slate-300">
-            💡 <strong className="text-white font-bold">Hướng dẫn quan trọng:</strong> Đây là bài thi rút gọn 100% bắt buộc để AI vẽ nên bản đồ kỹ năng hiện tại của bạn. Kết quả bài test sẽ xác định Lộ trình học (Pre-CPE, Bridge to 6.0, hay Advanced) và tự động kích hoạt Sổ tay lỗi sai SRS cho bạn. Hãy tập trung làm bài hết sức mình!
+            💡 <strong className="text-white font-bold">Hướng dẫn quan trọng:</strong> Đây là bài thi rút gọn 100% bắt
+            buộc để AI vẽ nên bản đồ kỹ năng hiện tại của bạn. Kết quả bài test sẽ xác định Lộ trình học (Pre-CPE,
+            Bridge to 6.0, hay Advanced) và tự động kích hoạt Sổ tay lỗi sai SRS cho bạn. Hãy tập trung làm bài hết sức
+            mình!
           </div>
 
           {/* Subsection Tabs */}
           <div className="flex bg-slate-950 p-1 rounded-xl border border-slate-800">
-            {(['reading', 'listening', 'grammar'] as const).map(tab => (
+            {(['reading', 'listening', 'grammar'] as const).map((tab) => (
               <button
                 key={tab}
-                onClick={() => { stopSpeech(); setActiveTab(tab); }}
+                onClick={() => {
+                  stopSpeech();
+                  setActiveTab(tab);
+                }}
                 className={`flex-1 py-3 text-center text-xs font-bold rounded-lg transition-all border-0 outline-none cursor-pointer uppercase tracking-wider ${
-                  activeTab === tab ? 'bg-emerald-600 text-white shadow-md' : 'bg-transparent text-slate-400 hover:text-slate-200'
+                  activeTab === tab
+                    ? 'bg-emerald-600 text-white shadow-md'
+                    : 'bg-transparent text-slate-400 hover:text-slate-200'
                 }`}
               >
-                {tab === 'reading' ? '📖 1. Reading' : tab === 'listening' ? '🎧 2. Listening' : '📝 3. Grammar & Vocab'}
+                {tab === 'reading'
+                  ? '📖 1. Reading'
+                  : tab === 'listening'
+                    ? '🎧 2. Listening'
+                    : '📝 3. Grammar & Vocab'}
               </button>
             ))}
           </div>
@@ -561,65 +602,88 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
             {activeTab === 'reading' && (
               <div className="flex flex-col gap-5">
                 <div className="border border-slate-800 bg-slate-900/40 p-5 rounded-xl text-slate-300 text-sm leading-relaxed max-h-60 overflow-y-auto">
-                  <h4 className="text-white font-black m-0 mb-2 uppercase tracking-wide text-xs">Passage: Quantum Cryptography Commercialization</h4>
-                  Advanced quantum networks present unprecedented cryptographic opportunities. However, the sheer vulnerability of quantum states to environmental decoherence has precluded their widespread commercial application. Researchers must stabilize these states before secure quantum communication can become a viable consumer reality.
+                  <h4 className="text-white font-black m-0 mb-2 uppercase tracking-wide text-xs">
+                    Passage: Quantum Cryptography Commercialization
+                  </h4>
+                  Advanced quantum networks present unprecedented cryptographic opportunities. However, the sheer
+                  vulnerability of quantum states to environmental decoherence has precluded their widespread commercial
+                  application. Researchers must stabilize these states before secure quantum communication can become a
+                  viable consumer reality.
                 </div>
-                
+
                 <div className="flex flex-col gap-4">
-                  <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider m-0">Questions 1-5: CPE Reading & Use of English Diagnostic</h4>
-                  
+                  <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider m-0">
+                    Questions 1-5: CPE Reading & Use of English Diagnostic
+                  </h4>
+
                   <div className="flex flex-col gap-3">
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q1. He was determined to ______ his mark on the scientific community. (A. make, B. leave, C. print, D. write)</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q1. He was determined to ______ his mark on the scientific community. (A. make, B. leave, C.
+                        print, D. write)
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập đáp án A, B, C hoặc D"
                         value={answers.q1 || ''}
-                        onChange={e => setAnswers({ ...answers, q1: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q1: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q2. No sooner had he arrived ______ the storm broke.</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q2. No sooner had he arrived ______ the storm broke.
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập từ còn thiếu"
                         value={answers.q2 || ''}
-                        onChange={e => setAnswers({ ...answers, q2: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q2: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q3. The beauty of the island is <strong className="text-white">______</strong> (COMPARE). (Điền dạng từ đúng)</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q3. The beauty of the island is <strong className="text-white">______</strong> (COMPARE). (Điền
+                        dạng từ đúng)
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập từ còn thiếu"
                         value={answers.q3 || ''}
-                        onChange={e => setAnswers({ ...answers, q3: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q3: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q4. It was a mistake for you to buy that expensive car. (SHOULD) {"→"} You <strong className="text-white">______</strong> that expensive car. (Điền phần viết lại hoàn thành)</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q4. It was a mistake for you to buy that expensive car. (SHOULD) {'→'} You{' '}
+                        <strong className="text-white">______</strong> that expensive car. (Điền phần viết lại hoàn
+                        thành)
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập cụm từ còn thiếu"
                         value={answers.q4 || ''}
-                        onChange={e => setAnswers({ ...answers, q4: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q4: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q5. What is the primary obstacle to the commercialization of quantum networks? (A. Financial constraints, B. Environmental sensitivity, C. Lack of cryptographic interest, D. Hardware shortage)</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q5. What is the primary obstacle to the commercialization of quantum networks? (A. Financial
+                        constraints, B. Environmental sensitivity, C. Lack of cryptographic interest, D. Hardware
+                        shortage)
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập đáp án A, B, C hoặc D"
                         value={answers.q5 || ''}
-                        onChange={e => setAnswers({ ...answers, q5: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q5: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
@@ -632,12 +696,16 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
             {activeTab === 'listening' && (
               <div className="flex flex-col gap-5">
                 {/* Keyframe animation for dancing visual bars */}
-                <style dangerouslySetInnerHTML={{ __html: `
+                <style
+                  dangerouslySetInnerHTML={{
+                    __html: `
                   @keyframes pulse-bar {
                     0%, 100% { height: 4px; }
                     50% { height: 26px; }
                   }
-                ` }} />
+                `,
+                  }}
+                />
 
                 {/* Modern Interactive Audio Player Card */}
                 <div className="bg-slate-900/70 border border-slate-800/80 p-6 rounded-2xl flex flex-col gap-5 shadow-inner">
@@ -654,15 +722,15 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                       >
                         {isPlayingSpeech ? (
                           <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
                           </svg>
                         ) : (
                           <svg className="w-5 h-5 fill-current ml-1" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"/>
+                            <path d="M8 5v14l11-7z" />
                           </svg>
                         )}
                       </button>
-                      
+
                       <div className="text-left">
                         <h4 className="text-sm font-black text-white m-0 tracking-wide">
                           {isPlayingSpeech ? 'Đang Phát Âm Thanh Bài Nghe...' : 'Sẵn Sàng Phát Âm Thanh Bài Nghe'}
@@ -692,7 +760,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                           }`}
                           style={{
                             height: isPlayingSpeech ? `${h}px` : '4px',
-                            animation: isPlayingSpeech ? `pulse-bar 1.2s infinite ease-in-out ${i * 0.08}s` : 'none'
+                            animation: isPlayingSpeech ? `pulse-bar 1.2s infinite ease-in-out ${i * 0.08}s` : 'none',
                           }}
                         />
                       ))}
@@ -709,14 +777,20 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                     </div>
                     <div className="flex justify-between items-center text-[9px] text-slate-500 font-mono font-bold px-0.5">
                       <span>0:00</span>
-                      <span>{isPlayingSpeech ? `Đang phát (${Math.round(speechProgress)}%)` : 'Nhấn nút Play để phát âm thanh bài nghe'}</span>
+                      <span>
+                        {isPlayingSpeech
+                          ? `Đang phát (${Math.round(speechProgress)}%)`
+                          : 'Nhấn nút Play để phát âm thanh bài nghe'}
+                      </span>
                       <span>0:30</span>
                     </div>
                   </div>
 
                   {/* Cambridge Standard Warning */}
                   <div className="bg-slate-950/40 border border-slate-850 p-3.5 rounded-xl text-[10px] text-slate-400 leading-relaxed">
-                    💡 <strong className="text-slate-300">Quy tắc khảo thí:</strong> Trong phòng thi thật, thí sinh tuyệt đối không được đọc tapescript. Để đánh giá chính xác, bạn hãy đeo tai nghe và hoàn thành câu hỏi từ Q6 đến Q10 dựa trên audio nghe được.
+                    💡 <strong className="text-slate-300">Quy tắc khảo thí:</strong> Trong phòng thi thật, thí sinh
+                    tuyệt đối không được đọc tapescript. Để đánh giá chính xác, bạn hãy đeo tai nghe và hoàn thành câu
+                    hỏi từ Q6 đến Q10 dựa trên audio nghe được.
                   </div>
 
                   {/* Pedagogy Toggle Button */}
@@ -730,7 +804,9 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                           : 'bg-slate-950 hover:bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200'
                       }`}
                     >
-                      <span>{showTapescript ? '👁️ Ẩn Tapescript Hỗ Trợ' : '👁️ Xem Tapescript (Chỉ dùng khi nghe không rõ)'}</span>
+                      <span>
+                        {showTapescript ? '👁️ Ẩn Tapescript Hỗ Trợ' : '👁️ Xem Tapescript (Chỉ dùng khi nghe không rõ)'}
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -741,65 +817,87 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                     <h4 className="text-amber-400 font-black m-0 mb-2 uppercase tracking-wide text-xs flex items-center gap-1">
                       <span>📝</span> Listening Excerpt Transcript (Bản Gỡ Băng Để Học)
                     </h4>
-                    "Good morning, colleagues. Today I’ll be addressing the fascinating phenomenon of neuroplasticity—the brain’s remarkable ability to reorganize itself by forming new neural connections throughout life. Historically, it was believed that the adult brain was a static structure, unable to generate new neurons. However, groundbreaking research in the late twentieth century shattered this dogma, demonstrating that our cognitive architecture remains highly malleable even in senescence. This has profound implications for stroke rehabilitation and learning."
+                    "Good morning, colleagues. Today I’ll be addressing the fascinating phenomenon of
+                    neuroplasticity—the brain’s remarkable ability to reorganize itself by forming new neural
+                    connections throughout life. Historically, it was believed that the adult brain was a static
+                    structure, unable to generate new neurons. However, groundbreaking research in the late twentieth
+                    century shattered this dogma, demonstrating that our cognitive architecture remains highly malleable
+                    even in senescence. This has profound implications for stroke rehabilitation and learning."
                   </div>
                 )}
 
                 <div className="flex flex-col gap-4">
-                  <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider m-0">Questions 6-10: C2 Neuroplasticity Lecture Notes (Gap Fill)</h4>
-                  
+                  <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider m-0">
+                    Questions 6-10: C2 Neuroplasticity Lecture Notes (Gap Fill)
+                  </h4>
+
                   <div className="flex flex-col gap-3">
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q6. Historically, the adult brain was considered to be a <strong className="text-white">______</strong> structure.</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q6. Historically, the adult brain was considered to be a{' '}
+                        <strong className="text-white">______</strong> structure.
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập tính chất cấu trúc"
                         value={answers.q6 || ''}
-                        onChange={e => setAnswers({ ...answers, q6: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q6: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q7. Neuroplasticity refers to the brain's capacity to form new <strong className="text-white">______</strong> connections.</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q7. Neuroplasticity refers to the brain's capacity to form new{' '}
+                        <strong className="text-white">______</strong> connections.
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập loại kết nối"
                         value={answers.q7 || ''}
-                        onChange={e => setAnswers({ ...answers, q7: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q7: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q8. Groundbreaking research in the late twentieth century shattered the long-held <strong className="text-white">______</strong>.</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q8. Groundbreaking research in the late twentieth century shattered the long-held{' '}
+                        <strong className="text-white">______</strong>.
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập danh từ"
                         value={answers.q8 || ''}
-                        onChange={e => setAnswers({ ...answers, q8: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q8: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q9. Our cognitive architecture remains highly malleable even in <strong className="text-white">______</strong> (old age).</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q9. Our cognitive architecture remains highly malleable even in{' '}
+                        <strong className="text-white">______</strong> (old age).
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập thuật ngữ y học chỉ tuổi già"
                         value={answers.q9 || ''}
-                        onChange={e => setAnswers({ ...answers, q9: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q9: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
 
                     <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                      <span className="text-xs font-bold text-slate-400">Q10. This discovery has profound implications for <strong className="text-white">______</strong> rehabilitation.</span>
+                      <span className="text-xs font-bold text-slate-400">
+                        Q10. This discovery has profound implications for <strong className="text-white">______</strong>{' '}
+                        rehabilitation.
+                      </span>
                       <input
                         type="text"
                         placeholder="Nhập loại phục hồi chức năng"
                         value={answers.q10 || ''}
-                        onChange={e => setAnswers({ ...answers, q10: e.target.value })}
+                        onChange={(e) => setAnswers({ ...answers, q10: e.target.value })}
                         className="bg-slate-950 border border-slate-800 focus:border-emerald-500 rounded px-3 py-1.5 text-xs text-white outline-none font-semibold w-full max-w-sm"
                       />
                     </div>
@@ -811,18 +909,25 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
             {/* GRAMMAR TAB */}
             {activeTab === 'grammar' && (
               <div className="flex flex-col gap-5">
-                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider m-0">Questions 11-15: Multiple Choice Grammar Core</h4>
-                
+                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider m-0">
+                  Questions 11-15: Multiple Choice Grammar Core
+                </h4>
+
                 <div className="flex flex-col gap-4">
                   <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                    <span className="text-xs font-bold text-slate-300">Q11. "She <strong className="text-emerald-400">______</strong> to school every day."</span>
+                    <span className="text-xs font-bold text-slate-300">
+                      Q11. "She <strong className="text-emerald-400">______</strong> to school every day."
+                    </span>
                     <div className="grid grid-cols-2 gap-2 mt-1">
-                      {['A. go', 'B. goes', 'C. going', 'D. gone'].map(opt => (
-                        <label key={opt} className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
-                          (answers.q11 || '').toUpperCase() === opt[0]
-                            ? 'bg-emerald-900/60 border-emerald-500 text-white'
-                            : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
-                        }`}>
+                      {['A. go', 'B. goes', 'C. going', 'D. gone'].map((opt) => (
+                        <label
+                          key={opt}
+                          className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                            (answers.q11 || '').toUpperCase() === opt[0]
+                              ? 'bg-emerald-900/60 border-emerald-500 text-white'
+                              : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                          }`}
+                        >
                           <input
                             type="radio"
                             name="q11"
@@ -837,14 +942,19 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                   </div>
 
                   <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                    <span className="text-xs font-bold text-slate-300">Q12. "They <strong className="text-emerald-400">______</strong> TV when the phone rang."</span>
+                    <span className="text-xs font-bold text-slate-300">
+                      Q12. "They <strong className="text-emerald-400">______</strong> TV when the phone rang."
+                    </span>
                     <div className="grid grid-cols-2 gap-2 mt-1">
-                      {['A. watched', 'B. are watching', 'C. were watching', 'D. watch'].map(opt => (
-                        <label key={opt} className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
-                          (answers.q12 || '').toUpperCase() === opt[0]
-                            ? 'bg-emerald-900/60 border-emerald-500 text-white'
-                            : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
-                        }`}>
+                      {['A. watched', 'B. are watching', 'C. were watching', 'D. watch'].map((opt) => (
+                        <label
+                          key={opt}
+                          className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                            (answers.q12 || '').toUpperCase() === opt[0]
+                              ? 'bg-emerald-900/60 border-emerald-500 text-white'
+                              : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                          }`}
+                        >
                           <input
                             type="radio"
                             name="q12"
@@ -859,14 +969,19 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                   </div>
 
                   <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                    <span className="text-xs font-bold text-slate-300">Q13. "If it rains tomorrow, we <strong className="text-emerald-400">______</strong> the picnic."</span>
+                    <span className="text-xs font-bold text-slate-300">
+                      Q13. "If it rains tomorrow, we <strong className="text-emerald-400">______</strong> the picnic."
+                    </span>
                     <div className="grid grid-cols-2 gap-2 mt-1">
-                      {['A. cancel', 'B. will cancel', 'C. would cancel', 'D. cancelled'].map(opt => (
-                        <label key={opt} className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
-                          (answers.q13 || '').toUpperCase() === opt[0]
-                            ? 'bg-emerald-900/60 border-emerald-500 text-white'
-                            : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
-                        }`}>
+                      {['A. cancel', 'B. will cancel', 'C. would cancel', 'D. cancelled'].map((opt) => (
+                        <label
+                          key={opt}
+                          className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                            (answers.q13 || '').toUpperCase() === opt[0]
+                              ? 'bg-emerald-900/60 border-emerald-500 text-white'
+                              : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                          }`}
+                        >
                           <input
                             type="radio"
                             name="q13"
@@ -881,14 +996,20 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                   </div>
 
                   <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                    <span className="text-xs font-bold text-slate-300">Q14. "This is <strong className="text-emerald-400">______</strong> interesting book I have ever read."</span>
+                    <span className="text-xs font-bold text-slate-300">
+                      Q14. "This is <strong className="text-emerald-400">______</strong> interesting book I have ever
+                      read."
+                    </span>
                     <div className="grid grid-cols-2 gap-2 mt-1">
-                      {['A. the most', 'B. most', 'C. more', 'D. as'].map(opt => (
-                        <label key={opt} className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
-                          (answers.q14 || '').toUpperCase() === opt[0]
-                            ? 'bg-emerald-900/60 border-emerald-500 text-white'
-                            : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
-                        }`}>
+                      {['A. the most', 'B. most', 'C. more', 'D. as'].map((opt) => (
+                        <label
+                          key={opt}
+                          className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                            (answers.q14 || '').toUpperCase() === opt[0]
+                              ? 'bg-emerald-900/60 border-emerald-500 text-white'
+                              : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                          }`}
+                        >
                           <input
                             type="radio"
                             name="q14"
@@ -903,14 +1024,19 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
                   </div>
 
                   <div className="bg-slate-900/35 border border-slate-850 p-4 rounded-lg flex flex-col gap-2">
-                    <span className="text-xs font-bold text-slate-300">Q15. "He is very good <strong className="text-emerald-400">______</strong> playing the guitar."</span>
+                    <span className="text-xs font-bold text-slate-300">
+                      Q15. "He is very good <strong className="text-emerald-400">______</strong> playing the guitar."
+                    </span>
                     <div className="grid grid-cols-2 gap-2 mt-1">
-                      {['A. at', 'B. in', 'C. on', 'D. for'].map(opt => (
-                        <label key={opt} className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
-                          (answers.q15 || '').toUpperCase() === opt[0]
-                            ? 'bg-emerald-900/60 border-emerald-500 text-white'
-                            : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
-                        }`}>
+                      {['A. at', 'B. in', 'C. on', 'D. for'].map((opt) => (
+                        <label
+                          key={opt}
+                          className={`flex items-center gap-2 px-3 py-2 border rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                            (answers.q15 || '').toUpperCase() === opt[0]
+                              ? 'bg-emerald-900/60 border-emerald-500 text-white'
+                              : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                          }`}
+                        >
                           <input
                             type="radio"
                             name="q15"
@@ -943,7 +1069,9 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
       {view === 'result' && (
         <div className="w-full max-w-2xl bg-slate-900/90 backdrop-blur-xl border border-slate-800/80 p-8 rounded-2xl shadow-2xl flex flex-col gap-6 text-left relative z-10 transition-all duration-300 transform scale-100">
           <div className="flex flex-col gap-1.5 items-center text-center">
-            <span className="w-14 h-14 bg-emerald-900/30 text-emerald-400 rounded-full flex items-center justify-center text-3xl font-bold animate-bounce shadow shadow-emerald-500/10 mb-2">🎉</span>
+            <span className="w-14 h-14 bg-emerald-900/30 text-emerald-400 rounded-full flex items-center justify-center text-3xl font-bold animate-bounce shadow shadow-emerald-500/10 mb-2">
+              🎉
+            </span>
             <h2 className="text-2xl font-black tracking-tight text-white m-0">Đã Hoàn Thành Khảo Sát Onboarding!</h2>
             <p className="text-xs text-slate-400 font-medium">Báo cáo năng lực học thuật & Đề xuất lộ trình của bạn</p>
           </div>
@@ -952,7 +1080,9 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
           <div className="grid grid-cols-3 gap-4 border border-slate-800 bg-slate-950/60 p-5 rounded-2xl">
             <div className="flex flex-col items-center justify-center border-r border-slate-800 p-2">
               <span className="text-slate-400 font-bold uppercase tracking-wider text-[9px]">Điểm số</span>
-              <span className="text-xl font-black text-emerald-400 mt-1">{score.correct} / {score.total}</span>
+              <span className="text-xl font-black text-emerald-400 mt-1">
+                {score.correct} / {score.total}
+              </span>
             </div>
             <div className="flex flex-col items-center justify-center border-r border-slate-800 p-2">
               <span className="text-slate-400 font-bold uppercase tracking-wider text-[9px]">Độ chính xác</span>
@@ -960,7 +1090,9 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
             </div>
             <div className="flex flex-col items-center justify-center p-2">
               <span className="text-slate-400 font-bold uppercase tracking-wider text-[9px]">Target Band gốc</span>
-              <span className="text-xl font-black text-amber-400 mt-1">{(currentUser?.targetBand || 6.5).toFixed(1)}</span>
+              <span className="text-xl font-black text-amber-400 mt-1">
+                {(currentUser?.targetBand || 6.5).toFixed(1)}
+              </span>
             </div>
           </div>
 
@@ -969,7 +1101,7 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
             <h3 className="text-xs font-bold text-emerald-300 uppercase tracking-wider m-0 flex items-center gap-1.5">
               <span>🎯</span> Đề xuất phân lớp lộ trình của AI
             </h3>
-            
+
             <div className="flex items-center gap-3 mt-1">
               <span className="text-base font-black px-4 py-1.5 rounded-lg bg-emerald-600 text-white shadow shadow-emerald-600/20 font-mono">
                 {studyPath}
@@ -977,19 +1109,27 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
             </div>
 
             <p className="text-xs text-slate-300 leading-relaxed mt-2 m-0">
-              {studyPath.includes('Pre-CPE') && 'Hệ thống đánh giá kỹ năng ngữ pháp và nghe/đọc của bạn còn các lỗ hổng nền tảng. Bạn nên bắt đầu tại lớp "Pre-CPE Foundation" để củng cố lại từ vựng học thuật cơ bản, cấu trúc chia thì, và mạo từ trước khi làm các đề thi dài.'}
-              {studyPath.includes('Bridge') && 'Kỹ năng nền tảng của bạn ở mức trung bình ổn. AI đề xuất lộ trình "Bridge to 6.0" để tập trung rèn luyện các mẹo làm bài Reading Scanning/Synonym và cấu trúc điền từ ngắn của Section 1/2 Listening.'}
-              {studyPath.includes('Advanced') && 'Xin chúc mừng! Bạn có gốc tiếng Anh cực kỳ vững vàng. AI khuyến nghị bạn vào thẳng lộ trình "Advanced 7.5+" để tối ưu hóa thời gian thi đấu thực chiến, nâng cao band Writing qua các cấu trúc từ vựng hiếm và cải thiện Pronunciation chuyên sâu.'}
+              {studyPath.includes('Pre-CPE') &&
+                'Hệ thống đánh giá kỹ năng ngữ pháp và nghe/đọc của bạn còn các lỗ hổng nền tảng. Bạn nên bắt đầu tại lớp "Pre-CPE Foundation" để củng cố lại từ vựng học thuật cơ bản, cấu trúc chia thì, và mạo từ trước khi làm các đề thi dài.'}
+              {studyPath.includes('Bridge') &&
+                'Kỹ năng nền tảng của bạn ở mức trung bình ổn. AI đề xuất lộ trình "Bridge to 6.0" để tập trung rèn luyện các mẹo làm bài Reading Scanning/Synonym và cấu trúc điền từ ngắn của Section 1/2 Listening.'}
+              {studyPath.includes('Advanced') &&
+                'Xin chúc mừng! Bạn có gốc tiếng Anh cực kỳ vững vàng. AI khuyến nghị bạn vào thẳng lộ trình "Advanced 7.5+" để tối ưu hóa thời gian thi đấu thực chiến, nâng cao band Writing qua các cấu trúc từ vựng hiếm và cải thiện Pronunciation chuyên sâu.'}
             </p>
           </div>
 
           {/* Weak Skills identified */}
           {weakSkills.length > 0 && (
             <div className="flex flex-col gap-2 text-left">
-              <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Các mảng kỹ năng cần chú ý củng cố ngay:</span>
+              <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">
+                Các mảng kỹ năng cần chú ý củng cố ngay:
+              </span>
               <div className="flex gap-2 flex-wrap mt-1">
-                {weakSkills.map(skill => (
-                  <span key={skill} className="bg-red-950/50 border border-red-800/40 text-red-300 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
+                {weakSkills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-red-950/50 border border-red-800/40 text-red-300 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide"
+                  >
                     ⚠️ {skill.replace('_', ' ')}
                   </span>
                 ))}
@@ -1019,8 +1159,12 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
         <div className="w-full max-w-3xl bg-slate-900/90 backdrop-blur-xl border border-slate-800/80 p-8 rounded-2xl shadow-2xl flex flex-col gap-6 text-left relative z-10 max-h-[90vh] overflow-y-auto animate-fade-in">
           <div className="flex items-center justify-between border-b border-slate-800 pb-4">
             <div>
-              <span className="text-[10px] bg-emerald-900/60 border border-emerald-700/60 text-emerald-300 font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Educational Audit Panel</span>
-              <h2 className="text-xl font-black tracking-tight text-white mt-1.5 mb-0">Xem Lại Đáp Án & Giải Thích Chi Tiết</h2>
+              <span className="text-[10px] bg-emerald-900/60 border border-emerald-700/60 text-emerald-300 font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                Educational Audit Panel
+              </span>
+              <h2 className="text-xl font-black tracking-tight text-white mt-1.5 mb-0">
+                Xem Lại Đáp Án & Giải Thích Chi Tiết
+              </h2>
             </div>
             <button
               onClick={() => setView('result')}
@@ -1031,7 +1175,9 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
           </div>
 
           <div className="bg-slate-950 border border-slate-850 p-4 rounded-xl text-xs text-slate-350 leading-relaxed">
-            🔍 Hãy đối chiếu câu trả lời của bạn với đáp án chính xác của động cơ khảo thí Cambridge. Đọc kỹ phần <strong className="text-emerald-400">giải thích sư phạm</strong> để hiểu cặn kẽ nguyên nhân làm sai và rút kinh nghiệm sâu sắc.
+            🔍 Hãy đối chiếu câu trả lời của bạn với đáp án chính xác của động cơ khảo thí Cambridge. Đọc kỹ phần{' '}
+            <strong className="text-emerald-400">giải thích sư phạm</strong> để hiểu cặn kẽ nguyên nhân làm sai và rút
+            kinh nghiệm sâu sắc.
           </div>
 
           {/* Question List */}
@@ -1040,18 +1186,23 @@ export default function Onboarding({ db, onComplete }: OnboardingProps) {
               const userRaw = (answers[q.id] || '').trim();
               const userAns = userRaw.toLowerCase();
               const isCorrect = GROUND_TRUTH[q.id].includes(userAns);
-              
+
               return (
-                <div key={q.id} className="bg-slate-950 border border-slate-850 rounded-xl p-5 shadow-inner flex flex-col gap-3">
+                <div
+                  key={q.id}
+                  className="bg-slate-950 border border-slate-850 rounded-xl p-5 shadow-inner flex flex-col gap-3"
+                >
                   <div className="flex justify-between items-start gap-4 flex-wrap">
                     <h4 className="text-xs font-black text-white uppercase tracking-wider m-0 max-w-md">
                       Câu {idx + 1} ({q.skill.toUpperCase()}): {q.questionText}
                     </h4>
-                    <span className={`text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 ${
-                      isCorrect 
-                        ? 'bg-green-950/60 border border-green-800/40 text-green-300' 
-                        : 'bg-red-950/60 border border-red-800/40 text-red-300'
-                    }`}>
+                    <span
+                      className={`text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 ${
+                        isCorrect
+                          ? 'bg-green-950/60 border border-green-800/40 text-green-300'
+                          : 'bg-red-950/60 border border-red-800/40 text-red-300'
+                      }`}
+                    >
                       {isCorrect ? '✓ Chính Xác' : '✗ Chưa Chính Xác'}
                     </span>
                   </div>

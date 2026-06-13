@@ -147,7 +147,8 @@ export default function AdminLearningAnalytics({
           </div>
           <h3 className="text-lg font-black text-slate-100 m-0 mt-3">Learning system control plane</h3>
           <p className="text-xs text-slate-500 mt-1 max-w-3xl">
-            Tracks content coverage, missing metadata, abnormal review risk and learning events from the shared portal data.
+            Tracks content coverage, missing metadata, abnormal review risk and learning events from the shared portal
+            data.
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 min-w-full lg:min-w-[620px]">
@@ -160,22 +161,31 @@ export default function AdminLearningAnalytics({
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <Panel title="Coverage by program" meta={`${analytics.graphStats.concepts} concepts / ${analytics.graphStats.skills} skills`}>
+        <Panel
+          title="Coverage by program"
+          meta={`${analytics.graphStats.concepts} concepts / ${analytics.graphStats.skills} skills`}
+        >
           <div className="space-y-3">
             {analytics.coverageRows.map((row) => (
               <div key={row.programId} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest m-0">{row.programId}</p>
+                    <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest m-0">
+                      {row.programId}
+                    </p>
                     <h4 className="text-sm font-black text-slate-100 mt-1 mb-0">{row.title}</h4>
                   </div>
                   <span className="font-mono font-black text-emerald-400">{Math.round(row.coverage)}%</span>
                 </div>
                 <div className="h-2 bg-slate-900 border border-slate-850 rounded-full overflow-hidden mt-3">
-                  <div className="h-full bg-emerald-500 rounded-full" style={{ width: `${Math.max(4, Math.min(100, row.coverage))}%` }} />
+                  <div
+                    className="h-full bg-emerald-500 rounded-full"
+                    style={{ width: `${Math.max(4, Math.min(100, row.coverage))}%` }}
+                  />
                 </div>
                 <p className="text-[11px] text-slate-500 mt-2 mb-0">
-                  {row.coveredTargets}/{row.totalTargets} graph targets covered by {row.sourceUnits} content units. Focus: <span className="text-slate-300">{row.weakestNodeLabel}</span>
+                  {row.coveredTargets}/{row.totalTargets} graph targets covered by {row.sourceUnits} content units.
+                  Focus: <span className="text-slate-300">{row.weakestNodeLabel}</span>
                 </p>
               </div>
             ))}
@@ -185,7 +195,10 @@ export default function AdminLearningAnalytics({
         <Panel title="Metadata gaps" meta={`${analytics.metadataGaps.length} units need tags`}>
           <div className="space-y-2 max-h-[420px] overflow-y-auto pr-1">
             {analytics.metadataGaps.slice(0, 10).map((gap) => (
-              <div key={`${gap.kind}-${gap.id}`} className="bg-slate-950/60 border border-slate-850 rounded-xl p-3 flex items-start justify-between gap-3">
+              <div
+                key={`${gap.kind}-${gap.id}`}
+                className="bg-slate-950/60 border border-slate-850 rounded-xl p-3 flex items-start justify-between gap-3"
+              >
                 <div className="min-w-0">
                   <p className="text-xs font-bold text-slate-200 truncate m-0">{gap.title}</p>
                   <p className="text-[11px] text-slate-500 mt-0.5 mb-0">
@@ -210,7 +223,9 @@ export default function AdminLearningAnalytics({
       >
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
           <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
-            <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">Learning-ready English</p>
+            <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">
+              Learning-ready English
+            </p>
             <p className="text-2xl font-black text-emerald-400 font-mono m-0 mt-1">
               {contentSnapshot.coverage.readyQuestions}/{contentSnapshot.qualitySummary.questions}
             </p>
@@ -252,18 +267,18 @@ export default function AdminLearningAnalytics({
 
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-3">
           {contentSnapshot.skillReadiness.map((skill) => {
-            const readyRate = skill.totalItems ? Math.round(((skill.learningReadyItems + skill.feedbackOnlyItems) / skill.totalItems) * 100) : 0;
+            const readyRate = skill.totalItems
+              ? Math.round(((skill.learningReadyItems + skill.feedbackOnlyItems) / skill.totalItems) * 100)
+              : 0;
             const statusClass =
-              readyRate >= 90
-                ? 'text-emerald-400'
-                : readyRate >= 50
-                  ? 'text-amber-400'
-                  : 'text-rose-400';
+              readyRate >= 90 ? 'text-emerald-400' : readyRate >= 50 ? 'text-amber-400' : 'text-rose-400';
             return (
               <div key={skill.skill} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
-                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">{skill.skill.replace(/_/g, ' ')}</p>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">
+                      {skill.skill.replace(/_/g, ' ')}
+                    </p>
                     <h5 className="text-sm font-black text-slate-100 mt-1 mb-0 truncate">{skill.label}</h5>
                   </div>
                   <span className={`font-mono font-black ${statusClass}`}>{readyRate}%</span>
@@ -294,9 +309,17 @@ export default function AdminLearningAnalytics({
                 <div className="flex items-center justify-between gap-3">
                   <div className="min-w-0">
                     <p className="text-xs font-bold text-slate-200 truncate m-0">{risk.title}</p>
-                    <p className="text-[11px] text-slate-500 mt-0.5 mb-0">{risk.area} / Leitner stage {risk.stage}</p>
+                    <p className="text-[11px] text-slate-500 mt-0.5 mb-0">
+                      {risk.area} / Leitner stage {risk.stage}
+                    </p>
                   </div>
-                  <span className={risk.wrongRate >= 72 ? 'text-rose-400 font-mono font-black' : 'text-amber-400 font-mono font-black'}>
+                  <span
+                    className={
+                      risk.wrongRate >= 72
+                        ? 'text-rose-400 font-mono font-black'
+                        : 'text-amber-400 font-mono font-black'
+                    }
+                  >
                     {risk.wrongRate}%
                   </span>
                 </div>
@@ -313,14 +336,19 @@ export default function AdminLearningAnalytics({
           </div>
         </Panel>
 
-        <Panel title="Learning event analytics" meta={`${analytics.graphStats.objectives} objectives / ${analytics.graphStats.edges} edges`}>
+        <Panel
+          title="Learning event analytics"
+          meta={`${analytics.graphStats.objectives} objectives / ${analytics.graphStats.edges} edges`}
+        >
           <div className="space-y-2">
             {analytics.eventRows.map((row) => (
               <div key={row.kind} className="bg-slate-950/60 border border-slate-850 rounded-xl p-3">
                 <div className="flex items-center justify-between gap-3">
                   <div>
                     <p className="text-xs font-bold text-slate-200 m-0">{row.kind}</p>
-                    <p className="text-[11px] text-slate-500 mt-0.5 mb-0">{row.source} / latest {row.latestAt}</p>
+                    <p className="text-[11px] text-slate-500 mt-0.5 mb-0">
+                      {row.source} / latest {row.latestAt}
+                    </p>
                   </div>
                   <span className="font-mono font-black text-cyan-400">{row.count}</span>
                 </div>
@@ -388,9 +416,10 @@ function buildCoverageRows(
     const programMap = resolveProgramMap(graph, programId);
     const targetIds = uniqueStrings([...(programMap?.conceptIds || []), ...(programMap?.skillIds || [])]);
     const coveredIds = new Set<string>();
-    const sourceUnits = track.id === 'math'
-      ? mathLessons.length
-      : importedExams.filter((exam) => exam.exam.toLowerCase() === track.id).length;
+    const sourceUnits =
+      track.id === 'math'
+        ? mathLessons.length
+        : importedExams.filter((exam) => exam.exam.toLowerCase() === track.id).length;
 
     if (track.id === 'math') {
       mathLessons.forEach((lesson) => inferMathLessonNodeIds(lesson).forEach((id) => coveredIds.add(id)));
@@ -421,27 +450,33 @@ function buildMetadataGaps(
   importedExams: ExamLike[],
   errorQuestions: ErrorQuestionLike[],
 ): MetadataGap[] {
-  const mathGaps = mathLessons.filter((item) => !hasExplicitMetadata(item)).map((item) => ({
-    id: item.id,
-    title: item.title,
-    kind: 'math_lesson',
-    trackId: 'math' as PortalTrackId,
-    missing: missingMetadata(item),
-  }));
-  const examGaps = importedExams.filter((item) => !hasExplicitMetadata(item)).map((item) => ({
-    id: item.id,
-    title: item.title,
-    kind: 'exam',
-    trackId: normalizeTrackId(item.exam),
-    missing: missingMetadata(item),
-  }));
-  const errorGaps = errorQuestions.filter((item) => !hasExplicitMetadata(item)).map((item) => ({
-    id: item.id,
-    title: previewText(item.text, 72),
-    kind: 'error_question',
-    trackId: inferTrackFromText(item.text),
-    missing: missingMetadata(item),
-  }));
+  const mathGaps = mathLessons
+    .filter((item) => !hasExplicitMetadata(item))
+    .map((item) => ({
+      id: item.id,
+      title: item.title,
+      kind: 'math_lesson',
+      trackId: 'math' as PortalTrackId,
+      missing: missingMetadata(item),
+    }));
+  const examGaps = importedExams
+    .filter((item) => !hasExplicitMetadata(item))
+    .map((item) => ({
+      id: item.id,
+      title: item.title,
+      kind: 'exam',
+      trackId: normalizeTrackId(item.exam),
+      missing: missingMetadata(item),
+    }));
+  const errorGaps = errorQuestions
+    .filter((item) => !hasExplicitMetadata(item))
+    .map((item) => ({
+      id: item.id,
+      title: previewText(item.text, 72),
+      kind: 'error_question',
+      trackId: inferTrackFromText(item.text),
+      missing: missingMetadata(item),
+    }));
 
   return [...mathGaps, ...examGaps, ...errorGaps];
 }
@@ -465,7 +500,12 @@ function buildEventRows(adminLogs: SystemLog[], learningEvents: LearningEventRec
   const byKind = new Map<string, { count: number; latestAt: string; latestMs: number; source: string }>();
 
   learningEvents.forEach((event) => {
-    recordEventRow(byKind, classifyLearningEvent(event), event.occurredAt, normalizeEventSource(event.source || 'shared learning event'));
+    recordEventRow(
+      byKind,
+      classifyLearningEvent(event),
+      event.occurredAt,
+      normalizeEventSource(event.source || 'shared learning event'),
+    );
   });
 
   adminLogs.forEach((log) => {
@@ -512,7 +552,10 @@ function missingMetadata(item: { conceptIds?: string[]; skillIds?: string[] }): 
 }
 
 function resolveProgramMap(graph: KnowledgeGraph, programId: ProgramId): ProgramMap | undefined {
-  return graph.programMaps.find((item) => item.programId === programId) || (programId === 'cae' ? graph.programMaps.find((item) => item.programId === 'cpe') : undefined);
+  return (
+    graph.programMaps.find((item) => item.programId === programId) ||
+    (programId === 'cae' ? graph.programMaps.find((item) => item.programId === 'cpe') : undefined)
+  );
 }
 
 function inferMathLessonNodeIds(lesson: MathLessonLike): string[] {
@@ -523,22 +566,38 @@ function inferMathLessonNodeIds(lesson: MathLessonLike): string[] {
   if (lesson.id.includes('test')) {
     return ['math.quadratic_equation', 'math.vieta', 'math.plane_geometry', 'math.statistics'];
   }
-  return ['math.algebraic_expression', 'math.factorization', 'math.quadratic_equation', 'math.simplify_expression', 'math.apply_vieta'];
+  return [
+    'math.algebraic_expression',
+    'math.factorization',
+    'math.quadratic_equation',
+    'math.simplify_expression',
+    'math.apply_vieta',
+  ];
 }
 
 function inferExamNodeIds(exam: ExamLike): string[] {
   if (hasExplicitMetadata(exam)) return uniqueStrings([...(exam.conceptIds || []), ...(exam.skillIds || [])]);
 
   const id = exam.id.toLowerCase();
-  if (id.includes('sat-m')) return ['math.linear_equation', 'math.quadratic_equation', 'math.solve_linear_equation', 'math.solve_quadratic_by_factor'];
-  if (id.includes('sat-full')) return ['math.linear_equation', 'math.quadratic_equation', 'eng.reading_inference', 'eng.grammar_accuracy'];
-  if (id.includes('sat-rw')) return ['eng.reading_main_idea', 'eng.reading_inference', 'eng.grammar_accuracy', 'eng.edit_sentence_errors'];
-  if (id.includes('read')) return ['eng.reading_main_idea', 'eng.reading_detail', 'eng.reading_inference', 'eng.identify_specific_detail'];
+  if (id.includes('sat-m'))
+    return [
+      'math.linear_equation',
+      'math.quadratic_equation',
+      'math.solve_linear_equation',
+      'math.solve_quadratic_by_factor',
+    ];
+  if (id.includes('sat-full'))
+    return ['math.linear_equation', 'math.quadratic_equation', 'eng.reading_inference', 'eng.grammar_accuracy'];
+  if (id.includes('sat-rw'))
+    return ['eng.reading_main_idea', 'eng.reading_inference', 'eng.grammar_accuracy', 'eng.edit_sentence_errors'];
+  if (id.includes('read'))
+    return ['eng.reading_main_idea', 'eng.reading_detail', 'eng.reading_inference', 'eng.identify_specific_detail'];
   if (id.includes('list')) return ['eng.listening_detail'];
   if (id.includes('write')) return ['eng.academic_writing', 'eng.develop_academic_argument'];
   if (id.includes('speak')) return ['eng.vocabulary_range', 'eng.academic_register'];
   if (id.includes('uoe-03')) return ['eng.word_formation', 'eng.build_word_family'];
-  if (id.includes('uoe-04')) return ['eng.sentence_structure', 'eng.control_clause_structure', 'eng.edit_sentence_errors'];
+  if (id.includes('uoe-04'))
+    return ['eng.sentence_structure', 'eng.control_clause_structure', 'eng.edit_sentence_errors'];
   if (id.includes('uoe')) return ['eng.vocabulary_range', 'eng.grammar_accuracy', 'eng.use_collocation'];
   if (id.includes('mock')) return ['eng.vocabulary_range', 'eng.grammar_accuracy', 'eng.reading_inference'];
   return [];
@@ -572,9 +631,16 @@ function classifyEvent(log: SystemLog): string {
   const message = normalizeText(log.message);
   if (log.level === 'ERROR') return 'System error';
   if (message.includes('dang nhap') || message.includes('dang xuat')) return 'Auth activity';
-  if (message.includes('cau hoi') || message.includes('de thi') || message.includes('casio') || message.includes('latex')) return 'Content operations';
+  if (
+    message.includes('cau hoi') ||
+    message.includes('de thi') ||
+    message.includes('casio') ||
+    message.includes('latex')
+  )
+    return 'Content operations';
   if (message.includes('coin') || message.includes('xu') || message.includes('khen thuong')) return 'Reward economy';
-  if (message.includes('hoc sinh') || message.includes('hoc tap') || message.includes('giai dung')) return 'Learning activity';
+  if (message.includes('hoc sinh') || message.includes('hoc tap') || message.includes('giai dung'))
+    return 'Learning activity';
   if (message.includes('admin')) return 'Admin operations';
   return `${log.module || 'SYSTEM'} ${log.level}`;
 }
@@ -607,7 +673,10 @@ function previewText(value: string, maxLength: number): string {
 }
 
 function normalizeText(value: string): string {
-  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
 }
 
 function uniqueStrings(values: string[]): string[] {

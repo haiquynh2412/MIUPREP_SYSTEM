@@ -36,7 +36,7 @@ export default function DetectiveMission({
   }
 
   const completedCountInChapter = completedMissionIds.filter((id) =>
-    chapterMissions.some((m) => (m.id || m.title) === id)
+    chapterMissions.some((m) => (m.id || m.title) === id),
   ).length;
 
   return (
@@ -56,10 +56,10 @@ export default function DetectiveMission({
           const isCompleted = completedSet.has(id);
           const hintOpen = expandedHints[id];
 
-          const title = lang === 'en' ? (mission.titleEn || mission.title) : mission.title;
-          const description = lang === 'en' ? (mission.descriptionEn || mission.description) : mission.description;
-          const task = lang === 'en' ? (mission.taskEn || mission.task) : mission.task;
-          const hint = lang === 'en' ? (mission.hintEn || mission.hint) : mission.hint;
+          const title = lang === 'en' ? mission.titleEn || mission.title : mission.title;
+          const description = lang === 'en' ? mission.descriptionEn || mission.description : mission.description;
+          const task = lang === 'en' ? mission.taskEn || mission.task : mission.task;
+          const hint = lang === 'en' ? mission.hintEn || mission.hint : mission.hint;
 
           return (
             <div

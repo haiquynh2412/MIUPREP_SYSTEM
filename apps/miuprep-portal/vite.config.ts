@@ -14,7 +14,11 @@ export default defineConfig({
           const normalized = id.replace(/\\/g, '/');
 
           if (normalized.includes('/node_modules/')) {
-            if (normalized.includes('/react/') || normalized.includes('/react-dom/') || normalized.includes('/scheduler/')) {
+            if (
+              normalized.includes('/react/') ||
+              normalized.includes('/react-dom/') ||
+              normalized.includes('/scheduler/')
+            ) {
               return 'vendor-react';
             }
             if (normalized.includes('/katex/')) {
@@ -32,16 +36,17 @@ export default defineConfig({
           if (normalized.includes('/apps/miuprep-portal/src/lib/studentProgress')) return 'portal-student-progress';
           if (normalized.includes('/apps/miuprep-portal/src/lib/adminContent')) return 'portal-admin-content';
           if (normalized.includes('/apps/miuprep-portal/src/lib/lessonTemplates')) return 'portal-lesson-templates';
-          if (normalized.includes('/apps/miuprep-portal/src/lib/englishItemBankPractice')) return 'portal-english-practice';
+          if (normalized.includes('/apps/miuprep-portal/src/lib/englishItemBankPractice'))
+            return 'portal-english-practice';
           if (normalized.includes('/apps/miuprep-portal/src/lib/templatePractice')) return 'portal-template-practice';
 
           return undefined;
-        }
-      }
-    }
+        },
+      },
+    },
   },
   server: {
     port: 3000,
-    host: '127.0.0.1'
-  }
+    host: '127.0.0.1',
+  },
 });

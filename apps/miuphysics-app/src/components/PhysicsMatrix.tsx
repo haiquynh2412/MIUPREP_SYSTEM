@@ -17,7 +17,7 @@ export default function PhysicsMatrix({
 
     const attempts = learningState?.attempts || [];
     const correctIds = new Set(
-      attempts.filter((a) => a.payload?.chapter === chapterId && a.correct).map((a) => a.payload?.sourceId)
+      attempts.filter((a) => a.payload?.chapter === chapterId && a.correct).map((a) => a.payload?.sourceId),
     );
 
     return {
@@ -65,12 +65,8 @@ export default function PhysicsMatrix({
                   <div className="zone-row-header-title">
                     <span className="zone-row-emoji">{zone.icon}</span>
                     <div>
-                      <h4 className="zone-row-name">
-                        {lang === 'en' ? zone.nameEn : zone.name}
-                      </h4>
-                      <span className="zone-row-sub">
-                        {lang === 'en' ? zone.name : zone.nameEn}
-                      </span>
+                      <h4 className="zone-row-name">{lang === 'en' ? zone.nameEn : zone.name}</h4>
+                      <span className="zone-row-sub">{lang === 'en' ? zone.name : zone.nameEn}</span>
                     </div>
                   </div>
                 </div>
@@ -78,9 +74,7 @@ export default function PhysicsMatrix({
                 {/* Chapters by Grade columns */}
                 {grades.map((g) => {
                   // Filter chapters in this zone that belong to this grade
-                  const cellChapters = chapters.filter(
-                    (ch) => zone.chapters.includes(ch.id) && ch.grade === g
-                  );
+                  const cellChapters = chapters.filter((ch) => zone.chapters.includes(ch.id) && ch.grade === g);
                   const isHighlighted = selectedGrade === g;
                   const isDimmed = selectedGrade && selectedGrade !== g;
 
@@ -144,7 +138,9 @@ export default function PhysicsMatrix({
       </div>
       <div className="matrix-legend">
         <span className="legend-dot"></span>
-        <span>{lang === 'en' ? 'Select any topic to start practicing' : 'Chọn chuyên đề bất kỳ để bắt đầu luyện tập'}</span>
+        <span>
+          {lang === 'en' ? 'Select any topic to start practicing' : 'Chọn chuyên đề bất kỳ để bắt đầu luyện tập'}
+        </span>
       </div>
     </div>
   );

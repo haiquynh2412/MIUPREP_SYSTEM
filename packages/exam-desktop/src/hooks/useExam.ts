@@ -3,13 +3,13 @@ import type { ExamAttempt, StorageAdapter, ErrorNotebookEntry, AnswerState } fro
 import type { ExamTrackConfig } from '../track-config';
 import type { IeltsTest } from '@miuprep/content';
 import { buildLearningEvent } from '@miuprep/learning';
-import { 
-  calculateRemainingTime, 
-  normalizeAnswer, 
-  isCorrectAnswer, 
+import {
+  calculateRemainingTime,
+  normalizeAnswer,
+  isCorrectAnswer,
   getEstimatedBandInfo,
   convertRawToCambridgeScale,
-  calculateCpeWeightedScore
+  calculateCpeWeightedScore,
 } from '@miuprep/core';
 
 function inferProgramId(test: IeltsTest): string {
@@ -40,7 +40,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
   const LEARNING_EVENT_SOURCE = track.learningEventSource;
   const [attempts, setAttempts] = useState<ExamAttempt[]>([]);
   const [availableTests, setAvailableTests] = useState<IeltsTest[]>([]);
-  
+
   const [selectedTest, setSelectedTest] = useState<IeltsTest | null>(null);
   const [currentExamMode, setCurrentExamMode] = useState<'practice' | 'exam'>('exam');
   const [remainingSeconds, setRemainingSeconds] = useState(3600);
@@ -90,7 +90,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
               if (raw) {
                 const localAttempt = JSON.parse(raw);
                 if (localAttempt && localAttempt.userId === userId) {
-                  const sqliteAttempt = list.find(a => a.local_id === localAttempt.local_id);
+                  const sqliteAttempt = list.find((a) => a.local_id === localAttempt.local_id);
                   if (!sqliteAttempt || new Date(localAttempt.updatedAt) > new Date(sqliteAttempt.updatedAt)) {
                     await db.saveAttempt(localAttempt);
                     requiresReload = true;
@@ -111,8 +111,8 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
       }
 
       setAttempts(list.sort((a, b) => b.createdAt.localeCompare(a.createdAt)));
-      
-      const active = list.find(att => att.status === 'in_progress');
+
+      const active = list.find((att) => att.status === 'in_progress');
       setActiveAttempt(active || null);
 
       const testsList = await db.listTests();
@@ -133,7 +133,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
         answersState[qId] = {
           rawValue: val,
           normalizedValue: normalizeAnswer(val),
-          updatedAt: new Date().toISOString()
+          updatedAt: new Date().toISOString(),
         };
       }
 
@@ -142,7 +142,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
         lastSavedAt: new Date().toISOString(),
         remainingSeconds: remainingSecondsRef.current,
         answers: answersState,
-        updatedAt: new Date().toISOString()
+        updatedAt: new Date().toISOString(),
       };
       await db.saveAttempt(updatedAttempt);
     } catch (e) {
@@ -156,13 +156,13 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
     const duration = test.skill === 'listening' ? 1800 : 3600;
     setRemainingSeconds(duration);
     setDurationSeconds(duration);
-    
+
     const localId = generateLocalId('attempt');
     setCurrentAttemptId(localId);
     setUserAnswers({});
     setPauseRanges([]);
     setIsPaused(false);
-    
+
     const isoNow = new Date().toISOString();
     setStartedAt(isoNow);
 
@@ -180,7 +180,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
       createdAt: isoNow,
       updatedAt: isoNow,
       sync_status: 'pending',
-      version: 1
+      version: 1,
     };
 
     if (db) {
@@ -190,17 +190,17 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
   };
 
   const resumeExam = async (attempt: ExamAttempt) => {
-    const test = availableTests.find(t => t.id === attempt.testId);
+    const test = availableTests.find((t) => t.id === attempt.testId);
     if (!test) return;
     setSelectedTest(test);
     setCurrentExamMode(attempt.examMode || 'exam');
-    
+
     const isoNow = new Date().toISOString();
-    
+
     setStartedAt(attempt.startedAt);
     setDurationSeconds(attempt.durationSeconds);
     setCurrentAttemptId(attempt.local_id);
-    
+
     const updatedRanges = attempt.pauseRanges ? [...attempt.pauseRanges] : [];
     if (updatedRanges.length > 0 && updatedRanges[updatedRanges.length - 1].resumedAt === null) {
       updatedRanges[updatedRanges.length - 1].resumedAt = isoNow;
@@ -209,7 +209,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
       updatedRanges.push({ pausedAt: pausedStart, resumedAt: isoNow });
     }
     setPauseRanges(updatedRanges);
-    
+
     const restoredAnswers: Record<string, string> = {};
     for (const [qId, state] of Object.entries(attempt.answers)) {
       restoredAnswers[qId] = String(state.rawValue || '');
@@ -221,7 +221,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
       startedAt: attempt.startedAt,
       durationSeconds: attempt.durationSeconds,
       pauseRanges: updatedRanges,
-      currentTime: isoNow
+      currentTime: isoNow,
     });
     setRemainingSeconds(initialRem > 0 ? initialRem : 0);
 
@@ -231,7 +231,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
       remainingSeconds: initialRem > 0 ? initialRem : 0,
       lastSavedAt: isoNow,
       updatedAt: isoNow,
-      version: attempt.version + 1
+      version: attempt.version + 1,
     };
     if (db) {
       await db.saveAttempt(updatedAttempt);
@@ -276,7 +276,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
             answersState[q.id] = {
               rawValue: userVal,
               normalizedValue: normalizeAnswer(userVal),
-              updatedAt: new Date().toISOString()
+              updatedAt: new Date().toISOString(),
             };
 
             const isCorrect = isCorrectAnswer(userVal, q.acceptedAnswers);
@@ -297,7 +297,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
                   easeFactor: 2.5,
                   repetitions: 0,
                   nextReviewAt: new Date().toISOString(),
-                  createdAt: new Date().toISOString()
+                  createdAt: new Date().toISOString(),
                 };
                 await db.addErrorEntry(errorEntry);
               } catch (err) {
@@ -324,7 +324,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
           correctCount,
           totalQuestions,
           selectedTest.skill as 'listening' | 'reading',
-          selectedTest.type
+          selectedTest.type,
         );
         bandScore = bandInfo.band;
         isEstimate = bandInfo.isEstimate;
@@ -345,45 +345,51 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
           rawScore: finalRaw,
           bandScore: bandScore,
           totalQuestions: finalTotal,
-          isMockScoring: isEstimate
+          isMockScoring: isEstimate,
         },
         updatedAt: submittedAt,
-        version: attempt.version + 1
+        version: attempt.version + 1,
       };
 
       await db.saveAttempt(finishedAttempt);
-      await db.saveLearningEvent(buildLearningEvent(inferLearningEventType(selectedTest), {
-        attemptId: finishedAttempt.local_id,
-        testId: selectedTest.id,
-        testTitle: selectedTest.title,
-        programId: inferProgramId(selectedTest),
-        skill: selectedTest.skill,
-        exam: selectedTest.exam || inferProgramId(selectedTest),
-        testType: selectedTest.type,
-        examMode: finishedAttempt.examMode || currentExamMode,
-        rawScore: finalRaw,
-        correctCount,
-        totalQuestions: finalTotal,
-        bandScore,
-        isMockScoring: isEstimate,
-        accuracyPercent: finalTotal ? Math.round((finalRaw / finalTotal) * 100) : 0,
-        durationSeconds: finishedAttempt.durationSeconds,
-        remainingSeconds: remainingSecondsRef.current,
-        timeSpentSeconds: Math.max(0, finishedAttempt.durationSeconds - remainingSecondsRef.current),
-      }, {
-        id: `le-${finishedAttempt.local_id}`,
-        learnerId: userId,
-        entityType: 'exam_attempt',
-        entityId: finishedAttempt.local_id,
-        occurredAt: submittedAt,
-        source: LEARNING_EVENT_SOURCE,
-      }));
+      await db.saveLearningEvent(
+        buildLearningEvent(
+          inferLearningEventType(selectedTest),
+          {
+            attemptId: finishedAttempt.local_id,
+            testId: selectedTest.id,
+            testTitle: selectedTest.title,
+            programId: inferProgramId(selectedTest),
+            skill: selectedTest.skill,
+            exam: selectedTest.exam || inferProgramId(selectedTest),
+            testType: selectedTest.type,
+            examMode: finishedAttempt.examMode || currentExamMode,
+            rawScore: finalRaw,
+            correctCount,
+            totalQuestions: finalTotal,
+            bandScore,
+            isMockScoring: isEstimate,
+            accuracyPercent: finalTotal ? Math.round((finalRaw / finalTotal) * 100) : 0,
+            durationSeconds: finishedAttempt.durationSeconds,
+            remainingSeconds: remainingSecondsRef.current,
+            timeSpentSeconds: Math.max(0, finishedAttempt.durationSeconds - remainingSecondsRef.current),
+          },
+          {
+            id: `le-${finishedAttempt.local_id}`,
+            learnerId: userId,
+            entityType: 'exam_attempt',
+            entityId: finishedAttempt.local_id,
+            occurredAt: submittedAt,
+            source: LEARNING_EVENT_SOURCE,
+          },
+        ),
+      );
       await onUpdateWeaknesses();
-      
+
       setStartedAt(null);
       setCurrentAttemptId(null);
       setSelectedTest(null);
-      
+
       await loadHistory();
     } catch (e) {
       console.error('[Submit Exam] Error during submission:', e);
@@ -393,12 +399,12 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
   };
 
   const handleReviewAttempt = (attempt: ExamAttempt) => {
-    const test = availableTests.find(t => t.id === attempt.testId);
+    const test = availableTests.find((t) => t.id === attempt.testId);
     if (!test) return;
     setSelectedTest(test);
     setReviewAttempt(attempt);
     setIsReviewMode(true);
-    
+
     const restoredAnswers: Record<string, string> = {};
     for (const [qId, state] of Object.entries(attempt.answers || {})) {
       restoredAnswers[qId] = String(state.rawValue || '');
@@ -416,7 +422,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
           startedAt,
           durationSeconds,
           pauseRanges,
-          currentTime: timeNow
+          currentTime: timeNow,
         });
         setRemainingSeconds(rem);
 
@@ -444,10 +450,10 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
           answersState[qId] = {
             rawValue: val,
             normalizedValue: normalizeAnswer(val),
-            updatedAt: new Date().toISOString()
+            updatedAt: new Date().toISOString(),
           };
         }
-        
+
         const updatedAttempt = {
           local_id: currentAttemptId,
           testId: selectedTest.id,
@@ -462,7 +468,7 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
           createdAt: startedAt,
           updatedAt: new Date().toISOString(),
           sync_status: 'pending',
-          version: 999999
+          version: 999999,
         };
         const itemKey = `${track.emergencyStoragePrefix}${currentAttemptId}`;
         localStorage.setItem(itemKey, JSON.stringify(updatedAttempt));
@@ -525,6 +531,6 @@ export default function useExam({ db, userId, isTauri, generateLocalId, onUpdate
     togglePause,
     submitExam,
     handleAutoSubmit,
-    handleReviewAttempt
+    handleReviewAttempt,
   };
 }

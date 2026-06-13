@@ -48,7 +48,8 @@ export default function MathLessonTemplatePanel({
     [activeTracks, currentUser, fishCoins, learningEvents, mouseTrapsCount],
   );
   const mathSummary = snapshot.programSummaries.find((summary) => summary.track.id === 'math');
-  const mathNextStep = snapshot.learningPath.steps.find((step) => step.domainId === 'mathematics') || snapshot.learningPath.nextStep;
+  const mathNextStep =
+    snapshot.learningPath.steps.find((step) => step.domainId === 'mathematics') || snapshot.learningPath.nextStep;
   const weakConceptIds = uniqueIds([
     ...snapshot.recommendation.conceptIds,
     ...(mathNextStep?.scope === 'concept' ? [mathNextStep.id] : []),
@@ -75,7 +76,8 @@ export default function MathLessonTemplatePanel({
     ? remediationPlan.templates
     : recommendMath9LessonTemplates({ weakConceptIds, weakSkillIds, weakLabel, limit: 4 });
   const [selectedTemplateId, setSelectedTemplateId] = useState(recommendations[0]?.template.id || '');
-  const selectedRecommendation = recommendations.find((item) => item.template.id === selectedTemplateId) || recommendations[0];
+  const selectedRecommendation =
+    recommendations.find((item) => item.template.id === selectedTemplateId) || recommendations[0];
 
   if (!selectedRecommendation) return null;
 
@@ -93,10 +95,13 @@ export default function MathLessonTemplatePanel({
               Math 9 repair
             </span>
           </div>
-          <h2 className="text-xl sm:text-2xl font-black text-slate-100 mt-3 mb-2">Lop hoc sua loi theo Knowledge Graph</h2>
+          <h2 className="text-xl sm:text-2xl font-black text-slate-100 mt-3 mb-2">
+            Lop hoc sua loi theo Knowledge Graph
+          </h2>
           <p className="text-xs sm:text-sm text-slate-400 leading-relaxed m-0">
-            Moi lesson gom concept summary, worked example, guided questions, independent set, mixed review va reflection.
-            He thong uu tien template theo weakest concept/skill hien tai, de hoc sinh hoc nhanh nhung khong bi hong mat xich.
+            Moi lesson gom concept summary, worked example, guided questions, independent set, mixed review va
+            reflection. He thong uu tien template theo weakest concept/skill hien tai, de hoc sinh hoc nhanh nhung khong
+            bi hong mat xich.
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-2 lg:min-w-[520px]">
@@ -126,7 +131,9 @@ export default function MathLessonTemplatePanel({
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <span className={`text-[10px] font-black uppercase tracking-widest ${isSelected ? 'text-emerald-300' : 'text-slate-500'}`}>
+                    <span
+                      className={`text-[10px] font-black uppercase tracking-widest ${isSelected ? 'text-emerald-300' : 'text-slate-500'}`}
+                    >
                       Rank {index + 1} · {recommendation.matchReason}
                     </span>
                     <h3 className="text-sm sm:text-base font-black text-slate-100 mt-1 mb-1">{template.title}</h3>
@@ -214,26 +221,35 @@ function LessonTemplateDetail({
         </div>
 
         <div className="space-y-4 min-w-0">
-          <InfoBox title="Error split" items={[
-            remediationPlan.errorSplit.repairMode,
-            `CASIO check: ${remediationPlan.errorSplit.casioCheck}`,
-            `Reasoning check: ${remediationPlan.errorSplit.reasoningCheck}`,
-          ]} />
+          <InfoBox
+            title="Error split"
+            items={[
+              remediationPlan.errorSplit.repairMode,
+              `CASIO check: ${remediationPlan.errorSplit.casioCheck}`,
+              `Reasoning check: ${remediationPlan.errorSplit.reasoningCheck}`,
+            ]}
+          />
           <BackfillQueue items={remediationPlan.backfillUnits.slice(0, 3)} />
           {remediationPlan.proofScaffold && <ProofScaffoldBox plan={remediationPlan.proofScaffold} />}
-          <InfoBox title="Math 10-12 readiness" items={[
-            remediationPlan.math1012Readiness.focusCluster,
-            remediationPlan.math1012Readiness.guardrail,
-          ]} />
+          <InfoBox
+            title="Math 10-12 readiness"
+            items={[remediationPlan.math1012Readiness.focusCluster, remediationPlan.math1012Readiness.guardrail]}
+          />
           <Math1012ExpansionQueue items={remediationPlan.math1012Clusters.slice(0, 3)} />
           <InfoBox title="Common traps" items={template.commonTraps} />
-          <InfoBox title="Quick check" items={[`${template.quickCheck.prompt} -> ${template.quickCheck.expectedMove}`]} />
-          <InfoBox title="Graph links" items={[
-            `Concepts: ${template.conceptIds.join(', ')}`,
-            `Skills: ${template.skillIds.join(', ')}`,
-            `Prerequisites: ${template.prerequisiteIds.join(', ')}`,
-            `Remediation: ${template.remediationObjectiveIds.join(', ')}`,
-          ]} />
+          <InfoBox
+            title="Quick check"
+            items={[`${template.quickCheck.prompt} -> ${template.quickCheck.expectedMove}`]}
+          />
+          <InfoBox
+            title="Graph links"
+            items={[
+              `Concepts: ${template.conceptIds.join(', ')}`,
+              `Skills: ${template.skillIds.join(', ')}`,
+              `Prerequisites: ${template.prerequisiteIds.join(', ')}`,
+              `Remediation: ${template.remediationObjectiveIds.join(', ')}`,
+            ]}
+          />
           <div className="bg-slate-950/60 border border-slate-800 rounded-2xl p-4">
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">Reflection</p>
             <p className="text-xs text-slate-300 leading-relaxed mt-2 mb-0">{template.reflectionPrompt}</p>
@@ -262,7 +278,9 @@ function BackfillQueue({ items }: { items: MathBackfillRecommendation[] }) {
               </span>
               <div className="min-w-0">
                 <p className="text-xs font-black text-slate-100 m-0">{item.unit.title}</p>
-                <p className="text-[11px] text-slate-500 mt-1 mb-0">{item.matchReason} · {item.unit.cluster}</p>
+                <p className="text-[11px] text-slate-500 mt-1 mb-0">
+                  {item.matchReason} · {item.unit.cluster}
+                </p>
                 <p className="text-[11px] text-slate-300 leading-relaxed mt-2 mb-0">{item.unit.repairMove}</p>
               </div>
             </div>
@@ -296,7 +314,9 @@ function Math1012ExpansionQueue({ items }: { items: Math1012ClusterRecommendatio
                     {item.cluster.status.replaceAll('_', ' ')}
                   </span>
                 </div>
-                <p className="text-[11px] text-slate-500 mt-1 mb-0">{item.matchReason} - {item.cluster.gradeBand} - {item.cluster.cluster}</p>
+                <p className="text-[11px] text-slate-500 mt-1 mb-0">
+                  {item.matchReason} - {item.cluster.gradeBand} - {item.cluster.cluster}
+                </p>
                 <p className="text-[11px] text-slate-300 leading-relaxed mt-2 mb-0">{item.cluster.importGuard}</p>
               </div>
             </div>

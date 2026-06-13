@@ -52,7 +52,9 @@ export default function StudentTodaySprint({
   onDailyPlanCompleted,
 }: StudentTodaySprintProps) {
   const dateKey = getTodayPlanDateKey();
-  const [timeMode, setTimeMode] = useState<StudyTimeMode>(() => loadDailyPlanTimeMode(localStorage, currentUser.username));
+  const [timeMode, setTimeMode] = useState<StudyTimeMode>(() =>
+    loadDailyPlanTimeMode(localStorage, currentUser.username),
+  );
   const [completedStepIds, setCompletedStepIds] = useState<DailyLoopStepId[]>(() =>
     loadDailyPlanCompletedSteps(localStorage, currentUser.username, dateKey),
   );
@@ -196,7 +198,8 @@ export default function StudentTodaySprint({
               Today quest
             </span>
             <span className="text-[10px] font-bold text-slate-400 bg-slate-950/60 border border-slate-800 px-2 py-1 rounded">
-              {dailyPlan.completedStepCount}/{dailyPlan.totalStepCount} steps - {dailyPlan.completedMinutes}/{dailyPlan.totalMinutes} min
+              {dailyPlan.completedStepCount}/{dailyPlan.totalStepCount} steps - {dailyPlan.completedMinutes}/
+              {dailyPlan.totalMinutes} min
             </span>
             {dailyPlan.isCompleted && (
               <span className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-950 bg-emerald-300 px-2 py-1 rounded">
@@ -206,7 +209,9 @@ export default function StudentTodaySprint({
           </div>
 
           <div>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-50 m-0 tracking-tight">{dailyPlan.primaryTitle}</h2>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-50 m-0 tracking-tight">
+              {dailyPlan.primaryTitle}
+            </h2>
             <p className="text-sm text-slate-300 mt-2 mb-0 max-w-2xl leading-relaxed">{dailyPlan.primaryDetail}</p>
           </div>
 
@@ -232,24 +237,32 @@ export default function StudentTodaySprint({
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-3xl">
             <MomentumTile label="Next move" value={momentumMessage} />
-            <MomentumTile label="Time left" value={dailyPlan.isCompleted ? 'Done for today' : `${remainingMinutes} focused min`} />
-            <MomentumTile label="Reward rule" value={`Finish all steps once today to earn +${dailyPlan.rewardCoins} coins.`} />
+            <MomentumTile
+              label="Time left"
+              value={dailyPlan.isCompleted ? 'Done for today' : `${remainingMinutes} focused min`}
+            />
+            <MomentumTile
+              label="Reward rule"
+              value={`Finish all steps once today to earn +${dailyPlan.rewardCoins} coins.`}
+            />
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-3 min-w-full lg:min-w-[340px] lg:max-w-[380px]">
           <div className="bg-slate-950/70 border border-slate-800 rounded-2xl p-4">
-            <p className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-500 m-0">{dailyPlan.whyTitle}</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-500 m-0">
+              {dailyPlan.whyTitle}
+            </p>
             <p className="text-xs text-slate-300 mt-2 mb-0 leading-relaxed">{dailyPlan.whyDetail}</p>
             {firstError && (
-              <p className="text-[11px] text-slate-500 mt-3 mb-0 line-clamp-2">
-                First due item: {firstError.text}
-              </p>
+              <p className="text-[11px] text-slate-500 mt-3 mb-0 line-clamp-2">First due item: {firstError.text}</p>
             )}
           </div>
 
           <div className="bg-emerald-950/40 border border-emerald-800/60 rounded-2xl p-4">
-            <p className="text-[10px] font-black uppercase tracking-[0.16em] text-emerald-300 m-0">{dailyPlan.unlockTitle}</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.16em] text-emerald-300 m-0">
+              {dailyPlan.unlockTitle}
+            </p>
             <p className="text-xs text-emerald-50/80 mt-2 mb-0 leading-relaxed">{dailyPlan.unlockDetail}</p>
           </div>
         </div>
@@ -269,7 +282,9 @@ export default function StudentTodaySprint({
               }`}
             >
               <span className="block text-xs font-black">{mode.label}</span>
-              <span className={`block text-[10px] font-bold mt-0.5 ${timeMode === mode.id ? 'text-slate-800' : 'text-slate-600'}`}>
+              <span
+                className={`block text-[10px] font-bold mt-0.5 ${timeMode === mode.id ? 'text-slate-800' : 'text-slate-600'}`}
+              >
                 {mode.description}
               </span>
             </button>
@@ -318,7 +333,9 @@ export default function StudentTodaySprint({
               >
                 {step.completed ? '✓' : index + 1}
               </button>
-              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{step.durationMinutes} min</span>
+              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">
+                {step.durationMinutes} min
+              </span>
             </div>
             <h3 className="text-sm font-black text-slate-100 mt-3 mb-0 leading-snug">{step.title}</h3>
             <p className="text-[11px] text-slate-400 leading-relaxed mt-2 mb-3 flex-1">{step.detail}</p>
@@ -337,8 +354,8 @@ export default function StudentTodaySprint({
         <div className="bg-slate-950/45 border border-slate-800 rounded-2xl p-4">
           <p className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-500 m-0">Why this works</p>
           <p className="text-xs text-slate-300 mt-2 mb-0 leading-relaxed">
-            Mini diagnostic finds the bottleneck, micro lesson repairs the exact link, guided practice builds the method,
-            independent practice collects evidence, and error review protects retention.
+            Mini diagnostic finds the bottleneck, micro lesson repairs the exact link, guided practice builds the
+            method, independent practice collects evidence, and error review protects retention.
           </p>
         </div>
 

@@ -8,10 +8,10 @@ export default function ChapterMap({ chapters, questions, learningState, onSelec
 
     const attempts = learningState?.attempts || [];
     const attemptedIds = new Set(
-      attempts.filter((a) => a.payload?.chapter === chapterId).map((a) => a.payload?.sourceId)
+      attempts.filter((a) => a.payload?.chapter === chapterId).map((a) => a.payload?.sourceId),
     );
     const correctIds = new Set(
-      attempts.filter((a) => a.payload?.chapter === chapterId && a.correct).map((a) => a.payload?.sourceId)
+      attempts.filter((a) => a.payload?.chapter === chapterId && a.correct).map((a) => a.payload?.sourceId),
     );
 
     return {
@@ -47,9 +47,7 @@ export default function ChapterMap({ chapters, questions, learningState, onSelec
                 <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text)' }}>
                   {stats.correct}/{stats.total}
                 </div>
-                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                  {t('correct_count', lang)}
-                </div>
+                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{t('correct_count', lang)}</div>
               </div>
             </div>
           </div>

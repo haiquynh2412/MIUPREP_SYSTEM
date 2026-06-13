@@ -385,7 +385,7 @@ const translations = {
     home_by_chapter: 'By Chapter',
     home_thematic_matrix: 'Thematic Matrix',
     correct_count: 'correct',
-    daily_fact_title: '💡 Today\'s Physics Fact',
+    daily_fact_title: "💡 Today's Physics Fact",
     daily_fact_sub: 'New fact every day',
     achievement_title_text: 'Achievements',
     achievement_level_prefix: 'Level {level} — {title}',

@@ -12,17 +12,21 @@ export default function LanguageToggle({ lang = 'vi', onToggle }: any) {
       title={lang === 'vi' ? 'Switch to English' : 'Chuyển sang Tiếng Việt'}
       style={styles.toggle}
     >
-      <span style={{
-        ...styles.option,
-        ...(lang === 'vi' ? styles.active : styles.inactive),
-      }}>
+      <span
+        style={{
+          ...styles.option,
+          ...(lang === 'vi' ? styles.active : styles.inactive),
+        }}
+      >
         VI
       </span>
       <span style={styles.separator}>/</span>
-      <span style={{
-        ...styles.option,
-        ...(lang === 'en' ? styles.active : styles.inactive),
-      }}>
+      <span
+        style={{
+          ...styles.option,
+          ...(lang === 'en' ? styles.active : styles.inactive),
+        }}
+      >
         EN
       </span>
     </button>

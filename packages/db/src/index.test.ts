@@ -13,7 +13,11 @@ Module._load = function patchedLoad(request: string, parent: unknown, isMain: bo
   return originalLoad.call(this, request, parent, isMain);
 };
 
-const { buildLearningEvent, sharedLearningEventStorageKey, SHARED_LEARNING_EVENTS_LIST_KEY } = require('@miuprep/learning');
+const {
+  buildLearningEvent,
+  sharedLearningEventStorageKey,
+  SHARED_LEARNING_EVENTS_LIST_KEY,
+} = require('@miuprep/learning');
 const { LocalStorageAdapter } = require('./index');
 
 class MemoryStorage {
@@ -107,8 +111,14 @@ async function main(): Promise<void> {
   const allEvents = await db.listLearningEvents();
   assert(allEvents.length === 2, 'Learning events should be deduplicated by id.');
   assert(allEvents[0].id === second.id, 'Learning events should be listed newest first.');
-  assert(JSON.parse(storage.getItem(SHARED_LEARNING_EVENTS_LIST_KEY) || '[]').length === 2, 'Learning event ids should be stored under the shared learning key.');
-  assert(Boolean(storage.getItem(sharedLearningEventStorageKey(first.id))), 'Learning event payload should be stored under the shared event key.');
+  assert(
+    JSON.parse(storage.getItem(SHARED_LEARNING_EVENTS_LIST_KEY) || '[]').length === 2,
+    'Learning event ids should be stored under the shared learning key.',
+  );
+  assert(
+    Boolean(storage.getItem(sharedLearningEventStorageKey(first.id))),
+    'Learning event payload should be stored under the shared event key.',
+  );
 
   const learnerAEvents = await db.listLearningEvents('learner-a');
   assert(learnerAEvents.length === 1, 'Learning events should filter by learner id.');

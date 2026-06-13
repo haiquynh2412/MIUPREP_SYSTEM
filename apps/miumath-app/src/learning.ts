@@ -53,7 +53,10 @@ export function loadMiuMathLearningState(learnerId = 'guest'): StudentModel {
       ...base,
       ...parsed,
       learnerId,
-      targetProgramIds: Array.isArray(parsed?.targetProgramIds) && parsed.targetProgramIds.length ? parsed.targetProgramIds : [MIU_MATH_PROGRAM_ID],
+      targetProgramIds:
+        Array.isArray(parsed?.targetProgramIds) && parsed.targetProgramIds.length
+          ? parsed.targetProgramIds
+          : [MIU_MATH_PROGRAM_ID],
       attempts: Array.isArray(parsed?.attempts) ? parsed.attempts : [],
       learningEvents: Array.isArray(parsed?.learningEvents) ? parsed.learningEvents : [],
       updatedAt: parsed?.updatedAt || base.updatedAt,
@@ -91,7 +94,10 @@ export function loadMiuMathErrorNotebook(learnerId = 'guest'): ErrorNotebookEntr
   }
 }
 
-export function saveMiuMathErrorNotebook(learnerId: string, entries: ErrorNotebookEntryCore[]): ErrorNotebookEntryCore[] {
+export function saveMiuMathErrorNotebook(
+  learnerId: string,
+  entries: ErrorNotebookEntryCore[],
+): ErrorNotebookEntryCore[] {
   const normalized = (Array.isArray(entries) ? entries : []).map(normalizeErrorNotebookEntry);
   localStorage.setItem(errorNotebookStorageKey(learnerId), JSON.stringify(normalized));
   return normalized;
@@ -108,7 +114,11 @@ export function recordMiuMathAttempt(
   if (!question || !answer) return null;
 
   const item = toQuestionItemFromMiuMath(normalizeMiuMathQuestion(question));
-  const correct = answer.toLowerCase() === String(question.correct_answer || '').trim().toLowerCase();
+  const correct =
+    answer.toLowerCase() ===
+    String(question.correct_answer || '')
+      .trim()
+      .toLowerCase();
   return recordAttempt(
     {
       ...state,
@@ -157,7 +167,9 @@ export function recordMiuMathErrorNotebookMistake(
   });
   if (!entry) return { entries: loadMiuMathErrorNotebook(learnerId), entry: null };
 
-  const entries = Array.isArray(currentEntries) ? currentEntries.map(normalizeErrorNotebookEntry) : loadMiuMathErrorNotebook(learnerId);
+  const entries = Array.isArray(currentEntries)
+    ? currentEntries.map(normalizeErrorNotebookEntry)
+    : loadMiuMathErrorNotebook(learnerId);
   const existingIndex = entries.findIndex((item) => item.questionId === entry.questionId);
   const normalizedEntry = normalizeErrorNotebookEntry(entry);
 
@@ -185,8 +197,12 @@ export function reviewMiuMathErrorNotebookEntry(
   grade = 5,
   currentEntries?: ErrorNotebookEntryCore[],
 ) {
-  const entries = Array.isArray(currentEntries) ? currentEntries.map(normalizeErrorNotebookEntry) : loadMiuMathErrorNotebook(learnerId);
-  const index = entries.findIndex((entry) => entry.questionId === `miumath.${questionId}` || entry.questionId === questionId);
+  const entries = Array.isArray(currentEntries)
+    ? currentEntries.map(normalizeErrorNotebookEntry)
+    : loadMiuMathErrorNotebook(learnerId);
+  const index = entries.findIndex(
+    (entry) => entry.questionId === `miumath.${questionId}` || entry.questionId === questionId,
+  );
   if (index < 0) return { entries, entry: null };
 
   const reviewed = scheduleErrorNotebookReview(entries[index], grade);
@@ -194,7 +210,10 @@ export function reviewMiuMathErrorNotebookEntry(
   return { entries: saveMiuMathErrorNotebook(learnerId, entries), entry: reviewed };
 }
 
-export function buildMiuMathErrorNotebookSummary(entries: ErrorNotebookEntryCore[] | null | undefined, now = new Date().toISOString()) {
+export function buildMiuMathErrorNotebookSummary(
+  entries: ErrorNotebookEntryCore[] | null | undefined,
+  now = new Date().toISOString(),
+) {
   return {
     ...summarizeErrorNotebook(entries || [], now),
     dueEntries: getDueErrorNotebookEntries(entries || [], now),
@@ -219,8 +238,13 @@ export function buildMiuMathLearningDashboard(state: StudentModel, questions: Mi
   const recommendation = recommendNextAction({ ...state, attempts }, { diagnosticMinAttempts: 8 });
   const reviewItems = buildReviewSet(items, attempts, 5);
   const learnerId = state?.learnerId || 'guest';
-  const diagnosticItems = buildAdaptiveDiagnostic(items, toAdaptiveAttempts(attempts, learnerId), { learnerId, limit: 5, programId: MIU_MATH_PROGRAM_ID });
-  const nextItem = recommendation.kind === 'review' ? reviewItems[0] || diagnosticItems[0] : diagnosticItems[0] || reviewItems[0];
+  const diagnosticItems = buildAdaptiveDiagnostic(items, toAdaptiveAttempts(attempts, learnerId), {
+    learnerId,
+    limit: 5,
+    programId: MIU_MATH_PROGRAM_ID,
+  });
+  const nextItem =
+    recommendation.kind === 'review' ? reviewItems[0] || diagnosticItems[0] : diagnosticItems[0] || reviewItems[0];
   const nextQuestion = nextItem ? questions.find((question) => `miumath.${question.id}` === nextItem.id) || null : null;
   const learningPath = buildMiuMathLearningPath(mastery, recommendation);
 
@@ -244,7 +268,11 @@ export function buildMiuMathDiagnosticQuestions(state: StudentModel, questions: 
   const normalizedQuestions = (questions || []).map(normalizeMiuMathQuestion);
   const items = toQuestionItemsFromMiuMath(normalizedQuestions);
   const learnerId = state?.learnerId || 'guest';
-  const selectedItems = buildAdaptiveDiagnostic(items, toAdaptiveAttempts(attempts, learnerId), { learnerId, limit, programId: MIU_MATH_PROGRAM_ID });
+  const selectedItems = buildAdaptiveDiagnostic(items, toAdaptiveAttempts(attempts, learnerId), {
+    learnerId,
+    limit,
+    programId: MIU_MATH_PROGRAM_ID,
+  });
   const rawQuestionByItemId = new Map((questions || []).map((question) => [`miumath.${question.id}`, question]));
   return selectedItems
     .map((item) => rawQuestionByItemId.get(item.id))
@@ -295,7 +323,11 @@ function buildMiuMathLearningPath(mastery: MasteryEstimate[], recommendation: Re
   });
 }
 
-function pickMiuMathLearningTargetIds(recommendation: Recommendation, mastery: MasteryEstimate[], programMap: MiuMathProgramMap): string[] {
+function pickMiuMathLearningTargetIds(
+  recommendation: Recommendation,
+  mastery: MasteryEstimate[],
+  programMap: MiuMathProgramMap,
+): string[] {
   const recommended = uniqueStrings([...(recommendation?.conceptIds || []), ...(recommendation?.skillIds || [])]);
   if (recommended.length) return recommended;
 
@@ -306,7 +338,9 @@ function pickMiuMathLearningTargetIds(recommendation: Recommendation, mastery: M
   if (weakRows.length) return uniqueStrings(weakRows);
 
   const grade9Targets = ['math.quadratic_equation', 'math.vieta', 'math.word_problem_modeling'];
-  const mappedTargets = grade9Targets.filter((id) => programMap?.conceptIds?.includes(id) || programMap?.skillIds?.includes(id));
+  const mappedTargets = grade9Targets.filter(
+    (id) => programMap?.conceptIds?.includes(id) || programMap?.skillIds?.includes(id),
+  );
   return mappedTargets.length ? mappedTargets : (programMap?.conceptIds || []).slice(0, 3);
 }
 
@@ -341,12 +375,9 @@ function formatMiuMathExplanation(question: MiuMathRawQuestion | null | undefine
   const raw = question?.explanation;
   if (typeof raw === 'string') return raw || question?.question_text || '';
   const explanation = raw || {};
-  const parts = [
-    explanation.thinking,
-    explanation.steps,
-    explanation.traps,
-    explanation.casio,
-  ].filter((part): part is string => typeof part === 'string' && part.length > 0);
+  const parts = [explanation.thinking, explanation.steps, explanation.traps, explanation.casio].filter(
+    (part): part is string => typeof part === 'string' && part.length > 0,
+  );
   return parts.join('\n\n') || question?.question_text || '';
 }
 

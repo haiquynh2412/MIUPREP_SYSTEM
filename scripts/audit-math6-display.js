@@ -13,7 +13,8 @@ const rawExtract = JSON.parse(fs.readFileSync(rawPath, 'utf8').replace(/^\uFEFF/
 const items = preview.items || [];
 const rawSources = Array.isArray(rawExtract) ? rawExtract : rawExtract.sources || [];
 
-const EXERCISE_HEADER_RE = /(?:^|[\r\n\f]|[^\p{L}])\s*((?:B[\p{L}\u00a0]{0,3}i|C[\p{L}\u00a0]{0,3}u)(?:\s+t[\p{L}\u00a0]{0,3}p)?\s*\d+[A-Za-z\u00c0-\u1ef90-9\s]*[:.)-]?)/giu;
+const EXERCISE_HEADER_RE =
+  /(?:^|[\r\n\f]|[^\p{L}])\s*((?:B[\p{L}\u00a0]{0,3}i|C[\p{L}\u00a0]{0,3}u)(?:\s+t[\p{L}\u00a0]{0,3}p)?\s*\d+[A-Za-z\u00c0-\u1ef90-9\s]*[:.)-]?)/giu;
 const CONTROL_OR_REPLACEMENT_RE = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\ufffd]/;
 const MOJIBAKE_RE = /(?:\u00c3|\u00c4|\u00c5|\u00c6|\u00e1[\u00ba\u00bb])/;
 const LEGACY_FONT_RE = /[\u00a9\u00aa\u00ad\u00ae\u00b5\u00b8\u00c5\u00cf\u00d8\u00de\u00e7\u00f1\u00f8\u00fc]/;
@@ -61,10 +62,11 @@ const audits = items.map((item) => {
 
 const issueRows = audits.map((audit) => ({
   ...audit,
-  needsFormulaReview: audit.flags.missingFormulaAssets > 0
-    || audit.flags.blankFormulaShape
-    || (audit.flags.rawOleFormulaMarkers > 0 && audit.flags.recoveredFormulaAssets === 0)
-    || (audit.flags.sourceFormulaRecoveryGap > 0 && audit.flags.blankFormulaShape),
+  needsFormulaReview:
+    audit.flags.missingFormulaAssets > 0 ||
+    audit.flags.blankFormulaShape ||
+    (audit.flags.rawOleFormulaMarkers > 0 && audit.flags.recoveredFormulaAssets === 0) ||
+    (audit.flags.sourceFormulaRecoveryGap > 0 && audit.flags.blankFormulaShape),
   needsImageReview: audit.flags.imageDependency && !audit.flags.generatedFigure && !audit.flags.recoveredFigureAsset,
   needsTextEncodingReview: audit.flags.controlCharacters || audit.flags.legacyFontOrEncoding,
 }));
@@ -73,7 +75,9 @@ const summary = {
   schemaVersion: 'math6_display_audit_v1',
   generatedAt: new Date().toISOString(),
   totalItems: items.length,
-  readyForDisplay: issueRows.filter((row) => !row.needsFormulaReview && !row.needsImageReview && !row.needsTextEncodingReview).length,
+  readyForDisplay: issueRows.filter(
+    (row) => !row.needsFormulaReview && !row.needsImageReview && !row.needsTextEncodingReview,
+  ).length,
   needsFormulaReview: issueRows.filter((row) => row.needsFormulaReview).length,
   needsImageReview: issueRows.filter((row) => row.needsImageReview).length,
   needsTextEncodingReview: issueRows.filter((row) => row.needsTextEncodingReview).length,
@@ -147,29 +151,35 @@ function normalizePrompt(text) {
 function hasImageDependency(normalizedPrompt) {
   if (/\bcon duong\s+a1\b.*\bb1\b.*\bc1\b/.test(normalizedPrompt)) return false;
   if (
-    /\bbang\s+o\s+gom\s+2007\s+o\b/.test(normalizedPrompt)
-    && /\bo\s+1\s+trong\b/.test(normalizedPrompt)
-    && /\bo\s+2\s*=\s*17\b/.test(normalizedPrompt)
-    && /\bo\s+4\s*=\s*36\b/.test(normalizedPrompt)
-    && /\bo\s+7\s*=\s*19\b/.test(normalizedPrompt)
-  ) return false;
-  return /\bhinh\s+(?:ve|\d|ben|sau|duoi|tren)\b/.test(normalizedPrompt)
-    || /\b(?:cho|ve|theo)\s+hinh\b/.test(normalizedPrompt)
-    || /\bbang\s+o\b/.test(normalizedPrompt);
+    /\bbang\s+o\s+gom\s+2007\s+o\b/.test(normalizedPrompt) &&
+    /\bo\s+1\s+trong\b/.test(normalizedPrompt) &&
+    /\bo\s+2\s*=\s*17\b/.test(normalizedPrompt) &&
+    /\bo\s+4\s*=\s*36\b/.test(normalizedPrompt) &&
+    /\bo\s+7\s*=\s*19\b/.test(normalizedPrompt)
+  )
+    return false;
+  return (
+    /\bhinh\s+(?:ve|\d|ben|sau|duoi|tren)\b/.test(normalizedPrompt) ||
+    /\b(?:cho|ve|theo)\s+hinh\b/.test(normalizedPrompt) ||
+    /\bbang\s+o\b/.test(normalizedPrompt)
+  );
 }
 
 function hasBlankFormulaShape(normalizedPrompt) {
-  const asksStudentToFillOrCompute = /\b(?:thuc hien phep tinh|tinh hop ly|dien dau|dien dau|dien)\b/.test(normalizedPrompt)
-    || /\.{3,}|…/.test(normalizedPrompt);
+  const asksStudentToFillOrCompute =
+    /\b(?:thuc hien phep tinh|tinh hop ly|dien dau|dien dau|dien)\b/.test(normalizedPrompt) ||
+    /\.{3,}|…/.test(normalizedPrompt);
   if (asksStudentToFillOrCompute) return false;
 
-  const hasBlankVerbOrConjunction = /\b(?:biet|bang|la)\s+(?:va|;|,|\.)\b/.test(normalizedPrompt)
-    && !/\bla\s+va\b/.test(normalizedPrompt);
+  const hasBlankVerbOrConjunction =
+    /\b(?:biet|bang|la)\s+(?:va|;|,|\.)\b/.test(normalizedPrompt) && !/\bla\s+va\b/.test(normalizedPrompt);
 
-  return /(?:^|\s)[a-d]\)\s+[b-e]\)/.test(normalizedPrompt)
-    || (/=\s*(?:[.;,)]|$)/.test(normalizedPrompt) && !/\b(?:tinh|thuc hien|tim x|rut gon)\b/.test(normalizedPrompt))
-    || hasBlankVerbOrConjunction
-    || /\b(?:thuc hien phep tinh|rut gon|quy dong|so sanh|tim x)\b.{0,90}\b[a-d]\)\s*\b[b-e]\)/.test(normalizedPrompt);
+  return (
+    /(?:^|\s)[a-d]\)\s+[b-e]\)/.test(normalizedPrompt) ||
+    (/=\s*(?:[.;,)]|$)/.test(normalizedPrompt) && !/\b(?:tinh|thuc hien|tim x|rut gon)\b/.test(normalizedPrompt)) ||
+    hasBlankVerbOrConjunction ||
+    /\b(?:thuc hien phep tinh|rut gon|quy dong|so sanh|tim x)\b.{0,90}\b[a-d]\)\s*\b[b-e]\)/.test(normalizedPrompt)
+  );
 }
 
 function normalizeSearchText(value) {
@@ -303,7 +313,10 @@ function renderMarkdown(summary) {
     '',
     '| Topic | Total | Ready | Formula | Image | Encoding |',
     '| --- | ---: | ---: | ---: | ---: | ---: |',
-    ...Object.entries(summary.byTopic).map(([topic, row]) => `| ${escapeMd(topic)} | ${row.total} | ${row.ready} | ${row.formula} | ${row.image} | ${row.encoding} |`),
+    ...Object.entries(summary.byTopic).map(
+      ([topic, row]) =>
+        `| ${escapeMd(topic)} | ${row.total} | ${row.ready} | ${row.formula} | ${row.image} | ${row.encoding} |`,
+    ),
     '',
     '## Top Formula Sources',
     '',
@@ -327,20 +340,29 @@ function renderMarkdown(summary) {
     '',
     '### Formula Review',
     '',
-    ...summary.samples.formula.map((row) => `- ${escapeMd(row.sourceFile)} / ${escapeMd(row.topicId)}: ${escapeMd(row.prompt)}`),
+    ...summary.samples.formula.map(
+      (row) => `- ${escapeMd(row.sourceFile)} / ${escapeMd(row.topicId)}: ${escapeMd(row.prompt)}`,
+    ),
     '',
     '### Image Review',
     '',
-    ...summary.samples.image.map((row) => `- ${escapeMd(row.sourceFile)} / ${escapeMd(row.topicId)}: ${escapeMd(row.prompt)}`),
+    ...summary.samples.image.map(
+      (row) => `- ${escapeMd(row.sourceFile)} / ${escapeMd(row.topicId)}: ${escapeMd(row.prompt)}`,
+    ),
     '',
     '### Encoding Review',
     '',
-    ...summary.samples.encoding.map((row) => `- ${escapeMd(row.sourceFile)} / ${escapeMd(row.topicId)}: ${escapeMd(row.prompt)}`),
+    ...summary.samples.encoding.map(
+      (row) => `- ${escapeMd(row.sourceFile)} / ${escapeMd(row.topicId)}: ${escapeMd(row.prompt)}`,
+    ),
   ];
   while (lines.length && lines[lines.length - 1] === '') lines.pop();
   return `${lines.join('\n')}\n`;
 }
 
 function escapeMd(value) {
-  return String(value || '').replace(/\|/g, '\\|').replace(/\s+/g, ' ').trim();
+  return String(value || '')
+    .replace(/\|/g, '\\|')
+    .replace(/\s+/g, ' ')
+    .trim();
 }

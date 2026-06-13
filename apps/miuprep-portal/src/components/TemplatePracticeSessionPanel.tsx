@@ -33,7 +33,8 @@ export default function TemplatePracticeSessionPanel({
           </span>
           <h2 className="text-xl font-black text-slate-100 m-0">{state.templateTitle}</h2>
           <p className="text-xs text-slate-500 m-0">
-            {state.domainId === 'english_core' ? 'English Core' : 'Mathematics'} • {state.programId} • question {progress}
+            {state.domainId === 'english_core' ? 'English Core' : 'Mathematics'} • {state.programId} • question{' '}
+            {progress}
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -57,7 +58,10 @@ export default function TemplatePracticeSessionPanel({
             <span>{progressPercent}%</span>
           </div>
           <div className="h-2 rounded-full bg-slate-950 border border-slate-800 overflow-hidden mt-3">
-            <div className="h-full rounded-full bg-emerald-400 transition-all" style={{ width: `${progressPercent}%` }} />
+            <div
+              className="h-full rounded-full bg-emerald-400 transition-all"
+              style={{ width: `${progressPercent}%` }}
+            />
           </div>
         </div>
 
@@ -65,9 +69,7 @@ export default function TemplatePracticeSessionPanel({
           <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 block mb-2">
             Choose the strongest next move
           </span>
-          <p className="text-sm sm:text-base text-slate-150 font-extrabold leading-relaxed m-0">
-            {question.prompt}
-          </p>
+          <p className="text-sm sm:text-base text-slate-150 font-extrabold leading-relaxed m-0">{question.prompt}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -86,16 +88,10 @@ export default function TemplatePracticeSessionPanel({
         {state.answered && (
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <span className="text-xs font-black uppercase tracking-widest text-emerald-300">
-                Expected move
-              </span>
-              <span className="text-[10px] font-black text-slate-400">
-                Correct answer: {question.correctAnswer}
-              </span>
+              <span className="text-xs font-black uppercase tracking-widest text-emerald-300">Expected move</span>
+              <span className="text-[10px] font-black text-slate-400">Correct answer: {question.correctAnswer}</span>
             </div>
-            <p className="text-sm text-slate-300 font-semibold leading-relaxed m-0">
-              {question.expectedMove}
-            </p>
+            <p className="text-sm text-slate-300 font-semibold leading-relaxed m-0">{question.expectedMove}</p>
             <div className="flex justify-end">
               <button
                 type="button"

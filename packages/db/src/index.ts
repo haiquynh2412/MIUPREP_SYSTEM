@@ -50,13 +50,13 @@ export interface ExamAttempt {
   userId: string;
   status: 'in_progress' | 'submitted';
   examMode?: 'practice' | 'exam';
-  
+
   // Drift-proof time tracking
-  startedAt: string;             // ISO String
-  lastSavedAt: string;           // ISO String
-  submittedAt?: string;          // ISO String
-  durationSeconds: number;       // Allowed time (e.g. 3600)
-  remainingSeconds: number;      // Calculated remaining time
+  startedAt: string; // ISO String
+  lastSavedAt: string; // ISO String
+  submittedAt?: string; // ISO String
+  durationSeconds: number; // Allowed time (e.g. 3600)
+  remainingSeconds: number; // Calculated remaining time
 
   answers: Record<string, AnswerState>; // Map: QuestionID -> AnswerState
   pauseRanges?: { pausedAt: string; resumedAt: string | null }[];
@@ -66,20 +66,20 @@ export interface ExamAttempt {
     totalQuestions?: number;
     isMockScoring?: boolean;
   };
-  
+
   createdAt: string;
   updatedAt: string;
   sync_status: 'synced' | 'pending' | 'failed';
-  version: number;               // For sync conflict detection
+  version: number; // For sync conflict detection
 }
 
 export interface CriteriaScore {
-  criterionName: string;         // e.g. "Task Achievement"
+  criterionName: string; // e.g. "Task Achievement"
   band: number;
   feedbackText: string;
-  evidence?: string[];           // 2-4 direct quotes/tokens from candidate's attempt supporting this score
-  whyNotHigher?: string;         // What kept the score from reaching the next band level (Vietnamese)
-  nextAction?: string;           // Direct next action to upgrade this score (Vietnamese)
+  evidence?: string[]; // 2-4 direct quotes/tokens from candidate's attempt supporting this score
+  whyNotHigher?: string; // What kept the score from reaching the next band level (Vietnamese)
+  nextAction?: string; // Direct next action to upgrade this score (Vietnamese)
 }
 
 export interface GrammarCorrection {
@@ -105,9 +105,9 @@ export interface WritingFeedback {
   }[];
   modelUsed: string;
   createdAt: string;
-  rubricVersion?: string;        // e.g. "v1.0.0-academic"
-  descriptorSource?: string;     // e.g. "IELTS Writing Band Descriptors May 2023"
-  confidence?: number;           // Reliability factor (0.0 - 1.0)
+  rubricVersion?: string; // e.g. "v1.0.0-academic"
+  descriptorSource?: string; // e.g. "IELTS Writing Band Descriptors May 2023"
+  confidence?: number; // Reliability factor (0.0 - 1.0)
   isMockScoring?: boolean;
 }
 
@@ -131,9 +131,9 @@ export interface SpeakingFeedback {
   }[];
   modelUsed: string;
   createdAt: string;
-  rubricVersion?: string;        // e.g. "v1.0.0-speaking"
-  descriptorSource?: string;     // e.g. "IELTS Speaking Band Descriptors"
-  confidence?: number;           // Reliability factor (0.0 - 1.0)
+  rubricVersion?: string; // e.g. "v1.0.0-speaking"
+  descriptorSource?: string; // e.g. "IELTS Speaking Band Descriptors"
+  confidence?: number; // Reliability factor (0.0 - 1.0)
   isMockScoring?: boolean;
 }
 
@@ -189,35 +189,34 @@ export interface SystemLog {
   createdAt?: string;
 }
 
-
 // ==========================================
 // 2. StorageAdapter Interface
 // ==========================================
 
 export interface StorageAdapter {
   initialize(): Promise<void>;
-  
+
   // Exam Attempt Actions (Autosave / Load)
   saveAttempt(attempt: ExamAttempt): Promise<void>;
   getAttempt(localId: string): Promise<ExamAttempt | null>;
   listAttempts(userId: string): Promise<ExamAttempt[]>;
-  
+
   // Content operations
   getTest(testId: string): Promise<IeltsTest | null>;
   saveTest(test: IeltsTest): Promise<void>;
   listTests(): Promise<IeltsTest[]>;
-  
+
   // AI Evaluations
   saveWritingFeedback(feedback: WritingFeedback): Promise<void>;
   getWritingFeedback(attemptId: string, taskNumber: 1 | 2): Promise<WritingFeedback | null>;
-  
+
   // Adaptive Learning & SRS
   saveLearnerProfile(profile: LearnerProfile): Promise<void>;
   getLearnerProfile(userId: string): Promise<LearnerProfile | null>;
   addErrorEntry(entry: ErrorNotebookEntry): Promise<void>;
   listErrorEntries(userId: string): Promise<ErrorNotebookEntry[]>;
   updateErrorEntrySrs(id: string, grade: number): Promise<void>;
-  
+
   // Backup & Import
   exportLocalData(userId?: string): Promise<string>;
   importLocalData(encryptedJson: string): Promise<void>;
@@ -250,7 +249,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   async initialize(): Promise<void> {
     // Check if localStorage is available
     if (typeof window === 'undefined' || !window.localStorage) {
-      console.warn("LocalStorage is not available in this environment.");
+      console.warn('LocalStorage is not available in this environment.');
     }
   }
 
@@ -261,7 +260,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   async saveAttempt(attempt: ExamAttempt): Promise<void> {
     try {
       const listKey = this.getKey('attempts_list');
-      const attemptsJson = await this.kv.get(listKey) || '[]';
+      const attemptsJson = (await this.kv.get(listKey)) || '[]';
       const attemptsList: string[] = JSON.parse(attemptsJson);
 
       if (!attemptsList.includes(attempt.local_id)) {
@@ -272,7 +271,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       const itemKey = this.getKey(`attempt_${attempt.local_id}`);
       await this.kv.set(itemKey, JSON.stringify(attempt));
     } catch (e) {
-      console.error("Failed to save attempt to localStorage", e);
+      console.error('Failed to save attempt to localStorage', e);
       throw e;
     }
   }
@@ -284,7 +283,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       if (!data) return null;
       return JSON.parse(data) as ExamAttempt;
     } catch (e) {
-      console.error("Failed to read attempt from localStorage", e);
+      console.error('Failed to read attempt from localStorage', e);
       return null;
     }
   }
@@ -292,7 +291,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   async listAttempts(userId: string): Promise<ExamAttempt[]> {
     try {
       const listKey = this.getKey('attempts_list');
-      const attemptsJson = await this.kv.get(listKey) || '[]';
+      const attemptsJson = (await this.kv.get(listKey)) || '[]';
       const ids: string[] = JSON.parse(attemptsJson);
 
       const list: ExamAttempt[] = [];
@@ -304,7 +303,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       }
       return list;
     } catch (e) {
-      console.error("Failed to list attempts from localStorage", e);
+      console.error('Failed to list attempts from localStorage', e);
       return [];
     }
   }
@@ -316,23 +315,23 @@ export class LocalStorageAdapter implements StorageAdapter {
       if (!data) return null;
       return JSON.parse(data) as IeltsTest;
     } catch (e) {
-      console.error("Failed to read test from localStorage", e);
+      console.error('Failed to read test from localStorage', e);
       return null;
     }
   }
 
   async saveTest(test: IeltsTest): Promise<void> {
     const errors = await validateIeltsTestForDb(test);
-    const criticalErrors = errors.filter(e => e.severity === 'error');
+    const criticalErrors = errors.filter((e) => e.severity === 'error');
     if (criticalErrors.length > 0) {
-      const errorMsg = `Invalid test content: ${criticalErrors.map(e => `[${e.path}]: ${e.message}`).join(', ')}`;
+      const errorMsg = `Invalid test content: ${criticalErrors.map((e) => `[${e.path}]: ${e.message}`).join(', ')}`;
       console.error(errorMsg);
       throw new Error(errorMsg);
     }
 
     try {
       const listKey = this.getKey('tests_list');
-      const testsJson = await this.kv.get(listKey) || '[]';
+      const testsJson = (await this.kv.get(listKey)) || '[]';
       const testsList: string[] = JSON.parse(testsJson);
 
       if (!testsList.includes(test.id)) {
@@ -343,7 +342,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       const itemKey = this.getKey(`test_${test.id}`);
       await this.kv.set(itemKey, JSON.stringify(test));
     } catch (e) {
-      console.error("Failed to save test to localStorage", e);
+      console.error('Failed to save test to localStorage', e);
       throw e;
     }
   }
@@ -351,7 +350,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   async listTests(): Promise<IeltsTest[]> {
     try {
       const listKey = this.getKey('tests_list');
-      const testsJson = await this.kv.get(listKey) || '[]';
+      const testsJson = (await this.kv.get(listKey)) || '[]';
       const ids: string[] = JSON.parse(testsJson);
 
       const list: IeltsTest[] = [];
@@ -363,7 +362,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       }
       return list;
     } catch (e) {
-      console.error("Failed to list tests from localStorage", e);
+      console.error('Failed to list tests from localStorage', e);
       return [];
     }
   }
@@ -373,7 +372,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       const key = this.getKey(`writing_fb_${feedback.attemptId}_task${feedback.taskNumber}`);
       await this.kv.set(key, JSON.stringify(feedback));
     } catch (e) {
-      console.error("Failed to save writing feedback to localStorage", e);
+      console.error('Failed to save writing feedback to localStorage', e);
       throw e;
     }
   }
@@ -385,7 +384,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       if (!data) return null;
       return JSON.parse(data) as WritingFeedback;
     } catch (e) {
-      console.error("Failed to read writing feedback from localStorage", e);
+      console.error('Failed to read writing feedback from localStorage', e);
       return null;
     }
   }
@@ -395,7 +394,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       const key = this.getKey(`profile_${profile.userId}`);
       await this.kv.set(key, JSON.stringify(profile));
     } catch (e) {
-      console.error("Failed to save profile to localStorage", e);
+      console.error('Failed to save profile to localStorage', e);
       throw e;
     }
   }
@@ -407,7 +406,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       if (!data) return null;
       return JSON.parse(data) as LearnerProfile;
     } catch (e) {
-      console.error("Failed to read profile from localStorage", e);
+      console.error('Failed to read profile from localStorage', e);
       return null;
     }
   }
@@ -416,7 +415,7 @@ export class LocalStorageAdapter implements StorageAdapter {
     try {
       const normalized = normalizeErrorNotebookEntry(entry);
       const listKey = this.getKey('errors_list');
-      const listJson = await this.kv.get(listKey) || '[]';
+      const listJson = (await this.kv.get(listKey)) || '[]';
       const ids: string[] = JSON.parse(listJson);
       if (!ids.includes(normalized.id)) {
         ids.push(normalized.id);
@@ -425,7 +424,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       const itemKey = this.getKey(`error_${normalized.id}`);
       await this.kv.set(itemKey, JSON.stringify(normalized));
     } catch (e) {
-      console.error("Failed to save error entry to localStorage", e);
+      console.error('Failed to save error entry to localStorage', e);
       throw e;
     }
   }
@@ -433,7 +432,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   async listErrorEntries(userId: string): Promise<ErrorNotebookEntry[]> {
     try {
       const listKey = this.getKey('errors_list');
-      const listJson = await this.kv.get(listKey) || '[]';
+      const listJson = (await this.kv.get(listKey)) || '[]';
       const ids: string[] = JSON.parse(listJson);
       const entries: ErrorNotebookEntry[] = [];
       for (const id of ids) {
@@ -448,7 +447,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       }
       return entries;
     } catch (e) {
-      console.error("Failed to list error entries from localStorage", e);
+      console.error('Failed to list error entries from localStorage', e);
       return [];
     }
   }
@@ -462,7 +461,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       const updated: ErrorNotebookEntry = scheduleErrorNotebookReview(entry, grade);
       await this.kv.set(itemKey, JSON.stringify(updated));
     } catch (e) {
-      console.error("Failed to update SRS in localStorage", e);
+      console.error('Failed to update SRS in localStorage', e);
     }
   }
 
@@ -470,7 +469,7 @@ export class LocalStorageAdapter implements StorageAdapter {
     try {
       saveLearningEventToStorage(event, localStorage); // sync shared helper: stays in localStorage
     } catch (e) {
-      console.error("Failed to save learning event to localStorage", e);
+      console.error('Failed to save learning event to localStorage', e);
     }
   }
 
@@ -478,7 +477,7 @@ export class LocalStorageAdapter implements StorageAdapter {
     try {
       return listLearningEventsFromStorage(localStorage, { learnerId: userId, limit });
     } catch (e) {
-      console.error("Failed to list learning events from localStorage", e);
+      console.error('Failed to list learning events from localStorage', e);
       return [];
     }
   }
@@ -497,8 +496,8 @@ export class LocalStorageAdapter implements StorageAdapter {
       // Encrypt/Encode state into Base64 for simple data mobility and backups
       return btoa(unescape(encodeURIComponent(rawString)));
     } catch (e) {
-      console.error("Failed to export local data", e);
-      throw new Error("Export failed");
+      console.error('Failed to export local data', e);
+      throw new Error('Export failed');
     }
   }
 
@@ -512,15 +511,15 @@ export class LocalStorageAdapter implements StorageAdapter {
         }
       }
     } catch (e) {
-      console.error("Failed to import local data", e);
-      throw new Error("Import failed. Data may be corrupted.");
+      console.error('Failed to import local data', e);
+      throw new Error('Import failed. Data may be corrupted.');
     }
   }
 
   async registerLocalUser(user: LocalUser): Promise<void> {
     try {
       const listKey = this.getKey('users_list');
-      const usersJson = await this.kv.get(listKey) || '[]';
+      const usersJson = (await this.kv.get(listKey)) || '[]';
       const usersList: string[] = JSON.parse(usersJson);
 
       if (!usersList.includes(user.username)) {
@@ -531,11 +530,11 @@ export class LocalStorageAdapter implements StorageAdapter {
       const itemKey = this.getKey(`user_${user.username}`);
       const preparedUser = {
         ...user,
-        assignedTracks: user.assignedTracks || [user.assignedTrack || 'ielts']
+        assignedTracks: user.assignedTracks || [user.assignedTrack || 'ielts'],
       };
       await this.kv.set(itemKey, JSON.stringify(preparedUser));
     } catch (e) {
-      console.error("Failed to register local user in localStorage", e);
+      console.error('Failed to register local user in localStorage', e);
       throw e;
     }
   }
@@ -551,7 +550,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       }
       return user;
     } catch (e) {
-      console.error("Failed to read user from localStorage", e);
+      console.error('Failed to read user from localStorage', e);
       return null;
     }
   }
@@ -559,7 +558,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   async listLocalUsers(): Promise<Omit<LocalUser, 'passwordHash'>[]> {
     try {
       const listKey = this.getKey('users_list');
-      const usersJson = await this.kv.get(listKey) || '[]';
+      const usersJson = (await this.kv.get(listKey)) || '[]';
       const usernames: string[] = JSON.parse(usersJson);
 
       const list: Omit<LocalUser, 'passwordHash'>[] = [];
@@ -572,7 +571,7 @@ export class LocalStorageAdapter implements StorageAdapter {
       }
       return list;
     } catch (e) {
-      console.error("Failed to list users from localStorage", e);
+      console.error('Failed to list users from localStorage', e);
       return [];
     }
   }
@@ -580,16 +579,16 @@ export class LocalStorageAdapter implements StorageAdapter {
   async deleteLocalUser(username: string): Promise<void> {
     try {
       const listKey = this.getKey('users_list');
-      const usersJson = await this.kv.get(listKey) || '[]';
+      const usersJson = (await this.kv.get(listKey)) || '[]';
       let usersList: string[] = JSON.parse(usersJson);
 
-      usersList = usersList.filter(u => u !== username);
+      usersList = usersList.filter((u) => u !== username);
       await this.kv.set(listKey, JSON.stringify(usersList));
 
       const itemKey = this.getKey(`user_${username}`);
       await this.kv.remove(itemKey);
     } catch (e) {
-      console.error("Failed to delete local user from localStorage", e);
+      console.error('Failed to delete local user from localStorage', e);
       throw e;
     }
   }
@@ -597,7 +596,7 @@ export class LocalStorageAdapter implements StorageAdapter {
   async logSystemEvent(log: SystemLog): Promise<void> {
     try {
       const listKey = this.getKey('logs_list');
-      const logsJson = await this.kv.get(listKey) || '[]';
+      const logsJson = (await this.kv.get(listKey)) || '[]';
       const logsList: string[] = JSON.parse(logsJson);
 
       if (!logsList.includes(log.id)) {
@@ -607,19 +606,19 @@ export class LocalStorageAdapter implements StorageAdapter {
 
       const completedLog: SystemLog = {
         ...log,
-        createdAt: log.createdAt || new Date().toISOString()
+        createdAt: log.createdAt || new Date().toISOString(),
       };
       const itemKey = this.getKey(`log_${log.id}`);
       await this.kv.set(itemKey, JSON.stringify(completedLog));
     } catch (e) {
-      console.error("Failed to save log to localStorage", e);
+      console.error('Failed to save log to localStorage', e);
     }
   }
 
   async listSystemLogs(limit?: number): Promise<SystemLog[]> {
     try {
       const listKey = this.getKey('logs_list');
-      const logsJson = await this.kv.get(listKey) || '[]';
+      const logsJson = (await this.kv.get(listKey)) || '[]';
       const ids: string[] = JSON.parse(logsJson);
 
       const list: SystemLog[] = [];
@@ -630,11 +629,11 @@ export class LocalStorageAdapter implements StorageAdapter {
           list.push(JSON.parse(data) as SystemLog);
         }
       }
-      
+
       list.sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''));
       return list.slice(0, limit || 100);
     } catch (e) {
-      console.error("Failed to list logs from localStorage", e);
+      console.error('Failed to list logs from localStorage', e);
       return [];
     }
   }
@@ -683,6 +682,5 @@ export class IndexedDbAdapter extends LocalStorageAdapter {
     }
   }
 }
-
 
 export { TauriSqliteAdapter } from './tauri-sqlite-adapter';

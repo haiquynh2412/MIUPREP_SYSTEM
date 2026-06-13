@@ -26,16 +26,16 @@ export class OpenAIAdapter implements AIAdapter {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
+        Authorization: `Bearer ${apiKey}`,
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
     });
 
     if (!response.ok) {
       const errBody = await response.json().catch(() => ({}));
       const err = new Error(errBody?.error?.message || `OpenAI API returned status ${response.status}`);
       (err as any).status = response.status;
-      
+
       const retryAfter = response.headers.get('retry-after');
       if (retryAfter) {
         (err as any).retryAfterSeconds = parseInt(retryAfter, 10);
@@ -196,15 +196,18 @@ Ensure you provide exactly 4 criteria in the array.`;
     const userPrompt = `Student Essay:\n\n${params.essay}\n\n${params.promptInstruction ? `Extra Instructions: ${params.promptInstruction}` : ''}`;
 
     return withRetry(async () => {
-      const data = await this.makeRequest({
-        model: this.model,
-        response_format: { type: 'json_object' },
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: userPrompt }
-        ],
-        temperature: 0.3
-      }, apiKey);
+      const data = await this.makeRequest(
+        {
+          model: this.model,
+          response_format: { type: 'json_object' },
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt },
+          ],
+          temperature: 0.3,
+        },
+        apiKey,
+      );
 
       const rawText = data.choices?.[0]?.message?.content || '{}';
       const cleanJson = this.cleanJsonResponse(rawText);
@@ -225,8 +228,10 @@ Ensure you provide exactly 4 criteria in the array.`;
         modelUsed: this.model,
         createdAt: new Date().toISOString(),
         rubricVersion: parsed.rubricVersion || (isCpeCae ? 'v1.2.0-cambridge' : 'v1.2.0-academic'),
-        descriptorSource: parsed.descriptorSource || (isCpeCae ? 'Cambridge English Scale Writing Descriptors' : 'IELTS Writing Band Descriptors May 2023'),
-        confidence: parsed.confidence || 0.95
+        descriptorSource:
+          parsed.descriptorSource ||
+          (isCpeCae ? 'Cambridge English Scale Writing Descriptors' : 'IELTS Writing Band Descriptors May 2023'),
+        confidence: parsed.confidence || 0.95,
       };
     });
   }
@@ -256,7 +261,7 @@ Ensure you provide exactly 4 criteria in the array.`;
           bytes[i] = binaryStr.charCodeAt(i);
         }
         const audioBlob = new Blob([bytes], { type: 'audio/webm' });
-        
+
         const formData = new FormData();
         formData.append('file', audioBlob, 'speaking.webm');
         formData.append('model', 'whisper-1');
@@ -265,9 +270,9 @@ Ensure you provide exactly 4 criteria in the array.`;
         const whisperRes = await fetch('https://api.openai.com/v1/audio/transcriptions', {
           method: 'POST',
           headers: {
-            'Authorization': `Bearer ${apiKey}`
+            Authorization: `Bearer ${apiKey}`,
           },
-          body: formData
+          body: formData,
         });
 
         if (!whisperRes.ok) {
@@ -280,12 +285,16 @@ Ensure you provide exactly 4 criteria in the array.`;
         console.log('[OpenAI STT] Audio transcription completed successfully.');
       } catch (e) {
         console.error('[OpenAI STT] Speech-to-text failed:', e);
-        throw new Error(`[Speech-to-Text Error] Không thể dịch giọng nói thành văn bản: ${e instanceof Error ? e.message : String(e)}`);
+        throw new Error(
+          `[Speech-to-Text Error] Không thể dịch giọng nói thành văn bản: ${e instanceof Error ? e.message : String(e)}`,
+        );
       }
     }
 
     if (!transcript || !transcript.trim()) {
-      throw new Error("Không có dữ liệu văn bản từ giọng nói của bạn. Vui lòng ghi âm lại rõ ràng hơn hoặc kiểm tra thiết bị mic của bạn.");
+      throw new Error(
+        'Không có dữ liệu văn bản từ giọng nói của bạn. Vui lòng ghi âm lại rõ ràng hơn hoặc kiểm tra thiết bị mic của bạn.',
+      );
     }
 
     const systemPrompt = isCpeCae
@@ -424,15 +433,18 @@ Deliver your complete analysis in JSON format only. Your output must strictly ma
 Ensure you provide exactly 4 criteria in the array.`;
 
     return withRetry(async () => {
-      const data = await this.makeRequest({
-        model: this.model,
-        response_format: { type: 'json_object' },
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: `Candidate Speech Transcript:\n\n${transcript}` }
-        ],
-        temperature: 0.3
-      }, apiKey);
+      const data = await this.makeRequest(
+        {
+          model: this.model,
+          response_format: { type: 'json_object' },
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: `Candidate Speech Transcript:\n\n${transcript}` },
+          ],
+          temperature: 0.3,
+        },
+        apiKey,
+      );
 
       const rawText = data.choices?.[0]?.message?.content || '{}';
       const cleanJson = this.cleanJsonResponse(rawText);
@@ -453,8 +465,10 @@ Ensure you provide exactly 4 criteria in the array.`;
         modelUsed: this.model,
         createdAt: new Date().toISOString(),
         rubricVersion: parsed.rubricVersion || (isCpeCae ? 'v1.2.0-cambridge' : 'v1.2.0-speaking'),
-        descriptorSource: parsed.descriptorSource || (isCpeCae ? 'Cambridge English Scale Speaking Descriptors' : 'IELTS Speaking Band Descriptors'),
-        confidence: parsed.confidence || 0.95
+        descriptorSource:
+          parsed.descriptorSource ||
+          (isCpeCae ? 'Cambridge English Scale Speaking Descriptors' : 'IELTS Speaking Band Descriptors'),
+        confidence: parsed.confidence || 0.95,
       };
     });
   }

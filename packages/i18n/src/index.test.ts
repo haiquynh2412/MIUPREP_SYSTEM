@@ -27,7 +27,12 @@ const store = new Map<string, string>();
   length: 0,
 } as Storage;
 
-const i18n = createTranslator({ translations, languages: ['vi', 'en'] as const, defaultLang: 'vi', storageKey: 'test_lang' });
+const i18n = createTranslator({
+  translations,
+  languages: ['vi', 'en'] as const,
+  defaultLang: 'vi',
+  storageKey: 'test_lang',
+});
 
 // Basic translation
 assert(i18n.t('hello', 'en') === 'Hello', 'Should translate to the requested language.');

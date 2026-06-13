@@ -101,9 +101,7 @@ export default function UnifiedLearnerDashboard({
             </span>
           </div>
           <h2 className="text-xl font-black text-slate-100 m-0 mt-3">{t('uld_growth_map_title')}</h2>
-          <p className="text-xs text-slate-500 mt-1 max-w-3xl">
-            {t('uld_growth_map_subtitle')}
-          </p>
+          <p className="text-xs text-slate-500 mt-1 max-w-3xl">{t('uld_growth_map_subtitle')}</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 min-w-full lg:min-w-[520px]">
           <MetricTile label={t('uld_metric_programs')} value={String(activeTracks.length)} />
@@ -118,7 +116,9 @@ export default function UnifiedLearnerDashboard({
           <div key={summary.programId} className="bg-slate-950/50 border border-slate-850 rounded-2xl p-4">
             <div className="flex items-start justify-between gap-3">
               <div>
-                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{summary.track.subtitle}</span>
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">
+                  {summary.track.subtitle}
+                </span>
                 <h3 className="text-sm font-black text-slate-100 m-0 mt-1">{summary.track.title}</h3>
               </div>
               <span className="text-2xl">{summary.track.icon}</span>
@@ -129,10 +129,15 @@ export default function UnifiedLearnerDashboard({
                 <span className="text-emerald-400 font-mono">{Math.round(summary.score)}%</span>
               </div>
               <div className="h-2 bg-slate-900 border border-slate-850 rounded-full overflow-hidden mt-1">
-                <div className="h-full bg-emerald-500 rounded-full" style={{ width: `${Math.max(4, Math.min(100, summary.score))}%` }} />
+                <div
+                  className="h-full bg-emerald-500 rounded-full"
+                  style={{ width: `${Math.max(4, Math.min(100, summary.score))}%` }}
+                />
               </div>
               <p className="text-[11px] text-slate-500 mt-3 mb-0">
-                {summaryStatusLabel(summary.status, t)} · {t('uld_card_evidence_count', { count: summary.attempts })} · {t('uld_card_weakest_prefix')} <span className="text-slate-300">{summaryWeakestLabel(summary.weakestLabel, t)}</span>
+                {summaryStatusLabel(summary.status, t)} · {t('uld_card_evidence_count', { count: summary.attempts })} ·{' '}
+                {t('uld_card_weakest_prefix')}{' '}
+                <span className="text-slate-300">{summaryWeakestLabel(summary.weakestLabel, t)}</span>
               </p>
             </div>
           </div>
@@ -142,18 +147,27 @@ export default function UnifiedLearnerDashboard({
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 border-t border-slate-850 pt-5">
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">{t('uld_best_next_move')}</h3>
-            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{snapshot.recommendation.reason}</span>
+            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">
+              {t('uld_best_next_move')}
+            </h3>
+            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">
+              {snapshot.recommendation.reason}
+            </span>
           </div>
           <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
             <p className="text-sm font-black text-slate-100 m-0">{recommendationTitle(snapshot.recommendation, t)}</p>
-            <p className="text-xs text-slate-500 leading-relaxed mt-2 mb-0">{recommendationDetail(snapshot.recommendation, graph, t)}</p>
+            <p className="text-xs text-slate-500 leading-relaxed mt-2 mb-0">
+              {recommendationDetail(snapshot.recommendation, graph, t)}
+            </p>
             {nextStep && (
               <div className="mt-4 pt-4 border-t border-slate-850">
-                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{t('uld_next_unlock')}</span>
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">
+                  {t('uld_next_unlock')}
+                </span>
                 <p className="text-sm font-bold text-slate-200 mt-1 mb-0">{nextStep.label}</p>
                 <p className="text-[11px] text-slate-500 mt-1 mb-0">
-                  {statusLabel(nextStep.status, t)} · {Math.round(nextStep.masteryScore)}% · {nextStep.unlocked ? t('uld_state_open') : t('uld_state_locked')}
+                  {statusLabel(nextStep.status, t)} · {Math.round(nextStep.masteryScore)}% ·{' '}
+                  {nextStep.unlocked ? t('uld_state_open') : t('uld_state_locked')}
                 </p>
               </div>
             )}
@@ -162,22 +176,34 @@ export default function UnifiedLearnerDashboard({
 
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">{t('uld_path_to_unlock')}</h3>
-            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{t('uld_steps_count', { count: snapshot.learningPath.steps.length })}</span>
+            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">
+              {t('uld_path_to_unlock')}
+            </h3>
+            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">
+              {t('uld_steps_count', { count: snapshot.learningPath.steps.length })}
+            </span>
           </div>
           <div className="space-y-2">
             {snapshot.learningPath.steps.map((step) => (
-              <div key={`${step.rank}-${step.id}`} className="bg-slate-950/60 border border-slate-850 rounded-xl p-3 flex items-center gap-3">
-                <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-black shrink-0 ${step.unlocked ? 'bg-emerald-500/15 text-emerald-400' : 'bg-amber-500/15 text-amber-400'}`}>
+              <div
+                key={`${step.rank}-${step.id}`}
+                className="bg-slate-950/60 border border-slate-850 rounded-xl p-3 flex items-center gap-3"
+              >
+                <span
+                  className={`w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-black shrink-0 ${step.unlocked ? 'bg-emerald-500/15 text-emerald-400' : 'bg-amber-500/15 text-amber-400'}`}
+                >
                   {step.rank}
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-xs font-bold text-slate-200 truncate m-0">{step.label}</p>
                   <p className="text-[11px] text-slate-500 m-0 mt-0.5">
-                    {statusLabel(step.status, t)} · {Math.round(step.masteryScore)}% · {t('uld_step_attempts', { count: step.attempts })}
+                    {statusLabel(step.status, t)} · {Math.round(step.masteryScore)}% ·{' '}
+                    {t('uld_step_attempts', { count: step.attempts })}
                   </p>
                 </div>
-                <span className={`text-[10px] font-black uppercase ${step.unlocked ? 'text-emerald-400' : 'text-amber-400'}`}>
+                <span
+                  className={`text-[10px] font-black uppercase ${step.unlocked ? 'text-emerald-400' : 'text-amber-400'}`}
+                >
                   {step.unlocked ? t('uld_state_open') : t('uld_state_locked')}
                 </span>
               </div>
@@ -216,7 +242,8 @@ export function buildLearnerSnapshot(
       for (let attemptIndex = 0; attemptIndex < 3; attemptIndex += 1) {
         const nodeMeta = nodeAttemptMeta(graph, nodeId);
         const correctnessRoll = ((userSeed + programIndex * 7 + nodeIndex * 3 + attemptIndex * 2) % 10) / 10;
-        const correct = correctnessRoll < correctnessBias || (attemptIndex === 2 && correctnessRoll < correctnessBias + 0.12);
+        const correct =
+          correctnessRoll < correctnessBias || (attemptIndex === 2 && correctnessRoll < correctnessBias + 0.12);
         const result = recordAttempt(state, {
           itemId: `portal.${programId}.${slugId(nodeId)}.${attemptIndex}`,
           domainId: nodeMeta.domainId,
@@ -299,24 +326,31 @@ export function normalizeAssignedTracks(user: LocalUser): PortalTrackId[] {
 
 function eventBelongsToUser(event: LearningEventRecord, user: LocalUser): boolean {
   const learnerId = String(event.learnerId || '').toLowerCase();
-  const candidates = [user.username, user.id]
-    .map((value) => String(value || '').toLowerCase())
-    .filter(Boolean);
-  return candidates.some((candidate) => learnerId === candidate || learnerId === `user-${candidate}` || learnerId.endsWith(`-${candidate}`));
+  const candidates = [user.username, user.id].map((value) => String(value || '').toLowerCase()).filter(Boolean);
+  return candidates.some(
+    (candidate) => learnerId === candidate || learnerId === `user-${candidate}` || learnerId.endsWith(`-${candidate}`),
+  );
 }
 
 function programTargets(graph: KnowledgeGraph, programId: ProgramId): string[] {
   const programMap = resolveProgramMap(graph, programId);
-  const objectiveIds = programMap?.entryObjectiveIds?.length ? programMap.entryObjectiveIds : programMap?.objectiveIds || [];
+  const objectiveIds = programMap?.entryObjectiveIds?.length
+    ? programMap.entryObjectiveIds
+    : programMap?.objectiveIds || [];
   const objectiveTargets = objectiveIds.flatMap((objectiveId) => {
     const objective = graph.objectives.find((item) => item.id === objectiveId);
     return objective ? [...objective.conceptIds, ...objective.skillIds] : [];
   });
-  return uniqueStrings(objectiveTargets.length ? objectiveTargets : [...(programMap?.conceptIds || []), ...(programMap?.skillIds || [])]);
+  return uniqueStrings(
+    objectiveTargets.length ? objectiveTargets : [...(programMap?.conceptIds || []), ...(programMap?.skillIds || [])],
+  );
 }
 
 function resolveProgramMap(graph: KnowledgeGraph, programId: ProgramId) {
-  return graph.programMaps.find((item) => item.programId === programId) || (programId === 'cae' ? graph.programMaps.find((item) => item.programId === 'cpe') : undefined);
+  return (
+    graph.programMaps.find((item) => item.programId === programId) ||
+    (programId === 'cae' ? graph.programMaps.find((item) => item.programId === 'cpe') : undefined)
+  );
 }
 
 function nodeAttemptMeta(graph: KnowledgeGraph, nodeId: string) {
@@ -325,7 +359,10 @@ function nodeAttemptMeta(graph: KnowledgeGraph, nodeId: string) {
     return {
       domainId: concept.domainId,
       conceptIds: [concept.id],
-      skillIds: graph.skills.filter((skill) => skill.conceptIds.includes(concept.id)).slice(0, 1).map((skill) => skill.id),
+      skillIds: graph.skills
+        .filter((skill) => skill.conceptIds.includes(concept.id))
+        .slice(0, 1)
+        .map((skill) => skill.id),
     };
   }
   const skill = graph.skills.find((item) => item.id === nodeId);
@@ -345,7 +382,12 @@ function nodeAttemptMeta(graph: KnowledgeGraph, nodeId: string) {
 
 function graphNodes(graph: KnowledgeGraph): LearningPathNode[] {
   return [
-    ...graph.concepts.map((concept) => ({ id: concept.id, domainId: concept.domainId, scope: 'concept', label: concept.name })),
+    ...graph.concepts.map((concept) => ({
+      id: concept.id,
+      domainId: concept.domainId,
+      scope: 'concept',
+      label: concept.name,
+    })),
     ...graph.skills.map((skill) => ({ id: skill.id, domainId: skill.domainId, scope: 'skill', label: skill.name })),
   ];
 }
@@ -383,7 +425,12 @@ function pickPathTargets(
   return uniqueStrings(programIds.flatMap((programId) => programTargets(graph, programId))).slice(0, 3);
 }
 
-function programSummary(graph: KnowledgeGraph, track: PortalTrackInfo, programId: ProgramId, mastery: MasteryEstimate[]): ProgramSummary {
+function programSummary(
+  graph: KnowledgeGraph,
+  track: PortalTrackInfo,
+  programId: ProgramId,
+  mastery: MasteryEstimate[],
+): ProgramSummary {
   const programMap = resolveProgramMap(graph, programId);
   const scopedIds = new Set([...(programMap?.conceptIds || []), ...(programMap?.skillIds || [])]);
   const rows = mastery.filter((row) => scopedIds.has(row.id));
@@ -409,7 +456,8 @@ function recommendationTitle(recommendation: Recommendation, t: TFunc): string {
 
 function recommendationDetail(recommendation: Recommendation, graph: KnowledgeGraph, t: TFunc): string {
   const labels = [...recommendation.conceptIds, ...recommendation.skillIds].map((id) => labelForId(id, graph));
-  if (labels.length) return t('uld_rec_detail_with_target', { detail: recommendation.detail, labels: labels.join(', ') });
+  if (labels.length)
+    return t('uld_rec_detail_with_target', { detail: recommendation.detail, labels: labels.join(', ') });
   return recommendation.detail;
 }
 
@@ -440,7 +488,8 @@ function summaryWeakestLabel(label: string, t: TFunc): string {
 }
 
 function errorCategoriesForNode(nodeId: string): ErrorCategory[] {
-  if (nodeId.includes('factor') || nodeId.includes('quadratic') || nodeId.includes('linear')) return ['algebra_transform'];
+  if (nodeId.includes('factor') || nodeId.includes('quadratic') || nodeId.includes('linear'))
+    return ['algebra_transform'];
   if (nodeId.includes('geometry')) return ['wrong_formula'];
   if (nodeId.includes('inference')) return ['inference'];
   if (nodeId.includes('grammar') || nodeId.includes('sentence') || nodeId.includes('tense')) return ['grammar'];

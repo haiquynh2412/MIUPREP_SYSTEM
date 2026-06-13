@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('IELTS Onboarding Diagnostic Test E2E Flow', () => {
-  
   test.beforeEach(async ({ page }) => {
     // Clear localStorage to ensure we start from the registration/login screen
     await page.goto('/', { waitUntil: 'domcontentloaded' });
@@ -9,7 +8,9 @@ test.describe('IELTS Onboarding Diagnostic Test E2E Flow', () => {
     await page.reload();
   });
 
-  test('Should complete the registration -> diagnostic test -> Listening audio trigger -> submit -> review -> start learning flow successfully', async ({ page }) => {
+  test('Should complete the registration -> diagnostic test -> Listening audio trigger -> submit -> review -> start learning flow successfully', async ({
+    page,
+  }) => {
     test.setTimeout(120000);
 
     // 1. Verify Registration Screen is displayed by default
@@ -20,7 +21,7 @@ test.describe('IELTS Onboarding Diagnostic Test E2E Flow', () => {
     const uniqueUsername = `candidate_${Math.random().toString(36).substring(2, 9)}`;
     await page.fill('input[placeholder*="haiquynh"]', uniqueUsername);
     await page.fill('input[placeholder*="mật khẩu"]', 'SecurePassword123');
-    
+
     // Select target band 7.0
     await page.selectOption('select', '7');
 
@@ -46,7 +47,7 @@ test.describe('IELTS Onboarding Diagnostic Test E2E Flow', () => {
     const playBtn = page.locator('button:has-text("Play")').or(page.locator('button >> svg >> xpath=..')).first();
     await expect(playBtn).toBeVisible();
     await playBtn.click();
-    
+
     // Verify audio player state updates
     await expect(page.locator('text=Đang Phát Âm Thanh Bài Nghe...')).toBeVisible();
 

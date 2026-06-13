@@ -19,7 +19,7 @@ async function runTestHarness() {
     const result = await adapter.gradeWriting({
       attemptId: 'test-harness-essay-1',
       essay: testEssay,
-      taskNumber: 2
+      taskNumber: 2,
     });
 
     console.log('\n✅ Step 2: AI returned response successfully! Analyzing properties...');

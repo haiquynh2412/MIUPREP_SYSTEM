@@ -4,7 +4,10 @@ import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import './App.css';
 
-export interface PhysicsQuestionOption { key: string; content: string }
+export interface PhysicsQuestionOption {
+  key: string;
+  content: string;
+}
 
 export interface PhysicsQuestion {
   id: string;
@@ -101,29 +104,113 @@ const CHAPTERS = [
   { id: 'light_basics', name: 'Light Basics', nameVn: 'Ánh sáng', icon: '💡', color: '#C4B5FD', grade: 6 },
   { id: 'sound_basics', name: 'Sound Basics', nameVn: 'Âm thanh', icon: '🔊', color: '#DDD6FE', grade: 6 },
   // Grade 7
-  { id: 'speed_graph', name: 'Speed & Motion Graphs', nameVn: 'Tốc độ và đồ thị', icon: '📈', color: '#7C3AED', grade: 7 },
-  { id: 'reflection_refraction', name: 'Reflection & Refraction', nameVn: 'Phản xạ và khúc xạ', icon: '🪞', color: '#6D28D9', grade: 7 },
+  {
+    id: 'speed_graph',
+    name: 'Speed & Motion Graphs',
+    nameVn: 'Tốc độ và đồ thị',
+    icon: '📈',
+    color: '#7C3AED',
+    grade: 7,
+  },
+  {
+    id: 'reflection_refraction',
+    name: 'Reflection & Refraction',
+    nameVn: 'Phản xạ và khúc xạ',
+    icon: '🪞',
+    color: '#6D28D9',
+    grade: 7,
+  },
   { id: 'sound_wave', name: 'Sound Waves', nameVn: 'Sóng âm', icon: '🎵', color: '#8B5CF6', grade: 7 },
   { id: 'magnetic_field_basics', name: 'Magnetic Fields', nameVn: 'Từ trường', icon: '🧲', color: '#A78BFA', grade: 7 },
-  { id: 'earth_solar_system', name: 'Earth & Solar System', nameVn: 'Trái Đất và Hệ Mặt Trời', icon: '🌍', color: '#C4B5FD', grade: 7 },
+  {
+    id: 'earth_solar_system',
+    name: 'Earth & Solar System',
+    nameVn: 'Trái Đất và Hệ Mặt Trời',
+    icon: '🌍',
+    color: '#C4B5FD',
+    grade: 7,
+  },
   // Grade 8
   { id: 'pressure', name: 'Pressure', nameVn: 'Áp suất', icon: '🔧', color: '#7C3AED', grade: 8 },
-  { id: 'liquid_pressure', name: 'Liquid & Atmospheric Pressure', nameVn: 'Áp suất chất lỏng', icon: '🌊', color: '#6D28D9', grade: 8 },
-  { id: 'buoyancy', name: 'Buoyancy (Archimedes)', nameVn: 'Lực đẩy Archimedes', icon: '🚢', color: '#8B5CF6', grade: 8 },
+  {
+    id: 'liquid_pressure',
+    name: 'Liquid & Atmospheric Pressure',
+    nameVn: 'Áp suất chất lỏng',
+    icon: '🌊',
+    color: '#6D28D9',
+    grade: 8,
+  },
+  {
+    id: 'buoyancy',
+    name: 'Buoyancy (Archimedes)',
+    nameVn: 'Lực đẩy Archimedes',
+    icon: '🚢',
+    color: '#8B5CF6',
+    grade: 8,
+  },
   { id: 'moment_of_force', name: 'Moment of Force', nameVn: 'Momen lực', icon: '⚖️', color: '#A78BFA', grade: 8 },
   { id: 'kinetic_energy', name: 'Kinetic Energy', nameVn: 'Động năng', icon: '🏎️', color: '#7C3AED', grade: 8 },
   { id: 'potential_energy', name: 'Potential Energy', nameVn: 'Thế năng', icon: '⛰️', color: '#6D28D9', grade: 8 },
-  { id: 'energy_conservation', name: 'Energy Conservation', nameVn: 'Bảo toàn năng lượng', icon: '♻️', color: '#8B5CF6', grade: 8 },
+  {
+    id: 'energy_conservation',
+    name: 'Energy Conservation',
+    nameVn: 'Bảo toàn năng lượng',
+    icon: '♻️',
+    color: '#8B5CF6',
+    grade: 8,
+  },
   { id: 'heat_transfer', name: 'Heat Transfer', nameVn: 'Truyền nhiệt', icon: '🔥', color: '#A78BFA', grade: 8 },
   // Grade 9
-  { id: 'resistance_ohm', name: 'Resistance & Ohm\'s Law', nameVn: 'Điện trở và Định luật Ohm', icon: '⚡', color: '#7C3AED', grade: 9 },
+  {
+    id: 'resistance_ohm',
+    name: "Resistance & Ohm's Law",
+    nameVn: 'Điện trở và Định luật Ohm',
+    icon: '⚡',
+    color: '#7C3AED',
+    grade: 9,
+  },
   { id: 'electric_circuit', name: 'Electric Circuits', nameVn: 'Mạch điện', icon: '🔌', color: '#6D28D9', grade: 9 },
   { id: 'electric_power', name: 'Electric Power', nameVn: 'Công suất điện', icon: '💡', color: '#8B5CF6', grade: 9 },
-  { id: 'magnetic_force', name: 'Magnetic Force & EM', nameVn: 'Lực từ và cảm ứng ĐT', icon: '🧲', color: '#A78BFA', grade: 9 },
-  { id: 'light_spectrum', name: 'Light Spectrum', nameVn: 'Quang phổ ánh sáng', icon: '🌈', color: '#C4B5FD', grade: 9 },
-  { id: 'nuclear_energy_intro', name: 'Nuclear Energy', nameVn: 'Năng lượng hạt nhân', icon: '☢️', color: '#DDD6FE', grade: 9 },
-  { id: 'gifted_mechanics_grade9', name: 'Advanced Mechanics', nameVn: 'Cơ học chuyên sâu & Vật lý vui', icon: '⚙️', color: '#6366F1', grade: 9 },
-  { id: 'gifted_heat_grade9', name: 'Advanced Heat & Thermodynamics', nameVn: 'Nhiệt học nâng cao & Cân bằng', icon: '🔥', color: '#EF4444', grade: 9 },
+  {
+    id: 'magnetic_force',
+    name: 'Magnetic Force & EM',
+    nameVn: 'Lực từ và cảm ứng ĐT',
+    icon: '🧲',
+    color: '#A78BFA',
+    grade: 9,
+  },
+  {
+    id: 'light_spectrum',
+    name: 'Light Spectrum',
+    nameVn: 'Quang phổ ánh sáng',
+    icon: '🌈',
+    color: '#C4B5FD',
+    grade: 9,
+  },
+  {
+    id: 'nuclear_energy_intro',
+    name: 'Nuclear Energy',
+    nameVn: 'Năng lượng hạt nhân',
+    icon: '☢️',
+    color: '#DDD6FE',
+    grade: 9,
+  },
+  {
+    id: 'gifted_mechanics_grade9',
+    name: 'Advanced Mechanics',
+    nameVn: 'Cơ học chuyên sâu & Vật lý vui',
+    icon: '⚙️',
+    color: '#6366F1',
+    grade: 9,
+  },
+  {
+    id: 'gifted_heat_grade9',
+    name: 'Advanced Heat & Thermodynamics',
+    nameVn: 'Nhiệt học nâng cao & Cân bằng',
+    icon: '🔥',
+    color: '#EF4444',
+    grade: 9,
+  },
 ];
 
 /* ---- Helpers ---- */
@@ -132,12 +219,16 @@ const renderMath = (text) => {
   let rendered = text.replace(/\$\$([\s\S]+?)\$\$/g, (match, expr) => {
     try {
       return katex.renderToString(expr.trim(), { displayMode: true, throwOnError: false });
-    } catch { return match; }
+    } catch {
+      return match;
+    }
   });
   rendered = rendered.replace(/\$([\s\S]+?)\$/g, (match, expr) => {
     try {
       return katex.renderToString(expr.trim(), { displayMode: false, throwOnError: false });
-    } catch { return match; }
+    } catch {
+      return match;
+    }
   });
   rendered = rendered.replace(/\n/g, '<br/>');
   rendered = rendered.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
@@ -211,24 +302,34 @@ export default function App() {
   // Load questions on mount
   useEffect(() => {
     Promise.all([
-      fetch('/data/questions_db.json').then(r => r.json()).catch(() => []),
-      fetch('/data/questions_grade7.json').then(r => r.json()).catch(() => []),
-      fetch('/data/questions_grade8.json').then(r => r.json()).catch(() => []),
-      fetch('/data/questions_grade9.json').then(r => r.json()).catch(() => []),
-    ]).then(([g6, g7, g8, g9]) => {
-      const all = [
-        ...(Array.isArray(g6) ? g6 : []),
-        ...(Array.isArray(g7) ? g7 : []),
-        ...(Array.isArray(g8) ? g8 : []),
-        ...(Array.isArray(g9) ? g9 : []),
-      ];
-      setQuestions(all);
-      setLoading(false);
-    }).catch(err => {
-      console.error('Failed to load questions:', err);
-      setQuestions([]);
-      setLoading(false);
-    });
+      fetch('/data/questions_db.json')
+        .then((r) => r.json())
+        .catch(() => []),
+      fetch('/data/questions_grade7.json')
+        .then((r) => r.json())
+        .catch(() => []),
+      fetch('/data/questions_grade8.json')
+        .then((r) => r.json())
+        .catch(() => []),
+      fetch('/data/questions_grade9.json')
+        .then((r) => r.json())
+        .catch(() => []),
+    ])
+      .then(([g6, g7, g8, g9]) => {
+        const all = [
+          ...(Array.isArray(g6) ? g6 : []),
+          ...(Array.isArray(g7) ? g7 : []),
+          ...(Array.isArray(g8) ? g8 : []),
+          ...(Array.isArray(g9) ? g9 : []),
+        ];
+        setQuestions(all);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error('Failed to load questions:', err);
+        setQuestions([]);
+        setLoading(false);
+      });
   }, []);
 
   // Update streak on mount
@@ -238,7 +339,10 @@ export default function App() {
   }, []);
 
   /* ---- Navigation ---- */
-  const navigateTo = (view: string, options: { chapter?: PhysicsChapter; question?: PhysicsQuestion; questionIndex?: number } = {}) => {
+  const navigateTo = (
+    view: string,
+    options: { chapter?: PhysicsChapter; question?: PhysicsQuestion; questionIndex?: number } = {},
+  ) => {
     setCurrentView(view);
     setSelectedAnswer(null);
     setShowResult(false);
@@ -266,9 +370,7 @@ export default function App() {
   };
 
   const startPractice = (chapter, mode = 'guided') => {
-    const chapterQuestions = questions
-      .filter((q) => q.chapter === chapter.id)
-      .map(injectPhetSim);
+    const chapterQuestions = questions.filter((q) => q.chapter === chapter.id).map(injectPhetSim);
     if (!chapterQuestions.length) return;
     setPracticeQuestions(chapterQuestions);
     setPracticeMode(mode);
@@ -287,7 +389,7 @@ export default function App() {
   };
 
   const showAchievementToast = (achievementId) => {
-    const ach = ACHIEVEMENTS.find(a => a.id === achievementId);
+    const ach = ACHIEVEMENTS.find((a) => a.id === achievementId);
     if (ach) {
       setAchievementToast(ach);
       setTimeout(() => setAchievementToast(null), 4000);
@@ -321,7 +423,11 @@ export default function App() {
       // Record mistake in error notebook if wrong
       if (!result.attempt.correct) {
         const { entries } = recordMiuPhysicsErrorNotebookMistake(
-          learnerId, currentQuestion, selectedAnswer, result.attempt, errorNotebookEntries
+          learnerId,
+          currentQuestion,
+          selectedAnswer,
+          result.attempt,
+          errorNotebookEntries,
         );
         setErrorNotebookEntries(entries);
       }
@@ -381,8 +487,19 @@ export default function App() {
   if (loading) {
     return (
       <div className="app-container">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', flexDirection: 'column', gap: 16 }}>
-          <div className="animate-float" style={{ fontSize: '4rem' }}>⚛️</div>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            minHeight: '100vh',
+            flexDirection: 'column',
+            gap: 16,
+          }}
+        >
+          <div className="animate-float" style={{ fontSize: '4rem' }}>
+            ⚛️
+          </div>
           <div style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--primary-light)' }}>{_('loading')}</div>
           <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{_('loading_subtitle')}</div>
         </div>
@@ -399,7 +516,9 @@ export default function App() {
           <span className="achievement-unlock-toast-icon">{achievementToast.icon}</span>
           <div className="achievement-unlock-toast-text">
             <div className="achievement-unlock-toast-title">🏆 {achievementToast.title}!</div>
-            <div className="achievement-unlock-toast-desc">{achievementToast.description} • +{achievementToast.xpReward} XP</div>
+            <div className="achievement-unlock-toast-desc">
+              {achievementToast.description} • +{achievementToast.xpReward} XP
+            </div>
           </div>
         </div>
       )}
@@ -430,19 +549,58 @@ export default function App() {
             <LanguageToggle lang={lang} onToggle={handleLanguageToggle} />
           </div>
           <nav className="nav-tabs">
-            <button className={`nav-tab ${currentView === 'home' ? 'active' : ''}`} onClick={() => navigateTo('home')}>📚 {_('nav_chapters')}</button>
-            <button className={`nav-tab ${currentView === 'explore' ? 'active' : ''}`} onClick={() => navigateTo('explore')}>🔍 {_('nav_explore')}</button>
-            <button className={`nav-tab ${currentView === 'challenge' ? 'active' : ''}`} onClick={() => navigateTo('challenge')}>⚡ {_('nav_challenge')}</button>
-            <button className={`nav-tab ${currentView === 'diary' ? 'active' : ''}`} onClick={() => navigateTo('diary')}>📓 {_('nav_diary')}</button>
-            <button className={`nav-tab ${currentView === 'dashboard' ? 'active' : ''}`} onClick={() => navigateTo('dashboard')}>📊 {_('nav_dashboard')}</button>
-            <button className={`nav-tab ${currentView === 'achievements' ? 'active' : ''}`} onClick={() => navigateTo('achievements')}>🏆 {_('nav_achievements')}</button>
-            <button className={`nav-tab ${currentView === 'error_notebook' ? 'active' : ''}`} onClick={() => navigateTo('error_notebook')}>
+            <button className={`nav-tab ${currentView === 'home' ? 'active' : ''}`} onClick={() => navigateTo('home')}>
+              📚 {_('nav_chapters')}
+            </button>
+            <button
+              className={`nav-tab ${currentView === 'explore' ? 'active' : ''}`}
+              onClick={() => navigateTo('explore')}
+            >
+              🔍 {_('nav_explore')}
+            </button>
+            <button
+              className={`nav-tab ${currentView === 'challenge' ? 'active' : ''}`}
+              onClick={() => navigateTo('challenge')}
+            >
+              ⚡ {_('nav_challenge')}
+            </button>
+            <button
+              className={`nav-tab ${currentView === 'diary' ? 'active' : ''}`}
+              onClick={() => navigateTo('diary')}
+            >
+              📓 {_('nav_diary')}
+            </button>
+            <button
+              className={`nav-tab ${currentView === 'dashboard' ? 'active' : ''}`}
+              onClick={() => navigateTo('dashboard')}
+            >
+              📊 {_('nav_dashboard')}
+            </button>
+            <button
+              className={`nav-tab ${currentView === 'achievements' ? 'active' : ''}`}
+              onClick={() => navigateTo('achievements')}
+            >
+              🏆 {_('nav_achievements')}
+            </button>
+            <button
+              className={`nav-tab ${currentView === 'error_notebook' ? 'active' : ''}`}
+              onClick={() => navigateTo('error_notebook')}
+            >
               📝 {_('nav_errors')}
               {(errorNotebookSummary?.dueEntries?.length || 0) > 0 && (
-                <span style={{
-                  marginLeft: 6, background: 'var(--error)', color: 'white',
-                  borderRadius: 'var(--radius-pill)', padding: '1px 7px', fontSize: '0.7rem', fontWeight: 700,
-                }}>{errorNotebookSummary.dueEntries.length}</span>
+                <span
+                  style={{
+                    marginLeft: 6,
+                    background: 'var(--error)',
+                    color: 'white',
+                    borderRadius: 'var(--radius-pill)',
+                    padding: '1px 7px',
+                    fontSize: '0.7rem',
+                    fontWeight: 700,
+                  }}
+                >
+                  {errorNotebookSummary.dueEntries.length}
+                </span>
               )}
             </button>
           </nav>
@@ -451,7 +609,6 @@ export default function App() {
 
       {/* Main Content */}
       <main className="container" style={{ flex: 1, paddingTop: 24, paddingBottom: 48 }}>
-
         {/* ===== HOME VIEW ===== */}
         {currentView === 'home' && (
           <div className="animate-fadeIn">
@@ -459,11 +616,11 @@ export default function App() {
             <DailyFact facts={DAILY_FACTS} selectedGrade={selectedGrade} lang={lang} />
 
             <div className="welcome-section">
-              <div className="animate-float" style={{ fontSize: '3.5rem', marginBottom: 12 }}>⚛️</div>
+              <div className="animate-float" style={{ fontSize: '3.5rem', marginBottom: 12 }}>
+                ⚛️
+              </div>
               <h1 className="welcome-title">{_('welcome_title')}</h1>
-              <p className="welcome-subtitle">
-                {_('welcome_subtitle_template', { grade: selectedGrade })}
-              </p>
+              <p className="welcome-subtitle">{_('welcome_subtitle_template', { grade: selectedGrade })}</p>
             </div>
 
             {/* View Mode Toggle */}
@@ -517,7 +674,7 @@ export default function App() {
             {/* Classic Chapter Mode */}
             {homeViewMode === 'chapters' && (
               <ChapterMap
-                chapters={CHAPTERS.filter(c => c.grade === selectedGrade)}
+                chapters={CHAPTERS.filter((c) => c.grade === selectedGrade)}
                 questions={questions}
                 learningState={learningState}
                 onSelectChapter={handleSelectChapter}
@@ -528,23 +685,34 @@ export default function App() {
             {/* Quick Stats */}
             <div className="quick-stats">
               <div className="quick-stat">
-                <div className="stat-value" style={{ fontSize: '1.5rem' }}>{dashboard.totalAttempts}</div>
+                <div className="stat-value" style={{ fontSize: '1.5rem' }}>
+                  {dashboard.totalAttempts}
+                </div>
                 <div className="stat-label">{_('total_attempts')}</div>
               </div>
               <div className="quick-stat">
                 <div className="stat-value" style={{ fontSize: '1.5rem' }}>
                   {dashboard.skillMastery.length > 0
-                    ? Math.round(dashboard.skillMastery.reduce((s, r) => s + (r.accuracy || 0), 0) / dashboard.skillMastery.length * 100)
-                    : 0}%
+                    ? Math.round(
+                        (dashboard.skillMastery.reduce((s, r) => s + (r.accuracy || 0), 0) /
+                          dashboard.skillMastery.length) *
+                          100,
+                      )
+                    : 0}
+                  %
                 </div>
                 <div className="stat-label">{_('avg_mastery')}</div>
               </div>
               <div className="quick-stat">
-                <div className="stat-value" style={{ fontSize: '1.5rem' }}>{xp} XP</div>
+                <div className="stat-value" style={{ fontSize: '1.5rem' }}>
+                  {xp} XP
+                </div>
                 <div className="stat-label">{_('experience')}</div>
               </div>
               <div className="quick-stat">
-                <div className="stat-value" style={{ fontSize: '1.5rem' }}>{questions.filter(q => q.grade === selectedGrade).length}</div>
+                <div className="stat-value" style={{ fontSize: '1.5rem' }}>
+                  {questions.filter((q) => q.grade === selectedGrade).length}
+                </div>
                 <div className="stat-label">{_('questions_count')}</div>
               </div>
             </div>
@@ -554,19 +722,15 @@ export default function App() {
         {/* ===== EXPLORE VIEW ===== */}
         {currentView === 'explore' && (
           <div className="animate-fadeIn">
-            <h2 style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 10 }}>
-              🔍 {_('explore_title')}
-            </h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: 24, fontSize: '0.9rem' }}>
-              {_('explore_subtitle')}
-            </p>
+            <h2 style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 10 }}>🔍 {_('explore_title')}</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: 24, fontSize: '0.9rem' }}>{_('explore_subtitle')}</p>
 
             {/* Detective Missions for selected grade */}
             <div className="explore-section">
               <div className="explore-section-header">
                 <h3 className="explore-section-title">🔍 {_('detective_title')}</h3>
               </div>
-              {CHAPTERS.filter(c => c.grade === selectedGrade).map(chapter => {
+              {CHAPTERS.filter((c) => c.grade === selectedGrade).map((chapter) => {
                 const missions = DETECTIVE_MISSIONS[chapter.id];
                 if (!missions || missions.length === 0) return null;
                 return (
@@ -591,7 +755,7 @@ export default function App() {
               <div className="explore-section-header">
                 <h3 className="explore-section-title">🧪 {_('home_lab_title')}</h3>
               </div>
-              {CHAPTERS.filter(c => c.grade === selectedGrade).map(chapter => {
+              {CHAPTERS.filter((c) => c.grade === selectedGrade).map((chapter) => {
                 const experiments = HOME_EXPERIMENTS[chapter.id];
                 if (!experiments || experiments.length === 0) return null;
                 return (
@@ -622,7 +786,7 @@ export default function App() {
               {_('challenge_subtitle')}
             </p>
             <QuickChallenge
-              questions={questions.filter(q => q.grade === selectedGrade)}
+              questions={questions.filter((q) => q.grade === selectedGrade)}
               onComplete={() => navigateTo('home')}
               renderMath={renderMath}
               lang={lang}
@@ -633,12 +797,8 @@ export default function App() {
         {/* ===== DIARY VIEW ===== */}
         {currentView === 'diary' && (
           <div className="animate-fadeIn">
-            <h2 style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 10 }}>
-              📓 {_('diary_title')}
-            </h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: 24, fontSize: '0.9rem' }}>
-              {_('diary_subtitle')}
-            </p>
+            <h2 style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 10 }}>📓 {_('diary_title')}</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: 24, fontSize: '0.9rem' }}>{_('diary_subtitle')}</p>
             <ObservationDiary
               entries={diaryEntries}
               onAddEntry={handleAddDiary}
@@ -659,7 +819,7 @@ export default function App() {
               {_('achievement_subtitle')}
             </p>
             <AchievementPanel
-              achievements={ACHIEVEMENTS.map(a => ({
+              achievements={ACHIEVEMENTS.map((a) => ({
                 ...a,
                 svgIcon: ACHIEVEMENT_ICONS[a.id] || ACHIEVEMENT_ICONS.default,
               }))}
@@ -680,12 +840,23 @@ export default function App() {
             </button>
 
             <div className="card" style={{ marginBottom: 24, position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${currentChapter.color}, var(--accent-cyan))` }} />
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  height: 3,
+                  background: `linear-gradient(90deg, ${currentChapter.color}, var(--accent-cyan))`,
+                }}
+              />
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16 }}>
                 <span style={{ fontSize: '3rem' }}>{currentChapter.icon}</span>
                 <div>
                   <h2 style={{ marginBottom: 4 }}>{lang === 'en' ? currentChapter.name : currentChapter.nameVn}</h2>
-                  <div style={{ color: 'var(--text-muted)' }}>{lang === 'en' ? currentChapter.nameVn : currentChapter.name}</div>
+                  <div style={{ color: 'var(--text-muted)' }}>
+                    {lang === 'en' ? currentChapter.nameVn : currentChapter.name}
+                  </div>
                 </div>
               </div>
 
@@ -733,7 +904,9 @@ export default function App() {
                 {/* Detective Missions */}
                 {DETECTIVE_MISSIONS[currentChapter.id]?.length > 0 && (
                   <div className="detective-section">
-                    <h3 className="detective-section-title">🔍 {lang === 'en' ? 'Detective Missions' : 'Nhiệm vụ Thám tử'}</h3>
+                    <h3 className="detective-section-title">
+                      🔍 {lang === 'en' ? 'Detective Missions' : 'Nhiệm vụ Thám tử'}
+                    </h3>
                     <DetectiveMission
                       missions={DETECTIVE_MISSIONS[currentChapter.id]}
                       chapterId={currentChapter.id}
@@ -776,7 +949,9 @@ export default function App() {
                             <div>
                               <div style={{ fontWeight: 600, color: 'var(--text-heading)' }}>{book.title}</div>
                               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{book.author}</div>
-                              <div style={{ fontSize: '0.8rem', color: 'var(--primary-light)', marginTop: 4 }}>{book.note}</div>
+                              <div style={{ fontSize: '0.8rem', color: 'var(--primary-light)', marginTop: 4 }}>
+                                {book.note}
+                              </div>
                             </div>
                           </div>
                         ))}
@@ -787,7 +962,12 @@ export default function App() {
 
                 {/* CTA to start */}
                 <div style={{ textAlign: 'center', padding: '16px 0' }}>
-                  <button className="btn btn-primary btn-lg" onClick={() => { setChapterTab('thinking_quest'); }}>
+                  <button
+                    className="btn btn-primary btn-lg"
+                    onClick={() => {
+                      setChapterTab('thinking_quest');
+                    }}
+                  >
                     🧠 {lang === 'en' ? 'Ready? Start Thinking Quest!' : 'Sẵn sàng? Bắt đầu Thử thách!'}
                   </button>
                 </div>
@@ -806,19 +986,42 @@ export default function App() {
                       <div className="intro-lab-header">
                         <div className="intro-lab-badge">
                           <span className="resource-badge resource-badge-phet">PhET Lab</span>
-                          <span style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>🎬 {lang === 'en' ? 'Chapter Intro' : 'Vào bài'}</span>
+                          <span style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>
+                            🎬 {lang === 'en' ? 'Chapter Intro' : 'Vào bài'}
+                          </span>
                         </div>
                         <h3 className="intro-lab-title">🧪 {lang === 'en' ? introSim.title : introSim.titleVn}</h3>
-                        <p className="intro-lab-desc">{lang === 'en' ? introSim.descriptionEn : introSim.description}</p>
+                        <p className="intro-lab-desc">
+                          {lang === 'en' ? introSim.descriptionEn : introSim.description}
+                        </p>
                       </div>
                       <div className="phet-embed-container" style={{ borderRadius: 'var(--radius-md)' }}>
-                        <iframe src={getLocalizedPhetUrl(introSim.url, lang)} title={introSim.title} className="phet-iframe" allowFullScreen loading="lazy" />
+                        <iframe
+                          src={getLocalizedPhetUrl(introSim.url, lang)}
+                          title={introSim.title}
+                          className="phet-iframe"
+                          allowFullScreen
+                          loading="lazy"
+                        />
                       </div>
                       <div style={{ display: 'flex', gap: 10, marginTop: 12 }}>
-                        <a href={getLocalizedPhetUrl(introSim.url, lang)} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline" style={{ flex: 1, justifyContent: 'center' }}>
+                        <a
+                          href={getLocalizedPhetUrl(introSim.url, lang)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-sm btn-outline"
+                          style={{ flex: 1, justifyContent: 'center' }}
+                        >
                           🔗 {lang === 'en' ? 'Full Screen' : 'Toàn màn hình'}
                         </a>
-                        <button className="btn btn-sm btn-primary" style={{ flex: 1, justifyContent: 'center' }} onClick={() => { setChapterTab('thinking_quest'); startPractice(currentChapter, 'guided'); }}>
+                        <button
+                          className="btn btn-sm btn-primary"
+                          style={{ flex: 1, justifyContent: 'center' }}
+                          onClick={() => {
+                            setChapterTab('thinking_quest');
+                            startPractice(currentChapter, 'guided');
+                          }}
+                        >
                           ✅ {lang === 'en' ? 'Explored → Start Learning!' : 'Đã khám phá → Bắt đầu học!'}
                         </button>
                       </div>
@@ -833,7 +1036,8 @@ export default function App() {
                   return (
                     <div style={{ marginBottom: 24 }}>
                       <h3 className="resource-section-title">
-                        <span className="resource-icon">🧪</span> {lang === 'en' ? 'Interactive Simulations' : 'Thí nghiệm mô phỏng'}
+                        <span className="resource-icon">🧪</span>{' '}
+                        {lang === 'en' ? 'Interactive Simulations' : 'Thí nghiệm mô phỏng'}
                       </h3>
                       <div className="resource-grid">
                         {res.phet.map((sim, i) => (
@@ -845,9 +1049,21 @@ export default function App() {
                             <h4 className="resource-card-title">{lang === 'en' ? sim.title : sim.titleVn}</h4>
                             <p className="resource-card-desc">{sim.description}</p>
                             <div className="phet-embed-container">
-                              <iframe src={getLocalizedPhetUrl(sim.url, lang)} title={sim.title} className="phet-iframe" allowFullScreen loading="lazy" />
+                              <iframe
+                                src={getLocalizedPhetUrl(sim.url, lang)}
+                                title={sim.title}
+                                className="phet-iframe"
+                                allowFullScreen
+                                loading="lazy"
+                              />
                             </div>
-                            <a href={getLocalizedPhetUrl(sim.url, lang)} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline" style={{ marginTop: 12, width: '100%', justifyContent: 'center' }}>
+                            <a
+                              href={getLocalizedPhetUrl(sim.url, lang)}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn btn-sm btn-outline"
+                              style={{ marginTop: 12, width: '100%', justifyContent: 'center' }}
+                            >
                               🔗 {lang === 'en' ? 'Open Full Screen' : 'Mở toàn màn hình'}
                             </a>
                           </div>
@@ -864,18 +1080,28 @@ export default function App() {
                   return (
                     <div style={{ marginBottom: 24 }}>
                       <h3 className="resource-section-title">
-                        <span className="resource-icon">🎬</span> {lang === 'en' ? 'Discovery Videos' : 'Video khám phá'}
+                        <span className="resource-icon">🎬</span>{' '}
+                        {lang === 'en' ? 'Discovery Videos' : 'Video khám phá'}
                       </h3>
                       <div className="resource-grid">
                         {res.videos.map((vid, i) => (
                           <div key={i} className="resource-card resource-card-video">
                             <div className="resource-card-header">
                               <span className="resource-badge resource-badge-youtube">YouTube</span>
-                              <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>{vid.channel} • {vid.duration}</span>
+                              <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>
+                                {vid.channel} • {vid.duration}
+                              </span>
                             </div>
                             <h4 className="resource-card-title">{lang === 'en' ? vid.title : vid.titleVn}</h4>
                             <div className="video-embed-container">
-                              <iframe src={getLocalizedYoutubeUrl(vid.url, lang)} title={vid.title} className="video-iframe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
+                              <iframe
+                                src={getLocalizedYoutubeUrl(vid.url, lang)}
+                                title={vid.title}
+                                className="video-iframe"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                loading="lazy"
+                              />
                             </div>
                           </div>
                         ))}
@@ -904,38 +1130,53 @@ export default function App() {
 
                 {/* Question list */}
                 <h3 style={{ marginBottom: 16 }}>
-                  📋 {_('question_list')} ({questions.filter((q) => q.chapter === currentChapter.id).length} {_('questions_unit')})
+                  📋 {_('question_list')} ({questions.filter((q) => q.chapter === currentChapter.id).length}{' '}
+                  {_('questions_unit')})
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                  {questions.filter((q) => q.chapter === currentChapter.id).map((q, idx) => {
-                    const diffBadge = { easy: '🟢', medium: '🟡', hard: '🔴' }[q.difficulty || 'medium'] || '🟡';
-                    const hasSim = !!CHAPTER_RESOURCES[currentChapter.id]?.question_sims?.[q.id];
-                    return (
-                      <div
-                        key={q.id}
-                        className="card"
-                        style={{ padding: 16, cursor: 'pointer' }}
-                        onClick={() => {
-                          const chQ = questions.filter((cq) => cq.chapter === currentChapter.id).map(injectPhetSim);
-                          setPracticeQuestions(chQ);
-                          setCurrentQuestionIndex(idx);
-                          setCurrentQuestion(injectPhetSim(q));
-                          setSelectedAnswer(null);
-                          setShowResult(false);
-                          setThinkingGuideStep(0);
-                          setPracticeMode('guided');
-                          setCurrentView('practice');
-                        }}
-                      >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                          <span>{diffBadge}</span>
-                          <span style={{ flex: 1, fontSize: '0.9rem' }} dangerouslySetInnerHTML={{ __html: renderMath(q.question_text?.substring(0, 120) + ((q.question_text?.length || 0) > 120 ? '...' : '')) }} />
-                          {hasSim && <span title="Có thí nghiệm mô phỏng" style={{ fontSize: '0.9rem' }}>🧪</span>}
-                          <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>#{idx + 1}</span>
+                  {questions
+                    .filter((q) => q.chapter === currentChapter.id)
+                    .map((q, idx) => {
+                      const diffBadge = { easy: '🟢', medium: '🟡', hard: '🔴' }[q.difficulty || 'medium'] || '🟡';
+                      const hasSim = !!CHAPTER_RESOURCES[currentChapter.id]?.question_sims?.[q.id];
+                      return (
+                        <div
+                          key={q.id}
+                          className="card"
+                          style={{ padding: 16, cursor: 'pointer' }}
+                          onClick={() => {
+                            const chQ = questions.filter((cq) => cq.chapter === currentChapter.id).map(injectPhetSim);
+                            setPracticeQuestions(chQ);
+                            setCurrentQuestionIndex(idx);
+                            setCurrentQuestion(injectPhetSim(q));
+                            setSelectedAnswer(null);
+                            setShowResult(false);
+                            setThinkingGuideStep(0);
+                            setPracticeMode('guided');
+                            setCurrentView('practice');
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                            <span>{diffBadge}</span>
+                            <span
+                              style={{ flex: 1, fontSize: '0.9rem' }}
+                              dangerouslySetInnerHTML={{
+                                __html: renderMath(
+                                  q.question_text?.substring(0, 120) +
+                                    ((q.question_text?.length || 0) > 120 ? '...' : ''),
+                                ),
+                              }}
+                            />
+                            {hasSim && (
+                              <span title="Có thí nghiệm mô phỏng" style={{ fontSize: '0.9rem' }}>
+                                🧪
+                              </span>
+                            )}
+                            <span style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>#{idx + 1}</span>
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
                   {questions.filter((q) => q.chapter === currentChapter.id).length === 0 && (
                     <div className="empty-state">
                       <div className="empty-state-icon">📭</div>
@@ -951,18 +1192,35 @@ export default function App() {
         {/* ===== PRACTICE VIEW ===== */}
         {currentView === 'practice' && currentQuestion && (
           <div className="animate-fadeIn">
-            <button className="back-btn" onClick={() => currentChapter ? navigateTo('chapter') : navigateTo('home')}>
+            <button className="back-btn" onClick={() => (currentChapter ? navigateTo('chapter') : navigateTo('home'))}>
               {_('back')}
             </button>
 
             {/* Progress bar */}
             <div style={{ marginBottom: 20 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 6 }}>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  fontSize: '0.85rem',
+                  color: 'var(--text-muted)',
+                  marginBottom: 6,
+                }}
+              >
                 <span>{_('question_of', { current: currentQuestionIndex + 1, total: practiceQuestions.length })}</span>
-                <span>{practiceMode === 'guided' ? _('mode_guided') : practiceMode === 'practice' ? _('mode_practice') : _('mode_review')}</span>
+                <span>
+                  {practiceMode === 'guided'
+                    ? _('mode_guided')
+                    : practiceMode === 'practice'
+                      ? _('mode_practice')
+                      : _('mode_review')}
+                </span>
               </div>
               <div className="progress-bar">
-                <div className="progress-bar-fill" style={{ width: `${((currentQuestionIndex + 1) / practiceQuestions.length) * 100}%` }} />
+                <div
+                  className="progress-bar-fill"
+                  style={{ width: `${((currentQuestionIndex + 1) / practiceQuestions.length) * 100}%` }}
+                />
               </div>
             </div>
 
@@ -1004,11 +1262,17 @@ export default function App() {
                         {currentQuestion.explanation && (
                           <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: 8 }}>
                             <div style={{ marginBottom: 4 }}>
-                              <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong> {lang === 'en' && currentQuestion.explanation.summary_en ? currentQuestion.explanation.summary_en : currentQuestion.explanation.summary}
+                              <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong>{' '}
+                              {lang === 'en' && currentQuestion.explanation.summary_en
+                                ? currentQuestion.explanation.summary_en
+                                : currentQuestion.explanation.summary}
                             </div>
                             {currentQuestion.explanation.key_concept && (
                               <div style={{ fontStyle: 'italic', color: 'var(--primary-light)' }}>
-                                💡 {lang === 'en' ? 'Key Concept:' : 'Ý chính:'} {lang === 'en' && currentQuestion.explanation.key_concept_en ? currentQuestion.explanation.key_concept_en : currentQuestion.explanation.key_concept}
+                                💡 {lang === 'en' ? 'Key Concept:' : 'Ý chính:'}{' '}
+                                {lang === 'en' && currentQuestion.explanation.key_concept_en
+                                  ? currentQuestion.explanation.key_concept_en
+                                  : currentQuestion.explanation.key_concept}
                               </div>
                             )}
                           </div>
@@ -1022,11 +1286,17 @@ export default function App() {
                         {currentQuestion.explanation && (
                           <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: 8 }}>
                             <div style={{ marginBottom: 4 }}>
-                              <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong> {lang === 'en' && currentQuestion.explanation.summary_en ? currentQuestion.explanation.summary_en : currentQuestion.explanation.summary}
+                              <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong>{' '}
+                              {lang === 'en' && currentQuestion.explanation.summary_en
+                                ? currentQuestion.explanation.summary_en
+                                : currentQuestion.explanation.summary}
                             </div>
                             {currentQuestion.explanation.key_concept && (
                               <div style={{ fontStyle: 'italic', color: 'var(--primary-light)' }}>
-                                💡 {lang === 'en' ? 'Key Concept:' : 'Ý chính:'} {lang === 'en' && currentQuestion.explanation.key_concept_en ? currentQuestion.explanation.key_concept_en : currentQuestion.explanation.key_concept}
+                                💡 {lang === 'en' ? 'Key Concept:' : 'Ý chính:'}{' '}
+                                {lang === 'en' && currentQuestion.explanation.key_concept_en
+                                  ? currentQuestion.explanation.key_concept_en
+                                  : currentQuestion.explanation.key_concept}
                               </div>
                             )}
                           </div>
@@ -1074,12 +1344,8 @@ export default function App() {
         {/* ===== ERROR NOTEBOOK VIEW ===== */}
         {currentView === 'error_notebook' && (
           <div className="animate-fadeIn">
-            <h2 style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 10 }}>
-              📝 {_('error_title')}
-            </h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: 24, fontSize: '0.9rem' }}>
-              {_('error_subtitle')}
-            </p>
+            <h2 style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 10 }}>📝 {_('error_title')}</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: 24, fontSize: '0.9rem' }}>{_('error_subtitle')}</p>
 
             <div className="dashboard-grid" style={{ marginBottom: 24 }}>
               <div className="stat-card">
@@ -1104,33 +1370,52 @@ export default function App() {
               <div style={{ marginBottom: 24 }}>
                 <h3 style={{ marginBottom: 12, color: 'var(--warning)' }}>⏰ {_('review_now')}</h3>
                 {errorNotebookSummary.dueEntries.map((entry) => {
-                  const qId = entry.questionId.startsWith('miuphysics.') ? entry.questionId.substring('miuphysics.'.length) : entry.questionId;
-                  const matchedQ = questions.find(q => q.id === qId);
-                  const questionText = matchedQ 
-                    ? (lang === 'en' && matchedQ.question_text_en ? matchedQ.question_text_en : matchedQ.question_text)
+                  const qId = entry.questionId.startsWith('miuphysics.')
+                    ? entry.questionId.substring('miuphysics.'.length)
+                    : entry.questionId;
+                  const matchedQ = questions.find((q) => q.id === qId);
+                  const questionText = matchedQ
+                    ? lang === 'en' && matchedQ.question_text_en
+                      ? matchedQ.question_text_en
+                      : matchedQ.question_text
                     : entry.questionId;
                   const explanationText = matchedQ
-                    ? (matchedQ.explanation 
-                        ? (lang === 'en' && matchedQ.explanation.summary_en ? matchedQ.explanation.summary_en : matchedQ.explanation.summary)
-                        : '')
+                    ? matchedQ.explanation
+                      ? lang === 'en' && matchedQ.explanation.summary_en
+                        ? matchedQ.explanation.summary_en
+                        : matchedQ.explanation.summary
+                      : ''
                     : entry.explanation;
-                  
+
                   return (
                     <div key={entry.id || entry.questionId} className="error-notebook-card due">
                       <div style={{ marginBottom: 12 }}>
-                        <div style={{ fontWeight: 600, marginBottom: 6, color: 'var(--text-heading)', fontSize: '0.95rem' }}
+                        <div
+                          style={{
+                            fontWeight: 600,
+                            marginBottom: 6,
+                            color: 'var(--text-heading)',
+                            fontSize: '0.95rem',
+                          }}
                           dangerouslySetInnerHTML={{ __html: renderMath(questionText) }}
                         />
                         {explanationText && (
                           <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                            <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong> <span dangerouslySetInnerHTML={{ __html: renderMath(explanationText) }} />
+                            <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong>{' '}
+                            <span dangerouslySetInnerHTML={{ __html: renderMath(explanationText) }} />
                           </div>
                         )}
                       </div>
                       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                        <button className="btn btn-sm btn-success" onClick={() => handleReviewError(entry, 5)}>{_('understood')}</button>
-                        <button className="btn btn-sm btn-secondary" onClick={() => handleReviewError(entry, 3)}>{_('okay')}</button>
-                        <button className="btn btn-sm btn-error" onClick={() => handleReviewError(entry, 1)}>{_('not_understood')}</button>
+                        <button className="btn btn-sm btn-success" onClick={() => handleReviewError(entry, 5)}>
+                          {_('understood')}
+                        </button>
+                        <button className="btn btn-sm btn-secondary" onClick={() => handleReviewError(entry, 3)}>
+                          {_('okay')}
+                        </button>
+                        <button className="btn btn-sm btn-error" onClick={() => handleReviewError(entry, 1)}>
+                          {_('not_understood')}
+                        </button>
                       </div>
                     </div>
                   );
@@ -1142,31 +1427,47 @@ export default function App() {
               <div>
                 <h3 style={{ marginBottom: 12 }}>📋 {_('all_errors')}</h3>
                 {errorNotebookEntries.map((entry) => {
-                  const qId = entry.questionId.startsWith('miuphysics.') ? entry.questionId.substring('miuphysics.'.length) : entry.questionId;
-                  const matchedQ = questions.find(q => q.id === qId);
-                  const questionText = matchedQ 
-                    ? (lang === 'en' && matchedQ.question_text_en ? matchedQ.question_text_en : matchedQ.question_text)
+                  const qId = entry.questionId.startsWith('miuphysics.')
+                    ? entry.questionId.substring('miuphysics.'.length)
+                    : entry.questionId;
+                  const matchedQ = questions.find((q) => q.id === qId);
+                  const questionText = matchedQ
+                    ? lang === 'en' && matchedQ.question_text_en
+                      ? matchedQ.question_text_en
+                      : matchedQ.question_text
                     : entry.questionId;
                   const explanationText = matchedQ
-                    ? (matchedQ.explanation 
-                        ? (lang === 'en' && matchedQ.explanation.summary_en ? matchedQ.explanation.summary_en : matchedQ.explanation.summary)
-                        : '')
+                    ? matchedQ.explanation
+                      ? lang === 'en' && matchedQ.explanation.summary_en
+                        ? matchedQ.explanation.summary_en
+                        : matchedQ.explanation.summary
+                      : ''
                     : entry.explanation;
 
                   return (
                     <div key={entry.id || entry.questionId} className="error-notebook-card">
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 16 }}>
+                      <div
+                        style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 16 }}
+                      >
                         <div style={{ flex: 1 }}>
-                          <div style={{ fontWeight: 600, fontSize: '0.95rem', marginBottom: 6, color: 'var(--text-heading)' }}
+                          <div
+                            style={{
+                              fontWeight: 600,
+                              fontSize: '0.95rem',
+                              marginBottom: 6,
+                              color: 'var(--text-heading)',
+                            }}
                             dangerouslySetInnerHTML={{ __html: renderMath(questionText) }}
                           />
                           {explanationText && (
                             <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: 6 }}>
-                              <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong> <span dangerouslySetInnerHTML={{ __html: renderMath(explanationText) }} />
+                              <strong>{lang === 'en' ? 'Explanation:' : 'Lời giải:'}</strong>{' '}
+                              <span dangerouslySetInnerHTML={{ __html: renderMath(explanationText) }} />
                             </div>
                           )}
                           <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)', marginTop: 8 }}>
-                            {_('reviewed_times', { count: entry.repetitions || 0 })} • {_('interval_days', { days: entry.intervalDays || 1 })}
+                            {_('reviewed_times', { count: entry.repetitions || 0 })} •{' '}
+                            {_('interval_days', { days: entry.intervalDays || 1 })}
                           </div>
                         </div>
                         <div style={{ flexShrink: 0 }}>
@@ -1196,10 +1497,15 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer style={{
-        textAlign: 'center', padding: '20px', borderTop: '1px solid var(--border)',
-        color: 'var(--text-dim)', fontSize: '0.8rem',
-      }}>
+      <footer
+        style={{
+          textAlign: 'center',
+          padding: '20px',
+          borderTop: '1px solid var(--border)',
+          color: 'var(--text-dim)',
+          fontSize: '0.8rem',
+        }}
+      >
         <span>⚛️ {_('footer_text')}</span>
       </footer>
     </div>

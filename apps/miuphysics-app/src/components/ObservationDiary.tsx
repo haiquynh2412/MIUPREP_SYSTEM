@@ -6,13 +6,7 @@ const SUGGESTED_TAGS_MAP = {
   en: ['optics', 'mechanics', 'thermodynamics', 'electricity', 'acoustics', 'magnetism', 'force', 'energy'],
 };
 
-export default function ObservationDiary({
-  entries = [],
-  onAddEntry,
-  onDeleteEntry,
-  chapters = [],
-  lang = 'vi',
-}: any) {
+export default function ObservationDiary({ entries = [], onAddEntry, onDeleteEntry, chapters = [], lang = 'vi' }: any) {
   const [text, setText] = useState('');
   const [selectedChapter, setSelectedChapter] = useState('');
   const [tags, setTags] = useState<any[]>([]);
@@ -65,13 +59,8 @@ export default function ObservationDiary({
   return (
     <div className="diary-container animate-fadeIn">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 }}>
-        <h2 style={{ display: 'flex', alignItems: 'center', gap: 10, margin: 0 }}>
-          📓 {t('diary_title_text', lang)}
-        </h2>
-        <button
-          className="btn btn-primary btn-sm"
-          onClick={() => setShowForm(!showForm)}
-        >
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: 10, margin: 0 }}>📓 {t('diary_title_text', lang)}</h2>
+        <button className="btn btn-primary btn-sm" onClick={() => setShowForm(!showForm)}>
           {showForm ? t('diary_btn_close', lang) : t('diary_btn_new', lang)}
         </button>
       </div>
@@ -104,7 +93,7 @@ export default function ObservationDiary({
               <option value="">{t('diary_select_chapter', lang)}</option>
               {chapters.map((ch) => (
                 <option key={ch.id || ch} value={ch.id || ch}>
-                  {lang === 'en' ? ch.name : (ch.nameVn || ch.name || ch.id || ch)}
+                  {lang === 'en' ? ch.name : ch.nameVn || ch.name || ch.id || ch}
                 </option>
               ))}
             </select>
@@ -156,7 +145,9 @@ export default function ObservationDiary({
                   }}
                 >
                   {tag}
-                  <span onClick={() => removeTag(tag)} style={{ cursor: 'pointer', fontWeight: 700 }}>×</span>
+                  <span onClick={() => removeTag(tag)} style={{ cursor: 'pointer', fontWeight: 700 }}>
+                    ×
+                  </span>
                 </span>
               ))}
             </div>
@@ -166,7 +157,10 @@ export default function ObservationDiary({
                 value={tagInput}
                 onChange={(e) => setTagInput(e.target.value)}
                 onKeyDown={(e) => {
-                  if (e.key === 'Enter') { e.preventDefault(); handleAddTag(tagInput); }
+                  if (e.key === 'Enter') {
+                    e.preventDefault();
+                    handleAddTag(tagInput);
+                  }
                 }}
                 placeholder={t('diary_tag_placeholder', lang)}
                 style={{
@@ -185,23 +179,26 @@ export default function ObservationDiary({
             </div>
             {/* Suggested tags */}
             <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginTop: 6 }}>
-              {suggestedTags.filter((t) => !tags.includes(t)).slice(0, 5).map((tag) => (
-                <button
-                  key={tag}
-                  onClick={() => handleAddTag(tag)}
-                  style={{
-                    padding: '2px 8px',
-                    background: 'var(--bg-surface)',
-                    border: '1px solid var(--border)',
-                    borderRadius: 'var(--radius-pill)',
-                    color: 'var(--text-dim)',
-                    fontSize: '0.7rem',
-                    cursor: 'pointer',
-                  }}
-                >
-                  + {tag}
-                </button>
-              ))}
+              {suggestedTags
+                .filter((t) => !tags.includes(t))
+                .slice(0, 5)
+                .map((tag) => (
+                  <button
+                    key={tag}
+                    onClick={() => handleAddTag(tag)}
+                    style={{
+                      padding: '2px 8px',
+                      background: 'var(--bg-surface)',
+                      border: '1px solid var(--border)',
+                      borderRadius: 'var(--radius-pill)',
+                      color: 'var(--text-dim)',
+                      fontSize: '0.7rem',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    + {tag}
+                  </button>
+                ))}
             </div>
           </div>
 
@@ -223,7 +220,11 @@ export default function ObservationDiary({
             .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
             .map((entry) => {
               const chObj = chapters.find((c) => c.id === entry.chapter);
-              const chName = chObj ? (lang === 'en' ? chObj.name : chObj.nameVn) : String(entry.chapter || '').replace(/_/g, ' ');
+              const chName = chObj
+                ? lang === 'en'
+                  ? chObj.name
+                  : chObj.nameVn
+                : String(entry.chapter || '').replace(/_/g, ' ');
 
               return (
                 <div key={entry.id} className="diary-entry card">
@@ -234,10 +235,7 @@ export default function ObservationDiary({
                           📅 {formatDate(entry.date)}
                         </span>
                         {entry.chapter && (
-                          <span
-                            className="badge badge-chapter"
-                            style={{ fontSize: '0.7rem' }}
-                          >
+                          <span className="badge badge-chapter" style={{ fontSize: '0.7rem' }}>
                             {chName}
                           </span>
                         )}

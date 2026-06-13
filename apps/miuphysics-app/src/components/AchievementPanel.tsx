@@ -36,14 +36,14 @@ export default function AchievementPanel({
   const nextLevel = getNextLevel(xp, levels);
   const currentMinXp = currentLevel.xpRequired !== undefined ? currentLevel.xpRequired : currentLevel.minXp;
   const nextMinXp = nextLevel ? (nextLevel.xpRequired !== undefined ? nextLevel.xpRequired : nextLevel.minXp) : 0;
-  
+
   const xpInLevel = xp - currentMinXp;
   const xpNeeded = nextLevel ? nextMinXp - currentMinXp : 1;
   const progress = nextLevel ? Math.min((xpInLevel / xpNeeded) * 100, 100) : 100;
 
   const unlockedSet = new Set(unlockedIds);
 
-  const levelTitle = lang === 'en' ? (currentLevel.titleEn || currentLevel.title) : currentLevel.title;
+  const levelTitle = lang === 'en' ? currentLevel.titleEn || currentLevel.title : currentLevel.title;
 
   return (
     <div className="achievement-panel animate-fadeIn">
@@ -64,9 +64,7 @@ export default function AchievementPanel({
                 : t('achievement_max_level', lang)}
             </div>
           </div>
-          <div style={{ fontWeight: 700, fontSize: '1.3rem', color: 'var(--primary)' }}>
-            {xp} XP
-          </div>
+          <div style={{ fontWeight: 700, fontSize: '1.3rem', color: 'var(--primary)' }}>{xp} XP</div>
         </div>
         <div className="xp-bar">
           <div
@@ -92,9 +90,7 @@ export default function AchievementPanel({
             <div style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--text-heading)' }}>
               {t('achievement_streak_title', lang, { count: streak })}
             </div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-              {t('achievement_streak_desc', lang)}
-            </div>
+            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{t('achievement_streak_desc', lang)}</div>
           </div>
         </div>
       </div>
@@ -110,8 +106,8 @@ export default function AchievementPanel({
         >
           {achievements.map((ach) => {
             const unlocked = unlockedSet.has(ach.id);
-            const title = lang === 'en' ? (ach.titleEn || ach.title) : ach.title;
-            const description = lang === 'en' ? (ach.descriptionEn || ach.description) : ach.description;
+            const title = lang === 'en' ? ach.titleEn || ach.title : ach.title;
+            const description = lang === 'en' ? ach.descriptionEn || ach.description : ach.description;
 
             return (
               <div
@@ -120,10 +116,7 @@ export default function AchievementPanel({
                 title={description}
               >
                 {ach.svgIcon ? (
-                  <div
-                    className="achievement-badge-svg"
-                    dangerouslySetInnerHTML={{ __html: ach.svgIcon }}
-                  />
+                  <div className="achievement-badge-svg" dangerouslySetInnerHTML={{ __html: ach.svgIcon }} />
                 ) : (
                   <span
                     style={{

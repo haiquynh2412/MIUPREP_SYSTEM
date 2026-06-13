@@ -8,7 +8,7 @@ export class AIValidationError extends Error {
   details: string[];
 
   constructor(message: string, details: string[]) {
-    super(`${message}\nDetails:\n${details.map(d => `- ${d}`).join('\n')}`);
+    super(`${message}\nDetails:\n${details.map((d) => `- ${d}`).join('\n')}`);
     this.name = 'AIValidationError';
     this.code = 'AI_MALFORMED_RESPONSE';
     this.details = details;
@@ -32,7 +32,9 @@ export function validateWritingFeedback(parsed: any): void {
 
   // 2. Validate criteria
   if (!Array.isArray(parsed.criteria) || parsed.criteria.length !== 4) {
-    errors.push(`criteria must be an array of exactly 4 scoring dimensions, got ${Array.isArray(parsed.criteria) ? parsed.criteria.length : 'non-array'}.`);
+    errors.push(
+      `criteria must be an array of exactly 4 scoring dimensions, got ${Array.isArray(parsed.criteria) ? parsed.criteria.length : 'non-array'}.`,
+    );
   } else {
     parsed.criteria.forEach((crit: any, idx: number) => {
       const path = `criteria[${idx}]`;
@@ -72,7 +74,10 @@ export function validateWritingFeedback(parsed: any): void {
   if (parsed.descriptorSource !== undefined && typeof parsed.descriptorSource !== 'string') {
     errors.push('descriptorSource must be a string.');
   }
-  if (parsed.confidence !== undefined && (typeof parsed.confidence !== 'number' || parsed.confidence < 0 || parsed.confidence > 1)) {
+  if (
+    parsed.confidence !== undefined &&
+    (typeof parsed.confidence !== 'number' || parsed.confidence < 0 || parsed.confidence > 1)
+  ) {
     errors.push('confidence must be a decimal number between 0.0 and 1.0.');
   }
 
@@ -150,7 +155,9 @@ export function validateSpeakingFeedback(parsed: any): void {
 
   // 2. Validate criteria
   if (!Array.isArray(parsed.criteria) || parsed.criteria.length !== 4) {
-    errors.push(`criteria must be an array of exactly 4 scoring dimensions, got ${Array.isArray(parsed.criteria) ? parsed.criteria.length : 'non-array'}.`);
+    errors.push(
+      `criteria must be an array of exactly 4 scoring dimensions, got ${Array.isArray(parsed.criteria) ? parsed.criteria.length : 'non-array'}.`,
+    );
   } else {
     parsed.criteria.forEach((crit: any, idx: number) => {
       const path = `criteria[${idx}]`;
@@ -187,7 +194,10 @@ export function validateSpeakingFeedback(parsed: any): void {
   if (parsed.descriptorSource !== undefined && typeof parsed.descriptorSource !== 'string') {
     errors.push('descriptorSource must be a string.');
   }
-  if (parsed.confidence !== undefined && (typeof parsed.confidence !== 'number' || parsed.confidence < 0 || parsed.confidence > 1)) {
+  if (
+    parsed.confidence !== undefined &&
+    (typeof parsed.confidence !== 'number' || parsed.confidence < 0 || parsed.confidence > 1)
+  ) {
     errors.push('confidence must be a decimal number between 0.0 and 1.0.');
   }
 

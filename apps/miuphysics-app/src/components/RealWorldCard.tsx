@@ -29,9 +29,7 @@ export default function RealWorldCard({ connection, chapter = '', renderMath, la
   };
 
   const messages = INSPIRING_MESSAGES_MAP[lang] || INSPIRING_MESSAGES_MAP.vi;
-  const messageIndex = chapter
-    ? chapter.split('').reduce((sum, ch) => sum + ch.charCodeAt(0), 0) % messages.length
-    : 0;
+  const messageIndex = chapter ? chapter.split('').reduce((sum, ch) => sum + ch.charCodeAt(0), 0) % messages.length : 0;
   const inspiringMsg = messages[messageIndex];
 
   return (

@@ -116,16 +116,19 @@ export default function SystemSurfacePreview() {
   );
 }
 
-const SURFACE_COPY: Record<SurfaceMode, {
-  title: string;
-  badge: string;
-  headline: string;
-  description: string;
-  loopStatus: string;
-  nextBuild: string;
-  intent: string;
-  tasks: string[];
-}> = {
+const SURFACE_COPY: Record<
+  SurfaceMode,
+  {
+    title: string;
+    badge: string;
+    headline: string;
+    description: string;
+    loopStatus: string;
+    nextBuild: string;
+    intent: string;
+    tasks: string[];
+  }
+> = {
   dark: {
     title: 'Dark operations screen',
     badge: 'For admin, analytics, exam operations',
@@ -133,7 +136,8 @@ const SURFACE_COPY: Record<SurfaceMode, {
     description: 'Best for long work sessions, dense monitoring, and reviewing blockers without visual fatigue.',
     loopStatus: 'stable',
     nextBuild: 'wire beta evidence',
-    intent: 'Use this as the primary operations surface: restrained, high contrast, dense enough for admins and tutors.',
+    intent:
+      'Use this as the primary operations surface: restrained, high contrast, dense enough for admins and tutors.',
     tasks: ['Math 9 internal beta run', 'IELTS Reading/Listening beta run', 'Graph adjustment from real events'],
   },
   light: {
@@ -143,7 +147,8 @@ const SURFACE_COPY: Record<SurfaceMode, {
     description: 'Best for younger learners, parent check-ins, classroom projection, and printable progress reviews.',
     loopStatus: 'guided',
     nextBuild: 'student flow QA',
-    intent: 'Use this as the learner-facing alternative: MiuMath green, brighter, calmer, and easier to scan on shared screens.',
+    intent:
+      'Use this as the learner-facing alternative: MiuMath green, brighter, calmer, and easier to scan on shared screens.',
     tasks: ['Student dashboard polish', 'Parent progress review', 'Accessible light-mode QA'],
   },
 };

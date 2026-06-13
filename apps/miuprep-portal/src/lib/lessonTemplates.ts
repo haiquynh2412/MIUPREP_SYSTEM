@@ -201,15 +201,33 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
       'Learner uses formal academic wording in a casual speaking turn.',
     ],
     guidedQuestions: [
-      { prompt: 'What noun or verb does this phrase naturally attach to?', expectedMove: 'Check the phrase as a chunk, not as separate words.' },
-      { prompt: 'Is the phrase neutral, academic, informal, or idiomatic?', expectedMove: 'Name the register before using it.' },
+      {
+        prompt: 'What noun or verb does this phrase naturally attach to?',
+        expectedMove: 'Check the phrase as a chunk, not as separate words.',
+      },
+      {
+        prompt: 'Is the phrase neutral, academic, informal, or idiomatic?',
+        expectedMove: 'Name the register before using it.',
+      },
     ],
     independentSet: [
-      { prompt: 'Replace five vague phrases with natural collocations.', expectedMove: 'Keep the meaning stable while improving precision.' },
-      { prompt: 'Build three word-family rows from one root word.', expectedMove: 'Use noun, verb, adjective, and one safe collocation.' },
+      {
+        prompt: 'Replace five vague phrases with natural collocations.',
+        expectedMove: 'Keep the meaning stable while improving precision.',
+      },
+      {
+        prompt: 'Build three word-family rows from one root word.',
+        expectedMove: 'Use noun, verb, adjective, and one safe collocation.',
+      },
     ],
-    transferTask: { prompt: 'Use two upgraded collocations in a short IELTS/CAE/CPE paragraph.', expectedMove: 'The phrases sound natural and support the argument.' },
-    quickCheck: { prompt: 'Why is a correct dictionary word still sometimes wrong?', expectedMove: 'Because collocation and register can make it unnatural in context.' },
+    transferTask: {
+      prompt: 'Use two upgraded collocations in a short IELTS/CAE/CPE paragraph.',
+      expectedMove: 'The phrases sound natural and support the argument.',
+    },
+    quickCheck: {
+      prompt: 'Why is a correct dictionary word still sometimes wrong?',
+      expectedMove: 'Because collocation and register can make it unnatural in context.',
+    },
     reflectionPrompt: 'Which phrase will you reuse this week, and in which exact context?',
   },
   {
@@ -219,7 +237,12 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
     area: 'grammar',
     examLayers: ['IELTS', 'CAE', 'CPE', 'SAT'],
     conceptIds: ['eng.grammar_accuracy', 'eng.sentence_structure', 'eng.verb_tense_aspect', 'eng.cohesion_reference'],
-    skillIds: ['eng.control_clause_structure', 'eng.control_tense_aspect', 'eng.edit_sentence_errors', 'eng.track_cohesive_reference'],
+    skillIds: [
+      'eng.control_clause_structure',
+      'eng.control_tense_aspect',
+      'eng.edit_sentence_errors',
+      'eng.track_cohesive_reference',
+    ],
     prerequisiteIds: ['eng.sentence_structure'],
     remediationObjectiveIds: ['obj.english.grammar_core'],
     estimatedMinutes: 26,
@@ -238,15 +261,33 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
       'Learner changes a phrase without checking subject-verb agreement.',
     ],
     guidedQuestions: [
-      { prompt: 'What is the grammatical job of the underlined phrase?', expectedMove: 'Label the role before selecting the answer.' },
-      { prompt: 'Which word controls tense or agreement here?', expectedMove: 'Find the anchor subject, time marker, or surrounding verb pattern.' },
+      {
+        prompt: 'What is the grammatical job of the underlined phrase?',
+        expectedMove: 'Label the role before selecting the answer.',
+      },
+      {
+        prompt: 'Which word controls tense or agreement here?',
+        expectedMove: 'Find the anchor subject, time marker, or surrounding verb pattern.',
+      },
     ],
     independentSet: [
-      { prompt: 'Edit three clause-boundary errors.', expectedMove: 'Mark independent/dependent clauses before punctuation.' },
-      { prompt: 'Rewrite three tense/aspect errors.', expectedMove: 'Use time marker and verb relationship to justify the change.' },
+      {
+        prompt: 'Edit three clause-boundary errors.',
+        expectedMove: 'Mark independent/dependent clauses before punctuation.',
+      },
+      {
+        prompt: 'Rewrite three tense/aspect errors.',
+        expectedMove: 'Use time marker and verb relationship to justify the change.',
+      },
     ],
-    transferTask: { prompt: 'Apply two controlled structures in a fresh writing or speaking response.', expectedMove: 'Structures are accurate and do not reduce clarity.' },
-    quickCheck: { prompt: 'What must you identify before correcting grammar?', expectedMove: 'The role of the phrase in the sentence.' },
+    transferTask: {
+      prompt: 'Apply two controlled structures in a fresh writing or speaking response.',
+      expectedMove: 'Structures are accurate and do not reduce clarity.',
+    },
+    quickCheck: {
+      prompt: 'What must you identify before correcting grammar?',
+      expectedMove: 'The role of the phrase in the sentence.',
+    },
     reflectionPrompt: 'Which grammar role will you check first in the next practice set?',
   },
   {
@@ -255,8 +296,18 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
     focus: 'Turn textual evidence into a controlled inference without over-reading.',
     area: 'reading_inference',
     examLayers: ['IELTS', 'CAE', 'CPE', 'SAT'],
-    conceptIds: ['eng.reading_detail', 'eng.reading_inference', 'eng.reading_argument_structure', 'eng.vocabulary_range'],
-    skillIds: ['eng.identify_specific_detail', 'eng.infer_implicit_meaning', 'eng.evaluate_argument_flow', 'eng.use_collocation'],
+    conceptIds: [
+      'eng.reading_detail',
+      'eng.reading_inference',
+      'eng.reading_argument_structure',
+      'eng.vocabulary_range',
+    ],
+    skillIds: [
+      'eng.identify_specific_detail',
+      'eng.infer_implicit_meaning',
+      'eng.evaluate_argument_flow',
+      'eng.use_collocation',
+    ],
     prerequisiteIds: ['eng.reading_detail'],
     remediationObjectiveIds: ['obj.english.reading_core', 'obj.ielts.reading_listening_beta'],
     estimatedMinutes: 25,
@@ -275,15 +326,30 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
       'Learner overstates cautious language from the passage.',
     ],
     guidedQuestions: [
-      { prompt: 'Which exact line supports the answer?', expectedMove: 'Point to evidence before reading the options again.' },
+      {
+        prompt: 'Which exact line supports the answer?',
+        expectedMove: 'Point to evidence before reading the options again.',
+      },
       { prompt: 'What extra assumption would make this option unsafe?', expectedMove: 'Name the unsupported leap.' },
     ],
     independentSet: [
-      { prompt: 'Solve three inference questions with evidence notes.', expectedMove: 'Evidence line and paraphrase must both be present.' },
-      { prompt: 'Reject two distractors by naming the overreach.', expectedMove: 'Explain the stretch, opposite meaning, or unsupported detail.' },
+      {
+        prompt: 'Solve three inference questions with evidence notes.',
+        expectedMove: 'Evidence line and paraphrase must both be present.',
+      },
+      {
+        prompt: 'Reject two distractors by naming the overreach.',
+        expectedMove: 'Explain the stretch, opposite meaning, or unsupported detail.',
+      },
     ],
-    transferTask: { prompt: 'Use the same evidence-paraphrase-answer routine on a SAT or IELTS passage.', expectedMove: 'Answer is tied to evidence, not keyword matching.' },
-    quickCheck: { prompt: 'What makes an inference answer safe?', expectedMove: 'It is implied by evidence with no extra assumption.' },
+    transferTask: {
+      prompt: 'Use the same evidence-paraphrase-answer routine on a SAT or IELTS passage.',
+      expectedMove: 'Answer is tied to evidence, not keyword matching.',
+    },
+    quickCheck: {
+      prompt: 'What makes an inference answer safe?',
+      expectedMove: 'It is implied by evidence with no extra assumption.',
+    },
     reflectionPrompt: 'What kind of distractor caught you today: overreach, opposite, or keyword trap?',
   },
   {
@@ -292,8 +358,19 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
     focus: 'Capture specific detail, paraphrase, correction, and speaker attitude under time pressure.',
     area: 'listening_detail',
     examLayers: ['IELTS', 'CAE', 'CPE'],
-    conceptIds: ['eng.listening_main_idea', 'eng.listening_detail', 'eng.listening_inference', 'eng.listening_attitude', 'eng.vocabulary_range'],
-    skillIds: ['eng.identify_listening_main_idea', 'eng.identify_specific_detail', 'eng.infer_speaker_attitude', 'eng.use_collocation'],
+    conceptIds: [
+      'eng.listening_main_idea',
+      'eng.listening_detail',
+      'eng.listening_inference',
+      'eng.listening_attitude',
+      'eng.vocabulary_range',
+    ],
+    skillIds: [
+      'eng.identify_listening_main_idea',
+      'eng.identify_specific_detail',
+      'eng.infer_speaker_attitude',
+      'eng.use_collocation',
+    ],
     prerequisiteIds: ['eng.listening_detail'],
     remediationObjectiveIds: ['obj.english.listening_core', 'obj.ielts.reading_listening_beta'],
     estimatedMinutes: 22,
@@ -312,15 +389,33 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
       'Learner confuses speaker attitude with topic detail.',
     ],
     guidedQuestions: [
-      { prompt: 'What answer type are you listening for?', expectedMove: 'Predict number, noun, place, reason, or attitude.' },
-      { prompt: 'Did the speaker correct or qualify the first detail?', expectedMove: 'Wait for final detail after but/however/actually.' },
+      {
+        prompt: 'What answer type are you listening for?',
+        expectedMove: 'Predict number, noun, place, reason, or attitude.',
+      },
+      {
+        prompt: 'Did the speaker correct or qualify the first detail?',
+        expectedMove: 'Wait for final detail after but/however/actually.',
+      },
     ],
     independentSet: [
-      { prompt: 'Complete four listening details with correction markers.', expectedMove: 'Write the final detail, not the first distractor.' },
-      { prompt: 'Match three paraphrases from audio to answer options.', expectedMove: 'Connect meaning, not exact words.' },
+      {
+        prompt: 'Complete four listening details with correction markers.',
+        expectedMove: 'Write the final detail, not the first distractor.',
+      },
+      {
+        prompt: 'Match three paraphrases from audio to answer options.',
+        expectedMove: 'Connect meaning, not exact words.',
+      },
     ],
-    transferTask: { prompt: 'Apply the detail map to one IELTS Listening section.', expectedMove: 'Answer type, paraphrase, and final detail are recorded.' },
-    quickCheck: { prompt: 'Why is the first heard answer often dangerous?', expectedMove: 'It may be a distractor before correction or qualification.' },
+    transferTask: {
+      prompt: 'Apply the detail map to one IELTS Listening section.',
+      expectedMove: 'Answer type, paraphrase, and final detail are recorded.',
+    },
+    quickCheck: {
+      prompt: 'Why is the first heard answer often dangerous?',
+      expectedMove: 'It may be a distractor before correction or qualification.',
+    },
     reflectionPrompt: 'Which marker will you listen for next time before writing the answer?',
   },
   {
@@ -329,8 +424,22 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
     focus: 'Plan, develop, and revise a paragraph with task response, coherence, vocabulary, and grammar control.',
     area: 'writing',
     examLayers: ['IELTS', 'CAE', 'CPE', 'SAT'],
-    conceptIds: ['eng.academic_writing', 'eng.writing_task_response', 'eng.paragraph_development', 'eng.essay_coherence', 'eng.grammar_accuracy', 'eng.vocabulary_range'],
-    skillIds: ['eng.plan_essay_response', 'eng.develop_body_paragraph', 'eng.revise_for_coherence', 'eng.develop_academic_argument', 'eng.control_clause_structure', 'eng.use_collocation'],
+    conceptIds: [
+      'eng.academic_writing',
+      'eng.writing_task_response',
+      'eng.paragraph_development',
+      'eng.essay_coherence',
+      'eng.grammar_accuracy',
+      'eng.vocabulary_range',
+    ],
+    skillIds: [
+      'eng.plan_essay_response',
+      'eng.develop_body_paragraph',
+      'eng.revise_for_coherence',
+      'eng.develop_academic_argument',
+      'eng.control_clause_structure',
+      'eng.use_collocation',
+    ],
     prerequisiteIds: ['eng.grammar_accuracy', 'eng.vocabulary_range'],
     remediationObjectiveIds: ['obj.english.writing_core', 'obj.english.grammar_core', 'obj.english.vocabulary_core'],
     estimatedMinutes: 30,
@@ -349,25 +458,58 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
       'Learner uses linking words without real argument progression.',
     ],
     guidedQuestions: [
-      { prompt: 'What is the job of this sentence in the paragraph?', expectedMove: 'Label claim, support, explanation, contrast, or conclusion.' },
-      { prompt: 'Which sentence should be developed instead of adding a new idea?', expectedMove: 'Pick the strongest claim and expand it.' },
+      {
+        prompt: 'What is the job of this sentence in the paragraph?',
+        expectedMove: 'Label claim, support, explanation, contrast, or conclusion.',
+      },
+      {
+        prompt: 'Which sentence should be developed instead of adding a new idea?',
+        expectedMove: 'Pick the strongest claim and expand it.',
+      },
     ],
     independentSet: [
-      { prompt: 'Write one body paragraph from a clear claim.', expectedMove: 'Claim, evidence, explanation, and final link are visible.' },
-      { prompt: 'Revise the paragraph for two language upgrades only.', expectedMove: 'Upgrade collocation and grammar without changing meaning.' },
+      {
+        prompt: 'Write one body paragraph from a clear claim.',
+        expectedMove: 'Claim, evidence, explanation, and final link are visible.',
+      },
+      {
+        prompt: 'Revise the paragraph for two language upgrades only.',
+        expectedMove: 'Upgrade collocation and grammar without changing meaning.',
+      },
     ],
-    transferTask: { prompt: 'Submit the revised paragraph to AI Tutor feedback-to-practice.', expectedMove: 'Feedback creates one specific next drill.' },
-    quickCheck: { prompt: 'What makes a paragraph deep instead of long?', expectedMove: 'One idea is explained with evidence and consequence.' },
+    transferTask: {
+      prompt: 'Submit the revised paragraph to AI Tutor feedback-to-practice.',
+      expectedMove: 'Feedback creates one specific next drill.',
+    },
+    quickCheck: {
+      prompt: 'What makes a paragraph deep instead of long?',
+      expectedMove: 'One idea is explained with evidence and consequence.',
+    },
     reflectionPrompt: 'Which sentence carried the paragraph, and which sentence was unnecessary?',
   },
   {
     id: 'eng.core.speaking.response_loop',
     title: 'Speaking Response Loop',
-    focus: 'Organize, sustain, and repair spoken answers with fluency, pronunciation, interaction, and language control.',
+    focus:
+      'Organize, sustain, and repair spoken answers with fluency, pronunciation, interaction, and language control.',
     area: 'speaking',
     examLayers: ['IELTS', 'CAE', 'CPE'],
-    conceptIds: ['eng.speaking_fluency', 'eng.pronunciation_control', 'eng.interactive_communication', 'eng.spoken_discourse_management', 'eng.vocabulary_range', 'eng.grammar_accuracy'],
-    skillIds: ['eng.organize_spoken_response', 'eng.sustain_fluent_turn', 'eng.manage_interactive_communication', 'eng.use_pronunciation_features', 'eng.use_collocation', 'eng.control_clause_structure'],
+    conceptIds: [
+      'eng.speaking_fluency',
+      'eng.pronunciation_control',
+      'eng.interactive_communication',
+      'eng.spoken_discourse_management',
+      'eng.vocabulary_range',
+      'eng.grammar_accuracy',
+    ],
+    skillIds: [
+      'eng.organize_spoken_response',
+      'eng.sustain_fluent_turn',
+      'eng.manage_interactive_communication',
+      'eng.use_pronunciation_features',
+      'eng.use_collocation',
+      'eng.control_clause_structure',
+    ],
     prerequisiteIds: ['eng.vocabulary_range', 'eng.grammar_accuracy'],
     remediationObjectiveIds: ['obj.english.speaking_core', 'obj.english.vocabulary_core', 'obj.english.grammar_core'],
     estimatedMinutes: 28,
@@ -386,15 +528,33 @@ export const ENGLISH_CORE_LESSON_TEMPLATES: EnglishCoreLessonTemplate[] = [
       'Learner freezes after correction instead of using a repair phrase.',
     ],
     guidedQuestions: [
-      { prompt: 'What is your first sentence frame?', expectedMove: 'Start with a direct answer before adding detail.' },
-      { prompt: 'What phrase will you use if you need to self-correct?', expectedMove: 'Use a repair phrase instead of stopping completely.' },
+      {
+        prompt: 'What is your first sentence frame?',
+        expectedMove: 'Start with a direct answer before adding detail.',
+      },
+      {
+        prompt: 'What phrase will you use if you need to self-correct?',
+        expectedMove: 'Use a repair phrase instead of stopping completely.',
+      },
     ],
     independentSet: [
-      { prompt: 'Record a 45-second response with one expansion route.', expectedMove: 'Opening, detail, example, and short closing are audible.' },
-      { prompt: 'Repeat the answer with one pronunciation target.', expectedMove: 'Improve stress, linking, or final sounds without over-speeding.' },
+      {
+        prompt: 'Record a 45-second response with one expansion route.',
+        expectedMove: 'Opening, detail, example, and short closing are audible.',
+      },
+      {
+        prompt: 'Repeat the answer with one pronunciation target.',
+        expectedMove: 'Improve stress, linking, or final sounds without over-speeding.',
+      },
     ],
-    transferTask: { prompt: 'Submit the answer to AI speaking feedback-to-practice.', expectedMove: 'Feedback produces one fluency or pronunciation drill.' },
-    quickCheck: { prompt: 'What should you do when you make a speaking error?', expectedMove: 'Repair and continue; do not restart the whole answer.' },
+    transferTask: {
+      prompt: 'Submit the answer to AI speaking feedback-to-practice.',
+      expectedMove: 'Feedback produces one fluency or pronunciation drill.',
+    },
+    quickCheck: {
+      prompt: 'What should you do when you make a speaking error?',
+      expectedMove: 'Repair and continue; do not restart the whole answer.',
+    },
     reflectionPrompt: 'Which phrase helped you keep speaking when the answer became difficult?',
   },
 ];
@@ -425,17 +585,35 @@ export const MATH9_REPAIR_LESSON_TEMPLATES: MathLessonTemplate[] = [
       'Xoa can hoac binh phuong hai ve khi chua dat dieu kien.',
     ],
     guidedQuestions: [
-      { prompt: 'Truoc khi rut gon phan thuc chua can, can ghi dieu kien nao?', expectedMove: 'Dat dieu kien mau khac 0 va bieu thuc trong can khong am.' },
-      { prompt: 'Neu mau la (sqrt(x)-2)(sqrt(x)-3), buoc rut gon nao phai kiem tra lai?', expectedMove: 'Kiem tra nhan tu bi triet tieu khong lam mat dieu kien.' },
+      {
+        prompt: 'Truoc khi rut gon phan thuc chua can, can ghi dieu kien nao?',
+        expectedMove: 'Dat dieu kien mau khac 0 va bieu thuc trong can khong am.',
+      },
+      {
+        prompt: 'Neu mau la (sqrt(x)-2)(sqrt(x)-3), buoc rut gon nao phai kiem tra lai?',
+        expectedMove: 'Kiem tra nhan tu bi triet tieu khong lam mat dieu kien.',
+      },
     ],
     independentSet: [
-      { prompt: 'Rut gon mot phan thuc co mau gom hai nhan tu bac nhat theo sqrt(x).', expectedMove: 'Quy dong, phan tich, rut gon kem dieu kien.' },
-      { prompt: 'So sanh hai cach bien doi va tim buoc sai.', expectedMove: 'Chi ra phep chia cho bieu thuc co the bang 0.' },
+      {
+        prompt: 'Rut gon mot phan thuc co mau gom hai nhan tu bac nhat theo sqrt(x).',
+        expectedMove: 'Quy dong, phan tich, rut gon kem dieu kien.',
+      },
+      {
+        prompt: 'So sanh hai cach bien doi va tim buoc sai.',
+        expectedMove: 'Chi ra phep chia cho bieu thuc co the bang 0.',
+      },
     ],
     mixedReview: [
-      { prompt: 'Giai nhanh mot cau rut gon va mot cau tim x sau rut gon.', expectedMove: 'Dung ket qua rut gon de giai, quay lai doi chieu dieu kien.' },
+      {
+        prompt: 'Giai nhanh mot cau rut gon va mot cau tim x sau rut gon.',
+        expectedMove: 'Dung ket qua rut gon de giai, quay lai doi chieu dieu kien.',
+      },
     ],
-    quickCheck: { prompt: 'Mot bieu thuc bi rut gon mat nghiem khi nao?', expectedMove: 'Khi chia/triet tieu nhan tu co the bang 0 ma khong giu dieu kien loai.' },
+    quickCheck: {
+      prompt: 'Mot bieu thuc bi rut gon mat nghiem khi nao?',
+      expectedMove: 'Khi chia/triet tieu nhan tu co the bang 0 ma khong giu dieu kien loai.',
+    },
     reflectionPrompt: 'Lan sau gap bieu thuc dai, em se viet dong kiem tra nao dau tien?',
   },
   {
@@ -451,7 +629,8 @@ export const MATH9_REPAIR_LESSON_TEMPLATES: MathLessonTemplate[] = [
     masteryTarget: 82,
     stages: createStandardStages({
       summary: 'Chon dung cong cu: nhan tu chung, hang dang thuc, nhom hang tu, tam thuc bac hai.',
-      worked: 'Phan tich da thuc theo cay quyet dinh: co nhan tu chung khong, co dang hang dang thuc khong, co the nhom khong.',
+      worked:
+        'Phan tich da thuc theo cay quyet dinh: co nhan tu chung khong, co dang hang dang thuc khong, co the nhom khong.',
       guided: 'Hoc sinh chon phuong phap truoc khi tinh, tranh thu lam bang tay qua som.',
       independent: 'Lam 6 cau phan tich nhan tu tang dan, moi cau phai ghi ten phuong phap.',
       mixed: 'Tron cau factorization voi cau giai phuong trinh de thay ung dung that.',
@@ -463,17 +642,32 @@ export const MATH9_REPAIR_LESSON_TEMPLATES: MathLessonTemplate[] = [
       'Phan tich xong khong nhan nguoc de kiem tra.',
     ],
     guidedQuestions: [
-      { prompt: 'Khi nao nen dat nhan tu chung truoc?', expectedMove: 'Khi moi hang tu co thua so chung ve so, bien, hoac bieu thuc.' },
-      { prompt: 'Sau khi phan tich, cach check nhanh nhat la gi?', expectedMove: 'Nhan nguoc hai nhan tu de khop da thuc ban dau.' },
+      {
+        prompt: 'Khi nao nen dat nhan tu chung truoc?',
+        expectedMove: 'Khi moi hang tu co thua so chung ve so, bien, hoac bieu thuc.',
+      },
+      {
+        prompt: 'Sau khi phan tich, cach check nhanh nhat la gi?',
+        expectedMove: 'Nhan nguoc hai nhan tu de khop da thuc ban dau.',
+      },
     ],
     independentSet: [
-      { prompt: 'Phan tich da thuc co nhan tu chung am.', expectedMove: 'Dat nhan tu chung am de con lai co he so dau duong.' },
+      {
+        prompt: 'Phan tich da thuc co nhan tu chung am.',
+        expectedMove: 'Dat nhan tu chung am de con lai co he so dau duong.',
+      },
       { prompt: 'Phan tich tam thuc bac hai co nghiem nguyen.', expectedMove: 'Tim hai so co tong va tich phu hop.' },
     ],
     mixedReview: [
-      { prompt: 'Dung factorization de giai mot phuong trinh tich bang 0.', expectedMove: 'Tach thanh cac nhan tu va giai tung nhan tu bang 0.' },
+      {
+        prompt: 'Dung factorization de giai mot phuong trinh tich bang 0.',
+        expectedMove: 'Tach thanh cac nhan tu va giai tung nhan tu bang 0.',
+      },
     ],
-    quickCheck: { prompt: 'Tai sao can nhan nguoc sau khi phan tich nhan tu?', expectedMove: 'De phat hien sai dau, thieu hang tu, hoac dat nhan tu chung sai.' },
+    quickCheck: {
+      prompt: 'Tai sao can nhan nguoc sau khi phan tich nhan tu?',
+      expectedMove: 'De phat hien sai dau, thieu hang tu, hoac dat nhan tu chung sai.',
+    },
     reflectionPrompt: 'Dang factorization nao em hay nham nhat, va dau hieu nao se giup em dung lai?',
   },
   {
@@ -501,17 +695,29 @@ export const MATH9_REPAIR_LESSON_TEMPLATES: MathLessonTemplate[] = [
       'Quen dieu kien a khac 0 trong phuong trinh bac hai co tham so.',
     ],
     guidedQuestions: [
-      { prompt: 'Truoc khi ap dung Vieta voi tham so m, can kiem tra gi?', expectedMove: 'Kiem tra a khac 0 va dieu kien co nghiem neu bai yeu cau nghiem thuc.' },
+      {
+        prompt: 'Truoc khi ap dung Vieta voi tham so m, can kiem tra gi?',
+        expectedMove: 'Kiem tra a khac 0 va dieu kien co nghiem neu bai yeu cau nghiem thuc.',
+      },
       { prompt: 'Neu delta = 0 thi ket luan nao dung?', expectedMove: 'Phuong trinh co nghiem kep x = -b/(2a).' },
     ],
     independentSet: [
-      { prompt: 'Giai phuong trinh bac hai co the phan tich thanh tich.', expectedMove: 'Phan tich nhan tu roi cho tung nhan tu bang 0.' },
+      {
+        prompt: 'Giai phuong trinh bac hai co the phan tich thanh tich.',
+        expectedMove: 'Phan tich nhan tu roi cho tung nhan tu bang 0.',
+      },
       { prompt: 'Tim m de phuong trinh co hai nghiem phan biet.', expectedMove: 'Dat a khac 0 va delta > 0.' },
     ],
     mixedReview: [
-      { prompt: 'Lien he nghiem phuong trinh voi giao diem parabol va duong thang.', expectedMove: 'Dua ve phuong trinh hoanh do giao diem va xet so nghiem.' },
+      {
+        prompt: 'Lien he nghiem phuong trinh voi giao diem parabol va duong thang.',
+        expectedMove: 'Dua ve phuong trinh hoanh do giao diem va xet so nghiem.',
+      },
     ],
-    quickCheck: { prompt: 'Mot cau Vieta co tham so can hai dieu kien nao truoc khi bien doi?', expectedMove: 'a khac 0 va dieu kien ton tai nghiem phu hop voi yeu cau.' },
+    quickCheck: {
+      prompt: 'Mot cau Vieta co tham so can hai dieu kien nao truoc khi bien doi?',
+      expectedMove: 'a khac 0 va dieu kien ton tai nghiem phu hop voi yeu cau.',
+    },
     reflectionPrompt: 'Khi thay phuong trinh bac hai, em se dung cau hoi nao de chon phuong phap giai?',
   },
   {
@@ -539,17 +745,35 @@ export const MATH9_REPAIR_LESSON_TEMPLATES: MathLessonTemplate[] = [
       'Bo qua quan he trung diem, vuong goc, song song da cho trong de.',
     ],
     guidedQuestions: [
-      { prompt: 'Dong dau tien cua bai chung minh nen viet gi?', expectedMove: 'Tach given va need prove thanh hai dong rieng.' },
-      { prompt: 'Khi nao nghi den tu giac noi tiep?', expectedMove: 'Khi co hai goc cung chan mot cung, tong hai goc doi 180 do, hoac cung nhin mot doan.' },
+      {
+        prompt: 'Dong dau tien cua bai chung minh nen viet gi?',
+        expectedMove: 'Tach given va need prove thanh hai dong rieng.',
+      },
+      {
+        prompt: 'Khi nao nghi den tu giac noi tiep?',
+        expectedMove: 'Khi co hai goc cung chan mot cung, tong hai goc doi 180 do, hoac cung nhin mot doan.',
+      },
     ],
     independentSet: [
-      { prompt: 'Chung minh hai goc bang nhau trong cau hinh duong tron.', expectedMove: 'Tim cung hoac day chung de dung goc noi tiep.' },
-      { prompt: 'Chung minh bon diem cung thuoc mot duong tron.', expectedMove: 'Chung minh tong hai goc doi 180 do hoac hai goc cung nhin mot doan.' },
+      {
+        prompt: 'Chung minh hai goc bang nhau trong cau hinh duong tron.',
+        expectedMove: 'Tim cung hoac day chung de dung goc noi tiep.',
+      },
+      {
+        prompt: 'Chung minh bon diem cung thuoc mot duong tron.',
+        expectedMove: 'Chung minh tong hai goc doi 180 do hoac hai goc cung nhin mot doan.',
+      },
     ],
     mixedReview: [
-      { prompt: 'Them mot tam giac vuong va tinh ti so luong giac sau khi chung minh goc.', expectedMove: 'Dung ket qua goc de xac dinh tam giac vuong/phu hop ti so.' },
+      {
+        prompt: 'Them mot tam giac vuong va tinh ti so luong giac sau khi chung minh goc.',
+        expectedMove: 'Dung ket qua goc de xac dinh tam giac vuong/phu hop ti so.',
+      },
     ],
-    quickCheck: { prompt: 'Neu chua biet dung dinh ly nao, em nen viet 4 dong nao?', expectedMove: 'Given, need prove, known theorem candidates, proof plan.' },
+    quickCheck: {
+      prompt: 'Neu chua biet dung dinh ly nao, em nen viet 4 dong nao?',
+      expectedMove: 'Given, need prove, known theorem candidates, proof plan.',
+    },
     reflectionPrompt: 'Dinh ly nao hom nay em dung duoc, va dau hieu nao goi nho dinh ly do?',
   },
 ];
@@ -857,7 +1081,12 @@ export const MATH9_PREREQUISITE_BACKFILL_UNITS: Math9BackfillUnit[] = [
     title: 'Mixed exam synthesis',
     cluster: 'Mixed exam readiness',
     conceptIds: ['math.quadratic_equation', 'math.functions_graphs', 'math.geometry_proof', 'math.statistics'],
-    skillIds: ['math.solve_quadratic_by_factor', 'math.analyze_function_graph', 'math.geometry_reasoning', 'math.interpret_statistics'],
+    skillIds: [
+      'math.solve_quadratic_by_factor',
+      'math.analyze_function_graph',
+      'math.geometry_reasoning',
+      'math.interpret_statistics',
+    ],
     prerequisiteIds: ['math.factorization', 'math.linear_equation', 'math.plane_geometry', 'math.fraction_decimal'],
     diagnosticTrigger: 'Can solve isolated units but fails when topic order is mixed.',
     repairMove: 'Start with classify-topic step, then solve only after choosing the route.',
@@ -875,11 +1104,15 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
     skillIds: ['math.analyze_function_graph', 'math.analyze_advanced_function', 'math.solve_quadratic_by_factor'],
     prerequisiteIds: ['math.factorization', 'math.linear_equation', 'math.functions_graphs'],
     objectiveIds: ['obj.math.grade10.function_vector_foundation'],
-    entryGate: 'Student handles Math 9 linear/quadratic graph meaning and does not confuse equation roots with graph features.',
-    importGuard: 'Each item must tag function family, transformation type, graph/equation skill, answer validation, and distractor trap.',
+    entryGate:
+      'Student handles Math 9 linear/quadratic graph meaning and does not confuse equation roots with graph features.',
+    importGuard:
+      'Each item must tag function family, transformation type, graph/equation skill, answer validation, and distractor trap.',
     lessonMove: 'Use table -> graph -> parameter meaning -> algebra check before shortcuts.',
-    diagnosticProbe: 'Given y = ax^2 + bx + c, explain how parameter changes affect vertex, intercepts, and root count.',
-    readinessSignal: '>=80% on quadratic/function graph prerequisites or no repeated Math 9 function-parameter misconception.',
+    diagnosticProbe:
+      'Given y = ax^2 + bx + c, explain how parameter changes affect vertex, intercepts, and root count.',
+    readinessSignal:
+      '>=80% on quadratic/function graph prerequisites or no repeated Math 9 function-parameter misconception.',
     status: 'ready_for_seed',
   },
   {
@@ -891,7 +1124,8 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
     skillIds: ['math.solve_vector_coordinate_problem', 'math.use_trig_ratios', 'math.geometry_reasoning'],
     prerequisiteIds: ['math.trigonometry', 'math.plane_geometry', 'math.basic_geometry'],
     objectiveIds: ['obj.math.grade10.function_vector_foundation'],
-    entryGate: 'Student can label angles/lengths and use coordinate distance or trig ratios without swapping quantities.',
+    entryGate:
+      'Student can label angles/lengths and use coordinate distance or trig ratios without swapping quantities.',
     importGuard: 'Require diagram metadata, coordinate target, vector operation, and exact final-answer format.',
     lessonMove: 'Translate diagram into coordinates/vectors, solve, then verify with geometric meaning.',
     diagnosticProbe: 'Find a vector relation or coordinate length and state what each component represents.',
@@ -910,7 +1144,8 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
     entryGate: 'Student explains numerator, denominator, and sample space before applying formulas.',
     importGuard: 'Every item must state whether order/repetition matters and include sample-space validation.',
     lessonMove: 'Classify case type first, list a small sample space, then generalize to formula.',
-    diagnosticProbe: 'Decide whether a counting situation is permutation, combination, product rule, or simple probability.',
+    diagnosticProbe:
+      'Decide whether a counting situation is permutation, combination, product rule, or simple probability.',
     readinessSignal: 'No repeated total-sample-space errors in Math 9 probability backfill.',
     status: 'planned',
   },
@@ -940,7 +1175,8 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
     prerequisiteIds: ['math.advanced_function', 'math.functions_graphs', 'math.algebraic_expression'],
     objectiveIds: ['obj.math.grade11.algebra_calculus_foundation'],
     entryGate: 'Student writes domain/validity conditions before transforming expressions.',
-    importGuard: 'Each item must include domain constraints, transformation law, and extraneous-root check when needed.',
+    importGuard:
+      'Each item must include domain constraints, transformation law, and extraneous-root check when needed.',
     lessonMove: 'Condition line first, then convert forms, solve, and substitute back.',
     diagnosticProbe: 'Solve a logarithmic equation and reject invalid candidates with explicit domain reason.',
     readinessSignal: 'No repeated missing-domain-condition misconception in recent algebra/function attempts.',
@@ -958,7 +1194,8 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
     entryGate: 'Student interprets function behavior before using derivative rules.',
     importGuard: 'Tag derivative rule, function family, monotonicity/extremum target, and graph interpretation.',
     lessonMove: 'Meaning of derivative -> rule application -> sign table -> graph conclusion.',
-    diagnosticProbe: 'Differentiate a basic function and use sign information to identify increasing/decreasing intervals.',
+    diagnosticProbe:
+      'Differentiate a basic function and use sign information to identify increasing/decreasing intervals.',
     readinessSignal: 'Exponential/logarithm and advanced-function clusters have enough correct reasoning evidence.',
     status: 'planned',
   },
@@ -968,13 +1205,18 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
     gradeBand: 'Grade 12',
     cluster: 'Advanced geometry',
     conceptIds: ['math.solid_geometry_advanced', 'math.spatial_geometry', 'math.vector_coordinate_geometry'],
-    skillIds: ['math.reason_advanced_solid_geometry', 'math.solve_vector_coordinate_problem', 'math.compute_solid_measure'],
+    skillIds: [
+      'math.reason_advanced_solid_geometry',
+      'math.solve_vector_coordinate_problem',
+      'math.compute_solid_measure',
+    ],
     prerequisiteIds: ['math.spatial_geometry', 'math.vector_coordinate_geometry', 'math.geometry_proof'],
     objectiveIds: ['obj.math.grade12.geometry_probability_foundation'],
     entryGate: 'Student can convert a diagram into known dimensions, coordinate facts, and target relation.',
     importGuard: 'Require diagram dependency, spatial relation, coordinate/vector bridge, and unit/answer check.',
     lessonMove: 'Draw auxiliary structure, choose coordinate/vector model, solve, then verify geometry meaning.',
-    diagnosticProbe: 'Identify a distance/angle relation in space and choose the correct coordinate or geometric route.',
+    diagnosticProbe:
+      'Identify a distance/angle relation in space and choose the correct coordinate or geometric route.',
     readinessSignal: 'Grade 10 vector cluster and Math 9 solid-geometry formula checks are stable.',
     status: 'planned',
   },
@@ -999,8 +1241,20 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
     title: 'Grade 12 mixed exam synthesis',
     gradeBand: 'Grade 12',
     cluster: 'Upper-secondary exam synthesis',
-    conceptIds: ['math.advanced_function', 'math.exponential_logarithm', 'math.calculus_foundation', 'math.solid_geometry_advanced', 'math.combinatorics_probability'],
-    skillIds: ['math.analyze_advanced_function', 'math.solve_exponential_logarithm', 'math.differentiate_basic_function', 'math.reason_advanced_solid_geometry', 'math.count_combinatoric_cases'],
+    conceptIds: [
+      'math.advanced_function',
+      'math.exponential_logarithm',
+      'math.calculus_foundation',
+      'math.solid_geometry_advanced',
+      'math.combinatorics_probability',
+    ],
+    skillIds: [
+      'math.analyze_advanced_function',
+      'math.solve_exponential_logarithm',
+      'math.differentiate_basic_function',
+      'math.reason_advanced_solid_geometry',
+      'math.count_combinatoric_cases',
+    ],
     prerequisiteIds: ['math.quadratic_equation', 'math.functions_graphs', 'math.trigonometry', 'math.probability'],
     objectiveIds: [
       'obj.math.grade10.function_vector_foundation',
@@ -1008,7 +1262,8 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
       'obj.math.grade12.geometry_probability_foundation',
     ],
     entryGate: 'Student can classify topic and first move within 30 seconds on mixed Grade 10-12 prompts.',
-    importGuard: 'Mixed sets must preserve concept/skill balance and avoid counting review-only items as new mastery evidence.',
+    importGuard:
+      'Mixed sets must preserve concept/skill balance and avoid counting review-only items as new mastery evidence.',
     lessonMove: 'Classify topic -> choose route -> solve -> post-check answer constraints.',
     diagnosticProbe: 'Do a 6-item mixed set and explain the first move for each item before solving.',
     readinessSignal: 'At least one Grade 10, one Grade 11, and one Grade 12 cluster are import-ready.',
@@ -1016,15 +1271,17 @@ export const MATH1012_EXPANSION_CLUSTERS: Math1012ExpansionCluster[] = [
   },
 ];
 
-export function buildMathRemediationPlan(input: {
-  weakConceptIds?: string[];
-  weakSkillIds?: string[];
-  weakLabel?: string;
-  errorText?: string;
-  retryAttempts?: number;
-  templateLimit?: number;
-  backfillLimit?: number;
-} = {}): MathRemediationPlan {
+export function buildMathRemediationPlan(
+  input: {
+    weakConceptIds?: string[];
+    weakSkillIds?: string[];
+    weakLabel?: string;
+    errorText?: string;
+    retryAttempts?: number;
+    templateLimit?: number;
+    backfillLimit?: number;
+  } = {},
+): MathRemediationPlan {
   const templates = recommendMath9LessonTemplates({
     weakConceptIds: input.weakConceptIds,
     weakSkillIds: input.weakSkillIds,
@@ -1061,13 +1318,15 @@ export function buildMathRemediationPlan(input: {
   };
 }
 
-export function buildEnglishCoreRemediationPlan(input: {
-  weakConceptIds?: string[];
-  weakSkillIds?: string[];
-  weakLabel?: string;
-  errorText?: string;
-  limit?: number;
-} = {}): EnglishCoreRemediationPlan {
+export function buildEnglishCoreRemediationPlan(
+  input: {
+    weakConceptIds?: string[];
+    weakSkillIds?: string[];
+    weakLabel?: string;
+    errorText?: string;
+    limit?: number;
+  } = {},
+): EnglishCoreRemediationPlan {
   const templates = recommendEnglishCoreLessonTemplates(input);
   const errorLens = classifyEnglishErrorLens(input);
   const selected = templates[0]?.template;
@@ -1082,16 +1341,20 @@ export function buildEnglishCoreRemediationPlan(input: {
   };
 }
 
-export function recommendEnglishCoreLessonTemplates(input: {
-  weakConceptIds?: string[];
-  weakSkillIds?: string[];
-  weakLabel?: string;
-  errorText?: string;
-  limit?: number;
-} = {}): EnglishCoreRecommendation[] {
+export function recommendEnglishCoreLessonTemplates(
+  input: {
+    weakConceptIds?: string[];
+    weakSkillIds?: string[];
+    weakLabel?: string;
+    errorText?: string;
+    limit?: number;
+  } = {},
+): EnglishCoreRecommendation[] {
   const weakConceptIds = new Set(input.weakConceptIds || []);
   const weakSkillIds = new Set(input.weakSkillIds || []);
-  const text = normalizeText([input.weakLabel, input.errorText, ...(input.weakConceptIds || []), ...(input.weakSkillIds || [])].join(' '));
+  const text = normalizeText(
+    [input.weakLabel, input.errorText, ...(input.weakConceptIds || []), ...(input.weakSkillIds || [])].join(' '),
+  );
   const lens = classifyEnglishErrorLens(input);
   const limit = Math.max(1, input.limit || 4);
 
@@ -1099,37 +1362,54 @@ export function recommendEnglishCoreLessonTemplates(input: {
     const conceptMatch = countMatches(template.conceptIds, weakConceptIds);
     const skillMatch = countMatches(template.skillIds, weakSkillIds);
     const prerequisiteMatch = countMatches(template.prerequisiteIds, weakConceptIds);
-    const textCorpus = normalizeText([
-      template.id,
-      template.title,
-      template.focus,
-      template.area,
-      ...template.examLayers,
-      ...template.conceptIds,
-      ...template.skillIds,
-      ...template.commonTraps,
-    ].join(' '));
+    const textCorpus = normalizeText(
+      [
+        template.id,
+        template.title,
+        template.focus,
+        template.area,
+        ...template.examLayers,
+        ...template.conceptIds,
+        ...template.skillIds,
+        ...template.commonTraps,
+      ].join(' '),
+    );
     const textMatch = countKeywordMatches(text, textCorpus);
-    const lensMatch = template.area === lens.area || (lens.area === 'vocabulary' && template.area === 'collocation') ? 2 : 0;
+    const lensMatch =
+      template.area === lens.area || (lens.area === 'vocabulary' && template.area === 'collocation') ? 2 : 0;
     const matchScore = conceptMatch * 5 + skillMatch * 7 + prerequisiteMatch * 3 + textMatch + lensMatch * 4;
 
     return {
       template,
       matchScore,
-      matchReason: buildEnglishMatchReason({ skillMatch, conceptMatch, prerequisiteMatch, textMatch, lensMatch, lensLabel: lens.label }),
+      matchReason: buildEnglishMatchReason({
+        skillMatch,
+        conceptMatch,
+        prerequisiteMatch,
+        textMatch,
+        lensMatch,
+        lensLabel: lens.label,
+      }),
     };
   })
-    .sort((left, right) => right.matchScore - left.matchScore || left.template.estimatedMinutes - right.template.estimatedMinutes || left.template.id.localeCompare(right.template.id))
+    .sort(
+      (left, right) =>
+        right.matchScore - left.matchScore ||
+        left.template.estimatedMinutes - right.template.estimatedMinutes ||
+        left.template.id.localeCompare(right.template.id),
+    )
     .slice(0, limit);
 }
 
-export function recommendMath9BackfillUnits(input: {
-  weakConceptIds?: string[];
-  weakSkillIds?: string[];
-  weakLabel?: string;
-  errorText?: string;
-  limit?: number;
-} = {}): MathBackfillRecommendation[] {
+export function recommendMath9BackfillUnits(
+  input: {
+    weakConceptIds?: string[];
+    weakSkillIds?: string[];
+    weakLabel?: string;
+    errorText?: string;
+    limit?: number;
+  } = {},
+): MathBackfillRecommendation[] {
   const weakConceptIds = new Set(input.weakConceptIds || []);
   const weakSkillIds = new Set(input.weakSkillIds || []);
   const text = normalizeText(`${input.weakLabel || ''} ${input.errorText || ''}`);
@@ -1139,7 +1419,9 @@ export function recommendMath9BackfillUnits(input: {
     const conceptMatch = countMatches(unit.conceptIds, weakConceptIds);
     const skillMatch = countMatches(unit.skillIds, weakSkillIds);
     const prerequisiteMatch = countMatches(unit.prerequisiteIds, weakConceptIds);
-    const textCorpus = normalizeText([unit.id, unit.title, unit.cluster, unit.diagnosticTrigger, ...unit.conceptIds, ...unit.skillIds].join(' '));
+    const textCorpus = normalizeText(
+      [unit.id, unit.title, unit.cluster, unit.diagnosticTrigger, ...unit.conceptIds, ...unit.skillIds].join(' '),
+    );
     const textMatch = text && textCorpus.includes(text) ? 2 : countKeywordMatches(text, textCorpus);
     const matchScore = conceptMatch * 6 + skillMatch * 7 + prerequisiteMatch * 4 + textMatch;
 
@@ -1153,34 +1435,40 @@ export function recommendMath9BackfillUnits(input: {
     .slice(0, limit);
 }
 
-export function recommendMath1012ExpansionClusters(input: {
-  weakConceptIds?: string[];
-  weakSkillIds?: string[];
-  weakLabel?: string;
-  errorText?: string;
-  limit?: number;
-} = {}): Math1012ClusterRecommendation[] {
+export function recommendMath1012ExpansionClusters(
+  input: {
+    weakConceptIds?: string[];
+    weakSkillIds?: string[];
+    weakLabel?: string;
+    errorText?: string;
+    limit?: number;
+  } = {},
+): Math1012ClusterRecommendation[] {
   const weakConceptIds = new Set(input.weakConceptIds || []);
   const weakSkillIds = new Set(input.weakSkillIds || []);
-  const text = normalizeText([input.weakLabel, input.errorText, ...(input.weakConceptIds || []), ...(input.weakSkillIds || [])].join(' '));
+  const text = normalizeText(
+    [input.weakLabel, input.errorText, ...(input.weakConceptIds || []), ...(input.weakSkillIds || [])].join(' '),
+  );
   const limit = Math.max(1, input.limit || 4);
 
   return MATH1012_EXPANSION_CLUSTERS.map((cluster) => {
     const conceptMatch = countMatches(cluster.conceptIds, weakConceptIds);
     const skillMatch = countMatches(cluster.skillIds, weakSkillIds);
     const prerequisiteMatch = countMatches(cluster.prerequisiteIds, weakConceptIds);
-    const textCorpus = normalizeText([
-      cluster.id,
-      cluster.title,
-      cluster.gradeBand,
-      cluster.cluster,
-      cluster.entryGate,
-      cluster.importGuard,
-      cluster.lessonMove,
-      cluster.diagnosticProbe,
-      ...cluster.conceptIds,
-      ...cluster.skillIds,
-    ].join(' '));
+    const textCorpus = normalizeText(
+      [
+        cluster.id,
+        cluster.title,
+        cluster.gradeBand,
+        cluster.cluster,
+        cluster.entryGate,
+        cluster.importGuard,
+        cluster.lessonMove,
+        cluster.diagnosticProbe,
+        ...cluster.conceptIds,
+        ...cluster.skillIds,
+      ].join(' '),
+    );
     const textMatch = countKeywordMatches(text, textCorpus);
     const statusWeight = cluster.status === 'import_ready' ? 2 : cluster.status === 'ready_for_seed' ? 1 : 0;
     const matchScore = conceptMatch * 6 + skillMatch * 8 + prerequisiteMatch * 3 + textMatch + statusWeight;
@@ -1188,19 +1476,32 @@ export function recommendMath1012ExpansionClusters(input: {
     return {
       cluster,
       matchScore,
-      matchReason: buildMath1012ClusterReason({ conceptMatch, skillMatch, prerequisiteMatch, textMatch, status: cluster.status }),
+      matchReason: buildMath1012ClusterReason({
+        conceptMatch,
+        skillMatch,
+        prerequisiteMatch,
+        textMatch,
+        status: cluster.status,
+      }),
     };
   })
-    .sort((left, right) => right.matchScore - left.matchScore || left.cluster.gradeBand.localeCompare(right.cluster.gradeBand) || left.cluster.id.localeCompare(right.cluster.id))
+    .sort(
+      (left, right) =>
+        right.matchScore - left.matchScore ||
+        left.cluster.gradeBand.localeCompare(right.cluster.gradeBand) ||
+        left.cluster.id.localeCompare(right.cluster.id),
+    )
     .slice(0, limit);
 }
 
-export function recommendMath9LessonTemplates(input: {
-  weakConceptIds?: string[];
-  weakSkillIds?: string[];
-  weakLabel?: string;
-  limit?: number;
-} = {}): LessonTemplateRecommendation[] {
+export function recommendMath9LessonTemplates(
+  input: {
+    weakConceptIds?: string[];
+    weakSkillIds?: string[];
+    weakLabel?: string;
+    limit?: number;
+  } = {},
+): LessonTemplateRecommendation[] {
   const weakConceptIds = new Set(input.weakConceptIds || []);
   const weakSkillIds = new Set(input.weakSkillIds || []);
   const weakLabel = normalizeText(input.weakLabel || '');
@@ -1209,9 +1510,13 @@ export function recommendMath9LessonTemplates(input: {
   return MATH9_REPAIR_LESSON_TEMPLATES.map((template) => {
     const conceptMatch = countMatches(template.conceptIds, weakConceptIds);
     const skillMatch = countMatches(template.skillIds, weakSkillIds);
-    const textMatch = weakLabel && normalizeText([template.title, template.focus, ...template.conceptIds, ...template.skillIds].join(' ')).includes(weakLabel)
-      ? 2
-      : 0;
+    const textMatch =
+      weakLabel &&
+      normalizeText([template.title, template.focus, ...template.conceptIds, ...template.skillIds].join(' ')).includes(
+        weakLabel,
+      )
+        ? 2
+        : 0;
     const prerequisiteMatch = countMatches(template.prerequisiteIds, weakConceptIds);
     const matchScore = conceptMatch * 5 + skillMatch * 7 + prerequisiteMatch * 3 + textMatch;
     return {
@@ -1220,7 +1525,10 @@ export function recommendMath9LessonTemplates(input: {
       matchReason: buildMatchReason({ conceptMatch, skillMatch, prerequisiteMatch, textMatch, weakLabel }),
     };
   })
-    .sort((left, right) => right.matchScore - left.matchScore || left.template.estimatedMinutes - right.template.estimatedMinutes)
+    .sort(
+      (left, right) =>
+        right.matchScore - left.matchScore || left.template.estimatedMinutes - right.template.estimatedMinutes,
+    )
     .slice(0, limit);
 }
 
@@ -1233,12 +1541,48 @@ function createStandardStages(copy: {
   reflection: string;
 }): LessonTemplateStage[] {
   return [
-    { id: 'concept_summary', title: 'Concept summary', durationMinutes: 3, teacherMove: copy.summary, studentAction: 'Noi lai bang mot cau ngan.' },
-    { id: 'worked_example', title: 'Worked example', durationMinutes: 6, teacherMove: copy.worked, studentAction: 'Che tung buoc va du doan buoc tiep theo.' },
-    { id: 'guided_steps', title: 'Guided questions', durationMinutes: 6, teacherMove: copy.guided, studentAction: 'Tra loi cau hoi dan duong truoc khi tinh.' },
-    { id: 'independent_set', title: 'Independent set', durationMinutes: 8, teacherMove: copy.independent, studentAction: 'Lam rieng, danh dau buoc con lung tung.' },
-    { id: 'mixed_review', title: 'Mixed review', durationMinutes: 5, teacherMove: copy.mixed, studentAction: 'Nhan dien dang bai truoc khi giai.' },
-    { id: 'reflection', title: 'Reflection', durationMinutes: 2, teacherMove: copy.reflection, studentAction: 'Viet mot dong bai hoc can nho.' },
+    {
+      id: 'concept_summary',
+      title: 'Concept summary',
+      durationMinutes: 3,
+      teacherMove: copy.summary,
+      studentAction: 'Noi lai bang mot cau ngan.',
+    },
+    {
+      id: 'worked_example',
+      title: 'Worked example',
+      durationMinutes: 6,
+      teacherMove: copy.worked,
+      studentAction: 'Che tung buoc va du doan buoc tiep theo.',
+    },
+    {
+      id: 'guided_steps',
+      title: 'Guided questions',
+      durationMinutes: 6,
+      teacherMove: copy.guided,
+      studentAction: 'Tra loi cau hoi dan duong truoc khi tinh.',
+    },
+    {
+      id: 'independent_set',
+      title: 'Independent set',
+      durationMinutes: 8,
+      teacherMove: copy.independent,
+      studentAction: 'Lam rieng, danh dau buoc con lung tung.',
+    },
+    {
+      id: 'mixed_review',
+      title: 'Mixed review',
+      durationMinutes: 5,
+      teacherMove: copy.mixed,
+      studentAction: 'Nhan dien dang bai truoc khi giai.',
+    },
+    {
+      id: 'reflection',
+      title: 'Reflection',
+      durationMinutes: 2,
+      teacherMove: copy.reflection,
+      studentAction: 'Viet mot dong bai hoc can nho.',
+    },
   ];
 }
 
@@ -1251,12 +1595,48 @@ function createEnglishStages(copy: {
   reflection: string;
 }): LessonTemplateStage[] {
   return [
-    { id: 'concept_summary', title: 'Core idea', durationMinutes: 3, teacherMove: copy.summary, studentAction: 'Restate the rule or routine in one sentence.' },
-    { id: 'worked_example', title: 'Worked example', durationMinutes: 6, teacherMove: copy.worked, studentAction: 'Hide the final answer and predict the next move.' },
-    { id: 'guided_steps', title: 'Guided practice', durationMinutes: 6, teacherMove: copy.guided, studentAction: 'Answer the prompt before looking at options or feedback.' },
-    { id: 'independent_set', title: 'Independent set', durationMinutes: 8, teacherMove: copy.independent, studentAction: 'Work alone and mark the exact uncertainty.' },
-    { id: 'mixed_review', title: 'Transfer review', durationMinutes: 5, teacherMove: copy.mixed, studentAction: 'Use the same routine in a different exam layer.' },
-    { id: 'reflection', title: 'Reflection', durationMinutes: 2, teacherMove: copy.reflection, studentAction: 'Write one reusable rule or phrase.' },
+    {
+      id: 'concept_summary',
+      title: 'Core idea',
+      durationMinutes: 3,
+      teacherMove: copy.summary,
+      studentAction: 'Restate the rule or routine in one sentence.',
+    },
+    {
+      id: 'worked_example',
+      title: 'Worked example',
+      durationMinutes: 6,
+      teacherMove: copy.worked,
+      studentAction: 'Hide the final answer and predict the next move.',
+    },
+    {
+      id: 'guided_steps',
+      title: 'Guided practice',
+      durationMinutes: 6,
+      teacherMove: copy.guided,
+      studentAction: 'Answer the prompt before looking at options or feedback.',
+    },
+    {
+      id: 'independent_set',
+      title: 'Independent set',
+      durationMinutes: 8,
+      teacherMove: copy.independent,
+      studentAction: 'Work alone and mark the exact uncertainty.',
+    },
+    {
+      id: 'mixed_review',
+      title: 'Transfer review',
+      durationMinutes: 5,
+      teacherMove: copy.mixed,
+      studentAction: 'Use the same routine in a different exam layer.',
+    },
+    {
+      id: 'reflection',
+      title: 'Reflection',
+      durationMinutes: 2,
+      teacherMove: copy.reflection,
+      studentAction: 'Write one reusable rule or phrase.',
+    },
   ];
 }
 
@@ -1285,12 +1665,9 @@ function classifyEnglishErrorLens(input: {
   weakLabel?: string;
   errorText?: string;
 }): EnglishCoreRemediationPlan['errorLens'] {
-  const text = normalizeText([
-    input.weakLabel,
-    input.errorText,
-    ...(input.weakConceptIds || []),
-    ...(input.weakSkillIds || []),
-  ].join(' '));
+  const text = normalizeText(
+    [input.weakLabel, input.errorText, ...(input.weakConceptIds || []), ...(input.weakSkillIds || [])].join(' '),
+  );
 
   if (hasAny(text, ['speaking', 'spoken', 'fluency', 'pronunciation', 'interactive', 'conversation'])) {
     return {
@@ -1364,7 +1741,11 @@ function buildEnglishMicroCycle(area: EnglishCoreArea, template?: EnglishCoreLes
     'Review: log the error lens and one reusable rule in the notebook.',
   ];
   if (area === 'writing' || area === 'speaking') {
-    return [...base.slice(0, 3), 'Feedback: submit one response to AI Tutor and convert feedback into one drill.', ...base.slice(3)];
+    return [
+      ...base.slice(0, 3),
+      'Feedback: submit one response to AI Tutor and convert feedback into one drill.',
+      ...base.slice(3),
+    ];
   }
   return base;
 }
@@ -1393,14 +1774,16 @@ function classifyMathErrorSplit(input: {
   templateId?: string;
   unitId?: string;
 }): MathErrorSplit {
-  const text = normalizeText([
-    input.weakLabel,
-    input.errorText,
-    input.templateId,
-    input.unitId,
-    ...(input.weakConceptIds || []),
-    ...(input.weakSkillIds || []),
-  ].join(' '));
+  const text = normalizeText(
+    [
+      input.weakLabel,
+      input.errorText,
+      input.templateId,
+      input.unitId,
+      ...(input.weakConceptIds || []),
+      ...(input.weakSkillIds || []),
+    ].join(' '),
+  );
 
   if (hasAny(text, ['casio', 'calculator', 'bam may', 'may tinh', 'fast operation', 'shortcut', 'delta table'])) {
     return {
@@ -1462,12 +1845,19 @@ function classifyMathErrorSplit(input: {
 }
 
 function buildGeometryProofScaffold(weakLabel?: string): GeometryProofScaffold {
-  const focus = weakLabel && normalizeText(weakLabel).includes('trig') ? 'circle proof with trig check' : 'circle and plane-geometry proof';
+  const focus =
+    weakLabel && normalizeText(weakLabel).includes('trig')
+      ? 'circle proof with trig check'
+      : 'circle and plane-geometry proof';
   return {
     title: `Proof scaffold: ${focus}`,
     steps: [
       { prompt: 'Given', expectedMove: 'List all fixed facts from the problem and mark them on the diagram.' },
-      { prompt: 'Need prove', expectedMove: 'Rewrite the exact target: equal angles, cyclic quadrilateral, parallel lines, tangent, or length relation.' },
+      {
+        prompt: 'Need prove',
+        expectedMove:
+          'Rewrite the exact target: equal angles, cyclic quadrilateral, parallel lines, tangent, or length relation.',
+      },
       { prompt: 'Known theorem', expectedMove: 'Pick 2-3 candidate theorems only; do not start the full proof yet.' },
       { prompt: 'Proof plan', expectedMove: 'Create a short chain from given facts to target using named theorems.' },
       { prompt: 'Final proof', expectedMove: 'Write the proof in complete lines, each line containing fact + reason.' },
@@ -1500,7 +1890,8 @@ function buildMath1012Readiness(
     'math.solve_exponential_logarithm',
     'math.differentiate_basic_function',
   ].some((id) => targets.has(id));
-  const repeatedPrerequisiteSignal = (input.retryAttempts || 0) >= 2 || backfillUnits.some((item) => item.matchScore >= 6);
+  const repeatedPrerequisiteSignal =
+    (input.retryAttempts || 0) >= 2 || backfillUnits.some((item) => item.matchScore >= 6);
 
   if (repeatedPrerequisiteSignal && !hasHighSchoolTarget) {
     return {
@@ -1557,7 +1948,10 @@ function buildMath1012ClusterReason(input: {
 function countKeywordMatches(text: string, corpus: string): number {
   if (!text) return 0;
   const keywords = text.split(/[^a-z0-9.]+/).filter((item) => item.length >= 4);
-  return Math.min(3, keywords.reduce((total, keyword) => total + (corpus.includes(keyword) ? 1 : 0), 0));
+  return Math.min(
+    3,
+    keywords.reduce((total, keyword) => total + (corpus.includes(keyword) ? 1 : 0), 0),
+  );
 }
 
 function hasAny(value: string, keywords: string[]): boolean {

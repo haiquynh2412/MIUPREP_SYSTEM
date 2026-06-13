@@ -90,7 +90,9 @@ function ErrorGroupColumn({ groups }: { groups: ErrorNotebookV2Group[] }) {
   return (
     <aside className="space-y-3">
       <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
-        <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">Grouped by concept / skill</p>
+        <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">
+          Grouped by concept / skill
+        </p>
         <div className="space-y-2 mt-3">
           {groups.map((group) => (
             <div key={group.key} className="bg-slate-900/70 border border-slate-800 rounded-xl p-3">
@@ -101,7 +103,9 @@ function ErrorGroupColumn({ groups }: { groups: ErrorNotebookV2Group[] }) {
                     {group.count} errors · stage {group.highestStage}
                   </p>
                 </div>
-                <span className={`text-xs font-black font-mono ${group.prerequisiteCount ? 'text-orange-300' : group.dueCount ? 'text-amber-300' : 'text-cyan-300'}`}>
+                <span
+                  className={`text-xs font-black font-mono ${group.prerequisiteCount ? 'text-orange-300' : group.dueCount ? 'text-amber-300' : 'text-cyan-300'}`}
+                >
                   {group.prerequisiteCount ? `${group.prerequisiteCount} prereq` : `${group.dueCount} due`}
                 </span>
               </div>
@@ -182,7 +186,9 @@ function ErrorEntryCard({
 
       <details className="text-[10px] text-slate-500 font-light cursor-pointer select-none">
         <summary className="font-bold text-slate-400 hover:text-slate-300">Xem explanation goc</summary>
-        <p className="mt-2 bg-slate-900 p-3 rounded-lg border border-slate-850 leading-relaxed text-slate-400">{entry.question.answerExpl}</p>
+        <p className="mt-2 bg-slate-900 p-3 rounded-lg border border-slate-850 leading-relaxed text-slate-400">
+          {entry.question.answerExpl}
+        </p>
       </details>
     </article>
   );

@@ -85,7 +85,14 @@ export class CachingAIAdapter implements AIAdapter {
     promptInstruction?: string;
     track?: 'ielts' | 'cpe' | 'cae';
   }): Promise<WritingFeedback> {
-    const key = hashContent(['writing', PROMPT_VERSION, params.track, params.taskNumber, params.promptInstruction, params.essay]);
+    const key = hashContent([
+      'writing',
+      PROMPT_VERSION,
+      params.track,
+      params.taskNumber,
+      params.promptInstruction,
+      params.essay,
+    ]);
     const cached = this.writingCache.get(key);
     const inputTokens = estimateTokens(params.essay) + estimateTokens(params.promptInstruction);
 
@@ -110,7 +117,14 @@ export class CachingAIAdapter implements AIAdapter {
     transcriptMock?: string;
     track?: 'ielts' | 'cpe' | 'cae';
   }): Promise<SpeakingFeedback> {
-    const key = hashContent(['speaking', PROMPT_VERSION, params.track, params.transcriptMock, params.audioPath, params.audioBase64]);
+    const key = hashContent([
+      'speaking',
+      PROMPT_VERSION,
+      params.track,
+      params.transcriptMock,
+      params.audioPath,
+      params.audioBase64,
+    ]);
     const cached = this.speakingCache.get(key);
     const inputTokens = estimateTokens(params.transcriptMock) + estimateTokens(params.audioBase64) / 100;
 

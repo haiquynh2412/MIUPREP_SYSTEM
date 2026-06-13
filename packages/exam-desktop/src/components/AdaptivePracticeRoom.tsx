@@ -2,13 +2,13 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useEffect, useRef, useMemo } from 'react';
 import type { IeltsTest, IeltsQuestion } from '@miuprep/content';
-import { buildEnglishLearningCatalog, filterEnglishExamTestsToLearningReady } from '@miuprep/content/src/english-learning';
+import {
+  buildEnglishLearningCatalog,
+  filterEnglishExamTestsToLearningReady,
+} from '@miuprep/content/src/english-learning';
 import type { StorageAdapter } from '@miuprep/db';
 import { isCorrectAnswer, generateAdaptiveDiagnostic } from '@miuprep/core';
 import { sanitizeHtml } from '@miuprep/ui';
-
-
-
 
 interface Weakness {
   questionType: string;
@@ -27,7 +27,9 @@ interface AdaptivePracticeRoomProps {
   activeTrack?: 'ielts' | 'cpe' | 'cae' | null;
   autoLaunchPracticeType?: string | null;
   clearAutoLaunch?: () => void;
-  onNavigateTab?: (tab: 'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room') => void;
+  onNavigateTab?: (
+    tab: 'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room',
+  ) => void;
 }
 
 interface VocabWord {
@@ -53,8 +55,8 @@ const TOPICS = [
       { id: 'cpe_part_4', name: 'Part 4: Key word transformation (Viết lại câu dùng từ gợi ý)' },
       { id: 'cpe_part_5', name: 'Part 5: Multiple choice reading (Đọc hiểu trắc nghiệm)' },
       { id: 'cpe_part_6', name: 'Part 6: Gapped text (Đọc hiểu điền đoạn văn)' },
-      { id: 'cpe_part_7', name: 'Part 7: Multiple matching (Nối thông tin)' }
-    ]
+      { id: 'cpe_part_7', name: 'Part 7: Multiple matching (Nối thông tin)' },
+    ],
   },
   {
     id: 'listening',
@@ -65,8 +67,8 @@ const TOPICS = [
       { id: 'cpe_listen_part_1', name: 'Part 1: Multiple choice (Trắc nghiệm hội thoại ngắn)' },
       { id: 'cpe_listen_part_2', name: 'Part 2: Sentence completion (Điền từ hoàn thành câu)' },
       { id: 'cpe_listen_part_3', name: 'Part 3: Multiple choice (Trắc nghiệm hội thoại dài)' },
-      { id: 'cpe_listen_part_4', name: 'Part 4: Multiple matching (Nghe nối thông tin kép)' }
-    ]
+      { id: 'cpe_listen_part_4', name: 'Part 4: Multiple matching (Nghe nối thông tin kép)' },
+    ],
   },
   {
     id: 'writing',
@@ -75,8 +77,8 @@ const TOPICS = [
     color: 'from-amber-500 to-orange-600',
     types: [
       { id: 'cpe_write_part_1', name: 'Part 1: Compulsory Essay (Viết luận tóm tắt & đánh giá)' },
-      { id: 'cpe_write_part_2', name: 'Part 2: Optional Task (Bài viết tự chọn - Thư/Báo cáo/Review)' }
-    ]
+      { id: 'cpe_write_part_2', name: 'Part 2: Optional Task (Bài viết tự chọn - Thư/Báo cáo/Review)' },
+    ],
   },
   {
     id: 'speaking',
@@ -86,8 +88,8 @@ const TOPICS = [
     types: [
       { id: 'cpe_speak_part_1', name: 'Part 1: Interview (Phỏng vấn giao tiếp xã hội)' },
       { id: 'cpe_speak_part_2', name: 'Part 2: Collaborative Task (Thảo luận tranh ảnh đồng thuận)' },
-      { id: 'cpe_speak_part_3', name: 'Part 3: Long Turn (Độc thoại và thảo luận sâu)' }
-    ]
+      { id: 'cpe_speak_part_3', name: 'Part 3: Long Turn (Độc thoại và thảo luận sâu)' },
+    ],
   },
   {
     id: 'grammar',
@@ -97,9 +99,9 @@ const TOPICS = [
     types: [
       { id: 'cpe_gram_inversion', name: 'Advanced Inversion & Subjunctive (Đảo ngữ & Giả định)' },
       { id: 'cpe_gram_collocation', name: 'Advanced Collocations & C2 Idioms (Cụm từ & Thành ngữ)' },
-      { id: 'cpe_gram_mcq', name: 'C2 Grammar MCQs (Trắc nghiệm ngữ pháp C2 nâng cao)' }
-    ]
-  }
+      { id: 'cpe_gram_mcq', name: 'C2 Grammar MCQs (Trắc nghiệm ngữ pháp C2 nâng cao)' },
+    ],
+  },
 ];
 
 export default function AdaptivePracticeRoom({
@@ -117,7 +119,7 @@ export default function AdaptivePracticeRoom({
   const [activeRoomTab, setActiveRoomTab] = useState<'practice' | 'vocab'>('practice');
   const [selectedTopic, setSelectedTopic] = useState<string>('');
   const [_showExamTips, _setShowExamTips] = useState<boolean>(true);
-  
+
   // Active practice exam states
   const [isActive, setIsActive] = useState(false);
   const [miniTest, setMiniTest] = useState<IeltsTest | null>(null);
@@ -131,7 +133,9 @@ export default function AdaptivePracticeRoom({
   // Instant per-question feedback states
   const [currentPracticeQuestionIdx, setCurrentPracticeQuestionIdx] = useState(0);
   const [_isCurrentQuestionChecked, setIsCurrentQuestionChecked] = useState(false);
-  const [immediateAnswersChecked, setImmediateAnswersChecked] = useState<Record<string, { isCorrect: boolean; rawAnswer: string }>>({});
+  const [immediateAnswersChecked, setImmediateAnswersChecked] = useState<
+    Record<string, { isCorrect: boolean; rawAnswer: string }>
+  >({});
 
   // Spaced progression states
   const [completedQIds, setCompletedQIds] = useState<string[]>(() => {
@@ -167,7 +171,7 @@ export default function AdaptivePracticeRoom({
   const [reviewMode, setReviewMode] = useState<'list' | 'flashcard' | 'quiz'>('list');
   const [flashcardIdx, setFlashcardIdx] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  
+
   // Quiz specific states
   const [quizWord, setQuizWord] = useState<VocabWord | null>(null);
   const [quizOptions, setQuizOptions] = useState<string[]>([]);
@@ -178,17 +182,19 @@ export default function AdaptivePracticeRoom({
   const startFocusedPracticeRef = useRef<(typeId: string) => void>(() => undefined);
   const activeProgramIds = useMemo(() => (activeTrack ? [activeTrack] : undefined), [activeTrack]);
   const learningCatalog = useMemo(
-    () => buildEnglishLearningCatalog(availableTests, {
-      programIds: activeProgramIds,
-      displayModes: ['both', 'topic'],
-    }),
+    () =>
+      buildEnglishLearningCatalog(availableTests, {
+        programIds: activeProgramIds,
+        displayModes: ['both', 'topic'],
+      }),
     [activeProgramIds, availableTests],
   );
   const adaptiveReadyTests = useMemo(
-    () => filterEnglishExamTestsToLearningReady(availableTests, {
-      programIds: activeProgramIds,
-      displayModes: ['both', 'topic'],
-    }) as IeltsTest[],
+    () =>
+      filterEnglishExamTestsToLearningReady(availableTests, {
+        programIds: activeProgramIds,
+        displayModes: ['both', 'topic'],
+      }) as IeltsTest[],
     [activeProgramIds, availableTests],
   );
 
@@ -217,7 +223,7 @@ export default function AdaptivePracticeRoom({
   }, [autoLaunchPracticeType, clearAutoLaunch]);
 
   const getWeaknessStats = (typeId: string) => {
-    return weaknesses.find(w => w.questionType === typeId);
+    return weaknesses.find((w) => w.questionType === typeId);
   };
 
   // Text Selection Detector
@@ -226,14 +232,14 @@ export default function AdaptivePracticeRoom({
     const selection = window.getSelection();
     if (!selection) return;
     const text = selection.toString().trim();
-    
+
     if (text && text.length > 0 && text.length < 80) {
       try {
         const range = selection.getRangeAt(0);
         const rect = range.getBoundingClientRect();
         setFloatingPos({
           x: rect.left + window.scrollX + rect.width / 2,
-          y: rect.top + window.scrollY - 40
+          y: rect.top + window.scrollY - 40,
         });
         setSelectedText(text);
         setShowFloatingBtn(true);
@@ -265,11 +271,11 @@ export default function AdaptivePracticeRoom({
     if (typeof window === 'undefined') return;
     const selection = window.getSelection();
     if (!selection || selection.rangeCount === 0) return;
-    
+
     const range = selection.getRangeAt(0);
     const span = document.createElement('span');
     span.className = styleClass;
-    
+
     try {
       range.surroundContents(span);
       selection.removeAllRanges();
@@ -292,16 +298,19 @@ export default function AdaptivePracticeRoom({
     if (typeof window === 'undefined') return;
     const selection = window.getSelection();
     if (!selection || selection.rangeCount === 0) return;
-    
+
     const range = selection.getRangeAt(0);
     let parent = range.commonAncestorContainer;
     if (parent.nodeType === Node.TEXT_NODE) {
       parent = parent.parentNode!;
     }
-    
+
     const parentElement = parent as HTMLElement;
-    if (parentElement && parentElement.tagName === 'SPAN' && 
-        (parentElement.className.includes('bg-yellow-') || parentElement.className.includes('underline'))) {
+    if (
+      parentElement &&
+      parentElement.tagName === 'SPAN' &&
+      (parentElement.className.includes('bg-yellow-') || parentElement.className.includes('underline'))
+    ) {
       const parentNode = parentElement.parentNode!;
       while (parentElement.firstChild) {
         parentNode.insertBefore(parentElement.firstChild, parentElement);
@@ -325,7 +334,7 @@ export default function AdaptivePracticeRoom({
       example: newWordExample.trim() || undefined,
       notes: newWordNotes.trim() || undefined,
       isMastered: false,
-      createdAt: new Date().toISOString()
+      createdAt: new Date().toISOString(),
     };
     setVocabList([newWord, ...vocabList]);
     setShowAddModal(false);
@@ -338,12 +347,12 @@ export default function AdaptivePracticeRoom({
 
   const deleteVocabWord = (id: string) => {
     if (confirm('Bạn có chắc chắn muốn xóa từ này khỏi từ điển?')) {
-      setVocabList(vocabList.filter(v => v.id !== id));
+      setVocabList(vocabList.filter((v) => v.id !== id));
     }
   };
 
   const toggleVocabMastery = (id: string) => {
-    setVocabList(vocabList.map(v => v.id === id ? { ...v, isMastered: !v.isMastered } : v));
+    setVocabList(vocabList.map((v) => (v.id === id ? { ...v, isMastered: !v.isMastered } : v)));
   };
 
   // Start Focused Practice for Reading / Listening / Grammar
@@ -355,13 +364,15 @@ export default function AdaptivePracticeRoom({
     setCurrentPracticeQuestionIdx(0);
     setIsCurrentQuestionChecked(false);
     setImmediateAnswersChecked({});
-    
+
     // Redirect logic for Writing and Speaking
     if (typeId.includes('write')) {
       if (onNavigateTab) {
         onNavigateTab('writing_ai');
       } else {
-        alert('Chuyên đề viết được hỗ trợ nâng cao tại tab "Writing AI Evaluation". Vui lòng chọn tab đó để được Socratic AI chấm và nhận xét chi tiết!');
+        alert(
+          'Chuyên đề viết được hỗ trợ nâng cao tại tab "Writing AI Evaluation". Vui lòng chọn tab đó để được Socratic AI chấm và nhận xét chi tiết!',
+        );
       }
       return;
     }
@@ -369,45 +380,53 @@ export default function AdaptivePracticeRoom({
       if (onNavigateTab) {
         onNavigateTab('speaking_ai');
       } else {
-        alert('Chuyên đề nói được hỗ trợ tương tác giọng nói thời gian thực tại tab "Speaking AI Room". Vui lòng chọn tab đó để được luyện nói trực tiếp!');
+        alert(
+          'Chuyên đề nói được hỗ trợ tương tác giọng nói thời gian thực tại tab "Speaking AI Room". Vui lòng chọn tab đó để được luyện nói trực tiếp!',
+        );
       }
       return;
     }
 
     // Progression cycle analysis: count all questions of this type to see if we should reset progress
-    const allQuestionsOfType = adaptiveReadyTests.flatMap(t => t.sections || []).flatMap(s => s.questionGroups || []).flatMap(g => g.questions || []).filter(q => {
-      if (q.displayMode === 'test') return false;
-      const qCat = (q as any).category;
-      const isCategoryFilter = typeId.startsWith('category:');
-      const filterVal = isCategoryFilter ? typeId.substring(9) : typeId;
-      if (isCategoryFilter) {
-        if (filterVal === 'collocations') return qCat === 'cpe_part_1' || qCat === 'cpe_part_4' || qCat === 'collocations';
-        if (filterVal === 'phrasal_verbs') return qCat === 'cpe_part_1' || qCat === 'cpe_part_2' || qCat === 'phrasal_verbs';
-        if (filterVal === 'idioms') return qCat === 'cpe_part_2' || qCat === 'cpe_part_4' || qCat === 'idioms';
-        if (filterVal === 'prepositions') return qCat === 'cpe_part_2' || qCat === 'prepositions';
-        if (filterVal === 'word_formation') return qCat === 'cpe_part_3' || qCat === 'word_formation';
-        if (filterVal === 'reading_comprehension') return qCat === 'cpe_part_5' || qCat === 'reading_comprehension';
-        return qCat === filterVal;
-      } else {
-        let isMatch = q.type === filterVal || qCat === filterVal;
-        if (!isMatch) {
-          if (filterVal === 'gapped_text') isMatch = qCat === 'cpe_part_6';
-          else if (filterVal === 'multiple_matching') isMatch = qCat === 'cpe_part_7';
-          else if (filterVal === 'cpe_listen_part_1') isMatch = qCat === 'cpe_listen_part_1';
-          else if (filterVal === 'cpe_listen_part_2') isMatch = qCat === 'cpe_listen_part_2';
-          else if (filterVal === 'cpe_listen_part_3') isMatch = qCat === 'cpe_listen_part_3';
-          else if (filterVal === 'cpe_listen_part_4') isMatch = qCat === 'cpe_listen_part_4';
+    const allQuestionsOfType = adaptiveReadyTests
+      .flatMap((t) => t.sections || [])
+      .flatMap((s) => s.questionGroups || [])
+      .flatMap((g) => g.questions || [])
+      .filter((q) => {
+        if (q.displayMode === 'test') return false;
+        const qCat = (q as any).category;
+        const isCategoryFilter = typeId.startsWith('category:');
+        const filterVal = isCategoryFilter ? typeId.substring(9) : typeId;
+        if (isCategoryFilter) {
+          if (filterVal === 'collocations')
+            return qCat === 'cpe_part_1' || qCat === 'cpe_part_4' || qCat === 'collocations';
+          if (filterVal === 'phrasal_verbs')
+            return qCat === 'cpe_part_1' || qCat === 'cpe_part_2' || qCat === 'phrasal_verbs';
+          if (filterVal === 'idioms') return qCat === 'cpe_part_2' || qCat === 'cpe_part_4' || qCat === 'idioms';
+          if (filterVal === 'prepositions') return qCat === 'cpe_part_2' || qCat === 'prepositions';
+          if (filterVal === 'word_formation') return qCat === 'cpe_part_3' || qCat === 'word_formation';
+          if (filterVal === 'reading_comprehension') return qCat === 'cpe_part_5' || qCat === 'reading_comprehension';
+          return qCat === filterVal;
+        } else {
+          let isMatch = q.type === filterVal || qCat === filterVal;
+          if (!isMatch) {
+            if (filterVal === 'gapped_text') isMatch = qCat === 'cpe_part_6';
+            else if (filterVal === 'multiple_matching') isMatch = qCat === 'cpe_part_7';
+            else if (filterVal === 'cpe_listen_part_1') isMatch = qCat === 'cpe_listen_part_1';
+            else if (filterVal === 'cpe_listen_part_2') isMatch = qCat === 'cpe_listen_part_2';
+            else if (filterVal === 'cpe_listen_part_3') isMatch = qCat === 'cpe_listen_part_3';
+            else if (filterVal === 'cpe_listen_part_4') isMatch = qCat === 'cpe_listen_part_4';
+          }
+          return isMatch;
         }
-        return isMatch;
-      }
-    });
+      });
 
     let currentCompletedList = completedQIds;
-    const completedOfType = allQuestionsOfType.filter(q => completedQIds.includes(q.id));
-    
+    const completedOfType = allQuestionsOfType.filter((q) => completedQIds.includes(q.id));
+
     // Cycle reset: if the student has finished all available questions for this topic, wipe progress for this topic
     if (completedOfType.length >= allQuestionsOfType.length && allQuestionsOfType.length > 0) {
-      const newCompleted = completedQIds.filter(id => !allQuestionsOfType.some(q => q.id === id));
+      const newCompleted = completedQIds.filter((id) => !allQuestionsOfType.some((q) => q.id === id));
       setCompletedQIds(newCompleted);
       localStorage.setItem(`completed_practice_questions_${userId}`, JSON.stringify(newCompleted));
       currentCompletedList = newCompleted;
@@ -416,7 +435,7 @@ export default function AdaptivePracticeRoom({
     const adaptiveTest = generateAdaptiveDiagnostic(adaptiveReadyTests, typeId, currentCompletedList);
     if (!adaptiveTest) {
       setErrorMsg(
-        `Không tìm thấy câu hỏi tương thích cho dạng bài này trong ngân hàng đề thi hiện tại. Vui lòng làm thêm đề thi chuẩn để mở rộng ngân hàng câu hỏi thích ứng.`
+        `Không tìm thấy câu hỏi tương thích cho dạng bài này trong ngân hàng đề thi hiện tại. Vui lòng làm thêm đề thi chuẩn để mở rộng ngân hàng câu hỏi thích ứng.`,
       );
       return;
     }
@@ -447,10 +466,10 @@ export default function AdaptivePracticeRoom({
     if (!q) return;
     const uAns = userAnswers[q.id] || '';
     const isCorrect = isCorrectAnswer(uAns, q.acceptedAnswers);
-    
-    setImmediateAnswersChecked(prev => ({
+
+    setImmediateAnswersChecked((prev) => ({
       ...prev,
-      [q.id]: { isCorrect, rawAnswer: uAns }
+      [q.id]: { isCorrect, rawAnswer: uAns },
     }));
     setIsCurrentQuestionChecked(true);
 
@@ -467,10 +486,10 @@ export default function AdaptivePracticeRoom({
           userAnswer: uAns,
           correctAnswer: q.acceptedAnswers[0]?.[0] || '',
           explanation: q.explanation || `Dạng bài này yêu cầu điền đáp án chuẩn: ${q.acceptedAnswers[0]?.[0] || ''}`,
-          intervalDays: 1, 
+          intervalDays: 1,
           easeFactor: 2.5,
           repetitions: 0,
-          nextReviewAt: new Date().toISOString(), 
+          nextReviewAt: new Date().toISOString(),
           createdAt: new Date().toISOString(),
         };
         await db.addErrorEntry(entry);
@@ -507,7 +526,7 @@ export default function AdaptivePracticeRoom({
 
     // Save completed questions to progress list
     const newCompletedIds = [...completedQIds];
-    allQuestions.forEach(q => {
+    allQuestions.forEach((q) => {
       if (!newCompletedIds.includes(q.id)) {
         newCompletedIds.push(q.id);
       }
@@ -559,7 +578,7 @@ export default function AdaptivePracticeRoom({
 
     // Save completed questions to progress list
     const newCompletedIds = [...completedQIds];
-    allQuestions.forEach(q => {
+    allQuestions.forEach((q) => {
       if (!newCompletedIds.includes(q.id)) {
         newCompletedIds.push(q.id);
       }
@@ -581,10 +600,10 @@ export default function AdaptivePracticeRoom({
             userAnswer: failed.userAnswer,
             correctAnswer: failed.correctAnswer,
             explanation: failed.explanation,
-            intervalDays: 1, 
+            intervalDays: 1,
             easeFactor: 2.5,
             repetitions: 0,
-            nextReviewAt: new Date().toISOString(), 
+            nextReviewAt: new Date().toISOString(),
             createdAt: new Date().toISOString(),
           };
           await db.addErrorEntry(entry);
@@ -598,7 +617,7 @@ export default function AdaptivePracticeRoom({
 
   // Generate Vocabulary Quiz
   const startQuiz = () => {
-    const unmastered = vocabList.filter(v => !v.isMastered);
+    const unmastered = vocabList.filter((v) => !v.isMastered);
     if (unmastered.length === 0) {
       alert('Bạn chưa lưu từ mới nào hoặc đã thuộc hết từ vựng! Hãy lưu thêm từ vựng để bắt đầu Quiz.');
       return;
@@ -607,9 +626,14 @@ export default function AdaptivePracticeRoom({
     setQuizWord(target);
 
     // Generate dummy options
-    const distractorPool = vocabList.filter(v => v.id !== target.id).map(v => v.meaning);
-    const standardDistractors = ['Không có nghĩa này', 'Cụm từ chỉ hành động làm sạch', 'Cực kỳ nhạy cảm trước môi trường', 'Không ngừng cố gắng'];
-    
+    const distractorPool = vocabList.filter((v) => v.id !== target.id).map((v) => v.meaning);
+    const standardDistractors = [
+      'Không có nghĩa này',
+      'Cụm từ chỉ hành động làm sạch',
+      'Cực kỳ nhạy cảm trước môi trường',
+      'Không ngừng cố gắng',
+    ];
+
     const chosenDistractors: string[] = [];
     for (let i = 0; i < 3; i++) {
       if (distractorPool.length > 0) {
@@ -632,7 +656,7 @@ export default function AdaptivePracticeRoom({
     if (grp.paragraphOptions && Array.isArray(grp.paragraphOptions)) {
       return grp.paragraphOptions.map((po: any) => ({
         label: po.label || po.id || '',
-        text: po.text || ''
+        text: po.text || '',
       }));
     }
     const firstQ = grp.questions?.[0];
@@ -658,7 +682,10 @@ export default function AdaptivePracticeRoom({
     const isChecked = immediateAnswersChecked[q.id] !== undefined;
 
     return (
-      <div key={q.id} className="border border-slate-200 bg-slate-50/50 p-6 rounded-2xl flex flex-col gap-4 text-xs text-slate-750 text-left shadow-sm">
+      <div
+        key={q.id}
+        className="border border-slate-200 bg-slate-50/50 p-6 rounded-2xl flex flex-col gap-4 text-xs text-slate-750 text-left shadow-sm"
+      >
         <span className="font-bold text-slate-800 text-sm flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-accentdeep-100 text-accentdeep-700 flex items-center justify-center text-xs font-black shrink-0">
             {idx + 1}
@@ -771,15 +798,16 @@ export default function AdaptivePracticeRoom({
                 <span>💡 Xem gợi ý tư duy Socratic</span>
               </summary>
               <div className="mt-2 p-3 bg-accentdeep-50 border border-accentdeep-100 rounded-xl text-[10px] leading-relaxed text-accentdeep-950 font-sans shadow-sm">
-                Dạng bài này yêu cầu bạn tìm từ hoặc cụm từ đồng nghĩa (paraphrase) trong bài đọc để xác nhận đáp án chuẩn nhất. Hãy chú ý cấu trúc ngữ pháp và sắc thái từ vựng.
+                Dạng bài này yêu cầu bạn tìm từ hoặc cụm từ đồng nghĩa (paraphrase) trong bài đọc để xác nhận đáp án
+                chuẩn nhất. Hãy chú ý cấu trúc ngữ pháp và sắc thái từ vựng.
               </div>
             </details>
           </div>
         )}
 
         {/* Feedback Alert Panel */}
-        {isChecked && (
-          isCorrect ? (
+        {isChecked &&
+          (isCorrect ? (
             <div className="mt-2 p-4 bg-emerald-50/80 border border-emerald-200 rounded-xl text-xs flex flex-col gap-2 shadow-sm animate-fade-in">
               <div className="flex items-center gap-2 text-emerald-800 font-bold">
                 <span className="text-sm">🎉</span>
@@ -815,8 +843,7 @@ export default function AdaptivePracticeRoom({
                 </div>
               )}
             </div>
-          )
-        )}
+          ))}
 
         {/* Per-Question Navigation Controls */}
         <div className="flex items-center justify-between border-t pt-4 mt-3">
@@ -841,7 +868,9 @@ export default function AdaptivePracticeRoom({
                 >
                   ← Câu trước
                 </button>
-              ) : <div />}
+              ) : (
+                <div />
+              )}
 
               {currentPracticeQuestionIdx < questionsInGroup.length - 1 ? (
                 <button
@@ -883,7 +912,9 @@ export default function AdaptivePracticeRoom({
   return (
     <div className="flex flex-col gap-6 animate-fade-in text-left">
       {/* 3D Flipping Card CSS Injection */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         .flashcard-container {
           perspective: 1000px;
         }
@@ -902,7 +933,9 @@ export default function AdaptivePracticeRoom({
         .flashcard-back {
           transform: rotateY(180deg);
         }
-      ` }} />
+      `,
+        }}
+      />
 
       {/* Floating Selection Toolbar */}
       {showFloatingBtn && floatingPos && (
@@ -921,11 +954,13 @@ export default function AdaptivePracticeRoom({
           >
             <span>➕ Sổ từ</span>
           </button>
-          
+
           <div className="h-3.5 w-[1px] bg-slate-800" />
-          
+
           <button
-            onClick={() => highlightSelection('bg-yellow-250 text-slate-950 font-medium px-1.5 py-0.5 rounded shadow-sm')}
+            onClick={() =>
+              highlightSelection('bg-yellow-250 text-slate-950 font-medium px-1.5 py-0.5 rounded shadow-sm')
+            }
             className="hover:text-yellow-400 font-bold text-xs flex items-center gap-1.5 bg-transparent border-0 cursor-pointer outline-none transition-colors text-slate-200"
             title="Tô màu bút nhớ dòng (Màu vàng)"
           >
@@ -935,7 +970,9 @@ export default function AdaptivePracticeRoom({
           <div className="h-3.5 w-[1px] bg-slate-800" />
 
           <button
-            onClick={() => highlightSelection('underline decoration-amber-500 decoration-2 underline-offset-2 font-semibold')}
+            onClick={() =>
+              highlightSelection('underline decoration-amber-500 decoration-2 underline-offset-2 font-semibold')
+            }
             className="hover:text-cyan-400 font-bold text-xs flex items-center gap-1.5 bg-transparent border-0 cursor-pointer outline-none transition-colors text-slate-200"
             title="Gạch chân từ quan trọng"
           >
@@ -961,7 +998,7 @@ export default function AdaptivePracticeRoom({
             <h3 className="text-base font-bold text-white flex items-center gap-2">
               <span>📓</span> Lưu Từ Vựng / Cụm Từ Mới
             </h3>
-            
+
             <div className="flex flex-col gap-1.5">
               <span className="text-[10px] text-slate-400 uppercase font-black tracking-wider">Từ / Cụm từ gốc</span>
               <span className="font-mono text-sm font-black text-emerald-400 bg-slate-950 px-3 py-2 rounded border border-slate-850">
@@ -975,28 +1012,32 @@ export default function AdaptivePracticeRoom({
                 type="text"
                 placeholder="Ví dụ: nhạy cảm với môi trường, tạo dựng dấu ấn..."
                 value={newWordMeaning}
-                onChange={e => setNewWordMeaning(e.target.value)}
+                onChange={(e) => setNewWordMeaning(e.target.value)}
                 className="bg-slate-950 border border-slate-800 rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500 font-semibold"
               />
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <span className="text-[10px] text-slate-400 uppercase font-black tracking-wider">Ví dụ ngữ cảnh (Không bắt buộc)</span>
+              <span className="text-[10px] text-slate-400 uppercase font-black tracking-wider">
+                Ví dụ ngữ cảnh (Không bắt buộc)
+              </span>
               <textarea
                 placeholder="Dán câu có cụm từ này vào..."
                 value={newWordExample}
-                onChange={e => setNewWordExample(e.target.value)}
+                onChange={(e) => setNewWordExample(e.target.value)}
                 className="bg-slate-950 border border-slate-800 rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500 font-semibold h-16 resize-none"
               />
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <span className="text-[10px] text-slate-400 uppercase font-black tracking-wider">Ghi chú riêng (Không bắt buộc)</span>
+              <span className="text-[10px] text-slate-400 uppercase font-black tracking-wider">
+                Ghi chú riêng (Không bắt buộc)
+              </span>
               <input
                 type="text"
                 placeholder="Cố định đi kèm với giới từ..."
                 value={newWordNotes}
-                onChange={e => setNewWordNotes(e.target.value)}
+                onChange={(e) => setNewWordNotes(e.target.value)}
                 className="bg-slate-950 border border-slate-800 rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-emerald-500 font-semibold"
               />
             </div>
@@ -1027,7 +1068,8 @@ export default function AdaptivePracticeRoom({
               Phòng Ôn Luyện Thích Ứng & Sổ Từ Vựng C2
             </h2>
             <p className="text-xs text-slate-500 mt-1">
-              Phân chia chuyên đề thông minh, lấp đầy lỗ hổng kiến thức và quản trị từ vựng nâng cao chuẩn Cambridge CPE.
+              Phân chia chuyên đề thông minh, lấp đầy lỗ hổng kiến thức và quản trị từ vựng nâng cao chuẩn Cambridge
+              CPE.
             </p>
           </div>
 
@@ -1035,7 +1077,9 @@ export default function AdaptivePracticeRoom({
             <button
               onClick={() => setActiveRoomTab('practice')}
               className={`py-2 px-4 text-xs font-bold rounded-lg transition-all border-0 outline-none cursor-pointer ${
-                activeRoomTab === 'practice' ? 'bg-emerald-600 text-white shadow-sm' : 'bg-transparent text-slate-500 hover:text-slate-700'
+                activeRoomTab === 'practice'
+                  ? 'bg-emerald-600 text-white shadow-sm'
+                  : 'bg-transparent text-slate-500 hover:text-slate-700'
               }`}
             >
               📖 Chuyên Đề Học Tập
@@ -1043,13 +1087,15 @@ export default function AdaptivePracticeRoom({
             <button
               onClick={() => setActiveRoomTab('vocab')}
               className={`py-2 px-4 text-xs font-bold rounded-lg transition-all border-0 outline-none cursor-pointer flex items-center gap-1.5 ${
-                activeRoomTab === 'vocab' ? 'bg-emerald-600 text-white shadow-sm' : 'bg-transparent text-slate-500 hover:text-slate-700'
+                activeRoomTab === 'vocab'
+                  ? 'bg-emerald-600 text-white shadow-sm'
+                  : 'bg-transparent text-slate-500 hover:text-slate-700'
               }`}
             >
               📓 Sổ Từ Vựng
-              {vocabList.filter(v => !v.isMastered).length > 0 && (
+              {vocabList.filter((v) => !v.isMastered).length > 0 && (
                 <span className="bg-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full">
-                  {vocabList.filter(v => !v.isMastered).length}
+                  {vocabList.filter((v) => !v.isMastered).length}
                 </span>
               )}
             </button>
@@ -1068,11 +1114,15 @@ export default function AdaptivePracticeRoom({
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl">
             <div className="bg-white border border-emerald-100 rounded-lg p-4 shadow-sm">
-              <div className="text-[10px] font-black uppercase tracking-wide text-slate-400">Learning-ready questions</div>
+              <div className="text-[10px] font-black uppercase tracking-wide text-slate-400">
+                Learning-ready questions
+              </div>
               <div className="text-2xl font-black text-emerald-700 mt-1">{learningCatalog.coverage.readyQuestions}</div>
             </div>
             <div className="bg-white border border-amber-100 rounded-lg p-4 shadow-sm">
-              <div className="text-[10px] font-black uppercase tracking-wide text-slate-400">Blocked by quality gate</div>
+              <div className="text-[10px] font-black uppercase tracking-wide text-slate-400">
+                Blocked by quality gate
+              </div>
               <div className="text-2xl font-black text-amber-700 mt-1">{learningCatalog.coverage.blockedQuestions}</div>
             </div>
             <div className="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
@@ -1084,7 +1134,9 @@ export default function AdaptivePracticeRoom({
           {!selectedTopic ? (
             /* First Level: Topics Grid */
             <div className="flex flex-col gap-4">
-              <h3 className="text-xs font-black text-slate-400 uppercase tracking-wider m-0">Bước 1: Chọn Chuyên Đề Đề Nghị</h3>
+              <h3 className="text-xs font-black text-slate-400 uppercase tracking-wider m-0">
+                Bước 1: Chọn Chuyên Đề Đề Nghị
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 {TOPICS.map((topic) => {
                   return (
@@ -1095,7 +1147,9 @@ export default function AdaptivePracticeRoom({
                     >
                       <span className="text-4xl filter group-hover:scale-110 transition-transform">{topic.icon}</span>
                       <h4 className="text-sm font-bold text-slate-800 leading-tight m-0">{topic.name}</h4>
-                      <span className="text-[10px] text-slate-400 font-semibold">{topic.types.length} dạng bài tích hợp</span>
+                      <span className="text-[10px] text-slate-400 font-semibold">
+                        {topic.types.length} dạng bài tích hợp
+                      </span>
                     </button>
                   );
                 })}
@@ -1106,25 +1160,27 @@ export default function AdaptivePracticeRoom({
             <div className="flex flex-col gap-4 bg-white border border-slate-200 rounded-xl p-6 shadow-sm max-w-3xl">
               <div className="flex items-center justify-between border-b pb-3 mb-4">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">{TOPICS.find(t => t.id === selectedTopic)?.icon}</span>
+                  <span className="text-2xl">{TOPICS.find((t) => t.id === selectedTopic)?.icon}</span>
                   <h3 className="text-base font-bold text-slate-800 m-0">
-                    Chuyên đề: {TOPICS.find(t => t.id === selectedTopic)?.name}
+                    Chuyên đề: {TOPICS.find((t) => t.id === selectedTopic)?.name}
                   </h3>
                 </div>
                 <button
                   onClick={() => setSelectedTopic('')}
                   className="bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-[10px] py-1.5 px-3 rounded-lg border-0 cursor-pointer outline-none transition-all uppercase tracking-wide"
                 >
-                  {"← Quay lại"}
+                  {'← Quay lại'}
                 </button>
               </div>
 
               <div className="flex flex-col gap-3">
-                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Bước 2: Chọn dạng bài thi thử (5 phút):</span>
-                {TOPICS.find(t => t.id === selectedTopic)?.types.map((type) => {
+                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                  Bước 2: Chọn dạng bài thi thử (5 phút):
+                </span>
+                {TOPICS.find((t) => t.id === selectedTopic)?.types.map((type) => {
                   const stats = getWeaknessStats(type.id);
                   const isCritical = stats ? stats.accuracy < 60 : false;
-                  
+
                   return (
                     <div
                       key={type.id}
@@ -1134,14 +1190,18 @@ export default function AdaptivePracticeRoom({
                         <h4 className="text-sm font-bold text-slate-800 m-0">{type.name}</h4>
                         <div className="flex items-center gap-2 mt-1">
                           {stats ? (
-                            <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${
-                              isCritical ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'
-                            }`}>
-                              Độ chính xác: {Math.round(stats.accuracy)}% 
+                            <span
+                              className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${
+                                isCritical ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'
+                              }`}
+                            >
+                              Độ chính xác: {Math.round(stats.accuracy)}%
                               {isCritical ? ' (Cần cải thiện gấp)' : ' (Ổn định)'}
                             </span>
                           ) : (
-                            <span className="text-[9px] text-slate-400 font-medium">Chưa có dữ liệu thống kê kiểm tra</span>
+                            <span className="text-[9px] text-slate-400 font-medium">
+                              Chưa có dữ liệu thống kê kiểm tra
+                            </span>
                           )}
                         </div>
                       </div>
@@ -1151,7 +1211,9 @@ export default function AdaptivePracticeRoom({
                         className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-4 rounded-lg shadow-sm border-0 transition-all flex items-center gap-1 cursor-pointer outline-none whitespace-nowrap self-stretch sm:self-auto text-center justify-center"
                       >
                         Bắt đầu
-                        <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
                       </button>
                     </div>
                   );
@@ -1173,9 +1235,11 @@ export default function AdaptivePracticeRoom({
               <h2 className="text-base font-bold text-slate-800 mt-1.5 mb-0">{miniTest.title}</h2>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2 bg-slate-900 text-slate-100 px-3 py-2 rounded-lg font-mono text-sm font-black border border-slate-800" title="Thời gian tự luyện tập thoải mái">
-                ⏱️ {Math.floor(remainingSeconds / 60)}:
-                {(remainingSeconds % 60).toString().padStart(2, '0')}
+              <div
+                className="flex items-center gap-2 bg-slate-900 text-slate-100 px-3 py-2 rounded-lg font-mono text-sm font-black border border-slate-800"
+                title="Thời gian tự luyện tập thoải mái"
+              >
+                ⏱️ {Math.floor(remainingSeconds / 60)}:{(remainingSeconds % 60).toString().padStart(2, '0')}
               </div>
               <button
                 onClick={() => submitFocusedExam(userAnswers)}
@@ -1216,16 +1280,15 @@ export default function AdaptivePracticeRoom({
                   </div>
                 )}
               </div>
-              
-              <div 
-                className="overflow-y-auto max-h-[60vh] pr-1"
-                onMouseUp={handleTextSelection}
-              >
+
+              <div className="overflow-y-auto max-h-[60vh] pr-1" onMouseUp={handleTextSelection}>
                 {miniTest.sections[0].questionGroups[activeGroupIdx]?.questions[0]?.passageHtml ? (
                   <div
                     className="prose prose-sm font-serif leading-relaxed text-slate-700 select-text"
                     dangerouslySetInnerHTML={{
-                      __html: sanitizeHtml(miniTest.sections[0].questionGroups[activeGroupIdx].questions[0].passageHtml),
+                      __html: sanitizeHtml(
+                        miniTest.sections[0].questionGroups[activeGroupIdx].questions[0].passageHtml,
+                      ),
                     }}
                   />
                 ) : (
@@ -1242,25 +1305,21 @@ export default function AdaptivePracticeRoom({
                 /* Premium Gapped Text scrollable options board */
                 <div className="flex flex-col gap-4 animate-fade-in pr-1">
                   <div className="border-b pb-2 flex items-center justify-between">
-                    <h3 className="text-sm font-black text-slate-800 m-0">
-                      Paragraph Options (Đoạn văn A–H bị thiếu)
-                    </h3>
+                    <h3 className="text-sm font-black text-slate-800 m-0">Paragraph Options (Đoạn văn A–H bị thiếu)</h3>
                     <span className="text-[10px] text-slate-400 font-bold bg-slate-50 px-2 py-1 rounded">
                       C2 Part 6
                     </span>
                   </div>
                   <div className="flex flex-col gap-4">
                     {paragraphs.map((p: any) => (
-                      <div 
-                        key={p.label} 
+                      <div
+                        key={p.label}
                         className="bg-slate-50/50 hover:bg-accentdeep-50/10 border border-slate-200 hover:border-accentdeep-300 rounded-xl p-4 flex gap-4 text-left transition-all duration-300 shadow-sm"
                       >
                         <div className="w-7 h-7 bg-accentdeep-600 border border-accentdeep-500 text-white rounded-full flex items-center justify-center font-black font-mono text-xs shrink-0 shadow-sm">
                           {p.label}
                         </div>
-                        <div className="text-slate-700 leading-relaxed font-serif text-[11.5px] flex-1">
-                          {p.text}
-                        </div>
+                        <div className="text-slate-700 leading-relaxed font-serif text-[11.5px] flex-1">{p.text}</div>
                       </div>
                     ))}
                   </div>
@@ -1269,14 +1328,12 @@ export default function AdaptivePracticeRoom({
                 /* Sequential focused practice room - Renders exactly active question */
                 <>
                   <div className="border-b pb-2 flex items-center justify-between">
-                    <h3 className="text-sm font-black text-slate-800 m-0">
-                      Answer Sheet (Phiếu trả lời tự luyện)
-                    </h3>
+                    <h3 className="text-sm font-black text-slate-800 m-0">Answer Sheet (Phiếu trả lời tự luyện)</h3>
                     <span className="text-[10px] text-slate-400 font-bold bg-slate-50 px-2 py-1 rounded">
                       Luyện tập Chuyên Đề
                     </span>
                   </div>
-                  
+
                   <div className="flex flex-col gap-6 pr-1">
                     {renderQuestionCard(activeQuestion, currentPracticeQuestionIdx)}
                   </div>
@@ -1289,13 +1346,14 @@ export default function AdaptivePracticeRoom({
               <div className="lg:col-span-12 bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col gap-4 mt-2">
                 <div className="border-b pb-2 flex items-center justify-between">
                   <h3 className="text-sm font-black text-slate-800 m-0">
-                    Answer Sheet (Phiếu trả lời - Đoạn văn {activeGroupIdx + 1} / {miniTest.sections[0].questionGroups.length})
+                    Answer Sheet (Phiếu trả lời - Đoạn văn {activeGroupIdx + 1} /{' '}
+                    {miniTest.sections[0].questionGroups.length})
                   </h3>
                   <span className="text-[10px] text-slate-400 font-bold bg-slate-50 px-2 py-1 rounded">
                     Bấm chọn chữ cái A-H tương ứng điền vào ô trống
                   </span>
                 </div>
-                
+
                 <div className="flex flex-col gap-6 pr-1">
                   {renderQuestionCard(activeQuestion, currentPracticeQuestionIdx)}
                 </div>
@@ -1320,7 +1378,9 @@ export default function AdaptivePracticeRoom({
           <div className="grid grid-cols-2 gap-4 bg-slate-50 border border-slate-200 p-4 rounded-xl my-2 max-w-sm mx-auto w-full">
             <div className="flex flex-col">
               <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Số câu đúng</span>
-              <span className="text-2xl font-black text-emerald-600 mt-0.5">{score.correct} / {score.total}</span>
+              <span className="text-2xl font-black text-emerald-600 mt-0.5">
+                {score.correct} / {score.total}
+              </span>
             </div>
             <div className="flex flex-col border-l border-slate-200">
               <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Độ chính xác</span>
@@ -1334,18 +1394,23 @@ export default function AdaptivePracticeRoom({
             {score.total - score.correct > 0 ? (
               <span>
                 <strong>Sổ tay lỗi sai SRS cập nhật:</strong> Có{' '}
-                <strong className="text-rose-600 font-black">{score.total - score.correct} lỗi sai</strong> đã được tự động nạp vào Sổ tay để lên lịch nhắc nhở làm lại định kỳ!
+                <strong className="text-rose-600 font-black">{score.total - score.correct} lỗi sai</strong> đã được tự
+                động nạp vào Sổ tay để lên lịch nhắc nhở làm lại định kỳ!
               </span>
             ) : (
               <span className="text-emerald-700 font-bold block">
-                🎉 Tuyệt vời! Bạn đã làm đúng tuyệt đối toàn bộ câu hỏi. AI xác nhận điểm yếu này của bạn đã được cải thiện xuất sắc!
+                🎉 Tuyệt vời! Bạn đã làm đúng tuyệt đối toàn bộ câu hỏi. AI xác nhận điểm yếu này của bạn đã được cải
+                thiện xuất sắc!
               </span>
             )}
           </div>
 
           <div className="flex items-center justify-center gap-4 flex-wrap mt-2">
             <button
-              onClick={() => { setIsSubmitted(false); setSelectedTopic(''); }}
+              onClick={() => {
+                setIsSubmitted(false);
+                setSelectedTopic('');
+              }}
               className="bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs py-3 px-6 rounded-lg shadow-sm transition-all uppercase tracking-wider cursor-pointer border-0 outline-none"
             >
               Quay lại danh mục
@@ -1370,8 +1435,8 @@ export default function AdaptivePracticeRoom({
             <button
               onClick={() => setReviewMode('list')}
               className={`py-2 px-4 rounded-lg font-bold text-xs cursor-pointer border transition-all ${
-                reviewMode === 'list' 
-                  ? 'bg-emerald-600 text-white border-emerald-500' 
+                reviewMode === 'list'
+                  ? 'bg-emerald-600 text-white border-emerald-500'
                   : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
               }`}
             >
@@ -1379,7 +1444,7 @@ export default function AdaptivePracticeRoom({
             </button>
             <button
               onClick={() => {
-                const unmastered = vocabList.filter(v => !v.isMastered);
+                const unmastered = vocabList.filter((v) => !v.isMastered);
                 if (unmastered.length === 0) {
                   alert('Không có từ vựng nào chưa thuộc trong từ điển!');
                   return;
@@ -1389,18 +1454,18 @@ export default function AdaptivePracticeRoom({
                 setReviewMode('flashcard');
               }}
               className={`py-2 px-4 rounded-lg font-bold text-xs cursor-pointer border transition-all ${
-                reviewMode === 'flashcard' 
-                  ? 'bg-emerald-600 text-white border-emerald-500' 
+                reviewMode === 'flashcard'
+                  ? 'bg-emerald-600 text-white border-emerald-500'
                   : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
               }`}
             >
-              🎴 Thẻ Flashcard ({vocabList.filter(v => !v.isMastered).length} từ)
+              🎴 Thẻ Flashcard ({vocabList.filter((v) => !v.isMastered).length} từ)
             </button>
             <button
               onClick={startQuiz}
               className={`py-2 px-4 rounded-lg font-bold text-xs cursor-pointer border transition-all ${
-                reviewMode === 'quiz' 
-                  ? 'bg-emerald-600 text-white border-emerald-500' 
+                reviewMode === 'quiz'
+                  ? 'bg-emerald-600 text-white border-emerald-500'
                   : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
               }`}
             >
@@ -1412,30 +1477,31 @@ export default function AdaptivePracticeRoom({
           {reviewMode === 'list' && (
             <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col gap-5">
               <h3 className="text-sm font-black text-slate-800 m-0 border-b pb-3">Sổ Tay Từ Vựng Cá Nhân Hóa C2</h3>
-              
+
               {vocabList.length === 0 ? (
                 <div className="p-8 text-center border border-dashed rounded-xl bg-slate-50 flex flex-col items-center justify-center gap-2">
                   <span className="text-4xl">📓</span>
                   <p className="text-sm font-bold text-slate-800 mt-2">Sổ từ vựng của bạn chưa có từ nào!</p>
                   <p className="text-xs text-slate-400 max-w-sm text-center">
-                    Trong quá trình đọc hiểu tại Phòng Luyện Tập Thích Ứng, bạn hãy bôi đen bất kỳ từ hoặc cụm từ nào để lưu và học lại bằng Flashcard/Quiz tại đây nhé!
+                    Trong quá trình đọc hiểu tại Phòng Luyện Tập Thích Ứng, bạn hãy bôi đen bất kỳ từ hoặc cụm từ nào để
+                    lưu và học lại bằng Flashcard/Quiz tại đây nhé!
                   </p>
                 </div>
               ) : (
                 <div className="flex flex-col gap-4">
-                  {vocabList.map(vocab => (
-                    <div 
+                  {vocabList.map((vocab) => (
+                    <div
                       key={vocab.id}
                       className="border border-slate-100 bg-slate-50/40 hover:bg-slate-50 rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-colors"
                     >
                       <div className="flex-1 flex flex-col gap-1 text-left">
                         <div className="flex items-center gap-3">
                           <span className="font-mono text-sm font-black text-emerald-700">{vocab.word}</span>
-                          <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${
-                            vocab.isMastered 
-                              ? 'bg-green-100 text-green-700' 
-                              : 'bg-amber-100 text-amber-700'
-                          }`}>
+                          <span
+                            className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${
+                              vocab.isMastered ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'
+                            }`}
+                          >
                             {vocab.isMastered ? '✓ Đã thuộc' : '⚡ Đang học'}
                           </span>
                         </div>
@@ -1446,7 +1512,9 @@ export default function AdaptivePracticeRoom({
                           </p>
                         )}
                         {vocab.notes && (
-                          <span className="text-[10px] text-slate-400 font-semibold block mt-0.5">💡 {vocab.notes}</span>
+                          <span className="text-[10px] text-slate-400 font-semibold block mt-0.5">
+                            💡 {vocab.notes}
+                          </span>
                         )}
                       </div>
 
@@ -1479,7 +1547,7 @@ export default function AdaptivePracticeRoom({
           {reviewMode === 'flashcard' && (
             <div className="max-w-md w-full mx-auto flex flex-col gap-5 items-center">
               {(() => {
-                const unmastered = vocabList.filter(v => !v.isMastered);
+                const unmastered = vocabList.filter((v) => !v.isMastered);
                 if (unmastered.length === 0) return null;
                 const current = unmastered[flashcardIdx];
                 if (!current) return null;
@@ -1491,11 +1559,13 @@ export default function AdaptivePracticeRoom({
                     </span>
 
                     {/* Flipping 3D Flashcard Container */}
-                    <div 
+                    <div
                       onClick={() => setIsFlipped(!isFlipped)}
                       className="w-full h-64 flashcard-container cursor-pointer select-none"
                     >
-                      <div className={`w-full h-full relative rounded-2xl shadow-xl border border-slate-250 flashcard-inner ${isFlipped ? 'flipped' : ''}`}>
+                      <div
+                        className={`w-full h-full relative rounded-2xl shadow-xl border border-slate-250 flashcard-inner ${isFlipped ? 'flipped' : ''}`}
+                      >
                         {/* Front (English Word) */}
                         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 to-emerald-800 text-white rounded-2xl flex flex-col items-center justify-center p-6 text-center flashcard-front">
                           <span className="text-[10px] uppercase font-bold tracking-wider opacity-65">Tiếng Anh</span>
@@ -1507,7 +1577,9 @@ export default function AdaptivePracticeRoom({
 
                         {/* Back (Vietnamese Meaning) */}
                         <div className="absolute inset-0 bg-white text-slate-800 rounded-2xl flex flex-col items-center justify-between p-6 text-center flashcard-back">
-                          <span className="text-[10px] uppercase font-black text-slate-400 tracking-wider">Định nghĩa tiếng Việt</span>
+                          <span className="text-[10px] uppercase font-black text-slate-400 tracking-wider">
+                            Định nghĩa tiếng Việt
+                          </span>
                           <div className="flex-1 flex flex-col justify-center gap-3">
                             <h3 className="text-xl font-bold text-slate-800 m-0 leading-tight">{current.meaning}</h3>
                             {current.example && (
@@ -1529,23 +1601,23 @@ export default function AdaptivePracticeRoom({
                       <button
                         onClick={() => {
                           setIsFlipped(false);
-                          setFlashcardIdx(prev => prev > 0 ? prev - 1 : unmastered.length - 1);
+                          setFlashcardIdx((prev) => (prev > 0 ? prev - 1 : unmastered.length - 1));
                         }}
                         className="bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs py-2.5 px-4 rounded-xl cursor-pointer border-0 outline-none transition-all flex-1"
                       >
-                        {"← Từ trước"}
+                        {'← Từ trước'}
                       </button>
-                      
+
                       <button
                         onClick={() => {
                           toggleVocabMastery(current.id);
-                          const nextUnmastered = unmastered.filter(v => v.id !== current.id);
+                          const nextUnmastered = unmastered.filter((v) => v.id !== current.id);
                           if (nextUnmastered.length === 0) {
                             setReviewMode('list');
                             alert('Chúc mừng! Bạn đã học thuộc toàn bộ sổ từ vựng!');
                           } else {
                             setIsFlipped(false);
-                            setFlashcardIdx(prev => prev >= nextUnmastered.length ? 0 : prev);
+                            setFlashcardIdx((prev) => (prev >= nextUnmastered.length ? 0 : prev));
                           }
                         }}
                         className="bg-green-600 hover:bg-green-700 text-white font-bold text-xs py-2.5 px-4 rounded-xl cursor-pointer border-0 outline-none transition-all flex-1"
@@ -1556,11 +1628,11 @@ export default function AdaptivePracticeRoom({
                       <button
                         onClick={() => {
                           setIsFlipped(false);
-                          setFlashcardIdx(prev => prev < unmastered.length - 1 ? prev + 1 : 0);
+                          setFlashcardIdx((prev) => (prev < unmastered.length - 1 ? prev + 1 : 0));
                         }}
                         className="bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs py-2.5 px-4 rounded-xl cursor-pointer border-0 outline-none transition-all flex-1"
                       >
-                        {"Từ tiếp theo →"}
+                        {'Từ tiếp theo →'}
                       </button>
                     </div>
                   </>
@@ -1577,7 +1649,8 @@ export default function AdaptivePracticeRoom({
                   Trắc Nghiệm Ghi Nhớ Từ Vựng C2
                 </span>
                 <h3 className="text-base font-bold text-slate-500 mt-2 m-0 leading-relaxed">
-                  Từ hoặc cụm từ: <span className="font-mono font-black text-emerald-700 text-lg">{quizWord.word}</span> có nghĩa là gì?
+                  Từ hoặc cụm từ: <span className="font-mono font-black text-emerald-700 text-lg">{quizWord.word}</span>{' '}
+                  có nghĩa là gì?
                 </h3>
               </div>
 
@@ -1585,7 +1658,7 @@ export default function AdaptivePracticeRoom({
                 {quizOptions.map((opt, i) => {
                   const isCorrect = opt === quizWord.meaning;
                   const isSelected = selectedQuizOpt === opt;
-                  
+
                   let optionClass = 'border-slate-200 bg-white hover:bg-slate-55';
                   if (isQuizAnswered) {
                     if (isCorrect) {
@@ -1610,8 +1683,12 @@ export default function AdaptivePracticeRoom({
                       className={`w-full p-3 rounded-lg border text-xs text-left transition-all cursor-pointer outline-none ${optionClass}`}
                     >
                       {i + 1}. {opt}
-                      {isQuizAnswered && isCorrect && <span className="float-right text-green-600 font-black">✓ Đúng</span>}
-                      {isQuizAnswered && isSelected && !isCorrect && <span className="float-right text-red-600 font-black">✗ Sai</span>}
+                      {isQuizAnswered && isCorrect && (
+                        <span className="float-right text-green-600 font-black">✓ Đúng</span>
+                      )}
+                      {isQuizAnswered && isSelected && !isCorrect && (
+                        <span className="float-right text-red-600 font-black">✗ Sai</span>
+                      )}
                     </button>
                   );
                 })}
@@ -1629,7 +1706,9 @@ export default function AdaptivePracticeRoom({
                     <button
                       onClick={() => {
                         toggleVocabMastery(quizWord.id);
-                        alert(`Đã chuyển từ "${quizWord.word}" sang trạng thái "Đã Thuộc" và bỏ qua trong các Quiz tiếp theo!`);
+                        alert(
+                          `Đã chuyển từ "${quizWord.word}" sang trạng thái "Đã Thuộc" và bỏ qua trong các Quiz tiếp theo!`,
+                        );
                         startQuiz();
                       }}
                       className="bg-green-600 hover:bg-green-700 text-white font-bold text-xs py-2 px-4 rounded-lg cursor-pointer outline-none border-0 transition-all"
@@ -1641,7 +1720,7 @@ export default function AdaptivePracticeRoom({
                       onClick={startQuiz}
                       className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-4 rounded-lg cursor-pointer outline-none border-0 transition-all flex items-center gap-1.5"
                     >
-                      {"Từ tiếp theo →"}
+                      {'Từ tiếp theo →'}
                     </button>
                   </div>
                 </div>

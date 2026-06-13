@@ -29,23 +29,23 @@ export default function useErrorNotebook({ db, userId, onRefreshHistory }: UseEr
   useEffect(() => {
     if (!db) return;
     db.listErrorEntries(userId)
-      .then(entries => {
+      .then((entries) => {
         setErrorEntries(entries.sort((a, b) => a.nextReviewAt.localeCompare(b.nextReviewAt)));
       })
-      .catch(e => {
+      .catch((e) => {
         console.error('Failed to load error entries in hook:', e);
       });
   }, [db, userId]);
 
   const startNotebookReview = () => {
     const now = new Date();
-    const due = errorEntries.filter(entry => {
+    const due = errorEntries.filter((entry) => {
       if (notebookFilter === 'all') return true;
       return new Date(entry.nextReviewAt) <= now;
     });
-    
+
     if (due.length === 0) return;
-    
+
     setReviewQueue(due);
     setCurrentReviewIdx(0);
     setReviewUserAnswer('');
@@ -55,14 +55,14 @@ export default function useErrorNotebook({ db, userId, onRefreshHistory }: UseEr
   const handleSrsGrade = async (grade: number) => {
     if (currentReviewIdx < 0 || currentReviewIdx >= reviewQueue.length || !db) return;
     const entry = reviewQueue[currentReviewIdx];
-    
+
     try {
       await db.updateErrorEntrySrs(entry.id, grade);
       await loadErrorEntries();
       await onRefreshHistory();
-      
+
       if (currentReviewIdx + 1 < reviewQueue.length) {
-        setCurrentReviewIdx(prev => prev + 1);
+        setCurrentReviewIdx((prev) => prev + 1);
         setReviewUserAnswer('');
         setReviewShowCorrect(false);
       } else {
@@ -91,6 +91,6 @@ export default function useErrorNotebook({ db, userId, onRefreshHistory }: UseEr
     setNotebookFilter,
     loadErrorEntries,
     startNotebookReview,
-    handleSrsGrade
+    handleSrsGrade,
   };
 }

@@ -1,4 +1,11 @@
-import type { StorageAdapter, ExamAttempt, WritingFeedback, LearnerProfile, ErrorNotebookEntry, LocalUser } from './index';
+import type {
+  StorageAdapter,
+  ExamAttempt,
+  WritingFeedback,
+  LearnerProfile,
+  ErrorNotebookEntry,
+  LocalUser,
+} from './index';
 import type { IeltsTest } from '@miuprep/content';
 import { normalizeLearningEvents, type LearningEventRecord } from '@miuprep/learning';
 
@@ -57,7 +64,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           level: 'ERROR',
           module: 'SQLITE',
           message: `saveAttempt failed: ${e instanceof Error ? e.message : String(e)}`,
-          payload: JSON.stringify({ attemptId: attempt.local_id, userId: attempt.userId })
+          payload: JSON.stringify({ attemptId: attempt.local_id, userId: attempt.userId }),
         });
       } catch (logErr) {
         console.error('Failed to log event in DB:', logErr);
@@ -71,7 +78,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return null;
 
     try {
-      const r = await invoke('get_attempt', { localId }) as any;
+      const r = (await invoke('get_attempt', { localId })) as any;
       if (!r) return null;
 
       return {
@@ -87,16 +94,19 @@ export class TauriSqliteAdapter implements StorageAdapter {
         remainingSeconds: Number(r.remaining_seconds),
         answers: JSON.parse(r.answers_json || '{}'),
         pauseRanges: JSON.parse(r.pause_ranges_json || '[]'),
-        scores: r.status === 'submitted' ? {
-          rawScore: Number(r.raw_score),
-          bandScore: Number(r.band_score),
-          totalQuestions: Number(r.total_questions),
-          isMockScoring: r.is_mock_scoring === 1
-        } : undefined,
+        scores:
+          r.status === 'submitted'
+            ? {
+                rawScore: Number(r.raw_score),
+                bandScore: Number(r.band_score),
+                totalQuestions: Number(r.total_questions),
+                isMockScoring: r.is_mock_scoring === 1,
+              }
+            : undefined,
         createdAt: r.created_at,
         updatedAt: r.updated_at,
         sync_status: r.sync_status as 'synced' | 'pending' | 'failed',
-        version: Number(r.version)
+        version: Number(r.version),
       };
     } catch (e) {
       console.error('[SQLite Adapter] Get attempt failed:', e);
@@ -109,8 +119,8 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return [];
 
     try {
-      const rows = await invoke('list_attempts', { userId }) as any[];
-      return rows.map(r => ({
+      const rows = (await invoke('list_attempts', { userId })) as any[];
+      return rows.map((r) => ({
         local_id: r.local_id,
         remote_id: r.remote_id || undefined,
         testId: r.test_id,
@@ -123,16 +133,19 @@ export class TauriSqliteAdapter implements StorageAdapter {
         remainingSeconds: Number(r.remaining_seconds),
         answers: JSON.parse(r.answers_json || '{}'),
         pauseRanges: JSON.parse(r.pause_ranges_json || '[]'),
-        scores: r.status === 'submitted' ? {
-          rawScore: Number(r.raw_score),
-          bandScore: Number(r.band_score),
-          totalQuestions: Number(r.total_questions),
-          isMockScoring: r.is_mock_scoring === 1
-        } : undefined,
+        scores:
+          r.status === 'submitted'
+            ? {
+                rawScore: Number(r.raw_score),
+                bandScore: Number(r.band_score),
+                totalQuestions: Number(r.total_questions),
+                isMockScoring: r.is_mock_scoring === 1,
+              }
+            : undefined,
         createdAt: r.created_at,
         updatedAt: r.updated_at,
         sync_status: r.sync_status as 'synced' | 'pending' | 'failed',
-        version: Number(r.version)
+        version: Number(r.version),
       }));
     } catch (e) {
       console.error('[SQLite Adapter] List attempts failed:', e);
@@ -145,7 +158,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return null;
 
     try {
-      const test = await invoke('get_test', { id: testId }) as IeltsTest;
+      const test = (await invoke('get_test', { id: testId })) as IeltsTest;
       return test || null;
     } catch (e) {
       console.error('[SQLite Adapter] Get test failed:', e);
@@ -155,9 +168,9 @@ export class TauriSqliteAdapter implements StorageAdapter {
 
   async saveTest(test: IeltsTest): Promise<void> {
     const errors = await validateIeltsTestForDb(test);
-    const critical = errors.filter(err => err.severity === 'error');
+    const critical = errors.filter((err) => err.severity === 'error');
     if (critical.length > 0) {
-      throw new Error(`Invalid test package: ${critical.map(c => c.message).join(', ')}`);
+      throw new Error(`Invalid test package: ${critical.map((c) => c.message).join(', ')}`);
     }
 
     const invoke = this.getTauriInvoke();
@@ -173,7 +186,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           level: 'ERROR',
           module: 'SQLITE',
           message: `saveTest failed: ${e instanceof Error ? e.message : String(e)}`,
-          payload: JSON.stringify({ testId: test.id, title: test.title })
+          payload: JSON.stringify({ testId: test.id, title: test.title }),
         });
       } catch (logErr) {
         console.error('Failed to log event in DB:', logErr);
@@ -187,7 +200,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return [];
 
     try {
-      const tests = await invoke('list_tests') as IeltsTest[];
+      const tests = (await invoke('list_tests')) as IeltsTest[];
       return tests || [];
     } catch (e) {
       console.error('[SQLite Adapter] List tests failed:', e);
@@ -209,7 +222,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           level: 'ERROR',
           module: 'SQLITE',
           message: `saveWritingFeedback failed: ${e instanceof Error ? e.message : String(e)}`,
-          payload: JSON.stringify({ attemptId: feedback.attemptId, taskNumber: feedback.taskNumber })
+          payload: JSON.stringify({ attemptId: feedback.attemptId, taskNumber: feedback.taskNumber }),
         });
       } catch (logErr) {
         console.error('Failed to log event in DB:', logErr);
@@ -223,7 +236,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return null;
 
     try {
-      const feedback = await invoke('get_writing_feedback', { attemptId, taskNumber }) as WritingFeedback;
+      const feedback = (await invoke('get_writing_feedback', { attemptId, taskNumber })) as WritingFeedback;
       return feedback || null;
     } catch (e) {
       console.error('[SQLite Adapter] Get writing feedback failed:', e);
@@ -232,14 +245,15 @@ export class TauriSqliteAdapter implements StorageAdapter {
   }
 
   async exportLocalData(userId?: string): Promise<string> {
-    const targetUserId = userId || (typeof window !== 'undefined' ? localStorage.getItem('current_user_id') : null) || '';
+    const targetUserId =
+      userId || (typeof window !== 'undefined' ? localStorage.getItem('current_user_id') : null) || '';
     const attempts = await this.listAttempts(targetUserId);
     const tests = await this.listTests();
     const payload = {
       attempts,
       tests,
       export_version: 'sqlite-1.0.0',
-      exported_at: new Date().toISOString()
+      exported_at: new Date().toISOString(),
     };
     return btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
   }
@@ -282,7 +296,10 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return [];
 
     try {
-      const rows = await invoke('list_learning_events', { userId: userId || null, limit: limit || null }) as unknown[];
+      const rows = (await invoke('list_learning_events', {
+        userId: userId || null,
+        limit: limit || null,
+      })) as unknown[];
       const normalized = normalizeLearningEvents(Array.isArray(rows) ? rows : [])
         .filter((event) => !userId || event.learnerId === userId)
         .sort((a, b) => b.occurredAt.localeCompare(a.occurredAt));
@@ -306,7 +323,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           level: 'ERROR',
           module: 'SQLITE',
           message: `saveLearnerProfile failed: ${e instanceof Error ? e.message : String(e)}`,
-          payload: JSON.stringify({ userId: profile.userId, targetBand: profile.targetBand })
+          payload: JSON.stringify({ userId: profile.userId, targetBand: profile.targetBand }),
         });
       } catch (logErr) {
         console.error('Failed to log event in DB:', logErr);
@@ -319,7 +336,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
     const invoke = this.getTauriInvoke();
     if (!invoke) return null;
     try {
-      const p = await invoke('get_learner_profile', { userId }) as LearnerProfile;
+      const p = (await invoke('get_learner_profile', { userId })) as LearnerProfile;
       return p || null;
     } catch (e) {
       console.error('[SQLite Adapter] Get profile failed:', e);
@@ -340,7 +357,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           level: 'ERROR',
           module: 'SQLITE',
           message: `addErrorEntry failed: ${e instanceof Error ? e.message : String(e)}`,
-          payload: JSON.stringify({ userId: entry.userId, attemptId: entry.attemptId, questionId: entry.questionId })
+          payload: JSON.stringify({ userId: entry.userId, attemptId: entry.attemptId, questionId: entry.questionId }),
         });
       } catch (logErr) {
         console.error('Failed to log event in DB:', logErr);
@@ -353,7 +370,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
     const invoke = this.getTauriInvoke();
     if (!invoke) return [];
     try {
-      const entries = await invoke('list_error_entries', { userId }) as ErrorNotebookEntry[];
+      const entries = (await invoke('list_error_entries', { userId })) as ErrorNotebookEntry[];
       return entries || [];
     } catch (e) {
       console.error('[SQLite Adapter] List error entries failed:', e);
@@ -374,7 +391,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           level: 'ERROR',
           module: 'SQLITE',
           message: `updateErrorEntrySrs failed: ${e instanceof Error ? e.message : String(e)}`,
-          payload: JSON.stringify({ id, grade })
+          payload: JSON.stringify({ id, grade }),
         });
       } catch (logErr) {
         console.error('Failed to log event in DB:', logErr);
@@ -395,7 +412,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
         targetBand: user.targetBand,
         examDate: user.examDate,
         role: user.role || 'student',
-        createdAt: user.createdAt
+        createdAt: user.createdAt,
       });
 
       // Save additional metadata in localStorage safely
@@ -405,7 +422,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           contactInfo: user.contactInfo || '',
           status: user.status || (user.role === 'admin' ? 'approved' : 'pending'),
           assignedTrack: user.assignedTrack || 'ielts',
-          assignedTracks: user.assignedTracks || [user.assignedTrack || 'ielts']
+          assignedTracks: user.assignedTracks || [user.assignedTrack || 'ielts'],
         };
         localStorage.setItem(`user_meta_${user.id}`, JSON.stringify(meta));
       }
@@ -417,7 +434,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
           level: 'ERROR',
           module: 'SQLITE',
           message: `registerLocalUser failed: ${e instanceof Error ? e.message : String(e)}`,
-          payload: JSON.stringify({ username: user.username, targetBand: user.targetBand })
+          payload: JSON.stringify({ username: user.username, targetBand: user.targetBand }),
         });
       } catch (logErr) {
         console.error('Failed to log event in DB:', logErr);
@@ -431,7 +448,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return null;
 
     try {
-      const r = await invoke('get_local_user', { username }) as any;
+      const r = (await invoke('get_local_user', { username })) as any;
       if (!r) return null;
 
       const user: LocalUser = {
@@ -440,8 +457,8 @@ export class TauriSqliteAdapter implements StorageAdapter {
         passwordHash: r.password_hash,
         targetBand: Number(r.targetBand),
         examDate: r.examDate,
-        role: r.role as 'admin' | 'student' || 'student',
-        createdAt: r.createdAt
+        role: (r.role as 'admin' | 'student') || 'student',
+        createdAt: r.createdAt,
       };
 
       // Merge local metadata
@@ -476,15 +493,15 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return [];
 
     try {
-      const rows = await invoke('list_local_users') as any[];
-      return rows.map(r => {
+      const rows = (await invoke('list_local_users')) as any[];
+      return rows.map((r) => {
         const user: Omit<LocalUser, 'passwordHash'> = {
           id: r.id,
           username: r.username,
           targetBand: Number(r.targetBand),
           examDate: r.examDate,
-          role: r.role as 'admin' | 'student' || 'student',
-          createdAt: r.createdAt
+          role: (r.role as 'admin' | 'student') || 'student',
+          createdAt: r.createdAt,
         };
 
         // Merge local metadata
@@ -523,7 +540,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
         const listKey = 'ielts_app_users_list';
         const usersJson = localStorage.getItem(listKey) || '[]';
         let usersList: string[] = JSON.parse(usersJson);
-        usersList = usersList.filter(u => u !== username);
+        usersList = usersList.filter((u) => u !== username);
         localStorage.setItem(listKey, JSON.stringify(usersList));
         localStorage.removeItem(`ielts_app_user_${username}`);
       } catch (e) {
@@ -535,12 +552,15 @@ export class TauriSqliteAdapter implements StorageAdapter {
     try {
       await invoke('delete_local_user', { username });
     } catch (e) {
-      console.warn('[SQLite Adapter] Rust command delete_local_user failed or not found, performing local fallback:', e);
+      console.warn(
+        '[SQLite Adapter] Rust command delete_local_user failed or not found, performing local fallback:',
+        e,
+      );
       try {
         const listKey = 'ielts_app_users_list';
         const usersJson = localStorage.getItem(listKey) || '[]';
         let usersList: string[] = JSON.parse(usersJson);
-        usersList = usersList.filter(u => u !== username);
+        usersList = usersList.filter((u) => u !== username);
         localStorage.setItem(listKey, JSON.stringify(usersList));
         localStorage.removeItem(`ielts_app_user_${username}`);
       } catch (err) {
@@ -559,7 +579,7 @@ export class TauriSqliteAdapter implements StorageAdapter {
         level: log.level,
         module: log.module,
         message: log.message,
-        payload: log.payload || null
+        payload: log.payload || null,
       });
     } catch (e) {
       console.error('[SQLite Adapter] log_system_event failed:', e);
@@ -571,14 +591,14 @@ export class TauriSqliteAdapter implements StorageAdapter {
     if (!invoke) return [];
 
     try {
-      const rows = await invoke('list_system_logs', { limit: limit || 100 }) as any[];
-      return rows.map(r => ({
+      const rows = (await invoke('list_system_logs', { limit: limit || 100 })) as any[];
+      return rows.map((r) => ({
         id: r.id,
         level: r.level,
         module: r.module,
         message: r.message,
         payload: r.payload,
-        createdAt: r.createdAt
+        createdAt: r.createdAt,
       }));
     } catch (e) {
       console.error('[SQLite Adapter] list_system_logs failed:', e);

@@ -13,26 +13,29 @@ page.on('console', (message) => {
 });
 page.on('pageerror', (error) => errors.push(error.message));
 
-await page.addInitScript(({ qaUsername, now }) => {
-  const user = {
-    id: `user-${qaUsername}`,
-    username: qaUsername,
-    passwordHash: 'qa123456',
-    displayName: 'QA Template Practice',
-    contactInfo: 'qa-template@example.test',
-    role: 'student',
-    targetBand: 6.5,
-    examDate: '2026-12-01',
-    createdAt: now,
-    status: 'approved',
-    assignedTrack: 'math',
-    assignedTracks: ['math', 'ielts'],
-    linkedStudents: [],
-  };
-  localStorage.setItem('miuprep_active_username', qaUsername);
-  localStorage.setItem('ielts_app_users_list', JSON.stringify([qaUsername]));
-  localStorage.setItem(`ielts_app_user_${qaUsername}`, JSON.stringify(user));
-}, { qaUsername, now });
+await page.addInitScript(
+  ({ qaUsername, now }) => {
+    const user = {
+      id: `user-${qaUsername}`,
+      username: qaUsername,
+      passwordHash: 'qa123456',
+      displayName: 'QA Template Practice',
+      contactInfo: 'qa-template@example.test',
+      role: 'student',
+      targetBand: 6.5,
+      examDate: '2026-12-01',
+      createdAt: now,
+      status: 'approved',
+      assignedTrack: 'math',
+      assignedTracks: ['math', 'ielts'],
+      linkedStudents: [],
+    };
+    localStorage.setItem('miuprep_active_username', qaUsername);
+    localStorage.setItem('ielts_app_users_list', JSON.stringify([qaUsername]));
+    localStorage.setItem(`ielts_app_user_${qaUsername}`, JSON.stringify(user));
+  },
+  { qaUsername, now },
+);
 
 await page.goto(portalUrl, { waitUntil: 'domcontentloaded' });
 await page.getByRole('button', { name: 'Courses 5 tracks', exact: true }).click();
@@ -40,7 +43,7 @@ await page.getByText('LessonTemplate core', { exact: true }).waitFor({ state: 'v
 await page.getByText('English Core', { exact: true }).waitFor({ state: 'visible', timeout: 15000 });
 
 const openPracticeButtons = page.getByRole('button', { name: 'Open practice', exact: true });
-if (await openPracticeButtons.count() !== 2) {
+if ((await openPracticeButtons.count()) !== 2) {
   throw new Error(`Expected 2 Open practice buttons, got ${await openPracticeButtons.count()}`);
 }
 
@@ -84,15 +87,16 @@ await browser.close();
 const ok =
   proof.actionEventCount === 1 &&
   proof.practiceEventCount === 1 &&
-  proof.practiceEvents.every((event) =>
-    event.type === 'practice_attempt' &&
-    event.entityType === 'learning_item' &&
-    event.correct === true &&
-    event.score === 1 &&
-    event.maxScore === 1 &&
-    event.domainId === 'mathematics' &&
-    Boolean(event.itemId) &&
-    Boolean(event.templateId)
+  proof.practiceEvents.every(
+    (event) =>
+      event.type === 'practice_attempt' &&
+      event.entityType === 'learning_item' &&
+      event.correct === true &&
+      event.score === 1 &&
+      event.maxScore === 1 &&
+      event.domainId === 'mathematics' &&
+      Boolean(event.itemId) &&
+      Boolean(event.templateId),
   ) &&
   errors.length === 0;
 

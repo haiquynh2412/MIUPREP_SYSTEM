@@ -1,12 +1,7 @@
 import { useState } from 'react';
 import { t } from '../data/i18n.js';
 
-export default function HomeLabCard({
-  experiments = [],
-  onMarkComplete,
-  completedIds = [],
-  lang = 'vi',
-}: any) {
+export default function HomeLabCard({ experiments = [], onMarkComplete, completedIds = [], lang = 'vi' }: any) {
   const [showAnswers, setShowAnswers] = useState({});
 
   const completedSet = new Set(completedIds);
@@ -36,13 +31,13 @@ export default function HomeLabCard({
           const isCompleted = completedSet.has(id);
           const answerVisible = showAnswers[id];
 
-          const title = lang === 'en' ? (exp.titleEn || exp.title) : exp.title;
-          const subtitle = lang === 'en' ? (exp.subtitleEn || exp.subtitle) : exp.subtitle;
-          const materials = lang === 'en' ? (exp.materialsEn || exp.materials) : exp.materials;
-          const steps = lang === 'en' ? (exp.stepsEn || exp.steps) : exp.steps;
-          const safety = lang === 'en' ? (exp.safetyEn || exp.safety) : exp.safety;
-          const question = lang === 'en' ? (exp.questionEn || exp.question) : exp.question;
-          const answer = lang === 'en' ? (exp.answerEn || exp.answer) : exp.answer;
+          const title = lang === 'en' ? exp.titleEn || exp.title : exp.title;
+          const subtitle = lang === 'en' ? exp.subtitleEn || exp.subtitle : exp.subtitle;
+          const materials = lang === 'en' ? exp.materialsEn || exp.materials : exp.materials;
+          const steps = lang === 'en' ? exp.stepsEn || exp.steps : exp.steps;
+          const safety = lang === 'en' ? exp.safetyEn || exp.safety : exp.safety;
+          const question = lang === 'en' ? exp.questionEn || exp.question : exp.question;
+          const answer = lang === 'en' ? exp.answerEn || exp.answer : exp.answer;
 
           return (
             <div
@@ -57,12 +52,8 @@ export default function HomeLabCard({
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
                 <span style={{ fontSize: '1.5rem' }}>🧪</span>
                 <div>
-                  <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text-heading)' }}>
-                    {title}
-                  </div>
-                  {subtitle && (
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{subtitle}</div>
-                  )}
+                  <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text-heading)' }}>{title}</div>
+                  {subtitle && <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{subtitle}</div>}
                 </div>
                 {isCompleted && (
                   <span style={{ marginLeft: 'auto', color: 'var(--success)', fontWeight: 600, fontSize: '0.85rem' }}>
@@ -79,7 +70,9 @@ export default function HomeLabCard({
                   </div>
                   <ul style={{ margin: 0, paddingLeft: 20, color: 'var(--text-muted)', fontSize: '0.85rem' }}>
                     {materials.map((mat, i) => (
-                      <li key={i} style={{ marginBottom: 3 }}>{mat}</li>
+                      <li key={i} style={{ marginBottom: 3 }}>
+                        {mat}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -91,9 +84,13 @@ export default function HomeLabCard({
                   <div style={{ fontWeight: 600, fontSize: '0.9rem', color: 'var(--text-heading)', marginBottom: 6 }}>
                     {t('homelab_steps_label', lang)}
                   </div>
-                  <ol style={{ margin: 0, paddingLeft: 20, color: 'var(--text)', fontSize: '0.85rem', lineHeight: 1.8 }}>
+                  <ol
+                    style={{ margin: 0, paddingLeft: 20, color: 'var(--text)', fontSize: '0.85rem', lineHeight: 1.8 }}
+                  >
                     {steps.map((step, i) => (
-                      <li key={i} style={{ marginBottom: 4 }}>{step}</li>
+                      <li key={i} style={{ marginBottom: 4 }}>
+                        {step}
+                      </li>
                     ))}
                   </ol>
                 </div>

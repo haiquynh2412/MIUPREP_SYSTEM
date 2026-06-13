@@ -358,7 +358,10 @@ export async function gradeSpeakingWithTutorEvent(
 ): Promise<TutorEventResult<SpeakingFeedback>> {
   const feedback = await adapter.gradeSpeaking(params);
   const provider = inferProvider(feedback.modelUsed, context.source);
-  const reliability = scoreProductiveFeedbackReliability(feedback, 'speaking', { responseText: feedback.transcript || params.transcriptMock || '', provider });
+  const reliability = scoreProductiveFeedbackReliability(feedback, 'speaking', {
+    responseText: feedback.transcript || params.transcriptMock || '',
+    provider,
+  });
   const practicePlan = generateSpeakingFeedbackPracticePlan(feedback, {
     track: params.track || context.programId || 'ielts',
     learnerId: context.learnerId || state.learnerId,
@@ -410,15 +413,17 @@ export function generateWritingFeedbackPracticePlan(
     ...(feedback.corrections || []).map((item) => item.reason),
     options.promptInstruction || '',
   ]);
-  const tasks = signals.map((signal, index) => buildPracticeTask({
-    attemptId: feedback.attemptId,
-    feedbackType: 'writing',
-    track,
-    signal,
-    priority: index + 1,
-    createdAt,
-    feedback,
-  }));
+  const tasks = signals.map((signal, index) =>
+    buildPracticeTask({
+      attemptId: feedback.attemptId,
+      feedbackType: 'writing',
+      track,
+      signal,
+      priority: index + 1,
+      createdAt,
+      feedback,
+    }),
+  );
 
   return {
     schemaVersion: 'feedback_to_practice_v1',
@@ -447,15 +452,17 @@ export function generateSpeakingFeedbackPracticePlan(
     ...(feedback.pronunciationErrors || []).map((item) => `${item.word} ${item.suggestion}`),
     feedback.transcript || '',
   ]);
-  const tasks = signals.map((signal, index) => buildPracticeTask({
-    attemptId: feedback.attemptId,
-    feedbackType: 'speaking',
-    track,
-    signal,
-    priority: index + 1,
-    createdAt,
-    feedback,
-  }));
+  const tasks = signals.map((signal, index) =>
+    buildPracticeTask({
+      attemptId: feedback.attemptId,
+      feedbackType: 'speaking',
+      track,
+      signal,
+      priority: index + 1,
+      createdAt,
+      feedback,
+    }),
+  );
 
   return {
     schemaVersion: 'feedback_to_practice_v1',
@@ -534,8 +541,10 @@ export function scoreProductiveFeedbackReliability(
   const responseText = options.responseText || ('transcript' in feedback ? feedback.transcript : '');
   const outputWordCount = countWords(responseText);
   const evidenceCount = collectFeedbackEvidence(feedback).length;
-  const issueCount = 'corrections' in feedback ? (feedback.corrections || []).length : (feedback.pronunciationErrors || []).length;
-  const issueDensityPer100Words = outputWordCount > 0 ? round2((issueCount / outputWordCount) * 100) : issueCount > 0 ? 100 : 0;
+  const issueCount =
+    'corrections' in feedback ? (feedback.corrections || []).length : (feedback.pronunciationErrors || []).length;
+  const issueDensityPer100Words =
+    outputWordCount > 0 ? round2((issueCount / outputWordCount) * 100) : issueCount > 0 ? 100 : 0;
   const reasons: string[] = [];
   let score = rawConfidence;
 
@@ -616,7 +625,11 @@ export function buildProductiveSkillGovernanceReport(
   const generatedAt = options.generatedAt || new Date().toISOString();
   const findings = samples.flatMap((sample) => evaluateProductiveSkillSample(sample, options));
   const deviations = samples
-    .map((sample) => typeof sample.expertOverall === 'number' ? Math.abs(Number(sample.feedback.bandOverall || 0) - sample.expertOverall) : NaN)
+    .map((sample) =>
+      typeof sample.expertOverall === 'number'
+        ? Math.abs(Number(sample.feedback.bandOverall || 0) - sample.expertOverall)
+        : NaN,
+    )
     .filter((value) => Number.isFinite(value));
   const reliabilityRows = samples.map((sample) =>
     scoreProductiveFeedbackReliability(sample.feedback, sample.feedbackType, {
@@ -625,8 +638,12 @@ export function buildProductiveSkillGovernanceReport(
     }),
   );
   const reliabilityConfidences = reliabilityRows.map((row) => row.confidence);
-  const blockedSamples = new Set(findings.filter((finding) => finding.severity === 'blocked').map((finding) => finding.sampleId)).size;
-  const watchSamples = new Set(findings.filter((finding) => finding.severity === 'watch').map((finding) => finding.sampleId)).size;
+  const blockedSamples = new Set(
+    findings.filter((finding) => finding.severity === 'blocked').map((finding) => finding.sampleId),
+  ).size;
+  const watchSamples = new Set(
+    findings.filter((finding) => finding.severity === 'watch').map((finding) => finding.sampleId),
+  ).size;
   const passedSamples = Math.max(0, samples.length - blockedSamples - watchSamples);
   const status = samples.length === 0 ? 'watch' : blockedSamples > 0 ? 'blocked' : watchSamples > 0 ? 'watch' : 'pass';
 
@@ -656,17 +673,19 @@ export function buildProductiveSkillGovernanceReport(
       'evidence',
       'createdAt',
     ],
-    findings: findings.length ? findings : [
-      {
-        sampleId: samples.length ? 'all' : 'none',
-        feedbackType: samples[0]?.feedbackType || 'writing',
-        severity: samples.length ? 'pass' : 'watch',
-        reason: samples.length ? 'governance_passed' : 'no_golden_samples',
-        detail: samples.length
-          ? 'All supplied productive-skill samples met metadata and deviation gates.'
-          : 'No golden samples were supplied; productive-skill mastery remains locked.',
-      },
-    ],
+    findings: findings.length
+      ? findings
+      : [
+          {
+            sampleId: samples.length ? 'all' : 'none',
+            feedbackType: samples[0]?.feedbackType || 'writing',
+            severity: samples.length ? 'pass' : 'watch',
+            reason: samples.length ? 'governance_passed' : 'no_golden_samples',
+            detail: samples.length
+              ? 'All supplied productive-skill samples met metadata and deviation gates.'
+              : 'No golden samples were supplied; productive-skill mastery remains locked.',
+          },
+        ],
     detail:
       status === 'blocked'
         ? 'At least one productive-skill sample is missing required provenance or exceeds reliability thresholds.'
@@ -677,17 +696,21 @@ export function buildProductiveSkillGovernanceReport(
 }
 
 export function classifyTutorError(input: AITutorQuestionInput): ErrorCategory[] {
-  const provided = uniqueErrorCategories(input.errorCategories || []).filter((item) => item !== 'none' && item !== 'unknown');
+  const provided = uniqueErrorCategories(input.errorCategories || []).filter(
+    (item) => item !== 'none' && item !== 'unknown',
+  );
   if (provided.length) return provided;
 
-  const haystack = normalizeText([
-    input.questionText || '',
-    input.userAnswer || '',
-    input.correctAnswer || '',
-    input.workedSolution || '',
-    ...(input.conceptIds || []),
-    ...(input.skillIds || []),
-  ].join(' '));
+  const haystack = normalizeText(
+    [
+      input.questionText || '',
+      input.userAnswer || '',
+      input.correctAnswer || '',
+      input.workedSolution || '',
+      ...(input.conceptIds || []),
+      ...(input.skillIds || []),
+    ].join(' '),
+  );
   const result: ErrorCategory[] = [];
 
   if (containsAny(haystack, ['sqrt', 'quadratic', 'equation', 'factor', 'vieta', 'bien doi', 'phuong trinh'])) {
@@ -753,15 +776,17 @@ function selectProductiveSignals(
   maxTasks: number,
   supplementalText: string[],
 ): ProductiveSkillSignal[] {
-  const defaultAreas: ProductiveSkillActionArea[] = feedbackType === 'writing'
-    ? ['task_response', 'coherence', 'lexical_resource', 'grammar', 'register']
-    : ['fluency', 'pronunciation', 'lexical_range', 'grammar_accuracy', 'interaction'];
+  const defaultAreas: ProductiveSkillActionArea[] =
+    feedbackType === 'writing'
+      ? ['task_response', 'coherence', 'lexical_resource', 'grammar', 'register']
+      : ['fluency', 'pronunciation', 'lexical_range', 'grammar_accuracy', 'interaction'];
   const text = normalizeText([track, ...supplementalText].join(' '));
   const signals = criteria
     .map((criterion) => ({
-      area: feedbackType === 'writing'
-        ? mapWritingCriterionToArea(criterion.criterionName)
-        : mapSpeakingCriterionToArea(criterion.criterionName),
+      area:
+        feedbackType === 'writing'
+          ? mapWritingCriterionToArea(criterion.criterionName)
+          : mapSpeakingCriterionToArea(criterion.criterionName),
       criterionName: criterion.criterionName,
       score: typeof criterion.band === 'number' ? criterion.band : undefined,
       nextAction: criterion.nextAction,
@@ -778,7 +803,13 @@ function selectProductiveSignals(
     if (!byArea.has(signal.area)) byArea.set(signal.area, signal);
   });
 
-  if (feedbackType === 'writing' && !byArea.has('register') && (track === 'cpe' || track === 'cae' || containsAny(text, ['register', 'tone', 'formal', 'audience', 'proposal', 'article', 'letter']))) {
+  if (
+    feedbackType === 'writing' &&
+    !byArea.has('register') &&
+    (track === 'cpe' ||
+      track === 'cae' ||
+      containsAny(text, ['register', 'tone', 'formal', 'audience', 'proposal', 'article', 'letter']))
+  ) {
     byArea.set('register', {
       area: 'register',
       criterionName: 'Register and audience fit',
@@ -786,7 +817,11 @@ function selectProductiveSignals(
       evidence: ['Register risk inferred from task type or feedback text.'],
     });
   }
-  if (feedbackType === 'speaking' && !byArea.has('pronunciation') && containsAny(text, ['pronunciation', 'pronounce', 'stress', 'intonation'])) {
+  if (
+    feedbackType === 'speaking' &&
+    !byArea.has('pronunciation') &&
+    containsAny(text, ['pronunciation', 'pronounce', 'stress', 'intonation'])
+  ) {
     byArea.set('pronunciation', {
       area: 'pronunciation',
       criterionName: 'Pronunciation',
@@ -794,7 +829,13 @@ function selectProductiveSignals(
       evidence: ['Pronunciation risk inferred from feedback text.'],
     });
   }
-  if (feedbackType === 'speaking' && !byArea.has('interaction') && (track === 'cpe' || track === 'cae' || containsAny(text, ['interaction', 'turn-taking', 'collaborative', 'partner']))) {
+  if (
+    feedbackType === 'speaking' &&
+    !byArea.has('interaction') &&
+    (track === 'cpe' ||
+      track === 'cae' ||
+      containsAny(text, ['interaction', 'turn-taking', 'collaborative', 'partner']))
+  ) {
     byArea.set('interaction', {
       area: 'interaction',
       criterionName: 'Interactive communication',
@@ -809,7 +850,9 @@ function selectProductiveSignals(
         area,
         criterionName: criterionNameForArea(area),
         nextAction: defaultNextAction(area),
-        evidence: ['Default repair path added because the feedback had fewer rubric signals than the practice loop needs.'],
+        evidence: [
+          'Default repair path added because the feedback had fewer rubric signals than the practice loop needs.',
+        ],
       });
     }
   });
@@ -832,10 +875,7 @@ function buildPracticeTask(input: PracticeTaskBuildInput): FeedbackPracticeTask 
     priority: input.priority,
     title: template.title,
     prompt: template.prompt,
-    instructions: uniqueStrings([
-      input.signal.nextAction || '',
-      ...template.instructions,
-    ]).slice(0, 4),
+    instructions: uniqueStrings([input.signal.nextAction || '', ...template.instructions]).slice(0, 4),
     successCriteria: template.successCriteria,
     estimatedMinutes: template.estimatedMinutes,
     outputType: template.outputType,
@@ -855,7 +895,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
           'Add one concrete example or data point.',
           'Add one sentence explaining why the evidence proves the claim.',
         ],
-        successCriteria: ['The claim answers the exact prompt.', 'The evidence is specific, not generic.', 'The explanation links back to the thesis.'],
+        successCriteria: [
+          'The claim answers the exact prompt.',
+          'The evidence is specific, not generic.',
+          'The explanation links back to the thesis.',
+        ],
         estimatedMinutes: 10,
         outputType: 'rewritten_paragraph',
       };
@@ -869,7 +913,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
           'Add one backward link to the previous idea.',
           'Add one forward signpost for the next sentence.',
         ],
-        successCriteria: ['Topic sentence states the paragraph role.', 'Transitions show logic, not decoration.', 'No paragraph starts with a vague phrase.'],
+        successCriteria: [
+          'Topic sentence states the paragraph role.',
+          'Transitions show logic, not decoration.',
+          'No paragraph starts with a vague phrase.',
+        ],
         estimatedMinutes: 8,
         outputType: 'rewritten_paragraph',
       };
@@ -883,7 +931,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
           'Replace each one with a natural collocation.',
           'Check that the new phrase fits the register and meaning.',
         ],
-        successCriteria: ['Five upgraded phrases are context-appropriate.', 'No word is upgraded just to sound complex.', 'At least two collocations are reusable.'],
+        successCriteria: [
+          'Five upgraded phrases are context-appropriate.',
+          'No word is upgraded just to sound complex.',
+          'At least two collocations are reusable.',
+        ],
         estimatedMinutes: 9,
         outputType: 'sentence_bank',
       };
@@ -897,7 +949,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
           'Rewrite each with one clear main clause.',
           'Add controlled subordination only after the core sentence is correct.',
         ],
-        successCriteria: ['Subject-verb agreement is correct.', 'Clause boundaries are clear.', 'Punctuation supports meaning.'],
+        successCriteria: [
+          'Subject-verb agreement is correct.',
+          'Clause boundaries are clear.',
+          'Punctuation supports meaning.',
+        ],
         estimatedMinutes: 10,
         outputType: 'sentence_bank',
       };
@@ -910,7 +966,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
         'Rewrite the opening and closing in that tone.',
         'Remove one phrase that sounds too casual, inflated, or off-genre.',
       ],
-      successCriteria: ['Tone matches the genre.', 'Opening sets the purpose quickly.', 'Closing leaves the right reader impression.'],
+      successCriteria: [
+        'Tone matches the genre.',
+        'Opening sets the purpose quickly.',
+        'Closing leaves the right reader impression.',
+      ],
       estimatedMinutes: 7,
       outputType: 'checklist',
     };
@@ -925,7 +985,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
         'Record for 60 seconds without restarting.',
         'Mark hesitations and replace only the worst two.',
       ],
-      successCriteria: ['The response has a clear beginning, middle, and end.', 'Pauses are purposeful.', 'No memorized-sounding filler dominates.'],
+      successCriteria: [
+        'The response has a clear beginning, middle, and end.',
+        'Pauses are purposeful.',
+        'No memorized-sounding filler dominates.',
+      ],
       estimatedMinutes: 9,
       outputType: 'recorded_response',
     };
@@ -939,7 +1003,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
         'Say each word slowly, then in a sentence, then at natural speed.',
         'Rerecord the original answer and compare clarity.',
       ],
-      successCriteria: ['Target words are intelligible in sentence context.', 'Stress is placed consistently.', 'The rerecording is clearer than the first attempt.'],
+      successCriteria: [
+        'Target words are intelligible in sentence context.',
+        'Stress is placed consistently.',
+        'The rerecording is clearer than the first attempt.',
+      ],
       estimatedMinutes: 8,
       outputType: 'recorded_response',
     };
@@ -953,7 +1021,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
         'Replace them with precise but speakable alternatives.',
         'Use at least three upgrades in a fresh answer.',
       ],
-      successCriteria: ['Upgrades sound natural aloud.', 'Phrases match the topic.', 'The answer still sounds spontaneous.'],
+      successCriteria: [
+        'Upgrades sound natural aloud.',
+        'Phrases match the topic.',
+        'The answer still sounds spontaneous.',
+      ],
       estimatedMinutes: 9,
       outputType: 'transcript_review',
     };
@@ -967,7 +1039,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
         'Write one model sentence for each.',
         'Record a response that uses both without losing meaning.',
       ],
-      successCriteria: ['Both target structures are grammatically correct.', 'The answer remains relevant.', 'Errors do not block meaning.'],
+      successCriteria: [
+        'Both target structures are grammatically correct.',
+        'The answer remains relevant.',
+        'Errors do not block meaning.',
+      ],
       estimatedMinutes: 10,
       outputType: 'recorded_response',
     };
@@ -980,7 +1056,11 @@ function practiceTemplate(feedbackType: ProductiveFeedbackType, area: Productive
       'Add a contrast, clarification, or follow-up question.',
       'Record the answer as if speaking with a partner.',
     ],
-    successCriteria: ['The answer invites continuation.', 'The speaker extends the point naturally.', 'The turn is neither too short nor over-dominant.'],
+    successCriteria: [
+      'The answer invites continuation.',
+      'The speaker extends the point naturally.',
+      'The turn is neither too short nor over-dominant.',
+    ],
     estimatedMinutes: 7,
     outputType: 'recorded_response',
   };
@@ -1000,22 +1080,64 @@ function buildRevisionLoop(
     track,
     steps: isWriting
       ? [
-          { label: 'Draft', action: 'Submit the original answer with prompt and task type.', evidence: 'Original draft stored with attempt id.' },
-          { label: 'Feedback', action: 'Read rubric feedback and identify the weakest criterion.', evidence: 'Criteria scores and next actions.' },
-          { label: 'Targeted practice', action: `Complete ${tasks.length} focused repair task${tasks.length === 1 ? '' : 's'}.`, evidence: 'Practice outputs attached to the feedback event.' },
-          { label: 'Rewrite', action: 'Rewrite only after the focused drills are complete.', evidence: 'Second draft linked to the same prompt.' },
-          { label: 'Compare', action: 'Compare old vs. new draft against the checklist.', evidence: 'Rubric deltas and teacher/AI notes.' },
+          {
+            label: 'Draft',
+            action: 'Submit the original answer with prompt and task type.',
+            evidence: 'Original draft stored with attempt id.',
+          },
+          {
+            label: 'Feedback',
+            action: 'Read rubric feedback and identify the weakest criterion.',
+            evidence: 'Criteria scores and next actions.',
+          },
+          {
+            label: 'Targeted practice',
+            action: `Complete ${tasks.length} focused repair task${tasks.length === 1 ? '' : 's'}.`,
+            evidence: 'Practice outputs attached to the feedback event.',
+          },
+          {
+            label: 'Rewrite',
+            action: 'Rewrite only after the focused drills are complete.',
+            evidence: 'Second draft linked to the same prompt.',
+          },
+          {
+            label: 'Compare',
+            action: 'Compare old vs. new draft against the checklist.',
+            evidence: 'Rubric deltas and teacher/AI notes.',
+          },
         ]
       : [
-          { label: 'Record', action: 'Record the original answer or upload a transcript.', evidence: 'Audio/transcript stored with attempt id.' },
-          { label: 'Feedback', action: 'Read rubric feedback and isolate the weakest speaking area.', evidence: 'Criteria scores, fluency notes, and pronunciation notes.' },
-          { label: 'Targeted practice', action: `Complete ${tasks.length} focused speaking repair task${tasks.length === 1 ? '' : 's'}.`, evidence: 'Practice recording or transcript attached.' },
-          { label: 'Rerecord', action: 'Answer the same or parallel prompt again.', evidence: 'Second recording linked to the same prompt family.' },
-          { label: 'Compare', action: 'Compare transcript, clarity, and rubric deltas.', evidence: 'Before/after feedback and teacher/AI notes.' },
+          {
+            label: 'Record',
+            action: 'Record the original answer or upload a transcript.',
+            evidence: 'Audio/transcript stored with attempt id.',
+          },
+          {
+            label: 'Feedback',
+            action: 'Read rubric feedback and isolate the weakest speaking area.',
+            evidence: 'Criteria scores, fluency notes, and pronunciation notes.',
+          },
+          {
+            label: 'Targeted practice',
+            action: `Complete ${tasks.length} focused speaking repair task${tasks.length === 1 ? '' : 's'}.`,
+            evidence: 'Practice recording or transcript attached.',
+          },
+          {
+            label: 'Rerecord',
+            action: 'Answer the same or parallel prompt again.',
+            evidence: 'Second recording linked to the same prompt family.',
+          },
+          {
+            label: 'Compare',
+            action: 'Compare transcript, clarity, and rubric deltas.',
+            evidence: 'Before/after feedback and teacher/AI notes.',
+          },
         ],
     compareChecklist: uniqueStrings([
       ...tasks.flatMap((task) => task.successCriteria.slice(0, 2)),
-      isWriting ? 'The rewrite improves the weakest criterion without damaging another criterion.' : 'The rerecording improves clarity and control without becoming memorized.',
+      isWriting
+        ? 'The rewrite improves the weakest criterion without damaging another criterion.'
+        : 'The rerecording improves clarity and control without becoming memorized.',
     ]).slice(0, 6),
     validityGate: {
       masteryEligible: false,
@@ -1028,11 +1150,16 @@ function buildRevisionLoop(
   };
 }
 
-function extractPracticeEvidence(feedback: WritingFeedback | SpeakingFeedback, signal: ProductiveSkillSignal): string[] {
+function extractPracticeEvidence(
+  feedback: WritingFeedback | SpeakingFeedback,
+  signal: ProductiveSkillSignal,
+): string[] {
   const evidence = [...signal.evidence, signal.nextAction || ''];
   if ('corrections' in feedback) {
     evidence.push(...feedback.corrections.slice(0, 2).map((item) => `${item.originalText} -> ${item.correctedText}`));
-    evidence.push(...(feedback.sentenceUpgrades || []).slice(0, 1).map((item) => `${item.original} -> ${item.upgraded}`));
+    evidence.push(
+      ...(feedback.sentenceUpgrades || []).slice(0, 1).map((item) => `${item.original} -> ${item.upgraded}`),
+    );
   } else {
     evidence.push(...feedback.pronunciationErrors.slice(0, 3).map((item) => `${item.word}: ${item.suggestion}`));
     if (feedback.fluencyReview) evidence.push(feedback.fluencyReview);
@@ -1047,7 +1174,10 @@ function evaluateProductiveSkillSample(
   const findings: ProductiveSkillGovernanceFinding[] = [];
   const feedback = sample.feedback;
   const provider = sample.provider || inferProvider(feedback.modelUsed, '');
-  const reliability = scoreProductiveFeedbackReliability(feedback, sample.feedbackType, { responseText: sample.responseText, provider });
+  const reliability = scoreProductiveFeedbackReliability(feedback, sample.feedbackType, {
+    responseText: sample.responseText,
+    provider,
+  });
   const missingFields = [
     !feedback.attemptId ? 'attemptId' : '',
     !feedback.modelUsed ? 'modelUsed' : '',
@@ -1118,7 +1248,10 @@ function evaluateProductiveSkillSample(
   return findings;
 }
 
-function evaluateCriterionDeviation(sample: ProductiveSkillGoldenSample, defaultThreshold: number): ProductiveSkillGovernanceFinding[] {
+function evaluateCriterionDeviation(
+  sample: ProductiveSkillGoldenSample,
+  defaultThreshold: number,
+): ProductiveSkillGovernanceFinding[] {
   const expertCriteria = sample.expertCriteria || {};
   const entries = Object.entries(expertCriteria);
   if (!entries.length) return [];
@@ -1150,7 +1283,9 @@ function evaluateCriterionDeviation(sample: ProductiveSkillGoldenSample, default
 }
 
 function feedbackCriterionMap(feedback: WritingFeedback | SpeakingFeedback): Map<string, number> {
-  const entries = feedback.criteria.map((criterion) => [normalizeText(criterion.criterionName), Number(criterion.band)] as const);
+  const entries = feedback.criteria.map(
+    (criterion) => [normalizeText(criterion.criterionName), Number(criterion.band)] as const,
+  );
   return new Map(entries.filter(([, score]) => Number.isFinite(score)));
 }
 
@@ -1223,7 +1358,10 @@ function defaultNextAction(area: ProductiveSkillActionArea): string {
   return actions[area];
 }
 
-function inferTrackFromFeedback(feedback: WritingFeedback | SpeakingFeedback, fallbackType: ProductiveFeedbackType): TutorTrack {
+function inferTrackFromFeedback(
+  feedback: WritingFeedback | SpeakingFeedback,
+  fallbackType: ProductiveFeedbackType,
+): TutorTrack {
   const source = normalizeText([feedback.rubricVersion || '', feedback.descriptorSource || '', fallbackType].join(' '));
   if (containsAny(source, ['cambridge', 'c2', 'proficiency', 'cpe'])) return 'cpe';
   if (containsAny(source, ['c1', 'advanced', 'cae'])) return 'cae';
@@ -1275,27 +1413,54 @@ function buildSocraticHints(input: AITutorQuestionInput, categories: ErrorCatego
   const common = `Which exact part of ${target} is being tested here?`;
 
   if (primary === 'algebra_transform') {
-    return [common, 'What operation did you apply to both sides, and is it reversible?', 'Which prerequisite identity or factorization step should be checked first?'];
+    return [
+      common,
+      'What operation did you apply to both sides, and is it reversible?',
+      'Which prerequisite identity or factorization step should be checked first?',
+    ];
   }
   if (primary === 'wrong_formula') {
-    return [common, 'What conditions must be true before this formula can be used?', 'Can you name a simpler example where this theorem applies?'];
+    return [
+      common,
+      'What conditions must be true before this formula can be used?',
+      'Can you name a simpler example where this theorem applies?',
+    ];
   }
   if (primary === 'missing_condition') {
-    return [common, 'What values are excluded before any simplification starts?', 'Does the final answer still satisfy the original condition?'];
+    return [
+      common,
+      'What values are excluded before any simplification starts?',
+      'Does the final answer still satisfy the original condition?',
+    ];
   }
   if (primary === 'grammar') {
-    return [common, 'What is the main clause and what is the dependent clause?', 'Which verb or connector controls the sentence error?'];
+    return [
+      common,
+      'What is the main clause and what is the dependent clause?',
+      'Which verb or connector controls the sentence error?',
+    ];
   }
   if (primary === 'vocabulary' || primary === 'collocation') {
-    return [common, 'What tone or register does the sentence require?', 'Which nearby word restricts the meaning of the option?'];
+    return [
+      common,
+      'What tone or register does the sentence require?',
+      'Which nearby word restricts the meaning of the option?',
+    ];
   }
   if (primary === 'inference') {
-    return [common, 'Which sentence gives direct evidence for the answer?', 'What can be inferred without adding outside knowledge?'];
+    return [
+      common,
+      'Which sentence gives direct evidence for the answer?',
+      'What can be inferred without adding outside knowledge?',
+    ];
   }
   return [common, 'What did you assume before solving?', 'Which earlier concept would make this question easier?'];
 }
 
-function buildRemediationLessons(input: AITutorQuestionInput, categories: ErrorCategory[]): RemediationLessonSuggestion[] {
+function buildRemediationLessons(
+  input: AITutorQuestionInput,
+  categories: ErrorCategory[],
+): RemediationLessonSuggestion[] {
   const conceptIds = uniqueStrings(input.conceptIds || []);
   const skillIds = uniqueStrings(input.skillIds || []);
   const primary = categories[0] || 'unknown';
@@ -1384,7 +1549,12 @@ function inferTrack(input: AITutorQuestionInput): TutorTrack {
 
 function inferDomain(input: AITutorQuestionInput): string {
   if (input.domainId) return input.domainId;
-  if (input.track === 'math' || input.programId === 'vn_math_6_9' || input.conceptIds?.some((id) => id.startsWith('math.'))) return 'mathematics';
+  if (
+    input.track === 'math' ||
+    input.programId === 'vn_math_6_9' ||
+    input.conceptIds?.some((id) => id.startsWith('math.'))
+  )
+    return 'mathematics';
   return 'english_core';
 }
 
@@ -1400,7 +1570,10 @@ function uniqueErrorCategories(values: ErrorCategory[]): ErrorCategory[] {
 }
 
 function countWords(value: string): number {
-  return String(value || '').trim().split(/\s+/).filter(Boolean).length;
+  return String(value || '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
 }
 
 function normalizeConfidence(value: unknown): number {
@@ -1428,7 +1601,10 @@ function containsAny(value: string, needles: string[]): boolean {
 }
 
 function normalizeText(value: string): string {
-  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
 }
 
 function uniqueStrings(values: string[]): string[] {

@@ -91,16 +91,12 @@ export default function EnglishItemBankPracticePanel({
           {state.answered && (
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                <span className="text-xs font-black uppercase tracking-widest text-sky-300">
-                  Source answer review
-                </span>
+                <span className="text-xs font-black uppercase tracking-widest text-sky-300">Source answer review</span>
                 <span className="text-[10px] font-black text-slate-400">
                   Correct answer: {question.correctAnswer} ({question.correctValue})
                 </span>
               </div>
-              <p className="text-sm text-slate-300 font-semibold leading-relaxed m-0">
-                {question.explanation}
-              </p>
+              <p className="text-sm text-slate-300 font-semibold leading-relaxed m-0">{question.explanation}</p>
               <div className="flex justify-end">
                 <button
                   type="button"
@@ -116,19 +112,25 @@ export default function EnglishItemBankPracticePanel({
         </div>
 
         <aside className="bg-slate-900/70 border border-slate-800 rounded-2xl p-4 space-y-4">
-          <InfoBlock title="Catalog guard" lines={[
-            `${state.coverage.readyQuestions} ready items`,
-            `${state.coverage.blockedQuestions} blocked by guard`,
-            `${state.coverage.warningIssues} warnings retained for review`,
-          ]} />
-          <InfoBlock title="Knowledge tags" lines={[
-            `Concepts: ${question.conceptIds.slice(0, 4).join(', ') || 'none'}`,
-            `Skills: ${question.skillIds.slice(0, 4).join(', ') || 'none'}`,
-          ]} />
-          <InfoBlock title="Source" lines={[
-            `Item: ${question.id}`,
-            `Test: ${String(question.metadata.testId || 'unknown')}`,
-          ]} />
+          <InfoBlock
+            title="Catalog guard"
+            lines={[
+              `${state.coverage.readyQuestions} ready items`,
+              `${state.coverage.blockedQuestions} blocked by guard`,
+              `${state.coverage.warningIssues} warnings retained for review`,
+            ]}
+          />
+          <InfoBlock
+            title="Knowledge tags"
+            lines={[
+              `Concepts: ${question.conceptIds.slice(0, 4).join(', ') || 'none'}`,
+              `Skills: ${question.skillIds.slice(0, 4).join(', ') || 'none'}`,
+            ]}
+          />
+          <InfoBlock
+            title="Source"
+            lines={[`Item: ${question.id}`, `Test: ${String(question.metadata.testId || 'unknown')}`]}
+          />
         </aside>
       </div>
     </section>

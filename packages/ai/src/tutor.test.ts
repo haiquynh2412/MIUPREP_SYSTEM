@@ -32,7 +32,10 @@ const mathFeedback = generateQuestionTutorFeedback({
   skillIds: ['math.solve_quadratic_by_factor'],
 });
 
-assert(mathFeedback.classifiedErrorCategories.includes('algebra_transform'), 'Tutor should classify algebra transform errors.');
+assert(
+  mathFeedback.classifiedErrorCategories.includes('algebra_transform'),
+  'Tutor should classify algebra transform errors.',
+);
 assert(mathFeedback.socraticHints.length >= 2, 'Tutor should generate Socratic hints.');
 assert(mathFeedback.remediationLessons.length === 1, 'Tutor should recommend a remediation lesson.');
 assert(mathFeedback.confidence >= 0.7, 'Tutor confidence should be higher when metadata exists.');
@@ -72,7 +75,12 @@ const writingFeedback: WritingFeedback = {
   bandOverall: 7,
   criteria: [
     { criterionName: 'Task Response', band: 7, feedbackText: 'Clear response.', nextAction: 'Add sharper evidence.' },
-    { criterionName: 'Coherence and Cohesion', band: 6.5, feedbackText: 'Mostly clear.', nextAction: 'Improve paragraph links.' },
+    {
+      criterionName: 'Coherence and Cohesion',
+      band: 6.5,
+      feedbackText: 'Mostly clear.',
+      nextAction: 'Improve paragraph links.',
+    },
     { criterionName: 'Lexical Resource', band: 7, feedbackText: 'Good vocabulary.' },
     { criterionName: 'Grammatical Range and Accuracy', band: 6.5, feedbackText: 'Some grammar slips.' },
   ],
@@ -116,60 +124,105 @@ const writingPlan = generateWritingFeedbackPracticePlan(writingFeedback, {
   maxTasks: 3,
   now: '2026-06-02T00:02:00.000Z',
 });
-assert(writingPlan.tasks.length >= 1 && writingPlan.tasks.length <= 3, 'Writing plan should create 1-3 practice tasks.');
-assert(writingPlan.tasks.some((task) => task.area === 'coherence'), 'Writing plan should target the weakest criterion.');
-assert(writingPlan.revisionLoop.steps.some((step) => step.label === 'Rewrite'), 'Writing plan should include rewrite loop.');
-assert(writingPlan.revisionLoop.validityGate.masteryEligible === false, 'Writing/Speaking mastery should remain gated.');
+assert(
+  writingPlan.tasks.length >= 1 && writingPlan.tasks.length <= 3,
+  'Writing plan should create 1-3 practice tasks.',
+);
+assert(
+  writingPlan.tasks.some((task) => task.area === 'coherence'),
+  'Writing plan should target the weakest criterion.',
+);
+assert(
+  writingPlan.revisionLoop.steps.some((step) => step.label === 'Rewrite'),
+  'Writing plan should include rewrite loop.',
+);
+assert(
+  writingPlan.revisionLoop.validityGate.masteryEligible === false,
+  'Writing/Speaking mastery should remain gated.',
+);
 
 const speakingPlan = generateSpeakingFeedbackPracticePlan(speakingFeedback, {
   track: 'cpe',
   maxTasks: 3,
   now: '2026-06-02T00:03:00.000Z',
 });
-assert(speakingPlan.tasks.length >= 1 && speakingPlan.tasks.length <= 3, 'Speaking plan should create 1-3 practice tasks.');
-assert(speakingPlan.tasks.some((task) => task.area === 'grammar_accuracy'), 'Speaking plan should target the weakest criterion.');
-assert(speakingPlan.revisionLoop.steps.some((step) => step.label === 'Rerecord'), 'Speaking plan should include rerecord loop.');
+assert(
+  speakingPlan.tasks.length >= 1 && speakingPlan.tasks.length <= 3,
+  'Speaking plan should create 1-3 practice tasks.',
+);
+assert(
+  speakingPlan.tasks.some((task) => task.area === 'grammar_accuracy'),
+  'Speaking plan should target the weakest criterion.',
+);
+assert(
+  speakingPlan.revisionLoop.steps.some((step) => step.label === 'Rerecord'),
+  'Speaking plan should include rerecord loop.',
+);
 
 const speakingState = buildSpeakingFeedbackPracticeState(speakingFeedback, speakingPlan, {
   track: 'cpe',
   now: '2026-06-02T00:04:00.000Z',
 });
 assert(speakingState.transcriptStatus === 'captured', 'Speaking practice state should capture transcript status.');
-assert(speakingState.recordingSlots.length === 3, 'Speaking practice state should include original, rerecord, and teacher slots.');
+assert(
+  speakingState.recordingSlots.length === 3,
+  'Speaking practice state should include original, rerecord, and teacher slots.',
+);
 assert(speakingState.scoringReady === false, 'Speaking practice state should stay scoring-gated.');
 
 const governedWritingFeedback: WritingFeedback = {
   ...writingFeedback,
   rubricVersion: 'v1.0.0-academic',
   descriptorSource: 'IELTS Writing Band Descriptors May 2023',
-  criteria: writingFeedback.criteria.map((criterion) => ({ ...criterion, evidence: criterion.evidence || ['expert-aligned rubric evidence'] })),
+  criteria: writingFeedback.criteria.map((criterion) => ({
+    ...criterion,
+    evidence: criterion.evidence || ['expert-aligned rubric evidence'],
+  })),
 };
-const governanceReport = buildProductiveSkillGovernanceReport([
-  {
-    sampleId: 'writing-governance-pass',
-    feedbackType: 'writing',
-    feedback: governedWritingFeedback,
-    expertOverall: 7,
-    expertCriteria: {
-      'Task Response': 7,
-      'Coherence and Cohesion': 6.5,
+const governanceReport = buildProductiveSkillGovernanceReport(
+  [
+    {
+      sampleId: 'writing-governance-pass',
+      feedbackType: 'writing',
+      feedback: governedWritingFeedback,
+      expertOverall: 7,
+      expertCriteria: {
+        'Task Response': 7,
+        'Coherence and Cohesion': 6.5,
+      },
+      provider: 'mock',
     },
-    provider: 'mock',
-  },
-], { generatedAt: '2026-06-02T00:05:00.000Z' });
-assert(governanceReport.schemaVersion === 'productive_skill_governance_v1', 'Productive-skill governance report should be versioned.');
+  ],
+  { generatedAt: '2026-06-02T00:05:00.000Z' },
+);
+assert(
+  governanceReport.schemaVersion === 'productive_skill_governance_v1',
+  'Productive-skill governance report should be versioned.',
+);
 assert(governanceReport.status === 'pass', 'Governance report should pass clean golden samples.');
-assert(governanceReport.masteryPolicy === 'feedback_only_locked', 'Governance report should keep productive-skill mastery locked.');
+assert(
+  governanceReport.masteryPolicy === 'feedback_only_locked',
+  'Governance report should keep productive-skill mastery locked.',
+);
 assert(governanceReport.masteryEligible === false, 'Governance report should not make AI scoring mastery eligible.');
 assert(governanceReport.consensusPolicy === 'validation_only', 'Consensus should remain validation-only.');
-assert(governanceReport.averageReliabilityConfidence >= 0.9, 'Governance report should expose reliability confidence for clean samples.');
+assert(
+  governanceReport.averageReliabilityConfidence >= 0.9,
+  'Governance report should expose reliability confidence for clean samples.',
+);
 
 const shortSpeakingReliability = scoreProductiveFeedbackReliability(speakingFeedback, 'speaking', {
   responseText: speakingFeedback.transcript,
   provider: 'mock',
 });
-assert(shortSpeakingReliability.confidence < Number(speakingFeedback.confidence), 'Reliability scoring should lower confidence for short/thin speaking evidence.');
-assert(shortSpeakingReliability.reasons.includes('short speaking sample'), 'Reliability scoring should explain short speaking samples.');
+assert(
+  shortSpeakingReliability.confidence < Number(speakingFeedback.confidence),
+  'Reliability scoring should lower confidence for short/thin speaking evidence.',
+);
+assert(
+  shortSpeakingReliability.reasons.includes('short speaking sample'),
+  'Reliability scoring should explain short speaking samples.',
+);
 
 const lowReliabilitySpeakingFeedback: SpeakingFeedback = {
   ...speakingFeedback,
@@ -179,29 +232,47 @@ const lowReliabilitySpeakingFeedback: SpeakingFeedback = {
   confidence: 0.62,
   criteria: speakingFeedback.criteria.map((criterion) => ({ ...criterion, evidence: ['sample evidence'] })),
 };
-const watchGovernanceReport = buildProductiveSkillGovernanceReport([
-  {
-    sampleId: 'speaking-governance-watch',
-    feedbackType: 'speaking',
-    feedback: lowReliabilitySpeakingFeedback,
-    responseText: lowReliabilitySpeakingFeedback.transcript,
-    expertOverall: 6.5,
-    provider: 'mock',
-  },
-], { generatedAt: '2026-06-02T00:05:30.000Z' });
-assert(watchGovernanceReport.status === 'watch', 'Governance report should watch low reliability even when metadata is present.');
-assert(watchGovernanceReport.findings.some((finding) => finding.reason === 'low_reliability_confidence'), 'Governance report should expose low adjusted confidence.');
+const watchGovernanceReport = buildProductiveSkillGovernanceReport(
+  [
+    {
+      sampleId: 'speaking-governance-watch',
+      feedbackType: 'speaking',
+      feedback: lowReliabilitySpeakingFeedback,
+      responseText: lowReliabilitySpeakingFeedback.transcript,
+      expertOverall: 6.5,
+      provider: 'mock',
+    },
+  ],
+  { generatedAt: '2026-06-02T00:05:30.000Z' },
+);
+assert(
+  watchGovernanceReport.status === 'watch',
+  'Governance report should watch low reliability even when metadata is present.',
+);
+assert(
+  watchGovernanceReport.findings.some((finding) => finding.reason === 'low_reliability_confidence'),
+  'Governance report should expose low adjusted confidence.',
+);
 
-const blockedGovernanceReport = buildProductiveSkillGovernanceReport([
-  {
-    sampleId: 'writing-governance-blocked',
-    feedbackType: 'writing',
-    feedback: writingFeedback,
-    expertOverall: 8,
-  },
-], { generatedAt: '2026-06-02T00:06:00.000Z' });
-assert(blockedGovernanceReport.status === 'blocked', 'Governance report should block missing provenance or excessive deviation.');
-assert(blockedGovernanceReport.findings.some((finding) => finding.reason === 'missing_required_fields'), 'Governance report should expose missing metadata.');
+const blockedGovernanceReport = buildProductiveSkillGovernanceReport(
+  [
+    {
+      sampleId: 'writing-governance-blocked',
+      feedbackType: 'writing',
+      feedback: writingFeedback,
+      expertOverall: 8,
+    },
+  ],
+  { generatedAt: '2026-06-02T00:06:00.000Z' },
+);
+assert(
+  blockedGovernanceReport.status === 'blocked',
+  'Governance report should block missing provenance or excessive deviation.',
+);
+assert(
+  blockedGovernanceReport.findings.some((finding) => finding.reason === 'missing_required_fields'),
+  'Governance report should expose missing metadata.',
+);
 
 runAsyncChecks().catch((error) => {
   throw error;
@@ -238,11 +309,17 @@ async function testSessionCredentialStore(): Promise<void> {
   try {
     const store = new SessionCredentialStore();
     assert((await store.get('openai')) === 'sk-legacy-value', 'Legacy XOR value should be migrated into memory.');
-    assert(!backing.has('ielts_app_secure_openai'), 'Legacy XOR value must be purged from localStorage after migration.');
+    assert(
+      !backing.has('ielts_app_secure_openai'),
+      'Legacy XOR value must be purged from localStorage after migration.',
+    );
 
     await store.set('gemini', 'g-key');
     assert((await store.get('gemini')) === 'g-key', 'Session store should return values set in memory.');
-    assert([...backing.keys()].every(k => !k.includes('gemini')), 'Session store must never persist keys to localStorage.');
+    assert(
+      [...backing.keys()].every((k) => !k.includes('gemini')),
+      'Session store must never persist keys to localStorage.',
+    );
 
     await store.delete('gemini');
     assert((await store.get('gemini')) === null, 'Deleted keys should be gone.');
@@ -260,13 +337,34 @@ async function runAsyncChecks(): Promise<void> {
     track: 'ielts',
   });
   assert(writingRecorded.event.payload.aiFeedbackType === 'writing', 'Writing tutor event should be typed.');
-  assert(writingRecorded.event.payload.attemptId === 'writing-1', 'Writing tutor event should persist attempt id directly.');
-  assert(writingRecorded.event.payload.modelUsed === 'fake-writing', 'Writing tutor event should persist model provenance directly.');
-  assert(writingRecorded.event.payload.provider === 'mock', 'Writing tutor event should persist provider provenance directly.');
-  assert(writingRecorded.event.payload.rawConfidence === 0.91, 'Writing tutor event should persist raw adapter confidence.');
-  assert(Number(writingRecorded.event.payload.confidence) < 0.91, 'Writing tutor event should persist adjusted reliability confidence.');
-  assert(Array.isArray(writingRecorded.event.payload.confidenceReasons), 'Writing tutor event should persist confidence reasons.');
-  assert(Array.isArray(writingRecorded.event.payload.evidence), 'Writing tutor event should persist governance evidence directly.');
+  assert(
+    writingRecorded.event.payload.attemptId === 'writing-1',
+    'Writing tutor event should persist attempt id directly.',
+  );
+  assert(
+    writingRecorded.event.payload.modelUsed === 'fake-writing',
+    'Writing tutor event should persist model provenance directly.',
+  );
+  assert(
+    writingRecorded.event.payload.provider === 'mock',
+    'Writing tutor event should persist provider provenance directly.',
+  );
+  assert(
+    writingRecorded.event.payload.rawConfidence === 0.91,
+    'Writing tutor event should persist raw adapter confidence.',
+  );
+  assert(
+    Number(writingRecorded.event.payload.confidence) < 0.91,
+    'Writing tutor event should persist adjusted reliability confidence.',
+  );
+  assert(
+    Array.isArray(writingRecorded.event.payload.confidenceReasons),
+    'Writing tutor event should persist confidence reasons.',
+  );
+  assert(
+    Array.isArray(writingRecorded.event.payload.evidence),
+    'Writing tutor event should persist governance evidence directly.',
+  );
   assert(Boolean(writingRecorded.event.payload.practicePlan), 'Writing tutor event should persist the practice plan.');
 
   const speakingRecorded = await gradeSpeakingWithTutorEvent(speakingAdapter, state, {
@@ -275,15 +373,42 @@ async function runAsyncChecks(): Promise<void> {
     track: 'cpe',
   });
   assert(speakingRecorded.event.payload.aiFeedbackType === 'speaking', 'Speaking tutor event should be typed.');
-  assert(speakingRecorded.event.payload.attemptId === 'speaking-1', 'Speaking tutor event should persist attempt id directly.');
-  assert(speakingRecorded.event.payload.modelUsed === 'fake-speaking', 'Speaking tutor event should persist model provenance directly.');
-  assert(speakingRecorded.event.payload.provider === 'mock', 'Speaking tutor event should persist provider provenance directly.');
-  assert(speakingRecorded.event.payload.rawConfidence === 0.88, 'Speaking tutor event should persist raw adapter confidence.');
-  assert(Number(speakingRecorded.event.payload.confidence) < 0.88, 'Speaking tutor event should persist adjusted reliability confidence.');
-  assert(Array.isArray(speakingRecorded.event.payload.confidenceReasons), 'Speaking tutor event should persist confidence reasons.');
-  assert(Array.isArray(speakingRecorded.event.payload.evidence), 'Speaking tutor event should persist governance evidence directly.');
-  assert(Boolean(speakingRecorded.event.payload.practicePlan), 'Speaking tutor event should persist the practice plan.');
-  assert(Boolean(speakingRecorded.event.payload.speakingPracticeState), 'Speaking tutor event should persist recording/transcript state.');
+  assert(
+    speakingRecorded.event.payload.attemptId === 'speaking-1',
+    'Speaking tutor event should persist attempt id directly.',
+  );
+  assert(
+    speakingRecorded.event.payload.modelUsed === 'fake-speaking',
+    'Speaking tutor event should persist model provenance directly.',
+  );
+  assert(
+    speakingRecorded.event.payload.provider === 'mock',
+    'Speaking tutor event should persist provider provenance directly.',
+  );
+  assert(
+    speakingRecorded.event.payload.rawConfidence === 0.88,
+    'Speaking tutor event should persist raw adapter confidence.',
+  );
+  assert(
+    Number(speakingRecorded.event.payload.confidence) < 0.88,
+    'Speaking tutor event should persist adjusted reliability confidence.',
+  );
+  assert(
+    Array.isArray(speakingRecorded.event.payload.confidenceReasons),
+    'Speaking tutor event should persist confidence reasons.',
+  );
+  assert(
+    Array.isArray(speakingRecorded.event.payload.evidence),
+    'Speaking tutor event should persist governance evidence directly.',
+  );
+  assert(
+    Boolean(speakingRecorded.event.payload.practicePlan),
+    'Speaking tutor event should persist the practice plan.',
+  );
+  assert(
+    Boolean(speakingRecorded.event.payload.speakingPracticeState),
+    'Speaking tutor event should persist recording/transcript state.',
+  );
   assert(computeMastery(speakingRecorded.state).length === 0, 'Speaking feedback plan should not alter mastery.');
 }
 
@@ -303,7 +428,14 @@ async function testCacheAndUsage(): Promise<void> {
   const fake: AIAdapter = {
     async gradeWriting() {
       writingCalls++;
-      return { attemptId: 'x', taskNumber: 2, bandOverall: 7, criteria: [], corrections: [], suggestionsForImprovement: [] } as any;
+      return {
+        attemptId: 'x',
+        taskNumber: 2,
+        bandOverall: 7,
+        criteria: [],
+        corrections: [],
+        suggestionsForImprovement: [],
+      } as any;
     },
     async gradeSpeaking() {
       speakingCalls++;
@@ -312,7 +444,12 @@ async function testCacheAndUsage(): Promise<void> {
   };
 
   const ledger = new UsageLedger({ perLearnerUsd: 1 });
-  const adapter = new CachingAIAdapter(fake, { ledger, learnerId: 'L1', model: 'gpt-4o', now: () => '2026-06-11T00:00:00.000Z' });
+  const adapter = new CachingAIAdapter(fake, {
+    ledger,
+    learnerId: 'L1',
+    model: 'gpt-4o',
+    now: () => '2026-06-11T00:00:00.000Z',
+  });
 
   const essay = 'A reasonably long essay body that repeats. '.repeat(20);
   await adapter.gradeWriting({ attemptId: 'a1', essay, taskNumber: 2, track: 'ielts' });
@@ -345,4 +482,8 @@ async function testCacheAndUsage(): Promise<void> {
   assert(PROMPT_VERSION.length > 0, 'PROMPT_VERSION must be set for cache invalidation.');
 }
 
-testCacheAndUsage().then(() => console.log('Cache + usage tests passed.')).catch((e) => { throw e; });
+testCacheAndUsage()
+  .then(() => console.log('Cache + usage tests passed.'))
+  .catch((e) => {
+    throw e;
+  });

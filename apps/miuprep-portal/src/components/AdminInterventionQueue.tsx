@@ -148,9 +148,7 @@ export default function AdminInterventionQueue({
             </span>
           </div>
           <h3 className="text-2xl font-black text-slate-50 m-0 mt-3">{t('aiq_heading_today')}</h3>
-          <p className="text-sm text-slate-400 mt-2 mb-0 max-w-3xl leading-relaxed">
-            {t('aiq_intro')}
-          </p>
+          <p className="text-sm text-slate-400 mt-2 mb-0 max-w-3xl leading-relaxed">{t('aiq_intro')}</p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2 min-w-full lg:min-w-[720px]">
@@ -186,7 +184,12 @@ export default function AdminInterventionQueue({
       <Panel title={t('aiq_panel_reroute_title')} meta={t('aiq_panel_reroute_meta')}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {queue.repairReroutes.slice(0, 6).map((item) => (
-            <RepairRerouteCard key={`${item.learnerId}-${item.scope}-${item.targetId}`} item={item} onOpenUsers={onOpenUsers} onOpenContent={onOpenContent} />
+            <RepairRerouteCard
+              key={`${item.learnerId}-${item.scope}-${item.targetId}`}
+              item={item}
+              onOpenUsers={onOpenUsers}
+              onOpenContent={onOpenContent}
+            />
           ))}
           {queue.repairReroutes.length === 0 && <EmptyState text={t('aiq_empty_reroutes')} />}
         </div>
@@ -231,14 +234,22 @@ function RepairRerouteCard({
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
             <PriorityPill priority={priority} />
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{item.evidenceSource}</span>
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{readableRerouteAction(item.action)}</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+              {item.evidenceSource}
+            </span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+              {readableRerouteAction(item.action)}
+            </span>
           </div>
           <h4 className="text-sm font-black text-slate-100 mt-2 mb-1">{item.targetId}</h4>
           <p className="text-xs text-slate-400 leading-relaxed m-0">{item.reason}</p>
           <p className="text-[11px] text-slate-500 mt-2 mb-0">
-            {item.suspectedPrerequisiteIds.length ? t('aiq_reroute_prereq', { ids: compactIds(item.suspectedPrerequisiteIds) }) : ''}
-            {item.misconceptionIds.length ? t('aiq_reroute_misconception', { ids: compactIds(item.misconceptionIds) }) : ''}
+            {item.suspectedPrerequisiteIds.length
+              ? t('aiq_reroute_prereq', { ids: compactIds(item.suspectedPrerequisiteIds) })
+              : ''}
+            {item.misconceptionIds.length
+              ? t('aiq_reroute_misconception', { ids: compactIds(item.misconceptionIds) })
+              : ''}
           </p>
         </div>
         <div className="grid grid-cols-2 gap-2 sm:min-w-[240px]">
@@ -250,7 +261,9 @@ function RepairRerouteCard({
       </div>
       <div className="mt-3 pt-3 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <p className="text-xs text-slate-300 m-0">
-          {t('aiq_reroute_learner_review_pre')}<span className="font-mono text-orange-200">{item.learnerId}</span>{t('aiq_reroute_learner_review_post')}
+          {t('aiq_reroute_learner_review_pre')}
+          <span className="font-mono text-orange-200">{item.learnerId}</span>
+          {t('aiq_reroute_learner_review_post')}
         </p>
         <div className="flex flex-wrap gap-2">
           <button
@@ -281,9 +294,13 @@ function LearnerRow({ item, onOpenUsers }: { item: LearnerIntervention; onOpenUs
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
             <PriorityPill priority={item.priority} />
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{t('aiq_learner_evidence', { count: item.attempts })}</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+              {t('aiq_learner_evidence', { count: item.attempts })}
+            </span>
           </div>
-          <h4 className="text-sm font-black text-slate-100 mt-2 mb-1">{item.student.displayName || item.student.username}</h4>
+          <h4 className="text-sm font-black text-slate-100 mt-2 mb-1">
+            {item.student.displayName || item.student.username}
+          </h4>
           <p className="text-xs text-slate-400 leading-relaxed m-0">{item.reason}</p>
         </div>
         <div className="grid grid-cols-3 gap-2 sm:min-w-[260px]">
@@ -294,7 +311,8 @@ function LearnerRow({ item, onOpenUsers }: { item: LearnerIntervention; onOpenUs
       </div>
       <div className="mt-3 pt-3 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <p className="text-xs text-slate-300 m-0">
-          {t('aiq_learner_focus_label')}<span className="text-orange-200 font-bold">{item.focus}</span>. {item.action}
+          {t('aiq_learner_focus_label')}
+          <span className="text-orange-200 font-bold">{item.focus}</span>. {item.action}
         </p>
         <button
           type="button"
@@ -308,7 +326,13 @@ function LearnerRow({ item, onOpenUsers }: { item: LearnerIntervention; onOpenUs
   );
 }
 
-function ContentRow({ item, onOpenContent }: { item: ContentIntervention; onOpenContent: (track: ContentIntervention['track']) => void }) {
+function ContentRow({
+  item,
+  onOpenContent,
+}: {
+  item: ContentIntervention;
+  onOpenContent: (track: ContentIntervention['track']) => void;
+}) {
   const { t } = useTranslation();
   return (
     <article className={`rounded-2xl border p-4 ${priorityClass(item.priority)}`}>
@@ -316,7 +340,9 @@ function ContentRow({ item, onOpenContent }: { item: ContentIntervention; onOpen
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
             <PriorityPill priority={item.priority} />
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{item.track.toUpperCase()}</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+              {item.track.toUpperCase()}
+            </span>
           </div>
           <h4 className="text-sm font-black text-slate-100 mt-2 mb-1 truncate">{item.title}</h4>
           <p className="text-xs text-slate-400 leading-relaxed m-0">{item.reason}</p>
@@ -343,8 +369,12 @@ function ParentDigestCard({ digest }: { digest: ParentDigest }) {
     <article className="bg-slate-950/55 border border-slate-850 rounded-2xl p-4">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">{t('aiq_parent_digest_label')}</p>
-          <h4 className="text-sm font-black text-slate-100 mt-1 mb-0">{digest.parent.displayName || digest.parent.username}</h4>
+          <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">
+            {t('aiq_parent_digest_label')}
+          </p>
+          <h4 className="text-sm font-black text-slate-100 mt-1 mb-0">
+            {digest.parent.displayName || digest.parent.username}
+          </h4>
         </div>
         <span className="text-[10px] font-bold text-cyan-300 bg-cyan-950/40 border border-cyan-900/60 rounded px-2 py-1">
           {digest.studentNames.join(', ') || t('aiq_parent_no_student')}
@@ -375,7 +405,9 @@ function MisconceptionCard({
           <div className="flex flex-wrap items-center gap-2">
             <PriorityPill priority={item.priority} />
             <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{item.kind}</span>
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{item.track.toUpperCase()}</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+              {item.track.toUpperCase()}
+            </span>
           </div>
           <h4 className="text-sm font-black text-slate-100 mt-2 mb-1">{item.name}</h4>
           <p className="text-xs text-slate-400 leading-relaxed m-0">{item.sample}</p>
@@ -421,15 +453,18 @@ function DigestBox({ title, items }: { title: string; items: string[] }) {
   );
 }
 
-function buildQueue(input: {
-  tracks: PortalTrackInfo[];
-  users: Omit<LocalUser, 'passwordHash'>[];
-  mathLessons: MathLessonLike[];
-  importedExams: ExamLike[];
-  errorQuestions: ErrorQuestionLike[];
-  adminLogs: SystemLog[];
-  learningEvents: LearningEventRecord[];
-}, t: TFunc) {
+function buildQueue(
+  input: {
+    tracks: PortalTrackInfo[];
+    users: Omit<LocalUser, 'passwordHash'>[];
+    mathLessons: MathLessonLike[];
+    importedExams: ExamLike[];
+    errorQuestions: ErrorQuestionLike[];
+    adminLogs: SystemLog[];
+    learningEvents: LearningEventRecord[];
+  },
+  t: TFunc,
+) {
   const learners = buildLearnerInterventions(input.users, input.tracks, input.errorQuestions, input.learningEvents, t);
   const content = buildContentInterventions(input.mathLessons, input.importedExams, input.errorQuestions, t);
   const misconceptions = buildRecurringMisconceptions(input.errorQuestions, input.learningEvents, t);
@@ -487,7 +522,12 @@ function buildBetaLearners(
       }
 
       const progress = readProgress(student.username);
-      const snapshot = buildLearnerSnapshot(toLocalUser(student), activeTracks, progress.coins, Math.max(progress.traps, activeErrors.length));
+      const snapshot = buildLearnerSnapshot(
+        toLocalUser(student),
+        activeTracks,
+        progress.coins,
+        Math.max(progress.traps, activeErrors.length),
+      );
       return {
         id: canonicalLearnerId,
         username: student.username,
@@ -506,34 +546,47 @@ function buildLearnerInterventions(
   t: TFunc,
 ): LearnerIntervention[] {
   const activeErrors = errorQuestions.filter((question) => question.stage > 0);
-  const recurringErrors = activeErrors.filter((question) => question.stage >= 2 || (question.retryAttempts || 0) >= 2).length;
+  const recurringErrors = activeErrors.filter(
+    (question) => question.stage >= 2 || (question.retryAttempts || 0) >= 2,
+  ).length;
   const students = users.filter((user) => user.role === 'student' && (user.status || 'approved') === 'approved');
 
-  return students.map((student) => {
-    const localStudent = toLocalUser(student);
-    const activeTracks = tracks.filter((track) => normalizeAssignedTracks(localStudent).includes(track.id));
-    const progress = readProgress(student.username);
-    const snapshot = buildLearnerSnapshotFromLiveEvents(localStudent, activeTracks, learningEvents, progress.coins, Math.max(progress.traps, activeErrors.length));
-    const weakest = snapshot.programSummaries.slice().sort((a, b) => a.score - b.score)[0];
-    const studentEvents = learningEvents.filter((event) => event.learnerId === student.id || event.learnerId === student.username);
-    const attempts = Math.max(snapshot.state.attempts.length, studentEvents.length);
-    const errorPressure = Math.max(progress.traps, recurringErrors);
-    const score = Math.round((100 - snapshot.averageMastery) + errorPressure * 8 + (attempts > 14 && snapshot.averageMastery < 72 ? 15 : 0));
-    const priority: LearnerIntervention['priority'] = score >= 58 ? 'urgent' : score >= 35 ? 'watch' : 'routine';
+  return students
+    .map((student) => {
+      const localStudent = toLocalUser(student);
+      const activeTracks = tracks.filter((track) => normalizeAssignedTracks(localStudent).includes(track.id));
+      const progress = readProgress(student.username);
+      const snapshot = buildLearnerSnapshotFromLiveEvents(
+        localStudent,
+        activeTracks,
+        learningEvents,
+        progress.coins,
+        Math.max(progress.traps, activeErrors.length),
+      );
+      const weakest = snapshot.programSummaries.slice().sort((a, b) => a.score - b.score)[0];
+      const studentEvents = learningEvents.filter(
+        (event) => event.learnerId === student.id || event.learnerId === student.username,
+      );
+      const attempts = Math.max(snapshot.state.attempts.length, studentEvents.length);
+      const errorPressure = Math.max(progress.traps, recurringErrors);
+      const score = Math.round(
+        100 - snapshot.averageMastery + errorPressure * 8 + (attempts > 14 && snapshot.averageMastery < 72 ? 15 : 0),
+      );
+      const priority: LearnerIntervention['priority'] = score >= 58 ? 'urgent' : score >= 35 ? 'watch' : 'routine';
 
-    return {
-      id: student.id || student.username,
-      student,
-      priority,
-      score,
-      mastery: snapshot.averageMastery,
-      attempts,
-      errorPressure,
-      focus: weakest?.weakestLabel || snapshot.learningPath.nextStep?.label || t('aiq_focus_foundation_repair'),
-      reason: buildLearnerReason(priority, attempts, snapshot.averageMastery, errorPressure, t),
-      action: buildLearnerAction(priority, weakest?.weakestLabel || snapshot.learningPath.nextStep?.label, t),
-    };
-  })
+      return {
+        id: student.id || student.username,
+        student,
+        priority,
+        score,
+        mastery: snapshot.averageMastery,
+        attempts,
+        errorPressure,
+        focus: weakest?.weakestLabel || snapshot.learningPath.nextStep?.label || t('aiq_focus_foundation_repair'),
+        reason: buildLearnerReason(priority, attempts, snapshot.averageMastery, errorPressure, t),
+        action: buildLearnerAction(priority, weakest?.weakestLabel || snapshot.learningPath.nextStep?.label, t),
+      };
+    })
     .filter((item) => item.priority !== 'routine' || item.errorPressure > 0)
     .sort((left, right) => right.score - left.score || right.errorPressure - left.errorPressure);
 }
@@ -573,7 +626,10 @@ function buildContentInterventions(
           : exam.reviewStatus === 'unchecked'
             ? t('aiq_content_exam_unchecked_reason')
             : t('aiq_content_exam_needs_fix_reason'),
-        action: track === 'math' ? t('aiq_content_action_math') : t('aiq_content_action_other', { track: track.toUpperCase() }),
+        action:
+          track === 'math'
+            ? t('aiq_content_action_math')
+            : t('aiq_content_action_other', { track: track.toUpperCase() }),
         metric: hasErrors ? `${exam.standardErrorCount}` : exam.reviewStatus || 'draft',
       };
     });
@@ -593,7 +649,8 @@ function buildContentInterventions(
     }));
 
   return [...riskRows, ...examRows, ...mathRows].sort(
-    (left, right) => priorityRank(right.priority) - priorityRank(left.priority) || left.title.localeCompare(right.title),
+    (left, right) =>
+      priorityRank(right.priority) - priorityRank(left.priority) || left.title.localeCompare(right.title),
   );
 }
 
@@ -612,8 +669,9 @@ function buildRecurringMisconceptions(
       const targetIds = new Set([...misconception.conceptIds, ...misconception.skillIds]);
 
       errorQuestions.forEach((question) => {
-        const matched = hasTargetOverlap(targetIds, [...(question.conceptIds || []), ...(question.skillIds || [])])
-          || matchesMisconceptionText(question, misconception.id);
+        const matched =
+          hasTargetOverlap(targetIds, [...(question.conceptIds || []), ...(question.skillIds || [])]) ||
+          matchesMisconceptionText(question, misconception.id);
         if (!matched) return;
         const weight = Math.max(1, question.stage) + Math.max(0, question.retryAttempts || 0);
         score += weight;
@@ -635,7 +693,8 @@ function buildRecurringMisconceptions(
         score += directMisconception ? 4 : 2;
         evidenceCount += 1;
         if (event.learnerId) learnerIds.add(event.learnerId);
-        if (samples.length < 2) samples.push(String(payload.itemId || payload.feedbackArea || event.entityId || event.type));
+        if (samples.length < 2)
+          samples.push(String(payload.itemId || payload.feedbackArea || event.entityId || event.type));
       });
 
       const priority: RecurringMisconception['priority'] = score >= 10 ? 'urgent' : score >= 4 ? 'watch' : 'routine';
@@ -655,7 +714,12 @@ function buildRecurringMisconceptions(
       };
     })
     .filter((item) => item.score > 0)
-    .sort((left, right) => right.score - left.score || priorityRank(right.priority) - priorityRank(left.priority) || left.name.localeCompare(right.name));
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        priorityRank(right.priority) - priorityRank(left.priority) ||
+        left.name.localeCompare(right.name),
+    );
 }
 
 function buildParentDigests(
@@ -668,23 +732,34 @@ function buildParentDigests(
     .filter((user) => user.role === 'parent')
     .map((parent) => {
       const linked = parent.linkedStudents || [];
-      const linkedLearners = linked.map((username) => learnerByUsername.get(username)).filter(Boolean) as LearnerIntervention[];
-      const focusLearner = linkedLearners.slice().sort((a, b) => priorityRank(b.priority) - priorityRank(a.priority) || b.score - a.score)[0];
+      const linkedLearners = linked
+        .map((username) => learnerByUsername.get(username))
+        .filter(Boolean) as LearnerIntervention[];
+      const focusLearner = linkedLearners
+        .slice()
+        .sort((a, b) => priorityRank(b.priority) - priorityRank(a.priority) || b.score - a.score)[0];
       return {
         parent,
         studentNames: linked,
         wins: [
-          linkedLearners.length ? t('aiq_parent_win_linked', { count: linkedLearners.length }) : t('aiq_parent_win_ready'),
+          linkedLearners.length
+            ? t('aiq_parent_win_linked', { count: linkedLearners.length })
+            : t('aiq_parent_win_ready'),
           t('aiq_parent_win_daily_loop'),
           t('aiq_parent_win_reward_wallet'),
         ],
         focus: [
-          focusLearner ? t('aiq_parent_focus_student', { name: focusLearner.student.displayName || focusLearner.student.username, focus: focusLearner.focus }) : t('aiq_parent_focus_link'),
-          focusLearner ? t('aiq_parent_focus_errors', { count: focusLearner.errorPressure }) : t('aiq_parent_focus_set_target'),
+          focusLearner
+            ? t('aiq_parent_focus_student', {
+                name: focusLearner.student.displayName || focusLearner.student.username,
+                focus: focusLearner.focus,
+              })
+            : t('aiq_parent_focus_link'),
+          focusLearner
+            ? t('aiq_parent_focus_errors', { count: focusLearner.errorPressure })
+            : t('aiq_parent_focus_set_target'),
         ],
-        action: focusLearner
-          ? t('aiq_parent_action_sprint')
-          : t('aiq_parent_action_invite'),
+        action: focusLearner ? t('aiq_parent_action_sprint') : t('aiq_parent_action_invite'),
       };
     });
 }
@@ -695,9 +770,12 @@ function hasTargetOverlap(targetIds: Set<string>, values: string[]): boolean {
 
 function matchesMisconceptionText(question: ErrorQuestionLike, misconceptionId: string): boolean {
   const text = `${question.id} ${question.text}`.toLowerCase();
-  if (misconceptionId === 'mis.math.missing_domain_condition') return text.includes('sqrt') || text.includes('domain') || text.includes('condition');
-  if (misconceptionId === 'mis.math.geometry_proof_gap') return text.includes('circle') || text.includes('geometry') || text.includes('duong') || text.includes('goc');
-  if (misconceptionId === 'mis.math.casio_operation_error') return text.includes('casio') || text.includes('calculator') || text.includes('delta');
+  if (misconceptionId === 'mis.math.missing_domain_condition')
+    return text.includes('sqrt') || text.includes('domain') || text.includes('condition');
+  if (misconceptionId === 'mis.math.geometry_proof_gap')
+    return text.includes('circle') || text.includes('geometry') || text.includes('duong') || text.includes('goc');
+  if (misconceptionId === 'mis.math.casio_operation_error')
+    return text.includes('casio') || text.includes('calculator') || text.includes('delta');
   if (misconceptionId === 'mis.eng.grammar_role_mismatch') return text.includes('grammar') || text.includes('although');
   if (misconceptionId === 'mis.eng.inference_literal_only') return text.includes('inference');
   return false;
@@ -726,7 +804,8 @@ function readableRerouteAction(action: RepairRerouteCandidate['action']): string
 }
 
 function repairReroutePriority(item: RepairRerouteCandidate): 'urgent' | 'watch' | 'routine' {
-  if (item.evidenceSource === 'live' && (item.action === 'teacher_review' || item.consecutiveWrongAttempts >= 3)) return 'urgent';
+  if (item.evidenceSource === 'live' && (item.action === 'teacher_review' || item.consecutiveWrongAttempts >= 3))
+    return 'urgent';
   if (item.evidenceCount >= 5 || item.consecutiveWrongAttempts >= 3) return 'watch';
   return 'routine';
 }
@@ -739,14 +818,21 @@ function programToTrack(programId: string): ContentIntervention['track'] {
   return 'math';
 }
 
-function buildLearnerReason(priority: LearnerIntervention['priority'], attempts: number, mastery: number, errors: number, t: TFunc): string {
+function buildLearnerReason(
+  priority: LearnerIntervention['priority'],
+  attempts: number,
+  mastery: number,
+  errors: number,
+  t: TFunc,
+): string {
   if (priority === 'urgent') return t('aiq_learner_reason_urgent', { mastery: Math.round(mastery), attempts, errors });
   if (priority === 'watch') return t('aiq_learner_reason_watch', { errors });
   return t('aiq_learner_reason_routine', { mastery: Math.round(mastery) });
 }
 
 function buildLearnerAction(priority: LearnerIntervention['priority'], focus: string | undefined, t: TFunc): string {
-  if (priority === 'urgent') return t('aiq_learner_action_urgent', { focus: focus || t('aiq_focus_weakest_prerequisite') });
+  if (priority === 'urgent')
+    return t('aiq_learner_action_urgent', { focus: focus || t('aiq_focus_weakest_prerequisite') });
   if (priority === 'watch') return t('aiq_learner_action_watch', { focus: focus || t('aiq_focus_weakest_skill') });
   return t('aiq_learner_action_routine');
 }
@@ -778,7 +864,8 @@ function normalizeTrack(value: string): ContentIntervention['track'] {
 }
 
 function inferTrackFromError(question: ErrorQuestionLike): ContentIntervention['track'] {
-  const value = `${question.id} ${question.text} ${(question.conceptIds || []).join(' ')} ${(question.skillIds || []).join(' ')}`.toLowerCase();
+  const value =
+    `${question.id} ${question.text} ${(question.conceptIds || []).join(' ')} ${(question.skillIds || []).join(' ')}`.toLowerCase();
   if (value.includes('sat')) return 'sat';
   if (value.includes('ielts') || value.includes('eng.')) return 'ielts';
   if (value.includes('cpe')) return 'cpe';
@@ -812,7 +899,15 @@ function PriorityPill({ priority }: { priority: 'urgent' | 'watch' | 'routine' }
   );
 }
 
-function QueueMetric({ label, value, tone }: { label: string; value: string; tone: 'rose' | 'amber' | 'cyan' | 'orange' }) {
+function QueueMetric({
+  label,
+  value,
+  tone,
+}: {
+  label: string;
+  value: string;
+  tone: 'rose' | 'amber' | 'cyan' | 'orange';
+}) {
   const toneClass = {
     rose: 'text-rose-300',
     amber: 'text-amber-300',
@@ -841,7 +936,9 @@ function Panel({ title, meta, children }: { title: string; meta: string; childre
     <div className="bg-slate-950/40 border border-slate-850 rounded-3xl p-4">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
         <h4 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">{title}</h4>
-        <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest sm:text-right sm:max-w-[220px] truncate">{meta}</span>
+        <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest sm:text-right sm:max-w-[220px] truncate">
+          {meta}
+        </span>
       </div>
       {children}
     </div>

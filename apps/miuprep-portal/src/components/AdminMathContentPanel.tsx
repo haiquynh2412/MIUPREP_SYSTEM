@@ -69,7 +69,9 @@ export default function AdminMathContentPanel({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div className="lg:col-span-2 space-y-4">
-        <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">{t('amc_math_lessons_heading')}</h4>
+        <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">
+          {t('amc_math_lessons_heading')}
+        </h4>
         <div className="border border-slate-855 rounded-2xl overflow-hidden bg-slate-950/40">
           <table className="w-full border-collapse text-xs text-left">
             <thead>
@@ -102,7 +104,9 @@ export default function AdminMathContentPanel({
 
       <div className="space-y-6 animate-fade-in">
         <div className="space-y-4">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">{t('amc_casio_manage_heading')}</h4>
+          <h4 className="text-xs font-bold uppercase tracking-wider text-orange-400 font-sans">
+            {t('amc_casio_manage_heading')}
+          </h4>
 
           <div className="flex flex-col gap-2 max-h-40 overflow-y-auto pr-1">
             {mathCasioTips.map((tip) => (
@@ -118,10 +122,17 @@ export default function AdminMathContentPanel({
             ))}
           </div>
 
-          <form onSubmit={onAddCasioTip} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-            <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">{t('amc_casio_add_heading')}</span>
+          <form
+            onSubmit={onAddCasioTip}
+            className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left"
+          >
+            <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">
+              {t('amc_casio_add_heading')}
+            </span>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_casio_title_label')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('amc_casio_title_label')}
+              </label>
               <input
                 type="text"
                 placeholder={t('amc_casio_title_placeholder')}
@@ -132,7 +143,9 @@ export default function AdminMathContentPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_casio_syntax_label')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('amc_casio_syntax_label')}
+              </label>
               <input
                 type="text"
                 placeholder={t('amc_casio_syntax_placeholder')}
@@ -143,7 +156,9 @@ export default function AdminMathContentPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_casio_expl_label')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('amc_casio_expl_label')}
+              </label>
               <textarea
                 rows={2}
                 placeholder={t('amc_casio_expl_placeholder')}
@@ -161,11 +176,18 @@ export default function AdminMathContentPanel({
           </form>
         </div>
 
-        <form onSubmit={onAddMathLesson} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-          <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">{t('amc_lesson_add_heading')}</span>
+        <form
+          onSubmit={onAddMathLesson}
+          className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left"
+        >
+          <span className="text-[10px] font-black uppercase tracking-wider text-orange-400 block font-sans">
+            {t('amc_lesson_add_heading')}
+          </span>
 
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_id_label')}</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+              {t('amc_lesson_id_label')}
+            </label>
             <input
               type="text"
               placeholder={t('amc_lesson_id_placeholder')}
@@ -176,7 +198,9 @@ export default function AdminMathContentPanel({
           </div>
 
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_title_label')}</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+              {t('amc_lesson_title_label')}
+            </label>
             <input
               type="text"
               placeholder={t('amc_lesson_title_placeholder')}
@@ -189,7 +213,9 @@ export default function AdminMathContentPanel({
 
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_category_label')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('amc_lesson_category_label')}
+              </label>
               <select
                 value={newMathTopic}
                 onChange={(event) => onSetNewMathTopic(event.target.value)}
@@ -201,7 +227,9 @@ export default function AdminMathContentPanel({
               </select>
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_lesson_count_label')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('amc_lesson_count_label')}
+              </label>
               <input
                 type="number"
                 min={5}
@@ -221,10 +249,17 @@ export default function AdminMathContentPanel({
           </button>
         </form>
 
-        <form onSubmit={onCreateLatexQuestion} className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left">
-          <span className="text-[10px] font-black uppercase tracking-wider text-indigo-400 block font-sans">{t('amc_latex_heading')}</span>
+        <form
+          onSubmit={onCreateLatexQuestion}
+          className="p-4 bg-slate-955 rounded-2xl border border-slate-850 space-y-3 text-left"
+        >
+          <span className="text-[10px] font-black uppercase tracking-wider text-indigo-400 block font-sans">
+            {t('amc_latex_heading')}
+          </span>
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_id_label')}</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+              {t('amc_latex_id_label')}
+            </label>
             <input
               type="text"
               placeholder={t('amc_latex_id_placeholder')}
@@ -234,7 +269,9 @@ export default function AdminMathContentPanel({
             />
           </div>
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_content_label')}</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+              {t('amc_latex_content_label')}
+            </label>
             <input
               type="text"
               placeholder={t('amc_latex_content_placeholder')}
@@ -245,7 +282,9 @@ export default function AdminMathContentPanel({
             />
           </div>
           <div>
-            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_equation_label')}</label>
+            <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+              {t('amc_latex_equation_label')}
+            </label>
             <input
               type="text"
               placeholder={t('amc_latex_equation_placeholder')}
@@ -257,7 +296,9 @@ export default function AdminMathContentPanel({
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_answer_label')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('amc_latex_answer_label')}
+              </label>
               <select
                 value={latexMathAns}
                 onChange={(event) => onSetLatexMathAns(event.target.value)}
@@ -270,7 +311,9 @@ export default function AdminMathContentPanel({
               </select>
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('amc_latex_expl_label')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('amc_latex_expl_label')}
+              </label>
               <input
                 type="text"
                 placeholder={t('amc_latex_expl_placeholder')}
@@ -283,7 +326,9 @@ export default function AdminMathContentPanel({
 
           {latexMathTitle && (
             <div className="p-3 bg-slate-900/60 border border-indigo-950 rounded-xl space-y-1.5">
-              <span className="text-[8px] font-black uppercase text-indigo-400 block font-mono">{t('amc_live_preview')}</span>
+              <span className="text-[8px] font-black uppercase text-indigo-400 block font-mono">
+                {t('amc_live_preview')}
+              </span>
               <p className="text-[10px] font-semibold text-slate-350">{latexMathTitle}</p>
               <p className="text-xs font-mono bg-slate-955 p-2 rounded border border-slate-850 text-indigo-400 font-bold text-center">
                 {latexMathEq || 'f(x) = ...'}

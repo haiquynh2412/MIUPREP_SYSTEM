@@ -1,8 +1,4 @@
-import type {
-  ContentProgramId,
-  EnglishExamTest,
-  QuestionItem,
-} from '@miuprep/content/src/standard';
+import type { ContentProgramId, EnglishExamTest, QuestionItem } from '@miuprep/content/src/standard';
 import {
   buildEnglishLearningCatalog,
   selectEnglishPracticeItems,
@@ -148,9 +144,12 @@ export function answerEnglishItemBankPracticeQuestion(
   };
 }
 
-export function advanceEnglishItemBankPractice(
-  state: EnglishItemBankPracticeState,
-): { completed: boolean; finalScore: number; totalQuestions: number; nextState: EnglishItemBankPracticeState | null } {
+export function advanceEnglishItemBankPractice(state: EnglishItemBankPracticeState): {
+  completed: boolean;
+  finalScore: number;
+  totalQuestions: number;
+  nextState: EnglishItemBankPracticeState | null;
+} {
   const nextIndex = state.currentIndex + 1;
   if (nextIndex < state.questions.length) {
     return {
@@ -174,11 +173,15 @@ export function advanceEnglishItemBankPractice(
   };
 }
 
-export function getCurrentEnglishItemBankPracticeQuestion(state: EnglishItemBankPracticeState): EnglishItemBankPracticeQuestion {
+export function getCurrentEnglishItemBankPracticeQuestion(
+  state: EnglishItemBankPracticeState,
+): EnglishItemBankPracticeQuestion {
   return state.questions[state.currentIndex];
 }
 
-export async function getEnglishItemBankPracticeCatalogCoverage(programId: EnglishItemBankPracticeProgramId): Promise<EnglishItemBankPracticeCoverage> {
+export async function getEnglishItemBankPracticeCatalogCoverage(
+  programId: EnglishItemBankPracticeProgramId,
+): Promise<EnglishItemBankPracticeCoverage> {
   const catalog = await getEnglishCatalog(programId);
   return {
     readyQuestions: catalog.coverage.readyQuestions,
@@ -280,7 +283,11 @@ function toPracticeQuestion(
   if (!correctValue) return null;
 
   const choices = buildChoices(item, correctValue, index, allItems);
-  const correctChoice = choices.find((choice) => choice.sourceValue === correctValue || normalizeAnswerValue(choice.sourceValue) === normalizeAnswerValue(correctValue));
+  const correctChoice = choices.find(
+    (choice) =>
+      choice.sourceValue === correctValue ||
+      normalizeAnswerValue(choice.sourceValue) === normalizeAnswerValue(correctValue),
+  );
 
   if (!choices.length || !correctChoice) return null;
 
@@ -313,16 +320,15 @@ function buildChoices(
   const matchingChoice = findMatchingSourceChoice(sourceChoices, correctValue);
   const correctText = matchingChoice ? formatSourceChoiceText(matchingChoice) : correctValue;
   const distractors = uniqueChoiceValues([
-    ...sourceChoices
-      .filter((choice) => choice !== matchingChoice)
-      .map(formatSourceChoiceText),
+    ...sourceChoices.filter((choice) => choice !== matchingChoice).map(formatSourceChoiceText),
     ...nearbyAnswerDistractors(item, correctValue, allItems),
     ...typeFallbackDistractors(item.type, correctValue),
   ]).filter((value) => normalizeAnswerValue(value) !== normalizeAnswerValue(correctText));
 
   const rawChoices = [correctText, ...distractors].slice(0, 4);
   while (rawChoices.length < 4) {
-    const fallback = typeFallbackDistractors(item.type, correctValue)[rawChoices.length] || `Alternative ${rawChoices.length + 1}`;
+    const fallback =
+      typeFallbackDistractors(item.type, correctValue)[rawChoices.length] || `Alternative ${rawChoices.length + 1}`;
     if (!rawChoices.some((choice) => normalizeAnswerValue(choice) === normalizeAnswerValue(fallback))) {
       rawChoices.push(fallback);
     } else {
@@ -351,7 +357,10 @@ function findMatchingSourceChoice(
 ): NonNullable<QuestionItem['choices']>[number] | undefined {
   const normalizedCorrect = normalizeAnswerValue(correctValue);
   return choices.find((choice) => {
-    return normalizeAnswerValue(choice.key) === normalizedCorrect || normalizeAnswerValue(choice.content) === normalizedCorrect;
+    return (
+      normalizeAnswerValue(choice.key) === normalizedCorrect ||
+      normalizeAnswerValue(choice.content) === normalizedCorrect
+    );
   });
 }
 
@@ -382,9 +391,15 @@ function typeFallbackDistractors(type: string, correctValue: string): string[] {
   const normalizedType = String(type || '').toLowerCase();
   if (normalizedType === 'true_false_not_given') return ['True', 'False', 'Not Given'];
   if (normalizedType === 'gap_fill' || normalizedType === 'table_completion') {
-    return ['No change', 'Not given', 'Different word form', 'Wrong register'].filter((item) => normalizeAnswerValue(item) !== normalizeAnswerValue(correctValue));
+    return ['No change', 'Not given', 'Different word form', 'Wrong register'].filter(
+      (item) => normalizeAnswerValue(item) !== normalizeAnswerValue(correctValue),
+    );
   }
-  if (normalizedType === 'matching_headings' || normalizedType === 'multiple_matching' || normalizedType === 'gapped_text') {
+  if (
+    normalizedType === 'matching_headings' ||
+    normalizedType === 'multiple_matching' ||
+    normalizedType === 'gapped_text'
+  ) {
     return ['Keyword match only', 'Opposite claim', 'Unsupported detail', 'Wrong paragraph role'];
   }
   return ['Closest keyword match', 'Unsupported inference', 'Wrong grammar role', 'Too broad'];
@@ -392,16 +407,17 @@ function typeFallbackDistractors(type: string, correctValue: string): string[] {
 
 function isScorableItem(item: QuestionItem): boolean {
   return (
-    item.domainId === 'english_core' &&
-    item.masteryPolicy !== 'feedback_only' &&
-    Boolean(getCorrectAnswerValue(item))
+    item.domainId === 'english_core' && item.masteryPolicy !== 'feedback_only' && Boolean(getCorrectAnswerValue(item))
   );
 }
 
 function getCorrectAnswerValue(item: QuestionItem): string {
   const acceptedAnswers = (item.metadata?.acceptedAnswers as unknown) || [];
   const acceptedValue = Array.isArray(acceptedAnswers)
-    ? acceptedAnswers.flatMap((entry) => (Array.isArray(entry) ? entry : [entry])).map(String).find((value) => value.trim())
+    ? acceptedAnswers
+        .flatMap((entry) => (Array.isArray(entry) ? entry : [entry]))
+        .map(String)
+        .find((value) => value.trim())
     : '';
   const answer = item.correctAnswer;
   if (typeof answer === 'string') return answer.trim() || String(acceptedValue || '').trim();
@@ -450,5 +466,8 @@ function uniqueChoiceValues(values: string[]): string[] {
 }
 
 function normalizeAnswerValue(value: string): string {
-  return String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  return String(value || '')
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, ' ');
 }

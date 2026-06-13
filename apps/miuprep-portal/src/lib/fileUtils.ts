@@ -3,5 +3,10 @@
 
 /** Turn an arbitrary string into a safe slug for filenames/ids. */
 export function safeFilePart(value: string): string {
-  return value.toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '') || 'content';
+  return (
+    value
+      .toLowerCase()
+      .replace(/[^a-z0-9._-]+/g, '-')
+      .replace(/^-+|-+$/g, '') || 'content'
+  );
 }

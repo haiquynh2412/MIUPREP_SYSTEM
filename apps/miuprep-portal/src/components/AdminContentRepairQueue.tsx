@@ -20,7 +20,8 @@ const ISSUE_LABELS: Record<string, string> = {
 
 const ISSUE_ACTIONS: Record<string, string> = {
   missing_listening_content: 'Ưu tiên CPE Listening trước, vì đây là blocker lớn nhất.',
-  'schema.sections[*].questionGroups[*].questions[*].blankIndex': 'Chuẩn hóa lại gap-fill để adapter biết blank nào cần chấm.',
+  'schema.sections[*].questionGroups[*].questions[*].blankIndex':
+    'Chuẩn hóa lại gap-fill để adapter biết blank nào cần chấm.',
   'schema.sections[*].transcript': 'Bổ sung transcript ở cấp section để learner và AI Tutor có evidence.',
   missing_reading_content: 'Gắn lại passageHtml hoặc source passage trước khi publish.',
   'schema.sections[*].passageHtml': 'Kiểm tra import parser và nội dung HTML của passage.',
@@ -51,7 +52,8 @@ export default function AdminContentRepairQueue({ onOpenContent }: AdminContentR
           </div>
           <h3 className="text-2xl font-black text-slate-50 m-0 mt-3">Việc cần sửa trước khi mở rộng nội dung</h3>
           <p className="text-sm text-slate-400 mt-2 mb-0 max-w-3xl leading-relaxed">
-            Queue này gom blocker từ English guard để admin sửa đúng thứ tự: Listening trước, sau đó gap-fill và reading context.
+            Queue này gom blocker từ English guard để admin sửa đúng thứ tự: Listening trước, sau đó gap-fill và reading
+            context.
           </p>
         </div>
 
@@ -65,7 +67,9 @@ export default function AdminContentRepairQueue({ onOpenContent }: AdminContentR
       <div className="bg-slate-950/50 border border-emerald-500/20 rounded-2xl p-4 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <div>
-            <p className="text-[10px] font-black uppercase tracking-[0.16em] text-emerald-300 m-0">Unified Content Coverage</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.16em] text-emerald-300 m-0">
+              Unified Content Coverage
+            </p>
             <h4 className="text-base font-black text-slate-100 mt-1 mb-0">MiuMath / SAT / IELTS import status</h4>
           </div>
           <span className="text-[10px] font-bold text-slate-500 bg-slate-950 border border-slate-850 px-2 py-1 rounded">
@@ -92,7 +96,10 @@ export default function AdminContentRepairQueue({ onOpenContent }: AdminContentR
             <p className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-500 m-0">Đường sửa tối ưu</p>
             <ol className="mt-3 mb-0 p-0 list-none space-y-2">
               <StepItem index={1} text={`Sửa ${listening?.blockerItems || 0} blocker Listening, chủ yếu CPE.`} />
-              <StepItem index={2} text={`Sửa ${useOfEnglish?.blockerItems || 0} blocker Use of English còn thiếu context.`} />
+              <StepItem
+                index={2}
+                text={`Sửa ${useOfEnglish?.blockerItems || 0} blocker Use of English còn thiếu context.`}
+              />
               <StepItem index={3} text="Chạy guard:english rồi sync portal snapshot." />
             </ol>
           </div>
@@ -127,7 +134,9 @@ export default function AdminContentRepairQueue({ onOpenContent }: AdminContentR
 }
 
 function CoverageProgramCard({ program }: { program: ContentCoverageProgramSnapshot }) {
-  const readyRate = program.importedQuestions ? Math.round((program.readyQuestions / program.importedQuestions) * 100) : 0;
+  const readyRate = program.importedQuestions
+    ? Math.round((program.readyQuestions / program.importedQuestions) * 100)
+    : 0;
   const computedStatus =
     program.blockerItems > 0 || !program.adapterPass
       ? 'needs_repair'
@@ -151,7 +160,9 @@ function CoverageProgramCard({ program }: { program: ContentCoverageProgramSnaps
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">{program.programId}</p>
             <h5 className="text-sm font-black text-slate-100 mt-1 mb-0 truncate">{program.label}</h5>
           </div>
-          <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded border shrink-0 ${statusClass}`}>
+          <span
+            className={`text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded border shrink-0 ${statusClass}`}
+          >
             {statusLabel}
           </span>
         </div>
@@ -163,7 +174,11 @@ function CoverageProgramCard({ program }: { program: ContentCoverageProgramSnaps
         <MiniCoverageMetric label="Source" value={program.sourceQuestions} />
         <MiniCoverageMetric label="Import" value={program.importedQuestions} />
         <MiniCoverageMetric label="Ready" value={`${readyRate}%`} />
-        <MiniCoverageMetric label="Block" value={program.blockerItems} tone={program.blockerItems ? 'rose' : 'emerald'} />
+        <MiniCoverageMetric
+          label="Block"
+          value={program.blockerItems}
+          tone={program.blockerItems ? 'rose' : 'emerald'}
+        />
       </div>
     </article>
   );
@@ -182,14 +197,24 @@ function RepairIssueRow({ issue, rank }: { issue: ContentQualityIssueSnapshot; r
             {issue.count} items
           </span>
         </div>
-        <p className="text-xs text-slate-500 mt-2 mb-0 leading-relaxed">{ISSUE_ACTIONS[issue.code] || 'Rà lại source parser và schema guard.'}</p>
+        <p className="text-xs text-slate-500 mt-2 mb-0 leading-relaxed">
+          {ISSUE_ACTIONS[issue.code] || 'Rà lại source parser và schema guard.'}
+        </p>
         <p className="text-[10px] text-slate-600 mt-2 mb-0 font-mono break-all">{issue.code}</p>
       </div>
     </article>
   );
 }
 
-function MiniCoverageMetric({ label, value, tone = 'slate' }: { label: string; value: string | number; tone?: 'slate' | 'emerald' | 'rose' }) {
+function MiniCoverageMetric({
+  label,
+  value,
+  tone = 'slate',
+}: {
+  label: string;
+  value: string | number;
+  tone?: 'slate' | 'emerald' | 'rose';
+}) {
   const toneClass = {
     slate: 'text-slate-200',
     emerald: 'text-emerald-300',

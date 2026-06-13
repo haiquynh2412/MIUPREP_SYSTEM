@@ -1,5 +1,5 @@
 const pickRandom = (items) => {
-  if (!items.length) return "";
+  if (!items.length) return '';
   return items[Math.floor(Math.random() * items.length)];
 };
 
@@ -25,43 +25,79 @@ export default function MiuMathSidebar({
         `Ngon qua meow! Ca hoi beo ngay luon! Miu chuc ${userName} hoc that tot va tranh duoc moi bay chuot hom nay nhe!`,
         `Meo meo! Co ca hoi an la Miu thich nhat! Miu nap day 100% nang luong de dong hanh cung ${userName} day!`,
       ];
-      triggerMascotReaction("success", pickRandom(feedPhrases));
+      triggerMascotReaction('success', pickRandom(feedPhrases));
       return;
     }
 
     triggerMascotReaction(
-      "failed",
+      'failed',
       `Meow... Khong du xu ca hoi roi ${userName} oi! Kiem them xu bang cach lam dung cau hoi hoac hoan thanh de thi thu de kiem them xu nhe!`,
     );
   };
 
   return (
     <aside style={{ display: 'flex', flexDirection: 'column', gap: '20px', position: 'sticky', top: '100px' }}>
-      <div className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', background: '#ffffff', minHeight: '320px', justifyContent: 'center' }}>
-        <div className="mascot-float" style={{ fontSize: '4.5rem', marginBottom: '16px', transition: 'var(--transition)' }}>
-          {mascotState === "success" ? "😸" : mascotState === "failed" ? "😾" : mascotState === "hint" ? "😼" : "🐱"}
+      <div
+        className="card"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          textAlign: 'center',
+          background: '#ffffff',
+          minHeight: '320px',
+          justifyContent: 'center',
+        }}
+      >
+        <div
+          className="mascot-float"
+          style={{ fontSize: '4.5rem', marginBottom: '16px', transition: 'var(--transition)' }}
+        >
+          {mascotState === 'success' ? '😸' : mascotState === 'failed' ? '😾' : mascotState === 'hint' ? '😼' : '🐱'}
         </div>
-        <div style={{
-          background: '#e6f7f0',
-          border: '2px solid var(--color-border)',
-          padding: '12px 16px',
-          borderRadius: '16px',
-          fontSize: '0.88rem',
-          fontWeight: 600,
-          color: '#064e3b',
-          position: 'relative',
-          width: '100%',
-        }}>
+        <div
+          style={{
+            background: '#e6f7f0',
+            border: '2px solid var(--color-border)',
+            padding: '12px 16px',
+            borderRadius: '16px',
+            fontSize: '0.88rem',
+            fontWeight: 600,
+            color: '#064e3b',
+            position: 'relative',
+            width: '100%',
+          }}
+        >
           {mascotBubble}
         </div>
       </div>
 
       <div className="card" style={{ background: '#ffffff', padding: '16px' }}>
-        <h4 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#064e3b', borderBottom: '1px solid var(--color-border)', paddingBottom: '6px', marginBottom: '12px' }}>
+        <h4
+          style={{
+            fontSize: '0.95rem',
+            fontWeight: 700,
+            color: '#064e3b',
+            borderBottom: '1px solid var(--color-border)',
+            paddingBottom: '6px',
+            marginBottom: '12px',
+          }}
+        >
           🐾 Bang thanh tich meow
         </h4>
 
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'linear-gradient(135deg, #e6f7f0 0%, #d1fae5 100%)', padding: '10px 14px', borderRadius: '12px', marginBottom: '14px', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            background: 'linear-gradient(135deg, #e6f7f0 0%, #d1fae5 100%)',
+            padding: '10px 14px',
+            borderRadius: '12px',
+            marginBottom: '14px',
+            border: '1px solid rgba(16, 185, 129, 0.2)',
+          }}
+        >
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '1.4rem' }}>🐟</span>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -71,7 +107,17 @@ export default function MiuMathSidebar({
           </div>
           <button
             className="btn btn-primary"
-            style={{ padding: '6px 12px', fontSize: '0.8rem', borderRadius: '14px', background: '#10b981', border: 'none', color: '#ffffff', fontWeight: 700, cursor: 'pointer', boxShadow: '0 2px 4px rgba(16, 185, 129, 0.2)' }}
+            style={{
+              padding: '6px 12px',
+              fontSize: '0.8rem',
+              borderRadius: '14px',
+              background: '#10b981',
+              border: 'none',
+              color: '#ffffff',
+              fontWeight: 700,
+              cursor: 'pointer',
+              boxShadow: '0 2px 4px rgba(16, 185, 129, 0.2)',
+            }}
             onClick={feedMascot}
           >
             🐟 Cho Miu an (-10)
@@ -85,20 +131,34 @@ export default function MiuMathSidebar({
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ color: '#15803d' }}>SRS core due:</span>
-            <strong style={{ color: '#f97316' }}>{errorNotebookSummary.due}/{errorNotebookSummary.total}</strong>
+            <strong style={{ color: '#f97316' }}>
+              {errorNotebookSummary.due}/{errorNotebookSummary.total}
+            </strong>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ color: '#15803d' }}>⭐ Cau hoi yeu thich:</span>
             <strong style={{ color: '#10b981' }}>{bookmarkedCount} cau</strong>
           </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }} onClick={() => setMode("so_tay_bay_chuot")}>
+          <div
+            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}
+            onClick={() => setMode('so_tay_bay_chuot')}
+          >
             <span style={{ color: '#10b981', textDecoration: 'underline', fontWeight: 600 }}>👉 Luyen bay ngay</span>
           </div>
         </div>
       </div>
 
       <div className="card" style={{ background: '#ffffff', padding: '16px' }}>
-        <h4 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#064e3b', borderBottom: '1px solid var(--color-border)', paddingBottom: '6px', marginBottom: '12px' }}>
+        <h4
+          style={{
+            fontSize: '0.95rem',
+            fontWeight: 700,
+            color: '#064e3b',
+            borderBottom: '1px solid var(--color-border)',
+            paddingBottom: '6px',
+            marginBottom: '12px',
+          }}
+        >
           📝 Bang nhap tu do meow
         </h4>
         <textarea
@@ -121,7 +181,7 @@ export default function MiuMathSidebar({
         <button
           className="btn btn-secondary"
           style={{ width: '100%', marginTop: '8px', padding: '4px 10px', fontSize: '0.75rem' }}
-          onClick={() => setDraftPadText("")}
+          onClick={() => setDraftPadText('')}
         >
           Xoa nhap 🗑️
         </button>

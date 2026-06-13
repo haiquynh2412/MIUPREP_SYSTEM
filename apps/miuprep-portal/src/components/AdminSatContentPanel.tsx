@@ -33,11 +33,31 @@ const SAT_BANK_OPTIONS = [
   { value: 'sat-1590-elite-ai-bank.json', labelKey: 'asc_bank_label_elite', name: 'Elite AI Bank', count: '661' },
   { value: 'antigravity-bank.json', labelKey: 'asc_bank_label_antigravity', name: 'Antigravity Bank', count: '7,158' },
   { value: 'opensat-pinesat.json', labelKey: 'asc_bank_label_opensat', name: 'OpenSAT Pinesat', count: '1,026' },
-  { value: 'sat-king-supplemental-ai-bank.json', labelKey: 'asc_bank_label_supplemental', name: 'Supplemental AI Bank', count: '354' },
+  {
+    value: 'sat-king-supplemental-ai-bank.json',
+    labelKey: 'asc_bank_label_supplemental',
+    name: 'Supplemental AI Bank',
+    count: '354',
+  },
   { value: 'archive-source-ai-bank.json', labelKey: 'asc_bank_label_archive', name: 'Archive AI Bank', count: '792' },
-  { value: 'sat-studio-foundation-bank.json', labelKey: 'asc_bank_label_foundation', name: 'Foundation Bank', count: '219' },
-  { value: 'private-vault-archive-bank.json', labelKey: 'asc_bank_label_private_vault', name: 'Private Vault Bank', count: '165' },
-  { value: 'kaplan-sat-math-ai-bank.json', labelKey: 'asc_bank_label_kaplan', name: 'Kaplan Math AI Bank', count: '148' },
+  {
+    value: 'sat-studio-foundation-bank.json',
+    labelKey: 'asc_bank_label_foundation',
+    name: 'Foundation Bank',
+    count: '219',
+  },
+  {
+    value: 'private-vault-archive-bank.json',
+    labelKey: 'asc_bank_label_private_vault',
+    name: 'Private Vault Bank',
+    count: '165',
+  },
+  {
+    value: 'kaplan-sat-math-ai-bank.json',
+    labelKey: 'asc_bank_label_kaplan',
+    name: 'Kaplan Math AI Bank',
+    count: '148',
+  },
 ];
 
 const SAT_DOMAIN_OPTIONS = [
@@ -52,12 +72,60 @@ const SAT_DOMAIN_OPTIONS = [
 ];
 
 const INTEGRITY_BANKS = [
-  { name: 'antigravity-bank.json', size: '50.5 MB', countNum: '7,158', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_antigravity', certKey: 'asc_integrity_cert_college_board', statusKey: 'asc_integrity_status_healthy' },
-  { name: 'opensat-pinesat.json', size: '9.3 MB', countNum: '1,026', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_opensat', certKey: 'asc_integrity_cert_bluebook', statusKey: 'asc_integrity_status_healthy' },
-  { name: 'sat-1590-elite-ai-bank.json', size: '5.1 MB', countNum: '661', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_elite', certKey: 'asc_integrity_cert_strict_1600', statusKey: 'asc_integrity_status_healthy' },
-  { name: 'sat-king-supplemental-ai-bank.json', size: '2.9 MB', countNum: '354', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_king_pack', certKey: 'asc_integrity_cert_autocheck', statusKey: 'asc_integrity_status_healthy' },
-  { name: 'archive-source-ai-bank.json', size: '6.7 MB', countNum: '792', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_archive', certKey: 'asc_integrity_cert_curriculum', statusKey: 'asc_integrity_status_healthy' },
-  { name: 'canonical-sat-taxonomy.json', size: '16.5 KB', countNum: '518', countKey: 'asc_integrity_count_dong', typeKey: 'asc_integrity_type_taxonomy', certKey: 'asc_integrity_cert_official_taxonomy', statusKey: 'asc_integrity_status_healthy' },
+  {
+    name: 'antigravity-bank.json',
+    size: '50.5 MB',
+    countNum: '7,158',
+    countKey: 'asc_integrity_count_cau',
+    typeKey: 'asc_integrity_type_antigravity',
+    certKey: 'asc_integrity_cert_college_board',
+    statusKey: 'asc_integrity_status_healthy',
+  },
+  {
+    name: 'opensat-pinesat.json',
+    size: '9.3 MB',
+    countNum: '1,026',
+    countKey: 'asc_integrity_count_cau',
+    typeKey: 'asc_integrity_type_opensat',
+    certKey: 'asc_integrity_cert_bluebook',
+    statusKey: 'asc_integrity_status_healthy',
+  },
+  {
+    name: 'sat-1590-elite-ai-bank.json',
+    size: '5.1 MB',
+    countNum: '661',
+    countKey: 'asc_integrity_count_cau',
+    typeKey: 'asc_integrity_type_elite',
+    certKey: 'asc_integrity_cert_strict_1600',
+    statusKey: 'asc_integrity_status_healthy',
+  },
+  {
+    name: 'sat-king-supplemental-ai-bank.json',
+    size: '2.9 MB',
+    countNum: '354',
+    countKey: 'asc_integrity_count_cau',
+    typeKey: 'asc_integrity_type_king_pack',
+    certKey: 'asc_integrity_cert_autocheck',
+    statusKey: 'asc_integrity_status_healthy',
+  },
+  {
+    name: 'archive-source-ai-bank.json',
+    size: '6.7 MB',
+    countNum: '792',
+    countKey: 'asc_integrity_count_cau',
+    typeKey: 'asc_integrity_type_archive',
+    certKey: 'asc_integrity_cert_curriculum',
+    statusKey: 'asc_integrity_status_healthy',
+  },
+  {
+    name: 'canonical-sat-taxonomy.json',
+    size: '16.5 KB',
+    countNum: '518',
+    countKey: 'asc_integrity_count_dong',
+    typeKey: 'asc_integrity_type_taxonomy',
+    certKey: 'asc_integrity_cert_official_taxonomy',
+    statusKey: 'asc_integrity_status_healthy',
+  },
 ];
 
 function difficultyClass(difficulty?: string) {
@@ -99,8 +167,10 @@ export default function AdminSatContentPanel({
   const filteredQuestions = useMemo(() => {
     const query = adminSearchQuery.trim().toLowerCase();
     return loadedQuestions.filter((question) => {
-      const matchesDomain = adminSelectedDomain === 'all' || question.domain?.toLowerCase() === adminSelectedDomain.toLowerCase();
-      const matchesSearch = !query || question.id?.toLowerCase().includes(query) || question.prompt?.toLowerCase().includes(query);
+      const matchesDomain =
+        adminSelectedDomain === 'all' || question.domain?.toLowerCase() === adminSelectedDomain.toLowerCase();
+      const matchesSearch =
+        !query || question.id?.toLowerCase().includes(query) || question.prompt?.toLowerCase().includes(query);
       return matchesDomain && matchesSearch;
     });
   }, [adminSearchQuery, adminSelectedDomain, loadedQuestions]);
@@ -123,7 +193,9 @@ export default function AdminSatContentPanel({
             type="button"
             onClick={() => onSetAdminSatSubTab(tab.id)}
             className={`px-4 py-2 rounded-xl text-xs font-black uppercase transition-all border-0 cursor-pointer ${
-              adminSatSubTab === tab.id ? 'bg-rose-500 text-slate-955 font-bold shadow' : 'bg-transparent text-slate-400 hover:text-slate-200'
+              adminSatSubTab === tab.id
+                ? 'bg-rose-500 text-slate-955 font-bold shadow'
+                : 'bg-transparent text-slate-400 hover:text-slate-200'
             }`}
           >
             {tab.label}
@@ -135,7 +207,9 @@ export default function AdminSatContentPanel({
         <div className="space-y-6">
           <div className="bg-slate-955 p-5 rounded-3xl border border-slate-850 grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('asc_label_select_bank')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('asc_label_select_bank')}
+              </label>
               <select
                 value={adminSelectedSatBank}
                 onChange={(event) => {
@@ -153,7 +227,9 @@ export default function AdminSatContentPanel({
             </div>
 
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('asc_label_filter_domain')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('asc_label_filter_domain')}
+              </label>
               <select
                 value={adminSelectedDomain}
                 onChange={(event) => {
@@ -173,7 +249,9 @@ export default function AdminSatContentPanel({
             </div>
 
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('asc_label_search_keyword')}</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">
+                {t('asc_label_search_keyword')}
+              </label>
               <input
                 type="text"
                 placeholder={t('asc_placeholder_search')}
@@ -223,18 +301,25 @@ export default function AdminSatContentPanel({
                             {question.domain || 'Math'}
                           </span>
                         </td>
-                        <td className="p-3 text-slate-200 font-bold max-w-[120px] truncate" title={question.skill || question.canonicalSkill}>
+                        <td
+                          className="p-3 text-slate-200 font-bold max-w-[120px] truncate"
+                          title={question.skill || question.canonicalSkill}
+                        >
                           {question.skill || question.canonicalSkill || 'Mixed'}
                         </td>
                         <td className="p-3 text-slate-450 max-w-[280px] truncate" title={question.prompt}>
                           {question.prompt}
                         </td>
                         <td className="p-3">
-                          <span className={`text-[9px] font-black px-2 py-0.5 rounded-full border uppercase tracking-wider ${difficultyClass(question.difficulty)}`}>
+                          <span
+                            className={`text-[9px] font-black px-2 py-0.5 rounded-full border uppercase tracking-wider ${difficultyClass(question.difficulty)}`}
+                          >
                             {question.difficulty || 'Hard'}
                           </span>
                         </td>
-                        <td className="p-3 text-center font-mono font-black text-emerald-400 uppercase">{question.correctAnswer}</td>
+                        <td className="p-3 text-center font-mono font-black text-emerald-400 uppercase">
+                          {question.correctAnswer}
+                        </td>
                         <td className="p-3 text-center">
                           <button
                             type="button"
@@ -292,7 +377,10 @@ export default function AdminSatContentPanel({
                   <div>
                     <h3 className="text-sm font-black text-rose-400 font-sans uppercase">{t('asc_modal_title')}</h3>
                     <span className="text-[10px] font-mono text-slate-500 block mt-0.5">
-                      {t('asc_modal_id_section', { id: activeQuestionDetail.id ?? '-', section: activeQuestionDetail.section || '-' })}
+                      {t('asc_modal_id_section', {
+                        id: activeQuestionDetail.id ?? '-',
+                        section: activeQuestionDetail.section || '-',
+                      })}
                     </span>
                   </div>
                 </div>
@@ -300,17 +388,25 @@ export default function AdminSatContentPanel({
                 <div className="space-y-4 max-h-[380px] overflow-y-auto pr-2 scrollbar-thin text-xs">
                   <div className="grid grid-cols-2 gap-3">
                     <div className="bg-slate-955 p-2.5 rounded-xl border border-slate-850">
-                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_domain')}</span>
+                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">
+                        {t('asc_modal_domain')}
+                      </span>
                       <span className="font-extrabold text-slate-200">{activeQuestionDetail.domain}</span>
                     </div>
                     <div className="bg-slate-955 p-2.5 rounded-xl border border-slate-850">
-                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_skill')}</span>
-                      <span className="font-extrabold text-slate-200">{activeQuestionDetail.skill || activeQuestionDetail.canonicalSkill}</span>
+                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">
+                        {t('asc_modal_skill')}
+                      </span>
+                      <span className="font-extrabold text-slate-200">
+                        {activeQuestionDetail.skill || activeQuestionDetail.canonicalSkill}
+                      </span>
                     </div>
                   </div>
 
                   <div className="space-y-1 bg-slate-955 p-3 rounded-xl border border-slate-850">
-                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_content')}</span>
+                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">
+                      {t('asc_modal_content')}
+                    </span>
                     <PromptWithAssets
                       text={activeQuestionDetail.prompt}
                       className="font-semibold text-slate-150 whitespace-pre-line leading-relaxed font-sans"
@@ -319,7 +415,9 @@ export default function AdminSatContentPanel({
 
                   {activeQuestionDetail.choices && (
                     <div className="space-y-1.5">
-                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block">{t('asc_modal_choices')}</span>
+                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block">
+                        {t('asc_modal_choices')}
+                      </span>
                       <div className="grid grid-cols-1 gap-2">
                         {Object.entries(activeQuestionDetail.choices).map(([key, value]) => (
                           <div
@@ -347,8 +445,12 @@ export default function AdminSatContentPanel({
                   )}
 
                   <div className="space-y-1 bg-slate-955 p-3 rounded-xl border border-slate-850">
-                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_explanation')}</span>
-                    <p className="text-slate-350 whitespace-pre-line leading-relaxed font-sans">{getExplanation(activeQuestionDetail, t('asc_no_explanation'))}</p>
+                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">
+                      {t('asc_modal_explanation')}
+                    </span>
+                    <p className="text-slate-350 whitespace-pre-line leading-relaxed font-sans">
+                      {getExplanation(activeQuestionDetail, t('asc_no_explanation'))}
+                    </p>
                   </div>
                 </div>
 
@@ -371,7 +473,9 @@ export default function AdminSatContentPanel({
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-6">
           <div className="border-b border-slate-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <h4 className="text-xs font-black text-rose-400 uppercase tracking-widest font-sans">{t('asc_integrity_heading')}</h4>
+              <h4 className="text-xs font-black text-rose-400 uppercase tracking-widest font-sans">
+                {t('asc_integrity_heading')}
+              </h4>
               <p className="text-[10px] text-slate-500 mt-1 font-light font-sans leading-relaxed">
                 {t('asc_integrity_desc')}
               </p>
@@ -425,11 +529,15 @@ export default function AdminSatContentPanel({
       {adminSatSubTab === 'calibration' && (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="p-6 bg-slate-900 rounded-3xl border border-slate-800 space-y-4 shadow-xl">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 font-sans">{t('asc_calib_config_heading')}</h4>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 font-sans">
+              {t('asc_calib_config_heading')}
+            </h4>
 
             <div className="space-y-4">
               <div>
-                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">{t('asc_calib_target_score')}</label>
+                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">
+                  {t('asc_calib_target_score')}
+                </label>
                 <div className="flex items-center gap-3">
                   <input
                     type="range"
@@ -440,12 +548,16 @@ export default function AdminSatContentPanel({
                     onChange={(event) => onSetSatDiagnosticThreshold(Number(event.target.value))}
                     className="flex-1 accent-rose-500 cursor-pointer"
                   />
-                  <span className="font-mono font-bold text-slate-200 shrink-0 w-12 text-right">{satDiagnosticThreshold}</span>
+                  <span className="font-mono font-bold text-slate-200 shrink-0 w-12 text-right">
+                    {satDiagnosticThreshold}
+                  </span>
                 </div>
               </div>
 
               <div>
-                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">{t('asc_calib_irt_alpha')}</label>
+                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">
+                  {t('asc_calib_irt_alpha')}
+                </label>
                 <div className="flex items-center gap-3">
                   <input
                     type="range"
@@ -456,7 +568,9 @@ export default function AdminSatContentPanel({
                     onChange={(event) => onSetSatIrtAlpha(Number(event.target.value))}
                     className="flex-1 accent-rose-500 cursor-pointer"
                   />
-                  <span className="font-mono font-bold text-slate-200 shrink-0 w-12 text-right">{satIrtAlpha.toFixed(2)}</span>
+                  <span className="font-mono font-bold text-slate-200 shrink-0 w-12 text-right">
+                    {satIrtAlpha.toFixed(2)}
+                  </span>
                 </div>
               </div>
 
@@ -468,7 +582,9 @@ export default function AdminSatContentPanel({
 
           <div className="p-6 bg-slate-900 rounded-3xl border border-slate-800 flex flex-col justify-between shadow-xl">
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2 font-sans">{t('asc_calib_irt_engine_heading')}</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2 font-sans">
+                {t('asc_calib_irt_engine_heading')}
+              </h4>
               <p className="text-[10px] text-slate-500 leading-relaxed mb-4 font-light font-sans">
                 {t('asc_calib_irt_engine_desc')}
               </p>

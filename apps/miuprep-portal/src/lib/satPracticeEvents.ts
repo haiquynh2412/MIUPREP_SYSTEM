@@ -54,8 +54,11 @@ export function buildSatPracticeLearningEvent(
 }
 
 function inferSatLearningDomain(question: SatQuestion, state: SatPracticeState): string {
-  const value = `${question.domain || ''} ${question.skill || ''} ${question.canonicalSkill || ''} ${state.domain || ''}`.toLowerCase();
-  return value.includes('math') || value.includes('algebra') || value.includes('geometry') ? 'mathematics' : 'english_core';
+  const value =
+    `${question.domain || ''} ${question.skill || ''} ${question.canonicalSkill || ''} ${state.domain || ''}`.toLowerCase();
+  return value.includes('math') || value.includes('algebra') || value.includes('geometry')
+    ? 'mathematics'
+    : 'english_core';
 }
 
 function inferSatLearningConceptIds(question: SatQuestion, state: SatPracticeState, domainId: string): string[] {

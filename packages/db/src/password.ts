@@ -38,7 +38,7 @@ function getCrypto(): Crypto {
   const c = globalThis.crypto;
   if (!c || !c.subtle) {
     throw new Error(
-      'Web Crypto (crypto.subtle) is unavailable. Passwords require a secure context (HTTPS/localhost/Tauri).'
+      'Web Crypto (crypto.subtle) is unavailable. Passwords require a secure context (HTTPS/localhost/Tauri).',
     );
   }
   return c;
@@ -46,17 +46,13 @@ function getCrypto(): Crypto {
 
 async function deriveKey(password: string, salt: Uint8Array, iterations: number): Promise<Uint8Array> {
   const c = getCrypto();
-  const keyMaterial = await c.subtle.importKey(
-    'raw',
-    new TextEncoder().encode(password),
-    'PBKDF2',
-    false,
-    ['deriveBits']
-  );
+  const keyMaterial = await c.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, [
+    'deriveBits',
+  ]);
   const bits = await c.subtle.deriveBits(
     { name: 'PBKDF2', hash: 'SHA-256', salt: salt as BufferSource, iterations },
     keyMaterial,
-    HASH_BYTES * 8
+    HASH_BYTES * 8,
   );
   return new Uint8Array(bits);
 }
@@ -65,7 +61,7 @@ async function sha256Hex(value: string): Promise<string> {
   const c = getCrypto();
   const digest = await c.subtle.digest('SHA-256', new TextEncoder().encode(value));
   return Array.from(new Uint8Array(digest))
-    .map(b => b.toString(16).padStart(2, '0'))
+    .map((b) => b.toString(16).padStart(2, '0'))
     .join('');
 }
 
@@ -81,7 +77,10 @@ export interface PasswordVerifyResult {
   needsRehash: boolean;
 }
 
-export async function verifyPassword(password: string, stored: string | undefined | null): Promise<PasswordVerifyResult> {
+export async function verifyPassword(
+  password: string,
+  stored: string | undefined | null,
+): Promise<PasswordVerifyResult> {
   if (!password || !stored) return { ok: false, needsRehash: false };
 
   if (stored.startsWith(`${FORMAT_PREFIX}$`)) {

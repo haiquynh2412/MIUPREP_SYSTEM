@@ -14,7 +14,9 @@ export default function StreakTracker({ streak = 0, bestStreak = 0, lang = 'vi' 
         border: streak > 0 ? '1px solid var(--primary)' : '1px solid var(--border)',
         transition: 'var(--transition)',
       }}
-      title={lang === 'en' ? `Streak: ${streak} | Record: ${bestStreak}` : `Chuỗi ngày: ${streak} | Kỷ lục: ${bestStreak}`}
+      title={
+        lang === 'en' ? `Streak: ${streak} | Record: ${bestStreak}` : `Chuỗi ngày: ${streak} | Kỷ lục: ${bestStreak}`
+      }
     >
       <span
         style={{

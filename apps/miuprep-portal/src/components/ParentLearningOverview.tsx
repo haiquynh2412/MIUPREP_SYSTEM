@@ -23,7 +23,11 @@ interface ChildProgressRow {
   errorNotebookCount: number;
 }
 
-export default function ParentLearningOverview({ linkedStudents, tracks, learningEvents = [] }: ParentLearningOverviewProps) {
+export default function ParentLearningOverview({
+  linkedStudents,
+  tracks,
+  learningEvents = [],
+}: ParentLearningOverviewProps) {
   const rows = useMemo(
     () => linkedStudents.map((student) => buildChildProgressRow(student, tracks, learningEvents)),
     [learningEvents, linkedStudents, tracks],
@@ -57,7 +61,9 @@ export default function ParentLearningOverview({ linkedStudents, tracks, learnin
             <article key={row.student.id} className="bg-slate-950/50 border border-slate-850 rounded-2xl p-4 space-y-4">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <h3 className="text-sm font-black text-slate-100 m-0">{row.student.displayName || row.student.username}</h3>
+                  <h3 className="text-sm font-black text-slate-100 m-0">
+                    {row.student.displayName || row.student.username}
+                  </h3>
                   <p className="text-[11px] text-slate-500 m-0 mt-1">@{row.student.username}</p>
                 </div>
                 <span className="text-[10px] font-black text-emerald-400 bg-emerald-950/40 border border-emerald-900/50 px-2 py-1 rounded uppercase">
@@ -71,7 +77,10 @@ export default function ParentLearningOverview({ linkedStudents, tracks, learnin
                   <span className="text-slate-300 font-mono">{row.evidence} evidence</span>
                 </div>
                 <div className="h-2 bg-slate-900 border border-slate-850 rounded-full overflow-hidden mt-1">
-                  <div className="h-full bg-orange-500 rounded-full" style={{ width: `${Math.max(4, Math.min(100, row.averageMastery))}%` }} />
+                  <div
+                    className="h-full bg-orange-500 rounded-full"
+                    style={{ width: `${Math.max(4, Math.min(100, row.averageMastery))}%` }}
+                  />
                 </div>
               </div>
 
@@ -98,12 +107,22 @@ function InfoTile({ label, value }: { label: string; value: string }) {
   );
 }
 
-function buildChildProgressRow(student: LocalUser, tracks: PortalTrackInfo[], learningEvents: LearningEventRecord[]): ChildProgressRow {
+function buildChildProgressRow(
+  student: LocalUser,
+  tracks: PortalTrackInfo[],
+  learningEvents: LearningEventRecord[],
+): ChildProgressRow {
   const assigned = normalizeAssignedTracks(student);
   const activeTracks = tracks.filter((track) => assigned.includes(track.id));
   const coins = readNumber(`miu_math_fish_coins_${student.username}`, 150);
   const errorNotebookCount = readTrapCount(student.username);
-  const snapshot = buildLearnerSnapshotFromLiveEvents(student, activeTracks, learningEvents, coins, errorNotebookCount || 4);
+  const snapshot = buildLearnerSnapshotFromLiveEvents(
+    student,
+    activeTracks,
+    learningEvents,
+    coins,
+    errorNotebookCount || 4,
+  );
   const weakestProgram = snapshot.programSummaries.slice().sort((a, b) => a.score - b.score)[0];
 
   return {

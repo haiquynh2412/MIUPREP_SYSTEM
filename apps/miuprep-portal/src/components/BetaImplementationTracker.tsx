@@ -9,7 +9,12 @@ import {
 import type { LocalUser, SystemLog } from '@miuprep/db';
 import { buildGraphBackendEvaluationReport, createSeedKnowledgeGraph } from '@miuprep/knowledge';
 import { buildLearningEventSyncAuditReport, type LearningEventRecord } from '@miuprep/learning';
-import { buildLearnerSnapshotFromLiveEvents, normalizeAssignedTracks, type PortalTrackInfo, type PortalTrackId } from './UnifiedLearnerDashboard';
+import {
+  buildLearnerSnapshotFromLiveEvents,
+  normalizeAssignedTracks,
+  type PortalTrackInfo,
+  type PortalTrackId,
+} from './UnifiedLearnerDashboard';
 
 type ProgramId = 'vn_math_6_9' | 'sat' | 'ielts' | 'cae' | 'cpe';
 
@@ -68,7 +73,13 @@ export default function BetaImplementationTracker({
       .map((user) => {
         const assignedTrackIds = normalizeAssignedTracks(user as LocalUser);
         const activeTracks = tracks.filter((track) => assignedTrackIds.includes(track.id));
-        const snapshot = buildLearnerSnapshotFromLiveEvents(toLocalUser(user), activeTracks, learningEvents, 150, errorQuestionCount);
+        const snapshot = buildLearnerSnapshotFromLiveEvents(
+          toLocalUser(user),
+          activeTracks,
+          learningEvents,
+          150,
+          errorQuestionCount,
+        );
         return {
           id: user.id || user.username,
           username: user.username,
@@ -101,11 +112,15 @@ export default function BetaImplementationTracker({
           </div>
           <h3 className="text-lg font-black text-slate-100 m-0 mt-3">Implementation tracker</h3>
           <p className="text-xs text-slate-500 mt-1 max-w-3xl">
-            Tracks the remaining Phase 10 items from live portal content, users, telemetry logs and shared beta audit rules.
+            Tracks the remaining Phase 10 items from live portal content, users, telemetry logs and shared beta audit
+            rules.
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2 min-w-full lg:min-w-[720px]">
-          <MetricTile label="Scopes ready" value={`${report.scopes.filter((scope) => scope.status !== 'blocked').length}/${report.scopes.length}`} />
+          <MetricTile
+            label="Scopes ready"
+            value={`${report.scopes.filter((scope) => scope.status !== 'blocked').length}/${report.scopes.length}`}
+          />
           <MetricTile label="Learning events" value={String(report.learningEvents.totalEvents)} />
           <MetricTile label="Diagnostics" value={statusLabel(report.diagnosticAudit.status)} />
           <MetricTile label="KG backlog" value={String(report.graphAdjustmentCandidates.length)} />
@@ -114,7 +129,10 @@ export default function BetaImplementationTracker({
         </div>
       </div>
 
-      <Panel title="Phase 10 checklist" meta={report.readyForInternalBeta ? 'ready for internal run' : 'needs evidence'}>
+      <Panel
+        title="Phase 10 checklist"
+        meta={report.readyForInternalBeta ? 'ready for internal run' : 'needs evidence'}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {report.checklist.map((item) => (
             <div key={item.id} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
@@ -138,7 +156,9 @@ export default function BetaImplementationTracker({
               <div key={scope.scopeId} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">{scope.programId}</p>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">
+                      {scope.programId}
+                    </p>
                     <h4 className="text-sm font-black text-slate-100 mt-1 mb-0">{scope.title}</h4>
                   </div>
                   <StatusPill status={scope.status} label={statusLabel(scope.status)} />
@@ -161,15 +181,38 @@ export default function BetaImplementationTracker({
 
         <Panel title="Audit signals" meta="diagnostic / recommendation / events">
           <div className="space-y-3">
-            <AuditRow title="Learning event capture" status={report.learningEvents.status} detail={report.learningEvents.detail} value={report.learningEvents.totalEvents} />
-            <AuditRow title="Diagnostic validity" status={report.diagnosticAudit.status} detail={report.diagnosticAudit.detail} value={`${report.diagnosticAudit.targetCoverage}%`} />
-            <AuditRow title="Recommendation sanity" status={report.recommendationAudit.status} detail={report.recommendationAudit.detail} value={report.recommendationAudit.checkedLearners} />
-            <AuditRow title="Recommendation quality" status={report.recommendationQualityAudit.status} detail={report.recommendationQualityAudit.detail} value={`${report.recommendationQualityAudit.passedRecommendations}/${report.recommendationQualityAudit.checkedLearners}`} />
+            <AuditRow
+              title="Learning event capture"
+              status={report.learningEvents.status}
+              detail={report.learningEvents.detail}
+              value={report.learningEvents.totalEvents}
+            />
+            <AuditRow
+              title="Diagnostic validity"
+              status={report.diagnosticAudit.status}
+              detail={report.diagnosticAudit.detail}
+              value={`${report.diagnosticAudit.targetCoverage}%`}
+            />
+            <AuditRow
+              title="Recommendation sanity"
+              status={report.recommendationAudit.status}
+              detail={report.recommendationAudit.detail}
+              value={report.recommendationAudit.checkedLearners}
+            />
+            <AuditRow
+              title="Recommendation quality"
+              status={report.recommendationQualityAudit.status}
+              detail={report.recommendationQualityAudit.detail}
+              value={`${report.recommendationQualityAudit.passedRecommendations}/${report.recommendationQualityAudit.checkedLearners}`}
+            />
           </div>
         </Panel>
       </div>
 
-      <Panel title="Real learning KPI and recommendation quality" meta={`status ${statusLabel(report.learningQualityKpis.status)}`}>
+      <Panel
+        title="Real learning KPI and recommendation quality"
+        meta={`status ${statusLabel(report.learningQualityKpis.status)}`}
+      >
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
           <MiniStat label="Mastery lift" value={formatSignedPercent(report.learningQualityKpis.masteryLift)} />
           <MiniStat label="Retention 7d" value={`${report.learningQualityKpis.retentionAfter7Days}%`} />
@@ -179,21 +222,28 @@ export default function BetaImplementationTracker({
         </div>
         <p className="text-[11px] text-slate-500 leading-relaxed mt-3 mb-0">{report.learningQualityKpis.detail}</p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
-          {[...report.recommendationQualityAudit.blockedIssues, ...report.recommendationQualityAudit.watchIssues].slice(0, 4).map((issue) => (
-            <div key={`${issue.learnerId}-${issue.reason}-${issue.targetIds.join('-')}`} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
-              <div className="flex items-start justify-between gap-3">
-                <div className="min-w-0">
-                  <p className="text-xs font-black text-slate-100 m-0">{issue.reason.replace(/_/g, ' ')}</p>
-                  <p className="text-[11px] text-slate-500 leading-relaxed mt-2 mb-0">{issue.detail}</p>
-                  <p className="text-[10px] text-slate-600 font-mono mt-2 mb-0 truncate">
-                    {issue.learnerId} / {issue.recommendationKind} / {issue.targetIds.join(', ') || 'no target'}
-                  </p>
+          {[...report.recommendationQualityAudit.blockedIssues, ...report.recommendationQualityAudit.watchIssues]
+            .slice(0, 4)
+            .map((issue) => (
+              <div
+                key={`${issue.learnerId}-${issue.reason}-${issue.targetIds.join('-')}`}
+                className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-xs font-black text-slate-100 m-0">{issue.reason.replace(/_/g, ' ')}</p>
+                    <p className="text-[11px] text-slate-500 leading-relaxed mt-2 mb-0">{issue.detail}</p>
+                    <p className="text-[10px] text-slate-600 font-mono mt-2 mb-0 truncate">
+                      {issue.learnerId} / {issue.recommendationKind} / {issue.targetIds.join(', ') || 'no target'}
+                    </p>
+                  </div>
+                  <StatusPill status={issue.severity} label={statusLabel(issue.severity)} />
                 </div>
-                <StatusPill status={issue.severity} label={statusLabel(issue.severity)} />
               </div>
-            </div>
-          ))}
-          {report.recommendationQualityAudit.blockedIssues.length + report.recommendationQualityAudit.watchIssues.length === 0 && (
+            ))}
+          {report.recommendationQualityAudit.blockedIssues.length +
+            report.recommendationQualityAudit.watchIssues.length ===
+            0 && (
             <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4 text-xs text-slate-500">
               No recommendation quality issues detected.
             </div>
@@ -232,7 +282,9 @@ export default function BetaImplementationTracker({
                     <p className="text-[11px] font-bold text-slate-300 m-0">{readableId(trigger.id)}</p>
                     <p className="text-[10px] text-slate-500 leading-relaxed mt-1 mb-0">{trigger.evidence}</p>
                   </div>
-                  <span className={`text-[10px] font-black uppercase shrink-0 ${trigger.met ? 'text-amber-400' : 'text-emerald-400'}`}>
+                  <span
+                    className={`text-[10px] font-black uppercase shrink-0 ${trigger.met ? 'text-amber-400' : 'text-emerald-400'}`}
+                  >
                     {trigger.met ? 'met' : 'clear'}
                   </span>
                 </div>
@@ -249,7 +301,10 @@ export default function BetaImplementationTracker({
             </div>
             {syncAudit.conflicts.length > 0 && (
               <p className="text-[11px] text-rose-300 leading-relaxed mt-3 mb-0">
-                {syncAudit.conflicts.slice(0, 2).map((conflict) => readableId(conflict.reason)).join(', ')}
+                {syncAudit.conflicts
+                  .slice(0, 2)
+                  .map((conflict) => readableId(conflict.reason))
+                  .join(', ')}
               </p>
             )}
           </div>
@@ -263,7 +318,9 @@ export default function BetaImplementationTracker({
               <div key={cohort.id} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">{cohort.programId}</p>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 m-0">
+                      {cohort.programId}
+                    </p>
                     <h4 className="text-sm font-black text-slate-100 mt-1 mb-0">{cohort.title}</h4>
                   </div>
                   <StatusPill status={cohort.status} label={statusLabel(cohort.status)} />
@@ -273,7 +330,9 @@ export default function BetaImplementationTracker({
                   <MiniStat label="Events" value={cohort.minimumLearningEvents} />
                   <MiniStat label="Diagnostics" value={cohort.minimumDiagnosticAttempts} />
                 </div>
-                <p className="text-[11px] text-slate-500 leading-relaxed mt-3 mb-0">{cohort.focus.slice(0, 2).join(' ')}</p>
+                <p className="text-[11px] text-slate-500 leading-relaxed mt-3 mb-0">
+                  {cohort.focus.slice(0, 2).join(' ')}
+                </p>
               </div>
             ))}
           </div>
@@ -289,7 +348,10 @@ export default function BetaImplementationTracker({
       <Panel title="Knowledge Graph adjustment backlog" meta="review before applying">
         <div className="space-y-2 max-h-[360px] overflow-y-auto pr-1">
           {report.graphAdjustmentCandidates.slice(0, 8).map((candidate) => (
-            <div key={`${candidate.kind}-${candidate.programId}-${candidate.id}`} className="bg-slate-950/60 border border-slate-850 rounded-xl p-3 flex items-start justify-between gap-3">
+            <div
+              key={`${candidate.kind}-${candidate.programId}-${candidate.id}`}
+              className="bg-slate-950/60 border border-slate-850 rounded-xl p-3 flex items-start justify-between gap-3"
+            >
               <div className="min-w-0">
                 <p className="text-xs font-bold text-slate-200 truncate m-0">{candidate.id}</p>
                 <p className="text-[11px] text-slate-500 leading-relaxed mt-1 mb-0">{candidate.reason}</p>
@@ -338,7 +400,17 @@ function MiniStat({ label, value }: { label: string; value: string | number }) {
   );
 }
 
-function AuditRow({ title, status, detail, value }: { title: string; status: BetaCheckStatus; detail: string; value: string | number }) {
+function AuditRow({
+  title,
+  status,
+  detail,
+  value,
+}: {
+  title: string;
+  status: BetaCheckStatus;
+  detail: string;
+  value: string | number;
+}) {
   return (
     <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
       <div className="flex items-start justify-between gap-3">
@@ -379,7 +451,9 @@ function StatusPill({ status, label }: { status: BetaCheckStatus; label: string 
         ? 'text-amber-400 bg-amber-950/40 border-amber-900/60'
         : 'text-rose-400 bg-rose-950/40 border-rose-900/60';
   return (
-    <span className={`text-[10px] font-black uppercase tracking-[0.12em] border px-2 py-1 rounded shrink-0 ${className}`}>
+    <span
+      className={`text-[10px] font-black uppercase tracking-[0.12em] border px-2 py-1 rounded shrink-0 ${className}`}
+    >
       {label}
     </span>
   );
@@ -424,7 +498,12 @@ function inferMathMetadata(lesson: MathLessonLike): { conceptIds: string[]; skil
   if (text.includes('test') || text.includes('thi')) {
     return {
       conceptIds: ['math.quadratic_equation', 'math.vieta', 'math.plane_geometry', 'math.statistics'],
-      skillIds: ['math.solve_quadratic_by_factor', 'math.apply_vieta', 'math.geometry_reasoning', 'math.interpret_statistics'],
+      skillIds: [
+        'math.solve_quadratic_by_factor',
+        'math.apply_vieta',
+        'math.geometry_reasoning',
+        'math.interpret_statistics',
+      ],
     };
   }
   return {
@@ -490,7 +569,10 @@ function logToTelemetryEvent(log: SystemLog): BetaTelemetryEvent {
 }
 
 function learningEventToTelemetryEvent(event: LearningEventRecord): BetaTelemetryEvent {
-  const programId = typeof event.payload?.programId === 'string' ? normalizeProgramId(event.payload.programId) : inferProgramFromText(JSON.stringify(event.payload || {}));
+  const programId =
+    typeof event.payload?.programId === 'string'
+      ? normalizeProgramId(event.payload.programId)
+      : inferProgramFromText(JSON.stringify(event.payload || {}));
   return {
     id: event.id,
     type: event.type,

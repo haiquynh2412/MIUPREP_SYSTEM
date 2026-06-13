@@ -1,23 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Suspense, lazy, useState, useEffect } from 'react';
-import { 
-  isCorrectAnswer
-} from '@miuprep/core';
-import { 
-  LocalStorageAdapter,
-  IndexedDbAdapter,
-  TauriSqliteAdapter 
-} from '@miuprep/db';
-import type {
-  LearnerProfile,
-  SpeakingFeedback,
-  LocalUser
-} from '@miuprep/db';
-import { 
-  getActiveCredentialStore
-} from '@miuprep/ai';
+import { isCorrectAnswer } from '@miuprep/core';
+import { LocalStorageAdapter, IndexedDbAdapter, TauriSqliteAdapter } from '@miuprep/db';
+import type { LearnerProfile, SpeakingFeedback, LocalUser } from '@miuprep/db';
+import { getActiveCredentialStore } from '@miuprep/ai';
 import type { ValidationError, IeltsQuestion, QuestionGroup } from '@miuprep/content';
-
 
 // Specialized Hook Imports
 import { useLearnerProfile, useErrorNotebook, useAiEvaluation, useExam } from '@miuprep/exam-desktop';
@@ -54,7 +41,7 @@ function LazyPanelFallback() {
 function categorizeTest(test: any): 'diagnostic' | 'topic_bank' | 'practice_bank' | 'full_exam' {
   const id = (test.id || '').toLowerCase();
   const title = (test.title || '').toLowerCase();
-  
+
   if (id.includes('entry') || id.includes('diagnostic') || title.includes('entry') || title.includes('chẩn đoán')) {
     return 'diagnostic';
   }
@@ -64,7 +51,7 @@ function categorizeTest(test: any): 'diagnostic' | 'topic_bank' | 'practice_bank
   if (id.includes('cpe2') || title.includes('cpe2') || (test.sections && test.sections.length === 6)) {
     return 'practice_bank';
   }
-  
+
   return 'full_exam';
 }
 
@@ -72,15 +59,15 @@ function categorizeTest(test: any): 'diagnostic' | 'topic_bank' | 'practice_bank
 function getHighlightedPassageHtml(passage: string, questionGroups: QuestionGroup[], isReviewMode: boolean): string {
   if (!isReviewMode) return passage;
   let temp = passage;
-  questionGroups.forEach(grp => {
+  questionGroups.forEach((grp) => {
     if (!grp.questions) return;
     grp.questions.forEach((q: IeltsQuestion) => {
       if (q.answerLocation && q.answerLocation.trim()) {
         const escaped = q.answerLocation.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
         const regex = new RegExp(`(${escaped})`, 'gi');
         temp = temp.replace(
-          regex, 
-          `<mark class="bg-amber-100 border-b-2 border-amber-400 font-bold px-1 rounded text-slate-900 select-all cursor-help" title="Answer source for Q. ${q.id} (Correct Answer: ${q.correctAnswer})">$1</mark>`
+          regex,
+          `<mark class="bg-amber-100 border-b-2 border-amber-400 font-bold px-1 rounded text-slate-900 select-all cursor-help" title="Answer source for Q. ${q.id} (Correct Answer: ${q.correctAnswer})">$1</mark>`,
         );
       }
     });
@@ -90,18 +77,18 @@ function getHighlightedPassageHtml(passage: string, questionGroups: QuestionGrou
 
 function getSocraticHintForQuestion(q: IeltsQuestion): string {
   if (q.type === 'true_false_not_given') {
-    return "💡 Gợi ý tư duy Socratic: Định vị từ khóa chính trong câu hỏi trên bài đọc. So sánh xem ý nghĩa của bài đọc có trùng khớp hoàn toàn (TRUE), phủ định/trái ngược hoàn toàn (FALSE), hay bài đọc hoàn toàn không đề cập đến khía cạnh này (NOT GIVEN). Hãy bám sát dữ kiện chữ viết, tránh suy diễn thêm!";
+    return '💡 Gợi ý tư duy Socratic: Định vị từ khóa chính trong câu hỏi trên bài đọc. So sánh xem ý nghĩa của bài đọc có trùng khớp hoàn toàn (TRUE), phủ định/trái ngược hoàn toàn (FALSE), hay bài đọc hoàn toàn không đề cập đến khía cạnh này (NOT GIVEN). Hãy bám sát dữ kiện chữ viết, tránh suy diễn thêm!';
   }
   if (q.type === 'gap_fill') {
-    return "💡 Gợi ý tư duy Socratic: Xác định từ loại cần điền vào ô trống (danh từ số ít/số nhiều, tính từ hay động từ). Hãy kiểm tra giới hạn từ cho phép (ví dụ: NO MORE THAN TWO WORDS) và phân tích các giới từ/tính từ kề cận để đoán nghĩa phù hợp.";
+    return '💡 Gợi ý tư duy Socratic: Xác định từ loại cần điền vào ô trống (danh từ số ít/số nhiều, tính từ hay động từ). Hãy kiểm tra giới hạn từ cho phép (ví dụ: NO MORE THAN TWO WORDS) và phân tích các giới từ/tính từ kề cận để đoán nghĩa phù hợp.';
   }
   if (q.type === 'multiple_choice') {
-    return "💡 Gợi ý tư duy Socratic: Đề phòng các phương án nhiễu sử dụng từ khóa giống hệt trong bài đọc nhưng sai lệch về nghĩa. Câu trả lời đúng thường được paraphrase bằng các cấu trúc đồng nghĩa khác.";
+    return '💡 Gợi ý tư duy Socratic: Đề phòng các phương án nhiễu sử dụng từ khóa giống hệt trong bài đọc nhưng sai lệch về nghĩa. Câu trả lời đúng thường được paraphrase bằng các cấu trúc đồng nghĩa khác.';
   }
   if (q.type === 'matching_headings') {
-    return "💡 Gợi ý tư duy Socratic: Đọc lướt (skim) câu đầu và câu cuối của đoạn văn để tìm câu chủ đề (Topic Sentence). Tránh chọn các tiêu đề chỉ nói về một chi tiết nhỏ hỗ trợ trong đoạn.";
+    return '💡 Gợi ý tư duy Socratic: Đọc lướt (skim) câu đầu và câu cuối của đoạn văn để tìm câu chủ đề (Topic Sentence). Tránh chọn các tiêu đề chỉ nói về một chi tiết nhỏ hỗ trợ trong đoạn.';
   }
-  return "💡 Gợi ý tư duy Socratic: Tập trung nghe các từ khóa chuyển ý (But, However, On the other hand) vì đáp án thường xuất hiện ngay sau đó để sửa lại thông tin nói trước.";
+  return '💡 Gợi ý tư duy Socratic: Tập trung nghe các từ khóa chuyển ý (But, However, On the other hand) vì đáp án thường xuất hiện ngay sau đó để sửa lại thông tin nói trước.';
 }
 
 // ==========================================
@@ -116,20 +103,24 @@ export default function App() {
     // IndexedDB lifts the 5MB localStorage quota that seeded banks overflow
     return IndexedDbAdapter.isSupported() ? new IndexedDbAdapter() : new LocalStorageAdapter();
   });
-  
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room'>('dashboard');
+
+  const [activeTab, setActiveTab] = useState<
+    'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room'
+  >('dashboard');
   const [currentUserId, setCurrentUserId] = useState<string>(() => localStorage.getItem('current_user_id') || '');
   const [localUsers, setLocalUsers] = useState<Omit<LocalUser, 'passwordHash'>[]>([]);
   const [isDbReady, setIsDbReady] = useState(false);
-  const [dashboardCategory, setDashboardCategory] = useState<'all' | 'full_exam' | 'practice_bank' | 'topic_bank' | 'diagnostic'>('all');
+  const [dashboardCategory, setDashboardCategory] = useState<
+    'all' | 'full_exam' | 'practice_bank' | 'topic_bank' | 'diagnostic'
+  >('all');
 
   const refreshUsers = async () => {
     try {
       const users = await db.listLocalUsers();
       setLocalUsers(users);
-      
+
       const stored = localStorage.getItem('current_user_id');
-      if (stored && users.some(u => u.id === stored)) {
+      if (stored && users.some((u) => u.id === stored)) {
         setCurrentUserId(stored);
       } else {
         setCurrentUserId('');
@@ -173,7 +164,7 @@ export default function App() {
     handleReviewAttempt,
     setUserAnswers,
     setIsReviewMode,
-    setReviewAttempt
+    setReviewAttempt,
   } = useExam({
     db,
     userId: currentUserId,
@@ -186,17 +177,17 @@ export default function App() {
         const currentProfile = await db.getLearnerProfile(currentUserId);
         if (currentProfile) {
           const allAttempts = await db.listAttempts(currentUserId);
-          const completed = allAttempts.filter(a => a.status === 'submitted');
-          
+          const completed = allAttempts.filter((a) => a.status === 'submitted');
+
           const dbTests = await db.listTests();
           const typeStats: Record<string, { correct: number; total: number }> = {};
-          completed.forEach(att => {
-            const test = dbTests.find(t => t.id === att.testId);
+          completed.forEach((att) => {
+            const test = dbTests.find((t) => t.id === att.testId);
             if (!test) return;
-            
-            test.sections.forEach(sec => {
-              sec.questionGroups.forEach(grp => {
-                grp.questions.forEach(q => {
+
+            test.sections.forEach((sec) => {
+              sec.questionGroups.forEach((grp) => {
+                grp.questions.forEach((q) => {
                   const val = att.answers[q.id]?.rawValue || '';
                   const correct = isCorrectAnswer(String(val), q.acceptedAnswers);
                   if (!typeStats[q.type]) {
@@ -208,7 +199,7 @@ export default function App() {
               });
             });
           });
-          
+
           const weakSkills: string[] = [];
           Object.entries(typeStats).forEach(([qType, stats]) => {
             const acc = stats.correct / stats.total;
@@ -216,11 +207,11 @@ export default function App() {
               weakSkills.push(qType);
             }
           });
-          
+
           const updatedProfile: LearnerProfile = {
             ...currentProfile,
             weakSkills,
-            updatedAt: new Date().toISOString()
+            updatedAt: new Date().toISOString(),
           };
           await db.saveLearnerProfile(updatedProfile);
           setLearnerProfile(updatedProfile);
@@ -228,7 +219,7 @@ export default function App() {
       } catch (err) {
         console.error('Failed to update learner profile weaknesses:', err);
       }
-    }
+    },
   });
 
   const currentTab = selectedTest ? 'exam' : activeTab;
@@ -245,12 +236,12 @@ export default function App() {
     saveLearnerProfile,
     getDaysRemaining,
     getGlobalWeaknessAnalysis,
-    getMicroSkillsAnalysis
+    getMicroSkillsAnalysis,
   } = useLearnerProfile({
     db,
     attempts,
     availableTests,
-    userId: currentUserId
+    userId: currentUserId,
   });
 
   const {
@@ -268,42 +259,40 @@ export default function App() {
     setReviewShowCorrect,
     setNotebookFilter,
     startNotebookReview,
-    handleSrsGrade
+    handleSrsGrade,
   } = useErrorNotebook({
     db,
     userId: currentUserId,
-    onRefreshHistory: loadHistory
+    onRefreshHistory: loadHistory,
   });
 
   const handleViewInExam = async (questionId: string, attemptId: string) => {
-    const attempt = attempts.find(a => a.local_id === attemptId);
-    let test = availableTests.find(t => t.id === (attempt ? attempt.testId : ''));
+    const attempt = attempts.find((a) => a.local_id === attemptId);
+    let test = availableTests.find((t) => t.id === (attempt ? attempt.testId : ''));
     if (!test) {
-      test = availableTests.find(t => 
-        t.sections.some(s => 
-          s.questionGroups.some(g => 
-            g.questions.some(q => q.id === questionId)
-          )
-        )
+      test = availableTests.find((t) =>
+        t.sections.some((s) => s.questionGroups.some((g) => g.questions.some((q) => q.id === questionId))),
       );
     }
 
     if (test) {
-      const targetAttempt = attempt || {
-        local_id: attemptId || 'practice_review_fallback',
-        testId: test.id,
-        userId: currentUserId,
-        status: 'submitted',
-        answers: {},
-        startedAt: new Date().toISOString(),
-        lastSavedAt: new Date().toISOString(),
-        durationSeconds: 3600,
-        remainingSeconds: 0,
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-        sync_status: 'synced',
-        version: 1
-      } as any;
+      const targetAttempt =
+        attempt ||
+        ({
+          local_id: attemptId || 'practice_review_fallback',
+          testId: test.id,
+          userId: currentUserId,
+          status: 'submitted',
+          answers: {},
+          startedAt: new Date().toISOString(),
+          lastSavedAt: new Date().toISOString(),
+          durationSeconds: 3600,
+          remainingSeconds: 0,
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+          sync_status: 'synced',
+          version: 1,
+        } as any);
 
       const restoredAnswers: Record<string, string> = {};
       if (attempt) {
@@ -331,7 +320,7 @@ export default function App() {
         }
       }, 450);
     } else {
-      alert("Không tìm thấy đề thi chứa câu hỏi này.");
+      alert('Không tìm thấy đề thi chứa câu hỏi này.');
     }
   };
 
@@ -361,28 +350,25 @@ export default function App() {
     setHasOpenAiKey,
     setHasGeminiKey,
     runWritingAiEvaluation,
-    handleTestConnection
+    handleTestConnection,
   } = useAiEvaluation({
     db,
     credentialStore,
-    generateLocalId
+    generateLocalId,
   });
 
-  const [speakingTopic, setSpeakingTopic] = useState('Describe a beautiful place you would like to visit in the future.');
+  const [speakingTopic, setSpeakingTopic] = useState(
+    'Describe a beautiful place you would like to visit in the future.',
+  );
   const [speakingFeedback, setSpeakingFeedback] = useState<SpeakingFeedback | null>(null);
-
-
-
-
 
   // Seeding tests on initialize
   useEffect(() => {
     const initDb = async () => {
       try {
         await db.initialize();
-        
-        const seedTests = await loadCpeSeedTests();
 
+        const seedTests = await loadCpeSeedTests();
 
         const CURRENT_SEED_VERSION = '1.1.2';
         const lastSeedVersion = localStorage.getItem('ielts_db_seed_version');
@@ -398,7 +384,7 @@ export default function App() {
 
             // Run content validation before saving to log specific failures
             const validationErrors = await validateContentTest(test);
-            const critical = validationErrors.filter(err => err.severity === 'error');
+            const critical = validationErrors.filter((err) => err.severity === 'error');
             if (critical.length > 0) {
               console.error(`[Seeding] Skipping invalid seed test "${test.title || test.id}":`, critical);
               continue;
@@ -439,10 +425,10 @@ export default function App() {
       try {
         const text = event.target?.result as string;
         const parsed = JSON.parse(text);
-        
+
         const errors = await validateContentTest(parsed);
-        const criticalErrors = errors.filter(err => err.severity === 'error');
-        
+        const criticalErrors = errors.filter((err) => err.severity === 'error');
+
         if (criticalErrors.length > 0) {
           setImportErrors(errors);
           setShowErrorModal(true);
@@ -453,7 +439,7 @@ export default function App() {
           setImportErrors([]);
           setShowErrorModal(false);
           await loadHistory();
-          
+
           setTimeout(() => {
             setImportSuccessMsg(null);
           }, 4000);
@@ -478,9 +464,9 @@ export default function App() {
     );
   }
 
-  const matchedUser = localUsers.find(u => u.id === currentUserId);
-  const isDiagnosticDone = currentUserId 
-    ? (localStorage.getItem('diagnostic_done_' + currentUserId) === 'true' || matchedUser?.role === 'admin') 
+  const matchedUser = localUsers.find((u) => u.id === currentUserId);
+  const isDiagnosticDone = currentUserId
+    ? localStorage.getItem('diagnostic_done_' + currentUserId) === 'true' || matchedUser?.role === 'admin'
     : false;
 
   if (!currentUserId || !isDiagnosticDone) {
@@ -505,11 +491,15 @@ export default function App() {
       <header className="bg-slate-900 text-white px-6 py-4 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-3">
           <svg className="w-8 h-8 text-emerald-500 fill-current" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
           </svg>
           <div>
-            <h1 className="text-lg font-bold tracking-tight m-0 text-white leading-none">CPE C2 Proficiency AI Prep Platform</h1>
-            <span className="text-[10px] text-slate-400 font-medium tracking-wide uppercase">Independent Prep Engine</span>
+            <h1 className="text-lg font-bold tracking-tight m-0 text-white leading-none">
+              CPE C2 Proficiency AI Prep Platform
+            </h1>
+            <span className="text-[10px] text-slate-400 font-medium tracking-wide uppercase">
+              Independent Prep Engine
+            </span>
           </div>
         </div>
 
@@ -535,12 +525,14 @@ export default function App() {
                 }}
                 className="bg-transparent border-0 text-slate-200 text-xs font-bold focus:ring-0 focus:outline-none cursor-pointer pr-1"
               >
-                {localUsers.map(u => (
+                {localUsers.map((u) => (
                   <option key={u.id} value={u.id} className="bg-slate-900 text-white font-semibold">
                     {u.username} (Band {u.targetBand})
                   </option>
                 ))}
-                <option value="new_user" className="bg-slate-900 text-emerald-400 font-bold">+ Tạo tài khoản mới</option>
+                <option value="new_user" className="bg-slate-900 text-emerald-400 font-bold">
+                  + Tạo tài khoản mới
+                </option>
               </select>
             </div>
 
@@ -558,11 +550,15 @@ export default function App() {
             <div className="flex items-center gap-6">
               {/* Luồng 1: Mock Exams Flow */}
               <div className="flex flex-col gap-1 border-r border-slate-700 pr-5">
-                <span className="text-[9px] text-emerald-400 font-black uppercase tracking-wider text-left">🏆 Luồng Đề Thi Thử</span>
+                <span className="text-[9px] text-emerald-400 font-black uppercase tracking-wider text-left">
+                  🏆 Luồng Đề Thi Thử
+                </span>
                 <button
                   onClick={() => setActiveTab('dashboard')}
                   className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all border-0 outline-none cursor-pointer ${
-                    activeTab === 'dashboard' ? 'bg-emerald-600 text-white shadow' : 'text-slate-300 hover:text-white hover:bg-slate-800'
+                    activeTab === 'dashboard'
+                      ? 'bg-emerald-600 text-white shadow'
+                      : 'text-slate-300 hover:text-white hover:bg-slate-800'
                   }`}
                 >
                   Đề Mock Test Full
@@ -571,12 +567,16 @@ export default function App() {
 
               {/* Luồng 2: Adaptive Practice Flow */}
               <div className="flex flex-col gap-1 pl-1">
-                <span className="text-[9px] text-teal-400 font-black uppercase tracking-wider text-left">📖 Luồng Ôn Tập Chuyên Đề & AI</span>
+                <span className="text-[9px] text-teal-400 font-black uppercase tracking-wider text-left">
+                  📖 Luồng Ôn Tập Chuyên Đề & AI
+                </span>
                 <nav className="flex gap-2">
                   <button
                     onClick={() => setActiveTab('adaptive_room')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all border-0 outline-none cursor-pointer ${
-                      activeTab === 'adaptive_room' ? 'bg-emerald-600 text-white shadow' : 'text-slate-300 hover:text-white hover:bg-slate-800'
+                      activeTab === 'adaptive_room'
+                        ? 'bg-emerald-600 text-white shadow'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800'
                     }`}
                   >
                     Luyện Chuyên Đề & Từ Vựng
@@ -584,7 +584,9 @@ export default function App() {
                   <button
                     onClick={() => setActiveTab('speaking_ai')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all border-0 outline-none cursor-pointer ${
-                      activeTab === 'speaking_ai' ? 'bg-emerald-600 text-white shadow' : 'text-slate-300 hover:text-white hover:bg-slate-800'
+                      activeTab === 'speaking_ai'
+                        ? 'bg-emerald-600 text-white shadow'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800'
                     }`}
                   >
                     Speaking AI Room
@@ -592,7 +594,9 @@ export default function App() {
                   <button
                     onClick={() => setActiveTab('writing_ai')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all border-0 outline-none cursor-pointer ${
-                      activeTab === 'writing_ai' ? 'bg-emerald-600 text-white shadow' : 'text-slate-300 hover:text-white hover:bg-slate-800'
+                      activeTab === 'writing_ai'
+                        ? 'bg-emerald-600 text-white shadow'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800'
                     }`}
                   >
                     Writing AI Evaluator
@@ -604,13 +608,15 @@ export default function App() {
                       setCurrentReviewIdx(-1);
                     }}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all border-0 outline-none cursor-pointer ${
-                      activeTab === 'error_notebook' ? 'bg-emerald-600 text-white shadow' : 'text-slate-300 hover:text-white hover:bg-slate-800'
+                      activeTab === 'error_notebook'
+                        ? 'bg-emerald-600 text-white shadow'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800'
                     }`}
                   >
                     Sổ Lỗi Sai (SRS)
                     {errorEntries.length > 0 && (
                       <span className="ml-1.5 bg-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full">
-                        {errorEntries.filter(e => new Date(e.nextReviewAt) <= new Date()).length}
+                        {errorEntries.filter((e) => new Date(e.nextReviewAt) <= new Date()).length}
                       </span>
                     )}
                   </button>
@@ -782,12 +788,7 @@ export default function App() {
       )}
 
       {/* ImportErrorModal rendering */}
-      {showErrorModal && (
-        <ImportErrorModal
-          importErrors={importErrors}
-          onClose={() => setShowErrorModal(false)}
-        />
-      )}
+      {showErrorModal && <ImportErrorModal importErrors={importErrors} onClose={() => setShowErrorModal(false)} />}
     </div>
   );
 }

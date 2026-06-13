@@ -26,12 +26,7 @@ function getRating(score, total, lang) {
   return { emoji: '📚', label: t('challenge_rating_review', lang), color: 'var(--error)' };
 }
 
-export default function QuickChallenge({
-  questions = [],
-  onComplete,
-  renderMath,
-  lang = 'vi',
-}: any) {
+export default function QuickChallenge({ questions = [], onComplete, renderMath, lang = 'vi' }: any) {
   const [mode, setMode] = useState<any>(null);
   const [challengeQuestions, setChallengeQuestions] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -155,12 +150,8 @@ export default function QuickChallenge({
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   <span style={{ fontSize: '2rem' }}>{m.icon}</span>
                   <div>
-                    <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-heading)' }}>
-                      {label}
-                    </div>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                      {desc}
-                    </div>
+                    <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-heading)' }}>{label}</div>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{desc}</div>
                   </div>
                 </div>
               </button>
@@ -203,10 +194,10 @@ export default function QuickChallenge({
         {mode.time > 0 && (
           <div className="challenge-timer" style={{ marginBottom: 16 }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t('challenge_timer_label', lang)}</span>
-              <span style={{ fontWeight: 700, fontSize: '1.1rem', color: timerColor }}>
-                {timer}s
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                {t('challenge_timer_label', lang)}
               </span>
+              <span style={{ fontWeight: 700, fontSize: '1.1rem', color: timerColor }}>{timer}s</span>
             </div>
             <div
               style={{

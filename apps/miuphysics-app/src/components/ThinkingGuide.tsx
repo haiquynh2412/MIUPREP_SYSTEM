@@ -71,9 +71,23 @@ export default function ThinkingGuide({
 
     switch (step.key) {
       case 'understand':
-        return tg[keyWithLang] || tg.understand || explanation[keyWithLang] || explanation.understand || explanation.thinking || defaults.understand;
+        return (
+          tg[keyWithLang] ||
+          tg.understand ||
+          explanation[keyWithLang] ||
+          explanation.understand ||
+          explanation.thinking ||
+          defaults.understand
+        );
       case 'identify_knowledge':
-        return tg[keyWithLang] || tg.identify_knowledge || explanation[keyWithLang] || explanation.identify_knowledge || explanation.knowledge || defaults.identify_knowledge;
+        return (
+          tg[keyWithLang] ||
+          tg.identify_knowledge ||
+          explanation[keyWithLang] ||
+          explanation.identify_knowledge ||
+          explanation.knowledge ||
+          defaults.identify_knowledge
+        );
       case 'plan':
         return tg[keyWithLang] || tg.plan || explanation[keyWithLang] || explanation.plan || defaults.plan;
       case 'steps':
@@ -82,7 +96,14 @@ export default function ThinkingGuide({
       case 'verify':
         return tg[keyWithLang] || tg.verify || explanation[keyWithLang] || explanation.verify || defaults.verify;
       case 'extend':
-        return tg[keyWithLang] || tg.extend || explanation[keyWithLang] || explanation.extend || explanation.traps || defaults.extend;
+        return (
+          tg[keyWithLang] ||
+          tg.extend ||
+          explanation[keyWithLang] ||
+          explanation.extend ||
+          explanation.traps ||
+          defaults.extend
+        );
       default:
         return '';
     }
@@ -110,9 +131,9 @@ export default function ThinkingGuide({
   const hints: any[] = [];
   const tgHints = guide?.thinking_guide?.hints || [];
   if (Array.isArray(tgHints) && tgHints.length > 0) {
-    tgHints.forEach(h => {
+    tgHints.forEach((h) => {
       // support hintEn or translation object
-      const text = lang === 'en' && typeof h === 'object' && h.en ? h.en : (typeof h === 'object' ? h.vi || h.text : h);
+      const text = lang === 'en' && typeof h === 'object' && h.en ? h.en : typeof h === 'object' ? h.vi || h.text : h;
       hints.push(text);
     });
   } else {
@@ -121,17 +142,26 @@ export default function ThinkingGuide({
     for (let i = 1; i <= 3; i++) {
       const legacyKey = `${prefix}${i}`;
       const fallbackKey = `hint${i}`;
-      const legacyHint = guide?.explanation?.[legacyKey] || guide?.[legacyKey] || guide?.explanation?.[fallbackKey] || guide?.[fallbackKey];
+      const legacyHint =
+        guide?.explanation?.[legacyKey] ||
+        guide?.[legacyKey] ||
+        guide?.explanation?.[fallbackKey] ||
+        guide?.[fallbackKey];
       if (legacyHint) hints.push(legacyHint);
     }
   }
 
-  const traps = lang === 'en'
-    ? (guide?.thinking_guide?.common_traps_en || guide?.explanation?.traps_en || guide?.traps_en || '')
-    : '';
-  const finalTraps = traps || (guide?.thinking_guide?.common_traps
-    ? (Array.isArray(guide.thinking_guide.common_traps) ? guide.thinking_guide.common_traps.join('\n') : guide.thinking_guide.common_traps)
-    : (guide?.explanation?.traps || guide?.traps || ''));
+  const traps =
+    lang === 'en'
+      ? guide?.thinking_guide?.common_traps_en || guide?.explanation?.traps_en || guide?.traps_en || ''
+      : '';
+  const finalTraps =
+    traps ||
+    (guide?.thinking_guide?.common_traps
+      ? Array.isArray(guide.thinking_guide.common_traps)
+        ? guide.thinking_guide.common_traps.join('\n')
+        : guide.thinking_guide.common_traps
+      : guide?.explanation?.traps || guide?.traps || '');
 
   const safeRender = (text) => {
     if (renderMath) return renderMath(String(text || ''));
@@ -142,7 +172,15 @@ export default function ThinkingGuide({
     <div className="thinking-guide animate-slideUp">
       <div className="thinking-guide-header" onClick={() => setExpanded(!expanded)}>
         <h3>🧠 {t('thinking_guide_title', lang)}</h3>
-        <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s', transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+        <span
+          style={{
+            fontSize: '1.2rem',
+            transition: 'transform 0.3s',
+            transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)',
+          }}
+        >
+          ▼
+        </span>
       </div>
 
       {expanded && (
@@ -158,7 +196,9 @@ export default function ThinkingGuide({
                 >
                   <span className={getIndicatorClass(index)}>{getIndicatorContent(index)}</span>
                   <div>
-                    <div className="step-title">{step.icon} {title}</div>
+                    <div className="step-title">
+                      {step.icon} {title}
+                    </div>
                   </div>
                 </div>
 
@@ -168,10 +208,9 @@ export default function ThinkingGuide({
                     dangerouslySetInnerHTML={{ __html: safeRender(getStepContent(step)) }}
                   />
                 ) : (
-                  mode === 'guided' && index === currentStep + 1 && (
-                    <div className="step-locked-msg">
-                      {t('thinking_guide_locked_hint', lang)}
-                    </div>
+                  mode === 'guided' &&
+                  index === currentStep + 1 && (
+                    <div className="step-locked-msg">{t('thinking_guide_locked_hint', lang)}</div>
                   )
                 )}
               </div>
@@ -181,7 +220,9 @@ export default function ThinkingGuide({
           {/* Hints Section */}
           {hints.length > 0 && (
             <div className="hints-section" style={{ margin: '12px 20px 16px' }}>
-              <div style={{ fontWeight: 600, marginBottom: 8, color: 'var(--warning)' }}>{t('thinking_guide_hints', lang)}</div>
+              <div style={{ fontWeight: 600, marginBottom: 8, color: 'var(--warning)' }}>
+                {t('thinking_guide_hints', lang)}
+              </div>
               {hints.slice(0, hintLevel + 1).map((hint, i) => (
                 <div key={i} className="hint-item">
                   <span>💡</span>
@@ -203,7 +244,9 @@ export default function ThinkingGuide({
           {/* Traps Section */}
           {finalTraps && mode === 'review' && (
             <div className="traps-section" style={{ margin: '0 20px 16px' }}>
-              <div style={{ fontWeight: 600, marginBottom: 8, color: 'var(--error)' }}>{t('thinking_guide_traps', lang)}</div>
+              <div style={{ fontWeight: 600, marginBottom: 8, color: 'var(--error)' }}>
+                {t('thinking_guide_traps', lang)}
+              </div>
               <div dangerouslySetInnerHTML={{ __html: safeRender(finalTraps) }} />
             </div>
           )}

@@ -95,9 +95,12 @@ export function answerTemplatePracticeQuestion(
   };
 }
 
-export function advanceTemplatePractice(
-  state: TemplatePracticeState,
-): { completed: boolean; finalScore: number; totalQuestions: number; nextState: TemplatePracticeState | null } {
+export function advanceTemplatePractice(state: TemplatePracticeState): {
+  completed: boolean;
+  finalScore: number;
+  totalQuestions: number;
+  nextState: TemplatePracticeState | null;
+} {
   const nextIndex = state.currentIndex + 1;
   if (nextIndex < state.questions.length) {
     return {
@@ -121,15 +124,28 @@ export function advanceTemplatePractice(
   };
 }
 
-function buildTemplatePracticeQuestions(template: TemplatePracticeTemplate, domainId: TemplatePracticeDomainId): TemplatePracticeQuestion[] {
-  const blocks: Array<{ stageId: LessonTemplateStageId; stageTitle: string; item: LessonPracticeItem; difficulty: TemplatePracticeQuestion['difficulty'] }> = [
+function buildTemplatePracticeQuestions(
+  template: TemplatePracticeTemplate,
+  domainId: TemplatePracticeDomainId,
+): TemplatePracticeQuestion[] {
+  const blocks: Array<{
+    stageId: LessonTemplateStageId;
+    stageTitle: string;
+    item: LessonPracticeItem;
+    difficulty: TemplatePracticeQuestion['difficulty'];
+  }> = [
     ...takeItems(template.guidedQuestions, 'guided_steps', 'Guided question', 'Easy', 2),
     ...takeItems(template.independentSet, 'independent_set', 'Independent check', 'Medium', 2),
     ...takeItems(template.mixedReview || [], 'mixed_review', 'Mixed review', 'Hard', 1),
   ];
 
   if (template.transferTask) {
-    blocks.push({ stageId: 'mixed_review', stageTitle: 'Transfer task', item: template.transferTask, difficulty: 'Hard' });
+    blocks.push({
+      stageId: 'mixed_review',
+      stageTitle: 'Transfer task',
+      item: template.transferTask,
+      difficulty: 'Hard',
+    });
   }
   if (template.quickCheck) {
     blocks.push({ stageId: 'reflection', stageTitle: 'Quick check', item: template.quickCheck, difficulty: 'Medium' });
@@ -156,7 +172,12 @@ function takeItems(
   stageTitle: string,
   difficulty: TemplatePracticeQuestion['difficulty'],
   limit: number,
-): Array<{ stageId: LessonTemplateStageId; stageTitle: string; item: LessonPracticeItem; difficulty: TemplatePracticeQuestion['difficulty'] }> {
+): Array<{
+  stageId: LessonTemplateStageId;
+  stageTitle: string;
+  item: LessonPracticeItem;
+  difficulty: TemplatePracticeQuestion['difficulty'];
+}> {
   return (items || []).slice(0, limit).map((item) => ({ stageId, stageTitle, item, difficulty }));
 }
 

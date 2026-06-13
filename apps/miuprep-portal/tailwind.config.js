@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "../../packages/ui/src/**/*.{js,ts,jsx,tsx}" // Include shared package components!
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    '../../packages/ui/src/**/*.{js,ts,jsx,tsx}', // Include shared package components!
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};

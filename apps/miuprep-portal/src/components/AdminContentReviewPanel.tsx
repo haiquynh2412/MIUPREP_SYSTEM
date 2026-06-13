@@ -182,7 +182,9 @@ export default function AdminContentReviewPanel({
                     </span>
                   </td>
                   <td className="p-3">
-                    <span className={`text-[9px] px-2 py-0.5 rounded-full uppercase font-black border ${reviewStatusClass(exam.reviewStatus)}`}>
+                    <span
+                      className={`text-[9px] px-2 py-0.5 rounded-full uppercase font-black border ${reviewStatusClass(exam.reviewStatus)}`}
+                    >
                       {t(reviewStatusKey(exam.reviewStatus))}
                     </span>
                   </td>
@@ -210,7 +212,9 @@ export default function AdminContentReviewPanel({
         <div className="bg-slate-950/70 border border-indigo-900/50 rounded-3xl p-5 space-y-5 shadow-xl">
           <div className="flex flex-col xl:flex-row xl:items-start justify-between gap-4">
             <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.16em] text-indigo-300 m-0">{t('acr_editor_title')}</p>
+              <p className="text-[10px] font-black uppercase tracking-[0.16em] text-indigo-300 m-0">
+                {t('acr_editor_title')}
+              </p>
               <h4 className="text-lg font-black text-slate-100 mt-1 mb-0">{activeDraft.title}</h4>
               <p className="text-[11px] text-slate-500 mt-1 mb-0 font-mono">
                 {t('acr_editor_meta', {
@@ -261,7 +265,9 @@ export default function AdminContentReviewPanel({
 
           <div className="grid grid-cols-1 md:grid-cols-[1fr_120px_120px] gap-3">
             <div>
-              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_exam_title')}</label>
+              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">
+                {t('acr_label_exam_title')}
+              </label>
               <input
                 value={activeDraft.title}
                 onChange={(event) => onUpdateDraft({ title: event.target.value })}
@@ -269,7 +275,9 @@ export default function AdminContentReviewPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_questions')}</label>
+              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">
+                {t('acr_label_questions')}
+              </label>
               <input
                 type="number"
                 min={1}
@@ -279,7 +287,9 @@ export default function AdminContentReviewPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_minutes')}</label>
+              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">
+                {t('acr_label_minutes')}
+              </label>
               <input
                 type="number"
                 min={1}
@@ -292,10 +302,15 @@ export default function AdminContentReviewPanel({
 
           <div className="space-y-4">
             {ensureEditableExamSections(activeDraft).map((section, sectionIndex) => (
-              <div key={`${section.id}-${sectionIndex}`} className="bg-slate-900/70 border border-slate-800 rounded-2xl p-4 space-y-3">
+              <div
+                key={`${section.id}-${sectionIndex}`}
+                className="bg-slate-900/70 border border-slate-800 rounded-2xl p-4 space-y-3"
+              >
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3 items-end">
                   <div>
-                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_section_title')}</label>
+                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">
+                      {t('acr_label_section_title')}
+                    </label>
                     <input
                       value={section.title}
                       onChange={(event) => onUpdateSection(sectionIndex, { title: event.target.value })}
@@ -313,7 +328,9 @@ export default function AdminContentReviewPanel({
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_passage')}</label>
+                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">
+                      {t('acr_label_passage')}
+                    </label>
                     <textarea
                       rows={3}
                       value={section.passageHtml || ''}
@@ -322,7 +339,9 @@ export default function AdminContentReviewPanel({
                     />
                   </div>
                   <div>
-                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_transcript')}</label>
+                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">
+                      {t('acr_label_transcript')}
+                    </label>
                     <textarea
                       rows={3}
                       value={section.transcript || ''}
@@ -339,22 +358,31 @@ export default function AdminContentReviewPanel({
                     </div>
                   ) : (
                     section.questions.map((question, questionIndex) => (
-                      <div key={`${question.id}-${questionIndex}`} className="bg-slate-950/75 border border-slate-850 rounded-2xl p-3 space-y-2">
+                      <div
+                        key={`${question.id}-${questionIndex}`}
+                        className="bg-slate-950/75 border border-slate-850 rounded-2xl p-3 space-y-2"
+                      >
                         <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_140px_auto] gap-2 items-start">
                           <input
                             value={question.id}
-                            onChange={(event) => onUpdateQuestion(sectionIndex, questionIndex, { id: event.target.value })}
+                            onChange={(event) =>
+                              onUpdateQuestion(sectionIndex, questionIndex, { id: event.target.value })
+                            }
                             className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-indigo-300 font-mono outline-none"
                           />
                           <textarea
                             rows={2}
                             value={question.text}
-                            onChange={(event) => onUpdateQuestion(sectionIndex, questionIndex, { text: event.target.value })}
+                            onChange={(event) =>
+                              onUpdateQuestion(sectionIndex, questionIndex, { text: event.target.value })
+                            }
                             className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-slate-100 outline-none resize-y"
                           />
                           <input
                             value={question.answer}
-                            onChange={(event) => onUpdateQuestion(sectionIndex, questionIndex, { answer: event.target.value })}
+                            onChange={(event) =>
+                              onUpdateQuestion(sectionIndex, questionIndex, { answer: event.target.value })
+                            }
                             placeholder={t('acr_placeholder_answer')}
                             className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-emerald-300 font-mono outline-none"
                           />
@@ -384,7 +412,9 @@ export default function AdminContentReviewPanel({
                           <textarea
                             rows={2}
                             value={question.note || ''}
-                            onChange={(event) => onUpdateQuestion(sectionIndex, questionIndex, { note: event.target.value })}
+                            onChange={(event) =>
+                              onUpdateQuestion(sectionIndex, questionIndex, { note: event.target.value })
+                            }
                             placeholder={t('acr_placeholder_note')}
                             className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-slate-300 outline-none resize-y"
                           />

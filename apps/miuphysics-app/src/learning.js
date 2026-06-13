@@ -173,7 +173,10 @@ export function loadMiuPhysicsLearningState(learnerId = 'guest') {
       ...base,
       ...parsed,
       learnerId,
-      targetProgramIds: Array.isArray(parsed?.targetProgramIds) && parsed.targetProgramIds.length ? parsed.targetProgramIds : [MIU_PHYSICS_PROGRAM_ID],
+      targetProgramIds:
+        Array.isArray(parsed?.targetProgramIds) && parsed.targetProgramIds.length
+          ? parsed.targetProgramIds
+          : [MIU_PHYSICS_PROGRAM_ID],
       attempts: Array.isArray(parsed?.attempts) ? parsed.attempts : [],
       learningEvents: Array.isArray(parsed?.learningEvents) ? parsed.learningEvents : [],
       updatedAt: parsed?.updatedAt || base.updatedAt,
@@ -192,7 +195,9 @@ export function saveMiuPhysicsSharedLearningEvent(event) {
 }
 
 export function saveMiuPhysicsSharedLearningEvents(events) {
-  return saveLearningEventsToStorage((Array.isArray(events) ? events : []).map(prepareMiuPhysicsSharedLearningEvent).filter(Boolean));
+  return saveLearningEventsToStorage(
+    (Array.isArray(events) ? events : []).map(prepareMiuPhysicsSharedLearningEvent).filter(Boolean),
+  );
 }
 
 export function loadMiuPhysicsErrorNotebook(learnerId = 'guest') {
@@ -239,13 +244,23 @@ function toPhysicsQuestionItems(questions) {
   return (questions || []).map(toPhysicsQuestionItem);
 }
 
-export function recordMiuPhysicsAttempt(state, question, selectedAnswer, mode = 'practice', learnerId = state.learnerId || 'guest') {
+export function recordMiuPhysicsAttempt(
+  state,
+  question,
+  selectedAnswer,
+  mode = 'practice',
+  learnerId = state.learnerId || 'guest',
+) {
   const answer = String(selectedAnswer || '').trim();
   if (!question || !answer) return null;
 
   const normalized = normalizeMiuPhysicsQuestion(question);
   const item = toPhysicsQuestionItem(normalized);
-  const correct = answer.toLowerCase() === String(question.correct_answer || '').trim().toLowerCase();
+  const correct =
+    answer.toLowerCase() ===
+    String(question.correct_answer || '')
+      .trim()
+      .toLowerCase();
   return recordAttempt(
     {
       ...state,
@@ -288,7 +303,9 @@ export function recordMiuPhysicsErrorNotebookMistake(learnerId, question, select
   });
   if (!entry) return { entries: loadMiuPhysicsErrorNotebook(learnerId), entry: null };
 
-  const entries = Array.isArray(currentEntries) ? currentEntries.map(normalizeErrorNotebookEntry) : loadMiuPhysicsErrorNotebook(learnerId);
+  const entries = Array.isArray(currentEntries)
+    ? currentEntries.map(normalizeErrorNotebookEntry)
+    : loadMiuPhysicsErrorNotebook(learnerId);
   const existingIndex = entries.findIndex((item) => item.questionId === entry.questionId);
   const normalizedEntry = normalizeErrorNotebookEntry(entry);
 
@@ -311,8 +328,12 @@ export function recordMiuPhysicsErrorNotebookMistake(learnerId, question, select
 }
 
 export function reviewMiuPhysicsErrorNotebookEntry(learnerId, questionId, grade = 5, currentEntries) {
-  const entries = Array.isArray(currentEntries) ? currentEntries.map(normalizeErrorNotebookEntry) : loadMiuPhysicsErrorNotebook(learnerId);
-  const index = entries.findIndex((entry) => entry.questionId === `miuphysics.${questionId}` || entry.questionId === questionId);
+  const entries = Array.isArray(currentEntries)
+    ? currentEntries.map(normalizeErrorNotebookEntry)
+    : loadMiuPhysicsErrorNotebook(learnerId);
+  const index = entries.findIndex(
+    (entry) => entry.questionId === `miuphysics.${questionId}` || entry.questionId === questionId,
+  );
   if (index < 0) return { entries, entry: null };
 
   const reviewed = scheduleErrorNotebookReview(entries[index], grade);
@@ -335,8 +356,11 @@ export function buildMiuPhysicsLearningDashboard(state, questions) {
   const recommendation = recommendNextAction({ ...state, attempts }, { diagnosticMinAttempts: 8 });
   const reviewItems = buildReviewSet(items, attempts, 5);
   const diagnosticItems = buildDiagnosticSet(items, attempts, { limit: 5, programId: MIU_PHYSICS_PROGRAM_ID });
-  const nextItem = recommendation.kind === 'review' ? reviewItems[0] || diagnosticItems[0] : diagnosticItems[0] || reviewItems[0];
-  const nextQuestion = nextItem ? questions.find((question) => `miuphysics.${question.id}` === nextItem.id) || null : null;
+  const nextItem =
+    recommendation.kind === 'review' ? reviewItems[0] || diagnosticItems[0] : diagnosticItems[0] || reviewItems[0];
+  const nextQuestion = nextItem
+    ? questions.find((question) => `miuphysics.${question.id}` === nextItem.id) || null
+    : null;
   const learningPath = buildMiuPhysicsLearningPath(mastery, recommendation);
 
   return {
@@ -418,7 +442,9 @@ function pickMiuPhysicsLearningTargetIds(recommendation, mastery, programMap) {
   if (weakRows.length) return uniqueStrings(weakRows);
 
   const defaultTargets = ['physics.force', 'physics.energy', 'physics.motion'];
-  const mappedTargets = defaultTargets.filter((id) => programMap?.conceptIds?.includes(id) || programMap?.skillIds?.includes(id));
+  const mappedTargets = defaultTargets.filter(
+    (id) => programMap?.conceptIds?.includes(id) || programMap?.skillIds?.includes(id),
+  );
   return mappedTargets.length ? mappedTargets : (programMap?.conceptIds || []).slice(0, 3);
 }
 
@@ -473,12 +499,7 @@ function inferErrorCategories(question) {
 
 function formatMiuPhysicsExplanation(question) {
   const explanation = question?.explanation || {};
-  const parts = [
-    explanation.thinking,
-    explanation.steps,
-    explanation.traps,
-    explanation.formula,
-  ].filter(Boolean);
+  const parts = [explanation.thinking, explanation.steps, explanation.traps, explanation.formula].filter(Boolean);
   return parts.join('\n\n') || question?.question_text || '';
 }
 
@@ -588,10 +609,10 @@ export function checkAndUnlockAchievements(state, streak) {
   };
 
   // First correct answer
-  if (attempts.some(a => a.correct)) tryUnlock('ach_first_correct');
+  if (attempts.some((a) => a.correct)) tryUnlock('ach_first_correct');
 
   // Correct count milestones
-  const correctCount = attempts.filter(a => a.correct).length;
+  const correctCount = attempts.filter((a) => a.correct).length;
   if (correctCount >= 10) tryUnlock('ach_correct_10');
   if (correctCount >= 50) tryUnlock('ach_correct_50');
   if (correctCount >= 100) tryUnlock('ach_correct_100');
@@ -603,7 +624,7 @@ export function checkAndUnlockAchievements(state, streak) {
 
   // Perfect score on any chapter (all correct)
   const chapterAttempts = {};
-  attempts.forEach(a => {
+  attempts.forEach((a) => {
     const ch = a.payload?.chapter;
     if (ch) {
       if (!chapterAttempts[ch]) chapterAttempts[ch] = { total: 0, correct: 0 };
@@ -619,10 +640,15 @@ export function checkAndUnlockAchievements(state, streak) {
   });
 
   // Consecutive correct answers
-  let maxConsecutive = 0, currentConsecutive = 0;
-  attempts.forEach(a => {
-    if (a.correct) { currentConsecutive++; maxConsecutive = Math.max(maxConsecutive, currentConsecutive); }
-    else { currentConsecutive = 0; }
+  let maxConsecutive = 0,
+    currentConsecutive = 0;
+  attempts.forEach((a) => {
+    if (a.correct) {
+      currentConsecutive++;
+      maxConsecutive = Math.max(maxConsecutive, currentConsecutive);
+    } else {
+      currentConsecutive = 0;
+    }
   });
   if (maxConsecutive >= 5) tryUnlock('ach_consecutive_5');
   if (maxConsecutive >= 10) tryUnlock('ach_consecutive_10');
@@ -661,7 +687,7 @@ export function addDiaryEntry(entry) {
 
 export function deleteDiaryEntry(entryId) {
   let entries = loadDiaryEntries();
-  entries = entries.filter(e => e.id !== entryId);
+  entries = entries.filter((e) => e.id !== entryId);
   localStorage.setItem(DIARY_STORAGE_KEY, JSON.stringify(entries));
   return entries;
 }

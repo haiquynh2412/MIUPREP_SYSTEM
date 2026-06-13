@@ -25,7 +25,12 @@ interface ParentChildSignal {
   status: 'stable' | 'watch' | 'support';
 }
 
-export default function ParentActionSummary({ linkedStudents, tracks, learningEvents = [], rewardsAllocated }: ParentActionSummaryProps) {
+export default function ParentActionSummary({
+  linkedStudents,
+  tracks,
+  learningEvents = [],
+  rewardsAllocated,
+}: ParentActionSummaryProps) {
   const signals = useMemo(
     () => linkedStudents.map((student) => buildParentChildSignal(student, tracks, learningEvents)),
     [learningEvents, linkedStudents, tracks],
@@ -80,13 +85,24 @@ export default function ParentActionSummary({ linkedStudents, tracks, learningEv
   );
 }
 
-function buildParentChildSignal(student: LocalUser, tracks: PortalTrackInfo[], learningEvents: LearningEventRecord[]): ParentChildSignal {
+function buildParentChildSignal(
+  student: LocalUser,
+  tracks: PortalTrackInfo[],
+  learningEvents: LearningEventRecord[],
+): ParentChildSignal {
   const assignedTracks = normalizeAssignedTracks(student);
   const activeTracks = tracks.filter((track) => assignedTracks.includes(track.id));
   const progress = readProgress(student.username);
-  const snapshot = buildLearnerSnapshotFromLiveEvents(student, activeTracks, learningEvents, progress.coins, progress.traps);
+  const snapshot = buildLearnerSnapshotFromLiveEvents(
+    student,
+    activeTracks,
+    learningEvents,
+    progress.coins,
+    progress.traps,
+  );
   const weakestProgram = snapshot.programSummaries.slice().sort((a, b) => a.score - b.score)[0];
-  const status = progress.traps >= 6 || snapshot.averageMastery < 55 ? 'support' : progress.traps >= 3 ? 'watch' : 'stable';
+  const status =
+    progress.traps >= 6 || snapshot.averageMastery < 55 ? 'support' : progress.traps >= 3 ? 'watch' : 'stable';
 
   return {
     student,
@@ -111,7 +127,8 @@ function buildHeadline(focusChild?: ParentChildSignal): { title: string; detail:
   if (!focusChild) {
     return {
       title: 'Chưa có học sinh để theo dõi',
-      detail: 'Sau khi liên kết tài khoản con, phụ huynh sẽ thấy tình hình học tập và gợi ý hành động trong một màn hình.',
+      detail:
+        'Sau khi liên kết tài khoản con, phụ huynh sẽ thấy tình hình học tập và gợi ý hành động trong một màn hình.',
     };
   }
 

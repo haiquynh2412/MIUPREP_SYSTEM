@@ -6,13 +6,7 @@ export default function ProgressRing({ progress = 0, size = 64, strokeWidth = 5,
   return (
     <div className="progress-ring-container" style={{ width: size, height: size }}>
       <svg className="progress-ring" width={size} height={size}>
-        <circle
-          className="progress-ring-bg"
-          cx={size / 2}
-          cy={size / 2}
-          r={radius}
-          strokeWidth={strokeWidth}
-        />
+        <circle className="progress-ring-bg" cx={size / 2} cy={size / 2} r={radius} strokeWidth={strokeWidth} />
         <circle
           className="progress-ring-fill"
           cx={size / 2}

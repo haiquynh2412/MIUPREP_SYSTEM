@@ -27,9 +27,9 @@ export class GeminiAdapter implements AIAdapter {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-goog-api-key': apiKey
+        'x-goog-api-key': apiKey,
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
     });
 
     if (!response.ok) {
@@ -37,7 +37,7 @@ export class GeminiAdapter implements AIAdapter {
       const errorMsg = errBody?.error?.message || `Gemini API returned status ${response.status}`;
       const err = new Error(errorMsg);
       (err as any).status = response.status;
-      
+
       const retryAfter = response.headers.get('retry-after');
       if (retryAfter) {
         (err as any).retryAfterSeconds = parseInt(retryAfter, 10);
@@ -200,19 +200,20 @@ Ensure you provide exactly 4 criteria in the array.`;
     const fullPrompt = `${systemPrompt}\n\n${userPrompt}`;
 
     return withRetry(async () => {
-      const data = await this.makeRequest({
-        contents: [
-          {
-            parts: [
-              { text: fullPrompt }
-            ]
-          }
-        ],
-        generationConfig: {
-          responseMimeType: 'application/json',
-          temperature: 0.2
-        }
-      }, apiKey);
+      const data = await this.makeRequest(
+        {
+          contents: [
+            {
+              parts: [{ text: fullPrompt }],
+            },
+          ],
+          generationConfig: {
+            responseMimeType: 'application/json',
+            temperature: 0.2,
+          },
+        },
+        apiKey,
+      );
 
       const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text || '{}';
       const cleanJson = this.cleanJsonResponse(rawText);
@@ -233,8 +234,10 @@ Ensure you provide exactly 4 criteria in the array.`;
         modelUsed: this.model,
         createdAt: new Date().toISOString(),
         rubricVersion: parsed.rubricVersion || (isCpeCae ? 'v1.2.0-cambridge' : 'v1.2.0-academic'),
-        descriptorSource: parsed.descriptorSource || (isCpeCae ? 'Cambridge English Scale Writing Descriptors' : 'IELTS Writing Band Descriptors May 2023'),
-        confidence: parsed.confidence || 0.95
+        descriptorSource:
+          parsed.descriptorSource ||
+          (isCpeCae ? 'Cambridge English Scale Writing Descriptors' : 'IELTS Writing Band Descriptors May 2023'),
+        confidence: parsed.confidence || 0.95,
       };
     });
   }
@@ -391,7 +394,9 @@ Deliver your complete analysis in JSON format only. Your output must strictly ma
 Ensure you provide exactly 4 criteria in the array.`;
 
     if (!params.audioBase64 && (!transcript || !transcript.trim())) {
-      throw new Error("Không có dữ liệu văn bản từ giọng nói của bạn. Vui lòng ghi âm lại rõ ràng hơn hoặc kiểm tra thiết bị mic của bạn.");
+      throw new Error(
+        'Không có dữ liệu văn bản từ giọng nói của bạn. Vui lòng ghi âm lại rõ ràng hơn hoặc kiểm tra thiết bị mic của bạn.',
+      );
     }
 
     const userPrompt = params.audioBase64
@@ -406,22 +411,25 @@ Ensure you provide exactly 4 criteria in the array.`;
         parts.push({
           inlineData: {
             mimeType: 'audio/webm',
-            data: params.audioBase64
-          }
+            data: params.audioBase64,
+          },
         });
       }
 
-      const data = await this.makeRequest({
-        contents: [
-          {
-            parts
-          }
-        ],
-        generationConfig: {
-          responseMimeType: 'application/json',
-          temperature: 0.2
-        }
-      }, apiKey);
+      const data = await this.makeRequest(
+        {
+          contents: [
+            {
+              parts,
+            },
+          ],
+          generationConfig: {
+            responseMimeType: 'application/json',
+            temperature: 0.2,
+          },
+        },
+        apiKey,
+      );
 
       const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text || '{}';
       const cleanJson = this.cleanJsonResponse(rawText);
@@ -442,8 +450,10 @@ Ensure you provide exactly 4 criteria in the array.`;
         modelUsed: this.model,
         createdAt: new Date().toISOString(),
         rubricVersion: parsed.rubricVersion || (isCpeCae ? 'v1.2.0-cambridge' : 'v1.2.0-speaking'),
-        descriptorSource: parsed.descriptorSource || (isCpeCae ? 'Cambridge English Scale Speaking Descriptors' : 'IELTS Speaking Band Descriptors'),
-        confidence: parsed.confidence || 0.95
+        descriptorSource:
+          parsed.descriptorSource ||
+          (isCpeCae ? 'Cambridge English Scale Speaking Descriptors' : 'IELTS Speaking Band Descriptors'),
+        confidence: parsed.confidence || 0.95,
       };
     });
   }

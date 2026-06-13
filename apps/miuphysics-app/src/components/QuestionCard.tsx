@@ -18,10 +18,10 @@ export default function QuestionCard({
     en: { easy: 'Easy', medium: 'Medium', hard: 'Hard' },
   };
   const difficultyClass = `badge-difficulty-${question.difficulty || 'medium'}`;
-  const difficultyLabel = (diffLabels[lang] || diffLabels.vi)[question.difficulty] || (lang === 'en' ? 'Medium' : 'Trung bình');
+  const difficultyLabel =
+    (diffLabels[lang] || diffLabels.vi)[question.difficulty] || (lang === 'en' ? 'Medium' : 'Trung bình');
 
-  const isCorrect = (key) =>
-    showResult && String(question.correct_answer).toLowerCase() === String(key).toLowerCase();
+  const isCorrect = (key) => showResult && String(question.correct_answer).toLowerCase() === String(key).toLowerCase();
   const isIncorrect = (key) =>
     showResult &&
     selectedAnswer &&
@@ -40,13 +40,16 @@ export default function QuestionCard({
   };
 
   // Check if the answer is wrong
-  const isWrongAnswer = showResult && selectedAnswer &&
+  const isWrongAnswer =
+    showResult &&
+    selectedAnswer &&
     String(selectedAnswer).toLowerCase() !== String(question.correct_answer).toLowerCase();
 
   // Get common traps from thinking_guide, localized if available
-  const rawTraps = lang === 'en'
-    ? (question.thinking_guide?.common_traps_en || question.thinking_guide?.common_traps || [])
-    : (question.thinking_guide?.common_traps || []);
+  const rawTraps =
+    lang === 'en'
+      ? question.thinking_guide?.common_traps_en || question.thinking_guide?.common_traps || []
+      : question.thinking_guide?.common_traps || [];
   const commonTraps = Array.isArray(rawTraps) ? rawTraps : [rawTraps];
 
   const renderQuestionContent = () => {
@@ -91,7 +94,8 @@ export default function QuestionCard({
       <div className="options-grid">
         {(question.options || []).map((opt) => {
           const key = typeof opt === 'string' ? opt : opt.key;
-          const content = typeof opt === 'string' ? opt : (lang === 'en' && opt.content_en ? opt.content_en : opt.content);
+          const content =
+            typeof opt === 'string' ? opt : lang === 'en' && opt.content_en ? opt.content_en : opt.content;
           return (
             <button
               key={key}
@@ -100,9 +104,7 @@ export default function QuestionCard({
               disabled={showResult}
             >
               <span className="option-key">{key}</span>
-              <span
-                dangerouslySetInnerHTML={{ __html: renderMath(content || key) }}
-              />
+              <span dangerouslySetInnerHTML={{ __html: renderMath(content || key) }} />
             </button>
           );
         })}
@@ -114,16 +116,20 @@ export default function QuestionCard({
     <div className="question-card animate-fadeIn">
       <div className="question-meta">
         <span className={`badge ${difficultyClass}`}>{difficultyLabel}</span>
-        {question.chapter && (
-          <span className="badge badge-chapter">{question.chapter.replace(/_/g, ' ')}</span>
-        )}
+        {question.chapter && <span className="badge badge-chapter">{question.chapter.replace(/_/g, ' ')}</span>}
         {question.grade && (
-          <span className="badge badge-chapter">{lang === 'en' ? 'Grade' : 'Lớp'} {question.grade}</span>
+          <span className="badge badge-chapter">
+            {lang === 'en' ? 'Grade' : 'Lớp'} {question.grade}
+          </span>
         )}
       </div>
       <div
         className="question-text question-text-enlarged"
-        dangerouslySetInnerHTML={{ __html: renderMath((lang === 'en' && question.question_text_en ? question.question_text_en : question.question_text) || '') }}
+        dangerouslySetInnerHTML={{
+          __html: renderMath(
+            (lang === 'en' && question.question_text_en ? question.question_text_en : question.question_text) || '',
+          ),
+        }}
       />
       {question.image && (
         <div style={{ textAlign: 'center', margin: '16px 0' }}>
@@ -136,73 +142,74 @@ export default function QuestionCard({
       )}
 
       {/* ===== In-Question PhET Simulation ===== */}
-      {question.phet_sim && (() => {
-        const simTitle = lang === 'en' ? question.phet_sim.title : (question.phet_sim.titleVn || question.phet_sim.title);
-        const separator = question.phet_sim.url.includes('?') ? '&' : '?';
-        const localizedSimUrl = `${question.phet_sim.url}${separator}locale=${lang}`;
-        const instructionText = lang === 'en' && question.phet_sim.instructionEn ? question.phet_sim.instructionEn : question.phet_sim.instruction;
-        
-        return (
-          <div className="question-phet-panel">
-            <button
-              className="question-phet-toggle"
-              onClick={() => setShowSim(!showSim)}
-            >
-              <span className="question-phet-toggle-icon">
-                {showSim ? '🔽' : '▶️'}
-              </span>
-              <div className="question-phet-toggle-text">
-                <span className="question-phet-toggle-title">
-                  🧪 {simTitle}
-                </span>
-                <span className="question-phet-toggle-hint">
-                  {showSim
-                    ? (lang === 'en' ? 'Hide simulation' : 'Ẩn mô phỏng')
-                    : (lang === 'en' ? 'Open simulation to explore!' : 'Mở thí nghiệm để khám phá!')}
-                </span>
-              </div>
-              <span className="resource-badge resource-badge-phet" style={{ marginLeft: 'auto' }}>PhET</span>
-            </button>
+      {question.phet_sim &&
+        (() => {
+          const simTitle =
+            lang === 'en' ? question.phet_sim.title : question.phet_sim.titleVn || question.phet_sim.title;
+          const separator = question.phet_sim.url.includes('?') ? '&' : '?';
+          const localizedSimUrl = `${question.phet_sim.url}${separator}locale=${lang}`;
+          const instructionText =
+            lang === 'en' && question.phet_sim.instructionEn
+              ? question.phet_sim.instructionEn
+              : question.phet_sim.instruction;
 
-            {showSim && (
-              <div className="question-phet-embed animate-fadeIn">
-                {instructionText && (
-                  <div className="question-phet-instruction">
-                    💡 <strong>{lang === 'en' ? 'Instructions:' : 'Hướng dẫn:'}</strong> {instructionText}
-                  </div>
-                )}
-                <div className="phet-embed-container">
-                  <iframe
-                    src={localizedSimUrl}
-                    title={question.phet_sim.title}
-                    className="phet-iframe"
-                    allowFullScreen
-                  />
+          return (
+            <div className="question-phet-panel">
+              <button className="question-phet-toggle" onClick={() => setShowSim(!showSim)}>
+                <span className="question-phet-toggle-icon">{showSim ? '🔽' : '▶️'}</span>
+                <div className="question-phet-toggle-text">
+                  <span className="question-phet-toggle-title">🧪 {simTitle}</span>
+                  <span className="question-phet-toggle-hint">
+                    {showSim
+                      ? lang === 'en'
+                        ? 'Hide simulation'
+                        : 'Ẩn mô phỏng'
+                      : lang === 'en'
+                        ? 'Open simulation to explore!'
+                        : 'Mở thí nghiệm để khám phá!'}
+                  </span>
                 </div>
-                <a
-                  href={localizedSimUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-sm btn-outline"
-                  style={{ marginTop: 10, width: '100%', justifyContent: 'center' }}
-                >
-                  🔗 {lang === 'en' ? 'Open Fullscreen' : 'Mở toàn màn hình'}
-                </a>
-              </div>
-            )}
-          </div>
-        );
-      })()}
+                <span className="resource-badge resource-badge-phet" style={{ marginLeft: 'auto' }}>
+                  PhET
+                </span>
+              </button>
+
+              {showSim && (
+                <div className="question-phet-embed animate-fadeIn">
+                  {instructionText && (
+                    <div className="question-phet-instruction">
+                      💡 <strong>{lang === 'en' ? 'Instructions:' : 'Hướng dẫn:'}</strong> {instructionText}
+                    </div>
+                  )}
+                  <div className="phet-embed-container">
+                    <iframe
+                      src={localizedSimUrl}
+                      title={question.phet_sim.title}
+                      className="phet-iframe"
+                      allowFullScreen
+                    />
+                  </div>
+                  <a
+                    href={localizedSimUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm btn-outline"
+                    style={{ marginTop: 10, width: '100%', justifyContent: 'center' }}
+                  >
+                    🔗 {lang === 'en' ? 'Open Fullscreen' : 'Mở toàn màn hình'}
+                  </a>
+                </div>
+              )}
+            </div>
+          );
+        })()}
 
       {renderQuestionContent()}
 
       {/* ===== Common Traps Alert (shown on wrong answer) ===== */}
       {isWrongAnswer && commonTraps.length > 0 && (
         <div className="common-traps-panel animate-fadeIn">
-          <button
-            className="common-traps-toggle"
-            onClick={() => setShowTraps(!showTraps)}
-          >
+          <button className="common-traps-toggle" onClick={() => setShowTraps(!showTraps)}>
             <span>⚠️</span>
             <span style={{ flex: 1, fontWeight: 600 }}>
               {lang === 'en' ? 'Watch out for common traps!' : 'Cảnh giác bẫy thường gặp!'}

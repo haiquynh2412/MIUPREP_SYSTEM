@@ -29,7 +29,9 @@ interface LearnerProfileCardProps {
   getDaysRemaining: () => number | null;
   getGlobalWeaknessAnalysis: () => Weakness[];
   getMicroSkillsAnalysis: () => MicroSkill[];
-  onNavigateTab?: (tab: 'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room') => void;
+  onNavigateTab?: (
+    tab: 'dashboard' | 'exam' | 'writing_ai' | 'error_notebook' | 'speaking_ai' | 'adaptive_room',
+  ) => void;
   activeTrack?: 'ielts' | 'cpe' | 'cae';
 }
 
@@ -58,9 +60,10 @@ export default function LearnerProfileCard({
   const isCae = track === 'cae';
   const examNameLabel = isCpe ? 'CPE C2' : isCae ? 'CAE C1' : 'IELTS';
   const targetLabel = isCpe ? 'Điểm CPE mục tiêu' : isCae ? 'Điểm CAE mục tiêu' : 'Điểm IELTS mục tiêu';
-  const formattedTarget = isCpe || isCae
-    ? (learnerProfile?.targetBand?.toFixed(0) || (isCpe ? '200' : '180'))
-    : (learnerProfile?.targetBand?.toFixed(1) || '7.0');
+  const formattedTarget =
+    isCpe || isCae
+      ? learnerProfile?.targetBand?.toFixed(0) || (isCpe ? '200' : '180')
+      : learnerProfile?.targetBand?.toFixed(1) || '7.0';
 
   const themeColors = {
     ielts: {
@@ -71,7 +74,7 @@ export default function LearnerProfileCard({
       bgClass: 'from-blue-50 to-indigo-50',
       btnClass: 'bg-blue-600 hover:bg-blue-700',
       backupTitle: 'IELTS Local Backup Simulator',
-      localStorageKey: 'ielts_app_last_cloud_sync'
+      localStorageKey: 'ielts_app_last_cloud_sync',
     },
     cpe: {
       primaryColor: 'emerald',
@@ -81,7 +84,7 @@ export default function LearnerProfileCard({
       bgClass: 'from-emerald-50 to-emerald-50',
       btnClass: 'bg-emerald-600 hover:bg-emerald-700',
       backupTitle: 'CPE C2 Local Backup Simulator',
-      localStorageKey: 'cpe_app_last_cloud_sync'
+      localStorageKey: 'cpe_app_last_cloud_sync',
     },
     cae: {
       primaryColor: 'violet',
@@ -91,8 +94,8 @@ export default function LearnerProfileCard({
       bgClass: 'from-violet-50 to-indigo-50',
       btnClass: 'bg-violet-600 hover:bg-violet-700',
       backupTitle: 'CAE C1 Local Backup Simulator',
-      localStorageKey: 'cae_app_last_cloud_sync'
-    }
+      localStorageKey: 'cae_app_last_cloud_sync',
+    },
   }[track];
 
   // Cloud Sync States
@@ -143,18 +146,21 @@ export default function LearnerProfileCard({
     ];
 
     steps.forEach((step, idx) => {
-      setTimeout(() => {
-        setSyncProgress(step.progress);
-        setSyncMessage(step.message);
-        if (step.progress === 100) {
-          const timestamp = new Date().toLocaleString('vi-VN');
-          localStorage.setItem(themeColors.localStorageKey, timestamp);
-          setLastSynced(timestamp);
-          setTimeout(() => {
-            setIsSyncing(false);
-          }, 1500);
-        }
-      }, (idx + 1) * 600);
+      setTimeout(
+        () => {
+          setSyncProgress(step.progress);
+          setSyncMessage(step.message);
+          if (step.progress === 100) {
+            const timestamp = new Date().toLocaleString('vi-VN');
+            localStorage.setItem(themeColors.localStorageKey, timestamp);
+            setLastSynced(timestamp);
+            setTimeout(() => {
+              setIsSyncing(false);
+            }, 1500);
+          }
+        },
+        (idx + 1) * 600,
+      );
     });
   };
 
@@ -202,12 +208,14 @@ export default function LearnerProfileCard({
         {isEditingProfile ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-50 border p-4 rounded-lg mb-4 text-sm">
             <div className="flex flex-col gap-1.5">
-              <label className="font-bold text-slate-700">Target {examNameLabel} {isCpe || isCae ? 'Score (180-230)' : 'Band'}:</label>
+              <label className="font-bold text-slate-700">
+                Target {examNameLabel} {isCpe || isCae ? 'Score (180-230)' : 'Band'}:
+              </label>
               <input
                 type="number"
-                min={isCpe || isCae ? "180" : "1"}
-                max={isCpe || isCae ? "230" : "9"}
-                step={isCpe || isCae ? "1" : "0.5"}
+                min={isCpe || isCae ? '180' : '1'}
+                max={isCpe || isCae ? '230' : '9'}
+                step={isCpe || isCae ? '1' : '0.5'}
                 value={targetBandInput}
                 onChange={(e) => setTargetBandInput(parseFloat(e.target.value))}
                 className={`border border-slate-300 rounded px-2.5 py-1.5 text-slate-800 bg-white focus:outline-none focus:border-${themeColors.primaryColor}-500 font-medium`}
@@ -225,19 +233,17 @@ export default function LearnerProfileCard({
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
-            <div className={`bg-gradient-to-r ${themeColors.bgClass} border ${themeColors.borderClass} rounded-lg p-4 flex flex-col justify-center items-center text-center shadow-sm`}>
-              <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
-                {targetLabel}
-              </span>
-              <span className={`text-3xl font-black ${themeColors.textPrimary} mt-1`}>
-                {formattedTarget}
-              </span>
+            <div
+              className={`bg-gradient-to-r ${themeColors.bgClass} border ${themeColors.borderClass} rounded-lg p-4 flex flex-col justify-center items-center text-center shadow-sm`}
+            >
+              <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{targetLabel}</span>
+              <span className={`text-3xl font-black ${themeColors.textPrimary} mt-1`}>{formattedTarget}</span>
             </div>
 
-            <div className={`bg-gradient-to-r ${themeColors.bgClass} border ${themeColors.borderClass} rounded-lg p-4 flex flex-col justify-center items-center text-center shadow-sm`}>
-              <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
-                Ngày thi dự kiến
-              </span>
+            <div
+              className={`bg-gradient-to-r ${themeColors.bgClass} border ${themeColors.borderClass} rounded-lg p-4 flex flex-col justify-center items-center text-center shadow-sm`}
+            >
+              <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Ngày thi dự kiến</span>
               <span className="text-sm font-bold text-slate-800 mt-2">
                 {learnerProfile?.examDate
                   ? new Date(learnerProfile.examDate).toLocaleDateString('vi-VN')
@@ -246,9 +252,7 @@ export default function LearnerProfileCard({
             </div>
 
             <div className="bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-100 rounded-lg p-4 flex flex-col justify-center items-center text-center shadow-sm">
-              <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
-                Thời gian còn lại
-              </span>
+              <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Thời gian còn lại</span>
               <span className="text-2xl font-black text-rose-600 mt-1">
                 {getDaysRemaining() !== null ? `${getDaysRemaining()} ngày` : 'N/A'}
               </span>
@@ -265,7 +269,7 @@ export default function LearnerProfileCard({
               </svg>
               Chẩn đoán Bản đồ năng lực cá nhân
             </h3>
-            
+
             {weaknesses.length > 0 && (
               <div className="flex gap-1.5 bg-slate-100 p-0.5 rounded-lg border border-slate-200">
                 <button
@@ -305,21 +309,21 @@ export default function LearnerProfileCard({
                 >
                   <div className="flex justify-between items-start gap-2">
                     <div className="flex flex-col text-left">
-                      <span className="font-bold text-xs text-slate-800">
-                        {formatTypeName(weak.questionType)}
+                      <span className="font-bold text-xs text-slate-800">{formatTypeName(weak.questionType)}</span>
+                      <span className="text-[10px] text-slate-500">
+                        Đúng: {weak.correct}/{weak.total} câu
                       </span>
-                      <span className="text-[10px] text-slate-500">Đúng: {weak.correct}/{weak.total} câu</span>
                     </div>
                     <span
                       className={`text-[9px] font-bold px-1.5 py-0.5 border rounded uppercase ${getBadgeStyle(
-                        weak.status
+                        weak.status,
                       )}`}
                     >
                       {weak.status === 'proficient'
                         ? 'Thành thạo'
                         : weak.status === 'needs_improvement'
-                        ? 'Cần cải thiện'
-                        : 'Nguy cấp'}
+                          ? 'Cần cải thiện'
+                          : 'Nguy cấp'}
                     </span>
                   </div>
                   <div className="flex items-center gap-3 mt-1.5">
@@ -329,9 +333,7 @@ export default function LearnerProfileCard({
                         style={{ width: `${weak.accuracy}%` }}
                       ></div>
                     </div>
-                    <span className="font-mono font-bold text-xs text-slate-600 w-8 text-right">
-                      {weak.accuracy}%
-                    </span>
+                    <span className="font-mono font-bold text-xs text-slate-600 w-8 text-right">{weak.accuracy}%</span>
                   </div>
                 </div>
               ))}
@@ -346,21 +348,23 @@ export default function LearnerProfileCard({
                   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                     <div className="flex flex-col text-left">
                       <span className="font-extrabold text-sm text-slate-850 tracking-tight flex items-center gap-2">
-                        <span className={`w-2.5 h-2.5 rounded-full ${getStatusColor(skill.status)} animate-pulse`}></span>
+                        <span
+                          className={`w-2.5 h-2.5 rounded-full ${getStatusColor(skill.status)} animate-pulse`}
+                        ></span>
                         {skill.skillName}
                       </span>
                       <span className="text-xs text-slate-500 font-medium mt-0.5">{skill.description}</span>
                     </div>
                     <span
                       className={`text-[10px] font-black px-2 py-0.5 border rounded-full uppercase tracking-wider self-start sm:self-auto ${getBadgeStyle(
-                        skill.status
+                        skill.status,
                       )}`}
                     >
                       {skill.status === 'proficient'
                         ? 'Thành thạo'
                         : skill.status === 'needs_improvement'
-                        ? 'Cần cải thiện'
-                        : 'Nguy cấp'}
+                          ? 'Cần cải thiện'
+                          : 'Nguy cấp'}
                     </span>
                   </div>
                   <div className="flex items-center gap-4 mt-1">
@@ -370,15 +374,13 @@ export default function LearnerProfileCard({
                           skill.status === 'proficient'
                             ? 'from-green-400 to-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.3)]'
                             : skill.status === 'needs_improvement'
-                            ? 'from-amber-400 to-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.3)]'
-                            : 'from-rose-500 to-red-600 shadow-[0_0_8px_rgba(239,68,68,0.3)]'
+                              ? 'from-amber-400 to-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.3)]'
+                              : 'from-rose-500 to-red-600 shadow-[0_0_8px_rgba(239,68,68,0.3)]'
                         }`}
                         style={{ width: `${skill.score}%` }}
                       ></div>
                     </div>
-                    <span className="font-mono font-black text-sm text-slate-700 w-12 text-right">
-                      {skill.score}%
-                    </span>
+                    <span className="font-mono font-black text-sm text-slate-700 w-12 text-right">{skill.score}%</span>
                   </div>
                 </div>
               ))}
@@ -388,7 +390,9 @@ export default function LearnerProfileCard({
       </div>
 
       {/* 2. Premium AI Study Planner Advice Box */}
-      <div className={`bg-gradient-to-r ${track === 'cpe' ? 'from-emerald-600 to-emerald-600' : track === 'cae' ? 'from-violet-600 to-violet-650' : 'from-blue-600 to-indigo-600'} text-white rounded-lg p-6 shadow-md relative overflow-hidden flex flex-col gap-4`}>
+      <div
+        className={`bg-gradient-to-r ${track === 'cpe' ? 'from-emerald-600 to-emerald-600' : track === 'cae' ? 'from-violet-600 to-violet-650' : 'from-blue-600 to-indigo-600'} text-white rounded-lg p-6 shadow-md relative overflow-hidden flex flex-col gap-4`}
+      >
         {/* Subtle decorative glass circle */}
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
         <div className="flex items-start gap-3">
@@ -406,7 +410,7 @@ export default function LearnerProfileCard({
             </p>
           </div>
         </div>
-        
+
         {plannerAdvice.status !== 'new' && onNavigateTab && (
           <button
             onClick={() => onNavigateTab('adaptive_room')}
@@ -420,23 +424,29 @@ export default function LearnerProfileCard({
       {/* 3. Encrypted Local Backup Sync Widget */}
       <div className="bg-slate-900 border border-slate-800 text-slate-100 rounded-lg p-6 shadow-md flex flex-col gap-4 relative text-left">
         <h3 className="text-base font-bold text-white flex items-center gap-2 m-0 text-left">
-          <svg className={`w-5 h-5 ${track === 'cpe' ? 'text-emerald-400' : track === 'cae' ? 'text-violet-400' : 'text-blue-400'} fill-current`} viewBox="0 0 24 24">
+          <svg
+            className={`w-5 h-5 ${track === 'cpe' ? 'text-emerald-400' : track === 'cae' ? 'text-violet-400' : 'text-blue-400'} fill-current`}
+            viewBox="0 0 24 24"
+          >
             <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z" />
           </svg>
           {themeColors.backupTitle}
         </h3>
         <p className="text-xs text-slate-400 leading-normal m-0 text-left">
-          Chạy mô phỏng sao lưu lịch sử làm bài, hồ sơ chẩn đoán điểm yếu và Sổ tay lỗi sai dưới dạng mã hóa dữ liệu cục bộ an toàn chuẩn Base64.
+          Chạy mô phỏng sao lưu lịch sử làm bài, hồ sơ chẩn đoán điểm yếu và Sổ tay lỗi sai dưới dạng mã hóa dữ liệu cục
+          bộ an toàn chuẩn Base64.
         </p>
 
         {isSyncing ? (
           <div className="flex flex-col gap-2 mt-2 bg-slate-850 p-4 rounded border border-slate-800">
-            <div className={`flex justify-between items-center text-xs font-bold ${track === 'cpe' ? 'text-emerald-400' : track === 'cae' ? 'text-violet-400' : 'text-blue-400'}`}>
+            <div
+              className={`flex justify-between items-center text-xs font-bold ${track === 'cpe' ? 'text-emerald-400' : track === 'cae' ? 'text-violet-400' : 'text-blue-400'}`}
+            >
               <span className="animate-pulse">{syncMessage}</span>
               <span className="font-mono">{syncProgress}%</span>
             </div>
             <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-              <div 
+              <div
                 className={`h-full ${track === 'cpe' ? 'bg-emerald-500' : track === 'cae' ? 'bg-violet-500' : 'bg-blue-500'} transition-all duration-300`}
                 style={{ width: `${syncProgress}%` }}
               ></div>
@@ -445,7 +455,9 @@ export default function LearnerProfileCard({
         ) : (
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-2">
             <div className="flex flex-col text-left">
-              <span className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Trạng thái sao lưu</span>
+              <span className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">
+                Trạng thái sao lưu
+              </span>
               <span className="text-xs font-bold text-slate-200 mt-0.5">
                 {lastSynced ? `✓ Lần sao lưu giả lập cuối: ${lastSynced}` : 'Chưa chạy sao lưu giả lập'}
               </span>

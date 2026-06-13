@@ -4,31 +4,31 @@
 
 /* ---- Root Design Tokens ---- */
 :root {
-  --bg-deep: #0F172A;
-  --bg-surface: #1E293B;
-  --bg-card: #1E293B;
+  --bg-deep: #0f172a;
+  --bg-surface: #1e293b;
+  --bg-card: #1e293b;
   --bg-elevated: #273549;
-  --bg-input: #0F172A;
+  --bg-input: #0f172a;
 
-  --primary: #8B5CF6;
-  --primary-light: #A78BFA;
-  --primary-dark: #6D28D9;
+  --primary: #8b5cf6;
+  --primary-light: #a78bfa;
+  --primary-dark: #6d28d9;
   --primary-glow: rgba(139, 92, 246, 0.25);
   --primary-subtle: rgba(139, 92, 246, 0.08);
 
-  --accent-cyan: #22D3EE;
-  --accent-pink: #EC4899;
+  --accent-cyan: #22d3ee;
+  --accent-pink: #ec4899;
 
-  --text: #E2E8F0;
-  --text-muted: #94A3B8;
-  --text-dim: #64748B;
-  --text-heading: #F8FAFC;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-heading: #f8fafc;
 
-  --success: #10B981;
+  --success: #10b981;
   --success-glow: rgba(16, 185, 129, 0.2);
-  --error: #EF4444;
+  --error: #ef4444;
   --error-glow: rgba(239, 68, 68, 0.2);
-  --warning: #F59E0B;
+  --warning: #f59e0b;
   --warning-glow: rgba(245, 158, 11, 0.2);
 
   --border: rgba(139, 92, 246, 0.12);
@@ -55,14 +55,20 @@
 }
 
 /* ---- Global Reset ---- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
 }
 
-body, input, button, select, textarea {
+body,
+input,
+button,
+select,
+textarea {
   font-family: var(--font-family);
 }
 
@@ -132,7 +138,12 @@ body::after {
 }
 
 /* ---- Typography ---- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: var(--text-heading);
   line-height: 1.3;
@@ -283,7 +294,7 @@ a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
   opacity: 0;
   transition: var(--transition-fast);
 }
@@ -337,7 +348,7 @@ a:hover {
 }
 
 .btn-error {
-  background: linear-gradient(135deg, var(--error), #DC2626);
+  background: linear-gradient(135deg, var(--error), #dc2626);
   color: white;
   box-shadow: 0 4px 16px var(--error-glow);
 }
@@ -720,7 +731,7 @@ a:hover {
 .chapter-icon {
   font-size: 2.5rem;
   margin-bottom: 12px;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .chapter-name {
@@ -863,7 +874,8 @@ a:hover {
 }
 
 /* ---- Formula Display (KaTeX) ---- */
-.katex, .katex * {
+.katex,
+.katex * {
   font-family: KaTeX_Main, KaTeX_Math, KaTeX_Size1, KaTeX_Size2, KaTeX_Size3, KaTeX_Size4, sans-serif !important;
 }
 
@@ -886,8 +898,12 @@ a:hover {
 
 /* ---- Animations ---- */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
@@ -902,23 +918,42 @@ a:hover {
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); }
-  50% { box-shadow: 0 0 0 8px transparent; }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--primary-glow);
+  }
+  50% {
+    box-shadow: 0 0 0 8px transparent;
+  }
 }
 
 @keyframes glow {
-  0%, 100% { box-shadow: var(--shadow-glow); }
-  50% { box-shadow: var(--shadow-glow-lg); }
+  0%,
+  100% {
+    box-shadow: var(--shadow-glow);
+  }
+  50% {
+    box-shadow: var(--shadow-glow-lg);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 .animate-fadeIn {
@@ -985,8 +1020,8 @@ a:hover {
 }
 
 /* ---- Inputs ---- */
-input[type="text"],
-input[type="number"],
+input[type='text'],
+input[type='number'],
 textarea {
   width: 100%;
   padding: 12px 16px;
@@ -1102,9 +1137,15 @@ textarea:focus {
     font-size: 0.82rem;
   }
 
-  h1 { font-size: 1.2rem; }
-  h2 { font-size: 1.1rem; }
-  h3 { font-size: 1rem; }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 /* ---- Resource Cards: PhET + YouTube + Books ---- */
@@ -1169,11 +1210,11 @@ textarea:focus {
 }
 
 .resource-card-phet::before {
-  background: linear-gradient(90deg, #4CAF50, #00BCD4);
+  background: linear-gradient(90deg, #4caf50, #00bcd4);
 }
 
 .resource-card-video::before {
-  background: linear-gradient(90deg, #FF0000, #FF6B6B);
+  background: linear-gradient(90deg, #ff0000, #ff6b6b);
 }
 
 .resource-card-header {
@@ -1196,13 +1237,13 @@ textarea:focus {
 
 .resource-badge-phet {
   background: rgba(76, 175, 80, 0.15);
-  color: #4CAF50;
+  color: #4caf50;
   border: 1px solid rgba(76, 175, 80, 0.3);
 }
 
 .resource-badge-youtube {
   background: rgba(255, 0, 0, 0.12);
-  color: #FF4444;
+  color: #ff4444;
   border: 1px solid rgba(255, 0, 0, 0.25);
 }
 
@@ -1293,7 +1334,7 @@ textarea:focus {
 
 .book-icon {
   font-size: 1.8rem;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
   flex-shrink: 0;
 }
 
@@ -1315,7 +1356,7 @@ textarea:focus {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #4CAF50, #00BCD4, var(--primary));
+  background: linear-gradient(90deg, #4caf50, #00bcd4, var(--primary));
 }
 
 .intro-lab-header {
@@ -1396,7 +1437,7 @@ textarea:focus {
 
 .question-phet-toggle-hint {
   font-size: 0.78rem;
-  color: #4CAF50;
+  color: #4caf50;
   font-weight: 500;
 }
 
@@ -1484,7 +1525,7 @@ textarea:focus {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent-cyan), #3B82F6, var(--primary));
+  background: linear-gradient(90deg, var(--accent-cyan), #3b82f6, var(--primary));
 }
 
 .real-world-card-header {
@@ -1585,7 +1626,7 @@ textarea:focus {
 .daily-fact-emoji {
   font-size: 2.5rem;
   margin-bottom: 12px;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
   animation: float 3s ease-in-out infinite;
 }
 
@@ -1650,7 +1691,7 @@ textarea:focus {
 .level-icon {
   font-size: 2.5rem;
   margin-bottom: 8px;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
 .level-title {
@@ -1711,7 +1752,7 @@ textarea:focus {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #F59E0B, #EF4444, #F59E0B);
+  background: linear-gradient(90deg, #f59e0b, #ef4444, #f59e0b);
 }
 
 .streak-fire {
@@ -1785,7 +1826,7 @@ textarea:focus {
 .achievement-badge-icon {
   font-size: 2rem;
   margin-bottom: 8px;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
 }
 
 .achievement-badge-title {
@@ -1867,7 +1908,7 @@ textarea:focus {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #F59E0B, #EF4444, #F59E0B);
+  background: linear-gradient(90deg, #f59e0b, #ef4444, #f59e0b);
   opacity: 0;
   transition: var(--transition);
 }
@@ -1988,7 +2029,7 @@ textarea:focus {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #4CAF50, #00BCD4, var(--primary));
+  background: linear-gradient(90deg, #4caf50, #00bcd4, var(--primary));
 }
 
 .home-lab-card:hover {
@@ -2345,7 +2386,7 @@ textarea:focus {
 .challenge-mode-icon {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 .challenge-mode-title {
@@ -2392,7 +2433,7 @@ textarea:focus {
 .challenge-score-icon {
   font-size: 4rem;
   margin-bottom: 16px;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
 .challenge-score-title {
@@ -2462,7 +2503,9 @@ textarea:focus {
   align-items: center;
   gap: 14px;
   box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
-  animation: achievementSlideIn 0.5s ease, achievementFadeOut 0.5s ease 3.5s forwards;
+  animation:
+    achievementSlideIn 0.5s ease,
+    achievementFadeOut 0.5s ease 3.5s forwards;
   min-width: 280px;
 }
 
@@ -2488,10 +2531,23 @@ textarea:focus {
 
 /* ---- Additional Animations ---- */
 @keyframes flicker {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  25% { transform: scale(1.05); opacity: 0.9; }
-  50% { transform: scale(0.97); opacity: 1; }
-  75% { transform: scale(1.03); opacity: 0.95; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(0.97);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.03);
+    opacity: 0.95;
+  }
 }
 
 @keyframes achievementSlideIn {
@@ -2506,24 +2562,44 @@ textarea:focus {
 }
 
 @keyframes achievementFadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; transform: translateX(40px); }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(40px);
+  }
 }
 
 @keyframes achievementBounce {
-  0% { transform: scale(0); }
-  50% { transform: scale(1.3); }
-  70% { transform: scale(0.9); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes countdownPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 @keyframes timerRing {
-  from { stroke-dashoffset: 0; }
+  from {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* ---- Language Toggle ---- */
@@ -2570,7 +2646,7 @@ textarea:focus {
   width: 48px;
   height: 48px;
   margin-bottom: 8px;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
   transition: var(--transition);
 }
 
@@ -2579,7 +2655,7 @@ textarea:focus {
 }
 
 .achievement-locked .achievement-badge-svg {
-  filter: grayscale(0.8) drop-shadow(0 2px 6px rgba(0,0,0,0.2));
+  filter: grayscale(0.8) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
   opacity: 0.4;
 }
 
@@ -2712,7 +2788,9 @@ textarea:focus {
 .discovery-zone-card:hover {
   transform: translateY(-6px) scale(1.01);
   border-color: var(--zone-color);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 30px color-mix(in srgb, var(--zone-color) 20%, transparent);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px color-mix(in srgb, var(--zone-color) 20%, transparent);
 }
 
 .discovery-zone-card:hover::before {
@@ -2722,7 +2800,9 @@ textarea:focus {
 
 .discovery-zone-card.active {
   border-color: var(--zone-color);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 24px color-mix(in srgb, var(--zone-color) 15%, transparent);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 24px color-mix(in srgb, var(--zone-color) 15%, transparent);
 }
 
 /* Glow effect */
@@ -2869,7 +2949,7 @@ textarea:focus {
   right: 0;
   width: 20px;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
   border-radius: var(--radius-pill);
 }
 
@@ -3280,7 +3360,9 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: opacity 0.3s ease, background-color 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    background-color 0.3s ease;
   position: relative;
 }
 
@@ -3305,7 +3387,7 @@ textarea:focus {
 .matrix-chapter-card:hover {
   transform: translateY(-2px);
   border-color: var(--chapter-color, var(--primary));
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background: var(--bg-card);
 }
 
@@ -3404,5 +3486,3 @@ textarea:focus {
   background-color: var(--primary);
   display: inline-block;
 }
-
-

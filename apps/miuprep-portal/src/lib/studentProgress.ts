@@ -338,10 +338,7 @@ export function parseDiaryList(value: string | null | undefined, fallbackDate?: 
 
     const diaryList = parsed.filter((entry): entry is DiaryEntry => {
       return (
-        entry &&
-        typeof entry.text === 'string' &&
-        typeof entry.mood === 'string' &&
-        typeof entry.date === 'string'
+        entry && typeof entry.text === 'string' && typeof entry.mood === 'string' && typeof entry.date === 'string'
       );
     });
 
@@ -452,10 +449,7 @@ export function persistDailyPlanCompletedSteps(
   storage.setItem(getDailyPlanStorageKey(username, dateKey), JSON.stringify(normalizeDailyStepIds(completedStepIds)));
 }
 
-export function toggleDailyPlanStep(
-  completedStepIds: DailyLoopStepId[],
-  stepId: DailyLoopStepId,
-): DailyLoopStepId[] {
+export function toggleDailyPlanStep(completedStepIds: DailyLoopStepId[], stepId: DailyLoopStepId): DailyLoopStepId[] {
   const normalized = normalizeDailyStepIds(completedStepIds);
   return normalized.includes(stepId)
     ? normalized.filter((id) => id !== stepId)
@@ -484,7 +478,9 @@ export function buildDailyLoopStepLearningEvent(input: DailyLoopStepLearningEven
   );
 }
 
-export function buildLessonTemplateActionLearningEvent(input: LessonTemplateActionLearningEventInput): LearningEventRecord {
+export function buildLessonTemplateActionLearningEvent(
+  input: LessonTemplateActionLearningEventInput,
+): LearningEventRecord {
   const occurredAt = input.occurredAt || new Date().toISOString();
   const conceptIds = normalizeLearningIds(input.conceptIds, fallbackLessonConceptId(input.domainId));
   const skillIds = normalizeLearningIds(input.skillIds, fallbackLessonSkillId(input.domainId));
@@ -513,7 +509,9 @@ export function buildLessonTemplateActionLearningEvent(input: LessonTemplateActi
   );
 }
 
-export function buildTemplatePracticeAttemptLearningEvent(input: TemplatePracticeAttemptLearningEventInput): LearningEventRecord {
+export function buildTemplatePracticeAttemptLearningEvent(
+  input: TemplatePracticeAttemptLearningEventInput,
+): LearningEventRecord {
   const occurredAt = input.occurredAt || new Date().toISOString();
   const conceptIds = normalizeLearningIds(input.conceptIds, fallbackLessonConceptId(input.domainId));
   const skillIds = normalizeLearningIds(input.skillIds, fallbackLessonSkillId(input.domainId));
@@ -543,7 +541,9 @@ export function buildTemplatePracticeAttemptLearningEvent(input: TemplatePractic
       stageTitle: input.stageTitle,
       questionIndex: input.questionIndex,
       errorCategories: input.correct ? [] : [input.domainId === 'english_core' ? 'strategy' : 'calculation'],
-      misconceptionIds: input.correct ? [] : [input.domainId === 'english_core' ? 'mis.eng.strategy_gap' : 'mis.math.method_gap'],
+      misconceptionIds: input.correct
+        ? []
+        : [input.domainId === 'english_core' ? 'mis.eng.strategy_gap' : 'mis.math.method_gap'],
       timeSpentSeconds: 0,
       sourceSurface: input.sourceSurface,
     },
@@ -557,11 +557,15 @@ export function buildTemplatePracticeAttemptLearningEvent(input: TemplatePractic
   );
 }
 
-export function buildEnglishItemBankPracticeAttemptLearningEvent(input: EnglishItemBankPracticeAttemptLearningEventInput): LearningEventRecord {
+export function buildEnglishItemBankPracticeAttemptLearningEvent(
+  input: EnglishItemBankPracticeAttemptLearningEventInput,
+): LearningEventRecord {
   const occurredAt = input.occurredAt || new Date().toISOString();
   const conceptIds = normalizeLearningIds(input.conceptIds, 'eng.core_skill');
   const skillIds = normalizeLearningIds(input.skillIds, 'eng.academic_reading');
-  const misconceptionIds = input.correct ? [] : normalizeLearningIds(input.misconceptionIds, 'mis.eng.item_bank_practice_gap');
+  const misconceptionIds = input.correct
+    ? []
+    : normalizeLearningIds(input.misconceptionIds, 'mis.eng.item_bank_practice_gap');
 
   return buildLearningEvent(
     'practice_attempt',
@@ -616,7 +620,9 @@ export function buildErrorRetryLearningEvent(input: ErrorRetryLearningEventInput
   const programId = input.question.programId || (domainId === 'english_core' ? 'ielts' : 'vn_math_6_9');
   const conceptIds = normalizeLearningIds(input.question.conceptIds, fallbackConceptId(domainId, input.question));
   const skillIds = normalizeLearningIds(input.question.skillIds, fallbackSkillId(domainId, input.question));
-  const stageAfter = input.result.nextErrorQuestions.find((question) => question.id === input.question.id)?.stage ?? input.question.stage;
+  const stageAfter =
+    input.result.nextErrorQuestions.find((question) => question.id === input.question.id)?.stage ??
+    input.question.stage;
 
   return buildLearningEvent(
     'review_attempt',
@@ -870,11 +876,7 @@ export function buildErrorNotebookV2Groups(entries: ErrorNotebookV2Entry[], now 
   );
 }
 
-export function buildStudentWorkspaceTabs(
-  trackCount: number,
-  trapCount: number,
-  coins: number,
-): StudentWorkspaceTab[] {
+export function buildStudentWorkspaceTabs(trackCount: number, trapCount: number, coins: number): StudentWorkspaceTab[] {
   return [
     { id: 'overview', label: 'Overview', detail: 'Mastery' },
     { id: 'courses', label: 'Courses', detail: `${trackCount} tracks` },
@@ -935,7 +937,9 @@ export function resolveErrorRetry(
   const isCorrect = selectedAnswer === correctAnswer;
   const triedAt = new Date();
   const attemptedQuestion = errorQuestions.find((question) => question.id === questionId);
-  const nextRetryAttempts = isCorrect ? attemptedQuestion?.retryAttempts || 0 : (attemptedQuestion?.retryAttempts || 0) + 1;
+  const nextRetryAttempts = isCorrect
+    ? attemptedQuestion?.retryAttempts || 0
+    : (attemptedQuestion?.retryAttempts || 0) + 1;
   const nextStage = isCorrect
     ? Math.max(0, (attemptedQuestion?.stage || 0) - 1)
     : Math.min(5, (attemptedQuestion?.stage || 1) + 1);
@@ -1027,7 +1031,11 @@ function deriveErrorProfile(question: ErrorNotebookQuestion): {
   const text = `${question.id} ${question.text} ${question.answerExpl}`.toLowerCase();
   const explicitType = question.errorType as ErrorNotebookV2Type | undefined;
 
-  if (question.repairLessonId === 'math9.algebra_transform.repair' || question.id === 'err-1' || text.includes('sqrt')) {
+  if (
+    question.repairLessonId === 'math9.algebra_transform.repair' ||
+    question.id === 'err-1' ||
+    text.includes('sqrt')
+  ) {
     return {
       errorType: explicitType || 'knowledge',
       rootCause: 'Chua giu dieu kien va mau chung truoc khi rut gon bieu thuc.',
@@ -1039,7 +1047,12 @@ function deriveErrorProfile(question: ErrorNotebookQuestion): {
     };
   }
 
-  if (question.repairLessonId === 'math9.geometry_proof.scaffold' || question.id === 'err-2' || text.includes('circle') || text.includes('duong')) {
+  if (
+    question.repairLessonId === 'math9.geometry_proof.scaffold' ||
+    question.id === 'err-2' ||
+    text.includes('circle') ||
+    text.includes('duong')
+  ) {
     return {
       errorType: explicitType || 'knowledge',
       rootCause: 'Chua noi duoc given voi theorem hinh hoc phu hop.',
@@ -1064,7 +1077,11 @@ function deriveErrorProfile(question: ErrorNotebookQuestion): {
   }
 
   if (question.programId === 'sat' || text.includes('sat ')) {
-    const isMath = question.domainId === 'mathematics' || text.includes('math') || text.includes('algebra') || text.includes('geometry');
+    const isMath =
+      question.domainId === 'mathematics' ||
+      text.includes('math') ||
+      text.includes('algebra') ||
+      text.includes('geometry');
     const errorType: ErrorNotebookV2Type = explicitType || (isMath ? 'calculation' : 'reading_prompt');
     const firstSkill = question.skillIds?.[0] || 'sat.mixed_skill';
     return {
@@ -1075,7 +1092,8 @@ function deriveErrorProfile(question: ErrorNotebookQuestion): {
       missedStep: isMath
         ? 'Viet lai equation/constraint truoc khi bam may hoac tinh nhanh.'
         : 'Gach chan yeu cau cau hoi truoc khi nhin dap an.',
-      repairLessonTitle: question.repairLessonTitle || (isMath ? 'SAT Math Strategy Repair' : 'SAT Reading Trap Repair'),
+      repairLessonTitle:
+        question.repairLessonTitle || (isMath ? 'SAT Math Strategy Repair' : 'SAT Reading Trap Repair'),
       repairLessonDetail: isMath
         ? 'Lam 2 cau cung skill, moi cau ghi equation setup va shortcut hop le.'
         : 'Lam 2 cau evidence/inference, moi cau ghi vi sao distractor bi loai.',
@@ -1150,7 +1168,9 @@ function severityLabel(stage: number): string {
 function eventBelongsToLearner(event: LearningEventRecord, username: string): boolean {
   const learnerId = String(event.learnerId || '').toLowerCase();
   const expected = String(username || '').toLowerCase();
-  return Boolean(expected && (learnerId === expected || learnerId === `user-${expected}` || learnerId.endsWith(`-${expected}`)));
+  return Boolean(
+    expected && (learnerId === expected || learnerId === `user-${expected}` || learnerId.endsWith(`-${expected}`)),
+  );
 }
 
 function eventDateKey(value: string): string {
@@ -1162,7 +1182,9 @@ function dailyStepIdFromEvent(event: LearningEventRecord): DailyLoopStepId | nul
   const explicitStepId = String(event.payload?.dailyStepId || event.payload?.stepId || '').toLowerCase();
   if (DAILY_LOOP_STEP_IDS.includes(explicitStepId as DailyLoopStepId)) return explicitStepId as DailyLoopStepId;
 
-  const text = normalizePlainText(`${event.type} ${event.entityType} ${event.entityId} ${event.source} ${JSON.stringify(event.payload || {})}`);
+  const text = normalizePlainText(
+    `${event.type} ${event.entityType} ${event.entityId} ${event.source} ${JSON.stringify(event.payload || {})}`,
+  );
   if (text.includes('diagnostic')) return 'diagnostic';
   if (text.includes('lesson') || text.includes('micro_lesson')) return 'lesson';
   if (text.includes('independent')) return 'independent';
@@ -1181,9 +1203,7 @@ function inferErrorQuestionDomainId(question: ErrorNotebookQuestion): string {
 }
 
 function normalizeLearningIds(values: string[] | undefined, fallback: string): string[] {
-  const normalized = (Array.isArray(values) ? values : [])
-    .map((value) => String(value || '').trim())
-    .filter(Boolean);
+  const normalized = (Array.isArray(values) ? values : []).map((value) => String(value || '').trim()).filter(Boolean);
   return normalized.length ? [...new Set(normalized)] : [fallback];
 }
 
@@ -1245,18 +1265,21 @@ function errorCategoryFromQuestion(question: ErrorNotebookQuestion, domainId: st
 }
 
 function englishItemBankErrorCategory(questionType: string, metadata: Record<string, unknown> | undefined): string {
-  const text = normalizePlainText([
-    questionType,
-    String(metadata?.testSkill || ''),
-    String(metadata?.skillArea || ''),
-    String(metadata?.sectionTitle || ''),
-    String(metadata?.category || ''),
-  ].join(' '));
+  const text = normalizePlainText(
+    [
+      questionType,
+      String(metadata?.testSkill || ''),
+      String(metadata?.skillArea || ''),
+      String(metadata?.sectionTitle || ''),
+      String(metadata?.category || ''),
+    ].join(' '),
+  );
 
   if (text.includes('listening')) return 'listening_detail';
   if (text.includes('true_false') || text.includes('not_given')) return 'reading_evidence';
   if (text.includes('matching') || text.includes('gapped')) return 'reading_structure';
-  if (text.includes('gap') || text.includes('cloze') || text.includes('word') || text.includes('grammar')) return 'use_of_english';
+  if (text.includes('gap') || text.includes('cloze') || text.includes('word') || text.includes('grammar'))
+    return 'use_of_english';
   if (text.includes('reading')) return 'reading_prompt';
   return 'english_item_bank_practice';
 }
@@ -1268,13 +1291,18 @@ function misconceptionIdsFromQuestion(question: ErrorNotebookQuestion, domainId:
     if (text.includes('grammar') || text.includes('although')) return ['mis.eng.grammar_connector_confusion'];
     return [];
   }
-  if (text.includes('sqrt') || text.includes('rut gon') || text.includes('factor')) return ['mis.math.factor_vs_expand'];
+  if (text.includes('sqrt') || text.includes('rut gon') || text.includes('factor'))
+    return ['mis.math.factor_vs_expand'];
   if (text.includes('dieu kien') || text.includes('domain')) return ['mis.math.missing_domain_condition'];
   return ['mis.math.calculation_slip'];
 }
 
 function stableEventPart(value: string): string {
-  return String(value || '').replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'event';
+  return (
+    String(value || '')
+      .replace(/[^a-zA-Z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '') || 'event'
+  );
 }
 
 function normalizeDailyStepIds(values: unknown[]): DailyLoopStepId[] {

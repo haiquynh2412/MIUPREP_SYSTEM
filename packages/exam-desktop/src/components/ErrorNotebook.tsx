@@ -86,9 +86,7 @@ export default function ErrorNotebook({
                 </span>
               </div>
               <div className="text-slate-700 font-medium py-1">
-                <span className="font-bold text-accentdeep-900 block mb-1">
-                  Nội dung / Ngữ cảnh câu hỏi:
-                </span>
+                <span className="font-bold text-accentdeep-900 block mb-1">Nội dung / Ngữ cảnh câu hỏi:</span>
                 Cần trả lời chính xác thông tin dựa trên kiến thức đã ghi nhận trong bài thi gốc.
               </div>
               <div className="bg-red-50 border border-red-100 p-2.5 rounded">
@@ -298,9 +296,7 @@ export default function ErrorNotebook({
               </h3>
 
               <div className="flex flex-col gap-2">
-                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
-                  Bộ lọc câu hỏi
-                </span>
+                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Bộ lọc câu hỏi</span>
                 <div className="grid grid-cols-2 gap-2 bg-slate-100 p-1 rounded-md">
                   <button
                     onClick={() => setNotebookFilter('due')}
@@ -329,9 +325,7 @@ export default function ErrorNotebook({
                 <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
                   Số câu cần ôn hôm nay
                 </span>
-                <span className="text-4xl font-black text-rose-600 mt-1 animate-pulse">
-                  {getDueCount()}
-                </span>
+                <span className="text-4xl font-black text-rose-600 mt-1 animate-pulse">{getDueCount()}</span>
               </div>
 
               <button

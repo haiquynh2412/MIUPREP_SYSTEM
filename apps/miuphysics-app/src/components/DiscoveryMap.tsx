@@ -16,7 +16,7 @@ export default function DiscoveryMap({
   const getZoneProgress = (zone) => {
     const zoneChapterIds = zone.chapters;
     const gradeChapters = chapters.filter(
-      (ch) => zoneChapterIds.includes(ch.id) && (!selectedGrade || ch.grade === selectedGrade)
+      (ch) => zoneChapterIds.includes(ch.id) && (!selectedGrade || ch.grade === selectedGrade),
     );
     if (gradeChapters.length === 0) return { total: 0, correct: 0, progress: 0, chaptersInGrade: 0 };
 
@@ -28,9 +28,7 @@ export default function DiscoveryMap({
       const chQ = questions.filter((q) => q.chapter === ch.id);
       totalQ += chQ.length;
       const correctIds = new Set(
-        attempts
-          .filter((a) => a.payload?.chapter === ch.id && a.correct)
-          .map((a) => a.payload?.sourceId)
+        attempts.filter((a) => a.payload?.chapter === ch.id && a.correct).map((a) => a.payload?.sourceId),
       );
       correctQ += correctIds.size;
     });
@@ -54,7 +52,7 @@ export default function DiscoveryMap({
   // Filter zones that have chapters in the selected grade
   const visibleZones = zones.filter((zone) => {
     const gradeChapters = chapters.filter(
-      (ch) => zone.chapters.includes(ch.id) && (!selectedGrade || ch.grade === selectedGrade)
+      (ch) => zone.chapters.includes(ch.id) && (!selectedGrade || ch.grade === selectedGrade),
     );
     return gradeChapters.length > 0;
   });
@@ -66,7 +64,7 @@ export default function DiscoveryMap({
           const stats = getZoneProgress(zone);
           const isExpanded = expandedZone === zone.id;
           const zoneChaptersInGrade = chapters.filter(
-            (ch) => zone.chapters.includes(ch.id) && (!selectedGrade || ch.grade === selectedGrade)
+            (ch) => zone.chapters.includes(ch.id) && (!selectedGrade || ch.grade === selectedGrade),
           );
 
           return (
@@ -99,9 +97,7 @@ export default function DiscoveryMap({
                 {/* Curiosity Hook */}
                 <div className="zone-curiosity">
                   <span className="zone-curiosity-icon">💡</span>
-                  <p className="zone-curiosity-text">
-                    {lang === 'en' ? zone.curiosityHookEn : zone.curiosityHook}
-                  </p>
+                  <p className="zone-curiosity-text">{lang === 'en' ? zone.curiosityHookEn : zone.curiosityHook}</p>
                 </div>
 
                 {/* Progress */}
@@ -116,18 +112,14 @@ export default function DiscoveryMap({
                     <span className="zone-stat-chapters">
                       {stats.chaptersInGrade} {lang === 'en' ? 'chapters' : 'chương'}
                     </span>
-                    <span className="zone-stat-progress">
-                      {Math.round(stats.progress)}%
-                    </span>
+                    <span className="zone-stat-progress">{Math.round(stats.progress)}%</span>
                   </div>
                 </div>
 
                 {/* Badge preview */}
                 <div className="zone-badge-preview">
                   <span>{zone.badge.icon}</span>
-                  <span className="zone-badge-title">
-                    {lang === 'en' ? zone.badge.title : zone.badge.titleVn}
-                  </span>
+                  <span className="zone-badge-title">{lang === 'en' ? zone.badge.title : zone.badge.titleVn}</span>
                 </div>
 
                 {/* Expand indicator */}
@@ -143,9 +135,7 @@ export default function DiscoveryMap({
                     const chQ = questions.filter((q) => q.chapter === ch.id);
                     const attempts = learningState?.attempts || [];
                     const correctIds = new Set(
-                      attempts
-                        .filter((a) => a.payload?.chapter === ch.id && a.correct)
-                        .map((a) => a.payload?.sourceId)
+                      attempts.filter((a) => a.payload?.chapter === ch.id && a.correct).map((a) => a.payload?.sourceId),
                     );
                     const progress = chQ.length > 0 ? (correctIds.size / chQ.length) * 100 : 0;
 
@@ -163,9 +153,7 @@ export default function DiscoveryMap({
                       >
                         <span className="zone-chapter-icon">{ch.icon}</span>
                         <div className="zone-chapter-info">
-                          <div className="zone-chapter-name">
-                            {lang === 'en' ? ch.name : ch.nameVn}
-                          </div>
+                          <div className="zone-chapter-name">{lang === 'en' ? ch.name : ch.nameVn}</div>
                           <div className="zone-chapter-sub">
                             {correctIds.size}/{chQ.length} {lang === 'en' ? 'correct' : 'câu đúng'}
                           </div>

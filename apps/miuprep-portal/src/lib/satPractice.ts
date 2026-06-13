@@ -121,7 +121,10 @@ export function createSatErrorQuestion(question: SatQuestion, now = Date.now()):
   };
 }
 
-export function answerSatQuestion(state: SatPracticeState, choice: string): {
+export function answerSatQuestion(
+  state: SatPracticeState,
+  choice: string,
+): {
   currentQuestion: SatQuestion;
   isCorrect: boolean;
   nextState: SatPracticeState;
@@ -182,10 +185,12 @@ function inferSatErrorType(domain: string, skill: string): ErrorNotebookQuestion
 }
 
 function slugMeta(value: string): string {
-  return value
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_+|_+$/g, '')
-    .slice(0, 48) || 'untagged';
+  return (
+    value
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '')
+      .slice(0, 48) || 'untagged'
+  );
 }

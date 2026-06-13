@@ -16,17 +16,14 @@ export default defineConfig({
     navigationTimeout: 60000,
     // Mocks browser recording media APIs in Chromium for automated audio recording checks
     launchOptions: {
-      args: [
-        '--use-fake-ui-for-media-stream',
-        '--use-fake-device-for-media-stream'
-      ]
-    }
+      args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'],
+    },
   },
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    }
+    },
   ],
   webServer: {
     command: 'npm run dev',
