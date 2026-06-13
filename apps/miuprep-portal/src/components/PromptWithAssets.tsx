@@ -1,11 +1,23 @@
 import type { JSX } from 'react';
 import type { ReactNode } from 'react';
+import { renderMathCore } from '@miuprep/ui';
 
 const FORMULA_TOKEN_PATTERN = /\{\{formula:([^}|]+)(?:\|w=(\d+))?(?:\|h=(\d+))?\}\}/g;
 
 interface PromptWithAssetsProps {
   text: string;
   className?: string;
+}
+
+// Render a plain text segment. If it contains $...$ / $$...$$ math delimiters,
+// render those via KaTeX (so content can replace a formula <img> with inline
+// LaTeX that draws natively — no image needed). Text WITHOUT $ stays a normal
+// React text node so it is HTML-escaped (keeps inequalities like "x < 5" safe).
+function TextSegment({ text }: { text: string }): JSX.Element {
+  if (!text.includes('$')) {
+    return <span>{text}</span>;
+  }
+  return <span dangerouslySetInnerHTML={{ __html: renderMathCore(text) }} />;
 }
 
 export default function PromptWithAssets({ text, className }: PromptWithAssetsProps): JSX.Element {
@@ -16,7 +28,7 @@ export default function PromptWithAssets({ text, className }: PromptWithAssetsPr
   for (const match of promptText.matchAll(FORMULA_TOKEN_PATTERN)) {
     const index = match.index ?? 0;
     if (index > cursor) {
-      nodes.push(<span key={`text-${cursor}`}>{promptText.slice(cursor, index)}</span>);
+      nodes.push(<TextSegment key={`text-${cursor}`} text={promptText.slice(cursor, index)} />);
     }
 
     const src = match[1] || '';
@@ -42,8 +54,8 @@ export default function PromptWithAssets({ text, className }: PromptWithAssetsPr
   }
 
   if (cursor < promptText.length) {
-    nodes.push(<span key={`text-${cursor}`}>{promptText.slice(cursor)}</span>);
+    nodes.push(<TextSegment key={`text-${cursor}`} text={promptText.slice(cursor)} />);
   }
 
-  return <div className={className}>{nodes.length ? nodes : promptText}</div>;
+  return <div className={className}>{nodes.length ? nodes : <TextSegment text={promptText} />}</div>;
 }
