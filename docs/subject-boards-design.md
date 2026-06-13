@@ -63,10 +63,20 @@ UI:
 
 ### 1. Math board — DO FIRST (biggest content, no AI, ready)
 
-- Mount `MathPracticeRoom` + `MathExamRoom` + `MathErrorNotebook` from miumath-app.
-- Content: `vn_math_*` (grades 1–12) already in `@miuprep/content`.
-- Glue: portal account + learning events. **No AI, no backend needed** → shippable now.
-- Effort: **Medium**. Risk: low (auto-scored, content ready).
+- Content: `vn_math_*` (grades 1–12) already in `@miuprep/content`. No AI/backend → shippable offline.
+- **Scoping finding (14/06):** `MathPracticeRoom` is a presentational component
+  taking **~25 props** driven by miumath's full App controller (own auth
+  `MiuMathUser`, own coins, own content loader). So "mounting" is NOT a 1-line
+  component import — two real options:
+  - **(A) Adapt miumath `App` to accept an injected portal user** (skip its
+    auth screen, share portal coins/account) and render it in a `math-board`
+    tab. Smaller blast radius; miumath keeps its internal state.
+  - **(B) Port miumath's controller** into a portal `MathBoardWorkspace`
+    (like `StudentSatBoardWorkspace`). Cleaner long-term, larger.
+- **Recommendation: (A) first** (fastest path to "math in portal, one login"),
+  refactor toward (B) later.
+- Effort: **Medium-Large** (multi-step; needs auth/account injection + a content
+  loader bridge). Best as a focused build, not a tail-end task.
 
 ### 2. Physics board — EASY WIN (self-contained, gamified, no AI)
 
