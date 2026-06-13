@@ -92,6 +92,8 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
   - [ ] Bước 4: hợp nhất App.tsx → 1 app duy nhất build 2 bản theo track; Tauri build thật kiểm tra thủ công
 - [ ] **2.1.4. Xóa 2 app cũ sau 2 tuần chạy song song không lỗi**
 
+- [~] **2.1.5. (MỚI) Tích hợp track→board portal cho web (login 1 lần, học nhiều môn)** *(13/06/2026 — quyết định kiến trúc cho deploy web tuonglai.wallart.vn: hội tụ về MỘT portal web-native, mỗi môn là module trong portal dùng chung engine/auth/i18n (desktop Tauri không chạy web). **Phase 1 XONG:** chuyển "track launcher" (LỰA CHỌN PHÂN HỆ) lên màn OVERVIEW/landing; bỏ alert "coming soon"; mỗi card dẫn thẳng vào học: SAT→sat-board, Toán/IELTS/CAE/CPE→tab COURSES (panel học môn đó). Test: tsc/lint 0 lỗi, build:app PASS, verify student: launcher hiện ở landing + click Toán→vào courses panel, 0 console error. **Phase 2 (sau):** nâng practice Toán/English thành board adaptive như SAT (chuẩn hóa qua 1 component SubjectBoard, tái dùng @miuprep/learning). **Phase 3:** backend 2.4 cho lưu trữ/đa thiết bị/chấm AI an toàn trên web.)*
+
 ### 2.2. Tách content khỏi source code & sửa tầng lưu trữ
 
 > **Hiệu chỉnh 11/06/2026:** số liệu "700k dòng" trong audit ban đầu là nhầm bytes thành dòng — `math6-enrichment.ts` thực tế 11.9k dòng (~700KB), `knowledge/index.ts` 2.8k dòng. Mức ưu tiên 2.2.1/2.2.2 hạ xuống. Vấn đề thật của tầng lưu trữ là quota localStorage (đã xử lý ở 2.2.0).

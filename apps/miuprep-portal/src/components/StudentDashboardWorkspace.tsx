@@ -198,6 +198,47 @@ export default function StudentDashboardWorkspace({
       />
     </DeferredPanel>
 
+    <div>
+      <h2 className="text-2xl font-black mb-6 text-center sm:text-left text-slate-200 uppercase tracking-widest flex items-center gap-2">
+        <span>🚀 LỰA CHỌN PHÂN HỆ HỌC TẬP</span>
+        <span className="text-xs bg-slate-900 border border-slate-800 text-slate-400 font-bold px-2 py-0.5 rounded-full">{tracks.length} TRACKS ACTIVE</span>
+      </h2>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {tracks.map((track) => (
+          <div
+            key={track.id}
+            onMouseEnter={() => setHoveredTrack(track.id)}
+            onMouseLeave={() => setHoveredTrack(null)}
+            className={`border border-slate-800 bg-slate-950/60 rounded-3xl p-6 flex flex-col gap-4 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl shadow-inner relative overflow-hidden bg-gradient-to-br ${track.colorClass}`}
+          >
+            <div className="flex items-start justify-between">
+              <div className="flex flex-col gap-1 text-left">
+                <span className="text-xs font-black uppercase tracking-wider text-indigo-400">{track.subtitle}</span>
+                <h3 className="text-2xl font-black tracking-tight text-white flex items-center gap-2">{track.title}</h3>
+              </div>
+              <span className="text-4xl bg-slate-900/40 p-3 rounded-2xl border border-white/5">{track.icon}</span>
+            </div>
+            <p className="text-slate-300 text-sm leading-relaxed flex-1 text-left">{track.description}</p>
+            <div className="text-[10px] font-bold text-slate-400 bg-slate-900/40 px-3 py-1.5 rounded-lg border border-white/5 self-start">{track.badge}</div>
+            <button
+              onClick={() => {
+                if (track.id === 'sat') {
+                  setActiveStudentTab('sat-board');
+                  showNotif(t('sdw_notif_open_sat'), 'success');
+                } else {
+                  setStudentWorkspaceTab('courses');
+                }
+              }}
+              className="mt-2 w-full py-3 rounded-xl font-bold bg-white text-slate-950 hover:bg-slate-100 transition-colors shadow flex items-center justify-center gap-2 hover:scale-[0.99] active:scale-95 duration-100 border-0 cursor-pointer"
+            >
+              <span>{track.buttonText}</span>
+              <span>➔</span>
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+
     <section className="grid grid-cols-1 sm:grid-cols-3 gap-6">
       {/* Salmon Coins */}
       <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 flex items-center justify-between shadow hover:border-emerald-500/40 transition-colors bg-gradient-to-tr from-slate-900 to-teal-950/20">
@@ -459,56 +500,6 @@ export default function StudentDashboardWorkspace({
           </DeferredPanel>
         </>
       )}
-      <div>
-      <h2 className="text-2xl font-black mb-6 text-center sm:text-left text-slate-200 uppercase tracking-widest flex items-center gap-2">
-        <span>🚀 LỰA CHỌN PHÂN HỆ HỌC TẬP</span>
-        <span className="text-xs bg-slate-900 border border-slate-800 text-slate-400 font-bold px-2 py-0.5 rounded-full">5 TRACKS ACTIVE</span>
-      </h2>
-      
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {tracks.map(track => (
-          <div
-            key={track.id}
-            onMouseEnter={() => setHoveredTrack(track.id)}
-            onMouseLeave={() => setHoveredTrack(null)}
-            className={`border border-slate-800 bg-slate-950/60 rounded-3xl p-6 flex flex-col gap-4 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl shadow-inner relative overflow-hidden bg-gradient-to-br ${track.colorClass}`}
-          >
-            <div className="flex items-start justify-between">
-              <div className="flex flex-col gap-1 text-left">
-                <span className="text-xs font-black uppercase tracking-wider text-indigo-400">{track.subtitle}</span>
-                <h3 className="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-                  {track.title}
-                </h3>
-              </div>
-              <span className="text-4xl bg-slate-900/40 p-3 rounded-2xl border border-white/5">{track.icon}</span>
-            </div>
-
-            <p className="text-slate-300 text-sm leading-relaxed flex-1 text-left">
-              {track.description}
-            </p>
-
-            <div className="text-[10px] font-bold text-slate-400 bg-slate-900/40 px-3 py-1.5 rounded-lg border border-white/5 self-start">
-              {track.badge}
-            </div>
-
-            <button 
-              onClick={() => {
-                if (track.id === 'sat') {
-                  setActiveStudentTab('sat-board');
-                  showNotif(t('sdw_notif_open_sat'), "success");
-                } else {
-                  alert(t('sdw_alert_track_compiling', { title: track.title }));
-                }
-              }}
-              className="mt-2 w-full py-3 rounded-xl font-bold bg-white text-slate-950 hover:bg-slate-100 transition-colors shadow flex items-center justify-center gap-2 hover:scale-[0.99] active:scale-95 duration-100 border-0 cursor-pointer"
-            >
-              <span>{track.buttonText}</span>
-              <span>➔</span>
-            </button>
-          </div>
-        ))}
-      </div>
-      </div>
     </section>
     )}
 
