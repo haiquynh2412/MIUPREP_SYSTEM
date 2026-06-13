@@ -1,3 +1,4 @@
+import { useTranslation } from '@miuprep/i18n/src/react';
 import type { LocalUser } from '@miuprep/db';
 import {
   ensureEditableExamSections,
@@ -36,31 +37,31 @@ interface AdminContentReviewPanelProps {
 
 const REVIEW_FILTERS: Array<{
   id: ContentReviewFilter;
-  label: string;
+  labelKey: string;
   countKey: keyof Pick<ContentReviewSummary, 'totalExams' | 'unchecked' | 'needsFix' | 'checked'>;
 }> = [
-  { id: 'all', label: 'All', countKey: 'totalExams' },
-  { id: 'unchecked', label: 'Draft', countKey: 'unchecked' },
-  { id: 'needs_fix', label: 'Needs Fix', countKey: 'needsFix' },
-  { id: 'checked', label: 'Checked', countKey: 'checked' },
+  { id: 'all', labelKey: 'acr_filter_all', countKey: 'totalExams' },
+  { id: 'unchecked', labelKey: 'acr_filter_draft', countKey: 'unchecked' },
+  { id: 'needs_fix', labelKey: 'acr_filter_needs_fix', countKey: 'needsFix' },
+  { id: 'checked', labelKey: 'acr_filter_checked', countKey: 'checked' },
 ];
 
 const REVIEW_METRICS: Array<{
-  label: string;
+  labelKey: string;
   key: keyof ContentReviewSummary;
   tone: string;
 }> = [
-  { label: 'Exams', key: 'totalExams', tone: 'text-indigo-300' },
-  { label: 'Questions', key: 'totalQuestions', tone: 'text-cyan-300' },
-  { label: 'Checked', key: 'checked', tone: 'text-emerald-300' },
-  { label: 'Needs fix', key: 'needsFix', tone: 'text-rose-300' },
-  { label: 'Draft', key: 'unchecked', tone: 'text-amber-300' },
+  { labelKey: 'acr_metric_exams', key: 'totalExams', tone: 'text-indigo-300' },
+  { labelKey: 'acr_metric_questions', key: 'totalQuestions', tone: 'text-cyan-300' },
+  { labelKey: 'acr_metric_checked', key: 'checked', tone: 'text-emerald-300' },
+  { labelKey: 'acr_metric_needs_fix', key: 'needsFix', tone: 'text-rose-300' },
+  { labelKey: 'acr_metric_draft', key: 'unchecked', tone: 'text-amber-300' },
 ];
 
-function renderReviewStatus(status: ImportedExam['reviewStatus']) {
-  if (status === 'checked') return 'checked';
-  if (status === 'needs_fix') return 'needs fix';
-  return 'unchecked';
+function reviewStatusKey(status: ImportedExam['reviewStatus']) {
+  if (status === 'checked') return 'acr_status_checked';
+  if (status === 'needs_fix') return 'acr_status_needs_fix';
+  return 'acr_status_unchecked';
 }
 
 function reviewStatusClass(status: ImportedExam['reviewStatus']) {
@@ -96,18 +97,23 @@ export default function AdminContentReviewPanel({
   onAddQuestion,
   onRemoveQuestion,
 }: AdminContentReviewPanelProps) {
+  const { t } = useTranslation();
   const trackLabel = track.toUpperCase();
   const activeDraft = examDraft && examDraft.exam.toLowerCase() === track ? examDraft : null;
 
   return (
     <div className="lg:col-span-2 space-y-4">
       <h4 className="text-xs font-bold uppercase tracking-wider text-indigo-400 font-sans">
-        Danh sách đề thi thử {trackLabel} hiện hành
+        {t('acr_exam_list_heading', { track: trackLabel })}
       </h4>
 
       <div className="flex flex-col xl:flex-row xl:items-end justify-between gap-4">
         <p className="text-[11px] text-slate-500 mt-0 mb-0">
-          Review progress {reviewSummary.completionRate}% - {reviewSummary.checked}/{reviewSummary.totalExams} checked
+          {t('acr_review_progress', {
+            rate: reviewSummary.completionRate,
+            checked: reviewSummary.checked,
+            total: reviewSummary.totalExams,
+          })}
         </p>
         <div className="flex flex-wrap gap-2">
           <button
@@ -115,7 +121,7 @@ export default function AdminContentReviewPanel({
             onClick={onExportReviewSet}
             className="px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase cursor-pointer transition-all bg-emerald-500 text-slate-950 border-emerald-300 hover:bg-emerald-400"
           >
-            Export review set
+            {t('acr_export_review_set')}
           </button>
           {REVIEW_FILTERS.map((filter) => (
             <button
@@ -128,7 +134,7 @@ export default function AdminContentReviewPanel({
                   : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-indigo-300 hover:border-indigo-900'
               }`}
             >
-              {filter.label} {reviewSummary[filter.countKey]}
+              {t(filter.labelKey)} {reviewSummary[filter.countKey]}
             </button>
           ))}
         </div>
@@ -136,8 +142,8 @@ export default function AdminContentReviewPanel({
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
         {REVIEW_METRICS.map((metric) => (
-          <div key={metric.label} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-3">
-            <p className="text-[9px] uppercase tracking-widest text-slate-500 font-black m-0">{metric.label}</p>
+          <div key={metric.labelKey} className="bg-slate-950/60 border border-slate-850 rounded-2xl p-3">
+            <p className="text-[9px] uppercase tracking-widest text-slate-500 font-black m-0">{t(metric.labelKey)}</p>
             <p className={`text-xl font-black mt-1 mb-0 ${metric.tone}`}>{reviewSummary[metric.key]}</p>
           </div>
         ))}
@@ -147,20 +153,20 @@ export default function AdminContentReviewPanel({
         <table className="w-full border-collapse text-xs text-left">
           <thead>
             <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-bold font-sans">
-              <th className="p-3">Tên đề thi</th>
-              <th className="p-3">Hệ đề</th>
-              <th className="p-3">Số câu</th>
-              <th className="p-3">Thời gian</th>
-              <th className="p-3">Trạng thái</th>
-              <th className="p-3">Review</th>
-              <th className="p-3 text-center">Action</th>
+              <th className="p-3">{t('acr_col_exam_name')}</th>
+              <th className="p-3">{t('acr_col_track')}</th>
+              <th className="p-3">{t('acr_col_questions')}</th>
+              <th className="p-3">{t('acr_col_duration')}</th>
+              <th className="p-3">{t('acr_col_status')}</th>
+              <th className="p-3">{t('acr_col_review')}</th>
+              <th className="p-3 text-center">{t('acr_col_action')}</th>
             </tr>
           </thead>
           <tbody>
             {filteredExams.length === 0 ? (
               <tr>
                 <td className="p-6 text-center text-slate-500 font-bold" colSpan={7}>
-                  No exams match this review filter.
+                  {t('acr_no_exams_match')}
                 </td>
               </tr>
             ) : (
@@ -168,8 +174,8 @@ export default function AdminContentReviewPanel({
                 <tr key={exam.id} className="border-b border-slate-850/60 hover:bg-slate-900/40 font-sans">
                   <td className="p-3 font-bold text-slate-200">{exam.title}</td>
                   <td className="p-3 font-mono text-indigo-400">{exam.exam}</td>
-                  <td className="p-3 text-slate-350">{exam.questions} câu</td>
-                  <td className="p-3 text-slate-350">{exam.duration} phút</td>
+                  <td className="p-3 text-slate-350">{t('acr_questions_count', { count: exam.questions })}</td>
+                  <td className="p-3 text-slate-350">{t('acr_minutes_count', { count: exam.duration })}</td>
                   <td className="p-3">
                     <span className="text-[9px] bg-emerald-950/70 border border-emerald-900 text-emerald-400 px-2 py-0.5 rounded-full uppercase font-bold">
                       {exam.status}
@@ -177,7 +183,7 @@ export default function AdminContentReviewPanel({
                   </td>
                   <td className="p-3">
                     <span className={`text-[9px] px-2 py-0.5 rounded-full uppercase font-black border ${reviewStatusClass(exam.reviewStatus)}`}>
-                      {renderReviewStatus(exam.reviewStatus)}
+                      {t(reviewStatusKey(exam.reviewStatus))}
                     </span>
                   </td>
                   <td className="p-3 text-center">
@@ -190,7 +196,7 @@ export default function AdminContentReviewPanel({
                           : 'bg-slate-950 text-indigo-300 border-indigo-900 hover:bg-indigo-950/60'
                       }`}
                     >
-                      Mở / Sửa
+                      {t('acr_open_edit')}
                     </button>
                   </td>
                 </tr>
@@ -204,10 +210,14 @@ export default function AdminContentReviewPanel({
         <div className="bg-slate-950/70 border border-indigo-900/50 rounded-3xl p-5 space-y-5 shadow-xl">
           <div className="flex flex-col xl:flex-row xl:items-start justify-between gap-4">
             <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.16em] text-indigo-300 m-0">Content Review Editor</p>
+              <p className="text-[10px] font-black uppercase tracking-[0.16em] text-indigo-300 m-0">{t('acr_editor_title')}</p>
               <h4 className="text-lg font-black text-slate-100 mt-1 mb-0">{activeDraft.title}</h4>
               <p className="text-[11px] text-slate-500 mt-1 mb-0 font-mono">
-                {activeDraft.id} · {activeDraft.exam} · reviewer: {activeDraft.reviewer || currentUser?.username || 'admin'}
+                {t('acr_editor_meta', {
+                  id: activeDraft.id,
+                  exam: activeDraft.exam,
+                  reviewer: activeDraft.reviewer || currentUser?.username || 'admin',
+                })}
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -216,42 +226,42 @@ export default function AdminContentReviewPanel({
                 onClick={() => onSaveDraft('unchecked')}
                 className="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-[10px] font-black uppercase cursor-pointer"
               >
-                Save Draft
+                {t('acr_save_draft')}
               </button>
               <button
                 type="button"
                 onClick={() => onSaveDraft('needs_fix')}
                 className="px-3 py-2 rounded-xl bg-rose-950/70 hover:bg-rose-900 text-rose-300 border border-rose-900 text-[10px] font-black uppercase cursor-pointer"
               >
-                Mark Needs Fix
+                {t('acr_mark_needs_fix')}
               </button>
               <button
                 type="button"
                 onClick={() => onSaveDraft('checked')}
                 className="px-3 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 border border-emerald-300 text-[10px] font-black uppercase cursor-pointer"
               >
-                Save & Checked
+                {t('acr_save_checked')}
               </button>
               <button
                 type="button"
                 onClick={onExportChangeSet}
                 className="px-3 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 border border-cyan-300 text-[10px] font-black uppercase cursor-pointer"
               >
-                Export Change Set
+                {t('acr_export_change_set')}
               </button>
               <button
                 type="button"
                 onClick={onCloseDraft}
                 className="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-[10px] font-black uppercase cursor-pointer"
               >
-                Close
+                {t('acr_close')}
               </button>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-[1fr_120px_120px] gap-3">
             <div>
-              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Exam title</label>
+              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_exam_title')}</label>
               <input
                 value={activeDraft.title}
                 onChange={(event) => onUpdateDraft({ title: event.target.value })}
@@ -259,7 +269,7 @@ export default function AdminContentReviewPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Questions</label>
+              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_questions')}</label>
               <input
                 type="number"
                 min={1}
@@ -269,7 +279,7 @@ export default function AdminContentReviewPanel({
               />
             </div>
             <div>
-              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Minutes</label>
+              <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_minutes')}</label>
               <input
                 type="number"
                 min={1}
@@ -285,7 +295,7 @@ export default function AdminContentReviewPanel({
               <div key={`${section.id}-${sectionIndex}`} className="bg-slate-900/70 border border-slate-800 rounded-2xl p-4 space-y-3">
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3 items-end">
                   <div>
-                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Section title</label>
+                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_section_title')}</label>
                     <input
                       value={section.title}
                       onChange={(event) => onUpdateSection(sectionIndex, { title: event.target.value })}
@@ -297,13 +307,13 @@ export default function AdminContentReviewPanel({
                     onClick={() => onAddQuestion(sectionIndex)}
                     className="px-3 py-2 rounded-xl bg-indigo-950 hover:bg-indigo-900 text-indigo-300 border border-indigo-900 text-[10px] font-black uppercase cursor-pointer"
                   >
-                    Add Question
+                    {t('acr_add_question')}
                   </button>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Passage / prompt context</label>
+                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_passage')}</label>
                     <textarea
                       rows={3}
                       value={section.passageHtml || ''}
@@ -312,7 +322,7 @@ export default function AdminContentReviewPanel({
                     />
                   </div>
                   <div>
-                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">Transcript / listening text</label>
+                    <label className="text-[9px] text-slate-500 font-black uppercase block mb-1">{t('acr_label_transcript')}</label>
                     <textarea
                       rows={3}
                       value={section.transcript || ''}
@@ -325,7 +335,7 @@ export default function AdminContentReviewPanel({
                 <div className="space-y-3">
                   {section.questions.length === 0 ? (
                     <div className="border border-dashed border-slate-750 rounded-xl p-4 text-[11px] text-slate-500">
-                      Đề này đang ở dạng summary. Bấm Add Question để nhập nội dung câu hỏi trực tiếp, hoặc import JSON đầy đủ để có section/question tự động.
+                      {t('acr_empty_questions_hint')}
                     </div>
                   ) : (
                     section.questions.map((question, questionIndex) => (
@@ -345,7 +355,7 @@ export default function AdminContentReviewPanel({
                           <input
                             value={question.answer}
                             onChange={(event) => onUpdateQuestion(sectionIndex, questionIndex, { answer: event.target.value })}
-                            placeholder="Answer"
+                            placeholder={t('acr_placeholder_answer')}
                             className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-emerald-300 font-mono outline-none"
                           />
                           <button
@@ -353,7 +363,7 @@ export default function AdminContentReviewPanel({
                             onClick={() => onRemoveQuestion(sectionIndex, questionIndex)}
                             className="px-2 py-2 rounded-lg bg-rose-950/50 hover:bg-rose-900 text-rose-300 border border-rose-900 text-[10px] font-black cursor-pointer"
                           >
-                            Remove
+                            {t('acr_remove')}
                           </button>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -368,14 +378,14 @@ export default function AdminContentReviewPanel({
                                   .filter(Boolean),
                               })
                             }
-                            placeholder="Options, one per line"
+                            placeholder={t('acr_placeholder_options')}
                             className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-slate-300 outline-none resize-y"
                           />
                           <textarea
                             rows={2}
                             value={question.note || ''}
                             onChange={(event) => onUpdateQuestion(sectionIndex, questionIndex, { note: event.target.value })}
-                            placeholder="Content note / explanation"
+                            placeholder={t('acr_placeholder_note')}
                             className="bg-slate-900 border border-slate-800 rounded-lg px-2 py-2 text-[11px] text-slate-300 outline-none resize-y"
                           />
                         </div>
@@ -393,14 +403,14 @@ export default function AdminContentReviewPanel({
               onClick={onAddSection}
               className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-[10px] font-black uppercase cursor-pointer"
             >
-              Add Section
+              {t('acr_add_section')}
             </button>
             <button
               type="button"
               onClick={() => onSaveDraft('unchecked')}
               className="px-5 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-slate-950 border border-indigo-300 text-[10px] font-black uppercase cursor-pointer"
             >
-              Save Draft
+              {t('acr_save_draft')}
             </button>
           </div>
         </div>
