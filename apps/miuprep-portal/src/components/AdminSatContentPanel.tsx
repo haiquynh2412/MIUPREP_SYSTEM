@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useTranslation } from '@miuprep/i18n/src/react';
 import type { SatQuestion } from '../lib/satPractice';
 import PromptWithAssets from './PromptWithAssets';
 
@@ -29,14 +30,14 @@ interface AdminSatContentPanelProps {
 }
 
 const SAT_BANK_OPTIONS = [
-  { value: 'sat-1590-elite-ai-bank.json', label: 'Elite AI Bank (661 câu)' },
-  { value: 'antigravity-bank.json', label: 'Antigravity Bank (7,158 câu)' },
-  { value: 'opensat-pinesat.json', label: 'OpenSAT Pinesat (1,026 câu)' },
-  { value: 'sat-king-supplemental-ai-bank.json', label: 'Supplemental AI Bank (354 câu)' },
-  { value: 'archive-source-ai-bank.json', label: 'Archive AI Bank (792 câu)' },
-  { value: 'sat-studio-foundation-bank.json', label: 'Foundation Bank (219 câu)' },
-  { value: 'private-vault-archive-bank.json', label: 'Private Vault Bank (165 câu)' },
-  { value: 'kaplan-sat-math-ai-bank.json', label: 'Kaplan Math AI Bank (148 câu)' },
+  { value: 'sat-1590-elite-ai-bank.json', labelKey: 'asc_bank_label_elite', name: 'Elite AI Bank', count: '661' },
+  { value: 'antigravity-bank.json', labelKey: 'asc_bank_label_antigravity', name: 'Antigravity Bank', count: '7,158' },
+  { value: 'opensat-pinesat.json', labelKey: 'asc_bank_label_opensat', name: 'OpenSAT Pinesat', count: '1,026' },
+  { value: 'sat-king-supplemental-ai-bank.json', labelKey: 'asc_bank_label_supplemental', name: 'Supplemental AI Bank', count: '354' },
+  { value: 'archive-source-ai-bank.json', labelKey: 'asc_bank_label_archive', name: 'Archive AI Bank', count: '792' },
+  { value: 'sat-studio-foundation-bank.json', labelKey: 'asc_bank_label_foundation', name: 'Foundation Bank', count: '219' },
+  { value: 'private-vault-archive-bank.json', labelKey: 'asc_bank_label_private_vault', name: 'Private Vault Bank', count: '165' },
+  { value: 'kaplan-sat-math-ai-bank.json', labelKey: 'asc_bank_label_kaplan', name: 'Kaplan Math AI Bank', count: '148' },
 ];
 
 const SAT_DOMAIN_OPTIONS = [
@@ -51,12 +52,12 @@ const SAT_DOMAIN_OPTIONS = [
 ];
 
 const INTEGRITY_BANKS = [
-  { name: 'antigravity-bank.json', size: '50.5 MB', count: '7,158 câu', type: 'Ngân hàng gốc siêu cấp', cert: 'College Board Aligned', status: 'Healthy - Active' },
-  { name: 'opensat-pinesat.json', size: '9.3 MB', count: '1,026 câu', type: 'Đề thi adaptive practice', cert: 'Bluebook Aligned', status: 'Healthy - Active' },
-  { name: 'sat-1590-elite-ai-bank.json', size: '5.1 MB', count: '661 câu', type: 'Tinh hoa AI 1590', cert: 'Strict 1600 Audit', status: 'Healthy - Active' },
-  { name: 'sat-king-supplemental-ai-bank.json', size: '2.9 MB', count: '354 câu', type: 'Bổ sung AI King Pack', cert: 'Passed AutoCheck', status: 'Healthy - Active' },
-  { name: 'archive-source-ai-bank.json', size: '6.7 MB', count: '792 câu', type: 'Kho lưu trữ đặc biệt', cert: 'Curriculum Metadata Aligned', status: 'Healthy - Active' },
-  { name: 'canonical-sat-taxonomy.json', size: '16.5 KB', count: '518 dòng', type: 'Sơ đồ chuyên đề chuẩn', cert: 'Official Taxonomy v3', status: 'Healthy - Active' },
+  { name: 'antigravity-bank.json', size: '50.5 MB', countNum: '7,158', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_antigravity', certKey: 'asc_integrity_cert_college_board', statusKey: 'asc_integrity_status_healthy' },
+  { name: 'opensat-pinesat.json', size: '9.3 MB', countNum: '1,026', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_opensat', certKey: 'asc_integrity_cert_bluebook', statusKey: 'asc_integrity_status_healthy' },
+  { name: 'sat-1590-elite-ai-bank.json', size: '5.1 MB', countNum: '661', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_elite', certKey: 'asc_integrity_cert_strict_1600', statusKey: 'asc_integrity_status_healthy' },
+  { name: 'sat-king-supplemental-ai-bank.json', size: '2.9 MB', countNum: '354', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_king_pack', certKey: 'asc_integrity_cert_autocheck', statusKey: 'asc_integrity_status_healthy' },
+  { name: 'archive-source-ai-bank.json', size: '6.7 MB', countNum: '792', countKey: 'asc_integrity_count_cau', typeKey: 'asc_integrity_type_archive', certKey: 'asc_integrity_cert_curriculum', statusKey: 'asc_integrity_status_healthy' },
+  { name: 'canonical-sat-taxonomy.json', size: '16.5 KB', countNum: '518', countKey: 'asc_integrity_count_dong', typeKey: 'asc_integrity_type_taxonomy', certKey: 'asc_integrity_cert_official_taxonomy', statusKey: 'asc_integrity_status_healthy' },
 ];
 
 function difficultyClass(difficulty?: string) {
@@ -65,11 +66,11 @@ function difficultyClass(difficulty?: string) {
   return 'bg-emerald-950 border-emerald-900 text-emerald-400';
 }
 
-function getExplanation(question: AdminSatQuestion): string {
+function getExplanation(question: AdminSatQuestion, noExplanationText: string): string {
   if (typeof question.explanation === 'object') {
     return question.explanation.correct || JSON.stringify(question.explanation);
   }
-  return question.explanation || 'Chưa có giải thích.';
+  return question.explanation || noExplanationText;
 }
 
 export default function AdminSatContentPanel({
@@ -94,6 +95,7 @@ export default function AdminSatContentPanel({
   onSetSatIrtAlpha,
   onTriggerIrtCalibration,
 }: AdminSatContentPanelProps) {
+  const { t } = useTranslation();
   const filteredQuestions = useMemo(() => {
     const query = adminSearchQuery.trim().toLowerCase();
     return loadedQuestions.filter((question) => {
@@ -112,9 +114,9 @@ export default function AdminSatContentPanel({
     <div className="space-y-6 text-left">
       <div className="flex bg-slate-950 p-1.5 rounded-2xl border border-slate-850 gap-2 self-start inline-flex">
         {[
-          { id: 'explorer' as const, label: 'Duyệt câu hỏi' },
-          { id: 'integrity' as const, label: 'Tính toàn vẹn' },
-          { id: 'calibration' as const, label: 'Hiệu chuẩn' },
+          { id: 'explorer' as const, label: t('asc_tab_explorer') },
+          { id: 'integrity' as const, label: t('asc_tab_integrity') },
+          { id: 'calibration' as const, label: t('asc_tab_calibration') },
         ].map((tab) => (
           <button
             key={tab.id}
@@ -133,7 +135,7 @@ export default function AdminSatContentPanel({
         <div className="space-y-6">
           <div className="bg-slate-955 p-5 rounded-3xl border border-slate-850 grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Chọn ngân hàng</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('asc_label_select_bank')}</label>
               <select
                 value={adminSelectedSatBank}
                 onChange={(event) => {
@@ -144,14 +146,14 @@ export default function AdminSatContentPanel({
               >
                 {SAT_BANK_OPTIONS.map((bank) => (
                   <option key={bank.value} value={bank.value}>
-                    {bank.label}
+                    {t(bank.labelKey, { name: bank.name, count: bank.count })}
                   </option>
                 ))}
               </select>
             </div>
 
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Lọc theo domain</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('asc_label_filter_domain')}</label>
               <select
                 value={adminSelectedDomain}
                 onChange={(event) => {
@@ -161,7 +163,7 @@ export default function AdminSatContentPanel({
                 }}
                 className="w-full bg-slate-900 border border-slate-800 text-slate-200 rounded-xl px-3 py-2 text-xs font-bold outline-none cursor-pointer focus:border-rose-500"
               >
-                <option value="all">Tất cả domains</option>
+                <option value="all">{t('asc_option_all_domains')}</option>
                 {SAT_DOMAIN_OPTIONS.map((domain) => (
                   <option key={domain} value={domain}>
                     {domain}
@@ -171,10 +173,10 @@ export default function AdminSatContentPanel({
             </div>
 
             <div>
-              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">Tìm kiếm từ khóa</label>
+              <label className="text-[9px] text-slate-500 font-bold uppercase block mb-1">{t('asc_label_search_keyword')}</label>
               <input
                 type="text"
-                placeholder="Nhập ID hoặc từ khóa..."
+                placeholder={t('asc_placeholder_search')}
                 value={adminSearchQuery}
                 onChange={(event) => {
                   onSetAdminSearchQuery(event.target.value);
@@ -186,7 +188,7 @@ export default function AdminSatContentPanel({
 
             <div className="text-right shrink-0">
               <span className="text-[10px] font-black text-rose-455 font-mono bg-rose-955 border border-rose-900/40 px-3 py-2 rounded-xl block text-center">
-                Tổng lọc: {filteredQuestions.length} / {loadedQuestions.length} câu
+                {t('asc_filter_total', { filtered: filteredQuestions.length, total: loadedQuestions.length })}
               </span>
             </div>
           </div>
@@ -196,20 +198,20 @@ export default function AdminSatContentPanel({
               <table className="w-full border-collapse text-left text-xs text-slate-350">
                 <thead>
                   <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-black uppercase font-sans">
-                    <th className="p-3">ID</th>
-                    <th className="p-3">Phân loại / Domain</th>
-                    <th className="p-3">Chuyên đề / Skill</th>
-                    <th className="p-3">Nội dung câu hỏi</th>
-                    <th className="p-3">Độ khó</th>
-                    <th className="p-3 text-center">Đáp án</th>
-                    <th className="p-3 text-center">Thao tác</th>
+                    <th className="p-3">{t('asc_th_id')}</th>
+                    <th className="p-3">{t('asc_th_domain')}</th>
+                    <th className="p-3">{t('asc_th_skill')}</th>
+                    <th className="p-3">{t('asc_th_content')}</th>
+                    <th className="p-3">{t('asc_th_difficulty')}</th>
+                    <th className="p-3 text-center">{t('asc_th_answer')}</th>
+                    <th className="p-3 text-center">{t('asc_th_action')}</th>
                   </tr>
                 </thead>
                 <tbody>
                   {pageItems.length === 0 ? (
                     <tr>
                       <td colSpan={7} className="p-8 text-center text-slate-500 italic">
-                        Không tìm thấy câu hỏi SAT nào.
+                        {t('asc_empty_no_questions')}
                       </td>
                     </tr>
                   ) : (
@@ -239,7 +241,7 @@ export default function AdminSatContentPanel({
                             onClick={() => onSetActiveQuestionDetail(question)}
                             className="px-2.5 py-1 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-lg text-[10px] font-black uppercase cursor-pointer transition-all"
                           >
-                            Duyệt
+                            {t('asc_btn_review')}
                           </button>
                         </td>
                       </tr>
@@ -251,7 +253,7 @@ export default function AdminSatContentPanel({
 
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-800">
               <span className="text-[10px] text-slate-500 font-bold uppercase">
-                Trang {currentPage} trên {totalPages} (Tổng số {filteredQuestions.length} câu)
+                {t('asc_pagination_info', { current: currentPage, total: totalPages, count: filteredQuestions.length })}
               </span>
               <div className="flex gap-2">
                 <button
@@ -260,7 +262,7 @@ export default function AdminSatContentPanel({
                   onClick={() => onSetAdminCurrentPage(Math.max(1, currentPage - 1))}
                   className="px-3 py-1 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-xl text-[10px] font-bold transition-all disabled:opacity-40 cursor-pointer"
                 >
-                  Trang trước
+                  {t('asc_btn_prev_page')}
                 </button>
                 <button
                   type="button"
@@ -268,7 +270,7 @@ export default function AdminSatContentPanel({
                   onClick={() => onSetAdminCurrentPage(Math.min(totalPages, currentPage + 1))}
                   className="px-3 py-1 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-xl text-[10px] font-bold transition-all disabled:opacity-40 cursor-pointer"
                 >
-                  Trang sau
+                  {t('asc_btn_next_page')}
                 </button>
               </div>
             </div>
@@ -288,9 +290,9 @@ export default function AdminSatContentPanel({
                 <div className="flex items-center gap-3 pb-3 border-b border-slate-805">
                   <span className="text-2xl">SAT</span>
                   <div>
-                    <h3 className="text-sm font-black text-rose-400 font-sans uppercase">Chi tiết câu hỏi thích ứng</h3>
+                    <h3 className="text-sm font-black text-rose-400 font-sans uppercase">{t('asc_modal_title')}</h3>
                     <span className="text-[10px] font-mono text-slate-500 block mt-0.5">
-                      ID: {activeQuestionDetail.id} - Section: {activeQuestionDetail.section || '-'}
+                      {t('asc_modal_id_section', { id: activeQuestionDetail.id ?? '-', section: activeQuestionDetail.section || '-' })}
                     </span>
                   </div>
                 </div>
@@ -298,17 +300,17 @@ export default function AdminSatContentPanel({
                 <div className="space-y-4 max-h-[380px] overflow-y-auto pr-2 scrollbar-thin text-xs">
                   <div className="grid grid-cols-2 gap-3">
                     <div className="bg-slate-955 p-2.5 rounded-xl border border-slate-850">
-                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Domain</span>
+                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_domain')}</span>
                       <span className="font-extrabold text-slate-200">{activeQuestionDetail.domain}</span>
                     </div>
                     <div className="bg-slate-955 p-2.5 rounded-xl border border-slate-850">
-                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Skill / Chuyên đề</span>
+                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_skill')}</span>
                       <span className="font-extrabold text-slate-200">{activeQuestionDetail.skill || activeQuestionDetail.canonicalSkill}</span>
                     </div>
                   </div>
 
                   <div className="space-y-1 bg-slate-955 p-3 rounded-xl border border-slate-850">
-                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Nội dung câu hỏi</span>
+                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_content')}</span>
                     <PromptWithAssets
                       text={activeQuestionDetail.prompt}
                       className="font-semibold text-slate-150 whitespace-pre-line leading-relaxed font-sans"
@@ -317,7 +319,7 @@ export default function AdminSatContentPanel({
 
                   {activeQuestionDetail.choices && (
                     <div className="space-y-1.5">
-                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block">Các phương án trắc nghiệm</span>
+                      <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block">{t('asc_modal_choices')}</span>
                       <div className="grid grid-cols-1 gap-2">
                         {Object.entries(activeQuestionDetail.choices).map(([key, value]) => (
                           <div
@@ -345,8 +347,8 @@ export default function AdminSatContentPanel({
                   )}
 
                   <div className="space-y-1 bg-slate-955 p-3 rounded-xl border border-slate-850">
-                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">Giải thích chi tiết</span>
-                    <p className="text-slate-350 whitespace-pre-line leading-relaxed font-sans">{getExplanation(activeQuestionDetail)}</p>
+                    <span className="text-[8px] text-slate-500 uppercase tracking-wider font-bold block mb-1">{t('asc_modal_explanation')}</span>
+                    <p className="text-slate-350 whitespace-pre-line leading-relaxed font-sans">{getExplanation(activeQuestionDetail, t('asc_no_explanation'))}</p>
                   </div>
                 </div>
 
@@ -356,7 +358,7 @@ export default function AdminSatContentPanel({
                     onClick={() => onSetActiveQuestionDetail(null)}
                     className="px-5 py-2 bg-slate-955 hover:bg-slate-850 border border-slate-800 text-slate-400 hover:text-white rounded-xl text-xs font-black uppercase cursor-pointer"
                   >
-                    Đóng
+                    {t('asc_btn_close')}
                   </button>
                 </div>
               </div>
@@ -369,13 +371,13 @@ export default function AdminSatContentPanel({
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-6">
           <div className="border-b border-slate-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <h4 className="text-xs font-black text-rose-400 uppercase tracking-widest font-sans">Bảng kiểm tra tính toàn vẹn dữ liệu</h4>
+              <h4 className="text-xs font-black text-rose-400 uppercase tracking-widest font-sans">{t('asc_integrity_heading')}</h4>
               <p className="text-[10px] text-slate-500 mt-1 font-light font-sans leading-relaxed">
-                Báo cáo kích thước file, số câu hỏi parsed thành công và trạng thái ngân hàng dữ liệu SAT.
+                {t('asc_integrity_desc')}
               </p>
             </div>
             <div className="text-xs font-black text-emerald-450 font-mono bg-slate-950 px-3.5 py-1.5 rounded-full border border-slate-855 shrink-0">
-              Tổng ngân hàng pool: 10,000+ câu
+              {t('asc_integrity_pool_total')}
             </div>
           </div>
 
@@ -383,12 +385,12 @@ export default function AdminSatContentPanel({
             <table className="w-full border-collapse text-left text-xs text-slate-350">
               <thead>
                 <tr className="bg-slate-950 border-b border-slate-850 text-slate-500 font-black uppercase font-sans">
-                  <th className="p-4">Tên tệp vật lý</th>
-                  <th className="p-4">Dung lượng</th>
-                  <th className="p-4">Tổng số câu hỏi</th>
-                  <th className="p-4">Loại ngân hàng</th>
-                  <th className="p-4">Độ an toàn</th>
-                  <th className="p-4">Trạng thái</th>
+                  <th className="p-4">{t('asc_integrity_th_filename')}</th>
+                  <th className="p-4">{t('asc_integrity_th_size')}</th>
+                  <th className="p-4">{t('asc_integrity_th_count')}</th>
+                  <th className="p-4">{t('asc_integrity_th_type')}</th>
+                  <th className="p-4">{t('asc_integrity_th_safety')}</th>
+                  <th className="p-4">{t('asc_integrity_th_status')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -396,16 +398,16 @@ export default function AdminSatContentPanel({
                   <tr key={bank.name} className="border-b border-slate-855 hover:bg-slate-950/40 font-sans">
                     <td className="p-4 font-mono font-bold text-rose-455">{bank.name}</td>
                     <td className="p-4 font-mono font-bold text-slate-205">{bank.size}</td>
-                    <td className="p-4 font-bold text-slate-300">{bank.count}</td>
-                    <td className="p-4 text-slate-450">{bank.type}</td>
+                    <td className="p-4 font-bold text-slate-300">{t(bank.countKey, { count: bank.countNum })}</td>
+                    <td className="p-4 text-slate-450">{t(bank.typeKey)}</td>
                     <td className="p-4">
                       <span className="text-[9px] bg-slate-950 text-slate-400 border border-slate-850 px-2.5 py-0.5 rounded font-black font-mono">
-                        {bank.cert}
+                        {t(bank.certKey)}
                       </span>
                     </td>
                     <td className="p-4">
                       <span className="text-[9px] bg-emerald-950/70 border border-emerald-900 text-emerald-400 px-2.5 py-0.5 rounded-full font-black uppercase">
-                        {bank.status}
+                        {t(bank.statusKey)}
                       </span>
                     </td>
                   </tr>
@@ -415,7 +417,7 @@ export default function AdminSatContentPanel({
           </div>
 
           <div className="p-4 bg-slate-955 rounded-2xl border border-slate-850 text-xs text-slate-500 font-light leading-relaxed font-sans">
-            Bảo mật và bản quyền: dữ liệu được kiểm duyệt để giảm trùng lặp, giữ độ khó sát kỳ thi SAT thật và bảo vệ chất lượng nội dung.
+            {t('asc_integrity_security_note')}
           </div>
         </div>
       )}
@@ -423,11 +425,11 @@ export default function AdminSatContentPanel({
       {adminSatSubTab === 'calibration' && (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="p-6 bg-slate-900 rounded-3xl border border-slate-800 space-y-4 shadow-xl">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 font-sans">Cấu hình tham số thích ứng</h4>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 font-sans">{t('asc_calib_config_heading')}</h4>
 
             <div className="space-y-4">
               <div>
-                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">Mục tiêu điểm đánh giá SAT</label>
+                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">{t('asc_calib_target_score')}</label>
                 <div className="flex items-center gap-3">
                   <input
                     type="range"
@@ -443,7 +445,7 @@ export default function AdminSatContentPanel({
               </div>
 
               <div>
-                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">IRT learning rate alpha</label>
+                <label className="text-[10px] font-black uppercase text-slate-500 block mb-1 font-sans">{t('asc_calib_irt_alpha')}</label>
                 <div className="flex items-center gap-3">
                   <input
                     type="range"
@@ -459,16 +461,16 @@ export default function AdminSatContentPanel({
               </div>
 
               <div className="p-3 bg-slate-950 border border-slate-850 rounded-xl text-[10px] text-slate-500 leading-relaxed font-light font-sans">
-                Tham số IRT điều chỉnh tốc độ hệ thống thích ứng với kết quả Module 1 của học viên.
+                {t('asc_calib_irt_note')}
               </div>
             </div>
           </div>
 
           <div className="p-6 bg-slate-900 rounded-3xl border border-slate-800 flex flex-col justify-between shadow-xl">
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2 font-sans">Bộ hiệu chuẩn thống kê IRT</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2 font-sans">{t('asc_calib_irt_engine_heading')}</h4>
               <p className="text-[10px] text-slate-500 leading-relaxed mb-4 font-light font-sans">
-                Chạy phân tích để cập nhật độ phân biệt, độ khó và tham số câu hỏi cho ngân hàng đề thi thích ứng.
+                {t('asc_calib_irt_engine_desc')}
               </p>
             </div>
 
@@ -480,7 +482,7 @@ export default function AdminSatContentPanel({
                 isIrtCalibrating ? 'opacity-50 animate-pulse cursor-not-allowed' : ''
               }`}
             >
-              {isIrtCalibrating ? 'Đang hiệu chuẩn mô hình...' : 'Chạy hiệu chuẩn IRT'}
+              {isIrtCalibrating ? t('asc_btn_calibrating') : t('asc_btn_run_calibration')}
             </button>
           </div>
         </div>
