@@ -53,35 +53,28 @@ import type { AdminSatQuestion } from './components/AdminSatContentPanel';
 import AdminUserDetailModal from './components/AdminUserDetailModal';
 import type { SatTaxonomy } from './components/StudentSatBoardWorkspace';
 import {
-  buildContentExamChangeSet,
-  buildContentReviewChangeSetExport,
-  countEditableExamQuestions,
   createCasioTip,
   createDemoExam,
   createEditableExamSectionsFromJson,
   createEnglishExam,
   createLatexMathLesson,
   createMathLesson,
-  ensureEditableExamSections,
   filterImportedExamsByReviewStatus,
   importExamFromJson,
   loadPersistedImportedExams,
   mergeImportedExamState,
   savePersistedImportedExams,
   summarizeContentReview,
-  type ContentExamChangeSet,
-  type ContentReviewChangeSetExport,
   type ContentReviewFilter,
-  type EditableExamSection,
   type EnglishExamTrack,
   type CasioTip,
   type ImportedExam,
   type MathLesson,
 } from './lib/adminContent';
 import { INITIAL_CASIO_TIPS, INITIAL_IMPORTED_EXAMS, INITIAL_MATH_LESSONS } from './lib/portalSeedData';
-import { safeFilePart } from './lib/fileUtils';
 import { buildSatPracticeLearningEvent } from './lib/satPracticeEvents';
 import { useMascotInventory } from './hooks/useMascotInventory';
+import { useContentExamEditor } from './hooks/useContentExamEditor';
 
 const SystemSurfacePreview = React.lazy(() => import('./components/SystemSurfacePreview'));
 const AdminAnalyticsWorkspace = React.lazy(() => import('./components/AdminAnalyticsWorkspace'));
@@ -117,18 +110,6 @@ function loadEnglishItemBankPracticeModule(): Promise<EnglishItemBankPracticeMod
 }
 
 const db = new LocalStorageAdapter();
-
-function downloadJsonFile(filename: string, payload: ContentExamChangeSet | ContentReviewChangeSetExport): void {
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement('a');
-  anchor.href = url;
-  anchor.download = filename;
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  URL.revokeObjectURL(url);
-}
 
 function DeferredPanel({ children, label = 'Loading workspace' }: { children: React.ReactNode; label?: string }): JSX.Element {
   return (
@@ -258,8 +239,6 @@ export default function App() {
   const [isIrtCalibrating, setIsIrtCalibrating] = useState(false);
 
   const [importedExams, setImportedExams] = useState<ImportedExam[]>(() => mergeImportedExamState(INITIAL_IMPORTED_EXAMS, loadPersistedImportedExams(localStorage)));
-  const [selectedContentExamId, setSelectedContentExamId] = useState<string | null>(null);
-  const [contentExamDraft, setContentExamDraft] = useState<ImportedExam | null>(null);
   const [examJsonInput, setExamJsonInput] = useState('');
   const [examImportError, setExamImportError] = useState<string | null>(null);
   const [examImportSuccess, setExamImportSuccess] = useState<string | null>(null);
@@ -858,154 +837,6 @@ export default function App() {
     showNotif(t('notif_create_exam_ok', { track: trackId.toUpperCase() }), "success");
   };
 
-  const handleOpenContentExam = (exam: ImportedExam) => {
-    const editableExam: ImportedExam = {
-      ...exam,
-      editableSections: ensureEditableExamSections(exam),
-      reviewStatus: exam.reviewStatus || 'unchecked',
-    };
-    setSelectedContentExamId(exam.id);
-    setContentExamDraft(editableExam);
-  };
-
-  const handleCloseContentExam = () => {
-    setSelectedContentExamId(null);
-    setContentExamDraft(null);
-  };
-
-  const updateContentExamDraft = (patch: Partial<ImportedExam>) => {
-    setContentExamDraft((draft) => (draft ? { ...draft, ...patch } : draft));
-  };
-
-  const updateContentExamSection = (sectionIndex: number, patch: Partial<EditableExamSection>) => {
-    setContentExamDraft((draft) => {
-      if (!draft) return draft;
-      const sections = ensureEditableExamSections(draft).map((section, index) => (index === sectionIndex ? { ...section, ...patch } : section));
-      return { ...draft, editableSections: sections };
-    });
-  };
-
-  const updateContentExamQuestion = (
-    sectionIndex: number,
-    questionIndex: number,
-    patch: Partial<EditableExamSection['questions'][number]>,
-  ) => {
-    setContentExamDraft((draft) => {
-      if (!draft) return draft;
-      const sections = ensureEditableExamSections(draft).map((section, index) => {
-        if (index !== sectionIndex) return section;
-        const questions = section.questions.map((question, qIndex) => (qIndex === questionIndex ? { ...question, ...patch } : question));
-        return { ...section, questions };
-      });
-      return { ...draft, editableSections: sections };
-    });
-  };
-
-  const handleAddContentSection = () => {
-    setContentExamDraft((draft) => {
-      if (!draft) return draft;
-      const sections = ensureEditableExamSections(draft);
-      return {
-        ...draft,
-        editableSections: [
-          ...sections,
-          {
-            id: `${draft.id}-section-${sections.length + 1}`,
-            title: `Section ${sections.length + 1}`,
-            questions: [],
-          },
-        ],
-      };
-    });
-  };
-
-  const handleAddContentQuestion = (sectionIndex: number) => {
-    setContentExamDraft((draft) => {
-      if (!draft) return draft;
-      const sections = ensureEditableExamSections(draft).map((section, index) => {
-        if (index !== sectionIndex) return section;
-        const nextIndex = section.questions.length + 1;
-        return {
-          ...section,
-          questions: [
-            ...section.questions,
-            {
-              id: `${section.id}-q${nextIndex}`,
-              text: `Question ${nextIndex}`,
-              answer: '',
-            },
-          ],
-        };
-      });
-      return { ...draft, editableSections: sections };
-    });
-  };
-
-  const handleRemoveContentQuestion = (sectionIndex: number, questionIndex: number) => {
-    setContentExamDraft((draft) => {
-      if (!draft) return draft;
-      const sections = ensureEditableExamSections(draft).map((section, index) => {
-        if (index !== sectionIndex) return section;
-        return { ...section, questions: section.questions.filter((_, qIndex) => qIndex !== questionIndex) };
-      });
-      return { ...draft, editableSections: sections };
-    });
-  };
-
-  const handleSaveContentExamDraft = (reviewStatus: ImportedExam['reviewStatus'] = contentExamDraft?.reviewStatus || 'unchecked') => {
-    if (!contentExamDraft) return;
-    const editableSections = ensureEditableExamSections(contentExamDraft);
-    const editedQuestionCount = countEditableExamQuestions(editableSections);
-    const savedExam: ImportedExam = {
-      ...contentExamDraft,
-      title: contentExamDraft.title.trim() || contentExamDraft.title,
-      duration: Math.max(1, Number(contentExamDraft.duration) || 1),
-      questions: editedQuestionCount || Math.max(1, Number(contentExamDraft.questions) || 1),
-      editableSections,
-      reviewStatus,
-      reviewer: currentUser?.username,
-      reviewedAt: new Date().toISOString(),
-    };
-    setImportedExams((items) => {
-      const nextExams = items.map((item) => (item.id === savedExam.id ? savedExam : item));
-      savePersistedImportedExams(localStorage, nextExams);
-      return nextExams;
-    });
-    setContentExamDraft(savedExam);
-    logSystemEvent('WARN', `Admin @${currentUser?.username} saved content exam ${savedExam.exam}: "${savedExam.title}" [${reviewStatus}]`);
-    showNotif(t('notif_save_exam_ok', { exam: savedExam.exam }), "success");
-  };
-
-  const handleExportContentExamChangeSet = () => {
-    if (!contentExamDraft) {
-      showNotif('No open content exam to export.', 'error');
-      return;
-    }
-    const previousExam = importedExams.find((item) => item.id === contentExamDraft.id) || null;
-    const changeSet: ContentExamChangeSet = buildContentExamChangeSet(contentExamDraft, {
-      previousExam,
-      reviewer: currentUser?.username || 'admincontent',
-    });
-    downloadJsonFile(`miuprep-${contentExamDraft.exam.toLowerCase()}-${safeFilePart(contentExamDraft.id)}-changeset.json`, changeSet);
-    logSystemEvent('INFO', `Admin @${currentUser?.username} exported content change set ${contentExamDraft.exam}: "${contentExamDraft.title}"`);
-    showNotif(t('notif_exported_changeset', { exam: contentExamDraft.exam }), 'success');
-  };
-
-  const handleExportContentReviewSet = () => {
-    const trackExams = importedExams.filter((exam) => exam.exam.toLowerCase() === adminActiveTab);
-    if (!trackExams.length) {
-      showNotif(t('notif_no_exams_export', { tab: adminActiveTab.toUpperCase() }), 'error');
-      return;
-    }
-    const exportPayload: ContentReviewChangeSetExport = buildContentReviewChangeSetExport(trackExams, {
-      track: adminActiveTab,
-      reviewer: currentUser?.username || 'admincontent',
-    });
-    downloadJsonFile(`miuprep-${adminActiveTab}-review-changesets.json`, exportPayload);
-    logSystemEvent('INFO', `Admin @${currentUser?.username} exported ${adminActiveTab.toUpperCase()} review change set (${trackExams.length} exams)`);
-    showNotif(t('notif_exported_review', { tab: adminActiveTab.toUpperCase() }), 'success');
-  };
-
   const handleRetryErrorQuestion = (qId: string, choice: string, correctAns: string) => {
     const retryResult = resolveErrorRetry(errorQuestions, qId, choice, correctAns, fishCoins, mouseTrapsCount);
     const attemptedQuestion = errorQuestions.find((question) => question.id === qId);
@@ -1080,8 +911,7 @@ export default function App() {
     setExamJsonInput('');
     setExamImportError(null);
     setExamImportSuccess(null);
-    setSelectedContentExamId(null);
-    setContentExamDraft(null);
+    handleCloseContentExam();
   };
 
   const handleCreateLatexQuestion = (e: React.FormEvent) => {
@@ -1198,6 +1028,30 @@ export default function App() {
     currentUser,
     fishCoins,
     setFishCoins,
+    showNotif,
+    logSystemEvent,
+    t,
+  });
+
+  const {
+    selectedContentExamId,
+    contentExamDraft,
+    handleOpenContentExam,
+    handleCloseContentExam,
+    updateContentExamDraft,
+    updateContentExamSection,
+    updateContentExamQuestion,
+    handleAddContentSection,
+    handleAddContentQuestion,
+    handleRemoveContentQuestion,
+    handleSaveContentExamDraft,
+    handleExportContentExamChangeSet,
+    handleExportContentReviewSet,
+  } = useContentExamEditor({
+    importedExams,
+    setImportedExams,
+    currentUser,
+    adminActiveTab,
     showNotif,
     logSystemEvent,
     t,
@@ -2306,8 +2160,7 @@ export default function App() {
                         setExamJsonInput('');
                         setExamImportError(null);
                         setExamImportSuccess(null);
-                        setSelectedContentExamId(null);
-                        setContentExamDraft(null);
+                        handleCloseContentExam();
                       }}
                       className={`px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase transition-all border-0 cursor-pointer ${
                         adminActiveTab === track
