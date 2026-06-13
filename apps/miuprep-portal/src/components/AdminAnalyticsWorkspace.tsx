@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 import { useTranslation } from '@miuprep/i18n/src/react';
 import type { LocalUser, SystemLog } from '@miuprep/db';
 import type { LearningEventRecord } from '@miuprep/learning';
@@ -84,6 +84,8 @@ export default function AdminAnalyticsWorkspace({
   onOpenContent,
 }: AdminAnalyticsWorkspaceProps) {
   const { t } = useTranslation();
+  const [subTab, setSubTab] = useState<'intervention' | 'repair' | 'analytics' | 'beta'>('intervention');
+
   if (isAdminContentOnly) {
     return (
       <DeferredPanel label={t('aaw_loading_repair')}>
@@ -92,48 +94,80 @@ export default function AdminAnalyticsWorkspace({
     );
   }
 
+  const SUB_TABS = [
+    { id: 'intervention', labelKey: 'aaw_tab_intervention' },
+    { id: 'repair', labelKey: 'aaw_tab_repair' },
+    { id: 'analytics', labelKey: 'aaw_tab_analytics' },
+    { id: 'beta', labelKey: 'aaw_tab_beta' },
+  ] as const;
+
   return (
-    <>
-      <DeferredPanel label={t('aaw_loading_intervention')}>
-        <AdminInterventionQueue
-          tracks={tracks}
-          users={users}
-          mathLessons={mathLessons}
-          importedExams={importedExams}
-          errorQuestions={errorQuestions}
-          adminLogs={adminLogs}
-          learningEvents={learningEvents}
-          onOpenUsers={onOpenUsers}
-          onOpenContent={onOpenContent}
-        />
-      </DeferredPanel>
+    <div className="space-y-5">
+      <div className="flex flex-wrap gap-2 sticky top-2 z-10">
+        {SUB_TABS.map((tab) => (
+          <button
+            key={tab.id}
+            type="button"
+            onClick={() => setSubTab(tab.id)}
+            className={`px-3.5 py-1.5 rounded-lg text-[11px] font-black uppercase tracking-wider border transition-all cursor-pointer ${
+              subTab === tab.id
+                ? 'bg-orange-500 text-slate-950 border-orange-500 shadow'
+                : 'bg-slate-950/80 backdrop-blur border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+            }`}
+          >
+            {t(tab.labelKey)}
+          </button>
+        ))}
+      </div>
 
-      <DeferredPanel label={t('aaw_loading_repair')}>
-        <AdminContentRepairQueue onOpenContent={onOpenContent} />
-      </DeferredPanel>
+      {subTab === 'intervention' && (
+        <DeferredPanel label={t('aaw_loading_intervention')}>
+          <AdminInterventionQueue
+            tracks={tracks}
+            users={users}
+            mathLessons={mathLessons}
+            importedExams={importedExams}
+            errorQuestions={errorQuestions}
+            adminLogs={adminLogs}
+            learningEvents={learningEvents}
+            onOpenUsers={onOpenUsers}
+            onOpenContent={onOpenContent}
+          />
+        </DeferredPanel>
+      )}
 
-      <DeferredPanel label={t('aaw_loading_analytics')}>
-        <AdminLearningAnalytics
-          tracks={tracks}
-          mathLessons={mathLessons}
-          importedExams={importedExams}
-          errorQuestions={errorQuestions}
-          adminLogs={adminLogs}
-          learningEvents={learningEvents}
-        />
-      </DeferredPanel>
+      {subTab === 'repair' && (
+        <DeferredPanel label={t('aaw_loading_repair')}>
+          <AdminContentRepairQueue onOpenContent={onOpenContent} />
+        </DeferredPanel>
+      )}
 
-      <DeferredPanel label={t('aaw_loading_beta')}>
-        <BetaImplementationTracker
-          tracks={tracks}
-          users={users}
-          mathLessons={mathLessons}
-          importedExams={importedExams}
-          adminLogs={adminLogs}
-          learningEvents={learningEvents}
-          errorQuestionCount={activeErrorQuestionCount}
-        />
-      </DeferredPanel>
-    </>
+      {subTab === 'analytics' && (
+        <DeferredPanel label={t('aaw_loading_analytics')}>
+          <AdminLearningAnalytics
+            tracks={tracks}
+            mathLessons={mathLessons}
+            importedExams={importedExams}
+            errorQuestions={errorQuestions}
+            adminLogs={adminLogs}
+            learningEvents={learningEvents}
+          />
+        </DeferredPanel>
+      )}
+
+      {subTab === 'beta' && (
+        <DeferredPanel label={t('aaw_loading_beta')}>
+          <BetaImplementationTracker
+            tracks={tracks}
+            users={users}
+            mathLessons={mathLessons}
+            importedExams={importedExams}
+            adminLogs={adminLogs}
+            learningEvents={learningEvents}
+            errorQuestionCount={activeErrorQuestionCount}
+          />
+        </DeferredPanel>
+      )}
+    </div>
   );
 }

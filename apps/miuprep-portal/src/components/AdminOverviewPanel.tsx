@@ -58,7 +58,7 @@ export default function AdminOverviewPanel({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-left">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto text-left">
         <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-5 shadow-lg flex items-center gap-4 hover:border-emerald-500/30 transition-all duration-300">
           <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-500/20">
             👥

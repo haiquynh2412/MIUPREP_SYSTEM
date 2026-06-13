@@ -258,6 +258,10 @@ export const portalTranslations: TranslationDict = {
     aaw_loading_intervention: 'Đang tải hàng đợi can thiệp',
     aaw_loading_analytics: 'Đang tải phân tích học tập',
     aaw_loading_beta: 'Đang tải trình theo dõi beta',
+    aaw_tab_intervention: 'Can thiệp',
+    aaw_tab_repair: 'Sửa nội dung',
+    aaw_tab_analytics: 'Phân tích học tập',
+    aaw_tab_beta: 'Theo dõi Beta',
     // AdminExamImportPanel
     aei_quick_create: 'Tạo nhanh đề {track} trực quan',
     aei_exam_id_label: 'Mã đề thi (tự chọn)',
@@ -857,6 +861,10 @@ export const portalTranslations: TranslationDict = {
     aaw_loading_intervention: 'Loading intervention queue',
     aaw_loading_analytics: 'Loading learning analytics',
     aaw_loading_beta: 'Loading beta tracker',
+    aaw_tab_intervention: 'Interventions',
+    aaw_tab_repair: 'Content repair',
+    aaw_tab_analytics: 'Learning analytics',
+    aaw_tab_beta: 'Beta tracker',
     // AdminExamImportPanel
     aei_quick_create: 'Quick-create {track} exam visually',
     aei_exam_id_label: 'Exam ID (optional)',
