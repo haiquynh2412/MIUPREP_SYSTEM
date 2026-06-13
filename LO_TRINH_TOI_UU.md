@@ -109,7 +109,7 @@ Mỗi task chỉ được coi là hoàn thành khi đi qua đủ 4 bước:
 - [~] **2.2.3. Portal: typecheck + tách App.tsx thành routes/modules**
   - [x] *Giai đoạn 1 (11/06/2026): sửa toàn bộ 14 lỗi tsc pre-existing (JSX namespace React 19, vite-env.d.ts cho CSS imports, type MathLesson, literal track, null-guard) + thêm script `typecheck` vào pre-commit hook và CI — portal từ nay không thể lọt lỗi type. Test: tsc 0 lỗi, lint 0 lỗi, build PASS. Commit `30e01c19`*
   - [x] *Giai đoạn 2a (11/06/2026): code-splitting — 11 workspace panel chuyển sang React.lazy + DeferredPanel; main bundle 184KB → 74KB (-60%). Test: tsc 0 lỗi, lint 0 lỗi, build sạch, QA 2/2 PASS. Commit `cd6b1309`*
-  - [ ] Giai đoạn 2b: tách state/handlers của App.tsx (2.652 dòng) thành modules theo role
+  - [~] Giai đoạn 2b: tách state/handlers của App.tsx thành modules theo role *(13/06/2026 — bước 1: trích 3 mảng seed data tĩnh (INITIAL_MATH_LESSONS, INITIAL_CASIO_TIPS, INITIAL_IMPORTED_EXAMS) ra `lib/portalSeedData.ts`; App.tsx 2674→2617 dòng, zero đổi hành vi. Test: tsc/lint 0 lỗi, build PASS, QA 2/2 consoleErrors=[]. Còn lại: trích các nhóm handler (admin/parent/content-editor/SAT-practice) thành custom hooks)*
 
 ### 2.3. Chuẩn hóa 2 app JS còn lại
 
