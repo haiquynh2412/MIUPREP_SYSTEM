@@ -1866,58 +1866,58 @@ export default function App() {
   const TRACKS: TrackInfo[] = [
     {
       id: 'math',
-      title: 'MiuMath Lớp 9 Chuyên',
-      subtitle: 'Toán Học & Casio Hacks',
-      description: 'Luyện thi Toán Chuyên sâu, rút gọn biểu thức, hệ phương trình nâng cao, hình học không gian thực tế và các mẹo bấm máy Casio FX-580VN X siêu tốc.',
-      badge: 'Hình học phẳng • Đại số cực trị • Casio tips',
+      title: t('track_math_title'),
+      subtitle: t('track_math_subtitle'),
+      description: t('track_math_desc'),
+      badge: t('track_math_badge'),
       icon: '🧮',
       colorClass: 'from-emerald-500/20 via-emerald-600/10 to-teal-900/40 hover:border-emerald-500/60 shadow-emerald-950/20',
-      buttonText: 'Vào Học Toán MiuMath',
-      bubbleText: 'Học Toán thôi meow! Cùng Miu phá đảo bẫy chuột phương trình nâng cao nhé! 📐🐟'
+      buttonText: t('track_math_button'),
+      bubbleText: t('track_math_bubble')
     },
     {
       id: 'sat',
-      title: 'SAT Studio Adaptive',
-      subtitle: 'Digital SAT Prep',
-      description: 'Động cơ thi thử thích ứng theo module chuẩn Bluebook, tích hợp máy tính vẽ đồ thị Desmos, theo dõi đo lường năng lực học viên bằng lý thuyết IRT.',
-      badge: 'Adaptive Testing • Desmos • IRT Calibration',
+      title: t('track_sat_title'),
+      subtitle: t('track_sat_subtitle'),
+      description: t('track_sat_desc'),
+      badge: t('track_sat_badge'),
       icon: '🎓',
       colorClass: 'from-rose-500/20 via-rose-600/10 to-rose-950/40 hover:border-rose-500/60 shadow-rose-950/20',
-      buttonText: 'Vào Học SAT Studio',
-      bubbleText: 'SAT test day is coming meow! Động cơ thích ứng đã sẵn sàng, cùng Miu lướt Desmos nào! 🎓📊'
+      buttonText: t('track_sat_button'),
+      bubbleText: t('track_sat_bubble')
     },
     {
       id: 'ielts',
-      title: 'IELTS Prep Academy',
-      subtitle: 'Tiếng Anh Học Thuật',
-      description: 'Cải thiện toàn diện 4 kỹ năng Listening, Reading, và phân hệ chấm điểm AI thông minh thời gian thực cho Writing và Speaking.',
-      badge: 'AI Speaking • Essay Grader • Listening player',
+      title: t('track_ielts_title'),
+      subtitle: t('track_ielts_subtitle'),
+      description: t('track_ielts_desc'),
+      badge: t('track_ielts_badge'),
       icon: '🎙️',
       colorClass: 'from-indigo-500/20 via-indigo-600/10 to-indigo-950/40 hover:border-indigo-500/60 shadow-indigo-950/20',
-      buttonText: 'Vào Học IELTS Prep',
-      bubbleText: 'Let\'s boost your band score meow! Luyện nghe và viết luận cùng AI Miu thôi! 👓🎙️'
+      buttonText: t('track_ielts_button'),
+      bubbleText: t('track_ielts_bubble')
     },
     {
       id: 'cpe',
-      title: 'CPE C2 Proficiency',
-      subtitle: 'Tiếng Anh Tối Cao C2',
-      description: 'Chinh phục chứng chỉ tiếng Anh học thuật cấp độ C2 Proficiency của Cambridge. Thách thức với các bài Use of English biến đổi câu cực khó.',
-      badge: 'Use of English • C2 Reading • Vocabulary Mastery',
+      title: t('track_cpe_title'),
+      subtitle: t('track_cpe_subtitle'),
+      description: t('track_cpe_desc'),
+      badge: t('track_cpe_badge'),
       icon: '👑',
       colorClass: 'from-purple-500/20 via-purple-600/10 to-purple-950/40 hover:border-purple-500/60 shadow-purple-950/20',
-      buttonText: 'Vào Học CPE Cambridge',
-      bubbleText: 'C2 Proficiency is elite meow! Thử thách từ vựng và biến đổi câu nâng cao cùng Miu nhé! 👑🎓'
+      buttonText: t('track_cpe_button'),
+      bubbleText: t('track_cpe_bubble')
     },
     {
       id: 'cae',
-      title: 'CAE C1 Advanced',
-      subtitle: 'Tiếng Anh Nâng Cao C1',
-      description: 'Chinh phục chứng chỉ tiếng Anh học thuật cấp độ C1 Advanced của Cambridge. Ôn luyện Use of English và bài đọc nâng cao chuyên sâu.',
-      badge: 'C1 Use of English • Reading Comprehension • C1 Level',
+      title: t('track_cae_title'),
+      subtitle: t('track_cae_subtitle'),
+      description: t('track_cae_desc'),
+      badge: t('track_cae_badge'),
       icon: '✨',
       colorClass: 'from-violet-500/20 via-violet-600/10 to-violet-950/40 hover:border-violet-500/60 shadow-violet-950/20',
-      buttonText: 'Vào Học CAE Advanced',
-      bubbleText: 'C1 Advanced is excellent meow! Cùng Miu ôn luyện Use of English C1 cực đỉnh nào! ✨🎓'
+      buttonText: t('track_cae_button'),
+      bubbleText: t('track_cae_bubble')
     }
   ];
 
