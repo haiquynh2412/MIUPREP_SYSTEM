@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useTranslation } from '@miuprep/i18n/src/react';
 import type { LocalUser } from '@miuprep/db';
 import { createSeedKnowledgeGraph, type KnowledgeGraph } from '@miuprep/knowledge';
 import {
@@ -17,6 +18,8 @@ import {
   type Recommendation,
   type StudentModel,
 } from '@miuprep/learning';
+
+type TFunc = (key: string, params?: Record<string, string | number>) => string;
 
 export type PortalTrackId = 'math' | 'sat' | 'ielts' | 'cpe' | 'cae';
 type ProgramId = 'vn_math_6_9' | 'sat' | 'ielts' | 'cpe' | 'cae';
@@ -72,6 +75,7 @@ export default function UnifiedLearnerDashboard({
   errorQuestionCount,
   learningEvents = [],
 }: UnifiedLearnerDashboardProps) {
+  const { t } = useTranslation();
   const assignedTrackIds = useMemo(() => normalizeAssignedTracks(currentUser), [currentUser]);
   const activeTracks = tracks.filter((track) => assignedTrackIds.includes(track.id));
   const snapshot = useMemo(
@@ -87,25 +91,25 @@ export default function UnifiedLearnerDashboard({
         <div>
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-[10px] font-black uppercase tracking-[0.16em] text-orange-400 bg-orange-950/40 border border-orange-900/50 px-2 py-1 rounded">
-              Learning map
+              {t('uld_badge_learning_map')}
             </span>
             <span className="text-[10px] font-black uppercase tracking-[0.16em] text-slate-400 bg-slate-950 border border-slate-850 px-2 py-1 rounded">
-              Skill links
+              {t('uld_badge_skill_links')}
             </span>
             <span className="text-[10px] font-black uppercase tracking-[0.16em] text-sky-300 bg-sky-950/40 border border-sky-900/50 px-2 py-1 rounded">
-              {snapshot.evidenceSource === 'live' ? 'Live progress' : 'Preview mode'}
+              {snapshot.evidenceSource === 'live' ? t('uld_badge_live_progress') : t('uld_badge_preview_mode')}
             </span>
           </div>
-          <h2 className="text-xl font-black text-slate-100 m-0 mt-3">Your growth map</h2>
+          <h2 className="text-xl font-black text-slate-100 m-0 mt-3">{t('uld_growth_map_title')}</h2>
           <p className="text-xs text-slate-500 mt-1 max-w-3xl">
-            One place to see what is improving, what still blocks progress, and which small action should happen next.
+            {t('uld_growth_map_subtitle')}
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 min-w-full lg:min-w-[520px]">
-          <MetricTile label="Programs" value={String(activeTracks.length)} />
-          <MetricTile label="Avg mastery" value={`${Math.round(snapshot.averageMastery)}%`} />
-          <MetricTile label="Evidence" value={String(snapshot.state.attempts.length)} />
-          <MetricTile label="Error notebook" value={String(errorQuestionCount)} />
+          <MetricTile label={t('uld_metric_programs')} value={String(activeTracks.length)} />
+          <MetricTile label={t('uld_metric_avg_mastery')} value={`${Math.round(snapshot.averageMastery)}%`} />
+          <MetricTile label={t('uld_metric_evidence')} value={String(snapshot.state.attempts.length)} />
+          <MetricTile label={t('uld_metric_error_notebook')} value={String(errorQuestionCount)} />
         </div>
       </div>
 
@@ -121,14 +125,14 @@ export default function UnifiedLearnerDashboard({
             </div>
             <div className="mt-4">
               <div className="flex items-center justify-between text-[11px] font-bold">
-                <span className="text-slate-500">Mastery</span>
+                <span className="text-slate-500">{t('uld_card_mastery')}</span>
                 <span className="text-emerald-400 font-mono">{Math.round(summary.score)}%</span>
               </div>
               <div className="h-2 bg-slate-900 border border-slate-850 rounded-full overflow-hidden mt-1">
                 <div className="h-full bg-emerald-500 rounded-full" style={{ width: `${Math.max(4, Math.min(100, summary.score))}%` }} />
               </div>
               <p className="text-[11px] text-slate-500 mt-3 mb-0">
-                {summary.status} · {summary.attempts} evidence · weakest: <span className="text-slate-300">{summary.weakestLabel}</span>
+                {summaryStatusLabel(summary.status, t)} · {t('uld_card_evidence_count', { count: summary.attempts })} · {t('uld_card_weakest_prefix')} <span className="text-slate-300">{summaryWeakestLabel(summary.weakestLabel, t)}</span>
               </p>
             </div>
           </div>
@@ -138,18 +142,18 @@ export default function UnifiedLearnerDashboard({
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 border-t border-slate-850 pt-5">
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">Best next move</h3>
+            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">{t('uld_best_next_move')}</h3>
             <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{snapshot.recommendation.reason}</span>
           </div>
           <div className="bg-slate-950/60 border border-slate-850 rounded-2xl p-4">
-            <p className="text-sm font-black text-slate-100 m-0">{recommendationTitle(snapshot.recommendation)}</p>
-            <p className="text-xs text-slate-500 leading-relaxed mt-2 mb-0">{recommendationDetail(snapshot.recommendation, graph)}</p>
+            <p className="text-sm font-black text-slate-100 m-0">{recommendationTitle(snapshot.recommendation, t)}</p>
+            <p className="text-xs text-slate-500 leading-relaxed mt-2 mb-0">{recommendationDetail(snapshot.recommendation, graph, t)}</p>
             {nextStep && (
               <div className="mt-4 pt-4 border-t border-slate-850">
-                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Next unlock</span>
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{t('uld_next_unlock')}</span>
                 <p className="text-sm font-bold text-slate-200 mt-1 mb-0">{nextStep.label}</p>
                 <p className="text-[11px] text-slate-500 mt-1 mb-0">
-                  {statusLabel(nextStep.status)} · {Math.round(nextStep.masteryScore)}% · {nextStep.unlocked ? 'open' : 'locked'}
+                  {statusLabel(nextStep.status, t)} · {Math.round(nextStep.masteryScore)}% · {nextStep.unlocked ? t('uld_state_open') : t('uld_state_locked')}
                 </p>
               </div>
             )}
@@ -158,8 +162,8 @@ export default function UnifiedLearnerDashboard({
 
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">Path to unlock</h3>
-            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{snapshot.learningPath.steps.length} steps</span>
+            <h3 className="text-sm font-black text-slate-100 uppercase tracking-widest m-0">{t('uld_path_to_unlock')}</h3>
+            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{t('uld_steps_count', { count: snapshot.learningPath.steps.length })}</span>
           </div>
           <div className="space-y-2">
             {snapshot.learningPath.steps.map((step) => (
@@ -170,11 +174,11 @@ export default function UnifiedLearnerDashboard({
                 <div className="min-w-0 flex-1">
                   <p className="text-xs font-bold text-slate-200 truncate m-0">{step.label}</p>
                   <p className="text-[11px] text-slate-500 m-0 mt-0.5">
-                    {statusLabel(step.status)} · {Math.round(step.masteryScore)}% · {step.attempts} attempts
+                    {statusLabel(step.status, t)} · {Math.round(step.masteryScore)}% · {t('uld_step_attempts', { count: step.attempts })}
                   </p>
                 </div>
                 <span className={`text-[10px] font-black uppercase ${step.unlocked ? 'text-emerald-400' : 'text-amber-400'}`}>
-                  {step.unlocked ? 'open' : 'locked'}
+                  {step.unlocked ? t('uld_state_open') : t('uld_state_locked')}
                 </span>
               </div>
             ))}
@@ -396,16 +400,16 @@ function programSummary(graph: KnowledgeGraph, track: PortalTrackInfo, programId
   };
 }
 
-function recommendationTitle(recommendation: Recommendation): string {
-  if (recommendation.kind === 'diagnostic') return 'Find your starting point';
-  if (recommendation.kind === 'review') return 'Repair the weakest link';
-  if (recommendation.kind === 'practice') return 'Build proof with practice';
-  return 'Try the next challenge';
+function recommendationTitle(recommendation: Recommendation, t: TFunc): string {
+  if (recommendation.kind === 'diagnostic') return t('uld_rec_title_diagnostic');
+  if (recommendation.kind === 'review') return t('uld_rec_title_review');
+  if (recommendation.kind === 'practice') return t('uld_rec_title_practice');
+  return t('uld_rec_title_challenge');
 }
 
-function recommendationDetail(recommendation: Recommendation, graph: KnowledgeGraph): string {
+function recommendationDetail(recommendation: Recommendation, graph: KnowledgeGraph, t: TFunc): string {
   const labels = [...recommendation.conceptIds, ...recommendation.skillIds].map((id) => labelForId(id, graph));
-  if (labels.length) return `${recommendation.detail} Target: ${labels.join(', ')}.`;
+  if (labels.length) return t('uld_rec_detail_with_target', { detail: recommendation.detail, labels: labels.join(', ') });
   return recommendation.detail;
 }
 
@@ -413,14 +417,26 @@ function labelForId(id: string, graph: KnowledgeGraph): string {
   return graph.concepts.find((item) => item.id === id)?.name || graph.skills.find((item) => item.id === id)?.name || id;
 }
 
-function statusLabel(status: string): string {
-  if (status === 'not_started') return 'Not started';
-  if (status === 'collect_evidence') return 'Collect evidence';
-  if (status === 'repair') return 'Repair';
-  if (status === 'building' || status === 'build') return 'Build';
-  if (status === 'hard_proof') return 'Hard proof';
-  if (status === 'stable') return 'Stable';
+function statusLabel(status: string, t: TFunc): string {
+  if (status === 'not_started') return t('uld_status_not_started');
+  if (status === 'collect_evidence') return t('uld_status_collect_evidence');
+  if (status === 'repair') return t('uld_status_repair');
+  if (status === 'building' || status === 'build') return t('uld_status_build');
+  if (status === 'hard_proof') return t('uld_status_hard_proof');
+  if (status === 'stable') return t('uld_status_stable');
   return status;
+}
+
+function summaryStatusLabel(status: string, t: TFunc): string {
+  if (status === 'Stable') return t('uld_summary_status_stable');
+  if (status === 'Building') return t('uld_summary_status_building');
+  if (status === 'Needs repair') return t('uld_summary_status_needs_repair');
+  return status;
+}
+
+function summaryWeakestLabel(label: string, t: TFunc): string {
+  if (label === 'Waiting for evidence') return t('uld_weakest_waiting');
+  return label;
 }
 
 function errorCategoriesForNode(nodeId: string): ErrorCategory[] {
