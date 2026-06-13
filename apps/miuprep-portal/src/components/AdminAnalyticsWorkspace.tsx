@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import { useTranslation } from '@miuprep/i18n/src/react';
 import type { LocalUser, SystemLog } from '@miuprep/db';
 import type { LearningEventRecord } from '@miuprep/learning';
 import type { PortalTrackInfo } from './UnifiedLearnerDashboard';
@@ -82,9 +83,10 @@ export default function AdminAnalyticsWorkspace({
   onOpenUsers,
   onOpenContent,
 }: AdminAnalyticsWorkspaceProps) {
+  const { t } = useTranslation();
   if (isAdminContentOnly) {
     return (
-      <DeferredPanel label="Loading content repair queue">
+      <DeferredPanel label={t('aaw_loading_repair')}>
         <AdminContentRepairQueue onOpenContent={onOpenContent} />
       </DeferredPanel>
     );
@@ -92,7 +94,7 @@ export default function AdminAnalyticsWorkspace({
 
   return (
     <>
-      <DeferredPanel label="Loading intervention queue">
+      <DeferredPanel label={t('aaw_loading_intervention')}>
         <AdminInterventionQueue
           tracks={tracks}
           users={users}
@@ -106,11 +108,11 @@ export default function AdminAnalyticsWorkspace({
         />
       </DeferredPanel>
 
-      <DeferredPanel label="Loading content repair queue">
+      <DeferredPanel label={t('aaw_loading_repair')}>
         <AdminContentRepairQueue onOpenContent={onOpenContent} />
       </DeferredPanel>
 
-      <DeferredPanel label="Loading learning analytics">
+      <DeferredPanel label={t('aaw_loading_analytics')}>
         <AdminLearningAnalytics
           tracks={tracks}
           mathLessons={mathLessons}
@@ -121,7 +123,7 @@ export default function AdminAnalyticsWorkspace({
         />
       </DeferredPanel>
 
-      <DeferredPanel label="Loading beta tracker">
+      <DeferredPanel label={t('aaw_loading_beta')}>
         <BetaImplementationTracker
           tracks={tracks}
           users={users}
