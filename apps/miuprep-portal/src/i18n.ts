@@ -249,6 +249,10 @@ export const portalTranslations: TranslationDict = {
     aus_title_delete: 'Xóa vĩnh viễn',
     aus_status_rejected: '❌ Bị từ chối',
     aus_status_pending: '⏳ Chờ duyệt',
+    // AdminLogsPanel
+    alp_empty: 'Chưa có sự kiện telemetry nào được ghi.',
+    alp_cli_placeholder: 'Nhập lệnh CLI (ví dụ: /help, /approve-all, /coins @username 100)...',
+    alp_execute: 'Thực thi',
   },
   en: {
     // Auth — tabs
@@ -494,6 +498,10 @@ export const portalTranslations: TranslationDict = {
     aus_title_delete: 'Delete permanently',
     aus_status_rejected: '❌ Rejected',
     aus_status_pending: '⏳ Pending',
+    // AdminLogsPanel
+    alp_empty: 'No telemetry events logged yet.',
+    alp_cli_placeholder: 'Enter a CLI command (e.g., /help, /approve-all, /coins @username 100)...',
+    alp_execute: 'Execute',
   },
 };
 

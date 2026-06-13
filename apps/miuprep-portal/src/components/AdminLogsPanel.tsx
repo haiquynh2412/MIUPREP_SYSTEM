@@ -1,5 +1,6 @@
 import type { Dispatch, FormEvent, SetStateAction } from 'react';
 import type { SystemLog } from '@miuprep/db';
+import { useTranslation } from '@miuprep/i18n/src/react';
 
 interface AdminLogsPanelProps {
   adminLogs: SystemLog[];
@@ -14,6 +15,7 @@ export default function AdminLogsPanel({
   setTerminalCommand,
   handleTerminalSubmit,
 }: AdminLogsPanelProps) {
+  const { t } = useTranslation();
   return (
     <section className="bg-slate-900/60 border border-slate-800 rounded-3xl p-6 max-w-5xl mx-auto shadow-xl relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950">
       <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-teal-500 via-indigo-500 to-rose-500" />
@@ -33,7 +35,7 @@ export default function AdminLogsPanel({
       <div className="bg-slate-950 rounded-2xl border border-slate-850 overflow-hidden shadow-inner flex flex-col">
         <div className="p-4 max-h-60 overflow-y-auto scrollbar-thin flex flex-col gap-2 font-mono text-[11px] border-b border-slate-850 text-left min-h-[120px]">
           {adminLogs.length === 0 ? (
-            <span className="text-slate-650 italic">No telemetry events logged yet.</span>
+            <span className="text-slate-650 italic">{t('alp_empty')}</span>
           ) : (
             adminLogs.map((log) => (
               <div key={log.id} className="flex items-start gap-3 leading-relaxed">
@@ -74,14 +76,14 @@ export default function AdminLogsPanel({
             type="text"
             value={terminalCommand}
             onChange={(event) => setTerminalCommand(event.target.value)}
-            placeholder="Nhap lenh CLI (vi du: /help, /approve-all, /coins @username 100)..."
+            placeholder={t('alp_cli_placeholder')}
             className="flex-1 bg-transparent border-0 outline-none text-emerald-400 font-mono text-xs placeholder:text-slate-700 min-w-0"
           />
           <button
             type="submit"
             className="bg-emerald-950/80 hover:bg-emerald-900/60 border border-emerald-800 text-emerald-400 px-3.5 py-1 rounded-lg text-[10px] font-mono font-bold uppercase transition-all duration-100 hover:scale-[1.02] cursor-pointer"
           >
-            Execute
+            {t('alp_execute')}
           </button>
         </form>
       </div>
